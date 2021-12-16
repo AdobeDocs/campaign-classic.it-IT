@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 1ab984d12c9beb0ba3378bbfb49d1d7d07e870f6
+source-git-commit: e712298a07ecfe345c0b53a4f07f6bc4c19106f7
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1196'
 ht-degree: 2%
 
 ---
@@ -416,11 +416,4 @@ Per modificare un modulo di fabbrica, attenersi alla seguente procedura:
       >[!CAUTION]
       > Non modificare i dati originali in uno spazio dei nomi di fabbrica, ma estenderli in uno spazio dei nomi personalizzato. Il motivo è che, durante gli aggiornamenti del software, tutti i dati negli spazi dei nomi di fabbrica vengono sovrascritti. Ad esempio, i dati nel `xtk`, `ncm`e `nms` gli spazi dei nomi di fabbrica vengono sovrascritti. I dati nei namespace personalizzati non vengono modificati.
 
-1. Modificare il modulo di input di fabbrica:
 
-   1. Dal menu , scegli **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**.
-   1. Selezionare un modulo di input e modificarlo.
-
-   È possibile estendere gli schemi di dati di fabbrica, ma non i moduli di input di fabbrica. È consigliabile modificare direttamente i moduli di input di fabbrica senza ricrearli. Durante gli aggiornamenti del software, le modifiche nei moduli di input di fabbrica vengono unite con gli aggiornamenti. Se l&#39;unione automatica non riesce, è possibile risolvere i conflitti. [Leggi tutto](../../production/using/upgrading.md#resolving-conflicts).
-
-   Ad esempio, se si estende uno schema di fabbrica con un campo aggiuntivo, è possibile aggiungere questo campo al modulo di fabbrica correlato.
