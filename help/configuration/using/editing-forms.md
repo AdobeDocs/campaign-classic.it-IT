@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 214f6874f87fce5518651f6ff818e99d5edea7e0
+source-git-commit: daecbdecde0b80b47c113acc80618aee314c5434
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1698'
 ht-degree: 2%
 
 ---
@@ -403,3 +403,150 @@ Questo esempio mostra un modulo complesso:
 Di conseguenza, il **Generale** nella pagina del modulo esterno viene visualizzata la **Nome** e **Contatto** schede.
 
 ![](assets/nested_forms_preview.png)
+
+Per nidificare un modulo all’interno di un altro modulo, inserire una `<container>` e imposta `type` al tipo di modulo. Per il modulo di livello superiore, è possibile impostare il tipo di modulo in un contenitore esterno o nella `<form>` elemento.
+
+### Esempio
+
+Questo esempio mostra un modulo complesso:
+
+* Il modulo di livello superiore è un modulo casella di inbox. Questo modulo comprende due contenitori etichettati **Generale** e **Dettagli**.
+
+   Di conseguenza, il modulo esterno mostra il **Generale** e **Dettagli** pagine al livello superiore. Per accedere a queste pagine, gli utenti possono fare clic sulle icone nella parte sinistra del modulo.
+
+* Il sottomodulo è un modulo per appunti nidificato all&#39;interno del **Generale** contenitore. Il sottomodulo comprende due contenitori etichettati **Nome** e **Contatto**.
+
+```xml
+<form _cs="Profile (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Profile" name="profile" namespace="nms" xtkschema="xtk:form">
+  <container type="iconbox">
+    <container img="ncm:general.png" label="General">
+      <container type="notebook">
+        <container label="Name">
+          <input xpath="@firstName"/>
+          <input xpath="@lastName"/>
+        </container>
+        <container label="Contact">
+          <input xpath="@email"/>
+        </container>
+      </container>
+    </container>
+    <container img="ncm:detail.png" label="Details">
+      <input xpath="@birthDate"/>
+    </container>
+  </container>
+</form>
+```
+
+Di conseguenza, il **Generale** nella pagina del modulo esterno viene visualizzata la **Nome** e **Contatto** schede.
+
+![](assets/nested_forms_preview.png)
+
+
+
+## Modificare un modulo di input di fabbrica {#modify-factory-form}
+
+Per modificare un modulo di fabbrica, attenersi alla seguente procedura:
+
+1. Modificare il modulo di input di fabbrica:
+
+   1. Dal menu , scegli **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**.
+   1. Selezionare un modulo di input e modificarlo.
+
+   È possibile estendere gli schemi di dati di fabbrica, ma non i moduli di input di fabbrica. È consigliabile modificare direttamente i moduli di input di fabbrica senza ricrearli. Durante gli aggiornamenti del software, le modifiche nei moduli di input di fabbrica vengono unite con gli aggiornamenti. Se l&#39;unione automatica non riesce, è possibile risolvere i conflitti. [Leggi tutto](../../production/using/upgrading.md#resolving-conflicts).
+
+   Ad esempio, se si estende uno schema di fabbrica con un campo aggiuntivo, è possibile aggiungere questo campo al modulo di fabbrica correlato.
+
+## Convalida dei moduli {#validate-forms}
+
+Nei moduli è possibile includere controlli di convalida.
+
+### Consentire l’accesso in sola lettura ai campi
+
+Per concedere l’accesso in sola lettura a un campo, utilizza il `readOnly="true"` attributo. Ad esempio, potrebbe essere utile mostrare la chiave primaria di un record, ma con accesso in sola lettura. [Leggi tutto](form-structure.md#non-editable-fields).
+
+In questo esempio, la chiave primaria (`iRecipientId`) del `nms:recipient` lo schema viene visualizzato in accesso in sola lettura:
+
+```xml
+<value xpath="@iRecipientId" readOnly="true"/>
+```
+
+### Controlla campi obbligatori
+
+Puoi controllare le informazioni obbligatorie:
+
+* Utilizza la `required="true"` attributo per i campi obbligatori.
+* Utilizza la `<leave>` per controllare questi campi e visualizzare messaggi di errore.
+
+In questo esempio, l’indirizzo e-mail è obbligatorio e viene visualizzato un messaggio di errore se l’utente non ha fornito queste informazioni:
+
+```xml
+<input xpath="@email" required="true"/>
+<leave>
+  <check expr="@email!=''">
+    <error>The email address is required.</error>
+  </check>
+</leave>
+```
+
+Ulteriori informazioni [campi espressione](form-structure.md#expression-field) e [contesto del modulo](form-structure.md#context-of-forms).
+
+### Convalida valori
+
+È possibile utilizzare chiamate SOAP JavaScript per convalidare i dati del modulo dalla console. Utilizzare queste chiamate per una convalida complessa, ad esempio, per verificare un valore rispetto a un elenco di valori autorizzati. [Leggi tutto](form-structure.md#soap-methods).
+
+1. Crea una funzione di convalida in un file JS.
+
+   Esempio:
+
+   ```js
+   function nms_recipient_checkValue(value)
+   {
+     logInfo("checking value " + value)
+     if (…)
+     {
+       logError("Value " + value + " is not valid")
+     }
+     return 1
+   }
+   ```
+
+   In questo esempio, la funzione viene denominata `checkValue`. Questa funzione viene utilizzata per controllare il `recipient` tipo di dati `nms` spazio dei nomi. Il valore da controllare viene registrato. Se il valore non è valido, viene registrato un messaggio di errore. Se il valore è valido, viene restituito il valore 1.
+
+   È possibile utilizzare il valore restituito per modificare il modulo.
+
+1. Nel modulo, aggiungi la `<soapCall>` dell&#39;elemento `<leave>` elemento.
+
+   In questo esempio, viene utilizzata una chiamata SOAP per convalidare la `@valueToCheck` stringa:
+
+   ```xml
+   <form name="recipient" (…)>
+   (…)
+     <leave>
+       <soapCall name="checkValue" service="nms:recipient">
+         <param exprIn="@valueToCheck" type="string"/>
+       </soapCall>
+     </leave>
+   </form>
+   ```
+
+   In questo esempio, la `checkValue` e `nms:recipient` sono utilizzati:
+
+   * Il servizio è il namespace e il tipo di dati.
+   * Il metodo è il nome della funzione. Il nome distingue tra maiuscole e minuscole.
+
+   La chiamata viene eseguita in modo sincrono.
+
+   Vengono visualizzate tutte le eccezioni. Se utilizzi `<leave>` gli utenti non possono salvare il modulo finché non vengono convalidate le informazioni immesse.
+
+Questo esempio mostra come effettuare chiamate di servizio dall’interno dei moduli:
+
+```xml
+<enter>
+  <soapCall name="client" service="c4:ybClient">
+    <param exprIn="@id" type="string"/>
+    <param type="boolean" xpathOut="/tmp/@count"/>
+  </soapCall>
+</enter>
+```
+
+In questo esempio, l’input è un ID, che è una chiave primaria. Quando gli utenti compilano il modulo per questo ID, viene effettuata una chiamata SOAP con questo ID come parametro di input. L’output è booleano scritto in questo campo: `/tmp/@count`. È possibile utilizzare questo valore booleano all’interno del modulo. Ulteriori informazioni [contesto del modulo](form-structure.md#context-of-forms).
