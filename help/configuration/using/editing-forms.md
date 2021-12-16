@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: df3c833e99caeb94df1978dc8792b86c8634626b
+source-git-commit: 214f6874f87fce5518651f6ff818e99d5edea7e0
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '1105'
 ht-degree: 2%
 
 ---
@@ -366,3 +366,40 @@ Per modificare il tipo di modulo esistente in `notebook`, segui questi passaggi:
 È possibile nidificare i moduli all’interno di altri moduli. Ad esempio, è possibile nidificare i moduli per appunti all’interno dei moduli di iconbox.
 
 Il livello di nidificazione controlla la navigazione. Gli utenti possono eseguire il drill-down ai sottomoduli.
+
+Per nidificare un modulo all’interno di un altro modulo, inserire una `<container>` e imposta `type` al tipo di modulo. Per il modulo di livello superiore, è possibile impostare il tipo di modulo in un contenitore esterno o nella `<form>` elemento.
+
+### Esempio
+
+Questo esempio mostra un modulo complesso:
+
+* Il modulo di livello superiore è un modulo casella di inbox. Questo modulo comprende due contenitori etichettati **Generale** e **Dettagli**.
+
+   Di conseguenza, il modulo esterno mostra il **Generale** e **Dettagli** pagine al livello superiore. Per accedere a queste pagine, gli utenti possono fare clic sulle icone nella parte sinistra del modulo.
+
+* Il sottomodulo è un modulo per appunti nidificato all&#39;interno del **Generale** contenitore. Il sottomodulo comprende due contenitori etichettati **Nome** e **Contatto**.
+
+```xml
+<form _cs="Profile (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Profile" name="profile" namespace="nms" xtkschema="xtk:form">
+  <container type="iconbox">
+    <container img="ncm:general.png" label="General">
+      <container type="notebook">
+        <container label="Name">
+          <input xpath="@firstName"/>
+          <input xpath="@lastName"/>
+        </container>
+        <container label="Contact">
+          <input xpath="@email"/>
+        </container>
+      </container>
+    </container>
+    <container img="ncm:detail.png" label="Details">
+      <input xpath="@birthDate"/>
+    </container>
+  </container>
+</form>
+```
+
+Di conseguenza, il **Generale** nella pagina del modulo esterno viene visualizzata la **Nome** e **Contatto** schede.
+
+![](assets/nested_forms_preview.png)
