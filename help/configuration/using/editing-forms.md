@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: e712298a07ecfe345c0b53a4f07f6bc4c19106f7
+source-git-commit: 0d132f56e7888ad810e309b97b9337ec56fe1ee0
 workflow-type: tm+mt
-source-wordcount: '1196'
+source-wordcount: '1143'
 ht-degree: 2%
 
 ---
@@ -413,7 +413,6 @@ Per modificare un modulo di fabbrica, attenersi alla seguente procedura:
    1. Dal menu , scegli **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**.
    1. Seleziona uno schema di dati ed estendilo. Ad esempio, è possibile aggiungere campi. [Leggi tutto](extending-a-schema.md).
 
-      >[!CAUTION]
-      > Non modificare i dati originali in uno spazio dei nomi di fabbrica, ma estenderli in uno spazio dei nomi personalizzato. Il motivo è che, durante gli aggiornamenti del software, tutti i dati negli spazi dei nomi di fabbrica vengono sovrascritti. Ad esempio, i dati nel `xtk`, `ncm`e `nms` gli spazi dei nomi di fabbrica vengono sovrascritti. I dati nei namespace personalizzati non vengono modificati.
+
 
 
