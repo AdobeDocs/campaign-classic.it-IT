@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: ebd5b04c30c54142433056904a5d80f5a8744ded
+source-git-commit: 5261021bde11bc9450a429f26aa493ca2398dbc7
 workflow-type: tm+mt
-source-wordcount: '2459'
-ht-degree: 100%
+source-wordcount: '2531'
+ht-degree: 97%
 
 ---
 
@@ -28,10 +28,11 @@ _8 ottobre 2021_
 
 **Patch**
 
+* È stata migliorata la correzione del flusso di lavoro di fatturazione disponibile nella build 9342, che richiedeva un riavvio manuale del flusso di lavoro per la correzione da applicare. Ora il successivo aggiornamento riavvia automaticamente il flusso di lavoro.
+
 * È stato risolto un problema che poteva impedire la corretta gestione delle offerte quando si utilizzava il modulo **Interaction** con l’opzione [Power Booster](../../installation/using/power-booster-and-power-cluster.md). (NEO-39263)
 
 * È stato corretto un errore di tipo “Impossibile trovare ipaffinity xxx nel mid server xxx” che poteva verificarsi durante l’invio della consegna se si utilizzava più di un’affinità IP in un’istanza multi-mid-sourcing. (NEO-37514)
-
 
 ## ![](assets/do-not-localize/orange_2.png) Versione 21.1.4 - Build 9342 {#release-21-1-4-build-9342}
 
@@ -49,9 +50,9 @@ _7 settembre 2021_
 
 **Altre modifiche**
 
+* È stata risolta una regressione introdotta in 21.1.3 con il flusso di lavoro di fatturazione nuova guardrail. Il flusso di lavoro di fatturazione è stato eseguito su istanze errate e si è verificato un arresto anomalo durante il tentativo di inviare il rapporto di fatturazione che non è stato generato. Per applicare la correzione, è necessario riavviare manualmente il flusso di lavoro.
 * I connettori Microsoft CRM precedentemente dichiarati obsoleti (per implementazioni Office 365 e on-premise) sono stati rimossi dall’interfaccia. [Ulteriori informazioni](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
 * In seguito alla migrazione a Tomcat 8, lo script di installazione di IIS è stato aggiornato per risolvere i problemi di integrazione di IIS. (NEO-31019)
-* È stata aggiunto un guardrail per consentire solo l’esecuzione del [flusso di lavoro tecnico di fatturazione](../../production/using/monitoring-processes.md#billing-report) sull’istanza di marketing.
 * L’identificazione dell’origine dati è stata migliorata nelle schede dati e schema della finestra **Visualizza popolazione** delle transizioni del flusso di lavoro.
 * Gli indici di database mancanti sono stati aggiunti ai seguenti schemi per evitare problemi di aggiornamento del database: xtk:rights, nms:dlvExclusion, nms:seedMember, nms:trackingUrl
 
@@ -193,6 +194,7 @@ Ulteriori informazioni sono disponibili nella pagina [Funzioni obsolete e rimoss
 
 **Altre modifiche**
 
+* È stata aggiunto un guardrail per consentire solo l’esecuzione del [flusso di lavoro tecnico di fatturazione](../../production/using/monitoring-processes.md#billing-report) sull’istanza di marketing.
 * La terza parte openssl per Windows è stata aggiornata alla versione 1.1.1h.
 * Nella descrizione del pacchetto Debian, nlserver è stato modificato in server Adobe Campaign Classic.
 
