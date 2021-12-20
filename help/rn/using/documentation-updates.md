@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+source-git-commit: f2cb3323bc5df3aae16a4ae4cf80c30bf53b006e
 workflow-type: tm+mt
-source-wordcount: '4560'
-ht-degree: 100%
+source-wordcount: '4705'
+ht-degree: 97%
 
 ---
 
@@ -20,6 +20,31 @@ ht-degree: 100%
 In questa pagina sono elencate tutte le nuove funzioni e gli aggiornamenti alla documentazione in base al mese e alla versione di Campaign.
 
 Per gli aggiornamenti relativi alla versione, consulta le [Note sulla versione di Adobe Campaign Classic](../../rn/using/latest-release.md).
+
+## Dicembre 2021{#dec-2021}
+
+Le note sulla versione di Campaign Classic v7 sono state riorganizzate per semplificare la navigazione. [Maggiori informazioni](rn-overview.md)
+
+La documentazione sull’edizione dei moduli in Campaign è stata aggiornata e migliorata. [Maggiori informazioni](../../configuration/using/editing-forms.md)
+
+CentOs 8 ha raggiunto la fine del ciclo di vita ed è ora obsoleto con Adobe Campaign Classic. [Maggiori informazioni](deprecated-features.md)
+
+## Novembre 2021{#nov-2021}
+
+È stata aggiunta una limitazione relativa agli SMS in arrivo (MO). [Maggiori informazioni](../../delivery/using/sms-protocol.md#multipart)
+
+Aggiornamento dei dettagli dei registri del processo di migrazione per la distribuzione del connettore CRM. [Maggiori informazioni](../../migration/using/testing-the-migration.md#verification-process)
+
+Sono stati aggiunti requisiti sulle autorizzazioni IMS per implementare l’integrazione Adobe Campaign-Adobe Analytics. [Maggiori informazioni](../../platform/using/adobe-analytics-provisioning.md)
+
+È stata aggiornata la data di fine del ciclo di vita di Adobe Analytics Data Connector dal 1° marzo 2022 al 17 agosto 2022. [Maggiori informazioni](deprecated-features.md)
+
+È stato aggiunto un collegamento alla documentazione dell’SDK per dispositivi mobili Adobe Experience Platform per informazioni su come configurare l’estensione Campaign in Adobe Launch. [Maggiori informazioni](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
+
+È stata aggiunta una sezione su come utilizzare JavaScript per calcolare i valori, scambiare dati ed eseguire operazioni specifiche utilizzando chiamate SOAP.[Maggiori informazioni](../../workflow/using/javascript-scripts-and-templates.md)
+
+Sono stati aggiunti esempi di implementazione di codici JavaScript nei flussi di lavoro. [Maggiori informazioni](../../workflow/using/javascript-in-workflows.md)
+
 
 ## Ottobre 2021{#oct-2021}
 
