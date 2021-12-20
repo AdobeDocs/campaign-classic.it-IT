@@ -5,7 +5,7 @@ description: Nota tecnica
 hide: true
 hidefromtoc: true
 exl-id: e7d4331b-7149-4768-8e46-2e2911319074
-source-git-commit: ed9e76495efb0cb49e248a7d38417642c5094a11
+source-git-commit: 70240d5f62fd3d7b755389b5ad8c4b499c94657d
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 35%
@@ -30,11 +30,12 @@ Se l’ambiente è in esecuzione su una delle versioni elencate di seguito, può
 
 * Gold Standard da 8 a 11. [Ulteriori informazioni](../../rn/using/gold-standard.md#gs-8)
 * Rilasci di Campaign 21.1.1 (build 9277) a 21.1.2 (build 9282). [Ulteriori informazioni](../../rn/using/latest-release.md)
-* versioni da Campaign 20.3.1 (build 9228) a 20.3.3 (build 9234). [Ulteriori informazioni](../../rn/using/release--20-3.md)
-* versioni da Campaign 20.2.1 (build 9178) a 20.2.4 (build 9187). [Ulteriori informazioni](../../rn/using/release--20-2.md)
-* versioni da Campaign 20.1.1 (build 9122) a 21.1.3 (build 9124). [Ulteriori informazioni](../../rn/using/release--20-1.md)
-* Rilasci di Campaign 19.2.2 (build 9080) a 19.2.3 (build 9081). [Ulteriori informazioni](../../rn/using/release--19-2.md)
-* Rilasci di Campaign 19.1.5 (build 9033) a 19.1.7 (build 9036). [Ulteriori informazioni](../../rn/using/release--19-1.md)
+* versioni da Campaign 20.3.1 (build 9228) a 20.3.3 (build 9234). [Ulteriori informazioni](../../rn/using/release--2020.md#release-20-3)
+* versioni da Campaign 20.2.1 (build 9178) a 20.2.4 (build 9187). [Ulteriori informazioni](../../rn/using/release--2020.md#release-20-2)
+* versioni da Campaign 20.1.1 (build 9122) a 21.1.3 (build 9124). [Ulteriori informazioni](../../rn/using/release--2020.md#release-20-1)
+* Rilasci di Campaign 19.2.2 (build 9080) a 19.2.3 (build 9081). [Ulteriori informazioni](../../rn/using/release--2019.md#release-19-2)
+* Rilasci di Campaign 19.1.5 (build 9033) a 19.1.7 (build 9036). [Ulteriori informazioni](../../rn/using/release--2019.md#release-19-1)
+
 
 Scopri come controllare la versione [in questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 

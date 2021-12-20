@@ -6,10 +6,10 @@ title: Guida di Campaign Classic v7
 user-guide-description: Con Adobe Campaign, puoi utilizzare dati approfonditi sui clienti per creare, coordinare e distribuire campagne dinamiche che i clienti desiderano realmente, tramite e-mail, dispositivi mobili, canali offline e altro ancora.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
-workflow-type: ht
-source-wordcount: '2575'
-ht-degree: 100%
+source-git-commit: 5bcc0c06b5c189c4481366d0d283199d6813ecd3
+workflow-type: tm+mt
+source-wordcount: '2581'
+ht-degree: 99%
 
 ---
 
@@ -21,19 +21,14 @@ ht-degree: 100%
 + Note sulla versione {#release-notes}
    + [Introduzione agli aggiornamenti](rn/using/rn-overview.md)
    + [Ultima versione](rn/using/latest-release.md)
-   + Versione [!DNL Gold Standard] {#gs-release}
-      + [Cos’è [!DNL Gold Standard]](rn/using/gs-overview.md)
-      + [Note sulla versione [!DNL Gold Standard]](rn/using/gold-standard.md)
-      + [Matrice di compatibilità per [!DNL Gold Standard]](rn/using/compatibility-matrix-gs.md)
    + Versioni precedenti {#previous-releases}
-      + [Versione 20.3](rn/using/release--20-3.md)
-      + [Versione 20.2](rn/using/release--20-2.md)
-      + [Versione 20.1](rn/using/release--20-1.md)
-      + [Versione 19.2](rn/using/release--19-2.md)
-      + [Versione 19.1](rn/using/release--19-1.md)
-      + [Versione 18.10](rn/using/release--18-10.md)
-      + [Versione 18.6](rn/using/release--18-6.md)
-      + [Versione 18.4](rn/using/release--18-4.md)
+      + Versione [!DNL Gold Standard] {#gs-release}
+         + [Cos’è [!DNL Gold Standard]](rn/using/gs-overview.md)
+         + [Note sulla versione [!DNL Gold Standard]](rn/using/gold-standard.md)
+         + [Matrice di compatibilità per [!DNL Gold Standard]](rn/using/compatibility-matrix-gs.md)
+      + [2020](rn/using/release--2020.md)
+      + [2019](rn/using/release--2019.md)
+      + [2018](rn/using/release--2018.md)
    + [Funzioni obsolete](rn/using/deprecated-features.md)
    + [Matrice di compatibilità](rn/using/compatibility-matrix.md)
 + Introduzione {#getting-started}
@@ -560,7 +555,7 @@ ht-degree: 100%
       + [Dati aggiuntivi](interaction/using/additional-data.md)
       + [Estensione esemplificativa](interaction/using/extension-example.md)
       + [Creare un ambiente di test](interaction/using/creating-a-test-environment.md)
-      + [Hook](interaction/using/hooks.md)
+      + [Modificare il comportamento standard del motore](interaction/using/hooks.md)
       + [Architetture distribuite](interaction/using/distributed-architectures.md)
       + [Configurazione del buffer dati](installation/using/interaction---data-buffer.md)
    + Caso d’uso {#case-study}
@@ -849,6 +844,7 @@ ht-degree: 100%
       + [Note tecniche](technotes/using/technote.md)
       + [Aggiornamenti alla configurazione di Campaign](technotes/using/acc-config-updates.md)
       + [Aggiornamenti IMS](technotes/using/ims-updates.md)
+      + [Terminazione del supporto per TLS 1.0 e 1.1](technotes/using/eol-tls-support.md)
    + E-mail e notifiche push{#technotes-email}
       + [Protezione della privacy della posta su Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
       + [Domande frequenti sulla protezione della privacy di Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=it)

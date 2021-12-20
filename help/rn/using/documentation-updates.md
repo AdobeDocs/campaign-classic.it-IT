@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: cee019432c64eaaefac86a27b731355242fd1555
+source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
 workflow-type: tm+mt
 source-wordcount: '4560'
 ht-degree: 100%
@@ -170,7 +170,7 @@ La configurazione dell’account esterno è stata spostata in [questa sezione](.
 
 La documentazione di Federated Data Access (FDA) per Campaign è stata migliorata con i dettagli di ogni configurazione di database esterno e spostata in [questa sezione](../../installation/using/about-fda.md).
 
-[La versione](../../rn/using/release--20-2.md#release-20-2-3-build-9182) 20.2.3 di Campaign è stata spostata in General Availability (GA).
+[La versione](../../rn/using/release--2020.md#release-20-2-3-build-9182) 20.2.3 di Campaign è stata spostata in General Availability (GA).
 
 La sezione Dati personali è stata spostata e arricchita con due nuove pagine: [Gestione della privacy](../../platform/using/privacy-management.md) e [Gestione delle richieste di accesso ai dati personali](../../platform/using/privacy-requests.md).
 

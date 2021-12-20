@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Ultima versione
-description: Note sulla versione più recente di Campaign Classic
+description: Note sulla versione più recente di Campaign Classic v7
 feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 5261021bde11bc9450a429f26aa493ca2398dbc7
+source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
 workflow-type: tm+mt
-source-wordcount: '2531'
-ht-degree: 97%
+source-wordcount: '2559'
+ht-degree: 88%
 
 ---
 
@@ -17,12 +17,14 @@ ht-degree: 97%
 
 ![](../../assets/v7-only.svg)
 
-In questa pagina sono elencate nuove funzionalità, miglioramenti e correzioni introdotti con l’**ultima versione di Campaign Classic**.
+In questa pagina sono elencate nuove funzionalità, miglioramenti e correzioni apportati al **versione più recente di Campaign Classic v7**. Ogni nuova build viene fornita con uno stato che viene materializzato da un colore. Ulteriori informazioni sugli stati della build di Campaign Classic v7 in [questa pagina](rn-overview.md).
 
-Per informazioni sugli stati della build di Campaign, consulta [questa pagina](rn-overview.md).
+## Versione 7.1 (21.1)
 
+>[!CAUTION]
+>Campaign **[!UICONTROL Help > About...]** consente di controllare [numero di versione e di build](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Tuttavia, per tutte le build comprese tra 9277 e 9343 elencate in questa pagina, il numero di versione è impostato su 7.0 invece di 7.1.
 
-## ![](assets/do-not-localize/green_2.png) Versione 21.1.4 - Build 9343 {#release-21-1-4-build-9343}
+### ![](assets/do-not-localize/green_2.png) Versione 21.1.4 - Build 9343 {#release-21-1-4-build-9343}
 
 _8 ottobre 2021_
 
@@ -34,7 +36,7 @@ _8 ottobre 2021_
 
 * È stato corretto un errore di tipo “Impossibile trovare ipaffinity xxx nel mid server xxx” che poteva verificarsi durante l’invio della consegna se si utilizzava più di un’affinità IP in un’istanza multi-mid-sourcing. (NEO-37514)
 
-## ![](assets/do-not-localize/orange_2.png) Versione 21.1.4 - Build 9342 {#release-21-1-4-build-9342}
+### ![](assets/do-not-localize/orange_2.png) Versione 21.1.4 - Build 9342 {#release-21-1-4-build-9342}
 
 _7 settembre 2021_
 
@@ -68,7 +70,7 @@ _7 settembre 2021_
 * È stato risolto un problema che impediva l’utilizzo di variabili in un’attività del flusso di lavoro **Enrichment** quando la transizione in ingresso proveniva da un’origine dati FDA.
 * È stato risolto un problema che poteva causare il mancato funzionamento degli URL nei messaggi e-mail.
 
-## ![](assets/do-not-localize/orange_2.png) Versione 21.1.3 - Build 9330 {#release-21-1-3-build-9330}
+### ![](assets/do-not-localize/orange_2.png) Versione 21.1.3 - Build 9330 {#release-21-1-3-build-9330}
 
 _5 giugno 2021_
 
@@ -179,18 +181,18 @@ Ulteriori informazioni nella [matrice di compatibilità di Campaign](../../rn/us
 
 **Funzioni obsolete**
 
-* A partire dalla versione 21.1 di Campaign, il Connettore dati di Adobe Analytics è diventato obsoleto. Se utilizzi questo connettore, devi adattare di conseguenza l’implementazione con il nuovo connettore Adobe Analytics.
-Per ulteriori informazioni consulta la [documentazione dettagliata](../../technotes/using/aa-connector-migration.md).
-* Il supporto per Debian 8 è ora obsoleto.
-* In seguito alla rimozione di Oracle CRM in 20.3, l’account esterno correlato è stato rimosso dall’interfaccia.
+* I driver ODBC sono ora installati direttamente con Adobe Campaign Third Party. Non sono più necessari passaggi manuali per installare i driver.
+* Google Big Query è ora disponibile per le distribuzioni in hosting.
 
-Ulteriori informazioni sono disponibili nella pagina [Funzioni obsolete e rimosse](../../rn/using/deprecated-features.md).
+[Maggiori informazioni](../../installation/using/configure-fda.md)
 
 **Miglioramenti**
 
-* Durante il salvataggio di un flusso di lavoro sono stati aggiunti ulteriori controlli per verificare che i nomi delle attività siano univoci e che le transizioni siano sempre seguite da un’attività.
-* Il flusso di lavoro tecnico **Fatturazione (fatturazione)** ora include le attività originariamente eseguite dal flusso di lavoro **Numero di profili di fatturazione attivi** (billingActiveContactCount), che è stato rimosso. Il rapporto e-mail inviato ogni mese dal flusso di lavoro fornisce ora informazioni sul numero di profili attivi nell’istanza. [Ulteriori informazioni](../../workflow/using/about-technical-workflows.md).
-* È stato aggiunto il nuovo attributo **_keyOnMData** per poter utilizzare una chiave per le operazioni sui dati per memoria.
+* Sono state applicate correzioni critiche relative all’API web di Microsoft Dynamics Connector:
+   * È stato risolto un problema che poteva causare il mancato funzionamento dell’importazione dei dati da Microsoft CRM o il mancato funzionamento se la condizione del filtro conteneva campi di ricerca.
+   * È stato risolto un problema, durante un&#39;importazione attivata da un flusso di lavoro, che causava il salvataggio dei valori null dei campi di tipo stringa come Null invece di valori vuoti.
+   * È stato risolto un problema che causava il seguente errore per l’importazione o l’esportazione di dati tramite chiamate API web: &quot;URI non valido: Lo schema URI è troppo lungo&quot;.
+   * È stato risolto un problema, durante un’importazione da Microsoft Dynamics 365, che impediva l’importazione dei dati dei campi di ricerca.
 
 **Altre modifiche**
 
@@ -224,14 +226,14 @@ Ulteriori informazioni sono disponibili nella pagina [Funzioni obsolete e rimoss
 * È stato risolto un problema che impediva l’invio di una consegna con un gruppo di bozze a causa di un meccanismo di unione specifico che non consentiva la personalizzazione della consegna. (NEO-14391)
 * È stato risolto un problema che impediva l’invio di un avviso con l’attività di avviso se una query e un’attività di arricchimento miravano alla tabella di consegna. (NEO-25157)
 
-## ![](assets/do-not-localize/red_2.png) Versione 21.1.2 - Build 9282 {#release-21-1-2-build-9282}
+### ![](assets/do-not-localize/red_2.png) Versione 21.1.2 - Build 9282 {#release-21-1-2-build-9282}
 
 _15 aprile 2021_
 
 * La gestione delle password è stata migliorata per potenziare la sicurezza.
 * È stato risolto un problema che poteva causare arresti anomali dell’MTA.
 
-## ![](assets/do-not-localize/red_2.png) Versione 21.1.1 - Build 9277 {#release-21-1-1-build-9277}
+### ![](assets/do-not-localize/red_2.png) Versione 21.1.1 - Build 9277 {#release-21-1-1-build-9277}
 
 _22 febbraio 2021_
 
