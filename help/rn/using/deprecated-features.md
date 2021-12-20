@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: f2cb3323bc5df3aae16a4ae4cf80c30bf53b006e
+source-git-commit: 8789571c9cf9ca857777fe5c03c355200c466789
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 97%
+source-wordcount: '1744'
+ht-degree: 96%
 
 ---
 
@@ -62,7 +62,7 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
    <td><p>A partire dalla versione 21.1 di Campaign, il rapporto tecnico di monitoraggio della consegna e-mail è diventato obsoleto.</p>
    <p>Se necessario, puoi ricevere per e-mail questo rapporto ogni giorno, fino alla data in cui la funzione verrà rimossa. Per richiederlo, apri un <a href="https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">caso di supporto</a> specifico e indica il nome dell’istanza e gli indirizzi e-mail a cui inviare il rapporto.</p> 
    <p>Adobe consiglia di interagire con il team Deliverability per definire gli strumenti migliori per monitorare le prestazioni di recapito dell’istanza.</p>
-  <p><em>Data prevista di rimozione: fine 2021</em></p>
+  <p><em>Data di rimozione target: Inizio 2022</em></p>
   </td>
  </tr>
   <tr>
@@ -70,7 +70,7 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
   <td><p> A partire dalla versione di Campaign 20.3, l’autenticazione dell’integrazione dei trigger, originariamente basata su OAuth per accedere alla pipeline, ora è stata modificata e spostata in Adobe I/O. <p>
   <p>Se utilizzi l’integrazione con i trigger, devi adattare di conseguenza l’implementazione. <a href="../../integrations/using/configuring-adobe-io.md">Ulteriori informazioni</a></p> 
   <p>Per ulteriori informazioni sulla obsolescenza dell’autenticazione OAuth, fare riferimento a questa <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">pagina</a></p> 
-  <p><em>Data prevista di rimozione: novembre 2021</em></p>
+  <p><em>Data di rimozione target: 20 ottobre 2021. Gli ambienti in hosting beneficiano di un’estensione fino al 23 febbraio 2022. </em></p>
   </td>
   </tr>
  </tbody> 
@@ -179,7 +179,7 @@ A partire dalla versione 21.1.3, il supporto per Debian 8 è diventato obsoleto.
 
 A partire dalla versione 19.1, Adobe Campaign non è più compatibile con i seguenti sistemi operativi.
 
-* CentOS 6 [Ulteriori informazioni](https://wiki.centos.org/Download)
+* CentOS 6. [Ulteriori informazioni](https://wiki.centos.org/Download)
 * Debian 7. [Ulteriori informazioni](https://wiki.debian.org/DebianReleases)
 * RHEL 6.x. [Ulteriori informazioni](https://access.redhat.com/support/policy/updates/errata)
 * Windows Server 2008. [Ulteriori informazioni](https://support.microsoft.com/it-it/lifecycle/search/1163)
