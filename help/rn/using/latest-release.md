@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: cbafd70f5b5e964256edad0ce2965f3ed4650500
 workflow-type: tm+mt
 source-wordcount: '2556'
-ht-degree: 88%
+ht-degree: 91%
 
 ---
 
@@ -30,7 +30,7 @@ _8 ottobre 2021_
 
 **Patch**
 
-* È stata migliorata la correzione del flusso di lavoro di fatturazione disponibile nella build 9342, che richiedeva un riavvio manuale del flusso di lavoro per la correzione da applicare. Ora il successivo aggiornamento riavvia automaticamente il flusso di lavoro.
+* È stata migliorata la correzione del flusso di lavoro di fatturazione disponibile nella build 9342. In precedenza, per applicare la correzione era necessario riavviare manualmente il flusso di lavoro. Ora il successivo aggiornamento riavvia automaticamente il flusso di lavoro.
 
 * È stato risolto un problema che poteva impedire la corretta gestione delle offerte quando si utilizzava il modulo **Interaction** con l’opzione [Power Booster](../../installation/using/power-booster-and-power-cluster.md). (NEO-39263)
 
@@ -52,7 +52,7 @@ _7 settembre 2021_
 
 **Altre modifiche**
 
-* È stata risolta una regressione introdotta in 21.1.3 con il flusso di lavoro di fatturazione nuova guardrail. Il flusso di lavoro di fatturazione è stato eseguito su istanze errate e si è verificato un arresto anomalo durante il tentativo di inviare il rapporto di fatturazione che non è stato generato. Per applicare la correzione, è necessario riavviare manualmente il flusso di lavoro.
+* È stata risolta una regressione introdotta in 21.1.3 con un nuovo guardrail del il flusso di lavoro di fatturazione. Il flusso di lavoro di fatturazione veniva eseguito su istanze errate e si verificava un arresto anomalo durante il tentativo di inviare il rapporto di fatturazione che non veniva generato. Per applicare la correzione, è necessario riavviare manualmente il flusso di lavoro.
 * I connettori Microsoft CRM precedentemente dichiarati obsoleti (per implementazioni Office 365 e on-premise) sono stati rimossi dall’interfaccia. [Ulteriori informazioni](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
 * In seguito alla migrazione a Tomcat 8, lo script di installazione di IIS è stato aggiornato per risolvere i problemi di integrazione di IIS. (NEO-31019)
 * L’identificazione dell’origine dati è stata migliorata nelle schede dati e schema della finestra **Visualizza popolazione** delle transizioni del flusso di lavoro.
@@ -196,7 +196,7 @@ Ulteriori informazioni nella [matrice di compatibilità di Campaign](../../rn/us
 
 **Altre modifiche**
 
-* È stata aggiunto un guardrail per consentire solo l’esecuzione del [flusso di lavoro tecnico di fatturazione](../../production/using/monitoring-processes.md#billing-report) sull’istanza di marketing.
+* È stato aggiunto un guardrail per consentire l’esecuzione del [flusso di lavoro tecnico di fatturazione](../../production/using/monitoring-processes.md#billing-report) solo sull’istanza di marketing.
 * La terza parte openssl per Windows è stata aggiornata alla versione 1.1.1h.
 * Nella descrizione del pacchetto Debian, nlserver è stato modificato in server Adobe Campaign Classic.
 
