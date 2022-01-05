@@ -6,9 +6,9 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 638b259462d3e01d744567e56d67a120359dc34a
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1625'
 ht-degree: 3%
 
 ---
@@ -96,7 +96,10 @@ Per creare il diagramma
 
    ![](assets/s_user_segmentation_toolbar.png)
 
-   Le icone relative al tracciamento e al lancio di un flusso di lavoro di targeting avanzato sono descritte in questo [sezione](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow).
+   Le icone relative all’avanzamento e alla visualizzazione dei registri sono descritte in dettaglio nelle sezioni seguenti:
+
+   * [Visualizzazione dello stato](../../workflow/using/monitoring-workflow-execution.md#displaying-progress)
+   * [Visualizzazione dei registri](../../workflow/using/monitoring-workflow-execution.md#displaying-logs)
 
 * **Allineamento dell’oggetto**
 
@@ -122,7 +125,7 @@ Per una migliore comprensione delle attività e per migliorare la leggibilità d
 
 ![](assets/example1-comment.png)
 
-## Workflow di targeting {#targeting-workflows}
+## Flussi di lavoro di targeting {#targeting-workflows}
 
 I flussi di lavoro di targeting consentono di creare diversi target di consegna. Puoi creare query, definire sindacati o esclusioni in base a criteri specifici, aggiungere la pianificazione, grazie alle attività del flusso di lavoro. Il risultato di questo targeting può essere trasferito automaticamente in un elenco che può fungere da target delle azioni di consegna
 

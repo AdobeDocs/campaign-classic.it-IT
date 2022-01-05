@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b174b8283d77a1b5eb535c0c46ba4a428bd66eef
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1697'
 ht-degree: 35%
 
 ---
@@ -24,6 +24,10 @@ Per inviare a un telefono cellulare, è necessario:
    I connettori legacy sono ora obsoleti. Le funzionalità obsolete sono ancora disponibili, ma non saranno ulteriormente migliorate né supportate. Per ulteriori informazioni, consulta [questa pagina](../../rn/using/deprecated-features.md).
 
 1. Un modello di consegna in cui viene fatto riferimento a questo account esterno.
+
+>[!NOTE]
+>
+> Per le consegne SMS, la tipologia deve utilizzare una specifica affinità SMS creata in **uno** contenitore server applicazioni dedicato. [Ulteriori informazioni](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 
 ## Creare un account esterno SMPP {#creating-an-smpp-external-account}
 
