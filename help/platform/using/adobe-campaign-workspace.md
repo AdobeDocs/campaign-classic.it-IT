@@ -6,10 +6,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 6%
+source-wordcount: '909'
+ht-degree: 5%
 
 ---
 
@@ -35,17 +35,17 @@ Dalla sezione centrale della home page, puoi utilizzare i collegamenti per acced
 
 ### Console e accesso web {#console-and-web-access}
 
-La piattaforma Adobe Campaign è accessibile tramite una console o tramite un browser Internet.
+La piattaforma Adobe Campaign è accessibile tramite una console o tramite un browser Internet. Vedi i browser compatibili nella [matrice di compatibilità](../../rn/using/compatibility-matrix.md#Browsers).
 
-L’accesso Web fornisce un’interfaccia simile alla console ma con un set ridotto di funzionalità.
+L’interfaccia di accesso web è simile a quella della console. Da un browser, puoi utilizzare le stesse funzioni di navigazione e visualizzazione della console, ma puoi eseguire solo un set ridotto di azioni sulle campagne. Ad esempio, puoi visualizzare e annullare le campagne, ma non modificarle. Per un determinato operatore, nella console viene visualizzata una campagna con le seguenti opzioni:
 
-Ad esempio, per un determinato operatore, una campagna apparirà con le seguenti opzioni nella console:
+![Dal dashboard di una campagna, l’operatore può visualizzare e annullare una campagna, ma anche modificarla e aggiungervi consegne, documenti e attività.](assets/operation_from_console.png)
 
-![](assets/operation_from_console.png)
+Mentre con l&#39;accesso al web, le opzioni consentiranno principalmente la visualizzazione:
 
-Mentre con l&#39;accesso Web, le opzioni consentono principalmente la visualizzazione:
+![Da un browser, lo stesso operatore può solo visualizzare e annullare la campagna.](assets/operation_from_web.png)
 
-![](assets/operation_from_web.png)
+Ulteriori informazioni [utilizzo dell’interfaccia web](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
 
 ### Lingue {#languages}
 

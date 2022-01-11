@@ -5,9 +5,9 @@ description: Configurazione dell’integrazione
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '693'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 La versione di Adobe Campaign Classic non supporta la pipeline.
 
 1. Controlla se la [!DNL pipelined] è presente nel file di configurazione. In caso contrario, significa che non è supportato.
-1. Aggiornamento a Campaign 20.3 o [!DNL Gold Standard] 11.
+1. Aggiornamento a Campaign 20.3 / [!DNL Gold Standard] 11 o superiore.
 
 **Errore di tubazione con &#39;&#39; aurait duc commencer par `[` Tu `{` (iRc=16384)&quot;**
 

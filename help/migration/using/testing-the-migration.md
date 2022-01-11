@@ -6,14 +6,14 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 9ba2199eabf91381e87661f30c9af8aa0ce4cc26
+source-git-commit: 59a2bc62b4c03ef0702cb57bd9dc808e7d0b444b
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 1%
+source-wordcount: '755'
+ht-degree: 0%
 
 ---
 
-# Test della migrazione{#testing-the-migration}
+# Test di migrazione{#testing-the-migration}
 
 ![](../../assets/v7-only.svg)
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 A seconda della configurazione, esistono diversi modi per eseguire i test di migrazione.
 
-Devi disporre di un ambiente di test/sviluppo per eseguire i test di migrazione. Gli ambienti di sviluppo sono soggetti a licenza: controlla il contratto di licenza o contatta il servizio vendite Adobe Campaign.
+Devi disporre di un ambiente di test/sviluppo per eseguire i test di migrazione. Gli ambienti Adobe Campaign sono soggetti a licenza: controlla il contratto di licenza o contatta il tuo rappresentante Adobe.
 
 1. Arrestare tutti gli sviluppi in corso e trasferirli all&#39;ambiente di produzione.
 1. Esegui un backup del database dell&#39;ambiente di sviluppo.
@@ -39,18 +39,12 @@ Devi disporre di un ambiente di test/sviluppo per eseguire i test di migrazione.
 
 1. Assicurati che i backup siano corretti cercando di ripristinarli. Assicurati di poter accedere al database, alle tabelle, ai dati e così via.
 1. Verifica la procedura di migrazione nell’ambiente di sviluppo.
-
-   Le procedure complete sono descritte nel [Prerequisiti per la migrazione ad Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) sezione .
-
 1. Se la migrazione dell’ambiente di sviluppo ha esito positivo, puoi eseguire la migrazione dell’ambiente di produzione.
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >A causa di modifiche apportate alla struttura dei dati, l’importazione e l’esportazione di pacchetti di dati non è possibile tra una piattaforma v5 e una piattaforma v7.
 
->[!NOTE]
->
->Comando di aggiornamento di Adobe Campaign (**postupgrade**) consente di sincronizzare le risorse e aggiornare gli schemi e il database. Questa operazione può essere eseguita solo una volta e solo sul server dell&#39;applicazione. Dopo la sincronizzazione delle risorse, la **postupgrade** consente di rilevare se la sincronizzazione genera errori o avvisi.
 
 ## Strumenti di migrazione {#migration-tools}
 
@@ -70,9 +64,11 @@ Le varie opzioni consentono di misurare l’impatto di una migrazione e identifi
 
 >[!NOTE]
 >
->È necessario utilizzare **-istanza:`<instanceame>`** opzione . Si sconsiglia di utilizzare **-allinstance** opzione .
+>* È necessario utilizzare **-istanza:`<instanceame>`** opzione . Si sconsiglia di utilizzare **-allinstance** opzione .
+>* Comando di aggiornamento di Adobe Campaign (**postupgrade**) consente di sincronizzare le risorse e aggiornare gli schemi e il database. Questa operazione può essere eseguita solo una volta e solo sul server dell&#39;applicazione. Dopo la sincronizzazione delle risorse, la **postupgrade** consente di rilevare se la sincronizzazione genera errori o avvisi.
 
-### Opzioni -showCustomEntities e -showDeletedEntities {#showcustomentities-and--showdeletedentities-options}
+
+### Oggetti non standard o mancanti
 
 * La **-showCustomEntities** visualizza l’elenco di tutti gli oggetti non standard:
 
@@ -110,7 +106,7 @@ nlserver.exe config -postupgrade -check -instance:<instanceName>
 
 >[!NOTE]
 >
->Ignora tutti gli avvisi e gli errori che hanno il codice JST-310040.
+>Con il codice JST-310040 puoi ignorare tutti gli avvisi e gli errori.
 
 Viene eseguita la ricerca delle seguenti espressioni (distinzione maiuscole/minuscole):
 
@@ -158,7 +154,7 @@ Viene eseguita la ricerca delle seguenti espressioni (distinzione maiuscole/minu
    <td> SQLDATA<br /> </td> 
    <td> PU-0006<br /> </td> 
    <td> Errore<br /> </td> 
-   <td> Questo tipo di errore causa un errore di migrazione. Fai riferimento a <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Se ricevi log degli errori dell'applicazione web di tipo panoramica (migrazione dalla versione 6.02), fai riferimento a <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">Configurare Campaign</a>.<br /> </td> 
+   <td> Questo tipo di errore causa un errore di migrazione. Fai riferimento a <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Se ricevi log degli errori dell'applicazione web di tipo panoramica (migrazione dalla versione 6.02), fai riferimento a <a href="../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11" target="_blank">Configurare Campaign</a>.<br /> </td> 
   </tr>
   <tr> 
    <td> crmDeploymentType="onpremise"<br /> </td> 
@@ -167,6 +163,12 @@ Viene eseguita la ricerca delle seguenti espressioni (distinzione maiuscole/minu
    <td> Questo tipo di distribuzione non è più supportato. Il tipo di distribuzione del connettore Microsoft CRM locale e Office 365 è stato dichiarato obsoleto. 
    </br>Se utilizzi uno di questi tipi di distribuzione obsoleti in un account esterno, devi eliminare questo account esterno ed eseguire quindi il <b>postupgrade</b> comando. 
    </br>Per passare alla distribuzione API Web, consulta <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Applicazioni web</a>.<br /> </td>
+  </tr> 
+  <tr> 
+   <td> CRM v1(mscriptWorkflow/sfdcWorkflow)<br /> </td> 
+   <td> PU-0008<br /> </td> 
+   <td> Errore<br /> </td> 
+   <td> Le attività di azione Microsoft CRM, Salesforce, Oracle CRM On Demand non sono più disponibili. Per configurare la sincronizzazione dei dati tra Adobe Campaign e un sistema CRM, devi utilizzare il <a href="../../workflow/using/crm-connector.md" target="_blank">Connettore CRM</a> attività di targeting.<br /> </td>
   </tr> 
  </tbody> 
 </table>
@@ -185,6 +187,6 @@ nlserver.exe config -postupgrade -restoreFactory:<backupfolder> -instance:<insta
 >
 >È consigliabile utilizzare percorsi di cartella assoluti e mantenere la struttura ad albero delle cartelle. Ad esempio: backupFolder\nms\srcSchema\billing.xml.
 
-### Ripresa della migrazione {#resuming-migration}
+### Riprendere la migrazione {#resuming-migration}
 
 Se riavvii l&#39;aggiornamento dopo un errore di migrazione, riprende dalla stessa posizione in cui è stato interrotto.

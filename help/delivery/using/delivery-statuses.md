@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 4%
@@ -49,7 +49,7 @@ Per ulteriori dettagli sui diversi errori di consegna riscontrabili e su come ri
   </tr> 
   <tr> 
    <td> Ignorato<br /> </td> 
-   <td> La consegna non è stata inviata al destinatario a causa di un errore con il suo indirizzo. Era elenco Bloccati, messo in quarantena, non fornito o un duplicato. <br /> </td> 
+   <td> La consegna non è stata inviata al destinatario a causa di un errore con il relativo indirizzo. Era elenco Bloccati, messo in quarantena, non fornito o un duplicato. <br /> </td> 
   </tr> 
   <tr> 
    <td> Non riuscito<br /> </td> 

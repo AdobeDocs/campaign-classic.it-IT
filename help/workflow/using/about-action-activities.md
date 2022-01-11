@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 8758601b-c4bd-4179-8816-305d1a68d499
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 08af51345c047612b010c82646cba99becfda459
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 2%
+source-wordcount: '269'
+ht-degree: 3%
 
 ---
 
@@ -31,6 +31,4 @@ ht-degree: 2%
 * **Codice SQL e codice JavaScript**: esegue lo script SQL o JavaScript specificato nell&#39;attività. Fai riferimento a [Codice SQL e codice JavaScript](sql-code-and-javascript-code.md).
 * **Gestione dati SQL**: consente di scrivere query SQL personalizzate per creare e popolare tabelle di lavoro. Fai riferimento a [Gestione dati SQL](sql-data-management.md).
 * **modulo nlserver**: avvia un modulo nlserver con i relativi argomenti. Fai riferimento a [Modulo Nlserver](nlserver-module.md).
-* **Importazione ed esportazione (compatibile con v4)**: Le attività di importazione ed esportazione (compatibilità v4) consentono di importare ed esportare dati utilizzando il modello (importazione o esportazione) specificato nell’attività.
-* **Microsoft CRM, Salesforce, Oracle CRM on-demand**: consente di collegare Adobe Campaign in modo specifico a uno dei CRM preconfigurati. Queste attività sono simili al connettore CRM presentato in [questa sezione](crm-connector.md), con opzioni più specifiche. In particolare, puoi scegliere il tipo di campagna da eseguire per la sincronizzazione.
 * **Aggiorna aggregato**: consente di selezionare la modalità di aggiornamento aggregato (completo o parziale). Fai riferimento a [Aggiorna aggregato](update-aggregate.md).

@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7a1b8a1cd3ad434dac5c324056113d7ec15ddd8a
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 2%
+source-wordcount: '501'
+ht-degree: 1%
 
 ---
 
@@ -73,8 +73,9 @@ Questo campo ti consente di selezionare il fuso orario dell’attività. Per ult
 
 Questo campo ti consente di definire l’azione da eseguire quando l’attività presenta errori. Sono disponibili due opzioni possibili:
 
-* **[!UICONTROL Stop the process]**: il flusso di lavoro viene arrestato automaticamente. Il suo stato cambia in **[!UICONTROL Failed]**. Una volta risolto il problema, riavvia il flusso di lavoro.
+* **[!UICONTROL Suspend the process]**: il flusso di lavoro viene arrestato automaticamente. Il suo stato cambia in **[!UICONTROL Failed]**. Una volta risolto il problema, riavvia il flusso di lavoro.
 * **[!UICONTROL Ignore]**: questa attività e tutte le attività seguenti (nello stesso ramo) non vengono eseguite. Può essere utile per le attività ricorrenti. Se il ramo ha una pianificazione posizionata a monte, inizia come di consueto alla data di esecuzione successiva.
+* **[!UICONTROL Abort on error]**: il flusso di lavoro viene arrestato automaticamente e non può essere riavviato. Il suo stato cambia in **[!UICONTROL Failed]**.
 
 ## Script di inizializzazione {#initialization-script}
 

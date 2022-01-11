@@ -6,9 +6,9 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
+source-git-commit: 52aa7b268d5eb83354c3a4d8687ced95300538e2
 workflow-type: tm+mt
-source-wordcount: '3253'
+source-wordcount: '3285'
 ht-degree: 4%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 4%
 
 ## Informazioni sull’affaticamento del marketing {#about-marketing-fatigue}
 
-L’implementazione della gestione della pressione di vendita ti consente di evitare di sollecitare eccessivamente la popolazione nel database, nota anche come affaticamento del marketing. A questo scopo, puoi definire un numero massimo di messaggi per destinatario. Ti consente inoltre di implementare regole di arbitrato tra le campagne, al fine di inviare il messaggio migliore al pubblico di destinazione.
+L’implementazione della gestione della pressione di vendita ti consente di evitare di sollecitare eccessivamente la popolazione nel database, nota anche come affaticamento del marketing. A questo scopo, puoi definire un numero massimo di messaggi per destinatario. Ti consente inoltre di implementare regole di arbitrato tra le campagne al fine di inviare il messaggio migliore al pubblico di destinazione.
 
 **Pressione** regole, per gestire l’affaticamento del marketing, ad esempio, per limitare il numero di lettere da inviare a una popolazione a due, per selezionare la comunicazione che meglio corrisponde agli interessi di un gruppo di abbonati, per evitare di inviare un SMS a un cliente insoddisfatto, ecc.
 
@@ -64,6 +64,8 @@ Per creare e configurare una regola di tipologia **[!UICONTROL Pressure]**, atti
    >[!NOTE]
    >
    >Le consegne programmate vengono prese in considerazione solo se **[!UICONTROL Take the deliveries into account in the provisional calendar]** è selezionata. Per ulteriori informazioni, consulta [Impostazione del periodo](#setting-the-period).
+   >
+   >Questa opzione non è disponibile in Campaign v8.
 
 1. Definisci il metodo di calcolo del numero più alto di messaggi.
 
@@ -149,28 +151,29 @@ Il tipo di raggruppamento consente di estendere la **[!UICONTROL Period consider
 
 Ad esempio, una regola di pressione che definisce una soglia di 2 messaggi alla settimana, con un raggruppamento per ogni mese di calendario, impedirà la consegna di più di 2 messaggi entro la stessa settimana E nello stesso mese di calendario. Attenzione: se il periodo si sovrappone a due mesi, la soglia di calcolo terrà conto delle consegne di questi due mesi di calendario e potrebbe pertanto impedire tutte le nuove consegne nel secondo mese.
 
->[!NOTE]
->
->Per impostazione predefinita, nel calcolo della soglia vengono prese in considerazione solo le consegne già inviate. Controlla la **[!UICONTROL Take the deliveries into account in the provisional calendar]** se desideri anche considerare le consegne programmate per il periodo in questione. In questo caso, il periodo considerato è raddoppiato per consentire l’integrazione delle consegne future e di quelle precedenti.\
->Per limitare le consegne prese in considerazione a un periodo di 2 settimane, puoi:
->
->* Invio **15 quinquies** in **[!UICONTROL Concerned period]** campo: le consegne inviate fino a due settimane prima della data di consegna a cui si applica la regola saranno prese in considerazione nel calcolo,
->
->  o
->
->* Invio **7 quinquies** in **[!UICONTROL Period considered]** e controlla il **[!UICONTROL Take the deliveries into account in the provisional calendar]**\
-   >opzione: le consegne inviate fino a 7 giorni prima della data di consegna e pianificate fino a 7 giorni dopo la data di consegna in cui viene applicata la regola saranno prese in considerazione nel calcolo.
->
->La data di inizio del periodo dipende dalla configurazione del database.
+Per impostazione predefinita, nel calcolo della soglia vengono prese in considerazione solo le consegne già inviate. In Campaign Classic v7, controlla il **[!UICONTROL Take the deliveries into account in the provisional calendar]** se desideri anche considerare le consegne programmate per il periodo in questione. In questo caso, il periodo considerato è raddoppiato per consentire l’integrazione delle consegne future e di quelle precedenti.
+
+Per limitare le consegne prese in considerazione a un periodo di 2 settimane, puoi:
+
+1. Invio **15 quinquies** in **[!UICONTROL Concerned period]** campo: le consegne inviate fino a due settimane prima della data di consegna a cui si applica la regola saranno prese in considerazione nel calcolo,
+
+o
+
+1. Invio **7 quinquies** in **[!UICONTROL Period considered]** e controlla il **[!UICONTROL Take the deliveries into account in the provisional calendar]** opzione: le consegne inviate fino a 7 giorni prima della data di consegna e pianificate fino a 7 giorni dopo la data di consegna in cui viene applicata la regola saranno prese in considerazione nel calcolo.
+
+   >[!AVAILABILITY]
+   >Questo metodo non è disponibile in Campaign v8.
+
+La data di inizio del periodo dipende dalla configurazione del database.
 
 Ad esempio, se applichi una regola di pressione di 15 giorni senza raggruppamento a una consegna datata 12/11, le consegne saranno prese in considerazione tra il 27/11 e il 12/12. Se la regola della pressione tiene conto delle consegne nel calendario provvisorio, verranno prese in considerazione tutte le consegne programmate tra il 27/11/27 e il 12/27. Infine, se configuri un raggruppamento per mese di calendario nella regola, tutte le consegne di novembre e dicembre saranno prese in considerazione per calcolare la soglia (da 11/1 a 12/31).
 
->[!CAUTION]
->
->**Casi frequenti**
->Per garantire che le consegne della settimana civile corrente non siano prese in considerazione e non rischino di tenere conto anche di quelle della settimana precedente per la soglia di calcolo, specifica **[!UICONTROL Period considered]** a &#39;0&#39; e seleziona &#39;Raggruppamento per settimana di calendario&#39; come **[!UICONTROL Period type]**.
-> 
->Quando un periodo è superiore a 0 (ad esempio 1), la soglia di calcolo può tenere conto delle consegne del giorno precedente. Pertanto, se il giorno precedente corrisponde alla settimana di calendario precedente e il tipo di periodo selezionato è &quot;Raggruppamento per settimana di calendario&quot;, verrà presa in considerazione tutta la settimana precedente per la soglia di calcolo.
+
+**Casi frequenti**
+
+Per garantire che le consegne della settimana civile corrente non siano prese in considerazione e non rischino di tenere conto anche di quelle della settimana precedente per la soglia di calcolo, specifica **[!UICONTROL Period considered]** a &#39;0&#39; e seleziona &#39;Raggruppamento per settimana di calendario&#39; come **[!UICONTROL Period type]**.
+
+Quando un periodo è superiore a 0 (ad esempio 1), la soglia di calcolo può tenere conto delle consegne del giorno precedente. Pertanto, se il giorno precedente corrisponde alla settimana di calendario precedente e il tipo di periodo selezionato è &quot;Raggruppamento per settimana di calendario&quot;, verrà presa in considerazione tutta la settimana precedente per la soglia di calcolo.
 
 **Esempio:**
 
@@ -333,6 +336,9 @@ Innanzitutto, configura la regola di pressione.
    ![](assets/campaign_opt_pressure_example_1.png)
 
    Nel calcolo verranno prese in considerazione le consegne inviate fino a 7 giorni prima della data di consegna e pianificate fino a 7 giorni dopo la data di consegna. Per ulteriori informazioni, consulta [Impostazione del periodo](#setting-the-period).
+
+   >[!AVAILABILITY]
+   >Le consegne pianificate non possono essere prese in considerazione in Campaign v8.
 
 1. In **[!UICONTROL Typologies]** , collega la regola a una tipologia di campagna.
 1. Salva le modifiche.

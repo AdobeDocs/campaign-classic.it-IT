@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: def4f7fb46c838e9fe620820cf387dd3e2b8a55b
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 10%
@@ -33,7 +33,7 @@ La **[!UICONTROL Deduplication]** l’attività ha la capacità di mantenere un�
 -----|----------|------------|-------|--------------|------
 | 03/02/2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
 
-Il record master selezionato riporterà i dati senza alcuna unione dei dati del campo con altri dati pertinenti nelle righe duplicate.
+Il record principale selezionato riporterà i dati senza alcuna unione dei dati di campo con altri dati pertinenti nelle righe duplicate.
 
 Complemento:
 

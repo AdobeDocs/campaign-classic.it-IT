@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 4661a65c83f3b9b7da9ea902f387155c5933e59f
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '3023'
 ht-degree: 0%
@@ -174,7 +174,7 @@ user:~ user$ host -t a mta5.am0.yahoodns.net
                 mta5.am0.yahoodns.net has address 98.138.112.35
 ```
 
-Per questo record, l’utente può contattare 8 indirizzi IP peer. Poiché l&#39;utente dispone di 2 indirizzi IP pubblici, questo gli dà 8 * 2 = 16 combinazioni per raggiungere i server di posta yahoo.com. Ciascuna di queste combinazioni è denominata percorso.
+Per questo record, l’utente può contattare 8 indirizzi IP peer. Poiché l’utente dispone di 2 indirizzi IP pubblici, questo dà loro 8 * 2 = 16 combinazioni per raggiungere i server di posta yahoo.com. Ciascuna di queste combinazioni è denominata percorso.
 
 Il secondo record MX viene visualizzato come:
 

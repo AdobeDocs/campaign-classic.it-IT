@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # Configurazione dell’interfaccia{#configuring-the-interface}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Per visualizzare e dialogare con la nuova tabella dei destinatari nell’interfaccia di Adobe Campaign, procedi come segue:
 

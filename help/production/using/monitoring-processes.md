@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '3606'
 ht-degree: 0%
@@ -345,7 +345,7 @@ Il flusso di lavoro tecnico si trova in una sottocartella del seguente nodo: **A
 
 ![](assets/billing.png)
 
-Una volta avviato il flusso di lavoro ogni 25 del mese, l’operatore di fatturazione riceverà il seguente rapporto nella sua casella in entrata.
+Una volta avviato il flusso di lavoro ogni 25 del mese, l’operatore di fatturazione riceverà il seguente rapporto nella propria casella in entrata.
 
 ![](assets/billing_2.png)
 

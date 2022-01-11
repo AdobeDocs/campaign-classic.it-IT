@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: eef2a12738ce299686857720c3dc8456ffdd0c80
+source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
 workflow-type: tm+mt
-source-wordcount: '2664'
+source-wordcount: '2625'
 ht-degree: 0%
 
 ---
@@ -17,12 +17,12 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-Questa sezione descrive la configurazione da eseguire in Adobe Campaign v7 se stai eseguendo la migrazione da a v5.11 o a v6.02.
+Questa sezione descrive la configurazione da eseguire in Adobe Campaign v7 durante la migrazione da a v5.11 o a v6.02.
 
 Inoltre:
 
-* Se effettui la migrazione dalla versione v5.11, devi anche completare la configurazione descritta in [Configurazioni specifiche nella versione v5.11](../../migration/using/specific-configurations-in-v5-11.md) sezione .
-* Se effettui la migrazione dalla versione v6.02, devi anche completare la configurazione descritta in [Configurazioni specifiche nella versione v6.02](../../migration/using/specific-configurations-in-v6-02.md) sezione .
+* Se effettui la migrazione dalla versione v5.11, devi anche completare la configurazione dettagliata in [questa sezione](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11).
+* Se effettui la migrazione dalla versione v6.02, devi anche completare la configurazione dettagliata in [questa sezione](../../migration/using/configuring-your-platform.md#specific-configurations-in-v6-02).
 
 ## Fusi orari {#time-zones}
 
@@ -662,12 +662,3 @@ sessionTokenOnly="false"
 ### Applicazioni web anonime {#anonymous-web-applications}
 
 In caso di problemi, ripubblica l&#39;applicazione web.
-
-## Cappello rosso {#red-hat}
-
-Se gli schemi predefiniti sono stati eliminati nelle versioni v6.02 o v5.11, potrebbe non essere più possibile modificare gli schemi dopo l’aggiornamento successivo. In questo caso, esegui il comando:
-
-```
-su - neolane
-nlserver config -postupgrade -instance:<instance name> -force
-```

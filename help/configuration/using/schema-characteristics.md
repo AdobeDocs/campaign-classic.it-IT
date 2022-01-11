@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 099161b4-b4cb-433c-aed6-71157269a536
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # Caratteristiche di uno schema{#schema-characteristics}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Le caratteristiche di uno schema che fa riferimento a una tabella esistente sono le seguenti:
 
@@ -25,7 +25,7 @@ Le caratteristiche di uno schema che fa riferimento a una tabella esistente sono
 
 >[!IMPORTANT]
 >
->Non eliminare i campi nella tabella dei destinatari standard, anche se sono inutili. Questo può causare errori comportamentali nel database Adobe Campaign.
+>Non eliminare i campi nella tabella dei destinatari incorporata, anche se sono inutili. Questo può causare errori comportamentali nel database Adobe Campaign.
 
 ## Attributo di visualizzazione {#the-view-attribute}
 

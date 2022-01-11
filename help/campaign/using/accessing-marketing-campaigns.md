@@ -6,9 +6,9 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 89c007775d4df7c6d50951283efe764c3c424d91
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1271'
 ht-degree: 2%
 
 ---
@@ -161,6 +161,35 @@ Puoi accedere alle schermate della console Adobe Campaign tramite un browser Int
 1. Utilizza i menu per accedere alle panoramiche.
 
    ![](assets/s_ncs_user_interface_web_campaign_01.png)
+
+Oltre a navigare tra le campagne e visualizzarle, è possibile eseguire i seguenti tipi di attività:
+
+* Monitorare l’attività su un’istanza
+* Partecipa ai processi di convalida, ad esempio per approvare o rifiutare un contenuto di consegna
+* Eseguire altre azioni rapide, ad esempio sospendere un flusso di lavoro
+* Accedere a tutte le funzioni di reporting
+* Partecipare alle discussioni del forum
+
+In questa tabella sono riepilogate le azioni che è possibile eseguire sulle campagne da un browser:
+
+| Pagina  | Azione |
+| --- | --- |
+| Elenco di campagne, consegne, offerte, ecc. | Eliminare una voce dell’elenco |
+| Campaign | Annullare una campagna |
+| Consegna | Approvare il contenuto e la destinazione della consegna<br/>Inviare il contenuto della consegna<br/>Conferma di una consegna<br/>Sospendi e interrompi una consegna |
+| Applicazione Web | Creare un’applicazione web<br/>Modifica del contenuto e delle proprietà dell&#39;applicazione<br/>Salva il contenuto dell’applicazione come modello<br/>Pubblicare l’applicazione |
+| Offerta | Approvare il contenuto dell’offerta e l’idoneità<br/>Disattiva un’offerta online |
+| Attività Task | Completare un&#39;attività<br/>Annullare un’attività |
+| Risorse di marketing | Approvare una risorsa<br/>Bloccare e sbloccare una risorsa |
+| Pacchetto campagna | Invia un pacchetto per l&#39;approvazione<br/>Approvare o rifiutare un pacchetto<br/>Annullare un pacchetto |
+| Ordine campagna | Creare un ordine<br/>Accettare o rifiutare un ordine <!-- Je n'ai pas pu créer de campaign order pour vérifier cela. Peut-on accéder à ces fonctionnalités depuis l'accès web ? --> |
+| Stock | Elimina una linea di magazzino |
+| Simulazione dell’offerta | Avviare e arrestare una simulazione |
+| Flusso di lavoro di targeting | Avviare, mettere in pausa e interrompere un flusso di lavoro |
+| Rapporto | Salva i dati correnti nella cronologia del report |
+| Forum | Aggiungi una discussione<br/>Risposta a un messaggio in una discussione<br/>Seguire una discussione e cancellarla |
+
+### Approvazioni
 
 Le approvazioni (di un target o di un contenuto di consegna, ad esempio) possono essere eseguite tramite accesso web.
 

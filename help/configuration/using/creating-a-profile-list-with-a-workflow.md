@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 6b308299-4d07-4c9e-bd2f-a0860c41cf02
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 10%
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 # Creazione di un elenco di profili con un flusso di lavoro{#creating-a-profile-list-with-a-workflow}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Per creare una **[!UICONTROL List]** digita elenco in base alla nuova tabella dei destinatari, devi creare un flusso di lavoro di targeting che genererà l’elenco.
 

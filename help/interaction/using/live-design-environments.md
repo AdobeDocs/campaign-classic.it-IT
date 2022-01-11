@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 965c4a6a-6535-454d-bd37-e9c8312b4d13
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 2%
@@ -28,7 +28,7 @@ L’interazione funziona con due tipi di ambienti di offerta:
 
 Ogni **[!UICONTROL Design]** l&#39;ambiente è collegato a un **[!UICONTROL Live]** ambiente. Quando un&#39;offerta è completa, il suo contenuto e le sue regole di idoneità sono soggette a un ciclo di approvazione. Una volta completato questo ciclo, l&#39;offerta in questione viene automaticamente distribuita nel **[!UICONTROL Live]** ambiente. Da questo momento in poi sarà disponibile per la consegna.
 
-Per impostazione predefinita, l’interazione viene fornita con un **[!UICONTROL Design]** ambiente e **[!UICONTROL Live]** ambiente ad esso collegato. Entrambi gli ambienti sono preconfigurati per eseguire il targeting della tabella dei destinatari predefinita.
+Per impostazione predefinita, l’interazione viene fornita con un **[!UICONTROL Design]** ambiente e **[!UICONTROL Live]** ambiente ad esso collegato. Entrambi gli ambienti sono preconfigurati per eseguire il targeting della tabella dei destinatari incorporata.
 
 >[!NOTE]
 >

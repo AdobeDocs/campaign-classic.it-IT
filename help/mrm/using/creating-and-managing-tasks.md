@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '3729'
 ht-degree: 0%
@@ -103,7 +103,7 @@ Vengono selezionati utilizzando **[!UICONTROL Resources]** nella barra degli str
 
 Fai clic su **[!UICONTROL Ok]** e quindi inserire il tasso di utilizzo: rappresenta il carico assegnato all’operatore per la durata dell’esecuzione dell’attività. Questo tasso è solo indicativo ed è espresso in percentuale.
 
-Ad esempio, per un&#39;attività la cui pianificazione di esecuzione è impostata su 10 giorni, un operatore il cui tasso di utilizzo è pari al 50% verrà mobilitato su questa attività per la metà dell&#39;orario di lavoro per i 10 giorni.
+Ad esempio, per un&#39;attività la cui pianificazione di esecuzione è impostata su 10 giorni, un operatore il cui tasso di utilizzo è pari al 50% verrà mobilitato su questa attività per la metà del tempo di lavoro per i 10 giorni.
 
 Per ogni operatore, è possibile inserire un carico di lavoro programmato e un carico di lavoro effettivo. Queste durate sono anche solo a scopo informativo.
 
@@ -325,7 +325,7 @@ In **[!UICONTROL Marketing resource]** definisci la risorsa da gestire tramite q
 
 La **[!UICONTROL Publish the marketing resource]** consente di automatizzare la pubblicazione delle risorse: una volta che l&#39;attività è **[!UICONTROL Finished]**, lo stato della risorsa passa automaticamente a **[!UICONTROL Published]**, anche se non è stato inviato per l’approvazione o approvato, anche se il revisore che completa l’attività non è il revisore del contenuto definito nella risorsa.
 
-La **[!UICONTROL Publish the resource]** Il revisore della pubblicazione delle risorse riceve un messaggio e-mail di notifica per informarlo che è pronto per essere pubblicato. In **[!UICONTROL Edit > Tracking]** diventa visibile la revisione e la pubblicazione da parte del revisore attività. Se è stato definito un flusso di lavoro di post-elaborazione della risorsa, questo viene eseguito ora.
+La **[!UICONTROL Publish the resource]** il revisore della pubblicazione delle risorse riceve un messaggio e-mail di notifica per informarlo che è pronto per essere pubblicato. In **[!UICONTROL Edit > Tracking]** diventa visibile la revisione e la pubblicazione da parte del revisore attività. Se è stato definito un flusso di lavoro di post-elaborazione della risorsa, questo viene eseguito ora.
 
 ![](assets/mrm_resource_audit_tab.png)
 
@@ -472,7 +472,7 @@ Di seguito sono riportate le fasi di un ciclo completo di vita dell&#39;attivit�
 
    ![](assets/s_ncs_user_task_percentage_done_op.png)
 
-1. Il revisore riceve un messaggio e-mail di notifica che gli informa che l’operatore ha completato la sezione assegnata.
+1. Il revisore riceve un messaggio e-mail di notifica in cui viene indicato che l’operatore ha completato la sezione assegnata al revisore.
 
    Possono seguire i progressi nel dashboard delle attività.
 

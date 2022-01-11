@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 exl-id: facaa88e-1fa2-4189-9d8f-348aaef3e235
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d835da6c7b55d9bf70b6b5dc58880718e12211d5
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 5%
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 # Informazioni sulla simulazione delle offerte{#about-offers-simulation}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 La **Simulazione** Il modulo ti consente di verificare la distribuzione delle offerte appartenenti a una categoria o a un ambiente prima di inviare la proposta ai destinatari.
 

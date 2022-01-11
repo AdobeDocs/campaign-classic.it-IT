@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 222853c5-c754-4c0b-8ee4-a64b2f8677a4
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
@@ -75,7 +75,7 @@ Puoi inviare un messaggio al forum di un operatore se, ad esempio, il messaggio 
 Per accedere al forum di un operatore:
 
 * Se disponi dei diritti necessari per accedere al **[!UICONTROL Administration > Access management > Operators]** nodo dell&#39;esploratore, apri il dashboard dell&#39;operatore desiderato e fai clic sul **[!UICONTROL Forum]** nell&#39;angolo in alto a destra.
-* In caso contrario, trova il nome dell’operatore in Adobe Campaign (tramite un messaggio inviato al forum da questo operatore, un’attività che gli viene assegnata) e fai clic su di esso per accedere al loro dashboard. Puoi anche chiedere all’amministratore di creare una visualizzazione della cartella dell’operatore.
+* In caso contrario, trova il nome dell’operatore in Adobe Campaign (tramite un messaggio inviato al forum da questo operatore, un’attività che viene loro assegnata) e fai clic su di esso per accedere al loro dashboard. Puoi anche chiedere all’amministratore di creare una visualizzazione della cartella dell’operatore.
 
 ## Iscriviti a un forum {#subscribing-to-a-forum}
 

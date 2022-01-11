@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '2614'
-ht-degree: 15%
+ht-degree: 14%
 
 ---
 
@@ -37,13 +37,13 @@ Inoltre, le quarantene contribuiscono a ridurre i costi di invio degli SMS esclu
 
 La **quarantena** si applica solo a un indirizzo, non a tutto il profilo. Ciò significa che se due profili hanno lo stesso indirizzo e-mail, vengono entrambi coinvolti se l’indirizzo viene messo in quarantena.
 
-Allo stesso modo, un profilo con un indirizzo e-mail messo in quarantena potrebbe aggiornare il profilo e immettere un nuovo indirizzo e potrebbe quindi essere nuovamente indirizzato mediante azioni di consegna.
+Allo stesso modo, un profilo il cui indirizzo e-mail è messo in quarantena potrebbe aggiornare il profilo e immettere un nuovo indirizzo e potrebbe quindi essere nuovamente oggetto di targeting mediante azioni di consegna.
 
 Essere sul **elenco Bloccati**, d’altro canto, il profilo non sarà più oggetto di targeting da parte di alcuna consegna, ad esempio dopo un annullamento dell’abbonamento (opt-out).
 
 >[!NOTE]
 >
->Quando un utente risponde a un messaggio SMS con una parola chiave come &quot;STOP&quot; per rifiutare le consegne SMS, il suo profilo non viene aggiunto al  elenco Bloccati come nel processo di rinuncia alle e-mail. Il numero di telefono del profilo viene messo in quarantena in modo che l’utente continui a ricevere messaggi e-mail.
+>Quando un utente risponde a un messaggio SMS con una parola chiave come &quot;STOP&quot; per rifiutare le consegne SMS, il suo profilo non viene aggiunto al elenco Bloccati come nel processo di rinuncia alle e-mail. Il numero di telefono del profilo viene messo in quarantena in modo che l’utente continui a ricevere messaggi e-mail.
 
 ## Identificazione degli indirizzi messi in quarantena {#identifying-quarantined-addresses}
 

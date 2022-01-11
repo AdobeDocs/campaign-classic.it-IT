@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: a5f6478d3c0780464974053e389923614abba582
 workflow-type: tm+mt
 source-wordcount: '523'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -39,7 +39,7 @@ Consulta le [guide introduttive per le tabelle e gli schemi](../../configuration
 
 ## Come si utilizza una tabella dei destinatari personalizzata? {#how-to-use-a-custom-recipient-table-}
 
-Puoi creare e implementare una tabella dei destinatari non standard in Campaign per inviare i tuoi messaggi.
+Puoi creare e implementare una tabella dei destinatari non integrata in Campaign per l’invio dei messaggi.
 
 [Per ulteriori informazioni, fai clic qui](../../configuration/using/about-custom-recipient-table.md)
 
@@ -65,4 +65,4 @@ Il principio dei pacchetti di dati è di esportare una configurazione di dati e 
 
 ## Dove posso trovare l’elenco delle API di Campaign Classic? {#where-can-i-find-the-list-of-campaign-classic-apis}
 
-Tutte le API di Campaign, inclusa la loro descrizione completa, sono disponibili in questa [](https://experienceleague.adobe.com/developer/campaign-api/api/index.html)documentazione dedicata.
+Tutte le API di Campaign, inclusa la loro descrizione completa, sono disponibili in questa [](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=it)documentazione dedicata.

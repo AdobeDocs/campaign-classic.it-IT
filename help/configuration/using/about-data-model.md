@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 6%
@@ -83,7 +83,7 @@ Per ulteriori informazioni sulla configurazione degli schemi di estensione per e
 
 ## Utilizzo di una tabella dei destinatari personalizzata {#custom-recipient-table}
 
-Durante la progettazione del modello dati Adobe Campaign, puoi utilizzare la funzione [tabella dei destinatari predefinita](#default-recipient-table)o decidere di creare un [tabella dei destinatari personalizzata](../../configuration/using/about-custom-recipient-table.md) per memorizzare i profili di marketing.
+Durante la progettazione del modello dati Adobe Campaign, puoi utilizzare la funzione [tabella dei destinatari integrata](#default-recipient-table)o decidere di creare un [tabella dei destinatari personalizzata](../../configuration/using/about-custom-recipient-table.md) per memorizzare i profili di marketing.
 
 In effetti, se il modello dati non si adatta alla struttura incentrata sul destinatario, puoi impostare altre tabelle come dimensione di targeting all’interno di Adobe Campaign. Ad esempio, questo può essere rilevante quando devi rivolgerti a famiglie, account (come telefoni cellulari) e aziende/siti invece che semplicemente a destinatari.
 
@@ -95,11 +95,11 @@ Tutti i principi e i passaggi necessari quando si utilizza una tabella dei desti
 
 I vantaggi dell’utilizzo di una tabella Destinatario personalizzata sono i seguenti:
 
-* **Modello dati flessibile** - La tabella dei destinatari predefinita è inutile se non hai bisogno della maggior parte dei campi della tabella dei destinatari o se il modello dati non è incentrato sul destinatario.
+* **Modello dati flessibile** - La tabella dei destinatari incorporata è inutile se non hai bisogno della maggior parte dei campi della tabella Destinatario o se il modello di dati non è incentrato sul destinatario.
 
-* **Scalabilità** - I grandi volumi richiedono una tabella semplificata con pochi campi per una progettazione efficiente. La tabella Destinatario predefinita avrebbe troppi campi inutili, che potrebbero influire sulle prestazioni e non essere efficiente.
+* **Scalabilità** - I grandi volumi richiedono una tabella semplificata con pochi campi per una progettazione efficiente. La tabella dei destinatari integrata avrebbe troppi campi inutili, che potrebbero influire sulle prestazioni e sulla mancanza di efficienza.
 
-* **Posizione dati** - Se i dati si trovano in un database di marketing esistente esterno, potrebbe essere necessario troppo impegno per utilizzare la tabella Destinatario preconfigurata. Creare un nuovo modello basato su una struttura esistente è più semplice.
+* **Posizione dati** - Se i dati si trovano in un database di marketing esistente esterno, potrebbe essere necessario troppo impegno per utilizzare la tabella dei destinatari incorporata. Creare un nuovo modello basato su una struttura esistente è più semplice.
 
 * **Migrazione semplice** - Non è necessaria alcuna manutenzione per verificare che tutte le estensioni siano ancora valide al momento dell&#39;aggiornamento.
 

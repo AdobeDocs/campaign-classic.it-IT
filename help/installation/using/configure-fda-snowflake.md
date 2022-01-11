@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 6cecc81135afd067712e51ec9c1ad3239170702e
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 10%
+source-wordcount: '411'
+ht-degree: 8%
 
 ---
 
@@ -19,9 +19,8 @@ ht-degree: 10%
 
 Utilizzare Campaign **Federated Data Access** (FDA) opzione per elaborare le informazioni memorizzate in un database esterno. Segui i passaggi seguenti per configurare l’accesso a [!DNL Snowflake].
 
-1. Configura [!DNL Snowflake] su [CentOS](#snowflake-centos), [Windows](#snowflake-windows) o [Debian](#snowflake-debian)
+1. Configura [!DNL Snowflake] su [Linux](#snowflake-linux).
 1. Configura le [!DNL Snowflake] [account esterno](#snowflake-external) in Campaign
-
 
 >[!NOTE]
 >
@@ -29,47 +28,43 @@ Utilizzare Campaign **Federated Data Access** (FDA) opzione per elaborare le inf
 
 ![](assets/snowflake_3.png)
 
-## Snowflake su CentOS {#snowflake-centos}
+## Snowflake su Linux {#snowflake-linux}
 
-Per configurare [!DNL Snowflake] su CentOS, segui i passaggi seguenti:
+Per configurare [!DNL Snowflake] su Linux, segui i passaggi seguenti:
 
-1. Scaricare i driver ODBC per [!DNL Snowflake]. [Fai clic qui](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/snowflake-odbc-2.20.2.x86_64.rpm) per iniziare a scaricare.
-1. È quindi necessario installare i driver ODBC su CentOs con il seguente comando:
+1. Prima dell&#39;installazione ODBC, verificare che i seguenti pacchetti siano installati nella distribuzione Linux:
 
-   ```
-   rpm -Uvh unixodbc
-   rpm -Uvh snowflake-odbc-2.20.2.x86_64.rpm
-   ```
+   * Per Red Hat/CentOS:
 
-1. Dopo aver scaricato e installato i driver ODBC, è necessario riavviare Campaign Classic. A questo scopo, esegui il seguente comando:
+      ```
+      yum update
+      yum upgrade
+      yum install -y grep sed tar wget perl curl
+      ```
 
-   ```
-   /etc/init.d/nlserver6 stop
-   /etc/init.d/nlserver6 start
-   ```
+   * Per Debian:
 
-1. In Campaign, puoi quindi configurare il tuo [!DNL Snowflake] conto esterno. Per ulteriori informazioni su come configurare l’account esterno, consulta [questa sezione](#snowflake-external).
+      ```
+      apt-get update
+      apt-get upgrade
+      apt-get install -y grep sed tar wget perl curl
+      ```
 
-## Snowflake su Windows {#snowflake-windows}
-
-1. Scarica la [Driver ODBC per Windows](https://docs.snowflake.net/manuals/user-guide/odbc-download.html). Per installare il driver, è necessario disporre di privilegi di livello amministratore. Per ulteriori informazioni, consulta [questa pagina](https://docs.snowflake.net/manuals/user-guide/admin-user-management.html)
-
-1. Configurare il driver ODBC. Per ulteriori informazioni, consulta [questa pagina](https://docs.snowflake.net/manuals/user-guide/odbc-windows.html#step-2-configure-the-odbc-driver)
-
-1. In Campaign, puoi quindi configurare il tuo [!DNL Snowflake] conto esterno. Per ulteriori informazioni su come configurare l’account esterno, consulta [questa sezione](#snowflake-external).
-
-## Snowflake su Debian {#snowflake-debian}
-
-1. Scaricare i driver ODBC per [!DNL Snowflake]. [Fai clic qui](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html) inizia a scaricare.
-
-1. È quindi necessario installare i driver ODBC su Debian con il seguente comando:
+1. Prima di eseguire lo script, è possibile accedere a ulteriori informazioni con `--help` opzione:
 
    ```
-   apt-get install unixodbc
-   apt-get install snowflake-odbc-x.xx.x.x86_64.deb
+   cd /usr/local/neolane/nl6/bin/fda-setup-scripts/
+   ./snowflake_odbc-setup.sh --help
    ```
 
-1. Dopo aver scaricato e installato i driver ODBC, è necessario riavviare Campaign Classic. A questo scopo, esegui il seguente comando:
+1. Accedi alla directory in cui si trova lo script ed esegui il seguente script come utente principale:
+
+   ```
+   cd /usr/local/neolane/nl6/bin/fda-setup-scripts
+   ./snowflake_odbc-setup.sh
+   ```
+
+1. Dopo aver installato i driver ODBC, è necessario riavviare Campaign Classic. A questo scopo, esegui il seguente comando:
 
    ```
    systemctl stop nlserver.service
@@ -88,23 +83,36 @@ Per configurare [!DNL Snowflake] su CentOS, segui i passaggi seguenti:
 
 1. Seleziona **[!UICONTROL External database]** come account esterno **[!UICONTROL Type]**.
 
-1. Configura le **[!UICONTROL Snowflake]** account esterno, devi specificare:
+1. Sotto **[!UICONTROL Configuration]**, seleziona [!DNL Snowflake] dal **[!UICONTROL Type]** a discesa.
 
-   * **[!UICONTROL Type]**: [!DNL Snowflake]
+   ![](assets/snowflake_5.png)
 
-   * **[!UICONTROL Server]**: URL del [!DNL Snowflake] server
+1. Aggiungi il tuo **[!UICONTROL Server]** URL e **[!UICONTROL Database]**.
 
-   * **[!UICONTROL Account]**: Nome dell’utente
+1. Configura le **[!UICONTROL Snowflake]** autenticazione account esterno:
 
-   * **[!UICONTROL Password]**: Password account utente
+   * Per l&#39;autenticazione account/password, devi specificare:
 
-   * **[!UICONTROL Database]**: Nome del database
+      * **[!UICONTROL Account]**: Nome dell’utente
 
-   ![](assets/snowflake.png)
+      * **[!UICONTROL Password]**: Password dell&#39;account utente.
+
+      ![](assets/snowflake.png)
+
+   * Per l’autenticazione con coppie chiave, fai clic sul pulsante **[!UICONTROL Keypair Auth]** scheda per utilizzare **[!UICONTROL Private key]** per eseguire l&#39;autenticazione e copiare e incollare **[!UICONTROL Private key]**.
+
+      ![](assets/snowflake_4.png)
+
 
 1. Fai clic sul pulsante **[!UICONTROL Parameters]** quindi seleziona **[!UICONTROL Deploy functions]** per creare funzioni.
 
+   >[!NOTE]
+   >
+   >Affinché tutte le funzioni siano disponibili, è necessario creare le funzioni SQL di Adobe Campaign nel database remoto. Per ulteriori informazioni, consulta [page](../../configuration/using/adding-additional-sql-functions.md).
+
    ![](assets/snowflake_2.png)
+
+1. Fai clic su **[!UICONTROL Save]** al termine della configurazione.
 
 Il connettore supporta le seguenti opzioni:
 

@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '892'
 ht-degree: 4%
 
 ---
@@ -59,7 +59,7 @@ Per migliorare la sicurezza, è stato introdotto un meccanismo di firma per il t
 
 Inoltre, a partire da Campaign 20.2 e dal [!DNL Gold Standard] Puoi utilizzare un miglioramento per disabilitare gli URL generati nelle build precedenti. Questa funzione è disabilitata per impostazione predefinita. Puoi rivolgerti a [Assistenza clienti](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per abilitare questa funzione.
 
-Se siete in esecuzione [!DNL Gold Standard] 19.1.4, potrebbero verificarsi problemi con le consegne di notifiche push che utilizzano collegamenti di tracciamento o con le consegne che utilizzano tag di ancoraggio. In tal caso, si consiglia di disabilitare la firma URL.
+Se esegui la build 19.1.4, potrebbero verificarsi problemi con le consegne di notifiche push che utilizzano collegamenti di tracciamento o con le consegne che utilizzano tag di ancoraggio. In tal caso, si consiglia di disabilitare la firma URL.
 
 Se esegui Campaign in locale o in un’architettura ibrida, devi contattare [Assistenza clienti](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) per disattivare la firma URL.
 

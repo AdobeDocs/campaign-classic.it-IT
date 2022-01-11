@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 exl-id: 9e199b7c-9307-4797-bf86-7940388555bc
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '1094'
 ht-degree: 0%
@@ -64,7 +64,7 @@ Di seguito è riportata la definizione dei principali elementi di interazione.
 * **Modalità unitaria**: viene elaborato un unico contatto alla volta. Questa modalità è generalmente utilizzata per le interazioni in entrata e i messaggi transazionali.
 * **Modalità di identificazione**: si riferisce allo stato di un contatto.
 
-   * **[!UICONTROL explicit]** : il contatto viene identificato dopo il suo accesso all&#39;interfaccia del canale.
+   * **[!UICONTROL explicit]** : il contatto viene identificato dopo il loro accesso all&#39;interfaccia del canale.
    * **[!UICONTROL implicit]** : il contatto è stato identificato da un cookie (permanente o sessione). Può essere elaborato come contatto anonimo o identificato.
    * **[!UICONTROL anonymous]** : non è possibile identificare il contatto.
 

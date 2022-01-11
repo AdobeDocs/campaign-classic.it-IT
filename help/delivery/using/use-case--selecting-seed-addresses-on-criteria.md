@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 3%
@@ -23,7 +23,7 @@ In questo caso d’uso, il sito **Raccolta online personale** Vorrei personalizz
 
 In collaborazione con il reparto acquisti, l&#39;utente responsabile delle consegne ha creato una newsletter per gli abbonati che hanno acquistato i romanzi della polizia.
 
-Per condividere il risultato finale della loro collaborazione con loro, il responsabile della consegna decide di aggiungere i suoi colleghi del reparto acquisti alla consegna come indirizzi di seed. L’utilizzo di una condizione dinamica consente di risparmiare tempo sulla configurazione e l’aggiornamento degli indirizzi.
+Per condividere il risultato finale della loro collaborazione con loro, il responsabile della consegna decide di aggiungere i propri colleghi del reparto acquisti alla consegna come indirizzi di seed. L’utilizzo di una condizione dinamica consente di risparmiare tempo sulla configurazione e l’aggiornamento degli indirizzi.
 
 Per utilizzare la condizione dinamica, è necessario disporre di:
 

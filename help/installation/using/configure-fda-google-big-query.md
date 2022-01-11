@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
-source-git-commit: 6d53ba957fb567a9a921544418a73a9bde37c97b
+source-git-commit: 5d2ec0836fe5f106e0c56e5abbe7bab9332d7e18
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '786'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ Utilizza Adobe Campaign Classic **Federated Data Access** (FDA) opzione per elab
 
 >[!NOTE]
 >
-> [!DNL Google BigQuery] connettore è disponibile per distribuzioni ibride e on-premise. Per ulteriori informazioni, consulta [questa pagina](../../installation/using/capability-matrix.md).
+> [!DNL Google BigQuery] è disponibile per le distribuzioni in hosting, ibride e on-premise. Per ulteriori informazioni, consulta [questa pagina](../../installation/using/capability-matrix.md).
 
 ![](assets/snowflake_3.png)
 
@@ -85,125 +85,50 @@ L&#39;utilità di caricamento collettivo consente un trasferimento più veloce, 
 
 ### Driver configurato su Linux {#driver-linux}
 
-1. Prima di installare il driver ODBC, è necessario aggiornare il sistema. Su Linux o CentOS, esegui il seguente comando:
+Prima di configurare il driver, tenere presente che lo script e i comandi devono essere eseguiti dall&#39;utente principale. Si consiglia inoltre di utilizzare Google DNS 8.8.8.8 durante l&#39;esecuzione dello script.
+
+Per configurare [!DNL Google BigQuery] su Linux, segui i passaggi seguenti:
+
+1. Prima dell&#39;installazione ODBC, verificare che i seguenti pacchetti siano installati nella distribuzione Linux:
+
+   * Per Red Hat/CentOS:
+
+      ```
+      yum update
+      yum upgrade
+      yum install -y grep sed tar wget perl curl
+      ```
+
+   * Per Debian:
+
+      ```
+      apt-get update
+      apt-get upgrade
+      apt-get install -y grep sed tar wget perl curl
+      ```
+
+1. Aggiornare il sistema prima dell&#39;installazione:
+
+   * Per Red Hat/CentOS:
+
+      ```
+      # install unixODBC driver manager
+      yum install -y unixODBC
+      ```
+
+   * Per Debian:
+
+      ```
+      # install unixODBC driver manager
+      apt-get install -y odbcinst1debian2 libodbc1 odbcinst unixodbc
+      ```
+
+1. Accedi alla directory in cui si trova lo script ed esegui il seguente script:
 
    ```
-   yum update
-   # install unixODBC driver manager
-   yum install unixODBC
+   cd /usr/local/neolane/nl6/bin/fda-setup-scripts
+   ./bigquery_odbc-setup.sh
    ```
-
-1. È quindi necessario installare la gestione driver unixODBC con il seguente comando:
-
-   ```
-   # switch to root user
-   sudo su
-   ```
-
-   Su Debian:
-
-   ```
-   apt-get update
-   apt-get upgrade
-   # install unixODBC driver manager
-   apt-get install unixODBC
-   ```
-
-1. Scarica la [Driver ODBC Magnitude Simba Linux (.tar.gz)](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers). Quindi, trasferire il file tarball in una cartella temporanea sul tuo computer o utilizzare il comando wget:
-
-   ```
-   # in this example driver version is 2.3.1.1001
-   wget https://storage.googleapis.com/simba-bq-release/odbc/SimbaODBCDriverforGoogleBigQuery_[Version]-Linux.tar.gz
-   ```
-
-1. Estrarre il file di tarball principale come segue dove **TarballName** è il nome del pacchetto tarball contenente il conducente:
-
-   ```
-   tar --directory=/tmp -zxvf [TarballName]
-   ```
-
-1. Accedere alla cartella estratta ed estrarre il file di tarball interno corrispondente alla versione del driver. Installalo in un&#39;altra cartella temporanea, nel seguente esempio BigQueryDriver:
-
-   ```
-   mkdir /tmp/BigQueryDriver/
-   cd /tmp/SimbaODBCDriverforGoogleBigQuery_[Version]-Linux/
-   tar --directory=/tmp/BigQueryDriver/ -zxvf SimbaODBCDriverforGoogleBigQuery[Bitness]_[Version].tar.gz
-   ```
-
-1. Accedi alla posizione temporanea in cui è stato estratto il file principale di tarball e copia il `GoogleBigQueryODBC.did` e `setup/simba.googlebigqueryodbc.ini` file nella nuova cartella creata nel passaggio precedente:
-
-   ```
-   cd /tmp/SimbaODBCDriverforGoogleBigQuery_[Version]-Linux/
-   cp GoogleBigQueryODBC.did /tmp/BigQueryDriver/SimbaODBCDriverforGoogleBigQuery[Bitness]_[Version]/lib/
-   cp setup/simba.googlebigqueryodbc.ini /tmp/BigQueryDriver/SimbaODBCDriverforGoogleBigQuery[Bitness]_[Version]/lib/
-   ```
-
-1. Crea la directory di installazione come segue:
-
-   ```
-   mkdir -p /opt/simba/googlebigqueryodbc/
-   ```
-
-1. Copia il contenuto della directory nella nuova directory di installazione:
-
-   ```
-   cp -r /tmp/BigQueryDriver/SimbaODBCDriverforGoogleBigQuery[Bitness]_[Version]/* /opt/simba/googlebigqueryodbc/
-   ```
-
-1. Sostituisci `<INSTALLDIR>` con `/opt/simba/googlebigqueryodbc` in `simba.googlebigqueryodbc.ini` nella directory di installazione:
-
-   ```
-   cd /opt/simba/googlebigqueryodbc/lib/
-   sed -i 's/<INSTALLDIR>/\/opt\/simba\/googlebigqueryodbc/g' simba.googlebigqueryodbc.ini
-   ```
-
-1. Modificare la `DriverManagerEncoding` all&#39;UTF-16 e `SwapFilePath` in `simba.googlebigqueryodbc.ini`. Se necessario, puoi anche modificare le impostazioni di registrazione.
-
-   Di seguito è riportato un esempio di file di configurazione aggiornato a livello di driver:
-
-   ```
-   # /opt/simba/googlebigqueryodbc/lib/simba.googlebigqueryodbc.ini
-   [Driver]
-   DriverManagerEncoding=UTF-16
-   ErrorMessagesPath=opt/simba/googlebigqueryodbc/ErrorMessages
-   LogLevel=6
-   LogPath=/tmp
-   SwapFilePath=/tmp
-   ```
-
-1. Se si utilizza un file di driver di sistema o qualsiasi file corrente `odbcinst.ini` file, configurare `/etc/odbcinst.ini` per puntare alla posizione del driver BigQuery Google `/opt/simba/googlebigqueryodbc/lib/libgooglebigqueryodbc_sb[Bitness].so`.
-
-   Ad esempio:
-
-   ```
-   # /etc/odbcinst.ini
-   # Make sure to use Simba ODBC Driver for Google BigQuery as a driver name.
-   
-   [ODBC Drivers]
-   Simba ODBC Driver for Google BigQuery=Installed
-   
-   [Simba ODBC Driver for Google BigQuery]
-   Description=Simba ODBC Driver for Google BigQuery(64-bit)
-   Driver=/opt/simba/googlebigqueryodbc/lib/libgooglebigqueryodbc_sb64.so
-   ```
-
-1. Trova il percorso delle librerie di gestione driver unixODBC e aggiungi il `unixODBC` e `googlebigqueryodbc` percorsi della libreria `LD_LIBRARY_PATH environment` variabile.
-
-   ```
-   find / -name 'lib*odbc*.so*' -print
-   #output:
-   /usr/lib/x86_64-linux-gnu/libodbccr.so.2
-   /usr/lib/x86_64-linux-gnu/libodbcinst.so.2.0.0
-   /usr/lib/x86_64-linux-gnu/libodbccr.so.1
-   .
-   .
-   /opt/simba/googlebigqueryodbc/lib/libgooglebigqueryodbc_sb64.so
-   
-   #the command would look like this
-   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/simba/googlebigqueryodbc:/usr/lib
-   ```
-
-1. In Adobe Campaign Classic puoi quindi configurare il [!DNL Google BigQuery] conto esterno. Per ulteriori informazioni su come configurare l’account esterno, consulta [questa sezione](#google-external).
 
 ### Caricamento in serie configurato su Linux {#bulk-load-linux}
 
@@ -215,15 +140,30 @@ L&#39;utilità di caricamento collettivo consente un trasferimento più veloce, 
 
 L&#39;utilità di caricamento collettivo consente un trasferimento più veloce, che viene ottenuto tramite Google Cloud SDK.
 
-1. Scarica l&#39;archivio Linux a 64 bit (x86_64) in questo [page](https://cloud.google.com/sdk/docs/downloads-versioned-archives) ed estrarre nella directory corrispondente.
+1. Prima dell&#39;installazione ODBC, verificare che i seguenti pacchetti siano installati nella distribuzione Linux:
 
-1. Esegui il `google-cloud-sdk\install.sh` script. È necessario accettare l&#39;impostazione della variabile di percorso.
+   * Per Red Hat/CentOS:
 
-1. Dopo l&#39;installazione, controlla che la variabile del percorso `...\google-cloud-sdk\bin` è impostato. In caso contrario, aggiungilo manualmente.
+      ```
+      yum update
+      yum upgrade
+      yum install -y python3
+      ```
 
-1. Se desideri evitare di utilizzare il `PATH` o se desideri spostare la variabile `google-cloud-sdk` in un&#39;altra posizione, utilizza la `bqpath` valore dell&#39;opzione durante la configurazione del **[!UICONTROL External account]** per specificare il percorso esatto della directory bin sul sistema.
+   * Per Debian:
 
-1. Riavvia Adobe Campaign Classic per prendere in considerazione le modifiche.
+      ```
+      apt-get update
+      apt-get upgrade
+      apt-get install -y python3
+      ```
+
+1. Accedi alla directory in cui si trova lo script ed esegui il seguente script:
+
+   ```
+   cd /usr/local/neolane/nl6/bin/fda-setup-scripts
+   ./bigquery_sdk-setup.sh
+   ```
 
 ## Account esterno Google BigQuery {#google-external}
 
@@ -248,4 +188,16 @@ L&#39;utilità di caricamento collettivo consente un trasferimento più veloce, 
 
       * **[!UICONTROL Enter manually the key file path]**: copia/incolla il percorso assoluto in questo campo se scegli di utilizzare una chiave preesistente.
    * **[!UICONTROL Dataset]**: Nome della **[!UICONTROL Dataset]**. Per ulteriori informazioni, consulta [Documentazione di Google Cloud](https://cloud.google.com/bigquery/docs/datasets-intro).
+
    ![](assets/google-big-query.png)
+
+Il connettore supporta le seguenti opzioni:
+
+| Opzione | Elemento “value” | Descrizione |
+|:-:|:-:|:-:|
+| ProxyType | string | Tipo di proxy utilizzato per la connessione a BigQuery tramite connettori ODBC e SDK. </br>HTTP (predefinito), http_no_tunnel, socks4 e socks5 sono attualmente supportati. |
+| ProxyHost | string | Nome host o indirizzo IP in cui è possibile raggiungere il proxy. |
+| ProxyPort | numero | Numero di porta su cui è in esecuzione il proxy, ad esempio 8080 |
+| ProxyUid | string | Nome utente utilizzato per il proxy autenticato |
+| ProxyPwd | string | Password ProxyUid |
+| bqpath | string | Questo è applicabile solo per lo strumento a caricamento collettivo (Cloud SDK). </br> Per evitare di utilizzare la variabile PATH o se la directory google-cloud-sdk deve essere spostata in un’altra posizione, puoi specificare con questa opzione il percorso esatto della directory cloud sdk bin sul server. |

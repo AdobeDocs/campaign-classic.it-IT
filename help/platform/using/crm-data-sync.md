@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 648b6c0982e15716b11bdbc5954ce88491582e7d
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1536'
 ht-degree: 0%
 
 ---
@@ -170,7 +170,11 @@ Per un’esportazione, applica la seguente configurazione al **[!UICONTROL CRM C
    >
    >La funzione di esportazione del **[!UICONTROL CRM Connector]** l&#39;attività può inserire o aggiornare campi sul lato CRM. Per abilitare gli aggiornamenti dei campi nel CRM, devi specificare la chiave primaria della tabella remota. Se la chiave è mancante, i dati verranno inseriti (anziché essere aggiornati).
 
-1. In **[!UICONTROL Mapping]** specifica i campi da esportare e la relativa mappatura nel CRM.
+1. Controlla **[!UICONTROL Export in Batches]** se hai bisogno di esportazioni più veloci.
+
+   ![](assets/crm_export_config_2.png)
+
+1. In **[!UICONTROL Mapping]** sezione, fai clic su **[!UICONTROL New]** per specificare i campi da esportare e la relativa mappatura nel CRM.
 
    ![](assets/crm_export_config.png)
 

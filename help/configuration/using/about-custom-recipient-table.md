@@ -6,24 +6,22 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: d8cea496-b3f3-420a-bf6e-b7cbb321b30d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '667'
 ht-degree: 2%
 
 ---
 
 # Utilizzare una tabella dei destinatari personalizzata{#about-custom-recipient-table}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
-Questa sezione descrive i principi per l’utilizzo di una tabella dei destinatari non standard.
+Questa sezione descrive i principi per l’utilizzo di una tabella dei destinatari personalizzata (o esterna).
 
-Per impostazione predefinita, Adobe Campaign offre una tabella dei destinatari standard a cui sono collegati le funzioni e i processi predefiniti. La tabella dei destinatari standard dispone di una serie di campi e tabelle predefiniti che possono essere facilmente estesi utilizzando una tabella delle estensioni.
+Per impostazione predefinita, Adobe Campaign offre una tabella dei destinatari incorporata alla quale sono collegati le funzioni e i processi predefiniti. La tabella dei destinatari integrata dispone di una serie di campi e tabelle predefiniti che possono essere facilmente estesi utilizzando una tabella delle estensioni.
 
 Se questo metodo di estensione offre una buona flessibilità per estendere una tabella, non consente di ridurre il numero di campi o collegamenti in essa contenuti. L’utilizzo di una tabella non standard, o &quot;tabella dei destinatari esterna&quot;, consente una maggiore flessibilità ma richiede alcune precauzioni durante l’implementazione.
-
-## Precisazioni {#precisions}
 
 Questa funzionalità consente ad Adobe Campaign di elaborare i dati da un database esterno: questi dati verranno utilizzati come un set di profili per le consegne. L&#39;implementazione di questo processo comporta diverse precisazioni che possono essere rilevanti in base alle esigenze del cliente. Ad esempio:
 
@@ -31,14 +29,14 @@ Questa funzionalità consente ad Adobe Campaign di elaborare i dati da un databa
 * Nessuna modifica dei processi che operano sul database esistente.
 * Utilizzo di un database di profilo con una struttura non standard: possibilità di consegnare a profili salvati in varie tabelle con diverse strutture, utilizzando un’unica istanza.
 * Non è necessaria alcuna modifica o manutenzione per aggiornare il database Adobe Campaign.
-* La tabella dei destinatari standard è inutile se non è necessaria la maggior parte dei campi della tabella o se il modello del database non è centrato sui destinatari.
-* Per essere efficiente, è necessaria una tabella con pochi campi se disponi di un numero significativo di profili. La tabella dei destinatari standard contiene troppi campi per questo caso specifico.
+* La tabella dei destinatari incorporata è inutile se non è necessaria la maggior parte dei campi della tabella o se il modello del database non è centrato sui destinatari.
+* Per essere efficiente, è necessaria una tabella con pochi campi se disponi di un numero significativo di profili. La tabella dei destinatari integrata contiene troppi campi per questo caso specifico.
 
-Questa sezione descrive i punti chiave che ti consentono di mappare le tabelle esistenti in Adobe Campaign e la configurazione da applicare per eseguire consegne in base a qualsiasi tabella. Infine, descrive come fornire agli utenti interfacce di query pratiche quanto quelle disponibili con la tabella dei destinatari standard. Per comprendere il materiale presentato in questa sezione, è necessaria una buona conoscenza dei principi di progettazione dello schermo e dello schema.
+Questa sezione descrive i punti chiave che ti consentono di mappare le tabelle esistenti in Adobe Campaign e la configurazione da applicare per eseguire consegne in base a qualsiasi tabella. Infine, descrive come fornire agli utenti interfacce di query pratiche quanto quelle disponibili con la tabella dei destinatari incorporata. Per comprendere il materiale presentato in questa sezione, è necessaria una buona conoscenza dei principi di progettazione dello schermo e dello schema.
 
 ## Recommendations e limitazioni {#recommendations-and-limitations}
 
-L’utilizzo di una tabella dei destinatari esterna presenta le seguenti limitazioni:
+L’utilizzo di una tabella dei destinatari personalizzata presenta le seguenti limitazioni:
 
 * Adobe Campaign non supporta più schemi di destinatari, noti come schemi di targeting, collegati agli stessi schemi di registro di trasmissione e/o di trackinglog. In caso contrario, si potrebbero verificare successivamente anomalie nella riconciliazione dei dati.
 

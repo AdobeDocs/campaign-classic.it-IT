@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;argomenti principali
 product: campaign
 title: Documentazione del prodotto Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 6c5cac3ccc60deb5940c785c9cb8b08f5938fe62
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 50%
+source-wordcount: '259'
+ht-degree: 51%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 50%
 
 ## Novità
 
-* **[Il rilascio di ottobre è live!](rn/using/latest-release.md)**<br/> Scopri nuove funzionalità, miglioramenti e correzioni nelle note sulla versione
+* **[Il rilascio di gennaio è live!](rn/using/latest-release.md)**<br/> Scopri nuove funzionalità, miglioramenti e correzioni nelle note sulla versione
 
 * **[Domande frequenti sulla protezione della privacy di Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=it)** e **[nota tecnica](technotes/using/apple-mail-app-privacy-protection.md)**<br/> Trova indicazioni in risposta all’annuncio di Apple su iOS 15
 
@@ -83,6 +83,6 @@ ht-degree: 50%
 | [Note sulla versione](rn/using/latest-release.md) | [Elenco dei messaggi di errore](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=it) |
 | [Video dimostrativi](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it) | [Modello dati di Campaign](configuration/using/about-data-model.md) |
 | [Matrice di compatibilità](rn/using/compatibility-matrix.md) | [JSAPI per Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html) |
-| Aggiornamento [[!DNL Gold Standard] ](rn/using/gs-overview.md) | [Guida al tracking](https://helpx.adobe.com/it/campaign/kb/acc-tracking.html) |
+| [Introduzione agli aggiornamenti](rn/using/rn-overview.md) | [Guida al tracking](https://helpx.adobe.com/it/campaign/kb/acc-tracking.html) |
 | [Funzioni obsolete](rn/using/deprecated-features.md) | [Lista di controllo protezione e privacy](https://helpx.adobe.com/it/campaign/kb/acc-security.html) |
 | [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it) | [Linee guida per il monitoraggio](production/using/monitoring-guidelines.md) |
