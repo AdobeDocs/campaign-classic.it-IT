@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 0a7cdd53640bb3d96ff9bc2de4aa4c1849e32c83
 workflow-type: tm+mt
 source-wordcount: '1707'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
   <td>Connettore dati Adobe Analytics<br></td>
    <td><p>A partire dalla versione 21.1.3 di Campaign, il Connettore dati di Adobe Analytics è diventato obsoleto.</p>
    <p>Se utilizzi questo connettore, devi adattare di conseguenza l’implementazione. <a href="../../platform/using/adobe-analytics-connector.md">Ulteriori informazioni</a></p>
-  <p><em>Data di rimozione target: 17 agosto 2022</em></p>
+  <p><em>Data prevista di rimozione: 17 agosto 2022</em></p>
   </td>
  </tr>
     <tr>
@@ -62,7 +62,7 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
    <td><p>A partire dalla versione 21.1 di Campaign, il rapporto tecnico di monitoraggio della consegna e-mail è diventato obsoleto.</p>
    <p>Se necessario, puoi ricevere per e-mail questo rapporto ogni giorno, fino alla data in cui la funzione verrà rimossa. Per richiederlo, apri un <a href="https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">caso di supporto</a> specifico e indica il nome dell’istanza e gli indirizzi e-mail a cui inviare il rapporto.</p> 
    <p>Adobe consiglia di interagire con il team Deliverability per definire gli strumenti migliori per monitorare le prestazioni di recapito dell’istanza.</p>
-  <p><em>Data di rimozione target: Inizio 2022</em></p>
+  <p><em>Data prevista di rimozione: inizio 2022</em></p>
   </td>
  </tr>
   <tr>
@@ -70,7 +70,7 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
   <td><p> A partire dalla versione di Campaign 20.3, l’autenticazione dell’integrazione dei trigger, originariamente basata su OAuth per accedere alla pipeline, ora è stata modificata e spostata in Adobe I/O. <p>
   <p>Se utilizzi l’integrazione con i trigger, devi adattare di conseguenza l’implementazione. <a href="../../integrations/using/configuring-adobe-io.md">Ulteriori informazioni</a></p> 
   <p>Per ulteriori informazioni sulla obsolescenza dell’autenticazione OAuth, fare riferimento a questa <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">pagina</a></p> 
-  <p><em>Data di rimozione target: 20 ottobre 2021. Gli ambienti in hosting beneficiano di un’estensione fino al 23 febbraio 2022. </em></p>
+  <p><em>Data di rimozione target: 20 ottobre 2021. Gli ambienti in hosting usufruiscono di una proroga al 23 febbraio 2022. </em></p>
   </td>
   </tr>
  </tbody> 
@@ -172,7 +172,7 @@ A partire dalla versione 21.1.3, il supporto per Debian 8 è diventato obsoleto.
 
 A partire dalla versione 19.1, Adobe Campaign non è più compatibile con i seguenti sistemi operativi.
 
-* CentOS 6. [Ulteriori informazioni](https://wiki.centos.org/Download)
+* CentOs 6. [Ulteriori informazioni](https://wiki.centos.org/Download)
 * Debian 7. [Ulteriori informazioni](https://wiki.debian.org/DebianReleases)
 * RHEL 6.x. [Ulteriori informazioni](https://access.redhat.com/support/policy/updates/errata)
 * Windows Server 2008. [Ulteriori informazioni](https://support.microsoft.com/it-it/lifecycle/search/1163)

@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 630a62c5e5c9782c5c55fdebd651493a2d68fc54
 workflow-type: tm+mt
 source-wordcount: '1056'
-ht-degree: 16%
+ht-degree: 30%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 16%
 
 ![](../../assets/v7-only.svg)
 
-In questa pagina sono elencate nuove funzionalità, miglioramenti e correzioni apportati al **versione più recente di Campaign Classic v7**. Ogni nuova build viene fornita con uno stato che viene materializzato da un colore. Ulteriori informazioni sugli stati della build di Campaign Classic v7 in [questa pagina](rn-overview.md).
+In questa pagina sono elencate nuove funzionalità, miglioramenti e correzioni introdotti con l’**ultima versione di Campaign v7**. Ogni nuova build viene fornita con uno stato che viene materializzato da un colore. Ulteriori informazioni sugli stati della build di Campaign Classic v7 in [questa pagina](rn-overview.md).
 
 ## ![](assets/do-not-localize/green_2.png) Versione 7.2.1 - Build 9346 {#release-7-2-1}
 
@@ -27,7 +27,7 @@ _10 gennaio 2022_
 
 Diversi miglioramenti di sicurezza sono stati apportati agli account FDA:
 
-* I driver ODBC sono ora installati direttamente con Adobe Campaign Third Party. Per installare questi driver non sono più necessari passaggi manuali.
+* I driver ODBC sono ora installati direttamente con Adobe Campaign di terze parti. Per installare questi driver non sono più necessari passaggi manuali.
 * Quando configuri il tuo account esterno FDA, ora puoi accedere al tuo account di Snowflake utilizzando l’autenticazione con coppia di chiavi per una maggiore sicurezza di autenticazione. [Maggiori informazioni](../../installation/using/configure-fda-snowflake.md)
 * Quando configuri il tuo account esterno FDA, ora puoi accedere al tuo account Azure synapse Analytics utilizzando l’identità gestita assegnata dal sistema. [Maggiori informazioni](../../installation/using/configure-fda-synapse.md#azure-external)
 * Tutti i riferimenti alla libreria log4j sono stati rimossi da Campaign per garantire la sicurezza ottimale.
@@ -38,8 +38,8 @@ Diversi miglioramenti di sicurezza sono stati apportati agli account FDA:
 
    Sono state applicate correzioni critiche relative all’API web di Microsoft Dynamics Connector:
 
-   * È stato risolto un problema, durante un&#39;importazione attivata da un flusso di lavoro, che causava il salvataggio dei valori null dei campi di tipo stringa come Null invece di valori vuoti.
-   * È stato risolto un problema che causava il seguente errore per l’importazione o l’esportazione di dati tramite chiamate API web: &quot;URI non valido: Lo schema URI è troppo lungo&quot;.
+   * È stato risolto un problema, durante un’importazione attivata da un flusso di lavoro, che causava il salvataggio dei valori nulli dei campi di tipo stringa come Null invece di valori vuoti.
+   * È stato risolto un problema che causava il seguente errore per l’importazione o l’esportazione di dati tramite chiamate API web: “URI non valido: lo schema URI è troppo lungo”.
    * Sono stati risolti diversi problemi durante l’importazione, da Microsoft Dynamics 365, di dati contenenti campi di ricerca.
 
 * Connettore FDA BigQuery Google

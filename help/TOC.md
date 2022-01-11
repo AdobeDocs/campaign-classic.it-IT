@@ -834,7 +834,7 @@ ht-degree: 98%
       + [Note tecniche](technotes/using/technote.md)
       + [Aggiornamenti alla configurazione di Campaign](technotes/using/acc-config-updates.md)
       + [Aggiornamenti IMS](technotes/using/ims-updates.md)
-      + [Terminazione del supporto per TLS 1.0 e 1.1](technotes/using/eol-tls-support.md)
+      + [Fine del supporto per TLS 1.0 e 1.1](technotes/using/eol-tls-support.md)
    + E-mail e notifiche push{#technotes-email}
       + [Protezione della privacy della posta su Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
       + [Domande frequenti sulla protezione della privacy di Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=it)

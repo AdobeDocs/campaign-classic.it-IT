@@ -9,7 +9,7 @@ exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 87067a0cca1a4a7f8ea1137ece6d513d58fcdb42
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 81%
+ht-degree: 87%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 81%
 
 Ogni nuova build viene fornita con uno stato che viene materializzato da un colore.
 
-![](assets/do-not-localize/green3.png) **Disponibilità generale** (GA): convalidata in produzione e raccomandata da Adobe.
+![](assets/do-not-localize/green3.png) **Disponibilità generale** (General Availability, GA): convalidata in produzione e raccomandata da Adobe.
 
 ![](assets/do-not-localize/limited3.png) **Disponibilità limitata** (LA): solo distribuzione su richiesta.
 
@@ -41,9 +41,9 @@ In qualità di cliente in hosting, puoi beneficiare automaticamente dell’aggio
 
 ## Raccomandazioni{#recommendations}
 
-Per garantire una configurazione stabile, ti consigliamo di installare **la stessa build stabile** su tutti i server in esecuzione nella stessa configurazione client.
+Per garantire una configurazione stabile, si consiglia di installare **la stessa build stabile** su tutti i server in esecuzione sulla stessa configurazione client.
 
-Inoltre, la console client deve trovarsi nella stessa build dell’istanza server.
+Inoltre, la console client deve trovarsi nella stessa build dell’istanza del server.
 
 Per mantenere aggiornata l’implementazione, per ogni nuova versione leggi le pagine [Funzioni obsolete e rimosse](../../rn/using/deprecated-features.md) e [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
