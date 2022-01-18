@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 87067a0cca1a4a7f8ea1137ece6d513d58fcdb42
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '913'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -33,11 +33,11 @@ Ogni nuova build viene fornita con uno stato che viene materializzato da un colo
 
 ## Ciclo di rilascio
 
- Adobe Campaign viene aggiornato regolarmente. La frequenza regolare degli aggiornamenti è volta a far ottenere agli utenti il meglio e più recente, mantenendo l’ambiente sicuro e migliorando l’esperienza di utilizzo del prodotto.
+Adobe Campaign viene aggiornato regolarmente. La frequenza regolare degli aggiornamenti è volta a far ottenere agli utenti il prodotto migliore e più recente, mantenendo l’ambiente sicuro e migliorando l’esperienza di utilizzo.
 
-Questo è il motivo per cui crediamo che sia fondamentale che tu **eseguire la versione stabile più recente** di Adobe Campaign. In questo modo sarà possibile ottenere un’esperienza di supporto migliore, poiché identificare, riprodurre e risolvere un problema in una build recente è generalmente molto più veloce. Inoltre, molti problemi che gli utenti potrebbero incontrare sono già stati risolti nelle build più recenti.
+Per questo motivo riteniamo fondamentale **eseguire la versione stabile più recente** di Adobe Campaign. In questo modo sarà possibile ottenere un’esperienza di supporto migliore, poiché identificare, riprodurre e risolvere un problema in una build recente è generalmente molto più veloce. Inoltre, molti problemi che gli utenti potrebbero incontrare sono già stati risolti nelle build più recenti.
 
-In qualità di cliente in hosting, puoi beneficiare automaticamente dell’aggiornamento con l’ultima versione stabile senza alcuna azione. Ulteriori informazioni nel [Sezione Aggiornamento annuale](#yearly-upgrade). Se effettui la migrazione da una build precedente, Adobe consiglia di eseguire prima l’aggiornamento a questa versione.
+In qualità di cliente in hosting, puoi beneficiare automaticamente, senza alcun intervento da parte tua, dell’aggiornamento alla versione stabile più recente. Ulteriori informazioni nella [sezione Aggiornamento annuale](#yearly-upgrade). Se effettui la migrazione da una build precedente, Adobe consiglia di eseguire prima l’aggiornamento a questa versione.
 
 ## Raccomandazioni{#recommendations}
 
@@ -59,13 +59,13 @@ Adobe e Adobe Campaign si impegnano a fornire la migliore esperienza e il maggio
 
  Adobe Campaign Classic, in particolare, utilizza una gamma di tecnologie per fornire valore. Questa combinazione di tecnologie richiede l’aggiornamento regolare delle istanze di Campaign Classic, così da assicurarti di utilizzare le versioni più aggiornate al fine di garantire la massima protezione, stabilità e prestazioni.
 
-In qualità di utente in hosting, potrai beneficiare automaticamente dell’aggiornamento con la build stabile più recente senza alcuna azione. Ulteriori informazioni sono disponibili nelle domande frequenti riportate di seguito.
+In qualità di utente in hosting, potrai beneficiare automaticamente, senza alcun intervento da parte tua, dell’aggiornamento alla versione stabile più recente. Ulteriori informazioni sono disponibili nelle domande frequenti riportate di seguito.
 
 ### Perché la mia organizzazione ha bisogno di questo aggiornamento?
 
 In qualità di cliente in hosting, se il tuo account necessita l’aggiornamento di una o più tecnologie correlate a Campaign Classic oppure di aggiornare la build e/o la versione corrente, riceverai una notifica direttamente da Adobe.
 
-In qualità di cliente on-premise o ibrido in esecuzione su una versione precedente, Adobe ti incoraggia a passare alla build stabile più recente.
+In qualità di cliente on-premise o ibrido che utilizza una versione precedente, Adobe ti incoraggia a passare all’ultima versione stabile.
 
 In questo modo il tuo account sarà protetto da eventuali vulnerabilità e potrà sfruttare le prestazioni fornite dalle tecnologie aggiornate. Questo aggiornamento consentirà anche al tuo account di usufruire di aggiornamenti più semplici, regolari e meno laboriosi.
 
@@ -143,4 +143,4 @@ Facciamo tutto il possibile affinché tu possa disporre sempre delle informazion
 * [Funzioni obsolete e rimosse](../../rn/using/deprecated-features.md)
 * [Domande frequenti sull’aggiornamento della build](../../platform/using/faq-build-upgrade.md)
 
-Per ricevere informazioni sulle nuove versioni della soluzione Experience Cloud, iscriviti ad [Adobe Priority Product Update](https://www.adobe.com/it/subscription/priority-product-update.html).
+Per ricevere informazioni sulle nuove versioni della soluzione Experience Cloud, abbonati ad [Adobe Priority Product Update](https://www.adobe.com/it/subscription/priority-product-update.html).
