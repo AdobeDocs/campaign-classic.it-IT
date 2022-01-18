@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '720'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -190,23 +190,23 @@ I sistemi CRM per la gestione delle relazioni con i clienti compatibili con Adob
 
 Di seguito sono elencati i database esterni compatibili con il [modulo Federated Data Access](../../installation/using/about-fda.md) di Adobe Campaign. La compatibilità dipende dal [modello di hosting](../../installation/using/hosting-models.md).
 
-**Managed Services** (in hosting), **Ibrido** e **On-Premise** gli ambienti possono collegare Campaign ai seguenti sistemi di database esterni:
+Dagli ambienti **Managed Services** (in hosting), **Ibrido** e **On-Premise** è possibile collegare Campaign ai seguenti sistemi di database esterni:
 
 <table>
 <tbody>
 <td><strong>Sistema di database</strong></td>
-<td><strong>Versione database</strong></td>
-<td><strong>Versione campagna</strong></td>
+<td><strong>Versione del database</strong></td>
+<td><strong>Versione di Campaign</strong></td>
 <tr>
 <tr>
 <td>Snowflake</td>
 <td> </td>
-<td>7.2.1 minimo</td>
+<td>Minimo 7.2.1</td>
 </tr>
 <tr>
 <td>BigQuery Google</td>
 <td> </td>
-<td>7.2.1 minimo</td>
+<td>Minimo 7.2.1</td>
 </tr>
 <tr>
 <td> Amazon Redshift</td>
@@ -225,37 +225,37 @@ Di seguito sono elencati i database esterni compatibili con il [modulo Federated
 <p>9.5.x</p>
 <p>9.4.x</p>
 </td>
-<td>almeno v7.0 19.1.4</td>
+<td>Minimo v7.0 19.1.4</td>
 </tr>
 </tbody>
 </table>
 
-Inoltre, **Ibrido** e **On-Premise** gli ambienti possono inoltre collegare Campaign a:
+Inoltre, dagli ambienti **Ibrido** e **On-Premise** è anche possibile collegare Campaign a:
 
 <table>
 <tbody>
 <td><strong>Sistema di database</strong></td>
-<td><strong>Versione database</strong></td>
-<td><strong>Versione campagna</strong></td>
+<td><strong>Versione del database</strong></td>
+<td><strong>Versione di Campaign</strong></td>
 <tr>
 <td>Vertica</td>
 <td> </td>
-<td>almeno v7.0 19.1.4</td>
+<td>Minimo v7.0 19.1.4</td>
 </tr>
 <tr>
 <td>Microsoft Azure Synapse Analytics</td>
 <td> </td>
-<td>almeno v7.0 19.1.4</td>
+<td>Minimo v7.0 19.1.4</td>
 </tr>
 <tr>
 <td> Oracle</td>
 <td>
-<p>19 quater</p>
-<p>18 quater</p>
-<p>12 quater</p>
+<p>19c</p>
+<p>18c</p>
+<p>12c</p>
 <p>11g</p>
 </td>
-<td>minima v7.0</td>
+<td>Minimo v7.0</td>
 </tr>
 <tr><td>SQL Server</td>
 <td>
@@ -265,13 +265,13 @@ Inoltre, **Ibrido** e **On-Premise** gli ambienti possono inoltre collegare Camp
 <p>2014</p>
 <p>2012 SP1 e SP2</p>
 </td>
-<td>minima v7.0</td>
+<td>Minimo v7.0</td>
 </tr>
 <tr><td>MySQL</td>
 <td>
 <p>5.7</p>
 </td>
-<td>minima v7.0</td>
+<td>Minimo v7.0</td>
 </tr>
 <tr>
 <td>Teradata</td>
@@ -281,14 +281,14 @@ Inoltre, **Ibrido** e **On-Premise** gli ambienti possono inoltre collegare Camp
 <p>15.10</p>
 <p>15.0</p>
 </td>
-<td>minima v7.0</td>
+<td>Minimo v7.0</td>
 </tr>
 <tr>
 <td>Netezza</td>
 <td>
 <p>7.2</p>
 </td>
-<td>minima v7.0</td>
+<td>Minimo v7.0</td>
 </tr>
 <tr>
 <td>Sybase</td>
@@ -296,14 +296,14 @@ Inoltre, **Ibrido** e **On-Premise** gli ambienti possono inoltre collegare Camp
 <p>IQ 16</p>
 <p>ASE 15,7</p>
 </td>
-<td>minima v7.0</td>
+<td>Minimo v7.0</td>
 </tr>
 <tr>
 <td>SAP HANA</td>
 <td>
 <p>versione 1 SPS 12</p>
 </td>
-<td>minima v7.0</td>
+<td>Minimo v7.0</td>
 </tr>
 <tr><td>Hadoop tramite HiveSQL</td>
 <td>
@@ -311,7 +311,7 @@ Inoltre, **Ibrido** e **On-Premise** gli ambienti possono inoltre collegare Camp
 <p>HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)</p>
 <p>Cloudera CDH6.x</p>
 </td>
-<td>minima v7.0</td>
+<td>Minimo v7.0</td>
 </tr>
 </tbody>
 </table>
