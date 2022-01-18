@@ -1,25 +1,25 @@
 ---
 product: campaign
-title: 'Versioni [!DNL Gold Standard] '
+title: Versioni [!DNL Gold Standard]
 description: Note sulla versione e Matrice di compatibilità per Campaign Classic [!DNL Gold Standard]
 feature: Overview
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: f20ac97be9390fd7e6fd6a6c4d738c0fde9c72c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1676'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Versioni [!DNL Gold Standard] {#gold-standard}
+# Versioni [!DNL Gold Standard]{#gold-standard}
 
 ![](../../assets/v7-only.svg)
 
-Puoi trovare in questa pagina le note sulla versione e la matrice di compatibilità per [!DNL Gold Standard] versioni.
+Puoi trovare in questa pagina le note sulla versione e la matrice di compatibilità per le versioni [!DNL Gold Standard].
 
-## [!DNL Gold Standard] Note sulla versione
+## Note sulla versione [!DNL Gold Standard]
 
 
 ### ![](assets/do-not-localize/limited_2.png) [!DNL Gold Standard] versione 12{#gs-12}
@@ -52,7 +52,7 @@ La build 9032@d030c36 include la seguente correzione:
 >
 > * Se ti connetti a Campaign con il tuo Adobe ID, tramite Adobe Identity Management Service (IMS), è necessario eseguire l’aggiornamento affinché il server Campaign e la console client possano connettersi a Campaign dopo il **30 giugno 2021**. [Ulteriori informazioni](../../technotes/using/ims-updates.md)
 > * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
-> * Se utilizzi l’integrazione Experience Cloud Triggers tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). Modalità di autenticazione oAuth legacy con Campaign [è stato ritirato](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) su **Settembre 2021**. Gli ambienti in hosting beneficiano di un’estensione fino a  **23 febbraio 2022**. In qualità di cliente on-premise o ibrido, contatta l’Assistenza clienti Adobe per estendere il supporto a febbraio 2022. Devi fornire ad Adobe [l’AppID dell’applicazione OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional).
+> * Se utilizzi l’integrazione Experience Cloud Triggers tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione OAuth legacy con Campaign [è stata ritirata](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) a **settembre 2021**. Gli ambienti in hosting usufruiscono di una proroga al **23 febbraio 2022**. Se sei un cliente on-premise o ibrido, contatta l’Assistenza clienti Adobe per estendere il supporto fino a febbraio 2022. Devi fornire ad Adobe [l’AppID dell’applicazione OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional).
 
 >
 >Ulteriori informazioni sono disponibili in Domande frequenti sull’aggiornamento a [[!DNL Gold Standard]  11](https://helpx.adobe.com/it/campaign/kb/gold-standard-upgrade.html)
@@ -117,11 +117,11 @@ _29 aprile 2020_
 
 La build 9032@3a9dc9c include le seguenti correzioni:
 
-* Maggiore sicurezza per il tracking dei collegamenti nelle e-mail. Questa opzione è abilitata per impostazione predefinita per tutti i clienti. In aggiunta, è disponibile una funzione di sicurezza avanzata che può essere abilitata contattando l’Assistenza clienti. Ulteriori dettagli sulla funzione e sui passaggi che i clienti non in hosting devono seguire per abilitarla sono disponibili nella [Lista di controllo protezione e privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism).
+* Maggiore sicurezza per il tracking dei collegamenti nelle e-mail. Questa opzione è abilitata per impostazione predefinita per tutti i clienti. In aggiunta, è disponibile una funzione di sicurezza avanzata che può essere abilitata contattando l’Assistenza clienti. Ulteriori dettagli sulla funzione e sui passaggi che i clienti non in hosting devono seguire per abilitarla sono disponibili nella [Lista di controllo protezione e privacy](https://helpx.adobe.com/it/campaign/kb/acc-security.html#signature-mechanism).
 
 >[!CAUTION]
 >
->In caso di problemi con le notifiche push che utilizzano collegamenti di tracking o con le consegne che utilizzano tag di ancoraggio, si consiglia di disabilitare il nuovo meccanismo di firma per i collegamenti di tracking. La procedura è dettagliata [in questa pagina](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
+>In caso di problemi con le notifiche push che utilizzano collegamenti di tracking o con le consegne che utilizzano tag di ancoraggio, si consiglia di disabilitare il nuovo meccanismo di firma per i collegamenti di tracking. La procedura è dettagliata [in questa pagina](https://helpx.adobe.com/it/campaign/kb/acc-security.html#signature-mechanism)
 
 * È stato risolto un problema che poteva impedire la visualizzazione delle immagini nelle consegne in Linea. (NEO-23207)
 * È stato risolto un problema dell’attività **File Transfer** che impediva il funzionamento dell’autenticazione basata su chiave SFTP su Debian 9. (NEO-23183)
@@ -192,9 +192,9 @@ La build 19.1.4 iniziale include le seguenti correzioni:
 * Sono stati risolti diversi problemi relativi alla pianificazione dei flussi di lavoro. I flussi di lavoro venivano programmati per un’unica esecuzione giornaliera, senza tenere conto della configurazione del pianificatore. (NEO-16619, NEO-16426)
 
 
-## [!DNL Gold Standard] Matrice di compatibilità{#compatibility-matrix-gs}
+## Matrice di compatibilità per [!DNL Gold Standard]{#compatibility-matrix-gs}
 
-In questa sezione sono elencati tutti i sistemi e i componenti supportati per **Adobe Campaign Classic[!DNL Gold Standard]** Build 19.1. Prodotti e versioni non compresi in questo elenco non sono compatibili con questa versione di Adobe Campaign.
+Questa sezione elenca tutti i sistemi e i componenti supportati per le build 19.1 di **Adobe Campaign Classic[!DNL Gold Standard]**. Prodotti e versioni non compresi in questo elenco non sono compatibili con questa versione di Adobe Campaign.
 
 >[!CAUTION]
 >Salvo diversa indicazione, sono supportate tutte le versioni minori.
@@ -377,7 +377,7 @@ In questa sezione sono elencati tutti i sistemi e i componenti supportati per **
 <tr>
 <td> Oracle</td>
 <td>
-<p>12 quater</p>
+<p>12c</p>
 <p>11g</p>
 </td>
 </tr>
