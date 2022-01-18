@@ -6,18 +6,18 @@ feature: Overview
 role: User
 level: Beginner
 source-git-commit: babb585438a6e467afad74391035059f7b12a6ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2540'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Versioni del 2021{#release-2021}
+# Versioni 2021{#release-2021}
 
 ## Versione 7.1 (21.1)
 
 >[!CAUTION]
->Utilizza la **[!UICONTROL Help > About...]** per controllare il tuo Adobe Campaign [numero di versione e di build](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Tuttavia, per tutte le build comprese tra 9277 e 9343 elencate in questa pagina, il numero di versione è 7.0 anziché 7.1.
+>Utilizza il menu **[!UICONTROL Help > About...]** per controllare il [numero di versione e di build](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) di Adobe Campaign. Tuttavia, per tutte le build comprese tra 9277 e 9343 elencate in questa pagina, il numero di versione è 7.0 anziché 7.1.
 
 ### ![](assets/do-not-localize/limited_2.png) Versione 21.1.4 - Build 9343 {#release-21-1-4-build-9343}
 
