@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 6c23dadb5b6523e17e242de43a908ca86ed7cc23
+source-git-commit: 035297523c25061f28751c28df86d562f40f45ea
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1254'
 ht-degree: 6%
 
 ---
@@ -241,7 +241,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
 
 ### Pacchetto Message Center {#message-center-package}
 
-Devi installare i canali di consegna (e-mail, canale mobile, canale app mobile, ecc.) prima di installare i messaggi transazionali (pacchetto del centro messaggi). Se hai avviato un progetto del Centro messaggi per e-mail e successivamente devi aggiungere un nuovo canale, segui questi passaggi:
+Devi installare i canali di consegna (e-mail, canale mobile, canale app mobile, LINE, ecc.) prima di installare i messaggi transazionali (pacchetto del centro messaggi). Se hai avviato un progetto del Centro messaggi per e-mail e successivamente devi aggiungere un nuovo canale, segui questi passaggi:
 
 1. Installa il nuovo canale, ad esempio il **Canale mobile**, utilizzando la procedura guidata di importazione del pacchetto ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
 1. Importa il file ( **[!UICONTROL Tools > Advanced > Import package > File]**) e seleziona:
@@ -254,6 +254,19 @@ Devi installare i canali di consegna (e-mail, canale mobile, canale app mobile, 
 
    ![](assets/messagecenter_install_channel.png)
 
+
+### [!DNL LINE] configurazione del canale{#line-package}
+
+Per impostare [!DNL LINE] canale, devi prima installare il [!DNL LINE] pacchetto.
+
+Nel contesto di una configurazione di mid-sourcing, è necessario:
+
+* Installa il [!DNL LINE] pacchetto sia sull&#39;istanza Marketing che MID
+
+* Imposta la [!DNL LINE] account esterno nell’istanza mkt per puntare all’istanza mid modificando la modalità di consegna. [Ulteriori informazioni](../../delivery/using/line-channel.md#configure-line-external)
+
+* Imposta la [!DNL LINE] credenziali nell’account esterno nell’istanza MID.
+
 >[!CAUTION]
 >
->I modelli di consegna del Centro messaggi per LINE non saranno disponibili se i pacchetti del Centro messaggi sono installati prima di LINE
+>Modelli di consegna del Centro messaggi per [!DNL LINE] il canale non sarà disponibile se i pacchetti del Centro messaggi sono installati prima [!DNL LINE].
