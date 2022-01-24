@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
+source-git-commit: 6b7ec6b39a79e9b1e6e2bba3d5193765094cf4fd
 workflow-type: tm+mt
 source-wordcount: '7969'
 ht-degree: 5%
@@ -574,7 +574,7 @@ Per ulteriori informazioni, consulta [Limitazione dei comandi esterni autorizzat
   </tr> 
   <tr> 
    <td> user<br /> </td> 
-   <td> Esegui i comandi come un altro utente.<br /> </td> 
+   <td> Execute commands as a different user.<br /> </td> 
    <td> Stringa<br /> </td> 
   </tr> 
  </tbody> 
@@ -582,7 +582,7 @@ Per ulteriori informazioni, consulta [Limitazione dei comandi esterni autorizzat
 
 ## htmlToPdf {#htmltopdf}
 
-Di seguito sono riportati i diversi parametri del **htmlToPdf** nodo. Questa è la configurazione del servizio per la conversione di pagine web in documenti PDF.
+Here are the different parameters of the **htmlToPdf** node. Questa è la configurazione del servizio per la conversione di pagine web in documenti PDF.
 
 <table> 
  <thead> 
@@ -590,13 +590,13 @@ Di seguito sono riportati i diversi parametri del **htmlToPdf** nodo. Questa è 
    <th> Parametro </th> 
    <th> Descrizione </th> 
    <th> Tipo </th> 
-   <th> Valore predefinito </th> 
+   <th> Default value </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
    <td> command<br /> </td> 
-   <td> Riga di comando per l’esecuzione della conversione (in modalità "altro").<br /> </td> 
+   <td> Command line for running the conversion (in 'other' mode).<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1756,13 +1756,13 @@ Per ulteriori informazioni, consulta [sezione](../../installation/using/configur
   </tr> 
   <tr> 
    <td> maxSpareServers<br /> </td> 
-   <td> Numero massimo di server figlio. Rappresenta il numero massimo di server in esecuzione. È consigliabile limitare questo numero ad un livello ottimale compatibile con le risorse di memoria del server. Questo può essere controllato durante una consegna. La memoria utilizzata non deve superare un terzo della memoria fisica disponibile altrimenti verrà utilizzato lo scambio. Vedi <a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">Processi figlio MTA</a>.<br /> </td> 
+   <td> Numero massimo di server figlio. Represents the maximum number of servers running. È consigliabile limitare questo numero ad un livello ottimale compatibile con le risorse di memoria del server. Questo può essere controllato durante una consegna. La memoria utilizzata non deve superare un terzo della memoria fisica disponibile altrimenti verrà utilizzato lo scambio. Vedi <a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">Processi figlio MTA</a>.<br /> </td> 
    <td> Lunga<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
   <tr> 
    <td> minSpareServers<br /> </td> 
-   <td> Numero minimo di server figlio. L’MTA tenta di mantenere in esecuzione almeno questo numero di server. Se ce ne sono di meno, riavvia nuovi server ogni secondo fino a raggiungere questo valore.<br /> </td> 
+   <td> Numero minimo di server figlio. L’MTA tenta di mantenere in esecuzione almeno questo numero di server. If there are less, it restarts new servers every second until this value is reached.<br /> </td> 
    <td> Lunga<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
@@ -2529,7 +2529,7 @@ Di seguito sono riportati i diversi parametri del **syslogd** nodo. Questa è la
    <th> Parametro </th> 
    <th> Descrizione </th> 
    <th> Tipo </th> 
-   <th> Valore predefinito </th> 
+   <th> Default value </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -2541,7 +2541,7 @@ Di seguito sono riportati i diversi parametri del **syslogd** nodo. Questa è la
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> Avvio automatico<br /> </td> 
+   <td> Automatic start<br /> </td> 
    <td> Booleano<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -2971,7 +2971,6 @@ La **web > jsp > classpath** node contiene l&#39;elenco di tutti i percorsi di c
           $(XTK_INSTALL_DIR)/tomcat-8/lib/servlet-api.jar
           $(XTK_INSTALL_DIR)/tomcat-8/lib/jsp-api.jar
           $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
-          $(XTK_INSTALL_DIR)/java/lib/log4j-1.2.11.jar
           $(XTK_INSTALL_DIR)/tomcat-8/lib/annotations-api.jar
           $(XTK_INSTALL_DIR)/tomcat-8/lib/catalina.jar
           $(XTK_INSTALL_DIR)/tomcat-8/lib/websocket-api.jar
