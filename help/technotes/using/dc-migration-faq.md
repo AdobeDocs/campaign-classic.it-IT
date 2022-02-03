@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 60fc0fd2a10f05abb77843ef0cb69e44f35a9648
 workflow-type: tm+mt
-source-wordcount: '2243'
+source-wordcount: '2216'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-Come parte del [Iniziativa Gold Standard](../../rn/using/gold-standard.md), Adobe rimuove il Data Center legacy. Le istanze di Campaign Classic devono essere trasferite a Public Cloud Amazon Web Services (AWS). [Ulteriori informazioni su questa iniziativa](dc-migration.md).
+Adobe rimuove il Data Center legacy: Le istanze di Campaign Classic devono essere trasferite a Public Cloud Amazon Web Services (AWS). [Ulteriori informazioni su questa iniziativa](dc-migration.md).
 
 Di seguito è riportata una serie di domande comuni su questo progetto, sull’impatto sugli ambienti Campaign e su altre risorse utili.
 
@@ -47,7 +47,7 @@ Gli impatti globali su database e infrastrutture sono elencati di seguito.
 
    Come primo passo, manterremo la stessa build Campaign Classic con la migrazione.
 
-   In un ulteriore passaggio, si procederà all’aggiornamento alla build Campaign Classic GA più recente. Per ulteriori informazioni, consulta la sezione [Domande frequenti sull’aggiornamento della build](../../platform/using/faq-build-upgrade.md) e [Note sulla versione di Campaign Gold Standard](../../rn/using/gold-standard.md).
+   In un ulteriore passaggio, si procederà all’aggiornamento alla build Campaign Classic GA più recente. Per ulteriori informazioni, consulta [questa pagina](../../rn/using/rn-overview.md).
 
 * **Qual è il piano per affrontare eventuali problemi post-migrazione?**
 
@@ -63,7 +63,7 @@ Di seguito sono elencati gli impatti globali su IP, elenchi Bloccati, sottodomin
 
    L’indirizzo IP dei server di Adobe verrà modificato. Pertanto, i clienti potrebbero dover aggiungere questi nuovi indirizzi IP nell’inserire nell&#39;elenco Consentiti nel loro sistema.
 
-   [Fai clic qui](#config) per ulteriori dettagli sull’IP nell’inserire nell&#39;elenco Consentiti.
+   [Ulteriori informazioni](#config) informazioni sull’IP nell’inserire nell&#39;elenco Consentiti.
 
 * **Come gestiremo la porta aggiunta all’inserire nell&#39;elenco Consentiti per l’accesso SFTP/FTP?**
 
@@ -73,7 +73,7 @@ Di seguito sono elencati gli impatti globali su IP, elenchi Bloccati, sottodomin
 
    L’indirizzo IP dei server di Adobe verrà modificato. Pertanto, i clienti potrebbero dover aggiungere questi nuovi indirizzi IP all’inserire nell&#39;elenco Consentiti nel loro sistema.
 
-   [Fai clic qui](#config) per ulteriori dettagli sull’IP nell’inserire nell&#39;elenco Consentiti.
+   [Ulteriori informazioni](#config) informazioni sull’IP nell’inserire nell&#39;elenco Consentiti.
 
 * **Come verrà gestita la delega del sottodominio?**
 
@@ -155,7 +155,7 @@ Di seguito sono elencati gli impatti globali sulla configurazione, la connettivi
 
    L’indirizzo IP dei server di Adobe verrà modificato. Pertanto, i clienti potrebbero dover aggiungere questi nuovi indirizzi IP all’inserire nell&#39;elenco Consentiti nel loro sistema.
 
-   [Fai clic qui](#config) per ulteriori dettagli sull’IP sull’inserire nell&#39;elenco Consentiti.
+   [Ulteriori informazioni](#config) informazioni sull’IP inserire nell&#39;elenco Consentiti.
 
 * **Ci assicureremo che tutti i parametri di configurazione della memoria JavaScript siano impostati correttamente dopo la migrazione?**
 
@@ -169,7 +169,7 @@ Di seguito sono elencati gli impatti globali sulla configurazione, la connettivi
 
    Può cambiare in base alla nuova posizione dei server. Tuttavia, il cliente potrà mantenere il proprio fuso orario corrente.
 
-   [Fai clic qui](../../workflow/using/managing-time-zones.md) per ulteriori informazioni sulla gestione del fuso orario in Adobe Campaign Classic v7.
+   [Ulteriori informazioni](../../workflow/using/managing-time-zones.md) informazioni sulla gestione del fuso orario in Adobe Campaign Classic v7.
 
 
 ## Sicurezza e autorizzazioni
