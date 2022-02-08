@@ -3,10 +3,8 @@ product: campaign
 title: Approvazione di campagne di marketing
 description: Scopri come gestire le approvazioni delle campagne di marketing
 audience: campaign
-content-type: reference
-topic-tags: orchestrate-campaigns
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
 workflow-type: tm+mt
 source-wordcount: '2434'
 ht-degree: 2%
@@ -252,7 +250,6 @@ Per selezionare un elenco di operatori, fai clic sul pulsante **[!UICONTROL Edit
 >* Se viene definito un elenco di revisori, un processo viene approvato quando un revisore lo accetta. Il collegamento di approvazione pertinente non viene quindi più offerto nel dashboard. Quando l’invio di notifiche è abilitato, se un altro revisore fa clic sul collegamento di approvazione nel messaggio di notifica, viene informato che un altro operatore ha già approvato il processo.
 >* È possibile definire una pianificazione di approvazione per la campagna nella sezione inferiore della finestra di modifica del revisore. Per impostazione predefinita, i revisori dispongono di tre giorni a partire dalla data di invio per approvare un processo. È possibile configurare un promemoria che viene inviato automaticamente agli operatori interessati prima del termine di approvazione.
 >* Puoi aggiungere promemoria da questa sezione.
-
 >
 
 
