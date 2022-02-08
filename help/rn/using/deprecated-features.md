@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 966da123b30278817ca465ac5dfe1f733c4d6c5c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1707'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
   <td><p> A partire dalla versione di Campaign 20.3, l’autenticazione dell’integrazione dei trigger, originariamente basata su OAuth per accedere alla pipeline, ora è stata modificata e spostata in Adobe I/O. <p>
   <p>Se utilizzi l’integrazione con i trigger, devi adattare di conseguenza l’implementazione. <a href="../../integrations/using/configuring-adobe-io.md">Ulteriori informazioni</a></p> 
   <p>Per ulteriori informazioni sulla obsolescenza dell’autenticazione OAuth, fare riferimento a questa <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">pagina</a></p> 
-  <p><em>Data di rimozione target: 20 ottobre 2021. Gli ambienti in hosting beneficiano di un’estensione fino al 25 maggio 2022. </em></p>
+  <p><em>Data di rimozione target: 20 ottobre 2021. Gli ambienti in hosting usufruiscono di una proroga al 25 maggio 2022. </em></p>
   </td>
   </tr>
  </tbody> 
