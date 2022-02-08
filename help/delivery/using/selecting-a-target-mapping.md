@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Selezione di una mappatura target
-description: Selezione di una mappatura target
-audience: delivery
-content-type: reference
-topic-tags: using-delivery-templates
+title: Selezionare una mappatura di destinazione
+description: Scopri come eseguire la mappatura del target
 exl-id: b5514fa3-1e65-45dc-8e40-d1ba3b673e7a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '180'
-ht-degree: 8%
+ht-degree: 10%
 
 ---
 
-# Selezione di una mappatura target{#selecting-a-target-mapping}
+# Selezionare una mappatura di destinazione{#selecting-a-target-mapping}
 
 ![](../../assets/common.svg)
 
@@ -35,4 +32,4 @@ Queste mappature sono le seguenti:
 
 >[!NOTE]
 >
->Puoi anche creare nuove mappature target. Questa operazione è riservata agli utenti esperti. Per ulteriori informazioni, consulta la [Guida alla configurazione](../../configuration/using/target-mapping.md).
+>Puoi anche creare nuove mappature target. Questa operazione è riservata agli utenti esperti. Per ulteriori informazioni, consulta [questa sezione](../../configuration/using/target-mapping.md).

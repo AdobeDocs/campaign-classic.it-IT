@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Configurazione delle opzioni di tracciamento URL
-description: Configurazione delle opzioni di tracciamento URL
-audience: delivery
-content-type: reference
-topic-tags: tracking-messages
+title: Configurare le opzioni di tracciamento URL
+description: Scopri come configurare le opzioni di tracciamento URL
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 12%
+source-wordcount: '167'
+ht-degree: 9%
 
 ---
 
-# Configurazione delle opzioni di tracciamento URL{#personalizing-url-tracking}
+# Configurare le opzioni di tracciamento URL{#personalizing-url-tracking}
 
 ![](../../assets/common.svg)
 
@@ -21,7 +18,7 @@ Le impostazioni avanzate di tracciamento dei messaggi sono accessibili tramite *
 
 >[!NOTE]
 >
->Anche la gestione delle immagini nelle e-mail è configurata in questa finestra. Vedi [Aggiunta di immagini](defining-the-email-content.md#adding-images).
+>Anche la gestione delle immagini nelle e-mail è configurata in questa finestra. Vedi [Aggiungi immagini](defining-the-email-content.md#adding-images).
 
 ![](assets/s_ncs_user_email_del_tracking_ico.png)
 

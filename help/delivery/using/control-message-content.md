@@ -1,19 +1,17 @@
 ---
 product: campaign
 title: Informazioni sul recapito messaggi in Adobe Campaign Classic
-description: Ulteriori informazioni sulla gestione del recapito messaggi in Adobe Campaign Classic.
-audience: delivery
-content-type: reference
-topic-tags: deliverability-management
+description: Ulteriori informazioni sulla gestione del recapito messaggi in Adobe Campaign
+feature: Deliverability
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 4%
+source-wordcount: '760'
+ht-degree: 5%
 
 ---
 
-# Controllo del contenuto del messaggio{#control-message-content}
+# Controllare il contenuto del messaggio{#control-message-content}
 
 ![](../../assets/common.svg)
 
@@ -31,7 +29,7 @@ Per ulteriori suggerimenti su come ottimizzare il recapito messaggi durante la p
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla modifica del contenuto delle e-mail, consulta [Definizione del contenuto dell’e-mail](defining-the-email-content.md) e [Creare contenuti personalizzati](design-and-personalize.md).
+>Per ulteriori informazioni sulla modifica del contenuto delle e-mail, consulta [Definire il contenuto dell’e-mail](defining-the-email-content.md) e [Creare contenuti personalizzati](design-and-personalize.md).
 
 ## Indirizzo mittente {#sender-address}
 
@@ -39,7 +37,7 @@ Alcuni ISP controllano la validità dell’indirizzo del mittente (**[!UICONTROL
 
 È necessario assicurarsi che a livello di istanza sia fornito un indirizzo corretto (menu **[!UICONTROL Tools > Advanced > Deployment wizard...]**) o negli scenari più utilizzati.
 
-Per ulteriori informazioni, consulta [Definizione del mittente](defining-the-email-content.md).
+Per ulteriori informazioni, consulta [questa pagina](defining-the-email-content.md).
 
 ## Personalizzazione {#personalization}
 

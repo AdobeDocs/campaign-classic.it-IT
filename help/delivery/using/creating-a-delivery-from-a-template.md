@@ -1,23 +1,20 @@
 ---
 product: campaign
-title: Creazione di una consegna da un modello
-description: Creazione di una consegna da un modello
-audience: delivery
-content-type: reference
-topic-tags: using-delivery-templates
+title: Creare una consegna da un modello
+description: Scopri come creare una consegna da un modello
 exl-id: 7ffb649e-801f-4568-a86b-7982448e3c30
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 10%
+source-wordcount: '178'
+ht-degree: 7%
 
 ---
 
-# Creazione di una consegna da un modello{#creating-a-delivery-from-a-template}
+# Creare una consegna da un modello{#creating-a-delivery-from-a-template}
 
 ![](../../assets/common.svg)
 
-## Collegamento del modello a una consegna {#linking-the-template-to-a-delivery}
+## Collegare il modello a una consegna {#linking-the-template-to-a-delivery}
 
 Per creare una consegna basata su un modello esistente, seleziona il modello dall’elenco dei modelli di consegna disponibili.
 
@@ -31,7 +28,7 @@ Seleziona la directory desiderata dal **[!UICONTROL Folder]** oppure fai clic su
 
 Seleziona il modello di consegna da utilizzare e fai clic su **[!UICONTROL Ok]**.
 
-## Esecuzione del modello {#executing-the-template}
+## Esegui il modello {#executing-the-template}
 
 Puoi avviare l’esecuzione di un modello direttamente dall’elenco dei modelli senza prima creare una consegna. A questo scopo, seleziona il modello da eseguire e fai clic con il pulsante destro del mouse sul modello da eseguire. Seleziona **[!UICONTROL Actions>Execute the delivery template...]**.
 
@@ -45,4 +42,4 @@ Questa azione genera una consegna nella cartella associata al modello. Il nome d
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla configurazione di una consegna, vedi [Definizione del contenuto dell’e-mail](defining-the-email-content.md).
+>Per ulteriori informazioni sulla configurazione di una consegna, vedi [Definire il contenuto dell’e-mail](defining-the-email-content.md).

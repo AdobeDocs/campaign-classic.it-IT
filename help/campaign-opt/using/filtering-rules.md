@@ -1,14 +1,12 @@
 ---
 product: campaign
 title: Regole di filtro
-description: Regole di filtro
-audience: campaign
-content-type: reference
-topic-tags: campaign-optimization
+description: Scopri come utilizzare le regole di filtro
+feature: Typology Rules
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
-source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '507'
 ht-degree: 2%
 
 ---
@@ -21,7 +19,7 @@ Le regole di filtro ti consentono di definire i messaggi da escludere in base ai
 
 Le regole di filtro possono essere collegate ad altri tipi di regole (controllo, pressione, ecc.) in tipologie o raggruppate in un **Filtro** tipologia. Per ulteriori informazioni, consulta [Creazione e utilizzo di una tipologia di filtro](#creating-and-using-a-filtering-typology).
 
-## Creazione di una regola di filtro {#creating-a-filtering-rule}
+## Creare una regola di filtro {#creating-a-filtering-rule}
 
 Ad esempio, puoi filtrare gli abbonati alla newsletter per impedire l’invio di comunicazioni ai destinatari minorenni.
 
@@ -47,7 +45,7 @@ Quando questa regola viene utilizzata in una consegna, gli utenti con sottoscriz
 
 ![](assets/campaign_opt_create_filter_05.png)
 
-## Condizionamento di una regola di filtro {#conditioning-a-filtering-rule}
+## Condizione di una regola di filtro {#conditioning-a-filtering-rule}
 
 Puoi limitare il campo dell’applicazione della regola di filtro in base al profilo di consegna o consegna collegato.
 
@@ -61,7 +59,7 @@ In questo caso, anche se la regola è collegata a tutte le consegne, verrà appl
 >
 >Le tipologie e le regole di filtro possono essere utilizzate in un flusso di lavoro, nel **[!UICONTROL Delivery outline]** attività. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../workflow/using/delivery-outline.md).
 
-## Creazione e utilizzo di una tipologia di filtro {#creating-and-using-a-filtering-typology}
+## Creare e utilizzare una tipologia di filtro {#creating-and-using-a-filtering-typology}
 
 Puoi creare **[!UICONTROL Filtering]** tipologie: contengono solo regole di filtro.
 

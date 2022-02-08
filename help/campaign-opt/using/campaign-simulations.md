@@ -1,14 +1,11 @@
 ---
 product: campaign
 title: Simulazioni delle campagne
-description: Simulazioni delle campagne
-audience: campaign
-content-type: reference
-topic-tags: campaign-optimization
+description: Guida introduttiva alle simulazioni di Campaign
 exl-id: 709c64a8-34bf-43fa-a820-238295fb26b8
-source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1245'
 ht-degree: 1%
 
 ---
@@ -31,9 +28,9 @@ La simulazione ti consente di monitorare e confrontare l’impatto delle consegn
 
 ![](assets/simu_campaign_select_delivery_mode.png)
 
-## Impostazione di una simulazione {#setting-up-a-simulation}
+## Imposta una simulazione {#setting-up-a-simulation}
 
-### Creazione di una simulazione {#creating-a-simulation}
+### Creare una simulazione {#creating-a-simulation}
 
 Per creare una simulazione, esegui i seguenti passaggi:
 
@@ -97,9 +94,9 @@ La **[!UICONTROL General]** la scheda della simulazione ti consente di inserire 
 * La **[!UICONTROL Priority]** è il livello applicato alla simulazione per ritardare l’attivazione.
 * **[!UICONTROL Save SQL queries in the log]**. I registri SQL consentono di diagnosticare una simulazione se termina con errori. Possono anche aiutarti a scoprire perché una simulazione è troppo lenta. Questi messaggi saranno visibili dopo la simulazione nel **[!UICONTROL SQL logs]** sottoscheda della **[!UICONTROL Audit]** scheda .
 
-## Esecuzione di una simulazione {#executing-a-simulation}
+## Eseguire una simulazione {#executing-a-simulation}
 
-### Avvio di una simulazione {#starting-a-simulation}
+### Avvia una simulazione {#starting-a-simulation}
 
 Una volta definito l’ambito di simulazione, puoi eseguirlo.
 
@@ -129,7 +126,7 @@ Al termine dell’esecuzione, apri la simulazione e fai clic sul pulsante **[!UI
 
    Per un esempio di creazione di tabelle di analisi, fai riferimento alla fine di [Esplorazione dei risultati](#exploring-results).
 
-### Visualizzazione dei risultati {#viewing-results}
+### Visualizza risultati {#viewing-results}
 
 #### Audit {#audit}
 
@@ -137,7 +134,7 @@ La **[!UICONTROL Audit]** consente di monitorare l’esecuzione della simulazion
 
 ![](assets/simu_campaign_opti_11.png)
 
-#### Esplorazione dei risultati {#exploring-results}
+#### Esplorare i risultati {#exploring-results}
 
 La **[!UICONTROL Exploration of the exclusions]** la sottoscheda ti consente di analizzare i dati risultanti da una simulazione.
 
@@ -167,7 +164,7 @@ Per accedere ai rapporti, fai clic sul pulsante **[!UICONTROL Reports]** collega
 
 È inoltre possibile modificare i rapporti utilizzando **[!UICONTROL Reports]** collegamento accessibile dal dashboard di simulazione.
 
-### Confronto delle simulazioni {#comparing-simulations-}
+### Confrontare le simulazioni {#comparing-simulations-}
 
 Ogni volta che viene eseguita una simulazione, il risultato sostituisce eventuali risultati precedenti: non è possibile visualizzare e confrontare i risultati di un’esecuzione con quelli di un’altra.
 

@@ -2,11 +2,8 @@
 product: campaign
 title: Matrice di funzionalità on-premise, ibrida e in hosting di Campaign
 description: Scopri le principali differenze tra distribuzioni in hosting e on-premise
-audience: installation
-content-type: reference
-topic-tags: architecture-and-hosting-models
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 1f8a51fc7760e8dcdf369cb759de724b0e7bea0c
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 20%
@@ -55,4 +52,4 @@ Adobe Campaign fornisce **Federated Data Access** (FDA) opzione per elaborare le
 * [Note sulla versione](../../rn/using/latest-release.md)
 * [Aggiornamenti Campaign Classic](../../rn/using/rn-overview.md)
 * [Funzioni obsolete e rimosse](../../rn/using/deprecated-features.md)
-* [Versioni [!DNL Gold Standard] ](../../rn/using/gold-standard.md)
+* [Versioni [!DNL Gold Standard]](../../rn/using/gold-standard.md)

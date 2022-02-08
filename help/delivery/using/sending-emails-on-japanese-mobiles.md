@@ -1,19 +1,16 @@
 ---
 product: campaign
 title: Invio di e-mail su dispositivi mobili giapponesi con Adobe Campaign Classic
-description: Scopri come configurare, progettare e inviare e-mail che verranno lette su un cellulare giapponese.
-audience: delivery
-content-type: reference
-topic-tags: sending-emails
+description: Scopri come configurare, progettare e inviare e-mail che verranno lette su un cellulare giapponese
 exl-id: 44634227-2340-49c4-b330-740c739ea551
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 0%
 
 ---
 
-# Invio di e-mail su dispositivi mobili giapponesi {#sending-emails-on-japanese-mobiles}
+# Inviare e-mail su dispositivi mobili giapponesi {#sending-emails-on-japanese-mobiles}
 
 ![](../../assets/common.svg)
 
@@ -50,7 +47,7 @@ Pertanto, devi:
 >* Per Softbank, fare riferimento a [questa pagina](https://www.support.softbankmobile.co.jp/partner/home_tech3/index.cfm)
 
 
-## Verifica del contenuto dell’e-mail {#testing-the-email-content}
+## Test del contenuto dell’e-mail {#testing-the-email-content}
 
 ### Anteprima del messaggio {#previewing-the-message}
 
@@ -66,7 +63,7 @@ In **[!UICONTROL Preview]** scheda della finestra di modifica del contenuto, fac
 
    ![](assets/deco-mail_06.png)
 
-### Esecuzione della regola di tipologia {#running-typology-rule}
+### Esegui regola di tipologia {#running-typology-rule}
 
 Oltre alla diagnosi di anteprima, viene effettuato un secondo controllo quando si invia una prova o una consegna: una regola specifica di tipologia, **[!UICONTROL Deco-mail check]**, viene avviato durante l’analisi.
 
@@ -76,7 +73,7 @@ Oltre alla diagnosi di anteprima, viene effettuato un secondo controllo quando s
 
 Questa regola di tipologia ti consente di assicurarti che la consegna rispetti la [vincoli di formato](#limitations-and-recommendations) definiti dagli operatori giapponesi, in particolare in relazione alle dimensioni totali dell’e-mail, alle dimensioni delle sezioni di HTML e testo, al numero di immagini nei messaggi e ai tag nel contenuto di HTML.
 
-### Invio di bozze {#sending-proofs}
+### Invia bozze {#sending-proofs}
 
 Puoi inviare bozze per verificare la consegna. Quando invii la bozza, se utilizzi indirizzi di sostituzione, inserisci gli indirizzi che corrispondono al formato e-mail del profilo utilizzato.
 
@@ -84,7 +81,7 @@ Ad esempio, puoi sostituire l’indirizzo di un profilo con test@softbank.ne.jp 
 
 ![](assets/deco-mail_05.png)
 
-## Invio di messaggi {#sending-messages}
+## Inviare messaggi {#sending-messages}
 
 Per inviare un’e-mail ai destinatari con formati e-mail giapponesi con Campaign, sono possibili due opzioni:
 

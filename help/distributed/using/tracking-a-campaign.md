@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Tracking di una campagna
-description: Tracking di una campagna
-audience: campaign
-content-type: reference
-topic-tags: distributed-marketing
+title: Tracciare una campagna
+description: Scopri come tracciare una campagna con Campaign Distributed Marketing
 exl-id: 87d1909c-d2eb-47ce-a860-0e78a64d2914
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 2%
+source-wordcount: '416'
+ht-degree: 1%
 
 ---
 
-# Tracking di una campagna{#tracking-a-campaign}
+# Tracciare una campagna{#tracking-a-campaign}
 
 ![](../../assets/v7-only.svg)
 
@@ -24,7 +21,7 @@ Questo consente di:
 * [Pacchetti filtro](#filter-packages),
 * [Modifica pacchetti](#edit-packages),
 * [Annullare un pacchetto](#cancel-a-package),
-* [Reinizializzazione di un pacchetto](#reinitializing-a-package).
+* [Reinizializzare un pacchetto](#reinitializing-a-package).
 
 ## Pacchetti filtro {#filter-packages}
 
@@ -86,7 +83,7 @@ Per **campagne collaborative**, l’annullamento di un pacchetto attiva numerose
 
 I pacchetti annullati possono ancora essere accessibili e reinizializzati dall&#39;entità centrale (vedi sotto), se necessario. Essi saranno offerti agli enti locali solo una volta approvati e avviati. Il processo di reinizializzazione del pacchetto è mostrato di seguito.
 
-## Reinizializzazione di un pacchetto {#reinitializing-a-package}
+## Reinizializzare un pacchetto {#reinitializing-a-package}
 
 I pacchetti di campagna già pubblicati possono essere reinizializzati, modificati e resi disponibili alle entità locali.
 

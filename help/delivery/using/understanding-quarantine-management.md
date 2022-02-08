@@ -2,22 +2,18 @@
 product: campaign
 title: Informazioni sulla gestione della quarantena
 description: Informazioni sulla gestione della quarantena
-audience: delivery
-content-type: reference
-topic-tags: monitoring-deliveries
+feature: Monitoring
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: ff35cef03ba35c7a6693a65dc7d2482b916c5bdb
 workflow-type: tm+mt
-source-wordcount: '2614'
-ht-degree: 14%
+source-wordcount: '2613'
+ht-degree: 12%
 
 ---
 
-# Informazioni sulla gestione della quarantena{#understanding-quarantine-management}
+# Gestione della quarantena{#understanding-quarantine-management}
 
 ![](../../assets/common.svg)
-
-## Informazioni sulla quarantena {#about-quarantines}
 
  Adobe Campaign gestisce un elenco di indirizzi in quarantena. I destinatari il cui indirizzo è stato messo in quarantena sono esclusi per impostazione predefinita durante l’analisi della consegna e non saranno oggetto di targeting. Un indirizzo e-mail può essere posto in quarantena, ad esempio, quando la casella di posta è piena o se l’indirizzo non esiste. In ogni caso, la procedura di quarantena è conforme alle norme specifiche descritte di seguito.
 
@@ -25,9 +21,9 @@ ht-degree: 14%
 >
 >Questa sezione si applica ai canali online: e-mail, SMS, notifica push.
 
-### Ottimizzazione della consegna tramite quarantena {#optimizing-your-delivery-through-quarantines}
+## Ottimizzazione della consegna tramite la gestione della quarantena {#optimizing-your-delivery-through-quarantines}
 
-I profili con indirizzi e-mail o numeri di telefono in quarantena vengono automaticamente esclusi durante la preparazione dei messaggi (vedi [Identificazione degli indirizzi messi in quarantena per una consegna](#identifying-quarantined-addresses-for-a-delivery)). In questo modo le consegne sono più rapide, poiché il tasso di errore ha un effetto significativo sulla velocità di consegna.
+I profili con indirizzi e-mail o numeri di telefono in quarantena vengono automaticamente esclusi durante la preparazione dei messaggi (vedi [Identificare gli indirizzi messi in quarantena per una consegna](#identifying-quarantined-addresses-for-a-delivery)). In questo modo le consegne sono più rapide, poiché il tasso di errore ha un effetto significativo sulla velocità di consegna.
 
 Alcuni provider di accesso a Internet considerano automaticamente le e-mail come spam se il tasso di indirizzi non validi è troppo alto. La quarantena ti consente quindi di evitare di essere aggiunta al elenco Bloccati da questi provider.
 
@@ -45,15 +41,15 @@ Essere sul **elenco Bloccati**, d’altro canto, il profilo non sarà più ogget
 >
 >Quando un utente risponde a un messaggio SMS con una parola chiave come &quot;STOP&quot; per rifiutare le consegne SMS, il suo profilo non viene aggiunto al elenco Bloccati come nel processo di rinuncia alle e-mail. Il numero di telefono del profilo viene messo in quarantena in modo che l’utente continui a ricevere messaggi e-mail.
 
-## Identificazione degli indirizzi messi in quarantena {#identifying-quarantined-addresses}
+## Identificare gli indirizzi messi in quarantena {#identifying-quarantined-addresses}
 
 È possibile elencare gli indirizzi messi in quarantena per una consegna specifica o per l’intera piattaforma.
 
-### Identificazione di indirizzi messi in quarantena per una consegna {#identifying-quarantined-addresses-for-a-delivery}
+### Identificare gli indirizzi messi in quarantena per una consegna {#identifying-quarantined-addresses-for-a-delivery}
 
 Gli indirizzi messi in quarantena per una consegna specifica sono elencati durante la fase di preparazione della consegna, nei registri di consegna del dashboard di consegna (vedi [Log di consegna e cronologia](delivery-dashboard.md#delivery-logs-and-history)).
 
-### Identificazione degli indirizzi messi in quarantena per l’intera piattaforma {#identifying-quarantined-addresses-for-the-entire-platform}
+### Identificare gli indirizzi messi in quarantena per l’intera piattaforma {#identifying-quarantined-addresses-for-the-entire-platform}
 
 Gli amministratori possono elencare gli indirizzi messi in quarantena per l’intera piattaforma dalla **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** nodo.
 
@@ -72,7 +68,7 @@ Per ciascun indirizzo sono disponibili le seguenti informazioni:
 >Fine anno 1: (1*0.33)/(1+0.5)=22%.
 Fine anno 2: ((1.22*0.33)+0.33)/(1.5+0.75)=32,5%.
 
-### Identificazione degli indirizzi messi in quarantena nei rapporti di consegna {#identifying-quarantined-addresses-in-delivery-reports}
+### Identificare gli indirizzi messi in quarantena nei rapporti di consegna {#identifying-quarantined-addresses-in-delivery-reports}
 
 I seguenti rapporti forniscono informazioni sugli indirizzi messi in quarantena:
 
@@ -86,13 +82,13 @@ I seguenti rapporti forniscono informazioni sugli indirizzi messi in quarantena:
 
 Puoi cercare queste informazioni per tutte le consegne della piattaforma (**[!UICONTROL Home page > Reports]**) o per una consegna specifica. È inoltre possibile creare rapporti personalizzati e selezionare le informazioni da visualizzare.
 
-### Identificazione degli indirizzi messi in quarantena per un destinatario {#identifying-quarantined-addresses-for-a-recipient}
+### Identificare gli indirizzi messi in quarantena per un destinatario {#identifying-quarantined-addresses-for-a-recipient}
 
 Puoi cercare lo stato dell’indirizzo e-mail di qualsiasi destinatario. A questo scopo, seleziona il profilo del destinatario e fai clic sul pulsante **[!UICONTROL Deliveries]** scheda . Per tutte le consegne a quel destinatario, puoi scoprire se l’indirizzo non è riuscito, se è stato messo in quarantena durante l’analisi, ecc. Per ogni cartella, puoi visualizzare solo i destinatari il cui indirizzo e-mail è in quarantena. Per eseguire questa operazione, utilizza la variabile **[!UICONTROL Quarantined email address]** filtro dell&#39;applicazione.
 
 ![](assets/tech_quarant_recipients_filter.png)
 
-### Rimozione di un indirizzo messo in quarantena {#removing-a-quarantined-address}
+### Rimuovere un indirizzo messo in quarantena {#removing-a-quarantined-address}
 
 Se necessario, è possibile rimuovere manualmente un indirizzo dall’elenco di quarantena. Inoltre, gli indirizzi che corrispondono a condizioni specifiche vengono eliminati automaticamente dall’elenco di quarantena dal **[!UICONTROL Database cleanup]** workflow.
 
@@ -257,6 +253,7 @@ Per i clienti che utilizzano il connettore Baidu, di seguito sono riportati i di
 * Problema di connessione all’inizio della consegna: tipo di errore **[!UICONTROL Undefined]**, motivo dell&#39;errore **[!UICONTROL Unreachable]**, viene eseguito un nuovo tentativo.
 * Connessione persa durante una consegna: errore morbido, motivo errore **[!UICONTROL Refused]**, viene eseguito un nuovo tentativo.
 * Errore sincrono restituito da Baidu durante l&#39;invio: errore grave, motivo errore **[!UICONTROL Refused]**, non viene eseguito alcun nuovo tentativo.
+>
 Adobe Campaign contatta il server Baidu ogni 10 minuti per recuperare lo stato del messaggio inviato e aggiorna i registri di trasmissione. Se un messaggio viene dichiarato come inviato, lo stato del messaggio nei registri di trasmissione è impostato su **[!UICONTROL Received]**. Se Baidu dichiara un errore, lo stato è impostato su **[!UICONTROL Failed]**.
 
 **Per Android V2**

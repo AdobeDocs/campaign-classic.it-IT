@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Configurazione e invio della consegna
-description: Configurazione e invio della consegna
-audience: delivery
-content-type: reference
-topic-tags: about-deliveries-and-channels
+title: Configurare e inviare la consegna
+description: Scopri come configurare e inviare la consegna
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '1521'
+source-wordcount: '1526'
 ht-degree: 5%
 
 ---
 
-# Configurazione e invio della consegna {#configuring-and-sending-the-delivery}
+# Configurare e inviare la consegna {#configuring-and-sending-the-delivery}
 
 ![](../../assets/common.svg)
 
@@ -35,7 +32,7 @@ Prima di inviare la consegna, puoi definire i parametri di invio nelle propriet�
    >
    >Quando la consegna viene duplicata, il parametro viene reimpostato.
 
-* **[!UICONTROL Send using multiple waves]**: Per ulteriori informazioni, consulta [Invio tramite più ondate](#sending-using-multiple-waves).
+* **[!UICONTROL Send using multiple waves]**: Per ulteriori informazioni, consulta [Invia utilizzando più onde](#sending-using-multiple-waves).
 
 * **[!UICONTROL Test SMTP delivery]**: Questa opzione consente di verificare l’invio di una consegna tramite SMTP. La consegna viene elaborata fino alla connessione al server SMTP, ma non viene inviata.
 
@@ -45,11 +42,11 @@ Prima di inviare la consegna, puoi definire i parametri di invio nelle propriet�
 
 * **[!UICONTROL Email BCC]**: Questa opzione ti consente di archiviare le e-mail su un sistema esterno tramite CCN semplicemente aggiungendo un indirizzo e-mail CCN al target del messaggio. Per ulteriori informazioni al riguardo, consulta [questa sezione](sending-messages.md#archiving-emails).
 
-## Conferma della consegna {#confirming-delivery}
+## Conferma consegna {#confirming-delivery}
 
 Una volta configurata la consegna e pronta per l’invio, assicurati di aver eseguito l’analisi della consegna.
 
-A questo scopo, fai clic su **[!UICONTROL Send]**, seleziona l’azione desiderata e fai clic su **[!UICONTROL Analyze]**. Per ulteriori informazioni, consulta [Avvio dell’analisi](steps-validating-the-delivery.md#analyzing-the-delivery).
+A questo scopo, fai clic su **[!UICONTROL Send]**, seleziona l’azione desiderata e fai clic su **[!UICONTROL Analyze]**. Per ulteriori informazioni, consulta [Avvia l’analisi](steps-validating-the-delivery.md#analyzing-the-delivery).
 
 ![](assets/s_ncs_user_email_del_send.png)
 
@@ -59,11 +56,11 @@ Puoi quindi chiudere la procedura guidata di consegna e tenere traccia dell’es
 
 Dopo aver inviato i messaggi, puoi monitorare e tenere traccia delle consegne. Per ulteriori informazioni, consulta queste sezioni:
 
-* [Monitoraggio di una consegna](about-delivery-monitoring.md)
-* [Informazioni sugli errori di consegna](understanding-delivery-failures.md)
+* [Monitorare una consegna](about-delivery-monitoring.md)
+* [Errori di consegna](understanding-delivery-failures.md)
 * [Informazioni sul tracciamento dei messaggi](about-message-tracking.md)
 
-## Pianificazione dell’invio della consegna {#scheduling-the-delivery-sending}
+## Pianificare l’invio della consegna {#scheduling-the-delivery-sending}
 
 Puoi posticipare la consegna dei messaggi per pianificare la consegna o per gestire la pressione di vendita ed evitare di sollecitare eccessivamente una popolazione.
 
@@ -105,7 +102,7 @@ Ad esempio, se pianifichi l’esecuzione automatica di una consegna alle 8 ora d
 
 ![](assets/s_ncs_user_email_del_plan_calendar_timezone.png)
 
-## Invio tramite più ondate {#sending-using-multiple-waves}
+## Invia utilizzando più onde {#sending-using-multiple-waves}
 
 Per bilanciare il carico, puoi dividere le consegne in più batch. Configura il numero di batch e la loro proporzione rispetto all’intera consegna.
 
@@ -167,7 +164,7 @@ I due esempi seguenti sono i casi d’uso più comuni per l’utilizzo di più o
 
    ![](assets/s_ncs_user_wizard_waves_call_center.png)
 
-## Configurazione dei nuovi tentativi {#configuring-retries}
+## Configura nuovi tentativi {#configuring-retries}
 
 Messaggi temporaneamente non consegnati a causa di un **Morbido** o **Ignorato** Gli errori sono soggetti a un nuovo tentativo automatico. I tipi e i motivi di errori di consegna sono descritti in questo [sezione](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
@@ -179,9 +176,9 @@ Per le installazioni on-premise e le installazioni in hosting/ibride utilizzando
 
 ![](assets/s_ncs_user_wizard_retry_param.png)
 
-Per impostazione predefinita, sono pianificati cinque nuovi tentativi per il primo giorno della consegna con un intervallo minimo di un’ora suddiviso nelle 24 ore del giorno. Viene programmato un nuovo tentativo al giorno dopo e fino alla scadenza della consegna, definita nella **[!UICONTROL Validity]** scheda (vedi [Definizione del periodo di validità](#defining-validity-period)).
+Per impostazione predefinita, sono pianificati cinque nuovi tentativi per il primo giorno della consegna con un intervallo minimo di un’ora suddiviso nelle 24 ore del giorno. Viene programmato un nuovo tentativo al giorno dopo e fino alla scadenza della consegna, definita nella **[!UICONTROL Validity]** scheda . Vedi [Definire il periodo di validità](#defining-validity-period).
 
-## Definizione del periodo di validità {#defining-validity-period}
+## Definire il periodo di validità {#defining-validity-period}
 
 Quando la consegna è stata avviata, i messaggi (ed eventuali tentativi) possono essere inviati fino alla scadenza della consegna. Questo è indicato nelle proprietà di consegna tramite il **[!UICONTROL Validity]** scheda .
 

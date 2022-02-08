@@ -2,11 +2,8 @@
 product: campaign
 title: Regole di coerenza
 description: Regole di coerenza
-audience: campaign
-content-type: reference
-topic-tags: campaign-optimization
 exl-id: 757328fa-4698-4f85-a5fa-074b5152ec45
-source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 3%
@@ -55,11 +52,11 @@ Per progettare una nuova regola di capacità, segui i passaggi seguenti:
 
    Per ulteriori informazioni al riguardo, consulta [questa sezione](#monitoring-consumption).
 
-## Definizione del carico massimo {#defining-the-maximum-load}
+## Definire il carico massimo {#defining-the-maximum-load}
 
-Per definire il carico massimo, è necessario definire le linee di disponibilità. A questo scopo sono disponibili due opzioni: puoi creare manualmente una o più righe di disponibilità (consulta [Aggiunta di righe di disponibilità una per una](#adding-availability-lines-one-by-one)) o crea intervalli di disponibilità. La frequenza di questi periodi di tempo può essere automatizzata (fare riferimento a [Aggiungere un set di righe di disponibilità](#add-a-set-of-availability-lines)).
+Per definire il carico massimo, è necessario definire le linee di disponibilità. A questo scopo sono disponibili due opzioni: puoi creare manualmente una o più righe di disponibilità (consulta [Aggiungi righe di disponibilità una per una](#adding-availability-lines-one-by-one)) o crea intervalli di disponibilità. La frequenza di questi periodi di tempo può essere automatizzata (fare riferimento a [Aggiungere un set di righe di disponibilità](#add-a-set-of-availability-lines)).
 
-### Aggiunta di righe di disponibilità una per una {#adding-availability-lines-one-by-one}
+### Aggiungi righe di disponibilità una per una {#adding-availability-lines-one-by-one}
 
 Per creare una riga di disponibilità, fai clic sul pulsante **[!UICONTROL Add]** e seleziona **[!UICONTROL Add an availability line]**. Inserire il periodo di disponibilità e il carico disponibile.
 
@@ -113,7 +110,7 @@ Il numero di messaggi da elaborare viene suddiviso in modo uniforme nell’inter
 
 ![](assets/campaign_opt_create_capacity_06.png)
 
-## Monitoraggio del consumo {#monitoring-consumption}
+## Consumo del monitor {#monitoring-consumption}
 
 Per impostazione predefinita, le regole di capacità sono solo a scopo indicativo. Seleziona la **[!UICONTROL Exclude messages in excess of capacity from the target]** per evitare il superamento del carico definito. In questo caso, i messaggi in eccesso verranno automaticamente esclusi dalle consegne che utilizzano questa regola di tipologia.
 

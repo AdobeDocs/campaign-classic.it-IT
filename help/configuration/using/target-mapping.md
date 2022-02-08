@@ -2,13 +2,10 @@
 product: campaign
 title: Mappatura del target
 description: Scopri come creare una mappatura target
-audience: configuration
-content-type: reference
-topic-tags: use-a-custom-recipient-table
 exl-id: 38333669-5598-4811-a121-b677c1413f56
-source-git-commit: 468a986d7cfb8a4c51229cf81b6656ca2d101f40
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '490'
 ht-degree: 2%
 
 ---
@@ -124,7 +121,3 @@ Esistono due modi per utilizzare il nuovo schema come destinazione di una conseg
 * Seleziona la mappatura direttamente durante la selezione della destinazione durante la creazione di una consegna, come illustrato di seguito:
 
 ![](assets/mapping_selection_ciblage.png)
-
-**Argomento correlato**
-
-* [Rispondere rapidamente alle richieste dei clienti per accedere ai loro dati](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Quicklyrespondtocustomerrequeststoaccesstheirdata)

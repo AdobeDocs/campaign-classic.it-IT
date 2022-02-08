@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Informazioni sugli errori di consegna
+title: Errori di consegna
 description: Scopri come comprendere gli errori di consegna
-audience: delivery
-content-type: reference
-topic-tags: monitoring-deliveries
+feature: Monitoring
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
 source-wordcount: '2614'
 ht-degree: 14%
 
 ---
 
-# Informazioni sugli errori di consegna{#understanding-delivery-failures}
+# Errori di consegna{#understanding-delivery-failures}
 
 ![](../../assets/common.svg)
 
@@ -192,7 +190,7 @@ Se un messaggio non riesce a causa di un errore **Morbido** o **Ignorato** Se si
 
 Per le installazioni on-premise e le installazioni in hosting/ibride utilizzando l’MTA legacy di Campaign, per modificare la durata di una consegna, passa ai parametri avanzati della consegna o del modello di consegna e specifica la durata desiderata nel campo corrispondente. Vedi [Definizione del periodo di validità](steps-sending-the-delivery.md#defining-validity-period).
 
-La configurazione predefinita consente cinque tentativi a intervalli di un’ora, seguiti da un nuovo tentativo al giorno per quattro giorni. Il numero di tentativi può essere modificato a livello globale (contatta l’amministratore tecnico di Adobe) o per ogni consegna o modello di consegna (consulta [Configurazione dei nuovi tentativi](steps-sending-the-delivery.md#configuring-retries)).
+La configurazione predefinita consente cinque tentativi a intervalli di un’ora, seguiti da un nuovo tentativo al giorno per quattro giorni. Il numero di tentativi può essere modificato a livello globale (contatta l’amministratore tecnico di Adobe) o per ogni consegna o modello di consegna. Vedi [Configura nuovi tentativi](steps-sending-the-delivery.md#configuring-retries).
 
 ## Errori sincroni e asincroni {#synchronous-and-asynchronous-errors}
 

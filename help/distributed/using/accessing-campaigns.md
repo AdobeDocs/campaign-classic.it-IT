@@ -2,18 +2,16 @@
 product: campaign
 title: Accesso alle campagne
 description: Accesso alle campagne
-audience: campaign
-content-type: reference
-topic-tags: distributed-marketing
+feature: Distributed Marketing
 exl-id: 5534bd5b-6888-4bf6-8a39-109c6fc0f6c3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 3%
 
 ---
 
-# Accesso alle campagne{#accessing-campaigns}
+# Accedere alle campagne{#accessing-campaigns}
 
 ![](../../assets/v7-only.svg)
 
@@ -21,7 +19,7 @@ Una volta ordinata una campagna, l’ordine è stato approvato e la data di disp
 
 A seconda del tipo di campagna e delle opzioni selezionate, la campagna viene eseguita localmente o centralmente.
 
-## Accesso alla campagna {#accessing-the-campaign}
+## Accedere alla campagna {#accessing-the-campaign}
 
 Una volta approvato l’ordine e raggiunta la data di disponibilità, la campagna viene creata localmente e può essere utilizzata. Gli operatori locali sono informati della loro disponibilità.
 

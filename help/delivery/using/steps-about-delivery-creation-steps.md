@@ -1,12 +1,9 @@
 ---
 product: campaign
 title: Informazioni sui passaggi per la creazione di consegne in Adobe Campaign Classic
-description: Scopri i passaggi principali per la creazione di consegne in Adobe Campaign Classic.
-audience: delivery
-content-type: reference
-topic-tags: about-deliveries-and-channels
+description: Scopri i passaggi principali per la creazione di consegne in Adobe Campaign Classic
 exl-id: 0188c3fe-8176-4904-8505-c47a72c20fcc
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 9%
@@ -19,7 +16,7 @@ ht-degree: 9%
 
 I passaggi chiave per la creazione di una consegna sono i seguenti:
 
-1. **Creare e identificare la consegna**. [Leggi tutto](steps-create-and-identify-the-delivery.md)
+1. **Creare e identificare la consegna**. [Maggiori informazioni](steps-create-and-identify-the-delivery.md)
 
 1. **Definire il contenuto della consegna**. La definizione del contenuto di consegna è specifica per ciascun canale. Per ulteriori informazioni, consulta la sezione dedicata:
 
@@ -28,9 +25,9 @@ I passaggi chiave per la creazione di una consegna sono i seguenti:
    * [Canale direct mailing](defining-the-direct-mail-content.md)
    * [Canale applicazione mobile](about-mobile-app-channel.md)
 
-1. **Definire la popolazione target**. [Leggi tutto](steps-defining-the-target-population.md)
+1. **Definire la popolazione target**. [Maggiori informazioni](steps-defining-the-target-population.md)
 
-1. **Inviare la consegna**. [Leggi tutto](steps-sending-the-delivery.md)
+1. **Inviare la consegna**. [Maggiori informazioni](steps-sending-the-delivery.md)
 
 1. **Monitorare la consegna** (tracciamento, quarantena, rapporti, ecc.). Per ulteriori informazioni, consulta la sezione [Monitoraggio delle consegne](about-delivery-monitoring.md) e [Tracciamento delle consegne](about-message-tracking.md) sezioni.
 

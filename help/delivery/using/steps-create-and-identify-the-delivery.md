@@ -1,23 +1,20 @@
 ---
 product: campaign
-title: Creazione e identificazione della consegna
-description: Creazione e identificazione della consegna
-audience: delivery
-content-type: reference
-topic-tags: about-deliveries-and-channels
+title: Creare e identificare la consegna
+description: Creare e identificare la consegna
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
-source-git-commit: 3b8d685642fc74d918a0e312c66d5e4f7b424192
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 13%
+ht-degree: 6%
 
 ---
 
-# Creazione e identificazione della consegna {#create-and-identify-the-delivery}
+# Creare e identificare la consegna {#create-and-identify-the-delivery}
 
 ![](../../assets/common.svg)
 
-## Creazione della consegna {#creating-the-delivery}
+## Creare la consegna {#creating-the-delivery}
 
 Puoi creare una consegna tramite la panoramica o tramite il **[!UICONTROL Create > Delivery]** menu.
 
@@ -34,7 +31,7 @@ Per ogni canale installato viene fornito un modello predefinito: direct mailing,
 
 Puoi creare nuovi modelli di consegna per preconfigurare parametri specifici in base alle tue esigenze. Per ulteriori informazioni sui modelli, consulta [questa sezione](about-templates.md).
 
-## Identificazione della consegna {#identifying-the-delivery}
+## Identificare la consegna {#identifying-the-delivery}
 
 Devi completare i parametri per identificare la consegna. Per eseguire questa operazione:
 
@@ -53,5 +50,5 @@ Il contenuto della consegna è pronto per essere configurato. La definizione del
 
 * [Definire il contenuto dell’e-mail](defining-the-email-content.md)
 * [Definisci il contenuto dell’SMS](sms-create.md#defining-the-sms-content)
-* [Definisci il contenuto della direct mailing](defining-the-direct-mail-content.md)
+* [Definire il contenuto delle direct mail](defining-the-direct-mail-content.md)
 * [Notifiche push](about-mobile-app-channel.md)

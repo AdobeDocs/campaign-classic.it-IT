@@ -2,9 +2,9 @@
 product: campaign
 title: Consegne di campagne di marketing
 description: Ulteriori informazioni sulle consegne delle campagne di marketing
-audience: campaign
+feature: Resource Management, Cross Channel Orchestration
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 3%
@@ -21,7 +21,7 @@ Una volta create da una campagna, le consegne saranno collegate a questa campagn
 
 ![](assets/do-not-localize/how-to-video.png)[ Scopri questa funzione nel video](#create-email-video)
 
-## Creazione di consegne {#creating-deliveries}
+## Creare consegne {#creating-deliveries}
 
 Per creare una consegna collegata a una campagna, fai clic sul pulsante **[!UICONTROL Add a delivery]** nel dashboard della campagna.
 
@@ -29,11 +29,11 @@ Per creare una consegna collegata a una campagna, fai clic sul pulsante **[!UICO
 
 Le configurazioni suggerite sono adatte ai diversi tipi di consegna: direct mailing, e-mail, canali mobili. [Ulteriori informazioni](../../delivery/using/steps-about-delivery-creation-steps.md).
 
-## Avvio di una consegna {#starting-a-delivery}
+## Avviare una consegna {#starting-a-delivery}
 
 Una volta concesse tutte le approvazioni, la consegna è pronta per essere avviata. La procedura di consegna dipende quindi dal tipo di consegna. Per le consegne e-mail o di canali mobili, consulta [Avvio di una consegna online](#starting-an-online-delivery), e per le consegne di direct mailing, vedi [Avvio di una consegna offline](#starting-an-offline-delivery).
 
-### Avvio di una consegna online {#starting-an-online-delivery}
+### Avviare una consegna online {#starting-an-online-delivery}
 
 Una volta concesse tutte le richieste di approvazione, lo stato di consegna cambia in **[!UICONTROL Pending confirmation]** e può essere avviato da un operatore . Se del caso, all’operatore Adobe Campaign (o al gruppo di operatori) designato come revisore per avviare la consegna viene notificato che una consegna è pronta per essere avviata.
 
@@ -51,7 +51,7 @@ Le informazioni vengono visualizzate anche sul dashboard della campagna. La **[!
 
 Un messaggio di conferma ti consente di proteggere questa azione.
 
-### Avvio di una consegna offline {#starting-an-offline-delivery}
+### Avviare una consegna offline {#starting-an-offline-delivery}
 
 Una volta concesse tutte le approvazioni, lo stato di consegna cambia in **[!UICONTROL Pending extraction]**. I file di estrazione vengono creati tramite un flusso di lavoro speciale che, in una configurazione predefinita, viene avviato automaticamente quando una consegna direct mailing è in attesa di estrazione. Quando un processo è in corso, viene visualizzato nel dashboard e può essere modificato tramite il relativo collegamento.
 
@@ -63,7 +63,7 @@ Una volta concesse tutte le approvazioni, lo stato di consegna cambia in **[!UIC
 
 Una volta eseguito correttamente il flusso di lavoro di estrazione, il file di estrazione deve essere approvato (a condizione che l’approvazione del file di estrazione sia stata selezionata nelle impostazioni di consegna).
 
-Per ulteriori informazioni, consulta [Approvazione di un file di estrazione](../../campaign/using/marketing-campaign-approval.md#approving-an-extraction-file).
+Per ulteriori informazioni, consulta [Approvare un file di estrazione](../../campaign/using/marketing-campaign-approval.md#approving-an-extraction-file).
 
 **Passaggio 2 - Approvazione del messaggio al provider di servizi**
 
@@ -114,7 +114,7 @@ L’estrazione del file avvia due operazioni: calcolo del budget e calcolo delle
 >
 >Per ulteriori informazioni sul calcolo dei costi e sulla gestione delle scorte, vedi [Fornitori, scorte e budget](../../campaign/using/providers--stocks-and-budgets.md).
 
-## Gestione dei documenti associati {#managing-associated-documents}
+## Gestire i documenti associati {#managing-associated-documents}
 
 È possibile associare vari documenti a una campagna: report, foto, pagina web, diagramma, ecc. Questi documenti possono essere in qualsiasi formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, ecc.). Scopri come collegare documenti a una campagna [in questa sezione](../../campaign/using/marketing-campaign-assets.md).
 
@@ -128,7 +128,7 @@ In una campagna puoi anche fare riferimento ad altri articoli, come coupon promo
 >
 >Se utilizzi MRM, puoi anche gestire una libreria di risorse di marketing disponibili per diversi partecipanti per lavori collaborativi. Vedi [Gestione delle risorse di marketing](../../mrm/using/managing-marketing-resources.md).
 
-### Aggiunta di documenti {#adding-documents}
+### Aggiungi documenti {#adding-documents}
 
 I documenti possono essere associati a livello di campagna (documenti contestuali) o a livello di programma (documenti generali).
 
@@ -155,7 +155,7 @@ Nel dashboard, i documenti associati alla campagna sono raggruppati nel **[!UICO
 
 È inoltre possibile modificarli e modificarli da questa visualizzazione.
 
-### Associazione e strutturazione delle risorse collegate tramite una struttura di consegna {#associating-and-structuring-resources-linked-via-a-delivery-outline}
+### Associare e strutturare le risorse collegate tramite una struttura di consegna {#associating-and-structuring-resources-linked-via-a-delivery-outline}
 
 >[!NOTE]
 >
@@ -167,7 +167,7 @@ Tali elementi sono raggruppati in profili di consegna e un particolare profilo d
 
 Per una campagna, i profili di consegna ti consentono di strutturare elementi esterni da associare alla consegna in base a determinati criteri: filiale correlata, offerta promozionale concessa, invito a un evento locale, ecc.
 
-#### Creazione di una struttura {#creating-an-outline}
+#### Creare una struttura {#creating-an-outline}
 
 Per creare una struttura, fai clic sul pulsante **[!UICONTROL Delivery outlines]** sottoscheda in **[!UICONTROL Edit > Documents]** scheda della campagna interessata.
 
@@ -205,7 +205,7 @@ Una struttura può contenere elementi e campi di personalizzazione, risorse e of
    >
    >Per ulteriori informazioni sulle risorse di marketing, consulta [Gestione delle risorse di marketing](../../mrm/using/managing-marketing-resources.md).
 
-#### Selezione di una struttura {#selecting-an-outline}
+#### Selezionare una struttura {#selecting-an-outline}
 
 Per ogni consegna, puoi selezionare il profilo da associare dalla sezione riservata al profilo di estrazione, come nell’esempio seguente:
 

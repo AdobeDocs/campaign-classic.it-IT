@@ -1,32 +1,29 @@
 ---
 product: campaign
-title: '"Caso d’uso: creazione di gestione dei contenuti"'
-description: '"Caso d’uso: creazione di gestione dei contenuti"'
-audience: delivery
-content-type: reference
-topic-tags: content-management
+title: '"Caso di utilizzo: crea gestione dei contenuti"'
+description: '"Caso di utilizzo: crea gestione dei contenuti"'
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '1173'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
-# Caso d’uso: creazione di gestione dei contenuti{#use-case-creating-content-management}
+# Caso di utilizzo: creazione di gestione dei contenuti{#use-case-creating-content-management}
 
 ![](../../assets/common.svg)
 
 Per creare la gestione dei contenuti in Adobe Campaign, sono necessari i seguenti passaggi:
 
-* [Passaggio 1: analisi del contenuto da produrre](#step-1---analyzing-the-content-to-be-produced),
-* [Passaggio 2: creazione dello schema dati](#step-2---creating-the-data-schema),
-* [Passaggio 3 - Creazione del modulo di input](#step-3---creating-the-input-form),
-* [Passaggio 4 - Creazione del modello di costruzione](#step-4---creating-the-construction-template),
-* [Passaggio 5: creazione del modello di pubblicazione](#step-5---creating-the-publication-template),
-* [Passaggio 6 - Creazione dei contenuti](#step-6---creating-contents).
+* [Passaggio 1: analizzare il contenuto da produrre](#step-1---analyzing-the-content-to-be-produced),
+* [Passaggio 2: creare lo schema dei dati](#step-2---creating-the-data-schema),
+* [Passaggio 3: creare il modulo di input](#step-3---creating-the-input-form),
+* [Passaggio 4: creare il modello di costruzione](#step-4---creating-the-construction-template),
+* [Passaggio 5: creare il modello di pubblicazione](#step-5---creating-the-publication-template),
+* [Passaggio 6: creare contenuti](#step-6---creating-contents).
 
-## Passaggio 1: analisi del contenuto da produrre {#step-1---analyzing-the-content-to-be-produced}
+## Passaggio 1: analizzare il contenuto da produrre {#step-1---analyzing-the-content-to-be-produced}
 
 Prima di iniziare, è necessario eseguire un&#39;analisi precisa del contenuto da produrre: identificare gli elementi da visualizzare, studiare i vincoli ad essi collegati, definire un tipo per ciascun elemento, ecc. È inoltre necessario differenziare gli elementi statici e quelli variabili.
 
@@ -52,7 +49,7 @@ I vari elementi di questa newsletter vengono assemblati in base alle regole defi
 
 Questi elementi vengono creati tramite uno schema dedicato che specifica i seguenti elementi per ogni contenuto: nome, etichetta, tipo, dimensione e qualsiasi altra informazione pertinente alla sua elaborazione in Adobe Campaign.
 
-## Passaggio 2: creazione dello schema dati {#step-2---creating-the-data-schema}
+## Passaggio 2: creare lo schema dei dati {#step-2---creating-the-data-schema}
 
 Uno schema dati è un documento XML associato al contenuto. Descrive la struttura XML dei dati presenti in questo contenuto.
 
@@ -162,7 +159,7 @@ Lo schema conterrà le seguenti informazioni:
 
 1. Fai clic su **[!UICONTROL Save]** per creare lo schema dati.
 
-## Passaggio 3 - Creazione del modulo di input {#step-3---creating-the-input-form}
+## Passaggio 3: creare il modulo di input {#step-3---creating-the-input-form}
 
 Il modulo di input consente di modificare un’istanza di contenuto tramite un’interfaccia di input dalla console client di Adobe Campaign.
 
@@ -214,7 +211,7 @@ Per creare un modulo di input per la gestione del contenuto, esegui i seguenti p
 
 1. Fai clic su **[!UICONTROL Save]** per creare il modulo di input.
 
-## Passaggio 4 - Creazione del modello di costruzione {#step-4---creating-the-construction-template}
+## Passaggio 4: creare il modello di costruzione {#step-4---creating-the-construction-template}
 
 Il linguaggio XSLT consente di trasformare un documento XML in un altro documento di output. Questa trasformazione viene descritta in XML in un documento denominato foglio di stile.
 
@@ -326,7 +323,7 @@ Per utilizzare un modello JavaScript in Adobe Campaign, esegui i seguenti passag
    </html>
    ```
 
-   La chiamata di una funzione all’inizio di un modello consente di impostare una chiamata ai dati di personalizzazione provenienti dal database di Adobe Campaign (in questo caso: recipient.firstName e recipient.lastName), in modo che possa essere interpretato quando viene utilizzato in una consegna. Per ulteriori informazioni, consulta [Inclusione di un modello JavaScript](formatting.md#including-a-javascript-template).
+   La chiamata di una funzione all’inizio di un modello consente di impostare una chiamata ai dati di personalizzazione provenienti dal database di Adobe Campaign (in questo caso: recipient.firstName e recipient.lastName), in modo che possa essere interpretato quando viene utilizzato in una consegna. Per ulteriori informazioni, consulta [Includere un modello JavaScript](formatting.md#including-a-javascript-template).
 
    In questo esempio, la funzione conterrà il seguente codice:
 
@@ -349,7 +346,7 @@ Per utilizzare un modello JavaScript in Adobe Campaign, esegui i seguenti passag
 
    ![](assets/contentmgt_jscode_perso_sample.png)
 
-## Passaggio 5: creazione del modello di pubblicazione {#step-5---creating-the-publication-template}
+## Passaggio 5: creare il modello di pubblicazione {#step-5---creating-the-publication-template}
 
 Il passaggio successivo prevede la creazione di un modello di pubblicazione del contenuto per collegare lo schema, il modulo e il modello di costruzione del contenuto. Questo modello di pubblicazione può avere diversi formati di output.
 
@@ -375,15 +372,15 @@ In questo esempio, i passaggi sono i seguenti:
 
 1. Fai clic su **[!UICONTROL Save]** per creare il modello di pubblicazione.
 
-## Passaggio 6 - Creazione dei contenuti {#step-6---creating-contents}
+## Passaggio 6: creare contenuti {#step-6---creating-contents}
 
 È ora possibile creare contenuti basati su questo modello di pubblicazione.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla creazione dei contenuti, consulta [Utilizzo di un modello di contenuto](using-a-content-template.md).
+>Per ulteriori informazioni sulla creazione dei contenuti, consulta [Utilizzare un modello di contenuto](using-a-content-template.md).
 
-### Creazione di contenuti nella procedura guidata di consegna {#creating-content-in-the-delivery-wizard}
+### Creare contenuto nella procedura guidata di consegna {#creating-content-in-the-delivery-wizard}
 
 Per creare contenuti direttamente nelle consegne, esegui i seguenti passaggi:
 

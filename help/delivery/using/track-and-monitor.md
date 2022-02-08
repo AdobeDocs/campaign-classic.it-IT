@@ -1,13 +1,12 @@
 ---
 product: campaign
 title: Tracciare e monitorare i messaggi
-audience: delivery
-content-type: reference
-topic-tags: deliveries-best-practices
+description: Scopri come tracciare e monitorare i messaggi
+feature: Monitoring
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '438'
 ht-degree: 3%
 
 ---
@@ -18,7 +17,7 @@ ht-degree: 3%
 
 Fai clic su **Invia** pulsante? Vediamo cosa succede. Una volta inviata la consegna, Adobe Campaign ti consente di tenere traccia dei messaggi inviati e scoprire come reagiscono i destinatari alla consegna. In questo modo potrai migliorare l’invio futuro e ottimizzare le campagne successive.
 
-## Monitoraggio delle consegne {#monitoring-deliveries}
+## Monitorare le consegne {#monitoring-deliveries}
 
 Per controllare le campagne, assicurati che il messaggio sia stato effettivamente consegnato ai destinatari.
 
@@ -37,13 +36,13 @@ Suggerimento: Controlla la configurazione della gestione del traffico (affinità
 >
 >Questi passaggi possono essere eseguiti solo da un utente esperto.
 
-## Tracciamento {#tracking-deliveries}
+## Tracciamento del comportamento {#track-behaviour}
 
 Per conoscere meglio il comportamento dei destinatari, puoi tenere traccia della loro reazione a una consegna: ricezione, apertura, clic su collegamenti, annullamenti di abbonamenti, ecc. In Campaign Classic, queste informazioni vengono visualizzate nella scheda Tracking dei destinatari target interessati dalla consegna e nella scheda Tracking della consegna.
 
 **Suggerimento**: Il tracciamento dei messaggi è abilitato per impostazione predefinita. Per configurare gli URL, seleziona l’opzione Visualizza URL nella sezione inferiore della procedura guidata di consegna. Per ogni URL del messaggio, puoi scegliere se attivare il tracciamento.
 
-Per ulteriori informazioni, consulta la sezione [Configurazione del tracciamento](how-to-configure-tracked-links.md) la sezione [Indicatori di tracciamento](../../reporting/using/delivery-reports.md#tracking-indicators) descrizione.
+Per ulteriori informazioni, consulta la sezione [Configurare il tracciamento](how-to-configure-tracked-links.md) la sezione [Indicatori di tracciamento](../../reporting/using/delivery-reports.md#tracking-indicators) descrizione.
 
 ## Prestazioni di consegna {#delivery-performances}
 

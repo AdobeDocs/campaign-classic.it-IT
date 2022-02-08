@@ -2,28 +2,26 @@
 product: campaign
 title: Creazione di indirizzi di seed
 description: Scopri come creare e utilizzare gli indirizzi di seed
-audience: delivery
-content-type: reference
-topic-tags: using-seed-addresses
+feature: Seed Address
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 1%
 
 ---
 
-# Creazione di indirizzi di seed{#creating-seed-addresses}
+# Creare indirizzi seed{#creating-seed-addresses}
 
 ![](../../assets/common.svg)
 
 Gli indirizzi di seed non vengono gestiti tramite profili e destinazioni standard, ma in un nodo dedicato della gerarchia Adobe Campaign **[!UICONTROL Resources > Campaign management > Seed addresses]**.
 
-Puoi creare sottocartelle per organizzare gli indirizzi di seed. A tale scopo, fai clic con il pulsante destro del mouse sul pulsante **[!UICONTROL Seed addresses]** nodo e seleziona **[!UICONTROL Create a new 'Seed addresses' folder]**. Assegnare un nome alla sottocartella, quindi premere **[!UICONTROL Enter]** da convalidare. Ora puoi creare o copiare gli indirizzi di seed in questa sottocartella. Per ulteriori informazioni, consulta [Definizione degli indirizzi](#defining-addresses).
+Puoi creare sottocartelle per organizzare gli indirizzi di seed. A tale scopo, fai clic con il pulsante destro del mouse sul pulsante **[!UICONTROL Seed addresses]** nodo e seleziona **[!UICONTROL Create a new 'Seed addresses' folder]**. Assegnare un nome alla sottocartella, quindi premere **[!UICONTROL Enter]** da convalidare. Ora puoi creare o copiare gli indirizzi di seed in questa sottocartella. Per ulteriori informazioni, consulta [Definire gli indirizzi](#defining-addresses).
 
-Adobe Campaign consente inoltre di creare modelli di indirizzi di seed importati in consegne o campagne e adattati in base alle esigenze specifiche delle consegne e delle campagne interessate. Fai riferimento a [Creazione di modelli di indirizzi di seed](#creating-seed-address-templates).
+Adobe Campaign consente inoltre di creare modelli di indirizzi di seed importati in consegne o campagne e adattati in base alle esigenze specifiche delle consegne e delle campagne interessate. Fai riferimento a [Creare modelli di indirizzi di seed](#creating-seed-address-templates).
 
-## Definizione degli indirizzi {#defining-addresses}
+## Definire gli indirizzi {#defining-addresses}
 
 Per creare indirizzi di seed, segui i passaggi seguenti:
 
@@ -60,4 +58,4 @@ Per definire una cartella di modelli, applicare il seguente processo:
 
    ![](assets/s_ncs_user_seedlist_folder_is_model.png)
 
-   Gli indirizzi memorizzati in questa cartella possono ora essere utilizzati come modelli di indirizzo. Puoi importarli in consegne o campagne e adattarli in base alle esigenze specifiche delle consegne e delle campagne interessate (consulta [Aggiunta di indirizzi di seed](adding-seed-addresses.md)).
+   Gli indirizzi memorizzati in questa cartella possono ora essere utilizzati come modelli di indirizzo. Puoi importarli in consegne o campagne e adattarli in base alle esigenze specifiche delle consegne e delle campagne interessate (consulta [Aggiungi indirizzi di seed](adding-seed-addresses.md)).

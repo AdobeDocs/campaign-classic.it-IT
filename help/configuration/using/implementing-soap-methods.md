@@ -2,14 +2,11 @@
 product: campaign
 title: Implementazione dei metodi SOAP
 description: Implementazione dei metodi SOAP
-audience: configuration
-content-type: reference
-topic-tags: api
 exl-id: 441a0e5c-fa7f-46c8-a65a-5cca4c846d43
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
 workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -23,7 +20,7 @@ ht-degree: 4%
 
 Questi metodi SOAP si comportano come quelli definiti in modo nativo nell’applicazione. Sono supportati gli stessi attributi: statica, solo chiave e const.
 
-## Definizione di una libreria di metodi {#defining-a-method-library}
+## Definire una libreria di metodi {#defining-a-method-library}
 
 La creazione di una libreria di metodi prevede due fasi:
 

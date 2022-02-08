@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Definisci il contenuto della direct mailing
-description: Definisci il contenuto della direct mailing
-audience: delivery
-content-type: reference
-topic-tags: sending-direct-mail
+title: Definire il contenuto delle direct mail
+description: Scopri come definire il contenuto della direct mailing
 exl-id: 585b2017-9408-4953-8505-2f6d9db8032f
-source-git-commit: 3b8d685642fc74d918a0e312c66d5e4f7b424192
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 14%
+source-wordcount: '167'
+ht-degree: 10%
 
 ---
 
-# Definisci il contenuto della direct mailing{#defining-the-direct-mail-content}
+# Definire il contenuto delle direct mail{#defining-the-direct-mail-content}
 
 ![](../../assets/common.svg)
 

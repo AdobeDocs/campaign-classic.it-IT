@@ -1,14 +1,12 @@
 ---
 product: campaign
 title: Blocchi di personalizzazione
-description: Blocchi di personalizzazione
-audience: delivery
-content-type: reference
-topic-tags: personalizing-deliveries
+description: Scopri come utilizzare i blocchi di personalizzazione
+feature: Personalization
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '861'
 ht-degree: 2%
 
 ---
@@ -17,19 +15,19 @@ ht-degree: 2%
 
 ![](../../assets/common.svg)
 
-I blocchi di personalizzazione sono dinamici, personalizzati e contengono un rendering specifico che puoi inserire nelle consegne. Ad esempio, puoi aggiungere un logo, un messaggio di auguri o un collegamento a una pagina speculare. Vedi [Inserimento di blocchi di personalizzazione](#inserting-personalization-blocks).
+I blocchi di personalizzazione sono dinamici, personalizzati e contengono un rendering specifico che puoi inserire nelle consegne. Ad esempio, puoi aggiungere un logo, un messaggio di auguri o un collegamento a una pagina speculare. Vedi [Inserire blocchi di personalizzazione](#inserting-personalization-blocks).
 
 ![](assets/do-not-localize/how-to-video.png)[ Scopri questa funzione nel video](#personalization-blocks-video)
 
 I blocchi di personalizzazione sono accessibili tramite il **[!UICONTROL Resources > Campaign Management > Personalization blocks]** nodo di Adobe Campaign explorer. Per impostazione predefinita sono disponibili diversi blocchi (vedi [Blocchi di personalizzazione preconfigurati](#out-of-the-box-personalization-blocks)).
 
-Puoi definire nuovi blocchi che ti consentono di ottimizzare la personalizzazione delle consegne. Per ulteriori informazioni, consulta [Definizione dei blocchi di personalizzazione personalizzati](#defining-custom-personalization-blocks).
+Puoi definire nuovi blocchi che ti consentono di ottimizzare la personalizzazione delle consegne. Per ulteriori informazioni, consulta [Definire blocchi di personalizzazione personalizzati](#defining-custom-personalization-blocks).
 
 >[!NOTE]
 >
 >I blocchi di personalizzazione sono disponibili anche dalla pagina **[!UICONTROL Digital Content Editor (DCE)]** . Per ulteriori informazioni, consulta [questa pagina](../../web/using/editing-content.md#inserting-a-personalization-block).
 
-## Inserimento di blocchi di personalizzazione {#inserting-personalization-blocks}
+## Inserire blocchi di personalizzazione {#inserting-personalization-blocks}
 
 Per inserire un blocco di personalizzazione in un messaggio, segui i passaggi seguenti:
 
@@ -38,7 +36,7 @@ Per inserire un blocco di personalizzazione in un messaggio, segui i passaggi se
 
    ![](assets/s_ncs_user_personalized_block01.png)
 
-1. La **[!UICONTROL Other...]** consente di accedere a tutti i blocchi predefiniti e di personalizzazione personalizzata (consulta [Blocchi di personalizzazione preconfigurati](#out-of-the-box-personalization-blocks) e [Definizione dei blocchi di personalizzazione personalizzati](#defining-custom-personalization-blocks)).
+1. La **[!UICONTROL Other...]** consente di accedere a tutti i blocchi predefiniti e di personalizzazione personalizzata (consulta [Blocchi di personalizzazione preconfigurati](#out-of-the-box-personalization-blocks) e [Definire blocchi di personalizzazione personalizzati](#defining-custom-personalization-blocks)).
 
    ![](assets/s_ncs_user_personalized_block02.png)
 
@@ -70,7 +68,7 @@ A questo scopo, è necessario inserire i seguenti blocchi di personalizzazione:
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla generazione della pagina speculare, consulta [Generazione della pagina speculare](sending-messages.md#generating-the-mirror-page).
+>Per ulteriori informazioni sulla generazione della pagina speculare, consulta [Genera la pagina speculare](sending-messages.md#generating-the-mirror-page).
 
 1. Crea una nuova consegna o apri una consegna di tipo e-mail esistente.
 1. Nella procedura guidata di consegna, fai clic su **[!UICONTROL Subject]** per modificare l’oggetto del messaggio e inserire un oggetto.
@@ -102,7 +100,7 @@ Per impostazione predefinita, è disponibile un elenco di blocchi di personalizz
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sulla generazione della pagina speculare, consulta [Generazione della pagina speculare](sending-messages.md#generating-the-mirror-page).
+   >Per ulteriori informazioni sulla generazione della pagina speculare, consulta [Genera la pagina speculare](sending-messages.md#generating-the-mirror-page).
 
 * **[!UICONTROL Link to mirror page]** : inserisce un collegamento alla pagina speculare: &quot;Se non riesci a visualizzare correttamente questo messaggio, fai clic qui&quot;.
 * **[!UICONTROL Unsubscription link]** : inserisce un collegamento che consente di annullare l’iscrizione a tutte le consegne (elenco Bloccati).
@@ -120,7 +118,7 @@ Per impostazione predefinita, è disponibile un elenco di blocchi di personalizz
 * **[!UICONTROL Style of content emails]** e **[!UICONTROL Notification style]** : genera codice che formatta un’e-mail con stili di HTML predefiniti. Questi blocchi devono essere inseriti nel codice sorgente della consegna, nel **[!UICONTROL ...]** sezione **`<style>...</style>`** tag.
 * **[!UICONTROL Offer acceptance URL in unitary mode]** : inserisce un URL che consente di impostare un’offerta di interazione su **[!UICONTROL Accepted]** (vedi [questa sezione](../../interaction/using/offer-analysis-report.md)).
 
-## Definizione dei blocchi di personalizzazione personalizzati {#defining-custom-personalization-blocks}
+## Definire blocchi di personalizzazione personalizzati {#defining-custom-personalization-blocks}
 
 Puoi definire nuovi campi di personalizzazione da inserire dall’icona del campo personalizzato tramite l’ **[!UICONTROL Include...]** menu. Questi campi sono definiti nei blocchi di personalizzazione.
 

@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Generazione di documenti PDF personalizzati
-description: Generazione di documenti PDF personalizzati
-audience: delivery
-content-type: reference
-topic-tags: personalizing-deliveries
+title: Generare documenti PDF personalizzati
+description: Scopri come generare documenti PDF personalizzati
+feature: Personalization
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
-source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 2%
+source-wordcount: '442'
+ht-degree: 1%
 
 ---
 
-# Generazione di documenti PDF personalizzati{#generating-personalized-pdf-documents}
+# Generare documenti PDF personalizzati{#generating-personalized-pdf-documents}
 
 ![](../../assets/common.svg)
 
@@ -25,7 +23,7 @@ Sono supportate le seguenti estensioni: &quot;.docx&quot;, &quot;.doc&quot; e &q
 
 Per personalizzare i documenti, sono disponibili le stesse funzionalità JavaScript utilizzate per la personalizzazione delle e-mail.
 
-È necessario attivare la **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]** opzione . Questa opzione è accessibile quando alleghi il file all’e-mail di consegna. Per ulteriori informazioni sull’associazione di un file calcolato, consulta la [File allegati](attaching-files.md) sezione .
+È necessario attivare la **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]** opzione . Questa opzione è accessibile quando alleghi il file all’e-mail di consegna. Per ulteriori informazioni sull’associazione di un file calcolato, consulta la [Allega file](attaching-files.md) sezione .
 
 Esempio di personalizzazione dell&#39;intestazione di una fattura:
 
@@ -33,7 +31,7 @@ Esempio di personalizzazione dell&#39;intestazione di una fattura:
 
 Per generare tabelle dinamiche o includere immagini tramite un URL, è necessario seguire un processo specifico.
 
-## Generazione di tabelle dinamiche {#generating-dynamic-tables}
+## Genera tabelle dinamiche {#generating-dynamic-tables}
 
 La procedura per la generazione di tabelle dinamiche è la seguente:
 
@@ -47,13 +45,13 @@ La procedura per la generazione di tabelle dinamiche è la seguente:
 
    ![](assets/s_ncs_pdf_table.png)
 
-## Inserimento di immagini esterne {#inserting-external-images}
+## Inserire immagini esterne {#inserting-external-images}
 
 L’inserimento di immagini esterne è utile se, ad esempio, desideri personalizzare un documento con un’immagine il cui URL è inserito in un campo del destinatario.
 
 A questo scopo, devi configurare un blocco di personalizzazione, quindi includere una chiamata al blocco di personalizzazione nell’allegato.
 
-**Esempio: inserimento di un logo personalizzato in base al paese del destinatario**
+**Esempio: inserire un logo personalizzato in base al paese del destinatario**
 
 **Passaggio 1: creare l&#39;allegato:**
 

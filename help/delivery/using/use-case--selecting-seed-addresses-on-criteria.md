@@ -2,18 +2,16 @@
 product: campaign
 title: '"Caso di utilizzo: selezione degli indirizzi di seed in base ai criteri"'
 description: '"Caso di utilizzo: selezione degli indirizzi di seed in base ai criteri"'
-audience: delivery
-content-type: reference
-topic-tags: using-seed-addresses
+feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '837'
 ht-degree: 3%
 
 ---
 
-# Caso di utilizzo: selezione degli indirizzi di seed in base ai criteri{#use-case-selecting-seed-addresses-on-criteria}
+# Caso d’uso: selezionare gli indirizzi seed in base ai criteri{#use-case-selecting-seed-addresses-on-criteria}
 
 ![](../../assets/common.svg)
 
@@ -30,21 +28,21 @@ Per utilizzare la condizione dinamica, è necessario disporre di:
 * una consegna pronta per essere inviata,
 * indirizzi di seed con un valore comune. Questo valore può essere un campo già esistente in Adobe Campaign. In questo esempio, gli indirizzi di seed condividono il valore &quot;Purchasing&quot; nel campo &quot;Department&quot;, che per impostazione predefinita non è presente nell’applicazione.
 
-## Passaggio 1 - Creazione di una consegna {#step-1---creating-a-delivery}
+## Passaggio 1: creare una consegna {#step-1---creating-a-delivery}
 
-I passaggi per la creazione di una consegna sono descritti in [Creazione di una consegna e-mail](creating-an-email-delivery.md) sezione .
+I passaggi per la creazione di una consegna sono descritti in [Creare una consegna e-mail](creating-an-email-delivery.md) sezione .
 
 In questo esempio, il gestore consegne ha creato la newsletter e selezionato i destinatari.
 
 ![](assets/dlv_seeds_usecase_01.png)
 
-## Passaggio 2 - Creazione di un valore comune {#step-2---creating-a-common-value}
+## Passaggio 2: creare un valore comune {#step-2---creating-a-common-value}
 
 Per creare un valore comune come quello nel nostro esempio (reparto Acquisti), devi prima estendere il **schema dati** degli indirizzi di seed e modifica il modulo di input associato.
 
-### Estensione dello schema dati {#extending-the-data-schema}
+### Estendere lo schema dati {#extending-the-data-schema}
 
-Per ulteriori dettagli sulle estensioni dello schema, consulta [Guida alla configurazione](../../configuration/using/data-schemas.md).
+Per ulteriori dettagli sulle estensioni dello schema, consulta [questa sezione](../../configuration/using/data-schemas.md).
 
 1. In **[!UICONTROL Administration > Configuration > Data schemas]** fai clic sul **[!UICONTROL New]** icona.
 1. In **[!UICONTROL Creation of a data schema]** seleziona la finestra **[!UICONTROL Extension of a schema]** e fai clic su **[!UICONTROL Next]**.
@@ -95,9 +93,9 @@ Per ulteriori dettagli sulle estensioni dello schema, consulta [Guida alla confi
 
    Al termine dell’aggiornamento, puoi chiudere la procedura guidata.
 
-1. Disconnettiti e riconnettiti ad Adobe Campaign. Le modifiche apportate nello schema dei dati dell’indirizzo di seed ora sono effettive. Affinché siano visibili dalla schermata degli indirizzi di seed, è necessario aggiornare i **[!UICONTROL Input form]**. Fai riferimento a [Aggiornamento del modulo di input](#updating-the-input-form) sezione .
+1. Disconnettiti e riconnettiti ad Adobe Campaign. Le modifiche apportate nello schema dei dati dell’indirizzo di seed ora sono effettive. Affinché siano visibili dalla schermata degli indirizzi di seed, è necessario aggiornare i **[!UICONTROL Input form]**. Fai riferimento a [Aggiornare il modulo di input](#updating-the-input-form) sezione .
 
-#### Estensione dello schema dati da una tabella collegata {#extending-the-data-schema-from-a-linked-table}
+#### Estendere lo schema dati da una tabella collegata {#extending-the-data-schema-from-a-linked-table}
 
 Lo schema di dati degli indirizzi di seed può utilizzare valori provenienti da una tabella collegata allo schema di dati dei destinatari: Recipient (nms).
 
@@ -131,9 +129,9 @@ Essi indicano:
 
 L&#39;utente può quindi seguire **passaggio 5** della sezione e aggiorna il **[!UICONTROL Input form]** degli indirizzi di seed.
 
-Fai riferimento a [Aggiornamento del modulo di input](#updating-the-input-form) sezione .
+Fai riferimento a [Aggiornare il modulo di input](#updating-the-input-form) sezione .
 
-#### Aggiornamento del modulo di input {#updating-the-input-form}
+#### Aggiornare il modulo di input {#updating-the-input-form}
 
 1. In **[!UICONTROL Administration > Configuration > Input forms]** nodo, trova il modulo di input degli indirizzi di seed.
 
@@ -154,7 +152,7 @@ Fai riferimento a [Aggiornamento del modulo di input](#updating-the-input-form) 
 
 1. Modifica gli indirizzi di seed che desideri utilizzare per la consegna e immetti **Acquisti** come valore nel **[!UICONTROL Department]** campo .
 
-## Passaggio 3 - Definizione della condizione {#step-3---defining-the-condition}
+## Passaggio 3: definire la condizione {#step-3---defining-the-condition}
 
 Ora puoi specificare la condizione dinamica degli indirizzi di seed per la consegna. Per eseguire questa operazione:
 

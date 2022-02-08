@@ -2,11 +2,9 @@
 product: campaign
 title: Regole di pressione
 description: Regole di pressione
-audience: campaign
-content-type: reference
-topic-tags: campaign-optimization
+feature: Fatigue Management, Typology Rules
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 52aa7b268d5eb83354c3a4d8687ced95300538e2
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
 source-wordcount: '3285'
 ht-degree: 4%
@@ -19,7 +17,7 @@ ht-degree: 4%
 
 ## Informazioni sull’affaticamento del marketing {#about-marketing-fatigue}
 
-L’implementazione della gestione della pressione di vendita ti consente di evitare di sollecitare eccessivamente la popolazione nel database, nota anche come affaticamento del marketing. A questo scopo, puoi definire un numero massimo di messaggi per destinatario. Ti consente inoltre di implementare regole di arbitrato tra le campagne al fine di inviare il messaggio migliore al pubblico di destinazione.
+L’implementazione della gestione della pressione di vendita ti consente di evitare di sollecitare eccessivamente la popolazione nel database, nota anche come affaticamento del marketing. A questo scopo, puoi definire un numero massimo di messaggi per destinatario. Ti consente inoltre di implementare regole di arbitrato tra le campagne, al fine di inviare il messaggio migliore al pubblico di destinazione.
 
 **Pressione** regole, per gestire l’affaticamento del marketing, ad esempio, per limitare il numero di lettere da inviare a una popolazione a due, per selezionare la comunicazione che meglio corrisponde agli interessi di un gruppo di abbonati, per evitare di inviare un SMS a un cliente insoddisfatto, ecc.
 
@@ -95,7 +93,7 @@ Per creare e configurare una regola di tipologia **[!UICONTROL Pressure]**, atti
 
 1. La **[!UICONTROL Typologies]** La scheda ti consente di visualizzare le tipologie di campagna che applicano questa regola o di collegare la regola a una o più tipologie esistenti. Per ulteriori informazioni, consulta [Applicazione delle tipologie](about-campaign-typologies.md#applying-typologies).
 
-## Definizione delle soglie e dei pesi {#defining-thresholds-and-weights}
+## Definire soglie e pesi {#defining-thresholds-and-weights}
 
 ### Numero massimo di messaggi {#maximum-number-of-messages}
 
@@ -141,7 +139,7 @@ Nell’esempio seguente, vogliamo collegare il peso delle newsletter sulla music
 
 1. Applica questa regola ai messaggi con il seguente argomento: newsletter, offerte speciali, ecc. Il peso di queste consegne, e quindi il loro livello di priorità, dipenderà dal punteggio di propensione di ciascun destinatario.
 
-## Impostazione del periodo {#setting-the-period}
+## Imposta il periodo {#setting-the-period}
 
 Le regole di pressione sono definite in **n**- periodi continui.
 
@@ -219,7 +217,7 @@ Se questo numero supera la soglia, vengono applicate le regole di arbitrato defi
 
 ## Casi d’uso sulle regole di pressione {#use-cases-on-pressure-rules}
 
-### Adeguamento della soglia in base al criterio {#adapting-the-threshold-based-on-criterion}
+### Adatta la soglia in base al criterio {#adapting-the-threshold-based-on-criterion}
 
 Vogliamo creare una regola di tipologia per impedire la consegna di più di 4 messaggi alla settimana ai clienti e di 2 messaggi alla settimana ai potenziali clienti.
 
@@ -289,7 +287,7 @@ Durante l’analisi della consegna, i destinatari della consegna sono esclusi da
 
    ![](assets/campaign_opt_pressure_sample_1_10.png)
 
-### Calcolo del peso della consegna in base al comportamento {#calculating-the-delivery-weight-based-on-behavior}
+### Calcola il peso della consegna in base al comportamento {#calculating-the-delivery-weight-based-on-behavior}
 
 Puoi definire regole di pressione in base al comportamento del destinatario: pertanto, il peso di una consegna può adattarsi a criteri che variano da un destinatario all&#39;altro. Ad esempio, puoi decidere di inviare un messaggio a seconda che un destinatario abbia visitato o meno il tuo sito Internet, abbia fatto clic su una sezione specifica dell’ultima newsletter, si sia iscritto a un servizio di informazione o anche in base alle risposte a un sondaggio, a un gioco online, ecc.
 
@@ -315,7 +313,7 @@ Applica i seguenti passaggi di configurazione:
 1. Fai clic su **[!UICONTROL Finish]** per salvare questa regola.
 1. Collega la regola a una tipologia di campagna e fai riferimento a questa tipologia in una consegna per approvarla.
 
-### Invio solo dei messaggi con ponderazione più elevata {#sending-only-the-highest-weighted-messages}
+### Invia solo messaggi con ponderazione più elevata {#sending-only-the-highest-weighted-messages}
 
 Desideri inviare non più di 2 messaggi entro la stessa settimana, con un limite di 2 messaggi al giorno, a ciascuno dei tuoi destinatari e desideri che vengano consegnati solo i messaggi con pesi più elevati.
 
@@ -323,19 +321,19 @@ A questo scopo, devi pianificare diverse consegne con pesi diversi per lo stesso
 
 Innanzitutto, configura la regola di pressione.
 
-1. Crea una regola di pressione. Per ulteriori informazioni, consulta [Creazione di una regola di pressione](#creating-a-pressure-rule).
+1. Crea una regola di pressione. Per ulteriori informazioni, consulta [Creare una regola di pressione](#creating-a-pressure-rule).
 1. In **[!UICONTROL General]** seleziona la scheda **[!UICONTROL Re-apply the rule at the start of personalization]** opzione .
 
    ![](assets/campaign_opt_pressure_example_5.png)
 
-   Questa opzione sovrascrive il valore definito nel **[!UICONTROL Frequency]** applica automaticamente la regola durante la fase di personalizzazione. Per ulteriori informazioni, consulta [Regolazione della frequenza di calcolo](applying-rules.md#adjusting-calculation-frequency).
+   Questa opzione sovrascrive il valore definito nel **[!UICONTROL Frequency]** applica automaticamente la regola durante la fase di personalizzazione. Per ulteriori informazioni, consulta [Regola frequenza di calcolo](applying-rules.md#adjusting-calculation-frequency).
 
 1. In **[!UICONTROL Pressure]** scheda , seleziona **[!UICONTROL 7d]** come **[!UICONTROL Period considered]** e **[!UICONTROL Grouping per day]** come **[!UICONTROL Period type]**.
 1. Seleziona la **[!UICONTROL Take the deliveries into account in the provisional calendar]** per includere le consegne pianificate.
 
    ![](assets/campaign_opt_pressure_example_1.png)
 
-   Nel calcolo verranno prese in considerazione le consegne inviate fino a 7 giorni prima della data di consegna e pianificate fino a 7 giorni dopo la data di consegna. Per ulteriori informazioni, consulta [Impostazione del periodo](#setting-the-period).
+   Nel calcolo verranno prese in considerazione le consegne inviate fino a 7 giorni prima della data di consegna e pianificate fino a 7 giorni dopo la data di consegna. Per ulteriori informazioni, consulta [Imposta il periodo](#setting-the-period).
 
    >[!AVAILABILITY]
    >Le consegne pianificate non possono essere prese in considerazione in Campaign v8.

@@ -1,15 +1,13 @@
 ---
 product: campaign
-title: Informazioni sul recapito messaggi in Campaign
+title: Introduzione al recapito messaggi in Campaign
 description: Scopri le best practice per il recapito messaggi
-audience: delivery
-content-type: reference
-topic-tags: deliverability-management
+feature: Deliverability
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 9%
+source-wordcount: '724'
+ht-degree: 8%
 
 ---
 
@@ -46,7 +44,7 @@ Con Adobe Campaign, il tasso di consegna dipende da numerosi fattori, in partico
 * La reputazione del tuo indirizzo IP: vedere [Strategia IP](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#ip-strategy).
 * Qualità degli indirizzi interessati: vedere [Gestione della quarantena](optimize-delivery.md#quarantine-management).
 * Basso [lamentele](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html) e [rimbalzo duro](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html#hard-bounces) tariffe.
-* Contenuto del messaggio: vedere [Controllo del contenuto delle e-mail](control-message-content.md).
+* Contenuto del messaggio: vedere [Controllare il contenuto dell’e-mail](control-message-content.md).
 * Autenticazione dei messaggi (SPF, DKIM, DMARC): vedere [questa sezione](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 * reputazione del mittente: per sapere come i principali ISP valutano la reputazione di un mittente, vedi [questa sezione](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/internet-service-provider-specifics/overview.html).
 
@@ -60,7 +58,7 @@ Adobe Campaign fornisce diversi strumenti per monitorare e migliorare le prestaz
 Durante la configurazione, la progettazione e il test del messaggio, assicurati di seguire le best practice menzionate nelle sezioni elencate di seguito. L’utilizzo di tutte le funzioni fornite da Adobe Campaign consente di migliorare il recapito messaggi.
 
 * [Best practice per la consegna](delivery-best-practices.md)
-* [Controllo dei contenuti dell’e-mail](control-message-content.md)
+* [Controllare il contenuto dell’e-mail](control-message-content.md)
 * [Rendering della casella in entrata](inbox-rendering.md)
 * [Invio di una prova](steps-validating-the-delivery.md#sending-a-proof)
 
@@ -82,8 +80,8 @@ Alcuni provider di accesso a Internet considerano automaticamente le e-mail come
 
 Per ulteriori informazioni, consulta le sezioni seguenti:
 
-* [Informazioni sugli errori di consegna](understanding-delivery-failures.md)
-* [Informazioni sulla gestione della quarantena](understanding-quarantine-management.md)
+* [Errori di consegna](understanding-delivery-failures.md)
+* [Gestione della quarantena](understanding-quarantine-management.md)
 * [Quarantena rispetto elenco Bloccati](understanding-quarantine-management.md#quarantine-vs-denylist)
 
 ### Utilizzare strumenti di monitoraggio e reporting
@@ -95,24 +93,5 @@ Adobe Campaign ti consente di verificare le prestazioni delle consegne tramite u
 Per ulteriori informazioni, consulta le sezioni seguenti:
 
 * [Monitoraggio del recapito messaggi](monitoring-deliverability.md)
-* [Informazioni sul monitoraggio delle consegne](about-delivery-monitoring.md)
-* [Informazioni sui report incorporati di Campaign](../../reporting/using/about-campaign-built-in-reports.md)
-
-<!--TO REMOVE
-## Background {#background}
-
-Email deliverability presents a major challenge to marketers - whether they're sending a few thousand messages or several billion. One in five messages never reach the inbox, or their intended recipient.
-
-Once relegated as a "technical issue" for the IT department, email deliverability continues to move higher on the marketing agenda. That's because savvy marketers recognize that although many of its elements are technical in nature, deliverability is ultimately a business issue with significant revenue implications.
-
-Consider the email marketing funnel. Deliverability determines the number of messages received, which in turn impacts each subsequent stage of the funnel. Fewer emails received results in fewer opens, fewer clicks, and fewer conversions. **For companies with a large database, the difference between average and great deliverability could literally mean hundreds of thousands to millions of dollars in revenues.**
-
-![](assets/deliverability_overview_1.png)
-
-By settling for average (80%) deliverability, marketers are leaving significant conversions - and dollars - on the table.
-
-What exactly is email deliverability? And how can marketers improve deliverability rates to widen the mouth of the funnel and squeeze more results from their email campaigns?
-
-Email deliverability refers to the set of characteristics that determine a message's ability to reach its destination, via a personal email address, within a short time, and with the expected quality in terms of content and format. These characteristics fall into four main categories: data quality, message and content, sending infrastructure, and reputation. Together, they form the foundation of a successful email deliverability program. This overview outlines the four fundamentals of email deliverability success and offers best practices for reaching the inbox and driving greater revenues from email marketing programs.
-
-![](assets/deliverability_overview_2.png)-->
+* [Introduzione al monitoraggio della consegna](about-delivery-monitoring.md)
+* [Guida introduttiva ai report incorporati di Campaign](../../reporting/using/about-campaign-built-in-reports.md)

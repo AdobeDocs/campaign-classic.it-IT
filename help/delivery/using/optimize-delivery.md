@@ -1,14 +1,13 @@
 ---
 product: campaign
 title: Ottimizzare la consegna dei messaggi
-audience: delivery
-content-type: reference
-topic-tags: deliveries-best-practices
+description: Scopri come ottimizzare la consegna dei messaggi
+feature: Deliverability
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 9%
+source-wordcount: '736'
+ht-degree: 8%
 
 ---
 
@@ -34,7 +33,7 @@ Diversi fattori possono influenzare direttamente le prestazioni del server e ral
 
 * Se sei idoneo, puoi sfruttare [Funzionalità di Pannello di controllo Campaign di Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=it) per monitorare la piattaforma, utilizzando [monitoraggio delle prestazioni](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=it) funzionalità.
 
-## Verifica della configurazione di rete {#network-config}
+## Controllare la configurazione di rete {#network-config}
 
 Per ottimizzare la consegna quando gestisci le e-mail in grandi volumi ed evitare errori per uno spammer, assicurati di disporre di una configurazione di rete legittima che non tenti di nascondere l’identità del server.
 

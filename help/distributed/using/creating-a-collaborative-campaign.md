@@ -1,25 +1,23 @@
 ---
 product: campaign
-title: Creazione di una campagna collaborativa
-description: Creazione di una campagna collaborativa
-audience: campaign
-content-type: reference
-topic-tags: distributed-marketing
+title: Creare una campagna collaborativa
+description: Scopri come creare una campagna collaborativa
+feature: Distributed Marketing
 exl-id: 17313fe5-ad42-45ca-a35a-1e7aa89380ef
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '915'
 ht-degree: 3%
 
 ---
 
-# Creazione di una campagna collaborativa{#creating-a-collaborative-campaign-intro}
+# Creare una campagna collaborativa{#creating-a-collaborative-campaign-intro}
 
 ![](../../assets/v7-only.svg)
 
 L&#39;entità centrale crea campagne di collaborazione da **Marketing distribuito** modelli di campagna. Consulta [questa pagina](about-distributed-marketing.md#collaborative-campaign).
 
-## Creazione di una campagna collaborativa {#creating-a-collaborative-campaign}
+## Creare una campagna collaborativa {#creating-a-collaborative-campaign}
 
 Per configurare una campagna collaborativa, fai clic sul pulsante **[!UICONTROL Campaign management > Campaigns]** nodo, quindi **[!UICONTROL New]** icona.
 
@@ -155,7 +153,7 @@ In modalità automatica, l’entità locale viene pre-sottoscritta per la campag
 
 La configurazione per le notifiche è identica alle notifiche per un&#39;entità locale. Fai riferimento a [questa sezione](creating-a-local-campaign.md#notifications).
 
-## Ordinamento di una campagna {#ordering-a-campaign}
+## Ordinare una campagna {#ordering-a-campaign}
 
 Quando una campagna collaborativa viene aggiunta all’elenco dei pacchetti di campagne, le entità locali appartenenti al pubblico definito dall’entità centrale ricevono una notifica (il **campagne collaborative (per approvazione target)** non hanno un pubblico predefinito). Il messaggio inviato contiene un collegamento che consente di registrarsi per la campagna, come illustrato di seguito:
 
@@ -173,6 +171,6 @@ Dopo che un ente locale ha completato la sua registrazione, gli enti centrali ri
 
 Per ulteriori informazioni, consulta la sezione [Processo di approvazione](creating-a-local-campaign.md#approval-process) sezione .
 
-## Approvazione di un ordine {#approving-an-order}
+## Approva un ordine {#approving-an-order}
 
 Il processo per l’approvazione di un ordine di pacchetti di campagna collaborativa è lo stesso di quando lo si fa per una campagna locale. Fai riferimento a [questa sezione](creating-a-local-campaign.md#approving-an-order).

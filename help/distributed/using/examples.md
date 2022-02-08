@@ -1,29 +1,27 @@
 ---
 product: campaign
-title: Esempi
-description: Esempi
-audience: campaign
-content-type: reference
-topic-tags: distributed-marketing
+title: Esempi di marketing distribuito
+description: Esempi di marketing distribuito
+feature: Distributed Marketing
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1293'
 ht-degree: 0%
 
 ---
 
-# Esempi{#examples}
+# Esempi di marketing distribuito{#distributed-marketing-samples}
 
 ![](../../assets/v7-only.svg)
 
-## Creazione di una campagna locale (tramite modulo) {#creating-a-local-campaign--by-form-}
+## Creare una campagna locale (tramite modulo) {#creating-a-local-campaign--by-form-}
 
 La **Per modulo** l&#39;interfaccia web di tipo include l&#39;utilizzo di **applicazione web**. A seconda della configurazione, questa applicazione web può contenere qualsiasi tipo di elementi personalizzati definiti. Ad esempio, puoi suggerire collegamenti per valutare il target, il budget, il contenuto, ecc. tramite API dedicate.
 
 >[!NOTE]
 >
->Le API sono descritte in un documento dedicato, il cui accesso dipende dal contratto. Fai riferimento a [API](../../configuration/using/about-web-services.md).
+>Le API sono descritte in un documento dedicato. [Ulteriori informazioni](../../configuration/using/about-web-services.md).
 >
 >L&#39;applicazione Web utilizzata in questo esempio non è un&#39;app Web preconfigurata con Adobe Campaign. Per utilizzare un modulo in una campagna, è necessario creare l’applicazione Web dedicata.
 
@@ -73,7 +71,7 @@ In questo esempio vengono utilizzate le seguenti API:
    var res = nms.localOrder.EvaluateContent(ctx.localOrder, ctx.@deliveryId, "html", resSeed.@id);
    ```
 
-## Creazione di una campagna collaborativa (tramite approvazione target) {#creating-a-collaborative-campaign--by-target-approval-}
+## Creare una campagna collaborativa (per approvazione target) {#creating-a-collaborative-campaign--by-target-approval-}
 
 ### Introduzione {#introduction}
 
@@ -118,7 +116,7 @@ Una volta approvati i controlli, la campagna può essere avviata automaticamente
 
 ### Lato centrale dell&#39;entità {#central-entity-side}
 
-#### Creazione di un’attività di distribuzione dati {#creating-a-data-distribution-activity}
+#### Creare un’attività di distribuzione dati {#creating-a-data-distribution-activity}
 
 1. Per impostare una campagna collaborativa (per approvazione target), devi prima creare un **[!UICONTROL Data distribution activity]**. Fai clic sul pulsante **[!UICONTROL New]** nella **[!UICONTROL Resources > Campaign management > Data distribution]** nodo.
 
@@ -142,7 +140,7 @@ Una volta approvati i controlli, la campagna può essere avviata automaticamente
 
 1. Salva la nuova distribuzione dati.
 
-#### Creazione di una campagna collaborativa {#creating-a-collaborative-campaign}
+#### Creare una campagna collaborativa {#creating-a-collaborative-campaign}
 
 1. Da **[!UICONTROL Campaign management > Campaign]** nodo, creare un nuovo **[!UICONTROL collaborative campaign (by target approval)]**.
 1. In **[!UICONTROL Targeting and workflows]** crea un flusso di lavoro per la campagna. Deve contenere un **Divisione** attività in cui **[!UICONTROL Record count limitation]** è definito dal **[!UICONTROL Data distribution]** attività.
@@ -159,7 +157,7 @@ Una volta approvati i controlli, la campagna può essere avviata automaticamente
 
 1. Salvare il record.
 
-#### Pubblicazione della campagna {#publishing-the-campaign}
+#### Pubblicare la campagna {#publishing-the-campaign}
 
 È ora possibile aggiungere un **pacchetto campagna** dal **[!UICONTROL Campaigns]** scheda .
 
@@ -178,7 +176,7 @@ Una volta approvati i controlli, la campagna può essere avviata automaticamente
 
    ![](assets/mkg_dist_use_case_target_valid2.png)
 
-## Creazione di una campagna collaborativa (tramite modulo) {#creating-a-collaborative-campaign--by-form-}
+## Creare una campagna collaborativa (tramite modulo) {#creating-a-collaborative-campaign--by-form-}
 
 ### Introduzione {#introduction-1}
 

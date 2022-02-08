@@ -1,14 +1,12 @@
 ---
 product: campaign
 title: Coupon personalizzati
-description: Coupon personalizzati
-audience: delivery
-content-type: reference
-topic-tags: personalizing-deliveries
+description: Scopri come creare e inserire coupon personalizzati
+feature: Personalization
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 0deb18bb0376fc5e94d063145280426ff54db786
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '885'
 ht-degree: 1%
 
 ---
@@ -25,7 +23,7 @@ L’aggiunta di coupon alle consegne può fornire ai destinatari un valore aggiu
 >
 >I dati dei coupon possono essere importati ed esportati utilizzando i formati CSV e XML. Per informazioni dettagliate sull&#39;importazione e l&#39;esportazione, fare riferimento a [questa sezione](../../platform/using/get-started-data-import-export.md).
 
-## Creazione di un coupon {#creating-a-coupon}
+## Crea un coupon {#creating-a-coupon}
 
 Il modulo coupon offre due opzioni quando si creano i coupon:
 
@@ -54,13 +52,13 @@ Prima di seguire i passaggi seguenti, assicurati di conoscere il tipo di coupon 
    1. Inserisci un codice univoco per il singolo coupon quando richiesto dalla finestra pop-up.
    1. Fai clic su **[!UICONTROL Save]** per generare il coupon.
 
-   Per ulteriori dettagli sulla scheda Coupon, vedi [Configurazione di singoli coupon](#configuring-individual-coupons).
+   Per ulteriori dettagli sulla scheda Coupon, vedi [Configurare singoli coupon](#configuring-individual-coupons).
 
    >[!NOTE]
    >
    >I singoli coupon possono essere importati in massa. Per informazioni dettagliate sull&#39;importazione e l&#39;esportazione, fare riferimento a [questa sezione](../../platform/using/get-started-data-import-export.md).
 
-### Configurazione di singoli coupon {#configuring-individual-coupons}
+### Configurare singoli coupon {#configuring-individual-coupons}
 
 ![](assets/deliv_coup_03.png)
 
@@ -73,7 +71,7 @@ La scheda Coupon è disponibile solo con singoli coupon. Dopo che un coupon è a
 
 Valori per **[!UICONTROL status]**, **[!UICONTROL channel]** e **[!UICONTROL address]** vengono completati automaticamente. Tuttavia, i valori per **[!UICONTROL redeemed on]** non vengono recuperati da Campaign. È possibile completarli importando un file con i dettagli per il rimborso delle cedole.
 
-## Inserimento di un coupon in una consegna e-mail {#inserting-a-coupon-into-an-email-delivery}
+## Inserire un coupon in una consegna e-mail {#inserting-a-coupon-into-an-email-delivery}
 
 Nell’esempio seguente, la consegna viene creata dalla home page. Per istruzioni dettagliate su come creare una consegna, consulta [questa sezione](about-email-channel.md). Puoi anche aggiungere un coupon a una consegna in un flusso di lavoro.
 
@@ -136,7 +134,7 @@ Nell’esempio seguente, la consegna viene creata dalla home page. Per istruzion
 
 >[!NOTE]
 >
->Per istruzioni su come gestire i coupon insufficienti per una consegna, vedi [Gestione dei coupon insufficienti](#managing-insufficient-coupons)
+>Per istruzioni su come gestire i coupon insufficienti per una consegna, vedi [Gestire i coupon insufficienti](#managing-insufficient-coupons)
 
 Per confermare l’esito positivo della consegna:
 
@@ -153,7 +151,7 @@ Per confermare l’esito positivo della consegna:
 >
 >Scopri come utilizzare una tabella dei destinatari personalizzata [in questa pagina](../../configuration/using/about-custom-recipient-table.md).
 
-## Gestione dei coupon insufficienti {#managing-insufficient-coupons}
+## Gestire i coupon insufficienti {#managing-insufficient-coupons}
 
 L’analisi della consegna si interrompe se ci sono meno coupon dei messaggi. In questo caso, puoi importare più coupon o limitare il numero di messaggi. Per limitare il numero di messaggi, segui le istruzioni riportate di seguito.
 

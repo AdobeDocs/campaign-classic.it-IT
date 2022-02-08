@@ -2,22 +2,19 @@
 product: campaign
 title: Applicazione delle regole
 description: Applicazione delle regole
-audience: campaign
-content-type: reference
-topic-tags: campaign-optimization
 exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
-source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '978'
 ht-degree: 9%
 
 ---
 
-# Applicazione delle regole{#applying-rules}
+# Applicare le regole di tipologia{#applying-rules}
 
 ![](../../assets/common.svg)
 
-## Applicazione di una tipologia a una consegna {#applying-a-typology-to-a-delivery}
+## Applicare una tipologia a una consegna {#applying-a-typology-to-a-delivery}
 
 Per applicare le regole di tipologia create, devi associarle a una tipologia e quindi fare riferimento a questa tipologia nella consegna. Per eseguire questa operazione:
 
@@ -40,7 +37,7 @@ Per applicare le regole di tipologia create, devi associarle a una tipologia e q
    >
    >La tipologia può essere definita nel modello di consegna, da applicare automaticamente a tutte le consegne create utilizzando questo modello.
 
-## Definizione delle condizioni di applicazione {#defining-application-conditions}
+## Definire le condizioni dell&#39;applicazione {#defining-application-conditions}
 
 Puoi limitare il campo di applicazione di una regola in base alle tue esigenze (ad eccezione delle regole di controllo).
 
@@ -56,7 +53,7 @@ Quindi utilizza l’editor delle query per definire le condizioni di filtro. Nel
 >
 >Per filtrare le regole, puoi selezionare la condizione di applicazione dei criteri di filtro: possono dipendere dalla consegna o dal profilo di consegna. Per ulteriori informazioni, consulta [Condizionamento di una regola di filtro](filtering-rules.md#conditioning-a-filtering-rule).
 
-## Regolazione della frequenza di calcolo {#adjusting-calculation-frequency}
+## Regola frequenza di calcolo {#adjusting-calculation-frequency}
 
 Gli arbitrati vengono rieseguiti automaticamente ogni notte tramite il flusso di lavoro di pulizia del database. Tuttavia, i valori possono essere salvati oltre questo periodo.
 

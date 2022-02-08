@@ -2,14 +2,11 @@
 product: campaign
 title: Configurazione
 description: Configurazione
-audience: configuration
-content-type: reference
-topic-tags: navigation-hierarchy
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
 workflow-type: tm+mt
 source-wordcount: '1185'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -95,7 +92,7 @@ I comandi vengono visualizzati nello stesso ordine in cui sono dichiarati nel do
 
 Un separatore di comando consente di visualizzare una barra di separazione tra i comandi. È identificato dal **&#39;-&#39;** valore contenuto nell&#39;etichetta del comando.
 
-La presenza opzionale del **`<soapcall>`** Il tag con i relativi parametri di input definisce la chiamata di un metodo SOAP da eseguire. Per ulteriori informazioni sull’API SOAP, consulta [Documentazione JSAPI per Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
+La presenza opzionale del **`<soapcall>`** Il tag con i relativi parametri di input definisce la chiamata di un metodo SOAP da eseguire. Per ulteriori informazioni sull’API SOAP, consulta [Documentazione JSAPI per Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=it).
 
 Il contesto del modulo può essere aggiornato al momento dell&#39;inizializzazione da **`<enter>`** tag . Per ulteriori informazioni su questo tag, consulta la documentazione sui moduli di input.
 

@@ -2,11 +2,8 @@
 product: campaign
 title: Modelli di pubblicazione
 description: Modelli di pubblicazione
-audience: delivery
-content-type: reference
-topic-tags: content-management
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 0%
@@ -35,7 +32,7 @@ La chiave di identificazione di un foglio di stile è una stringa costituita dal
 >
 >In pratica, si consiglia di utilizzare la stessa chiave per lo schema, il modulo e il modello di pubblicazione.
 
-## Creazione e configurazione del modello {#creating-and-configuring-the-template}
+## Creare e configurare il modello {#creating-and-configuring-the-template}
 
 I modelli di pubblicazione sono memorizzati per impostazione predefinita in **[!UICONTROL Administration > Configuration > Publication templates]** nodo. Per creare un nuovo modello, fai clic sul pulsante **[!UICONTROL New]** , sopra l’elenco dei modelli.
 
@@ -87,7 +84,7 @@ Sono disponibili le seguenti opzioni di pubblicazione:
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sulla generazione dei contenuti, consulta [Creazione di un’istanza di contenuto](using-a-content-template.md#creating-a-content-instance).
+   >Per ulteriori informazioni sulla generazione dei contenuti, consulta [Creare un’istanza di contenuto](using-a-content-template.md#creating-a-content-instance).
 
 ### Consegna {#delivery}
 
@@ -97,7 +94,7 @@ Questa scheda ti consente di selezionare uno scenario per avviare una consegna d
 
 >[!NOTE]
 >
->Ad esempio, per creare una consegna basata su un contenuto, consulta [Distribuzione di un’istanza di contenuto](using-a-content-template.md#delivering-a-content-instance).
+>Ad esempio, per creare una consegna basata su un contenuto, consulta [Fornire un’istanza di contenuto](using-a-content-template.md#delivering-a-content-instance).
 
 ### Aggregatore {#aggregator}
 

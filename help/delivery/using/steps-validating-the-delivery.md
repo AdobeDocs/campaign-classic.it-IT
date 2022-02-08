@@ -1,15 +1,12 @@
 ---
 product: campaign
-title: Convalida della consegna
-description: Convalida della consegna
-audience: delivery
-content-type: reference
-topic-tags: about-deliveries-and-channels
+title: Convalidare la consegna
+description: Scopri come convalidare una consegna
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '1663'
-ht-degree: 5%
+source-wordcount: '1666'
+ht-degree: 4%
 
 ---
 
@@ -23,7 +20,7 @@ Per eseguire questa operazione:
 
 1. **Analizzare la consegna**: questo passaggio ti consente di preparare i messaggi da inviare. [Ulteriori informazioni](#analyzing-the-delivery).
 
-   Le regole applicate durante l&#39;analisi sono presentate in [questa sezione](#validation-process-with-typologies). Le modalità di convalida disponibili sono descritte in [Modifica della modalità di approvazione](#changing-the-approval-mode) sezione .
+   Le regole applicate durante l&#39;analisi sono presentate in [questa sezione](#validation-process-with-typologies). Le modalità di convalida disponibili sono descritte in [Modificare la modalità di approvazione](#changing-the-approval-mode) sezione .
 
 1. **Invia bozze**: questo passaggio ti consente di controllare contenuti, URL, personalizzazione, ecc. Ulteriori informazioni in [Invia una bozza](steps-validating-the-delivery.md#sending-a-proof) e [Definire un target di bozza specifico](steps-defining-the-target-population.md#defining-a-specific-proof-target).
 
@@ -135,7 +132,6 @@ Per rilevare eventuali errori nella configurazione dei messaggi, Adobe consiglia
 >
 >* Le modalità di convalida disponibili sono descritte in [Modificare la modalità di approvazione](steps-validating-the-delivery.md#changing-the-approval-mode).
 >* La configurazione della destinazione della bozza è spiegata in [Definire un target di bozza specifico](steps-defining-the-target-population.md#defining-a-specific-proof-target).
-
 >
 
 
