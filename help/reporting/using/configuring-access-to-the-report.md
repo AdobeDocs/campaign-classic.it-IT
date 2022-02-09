@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Configurazione dell’accesso al report
-description: Configurazione dell’accesso al report
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
+title: Configurare l’accesso al rapporto
+description: Configurare l’accesso al rapporto
 exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 1%
 
 ---
 
-# Configurazione dell’accesso al report{#configuring-access-to-the-report}
+# Configurare l’accesso al rapporto{#configuring-access-to-the-report}
 
 ![](../../assets/common.svg)
 
@@ -61,7 +58,7 @@ Il rapporto può anche essere condiviso con specifici operatori o gruppi di oper
 
 ![](assets/s_ncs_advuser_report_visibility_8.png)
 
-### Definizione delle opzioni di filtro {#defining-the-filtering-options}
+### Definire le opzioni di filtro {#defining-the-filtering-options}
 
 La **[!UICONTROL Reports]** visualizza tutti i report disponibili nella piattaforma e per i quali l’operatore connesso dispone di un diritto di accesso.
 
@@ -77,7 +74,7 @@ Per definire la categoria di un rapporto, selezionalo tramite il **[!UICONTROL D
 
 È possibile inserire una nuova categoria qui e aggiungerla all&#39;elenco delle categorie disponibili. L&#39;enumerazione corrispondente viene aggiornata automaticamente.
 
-## Creazione di un collegamento a un rapporto {#creating-a-link-to-a-report-}
+## Creare un collegamento a un rapporto {#creating-a-link-to-a-report-}
 
 È possibile rendere un rapporto accessibile tramite un nodo specifico della struttura, ad esempio un elenco, un destinatario, una consegna e così via. A questo scopo, crea semplicemente un collegamento al rapporto interessato e specifica l’entità in cui desideri renderlo disponibile.
 
@@ -123,7 +120,7 @@ Le impostazioni specifiche consentono di controllare gli errori. La **_uuid** si
 
 Per ulteriori informazioni su queste impostazioni, consulta **Definizione delle proprietà del modulo web** della sezione [Moduli web](../../web/using/about-web-forms.md) capitolo.
 
-## Pubblicazione del rapporto {#publishing-the-report}
+## Pubblicare il rapporto {#publishing-the-report}
 
 La pubblicazione del rapporto è obbligatoria per condividerlo con altri operatori e visualizzarlo nell’elenco dei rapporti disponibili (consulta anche [Contesto della visualizzazione del rapporto](#report-display-context)). Questa operazione deve essere eseguita nuovamente ogni volta che il rapporto viene modificato.
 

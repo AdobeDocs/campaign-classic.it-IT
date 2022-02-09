@@ -1,41 +1,38 @@
 ---
 product: campaign
-title: Utilizzo dei cubi per esplorare i dati
-description: Utilizzo dei cubi per esplorare i dati
-audience: reporting
-content-type: reference
-topic-tags: designing-reports-with-cubes
+title: Usare i cubi per esplorare i dati
+description: Usare i cubi per esplorare i dati
 exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 2%
 
 ---
 
-# Utilizzo dei cubi per esplorare i dati{#using-cubes-to-explore-data}
+# Usare i cubi per esplorare i dati{#using-cubes-to-explore-data}
 
 ![](../../assets/common.svg)
 
 Marketing Analytics semplifica la creazione di rapporti e l&#39;identificazione e la selezione dei dati dal database tramite cubi. Questo consente di:
 
-* Crea report basati su cubi. Il processo è descritto di seguito: [Esplorazione dei dati in un rapporto](#exploring-the-data-in-a-report).
-* Raccogliere i dati nel database e raggrupparli in elenchi, ad esempio per identificare e creare destinazioni e consegne. Per ulteriori informazioni, consulta [Creazione di una popolazione target](#building-a-target-population).
-* Inserire una tabella pivot in un report, fare riferimento a un cubo esistente al suo interno. Per ulteriori informazioni, consulta [Inserimento di una tabella pivot in un rapporto](#inserting-a-pivot-table-into-a-report).
+* Crea report basati su cubi. Il processo è descritto di seguito: [Esplorare i dati in un rapporto](#exploring-the-data-in-a-report).
+* Raccogliere i dati nel database e raggrupparli in elenchi, ad esempio per identificare e creare destinazioni e consegne. Per ulteriori informazioni, consulta [Creare una popolazione target](#building-a-target-population).
+* Inserire una tabella pivot in un report, fare riferimento a un cubo esistente al suo interno. Per ulteriori informazioni, consulta [Inserire una tabella pivot in un report](#inserting-a-pivot-table-into-a-report).
 
 >[!NOTE]
 >
 >Marketing Analytics è necessario per creare o modificare i cubi. Per ulteriori informazioni, consulta [Informazioni sui cubi](../../reporting/using/about-cubes.md).
 
-## Esplorazione dei dati in un rapporto {#exploring-the-data-in-a-report}
+## Esplorare i dati in un rapporto {#exploring-the-data-in-a-report}
 
-### Passaggio 1: creazione di un report basato su un cubo {#step-1---creating-a-report-based-on-a-cube}
+### Passaggio 1: creare un report basato su un cubo {#step-1---creating-a-report-based-on-a-cube}
 
 Per creare un rapporto basato su un cubo, fai clic sul pulsante **[!UICONTROL Create]** nel **[!UICONTROL Reports]** e selezionare il cubo che si desidera utilizzare.
 
-Il processo è descritto di seguito: [Creazione di un report basato su un cubo](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube).
+Il processo è descritto di seguito: [Creare un report basato su un cubo](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube).
 
-### Passaggio 2: selezione di linee e colonne {#step-2---selecting-lines-and-columns}
+### Passaggio 2: selezionare linee e colonne {#step-2---selecting-lines-and-columns}
 
 La visualizzazione predefinita mostra le prime due dimensioni del cubo (età e città, in questo caso).
 
@@ -54,7 +51,7 @@ La **[!UICONTROL Add]** i pulsanti su ciascun asse consentono di aggiungere dime
 
    I parametri dipendono dal tipo di dati della dimensione selezionata.
 
-   Ad esempio, per le date, possono essere disponibili diversi livelli. Per ulteriori informazioni, consulta [Visualizzazione delle misure](../../reporting/using/concepts-and-methodology.md#displaying-measures).
+   Ad esempio, per le date, possono essere disponibili diversi livelli. Per ulteriori informazioni, consulta [Misure di visualizzazione](../../reporting/using/concepts-and-methodology.md#displaying-measures).
 
    In questo caso sono offerte le seguenti opzioni:
 
@@ -74,7 +71,7 @@ La **[!UICONTROL Add]** i pulsanti su ciascun asse consentono di aggiungere dime
 
    ![](assets/s_advuser_cube_in_report_04c.png)
 
-### Passaggio 3: configurazione delle misure da visualizzare {#step-3---configuring-the-measures-to-display}
+### Passaggio 3: configurare le misure da visualizzare {#step-3---configuring-the-measures-to-display}
 
 Una volta posizionate le linee e le colonne, indicare le misure da visualizzare e la relativa modalità di visualizzazione.
 
@@ -96,7 +93,7 @@ Per impostazione predefinita viene visualizzata una sola misura. Per aggiungere 
 
    ![](assets/s_advuser_cube_in_report_config_02.png)
 
-   È quindi possibile scegliere se visualizzare o meno le etichette delle misure. Per ulteriori informazioni, consulta [Configurazione della visualizzazione](../../reporting/using/concepts-and-methodology.md#configuring-the-display).
+   È quindi possibile scegliere se visualizzare o meno le etichette delle misure. Per ulteriori informazioni, consulta [Configurare la visualizzazione](../../reporting/using/concepts-and-methodology.md#configuring-the-display).
 
 1. È possibile creare nuove misure utilizzando quelle esistenti. A questo scopo, fai clic su **[!UICONTROL Create a measure]** e configuralo.
 
@@ -120,7 +117,7 @@ Per impostazione predefinita viene visualizzata una sola misura. Per aggiungere 
 
    Quindi fai clic su **[!UICONTROL Edit the dynamic measure]** per accedere al menu impostazioni.
 
-## Creazione di una popolazione target {#building-a-target-population}
+## Creare una popolazione target {#building-a-target-population}
 
 La generazione di rapporti tramite cubi consente di raccogliere i dati dalla tabella e salvarli in un elenco.
 
@@ -156,7 +153,7 @@ Per raggruppare una popolazione in un elenco, effettua le seguenti operazioni:
 
    ![](assets/s_advuser_cube_in_report_config_02g.png)
 
-## Inserimento di una tabella pivot in un rapporto {#inserting-a-pivot-table-into-a-report}
+## Inserire una tabella pivot in un report {#inserting-a-pivot-table-into-a-report}
 
 Per creare una tabella ed esplorare i dati di un cubo, eseguire i seguenti passaggi:
 

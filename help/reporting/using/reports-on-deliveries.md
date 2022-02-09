@@ -2,14 +2,11 @@
 product: campaign
 title: Report sulle consegne
 description: Report sulle consegne
-audience: reporting
-content-type: reference
-topic-tags: accessing-built-in-reports
 exl-id: dcbf280c-3040-4218-a453-1497662fef2e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +24,6 @@ Sono disponibili i seguenti tipi di rapporto:
 
 Puoi accedere ai rapporti dalla home page della console client, dal dashboard dei rapporti o dall’elenco di consegna. La modalità di visualizzazione di un rapporto dipende dal relativo contesto. L’elenco dei report principali è disponibile nella home page e consente di accedere rapidamente ai dati di consegna. Questo elenco può essere modificato in base alle tue esigenze. Fai riferimento a [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md) per ulteriori informazioni.
 
-## Utilizzo dei rapporti {#using-reports}
 
 È disponibile un campo di ricerca tramite il dashboard dei rapporti per accedere rapidamente a uno dei rapporti presenti nell’elenco.
 

@@ -1,15 +1,12 @@
 ---
 product: campaign
-title: Concetti e metodologia
-description: Concetti e metodologia
-audience: reporting
-content-type: reference
-topic-tags: designing-reports-with-cubes
+title: Best practice per i cubi
+description: Best practice per i cubi
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +32,7 @@ Puoi creare i contenitori manualmente o collegarli a un’enumerazione esistente
 
 Adobe Campaign fornisce anche un assistente per il binning automatico: I valori possono essere suddivisi in gruppi N o raggruppati in base ai valori più frequenti nel database.
 
-### Definizione di ciascun contenitore {#defining-each-bin}
+### Definire ciascun contenitore {#defining-each-bin}
 
 Per creare ogni bin singolarmente, seleziona la **[!UICONTROL Define each bin]** e utilizza la tabella per creare i vari contenitori.
 
@@ -78,7 +75,7 @@ Per definire manualmente gli intervalli, fai clic sul pulsante **[!UICONTROL Add
 
 Quindi specifica i limiti inferiore e superiore e fai clic su **[!UICONTROL Ok]** per confermare.
 
-### Generazione automatica dei bins {#generating-bins-automatically}
+### Genera i bins automaticamente {#generating-bins-automatically}
 
 È anche possibile generare automaticamente i bins. A questo scopo, fai clic sul pulsante **[!UICONTROL Generate bins...]** link.
 
@@ -122,7 +119,7 @@ La **[!UICONTROL Domains]** L’enumerazione viene utilizzata per generare rappo
 
 Puoi creare altre enumerazioni riservate al binding e utilizzarle in altri Cubi: tutti i valori alias verranno raggruppati nei contenitori specificati nella prima scheda enumerazione.
 
-## Calcolo e utilizzo degli aggregati {#calculating-and-using-aggregates}
+## Calcolare e utilizzare gli aggregati {#calculating-and-using-aggregates}
 
 I maggiori volumi di dati possono essere calcolati in aggregati.
 
@@ -158,7 +155,7 @@ Per creare un nuovo aggregato, effettua le seguenti operazioni:
 
       ![](assets/s_advuser_cube_agregate_05.png)
 
-## Definizione delle misure {#defining-measures}
+## Definire le misure {#defining-measures}
 
 I tipi di misure sono definiti nella **[!UICONTROL Measures]** scheda del cubo. Puoi calcolare somme, medie, deviazioni, ecc.
 
@@ -182,13 +179,13 @@ Per definire una nuova misura, effettua le seguenti operazioni:
 
 1. Inserisci l’etichetta della misura e aggiungi una descrizione, quindi fai clic su **[!UICONTROL Finish]** per crearlo.
 
-## Visualizzazione delle misure {#displaying-measures}
+## Misure di visualizzazione {#displaying-measures}
 
 Puoi configurare la visualizzazione delle misure nella tabella in base alle tue esigenze:
 
 * la sequenza di visualizzazione delle misure (fare riferimento a [Sequenza di visualizzazione](#display-sequence)),
-* le informazioni da mostrare o nascondere nel rapporto (consulta [Configurazione della visualizzazione](#configuring-the-display))
-* quali misure sono indicate: percentuale, totale, numero di decimali, ecc. (fare riferimento a [Modifica del tipo di misura visualizzato](#changing-the-type-of-measure-displayed)).
+* le informazioni da mostrare o nascondere nel rapporto (consulta [Configurare la visualizzazione](#configuring-the-display))
+* quali misure sono indicate: percentuale, totale, numero di decimali, ecc. (fare riferimento a [Modificare il tipo di misura visualizzato](#changing-the-type-of-measure-displayed)).
 
 ### Sequenza di visualizzazione {#display-sequence}
 
@@ -198,7 +195,7 @@ Spostare le linee per modificare la sequenza di visualizzazione. Nell’esempio 
 
 ![](assets/s_advuser_cube_in_report_config_04.png)
 
-### Configurazione della visualizzazione {#configuring-the-display}
+### Configurare la visualizzazione {#configuring-the-display}
 
 La configurazione delle misure, delle linee e delle colonne può essere effettuata singolarmente per ogni misura o complessivamente. Un’icona specifica consente di accedere alla finestra di selezione della modalità di visualizzazione.
 
@@ -212,13 +209,13 @@ Le opzioni colore consentono di evidenziare valori importanti per una facile let
 
 ![](assets/s_advuser_cube_in_report_config_06.png)
 
-### Modifica del tipo di misura visualizzato {#changing-the-type-of-measure-displayed}
+### Modificare il tipo di misura visualizzato {#changing-the-type-of-measure-displayed}
 
 All’interno di ogni misura, è possibile definire l’unità e la formattazione da applicare.
 
 ![](assets/s_advuser_cube_in_report_config_07.png)
 
-## Condivisione di un rapporto {#sharing-a-report}
+## Condividere il rapporto {#sharing-a-report}
 
 Una volta configurato il rapporto, puoi salvarlo e condividerlo con altri operatori.
 
@@ -232,7 +229,7 @@ Per confermare queste modifiche, è necessario salvare il rapporto.
 
 ![](assets/cube_share_confirm.png)
 
-## Creazione di filtri {#creating-filters}
+## Creare i filtri {#creating-filters}
 
 È possibile creare filtri per la visualizzazione di una sezione dei dati.
 

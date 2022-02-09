@@ -2,11 +2,8 @@
 product: campaign
 title: Creazione di un nuovo report
 description: Scopri i passaggi chiave per creare un nuovo rapporto
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
 exl-id: 4c2aad47-0e2d-4d0b-8898-b437f4a05e11
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 1%
@@ -39,7 +36,7 @@ Per creare un rapporto, effettua le seguenti operazioni:
 
 1. Salva il rapporto.
 
-## Modellazione del grafico {#modelizing-the-chart}
+## Modellare il grafico {#modelizing-the-chart}
 
 Dopo aver salvato il rapporto, questo verrà visualizzato. Ora puoi creare il grafico del rapporto.
 
@@ -61,7 +58,7 @@ Per creare un rapporto, a seconda della sua natura e del suo contesto, devi iden
 
 1. Aggiungi uno o più **[!UICONTROL Query]** attività per raccogliere dati utili per la creazione del rapporto. I dati possono essere raccolti direttamente tramite una query su uno schema del database o tramite un elenco importato o un cubo esistente.
 
-   Per ulteriori informazioni, consulta [Raccolta di dati da analizzare](../../reporting/using/collecting-data-to-analyze.md).
+   Per ulteriori informazioni, consulta [Raccogliere dati da analizzare](../../reporting/using/collecting-data-to-analyze.md).
 
    Questi dati verranno visualizzati (o meno) nel rapporto a seconda della configurazione della pagina.
 
@@ -89,9 +86,9 @@ Tuttavia, è possibile posizionare diversi rami. Verrà eseguito solo uno di que
 
 ![](assets/reporting_graph_sample_ok.png)
 
-## Creazione di una pagina {#creating-a-page}
+## Creare una pagina {#creating-a-page}
 
-Il contenuto viene configurato tramite le attività inserite nel grafico. Per ulteriori informazioni, consulta [Modellazione del grafico](#modelizing-the-chart).
+Il contenuto viene configurato tramite le attività inserite nel grafico. Per ulteriori informazioni, consulta [Modellare il grafico](#modelizing-the-chart).
 
 Per configurare un’attività, fai doppio clic sulla relativa icona.
 
@@ -109,7 +106,7 @@ Puoi anche fare clic con il pulsante destro del mouse sul nodo in cui desideri a
 
 >[!CAUTION]
 >
->Se il rapporto è destinato all’esportazione in formato Excel, si consiglia di non utilizzare la formattazione complessa di HTML. Per ulteriori informazioni, consulta [Esportazione di un report](../../reporting/using/actions-on-reports.md#exporting-a-report).
+>Se il rapporto è destinato all’esportazione in formato Excel, si consiglia di non utilizzare la formattazione complessa di HTML. Per ulteriori informazioni, consulta [Esportare un rapporto](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
 A **[!UICONTROL Page]** possono includere i seguenti elementi:
 

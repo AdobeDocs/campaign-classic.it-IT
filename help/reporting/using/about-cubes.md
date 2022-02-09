@@ -1,15 +1,13 @@
 ---
 product: campaign
-title: Informazioni sui cubi
-description: Informazioni sui cubi
-audience: reporting
-content-type: reference
-topic-tags: designing-reports-with-cubes
+title: Introduzione ai cubi
+description: Introduzione ai cubi
+feature: Reporting
 exl-id: ade4c857-9233-4bc8-9ba1-2fec84b7c3e6
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 10%
+source-wordcount: '728'
+ht-degree: 11%
 
 ---
 
@@ -29,57 +27,41 @@ Una volta creati e configurati, i cubi vengono utilizzati nelle caselle di query
 >
 >**Analisi di marketing** è un modulo Adobe Campaign. Deve essere installato nell’istanza in modo da poter utilizzare le funzionalità descritte di seguito.
 
-Con il modulo Marketing Analytics, Campaign ti consente di:
+Utilizza il modulo Campaign Marketing Analytics per:
 
-1. Crea cubi in vista di:
+1. Creazione di cubi
 
-   * aggregare i dati e memorizzarli in una tabella di lavoro per precalcolare gli indicatori in base alle esigenze degli utenti,
+   * aggregare e memorizzare i dati in una tabella di lavoro per precalcolare gli indicatori in base alle esigenze degli utenti,
    * ridurre il volume dei dati coinvolti nei vari calcoli utilizzati per i rapporti e le query, ottimizzando in modo significativo i tempi di calcolo degli indicatori,
-   * semplificare l’accesso ai dati, consentendo agli utenti di manipolare i dati (preaggregati o meno) a seconda delle varie dimensioni.
+   * semplifica l’accesso ai dati, consente agli utenti di manipolare i dati (preaggregati o meno) a seconda delle varie dimensioni.
 
-   Per ulteriori informazioni, consulta [Creazione di indicatori](../../reporting/using/creating-indicators.md).
+   Per ulteriori informazioni, consulta [Creare indicatori](../../reporting/using/creating-indicators.md).
 
-1. Creare tabelle pivot in vista di:
+1. Creare tabelle pivot
 
-   * esplorazione dei dati calcolati, misure configurate,
-   * selezionando i dati da visualizzare e la relativa modalità di visualizzazione,
-   * personalizzazione delle misure e degli indicatori utilizzati,
-   * che offre strumenti di analisi interattivi agli utenti con background non tecnico.
+   * esplorare dati calcolati, misure configurate,
+   * selezionare i dati da visualizzare e la relativa modalità di visualizzazione,
+   * personalizzare le misure e gli indicatori utilizzati,
+   * offrono strumenti di analisi interattivi agli utenti con background non tecnico.
 
-   Per ulteriori informazioni, consulta [Utilizzo dei cubi per esplorare i dati](../../reporting/using/using-cubes-to-explore-data.md).
+   Per ulteriori informazioni, consulta [Utilizzare i cubi per esplorare i dati](../../reporting/using/using-cubes-to-explore-data.md).
 
 1. Crea una query utilizzando dati calcolati e aggregati in un cubo.
 1. Identificare le popolazioni e farvi riferimento negli elenchi.
 
 ## Terminologia {#terminology}
 
-Quando si utilizzano i cubi, è necessario conoscere i seguenti concetti:
+Di seguito sono elencati i termini specifici quando si lavora con i cubi.
 
-* Cubo
+* **Cubo** - Un cubo è una rappresentazione di informazioni multidimensionali: fornisce agli utenti finali strutture progettate per l’analisi interattiva dei dati.
 
-   Un cubo è una rappresentazione di informazioni multidimensionali: fornisce agli utenti finali strutture progettate per l’analisi interattiva dei dati.
+* **Tabella/schema dei fatti** - La tabella dei fatti (o schema dei fatti) contiene i dati grezzi o elementari su cui verranno basate le analisi. Si tratta principalmente di grandi tabelle di volumi (eventualmente con tabelle collegate) con calcoli potenzialmente lunghi. Ad esempio, una tabella dei fatti può essere: la tabella del registro di trasmissione, la tabella degli acquisti, ecc.
 
-* Tabella/schema dei fatti
+* **Dimension** - I Dimension ti consentono di segmentare i dati in gruppi: una volta create, le quote fungono da assi di analisi. Nella maggior parte dei casi, per una data dimensione, verranno definiti diversi livelli. Ad esempio, per una dimensione temporale, i livelli saranno mesi, giorni, ore, minuti, ecc. Questo insieme di livelli rappresenta la gerarchia delle dimensioni e consente diversi livelli di analisi dei dati.
 
-   La tabella dei fatti (o schema dei fatti) contiene i dati grezzi o elementari su cui verranno basate le analisi. Si tratta principalmente di grandi tabelle di volumi (eventualmente con tabelle collegate) con calcoli potenzialmente lunghi.
+* **Binning** - Per alcuni campi è possibile definire il binding ai valori dei gruppi e semplificare la lettura delle informazioni. Il binding viene applicato ai livelli. È consigliabile definire il binding quando è presente una possibilità di valori diversi.
 
-   Ad esempio, una tabella dei fatti può essere: la tabella del registro di trasmissione, la tabella degli acquisti, ecc.
-
-* Dimension
-
-   I Dimension ti consentono di segmentare i dati in gruppi: una volta create, le quote fungono da assi di analisi. Nella maggior parte dei casi, per una data dimensione, verranno definiti diversi livelli. Ad esempio, per una dimensione temporale, i livelli saranno mesi, giorni, ore, minuti, ecc. Questo insieme di livelli rappresenta la gerarchia delle dimensioni e consente diversi livelli di analisi dei dati.
-
-* Binning
-
-   Per alcuni campi è possibile definire il binding ai valori dei gruppi e semplificare la lettura delle informazioni. Il binning viene applicato ai livelli
-
-   È consigliabile definire il binding quando è presente una possibilità di valori diversi.
-
-* Misura
-
-   Le misure più frequenti sono la somma, la media, il massimo, il minimo, la deviazione standard, ecc.
-
-   Le misure possono essere calcolate: ad esempio, il tasso di accettazione di un&#39;offerta è il rapporto tra il numero di volte in cui è stata presentata rispetto al numero di volte in cui è stata accettata.
+* **Misura** - Le misure più frequenti sono la somma, la media, il massimo, il minimo, la deviazione standard, ecc. Le misure possono essere calcolate: ad esempio, il tasso di accettazione di un&#39;offerta è il rapporto tra il numero di volte in cui è stata presentata rispetto al numero di volte in cui è stata accettata.
 
 ## Area di lavoro dei cubi {#cube-workspace}
 
@@ -109,4 +91,4 @@ I principali contesti d&#39;uso per i cubi sono i seguenti:
 
    ![](assets/s_advuser_cube_in_report.png)
 
-   Per ulteriori informazioni, consulta [Esplorazione dei dati in un rapporto](../../reporting/using/using-cubes-to-explore-data.md#exploring-the-data-in-a-report).
+   Per ulteriori informazioni, consulta [Esplorare i dati in un rapporto](../../reporting/using/using-cubes-to-explore-data.md#exploring-the-data-in-a-report).

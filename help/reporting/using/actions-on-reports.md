@@ -2,14 +2,11 @@
 product: campaign
 title: Azioni sui rapporti
 description: Azioni sui rapporti
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +22,7 @@ La barra degli strumenti consente, ad esempio, di esportare, stampare, archiviar
 
 ![](assets/s_ncs_advuser_report_wizard_04.png)
 
-## Esportazione di un report {#exporting-a-report}
+## Esportare un rapporto {#exporting-a-report}
 
 Seleziona il formato in cui esportare il rapporto dall’elenco a discesa. (.xls, .pdf o .ods).
 
@@ -41,7 +38,7 @@ Modificare le impostazioni di **[!UICONTROL Paper]** e **[!UICONTROL Margins]** 
 
 ![](assets/s_ncs_advuser_report_wizard_021.png)
 
-### Esportazione in Microsoft Excel {#exporting-into-microsoft-excel}
+### Esportare in Microsoft Excel {#exporting-into-microsoft-excel}
 
 Per **[!UICONTROL List with group]** tipi di rapporti destinati all’esportazione in Excel, si applicano le seguenti raccomandazioni e limitazioni:
 
@@ -56,7 +53,7 @@ Per **[!UICONTROL List with group]** tipi di rapporti destinati all’esportazio
 * I rapporti non devono utilizzare una formattazione specifica definita a livello di cella. È preferibile utilizzare **[!UICONTROL Form rendering]** definire il formato delle celle della tabella. La **[!UICONTROL Form rendering]** accessibile tramite **[!UICONTROL Administration > Configuration > Form rendering]**.
 * Non è consigliabile inserire contenuto HTML.
 * Se un report contiene diverse tabelle, grafici e così via. gli elementi di tipo , saranno esportati uno sotto l’altro.
-* È possibile forzare il ritorno a capo nelle celle: questa configurazione verrà mantenuta in Excel. Per ulteriori informazioni, consulta questo [Definizione del formato delle celle](../../reporting/using/creating-a-table.md#defining-cell-format).
+* È possibile forzare il ritorno a capo nelle celle: questa configurazione verrà mantenuta in Excel. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../reporting/using/creating-a-table.md#defining-cell-format).
 
 ### Posticipare l&#39;esportazione {#postpone-the-export}
 
@@ -84,7 +81,7 @@ Per saperne di più sulle **serverConf.xml** , fare riferimento a [questa sezion
 
 Per saperne di più sulle **nlserver** , fai riferimento a [questa sezione](../../production/using/administration.md).
 
-## Stampa di un report {#printing-a-report}
+## Stampa di un rapporto {#printing-a-report}
 
 È possibile stampare il rapporto: a questo scopo, fai clic sull’icona della stampante: viene visualizzata la finestra di dialogo.
 
@@ -92,7 +89,7 @@ Per ottenere un risultato migliore, modificare le opzioni di stampa di Internet 
 
 ![](assets/s_ncs_advuser_report_print_options.png)
 
-## Creazione di archivi dei rapporti {#creating-report-archives}
+## Creare archivi dei rapporti {#creating-report-archives}
 
 L’archiviazione di un rapporto consente di creare una visualizzazione del rapporto in diversi periodi, ad esempio per mostrare le statistiche per un determinato periodo di tempo.
 

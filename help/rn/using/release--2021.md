@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
-source-git-commit: 1e2c20befebf2343cb0f781aa7f2bd1ed6b3f383
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '2540'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -215,7 +215,7 @@ Ulteriori informazioni sono disponibili nella pagina [Funzioni obsolete e rimoss
 * È stato risolto un problema che si verificava durante l’utilizzo di applicazioni web a causa del quale i tag di tracciamento generavano chiavi primarie non corrette nello schema **nms:trackingURL**. (NEO-27931)
 * La compatibilità con ODBC 3.x è stata migliorata per garantire la precisione dei messaggi di errore.
 * È stato risolto un problema che poteva causare arresti anomali della console in caso di utilizzo di modelli di contenuto personalizzati nelle consegne e-mail. (NEO-31547)
-* È stato risolto un problema che impediva a Tomcat di inviare risposte valide a causa di una connessione lenta o di dimensioni di risposta elevate.
+* È stato risolto un problema che impediva a Tomcat di inviare risposte valide a causa di una connessione lenta o di dimensioni di risposta elevate. (NEO-30858)
 * È stato risolto un problema che poteva verificarsi durante la lettura di UUID da un database PostgreSQL.
 * È stato risolto un problema che poteva causare problemi di prestazioni durante la ricerca di dati di proposta collegati alle offerte. (NEO-27554)
 * È stato risolto un problema che causava la mancata risposta del processo web quando il servizio IMS veniva attivato ma non rispondeva.
@@ -277,7 +277,7 @@ Per partecipare alla versione beta privata, compila questo [modulo](https://form
 * È stato risolto un problema che causava la modifica di alcuni caratteri nel codice sorgente alla riapertura di un’applicazione web creata e salvata in precedenza. (NEO-27597)
 * È stato risolto un problema che poteva verificarsi durante l’aggiornamento a una build contenente il nuovo meccanismo di firma per il tracciamento dei collegamenti (da Build 19.1.4 e Campaign 20.2): se a un evento erano associati più modelli, l’aggiornamento poteva causare la selezione del modello errato durante l’invio del messaggio transazionale. (NEO-28326)
 * È stato risolto un problema che causava la mancata risposta dell’MTA e l’impossibilità di elaborare le consegne, a meno che non venisse riavviato. (NEO-27455)
-* È stato risolto un problema nel database MSSQL relativo alla gestione della marca temporale durante le operazioni di caricamento in massa per una colonna del tipo datetime.
+* È stato risolto un problema nel database MSSQL relativo alla gestione del fuso orario durante le operazioni di caricamento in serie per una colonna di tipo datetime. (NEO-27375)
 * È stato corretto un problema di query del flusso di lavoro che si verificava con l’utilizzo delle funzioni xtk Redshift. SubDays, SubSeconds, SubMinutes e SubHours accettano ora entrambi i tipi di marca temporale Redshift (NEO-24962).
 * È stato risolto un problema che causava la visualizzazione di un messaggio di errore script durante il tentativo di visualizzare in anteprima un rapporto con accesso anonimo. (NEO-27081)
 * È stato risolto un problema che poteva ridurre l’utilizzo di memoria sul server durante l’analisi della consegna.

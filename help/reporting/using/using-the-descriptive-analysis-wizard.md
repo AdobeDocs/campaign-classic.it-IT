@@ -1,25 +1,22 @@
 ---
 product: campaign
-title: Utilizzo della procedura guidata di analisi descrittiva
-description: Utilizzo della procedura guidata di analisi descrittiva
-audience: reporting
-content-type: reference
-topic-tags: analyzing-populations
+title: Usare la procedura guidata di analisi descrittiva
+description: Usare la procedura guidata di analisi descrittiva
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '1558'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Utilizzo della procedura guidata di analisi descrittiva{#using-the-descriptive-analysis-wizard}
+# Usare la procedura guidata di analisi descrittiva{#using-the-descriptive-analysis-wizard}
 
 ![](../../assets/common.svg)
 
 Per creare un rapporto di analisi descrittivo, utilizza la procedura guidata dedicata. La configurazione dipende dai dati da analizzare e dal rendering desiderato.
 
-## Analisi dei dati nel database {#analyzing-data-in-the-database}
+## Analizzare i dati nel database {#analyzing-data-in-the-database}
 
 La procedura guidata di analisi descrittiva può essere avviata tramite la **[!UICONTROL Tools > Descriptive analysis]** menu: in questo caso, l&#39;analisi riguarda i destinatari per impostazione predefinita (**nms:recipient**). Si applica a tutti i dati del database Adobe Campaign.
 
@@ -35,7 +32,7 @@ Se desideri produrre statistiche su parte dei dati, puoi definire un filtro: a q
 
 L&#39;analisi riguarderà soltanto i destinatari di database di 16 anni e più che residenti a Londra.
 
-## Analisi di un insieme di dati {#analyzing-a-set-of-data}
+## Analizzare un insieme di dati {#analyzing-a-set-of-data}
 
 Puoi utilizzare la procedura guidata di analisi descrittiva tramite un contesto diverso: un elenco, una transizione di flusso di lavoro, una o più consegne, una selezione di destinatari, ecc.
 
@@ -51,19 +48,19 @@ Apri la procedura guidata di analisi descrittiva selezionando gli elementi e fac
 
    Per un esempio di analisi descrittiva dei destinatari, consulta: [Analisi qualitativa dei dati](../../reporting/using/use-cases.md#qualitative-data-analysis).
 
-* Nel contesto di un **workflow**, posiziona il cursore su una transizione che punta verso la tabella dei destinatari, fai clic con il pulsante destro del mouse e seleziona **[!UICONTROL Analyze target]**. Per ulteriori informazioni, consulta l’esempio in [Analisi di una destinazione di transizione in un flusso di lavoro](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow).
+* Nel contesto di un **workflow**, posiziona il cursore su una transizione che punta verso la tabella dei destinatari, fai clic con il pulsante destro del mouse e seleziona **[!UICONTROL Analyze target]**. Per ulteriori informazioni, consulta l’esempio in [Analizzare una destinazione di transizione in un flusso di lavoro](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow).
 * Per **elenchi**, seleziona uno o più elenchi e applica la stessa procedura utilizzata per i destinatari.
 * Nel contesto di un **consegna**, seleziona le consegne di cui desideri analizzare il target, fai clic con il pulsante destro del mouse e seleziona **[!UICONTROL Actions > Explore the target]**, come illustrato di seguito:
 
    ![](assets/reporting_descriptive_from_deliveries.png)
 
-   Ecco alcuni esempi di analisi descrittive delle consegne: [Analisi di una popolazione](../../reporting/using/use-cases.md#analyzing-a-population) e qui: [Analisi dei registri di tracciamento dei destinatari](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
+   Ecco alcuni esempi di analisi descrittive delle consegne: [Analizzare una popolazione](../../reporting/using/use-cases.md#analyzing-a-population) e qui: [Analizzare i registri di tracciamento dei destinatari](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
 
-## Configurazione del modello di distribuzione qualitativa {#configuring-the-qualitative-distribution-template}
+## Configurare il modello di distribuzione qualitativa {#configuring-the-qualitative-distribution-template}
 
 La **[!UICONTROL Qualitative distribution]** template ti consente di creare statistiche su tutti i tipi di dati (ad esempio nome società, dominio e-mail).
 
-Opzioni di configurazione disponibili per un rapporto creato tramite **[!UICONTROL Qualitative distribution]** i modelli sono descritti in [Visualizzazione dei dati nella tabella](#displaying-data-in-the-table). Un esempio completo è descritto in [Analisi di una popolazione](../../reporting/using/use-cases.md#analyzing-a-population).
+Opzioni di configurazione disponibili per un rapporto creato tramite **[!UICONTROL Qualitative distribution]** i modelli sono descritti in [Visualizzazione dei dati nella tabella](#displaying-data-in-the-table). Un esempio completo è descritto in [Analizzare una popolazione](../../reporting/using/use-cases.md#analyzing-a-population).
 
 Quando si utilizza la procedura guidata di analisi descrittiva per analizzare i dati, le opzioni disponibili dipendono dalle impostazioni selezionate. Questi sono descritti di seguito.
 
@@ -182,7 +179,7 @@ Sono possibili le seguenti operazioni:
 
       ![](assets/report_compute_data_sample4.png)
 
-### Visualizzazione del rapporto {#displaying-the-report}
+### Visualizza il rapporto {#displaying-the-report}
 
 L’ultimo passaggio della procedura guidata consente di visualizzare il rapporto, ovvero la tabella o il grafico configurato.
 
@@ -198,7 +195,7 @@ Quando il rapporto include un grafico, le etichette della legenda consentono di 
 
 ![](assets/report_display_data_in_graph.png)
 
-## Configurazione del modello di distribuzione quantitativa {#configuring-the-quantitative-distribution-template}
+## Configurare il modello di distribuzione quantitativa {#configuring-the-quantitative-distribution-template}
 
 Per generare autonomamente un’analisi descrittiva, seleziona la **Nuova analisi descrittiva da un modello** se non è impostata per impostazione predefinita.
 
@@ -234,4 +231,4 @@ Sono possibili le seguenti operazioni:
 
    ![](assets/reporting_descriptive_view_report.png)
 
-   Per apportare modifiche al rapporto, consulta [Elaborazione di un report](../../reporting/using/processing-a-report.md).
+   Per apportare modifiche al rapporto, consulta [Elaborare un rapporto](../../reporting/using/processing-a-report.md).

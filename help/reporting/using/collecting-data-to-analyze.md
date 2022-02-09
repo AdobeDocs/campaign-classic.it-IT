@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Raccolta di dati da analizzare
-description: Raccolta di dati da analizzare
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
+title: Raccogliere dati da analizzare
+description: Raccogliere dati da analizzare
 exl-id: cf621374-88f9-4def-8bea-87e0ea69ecd3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Raccolta di dati da analizzare{#collecting-data-to-analyze}
+# Raccogliere dati da analizzare{#collecting-data-to-analyze}
 
 ![](../../assets/common.svg)
 
@@ -33,7 +30,7 @@ In tutti i casi, i dati vengono raccolti tramite un **[!UICONTROL Query]** digit
 
 Questa modalità di selezione dei dati è pertinente quando i dati nel rapporto devono essere raccolti o generati utilizzando i dati presenti nel database. In alcuni casi, puoi anche selezionare i dati direttamente dagli elementi utilizzati nel rapporto. Ad esempio, quando si inserisce un grafico, è possibile selezionare direttamente i dati di origine. Per ulteriori informazioni, consulta [Utilizzo del contesto](../../reporting/using/using-the-context.md).
 
-## Utilizzo dei dati di uno schema {#using-the-data-from-a-schema}
+## Utilizzare i dati di uno schema {#using-the-data-from-a-schema}
 
 Per utilizzare i dati collegati a uno schema di database, selezionare l’opzione appropriata nell’editor delle query e configurare la query da applicare.
 
@@ -41,7 +38,7 @@ L’esempio seguente ti consente di raccogliere il numero di destinatari per cia
 
 ![](assets/reporting_query_from_schema.png)
 
-## Utilizzo di un elenco importato {#using-an-imported-list}
+## Utilizzare un elenco importato {#using-an-imported-list}
 
 Per creare un rapporto, è possibile utilizzare i dati di un elenco di dati importati.
 
@@ -51,7 +48,7 @@ A questo scopo, seleziona la **[!UICONTROL Use an imported list]** nella casella
 
 Fai clic sul pulsante **[!UICONTROL Edit query...]** collegamento per definire i dati da raccogliere tra gli elementi di questo elenco per la creazione del rapporto.
 
-## Utilizzo di un cubo {#using-a-cube}
+## Usa un cubo {#using-a-cube}
 
 È possibile selezionare un cubo per la definizione della query.
 
@@ -75,7 +72,7 @@ La **[!UICONTROL Filter with the folder]** consente di specificare una cartella 
 
 ![](assets/reporting_control_folder.png)
 
-### Limitazione della quantità di dati raccolti {#limiting-the-amount-of-data-collected}
+### Limitare la quantità di dati raccolti {#limiting-the-amount-of-data-collected}
 
 Configura il numero di record da estrarre tramite la query utilizzando le opzioni di limitazione dei risultati:
 

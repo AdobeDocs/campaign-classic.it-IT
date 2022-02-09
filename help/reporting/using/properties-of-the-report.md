@@ -2,14 +2,11 @@
 product: campaign
 title: Proprietà del rapporto
 description: Ulteriori informazioni sulle impostazioni delle proprietà del report
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
-source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +34,7 @@ In **[!UICONTROL General]** scheda delle proprietà del rapporto, puoi modificar
 
 * La **Controllo dell&#39;accesso** Parametri. Queste impostazioni sono descritte di seguito.
 
-## Controllo dell’accesso al report {#report-accessibility}
+## Controllare l’accesso al report {#report-accessibility}
 
 Un rapporto è accessibile dalla console Adobe Campaign o da un browser web. In questo caso, può essere necessario configurare il controllo di accesso al report come mostrato di seguito.
 
@@ -52,7 +49,7 @@ Le opzioni possibili sono:
 * **[!UICONTROL Access control]**: questa opzione consente agli operatori Adobe Campaign di accedervi una volta connessi.
 * **[!UICONTROL Specific account]**: questa opzione ti consente di eseguire il rapporto con i diritti dell’operatore selezionato in **[!UICONTROL Operator]** campo .
 
-## Gestione della localizzazione dei report {#managing-report-localization}
+## Tradurre il rapporto {#report-localization}
 
 Puoi configurare le lingue in cui desideri tradurre il rapporto. A questo scopo, fai clic sul pulsante **[!UICONTROL Localization]** scheda .
 
@@ -66,7 +63,7 @@ Il linguaggio di modifica è la lingua in cui si scrive. Quando aggiungi una lin
 >
 >Per ulteriori informazioni sulla localizzazione delle pagine web in Campaign, consulta [questa sezione](../../web/using/translating-a-web-form.md).
 
-## Personalizzazione del rendering di HTML {#personalizing-html-rendering}
+## Personalizzare il rendering di HTML {#personalizing-html-rendering}
 
 In **[!UICONTROL Rendering]** è possibile personalizzare la modalità di visualizzazione dei dati per la pagina. Puoi selezionare:
 

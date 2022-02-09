@@ -1,27 +1,24 @@
 ---
 product: campaign
-title: Utilizzo del contesto
-description: Utilizzo del contesto
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
+title: Utilizzare il contesto nei rapporti
+description: Scopri come utilizzare il contesto nei rapporti
 exl-id: a19e2843-d3f9-48c3-af72-cc1bc54f6360
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Utilizzo del contesto{#using-the-context}
+# Utilizzare il contesto nei rapporti{#using-the-context}
 
 ![](../../assets/common.svg)
 
-Quando desideri rappresentare i dati sotto forma di **[!UICONTROL tables]** o **[!UICONTROL charts]**, può essere prelevato da due fonti: una nuova query (fare riferimento a [Definizione di un filtro diretto per i dati](#defining-a-direct-filter-on-data)) o il contesto del rapporto (consulta [Utilizzo dei dati contestuali](#using-context-data)).
+Quando desideri rappresentare i dati sotto forma di **[!UICONTROL tables]** o **[!UICONTROL charts]**, può essere prelevato da due fonti: una nuova query (fare riferimento a [Definire un filtro diretto per i dati](#defining-a-direct-filter-on-data)) o il contesto del rapporto (consulta [Utilizzare i dati contestuali](#using-context-data)).
 
-## Definizione di un filtro diretto per i dati {#defining-a-direct-filter-on-data}
+## Definire un filtro diretto per i dati {#defining-a-direct-filter-on-data}
 
-### Filtrare dati {#filtering-data}
+### Filtrare i dati {#filtering-data}
 
 Utilizzo di un **[!UICONTROL Query]** l’attività di tipo non è obbligatoria quando si crea un rapporto. I dati possono essere filtrati direttamente nelle tabelle e nei grafici che compongono il rapporto.
 
@@ -64,7 +61,7 @@ Nel rapporto verranno visualizzati solo i destinatari che soddisfano i criteri d
 
 ![](assets/s_ncs_advuser_report_display_04.png)
 
-## Utilizzo dei dati contestuali {#using-context-data}
+## Utilizzare i dati contestuali {#using-context-data}
 
 Per rappresentare i dati sotto forma di **[!UICONTROL table]** o **[!UICONTROL chart]**, i dati possono provenire dal contesto del rapporto.
 
@@ -72,7 +69,7 @@ Nella pagina contenente la tabella o il grafico, la **[!UICONTROL Data]** consen
 
 ![](assets/s_ncs_advuser_report_datasource_3.png)
 
-* La **[!UICONTROL New query]** consente di creare una query per la raccolta dei dati. Per ulteriori informazioni, consulta [Definizione di un filtro diretto per i dati](#defining-a-direct-filter-on-data).
+* La **[!UICONTROL New query]** consente di creare una query per la raccolta dei dati. Per ulteriori informazioni, consulta [Definire un filtro diretto per i dati](#defining-a-direct-filter-on-data).
 * La **[!UICONTROL Context data]** consente di utilizzare i dati di input: il contesto del rapporto coincide con le informazioni contenute nella transizione in entrata della pagina che contiene il grafico o la tabella. Questo contesto può, ad esempio, contenere dati raccolti tramite un **[!UICONTROL Query]** attività posizionata prima della **[!UICONTROL Page]** attività e per la quale devi specificare la tabella e i campi interessati dal rapporto.
 
 Ad esempio, in una casella di query, genera la seguente query per i destinatari:

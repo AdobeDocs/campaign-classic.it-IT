@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Creazione di indicatori
-description: Creazione di indicatori
-audience: reporting
-content-type: reference
-topic-tags: designing-reports-with-cubes
+title: Creare indicatori
+description: Creare indicatori
 exl-id: e4806bb8-de9d-47e4-8b37-d6c0565b7f5a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Creazione di indicatori{#creating-indicators}
+# Creare indicatori{#creating-indicators}
 
 ![](../../assets/common.svg)
 
@@ -21,16 +18,16 @@ Per rendere funzionale un cubo, è necessario identificare le dimensioni e le mi
 
 Per creare un cubo, esegui i seguenti passaggi:
 
-1. Selezionare la tabella di lavoro. Fai riferimento a [Selezione della tabella di lavoro](#selecting-the-work-table).
-1. Definisci le dimensioni. Fai riferimento a [Definizione delle dimensioni](#defining-dimensions).
-1. Definisci le misure. Fai riferimento a [Indicatori di costruzione](#building-indicators).
-1. Creare aggregati (facoltativo). Fai riferimento a [Calcolo e utilizzo degli aggregati](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates).
+1. Selezionare la tabella di lavoro. Fai riferimento a [Selezionare la tabella di lavoro](#selecting-the-work-table).
+1. Definisci le dimensioni. Fai riferimento a [Definire le dimensioni](#defining-dimensions).
+1. Definisci le misure. Fai riferimento a [Indicatori di creazione](#building-indicators).
+1. Creare aggregati (facoltativo). Fai riferimento a [Calcolare e utilizzare gli aggregati](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates).
 
 Questo esempio mostra come creare rapidamente un cubo semplice in un report per esportare le relative misure.
 
 I passaggi di implementazione sono descritti di seguito. Le opzioni e le descrizioni esaustive sono disponibili nelle altre sezioni di questo capitolo.
 
-## Selezione della tabella di lavoro {#selecting-the-work-table}
+## Selezionare la tabella di lavoro {#selecting-the-work-table}
 
 Per creare un cubo, fai clic sul pulsante **[!UICONTROL New]** sopra l&#39;elenco dei cubi.
 
@@ -46,7 +43,7 @@ Fai clic sul pulsante **[!UICONTROL Filter the source data...]** collegamento pe
 
 ![](assets/s_advuser_cube_wz_03.png)
 
-## Definizione delle dimensioni {#defining-dimensions}
+## Definire le dimensioni {#defining-dimensions}
 
 I Dimension coincidono con gli assi di analisi definiti per ciascun cubo in base al relativo schema di fatti. Queste sono le dimensioni esaminate nell’analisi, come l’ora (anno, mese, data...), una classificazione di prodotti o contratti (famiglia, riferimento, ecc.), un segmento di popolazione (per città, gruppo di età, stato, ecc.).
 
@@ -92,7 +89,7 @@ Fai clic sul pulsante **[!UICONTROL Add]** per creare una nuova dimensione, quin
 
    Per ulteriori informazioni, consulta [Gestione dinamica dei contenitori](../../reporting/using/concepts-and-methodology.md#dynamically-managing-bins).
 
-## Indicatori di costruzione {#building-indicators}
+## Indicatori di creazione {#building-indicators}
 
 Una volta definite le dimensioni, è necessario specificare una modalità di calcolo per i valori da visualizzare nelle celle. A questo scopo, crea gli indicatori corrispondenti nel **[!UICONTROL Measures]** scheda: crea tutte le misure quante le colonne da visualizzare nel rapporto che utilizzerà il cubo.
 
@@ -105,7 +102,7 @@ A questo scopo, esegui i seguenti passaggi:
 
    ![](assets/s_advuser_cube_wz_11.png)
 
-   La **[!UICONTROL Filter the measure data...]** link ti consente di selezionare solo donne. Per ulteriori informazioni sulla definizione delle misure e delle opzioni disponibili, consulta [Definizione delle misure](../../reporting/using/concepts-and-methodology.md#defining-measures).
+   La **[!UICONTROL Filter the measure data...]** link ti consente di selezionare solo donne. Per ulteriori informazioni sulla definizione delle misure e delle opzioni disponibili, consulta [Definire le misure](../../reporting/using/concepts-and-methodology.md#defining-measures).
 
    ![](assets/s_advuser_cube_wz_12.png)
 
@@ -115,7 +112,7 @@ A questo scopo, esegui i seguenti passaggi:
 
 1. Salva il cubo.
 
-## Creazione di un report basato su un cubo {#creating-a-report-based-on-a-cube}
+## Creare un report basato su un cubo {#creating-a-report-based-on-a-cube}
 
 Una volta configurato, il cubo può essere utilizzato come modello per creare un nuovo report.
 
@@ -131,7 +128,7 @@ Per eseguire questa operazione:
 
    ![](assets/s_advuser_cube_wz_15.png)
 
-1. Potete cambiare gli assi della dimensione, eliminarli, aggiungere nuove misure, ecc. Le possibili operazioni sono descritte qui di seguito: [Utilizzo dei cubi per esplorare i dati](../../reporting/using/using-cubes-to-explore-data.md).
+1. Potete cambiare gli assi della dimensione, eliminarli, aggiungere nuove misure, ecc. Le possibili operazioni sono descritte in [questa pagina](../../reporting/using/using-cubes-to-explore-data.md).
 
    A questo scopo, utilizza le icone appropriate.
 

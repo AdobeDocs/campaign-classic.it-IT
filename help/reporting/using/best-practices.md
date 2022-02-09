@@ -2,13 +2,11 @@
 product: campaign
 title: Best practice per il reporting
 description: Best practice per la generazione di rapporti sulle campagne
-audience: reporting
-content-type: reference
-topic-tags: reporting-in-adobe-campaign
+feature: Reporting
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
@@ -17,7 +15,7 @@ ht-degree: 0%
 
 ![](../../assets/common.svg)
 
-## Analisi delle esigenze{#analyzing-needs}
+## Analizzare le esigenze{#analyzing-needs}
 
 L’utilizzo di uno strumento di reporting dipende dal volume di dati da manipolare, dalla sua complessità e dal tipo di reporting da configurare.
 
@@ -62,7 +60,7 @@ Per ottimizzare la creazione, l’utilizzo e la durata di un rapporto, è necess
 
    I problemi relativi ai volumi di dati e agli aggiornamenti devono essere esaminati attentamente per evitare problemi di visualizzazione dei rapporti, soprattutto in termini di tempo. Consigliamo quindi di creare aggregati per precalcolare alcuni dati al di fuori del rapporto. Le tabelle che contengono i registri di tracciamento e consegna possono includere milioni di record: ciò significa che i dati devono essere aggregati tramite un flusso di lavoro da utilizzare in un rapporto.
 
-## Ottimizzazione della creazione dei rapporti{#optimizing-report-creation}
+## Ottimizzare la progettazione dei report{#optimizing-report-creation}
 
 ### Volume dei dati {#data-volume}
 
@@ -112,6 +110,6 @@ Inoltre, Adobe Campaign consiglia i seguenti miglioramenti:
 
    Per ulteriori informazioni sulla pulizia e la conservazione dei dati, consulta [questa sezione](../../configuration/using/data-model-best-practices.md#data-retention).
 
-### Esportazione dei rapporti {#exporting-reports}
+### Esportare i rapporti {#exporting-reports}
 
 Recommendations specifico per l’esportazione dei rapporti è descritto in [questa sezione](../../reporting/using/actions-on-reports.md#exporting-a-report).

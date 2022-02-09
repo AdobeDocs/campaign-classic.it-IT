@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Creazione di una tabella
-description: Creazione di una tabella
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
+title: Creare una tabella
+description: Creare una tabella
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '2495'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Creazione di una tabella{#creating-a-table}
+# Creare una tabella{#creating-a-table}
 
 ![](../../assets/common.svg)
 
@@ -21,13 +18,13 @@ ht-degree: 1%
 
 ![](assets/s_advuser_report_page_activity_05.png)
 
-## Creazione di un elenco con un gruppo {#creating-a-list-with-group}
+## Creare un elenco con un gruppo {#creating-a-list-with-group}
 
 A **[!UICONTROL List with group]** la tabella dei tipi consente di raggruppare i dati nella tabella e di generare statistiche su di essa. Ad esempio, puoi creare totali e totali secondari per i dati. Ogni gruppo ha una propria riga di intestazione, dettaglio e piè di pagina.
 
 >[!CAUTION]
 >
->La **[!UICONTROL Page]** l’attività contenente la tabella deve essere preceduta da un **[!UICONTROL Query]** o **[!UICONTROL Script]** per raccogliere i dati da analizzare nel rapporto. Per ulteriori informazioni su queste attività, consulta [Raccolta di dati da analizzare](../../reporting/using/collecting-data-to-analyze.md) e [Attività script](../../reporting/using/advanced-functionalities.md#script-activity).
+>La **[!UICONTROL Page]** l’attività contenente la tabella deve essere preceduta da un **[!UICONTROL Query]** o **[!UICONTROL Script]** per raccogliere i dati da analizzare nel rapporto. Per ulteriori informazioni su queste attività, consulta [Raccogliere dati da analizzare](../../reporting/using/collecting-data-to-analyze.md) e [Attività script](../../reporting/using/advanced-functionalities.md#script-activity).
 
 ### Principio di funzionamento {#operating-principle}
 
@@ -45,7 +42,7 @@ Un esempio completo di implementazione è fornito qui: [Caso di utilizzo: Creare
 
 Per creare una tabella di tipo &quot;Elenco con gruppo&quot;, tieni presente quanto segue:
 
-1. Passa al grafico dei report e inserisci un **[!UICONTROL Query]** attività. Fai riferimento a [Raccolta di dati da analizzare](../../reporting/using/collecting-data-to-analyze.md).
+1. Passa al grafico dei report e inserisci un **[!UICONTROL Query]** attività. Fai riferimento a [Raccogliere dati da analizzare](../../reporting/using/collecting-data-to-analyze.md).
 1. Compila la tabella di origine e seleziona i campi della tabella che riguardano le statistiche.
 1. Posiziona un **[!UICONTROL Page]** nel grafico. Per ulteriori informazioni, consulta [Elementi statici](../../reporting/using/creating-a-new-report.md#static-elements).
 1. Inserisci un **[!UICONTROL List with group]** digitare la tabella nella pagina.
@@ -54,9 +51,9 @@ Per creare una tabella di tipo &quot;Elenco con gruppo&quot;, tieni presente qua
    Questo passaggio è obbligatorio se si desidera recuperare i campi nella tabella di origine in un secondo momento e inserirli nelle celle della tabella.
 
 1. Creazione della tabella e del relativo contenuto.
-1. Visualizza il rapporto finalizzato nel **[!UICONTROL Preview]** scheda . Puoi quindi pubblicare il rapporto ed esportarlo in un formato diverso, se necessario. Per ulteriori informazioni, consulta [Esportazione di un report](../../reporting/using/actions-on-reports.md#exporting-a-report).
+1. Visualizza il rapporto finalizzato nel **[!UICONTROL Preview]** scheda . Puoi quindi pubblicare il rapporto ed esportarlo in un formato diverso, se necessario. Per ulteriori informazioni, consulta [Esportare un rapporto](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
-### Aggiunta di righe e colonne {#adding-lines-and-columns}
+### Aggiungi righe e colonne {#adding-lines-and-columns}
 
 Per impostazione predefinita, un **[!UICONTROL List with group]** La tabella dei tipi include un’intestazione, una riga di dettaglio e una riga piè di pagina.
 
@@ -94,7 +91,7 @@ La larghezza delle colonne può essere modificata tramite il **[!UICONTROL Colum
 
 ![](assets/s_advuser_ergo_listgroup_007.png)
 
-### Definizione del contenuto della cella {#defining-cell-content}
+### Definire il contenuto della cella {#defining-cell-content}
 
 Per modificare una cella della tabella e definirne il contenuto e il formato, passare alla cella e utilizzare il menu di scelta rapida.
 
@@ -118,7 +115,7 @@ Utilizza la **[!UICONTROL Expression]** voce di menu per selezionare i valori da
 
    ![](assets/s_advuser_ergo_listgroup_008.png)
 
-### Definizione del formato delle celle {#defining-cell-format}
+### Definire il formato delle celle {#defining-cell-format}
 
 ![](assets/s_advuser_ergo_listgroup_017.png)
 
@@ -126,7 +123,7 @@ Per definire il formato della cella, il **[!UICONTROL Cell format...]** consente
 
 Queste opzioni ti consentono di personalizzare il rendering finale del rapporto e di semplificarne la lettura.
 
-Utilizza la **[!UICONTROL Carriage return]** campo durante l&#39;esportazione dei dati in Excel: seleziona la **[!UICONTROL Yes]** valore per forzare il ritorno a capo. Questo valore verrà mantenuto durante l’esportazione. Per ulteriori informazioni, consulta [Esportazione di un report](../../reporting/using/actions-on-reports.md#exporting-a-report).
+Utilizza la **[!UICONTROL Carriage return]** campo durante l&#39;esportazione dei dati in Excel: seleziona la **[!UICONTROL Yes]** valore per forzare il ritorno a capo. Questo valore verrà mantenuto durante l’esportazione. Per ulteriori informazioni, consulta [Esportare un rapporto](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
 La **[!UICONTROL Cell format]** window consente di accedere alla scheda seguente:
 
@@ -460,7 +457,7 @@ Se fai clic sul collegamento di una di queste consegne, viene visualizzato il gr
 
 ![](assets/s_advuser_report_listgroup_022.png)
 
-## Creazione di una tabella di suddivisione o pivot {#creating-a-breakdown-or-pivot-table}
+## Creare un raggruppamento o una tabella pivot {#creating-a-breakdown-or-pivot-table}
 
 Questo tipo di tabella consente di visualizzare le statistiche calcolate sui dati nel database.
 

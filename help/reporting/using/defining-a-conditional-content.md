@@ -1,29 +1,26 @@
 ---
 product: campaign
-title: Definizione di un contenuto condizionale
-description: Definizione di un contenuto condizionale
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
+title: Definire un contenuto condizionale
+description: Definire un contenuto condizionale
 exl-id: efee50f7-d917-4c71-add2-116c4b8f7013
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 8%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Definizione di un contenuto condizionale{#defining-a-conditional-content}
+# Definire un contenuto condizionale{#defining-a-conditional-content}
 
 ![](../../assets/common.svg)
 
 È possibile condizionare la visualizzazione di specifici elementi o pagine del rapporto.
 
-Per rendere condizionali elementi specifici, adattane le impostazioni di visibilità. Per ulteriori informazioni, consulta [Visualizzazione degli elementi di condizionamento](#conditioning-item-display).
+Per rendere condizionali elementi specifici, adattane le impostazioni di visibilità. Per ulteriori informazioni, consulta [Visualizzazione dell&#39;elemento condizione](#conditioning-item-display).
 
-Per rendere condizionale la visualizzazione di una o più pagine, utilizza un **[!UICONTROL Test]** digitare activity. Per ulteriori informazioni, consulta [Visualizzazione della pagina di condizionamento](#conditioning-page-display).
+Per rendere condizionale la visualizzazione di una o più pagine, utilizza un **[!UICONTROL Test]** digitare activity. Per ulteriori informazioni, consulta [Visualizzazione della pagina Condizione](#conditioning-page-display).
 
-## Visualizzazione degli elementi di condizionamento {#conditioning-item-display}
+## Visualizzazione dell&#39;elemento condizione {#conditioning-item-display}
 
 Per condizionare la visualizzazione di parte di un rapporto, è necessario definirne le condizioni di visibilità: se questi elementi non sono soddisfatti, gli elementi non verranno visualizzati.
 
@@ -35,7 +32,7 @@ Nell’esempio seguente, la condizione di visualizzazione dipende dalla lingua:
 
 ![](assets/reporting_display_condition.png)
 
-## Visualizzazione della pagina di condizionamento {#conditioning-page-display}
+## Visualizzazione della pagina Condizione {#conditioning-page-display}
 
 Nel grafico di un rapporto, la **[!UICONTROL Test]** attività ti consente di modificare la sequenza di pagine a seconda di una o più condizioni.
 

@@ -2,13 +2,10 @@
 product: campaign
 title: Layout degli elementi
 description: Layout degli elementi
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
 exl-id: 79d5c901-905b-4a0e-adb9-91fd6acb186f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '415'
 ht-degree: 1%
 
 ---
@@ -17,13 +14,13 @@ ht-degree: 1%
 
 ![](../../assets/common.svg)
 
-Oltre ai vari grafici qui descritti: [Tipi di grafico e varianti](../../reporting/using/creating-a-chart.md#chart-types-and-variants), è possibile adattare la visualizzazione e aggiungere elementi alle pagine del rapporto.
+Oltre ai vari grafici dettagliati [qui](../../reporting/using/creating-a-chart.md#chart-types-and-variants), è possibile adattare la visualizzazione e aggiungere elementi alle pagine del rapporto.
 
 Puoi utilizzare i contenitori: questi consentono di collegare diversi elementi di una pagina e configurarne il layout in colonne e/o celle. Come utilizzarli è descritto in [questa sezione](../../web/using/defining-web-forms-layout.md#creating-containers).
 
 Puoi configurare il layout del rapporto nella directory principale della struttura e sovraccaricarlo per ogni contenitore. Le pagine sono ordinate in colonne. I contenitori vengono anche ordinati in colonne. Solo gli elementi statici e grafici vengono ordinati in celle.
 
-## Definizione delle opzioni per ogni pagina {#defining-the-options-for-each-page}
+## Definisci le opzioni per ogni pagina {#defining-the-options-for-each-page}
 
 Puoi utilizzare le opzioni su ogni pagina del rapporto.
 
@@ -37,7 +34,7 @@ La **[!UICONTROL Display settings]** le opzioni consentono di selezionare la pos
 
 Seleziona le varie opzioni nella **[!UICONTROL Browse]** per autorizzare l’esplorazione da una pagina del report a un’altra. Se la **[!UICONTROL Disable next page]** o **[!UICONTROL Disable previous page]** è selezionata l&#39;opzione , **[!UICONTROL Next]** e **[!UICONTROL Previous]** i pulsanti scompaiono dalla pagina del rapporto.
 
-## Aggiunta di un’intestazione e di un piè di pagina {#adding-a-header-and-a-footer}
+## Aggiungere un’intestazione e un piè di pagina {#adding-a-header-and-a-footer}
 
 La finestra delle proprietà del report consente inoltre di definire gli elementi di layout, ad esempio: il titolo della finestra, il contenuto HTML delle intestazioni e dei piè di pagina.
 

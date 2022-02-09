@@ -1,15 +1,12 @@
 ---
 product: campaign
-title: Report sulle consegne
-description: Report sulle consegne
-audience: reporting
-content-type: reference
-topic-tags: accessing-built-in-reports
+title: Persona, persone e destinatari
+description: Persona, persone e destinatari
 exl-id: 69b810f3-aa8b-4ab5-95c1-831257d7fcb9
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
