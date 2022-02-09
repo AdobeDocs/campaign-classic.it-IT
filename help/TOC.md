@@ -6,10 +6,10 @@ title: Guida di Campaign Classic v7
 user-guide-description: Con Adobe Campaign, puoi utilizzare dati approfonditi sui clienti per creare, coordinare e distribuire campagne dinamiche che i clienti desiderano realmente, tramite e-mail, dispositivi mobili, canali offline e altro ancora.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
-workflow-type: ht
+source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
+workflow-type: tm+mt
 source-wordcount: '2556'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -506,7 +506,7 @@ ht-degree: 100%
       + [Esempi di codice JavaScript nei flussi di lavoro](workflow/using/javascript-in-workflows.md)
       + [Accedere a un database esterno](workflow/using/accessing-an-external-database--fda-.md)
       + [Gestire le autorizzazioni](workflow/using/managing-rights.md)
-      + [Gestire le immagini dell’attività](workflow/using/managing-activity-images.md)
+      + [Modificare le immagini delle attività](workflow/using/managing-activity-images.md)
       + [Gestire i fusi orari](workflow/using/managing-time-zones.md)
       + [Flussi di lavoro tecnici](workflow/using/about-technical-workflows.md)
 + Gestire le offerte {#managing-offers}

@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Creazione di un flusso di lavoro
+title: Creare un flusso di lavoro
 description: Scopri come creare un flusso di lavoro
-audience: workflow
-content-type: reference
-topic-tags: -general-operation
+feature: Workflows
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
-source-git-commit: 638b259462d3e01d744567e56d67a120359dc34a
+source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
 workflow-type: tm+mt
-source-wordcount: '1625'
+source-wordcount: '1623'
 ht-degree: 3%
 
 ---
 
-# Creazione di un flusso di lavoro {#building-a-workflow}
+# Creare un flusso di lavoro {#building-a-workflow}
 
 ![](../../assets/common.svg)
 
@@ -27,7 +25,7 @@ Questa sezione descrive i principi chiave e le best practice per creare un fluss
 * Accedi e crea flussi di lavoro tecnici, vedi [Flussi di lavoro tecnici](#technical-workflows)
 * Utilizzare i modelli per creare flussi di lavoro, vedi [Modelli di flusso di lavoro](#workflow-templates)
 
-## Creazione di un nuovo flusso di lavoro {#creating-a-new-workflow}
+## Creare un nuovo flusso di lavoro {#creating-a-new-workflow}
 
 Da **[!UICONTROL Explorer]**, accedere a una cartella di flusso di lavoro. Per impostazione predefinita, puoi utilizzare **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**.
 
@@ -45,7 +43,7 @@ Immetti un’etichetta e fai clic su **[!UICONTROL Save]**.
 >
 >Quando modifichi il nome interno di un’attività del flusso di lavoro o del flusso di lavoro stesso, accertati di salvare il flusso di lavoro prima di chiuderlo in modo che il nuovo nome interno sia preso in considerazione correttamente.
 
-## Aggiunta e collegamento di attività {#adding-and-linking-activities}
+## Aggiungere e collegare attività {#adding-and-linking-activities}
 
 Devi ora definire le varie attività e collegarle nel diagramma. A questo punto della configurazione, è possibile visualizzare l’etichetta del diagramma e lo stato del flusso di lavoro (Modifica in corso). La sezione inferiore della finestra viene utilizzata solo per modificare il diagramma. Contiene una barra degli strumenti, una palette di attività (a sinistra) e il diagramma stesso (a destra).
 
@@ -82,11 +80,11 @@ Per creare il diagramma
 
 >[!CAUTION]
 >
->Puoi copiare e incollare le attività all’interno di uno stesso flusso di lavoro. Tuttavia, si sconsiglia di copiare e incollare le attività tra flussi di lavoro diversi. Alcune impostazioni collegate ad attività come Consegne e Scheduler potrebbero causare conflitti ed errori durante l’esecuzione del flusso di lavoro di destinazione. Invece, ti abbiamo consigliato di  **Duplica** flussi di lavoro. Per ulteriori informazioni, consulta [Duplicazione dei flussi di lavoro](#duplicating-workflows).
+>Puoi copiare e incollare le attività all’interno di uno stesso flusso di lavoro. Tuttavia, si sconsiglia di copiare e incollare le attività tra flussi di lavoro diversi. Alcune impostazioni collegate ad attività come Consegne e Scheduler potrebbero causare conflitti ed errori durante l’esecuzione del flusso di lavoro di destinazione. Invece, ti abbiamo consigliato di  **Duplica** flussi di lavoro. Per ulteriori informazioni, consulta [Duplicare i flussi di lavoro](#duplicating-workflows).
 
 È possibile modificare la visualizzazione e il layout del grafico utilizzando i seguenti elementi:
 
-* **Utilizzo della barra degli strumenti**
+* **Utilizzare la barra degli strumenti**
 
    La barra degli strumenti di modifica del diagramma consente di accedere alle funzioni di layout ed esecuzione del flusso di lavoro.
 
@@ -109,9 +107,9 @@ Per creare il diagramma
 
 * **Gestione delle immagini**
 
-   Puoi personalizzare l’immagine di sfondo del diagramma e quelle relative alle varie attività. Fai riferimento a [Gestione delle immagini delle attività](managing-activity-images.md).
+   Puoi personalizzare l’immagine di sfondo del diagramma e quelle relative alle varie attività. Fai riferimento a [Modificare le immagini delle attività](managing-activity-images.md).
 
-## Configurazione delle attività {#configuring-activities}
+## Configurare le attività {#configuring-activities}
 
 Fai doppio clic su un’attività per configurarla o fai clic con il pulsante destro del mouse e seleziona (Crea attività) **[!UICONTROL Open...]**.
 
@@ -147,9 +145,9 @@ I flussi di lavoro di targeting nel quadro di una campagna vengono memorizzati c
 
 I passaggi per creare un flusso di lavoro di targeting sono descritti in dettaglio in queste sezioni:
 
-1. **Identifica** dati nel database - Vedere [Creazione di query](targeting-data.md#creating-queries)
-1. **Preparare** dati per soddisfare le esigenze di consegna - Vedi [Arricchimento e modifica dei dati](targeting-data.md#enriching-and-modifying-data)
-1. **Utilizzo** dati per eseguire aggiornamenti o all’interno di una consegna - Vedi [Aggiornamento del database](how-to-use-workflow-data.md#updating-the-database)
+1. **Identifica** dati nel database - Vedere [Creare query](targeting-data.md#creating-queries)
+1. **Preparare** dati per soddisfare le esigenze di consegna - Vedi [Arricchire e modificare i dati](targeting-data.md#enriching-and-modifying-data)
+1. **Utilizzo** dati per eseguire aggiornamenti o all’interno di una consegna - Vedi [Aggiornare il database](how-to-use-workflow-data.md#updating-the-database)
 
 I risultati di tutti gli arricchimenti e di tutte le operazioni eseguite durante il targeting sono memorizzati e accessibili nei campi di personalizzazione, in particolare per l’utilizzo durante la creazione di messaggi personalizzati. Per ulteriori informazioni, consulta [Dati di Target](data-life-cycle.md#target-data)
 
@@ -219,7 +217,7 @@ Oltre alle consuete proprietà del flusso di lavoro, le proprietà del modello t
 
 ![](assets/s_advuser_wf_template_properties.png)
 
-## Duplicazione dei flussi di lavoro {#duplicating-workflows}
+## Duplicare i flussi di lavoro {#duplicating-workflows}
 
 Puoi duplicare diversi tipi di flussi di lavoro. Una volta eseguita la duplicazione, le modifiche del flusso di lavoro non vengono riportate nella copia del flusso di lavoro.
 
@@ -239,7 +237,7 @@ La funzione duplicata non è direttamente disponibile nella visualizzazione di u
 
 Tuttavia, puoi creare una visualizzazione per visualizzare tutti i flussi di lavoro sull’istanza. In questa visualizzazione puoi duplicare i flussi di lavoro utilizzando **Duplica su**.
 
-**Innanzitutto, creiamo una visualizzazione:**
+**Creare una visualizzazione**
 
 1. In **Esplora risorse**, vai alla cartella in cui devi creare la visualizzazione.
 1. Fai clic con il pulsante destro del mouse e vai a **Aggiungi una nuova cartella** > **Processo**, seleziona **Flussi di lavoro**.
@@ -255,7 +253,7 @@ La nuova cartella **Flussi di lavoro** viene creato.
 
 La cartella viene ora compilata con tutti i flussi di lavoro dell’istanza.
 
-**Duplicazione di un flusso di lavoro della campagna**
+**Duplicare un flusso di lavoro della campagna**
 
 1. Seleziona un flusso di lavoro della campagna nella visualizzazione del flusso di lavoro.
 1. Fai clic con il pulsante destro del mouse **Duplica su**.

@@ -6,7 +6,7 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 0d3e7046-313a-42a6-9155-3365e8d60bac
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 5%
@@ -24,7 +24,7 @@ Poiché queste campagne vengono lanciate all&#39;inizio di ogni stagione per off
 ![](assets/incremental_query_example.png)
 
 1. Aggiungi una query incrementale e un’attività di aggiornamento elenco in un nuovo flusso di lavoro.
-1. Configura le **[!UICONTROL Incremental query]** scheda dell’attività come specificato in [Creazione di una query](query.md#creating-a-query).
+1. Configura le **[!UICONTROL Incremental query]** scheda dell’attività come specificato in [Creare una query](query.md#creating-a-query).
 1. Seleziona la **[!UICONTROL Scheduling & History]** e specificare una cronologia di 270 giorni. Un destinatario che è già stato oggetto di targeting non sarà più oggetto di targeting per un periodo di 270 giorni o circa 9 mesi.
 
    Quindi fai clic sul pulsante **[!UICONTROL Change...]** pulsante .

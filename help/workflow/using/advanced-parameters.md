@@ -2,11 +2,8 @@
 product: campaign
 title: Parametri avanzati
 description: Parametri avanzati
-audience: workflow
-content-type: reference
-topic-tags: advanced-management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
-source-git-commit: 7a1b8a1cd3ad434dac5c324056113d7ec15ddd8a
+source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 1%
@@ -35,7 +32,7 @@ Questo campo contiene il nome interno dell’attività.
 
 ## Immagine {#image}
 
-Questo campo ti consente di modificare l’immagine collegata a un’attività. Per ulteriori informazioni, consulta: [Gestione delle immagini delle attività](managing-activity-images.md).
+Questo campo ti consente di modificare l’immagine collegata a un’attività. Per ulteriori informazioni, consulta [Modificare le immagini delle attività](managing-activity-images.md).
 
 ## Execution {#execution}
 

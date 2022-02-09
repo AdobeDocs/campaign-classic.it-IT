@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Gestione delle immagini delle attività
-description: Gestione delle immagini delle attività
-audience: workflow
-content-type: reference
-topic-tags: advanced-management
+title: Modificare le immagini delle attività
+description: Scopri come modificare l’immagine dell’attività
 exl-id: cafdbc10-9c10-4d42-a485-c9880df8d371
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 5%
+source-wordcount: '156'
+ht-degree: 0%
 
 ---
 
-# Gestione delle immagini delle attività{#managing-activity-images}
+# Modificare le immagini delle attività{#change-activity-images}
 
 ![](../../assets/common.svg)
 

@@ -2,18 +2,15 @@
 product: campaign
 title: Avvio di un flusso di lavoro
 description: Scopri come avviare un flusso di lavoro e scoprire la barra delle azioni dei flussi di lavoro e fai clic con il pulsante destro del mouse sul menu
-audience: workflow
-content-type: reference
-topic-tags: -general-operation
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 2%
 
 ---
 
-# Avvio di un flusso di lavoro {#starting-a-workflow}
+# Avviare un flusso di lavoro {#starting-a-workflow}
 
 ![](../../assets/common.svg)
 
