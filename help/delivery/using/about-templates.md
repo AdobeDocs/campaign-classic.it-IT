@@ -1,15 +1,13 @@
 ---
 product: campaign
 title: Informazioni sui modelli
-description: Informazioni sui modelli
-audience: delivery
-content-type: reference
-topic-tags: using-delivery-templates
+description: Guida introduttiva ai modelli di consegna
+feature: Delivery Templates
 exl-id: d943898c-06fe-451d-aa28-8a95665f4112
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 2%
+source-wordcount: '276'
+ht-degree: 1%
 
 ---
 
@@ -35,4 +33,4 @@ Esistono due tipi di modelli:
 
 >[!NOTE]
 >
->I modelli disponibili dipendono dai diritti di accesso, dalla configurazione dell’istanza e dal contesto. Ad esempio, quando crei un servizio di informazioni, puoi collegare un modello di consegna per i messaggi di conferma: potrai quindi accedere solo ai modelli la cui mappatura di destinazione è la mappatura della sottoscrizione. Per ulteriori informazioni, consulta [Selezionare una mappatura target](selecting-a-target-mapping.md) e [Informazioni su servizi e abbonamenti](about-services-and-subscriptions.md).
+>I modelli disponibili dipendono dai diritti di accesso, dalla configurazione dell’istanza e dal contesto. Ad esempio, quando crei un servizio di informazioni, puoi collegare un modello di consegna per i messaggi di conferma: potrai quindi accedere solo ai modelli la cui mappatura di destinazione è la mappatura della sottoscrizione. Per ulteriori informazioni, consulta [Selezionare una mappatura target](selecting-a-target-mapping.md) e [Servizi e abbonamenti](about-services-and-subscriptions.md).

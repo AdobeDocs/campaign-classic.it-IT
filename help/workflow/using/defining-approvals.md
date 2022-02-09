@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Definizione delle approvazioni
+title: Definire le approvazioni
 description: Le approvazioni consentono agli operatori di prendere decisioni relative a un flusso di lavoro o di confermarne l’esecuzione
-audience: workflow
-content-type: reference
-topic-tags: -general-operation
+feature: Approvals
 exl-id: 4d413d51-ae5d-4e5e-bfaf-4160a6075281
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3af4f259b80b3e03c81ee278b470ef6ffe3fe4d0
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '841'
 ht-degree: 4%
 
 ---
 
-# Definizione delle approvazioni {#defining-approvals}
+# Definire le approvazioni {#defining-approvals}
 
 ![](../../assets/common.svg)
 
@@ -29,7 +27,7 @@ Nelle operazioni, tutte le fasi che richiedono l&#39;approvazione si basano sull
 
 ![](assets/validation-1-in-op.png)
 
-Gli esempi di approvazione si trovano in questo [sezione](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
+Gli esempi di approvazione sono disponibili in [questa sezione](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
 
 Un operatore può rispondere in uno dei due modi seguenti: convalida tramite la pagina web collegata nel messaggio e-mail o tramite la console.
 
@@ -37,7 +35,7 @@ Un operatore può rispondere in uno dei due modi seguenti: convalida tramite la 
 >
 >Una volta salvata la risposta, la risposta potrebbe non essere modificata.
 
-## Invio di e-mail {#sending-emails}
+## Approvazioni per e-mail {#sending-emails}
 
 È possibile ricevere un messaggio di approvazione contenente un collegamento a una pagina web tramite il quale è possibile rispondere. Affinché l’operatore di destinazione riceva un messaggio e-mail di approvazione, l’indirizzo e-mail dell’operatore deve essere completo. In caso contrario, l’operatore deve utilizzare la console per rispondere
 
@@ -47,7 +45,7 @@ Le e-mail di approvazione vengono inviate continuamente. Il modello di consegna 
 
 Le consegne create tramite questo modello sono memorizzate nella **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** cartella.
 
-## Approvazione tramite la console {#approval-via-the-console}
+## Approvazioni tramite la console {#approval-via-the-console}
 
 Nelle operazioni, gli elementi da approvare vengono visualizzati sul dashboard della campagna.
 

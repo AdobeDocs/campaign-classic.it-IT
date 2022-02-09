@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Impostazione di un’importazione ricorrente
+title: Imposta un’importazione ricorrente
 description: Scopri come configurare un modello di flusso di lavoro per le importazioni ricorrenti.
-audience: workflow
-content-type: reference
-topic-tags: use-cases
+feature: Workflows
 exl-id: e6e140cb-8de0-4ab9-bddc-95abe04124c6
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 0%
 
 ---
 
-# Impostazione di un flusso di lavoro di importazione ricorrente {#setting-up-a-recurring-import}
+# Impostare un flusso di lavoro di importazione ricorrente {#setting-up-a-recurring-import}
 
 ![](../../assets/common.svg)
 

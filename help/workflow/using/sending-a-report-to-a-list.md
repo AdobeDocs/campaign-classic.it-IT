@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Invio di un report a un elenco
+title: Inviare un rapporto a un elenco
 description: Scopri come inviare un rapporto a un elenco con un flusso di lavoro
-audience: workflow
-content-type: reference
-topic-tags: use-cases
 exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 1%
 
 ---
 
-# Invio di un report a un elenco{#sending-a-report-to-a-list}
+# Inviare un rapporto a un elenco{#sending-a-report-to-a-list}
 
 ![](../../assets/common.svg)
 

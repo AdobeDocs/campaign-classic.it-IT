@@ -2,11 +2,9 @@
 product: campaign
 title: Rendering della casella in entrata in Campaign
 description: Scopri come acquisire i rendering delle e-mail e renderli disponibili in un rapporto dedicato
-audience: delivery
-content-type: reference
-topic-tags: deliverability-management
+feature: Inbox Rendering, Monitoring, Email Rendering
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 8%
@@ -84,7 +82,6 @@ Ogni volta che utilizzi **[!UICONTROL Inbox rendering]** in una consegna, ogni r
 >
 >* Ogni volta che viene generato il rapporto di rendering della casella in entrata, viene detratto un token per client di messaggistica: un token per il rendering di Outlook 2000, uno per il rendering di Outlook 2010, uno per il rendering di Apple Mail 9 e così via.
 >* Per la stessa consegna, se si genera nuovamente il rendering della casella in entrata, il numero di token disponibili viene nuovamente diminuito del numero di rendering generati.
-
 >
 
 

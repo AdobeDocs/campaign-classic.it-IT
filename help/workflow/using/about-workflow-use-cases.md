@@ -2,20 +2,16 @@
 product: campaign
 title: Informazioni sui casi d’uso dei flussi di lavoro
 description: Ulteriori informazioni sui casi d’uso che è possibile eseguire utilizzando i flussi di lavoro di Campaign Classic.
-audience: workflow
-content-type: reference
-topic-tags: about-workflows-and-data-management
-internal: n
-snippet: y
+feature: Workflows, Data Management
 exl-id: 7c093b34-6b0e-4403-9d9d-fba9ba39ea41
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 68%
+source-wordcount: '206'
+ht-degree: 67%
 
 ---
 
-# Informazioni sui casi d’uso dei flussi di lavoro {#about-workflow-use-cases}
+# Casi di utilizzo del flusso di lavoro {#about-workflow-use-cases}
 
 ![](../../assets/common.svg)
 
@@ -44,7 +40,7 @@ Ti aiuterà a scoprire i diversi contesti in cui i flussi di lavoro possono esse
 * [Invio di avvisi personalizzati agli operatori](sending-personalized-alerts-to-operators.md)
 * [Impostazione di un processo di approvazione del destinatario prima di avviare una consegna](using-the-local-approval-activity.md)
 
-## Gestione dati {#management}
+## Gestione dei dati {#management}
 
 <img src="assets/do-not-localize/icon_manage.svg" width="60px">
 

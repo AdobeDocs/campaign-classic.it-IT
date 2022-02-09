@@ -2,11 +2,9 @@
 product: campaign
 title: Introduzione ai moduli web
 description: Guida introduttiva ai moduli web in Campaign
-audience: web
-content-type: reference
-topic-tags: web-forms
+feature: Landing Pages
 exl-id: 63602bed-ace6-4632-a735-5d268a7d72d0
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 5%
@@ -80,7 +78,6 @@ Nelle sezioni seguenti viene illustrato come definire il contenuto e il layout d
 >
 >* Durante la progettazione della pagina, è possibile visualizzare il rendering finale nel **[!UICONTROL Preview]** scheda . Per visualizzare le modifiche, salvare prima il modulo. Eventuali errori vengono visualizzati nella **[!UICONTROL Log]** scheda .
 >* Per verificare che la visualizzazione della pagina e l&#39;archiviazione delle informazioni siano presenti nella sequenza appropriata, attivare la modalità di debug nel modulo Web. Per eseguire questa operazione, vai alla pagina **[!UICONTROL Preview]** sottoscheda e controlla il **[!UICONTROL Enable debug mode]** casella: tutte le informazioni raccolte e gli eventuali errori di esecuzione verranno visualizzati nella parte inferiore di ogni pagina.
-
 >
 
 

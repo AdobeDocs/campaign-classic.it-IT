@@ -2,24 +2,22 @@
 product: campaign
 title: Dati di targeting
 description: Ulteriori informazioni sul targeting dei dati in un flusso di lavoro
-audience: workflow
-content-type: reference
-topic-tags: -general-operation
+feature: Query Editor, Data Management
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '1924'
 ht-degree: 4%
 
 ---
 
-# Dati di targeting{#targeting-data}
+# Targeting dei dati{#targeting-data}
 
 ![](../../assets/common.svg)
 
-## Creazione di query {#creating-queries}
+## Creare le query {#creating-queries}
 
-### Selezione dei dati {#selecting-data}
+### Seleziona dati {#selecting-data}
 
 A **[!UICONTROL Query]** consente di selezionare i dati di base per generare la popolazione target. Per ulteriori informazioni, consulta [Creazione di una query](query.md#creating-a-query).
 
@@ -27,7 +25,7 @@ Puoi inoltre utilizzare le seguenti attività per eseguire query e perfezionare 
 
 È possibile raccogliere dati aggiuntivi da inoltrare ed elaborare per tutto il ciclo di vita del flusso di lavoro. Per ulteriori informazioni, consulta [Aggiunta di dati](query.md#adding-data) e [Modifica di dati aggiuntivi](#editing-additional-data).
 
-### Modifica di dati aggiuntivi {#editing-additional-data}
+### Modificare dati aggiuntivi {#editing-additional-data}
 
 Una volta aggiunti i dati aggiuntivi, puoi modificarli o utilizzarli per perfezionare la destinazione definita nell’attività di query.
 
@@ -53,13 +51,13 @@ Le raccolte vengono visualizzate nella **[!UICONTROL Collections]** sottoscheda 
 
 ![](assets/query_add_columns_collection.png)
 
-### Ottimizzazione del target utilizzando dati aggiuntivi {#refining-the-target-using-additional-data}
+### Perfezionare il target utilizzando dati aggiuntivi {#refining-the-target-using-additional-data}
 
 I dati aggiuntivi raccolti possono consentirti di perfezionare il filtraggio dei dati nel database. A questo scopo, fai clic sul pulsante **[!UICONTROL Refine the target using additional data...]** link: questo consente di filtrare eccessivamente i dati aggiunti.
 
 ![](assets/wf_add_data_use_additional_data.png)
 
-### Omogenealizzazione dei dati {#homogenizing-data}
+### Omogeneizzare i dati {#homogenizing-data}
 
 In **[!UICONTROL Union]** o **[!UICONTROL Intersection]** le attività di tipo , puoi scegliere di conservare solo i dati aggiuntivi condivisi per mantenere la coerenza dei dati. In questo caso, la tabella di lavoro dell’output temporaneo di questa attività conterrà solo i dati aggiuntivi presenti in tutti i set in entrata.
 
@@ -71,7 +69,7 @@ Durante le fasi di riconciliazione dei dati (**[!UICONTROL Union]**, **[!UICONTR
 
 ![](assets/select-column-and-join.png)
 
-### Creazione di sottoinsiemi {#creating-subsets}
+### Creare sottoinsiemi {#creating-subsets}
 
 La **[!UICONTROL Split]** L’attività ti consente di creare sottoinsiemi in base a criteri definiti tramite query di estrazione. Per ogni sottoinsieme, quando modifichi una condizione di filtro sulla popolazione, accederai all’attività di query standard che ti consente di definire le condizioni di segmentazione di destinazione.
 
@@ -79,9 +77,9 @@ Puoi dividere una destinazione in più sottoinsiemi utilizzando solo dati aggiun
 
 Per ulteriori informazioni, consulta [Creazione di sottoinsiemi tramite l’attività Split](#creating-subsets-using-the-split-activity).
 
-## Segmentazione dei dati {#segmenting-data}
+## Dati del segmento {#segmenting-data}
 
-### Combinazione di più obiettivi (Unione) {#combining-several-targets--union-}
+### Combinare più obiettivi (Unione) {#combining-several-targets--union-}
 
 L’attività di unione ti consente di combinare il risultato di più attività all’interno di una transizione. I set non devono necessariamente essere omogenei.
 
@@ -119,7 +117,7 @@ Sono disponibili le seguenti opzioni di riconciliazione dei dati:
 
    ![](assets/join_limit_nb_priority.png)
 
-### Estrazione di dati comuni (intersezione) {#extracting-joint-data--intersection-}
+### Estrarre dati comuni (intersezione) {#extracting-joint-data--intersection-}
 
 ![](assets/traitements.png)
 
@@ -129,7 +127,7 @@ Inoltre, è possibile mantenere solo una selezione di colonne, o solo le colonne
 
 L’attività di intersezione è descritta nella sezione [Intersection](intersection.md) sezione .
 
-### Esclusione di una popolazione (Esclusione) {#excluding-a-population--exclusion-}
+### Escludere una popolazione (Esclusione) {#excluding-a-population--exclusion-}
 
 L’attività di esclusione ti consente di escludere gli elementi di un target da una popolazione target diversa. La dimensione di targeting dell’output di questa attività sarà quella del set principale.
 
@@ -139,7 +137,7 @@ La riconciliazione dei dati viene eseguita tramite un identificatore, un asse di
 
 ![](assets/exclusion_edit_add_rule_01.png)
 
-### Creazione di sottoinsiemi tramite l’attività Split {#creating-subsets-using-the-split-activity}
+### Creare sottoinsiemi utilizzando l’attività Split {#creating-subsets-using-the-split-activity}
 
 La **[!UICONTROL Split]** attività è un’attività standard che consente di creare il numero di set necessario tramite una o più dimensioni di filtro e di generare una transizione di output per sottoinsieme o una transizione univoca.
 
@@ -215,7 +213,7 @@ Ad esempio, puoi inserire una singola attività di consegna e personalizzare il 
 
 I sottoinsiemi possono essere creati anche utilizzando **[!UICONTROL Cells]** attività. Per ulteriori informazioni, consulta la sezione [Celle](cells.md) sezione .
 
-### Utilizzo di dati di destinazione {#using-targeted-data}
+### Utilizzare dati di destinazione {#using-targeted-data}
 
 Una volta identificati e preparati, i dati possono essere utilizzati nei seguenti contesti:
 
@@ -251,7 +249,7 @@ Per implementare queste operazioni, Adobe Campaign offre:
 >  
 >Ad esempio, l’eliminazione di un destinatario tramite un flusso di lavoro non comporta l’eliminazione di tutta la cronologia della consegna del destinatario. Tuttavia, l’eliminazione di un destinatario direttamente nella cartella &quot;Destinatari&quot; comporterà l’eliminazione di tutti i dati collegati a tale destinatario.
 
-### Arricchimento e modifica dei dati {#enriching-and-modifying-data}
+### Arricchire e modificare i dati {#enriching-and-modifying-data}
 
 Oltre alla dimensione di targeting, la dimensione di filtro consente di specificare la natura dei dati raccolti. Fai riferimento a [Dimensioni di targeting e filtro](building-a-workflow.md#targeting-and-filtering-dimensions).
 
