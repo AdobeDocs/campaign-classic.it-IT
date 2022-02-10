@@ -6,9 +6,9 @@ title: Guida di Campaign Classic v7
 user-guide-description: Con Adobe Campaign, puoi utilizzare dati approfonditi sui clienti per creare, coordinare e distribuire campagne dinamiche che i clienti desiderano realmente, tramite e-mail, dispositivi mobili, canali offline e altro ancora.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
+source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
 workflow-type: tm+mt
-source-wordcount: '2556'
+source-wordcount: '2555'
 ht-degree: 99%
 
 ---
@@ -374,7 +374,7 @@ ht-degree: 99%
       + [Configurare l’integrazione con [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Inserire un’immagine dinamica](integrations/using/inserting-a-dynamic-image.md)
    + ACS Connector {#acs-connector}
-      + [Principi e ciclo dei dati di [!DNL ACS Connector]](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [Introduzione a [!DNL ACS Connector]](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [Sincronizzare i profili](integrations/using/synchronizing-profiles.md)
       + [Sincronizzare i tipi di pubblico](integrations/using/synchronizing-audiences.md)
       + [Sincronizzare le applicazioni web](integrations/using/synchronizing-web-applications.md)

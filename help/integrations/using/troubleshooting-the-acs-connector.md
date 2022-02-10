@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Risoluzione dei problemi del connettore ACS
-description: Risoluzione dei problemi del connettore ACS
+title: Risolvere i problemi relativi al connettore ACS
+description: Risolvere i problemi relativi al connettore ACS
 audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 4693dca1-ee55-43f0-b3dc-62a5b67a8058
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 0%
 
 ---
 
-# Risoluzione dei problemi del connettore ACS{#troubleshooting-the-acs-connector}
+# Risolvere i problemi relativi al connettore ACS{#troubleshooting-the-acs-connector}
 
 ![](../../assets/v7-only.svg)
 

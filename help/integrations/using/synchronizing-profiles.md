@@ -1,29 +1,27 @@
 ---
 product: campaign
-title: Sincronizzazione dei profili
-description: Sincronizzazione dei profili
-audience: integrations
-content-type: reference
-topic-tags: acs-connector
+title: Sincronizzare i profili
+description: Scopri come sincronizzare i profili con il connettore ACS
+feature: ACS Connector
 exl-id: 27970a6f-fb22-4418-b29c-c687fd62a78e
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1201'
 ht-degree: 3%
 
 ---
 
-# Sincronizzazione dei profili{#synchronizing-profiles}
+# Sincronizzare i profili{#synchronizing-profiles}
 
 ![](../../assets/v7-only.svg)
 
 Il connettore ACS replica i dati da Campaign v7 a Campaign Standard. I dati ricevuti da Campaign v7 possono essere utilizzati in Campaign Standard per creare consegne. Puoi vedere come i profili vengono sincronizzati eseguendo le operazioni elencate di seguito.
 
-* **Aggiungi nuovi destinatari**: Crea un nuovo destinatario in Campaign v7 e conferma che un profilo corrispondente è stato replicato in Campaign Standard. Vedi [Creazione di un nuovo destinatario](#creating-a-new-recipient).
-* **Aggiornare i destinatari**: Modifica un nuovo destinatario in Campaign v7 e visualizza il profilo corrispondente in Campaign Standard per confermare che l’aggiornamento è stato replicato. Vedi [Modifica di un destinatario](#editing-a-recipient).
-* **Creare un flusso di lavoro in Campaign Standard**: Crea un flusso di lavoro in Campaign Standard che include una query con un pubblico o con profili replicati da Campaign v7. Vedi [Creazione di un flusso di lavoro](#creating-a-workflow).
-* **Creare una consegna in Campaign Standard**: Per inviare una consegna, segui il flusso di lavoro per completare l’operazione. Vedi [Creazione di una consegna](#creating-a-delivery).
-* **Verifica il collegamento di annullamento dell’abbonamento**: Utilizza un’applicazione web Campaign v7 per assicurarti che la scelta del destinatario di annullare l’iscrizione a un servizio sia inviata al database Campaign v7. L’opzione per interrompere la ricezione del servizio viene replicata in Campaign Standard. Vedi [Modifica del collegamento di annullamento all’abbonamento](#changing-the-unsubscription-link).
+* **Aggiungi nuovi destinatari**: Crea un nuovo destinatario in Campaign v7 e conferma che un profilo corrispondente è stato replicato in Campaign Standard. Vedi [Crea un nuovo destinatario](#creating-a-new-recipient).
+* **Aggiornare i destinatari**: Modifica un nuovo destinatario in Campaign v7 e visualizza il profilo corrispondente in Campaign Standard per confermare che l’aggiornamento è stato replicato. Vedi [Modificare un destinatario](#editing-a-recipient).
+* **Creare un flusso di lavoro in Campaign Standard**: Crea un flusso di lavoro in Campaign Standard che include una query con un pubblico o con profili replicati da Campaign v7. Vedi [Creare un flusso di lavoro](#creating-a-workflow).
+* **Creare una consegna in Campaign Standard**: Per inviare una consegna, segui il flusso di lavoro per completare l’operazione. Vedi [Creare una consegna](#creating-a-delivery).
+* **Verifica il collegamento di annullamento dell’abbonamento**: Utilizza un’applicazione web Campaign v7 per assicurarti che la scelta del destinatario di annullare l’iscrizione a un servizio sia inviata al database Campaign v7. L’opzione per interrompere la ricezione del servizio viene replicata in Campaign Standard. Vedi [Modificare il collegamento di annullamento all’abbonamento](#changing-the-unsubscription-link).
 
 ## Prerequisiti {#prerequisites}
 
@@ -33,7 +31,7 @@ Nelle sezioni seguenti viene descritto come ACS Connector consente di aggiungere
 * Diritti degli utenti per l’esecuzione di flussi di lavoro sia in Campaign v7 che in Campaign Standard.
 * Diritti dell’utente per creare ed eseguire una consegna in Campaign Standard.
 
-## Modifica del collegamento di annullamento all’abbonamento {#changing-the-unsubscription-link}
+## Modificare il collegamento di annullamento all’abbonamento {#changing-the-unsubscription-link}
 
 Quando un destinatario fa clic sul collegamento di annullamento dell’abbonamento in un’e-mail inviata da Campaign Standard, il profilo corrispondente in Campaign Standard viene aggiornato. Per assicurarsi che un profilo replicato includa la scelta dell’utente di annullare l’iscrizione a un servizio, le informazioni devono essere inviate a Campaign v7 anziché a Campaign Standard. Per eseguire la modifica, il servizio di annullamento dell’abbonamento è collegato a un’applicazione web Campaign v7 anziché ad Campaign Standard.
 
@@ -41,9 +39,9 @@ Quando un destinatario fa clic sul collegamento di annullamento dell’abbonamen
 >
 >Chiedi al tuo consulente di configurare l&#39;applicazione web per il servizio di annullamento dell&#39;abbonamento prima di seguire i passaggi seguenti.
 
-## Creazione di un nuovo destinatario {#creating-a-new-recipient}
+## Crea un nuovo destinatario {#creating-a-new-recipient}
 
-1. Crea un nuovo destinatario in Campaign v7 per la replica in Campaign Standard. Immetti tutte le informazioni possibili, compresi il cognome, il nome, l’indirizzo e-mail e l’indirizzo postale del destinatario. Tuttavia, non scegliere un **[!UICONTROL Salutation]** poiché verrà aggiunto nella sezione successiva, [Modifica di un destinatario](#editing-a-recipient). Per ulteriori informazioni, consulta [Aggiunta di destinatari](../../platform/using/adding-profiles.md).
+1. Crea un nuovo destinatario in Campaign v7 per la replica in Campaign Standard. Immetti tutte le informazioni possibili, compresi il cognome, il nome, l’indirizzo e-mail e l’indirizzo postale del destinatario. Tuttavia, non scegliere un **[!UICONTROL Salutation]** poiché verrà aggiunto nella sezione successiva, [Modificare un destinatario](#editing-a-recipient). Per ulteriori informazioni, consulta [Aggiungi destinatari](../../platform/using/adding-profiles.md).
 
    ![](assets/acs_connect_profile_sync_01.png)
 
@@ -53,11 +51,11 @@ Quando un destinatario fa clic sul collegamento di annullamento dell’abbonamen
 
    Per impostazione predefinita, la replica periodica per il connettore ACS è una volta ogni 15 minuti. Per ulteriori informazioni, consulta [Replica dati](../../integrations/using/acs-connector-principles-and-data-cycle.md#data-replication).
 
-## Modifica di un destinatario {#editing-a-recipient}
+## Modificare un destinatario {#editing-a-recipient}
 
 I passaggi seguenti per modificare un singolo punto di dati offrono un esempio semplice di come Campaign v7 diventa il database principale per Campaign Standard quando si utilizza la replica dei dati. La modifica o l’eliminazione dei dati replicati in Campaign v7 ha lo stesso effetto sui dati corrispondenti in Campaign Standard.
 
-1. Scegli il destinatario appena creato da [Creazione di un nuovo destinatario](#creating-a-new-recipient) e modifica il nome del destinatario. Ad esempio, scegli una **[!UICONTROL Salutation]** per il beneficiario (ad esempio, sig. o sig.ra). Per ulteriori informazioni, consulta [Modifica di un profilo](../../platform/using/editing-a-profile.md).
+1. Scegli il destinatario appena creato da [Crea un nuovo destinatario](#creating-a-new-recipient) e modifica il nome del destinatario. Ad esempio, scegli una **[!UICONTROL Salutation]** per il beneficiario (ad esempio, sig. o sig.ra). Per ulteriori informazioni, consulta [Modificare un profilo](../../platform/using/editing-a-profile.md).
 
    ![](assets/acs_connect_profile_sync_03.png)
 
@@ -67,7 +65,7 @@ I passaggi seguenti per modificare un singolo punto di dati offrono un esempio s
 
    Per impostazione predefinita, la replica periodica per il connettore ACS è una volta ogni 15 minuti. Per ulteriori informazioni, consulta [Replica dati](../../integrations/using/acs-connector-principles-and-data-cycle.md#data-replication).
 
-## Creazione di un flusso di lavoro {#creating-a-workflow}
+## Creare un flusso di lavoro {#creating-a-workflow}
 
 I profili e i servizi replicati da Campaign v7 sono disponibili per gli esperti di marketing digitale per sfruttare i dati avanzati in Campaign Standard. Le istruzioni seguenti illustrano come aggiungere una query a un flusso di lavoro di Campaign Standard e utilizzarla con il database replicato.
 
@@ -87,13 +85,13 @@ Per ulteriori informazioni e istruzioni complete sui flussi di lavoro Campaign S
    * Trascina **[!UICONTROL Profiles]** nell&#39;area di lavoro. Usa il menu a discesa del campo per scegliere **[!UICONTROL Is external resource]** per trovare i profili replicati da Campaign v7.
    * Trascina altri parametri di query per eseguire il targeting ulteriore dei profili replicati.
 
-## Creazione di una consegna {#creating-a-delivery}
+## Creare una consegna {#creating-a-delivery}
 
 >[!NOTE]
 >
->Le istruzioni per la creazione della consegna proseguono il flusso di lavoro avviato con [Creazione di un flusso di lavoro](#creating-a-workflow).
+>Le istruzioni per la creazione della consegna proseguono il flusso di lavoro avviato con [Creare un flusso di lavoro](#creating-a-workflow).
 
-Gli esperti di marketing digitale possono utilizzare un’applicazione web Campaign v7 per assicurarsi che la scelta di un destinatario di annullare l’iscrizione a un servizio venga inviata al database Campaign v7. Dopo che il destinatario fa clic sul collegamento di annullamento dell’abbonamento, l’opzione per interrompere la ricezione del servizio viene replicata da Campaign v7 a Campaign Standard. Per ulteriori dettagli, consulta [Modifica del collegamento di annullamento all’abbonamento](#changing-the-unsubscription-link).
+Gli esperti di marketing digitale possono utilizzare un’applicazione web Campaign v7 per assicurarsi che la scelta di un destinatario di annullare l’iscrizione a un servizio venga inviata al database Campaign v7. Dopo che il destinatario fa clic sul collegamento di annullamento dell’abbonamento, l’opzione per interrompere la ricezione del servizio viene replicata da Campaign v7 a Campaign Standard. Per ulteriori dettagli, consulta [Modificare il collegamento di annullamento all’abbonamento](#changing-the-unsubscription-link).
 
 Segui i passaggi seguenti per aggiungere una consegna e-mail a un flusso di lavoro esistente con il servizio di annullamento dell’abbonamento creato in Campaign v7. Per ulteriori informazioni e istruzioni complete sui flussi di lavoro Campaign Standard, consulta questo articolo [documento](../../workflow/using/about-workflows.md).
 
@@ -160,7 +158,7 @@ Segui i passaggi seguenti per aggiungere una consegna e-mail a un flusso di lavo
 
 ## Verifica del servizio di annullamento dell’abbonamento {#verifying-the-unsubscription-service}
 
-Segui le istruzioni in [Creazione di un flusso di lavoro](#creating-a-workflow) e [Creazione di una consegna](#creating-a-delivery) prima di passare ai passaggi seguenti.
+Segui le istruzioni in [Creare un flusso di lavoro](#creating-a-workflow) e [Creare una consegna](#creating-a-delivery) prima di passare ai passaggi seguenti.
 
 1. Il destinatario fa clic sul collegamento di annullamento dell’abbonamento nella consegna e-mail.
 
