@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 630a62c5e5c9782c5c55fdebd651493a2d68fc54
+source-git-commit: fc49c0ec80c8741b01ea150c3bc7362b73357607
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1035'
 ht-degree: 100%
 
 ---
@@ -27,7 +27,6 @@ _10 gennaio 2022_
 
 Agli account FDA sono stati apportati diversi miglioramenti di sicurezza:
 
-* I driver ODBC sono ora installati direttamente da terze parti in Adobe Campaign. Non sono più necessari passaggi manuali per installare tali driver.
 * Quando configuri l’account esterno FDA, ora puoi accedere al tuo account Snowflake utilizzando l’autenticazione con coppia di chiavi per una maggiore sicurezza. [Maggiori informazioni](../../installation/using/configure-fda-snowflake.md)
 * Quando configuri l’account esterno FDA, ora puoi accedere all’account Azure Synapse Analytics utilizzando l’identità gestita assegnata dal sistema. [Maggiori informazioni](../../installation/using/configure-fda-synapse.md#azure-external)
 * Tutti i riferimenti alla libreria log4j sono stati rimossi da Campaign per garantire la sicurezza ottimale.
