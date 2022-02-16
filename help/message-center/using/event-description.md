@@ -6,9 +6,9 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 9f7f4b6c-2ee8-4091-847d-f616d6abeb6b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: c30d64e6930cb97f4a3c15acd97654d57d1bbf85
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,8 @@ Il percorso WSDL per l’accesso a entrambi i metodi è:
 
 * **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent** per accedere allo schema del tipo in tempo reale.
 * **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent** per accedere allo schema del tipo batch.
+
+Per ulteriori informazioni sulla generazione di un file WSDL, consulta [questa sezione](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
 
 Entrambi i metodi contengono un **`<urn:sessiontoken>`** per l’accesso al modulo di messaggistica transazionale. È consigliabile utilizzare un metodo di identificazione tramite indirizzi IP attendibili. Per recuperare il token di sessione, esegui una chiamata SOAP di accesso, quindi un token get seguito da una disconnessione. Utilizza lo stesso token per diverse chiamate RT. Gli esempi inclusi in questa sezione utilizzano il metodo token di sessione che è quello consigliato.
 
