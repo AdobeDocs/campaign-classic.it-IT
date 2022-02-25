@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '2543'
+ht-degree: 100%
 
 ---
 
@@ -277,7 +277,7 @@ Per partecipare alla versione beta privata, compila questo [modulo](https://form
 * È stato risolto un problema che causava la modifica di alcuni caratteri nel codice sorgente alla riapertura di un’applicazione web creata e salvata in precedenza. (NEO-27597)
 * È stato risolto un problema che poteva verificarsi durante l’aggiornamento a una build contenente il nuovo meccanismo di firma per il tracciamento dei collegamenti (da Build 19.1.4 e Campaign 20.2): se a un evento erano associati più modelli, l’aggiornamento poteva causare la selezione del modello errato durante l’invio del messaggio transazionale. (NEO-28326)
 * È stato risolto un problema che causava la mancata risposta dell’MTA e l’impossibilità di elaborare le consegne, a meno che non venisse riavviato. (NEO-27455)
-* È stato risolto un problema nel database MSSQL relativo alla gestione del fuso orario durante le operazioni di caricamento in serie per una colonna di tipo datetime. (NEO-27375)
+* È stato risolto un problema nel database MSSQL relativo alla gestione del fuso orario durante le operazioni di caricamento in massa per una colonna del tipo datetime. (NEO-27375)
 * È stato corretto un problema di query del flusso di lavoro che si verificava con l’utilizzo delle funzioni xtk Redshift. SubDays, SubSeconds, SubMinutes e SubHours accettano ora entrambi i tipi di marca temporale Redshift (NEO-24962).
 * È stato risolto un problema che causava la visualizzazione di un messaggio di errore script durante il tentativo di visualizzare in anteprima un rapporto con accesso anonimo. (NEO-27081)
 * È stato risolto un problema che poteva ridurre l’utilizzo di memoria sul server durante l’analisi della consegna.
