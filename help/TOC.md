@@ -7,9 +7,9 @@ user-guide-description: Con Adobe Campaign, puoi utilizzare dati approfonditi su
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2555'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -374,7 +374,7 @@ ht-degree: 99%
       + [Configurare l’integrazione con [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Inserire un’immagine dinamica](integrations/using/inserting-a-dynamic-image.md)
    + ACS Connector {#acs-connector}
-      + [Introduzione a [!DNL ACS Connector]](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [Introduzione a  [!DNL ACS Connector]](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [Sincronizzare i profili](integrations/using/synchronizing-profiles.md)
       + [Sincronizzare i tipi di pubblico](integrations/using/synchronizing-audiences.md)
       + [Sincronizzare le applicazioni web](integrations/using/synchronizing-web-applications.md)
@@ -506,7 +506,7 @@ ht-degree: 99%
       + [Esempi di codice JavaScript nei flussi di lavoro](workflow/using/javascript-in-workflows.md)
       + [Accedere a un database esterno](workflow/using/accessing-an-external-database--fda-.md)
       + [Gestire le autorizzazioni](workflow/using/managing-rights.md)
-      + [Modificare le immagini delle attività](workflow/using/managing-activity-images.md)
+      + [Modificare le immagini dell’attività](workflow/using/managing-activity-images.md)
       + [Gestire i fusi orari](workflow/using/managing-time-zones.md)
       + [Flussi di lavoro tecnici](workflow/using/about-technical-workflows.md)
 + Gestire le offerte {#managing-offers}
