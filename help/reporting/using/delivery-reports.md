@@ -4,9 +4,9 @@ title: Rapporti di consegna
 description: Rapporti di consegna
 feature: Reporting
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 64d97c7879320296a5f8efc5bb5bc2bea8663c08
 workflow-type: tm+mt
-source-wordcount: '1443'
+source-wordcount: '1451'
 ht-degree: 2%
 
 ---
@@ -63,7 +63,7 @@ Questo rapporto combina gli indicatori chiave per tenere traccia del comportamen
 >
 >Le percentuali correlate vengono calcolate in base al numero di messaggi inoltrati con successo.
 
-* **[!UICONTROL Distinct opens for the population reached]** : Stima del numero di destinatari con cui è stato aperto un messaggio almeno una volta. Vengono presi in considerazione i clic sui collegamenti di annullamento all’abbonamento e sulle pagine mirror.
+* **[!UICONTROL Distinct opens for the population reached]** : Stima del numero di destinatari con cui è stato aperto un messaggio almeno una volta. I clic sugli URL tracciati vengono presi in considerazione poiché è necessario aprire le e-mail per fare clic su un collegamento.
 * **[!UICONTROL Sum of opens for the population reached]** : Stima del numero totale di aperture per destinatari con targeting.
 * **[!UICONTROL Clicks on opt-out link]** : Numero di clic sul collegamento di annullamento dell’abbonamento.
 * **[!UICONTROL Clicks on the mirror page link]** : Numero di clic sul collegamento alla pagina speculare. Per essere preso in considerazione, il collegamento deve essere definito come tale nella procedura guidata di consegna (URL tracciati). Fai riferimento a questo [page](../../delivery/using/about-delivery-monitoring.md).

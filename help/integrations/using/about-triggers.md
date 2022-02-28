@@ -5,10 +5,10 @@ description: Guida introduttiva all’implementazione di Adobe Experience Cloud 
 audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: af40fe822c69979a478604595790d4deefd6d5b0
+source-git-commit: 0a59b0dbdbe70cf8993ce7153b8f3c049c1f1108
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 16%
+source-wordcount: '235'
+ht-degree: 8%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 16%
 
 >[!CAUTION]
 >
->Questa funzionalità non è disponibile come funzione predefinita del prodotto. La sua implementazione richiede l’intervento della Consulenza Adobe. Per maggiori informazioni, contatta un rappresentante Adobe di fiducia
+>Questa funzionalità non è disponibile come funzione predefinita del prodotto. Per questa implementazione, devi prima aprire un ticket con il supporto Adobe. Potrai quindi seguire i passaggi descritti in questo [page](../../integrations/using/configuring-pipeline.md#prerequisites).
 
 [!DNL Triggers] esegui le azioni di marketing entro un breve intervallo di tempo dopo l’azione di un utente. Il tempo di risposta tipico è inferiore a un&#39;ora.
 
