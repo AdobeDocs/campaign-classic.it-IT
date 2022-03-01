@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 830d91dc5f6663a24d9fb8c2afeb03cdb93d4eec
+source-git-commit: 2f22f1a3cbf0dccb6872718ea4e0bd20b257c169
 workflow-type: tm+mt
 source-wordcount: '1257'
 ht-degree: 83%
@@ -19,7 +19,7 @@ ht-degree: 83%
 
 In questa pagina sono elencate nuove funzionalità, miglioramenti e correzioni introdotti con l’**ultima versione di Campaign v7**. Ogni nuova build viene fornita con uno stato che viene materializzato da un colore. Ulteriori informazioni sugli stati della build di Campaign Classic v7 in [questa pagina](rn-overview.md).
 
-## ![](assets/do-not-localize/green_2.png) Versione 7.2.2 - Build 4349 {#release-7-2-2}
+## ![](assets/do-not-localize/green_2.png) Versione 7.2.2 - Build 9349 {#release-7-2-2}
 
 _1 marzo 2022_
 
