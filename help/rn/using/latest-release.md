@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: fc49c0ec80c8741b01ea150c3bc7362b73357607
-workflow-type: ht
-source-wordcount: '1035'
-ht-degree: 100%
+source-git-commit: 8278228a6610e99f9400343bc967e16f2759dfbe
+workflow-type: tm+mt
+source-wordcount: '1257'
+ht-degree: 83%
 
 ---
 
@@ -18,6 +18,24 @@ ht-degree: 100%
 ![](../../assets/v7-only.svg)
 
 In questa pagina sono elencate nuove funzionalità, miglioramenti e correzioni introdotti con l’**ultima versione di Campaign v7**. Ogni nuova build viene fornita con uno stato che viene materializzato da un colore. Ulteriori informazioni sugli stati della build di Campaign Classic v7 in [questa pagina](rn-overview.md).
+
+## ![](assets/do-not-localize/green_2.png) Versione 7.2.2 - Build 4349 {#release-7-2-2}
+
+_1 marzo 2022_
+
+**Patch**
+
+* È stato risolto un problema, durante la configurazione del **Analisi web** account esterno, che ha fatto sì che lo stato di integrazione mostrasse sempre &quot;Integrazione riuscita&quot; anche quando si sono verificati errori. (NEO-36672)
+* Sono stati corretti diversi errori successivi all’aggiornamento relativi al meccanismo degli ID di sequenza in caso di ID negativi. (NEO-43205, NEO-42846, NEO-42845)
+* È stato risolto un problema che si verificava con l’utilizzo di **Analisi web** account esterno con consegne ricorrenti e continue, che hanno causato la perdita parziale di dati dall’account esterno. (NEO-38548)
+* È stato risolto un problema che rallentava l’aggiornamento successivo all’aggiornamento della tabella NmsActiveContact. (NEO-43206)
+* È stato risolto un problema di errore post-aggiornamento che si verificava se le cartelle predefinite erano state spostate dal **Amministrazione** a qualsiasi altra posizione. (NEO-42875)
+* È stato risolto un problema che si verificava con l’utilizzo di un’ **Update data** attività del flusso di lavoro che potrebbe impedire l’aggiornamento dello schema del destinatario con i dati del destinatario da un database esterno di Google Cloud. (NEO-42343)
+* È stato risolto un problema relativo al connettore Adobe Analytics durante il post aggiornamento. (NEO-43318, NEO-38136)
+* È stato risolto un problema CUID sovrascritto da &quot;VALUE_TO_CHANGE&quot; durante il post aggiornamento. (NEO-43267)
+* È stato risolto un problema che causava errori durante la sincronizzazione delle istanze di mid-sourcing e marketing su una configurazione multi-mid. (NEO-10432)
+* È stato risolto un problema che causava un errore durante l’aggiornamento del flusso di lavoro di recapito messaggi in caso di più di 1000 log contemporaneamente. (NEO-40276)
+* È stato risolto un problema che impediva l&#39;aggiornamento automatico degli indicatori di consegna del rapporto di apertura e del rapporto di clic. (NEO-43253)
 
 ## ![](assets/do-not-localize/green_2.png) Versione 7.2.1 - Build 9346 {#release-7-2-1}
 
