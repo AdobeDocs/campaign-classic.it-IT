@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 8278228a6610e99f9400343bc967e16f2759dfbe
+source-git-commit: 830d91dc5f6663a24d9fb8c2afeb03cdb93d4eec
 workflow-type: tm+mt
 source-wordcount: '1257'
 ht-degree: 83%
@@ -37,7 +37,7 @@ _1 marzo 2022_
 * È stato risolto un problema che causava un errore durante l’aggiornamento del flusso di lavoro di recapito messaggi in caso di più di 1000 log contemporaneamente. (NEO-40276)
 * È stato risolto un problema che impediva l&#39;aggiornamento automatico degli indicatori di consegna del rapporto di apertura e del rapporto di clic. (NEO-43253)
 
-## ![](assets/do-not-localize/green_2.png) Versione 7.2.1 - Build 9346 {#release-7-2-1}
+## ![](assets/do-not-localize/limited_2.png) Versione 7.2.1 - Build 9346 {#release-7-2-1}
 
 _10 gennaio 2022_
 
