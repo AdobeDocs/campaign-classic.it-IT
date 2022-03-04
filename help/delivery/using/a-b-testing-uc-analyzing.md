@@ -1,9 +1,10 @@
 ---
 product: campaign
-title: Analisi del risultato
+title: Analizzare il risultato
 description: Scopri come eseguire test A/B tramite un caso d’uso dedicato
+feature: A/B Testing
 exl-id: e6f39180-d161-4226-810a-10bb1c3682ca
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 5%

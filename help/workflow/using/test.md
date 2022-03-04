@@ -2,14 +2,12 @@
 product: campaign
 title: Attività Test
 description: Ulteriori informazioni sull’attività del flusso di lavoro Test
-audience: workflow
-content-type: reference
-topic-tags: flow-control-activities
+feature: Workflows
 exl-id: 6f246d56-01c8-43f5-b12b-c40d258b93c8
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '192'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -23,7 +21,7 @@ Una condizione è un&#39;espressione JavaScript che deve essere valutata come &#
 
 ![](assets/edit_test.png)
 
-Per ulteriori informazioni su tutte le funzioni JavaScript aggiuntive e i metodi SOAP del server applicativo accessibili tramite il flusso di lavoro JavaScript, fare riferimento a [Documentazione JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
+Per ulteriori informazioni su tutte le funzioni JavaScript aggiuntive e i metodi SOAP del server applicativo accessibili tramite il flusso di lavoro JavaScript, fare riferimento a [Documentazione JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=it).
 
 Puoi anche inserire le variabili direttamente da questo editor. Per ulteriori informazioni su come utilizzare le variabili, consulta [questa sezione](javascript-scripts-and-templates.md#variables).
 

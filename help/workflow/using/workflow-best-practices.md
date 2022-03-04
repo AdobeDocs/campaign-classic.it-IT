@@ -2,13 +2,11 @@
 product: campaign
 title: Best practice per i flussi di lavoro
 description: Scopri le best practice per i flussi di lavoro per Campaign
-audience: workflow
-content-type: reference
-topic-tags: -general-operation
+feature: Workflows
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 9126e2cc088ef0e5761cc20bd19980d323f3a3ea
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1687'
 ht-degree: 6%
 
 ---
@@ -56,9 +54,9 @@ Per informazioni su come eliminare i log, consulta questo [documentazione](start
 
 ### Esecuzione di un flusso di lavoro {#workflow-execution}
 
-È consigliabile non pianificare l’esecuzione di un flusso di lavoro per più di 15 minuti, in quanto potrebbe impedire le prestazioni complessive del sistema e creare blocchi nel database.
+**Non pianificare un flusso di lavoro da eseguire più di ogni 15 minuti** perché potrebbe impedire le prestazioni complessive del sistema e creare blocchi nel database.
 
-Evita di lasciare i flussi di lavoro in pausa. Se crei un flusso di lavoro temporaneo, assicurati che sia in grado di terminare correttamente e di non rimanere in un **[!UICONTROL paused]** stato. Se viene messo in pausa, significa che è necessario mantenere le tabelle temporanee e quindi aumentare le dimensioni del database. Assegna le autorità di vigilanza del flusso di lavoro in Proprietà flusso di lavoro per inviare un avviso in caso di errore o interruzione di un flusso di lavoro da parte del sistema.
+**Evita di lasciare i flussi di lavoro in pausa**. Se crei un flusso di lavoro temporaneo, assicurati che sia in grado di terminare correttamente e di non rimanere in un **[!UICONTROL paused]** stato. Se viene messo in pausa, significa che è necessario mantenere le tabelle temporanee e quindi aumentare le dimensioni del database. Assegna le autorità di vigilanza del flusso di lavoro in Proprietà flusso di lavoro per inviare un avviso in caso di errore o interruzione di un flusso di lavoro da parte del sistema.
 
 Per evitare che i flussi di lavoro siano in pausa:
 
@@ -66,9 +64,11 @@ Per evitare che i flussi di lavoro siano in pausa:
 * Semplifica i tuoi flussi di lavoro, ad esempio suddividendoli in flussi di lavoro di grandi dimensioni in diversi flussi di lavoro. È possibile utilizzare **[!UICONTROL External signal]** le attività attivano la loro esecuzione in base all’esecuzione di altri flussi di lavoro.
 * Evita di disabilitare le attività con i flussi nei flussi di lavoro lasciando i thread aperti e portando a numerose tabelle temporanee che possono occupare molto spazio. Non mantenere le attività in **[!UICONTROL Do not enable]** o **[!UICONTROL Enable but do not execute]** nei flussi di lavoro.
 
-Inoltre, interrompi i flussi di lavoro non utilizzati. I flussi di lavoro che continuano a essere in esecuzione mantengono le connessioni al database.
+**Interrompere i flussi di lavoro non utilizzati**. I flussi di lavoro che continuano a essere in esecuzione mantengono le connessioni al database.
 
-Utilizza l’arresto incondizionato solo nei casi più rari. Non utilizzare questa azione regolarmente. La mancata chiusura delle connessioni generate dai flussi di lavoro al database influisce sulle prestazioni.
+**Utilizza solo l’arresto incondizionato nei casi più rari**. Non utilizzare questa azione regolarmente. La mancata chiusura delle connessioni generate dai flussi di lavoro al database influisce sulle prestazioni.
+
+**Non eseguire più richieste di arresto sullo stesso flusso di lavoro**. L’arresto di un flusso di lavoro è un processo asincrono: La richiesta viene registrata, quindi il server del flusso di lavoro o i server annullano le operazioni in corso. L’arresto di un’istanza di flusso di lavoro può richiedere del tempo, specialmente se il flusso di lavoro è in esecuzione su più server, ciascuno dei quali deve assumere il controllo per annullare le attività in corso. Per evitare problemi, attendi che l’operazione di arresto sia completata ed evita di interrompere un flusso di lavoro più volte.
 
 ### Esegui nell’opzione del motore {#execute-in-the-engine-option}
 

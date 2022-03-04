@@ -2,11 +2,9 @@
 product: campaign
 title: Ciclo di vita di un flusso di lavoro
 description: Ulteriori informazioni sul ciclo di vita di un flusso di lavoro
-audience: workflow
-content-type: reference
-topic-tags: -general-operation
+feature: Workflows
 exl-id: fceb5752-dc73-4386-8c18-c4f3e6110ca5
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 2%
@@ -27,7 +25,7 @@ Il ciclo del flusso di lavoro prevede tre passaggi principali.
 
    Una volta completata la fase di progettazione iniziale, è possibile avviare il flusso di lavoro. In questa fase, l’istanza viene gestita dal server e le singole attività vengono eseguite. Il flusso di lavoro può ancora essere modificato con alcune precauzioni.
 
-* **Completato**
+* **Finito**
 
    Un flusso di lavoro è &quot;Completato&quot; quando non sono più presenti attività in corso o quando un operatore ha esplicitamente interrotto l’istanza.
 

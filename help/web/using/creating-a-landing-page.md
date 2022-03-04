@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Creazione di una pagina di destinazione
-description: Creazione di una pagina di destinazione
-audience: web
-content-type: reference
-topic-tags: editing-html-content
+title: Creare una pagina di destinazione
+description: Creare una pagina di destinazione
+feature: Landing Pages
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 3%
 
 ---
 
-# Creazione di una pagina di destinazione{#creating-a-landing-page}
+# Creare una pagina di destinazione{#creating-a-landing-page}
 
 ![](../../assets/common.svg)
 

@@ -2,10 +2,11 @@
 product: campaign
 title: Utilizzare il contesto nei rapporti
 description: Scopri come utilizzare il contesto nei rapporti
+feature: Reporting
 exl-id: a19e2843-d3f9-48c3-af72-cc1bc54f6360
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---

@@ -2,11 +2,12 @@
 product: campaign
 title: Proprietà del rapporto
 description: Ulteriori informazioni sulle impostazioni delle proprietà del report
+feature: Reporting
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '429'
+ht-degree: 1%
 
 ---
 

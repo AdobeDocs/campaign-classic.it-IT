@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Aggiunta di campi a un modulo web
-description: Aggiunta di campi a un modulo web
-audience: web
-content-type: reference
-topic-tags: web-forms
+title: Aggiungere campi a un modulo web
+description: Aggiungere campi a un modulo web
+feature: Web Forms, Landing Pages
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
-source-git-commit: a5f6478d3c0780464974053e389923614abba582
+source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
 workflow-type: tm+mt
 source-wordcount: '2368'
 ht-degree: 1%
 
 ---
 
-# Aggiunta di campi a un modulo web{#adding-fields-to-a-web-form}
+# Aggiungere campi a un modulo web{#adding-fields-to-a-web-form}
 
 ![](../../assets/common.svg)
 
@@ -377,7 +375,6 @@ Per impostazione predefinita, i file caricati sono memorizzati in file di risors
 >* Adobe Campaign non controlla la dimensione o il tipo di risorsa caricata: si consiglia pertanto vivamente di utilizzare i campi di caricamento solo per siti Intranet di tipo protetto.
 >* Se più server sono collegati all’istanza (architettura di bilanciamento del carico), è necessario assicurarsi che le chiamate al modulo web arrivino sullo stesso server.
 >* Queste implementazioni richiedono l’assistenza del team di consulenza Adobe Campaign.
-
 >
 
 

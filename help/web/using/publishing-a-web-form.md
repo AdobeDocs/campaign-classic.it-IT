@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Pubblicazione di un modulo web
-description: Pubblicazione di un modulo web
-audience: web
-content-type: reference
-topic-tags: web-forms
+title: Pubblicare un modulo web
+description: Pubblicare un modulo web
+feature: Web Forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 1%
 
 ---
 
-# Pubblicazione di un modulo web{#publishing-a-web-form}
+# Pubblicare un modulo web{#publishing-a-web-form}
 
 ![](../../assets/common.svg)
 

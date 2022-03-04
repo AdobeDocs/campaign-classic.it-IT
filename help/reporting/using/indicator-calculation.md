@@ -2,11 +2,12 @@
 product: campaign
 title: Calcolo indicatore
 description: Calcolo indicatore
+feature: Reporting
 exl-id: 52ca1595-16b3-4323-9122-d1ac13c08147
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2972'
+ht-degree: 2%
 
 ---
 
@@ -109,7 +110,7 @@ Questo rapporto si basa sul **[!UICONTROL Delivery and tracking statistics]** ta
   </tr> 
   <tr> 
    <td> Errori<br /> </td> 
-   <td> @value<br /> </td> 
+   <td> @valore<br /> </td> 
    <td> Numero di messaggi non riusciti per questo tipo di errore.<br /> </td> 
    <td> Count(@status=2 e msg/@failedReason="Valore del tipo di errore")<br /> </td> 
   </tr> 
@@ -230,7 +231,7 @@ Questo rapporto si basa sul **[!UICONTROL Delivery]** (nms:delivery), **[!UICONT
   </tr> 
   <tr> 
    <td> E-mail<br /> </td> 
-   <td> @email<br /> </td> 
+   <td> @e-mail<br /> </td> 
    <td> Somma di tutti i @totalClicks per i quali la categoria URL è uguale a "email".<br /> </td> 
    <td> Sum(iIf([url/@category]='email',@totalClicks,0))<br /> </td> 
   </tr> 
@@ -645,7 +646,7 @@ Questo rapporto si basa sul **[!UICONTROL Delivery and tracking statistics]** (n
   </tr> 
   <tr> 
    <td> E-mail<br /> </td> 
-   <td> @email<br /> </td> 
+   <td> @e-mail<br /> </td> 
    <td> Somma di tutti i @totalClicks con una categoria URL che è uguale a "email".<br /> </td> 
    <td> Sum(iIf([url/@category]='email',@totalClicks,0))<br /> </td> 
   </tr> 
@@ -821,7 +822,7 @@ Questo rapporto si basa sul **[!UICONTROL Delivery]** tabella (nms:delivery).
    <td> sum(Iif([url/@type] = 1, @totalClicks, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Apri<br /> </td> 
+   <td> Aperto<br /> </td> 
    <td> @opens<br /> </td> 
    <td> Somma di tutti @totalClicks con una chiave primaria URL uguale a 1.<br /> </td> 
    <td> sum(Iif([@url-id] = 1, @totalClicks, 0))<br /> </td> 

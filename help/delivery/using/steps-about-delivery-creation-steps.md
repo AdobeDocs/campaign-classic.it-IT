@@ -2,8 +2,9 @@
 product: campaign
 title: Informazioni sui passaggi per la creazione di consegne in Adobe Campaign Classic
 description: Scopri i passaggi principali per la creazione di consegne in Adobe Campaign Classic
+feature: Channel Configuration
 exl-id: 0188c3fe-8176-4904-8505-c47a72c20fcc
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 9%

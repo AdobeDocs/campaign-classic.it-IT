@@ -2,14 +2,12 @@
 product: campaign
 title: Elementi statici in un modulo web
 description: Elementi statici in un modulo web
-audience: web
-content-type: reference
-topic-tags: web-forms
+feature: Web Forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
-source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
+source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
 workflow-type: tm+mt
 source-wordcount: '1031'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -30,7 +28,7 @@ Sono disponibili i seguenti tipi di campi:
 
    >[!NOTE]
    >
-   >Sul lato server, lo script può utilizzare le funzioni definite in [Documentazione JSAPI per Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
+   >Sul lato server, lo script può utilizzare le funzioni definite in [Documentazione JSAPI per Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=it).
 
 ## Inserisci contenuto HTML {#inserting-html-content}
 

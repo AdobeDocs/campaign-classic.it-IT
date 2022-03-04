@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Traduzione di un’applicazione web
-description: Traduzione di un’applicazione web
-audience: web
-content-type: reference
-topic-tags: web-applications
+title: Progettare un’applicazione web
+description: Progettare un’applicazione web
+feature: Web Apps
 exl-id: 82c5c610-8161-4686-aa79-1b690e763765
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 5%
 
 ---
 
-# Traduzione di un’applicazione web{#translating-a-web-application}
+# Progettare un’applicazione web{#translating-a-web-application}
 
 ![](../../assets/common.svg)
 

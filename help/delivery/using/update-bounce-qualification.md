@@ -2,8 +2,9 @@
 product: campaign
 title: Aggiornare la qualifica di mancato recapito dopo un’interruzione del servizio ISP
 description: Scopri come aggiornare la qualificazione dei messaggi non recapitati dopo un’interruzione dell’ISP
+feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%

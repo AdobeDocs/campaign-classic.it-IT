@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Monitoraggio dei flussi di lavoro tecnici
-description: Monitoraggio dei flussi di lavoro tecnici
-audience: workflow
-content-type: reference
-topic-tags: use-cases
+title: Monitorare i flussi di lavoro tecnici
+description: Monitorare i flussi di lavoro tecnici
+feature: Workflows
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
-source-git-commit: 1a4fd75a90667e57149772497a7b1bd14b251db3
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 6%
 
 ---
 
-# Monitoraggio dei flussi di lavoro tecnici {#monitoring-technical-workflows}
+# Monitorare i flussi di lavoro tecnici {#monitoring-technical-workflows}
 
 ![](../../assets/common.svg)
 

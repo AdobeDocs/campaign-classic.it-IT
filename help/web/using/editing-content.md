@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Modifica del contenuto
-description: Modifica del contenuto
-audience: web
-content-type: reference
-topic-tags: editing-html-content
+title: Modificare i contenuti
+description: Modificare i contenuti
+feature: Web Apps, Web Forms, Landing Pages
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 1%
 
 ---
 
-# Modifica del contenuto{#editing-content}
+# Modificare i contenuti{#editing-content}
 
 ![](../../assets/common.svg)
 
@@ -31,7 +29,7 @@ Per aggiungere una condizione di visibilità, seleziona un blocco e immetti la c
 
 ![](assets/dce_popup_visibilitycondition.png)
 
-Queste condizioni adottano la sintassi dell&#39;espressione XTK (ad esempio **ctx.recipient.@email!= &quot;&quot;** o **ctx.recipient.@status==&quot;0&quot;**). Per impostazione predefinita, tutti i campi sono visibili.
+Queste condizioni adottano la sintassi dell&#39;espressione XTK (ad esempio **ctx.recipient.@e-mail != &quot;&quot;** o **ctx.recipient.@status==&quot;0&quot;**). Per impostazione predefinita, tutti i campi sono visibili.
 
 >[!NOTE]
 >
@@ -137,7 +135,6 @@ I blocchi e i campi di personalizzazione possono essere inseriti solo nei blocch
 >* Nuova finestra (_blank)
 >* Finestra corrente (_self)
 >* Comportamento del browser predefinito
-
 >
 
 

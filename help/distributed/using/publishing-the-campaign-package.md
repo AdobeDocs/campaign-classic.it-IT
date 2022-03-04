@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Pubblicazione del pacchetto della campagna
-description: Pubblicazione del pacchetto della campagna
-audience: campaign
-content-type: reference
-topic-tags: distributed-marketing
+title: Pubblicare il pacchetto della campagna
+description: Pubblicare il pacchetto della campagna
+feature: Distributed Marketing
 exl-id: e96add16-cbc8-43af-acff-06a95d5b7749
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 2%
 
 ---
 
-# Pubblicazione del pacchetto della campagna{#publishing-the-campaign-package}
+# Pubblicare il pacchetto della campagna{#publishing-the-campaign-package}
 
 ![](../../assets/v7-only.svg)
 

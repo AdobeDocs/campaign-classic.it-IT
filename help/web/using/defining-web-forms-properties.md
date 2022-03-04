@@ -1,12 +1,10 @@
 ---
 product: campaign
-title: Definizione delle proprietà dei moduli web
-description: Definizione delle proprietà dei moduli web
-audience: web
-content-type: reference
-topic-tags: web-forms
+title: Definire le proprietà dei moduli web
+description: Definire le proprietà dei moduli web
+feature: Web Forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
 workflow-type: tm+mt
 source-wordcount: '1206'
 ht-degree: 1%

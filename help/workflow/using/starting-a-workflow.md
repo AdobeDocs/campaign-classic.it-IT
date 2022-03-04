@@ -1,11 +1,12 @@
 ---
 product: campaign
-title: Avvio di un flusso di lavoro
+title: Avviare un flusso di lavoro
 description: Scopri come avviare un flusso di lavoro e scoprire la barra delle azioni dei flussi di lavoro e fai clic con il pulsante destro del mouse sul menu
+feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
+source-git-commit: 9126e2cc088ef0e5761cc20bd19980d323f3a3ea
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '797'
 ht-degree: 2%
 
 ---
@@ -46,7 +47,9 @@ I pulsanti della barra degli strumenti sono descritti in questo [sezione](../../
 
    Questa azione interrompe l&#39;esecuzione di un flusso di lavoro. Lo stato dell’istanza è impostato su **Completato**. Le operazioni in corso vengono interrotte, se possibile. Le importazioni e le query SQL vengono annullate immediatamente.
 
-   L&#39;arresto è un processo asincrono. La richiesta viene registrata, quindi il server del flusso di lavoro o i server annullano le operazioni in corso. L’arresto di un’istanza di flusso di lavoro può richiedere del tempo, specialmente se il flusso di lavoro è in esecuzione su più server, ciascuno dei quali deve assumere il controllo per annullare le attività in corso.
+   >[!IMPORTANT]
+   >
+   >L’arresto di un flusso di lavoro è un processo asincrono: La richiesta viene registrata, quindi il server del flusso di lavoro o i server annullano le operazioni in corso. L’arresto di un’istanza di flusso di lavoro può richiedere del tempo, specialmente se il flusso di lavoro è in esecuzione su più server, ciascuno dei quali deve assumere il controllo per annullare le attività in corso. Per evitare problemi, attendi il completamento dell’operazione di arresto e non esegui più richieste di arresto sullo stesso flusso di lavoro.
 
 * **[!UICONTROL Restart]**
 

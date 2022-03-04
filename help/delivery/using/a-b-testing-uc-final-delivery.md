@@ -1,9 +1,10 @@
 ---
 product: campaign
-title: Definizione della consegna finale
+title: Definire la consegna finale
 description: Scopri come eseguire test A/B tramite un caso d’uso dedicato
+feature: A/B Testing
 exl-id: bc23a444-a872-48fb-8bba-64b301541089
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '108'
 ht-degree: 9%

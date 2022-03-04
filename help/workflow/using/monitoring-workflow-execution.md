@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Monitoraggio dell’esecuzione dei flussi di lavoro
-description: Monitoraggio dell’esecuzione dei flussi di lavoro
-audience: workflow
-content-type: reference
-topic-tags: use-cases
+title: Monitorare l’esecuzione di un flusso di lavoro
+description: Monitorare l’esecuzione di un flusso di lavoro
+feature: Workflows
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '2016'
 ht-degree: 0%
 
 ---
 
-# Monitoraggio dell’esecuzione dei flussi di lavoro {#monitoring-workflow-execution}
+# Monitorare l’esecuzione di un flusso di lavoro {#monitoring-workflow-execution}
 
 ![](../../assets/common.svg)
 

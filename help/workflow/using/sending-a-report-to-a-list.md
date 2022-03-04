@@ -2,8 +2,9 @@
 product: campaign
 title: Inviare un rapporto a un elenco
 description: Scopri come inviare un rapporto a un elenco con un flusso di lavoro
+feature: Workflows
 exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 1%
