@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: e2eb7e04-faaa-4df0-913d-471c291eeb03
-source-git-commit: 0f31ee570ba6e763f48902e91c5d823ac297fc24
+source-git-commit: c228f827e91f25ee3a837f7fe6549ae4e5714ba3
 workflow-type: tm+mt
-source-wordcount: '6569'
-ht-degree: 74%
+source-wordcount: '6619'
+ht-degree: 73%
 
 ---
 
@@ -35,7 +35,7 @@ _27 ottobre 2020_
 >
 > * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), è necessario eseguire l’aggiornamento affinché sia il server di Campaign che la console client possano connettersi a Campaign dopo il **30 giugno 2021**. [Ulteriori informazioni](../../technotes/using/ims-updates.md)
 > * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
-> * Se utilizzi l’integrazione Experience Cloud Triggers tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione OAuth legacy con Campaign [è stata ritirata](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) a **settembre 2021**. Gli ambienti in hosting beneficiano di un’estensione fino a  **23 febbraio 2022**. In qualità di cliente on-premise o ibrido, contatta l’Assistenza clienti Adobe per estendere il supporto a febbraio 2022. Devi fornire ad Adobe [l’AppID dell’applicazione OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional).
+> * Se utilizzi l’integrazione Experience Cloud Triggers tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione OAuth legacy con Campaign [è stata ritirata](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) a **settembre 2021**. Gli ambienti in hosting usufruiscono di una proroga fino al **23 febbraio 2022**. In qualità di cliente on-premise o ibrido, contatta l’Assistenza clienti Adobe per estendere il supporto a febbraio 2022. Devi fornire ad Adobe [l’AppID dell’applicazione OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional).
 
 
 **Novità**
@@ -125,6 +125,7 @@ Ulteriori informazioni sui cookie in [questa sezione](../../platform/using/priva
 * È stato migliorato il messaggio di errore visualizzato durante l’inserimento di un’immagine da Adobe Target che lasciava il nome del tenant vuoto nell’account esterno.
 * Nelle proprietà di consegna, l’opzione **[!UICONTROL Archive emails]** è stata rinominata **[!UICONTROL Email BCC]**.
 * Per migliorare la robustezza, ora vengono rifiutate le query selectAll con nodi non validi. In caso di necessità si può disattivare il controllo e tornare al comportamento precedente, impostando XtkSecurity_Disable_QueryCheck su 0.
+* È stato aggiunto il supporto dell’intervallo ID negativo per la sequenza nmsBroadlogId. Questa build regola il valore min_value della sequenza nmsBroadlogId in modo che includa l&#39;intervallo negativo. Nel caso in cui si disponga di un caso d’uso rigoroso che non consente ID negativi, ripristina il valore min_value della sequenza a 1.
 
 **Evoluzioni tecniche**
 
@@ -224,7 +225,7 @@ _22 dicembre 2020_
 >
 > * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), è necessario eseguire l’aggiornamento affinché sia il server di Campaign che la console client possano connettersi a Campaign dopo il **30 giugno 2021**.  [Ulteriori informazioni](../../technotes/using/ims-updates.md)
 > * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
-> * Se utilizzi l’integrazione Experience Cloud Triggers tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione OAuth legacy con Campaign [è stata ritirata](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) a **settembre 2021**. Hosted environments benefit from an extension until  **February 23, 2022**. In qualità di cliente on-premise o ibrido, contatta l’Assistenza clienti Adobe per estendere il supporto a febbraio 2022. Devi fornire ad Adobe [l’AppID dell’applicazione OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional).
+> * Se utilizzi l’integrazione Experience Cloud Triggers tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione OAuth legacy con Campaign [è stata ritirata](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) a **settembre 2021**. Gli ambienti in hosting usufruiscono di una proroga fino al **23 febbraio 2022**. In qualità di cliente on-premise o ibrido, contatta l’Assistenza clienti Adobe per estendere il supporto a febbraio 2022. Devi fornire ad Adobe [l’AppID dell’applicazione OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional).
 
 
 **Miglioramenti**
@@ -233,7 +234,7 @@ _22 dicembre 2020_
 * L’autenticazione dell’integrazione dei trigger originariamente basata su oAUTH per accedere alla pipeline è stata modificata e spostata in Adobe I/O. [Ulteriori informazioni](../../integrations/using/configuring-adobe-io.md)
 * Con la [fine del supporto del protocollo binario legacy del servizio APNs per iOS](https://developer.apple.com/news/?id=c88acm2b), tutte le istanze che lo utilizzano vengono aggiornate al protocollo HTTP/2 nella fase di post-aggiornamento.
 * È stato risolto un problema di sicurezza per rafforzare la protezione contro gli attacchi SSRF (Server Side Request Forgery). (NEO-27777)
-* Fixed an issue causing the deactivation of the SMPP connector after a connection error, preventing other SMS deliveries from being sent and leading to performance issues. (NEO-28609)
+* È stato risolto un problema che causava la disattivazione del connettore SMPP dopo un errore di connessione, impedendo l’invio di altre consegne SMS e causando problemi di prestazioni. (NEO-28609)
 * È stato risolto un problema di arresto anomalo del server impedendo il danneggiamento della memoria durante la pulizia del parser di espressione. (NEO-26856)
 * È stato risolto un problema che causava l’arresto anomalo del server durante la visualizzazione dei dati di destinazione del resto di un’attività **Split** in un flusso di lavoro.
 * È stato risolto un problema che poteva mostrare un messaggio di errore durante il tentativo di visualizzare l’anteprima dei messaggi SMS dopo una query su uno schema diverso da **Destinatario** (nms:recipient). (NEO-27517)
@@ -590,11 +591,11 @@ _17 febbraio 2020_
 
 **Miglioramenti**
 
-* iOS 13 is now supported with the HTTP2 connector.
+* iOS 13 è ora supportato con il connettore HTTP2.
 
-* È stata migliorata la gestione della quarantena e la pulizia delle tabelle utilizzate dalla funzione di notifica push (nms:address e nms:appSubscriptionRcp). Per iOS (solo per il connettore HTTP2), i token disattivati vengono ora gestiti nello stesso modo di Android. The disable flag is now set in the NmsAppSubscriptionRcp table. [Maggiori informazioni](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
+* È stata migliorata la gestione della quarantena e la pulizia delle tabelle utilizzate dalla funzione di notifica push (nms:address e nms:appSubscriptionRcp). Per iOS (solo per il connettore HTTP2), i token disattivati vengono ora gestiti nello stesso modo di Android. Il flag disable ora è impostato nella tabella NmsAppSubscriptionRcp. [Maggiori informazioni](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
 
-* A new option has been added in the **JavaScript code** and **Advanced JavaScript code** workflow activities to define a time-out period. Questo impedisce l’esecuzione della fase di esecuzione di JavaScript per troppo tempo. If the time-out period elapses, the workflow is stopped. The default time-out is 1 hour. [Maggiori informazioni](../../workflow/using/sql-code-and-javascript-code.md)
+* È stata aggiunta una nuova opzione nel **Codice JavaScript** e **Codice JavaScript avanzato** attività del flusso di lavoro per definire un periodo di timeout. Questo impedisce l’esecuzione della fase di esecuzione di JavaScript per troppo tempo. Se trascorre il periodo di timeout, il flusso di lavoro viene interrotto. Il timeout predefinito è di 1 ora. [Maggiori informazioni](../../workflow/using/sql-code-and-javascript-code.md)
 
 * L’analisi della consegna viene ora interrotta quando non viene trovata alcuna affinità corrispondente sul server di mid-sourcing e viene visualizzato il messaggio di errore corrispondente.
 
@@ -610,9 +611,9 @@ _17 febbraio 2020_
 
 * Prestazioni query migliorate che potrebbero essere influenzate da connessioni di database non necessarie.
 
-* Improved the performance of the database update wizard to make fewer SQL statements in order to optimize response time.
+* Sono state migliorate le prestazioni della procedura guidata di aggiornamento del database per ridurre il numero di istruzioni SQL al fine di ottimizzare il tempo di risposta.
 
-* The database record management was enhanced.
+* La gestione dei record del database è stata migliorata.
 
 * La robustezza del pool di connessioni è stata migliorata, il che potrebbe impedire che si verifichino errori di connessione imprevisti troppo spesso.
 
@@ -622,7 +623,7 @@ _17 febbraio 2020_
 
 * Campaign ora consente l’utilizzo di una libreria ODBC di sistema più recente.
 
-* È stato aggiunto un timeout al servlet LINE quando si apre una connessione per caricare un’immagine ricca. If the image is taking too much time to load, the servlet stops the connection to avoid a bottleneck.
+* È stato aggiunto un timeout al servlet LINE quando si apre una connessione per caricare un’immagine ricca. Se il caricamento dell’immagine richiede troppo tempo, il servlet interrompe la connessione per evitare un collo di bottiglia.
 
 **Patch**
 
@@ -638,7 +639,7 @@ _17 febbraio 2020_
 
 * È stato risolto un problema relativo alla generazione di proposte di offerta. (NEO-18176)
 
-* Fixed a footer display issue when using the acquisition web form template.
+* È stato risolto un problema di visualizzazione del piè di pagina durante l’utilizzo del modello di modulo web di acquisizione.
 
 * È stato risolto un problema che poteva causare l’arresto anomalo degli URL durante l’analisi del contenuto delle consegne continue. (NEO-16910)
 
@@ -674,11 +675,11 @@ _17 febbraio 2020_
 
 * È stato risolto un problema che impediva agli indicatori di tracciamento dei messaggi transazionali di essere aggiornati dal flusso di lavoro Tracking. (NEO-17770)
 
-* Fixed a regression issue that caused the web process to crash and restart when requesting an offer through SOAP. (NEO-19482)
+* È stato risolto un problema di regressione che causava l’arresto anomalo del processo Web e il riavvio durante la richiesta di un’offerta tramite SOAP. (NEO-19482)
 
-* Fixed an issue that prevented from uploading data to public resources if the upload directory was a remote shared location. (NEO-19361)
+* È stato risolto un problema che impediva il caricamento di dati in risorse pubbliche se la directory di caricamento era una posizione condivisa remota. (NEO-19361)
 
-* Fixed an issue that caused the **Import audiences from the Adobe Experience Cloud** technical workflow tp constantly fail. (NEO-18463)
+* È stato risolto un problema che causava il **Importare tipi di pubblico da Adobe Experience Cloud** il workflow tecnico non riesce costantemente. (NEO-18463)
 
 * È stato risolto un problema che impediva l’invio di consegne durante l’utilizzo di modelli importati da Experience Manager. (NEO-17540)
 

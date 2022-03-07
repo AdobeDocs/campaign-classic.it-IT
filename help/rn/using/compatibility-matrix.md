@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: e88ed7a5710f9ec8713d9e7151d2fd4904097990
-workflow-type: ht
-source-wordcount: '720'
-ht-degree: 100%
+source-git-commit: c228f827e91f25ee3a837f7fe6549ae4e5714ba3
+workflow-type: tm+mt
+source-wordcount: '722'
+ht-degree: 99%
 
 ---
 
@@ -63,6 +63,7 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 <tr>
 <td>Windows Server</td>
 <td>
+<p>2019 (a partire dalla versione 7.2.1)</p>
 <p>2016</p>
 <p>2012 R2</p>
 <p>2012</p>
@@ -250,9 +251,9 @@ Inoltre, dagli ambienti **Ibrido** e **On-Premise** è anche possibile collegare
 <tr>
 <td> Oracle</td>
 <td>
-<p>19c</p>
-<p>18c</p>
-<p>12c</p>
+<p>19 quater</p>
+<p>18 quater</p>
+<p>12 quater</p>
 <p>11g</p>
 </td>
 <td>Minimo v7.0</td>
