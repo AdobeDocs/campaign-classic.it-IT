@@ -4,10 +4,10 @@ title: Consegna ricorrente
 description: Ulteriori informazioni sull’attività del flusso di lavoro di consegna ricorrente
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 6f0479cfe6c6801eb44fcc7a35bdac1241ec3be6
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 21%
+source-wordcount: '271'
+ht-degree: 17%
 
 ---
 
@@ -39,9 +39,12 @@ A **consegna ricorrente** creerà una nuova istanza di consegna ogni volta che v
 
 ![Consegna ricorrente](assets/delivery_recurring.jpg)
 
+Se desideri interrompere l’esecuzione di una consegna ricorrente, devi annullare completamente la campagna o interrompere l’esecuzione del flusso di lavoro. L’arresto della consegna dal dashboard di Campaign interrompe solo l’occorrenza della consegna: le istanze successive della consegna ricorrente continueranno a essere create a ogni esecuzione del flusso di lavoro.
+
 >[!NOTE]
 >
->Non è possibile inviare una prova da un **[!UICONTROL Recurring delivery]** digitare activity.\
+>Non è possibile inviare una prova da un **[!UICONTROL Recurring delivery]** digitare activity.
+> 
 >Per creare direttamente una consegna tramite un flusso di lavoro della campagna, utilizza le attività specifiche del canale preconfigurate (ad esempio **[!UICONTROL Email delivery]**).
 
 ## Video tutorial (#ricorrenti-delivery-video)
