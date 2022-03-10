@@ -31,7 +31,7 @@ La sezione Quarantena ed Elenco bloccati è stata resa più chiara. [Maggiori in
 
 Sono state aggiornate le sezioni su come mettere in quarantena un indirizzo e come rimuovere gli indirizzi dall’elenco di quarantena. [Maggiori informazioni](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
-È stata aggiunta una best practice per il flusso di lavoro che consiglia di non eseguire più richieste di arresto sullo stesso flusso di lavoro. [Maggiori informazioni](../../workflow/using/workflow-best-practices.md)
+È stata aggiunta una best practice per flussi di lavoro che consiglia di non eseguire più richieste di arresto sullo stesso flusso di lavoro. [Maggiori informazioni](../../workflow/using/workflow-best-practices.md)
 
 Sono state aggiunte informazioni su come interrompere l’esecuzione di una consegna ricorrente all’interno di una campagna. [Maggiori informazioni](../../workflow/using/recurring-delivery.md)
 
