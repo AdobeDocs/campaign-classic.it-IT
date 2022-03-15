@@ -6,10 +6,10 @@ audience: social
 content-type: reference
 topic-tags: introduction
 exl-id: c8fd5f75-9386-42dd-bfb6-8086a86aa324
-source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
+source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 12%
+source-wordcount: '126'
+ht-degree: 15%
 
 ---
 
@@ -19,16 +19,9 @@ ht-degree: 12%
 
 La **Gestione dei social network** (Social Marketing) applicazione progettata per la gestione dei social network consente di interagire con clienti e potenziali clienti tramite Facebook e Twitter.
 
-1. **Invio di messaggi**
+**Acquisizione di nuovi contatti**
 
-   Social Marketing consente di inviare messaggi su Facebook e Twitter.
-
-   * Adobe Campaign consente di inviare messaggi direttamente alla bacheca Facebook e all’account twitter.
-   * Puoi anche inviare messaggi diretti a tutti i tuoi follower Twitter.
-
-1. **Acquisizione di nuovi contatti**
-
-   Adobe Campaign Social Marketing permette anche di acquisire facilmente nuovi contatti tramite Facebook: contatta gli utenti e chiedi loro se desiderano condividere le loro informazioni di profilo. Se accettano, Adobe Campaign recupera automaticamente i dati, consentendo di eseguire campagne di targeting e, quando possibile, di implementare strategie cross-channel.
+Adobe Campaign Social Marketing semplifica l&#39;acquisizione di nuovi contatti tramite Facebook: contatta gli utenti e chiedi loro se desiderano condividere le loro informazioni di profilo. Se accettano, Adobe Campaign recupera automaticamente i dati, consentendo di eseguire campagne di targeting e, quando possibile, di implementare strategie cross-channel.
 
 >[!IMPORTANT]
 >

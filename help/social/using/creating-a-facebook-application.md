@@ -6,9 +6,9 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 5c11bd0f-2df7-4c7f-b682-955fedf8e664
-source-git-commit: b5334de18eca8fc1147ae0c42fe23a6932bf71d2
+source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '874'
 ht-degree: 5%
 
 ---
@@ -27,7 +27,7 @@ Utilizzando le applicazioni web, il modulo Campaign Social Marketing consente di
 
 I passaggi di configurazione sono:
 
-1. Crea una o più applicazioni Facebook. [Ulteriori informazioni](../../social/using/publishing-on-facebook-walls.md#creating-a-facebook-application)
+1. Crea una o più applicazioni Facebook.
 1. Inserisci il **[!UICONTROL terms of service]** e **[!UICONTROL Privacy policy]** collegamenti da visualizzare nella schermata di richiesta delle autorizzazioni di Facebook. [Ulteriori informazioni](#entering-the-terms-of-service-and-privacy-policy-links)
 1. Per ogni applicazione Facebook, crea un **[!UICONTROL Facebook Connect]** digitare account esterno. [Ulteriori informazioni](#configuring-external-accounts)
 1. Per ogni applicazione Facebook, crea un&#39;applicazione Web di tipo Facebook in Adobe Campaign. [Ulteriori informazioni](#creating-a-facebook-type-web-application)

@@ -6,9 +6,9 @@ audience: social
 content-type: reference
 topic-tags: annexes
 exl-id: 3b8c7db4-9c55-42f6-8e09-e5ab781efe8f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2212'
 ht-degree: 1%
 
 ---
@@ -56,7 +56,7 @@ Questo esempio fornisce un processo dettagliato su come visualizzare un’applic
 
 Per creare questa applicazione, esegui i seguenti passaggi:
 
-1. Crea un&#39;applicazione su Facebook ( [https://developers.facebook.com/apps](https://developers.facebook.com/apps)). Per ulteriori informazioni, consulta: [Creazione di un&#39;applicazione Facebook](../../social/using/publishing-on-facebook-walls.md#creating-a-facebook-application).
+1. Crea un&#39;applicazione su Facebook ( [https://developers.facebook.com/apps](https://developers.facebook.com/apps)).
 
    ![](assets/social_create_facebook_app_002.png)
 

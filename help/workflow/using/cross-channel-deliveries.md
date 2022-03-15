@@ -4,9 +4,9 @@ title: Consegne cross-channel
 description: Ulteriori informazioni sulle consegne cross-channel
 feature: Workflows, Channels Activity
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
-source-git-commit: e454cc29038b4eab9fad1dcb46813fc8e1a83db1
+source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '287'
 ht-degree: 8%
 
 ---
@@ -23,7 +23,6 @@ I vari canali disponibili sono:
 * [Direct mailing](../../delivery/using/about-direct-mail-channel.md)
 * [Mobile](../../delivery/using/sms-channel.md)
 * [Twitter](../../social/using/publishing-on-twitter.md) (Solo Campaign Classic v7)
-* [Facebook](../../social/using/publishing-on-facebook.md) (Solo Campaign Classic v7)
 * [iOS](../../delivery/using/create-notifications-ios.md)
 * [per Android](../../delivery/using/create-notifications-android.md)
 

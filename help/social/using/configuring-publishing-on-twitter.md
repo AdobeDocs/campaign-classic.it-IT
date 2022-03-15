@@ -6,10 +6,10 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 2d2a6e32-587d-4a7b-ba1c-d9140da53f64
-source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
+source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 7%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -117,7 +117,7 @@ Questo passaggio richiede l’accesso simultaneo alla console Adobe Campaign e a
 >
 >È necessario crearne uno **[!UICONTROL Twitter]** servizio per applicazione Twitter.
 
-La **[!UICONTROL Twitter account Synchronization]** il flusso di lavoro sincronizza gli account Twitter in Adobe Campaign. Per ulteriori informazioni, consulta [questa pagina](../../social/using/publishing-on-facebook-walls.md#synchronizing-facebook-pages).
+La **[!UICONTROL Twitter account Synchronization]** il flusso di lavoro sincronizza gli account Twitter in Adobe Campaign.
 
 ## Sincronizzazione degli account Twitter {#synchronizing-twitter-accounts}
 

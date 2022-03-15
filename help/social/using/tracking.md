@@ -6,7 +6,7 @@ audience: social
 content-type: reference
 topic-tags: annexes
 exl-id: 83883ba3-e4dc-428c-a377-1986cfd1fe55
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 4%
@@ -17,7 +17,7 @@ ht-degree: 4%
 
 ![](../../assets/v7-only.svg)
 
-Social Marketing fornisce rapporti che ti consentono di misurare il tasso di reattività delle consegne di Facebook e Twitter e di analizzare l’acquisizione dei profili Facebook. Sono disponibili i seguenti rapporti:
+Social Marketing fornisce rapporti che ti consentono di misurare il tasso di reattività dei canali Facebook e Twitter e di analizzare l’acquisizione dei profili Facebook. Sono disponibili i seguenti rapporti:
 
 * La **[!UICONTROL Reactivity rate]** disponibile tramite **[!UICONTROL Summary]** di una consegna Facebook o Twitter.
 
