@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: Domande comuni
-description: Domande frequenti su Campaign Classic
+title: Domande frequenti sugli sviluppatori
+description: Domande frequenti sugli sviluppatori
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: a5f6478d3c0780464974053e389923614abba582
+source-git-commit: 36b10a49fe92853f98beeb9e7d2fea3f59b10b6f
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '522'
 ht-degree: 97%
 
 ---
