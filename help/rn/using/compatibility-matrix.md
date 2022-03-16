@@ -63,7 +63,7 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 <tr>
 <td>Windows Server</td>
 <td>
-<p>2019 (a partire dalla versione 7.2.1)</p>
+<p>2019 (dalla versione 7.2.1)</p>
 <p>2016</p>
 <p>2012 R2</p>
 <p>2012</p>
@@ -332,7 +332,7 @@ Per utilizzare la [console client di Campaign](../../installation/using/installi
 <tr>
 <td>Microsoft Windows Server</td>
 <td>
-<p>2019 (a partire dalla versione 7.2.1)</p>
+<p>2019 (dalla versione 7.2.1)</p>
 <p>2016</p>
 <p>2012</p>
 </td>
