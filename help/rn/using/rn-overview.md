@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 9d8eae6b9c31d98d5e7e14b61f3abcf46311304d
-workflow-type: ht
-source-wordcount: '917'
-ht-degree: 100%
+source-git-commit: 329cf80ff021322e57a63cf86f4b4e206f6385d1
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +43,7 @@ In qualità di cliente in hosting, puoi beneficiare automaticamente, senza alcun
 
 Per garantire una configurazione stabile, si consiglia di installare **la stessa build** su tutti i server in esecuzione sulla stessa configurazione client.
 
-Inoltre, la console client deve trovarsi nella stessa build dell’istanza del server.
+Inoltre, salvo diversa indicazione nelle Note sulla versione, la console del client deve essere attivata **la stessa build** come istanza del server.
 
 Per mantenere aggiornata l’implementazione, per ogni nuova versione leggi le pagine [Funzioni obsolete e rimosse](../../rn/using/deprecated-features.md) e [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
