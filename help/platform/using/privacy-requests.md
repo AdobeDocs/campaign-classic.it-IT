@@ -6,8 +6,8 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-source-git-commit: 71a5433db3ce2af5a25e5f861bd6f1dfb9aa8934
-workflow-type: ht
+source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+workflow-type: tm+mt
 source-wordcount: '2425'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Per aiutarti a garantire l’idoneità alle normative sulla privacy, Adobe Campa
 
 Vediamo come creare le richieste di accesso ed eliminazione e come Adobe Campaign le elabora.
 
-### Principi {#principles}
+### Principi {#privacy-principles}
 
 Adobe Campaign offre ai titolari del trattamento dei dati due possibilità per eseguire le richieste di accesso e cancellazione dei dati personali:
 
