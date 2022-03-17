@@ -2,14 +2,15 @@
 product: campaign
 title: Versioni di Campaign Classic 2018
 description: Ulteriori informazioni sulle versioni di Campaign Classic 2018
-source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+exl-id: f70fceba-4bbf-4f33-8746-e4405a1cdae6
+source-git-commit: 96f2ae67a5b47b80533e759713cf5b36baa8cf36
 workflow-type: tm+mt
 source-wordcount: '5414'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
-# Versioni del 2018{#release-2018}
+# Versioni 2018{#release-2018}
 
 ![](../../assets/v7-only.svg)
 
