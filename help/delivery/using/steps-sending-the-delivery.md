@@ -4,9 +4,9 @@ title: Configurare e inviare la consegna
 description: Scopri come configurare e inviare la consegna
 feature: Channel Configuration
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: dfee069240c590846f7dda3134c07ad3ec514a26
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1556'
 ht-degree: 5%
 
 ---
@@ -33,13 +33,16 @@ Prima di inviare la consegna, puoi definire i parametri di invio nelle propriet�
    >
    >Quando la consegna viene duplicata, il parametro viene reimpostato.
 
-* **[!UICONTROL Send using multiple waves]**: Per ulteriori informazioni, consulta [Invia utilizzando più onde](#sending-using-multiple-waves).
+* **[!UICONTROL Send using multiple waves]**: Utilizza questa opzione per inviare i messaggi a ondate, anziché a tutto il pubblico. Configura il numero di batch e la relativa proporzione. [Ulteriori informazioni](#sending-using-multiple-waves).
 
-* **[!UICONTROL Test SMTP delivery]**: Questa opzione consente di verificare l’invio di una consegna tramite SMTP. La consegna viene elaborata fino alla connessione al server SMTP, ma non viene inviata.
+* **[!UICONTROL Test SMTP delivery]**: Utilizza questa opzione per testare l’invio tramite SMTP. La consegna viene elaborata fino alla connessione al server SMTP, ma non viene inviata: per ogni destinatario della consegna, Campaign si connette al server del provider SMTP, esegue il comando SMTP RCPT TO e chiude la connessione prima del comando SMTP DATA.
 
    >[!NOTE]
    >
-   >L’utilizzo di questa opzione non è consigliato quando si installa utilizzando mid-sourcing per non chiamare mta. Per ulteriori informazioni sulla configurazione di un server SMTP, consulta [a questa sezione](../../installation/using/configure-delivery-settings.md).
+   >* Questa opzione non è consigliata in mid-sourcing.
+   >
+   >* Ulteriori informazioni sulla configurazione del server SMTP, in [questa sezione](../../installation/using/configure-delivery-settings.md).
+
 
 * **[!UICONTROL Email BCC]**: Questa opzione ti consente di archiviare le e-mail su un sistema esterno tramite CCN semplicemente aggiungendo un indirizzo e-mail CCN al target del messaggio. Per ulteriori informazioni al riguardo, consulta [questa sezione](sending-messages.md#archiving-emails).
 

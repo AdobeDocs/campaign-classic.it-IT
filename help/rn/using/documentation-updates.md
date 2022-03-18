@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: deb658fee9a668fd98aebfd1852252114ffb6edc
+source-git-commit: dfee069240c590846f7dda3134c07ad3ec514a26
 workflow-type: tm+mt
-source-wordcount: '4903'
-ht-degree: 100%
+source-wordcount: '4938'
+ht-degree: 99%
 
 ---
 
@@ -22,6 +22,16 @@ In questa pagina sono elencate tutte le nuove funzioni e gli aggiornamenti alla 
 Per gli aggiornamenti relativi alla versione, consulta le [Note sulla versione di Adobe Campaign Classic](../../rn/using/latest-release.md).
 
 ## 2022
+
+
+### Marzo 2022 {#mar-2022}
+
+È stata aggiunta una descrizione dettagliata per il **[!UICONTROL Test SMTP delivery]** opzione . [Maggiori informazioni](../../delivery/using/steps-sending-the-delivery.md#delivery-additiona-parameters)
+
+La sezione panoramica Note sulla versione è stata aggiornata per chiarire le linee guida per l’aggiornamento della console Campaign. [Maggiori informazioni](../../rn/using/rn-overview.md)
+
+È ora disponibile la nuova build di Campaign v7.2.2 . [Maggiori informazioni](../../rn/using/latest-release.md)
+
 
 ### Febbraio 2022 {#february-2022}
 
