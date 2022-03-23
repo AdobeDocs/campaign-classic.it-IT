@@ -7,9 +7,9 @@ user-guide-description: Con Adobe Campaign, puoi utilizzare dati approfonditi su
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2548'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -587,9 +587,9 @@ ht-degree: 99%
       + [Avviare i flussi di lavoro](social/using/starting-workflows.md)
       + [Creare un’applicazione Facebook](social/using/creating-a-facebook-application.md)
       + [Configurare la pubblicazione su Twitter](social/using/configuring-publishing-on-twitter.md)
-   + Pubblicare su Twitter {#publishing-on-facebook-twitter}
+   + Pubblica su Twitter {#publishing-on-facebook-twitter}
       + [Introduzione a Twitter](social/using/overview.md)
-      + [Pubblicare su Twitter](social/using/publishing-on-twitter.md)
+      + [Pubblica su Twitter](social/using/publishing-on-twitter.md)
    + Acquisizione dei contatti Facebook {#annexes}
       + [Esempi di app Facebook](social/using/examples-of-facebook-apps.md)
       + [Tracciamento](social/using/tracking.md)
