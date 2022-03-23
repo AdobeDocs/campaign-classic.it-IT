@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 4fe661cf6a0fef8126fd24a68b1021760a5d0bfd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4932'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -26,11 +26,11 @@ Per gli aggiornamenti relativi alla versione, consulta le [Note sulla versione d
 
 ### Marzo 2022 {#mar-2022}
 
-È stata aggiunta una descrizione dettagliata per il **[!UICONTROL Test SMTP delivery]** opzione . [Maggiori informazioni](../../delivery/using/steps-sending-the-delivery.md#delivery-additiona-parameters)
+È stata aggiunta una descrizione dettagliata per l’opzione **[!UICONTROL Test SMTP delivery]**. [Maggiori informazioni](../../delivery/using/steps-sending-the-delivery.md#delivery-additiona-parameters)
 
 La pagina Introduzione agli aggiornamenti è stata aggiornata per chiarire le linee guida per l’aggiornamento della console Campaign. [Maggiori informazioni](../../rn/using/rn-overview.md)
 
-È ora disponibile la nuova build di Campaign v7.2.2 . [Maggiori informazioni](../../rn/using/latest-release.md)
+È ora disponibile la nuova build di Campaign v7.2.2. [Maggiori informazioni](../../rn/using/latest-release.md)
 
 
 ### Febbraio 2022 {#february-2022}
@@ -124,7 +124,7 @@ I badge di applicabilità sono stati aggiunti alle pagine della documentazione: 
 
 ### Giugno 2021 {#june-2021}
 
-La **Messaggistica transazionale** è stata riorganizzata e chiarita una sezione con una nuova sezione Introduzione, che include una [schema avanzato](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) per una migliore comprensione del processo. [Ulteriori informazioni](../../message-center/using/about-transactional-messaging.md)
+La sezione **Messaggistica transazionale** è stata riorganizzata e chiarita con una nuova sezione Introduzione, che include uno [schema avanzato](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) per una migliore comprensione del processo. [Ulteriori informazioni](../../message-center/using/about-transactional-messaging.md)
 
 **Aggiornamenti alla documentazione in arrivo con la versione 21.1.3**
 
@@ -156,7 +156,7 @@ La procedura di installazione della console client di Campaign è stata migliora
 
 ### Marzo 2021 {#march-2021}
 
-La sezione [Guida introduttiva agli SMS](../../delivery/using/sms-channel.md) è stata riorganizzata e migliorata. Ora puoi imparare come [configurare il canale SMS](../../delivery/using/sms-set-up.md), [creare un SMS](../../delivery/using/sms-create.md), [inviare e tracciare SMS](../../delivery/using/sms-send.md) in sezioni dedicate.
+La [sezione Introduzione agli SMS](../../delivery/using/sms-channel.md) è stata riorganizzata e migliorata. Ora puoi imparare a [configurare il canale SMS](../../delivery/using/sms-set-up.md), [creare un SMS](../../delivery/using/sms-create.md), [inviare e tracciare gli SMS](../../delivery/using/sms-send.md) nelle sezioni dedicate.
 
 La pagina “Opzioni di aiuto e supporto” per Campaign Standard è stata integrata nella documentazione di base. [Leggi tutto](../../support.md)
 
@@ -344,7 +344,7 @@ Nell’elenco dei [casi di utilizzo del flusso di lavoro](../../workflow/using/a
 * Chiamata di una variabile di istanza in una query
 * Applicazione di una percentuale divisa su una popolazione
 
-La **[!UICONTROL AND-join]** la sezione Attività è stata arricchita da informazioni aggiuntive sull’utilizzo e da una nota sull’utilizzo delle variabili. [Maggiori informazioni](../../workflow/using/and-join.md)
+La **[!UICONTROL AND-join]** sezione attività è stata arricchita con informazioni aggiuntive sull’utilizzo, nonché da una nota sull’impiego delle variabili. [Ulteriori informazioni](../../workflow/using/and-join.md)
 
 ### Luglio 2020 {#july-2020}
 
@@ -472,7 +472,7 @@ Le guide di [installazione](../../installation/using/general-architecture.md), [
 
 La guida all’installazione è stata aggiornata e sincronizzata con la versione più recente della matrice di compatibilità. Sono stati aggiunti nuovi sistemi supportati. Sono state rimosse le occorrenze di sistemi obsoleti e non supportati. [Leggi tutto](../../installation/using/general-architecture.md)
 
-La Matrice di compatibilità è stata aggiornata con i connettori FDA Hadoop 3.0 e Snowflake. [Leggi tutto](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+La Matrice di compatibilità è stata aggiornata con i connettori FDA Hadoop 3.0 e Snowflake. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html)
 
 Nella guida all’installazione è stata aggiunta una best practice sull’affinità degli IP. [Leggi tutto](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
@@ -490,7 +490,7 @@ Il nuovo parametro per la configurazione dei report URL è stato documentato [qu
 
 La pagina della **matrice delle funzionalità on-premise e in hosting di Campaign Classic** è stata aggiornata con i nuovi connettori FDA. [Leggi tutto](../../installation/using/capability-matrix.md).
 
-La pagina della **matrice delle funzionalità di Campaign Classic** è stata aggiornata. [Leggi tutto](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+La pagina della **matrice delle funzionalità di Campaign Classic** è stata aggiornata. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html)
 
 Il nuovo flusso di lavoro **[!UICONTROL Cleanup of Nmsaddress]** è stato documentato [qui](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress).
 
@@ -542,7 +542,7 @@ Messaggi SMS protetti (TLS). [Leggi tutto](https://helpx.adobe.com/it/campaign/k
 
 **Altri aggiornamenti alla documentazione in arrivo con la versione**
 
-La documentazione sull’MTA avanzato di Adobe Campaign è ora disponibile. [Leggi tutto](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
+La documentazione sull’MTA avanzato di Adobe Campaign è ora disponibile. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/acc-campaign-enhanced-mta.html)
 
 È stata aggiunta una nuova sezione su come risolvere eventuali problemi relativi a un flusso di lavoro nello stato “Avvia il prima possibile” all’interno di una campagna. [Leggi tutto](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
@@ -604,7 +604,7 @@ Le best practice per i miglioramenti delle prestazioni di flussi di lavoro e con
 
 **Nuove funzionalità incluse nella versione 19.1**
 
-Pannello di controllo Campaign. [Leggi tutto](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
+Pannello di controllo Campaign. [Leggi tutto](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it)
 
 Audit trail. [Leggi tutto](../../production/using/audit-trail.md)
 
@@ -612,7 +612,7 @@ Audit trail. [Leggi tutto](../../production/using/audit-trail.md)
 
 Sono state create nuove domande frequenti sull’aggiornamento della build. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/build-upgrade-faq.html)
 
-La [Matrice di compatibilità](compatibility-matrix.md) è stata aggiornata. L’elenco dei sistemi di database supportati è stato aggiornato, le versioni Android/iOS e gli SDK correlati. La matrice di compatibilità 19.0 è stata archiviata.
+La [Matrice di compatibilità](compatibility-matrix.md) è stata aggiornata. L’elenco dei sistemi di database supportati è stato aggiornato, così come le versioni Android/iOS e gli SDK correlati. La matrice di compatibilità 19.0 è stata archiviata.
 
 La pagina “Funzioni obsolete e rimosse in Campaign Classic” è stata aggiornata. [Leggi tutto](deprecated-features.md)
 
@@ -628,7 +628,7 @@ La descrizione dell’opzione del flusso di lavoro di pre-elaborazione è stata 
 
 La nota tecnica Trigger di Experience Cloud è stata aggiornata. [Leggi tutto](../../integrations/using/about-triggers.md)
 
-L’elenco dei messaggi di errore è stato aggiornato. [Leggi tutto](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
+L’elenco dei messaggi di errore è stato aggiornato. [Leggi tutto](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=it)
 
 Sono state aggiunte ulteriori informazioni sui metodi di autenticazione SOAP per la messaggistica transazionale. [Leggi tutto](../../message-center/using/event-description.md)
 
@@ -667,7 +667,7 @@ Sono state aggiunte informazioni sul report Fatturazione.
 La documentazione sull’integrazione Pubblici condivisi è stata aggiornata.
 [Leggi tutto](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-Le seguenti note tecniche sono state aggiornate: [Protocollo e impostazioni del connettore SMS](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html) e [Generazione automatica della sequenza](https://helpx.adobe.com/it/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
+Le seguenti note tecniche sono state aggiornate: [Protocollo e impostazioni del connettore SMS](https://helpx.adobe.com/it/campaign/kb/sms-connector-protocol-and-settings.html) e [Generazione automatica della sequenza](https://helpx.adobe.com/it/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
 
 La sezione Flussi di lavoro tecnici è stata aggiornata. [Leggi tutto](../../workflow/using/about-technical-workflows.md)
 
