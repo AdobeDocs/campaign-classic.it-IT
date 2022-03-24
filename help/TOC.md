@@ -6,10 +6,10 @@ title: Guida di Campaign Classic v7
 user-guide-description: Con Adobe Campaign, puoi utilizzare dati approfonditi sui clienti per creare, coordinare e distribuire campagne dinamiche che i clienti desiderano realmente, tramite e-mail, dispositivi mobili, canali offline e altro ancora.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
-workflow-type: ht
-source-wordcount: '2548'
-ht-degree: 100%
+source-git-commit: dd7217bd508d718d84c417fcdf7610a5582ef204
+workflow-type: tm+mt
+source-wordcount: '2552'
+ht-degree: 99%
 
 ---
 
@@ -828,8 +828,9 @@ ht-degree: 100%
    + [Procedura di ripristino](migration/using/about-rollback.md)
 + Note tecniche {#technotes}
    + [Consigli sui requisiti hardware in base alle dimensioni](technotes/using/hardware-sizing.md)
-   + Aggiornamenti e migrazioni{#technote-migration}
+   + Aggiornamenti e compatibilità{#technote-migration}
       + [Note tecniche](technotes/using/technote.md)
+      + [Impatto della versione del browser a 3 cifre](technotes/using/3-digit-browsers.md)
       + [Aggiornamenti alla configurazione di Campaign](technotes/using/acc-config-updates.md)
       + [Aggiornamenti IMS](technotes/using/ims-updates.md)
       + [Fine del supporto per TLS 1.0 e 1.1](technotes/using/eol-tls-support.md)
