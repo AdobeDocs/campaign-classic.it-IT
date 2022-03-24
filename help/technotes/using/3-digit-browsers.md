@@ -4,31 +4,26 @@ title: Componenti web di Campaign e versione 100 nei browser Chrome e Firefox
 description: Componenti web di Campaign e versione 100 nei browser Chrome e Firefox
 hide: true
 hidefromtoc: true
-source-git-commit: 68049d1905524b644794799348bd6387b2afed0d
+source-git-commit: 88148b70de408de7571166e1869c088e10e87bae
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
 
-# Componenti web di Campaign e versione 100 nei browser Chrome e Firefox {#version-100}
-
-## Cosa {#what-version-100}
+# Chrome e Firefox v100 hanno un impatto sui componenti web di Campaign {#version-100}
 
 Google e Mozilla avvertono che Chrome e Firefox potrebbero interrompere alcuni siti web a causa delle loro prossime versioni a 3 cifre.
+
 La modifica del numero di versione da 2 a 3 cifre può causare alcuni problemi quando si visitano siti web che non sono preparati per questa modifica. Alcune pagine web potrebbero non essere visualizzate correttamente in queste nuove versioni del browser.
-
-Mozilla e Google stanno testando la compatibilità dei principali siti web in anticipo. Se ci sono problemi con i siti che non possono risolvere prima del rilascio di queste versioni, entrambi dispongono di piani di backup pronti per garantire che i siti non siano interessati.
-
-## Perché {#why-version-100}
-
-I potenziali problemi o la perdita di funzionalità sul sito web derivano dalla stringa dell&#39;agente utente che i browser inviano ai siti web che stai visitando : l’agente utente è una stringa inviata dal browser al sito web per comunicare al sito il browser e la versione utilizzati e la tecnologia associata. Quando il browser invia una richiesta a un sito web, si identifica con la stringa agente utente prima di recuperare il contenuto richiesto. I dati nella stringa dell&#39;agente utente aiutano il sito web a consegnare il contenuto in un formato adatto al tuo browser. La versione dell’agente utente viene incrementata in modo che corrisponda al numero di versione del browser. Il passaggio da 2 a 3 cifre può causare problemi.
-
-## When {#when-version-100}
 
 Chrome v100 è impostato per il rilascio il **29 marzo 2022** e Firefox v100 on **3 maggio 2022**.
 
-## Dove {#where-version-100}
+Mozilla e Google stanno testando la compatibilità dei principali siti web in anticipo. Se ci sono problemi con i siti che non possono risolvere prima del rilascio di queste versioni, entrambi dispongono di piani di backup pronti per garantire che i siti non siano interessati.
+
+I potenziali problemi o la perdita di funzionalità sul sito web derivano dalla stringa dell&#39;agente utente che i browser inviano ai siti web che stai visitando: l’agente utente è una stringa inviata dal browser al sito web per comunicare al sito il browser e la versione utilizzati e la tecnologia associata. Quando il browser invia una richiesta a un sito web, si identifica con la stringa agente utente prima di recuperare il contenuto richiesto. I dati nella stringa dell&#39;agente utente aiutano il sito web a consegnare il contenuto in un formato adatto al tuo browser. La versione dell’agente utente viene incrementata in modo che corrisponda al numero di versione del browser. Il passaggio da 2 a 3 cifre può causare problemi.
+
+## Sei interessato da questo problema?{#version-100-impact}
 
 Adobe consiglia di testare le applicazioni web Campaign, compresi i moduli web e i sondaggi e le pagine mirror, per assicurarti che funzionino ancora correttamente con queste nuove versioni del browser.
 
@@ -36,11 +31,11 @@ Questa raccomandazione si applica a tutte le applicazioni web e soprattutto se h
 
 È necessario controllare sia con Firefox e Chrome, mobile e desktop.
 
-## Come {#how-version-100}
+## Come fare il test?{#version-100-test}
 
-In Chrome e Firefox Nightly, è possibile configurare il browser per segnalare la versione come 100 in questo momento e correggere eventuali problemi che si incontrano.
+In Chrome e Firefox, puoi configurare il browser per segnalare la versione 100 in questo momento, quindi segnalare e correggere eventuali problemi riscontrati.
 
-### Firefox 100{#test-firefox-100}
+### Test con Firefox 100{#test-firefox-100}
 
 Per testare le tue pagine web con Mozilla Firefox 100, puoi simulare la prossima modifica dell&#39;agente utente sulle tue app web modificando manualmente la stringa dell&#39;agente utente.
 
@@ -63,7 +58,7 @@ Con queste impostazioni, il browser invia la nuova stringa agente utente ai siti
 
 Per ripristinare l&#39;agente utente predefinito, è sufficiente tornare al `about:config` e cerca `general.useragent.override` di nuovo.  Quando appare, fai clic sull&#39;icona del cestino per eliminare l&#39;impostazione e riavvia il browser.
 
-### Chrome 100{#test-chrome-100}
+### Test con Chrome 100{#test-chrome-100}
 
 Per testare l&#39;agente utente Google Chrome 100 sulle tue app web, puoi abilitare questo test seguendo i seguenti passaggi:
 
