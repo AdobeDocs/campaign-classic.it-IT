@@ -4,9 +4,9 @@ title: Introduzione al connettore ACS
 description: Principi del connettore ACS e ciclo dei dati
 feature: ACS Connector
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
+source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
 workflow-type: tm+mt
-source-wordcount: '1985'
+source-wordcount: '2038'
 ht-degree: 0%
 
 ---
@@ -147,6 +147,11 @@ I seguenti flussi di lavoro di replica sono disponibili come modelli &quot;pront
 * **[!UICONTROL `[ACS] New replication`]** (newReplication): questo flusso di lavoro incrementale è un esempio che può essere utilizzato per replicare una tabella personalizzata. Vedi [Implementazione avanzata](#advanced-implementation).
 * **[!UICONTROL `[ACS] Delivery-message replication`]** (newDlvMsgQualification): questo flusso di lavoro incrementale replica i messaggi di consegna da Campaign Standard a Campaign v7.
 * **[!UICONTROL `[ACS] Profile delivery log replication`]** (newRcpDeliveryLogReplication): questo flusso di lavoro incrementale replica gli ID di consegna, i registri ampi delle e-mail e i registri di tracciamento delle e-mail da Campaign Standard a Campaign v7. Prende in considerazione solo le consegne inviate da Campaign Standard a profili che fanno parte della tabella nms:recipients di Campaign v7.
+
+   >[!NOTE]
+   >
+   > Nel caso in cui le istanze Campaign Classic e Campaign Standard siano utilizzate per inviare e-mail con URL tracciati, potrebbe verificarsi un problema con tagID URL duplicati durante la sincronizzazione. Per evitare che ciò si verifichi, aggiorna il **Aggiorna gli URL di tracciamento** (writerTrackingUrls) nel flusso di lavoro e aggiungi il prefisso &quot;ACS&quot; all&#39;espressione sorgente @tagId.
+
 * **[!UICONTROL `[ACS] New delivery log replication`]** (newRcpDeliveryLogReplication): questo flusso di lavoro incrementale replica gli ID di consegna, i registri ampi delle e-mail e i registri di tracciamento delle e-mail da Campaign Standard a Campaign v7. Prende in considerazione solo le consegne inviate da Campaign Standard a profili che fanno parte di una tabella specifica (per definire, diversa da nms:recipients) di Campaign v7.
 
 ### Campi destinatari predefiniti {#default-recipient-fields}
@@ -166,7 +171,7 @@ Di seguito è riportato l’elenco dei campi dei destinatari replicati con l’i
    <td> @sourceId<br /> </td> 
   </tr> 
   <tr> 
-   <td> Data creazione<br /> </td> 
+   <td> Data di creazione<br /> </td> 
    <td> @created<br /> </td> 
   </tr> 
   <tr> 
@@ -175,7 +180,7 @@ Di seguito è riportato l’elenco dei campi dei destinatari replicati con l’i
   </tr> 
   <tr> 
    <td> E-mail<br /> </td> 
-   <td> @email<br /> </td> 
+   <td> @e-mail<br /> </td> 
   </tr> 
   <tr> 
    <td> Cognome<br /> </td> 

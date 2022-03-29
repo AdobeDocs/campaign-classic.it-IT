@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 966da123b30278817ca465ac5dfe1f733c4d6c5c
+source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
 workflow-type: tm+mt
-source-wordcount: '1707'
-ht-degree: 100%
+source-wordcount: '1730'
+ht-degree: 98%
 
 ---
 
@@ -215,7 +215,7 @@ Campaign Classic non è compatibile con i seguenti server in Federated Data Acce
 
 * DB2 UDB 9.5, 9.7. La versione più recente di DB2 è supportata tramite Federated Data Access (FDA). [Ulteriori informazioni](https://www-01.ibm.com/support/docview.wss?uid=swg21168270)
 * Oracle 9i, 10G R2. Versioni più recenti di Oracle sono supportate tramite Federated Data Access (FDA). [Ulteriori informazioni](https://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf)
-* PostgreSQL 8.3, 8.4, 9.0, 9.1, 9.2. Versioni più recenti di PostgreSQL sono supportate tramite Federated Data Access (FDA). [Ulteriori informazioni](https://www.postgresql.org/support/versioning)
+* Le versioni PostgreSQL fino a 9.6 hanno raggiunto la fine del ciclo di vita. Versioni più recenti di PostgreSQL sono supportate tramite Federated Data Access (FDA). [Ulteriori informazioni](https://www.postgresql.org/support/versioning)
 * MSSQL 2000, 2005, 2008 R2. Versioni più recenti di SQL Server sono supportate tramite Federated Data Access (FDA). [Ulteriori informazioni](https://support.microsoft.com/it-it/lifecycle/search/1044)
 * MySQL 5.1. Versioni più recenti di MySQL sono supportate tramite Federated Data Access (FDA). [Ulteriori informazioni](https://en.wikipedia.org/wiki/InfiniDB)
 * InfiniDB ha raggiunto la fine del ciclo di vita. [Ulteriori informazioni](https://www.mysql.com/support)
@@ -234,6 +234,8 @@ A partire dalla versione 19.1 di primavera, Adobe Campaign non è più compatibi
 * SQL Server 2005
 * MySQL 5.1
 * DB2 UDB 9.7
+
+Le versioni PostgreSQL fino a 9.6 hanno raggiunto la fine del ciclo di vita. Pertanto, non sono supportati da Adobe Campaign.
 
 ### Connettori SMS {#sms-eol}
 

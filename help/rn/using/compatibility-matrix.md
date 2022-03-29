@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 0cebe1ed2cd045559393c1914258593d608e50a0
-workflow-type: ht
-source-wordcount: '725'
+source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
+workflow-type: tm+mt
+source-wordcount: '721'
 ht-degree: 100%
 
 ---
@@ -141,7 +141,6 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 <p>12.x</p>
 <p>11.x</p>
 <p>10.x</p>
-<p>9.6.x</p>
 <p><strong>Nota:</strong> è inoltre possibile utilizzare Amazon RDS per PostgreSQL con le versioni sopra specificate.</p>
 </td>
 </tr>
@@ -222,9 +221,6 @@ Dagli ambienti **Managed Services** (in hosting), **Ibrido** e **On-Premise** è
 <p>12.x</p>
 <p>11.x</p>
 <p>10.x</p>
-<p>9.6.x</p>
-<p>9.5.x</p>
-<p>9.4.x</p>
 </td>
 <td>Minimo v7.0 19.1.4</td>
 </tr>
@@ -251,9 +247,9 @@ Inoltre, dagli ambienti **Ibrido** e **On-Premise** è anche possibile collegare
 <tr>
 <td> Oracle</td>
 <td>
-<p>19c</p>
-<p>18c</p>
-<p>12c</p>
+<p>19 quater</p>
+<p>18 quater</p>
+<p>12 quater</p>
 <p>11g</p>
 </td>
 <td>Minimo v7.0</td>

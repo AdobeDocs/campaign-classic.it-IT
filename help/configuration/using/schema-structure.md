@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1562'
 ht-degree: 1%
 
 ---
@@ -175,12 +175,10 @@ La tabella seguente elenca le mappature per i tipi di dati generati da Adobe Cam
 <table> 
  <tbody> 
   <tr> 
-   <td> <strong>Adobe Campaign</strong><br /> </td> 
    <td> <strong>PosgreSQL</strong><br /> </td> 
    <td> <strong> Oracle</strong><br /> </td> 
-   <td> <strong>Teradata</strong><br /> </td> 
-   <td> <strong>DB2</strong><br /> </td> 
    <td> <strong>SQL MS</strong><br /> </td> 
+   <td> <strong>Adobe Campaign</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> Stringa<br /> </td> 
@@ -247,11 +245,11 @@ La tabella seguente elenca le mappature per i tipi di dati generati da Adobe Cam
    <td> DATETIME<br /> </td> 
   </tr> 
   <tr> 
-   <td> Time<br /> </td> 
-   <td> TIME<br /> </td> 
+   <td> Tempo<br /> </td> 
+   <td> TEMPO<br /> </td> 
    <td> FLOAT<br /> </td> 
-   <td> TIME<br /> </td> 
-   <td> TIME<br /> </td> 
+   <td> TEMPO<br /> </td> 
+   <td> TEMPO<br /> </td> 
    <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
@@ -486,7 +484,6 @@ Gli elementi sono designati in base al loro nome e gli attributi sono designati 
 >
 >* **location/@city** non è valido; utilizzare **`[location/@city]`**
 >* **`[@email]`** e **@email** sono equivalenti
-
 >
 
 

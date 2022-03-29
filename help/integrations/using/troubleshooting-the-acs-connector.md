@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 4693dca1-ee55-43f0-b3dc-62a5b67a8058
-source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
+source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '870'
 ht-degree: 0%
 
 ---
@@ -112,3 +112,11 @@ A seconda dell’implementazione, puoi affrontare diversi problemi comuni.
 * **Non è possibile modificare un profilo, un pubblico o una pagina di destinazione in Campaign Standard. Cosa significa?**
 
    Le risorse sincronizzate da Campaign v7 sono in modalità di sola lettura in Campaign Standard, per garantire la coerenza dei dati. Se devi modificare uno di questi elementi, puoi farlo in Campaign v7 e replicare la modifica in Campaign Standard.
+
+* **Gli errori si verificano nel [ACS] Flusso di lavoro di replica del registro di consegna del profilo. Cosa dovrei fare?**
+
+   Nel caso in cui le istanze Campaign Classic e Campaign Standard siano utilizzate per inviare e-mail con URL tracciati, potrebbe verificarsi un problema con tagID URL duplicati durante la sincronizzazione. In questo caso, il **[ACS] Replica del registro di consegna del profilo** (newRcpDeliveryLogReplication) il flusso di lavoro continua a non riuscire con il seguente errore:
+
+   ```PGS-220000 PostgreSQL error: ERROR: duplicate key value violates unique constraint "nmstrackingurl_tagid" DETAIL: Key (stagid) = (1c7bdec2) already exists.```
+
+   Per risolvere il problema ed evitare che si verifichi di nuovo, aggiorna il **Aggiorna gli URL di tracciamento** (writerTrackingUrls) nel flusso di lavoro e aggiungi il prefisso &quot;ACS&quot; all&#39;espressione sorgente @tagId.
