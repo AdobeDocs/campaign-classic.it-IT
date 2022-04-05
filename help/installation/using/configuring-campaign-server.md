@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 294309239bc476669e9e017c27bd1b51a0bdaf8c
 workflow-type: tm+mt
 source-wordcount: '1578'
 ht-degree: 3%
@@ -23,7 +23,7 @@ Questo capitolo descrive le configurazioni lato server che possono essere esegui
 
 Tali procedure sono limitate a **on-premise**/**ibrido** implementazioni e richiedono le autorizzazioni di amministrazione.
 
-Per **ospitato** le implementazioni e le impostazioni lato server possono essere configurate solo per Adobe. Tuttavia, alcune impostazioni possono essere configurate in  [Pannello di controllo Campaign campagna](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=it), ad esempio gestione inserire nell&#39;elenco Consentiti IP o autorizzazioni URL. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=it).
+Per **ospitato** le implementazioni e le impostazioni lato server possono essere configurate solo per Adobe. Tuttavia, alcune impostazioni possono essere configurate in [Pannello di controllo Campaign campagna](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=it), ad esempio gestione inserire nell&#39;elenco Consentiti IP o autorizzazioni URL. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=it).
 
 Per ulteriori informazioni, consulta queste sezioni:
 
@@ -159,7 +159,7 @@ Adobe Campaign utilizza le seguenti pagine JSP:
 * /nl/jsp/**logon.jsp**: accesso basato sul web ai rapporti e alla distribuzione della console client,
 * /nl/jsp/**s.jsp** : Utilizzo del marketing virale (sponsorizzazione e social network).
 
-I JSSP utilizzati per il canale app mobile sono i seguenti:
+I JSSP utilizzati per il canale app Mobile sono i seguenti:
 
 * nms/mobile/1/registerIOS.jssp
 * nms/mobile/1/registerAndroid.jssp
