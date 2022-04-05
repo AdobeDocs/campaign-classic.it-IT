@@ -3,7 +3,7 @@ product: campaign
 title: Raccomandazioni per il dimensionamento dell'hardware per Campaign Classic v7
 description: Raccomandazioni per il dimensionamento dell'hardware per Campaign Classic v7
 exl-id: c47e73a0-dbd8-43f5-a363-7e6783dc7685
-source-git-commit: ee296e0ce25570d1fe62238e505f978df17c1f24
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
 source-wordcount: '2512'
 ht-degree: 1%
@@ -87,7 +87,7 @@ Volume stimato:
 | Destinatari attivi | 5 milioni |
 | E-mail | 4,2 milioni/mese |
 | Direct mail | 1 milione/mese |
-| SMS mobile | 100.000/mese |
+| Mobile SMS | 100.000/mese |
 | Picco volume e-mail giornaliero | 500 |
 
 Per questi volumi, una coppia di sistemi server applicativi Adobe Campaign fornisce tutte le funzionalità per gli utenti client Adobe Campaign e l&#39;esecuzione di un flusso di lavoro. Per 5 milioni di destinatari attivi e questo volume di e-mail, i carichi di lavoro del server applicazioni non richiedono un uso intensivo della CPU o dell’I/O; la maggior parte dello stress è nel database.
@@ -136,7 +136,7 @@ Volume stimato:
 | Destinatari attivi | 20 milioni |
 | E-mail | 42 milioni al mese |
 | Direct mail | 10 milioni al mese |
-| SMS mobile | 1.000.000/mese |
+| Mobile SMS | 1.000.000/mese |
 | Picco volume e-mail giornaliero | 5.000.000 |
 
 ### Server web e applicazioni
@@ -172,7 +172,7 @@ Volume stimato:
 | Destinatari attivi | 50 milioni |
 | E-mail | 108 milioni al mese |
 | Direct mail | 25 milioni al mese |
-| SMS mobile | 2,5 milioni/mese |
+| Mobile SMS | 2,5 milioni/mese |
 | Messaggi transazionali | 2,5 milioni/mese |
 | Picco volume e-mail giornaliero | 2,5 milioni |
 
@@ -252,7 +252,7 @@ I server cluster, ad esempio, i server applicazioni ridondanti sotto un proxy co
 È necessario mantenere qualsiasi configurazione RAID consigliata per la sicurezza del database, in modo che la perdita di un dispositivo di storage non causi la perdita di dati.
 
 * **Prestazioni I/O**
-È necessario rispettare la classificazione IOPS raccomandata per lo storage del database. I servizi cloud come Amazon EC2 potrebbero non fornire le prestazioni richieste e devono essere valutati attentamente. Ad esempio, i volumi SSD con provisioning Amazon EC2 sono attualmente valutati a 20.000 IOPS ciascuno. Ulteriori informazioni in [Documentazione di Amazon](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html)Pertanto, una configurazione RAID a 4 volumi verrebbe classificata a 80.000 IOPS, il che potrebbe non essere sufficiente.
+È necessario rispettare la classificazione IOPS raccomandata per lo storage del database. I servizi cloud come Amazon EC2 potrebbero non fornire le prestazioni richieste e devono essere valutati attentamente. Ad esempio, i volumi SSD con provisioning Amazon EC2 sono attualmente valutati a 20.000 IOPS ciascuno. Ulteriori informazioni in [Documentazione di Amazon](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html)), quindi una configurazione RAID a 4 volumi verrebbe valutata a 80.000 IOPS, il che potrebbe non essere sufficiente.
 
 Adobe consiglia di eseguire test delle prestazioni per qualsiasi implementazione virtualizzata di Adobe Campaign prima di mettere il sistema in produzione.
 

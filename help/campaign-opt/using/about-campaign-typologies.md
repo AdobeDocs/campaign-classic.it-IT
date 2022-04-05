@@ -4,9 +4,9 @@ title: Informazioni sulle tipologie di campagne
 description: Informazioni sulle tipologie di campagne
 feature: Typology Rules
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '468'
 ht-degree: 21%
 
 ---
@@ -78,8 +78,6 @@ La gestione dell’eccesso controlla la frequenza e la quantità di messaggi per
 Sono disponibili ulteriori video dimostrativi relativi a Campaign [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
 
 **Argomento correlato**
-
-* [Applicare regole di business automatiche alle consegne su qualsiasi canale](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Applyautomaticbusinessrulestodeliveriesonanychannel)
 
 * [Guida introduttiva alle tipologie e alla gestione dell’affaticamento](pressure-rules.md)
 

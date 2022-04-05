@@ -4,9 +4,9 @@ title: Accedere alle campagne di marketing
 description: Accedere alle campagne di marketing
 feature: Campaigns, Cross Channel Orchestration
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1247'
 ht-degree: 2%
 
 ---
@@ -149,7 +149,7 @@ Le campagne vengono create tramite modelli di campagna. Puoi configurare modelli
 
 >[!NOTE]
 >
->Per accedere alle configurazioni della campagna e apportare loro modifiche, fai clic sul pulsante **[!UICONTROL Advanced campaign parameters...]** nel collegamento **[!UICONTROL Edit]** scheda . Per ulteriori informazioni sull’impostazione dei parametri a livello di campagna in modo che le consegne ereditino automaticamente i valori, consulta [nota tecnica](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Setparametersatthecampaignlevelsodeliveriesinheritvaluesautomatically).
+>Per accedere alle configurazioni della campagna e apportare loro modifiche, fai clic sul pulsante **[!UICONTROL Advanced campaign parameters...]** nel collegamento **[!UICONTROL Edit]** scheda .
 
 ## Utilizzo dell’interfaccia web {#using-the-web-interface-}
 

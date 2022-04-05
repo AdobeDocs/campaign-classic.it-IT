@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a025026e-688e-4ec1-abc4-40ee040d2b3b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '587'
 ht-degree: 5%
 
 ---
@@ -41,7 +41,7 @@ Per creare una nuova istanza, segui i passaggi seguenti:
 
 1. Specifica una connessione al server dell’applicazione Adobe Campaign tramite un URL. Utilizzare un DNS o un alias del computer o l&#39;indirizzo IP.
 
-   Ad esempio, puoi utilizzare il [`https://<machine>.<domain>.com`](https://myserver.adobe.com) digitare URL.
+   Ad esempio, puoi utilizzare il `https://<machine>.<domain>.com` digitare URL.
 
    >[!CAUTION]
    >
@@ -61,7 +61,7 @@ Per creare una nuova istanza, segui i passaggi seguenti:
 
    È possibile definire un elenco di valori separati da virgole.
 
-   I caratteri ? e * possono essere utilizzati come caratteri jolly per sostituire uno o più caratteri (DNS, porta, ecc.). Ad esempio, il **demo*** Il valore funzionerà con &quot;https://demo&quot; come con &quot;https://demo:8080&quot; e anche con &quot;https://demo2&quot;.
+   I caratteri ? e &#42; I caratteri possono essere utilizzati come caratteri jolly per sostituire uno o più caratteri (DNS, porte, ecc.). Ad esempio, il **demo&#42;** Il valore funzionerà con &quot;https://demo&quot; come con &quot;https://demo:8080&quot; e anche con &quot;https://demo2&quot;.
 
    I nomi utilizzati devono essere definiti nel DNS. È inoltre possibile informare la corrispondenza tra un nome DNS e un indirizzo IP nel **c:/windows/system32/driver/etc/hosts** in Windows e nella **/etc/hosts** in Linux. È quindi necessario modificare le impostazioni di connessione per utilizzare questo nome DNS per connettersi all&#39;istanza scelta.
 

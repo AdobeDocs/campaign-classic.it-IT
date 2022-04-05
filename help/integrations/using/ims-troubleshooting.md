@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 1ce89c3a-1fe6-4ed6-9547-2eb9713a0ec3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '407'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ Ad esempio, se **Contesto del prodotto** non viene visualizzato, il contesto di 
 
 **[!UICONTROL IMS Server URL]**
 
-Nella campagna **Adobe Marketing Cloud** account esterno, controlla che il **[!UICONTROL IMS Server URL]** è [adobeid-na1.services.adobe.com](https://adobeid-na1.services.adobe.com/) o [ims-na1.adobelogin.com](http://ims-na1.adobelogin.com/). Assicurati che entrambe le istanze di stage e produzione puntino allo stesso punto finale di produzione IMS.
+Nella campagna **Adobe Marketing Cloud** account esterno, controlla che il **[!UICONTROL IMS Server URL]** è `adobeid-na1.services.adobe.com` o `ims-na1.adobelogin.com`. Assicurati che entrambe le istanze di stage e produzione puntino allo stesso punto finale di produzione IMS.
 
 **Maschera di associazione**
 

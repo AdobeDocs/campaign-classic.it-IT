@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: e2eb7e04-faaa-4df0-913d-471c291eeb03
-source-git-commit: c228f827e91f25ee3a837f7fe6549ae4e5714ba3
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '6619'
+source-wordcount: '6601'
 ht-degree: 73%
 
 ---
@@ -278,7 +278,7 @@ _22 luglio 2020_
 * Il connettore iOS HTTP2 è stato migliorato (aggiornamenti di terze parti e gestione degli errori). (NEO-25904, NEO-25903)
 * È stato aggiornato l’elenco jarsToSkip in catalina.properties, con la rimozione del riferimento a un file jar non più utilizzato (notifiche iOS).
 * È stato risolto un problema che impediva la preparazione della consegna dopo un post-aggiornamento.
-* Dopo il passaggio al [nuovo meccanismo di sequenza ID](https://helpx.adobe.com/it/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence), tutte le applicazioni web che aggiornano la tabella dei destinatari vengono ripubblicate durante il post-aggiornamento.
+* Dopo il passaggio al nuovo meccanismo di sequenza ID, tutte le applicazioni web che aggiornano la tabella dei destinatari vengono ripubblicate durante il post-aggiornamento.
 * È stato risolto un problema di potenziale vulnerabilità XSS nel contenuto di consegna. (NEO-17987, NEO-26073)
 
 ![](assets/do-not-localize/cp-icon.png) **Nuova versione del Pannello di controllo Campaign di giugno** con monitoraggio dei profili attivi, audit del recapito messaggi del sottodominio e gestione delle chiavi GPG. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html).
@@ -607,7 +607,7 @@ _17 febbraio 2020_
 
 * Su Linux, l&#39;avvio del servizio nlserver ora utilizza un&#39;unità di sistema invece dello script /etc/init.d/nlserver6. La migrazione al nuovo schema di avvio viene eseguita automaticamente quando installi il pacchetto 20.1. /etc/init.d/nlserver6 è ancora disponibile ma per interagire con il servizio nlserver (avvio, riavvio, arresto, ecc.), si consiglia di utilizzare direttamente il comando systemctl.
 
-* Le tabelle personalizzate più utilizzate sono state spostate dalla **xtkNewId** sequenza a sequenze dedicate. [Maggiori informazioni](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* Le tabelle personalizzate più utilizzate sono state spostate dalla **xtkNewId** sequenza a sequenze dedicate.
 
 * Prestazioni query migliorate che potrebbero essere influenzate da connessioni di database non necessarie.
 

@@ -3,9 +3,9 @@ product: campaign
 title: Versioni di Campaign Classic 2019
 description: Ulteriori informazioni sulle versioni di Campaign Classic 2019
 exl-id: 8a36a542-e095-4208-b624-e59845592863
-source-git-commit: 0f31ee570ba6e763f48902e91c5d823ac297fc24
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '4843'
+source-wordcount: '4825'
 ht-degree: 24%
 
 ---
@@ -131,7 +131,7 @@ _2 dicembre 2019_
 **Miglioramenti di sicurezza**
 
 * Sono state corrette le vulnerabilità di cross-site scripting memorizzate nell’interfaccia di Campaign: convalida dei dati di input e codifica dell’output. (NEO-16810)
-* È stato risolto un problema di sicurezza relativo all’autorizzazione del profilo che poteva consentire l’accesso a dati non autorizzati, rafforzando i criteri di restrizione dell’accesso. (NEO-14445)
+* È stato risolto un problema di sicurezza relativo all’autorizzazione dei profili che poteva consentire l’accesso a dati non autorizzati, rafforzando i criteri di restrizione dell’accesso. (NEO-14445)
 
 **Miglioramenti**
 
@@ -277,7 +277,7 @@ _15 settembre 2020_
 * È stato risolto un problema di regressione della connessione al database che provocava il riavvio costante del server web a causa di un problema di codifica del database. Ciò poteva portare a un consumo eccessivo. (NEO-23264)
 * È stato risolto un problema relativo al flusso di lavoro di pulizia del database che poteva non riuscire a causa di un&#39;origine dati non gestita. (NEO-23160, NEO-23364)
 * Il flusso di lavoro di pulizia ora svuota gli elenchi scaduti per batch di 100 invece che singolarmente.
-* Dopo il passaggio al [nuovo meccanismo di sequenza ID](https://helpx.adobe.com/it/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence), tutte le applicazioni web che aggiornano la tabella dei destinatari vengono ripubblicate durante il post-aggiornamento.
+* Dopo il passaggio al nuovo meccanismo di sequenza ID, tutte le applicazioni web che aggiornano la tabella dei destinatari vengono ripubblicate durante il post-aggiornamento.
 * È stato risolto un problema che impediva l’invio di e-mail in caso di codice JavaScript all’esterno del tag di contenuto di HTML. (NEO-18628)
 * È stato risolto un problema che impediva agli indicatori di tracciamento dei messaggi transazionali di essere aggiornati dal flusso di lavoro Tracking. (NEO-17770)
 * Sono state migliorate le prestazioni della procedura guidata di aggiornamento del database per ridurre il numero di istruzioni SQL al fine di ottimizzare il tempo di risposta.
@@ -401,7 +401,7 @@ _30 maggio 2019_
 
 **Miglioramenti a livello di sicurezza, robustezza e scalabilità**
 
-* Lifespan - Ottimizzazione dell&#39;utilizzo della sequenza XtkNewId: le tabelle più dispendiose sono state spostate dalla sequenza xtkNewId alle sequenze dedicate. [Maggiori informazioni](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* Lifespan - Ottimizzazione dell&#39;utilizzo della sequenza XtkNewId: le tabelle più dispendiose sono state spostate dalla sequenza xtkNewId alle sequenze dedicate.
 * FDA su HTTP v2: il protocollo FDA su HTTP è ampiamente utilizzato nelle implementazioni ibride, soprattutto per il recupero e la preparazione di consegne wideLog. La robustezza è stata migliorata per evitare problemi di rete e possibili errori durante il recupero o il push dei dati. Ciò richiede che le build a entrambe le estremità della connessione siano aggiornate, altrimenti verrà comunque utilizzato il vecchio protocollo.
 * Flusso di lavoro di tracciamento: la robustezza del flusso di lavoro di tracciamento è stata migliorata. Sono stati risolti diversi problemi relativi al tracciamento degli inserimenti/aggiornamenti dei log e alla personalizzazione del tracciamento degli URL. Inoltre, il flusso di lavoro di tracciamento ora rileva i problemi del registro di tracciamento che potrebbero causare errori e arrestare il flusso di lavoro. Questi problemi vengono ora scartati e non elaborati.
 * Flusso di lavoro di pulizia: il flusso di lavoro di pulizia è stato migliorato per evitare potenziali errori e arresti. Questo ottimizza le dimensioni e le prestazioni del database.

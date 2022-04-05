@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 6b7ec6b39a79e9b1e6e2bba3d5193765094cf4fd
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '7969'
+source-wordcount: '7961'
 ht-degree: 5%
 
 ---
@@ -574,7 +574,7 @@ Per ulteriori informazioni, consulta [Limitazione dei comandi esterni autorizzat
   </tr> 
   <tr> 
    <td> user<br /> </td> 
-   <td> Execute commands as a different user.<br /> </td> 
+   <td> Esegui i comandi come un altro utente.<br /> </td> 
    <td> Stringa<br /> </td> 
   </tr> 
  </tbody> 
@@ -582,7 +582,7 @@ Per ulteriori informazioni, consulta [Limitazione dei comandi esterni autorizzat
 
 ## htmlToPdf {#htmltopdf}
 
-Here are the different parameters of the **htmlToPdf** node. Questa è la configurazione del servizio per la conversione di pagine web in documenti PDF.
+Di seguito sono riportati i diversi parametri del **htmlToPdf** nodo. Questa è la configurazione del servizio per la conversione di pagine web in documenti PDF.
 
 <table> 
  <thead> 
@@ -590,13 +590,13 @@ Here are the different parameters of the **htmlToPdf** node. Questa è la config
    <th> Parametro </th> 
    <th> Descrizione </th> 
    <th> Tipo </th> 
-   <th> Default value </th> 
+   <th> Valore predefinito </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
    <td> command<br /> </td> 
-   <td> Command line for running the conversion (in 'other' mode).<br /> </td> 
+   <td> Riga di comando per l’esecuzione della conversione (in modalità "altro").<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -708,7 +708,7 @@ Di seguito sono riportati i diversi parametri del **ims** nodo. Configurazione p
 
 Di seguito sono riportati i diversi parametri del **javaScript** nodo. Questa è la configurazione dell&#39;interprete JavaScript.
 
-Per ulteriori informazioni, consulta la [Documentazione sul reporting](../../reporting/using/actions-on-reports.md#memory-allocation) e questo [nota tecnica](https://helpx.adobe.com/campaign/kb/out-of-memory-error-in-js-code-activity-in-workflows.html).
+Per ulteriori informazioni, consulta la [Documentazione sul reporting](../../reporting/using/actions-on-reports.md#memory-allocation).
 
 <table> 
  <thead> 
@@ -1028,11 +1028,11 @@ Se un record soddisfa **suffisso dns** ma non **urlRegEx**, viene esaminato il s
 
 Ad esempio, per autorizzare l&#39;accesso a tutti gli URL del dominio business.com, possiamo definire due record:
 
-dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;http://.*&quot;
+dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;http://.&#42;&quot;
 
-e
+e 
 
-dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.*&quot;
+dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
 
 Di seguito è riportata la configurazione predefinita:
 
@@ -1756,13 +1756,13 @@ Per ulteriori informazioni, consulta [sezione](../../installation/using/configur
   </tr> 
   <tr> 
    <td> maxSpareServers<br /> </td> 
-   <td> Numero massimo di server figlio. Represents the maximum number of servers running. È consigliabile limitare questo numero ad un livello ottimale compatibile con le risorse di memoria del server. Questo può essere controllato durante una consegna. La memoria utilizzata non deve superare un terzo della memoria fisica disponibile altrimenti verrà utilizzato lo scambio. Vedi <a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">Processi figlio MTA</a>.<br /> </td> 
+   <td> Numero massimo di server figlio. Rappresenta il numero massimo di server in esecuzione. È consigliabile limitare questo numero ad un livello ottimale compatibile con le risorse di memoria del server. Questo può essere controllato durante una consegna. La memoria utilizzata non deve superare un terzo della memoria fisica disponibile altrimenti verrà utilizzato lo scambio. Vedi <a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">Processi figlio MTA</a>.<br /> </td> 
    <td> Lunga<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
   <tr> 
    <td> minSpareServers<br /> </td> 
-   <td> Numero minimo di server figlio. L’MTA tenta di mantenere in esecuzione almeno questo numero di server. If there are less, it restarts new servers every second until this value is reached.<br /> </td> 
+   <td> Numero minimo di server figlio. L’MTA tenta di mantenere in esecuzione almeno questo numero di server. Se ce ne sono di meno, riavvia nuovi server ogni secondo fino a raggiungere questo valore.<br /> </td> 
    <td> Lunga<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
@@ -2529,7 +2529,7 @@ Di seguito sono riportati i diversi parametri del **syslogd** nodo. Questa è la
    <th> Parametro </th> 
    <th> Descrizione </th> 
    <th> Tipo </th> 
-   <th> Default value </th> 
+   <th> Valore predefinito </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -2541,7 +2541,7 @@ Di seguito sono riportati i diversi parametri del **syslogd** nodo. Questa è la
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> Automatic start<br /> </td> 
+   <td> Avvio automatico<br /> </td> 
    <td> Booleano<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -3251,7 +3251,7 @@ Per ulteriori informazioni, consulta [Gestione delle intestazioni HTTP](../../in
    <td> Stringa<br /> </td> 
   </tr> 
   <tr> 
-   <td> value<br /> </td> 
+   <td> valore<br /> </td> 
    <td> Valore intestazione <br /> </td> 
    <td> Stringa<br /> </td> 
   </tr> 

@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: e612a4e7-f4ef-4db4-afab-5544b73430d3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 7%
+source-wordcount: '366'
+ht-degree: 8%
 
 ---
 
@@ -21,13 +21,12 @@ ht-degree: 7%
 
 Inizia a usare Adobe Campaign consultando le nostre intuitive guide dettagliate.
 
-* [Modifica del contenuto delle e-mail con Adobe Experience Manager](https://helpx.adobe.com/campaign/kb/acc-aem.html): scopri le nozioni di base per iniziare a utilizzare l’integrazione tra Adobe Campaign e Experience Manager.
 * [Gestione della privacy](https://helpx.adobe.com/it/campaign/kb/acc-privacy.html): scopri cosa offre Adobe Campaign Classic per aiutarti con la conformità in materia di privacy quando utilizzi il nostro servizio.
 * [Integrazione del contenuto dinamico in un’e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html): scopri le nozioni di base per iniziare a utilizzare l’integrazione tra Campaign Classic e Target Standard.
 * [Gestione del recapito messaggi](../../delivery/using/about-deliverability.md): scopri i concetti e le best practice relativi al recapito messaggi e gli strumenti offerti da Adobe Campaign Classic per ottimizzare l’invio delle consegne.
 * [Best practice per le consegne](../../delivery/using/delivery-best-practices.md): scopri le best practice relative alla progettazione e all’invio di consegne con Adobe Campaign Classic.
 * [Esecuzione di un aggiornamento della build](https://helpx.adobe.com/it/campaign/kb/acc-build-upgrade.html): questa guida descrive i passaggi chiave e le best practice per eseguire un aggiornamento della build con Campaign Classic.
-* [Lista di controllo per la configurazione della sicurezza](https://helpx.adobe.com/campaign/kb/acc-security.html): scopri gli elementi chiave da verificare per quanto riguarda la configurazione della sicurezza e l’irrigidimento per la distribuzione on-premise
+* [Lista di controllo per la configurazione della sicurezza](https://helpx.adobe.com/it/campaign/kb/acc-security.html): scopri gli elementi chiave da verificare per quanto riguarda la configurazione della sicurezza e l’irrigidimento per la distribuzione on-premise
 
 Per ulteriori informazioni su Adobe Campaign, consulta i casi di utilizzo e gli esempi seguenti:
 

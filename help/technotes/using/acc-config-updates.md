@@ -3,9 +3,9 @@ product: campaign
 title: Nota tecnica - Aggiornamenti alla configurazione di Adobe Campaign
 description: Aggiornamenti alla configurazione di Adobe Campaign
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 0f31ee570ba6e763f48902e91c5d823ac297fc24
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1125'
 ht-degree: 12%
 
 ---
@@ -101,7 +101,7 @@ Una volta aggiornate tutte le istanze, è necessario aggiornare anche la console
 
 ## Integrazione con Experience Cloud Triggers {#acc-triggers-updates}
 
-Il servizio di autenticazione oAuth legacy ha raggiunto la fine del ciclo di vita. L’autenticazione dell’integrazione dei trigger, originariamente basata su oAUTH per accedere alla pipeline, è stata spostata in Adobe I/O. Modalità di autenticazione oAuth legacy con Campaign [è stato ritirato](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) su **Settembre 2021**. Gli ambienti in hosting beneficiano di un’estensione fino a  **23 febbraio 2022**. In qualità di cliente on-premise o ibrido, contatta l’Assistenza clienti Adobe per estendere il supporto a febbraio 2022. Devi fornire ad Adobe [l’AppID dell’applicazione OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional).
+Il servizio di autenticazione oAuth legacy ha raggiunto la fine del ciclo di vita. L’autenticazione dell’integrazione dei trigger, originariamente basata su oAUTH per accedere alla pipeline, è stata spostata in Adobe I/O. Modalità di autenticazione oAuth legacy con Campaign [è stato ritirato](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) su **Settembre 2021**. Gli ambienti in hosting usufruiscono di una proroga fino al **23 febbraio 2022**. In qualità di cliente on-premise o ibrido, contatta l’Assistenza clienti Adobe per estendere il supporto a febbraio 2022. Devi fornire ad Adobe [l’AppID dell’applicazione OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional).
 
 **Sei interessato da questo problema?**
 
@@ -140,7 +140,7 @@ Scopri come controllare la versione [in questa sezione](../../platform/using/lau
 
 In qualità di cliente in hosting, se hai effettuato l’aggiornamento alla nuova build, Adobe ha già aggiornato le istanze all’API basata su HTTP/2.
 
-In qualità di cliente on-premise/ibrido, devi aggiornare la configurazione. [Scopri come migrare a HTTP/2](https://helpx.adobe.com/it/campaign/kb/migrate-to-apns-http2.html)
+In qualità di cliente on-premise/ibrido, devi aggiornare la configurazione.
 
 ### Aggiornamenti dei certificati principali di APN
 

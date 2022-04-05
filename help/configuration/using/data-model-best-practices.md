@@ -4,9 +4,9 @@ title: Best practice per i modelli di dati
 description: Scopri come utilizzare il modello dati di Campaign Classic
 feature: Data Model
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '4007'
+source-wordcount: '3988'
 ht-degree: 1%
 
 ---
@@ -104,7 +104,7 @@ Nella tabella seguente sono descritti questi identificatori e il loro scopo.
 
 | Identificatore | Descrizione | Best practice |
 |--- |--- |--- |
-| Id | <ul><li>L’id è la chiave primaria fisica di una tabella Adobe Campaign. Per le tabelle pronte all’uso, si tratta di un numero generato a 32 bit da una sequenza</li><li>Questo identificatore è in genere univoco per una specifica istanza di Adobe Campaign. </li><li>Un id generato automaticamente può essere visibile in una definizione dello schema. Cerca nel *autopk=&quot;true&quot;* attributo.</li></ul> | <ul><li>Gli identificatori generati automaticamente non devono essere utilizzati come riferimento in un flusso di lavoro o nella definizione di un pacchetto.</li><li>Non si deve presumere che l&#39;id sarà sempre un numero crescente.</li><li>L’ID in una tabella standard è un numero a 32 bit e questo tipo non deve essere modificato. Questo numero è tratto da una &quot;sequenza&quot; coperta nella sezione con lo stesso nome.</li></ul> |
+| ID | <ul><li>L’id è la chiave primaria fisica di una tabella Adobe Campaign. Per le tabelle pronte all’uso, si tratta di un numero generato a 32 bit da una sequenza</li><li>Questo identificatore è in genere univoco per una specifica istanza di Adobe Campaign. </li><li>Un id generato automaticamente può essere visibile in una definizione dello schema. Cerca nel *autopk=&quot;true&quot;* attributo.</li></ul> | <ul><li>Gli identificatori generati automaticamente non devono essere utilizzati come riferimento in un flusso di lavoro o nella definizione di un pacchetto.</li><li>Non si deve presumere che l&#39;id sarà sempre un numero crescente.</li><li>L’ID in una tabella standard è un numero a 32 bit e questo tipo non deve essere modificato. Questo numero è tratto da una &quot;sequenza&quot; coperta nella sezione con lo stesso nome.</li></ul> |
 | Nome (o nome interno) | <ul><li>Queste informazioni sono un identificatore univoco di un record in una tabella. Questo valore può essere aggiornato manualmente, in genere con un nome generato.</li><li>Questo identificatore mantiene il suo valore quando viene distribuito in un’istanza diversa di Adobe Campaign e non deve essere vuoto.</li></ul> | <ul><li>Rinomina il nome del record generato da Adobe Campaign se l’oggetto deve essere distribuito da un ambiente a un altro.</li><li>Quando un oggetto ha un attributo namespace (*schema* ad esempio), questo namespace comune verrà utilizzato in tutti gli oggetti personalizzati creati. Alcuni spazi dei nomi riservati non devono essere utilizzati: *nms*, *xtk*, *nl*, *ncl*, *crm*, *xxl*.</li><li>Quando un oggetto non ha uno spazio dei nomi (*workflow* o *consegna* ad esempio), questa nozione di namespace verrebbe aggiunta come prefisso di un oggetto nome interno: *namespaceMyObjectName*.</li><li>Non utilizzare caratteri speciali come lo spazio &quot;&quot;, la semicolonna &quot;:&quot; o il trattino &quot;-&quot;. Tutti questi caratteri verranno sostituiti da un carattere di sottolineatura &quot;_&quot; (carattere consentito). Ad esempio, &quot;abc-def&quot; e &quot;abc:def&quot; vengono memorizzati come &quot;abc_def&quot; e si sovrascrivono a vicenda.</li></ul> |
 | Etichetta | <ul><li>L’etichetta è l’identificatore aziendale di un oggetto o record in Adobe Campaign.</li><li>Questo oggetto consente spazi e caratteri speciali.</li><li>Non garantisce l&#39;unicità di un documento.</li></ul> | <ul><li>È consigliabile determinare una struttura per le etichette degli oggetti.</li><li>Questa è la soluzione più semplice da usare per identificare un record o un oggetto per un utente Adobe Campaign.</li></ul> |
 
@@ -148,9 +148,7 @@ Quando viene creata una tabella personalizzata in Adobe Campaign con una chiave 
 
 Per impostazione predefinita, una sequenza personalizzata avrà valori compresi tra +1.000 e +2,1BB. Tecnicamente, è possibile ottenere una gamma completa di 4BB abilitando gli id negativi. Questo dovrebbe essere utilizzato con cura e un ID andrà perso quando si passa da numeri negativi a numeri positivi: il record 0 viene in genere ignorato da Adobe Campaign nelle query SQL generate.
 
-**Argomenti correlati:**
-* Per ulteriori informazioni su **Generazione automatica della sequenza** funzionalità, vedi [presente documento](https://helpx.adobe.com/it/campaign/kb/sequence_auto_generation.html).
-* Per ulteriori informazioni sull&#39;esaurimento delle sequenze, guarda [questo video](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
+Per ulteriori informazioni sull&#39;esaurimento delle sequenze, guarda [questo video](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
 
 ## Indici {#indexes}
 
@@ -327,5 +325,3 @@ In questo esempio:
 * La *Prodotto* e *Store* le tabelle sono più piccole: meno di 10.000.
 * L&#39;etichetta e il riferimento del prodotto sono stati inseriti nel *Prodotto* tabella.
 * La *Articolo transazione* la tabella presenta solo un collegamento alla tabella *Prodotto* tabella, numerica.
-
-<!--For more detailed best practices on how to optimize the database design for larger volumes, see [Campaign Classic Data model Best practices](https://helpx.adobe.com/campaign/kb/acc-data-model-best-practices.html).-->

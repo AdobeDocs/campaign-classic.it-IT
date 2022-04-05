@@ -3,10 +3,10 @@ product: campaign
 title: Versioni di Campaign Classic 2018
 description: Ulteriori informazioni sulle versioni di Campaign Classic 2018
 exl-id: f70fceba-4bbf-4f33-8746-e4405a1cdae6
-source-git-commit: 96f2ae67a5b47b80533e759713cf5b36baa8cf36
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '5414'
-ht-degree: 8%
+source-wordcount: '5385'
+ht-degree: 7%
 
 ---
 
@@ -122,7 +122,7 @@ ht-degree: 8%
      <li> <p>Tracciare le notifiche silenziose in iOS </p> </li> 
      <li> <p>Implementazione del feedback sulle chiamate di registrazione in iOS</p> </li> 
      <li> <p>Migliorare la velocità di preparazione delle consegne in iOS</p> </li> 
-    </ul> <p>Come parte del deprezzamento del GCM da parte di Google, il connettore Android V2 ora permette connessioni solo al server FCM.</p><p>Per ulteriori informazioni, consulta la <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">documentazione dettagliata</a>. L'aggiornamento manuale a FCM è descritto in questo <a href="https://helpx.adobe.com/it/campaign/kb/migrate-to-fcm.html">articolo</a>. </p> </td> 
+    </ul> <p>Come parte del deprezzamento del GCM da parte di Google, il connettore Android V2 ora permette connessioni solo al server FCM.</p><p>Per ulteriori informazioni, consulta la <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">documentazione dettagliata</a>.</p> </td> 
   </tr> 
   <tr> 
    <td> Attività di gestione dati SQL<br /> </td> 
@@ -213,7 +213,7 @@ Queste modifiche dell&#39;indice possono comportare un aumento del tempo necessa
 * È stato risolto un problema nei rapporti a causa del quale i grafici calcolavano sempre la somma dei valori indipendentemente dall’operatore aggregato selezionato. (NEO-10913)
 * Poiché la funzione &quot;request.schema&quot; è obsoleta, è stata rimossa dalla documentazione JSAPI. (NEO-10828)
 * È stato risolto un problema che impediva ad alcuni utenti con configurazioni di fuso orario specifiche di accedere ad Adobe Campaign. (NEO-10712)
-* È stato risolto un problema che si verificava durante la configurazione di un account esterno di canale mobile utilizzando il connettore SMPP generico esteso: se si specificava l&#39;utilizzo di parametri diversi per il ricevitore, il trasmettitore utilizzava erroneamente tali parametri invece dei propri parametri.
+* È stato risolto un problema che si verificava durante la configurazione di un account esterno di canale Mobile utilizzando il connettore SMPP generico esteso: se si specificava l&#39;utilizzo di parametri diversi per il ricevitore, il trasmettitore utilizzava erroneamente tali parametri invece dei propri parametri.
 * È stato risolto un problema che causava un errore delle consegne programmate durante l’impostazione di una frequenza per la regola di pressione, perché le consegne venivano costantemente ricalcolate dopo il primo arbitrato. (NEO-10016)
 * È stato risolto un problema che causava l&#39;arresto anomalo del server Web IIS durante il processo di riciclo del pool di applicazioni (nella libreria nlsrvmod.dll). (NEO-10862)
 * È stato risolto un problema che poteva impedire la ricerca di un destinatario in **Profili e Target** schermo. (NEO-8228)
@@ -466,7 +466,7 @@ Per i clienti esistenti, le API dei file non possono più accedere al **conf** c
 **Miglioramenti**
 
 * **Canale LINE - miglioramento dell&#39;architettura**: Come per tutti gli altri canali in Adobe Campaign, il canale LINE è ora supportato in tutti i tipi di distribuzione: in hosting, ibrido e on-premise.
-* **Generazione automatica della sequenza**: Il meccanismo di generazione ID è stato migliorato per aumentare la durata delle istanze Campaign con grandi volumi di oggetti. Per ulteriori informazioni, consulta [nota tecnica](https://helpx.adobe.com/it/campaign/kb/sequence_auto_generation.html).
+* **Generazione automatica della sequenza**: Il meccanismo di generazione ID è stato migliorato per aumentare la durata delle istanze Campaign con grandi volumi di oggetti.
 
 **Altre modifiche**
 

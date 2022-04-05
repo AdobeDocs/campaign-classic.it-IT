@@ -6,9 +6,9 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: f9dd9ad6-48da-4a80-9405-109a433a1ed5
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '448'
 ht-degree: 1%
 
 ---
@@ -110,7 +110,3 @@ Vogliamo inviare una prima proposta di offerta appartenente alla categoria Canad
    Vediamo che non sono state scelte offerte per il Canada.
 
    ![](assets/offer_typology_example_019.png)
-
-**Argomento correlato**
-
-* [Gestire le offerte e controllare la ridondanza tra i canali](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Manageoffersandcontrolredundancyacrosschannels)
