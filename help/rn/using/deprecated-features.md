@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1730'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -235,7 +235,7 @@ A partire dalla versione 19.1 di primavera, Adobe Campaign non è più compatibi
 * MySQL 5.1
 * DB2 UDB 9.7
 
-Le versioni PostgreSQL fino a 9.6 hanno raggiunto la fine del ciclo di vita. Pertanto, non sono supportati da Adobe Campaign.
+Le versioni PostgreSQL fino a 9.6 hanno raggiunto la fine del ciclo di vita. Non sono pertanto supportate da Adobe Campaign.
 
 ### Connettori SMS {#sms-eol}
 
