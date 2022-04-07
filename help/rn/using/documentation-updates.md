@@ -32,7 +32,7 @@ Per gli aggiornamenti relativi alla versione, consulta le [Note sulla versione d
 
 * È ora disponibile la nuova build di Campaign v7.2.2. [Maggiori informazioni](../../rn/using/latest-release.md)
 * Sono state aggiunte informazioni sulla risoluzione dei problemi relativi al connettore ACS. [Maggiori informazioni](../../integrations/using/troubleshooting-the-acs-connector.md)
-* Le versioni legacy di PostgreSQL che hanno raggiunto la fine del ciclo di vita sono state aggiunte al [Funzioni obsolete e rimosse](../../rn/using/deprecated-features.md#dbe-eol) pagina.
+* Le versioni legacy di PostgreSQL che hanno raggiunto la fine del ciclo di vita sono state aggiunte alla pagina [Funzioni obsolete e rimosse](../../rn/using/deprecated-features.md#dbe-eol).
 
 ### Febbraio 2022 {#february-2022}
 
