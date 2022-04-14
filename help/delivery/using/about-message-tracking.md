@@ -4,9 +4,9 @@ title: Guida introduttiva al tracciamento
 description: Ulteriori informazioni sulle linee guida generali per il tracciamento in Adobe Campaign Classic
 feature: Monitoring, Email
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 29fae1305a6d2b8debbc2aa705c047eaf3730457
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '684'
 ht-degree: 9%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 ![](../../assets/common.svg)
 
-Grazie alle sue funzionalità di tracciamento, Adobe Campaign ti consente di monitorare i messaggi inviati e controllare il comportamento dei destinatari: apertura, clic sui collegamenti, annullamento dell’abbonamento, ecc.
+Grazie alle sue funzionalità di tracciamento, Adobe Campaign ti consente di tenere traccia dei messaggi inviati e di controllare il comportamento dei destinatari: apertura, clic sui collegamenti, annullamento dell’abbonamento, ecc.
 
 Queste informazioni vengono recuperate nella **[!UICONTROL Tracking]** scheda del profilo di ciascun destinatario della consegna. Questa scheda presenta tutti i collegamenti URL tracciati e su cui il destinatario è stato selezionato dall’elenco. Si tratta dell’accumulo di tutti gli URL tracciati nelle consegne ancora presenti nella schermata di consegna. L’elenco può essere configurato e in genere contiene: l’URL su cui hai fatto clic, la data e l’ora del clic e il documento in cui è stato trovato l’URL. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/editing-a-profile.md#tracking-tab).
 
