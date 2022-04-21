@@ -6,10 +6,10 @@ title: Guida di Campaign Classic v7
 user-guide-description: Con Adobe Campaign, puoi utilizzare dati approfonditi sui clienti per creare, coordinare e distribuire campagne dinamiche che i clienti desiderano realmente, tramite e-mail, dispositivi mobili, canali offline e altro ancora.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: dd7217bd508d718d84c417fcdf7610a5582ef204
-workflow-type: ht
-source-wordcount: '2552'
-ht-degree: 100%
+source-git-commit: a8044037e889f59d4288a0746001e84d319f6bcf
+workflow-type: tm+mt
+source-wordcount: '2571'
+ht-degree: 99%
 
 ---
 
@@ -53,7 +53,11 @@ ht-degree: 100%
    + Privacy {#privacy}
       + [Privacy e consenso](platform/using/privacy-and-recommendations.md)
       + [Gestione della privacy](platform/using/privacy-management.md)
-      + [Richieste di accesso a dati personali](platform/using/privacy-requests.md)
+      + Richieste di accesso a dati personali {#privacy-requests}
+         + [Informazioni sulle richieste di accesso a dati personali](platform/using/privacy-requests.md)
+         + [Creare e gestire richieste di accesso a dati personali](platform/using/privacy-requests-ui.md)
+         + [Processo automatico di richiesta di accesso a dati personali](platform/using/privacy-requests-api.md)
+         + [Rinuncia alla vendita di informazioni personali](platform/using/privacy-requests-ccpa.md)
    + Gestione dei profili {#profile-management}
       + [Informazioni sui profili](platform/using/about-profiles.md)
       + [Modificare un profilo](platform/using/editing-a-profile.md)

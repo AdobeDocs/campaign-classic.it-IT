@@ -4,7 +4,7 @@ title: Sincronizzazione dei dati dei connettori di gestione delle relazioni con 
 description: Gestione dei dati tra Campaign e il tuo CRM
 feature: Salesforce Integration, Microsoft CRM Integration
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
 workflow-type: tm+mt
 source-wordcount: '1536'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Sincronizzazione dei dati tra Campaign e CRM {#data-synchronization}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 La sincronizzazione dei dati tra Adobe Campaign e il CRM viene eseguita tramite un’attività di flusso di lavoro dedicata: [Connettore CRM](../../workflow/using/crm-connector.md).
 
