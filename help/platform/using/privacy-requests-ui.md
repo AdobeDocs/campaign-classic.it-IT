@@ -1,14 +1,15 @@
 ---
 product: campaign
-title: Creare richieste di accesso alla privacy
-description: Scopri come creare e gestire le richieste di privacy
+title: Creare richieste di accesso ai dati personali
+description: Scopri come creare e gestire le richieste di accesso a dati personali
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-source-git-commit: a8044037e889f59d4288a0746001e84d319f6bcf
-workflow-type: tm+mt
+exl-id: 73b90d79-88b6-4aaf-8103-4564de5e06be
+source-git-commit: 42b420d7dae7d38e9f4df442146d3b484c25e831
+workflow-type: ht
 source-wordcount: '771'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
