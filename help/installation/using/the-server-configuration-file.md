@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '7961'
-ht-degree: 5%
+source-wordcount: '7957'
+ht-degree: 9%
 
 ---
 
@@ -90,25 +90,25 @@ Di seguito sono riportati i diversi parametri del **autenticazione** nodo:
   <tr> 
    <td> longSessionTimeOutSec<br /> </td> 
    <td> Timeout di sessioni lunghe in secondi.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1296000<br /> </td> 
   </tr> 
   <tr> 
    <td> securityTimeOutSec<br /> </td> 
    <td> Timeout del token di sicurezza in secondi.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 86400<br /> </td> 
   </tr> 
   <tr> 
    <td> sessionCacheSec<br /> </td> 
    <td> Durata cache: cache delle informazioni sulla sessione in secondi.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> sessionTimeOutSec<br /> </td> 
    <td> Timeout sessione in secondi.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 86400<br /> </td> 
   </tr> 
  </tbody> 
@@ -172,7 +172,7 @@ Di seguito sono riportati i diversi parametri del **dataStore** nodo. In questo 
   <tr> 
    <td> formCacheTimeToLive<br /> </td> 
    <td> Ritardo di scadenza della cache del modulo: timeout in secondi dopo l’annullamento della convalida di una voce della cache. O significa che le voci della cache vengono aggiornate solo al momento della pubblicazione.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
@@ -184,7 +184,7 @@ Di seguito sono riportati i diversi parametri del **dataStore** nodo. In questo 
   <tr> 
    <td> actionCacheTimeToLive<br /> </td> 
    <td> Ritardo di scadenza della cache JSSP di interazione: timeout in secondi dopo l’annullamento della convalida di una voce della cache. Un valore negativo significa che la cache viene sempre invalidata. "0", i valori vuoti o non validi sono considerati 60.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
   <tr> 
@@ -232,7 +232,7 @@ Di seguito sono riportati i diversi parametri del **dataStore** nodo. In questo 
   <tr> 
    <td> viewCacheTimeToLive<br /> </td> 
    <td> Periodo di validità della cache di visualizzazione: timeout in secondi dopo l’annullamento della convalida di una voce della cache. Un valore negativo significa che la cache viene sempre invalidata. "0", i valori vuoti o non validi sono considerati 60.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
@@ -526,13 +526,13 @@ Per ulteriori informazioni, consulta [sezione](../../installation/using/configur
   <tr> 
    <td> riprovare<br /> </td> 
    <td> Numero di tentativi per una query DNS.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 4<br /> </td> 
   </tr> 
   <tr> 
    <td> timeout<br /> </td> 
    <td> Timeout in millisecondi per una query DNS.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 5000<br /> </td> 
   </tr> 
  </tbody> 
@@ -603,7 +603,7 @@ Di seguito sono riportati i diversi parametri del **htmlToPdf** nodo. Questa è 
   <tr> 
    <td> maxProcessusCount<br /> </td> 
    <td> Max numero di processi di conversione consentiti alla volta su un solo computer.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
   <tr> 
@@ -615,7 +615,7 @@ Di seguito sono riportati i diversi parametri del **htmlToPdf** nodo. Questa è 
   <tr> 
    <td> timeout<br /> </td> 
    <td> Timeout per una conversione: tempo massimo di conversione in secondi. Oltre questa soglia, il processo di conversione viene interrotto e viene generato un errore.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 120<br /> </td> 
   </tr> 
   <tr> 
@@ -627,7 +627,7 @@ Di seguito sono riportati i diversi parametri del **htmlToPdf** nodo. Questa è 
   <tr> 
    <td> waitTime<br /> </td> 
    <td> Ritardo in attesa di un processo: ritardo in secondi, quando tutti i processi vengono utilizzati contemporaneamente e in attesa che un processo si liberi. Se questo ritardo viene superato, la conversione viene interrotta e viene generato un errore. <br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 15<br /> </td> 
   </tr> 
  </tbody> 
@@ -723,13 +723,13 @@ Per ulteriori informazioni, consulta la [Documentazione sul reporting](../../rep
   <tr> 
    <td> maxMB<br /> </td> 
    <td> Dimensione massima in megabyte prima di eseguire il Garbage Collector.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 512 <br /> </td> 
   </tr> 
   <tr> 
    <td> stackSizeKB<br /> </td> 
    <td> Dimensione di ogni blocco di stack in kilo ottetti. Si tratta di un parametro di ottimizzazione della gestione della memoria che la maggior parte degli utenti non dovrebbe regolare. <br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 8<br /> </td> 
   </tr> 
  </tbody> 
@@ -804,7 +804,7 @@ Di seguito sono riportati i diversi parametri del **monitoraggio** nodo. Questa 
   <tr> 
    <td> maxPreparationJobsSec<br /> </td> 
    <td> Tempo massimo di preparazione: la durata in secondi dopo la quale un’azione di consegna non deve più essere in preparazione.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 3600<br /> </td> 
   </tr> 
   <tr> 
@@ -839,13 +839,13 @@ Di seguito sono riportati i diversi parametri del **ooconv** nodo. Configurazion
   <tr> 
    <td> maxConversions<br /> </td> 
    <td> Numero massimo di conversioni che un server OpenOffice può eseguire. Oltre questo numero, il server viene riavviato.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
   <tr> 
    <td> maxServerIdleSec<br /> </td> 
    <td> Tempo di inattività massimo del server OpenOffice prima della chiusura forzata.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 7200<br /> </td> 
   </tr> 
   <tr> 
@@ -955,7 +955,7 @@ Di seguito sono riportati i diversi parametri del **threadPool** nodo.
   <tr> 
    <td> maxThreadCount<br /> </td> 
    <td> Numero massimo di thread nel pool. <br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
  </tbody> 
@@ -1070,7 +1070,7 @@ Di seguito sono riportati i diversi parametri del **xtkJobs** nodo. Configurazio
   <tr> 
    <td> purgeLogsPeriod<br /> </td> 
    <td> Periodo di aggiornamento dello stato della memoria dell'elaborazione del server (in ms).<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 500<br /> </td> 
   </tr> 
  </tbody> 
@@ -1095,7 +1095,7 @@ Per ulteriori informazioni, consulta [Attivazione dell’archiviazione delle e-m
   <tr> 
    <td> acquisitionLimit<br /> </td> 
    <td> Numero di EML da elaborare contemporaneamente<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 100<br /> </td> 
   </tr> 
   <tr> 
@@ -1119,7 +1119,7 @@ Per ulteriori informazioni, consulta [Attivazione dell’archiviazione delle e-m
   <tr> 
    <td> compressBatchSize<br /> </td> 
    <td> Dimensioni di un archivio compresso: numero massimo di file in un archivio compresso.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 10000<br /> </td> 
   </tr> 
   <tr> 
@@ -1131,7 +1131,7 @@ Per ulteriori informazioni, consulta [Attivazione dell’archiviazione delle e-m
   <tr> 
    <td> expirationDelay<br /> </td> 
    <td> Ritardo prima dell’archiviazione automatica delle e-mail non elaborate: numero di giorni precedenti l’archiviazione delle e-mail non elaborate.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
   <tr> 
@@ -1143,19 +1143,19 @@ Per ulteriori informazioni, consulta [Attivazione dell’archiviazione delle e-m
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Avviso di consumo di memoria: avviso relativo alla quantità di RAM consumata (in Mb) da un determinato processo.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Avviso di consumo di memoria: avviso relativo alla quantità di RAM consumata (in Mb) da un determinato processo.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> pollDelay<br /> </td> 
    <td> Ritardo (in secondi) tra ogni evento di aggiornamento.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
   <tr> 
@@ -1167,7 +1167,7 @@ Per ulteriori informazioni, consulta [Attivazione dell’archiviazione delle e-m
   <tr> 
    <td> purgeArchivesDelay<br /> </td> 
    <td> Numero di giorni prima dell’eliminazione delle e-mail non elaborate.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 7<br /> </td> 
   </tr> 
   <tr> 
@@ -1191,7 +1191,7 @@ Per ulteriori informazioni, consulta [Attivazione dell’archiviazione delle e-m
   <tr> 
    <td> smtpNbConnection<br /> </td> 
    <td> Numero di connessioni al server SMTP di archiviazione.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
   <tr> 
@@ -1203,7 +1203,7 @@ Per ulteriori informazioni, consulta [Attivazione dell’archiviazione delle e-m
   <tr> 
    <td> smtpRelayPort<br /> </td> 
    <td> Porta IP del server SMTP.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 25<br /> </td> 
   </tr> 
  </tbody> 
@@ -1262,7 +1262,7 @@ Di seguito sono riportati i diversi parametri del **inMail** nodo. Questa è la 
   <tr> 
    <td> inMailPeriodSec<br /> </td> 
    <td> Periodo di lettura del messaggio: frequenza di polling della coda dei messaggi.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
   <tr> 
@@ -1274,49 +1274,49 @@ Di seguito sono riportati i diversi parametri del **inMail** nodo. Questa è la 
   <tr> 
    <td> maxBroadLog<br /> </td> 
    <td> Numero massimo di registri da aggiornare: definisce il numero massimo di messaggi di log da tenere in memoria prima di aggiornare il database.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 20<br /> </td> 
   </tr> 
   <tr> 
    <td> maxMsgPerSession<br /> </td> 
    <td> Numero massimo di messaggi da leggere durante la sessione POP3.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 200<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Avviso di consumo di memoria: avviso relativo alla quantità di RAM consumata (in Mb) da un determinato processo.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Avviso di consumo di memoria: avviso relativo alla quantità di RAM consumata (in Mb) da un determinato processo.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSessionTTLSec<br /> </td> 
    <td> Durata della sessione: durata massima della sessione di elaborazione dei messaggi.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 100<br /> </td> 
   </tr> 
   <tr> 
    <td> popMailPeriodSec<br /> </td> 
    <td> Periodo di polling POP3<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
   <tr> 
    <td> popQueueSize<br /> </td> 
    <td> Dimensione della coda dei messaggi letti<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 100<br /> </td> 
   </tr> 
   <tr> 
    <td> popTimeoutSec<br /> </td> 
    <td> Timeout della comunicazione con il server POP3. <br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
   <tr> 
@@ -1328,7 +1328,7 @@ Di seguito sono riportati i diversi parametri del **inMail** nodo. Questa è la 
   <tr> 
    <td> reloadPeriodSec<br /> </td> 
    <td> Frequenza di ricaricamento del database degli account da eseguire.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
@@ -1400,7 +1400,7 @@ Per ulteriori informazioni, consulta [Interazione - Buffer dati](../../installat
   <tr> 
    <td> callDataSize<br /> </td> 
    <td> Max numero di caratteri memorizzati nella memoria condivisa per i dati delle chiamate.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
   <tr> 
@@ -1412,25 +1412,25 @@ Per ulteriori informazioni, consulta [Interazione - Buffer dati](../../installat
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Avviso di consumo di memoria: avviso relativo alla quantità di RAM consumata (in Mb) da un determinato processo.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Avviso di consumo di memoria: avviso relativo alla quantità di RAM consumata (in Mb) da un determinato processo.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSharedEntries<br /> </td> 
    <td> Max numero di eventi memorizzati nella memoria condivisa.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 25000<br /> </td> 
   </tr> 
   <tr> 
    <td> nextOffersSize<br /> </td> 
    <td> Numero massimo di offerte ammissibili ordinate subito dopo le proposte, da memorizzare ai fini statistici.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
   <tr> 
@@ -1448,13 +1448,13 @@ Per ulteriori informazioni, consulta [Interazione - Buffer dati](../../installat
   <tr> 
    <td> statsPeriod<br /> </td> 
    <td> Durata dell’aggregazione in secondi per le statistiche sui tempi di risposta. 0 indica che l'archiviazione statistica è stata disattivata.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> targetKeySize<br /> </td> 
    <td> Max numero di caratteri memorizzati nella memoria condivisa per identificare gli individui.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 16<br /> </td> 
   </tr> 
  </tbody> 
@@ -1501,13 +1501,13 @@ Di seguito sono riportati i diversi parametri del **mta** nodo. Questa è la con
   <tr> 
    <td> dnsRequestLogDelayMs<br /> </td> 
    <td> Ritardo log query DNS: tempo in millisecondi per visualizzare i registri.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> errorPeriodSec<br /> </td> 
    <td> Frequenza delle statistiche di errore: tempo intercorrente tra la generazione di statistiche e la memorizzazione nella banca dati. <br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
   <tr> 
@@ -1525,43 +1525,43 @@ Di seguito sono riportati i diversi parametri del **mta** nodo. Questa è la con
   <tr> 
    <td> logLevel<br /> </td> 
    <td> Visualizza il livello dei messaggi di log. Livello di gravità dei registri scritti nel database. I messaggi di registro generati dall’MTA non sono sempre scritti nel database. Con questo parametro, puoi definire il livello da cui si considera che un messaggio debba essere scritto nel database. Se si definisce il livello 2, vengono scritti anche messaggi di livello 1 e 0, mentre se si definisce il livello 1 vengono scritti solo messaggi di livello 1 e 0. I valori possibili sono: 0 (errori), 1 (avviso), 2 (informazioni)<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
   <tr> 
    <td> maxMemoryMb<br /> </td> 
    <td> Dimensione massima della memoria (in MB) utilizzabile da un processo mta. Al di sopra di questo limite, il processo viene riavviato in modo che la memoria utilizzata venga rilasciata al sistema.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1024<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Avviso di consumo di memoria: avviso relativo alla quantità di RAM consumata (in Mb) da un determinato processo.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Avviso di consumo di memoria: avviso relativo alla quantità di RAM consumata (in Mb) da un determinato processo.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> minConnectionsToLog<br /> </td> 
    <td> Soglia di connessione da prendere in considerazione. Le statistiche di errore non vengono generate per un determinato percorso se il numero totale di connessioni per il periodo specificato da errorPeriodSec è strettamente inferiore alla soglia.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 100<br /> </td> 
   </tr> 
   <tr> 
    <td> minErrorsToLog<br /> </td> 
    <td> Soglia di errore da considerare: le statistiche di errore non vengono generate per un determinato percorso se il numero totale di errori per il periodo specificato da errorPeriodSec è strettamente inferiore alla soglia.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
   <tr> 
    <td> minMessagesToLog<br /> </td> 
    <td> Soglia del messaggio da prendere in considerazione. Le statistiche di errore non vengono generate per un determinato percorso se il numero totale di messaggi inviati per il periodo specificato da errorPeriodSec è strettamente inferiore alla soglia.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
   <tr> 
@@ -1579,7 +1579,7 @@ Di seguito sono riportati i diversi parametri del **mta** nodo. Questa è la con
   <tr> 
    <td> purgeDataLogDelay<br /> </td> 
    <td> Ritardo prima dell’eliminazione delle e-mail archiviate: numero di giorni prima dell'eliminazione delle e-mail archiviate nella directory specificata in dataLogPath.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 15<br /> </td> 
   </tr> 
   <tr> 
@@ -1669,19 +1669,19 @@ In **cache** configura i seguenti parametri. Questa è la configurazione della c
   <tr> 
    <td> maxPeriodSec<br /> </td> 
    <td> Riciclato dopo: periodo, espresso in secondi, dopo il quale il file viene automaticamente eliminato dalla cache per recuperare lo storage.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 244800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSizeOnDiskMb<br /> </td> 
    <td> Dimensione massima della cache (Mb).<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1024<br /> </td> 
   </tr> 
   <tr> 
    <td> purgePeriodSec<br /> </td> 
    <td> Frequenza di eliminazione: periodo in secondi tra l’esecuzione del meccanismo di eliminazione della cache.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 3600<br /> </td> 
   </tr> 
  </tbody> 
@@ -1714,7 +1714,7 @@ Per ulteriori informazioni, consulta [relè SMTP](../../installation/using/confi
   <tr> 
    <td> porta<br /> </td> 
    <td> Porta IP del server SMTP.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 25<br /> </td> 
   </tr> 
  </tbody> 
@@ -1739,37 +1739,37 @@ Per ulteriori informazioni, consulta [sezione](../../installation/using/configur
   <tr> 
    <td> dataBasePoolPeriodSec<br /> </td> 
    <td> Frequenza di polling del database dei processi da distribuire. Questo valore indica la frequenza di polling del database (in secondi). Per ottenere l’elenco dei processi in attesa di consegna, l’MTA controlla regolarmente il database. In assenza di un processo in attesa, il periodo di polling è definito da questo valore. In caso contrario, se un processo è stato trasferito a un server figlio, questa durata del polling viene automaticamente ridotta a un secondo, in modo che un nuovo processo possa essere elaborato di nuovo il prima possibile, cioè non appena un server figlio è nuovamente disponibile. Ciò non significa che la query del database verrà eseguita ogni secondo fino a quando non sarà nuovamente disponibile un server figlio. In realtà, l'accesso al database viene eseguito solo quando è disponibile almeno un server figlio.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
   <tr> 
    <td> dataBaseRetryDelaySec<br /> </td> 
    <td> Periodo in attesa dopo un errore di connessione al database. Un errore di connessione al database è in genere causato dal server di database stesso. Il server può anche essere arrestato a scopo di manutenzione, ad esempio. Il parametro DataBaseRetryDelay definisce la durata tra due tentativi di connessione in caso di errore di connessione al database.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
   <tr> 
    <td> domainKeysReloadPeriodSec<br /> </td> 
    <td> Periodo di validità per la cache delle chiavi private (DomainKeys). Le chiavi private utilizzate per firmare le e-mail in seguito alla raccomandazione DomainKeys (http://antispam.yahoo.com/domainkeys) sono memorizzate come opzioni nel database. Il parametro domainKeysReloadPeriodSec definisce quanti secondi l'MTA può mantenere queste chiavi in una cache. Dopo questo ritardo, tutte le chiavi devono essere ricaricate dal database.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSpareServers<br /> </td> 
    <td> Numero massimo di server figlio. Rappresenta il numero massimo di server in esecuzione. È consigliabile limitare questo numero ad un livello ottimale compatibile con le risorse di memoria del server. Questo può essere controllato durante una consegna. La memoria utilizzata non deve superare un terzo della memoria fisica disponibile altrimenti verrà utilizzato lo scambio. Vedi <a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">Processi figlio MTA</a>.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
   <tr> 
    <td> minSpareServers<br /> </td> 
    <td> Numero minimo di server figlio. L’MTA tenta di mantenere in esecuzione almeno questo numero di server. Se ce ne sono di meno, riavvia nuovi server ogni secondo fino a raggiungere questo valore.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
   <tr> 
    <td> startSpareServers<br /> </td> 
    <td> Numero di server figlio all'avvio. Il numero di server figlio è monitorato dinamicamente; all’avvio dell’MTA, crea il numero di server figlio indicato da questo valore. Normalmente, i server figlio non possono essere avviati più velocemente di un server al secondo per salvare le risorse host. Tuttavia, all’avvio dell’MTA, questa limitazione viene ignorata in modo che i server figlio siano disponibili il prima possibile.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
  </tbody> 
@@ -1800,43 +1800,43 @@ Per ulteriori informazioni, consulta [Ottimizzazione dell’invio di e-mail](../
   <tr> 
    <td> idleChildTimeoutSec<br /> </td> 
    <td> Timeout fino all’arresto dei server figlio inattivi. Se un server figlio ha un tempo di inattività maggiore di questo parametro, si interrompe automaticamente per liberare le risorse host.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
   <tr> 
    <td> maxAgeSec<br /> </td> 
    <td> Tempo massimo di conservazione dei messaggi. Se non è stato possibile inviare un messaggio preparato a causa della limitazione o non è stato possibile connettersi all’MTA di destinazione, il messaggio viene abbandonato e verrà elaborato al prossimo tentativo.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> maxGCMConnectPerChild<br /> </td> 
    <td> Numero massimo di richieste Http parallele all'FCM iniziate da ogni server figlio.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 8<br /> </td> 
   </tr> 
   <tr> 
    <td> maxMsgPerChild<br /> </td> 
    <td> Numero massimo di messaggi per server figlio. Ogni figlio MTA elabora questo numero di messaggi e muore. È importante specificare un numero in modo tale che le perdite di memoria o di risorse nell’MTA siano innocue (in genere poche migliaia). Anche se non ci sono perdite di memoria note nel codice MTA, i motori JavaScript e XSL incorporati non sono completamente affidabili.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 5000000<br /> </td> 
   </tr> 
   <tr> 
    <td> maxWaitingMessages<br /> </td> 
    <td> Messaggi in sospeso: numero massimo di messaggi in attesa di consegna in memoria. <br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 2000<br /> </td> 
   </tr> 
   <tr> 
    <td> maxWorkingSetMb<br /> </td> 
    <td> Dimensione massima della memoria (in MB) utilizzabile da un processo figlio. Al di sopra di questo limite, il processo viene interrotto in modo che la memoria utilizzata venga rilasciata al sistema. <br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 128<br /> </td> 
   </tr> 
   <tr> 
    <td> soapConnectorTimeoutSec<br /> </td> 
    <td> Timeout (in secondi) dopo il quale viene abbandonata una connessione SOAP per un connettore di consegna.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
@@ -1848,7 +1848,7 @@ Per ulteriori informazioni, consulta [Ottimizzazione dell’invio di e-mail](../
   <tr> 
    <td> timeToLive<br /> </td> 
    <td> Numero massimo di tentativi consecutivi quando ripresi.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 48<br /> </td> 
   </tr> 
  </tbody> 
@@ -1875,19 +1875,19 @@ In **mta > figlio > smtp** configura i seguenti parametri. Questa è la configur
   <tr> 
    <td> idleSessionTimeoutSec<br /> </td> 
    <td> Timeout sessione inattiva. Questo parametro viene utilizzato solo se la sessione viene riutilizzata per la trasmissione di più messaggi a un determinato dominio. Quando l'MTA ha completato la trasmissione del messaggio, la sessione SMTP utilizzata non viene chiusa sistematicamente. Se un messaggio è pronto per essere inviato per lo stesso dominio, la stessa sessione SMTP verrà riutilizzata ed è per questo che la sessione non viene chiusa automaticamente. Il parametro IdleSessionTimeout ti consente di definire il tempo durante il quale una sessione SMTP può rimanere attiva in attesa di un altro messaggio. Una volta trascorsa la durata, la sessione viene chiusa automaticamente.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
   <tr> 
    <td> initialDelaySec<br /> </td> 
    <td> Ritardo iniziale prima di riprovare la connessione. Questo ritardo viene raddoppiato ogni volta che la connessione non riesce.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 4<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSessionsPerChild<br /> </td> 
    <td> Numero massimo di sessioni SMTP per server figlio. Per inviare un messaggio, l’MTA inizializza una connessione SMTP con l’MTA del destinatario. Il numero massimo di sessioni SMTP simultanee e attive per un determinato server figlio è limitato da questo valore. Se moltiplichi questo valore per maxSpareServers, ottieni il numero massimo di messaggi che possono essere elaborati simultaneamente da un determinato server figlio.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
  </tbody> 
@@ -1940,12 +1940,12 @@ Per ulteriori informazioni, consulta [Elenco di indirizzi IP da utilizzare](../.
   <tr> 
    <td> publicId<br /> </td> 
    <td> ID indirizzo pubblico associato. Utilizzato come chiave per il server di statistiche. Deve essere numerico. Vedi questo <a href="../../installation/using/email-deliverability.md#managing-ip-addresses">sezione</a>.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
   </tr> 
   <tr> 
    <td> weight<br /> </td> 
    <td> Specifica la frequenza di utilizzo per questo IP rispetto ad altri IP (i pesi più grandi portano a frequenze più elevate).<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
   </tr> 
   <tr> 
    <td> includeDomains<br /> </td> 
@@ -2011,7 +2011,7 @@ Di seguito sono riportati i diversi parametri del **nmac > relè** nodo. Questo 
   <tr> 
    <td> porta<br /> </td> 
    <td> Porta relè<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 443<br /> </td> 
   </tr> 
   <tr> 
@@ -2082,7 +2082,7 @@ Di seguito sono riportati i diversi parametri del **condutturato** nodo. Questa 
   <tr> 
    <td> dumpStatePeriodSec<br /> </td> 
    <td> Periodo di salvataggio dello stato: frequenza in cui le informazioni interne del processo vengono salvate in un file. Inattivo se 0. <br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
   <tr> 
@@ -2100,19 +2100,19 @@ Di seguito sono riportati i diversi parametri del **condutturato** nodo. Questa 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Avviso di consumo di memoria: avviso relativo alla quantità di RAM consumata (in Mb) da un determinato processo.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Avviso di consumo di memoria: avviso relativo alla quantità di RAM consumata (in Mb) da un determinato processo.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> monitorServerPort<br /> </td> 
    <td> Porta server di stato: Porta del server HTTP che consente di eseguire una query sullo stato del processo. Inattivo se 0.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 7781<br /> </td> 
   </tr> 
   <tr> 
@@ -2124,7 +2124,7 @@ Di seguito sono riportati i diversi parametri del **condutturato** nodo. Questa 
   <tr> 
    <td> puntatoreFlushPeriodSec<br /> </td> 
    <td> Ritardo prima della memorizzazione del puntatore: il puntatore verrà memorizzato nel database almeno una volta durante questo periodo (utile in caso di scarsa attività).<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
   <tr> 
@@ -2136,25 +2136,25 @@ Di seguito sono riportati i diversi parametri del **condutturato** nodo. Questa 
   <tr> 
    <td> processingJSThreads<br /> </td> 
    <td> Numero di thread per l'elaborazione di eventi con un connettore JavaScript personalizzato.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 4<br /> </td> 
   </tr> 
   <tr> 
    <td> processingThreads<br /> </td> 
    <td> Numero di thread per l'elaborazione degli eventi.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 4<br /> </td> 
   </tr> 
   <tr> 
    <td> tryPeriodSec<br /> </td> 
    <td> Ritardo tra l’elaborazione in caso di errore.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
   <tr> 
    <td> tryValiditySec<br /> </td> 
    <td> Abbandonare dopo questo periodo: abbandonare l’evento se l’elaborazione continua a non riuscire dopo questo periodo.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
   <tr> 
@@ -2183,7 +2183,7 @@ Di seguito sono riportati i diversi parametri del **riparazione** nodo. Questa �
   <tr> 
    <td> RepairActionDelayMin<br /> </td> 
    <td> Modulo di riparazione delle azioni di consegna: ritardo (in minuti) dopo il quale le azioni di consegna possono essere elaborate dal modulo di riparazione. <br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
  </tbody> 
@@ -2359,13 +2359,13 @@ Di seguito sono riportati i diversi parametri del **sms** nodo. Questa è la con
   <tr> 
    <td> dataRetentionDays<br /> </td> 
    <td> Numero massimo di file di lavoro in giorni conservati dal connettore SMPP.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
   <tr> 
    <td> dataSizeMo<br /> </td> 
    <td> Dimensione massima in MB dei file di lavoro SMPP.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 512<br /> </td> 
   </tr> 
   <tr> 
@@ -2377,25 +2377,25 @@ Di seguito sono riportati i diversi parametri del **sms** nodo. Questa è la con
   <tr> 
    <td> keepAlivePeriod<br /> </td> 
    <td> Frequenza dell'intervallo di continuità della sessione: max periodo in secondi tra due fotogrammi per notificare che la sessione di ricezione è ancora attivata.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 25<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Avviso di consumo di memoria: avviso relativo alla quantità di RAM consumata (in Mb) da un determinato processo.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Avviso di consumo di memoria: avviso relativo alla quantità di RAM consumata (in Mb) da un determinato processo.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> pollPeriod<br /> </td> 
    <td> Frequenza di ricerca: Periodo di polling dell’account SMS.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
   <tr> 
@@ -2407,7 +2407,7 @@ Di seguito sono riportati i diversi parametri del **sms** nodo. Questa è la con
   <tr> 
    <td> reloadPeriod<br /> </td> 
    <td> Frequenza di ricarica dell'account: frequenza di ricaricamento del database degli account da sottoporre a polling.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
@@ -2419,13 +2419,13 @@ Di seguito sono riportati i diversi parametri del **sms** nodo. Questa è la con
   <tr> 
    <td> srReadDelay<br /> </td> 
    <td> Numero di secondi di ritardo per l'elaborazione SR: solo SR con una data di recupero precedente all'ora corrente meno la durata in secondi fornita da srReadDelay. <br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> timeout<br /> </td> 
    <td> Timeout della comunicazione con il gateway SMS.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
  </tbody> 
@@ -2448,7 +2448,7 @@ Di seguito sono riportati i diversi parametri del **sms > netsize** nodo.
   <tr> 
    <td> netsizeConnectionTimeout<br /> </td> 
    <td> Timeout in secondi quando si stabilisce una connessione con Netsize.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
  </tbody> 
@@ -2489,13 +2489,13 @@ Di seguito sono riportati i diversi parametri del **stat** nodo. Questa è la co
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Avviso di consumo di memoria: avviso relativo alla quantità di RAM consumata (in Mb) da un determinato processo.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Avviso di consumo di memoria: avviso relativo alla quantità di RAM consumata (in Mb) da un determinato processo.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
@@ -2554,25 +2554,25 @@ Di seguito sono riportati i diversi parametri del **syslogd** nodo. Questa è la
   <tr> 
    <td> maxFileSizeMb<br /> </td> 
    <td> Dimensione massima in MB per un file di registro. <br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
    <td> maxNumberOfLoginsFiles<br /> </td> 
    <td> Numero massimo di file logins.log da mantenere. <br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 365<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Avviso di consumo di memoria: avviso relativo alla quantità di RAM consumata (in Mb) da un determinato processo.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Avviso di consumo di memoria: avviso relativo alla quantità di RAM consumata (in Mb) da un determinato processo.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
@@ -2625,13 +2625,13 @@ Di seguito sono riportati i diversi parametri del **tracking** nodo. Questa è l
   <tr> 
    <td> consolidamentoPeriodSec<br /> </td> 
    <td> Periodo di consolidamento<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
   <tr> 
    <td> dedupOpenPeriodMin<br /> </td> 
    <td> Aperture deduplicazione: rimuovere i registri di tracciamento di apertura duplicati per limitare gli effetti delle anteprime di posta in lettori di posta come Outlook.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
   <tr> 
@@ -2643,13 +2643,13 @@ Di seguito sono riportati i diversi parametri del **tracking** nodo. Questa è l
   <tr> 
    <td> errorIgnorePeriod<br /> </td> 
    <td> Aggiorna gli indicatori di errore: la durata massima prima del ricalcolo degli indicatori di errore.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 86400<br /> </td> 
   </tr> 
   <tr> 
    <td> indicatorsDuration<br /> </td> 
    <td> Calcola gli indicatori durante: la durata successiva alla data di validità di una consegna dopo la quale gli indicatori consolidati non sono più calcolati.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 2592000<br /> </td> 
   </tr> 
   <tr> 
@@ -2661,31 +2661,31 @@ Di seguito sono riportati i diversi parametri del **tracking** nodo. Questa è l
   <tr> 
    <td> logCountPerRequest<br /> </td> 
    <td> Numero di registri richiesti dalla chiamata al server di tracciamento remoto.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Avviso di consumo di memoria: avviso relativo alla quantità di RAM consumata (in Mb) da un determinato processo.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Avviso di consumo di memoria: avviso relativo alla quantità di RAM consumata (in Mb) da un determinato processo.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> phishbowlServiceAPIKey<br /> </td> 
    <td> Chiave API per l'integrazione di endpoint del servizio Phishbowl. Questo protegge il reindirizzamento degli URL malformati generati dalle build precedenti. <br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> phishbowlServiceEndpoint<br /> </td> 
    <td> Endpoint per l'integrazione di endpoint del servizio Phishbowl. Questo protegge il reindirizzamento degli URL malformati generati dalle build precedenti.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2709,13 +2709,13 @@ Di seguito sono riportati i diversi parametri del **tracking** nodo. Questa è l
   <tr> 
    <td> trackingIgnorePeriod<br /> </td> 
    <td> Aggiorna gli indicatori di tracciamento: la durata massima prima del ricalcolo degli indicatori di tracciamento.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 86400<br /> </td> 
   </tr> 
   <tr> 
    <td> userAgentCacheSize<br /> </td> 
    <td> Dimensione della cache dell’identificatore del browser.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 500<br /> </td> 
   </tr> 
  </tbody> 
@@ -2756,31 +2756,31 @@ Di seguito sono riportati i diversi parametri del **trackinglogd** nodo. Questa 
   <tr> 
    <td> maxCreateFileRetry<br /> </td> 
    <td> Numero massimo di tentativi di scrittura: numero massimo di file che possono essere creati in caso di errore di scrittura nei file di log.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
   <tr> 
    <td> maxLogsSizeOnDiskMb<br /> </td> 
    <td> Dimensione massima del registro: spazio massimo utilizzato dai log su disco (in MB). Può non essere inferiore a 100 MB. <br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 500<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Avviso di consumo di memoria: avviso relativo alla quantità di RAM consumata (in Mb) da un determinato processo.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Avviso di consumo di memoria: avviso relativo alla quantità di RAM consumata (in Mb) da un determinato processo.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSharedLogs<br /> </td> 
    <td> Numero massimo di log: numero massimo di log memorizzati nella memoria condivisa. Non può essere inferiore a 10000. <br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 25000<br /> </td> 
   </tr> 
   <tr> 
@@ -2792,7 +2792,7 @@ Di seguito sono riportati i diversi parametri del **trackinglogd** nodo. Questa 
   <tr> 
    <td> purgeLogsPeriod<br /> </td> 
    <td> Numero di log prima dell'eliminazione: numero di log inseriti prima di avviare l'eliminazione dei file di log. Non può essere inferiore a 50000.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 50000<br /> </td> 
   </tr> 
   <tr> 
@@ -2804,7 +2804,7 @@ Di seguito sono riportati i diversi parametri del **trackinglogd** nodo. Questa 
   <tr> 
    <td> webTrackingParamSize<br /> </td> 
    <td> Numero massimo di caratteri salvati nella memoria condivisa per ulteriori parametri di web tracking.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 64<br /> </td> 
   </tr> 
  </tbody> 
@@ -2835,13 +2835,13 @@ Per ulteriori informazioni, consulta [sezione](configuring-campaign-server.md#de
   <tr> 
    <td> MaxThreads<br /> </td> 
    <td> Numero massimo di thread.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 75<br /> </td> 
   </tr> 
   <tr> 
    <td> MinSpareThreads<br /> </td> 
    <td> Numero minimo di thread.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
   <tr> 
@@ -2877,19 +2877,19 @@ Per ulteriori informazioni, consulta [sezione](configuring-campaign-server.md#de
   <tr> 
    <td> maxDeliveryQueueSize<br /> </td> 
    <td> Dimensione della coda per le chiamate SubmitDelivery: numero massimo di chiamate SOAP SubmitDelivery che possono essere accodate.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 50<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Avviso di consumo di memoria: avviso relativo alla quantità di RAM consumata (in Mb) da un determinato processo.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Avviso di consumo di memoria: avviso relativo alla quantità di RAM consumata (in Mb) da un determinato processo<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
@@ -3021,7 +3021,7 @@ Di seguito sono riportati i diversi parametri del **web > jssp** nodo. Si tratta
   <tr> 
    <td> timeToLive<br /> </td> 
    <td> Numero massimo di pagine gestite da un contesto JavaScript. <br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
  </tbody> 
@@ -3155,7 +3155,7 @@ Per ulteriori informazioni, consulta [Sicurezza e relè delle pagine dinamiche](
   <tr> 
    <td> timeout<br /> </td> 
    <td> Tempo massimo di esecuzione (in secondi) della richiesta in corso di inoltro.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -3282,7 +3282,7 @@ Per ulteriori informazioni, consulta [sezione](../../installation/using/deployin
  <tbody> 
   <tr> 
    <td> IMSOrgId<br /> </td> 
-   <td> Identificatore organizzazione di Identity Management System (IMS): identificatore di organizzazione univoco all’interno di Adobe Experience Cloud, utilizzato in particolare per il servizio VisitorID e l’SSO IMS. <br /> </td> 
+   <td> ID organizzazione: identificatore di organizzazione univoco all’interno di Adobe Experience Cloud, utilizzato in particolare per il servizio VisitorID e l’SSO IMS. <br /> </td> 
    <td> Stringa<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3307,7 +3307,7 @@ Per ulteriori informazioni, consulta [sezione](../../installation/using/deployin
   <tr> 
    <td> defLogCount<br /> </td> 
    <td> Conteggio log per chiamata: numero di registri restituiti per impostazione predefinita in seguito a una chiamata del metodo GetTrackingLogs.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
   <tr> 
@@ -3319,7 +3319,7 @@ Per ulteriori informazioni, consulta [sezione](../../installation/using/deployin
   <tr> 
    <td> maxJobsInCache<br /> </td> 
    <td> Numero massimo di processi: numero massimo di azioni di consegna nella cache. Può non essere inferiore a 50. <br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 100<br /> </td> 
   </tr> 
   <tr> 
@@ -3444,7 +3444,7 @@ Per ulteriori informazioni, consulta [Flussi di lavoro e affinità ad alta dispo
   <tr> 
    <td> dataBasePoolPeriodSec<br /> </td> 
    <td> Punto<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 20<br /> </td> 
   </tr> 
   <tr> 
@@ -3456,13 +3456,13 @@ Per ulteriori informazioni, consulta [Flussi di lavoro e affinità ad alta dispo
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Avviso di consumo di memoria: avviso relativo alla quantità di RAM consumata (in Mb) da un determinato processo.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Avviso di consumo di memoria: avviso relativo alla quantità di RAM consumata (in Mb) da un determinato processo.<br /> </td> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 

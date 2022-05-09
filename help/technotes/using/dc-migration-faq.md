@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: 60fc0fd2a10f05abb77843ef0cb69e44f35a9648
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '2216'
+source-wordcount: '2215'
 ht-degree: 0%
 
 ---
@@ -145,7 +145,7 @@ Di seguito sono elencati gli impatti globali sulla configurazione, la connettivi
 
 * **Cosa succede ai clienti che non sono collegati all’ID organizzazione per l’integrazione IMS?**
 
-   Ai clienti privi di IMS verrà fornito uno: un ID organizzazione IMS verrà allegato alla loro istanza.
+   Ai clienti privi di IMS verrà fornito uno: un ID organizzazione verrà allegato alla relativa istanza.
 
 * **La migrazione influisce sulle configurazioni con più marchi?**
 

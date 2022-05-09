@@ -5,10 +5,10 @@ description: Scopri come configurare la pipeline
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: b8f74c290106d57630c5d486c04b8424132e3297
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 1%
+source-wordcount: '907'
+ht-degree: 2%
 
 ---
 
@@ -31,11 +31,11 @@ Prima di avviare questa configurazione, controlla che stai utilizzando:
    * 20.3.1
 * Versione Adobe Analytics Standard
 
-Sarà inoltre necessario:
+È inoltre necessario:
 
 * Adobe I/O di autenticazione del progetto
-* è stato aggiunto un IMSOrgID valido, l’identificatore del cliente Experience Cloud con Adobe Analytics
-* Accesso per sviluppatori all’organizzazione IMS
+* un ID organizzazione valido: per trovare l&#39;ID organizzazione, fai riferimento a [questa pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=it){_blank}
+* Accesso degli sviluppatori all&#39;organizzazione
 * configurazione trigger eseguita in Adobe Analytics
 
 ## File di autenticazione e configurazione {#authentication-configuration}

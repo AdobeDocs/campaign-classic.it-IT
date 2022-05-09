@@ -5,10 +5,10 @@ description: 'Risoluzione dei problemi relativi alla pipeline '
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: 36b10a49fe92853f98beeb9e7d2fea3f59b10b6f
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 0%
+source-wordcount: '705'
+ht-degree: 1%
 
 ---
 
@@ -30,11 +30,11 @@ Imposta la configurazione JSON nell’opzione . **NmsPipeline_Config**. Vedi &qu
 
 **Impossibile eseguire la pipeline con &quot;l&#39;oggetto deve essere un&#39;organizzazione o un client valido&quot;**
 
-La configurazione dell&#39;identificatore dell&#39;organizzazione non è valida.
+La configurazione dell&#39;ID organizzazione non è valida.
 
-1. Verifica che IMSOrgId sia impostato nel serverConf.xml.
-1. Cerca un IMSOrgId vuoto nel file di configurazione dell’istanza che può ignorare il valore predefinito. In tal caso, rimuovila.
-1. Verifica che IMSOrgId corrisponda a quello del cliente nell’Experience Cloud .
+1. Verifica che l&#39;ID organizzazione (ImsOrgId) sia impostato nel serverConf.xml.
+1. Controlla se un ID organizzazione vuoto nel file di configurazione dell&#39;istanza può sostituire quello predefinito. In tal caso, rimuovila.
+1. Verifica che l&#39;ID organizzazione sia corretto. Per trovare l&#39;ID organizzazione, fai riferimento a [questa pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=it){_blank}
 
 **Errore della pipeline con &quot;chiave non valida&quot;**
 

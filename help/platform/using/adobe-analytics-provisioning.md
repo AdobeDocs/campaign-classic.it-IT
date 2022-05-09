@@ -6,9 +6,9 @@ feature: Overview
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: cb434747d2bee5d24dcaa1141100c269eea313ad
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '646'
 ht-degree: 2%
 
 ---
@@ -95,7 +95,7 @@ Il tuo profilo di prodotto è ora configurato. Quindi devi creare il progetto di
 
 ## Crea progetto di Adobe I/O {#create-adobe-io}
 
-1. Accedi all&#39;Adobe I/O e accedi come **Amministratore di sistema** dell&#39;Organizzazione IMS.
+1. Accedi all&#39;Adobe I/O e accedi come **Amministratore di sistema** della tua organizzazione.
 
    Per ulteriori informazioni sui ruoli amministratore, consulta questo [page](https://helpx.adobe.com/enterprise/using/admin-roles.html).
 

@@ -8,10 +8,10 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 966da123b30278817ca465ac5dfe1f733c4d6c5c
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 3%
+source-wordcount: '693'
+ht-degree: 4%
 
 ---
 
@@ -32,12 +32,12 @@ Questa integrazione si applica solo a partire da **Campaign Classic 20.2.4 e ver
 
 Prima di avviare questa implementazione, controlla di avere:
 
-* valido **Identificatore organizzazione**: l’identificatore dell’organizzazione IMS (Identity Management System) è l’identificatore univoco all’interno di Adobe Experience Cloud, utilizzato ad esempio per il servizio VisitorID e per l’accesso singolo IMS (SSO). [Ulteriori informazioni](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
-* a **Accesso per sviluppatori** alla tua organizzazione. L’amministratore di sistema dell’organizzazione IMS deve seguire le **Aggiungere sviluppatori a un singolo profilo di prodotto** dettagliato [in questa pagina](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) per fornire agli sviluppatori l&#39;accesso ai `Analytics - {tenantID}` Profilo di prodotto del prodotto Adobe Analytics associato ai trigger.
+* valido **Identificatore organizzazione**: l’ID organizzazione è l’identificatore univoco all’interno di Adobe Experience Cloud, utilizzato ad esempio per il servizio VisitorID e per l’accesso singolo IMS (SSO). [Ulteriori informazioni](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=it)
+* a **Accesso per sviluppatori** alla tua organizzazione. L&#39;amministratore di sistema dell&#39;organizzazione deve seguire le **Aggiungere sviluppatori a un singolo profilo di prodotto** dettagliato [in questa pagina](https://helpx.adobe.com/enterprise/using/manage-developers.html) per fornire agli sviluppatori l&#39;accesso ai `Analytics - {tenantID}` Profilo di prodotto del prodotto Adobe Analytics associato ai trigger.
 
 ## Passaggio 1: Crea/aggiorna progetto di Adobe I/O {#creating-adobe-io-project}
 
-1. Accesso [!DNL Adobe I/O] e accedi con l’accesso Developer dell’organizzazione IMS.
+1. Accesso [!DNL Adobe I/O] e accedi con l&#39;accesso Developer della tua organizzazione.
 
    >[!NOTE]
    >
