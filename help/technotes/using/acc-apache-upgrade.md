@@ -5,7 +5,7 @@ description: Adobe Campaign - Aggiornamento sulla sicurezza della versione Apach
 hide: true
 hidefromtoc: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
-source-git-commit: 209e3ffc5b11a776a8d16ab210097e5ee4e48b0d
+source-git-commit: ef34decdb33cdfd095c437abd5d1eb029f8a0648
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Adobe Campaign funziona con strumenti di terze parti e la compatibilità viene a
 
 Adobe Campaign include Apache Tomcat che funge da punto di ingresso nell&#39;application server tramite HTTP ed è integrato con il server web Apache. Apache Software Foundation ha rilasciato Apache HTTP Server 2.4.53. Questa versione risolve le vulnerabilità che potrebbero consentire a un autore remoto dell&#39;attacco di prendere il controllo di un sistema interessato. Ulteriori informazioni in [Annuncio Apache 2.4.53](https://downloads.apache.org/httpd/Announcement2.4.html){target=&quot;_blank&quot;}.
 
-Il team Adobe Campaign eseguirà l’attività di aggiornamento della sicurezza della versione di Apache tramite **31 maggio 2022** per attenuare questa vulnerabilità di Apache e rendere l’ambiente di istanza più sicuro. Questo aggiornamento si applica a tutti i clienti Managed Services Campaign Classic v7, Campaign v8 e Campaign Standard in esecuzione su una versione vulnerabile di Apache HTTP Server. Se sei interessato, Adobe ti ha già contattato per informarti di questo aggiornamento.
+Il team Adobe Campaign eseguirà l’attività di aggiornamento della sicurezza della versione di Apache tramite **15 giugno 2022** per attenuare questa vulnerabilità di Apache e rendere l’ambiente di istanza più sicuro. Questo aggiornamento si applica a tutti i clienti Managed Services Campaign Classic v7, Campaign v8 e Campaign Standard in esecuzione su una versione vulnerabile di Apache HTTP Server. Se sei interessato, Adobe ti ha già contattato per informarti di questo aggiornamento.
 
 Questo aggiornamento deve essere eseguito automaticamente al di fuori del normale orario di lavoro per consentire di continuare a utilizzare il servizio Campaign senza interruzioni.
 
