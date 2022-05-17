@@ -4,9 +4,9 @@ title: Progettare un’applicazione web
 description: Progettare un’applicazione web
 feature: Web Apps
 exl-id: dcdf6afc-321e-4027-a350-fff6bbf22e71
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 0ad183ae68faf41ac0b14bb37639a4b1da9d8776
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '277'
 ht-degree: 4%
 
 ---
@@ -19,9 +19,7 @@ Le applicazioni web vengono create e gestite in base allo stesso principio [modu
 
 >[!CAUTION]
 >
->Utilizza la **[!UICONTROL Preview]** sottoscheda per verificare gli errori durante la progettazione di applicazioni web.
->
->Fino alla pubblicazione dell&#39;applicazione Web, le modifiche non vengono esposte agli utenti finali.
+>Utilizza la **[!UICONTROL Preview]** sottoscheda per verificare gli errori durante la progettazione di applicazioni web. Tieni presente che il test del profilo utilizzato per visualizzare l’anteprima dell’applicazione web deve trovarsi in una cartella con **[!UICONTROL Access rights]** per **[!UICONTROL Web application agent]** operatore. </br>Fino alla pubblicazione dell&#39;applicazione Web, le modifiche non vengono esposte agli utenti finali.
 
 ## Inserimento di grafici in un’applicazione Web {#inserting-charts-in-a-web-application}
 
