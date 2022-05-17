@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
-workflow-type: ht
-source-wordcount: '721'
-ht-degree: 100%
+source-git-commit: 5ce8e765866d84781b1000511e9aea4636ebd91d
+workflow-type: tm+mt
+source-wordcount: '733'
+ht-degree: 96%
 
 ---
 
@@ -227,7 +227,7 @@ Dagli ambienti **Managed Services** (in hosting), **Ibrido** e **On-Premise** è
 </tbody>
 </table>
 
-Inoltre, dagli ambienti **Ibrido** e **On-Premise** è anche possibile collegare Campaign a:
+Inoltre, **Ibrido** e **On-Premise** gli ambienti possono inoltre collegare Campaign ai seguenti sistemi di database esterni. Questi sistemi **non compatibile** con Campaign **Managed Services** Ambienti (in hosting).
 
 <table>
 <tbody>
@@ -247,9 +247,9 @@ Inoltre, dagli ambienti **Ibrido** e **On-Premise** è anche possibile collegare
 <tr>
 <td> Oracle</td>
 <td>
-<p>19c</p>
-<p>18c</p>
-<p>12c</p>
+<p>19 quater</p>
+<p>18 quater</p>
+<p>12 quater</p>
 <p>11g</p>
 </td>
 <td>Minimo v7.0</td>
@@ -420,13 +420,7 @@ I seguenti browser sono compatibili con Campaign per l’[accesso web](../../cam
 <p>Versione più recente</p>
 </td>
 </tr>
-<tr>
-<td>
-<p>Microsoft Internet Explorer</p>
-</td>
-<td>
-<p>11</p>
-</td>
+
 </tr>
 </tbody>
 </table>
