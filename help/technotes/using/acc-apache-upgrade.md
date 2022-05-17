@@ -5,7 +5,7 @@ description: Adobe Campaign - Aggiornamento sulla sicurezza della versione Apach
 hide: true
 hidefromtoc: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
-source-git-commit: 7ee1cc501342aa59d1752259bf7228ea47a8cccb
+source-git-commit: a3eae4e253f66f5a651ffe0458f60b1f8bdf2258
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 # Adobe Campaign - Aggiornamento sulla sicurezza della versione Apache {#apache-update}
 
 >[!CAUTION]
->Il presente articolo si applica: Clienti Campaign Classic v7 Managed Services, clienti Campaign v8 e clienti Campaign Standard.
+>Il presente articolo si applica: **Campaign Classic v7 Managed Services** clienti, **Campaign v8** clienti e **Campaign Standard** clienti.
 
 Adobe Campaign funziona con strumenti di terze parti e la compatibilità viene aggiornata regolarmente, al fine di implementare solo le versioni supportate e beneficiare delle ultime correzioni e miglioramenti.
 
@@ -25,7 +25,7 @@ Il team Adobe Campaign eseguirà l’attività di aggiornamento della sicurezza 
 
 Questo aggiornamento deve essere eseguito automaticamente al di fuori del normale orario di lavoro per consentire di continuare a utilizzare il servizio Campaign senza interruzioni.
 
-Le istanze non di produzione verranno aggiornate dai nostri team prima di aggiornare le istanze di produzione. Poiché si tratta di un processo di aggiornamento automatico di proprietà di Adobe, non è necessaria alcuna azione da parte dell’utente. Tuttavia, se riscontri dei problemi, contatta [Adobe Customer Care](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+Le istanze non di produzione verranno prima aggiornate da Adobe, quindi le istanze di produzione verranno aggiornate. Poiché si tratta di un processo di aggiornamento automatico di proprietà di Adobe, non è necessaria alcuna azione da parte dell’utente. Tuttavia, se riscontri dei problemi, contatta [Adobe Customer Care](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 
 >[!NOTE]
@@ -55,7 +55,7 @@ Le istanze non di produzione verranno aggiornate dai nostri team prima di aggior
 
 * **Quali convalide devono essere eseguite dai clienti?**
 
-   Non è necessario eseguire test specifici per questo aggiornamento della sicurezza. Nel caso in cui venga osservato un problema, contatta [Adobe Customer Care](https://experienceleague.adobe.com/?support-solution=Campaign#support)
+   Non è necessario eseguire test specifici per questo aggiornamento della sicurezza. Nel caso in cui venga osservato un problema, contatta [Adobe Customer Care](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 
 * **Posso richiedere una modifica in data/ora allo slot di aggiornamento della sicurezza pianificato?**
