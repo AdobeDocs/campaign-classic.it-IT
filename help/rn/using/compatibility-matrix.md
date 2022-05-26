@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 5ce8e765866d84781b1000511e9aea4636ebd91d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '733'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -227,7 +227,7 @@ Dagli ambienti **Managed Services** (in hosting), **Ibrido** e **On-Premise** è
 </tbody>
 </table>
 
-Inoltre, **Ibrido** e **On-Premise** gli ambienti possono inoltre collegare Campaign ai seguenti sistemi di database esterni. Questi sistemi **non compatibile** con Campaign **Managed Services** Ambienti (in hosting).
+Negli ambienti **ibridi** e **on-premise** è possibile collegare Campaign ai seguenti sistemi di database esterni: Questi sistemi **non sono compatibili** con gli ambienti Campaign **Managed Services** (in hosting).
 
 <table>
 <tbody>
@@ -247,9 +247,9 @@ Inoltre, **Ibrido** e **On-Premise** gli ambienti possono inoltre collegare Camp
 <tr>
 <td> Oracle</td>
 <td>
-<p>19 quater</p>
-<p>18 quater</p>
-<p>12 quater</p>
+<p>19c</p>
+<p>18c</p>
+<p>12c</p>
 <p>11g</p>
 </td>
 <td>Minimo v7.0</td>
