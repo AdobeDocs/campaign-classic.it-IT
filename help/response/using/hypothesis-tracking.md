@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 1dc6d03b-698c-4750-9563-0676fcd185df
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Tracciamento delle ipotesi{#hypothesis-tracking}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Il risultato dei calcoli di ipotesi è disponibile a vari livelli della piattaforma Adobe Campaign: gli indicatori calcolati in base alle ipotesi e alle reazioni della popolazione destinataria sono visibili attraverso l&#39;ipotesi effettiva, nonché nei rapporti di ipotesi disponibili tramite campagne e consegne.
 
@@ -49,7 +49,7 @@ Gli indicatori forniscono le seguenti informazioni:
 * **Margine totale del gruppo di controllo**: margine totale sul gruppo di controllo.
 * **Margine medio per contatto**: margine totale / contattato.
 * **Margine medio dei gruppi di controllo**: margini totali / gruppo di controllo.
-* **Entrate aggiuntive**: (Entrate medie del gruppo di controllo contattato-Entrate medie del gruppo di controllo)*Numero di contatti
+* **Entrate aggiuntive**: (Entrate medie del gruppo di controllo contattate-Entrate medie del gruppo di controllo)&#42;Numero di contatti
 * **Margine aggiuntivo**: (Margine medio del gruppo di controllo contattato-Margine medio del gruppo di controllo) / numero di contatti
 * **Costo medio per contatto**: costo di consegna calcolato / numero di contatti.
 * **ROI**: costo calcolato della consegna / margine totale per contatto

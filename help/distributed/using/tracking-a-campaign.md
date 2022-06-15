@@ -4,7 +4,7 @@ title: Tracciare una campagna
 description: Scopri come tracciare una campagna con Campaign Distributed Marketing
 feature: Distributed Marketing
 exl-id: 87d1909c-d2eb-47ce-a860-0e78a64d2914
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Tracciare una campagna{#tracking-a-campaign}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Gli operatori di entità centrale possono tenere traccia degli ordini delle campagne nell’elenco dei pacchetti delle campagne.
 

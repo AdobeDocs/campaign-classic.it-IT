@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 1a115ca9-2532-4bd3-be77-814e43250c51
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Configurare Campaign Response Manager{#configuration}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Questa sezione è destinata alle persone responsabili della configurazione della gestione della risposta. Si presuppone una certa quantità di conoscenze sull&#39;estensione degli schemi, sulla definizione dei flussi di lavoro e sulla programmazione SQL.
 
