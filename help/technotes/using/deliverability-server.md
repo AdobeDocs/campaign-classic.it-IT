@@ -4,10 +4,10 @@ title: Migrazione al nuovo server di recapito messaggi
 description: Scopri come implementare il server di recapito messaggi di Campaign
 hide: true
 hidefromtoc: true
-source-git-commit: cd2fa2450f6e8389e9c47c412da8943a5c8bb7f3
+source-git-commit: 65ab862ec568647dd06c1f7b7b83e5b921353cc7
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -73,7 +73,7 @@ Come parte della nuova integrazione del server di recapito messaggi, Campaign de
    >È necessario salvare il file config.zip quando viene visualizzato il prompt di download, poiché non sarà più possibile scaricarlo di nuovo.
 
 1. Fai clic su **[!UICONTROL Next]**.
-1. Scegli qualsiasi **[!UICONTROL Product profile]** oppure creane uno nuovo, se necessario. Non è necessaria alcuna autorizzazione **[!UICONTROL Product profile]**. Per ulteriori informazioni su [!DNL Analytics] **[!UICONTROL Product Profiles]**, fare riferimento a [questa oasi](https://helpx.adobe.com/enterprise/using/manage-developers.html).
+1. Scegli qualsiasi **[!UICONTROL Product profile]** oppure creane uno nuovo, se necessario. Non è necessaria alcuna autorizzazione **[!UICONTROL Product profile]**. Per ulteriori informazioni su [!DNL Analytics] **[!UICONTROL Product Profiles]**, fare riferimento a [questa pagina](https://helpx.adobe.com/enterprise/using/manage-developers.html).
 
    Quindi, fai clic su **[!UICONTROL Save configured API]**.
 
