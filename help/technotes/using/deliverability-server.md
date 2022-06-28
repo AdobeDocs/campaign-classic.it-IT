@@ -4,7 +4,7 @@ title: Migrazione al nuovo server di recapito messaggi
 description: Scopri come implementare il server di recapito messaggi di Campaign
 hide: true
 hidefromtoc: true
-source-git-commit: a2590a6d8df1e73d77bbdef7b8cf3b2d6efe207f
+source-git-commit: cd2fa2450f6e8389e9c47c412da8943a5c8bb7f3
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 4%
@@ -30,7 +30,7 @@ Questo nuovo server garantisce un’elevata disponibilità (99.9) &#x200B; e for
 
 ## Sei interessato da questo problema?{#acc-deliverability-impacts}
 
-Se utilizzi il server di recapito messaggi Adobe Campaign esistente e il tuo ambiente è stato implementato in una build inferiore a Campaign 21.1.1, sei interessato. Devi eseguire l’aggiornamento a Campaign 21.1 (o più).
+Se utilizzi il vecchio server di recapito messaggi di Adobe Campaign e il tuo ambiente è stato implementato in una build inferiore a Campaign 21.1.1, sei interessato. Devi eseguire l’aggiornamento a Campaign 21.1 (o più).
 
 Scopri come controllare la versione [in questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
