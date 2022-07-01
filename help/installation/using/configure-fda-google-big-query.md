@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
-source-git-commit: 5d2ec0836fe5f106e0c56e5abbe7bab9332d7e18
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '779'
 ht-degree: 2%
 
 ---
@@ -193,11 +193,11 @@ L&#39;utilità di caricamento collettivo consente un trasferimento più veloce, 
 
 Il connettore supporta le seguenti opzioni:
 
-| Opzione | Elemento “value” | Descrizione |
-|:-:|:-:|:-:|
-| ProxyType | string | Tipo di proxy utilizzato per la connessione a BigQuery tramite connettori ODBC e SDK. </br>HTTP (predefinito), http_no_tunnel, socks4 e socks5 sono attualmente supportati. |
-| ProxyHost | string | Nome host o indirizzo IP in cui è possibile raggiungere il proxy. |
-| ProxyPort | numero | Numero di porta su cui è in esecuzione il proxy, ad esempio 8080 |
-| ProxyUid | string | Nome utente utilizzato per il proxy autenticato |
-| ProxyPwd | string | Password ProxyUid |
-| bqpath | string | Questo è applicabile solo per lo strumento a caricamento collettivo (Cloud SDK). </br> Per evitare di utilizzare la variabile PATH o se la directory google-cloud-sdk deve essere spostata in un’altra posizione, puoi specificare con questa opzione il percorso esatto della directory cloud sdk bin sul server. |
+| Opzione | Descrizione |
+|:-:|:-:|
+| ProxyType | Tipo di proxy utilizzato per la connessione a BigQuery tramite connettori ODBC e SDK. </br>HTTP (predefinito), http_no_tunnel, socks4 e socks5 sono attualmente supportati. |
+| ProxyHost | Nome host o indirizzo IP in cui è possibile raggiungere il proxy. |
+| ProxyPort | Numero di porta su cui è in esecuzione il proxy, ad esempio 8080 |
+| ProxyUid | Nome utente utilizzato per il proxy autenticato |
+| ProxyPwd | Password ProxyUid |
+| bqpath | Questo è applicabile solo per lo strumento a caricamento collettivo (Cloud SDK). </br> Per evitare di utilizzare la variabile PATH o se la directory google-cloud-sdk deve essere spostata in un’altra posizione, puoi specificare con questa opzione il percorso esatto della directory cloud sdk bin sul server. |

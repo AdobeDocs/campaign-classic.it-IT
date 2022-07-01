@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '1562'
-ht-degree: 1%
+source-wordcount: '1520'
+ht-degree: 2%
 
 ---
 
@@ -175,33 +175,27 @@ La tabella seguente elenca le mappature per i tipi di dati generati da Adobe Cam
 <table> 
  <tbody> 
   <tr> 
+   <td> <strong>Adobe Campaign</strong><br /> </td> 
    <td> <strong>PosgreSQL</strong><br /> </td> 
    <td> <strong> Oracle</strong><br /> </td> 
    <td> <strong>SQL MS</strong><br /> </td> 
-   <td> <strong>Adobe Campaign</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> Stringa<br /> </td> 
    <td> VARCHAR(255)<br /> </td> 
    <td> VARCHAR2 (NVARCHAR2 se unicode)<br /> </td> 
-   <td> VARCHAR (CARATTERE VARCHAR IMPOSTA UNICODE SE Unicode)<br /> </td> 
-   <td> VARCHAR<br /> </td> 
    <td> VARCHAR (NVARCHAR se unicode)<br /> </td> 
   </tr> 
   <tr> 
    <td> Booleano<br /> </td> 
    <td> SMALLINO<br /> </td> 
    <td> NUMERO(3)<br /> </td> 
-   <td> NUMERIC(3)<br /> </td> 
-   <td> SMALLINO<br /> </td> 
    <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Byte<br /> </td> 
    <td> SMALLINO<br /> </td> 
    <td> NUMERO(3)<br /> </td> 
-   <td> NUMERIC(3)<br /> </td> 
-   <td> SMALLINO<br /> </td> 
    <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
@@ -209,63 +203,47 @@ La tabella seguente elenca le mappature per i tipi di dati generati da Adobe Cam
    <td> SMALLINO<br /> </td> 
    <td> NUMERO(5)<br /> </td> 
    <td> SMALLINO<br /> </td> 
-   <td> SMALLINO<br /> </td> 
-   <td> SMALLINO<br /> </td> 
   </tr> 
   <tr> 
    <td> Doppio<br /> </td> 
    <td> DOPPIA PRECISIONE<br /> </td> 
    <td> FLOAT<br /> </td> 
    <td> FLOAT<br /> </td> 
-   <td> DOPPIO<br /> </td> 
-   <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
-   <td> Lunga<br /> </td> 
+   <td> Lungo<br /> </td> 
    <td> INTERO<br /> </td> 
    <td> NUMERO(10)<br /> </td> 
-   <td> INTERO<br /> </td> 
-   <td> INTERO<br /> </td> 
    <td> INT<br /> </td> 
   </tr> 
   <tr> 
    <td> Int64<br /> </td> 
    <td> BIGLIETTO<br /> </td> 
    <td> NUMERO(20)<br /> </td> 
-   <td> NUMERIC(20)<br /> </td> 
-   <td> BIGLIETTO<br /> </td> 
    <td> BIGLIETTO<br /> </td> 
   </tr> 
   <tr> 
    <td> Data<br /> </td> 
    <td> DATA<br /> </td> 
    <td> DATA<br /> </td> 
-   <td> TIMESTAMP<br /> </td> 
-   <td> DATA<br /> </td> 
    <td> DATETIME<br /> </td> 
   </tr> 
   <tr> 
-   <td> Tempo<br /> </td> 
+   <td> Ora<br /> </td> 
    <td> TEMPO<br /> </td> 
    <td> FLOAT<br /> </td> 
-   <td> TEMPO<br /> </td> 
-   <td> TEMPO<br /> </td> 
    <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
    <td> Datetime<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
    <td> DATA<br /> </td> 
-   <td> TIMESTAMP<br /> </td> 
-   <td> TIMESTAMP<br /> </td> 
    <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIMEOFFSET<br /> </td> 
   </tr> 
   <tr> 
    <td> Datetimenotz<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
    <td> DATA<br /> </td> 
-   <td> TIMESTAMP<br /> </td> 
-   <td> TIMESTAMP<br /> </td> 
    <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIME2<br /> </td> 
   </tr> 
   <tr> 
@@ -273,23 +251,17 @@ La tabella seguente elenca le mappature per i tipi di dati generati da Adobe Cam
    <td> DOPPIA PRECISIONE<br /> </td> 
    <td> FLOAT<br /> </td> 
    <td> FLOAT<br /> </td> 
-   <td> DOPPIO<br /> </td> 
-   <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
    <td> Per memoria<br /> </td> 
    <td> TESTO<br /> </td> 
    <td> CLOB (NCLOB se Unicode)<br /> </td> 
-   <td> CLOB (CLOB CHARACTER SET UNICODE, se Unicode)<br /> </td> 
-   <td> CLOB(6M)<br /> </td> 
    <td> TESTO (NTEXT se Unicode)<br /> </td> 
   </tr> 
   <tr> 
    <td> Blob<br /> </td> 
    <td> BLOB<br /> </td> 
    <td> BLOB<br /> </td> 
-   <td> BLOB<br /> </td> 
-   <td> BLOB(4M)<br /> </td> 
    <td> IMMAGINE<br /> </td> 
   </tr> 
  </tbody> 

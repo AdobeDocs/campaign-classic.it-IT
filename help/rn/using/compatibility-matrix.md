@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 5ce8e765866d84781b1000511e9aea4636ebd91d
-workflow-type: ht
-source-wordcount: '733'
-ht-degree: 100%
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+workflow-type: tm+mt
+source-wordcount: '749'
+ht-degree: 98%
 
 ---
 
@@ -48,6 +48,7 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 <tr>
 <td>Debian</td>
 <td>
+<p>11 (64 bit)</p>
 <p>10 (64 bit)</p>
 <p>9 (64 bit)</p>
 </td>
@@ -247,9 +248,9 @@ Negli ambienti **ibridi** e **on-premise** è possibile collegare Campaign ai se
 <tr>
 <td> Oracle</td>
 <td>
-<p>19c</p>
-<p>18c</p>
-<p>12c</p>
+<p>19 quater</p>
+<p>18 quater</p>
+<p>12 quater</p>
 <p>11g</p>
 </td>
 <td>Minimo v7.0</td>
@@ -266,9 +267,13 @@ Negli ambienti **ibridi** e **on-premise** è possibile collegare Campaign ai se
 </tr>
 <tr><td>MySQL</td>
 <td>
+<p>8</p>
 <p>5.7</p>
 </td>
-<td>Minimo v7.0</td>
+<td>
+<p>Minimo v7.3 </p>
+<p>Minimo v7.0</p>
+</td>
 </tr>
 <tr>
 <td>Teradata</td>
@@ -336,8 +341,9 @@ Per utilizzare la [console client di Campaign](../../installation/using/installi
 <tr>
 <td>Microsoft Windows</td>
 <td>
-<p>8</p>
+<p>11 (avvio di Campaign v7.3)</p>
 <p>10 (consigliato per le istanze giapponesi)</p>
+<p>8</p>
 </td>
 </tr>
 </tbody>
@@ -368,15 +374,15 @@ Puoi utilizzare Campaign per [inviare notifiche push](../../delivery/using/about
 <tr>
 <td>per Android</td>
 <td>
-<p>7.x, 8.x, 9.0</p>
-<p>con la build 1.0.27 dell’SDK per dispositivi mobili.</p>
+<p>12 (a partire da Campaign v7.3), 9.0, 8.x, 7.x</p>
+<p>con la build 1.1.1 dell’SDK per dispositivi mobili</p>
 </td>
 </tr>
 <tr>
 <td>iOS</td>
 <td>
-<p>iOS 9 - 14</p>
-<p>con la build 1.0.26 dell’SDK per dispositivi mobili, compatibile con le versioni a 32 e a 64 bit.</p>
+<p>iOS 9 - 15</p>
+<p>con la build 1.0.26 dell’SDK per dispositivi mobili, compatibile con le versioni a 32 e a 64 bit. iOS 15 è supportato a partire da Campaign v7.3</p>
 </td>
 </tr>
 </tbody>

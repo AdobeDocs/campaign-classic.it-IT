@@ -6,9 +6,9 @@ title: Guida di Campaign Classic v7
 user-guide-description: Con Adobe Campaign, puoi utilizzare dati approfonditi sui clienti per creare, coordinare e distribuire campagne dinamiche che i clienti desiderano realmente, tramite e-mail, dispositivi mobili, canali offline e altro ancora.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: a2590a6d8df1e73d77bbdef7b8cf3b2d6efe207f
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '2576'
+source-wordcount: '2585'
 ht-degree: 99%
 
 ---
@@ -677,6 +677,8 @@ ht-degree: 99%
             + [Configurare Sybase IQ](installation/using/configure-fda-sybase.md)
             + [Configurare Teradata](installation/using/configure-fda-teradata.md)
             + [Configurare SAP HANA](installation/using/configure-fda-sap-hana.md)
+            + [Configurare Microsoft SQL Server](installation/using/configure-fda-sql.md)
+            + [Configura PostgreSQL](installation/using/configure-fda-postgresql.md)
          + [Diritti di accesso al remoto](installation/using/remote-database-access-rights.md)
          + [Connettersi al database](installation/using/connecting-to-database.md)
          + [Creare lo schema dati](installation/using/creating-data-schema.md)
@@ -688,6 +690,7 @@ ht-degree: 99%
       + [Creare nuove istanze](installation/using/creating-new-instances.md)
       + [Elenco delle opzioni di Campaign](installation/using/configuring-campaign-options.md)
       + [Disinstallare Campaign](installation/using/uninstalling-campaign.md)
+      + [Installa nuovi font](installation/using/install-fonts.md)
 + Guida al monitoraggio {#monitoring-campaign-classic}
    + Introduzione {#introduction}
       + [Premessa](production/using/foreword.md)
