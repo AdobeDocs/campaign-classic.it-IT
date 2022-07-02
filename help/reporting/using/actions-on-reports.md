@@ -4,9 +4,9 @@ title: Azioni sui rapporti
 description: Azioni sui rapporti
 feature: Reporting
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 4ff86349d6b8966273585bf2a1ea0d785a7e87cb
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '543'
 ht-degree: 3%
 
 ---
@@ -86,7 +86,7 @@ Per saperne di più sulle **nlserver** , fai riferimento a [questa sezione](../.
 
 È possibile stampare il rapporto: a questo scopo, fai clic sull’icona della stampante: viene visualizzata la finestra di dialogo.
 
-Per ottenere un risultato migliore, modificare le opzioni di stampa di Internet Explorer e selezionare **[!UICONTROL Print background colors and images]**.
+Per ottenere un risultato migliore, modificare le opzioni di stampa di Esplora risorse e selezionare **[!UICONTROL Print background colors and images]**.
 
 ![](assets/s_ncs_advuser_report_print_options.png)
 

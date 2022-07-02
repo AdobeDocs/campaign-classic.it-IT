@@ -4,9 +4,9 @@ title: Creare una pagina di destinazione
 description: Creare una pagina di destinazione
 feature: Landing Pages
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 4ff86349d6b8966273585bf2a1ea0d785a7e87cb
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '721'
 ht-degree: 3%
 
 ---
@@ -88,7 +88,7 @@ Applicare questi passaggi per ogni pagina inserita nell&#39;applicazione Web.
 
 >[!CAUTION]
 >
->**Il DCE esegue il codice JavaScript per la pagina HTML caricata.** Errori JavaScript nel modello di HTML che possono comparire nell&#39;interfaccia Adobe Campaign. Questi errori non sono correlati all&#39;editor. Per verificare che non ci siano errori nei file importati, si consiglia di testarli in un browser (Internet Explorer / Firefox / Chrome) prima di importare i file nel DCE.
+>**Il DCE esegue il codice JavaScript per la pagina HTML caricata.** Errori JavaScript nel modello di HTML che possono comparire nell&#39;interfaccia Adobe Campaign. Questi errori non sono correlati all&#39;editor. Per verificare che non ci siano errori nei file importati, si consiglia di testarli in un browser Web prima di importare i file nel DCE.
 
 ## Passaggio 2: configurazione del contenuto {#step-2---configuring-the-content}
 
