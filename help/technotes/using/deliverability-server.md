@@ -5,9 +5,9 @@ description: Scopri come implementare il server di recapito messaggi di Campaign
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: a007e4d5dd73f01657f1642be6f0b1a92f39e9bf
+source-git-commit: 2e4d699aef0bea4f12d1bd2d715493c4a94a74dd
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '927'
 ht-degree: 5%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 A partire dalla versione 21.1 di Campaign Classic v7, Adobe Campaign propone un nuovo server di recapito messaggi che offre elevata disponibilità e risolve i problemi di conformità in materia di sicurezza. Campaign Classic ora sincronizza le regole di recapito messaggi, i registri di trasmissione e l’indirizzo di eliminazione da e verso il nuovo server di recapito messaggi.
 
-In qualità di cliente Campaign Classic, devi implementare il nuovo server di recapito messaggi
+In qualità di cliente Campaign Classic, devi implementare il nuovo server di recapito messaggi.
 
 >[!NOTE]
 >
@@ -27,7 +27,6 @@ In qualità di cliente Campaign Classic, devi implementare il nuovo server di re
 L&#39;Adobe sta disattivando i centri dati più vecchi per motivi di conformità alla sicurezza. I client Adobe Campaign Classic devono migrare al nuovo servizio di recapito messaggi, ospitato su Amazon Web Service (AWS).
 
 Questo nuovo server garantisce un’elevata disponibilità (99.9) &#x200B; e fornisce endpoint sicuri e autenticati per consentire ai server delle campagne di recuperare i dati richiesti: invece di connettersi al database per ogni richiesta, il nuovo server di recapito messaggi memorizza in cache i dati per elaborare le richieste laddove possibile. Questo meccanismo migliora il tempo di risposta. &#x200B;
-
 
 ## Sei interessato da questo problema?{#acc-deliverability-impacts}
 
@@ -43,6 +42,9 @@ Come **cliente on-premise/ibrido**, devi eseguire l’aggiornamento a una delle 
 
 ## Passaggi di implementazione (clienti ibridi e on-premise) {#implementation-steps}
 
+Come parte della nuova integrazione del server di recapito messaggi, Campaign deve comunicare con Adobe Shared Services tramite un’autenticazione basata su Identity Management Service (IMS). Il modo migliore è quello di utilizzare il token gateway basato su Adobe Developer (chiamato anche Token account tecnico o JWT IO di Adobe).
+
+
 >[!WARNING]
 >
 >Questi passaggi devono essere eseguiti solo da implementazioni ibride e on-premise.
@@ -51,11 +53,18 @@ Come **cliente on-premise/ibrido**, devi eseguire l’aggiornamento a una delle 
 
 ### Prerequisiti{#prerequisites}
 
-Come parte della nuova integrazione del server di recapito messaggi, Campaign deve comunicare con Adobe Shared Services tramite un’autenticazione basata su Identity Management Service (IMS). Il modo migliore è quello di utilizzare il token gateway basato su Adobe Developer (chiamato anche Token account tecnico o JWT IO di Adobe).
+Prima di avviare l&#39;implementazione, controlla la configurazione dell&#39;istanza.
+
+1. Apri la console del client Campaign e accedi ad Adobe Campaign come amministratore.
+1. Sfoglia per **Amministrazione > Piattaforma > Opzioni**.
+1. Controlla la `DmRendering_cuid` il valore dell&#39;opzione è compilato.
+
+   * Se l’opzione è compilata, puoi avviare l’implementazione.
+   * Se non viene compilato alcun valore, contatta [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per ottenere il tuo CUID.
+
+      Questa opzione deve essere compilata su tutte le istanze Campaign (MKT, MID, RT, EXEC) con lo stesso valore.
 
 ### Passaggio 1: Crea/aggiorna il progetto Adobe Developer {#adobe-io-project}
-
-
 
 1. Accesso [Console Adobe Developer](https://developer.adobe.com/console/home) e accedi con l&#39;accesso Developer della tua organizzazione.
 
@@ -126,15 +135,7 @@ Per eseguire questa operazione:
 
 1. È necessario arrestare e quindi riavviare il server per tenere conto della modifica. È inoltre possibile eseguire un `config -reload` comando.
 
-### Passaggio 3: Controlla la configurazione
-
-Al termine delle impostazioni, puoi controllare la configurazione dell’istanza. Segui i passaggi seguenti:
-
-1. Apri la console del client e accedi ad Adobe Campaign come amministratore.
-1. Sfoglia per **Amministrazione > Piattaforma > Opzioni**.
-1. Controlla la `DmRendering_cuid` il valore dell&#39;opzione è compilato. Deve essere compilato su tutte le istanze Campaign (MKT, MID, RT, EXEC). Se non viene compilato alcun valore, contatta [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per ottenere il tuo CUID.
-
-### Passaggio 4: Abilita il nuovo server di recapito messaggi
+### Passaggio 3: Abilita il nuovo server di recapito messaggi
 
 Ora puoi abilitare il nuovo server di recapito messaggi. Per eseguire questa operazione:
 
@@ -142,7 +143,7 @@ Ora puoi abilitare il nuovo server di recapito messaggi. Per eseguire questa ope
 1. Sfoglia per **Amministrazione > Piattaforma > Opzioni**.
 1. Accedere al `NewDeliverabilityServer_FeatureFlag` e imposta il valore su `1`. Questa configurazione deve essere eseguita su tutte le istanze Campaign (MKT, MID, RT, EXEC).
 
-### Passaggio 5: Convalida la configurazione
+### Passaggio 4: Convalida la configurazione
 
 Per verificare che l’integrazione abbia esito positivo, effettua le seguenti operazioni:
 
