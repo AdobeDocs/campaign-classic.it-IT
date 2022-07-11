@@ -5,10 +5,10 @@ description: Scopri come implementare il server di recapito messaggi di Campaign
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 2c70b5a4434b9fb22490eb3c1705f4e5c803643e
+source-git-commit: 6740b5eed33612bd7a3b217a8f53b07518f879fb
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 4%
+source-wordcount: '1067'
+ht-degree: 3%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 4%
 
 A partire dalla versione 21.1 di Campaign Classic v7, Adobe Campaign propone un nuovo server di recapito messaggi che offre elevata disponibilità e risolve i problemi di conformità in materia di sicurezza. Campaign Classic ora sincronizza le regole di recapito messaggi, i registri di trasmissione e l’indirizzo di eliminazione da e verso il nuovo server di recapito messaggi.
 
-In qualità di cliente Campaign Classic, devi implementare il nuovo server di recapito messaggi.
+In qualità di cliente Campaign Classic, devi implementare il nuovo server di recapito messaggi **prima del 31 agosto 2022**.
 
 >[!NOTE]
 >
->Per qualsiasi domanda su queste modifiche, contatta [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Per qualsiasi domanda su queste modifiche, consulta la [Domande frequenti](#faq)o contattare [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Cosa è cambiato?{#acc-deliverability-changes}
 
@@ -30,7 +30,7 @@ Questo nuovo server garantisce un’elevata disponibilità (99.9) &#x200B; e for
 
 ## Sei interessato da questo problema?{#acc-deliverability-impacts}
 
-Se utilizzi il vecchio server di recapito messaggi di Adobe Campaign e il tuo ambiente è stato implementato in una build inferiore a Campaign 21.1.1, sei interessato. Devi eseguire l’aggiornamento a Campaign 21.1 (o più).
+Se l’ambiente è stato implementato in una build inferiore a [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2), sei interessato. Devi effettuare l’aggiornamento a Campaign v7.2.1 (o più).
 
 Scopri come controllare la versione [in questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
@@ -150,5 +150,22 @@ Per verificare che l’integrazione abbia esito positivo, effettua le seguenti o
 1. Sfoglia per **Amministrazione > Produzione > Flussi di lavoro tecnici**.
 1. Riavvia **Aggiornamento per il recapito messaggi** Flusso di lavoro (deliverabilityUpdate). Questa deve essere eseguita su tutte le istanze Campaign (MKT, MID, RT, EXEC).
 1. Controlla log: il flusso di lavoro deve essere eseguito senza errori.
+
+
+## Domande frequenti {#faq}
+
+### Cosa succede se non aggiorno l’ambiente?
+
+Qualsiasi istanza di Campaign non aggiornata entro il 31 agosto non sarà più in grado di connettersi al server di recapito messaggi di Campaign. Di conseguenza, il **Aggiornamento per il recapito messaggi** Il flusso di lavoro (deliverabilityUpdate) avrà esito negativo. Questo flusso di lavoro gestisce l’aggiornamento giornaliero delle regole MX e delle regole di rimbalzo.
+
+Se non aggiorni l’ambiente, le impostazioni e-mail cesseranno di essere sincronizzate (regole di gestione MX, regole e-mail in entrata, regole di gestione del dominio e regole di qualificazione non recapitate). Questo potrebbe influenzare nel tempo il recapito messaggi. Se si apporta una modifica significativa a queste regole, queste dovranno essere applicate manualmente da questo momento in poi.
+
+Solo per le istanze MKT [Elenco globale di soppressione](../../campaign-opt/using/filtering-rules.md#default-deliverability-exclusion-rules) è interessato.
+
+### Non posso effettuare l&#39;aggiornamento ora. Qual è la guida?
+
+Se non è possibile aggiornare l’istanza prima del 31 agosto, è necessario disattivare temporaneamente il **Aggiornamento per il recapito messaggi** (deliverabilityUpdate) flusso di lavoro fino al completamento dell’aggiornamento in modo da non tentare la sincronizzazione con il vecchio server di recapito messaggi.
+
+
 
 Per maggiori informazioni, contatta [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
