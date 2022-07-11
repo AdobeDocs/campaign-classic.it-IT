@@ -5,10 +5,10 @@ description: Scopri come implementare il server di recapito messaggi di Campaign
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 2e4d699aef0bea4f12d1bd2d715493c4a94a74dd
+source-git-commit: 2c70b5a4434b9fb22490eb3c1705f4e5c803643e
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 5%
+source-wordcount: '909'
+ht-degree: 4%
 
 ---
 
@@ -40,7 +40,7 @@ Come **cliente ospitato**, Adobe collaborerà con te per aggiornare le istanze a
 
 Come **cliente on-premise/ibrido**, devi eseguire l’aggiornamento a una delle versioni più recenti per beneficiare del nuovo server di recapito messaggi. Una volta aggiornate tutte le istanze, potrai [implementare la nuova integrazione](#implementation-steps) ad Adobe il server di recapito messaggi e garantire una transizione senza soluzione di continuità.
 
-## Passaggi di implementazione (clienti ibridi e on-premise) {#implementation-steps}
+## Passaggi di implementazione {#implementation-steps}
 
 Come parte della nuova integrazione del server di recapito messaggi, Campaign deve comunicare con Adobe Shared Services tramite un’autenticazione basata su Identity Management Service (IMS). Il modo migliore è quello di utilizzare il token gateway basato su Adobe Developer (chiamato anche Token account tecnico o JWT IO di Adobe).
 
@@ -48,8 +48,6 @@ Come parte della nuova integrazione del server di recapito messaggi, Campaign de
 >[!WARNING]
 >
 >Questi passaggi devono essere eseguiti solo da implementazioni ibride e on-premise.
->
->Per le implementazioni in hosting, contatta [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ### Prerequisiti{#prerequisites}
 
