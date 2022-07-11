@@ -5,7 +5,7 @@ description: Scopri come implementare il server di recapito messaggi di Campaign
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 4ad6f1e3a3d23383d17f947430c32fecefb3a8e1
+source-git-commit: c3b1ffcb580c7510a64115e0abbf16cb766146c5
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 3%
@@ -82,7 +82,6 @@ Prima di avviare l&#39;implementazione, controlla la configurazione dell&#39;ist
    ![](assets/Add-API.png)
 1. In **[!UICONTROL Add an API]** finestra, seleziona **[!UICONTROL Adobe Campaign]**.
    ![](assets/AC-API.png)
-<!--1. Choose **[!UICONTROL Service Account (JWT)]** as the authentication type.-->
 1. Se l&#39;ID client era vuoto, seleziona **[!UICONTROL Generate a key pair]** per creare una coppia di chiavi pubblica e privata.
    ![](assets/Generate-a-key-pair.png)
 
