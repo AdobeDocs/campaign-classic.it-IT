@@ -4,10 +4,11 @@ title: Migrazione al nuovo server di recapito messaggi
 description: Scopri come implementare il server di recapito messaggi di Campaign
 hide: true
 hidefromtoc: true
-source-git-commit: 65ab862ec568647dd06c1f7b7b83e5b921353cc7
+exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
+source-git-commit: a007e4d5dd73f01657f1642be6f0b1a92f39e9bf
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '923'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +20,7 @@ In qualità di cliente Campaign Classic, devi implementare il nuovo server di re
 
 >[!NOTE]
 >
->Per qualsiasi domanda su queste modifiche, leggi il [Domande frequenti](#faq-aa). Per ulteriori informazioni, contatta [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Per qualsiasi domanda su queste modifiche, contatta [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Cosa è cambiato?{#acc-deliverability-changes}
 
@@ -36,14 +37,13 @@ Scopri come controllare la versione [in questa sezione](../../platform/using/lau
 
 ## Come si esegue l’aggiornamento?{#acc-deliverability-update}
 
-In qualità di cliente in hosting, Adobe collaborerà con te per aggiornare le tue istanze alla versione più recente.
+Come **cliente ospitato**, Adobe collaborerà con te per aggiornare le istanze alla versione più recente e creare il progetto in Adobe Developer Console.
 
-In qualità di cliente on-premise/ibrido, devi effettuare l’aggiornamento a una delle versioni più recenti per beneficiare del nuovo server di recapito messaggi .
-Una volta aggiornate tutte le istanze, potrai [implementare la nuova integrazione](#implementation-steps) ad Adobe il server di recapito messaggi e garantire una transizione senza soluzione di continuità.
+Come **cliente on-premise/ibrido**, devi eseguire l’aggiornamento a una delle versioni più recenti per beneficiare del nuovo server di recapito messaggi. Una volta aggiornate tutte le istanze, potrai [implementare la nuova integrazione](#implementation-steps) ad Adobe il server di recapito messaggi e garantire una transizione senza soluzione di continuità.
 
 ## Passaggi di implementazione (clienti ibridi e on-premise) {#implementation-steps}
 
->[!IMPORTANT]
+>[!WARNING]
 >
 >Questi passaggi devono essere eseguiti solo da implementazioni ibride e on-premise.
 >
@@ -55,29 +55,45 @@ Come parte della nuova integrazione del server di recapito messaggi, Campaign de
 
 ### Passaggio 1: Crea/aggiorna il progetto Adobe Developer {#adobe-io-project}
 
+
+
 1. Accesso [Console Adobe Developer](https://developer.adobe.com/console/home) e accedi con l&#39;accesso Developer della tua organizzazione.
 
    >[!NOTE]
    >
    > Assicurati di aver effettuato l&#39;accesso al portale organizzazione corretto.
 
-1. Seleziona **[!UICONTROL + Add to Project]** e scegli **[!UICONTROL API]**.
-1. In **[!UICONTROL Add an API]** finestra, seleziona **[!UICONTROL Adobe Campaign]**.
-1. Scegli **[!UICONTROL Service Account (JWT)]** come tipo di autenticazione.
-1. Se l&#39;ID client era vuoto, seleziona **[!UICONTROL Generate a key pair]** per creare una coppia di chiavi pubblica e privata.
+1. Seleziona **[!UICONTROL Create new project]**.
+   ![](assets/New-Project.png)
 
-   Le chiavi vengono quindi scaricate automaticamente con una data di scadenza predefinita di 365 giorni. Una volta scaduta, dovrai creare una nuova coppia di chiavi e aggiornare l’integrazione nel file di configurazione. Utilizzando l&#39;opzione 2, puoi scegliere di creare e caricare manualmente il tuo **[!UICONTROL Public key]** con una data di scadenza più lunga.
 
    >[!CAUTION]
    >
-   >È necessario salvare il file config.zip quando viene visualizzato il prompt di download, poiché non sarà più possibile scaricarlo di nuovo.
+   >Se utilizzi già la funzionalità di autenticazione Adobe IO JWT per un’altra integrazione, ad esempio il connettore Analytics o i trigger Adobe, devi aggiornare il progetto aggiungendo **API di Campaign** a quel progetto.
+1. Scegli **[!UICONTROL Add API]**.
+   ![](assets/Add-API.png)
+1. In **[!UICONTROL Add an API]** finestra, seleziona **[!UICONTROL Adobe Campaign]**.
+   ![](assets/AC-API.png)
+<!--1. Choose **[!UICONTROL Service Account (JWT)]** as the authentication type.-->
+1. Se l&#39;ID client era vuoto, seleziona **[!UICONTROL Generate a key pair]** per creare una coppia di chiavi pubblica e privata.
+   ![](assets/Generate-a-key-pair.png)
+
+   Le chiavi vengono quindi scaricate automaticamente con una data di scadenza predefinita di 365 giorni. Una volta scaduta, dovrai creare una nuova coppia di chiavi e aggiornare l’integrazione nel file di configurazione. Utilizzando l&#39;opzione 2, puoi scegliere di creare e caricare manualmente il tuo **[!UICONTROL Public key]** con una data di scadenza più lunga.
+   ![](assets/New-key-pair.png)
+
+   >[!CAUTION]
+   >
+   >È necessario salvare il `config.zip` file quando viene visualizzato il prompt di download perché non sarà più possibile scaricarlo.
 
 1. Fai clic su **[!UICONTROL Next]**.
-1. Scegli qualsiasi **[!UICONTROL Product profile]** oppure creane uno nuovo, se necessario. Non è necessaria alcuna autorizzazione **[!UICONTROL Product profile]**. Per ulteriori informazioni su [!DNL Analytics] **[!UICONTROL Product Profiles]**, fare riferimento a [questa pagina](https://helpx.adobe.com/enterprise/using/manage-developers.html).
+1. Scegli qualsiasi **[!UICONTROL Product profile]** oppure creane uno nuovo, se necessario. Non è necessaria alcuna autorizzazione **[!UICONTROL Product profile]**. Per ulteriori informazioni su **[!UICONTROL Product Profiles]**, fare riferimento a [questa pagina](https://helpx.adobe.com/enterprise/using/manage-developers.html).
+   ![](assets/Product-Profile-API.png)
 
    Quindi, fai clic su **[!UICONTROL Save configured API]**.
 
-1. Dal progetto, seleziona **[!UICONTROL Adobe Campaign]** e copia le seguenti informazioni in **[!UICONTROL Service Account (JWT)]**:
+1. Dal progetto, seleziona **[!UICONTROL Adobe Campaign]** e copia le seguenti informazioni in **[!UICONTROL Service Account (JWT)]**
+
+   ![](assets/Config-API.png)
 
    * **[!UICONTROL Client ID]**
    * **[!UICONTROL Client Secret]**
@@ -116,7 +132,7 @@ Al termine delle impostazioni, puoi controllare la configurazione dell’istanza
 
 1. Apri la console del client e accedi ad Adobe Campaign come amministratore.
 1. Sfoglia per **Amministrazione > Piattaforma > Opzioni**.
-1. Controlla la `DmRendering_cuid` il valore dell&#39;opzione è compilato. Deve essere compilato su tutte le istanze Campaign (MKT, MID, RT, EXEC). Se non viene compilato, è necessario compilare il valore. Se non viene compilato alcun valore, contatta [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per ottenere il tuo CUID.
+1. Controlla la `DmRendering_cuid` il valore dell&#39;opzione è compilato. Deve essere compilato su tutte le istanze Campaign (MKT, MID, RT, EXEC). Se non viene compilato alcun valore, contatta [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per ottenere il tuo CUID.
 
 ### Passaggio 4: Abilita il nuovo server di recapito messaggi
 
@@ -125,7 +141,6 @@ Ora puoi abilitare il nuovo server di recapito messaggi. Per eseguire questa ope
 1. Apri la console del client e accedi ad Adobe Campaign come amministratore.
 1. Sfoglia per **Amministrazione > Piattaforma > Opzioni**.
 1. Accedere al `NewDeliverabilityServer_FeatureFlag` e imposta il valore su `1`. Questa configurazione deve essere eseguita su tutte le istanze Campaign (MKT, MID, RT, EXEC).
-
 
 ### Passaggio 5: Convalida la configurazione
 
@@ -136,13 +151,5 @@ Per verificare che l’integrazione abbia esito positivo, effettua le seguenti o
 1. Sfoglia per **Amministrazione > Produzione > Flussi di lavoro tecnici**.
 1. Riavvia **Aggiornamento per il recapito messaggi** Flusso di lavoro (deliverabilityUpdate). Questa deve essere eseguita su tutte le istanze Campaign (MKT, MID, RT, EXEC).
 1. Controlla log: il flusso di lavoro deve essere eseguito senza errori.
-
-## Domande frequenti{#faq-aa}
-
-D: R:
-
-D: R:
-
-
 
 Per maggiori informazioni, contatta [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
