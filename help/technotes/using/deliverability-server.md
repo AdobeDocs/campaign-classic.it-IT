@@ -5,16 +5,16 @@ description: Scopri come implementare il server di recapito messaggi di Campaign
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: c3b1ffcb580c7510a64115e0abbf16cb766146c5
+source-git-commit: 5e0cf925ab4915c8a1d2c9d50daf77190023710f
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1065'
 ht-degree: 3%
 
 ---
 
 # Server di recapito messaggi di Campaign {#acc-deliverability}
 
-A partire dalla versione 21.1 di Campaign Classic v7, Adobe Campaign propone un nuovo server di recapito messaggi che offre elevata disponibilità e risolve i problemi di conformità in materia di sicurezza. Campaign Classic ora sincronizza le regole di recapito messaggi, i registri di trasmissione e l’indirizzo di eliminazione da e verso il nuovo server di recapito messaggi.
+Avvio [versione v7.2.1](../../rn/using/latest-release.md#release-7-2-2), Adobe Campaign propone un nuovo server di recapito messaggi che offre elevata disponibilità e risolve i problemi di conformità in materia di sicurezza. Campaign Classic ora sincronizza le regole di recapito messaggi, i registri di trasmissione e l’indirizzo di eliminazione da e verso il nuovo server di recapito messaggi.
 
 In qualità di cliente Campaign Classic, devi implementare il nuovo server di recapito messaggi **prima del 31 agosto 2022**.
 
