@@ -3,10 +3,10 @@ product: campaign
 title: Consegne
 description: Ulteriori informazioni sui flussi di lavoro di consegna predefiniti
 feature: Workflows
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 25e8acdc449c7002e467db17e7c70e3dc017dded
 workflow-type: tm+mt
 source-wordcount: '323'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -40,7 +40,7 @@ I flussi di lavoro descritti di seguito sono installati con **Consegne** modulo 
    <td> Questo flusso di lavoro standardizza i valori di enumerazione. Viene attivato ogni giorno alle 3 per impostazione predefinita.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Update for deliverability</span> <br /> </td> 
+   <td> <span class="uicontrol">Aggiornamento per il recapito messaggi</span> <br /> </td> 
    <td> <span class="uicontrol">deliverabilityUpdate</span> <br /> </td> 
    <td> Questo flusso di lavoro ti consente di creare l’elenco delle regole di qualificazione della posta non recapitata, nonché l’elenco dei domini e degli MX nella piattaforma. Questo flusso di lavoro funziona solo se la porta HTTPS è aperta. Questi elenchi non vengono aggiornati a meno che non sia installato il modulo Consegne.<br /> </td> 
   </tr> 

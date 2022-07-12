@@ -4,7 +4,7 @@ title: Monitorare i flussi di lavoro tecnici
 description: Monitorare i flussi di lavoro tecnici
 feature: Workflows
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 25e8acdc449c7002e467db17e7c70e3dc017dded
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 6%
@@ -48,9 +48,9 @@ Per **[!UICONTROL Tracking workflow (‘tracking’)]**:
 
 Controlla che il flusso di lavoro di tracciamento venga eseguito come programmato (ogni ora per impostazione predefinita) e che il giornale di registrazione non evidenzi gli errori ricorrenti. Per ulteriori informazioni, consulta questa [sezione](delivery.md).
 
-Per **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
+Per **[!UICONTROL Refresh for Deliverability (deliverabilityUpdate)]**:
 
-1. Controlla che la **[!UICONTROL Deliverability update]** il flusso di lavoro viene eseguito e terminato con successo ogni giorno.
+1. Controlla che la **[!UICONTROL Refresh for Deliverability]** il flusso di lavoro viene eseguito e terminato con successo ogni giorno.
 1. Verifica nel giornale di registrazione che le regole vengano aggiornate regolarmente.
 
 Per **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
