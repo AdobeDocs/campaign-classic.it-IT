@@ -5,9 +5,9 @@ description: Scopri come implementare il server di recapito messaggi di Campaign
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: bec525c52cb30dfae9530265bc3fdc2395879539
+source-git-commit: dfa28fc10bcfddcf35e8ddfa0af1fba718400350
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1105'
 ht-degree: 3%
 
 ---
@@ -30,15 +30,13 @@ Questo nuovo server garantisce un’elevata disponibilità (99.9) &#x200B; e for
 
 ## Sei interessato da questo problema?{#acc-deliverability-impacts}
 
-Se l’ambiente è stato implementato in una build inferiore a [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2), sei interessato. Devi effettuare l’aggiornamento a Campaign v7.2.1 (o più).
-
-Scopri come controllare la versione [in questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+Tutti i clienti devono effettuare l’aggiornamento a [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2) e implementa il loro ambiente per beneficiare del nuovo server di recapito messaggi.
 
 ## Come si esegue l’aggiornamento?{#acc-deliverability-update}
 
 Come **cliente ospitato**, Adobe collaborerà con te per aggiornare le istanze alla versione più recente e creare il progetto in Adobe Developer Console.
 
-Come **cliente on-premise/ibrido**, devi eseguire l’aggiornamento a una delle versioni più recenti per beneficiare del nuovo server di recapito messaggi. Una volta aggiornate tutte le istanze, potrai [implementare la nuova integrazione](#implementation-steps) ad Adobe il server di recapito messaggi e garantire una transizione senza soluzione di continuità.
+Come **cliente on-premise/ibrido**, devi effettuare l’aggiornamento a [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2) per sfruttare il nuovo server di recapito messaggi. Una volta aggiornate tutte le istanze, è necessario [implementare la nuova integrazione](#implementation-steps) ad Adobe il server di recapito messaggi e garantire una transizione senza soluzione di continuità.
 
 ## Passaggi di implementazione {#implementation-steps}
 
@@ -47,7 +45,7 @@ Come parte della nuova integrazione del server di recapito messaggi, Campaign de
 
 >[!WARNING]
 >
->Questi passaggi devono essere eseguiti solo da implementazioni ibride e on-premise.
+>Questi passaggi devono essere eseguiti solo per le implementazioni ibride e on-premise.
 
 ### Prerequisiti{#prerequisites}
 
