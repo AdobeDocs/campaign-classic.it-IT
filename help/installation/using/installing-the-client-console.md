@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 0f63636e9cc22ac97e634a4f11dc585cb39b05c0
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 3%
@@ -36,7 +36,7 @@ Controlla i dettagli riportati di seguito per capire cosa è necessario per la t
 
 ## Implementazioni in hosting Adobe {#hosted-customers}
 
-Aggiungi un cliente in hosting e hai due opzioni per installare o aggiornare le console client:
+In qualità di cliente ospitato, hai due opzioni per installare o aggiornare le console client:
 
 1. Adobe può distribuire direttamente. Una volta aggiornata la console, agli utenti verrà richiesto di scaricare l’ultima versione della console client in una finestra a comparsa.
 
