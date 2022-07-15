@@ -9,7 +9,7 @@ type: Documentation
 source-git-commit: 8221afc3b73e1ddce4143394a1d77eab3995d892
 workflow-type: tm+mt
 source-wordcount: '2585'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -678,7 +678,7 @@ ht-degree: 99%
             + [Configurare Teradata](installation/using/configure-fda-teradata.md)
             + [Configurare SAP HANA](installation/using/configure-fda-sap-hana.md)
             + [Configurare Microsoft SQL Server](installation/using/configure-fda-sql.md)
-            + [Configura PostgreSQL](installation/using/configure-fda-postgresql.md)
+            + [Configurare PostgreSQL](installation/using/configure-fda-postgresql.md)
          + [Diritti di accesso al remoto](installation/using/remote-database-access-rights.md)
          + [Connettersi al database](installation/using/connecting-to-database.md)
          + [Creare lo schema dati](installation/using/creating-data-schema.md)
@@ -690,7 +690,7 @@ ht-degree: 99%
       + [Creare nuove istanze](installation/using/creating-new-instances.md)
       + [Elenco delle opzioni di Campaign](installation/using/configuring-campaign-options.md)
       + [Disinstallare Campaign](installation/using/uninstalling-campaign.md)
-      + [Installa nuovi font](installation/using/install-fonts.md)
+      + [Installare nuovi font](installation/using/install-fonts.md)
 + Guida al monitoraggio {#monitoring-campaign-classic}
    + Introduzione {#introduction}
       + [Premessa](production/using/foreword.md)
@@ -837,7 +837,7 @@ ht-degree: 99%
    + [Consigli sui requisiti hardware in base alle dimensioni](technotes/using/hardware-sizing.md)
    + Aggiornamenti e compatibilità{#technote-migration}
       + [Note tecniche](technotes/using/technote.md)
-      + [Aggiornamento del nuovo server di recapito messaggi](technotes/using/deliverability-server.md)
+      + [Passare al nuovo server di recapito messaggi](technotes/using/deliverability-server.md)
       + [Aggiornamento della sicurezza Apache](technotes/using/acc-apache-upgrade.md)
       + [Aggiornamenti alla configurazione di Campaign](technotes/using/acc-config-updates.md)
       + [Aggiornamenti IMS](technotes/using/ims-updates.md)

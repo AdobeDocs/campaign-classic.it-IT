@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
 workflow-type: tm+mt
 source-wordcount: '1958'
-ht-degree: 71%
+ht-degree: 98%
 
 ---
 
@@ -34,7 +34,7 @@ _1 luglio 2022_
 <tbody> 
 <tr> 
 <td> <p>Con iOS 15, Apple ha aggiunto il concetto di “notifiche urgenti” che permette allo sviluppatore dell’app di ignorare la modalità di attivazione quando una notifica è considerata urgente e deve quindi raggiungere l’utente in tempo reale.</p>
-<p>Scopri come creare una notifica sensibile in <a href="../../delivery/using/create-notifications-ios.md">documentazione dettagliata</a>.</p>
+<p>Consulta la <a href="../../delivery/using/create-notifications-ios.md">documentazione dettagliata</a> per scoprire come creare una notifica sensibile.</p>
 </td> 
 </tr> 
 </tbody> 
@@ -42,48 +42,48 @@ _1 luglio 2022_
 
 **Aggiornamenti della compatibilità**
 
-* L&#39;SDK di Adobe Campaign ora supporta Android 12 e iOS 15 per le notifiche push.
-* Adobe Campaign è ora compatibile con MySQL 8.
-* Adobe Campaign è ora compatibile con Windows 11.
-* Adobe Campaign è ora compatibile con Debian 11.
+* L’SDK di Adobe Campaign ora supporta Android 12 e iOS 15 per le notifiche push.
+* Adobe Campaign è ora compatibile con MySQL 8.
+* Adobe Campaign è ora compatibile con Windows 11.
+* Adobe Campaign è ora compatibile con Debian 11.
 
 Consulta la [Matrice di compatibilità di Campaign](../../rn/using/compatibility-matrix.md#OperatingSystems).
 
 **Miglioramenti**
 
-* Dopo la fine di Internet Explorer 11, il motore di rendering HTML per Adobe Services nella console utilizza ora Edge Chromium. Inoltre, è ora necessaria l’installazione del runtime Microsoft Edge Webview 2 per qualsiasi installazione della console client (dalla versione di build di Campaign Classic 7.3). [Ulteriori informazioni](../../installation/using/installing-the-client-console.md)
-* La gestione della connessione al database in Adobe Campaign è stata migliorata per ottimizzare la stabilità.
+* Dopo la fine del ciclo di vita di Internet Explorer 11, il motore di rendering HTML per Adobe Services nella console utilizza ora Edge Chromium. Inoltre, è ora necessaria l’installazione del runtime Microsoft Edge Webview 2 per qualsiasi installazione della console client (dalla versione di build di Campaign Classic 7.3). [Ulteriori informazioni](../../installation/using/installing-the-client-console.md)
+* La gestione delle connessioni al database in Adobe Campaign è stata migliorata per ottimizzarne la stabilità.
 * L’autenticazione di Microsoft Exchange Online OAuth 2.0 per POP3 è ora supportata in Campaign. [Maggiori informazioni](../../installation/using/external-accounts.md#bounce-mails-external-account)
-* Sono stati risolti diversi problemi durante l’utilizzo di un’attività del flusso di lavoro di arricchimento con dati esterni. (NEO-38069)
-* Il connettore SAP Hana FDA è stato aggiornato per funzionare con la versione più recente del database SAP Hana (2.x).
-* Il connettore FDA della Teradata è stato aggiornato per funzionare con la versione più recente della Teradata (17).
-* Nella versione 20.2, è stato introdotto il supporto dell’autenticazione basata sui token per le consegne iOS per le nuove consegne e i nuovi modelli di consegna. In 7.2, è stata aggiunta una patch al post-aggiornamento per applicare il supporto per l’autenticazione basato su token a un massimo di 10.000 consegne e modelli di consegna creati in precedenza. In 7.3, la patch è stata migliorata e il limite è stato rimosso.
+* Sono stati risolti diversi problemi relativi all’utilizzo di un’attività del flusso di lavoro di arricchimento con dati esterni. (NEO-38069)
+* Il connettore FDA SAP Hana è stato aggiornato per funzionare con la versione più recente del database SAP Hana (2.x).
+* Il connettore FDA Teradata è stato aggiornato per funzionare con la versione più recente di Teradata (17).
+* Nella versione 20.2, il supporto dell’autenticazione basata sui token per le consegne iOS è stato introdotto per le nuove consegne e i nuovi modelli di consegna. Nella versione 7.2, era stata aggiunta una patch al post-aggiornamento per applicare il supporto dell’autenticazione basata su token a un massimo di 10.000 consegne e modelli di consegna creati in precedenza. Nella versione 7.3, la patch è stata migliorata e il limite è stato rimosso.
 
 **Patch**
 
 * È stato corretto un errore della build precedente che impediva agli utenti di ridimensionare la pagina di accesso IMS.
 * È stato corretto un errore che si verificava durante l’installazione del pacchetto content manager su un’istanza esistente.
-* È stato risolto un problema in **Campagne** menu in cui veniva visualizzato continuamente un messaggio &quot;operazione in corso&quot;.
-* Con Adobe Analytics abilitato, è stato risolto un problema che rimuoveva BID (Broadlog ID) e CID (Campaign ID) dall’URL quando si inviava un’e-mail con un URL senza salvare la consegna.
-* È stato risolto un problema che si verificava durante il caricamento di un’immagine nella cartella Risorse pubbliche in un’istanza con configurazione specifica del Centro messaggi . Viene visualizzato il seguente messaggio di errore: &quot;Impossibile caricare le immagini sui server di tracciamento&quot;.
+* È stato risolto un problema nel menu di **Campaigns** a causa del quale veniva visualizzato continuamente un messaggio di “operazione in corso”.
+* Con Adobe Analytics abilitato, è stato risolto un problema a causa del quale BID (Broadlog ID) e CID (Campaign ID) venivano rimossi dall’URL se si inviava un’e-mail con un URL senza salvare la consegna.
+* È stato risolto un problema che si verificava durante il caricamento di un’immagine nella cartella delle risorse pubbliche in un’istanza con configurazione specifica del Centro messaggi. Viene visualizzato un messaggio di tipo: “Impossibile caricare le immagini sui server di tracciamento”.
 * È stato risolto un problema che causava l’arresto anomalo del sistema durante la rigenerazione della configurazione in caso di file di configurazione non validi.
 * È stato risolto un problema che poteva causare un aggiornamento errato degli indicatori di consegna. (NEO-44827)
 * È stato risolto un problema che poteva causare un errore post-aggiornamento durante l’utilizzo di query complesse. (NEO-43648)
-* È stato risolto un problema che poteva impedire il funzionamento dell&#39;anteprima webApps. (NEO-43242)
-* È stato risolto un problema che poteva causare un errore nella preparazione della consegna quando si utilizzava un file di mappatura di destinazione esterno in un flusso di lavoro con un’attività di caricamento dati (file). (NEO-43691)
-* È stato risolto un problema che poteva causare arresti anomali e richiedeva un riavvio completo dell’istanza. (NEO-44645)
+* È stato risolto un problema che poteva impedire il funzionamento dell’anteprima di webApps. (NEO-43242)
+* È stato risolto un problema che poteva causare un errore nella preparazione della consegna se si utilizzava un file di mappatura target esterno in un flusso di lavoro con un’attività di caricamento dati (file). (NEO-43691)
+* È stato risolto un problema che poteva causare arresti anomali e richiedeva il riavvio completo dell’istanza. (NEO-44645)
 * È stato risolto un problema che poteva impedire il caricamento di qualsiasi risultato di Workflow Heatmap. (NEO-43360)
-* È stato risolto un problema che poteva causare problemi di connessione quando si utilizzava il connettore esterno FDA. (NEO-42722)
+* È stato risolto un problema che poteva causare problemi di connessione se si utilizzava il connettore esterno FDA. (NEO-42722)
 * È stato risolto un problema relativo alle bozze che si verificava con l’utilizzo della sostituzione degli indirizzi e dell’esclusione dei gruppi di controllo. (NEO-39695)
-* È stato risolto un problema che poteva causare errori del flusso di lavoro a causa di un problema del connettore del Snowflake. (NEO-46299)
+* È stato risolto un problema che poteva provocare errori del flusso di lavoro a causa di un problema del connettore Snowflake. (NEO-46299)
 * È stato risolto un problema che poteva bloccare la console del client a causa di un carattere non valido in un blocco di personalizzazione. (NEO-45761)
 * È stato risolto un problema che poteva causare problemi di connessione durante la creazione di un account esterno per Snowflake come database esterno. (NEO-45744)
-* È stato risolto un problema che poteva causare la visualizzazione di informazioni sulla tabella protette da un attributo visibleIf . (NEO-37865)
-* È stato risolto un problema che poteva visualizzare il messaggio di errore &quot;$ is not defined&quot; durante la fase di analisi della consegna. (NEO-32940)
+* È stato risolto un problema a causa del quale le informazioni delle tabelle potevano risultare protette da un attributo visibleIf. (NEO-37865)
+* È stato risolto un problema a causa del quale poteva comparire il messaggio di errore “$ non è definito” durante la fase di analisi della consegna. (NEO-32940)
 * È stato risolto un problema che causava l’associazione delle consegne a un eventType errato. (NEO-45743)
-* È stato risolto un problema che poteva causare arresti anomali a causa di immagini di base intermittenti (NEO-30549)
+* È stato risolto un problema che poteva provocare arresti anomali a causa di core dump intermittenti. (NEO-30549)
 * È stato risolto un problema che poteva causare arresti anomali durante l’utilizzo di codice HTML errato in una consegna. (NEO-40385)
-* È stato risolto un problema che poteva impedire agli utenti non amministratori di accedere al **Analisi** nelle proprietà di consegna. (NEO-34025)
+* È stato risolto un problema che poteva impedire agli utenti non amministratori di accedere alla scheda **Analysis** (Analisi) nelle proprietà di consegna. (NEO-34025)
 
 ## ![](assets/do-not-localize/green_2.png) Versione 7.2.2 - Build 9349 {#release-7-2-2}
 

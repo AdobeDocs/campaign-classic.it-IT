@@ -9,7 +9,7 @@ exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
 workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -341,7 +341,7 @@ Per utilizzare la [console client di Campaign](../../installation/using/installi
 <tr>
 <td>Microsoft Windows</td>
 <td>
-<p>11 (avvio di Campaign v7.3)</p>
+<p>11 (a partire da Campaign v7.3)</p>
 <p>10 (consigliato per le istanze giapponesi)</p>
 <p>8</p>
 </td>
@@ -390,17 +390,17 @@ Puoi utilizzare Campaign per [inviare notifiche push](../../delivery/using/about
 <table>
 <tbody>
 <tr>
-<td>per Android</td>
+<td>Android</td>
 <td>
 <p>12 (a partire da Campaign v7.3), 9.0, 8.x, 7.x</p>
-<p>con la build 1.1.1 dell’SDK per dispositivi mobili</p>
+<p>con Mobile SDK build 1.1.1</p>
 </td>
 </tr>
 <tr>
 <td>iOS</td>
 <td>
 <p>iOS 9 - 15</p>
-<p>con la build 1.0.26 dell’SDK per dispositivi mobili, compatibile con le versioni a 32 e a 64 bit. iOS 15 è supportato a partire da Campaign v7.3</p>
+<p>con Mobile SDK build 1.0.26, compatibile con le versioni a 32 e 64 bit. iOS 15 è supportato a partire da Campaign v7.3</p>
 </td>
 </tr>
 </tbody>
