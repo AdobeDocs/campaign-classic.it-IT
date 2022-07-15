@@ -4,10 +4,10 @@ title: Configurare e inviare la consegna
 description: Scopri come configurare e inviare la consegna
 feature: Channel Configuration
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: dfee069240c590846f7dda3134c07ad3ec514a26
+source-git-commit: d59e9f55275bac303a5ed1450bb28ef7fa0f84cd
 workflow-type: tm+mt
-source-wordcount: '1556'
-ht-degree: 5%
+source-wordcount: '1502'
+ht-degree: 4%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 5%
 
 ![](../../assets/common.svg)
 
->[!NOTE]
->
->Solo il proprietario della consegna può avviare una consegna. Affinché un altro operatore (o gruppo di operatori) sia in grado di avviare una consegna, devi aggiungerli come revisori nel **[!UICONTROL Delivery start:]** campo . Per ulteriori informazioni, consulta [questa sezione](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
+## Autorizzazioni{#delivery-permissions}
+
+Solo il proprietario della consegna può avviare una consegna. Affinché altri operatori (o gruppi di operatori) possano avviare una consegna, aggiungili come revisori nel **[!UICONTROL Delivery start:]** campo . [Ulteriori informazioni](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
 
 ## Parametri aggiuntivi di consegna {#delivery-additiona-parameters}
 
@@ -25,32 +25,32 @@ Prima di inviare la consegna, puoi definire i parametri di invio nelle propriet�
 
 ![](assets/s_ncs_user_wizard_delivery.png)
 
-* **[!UICONTROL Delivery priority]**: Questa opzione ti consente di influenzare l’ordine di invio delle consegne definendone il livello di priorità (normale, alto o basso). Questo ti consente di assegnare priorità all’ordine per consegne specifiche e più urgenti rispetto ad altre.
+* **[!UICONTROL Delivery priority]**: utilizza questa opzione per modificare l’ordine di invio delle consegne impostandone il livello di priorità: normale, alta o bassa.
 
-* **[!UICONTROL Message batch quantity]**: Questa opzione ti consente di definire il numero di messaggi raggruppati all’interno dello stesso pacchetto di consegna XML. Se il parametro è impostato su 0, i messaggi vengono raggruppati automaticamente. La dimensione del pacchetto è definita dal calcolo `<delivery size>/1024`, con un minimo di 8 messaggi e un massimo di 256 messaggi per pacchetto.
+* **[!UICONTROL Message batch quantity]**: utilizza questa opzione per definire il numero di messaggi raggruppati all’interno dello stesso pacchetto di consegna XML. Se il parametro è impostato su 0, i messaggi vengono raggruppati automaticamente. La dimensione del pacchetto è definita dal calcolo `<delivery size>/1024`, con un minimo di 8 messaggi e un massimo di 256 messaggi per pacchetto.
 
    >[!IMPORTANT]
    >
-   >Quando la consegna viene duplicata, il parametro viene reimpostato.
+   >Quando la consegna viene creata duplicando una consegna esistente, questo parametro viene reimpostato.
 
-* **[!UICONTROL Send using multiple waves]**: Utilizza questa opzione per inviare i messaggi a ondate, anziché a tutto il pubblico. Configura il numero di batch e la relativa proporzione. [Ulteriori informazioni](#sending-using-multiple-waves).
+* **[!UICONTROL Send using multiple waves]**: utilizza questa opzione per inviare i messaggi in batch anziché a tutto il pubblico contemporaneamente. [Ulteriori informazioni](#sending-using-multiple-waves).
 
-* **[!UICONTROL Test SMTP delivery]**: Utilizza questa opzione per testare l’invio tramite SMTP. La consegna viene elaborata fino alla connessione al server SMTP, ma non viene inviata: per ogni destinatario della consegna, Campaign si connette al server del provider SMTP, esegue il comando SMTP RCPT TO e chiude la connessione prima del comando SMTP DATA.
+* **[!UICONTROL Test SMTP delivery]**: utilizza questa opzione per testare l’invio tramite SMTP. La consegna viene elaborata fino alla connessione al server SMTP, ma non viene inviata: per ogni destinatario della consegna, Campaign si connette al server del provider SMTP, esegue il comando SMTP RCPT TO e chiude la connessione prima del comando SMTP DATA.
 
    >[!NOTE]
    >
-   >* Questa opzione non è consigliata in mid-sourcing.
+   >* Questa opzione non deve essere impostata in mid-sourcing.
    >
    >* Ulteriori informazioni sulla configurazione del server SMTP, in [questa sezione](../../installation/using/configure-delivery-settings.md).
 
 
-* **[!UICONTROL Email BCC]**: Questa opzione ti consente di archiviare le e-mail su un sistema esterno tramite CCN semplicemente aggiungendo un indirizzo e-mail CCN al target del messaggio. Per ulteriori informazioni al riguardo, consulta [questa sezione](sending-messages.md#archiving-emails).
+* **[!UICONTROL Email BCC]**: utilizza questa opzione per memorizzare le e-mail su un sistema esterno tramite CCN semplicemente aggiungendo un indirizzo e-mail CCN al target del messaggio. [Ulteriori informazioni](sending-messages.md#archiving-emails).
 
 ## Conferma consegna {#confirming-delivery}
 
-Una volta configurata la consegna e pronta per l’invio, assicurati di aver eseguito l’analisi della consegna.
+Quando la consegna è configurata e pronta per l’invio, esegui l’analisi della consegna.
 
-A questo scopo, fai clic su **[!UICONTROL Send]**, seleziona l’azione desiderata e fai clic su **[!UICONTROL Analyze]**. Per ulteriori informazioni, consulta [Avvia l’analisi](steps-validating-the-delivery.md#analyzing-the-delivery).
+A questo scopo, fai clic su **[!UICONTROL Send]**, seleziona l’azione desiderata e fai clic su **[!UICONTROL Analyze]**. [Ulteriori informazioni](steps-validating-the-delivery.md#analyzing-the-delivery).
 
 ![](assets/s_ncs_user_email_del_send.png)
 
@@ -66,7 +66,7 @@ Dopo aver inviato i messaggi, puoi monitorare e tenere traccia delle consegne. P
 
 ## Pianificare l’invio della consegna {#scheduling-the-delivery-sending}
 
-Puoi posticipare la consegna dei messaggi per pianificare la consegna o per gestire la pressione di vendita ed evitare di sollecitare eccessivamente una popolazione.
+Puoi posticipare l’invio del messaggio pianificando la consegna.
 
 1. Fai clic sul pulsante **[!UICONTROL Send]** e seleziona il pulsante **[!UICONTROL Postpone delivery]** opzione .
 
@@ -78,7 +78,7 @@ Puoi posticipare la consegna dei messaggi per pianificare la consegna o per gest
 
 >[!IMPORTANT]
 >
->Una volta avviata l’analisi, la data di contatto definita viene corretta. Se modifichi questa data, dovrai riavviare l’analisi in modo che le modifiche vengano prese in considerazione.
+>Una volta avviata l’analisi, la data di contatto definita viene corretta. Se modifichi questa data, devi riavviare l’analisi in modo che le modifiche vengano prese in considerazione.
 
 ![](assets/s_ncs_user_email_del_start_delayed.png)
 

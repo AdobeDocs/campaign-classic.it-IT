@@ -6,20 +6,22 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 29e56d6bf2817eeb863cbe33f99233a8241f2bf5
-workflow-type: ht
-source-wordcount: '881'
-ht-degree: 100%
+source-git-commit: d59e9f55275bac303a5ed1450bb28ef7fa0f84cd
+workflow-type: tm+mt
+source-wordcount: '921'
+ht-degree: 90%
 
 ---
 
-# Introduzione agli aggiornamenti{#rn-overview}
+# Aggiornamenti delle versioni{#rn-overview}
 
 ![](../../assets/v7-only.svg)
 
+Adobe Campaign Classic rilascia periodicamente aggiornamenti di prodotto che apportano nuove funzionalità, correzioni di bug e migliorano prestazioni, sicurezza e usabilità. Questi aggiornamenti vengono rilasciati come build del prodotto. Informazioni dettagliate su ogni nuova build sono disponibili nella sezione [Note sulla versione](latest-release.md).
+
 ## Stati di rilascio{#rn-statuses}
 
-Ogni nuova build viene fornita con uno stato che viene materializzato da un colore.
+Ogni nuova build include uno stato identificato da un colore nel [Note sulla versione](latest-release.md).
 
 ![](assets/do-not-localize/green3.png) **Disponibilità generale** (General Availability, GA): la più recente build stabile, convalidata in produzione e raccomandata da Adobe.
 
@@ -43,7 +45,7 @@ In qualità di cliente in hosting, puoi beneficiare automaticamente, senza alcun
 
 Per garantire una configurazione stabile, si consiglia di installare **la stessa build** su tutti i server in esecuzione sulla stessa configurazione client.
 
-Inoltre, salvo diversa indicazione nelle note sulla versione, la console client deve essere attivata sulla **stessa build** come istanza del server.
+Inoltre, salvo diversa indicazione nella [Note sulla versione](latest-release.md), la console del client deve essere attiva **la stessa build** come istanza del server.
 
 Per mantenere aggiornata l’implementazione, per ogni nuova versione leggi le pagine [Funzioni obsolete e rimosse](../../rn/using/deprecated-features.md) e [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
@@ -51,7 +53,9 @@ Per mantenere aggiornata l’implementazione, per ogni nuova versione leggi le p
 
 In qualità di cliente in hosting (Managed Services o ibrido), contatta il team di assistenza clienti per aggiornare l’ambiente.
 
-In qualità di utente on-premise, puoi eseguire l’aggiornamento. A tal fine, è necessario [scaricare la build stabile più recente (GA)](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) e aggiornare tutti gli ambienti. Ulteriori informazioni sul [processo di aggiornamento](../../production/using/build-upgrade.md) e [domande frequenti relative all’aggiornamento della build](../../platform/using/faq-build-upgrade.md).
+In qualità di utente on-premise, puoi eseguire l’aggiornamento. A tal fine, è necessario [scaricare la build stabile più recente (GA)](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) e aggiornare tutti gli ambienti.
+
+Per saperne di più sul [processo di aggiornamento](../../production/using/build-upgrade.md)e nella [domande frequenti sull’aggiornamento della build](../../platform/using/faq-build-upgrade.md).
 
 ## Aggiornamento annuale {#yearly-upgrade}
 
@@ -124,7 +128,7 @@ Abbiamo organizzato un team di responsabili dell’Assistenza cliente, Product M
     </a>
     </div>
     <ul>
-    <li>L’aggiornamento dell’istanza di Campaign Classic risulta più complesso e laborioso se si salta una versione (passando da v5 a v7).</li>
+    <li>L’aggiornamento dell’istanza di Campaign Classic risulta più complesso e laborioso se si salta una versione (passando da v6 a v7).</li>
     <li>Più si rimanda l’aggiornamento, più questo diventa complesso (e più ci si espone a vulnerabilità).</li>
     <li>Con aggiornamenti regolari si riducono sia i tempi di inattività associati alla procedura di aggiornamento, sia il rischio di regressione.</li>
     </ul>
