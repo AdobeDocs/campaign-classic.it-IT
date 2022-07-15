@@ -5,10 +5,10 @@ description: Scopri come implementare il server di recapito messaggi di Campaign
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 5d6ff45605980e5fe21933c5d8fb6c48e02f1628
+source-git-commit: 6f6c329808e78a56a61997aba83c55520030afc7
 workflow-type: tm+mt
-source-wordcount: '1121'
-ht-degree: 3%
+source-wordcount: '1116'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,7 @@ In qualità di cliente Campaign Classic, devi implementare il nuovo server di re
 
 >[!NOTE]
 >
->Per qualsiasi domanda su queste modifiche, consulta la [Domande frequenti](#faq)o contattare [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Per ulteriori domande su queste modifiche, consulta la sezione [Domande frequenti](#faq)o contattare [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}.
 
 ## Cosa è cambiato?{#acc-deliverability-changes}
 
@@ -56,7 +56,7 @@ Prima di avviare l&#39;implementazione, controlla la configurazione dell&#39;ist
 1. Controlla la `DmRendering_cuid` il valore dell&#39;opzione è compilato.
 
    * Se l’opzione è compilata, puoi avviare l’implementazione.
-   * Se non viene compilato alcun valore, contatta [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per ottenere il tuo CUID.
+   * Se non viene compilato alcun valore, contatta [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} per ottenere il tuo CUID.
 
       Questa opzione deve essere compilata su tutte le istanze Campaign (MKT, MID, RT, EXEC) con lo stesso valore. In qualità di cliente ibrido, contatta l’Adobe per avere l’opzione impostata sulle istanze MID, RT ed EXEC.
 
@@ -91,7 +91,7 @@ Prima di avviare l&#39;implementazione, controlla la configurazione dell&#39;ist
    >È necessario salvare il `config.zip` file quando viene visualizzato il prompt di download perché non sarà più possibile scaricarlo.
 
 1. Fai clic su **[!UICONTROL Next]**.
-1. Scegli qualsiasi **[!UICONTROL Product profile]** oppure creane uno nuovo, se necessario. Non è necessaria alcuna autorizzazione **[!UICONTROL Product profile]**. Per ulteriori informazioni su **[!UICONTROL Product Profiles]**, fare riferimento a [questa pagina](https://helpx.adobe.com/enterprise/using/manage-developers.html).
+1. Scegli qualsiasi **[!UICONTROL Product profile]** oppure creane uno nuovo, se necessario. Non è necessaria alcuna autorizzazione **[!UICONTROL Product profile]**. Per ulteriori informazioni su **[!UICONTROL Product Profiles]**, fare riferimento a [questa pagina](https://helpx.adobe.com/enterprise/using/manage-developers.html){_blank}.
    ![](assets/Product-Profile-API.png)
 
    Quindi, fai clic su **[!UICONTROL Save configured API]**.
@@ -152,18 +152,17 @@ Per verificare che l’integrazione abbia esito positivo, effettua le seguenti o
 
 ## Domande frequenti {#faq}
 
+### Qual è la timeline dell’aggiornamento?
+
+La transizione al nuovo server di recapito messaggi, che consente di aggiungere queste funzionalità migliorate e di rafforzare la sicurezza, inizierà il 22 luglio per i clienti in hosting (Campaign Managed Services). Tutti i clienti in hosting verranno aggiornati entro la fine di agosto.
+
+I clienti on-premise e ibridi devono effettuare la transizione durante lo stesso periodo di tempo.
+
 ### Cosa succede se non aggiorno l’ambiente?
 
-Qualsiasi istanza di Campaign non aggiornata entro il 31 agosto non sarà più in grado di connettersi al server di recapito messaggi di Campaign. Di conseguenza, il **Aggiornamento per il recapito messaggi** Il flusso di lavoro (deliverabilityUpdate) avrà esito negativo. Questo flusso di lavoro gestisce l’aggiornamento giornaliero delle regole MX e delle regole di rimbalzo.
+Qualsiasi istanza di Campaign non aggiornata entro il 31 agosto non sarà più in grado di connettersi al server di recapito messaggi di Campaign. Di conseguenza, il **Aggiornamento per il recapito messaggi** Il flusso di lavoro (deliverabilityUpdate) avrà esito negativo e questo influirà sul recapito messaggi.
 
 Se non aggiorni l’ambiente, le impostazioni e-mail cesseranno di essere sincronizzate (regole di gestione MX, regole e-mail in entrata, regole di gestione del dominio e regole di qualificazione non recapitate). Questo potrebbe influenzare nel tempo il recapito messaggi. Se si apporta una modifica significativa a queste regole, queste dovranno essere applicate manualmente da questo momento in poi.
 
 Solo per le istanze MKT [Elenco globale di soppressione](../../campaign-opt/using/filtering-rules.md#default-deliverability-exclusion-rules) è interessato.
 
-### Non posso effettuare l&#39;aggiornamento ora. Qual è la guida?
-
-Se non è possibile aggiornare l’istanza prima del 31 agosto, è necessario disattivare temporaneamente il **Aggiornamento per il recapito messaggi** (deliverabilityUpdate) flusso di lavoro fino al completamento dell’aggiornamento in modo da non tentare la sincronizzazione con il vecchio server di recapito messaggi.
-
-
-
-Per maggiori informazioni, contatta [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
