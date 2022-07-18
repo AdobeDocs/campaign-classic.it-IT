@@ -5,7 +5,7 @@ description: Scopri come implementare il server di recapito messaggi di Campaign
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 6f6c329808e78a56a61997aba83c55520030afc7
+source-git-commit: 64813905b360be1f2df7883f018e42bd154c2f9c
 workflow-type: tm+mt
 source-wordcount: '1116'
 ht-degree: 2%
@@ -58,7 +58,7 @@ Prima di avviare l&#39;implementazione, controlla la configurazione dell&#39;ist
    * Se l’opzione è compilata, puoi avviare l’implementazione.
    * Se non viene compilato alcun valore, contatta [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} per ottenere il tuo CUID.
 
-      Questa opzione deve essere compilata su tutte le istanze Campaign (MKT, MID, RT, EXEC) con lo stesso valore. In qualità di cliente ibrido, contatta l’Adobe per avere l’opzione impostata sulle istanze MID, RT ed EXEC.
+   Questa opzione deve essere compilata su tutte le istanze Campaign (MKT, MID, RT, EXEC) con il valore corretto. In qualità di cliente ibrido, contatta l’Adobe per avere l’opzione impostata sulle istanze MID, RT ed EXEC.
 
 ### Passaggio 1: Crea/aggiorna il progetto Adobe Developer {#adobe-io-project}
 
