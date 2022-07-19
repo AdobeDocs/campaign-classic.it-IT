@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
+source-git-commit: 8d6f5a3596c2c919e597e0b6ce3d711276c8df12
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1965'
 ht-degree: 98%
 
 ---
@@ -61,12 +61,12 @@ Consulta la [Matrice di compatibilità di Campaign](../../rn/using/compatibility
 
 **Patch**
 
-* È stato corretto un errore della build precedente che impediva agli utenti di ridimensionare la pagina di accesso IMS.
-* È stato corretto un errore che si verificava durante l’installazione del pacchetto content manager su un’istanza esistente.
-* È stato risolto un problema nel menu di **Campaigns** a causa del quale veniva visualizzato continuamente un messaggio di “operazione in corso”.
-* Con Adobe Analytics abilitato, è stato risolto un problema a causa del quale BID (Broadlog ID) e CID (Campaign ID) venivano rimossi dall’URL se si inviava un’e-mail con un URL senza salvare la consegna.
-* È stato risolto un problema che si verificava durante il caricamento di un’immagine nella cartella delle risorse pubbliche in un’istanza con configurazione specifica del Centro messaggi. Viene visualizzato un messaggio di tipo: “Impossibile caricare le immagini sui server di tracciamento”.
-* È stato risolto un problema che causava l’arresto anomalo del sistema durante la rigenerazione della configurazione in caso di file di configurazione non validi.
+* È stato corretto un errore della build precedente che impediva agli utenti di ridimensionare la pagina di accesso IMS. (NEO-30085)
+* È stato corretto un errore che si verificava durante l’installazione del pacchetto content manager su un’istanza esistente. (NEO-32349)
+* È stato risolto un problema nel menu di **Campaigns** a causa del quale veniva visualizzato continuamente un messaggio di “operazione in corso”. (NEO-44904)
+* Con Adobe Analytics abilitato, è stato risolto un problema a causa del quale BID (Broadlog ID) e CID (Campaign ID) venivano rimossi dall’URL se si inviava un’e-mail con un URL senza salvare la consegna. (NEO-38678)
+* È stato risolto un problema che si verificava durante il caricamento di un’immagine nella cartella delle risorse pubbliche in un’istanza con configurazione specifica del Centro messaggi. Viene visualizzato un messaggio di tipo: “Impossibile caricare le immagini sui server di tracciamento”. (NEO-38546, NEO-45572)
+* È stato risolto un problema che causava l’arresto anomalo del sistema durante la rigenerazione della configurazione in caso di file di configurazione non validi. (NEO-38752)
 * È stato risolto un problema che poteva causare un aggiornamento errato degli indicatori di consegna. (NEO-44827)
 * È stato risolto un problema che poteva causare un errore post-aggiornamento durante l’utilizzo di query complesse. (NEO-43648)
 * È stato risolto un problema che poteva impedire il funzionamento dell’anteprima di webApps. (NEO-43242)
