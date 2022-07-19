@@ -4,7 +4,7 @@ title: Estrazione dati (file)
 description: Ulteriori informazioni sull’attività del flusso di lavoro Estrazione dati (file)
 feature: Workflows, Data Management Activity
 exl-id: 06eafedd-6386-498f-a80d-7f57ddcccad6
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Estrazione dati (file){#extraction-file}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Puoi estrarre dati da una tabella di un flusso di lavoro in un file esterno utilizzando **[!UICONTROL Data extraction (file)]** attività.
 

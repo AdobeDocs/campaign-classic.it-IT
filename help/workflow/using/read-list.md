@@ -4,7 +4,7 @@ title: Lettura di un elenco
 description: Ulteriori informazioni sull’attività del flusso di lavoro Leggi elenco
 feature: Workflows, Targeting Activity
 exl-id: 99f82e91-45cd-4dff-b8a4-3ad87f2f9639
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Lettura di un elenco{#read-list}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 I dati elaborati in un flusso di lavoro possono provenire da elenchi in cui i dati sono stati preparati o strutturati in anticipo (dopo una precedente segmentazione o caricamento di file).
 

@@ -4,7 +4,7 @@ title: Architettura
 description: I flussi di lavoro sono gestiti da un modulo specifico, che può essere avviato su più server per condividere il carico di elaborazione.
 feature: Workflows
 exl-id: 46801f78-706c-4dfa-bce7-3d15f569f222
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Architettura {#architecture}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 I flussi di lavoro vengono gestiti da un modulo specifico. Questo modulo può essere avviato su più server per condividere il carico di elaborazione.
 

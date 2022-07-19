@@ -4,7 +4,7 @@ title: Consegne cross-channel
 description: Ulteriori informazioni sulle consegne cross-channel
 feature: Workflows, Channels Activity
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
-source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 8%
@@ -13,7 +13,7 @@ ht-degree: 8%
 
 # Consegne cross-channel{#cross-channel-deliveries}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Le consegne cross-channel sono disponibili nel **[!UICONTROL Deliveries]** scheda delle attività del flusso di lavoro della campagna.
 
@@ -24,7 +24,7 @@ I vari canali disponibili sono:
 * [Mobile](../../delivery/using/sms-channel.md)
 * [Twitter](../../social/using/publishing-on-twitter.md) (Solo Campaign Classic v7)
 * [iOS](../../delivery/using/create-notifications-ios.md)
-* [per Android](../../delivery/using/create-notifications-android.md)
+* [Android](../../delivery/using/create-notifications-android.md)
 
 Seleziona il modello su cui desideri basare la consegna e definirne il contenuto.
 

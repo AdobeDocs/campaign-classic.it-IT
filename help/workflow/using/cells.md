@@ -4,7 +4,7 @@ title: Celle
 description: Celle
 feature: Workflows, Targeting Activity
 exl-id: 7b562dba-7e4b-40a7-91db-7b9379de44ca
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 8%
@@ -13,7 +13,7 @@ ht-degree: 8%
 
 # Celle{#cells}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 La **[!UICONTROL Cells]** L’attività fornisce una visualizzazione dei vari sottoinsiemi sotto forma di colonne di dati. Semplifica la manipolazione dei sottoinsiemi ed è anche progettato per incoraggiare le possibilità di personalizzazione.
 

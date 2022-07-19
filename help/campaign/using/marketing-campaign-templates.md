@@ -4,7 +4,7 @@ title: Modelli di campagna di marketing
 description: Modelli di campagna di marketing
 feature: Campaigns, Templates
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
-source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Creare e configurare modelli di campagna {#campaign-templates}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Tutte le campagne di marketing si basano su un modello, che memorizza le caratteristiche e le funzionalità principali. I modelli di campagna sono centralizzati nella **[!UICONTROL Resources > Templates > Campaign templates]** nodo. Un modello predefinito viene fornito come standard. Ti consente di creare una nuova campagna utilizzando tutti i moduli disponibili (Documenti, Attività, Indirizzi di seed, ecc.), ma i moduli offerti dipendono dai tuoi diritti e dalla configurazione della piattaforma Adobe Campaign.
 

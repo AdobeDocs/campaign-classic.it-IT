@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 1dc6d03b-698c-4750-9563-0676fcd185df
-source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Tracciamento delle ipotesi{#hypothesis-tracking}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Il risultato dei calcoli di ipotesi è disponibile a vari livelli della piattaforma Adobe Campaign: gli indicatori calcolati in base alle ipotesi e alle reazioni della popolazione destinataria sono visibili attraverso l&#39;ipotesi effettiva, nonché nei rapporti di ipotesi disponibili tramite campagne e consegne.
 

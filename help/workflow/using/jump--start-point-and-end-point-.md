@@ -4,7 +4,7 @@ title: Oggetti Jump (punto iniziale e punto finale)
 description: Oggetti Jump (punto iniziale e punto finale)
 feature: Workflows
 exl-id: 0d2d04e7-cb86-4456-b7cf-513c71210355
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 15%
@@ -13,7 +13,7 @@ ht-degree: 15%
 
 # Oggetti Jump (punto iniziale e punto finale){#jump-start-point-and-end-point}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 **[!UICONTROL Jump]** Gli oggetti grafici di tipo -type sono utilizzati per migliorare la leggibilità di un diagramma complesso, in particolare di quello con transizioni di attraversamento.
 

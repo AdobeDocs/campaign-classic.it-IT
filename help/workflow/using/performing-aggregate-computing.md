@@ -4,7 +4,7 @@ title: Esecuzione del calcolo aggregato
 description: Scopri come eseguire il calcolo aggregato nelle query
 feature: Workflows
 exl-id: 5b05788f-498b-4a84-bdde-2852900f0129
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Esecuzione del calcolo aggregato {#performing-aggregate-computing}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 In questo esempio, vogliamo contare il numero di destinatari che vivono a Londra, in base al sesso.
 

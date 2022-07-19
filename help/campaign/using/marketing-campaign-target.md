@@ -4,7 +4,7 @@ title: Pubblico di destinazione della campagna di marketing
 description: Scopri come definire il pubblico delle campagne di marketing
 feature: Campaigns, Audiences
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
-source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Selezionare il pubblico delle campagne {#marketing-campaign-deliveries}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 In una campagna di marketing, per ogni consegna, puoi definire:
 
@@ -27,7 +27,7 @@ Per generare la destinazione di consegna, puoi definire i criteri di filtro per 
 
 ## Invia a un gruppo
 
-È possibile importare una popolazione in un elenco, quindi eseguire il targeting di tale elenco nelle consegne. Per farlo, segui la procedura indicata di seguito:
+È possibile importare una popolazione in un elenco, quindi eseguire il targeting di tale elenco nelle consegne. A tale scopo, segui la procedura indicata di seguito:
 
 1. Modifica la consegna interessata e fai clic sul pulsante **[!UICONTROL To]** collegamento per modificare la popolazione target.
 

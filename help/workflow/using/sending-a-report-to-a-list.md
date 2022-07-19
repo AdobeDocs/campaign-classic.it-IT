@@ -4,7 +4,7 @@ title: Inviare un rapporto a un elenco
 description: Scopri come inviare un rapporto a un elenco con un flusso di lavoro
 feature: Workflows
 exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Inviare un rapporto a un elenco{#sending-a-report-to-a-list}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Questo caso d’uso descrive come generare un **[!UICONTROL Tracking indicators]** rapporti in formato PDF e modalità di invio a un elenco di destinatari.
 

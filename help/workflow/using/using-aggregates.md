@@ -4,7 +4,7 @@ title: Utilizzare gli aggregati
 description: Scopri come utilizzare gli aggregati
 feature: Workflows
 exl-id: 12b173e9-5068-4d45-9e1e-2aecc9866e9c
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Utilizzare gli aggregati{#using-aggregates}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Questo caso d’uso descrive come identificare automaticamente gli ultimi destinatari aggiunti al database.
 

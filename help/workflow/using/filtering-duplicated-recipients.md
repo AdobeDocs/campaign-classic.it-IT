@@ -4,7 +4,7 @@ title: Filtrare i destinatari duplicati
 description: Scopri come filtrare i destinatari duplicati
 feature: Workflows
 exl-id: 7cbabbae-375f-4336-9afa-6356f37a79d0
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # Filtrare i destinatari duplicati {#filtering-duplicated-recipients}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 In questo esempio, vogliamo filtrare i destinatari che vengono visualizzati due o più volte in una consegna per recuperare i profili duplicati.
 

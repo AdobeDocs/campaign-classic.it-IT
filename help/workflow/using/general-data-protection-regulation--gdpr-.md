@@ -3,7 +3,7 @@ product: campaign
 title: Flussi di lavoro del Regolamento sulla protezione dei dati sulla privacy
 description: Ulteriori informazioni sui flussi di lavoro del Regolamento sulla protezione dei dati sulla privacy
 feature: Workflows, Privacy
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 10%
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # Regolamento sulla protezione dei dati sulla privacy{#general-data-protection-regulation-gdpr}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 I flussi di lavoro descritti di seguito sono installati con **Regolamento sulla protezione dei dati sulla privacy** modulo per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questo [articolo](https://helpx.adobe.com/it/campaign/kb/acc-privacy.html).
 

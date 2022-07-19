@@ -4,7 +4,7 @@ title: Attività Start e End
 description: Ulteriori informazioni sulle attività del flusso di lavoro Start ed End
 feature: Workflows
 exl-id: 56dfbaf3-93de-4ade-b4ad-9b54d239c7a5
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # Attività Start e End{#start-and-end}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 La **[!UICONTROL Start]** e **[!UICONTROL End]** Le attività ti consentono di contrassegnare graficamente l’inizio e la fine di un flusso di lavoro. Queste attività non hanno alcun impatto funzionale e sono pertanto facoltative.
 

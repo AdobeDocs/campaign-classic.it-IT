@@ -4,7 +4,7 @@ title: Avviare un flusso di lavoro
 description: Scopri come avviare un flusso di lavoro e scoprire la barra delle azioni dei flussi di lavoro e fai clic con il pulsante destro del mouse sul menu
 feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: 9126e2cc088ef0e5761cc20bd19980d323f3a3ea
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Avviare un flusso di lavoro {#starting-a-workflow}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Un flusso di lavoro viene sempre avviato manualmente. Quando viene avviato, può tuttavia rimanere inattivo a seconda delle informazioni specificate tramite una pianificazione (vedi [Scheduler](scheduler.md)) o la pianificazione delle attività.
 

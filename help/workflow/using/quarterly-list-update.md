@@ -4,7 +4,7 @@ title: Aggiornamento dell’elenco trimestrale tramite una query incrementale
 description: In questo caso d’uso, viene utilizzata una query incrementale per aggiornare automaticamente un elenco di destinatari.
 feature: Workflows
 exl-id: 0d3e7046-313a-42a6-9155-3365e8d60bac
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 5%
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # Aggiornamento dell’elenco trimestrale tramite una query incrementale {#quarterly-list-update}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Nell&#39;esempio seguente, un [query incrementale](incremental-query.md) viene utilizzato per aggiornare automaticamente un elenco di destinatari. Questi destinatari vengono targetizzati come parte di campagne di marketing stagionali.
 

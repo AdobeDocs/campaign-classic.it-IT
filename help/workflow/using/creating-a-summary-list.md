@@ -4,7 +4,7 @@ title: Creare un elenco di riepilogo
 description: Creare un elenco di riepilogo
 feature: Workflows, Data Management
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Creare un elenco di riepilogo{#creating-a-summary-list}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Questo caso d’uso descrive la creazione di un flusso di lavoro che, dopo la raccolta dei file e dopo diversi arricchimenti, consente di creare un elenco di riepilogo. L&#39;esempio si basa su un elenco di contatti che hanno effettuato acquisti in un negozio.
 
@@ -61,7 +61,7 @@ Questi dati sono contenuti in un file di testo &quot;Purchases.txt&quot;.
 
    Per ulteriori informazioni su questa attività, consulta [Caricare dati da un file](../../platform/using/import-export-workflows.md#loading-data-from-a-file).
 
-1. Configura le **Raccoglitore file** attività per raccogliere file di testo (*.txt) dalla directory selezionata.
+1. Configura le **Raccoglitore file** attività per la raccolta del testo (&#42;.txt) digitare i file dalla directory selezionata.
 
    ![](assets/uc2_enrich_collecteur.png)
 

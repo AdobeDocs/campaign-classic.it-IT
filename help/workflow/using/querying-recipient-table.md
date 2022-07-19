@@ -4,7 +4,7 @@ title: Eseguire una query sulla tabella dei destinatari
 description: Scopri come eseguire una query sulla tabella dei destinatari
 feature: Query Editor
 exl-id: 5b037798-b092-4c98-9f6a-4af7fc7941c6
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Eseguire una query sulla tabella dei destinatari {#querying-recipient-table}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 In questo esempio, vogliamo recuperare i nomi e le e-mail dei destinatari il cui dominio e-mail è &quot;orange.co.uk&quot; e che non vivono a Londra.
 

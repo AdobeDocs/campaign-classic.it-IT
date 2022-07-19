@@ -4,7 +4,7 @@ title: Coordinare gli aggiornamenti dei dati
 description: Coordinare gli aggiornamenti dei dati
 feature: Workflows, Data Management
 exl-id: 9959e22e-9aa0-410f-b22c-9ca1cac46b97
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Coordinare gli aggiornamenti dei dati{#coordinating-data-updates}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Questo caso d’uso descrive la creazione di un flusso di lavoro che consente di gestire gli aggiornamenti simultanei quando si utilizzano diverse esecuzioni di un flusso di lavoro.
 

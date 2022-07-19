@@ -3,7 +3,7 @@ product: campaign
 title: Casella in entrata - Flusso di lavoro tecnico di rendering
 description: Questa sezione descrive il flusso di lavoro tecnico installato con il pacchetto di rendering della casella in entrata
 feature: Workflows, Inbox Rendering
-source-git-commit: 378788764e244dcad12018d6d703048707d4c3e6
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Rendering della casella in entrata (IR){#inbox-rendering}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Il flusso di lavoro descritto di seguito è installato con **Rendering della casella in entrata (IR)** modulo per impostazione predefinita. Per ulteriori informazioni sul rendering della casella in entrata, consulta questo [sezione](../../delivery/using/inbox-rendering.md).
 

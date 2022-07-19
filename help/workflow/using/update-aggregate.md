@@ -4,7 +4,7 @@ title: Aggregato di aggiornamento
 description: Ulteriori informazioni sull’attività del flusso di lavoro aggregato Aggiorna
 feature: Workflows
 exl-id: d2b26af0-30a1-4852-acd5-996795f198a1
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # Aggregato di aggiornamento{#update-aggregate}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Gli aggregati sono definiti a livello di cubo a scopo di reporting. A **[!UICONTROL Workflow]** è disponibile durante la configurazione di un aggregato.
 

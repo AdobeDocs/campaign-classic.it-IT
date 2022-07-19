@@ -3,7 +3,7 @@ product: campaign
 title: Trasferisci a mid-sourcing
 description: Ulteriori informazioni sul trasferimento ai flussi di lavoro di mid-sourcing
 feature: Workflows
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 7%
@@ -13,7 +13,7 @@ ht-degree: 7%
 
 # Trasferisci a mid-sourcing{#transfer-to-mid-sourcing}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 I flussi di lavoro descritti di seguito sono installati con **Trasferisci a mid-Sourcing** modulo per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta [Guida all’installazione di Campaign Classic v7](../../installation/using/mid-sourcing-deployment.md).
 

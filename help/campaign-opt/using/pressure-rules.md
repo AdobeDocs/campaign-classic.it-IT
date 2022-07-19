@@ -4,7 +4,7 @@ title: Regole di pressione
 description: Regole di pressione
 feature: Fatigue Management, Typology Rules
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '3285'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # Regole di pressione{#pressure-rules}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## Informazioni sull’affaticamento del marketing {#about-marketing-fatigue}
 
@@ -387,18 +387,18 @@ Dato che un’e-mail è già stata inviata ai destinatari interessati all’iniz
  <tbody> 
   <tr> 
    <td> Consegna 1<br /> </td> 
-   <td> Disabilitato<br /> </td> 
+   <td> Disattivato<br /> </td> 
    <td> 5<br /> </td> 
    <td> 3 del pomeriggio<br /> </td> 
    <td> 8 (giorno successivo)<br /> </td> 
    <td> 2 del pomeriggio<br /> </td> 
    <td> Notturno<br /> </td> 
-   <td> Escluso<br /> </td> 
-   <td> Escluso<br /> </td> 
+   <td> Esclusi<br /> </td> 
+   <td> Esclusi<br /> </td> 
   </tr> 
   <tr> 
    <td> Consegna 2<br /> </td> 
-   <td> Disabilitato<br /> </td> 
+   <td> Disattivato<br /> </td> 
    <td> 10<br /> </td> 
    <td> 4 del pomeriggio<br /> </td> 
    <td> 9 (giorno successivo)<br /> </td> 

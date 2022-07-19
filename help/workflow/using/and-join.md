@@ -4,7 +4,7 @@ title: Attività AND-join
 description: Attività AND-join
 feature: Workflows
 exl-id: 8b6d5c03-e104-4cf0-82ab-a08467e3e478
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 5%
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # Attività AND-join{#and-join}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Un join attiva la relativa transizione in uscita solo quando vengono attivate tutte le transizioni in entrata, ad esempio al termine di tutte le attività precedenti. Questo ti consente di verificare che alcune attività siano state completate prima di continuare a eseguire il flusso di lavoro.
 

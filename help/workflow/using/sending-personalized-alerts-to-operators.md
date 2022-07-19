@@ -4,7 +4,7 @@ title: Inviare avvisi personalizzati agli operatori
 description: Scopri come inviare avvisi personalizzati agli operatori
 feature: Workflows
 exl-id: 21c97eb3-60cd-4d19-bc0f-5ba9ec17e70a
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Inviare avvisi personalizzati agli operatori{#sending-personalized-alerts-to-operators}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 In questo esempio, desideri inviare un avviso a un operatore che conterrà il nome dei profili che hanno aperto una newsletter ma non ha fatto clic sul collegamento in essa contenuto.
 

@@ -4,7 +4,7 @@ title: Divisione
 description: Ulteriori informazioni sull’attività del flusso di lavoro Split
 feature: Workflows, Targeting Activity
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1935'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Divisione{#split}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 A **Divisione** L’attività -type ti consente di dividere un target in diversi sottoinsiemi. Il target viene costruito con tutti i risultati ricevuti: tutte le attività precedenti devono pertanto essere state completate per poter eseguire questa attività.
 

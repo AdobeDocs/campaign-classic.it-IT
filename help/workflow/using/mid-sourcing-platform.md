@@ -3,7 +3,7 @@ product: campaign
 title: Piattaforma di mid-sourcing
 description: Piattaforma di mid-sourcing
 feature: Workflows
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 15%
@@ -13,7 +13,7 @@ ht-degree: 15%
 
 # Piattaforma di mid-sourcing{#mid-sourcing-platform}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Il flusso di lavoro descritto di seguito è installato con **Piattaforma di mid-sourcing** modulo per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questo [sezione](../../installation/using/mid-sourcing-deployment.md).
 

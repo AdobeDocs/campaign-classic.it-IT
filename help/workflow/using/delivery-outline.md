@@ -4,7 +4,7 @@ title: Profilo di consegna
 description: Ulteriori informazioni sull’attività del flusso di lavoro del profilo di consegna
 feature: Workflows, Targeting Activity
 exl-id: b4dee085-ccc4-43fd-850d-1501a99272aa
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Profilo di consegna{#delivery-outline}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 La **profilo di consegna** consente di utilizzare una struttura in un flusso di lavoro della campagna. La struttura deve essere stata creata in precedenza nella campagna.
 

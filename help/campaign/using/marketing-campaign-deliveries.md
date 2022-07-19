@@ -4,7 +4,7 @@ title: Consegne di campagne di marketing
 description: Ulteriori informazioni sulle consegne delle campagne di marketing
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Consegne di campagne di marketing {#marketing-campaign-deliveries}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Le consegne possono essere create tramite il dashboard della campagna, un flusso di lavoro della campagna o direttamente tramite la panoramica delle consegne.
 

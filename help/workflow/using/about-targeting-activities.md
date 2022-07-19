@@ -4,7 +4,7 @@ title: Informazioni sulle attività di targeting
 description: Informazioni sulle attività di targeting
 feature: Workflows, Audiences, Targeting Activity
 exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Attività di targeting nei flussi di lavoro{#about-targeting-activities}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Queste attività ti consentono di creare uno o più target definendo i set e suddividendo o combinando questi set utilizzando le operazioni di intersezione, unione o esclusione.
 

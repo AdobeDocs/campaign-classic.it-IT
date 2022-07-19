@@ -4,7 +4,7 @@ title: Informazioni sui flussi di lavoro
 description: Automatizza i processi con i flussi di lavoro, gestisci dati e tipi di pubblico, invia messaggi e altro ancora.
 feature: Workflows, Data Management
 exl-id: 51be6b90-2a7a-4757-9754-d16c540a87ff
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 26%
@@ -13,7 +13,7 @@ ht-degree: 26%
 
 # Introduzione ai flussi di lavoro{#gs-workflows}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## Informazioni sui flussi di lavoro{#about-workflows}
 

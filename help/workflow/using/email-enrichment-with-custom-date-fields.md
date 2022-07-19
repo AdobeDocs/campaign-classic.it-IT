@@ -4,7 +4,7 @@ title: Arricchimento delle e-mail con campi data personalizzati
 description: Scopri come arricchire le e-mail con campi data personalizzati
 feature: Workflows
 exl-id: 85e0ec2a-b7cb-4d0b-a281-9ad72594403a
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Arricchimento delle e-mail con campi data personalizzati{#email-enrichment-with-custom-date-fields}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 In questo esempio, vogliamo inviare un’e-mail con campi di dati personalizzati ai destinatari che questo mese festeggiano i loro compleanni. L&#39;e-mail includerà un coupon valido una settimana prima e dopo i loro compleanni.
 

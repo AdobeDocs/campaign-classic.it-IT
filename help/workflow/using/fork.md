@@ -4,7 +4,7 @@ title: Attività Fork
 description: Ulteriori informazioni sull’attività del flusso di lavoro Fork
 feature: Workflows
 exl-id: 7a38653b-c15d-4ed8-85dc-f7214409f42b
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Attività Fork{#fork}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 È possibile utilizzare **[!UICONTROL Fork]** per creare più transizioni in uscita ed eseguire diverse attività in modo indipendente all’interno dello stesso flusso di lavoro.
 

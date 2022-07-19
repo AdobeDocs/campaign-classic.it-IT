@@ -4,7 +4,7 @@ title: Arricchimento
 description: Ulteriori informazioni sull’attività del flusso di lavoro Arricchimento
 feature: Workflows, Enrichment Activity, Targeting Activity
 exl-id: 4c7bc0f3-5877-47dc-bd72-dc94fb7bd479
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Arricchimento{#enrichment}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 La **[!UICONTROL Enrichment]** consente di aggiungere informazioni a un elenco di profili e di collegarsi a una tabella esistente (crea un nuovo join). È inoltre possibile definire criteri di riconciliazione con profili nel database.
 

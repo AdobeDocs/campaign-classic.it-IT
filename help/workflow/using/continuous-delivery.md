@@ -4,7 +4,7 @@ title: Consegna continua
 description: Consegna continua
 feature: Workflows, Channels Activity
 exl-id: 9c228cdb-331e-476e-a24c-3c7e23add3bf
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 10%
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # Consegna continua{#continuous-delivery}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 A **Consegna continua** l’azione digita ti consente di aggiungere nuovi destinatari a una consegna esistente. Questo tipo di consegna evita di dover creare una nuova consegna ogni volta: Questa modalità è spesso più efficiente, in particolare per gli avvisi o le notifiche a basso volume inviati come e quando necessario.
 

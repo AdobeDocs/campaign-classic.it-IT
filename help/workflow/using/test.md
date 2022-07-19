@@ -4,7 +4,7 @@ title: Attività Test
 description: Ulteriori informazioni sull’attività del flusso di lavoro Test
 feature: Workflows
 exl-id: 6f246d56-01c8-43f5-b12b-c40d258b93c8
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # Attività Test{#test}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 A **Test** l’attività type attiva la prima transizione che soddisfa la condizione associata. Se non è soddisfatta alcuna condizione e se la **[!UICONTROL Use the default fork]** se attivata, verrà attivata la transizione predefinita.
 

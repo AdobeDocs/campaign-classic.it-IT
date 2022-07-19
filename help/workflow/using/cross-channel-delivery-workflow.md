@@ -4,7 +4,7 @@ title: Flusso di lavoro di consegna cross-channel
 description: Ulteriori informazioni sui flussi di lavoro di consegna cross-channel
 feature: Workflows, Channels Activity
 exl-id: dfd36d2c-44ff-49a9-80b4-09eaf3377072
-source-git-commit: e454cc29038b4eab9fad1dcb46813fc8e1a83db1
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Flusso di lavoro di consegna cross-channel{#cross-channel-delivery-workflow}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Questo caso d’uso presenta un esempio che coinvolge un flusso di lavoro di consegna cross-channel. Il concetto generale di consegne cross-channel è presentato in [questa sezione](cross-channel-deliveries.md).
 

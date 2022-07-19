@@ -4,7 +4,7 @@ title: Creare campagne di marketing
 description: Scopri come creare ed eseguire campagne di marketing
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
-source-git-commit: f95b75adf8f46d8301d800451ea0e62629690a8f
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 6%
@@ -13,7 +13,7 @@ ht-degree: 6%
 
 # Introduzione alle campagne di marketing{#setting-up-marketing-campaigns}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Le campagne includono azioni (consegne), processi (importazione o estrazione file) e risorse (documenti di marketing, descrizioni della consegna). Vengono utilizzati nelle campagne di marketing. Le campagne fanno parte di un programma e i programmi sono inclusi in un piano di campagna.
 
@@ -41,7 +41,7 @@ Per configurare la gerarchia cartelle per piani e programmi di marketing:
 
 1. Fai clic sul pulsante **Esplora risorse** nella home page.
 1. Fare clic con il pulsante destro del mouse sulla cartella in cui si desidera creare il piano.
-1. Seleziona **Aggiungi nuova cartella > Gestione campagna > Pianifica**.
+1. Seleziona **Aggiungi nuova cartella > Campaign Management > Pianifica**.
 
    ![](assets/create_plan_1.png)
 

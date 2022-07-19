@@ -3,7 +3,7 @@ title: Connettore per sistema CRM
 description: Ulteriori informazioni sul connettore di gestione delle relazioni con i clienti e configurazione della sincronizzazione dei dati
 feature: Workflows, Data Management
 exl-id: 41966f31-9f37-4ab7-919a-d4624f9d1178
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 3%
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # Connettore per sistema CRM{#crm-connector}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 La **Connettore CRM** activity ti consente di configurare la sincronizzazione dati tra Adobe Campaign e un sistema CRM.
 
