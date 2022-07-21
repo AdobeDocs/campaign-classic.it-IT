@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 8d6f5a3596c2c919e597e0b6ce3d711276c8df12
+source-git-commit: 0d0c97213cf8b95bbadd06f4c5666213b6c6c8f1
 workflow-type: tm+mt
-source-wordcount: '1965'
-ht-degree: 98%
+source-wordcount: '1987'
+ht-degree: 97%
 
 ---
 
@@ -84,6 +84,7 @@ Consulta la [Matrice di compatibilità di Campaign](../../rn/using/compatibility
 * È stato risolto un problema che poteva provocare arresti anomali a causa di core dump intermittenti. (NEO-30549)
 * È stato risolto un problema che poteva causare arresti anomali durante l’utilizzo di codice HTML errato in una consegna. (NEO-40385)
 * È stato risolto un problema che poteva impedire agli utenti non amministratori di accedere alla scheda **Analysis** (Analisi) nelle proprietà di consegna. (NEO-34025)
+* È stato risolto un problema che poteva impedire il caricamento di un’immagine in modalità blocco da un server esterno durante la preparazione dei messaggi. (NEO-40307)
 
 ## ![](assets/do-not-localize/green_2.png) Versione 7.2.2 - Build 9349 {#release-7-2-2}
 
