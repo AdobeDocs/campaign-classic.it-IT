@@ -232,7 +232,7 @@ L’elenco dei flussi di lavoro tecnici con i pacchetti a essi associati è stat
 
 La sezione relativa alla risoluzione dei problemi nella guida **Monitoraggio** è stata riorganizzata e migliorata con una pagina di destinazione. [Leggi tutto](../../production/using/troubleshooting.md).
 
-È disponibile una nuova sezione **Importazione ed esportazione di dati** con nuove pagine su flussi di lavoro, compressione dei dati, cifratura e best practice per l’importazione. [Leggi tutto](../../platform/using/get-started-data-import-export.md)
+È disponibile una nuova sezione **Importazione ed esportazione di dati** con nuove pagine su flussi di lavoro, compressione dei dati, crittografia e best practice per l’importazione. [Leggi tutto](../../platform/using/get-started-data-import-export.md)
 
 
 
@@ -292,7 +292,7 @@ La pagina Funzioni obsolete e rimosse è stata aggiornata. [Leggi tutto](../../r
 Le note sulla versione e la matrice di compatibilità per la versione [!DNL Gold Standard] sono ora disponibili in una pagina dedicata.
 [Leggi tutto](../../rn/using/gold-standard.md).
 
-L’integrazione dei trigger, originariamente basata sull’autenticazione OAuth per accedere alla pipeline ora è stata modificata e spostata in Adobe I/O. [Ulteriori informazioni](../../integrations/using/configuring-adobe-io.md)
+L’integrazione Triggers, originariamente basata sull’autenticazione OAuth per accedere alla pipeline ora è stata modificata e spostata in Adobe I/O. [Ulteriori informazioni](../../integrations/using/configuring-adobe-io.md)
 
 **Altri aggiornamenti**
 
@@ -322,7 +322,7 @@ La pagina delle proprietà del report è stata riorganizzata e arricchita per fa
 
 ### Agosto 2020 {#aug-2020}
 
-Un’intera sezione è dedicata alla scoperta delle best practice relative alla progettazione e all’invio di contenuti con Campaign. [Leggi tutto](../../delivery/using/delivery-best-practices.md)
+Un’intera sezione è dedicata alla scoperta delle best practice relative alla progettazione della consegna e all’invio di contenuti con Campaign. [Leggi tutto](../../delivery/using/delivery-best-practices.md)
 
 La pagina di destinazione Best practice per il recapito di messaggi è stata migliorata per facilitare l’accesso alle sottosezioni. [Leggi tutto](../../delivery/using/about-deliverability.md)
 
@@ -381,9 +381,9 @@ Sono state aggiunte le best practice nella sezione dell’attività **[!UICONTRO
 
 La sezione Rimozione di un indirizzo in quarantena è stata aggiornata. Ciò include un chiarimento dei casi in cui gli indirizzi vengono automaticamente rimossi dall’elenco di quarantena. [Leggi tutto](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
-Sono stati aggiunti casi di utilizzo su come [cifrare](../../platform/using/zip-encrypt.md) e [decrittare](../../platform/using/unzip-decrypt.md) dati tramite il Pannello di controllo Campaign e i flussi di lavoro di Campaign.
+Sono stati aggiunti casi di utilizzo su come [crittografare](../../platform/using/zip-encrypt.md) e [decrittografare](../../platform/using/unzip-decrypt.md) dati tramite il Pannello di controllo Campaign e i flussi di lavoro di Campaign.
 
-La pagina di integrazione dei trigger di Experience Cloud e Adobe Campaign Classic è stata spostata [qui](../../integrations/using/about-triggers.md).
+La pagina di integrazione di Experience Cloud Triggers e Adobe Campaign Classic è stata spostata [qui](../../integrations/using/about-triggers.md).
 
 ### Luglio 2020 {#release-20-2}
 
@@ -639,7 +639,7 @@ Le guide introduttive su [protezione](https://helpx.adobe.com/it/campaign/kb/acc
 
 La descrizione dell’opzione del flusso di lavoro di pre-elaborazione è stata aggiornata per riflettere le modifiche apportate al prodotto. [Leggi tutto](../../workflow/using/data-loading--file-.md)
 
-La nota tecnica Trigger di Experience Cloud è stata aggiornata. [Leggi tutto](../../integrations/using/about-triggers.md)
+La nota tecnica su Experience Cloud Triggers è stata aggiornata. [Leggi tutto](../../integrations/using/about-triggers.md)
 
 L’elenco dei messaggi di errore è stato aggiornato. [Leggi tutto](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
 
@@ -677,7 +677,7 @@ La sezione Analytics Connector è stata aggiornata per riflettere le modifiche d
 Sono state aggiunte informazioni sul report Fatturazione.
 [Leggi tutto](../../production/using/monitoring-processes.md)
 
-La documentazione sull’integrazione Pubblici condivisi è stata aggiornata.
+La documentazione sull’integrazione Tipi di pubblico condivisi è stata aggiornata.
 [Leggi tutto](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
 È stata aggiornata la seguente nota tecnica: [Protocollo e impostazioni del connettore SMS](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html).
@@ -692,7 +692,7 @@ Sono state aggiunte informazioni sul Query Banding per l’account esterno Terad
 
 ### Gennaio 2019{#release-doc-16-01-2019}
 
-La nota tecnica Trigger di Experience Cloud è stata aggiornata. [Leggi tutto](../../integrations/using/about-triggers.md)
+La nota tecnica su Experience Cloud Triggers è stata aggiornata. [Leggi tutto](../../integrations/using/about-triggers.md)
 
 È stata aggiunta una nota nella sezione di approvazione dell’offerta per specificare che la menzione “Contenuto approvato” indica che il processo di approvazione del contenuto è stato completato, indipendentemente dal fatto che tutte le offerte siano state abilitate/approvate o meno. [Leggi tutto](../../interaction/using/offer-catalog-overview.md)
 
