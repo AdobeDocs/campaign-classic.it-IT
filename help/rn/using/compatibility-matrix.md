@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '768'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -248,9 +248,9 @@ Negli ambienti **ibridi** e **on-premise** è possibile collegare Campaign ai se
 <tr>
 <td> Oracle</td>
 <td>
-<p>19 quater</p>
-<p>18 quater</p>
-<p>12 quater</p>
+<p>19c</p>
+<p>18c</p>
+<p>12c</p>
 <p>11g</p>
 </td>
 <td>Minimo v7.0</td>
@@ -364,20 +364,20 @@ Per utilizzare la [console client di Campaign](../../installation/using/installi
 </tbody>
 </table>
 
-### runtime Microsoft WebView2
+### Microsoft WebView2 Runtime
 
 <table>
 <tbody>
 <tr>
 <td>
-<p>Runtime Microsoft Edge WebView2
+<p>Microsoft Edge WebView2 Runtime
 </p>
 </td>
 <td>
 <p>Versione più recente</p>
 </td>
 <td>
-<p><a href="http://www.adobe.com/go/acc-ms-webview2-runtime-download">Download dal sito web Microsoft Developer</a></p>
+<p><a href="http://www.adobe.com/go/acc-ms-webview2-runtime-download_it">Scarica dal sito web Microsoft Developer</a></p>
 </td>
 </tr>
 </tbody>
