@@ -3,10 +3,10 @@ product: campaign
 title: Aggiornamento al nuovo server di recapito messaggi
 description: Scopri come aggiornare al nuovo server di recapito messaggi di Campaign
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: a45e18e460c11f474dc1b5663b9f4a3277fac12c
+source-git-commit: 8b8935b181b615c0a243799b14d01f778b84b715
 workflow-type: tm+mt
-source-wordcount: '1122'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -58,13 +58,13 @@ Prima di avviare l&#39;implementazione, controlla la configurazione dell&#39;ist
 
    Questa opzione deve essere compilata su tutte le istanze Campaign (MKT, MID, RT, EXEC) con il valore corretto. In qualità di cliente ibrido, contatta l’Adobe per avere l’opzione impostata sulle istanze MID, RT ed EXEC.
 
+>[!CAUTION]
+>
+>In qualità di cliente on-premise, se sul tuo lato è implementato un firewall, devi aggiungere questo url `https://deliverability-service.adobe.io` al tuo inserire nell&#39;elenco Consentiti. [Ulteriori informazioni](../../installation/using/url-permissions.md).
+
 ### Passaggio 1: Crea/aggiorna il progetto Adobe Developer {#adobe-io-project}
 
-1. Accesso [Console Adobe Developer](https://developer.adobe.com/console/home) e accedi con l&#39;accesso Developer della tua organizzazione.
-
-   >[!NOTE]
-   >
-   > Assicurati di aver effettuato l&#39;accesso al portale organizzazione corretto.
+1. Accesso [Console Adobe Developer](https://developer.adobe.com/console/home) e accedi con l&#39;accesso Developer della tua organizzazione. Assicurati di aver effettuato l&#39;accesso al portale organizzazione corretto.
 
 1. Seleziona **[!UICONTROL Create new project]**.
    ![](assets/New-Project.png)
