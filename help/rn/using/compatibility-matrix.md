@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
-workflow-type: ht
-source-wordcount: '768'
+source-git-commit: fad7770e26bf06d13f7e2bcf136cc5386a394f50
+workflow-type: tm+mt
+source-wordcount: '763'
 ht-degree: 100%
 
 ---
@@ -248,9 +248,9 @@ Negli ambienti **ibridi** e **on-premise** è possibile collegare Campaign ai se
 <tr>
 <td> Oracle</td>
 <td>
-<p>19c</p>
-<p>18c</p>
-<p>12c</p>
+<p>19 quater</p>
+<p>18 quater</p>
+<p>12 quater</p>
 <p>11g</p>
 </td>
 <td>Minimo v7.0</td>
@@ -344,21 +344,6 @@ Per utilizzare la [console client di Campaign](../../installation/using/installi
 <p>11 (a partire da Campaign v7.3)</p>
 <p>10 (consigliato per le istanze giapponesi)</p>
 <p>8</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-### Browser
-
-<table>
-<tbody>
-<tr>
-<td>
-<p>Microsoft Internet Explorer</p>
-</td>
-<td>
-<p>11</p>
 </td>
 </tr>
 </tbody>
