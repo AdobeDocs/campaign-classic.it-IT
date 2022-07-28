@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 56ff1f02e614a91200a8f2ca106dcc76e82f122d
 workflow-type: tm+mt
-source-wordcount: '2023'
-ht-degree: 4%
+source-wordcount: '2031'
+ht-degree: 3%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 4%
 
 ![](../../assets/v7-only.svg)
 
- Adobe Campaign viene aggiornato regolarmente. Se hai familiarità con i nostri pubblicati [Note sulla versione](../../rn/using/rn-overview.md), probabilmente siete consapevoli del fatto che in media 2/3 versioni secondarie con nuove funzioni, miglioramenti e correzioni vengono rilasciati ogni anno. Inoltre, rilasciamo periodicamente build contenenti solo correzioni cumulative. Questa cadenza regolare di aggiornamenti mira a ottenere il più recente e più grande nelle vostre mani, mantenendo il vostro ambiente completamente sicuro e ovviamente migliorando la vostra esperienza con il nostro prodotto.
+Adobe Campaign viene aggiornato regolarmente. Se hai familiarità con i nostri pubblicati [Note sulla versione](../../rn/using/rn-overview.md), probabilmente siete consapevoli del fatto che in media 2/3 versioni secondarie con nuove funzioni, miglioramenti e correzioni vengono rilasciati ogni anno. Inoltre, rilasciamo periodicamente build contenenti solo correzioni cumulative. Questa cadenza regolare di aggiornamenti mira a ottenere il più recente e più grande nelle vostre mani, mantenendo il vostro ambiente completamente sicuro e ovviamente migliorando la vostra esperienza con il nostro prodotto.
 
 È fondamentale che i nostri clienti eseguano la versione più recente di Adobe Campaign. Permette anche all&#39;Adobe di aiutare in modo molto più efficiente nel caso in cui si incontrano problemi - identificare, riprodurre e risolvere un problema su una build precedente richiede in genere più tempo, per non parlare del fatto che alcuni problemi che si possono incontrare possono essere già stati risolti in una build recente.
 
@@ -128,7 +128,7 @@ No. Durante l’aggiornamento della build, i servizi di flusso di lavoro e di po
 
 ## I miei collegamenti di tracciamento continueranno a funzionare durante l’aggiornamento?
 
-I collegamenti di tracciamento funzioneranno durante l’aggiornamento. Non è possibile inviare nuove e-mail durante l’aggiornamento, ma i collegamenti di tracciamento inclusi nelle e-mail già inviate saranno operativi.
+Il tracciamento dei collegamenti nelle e-mail già inviate non funzionerà durante l’aggiornamento perché tutti i server vengono arrestati. Saranno nuovamente operativi una volta completato l&#39;aggiornamento e i server verranno riavviati.
 
 ## È necessario essere disponibili durante il processo di aggiornamento della build?
 
@@ -195,7 +195,7 @@ tutto il contenuto viene visualizzato e presente.
    * Verifica la data di creazione e la data di modifica con la marca temporale e il fuso orario
    * Verifica che l’esecuzione della pianificazione funzioni in un flusso di lavoro all’ora specificata
    * Recupera elenco di flussi di lavoro in stato di PAUSED e FAILED (PAUSED e FAILED). Avviare e monitorare
-   * Esegui test AB per uno scenario
+   * Eseguire AB Testing per un’unica soluzione
    * Test delle notifiche push e delle relative funzionalità di tracciamento per i collegamenti profondi
    * Test invio di SMS
    * Se hai un FDA esterno connesso, verifica se i dati vengono inviati in entrambi i modi
