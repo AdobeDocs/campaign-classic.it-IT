@@ -3,16 +3,16 @@ product: campaign
 title: Aggiornamento al nuovo server di recapito messaggi
 description: Scopri come aggiornare al nuovo server di recapito messaggi di Campaign
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 8b8935b181b615c0a243799b14d01f778b84b715
+source-git-commit: ca9df95442355a0cd18c7c9ef048c2d77e84188e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1144'
+ht-degree: 2%
 
 ---
 
 # Aggiornamento al nuovo server di recapito messaggi {#acc-deliverability}
 
-Avvio [versione v7.2.1](../../rn/using/latest-release.md#release-7-2-2), Adobe Campaign si basa su un nuovo server di recapito messaggi che offre elevata disponibilità e risolve i problemi di conformità in materia di sicurezza. Campaign Classic ora sincronizza le regole di recapito messaggi, i registri di trasmissione e l’indirizzo di eliminazione da e verso il nuovo server di recapito messaggi. Il vecchio server di recapito messaggi verrà disattivato il 31 agosto 2022.
+Avvio [versione v7.2.2](../../rn/using/latest-release.md#release-7-2-2), Adobe Campaign si basa su un nuovo server di recapito messaggi che offre elevata disponibilità e risolve i problemi di conformità in materia di sicurezza. Campaign Classic ora sincronizza le regole di recapito messaggi, i registri di trasmissione e l’indirizzo di eliminazione da e verso il nuovo server di recapito messaggi. Il vecchio server di recapito messaggi verrà disattivato il 31 agosto 2022.
 
 In qualità di cliente Campaign Classic, devi implementare il nuovo server di recapito messaggi **prima del 31 agosto 2022**.
 
@@ -28,13 +28,13 @@ Questo nuovo server garantisce un’elevata disponibilità (99.9) &#x200B; e for
 
 ## Sei interessato da questo problema?{#acc-deliverability-impacts}
 
-Tutti i clienti sono interessati e devono effettuare l’aggiornamento a [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2) (o più) e implementa il loro ambiente per beneficiare del nuovo server di recapito messaggi.
+Tutti i clienti sono interessati e devono effettuare l’aggiornamento a [Campaign v7.2.2](../../rn/using/latest-release.md#release-7-2-2) (o più) e implementa il loro ambiente per beneficiare del nuovo server di recapito messaggi.
 
 ## Come si esegue l’aggiornamento?{#acc-deliverability-update}
 
 Come **cliente ospitato**, Adobe collaborerà con te per aggiornare le istanze alla versione più recente e creare il progetto in Adobe Developer Console.
 
-Come **cliente on-premise/ibrido**, devi effettuare l’aggiornamento a [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2) (o più) per beneficiare del nuovo server di recapito messaggi. Una volta aggiornate tutte le istanze, è necessario [implementare la nuova integrazione](#implementation-steps) ad Adobe il server di recapito messaggi e garantire una transizione senza soluzione di continuità.
+Come **cliente on-premise/ibrido**, devi effettuare l’aggiornamento a [Campaign v7.2.2](../../rn/using/latest-release.md#release-7-2-2) (o più) per beneficiare del nuovo server di recapito messaggi. Una volta aggiornate tutte le istanze, è necessario [implementare la nuova integrazione](#implementation-steps) ad Adobe il server di recapito messaggi e garantire una transizione senza soluzione di continuità.
 
 ## Passaggi di implementazione {#implementation-steps}
 
