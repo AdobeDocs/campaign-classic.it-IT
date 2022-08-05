@@ -4,9 +4,9 @@ title: Flussi di lavoro tecnici
 description: Ulteriori informazioni sui flussi di lavoro tecnici disponibili con i pacchetti Campaign Classic.
 feature: Workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 5bfd755ae8278a221e0f0e6f4121bfb072ebda12
 workflow-type: tm+mt
-source-wordcount: '1714'
+source-wordcount: '1705'
 ht-degree: 3%
 
 ---
@@ -76,6 +76,6 @@ Per ulteriori informazioni su come monitorare i flussi di lavoro tecnici, consul
 | **Sincronizzazione delle pagine Facebook** (syncFacebook) | Social network (Social Marketing) - Solo Campaign v7 | Questo flusso di lavoro sincronizza le pagine Facebook con Adobe Campaign ogni giorno alle 7. |
 | **Sincronizzazione delle pagine Twitter** (syncTwitter) | Social network (Social Marketing) - Solo Campaign v7 | Questo flusso di lavoro importa i follower di Twitter in Adobe Campaign ogni giorno alle 7. |
 | **Notifica attività** (taskMgt) | Risorse di marketing (MRM) - Solo Campaign v7 | Questo flusso di lavoro ti consente di inviare messaggi di notifica relativi alle attività nelle campagne di marketing. |
-| **Tracking** (tracciamento | Consegna | Questo flusso di lavoro esegue il ripristino e il consolidamento delle informazioni di tracciamento. Assicura inoltre il ricalcolo delle statistiche di tracciamento e consegna, in particolare quelle utilizzate dai flussi di lavoro di archiviazione Message Center. Per impostazione predefinita viene attivato una volta all’ora. |
+| **Tracking** (tracciamento) | Consegna | Questo flusso di lavoro esegue il ripristino e il consolidamento delle informazioni di tracciamento. Assicura inoltre il ricalcolo delle statistiche di tracciamento e consegna, in particolare quelle utilizzate dai flussi di lavoro di archiviazione Message Center. Per impostazione predefinita viene attivato una volta all’ora. |
 | **Aggiorna stato evento** (updateEventsStatus) | Esecuzione di messaggi transazionali (Centro messaggi - Esecuzione) | Questo flusso di lavoro ti consente di assegnare uno stato a un evento. Gli stati dell’evento sono i seguenti:<ul><li>In sospeso: l’evento è in coda. Non è ancora stato associato alcun modello di messaggio.</li><li>Consegna in sospeso: l’evento è in coda, è stato associato un modello di messaggio ed è attualmente in fase di elaborazione da parte della consegna.</li><li>Inviato: questo stato viene copiato dai log di consegna. Significa che la consegna è stata inviata.</li><li>Ignorato dalla consegna: questo stato viene copiato dai log di consegna. Significa che la consegna è stata ignorata.</li><li>Errore di consegna: questo stato viene copiato dai log di consegna. Significa che la consegna non è riuscita.</li><li>Evento non trattato: impossibile associare l&#39;evento a un modello di messaggio. L’evento non verrà rielaborato.</li></ul> |
-| **Aggiornamento per il recapito messaggi** (deliverabilityUpdate) | Consegna | Una volta installato il pacchetto di monitoraggio del recapito messaggi (recapito messaggi e-mail), questo flusso di lavoro viene eseguito di notte e gestisce le regole di qualificazione delle e-mail non recapitate, nonché l’elenco dei domini e delle MX. Questo richiede che la porta HTTPS sia aperta sulla piattaforma. |
+| **Aggiornamento per il recapito messaggi** (deliverabilityUpdate) | Consegna | Questo flusso di lavoro viene eseguito di notte e gestisce le regole di qualificazione delle e-mail non recapitate, nonché l’elenco dei domini e delle MX. Questo richiede che la porta HTTPS sia aperta sulla piattaforma. |
