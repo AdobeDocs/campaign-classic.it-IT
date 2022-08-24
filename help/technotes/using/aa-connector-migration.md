@@ -3,9 +3,9 @@ product: campaign
 title: Migrazione al connettore Adobe Analytics
 description: Campaign - Domande frequenti sul connettore Analytics
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: c072cb5b2d33f93ff395e4670507744b0d20c9bc
+source-git-commit: 9667bb436ffc591b05945dadd683e5f590ae43e5
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '815'
 ht-degree: 5%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 A partire dalla versione 21.1.3 di Campaign Classic v7, il Connettore dati di Adobe Analytics è diventato obsoleto. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/data-connectors-eol.html)
 
-Il 1° agosto 2021, Adobe Campaign Classic è stato rimosso dall’interfaccia utente dei Data Connectors legacy, tuttavia, le integrazioni esistenti di Campaign continueranno a raccogliere e trasmettere dati ad Adobe Analytics fino al 17 agosto 2022. Dopo questa data, l’integrazione cesserà di raccogliere e trasmettere dati ad Adobe Analytics.
+Il 1° agosto 2021, Adobe Campaign Classic è stato rimosso dall’interfaccia utente Data Connectors legacy, tuttavia, le integrazioni esistenti di Campaign continueranno a raccogliere e trasmettere dati ad Adobe Analytics fino al 17 agosto 2022. Dopo questa data, l’integrazione cesserà di raccogliere e trasmettere dati ad Adobe Analytics.
 
 You **deve implementare** la nuova integrazione di Adobe Analytics Connector su Adobe Exchange che sostituisce l’integrazione legacy di Data Connectors. Per ulteriori informazioni su Adobe Analytics Connector, consulta [questa pagina](../../platform/using/adobe-analytics-connector.md).
 
@@ -68,7 +68,7 @@ In qualità di utente on-premise, puoi implementare la modalità dettagliata com
 
 **Che cosa significa l&#39;errore &quot;Integration Owner Not Admin&quot; (Proprietario integrazione non amministratore)?**
 
-Ulteriori informazioni sui Data Connectors `Integration Owner Not Admin` Errore in [questa pagina](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360035167932-Adobe-Analytics-Data-Connectors-Integration-Owner-Not-Admin-Error).
+Ulteriori informazioni su Data Connectors `Integration Owner Not Admin` Errore in [questa pagina](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360035167932-Adobe-Analytics-Data-Connectors-Integration-Owner-Not-Admin-Error).
 
 **Una volta effettuata la migrazione al nuovo connettore, cosa succede ai dati e alle suite di rapporti precedenti?**
 
@@ -80,7 +80,7 @@ L&#39;integrazione si basa sui dati su token account tecnici per il funzionament
 
 Se leggiamo i dettagli di un componente Analytics (come metriche/dimensioni/segmenti/suite di rapporti), l’API non restituisce questi componenti nel risultato (che potrebbe sembrare qualcosa che sia stato eliminato dal lato Analytics o che non sia presente). L’API di Analytics rifiuterà tali richieste ed eseguirà l’errore.
 
-La soluzione consiste nell&#39;aggiornare il **Profilo prodotto** nel contesto utente di Analytics del token utente tecnico con i componenti appena creati/mancanti aggiungendo questi componenti in [Adobe Admin Console](https://adminconsole.adobe.com/). Per maggiori informazioni, contatta [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+La soluzione consiste nell&#39;aggiornare il **Profilo prodotto** nel contesto utente di Analytics del token utente tecnico con i componenti appena creati/mancanti aggiungendo questi componenti in [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}. Per maggiori informazioni, contatta [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Collegamenti utili
 

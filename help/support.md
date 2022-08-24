@@ -4,10 +4,10 @@ title: 'Guida e opzioni di supporto per Campaign Classic '
 description: Hai bisogno di supporto per Campaign Classic? Sei nel posto giusto!
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 9667bb436ffc591b05945dadd683e5f590ae43e5
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 70%
+source-wordcount: '798'
+ht-degree: 66%
 
 ---
 
@@ -132,19 +132,19 @@ Scopri come gestire le impostazioni delle istanze Campaign Classic nel Pannello 
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-Il nuovo sistema di ticket è stato lanciato attraverso [Adobe Admin Console](https://adminconsole.adobe.com/overview). Il nuovo sistema richiede nuovi account individuali per ogni utente, con le autorizzazioni corrette. Se non riesci ad accedere con il tuo Adobe ID, richiedi l’accesso tramite Experience League e il team di assistenza clienti completerà le tue impostazioni il prima possibile. [Ulteriori informazioni](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html)
+Il nuovo sistema di ticket è stato lanciato attraverso [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Il nuovo sistema richiede nuovi account individuali per ogni utente, con le autorizzazioni corrette. Se non riesci ad accedere con il tuo Adobe ID, richiedi l’accesso tramite Experience League e il team di assistenza clienti completerà le tue impostazioni il prima possibile. [Ulteriori informazioni](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html)
 
 ### Chiedi agli esperti
 
-Iscriviti alla community Campaign Classic: consulta le risposte già fornite alle domande esistenti o sottoponi alla community le tue domande. [Partecipa alla conversazione](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community)
+Iscriviti alla community Campaign Classic: consulta le risposte già fornite alle domande esistenti o sottoponi alla community le tue domande. [Partecipa alla conversazione](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
 
 ### Accedi al Centro di download di Campaign
 
 A partire da giugno 2020, la soluzione Experience Cloud Software Distribution sostituisce il precedente Centro download di Neolane e offre un&#39;esperienza più efficiente per trovare e scaricare il software, i pacchetti e gli strumenti. [Fai clic qui](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) per accedere alla Distribuzione di software di Experience Cloud.
-Ulteriori informazioni sul nuovo Centro download [in questa pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it).
+Ulteriori informazioni sul nuovo Centro download [in questa pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it){_blank}.
 
 ### Crea un ticket o avvia una chat
 
 La creazione di un caso consente di contattare il team Assistenza clienti di Adobe per eventuali problemi riscontrati con i prodotti Adobe. Per aiutarti a risolvere un problema, Adobe Admin Console consente di chattare con l’Assistenza clienti di Adobe.
 
-Per segnalare un problema o avviare una sessione di chat nel nuovo sistema, connettiti ad [Adobe Admin Console](https://adminconsole.adobe.com/overview). Segui la procedura dettagliata descritta in [questa pagina](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+Per segnalare un problema o avviare una sessione di chat nel nuovo sistema, connettiti a [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Seguire la procedura dettagliata descritta in [questa pagina](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html){_blank}.
