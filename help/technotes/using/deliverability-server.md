@@ -3,10 +3,10 @@ product: campaign
 title: Aggiornamento al nuovo server di recapito messaggi
 description: Scopri come aggiornare al nuovo server di recapito messaggi di Campaign
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: ca9df95442355a0cd18c7c9ef048c2d77e84188e
+source-git-commit: 38f5cb9fdeb9deceab812c6ebc158e2ab37e3155
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 2%
+source-wordcount: '1235'
+ht-degree: 3%
 
 ---
 
@@ -51,16 +51,26 @@ Prima di avviare l&#39;implementazione, controlla la configurazione dell&#39;ist
 
 1. Apri la console del client Campaign e accedi ad Adobe Campaign come amministratore.
 1. Sfoglia per **Amministrazione > Piattaforma > Opzioni**.
-1. Controlla la `DmRendering_cuid` il valore dell&#39;opzione è compilato.
+1. Controlla che la `DmRendering_cuid` il valore dell&#39;opzione è compilato.
 
    * Se l’opzione è compilata, puoi avviare l’implementazione.
    * Se non viene compilato alcun valore, contatta [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} per ottenere il tuo CUID.
 
    Questa opzione deve essere compilata su tutte le istanze Campaign (MKT, MID, RT, EXEC) con il valore corretto. In qualità di cliente ibrido, contatta l’Adobe per avere l’opzione impostata sulle istanze MID, RT ed EXEC.
 
+In qualità di cliente on-premise, devi anche verificare che sia presente una campagna **[!UICONTROL Product profile]** è disponibile per la tua organizzazione. Per eseguire questa operazione, effettua le seguenti operazioni:
+
+1. In qualità di amministratore, effettua la connessione a [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}.
+1. Accedere al **Prodotti e servizi** sezione e controllo **Adobe Campaign** è elencato.
+Se non è possibile visualizzare **Adobe Campaign** contatta [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} per aggiungerlo.
+1. Fai clic su **Adobe Campaign** e seleziona la tua organizzazione.
+1. Controlla che un **[!UICONTROL Product profile]** esiste. In caso contrario, crealo. Non è necessaria alcuna autorizzazione **[!UICONTROL Product profile]**.
+
+
 >[!CAUTION]
 >
 >In qualità di cliente on-premise, se sul tuo lato è implementato un firewall, devi aggiungere questo url `https://deliverability-service.adobe.io` al tuo inserire nell&#39;elenco Consentiti. [Ulteriori informazioni](../../installation/using/url-permissions.md).
+
 
 ### Passaggio 1: Crea/aggiorna il progetto Adobe Developer {#adobe-io-project}
 
@@ -123,7 +133,7 @@ Per eseguire questa operazione:
 1. Copia il contenuto dal file `private.key.base64`.
 1. Accedi tramite SSH a ciascun contenitore in cui è installata l’istanza Adobe Campaign e aggiungi le credenziali Progetto in Adobe Campaign eseguendo il seguente comando come `neolane` utente. Verrà inserito il **[!UICONTROL Technical Account]** nel file di configurazione dell&#39;istanza.
 
-   ```
+   ```sql
    nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
    ```
 
@@ -139,7 +149,7 @@ Ora puoi abilitare il nuovo server di recapito messaggi. Per eseguire questa ope
 
 ### Passaggio 4: Convalida la configurazione
 
-Per verificare che l’integrazione abbia esito positivo, effettua le seguenti operazioni:
+Per verificare che l’integrazione abbia esito positivo, segui i passaggi seguenti:
 
 
 1. Apri la console del client e accedi ad Adobe Campaign.
