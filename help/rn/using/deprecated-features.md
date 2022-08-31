@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 45c5ef3315e4208184e9c0ab5f20678646fe2d0b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1624'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -61,21 +61,21 @@ In questa sezione sono elencate le funzionalità rimosse da Campaign Classic.
    <td><strong>Dettagli</strong></td>
   <tr>  
       <tr>
-  <td>Connettore dati Adobe Analytics<br></td>
-   <td><p>Il Connettore dati di Adobe Analytics è stato rimosso il 17 agosto 2022. È stato dichiarato obsoleto con la versione 21.1.3 di Campaign.</p>
+  <td>Adobe Analytics Data Connector<br></td>
+   <td><p>Adobe Analytics Data Connector è stato rimosso il 17 agosto 2022. È stato dichiarato obsoleto con la versione 21.1.3 di Campaign.</p>
    <p>Se utilizzi questo connettore, devi adattare di conseguenza l’implementazione. <a href="../../platform/using/adobe-analytics-connector.md">Ulteriori informazioni</a></p>
   </td>
  </tr>
     <tr>
-  <td>Rapporto tecnico di monitoraggio della consegna e-mail<br></td>
-   <td><p>Il rapporto di monitoraggio del recapito messaggi tecnico non è più disponibile. È stato dichiarato obsoleto con la versione 21.1.3 di Campaign.</p>
+  <td>Rapporto tecnico di monitoraggio del recapito<br></td>
+   <td><p>Il rapporto tecnico di monitoraggio del recapito non è più disponibile. È stato dichiarato obsoleto con la versione 21.1.3 di Campaign.</p>
    <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
   </td>
  </tr>
   <tr>
   <td>Autenticazione OAuth (OAuth e JWT)<br></td>
-  <td><p> L’autenticazione dell’integrazione dei trigger originariamente basata su oAUTH per accedere alla pipeline è stata modificata e spostata in Adobe I/O. Questa modalità di autenticazione è stata rimossa con la versione 20.3 di Campaign.<p>
-  <p>Se utilizzi l’integrazione Triggers, scopri come adattare la tua implementazione <a href="../../integrations/using/configuring-adobe-io.md">in questa pagina</a>.</p> 
+  <td><p> L’autenticazione dell’integrazione Triggers per accedere alla pipeline, originariamente basata sulla configurazione di autenticazione OAuth, è ora stata cambiata e spostata in Adobe I/O. Questa modalità di autenticazione è stata rimossa con la versione 20.3 di Campaign.<p>
+  <p>Se utilizzi l’integrazione Triggers, consulta <a href="../../integrations/using/configuring-adobe-io.md">questa pagina</a> per informazioni su come adattare la tua implementazione.</p> 
   <p>Per ulteriori informazioni sulla obsolescenza dell’autenticazione OAuth, fare riferimento a questa <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">pagina</a></p> 
   <!--p><em>Target removal date: October 20, 2021. Hosted environments benefit from an extension until May 25, 2022. </em></p-->
   </td>
@@ -161,7 +161,7 @@ The following systems are deprecated for Campaign Classic. Please refer to the [
 
 * A partire dalla versione 22.1, Adobe Campaign non è più compatibile con CentOs 8.x (64 bit). CentOS Linux 8 ha raggiunto la fine del ciclo di vita (EOL) il 31 dicembre 2021. [Ulteriori informazioni](https://www.centos.org/centos-linux-eol/).
 
-   Se utilizzi questo sistema operativo, adatta di conseguenza la tua implementazione. CentOS 7.x (64 bit) e RHEL 8.x/7.x (64 bit) sono ancora supportati.
+   Se utilizzavi questo sistema operativo, adatta di conseguenza la tua implementazione. CentOS 7.x (64 bit) e RHEL 8.x/7.x (64 bit) sono ancora supportati.
 
 * A partire dalla versione 21.1.3, Adobe Campaign non è più compatibile con Debian 8.
 
