@@ -3,10 +3,10 @@ product: campaign
 title: Aggiornamento al nuovo server di recapito messaggi
 description: Scopri come aggiornare al nuovo server di recapito messaggi di Campaign
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 38f5cb9fdeb9deceab812c6ebc158e2ab37e3155
+source-git-commit: 7385617d69c823850083a94b561d02c9152803e1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1317'
+ht-degree: 3%
 
 ---
 
@@ -40,7 +40,6 @@ Come **cliente on-premise/ibrido**, devi effettuare l’aggiornamento a [Campaig
 
 Come parte della nuova integrazione del server di recapito messaggi, Campaign deve comunicare con Adobe Shared Services tramite un’autenticazione basata su Identity Management Service (IMS). Il modo migliore è quello di utilizzare il token gateway basato su Adobe Developer (chiamato anche Token account tecnico o JWT IO di Adobe).
 
-
 >[!WARNING]
 >
 >Questi passaggi devono essere eseguiti solo per le implementazioni ibride e on-premise.
@@ -64,6 +63,11 @@ In qualità di cliente on-premise, devi anche verificare che sia presente una ca
 1. Accedere al **Prodotti e servizi** sezione e controllo **Adobe Campaign** è elencato.
 Se non è possibile visualizzare **Adobe Campaign** contatta [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} per aggiungerlo.
 1. Fai clic su **Adobe Campaign** e seleziona la tua organizzazione.
+
+   >[!CAUTION]
+   >
+   >Se disponi di più organizzazioni, assicurati di selezionare quella corretta. Ulteriori informazioni sulle organizzazioni [in questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
+
 1. Controlla che un **[!UICONTROL Product profile]** esiste. In caso contrario, crealo. Non è necessaria alcuna autorizzazione **[!UICONTROL Product profile]**.
 
 
@@ -76,9 +80,12 @@ Se non è possibile visualizzare **Adobe Campaign** contatta [Adobe Customer Car
 
 1. Accesso [Console Adobe Developer](https://developer.adobe.com/console/home) e accedi con l&#39;accesso Developer della tua organizzazione. Assicurati di aver effettuato l&#39;accesso al portale organizzazione corretto.
 
+   >[!CAUTION]
+   >
+   >Se disponi di più organizzazioni, assicurati di selezionare quella corretta. Ulteriori informazioni sulle organizzazioni [in questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
+
 1. Seleziona **[!UICONTROL Create new project]**.
    ![](assets/New-Project.png)
-
 
    >[!CAUTION]
    >
@@ -151,12 +158,14 @@ Ora puoi abilitare il nuovo server di recapito messaggi. Per eseguire questa ope
 
 Per verificare che l’integrazione abbia esito positivo, segui i passaggi seguenti:
 
-
 1. Apri la console del client e accedi ad Adobe Campaign.
 1. Sfoglia per **Amministrazione > Produzione > Flussi di lavoro tecnici**.
 1. Riavvia **Aggiornamento per il recapito messaggi** Flusso di lavoro (deliverabilityUpdate). Questa deve essere eseguita su tutte le istanze Campaign (MKT, MID, RT, EXEC). In qualità di cliente ibrido, contatta l’Adobe per far riavviare il flusso di lavoro sulle istanze MID, RT ed EXEC.
 1. Controlla log: il flusso di lavoro deve essere eseguito senza errori.
 
+>[!CAUTION]
+>
+>Dopo l&#39;aggiornamento, la **Aggiorna la rete di seed per Rendering della casella in entrata (updateRenderingSeeds)** il flusso di lavoro deve essere interrotto, poiché non verrà più applicato e avrà esito negativo.
 
 ## Domande frequenti {#faq}
 
@@ -173,4 +182,3 @@ Qualsiasi istanza di Campaign non aggiornata entro il 31 agosto non sarà più i
 Se non aggiorni l’ambiente, le impostazioni e-mail cesseranno di essere sincronizzate (regole di gestione MX, regole e-mail in entrata, regole di gestione del dominio e regole di qualificazione non recapitate). Questo potrebbe influenzare nel tempo il recapito messaggi. Se si apporta una modifica significativa a queste regole, queste dovranno essere applicate manualmente da questo momento in poi.
 
 Solo per le istanze MKT [Elenco globale di soppressione](../../campaign-opt/using/filtering-rules.md#default-deliverability-exclusion-rules) è interessato.
-
