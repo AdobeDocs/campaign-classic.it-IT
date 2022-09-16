@@ -3,9 +3,9 @@ product: campaign
 title: Aggiornamento al nuovo server di recapito messaggi
 description: Scopri come aggiornare al nuovo server di recapito messaggi di Campaign
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 7385617d69c823850083a94b561d02c9152803e1
+source-git-commit: 9583763eb1d4403b32a1b77a9542f476c314d167
 workflow-type: tm+mt
-source-wordcount: '1317'
+source-wordcount: '1319'
 ht-degree: 3%
 
 ---
@@ -62,11 +62,7 @@ In qualità di cliente on-premise, devi anche verificare che sia presente una ca
 1. In qualità di amministratore, effettua la connessione a [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}.
 1. Accedere al **Prodotti e servizi** sezione e controllo **Adobe Campaign** è elencato.
 Se non è possibile visualizzare **Adobe Campaign** contatta [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} per aggiungerlo.
-1. Fai clic su **Adobe Campaign** e seleziona la tua organizzazione.
-
-   >[!CAUTION]
-   >
-   >Se disponi di più organizzazioni, assicurati di selezionare quella corretta. Ulteriori informazioni sulle organizzazioni [in questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
+1. Fai clic su **Adobe Campaign** e seleziona la tua organizzazione. **Attenzione**: Se disponi di più organizzazioni, assicurati di selezionare quella corretta. Ulteriori informazioni sulle organizzazioni [in questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
 
 1. Controlla che un **[!UICONTROL Product profile]** esiste. In caso contrario, crealo. Non è necessaria alcuna autorizzazione **[!UICONTROL Product profile]**.
 
@@ -79,11 +75,7 @@ Se non è possibile visualizzare **Adobe Campaign** contatta [Adobe Customer Car
 ### Passaggio 1: Crea/aggiorna il progetto Adobe Developer {#adobe-io-project}
 
 1. Accesso [Console Adobe Developer](https://developer.adobe.com/console/home) e accedi con l&#39;accesso Developer della tua organizzazione. Assicurati di aver effettuato l&#39;accesso al portale organizzazione corretto.
-
-   >[!CAUTION]
-   >
-   >Se disponi di più organizzazioni, assicurati di selezionare quella corretta. Ulteriori informazioni sulle organizzazioni [in questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
-
+   **Attenzione**: Se disponi di più organizzazioni, assicurati di selezionare quella corretta. Ulteriori informazioni sulle organizzazioni [in questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
 1. Seleziona **[!UICONTROL Create new project]**.
    ![](assets/New-Project.png)
 
