@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 378788764e244dcad12018d6d703048707d4c3e6
-workflow-type: ht
-source-wordcount: '4931'
-ht-degree: 100%
+source-git-commit: ae235d39c4a78e0a2507f6baaebbdc9986dbf995
+workflow-type: tm+mt
+source-wordcount: '4932'
+ht-degree: 99%
 
 ---
 
@@ -147,7 +147,7 @@ Integrazione con il Journey Orchestration Adobe - [Ulteriori informazioni](https
 
 Miglioramenti al canale LINE - [Ulteriori informazioni](../../delivery/using/line-channel.md)
 
-Nuovo connettore FDA Vertica - [Ulteriori informazioni](../../installation/using/configure-fda-vertica.md)
+Nuovo connettore FDA Vertiche analytics - [Ulteriori informazioni](../../installation/using/configure-fda-vertica.md)
 
 Nuovo connettore FDA BigQuery Google: [ulteriori informazioni](../../installation/using/configure-fda-google-big-query.md)
 
@@ -485,7 +485,7 @@ Le guide di [installazione](../../installation/using/general-architecture.md), [
 
 La guida all’installazione è stata aggiornata e sincronizzata con la versione più recente della matrice di compatibilità. Sono stati aggiunti nuovi sistemi supportati. Sono state rimosse le occorrenze di sistemi obsoleti e non supportati. [Leggi tutto](../../installation/using/general-architecture.md)
 
-La Matrice di compatibilità è stata aggiornata con i connettori FDA Hadoop 3.0 e Snowflake. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html)
+La Matrice di compatibilità è stata aggiornata con i connettori FDA Hadoop 3.0 e Snowflake. [Leggi tutto](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
 Nella guida all’installazione è stata aggiunta una best practice sull’affinità degli IP. [Leggi tutto](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
@@ -503,7 +503,7 @@ Il nuovo parametro per la configurazione dei report URL è stato documentato [qu
 
 La pagina della **matrice delle funzionalità on-premise e in hosting di Campaign Classic** è stata aggiornata con i nuovi connettori FDA. [Leggi tutto](../../installation/using/capability-matrix.md).
 
-La pagina della **matrice delle funzionalità di Campaign Classic** è stata aggiornata. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html)
+La pagina della **matrice delle funzionalità di Campaign Classic** è stata aggiornata. [Leggi tutto](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
 Il nuovo flusso di lavoro **[!UICONTROL Cleanup of Nmsaddress]** è stato documentato [qui](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress).
 
@@ -555,7 +555,7 @@ Messaggi SMS protetti (TLS). [Leggi tutto](https://helpx.adobe.com/it/campaign/k
 
 **Altri aggiornamenti alla documentazione in arrivo con la versione**
 
-La documentazione sull’MTA avanzato di Adobe Campaign è ora disponibile. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/acc-campaign-enhanced-mta.html)
+La documentazione sull’MTA avanzato di Adobe Campaign è ora disponibile. [Leggi tutto](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
 È stata aggiunta una nuova sezione su come risolvere eventuali problemi relativi a un flusso di lavoro nello stato “Avvia il prima possibile” all’interno di una campagna. [Leggi tutto](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
@@ -617,7 +617,7 @@ Le best practice per i miglioramenti delle prestazioni di flussi di lavoro e con
 
 **Nuove funzionalità incluse nella versione 19.1**
 
-Pannello di controllo Campaign. [Leggi tutto](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it)
+Pannello di controllo Campaign. [Leggi tutto](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
 
 Audit trail. [Leggi tutto](../../production/using/audit-trail.md)
 
@@ -641,7 +641,7 @@ La descrizione dell’opzione del flusso di lavoro di pre-elaborazione è stata 
 
 La nota tecnica su Experience Cloud Triggers è stata aggiornata. [Leggi tutto](../../integrations/using/about-triggers.md)
 
-L’elenco dei messaggi di errore è stato aggiornato. [Leggi tutto](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=it)
+L’elenco dei messaggi di errore è stato aggiornato. [Leggi tutto](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
 
 Sono state aggiunte ulteriori informazioni sui metodi di autenticazione SOAP per la messaggistica transazionale. [Leggi tutto](../../message-center/using/event-description.md)
 
@@ -680,7 +680,7 @@ Sono state aggiunte informazioni sul report Fatturazione.
 La documentazione sull’integrazione Tipi di pubblico condivisi è stata aggiornata.
 [Leggi tutto](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-È stata aggiornata la seguente nota tecnica: [Protocollo e impostazioni del connettore SMS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-protocol.html?lang=it).
+È stata aggiornata la seguente nota tecnica: [Protocollo e impostazioni del connettore SMS](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html).
 
 La sezione Flussi di lavoro tecnici è stata aggiornata. [Leggi tutto](../../workflow/using/about-technical-workflows.md)
 

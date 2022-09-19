@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+source-git-commit: ae235d39c4a78e0a2507f6baaebbdc9986dbf995
 workflow-type: tm+mt
-source-wordcount: '1817'
+source-wordcount: '1818'
 ht-degree: 8%
 
 ---
@@ -213,7 +213,7 @@ I database esterni compatibili con Campaign sono elencati in [Matrice di compati
 
 Le impostazioni di configurazione dell’account esterno dipendono dal motore di database. Ulteriori informazioni nelle sezioni seguenti:
 
-* Configurare l’accesso a [Vertica](../../installation/using/configure-fda-vertica.md)
+* Configurare l’accesso a [vertiche analytics](../../installation/using/configure-fda-vertica.md)
 * Configurare l’accesso a [Snowflake](../../installation/using/configure-fda-snowflake.md)
 * Configurare l’accesso a [BigQuery Google](../../installation/using/configure-fda-google-big-query.md)
 * Configurare l’accesso a [azure synapse](../../installation/using/configure-fda-synapse.md)

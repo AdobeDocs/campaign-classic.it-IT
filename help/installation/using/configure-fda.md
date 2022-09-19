@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+source-git-commit: f580b9b2508c279e03bd2698854aaf3de501200b
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '342'
 ht-degree: 5%
 
 ---
@@ -42,29 +42,15 @@ A seconda dei database esterni a cui desideri accedere da Adobe Campaign, dovrai
 
 Segui i collegamenti riportati di seguito per ulteriori informazioni:
 
-* Connetti Campaign e [Vertica](../../installation/using/configure-fda-vertica.md)
-
-* Connetti Campaign e [BigQuery Google](../../installation/using/configure-fda-google-big-query.md)
-
 * Connetti Campaign e [azure synapse](../../installation/using/configure-fda-synapse.md)
-
-* Connetti Campaign e [Snowflake](../../installation/using/configure-fda-snowflake.md)
-
+* Connetti Campaign e [BigQuery Google](../../installation/using/configure-fda-google-big-query.md)
 * Connetti Campaign e [Hadoop](../../installation/using/configure-fda-hadoop.md)
-
-* Connetti Campaign e [Oracle](../../installation/using/configure-fda-oracle.md)
-
-* Connetti Campaign e [Netezza](../../installation/using/configure-fda-netezza.md)
-
-* Connetti Campaign e [sybase IQ](../../installation/using/configure-fda-sybase.md)
-
-* Connetti Campaign e [Teradata](../../installation/using/configure-fda-teradata.md)
-
-* Connetti Campaign e [SAP HANA](../../installation/using/configure-fda-sap-hana.md)
-
-* Connetti Campaign e [PostgreSQL](../../installation/using/configure-fda-postgresql.md)
-
 * Connetti Campaign e [Microsoft SQL Server](../../installation/using/configure-fda-sql.md)
-
+* Connetti Campaign e [Netezza](../../installation/using/configure-fda-netezza.md)
+* Connetti Campaign e [Oracle](../../installation/using/configure-fda-oracle.md)
+* Connetti Campaign e [PostgreSQL](../../installation/using/configure-fda-postgresql.md)
 * Connetti Campaign e [SAP HANA](../../installation/using/configure-fda-sap-hana.md)
-
+* Connetti Campaign e [Snowflake](../../installation/using/configure-fda-snowflake.md)
+* Connetti Campaign e [sybase IQ](../../installation/using/configure-fda-sybase.md)
+* Connetti Campaign e [Teradata](../../installation/using/configure-fda-teradata.md)
+* Connetti Campaign e [vertiche analytics](../../installation/using/configure-fda-vertica.md)
