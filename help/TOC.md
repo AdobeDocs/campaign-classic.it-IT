@@ -7,9 +7,9 @@ user-guide-description: Con Adobe Campaign, puoi utilizzare dati approfonditi su
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: f580b9b2508c279e03bd2698854aaf3de501200b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2583'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -678,7 +678,7 @@ ht-degree: 99%
             + [Configurare Snowflake](installation/using/configure-fda-snowflake.md)
             + [Configurare Sybase IQ](installation/using/configure-fda-sybase.md)
             + [Configurare Teradata](installation/using/configure-fda-teradata.md)
-            + [Configura Vertiche analytics](installation/using/configure-fda-vertica.md)
+            + [Configurare Vertica Analytics](installation/using/configure-fda-vertica.md)
          + [Diritti di accesso al remoto](installation/using/remote-database-access-rights.md)
          + [Connettersi al database](installation/using/connecting-to-database.md)
          + [Creare lo schema dati](installation/using/creating-data-schema.md)
