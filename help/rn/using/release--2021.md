@@ -120,7 +120,7 @@ _5 giugno 2021_
 <ul> 
 <li><p>Supporto per il tipo di messaggio video LINE</p></li>
 <li><p>Supporto per API di registrazione partner LINE</p></li>
-<li><p>Nuovo tentativo di supporto dell’invio del messaggio in caso di errore sul lato server LINE o di timeout della rete</p></li>
+<li><p>Supporta un nuovo tentativo di invio del messaggio in caso di errore sul lato server LINE o di timeout della rete</p></li>
 </ul>
 <p>Per ulteriori informazioni consulta la <a href="../../delivery/using/line-channel.md">documentazione dettagliata</a>.</p>
 </td> 
