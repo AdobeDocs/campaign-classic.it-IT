@@ -4,9 +4,9 @@ title: Rendering della casella in entrata in Campaign
 description: Scopri come acquisire i rendering delle e-mail e renderli disponibili in un rapporto dedicato
 feature: Inbox Rendering, Monitoring, Email Rendering
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 048189f49623cf00f4c3f1f34ff4b795d80391ef
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '821'
 ht-degree: 8%
 
 ---
@@ -20,6 +20,9 @@ ht-degree: 8%
 Prima di premere il pulsante **Invia** assicurati che il messaggio venga visualizzato ai destinatari in modo ottimale su diversi client web, e-mail e dispositivi web.
 
 Per questo motivo, Adobe Campaign sfrutta la funzione [Litmo](https://litmus.com/email-testing) soluzione di test e-mail basata su web per acquisire i rendering e renderli disponibili in un rapporto dedicato. Questo consente di visualizzare in anteprima il messaggio inviato nei diversi contesti in cui potrebbe essere ricevuto e di verificare la compatibilità nei principali desktop e applicazioni.
+
+>[!CAUTION]
+>Il rendering della casella in entrata non è compatibile con [consegne ricorrenti](communication-channels.md#recurring-delivery).
 
 Litmus è un&#39;applicazione che offre funzioni avanzate di convalida e-mail e visualizzazione dell&#39;anteprima. Consente ai creatori di contenuti e-mail di visualizzare in anteprima il contenuto del messaggio in oltre 70 moduli di rendering e-mail, ad esempio la inbox Gmail o il client Apple Mail.
 
@@ -42,7 +45,7 @@ Per le installazioni on-premise, segui la procedura seguente per configurare il 
    * **[!UICONTROL Internal name]**: deliverabilityInstance
    * **[!UICONTROL Type]**: HTTP
    * **[!UICONTROL Server]**: https://deliverability-app.neolane.net/deliverability
-   * **[!UICONTROL Encryption]**: Nessuno
+   * **[!UICONTROL Encryption]**: Nessuna
    * Seleziona l’opzione **[!UICONTROL Enabled]**.
 
    ![](assets/s_tn_inbox_rendering_external-account.png)
