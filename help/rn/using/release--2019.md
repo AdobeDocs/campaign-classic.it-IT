@@ -2,8 +2,9 @@
 product: campaign
 title: Versioni di Campaign Classic 2019
 description: Ulteriori informazioni sulle versioni di Campaign Classic 2019
+hidefromtoc: true
 exl-id: 8a36a542-e095-4208-b624-e59845592863
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: c929557ee9f5467f9c3b8eb1ed25fae5399820ba
 workflow-type: tm+mt
 source-wordcount: '4825'
 ht-degree: 24%
@@ -131,7 +132,7 @@ _2 dicembre 2019_
 **Miglioramenti di sicurezza**
 
 * Sono state corrette le vulnerabilità di cross-site scripting memorizzate nell’interfaccia di Campaign: convalida dei dati di input e codifica dell’output. (NEO-16810)
-* È stato risolto un problema di sicurezza relativo all’autorizzazione dei profili che poteva consentire l’accesso a dati non autorizzati, rafforzando i criteri di restrizione dell’accesso. (NEO-14445)
+* È stato risolto un problema di sicurezza relativo all’autorizzazione del profilo che poteva consentire l’accesso a dati non autorizzati, rafforzando i criteri di restrizione dell’accesso. (NEO-14445)
 
 **Miglioramenti**
 

@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: general-operation
 exl-id: b13ecfc9-1723-42b2-ab30-d5637cc3d0dd
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: c929557ee9f5467f9c3b8eb1ed25fae5399820ba
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 1%
@@ -35,7 +35,7 @@ Un’offerta viene distribuita solo sugli spazi di offerta selezionati durante i
 
 ## Tipi di interazione e metodi di contatto {#interaction-types-and-contact-methods}
 
-Esistono due possibili tipi di interazioni: interazioni in entrata (iniziate da un contatto) e interazioni in uscita (iniziate dal creatore di offerte).
+Esistono due possibili tipi di interazioni: interazioni in entrata (avviate da un contatto) e interazioni in uscita (avviate dal designer dell’offerta).
 
 Questi due tipi di interazioni possono essere eseguite in modalità unitaria (l&#39;offerta è calcolata per un singolo contatto), o in modalità batch (l&#39;offerta è calcolata per un insieme di contatti). Generalmente, le interazioni in entrata vengono eseguite in modalità unitaria e le interazioni in uscita vengono eseguite in modalità batch. Tuttavia, possono esserci alcune eccezioni, ad esempio per i messaggi transazionali, per cui l&#39;interazione in uscita viene eseguita in modalità unitaria (fare riferimento a [questa sezione](../../message-center/using/about-transactional-messaging.md)).
 

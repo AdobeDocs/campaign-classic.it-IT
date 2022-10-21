@@ -2,8 +2,9 @@
 product: campaign
 title: Versioni di Campaign Classic 2018
 description: Ulteriori informazioni sulle versioni di Campaign Classic 2018
+hidefromtoc: true
 exl-id: f70fceba-4bbf-4f33-8746-e4405a1cdae6
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: c929557ee9f5467f9c3b8eb1ed25fae5399820ba
 workflow-type: tm+mt
 source-wordcount: '5385'
 ht-degree: 7%
@@ -213,7 +214,7 @@ Queste modifiche dell&#39;indice possono comportare un aumento del tempo necessa
 * È stato risolto un problema nei rapporti a causa del quale i grafici calcolavano sempre la somma dei valori indipendentemente dall’operatore aggregato selezionato. (NEO-10913)
 * Poiché la funzione &quot;request.schema&quot; è obsoleta, è stata rimossa dalla documentazione JSAPI. (NEO-10828)
 * È stato risolto un problema che impediva ad alcuni utenti con configurazioni di fuso orario specifiche di accedere ad Adobe Campaign. (NEO-10712)
-* È stato risolto un problema che si verificava durante la configurazione di un account esterno di canale Mobile utilizzando il connettore SMPP generico esteso: se si specificava l&#39;utilizzo di parametri diversi per il ricevitore, il trasmettitore utilizzava erroneamente tali parametri invece dei propri parametri.
+* È stato risolto un problema che si verificava durante la configurazione di un account esterno di canale mobile utilizzando il connettore SMPP generico esteso: se si specificava l&#39;utilizzo di parametri diversi per il ricevitore, il trasmettitore utilizzava erroneamente tali parametri invece dei propri parametri.
 * È stato risolto un problema che causava un errore delle consegne programmate durante l’impostazione di una frequenza per la regola di pressione, perché le consegne venivano costantemente ricalcolate dopo il primo arbitrato. (NEO-10016)
 * È stato risolto un problema che causava l&#39;arresto anomalo del server Web IIS durante il processo di riciclo del pool di applicazioni (nella libreria nlsrvmod.dll). (NEO-10862)
 * È stato risolto un problema che poteva impedire la ricerca di un destinatario in **Profili e Target** schermo. (NEO-8228)
