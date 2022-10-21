@@ -6,10 +6,10 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: d42389add06db74c54cb3a21813e9a832a2a288a
+source-git-commit: ecd82fe432d44f14b48b162224dd88bb0f6e6f64
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 5%
+source-wordcount: '560'
+ht-degree: 7%
 
 ---
 
@@ -41,6 +41,43 @@ Un’attività è un elemento della palette che viene aggiunto a un flusso di la
 Ulteriori informazioni [Attività del flusso di lavoro](../../workflow/using/about-activities.md).
 +++
 
++++**ACS Connector**
+
+Il connettore ACS (Prime Offering) collega Adobe Campaign v7 e Adobe Campaign Standard. Si tratta di una funzione integrata in Campaign v7 che replica automaticamente i dati in Campaign Standard, unendo il meglio di entrambe le applicazioni. Campaign v7 dispone di strumenti avanzati per gestire il database di marketing principale. La replica dei dati da Campaign v7 consente ad Campaign Standard di sfruttare i dati avanzati in un ambiente semplice e intuitivo.
+
+Ulteriori informazioni [Connettore ACS](../../integrations/using/acs-connector-principles-and-data-cycle.md).
++++
+
++++**Profilo attivo**
+
+I profili sono considerati attivi se sono stati targetizzati o se è avvenuta una comunicazione con essi negli ultimi 12 mesi tramite qualsiasi canale. In base al contratto, a ciascuna istanza di Campaign viene fornito un numero specifico di profili attivi conteggiati a scopo di fatturazione.
+
+Ulteriori informazioni [Profili attivi](about-profiles.md#active-profiles).
++++
+
+
++++**Approvazione dell’attività del flusso di lavoro**
+
+*Contesto: Marketing distribuito su Campaign*
+
+L’attività Approvazione locale è un’attività del flusso di lavoro utilizzata per impostare un processo di approvazione della consegna prima dell’invio dei messaggi.
+
+Ulteriori informazioni sulle [Attività di approvazione locale](../../workflow/using/local-approval.md).
++++
+
++++**Pubblico**
+
+Un pubblico è il set risultante di profili che soddisfano i criteri di una definizione di filtro, in base a regole e attributi.
+
+Ulteriori informazioni [Tipi di pubblico](../../campaign/using/marketing-campaign-target.md).
++++
+
++++**Audit trail**
+
+Audit trail acquisisce in tempo reale un elenco completo delle azioni e degli eventi che si verificano all’interno dell’istanza di Adobe Campaign. Include un modo self-service per accedere alla cronologia dei dati e rispondere a domande quali: cosa è successo ai flussi di lavoro e chi li ha aggiornati per ultimo o cosa hanno fatto i tuoi utenti nell’istanza.
+
+Ulteriori informazioni [Audit trail](../../production/using/audit-trail.md).
++++
 
 ## E - H {#sec-2}
 
