@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: Informazioni sui profili
-description: Informazioni sui profili
+title: Introduzione ai profili
+description: Utilizzare i profili in Adobe Campaign
 feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
+source-git-commit: d42389add06db74c54cb3a21813e9a832a2a288a
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '842'
 ht-degree: 16%
 
 ---
