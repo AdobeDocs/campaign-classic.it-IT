@@ -6,9 +6,9 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 8aa45f4e9d41b7dc4faf89dad988703b63cea77c
+source-git-commit: cd26bf082d891e55bce489256dd9d43a1e3f243c
 workflow-type: tm+mt
-source-wordcount: '6454'
+source-wordcount: '6453'
 ht-degree: 3%
 
 ---
@@ -51,7 +51,7 @@ Ulteriori informazioni [Attività del flusso di lavoro](../../workflow/using/abo
 
 I profili sono considerati attivi se sono stati targetizzati o se è avvenuta una comunicazione con essi negli ultimi 12 mesi tramite qualsiasi canale. In base al contratto, a ciascuna istanza di Campaign viene fornito un numero specifico di profili attivi conteggiati a scopo di fatturazione.
 
-Ulteriori informazioni [Profili attivi](about-profiles.md#active-profiles).
+Ulteriori informazioni [Profili attivi](../../platform/using/about-profiles.md#active-profiles).
 +++
 
 +++**Approvazione dell’attività del flusso di lavoro**
@@ -759,7 +759,7 @@ Ulteriori informazioni [Piani](../../campaign/using/setting-up-marketing-campaig
 
 I filtri predefiniti sono query salvate per il riutilizzo. L’utilizzo di filtri predefiniti aumenta la produttività (perché vengono creati una sola volta), aiuta a creare coerenza (perché tutti gli addetti al marketing possono utilizzarli) e a ridurre le competenze richieste all’addetto al marketing perché possono utilizzare codice o logica che potrebbero non essere in grado di creare da soli.
 
-Ulteriori informazioni [Filtri predefiniti](../../platforrm/using/creating-filters.md).
+Ulteriori informazioni [Filtri predefiniti](../../configuration/using/creating-filters.md).
 +++
 
 <!--
@@ -775,14 +775,14 @@ Learn more about [Predictive Engagement Scoring](../../platforrm/using/creating-
 
 La chiave primaria è l&#39;identificatore univoco di ogni record in una tabella di database. Una tabella deve avere almeno una chiave. Come regola, le chiavi vengono dichiarate dopo l&#39;elemento principale dello schema e gli indici. Le chiavi primarie non possono essere composte (includere diversi campi).
 
-Ulteriori informazioni [Chiave principale](../../configuration/using/key.md).
+Ulteriori informazioni [Chiave principale](../../configuration/using/schema/key.md).
 +++
 
 +++**Profilo**
 
 Un profilo è un record di informazioni che rappresenta un cliente finale, potenziale cliente o lead. Ogni profilo corrisponde a un record nella tabella nmsRecipient o a una tabella esterna contenente ID cookie, ID cliente, identificatore mobile o altre informazioni pertinenti a un particolare canale.
 
-Ulteriori informazioni [Profili](../../platforrm/using/about-profiles.md).
+Ulteriori informazioni [Profili](../../platform/using/about-profiles.md).
 +++
 
 +++**Programma**
@@ -900,7 +900,7 @@ Ulteriori informazioni [Dati di Target](../../workflow/using/data-life-cycle.md#
 
 Si tratta della mappatura di canali di consegna a un tipo di dati specifico. Adobe Campaign non invia ad indirizzi e-mail o numeri di telefono di per sé, ma piuttosto a tipi di dati. Le mappe di Target (a volte denominate Mappe di consegna) definiscono il modo in cui diversi canali di consegna si collegano ai campi di dati di uno schema. Definisce il modo in cui Campaign invia a quel tipo di dati utilizzando un campo o un’espressione specifica.
 
-Ulteriori informazioni [Dati di Target](../../workflow/using/define-the-right-audience.md#target-mappings).
+Ulteriori informazioni [Dati di Target](../../delivery/using/define-the-right-audience.md#target-mappings).
 +++
 
 +++**Attività di targeting**
@@ -1000,7 +1000,7 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 
 Le regole di tipologia sono regole di business implementate come parte della fase di analisi della consegna. Le regole di tipologia sono controlli sul contenuto della consegna (regole di controllo) o sul target della consegna (regole di filtro) o su altre logiche (regole di pressione) che applicano i requisiti aziendali. Le regole sono elementi granulari che possono essere inclusi in una o più tipologie.
 
-Ulteriori informazioni [Tipologie](../../campaign/using/about-campaign-typologies.md#typology-rules).
+Ulteriori informazioni [Tipologie](../../campaign-opt/using/about-campaign-typologies.md#typology-rules).
 +++
 
 +++**Tipologia**
@@ -1009,7 +1009,7 @@ Ulteriori informazioni [Tipologie](../../campaign/using/about-campaign-typologie
 
 Una tipologia è un raggruppamento di regole di tipologia applicate alla fase di analisi di una consegna. Una tipologia di campagna può contenere diverse regole di tipologia, ma una consegna può fare riferimento a una sola tipologia.
 
-Ulteriori informazioni [Tipologie](../../campaign/using/about-campaign-typologies.md#typologies).
+Ulteriori informazioni [Tipologie](../../campaign-opt/using/about-campaign-typologies.md#typologies).
 +++
 
 ## U - Z {#sec-6}
