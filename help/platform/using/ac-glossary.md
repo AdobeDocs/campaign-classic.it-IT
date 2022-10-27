@@ -6,10 +6,10 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: dea815b07f0b91ed550060fa00cf0501ae6594f7
+source-git-commit: 9900fb627dfb310e8f34735a502997ef8e24e769
 workflow-type: tm+mt
-source-wordcount: '6087'
-ht-degree: 4%
+source-wordcount: '5993'
+ht-degree: 3%
 
 ---
 
@@ -140,14 +140,14 @@ Ulteriori informazioni [Approvazione dei contenuti](../../campaign/using/marketi
 
 Utilizza i gruppi di controllo per misurare l’impatto delle campagne escludendo parte del pubblico. Gli operatori possono confrontare il comportamento della popolazione target che ha ricevuto il messaggio con il comportamento dei contatti non interessati. In base ai registri di invio, gli operatori possono inoltre eseguire il targeting di un gruppo di controllo in campagne future.
 
-Ulteriori informazioni [Approvazione dei contenuti](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
+Ulteriori informazioni [Gruppi di contenuti](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 +++
 
 +++**Pannello di controllo Campaign**
 
-Il Pannello di controllo Campaign consente di aumentare l’efficienza del lavoro come amministratore di prodotto di Adobe Campaign, consentendoti di gestire le impostazioni e tenere traccia degli utilizzi per ciascuna istanza. L’interfaccia intuitiva consente di monitorare facilmente l’utilizzo delle risorse chiave, nonché di eseguire attività amministrative come l’inserimento di indirizzi IP nell’elenco Consentiti, il monitoraggio dell’archiviazione SFTP, la gestione delle chiavi e altro ancora.
+Il Pannello di controllo Campaign consente agli amministratori di prodotto di Adobe Campaign di aumentare l’efficienza del proprio lavoro, consentendo loro di gestire le impostazioni e monitorare gli utilizzi per ciascuna delle istanze. L’interfaccia intuitiva consente di monitorare facilmente l’utilizzo delle risorse chiave, nonché di eseguire attività amministrative come l’aggiunta di indirizzi IP, il monitoraggio dell’archiviazione SFTP, la gestione delle chiavi e altro ancora.
 
-Ulteriori informazioni [Approvazione dei contenuti](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=it).
+Ulteriori informazioni [Pannello dei contenuti](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=it).
 +++
 
 +++**Cubi**
@@ -170,7 +170,7 @@ Ulteriori informazioni [Risorse personalizzate](../../configuration/using/about-
 
 Il modello dati di Campaign è un set di schemi che definiscono i tipi di dati e le loro relazioni (collegamenti). Il modello dati è una definizione astratta che viene fisicamente implementata con un database che contiene i dati effettivi.
 
-Ulteriori informazioni [Risorse personalizzate](../../configuration/using/about-data-model.md).
+Ulteriori informazioni [Modello dati](../../configuration/using/about-data-model.md).
 +++
 
 +++**Flusso di lavoro di pulizia del database**
@@ -270,7 +270,7 @@ Ulteriori informazioni [Marketing distribuito](../../distributed/using/about-dis
 
 La Distribuzione dei valori è uno strumento che mostra la distribuzione dei valori per un attributo dello schema attualmente presente nel database. Questo consente di determinare i valori disponibili, i relativi conteggi e percentuali e di evitare problemi con la maiuscola e l’ortografia dei valori durante la creazione di una query o di un’espressione.
 
-Ulteriori informazioni [Marketing distribuito](../../platform/using/defining-filter-conditions.md#selecting-data-to-extract)
+Ulteriori informazioni [Distribuzione dei valori](../../platform/using/defining-filter-conditions.md#selecting-data-to-extract)
 +++
 
 +++**Delega del dominio**
@@ -492,7 +492,7 @@ Ulteriori informazioni [Impostazioni delle istanze](../../installation/using/abo
 
 I processi sono gestiti da un sistema guidato che semplifica l’importazione e l’esportazione di dati in e fuori dal prodotto. I processi utilizzano il sistema di template per semplicità e coerenza e possono essere definiti per l&#39;esecuzione su una pianificazione.
 
-Ulteriori informazioni [Processi di importazione ed esportazione](../../platform/using/get-started-data-import-export.md).
+Ulteriori informazioni [processi di importazione ed esportazione](../../platform/using/get-started-data-import-export.md).
 +++
 
 +++**Elenchi**
@@ -542,12 +542,15 @@ Lo spazio dei nomi è una partizione che separa i tipi di dati del cliente dai t
 Ulteriori informazioni [Namespace](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 +++
 
-+++**Barra di navigazione**
+<!--
+----generic, not specific to campaign----
++++**Navigation bar**
 
-La barra di navigazione è l’elemento di navigazione in esecuzione nella parte superiore dell’interfaccia. La barra di navigazione raggruppa le varie funzionalità di base della piattaforma. Fai clic su un collegamento a una barra di navigazione per visualizzare il set di funzionalità correlate a questa funzionalità. L’elenco delle funzionalità di base a cui puoi accedere dipende dai pacchetti e dai componenti aggiuntivi installati e dai diritti di accesso. Scopo della barra di navigazione è semplificare la gestione dello schermo e aumentare la produttività.
+The navigation bar is the navigation element running across the top of the interface. The navigation bar regroups the various core capabilities of the platform. Click a navigation bar link to display the set of functionalities related to this capability. The list of core capabilities you can access depends on the packages and add-ons you have installed and on your access rights. The purpose of the Navigation bar is to simplify screen management and increase productivity.
 
-Ulteriori informazioni [Barra di navigazione](../../platform/using/adobe-campaign-workspace.md#browsing-pages).
+Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.md#browsing-pages).
 +++
+-->
 
 +++**Struttura di navigazione**
 
@@ -592,7 +595,7 @@ Ulteriori informazioni [Interazione](../../interaction/using/interaction-and-off
 
 L’offerta **Ambiente di progettazione** è l’ambiente in cui gli operatori creano offerte, definiscono regole di tipologia e selezionano lo schema a cui verranno indirizzate le offerte. Anche la tabella per l’archiviazione delle proposte di offerta generate è definita dall’ambiente. Per impostazione predefinita, il componente aggiuntivo Interazione viene fornito con un **Progettazione** ambiente e **Live** ambiente ad esso collegato. Entrambi gli ambienti sono preconfigurati per eseguire il targeting della tabella dei destinatari incorporata.
 
-Ulteriori informazioni [Ambienti di progettazione](../../interaction/using/fundamental-principles.md).
+Ulteriori informazioni [Ambienti di progettazione delle offerte](../../interaction/using/fundamental-principles.md).
 +++
 
 +++**arbitraggio del motore di offerta**
@@ -619,7 +622,7 @@ Ulteriori informazioni [Interazione](../../interaction/using/interaction-and-off
 
 L’ambiente delle offerte è la cartella principale che definisce un catalogo di offerte, i relativi spazi disponibili e i filtri predefiniti dell’ambiente. Gli operatori devono creare un ambiente per ogni dimensione di targeting. Esistono due tipi di ambienti di offerta: Design e Live.
 
-Ulteriori informazioni [Ambienti](../../interaction/using/fundamental-principles.md).
+Ulteriori informazioni [Ambienti di offerta](../../interaction/using/fundamental-principles.md).
 +++
 
 +++**Ambiente live offerta**
@@ -628,7 +631,7 @@ Ulteriori informazioni [Ambienti](../../interaction/using/fundamental-principles
 
 L’ambiente Offer Live è collegato a una campagna **Ambiente di progettazione**. Contiene offerte di sola lettura il cui contenuto e idoneità sono stati approvati tramite il **Ambiente di progettazione**. Possono essere selezionati per la presentazione su un sito web o per essere inseriti in un messaggio in uscita.
 
-Ulteriori informazioni [Ambienti live](../../interaction/using/fundamental-principles.md).
+Ulteriori informazioni [Ambienti live delle offerte](../../interaction/using/fundamental-principles.md).
 +++
 
 +++**Regole di presentazione delle offerte**
@@ -662,7 +665,7 @@ Ulteriori informazioni [Proposte di offerta](../../interaction/using/creating-of
 
 *Contesto: Interazione campagna*
 
-Una proposta di offerta è il risultato dell’azione che consiste nel presentare un’offerta a un contatto in un dato spazio di offerta, ad esempio il banner su un sito web, un contenuto e-mail o SMS. Questo risultato viene memorizzato nella tabella delle proposte di offerta che definisce l’offerta, il destinatario e la marca temporale, fornendo un record di tutte le offerte ricevute da un destinatario.
+Per rappresentazione di un’offerta si intendono le informazioni utilizzate dal canale per visualizzare l’offerta. La rappresentazione dell’offerta può essere creata a partire dalla funzione di rendering dello spazio su cui l’offerta è rappresentata o inserita direttamente nell’interfaccia (ad esempio, nel blocco HTML). Un&#39;offerta può essere rappresentata da uno spazio.
 
 Ulteriori informazioni [Interazione](../../interaction/using/interaction-and-offer-management.md).
 +++
@@ -682,7 +685,7 @@ Ulteriori informazioni [Simulazioni di offerte](../../interaction/using/about-of
 
 Uno spazio di offerta è una cartella che definisce il percorso in cui viene esposta l’offerta. La definizione di uno spazio consente di specificare il canale utilizzato, generare il contenuto dell’offerta e specificare le offerte presentate. Lo spazio di offerta è l’interfaccia tra il canale e il motore di offerta.
 
-Ulteriori informazioni [Simulazioni di offerte](../../interaction/using/creating-offer-spaces.md).
+Ulteriori informazioni [Spazio offerta](../../interaction/using/creating-offer-spaces.md).
 +++
 
 +++**Temi di offerta**
@@ -1012,7 +1015,7 @@ Ulteriori informazioni [Messaggistica transazionale](../../message-center/using/
 <!------- USEFUL HERE??----->
 +++**Campagne attivate**
 
-Campagne attivate sono campagne eseguite quando viene ricevuta una richiesta API in un flusso di lavoro. Le chiamate API vengono utilizzate da un’attività Signal nel flusso di lavoro che avvia l’esecuzione del flusso di lavoro.
+Le campagne attivate sono campagne eseguite quando viene ricevuta una richiesta API in un flusso di lavoro. Le chiamate API vengono utilizzate da un’attività Signal nel flusso di lavoro che avvia l’esecuzione del flusso di lavoro.
 
 Ulteriori informazioni [Campagne attivate](../../workflow/using/external-signal.md).
 +++
