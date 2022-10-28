@@ -4,11 +4,9 @@ title: Glossario per Adobe Campaign
 description: Glossario per Adobe Campaign
 role: User, Data Architect
 level: Beginner
-hide: true
-hidefromtoc: true
-source-git-commit: 9900fb627dfb310e8f34735a502997ef8e24e769
+source-git-commit: 3a540b59640d4cf128417f751d0076fd97310768
 workflow-type: tm+mt
-source-wordcount: '5993'
+source-wordcount: '6041'
 ht-degree: 3%
 
 ---
@@ -140,14 +138,14 @@ Ulteriori informazioni [Approvazione dei contenuti](../../campaign/using/marketi
 
 Utilizza i gruppi di controllo per misurare l’impatto delle campagne escludendo parte del pubblico. Gli operatori possono confrontare il comportamento della popolazione target che ha ricevuto il messaggio con il comportamento dei contatti non interessati. In base ai registri di invio, gli operatori possono inoltre eseguire il targeting di un gruppo di controllo in campagne future.
 
-Ulteriori informazioni [Gruppi di contenuti](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
+Ulteriori informazioni [Gruppi di controllo](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 +++
 
 +++**Pannello di controllo Campaign**
 
 Il Pannello di controllo Campaign consente agli amministratori di prodotto di Adobe Campaign di aumentare l’efficienza del proprio lavoro, consentendo loro di gestire le impostazioni e monitorare gli utilizzi per ciascuna delle istanze. L’interfaccia intuitiva consente di monitorare facilmente l’utilizzo delle risorse chiave, nonché di eseguire attività amministrative come l’aggiunta di indirizzi IP, il monitoraggio dell’archiviazione SFTP, la gestione delle chiavi e altro ancora.
 
-Ulteriori informazioni [Pannello dei contenuti](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=it).
+Ulteriori informazioni [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=it).
 +++
 
 +++**Cubi**
@@ -284,12 +282,12 @@ Ulteriori informazioni [Delega del dominio](https://experienceleague.adobe.com/d
 ## E - H {#sec-2}
 
 <!--
-----DEPREACTED----
+----DEPRECATED------>
 +++**E4X**
 
-The version of Javascript that is used in Adobe Campaign Classic. Sometimes called ECMAScript, it is an extension of Javascript that allows the mixing of Javascript and XML primitives in the same code. Note that E4X is classified as a deprecated language. 
+E4X è la versione di Javascript utilizzata in Adobe Campaign Classic. Talvolta denominata ECMAScript, si tratta di un&#39;estensione di Javascript che consente di mixare Javascript e primitivi XML nello stesso codice. Nota che E4X è classificato come lingua obsoleta.
 +++
--->
+
 
 +++**Regole di idoneità**
 
@@ -1060,14 +1058,14 @@ Ulteriori informazioni [Modalità unitaria](../../interaction/using/about-inboun
 +++
 
 <!--
------NO OCCURRENCE IN ACC, OLD v6 CONCEPT?----
+-----NO OCCURRENCE IN ACC, OLD v6 CONCEPT?
 +++**Universes**
 
 Application pages hosted by the Campaign instance. Used for approval forms, landing pages, opt-out forms, preference pages or to implement other business requirements.  
 
 Learn more about [Universes](../../workflow/using/about-workflows.md).
 +++
--->
+------>
 
 +++**Applicazioni web**
 
