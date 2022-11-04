@@ -1,10 +1,10 @@
 ---
 product: campaign
-title: '"Caso d’uso: visualizzare un rapporto sulle risposte a un sondaggio online"'
-description: '"Caso d’uso: visualizzare un rapporto sulle risposte a un sondaggio online"'
+title: "Caso d’uso: visualizzare un rapporto sulle risposte a un sondaggio online"
+description: "Caso d’uso: visualizzare un rapporto sulle risposte a un sondaggio online"
 feature: Reporting, Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 5%
@@ -65,7 +65,7 @@ Per raccogliere le risposte al sondaggio, effettua le seguenti operazioni:
 
 ## Passaggio 2 - Creazione del cubo, delle sue misure e dei suoi indicatori {#step-2---creating-the-cube--its-measures-and-its-indicators}
 
-È quindi possibile creare il cubo e configurarne le misure: verranno utilizzati per creare gli indicatori che saranno visualizzati nel rapporto. Per ulteriori informazioni sulla creazione e la configurazione dei cubi, consulta [Informazioni sui cubi](../../reporting/using/about-cubes.md).
+È quindi possibile creare il cubo e configurarne le misure: verranno utilizzati per creare gli indicatori che saranno visualizzati nel rapporto. Per ulteriori informazioni sulla creazione e la configurazione dei cubi, consulta [Informazioni sui cubi](../../reporting/using/ac-cubes.md).
 
 In questo esempio, il cubo è basato sui dati presenti nell’elenco inviato dal flusso di lavoro creato in precedenza.
 

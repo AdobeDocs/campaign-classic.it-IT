@@ -4,7 +4,7 @@ title: Best practice per il reporting
 description: Best practice per la generazione di rapporti sulle campagne
 feature: Reporting
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 0%
@@ -29,13 +29,13 @@ Per ottimizzare la creazione, l’utilizzo e la durata di un rapporto, è necess
 
    Ad esempio, puoi:
 
-   * Esplora i dati nel database e definisci le misurazioni. Ulteriori informazioni [in questa sezione](../../reporting/using/about-cubes.md)
+   * Esplora i dati nel database e definisci le misurazioni. Ulteriori informazioni [in questa sezione](../../reporting/using/ac-cubes.md)
    * Aggiungi indicatori a un rapporto esistente. Ulteriori informazioni [in questa sezione](../../reporting/using/about-reports-creation-in-campaign.md)
    * Visualizza i dati nel database. Ulteriori informazioni [in questa sezione](../../reporting/using/about-descriptive-analysis.md)
    * Crea un nuovo rapporto di consegna. Ulteriori informazioni [in questa sezione](../../reporting/using/about-reports-creation-in-campaign.md)),
    * Esporta dati dal database di Adobe Campaign (tramite un flusso di lavoro, fai riferimento a [questa sezione](../../workflow/using/about-workflows.md)
    * Creare una tabella pivot. Ulteriori informazioni [in questa sezione](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
-   * Esplorare i dati aggregati. Ulteriori informazioni [in questa sezione](../../reporting/using/about-cubes.md)
+   * Esplorare i dati aggregati. Ulteriori informazioni [in questa sezione](../../reporting/using/ac-cubes.md)
    * Utilizza una procedura guidata per analizzare i dati. Ulteriori informazioni [in questa sezione](../../reporting/using/about-descriptive-analysis.md)
    * Analizzare grandi volumi di dati. Ulteriori informazioni [in questa sezione](../../reporting/using/about-reports-creation-in-campaign.md)
 

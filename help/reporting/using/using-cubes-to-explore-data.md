@@ -3,8 +3,10 @@ product: campaign
 title: Usare i cubi per esplorare i dati
 description: Usare i cubi per esplorare i dati
 feature: Reporting
+hide: true
+hidefromtoc: true
 exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 2%
@@ -23,7 +25,7 @@ Marketing Analytics semplifica la creazione di rapporti e l&#39;identificazione 
 
 >[!NOTE]
 >
->Marketing Analytics è necessario per creare o modificare i cubi. Per ulteriori informazioni, consulta [Informazioni sui cubi](../../reporting/using/about-cubes.md).
+>Marketing Analytics è necessario per creare o modificare i cubi. Per ulteriori informazioni, consulta [Informazioni sui cubi](../../reporting/using/ac-cubes.md).
 
 ## Esplorare i dati in un rapporto {#exploring-the-data-in-a-report}
 

@@ -3,8 +3,10 @@ product: campaign
 title: Best practice per i cubi
 description: Best practice per i cubi
 feature: Reporting
+hide: true
+hidefromtoc: true
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 0%
@@ -127,8 +129,6 @@ I maggiori volumi di dati possono essere calcolati in aggregati.
 Gli aggregati sono utili per la manipolazione di grandi volumi di dati. Vengono aggiornati automaticamente in base alle impostazioni definite nella casella del flusso di lavoro dedicata, per integrare i dati raccolti più di recente negli indicatori
 
 Gli aggregati sono definiti nella scheda pertinente di ciascun cubo.
-
-![](assets/s_advuser_cube_agregate_01.png)
 
 >[!NOTE]
 >

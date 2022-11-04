@@ -6,9 +6,9 @@ title: Guida di Campaign Classic v7
 user-guide-description: Con Adobe Campaign, puoi utilizzare dati approfonditi sui clienti per creare, coordinare e distribuire campagne dinamiche che i clienti desiderano realmente, tramite e-mail, dispositivi mobili, canali offline e altro ancora.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: d42389add06db74c54cb3a21813e9a832a2a288a
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
-source-wordcount: '2584'
+source-wordcount: '2588'
 ht-degree: 100%
 
 ---
@@ -314,6 +314,7 @@ ht-degree: 100%
       + [Proprietà del rapporto](reporting/using/properties-of-the-report.md)
       + [Configurare l’accesso al rapporto](reporting/using/configuring-access-to-the-report.md)
       + [Azioni sui rapporti](reporting/using/actions-on-reports.md)
+   + [Progettare rapporti con cubi](reporting/using/ac-cubes.md)
    + Progettare rapporti con cubi {#designing-reports-with-cubes}
       + [Introduzione ai cubi](reporting/using/about-cubes.md)
       + [Creare indicatori](reporting/using/creating-indicators.md)

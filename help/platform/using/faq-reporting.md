@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: b29340a0-954d-41e4-b0a3-9d356e4dc753
-source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 100%
@@ -43,7 +43,7 @@ Puoi estendere le capacità di esplorazione e di analisi del database e semplifi
 
 Una volta creati e configurati, i cubi vengono utilizzati nelle caselle di query dei report e nelle applicazioni web. Possono essere utilizzati e manipolati all’interno di tabelle pivot.
 
-Scopri come [esplorare i tuoi dati](../../reporting/using/using-cubes-to-explore-data.md) con i cubi.
+Scopri come [esplorare i tuoi dati](../../reporting/using/ac-cubes.md) con i cubi.
 
 ## Posso creare un report dalle risposte a un sondaggio online? {#can-i-create-a-report-from-answers-to-an-online-survey-}
 

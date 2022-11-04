@@ -4,10 +4,10 @@ title: Aggregato di aggiornamento
 description: Ulteriori informazioni sull’attività del flusso di lavoro aggregato Aggiorna
 feature: Workflows
 exl-id: d2b26af0-30a1-4852-acd5-996795f198a1
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 4%
+source-wordcount: '123'
+ht-degree: 3%
 
 ---
 
@@ -17,7 +17,12 @@ ht-degree: 4%
 
 Gli aggregati sono definiti a livello di cubo a scopo di reporting. A **[!UICONTROL Workflow]** è disponibile durante la configurazione di un aggregato.
 
-Per ulteriori informazioni sui cubi e sull’utilizzo degli aggregati in Adobe Campaign, consulta l’ [sezione](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates).
+Gli aggregati sono utili per la manipolazione di grandi volumi di dati. Vengono aggiornati automaticamente in base alle impostazioni definite nella casella del flusso di lavoro dedicata, per integrare i dati raccolti più di recente negli indicatori
+
+Gli aggregati sono definiti nella scheda pertinente di ciascun cubo.
+
+![](assets/s_advuser_cube_agregate_01.png)
+
 
 La **[!UICONTROL Update aggregate]** activity ti consente di selezionare la modalità di aggiornamento da applicare: completo o parziale.
 

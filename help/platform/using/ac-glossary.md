@@ -4,10 +4,10 @@ title: Glossario per Adobe Campaign
 description: Glossario per Adobe Campaign
 role: User, Data Architect
 level: Beginner
-source-git-commit: 3a540b59640d4cf128417f751d0076fd97310768
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '6041'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -154,7 +154,7 @@ Ulteriori informazioni [Pannello di controllo Campaign](https://experienceleague
 
 Cube è uno strumento di esplorazione intuitiva dei dati di Adobe Campaign che consente agli utenti di creare e condividere rapporti dinamici.
 
-Ulteriori informazioni [Cubi](../../reporting/using/about-cubes.md).
+Ulteriori informazioni [Cubi](../../reporting/using/ac-cubes.md).
 +++
 
 +++**Risorse personalizzate**
@@ -557,7 +557,7 @@ La struttura di navigazione è la navigazione principale nella vista Esplora ris
 Ulteriori informazioni [Struttura di navigazione](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarch).
 +++
 
-+++**Obiettivi**
++++**Finalità**
 
 *Contesto: Gestione delle risorse di marketing (MRM)*
 
@@ -677,7 +677,7 @@ Una simulazione di offerta consente agli operatori di verificare la distribuzion
 Ulteriori informazioni [Simulazioni di offerte](../../interaction/using/about-offers-simulation.md).
 +++
 
-+++**Spazio offerta**
++++**Spazio dell’offerta**
 
 *Contesto: Interazione campagna*
 

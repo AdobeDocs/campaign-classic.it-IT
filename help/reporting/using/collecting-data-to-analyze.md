@@ -4,7 +4,7 @@ title: Raccogliere dati da analizzare
 description: Raccogliere dati da analizzare
 feature: Reporting
 exl-id: cf621374-88f9-4def-8bea-87e0ea69ecd3
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 3%
@@ -55,7 +55,7 @@ Fai clic sul pulsante **[!UICONTROL Edit query...]** collegamento per definire i
 
 ![](assets/reporting_query_from_cube.png)
 
-I cubi consentono di estendere le capacità di esplorazione e analisi del database, facilitando al contempo la configurazione di report e tabelle per gli utenti finali: seleziona semplicemente un Cubo esistente completamente configurato e utilizza i suoi calcoli, misure e statistiche. Per ulteriori informazioni sulla creazione dei cubi, consulta [questa sezione](../../reporting/using/about-cubes.md).
+I cubi consentono di estendere le capacità di esplorazione e analisi del database, facilitando al contempo la configurazione di report e tabelle per gli utenti finali: seleziona semplicemente un Cubo esistente completamente configurato e utilizza i suoi calcoli, misure e statistiche. Per ulteriori informazioni sulla creazione dei cubi, consulta [questa sezione](../../reporting/using/ac-cubes.md).
 
 Fai clic sul pulsante **[!UICONTROL Edit query...]** e seleziona gli indicatori da visualizzare o utilizzare nel rapporto.
 

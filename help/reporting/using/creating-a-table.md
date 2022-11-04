@@ -4,7 +4,7 @@ title: Creare una tabella
 description: Creare una tabella
 feature: Reporting
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '2495'
 ht-degree: 1%
@@ -464,4 +464,4 @@ Questo tipo di tabella consente di visualizzare le statistiche calcolate sui dat
 
 La configurazione di questi tipi di report è simile a quella utilizzata per la procedura guidata di analisi descrittiva. Per ulteriori informazioni, consulta [questa pagina](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template).
 
-Per ulteriori informazioni sulla creazione di una tabella pivot, consulta [questa sezione](../../reporting/using/using-cubes-to-explore-data.md).
+Per ulteriori informazioni sulla creazione di una tabella pivot, consulta [questa sezione](../../reporting/using/ac-cubes.md).

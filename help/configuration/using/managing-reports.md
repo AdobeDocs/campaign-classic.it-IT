@@ -3,7 +3,7 @@ product: campaign
 title: Gestione dei rapporti
 description: Gestione dei rapporti
 exl-id: 68908664-3cf6-4a6c-a327-c7f059c27aa3
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 4%
@@ -18,7 +18,7 @@ I rapporti basati su uno schema specifico per i destinatari Adobe Campaign prede
 
 Per creare nuovi rapporti, consulta [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md).
 
-In alcuni casi, è necessario anche mettere nuovi cubi che sono specifici a queste tabelle. I cubi sono descritti in [questa sezione](../../reporting/using/about-cubes.md).
+In alcuni casi, è necessario anche mettere nuovi cubi che sono specifici a queste tabelle. I cubi sono descritti in [questa sezione](../../reporting/using/ac-cubes.md).
 
 Si tratta delle seguenti relazioni:
 
