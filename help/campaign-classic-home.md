@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;argomenti principali
 product: campaign
 title: Documentazione del prodotto Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
+source-git-commit: 43d9eac2ed161465ca00ee4f511e4c020b4c44a2
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 52%
+source-wordcount: '211'
+ht-degree: 54%
 
 ---
 
@@ -19,8 +19,6 @@ ht-degree: 52%
 * **[Programma di rilascio 2022](technotes/using/dc-migration.md)**<br/> Aggiornare l’ambiente e migliorare la sicurezza, l’infrastruttura e le prestazioni
 
 * **[Il rilascio di luglio è live!](rn/using/latest-release.md)**<br/> Scopri nuove funzionalità, miglioramenti e correzioni nelle note sulla versione
-
-* **[Domande frequenti sulla protezione della privacy di Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=it)** e **[nota tecnica](technotes/using/apple-mail-app-privacy-protection.md)**<br/> Trova indicazioni in risposta all’annuncio di Apple su iOS 15
 
 * **[Rimuovi rimbalzi rigidi errati](delivery/using/update-bounce-qualification.md)**<br/> Scopri come aggiornare i non corretti rimbalzi rigidi dopo l’interruzione di Apple
 

@@ -3,9 +3,9 @@ product: campaign
 title: Protezione della privacy della posta nell’app Apple Mail
 description: Scopri in che modo le tue campagne potrebbero essere influenzate dalla funzione di protezione della privacy della posta di Apple
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
-source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
+source-git-commit: 43d9eac2ed161465ca00ee4f511e4c020b4c44a2
 workflow-type: tm+mt
-source-wordcount: '2100'
+source-wordcount: '2068'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Nel 2021, Apple ha introdotto nuove funzionalità di protezione della privacy pe
 
 ## In che modo vengono influenzate le mie campagne?
 
-Adobe Campaign fornisce la capacità di utilizzare i pixel di tracciamento per tenere traccia delle aperture delle e-mail. Puoi utilizzare questa funzionalità non solo per il targeting e le campagne, ma anche per le metriche. Ad esempio, puoi utilizzare i tassi di apertura delle e-mail per misurare l’efficacia delle campagne e il coinvolgimento degli utenti. In breve, segmentazione, targeting e metriche potrebbero essere interessati nelle campagne. [Leggi tutto](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html#in-addition-to-measuring-opens%2C-what-else-is-impacted%3F){target=&quot;_blank&quot;}.
+Adobe Campaign fornisce la capacità di utilizzare i pixel di tracciamento per tenere traccia delle aperture delle e-mail. Puoi utilizzare questa funzionalità non solo per il targeting e le campagne, ma anche per le metriche. Ad esempio, puoi utilizzare i tassi di apertura delle e-mail per misurare l’efficacia delle campagne e il coinvolgimento degli utenti. In breve, segmentazione, targeting e metriche potrebbero essere interessati nelle campagne.
 
 ## Quali azioni devo intraprendere?
 
@@ -61,7 +61,7 @@ Per raccogliere informazioni dai dati di Adobe Campaign, puoi utilizzare i rappo
 
 * **[!UICONTROL Operating Systems]** rapporto
 
-   Per identificare la proporzione di visitatori per sistema operativo e per versione, utilizza questo rapporto. [Leggi tutto](../../reporting/using/global-reports.md#operating-systems).
+   Per identificare la proporzione di visitatori per sistema operativo e per versione, utilizza questo rapporto. [Ulteriori informazioni](../../reporting/using/global-reports.md#operating-systems).
 
    Puoi visualizzare la suddivisione dei visitatori per sistema operativo in relazione al numero totale di visitatori.
 
@@ -73,7 +73,7 @@ Per raccogliere informazioni dai dati di Adobe Campaign, puoi utilizzare i rappo
 
 * **[!UICONTROL Breakdown of opens]** rapporto
 
-   Per identificare la proporzione di aperture di e-mail per sistema operativo, utilizza questo rapporto. [Leggi tutto](../../reporting/using/global-reports.md#breakdown-of-opens).
+   Per identificare la proporzione di aperture di e-mail per sistema operativo, utilizza questo rapporto. [Ulteriori informazioni](../../reporting/using/global-reports.md#breakdown-of-opens).
 
    ![](../../reporting/using/assets/dlv_useragent_report.png)
 
@@ -326,7 +326,7 @@ Si consiglia vivamente di conservare questi dati per diversi motivi:
 
 * Questi dati vengono conservati da Adobe Campaign per un periodo limitato. Il periodo di conservazione varia a seconda della configurazione dell’istanza.
 
-   Controlla la configurazione dell&#39;istanza. [Leggi tutto](../../platform/using/privacy-management.md#data-retention).
+   Controlla la configurazione dell&#39;istanza. [Ulteriori informazioni](../../platform/using/privacy-management.md#data-retention).
 
 * Oltre alle recenti modifiche apportate da Apple, puoi utilizzare i dati di tracciamento per aggiungere un valore immenso al coinvolgimento del pubblico.
 * Apple potrebbe apportare ulteriori modifiche alla propria app Mail nativa e alla relativa funzione di protezione della privacy della posta.
@@ -335,11 +335,11 @@ Per tutti questi motivi, ti consigliamo vivamente di esportare questi dati il pr
 
 #### Come posso conservare i dati di tracciamento?
 
-Per conservare i dati di tracciamento, devi esportarli da Adobe Campaign al tuo sistema informativo. [Leggi tutto](../../platform/using/get-started-data-import-export.md).
+Per conservare i dati di tracciamento, devi esportarli da Adobe Campaign al tuo sistema informativo. [Ulteriori informazioni](../../platform/using/get-started-data-import-export.md).
 
 >[!IMPORTANT]
 >
->L&#39;esempio seguente si concentra sull&#39;predefinito `nms:Recipient` schema, che è lo schema di profilo predefinito. Se utilizzi mappature di destinazione personalizzate aggiuntive associate ai profili personalizzati, ti consigliamo di estendere questa strategia di esportazione a tutte le tabelle di log personalizzate. [Leggi tutto](../../configuration/using/target-mapping.md).
+>L&#39;esempio seguente si concentra sull&#39;predefinito `nms:Recipient` schema, che è lo schema di profilo predefinito. Se utilizzi mappature di destinazione personalizzate aggiuntive associate ai profili personalizzati, ti consigliamo di estendere questa strategia di esportazione a tutte le tabelle di log personalizzate. [Ulteriori informazioni](../../configuration/using/target-mapping.md).
 
 ##### Principio
 
@@ -450,7 +450,3 @@ Questi esempi mostrano come utilizzare i flussi di lavoro per suddividere i reco
    Questo tipo di flusso di lavoro è utile se archivi i destinatari in una tabella diversa da quella predefinita.
 
    ![](assets/export-tracking-data-wkf-2.png)
-
-## Collegamenti utili
-
-[Domande frequenti sulla protezione della privacy di Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html){target=&quot;_blank&quot;}
