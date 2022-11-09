@@ -4,7 +4,7 @@ title: Privacy
 description: Ulteriori informazioni sulle best practice da seguire in materia di privacy
 feature: URL Personalization, Privacy
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: fcbaacccaf3f1771570e42e7a83847ed3fd998ef
 workflow-type: tm+mt
 source-wordcount: '892'
 ht-degree: 4%
@@ -77,7 +77,7 @@ Per disabilitare gli URL generati nelle build precedenti, segui questi passaggi 
 
 Per abilitare la firma URL, segui questi passaggi su tutti i server Campaign contemporaneamente:
 
-1. Nel file di configurazione del server (serverConf.xml), modifica **signEmailLinks** a **false**.
+1. Nel file di configurazione del server (serverConf.xml), modifica **signEmailLinks** a **true**.
 1. Riavvia **nlserver** servizio.
 1. Sul server di tracciamento, riavvia il server web (apache2 su Debian, httpd su CentOS/RedHat, IIS su Windows).
 
