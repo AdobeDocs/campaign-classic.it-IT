@@ -4,7 +4,7 @@ title: Introduzione ai sondaggi
 description: Guida introduttiva ai sondaggi su Campaign
 feature: Surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # Introduzione ai sondaggi{#about-surveys}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Adobe Campaign include un modulo grafico per definire e pubblicare applicazioni Web. Viene utilizzato per creare pagine, ad esempio un modulo di modifica su una extranet, o moduli di notifica, inclusi dati dal database con tabelle, grafici, moduli di input, ecc. Utilizza questa funzionalità per progettare e pubblicare pagine web in cui gli utenti possono cercare o immettere informazioni.
 

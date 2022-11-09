@@ -4,7 +4,7 @@ title: Coupon personalizzati
 description: Scopri come creare e inserire coupon personalizzati
 feature: Personalization
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Coupon personalizzati{#personalized-coupons}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 L’aggiunta di coupon alle consegne può fornire ai destinatari un valore aggiunto per prodotti e servizi. Puoi utilizzare il modulo Coupon di Campaign per creare un set di coupon da aggiungere alle prossime offerte di marketing. Quando sei pronto per creare una consegna, assegna i coupon applicabili. Poiché i coupon sono validi per un periodo selezionato, un coupon assegnato è collegato in modo univoco al relativo messaggio di consegna. Inoltre, Campaign conferma che ci sono abbastanza coupon per il numero di messaggi prima che la consegna venga inviata.
 

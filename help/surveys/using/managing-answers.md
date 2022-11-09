@@ -4,7 +4,7 @@ title: Gestire le risposte
 description: Scopri come gestire le risposte ai sondaggi
 feature: Surveys
 exl-id: 0b5dc602-e16f-4bf1-bd8f-352e0bc78996
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
 workflow-type: tm+mt
 source-wordcount: '839'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Gestire le risposte{#managing-answers}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 ## Archiviazione delle risposte raccolte {#storing-collected-answers}
 
@@ -39,7 +39,7 @@ Per aggiungere un vincolo, selezionalo dall’elenco a discesa. Esistono due tip
 
    Le informazioni immesse possono essere memorizzate nel campo nei seguenti formati: tutte le lettere maiuscole, tutte minuscole o con maiuscolo iniziale. Questo vincolo non richiede all’utente di immettere i dati nel formato selezionato, ma il contenuto immesso nel campo verrà convertito al momento del salvataggio.
 
-1. Formato dati
+1. Formato dei dati
 
 Se questo campo viene utilizzato in un elenco, i valori dell’enumerazione possono essere recuperati automaticamente nella tabella dei valori utilizzando **[!UICONTROL Initialize the list of values from the database]** sopra l’elenco dei valori.
 

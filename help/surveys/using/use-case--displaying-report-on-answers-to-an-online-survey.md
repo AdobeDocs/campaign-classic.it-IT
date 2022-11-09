@@ -4,7 +4,7 @@ title: "Caso di utilizzo: visualizzazione di un report sulle risposte a un sonda
 description: "Caso di utilizzo: visualizzazione di un report sulle risposte a un sondaggio online"
 feature: Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 5%
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # Caso di utilizzo: visualizzare un report sulle risposte a un sondaggio online{#use-case-displaying-report-on-answers-to-an-online-survey}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Le risposte ai sondaggi Adobe Campaign possono essere raccolte e analizzate utilizzando report dedicati.
 
