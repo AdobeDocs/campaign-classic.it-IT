@@ -3,9 +3,9 @@ product: campaign
 title: Protezione della privacy della posta nell’app Apple Mail
 description: Scopri in che modo le tue campagne potrebbero essere influenzate dalla funzione di protezione della privacy della posta di Apple
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
-source-git-commit: 43d9eac2ed161465ca00ee4f511e4c020b4c44a2
+source-git-commit: 83fe7eb4f857306ac1c8bb3a93a9393b76ae1e3c
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2056'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ## Cosa è cambiato?
 
-Nel 2021, Apple ha introdotto nuove funzionalità di protezione della privacy per la propria app Mail nativa. Questa app ora include la funzionalità di protezione della privacy della posta di Apple. In sostanza, i mittenti non possono più utilizzare i pixel di tracciamento per raccogliere informazioni sui destinatari che hanno scelto di attivare la funzione di protezione della privacy della posta di Apple. [Leggi tutto](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=it){target=&quot;_blank&quot;}.
+Nel 2021, Apple ha introdotto nuove funzionalità di protezione della privacy per la propria app Mail nativa. Questa app ora include la funzionalità di protezione della privacy della posta di Apple. In sostanza, i mittenti non possono più utilizzare i pixel di tracciamento per raccogliere informazioni sui destinatari che hanno scelto di attivare la funzione di protezione della privacy della posta di Apple.
 
 ## In che modo vengono influenzate le mie campagne?
 
