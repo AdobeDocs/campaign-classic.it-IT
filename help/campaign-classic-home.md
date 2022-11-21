@@ -3,7 +3,7 @@ keywords: Campaign Classic;home;argomenti principali
 product: campaign
 title: Documentazione del prodotto Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: a2817dabf421281dc0ade3531af62525e045bbee
+source-git-commit: ddac38fb79101bcff910345c9b04c7cc5eaf39a6
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 62%
@@ -16,9 +16,9 @@ ht-degree: 62%
 
 ## Novità
 
-* **[Programma di rilascio 2022](technotes/using/dc-migration.md)**<br/> Aggiornare l’ambiente e migliorare la sicurezza, l’infrastruttura e le prestazioni
+* **[Il rilascio di novembre è live!](rn/using/latest-release.md)**<br/> Scopri nuove funzionalità, miglioramenti e correzioni nelle note sulla versione
 
-* **[Il rilascio di luglio è live!](rn/using/latest-release.md)**<br/> Scopri nuove funzionalità, miglioramenti e correzioni nelle note sulla versione
+* **[Programma di rilascio 2022](technotes/using/dc-migration.md)**<br/> Aggiornare l’ambiente e migliorare la sicurezza, l’infrastruttura e le prestazioni
 
 <!--* **[Secure your Campaign environment](technotes/using/tech-stack-upgrade.md)**<br/> Update to the latest versions to secure your Campaign platform-->
 
