@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: ae235d39c4a78e0a2507f6baaebbdc9986dbf995
-workflow-type: ht
-source-wordcount: '763'
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
+workflow-type: tm+mt
+source-wordcount: '764'
 ht-degree: 100%
 
 ---
@@ -264,9 +264,9 @@ Negli ambienti **ibridi** e **on-premise** è possibile collegare Campaign ai se
 <tr>
 <td> Oracle</td>
 <td>
-<p>19c</p>
-<p>18c</p>
-<p>12c</p>
+<p>19 quater</p>
+<p>18 quater</p>
+<p>12 quater</p>
 <p>11g</p>
 </td>
 <td>Minimo v7.0</td>
@@ -299,6 +299,7 @@ Negli ambienti **ibridi** e **on-premise** è possibile collegare Campaign ai se
 <tr>
 <td>Teradata</td>
 <td>
+<p>17</p>
 <p>16.20</p>
 <p>16</p>
 <p>15.10</p>

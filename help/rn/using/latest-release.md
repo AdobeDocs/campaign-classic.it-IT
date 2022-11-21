@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 52e9925932e9b802a92f317b0950a1e933499b56
+source-git-commit: f94d7e2cddd75d50cb21973a62ec223f2344edf1
 workflow-type: tm+mt
-source-wordcount: '2008'
-ht-degree: 100%
+source-wordcount: '2654'
+ht-degree: 77%
 
 ---
 
@@ -19,7 +19,67 @@ ht-degree: 100%
 
 In questa pagina sono elencate nuove funzionalità, miglioramenti e correzioni introdotti con l’**ultima versione di Campaign v7**. Ogni nuova build viene fornita con uno stato che viene materializzato da un colore. Ulteriori informazioni sugli stati della build di Campaign Classic v7 in [questa pagina](rn-overview.md).
 
-## ![](assets/do-not-localize/limited_2.png) Versione 7.3.1 - Build 9352 {#release-7-3-1}
+## ![](assets/do-not-localize/green_2.png) Versione 7.3.2 - Build 9356 {#release-7-3-2}
+
+_21 novembre 2022_
+
+**Aggiornamenti della compatibilità**
+
+* Dopo la fine del ciclo di vita di Microsoft Internet Explorer 11, il motore di rendering HTML per le dashboard nella console client utilizza ora Edge Chromium. (NEO-20741)
+
+<!--
+**Deprecated features**
+
+* Social Marketing with Facebook is now deprecated. You can still use Twitter integration to post on social media, or work with Adobe to create a custom channel.
+
+* ACS Connector (prime offering) is now deprecated. You can use Campaign export/import capabilities to extract and inject data in both products.
+
+Learn more in the [Deprecated and removed features page](deprecated-features.md).
+
+-->
+
+**Miglioramenti**
+
+* Il connettore Google BigQuery ora supporta completamente i campi booleani. (NEO-49181)
+* Ora puoi configurare la durata di validità dei cookie IMS nel `Configuration for the redirection service` sezione del file serverConf.xml. Questo vale per i seguenti cookie: `uuid230`, `nllastdelid` e `AMCV_` (NEO-42541)
+* L’IP può ora essere nascosto nella richiesta &quot;/r/test&quot; impostando `showSourceIP` su false nel nodo di reindirizzamento del file serverConf.xml. [Leggi tutto](../../installation/using/the-server-configuration-file.md#redirection-redirection)(NEO-46656)
+
+**Altre modifiche**
+
+* I registri web sono stati migliorati: gli avvisi di accessoEscalation ora vengono visualizzati solo per gli utenti con privilegi di amministratore. (NEO-47167)
+* Per evitare errori, la **Raccolta di dati per il flusso di lavoro del servizio Heatmap** (collectDataHeatMapService) ora viene arrestato per impostazione predefinita. (NEO-33959)
+* Sono stati implementati diversi miglioramenti per ottimizzare l’utilizzo della CPU per il dashboard delle campagne. (NEO-46417)
+* Per evitare arresti anomali, il metodo js loadLibraryDebug è stato rimosso. (NEO-46968)
+* I riferimenti rimanenti alla libreria log4j sono stati rimossi dall’installazione Campaign su Windows. (NEO-44851)
+
+**Patch**
+
+* È stato risolto un problema che impediva l&#39;utilizzo di **Unisci righe selezionate** opzione del flusso di lavoro. (NEO-48488)
+* È stato risolto un problema che impediva la **Completato** l’indicatore di consegna non viene aggiornato correttamente quando si utilizza l’MTA avanzato di Adobe Campaign. (NEO-50462)
+* È stato risolto un problema che impediva la riapprovazione durante la reimpostazione dell’approvazione del contenuto in una consegna e-mail. (NEO-44259)
+* È stato risolto un problema che poteva impedire la **Approvazione della consegna** da visualizzare. (NEO-47547)
+* È stato risolto un problema di prestazioni nella scheda HTML di una consegna che poteva verificarsi per un codice HTML di grandi dimensioni. (NEO-47440)
+* È stato risolto un problema che influenzava gli aggiornamenti dello stato del registro di consegna sull’istanza MID, quando l’opzione FeatureFlag_GZIP_Compression era abilitata. (NEO-49183)
+* È stato risolto un problema che impediva l’invio di notifiche dell’app mobile iOS da un’istanza di esecuzione durante l’utilizzo dell’autenticazione basata sui token. (NEO-45961)
+* È stato risolto un problema relativo alla **Aggiornamento per il recapito messaggi** workflow (deliverabilityUpdate) che si è bloccato quando sono presenti troppi log di trasmissione da sincronizzare. (NEO-48287)
+* È stato risolto un problema relativo al tipo di evento che bloccava il flusso di lavoro di sincronizzazione del Centro messaggi (mcSynch).
+* È stato risolto un problema che poteva causare un errore durante l’aggiunta di **Destinatari che hanno aperto** indicatore (EstimatedRecipientOpen) nei dati aggiuntivi di un **Query** attività del flusso di lavoro. (NEO-46665)
+* È stato risolto un problema relativo alla **Fatturazione** workflow non riuscito quando i pacchetti Controllo e Esecuzione del Centro messaggi sono installati nella stessa istanza. (NEO-47674)
+* È stato risolto un problema relativo alla **Fatturazione** workflow non riuscito quando le tabelle con la chiave primaria sono definite come stringa invece di un numero intero. (NEO-46254)
+* È stato risolto un problema relativo ai filtri mappa di calore quando il nome del flusso di lavoro era troppo lungo. (NEO-46301)
+* È stato risolto un problema introdotto in 7.3.1 sul connettore FDA del Snowflake che causava la perdita di record quando si utilizza &quot;0 o 1 cardinalità join semplice&quot; durante l&#39;arricchimento. (NEO-48737)
+* È stato risolto un problema relativo all’FFDA di Snowflake quando si utilizzava il parametro di ordinamento in un **Divisione** attività del flusso di lavoro. (NEO-45899)
+* È stato risolto un problema che poteva impedire il salvataggio della configurazione dell’account esterno. L’account esterno viene ora salvato automaticamente dopo il test di connessione, per i connettori con funzionalità parser (Snowflake e Google BigQuery). (NEO-47636)
+* È stato risolto un problema che impediva l’inserimento di un tipo di dati Ora in un **Aggiornamento dei dati** attività del flusso di lavoro in MSSQL. (NEO-47763)
+* È stato risolto un problema che causava l’arresto anomalo del processo MTA quando il fuso orario del motore non era impostato (specifico per MSSQL). (NEO-46619)
+* È stato risolto un problema relativo all’importazione di file HTML quando i nodi immagine (img) contenevano URL con campi di personalizzazione. (NEO-48396)
+* È stato corretto un errore HTTP 500 quando si tentava di connettersi a un&#39;istanza in cui la variabile `limit` nodo non configurato nel file serverConf.xml.
+* È stato risolto un problema che poteva causare un errore di &quot;mancata corrispondenza del set di caratteri&quot; quando si utilizzavano alcune funzioni come `to_nclob` con un database unicode di Oracle in cui NChar non era abilitato. (NEO-49361)
+* È stato risolto un problema che causava un errore quando un utente con diritti di accesso in lettura nella cartella nmsDeliveryMapping tentava di eseguire una campagna o un flusso di lavoro. (NEO-48230)
+* È stato risolto un problema che impediva la `JSPContext.sqlExecWithOneParam` dal lavoro. (NEO-50066)
+* Sono stati corretti diversi errori di reindirizzamento. (NEO-50030)
+
+## ![](assets/do-not-localize/orange_2.png) Versione 7.3.1 - Build 9352 {#release-7-3-1}
 
 _1 luglio 2022_
 

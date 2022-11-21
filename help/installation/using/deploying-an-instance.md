@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 11e175c737d9c6cbb9432ec7835f35ee0e00a5c0
 workflow-type: tm+mt
-source-wordcount: '3048'
-ht-degree: 1%
+source-wordcount: '3140'
+ht-degree: 2%
 
 ---
 
@@ -36,7 +36,7 @@ I passaggi di configurazione sono i seguenti:
 1. [Gestione delle e-mail rimbalzate](#managing-bounced-emails)
 1. [Configurazione del tracciamento](#tracking-configuration)
 1. [Parametri del canale mobile](#mobile-channel-parameters)
-1. [Impostazioni internazionali](#regional-settings)
+1. [Impostazioni regionali](#regional-settings)
 1. [Accesso da Internet](#access-from-the-internet)
 1. [Gestione delle risorse pubbliche](#managing-public-resources)
 1. [Rimozione dei dati](#purging-data)
@@ -72,16 +72,16 @@ Il passaggio seguente ti consente di definire le informazioni da visualizzare ne
 
 Questi parametri possono essere sovraccaricati nei modelli di consegna e singolarmente per ogni consegna (se gli utenti dispongono dei diritti richiesti).
 
-### Parametri per le e-mail consegnate {#parameters-for-delivered-emails}
+### Parametri per e-mail consegnate {#parameters-for-delivered-emails}
 
 ![](assets/s_ncs_install_deployment_wiz_04.png)
 
 Indica i seguenti parametri:
 
-* **[!UICONTROL Sender name]** : Nome del mittente,
-* **[!UICONTROL Sender address]** : l&#39;indirizzo del mittente,
-* **[!UICONTROL Reply address text]** : Nome personalizzabile che verrà utilizzato quando il destinatario fa clic sul pulsante **[!UICONTROL Reply]** nel loro software client e-mail,
-* **[!UICONTROL Reply address]** : Indirizzo e-mail da utilizzare quando il destinatario fa clic sul pulsante **[!UICONTROL Reply]** nel loro software client e-mail,
+* **[!UICONTROL Sender name]** : Nome del mittente
+* **[!UICONTROL Sender address]** : Indirizzo del mittente
+* **[!UICONTROL Reply address text]** : Nome personalizzabile che verrà utilizzato quando il destinatario fa clic sul pulsante **[!UICONTROL Reply]** pulsante nel software client di posta elettronica
+* **[!UICONTROL Reply address]** : Indirizzo e-mail da utilizzare quando il destinatario fa clic sul pulsante **[!UICONTROL Reply]** pulsante nel software client di posta elettronica
 * **[!UICONTROL Error address]** : Indirizzo e-mail dei messaggi con errori. Si tratta dell’indirizzo tecnico utilizzato per gestire la posta non recapitata, incluse le e-mail ricevute dal server Adobe Campaign a causa di indirizzi di destinazione inesistenti.
 
 Inoltre, puoi specificare **maschere** autorizzati per l&#39;indirizzo del mittente e l&#39;indirizzo di errore. Se necessario, queste maschere possono essere separate utilizzando virgole. Questa configurazione è facoltativa. Quando i campi vengono immessi, Adobe Campaign verifica al momento della consegna (durante l’analisi, se l’indirizzo non include variabili) che gli indirizzi siano validi. Questa modalità operativa assicura che non vengano utilizzati indirizzi che possano causare problemi di consegna. Gli indirizzi di consegna devono essere configurati sul server di consegna.
@@ -106,14 +106,22 @@ Questa finestra ti consente di definire, per tutte le campagne e-mail, le opzion
 
 Sono disponibili le seguenti opzioni:
 
-* **[!UICONTROL Delivery duration of messages]** : Oltre questo periodo di tempo, la consegna viene interrotta (per impostazione predefinita, 5 giorni),
-* **[!UICONTROL Online resources validity duration]** : tempo di conservazione delle informazioni del profilo destinatario al fine di generare pagine mirror,
-* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : Quando questa opzione è selezionata, elenco Bloccati i destinatari non verranno contattati,
+* **[!UICONTROL Delivery duration of messages]** : Oltre questo periodo di tempo, la consegna viene interrotta (per impostazione predefinita, 5 giorni).
+* **[!UICONTROL Online resources validity duration]** : Tempo per il quale vengono conservate le informazioni del profilo destinatario al fine di generare pagine mirror.
+* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : Quando questa opzione è selezionata, elenco Bloccati i destinatari non verranno contattati.
 * **[!UICONTROL Automatically ignore doubles]** : Quando questa opzione è selezionata, la consegna non viene eseguita su indirizzi duplicati.
+
+>[!NOTE]
+>
+>Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento al [MTA avanzato](../../delivery/using/sending-with-enhanced-mta.md), **[!UICONTROL Delivery duration of the messages]** viene utilizzato solo se è impostato su **3,5 giorni o meno**. Se definisci un valore superiore a 3,5 giorni, questo non verrà preso in considerazione.
 
 ### Parametri del nuovo tentativo {#retry-parameters}
 
 Le informazioni sui recuperi sono fornite nella **Periodi di recupero** e **Numero di recuperi** campi: quando un destinatario non è raggiungibile, ad esempio se la casella in entrata è piena, per impostazione predefinita il programma tenta di contattarli 5 volte, con un intervallo di un&#39;ora tra ogni tentativo (durante il tempo massimo di consegna). Questi valori possono essere modificati in base alle tue esigenze.
+
+>[!NOTE]
+>
+>Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento al [MTA avanzato](../../delivery/using/sending-with-enhanced-mta.md), i parametri per l’esecuzione di nuovi tentativi di Campaign non vengono più utilizzati. I nuovi tentativi di mancato recapito e il periodo di tempo tra di essi sono determinati dall’MTA avanzato in base al tipo e alla gravità delle risposte non recapitate provenienti dal dominio e-mail del messaggio.
 
 ### Parametri di quarantena {#quarantine-parameters}
 
@@ -147,7 +155,7 @@ Una volta specificate le impostazioni POP, fai clic su **Test** per assicurarsi 
 
 ### Messaggi non recapitati non elaborati {#unprocessed-bounce-mails}
 
-I rimbalzi vengono gestiti automaticamente da Adobe Campaign, applicando le regole elencate in **Amministrazione > Gestione campagne > Gestione non consegnabili > Qualificazione del registro di consegna** nodo. Per ulteriori informazioni, consulta [Gestione della posta non recapitata](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
+I rimbalzi vengono gestiti automaticamente da Adobe Campaign, applicando le regole elencate in **Amministrazione > Campaign Management > Gestione non consegnabili > Qualificazione del registro di consegna** nodo. Per ulteriori informazioni, consulta [Gestione della posta non recapitata](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
 
 I messaggi non recapitati non elaborati non vengono visualizzati nell’interfaccia di Adobe Campaign. Vengono eliminati automaticamente a meno che non vengano trasferiti a una cassetta postale di terze parti utilizzando i campi seguenti:
 
@@ -294,7 +302,7 @@ Le opzioni di configurazione per le quarantena sono le seguenti:
 * **[!UICONTROL Time between two significant errors]** : Immetti un valore predefinito (per impostazione predefinita &quot;1d&quot;: day) per definire l&#39;ora in cui l&#39;applicazione attende prima di incrementare il contatore degli errori per un errore.
 * **[!UICONTROL Maximum number of errors before quarantine]** : Una volta raggiunto questo valore, il numero mobile viene messo in quarantena (per impostazione predefinita &quot;5&quot;: il numero sarà messo in quarantena al sesto errore). Ciò significa che il contatto verrà automaticamente escluso dalle consegne future.
 
-## Impostazioni internazionali {#regional-settings}
+## Impostazioni regionali {#regional-settings}
 
 Questa fase consente di includere le preferenze dei criteri per i dati.
 

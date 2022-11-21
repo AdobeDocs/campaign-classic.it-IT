@@ -6,10 +6,10 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 59a2bc62b4c03ef0702cb57bd9dc808e7d0b444b
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 0%
+source-wordcount: '706'
+ht-degree: 4%
 
 ---
 
@@ -114,7 +114,7 @@ Viene eseguita la ricerca delle seguenti espressioni (distinzione maiuscole/minu
  <thead> 
   <tr> 
    <th> Espressione<br /> </th> 
-   <th> Codice di errore<br /> </th> 
+   <th> Codice errore<br /> </th> 
    <th> Tipo di registro<br /> </th> 
    <th> Commenti<br /> </th> 
   </tr> 
@@ -123,39 +123,33 @@ Viene eseguita la ricerca delle seguenti espressioni (distinzione maiuscole/minu
   <tr> 
    <td> .@<br /> </td> 
    <td> PU-0001<br /> </td> 
-   <td> Avviso<br /> </td> 
-   <td> Questo tipo di sintassi non è più supportato nella personalizzazione della consegna. Fai riferimento a <a href="../../migration/using/general-configurations.md#javascript" target="_blank">JavaScript</a>. In caso contrario, verifica che il tipo di valore sia corretto.<br /> </td> 
+   <td> Avvertenza<br /> </td> 
+   <td> Questo tipo di sintassi non è più supportato nella personalizzazione della consegna. <br /> </td> 
   </tr> 
   <tr> 
    <td> common.js<br /> </td> 
    <td> PU-0002<br /> </td> 
-   <td> Avviso<br /> </td> 
+   <td> Avvertenza<br /> </td> 
    <td> Questa libreria non deve essere utilizzata.<br /> </td> 
   </tr> 
   <tr> 
    <td> logon(<br /> </td> 
    <td> PU-0003<br /> </td> 
-   <td> Avviso<br /> </td> 
-   <td> Questo metodo di connessione non deve più essere utilizzato. Fai riferimento a <a href="../../migration/using/general-configurations.md#identified-web-applications" target="_blank">Applicazioni web identificate</a>.<br /> </td> 
+   <td> Avvertenza<br /> </td> 
+   <td> Questo metodo di connessione non deve più essere utilizzato.<br /> </td> 
   </tr> 
   <tr> 
    <td> new SoapMethodCall(<br /> </td> 
    <td> PU-0004<br /> </td> 
-   <td> Avviso<br /> </td> 
+   <td> Avvertenza<br /> </td> 
    <td> Questa funzione è supportata solo quando viene utilizzata nel codice JavaScript eseguito da una zona di sicurezza in <strong>sessionTokenOnly</strong> modalità.<br /> </td> 
   </tr> 
   <tr> 
    <td> sql=<br /> </td> 
    <td> PU-0005<br /> </td> 
    <td> Errore<br /> </td> 
-   <td> Questo tipo di errore causa un errore di migrazione. Fai riferimento a <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>.<br /> </td> 
+   <td> Questo tipo di errore causa un errore di migrazione.<br /> </td> 
   </tr> 
-  <tr> 
-   <td> SQLDATA<br /> </td> 
-   <td> PU-0006<br /> </td> 
-   <td> Errore<br /> </td> 
-   <td> Questo tipo di errore causa un errore di migrazione. Fai riferimento a <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Se ricevi log degli errori dell'applicazione web di tipo panoramica (migrazione dalla versione 6.02), fai riferimento a <a href="../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11" target="_blank">Configurare Campaign</a>.<br /> </td> 
-  </tr>
   <tr> 
    <td> crmDeploymentType="onpremise"<br /> </td> 
    <td> PU-0007<br /> </td> 

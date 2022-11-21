@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: acbb2144906841a6da59314b84b3faf5863cf9d6
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '7957'
-ht-degree: 9%
+source-wordcount: '7979'
+ht-degree: 20%
 
 ---
 
@@ -513,7 +513,7 @@ Per ulteriori informazioni, consulta [sezione](../../installation/using/configur
  <tbody> 
   <tr> 
    <td> localDomain<br /> </td> 
-   <td> Nome di dominio: nome di dominio predefinito. Utilizzato dal comando HELO SMTP. Per impostazione predefinita, utilizza i parametri di rete della prima interfaccia di rete dichiarata in Windows; o analizza il file file/etc/resolv.conf in Linux (dominio o voce di ricerca). <br /> </td> 
+   <td> Nome di dominio: nome di dominio predefinito. Utilizzato dal comando HELO SMTP. Per impostazione predefinita, utilizza i parametri di rete della prima interfaccia di rete dichiarata in Windows; o analizza il file/etc/resolv.conf in Linux (dominio o voce di ricerca). <br /> </td> 
    <td> Stringa<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1134,7 +1134,7 @@ Per ulteriori informazioni, consulta [Attivazione dell’archiviazione delle e-m
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> ID di JavaScript da eseguire all'avvio del processo.<br /> </td> 
+   <td> ID JavaScript da eseguire all’avvio del processo.<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1170,7 +1170,7 @@ Per ulteriori informazioni, consulta [Attivazione dell’archiviazione delle e-m
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Priorità all'inizio. I moduli a bassa priorità vengono avviati per primi e arrestati per l’ultima volta. Il modulo syslogd deve quindi avere la priorità 0.<br /> </td> 
+   <td> Priorità all’inizio. I moduli a bassa priorità vengono prima avviati e poi arrestati. Il modulo syslogd deve quindi avere la priorità 0.<br /> </td> 
    <td> Breve<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -1265,7 +1265,7 @@ Di seguito sono riportati i diversi parametri del **inMail** nodo. Questa è la 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> ID di JavaScript da eseguire all'avvio del processo.<br /> </td> 
+   <td> ID JavaScript da eseguire all’avvio del processo.<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1331,7 +1331,7 @@ Di seguito sono riportati i diversi parametri del **inMail** nodo. Questa è la 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Priorità all'inizio. I moduli a bassa priorità vengono avviati per primi e arrestati per l’ultima volta. Il modulo syslogd deve quindi avere la priorità 0.<br /> </td> 
+   <td> Priorità all’inizio. I moduli a bassa priorità vengono prima avviati e poi arrestati. Il modulo syslogd deve quindi avere la priorità 0.<br /> </td> 
    <td> Breve<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -1403,7 +1403,7 @@ Per ulteriori informazioni, consulta [Interazione - Buffer dati](../../installat
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> ID di JavaScript da eseguire all'avvio del processo<br /> </td> 
+   <td> ID JavaScript da eseguire all’avvio del processo<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1439,7 +1439,7 @@ Per ulteriori informazioni, consulta [Interazione - Buffer dati](../../installat
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Priorità all'inizio. I moduli a bassa priorità vengono avviati per primi e arrestati per l’ultima volta. Il modulo syslogd deve quindi avere la priorità 0.<br /> </td> 
+   <td> Priorità all’inizio. I moduli a bassa priorità vengono prima avviati e poi arrestati. Il modulo syslogd deve quindi avere la priorità 0.<br /> </td> 
    <td> Breve<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -1510,7 +1510,7 @@ Di seguito sono riportati i diversi parametri del **mta** nodo. Questa è la con
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> ID di JavaScript da eseguire all'avvio del processo.<br /> </td> 
+   <td> ID JavaScript da eseguire all’avvio del processo.<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1588,7 +1588,7 @@ Di seguito sono riportati i diversi parametri del **mta** nodo. Questa è la con
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Priorità all'inizio. I moduli a bassa priorità vengono avviati per primi e arrestati per l’ultima volta. Il modulo syslogd deve quindi avere la priorità 0.<br /> </td> 
+   <td> Priorità all’inizio. I moduli a bassa priorità vengono prima avviati e poi arrestati. Il modulo syslogd deve quindi avere la priorità 0.<br /> </td> 
    <td> Breve<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -1736,7 +1736,7 @@ Per ulteriori informazioni, consulta [sezione](../../installation/using/configur
  <tbody> 
   <tr> 
    <td> dataBasePoolPeriodSec<br /> </td> 
-   <td> Frequenza di polling del database dei processi da distribuire. Questo valore indica la frequenza di polling del database (in secondi). Per ottenere l’elenco dei processi in attesa di consegna, l’MTA controlla regolarmente il database. In assenza di un processo in attesa, il periodo di polling è definito da questo valore. In caso contrario, se un processo è stato trasferito a un server figlio, questa durata del polling viene automaticamente ridotta a un secondo, in modo che un nuovo processo possa essere elaborato di nuovo il prima possibile, cioè non appena un server figlio è nuovamente disponibile. Ciò non significa che la query del database verrà eseguita ogni secondo fino a quando non sarà nuovamente disponibile un server figlio. In realtà, l'accesso al database viene eseguito solo quando è disponibile almeno un server figlio.<br /> </td> 
+   <td> Frequenza di polling del database dei processi da consegnare. Questo valore indica la frequenza di polling del database (in secondi). Per ottenere la lista dei processi in attesa di consegna, l’MTA esegue il polling del database su base regolare. In assenza di processi in attesa, il periodo di polling viene definito da questo valore. In caso contrario, se un processo è stato trasferito a un server secondario, la durata del polling viene automaticamente ridotta a un secondo affinché un nuovo processo possa essere elaborato di nuovo il più presto possibile, ovvero non appena è nuovamente disponibile un server secondario. Ciò non significa che la query del database verrà eseguita ogni secondo fino a quando non sarà nuovamente disponibile un server secondario. L’accesso al database viene eseguito solo quando almeno un server secondario diventa disponibile.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
@@ -1754,7 +1754,7 @@ Per ulteriori informazioni, consulta [sezione](../../installation/using/configur
   </tr> 
   <tr> 
    <td> maxSpareServers<br /> </td> 
-   <td> Numero massimo di server figlio. Rappresenta il numero massimo di server in esecuzione. È consigliabile limitare questo numero ad un livello ottimale compatibile con le risorse di memoria del server. Questo può essere controllato durante una consegna. La memoria utilizzata non deve superare un terzo della memoria fisica disponibile altrimenti verrà utilizzato lo scambio. Vedi <a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">Processi figlio MTA</a>.<br /> </td> 
+   <td> Numero massimo di server figlio. Rappresenta il numero massimo di server in esecuzione. Si consiglia di limitare questo numero a un numero ottimale compatibile con le risorse di memoria del server, che può essere verificata durante una consegna. La memoria utilizzata non deve superare un terzo della memoria fisica disponibile; in caso contrario verrà utilizzato lo swap su disco. Vedi <a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">Processi figlio MTA</a>.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
@@ -1866,7 +1866,7 @@ In **mta > figlio > smtp** configura i seguenti parametri. Questa è la configur
  <tbody> 
   <tr> 
    <td> enableTLS<br /> </td> 
-   <td> Attiva la consegna di e-mail in modalità provvisoria (STARTTLS/SMTPS) se supportata dal server remoto.<br /> </td> 
+   <td> Attiva la consegna di e-mail in modalità sicura (STARTTLS/SMTPS) se supportata dal server remoto.<br /> </td> 
    <td> Booleano<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -1884,7 +1884,7 @@ In **mta > figlio > smtp** configura i seguenti parametri. Questa è la configur
   </tr> 
   <tr> 
    <td> maxSessionsPerChild<br /> </td> 
-   <td> Numero massimo di sessioni SMTP per server figlio. Per inviare un messaggio, l’MTA inizializza una connessione SMTP con l’MTA del destinatario. Il numero massimo di sessioni SMTP simultanee e attive per un determinato server figlio è limitato da questo valore. Se moltiplichi questo valore per maxSpareServers, ottieni il numero massimo di messaggi che possono essere elaborati simultaneamente da un determinato server figlio.<br /> </td> 
+   <td> Numero massimo di sessioni SMTP per server figlio. Per inviare un messaggio, l’MTA inizializza una connessione SMTP con l’MTA del destinatario. Questo valore limita il numero massimo di sessioni SMTP simultanee e attive per un determinato server secondario. Se si moltiplica questo valore per maxSpareServers, si ottiene il numero massimo di messaggi che possono essere elaborati in simultanea per un dato server secondario.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
@@ -2091,7 +2091,7 @@ Di seguito sono riportati i diversi parametri del **condutturato** nodo. Questa 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> ID di JavaScript da eseguire all'avvio del processo.<br /> </td> 
+   <td> ID JavaScript da eseguire all’avvio del processo.<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2157,7 +2157,7 @@ Di seguito sono riportati i diversi parametri del **condutturato** nodo. Questa 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Priorità all'inizio. I moduli a bassa priorità vengono avviati per primi e arrestati per l’ultima volta. Il modulo syslogd deve quindi avere la priorità 0.<br /> </td> 
+   <td> Priorità all’inizio. I moduli a bassa priorità vengono prima avviati e poi arrestati. Il modulo syslogd deve quindi avere la priorità 0.<br /> </td> 
    <td> Breve<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -2368,7 +2368,7 @@ Di seguito sono riportati i diversi parametri del **sms** nodo. Questa è la con
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> ID di JavaScript da eseguire all'avvio del processo.<br /> </td> 
+   <td> ID JavaScript da eseguire all’avvio del processo.<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2410,7 +2410,7 @@ Di seguito sono riportati i diversi parametri del **sms** nodo. Questa è la con
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Priorità all'inizio. I moduli a bassa priorità vengono avviati per primi e arrestati per l’ultima volta. Il modulo syslogd deve quindi avere la priorità 0.<br /> </td> 
+   <td> Priorità all’inizio. I moduli a bassa priorità vengono prima avviati e poi arrestati. Il modulo syslogd deve quindi avere la priorità 0.<br /> </td> 
    <td> Breve<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -2480,7 +2480,7 @@ Di seguito sono riportati i diversi parametri del **stat** nodo. Questa è la co
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> ID di JavaScript da eseguire all'avvio del processo.<br /> </td> 
+   <td> ID JavaScript da eseguire all’avvio del processo.<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2510,7 +2510,7 @@ Di seguito sono riportati i diversi parametri del **stat** nodo. Questa è la co
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Priorità all'inizio. I moduli a bassa priorità vengono avviati per primi e arrestati per l’ultima volta. Il modulo syslogd deve quindi avere la priorità 0.<br /> </td> 
+   <td> Priorità all’inizio. I moduli a bassa priorità vengono prima avviati e poi arrestati. Il modulo syslogd deve quindi avere la priorità 0.<br /> </td> 
    <td> Breve<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -2545,7 +2545,7 @@ Di seguito sono riportati i diversi parametri del **syslogd** nodo. Questa è la
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> ID di JavaScript da eseguire all'avvio del processo.<br /> </td> 
+   <td> ID JavaScript da eseguire all’avvio del processo.<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2581,7 +2581,7 @@ Di seguito sono riportati i diversi parametri del **syslogd** nodo. Questa è la
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Priorità all'inizio. I moduli a bassa priorità vengono avviati per primi e arrestati per l’ultima volta. Il modulo syslogd deve quindi avere la priorità 0.<br /> </td> 
+   <td> Priorità all’inizio. I moduli a bassa priorità vengono prima avviati e poi arrestati. Il modulo syslogd deve quindi avere la priorità 0.<br /> </td> 
    <td> Breve<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -2652,7 +2652,7 @@ Di seguito sono riportati i diversi parametri del **tracking** nodo. Questa è l
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> ID di JavaScript da eseguire all'avvio del processo <br /> </td> 
+   <td> ID JavaScript da eseguire all’avvio del processo <br /> </td> 
    <td> Stringa<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2694,7 +2694,7 @@ Di seguito sono riportati i diversi parametri del **tracking** nodo. Questa è l
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Priorità all'inizio. I moduli a bassa priorità vengono avviati per primi e arrestati per l’ultima volta. Il modulo syslogd deve quindi avere la priorità 0.<br /> </td> 
+   <td> Priorità all’inizio. I moduli a bassa priorità vengono prima avviati e poi arrestati. Il modulo syslogd deve quindi avere la priorità 0.<br /> </td> 
    <td> Breve<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -2747,7 +2747,7 @@ Di seguito sono riportati i diversi parametri del **trackinglogd** nodo. Questa 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> ID di JavaScript da eseguire all'avvio del processo <br /> </td> 
+   <td> ID JavaScript da eseguire all’avvio del processo <br /> </td> 
    <td> Stringa<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2795,7 +2795,7 @@ Di seguito sono riportati i diversi parametri del **trackinglogd** nodo. Questa 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Priorità all'inizio. I moduli a bassa priorità vengono avviati per primi e arrestati per l’ultima volta. Il modulo syslogd deve quindi avere la priorità 0.<br /> </td> 
+   <td> Priorità all’inizio. I moduli a bassa priorità vengono prima avviati e poi arrestati. Il modulo syslogd deve quindi avere la priorità 0.<br /> </td> 
    <td> Breve<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -2868,7 +2868,7 @@ Per ulteriori informazioni, consulta [sezione](configuring-campaign-server.md#de
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> ID di JavaScript da eseguire all'avvio del processo.<br /> </td> 
+   <td> ID JavaScript da eseguire all’avvio del processo.<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2904,7 +2904,7 @@ Per ulteriori informazioni, consulta [sezione](configuring-campaign-server.md#de
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Priorità all'inizio. I moduli a bassa priorità vengono avviati per primi e arrestati per l’ultima volta. Il modulo syslogd deve quindi avere la priorità 0.<br /> </td> 
+   <td> Priorità all’inizio. I moduli a bassa priorità vengono prima avviati e poi arrestati. Il modulo syslogd deve quindi avere la priorità 0.<br /> </td> 
    <td> Breve<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -3321,6 +3321,12 @@ Per ulteriori informazioni, consulta [sezione](../../installation/using/deployin
    <td> 100<br /> </td> 
   </tr> 
   <tr> 
+   <td> showSourceIP<br /> </td> 
+   <td> Se è impostato su false, il valore di sourceIP nella risposta restituita da r/test è una stringa vuota. <br /> </td> 
+   <td> Booleano<br /> </td> 
+   <td> true<br /> </td> 
+  </tr> 
+  <tr> 
    <td> startRedirecting<br /> </td> 
    <td> Avviare il servizio di reindirizzamento.<br /> </td> 
    <td> Booleano<br /> </td> 
@@ -3447,7 +3453,7 @@ Per ulteriori informazioni, consulta [Flussi di lavoro e affinità ad alta dispo
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> ID di JavaScript da eseguire all'avvio del processo.<br /> </td> 
+   <td> ID JavaScript da eseguire all’avvio del processo.<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3477,7 +3483,7 @@ Per ulteriori informazioni, consulta [Flussi di lavoro e affinità ad alta dispo
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Priorità all'inizio. I moduli a bassa priorità vengono avviati per primi e arrestati per l’ultima volta. Il modulo syslogd deve quindi avere la priorità 0.<br /> </td> 
+   <td> Priorità all’inizio. I moduli a bassa priorità vengono prima avviati e poi arrestati. Il modulo syslogd deve quindi avere la priorità 0.<br /> </td> 
    <td> Breve<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 

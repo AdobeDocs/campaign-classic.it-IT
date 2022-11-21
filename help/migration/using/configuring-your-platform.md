@@ -1,26 +1,23 @@
 ---
 product: campaign
-title: Adatta la configurazione
+title: Adattare la configurazione
 description: Scopri come adattare la configurazione prima e dopo una migrazione a Campaign v7
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: ad71dead-c0ca-42d5-baa8-0f340979231a
-source-git-commit: 327f220d6700242308ef3738a38cc95b970e3f46
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '1980'
-ht-degree: 3%
+source-wordcount: '471'
+ht-degree: 2%
 
 ---
 
-# Adatta la configurazione{#configuring-your-platform}
+# Adattare la configurazione{#configuring-your-platform}
 
 ![](../../assets/v7-only.svg)
 
 Alcune modifiche principali in Adobe Campaign v7 richiedono una configurazione specifica. Queste configurazioni possono essere necessarie prima o dopo la migrazione.
-
-La configurazione dettagliata da eseguire in Adobe Campaign v7 durante la migrazione da Campaign v5 o v6 è disponibile in [questa pagina](general-configurations.md).
-
 
 Durante la migrazione, il **NmsRecipient** la tabella viene ricreata dalla definizione degli schemi. Eventuali modifiche apportate alla struttura SQL di questa tabella al di fuori di Adobe Campaign andranno perse.
 
@@ -35,41 +32,52 @@ Esempio di elementi da controllare:
 
 Durante la migrazione ad Adobe Campaign v7, è necessario configurare i seguenti elementi. Questi elementi devono essere affrontati prima di avviare il **postupgrade**.
 
-* Timezoni
+<!--
 
-   Durante una migrazione da una piattaforma v5.11, devi specificare il fuso orario da utilizzare durante il post aggiornamento.
+  * Timezones
 
-   Se desideri utilizzare la modalità &quot;multi-fuso orario&quot;, consulta [questa sezione](../../migration/using/general-configurations.md#time-zones).
+  During a migration from a v5.11 platform, you must specify the timezone to use during the postupgrade.
 
-   Se utilizzi Oracle come database, verifica che i file del fuso orario Oracle siano stati sincronizzati correttamente tra l&#39;application server e il database server. [Ulteriori informazioni](../../migration/using/general-configurations.md#oracle)
+  If you wish to use the "multi timezone" mode, refer to [this section](../../migration/using/general-configurations.md#time-zones).
 
-* Zone di sicurezza
+  If you use Oracle as a database, check that the Oracle timezone files have properly been synched between the application server and the database server. [Learn more](../../migration/using/general-configurations.md#oracle)
 
-   Per motivi di sicurezza, la piattaforma Adobe Campaign non è più accessibile per impostazione predefinita: devi configurare le aree di protezione, che richiede la raccolta degli indirizzi IP dell’utente prima della migrazione. [Ulteriori informazioni](../../migration/using/general-configurations.md#security)
+* Security zones
 
-* Sintassi
+  For security reasons, the Adobe Campaign platform is no longer accessible by default: you must configure the security zones, which requires collecting the user IP addresses before the migration. [Learn more](../../migration/using/general-configurations.md#security)
 
-   Alcuni codici JavaScript potrebbero non essere più accettati nella versione v7, a causa dell&#39;utilizzo di un nuovo interprete. [Ulteriori informazioni](../../migration/using/general-configurations.md#javascript).
+* Syntax
 
-   Analogamente, in Adobe Campaign v7 viene introdotta una nuova sintassi per sostituire la sintassi basata su SQLData. Se utilizzi elementi di codice con questa sintassi, devi adattarli. [Ulteriori informazioni](../../migration/using/general-configurations.md#sqldata)
+  Some Javascript code may no longer accepted in the v7 version, due to the use of a new interpreter. [Learn more](../../migration/using/general-configurations.md#javascript).
+
+  Similarly, a new syntax is introduced in Adobe Campaign v7 to replace the SQLData based syntax. If you use code elements with this syntax, you must adapt them. [Learn more](../../migration/using/general-configurations.md#sqldata)
+
+  -->
 
 * Password
 
    È necessario configurare le **Amministratore** e **Interno** password. [Ulteriori informazioni](../../migration/using/before-starting-migration.md#user-passwords)
 
-* Struttura ad albero
+<!--
+* Tree structure
 
-   Se esegui la migrazione da una piattaforma v5.11, devi riorganizzare le cartelle della struttura ad albero in base alle norme Adobe Campaign v6. [Ulteriori informazioni](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11).
+  If migrating from a v5.11 platform, you must reorganize the tree structure folders according to Adobe Campaign v6 norms. [Learn more](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11).
 
-* Interazione
+-->
 
-   Se effettui la migrazione da Campaign v6.02 e utilizzi il  **Interazione** modulo , devi eliminare tutti i riferimenti di schema 6.02 che non esistono più in v7. [Ulteriori informazioni](../../migration/using/general-configurations.md#interaction)
+<!--
+
+* Interaction
+
+  If you are migrating from Campaign v6.02 and using the  **Interaction** module, you must delete all 6.02 schema references that no longer exist in v7. [Learn more](../../migration/using/general-configurations.md#interaction)
+
+-->
 
 ## Dopo la migrazione {#after-the-migration}
 
 Dopo l&#39;esecuzione **postupgrade**, controlla e configura i seguenti elementi:
 
-* Pagine specchiate
+* Pagine mirror
 
    Il blocco di personalizzazione della pagina speculare è stato modificato con v6.x. Questa nuova versione migliora la sicurezza durante l’accesso a queste pagine.
 
@@ -79,84 +87,100 @@ Dopo l&#39;esecuzione **postupgrade**, controlla e configura i seguenti elementi
 
 * Sintassi
 
-   Se si verificano errori relativi alla sintassi, durante il post aggiornamento devi attivare temporaneamente il **allowSQLInjection** in **serverConf.xml** file , poiché questo ti dà il tempo di riscrivere il codice. Una volta adattato il codice, assicurati di riattivare la sicurezza. [Ulteriori informazioni](../../migration/using/general-configurations.md#sqldata)
+   Se si verificano errori relativi alla sintassi, durante il post aggiornamento devi attivare temporaneamente il **allowSQLInjection** in **serverConf.xml** file , poiché questo ti dà il tempo di riscrivere il codice. Una volta adattato il codice, assicurati di riattivare la sicurezza.
 
 * Conflitti
 
-   La migrazione viene eseguita tramite un aggiornamento successivo e possono comparire conflitti in rapporti, moduli o applicazioni web. Questi conflitti possono essere risolti dalla console. [Ulteriori informazioni](../../migration/using/general-configurations.md#conflicts)
+   La migrazione viene eseguita tramite un aggiornamento successivo e possono comparire conflitti in rapporti, moduli o applicazioni web. Questi conflitti possono essere risolti dalla console.
 
 * Tomcat
 
-   Se hai personalizzato la cartella di installazione, accertati che sia stata aggiornata correttamente dopo la migrazione. [Ulteriori informazioni](../../migration/using/general-configurations.md#tomcat)
+   Se hai personalizzato la cartella di installazione, accertati che sia stata aggiornata correttamente dopo la migrazione.
 
 * Rapporti
 
-   Tutti i report predefiniti al momento utilizzano il motore di rendering v6.x. Se hai aggiunto codice JavaScript ai rapporti, alcuni elementi potrebbero essere interessati. [Ulteriori informazioni](../../migration/using/general-configurations.md#reports)
+   Tutti i report predefiniti al momento utilizzano il motore di rendering v6.x. Se hai aggiunto codice JavaScript ai rapporti, alcuni elementi potrebbero essere interessati.
 
 * Applicazioni Web
 
-   Dopo l&#39;aggiornamento, se si verificano problemi di connessione alle applicazioni Web identificate, è necessario attivare la **allowUserPassword** e **sessionTokenOnly** nelle opzioni **serverConf.xml** file. Per evitare problemi di sicurezza, queste due opzioni devono essere riattivate dopo che il problema è stato risolto. [Ulteriori informazioni](../../migration/using/general-configurations.md#identified-web-applications)
+   Dopo l&#39;aggiornamento, se si verificano problemi di connessione alle applicazioni Web identificate, è necessario attivare la **allowUserPassword** e **sessionTokenOnly** nelle opzioni **serverConf.xml** file. Per evitare problemi di sicurezza, queste due opzioni devono essere riattivate dopo che il problema è stato risolto.
 
-   A seconda del tipo di applicazioni Web e della relativa configurazione, è necessario eseguire ulteriori manipolazioni per garantirne il corretto funzionamento. [Ulteriori informazioni](../../migration/using/general-configurations.md#web-applications)
+   A seconda del tipo di applicazioni Web e della relativa configurazione, è necessario eseguire ulteriori manipolazioni per garantirne il corretto funzionamento.
 
-   Se si esegue la migrazione da una piattaforma v5.11, è necessario eseguire configurazioni aggiuntive. [Ulteriori informazioni](../../migration/using/general-configurations.md#specific-configurations-in-v5-11.md)
+<!--
+  If migrating from a v5.11 platform, additional configurations must be carried out. [Learn more](../../migration/using/general-configurations.md#specific-configurations-in-v5-11.md)
 
-* Zone di sicurezza
+* Security zones
 
-   Prima di avviare il server, è necessario configurare le aree di protezione. [Ulteriori informazioni](../../installation/using/security-zones.md) e [vedi qui](../../migration/using/general-configurations.md#security)
+  Before starting the server, you must configure the security zones. [Learn more](../../installation/using/security-zones.md) and [see here](../../migration/using/general-configurations.md#security)
 
-* Flussi di lavoro
+-->
 
-   Se esegui la migrazione da una piattaforma v5.11, devi controllare la cartella dei flussi di lavoro. [Ulteriori informazioni](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11)
+<!--
 
-* Tracciamento
+* Workflows
 
-   Se esegui la migrazione da una piattaforma v5.11, devi configurare la modalità di tracciamento. [Ulteriori informazioni](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11)
+  If migrating from a v5.11 platform, you must check the workflows folder. [Learn more](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11)
+
+-->
+
+<!--
+
+* Tracking
+
+  If migrating from a v5.11 platform, you must configure the tracking mode. [Learn more](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11)
+
+-->
 
 * Interazione
 
-   Se utilizzi **Interazione**, è necessario regolare eventuali parametri dopo la migrazione. [Ulteriori informazioni](../../migration/using/general-configurations.md#interaction)
+   Se utilizzi **Interazione**, è necessario regolare eventuali parametri dopo la migrazione.
 
-* Dashboard
+<!--
 
-   Se viene visualizzato un errore client, è necessario aggiornare le dashboard con il nuovo codice Adobe Campaign v7 oppure copiare manualmente i seguenti file dall&#39;istanza v6.02 all&#39;istanza v7:
+* Dashboards
 
-   ```
-   v6.02 files and spaces:
-   /usr/local/neolane/nl6/datakit/xtk/eng/css/dropDownMenu.css
-   /usr/local/neolane/nl6/datakit/xtk/eng/js/client/dropDownMenu.js
-   v6.1 files and spaces:
-   /usr/local/neolane/nl6/deprecated/xtk/css/dropDownMenu.css
-   /usr/local/neolane/nl6/deprecated/xtk/js/client/dropDownMenu.js  
-   ```
+  If a client error appears, you have to either update your dashboards with the new Adobe Campaign v7 code, or manually copy the following files from the v6.02 instance to the v7 instance:
 
+  ```
+  v6.02 files and spaces:
+  /usr/local/neolane/nl6/datakit/xtk/eng/css/dropDownMenu.css
+  /usr/local/neolane/nl6/datakit/xtk/eng/js/client/dropDownMenu.js
+  v6.1 files and spaces:
+  /usr/local/neolane/nl6/deprecated/xtk/css/dropDownMenu.css
+  /usr/local/neolane/nl6/deprecated/xtk/js/client/dropDownMenu.js  
+  ```
 
-## Configurazioni specifiche da a v5.11 a v7{#specific-configurations-in-v5-11}
+-->
+
+<!--
+
+## Specific configurations from a v5.11 to v7{#specific-configurations-in-v5-11}
 
 ![](../../assets/v7-only.svg)
 
-Questa sezione descrive la configurazione aggiuntiva necessaria per la migrazione dalla versione v5.11. È inoltre necessario configurare le impostazioni descritte in [Configurazioni generali](../../migration/using/general-configurations.md) sezione .
+This section details the additional configuration required when migrating from v5.11. You should also configure the settings detailed in the [General configurations](../../migration/using/general-configurations.md) section.
 
-### Applicazioni web {#web-applications-v5}
+### Web applications {#web-applications-v5}
 
-Durante la migrazione verrà visualizzato automaticamente il seguente avviso:
+The following warning will be displayed automatically during migration:
 
 ```
 The webApp ids have been modified during the migration process. Please make sure to check your scripts/css for broken compatibility (any client side JavaScript or css dealing directly with another element through its id is impacted). See file 'c:\svn\602\nl\build\ncs\var\upgrade/postupgrade/webAppsMigration_*************.txt' for details about the references that were automatically updated, if any.
 ```
 
-Alcuni componenti delle applicazioni web, ad esempio i vari campi formula, hanno attributi @id. Vengono utilizzati nel codice XML delle applicazioni web e non vengono più generati nello stesso modo. Non sono visibili nell’interfaccia e non devono essere normalmente utilizzati. Tuttavia, in alcuni casi, gli attributi @id possono essere stati utilizzati per personalizzare il rendering delle applicazioni web, ad esempio tramite un foglio di stile o utilizzando il codice JavaScript.
+Some components of web applications, for instance the various formula fields, have @id attributes. These are used in the XML code of web applications and are no longer generated in the same way. They are not visible in the interface and you must not normally use them. However, in some cases, @id attributes may have been used to personalize the rendering of web applications, for instance via a stylesheet or using JavaScript code.
 
-Durante la migrazione, **deve** controllare il percorso del file di registro specificato nell&#39;avviso:
+During migration, you **must** check the log file path specified in the warning:
 
-* **Il file non è vuoto**: contiene avvisi che riguardano incongruenze registrate prima della migrazione e che persistono. Può essere un codice JavaScript in un&#39;applicazione web che fa riferimento a un ID inesistente. Ogni errore deve essere controllato e corretto.
-* **Il file è vuoto**: questo significa che Adobe Campaign non ha rilevato alcun problema.
+* **The file is not empty**: it contains warnings which concern inconsistencies recorded before migration and which still exist. This can be JavaScript code in a web application which references a non-existent ID. Each error must be checked and corrected.
+* **The file is empty**: this means that Adobe Campaign has not detected any issues.
 
-Che il file sia vuoto o meno, devi verificare che questi ID non siano usati per la configurazione altrove (e, in questo caso, adatta la configurazione).
+Whether the file is empty or not, you must check that these IDs are not used for configuration elsewhere (and adapt configuration if this is the case).
 
-### Flussi di lavoro {#workflows}
+### Workflows {#workflows}
 
-Poiché il nome della directory di installazione di Adobe Campaign è stato modificato, alcuni flussi di lavoro potrebbero non funzionare dopo la migrazione. Se un flusso di lavoro fa riferimento alla directory nl5 in una delle sue attività, si verifica un errore. Sostituisci il riferimento con **build**. È possibile eseguire una query SQL per identificare questi flussi di lavoro (esempio PostgreSQL):
+Since the name of the Adobe Campaign installation directory has changed, some workflows may not work after the migration. If a workflow references the nl5 directory in one of its activities, this will raise an error. Replace this reference with **build**. You can run an SQL query to identify these workflows (PostgreSQL example):
 
 ```
 SELECT   iWorkflowId, sInternalName, sLabel 
@@ -168,9 +192,9 @@ WHERE mData LIKE '%nl5%';
 
 >[!CAUTION]
 >
->MySQL è supportato solo in v7 come motore di database principale quando si esegue la migrazione dalla versione 6.02 o 5.11 utilizzando questo motore.
+>MySQL is only supported in v7 as the main database engine when migrating from version 6.02 or 5.11 using this engine.
 
-Per impostazione predefinita, MySQL non gestisce i blocchi temporali. Per abilitare la gestione del fuso orario, esegui il comando seguente:
+MySQL does not manage timezones by default. To enable timezone management, run the following command:
 
 ```
 mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql
@@ -178,19 +202,19 @@ mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql
 
 >[!NOTE]
 >
->Per ulteriori informazioni, consulta la [https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html](https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html) pagina.
+>For more information, refer to the [https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html](https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html) page.
 
-Se sono state apportate modifiche alla struttura del database, ad esempio durante la configurazione (creazione di indici specifici, creazione di viste SQL, ecc.), è necessario prendere alcune precauzioni durante la migrazione. In effetti, alcune modifiche possono essere generate da incompatibilità con la procedura di migrazione. Ad esempio, creazione di visualizzazioni SQL contenenti **Timestamp** i campi non sono compatibili con **usetimestamptz** opzione . Vi consigliamo pertanto di seguire le raccomandazioni seguenti:
+If modifications have been made to the database structure, during configuration for example (creating specific indexes, creating SQL views, etc.), certain precautions should be taken when migrating. Indeed, certain modifications can be generated from incompatibilities with the migration procedure. For example, creating SQL views containing **Timestamp** fields are not compatible with the **usetimestamptz** option. We therefore advise you to follow the recommendations below:
 
-1. Prima di avviare la migrazione, esegui il backup del database.
-1. Elimina le modifiche SQL.
-1. Esegui il post aggiornamento
-   >[!NOTE]
-   >
-   >Devi seguire i passaggi di migrazione descritti in [questa sezione](../../migration/using/migrating-in-windows-for-adobe-campaign-7.md).
-1. Reintegrare le modifiche SQL.
+1. Before starting the migration, back up the database.
+1. Delete SQL changes.
+1. Perform the postupgrade
+    >[!NOTE]
+    >
+    >You must follow the migration steps presented in [this section](../../migration/using/migrating-in-windows-for-adobe-campaign-7.md).
+1. Reintegrate SQL changes.
 
-In questo esempio, un **NmcTrackingLogMessages** la visualizzazione è stata creata e presenta un **Timestamp** campo denominato **tslog**. In questo caso, la procedura di migrazione non riesce e viene visualizzato il seguente messaggio di errore:
+In this example, a **NmcTrackingLogMessages** view had been created and this has a **Timestamp** field named **tslog**. In this case, the migration procedure fails and the following error message appears:
 
 ```
 2011-10-04 11:57:51.804Z B67B28C0 1 info log Updating table 'NmcTrackingLogMessages'
@@ -198,94 +222,94 @@ In questo esempio, un **NmcTrackingLogMessages** la visualizzazione è stata cre
 2011-10-04 11:57:51.804Z B67B28C0 1 error log SQL order 'ALTER TABLE NmcTrackingLogMessages ALTER COLUMN tsLog TYPE TIMESTAMPTZ' was not executed. (iRc=-2006)
 ```
 
-Per assicurarsi che il post aggiornamento funzioni, è necessario eliminare la visualizzazione prima della migrazione e ricrearla dopo la migrazione, adattandola alla modalità TIMESTAMP WITH TIMEZONE.
+To make sure the postupgrade works, you must delete the view before the migration and re-create it after the migration while adapting it to the TIMESTAMP WITH TIMEZONE mode.
 
-### Tracciamento {#tracking}
+### Tracking {#tracking}
 
-La formula di tracciamento è stata modificata. Durante la migrazione, la vecchia formula (v5) viene sostituita dalla nuova (v7). Se utilizzi una formula personalizzata in Adobe Campaign v5, questa configurazione deve essere adattata in Adobe Campaign v7 (**NmsTracking_ClickFormula** e **NmsTracking_OpenFormula** opzioni).
+The tracking formula has been modified. When migrating, the old formula (v5) is replaced by the new one (v7). If you use a personalized formula in Adobe Campaign v5, this configuration has to be adapted in Adobe Campaign v7 (**NmsTracking_ClickFormula** and **NmsTracking_OpenFormula** options).
 
-È stata modificata anche la gestione del web tracking. Una volta effettuata la migrazione alla versione v7, devi avviare la procedura guidata di distribuzione per completare la configurazione del web tracking.
+Web tracking management has also been modified. Once migration to v7 has been carried out, you must start the deployment wizard to finish configuring the web tracking.
 
-![](assets/migration_web_tracking.png)
+  ![](assets/migration_web_tracking.png)
 
-Sono disponibili tre modalità:
+Three modes are available:
 
-* **Tracciamento web della sessione**: Se la **[!UICONTROL Leads]** pacchetto non installato. Questa opzione è selezionata per impostazione predefinita. Questa opzione è la più ideale in termini di prestazioni e ti consente di limitare le dimensioni dei log di tracciamento.
-* **Tracciamento Web permanente**
-* **Tracciamento web anonimo**: Se la **[!UICONTROL Leads]** pacchetto installato, questa opzione è selezionata per impostazione predefinita. È l’opzione che richiede più risorse. Come sopra, **sSourceId** deve essere indicizzata (nella tabella di tracciamento e nella **CrmIncomingLead** tabella).
+* **Session web tracking**: If the **[!UICONTROL Leads]** package has not been installed, this option is selected by default. This option is the most ideal in terms of performance and it allows you to limit the size of the tracking logs.
+* **Permanent Web tracking**
+* **Anonymous Web Tracking**: If the **[!UICONTROL Leads]** package is installed, this option is selected by default. It is the most resource-consuming option. As above, the **sSourceId** column must be indexed (in the tracking table and the **CrmIncomingLead** table).
 
 >[!NOTE]
 >
->Per ulteriori informazioni su queste tre modalità, consulta [questa sezione](../../configuration/using/about-web-tracking.md).
+>For more information on these three modes, refer to [this section](../../configuration/using/about-web-tracking.md).
 
-### Struttura ad albero di Adobe Campaign v7 {#campaign-vseven-tree-structure}
+### Adobe Campaign v7 tree structure {#campaign-vseven-tree-structure}
 
-Durante la migrazione, la struttura ad albero viene riorganizzata automaticamente in base agli standard v7. Le nuove cartelle vengono aggiunte, le cartelle obsolete vengono eliminate e il loro contenuto viene inserito nella cartella &quot;Per spostare&quot;. Tutti gli elementi in questa cartella devono essere controllati dopo la migrazione e il consulente deve decidere di mantenerli o eliminarli. Gli oggetti da conservare devono quindi essere spostati nel posto giusto.
+During migration, the tree structure is automatically reorganized based on the v7 standards. The new folders are added, the obsolete folders are deleted, and their content is placed in the "To move" folder. All items in this folder must be checked after the migration, and the consultant has to decide to either keep it or delete each one. Items to be kept then have to be moved to the right place.
 
-È stata aggiunta un’opzione per disabilitare la migrazione automatica della struttura di navigazione. Questa operazione è ora manuale. Le cartelle obsolete non vengono eliminate e non vengono aggiunte nuove cartelle. Questa opzione deve essere utilizzata solo se la struttura di navigazione preconfigurata v5 è stata sottoposta a troppe modifiche. Aggiungi l’opzione alla console prima di eseguire la migrazione nella **[!UICONTROL Administration > Options]** nodo:
+An option has been added for disabling the automatic migration of the navigation tree. This operation is now manual. Obsolete folders are not deleted and new folders are not added. This option should only be used if the out-of-the-box v5 navigation tree has undergone too many changes. Add the option to the console, before migrating, in the **[!UICONTROL Administration > Options]** node:
 
-* Nome interno: NlMigration_KeepFolderStructure
-* Tipo di dati: Intero
-* Valore (testo): 1
+* Internal name: NlMigration_KeepFolderStructure
+* Data type: Integer
+* Value (text): 1
 
-Se utilizzi questa opzione, dopo la migrazione dovrai eliminare le cartelle obsolete, aggiungere le nuove cartelle ed eseguire tutti i controlli necessari.
+If you use this option, after migration you will have to delete obsolete folders, add the new folders and run all necessary checks.
 
-**Elenco delle nuove cartelle**:
+**List of new folders**:
 
-Dopo la migrazione è necessario aggiungere le seguenti cartelle:
+The following folders need to be added after the migration:
 
-| Nome interno | Etichetta | Elemento “condizione” |
+| Internal name | Label | Condition |
 |---|---|---|
-| nmsAutoObjects | Oggetti creati automaticamente | - |
-| nmsCampaignAdmin | Gestione delle campagne | - |
-| nmsCampaignMgt | Gestione delle campagne | - |
-| nmsCampaignRes | Gestione delle campagne | - |
-| nmsModels | Modelli | - |
+| nmsAutoObjects | Objects created automatically | - |
+| nmsCampaignAdmin | Campaign management | - |
+| nmsCampaignMgt | Campaign management | - |
+| nmsCampaignRes | Campaign management | - |
+| nmsModels | Templates | - |
 | nmsOnlineRes | Online | - |
-| nmsProduction | Produzione | - |
-| nmsProfilProcess | Processi | - |
-| xtkDashboard | Dashboard | - |
-| xtkPlatformAdmin | Piattaforma | - |
-| nmsLocalOrgUnit | Unità organizzative | - |
-| nmsMRM | MRM | MRM installato |
-| nmsOperations | Campagne | Campaign installato |
+| nmsProduction | Production | - |
+| nmsProfilProcess | Processes | - |
+| xtkDashboard | Dashboards | - |
+| xtkPlatformAdmin | Platform | - |
+| nmsLocalOrgUnit | Organizational units | - |
+| nmsMRM | MRM | MRM installed |
+| nmsOperations | Campaigns | Campaign installed |
 
-**Elenco delle cartelle obsolete**:
+**List of obsolete folders**:
 
-Le cartelle obsolete da eliminare dopo la migrazione sono le seguenti:
+The obsolete folders to be deleted after the migration are as follows:
 
 >[!NOTE]
 >
->È necessario controllare l&#39;intero contenuto delle cartelle obsolete e per ogni elemento il consulente decide se conservarlo o eliminarlo. Gli oggetti da conservare devono essere spostati nel luogo appropriato.
+>The entire content of the obsolete folders must be checked, and for each item the consultant decides whether to keep or delete it. The items to be kept must be moved to the appropriate place.
 
-| Nome interno | Etichetta | Elemento “condizione” |
+| Internal name | Label | Condition |
 |---|---|---|
-| nmsAdministration | Amministrazione | - |
-| nmsDeliveryMgt | Esecuzione della campagna | - |
-| ncmContent | Gestione dei contenuti | Content Manager installato |
-| ncmForm | Modulo di input | Content Manager installato |
-| ncmImage | Immagini | Content Manager installato |
-| ncmJavascript | Codici JavaScript | Content Manager installato |
-| ncmJst | Modelli JavaScript | Content Manager installato |
-| ncmParameters | Configurazione | Content Manager installato |
-| ncmSrcSchema | Schemi di dati | Content Manager installato |
-| ncmStylesheet | File di stile XSL | Content Manager installato |
-| nmsAdminPlan | Amministrazione | Campaign installato |
-| nmsResourcePlan | Resources | Campaign installato |
-| nmsResourcesModels | Modelli | Campaign installato |
-| nmsRootPlan | Gestione delle campagne | Campaign installato |
-| nmsOperator | Operatori di marketing | MRM installato |
+| nmsAdministration | Administration | - |
+| nmsDeliveryMgt | Campaign execution | - |
+| ncmContent | Content management | Content Manager installed |
+| ncmForm | Input form | Content Manager installed |
+| ncmImage | Images | Content Manager installed |
+| ncmJavascript | JavaScript codes | Content Manager installed |
+| ncmJst | JavaScript templates | Content Manager installed |
+| ncmParameters | Configuration | Content Manager installed |
+| ncmSrcSchema | Data schemas | Content Manager installed |
+| ncmStylesheet | XSL style files | Content Manager installed |
+| nmsAdminPlan | Administration | Campaign installed |
+| nmsResourcePlan | Resources | Campaign installed |
+| nmsResourcesModels | Templates | Campaign installed |
+| nmsRootPlan | Campaign management | Campaign installed |
+| nmsOperator | Marketing operators | MRM installed |
 
 
-## Configurazioni specifiche dalla versione v6.02 alla versione v7{#specific-configurations-in-v6-02}
+## Specific configurations from v6.02 to v7{#specific-configurations-in-v6-02}
 
 ![](../../assets/v7-only.svg)
 
-La sezione seguente descrive la configurazione aggiuntiva necessaria per la migrazione dalla versione v6.02. È inoltre necessario configurare le impostazioni descritte in [questa pagina](../../migration/using/general-configurations.md).
+The following section details the additional configuration required when migrating from v6.02. You should also configure the settings detailed in [this page](../../migration/using/general-configurations.md).
 
-### Applicazioni web {#web-applications-v6}
+### Web applications {#web-applications-v6}
 
-Se stai eseguendo la migrazione dalla versione v6.02, potrebbero essere visualizzati registri di errore relativi alle applicazioni web di tipo panoramica. Esempi di messaggi di errore:
+If you are migrating from v6.02, error logs regarding overview-type web applications may appear. Error message examples:
 
 ```
 [PU-0006] Entity of type : 'xtk:entityBackupNew' and Id 'nms:webApp|taskOverview', expression '[SQLDATA[' was found : '...)) or (@id IN ([SQLDATA[select 
@@ -293,18 +317,20 @@ Se stai eseguendo la migrazione dalla versione v6.02, potrebbero essere visualiz
 [PU-0006] Entity of type : 'nms:webApp' and Id 'taskOverview', expression '[SQLDATA[' was found : '...@owner-id] IN ([SQLDATA[select iGroupid...'. (iRc=-1)
 ```
 
-Queste applicazioni web hanno utilizzato SQLData e non sono compatibili con v7, a causa di una maggiore sicurezza. Questi errori causeranno un errore di migrazione.
+These web applications used SQLData and are not compatible with v7, due to heightened security. These errors will lead to a migration failure.
 
-Se non hai utilizzato queste applicazioni web, esegui il seguente script di pulizia ed esegui nuovamente il post aggiornamento:
+If you didn't use these web applications, run the following cleanup script and rerun the postupgrade:
 
 ```
 Nlserver javascript -instance:[instance_name] -file [installation_path]/datakit/xtk/fra/js/removeOldWebApp.js
 ```
 
-Se hai modificato queste applicazioni web e desideri continuare a utilizzarle in v7, devi attivare la **allowSQLInjection** nelle diverse aree di protezione e riavvia l&#39;aggiornamento successivo. Fai riferimento a [SQLData](../../migration/using/general-configurations.md#sqldata) per ulteriori informazioni.
+If you have modified these web applications and would like to continue using them in v7, you must activate the **allowSQLInjection** option in your different security zones and re-start the postupgrade. Refer to the [SQLData](../../migration/using/general-configurations.md#sqldata) section for more on this.
 
-### Centro messaggi {#message-center}
+### Message Center {#message-center}
 
-Dopo la migrazione di un&#39;istanza di controllo del Centro messaggi, devi ripubblicare i modelli dei messaggi transazionali affinché funzionino.
+After a Message Center control instance migration, you must republish the transactional message templates for them to work.
 
-In v7, i nomi dei modelli di messaggi transazionali nelle istanze di esecuzione sono cambiati. Sono attualmente preceduti dal nome dell’operatore che corrisponde all’istanza di controllo in cui sono stati creati, ad esempio **control1_template1_rt** (4) **control1** è il nome dell&#39;operatore). Se si dispone di un volume significativo di modelli, è consigliabile eliminare i vecchi modelli nelle istanze di controllo.
+In v7, the names of transactional message templates on execution instances have changed. They are currently prefixed by the operator name that corresponds to the control instance on which they are created, for example **control1_template1_rt** (where **control1** is the name of the operator). If you have a significant volume of templates, we recommend deleting old templates on control instances.
+
+-->

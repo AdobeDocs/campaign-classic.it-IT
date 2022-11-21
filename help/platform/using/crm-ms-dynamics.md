@@ -4,9 +4,9 @@ title: Campaign - Connettore Microsoft Dynamics CRM
 description: Scopri come collegare Campaign e Microsoft Dynamics
 feature: Microsoft CRM Integration
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
+source-git-commit: 1a2e6a0bc754a1236f64b35e99c1be08f1066f75
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1111'
 ht-degree: 3%
 
 ---
@@ -216,3 +216,4 @@ Per i tipi di attributi supportati o non supportati da Microsoft Dynamics 365, c
 | Riguardo | No |
 | PartyList | No |
 | ManagedProperty | No |
+| Set di opzioni MultiSelect | No |

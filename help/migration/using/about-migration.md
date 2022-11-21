@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: migration-overview
 exl-id: 3050238d-6f77-4ffa-9aef-677ab8009388
-source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '452'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ![](../../assets/v7-only.svg)
 
-Questo documento descrive i prerequisiti di una migrazione, i passaggi per una migrazione a Adobe Campaign Classic v7. I passaggi e le impostazioni facoltative dipendono dalla configurazione. [Ulteriori informazioni](../../migration/using/general-configurations.md).
+Questo documento descrive i prerequisiti di una migrazione, i passaggi per una migrazione a Adobe Campaign Classic v7. I passaggi e le impostazioni facoltative dipendono dalla configurazione.
 
 Il processo di migrazione deve essere svolto con cautela, i suoi impatti devono essere presi in considerazione in anticipo e la procedura deve essere eseguita con rigore. Deve essere eseguito solo da un utente esperto. Consigliamo vivamente di contattare [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) prima di avviare una procedura di migrazione.
 
@@ -35,7 +35,7 @@ La migrazione deve essere testata in anticipo sull’ambiente di test/stage per 
 * Se utilizzi Adobe Campaign Cloud Messaging (distribuzione di mid-sourcing), contatta l’Assistenza clienti Adobe prima di iniziare.
 * Prima di avviare un processo di migrazione, **deve** eseguire il backup dei dati.
 * Il processo di migrazione potrebbe richiedere diversi giorni per essere completato.
-* Adobe Campaign v7 è una versione più sicura rispetto alle precedenti: questo influisce sulle linee guida di configurazione per evitare problemi quali il danneggiamento dei dati e per preservare l’integrità dei dati nel database. Di conseguenza, alcune funzioni offerte nelle versioni v5.11 e v6.02 potrebbero non essere più supportate nella versione v7 e devono essere adattate dopo la migrazione. In qualità di cliente, sei responsabile del test di tutte le configurazioni, compresi i flussi di lavoro.
+* Adobe Campaign v7 è una versione più sicura rispetto alle precedenti: questo influisce sulle linee guida di configurazione per evitare problemi quali il danneggiamento dei dati e per preservare l’integrità dei dati nel database. In qualità di cliente, sei responsabile del test di tutte le configurazioni, compresi i flussi di lavoro.
 
 Sono disponibili ulteriori prerequisiti in [questa pagina](../../migration/using/before-starting-migration.md).
 
