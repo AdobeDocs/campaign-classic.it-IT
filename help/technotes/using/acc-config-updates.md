@@ -2,8 +2,10 @@
 product: campaign
 title: Nota tecnica - Aggiornamenti alla configurazione di Adobe Campaign
 description: Aggiornamenti alla configurazione di Adobe Campaign
+hide: true
+hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 8ea5a42e0539ea23c1d9940e3f38f2c90fdcc223
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 12%
@@ -128,7 +130,7 @@ Inoltre, per gli ambienti ibridi, i clienti devono assicurarsi che la pipeline s
 
 ### API del provider APN basato su HTTP/2
 
-Da **31 marzo 2021**, il servizio APN (Apple Push Notification Service) non supporta più il protocollo binario legacy. [Leggi tutto](https://developer.apple.com/news/?id=c88acm2b).
+Da **31 marzo 2021**, il servizio APN (Apple Push Notification Service) non supporta più il protocollo binario legacy. [Ulteriori informazioni](https://developer.apple.com/news/?id=c88acm2b).
 
 **Sei interessato?**
 

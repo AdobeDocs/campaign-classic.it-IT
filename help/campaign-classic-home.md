@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;argomenti principali
 product: campaign
 title: Documentazione del prodotto Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 43d9eac2ed161465ca00ee4f511e4c020b4c44a2
+source-git-commit: a2817dabf421281dc0ade3531af62525e045bbee
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 54%
+source-wordcount: '183'
+ht-degree: 62%
 
 ---
 
@@ -20,9 +20,7 @@ ht-degree: 54%
 
 * **[Il rilascio di luglio è live!](rn/using/latest-release.md)**<br/> Scopri nuove funzionalità, miglioramenti e correzioni nelle note sulla versione
 
-* **[Rimuovi rimbalzi rigidi errati](delivery/using/update-bounce-qualification.md)**<br/> Scopri come aggiornare i non corretti rimbalzi rigidi dopo l’interruzione di Apple
-
-* **[Proteggi le istanze Campaign](technotes/using/acc-config-updates.md)**<br/> Aggiornamento alle build più recenti per proteggere la piattaforma Campaign
+<!--* **[Secure your Campaign environment](technotes/using/tech-stack-upgrade.md)**<br/> Update to the latest versions to secure your Campaign platform-->
 
 * **[Aggiornare l’integrazione di Adobe Experience Cloud Triggers](integrations/using/configuring-adobe-io.md)**<br/> Il servizio di autenticazione oAuth legacy ha raggiunto la fine del ciclo di vita: devi effettuare la migrazione ad Adobe I/O
 
