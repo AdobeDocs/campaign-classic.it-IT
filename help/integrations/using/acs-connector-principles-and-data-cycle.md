@@ -3,11 +3,13 @@ product: campaign
 title: Introduzione al connettore ACS
 description: Principi del connettore ACS e ciclo dei dati
 feature: ACS Connector
+hide: true
+hidefromtoc: true
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
+source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
 workflow-type: tm+mt
 source-wordcount: '2038'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -191,7 +193,7 @@ Di seguito è riportato l’elenco dei campi dei destinatari replicati con l’i
    <td> @firstName<br /> </td> 
   </tr> 
   <tr> 
-   <td> Nome centrale<br /> </td> 
+   <td> Secondo nome<br /> </td> 
    <td> @middleName<br /> </td> 
   </tr> 
   <tr> 
@@ -211,7 +213,7 @@ Di seguito è riportato l’elenco dei campi dei destinatari replicati con l’i
    <td> @formula introduttiva<br /> </td> 
   </tr> 
   <tr> 
-   <td> Nessun contatto (da qualsiasi canale)<br /> </td> 
+   <td> Non desidera più essere contattato (tramite nessun canale)<br /> </td> 
    <td> @blackList<br /> </td> 
   </tr> 
   <tr> 
@@ -247,7 +249,7 @@ Di seguito è riportato l’elenco dei campi dei destinatari replicati con l’i
    <td> [location/@address4]<br /> </td> 
   </tr> 
   <tr> 
-   <td> CAP<br /> </td> 
+   <td> CAP/Codice postale<br /> </td> 
    <td> [location/@zipCode]<br /> </td> 
   </tr> 
   <tr> 
@@ -255,7 +257,7 @@ Di seguito è riportato l’elenco dei campi dei destinatari replicati con l’i
    <td> [location/@city]<br /> </td> 
   </tr> 
   <tr> 
-   <td> Codice di Stato/Provincia<br /> </td> 
+   <td> Codice stato/provincia<br /> </td> 
    <td> [location/@stateCode]<br /> </td> 
   </tr> 
   <tr> 

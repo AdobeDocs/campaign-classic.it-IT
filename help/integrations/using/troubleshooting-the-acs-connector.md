@@ -5,8 +5,10 @@ description: Risolvere i problemi relativi al connettore ACS
 audience: integrations
 content-type: reference
 topic-tags: acs-connector
+hide: true
+hidefromtoc: true
 exl-id: 4693dca1-ee55-43f0-b3dc-62a5b67a8058
-source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
+source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
 workflow-type: tm+mt
 source-wordcount: '870'
 ht-degree: 0%
@@ -33,7 +35,7 @@ A seconda dell’implementazione, puoi affrontare diversi problemi comuni.
  <tbody> 
   <tr> 
    <td> destinatari (o qualsiasi altra dimensione di profilo)<br /> </td> 
-   <td> profiles<br /> </td> 
+   <td> profili<br /> </td> 
   </tr> 
   <tr> 
    <td> elenco<br /> </td> 

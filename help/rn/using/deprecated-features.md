@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 45c5ef3315e4208184e9c0ab5f20678646fe2d0b
-workflow-type: ht
-source-wordcount: '1624'
-ht-degree: 100%
+source-git-commit: 0ecf9c69cc4b444feda1e42701a3a27f2b2e7eeb
+workflow-type: tm+mt
+source-wordcount: '1684'
+ht-degree: 97%
 
 ---
 
@@ -41,11 +41,20 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
  <tbody> 
    <tr>
    <td><strong>Funzionalità</strong></td>
-   <td><strong>Sostituzione</strong></td>
+   <td><strong>Dettagli</strong></td>
   </tr>
 <tr>
- <td>N/D</td>
- <td>N/D</td>
+ <td>Social marketing con Facebook</td>
+ <td>Social Marketing con Facebook è ora obsoleto. Puoi utilizzare l’integrazione Twitter per pubblicare su social media o lavorare con Adobe per creare un canale personalizzato.
+ <p></p>
+  <p>Data prevista di rimozione: fine 2023</p>
+  </td>
+</tr>
+<tr>
+ <td>Connettore ACS</td>
+ <td>Il connettore ACS (PrimeSupport) è ora obsoleto. Puoi utilizzare le funzionalità di esportazione/importazione di Campaign per estrarre e inserire dati in entrambi i prodotti.<p></p>
+  <p>Data prevista di rimozione: fine 2023</p>
+  </td>
 </tr>
  </tbody> 
 </table>

@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Informazioni sul social marketing
-description: Scopri come utilizzare Campaign per interagire con i clienti tramite Facebook e Twitter
+description: Scopri come utilizzare Campaign per interagire con i clienti tramite Twitter
 audience: social
 content-type: reference
 topic-tags: introduction
 exl-id: c8fd5f75-9386-42dd-bfb6-8086a86aa324
-source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
+source-git-commit: c4a545ee3cffa16e72a7ba1ca3010fffd43e61c2
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 15%
+source-wordcount: '90'
+ht-degree: 6%
 
 ---
 
@@ -17,14 +17,10 @@ ht-degree: 15%
 
 ![](../../assets/v7-only.svg)
 
-La **Gestione dei social network** (Social Marketing) applicazione progettata per la gestione dei social network consente di interagire con clienti e potenziali clienti tramite Facebook e Twitter.
+La **Gestione dei social network** (Social Marketing) applicazione progettata per la gestione delle reti sociali consente di interagire con clienti e potenziali clienti tramite Twitter.
 
-**Acquisizione di nuovi contatti**
+Scopri i passaggi chiave per integrare Campaign e Twitter in [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-tw.html)
 
-Adobe Campaign Social Marketing semplifica l&#39;acquisizione di nuovi contatti tramite Facebook: contatta gli utenti e chiedi loro se desiderano condividere le loro informazioni di profilo. Se accettano, Adobe Campaign recupera automaticamente i dati, consentendo di eseguire campagne di targeting e, quando possibile, di implementare strategie cross-channel.
+In qualità di cliente on-premise o ibrido, il tuo account esterno Twitter deve essere configurato e abilitato. Per le configurazioni ibride, il **Mid-sourcing** è inoltre necessario impostare una connessione attiva alla piattaforma di mid-sourcing.
 
->[!IMPORTANT]
->
->Facebook e Twitter apportano regolarmente modifiche alle schermate e ai processi utilizzati. Il presente documento verrà aggiornato di conseguenza.
->
->Adobe Campaign richiede la conformità ai termini del servizio Facebook e Twitter.
+![](assets/tw-external-account.png)

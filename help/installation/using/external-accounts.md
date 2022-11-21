@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: ae235d39c4a78e0a2507f6baaebbdc9986dbf995
+source-git-commit: 31a475c98b09bbeca6a16c6fd98698af10016033
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1714'
 ht-degree: 8%
 
 ---
@@ -117,7 +117,7 @@ La **[!UICONTROL Routing]** l’account esterno ti consente di configurare ogni 
 * [Telefono](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Direct mail](../../delivery/using/about-direct-mail-channel.md)
 * [Agenzia](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
-* [Twitter](../../social/using/configuring-publishing-on-twitter.md)
+* [Twitter](../../social/using/about-social-marketing.md)
 * [Canale iOS](../../delivery/using/configuring-the-mobile-application.md)
 * [Canale Android](../../delivery/using/configuring-the-mobile-application-android.md)
 
@@ -225,29 +225,6 @@ Le impostazioni di configurazione dell’account esterno dipendono dal motore di
 * Configurare l’accesso a [sybase IQ](../../installation/using/configure-fda-sybase.md)
 * Configurare l’accesso a [Teradata](../../installation/using/configure-fda-teradata.md)
 
-### Connessione facebook {#facebook-connect-external-account}
-
-La **[!UICONTROL Facebook Connect]** l’account esterno consente di visualizzare contenuti personalizzati nelle applicazioni Facebook, semplificando l’acquisizione di potenziali clienti tramite questo social network.
-
-Per ogni applicazione Facebook, è necessario creare un **[!UICONTROL Facebook Connect]** digitare account esterno. Per ulteriori informazioni, consulta [page](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
-
-![](assets/ext_account_12.png)
-
-* **[!UICONTROL Hosting mode]**
-
-   Modalità di hosting dell&#39;applicazione tra **[!UICONTROL hosted by a partner]** o **[!UICONTROL hosted by this instance]**.
-
-* **[!UICONTROL Application ID]**
-
-   ID app della tua applicazione Facebook.
-
-* **[!UICONTROL Application secret]**
-
-   Segreto app dell’applicazione Facebook.
-
-Se si sceglie l&#39;ospitato da questa modalità di istanza, l&#39;URL dell&#39;area di lavoro protetta deve essere incollato nel **Giochi web facebook (https)** campo su Facebook
-
-Per sapere dove individuare queste credenziali, consulta questo [page](https://developers.facebook.com/docs/facebook-login/access-tokens).
 
 ## Account esterni per l&#39;integrazione della soluzione Adobe
 

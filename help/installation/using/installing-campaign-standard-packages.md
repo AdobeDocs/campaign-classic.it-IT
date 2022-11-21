@@ -3,10 +3,10 @@ product: campaign
 title: Installare i pacchetti incorporati di Campaign Classic
 description: Scopri come installare i pacchetti incorporati di Campaign
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 13%
+source-wordcount: '1253'
+ht-degree: 12%
 
 ---
 
@@ -229,8 +229,8 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
    <td> Tutto </td> 
   </tr> 
   <tr> 
-   <td> ACS Connector<br /> </td> 
-   <td> Consente di collegare Adobe Campaign v7 e Adobe Campaign Standard. Si tratta di una funzione integrata in Campaign v7 che replica automaticamente i dati in Campaign Standard, unendo il meglio di entrambe le applicazioni. Facoltativo. <a href="../../integrations/using/acs-connector-principles-and-data-cycle.md">Scopri di più</a> <br /> </td> 
+   <td> Connettore ACS (obsoleto)<br /> </td> 
+   <td> Consente di collegare Adobe Campaign v7 e Adobe Campaign Standard. Si tratta di una funzione integrata in Campaign v7 che replica automaticamente i dati in Campaign Standard, unendo il meglio di entrambe le applicazioni. Facoltativo.<br /> </td> 
    <td> Marketing </td> 
   </tr> 
  </tbody> 

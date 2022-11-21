@@ -4,9 +4,10 @@ title: Glossario per Adobe Campaign
 description: Glossario per Adobe Campaign
 role: User, Data Architect
 level: Beginner
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
+source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
 workflow-type: tm+mt
-source-wordcount: '6041'
+source-wordcount: '5972'
 ht-degree: 4%
 
 ---
@@ -31,12 +32,14 @@ La gestione degli accessi consente agli amministratori di assegnare accesso e au
 Ulteriori informazioni [Gestione degli accessi](access-management.md).
 +++
 
+<!--
 +++**ACS Connector**
 
-Il connettore ACS (Prime Offering) collega Adobe Campaign v7 e Adobe Campaign Standard. Si tratta di una funzione integrata in Campaign v7 che replica automaticamente i dati in Campaign Standard, unendo il meglio di entrambe le applicazioni. Campaign v7 dispone di strumenti avanzati per gestire il database di marketing principale. La replica dei dati da Campaign v7 consente ad Campaign Standard di sfruttare i dati avanzati in un ambiente semplice e intuitivo.
+ACS Connector (Prime Offering) bridges Adobe Campaign v7 and Adobe Campaign Standard. It is an integrated feature in Campaign v7 that automatically replicates data to Campaign Standard, uniting the best of both applications. Campaign v7 has advanced tools to manage the primary marketing database. The data replication from Campaign v7 allows Campaign Standard to leverage the rich data in a user-friendly environment. 
 
-Ulteriori informazioni [Connettore ACS](../../integrations/using/acs-connector-principles-and-data-cycle.md).
+Learn more about [ACS Connector](../../integrations/using/acs-connector-principles-and-data-cycle.md).
 +++
+-->
 
 +++**Attività**
 
@@ -686,7 +689,7 @@ Uno spazio di offerta è una cartella che definisce il percorso in cui viene esp
 Ulteriori informazioni [Spazio offerta](../../interaction/using/creating-offer-spaces.md).
 +++
 
-+++**Temi di offerta**
++++**Temi offerta**
 
 *Contesto: Interazione campagna*
 
@@ -776,7 +779,7 @@ Le variabili di personalizzazione sono parti di codice in una consegna che posso
 Ulteriori informazioni [Variabili di personalizzazione](../../delivery/using/about-personalization.md).
 +++
 
-+++**Pianificare**
++++**Piano**
 
 Un piano è un tipo di cartella utilizzato per organizzare le attività di marketing in base al calendario. Le cartelle della vista Esplora risorse definiscono unità basate sul tempo, ad esempio un anno, un trimestre o un mese. Le cartelle del piano possono essere nidificate e possono contenere altre cartelle del piano, cartelle di programma o campagne.
 
@@ -915,7 +918,7 @@ L’attività del flusso di lavoro dei servizi di abbonamento ti consente di cre
 Ulteriori informazioni [Attività dei servizi di abbonamento](../../workflow/using/subscription-services.md).
 +++
 
-+++**Approvazione di Target**
++++**Approvazione target**
 
 *Contesto: Marketing distribuito su Campaign*
 
