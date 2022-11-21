@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: ca2f50a501c63cc8b2d4de5d9a41b655a6b6d6cf
+source-git-commit: 95c4a83037bcd2e22a03ac80d1ec4a7896a94ce3
 workflow-type: tm+mt
-source-wordcount: '2713'
+source-wordcount: '2709'
 ht-degree: 75%
 
 ---
@@ -43,8 +43,8 @@ Ulteriori informazioni sono disponibili nella pagina [Funzioni obsolete e rimoss
 
 **Altre modifiche**
 
-* I registri web sono stati migliorati: gli avvisi di accessoEscalation ora vengono visualizzati solo per gli utenti con privilegi di amministratore. (NEO-47167)
-* Per evitare errori, la **Raccolta di dati per il flusso di lavoro del servizio Heatmap** (collectDataHeatMapService) ora viene arrestato per impostazione predefinita. (NEO-33959)
+* I registri web sono stati migliorati: `logonEscalation` gli avvisi vengono ora visualizzati solo per gli utenti con privilegi di amministratore. (NEO-47167)
+* Per evitare errori, la **Raccolta di dati per il servizio Heatmap** Il flusso di lavoro (collectDataHeatMapService) ora viene arrestato per impostazione predefinita. (NEO-33959)
 * Sono stati implementati diversi miglioramenti per ottimizzare l’utilizzo della CPU per il dashboard delle campagne. (NEO-46417)
 * Per evitare arresti anomali, il metodo js loadLibraryDebug è stato rimosso. (NEO-46968)
 * I riferimenti rimanenti alla libreria log4j sono stati rimossi dall’installazione Campaign su Windows. (NEO-44851)
@@ -56,11 +56,11 @@ Ulteriori informazioni sono disponibili nella pagina [Funzioni obsolete e rimoss
 * È stato risolto un problema che impediva la riapprovazione durante la reimpostazione dell’approvazione del contenuto in una consegna e-mail. (NEO-44259)
 * È stato risolto un problema che poteva impedire la **Approvazione della consegna** da visualizzare. (NEO-47547)
 * È stato risolto un problema di prestazioni nella scheda HTML di una consegna che poteva verificarsi per un codice HTML di grandi dimensioni. (NEO-47440)
-* È stato risolto un problema che influenzava gli aggiornamenti dello stato del registro di consegna sull’istanza MID, quando l’opzione FeatureFlag_GZIP_Compression era abilitata. (NEO-49183)
+* È stato risolto un problema che influenzava gli aggiornamenti dello stato del registro di consegna sull’istanza MID, quando `FeatureFlag_GZIP_Compression` opzione abilitata. (NEO-49183)
 * È stato risolto un problema che impediva l’invio di notifiche dell’app mobile iOS da un’istanza di esecuzione durante l’utilizzo dell’autenticazione basata sui token. (NEO-45961)
 * È stato risolto un problema relativo alla **Aggiornamento per il recapito messaggi** workflow (deliverabilityUpdate) che si è bloccato quando sono presenti troppi log di trasmissione da sincronizzare. (NEO-48287)
-* È stato risolto un problema relativo al tipo di evento che bloccava il flusso di lavoro di sincronizzazione del Centro messaggi (mcSynch).
-* È stato risolto un problema che poteva causare un errore durante l’aggiunta di **Destinatari che hanno aperto** indicatore (EstimatedRecipientOpen) nei dati aggiuntivi di un **Query** attività del flusso di lavoro. (NEO-46665)
+* È stato risolto un problema relativo al tipo di evento che bloccava **Sincronizzazione del Centro messaggi** Flusso di lavoro (mcSynch).
+* È stato risolto un problema che poteva causare un errore durante l’aggiunta di **Destinatari che hanno aperto**  Indicatore (EstimatedRecipientOpen) nei dati aggiuntivi di un **Query** attività del flusso di lavoro. (NEO-46665)
 * È stato risolto un problema relativo alla **Fatturazione** workflow non riuscito quando i pacchetti Controllo e Esecuzione del Centro messaggi sono installati nella stessa istanza. (NEO-47674)
 * È stato risolto un problema relativo alla **Fatturazione** workflow non riuscito quando le tabelle con la chiave primaria sono definite come stringa invece di un numero intero. (NEO-46254)
 * È stato risolto un problema relativo ai filtri mappa di calore quando il nome del flusso di lavoro era troppo lungo. (NEO-46301)
