@@ -6,9 +6,9 @@ audience: social
 content-type: reference
 topic-tags: introduction
 exl-id: c8fd5f75-9386-42dd-bfb6-8086a86aa324
-source-git-commit: c4a545ee3cffa16e72a7ba1ca3010fffd43e61c2
+source-git-commit: 795bd8637db4866d887393cc68b8dac93ca02bd8
 workflow-type: tm+mt
-source-wordcount: '90'
+source-wordcount: '92'
 ht-degree: 6%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 La **Gestione dei social network** (Social Marketing) applicazione progettata per la gestione delle reti sociali consente di interagire con clienti e potenziali clienti tramite Twitter.
 
-Scopri i passaggi chiave per integrare Campaign e Twitter in [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-tw.html)
+Scopri i passaggi chiave per integrare Campaign e Twitter in [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-tw.html){target=&quot;_blank&quot;}.
 
 In qualità di cliente on-premise o ibrido, il tuo account esterno Twitter deve essere configurato e abilitato. Per le configurazioni ibride, il **Mid-sourcing** è inoltre necessario impostare una connessione attiva alla piattaforma di mid-sourcing.
 
