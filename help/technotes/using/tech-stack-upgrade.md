@@ -5,7 +5,7 @@ description: Aggiornamento del sistema Adobe Campaign
 hide: true
 hidefromtoc: true
 exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
-source-git-commit: 1b7b216c22d48159a1590603de220714c1d7cf32
+source-git-commit: b8bbdb4a0d595ec2bc884e041d1e56b81da8aa3d
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 8%
@@ -30,7 +30,7 @@ Per motivi di sicurezza, devi [installa la build Campaign più recente](#ac-upgr
 
 **Sei interessato da questo problema?**
 
-Se sei interessato dal [aggiornamento del sistema operativo](#os-upgrade) e/o [aggiornamento del sistema di database](#pg-upgrade) di seguito, è necessario aggiornare gli ambienti Campaign a [la versione più recente della versione 7.3.2](../../rn/using/latest-release.m#release-7-3-2), compatibile con tali sistemi.
+Se sei interessato dal [aggiornamento del sistema operativo](#os-upgrade) e/o [aggiornamento del sistema di database](#pg-upgrade) di seguito, è necessario aggiornare gli ambienti Campaign a [la versione più recente della versione 7.3.2](../../rn/using/latest-release.md#release-7-3-2), compatibile con tali sistemi.
 
 **Come si esegue l’aggiornamento?**
 
