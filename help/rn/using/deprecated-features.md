@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 0ecf9c69cc4b444feda1e42701a3a27f2b2e7eeb
 workflow-type: tm+mt
 source-wordcount: '1684'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -44,15 +44,15 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
    <td><strong>Dettagli</strong></td>
   </tr>
 <tr>
- <td>Social marketing con Facebook</td>
- <td>Social Marketing con Facebook è ora obsoleto. Puoi utilizzare l’integrazione Twitter per pubblicare su social media o lavorare con Adobe per creare un canale personalizzato.
+ <td>Social Marketing con Facebook</td>
+ <td>Il Social Marketing con Facebook è ora obsoleto. Per pubblicare sui social media o lavorare con Adobe per creare un canale personalizzato, è possibile utilizzare Twitter.
  <p></p>
   <p>Data prevista di rimozione: fine 2023</p>
   </td>
 </tr>
 <tr>
  <td>Connettore ACS</td>
- <td>Il connettore ACS (PrimeSupport) è ora obsoleto. Puoi utilizzare le funzionalità di esportazione/importazione di Campaign per estrarre e inserire dati in entrambi i prodotti.<p></p>
+ <td>Il connettore ACS (offerta Prime) è ora obsoleto. È possibile utilizzare le funzionalità di esportazione/importazione di Campaign per estrarre e inserire dati in entrambi i prodotti.<p></p>
   <p>Data prevista di rimozione: fine 2023</p>
   </td>
 </tr>
@@ -70,8 +70,8 @@ In questa sezione sono elencate le funzionalità rimosse da Campaign Classic.
    <td><strong>Dettagli</strong></td>
   <tr>  
       <tr>
-  <td>Adobe Analytics Data Connector<br></td>
-   <td><p>Adobe Analytics Data Connector è stato rimosso il 17 agosto 2022. È stato dichiarato obsoleto con la versione 21.1.3 di Campaign.</p>
+  <td>Connettore dati Adobe Analytics<br></td>
+   <td><p>Connettore dati Adobe Analytics è stato rimosso il 17 agosto 2022. È stato dichiarato obsoleto con la versione 21.1.3 di Campaign.</p>
    <p>Se utilizzi questo connettore, devi adattare di conseguenza l’implementazione. <a href="../../platform/using/adobe-analytics-connector.md">Ulteriori informazioni</a></p>
   </td>
  </tr>

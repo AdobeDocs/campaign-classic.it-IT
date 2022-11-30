@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 5792ad762befb97888ad32406d3bcb7f97df3fa7
 workflow-type: tm+mt
 source-wordcount: '4994'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,13 +25,13 @@ Per gli aggiornamenti relativi alla versione, consulta le [Note sulla versione d
 
 ### Novembre 2022 {#nov-2022}
 
-È stata aggiornata la sezione Note sulla versione con miglioramenti e patch 7.3.2. [Maggiori informazioni](latest-release.md)
+È stata aggiornata la sezione Note sulla versione 7.3.2 con miglioramenti e patch. [Maggiori informazioni](latest-release.md)
 
 Matrice di compatibilità aggiornata con il supporto Teradata 17. [Maggiori informazioni](compatibility-matrix.md)
 
-La sezione Gestione dei file e delle risorse è stata aggiornata con ulteriori informazioni sulla **uploadWhiteList** attributo. [Maggiori informazioni](../../installation/using/file-res-management.md)
+La sezione Gestione delle risorse e dei file è stata aggiornata con ulteriori informazioni sull’attributo **uploadWhiteList**. [Maggiori informazioni](../../installation/using/file-res-management.md)
 
-La documentazione sulle aree di protezione è stata aggiornata con ulteriori informazioni sulle **allowDebug** attributo . [Maggiori informazioni](../../installation/using/security-zones.md#recommendations)
+La documentazione sulle aree di protezione è stata aggiornata con ulteriori informazioni sull’attributo **allowDebug**. [Maggiori informazioni](../../installation/using/security-zones.md#recommendations)
 
 La guida alla migrazione è stata aggiornata. I riferimenti alle versioni non supportate di Adobe Campaign sono stati rimossi. [Maggiori informazioni](../../migration/using/about-migration.md)
 
@@ -111,7 +111,7 @@ Aggiornamento dei dettagli dei registri del processo di migrazione per la distri
 
 Sono stati aggiunti requisiti sulle autorizzazioni IMS per implementare l’integrazione Adobe Campaign-Adobe Analytics. [Maggiori informazioni](../../platform/using/adobe-analytics-provisioning.md)
 
-È stata aggiornata la data di fine del ciclo di vita di Adobe Analytics Data Connector dal 1° marzo 2022 al 17 agosto 2022. [Maggiori informazioni](deprecated-features.md)
+È stata aggiornata la data di fine del ciclo di vita di Connettore dati Adobe Analytics dal 1° marzo 2022 al 17 agosto 2022. [Maggiori informazioni](deprecated-features.md)
 
 È stato aggiunto un collegamento alla documentazione dell’SDK per dispositivi mobili Adobe Experience Platform per informazioni su come configurare l’estensione Campaign in Adobe Launch. [Maggiori informazioni](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
 
