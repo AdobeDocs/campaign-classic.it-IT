@@ -5,10 +5,10 @@ description: Aggiornamento del sistema Adobe Campaign
 hide: true
 hidefromtoc: true
 exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
-source-git-commit: 7d7185e9d8c376d1390dc7e5f6a8724c3cbcfd40
+source-git-commit: bffad77458ab0b4d40490a52c64c99a0fe882d22
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 8%
+source-wordcount: '499'
+ht-degree: 9%
 
 ---
 
@@ -43,7 +43,7 @@ Se sei interessato dal [aggiornamento del sistema operativo](#os-upgrade) e/o [a
 
 **Sei interessato da questo problema?**
 
-Se utilizzi Campaign su un sistema operativo Debian, per usufruire degli ultimi aggiornamenti sulla sicurezza Debian, devi spostare l’infrastruttura Campaign in **Debian 11**. Debian 9 ha raggiunto la fine del ciclo di vita il 30 giugno 2022 e non fornisce più correzioni di sicurezza. Adobe fornisce supporto per la sicurezza per Debian 9 fino al 30 giugno 2023.
+Se utilizzi Campaign su un sistema operativo Debian, per usufruire degli ultimi aggiornamenti sulla sicurezza Debian, devi spostare l’infrastruttura Campaign in **Debian 11**. Il supporto per la sicurezza per Debian 9 sarà disponibile fino al 30 giugno 2023.
 
 **Come si esegue l’aggiornamento?**
 
@@ -55,7 +55,7 @@ Se utilizzi Campaign su un sistema operativo Debian, per usufruire degli ultimi 
 
 **Sei interessato da questo problema?**
 
-Se il sistema di database per Campaign è PostgreSQL, per usufruire delle ultime innovazioni e degli aggiornamenti di sicurezza PostgreSQL, è necessario eseguire l’aggiornamento a **PostgreSQL 14**. PostreSQL 11 raggiungerà la fine del ciclo di vita il 9 novembre 2023.
+Se il sistema di database per Campaign è PostgreSQL, per usufruire delle ultime innovazioni e degli aggiornamenti di sicurezza PostgreSQL, è necessario eseguire l’aggiornamento a **PostgreSQL 14**. Si noti che PostgreSQL 11 raggiungerà la fine del ciclo di vita il 9 novembre 2023.
 
 **Come si esegue l’aggiornamento?**
 
