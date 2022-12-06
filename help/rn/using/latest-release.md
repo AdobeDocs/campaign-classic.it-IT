@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: a3f64d71b857312fd3130bb66a864740c902e2f4
+source-git-commit: dfdcbc262249a9def6bbc67308ae810fd35990d0
 workflow-type: tm+mt
-source-wordcount: '2722'
+source-wordcount: '2737'
 ht-degree: 99%
 
 ---
@@ -22,6 +22,10 @@ In questa pagina sono elencate nuove funzionalità, miglioramenti e correzioni i
 ## ![](assets/do-not-localize/green_2.png) Versione 7.3.2 - Build 9356 {#release-7-3-2}
 
 _21 novembre 2022_
+
+>[!CAUTION]
+>
+>L’aggiornamento della console client è obbligatorio. Scopri come aggiornare la console client in questa [pagina](../../installation/using/installing-the-client-console.md)
 
 **Aggiornamenti della compatibilità**
 
