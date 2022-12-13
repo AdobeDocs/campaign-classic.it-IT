@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 1c0aeecd72a35fc6e2e72f4b042df2ff39e5cb6f
+source-git-commit: 8391df5046d56edfb33de5eb9f2afb4738108791
 workflow-type: tm+mt
 source-wordcount: '2771'
 ht-degree: 98%
@@ -149,6 +149,7 @@ Consulta la [Matrice di compatibilità di Campaign](../../rn/using/compatibility
 * È stato risolto un problema che poteva causare arresti anomali durante l’utilizzo di codice HTML errato in una consegna. (NEO-40385)
 * È stato risolto un problema che poteva impedire agli utenti non amministratori di accedere alla scheda **Analysis** (Analisi) nelle proprietà di consegna. (NEO-34025)
 * È stato risolto un problema che poteva impedire il caricamento di un’immagine in modalità blocco da un server esterno durante la preparazione dei messaggi. (NEO-40307)
+* È stato risolto un problema che poteva causare l’invio della consegna a un numero di destinatari maggiore del previsto. (NEO-45108)
 
 ## ![](assets/do-not-localize/green_2.png) Versione 7.2.2 - Build 9349 {#release-7-2-2}
 
@@ -242,4 +243,3 @@ Adobe Campaign è ora compatibile con Windows Server 2019. Consulta la [Matrice 
 * È stato risolto un problema che poteva impedire la visualizzazione in anteprima delle consegne e-mail collegate a un flusso di lavoro. (NEO-37840)
 * È stato risolto un problema che poteva causare l’eliminazione di tabelle valide contenenti valori di elenco da parte del flusso di lavoro di pulizia del database. (NEO-34911)
 * È stato risolto un problema che poteva causare l’arresto anomalo del flusso di lavoro di fatturazione sulle istanze di marketing.
-* È stato risolto un problema che poteva causare l’invio della consegna a un numero di destinatari maggiore del previsto. (NEO-45108)
