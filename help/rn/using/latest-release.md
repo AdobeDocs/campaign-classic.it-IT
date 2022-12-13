@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: f37f6c080bc6fb70cbd3f853db4ad8685ae8ebf8
-workflow-type: ht
-source-wordcount: '2737'
-ht-degree: 100%
+source-git-commit: 1c0aeecd72a35fc6e2e72f4b042df2ff39e5cb6f
+workflow-type: tm+mt
+source-wordcount: '2771'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,8 @@ _21 novembre 2022_
 
 **Aggiornamenti della compatibilità**
 
-* Adobe Campaign è ora compatibile con PostgreSQL 14.
+* Adobe Campaign è ora compatibile con PostgreSQL 14. Per ulteriori informazioni, consulta [nota tecnica](../../technotes/using/tech-stack-upgrade.md).
+
 * Dopo la fine del ciclo di vita di Microsoft Internet Explorer 11, il motore di rendering HTML per le dashboard nella console client utilizza ora Edge Chromium. (NEO-20741)
 
 Consulta la [Matrice di compatibilità di Campaign](../../rn/using/compatibility-matrix.md#RDBMSservers).
@@ -108,7 +109,7 @@ _1 luglio 2022_
 * L’SDK di Adobe Campaign ora supporta Android 12 e iOS 15 per le notifiche push.
 * Adobe Campaign è ora compatibile con MySQL 8.
 * Adobe Campaign è ora compatibile con Windows 11.
-* Adobe Campaign è ora compatibile con Debian 11.
+* Adobe Campaign è ora compatibile con Debian 11. Per ulteriori informazioni, consulta [nota tecnica](../../technotes/using/tech-stack-upgrade.md).
 
 Consulta la [Matrice di compatibilità di Campaign](../../rn/using/compatibility-matrix.md#OperatingSystems).
 
@@ -241,3 +242,4 @@ Adobe Campaign è ora compatibile con Windows Server 2019. Consulta la [Matrice 
 * È stato risolto un problema che poteva impedire la visualizzazione in anteprima delle consegne e-mail collegate a un flusso di lavoro. (NEO-37840)
 * È stato risolto un problema che poteva causare l’eliminazione di tabelle valide contenenti valori di elenco da parte del flusso di lavoro di pulizia del database. (NEO-34911)
 * È stato risolto un problema che poteva causare l’arresto anomalo del flusso di lavoro di fatturazione sulle istanze di marketing.
+* È stato risolto un problema che poteva causare l’invio della consegna a un numero di destinatari maggiore del previsto. (NEO-45108)
