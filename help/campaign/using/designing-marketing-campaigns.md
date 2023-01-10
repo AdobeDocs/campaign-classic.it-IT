@@ -7,7 +7,7 @@ exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '443'
-ht-degree: 21%
+ht-degree: 22%
 
 ---
 
@@ -40,7 +40,7 @@ Nel contesto di Campaign è necessario conoscere i seguenti concetti:
 
    Un programma consente di definire azioni di marketing per un periodo di calendario: lancio, tela cerata, lealtà, ecc. Ogni programma contiene campagne collegate a un calendario, che fornisce una visualizzazione complessiva.
 
-* **Pianificare**
+* **Piano**
 
    Il piano di marketing può contenere più programmi. È collegato a un periodo di calendario, ha un bilancio assegnato e può anche essere collegato a documenti e obiettivi.
 
@@ -52,7 +52,7 @@ Nel contesto di Campaign è necessario conoscere i seguenti concetti:
 
    Per ulteriori informazioni al riguardo, consulta [questa sezione](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
-* **Obiettivi**
+* **Finalità**
 
    All’interno della campagna, del programma o del piano, puoi specificare un elenco di obiettivi. Si tratta di valori quantificati da raggiungere. Al termine della campagna, del programma o del piano, il modulo MRM consente di confrontare gli obiettivi e i risultati in report dedicati.
 
