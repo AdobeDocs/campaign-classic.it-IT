@@ -3,7 +3,7 @@ product: campaign
 title: Modificare i moduli
 description: Modificare i moduli
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 4af44f38d495d31dec4b9b7a142dbed0c2450d56
 workflow-type: tm+mt
 source-wordcount: '1698'
 ht-degree: 2%
@@ -34,7 +34,7 @@ Per progettare i moduli, modificare il contenuto XML nell’editor XML:
 
 ![](assets/d_ncs_integration_form_edit.png)
 
-[Leggi tutto](form-structure.md#formatting).
+[Ulteriori informazioni](form-structure.md#formatting).
 
 Per visualizzare l’anteprima di un modulo, fare clic sul pulsante **[!UICONTROL Preview]** scheda:
 
@@ -58,7 +58,7 @@ Per visualizzare l’anteprima di un modulo, fare clic sul pulsante **[!UICONTRO
 
 * Creazione guidata
 
-   Questo modulo comprende più schermate mobili ordinate in sequenze specifiche. Gli utenti passano da una schermata all’altra. [Leggi tutto](form-structure.md#wizards).
+   Questo modulo comprende più schermate mobili ordinate in sequenze specifiche. Gli utenti passano da una schermata all’altra. [Ulteriori informazioni](form-structure.md#wizards).
 
 * Iconbox
 
@@ -88,7 +88,7 @@ Nei moduli è possibile utilizzare i contenitori per vari scopi:
 * Definire l’accesso ai campi di input
 * Nidificazione di moduli in altri moduli
 
-[Leggi tutto](form-structure.md#containers).
+[Ulteriori informazioni](form-structure.md#containers).
 
 ### Organizzare i contenuti
 
@@ -97,7 +97,7 @@ Utilizzare i contenitori per organizzare il contenuto all’interno dei moduli:
 * È possibile raggruppare i campi in sezioni.
 * È possibile aggiungere pagine a moduli multipagina.
 
-Per inserire un contenitore, utilizza le `<container>` elemento. [Leggi tutto](form-structure.md#containers).
+Per inserire un contenitore, utilizza le `<container>` elemento. [Ulteriori informazioni](form-structure.md#containers).
 
 #### Campi gruppo
 
@@ -144,7 +144,7 @@ Utilizza i contenitori per definire cosa è visibile e per definire l’accesso 
 
 ### Nidificare moduli
 
-Utilizzare i contenitori per nidificare i moduli all’interno di altri moduli. [Leggi tutto](#add-pages-to-multipage-forms).
+Utilizzare i contenitori per nidificare i moduli all’interno di altri moduli. [Ulteriori informazioni](#add-pages-to-multipage-forms).
 
 ## Riferimenti alle immagini
 
@@ -210,7 +210,7 @@ Per creare un modulo, procedere come segue:
 
 1. Inserire gli elementi del modulo.
 
-   Ad esempio, per inserire un campo di input, utilizza il `<input>` elemento. Imposta la `xpath` attributo al riferimento di campo come espressione XPath. [Leggi tutto](schema-structure.md#referencing-with-xpath).
+   Ad esempio, per inserire un campo di input, utilizza il `<input>` elemento. Imposta la `xpath` attributo al riferimento di campo come espressione XPath. [Ulteriori informazioni](schema-structure.md#referencing-with-xpath).
 
    Questo esempio mostra i campi di input basati su `nms:recipient` schema.
 
@@ -239,7 +239,7 @@ Per creare un modulo, procedere come segue:
 
    | Editor di campi | Attributo modulo |
    | --- | --- |
-   | Pulsante di scelta | `type="radiobutton"` |
+   | Pulsante di opzione | `type="radiobutton"` |
    | Casella di controllo | `type="checkbox"` |
    | Modifica albero | `type="tree"` |
 
@@ -249,7 +249,7 @@ Per creare un modulo, procedere come segue:
 
    | Elemento “element” | Attributo | Descrizione |
    | --- | --- | --- |
-   | `<input>` | `read-only:"true"` | Accesso in sola lettura a un campo |
+   | `<input>` | `read-only="true"` | Accesso in sola lettura a un campo |
    | `<container>` | `type="visibleGroup" visibleIf="`*edit-expr*`"` | Visualizza in modo condizionale un gruppo di campi |
    | `<container>` | `type="enabledGroup" enabledIf="`*edit-expr*`"` | Abilita condizionale un gruppo di campi |
 
@@ -449,7 +449,7 @@ Per modificare un modulo di fabbrica, attenersi alla seguente procedura:
    1. Dal menu , scegli **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**.
    1. Selezionare un modulo di input e modificarlo.
 
-   È possibile estendere gli schemi di dati di fabbrica, ma non i moduli di input di fabbrica. È consigliabile modificare direttamente i moduli di input di fabbrica senza ricrearli. Durante gli aggiornamenti del software, le modifiche nei moduli di input di fabbrica vengono unite con gli aggiornamenti. Se l&#39;unione automatica non riesce, è possibile risolvere i conflitti. [Leggi tutto](../../production/using/upgrading.md#resolving-conflicts).
+   È possibile estendere gli schemi di dati di fabbrica, ma non i moduli di input di fabbrica. È consigliabile modificare direttamente i moduli di input di fabbrica senza ricrearli. Durante gli aggiornamenti del software, le modifiche nei moduli di input di fabbrica vengono unite con gli aggiornamenti. Se l&#39;unione automatica non riesce, è possibile risolvere i conflitti. [Ulteriori informazioni](../../production/using/upgrading.md#resolving-conflicts).
 
    Ad esempio, se si estende uno schema di fabbrica con un campo aggiuntivo, è possibile aggiungere questo campo al modulo di fabbrica correlato.
 
@@ -459,7 +459,7 @@ Nei moduli è possibile includere controlli di convalida.
 
 ### Consentire l’accesso in sola lettura ai campi
 
-Per concedere l’accesso in sola lettura a un campo, utilizza il `readOnly="true"` attributo. Ad esempio, potrebbe essere utile mostrare la chiave primaria di un record, ma con accesso in sola lettura. [Leggi tutto](form-structure.md#non-editable-fields).
+Per concedere l’accesso in sola lettura a un campo, utilizza il `readOnly="true"` attributo. Ad esempio, potrebbe essere utile mostrare la chiave primaria di un record, ma con accesso in sola lettura. [Ulteriori informazioni](form-structure.md#non-editable-fields).
 
 In questo esempio, la chiave primaria (`iRecipientId`) del `nms:recipient` lo schema viene visualizzato in accesso in sola lettura:
 
@@ -489,7 +489,7 @@ Ulteriori informazioni [campi espressione](form-structure.md#expression-field) e
 
 ### Convalida valori
 
-È possibile utilizzare chiamate SOAP JavaScript per convalidare i dati del modulo dalla console. Utilizzare queste chiamate per una convalida complessa, ad esempio, per verificare un valore rispetto a un elenco di valori autorizzati. [Leggi tutto](form-structure.md#soap-methods).
+È possibile utilizzare chiamate SOAP JavaScript per convalidare i dati del modulo dalla console. Utilizzare queste chiamate per una convalida complessa, ad esempio, per verificare un valore rispetto a un elenco di valori autorizzati. [Ulteriori informazioni](form-structure.md#soap-methods).
 
 1. Crea una funzione di convalida in un file JS.
 
