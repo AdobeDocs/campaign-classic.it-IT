@@ -4,7 +4,7 @@ title: Informazioni sulle attività di targeting
 description: Informazioni sulle attività di targeting
 feature: Workflows, Audiences, Targeting Activity
 exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 743baa49e5d62ed1c2f7f635f6bf120a67646e63
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 3%
@@ -22,7 +22,7 @@ Queste attività ti consentono di creare uno o più target definendo i set e sud
 * **Leggi elenco**: consente di utilizzare i dati contenuti in un elenco. Fai riferimento a [Utilizzo di dati da un elenco: Leggi elenco](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list) sezione .
 * **Union**: consente di raggruppare il risultato di più attività in un unico target. Fai riferimento a [Union](union.md) sezione .
 * **Intersection**: consente di estrarre solo il gruppo con gli stessi risultati dell’attività in entrata. Fai riferimento a [Intersection](intersection.md) sezione .
-* **Exclusion**: consente di creare un target basato su un target principale da cui vengono estratti uno o più altri target. Fai riferimento a [Intersection](intersection.md) sezione .
+* **Exclusion**: consente di creare un target basato su un target principale da cui vengono estratti uno o più altri target. Fai riferimento a [Exclusion](exclusion.md) sezione .
 * **Divisione**: consente di dividere un target in più sottoinsiemi. Fai riferimento a [Divisione](split.md) sezione .
 * **Celle**: fornisce una visualizzazione dei vari sottoinsiemi sotto forma di colonne di dati e facilita la manipolazione di tali sottoinsiemi in presenza di molti di essi. Per ulteriori informazioni, consulta la sezione [Celle](cells.md) sezione .
 * **Offerte per cella**: consente di collegare offerte diverse a ciascun sottoinsieme di una popolazione. Fai riferimento a [Offerte per cella](offers-by-cell.md) sezione .
