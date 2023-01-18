@@ -4,9 +4,9 @@ title: Creare un modello di consegna
 description: Creare un modello di consegna
 feature: Delivery Templates
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 65e80f16a6beaee89b51636017c42766589e179e
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '383'
 ht-degree: 11%
 
 ---
@@ -33,6 +33,10 @@ Per ulteriori informazioni sulla modalità di configurazione, consulta [Collegam
 
 ## Creazione di un nuovo modello {#creating-a-new-template}
 
+>[!NOTE]
+>
+>Per evitare errori di configurazione, l’Adobe consiglia di duplicare un modello nativo e personalizzarne le impostazioni anziché crearne uno nuovo.
+
 Per configurare un modello di consegna, esegui i seguenti passaggi:
 
 1. Apri Campaign Explorer.
@@ -40,7 +44,7 @@ Per configurare un modello di consegna, esegui i seguenti passaggi:
 
    ![](assets/delivery_template_1.png)
 
-1. Fai clic su **Nuovo** nella barra degli strumenti per creare un nuovo modello di consegna.
+1. Fai clic su **Nuovo** nella barra degli strumenti per creare un nuovo modello di consegna, oppure **Duplica** un modello esistente.
 
    ![](assets/delivery_template_2.png)
 
@@ -62,9 +66,6 @@ Per configurare un modello di consegna, esegui i seguenti passaggi:
 
 1. Fai clic su **Salva**. Il modello è ora pronto per essere utilizzato in una consegna.
 
->[!NOTE]
->
->Per evitare errori di configurazione, è consigliabile duplicare un modello nativo e modificarne le proprietà anziché creare un nuovo modello.
 
 ## Video tutorial {#delivery-template-video}
 

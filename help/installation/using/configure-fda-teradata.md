@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
-source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
+source-git-commit: 65e80f16a6beaee89b51636017c42766589e179e
 workflow-type: tm+mt
 source-wordcount: '1798'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -92,7 +92,7 @@ L’account esterno Teradata ti consente di collegare l’istanza Campaign al da
 
    * **[!UICONTROL Database]**: Nome del database (facoltativo)
 
-   * **[!UICONTROL Options]**: Opzioni da passare attraverso le Teradate. Utilizza il formato seguente: &#39;parameter=value&#39;. Utilizzare una semicolonna come separatore tra i valori.
+   * **[!UICONTROL Options]**: Opzioni da passare attraverso le Teradate. Utilizza il formato seguente: &#39;parameter=value&#39;. Utilizzare un punto e virgola come separatore tra i valori.
 
    * **[!UICONTROL Timezone]**: Fuso orario impostato in Teradata. [Ulteriori informazioni](#timezone)
 
@@ -117,7 +117,7 @@ Se si desidera configurare un altro account esterno che utilizza anche ODBC, ad 
 
 ![](assets/ext_account_24.png)
 
-### Proiezione query
+### Query banding
 
 Quando più utenti Adobe Campaign si connettono allo stesso account esterno della Teradata FDA, la **[!UICONTROL Query banding]** La scheda ti consente di impostare una banda di query, ovvero un set di coppie chiave/valore, su una sessione.
 
