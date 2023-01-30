@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 1cf94ee5edac7087d7d21709243e9f56c2b3d6f5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '778'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -154,7 +154,7 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 <p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 e SP2</p>
-<p><strong>Importante:</strong> Microsoft SQL Server non è supportato come database primario quando il server Campaign è in esecuzione su Linux. <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux-/prerequisites-of-campaign-installation-in-linux.html?lang=en#database-access-layers">Ulteriori informazioni</a>.</p>
+<p><strong>Importante:</strong> Microsoft SQL Server non è supportato come database primario quando il server Campaign è in esecuzione su Linux. <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux-/prerequisites-of-campaign-installation-in-linux.html?lang=it#database-access-layers">Ulteriori informazioni</a>.</p>
 </td>
 </tr>
 </tbody>
