@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 8391df5046d56edfb33de5eb9f2afb4738108791
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2771'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ _21 novembre 2022_
 
 **Aggiornamenti della compatibilità**
 
-* Adobe Campaign è ora compatibile con PostgreSQL 14. Per ulteriori informazioni, consulta [nota tecnica](../../technotes/using/tech-stack-upgrade.md).
+* Adobe Campaign è ora compatibile con PostgreSQL 14. Per ulteriori informazioni, consulta questa [nota tecnica](../../technotes/using/tech-stack-upgrade.md).
 
 * Dopo la fine del ciclo di vita di Microsoft Internet Explorer 11, il motore di rendering HTML per le dashboard nella console client utilizza ora Edge Chromium. (NEO-20741)
 
@@ -79,7 +79,7 @@ Ulteriori informazioni sono disponibili nella pagina [Funzioni obsolete e rimoss
 * È stato risolto un problema relativo all’importazione di file HTML quando i nodi immagine (img) contenevano URL con campi di personalizzazione. (NEO-48396)
 * È stato corretto un errore HTTP 500 durante il tentativo di connessione a un’istanza in cui il nodo `limit` non era configurato nel file serverConf.xml.
 * È stato risolto un problema che poteva causare un errore di “Mancata corrispondenza del set di caratteri” durante l’utilizzo di alcune funzioni come `to_nclob` con un database unicode di Oracle in cui NChar non veniva abilitato. (NEO-49361)
-* È‧stato‧risolto‧un‧problema‧che‧causava‧un‧errore‧quando‧un‧utente‧con‧diritti‧di‧accesso‧in‧lettura‧nella‧cartella‧nmsDeliveryMapping‧tentava‧di‧eseguire‧una‧campagna‧o‧un‧flusso‧di‧lavoro. (NEO-48230)
+* È stato risolto un problema che causava un errore quando un utente con diritti di accesso in lettura nella cartella nmsDeliveryMapping tentava di eseguire una campagna o un flusso di lavoro. (NEO-48230)
 * È stato risolto un problema che impediva l’utilizzo della funzione `JSPContext.sqlExecWithOneParam`. (NEO-50066)
 * Sono stati corretti diversi errori di reindirizzamento. (NEO-50030)
 
@@ -109,7 +109,7 @@ _1 luglio 2022_
 * L’SDK di Adobe Campaign ora supporta Android 12 e iOS 15 per le notifiche push.
 * Adobe Campaign è ora compatibile con MySQL 8.
 * Adobe Campaign è ora compatibile con Windows 11.
-* Adobe Campaign è ora compatibile con Debian 11. Per ulteriori informazioni, consulta [nota tecnica](../../technotes/using/tech-stack-upgrade.md).
+* Adobe Campaign è ora compatibile con Debian 11. Per ulteriori informazioni, consulta questa [nota tecnica](../../technotes/using/tech-stack-upgrade.md).
 
 Consulta la [Matrice di compatibilità di Campaign](../../rn/using/compatibility-matrix.md#OperatingSystems).
 
@@ -165,7 +165,7 @@ _1° marzo 2022_
 * Sono stati corretti diversi errori post-aggiornamento relativi al meccanismo degli ID di sequenza in caso di ID negativi. (NEO-43205, NEO-42846, NEO-42845)
 * È stato risolto un problema che si verificava con l’utilizzo dell’account esterno **Web Analytics** con consegne ricorrenti e continue, che causava la perdita parziale di dati dall’account esterno. (NEO-38548)
 * È stato risolto un problema che rallentava la fase di post-aggiornamento della tabella NmsActiveContact. (NEO-43206)
-* È stato risolto un problema di errore post-aggiornamento che si verificava se le cartelle predefinite erano state spostate dal nodo **Administration** a qualsiasi altra posizione. (NEO-42875)
+* È stato risolto un problema di errore post-aggiornamento che si verificava se le cartelle predefinite erano state spostate dal nodo **Amministrazione** a qualsiasi altra posizione. (NEO-42875)
 * È stato risolto un problema che si verificava con l’utilizzo di un’attività del flusso di lavoro **Update data** (Aggiorna dati) che poteva impedire l’aggiornamento dello schema del destinatario con i dati del destinatario da un database esterno di Google Cloud. (NEO-42343)
 * È stato risolto un problema relativo al connettore Adobe Analytics durante la fase di post-aggiornamento. (NEO-43318, NEO-38136)
 * È stato risolto un problema CUID sovrascritto da “VALUE_TO_CHANGE” durante la fase di post-aggiornamento. (NEO-43267)
