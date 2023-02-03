@@ -6,9 +6,9 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98b338ddf0da184363c599d74aeb98ed7f6303ce
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1176'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,6 @@ Per facilitare l’impostazione dei piani di manutenzione, in questa sezione son
 In PostgreSQL è possibile utilizzare le seguenti parole chiave tipiche:
 
 * VUOTO (COMPLETO, ANALISI, VERBOSE)
-* REINDEX
 
 Per eseguire l&#39;operazione VACUUM, analizzarla e temporizzarla, è possibile utilizzare la sintassi seguente:
 
@@ -99,61 +98,48 @@ Di seguito è riportato un esempio tipico di un piano di manutenzione SQL da ese
 ```
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) nmsdelivery;
-REINDEX TABLE nmsdelivery;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) nmsdeliverystat;
-REINDEX TABLE nmsdeliverystat;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflow;
-REINDEX TABLE xtkworkflow;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflowevent;
-REINDEX TABLE xtkworkflowevent;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflowjob;
-REINDEX TABLE xtkworkflowjob;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflowlog;
-REINDEX TABLE xtkworkflowlog;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflowtask;
-REINDEX TABLE xtkworkflowtask;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) xtkjoblog;
-REINDEX TABLE xtkjoblog;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) xtkjob;
-REINDEX TABLE xtkjob;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) nmsaddress;
-REINDEX TABLE nmsaddress;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) nmsdeliverypart;
-REINDEX TABLE nmsdeliverypart;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
-REINDEX TABLE nmsmirrorpageinfo;
 ```
 
 >[!NOTE]
 >
 >* Adobe consiglia di iniziare con tabelle più piccole: in questo modo, se il processo non riesce su tabelle di grandi dimensioni (dove il rischio di guasto è più elevato), almeno una parte della manutenzione è stata completata.
 >* Adobe consiglia di aggiungere le tabelle specifiche del modello dati, soggette a aggiornamenti significativi. Questo può essere il caso **NmsRecipient** se si dispone di flussi di replica dei dati giornalieri di grandi dimensioni.
->* Le istruzioni VACUUM e REINDEX bloccano la tabella, che mette in pausa alcuni processi durante l’esecuzione della manutenzione.
+>* L&#39;istruzione VACUUM blocca la tabella, che mette in pausa alcuni processi durante l&#39;esecuzione della manutenzione.
 >* Per tabelle molto grandi (generalmente superiori a 5 Gb), l&#39;istruzione VACUUM FULL può diventare piuttosto inefficiente e richiedere molto tempo. Adobe sconsiglia di utilizzarlo per il **YyyNmsBroadLogXxx** tabella.
 >* Questa operazione di manutenzione può essere implementata da un flusso di lavoro Adobe Campaign, utilizzando un **[!UICONTROL SQL]** attività. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../workflow/using/architecture.md). Assicurati di pianificare la manutenzione per un tempo di attività ridotto che non entri in conflitto con la finestra di backup.
-
 >
 
 
