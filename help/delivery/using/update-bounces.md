@@ -5,9 +5,9 @@ description: Scopri come aggiornare la qualificazione dei messaggi non recapitat
 feature: Deliverability
 hide: true
 hidefromtoc: true
-source-git-commit: 13f730d428861124060146efa26238ceca38bed6
+source-git-commit: f320c905f50c69a40678729b009a4c238a462e3c
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '520'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ Nota che se il differimento viene rimbalzato con il messaggio &quot;452 azione r
 >
 >Puoi controllare il dashboard di stato di Google Workspace su [questa pagina](https://www.google.com/appsstatus#hl=en&amp;v=status){_blank}.
 
-## Sintomi{#update-bounce-symptoms}
+## Impatto{#update-bounce-impact}
 
 In caso di interruzione di un ISP, le e-mail inviate tramite Campaign non possono essere recapitate correttamente al destinatario: queste e-mail verranno erroneamente contrassegnate come messaggi non recapitati.
 
@@ -57,7 +57,10 @@ In base al calendario dell&#39;incidente e dell&#39;ISP, di seguito sono riporta
 
 * Per le istanze Campaign Classic v7 con informazioni sulla risposta di mancato recapito SMTP nel **[!UICONTROL Error text]** campo dell’elenco di quarantena:
 
-   * **Testo di errore (testo di quarantena)** contiene &quot;550-5.1.1&quot; E **Testo di errore (testo di quarantena)** contiene &quot;support.ISP.com&quot; &quot;support.ISP.com&quot; può essere: &quot;support.apple.com&quot; o &quot;support.google.com&quot; per esempio
+   * **Testo di errore (testo di quarantena)** contiene &quot;550-5.1.1&quot; E **Testo di errore (testo di quarantena)** contiene &quot;support.ISP.com&quot;
+
+      dove &quot;support.ISP.com&quot; può essere: &quot;support.apple.com&quot; o &quot;support.google.com&quot; per esempio
+
    * **Stato aggiornamento (@lastModified)** su o dopo MM/GG/AAAA HH:MM:SS AM
    * **Stato aggiornamento (@lastModified)** su o prima MM/GG/AAAA HH:MM:PM SS
 
