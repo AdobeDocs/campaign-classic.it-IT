@@ -1,0 +1,69 @@
+---
+product: campaign
+title: Aggiornare la qualifica di mancato recapito dopo un’interruzione del servizio ISP
+description: Scopri come aggiornare la qualificazione dei messaggi non recapitati dopo un’interruzione dell’ISP
+feature: Deliverability
+hide: true
+hidefromtoc: true
+source-git-commit: 13f730d428861124060146efa26238ceca38bed6
+workflow-type: tm+mt
+source-wordcount: '519'
+ht-degree: 2%
+
+---
+
+# Aggiorna i rimbalzi rigidi errati dopo un&#39;interruzione dell&#39;ISP {#update-bounces}
+
+![](../../assets/common.svg)
+
+## Contesto{#update-bounce-context}
+
+In caso di interruzione di un ISP, le e-mail inviate tramite Campaign non possono essere recapitate correttamente al destinatario: queste e-mail verranno erroneamente contrassegnate come messaggi non recapitati.
+
+I problemi globali ad Apple o Gmail, ad esempio, possono causare il mancato recapito di alcuni messaggi e-mail inviati a indirizzi e-mail Apple o Gmail validi, in quanto gli indirizzi e-mail non validi dai server ISP con le seguenti risposte non recapitate:
+
+* &quot;550 5.1.1 &#39;indirizzo email&#39;: ricerca utente riuscita ma nessun record utente trovato.&quot;
+
+* &quot;550 destinatario &#39;email&#39; rifiutato&quot;
+
+Nota che se il differimento viene rimbalzato con il messaggio &quot;452 azione richiesta interrotta: riprova più tardi&quot; vengono osservati, vengono automaticamente ritentati e non sono necessarie azioni. Dovrebbero migliorare man mano che l&#39;ISP recupera la piena capacità.
+
+>[!NOTE]
+>
+>Puoi controllare il dashboard di stato del sistema di Apple su [questa pagina](https://www.apple.com/support/systemstatus/){_blank}.
+>
+>Puoi controllare il dashboard di stato di Google Workspace su [questa pagina](https://www.google.com/appsstatus#hl=en&amp;v=status){_blank}.
+
+## Sintomi{#update-bounce-symptoms}
+
+In caso di interruzione di un ISP, le e-mail inviate tramite Campaign non possono essere recapitate correttamente al destinatario: queste e-mail verranno erroneamente contrassegnate come messaggi non recapitati.
+
+Per logica standard di gestione dei messaggi non recapitati, Adobe Campaign ha aggiunto automaticamente questi destinatari all’elenco di quarantena con un **[!UICONTROL Status]** definizione **[!UICONTROL Quarantine]**. Per correggere questo problema, devi aggiornare la tabella di quarantena in Campaign trovando e rimuovendo questi destinatari o modificando i relativi **[!UICONTROL Status]** a **[!UICONTROL Valid]** in modo che il flusso di lavoro di pulizia notturna li rimuova.
+
+Per trovare i destinatari interessati da questo problema, consulta le istruzioni riportate di seguito.
+
+## Processo di aggiornamento{#update-bounce-update}
+
+Devi eseguire una query sulla tabella di quarantena per filtrare tutti i destinatari interessati, ad esempio per Apple, gli indirizzi che includono @icloud.com, @me.com, @mac.com, che sono stati potenzialmente interessati dall’interruzione, in modo che possano essere rimossi dall’elenco di quarantena e inclusi nelle future consegne e-mail di Campaign.
+
+In base al calendario dell&#39;incidente e dell&#39;ISP, di seguito sono riportate le linee guida consigliate per questa query.
+
+* Per gli ambienti Campaign v8 e Campaign Classic v7 con informazioni sulle regole Inbound Email nel **[!UICONTROL Error text]** campo dell’elenco di quarantena:
+
+   * **Testo di errore (testo di quarantena)** contiene &quot;Momen_Code10_InvalidRecipient&quot;
+   * **Dominio e-mail (@dominio)** uguale a dominio1.com OR **Dominio e-mail (@dominio)** uguale a domain2.com OR **Dominio e-mail (@dominio)** uguale a domain3.com
+   * **Stato aggiornamento (@lastModified)** su o dopo MM/GG/AAAA HH:MM:SS AM
+   * **Stato aggiornamento (@lastModified)** su o prima MM/GG/AAAA HH:MM:PM SS
+
+* Per le istanze Campaign Classic v7 con informazioni sulla risposta di mancato recapito SMTP nel **[!UICONTROL Error text]** campo dell’elenco di quarantena:
+
+   * **Testo di errore (testo di quarantena)** contiene &quot;550-5.1.1&quot; E **Testo di errore (testo di quarantena)** contiene &quot;support.ISP.com&quot; &quot;support.ISP.com&quot; può essere: &quot;support.apple.com&quot; o &quot;support.google.com&quot; per esempio
+   * **Stato aggiornamento (@lastModified)** su o dopo MM/GG/AAAA HH:MM:SS AM
+   * **Stato aggiornamento (@lastModified)** su o prima MM/GG/AAAA HH:MM:PM SS
+
+
+Una volta visualizzato l’elenco dei destinatari interessati, puoi impostarli su uno stato **[!UICONTROL Valid]** in modo che vengano rimosse dall&#39;elenco di quarantena **[!UICONTROL Database cleanup]** oppure eliminali dalla tabella.
+
+**Argomenti correlati:**
+* [Comprendere gli errori di consegna](understanding-delivery-failures.md)
+* [Qualificazione di mail non recapitate](understanding-delivery-failures.md#bounce-mail-qualification)
