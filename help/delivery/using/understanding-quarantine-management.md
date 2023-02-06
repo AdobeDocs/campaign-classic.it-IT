@@ -4,10 +4,10 @@ title: Gestione della quarantena
 description: Gestione della quarantena
 feature: Monitoring, Deliverability
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: f7813764e55986efa3216b50e5ebf4387bd70e5e
 workflow-type: tm+mt
-source-wordcount: '2837'
-ht-degree: 10%
+source-wordcount: '2983'
+ht-degree: 13%
 
 ---
 
@@ -71,8 +71,9 @@ Per ciascun indirizzo sono disponibili le seguenti informazioni:
 >
 >L’aumento del numero delle quarantene è un effetto normale, legato all’&quot;usura&quot; del database. Ad esempio, se la durata di un indirizzo e-mail è considerata di tre anni e la tabella dei destinatari aumenta del 50% ogni anno, l’aumento delle quarantene può essere calcolato come segue:
 >
->Fine anno 1: (1*0.33)/(1+0.5)=22%.
-Fine anno 2: ((1.22*0.33)+0.33)/(1.5+0.75)=32,5%.
+>Fine anno 1: 1&#42;0,33)/(1+0,5)=22%.
+>
+>Fine anno 2: (1.22)&#42;0,33)+0,33)/(1,5+0,75)=32,5%.
 
 ### Identificare gli indirizzi messi in quarantena nei rapporti di consegna {#identifying-quarantined-addresses-in-delivery-reports}
 
@@ -94,35 +95,6 @@ Puoi cercare lo stato dell’indirizzo e-mail di qualsiasi destinatario. A quest
 
 ![](assets/tech_quarant_recipients_filter.png)
 
-### Rimuovere un indirizzo messo in quarantena {#removing-a-quarantined-address}
-
-Se necessario, è possibile rimuovere manualmente un indirizzo dall’elenco di quarantena. Inoltre, gli indirizzi che corrispondono a condizioni specifiche vengono eliminati automaticamente dall’elenco di quarantena dal [Pulizia del database](../../production/using/database-cleanup-workflow.md) workflow.
-
-Per rimuovere manualmente un indirizzo dall’elenco di quarantena, eseguire una delle operazioni seguenti.
-
->[!IMPORTANT]
-L’eliminazione manuale di un indirizzo e-mail dalla quarantena comporta l’avvio della consegna a questo indirizzo. Di conseguenza, questo può avere gravi ripercussioni sulla consegna e sulla reputazione dell’IP, il che potrebbe comportare il blocco dell’indirizzo IP o del dominio di invio. Procedi con maggiore attenzione quando consideri di rimuovere qualsiasi indirizzo dalla quarantena. In caso di dubbio, contatta un esperto di recapito.
-
-* È possibile modificarne lo stato in **[!UICONTROL Valid]** dal **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** nodo.
-
-   ![](assets/tech_quarant_error_status.png)
-
-* È inoltre possibile modificarne lo stato in **[!UICONTROL Allowlisted]**. In questo caso, l’indirizzo rimane nell’elenco di quarantena, ma sarà oggetto di targeting sistematico, anche in caso di errore.
-
-Gli indirizzi vengono rimossi automaticamente dall’elenco di quarantena nei seguenti casi:
-
-* Indirizzi in un **[!UICONTROL With errors]** lo stato viene rimosso dall’elenco di quarantena dopo la consegna riuscita.
-* Indirizzi in un **[!UICONTROL With errors]** lo stato verrà rimosso dall’elenco di quarantena se l’ultimo messaggio non recapitato è stato eseguito più di 10 giorni fa. Per ulteriori informazioni sulla gestione degli errori software, consulta [questa sezione](#soft-error-management).
-* Indirizzi in un **[!UICONTROL With errors]** che rimbalzano con il **[!UICONTROL Mailbox full]** L&#39;errore verrà rimosso dall&#39;elenco di quarantena dopo 30 giorni.
-
-Il loro stato cambia in **[!UICONTROL Valid]**.
-
->[!IMPORTANT]
-Destinatari con un indirizzo in un **[!UICONTROL Quarantine]** o **[!UICONTROL Denylisted]** lo stato non verrà mai rimosso, anche se riceve un’e-mail.
-
-Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento al [MTA avanzato](sending-with-enhanced-mta.md), il numero massimo di tentativi da eseguire in caso di **[!UICONTROL Erroneous]** lo stato e il ritardo minimo tra i nuovi tentativi si basano ora sulle prestazioni di un IP sia storicamente che attualmente in un determinato dominio.
-
-Per le installazioni on-premise e le installazioni in hosting/ibride utilizzando l’MTA legacy di Campaign, puoi modificare il numero di errori e il periodo tra due errori. A questo scopo, modifica le impostazioni corrispondenti nella [procedura guidata di distribuzione](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**) o [a livello di consegna](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
 
 ## Condizioni per la messa in quarantena di un indirizzo {#conditions-for-sending-an-address-to-quarantine}
 
@@ -135,7 +107,8 @@ Adobe Campaign gestisce la quarantena in base al tipo di consegna non riuscita e
 Se un utente qualifica un’e-mail come spam ([circuito di retroazione](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops)), il messaggio viene automaticamente reindirizzato verso una casella di posta tecnica gestita da Adobe. L’indirizzo e-mail dell’utente viene quindi messo automaticamente in quarantena con lo stato **[!UICONTROL Denylisted]**. Questo stato si riferisce solo all’indirizzo , il profilo non è nel elenco Bloccati, in modo che l’utente continui a ricevere messaggi SMS e notifiche push.
 
 >[!NOTE]
-In Adobe Campaign la quarantena distingue tra maiuscole e minuscole. Accertati di importare gli indirizzi e-mail in lettere minuscole, in modo che non vengano reindirizzate in un secondo momento.
+>
+>In Adobe Campaign la quarantena distingue tra maiuscole e minuscole. Accertati di importare gli indirizzi e-mail in lettere minuscole, in modo che non vengano reindirizzate in un secondo momento.
 
 Nell’elenco degli indirizzi messi in quarantena (vedi [Identificazione degli indirizzi messi in quarantena per l’intera piattaforma](#identifying-quarantined-addresses-for-the-entire-platform)), **[!UICONTROL Error reason]** il campo indica perché l’indirizzo selezionato è stato messo in quarantena.
 
@@ -148,6 +121,57 @@ Al contrario degli errori rigidi, gli errori morbidi non mettono immediatamente 
 I tentativi verranno eseguiti durante il [durata della consegna](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period). Quando il contatore di errori raggiunge la soglia limite, l’indirizzo viene messo in quarantena. Per ulteriori informazioni, consulta [Tentativi dopo un errore temporaneo di consegna](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
 
 Il contatore degli errori viene reinizializzato se l’ultimo errore significativo si è verificato più di 10 giorni fa. Lo stato dell’indirizzo cambia in **Valido** e viene eliminato dall’elenco delle quarantene dal [Pulizia del database](../../production/using/database-cleanup-workflow.md) workflow.
+
+
+Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento al [MTA avanzato](sending-with-enhanced-mta.md), il numero massimo di tentativi da eseguire in caso di **[!UICONTROL Erroneous]** lo stato e il ritardo minimo tra i nuovi tentativi si basano ora sulle prestazioni di un IP sia storicamente che attualmente in un determinato dominio.
+
+Per le installazioni on-premise e le installazioni in hosting/ibride utilizzando l’MTA legacy di Campaign, puoi modificare il numero di errori e il periodo tra due errori. A questo scopo, modifica le impostazioni corrispondenti nella [procedura guidata di distribuzione](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**) o [a livello di consegna](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
+
+
+## Rimuovere un indirizzo messo in quarantena {#removing-a-quarantined-address}
+
+Gli indirizzi che corrispondono a condizioni specifiche vengono eliminati automaticamente dall&#39;elenco di quarantena dalla [Pulizia del database](../../production/using/database-cleanup-workflow.md) workflow.
+
+Gli indirizzi vengono rimossi automaticamente dall’elenco di quarantena nei seguenti casi:
+
+* Indirizzi in un **[!UICONTROL With errors]** lo stato viene rimosso dall’elenco di quarantena dopo la consegna riuscita.
+* Indirizzi in un **[!UICONTROL With errors]** lo stato verrà rimosso dall’elenco di quarantena se l’ultimo messaggio non recapitato è stato eseguito più di 10 giorni fa. Per ulteriori informazioni sulla gestione degli errori software, consulta [questa sezione](#soft-error-management).
+* Indirizzi in un **[!UICONTROL With errors]** che rimbalzano con il **[!UICONTROL Mailbox full]** L&#39;errore verrà rimosso dall&#39;elenco di quarantena dopo 30 giorni.
+
+Il loro stato cambia in **[!UICONTROL Valid]**.
+
+>[!IMPORTANT]
+>
+>Destinatari con un indirizzo in un **[!UICONTROL Quarantine]** o **[!UICONTROL Denylisted]** lo stato non viene mai rimosso, anche se riceve un’e-mail.
+
+Puoi anche rimuovere manualmente la quarantena di un indirizzo. Per rimuovere manualmente un indirizzo dall’elenco di quarantena, modificarne lo stato in **[!UICONTROL Valid]** dal **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** nodo.
+
+![](assets/tech_quarant_error_status.png)
+
+Potrebbe essere necessario eseguire aggiornamenti in blocco sull’elenco di quarantena, ad esempio in caso di interruzione dell’ISP durante la quale le e-mail vengono erroneamente contrassegnate come non recapitate, in quanto non possono essere recapitate correttamente al destinatario.
+
+A questo scopo, crea un flusso di lavoro e aggiungi una query sulla tabella di quarantena per filtrare tutti i destinatari interessati in modo che possano essere rimossi dall’elenco di quarantena e inclusi nelle consegne e-mail future di Campaign.
+
+Di seguito sono riportate le linee guida consigliate per questa query:
+
+* Per gli ambienti Campaign v8 e Campaign Classic v7 con informazioni sulle regole Inbound Email nel **[!UICONTROL Error text]** campo dell’elenco di quarantena:
+
+   * **Testo di errore (testo di quarantena)** contiene &quot;Momen_Code10_InvalidRecipient&quot;
+   * **Dominio e-mail (@dominio)** uguale a dominio1.com OR **Dominio e-mail (@dominio)** uguale a domain2.com OR **Dominio e-mail (@dominio)** uguale a domain3.com
+   * **Stato aggiornamento (@lastModified)** su o dopo MM/GG/AAAA HH:MM:SS AM
+   * **Stato aggiornamento (@lastModified)** su o prima MM/GG/AAAA HH:MM:PM SS
+
+* Per le istanze Campaign Classic v7 con informazioni sulla risposta di mancato recapito SMTP nel **[!UICONTROL Error text]** campo dell’elenco di quarantena:
+
+   * **Testo di errore (testo di quarantena)** contiene &quot;550-5.1.1&quot; E **Testo di errore (testo di quarantena)** contiene &quot;support.ISP.com&quot;
+
+   dove &quot;support.ISP.com&quot; può essere: &quot;support.apple.com&quot; o &quot;support.google.com&quot; per esempio
+
+   * **Stato aggiornamento (@lastModified)** su o dopo MM/GG/AAAA HH:MM:SS AM
+   * **Stato aggiornamento (@lastModified)** su o prima MM/GG/AAAA HH:MM:PM SS
+
+
+Dopo aver visualizzato l’elenco dei destinatari interessati, aggiungi un **[!UICONTROL Update data]** attività per impostare il loro stato su **[!UICONTROL Valid]** in modo che vengano rimosse dall&#39;elenco di quarantena **[!UICONTROL Database cleanup]** flusso di lavoro, Puoi anche eliminarli dalla tabella di quarantena.
 
 ## quarantene di notifiche push {#push-notification-quarantines}
 
@@ -261,12 +285,14 @@ La **[!UICONTROL mobileAppOptOutMgt]** il flusso di lavoro viene eseguito ogni 6
 Durante l’analisi della consegna, tutti i dispositivi esclusi dal target vengono aggiunti automaticamente al **excludeLogAppSubRcp** tabella.
 
 >[!NOTE]
-Per i clienti che utilizzano il connettore Baidu, di seguito sono riportati i diversi tipi di errori:
-* Problema di connessione all’inizio della consegna: tipo di errore **[!UICONTROL Undefined]**, motivo dell&#39;errore **[!UICONTROL Unreachable]**, viene eseguito un nuovo tentativo.
-* Connessione persa durante una consegna: errore morbido, motivo errore **[!UICONTROL Refused]**, viene eseguito un nuovo tentativo.
-* Errore sincrono restituito da Baidu durante l&#39;invio: errore grave, motivo errore **[!UICONTROL Refused]**, non viene eseguito alcun nuovo tentativo.
 >
-Adobe Campaign contatta il server Baidu ogni 10 minuti per recuperare lo stato del messaggio inviato e aggiorna i registri di trasmissione. Se un messaggio viene dichiarato come inviato, lo stato del messaggio nei registri di trasmissione è impostato su **[!UICONTROL Received]**. Se Baidu dichiara un errore, lo stato è impostato su **[!UICONTROL Failed]**.
+>Per i clienti che utilizzano il connettore Baidu, di seguito sono riportati i diversi tipi di errori:
+>
+>* Problema di connessione all’inizio della consegna: tipo di errore **[!UICONTROL Undefined]**, motivo dell&#39;errore **[!UICONTROL Unreachable]**, viene eseguito un nuovo tentativo.
+>* Connessione persa durante una consegna: errore morbido, motivo errore **[!UICONTROL Refused]**, viene eseguito un nuovo tentativo.
+>* Errore sincrono restituito da Baidu durante l&#39;invio: errore grave, motivo errore **[!UICONTROL Refused]**, non viene eseguito alcun nuovo tentativo.
+>
+>Adobe Campaign contatta il server Baidu ogni 10 minuti per recuperare lo stato del messaggio inviato e aggiorna i registri di trasmissione. Se un messaggio viene dichiarato come inviato, lo stato del messaggio nei registri di trasmissione è impostato su **[!UICONTROL Received]**. Se Baidu dichiara un errore, lo stato è impostato su **[!UICONTROL Failed]**.
 
 **Per Android V2**
 
@@ -484,7 +510,8 @@ Il meccanismo di quarantena Android V2 utilizza lo stesso processo di Android V1
 Il meccanismo di quarantena per i messaggi SMS è globalmente lo stesso del processo generale. Vedi [Informazioni sulla quarantena](#about-quarantines). Le specificità di SMS sono elencate di seguito.
 
 >[!NOTE]
-La **[!UICONTROL Delivery log qualification]** la tabella non si applica al **SMPP generico esteso** connettore.
+>
+>La **[!UICONTROL Delivery log qualification]** la tabella non si applica al **SMPP generico esteso** connettore.
 
 <table> 
  <tbody> 
@@ -497,7 +524,7 @@ La **[!UICONTROL Delivery log qualification]** la tabella non si applica al **SM
   </tr> 
   <tr> 
    <td> Inviato al provider<br /> </td> 
-   <td> Invio<br /> </td> 
+   <td> Inviato<br /> </td> 
    <td> </td> 
    <td> </td> 
    <td> </td> 
@@ -542,8 +569,10 @@ Il connettore SMPP recupera i dati dal messaggio SR (Status Report) restituito u
 Prima che un nuovo tipo di errore sia qualificato, il motivo dell’errore è sempre impostato su **Rifiutato** per impostazione predefinita.
 
 >[!NOTE]
-I tipi di errore e i motivi dell’errore sono gli stessi utilizzati per le e-mail. Vedi [Tipi e motivi di errori di consegna](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
-Chiedi al tuo provider di un elenco di stati e codici di errore per impostare i tipi di errori e i motivi corretti per un errore nella tabella di qualificazione del registro di consegna.
+>
+>I tipi di errore e i motivi dell’errore sono gli stessi utilizzati per le e-mail. Vedi [Tipi e motivi di errori di consegna](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>
+>Chiedi al tuo provider di un elenco di stati e codici di errore per impostare i tipi di errori e i motivi corretti per un errore nella tabella di qualificazione del registro di consegna.
 
 Esempio di messaggio generato:
 
