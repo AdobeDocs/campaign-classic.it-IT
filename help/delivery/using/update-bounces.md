@@ -5,9 +5,9 @@ description: Scopri come aggiornare la qualificazione dei messaggi non recapitat
 feature: Deliverability
 hide: true
 hidefromtoc: true
-source-git-commit: f320c905f50c69a40678729b009a4c238a462e3c
+source-git-commit: 9cdd4da153e5e5d1c7203d193067843fe832f38e
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '513'
 ht-degree: 2%
 
 ---
@@ -48,14 +48,14 @@ Devi eseguire una query sulla tabella di quarantena per filtrare tutti i destina
 
 In base al calendario dell&#39;incidente e dell&#39;ISP, di seguito sono riportate le linee guida consigliate per questa query.
 
-* Per gli ambienti Campaign v8 e Campaign Classic v7 con informazioni sulle regole Inbound Email nel **[!UICONTROL Error text]** campo dell’elenco di quarantena:
+* Per gli ambienti Campaign con informazioni sulla regola e-mail in entrata nel **[!UICONTROL Error text]** campo dell’elenco di quarantena:
 
    * **Testo di errore (testo di quarantena)** contiene &quot;Momen_Code10_InvalidRecipient&quot;
    * **Dominio e-mail (@dominio)** uguale a dominio1.com OR **Dominio e-mail (@dominio)** uguale a domain2.com OR **Dominio e-mail (@dominio)** uguale a domain3.com
    * **Stato aggiornamento (@lastModified)** su o dopo MM/GG/AAAA HH:MM:SS AM
    * **Stato aggiornamento (@lastModified)** su o prima MM/GG/AAAA HH:MM:PM SS
 
-* Per le istanze Campaign Classic v7 con informazioni sulla risposta di mancato recapito SMTP nel **[!UICONTROL Error text]** campo dell’elenco di quarantena:
+* Per gli ambienti Campaign con informazioni sulla risposta non recapitata SMTP nel **[!UICONTROL Error text]** campo dell’elenco di quarantena:
 
    * **Testo di errore (testo di quarantena)** contiene &quot;550-5.1.1&quot; E **Testo di errore (testo di quarantena)** contiene &quot;support.ISP.com&quot;
 

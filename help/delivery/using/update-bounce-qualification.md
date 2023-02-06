@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: Aggiornare la qualificazione dei rimbalzi dopo l’interruzione Gmail
-description: Scopri come aggiornare la qualificazione dei messaggi non recapitati dopo un’interruzione dell’ISP
+title: Qualificazione dell’aggiornamento non recapitato dopo l’interruzione di Apple 2021
+description: Scopri come aggiornare la qualifica dei messaggi non recapitati dopo l’interruzione di Apple 2021
 feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
-source-git-commit: 13f730d428861124060146efa26238ceca38bed6
+source-git-commit: c84f48ebdd66524e8dd6c39c88ae29565d11c9b2
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '425'
 ht-degree: 1%
 
 ---
