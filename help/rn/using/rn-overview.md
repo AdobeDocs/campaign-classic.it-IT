@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 9cdd4da153e5e5d1c7203d193067843fe832f38e
+source-git-commit: 1cc1568fe77cc5bbde88092b0e9108792e10fd71
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 90%
+source-wordcount: '934'
+ht-degree: 85%
 
 ---
 
@@ -67,7 +67,7 @@ In qualità di utente in hosting, potrai beneficiare automaticamente, senza alcu
 
 ### Perché la mia organizzazione ha bisogno di questo aggiornamento?
 
-In qualità di cliente in hosting, se il tuo account necessita l’aggiornamento di una o più tecnologie correlate a Campaign Classic oppure di aggiornare la build e/o la versione corrente, riceverai una notifica direttamente da Adobe.
+In qualità di cliente in hosting, se il tuo account è stato identificato come che necessita di aggiornare una o più tecnologie correlate a Campaign Classic e di aggiornare l’infrastruttura alla build corrente (ad esempio dalla v7.2.1 alla v7.3.3) e/o alla versione (dalla v7 alla v8), Adobe ti avvisa direttamente.
 
 In qualità di cliente on-premise o ibrido in esecuzione su una build precedente, Adobe ti incoraggia a passare alla build stabile più recente (GA).
 

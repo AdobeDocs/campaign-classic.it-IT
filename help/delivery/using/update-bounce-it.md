@@ -5,9 +5,9 @@ description: Scopri come aggiornare la qualifica di rimbalzo dopo Italia Online 
 feature: Deliverability
 hide: true
 hidefromtow: true
-source-git-commit: 3cf6ffb2b69d44b56615492dd9db8965ae3cf4e1
+source-git-commit: 0e6a46e4a0575fa5a300a952a6bb134f3426172e
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ Ulteriori informazioni nella comunicazione ufficiale [qui](https://tecnologia.li
 
 ## Impatto{#outage-impact}
 
-In caso di interruzione di un ISP, le e-mail inviate tramite Campaign non possono essere recapitate correttamente al destinatario: queste e-mail verranno erroneamente contrassegnate come messaggi non recapitati. Questo non ha solo un impatto sull&#39;Adobe, ma tutti quelli che cercano di ottenere email inviate a Italia Online.
+Come nella maggior parte dei casi in cui si verifica un’interruzione di un ISP, alcune e-mail inviate tramite Campaign sono state erroneamente contrassegnate come mancate consegne. Questo non ha avuto solo un impatto sull&#39;Adobe, ma tutti quelli che cercano di ottenere e-mail consegnata a Italia Online durante la durata dell&#39;interruzione.
 
-I sintomi sono:
+I sintomi erano:
 
-* **Rimbalzi differiti** con il messaggio `452 requested action aborted: try again later` vengono osservati, vengono automaticamente ritentati e non sono necessarie azioni. Dovrebbero migliorare man mano che l&#39;ISP recupera la piena capacità.
+* **Rimbalzi differiti** con il messaggio `452 requested action aborted: try again later` - sono stati automaticamente riprovati e non sono necessarie azioni.
 
 * **Rimbalzi netti** con il messaggio `550 <email address> recipient rejected` sono stati restituiti dal provider di servizi Internet il 26 gennaio, tra le 8.00 e le 2.00 ora locale, per impedire ai mittenti di continuare a sovraccaricare i propri server. Come confermato dal postmaster online Italia, questi non sono veri e propri rimbalzi duri, quindi si consiglia di non mettere in quarantena tutti gli indirizzi e-mail che sono stati esclusi il 26 gennaio 2023 a causa di quel messaggio.
 
