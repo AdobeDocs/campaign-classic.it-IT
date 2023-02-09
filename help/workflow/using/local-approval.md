@@ -7,7 +7,7 @@ exl-id: 2d9cbfc8-1f99-4b38-8460-77c7c986e9ca
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '642'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -37,7 +37,7 @@ Inizia immettendo un’etichetta per l’attività e il **[!UICONTROL Action to 
 
    ![](assets/local_validation_intro_3.png)
 
-## Notifica di approvazione di Target {#target-approval-notification}
+## Notifica di approvazione di destinazione {#target-approval-notification}
 
 In questo caso, il **[!UICONTROL Local approval]** l’attività viene inserita tra il targeting a monte e la consegna:
 
@@ -68,7 +68,7 @@ I campi da inserire nel caso di una notifica per l’approvazione del target son
    >
    >Questa opzione è disabilitata per impostazione predefinita.
 
-## Report di feedback sulla consegna {#delivery-feedback-report}
+## Rapporto del feedback sulla consegna {#delivery-feedback-report}
 
 In questo caso, il **[!UICONTROL Local approval]** l’attività viene inserita dopo la consegna:
 

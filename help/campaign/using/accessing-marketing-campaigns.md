@@ -7,7 +7,7 @@ exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1247'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -175,13 +175,13 @@ In questa tabella sono riepilogate le azioni che è possibile eseguire sulle cam
 | Elenco di campagne, consegne, offerte, ecc. | Eliminare una voce dell’elenco |
 | Campaign | Annullare una campagna |
 | Consegna | Approvare il contenuto e la destinazione della consegna<br/>Inviare il contenuto della consegna<br/>Conferma di una consegna<br/>Sospendi e interrompi una consegna |
-| Applicazione Web | Creare un’applicazione web<br/>Modifica del contenuto e delle proprietà dell&#39;applicazione<br/>Salva il contenuto dell’applicazione come modello<br/>Pubblicare l’applicazione |
+| Applicazione web | Creare un’applicazione web<br/>Modifica del contenuto e delle proprietà dell&#39;applicazione<br/>Salva il contenuto dell’applicazione come modello<br/>Pubblicare l’applicazione |
 | Offerta | Approvare il contenuto dell’offerta e l’idoneità<br/>Disattiva un’offerta online |
 | Attività Task | Completare un&#39;attività<br/>Annullare un’attività |
 | Risorse di marketing | Approvare una risorsa<br/>Bloccare e sbloccare una risorsa |
-| Pacchetto campagna | Invia un pacchetto per l&#39;approvazione<br/>Approvare o rifiutare un pacchetto<br/>Annullare un pacchetto |
-| Ordine campagna | Creare un ordine<br/>Accettare o rifiutare un ordine <!-- Je n'ai pas pu créer de campaign order pour vérifier cela. Peut-on accéder à ces fonctionnalités depuis l'accès web ? --> |
-| Stock | Elimina una linea di magazzino |
+| Pacchetto campagne | Invia un pacchetto per l&#39;approvazione<br/>Approvare o rifiutare un pacchetto<br/>Annullare un pacchetto |
+| Ordine delle campagne | Creare un ordine<br/>Accettare o rifiutare un ordine <!-- Je n'ai pas pu créer de campaign order pour vérifier cela. Peut-on accéder à ces fonctionnalités depuis l'accès web ? --> |
+| Magazzino | Elimina una linea di magazzino |
 | Simulazione dell’offerta | Avviare e arrestare una simulazione |
 | Flusso di lavoro di targeting | Avviare, mettere in pausa e interrompere un flusso di lavoro |
 | Rapporto | Salva i dati correnti nella cronologia del report |

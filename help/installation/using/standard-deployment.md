@@ -65,7 +65,7 @@ Poiché il computer non è un server di tracciamento, non tenere conto dell&#39;
 Negli esempi seguenti, i parametri dell’istanza sono:
 
 * Nome dell’istanza: **demo**
-* Maschera DNS: **console.campaign.net*** (solo per le connessioni alla console client e per i rapporti)
+* Maschera DNS: **console.campaign.net&#42;** (solo per le connessioni alla console client e per i rapporti)
 * Lingua: Inglese
 * Database: **campagna:demo@dbsrv**
 

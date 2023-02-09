@@ -140,7 +140,7 @@ La **[!UICONTROL Text]** tab consente di creare campi variabili che possono esse
 
 Utilizza questo metodo per localizzare facilmente le stringhe. Vedi [Traduzione di un modulo web](translating-a-web-form.md)
 
-Ad esempio, puoi creare una **Contatto** campo che consente di visualizzare la stringa &quot;Data dell’ultimo contatto:&quot; nel contenuto di HTML. Per farlo, segui la procedura indicata di seguito:
+Ad esempio, puoi creare una **Contatto** campo che consente di visualizzare la stringa &quot;Data dell’ultimo contatto:&quot; nel contenuto di HTML. A tale scopo, segui la procedura indicata di seguito:
 
 1. Fai clic sul pulsante **[!UICONTROL Text]** scheda del testo di HTML.
 1. Fai clic sul pulsante **[!UICONTROL Add]** icona.

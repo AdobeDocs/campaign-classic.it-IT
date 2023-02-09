@@ -7,7 +7,7 @@ exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '570'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -56,7 +56,7 @@ La configurazione dipende dall’azione selezionata.
 
    La **[!UICONTROL Keep history of files sent]** consente di tenere traccia dei file inviati. Questa cronologia è accessibile dalla directory.
 
-1. **Test per vedere se il file esiste**
+1. **Test per verificare se il file esiste**
 
    Per verificare l’esistenza di un file, seleziona la **[!UICONTROL Test to see if file exists]** in **[!UICONTROL Action]** campo . La configurazione del server remoto è la stessa del download del file. Per ulteriori informazioni, consulta [sezione](#properties).
 

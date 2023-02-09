@@ -9,7 +9,7 @@ exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
 source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '3729'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-Adobe Campaign consente di creare attività e gestirne il ciclo di vita completo direttamente all’interno dell’applicazione. L’implementazione di programmi e campagne può essere suddivisa in attività assegnate agli operatori Adobe Campaign o a fornitori di servizi esterni. Questa modalità operativa consente di creare un ambiente di collaborazione aperto che includa tutti i partecipanti al programma e i partecipanti esterni.
+Adobe Campaign consente di creare attività e gestirne il ciclo di vita completo direttamente dall’interno dell’applicazione. L’implementazione di programmi e campagne può essere suddivisa in attività assegnate agli operatori Adobe Campaign o a fornitori di servizi esterni. Questa modalità operativa consente di creare un ambiente di collaborazione aperto che includa tutti i partecipanti al programma e i partecipanti esterni.
 
 Le attività possono essere create, visualizzate e monitorate dall’elenco delle attività o dal dashboard della campagna. Possono anche essere visualizzati e monitorati nelle pianificazioni del piano di marketing, dei programmi e delle campagne.
 
@@ -187,7 +187,7 @@ Per impostazione predefinita, il budget addebitato è il budget della campagna a
 
 In questa finestra è inoltre possibile definire gli obiettivi da raggiungere. Gli obiettivi sono espressi in termini di entrate previste per il compito.
 
-### Provider di servizi {#service-providers}
+### Fornitori di servizi {#service-providers}
 
 Un fornitore di servizi esterno può essere coinvolto nella gestione di un&#39;attività.
 
@@ -318,7 +318,7 @@ La persona che esamina l’attività non è necessariamente la stessa persona ch
 
 ![](assets/mrm_task_asset_creation.png)
 
-In **[!UICONTROL Marketing resource]** definisci la risorsa da gestire tramite questa attività. Puoi:
+In **[!UICONTROL Marketing resource]** definisci la risorsa da gestire tramite questa attività. È possibile eseguire le seguenti operazioni:
 
 * Seleziona una risorsa esistente: l’elenco a discesa offre tutte le risorse con lo stato **[!UICONTROL Being edited]**.
 * Creazione di una risorsa: fai clic su **[!UICONTROL Select the link]** , quindi fai clic sul pulsante **[!UICONTROL Create]** icona.
@@ -434,7 +434,6 @@ Un’attività può essere: **[!UICONTROL Scheduled]**, **[!UICONTROL In progres
 >
 >* Lo stato dell’attività viene aggiornato automaticamente.
 >* Anche se il periodo di validità è terminato, i compiti non chiusi sono ancora inclusi nell&#39;elenco dei compiti in corso. Un avviso avvisa gli operatori che l’attività è in ritardo.
-
 >
 
 

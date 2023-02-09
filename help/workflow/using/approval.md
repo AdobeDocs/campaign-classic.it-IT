@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Attività Approval
-description: Attività Approval
+title: Approvazione
+description: Approvazione
 feature: Workflows, Approvals
 exl-id: 7ff5da71-ef82-48a2-a608-06a4ca188bb9
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Attività Approval{#approval}
+# Approvazione{#approval}
 
 ![](../../assets/v7-only.svg)
 

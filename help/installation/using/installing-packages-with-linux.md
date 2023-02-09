@@ -357,4 +357,4 @@ Vengono quindi visualizzate le seguenti informazioni:
 
 Il server Adobe Campaign definisce un accesso tecnico denominato **interno** che ha tutti i diritti su tutte le istanze. Subito dopo l&#39;installazione, l&#39;accesso non dispone di una password. È obbligatorio definirne uno.
 
-Ulteriori informazioni in [questa sezione](../../installation/using/configuring-campaign-server.md#internal-identifier).
+Per ulteriori informazioni, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#internal-identifier).

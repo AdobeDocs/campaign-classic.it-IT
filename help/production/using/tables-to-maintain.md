@@ -9,7 +9,7 @@ exl-id: 194f12de-4671-4a56-8cdc-cd5e3dac147b
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1123'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -44,7 +44,7 @@ Nell&#39;elenco seguente sono elencate solo le tabelle più soggette a frammenta
   </tr> 
   <tr> 
    <td> NmsDeliveryPart<br /> </td> 
-   <td> Media<br /> </td> 
+   <td> Medium<br /> </td> 
    <td> Inserimenti, aggiornamenti, eliminazioni<br /> </td> 
    <td> Tabella di lavoro in cui vengono inseriti i record durante la preparazione della consegna. Vengono quindi aggiornati durante la consegna ed infine eliminati una volta completata la consegna.<br /> Questa tabella tende a frammentarsi rapidamente anche se le sue dimensioni medie sono abbastanza limitate.<br /> </td> 
   </tr> 
@@ -56,13 +56,13 @@ Nell&#39;elenco seguente sono elencate solo le tabelle più soggette a frammenta
   </tr> 
   <tr> 
    <td> NmsDeliveryState<br /> </td> 
-   <td> Media<br /> </td> 
+   <td> Medium<br /> </td> 
    <td> Inserimenti, aggiornamenti, eliminazioni<br /> </td> 
    <td> Questa tabella contiene statistiche sul processo di consegna. I suoi documenti vengono regolarmente aggiornati. <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsAddress<br /> </td> 
-   <td> Media<br /> </td> 
+   <td> Medium<br /> </td> 
    <td> Aggiornamenti, inserimenti<br /> </td> 
    <td> Questa tabella contiene informazioni sugli indirizzi e-mail. Viene spesso aggiornato come parte del processo di quarantena (i record vengono creati al primo errore di consegna, aggiornati quando i contatori cambiano ed eliminati una volta completata la consegna). <br /> </td> 
   </tr> 
@@ -110,7 +110,7 @@ Nell&#39;elenco seguente sono elencate solo le tabelle più soggette a frammenta
   </tr> 
   <tr> 
    <td> NmsEmailErrorState<br /> </td> 
-   <td> Media<br /> </td> 
+   <td> Medium<br /> </td> 
    <td> Inserimenti, aggiornamenti, eliminazioni<br /> </td> 
    <td> Questa tabella contiene gli aggregati sugli errori SMTP ordinati per dominio. Contiene inizialmente informazioni dettagliate che vengono aggregate dall’attività di pulizia una volta che questa è obsoleta. <br /> </td> 
   </tr> 

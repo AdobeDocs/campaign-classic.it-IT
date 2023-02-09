@@ -31,7 +31,7 @@ Sono possibili i seguenti metodi di identificazione:
 
    ![](assets/s_ncs_admin_survey_preload_methods_001.png)
 
-   Questo metodo di cifratura utilizza un identificatore (ID) fornito esternamente, collegato a una chiave condivisa da Adobe Campaign e dal provider esterno. La **[!UICONTROL Des key]** consente di immettere questa chiave di crittografia.
+   Questo metodo di crittografia utilizza un identificatore (ID) fornito esternamente, collegato a una chiave condivisa da Adobe Campaign e dal provider esterno. La **[!UICONTROL Des key]** consente di immettere questa chiave di crittografia.
 
 * **[!UICONTROL List of fields]**
 
@@ -139,7 +139,7 @@ In questo caso, devi controllare la **[!UICONTROL Update the preloaded record]**
 
 ![](assets/s_ncs_admin_survey_save_box_option.png)
 
-### Risposte al registro {#log-responses}
+### Registro risposte {#log-responses}
 
 Il tracciamento della risposta può essere attivato in una scheda dedicata per monitorare l’impatto del modulo web. A questo scopo, fai clic sul pulsante **[!UICONTROL Advanced parameters...]** nella finestra delle proprietà del modulo e seleziona la **[!UICONTROL Log responses]** opzione .
 

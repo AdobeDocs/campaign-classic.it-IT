@@ -9,7 +9,7 @@ exl-id: e3a97e55-dd8b-41e1-b48c-816d973f62a8
 source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '602'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -70,7 +70,7 @@ Il connettore supporta le seguenti opzioni ODBC:
 | Nome | Elemento “value” |
 |---|---|
 | ODBCMgr | iODBC |
-| magazzino | 02/01/04 |
+| magazzino | 1/2/4 |
 
 Il connettore supporta anche le seguenti opzioni Hive:
 

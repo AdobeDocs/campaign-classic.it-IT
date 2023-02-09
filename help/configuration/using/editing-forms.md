@@ -44,7 +44,7 @@ Per visualizzare l’anteprima di un modulo, fare clic sul pulsante **[!UICONTRO
 
 È possibile creare diversi tipi di moduli di input. Il tipo di modulo determina il modo in cui gli utenti navigano nel modulo:
 
-* Schermata della console
+* Schermata console
 
    Questo è il tipo di modulo predefinito. Il modulo comprende una singola pagina.
 
@@ -56,7 +56,7 @@ Per visualizzare l’anteprima di un modulo, fare clic sul pulsante **[!UICONTRO
 
    ![](../../delivery/using/assets/d_ncs_content_form13.png)
 
-* Creazione guidata
+* Assistente virtuale
 
    Questo modulo comprende più schermate mobili ordinate in sequenze specifiche. Gli utenti passano da una schermata all’altra. [Ulteriori informazioni](form-structure.md#wizards).
 

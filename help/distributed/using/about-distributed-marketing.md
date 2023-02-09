@@ -50,7 +50,7 @@ L’entità centrale fornisce campagne che gli enti locali possono utilizzare. L
 
    L’elenco dei pacchetti campagna contiene le campagne disponibili per le entità locali.
 
-* **Pacchetto campagna**
+* **Pacchetto campagne**
 
    Modello (o istanza di campagna) creato da un’entità centrale e reso disponibile a un set di entità locali.
 

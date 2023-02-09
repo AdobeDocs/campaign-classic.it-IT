@@ -6,7 +6,7 @@ feature: Workflows
 exl-id: 7213ea64-3dec-4b16-9d93-4ae941ddfaa7
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
-source-wordcount: '1768'
+source-wordcount: '1764'
 ht-degree: 3%
 
 ---
@@ -52,7 +52,7 @@ Per scrivere nel database, è possibile utilizzare il `Write` metodo `xtk:sessio
    1. Chiama il `Write` metodo `xtk:session` schema.
 
       >[!IMPORTANT]
-      > Se utilizzi Adobe Campaign v8, ti consigliamo di utilizzare il meccanismo di staging con **Acquisizione** e **Aggiornamento/eliminazione dati** API per `Write` in una tabella di Snowflake. [Leggi tutto](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target=&quot;_blank&quot;}.
+      > Se utilizzi Adobe Campaign v8, ti consigliamo di utilizzare il meccanismo di staging con **Acquisizione** e **Aggiornamento/eliminazione dati** API per `Write` in una tabella di Snowflake. [Maggiori informazioni](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
 
    1. Passa il codice XML come argomento per la richiesta di scrittura.
 
@@ -173,7 +173,7 @@ Specifica le seguenti informazioni:
 
 È possibile utilizzare le seguenti operazioni:
 
-| Funzionamento | Risultato |
+| Operazione | Risultato |
 | --- | --- |
 | `select` | Zero o più elementi vengono restituiti come raccolta. |
 | `getIfExists` | Viene restituito un elemento. Se non esiste alcun elemento di corrispondenza, viene restituito un elemento vuoto. |
@@ -562,7 +562,7 @@ for each (var w in res.recipient)
 * La `delete` funzionamento
 
 >[!IMPORTANT]
-> Se utilizzi Adobe Campaign v8, ti consigliamo di utilizzare il meccanismo di staging con **Acquisizione** e **Aggiornamento/eliminazione dati** API per `Write` in una tabella di Snowflake. [Leggi tutto](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target=&quot;_blank&quot;}.
+> Se utilizzi Adobe Campaign v8, ti consigliamo di utilizzare il meccanismo di staging con **Acquisizione** e **Aggiornamento/eliminazione dati** API per `Write` in una tabella di Snowflake. [Maggiori informazioni](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
 
 #### Esempio 1: inserire o aggiornare un record
 

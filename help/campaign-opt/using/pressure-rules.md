@@ -7,7 +7,7 @@ exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '3285'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
@@ -17,14 +17,14 @@ ht-degree: 4%
 
 ## Informazioni sull’affaticamento del marketing {#about-marketing-fatigue}
 
-L’implementazione della gestione della pressione di vendita ti consente di evitare di sollecitare eccessivamente la popolazione nel database, nota anche come affaticamento del marketing. A questo scopo, puoi definire un numero massimo di messaggi per destinatario. Ti consente inoltre di implementare regole di arbitrato tra le campagne, al fine di inviare il messaggio migliore al pubblico di destinazione.
+L’implementazione della gestione della pressione di vendita ti consente di evitare di sollecitare eccessivamente la popolazione nel database, nota anche come affaticamento del marketing. A questo scopo, puoi definire un numero massimo di messaggi per destinatario. Ti consente inoltre di implementare regole di arbitrato tra le campagne al fine di inviare il messaggio migliore al pubblico di destinazione.
 
 **Pressione** regole, per gestire l’affaticamento del marketing, ad esempio, per limitare il numero di lettere da inviare a una popolazione a due, per selezionare la comunicazione che meglio corrisponde agli interessi di un gruppo di abbonati, per evitare di inviare un SMS a un cliente insoddisfatto, ecc.
 
 Le campagne vengono selezionate in base a soglie definite e al peso del messaggio.
 
 * Una soglia è il numero massimo di consegne autorizzate per un dato destinatario in un dato periodo di tempo. Può essere impostato o variabile. Viene impostato o calcolato nelle impostazioni della regola di tipologia. Fai riferimento a [Numero massimo di messaggi](#maximum-number-of-messages).
-* I pesi di distribuzione consentono di identificare le consegne prioritarie nel quadro della gestione della pressione. I messaggi con il peso maggiore hanno priorità. Fai riferimento a [Peso del messaggio](#message-weight).
+* Il “peso” delle consegne consente di individuare le consegne prioritarie nel quadro della gestione della pressione. I messaggi con il peso maggiore hanno priorità. Fai riferimento a [Peso del messaggio](#message-weight).
 
 L’arbitrato consiste nell’assicurarsi che le campagne pianificate il cui peso è maggiore della campagna in corso non portino a un’eccessiva sollecitazione del profilo: in questo caso, il profilo viene escluso dalla consegna.
 
@@ -387,22 +387,22 @@ Dato che un’e-mail è già stata inviata ai destinatari interessati all’iniz
  <tbody> 
   <tr> 
    <td> Consegna 1<br /> </td> 
-   <td> Disattivato<br /> </td> 
+   <td> Disabilitato<br /> </td> 
    <td> 5<br /> </td> 
-   <td> 3 del pomeriggio<br /> </td> 
+   <td> 3pm<br /> </td> 
    <td> 8 (giorno successivo)<br /> </td> 
-   <td> 2 del pomeriggio<br /> </td> 
+   <td> 2pm<br /> </td> 
    <td> Notturno<br /> </td> 
    <td> Esclusi<br /> </td> 
    <td> Esclusi<br /> </td> 
   </tr> 
   <tr> 
    <td> Consegna 2<br /> </td> 
-   <td> Disattivato<br /> </td> 
+   <td> Disabilitato<br /> </td> 
    <td> 10<br /> </td> 
-   <td> 4 del pomeriggio<br /> </td> 
+   <td> 4pm<br /> </td> 
    <td> 9 (giorno successivo)<br /> </td> 
-   <td> 2 del pomeriggio<br /> </td> 
+   <td> 2pm<br /> </td> 
    <td> Notturno<br /> </td> 
    <td> Inviato<br /> </td> 
    <td> 9 (giorno successivo)<br /> </td> 

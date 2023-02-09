@@ -1,18 +1,19 @@
 ---
 product: campaign
-title: Terminazione del supporto per TLS 1.0 e 1.1
-description: Terminazione del supporto per TLS 1.0 e 1.1
+title: Fine del supporto per TLS 1.0 e 1.1
+description: Fine del supporto per TLS 1.0 e 1.1
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-source-git-commit: 70240d5f62fd3d7b755389b5ad8c4b499c94657d
+exl-id: e18d43b6-2a77-4881-85e7-ca36248d4634
+source-git-commit: ee7c85f94fc03f6cfca8da11ddea5ebd32d0b2b4
 workflow-type: tm+mt
 source-wordcount: '842'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
-# Terminazione del supporto per TLS 1.0 e 1.1{#eol-tls-support}
+# Fine del supporto per TLS 1.0 e 1.1{#eol-tls-support}
 
 ![](../../assets/v7-only.svg)
 

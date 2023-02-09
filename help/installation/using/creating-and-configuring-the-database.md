@@ -9,7 +9,7 @@ exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1296'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -63,7 +63,7 @@ A seconda del motore di database selezionato, le informazioni di identificazione
 
    >[!CAUTION]
    >
-   > A partire dalla versione 20.3, l&#39;autenticazione Windows NT è disattivata. **[!UICONTROL SQL Server authentication]** è ora l&#39;unica modalità di autenticazione disponibile per Microsoft SQL Server. [Leggi tutto](../../rn/using/deprecated-features.md)
+   > A partire dalla versione 20.3, l&#39;autenticazione Windows NT è disattivata. **[!UICONTROL SQL Server authentication]** è ora l&#39;unica modalità di autenticazione disponibile per Microsoft SQL Server. [Maggiori informazioni](../../rn/using/deprecated-features.md)
 
    ![](assets/s_ncs_install_db_mssql_creation01.png)
 

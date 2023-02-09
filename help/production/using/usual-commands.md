@@ -29,7 +29,6 @@ Il parametro **`<command>`** corrisponde al modulo .
 >
 >* In ogni caso, puoi aggiungere la **-noconsole** argomento per eliminare i commenti visualizzati dopo l’avvio dei moduli.
 >* Al contrario, puoi aggiungere l’argomento **-verboso** per visualizzare ulteriori informazioni.
-
 >
 
 

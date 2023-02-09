@@ -9,7 +9,7 @@ exl-id: 1c032ef9-af11-4947-90c6-76cb9434ae85
 source-git-commit: 30f2451849dec0f640915e81c36d0a9c5f466d6c
 workflow-type: tm+mt
 source-wordcount: '495'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -67,7 +67,7 @@ I moduli disponibili sono descritti nella seguente tabella:
 | stop | Spegnimento parziale del sistema |
 | sottomissione | Invio di un’azione di consegna |
 | syslogd | Server di registrazione e traccia |
-| tracking | Consolidamento e recupero dei registri di tracciamento |
+| tracciamento | Consolidamento e recupero dei registri di tracciamento |
 | trackinglogd | Tracking del server di scrittura e pulizia del registro |
 | cane da guardia | Avvio e monitoraggio dell&#39;istanza |
 | web | Server applicazioni (HTTP e SOAP) |

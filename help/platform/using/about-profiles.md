@@ -123,6 +123,6 @@ Sono disponibili ulteriori video dimostrativi su Campaign Classic [qui](https://
 
 * [Creazione di query e segmenti di dati nei flussi di lavoro](../../workflow/using/targeting-data.md)
 
-* [Seleziona mappatura destinazione](../../delivery/using/selecting-a-target-mapping.md)
+* [Seleziona la mappatura target](../../delivery/using/selecting-a-target-mapping.md)
 
 * [Definire il pubblico - best practice](../../delivery/using/define-the-right-audience.md)

@@ -239,7 +239,7 @@ Queste regole vengono applicate in sequenza: viene applicata la prima regola la 
 
 I seguenti parametri disponibili per ogni regola sono:
 
-* **[!UICONTROL MX mask]**: dominio in cui viene applicata la regola. Ogni regola definisce una maschera dell&#39;indirizzo per l&#39;MX. Qualsiasi MX il cui nome corrisponde a questa maschera è pertanto idoneo. La maschera può contenere &quot;*&quot; e &quot;?&quot; caratteri generici.
+* **[!UICONTROL MX mask]**: dominio in cui viene applicata la regola. Ogni regola definisce una maschera dell&#39;indirizzo per l&#39;MX. Qualsiasi MX il cui nome corrisponde a questa maschera è pertanto idoneo. La maschera può contenere &quot;&#42;&quot; e &quot;?&quot; caratteri generici.
 
    Ad esempio, i seguenti indirizzi:
 
@@ -249,7 +249,7 @@ I seguenti parametri disponibili per ogni regola sono:
 
    sono compatibili con le seguenti maschere:
 
-   * *.yahoo.com
+   * &#42;.yahoo.com
    * ?.mx.yahoo.com
 
    Ad esempio, per l’indirizzo e-mail foobar@gmail.com, il dominio è gmail.com e il record MX è:
@@ -402,9 +402,9 @@ Se, ad esempio, il primo indirizzo non può essere utilizzato per un dato MX, i 
     * &quot;2&quot;: 5 / (5+1) = 83%
     * &quot;3&quot;: 1 / (5+1) = 17%
 
-* **includeDomains**: ti consente di riservare questo indirizzo IP per le e-mail appartenenti a un dominio specifico. Elenco di maschere che possono contenere uno o più caratteri jolly (&#39;*&#39;). Se l&#39;attributo non è specificato, tutti i domini possono utilizzare questo indirizzo IP.
+* **includeDomains**: ti consente di riservare questo indirizzo IP per le e-mail appartenenti a un dominio specifico. Elenco di maschere che possono contenere uno o più caratteri jolly (&#39;&#42;&quot;). Se l&#39;attributo non è specificato, tutti i domini possono utilizzare questo indirizzo IP.
 
-   Esempio: **includeDomains=&quot;wanadoo.com,arancione.com,yahoo.*&quot;**
+   Esempio: **includeDomains=&quot;wanadoo.com, arancione.com, yahoo.&#42;&quot;**
 
 * **excludeDomains**: esclude un elenco di domini per questo indirizzo IP. Questo filtro viene applicato dopo la **includeDomains** filtro.
 

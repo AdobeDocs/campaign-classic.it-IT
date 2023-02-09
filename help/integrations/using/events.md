@@ -8,7 +8,7 @@ exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
 source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
 source-wordcount: '1198'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -202,11 +202,11 @@ Di seguito è riportato un esempio di codice dello schema per questa tabella:
 
 | Attributo | Tipo | Etichetta | Descrizione |
 |:-:|:-:|:-:|:-:|
-| pipelineEventId | Lunga | Chiave principale | Chiave primaria interna del trigger. |
+| pipelineEventId | Lungo | Chiave principale | Chiave primaria interna del trigger. |
 | dati | Per memoria | Dati di attivazione | Contenuto completo dei dati di attivazione in formato XML. A scopo di debug e controllo. |
 | triggerType | Stringa 50 | TriggerType | Nome del trigger. Identifica il comportamento del cliente sul sito web. |
 | shopper_id | Stringa 32 | shopper_id | Identificatore interno dell&#39;acquirente. Impostato dal flusso di lavoro di riconciliazione. Se zero, significa che il cliente è sconosciuto in Campaign. |
-| shopper_key | Lunga | shopper_key | Identificatore esterno dell&#39;acquirente acquisito da Analytics. |
+| shopper_key | Lungo | shopper_key | Identificatore esterno dell&#39;acquirente acquisito da Analytics. |
 | creato | Datetime | Creato | L’ora in cui è stato creato l’evento in Campaign. |
 | lastModified | Datetime | Ultima modifica | L’ultima volta che l’evento è stato modificato in Adobe. |
 | timeGMT | Datetime | Timestamp | L’ora in cui l’evento è stato generato in Analytics. |

@@ -9,7 +9,7 @@ exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
 source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '384'
-ht-degree: 5%
+ht-degree: 8%
 
 ---
 
@@ -37,7 +37,7 @@ I diritti assegnati al gestore delle offerte consentono loro di eseguire le segu
 * Visualizza **[!UICONTROL Live]** ambienti.
 * Configura le funzioni di amministrazione (spazi e filtri predefiniti).
 * Creare e modificare le categorie.
-* Creare offerte.
+* Crea offerte.
 * Configura l’idoneità delle offerte.
 * Approvare le offerte.
 
@@ -97,7 +97,7 @@ I diritti assegnati ai gestori della consegna consentono loro di svolgere i segu
    <td> Leggi<br /> </td> 
   </tr> 
   <tr> 
-   <td> Filtri di offerta predefiniti<br /> </td> 
+   <td> Filtri per offerte predefiniti<br /> </td> 
    <td> Lettura/scrittura<br /> </td> 
    <td> Leggi<br /> </td> 
   </tr> 
@@ -117,7 +117,7 @@ I diritti assegnati ai gestori della consegna consentono loro di svolgere i segu
    <td> Leggi<br /> </td> 
   </tr> 
   <tr> 
-   <td> Categoria di offerta<br /> </td> 
+   <td> Categoria offerta<br /> </td> 
    <td> Lettura/scrittura<br /> </td> 
    <td> Leggi<br /> </td> 
   </tr> 
@@ -157,7 +157,7 @@ I diritti assegnati ai gestori della consegna consentono loro di svolgere i segu
    <td> </td> 
   </tr> 
   <tr> 
-   <td> Filtri di offerta predefiniti<br /> </td> 
+   <td> Filtri per offerte predefiniti<br /> </td> 
    <td> Leggi<br /> </td> 
    <td> Leggi<br /> </td> 
   </tr> 
@@ -177,7 +177,7 @@ I diritti assegnati ai gestori della consegna consentono loro di svolgere i segu
    <td> Leggi<br /> </td> 
   </tr> 
   <tr> 
-   <td> Categoria di offerta<br /> </td> 
+   <td> Categoria offerta<br /> </td> 
    <td> </td> 
    <td> Leggi<br /> </td> 
   </tr> 

@@ -7,7 +7,7 @@ exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '900'
-ht-degree: 8%
+ht-degree: 14%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 Questa sezione presenta le opzioni e i parametri specifici per la consegna e-mail.
 
-## Ccn e-mail {#email-bcc}
+## Invia e-mail in Ccn {#email-bcc}
 
 Adobe Campaign consente di memorizzare le e-mail su un sistema esterno tramite CCN semplicemente aggiungendo un indirizzo e-mail CCN al target del messaggio.
 
@@ -79,9 +79,9 @@ Seleziona il formato dell’e-mail nella sezione inferiore della finestra:
 
 ## Generazione della pagina speculare {#generating-mirror-page}
 
-La pagina speculare è una pagina HTML accessibile online tramite un browser web. Il contenuto è identico all’e-mail.
+La pagina mirror è una pagina HTML accessibile online tramite un browser web. Il contenuto è identico a quello dell’e-mail.
 
-Per impostazione predefinita, la pagina speculare viene generata se il collegamento viene inserito nel contenuto della posta. Per ulteriori informazioni sull’inserimento dei blocchi di personalizzazione, consulta [Blocchi di personalizzazione](personalization-blocks.md).
+Per impostazione predefinita, la pagina mirror viene generata se il collegamento viene inserito nel contenuto dell’e-mail. Per ulteriori informazioni sull’inserimento dei blocchi di personalizzazione, consulta [Blocchi di personalizzazione](personalization-blocks.md).
 
 Nelle proprietà di consegna, la **[!UICONTROL Mode]** campo **[!UICONTROL Validity]** consente di modificare la modalità di generazione della pagina.
 

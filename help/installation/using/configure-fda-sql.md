@@ -2,7 +2,8 @@
 product: campaign
 title: Configurare l'accesso a Microsoft SQL Server
 description: Informazioni su come configurare l'accesso a Microsoft SQL Server
-source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+exl-id: 65ab4577-3126-4579-8fcc-e93772ebd1e8
+source-git-commit: 6b7638eec1718edf30f81005cd6691dd271aaa0c
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 1%
@@ -113,4 +114,3 @@ Il connettore supporta le seguenti opzioni:
 | Autenticazione | Tipo di autenticazione supportato dal connettore. Valore supportato corrente: ActiveDirectoryMSI. <br> Per ulteriori informazioni, consulta l’esempio 8 di [Documentazione di Microsoft](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings). |
 | Crittografa | Specifica se le connessioni utilizzano la crittografia TLS sulla rete. I valori possibili sono **sì/obbligatorio (18.0 e versioni successive)**, **no/facoltativo (18.0 e versioni successive)** e **severo (18.0 e versioni successive)**. Il valore predefinito è impostato su **sì** nella versione 18.0 e successive e **no** nelle versioni precedenti. <br>Per ulteriori informazioni, consulta [Documentazione di Microsoft](https://docs.microsoft.com/en-us/sql/connect/odbc/dsn-connection-string-attribute?view=azure-sqldw-latest#encrypt). |
 | TrustServerCertificate | Abilita la crittografia utilizzando un certificato server autofirmato, se utilizzato con **Crittografa**. <br>Valori accettati: **sì** o **no** (valore predefinito, che significa che il certificato server verrà convalidato). |
-

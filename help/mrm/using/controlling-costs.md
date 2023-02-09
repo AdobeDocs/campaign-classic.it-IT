@@ -118,7 +118,7 @@ La procedura è la stessa a livello di task.
 
 Quando una spesa dà luogo a una fattura e la fattura viene pagata, il suo importo viene quindi inserito nella **[!UICONTROL Invoiced]** campo .
 
-### Categorie di spesa {#expense-categories}
+### Categorie di spese {#expense-categories}
 
 Gli importi possono essere distribuiti in diverse categorie di spesa per una migliore leggibilità dei dati e per una più dettagliata segnalazione degli investimenti di marketing. Le categorie di spesa sono definite durante la creazione del budget tramite **[!UICONTROL Budgets]** nodo dell&#39;albero.
 
@@ -331,7 +331,7 @@ Quando la campagna è configurata, il suo stato può essere aggiornato impostand
 
 ![](assets/s_user_cost_mgmt_sample_18.png)
 
-#### Approvazione del bilancio {#budget-approval}
+#### Approvazione del budget {#budget-approval}
 
 Quando l’approvazione viene attivata, uno speciale collegamento consente di approvare il budget dal dashboard della campagna. Questo collegamento viene visualizzato quando il flusso di lavoro di targeting è stato avviato e la consegna di direct mailing deve essere approvata.
 

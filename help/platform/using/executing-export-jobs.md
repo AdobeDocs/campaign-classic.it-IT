@@ -9,7 +9,7 @@ exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '926'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -105,9 +105,9 @@ Puoi aggiungere condizioni di filtro per evitare di esportare tutti i dati. La c
 * Per modificare l’etichetta di un campo, fai clic nella cella del **[!UICONTROL Label]** che corrisponde al campo da modificare e immettere la nuova etichetta. Premere Invio sulla tastiera per confermare.
 * Per applicare una trasformazione caso al contenuto di un campo, selezionala dalla **[!UICONTROL Transformation]** colonna. Puoi selezionare:
 
-   * Passa a minuscolo
-   * Passa al maiuscolo
-   * Prima lettera in maiuscolo
+   * Passa al carattere minuscolo
+   * Passa al carattere maiuscolo
+   * Prima lettera in carattere maiuscolo
 
    ![](assets/s_ncs_user_export_wizard06.png)
 

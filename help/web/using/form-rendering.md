@@ -31,7 +31,7 @@ La funzione di zoom consente di modificare il modello selezionato.
 
 ![](assets/s_ncs_admin_survey_render_edit_param.png)
 
-Puoi:
+È possibile eseguire le seguenti operazioni:
 
 * Modificare l&#39;immagine utilizzata come logo e adattarne le dimensioni,
 * Specifica anche il percorso per accedere all&#39;immagine di anteprima quando gli utenti selezionano questo modello di rendering.

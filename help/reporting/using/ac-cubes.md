@@ -3,9 +3,10 @@ product: campaign
 title: Introduzione ai cubi
 description: Introduzione ai cubi
 feature: Reporting
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+exl-id: 71d24f03-d41d-49bc-b9a5-8237902f7d6a
+source-git-commit: c1be67d32c39d20f7794b6019a6e03c9ec29df94
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '343'
 ht-degree: 24%
 
 ---
@@ -28,7 +29,7 @@ Una volta creati e configurati, i cubi vengono utilizzati nelle caselle di query
 
 Utilizza il modulo Campaign Marketing Analytics per:
 
-1. Creazione di cubi
+1. Creare i cubi
 
    * aggregare e memorizzare i dati in una tabella di lavoro per precalcolare gli indicatori in base alle esigenze degli utenti,
    * ridurre il volume dei dati coinvolti nei vari calcoli utilizzati per i rapporti e le query, ottimizzando in modo significativo i tempi di calcolo degli indicatori,
@@ -44,4 +45,4 @@ Utilizza il modulo Campaign Marketing Analytics per:
 1. Crea una query utilizzando dati calcolati e aggregati in un cubo.
 1. Identificare le popolazioni e farvi riferimento negli elenchi.
 
-Scopri come creare e utilizzare i cubi in [Documentazione di Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html){target=&quot;_blank&quot;}.
+Scopri come creare e utilizzare i cubi in [Documentazione di Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html){target="_blank"}.

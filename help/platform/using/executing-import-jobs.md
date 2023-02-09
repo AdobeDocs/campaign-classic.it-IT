@@ -9,7 +9,7 @@ exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
 source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '2955'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -31,7 +31,7 @@ Viene visualizzata la procedura guidata di importazione dopo la creazione di un 
 >
 >Se utilizzi un server Web IIS, potrebbe essere necessaria una configurazione per autorizzare il caricamento di file di grandi dimensioni (>28 MB). Per ulteriori informazioni, consulta [questa sezione](../../installation/using/integration-into-a-web-server-for-windows.md#changing-the-upload-file-size-limit).
 
-## File di origine {#source-file}
+## File sorgente {#source-file}
 
 Nel file di origine, ogni riga coincide con un record. I dati contenuti nei record sono separati da delimitatori (spazio, tabulazione, carattere, ecc.). Ciò significa che i dati vengono recuperati sotto forma di colonne e che ogni colonna è associata a un campo del database.
 

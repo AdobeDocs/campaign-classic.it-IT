@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 'Guida e opzioni di supporto per Campaign Classic '
+title: Guida e opzioni di supporto per Campaign Classic
 description: Hai bisogno di supporto per Campaign Classic? Sei nel posto giusto!
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
@@ -39,8 +39,8 @@ Come effettuare l’aggiornamento a una nuova build? Come monitorare l’esecuzi
     <td valign="top">
         <ul>
         <li><a href="platform/using/faq-key-concepts.md">Concetti chiave</a></li>
-        <li><a href="platform/using/faq-campaign-config.md">Impostazioni di Campaign</a></li>
-        <li><a href="platform/using/faq-reporting.md">Generazione rapporti</a></li>
+        <li><a href="platform/using/faq-campaign-config.md">Impostazioni della campagna</a></li>
+        <li><a href="platform/using/faq-reporting.md">Reportistica</a></li>
         <li><a href="platform/using/faq-build-upgrade.md">Aggiornamento della build</a></li>
         <li><a href="platform/using/faq-messages.md">Verifica, invio e tracciamento dei messaggi</a></li>
         <li><a href="platform/using/faq-workflows.md">Flussi di lavoro</a></li>
@@ -136,7 +136,7 @@ Il nuovo sistema di ticket è stato lanciato attraverso [Adobe Admin Console](ht
 
 ### Chiedi agli esperti
 
-Iscriviti alla community Campaign Classic: consulta le risposte già fornite alle domande esistenti o sottoponi alla community le tue domande. [Partecipa alla conversazione](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
+Iscriviti alla community Campaign Classic: consulta le risposte già fornite alle domande esistenti o sottoponi alla community le tue domande. [Partecipa alla conversazione](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_vuoto}.
 
 ### Accedi al Centro di download di Campaign
 
@@ -147,4 +147,4 @@ Ulteriori informazioni sul nuovo Centro download [in questa pagina](https://expe
 
 La creazione di un caso consente di contattare il team Assistenza clienti di Adobe per eventuali problemi riscontrati con i prodotti Adobe. Per aiutarti a risolvere un problema, Adobe Admin Console consente di chattare con l’Assistenza clienti di Adobe.
 
-Per segnalare un problema o avviare una sessione di chat nel nuovo sistema, connettiti a [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Seguire la procedura dettagliata descritta in [questa pagina](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html){_blank}.
+Per segnalare un problema o avviare una sessione di chat nel nuovo sistema, connettiti a [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Seguire la procedura dettagliata descritta in [questa pagina](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html){_blank}.

@@ -21,7 +21,7 @@ ht-degree: 7%
 
 Puoi configurare le soglie di avviso (arancione) e le soglie di avviso (rosso) degli indicatori visualizzati nella **Livello di servizio del Centro messaggi** e **Tempo di elaborazione del Centro messaggi** rapporti (fare riferimento a [Accedere ai rapporti di messaggistica transazionale](../../message-center/using/about-transactional-messaging-reports.md)).
 
-Per farlo, segui la procedura indicata di seguito:
+A tale scopo, segui la procedura indicata di seguito:
 
 1. Apri la procedura guidata di distribuzione in **istanza di esecuzione**.
 
@@ -158,7 +158,7 @@ Sulle istanze di esecuzione, segui i passaggi seguenti:
 
 Nell’istanza di controllo è necessario collegare modelli di consegna e account esterni.
 
-Per farlo, segui la procedura indicata di seguito:
+A tale scopo, segui la procedura indicata di seguito:
 
 1. Crea un account esterno per marchio con lo stesso nome interno definito nella [istanza di esecuzione](#execution-instance) (passaggio 1).
 

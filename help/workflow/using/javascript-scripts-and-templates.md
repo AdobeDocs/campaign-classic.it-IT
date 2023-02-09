@@ -65,7 +65,7 @@ Fai clic su **[!UICONTROL OK]** per chiudere la procedura guidata di creazione, 
 
 Le variabili sono le proprietà libere del **[!UICONTROL instance]**, **[!UICONTROL task]** e **[!UICONTROL event]** oggetti. I tipi JavaScript autorizzati per queste variabili sono **[!UICONTROL string]**, **[!UICONTROL number]** e **[!UICONTROL Date]**.
 
-### Variabili di istanza {#instance-variables}
+### Variabili dell&#39;istanza {#instance-variables}
 
 Le variabili di istanza (**[!UICONTROL instance.vars.xxx]**) sono paragonabili alle variabili globali. Sono condivisi da tutte le attività.
 
@@ -73,7 +73,7 @@ Le variabili di istanza (**[!UICONTROL instance.vars.xxx]**) sono paragonabili a
 
 Variabili dell&#39;attività (**[!UICONTROL task.vars.xxx]**) sono paragonabili alle variabili locali. Vengono utilizzati solo dall&#39;attività corrente. Queste variabili vengono utilizzate dalle attività persistenti per conservare i dati e talvolta vengono utilizzate per scambiare dati tra i diversi script di una stessa attività.
 
-### Variabili evento {#event-variables}
+### Variabili di evento {#event-variables}
 
 Le variabili evento (**[!UICONTROL vars.xxx]**) abilita lo scambio di dati tra le attività elementari di un processo di flusso di lavoro. Queste variabili vengono passate dall’attività che ha attivato l’attività in corso. È possibile modificarli e definirne di nuovi. Vengono quindi passate alle seguenti attività.
 

@@ -7,7 +7,7 @@ exl-id: c0533148-b027-4158-9b95-8d2df769e963
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
 source-wordcount: '487'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -25,7 +25,7 @@ Quando il contenuto è pronto, è necessario definire attentamente chi riceverà
 
 Per garantire il successo della consegna, devi inviare i contenuti personalizzati più rilevanti ai destinatari giusti. Adobe Campaign consente di creare il target più preciso: puoi selezionare i destinatari in base alla loro età, localizzazione, cosa hanno acquistato, se hanno fatto clic su un collegamento in una consegna precedente, ecc. Con Adobe Campaign puoi anche definire profili di test, gruppi di controllo e indirizzi di seed per assicurarti che il target sia corretto.
 
-## Mappature di Target {#target-mappings}
+## Mappature di destinazione {#target-mappings}
 
 In Campaign Classic, per impostazione predefinita, target dei modelli di consegna **Destinatari**. Adobe Campaign offre altre mappature di destinazione per le consegne, che puoi modificare in base alle tue esigenze.
 

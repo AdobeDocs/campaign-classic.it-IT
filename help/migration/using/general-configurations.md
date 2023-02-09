@@ -354,7 +354,7 @@ Funzione di aggregazione (raccolta)
    >
    >I giunti vengono eseguiti automaticamente per le funzioni di aggregazione. Non è più necessario specificare la condizione WHERE O0.iOperationId=iOperationId.
    >
-   >Non è più possibile utilizzare la funzione &quot;count(*)&quot;. È necessario utilizzare &quot;counheight()&quot;.
+   >Non è più possibile utilizzare &quot;count(&#42;)&quot;. È necessario utilizzare &quot;counheight()&quot;.
 
 * Sintassi precedente:
 
@@ -456,7 +456,8 @@ Esistono tre modi possibili per risolvere un conflitto:
 * **[!UICONTROL Keep the current version]**: significa che l&#39;aggiornamento viene rifiutato.
 
    >[!IMPORTANT]
-   Se si seleziona questa modalità di risoluzione, si rischia di perdere le patch nella nuova versione. Si raccomanda pertanto vivamente che questa opzione non sia utilizzata o riservata solo agli operatori esperti.
+   >
+   >Se si seleziona questa modalità di risoluzione, si rischia di perdere le patch nella nuova versione. Si raccomanda pertanto vivamente che questa opzione non sia utilizzata o riservata solo agli operatori esperti.
 
 Se si sceglie di risolvere manualmente il conflitto, procedere come segue:
 
@@ -502,12 +503,14 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 In v7, il contenuto dell’offerta è stato spostato. Nella versione 6.02 il contenuto era in ogni schema di rappresentazione (**nms:emailOfferView**). In v7, il contenuto è ora nello schema delle offerte. Dopo l’aggiornamento, il contenuto non sarà quindi visibile nell’interfaccia di . Dopo l’aggiornamento, devi ricreare il contenuto dell’offerta o sviluppare uno script che sposta automaticamente il contenuto dallo schema di rappresentazione allo schema di offerta.
 
 >[!IMPORTANT]
-Se alcune consegne che utilizzano offerte configurate dovevano essere inviate dopo la migrazione, devi eliminare e ricreare tutte queste consegne nella versione v7. Se non è possibile farlo, viene offerta una &quot;modalità di compatibilità&quot;. Questa modalità non è consigliata perché non beneficerai di tutte le nuove funzioni di Interaction v7. Questa è una modalità transitoria che ti consente di completare le campagne in corso prima della migrazione effettiva alla versione 6.1. Per ulteriori informazioni su questa modalità, contattateci.
+>
+>Se alcune consegne che utilizzano offerte configurate dovevano essere inviate dopo la migrazione, devi eliminare e ricreare tutte queste consegne nella versione v7. Se non è possibile farlo, viene offerta una &quot;modalità di compatibilità&quot;. Questa modalità non è consigliata perché non beneficerai di tutte le nuove funzioni di Interaction v7. Questa è una modalità transitoria che ti consente di completare le campagne in corso prima della migrazione effettiva alla versione 6.1. Per ulteriori informazioni su questa modalità, contattateci.
 
 Un esempio di script di spostamento (**actionsTo610_full_XX.js**) è disponibile nella **Migrazione** nella cartella Adobe Campaign v7. Questo file mostra un esempio di script per un client che utilizza una singola rappresentazione e-mail per offerta (il **[!UICONTROL htmlSource]** e **[!UICONTROL textSource]** campi). Il contenuto presente nel **NmsEmailOfferView** La tabella è stata spostata nella tabella delle offerte.
 
 >[!NOTE]
-L’utilizzo di questo script non consente di trarre vantaggio dalle opzioni &quot;content management&quot; (gestione dei contenuti) e &quot;rendering delle funzioni&quot; (funzioni di rendering). Per usufruire di queste funzioni, è necessario ripensare le offerte del catalogo, in particolare i contenuti delle offerte e gli spazi di configurazione.
+>
+>L’utilizzo di questo script non consente di trarre vantaggio dalle opzioni &quot;content management&quot; (gestione dei contenuti) e &quot;rendering delle funzioni&quot; (funzioni di rendering). Per usufruire di queste funzioni, è necessario ripensare le offerte del catalogo, in particolare i contenuti delle offerte e gli spazi di configurazione.
 
 ```
 loadLibrary("/nl/core/shared/nl.js");
@@ -606,7 +609,8 @@ Segui la procedura da seguire dopo aver spostato il contenuto dell’offerta se 
 1. Esegui test completi.
 
    >[!NOTE]
-   I nomi delle categorie e delle offerte online vengono modificati dopo essere stati pubblicati. Sul canale in entrata, aggiorna tutti i riferimenti a offerte e categorie.
+   >
+   >I nomi delle categorie e delle offerte online vengono modificati dopo essere stati pubblicati. Sul canale in entrata, aggiorna tutti i riferimenti a offerte e categorie.
 
 ## Rapporti {#reports}
 

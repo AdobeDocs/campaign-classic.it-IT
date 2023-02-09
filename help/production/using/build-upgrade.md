@@ -107,7 +107,7 @@ Le procedure seguenti vengono eseguite solo da **on-premise** clienti. Per i cli
 
 È possibile duplicare un ambiente Adobe Campaign per ripristinare un ambiente di origine in un ambiente di destinazione, in modo da ottenere due ambienti di lavoro identici.
 
-Per farlo, segui la procedura indicata di seguito:
+A tale scopo, segui la procedura indicata di seguito:
 
 1. Crea una copia dei database su tutte le istanze nell&#39;ambiente di origine.
 
@@ -163,7 +163,7 @@ Per sostituire tutti i file con la nuova versione, è necessario che tutte le is
 
 ### Aggiornare l’applicazione server Adobe Campaign
 
-1. Esegui il **Setup.exe** file. Se devi scaricare questo file, accedi a [il Centro download](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html).
+1. Esegui il **Setup.exe** file. Se devi scaricare questo file, accedi a [il Centro download](https://experience.adobe.com/#/downloads/content/software-distribution/it/campaign.html).
 
 1. Seleziona la modalità di installazione: **Aggiorna** o **Riparazione**.
 
@@ -246,7 +246,7 @@ Quando la messaggistica transazionale (Message Center) è abilitata nell’istan
 
 Nel contesto di un ambiente di mid-sourcing, devi eseguire questi passaggi aggiuntivi per aggiornare:
 
-1. Contatto [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per coordinare l&#39;aggiornamento del server Mid-Sourcing.
+1. Contatto [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per coordinare l&#39;aggiornamento del server Mid-Sourcing.
 1. Verifica che la versione sia stata aggiornata eseguendo un collegamento di prova. Ad esempio:
 
    ```
@@ -363,8 +363,8 @@ Esistono diversi tipi di unione:
 #### Dove trovare il codice?
 
 1. Il codice incorporato viene memorizzato in file XML nella cartella del datakit. Individuare il file XML corrispondente all&#39;oggetto in conflitto. Esempio: installationDirectory\datakit\nms\fra\form\recipient.xml
-1. Recupera la versione originale: tramite [Centro di download](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) o un&#39;altra installazione non aggiornata del prodotto.
-1. Recupera la nuova versione: tramite [Centro di download](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) o i file installati del cliente.
+1. Recupera la versione originale: tramite [Centro di download](https://experience.adobe.com/#/downloads/content/software-distribution/it/campaign.html) o un&#39;altra installazione non aggiornata del prodotto.
+1. Recupera la nuova versione: tramite [Centro di download](https://experience.adobe.com/#/downloads/content/software-distribution/it/campaign.html) o i file installati del cliente.
 1. Recupera la versione personalizzata: recupera il codice sorgente dell’oggetto dall’interno del client Campaign.
 
 ### Come fare una differenza?

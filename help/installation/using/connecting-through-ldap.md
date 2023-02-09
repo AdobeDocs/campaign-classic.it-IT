@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Connessione tramite LDAP
-description: 'Scopri come utilizzare LDAP per accedere a Campaign '
+description: Scopri come utilizzare LDAP per accedere a Campaign
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
@@ -52,7 +52,7 @@ La finestra ti consente di configurare l&#39;identificazione degli utenti Adobe 
 
       Autenticazione Windows proprietaria. La **[!UICONTROL Unique identifier]** viene utilizzato solo per il nome di dominio (domain.com).
 
-   * Password testo normale
+   * Password in testo semplice
 
       Nessuna crittografia (solo per le fasi di prova).
 
@@ -189,4 +189,4 @@ Questa sezione fornisce alcuni semplici casi d’uso per aiutarti a raggiungere 
 
    I gruppi non vengono mai creati al volo, sia da Adobe Campaign che da LDAP. Devono essere create singolarmente, sia in Adobe Campaign che nella directory LDAP.
 
-   I nomi dei gruppi nella directory LDAP devono coincidere con i nomi dei gruppi Adobe Campaign. La relativa maschera di associazione è definita nell’ultima fase di configurazione della procedura guidata di distribuzione: Adobe Campaign_(.*), ad esempio.
+   I nomi dei gruppi nella directory LDAP devono coincidere con i nomi dei gruppi Adobe Campaign. La relativa maschera di associazione è definita nell’ultima fase di configurazione della procedura guidata di distribuzione: Adobe Campaign_(.&#42;), ad esempio.

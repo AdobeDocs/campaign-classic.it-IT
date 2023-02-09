@@ -47,9 +47,9 @@ Adobe Campaign può funzionare con due livelli di log:
 
    >[!NOTE]
    >
-   >Se utilizzi **tracefilter:***, vengono attivati tutti i tipi di log: ncm, rdr, nms, jst, temporizzazione, wdbc, ldap, sapone, xtk, xtkquery, sessione, xtkwriter, rete, pop3, inmail\
-   I tipi di log più utili sono: **wdbc** (visualizza tutte le query SQL), **sapone** (visualizza tutte le chiamate SOAP), **ldap** (visualizza tutte le query LDAP dopo l&#39;autenticazione), **xtkquery** (visualizza l&#39;elenco di tutte le querydef).\
-   Puoi utilizzarli singolarmente (**tracefilter:soap,wdbc** ad esempio). Puoi anche attivarli tutti e scegliere di escluderne alcuni altri: **-tracefilter:*,!soap**
+   >Se utilizzi **tracefilter:&#42;**, vengono attivati tutti i tipi di log: ncm, rdr, nms, jst, temporizzazione, wdbc, ldap, sapone, xtk, xtkquery, sessione, xtkwriter, rete, pop3, inmail\
+   >I tipi di log più utili sono: **wdbc** (visualizza tutte le query SQL), **sapone** (visualizza tutte le chiamate SOAP), **ldap** (visualizza tutte le query LDAP dopo l&#39;autenticazione), **xtkquery** (visualizza l&#39;elenco di tutte le querydef).\
+   >Puoi utilizzarli singolarmente (**tracefilter:soap,wdbc** ad esempio). Puoi anche attivarli tutti e scegliere di escluderne alcuni altri: **-tracefilter:&#42;,!soap**
 
    Controlla che l&#39;errore si sia effettivamente verificato, quindi riavvia il processo nel modo normale:
 
@@ -58,7 +58,8 @@ Adobe Campaign può funzionare con due livelli di log:
    ```
 
 >[!IMPORTANT]
-I registri di questi comandi sono memorizzati nel file di registro del modulo.
+>
+>I registri di questi comandi sono memorizzati nel file di registro del modulo.
 
 Ecco un esempio specifico del modulo Web. Gli altri moduli funzionano come indicato sopra.
 
@@ -81,11 +82,13 @@ nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -trace
 ```
 
 >[!NOTE]
-La **Tracefile** consente di salvare i registri. Negli esempi precedenti, i registri vengono salvati nel **var/`<instance-name>`/mta_debug.log** e **var/default/web_debug.log** file.
+>
+>La **Tracefile** consente di salvare i registri. Negli esempi precedenti, i registri vengono salvati nel **var/`<instance-name>`/mta_debug.log** e **var/default/web_debug.log** file.
 
 >[!IMPORTANT]
-In Windows, non aggiungere l&#39;opzione LD_PRELOAD. Il comando seguente è sufficiente:\
-nlserver web -tomcat -verbose -tracefilter:*
+>
+>In Windows, non aggiungere l&#39;opzione LD_PRELOAD. Il comando seguente è sufficiente:\
+>nlserver web -tomcat -verbose -tracefilter:&#42;
 
 Verifica che il problema si verifichi di nuovo, quindi riavvia il modulo:
 

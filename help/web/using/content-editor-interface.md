@@ -69,7 +69,7 @@ La sezione a destra dell’editor raggruppa le opzioni principali che ti consent
 
 ![](assets/dce_right_section.png)
 
-Puoi:
+È possibile eseguire le seguenti operazioni:
 
 * Determinare la visualizzazione di uno o più blocchi, fare riferimento a [Definizione di una condizione di visibilità](editing-content.md#defining-a-visibility-condition),
 * Definire i bordi e le cornici, fare riferimento a [Aggiunta di un bordo e uno sfondo](editing-content.md#adding-a-border-and-background),

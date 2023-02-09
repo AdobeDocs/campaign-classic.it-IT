@@ -7,7 +7,7 @@ exl-id: 38add4fe-6238-45de-863e-895ebca189b7
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1089'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -21,15 +21,15 @@ La **[!UICONTROL Deduplication]** viene utilizzata per rimuovere righe duplicate
 
 | Data ultima modifica | Nome | Cognome | E-mail | Telefono cellulare | Telefono |
 -----|------------|-----------|-------|--------------|------
-| 03/02/2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
-| 19/05/2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
-| 22/07/2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
+| 02/03/2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
+| 05/19/2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
+| 07/22/2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 
 La **[!UICONTROL Deduplication]** l’attività ha la capacità di mantenere un’intera riga come record univoco dopo l’identificazione dei duplicati. Ad esempio, nel caso d’uso precedente, se l’attività è configurata per mantenere solo il record con il record più vecchio **[!UICONTROL Date]**, il risultato sarebbe:
 
 | Data | Nome | Cognome | E-mail | Telefono cellulare | Telefono |
 -----|----------|------------|-------|--------------|------
-| 03/02/2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
+| 02/03/2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
 
 Il record principale selezionato riporterà i dati senza alcuna unione dei dati di campo con altri dati pertinenti nelle righe duplicate.
 
@@ -37,8 +37,8 @@ Complemento:
 
 | Data | Nome | Cognome | E-mail | Telefono cellulare | Telefono |
 -----|------------|-----------|-------|--------------|------
-| 19/05/2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
-| 22/07/2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
+| 05/19/2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
+| 07/22/2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 
 ## Best practice {#best-practices}
 

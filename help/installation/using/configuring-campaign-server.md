@@ -27,7 +27,7 @@ Per **ospitato** le implementazioni e le impostazioni lato server possono essere
 
 Per ulteriori informazioni, consulta queste sezioni:
 
-* [Documentazione del Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it)
+* [Documentazione del Pannello di controllo](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it)
 * [Modelli di hosting](../../installation/using/hosting-models.md)
 * [Matrice di funzionalità Campaign Classic on-premise e in hosting](../../installation/using/capability-matrix.md)
 
@@ -40,7 +40,7 @@ I file di configurazione di Campaign Classic sono memorizzati nel **conf** della
 
 ## Ambito di configurazione
 
-Configura o adatta il server Campaign in base alle tue esigenze e alla tua configurazione. Puoi:
+Configura o adatta il server Campaign in base alle tue esigenze e alla tua configurazione. È possibile eseguire le seguenti operazioni:
 
 * Proteggere [Identificatore interno](#internal-identifier)
 * Abilita [Processi campagna](#enabling-processes)
@@ -159,7 +159,7 @@ Adobe Campaign utilizza le seguenti pagine JSP:
 * /nl/jsp/**logon.jsp**: accesso basato sul web ai rapporti e alla distribuzione della console client,
 * /nl/jsp/**s.jsp** : Utilizzo del marketing virale (sponsorizzazione e social network).
 
-I JSSP utilizzati per il canale app Mobile sono i seguenti:
+I JSSP utilizzati per il canale app mobile sono i seguenti:
 
 * nms/mobile/1/registerIOS.jssp
 * nms/mobile/1/registerAndroid.jssp

@@ -7,7 +7,7 @@ exl-id: 0188c3fe-8176-4904-8505-c47a72c20fcc
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '132'
-ht-degree: 9%
+ht-degree: 12%
 
 ---
 
@@ -23,7 +23,7 @@ I passaggi chiave per la creazione di una consegna sono i seguenti:
 
    * [Canale e-mail](defining-the-email-content.md)
    * [Canale SMS](sms-create.md#defining-the-sms-content)
-   * [Canale direct mailing](defining-the-direct-mail-content.md)
+   * [Canale direct mail](defining-the-direct-mail-content.md)
    * [Canale applicazione mobile](about-mobile-app-channel.md)
 
 1. **Definire la popolazione target**. [Maggiori informazioni](steps-defining-the-target-population.md)

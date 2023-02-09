@@ -9,7 +9,7 @@ exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
 source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -60,7 +60,7 @@ Per integrare AEM Assets con Adobe Campaign, devi prima configurare l’integraz
 
 Scopri come integrare Adobe Campaign e Adobe Experience Manager nel [documentazione dettagliata](../../integrations/using/about-adobe-experience-manager.md).
 
-Una volta configurata l’integrazione, puoi configurare un nuovo modello di consegna in Adobe Campaign per utilizzare la libreria AEM Assets. Per farlo, segui la procedura indicata di seguito:
+Una volta configurata l’integrazione, puoi configurare un nuovo modello di consegna in Adobe Campaign per utilizzare la libreria AEM Assets. A tale scopo, segui la procedura indicata di seguito:
 
 1. Crea un nuovo modello di consegna - o duplicane uno esistente. Per ulteriori informazioni sui modelli di consegna, consulta [questa pagina](../../delivery/using/about-templates.md).
 1. Modifica le **Proprietà** di questo modello.
@@ -69,7 +69,7 @@ Una volta configurata l’integrazione, puoi configurare un nuovo modello di con
 
    ![](assets/dam_aem_assets1.png)
 
-Quando inserisci immagini nel contenuto di una consegna in base a questo modello, la **[!UICONTROL Select a shared asset]** in modo da poter sfogliare le immagini nella libreria AEM Assets. Ulteriori informazioni in [questa sezione](../../integrations/using/inserting-a-shared-asset.md).
+Quando inserisci immagini nel contenuto di una consegna in base a questo modello, la **[!UICONTROL Select a shared asset]** in modo da poter sfogliare le immagini nella libreria AEM Assets. Per ulteriori informazioni, consulta [questa sezione](../../integrations/using/inserting-a-shared-asset.md).
 
 >[!NOTE]
 >

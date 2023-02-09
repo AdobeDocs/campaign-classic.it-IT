@@ -7,7 +7,7 @@ exl-id: 1baaabbd-9fd7-4d9b-b78e-d2a559d7dddb
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
 source-wordcount: '1153'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -177,11 +177,11 @@ Puoi utilizzare:
 
    Le immagini possono essere definite in base alle dimensioni dello schermo:
 
-   * 1040 px
-   * 700 px
-   * 460 px
-   * 300 px
-   * 240 px
+   * 1040px
+   * 700px
+   * 460px
+   * 300px
+   * 240px
 
    >[!CAUTION]
    >

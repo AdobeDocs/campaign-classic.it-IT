@@ -104,7 +104,7 @@ Identificare volumi ridotti o tempi di traffico ridotti che sarebbero ideali per
 
 Consulta la nostra [elenco di controllo per l&#39;aggiornamento della build qui sotto](#check-list) e i piani di test e assicurati che le risorse che possono eseguire questi test siano disponibili entro 24-48 ore. del completamento di un aggiornamento.
 
-Per ulteriori informazioni, consulta [fare riferimento a questo documento](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html).
+Per ulteriori informazioni, consulta [fare riferimento a questo documento](https://helpx.adobe.com/it/campaign/kb/acc-build-upgrade.html).
 
 ## Gli aggiornamenti possono essere eseguiti di notte o durante le ore di inattività?
 

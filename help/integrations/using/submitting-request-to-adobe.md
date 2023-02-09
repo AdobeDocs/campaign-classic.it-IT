@@ -9,7 +9,7 @@ exl-id: f3c19fcd-12cb-4ca3-b4b7-7dc4be57f4ea
 source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
 source-wordcount: '146'
-ht-degree: 15%
+ht-degree: 16%
 
 ---
 
@@ -34,7 +34,7 @@ Una volta abilitato IMS per la tua organizzazione, puoi richiedere il provisioni
    <td> Nome organizzazione </td> 
   </tr> 
   <tr> 
-   <td> <strong>ID organizzazione</strong><br /> </td> 
+   <td> <strong>ID organizzazione </strong><br /> </td> 
    <td> Il tuo ID organizzazione. <br> Per trovare l'ID organizzazione, fai riferimento a <a href="https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=it">questa pagina</a></td> 
   </tr> 
   <tr> 

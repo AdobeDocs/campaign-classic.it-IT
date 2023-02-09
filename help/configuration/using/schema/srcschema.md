@@ -27,9 +27,9 @@ creato (datetime), createdBy-id (long), desc (string), entitySchema (string), Ex
 
 ## Genitori {#parents-14}
 
-Nessuno
+Nessuna
 
-## Bambini {#children-14}
+## Elementi figli {#children-14}
 
 * `<attribute>`
 * `<createdby>`

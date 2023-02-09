@@ -418,7 +418,7 @@ Puoi utilizzare queste regole per vari scopi:
 * Esportazione e archiviazione dei dati in una soluzione di storage esterna
 * Calcolare i KPI da allegare ai profili
 * Creare elenchi di soppressione
-* Generazione rapporti
+* Reportistica
 
 Questi esempi mostrano come utilizzare i flussi di lavoro per suddividere i record per dispositivo iOS:
 

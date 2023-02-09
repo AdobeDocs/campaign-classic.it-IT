@@ -257,7 +257,6 @@ Sono raggruppati in **Monitoraggio** > &#39;Monitoraggio SMTP&#39;.
 >
 >* Le informazioni relative al monitoraggio SMTP sono disponibili solo se il canale e-mail è stato attivato.
 >* La **[!UICONTROL SMTP sending statistics]** vengono offerte solo se il server di statistiche viene avviato nell’istanza.
-
 >
 
 

@@ -9,7 +9,7 @@ exl-id: 6158ffaa-cb08-4f77-82b8-b3e5e1bf7fd7
 source-git-commit: d835da6c7b55d9bf70b6b5dc58880718e12211d5
 workflow-type: tm+mt
 source-wordcount: '995'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -73,7 +73,7 @@ La **[!UICONTROL Targeting dimension]** coincide con la tabella dei destinatari 
 >
 >È inoltre possibile utilizzare tabelle non standard. Se desideri utilizzare una dimensione di targeting specifica, dovrai creare tabelle e un ambiente dedicato utilizzando la mappatura di destinazione. Per ulteriori informazioni, consulta [Creazione di un ambiente di offerta](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
-### Punto {#period}
+### Periodo {#period}
 
 Si tratta di un periodo scorrevole che inizia nella data di presentazione dell’offerta. Stabilisce un termine per la validità delle proposte di offerta. La regola non si applica alle proposte di offerta effettuate oltre questo periodo.
 

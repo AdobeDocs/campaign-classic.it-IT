@@ -29,7 +29,7 @@ Per creare una consegna collegata a una campagna, fai clic sul pulsante **[!UICO
 
 Le configurazioni suggerite sono adatte ai diversi tipi di consegna: direct mailing, e-mail, canali mobili. [Ulteriori informazioni](../../delivery/using/steps-about-delivery-creation-steps.md).
 
-## Avviare una consegna {#starting-a-delivery}
+## Inizia una consegna {#starting-a-delivery}
 
 Una volta concesse tutte le approvazioni, la consegna è pronta per essere avviata. La procedura di consegna dipende quindi dal tipo di consegna. Per le consegne e-mail o di canali mobili, consulta [Avvio di una consegna online](#starting-an-online-delivery), e per le consegne di direct mailing, vedi [Avvio di una consegna offline](#starting-an-offline-delivery).
 
@@ -116,7 +116,7 @@ L’estrazione del file avvia due operazioni: calcolo del budget e calcolo delle
 
 ## Gestire i documenti associati {#managing-associated-documents}
 
-È possibile associare vari documenti a una campagna: report, foto, pagina web, diagramma, ecc. Questi documenti possono essere in qualsiasi formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, ecc.). Scopri come collegare documenti a una campagna [in questa sezione](../../campaign/using/marketing-campaign-assets.md).
+È possibile associare vari documenti a una campagna: rapporti, foto, pagine web, diagrammi, ecc. Questi documenti possono essere in qualsiasi formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, ecc.). Scopri come collegare documenti a una campagna [in questa sezione](../../campaign/using/marketing-campaign-assets.md).
 
 >[!IMPORTANT]
 >

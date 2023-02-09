@@ -285,7 +285,7 @@ Immetti le seguenti informazioni:
 * **[!UICONTROL Label]** : Immetti un nome per questo account push SMS/Wap. Ad esempio, è possibile utilizzare il nome del router.
 * Per **[!UICONTROL Server]**, **[!UICONTROL Port]**, **[!UICONTROL Account]**, **[!UICONTROL Password]**, **[!UICONTROL Connector]**, **[!UICONTROL Send Endpoint]**, **[!UICONTROL Reception Endpoint]**, **[!UICONTROL Notification Endpoint]** campi: Contattare il provider di servizi per le impostazioni richieste.
 
-### Parametri dell’SMS inviato {#parameters-of-sms-sent}
+### Parametri degli SMS inviati {#parameters-of-sms-sent}
 
 In **Priorità** elenco a discesa: Seleziona &quot;Normale&quot;, &quot;Alto&quot; o &quot;Urgente&quot; per applicarlo ai messaggi da inviare.
 
@@ -386,7 +386,7 @@ La sezione inferiore della procedura guidata consente di selezionare le opzioni 
 
 Sono disponibili le seguenti modalità di pubblicazione:
 
-* Server/i di tracciamento
+* Server di tracciamento
 
    Le risorse verranno copiate automaticamente nei diversi server di tracciamento. Sono configurati nel passaggio [Configurazione del tracciamento](#tracking-configuration).
 

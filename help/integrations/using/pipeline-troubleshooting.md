@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 'Risoluzione dei problemi relativi alla pipeline '
-description: 'Risoluzione dei problemi relativi alla pipeline '
+title: Risoluzione dei problemi relativi alla pipeline
+description: Risoluzione dei problemi relativi alla pipeline
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa

@@ -7,7 +7,7 @@ exl-id: fded088a-11a2-4b87-a368-7b197334aca4
 source-git-commit: 2c145829517a6961d502cc3e7b904547f8c71602
 workflow-type: tm+mt
 source-wordcount: '8460'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -356,7 +356,7 @@ La dimensione massima di un messaggio dipende dalla relativa codifica. Questa ta
 
 | Codifica | Codifica_dati normale | Dimensioni del messaggio (caratteri) | Dimensione della parte per SMS multiparte | Caratteri disponibili |
 |:-:|:-:|:-:|:-:|:-:|
-| GSM7 | 0 | 160 | 152 | Set di caratteri di base GSM7 + estensione (i caratteri estesi richiedono 2 caratteri) |
+| GSM 7 | 0 | 160 | 152 | Set di caratteri di base GSM7 + estensione (i caratteri estesi richiedono 2 caratteri) |
 | Latino-1 | 3 | 140 | 134 | ISO-8859-1 |
 | UCS-2 <br>UTF-16 | 8 | 70 | 67 | Unicode (varia da telefono a telefono) |
 
@@ -378,7 +378,7 @@ Se è necessario controllare con precisione il numero di connessioni, ad esempio
 
 ### Impostazioni di connessione {#connection-settings}
 
-#### Nome implementazione SMSC {#smsc-implementation-name}
+#### Nome dell’implementazione SMSC {#smsc-implementation-name}
 
 Imposta il nome dell’implementazione SMSC. Deve essere impostato sul nome del provider. Contatta l’amministratore o il team di recapito per sapere cosa aggiungere in questo campo. Il ruolo di questo campo è descritto in [Gestione degli errori SR](sms-protocol.md#sr-error-management) sezione .
 
@@ -402,7 +402,7 @@ Password della connessione SMPP. Passato nel campo password della PDU BIND.
 
 Valore passato nel `system_id` campo della PDU BIND. Alcuni provider hanno bisogno di un valore specifico qui.
 
-#### Numero di connessioni figlio MTA {#number-mta-child}
+#### Numero di connessioni MTA secondarie {#number-mta-child}
 
 In Adobe Campaign Classic, definisce il numero di connessioni per figlio MTA.
 
@@ -418,11 +418,11 @@ Come suggerito in precedenza, il processo SMS di Adobe Campaign Classic apre pi�
 
 Se si impostano le risposte automatiche, il processo SMS aprirà coppie trasmettitore/ricevitore, aumentando il numero di connessioni del trasmettitore. Se non hai impostato alcuna risposta automatica, aprirà solo le connessioni del ricevitore.
 
-#### Abilitare TLS su SMPP {#enable-TLS}
+#### Abilita TLS su SMPP {#enable-TLS}
 
 Utilizza TLS per connetterti al provider. La connessione verrà crittografata. La connessione TLS è gestita dalla libreria OpenSSL : tutto ciò che è applicabile a OpenSSL è vero per questa connessione.
 
-#### Abilita tracce SMPP dettagliate nel file di registro {#enable-verbose-log-file}
+#### Abilita tracce SMPP verbose nel file di registro {#enable-verbose-log-file}
 
 Questa impostazione esegue il dump di tutto il traffico SMPP nei file di registro. Spesso è necessario regolare i parametri durante la configurazione iniziale. Questa opzione deve essere abilitata per la risoluzione dei problemi relativi al connettore e confrontata con il traffico rilevato dal provider.
 
@@ -432,7 +432,7 @@ In Adobe Campaign Classic, l’output di registro si trova nel registro MTA per 
 
 Questa sezione è visibile solo in separata **trasmettitore+ricevitore** modalità.
 
-#### Utilizzare parametri diversi per il ricevitore {#receiver-parameters}
+#### Utilizza parametri diversi per il ricevente {#receiver-parameters}
 
 Quando la casella è deselezionata, le stesse impostazioni vengono utilizzate per il trasmettitore e il ricevitore.
 
@@ -468,7 +468,7 @@ L&#39;inconveniente può essere a basse prestazioni a causa del contenzioso del 
 
 Adobe Campaign Classic dispone di un meccanismo completamente diverso per i KPI, pertanto questa opzione non è disponibile.
 
-#### Numero di origine {#source-number}
+#### Numero sorgente {#source-number}
 
 Definisce l&#39;indirizzo di origine predefinito per i messaggi. Questa impostazione si applica solo se il numero di origine è stato lasciato vuoto nella consegna.
 
@@ -519,7 +519,7 @@ Come calcolare la formula ottimale della finestra di invio:
 
 Esempio: Se hai 300 SMS/s impostato nel throughput massimo di MT e c&#39;è una latenza di 100 ms tra `SUBMIT_SM` e `SUBMIT_SM_RESP` in media, il valore ottimale sarebbe `300×0.1 = 30`.
 
-#### Velocità effettiva max MT {#max-mt-throughput}
+#### Velocità effettiva MT massima {#max-mt-throughput}
 
 Numero massimo di MT al secondo e per connessione. Questa impostazione è rigorosamente applicata e l’MTA non invierà mai i messaggi push più velocemente di questo limite. È utile per i provider che richiedono una limitazione precisa.
 
@@ -537,11 +537,11 @@ Quando la connessione TCP viene persa, il connettore attenderà questo numero di
 
 Timeout tra `SUBMIT_SM` e la sua corrispondenza `SUBMIT_SM_RESP`. Se la `RESP` non viene ricevuto in tempo, il messaggio verrà considerato come non riuscito e verranno applicati i criteri di esecuzione di nuovi tentativi globali dell’MTA.
 
-#### Timeout del binding {#bind-timeout}
+#### Associa timeout {#bind-timeout}
 
 Timeout tra il tentativo di connessione TCP e il `BIND_*_RESP` rispondi. Quando si verifica un timeout, la connessione viene chiusa dal connettore Adobe Campaign e attenderà Tempo prima di riconnettersi prima di riprovare.
 
-#### periodo inquire_link {#enquire-link-period}
+#### Periodo enquire_link {#enquire-link-period}
 
 `enquire_link` è un tipo speciale di PDU inviato per mantenere la connessione in vita. Questo periodo è in secondi. Il connettore della campagna invia solo `enquire_link` quando la connessione è inattiva per risparmiare larghezza di banda. Se non viene ricevuto alcun RESP dopo due volte questo periodo, la connessione verrà considerata morta e verrà attivato un processo di riconnessione.
 
@@ -614,7 +614,7 @@ Sono trasmessi così come sono `addr_ton` e `addr_npi` campi della PDU BIND.
 
 Inviato come nel campo address_range della PDU BIND. Questo valore deve essere impostato su qualsiasi esigenza del provider.
 
-#### Numero di riconoscimenti ID non valido {#invalid-id}
+#### Conteggio ID conferma non valido {#invalid-id}
 
 Limita il numero di **ID messaggio non valido** `DELIVER_SM_RESP` che può essere inviato per un singolo SR.
 

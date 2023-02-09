@@ -70,7 +70,7 @@ La seconda scheda nelle proprietà di approvazione dell’attività ti consente 
 
 ![](assets/expiration.png)
 
-Per aggiungere una nuova scadenza, fai clic su **[!UICONTROL Add]**. A ciascuna delle scadenze create viene aggiunta una transizione. Puoi:
+Per aggiungere una nuova scadenza, fai clic su **[!UICONTROL Add]**. A ciascuna delle scadenze create viene aggiunta una transizione. È possibile eseguire le seguenti operazioni:
 
 * modificare i parametri tipici direttamente facendo clic su una cella dell&#39;elenco (o premendo F2),
 * o modifica l’espressione facendo clic sul pulsante **[!UICONTROL Detail...]** pulsante .

@@ -7,7 +7,7 @@ exl-id: b5514fa3-1e65-45dc-8e40-d1ba3b673e7a
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '180'
-ht-degree: 10%
+ht-degree: 12%
 
 ---
 
@@ -26,7 +26,7 @@ Queste mappature sono le seguenti:
 | Destinatari | Consegna a destinatari del database Adobe Campaign | nms:recipient |
 | Visitatori | Effettua la consegna ai visitatori i cui profili sono stati raccolti tramite riferimento (marketing virale) o tramite social network (Facebook, Twitter), ad esempio. | mns:visitatore |
 | Abbonamenti | Consegnare a destinatari abbonati a un servizio di informazione, ad esempio una newsletter | nms:abbonamento |
-| Abbonamenti ai visitatori | Consegna ai visitatori abbonati a un servizio di informazione | nms:visitorSub |
+| Abbonamenti visitatore | Consegna ai visitatori abbonati a un servizio di informazione | nms:visitorSub |
 | Servizio | Pubblicare su un account Twitter o su una pagina Facebook | nms:servizio |
 | Operatori | Consegna agli operatori Adobe Campaign | nms:operatore |
 | File esterno | Consegna tramite un file contenente tutte le informazioni necessarie per la consegna | Nessun schema collegato, nessuna destinazione immessa |

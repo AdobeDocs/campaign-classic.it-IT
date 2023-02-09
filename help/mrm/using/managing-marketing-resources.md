@@ -9,7 +9,7 @@ exl-id: f661e1d1-de2f-4c6a-bbff-e3ffcd1831f0
 source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '1386'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -52,7 +52,7 @@ Puoi specificare una data di disponibilità (indicativa) per la risorsa. Oltre q
 
 ## Lavoro collaborativo sulle risorse {#collaborative-work-on-resources}
 
-Puoi modificare e aggiornare una risorsa di marketing e, se necessario, informarne altri operatori Adobe Campaign. Puoi:
+Puoi modificare e aggiornare una risorsa di marketing e, se necessario, informarne altri operatori Adobe Campaign. È possibile eseguire le seguenti operazioni:
 
 * Scarica la risorsa localmente per modificarla.
 * Aggiorna il file sul server e rendilo accessibile ad altri operatori.
@@ -195,7 +195,7 @@ Puoi associare una risorsa di marketing a uno o più stock per gestire gli appro
 >
 >Per ulteriori informazioni sulla gestione delle azioni in Adobe Campaign, consulta [Gestione delle scorte](../../campaign/using/providers--stocks-and-budgets.md#stock-management).
 
-Per associare una risorsa di marketing a una risorsa di marketing, modificala e modificala o creane una. Aggiungi una linea di magazzino e seleziona la risorsa di marketing corrispondente.
+Per associare una risorsa di marketing a una risorsa di marketing, modifica la mappa azioni e modifica o crea una risorsa. Aggiungi una linea di magazzino e seleziona la risorsa di marketing corrispondente.
 
 ![](assets/s_ncs_user_task_in_a_stock.png)
 

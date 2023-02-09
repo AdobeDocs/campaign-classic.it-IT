@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 'Guida introduttiva al canale app mobile '
+title: Guida introduttiva al canale app mobile
 description: Guida introduttiva al canale app mobile in Adobe Campaign Classic
 feature: Push
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6

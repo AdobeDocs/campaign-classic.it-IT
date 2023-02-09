@@ -7,7 +7,7 @@ exl-id: db65e83e-276f-4163-98c3-3658a48acffc
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '928'
-ht-degree: 1%
+ht-degree: 7%
 
 ---
 
@@ -70,9 +70,9 @@ Per creare un allegato personalizzato, effettua le seguenti operazioni:
 
 Sono disponibili le seguenti opzioni:
 
-* **Nome file specificato durante la creazione del modello di consegna**
-* **Il contenuto del file viene personalizzato e convertito in PDF durante la consegna di ciascun messaggio**
-* **Il nome file viene calcolato durante l’analisi della consegna (non può dipendere dal profilo del destinatario)**
+* **Il nome del file viene specificato quando si crea il modello di consegna**
+* **Il contenuto del file è personalizzato e convertito in PDF durante la consegna di ciascun messaggio**
+* **Il nome del file viene calcolato durante l’analisi della consegna (non può dipendere dal profilo del destinatario)**
 * **Il nome file viene calcolato al momento della consegna per ciascun destinatario (può dipendere dal destinatario)**
 
 ### Collegamento di un file locale {#attach-a-local-file}

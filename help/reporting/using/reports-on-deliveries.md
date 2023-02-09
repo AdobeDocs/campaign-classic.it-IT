@@ -34,7 +34,7 @@ Quando il rapporto viene generato, puoi eseguire varie azioni utilizzando le ico
 
 ![](assets/s_ncs_user_report_toolbar.png)
 
-Puoi:
+È possibile eseguire le seguenti operazioni:
 
 * Esporta il rapporto in Excel, PDF o Apri documento,
 * Stampa il rapporto,

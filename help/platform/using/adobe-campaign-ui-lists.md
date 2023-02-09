@@ -177,7 +177,7 @@ Gli elenchi possono contenere una grande quantità di dati. Puoi ordinare questi
 
 Fai clic sull’intestazione della colonna per applicare un ordinamento crescente o decrescente o per annullare l’ordinamento dei dati. Lo stato di ordinamento e l’ordine di ordinamento attivi sono indicati da una freccia blu prima dell’etichetta della colonna. Un trattino rosso prima dell’etichetta della colonna indica che l’ordinamento viene applicato ai dati indicizzati dal database. Questo metodo di ordinamento viene utilizzato per ottimizzare i processi di ordinamento.
 
-Puoi anche configurare l’ordinamento o combinare criteri di ordinamento. Per farlo, segui la procedura indicata di seguito:
+Puoi anche configurare l’ordinamento o combinare criteri di ordinamento. A tale scopo, segui la procedura indicata di seguito:
 
 1. **[!UICONTROL Configure list]** sotto e a destra dell&#39;elenco.
 

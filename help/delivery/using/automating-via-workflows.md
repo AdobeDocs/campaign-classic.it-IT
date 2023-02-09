@@ -7,7 +7,7 @@ exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '1190'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -50,7 +50,7 @@ Le proprietà dell’attività sono suddivise in quattro passaggi:
 
 ### Aggiornare il contenuto {#update-the-content}
 
-* **Oggetto**
+* **Argomento**
 
    Consente di modificare l’oggetto dell’azione di consegna durante la pubblicazione.
 

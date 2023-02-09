@@ -23,7 +23,7 @@ Per configurarlo, modifica l’attività e immetti le opzioni di consegna.
 
 1. **Consegna**
 
-   Puoi:
+   È possibile eseguire le seguenti operazioni:
 
    * Agisci sulla consegna specificata nella transizione in entrata. A questo scopo, seleziona la prima opzione del **[!UICONTROL Delivery]** della finestra.
 

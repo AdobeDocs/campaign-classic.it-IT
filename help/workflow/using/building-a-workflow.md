@@ -169,7 +169,7 @@ Mentre per **Applicazioni Web**, l’elenco conterrà le seguenti dimensioni di 
 
 ![](assets/query_filter_target_dimensions_2.png)
 
-## Flussi di lavoro di Campaign {#campaign-workflows}
+## Flussi di lavoro della campagna {#campaign-workflows}
 
 Per ogni campagna, puoi creare flussi di lavoro da eseguire dal **[!UICONTROL Targeting and workflows]** scheda . Questi flussi di lavoro sono specifici per la campagna.
 

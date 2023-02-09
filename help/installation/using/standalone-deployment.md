@@ -75,7 +75,7 @@ Quando il volume cresce, una variante di questa architettura sposta il server di
 Negli esempi seguenti, i parametri dell’istanza sono:
 
 * Nome dell’istanza: **demo**
-* Maschera DNS: **console.campaign.net*** (solo per le connessioni alla console client e per i rapporti)
+* Maschera DNS: **console.campaign.net&#42;** (solo per le connessioni alla console client e per i rapporti)
 * Database: **campagna:demo@dbsrv**
 
 ### Installazione e configurazione (computer singolo) {#installing-and-configuring--single-machine-}

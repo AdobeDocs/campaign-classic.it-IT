@@ -7,7 +7,7 @@ exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
 source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '861'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -93,7 +93,7 @@ Per impostazione predefinita, è disponibile un elenco di blocchi di personalizz
 
 ![](assets/s_ncs_user_personalized_block_list.png)
 
-* **[!UICONTROL Greetings]** : inserisce i saluti con il nome del destinatario. Esempio: &quot;Ciao John Doe.&quot;
+* **[!UICONTROL Greetings]** : inserisce i saluti con il nome del destinatario. Esempio: “Ciao John Doe,”
 * **[!UICONTROL Insert logo]** : inserisce un logo predefinito definito durante la configurazione dell’istanza.
 * **[!UICONTROL Powered by Adobe Campaign]** : inserisce il logo &quot;Powered by Adobe Campaign&quot; (Alimentato da).
 * **[!UICONTROL Mirror page URL]** : inserisce l’URL della pagina speculare, consentendo a Progettazione consegne di controllare il collegamento.

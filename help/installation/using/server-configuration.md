@@ -30,7 +30,7 @@ Controlla con gli utenti operativi che tipo di file caricano sul server utilizza
 
 Aggiungi tutti in serverConf/shared/datastore/@uploadAllowlist (espressione regolare java valida). Per ulteriori informazioni, consulta [questa pagina](../../installation/using/file-res-management.md).
 
-Adobe Campaign non limita la dimensione del file. Ma è possibile farlo configurando IIS/Apache. Ulteriori informazioni in [questa sezione](../../installation/using/web-server-configuration.md).
+Adobe Campaign non limita la dimensione del file. Ma è possibile farlo configurando IIS/Apache. Per ulteriori informazioni, consulta [questa sezione](../../installation/using/web-server-configuration.md).
 
 ## Relè
 

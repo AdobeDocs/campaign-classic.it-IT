@@ -6,7 +6,7 @@ exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
 source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
@@ -31,7 +31,7 @@ enumerazione:==(help| valore)
 
 `<srcschema>`
 
-## Bambini {#children-5}
+## Elementi figli {#children-5}
 
 * `<help>`
 * `<value>`
@@ -67,14 +67,14 @@ Le enumerazioni sono definite all&#39;inizio di uno schema (prima che l&#39;elem
    * float
    * html
    * int64
-   * collegamento
+   * link
    * long
    * promemoria
    * MNTOKEN
    * percentuale
    * primarykey
    * short
-   * string
+   * stringa
    * orario
    * timespan
    * uuid

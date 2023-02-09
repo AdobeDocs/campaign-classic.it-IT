@@ -7,7 +7,7 @@ exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1687'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -27,7 +27,7 @@ Metodo JavaScript **[!UICONTROL logInfo()]** è una soluzione ideale per il debu
 
 Sono disponibili due soluzioni aggiuntive per:
 
-* **Mantenere il risultato delle popolazioni intermedie tra due esecuzioni**
+* **Mantieni il risultato delle popolazioni provvisorie tra due esecuzioni**
 
    Questa opzione consente di mantenere tabelle temporanee tra due esecuzioni di un flusso di lavoro. È disponibile nelle proprietà del flusso di lavoro **[!UICONTROL General]** e può essere utilizzato a scopo di sviluppo e test per monitorare i dati e controllare i risultati. Puoi utilizzare questa opzione negli ambienti di sviluppo ma non mai negli ambienti di produzione. Mantenere tabelle temporanee potrebbe comportare un aumento significativo delle dimensioni del database e, in ultima analisi, il raggiungimento del limite di dimensione. Inoltre, rallenterà il backup.
 
@@ -37,7 +37,7 @@ Sono disponibili due soluzioni aggiuntive per:
    >
    >Questa opzione non deve mai essere selezionata in un flusso di lavoro di produzione. Questa opzione viene utilizzata per analizzare i risultati ed è progettata solo a scopo di test e quindi deve essere utilizzata solo negli ambienti di sviluppo o di staging.
 
-* **Registra query SQL nel giornale di registrazione**
+* **Registra le query SQL nel giornale di registrazione**
 
    Disponibile in **[!UICONTROL Execution]** scheda delle proprietà del flusso di lavoro, questa opzione registra tutte le query SQL generate dallo strumento dalle diverse attività. È un buon modo per vedere cosa viene effettivamente eseguito dalla piattaforma. Tuttavia, questa opzione deve essere utilizzata solo temporaneamente durante lo sviluppo e non deve essere attivata in produzione.
 

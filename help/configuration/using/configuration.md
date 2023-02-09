@@ -265,7 +265,7 @@ I comandi vengono visualizzati nello stesso ordine in cui sono dichiarati nel do
 
 Un separatore di comando consente di visualizzare una barra di separazione tra i comandi. È identificato dal **&#39;-&#39;** valore contenuto nell&#39;etichetta del comando.
 
-La presenza opzionale del **`<soapcall>`** Il tag con i relativi parametri di input definisce la chiamata di un metodo SOAP da eseguire. Per ulteriori informazioni sulle API SOAP, consulta [Documentazione JSAPI per Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
+La presenza opzionale del **`<soapcall>`** Il tag con i relativi parametri di input definisce la chiamata di un metodo SOAP da eseguire. Per ulteriori informazioni sulle API SOAP, consulta [Documentazione JSAPI per Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=it).
 
 Il contesto del modulo può essere aggiornato all’inizializzazione tramite l’ **`<enter>`** tag . Per ulteriori informazioni su questo tag, consulta la documentazione del modulo di input .
 

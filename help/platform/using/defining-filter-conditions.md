@@ -207,7 +207,7 @@ Le varie categorie di campi:
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_48.png" /> </td> 
-   <td> Chiave primaria. Questo campo SQL è un modo per identificare un record in una tabella.<br /> </td> 
+   <td> Chiave principale. Questo campo SQL è un modo per identificare un record in una tabella.<br /> </td> 
    <td> I destinatari degli identificatori sono chiavi primarie e gli identificatori sono univoci per definizione.<br /> </td> 
   </tr> 
   <tr> 
@@ -310,7 +310,7 @@ Per rimuovere questo campo calcolato, fai clic sul pulsante **[!UICONTROL Remove
 
 Lo strumento di modifica delle espressioni consente di calcolare gli aggregati, generare una funzione o modificare una formula utilizzando un’espressione.
 
-L&#39;esempio seguente illustra come eseguire un conteggio su una chiave primaria.
+L&#39;esempio seguente mostra come eseguire un conteggio su una chiave primaria.
 
 Applica i seguenti passaggi:
 

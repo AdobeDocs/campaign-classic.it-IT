@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Introduzione alla messaggistica transazionale
-description: 'Ulteriori informazioni sul principio operativo della messaggistica transazionale Adobe Campaign Classic e sui passaggi chiave. '
+description: Ulteriori informazioni sul principio operativo della messaggistica transazionale Adobe Campaign Classic e sui passaggi chiave.
 feature: Transactional Messaging
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
 source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055

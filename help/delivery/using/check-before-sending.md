@@ -85,7 +85,7 @@ Puoi impostare l’ordine di invio per le consegne specificando il livello di pr
 
 Per controllare meglio il traffico SMTP in uscita, puoi gestire le affinità definendo quali indirizzi IP specifici possono essere utilizzati per ogni affinità. Ciò ti consente di limitare il numero di e-mail per consegne specifiche a computer o indirizzi di output. Ad esempio, puoi utilizzare un’affinità per paese o sottodominio. Puoi quindi creare una tipologia per paese e collegare ogni affinità alla tipologia corrispondente.
 
-Puoi:
+È possibile eseguire le seguenti operazioni:
 
 * Definisci le affinità IP nel file di configurazione serverConf.xml. [Ulteriori informazioni](../../installation/using/configuring-campaign-server.md#managing-outbound-smtp-traffic-with-affinities)
 

@@ -37,7 +37,7 @@ Quando questa opzione è selezionata, le attività eseguite sono visualizzate in
 
 ## Visualizzazione dei registri {#displaying-logs}
 
-Il registro contiene la cronologia o il percorso di audit del flusso di lavoro. Registra tutte le azioni utente, tutte le operazioni eseguite e gli errori rilevati. Puoi:
+Il registro contiene la cronologia o il percorso di audit del flusso di lavoro. Registra tutte le azioni utente, tutte le operazioni eseguite e gli errori rilevati. È possibile eseguire le seguenti operazioni:
 
 * Seleziona la **[!UICONTROL Tracking]** nel dettaglio. Questo elenco contiene tutti i messaggi del flusso di lavoro.
 

@@ -31,7 +31,7 @@ I problemi di recapito sono solitamente collegati a misure di protezione contro 
 
 >[!NOTE]
 >
->Poiché gli ISP sono obbligati a sviluppare continuamente nuove tecniche di filtraggio sofisticate per proteggere i loro clienti dagli spammer, la consegna delle e-mail è caratterizzata da criteri e regole in continua evoluzione. Assicurati di fare riferimento al [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html) che viene regolarmente aggiornato.
+>Poiché gli ISP sono obbligati a sviluppare continuamente nuove tecniche di filtraggio sofisticate per proteggere i loro clienti dagli spammer, la consegna delle e-mail è caratterizzata da criteri e regole in continua evoluzione. Assicurati di fare riferimento al [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it) che viene regolarmente aggiornato.
 
 ### Tasso di consegna
 

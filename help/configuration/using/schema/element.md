@@ -28,7 +28,7 @@ _operation (stringa), advanced (booleano), aggregate (stringa), applyIf (stringa
 
 `<element>`
 
-## Bambini {#children-4}
+## Elementi figli {#children-4}
 
 * `<attribute>`
 * `<compute-string>`
@@ -189,14 +189,14 @@ Esistono quattro tipi di `<element>`  elementi in Adobe Campaign:
    * float
    * html
    * int64
-   * collegamento
+   * link
    * long
    * promemoria
    * MNTOKEN
    * percentuale
    * primarykey
    * short
-   * string
+   * stringa
    * orario
    * timespan
    * uuid

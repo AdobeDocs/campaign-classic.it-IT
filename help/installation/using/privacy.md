@@ -184,6 +184,6 @@ Per proteggere le pagine, effettua le seguenti operazioni:
    Per ulteriori informazioni, consulta [articolo](https://developers.google.com/search/reference/robots_meta_tag).
 
 
-## Richieste sulla privacy
+## Richieste di privacy
 
 Fai riferimento a [questa pagina](../../platform/using/privacy-management.md) per informazioni generali su cosa si intende per gestione della privacy e sui passaggi di implementazione in Adobe Campaign. Troverai inoltre le best practice e una panoramica del processo utente e dei singoli utenti.

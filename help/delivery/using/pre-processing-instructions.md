@@ -7,7 +7,7 @@ exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '642'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -37,7 +37,7 @@ Gli esempi seguenti sono tra i più utilizzati:
    <%@ include view="MirrorPage" %>  
    ```
 
-* URL pagina speculare:
+* URL pagina mirror:
 
    ```
    View as a <a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage">web page.

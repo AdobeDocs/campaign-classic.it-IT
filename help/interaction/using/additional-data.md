@@ -9,7 +9,7 @@ exl-id: 01adb584-5308-4d41-a6f1-223a97efa10f
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '717'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -108,7 +108,7 @@ Quando visualizzi l’anteprima, fai clic su **[!UICONTROL Content personalizati
 
 ![](assets/ita_calldata_preview2.png)
 
-### Storage {#storage}
+### Archiviazione {#storage}
 
 Durante una chiamata al motore, puoi memorizzare dati aggiuntivi nella tabella delle proposte per arricchire il database. Questi dati possono essere utilizzati, ad esempio nei rapporti, nei calcoli sul ROI o per processi successivi.
 

@@ -210,7 +210,7 @@ _15 aprile 2021_
 
 >[!NOTE]
 >
-> Per scaricare la nuova versione, accedi ad [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). Per informazioni su come proporre l’aggiornamento della console a tutti gli utenti finali, visita [questa pagina](../../installation/using/client-console-availability-for-windows.md).
+> Per scaricare la nuova versione, accedi ad [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/it/campaign.html). Per informazioni su come proporre l’aggiornamento della console a tutti gli utenti finali, visita [questa pagina](../../installation/using/client-console-availability-for-windows.md).
 
 _22 marzo 2021_
 
@@ -227,7 +227,7 @@ _16 dicembre 2020_
 >[!CAUTION]
 >
 > * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), è necessario eseguire l’aggiornamento affinché sia il server di Campaign che la console client possano connettersi a Campaign dopo il **30 giugno 2021**. [Ulteriori informazioni](../../technotes/using/ims-updates.md)
-> * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
+> * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
 > * Se utilizzi l’integrazione Experience Cloud Triggers tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione OAuth legacy con Campaign [è stata ritirata](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) a **settembre 2021**. Gli ambienti in hosting usufruiscono di una proroga fino al **23 febbraio 2022**. In qualità di cliente on-premise o ibrido, contatta l’Assistenza clienti Adobe per estendere il supporto a febbraio 2022. Devi fornire ad Adobe [l’AppID dell’applicazione OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional).
 
 
@@ -372,7 +372,7 @@ _30 maggio 2019_
   </tr> 
   <tr> 
    <td> Aggiornamento della matrice di compatibilità<br /> </td> 
-   <td> Con questa nuova versione, Adobe Campaign ora supporta i seguenti sistemi di database. Fai riferimento a <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">Matrice di compatibilità</a>.<br /> 
+   <td> Con questa nuova versione, Adobe Campaign ora supporta i seguenti sistemi di database. Fai riferimento a <a href="https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html">Matrice di compatibilità</a>.<br /> 
     <ul> 
      <li> <p>Oracle 18 quater</p> </li> 
      <li> <p>MySQL 5.7 (FDA)</p> </li> 
@@ -386,7 +386,7 @@ _30 maggio 2019_
 
 **Miglioramenti di sicurezza**
 
-* Per motivi di sicurezza, non è più possibile inserire comandi arbitrari quando si utilizza il **[!UICONTROL Pre-process the file]** in un **[!UICONTROL Data loading (file)]** attività del flusso di lavoro. È ora disponibile un elenco a discesa che consente di scegliere tra 3 opzioni: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) o **[!UICONTROL Decrypt]** (gpg). È stato aggiunto il flag di sicurezza XtkSecurity_Disable_Preproc . Per i nuovi clienti, questa opzione è impostata su 0. Per i clienti esistenti, questa opzione sarà impostata su 1 dal post aggiornamento per mantenere il comportamento precedente. Fai riferimento a questo [sezione](../../workflow/using/data-loading--file-.md).
+* Per motivi di sicurezza, non è più possibile inserire comandi arbitrari quando si utilizza il **[!UICONTROL Pre-process the file]** in un **[!UICONTROL Data loading (file)]** attività del flusso di lavoro. È ora disponibile un elenco a discesa che consente di scegliere tra 3 opzioni: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) o **[!UICONTROL Decrypt]** (gpg). È stato aggiunto il flag di sicurezza XtkSecurity_Disable_Preproc . Per i nuovi clienti, questa opzione è impostata su 0. Per i clienti esistenti, questa opzione sarà impostata su 1 dal post aggiornamento per mantenere il comportamento precedente. Fai riferimento a questa [sezione](../../workflow/using/data-loading--file-.md).
 * È stato risolto un problema di visibilità della password che si verificava durante il test della connessione di un account esterno FDA senza impostazione del fuso orario.
 * La libreria PDFBox è stata rimossa.
 * Tomcat è stato aggiornato alla versione 7.0.93.

@@ -216,7 +216,7 @@ L’analisi della consegna è la preparazione della consegna. Questo processo co
 Ulteriori informazioni [Analisi della consegna](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
 +++
 
-+++**Log di consegna**
++++**Registri di consegna**
 
 I registri di consegna contengono informazioni generate durante l’invio di un messaggio. Questi registri mostrano i dettagli dell’invio, che è stato preparato, ignorato, inviato o non riuscito. È possibile accedervi direttamente dal dashboard di consegna.
 
@@ -239,7 +239,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 
 *Contesto: Direct mailing*
 
-Un profilo di consegna è un insieme strutturato di elementi (documenti, negozi, promozioni, ecc.) creato dalla società e per una campagna particolare. Viene utilizzato nel contesto delle consegne di direct mailing.
+Un profilo di consegna è un insieme strutturato di elementi (documenti, negozi, promozionali coupon, ecc.) creato dalla società e per una campagna particolare. Viene utilizzato nel contesto delle consegne di direct mailing.
 
 Ulteriori informazioni [Direct mailing](../../delivery/using/about-direct-mail-channel.md).
 +++
@@ -407,7 +407,7 @@ La visualizzazione Cartella è un tipo speciale di cartella Explorer utilizzato 
 Ulteriori informazioni [Visualizzazione a cartelle](../../platform/using/adobe-campaign-explorer.md).
 +++
 
-+++**Forms**
++++**Moduli**
 
 Forms definisce la rappresentazione dell&#39;interfaccia per un tipo di schema specifico. Forms è lo strumento utilizzato per creare e modificare facilmente gli elementi dati nel prodotto, ad esempio destinatari, consegne e campagne. Tutti gli elementi dell’interfaccia in Adobe Campaign vengono creati nel prodotto stesso utilizzando Forms. I moduli sono facoltativi e non tutti gli schemi dispongono di moduli.
 
@@ -617,7 +617,7 @@ La potatura del motore di offerta è il processo di eliminazione delle offerte n
 Ulteriori informazioni [Interazione](../../interaction/using/interaction-and-offer-management.md).
 +++
 
-+++**Ambiente di offerta**
++++**Ambiente offerta**
 
 *Contesto: Interazione campagna*
 
@@ -653,7 +653,7 @@ Questa è l’anteprima dell’offerta così come viene visualizzata nella relat
 Ulteriori informazioni [Anteprima offerta](../../interaction/using/creating-an-offer.md#previewing-the-offer).
 +++
 
-+++**Proposta di offerta**
++++**Proposta di offerte**
 
 *Contesto: Interazione campagna*
 
@@ -698,7 +698,7 @@ I temi di offerta sono parole chiave definite in una categoria, che consente agl
 Ulteriori informazioni [Temi di offerta](../../interaction/using/integrating-an-offer-via-the-wizard.md).
 +++
 
-+++**Peso dell&#39;offerta**
++++**Peso offerta**
 
 *Contesto: Interazione campagna*
 

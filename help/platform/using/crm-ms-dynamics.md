@@ -32,7 +32,7 @@ In Microsoft Dynamics CRM:
 1. Creare un utente di app
 1. Codifica la chiave privata
 
-[Per ulteriori informazioni, consulta questa sezione.](#config-crm-microsoft)
+[Per ulteriori informazioni, consulta questa sezione](#config-crm-microsoft)
 
 In Campaign Classic:
 1. Creare un nuovo account esterno
@@ -40,7 +40,7 @@ In Campaign Classic:
 1. Utilizza la procedura guidata di configurazione per mappare le tabelle e sincronizzare le enumerazioni
 1. Creare il flusso di lavoro di sincronizzazione
 
-[Per ulteriori informazioni, consulta questa sezione.](#configure-acc-for-microsoft)
+[Per ulteriori informazioni, consulta questa sezione](#configure-acc-for-microsoft)
 
 
 >[!CAUTION]

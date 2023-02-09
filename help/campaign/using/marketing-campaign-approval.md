@@ -309,7 +309,7 @@ Per ogni consegna, fai clic sul pulsante **[!UICONTROL Audit]** e **[!UICONTROL 
 
    ![](assets/s_user_validation_relaunch_content_validation.png)
 
-#### Assegnare la modifica del contenuto {#assign-content-editing}
+#### Assegna modifica dei contenuti {#assign-content-editing}
 
 Questa opzione ti consente di definire un utente responsabile della modifica dei contenuti, ad esempio un webmaster. Se la **[!UICONTROL Assign content editing]** nella finestra delle impostazioni di approvazione viene selezionata l’opzione , vengono aggiunti diversi passaggi di approvazione tra la creazione della consegna e la consegna dell’e-mail di notifica alla persona responsabile del contenuto:
 
@@ -349,7 +349,7 @@ Questa opzione ti consente di definire un utente responsabile della modifica dei
 
       ![](assets/s_ncs_user_validation_submit_content_available4.png)
 
-#### Approvazione dei contenuti esterni {#external-content-approval}
+#### Approvazione contenuti esterna {#external-content-approval}
 
 Questa opzione ti consente di definire un operatore esterno incaricato di approvare il rendering della consegna, ad esempio la coerenza della comunicazione del brand, i tassi, ecc. Quando il **[!UICONTROL External content approval]** nella finestra delle impostazioni di approvazione viene selezionata l’opzione , vengono aggiunti diversi passaggi di approvazione tra l’approvazione del contenuto e la consegna della notifica alla persona responsabile della campagna:
 

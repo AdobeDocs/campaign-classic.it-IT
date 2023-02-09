@@ -9,7 +9,7 @@ exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
 source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
 workflow-type: tm+mt
 source-wordcount: '2038'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -44,7 +44,7 @@ Questo documento presenta le funzionalità del connettore ACS. Le sezioni seguen
 >
 >Il connettore ACS è incluso con Campaign v7 in base al contratto di licenza. Per utilizzare il connettore ACS, assicurati di poter passare da Campaign v7 a Campaign Standard. Se non sei sicuro della versione e delle funzioni incluse, contatta l’amministratore.
 
-## Processo {#process}
+## Procedimento {#process}
 
 ### Replica dei dati {#data-replication}
 
@@ -217,11 +217,11 @@ Di seguito è riportato l’elenco dei campi dei destinatari replicati con l’i
    <td> @blackList<br /> </td> 
   </tr> 
   <tr> 
-   <td> Nessun contatto tramite e-mail<br /> </td> 
+   <td> Non contattare più tramite e-mail<br /> </td> 
    <td> @blackListEmail<br /> </td> 
   </tr> 
   <tr> 
-   <td> Nessun contatto più tramite SMS<br /> </td> 
+   <td> Non contattare più via SMS<br /> </td> 
    <td> @blackListMobile<br /> </td> 
   </tr> 
   <tr> 

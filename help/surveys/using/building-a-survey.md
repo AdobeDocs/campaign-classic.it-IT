@@ -64,7 +64,7 @@ I vari tipi di campi disponibili sono descritti in [questa sezione](../../web/us
 
 I sondaggi online si basano sulle funzionalità delle applicazioni web. Le funzionalità specifiche per i sondaggi sono descritte di seguito.
 
-### Scelta multipla {#multiple-choice}
+### Scelte multiple {#multiple-choice}
 
 Per **[!UICONTROL Multiple choice]** è possibile definire un numero minimo e massimo di selezioni. Ad esempio, questa opzione consente di forzare la selezione ad almeno **2** al massimo **4** dalle opzioni disponibili:
 

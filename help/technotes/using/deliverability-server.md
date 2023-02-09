@@ -53,7 +53,7 @@ Prima di avviare l&#39;implementazione, controlla la configurazione dell&#39;ist
 1. Controlla che la `DmRendering_cuid` il valore dell&#39;opzione è compilato.
 
    * Se l’opzione è compilata, puoi avviare l’implementazione.
-   * Se non viene compilato alcun valore, contatta [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} per ottenere il tuo CUID.
+   * Se non viene compilato alcun valore, contatta [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} per ottenere il tuo CUID.
 
    Questa opzione deve essere compilata su tutte le istanze Campaign (MKT, MID, RT, EXEC) con il valore corretto. In qualità di cliente ibrido, contatta l’Adobe per avere l’opzione impostata sulle istanze MID, RT ed EXEC.
 
@@ -61,7 +61,7 @@ In qualità di cliente on-premise, devi anche verificare che sia presente una ca
 
 1. In qualità di amministratore, effettua la connessione a [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}.
 1. Accedere al **Prodotti e servizi** sezione e controllo **Adobe Campaign** è elencato.
-Se non è possibile visualizzare **Adobe Campaign** contatta [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} per aggiungerlo.
+Se non è possibile visualizzare **Adobe Campaign** contatta [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} per aggiungerlo.
 1. Fai clic su **Adobe Campaign** e seleziona la tua organizzazione.
    **Attenzione**: Se disponi di più organizzazioni, assicurati di selezionare quella corretta. Ulteriori informazioni sulle organizzazioni [in questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
 

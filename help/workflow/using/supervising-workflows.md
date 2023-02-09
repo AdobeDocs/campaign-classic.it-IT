@@ -142,7 +142,7 @@ Questo modello deve includere:
 
    Queste variabili devono essere dichiarate nella variabile **Variabili** scheda delle proprietà del modello di consegna.
 
-   Per recuperare **il contenuto delle variabili dell’evento del flusso di lavoro**, è necessario dichiarare le variabili specifiche della consegna che verranno inizializzate con i valori restituiti dal codice JavaScript.
+   Per recuperare **il contenuto delle variabili dell’evento del flusso di lavoro**, devi dichiarare le variabili specifiche della consegna che verranno inizializzate con i valori restituiti dal codice JavaScript.
 
    Il modello di consegna ha il seguente contenuto:
 

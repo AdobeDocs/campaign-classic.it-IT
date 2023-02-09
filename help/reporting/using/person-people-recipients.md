@@ -7,7 +7,7 @@ exl-id: 69b810f3-aa8b-4ab5-95c1-831257d7fcb9
 source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
 workflow-type: tm+mt
 source-wordcount: '703'
-ht-degree: 5%
+ht-degree: 9%
 
 ---
 
@@ -52,7 +52,7 @@ Poiché John non ha aperto né cliccato nell&#39;e-mail, non appare nei log.
 
 **Calcolo intermedio:**
 
-|  | Destinatari che hanno fatto clic su | Persone che hanno fatto clic su | Destinatari che hanno aperto |
+|  | Destinatari che hanno fatto clic | Persone che hanno fatto clic | Destinatari che hanno aperto |
 |---|---|---|---|
 | John | - | - | - |
 | Totale intermedio | 0 | 0 | 0 |
@@ -71,7 +71,7 @@ L’apertura viene assegnata a un destinatario: Marie. Pertanto, Adobe Campaign 
 
 **Calcolo intermedio:**
 
-|  | Destinatari che hanno fatto clic su | Persone che hanno fatto clic su | Destinatari che hanno aperto |
+|  | Destinatari che hanno fatto clic | Persone che hanno fatto clic | Destinatari che hanno aperto |
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
@@ -93,7 +93,7 @@ Persone: Poiché il browser di questo destinatario accetta i cookie, lo stesso i
 
 **Calcolo intermedio:**
 
-|  | Destinatari che hanno fatto clic su | Persone che hanno fatto clic su | Destinatari che hanno aperto |
+|  | Destinatari che hanno fatto clic | Persone che hanno fatto clic | Destinatari che hanno aperto |
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
@@ -114,7 +114,7 @@ I registri seguenti coincidono con i due clic aperti effettuati dalla persona a 
 
 **Calcolo intermedio:**
 
-|  | Destinatari che hanno fatto clic su | Persone che hanno fatto clic su | Destinatari che hanno aperto |
+|  | Destinatari che hanno fatto clic | Persone che hanno fatto clic | Destinatari che hanno aperto |
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
@@ -138,7 +138,7 @@ I 4 clic aperti e quelli effettuati da Henry compaiono nei seguenti registri:
 
 **Calcolo intermedio:**
 
-|  | Destinatari che hanno fatto clic su | Persone che hanno fatto clic su | Destinatari che hanno aperto |
+|  | Destinatari che hanno fatto clic | Persone che hanno fatto clic | Destinatari che hanno aperto |
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |

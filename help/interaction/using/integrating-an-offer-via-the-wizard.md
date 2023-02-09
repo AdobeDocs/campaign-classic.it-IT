@@ -9,7 +9,7 @@ exl-id: 64aea8b9-7f06-4db0-a3e6-6a0e17c3ddcb
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '803'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -74,7 +74,7 @@ Per inserire le proposte di offerta in una consegna, esegui i seguenti passaggi:
 * **[!UICONTROL Category]** : cartella specifica in cui vengono ordinate le offerte. Se non viene specificata alcuna categoria, tutte le offerte contenute nell’ambiente verranno prese in considerazione dal motore di offerta, a meno che non venga selezionato un tema.
 * **[!UICONTROL Themes]** : parole chiave definite a monte nelle categorie. Questi fungono da filtro e consentono di perfezionare il numero di offerte da presentare selezionandole in un set di categorie.
 * **[!UICONTROL Number of propositions]** : numero di offerte restituite dal motore che possono essere inserite nel corpo della consegna. Se non vengono inserite nel messaggio, le offerte verranno comunque generate ma non presentate.
-* **[!UICONTROL Exclude non-eligible recipients]** : Questa opzione ti consente di attivare o disattivare l’esclusione dei destinatari per i quali non sono disponibili sufficienti offerte idonee. Il numero di proposte ammissibili può essere inferiore al numero di proposte richieste. Se questa casella è selezionata, i destinatari che non hanno abbastanza proposte verranno esclusi dalla consegna. Se non selezioni questa opzione, questi destinatari non verranno esclusi ma non avranno il numero di proposte richiesto.
+* **[!UICONTROL Exclude non-eligible recipients]** : Questa opzione consente di attivare o disattivare l’esclusione dei destinatari per i quali non sono disponibili sufficienti offerte idonee. Il numero di proposte ammissibili può essere inferiore al numero di proposte richieste. Se questa casella è selezionata, i destinatari che non hanno abbastanza proposte verranno esclusi dalla consegna. Se non selezioni questa opzione, questi destinatari non verranno esclusi ma non avranno il numero di proposte richiesto.
 * **[!UICONTROL Do not display anything if no offer is selected]** : questa opzione ti consente di scegliere come verrà elaborato il messaggio nel caso in cui una delle proposte non esista. Quando questa casella è selezionata, la rappresentazione della proposta mancante non viene visualizzata e nel messaggio per la proposta non verrà visualizzato alcun contenuto. Se la casella non è selezionata, il messaggio stesso viene annullato durante l’invio e i destinatari non riceveranno più messaggi.
 
 ### Inserimento di una proposta di offerta in una consegna {#inserting-an-offer-proposition-into-a-delivery}

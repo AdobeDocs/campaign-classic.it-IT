@@ -76,7 +76,7 @@ Costi hardware e amministrativi più elevati.
 Negli esempi seguenti, i parametri dell’istanza sono:
 
 * Nome dell’istanza: demo
-* Maschera DNS: tracking.campaign.net*, console.campaign.net* (il server applicazioni gestisce gli URL per le connessioni e i rapporti della console client e per le pagine mirror e le pagine di annullamento dell’abbonamento)
+* Maschera DNS: tracking.campaign.net&#42;, console.campaign.net&#42; (l&#39;application server gestisce gli URL per le connessioni e i rapporti della console client e per le pagine mirror e le pagine di annullamento dell&#39;abbonamento)
 * Lingua: Inglese
 * Database: campagna:demo@dbsrv
 

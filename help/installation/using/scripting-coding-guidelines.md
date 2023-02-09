@@ -9,7 +9,7 @@ exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
 source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
 source-wordcount: '748'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ## Scripting
 
-Per ulteriori informazioni, consulta [Documentazione JSAPI per Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
+Per ulteriori informazioni, consulta [Documentazione JSAPI per Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=it).
 
 Se esegui lo script utilizzando workflow, applicazioni web, jssp, segui queste best practice:
 
@@ -56,7 +56,7 @@ Per evitare iniezioni SQL, è necessario aggiungere le funzioni SQL all&#39;inse
 >
 >Se utilizzi una build precedente a 8140, la variabile **XtkPassUnknownSQLFunctionsToRDBMS** L&#39;opzione potrebbe essere impostata su &quot;1&quot;. Se desideri proteggere il database, elimina questa opzione (o impostala su &quot;0&quot;).
 
-Se si utilizza l&#39;input dell&#39;utente per creare filtri in query o istruzioni SQL, è sempre necessario eseguirne l&#39;escape (fare riferimento a [Documentazione JSAPI per Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html) - Protezione dei dati: funzioni di escape). Queste funzioni sono:
+Se si utilizza l&#39;input dell&#39;utente per creare filtri in query o istruzioni SQL, è sempre necessario eseguirne l&#39;escape (fare riferimento a [Documentazione JSAPI per Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=it) - Protezione dei dati: funzioni di escape). Queste funzioni sono:
 
 * NL.XML.escape(data)
 * NL.SQL.escape(data)

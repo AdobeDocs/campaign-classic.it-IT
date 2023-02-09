@@ -7,7 +7,7 @@ exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
 source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
 workflow-type: tm+mt
 source-wordcount: '2374'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -180,9 +180,9 @@ I seguenti indicatori vengono aggiornati automaticamente durante l&#39;esecuzion
 * Tasso di risposta del gruppo di controllo: **dProofReactRate**. Tasso di risposta del gruppo di controllo delle ipotesi.
 * Entrate totali della popolazione contattata: **dContactReactTotalAmount**. Entrate totali dei contatti mirati nell&#39;ipotesi.
 * Entrate medie del gruppo di controllo: **dContactReactAvgAmount**. Entrate medie dei contatti del gruppo di controllo mirato nell&#39;ipotesi.
-* Entrate totali del gruppo di controllo: **dProofReactTotalAmount**. Entrate totali del gruppo di controllo delle ipotesi.
+* Entrate totali del gruppo di controllo: **dProofReactTotalAmount**. Ricavi totali del gruppo di controllo dell’ipotesi.
 * Entrate medie del gruppo di controllo: **dReactAvgAmount**. Entrate medie del gruppo di controllo delle ipotesi.
-* Margine totale per contatto: **dContactReactTotalMargin**. Margine totale per contatto oggetto dell&#39;ipotesi.
+* Margine totale per contatto: **dContactReactTotalMargin**. Margine totale per contatto target dell’ipotesi.
 * Margine medio per contatto: **dContactReactAvgMargin**. Margine medio per contatto oggetto dell&#39;ipotesi.
 * Margine totale del gruppo di controllo: **dProofReactTotalMargin**. Margine totale del gruppo di controllo oggetto dell&#39;ipotesi.
 * Margine medio del gruppo di controllo: **dProofReactAvgMargin**. Margine medio del gruppo di controllo oggetto dell&#39;ipotesi.

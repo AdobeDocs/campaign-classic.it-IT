@@ -7,7 +7,7 @@ exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
 source-git-commit: d59e9f55275bac303a5ed1450bb28ef7fa0f84cd
 workflow-type: tm+mt
 source-wordcount: '1502'
-ht-degree: 4%
+ht-degree: 11%
 
 ---
 
@@ -106,7 +106,7 @@ Ad esempio, se pianifichi l’esecuzione automatica di una consegna alle 8 ora d
 
 ![](assets/s_ncs_user_email_del_plan_calendar_timezone.png)
 
-## Invia utilizzando più onde {#sending-using-multiple-waves}
+## Invia in più scaglioni {#sending-using-multiple-waves}
 
 Per bilanciare il carico, puoi dividere le consegne in più batch. Configura il numero di batch e la loro proporzione rispetto all’intera consegna.
 
@@ -188,9 +188,9 @@ Quando la consegna è stata avviata, i messaggi (ed eventuali tentativi) possono
 
 ![](assets/s_ncs_user_email_del_valid_period.png)
 
-* La **[!UICONTROL Delivery duration]** consente di immettere il limite per i tentativi di consegna globali. Questo significa che Adobe Campaign invia i messaggi a partire dalla data di inizio e quindi, per i messaggi che restituiscono un errore, vengono eseguiti tentativi regolari e configurabili fino al raggiungimento del limite di validità.
+* La **[!UICONTROL Delivery duration]** consente di immettere il limite per i tentativi di consegna globali. Questo significa che Adobe Campaign invia i messaggi a partire dalla data di inizio e quindi, per i messaggi che restituiscono un errore, vengono eseguiti nuovi tentativi regolari e configurabili fino al raggiungimento del limite di validità.
 
-   Puoi anche scegliere di specificare le date. A questo scopo, seleziona **[!UICONTROL Explicitly set validity dates]**. In questo caso, le date del limite di consegna e validità ti consentono anche di specificare l’ora. L’ora corrente viene utilizzata per impostazione predefinita, ma puoi modificarla direttamente nel campo di input.
+   Puoi anche scegliere di specificare le date. A questo scopo, seleziona **[!UICONTROL Explicitly set validity dates]**. In questo caso, per le date di consegna e del limite validità puoi anche specificare l’ora. Per impostazione predefinita viene utilizzata l’ora corrente, ma puoi modificarla direttamente nel campo di input.
 
    >[!IMPORTANT]
    >

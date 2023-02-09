@@ -29,7 +29,7 @@ _operation (stringa), advanced (booleano), applyIf (stringa), autoIncrement (boo
 
 `<element>`
 
-## Bambini {#children}
+## Elementi figli {#children}
 
 `<help>`
 
@@ -145,14 +145,14 @@ La sequenza in cui `<attribute>` gli elementi sono definiti in un `<srcschema>` 
    * float
    * html
    * int64
-   * collegamento
+   * link
    * long
    * promemoria
    * MNTOKEN
    * percentuale
    * primarykey
    * short
-   * string
+   * stringa
    * orario
    * timespan
    * uuid

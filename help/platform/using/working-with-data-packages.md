@@ -9,7 +9,7 @@ exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
 source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
 workflow-type: tm+mt
 source-wordcount: '2442'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -255,7 +255,7 @@ In **[!UICONTROL Content]** fai clic sulla scheda **[!UICONTROL Add]** per selez
 
 ![](assets/packagedefinition_addentities.png)
 
-Le entità possono essere aggiunte a una definizione di pacchetto direttamente dalla loro posizione nell’istanza. Per farlo, segui la procedura indicata di seguito:
+Le entità possono essere aggiunte a una definizione di pacchetto direttamente dalla loro posizione nell’istanza. A tale scopo, segui la procedura indicata di seguito:
 
 1. Fai clic con il pulsante destro del mouse sull’entità desiderata, quindi seleziona **[!UICONTROL Actions > Export in a package]**.
 

@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Gestire gli abbonamenti
-description: Gestire gli abbonamenti
+title: Gestire le iscrizioni
+description: Gestire le iscrizioni
 feature: Subscriptions
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
@@ -11,7 +11,7 @@ ht-degree: 2%
 
 ---
 
-# Gestire gli abbonamenti{#managing-subscriptions}
+# Gestire le iscrizioni{#managing-subscriptions}
 
 ![](../../assets/common.svg)
 

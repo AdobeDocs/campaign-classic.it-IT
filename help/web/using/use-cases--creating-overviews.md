@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: '"Casi d’uso: creare panoramiche"'
-description: '"Casi d’uso: creare panoramiche"'
+title: "Casi d’uso: creare panoramiche"
+description: "Casi d’uso: creare panoramiche"
 feature: Web Apps
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
 source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a

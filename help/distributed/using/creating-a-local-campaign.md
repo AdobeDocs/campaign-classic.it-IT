@@ -45,7 +45,7 @@ Nella finestra della campagna, fai clic su **[!UICONTROL Edit]** , quindi fai cl
 
 ![](assets/mkt_distr_4.png)
 
-### Interfaccia web {#web-interface}
+### Interfaccia Web {#web-interface}
 
 In **Marketing distribuito** È possibile scegliere il tipo di interfaccia Web e specificare i valori e i parametri predefiniti da immettere quando un&#39;entità locale inserisce un ordine.
 

@@ -24,7 +24,7 @@ Per ogni consegna, puoi definire diversi tipi di popolazioni target:
 
 ## Selezionare i destinatari principali della consegna {#selecting-the-main-target}
 
-Nella maggior parte dei casi, la destinazione principale viene estratta dal database Adobe Campaign (modalità predefinita). Tuttavia, i destinatari possono anche essere memorizzati in un file esterno. Ulteriori informazioni in [questa sezione](steps-defining-the-target-population.md#selecting-external-recipients).
+Nella maggior parte dei casi, la destinazione principale viene estratta dal database Adobe Campaign (modalità predefinita). Tuttavia, i destinatari possono anche essere memorizzati in un file esterno. Per ulteriori informazioni, consulta [questa sezione](steps-defining-the-target-population.md#selecting-external-recipients).
 
 Per selezionare i destinatari di una consegna, effettua le seguenti operazioni:
 

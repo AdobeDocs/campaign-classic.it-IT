@@ -61,7 +61,7 @@ I passaggi seguenti per modificare un singolo punto di dati offrono un esempio s
 
    ![](assets/acs_connect_profile_sync_03.png)
 
-1. Conferma che il nome del destinatario sia stato aggiornato in Campaign Standard. Per scoprire dove trovare i profili in Campaign Standard, consulta [Nozioni di base sulla navigazione](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
+1. Conferma che il nome del destinatario sia stato aggiornato in Campaign Standard. Per scoprire dove trovare i profili in Campaign Standard, consulta [Nozioni di base sulla navigazione](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=it).
 
    ![](assets/acs_connect_profile_sync_04.png)
 
@@ -174,6 +174,6 @@ Segui le istruzioni in [Creare un flusso di lavoro](#creating-a-workflow) e [Cre
 
    ![](assets/acs_connect_profile_sync_22.png)
 
-1. Vai a Campaign Standard e apri i dettagli del profilo del destinatario. Conferma che venga visualizzata una casella di controllo accanto a **[!UICONTROL No longer contact (by any channel)]**. Per scoprire dove trovare i profili in Campaign Standard, consulta [Nozioni di base sulla navigazione](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
+1. Vai a Campaign Standard e apri i dettagli del profilo del destinatario. Conferma che venga visualizzata una casella di controllo accanto a **[!UICONTROL No longer contact (by any channel)]**. Per scoprire dove trovare i profili in Campaign Standard, consulta [Nozioni di base sulla navigazione](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=it).
 
    ![](assets/acs_connect_profile_sync_23.png)

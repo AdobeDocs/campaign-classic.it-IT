@@ -9,7 +9,7 @@ exl-id: c0cb4efa-cae9-4312-88fb-738857a89595
 source-git-commit: e88ed7a5710f9ec8713d9e7151d2fd4904097990
 workflow-type: tm+mt
 source-wordcount: '391'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -139,7 +139,7 @@ Vengono visualizzate le seguenti informazioni:
 
 Il server Adobe Campaign definisce un accesso tecnico denominato **interno** che ha tutti i diritti su tutte le istanze. Subito dopo l&#39;installazione, l&#39;accesso non dispone di una password. È obbligatorio definirne uno.
 
-Ulteriori informazioni in [questa sezione](../../installation/using/configuring-campaign-server.md#internal-identifier).
+Per ulteriori informazioni, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
 ## Avvio dei servizi Adobe Campaign {#starting-adobe-campaign-services}
 

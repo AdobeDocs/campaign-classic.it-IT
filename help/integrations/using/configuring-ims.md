@@ -58,7 +58,7 @@ Immetti le seguenti informazioni:
 
    La **[!UICONTROL Callback server]** l&#39;indirizzo deve essere specificato in **https**. Questo campo corrisponde all’URL di accesso dell’istanza Adobe Campaign.
 
-* ID organizzazione: per trovare l&#39;ID organizzazione, fai riferimento a [questa pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html){_blank}.
+* ID organizzazione: per trovare l&#39;ID organizzazione, fai riferimento a [questa pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=it){_blank}.
 * Maschera associazione: questo campo ti consente di definire la sintassi che consentirà la sincronizzazione dei nomi di configurazione in Enterprise Dashboard con i gruppi in Adobe Campaign. Se utilizzi la sintassi &quot;Campaign - tenant_id - (.&#42;)&quot;, il gruppo di sicurezza creato in Adobe Campaign verrà collegato al nome di configurazione &quot;Campaign - tenant_id - internal_name&quot; nella dashboard di Enterprise.
 
    >[!CAUTION]

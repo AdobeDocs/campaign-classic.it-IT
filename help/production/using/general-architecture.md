@@ -55,4 +55,4 @@ La distribuzione dei moduli su diverse macchine offre una grande flessibilità d
 | 6666/udp (locale) | Adobe Campaign: Slogd | SÌ |
 | 8005/tcp (locale) | Adobe Campaign: modulo web | SÌ |
 | 8080/tcp | Adobe Campaign: modulo web (tomcat) | SÌ |
-| 777 | Server statistiche (server stat) | SÌ |
+| 7777 | Server statistiche (server stat) | SÌ |

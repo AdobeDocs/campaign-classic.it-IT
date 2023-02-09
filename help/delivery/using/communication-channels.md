@@ -7,7 +7,7 @@ exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
 source-wordcount: '1204'
-ht-degree: 19%
+ht-degree: 20%
 
 ---
 
@@ -21,7 +21,7 @@ Le funzionalità di base includono il targeting, la definizione e la personalizz
 
 >[!NOTE]
 >
->Adobe Campaign offre una serie di strumenti per monitorare il recapito messaggi e ottimizzare l’invio delle e-mail. Ulteriori informazioni in [questa sezione](about-deliverability.md).
+>Adobe Campaign offre una serie di strumenti per monitorare il recapito messaggi e ottimizzare l’invio delle e-mail. Per ulteriori informazioni, consulta [questa sezione](about-deliverability.md).
 
 L’invio della consegna può essere automatizzato preparando una consegna e/o inviandola nel processo di un flusso di lavoro. Per ulteriori informazioni sulle attività di tipo consegna nei flussi di lavoro, consulta [questa sezione](../../workflow/using/about-action-activities.md).
 

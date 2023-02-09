@@ -7,7 +7,7 @@ exl-id: f70fceba-4bbf-4f33-8746-e4405a1cdae6
 source-git-commit: c929557ee9f5467f9c3b8eb1ed25fae5399820ba
 workflow-type: tm+mt
 source-wordcount: '5385'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -82,7 +82,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->Questa build è stata richiamata. Per favore [aggiornamento alla build più recente](../../production/using/build-upgrade.md) o contatti [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Questa build è stata richiamata. Per favore [aggiornamento alla build più recente](../../production/using/build-upgrade.md) o contatti [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Miglioramenti**
 
@@ -104,7 +104,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->Questa build è stata richiamata. Per favore [aggiornamento alla build più recente](../../production/using/build-upgrade.md) o contatti [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Questa build è stata richiamata. Per favore [aggiornamento alla build più recente](../../production/using/build-upgrade.md) o contatti [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Novità**
 
@@ -249,7 +249,7 @@ Queste modifiche dell&#39;indice possono comportare un aumento del tempo necessa
 
 >[!CAUTION]
 >
->Questa build è stata richiamata. Per favore [aggiornamento alla build più recente](../../production/using/build-upgrade.md) o contatti [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Questa build è stata richiamata. Per favore [aggiornamento alla build più recente](../../production/using/build-upgrade.md) o contatti [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Novità**
 
@@ -262,7 +262,7 @@ Queste modifiche dell&#39;indice possono comportare un aumento del tempo necessa
  </thead> 
  <tbody> 
   <tr> 
-   <td> Proiezione query<br /> </td> 
+   <td> Query banding<br /> </td> 
    <td> <p>Quando più utenti di Campaign si collegano allo stesso account esterno della Teradata FDA, ora puoi passare una banda di query (coppie chiave/valore) specifica per ogni utente. Ogni volta che un utente di Campaign esegue una query sul database di Teradata, Adobe Campaign è ora in grado di inviare i metadati associati all’utente. Questi dati, costituiti da un elenco di chiavi e valori, possono quindi essere utilizzati dagli amministratori di Teradata a scopo di controllo o per gestire i diritti di accesso, ad esempio.</p><p>Per ulteriori informazioni, consulta la <a href="../../installation/using/external-accounts.md">documentazione dettagliata</a>.</p> </td>
   </tr> 
  </tbody> 
@@ -284,7 +284,7 @@ Queste modifiche dell&#39;indice possono comportare un aumento del tempo necessa
 
 **Evoluzioni tecniche**
 
-Proiezione query
+Query banding
 
 Una chiave specifica (PROXYUSER o PROXYROLE) viene utilizzata per associare un utente o un ruolo di Teradata a un utente di Campaign. È stata aggiunta una nuova autorizzazione per utilizzare questo utente/ruolo proxy. È necessario aggiungere il diritto di accesso GRANT CONNECT THROUGH all’account del database (quello definito nell’account esterno Teradata).
 
@@ -305,7 +305,7 @@ Per ulteriori informazioni sul binding delle query, consulta questi articoli:
 
 >[!CAUTION]
 >
->Questa build è stata richiamata. Per favore [aggiornamento alla build più recente](../../production/using/build-upgrade.md) o contatti [supporto tecnico](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Questa build è stata richiamata. Per favore [aggiornamento alla build più recente](../../production/using/build-upgrade.md) o contatti [supporto tecnico](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Novità**
 
@@ -323,7 +323,7 @@ Per ulteriori informazioni sul binding delle query, consulta questi articoli:
   </tr> 
   <tr> 
    <td> Supporto di Windows Server 2016<br /> </td> 
-   <td> Adobe Campaign è ora compatibile con Windows Server 2016. Fai riferimento a <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">Matrice di compatibilità di Campaign Classic</a>.<br /> </td> 
+   <td> Adobe Campaign è ora compatibile con Windows Server 2016. Fai riferimento a <a href="https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html">Matrice di compatibilità di Campaign Classic</a>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -340,7 +340,7 @@ Per i clienti esistenti, il comportamento di questa funzione non viene modificat
 
 decryptPassword
 
-La **decryptPassword** è stata aggiunta la funzione . Consente di decrittografare una password memorizzata in un account esterno. Fai riferimento a [JSAPI](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) documentazione per ulteriori informazioni.
+La **decryptPassword** è stata aggiunta la funzione . Consente di decrittografare una password memorizzata in un account esterno. Fai riferimento a [JSAPI](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html) documentazione per ulteriori informazioni.
 
 API file
 

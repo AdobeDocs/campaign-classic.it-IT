@@ -491,7 +491,7 @@ Esempio nel campo &quot;Genere&quot;:
 <input xpath="@gender" readOnly="true"/>
 ```
 
-## Pulsante di scelta {#radio-button}
+## Pulsante di opzione {#radio-button}
 
 Un pulsante di scelta consente di scegliere tra diverse opzioni. La **`<input>`** vengono utilizzati per elencare le opzioni possibili e **checkedValue** attributo specifica il valore associato alla scelta.
 

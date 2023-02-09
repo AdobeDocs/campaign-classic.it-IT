@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: '"Casi d’uso: moduli web"'
-description: '"Casi d’uso: moduli web"'
+title: "Casi d’uso: moduli web"
+description: "Casi d’uso: moduli web"
 feature: Web Forms
 exl-id: 7aa4646d-1325-47c2-b553-6fe375c48973
 source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
@@ -76,7 +76,7 @@ Il flusso di lavoro del modulo web includerà le seguenti attività:
 
 ![](assets/s_ncs_admin_survey_double-opt-in_sample_4c.png)
 
-Per farlo, segui la procedura indicata di seguito:
+A tale scopo, segui la procedura indicata di seguito:
 
 1. Creare un modulo Web e scegliere il modello **[!UICONTROL Newsletter subscription (subNewsletter)]**.
 

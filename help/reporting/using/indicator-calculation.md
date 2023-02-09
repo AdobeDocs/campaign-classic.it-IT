@@ -7,7 +7,7 @@ exl-id: 52ca1595-16b3-4323-9122-d1ac13c08147
 source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
 workflow-type: tm+mt
 source-wordcount: '2972'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
@@ -121,7 +121,7 @@ Questo rapporto si basa sul **[!UICONTROL Delivery and tracking statistics]** ta
    <td> percent(@value,@totalErrors)<br /> </td> 
   </tr> 
   <tr> 
-   <td> Suddivisione<br /> </td> 
+   <td> Raggruppamento<br /> </td> 
    <td> -<br /> </td> 
    <td> Percentuale di errori di questo tipo rispetto al numero totale di messaggi elaborati.<br /> </td> 
    <td> percent(@value,@totalProcessed)<br /> </td> 
@@ -293,7 +293,7 @@ Questo rapporto si basa sul **[!UICONTROL Delivery]** (nms:delivery), **[!UICONT
    <td> Sum(iIf([url/@category]="Valore del tipo di social network",@totalClicks,0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Suddivisione<br /> </td> 
+   <td> Raggruppamento<br /> </td> 
    <td> @percent<br /> </td> 
    <td> Percentuale del numero di azioni di questo social network rispetto al numero totale di azioni.<br /> </td> 
    <td> percent(@forward, sum(@forward))<br /> </td> 
@@ -326,7 +326,7 @@ Questo rapporto si basa sul **[!UICONTROL Delivery]** (nms:delivery), **[!UICONT
    <td> Conteggio<br /> </td> 
   </tr> 
   <tr> 
-   <td> Suddivisione<br /> </td> 
+   <td> Raggruppamento<br /> </td> 
    <td> @percentOpen<br /> </td> 
    <td> Percentuale del numero di aperture su questo social network rispetto al numero totale di aperture.<br /> </td> 
    <td> percent(@open, sum(@open))<br /> </td> 
@@ -513,7 +513,7 @@ Questo rapporto si basa sul **[!UICONTROL Delivery and tracking statistics]** (n
    <td> sum([properties/@toDeliver])<br /> </td> 
   </tr> 
   <tr> 
-   <td> Completato<br /> </td> 
+   <td> Operazione riuscita<br /> </td> 
    <td> @successWithoutSeeds<br /> </td> 
    <td> Numero di messaggi per i quali il campo "indirizzo di seed" è uguale a "No" e con uno stato uguale a "Preso in considerazione dal fornitore di servizi" o "Inviato" o "Ricevuto sul cellulare".<br /> </td> 
    <td> sum([indicators/@success])<br /> </td> 
@@ -543,7 +543,7 @@ Questo rapporto si basa sul **[!UICONTROL Delivery and tracking statistics]** (n
    <td> count(Iif([url/@type]=6, @id, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Stima dei progressi<br /> </td> 
+   <td> Stima degli inoltri<br /> </td> 
    <td> @forward<br /> </td> 
    <td> Differenza tra il numero di persone distinte e il numero di destinatari distinti che hanno fatto clic almeno una volta nell’e-mail.<br /> </td> 
    <td> @personClick - @recipientClick<br /> </td> 
@@ -621,7 +621,7 @@ Questo rapporto si basa sul **[!UICONTROL Delivery and tracking statistics]** (n
    <td> Sum(Iif([url/@type]=5, webTrackingLog/@amount, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Importo medio della transazione<br /> </td> 
+   <td> Importo medio delle transazioni<br /> </td> 
    <td> -<br /> </td> 
    <td> Rapporto tra l'importo totale e il numero di transazioni.<br /> </td> 
    <td> div(@amount, @transaction)<br /> </td> 
@@ -769,7 +769,7 @@ Questo rapporto si basa sul **[!UICONTROL Delivery]** tabella (nms:delivery).
    <td> sum([properties/@toDeliver])<br /> </td> 
   </tr> 
   <tr> 
-   <td> Completato<br /> </td> 
+   <td> Operazione riuscita<br /> </td> 
    <td> @success<br /> </td> 
    <td> Numero di messaggi elaborati con successo.<br /> </td> 
    <td> sum([indicators/@success])<br /> </td> 
@@ -781,7 +781,7 @@ Questo rapporto si basa sul **[!UICONTROL Delivery]** tabella (nms:delivery).
    <td> sum([indicators/@errore])<br /> </td> 
   </tr> 
   <tr> 
-   <td> Nuova quarantena<br /> </td> 
+   <td> Nuove quarantene<br /> </td> 
    <td> @newQuarantine<br /> </td> 
    <td> Numero di indirizzi messi in quarantena dopo un errore di consegna (dominio sconosciuto, dominio non valido).<br /> </td> 
    <td> sum([indicators/@newQuarantine])<br /> </td> 
@@ -793,7 +793,7 @@ Questo rapporto si basa sul **[!UICONTROL Delivery]** tabella (nms:delivery).
 
 Questo rapporto si basa sulla consegna (nms:delivery) e **[!UICONTROL Consolidated tracking]** (nms:trackingStats) tabelle.
 
-Questo rapporto mostra il contenuto del messaggio (HTML e/o testo) con, su ogni collegamento, la percentuale di clic sui collegamenti. I blocchi di personalizzazione per i collegamenti di annullamento dell’abbonamento e i collegamenti alle pagine mirror vengono presi in considerazione nei clic cumulati totali, ma non vengono visualizzati nel rapporto.
+Questo rapporto mostra il contenuto del messaggio (HTML e/o testo) e la percentuale di clic per ogni collegamento. I blocchi di personalizzazione per i collegamenti di annullamento dell’abbonamento e i collegamenti alle pagine mirror vengono presi in considerazione nei clic cumulati totali, ma non vengono visualizzati nel rapporto.
 
 ## Tracking delle statistiche {#tracking-statistics-1}
 
@@ -822,7 +822,7 @@ Questo rapporto si basa sul **[!UICONTROL Delivery]** tabella (nms:delivery).
    <td> sum(Iif([url/@type] = 1, @totalClicks, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Aperto<br /> </td> 
+   <td> Apri<br /> </td> 
    <td> @opens<br /> </td> 
    <td> Somma di tutti @totalClicks con una chiave primaria URL uguale a 1.<br /> </td> 
    <td> sum(Iif([@url-id] = 1, @totalClicks, 0))<br /> </td> 
@@ -830,7 +830,7 @@ Questo rapporto si basa sul **[!UICONTROL Delivery]** tabella (nms:delivery).
  </tbody> 
 </table>
 
-## Statistiche di consegna {#delivery-statistics-1}
+## Statistiche consegna {#delivery-statistics-1}
 
 Questo rapporto si basa sul **[!UICONTROL Delivery and tracking statistics]** tabella (nms:deliveryLogStats).
 
@@ -857,13 +857,13 @@ Questo rapporto si basa sul **[!UICONTROL Delivery and tracking statistics]** ta
    <td> indicators/@success<br /> </td> 
   </tr> 
   <tr> 
-   <td> Rimbalzi netti<br /> </td> 
+   <td> Mancati recapiti permanenti<br /> </td> 
    <td> @hardBounce<br /> </td> 
    <td> Numero totale di messaggi con uno stato uguale a "Non riuscito" e un motivo uguale a "Utente sconosciuto".<br /> </td> 
    <td> @unknownUser<br /> </td> 
   </tr> 
   <tr> 
-   <td> Rimbalzi morbidi<br /> </td> 
+   <td> Mancati recapiti non permanenti<br /> </td> 
    <td> @softBounce<br /> </td> 
    <td> Totale di tutti i messaggi con uno stato uguale a "Non riuscito" e un motivo uguale a "Non raggiungibile", "Posta in arrivo piena", "dominio non valido", "account disabilitato", "non connesso" o "rifiutato"<br /> </td> 
    <td> @unreachable + @mailBoxFull + @InvalidDomain + @disabled + @notConnected + @rifiutato<br /> </td> 
@@ -889,7 +889,7 @@ Questo rapporto si basa sul **[!UICONTROL Delivery and tracking statistics]** ta
  </tbody> 
 </table>
 
-## Suddivisione delle aperture {#breakdown-of-opens-1}
+## Breakdown delle aperture {#breakdown-of-opens-1}
 
 Questo rapporto si basa su **Consegne** (nms:delivery) e **Registri di tracciamento** (nms:trackingLogRcp) tabelle.
 

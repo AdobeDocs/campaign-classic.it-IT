@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Rapporti di consegna
-description: Rapporti di consegna
+title: Rapporti sulle consegne
+description: Rapporti sulle consegne
 feature: Reporting
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
 source-git-commit: 64d97c7879320296a5f8efc5bb5bc2bea8663c08
 workflow-type: tm+mt
 source-wordcount: '1451'
-ht-degree: 2%
+ht-degree: 7%
 
 ---
 
-# Rapporti di consegna {#delivery-reports}
+# Rapporti sulle consegne {#delivery-reports}
 
 ![](../../assets/common.svg)
 
@@ -44,7 +44,7 @@ Puoi tracciare l’esecuzione delle consegne tramite vari rapporti accessibili d
 
 ## Indicatori di tracciamento {#tracking-indicators}
 
-Questo rapporto combina gli indicatori chiave per tenere traccia del comportamento dei destinatari alla ricezione della consegna. Consente l&#39;accesso alle statistiche di consegna e ricezione, ai tassi di apertura e click-through, ai flussi di clic generati, al web tracking e alla condivisione delle attività sui social network.
+Questo rapporto combina gli indicatori chiave per tenere traccia del comportamento dei destinatari alla ricezione della consegna. Consente di accedere alle statistiche di consegna e ricezione, ai tassi di apertura e click-through, ai flussi clic generati, al tracciamento web e alle attività di condivisione sui social network.
 
 >[!NOTE]
 >
@@ -174,7 +174,7 @@ Questa sezione include i seguenti indicatori:
 
 ## Hot click {#hot-clicks}
 
-Questo rapporto mostra il contenuto del messaggio (HTML e/o testo) con, su ogni collegamento, la percentuale di clic sui collegamenti. I blocchi di personalizzazione per l’annullamento dell’abbonamento, i collegamenti alle pagine mirror e i collegamenti alle offerte vengono presi in considerazione nei clic totali cumulati, ma non vengono visualizzati nel rapporto.
+Questo rapporto mostra il contenuto del messaggio (HTML e/o testo) e la percentuale di clic per ogni collegamento. I collegamenti presenti nei blocchi di personalizzazione per l’annullamento dell’iscrizione, per le pagine mirror e per le offerte vengono presi in considerazione nei clic totali cumulati, ma non vengono visualizzati nel rapporto.
 
 >[!NOTE]
 >

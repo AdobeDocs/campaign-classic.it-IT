@@ -93,7 +93,7 @@ Identificatore del contenuto da utilizzare se la **[!UICONTROL Specified in the 
 
 * contentId
 
-   Identificatore del contenuto.
+   Identificatore di contenuto.
 
 * nomefile
 

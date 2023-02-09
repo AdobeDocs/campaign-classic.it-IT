@@ -7,7 +7,7 @@ exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 5%
+ht-degree: 8%
 
 ---
 
@@ -42,7 +42,7 @@ Per ulteriori dettagli sui diversi errori di consegna riscontrabili e su come ri
  </thead> 
  <tbody> 
   <tr> 
-   <td> Invio<br /> </td> 
+   <td> Inviato<br /> </td> 
    <td> La consegna è stata inviata correttamente al provider del messaggio (ma il destinatario non l’ha necessariamente ricevuta).<br /> </td> 
   </tr> 
   <tr> 
@@ -66,15 +66,15 @@ Per ulteriori dettagli sui diversi errori di consegna riscontrabili e su come ri
    <td> La consegna è stata annullata da un operatore.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Presa in considerazione dal fornitore di servizi<br /> </td> 
+   <td> Considerato dal fornitore di servizi<br /> </td> 
    <td> Il provider di servizi SMS ha ricevuto la consegna.<br /> Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento al <a href="sending-with-enhanced-mta.md" target="_blank">MTA avanzato</a>, il messaggio è stato inviato correttamente da Campaign all’MTA avanzato.</td> 
   </tr> 
   <tr> 
-   <td> Ricevuto su cellulare<br /> </td> 
+   <td> Ricevuto su dispositivo mobile<br /> </td> 
    <td> Il destinatario ha ricevuto l’SMS sul proprio dispositivo mobile.<br /> </td> 
   </tr>
   <tr> 
-   <td> Inviato al provider di servizi<br /> </td> 
+   <td> Inviato al fornitore di servizi<br /> </td> 
    <td> La consegna è stata inviata al provider di servizi SMS ma non è ancora stata ricevuta.<br />
    </td> 
   </tr> 

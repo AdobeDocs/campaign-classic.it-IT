@@ -37,7 +37,7 @@ In qualità di cliente in hosting, la maggior parte dei passaggi di installazion
 * Configura le opzioni di Campaign: fare riferimento [a questa sezione](../../installation/using/configuring-campaign-options.md).
 * Configurare i connettori di gestione delle relazioni con i clienti: fare riferimento [a questa sezione](../../platform/using/crm-connectors.md).
 
-## On-Premise
+## On-premise
 
 Adobe Campaign può essere implementato on-premise: tutti i componenti di Adobe Campaign, inclusa l’interfaccia utente, il motore di gestione dell’esecuzione e il database, risiedono sul sito nel data center del cliente. In questo modello di implementazione, il cliente gestisce tutti gli aggiornamenti e gli aggiornamenti software e hardware e un amministratore di database dedicato deve eseguire attività di manutenzione e ottimizzazione per garantire la gestione delle istanze di Campaign.
 

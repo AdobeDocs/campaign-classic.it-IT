@@ -9,7 +9,7 @@ exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
 source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
 workflow-type: tm+mt
 source-wordcount: '3991'
-ht-degree: 1%
+ht-degree: 6%
 
 ---
 
@@ -297,7 +297,7 @@ La **[!UICONTROL Administration / Platform / Options]** node ti consente di conf
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_DefaultIgnoredImage</span> <br /> </td> 
-   <td> Elenco di maschere URL per le immagini saltate durante il caricamento.<br /> </td> 
+   <td> Elenco delle maschere URL per le immagini ignorate durante il caricamento.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImagePublishing</span> </td> 
@@ -305,7 +305,7 @@ La **[!UICONTROL Administration / Platform / Options]** node ti consente di conf
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImageSubDirectory</span> <br /> </td> 
-   <td> Cartella in cui memorizzare le immagini sul server.<br /> </td> 
+   <td> Cartella in cui devono essere archiviate le immagini sul server.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_LogoPath</span> <br /> </td> 
@@ -337,7 +337,7 @@ La **[!UICONTROL Administration / Platform / Options]** node ti consente di conf
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkFileRes_Public_URL</span> <br /> </td> 
-   <td> Nuovo URL per i file di risorse pubbliche.<br /> </td> 
+   <td> Nuovo URL per file della risorsa pubblica.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -492,11 +492,11 @@ La **[!UICONTROL Administration / Platform / Options]** node ti consente di conf
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgProcessTimeWarning</span> <br /> </td> 
-   <td> Soglia di avviso per il tempo medio di elaborazione degli eventi in tempo reale.<br /> </td> 
+   <td> Soglia di avvertenza per il tempo medio di elaborazione degli eventi in tempo reale.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgQueueAlert</span> <br /> </td> 
-   <td> Soglia di avviso per il numero medio di eventi in coda in tempo reale.<br /> </td> 
+   <td> Soglia di avviso per il numero medio di eventi in tempo reale messi in coda.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgQueueTimeAlert</span> <br /> </td> 
@@ -508,7 +508,7 @@ La **[!UICONTROL Administration / Platform / Options]** node ti consente di conf
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgQueueWarning</span> <br /> </td> 
-   <td> Soglia di avviso per il numero medio di eventi in tempo reale in coda.<br /> </td> 
+   <td> Soglia di avvertenza per il numero medio di eventi in tempo reale messi in coda.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventErrorAlert</span> <br /> </td> 
@@ -516,7 +516,7 @@ La **[!UICONTROL Administration / Platform / Options]** node ti consente di conf
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventErrorWarning</span> <br /> </td> 
-   <td> Soglia di avviso per gli errori di elaborazione degli eventi in tempo reale.<br /> </td> 
+   <td> Soglia di avvertenza per gli errori di elaborazione degli eventi in tempo reale.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventMaxQueueAlert</span> <br /> </td> 
@@ -536,11 +536,11 @@ La **[!UICONTROL Administration / Platform / Options]** node ti consente di conf
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventQueueAlert</span> <br /> </td> 
-   <td> Soglia prima della condizione critica per la coda degli eventi in tempo reale in sospeso.<br /> </td> 
+   <td> Soglia prima della condizione critica per la coda di eventi in tempo reale in sospeso.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventQueueWarning</span> <br /> </td> 
-   <td> Soglia prima dell'avviso per la coda degli eventi in sospeso in tempo reale.<br /> </td> 
+   <td> Soglia prima dell’avvertenza per la coda di eventi in tempo reale in sospeso.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventThroughputAlert</span> <br /> </td> 
@@ -548,7 +548,7 @@ La **[!UICONTROL Administration / Platform / Options]** node ti consente di conf
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventThroughputWarning</span> <br /> </td> 
-   <td> Soglia di avviso per la velocità effettiva degli eventi in tempo reale.<br /> </td> 
+   <td> Soglia di avvertenza per la velocità effettiva degli eventi in tempo reale.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMessageCenter_RoutingBatchSize</span> <br /> </td> 
@@ -677,7 +677,7 @@ La **[!UICONTROL Administration / Platform / Options]** node ti consente di conf
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkInstancePrefix</span> <br /> </td> 
-   <td> Prefisso aggiunto ai nomi interni generato automaticamente.<br /> </td> 
+   <td> Prefisso aggiunto ai nomi interni generati automaticamente.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkQuery_Schema_LineCount</span> <br /> </td> 
@@ -742,11 +742,11 @@ La **[!UICONTROL Administration / Platform / Options]** node ti consente di conf
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_EdgeServer</span> <br /> </td> 
-   <td> Server Adobe Target utilizzato per l’integrazione. Questa opzione è già selezionata per impostazione predefinita. Questo valore corrisponde al server di dominio Adobe Target, seguito dal valore /m2. Ad esempio: tt.omtrdc.net/m2.<br /> Vedi <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">questa sezione</a>.<br /> </td> 
+   <td> Server Adobe Target utilizzato per l’integrazione. Questa opzione è già selezionata per impostazione predefinita. Questo valore corrisponde al server di dominio Adobe Target, seguito dal valore /m2. Ad esempio: tt.omtrdc.net/m2.<br /><a href="../../integrations/using/configuring-the-integration-with-adobe-target.md"> Consulta questa sezione</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TenantName</span> <br /> </td> 
-   <td> Nome organizzazione Adobe Target. Questo valore corrisponde al nome del client Adobe Target.<br /> Vedi <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">questa sezione</a>.<br /> </td> 
+   <td> Nome organizzazione Adobe Target. Questo valore corrisponde al nome del client Adobe Target.<br /><a href="../../integrations/using/configuring-the-integration-with-adobe-target.md"> Consulta questa sezione</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 
@@ -816,11 +816,11 @@ La **[!UICONTROL Administration / Platform / Options]** node ti consente di conf
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">NmsExecutionInstanceId</span> <br /> </td> 
-   <td> Identificatore dell'istanza di esecuzione.<br /> </td> 
+   <td> Identificatore dell’istanza di esecuzione.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_CustomerId</span> <br /> </td> 
-   <td> Identificatore del cliente utilizzato per l'invio del report di fatturazione.<br /> </td> 
+   <td> Identificatore cliente utilizzato per l’invio del rapporto di fatturazione.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_IntranetURL</span> <br /> </td> 
@@ -857,7 +857,7 @@ La **[!UICONTROL Administration / Platform / Options]** node ti consente di conf
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_ClickFormula</span> <br /> </td> 
-   <td> Script di calcolo tracked-URL.<br /> </td> 
+   <td> Script di calcolo dell’URL tracciato.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_ExtAccount</span> <br /> </td> 
@@ -873,7 +873,7 @@ La **[!UICONTROL Administration / Platform / Options]** node ti consente di conf
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_OpenFormula</span> <br /> </td> 
-   <td> Apri script di calcolo URL.<br /> </td> 
+   <td> Apri lo script di calcolo dell’URL.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_Password</span> <br /> </td> 
@@ -987,7 +987,7 @@ La **[!UICONTROL Administration / Platform / Options]** node ti consente di conf
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_DNSearchScope</span> <br /> </td> 
-   <td> Ambito di ricerca.<br /> </td> 
+   <td> Ambito della ricerca.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_Mechanism</span> <br /> </td> 
@@ -1015,7 +1015,7 @@ La **[!UICONTROL Administration / Platform / Options]** node ti consente di conf
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsScope</span> <br /> </td> 
-   <td> Ambito di ricerca.<br /> </td> 
+   <td> Ambito della ricerca.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_Server</span> <br /> </td> 
@@ -1048,7 +1048,7 @@ La **[!UICONTROL Administration / Platform / Options]** node ti consente di conf
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersMode</span> <br /> </td> 
-   <td> Opzione che consente di specificare la modalità di invalidazione dei moduli web: locale per impostazione predefinita, utilizza i server di tracciamento se l’opzione è "tracking" e utilizza un elenco personalizzato con l’opzione "altri server".<br /> </td> 
+   <td> Opzione che consente di specificare la modalità di invalidazione dei moduli Web: locale per impostazione predefinita, utilizza server di tracciamento se l’opzione è “tracciamento” e utilizza un elenco personalizzato con l’opzione “altri server”.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersURL</span> <br /> </td> 

@@ -9,7 +9,7 @@ exl-id: c9d427da-6965-4945-90f0-d0770701d55e
 source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '431'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -57,7 +57,7 @@ I file di registro mono-instance sono elencati nella seguente tabella:
 
 Per l&#39;ottimizzazione delle prestazioni e dello storage, il file logins.log viene suddiviso in più file, uno ogni giorno (logins.yy-mm-dd.log) con un massimo di 365 file conservati. Il numero di giorni può essere modificato nel serverConf.xml, in syslogd (**maxNumberOfLoginsFiles** ). Consulta la documentazione sul [file di configurazione del server](../../installation/using/the-server-configuration-file.md#syslogd).
 
-Per impostazione predefinita, i registri sono limitati a due file da 10 MB per modulo e per istanza. Viene chiamato il secondo file: **`<modulename>`_2.log**. La dimensione dei log è quindi limitata a 2*10 MB per modulo e per istanza.
+Per impostazione predefinita, i registri sono limitati a due file da 10 MB per modulo e per istanza. Viene chiamato il secondo file: **`<modulename>`_2.log**. Le dimensioni dei tronchi sono pertanto limitate a 2&#42;10 MB per modulo e per istanza.
 
 È tuttavia possibile conservare file di dimensioni maggiori. Per attivarlo, modifica il valore della **maxFileSizeMb=&quot;10&quot;** nella **syslogd** nodo **conf/serverConf.xml** file. Questo valore rappresenta la dimensione massima in MB di un file di registro.
 

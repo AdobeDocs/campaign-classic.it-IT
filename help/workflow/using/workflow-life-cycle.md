@@ -7,7 +7,7 @@ exl-id: fceb5752-dc73-4386-8c18-c4f3e6110ca5
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 Il ciclo del flusso di lavoro prevede tre passaggi principali.
 
-* **In corso di modifica**
+* **In fase di modifica**
 
    Questa è la fase di progettazione iniziale: Quando viene creato un nuovo flusso di lavoro, il relativo stato è &quot;In corso di modifica&quot;. Il flusso di lavoro non è ancora gestito dal server e può essere modificato senza rischi.
 
@@ -25,7 +25,7 @@ Il ciclo del flusso di lavoro prevede tre passaggi principali.
 
    Una volta completata la fase di progettazione iniziale, è possibile avviare il flusso di lavoro. In questa fase, l’istanza viene gestita dal server e le singole attività vengono eseguite. Il flusso di lavoro può ancora essere modificato con alcune precauzioni.
 
-* **Finito**
+* **Completato**
 
    Un flusso di lavoro è &quot;Completato&quot; quando non sono più presenti attività in corso o quando un operatore ha esplicitamente interrotto l’istanza.
 

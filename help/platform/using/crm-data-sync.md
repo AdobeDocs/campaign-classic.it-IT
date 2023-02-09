@@ -7,7 +7,7 @@ exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
 source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
 workflow-type: tm+mt
 source-wordcount: '1536'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -190,7 +190,7 @@ Per un’esportazione, applica la seguente configurazione al **[!UICONTROL CRM C
 
 ## Configurazioni aggiuntive {#additional-configurations}
 
-### Formato dati {#data-format}
+### Formato dei dati {#data-format}
 
 Puoi convertire al volo il formato dei dati quando li importi in o dal CRM.
 
@@ -244,7 +244,7 @@ A questo scopo, esegui i seguenti passaggi:
    >
    >Il periodo di eliminazione degli elementi deve coincidere con le limitazioni specifiche del CRM. Ciò significa che per Salesforce.com, ad esempio, gli elementi cancellati più di 30 giorni fa non possono essere recuperati.
 
-## Eliminare gli oggetti nel CRM {#deleting-objects-in-the-crm}
+## Elimina oggetti nel CRM {#deleting-objects-in-the-crm}
 
 Per eliminare gli oggetti dal lato CRM, è necessario specificare la chiave primaria degli elementi remoti da eliminare.
 

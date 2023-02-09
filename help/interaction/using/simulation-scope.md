@@ -9,7 +9,7 @@ exl-id: 4f6b3de2-3fdf-441d-925d-476e20e75c6f
 source-git-commit: d835da6c7b55d9bf70b6b5dc58880718e12211d5
 workflow-type: tm+mt
 source-wordcount: '236'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -24,7 +24,7 @@ Apri **[!UICONTROL Scope]** scheda per scegliere le impostazioni.
 Sono obbligatori i seguenti elementi:
 
 * Ambiente o categoria di offerta.
-* Spazio di offerta.
+* Spazio dell’offerta.
 * Data di contatto. Le offerte non idonee alla data di contatto non vengono prese in considerazione.
 * Popolazione target.
 

@@ -7,7 +7,7 @@ exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
 source-git-commit: 2d5166c355ee090639dcc52866252bae6beb81f6
 workflow-type: tm+mt
 source-wordcount: '1666'
-ht-degree: 4%
+ht-degree: 8%
 
 ---
 
@@ -62,7 +62,7 @@ L’analisi è la fase in cui viene calcolata la popolazione target e il contenu
 
 1. Attendi il completamento dell’analisi.
 
-   Al termine dell’analisi, la sezione superiore della finestra indica se la preparazione della consegna è completa o se si sono verificati degli errori. Vengono elencati tutti i passaggi, gli avvisi e gli errori di convalida. Le icone colorate mostrano il tipo di messaggio:
+   Al termine dell’analisi, la sezione superiore della finestra indica se la preparazione della consegna è completa o se si sono verificati degli errori. Vengono elencati tutti i passaggi, le avvertenze e gli errori di convalida. Le icone colorate mostrano il tipo di messaggio:
    * L’icona blu indica un messaggio informativo.
    * L’icona gialla indica un errore di elaborazione non critico.
    * L’icona rossa indica un errore critico che impedisce l’invio della consegna.
@@ -209,7 +209,7 @@ La **[!UICONTROL Rule]** fornisce un elenco delle regole di tipologia da applica
 
 ## Modificare la modalità di approvazione {#changing-the-approval-mode}
 
-La **[!UICONTROL Analysis]** la scheda per le proprietà di consegna ti consente di selezionare la modalità di convalida. Se durante l’analisi vengono generati avvisi (ad esempio, se alcuni caratteri vengono accentuati nell’oggetto della consegna, ecc.), puoi configurare la consegna per definire se deve ancora essere eseguita o meno. Per impostazione predefinita, l’utente deve confermare l’invio di messaggi al termine della fase di analisi: questo è **manuale** convalida.
+La **[!UICONTROL Analysis]** la scheda per le proprietà di consegna ti consente di selezionare la modalità di convalida. Se durante l’analisi vengono generati avvisi (ad esempio, se alcuni caratteri vengono accentuati nell’oggetto della consegna, ecc.), puoi configurare la consegna per definire se deve ancora essere eseguita o meno. Per impostazione predefinita, l’utente deve confermare l’invio di messaggi al termine della fase di analisi: si tratta di convalida **manuale**.
 
 Seleziona un’altra modalità di approvazione dall’elenco a discesa nel campo appropriato.
 

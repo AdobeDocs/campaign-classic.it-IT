@@ -53,7 +53,7 @@ Per definire il periodo di idoneità dell’offerta, utilizza gli elenchi a disc
 
 Al di fuori di queste date, l’offerta non verrà selezionata dal motore di interazione. Se hai configurato anche le date di idoneità per la categoria di offerta, verrà applicato il periodo più restrittivo.
 
-### Filtri sulla destinazione {#filters-on-the-target}
+### Filtri sul target {#filters-on-the-target}
 
 Puoi applicare filtri alla destinazione dell’offerta.
 
@@ -65,7 +65,7 @@ Se sono già stati creati filtri predefiniti, puoi selezionarli dall’elenco de
 
 ![](assets/offer_eligibility_create_004.png)
 
-### Peso dell&#39;offerta {#offer-weight}
+### Peso offerta {#offer-weight}
 
 Per consentire al motore di decidere tra diverse offerte per le quali il target è idoneo, devi assegnare uno o più pesi all’offerta. Puoi anche applicare filtri al target se necessario o limitare lo spazio di offerta a cui verrà applicato il peso. Un&#39;offerta con un peso più significativo sarà preferita rispetto a un&#39;offerta con meno peso.
 

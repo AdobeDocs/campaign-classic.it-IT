@@ -6,7 +6,7 @@ exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
 source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 20%
+ht-degree: 28%
 
 ---
 
@@ -22,10 +22,10 @@ Vengono introdotti i diversi modelli di hosting [in questa sezione](../../instal
 
 ## Disponibilità per modello di distribuzione {#capability-matrix}
 
-| Funzionalità | Ospitato | Ibrido | On-Premise | Dettagli |
+| Funzionalità | Ospitato | Ibrido | On-premise | Dettagli |
 |-----------------------------------------------|------------------|-----------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Configurare il server Campaign | On-demand | Disponibile | Disponibile | [Ulteriori informazioni](../../installation/using/the-server-configuration-file.md) |
-| Ccn e-mail | On-demand | On-demand | Disponibile | [Ulteriori informazioni](../../installation/using/email-archiving.md) |
+| Invia e-mail in Ccn | On-demand | On-demand | Disponibile | [Ulteriori informazioni](../../installation/using/email-archiving.md) |
 | Gestisci istanza di esecuzione del Centro messaggi | On-demand | On-demand | Disponibile | [Ulteriori informazioni](../../message-center/using/about-transactional-messaging.md) |
 | Gestione della piattaforma di mid-sourcing | On-demand | On-demand | Disponibile | [Ulteriori informazioni](../../installation/using/mid-sourcing-server.md) |
 | Rendering della casella in entrata tramite Litmus | On-demand | On-demand | Disponibile | [Ulteriori informazioni](../../delivery/using/inbox-rendering.md) |

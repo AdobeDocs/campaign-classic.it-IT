@@ -6,7 +6,7 @@ exl-id: 41966f31-9f37-4ab7-919a-d4624f9d1178
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '113'
-ht-degree: 3%
+ht-degree: 10%
 
 ---
 
@@ -21,9 +21,9 @@ Per ulteriori informazioni sui connettori di gestione delle relazioni con i clie
 Con questa attività puoi:
 
 * Importazione da CRM
-* Esportare in CRM
+* Esporta in CRM
 * Importa oggetti eliminati nel CRM
-* Eliminare gli oggetti nel CRM
+* Elimina oggetti nel CRM
 
 ![](assets/crm_task_select_op.png)
 

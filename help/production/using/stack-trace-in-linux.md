@@ -23,7 +23,6 @@ A **traccia stack** rappresenta una traccia contenuta in un **nucleo centrale** 
 >
 >* A **nucleo centrale** file denominato **core.`<num>`**.
 >* **gdb - Debugger GNU** deve essere installato sul computer.
-
 >
 
 

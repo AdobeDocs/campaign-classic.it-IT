@@ -87,7 +87,7 @@ Volume stimato:
 | Destinatari attivi | 5 milioni |
 | E-mail | 4,2 milioni/mese |
 | Direct mail | 1 milione/mese |
-| Mobile SMS | 100.000/mese |
+| SMS mobile | 100.000/mese |
 | Picco volume e-mail giornaliero | 500 |
 
 Per questi volumi, una coppia di sistemi server applicativi Adobe Campaign fornisce tutte le funzionalità per gli utenti client Adobe Campaign e l&#39;esecuzione di un flusso di lavoro. Per 5 milioni di destinatari attivi e questo volume di e-mail, i carichi di lavoro del server applicazioni non richiedono un uso intensivo della CPU o dell’I/O; la maggior parte dello stress è nel database.
@@ -136,8 +136,8 @@ Volume stimato:
 | Destinatari attivi | 20 milioni |
 | E-mail | 42 milioni al mese |
 | Direct mail | 10 milioni al mese |
-| Mobile SMS | 1.000.000/mese |
-| Picco volume e-mail giornaliero | 5.000.000 |
+| SMS mobile | 1.000.000/mese |
+| Picco volume e-mail giornaliero | 5,000,000 |
 
 ### Server web e applicazioni
 
@@ -172,7 +172,7 @@ Volume stimato:
 | Destinatari attivi | 50 milioni |
 | E-mail | 108 milioni al mese |
 | Direct mail | 25 milioni al mese |
-| Mobile SMS | 2,5 milioni/mese |
+| SMS mobile | 2,5 milioni/mese |
 | Messaggi transazionali | 2,5 milioni/mese |
 | Picco volume e-mail giornaliero | 2,5 milioni |
 

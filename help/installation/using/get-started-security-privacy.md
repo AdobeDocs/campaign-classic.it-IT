@@ -9,7 +9,7 @@ exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
 source-git-commit: 0c97efef21bfd3b8671847c3e1c27bb76cf167e4
 workflow-type: tm+mt
 source-wordcount: '486'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -30,7 +30,7 @@ La configurazione e l’indurimento della privacy è un elemento chiave dell’o
 * Assicurati che le password crittografate siano limitate.
 * Protect le pagine che possono contenere informazioni personali come pagine mirror, applicazioni web, ecc.
 
-[Leggi tutto](../../installation/using/privacy.md)
+[Maggiori informazioni](../../installation/using/privacy.md)
 
 ## Gestione degli accessi
 
@@ -42,7 +42,7 @@ La gestione degli accessi è una parte importante dell&#39;irrigidimento della s
 * Verificare che ogni operatore disponga dei diritti di accesso appropriati
 * Evita di utilizzare l&#39;operatore amministratore ed evita di avere troppi operatori nel gruppo di amministrazione
 
-[Leggi tutto](../../installation/using/access-management.md)
+[Maggiori informazioni](../../installation/using/access-management.md)
 
 ## Linee guida per scripting e codifica
 
@@ -56,7 +56,7 @@ Nello sviluppo in Adobe Campaign (flussi di lavoro, JavaScript, JSSP, ecc.), seg
 
 * **Aggiunta di sottotitoli nelle applicazioni web**: scopri come aggiungere i sottotitoli nelle pagine di destinazione e nelle pagine di abbonamento pubbliche.
 
-[Leggi tutto](../../installation/using/scripting-coding-guidelines.md)
+[Maggiori informazioni](../../installation/using/scripting-coding-guidelines.md)
 
 ## Rete, database e SSL/TLS
 
@@ -66,7 +66,7 @@ Una cosa molto importante da verificare quando si implementa un tipo di architet
 
 È inoltre fondamentale che tu segua la tua sicurezza del motore di database.
 
-[Leggi tutto](../../installation/using/network-database.md)
+[Maggiori informazioni](../../installation/using/network-database.md)
 
 >[!CAUTION]
 >
@@ -88,7 +88,7 @@ La configurazione deve essere eseguita su tutti i server. I file di configurazio
 
 * Puoi anche aggiungere intestazioni HTTP aggiuntive, attivare checkIPConsistent, enableTLS, sessionTimeOutSec, ecc. Fai riferimento a [Documentazione sulla configurazione del server Campaign](../../installation/using/configuring-campaign-server.md) e [Descrizione del file di configurazione del server](../../installation/using/the-server-configuration-file.md) per ulteriori informazioni.
 
-[Leggi tutto](../../installation/using/server-configuration.md)
+[Maggiori informazioni](../../installation/using/server-configuration.md)
 
 ## Configurazione server web
 
@@ -101,4 +101,4 @@ Seguono diverse best practice per configurare il server web (Apache/IIS):
 * Rimuovi il banner
 * Limita le dimensioni della query per impedire il caricamento di file importanti
 
-[Leggi tutto](../../installation/using/web-server-configuration.md)
+[Maggiori informazioni](../../installation/using/web-server-configuration.md)

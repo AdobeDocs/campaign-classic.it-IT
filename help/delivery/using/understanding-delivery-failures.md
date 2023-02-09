@@ -7,7 +7,7 @@ exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '2614'
-ht-degree: 14%
+ht-degree: 17%
 
 ---
 
@@ -72,13 +72,13 @@ I possibili motivi di un errore di consegna sono:
    <td> Il destinatario non riceve alcun indirizzo.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Indirizzo di cattiva qualità </td> 
+   <td> Indirizzo di bassa qualità </td> 
    <td> Ignorato </td> 
    <td> 14 </td> 
    <td> Il punteggio di qualità per questo indirizzo è troppo basso.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Indirizzo Inserita nell'elenco Bloccati </td> 
+   <td> Indirizzo inserito nell’elenco Bloccati </td> 
    <td> Duro </td> 
    <td> 8 </td> 
    <td> L’indirizzo è stato aggiunto al elenco Bloccati al momento dell’invio. Questo stato viene utilizzato per importare dati da elenchi esterni e sistemi esterni nell’elenco quarantena di Adobe Campaign.<br /> </td> 
@@ -126,7 +126,7 @@ I possibili motivi di un errore di consegna sono:
    <td> La cassetta postale di questo utente è piena e non può accettare altri messaggi. Questo profilo sarà nuovamente oggetto di targeting fino a raggiungere 5 errori. Successivamente, il record verrà impostato sullo stato di quarantena e non verrà eseguito alcun nuovo tentativo.<br /> Questo tipo di errore viene gestito da un processo di pulizia, l’indirizzo viene impostato su uno stato valido dopo 30 giorni.<br /> Avviso: per rimuovere automaticamente l’indirizzo dall’elenco degli indirizzi in quarantena, è necessario avviare il flusso di lavoro tecnico Database cleanup .<br /> </td> 
   </tr> 
   <tr> 
-   <td> Non connesso </td> 
+   <td> Non connessi </td> 
    <td> Ignorato </td> 
    <td> 6 </td> 
    <td> Il telefono cellulare del destinatario è spento o non è connesso alla rete quando il messaggio viene inviato.<br /> </td> 
@@ -135,10 +135,10 @@ I possibili motivi di un errore di consegna sono:
    <td> Non definito </td> 
    <td> Non definito </td> 
    <td> 0 </td> 
-   <td> L’indirizzo è in qualificazione perché l’errore non è ancora stato incrementato. Questo tipo di errore si verifica quando un nuovo messaggio di errore viene inviato dal server: può essere un errore isolato, ma se si verifica di nuovo, il contatore degli errori aumenta, avvisando i team tecnici. Possono quindi eseguire un'analisi dei messaggi e qualificare questo errore tramite il <span class="uicontrol">Amministrazione</span> / <span class="uicontrol">Gestione delle campagne</span> / <span class="uicontrol">Gestione non consegnabili</span> nella struttura ad albero.<br /> </td> 
+   <td> L’indirizzo è in qualificazione perché l’errore non è ancora stato incrementato. Questo tipo di errore si verifica quando un nuovo messaggio di errore viene inviato dal server: può essere un errore isolato, ma se si verifica di nuovo, il contatore degli errori aumenta, avvisando i team tecnici. Possono quindi eseguire un'analisi dei messaggi e qualificare questo errore tramite il <span class="uicontrol">Amministrazione</span> / <span class="uicontrol">Campaign Management</span> / <span class="uicontrol">Gestione non consegnabili</span> nella struttura ad albero.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Non ammissibile alle offerte </td> 
+   <td> Non idoneo per le offerte </td> 
    <td> Ignorato </td> 
    <td> 16 </td> 
    <td> Il destinatario non era idoneo per le offerte nella consegna.<br /> </td> 
@@ -150,7 +150,7 @@ I possibili motivi di un errore di consegna sono:
    <td> L’indirizzo è stato messo in quarantena a causa di un feedback di sicurezza come un rapporto spam. In base all’errore, l’indirizzo verrà ritentato finché il contatore degli errori non raggiunge 5, o verrà inviato direttamente alle quarantene.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Target con dimensioni limitate </td> 
+   <td> Target di dimensioni limitate </td> 
    <td> Ignorato </td> 
    <td> 17 </td> 
    <td> La dimensione massima di consegna è stata raggiunta per il destinatario.<br /> </td> 
@@ -159,7 +159,7 @@ I possibili motivi di un errore di consegna sono:
    <td> Indirizzo non qualificato </td> 
    <td> Ignorato </td> 
    <td> 15 </td> 
-   <td> L'indirizzo postale non è stato qualificato.<br /> </td> 
+   <td> L’indirizzo postale non è stato qualificato.<br /> </td> 
   </tr> 
   <tr> 
    <td> Non raggiungibile </td> 

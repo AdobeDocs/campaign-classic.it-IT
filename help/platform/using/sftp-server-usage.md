@@ -31,7 +31,7 @@ Quando gestisci file e dati per un processo di ETL, questi file vengono memorizz
 
 * Per impostazione predefinita, tutte le cartelle create sono in modalità di lettura/scrittura solo per l&#39;identificatore. Quando crei cartelle a cui è necessario accedere da Campaign, assicurati di configurarle con diritti di lettura/scrittura per l’intero gruppo. In caso contrario, i flussi di lavoro potrebbero non essere in grado di creare/eliminare file in quanto vengono eseguiti con un identificatore diverso all’interno dello stesso gruppo per motivi di sicurezza.
 
-* Gli IP pubblici da cui stai tentando di avviare la connessione SFTP devono essere aggiunti all’inserire nell&#39;elenco Consentiti nell’istanza Campaign. È possibile richiedere l’aggiunta di indirizzi IP all’inserire nell&#39;elenco Consentiti tramite [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+* Gli IP pubblici da cui stai tentando di avviare la connessione SFTP devono essere aggiunti all’inserire nell&#39;elenco Consentiti nell’istanza Campaign. È possibile richiedere l’aggiunta di indirizzi IP all’inserire nell&#39;elenco Consentiti tramite [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Best practice di utilizzo del database {#sftp-server-best-practices}
 
@@ -68,7 +68,7 @@ Inoltre, quando si specifica in Campaign Classic un percorso a un server SFTP es
 
 ## Problemi di connessione con il server SFTP ospitato da Adobe {#sftp-server-troubleshooting}
 
-La sezione seguente elenca le informazioni da controllare e fornire al team di supporto Adobe tramite [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) quando si verificano problemi di connessione con i server SFTP ospitati da Adobe.
+La sezione seguente elenca le informazioni da controllare e fornire al team di supporto Adobe tramite [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) quando si verificano problemi di connessione con i server SFTP ospitati da Adobe.
 
 1. Verifica che l&#39;istanza sia in esecuzione. A questo scopo, apri il browser e quindi fai un **[!UICONTROL GET]** chiama l&#39;istanza **[!UICONTROL /r/test]** punto finale:
 
@@ -100,11 +100,11 @@ La sezione seguente elenca le informazioni da controllare e fornire al team di s
    >
    >Lo strumento Netcat consente di gestire facilmente le connessioni di rete su vari sistemi operativi (vedere [https://eternallybored.org/misc/netcat/](https://eternallybored.org/misc/netcat/)).
 
-   Se la porta non è aperta, assicurati di aprire le connessioni in uscita sul tuo lato, quindi riprova. Se si verificano ancora problemi di connessione, condividere l&#39;output del comando con [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) squadra.
+   Se la porta non è aperta, assicurati di aprire le connessioni in uscita sul tuo lato, quindi riprova. Se si verificano ancora problemi di connessione, condividere l&#39;output del comando con [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) squadra.
 
 1. Verifica che l’IP pubblico da cui stai tentando di avviare la connessione SFTP sia quello fornito al supporto Adobe per l’inserire nell&#39;elenco Consentiti.
 1. Se utilizzi un&#39;autenticazione basata su password, la password potrebbe essere scaduta (le password hanno un periodo di validità di 90 giorni). Si consiglia pertanto vivamente di utilizzare un’autenticazione basata sulle chiavi (consulta [Best practice per server SFTP](#sftp-server-best-practices)).
-1. Se utilizzi un’autenticazione basata su chiave, verifica che la chiave utilizzata sia la stessa fornita a [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team per la configurazione dell&#39;istanza.
+1. Se utilizzi un’autenticazione basata su chiave, verifica che la chiave utilizzata sia la stessa fornita a [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team per la configurazione dell&#39;istanza.
 1. Se utilizzi FileZilla o uno strumento FTP equivalente, fornisci i dettagli dei log di connessione nel ticket di supporto.
 
 ## Errore &quot;Impossibile risolvere il nome host&quot;

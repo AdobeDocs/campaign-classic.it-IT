@@ -32,7 +32,7 @@ Per inviare a un telefono cellulare, è necessario:
 Per inviare un SMS a un cellulare, devi innanzitutto creare il tuo account esterno SMPP.
 Per ulteriori informazioni sul protocollo e le impostazioni SMS, consulta questo [page](sms-protocol.md).
 
-Per farlo, segui la procedura indicata di seguito:
+A tale scopo, segui la procedura indicata di seguito:
 
 1. In **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** nodo della struttura, fare clic sul **[!UICONTROL New]** icona.
 1. Definisci il tipo di conto come **Indirizzamento**, il canale come **Mobile (SMS)** e la modalità di consegna come **Consegna in blocco**.
@@ -118,9 +118,9 @@ La tabella seguente presenta i caratteri presi in considerazione dallo standard 
    <td> <img height="21px" src="assets/delta.png" /> </td> 
    <td> SP </td> 
    <td> 0 </td> 
-   <td> .4 </td> 
+   <td> ¡ </td> 
    <td> P </td> 
-   <td> È </td> 
+   <td> ¿ </td> 
    <td> p </td> 
   </tr> 
   <tr> 
@@ -156,7 +156,7 @@ La tabella seguente presenta i caratteri presi in considerazione dallo standard 
   <tr> 
    <td> è </td> 
    <td> <img height="21px" src="assets/delta.png" /> </td> 
-   <td> m </td> 
+   <td> ¤ </td> 
    <td> 4 </td> 
    <td> D </td> 
    <td> T </td> 
