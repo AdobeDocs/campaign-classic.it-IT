@@ -7,9 +7,9 @@ user-guide-description: Con Adobe Campaign, puoi utilizzare dati approfonditi su
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 985c0f170b8a56d7cdf76779ed9581832da301b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2532'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -830,8 +830,8 @@ ht-degree: 99%
       + [Fine del supporto per TLS 1.0 e 1.1](technotes/using/eol-tls-support.md)
    + E-mail e notifiche push{#technotes-email}
       + [Protezione della privacy della posta su Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
-      + [Come aggiornare errori permanenti di consegna non corretti](delivery/using/update-bounce-qualification.md)
-      + [Aggiorna i rimbalzi rigidi errati dopo un&#39;interruzione dell&#39;ISP](delivery/using/update-bounces.md)
+      + [Come aggiornare i mancati recapiti permanenti errati](delivery/using/update-bounce-qualification.md)
+      + [Aggiornare i mancati recapiti permanenti errati dopo un’interruzione del servizio ISP](delivery/using/update-bounces.md)
       + [Aggiornamento del certificato iOS](technotes/using/ios-certificate-update.md)
       + [Aggiornamento degli URL tracciati](technotes/using/tracked-urls.md)
    + Migrazione ad Adobe Managed Services{#dc-migration}
