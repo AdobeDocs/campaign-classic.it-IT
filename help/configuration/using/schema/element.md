@@ -193,7 +193,7 @@ Esistono quattro tipi di `<element>`  elementi in Adobe Campaign:
    * long
    * promemoria
    * MNTOKEN
-   * percentuale
+   * percent
    * primarykey
    * short
    * stringa

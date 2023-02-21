@@ -71,7 +71,7 @@ Le enumerazioni sono definite all&#39;inizio di uno schema (prima che l&#39;elem
    * long
    * promemoria
    * MNTOKEN
-   * percentuale
+   * percent
    * primarykey
    * short
    * stringa

@@ -6,7 +6,7 @@ exl-id: d8960a2e-6900-4346-9f06-e7dd9d7b5139
 source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -74,7 +74,7 @@ Questo elemento ti consente di definire un parametro per la chiamata a un metodo
    * long
    * promemoria
    * MNTOKEN
-   * percentuale
+   * percent
    * primarykey
    * short
    * stringa

@@ -49,7 +49,7 @@ Per ulteriori informazioni, consulta [Esempio sul metodo &#39;ExecuteQuery&#39; 
 
 La **ExecuteQuery** viene presentato in [ExecuteQuery (xtk:queryDef)](#executequery--xtk-querydef-).
 
-### Scrivi {#write}
+### Scrittura {#write}
 
 I comandi di scrittura consentono di scrivere documenti semplici o complessi, con voci in una o più tabelle della base.
 

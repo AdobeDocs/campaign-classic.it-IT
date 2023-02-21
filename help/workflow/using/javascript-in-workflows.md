@@ -622,5 +622,5 @@ Questo video mostra un esempio di utilizzo di un metodo API non statico in un fl
    * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html)
    * [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html)
    * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html)
-   * [Scrivi](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html)
+   * [Scrittura](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html)
 * [funzione logInfo](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html)

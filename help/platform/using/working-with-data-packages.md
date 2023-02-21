@@ -299,7 +299,7 @@ Per esportare un pacchetto dalla definizione di un pacchetto, segui i passaggi s
 
    ![](assets/packagedefinition_packageexport.png)
 
-## Pacchetti di importazione {#importing-packages}
+## Importazione dei pacchetti {#importing-packages}
 
 La procedura guidata di importazione del pacchetto è accessibile tramite il menu principale **[!UICONTROL Tools > Advanced > Import package]** della console client di Adobe Campaign.
 

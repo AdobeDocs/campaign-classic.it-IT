@@ -195,7 +195,7 @@ Puoi associare una risorsa di marketing a uno o più stock per gestire gli appro
 >
 >Per ulteriori informazioni sulla gestione delle azioni in Adobe Campaign, consulta [Gestione delle scorte](../../campaign/using/providers--stocks-and-budgets.md#stock-management).
 
-Per associare una risorsa di marketing a una risorsa di marketing, modifica la mappa azioni e modifica o crea una risorsa. Aggiungi una linea di magazzino e seleziona la risorsa di marketing corrispondente.
+Per associare una risorsa di marketing a una risorsa di marketing, modificala e modificala o creane una. Aggiungi una linea di magazzino e seleziona la risorsa di marketing corrispondente.
 
 ![](assets/s_ncs_user_task_in_a_stock.png)
 

@@ -9,11 +9,11 @@ exl-id: 7a9afe0a-0219-40f1-9fe2-6374db8d555c
 source-git-commit: 165797105affc9b5d4e4332f7f158031579bf91c
 workflow-type: tm+mt
 source-wordcount: '513'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
-# Aggiorna i rimbalzi rigidi errati dopo un&#39;interruzione dell&#39;ISP {#update-bounces}
+# Aggiornare i mancati recapiti permanenti errati dopo un’interruzione del servizio ISP {#update-bounces}
 
 ![](../../assets/common.svg)
 

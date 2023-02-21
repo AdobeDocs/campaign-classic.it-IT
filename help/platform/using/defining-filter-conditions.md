@@ -310,7 +310,7 @@ Per rimuovere questo campo calcolato, fai clic sul pulsante **[!UICONTROL Remove
 
 Lo strumento di modifica delle espressioni consente di calcolare gli aggregati, generare una funzione o modificare una formula utilizzando un’espressione.
 
-L&#39;esempio seguente mostra come eseguire un conteggio su una chiave primaria.
+L&#39;esempio seguente illustra come eseguire un conteggio su una chiave primaria.
 
 Applica i seguenti passaggi:
 

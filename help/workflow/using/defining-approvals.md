@@ -62,7 +62,7 @@ Un’approvazione viene assegnata a un gruppo di operatori, a un singolo operato
 
 I gruppi di operatori per le approvazioni devono essere designati come ruoli o funzioni anziché come persone nominate. Ad esempio, un gruppo &quot;Budget campagna&quot; è preferibile al gruppo &quot;Harry&#39;s&quot;. Consigliamo di avere almeno due persone in un gruppo in grado di approvare un’attività. In questo modo, se uno è assente, l&#39;altro può rispondere.
 
-## Scadenza {#expirations}
+## Scadenze {#expirations}
 
 Le scadenze sono transizioni specifiche utilizzate in diversi tipi di attività e in particolare nelle approvazioni. Puoi utilizzare una scadenza per attivare un&#39;azione dopo un dato tempo senza risposta. Può anche essere utilizzato, ad esempio, per proseguire il flusso di lavoro e assegnare un’approvazione a un gruppo diverso.
 

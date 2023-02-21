@@ -74,7 +74,7 @@ Tuttavia, è necessario applicare quanto segue:
 
 ### Installazione e configurazione del server di mid-sourcing {#installing-and-configuring-the-mid-sourcing-server}
 
-Dalla console del client, individua la variabile **Indirizzamento e-mail tramite mid-sourcing** account di mid-sourcing (nel **/Administration/External accounts/** cartella). Popolare **URL del server**, **account**, **password** e **URL pagina speculare** impostazioni con le informazioni fornite dal provider del server che ospita il server di mid-sourcing. Verificare la connessione.
+Dalla console del client, individua la variabile **Indirizzamento e-mail tramite mid-sourcing** account di mid-sourcing (nel **/Administration/External accounts/** cartella). Popolare **URL del server**, **account**, **password** e **URL pagina speculare** impostazioni con le informazioni fornite dal provider del server che ospita il server di mid-sourcing. Verifica la connessione.
 
 >[!NOTE]
 >

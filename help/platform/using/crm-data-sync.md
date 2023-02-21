@@ -206,7 +206,7 @@ Altre possibili conversioni sono:
 * **[!UICONTROL Without time offset]**: questa modalità annulla la gestione del fuso orario applicata nella modalità predefinita.
 * **[!UICONTROL Copy/Paste]**: questa modalità utilizza dati non elaborati come le stringhe (nessuna conversione).
 
-### Elaborazione errore {#error-processing}
+### Elaborazione degli errori {#error-processing}
 
 Nel quadro delle importazioni o delle esportazioni di dati, puoi applicare un processo specifico a errori e rifiuti. A questo scopo, seleziona la **[!UICONTROL Process rejects]** e **[!UICONTROL Process errors]** nelle opzioni **[!UICONTROL Behavior]** scheda .
 

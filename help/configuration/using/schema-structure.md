@@ -235,7 +235,7 @@ La tabella seguente elenca le mappature per i tipi di dati generati da Adobe Cam
    <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
-   <td> Datetime<br /> </td> 
+   <td> Data e ora<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
    <td> DATA<br /> </td> 
    <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIMEOFFSET<br /> </td> 

@@ -31,7 +31,7 @@ Sono possibili i seguenti metodi di identificazione:
 
    ![](assets/s_ncs_admin_survey_preload_methods_001.png)
 
-   Questo metodo di crittografia utilizza un identificatore (ID) fornito esternamente, collegato a una chiave condivisa da Adobe Campaign e dal provider esterno. La **[!UICONTROL Des key]** consente di immettere questa chiave di crittografia.
+   Questo metodo di cifratura utilizza un identificatore (ID) fornito esternamente, collegato a una chiave condivisa da Adobe Campaign e dal provider esterno. La **[!UICONTROL Des key]** consente di immettere questa chiave di crittografia.
 
 * **[!UICONTROL List of fields]**
 

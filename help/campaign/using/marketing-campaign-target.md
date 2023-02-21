@@ -159,7 +159,7 @@ Le icone della barra degli strumenti consentono di intervenire sull’esecuzione
    >
    >Questa opzione è utile durante la progettazione avanzata della campagna di targeting e le fasi di test.
 
-* Interruzione incondizionata
+* Arresto incondizionato
 
    In Esplora risorse, seleziona **[!UICONTROL Administration > Production > Object created automatically > Campaign workflows]** per accedere e intervenire su ogni flusso di lavoro della campagna.
 
