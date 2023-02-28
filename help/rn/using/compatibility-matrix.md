@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 76218abd198f677541338c7f854d047d2c644013
+source-git-commit: 84c6dacb96bd0853be9eaef0dfa7e36116f8a46a
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 94%
+source-wordcount: '779'
+ht-degree: 89%
 
 ---
 
@@ -322,8 +322,6 @@ Negli ambienti **ibridi** e **on-premise** è possibile collegare Campaign ai se
 
 
 
-
-
 ## Console client {#ClientConsoleoperatingsystems}
 
 Per utilizzare la [console client di Campaign](../../installation/using/installing-the-client-console.md) sono **necessari** i seguenti sistemi operativi e browser.
@@ -337,7 +335,7 @@ Per utilizzare la [console client di Campaign](../../installation/using/installi
 <td>Microsoft Windows</td>
 <td>
 <p>11 (a partire da Campaign v7.3)</p>
-<p>10 (consigliato per le istanze giapponesi)</p>
+<p>10</p>
 <p>8</p>
 </td>
 </tr>
@@ -353,22 +351,10 @@ Per utilizzare la [console client di Campaign](../../installation/using/installi
 
 ### Microsoft WebView2 Runtime
 
-<table>
-<tbody>
-<tr>
-<td>
-<p>Microsoft Edge WebView2 Runtime
-</p>
-</td>
-<td>
-<p>Versione più recente</p>
-</td>
-<td>
-<p><a href="http://www.adobe.com/go/acc-ms-webview2-runtime-download_it">Scarica dal sito web Microsoft Developer</a></p>
-</td>
-</tr>
-</tbody>
-</table>
+Microsoft Edge WebView2 Runtime la versione più recente è obbligatoria per la console del client Campaign.
+
+Scarica Microsoft Edge WebView2 da [Sito web per sviluppatori Microsoft](http://www.adobe.com/go/acc-ms-webview2-runtime-download_it).
+
 
 ## SDK per dispositivi mobili{#MobileSDK}
 
@@ -377,14 +363,14 @@ Puoi utilizzare Campaign per [inviare notifiche push](../../delivery/using/about
 <table>
 <tbody>
 <tr>
-<td>Android</td>
+<td>Google Android</td>
 <td>
 <p>12 (a partire da Campaign v7.3), 9.0, 8.x, 7.x</p>
 <p>con Mobile SDK build 1.1.1</p>
 </td>
 </tr>
 <tr>
-<td>iOS</td>
+<td>Apple iOS</td>
 <td>
 <p>iOS 9 - 15</p>
 <p>con Mobile SDK build 1.0.26, compatibile con le versioni a 32 e 64 bit. iOS 15 è supportato a partire da Campaign v7.3</p>
@@ -395,46 +381,13 @@ Puoi utilizzare Campaign per [inviare notifiche push](../../delivery/using/about
 
 ## Browser{#Browsers}
 
-I seguenti browser sono compatibili con Campaign per l’[accesso web](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
+I seguenti browser, nella loro versione più recente, sono compatibili con Campaign per [Accesso Web](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
 
-<table>
-<tbody>
-<tr>
-<td>
-<p>Microsoft Edge</p>
-</td>
-<td>
-<p>Versione più recente</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Mozilla Firefox</p>
-</td>
-<td>
-<p>Versione più recente</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Google Chrome</p>
-</td>
-<td>
-<p>Versione più recente</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Safari</p>
-</td>
-<td>
-<p>Versione più recente</p>
-</td>
-</tr>
+* Google Chrome
+* Microsoft Edge
+* Mozilla Firefox
+* Safari
 
-</tr>
-</tbody>
-</table>
 
 
 ## Altri argomenti correlati{#Morelikethis}

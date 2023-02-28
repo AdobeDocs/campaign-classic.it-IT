@@ -4,7 +4,7 @@ title: Modificare i contenuti
 description: Modificare i contenuti
 feature: Web Apps, Web Forms, Landing Pages
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 7f5770c5181b4f2e966d8ecfe6b1d4b9c764e5fa
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 1%
@@ -221,9 +221,9 @@ Selezionare un file immagine salvato localmente.
 
 ![](assets/dce_popup_imgupload.png)
 
-La **Elimina** elimina la ![]() tag contenente l’immagine.
+La **Elimina** elimina il tag contenente l’immagine.
 
-La **Duplica** l&#39;icona duplica ![]() e il relativo contenuto.
+La **Duplica** duplica il tag e il relativo contenuto.
 
 >[!CAUTION]
 >
