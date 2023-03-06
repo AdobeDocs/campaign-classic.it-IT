@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 84c6dacb96bd0853be9eaef0dfa7e36116f8a46a
+source-git-commit: c7c6c6a2fe6beb17bfb203e8895661c2f3084cc2
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '781'
 ht-degree: 89%
 
 ---
@@ -42,7 +42,7 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 <td>
 <p>7.x</p>
 <p><strong>Importante:</strong> se utilizzi RHEL, disabilita SELinux o fai in modo che gli architetti scrivano regole SELinux personalizzate per evitare che il SELinux abilitato causi problemi alle attività di Campaign.</p>
-<p>8.x</br><strong>Importante:</strong> CentOS Linux 8 raggiungerà la fine del ciclo di vita (EOL) il 31 dicembre 2021. Per ulteriori informazioni, consulta la pagina <a href="../../rn/using/deprecated-features.md">Funzioni obsolete</a>.</p>
+<p>8.x</br><strong>Importante:</strong> CentOS Linux 8 raggiungerà la fine del ciclo di vita il 31 dicembre 2021. Per ulteriori informazioni, consulta la pagina <a href="../../rn/using/deprecated-features.md">Funzioni obsolete</a>.</p>
 </td>
 </tr>
 <tr>
@@ -248,7 +248,7 @@ Negli ambienti **ibridi** e **on-premise** è possibile collegare Campaign ai se
 </tr>
 <tr><td>MySQL</td>
 <td>
-<p>8 (a partire da Campaign v7.3)</p>
+<p>8</p>
 <p>5.7</p>
 </td>
 <td>
@@ -271,7 +271,12 @@ Negli ambienti **ibridi** e **on-premise** è possibile collegare Campaign ai se
 <p>12c</p>
 <p>11g</p>
 </td>
-<td>Minimo v7.0</td>
+<td>
+<p>Minimo v7.0</p>
+<p></p>
+<p></p>
+<p></p>
+</td>
 </tr>
 <tr>
 <td>SAP HANA</td>
@@ -330,30 +335,40 @@ Per utilizzare la [console client di Campaign](../../installation/using/installi
 
 <table>
 <tbody>
-</tr>
+<td><strong>Sistema</strong></td>
+<td><strong>Versione sistema operativo</strong></td>
+<td><strong>Versione di Campaign</strong></td>
 <tr>
 <td>Microsoft Windows</td>
 <td>
-<p>11 (a partire da Campaign v7.3)</p>
+<p>11</p>
 <p>10</p>
 <p>8</p>
 </td>
+<td>
+<p>Minimo v7.3 </p>
+<p></p>
+<p></p>
 </tr>
 <tr>
 <td>Microsoft Windows Server</td>
 <td>
-<p>2019 (a partire da Campaign v7.2.1)</p>
+<p>2019</p>
 <p>2016</p>
 <p>2012</p>
 </td>
+<td>
+<p>Minimo v7.2.1 </p>
+<p></p>
+<p></p>
 </tbody>
 </table>
 
 ### Microsoft WebView2 Runtime
 
-Microsoft Edge WebView2 Runtime la versione più recente è obbligatoria per la console del client Campaign.
+Microsoft Edge WebView2 Runtime la versione più recente è obbligatoria per la console client di Campaign.
 
-Scarica Microsoft Edge WebView2 da [Sito web per sviluppatori Microsoft](http://www.adobe.com/go/acc-ms-webview2-runtime-download_it).
+Scarica Microsoft Edge WebView2 da [Sito per sviluppatori Microsoft](http://www.adobe.com/go/acc-ms-webview2-runtime-download_it).
 
 
 ## SDK per dispositivi mobili{#MobileSDK}
@@ -381,7 +396,7 @@ Puoi utilizzare Campaign per [inviare notifiche push](../../delivery/using/about
 
 ## Browser{#Browsers}
 
-I seguenti browser, nella loro versione più recente, sono compatibili con Campaign per [Accesso Web](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
+I seguenti browser, nella loro versione più recente, sono compatibili con Campaign per [Accesso web](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
 
 * Google Chrome
 * Microsoft Edge
