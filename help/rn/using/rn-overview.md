@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: f797aafac99d6b9c2bdb409a1d0883c889fd3b0e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '935'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Per mantenere aggiornata l’implementazione, per ogni nuova versione leggi le p
 
 ## Processo di aggiornamento{#process-upgrade}
 
-In qualità di cliente Managed Services o ibrido in hosting, contatta l’Assistenza clienti Adobe per aggiornare il tuo ambiente.
+In qualità di cliente in hosting, Managed Services o ibrido, contatta l’Assistenza clienti di Adobe per aggiornare l’ambiente.
 
 In qualità di cliente on-premise, puoi eseguire l’aggiornamento. A tal fine, è necessario [scaricare la build stabile più recente (GA)](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) e aggiornare tutti gli ambienti.
 
@@ -67,7 +67,7 @@ In qualità di utente in hosting, potrai beneficiare automaticamente, senza alcu
 
 ### Perché la mia organizzazione ha bisogno di questo aggiornamento?
 
-In qualità di cliente in hosting, se il tuo account necessita l’aggiornamento di una o più tecnologie correlate a Campaign Classic e dell’aggiornamento dell’infrastruttura alla build corrente (ad esempio da v7.2.1 a v7.3.3) e/o alla versione corrente (ad esempio da v7 a v8), riceverai una notifica direttamente da Adobe.
+In qualità di cliente in hosting, se il tuo account necessita l’aggiornamento di una o più tecnologie correlate a Campaign Classic ed è necessario aggiornare l’infrastruttura alla build (ad esempio dalla v7.2.1 alla v7.3.3) e/o alla versione (ad esempio dalla v7 alla v8) corrente, riceverai una notifica direttamente da Adobe.
 
 In qualità di cliente on-premise o ibrido che utilizza una build precedente, Adobe ti consiglia di passare all’ultima build stabile (GA).
 
@@ -77,7 +77,7 @@ In questo modo il tuo account sarà protetto da eventuali vulnerabilità e potr�
 
 Il team Adobe guiderà la tua organizzazione attraverso questo percorso.
 
-Qui trovi un team di responsabili dell’Assistenza clienti, Product Manager, tecnici, specialisti TechOps e consulenti di prodotto che potrà assisterti e garantire un’esperienza fluida.
+Abbiamo organizzato un team di responsabili dell’Assistenza clienti, Product Manager, tecnici, specialisti TechOps e consulenti di prodotto che potrà assisterti e garantire un’esperienza fluida.
 
 ### Vantaggi
 
