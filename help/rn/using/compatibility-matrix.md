@@ -9,7 +9,7 @@ exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: c7c6c6a2fe6beb17bfb203e8895661c2f3084cc2
 workflow-type: tm+mt
 source-wordcount: '781'
-ht-degree: 89%
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,7 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 <td>
 <p>7.x</p>
 <p><strong>Importante:</strong> se utilizzi RHEL, disabilita SELinux o fai in modo che gli architetti scrivano regole SELinux personalizzate per evitare che il SELinux abilitato causi problemi alle attività di Campaign.</p>
-<p>8.x</br><strong>Importante:</strong> CentOS Linux 8 raggiungerà la fine del ciclo di vita il 31 dicembre 2021. Per ulteriori informazioni, consulta la pagina <a href="../../rn/using/deprecated-features.md">Funzioni obsolete</a>.</p>
+<p>8.x</br><strong>Importante:</strong> CentOS Linux 8 raggiungerà la fine del ciclo di vita (EOL) il 31 dicembre 2021. Per ulteriori informazioni, consulta la pagina <a href="../../rn/using/deprecated-features.md">Funzioni obsolete</a>.</p>
 </td>
 </tr>
 <tr>
@@ -154,7 +154,7 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 <p>2016</p>
 <p>2014</p>
 <p>2012 - SP1 e SP2</p>
-<p><strong>Importante:</strong> Microsoft SQL Server non è supportato come database primario quando il server Campaign è in esecuzione su Linux. <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux-/prerequisites-of-campaign-installation-in-linux.html#database-access-layers">Ulteriori informazioni</a>.</p>
+<p><strong>Importante:</strong> Microsoft SQL Server non è supportato come database primario quando il server Campaign è in esecuzione su Linux. <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux-/prerequisites-of-campaign-installation-in-linux.html?lang=it#database-access-layers">Ulteriori informazioni</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -366,9 +366,9 @@ Per utilizzare la [console client di Campaign](../../installation/using/installi
 
 ### Microsoft WebView2 Runtime
 
-Microsoft Edge WebView2 Runtime la versione più recente è obbligatoria per la console client di Campaign.
+Microsoft Edge WebView2 Runtime - Per la console del client Campaign è necessario utilizzare la versione più recente.
 
-Scarica Microsoft Edge WebView2 da [Sito per sviluppatori Microsoft](http://www.adobe.com/go/acc-ms-webview2-runtime-download_it).
+Scarica Microsoft Edge WebView2 dal [sito web per sviluppatori Microsoft](http://www.adobe.com/go/acc-ms-webview2-runtime-download_it).
 
 
 ## SDK per dispositivi mobili{#MobileSDK}
@@ -396,7 +396,7 @@ Puoi utilizzare Campaign per [inviare notifiche push](../../delivery/using/about
 
 ## Browser{#Browsers}
 
-I seguenti browser, nella loro versione più recente, sono compatibili con Campaign per [Accesso web](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
+I seguenti browser, nella loro versione più recente, sono compatibili con Campaign per l’[accesso web](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
 
 * Google Chrome
 * Microsoft Edge
