@@ -7,7 +7,7 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 2654157b02b549d4184ed6a5a93acad47e452713
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2772'
 ht-degree: 100%
 
@@ -210,7 +210,7 @@ Adobe Campaign è ora compatibile con Windows Server 2019. Consulta la [Matrice 
 * Il campo **[!UICONTROL Encrypted identifier]** è stato aggiunto allo schema visitatore (nms:visitor). Questo è un campo calcolato e deve essere utilizzato per le applicazioni web. Questo si applica quando il canale Line è configurato sull’istanza di mid-sourcing.
 * È ora possibile utilizzare le origini dati del CRM con l’attività **Modifica l’origine dati**.
 * È stata aggiunta una nuova opzione nella proprietà **Gestione degli errori** delle attività del flusso di lavoro: l’opzione **Interrompi in caso di errore** arresta automaticamente il flusso di lavoro. Non potrai riavviarlo successivamente (NEO-29661). [Maggiori informazioni](../../workflow/using/advanced-parameters.md#in-case-of-errors)
-* Viene ora utilizzata una sequenza dedicata per generare le chiavi primarie per la tabella nmsGroup, che viene utilizzata per creare gruppi statistici di destinatari. In precedenza, veniva utilizzata la sequenza xtknewId. (NEO-30832)
+* Ora viene utilizzata una sequenza dedicata per generare le chiavi primarie per la tabella nmsGroup, che viene utilizzata per creare gruppi statistici di destinatari. In precedenza, veniva utilizzata la sequenza xtknewId. (NEO-30832)
 * È stato aggiunto il supporto per le operazioni di aggiornamento batch tramite l’attività del connettore CRM.
 * Sono state migliorate le prestazioni per i tempi di elaborazione della messaggistica transazionale. (NEO-40370)
 
@@ -218,7 +218,7 @@ Adobe Campaign è ora compatibile con Windows Server 2019. Consulta la [Matrice 
 
 * È stato risolto un problema che si verificava durante la creazione di una consegna e che causava un errore nella scheda **Immagini** della finestra **Tracciamento e immagini**. Ciò si verificava quando si utilizzava una configurazione proxy automatica. (NEO-33260)
 * È stato risolto un problema che poteva impedire il caricamento di un file su un server Debian 10 (HTTPS) in modalità sincrona.
-* È stato risolto un problema che poteva impedire l’eliminazione dei record della tabella delle statistiche delle consegne (`nmsDeliveryLogStats`) dall’istanza di mid-sourcing durante la pulizia del database dopo l’eliminazione delle consegne correlate. (NEO-31034)
+* È stato risolto un problema che poteva impedire l’eliminazione dei record della tabella delle statistiche sulle consegne (`nmsDeliveryLogStats`) dall’istanza di mid-sourcing durante la pulizia del database dopo l’eliminazione delle consegne correlate. (NEO-31034)
 * È stato risolto un problema che impediva l’invio di notifiche di app mobili su iOS durante l’utilizzo dell’autenticazione basata su token (NEO-38640).
 * È stato risolto un problema che poteva causare la visualizzazione di messaggi di errore script durante il tentativo di creazione e configurazione di rapporti (NEO-38393).
 * È stato risolto un problema che poteva causare un errore del flusso di lavoro di tracciamento in Oracle a causa di elevati volumi di indicatori di consegna aggiornati simultaneamente (NEO-39653).

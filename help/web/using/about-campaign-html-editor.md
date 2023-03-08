@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Guida introduttiva all’editor di Campaign HTML
-description: Guida introduttiva a Campaign DCE
+title: Introduzione all’editor di Campaign HTML
+description: Introduzione a Campaign DCE
 feature: Web Apps, Web Forms, Landing Pages
 exl-id: f5d65e89-6b18-482b-97d8-11ab94f6775e
 source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# Guida introduttiva all’editor di Campaign HTML{#about-campaign-html-editor}
+# Introduzione all’editor di Campaign HTML{#about-campaign-html-editor}
 
 ![](../../assets/common.svg)
 
-La **Editor di contenuti digitali (DCE)** è un editor di contenuti HTML che consente di creare facilmente contenuti e modelli in formato HTML in Adobe Campaign.
+Il **Editor di contenuti digitali (DCE)** è un editor di contenuti HTML che consente di creare facilmente contenuti e modelli in formato HTML in Adobe Campaign.
 
-Con Digital Content Editor è possibile inserire e formattare gli elementi di pagina e mappare i campi del database con gli elementi di una pagina HTML. Questo editor è disponibile quando crei una pagina per un&#39;applicazione web o quando crei consegne basate su un modello DCE.
+Con Digital Content Editor è possibile inserire e formattare elementi di pagina e mappare i campi del database con gli elementi di una pagina HTML. Questo editor è disponibile quando crei una pagina per un’applicazione web o quando crei consegne basate su un modello DCE.
 
 >[!NOTE]
 >
@@ -27,32 +27,32 @@ Con Digital Content Editor è possibile inserire e formattare gli elementi di pa
 >
 >È necessario fare riferimento a tutte le risorse esterne con un URL HTTPS.
 
-## Passaggi fondamentali per l’utilizzo dell’Editor di contenuti digitali {#content-editor-general-operation}
+## Passaggi chiave per utilizzare Digital Content Editor {#content-editor-general-operation}
 
-Questa sezione presenta i passaggi chiave per modificare e caricare il contenuto modificato con il DCE, nel contesto di un’applicazione web e di una progettazione di consegna.
+Questa sezione descrive i passaggi chiave per modificare e caricare contenuti modificati con il DCE, nel contesto di una progettazione di applicazioni web e consegne.
 
-L&#39;operazione generale è la seguente:
+Il funzionamento generale è il seguente:
 
 ![](assets/dce_schema.png)
 
-Per creare un semplice **applicazione web**, devi:
+Per creare un semplice **applicazione web**, è necessario:
 
-1. Creare un&#39;applicazione web - [Ulteriori informazioni](creating-a-landing-page.md)
-1. Seleziona il contenuto esistente o crea contenuto da un modello standard - [Ulteriori informazioni](template-management.md)
+1. Creare un’applicazione web - [Ulteriori informazioni](creating-a-landing-page.md)
+1. Seleziona contenuto esistente o crea contenuto da un modello standard - [Ulteriori informazioni](template-management.md)
 1. Modifica e configura il contenuto - [Ulteriori informazioni](editing-content.md)
-1. Pubblica l&#39;applicazione Web - [Ulteriori informazioni](creating-a-landing-page.md#step-3---publishing-content)
+1. Pubblicare l’applicazione web - [Ulteriori informazioni](creating-a-landing-page.md#step-3---publishing-content)
 
 >[!NOTE]
 >
->Un esempio di implementazione completo nel contesto di un&#39;applicazione web è disponibile in  [questa sezione](creating-a-landing-page.md).
+>Un esempio completo di implementazione nel contesto di un’applicazione web è disponibile in  [questa sezione](creating-a-landing-page.md).
 
-Per creare un **consegna e-mail**, devi:
+Per creare un **consegna e-mail**, è necessario:
 
 1. Creare una consegna da un modello DCE - [Ulteriori informazioni](use-case--creating-an-email-delivery.md)
-1. Selezionare un contenuto esistente o crearne uno da un [modello standard](template-management.md)
-1. Modifica e configurazione del contenuto online
-1. Invia la consegna - [Ulteriori informazioni](../../delivery/using/steps-about-delivery-creation-steps.md)
+1. Seleziona un contenuto esistente o creane uno da un [modello standard](template-management.md)
+1. Modificare e configurare i contenuti online
+1. Inviare la consegna - [Ulteriori informazioni](../../delivery/using/steps-about-delivery-creation-steps.md)
 
 >[!NOTE]
 >
->Un esempio di implementazione completo nel contesto di una consegna e-mail è disponibile in [questo caso d&#39;uso](use-case--creating-an-email-delivery.md).
+>Un esempio completo di implementazione nel contesto di una consegna e-mail è disponibile in [questo caso d’uso](use-case--creating-an-email-delivery.md).

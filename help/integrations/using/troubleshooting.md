@@ -21,13 +21,13 @@ In caso di errore, assicurati che i seguenti elementi siano configurati corretta
 
 * **Account esterni**
 
-   In **[!UICONTROL Administration > Platform > External accounts]**, assicurati che i seguenti account SFTP esterni siano configurati correttamente. I server SFTP menzionati dovrebbero essere stati configurati in Adobe Experience Cloud dal tuo consulente.
+   In entrata **[!UICONTROL Administration > Platform > External accounts]**, assicurati che i seguenti account SFTP esterni siano configurati correttamente. I server SFTP menzionati avrebbero dovuto essere configurati in Adobe Experience Cloud dal tuo consulente.
 
-   * **[!UICONTROL importSharedAudience]** : Account SFTP dedicato all’importazione di tipi di pubblico.
-   * **[!UICONTROL exportSharedAudience]** : Account SFTP dedicato all’esportazione di tipi di pubblico.
+   * **[!UICONTROL importSharedAudience]** : account SFTP dedicato all’importazione di tipi di pubblico.
+   * **[!UICONTROL exportSharedAudience]** : account SFTP dedicato all’esportazione dei tipi di pubblico.
 
 * **Origine dati AMC**
 
-   In **[!UICONTROL Administration > Platform > AMC Data sources]**, controlla che l’origine dati AMC sia impostata correttamente.
+   In entrata **[!UICONTROL Administration > Platform > AMC Data sources]**, verificare che l&#39;origine dati AMC sia impostata correttamente.
 
-È possibile che alcuni dati manchino durante la condivisione di un pubblico tramite il servizio core Persone o durante l’importazione di un pubblico. Vengono trasferiti solo i record di cui è stato possibile riconciliare l’ID (&quot;ID visitatore&quot; o &quot;ID dichiarato&quot;) con la dimensione del profilo. Gli ID dei segmenti del servizio core Persone che non sono riconosciuti da Adobe Campaign non vengono importati.
+Alcuni dati possono mancare quando si condivide un pubblico tramite il servizio core People o quando si importa un pubblico. Vengono trasferiti solo i record per i quali l’ID (&quot;ID visitatore&quot; o &quot;ID dichiarato&quot;) è stato riconciliato con la dimensione del profilo. Gli ID dei segmenti del servizio core People che non sono riconosciuti da Adobe Campaign non vengono importati.

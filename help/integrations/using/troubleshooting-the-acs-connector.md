@@ -19,11 +19,11 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-A seconda dell’implementazione, puoi affrontare diversi problemi comuni.
+A seconda dell’implementazione, puoi riscontrare diversi problemi comuni.
 
-* **Quali sono le differenze di interfaccia utente tra Campaign Standard e Campaign v7?**
+* **Quali sono le differenze a livello di interfaccia utente tra Campaign Standard e Campaign v7?**
 
-   Campaign Standard e Campaign v7 funzionano in modo molto simile. La maggior parte dei concetti sono gli stessi, ma in alcuni casi l&#39;approccio può essere leggermente diverso. Di seguito sono riportati alcuni dei concetti che possono essere diversi nel contesto del connettore ACS:
+   Campaign Standard e Campaign v7 funzionano in modo molto simile. La maggior parte dei concetti sono gli stessi, ma in alcuni casi l’approccio può essere leggermente diverso. Di seguito sono riportati alcuni dei concetti che potrebbero differire nel contesto del connettore ACS:
 
 <table> 
  <thead> 
@@ -38,11 +38,11 @@ A seconda dell’implementazione, puoi affrontare diversi problemi comuni.
    <td> profili<br /> </td> 
   </tr> 
   <tr> 
-   <td> elenco<br /> </td> 
+   <td> list<br /> </td> 
    <td> pubblico<br /> </td> 
   </tr> 
   <tr> 
-   <td> flussi di lavoro delle campagne, targeting dei flussi di lavoro<br /> </td> 
+   <td> flussi di lavoro per campagne, flussi di lavoro di targeting<br /> </td> 
    <td> workflow<br /> </td> 
   </tr> 
   <tr> 
@@ -54,71 +54,71 @@ A seconda dell’implementazione, puoi affrontare diversi problemi comuni.
    <td> pagine di destinazione<br /> </td> 
   </tr> 
   <tr> 
-   <td> estensione tabella e schema personalizzata<br /> </td> 
-   <td> estensione di risorse e risorse personalizzate<br /> </td> 
+   <td> tabella personalizzata ed estensione dello schema<br /> </td> 
+   <td> risorsa personalizzata ed estensione della risorsa<br /> </td> 
   </tr> 
   <tr> 
-   <td> membri della semina<br /> </td> 
+   <td> membri seed<br /> </td> 
    <td> profili di test<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-* **I destinatari della mia istanza Campaign v7 non sono sincronizzati o visibili ad Campaign Standard.**
+* **I destinatari della mia istanza di Campaign v7 non sono sincronizzati o visibili a Campaign Standard.**
 
    Questo caso può verificarsi per diversi motivi:
 
-   * I destinatari sono stati appena creati o aggiornati in Campaign v7. La sincronizzazione viene attivata ogni 15 minuti. Ciò significa che i destinatari aggiornati o appena creati saranno visibili in Campaign Standard dopo la sincronizzazione successiva.
-   * L’implementazione può essere stata impostata per sincronizzare solo i destinatari da cartelle specifiche. I destinatari di altre cartelle non sono sincronizzati.
+   * I destinatari sono stati appena creati o aggiornati in Campaign v7. La sincronizzazione viene attivata ogni 15 minuti. Ciò significa che i destinatari aggiornati o appena creati saranno visibili in Campaign Standard dopo la successiva sincronizzazione.
+   * L’implementazione può essere impostata per sincronizzare solo i destinatari da cartelle specifiche. I destinatari di altre cartelle non sono sincronizzati.
    * Il destinatario può essere sincronizzato ma non visibile in Campaign Standard. Controlla la mappatura dei diritti della cartella.
 
 * **Non trovo i campi del profilo su cui devo basare la query in Campaign Standard.**
 
-   Per impostazione predefinita, 20 campi della tabella nms:recipient sono sincronizzati con Campaign Standard. Fare riferimento all’elenco dettagliato dei campi sincronizzati. Qualsiasi campo aggiuntivo da recuperare in Campaign Standard deve essere mappato e configurato dal tuo consulente.
+   Per impostazione predefinita, 20 campi della tabella nms:recipient sono sincronizzati con Campaign Standard. Consulta l’elenco dettagliato dei campi sincronizzati. Qualsiasi campo aggiuntivo da recuperare in Campaign Standard deve essere mappato e configurato dal tuo consulente.
 
-   Per accertarti che il campo da utilizzare sia disponibile, puoi controllare la definizione della risorsa profilo da **[!UICONTROL Administration > Development > Diagnosis > Data schemas]**.
+   Per assicurarti che il campo da utilizzare sia disponibile, puoi controllare la definizione della risorsa profilo da **[!UICONTROL Administration > Development > Diagnosis > Data schemas]**.
 
-   Inoltre, tutti i dati allegati ai destinatari e memorizzati nelle tabelle relative a nms:destinatari non vengono sincronizzati per impostazione predefinita in Campaign Standard.
+   Inoltre, tutti i dati allegati ai destinatari e memorizzati nelle tabelle relative a nms:recipients non vengono sincronizzati per impostazione predefinita con Campaign Standard.
 
-   Per poter utilizzare comunque i dati correlati, puoi eseguire il targeting in Campaign v7 e aggiungere dati aggiuntivi come spiegato in [Sincronizzazione dei tipi di pubblico](../../integrations/using/synchronizing-audiences.md) oppure puoi consultare il tuo consulente per scoprire le possibilità di personalizzazione.
+   Per poter continuare a utilizzare i dati correlati, puoi eseguire il targeting in Campaign v7 e aggiungere dati aggiuntivi come spiegato nella [Sincronizzare i tipi di pubblico](../../integrations/using/synchronizing-audiences.md) oppure puoi rivolgerti al tuo consulente per scoprire le possibilità di personalizzazione.
 
-* **Sto utilizzando una dimensione di profilo diversa da quella predefinita di nms:recipient in Campaign v7, come posso sincronizzarle con Campaign Standard?**
+* **In Campaign v7, utilizzo una dimensione di profilo diversa da nms:recipient predefinita, come posso sincronizzarle con Campaign Standard?**
 
-   Campaign Standard utilizza una risorsa di targeting univoca denominata **profiles**. L’implementazione di base della funzione Campaign Standard Connect fornisce una mappatura predefinita tra i destinatari di Campaign v7 e i profili Campaign Standard.
+   Campaign Standard utilizza una risorsa di targeting univoca denominata **profili**. L’implementazione di base della funzione Campaign Standard Connect fornisce una mappatura predefinita tra i destinatari di Campaign v7 e i profili di Campaign Standard.
 
-   Se utilizzi un’altra dimensione di profilo in Campaign v7 o se ne utilizzi più, tutti devono essere mappati con profili Campaign Standard. Fai riferimento al tuo consulente per rispondere a questa particolare esigenza.
+   Se utilizzi un’altra dimensione di profilo in Campaign v7, o se ne utilizzi diverse, tutte devono essere mappate con i profili di Campaign Standard. Per rispondere a questa esigenza specifica, rivolgiti al tuo consulente.
 
-* **Voglio condividere un elenco di profili con Campaign Standard tramite un flusso di lavoro ma non riesco a trovare il mio pubblico in Campaign Standard**.
+* **Voglio condividere un elenco di profili con Campaign Standard tramite un flusso di lavoro, ma non posso trovare il mio pubblico in Campaign Standard**.
 
-   I tipi di pubblico si trovano nella **[!UICONTROL Audiences]** in Campaign Standard. Hanno l’etichetta specificata nella **[!UICONTROL List update]** nel flusso di lavoro di Campaign v7. Sono soggetti alla mappatura delle cartelle definita durante l’implementazione.
+   I tipi di pubblico si trovano in **[!UICONTROL Audiences]** in Campaign Standard. Hanno l’etichetta specificata nel **[!UICONTROL List update]** attività nel flusso di lavoro di Campaign v7. Sono soggette alla mappatura delle cartelle definita durante l’implementazione.
 
-   La prima cosa da verificare è se il flusso di lavoro è stato completato senza errori. Se noti un errore sul **[!UICONTROL List update]** attività, significa che la sincronizzazione con Campaign Standard potrebbe non essere riuscita. Per avere maggiori dettagli su cosa è andato storto, vai a **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**. Questa cartella contiene i flussi di lavoro di sincronizzazione attivati da **[!UICONTROL List update]** esecuzione dell’attività.
+   La prima cosa da verificare è se il flusso di lavoro è stato completato senza errori. Se noti un errore in **[!UICONTROL List update]** significa che la sincronizzazione con Campaign Standard potrebbe non essere riuscita. Per visualizzare ulteriori dettagli su ciò che è andato storto, vai a **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**. Questa cartella contiene flussi di lavoro di sincronizzazione attivati da **[!UICONTROL List update]** esecuzione dell’attività.
 
-   Inoltre, assicurati che il **[!UICONTROL Share with ACS]** è selezionata l’opzione **[!UICONTROL List update]** e che il flusso di lavoro è stato eseguito correttamente.
+   Inoltre, assicurati che le **[!UICONTROL Share with ACS]** l&#39;opzione è selezionata in **[!UICONTROL List update]** e che il flusso di lavoro sia stato eseguito correttamente.
 
-   Tieni presente che i profili dei destinatari contenuti nell’elenco devono essere stati sincronizzati con Campaign Standard prima dell’esecuzione del flusso di lavoro. Una volta condivisi con Campaign Standard, i destinatari dell’elenco vengono riconciliati con i profili Campaign Standard, il che significa che devono esistere lì. I destinatari dell’elenco che non possono essere riconciliati con i profili in Campaign Standard vengono ignorati.
+   I profili dei destinatari contenuti nell’elenco devono essere stati sincronizzati con Campaign Standard prima dell’esecuzione del flusso di lavoro. Una volta condiviso con Campaign Standard, i destinatari dell’elenco vengono riconciliati con i profili Campaign Standard, il che significa che devono esistere lì. I destinatari dell’elenco che non possono essere riconciliati con i profili in Campaign Standard vengono ignorati.
 
-   Se condividi un elenco di profili e non ne esegui la sincronizzazione con Campaign Standard, in Campaign Standard viene creato un pubblico Query vuoto che non può essere utilizzato.
+   Se condividi un elenco costituito da profili e nessuno di questi è sincronizzato con Campaign Standard, in Campaign Standard viene creato un pubblico di tipo Query vuoto che non può essere utilizzato.
 
-* **Ho ricevuto una notifica che indica che un flusso di lavoro di sincronizzazione è in stato di errore. Cosa dovrei fare?**
+* **Ho ricevuto una notifica che indica che un flusso di lavoro di sincronizzazione è in stato di errore. Cosa devo fare?**
 
-   Controlla la configurazione dell’account esterno sia in Campaign Standard che in Campaign v7 testando la connessione:
+   Controlla la configurazione dell’account esterno in Campaign Standard e Campaign v7 verificando la connessione:
 
    * **[!UICONTROL acsDefaultRelayAccount]** in Campaign Standard.
    * **[!UICONTROL acsDefaultAccount]** in Campaign v7.
 
-* **Non ho un gruppo di sicurezza disponibile per la mappatura delle cartelle tra Campaign v7 e Campaign Standard.**
+* **Non sono disponibile gruppi di sicurezza per la mappatura di cartelle tra Campaign v7 e Campaign Standard.**
 
-   Devi innanzitutto sincronizzare i gruppi di sicurezza da **[!UICONTROL Administration > ACS Connector > Rights management > Security groups]**. Questa azione controlla i gruppi di sicurezza disponibili in Campaign Standard. Una volta sincronizzato, è possibile trovare i gruppi di sicurezza durante la configurazione della mappatura delle cartelle.
+   Devi prima sincronizzare i gruppi di sicurezza da **[!UICONTROL Administration > ACS Connector > Rights management > Security groups]**. Questa azione controlla i gruppi di sicurezza disponibili in Campaign Standard. Una volta sincronizzati, è possibile trovare i gruppi di sicurezza durante la configurazione della mappatura delle cartelle.
 
-* **Non è possibile modificare un profilo, un pubblico o una pagina di destinazione in Campaign Standard. Cosa significa?**
+* **Non è possibile modificare un profilo, un pubblico o una pagina di destinazione in Campaign Standard. Che cosa significa?**
 
-   Le risorse sincronizzate da Campaign v7 sono in modalità di sola lettura in Campaign Standard, per garantire la coerenza dei dati. Se devi modificare uno di questi elementi, puoi farlo in Campaign v7 e replicare la modifica in Campaign Standard.
+   Le risorse sincronizzate da Campaign v7 sono in modalità di sola lettura in Campaign Standard, per garantire la coerenza dei dati. Se devi modificare uno di questi elementi, puoi farlo in Campaign v7 e quindi replicare la modifica in Campaign Standard.
 
-* **Gli errori si verificano nel [ACS] Flusso di lavoro di replica del registro di consegna del profilo. Cosa dovrei fare?**
+* **Si verificano errori in [ACS] Flusso di lavoro di replica del registro di consegna del profilo. Cosa devo fare?**
 
-   Nel caso in cui le istanze Campaign Classic e Campaign Standard siano utilizzate per inviare e-mail con URL tracciati, potrebbe verificarsi un problema con tagID URL duplicati durante la sincronizzazione. In questo caso, il **[ACS] Replica del registro di consegna del profilo** (newRcpDeliveryLogReplication) il flusso di lavoro continua a non riuscire con il seguente errore:
+   Se per inviare e-mail con URL tracciati vengono utilizzate sia le istanze di Campaign Classic che di Campaign Standard, durante la sincronizzazione potrebbe verificarsi un problema relativo agli ID di tag URL duplicati. In questo caso, il **[ACS] Replica del registro di consegna del profilo** Il flusso di lavoro di (newRcpDeliveryLogReplication) non riesce e viene restituito il seguente errore:
 
    ```PGS-220000 PostgreSQL error: ERROR: duplicate key value violates unique constraint "nmstrackingurl_tagid" DETAIL: Key (stagid) = (1c7bdec2) already exists.```
 
-   Per risolvere il problema ed evitare che si verifichi di nuovo, aggiorna il **Aggiorna gli URL di tracciamento** (writerTrackingUrls) nel flusso di lavoro e aggiungi il prefisso &quot;ACS&quot; all&#39;espressione sorgente @tagId.
+   Per risolvere il problema ed evitare che si verifichi di nuovo, aggiorna il **Aggiorna URL di tracciamento** (writerTrackingUrls) nel flusso di lavoro e aggiungi il prefisso &quot;ACS&quot; all’espressione di origine @tagId.
