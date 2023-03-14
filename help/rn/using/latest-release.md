@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 754e6d2486897958827a15ab8a3d14ec17935891
+source-git-commit: 02ab5f4520179fcce8eedbe3dcc7b08cb9cfe0d2
 workflow-type: tm+mt
-source-wordcount: '2969'
-ht-degree: 94%
+source-wordcount: '2989'
+ht-degree: 93%
 
 ---
 
@@ -24,10 +24,12 @@ In questa pagina sono elencate nuove funzionalità, miglioramenti e correzioni i
 >[!CAUTION]
 >
 > Per il momento questa versione è disponibile solo per gli utenti di Cloud Services gestiti e sarà presto disponibile per le distribuzioni on-premise e ibride.
-
->[!CAUTION]
 >
 >L’aggiornamento della console client è obbligatorio. Scopri come aggiornare la console client in questa [pagina](../../installation/using/installing-the-client-console.md).
+
+>[!NOTE]
+>
+>Questa versione è GA solo per utenti di Cloud Services gestiti.
 
 _9 marzo 2023_
 
@@ -49,13 +51,17 @@ _9 marzo 2023_
 * È stato risolto un problema che poteva impedire lo scorrimento in **Modifica** dell&#39;Editor di contenuti digitali (DCE). (NEO-54474)
 * È stato risolto un problema che si verificava quando due attività di arricchimento utilizzavano lo stesso identificatore di nome nel collegamento, il che portava la seconda attività di arricchimento a utilizzare i collegamenti della prima. (NEO-48851)
 
-## ![](assets/do-not-localize/orange_2.png) Versione 7.3.2 - Build 9356 {#release-7-3-2}
+## ![](assets/do-not-localize/green.png) Versione 7.3.2 - Build 9356 {#release-7-3-2}
 
 _21 novembre 2022_
 
 >[!CAUTION]
 >
 >L’aggiornamento della console client è obbligatorio. Scopri come aggiornare la console client in questa [pagina](../../installation/using/installing-the-client-console.md).
+
+>[!NOTE]
+>
+>Questa versione è disponibile in versione GA solo per le distribuzioni on-premise e ibride.
 
 **Aggiornamenti della compatibilità**
 
