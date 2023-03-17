@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 02ab5f4520179fcce8eedbe3dcc7b08cb9cfe0d2
 workflow-type: tm+mt
 source-wordcount: '2989'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -23,13 +23,13 @@ In questa pagina sono elencate nuove funzionalità, miglioramenti e correzioni i
 
 >[!CAUTION]
 >
-> Per il momento questa versione è disponibile solo per gli utenti di Cloud Services gestiti e sarà presto disponibile per le distribuzioni on-premise e ibride.
+> Questa versione è disponibile solo per gli utenti dei Cloud Services gestiti e sarà presto disponibile per le distribuzioni on-premise e ibride.
 >
 >L’aggiornamento della console client è obbligatorio. Scopri come aggiornare la console client in questa [pagina](../../installation/using/installing-the-client-console.md).
 
 >[!NOTE]
 >
->Questa versione è GA solo per utenti di Cloud Services gestiti.
+>Questa versione è GA solo per gli utenti di Cloud Services gestiti.
 
 _9 marzo 2023_
 
@@ -40,16 +40,16 @@ _9 marzo 2023_
 **Miglioramenti**
 
 * Il flusso di lavoro Fatturazione è stato migliorato per ottimizzare le prestazioni. (NEO-47658)
-* Il flusso di lavoro di tracciamento è stato migliorato per ottimizzare le prestazioni in caso di dimensioni di consegna elevate. (NEO-45064)
-* La gestione del tracciamento è stata migliorata per risolvere possibili problemi con i parametri dinamici negli URL. La versione 3 di Gestione del tracciamento ora gestisce gli URL di tipo AJAX (con parametri dopo il simbolo &#39;#&#39;) e impedisce a strumenti di terze parti di modificare gli URL di tracciamento. Per applicare questa modifica, devi contattare l’Adobe. (NEO-46535)
+* Il flusso di lavoro di tracciamento è stato migliorato per ottimizzare le prestazioni in caso di elevate dimensioni di consegna. (NEO-45064)
+* La gestione del tracciamento è stata migliorata per risolvere possibili problemi con i parametri dinamici negli URL. La gestione del tracciamento v3 ora gestisce gli URL di tipo AJAX (con parametri dopo un &#39;#&#39;) e impedisce agli strumenti di terze parti di modificare gli URL di tracciamento. Per applicare questa modifica, contatta l’Adobe . (NEO-46535)
 
 <!--To apply this change, the marketing, tracking and mid servers need to be updated to 7.3.3. To enable the new tracking management mode, set the `emailLinksVersion` parameter to '3' in the configuration file of the marketing server. (NEO-46535)-->
 
 **Patch**
 
-* È stato risolto un problema che poteva impedire l’invio di notifiche push a bozza di iOS dall’istanza di controllo (contesto di messaggistica transazionale). (NEO-54713)
-* È stato risolto un problema che poteva impedire lo scorrimento in **Modifica** dell&#39;Editor di contenuti digitali (DCE). (NEO-54474)
-* È stato risolto un problema che si verificava quando due attività di arricchimento utilizzavano lo stesso identificatore di nome nel collegamento, il che portava la seconda attività di arricchimento a utilizzare i collegamenti della prima. (NEO-48851)
+* È stato risolto un problema che poteva impedire l’invio di notifiche push a prova di iOS dall’istanza di controllo (contesto Messaggistica transazionale). (NEO-54713)
+* È stato risolto un problema che poteva impedire lo scorrimento nella scheda **Modifica** dell’editor di contenuti digitali (DCE). (NEO-54474)
+* È stato risolto un problema che causava l’utilizzo dei collegamenti della prima attività di arricchimento quando due attività di arricchimento utilizzavano lo stesso identificatore di nome nel collegamento. (NEO-48851)
 
 ## ![](assets/do-not-localize/green.png) Versione 7.3.2 - Build 9356 {#release-7-3-2}
 
@@ -61,7 +61,7 @@ _21 novembre 2022_
 
 >[!NOTE]
 >
->Questa versione è disponibile in versione GA solo per le distribuzioni on-premise e ibride.
+>Questa versione è in versione GA solo per distribuzioni on-premise e ibride.
 
 **Aggiornamenti della compatibilità**
 
