@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: c7c6c6a2fe6beb17bfb203e8895661c2f3084cc2
+source-git-commit: 2ba04c785f6587741fdf421116781306e74f0168
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -374,6 +374,9 @@ Scarica Microsoft Edge WebView2 dal [sito web per sviluppatori Microsoft](http:/
 ## SDK per dispositivi mobili{#MobileSDK}
 
 Puoi utilizzare Campaign per [inviare notifiche push](../../delivery/using/about-mobile-app-channel.md) sui sistemi operativi elencati di seguito, utilizzando l’[SDK mobile associato](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
+
+Puoi anche utilizzare l’SDK di Adobe Experience Platform Mobile configurando l’estensione Adobe Campaign nell’interfaccia utente di raccolta dati.
+
 
 <table>
 <tbody>
