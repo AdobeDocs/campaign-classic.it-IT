@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 143fe21447f91120e63df4409597472849bb6d47
 workflow-type: tm+mt
 source-wordcount: '2947'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -29,21 +29,21 @@ _20 marzo 2023_
 
 **Miglioramento della sicurezza**
 
-* Per ottimizzare la sicurezza, Tomcat è stato aggiornato dalla versione 8.5.81 alla versione 8.5.85. (NEO-56936)
+* Per migliorare la sicurezza, Tomcat è stato aggiornato dalla versione 8.5.81 alla versione 8.5.85. (NEO-56936)
 
 **Miglioramenti**
 
-* Il flusso di lavoro Fatturazione è stato migliorato per ottimizzare le prestazioni. (NEO-47658)
-* Il flusso di lavoro di tracciamento è stato migliorato per ottimizzare le prestazioni in caso di elevate dimensioni di consegna. (NEO-45064)
-* La gestione del tracciamento è stata migliorata per risolvere possibili problemi con i parametri dinamici negli URL. La gestione del tracciamento v3 ora gestisce gli URL di tipo AJAX (con parametri dopo un &#39;#&#39;) e impedisce agli strumenti di terze parti di modificare gli URL di tracciamento. Per applicare questa modifica, contatta l’Adobe . (NEO-46535)
+* Il flusso di lavoro Fatturazione è stato migliorato per ottimizzarne le prestazioni. (NEO-47658)
+* Il flusso di lavoro di tracciamento è stato migliorato per ottimizzarne le prestazioni in caso di consegne di dimensioni elevate. (NEO-45064)
+* La gestione del tracciamento è stata migliorata per risolvere possibili problemi relativi ai parametri dinamici negli URL. La gestione del tracciamento v3 ora gestisce gli URL di tipo AJAX (con parametri dopo il simbolo “#”) e impedisce agli strumenti di terze parti di modificare gli URL di tracciamento. Per applicare questa modifica, contatta Adobe. (NEO-46535)
 
 <!--To apply this change, the marketing, tracking and mid servers need to be updated to 7.3.3. To enable the new tracking management mode, set the `emailLinksVersion` parameter to '3' in the configuration file of the marketing server. (NEO-46535)-->
 
 **Patch**
 
-* È stato risolto un problema che poteva impedire l’invio di notifiche push a prova di iOS dall’istanza di controllo (contesto Messaggistica transazionale). (NEO-54713)
+* È stato risolto un problema che poteva impedire all’istanza di controllo (contesto Messaggistica transazionale) di inviare notifiche push iOS in stato di bozza. (NEO-54713)
 * È stato risolto un problema che poteva impedire lo scorrimento nella scheda **Modifica** dell’editor di contenuti digitali (DCE). (NEO-54474)
-* È stato risolto un problema che causava l’utilizzo dei collegamenti della prima attività di arricchimento quando due attività di arricchimento utilizzavano lo stesso identificatore di nome nel collegamento. (NEO-48851)
+* È stato risolto un problema che si verificava quando due attività di arricchimento utilizzavano lo stesso identificatore di nome nel collegamento, e questo faceva sì che la seconda utilizzasse i collegamenti della prima. (NEO-48851)
 
 ## ![](assets/do-not-localize/orange_2.png) Versione 7.3.2 - Build 9356 {#release-7-3-2}
 
