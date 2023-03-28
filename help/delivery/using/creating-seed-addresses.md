@@ -4,7 +4,7 @@ title: Creare indirizzi seed
 description: Scopri come creare e utilizzare gli indirizzi di seed
 feature: Seed Address
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 0065a25250d73c71e7569768a38b5836cccab992
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 1%
@@ -32,11 +32,11 @@ Per creare indirizzi di seed, segui i passaggi seguenti:
    >
    >L’etichetta dell’indirizzo viene automaticamente compilata con il cognome e il nome definiti.
    >
-   >Non è necessario inserire tutti i campi di ciascuna scheda durante la creazione di un indirizzo di seed. Eventuali elementi di personalizzazione mancanti vengono inseriti in modo casuale durante la distribuzione.
+   >Non è necessario inserire tutti i campi di ciascuna scheda durante la creazione di un indirizzo di seed. Gli elementi di personalizzazione mancanti vengono inseriti in modo casuale durante l’analisi della consegna.
 
    ![](assets/s_ncs_user_seedlist_new_address.png)
 
-1. In **[!UICONTROL Seed fields]** , immetti i valori che verranno inseriti nei registri di consegna durante la fase di analisi (in **[!UICONTROL nms:broadLog]** tabella).
+1. In **[!UICONTROL Address fields]** , immetti i valori che verranno inseriti nei registri di consegna durante la fase di analisi (in **[!UICONTROL nms:broadLog]** tabella).
 
 1. In **[!UICONTROL Additional data]** , immetti i dati di personalizzazione utilizzati per le consegne create nei flussi di lavoro di gestione dati a cui desideri assegnare un valore specifico.
 
