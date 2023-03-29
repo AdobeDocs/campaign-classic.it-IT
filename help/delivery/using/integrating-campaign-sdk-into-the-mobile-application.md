@@ -4,10 +4,10 @@ title: Integrare Campaign SDK
 description: Scopri come integrare l’SDK Campaign nella tua app mobile
 feature: Mobile SDK Integration, Push
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: fd19a2f11773e9e4c841f685a3491a763493e572
+source-git-commit: 1ead0b1afc8c924cb4f8d36c608cd570e5fe7a44
 workflow-type: tm+mt
-source-wordcount: '1020'
-ht-degree: 0%
+source-wordcount: '995'
+ht-degree: 1%
 
 ---
 
@@ -15,19 +15,17 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-
->[!NOTE]
+>[!CAUTION]
 >
->Adobe consiglia di utilizzare l’SDK di Adobe Experience Platform Mobile configurando l’estensione Adobe Campaign nell’interfaccia utente di raccolta dati. L&#39;SDK di Adobe Experience Platform Mobile consente di sviluppare soluzioni e servizi di Experience Cloud nelle app mobili. La configurazione degli SDK viene gestita tramite l’interfaccia utente di raccolta dati per una configurazione flessibile e integrazioni estensibili basate su regole. [Ulteriori informazioni nella documentazione di Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
-
-Gli SDK di Campaign per iOS e Android sono uno dei componenti del modulo Canale app mobile. L’obiettivo dell’SDK è quello di facilitare l’integrazione di un’app mobile nella piattaforma Adobe Campaign.
+>Adobe consiglia vivamente di utilizzare l’SDK di Adobe Experience Platform Mobile configurando l’estensione Adobe Campaign nell’interfaccia utente di raccolta dati. L&#39;SDK di Adobe Experience Platform Mobile consente di sviluppare soluzioni e servizi di Experience Cloud nelle app mobili. La configurazione degli SDK viene gestita tramite l’interfaccia utente di raccolta dati per una configurazione flessibile e integrazioni estensibili basate su regole. [Ulteriori informazioni nella documentazione di Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 
 Per ottenere l’SDK di Campaign (noto in precedenza come SDK di Neolane), contatta [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
 
 Per ulteriori informazioni sulle diverse versioni di Android e iOS supportate, consulta la [Matrice di compatibilità](../../rn/using/compatibility-matrix.md#MobileSDK).
 
+Di seguito sono riportati i passaggi di integrazione per l’SDK di Campaign.
 
-## Caricamento dell’SDK di Campaign {#loading-campaign-sdk}
++++**Caricamento dell’SDK di Campaign**
 
 * **In Android**: la **neolane_sdk-release.aar** deve essere collegato al progetto.
 
@@ -55,7 +53,9 @@ Per ulteriori informazioni sulle diverse versioni di Android e iOS supportate, c
    >
    >Per la versione 1.0.25 dell’SDK, le quattro architetture sono disponibili nella sezione **Neolane_SDK.h** file.
 
-## Dichiarazione delle impostazioni di integrazione {#declaring-integration-settings}
++++
+
++++**Dichiarazione delle impostazioni di integrazione**
 
 Per integrare l’SDK di Campaign nell’app mobile, l’amministratore funzionale deve fornire allo sviluppatore le seguenti informazioni:
 
@@ -85,7 +85,9 @@ Per integrare l’SDK di Campaign nell’app mobile, l’amministratore funziona
    [nl setIntegrationKey:strIntegrationKey];
    ```
 
-## Funzione di registrazione {#registration-function}
++++
+
++++**Funzione di registrazione**
 
 La funzione di registrazione consente di:
 
@@ -141,7 +143,9 @@ La funzione di registrazione consente di:
    }
    ```
 
-## Funzione di tracciamento {#tracking-function}
++++
+
++++**Funzione di tracciamento**
 
 * **In Android**:
 
@@ -293,7 +297,9 @@ La funzione di registrazione consente di:
    >
    >Dalla versione 7.0, una volta **applicazione:didReceiveRemoteNotification:fetchCompletionHandler** viene implementata, il sistema operativo chiama solo questa funzione. La **applicazione:didReceiveRemoteNotification** La funzione non viene pertanto chiamata.
 
-## Tracciamento delle notifiche silenziose {#silent-notification-tracking}
++++
+
++++**Tracciamento delle notifiche silenziose**
 
 iOS ti consente di inviare notifiche silenziose, notifiche o dati che verranno inviati direttamente a un’app mobile senza visualizzarli. Adobe Campaign ti consente di seguirli.
 
@@ -333,7 +339,9 @@ Per tenere traccia della notifica silenziosa, segui l’esempio seguente:
 }
 ```
 
-### Delegato RegisterDeviceStatus {#registerdevicestatus-delegate}
++++
+
++++**Delegato RegisterDeviceStatus**
 
 >[!NOTE]
 >
@@ -529,7 +537,9 @@ Implementazione **registerDeviceStatus** delegare, segui questi passaggi:
    @end
    ```
 
-## Variabili {#variables}
++++
+
++++**Variabili**
 
 Le variabili ti consentono di definire il comportamento dell’app mobile dopo aver ricevuto una notifica. Queste variabili devono essere definite nel codice dell’app mobile e nella console Adobe Campaign, nella **[!UICONTROL Variables]** scheda nel servizio dedicato per le applicazioni mobili (vedi [Configurazione di un’app mobile in Adobe Campaign](configuring-the-mobile-application.md)). Ecco un esempio di codice che consente a un’app mobile di raccogliere tutte le variabili aggiunte in una notifica. Nel nostro esempio, utilizziamo la variabile &quot;VAR&quot;.
 
@@ -577,7 +587,9 @@ Le variabili ti consentono di definire il comportamento dell’app mobile dopo a
 >
 >Adobe consiglia di scegliere nomi di variabili brevi perché le dimensioni di notifica sono limitate a 4kB per iOS e Android.
 
-## Estensione del servizio di notifica {#notification-service-extension}
++++
+
++++**Estensione del servizio di notifica**
 
 **Per iOS**
 
@@ -611,7 +623,9 @@ I file multimediali devono essere scaricati a livello di estensione del servizio
     // Perform the download to local storage
 ```
 
-## Estensione contenuto notifica {#notification-content-extension}
++++
+
++++**Estensione contenuto notifica**
 
 **Per iOS**
 
@@ -662,3 +676,5 @@ A questo livello, è necessario:
    }
    @end
    ```
+
++++
