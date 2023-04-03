@@ -4,7 +4,7 @@ title: 'Nota tecnica: abilitare Microsoft Edge Chromium nell’ambiente Campaign
 description: Campaign - Cromo Edge
 hide: true
 hidefromtoc: true
-source-git-commit: d9f57d4e5b6f880907040344ece40546456a2321
+source-git-commit: d883db444ef7cc243241833b86e8b946454e5d2a
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 14%
@@ -19,7 +19,7 @@ ht-degree: 14%
 
 ## Cosa è cambiato?
 
-A seguito della fine del ciclo di vita di Microsoft Internet Explorer 11, il motore di rendering HTML per Adobe Services (pagina di accesso) nella console client utilizza ora Microsoft Edge Chromium, a partire da Campaign Classic v7.3.
+Dopo la fine del ciclo di vita di Microsoft Internet Explorer 11, il motore di rendering HTML per le dashboard nella console client utilizza Edge Chromium, a partire da Campaign Classic v7.3.
 
 Oltre all’installazione del runtime Microsoft Edge Webview 2, che è ora [necessaria per qualsiasi installazione della console client](../../installation/using/installing-the-client-console.md#webview), Microsoft Edge Chromium deve essere abilitato nelle istanze.
 
@@ -29,7 +29,7 @@ Se l’ambiente è stato aggiornato a Campaign Classic v7.3 (o versione successi
 
 ## Come si esegue l’aggiornamento?
 
-* Come **ospitato** cliente, Adobe ha già abilitato Microsoft Edge Chromium nelle istanze.
+* Come **ospitato** cliente, Adobe ha già abilitato Microsoft Edge Chromium nelle istanze. Non è richiesta alcuna azione aggiuntiva.
 
 * Come **on-premise/ibrido** cliente, devi abilitare Microsoft Edge Chromium nelle istanze.
 
