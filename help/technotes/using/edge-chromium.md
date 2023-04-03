@@ -4,10 +4,10 @@ title: 'Nota tecnica: abilitare Microsoft Edge Chromium nell’ambiente Campaign
 description: Campaign - Cromo Edge
 hide: true
 hidefromtoc: true
-source-git-commit: d883db444ef7cc243241833b86e8b946454e5d2a
+source-git-commit: 17ef8f92ab5dbecadf20140c3faff735d92c8223
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 14%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -39,19 +39,19 @@ Se l’ambiente è stato aggiornato a Campaign Classic v7.3 (o versione successi
 
    1. Modifica il file di configurazione del server Campaign (`serverConf.xml`)
    1. In `<web>` modulo, set `webView2Mode = "1"`
-   1. Ricarica la configurazione del server
+   1. Esegui il comando seguente per ricaricare la configurazione del server:
 
       ```
       nlserver config -reload
       ```
 
-   1. Riavvia il server web
+   1. Esegui il seguente comando per riavviare il server Web:
 
       ```
       nlserver restart web
       ```
 
-   1. Se il tuo ambiente è in esecuzione su Apache, riavvia Apache
+   1. Se il tuo ambiente utilizza Apache come server web, esegui il seguente comando per riavviare Apache:
 
       ```
       /etc/init.d/apache2 restart
