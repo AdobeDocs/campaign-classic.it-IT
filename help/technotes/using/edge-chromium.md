@@ -1,0 +1,70 @@
+---
+product: campaign
+title: 'Nota tecnica: abilitare Microsoft Edge Chromium nell’ambiente Campaign'
+description: Campaign - Cromo Edge
+hide: true
+hidefromtoc: true
+source-git-commit: d9f57d4e5b6f880907040344ece40546456a2321
+workflow-type: tm+mt
+source-wordcount: '228'
+ht-degree: 14%
+
+---
+
+
+# Come abilitare Microsoft Edge Chromium nell’ambiente {#edge-conf}
+
+![](../../assets/v7-only.svg)
+
+
+## Cosa è cambiato?
+
+A seguito della fine del ciclo di vita di Microsoft Internet Explorer 11, il motore di rendering HTML per Adobe Services (pagina di accesso) nella console client utilizza ora Microsoft Edge Chromium, a partire da Campaign Classic v7.3.
+
+Oltre all’installazione del runtime Microsoft Edge Webview 2, che è ora [necessaria per qualsiasi installazione della console client](../../installation/using/installing-the-client-console.md#webview), Microsoft Edge Chromium deve essere abilitato nelle istanze.
+
+## Sei interessato da questo problema?
+
+Se l’ambiente è stato aggiornato a Campaign Classic v7.3 (o versione successiva), l’utente è interessato.
+
+## Come si esegue l’aggiornamento?
+
+* Come **ospitato** cliente, Adobe ha già abilitato Microsoft Edge Chromium nelle istanze.
+
+* Come **on-premise/ibrido** cliente, devi abilitare Microsoft Edge Chromium nelle istanze.
+
+   Durante l’aggiornamento ad Campaign Classic v7.3 (e versioni successive), viene visualizzata una nuova `webView2Mode` l’attributo è disponibile nel file di configurazione del server Campaign `serverConf.xml`. Questo attributo deve essere abilitato.
+
+   Per eseguire questa operazione, applica i seguenti passaggi a tutti gli ambienti (MKT, MID, RT):
+
+   1. Modifica il file di configurazione del server Campaign (`serverConf.xml`)
+   1. In `<web>` modulo, set `webView2Mode = "1"`
+   1. Ricarica la configurazione del server
+
+      ```
+      nlserver config -reload
+      ```
+
+   1. Riavvia il server web
+
+      ```
+      nlserver restart web
+      ```
+
+   1. Se il tuo ambiente è in esecuzione su Apache, riavvia Apache
+
+      ```
+      /etc/init.d/apache2 restart
+      ```
+
+
+>[!NOTE]
+>
+>Per qualsiasi domanda su queste modifiche, contatta [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+
+## Argomenti correlati
+
+* [Aggiornare l’ambiente](../../production/using/build-upgrade.md)
+* [Domande frequenti sull’aggiornamento della build](../../platform/using/faq-build-upgrade.md)
+* [Installare la console client di Campaign](../../installation/using/installing-the-client-console.md)
+
