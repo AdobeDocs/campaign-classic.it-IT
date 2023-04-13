@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: a4a5e014d8055cf29bdbf7debb72eb20388c9b19
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3577'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,11 +25,11 @@ Per gli aggiornamenti relativi alla versione, consulta le [Note sulla versione d
 
 ### Aprile 2023
 
-È stata aggiunta una nota tecnica su come abilitare gli ambienti on-premise/ibridi Microsoft Edge Chromium . [Maggiori informazioni](../../technotes/using/edge-chromium.md)
+È stata aggiunta una nota tecnica su come abilitare gli ambienti on-premise/ibridi di Microsoft Edge basato su Chromium. [Ulteriori informazioni](../../technotes/using/edge-chromium.md)
 
 ### Marzo 2023
 
-È stata aggiornata la sezione Note sulla versione 7.3.3 con miglioramenti e patch. [Maggiori informazioni](latest-release.md)
+È stata aggiornata la sezione Note sulla versione 7.3.3 con miglioramenti e patch. [Ulteriori informazioni](latest-release.md)
 
 
 +++ 2022
