@@ -2,13 +2,13 @@
 product: campaign
 title: 'Nota tecnica: abilitare Microsoft Edge Chromium nell’ambiente Campaign'
 description: Campaign - Cromo Edge
-source-git-commit: a4a5e014d8055cf29bdbf7debb72eb20388c9b19
+exl-id: 22f4cbaf-ca37-47b9-b7dd-1ee73d5b348d
+source-git-commit: 095919608e08a0bf8ad1487fa5ec0a1ddb443c7b
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 13%
 
 ---
-
 
 # Come abilitare Microsoft Edge Chromium nell’ambiente {#edge-conf}
 
@@ -65,4 +65,3 @@ Se l’ambiente è stato aggiornato a Campaign Classic v7.3 (o versione successi
 * [Aggiornare l’ambiente](../../production/using/build-upgrade.md)
 * [Domande frequenti sull’aggiornamento della build](../../platform/using/faq-build-upgrade.md)
 * [Installare la console client di Campaign](../../installation/using/installing-the-client-console.md)
-
