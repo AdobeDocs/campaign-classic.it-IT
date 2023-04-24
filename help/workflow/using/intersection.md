@@ -7,7 +7,7 @@ exl-id: f426bf02-9899-49eb-b699-728d51b57c64
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '436'
-ht-degree: 1%
+ht-degree: 13%
 
 ---
 
@@ -15,16 +15,16 @@ ht-degree: 1%
 
 >[!CONTEXTUALHELP]
 >id="ac_workflow_intersection"
->title="Attività di intersezione"
->abstract="Un’attività di tipo Intersezione crea un target dall’intersezione delle destinazioni ricevute. Un’intersezione consente di estrarre solo la popolazione comune a tutti i risultati delle attività in entrata."
->additional-url="https://video.tv.adobe.com/v/329373" text="Guarda il video dimostrativo"
+>title="Attività Intersezione"
+>abstract="Un’attività di tipo Intersezione crea un target dall’intersezione dei target ricevuti. L’intersezione consente di estrarre solo la popolazione comune a tutti i risultati delle attività in entrata."
+>additional-url="https://video.tv.adobe.com/v/329373?captions=ita" text="Guarda il video dimostrativo"
 
 
 ![](../../assets/v7-only.svg)
 
 Un **Intersection** L’attività -type crea un target dall’intersezione dei target ricevuti.
 
-Un’intersezione consente di estrarre solo la popolazione comune a tutti i risultati delle attività in entrata. Il target viene creato con tutti i risultati ricevuti: tutte le attività precedenti devono pertanto essere completate prima che sia possibile eseguire l’intersezione. Per configurare questa attività, devi immettere un’etichetta per essa e le opzioni relative al risultato.
+L’intersezione consente di estrarre solo la popolazione comune a tutti i risultati delle attività in entrata. Il target viene creato con tutti i risultati ricevuti: tutte le attività precedenti devono pertanto essere completate prima che sia possibile eseguire l’intersezione. Per configurare questa attività, devi immettere un’etichetta per essa e le opzioni relative al risultato.
 
 ![](assets/s_user_segmentation_inter.png)
 
