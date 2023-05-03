@@ -7,7 +7,7 @@ exl-id: 51be6b90-2a7a-4757-9754-d16c540a87ff
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '650'
-ht-degree: 26%
+ht-degree: 40%
 
 ---
 
@@ -33,7 +33,7 @@ Adobe Campaign utilizza i flussi di lavoro per:
 
 Un flusso di lavoro può significare sia una definizione del processo (il modello di flusso di lavoro, che è una rappresentazione di ciò che dovrebbe accadere) che un’istanza di questo processo (un’istanza di flusso di lavoro, che è una rappresentazione di ciò che effettivamente accade).
 
-Il modello di flusso di lavoro descrive le varie attività da eseguire e il modo in cui vengono collegate tra loro. I modelli di attività sono denominati attività e sono rappresentati da icone. Sono collegate tra loro da transizioni.
+Il modello di flusso di lavoro descrive le varie attività da eseguire e il modo in cui vengono collegate tra loro. I modelli di attività sono denominati attività e sono rappresentati da icone. Sono collegati tra loro da transizioni.
 
 ![](assets/example1.png)
 
@@ -49,7 +49,7 @@ Ogni flusso di lavoro contiene:
 
 * **[!UICONTROL Transitions]**
 
-   Le transizioni consentono di collegare le attività e definirne la sequenza. Una transizione collega un’attività sorgente a un’attività di destinazione. Esistono diversi tipi di transizioni, che dipendono dall’attività di origine. Alcune transizioni dispongono di parametri aggiuntivi, ad esempio una durata, una condizione o un filtro.
+   Le transizioni consentono di collegare le attività e definirne la sequenza. Una transizione collega un’attività di origine a un’attività di destinazione. Esistono diversi tipi di transizioni, che dipendono dall’attività di origine. Alcune transizioni dispongono di parametri aggiuntivi, ad esempio una durata, una condizione o un filtro.
 
    Una transizione non collegata a un’attività di destinazione è di colore arancione e l’intestazione della freccia è visualizzata come rombo.
 

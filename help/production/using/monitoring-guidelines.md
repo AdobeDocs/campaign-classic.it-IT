@@ -6,8 +6,8 @@ feature: Monitoring
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
 source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 22%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -48,13 +48,13 @@ Sono disponibili diversi metodi automatici. per aiutarti a monitorare l’istanz
 
 La traccia di audit consente di visualizzare la cronologia completa delle modifiche relative a opzioni, flussi di lavoro e schemi all’interno dell’istanza. Per ulteriori informazioni, [fai clic qui](../../production/using/audit-trail.md).
 
-**Pannello di controllo Campaign**
+**Pannello di controllo**
 
 Il Pannello di controllo Campaign consente di gestire diverse impostazioni dell’istanza: gestisci le autorizzazioni URL, controlla i dettagli dell’istanza come le versioni di build dei server, ecc. Consente inoltre di monitorare lo spazio disponibile sui server SFTP collegati all’istanza. Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it).
 
 >[!NOTE]
 >
->Il Pannello di controllo Campaign è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente l’accesso come amministratore sono descritti in[questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel).
+>Il Pannello di controllo è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente l’accesso come amministratore sono descritti in[questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel).
 >
 >Tieni presente che l’istanza deve essere ospitata su AWS e aggiornata con [build GA più recente](../../rn/using/rn-overview.md). Scopri come controllare la versione in [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 

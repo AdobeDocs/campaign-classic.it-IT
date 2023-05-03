@@ -102,7 +102,7 @@ Questo canale è progettato solo a scopo descrittivo, ad esempio per definire le
 
 In Campaign sono disponibili tre tipi di oggetti di consegna:
 
-### Consegna singola {#single-delivery}
+### Consegna unica {#single-delivery}
 
 A **consegna** è un oggetto di consegna autonomo che viene eseguito una volta. Può essere duplicato, preparato di nuovo, ma finché è nello stato finale (annullato, interrotto, finito) non può essere riutilizzato.
 
