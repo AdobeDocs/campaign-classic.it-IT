@@ -2,18 +2,19 @@
 product: campaign
 title: Raccogliere dati da analizzare
 description: Raccogliere dati da analizzare
+badge: label="v7" type="Informative" tooltip="Si applica solo ad Campaign Classic v7"
 feature: Reporting
 exl-id: cf621374-88f9-4def-8bea-87e0ea69ecd3
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '514'
 ht-degree: 3%
 
 ---
 
 # Raccogliere dati da analizzare{#collecting-data-to-analyze}
 
-![](../../assets/common.svg)
+
 
 I dati da utilizzare per la creazione del rapporto possono essere selezionati direttamente nella pagina del rapporto (per ulteriori informazioni, consulta [Utilizzo del contesto](../../reporting/using/using-the-context.md)) o raccolta tramite una o più query.
 

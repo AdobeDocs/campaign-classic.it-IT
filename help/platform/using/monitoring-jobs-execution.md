@@ -1,12 +1,14 @@
 ---
 product: campaign
 title: Monitoraggio dell’esecuzione dei processi
-description: Scopri come monitorare l’esecuzione di processi di importazione ed esportazione.
+description: Scopri come monitorare l’esecuzione di processi di importazione ed esportazione
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 415c5137-2eb0-4581-a46e-26e8e3d264fa
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 11%
@@ -15,7 +17,7 @@ ht-degree: 11%
 
 # Monitorare l’esecuzione dei processi {#monitoring-job-execution}
 
-![](../../assets/common.svg)
+
 
 Puoi tenere traccia dell’esecuzione dei processi di importazione ed esportazione direttamente dall’elenco dei processi di importazione/esportazione.
 
@@ -54,7 +56,7 @@ Ogni stato è rappresentato da un’icona e un’etichetta speciali. Gli stati e
 
    Fai clic su **[!UICONTROL Pause]**: il lavoro è sospeso. È possibile riavviarlo facendo clic su **[!UICONTROL Start]**.
 
-* **Completato**
+* **Finito**
 
    Esecuzione del processo completata.
 

@@ -2,9 +2,11 @@
 product: campaign
 title: Indirizzi di seed
 description: Indirizzi di seed
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Seed Address
 exl-id: a16103bf-0498-4f59-ad96-8bfdeea26577
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 7%
@@ -13,7 +15,7 @@ ht-degree: 7%
 
 # Indirizzi di seed{#seed-addresses}
 
-![](../../assets/common.svg)
+
 
 Se la tabella dei destinatari è una tabella personalizzata, sono necessarie configurazioni aggiuntive. La **[!UICONTROL nms:seedMember]** lo schema deve essere esteso. Agli indirizzi di seed viene aggiunta una scheda aggiuntiva per definire i campi adeguati, come illustrato di seguito:
 

@@ -2,8 +2,9 @@
 product: campaign
 title: Definire il tag di web tracking
 description: Definire il tag di web tracking
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 0b5575be-57e7-4eee-9c0a-e9ef4b0931bf
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 2%
@@ -12,7 +13,7 @@ ht-degree: 2%
 
 # Tag di tracciamento web: definizione{#web-tracking-tag-definition}
 
-![](../../assets/v7-only.svg)
+
 
 Un tag di web tracking è semplicemente un URL costruito con i parametri appropriati, inviato al server di reindirizzamento tramite una query HTTP.
 

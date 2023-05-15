@@ -2,9 +2,10 @@
 product: campaign
 title: Informazioni sulle tipologie di campagne
 description: Informazioni sulle tipologie di campagne
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Typology Rules
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 21%
@@ -12,8 +13,6 @@ ht-degree: 21%
 ---
 
 # Informazioni sulle tipologie di campagne{#about-campaign-typologies}
-
-![](../../assets/v7-only.svg)
 
 Ottimizzazione campagna è il modulo Adobe Campaign che ti consente di controllare, filtrare e monitorare l’invio di consegne. Per evitare conflitti tra campagne, Adobe Campaign può sottoporre a test diverse combinazioni applicando specifiche regole di vincolo. Ciò garantisce che i messaggi inviati soddisfino le esigenze e le aspettative dei clienti, in linea con le politiche di comunicazione aziendali.
 

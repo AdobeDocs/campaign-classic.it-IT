@@ -2,9 +2,10 @@
 product: campaign
 title: Gestire e personalizzare gli elenchi
 description: Scopri come sfogliare e configurare gli elenchi
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Audiences, Data Management
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
-source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 2%
@@ -13,7 +14,7 @@ ht-degree: 2%
 
 # Gestire e personalizzare gli elenchi{#manage-and-customize-lists}
 
-![](../../assets/v7-only.svg)
+
 
 Puoi accedere agli elenchi di record nel database di Campaign utilizzando Explorer. È possibile filtrare gli elenchi, eseguire ricerche, aggiungere informazioni, filtrare e ordinare i dati.
 

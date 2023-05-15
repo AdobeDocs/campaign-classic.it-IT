@@ -2,9 +2,11 @@
 product: campaign
 title: Informazioni sui modelli
 description: Guida introduttiva ai modelli di consegna
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Delivery Templates
 exl-id: d943898c-06fe-451d-aa28-8a95665f4112
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 1%
@@ -13,7 +15,7 @@ ht-degree: 1%
 
 # Informazioni sui modelli{#about-templates}
 
-![](../../assets/common.svg)
+
 
 Per essere riutilizzata, è possibile salvare una configurazione di consegna in un modello di consegna. Il modello può contenere una configurazione completa o parziale della consegna.
 

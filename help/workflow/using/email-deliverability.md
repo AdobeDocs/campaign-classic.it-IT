@@ -2,8 +2,9 @@
 product: campaign
 title: Consegna e-mail
 description: Ulteriori informazioni sul pacchetto Email Deliverability
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Deliverability
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 4%
@@ -13,7 +14,7 @@ ht-degree: 4%
 
 # Monitoraggio del recapito messaggi (recapito messaggi e-mail){#email-deliverability}
 
-![](../../assets/v7-only.svg)
+
 
 Il flusso di lavoro descritto di seguito è installato per impostazione predefinita su tutte le istanze e consente di inizializzare l’elenco delle regole di qualifica della posta non recapitata, l’elenco dei domini e l’elenco delle MX. Una volta che **Monitoraggio del recapito messaggi (recapito messaggi e-mail)** il pacchetto è installato, questo flusso di lavoro viene eseguito ogni notte. Per ulteriori informazioni sul monitoraggio del recapito messaggi, consulta questo [sezione](../../delivery/using/about-deliverability.md).
 

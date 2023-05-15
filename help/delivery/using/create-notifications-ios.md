@@ -2,9 +2,10 @@
 product: campaign
 title: Creare una notifica push per dispositivi iOS
 description: Scopri come creare notifiche push per iOS
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Push
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
-source-git-commit: 8d635722b8961b3edac9cc98f00f17b86f4ee523
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 6%
@@ -13,7 +14,7 @@ ht-degree: 6%
 
 # Creare notifiche per iOS{#create-notifications-ios}
 
-![](../../assets/v7-only.svg)
+
 
 Questa sezione descrive gli elementi specifici per la consegna delle notifiche iOS. I concetti globali sulla creazione delle consegne sono descritti in [questa sezione](steps-about-delivery-creation-steps.md).
 

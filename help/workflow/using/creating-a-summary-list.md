@@ -2,9 +2,10 @@
 product: campaign
 title: Creare un elenco di riepilogo
 description: Creare un elenco di riepilogo
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 2%
@@ -13,7 +14,7 @@ ht-degree: 2%
 
 # Creare un elenco di riepilogo{#creating-a-summary-list}
 
-![](../../assets/v7-only.svg)
+
 
 Questo caso d’uso descrive la creazione di un flusso di lavoro che, dopo la raccolta dei file e dopo diversi arricchimenti, consente di creare un elenco di riepilogo. L&#39;esempio si basa su un elenco di contatti che hanno effettuato acquisti in un negozio.
 

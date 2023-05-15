@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: Test dei modelli di messaggio transazionali
-description: Scopri come gestire gli indirizzi di seed nei messaggi transazionali per visualizzarli in anteprima e testarli in Adobe Campaign Classic.
+description: Scopri come gestire gli indirizzi di seed nei messaggi transazionali per visualizzarli in anteprima e testarli in Adobe Campaign Classic
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: 417004c9-ed96-4b98-a518-a3aa6123ee7b
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 2%
@@ -15,7 +16,7 @@ ht-degree: 2%
 
 # Test dei modelli di messaggio transazionali {#testing-message-templates}
 
-![](../../assets/v7-only.svg)
+
 
 Una volta che [modello di messaggio](../../message-center/using/creating-the-message-template.md) è pronto, segui i passaggi seguenti per visualizzarlo in anteprima e testarlo.
 

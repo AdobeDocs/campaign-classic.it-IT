@@ -2,12 +2,13 @@
 product: campaign
 title: Aggiungi un campo calcolato di tipo Enumerazione
 description: Scopri come aggiungere un campo calcolato di tipo Enumerazione
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: workflow
 content-type: reference
 topic-tags: use-cases
 feature: Workflows, Data Management
 exl-id: 3f606d3a-0af5-4315-bb08-1b21a71f1721
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 0%
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 # Aggiungi un campo calcolato di tipo Enumerazione {#adding-an-enumeration-type-calculated-field}
 
-![](../../assets/v7-only.svg)
+
 
 Qui si desidera creare una query con un **[!UICONTROL Enumerations]** digitare campo calcolato. Questo campo genera una colonna aggiuntiva nella finestra di anteprima dati. Questa colonna specifica i valori numerici restituiti come risultato per ciascun destinatario (0, 1 e 2). A ogni valore della nuova colonna verrà assegnato un genere: &quot;Uomo&quot; per &quot;1&quot;, &quot;Donna&quot; per &quot;2&quot; o &quot;Non indicato&quot; se il valore è uguale a &quot;0&quot;.
 

@@ -1,19 +1,20 @@
 ---
 product: campaign
 title: Linee guida per il monitoraggio
-description: Scopri le linee guida e le best practice per monitorare l’istanza e i processi di Campaign.
+description: Scopri le linee guida e le best practice per monitorare l’istanza e i processi di Campaign
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Monitoring
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '762'
+ht-degree: 22%
 
 ---
 
 # Linee guida per il monitoraggio {#monitoring-guidelines}
 
-![](../../assets/v7-only.svg)
+
 
 ## Dashboard di monitoraggio delle istanze {#instance-monitoring-dashboard}
 

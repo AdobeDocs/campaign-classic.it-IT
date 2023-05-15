@@ -2,20 +2,21 @@
 product: campaign
 title: Archiviazione di e-mail
 description: Archiviazione di e-mail
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 3%
+source-wordcount: '1359'
+ht-degree: 5%
 
 ---
 
 # Configurare CCN e-mail {#email-archiving}
 
-![](../../assets/v7-only.svg)
+
 
 Puoi configurare Adobe Campaign per mantenere una copia delle e-mail inviate dalla piattaforma.
 
@@ -34,6 +35,9 @@ A questo scopo, i file .eml corrispondenti alle e-mail inviate vengono trasferit
 * Il sistema di archiviazione e-mail è stato modificato con Adobe Campaign 17.2 (build 8795). Se stavi già utilizzando l’archiviazione e-mail, devi eseguire manualmente l’aggiornamento al nuovo sistema CCN di posta elettronica. Per ulteriori informazioni, consulta la sezione [Passaggio al nuovo Ccn e-mail](#updated-email-archiving-system--bcc-) sezione .
 
 ## Attivazione di indirizzi Ccn e-mail (on-premise) {#activating-email-archiving--on-premise-}
+
+[!BADGE On-Premise e ibrida]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Si applica solo alle distribuzioni on-premise e ibride"}
+
 
 Per attivare l’archiviazione delle e-mail in CCN quando Adobe Campaign è installato in locale, segui i passaggi riportati di seguito.
 
@@ -102,6 +106,9 @@ Assicurati di regolare questi parametri in base alla velocità effettiva di invi
 
 ## Configurazione dell’indirizzo e-mail CCN (on-premise) {#configuring-the-bcc-email-address--on-premise-}
 
+[!BADGE On-Premise e ibrida]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Si applica solo alle distribuzioni on-premise e ibride"}
+
+
 >[!IMPORTANT]
 >
 >Per motivi di privacy, le e-mail CCN devono essere elaborate da un sistema di archiviazione in grado di memorizzare informazioni personali (PII) sicure.
@@ -124,6 +131,10 @@ In **config-`<instance name>.xml`** file, utilizza i seguenti parametri per defi
 >Inoltre, il relè assegna un **[!UICONTROL Sent]** stato per tutte le e-mail, incluse quelle che non vengono inviate. Pertanto, tutti i messaggi vengono archiviati.
 
 ## Passaggio al nuovo Ccn e-mail {#updated-email-archiving-system--bcc-}
+
+[!BADGE On-Premise e ibrida]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Si applica solo alle distribuzioni on-premise e ibride"}
+
+
 
 >[!IMPORTANT]
 >

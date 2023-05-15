@@ -2,11 +2,13 @@
 product: campaign
 title: Impostazioni di esecuzione
 description: Impostazioni di esecuzione
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 exl-id: e2dea4a0-9ed8-47b6-a16b-eeee653d2290
-source-git-commit: 7728826eea199d2367fcbf556c01ec9d6cae466f
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 4%
@@ -15,7 +17,7 @@ ht-degree: 4%
 
 # Impostazioni di esecuzione{#execution-settings}
 
-![](../../assets/common.svg)
+
 
 Quando crei una simulazione, puoi specificare le impostazioni di esecuzione, se necessario. Queste impostazioni consentono di eseguire la simulazione durante un periodo di attività bassa a seconda della sua priorità o di registrare le query SQL nel registro. Questa fase è facoltativa.
 

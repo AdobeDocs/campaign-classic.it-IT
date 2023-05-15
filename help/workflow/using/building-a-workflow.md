@@ -2,18 +2,19 @@
 product: campaign
 title: Creare un flusso di lavoro
 description: Scopri come creare un flusso di lavoro
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1623'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
 
 # Creare un flusso di lavoro {#building-a-workflow}
 
-![](../../assets/v7-only.svg)
+
 
 Questa sezione descrive i principi chiave e le best practice per creare un flusso di lavoro in Campaign.
 
@@ -153,7 +154,7 @@ I risultati di tutti gli arricchimenti e di tutte le operazioni eseguite durante
 
 ### Dimensioni di targeting e filtro {#targeting-and-filtering-dimensions}
 
-Durante le operazioni di segmentazione dei dati, la chiave di targeting è mappata su una dimensione di filtro. La dimensione di targeting ti consente di definire la popolazione target dell’operazione: destinatari, beneficiari del contratto, operatore, abbonati, ecc. La dimensione di filtro consente di selezionare la popolazione in base a determinati criteri: titolari di contratti, abbonati a newsletter, ecc.
+Durante le operazioni di segmentazione dei dati, la chiave di targeting è mappata su una dimensione filtro. La dimensione targeting consente di definire la popolazione target dell’operazione: destinatari, beneficiari del contratto, operatore, abbonati, ecc. La dimensione filtro consente di selezionare la popolazione in base a determinati criteri: titolari di contratti, abbonati a newsletter, ecc.
 
 Ad esempio, per selezionare i clienti che hanno stipulato una polizza di assicurazione vita per più di 5 anni, seleziona la dimensione di targeting seguente: **Client** e la seguente dimensione di filtro: **Titolare del contratto**. Puoi quindi definire le condizioni di filtro all’interno dell’attività di query
 

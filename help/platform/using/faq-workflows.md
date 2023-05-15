@@ -2,11 +2,12 @@
 product: campaign
 title: Domande frequenti sui flussi di lavoro
 description: Domande frequenti su Campaign Classic
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 7d1bb3c6-d056-4212-9500-75459a0046fa
-source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 97%
@@ -15,7 +16,7 @@ ht-degree: 97%
 
 # Domande frequenti sui flussi di lavoro {#workflows-faq}
 
-![](../../assets/v7-only.svg)
+
 
 Scopri come orchestrare processi e attività con i flussi di lavoro di Adobe Campaign.
 

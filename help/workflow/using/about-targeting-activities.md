@@ -2,20 +2,21 @@
 product: campaign
 title: Informazioni sulle attività di targeting
 description: Informazioni sulle attività di targeting
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Audiences, Targeting Activity
 exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
-source-git-commit: 743baa49e5d62ed1c2f7f635f6bf120a67646e63
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 3%
+ht-degree: 8%
 
 ---
 
 # Attività di targeting nei flussi di lavoro{#about-targeting-activities}
 
-![](../../assets/v7-only.svg)
 
-Queste attività ti consentono di creare uno o più target definendo i set e suddividendo o combinando questi set utilizzando le operazioni di intersezione, unione o esclusione.
+
+Queste attività consentono di creare uno o più target definendo dei set e suddividendo o combinando tali set mediante le operazioni di intersezione, unione o esclusione.
 
 * **Query**: consente di eseguire una query. Fai riferimento a [Creazione di una query](query.md#creating-a-query).
 * **Incremental query**: consente di eseguire una query e pianificarne l’esecuzione. Fai riferimento a [Incremental query](incremental-query.md) sezione .

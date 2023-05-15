@@ -2,8 +2,9 @@
 product: campaign
 title: Tracciamento anonimo
 description: Scopri come configurare il tracciamento anonimo
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: f251eb21-0f3c-4b46-927a-57a3291e705f
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 5%
@@ -11,8 +12,6 @@ ht-degree: 5%
 ---
 
 # Tracciamento anonimo{#anonymous-tracking}
-
-![](../../assets/v7-only.svg)
 
 Adobe Campaign ti consente di collegare le informazioni di web tracking raccolte a un destinatario quando naviga sul tuo sito in modo anonimo. Quando un utente esplora le pagine con tag del sito web, vengono raccolte queste informazioni di navigazione, in modo che una volta fatto clic su un’e-mail inviata da Adobe Campaign, queste vengano identificate e le informazioni vengono automaticamente collegate.
 

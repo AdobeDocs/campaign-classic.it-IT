@@ -2,11 +2,12 @@
 product: campaign
 title: Integrazione tramite SOAP (lato server)
 description: Integrazione tramite SOAP (lato server)
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: 3eaef689-44fa-41b3-ade8-9fe447e165ec
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 3%
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 # Integrazione tramite SOAP (lato server){#integration-via-soap-server-side}
 
-![](../../assets/v7-only.svg)
+
 
 I servizi Web SOAP forniti per la gestione delle offerte sono diversi da quelli generalmente utilizzati in Adobe Campaign. È possibile accedervi tramite l’URL di interazione descritto nella sezione precedente e consentire di presentare o aggiornare le offerte per un determinato contatto.
 

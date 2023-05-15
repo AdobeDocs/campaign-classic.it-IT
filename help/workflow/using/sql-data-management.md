@@ -2,9 +2,10 @@
 product: campaign
 title: Gestione dati SQL
 description: Ulteriori informazioni sull'attività del flusso di lavoro SQL Data Management
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: cada78cb-658f-4b9e-8136-31c17cb1d82f
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 4%
@@ -13,7 +14,7 @@ ht-degree: 4%
 
 # Gestione dati SQL{#sql-data-management}
 
-![](../../assets/v7-only.svg)
+
 
 La **Gestione dati SQL** attività consente di creare script SQL personalizzati per creare e popolare tabelle di lavoro.
 

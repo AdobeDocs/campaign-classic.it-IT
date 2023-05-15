@@ -2,8 +2,9 @@
 product: campaign
 title: Configurare l'accesso a PostgreSQL
 description: Scopri come configurare l’accesso a PostgreSQL
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 2c678f45-2555-4647-9885-bd002db7df37
-source-git-commit: 6b7638eec1718edf30f81005cd6691dd271aaa0c
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 1%
@@ -12,7 +13,7 @@ ht-degree: 1%
 
 # Configurare l&#39;accesso a PostgreSQL {#configure-fda-postgresql}
 
-![](../../assets/v7-only.svg)
+
 
 Utilizzare Campaign **Federated Data Access** (FDA) opzione per elaborare le informazioni memorizzate in un database PostgreSQL esterno.
 

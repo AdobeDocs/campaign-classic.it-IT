@@ -2,11 +2,13 @@
 product: campaign
 title: Creazione di filtri
 description: Creazione di filtri
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1963'
 ht-degree: 0%
@@ -15,7 +17,7 @@ ht-degree: 0%
 
 # Creare i filtri{#creating-filters}
 
-![](../../assets/common.svg)
+
 
 Quando navighi nella struttura di Adobe Campaign (dalla **[!UICONTROL Explorer]** nella home page), i dati contenuti nel database vengono visualizzati in elenchi. Questi elenchi possono essere configurati per visualizzare solo i dati richiesti dall’operatore . È quindi possibile avviare azioni sui dati filtrati. La configurazione del filtro consente di selezionare i dati da un elenco **[!UICONTROL dynamically]**. Se i dati vengono modificati, i dati filtrati vengono aggiornati.
 

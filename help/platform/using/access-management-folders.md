@@ -2,20 +2,21 @@
 product: campaign
 title: Gestire l’accesso alle cartelle di Campaign
 description: Scopri come concedere l’accesso alle cartelle Campaign e creare visualizzazioni
+badge: label="v7" type="Informative" tooltip="Si applica solo ad Campaign Classic v7"
 feature: Application Settings, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '762'
 ht-degree: 1%
 
 ---
 
 # Gestire l’accesso alle cartelle{#folder-access-management}
 
-![](../../assets/common.svg)
+
 
 A ogni cartella della struttura di navigazione di Esplora risorse sono associati diritti di accesso di lettura, scrittura ed eliminazione. Per accedere a un file, un operatore o un gruppo di operatori deve avere almeno accesso in lettura ad esso.
 

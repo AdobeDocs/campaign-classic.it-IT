@@ -2,18 +2,19 @@
 product: campaign
 title: Best practice per i flussi di lavoro
 description: Scopri le best practice per i flussi di lavoro per Campaign
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1687'
-ht-degree: 7%
+ht-degree: 12%
 
 ---
 
 # Best practice per i flussi di lavoro{#workflow-best-practices}
 
-![](../../assets/v7-only.svg)
+
 
 ## Esecuzione e prestazioni {#execution-and-performance}
 
@@ -29,13 +30,13 @@ Sono disponibili due soluzioni aggiuntive per:
 
 * **Mantieni il risultato delle popolazioni provvisorie tra due esecuzioni**
 
-   Questa opzione consente di mantenere tabelle temporanee tra due esecuzioni di un flusso di lavoro. È disponibile nelle proprietà del flusso di lavoro **[!UICONTROL General]** e può essere utilizzato a scopo di sviluppo e test per monitorare i dati e controllare i risultati. Puoi utilizzare questa opzione negli ambienti di sviluppo ma non mai negli ambienti di produzione. Mantenere tabelle temporanee potrebbe comportare un aumento significativo delle dimensioni del database e, in ultima analisi, il raggiungimento del limite di dimensione. Inoltre, rallenterà il backup.
+   Questa opzione consente di mantenere tabelle temporanee tra due esecuzioni di un flusso di lavoro. È disponibile nelle proprietà del flusso di lavoro **[!UICONTROL General]** e può essere utilizzato a scopo di sviluppo e test per monitorare i dati e controllare i risultati. Puoi utilizzare questa opzione negli ambienti di sviluppo ma mai negli ambienti di produzione. Mantenere tabelle temporanee potrebbe comportare un aumento significativo delle dimensioni del database e, in ultima analisi, il raggiungimento del limite consentito. Inoltre, rallenterà il backup.
 
    Vengono mantenute solo le tabelle di lavoro dell’ultima esecuzione del flusso di lavoro. Le tabelle di lavoro delle esecuzioni precedenti vengono eliminate dal **[!UICONTROL cleanup]** , che viene eseguito su base giornaliera.
 
    >[!CAUTION]
    >
-   >Questa opzione non deve mai essere selezionata in un flusso di lavoro di produzione. Questa opzione viene utilizzata per analizzare i risultati ed è progettata solo a scopo di test e quindi deve essere utilizzata solo negli ambienti di sviluppo o di staging.
+   >Questa opzione non deve mai essere selezionata in un flusso di lavoro di produzione. Viene utilizzata per analizzare i risultati ed è progettata solo a scopo di test e quindi deve essere utilizzata solo in ambienti di sviluppo o di staging.
 
 * **Registra le query SQL nel giornale di registrazione**
 

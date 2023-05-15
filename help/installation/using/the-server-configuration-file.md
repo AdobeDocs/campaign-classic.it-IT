@@ -2,11 +2,12 @@
 product: campaign
 title: Il file di configurazione del server
 description: Il file di configurazione del server
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '7979'
 ht-degree: 41%
@@ -15,7 +16,7 @@ ht-degree: 41%
 
 # Il file di configurazione del server{#the-server-configuration-file}
 
-![](../../assets/v7-only.svg)
+
 
 La configurazione complessiva di Adobe Campaign è definita nella **serverConf.xml** nel file **conf** directory della directory di installazione. In questa sezione sono elencati tutti i diversi nodi e parametri del **serverConf.xml** file.
 
@@ -79,7 +80,7 @@ Di seguito sono riportati i diversi parametri del **autenticazione** nodo:
    <td> checkIPConsistent<br /> </td> 
    <td> Abilita controllo indirizzo IP.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> defaultMode<br /> </td> 
@@ -209,7 +210,7 @@ Di seguito sono riportati i diversi parametri del **dataStore** nodo. In questo 
    <td> useVault<br /> </td> 
    <td> Archivia segreti in Vault: utilizzare Hashicorp Vault.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> vaultSecretPath<br /> </td> 
@@ -602,7 +603,7 @@ Di seguito sono riportati i diversi parametri del **htmlToPdf** nodo. Questa è 
   </tr> 
   <tr> 
    <td> maxProcessusCount<br /> </td> 
-   <td> Max numero di processi di conversione consentiti alla volta su un solo computer.<br /> </td> 
+   <td> Max. numero di processi di conversione consentiti alla volta su un solo computer.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
@@ -622,7 +623,7 @@ Di seguito sono riportati i diversi parametri del **htmlToPdf** nodo. Questa è 
    <td> verboso<br /> </td> 
    <td> Modalità dettagliata: inizia in modalità dettagliata per diagnosticare eventuali errori.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> waitTime<br /> </td> 
@@ -883,7 +884,7 @@ Per ulteriori informazioni, consulta [Configurazione della connessione proxy](fi
    <td> abilitato<br /> </td> 
    <td> Utilizza un server proxy.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> override<br /> </td> 
@@ -895,7 +896,7 @@ Per ulteriori informazioni, consulta [Configurazione della connessione proxy](fi
    <td> useSingleProxy<br /> </td> 
    <td> Server proxy univoco: utilizza la stessa configurazione per tutti i tipi di proxy.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -991,7 +992,7 @@ Per ulteriori informazioni, consulta [Protezione delle connessioni in uscita](..
    <td> debugTrace<br /> </td> 
    <td> Traccia di debug del meccanismo di selezione degli URL: emette messaggi aggiuntivi durante il processo di verifica degli URL.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1112,7 +1113,7 @@ Per ulteriori informazioni, consulta [Attivazione dell’archiviazione delle e-m
    <td> autoStart<br /> </td> 
    <td> Avvio automatico<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> compressBatchSize<br /> </td> 
@@ -1184,7 +1185,7 @@ Per ulteriori informazioni, consulta [Attivazione dell’archiviazione delle e-m
    <td> smtpEnableTLS<br /> </td> 
    <td> Attiva il supporto SMTPS: attiva la consegna di e-mail in modalità provvisoria (STARTTLS/SMTPS) se supportata dal server remoto.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> smtpNbConnection<br /> </td> 
@@ -1231,19 +1232,19 @@ Di seguito sono riportati i diversi parametri del **inMail** nodo. Questa è la 
    <td> autoStart<br /> </td> 
    <td> Avvio automatico<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> checkInstanceName<br /> </td> 
    <td> Verifica il nome dell'istanza: se true, il nome dell'istanza Adobe Campaign contenuta nelle intestazioni Message-ID deve essere lo stesso dell'istanza corrente. <br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> true<br /> </td> 
+   <td> vero<br /> </td> 
   </tr> 
   <tr> 
    <td> defaultForwardAddress<br /> </td> 
    <td> Indirizzo di inoltro: indirizzo di trasferimento e-mail predefinito non elaborato da una regola. <br /> </td> 
    <td> Stringa<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> errorForwardAddress<br /> </td> 
@@ -1255,7 +1256,7 @@ Di seguito sono riportati i diversi parametri del **inMail** nodo. Questa è la 
    <td> ignoreSize<br /> </td> 
    <td> Ignora dimensioni messaggio: viene utilizzato per ignorare le dimensioni di un messaggio restituito dai server POP3. In questo caso, il modulo richiede un '.' alla fine dei messaggi. <br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> inMailPeriodSec<br /> </td> 
@@ -1356,7 +1357,7 @@ In **inMail > msgDump** configura i seguenti parametri. Questa è la configurazi
    <td> scaricare<br /> </td> 
    <td> Salva tutti i messaggi in entrata in formato testo. <br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> msgPath<br /> </td> 
@@ -1393,11 +1394,11 @@ Per ulteriori informazioni, consulta [Interazione - Buffer dati](../../installat
    <td> autoStart<br /> </td> 
    <td> Avvio automatico<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> callDataSize<br /> </td> 
-   <td> Max numero di caratteri memorizzati nella memoria condivisa per i dati delle chiamate.<br /> </td> 
+   <td> Max. numero di caratteri memorizzati nella memoria condivisa per i dati delle chiamate.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
@@ -1421,7 +1422,7 @@ Per ulteriori informazioni, consulta [Interazione - Buffer dati](../../installat
   </tr> 
   <tr> 
    <td> maxSharedEntries<br /> </td> 
-   <td> Max numero di eventi memorizzati nella memoria condivisa.<br /> </td> 
+   <td> Max. numero di eventi memorizzati nella memoria condivisa.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 25000<br /> </td> 
   </tr> 
@@ -1451,7 +1452,7 @@ Per ulteriori informazioni, consulta [Interazione - Buffer dati](../../installat
   </tr> 
   <tr> 
    <td> targetKeySize<br /> </td> 
-   <td> Max numero di caratteri memorizzati nella memoria condivisa per identificare gli individui.<br /> </td> 
+   <td> Max. numero di caratteri memorizzati nella memoria condivisa per identificare gli individui.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 16<br /> </td> 
   </tr> 
@@ -1482,7 +1483,7 @@ Di seguito sono riportati i diversi parametri del **mta** nodo. Questa è la con
    <td> autoStart<br /> </td> 
    <td> Avvio automatico<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> dataLogPath<br /> </td> 
@@ -1518,7 +1519,7 @@ Di seguito sono riportati i diversi parametri del **mta** nodo. Questa è la con
    <td> logEmailErrors<br /> </td> 
    <td> Genera statistiche di errore e le archivia nel database.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> true<br /> </td> 
+   <td> vero<br /> </td> 
   </tr> 
   <tr> 
    <td> logLevel<br /> </td> 
@@ -1584,7 +1585,7 @@ Di seguito sono riportati i diversi parametri del **mta** nodo. Questa è la con
    <td> tryLostMessages<br /> </td> 
    <td> Riprova messaggi persi: parti delle consegne verranno ritentate se il processo figlio è morto.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> true<br /> </td> 
+   <td> vero<br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -1596,7 +1597,7 @@ Di seguito sono riportati i diversi parametri del **mta** nodo. Questa è la con
    <td> signEmailLinks<br /> </td> 
    <td> Attiva il meccanismo di firma. Questo migliora la sicurezza del tracciamento dei collegamenti nelle e-mail.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> true<br /> </td> 
+   <td> vero<br /> </td> 
   </tr>
   <tr> 
    <td> statServerAddress<br /> </td> 
@@ -1615,7 +1616,7 @@ Di seguito sono riportati i diversi parametri del **mta** nodo. Questa è la con
    <td> statServerTLSSupport<br /> </td> 
    <td> Abilita TLS per dominio: abilita il TLS configurabile da MX (richiede un server di statistiche aggiornato).<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> true <br /> </td> 
+   <td> vero <br /> </td> 
   </tr> 
   <tr> 
    <td> statServerVersion<br /> </td> 
@@ -1633,7 +1634,7 @@ Di seguito sono riportati i diversi parametri del **mta** nodo. Questa è la con
    <td> verifyMode<br /> </td> 
    <td> Modalità di verifica: attiva la modalità di verifica (nessuna trasmissione fisica dei messaggi; utilizzati per la simulazione e le prove).<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> workingPath<br /> </td> 
@@ -1841,7 +1842,7 @@ Per ulteriori informazioni, consulta [Ottimizzazione dell’invio di e-mail](../
    <td> startWithFirstMX<br /> </td> 
    <td> Inizia sempre con la massima priorità MX.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> timeToLive<br /> </td> 
@@ -1868,7 +1869,7 @@ In **mta > figlio > smtp** configura i seguenti parametri. Questa è la configur
    <td> enableTLS<br /> </td> 
    <td> Attiva la consegna di e-mail in modalità sicura (STARTTLS/SMTPS) se supportata dal server remoto.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> idleSessionTimeoutSec<br /> </td> 
@@ -1981,7 +1982,7 @@ Di seguito sono riportati i diversi parametri del **nmac** nodo. Configurazione 
    <td> useHTTPProxy<br /> </td> 
    <td> Usa il proxy HTTP definito in shared/proxyHTTP. <br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -2063,7 +2064,7 @@ Di seguito sono riportati i diversi parametri del **condutturato** nodo. Questa 
    <td> autoStart<br /> </td> 
    <td> Avvio automatico <br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> disableAuth<br /> </td> 
@@ -2207,31 +2208,31 @@ Per ulteriori informazioni, consulta [Definire le aree di protezione](../../inst
    <td> allowDebug<br /> </td> 
    <td> Autorizza la modalità di debug per le applicazioni web.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> allowEmptyPassword<br /> </td> 
    <td> Autorizza l’utente a utilizzare l’applicazione senza una password.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> allowHTTP<br /> </td> 
    <td> Autorizza l’utilizzo di HTTP per l’accesso dell’operatore.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> allowSQLInjection<br /> </td> 
    <td> Autorizza l’uso di SQLDATA nelle espressioni.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> allowUserPassword<br /> </td> 
    <td> Autorizza i token della sessione utente/password.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> label<br /> </td> 
@@ -2249,13 +2250,13 @@ Per ulteriori informazioni, consulta [Definire le aree di protezione](../../inst
    <td> sessionTokenOnly<br /> </td> 
    <td> Non utilizza il token di sicurezza.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> showErrors<br /> </td> 
    <td> Mostra i dettagli dell’errore<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -2352,7 +2353,7 @@ Di seguito sono riportati i diversi parametri del **sms** nodo. Questa è la con
    <td> autoStart<br /> </td> 
    <td> Avvio automatico<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> dataRetentionDays<br /> </td> 
@@ -2476,7 +2477,7 @@ Di seguito sono riportati i diversi parametri del **stat** nodo. Questa è la co
    <td> autoStart<br /> </td> 
    <td> Avvio automatico<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
@@ -2541,7 +2542,7 @@ Di seguito sono riportati i diversi parametri del **syslogd** nodo. Questa è la
    <td> autoStart<br /> </td> 
    <td> Avvio automatico<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
@@ -2612,13 +2613,13 @@ Di seguito sono riportati i diversi parametri del **tracking** nodo. Questa è l
    <td> autoStart<br /> </td> 
    <td> Avvio automatico<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> blockRedirectForUnsignedTrackingLink<br /> </td> 
    <td> Disattiva gli URL generati in modo errato dalle build precedenti.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> consolidamentoPeriodSec<br /> </td> 
@@ -2743,7 +2744,7 @@ Di seguito sono riportati i diversi parametri del **trackinglogd** nodo. Questa 
    <td> autoStart<br /> </td> 
    <td> Avvio automatico<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
@@ -2852,7 +2853,7 @@ Per ulteriori informazioni, consulta [sezione](configuring-campaign-server.md#de
    <td> autoStart<br /> </td> 
    <td> Avvio automatico<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> controlPort<br /> </td> 
@@ -2912,7 +2913,7 @@ Per ulteriori informazioni, consulta [sezione](configuring-campaign-server.md#de
    <td> startSoapRouterInModule<br /> </td> 
    <td> Avvia il router SOAP in modalità modulo.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -3014,7 +3015,7 @@ Di seguito sono riportati i diversi parametri del **web > jssp** nodo. Si tratta
    <td> collectGarbageAfterRequest<br /> </td> 
    <td> Attiva il garbage collector JavaScript dopo ogni query.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> true<br /> </td> 
+   <td> vero<br /> </td> 
   </tr> 
   <tr> 
    <td> timeToLive<br /> </td> 
@@ -3047,7 +3048,7 @@ Per ulteriori informazioni, consulta [sezione](../../installation/using/deployin
    <td> debugRelay<br /> </td> 
    <td> Avvia il modulo di inoltro HTTP nel server web in modalità debug.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> forbiddenCharsInAuthority<br /> </td> 
@@ -3071,13 +3072,13 @@ Per ulteriori informazioni, consulta [sezione](../../installation/using/deployin
    <td> startRelay<br /> </td> 
    <td> Avvia il modulo di inoltro HTTP.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> startRelayInModule<br /> </td> 
    <td> Avvia il modulo inoltro HTTP all’interno del server Web. <br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> true<br /> </td> 
+   <td> vero<br /> </td> 
   </tr> 
   <tr> 
    <td> timeout<br /> </td> 
@@ -3324,25 +3325,25 @@ Per ulteriori informazioni, consulta [sezione](../../installation/using/deployin
    <td> showSourceIP<br /> </td> 
    <td> Se è impostato su false, il valore di sourceIP nella risposta restituita da r/test è una stringa vuota. <br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> true<br /> </td> 
+   <td> vero<br /> </td> 
   </tr> 
   <tr> 
    <td> startRedirecting<br /> </td> 
    <td> Avvia il servizio di reindirizzamento.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> true<br /> </td> 
+   <td> vero<br /> </td> 
   </tr> 
   <tr> 
    <td> startRedirectingInModule<br /> </td> 
    <td> Avvia il servizio di reindirizzamento in modalità modulo.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> true<br /> </td> 
+   <td> vero<br /> </td> 
   </tr> 
   <tr> 
    <td> trackWebVisitors<br /> </td> 
    <td> Tracciamento web: creazione di registri per le pagine visitate da utenti sconosciuti. <br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> trackingPassword<br /> </td> 
@@ -3443,7 +3444,7 @@ Per ulteriori informazioni, consulta [Flussi di lavoro e affinità ad alta dispo
    <td> autoStart<br /> </td> 
    <td> Avvio automatico<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> false<br /> </td> 
+   <td> falso<br /> </td> 
   </tr> 
   <tr> 
    <td> dataBasePoolPeriodSec<br /> </td> 

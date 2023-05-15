@@ -3,7 +3,7 @@ product: campaign
 title: Informazioni sulla simulazione delle offerte
 description: Informazioni sulla simulazione delle offerte
 exl-id: facaa88e-1fa2-4189-9d8f-348aaef3e235
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 5%
@@ -12,7 +12,7 @@ ht-degree: 5%
 
 # Informazioni sulla simulazione delle offerte{#about-offers-simulation}
 
-![](../../assets/common.svg)
+
 
 La **Simulazione** Il modulo ti consente di verificare la distribuzione delle offerte appartenenti a una categoria o a un ambiente prima di inviare la proposta ai destinatari.
 

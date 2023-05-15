@@ -2,11 +2,12 @@
 product: campaign
 title: Configurazione delle opzioni di Campaign
 description: Scopri come configurare le opzioni di Campaign
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '3991'
 ht-degree: 6%
@@ -15,7 +16,7 @@ ht-degree: 6%
 
 # Elenco opzioni di Campaign Classic{#configuring-campaign-options}
 
-![](../../assets/v7-only.svg)
+
 
 La **[!UICONTROL Administration / Platform / Options]** node ti consente di configurare le opzioni Adobe Campaign. Alcune sono integrate durante l’installazione di Campaign, altre possono essere aggiunte manualmente quando necessario. Le opzioni disponibili variano a seconda dei pacchetti installati con la tua istanza.
 
@@ -657,7 +658,7 @@ La **[!UICONTROL Administration / Platform / Options]** node ti consente di conf
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span> <br /> </td> 
-   <td> Consente di configurare un database separato per le tabelle di lavoro in Microsoft SQL Server, al fine di ottimizzare i backup e la replica. L’opzione corrisponde al nome del database temporaneo: Se specificato, le tabelle di lavoro verranno scritte in questo database. Esempio: 'tempdb.dbo.' Il nome deve terminare con un punto. <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">Maggiori informazioni</a> <br /> </td> 
+   <td> Consente di configurare un database separato per le tabelle di lavoro in Microsoft SQL Server, al fine di ottimizzare i backup e la replica. L’opzione corrisponde al nome del database temporaneo: Se specificato, le tabelle di lavoro verranno scritte in questo database. Esempio: 'tempdb.dbo.' Il nome deve terminare con un punto. <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">Ulteriori informazioni</a> <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span> <br /> </td> 

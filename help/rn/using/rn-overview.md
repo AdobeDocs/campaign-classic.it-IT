@@ -2,11 +2,12 @@
 product: campaign
 title: Introduzione agli aggiornamenti
 description: Ulteriori informazioni sugli aggiornamenti di Campaign Classic
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: f797aafac99d6b9c2bdb409a1d0883c889fd3b0e
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Aggiornamenti della versione{#rn-overview}
 
-![](../../assets/v7-only.svg)
+
 
 Per Adobe Campaign Classic vengono rilasciati periodicamente aggiornamenti di prodotto con nuove funzionalità, correzioni di bug e miglioramenti delle a livello di prestazioni, sicurezza e usabilità. Questi aggiornamenti vengono rilasciati come **build del prodotto**. Informazioni dettagliate su ogni nuova build sono disponibili nella sezione [Note sulla versione](latest-release.md).
 

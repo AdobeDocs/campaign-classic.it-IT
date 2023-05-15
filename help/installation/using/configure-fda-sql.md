@@ -2,8 +2,9 @@
 product: campaign
 title: Configurare l'accesso a Microsoft SQL Server
 description: Informazioni su come configurare l'accesso a Microsoft SQL Server
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 65ab4577-3126-4579-8fcc-e93772ebd1e8
-source-git-commit: 6b7638eec1718edf30f81005cd6691dd271aaa0c
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 1%
@@ -12,7 +13,7 @@ ht-degree: 1%
 
 # Configurare l&#39;accesso a Microsoft SQL Server {#configure-fda-sql}
 
-![](../../assets/v7-only.svg)
+
 
 Utilizzare Campaign **Federated Data Access** (FDA) opzione per elaborare le informazioni memorizzate in un database Microsoft SQL Server esterno. Segui i passaggi seguenti per configurare l’accesso a [!DNL Microsoft SQL Server].
 

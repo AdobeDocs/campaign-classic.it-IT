@@ -2,20 +2,21 @@
 product: campaign
 title: Guida introduttiva agli operatori Campaign
 description: Scopri come creare e gestire gli utenti delle campagne
+badge: label="v7" type="Informative" tooltip="Si applica solo ad Campaign Classic v7"
 feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1149'
+source-wordcount: '1160'
 ht-degree: 2%
 
 ---
 
 # Creare e gestire gli operatori {#operators}
 
-![](../../assets/common.svg)
+
 
 ## Guida introduttiva agli operatori Campaign  {#about-operators}
 

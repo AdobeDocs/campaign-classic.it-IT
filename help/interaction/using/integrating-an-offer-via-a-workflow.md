@@ -2,11 +2,12 @@
 product: campaign
 title: Integrazione di un’offerta tramite un flusso di lavoro
 description: Integrazione di un’offerta tramite un flusso di lavoro
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1043'
 ht-degree: 3%
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 # Integrazione di un’offerta tramite un flusso di lavoro{#integrating-an-offer-via-a-workflow}
 
-![](../../assets/v7-only.svg)
+
 
 Al di fuori dell’attività di consegna stessa, diverse attività del flusso di lavoro ti consentono di definire il modo in cui vengono presentate le offerte:
 

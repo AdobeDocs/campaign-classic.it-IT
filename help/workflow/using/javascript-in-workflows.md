@@ -2,9 +2,10 @@
 product: campaign
 title: Esempi di codice JavaScript nei flussi di lavoro
 description: Questi esempi mostrano come utilizzare il codice JavaScript in un flusso di lavoro
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 7213ea64-3dec-4b16-9d93-4ae941ddfaa7
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1764'
 ht-degree: 3%
@@ -13,7 +14,7 @@ ht-degree: 3%
 
 # Esempi di codice JavaScript nei flussi di lavoro{#javascript-in-workflows}
 
-![](../../assets/v7-only.svg)
+
 
 Gli esempi seguenti mostrano come utilizzare il codice JavaScript in un flusso di lavoro:
 
@@ -52,7 +53,7 @@ Per scrivere nel database, è possibile utilizzare il `Write` metodo `xtk:sessio
    1. Chiama il `Write` metodo `xtk:session` schema.
 
       >[!IMPORTANT]
-      > Se utilizzi Adobe Campaign v8, ti consigliamo di utilizzare il meccanismo di staging con **Acquisizione** e **Aggiornamento/eliminazione dati** API per `Write` in una tabella di Snowflake. [Maggiori informazioni](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
+      > Se utilizzi Adobe Campaign v8, ti consigliamo di utilizzare il meccanismo di staging con **Acquisizione** e **Aggiornamento/eliminazione dati** API per `Write` in una tabella di Snowflake. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
 
    1. Passa il codice XML come argomento per la richiesta di scrittura.
 
@@ -562,7 +563,7 @@ for each (var w in res.recipient)
 * La `delete` funzionamento
 
 >[!IMPORTANT]
-> Se utilizzi Adobe Campaign v8, ti consigliamo di utilizzare il meccanismo di staging con **Acquisizione** e **Aggiornamento/eliminazione dati** API per `Write` in una tabella di Snowflake. [Maggiori informazioni](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
+> Se utilizzi Adobe Campaign v8, ti consigliamo di utilizzare il meccanismo di staging con **Acquisizione** e **Aggiornamento/eliminazione dati** API per `Write` in una tabella di Snowflake. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
 
 #### Esempio 1: inserire o aggiornare un record
 

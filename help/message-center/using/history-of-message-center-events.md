@@ -1,21 +1,22 @@
 ---
 product: campaign
 title: Cronologia degli eventi del Centro messaggi
-description: Ulteriori informazioni sul rapporto Cronologia eventi del Centro messaggi .
+description: Ulteriori informazioni sul rapporto Cronologia eventi del Centro messaggi
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
 topic-tags: reports
 exl-id: 04d4791b-a1dd-4361-a469-6f5aff0f41b8
-source-git-commit: 1348c1d88d0732b0dda4ed488b4a258ac7e15c42
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '139'
+ht-degree: 3%
 
 ---
 
 # Cronologia eventi del Centro messaggi{#history-of-message-center-events}
 
-![](../../assets/v7-only.svg)
+
 
 La **[!UICONTROL History of Message Center events]** Il rapporto fornisce una panoramica dell’attività del Centro messaggi, ovvero il numero di eventi elaborati e consegnati come messaggi transazionali.
 

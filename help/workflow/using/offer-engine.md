@@ -2,9 +2,10 @@
 product: campaign
 title: Motore di offerta
 description: Motore di offerta
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Interaction
 exl-id: 8db4b04f-7754-4a49-ab72-afc916888ebb
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 4%
@@ -13,7 +14,7 @@ ht-degree: 4%
 
 # Motore di offerta{#offer-engine}
 
-![](../../assets/v7-only.svg)
+
 
 La **[!UICONTROL Offer engine]** l’attività ti consente di definire una chiamata al motore di offerta prima di una consegna.
 

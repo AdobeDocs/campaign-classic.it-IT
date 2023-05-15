@@ -1,23 +1,25 @@
 ---
 product: campaign
-title: Informazioni sui passaggi per la creazione di consegne in Adobe Campaign Classic
-description: Scopri i passaggi principali per la creazione di consegne in Adobe Campaign Classic
+title: Informazioni sui passaggi per la creazione di consegne in Adobe Campaign
+description: Scopri i passaggi principali per la creazione di consegne in Adobe Campaign
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Channel Configuration
 exl-id: 0188c3fe-8176-4904-8505-c47a72c20fcc
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '130'
 ht-degree: 14%
 
 ---
 
 # Informazioni sui passaggi di creazione delle consegne {#about-delivery-creation}
 
-![](../../assets/common.svg)
+
 
 I passaggi chiave per la creazione di una consegna sono i seguenti:
 
-1. **Creare e identificare la consegna**. [Maggiori informazioni](steps-create-and-identify-the-delivery.md)
+1. **Creare e identificare la consegna**. [Ulteriori informazioni](steps-create-and-identify-the-delivery.md)
 
 1. **Definire il contenuto della consegna**. La definizione del contenuto di consegna è specifica per ciascun canale. Per ulteriori informazioni, consulta la sezione dedicata:
 
@@ -26,9 +28,9 @@ I passaggi chiave per la creazione di una consegna sono i seguenti:
    * [Canale direct mail](defining-the-direct-mail-content.md)
    * [Canale applicazione mobile](about-mobile-app-channel.md)
 
-1. **Definire la popolazione target**. [Maggiori informazioni](steps-defining-the-target-population.md)
+1. **Definire la popolazione target**. [Ulteriori informazioni](steps-defining-the-target-population.md)
 
-1. **Inviare la consegna**. [Maggiori informazioni](steps-sending-the-delivery.md)
+1. **Inviare la consegna**. [Ulteriori informazioni](steps-sending-the-delivery.md)
 
 1. **Monitorare la consegna** (tracciamento, quarantena, rapporti, ecc.). Per ulteriori informazioni, consulta la sezione [Monitoraggio delle consegne](about-delivery-monitoring.md) e [Tracciamento delle consegne](about-message-tracking.md) sezioni.
 

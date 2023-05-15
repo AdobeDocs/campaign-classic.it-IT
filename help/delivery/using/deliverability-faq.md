@@ -1,19 +1,21 @@
 ---
 product: campaign
 title: Punti chiave nella gestione del recapito messaggi in Adobe Campaign Classic
-description: Quali sono i punti chiave da verificare durante la gestione del recapito messaggi in Adobe Campaign Classic?
+description: Scopri i punti chiave da verificare durante la gestione del recapito messaggi in Adobe Campaign
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '654'
 ht-degree: 2%
 
 ---
 
 # Risoluzione dei problemi di recapito messaggi{#deliverability-faq}
 
-![](../../assets/common.svg)
+
 
 Si verifica un problema di recapito messaggi? Puoi trovare la soluzione qui.
 

@@ -2,9 +2,11 @@
 product: campaign
 title: Crea un sondaggio per invitare un amico
 description: Scopri i passaggi per creare un modulo per invitare un amico
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Surveys
 exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
-source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 0%
@@ -13,7 +15,7 @@ ht-degree: 0%
 
 # Caso d’uso: creare un modulo di riferimento{#use-case-creating-a-refer-a-friend-form}
 
-![](../../assets/common.svg)
+
 
 In questo esempio, vogliamo offrire un concorso ai destinatari del database. Il modulo Web avrà una sezione per inserire le risposte e un&#39;altra per fare riferimento a un amico inserendo il suo indirizzo e-mail.
 

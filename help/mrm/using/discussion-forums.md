@@ -2,11 +2,12 @@
 product: campaign
 title: Forum di discussione
 description: Scopri come utilizzare i forum di discussione di Campaign
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 222853c5-c754-4c0b-8ee4-a64b2f8677a4
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 # Forum di discussione{#discussion-forums}
 
-![](../../assets/v7-only.svg)
+
 
 Gli operatori di Adobe Campaign possono utilizzare forum di discussione per condividere informazioni. I seguenti elementi hanno un proprio forum: piani, programmi, campagne, risorse, simulazioni, stock. Ogni operatore ha anche un forum personale. Tutte le discussioni sono pubbliche, anche su forum personali.
 

@@ -1,19 +1,21 @@
 ---
 product: campaign
 title: Risoluzione dei problemi di tracciamento
-description: Questa sezione contiene domande comuni relative al tracciamento della configurazione e dell’implementazione in Adobe Campaign Classic
+description: Questa sezione contiene domande comuni relative alla configurazione e all’implementazione del tracciamento in Adobe Campaign
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring
 exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '758'
 ht-degree: 1%
 
 ---
 
 # Risoluzione dei problemi di tracciamento {#tracking-troubleshooting}
 
-![](../../assets/common.svg)
+
 
 In questa sezione troverai le domande comuni relative alla configurazione e all’implementazione del tracciamento in Adobe Campaign Classic.
 

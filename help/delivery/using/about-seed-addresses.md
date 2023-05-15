@@ -2,9 +2,11 @@
 product: campaign
 title: Informazioni sugli indirizzi seed
 description: Guida introduttiva agli indirizzi di seed
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Seed Address
 exl-id: 1f55eda8-c393-4f86-9118-01bcd981c6df
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 8%
@@ -13,7 +15,7 @@ ht-degree: 8%
 
 # Informazioni sugli indirizzi seed{#about-seed-addresses}
 
-![](../../assets/common.svg)
+
 
 Gli indirizzi di seed vengono utilizzati per eseguire il targeting di destinatari che non corrispondono ai criteri di target definiti. In questo modo, i destinatari che non rientrano nell’ambito di consegna possono ricevere la consegna, come farebbe qualsiasi altro destinatario di destinazione.
 

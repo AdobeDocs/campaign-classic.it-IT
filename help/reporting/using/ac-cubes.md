@@ -2,9 +2,10 @@
 product: campaign
 title: Introduzione ai cubi
 description: Introduzione ai cubi
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Reporting
 exl-id: 71d24f03-d41d-49bc-b9a5-8237902f7d6a
-source-git-commit: c1be67d32c39d20f7794b6019a6e03c9ec29df94
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 24%
@@ -13,13 +14,13 @@ ht-degree: 24%
 
 # Introduzione ai cubi{#about-cubes}
 
-![](../../assets/v7-only.svg)
+
 
 L&#39;esplorazione dei dati nel database viene offerta tramite il **Analisi di marketing** modulo . Consente di analizzare e misurare i dati, calcolare le statistiche, semplificare e ottimizzare la creazione e il calcolo dei rapporti. Inoltre, Marketing Analytics consente di creare report e generare popolazioni target. Una volta identificati, vengono memorizzati in elenchi che possono essere utilizzati in Adobe Campaign (targeting, segmentazione, ecc.).
 
 I cubi vengono utilizzati per generare alcuni rapporti incorporati, inclusi i rapporti di consegna (tracciamento consegna, clic, aperture, ecc.). I report basati su cubi possono essere utilizzati come standard solo per volumi di dati inferiori a 5 milioni di linee di fatto.
 
-Puoi estendere le capacità di esplorazione e di analisi del database e semplificare la configurazione di report e tabelle da parte degli utenti finali: tutto ciò che devono fare è selezionare un cubo esistente (completamente configurato) durante la creazione del report o della tabella per elaborare calcoli, misure e statistiche.
+Puoi estendere le capacità di esplorazione e di analisi del database e semplificare la configurazione di rapporti e tabelle da parte dell’utente finale: per elaborare calcoli, misure e statistiche, sarà sufficiente selezionare un cubo esistente (completamente configurato) durante la creazione del rapporto o della tabella .
 
 Una volta creati e configurati, i cubi vengono utilizzati nelle caselle di query dei report e nelle applicazioni web. Possono essere utilizzati e manipolati all’interno di tabelle pivot.
 

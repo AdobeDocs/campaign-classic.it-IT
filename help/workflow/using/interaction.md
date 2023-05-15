@@ -2,8 +2,9 @@
 product: campaign
 title: Interazione
 description: Interazione
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Interaction
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 7%
@@ -13,7 +14,7 @@ ht-degree: 7%
 
 # Interazione{#interaction}
 
-![](../../assets/v7-only.svg)
+
 
 I flussi di lavoro descritti di seguito sono installati con **Motore di offerta (Interazione)** add-on per impostazione predefinita.
 

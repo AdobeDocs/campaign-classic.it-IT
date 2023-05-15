@@ -1,12 +1,14 @@
 ---
 product: campaign
 title: Best practice per l’importazione e l’esportazione
-description: Ulteriori informazioni sulle best practice da seguire per l’importazione o l’esportazione di dati.
+description: Ulteriori informazioni sulle best practice da seguire per importare o esportare dati
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: automating
 content-type: reference
 topic-tags: workflow-general-operation
 exl-id: 03d35202-d221-4136-aad4-00704aabb356
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '511'
 ht-degree: 2%
@@ -15,7 +17,7 @@ ht-degree: 2%
 
 # Best practice per l’importazione e l’esportazione {#import-export-best-practices}
 
-![](../../assets/common.svg)
+
 
 La cautela e il rispetto delle poche semplici regole descritte di seguito aiuteranno molto a garantire la coerenza dei dati all&#39;interno del database e ad evitare errori comuni durante l&#39;aggiornamento del database o le esportazioni di dati.
 

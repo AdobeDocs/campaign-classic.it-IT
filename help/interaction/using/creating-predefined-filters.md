@@ -2,11 +2,12 @@
 product: campaign
 title: Creazione di filtri predefiniti
 description: Creazione di filtri predefiniti
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 399e9468-bf70-425d-af0b-72c29636b513
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 10%
@@ -15,7 +16,7 @@ ht-degree: 10%
 
 # Creazione di filtri predefiniti{#creating-predefined-filters}
 
-![](../../assets/v7-only.svg)
+
 
 I filtri predefiniti consentono di creare regole di idoneità per la popolazione target, che possono essere facilmente riutilizzate durante la creazione dell’offerta. Sono specifici per ogni ambiente e tengono conto dei parametri dell’offerta.
 

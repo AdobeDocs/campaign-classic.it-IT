@@ -2,9 +2,11 @@
 product: campaign
 title: Canali di comunicazione
 description: Crea consegne per inviare messaggi personalizzati su canali diversi
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1204'
 ht-degree: 20%
@@ -13,7 +15,7 @@ ht-degree: 20%
 
 # Canali di comunicazione{#communication-channels}
 
-![](../../assets/common.svg)
+
 
 Con Adobe Campaign, puoi inviare campagne cross-channel tra cui e-mail, SMS, messaggi LINE, notifiche push e direct mailing e misurarne l’efficacia utilizzando vari strumenti dedicati [rapporti](../../reporting/using/delivery-reports.md). Questi messaggi sono progettati e inviati tramite consegna e possono essere personalizzati per ogni destinatario.
 

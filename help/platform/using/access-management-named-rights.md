@@ -2,20 +2,21 @@
 product: campaign
 title: Utilizzare i diritti denominati per impostare le autorizzazioni
 description: Scopri come utilizzare i diritti denominati per impostare le autorizzazioni
+badge: label="v7" type="Informative" tooltip="Si applica solo ad Campaign Classic v7"
 feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '514'
 ht-degree: 7%
 
 ---
 
 # Utilizzare i diritti denominati per impostare le autorizzazioni{#named-rights}
 
-![](../../assets/common.svg)
+
 
 Per impostazione predefinita, Adobe Campaign propone un set di diritti con nome che ti consente di definire le autorizzazioni assegnate a operatori e gruppi di operatori. Questi diritti possono essere modificati dalla **[!UICONTROL Administration > Access management > Named rights]** nodo dell&#39;albero.
 

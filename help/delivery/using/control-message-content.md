@@ -2,9 +2,11 @@
 product: campaign
 title: Informazioni sul recapito messaggi in Adobe Campaign Classic
 description: Ulteriori informazioni sulla gestione del recapito messaggi in Adobe Campaign
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '760'
 ht-degree: 6%
@@ -13,7 +15,7 @@ ht-degree: 6%
 
 # Controllare il contenuto del messaggio{#control-message-content}
 
-![](../../assets/common.svg)
+
 
 Per essere sicuri che le e-mail raggiungano i destinatari e migliorino il tasso di recapito delle e-mail, devono rispettare una serie di regole. In caso contrario, il contenuto di alcuni messaggi può essere rilevato come spam. Adobe Campaign offre diversi strumenti per rendere i contenuti conformi a queste regole.
 

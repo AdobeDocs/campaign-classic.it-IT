@@ -2,9 +2,11 @@
 product: campaign
 title: Persona, persone e destinatari
 description: Persona, persone e destinatari
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: 69b810f3-aa8b-4ab5-95c1-831257d7fcb9
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 9%
@@ -13,7 +15,7 @@ ht-degree: 9%
 
 # Persone e destinatari {#person-people-and-recipients}
 
-![](../../assets/common.svg)
+
 
 Questo esempio ti aiuterà a comprendere la differenza tra una persona/a e un destinatario in Adobe Campaign. Invieremo una consegna a più persone per evidenziare la differenza tra persone e destinatari, specificando al tempo stesso il metodo di calcolo per i seguenti indicatori:
 

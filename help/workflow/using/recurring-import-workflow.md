@@ -1,10 +1,11 @@
 ---
 product: campaign
 title: Imposta un’importazione ricorrente
-description: Scopri come configurare un modello di flusso di lavoro per le importazioni ricorrenti.
+description: Scopri come configurare un modello di flusso di lavoro per le importazioni ricorrenti
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: e6e140cb-8de0-4ab9-bddc-95abe04124c6
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 # Impostare un flusso di lavoro di importazione ricorrente {#setting-up-a-recurring-import}
 
-![](../../assets/v7-only.svg)
+
 
 L’utilizzo di un modello di flusso di lavoro è una best practice per importare regolarmente file con la stessa struttura.
 

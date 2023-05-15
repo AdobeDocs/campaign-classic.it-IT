@@ -2,9 +2,11 @@
 product: campaign
 title: Introduzione all’analisi descrittiva
 description: Introduzione all’analisi descrittiva
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%
@@ -13,7 +15,7 @@ ht-degree: 0%
 
 # Introduzione all’analisi descrittiva{#about-descriptive-analysis}
 
-![](../../assets/common.svg)
+
 
 Per produrre statistiche sui dati nel database, crea report di analisi descrittivi utilizzando la procedura guidata dedicata e adattane il contenuto e la presentazione in base alle tue esigenze.
 

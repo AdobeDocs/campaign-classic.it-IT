@@ -2,8 +2,9 @@
 product: campaign
 title: Creare tag di web tracking
 description: Scopri come creare tag di web tracking
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 160df6e1-43e5-4eb9-ad2f-5db444e314ea
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%
@@ -11,8 +12,6 @@ ht-degree: 0%
 ---
 
 # Creare tag di web tracking{#creating-web-tracking-tags}
-
-![](../../assets/v7-only.svg)
 
 Ogni pagina del sito che desideri monitorare deve essere referenziata nella tua piattaforma Adobe Campaign. Questo riferimento può essere eseguito in due modi:
 

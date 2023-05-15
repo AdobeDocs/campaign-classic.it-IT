@@ -2,9 +2,10 @@
 product: campaign
 title: SMS in entrata
 description: Ulteriori informazioni sull’attività del flusso di lavoro SMS in entrata
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Channels Activity
 exl-id: 94a9d50b-4ead-4815-8d12-942fa78b4e8a
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 4%
@@ -13,7 +14,7 @@ ht-degree: 4%
 
 # SMS in entrata{#inbound-sms}
 
-![](../../assets/v7-only.svg)
+
 
 La **SMS in entrata** activity ti consente di scaricare ed elaborare messaggi di testo da un account esterno.
 

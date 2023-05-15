@@ -2,9 +2,11 @@
 product: campaign
 title: Qualificazione dell’aggiornamento non recapitato dopo l’interruzione di Apple 2021
 description: Scopri come aggiornare la qualifica dei messaggi non recapitati dopo l’interruzione di Apple 2021
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
-source-git-commit: c84f48ebdd66524e8dd6c39c88ae29565d11c9b2
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 1%
@@ -13,7 +15,7 @@ ht-degree: 1%
 
 # Aggiorna i messaggi non corretti dopo l&#39;interruzione di Apple {#update-bounce-qualification.md}
 
-![](../../assets/common.svg)
+
 
 ## Contesto
 

@@ -2,11 +2,12 @@
 product: campaign
 title: Domande frequenti sul reporting
 description: Domande frequenti su Campaign Classic
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: b29340a0-954d-41e4-b0a3-9d356e4dc753
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Domande frequenti sul reporting {#reporting-faq}
 
-![](../../assets/v7-only.svg)
+
 
 ## Come posso creare nuovi report? {#how-can-i-create-new-reports-}
 
@@ -25,9 +26,9 @@ In aggiunta ai report incorporati, Adobe Campaign ti consente di generare report
 
 [Fai clic qui per ulteriori informazioni](../../reporting/using/about-adobe-campaign-reporting-tools.md) sulle funzionalità di reporting di Campaign.
 
-## Come posso progettare e condividere report statistici sulle popolazioni? {#how-can-i-design-and-share-statistic-reports-on-populations-}
+## Come posso progettare e condividere rapporti statistici sulle popolazioni? {#how-can-i-design-and-share-statistic-reports-on-populations-}
 
- I [report di analisi descrittiva](../../reporting/using/about-descriptive-analysis.md) di Adobe Campaign ti consentono di progettare e condividere report statistici sulle popolazioni, di [esplorare il pubblico di una newsletter](../../reporting/using/use-cases.md#analyzing-a-population) o di [creare un report sulla popolazione di una transizione di flusso di lavoro](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow). Inoltre puoi, ad esempio, [analizzare il tasso di reattività dei destinatari di una newsletter](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
+ I [rapporti di analisi descrittiva](../../reporting/using/about-descriptive-analysis.md) di Adobe Campaign ti consentono di progettare e condividere rapporti statistici sulle popolazioni, di [esplorare il pubblico di una newsletter](../../reporting/using/use-cases.md#analyzing-a-population) o di [creare un rapporto sulla popolazione di una transizione di flusso di lavoro](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow). Inoltre puoi, ad esempio, [analizzare il tasso di reattività dei destinatari di una newsletter](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
 
 [Fai clic qui per ulteriori informazioni](../../reporting/using/about-descriptive-analysis.md).
 
@@ -39,7 +40,7 @@ Campaign Classic ti consente di [creare report avanzati](../../reporting/using/a
 
 ## Cos’è un cubo e come si crea questo tipo di report? {#what-is-a-cube-and-how-to-create-such-a-report-}
 
-Puoi estendere le capacità di esplorazione e di analisi del database e semplificare la configurazione di report e tabelle da parte degli utenti finali: tutto ciò che devono fare è selezionare un cubo esistente (completamente configurato) durante la creazione del report o della tabella per elaborare calcoli, misure e statistiche.
+Puoi estendere le capacità di esplorazione e di analisi del database e semplificare la configurazione di rapporti e tabelle da parte dell’utente finale: per elaborare calcoli, misure e statistiche, sarà sufficiente selezionare un cubo esistente (completamente configurato) durante la creazione del rapporto o della tabella .
 
 Una volta creati e configurati, i cubi vengono utilizzati nelle caselle di query dei report e nelle applicazioni web. Possono essere utilizzati e manipolati all’interno di tabelle pivot.
 

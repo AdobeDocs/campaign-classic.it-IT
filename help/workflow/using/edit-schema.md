@@ -2,9 +2,10 @@
 product: campaign
 title: Modifica di uno schema
 description: Ulteriori informazioni sull’attività del flusso di lavoro Modifica schema
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Targeting Activity
 exl-id: d26966a8-b5db-4fa4-85ec-7ebd770c4ef3
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 3%
@@ -13,7 +14,7 @@ ht-degree: 3%
 
 # Modifica di uno schema{#edit-schema}
 
-![](../../assets/v7-only.svg)
+
 
 I dati possono essere trasformati, normalizzati e, se necessario, arricchiti nel flusso di lavoro utilizzando **[!UICONTROL Edit schema]** attività. Viene generalmente utilizzato per normalizzare la struttura dei dati: è possibile rinominare le colonne di output o modificarne il contenuto, ad esempio calcolando i valori medi di un campo o di un aggregato.
 

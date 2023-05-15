@@ -2,11 +2,12 @@
 product: campaign
 title: Dati aggiuntivi
 description: Dati aggiuntivi
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 01adb584-5308-4d41-a6f1-223a97efa10f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 1%
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 # Dati aggiuntivi{#additional-data}
 
-![](../../assets/v7-only.svg)
+
 
 Durante una chiamata al motore di interazione, puoi trasferire informazioni aggiuntive contestuali. Questi dati possono provenire dai dati di destinazione memorizzati nella tabella di lavoro di un flusso di lavoro (canale in uscita) o dai dati di chiamata inviati dal sito web durante la chiamata (canale in entrata). Puoi utilizzare questi dati aggiuntivi nelle regole di idoneità, nella personalizzazione delle offerte e anche memorizzarli in una tabella di proposte.
 

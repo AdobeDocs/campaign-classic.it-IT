@@ -2,9 +2,10 @@
 product: campaign
 title: Gestione dell’interazione e dell’offerta
 description: Scopri come inviare le migliori offerte ai tuoi contatti in base alle regole di idoneità
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Interaction, Offers
 exl-id: 62b8fdcd-8423-496c-8407-ab89a3a70721
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 6%
@@ -13,7 +14,7 @@ ht-degree: 6%
 
 # Gestione dell’interazione e dell’offerta{#interaction-and-offer-management}
 
-![](../../assets/v7-only.svg)
+
 
 L’interazione ti consente di rispondere in tempo reale durante un’interazione con un determinato contatto (un cliente o un target) rendendoli una o più offerte adattate. Ad esempio, possono trattarsi di semplici messaggi di comunicazione, offerte speciali su uno o più prodotti o un servizio.
 

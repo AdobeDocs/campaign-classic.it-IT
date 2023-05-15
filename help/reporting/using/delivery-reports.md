@@ -2,9 +2,11 @@
 product: campaign
 title: Rapporti sulle consegne
 description: Rapporti sulle consegne
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
-source-git-commit: 64d97c7879320296a5f8efc5bb5bc2bea8663c08
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1451'
 ht-degree: 7%
@@ -13,7 +15,7 @@ ht-degree: 7%
 
 # Rapporti sulle consegne {#delivery-reports}
 
-![](../../assets/common.svg)
+
 
 Puoi tracciare l’esecuzione delle consegne tramite vari rapporti accessibili dalla panoramica della consegna. Per visualizzare i rapporti, attenersi alla seguente procedura:
 
@@ -44,7 +46,7 @@ Puoi tracciare l’esecuzione delle consegne tramite vari rapporti accessibili d
 
 ## Indicatori di tracciamento {#tracking-indicators}
 
-Questo rapporto combina gli indicatori chiave per tenere traccia del comportamento dei destinatari alla ricezione della consegna. Consente di accedere alle statistiche di consegna e ricezione, ai tassi di apertura e click-through, ai flussi clic generati, al tracciamento web e alle attività di condivisione sui social network.
+Questo rapporto combina gli indicatori chiave per tenere traccia del comportamento dei destinatari alla ricezione della consegna. Consente di accedere alle statistiche su consegna e ricezione, ai tassi di apertura e click-through, ai flussi clic generati, al tracciamento web e alle attività di condivisione sui social network.
 
 >[!NOTE]
 >
@@ -182,7 +184,7 @@ Questo rapporto mostra il contenuto del messaggio (HTML e/o testo) e la percentu
 
 ![](assets/s_ncs_user_clic_report.png)
 
-## Tracking delle statistiche {#tracking-statistics}
+## Statistiche di tracciamento {#tracking-statistics}
 
 Questo rapporto fornisce statistiche su aperture, clic e transazioni.
 

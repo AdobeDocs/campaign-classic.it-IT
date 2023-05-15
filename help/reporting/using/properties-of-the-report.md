@@ -2,9 +2,11 @@
 product: campaign
 title: Proprietà del rapporto
 description: Ulteriori informazioni sulle impostazioni delle proprietà del report
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 2%
@@ -13,7 +15,7 @@ ht-degree: 2%
 
 # Proprietà del rapporto{#properties-of-the-report}
 
-![](../../assets/common.svg)
+
 
 Puoi personalizzare e configurare completamente il rapporto in base alle tue esigenze. A questo scopo, modificane le proprietà. Le proprietà dei rapporti sono accessibili tramite la **[!UICONTROL Properties]** sopra il grafico a sequenza di attività.
 

@@ -2,9 +2,11 @@
 product: campaign
 title: Creare lo script
 description: Scopri come eseguire test A/B tramite un caso d’uso dedicato
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
 exl-id: 4143d1b7-0e2b-4672-ad57-e4d7f8fea028
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 5%
@@ -13,7 +15,7 @@ ht-degree: 5%
 
 # Creare lo script {#step-5--creating-the-script}
 
-![](../../assets/common.svg)
+
 
 La scelta del contenuto di consegna destinato alla popolazione rimanente viene calcolata da uno script. Questo script recupera le informazioni relative alla consegna con il tasso di apertura più elevato e copia il contenuto nella consegna finale.
 

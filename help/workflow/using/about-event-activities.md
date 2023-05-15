@@ -2,9 +2,10 @@
 product: campaign
 title: Informazioni sulle attività di eventi
 description: Informazioni sulle attività di eventi
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: ed27159e-2fce-4b1c-92e8-581901b82f60
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 5%
@@ -13,7 +14,7 @@ ht-degree: 5%
 
 # Attività evento nei flussi di lavoro{#about-event-activities}
 
-![](../../assets/v7-only.svg)
+
 
 Il compito principale di queste attività consiste nell&#39;attendere un evento. Può essere, ad esempio, la ricezione di un file, un&#39;e-mail o un segnale inviato dal programma.
 

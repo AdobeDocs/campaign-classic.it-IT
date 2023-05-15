@@ -2,9 +2,10 @@
 product: campaign
 title: Creare una campagna locale
 description: Creare una campagna locale
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Distributed Marketing
 exl-id: 17b5865a-5e04-4b3b-8b6a-12d5c1a9c1da
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1564'
 ht-degree: 1%
@@ -13,7 +14,7 @@ ht-degree: 1%
 
 # Creare una campagna locale{#creating-a-local-campaign}
 
-![](../../assets/v7-only.svg)
+
 
 Una campagna locale è un&#39;istanza creata da un modello a cui si fa riferimento nell&#39;elenco di **[!UICONTROL campaign packages]** con **programma di esecuzione specifico**. Il suo obiettivo è soddisfare un&#39;esigenza di comunicazione locale utilizzando un modello di campagna configurato e configurato dall&#39;entità centrale. Le fasi principali per l&#39;attuazione di un&#39;operazione locale sono le seguenti:
 

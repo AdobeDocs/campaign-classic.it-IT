@@ -2,11 +2,12 @@
 product: campaign
 title: Creazione e gestione di attività
 description: Creazione e gestione di attività
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '3729'
 ht-degree: 1%
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 # Creare e gestire le attività{#creating-and-managing-tasks}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe Campaign consente di creare attività e gestirne il ciclo di vita completo direttamente dall’interno dell’applicazione. L’implementazione di programmi e campagne può essere suddivisa in attività assegnate agli operatori Adobe Campaign o a fornitori di servizi esterni. Questa modalità operativa consente di creare un ambiente di collaborazione aperto che includa tutti i partecipanti al programma e i partecipanti esterni.
 

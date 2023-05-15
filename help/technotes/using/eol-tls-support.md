@@ -2,11 +2,12 @@
 product: campaign
 title: Fine del supporto per TLS 1.0 e 1.1
 description: Fine del supporto per TLS 1.0 e 1.1
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: e18d43b6-2a77-4881-85e7-ca36248d4634
-source-git-commit: ee7c85f94fc03f6cfca8da11ddea5ebd32d0b2b4
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 4%
@@ -15,7 +16,7 @@ ht-degree: 4%
 
 # Fine del supporto per TLS 1.0 e 1.1{#eol-tls-support}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe non supporta più i sistemi utente e client che non sono conformi al protocollo Transport Layer Security (TLS) 1.2. Se continui a utilizzare versioni precedenti di TLS, potresti perdere l’accesso a tutti i prodotti e i servizi di Adobe.
 

@@ -1,12 +1,14 @@
 ---
 product: campaign
 title: Utilizzo di server SFTP
-description: Ulteriori informazioni sulle best practice e sulla risoluzione dei problemi del server SFTP.
+description: Ulteriori informazioni sulle best practice e sui problemi del server SFTP
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 14%
@@ -15,7 +17,7 @@ ht-degree: 14%
 
 # Best practice e risoluzione dei problemi per il server SFTP {#sftp-server-usage}
 
-![](../../assets/common.svg)
+
 
 ## Raccomandazioni globali per server SFTP {#global-recommendations}
 
@@ -45,7 +47,7 @@ Per evitare tali problemi, l&#39;Adobe consiglia di seguire le best practice rip
 >
 >Se la tua istanza è ospitata su AWS, puoi monitorare l’archiviazione del server SFTP con Campaign Classic [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html). Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 >
->Il Pannello di controllo Campaign è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente l’accesso come amministratore sono descritti in[questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel).
+>Il Pannello di controllo è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente l’accesso come amministratore sono descritti in[questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel).
 >
 >Tieni presente che l’istanza deve essere aggiornata con la [build GA più recente](../../rn/using/rn-overview.md). Scopri come controllare la versione in [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 

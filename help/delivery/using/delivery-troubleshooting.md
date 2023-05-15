@@ -2,9 +2,11 @@
 product: campaign
 title: Risoluzione dei problemi di invio della consegna
 description: Ulteriori informazioni sulle prestazioni di consegna e su come risolvere i problemi relativi al monitoraggio della consegna
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Deliverability
 exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 1%
@@ -13,7 +15,7 @@ ht-degree: 1%
 
 # Risoluzione dei problemi di invio della consegna {#delivery-troubleshooting}
 
-![](../../assets/common.svg)
+
 
 In questa sezione sono elencati i problemi comuni che potresti riscontrare durante l’invio delle consegne e come risolverli.
 

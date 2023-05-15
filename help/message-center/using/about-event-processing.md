@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: Elaborazione di eventi
-description: Scopri come vengono elaborati gli eventi di messaggistica transazionale in Adobe Campaign Classic.
+description: Scopri come vengono elaborati gli eventi di messaggistica transazionale in Adobe Campaign Classic
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 2%
@@ -15,7 +16,7 @@ ht-degree: 2%
 
 # Elaborazione di eventi {#about-event-processing}
 
-![](../../assets/v7-only.svg)
+
 
 Nel contesto della messaggistica transazionale, un evento viene generato da un sistema di informazioni esterno e inviato ad Adobe Campaign tramite il **[!UICONTROL PushEvent]** e **[!UICONTROL PushEvents]** metodi (vedi [Descrizione evento](../../message-center/using/event-description.md)).
 

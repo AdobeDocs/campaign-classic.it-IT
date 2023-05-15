@@ -2,9 +2,11 @@
 product: campaign
 title: Rinuncia al tracciamento delle applicazioni web
 description: Rinuncia al tracciamento delle applicazioni web
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Apps
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 3%
@@ -13,42 +15,42 @@ ht-degree: 3%
 
 # Rinuncia al tracciamento delle applicazioni web{#web-application-tracking-opt-out}
 
-![](../../assets/common.svg)
 
-Adobe Campaign consente di interrompere il tracciamento dei comportamenti web degli utenti finali che rinunciano al tracciamento comportamentale tramite cookie o web beacon. La funzione include la possibilità di visualizzare un banner per presentare all’utente finale tale opzione; è possibile aggiungere questi banner nelle applicazioni web o nelle pagine di destinazione.
 
-Se un utente finale rinuncia al tracciamento comportamentale tramite cookie o web beacon, tali informazioni vengono trasmesse al server di tracciamento di Adobe Campaign con API JavaScript. Tieni presente che alcune giurisdizioni potrebbero richiedere che il Cliente presenti agli utenti finali un consenso prima che sia possibile offrire un rifiuto (o altri requisiti legali), ed è responsabilità del Cliente conformarsi alle leggi applicabili.
+Adobe Campaign consente di interrompere il tracciamento dei comportamenti web degli utenti finali che rinunciano al tracciamento dei comportamenti tramite cookie o web beacon. La funzione include la possibilità di visualizzare un banner per presentare all’utente finale tale opzione; puoi aggiungere questi banner nelle applicazioni web o nelle pagine di destinazione.
+
+Se un utente finale rinuncia al tracciamento dei comportamenti tramite cookie o web beacon, tali informazioni vengono trasmesse al server di tracciamento di Adobe Campaign con API JavaScript. Tieni presente che alcune giurisdizioni possono richiedere che il Cliente presenti agli utenti finali un consenso prima che un diniego possa essere offerto (o avere altri requisiti legali), ed è responsabilità del Cliente rispettare le leggi applicabili.
 
 >[!NOTE]
 >
->Quando si esegue lo scripting, seguire sempre le linee guida descritte nella [Lista di controllo per sicurezza e privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
+>Quando gli script seguono sempre le linee guida descritte nel [Lista di controllo protezione e privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
 
 ## Configurazione del banner {#configuring-the-banner-}
 
-Per essere visualizzato nelle applicazioni web o nelle pagine di destinazione, è necessario configurare il banner.
+Per essere visualizzato all’interno di applicazioni Web o pagine di destinazione, è necessario configurare il banner.
 
-Adobe Campaign viene fornito con un banner di esempio da adattare in base alle tue esigenze. Questa versione del banner viene visualizzata come un blocco di personalizzazione che si trova nella cartella del modello di contenuto. Consulta [questa pagina](../../delivery/using/personalization-blocks.md).
+Adobe Campaign viene fornito con un banner di esempio che devi adattare alle tue esigenze. Questa versione del banner viene visualizzata come un blocco di personalizzazione situato nella cartella del modello di contenuto. Consulta [questa pagina](../../delivery/using/personalization-blocks.md).
 
 >[!IMPORTANT]
 >
->Per creare un banner personalizzato, devi personalizzare il banner predefinito.
+>Per creare un banner personalizzato, devi personalizzare il banner preconfigurato.
 
-Per attivare il banner, è necessario configurare le proprietà dell&#39;applicazione Web. Consulta la sezione [Progettazione di un’applicazione web](designing-a-web-application.md) sezione.
+Per attivare il banner, è necessario configurare le proprietà dell&#39;applicazione Web. Fai riferimento a [Progettazione di un’applicazione web](designing-a-web-application.md) sezione .
 
-Se il tracciamento web è attivato, puoi avere:
+Se è attivato il tracciamento Web, è possibile disporre di:
 
 * Nessun banner.
 * Configura il banner manualmente su ogni pagina: seleziona questa opzione e seleziona il banner in ogni pagina nelle proprietà della pagina.
 
    ![](assets/pageproperties.png)
 
-* Aggiungi automaticamente il banner a tutte le pagine: seleziona il banner direttamente nelle proprietà dell&#39;applicazione Web.
+* Aggiungi automaticamente il banner a tutte le pagine: selezionare il banner direttamente nelle proprietà dell&#39;applicazione Web.
 
    ![](assets/optoutconfig.png)
 
 >[!NOTE]
 >
->È disponibile una modalità di compatibilità per l&#39;applicazione Web v5 con lo stesso comportamento.
+>Per l&#39;applicazione Web v5 è disponibile una modalità di compatibilità con lo stesso comportamento.
 
 Il banner predefinito ha la seguente struttura:
 
@@ -62,52 +64,52 @@ Il banner predefinito ha la seguente struttura:
       
 ```
 
-Sostituire il **Inserire il messaggio qui** con il blocco contenente le informazioni di tracciamento. Questa sostituzione deve essere eseguita nel nuovo blocco di personalizzazione relativo al banner di rinuncia.
+È necessario sostituire **Inserisci qui il messaggio** con il blocco contenente le informazioni di tracciamento. Questa sostituzione deve essere eseguita nel nuovo blocco di personalizzazione relativo al banner di rinuncia.
 
-Il banner viene consegnato con un CSS specifico. Tuttavia, è possibile sovrascrivere gli stili durante la creazione e la configurazione di una pagina Web. Consulta [questa pagina](content-editor-interface.md).
+Il banner viene fornito con un CSS specifico. Tuttavia, puoi sovrascrivere gli stili durante la creazione e la configurazione di una pagina web. Consulta [questa pagina](content-editor-interface.md).
 
 ## Impostazione del cookie di rinuncia tramite API {#setting-the-opt-out-cookie-using-api}
 
-Adobe Campaign viene fornito con API che ti consentono di gestire il valore dei cookie e di recuperare le preferenze dell’utente.
+Adobe Campaign viene fornito con API che ti consentono di gestire il valore dei cookie e recuperare le preferenze utente.
 
 Il nome del cookie è **acoptout**. I valori comuni sono:
 
-* 0: l’utente ha consentito il tracciamento web (valore predefinito)
-* 1: l’utente ha vietato il tracciamento web
-* null: l&#39;utente non ha scelto, ma il tracciamento Web è consentito in quanto è il valore predefinito
+* 0: l&#39;utente ha consentito il web tracking (valore predefinito)
+* 1: l&#39;utente ha proibito il web tracking
+* null: utente non selezionato ma il tracciamento Web è consentito in quanto è il valore predefinito
 
 Le API lato client disponibili per personalizzare il banner sono:
 
-* **NL.ClientWebTracking.allow()**: imposta il valore del cookie di rinuncia per consentire il tracciamento web. Il tracciamento web è consentito per impostazione predefinita.
-* **NL.ClientWebTracking.forbid()**: imposta il valore del cookie di rinuncia per impedire il tracciamento web. Il tracciamento web richiede che un input dell’utente sia vietato.
-* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**: chiude il banner del cookie di rinuncia dopo che l’utente ha fatto clic sul pulsante Accetta o Rifiuta. (durante la fase di bubbling dell’evento clic)
+* **NL.ClientWebTracking.allow()**: Imposta il valore del cookie di rinuncia per consentire il tracciamento Web. Il tracciamento web è consentito per impostazione predefinita.
+* **NL.ClientWebTracking.forbid()**: Imposta il valore del cookie di rinuncia per impedire il tracciamento Web. Il tracciamento web richiede che l&#39;input dell&#39;utente sia vietato.
+* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**: Chiude il banner cookie di rinuncia dopo che l’utente ha fatto clic sul pulsante Accetta o Rifiuta . (durante la fase di propagazione degli eventi di clic)
 
-   bannerDomElt {DOMElement} l’elemento DOM principale del banner del cookie da rimuovere
+   bannerDomElt {DOMElement} l&#39;elemento DOM radice del banner cookie che deve essere rimosso
 
-* **NL.ClientWebTracking.hasUserPrefs()**: restituisce true se l’utente ha scelto le proprie preferenze per il tracciamento web.
-* **NL.ClientWebTracking.getUserPrefs()**: restituisce il valore del cookie di rinuncia che definisce le preferenze dell’utente.
+* **NL.ClientWebTracking.hasUserPrefs()**: Restituisce true se l&#39;utente ha scelto le proprie preferenze per il tracciamento Web.
+* **NL.ClientWebTracking.getUserPrefs()**: Restituisce il valore del cookie di rinuncia che definisce le preferenze dell&#39;utente.
 
-Se devi scrivere un JSSP, sono disponibili le API lato server:
+Se è necessario scrivere un JSSP, sono disponibili le API lato server:
 
-* **NL.ServerWebTracking.generateOptOutBanner(escapeJs)**: genera il markup per il banner di rinuncia da inserire nella pagina JSSP
+* **NL.ServerWebTracking.generateOptOutBanner(escapeJs)**: Genera il markup per il banner di rinuncia da inserire nella pagina JSSP
 
-   **escapeJs {Boolean}**: true quando il markup generato deve avere l’escape per essere utilizzato all’interno di JavaScript.
+   **escapeJs {Boolean}**: true quando il markup generato deve essere escape per essere utilizzato in JavaScript.
 
-   Restituisce il HTML del markup del banner di rinuncia da stampare nella pagina.
+   Restituisce il HTML del markup del banner di rinuncia che deve essere stampato nella pagina.
 
 * **NL.ServerWebTracking._displayOptOutBanner()**
 
-   Restituisce &quot;true&quot; se il banner di rinuncia deve essere visualizzato dopo che l’amministratore ha selezionato un banner di rinuncia
+   Restituisce &quot;true&quot; se il banner di rinuncia deve essere visualizzato dopo che un banner di rinuncia è stato selezionato dall&#39;amministratore
 
-   Questo codice viene richiamato quando l’amministratore ha già scelto di utilizzare il banner di rinuncia al tracciamento web.
+   Questo codice viene chiamato quando l&#39;amministratore ha già scelto di utilizzare il banner di rinuncia al web tracking.
 
-   Se l&#39;utente non ha ancora scelto di essere tracciato, il banner deve essere visualizzato.
+   Il banner deve essere visualizzato se l’utente non ha ancora scelto di essere tracciato o meno.
 
 * **NL.ServerWebTracking.renderOptOutBanner(escapeJs)**
 
-   Esegue il rendering del markup per il banner di rinuncia inserendolo nella pagina JSSP. Viene chiamato così com&#39;è in Jssp tra &lt;% %>
+   Esegue il rendering del markup per il banner di rinuncia inserendolo nella pagina JSSP. Viene chiamato così come è in Jssp tra &lt;% %>
 
-   **escapeJs {Boolean}**: true quando il markup generato deve avere l’escape per essere utilizzato all’interno di JavaScript
+   **escapeJs {Boolean}**: true quando il markup generato deve essere escape per essere utilizzato in JavaScript
 
 Esempio JSSP:
 

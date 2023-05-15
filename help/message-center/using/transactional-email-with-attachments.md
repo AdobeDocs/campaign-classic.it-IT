@@ -2,9 +2,10 @@
 product: campaign
 title: Inviare e-mail transazionali con allegati
 description: Scopri come inviare e-mail transazionali con allegati singoli e/o personalizzati utilizzando Adobe Campaign
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Transactional Messaging
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 5%
@@ -13,7 +14,7 @@ ht-degree: 5%
 
 # Caso di utilizzo: Inviare e-mail transazionali con allegati {#transactional-email-with-attachments}
 
-![](../../assets/v7-only.svg)
+
 
 Lo scopo di questo caso d’uso è quello di aggiungere al volo allegati e-mail a messaggi in uscita.
 

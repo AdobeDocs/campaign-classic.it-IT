@@ -1,19 +1,21 @@
 ---
 product: campaign
 title: Personalizzare l’elenco delle emoticon
-description: Scopri come personalizzare l’elenco degli emoticon quando utilizzi Adobe Campaign Classic
+description: Scopri come personalizzare l’elenco degli emoticon quando utilizzi Adobe Campaign
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email, Push
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '442'
 ht-degree: 3%
 
 ---
 
 # Personalizzare l’elenco delle emoticon {#customize-emoticons}
 
-![](../../assets/common.svg)
+
 
 L’elenco di emoticon visualizzato nella finestra a comparsa è governato da un’enumerazione che consente di visualizzare i valori in un elenco per limitare le scelte dell’utente per un dato campo.
 L&#39;ordine dell&#39;elenco degli emoticon può essere personalizzato, è anche possibile aggiungere altri emoticon alla tua lista.

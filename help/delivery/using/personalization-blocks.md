@@ -2,9 +2,11 @@
 product: campaign
 title: Blocchi di personalizzazione
 description: Scopri come utilizzare i blocchi di personalizzazione
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Personalization
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 3%
@@ -13,7 +15,7 @@ ht-degree: 3%
 
 # Blocchi di personalizzazione{#personalization-blocks}
 
-![](../../assets/common.svg)
+
 
 I blocchi di personalizzazione sono dinamici, personalizzati e contengono un rendering specifico che puoi inserire nelle consegne. Ad esempio, puoi aggiungere un logo, un messaggio di auguri o un collegamento a una pagina speculare. Vedi [Inserire blocchi di personalizzazione](#inserting-personalization-blocks).
 
@@ -93,7 +95,7 @@ Per impostazione predefinita, è disponibile un elenco di blocchi di personalizz
 
 ![](assets/s_ncs_user_personalized_block_list.png)
 
-* **[!UICONTROL Greetings]** : inserisce i saluti con il nome del destinatario. Esempio: “Ciao John Doe,”
+* **[!UICONTROL Greetings]** : inserisce i saluti con il nome del destinatario. Esempio: “Ciao John Doe,” 
 * **[!UICONTROL Insert logo]** : inserisce un logo predefinito definito durante la configurazione dell’istanza.
 * **[!UICONTROL Powered by Adobe Campaign]** : inserisce il logo &quot;Powered by Adobe Campaign&quot; (Alimentato da).
 * **[!UICONTROL Mirror page URL]** : inserisce l’URL della pagina speculare, consentendo a Progettazione consegne di controllare il collegamento.

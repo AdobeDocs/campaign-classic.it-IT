@@ -1,19 +1,21 @@
 ---
 product: campaign
-title: Gestione della quarantena
-description: Gestione della quarantena
+title: Informazioni sulla gestione della quarantena
+description: Informazioni sulla gestione della quarantena
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Deliverability
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: c84f48ebdd66524e8dd6c39c88ae29565d11c9b2
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '2997'
 ht-degree: 12%
 
 ---
 
-# Gestione della quarantena{#understanding-quarantine-management}
+# Informazioni sulla gestione della quarantena{#understanding-quarantine-management}
 
-![](../../assets/common.svg)
+
 
  Adobe Campaign gestisce un elenco di indirizzi in quarantena. I destinatari il cui indirizzo è stato messo in quarantena sono esclusi per impostazione predefinita durante l’analisi della consegna e non saranno oggetto di targeting. Un indirizzo e-mail può essere posto in quarantena, ad esempio, quando la casella di posta è piena o se l’indirizzo non esiste. In ogni caso, la procedura di quarantena è conforme alle norme specifiche descritte di seguito.
 

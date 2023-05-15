@@ -2,9 +2,11 @@
 product: campaign
 title: Istruzioni di pre-elaborazione per gli URL tracciati
 description: Ulteriori informazioni sulle istruzioni di pre-elaborazione da utilizzare per creare uno script dell’URL di un messaggio e-mail e tenerlo comunque traccia
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 2%
@@ -13,7 +15,7 @@ ht-degree: 2%
 
 # Istruzioni per la preelaborazione {#pre-processing-instructions}
 
-![](../../assets/common.svg)
+
 
 Puoi utilizzare una sintassi specifica nel contenuto della consegna per aggiungere istruzioni e creare uno script per l’URL dell’e-mail tracciata. Le istruzioni &lt;%@ non sono JavaScript: questa sintassi è specifica di Adobe Campaign.
 

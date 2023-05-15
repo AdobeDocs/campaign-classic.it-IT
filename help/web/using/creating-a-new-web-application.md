@@ -2,9 +2,11 @@
 product: campaign
 title: Creare una nuova applicazione web
 description: Creare una nuova applicazione web
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Apps
 exl-id: 5ccf5a21-48aa-4c0d-8cc8-457eb07d9f74
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 20%
@@ -13,46 +15,46 @@ ht-degree: 20%
 
 # Creare una nuova applicazione web{#creating-a-new-web-application}
 
-![](../../assets/common.svg)
+
 
 I tipi di applicazione Web vengono selezionati durante la creazione.
 
-Vai a **Campagne** e seleziona la scheda **[!UICONTROL Web Applications]** menu. Fai clic sul pulsante **[!UICONTROL Create]**. Selezionare il modello di applicazione Web che si desidera utilizzare:
+Vai a **Campagne** e seleziona la **[!UICONTROL Web Applications]** menu. Fai clic sul pulsante **[!UICONTROL Create]**. Selezionare il modello di applicazione Web da utilizzare:
 
 ![](assets/webapp_create_from_campaign.png)
 
 >[!NOTE]
 >
->Proteggi sempre le pagine che potrebbero contenere informazioni personali. Consulta la sezione [Lista di controllo per sicurezza e privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy).
+>Proteggi sempre le pagine che potrebbero contenere informazioni personali. Fai riferimento a [Lista di controllo protezione e privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy).
 
 Questo modello determina il tipo di applicazione Web. Puoi creare:
 
 1. Moduli web (+ modifica profilo)
 
-   I moduli Web consentono di offrire pagine Web con campi di input o di selezione: le informazioni immesse dagli utenti possono essere memorizzate nel database di Adobe Campaign. Per ulteriori informazioni, consulta [Moduli web](about-web-forms.md).
+   I moduli web consentono di offrire pagine Web con campi di input o di selezione: le informazioni immesse dagli utenti possono essere memorizzate nel database di Adobe Campaign. Per ulteriori informazioni, consulta [Moduli web](about-web-forms.md).
 
 1. Applicazioni web
 
-   Adobe Campaign consente di creare applicazioni Web da esporre, ad esempio, su una piattaforma Web o su una extranet. Questo consente di modificare i dati e registrare le informazioni in Adobe Campaign. In questo caso, puoi limitarne l’accesso agli utenti autenticati (tramite il controllo degli accessi) e impostare il precaricamento dei dati in base a vari criteri. Per ulteriori informazioni al riguardo, consulta [questa sezione](about-web-applications.md).
+   Adobe Campaign consente di creare applicazioni Web da esporre, ad esempio, su una piattaforma Web o su una rete Intranet. Questo consente di modificare i dati e registrare le informazioni in Adobe Campaign. In questo caso, puoi limitarne l’accesso agli utenti autenticati (tramite il controllo degli accessi) e impostare il precaricamento dei dati in base a vari criteri. Per ulteriori informazioni al riguardo, consulta [questa sezione](about-web-applications.md).
 
 1. Pagine di destinazione
 
-   Una pagina di destinazione è una pagina HTML il cui contenuto è disponibile su un sito web e che consente agli utenti di immettere informazioni da memorizzare nel profilo del database di Adobe Campaign. Il contenuto di questo tipo di pagina viene in genere creato da un’agenzia Web specializzata prima di essere importato in Adobe Campaign per la pubblicazione, la gestione e il follow-up. Per ulteriori informazioni, consulta [questa pagina](creating-a-landing-page.md).
+   Una pagina di destinazione è una pagina di HTML il cui contenuto è disponibile su un sito web e che consente agli utenti di immettere informazioni da memorizzare nel profilo di database di Adobe Campaign. Il contenuto di questo tipo di pagina viene generalmente creato da un’agenzia Web specializzata prima di essere importato in Adobe Campaign per la pubblicazione, la gestione e il follow-up. Per ulteriori informazioni, consulta [questa pagina](creating-a-landing-page.md).
 
 1. Indagini
 
-   Adobe Campaign consente, tramite **Gestione sondaggi** per progettare e gestire sondaggi online ed elaborarne i risultati: creazione di campi dinamici, gestione dei punteggi, esportazione di risposte e rapporti dedicati. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../surveys/using/about-surveys.md).
+   Adobe Campaign consente di: **Gestore dei sondaggi** per progettare e gestire i sondaggi online ed elaborarne i risultati: creazione di campi dinamici, gestione dei punteggi, esportazione di risposte e rapporti dedicati. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../surveys/using/about-surveys.md).
 
    >[!CAUTION]
    >
-   >**Gestione sondaggi** è un modulo Adobe Campaign opzionale. Controlla il contratto di licenza.
+   >**Gestore dei sondaggi** è un modulo Adobe Campaign facoltativo. Controlla il contratto di licenza.
 
 1. Applicazioni facebook
 
-   Grazie alla **Social marketing** Adobe Campaign consente di pubblicare contenuti personalizzati in un’applicazione Facebook. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../social/using/about-social-marketing.md).
+   Grazie a **Social marketing** Adobe Campaign consente di pubblicare contenuti personalizzati in un’applicazione Facebook. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../social/using/about-social-marketing.md).
 
    >[!CAUTION]
    >
-   >**Social marketing** è un modulo Adobe Campaign opzionale. Controlla il contratto di licenza.
+   >**Social marketing** è un modulo Adobe Campaign facoltativo. Controlla il contratto di licenza.
 
-La modalità di configurazione della pagina e le configurazioni disponibili possono essere identiche per diversi tipi di applicazioni web. Per ulteriori informazioni al riguardo, consulta [questa sezione](about-web-forms.md).
+La modalità di configurazione della pagina e le configurazioni disponibili possono essere identiche per diversi tipi di applicazioni Web. Per ulteriori informazioni al riguardo, consulta [questa sezione](about-web-forms.md).

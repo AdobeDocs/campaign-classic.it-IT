@@ -2,9 +2,11 @@
 product: campaign
 title: Introduzione al recapito messaggi in Campaign
 description: Scopri le best practice per il recapito messaggi
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 8%
@@ -13,7 +15,7 @@ ht-degree: 8%
 
 # Che cos’è il recapito messaggi{#about-deliverability}
 
-![](../../assets/common.svg)
+
 
 Il recapito messaggi ti consente di misurare il successo delle campagne che raggiungono la casella in entrata dei destinatari senza rimbalzare o essere contrassegnate come spam. [Scopri perché il recapito messaggi è importante](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html#why-deliverability-matters).
 
@@ -81,7 +83,7 @@ Alcuni provider di accesso a Internet considerano automaticamente le e-mail come
 Per ulteriori informazioni, consulta le sezioni seguenti:
 
 * [Errori di consegna](understanding-delivery-failures.md)
-* [Gestione della quarantena](understanding-quarantine-management.md)
+* [Informazioni sulla gestione della quarantena](understanding-quarantine-management.md)
 * [Quarantena rispetto elenco Bloccati](understanding-quarantine-management.md#quarantine-vs-denylist)
 
 ### Utilizzare strumenti di monitoraggio e reporting

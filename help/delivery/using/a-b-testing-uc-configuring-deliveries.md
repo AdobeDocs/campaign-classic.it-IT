@@ -2,9 +2,11 @@
 product: campaign
 title: Configurare le consegne
 description: Scopri come eseguire test A/B tramite un caso d’uso dedicato
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
 exl-id: 809de30b-7d08-40de-bf3e-dc80d62eae80
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -13,7 +15,7 @@ ht-degree: 0%
 
 # Configurare le consegne nel flusso di lavoro {#step-4--configuring-the-deliveries-in-the-workflow}
 
-![](../../assets/common.svg)
+
 
 Una volta [popolazioni create](a-b-testing-uc-population-samples.md), puoi configurare le consegne. In questo caso d’uso, le prime due consegne consentono di inviare contenuti diversi ai gruppi A e B. La terza consegna è la consegna di ritorno: verrà inviato ai destinatari che non appartengono a A né B. Il relativo contenuto verrà calcolato da uno script e sarà identico a A o B, a seconda di quale ha ottenuto il punteggio di apertura più alto. È necessario configurare un periodo di attesa per la terza consegna, per individuare il risultato delle consegne A e B. Per questo motivo la terza consegna include un **[!UICONTROL Wait]** attività.
 

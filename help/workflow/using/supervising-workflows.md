@@ -2,9 +2,10 @@
 product: campaign
 title: Supervisione dei flussi di lavoro
 description: Scopri come supervisionare i flussi di lavoro di Campaign
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 # Caso di utilizzo: supervisionare i flussi di lavoro{#supervising-workflows}
 
-![](../../assets/v7-only.svg)
+
 
 Questo caso d’uso descrive la creazione di un flusso di lavoro che consente di monitorare lo stato di un set di flussi di lavoro che vengono &quot;messi in pausa&quot;, &quot;interrotti&quot; o &quot;con errori&quot;.
 

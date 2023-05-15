@@ -2,8 +2,9 @@
 product: campaign
 title: Configura la struttura di navigazione di Campaign Explorer
 description: Scopri come configurare la struttura di navigazione di Campaign Explorer
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1196'
 ht-degree: 1%
@@ -11,8 +12,6 @@ ht-degree: 1%
 ---
 
 # Configura la struttura di navigazione di Campaign Explorer{#configuration}
-
-![](../../assets/v7-only.svg)
 
 In qualità di utente esperto, è possibile aggiungere cartelle nella struttura dell&#39;esploratore e personalizzarle.
 

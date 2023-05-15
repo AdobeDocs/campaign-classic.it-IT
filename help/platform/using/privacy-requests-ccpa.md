@@ -2,11 +2,13 @@
 product: campaign
 title: Rinuncia alla vendita di informazioni personali
 description: Scopri come rinunciare alla vendita di dati personali
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 8e308a9f-14a4-4a25-9fd0-8d4bdbcf74ce
-source-git-commit: 42b420d7dae7d38e9f4df442146d3b484c25e831
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 100%
@@ -15,7 +17,7 @@ ht-degree: 100%
 
 # Rinuncia alla vendita di informazioni personali (CCPA) {#sale-of-personal-information-ccpa}
 
-![](../../assets/common.svg)
+
 
 Il **California Consumer Privacy Act** (CCPA) fornisce ai residenti della California nuovi diritti in merito alle loro informazioni personali e impone responsabilità in materia di protezione dei dati a determinate entità che conducono attività commerciali in California.
 

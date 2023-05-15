@@ -2,11 +2,12 @@
 product: campaign
 title: Integrazione tramite JavaScript (lato client)
 description: Integrazione tramite JavaScript (lato client)
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: a9842e59-120c-4a35-abdf-6540a0bbdd6d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1140'
 ht-degree: 2%
@@ -15,7 +16,7 @@ ht-degree: 2%
 
 # Integrazione tramite JavaScript (lato client){#integration-via-javascript-client-side}
 
-![](../../assets/v7-only.svg)
+
 
 Per chiamare il motore di interazione in una pagina web, inserisci una chiamata a un codice JavaScript direttamente nella pagina. Questa chiamata restituisce il contenuto dell’offerta in un target
 

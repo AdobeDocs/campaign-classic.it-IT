@@ -2,9 +2,11 @@
 product: campaign
 title: Selezionare una mappatura di destinazione
 description: Scopri come eseguire la mappatura del target
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Delivery Templates
 exl-id: b5514fa3-1e65-45dc-8e40-d1ba3b673e7a
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 12%
@@ -13,7 +15,7 @@ ht-degree: 12%
 
 # Selezionare una mappatura di destinazione{#selecting-a-target-mapping}
 
-![](../../assets/common.svg)
+
 
 Per impostazione predefinita, target dei modelli di consegna **[!UICONTROL Recipients]**. La mappatura del target utilizza quindi i campi del **nms:recipient** tabella. Adobe Campaign offre altre mappature target per le consegne, da utilizzare in base alle tue esigenze.
 

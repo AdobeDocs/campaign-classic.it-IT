@@ -1,21 +1,23 @@
 ---
 product: campaign
 title: Decrittografia o decompressione di un file
-description: Scopri come decomprimere o decrittografare un file in Campaign Classic prima dell’elaborazione.
+description: Scopri come decomprimere o decrittografare un file in Campaign prima dell’elaborazione
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '715'
 ht-degree: 11%
 
 ---
 
 # Decrittografia o decompressione di un file {#unzipping-or-decrypting-a-file-before-processing}
 
-![](../../assets/common.svg)
+
 
 Adobe Campaign consente di importare file compressi o crittografati. Prima che possano essere letti in un [Caricamento dati (file)](../../workflow/using/data-loading--file-.md) puoi definire una pre-elaborazione per decomprimere o decrittografare il file.
 
@@ -25,7 +27,7 @@ Per poterlo fare:
 
    >[!NOTE]
    >
-   >Il Pannello di controllo Campaign è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente l’accesso come amministratore sono descritti in[questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel).
+   >Il Pannello di controllo è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente l’accesso come amministratore sono descritti in[questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel).
    >
    >Tieni presente che l’istanza deve essere ospitata su AWS e aggiornata con [build GA più recente](../../rn/using/rn-overview.md). Scopri come controllare la versione in [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 

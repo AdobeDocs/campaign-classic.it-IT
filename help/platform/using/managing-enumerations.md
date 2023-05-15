@@ -2,20 +2,21 @@
 product: campaign
 title: Gestione delle enumerazioni
 description: Gestione delle enumerazioni
+badge: label="v7" type="Informative" tooltip="Si applica solo ad Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 2ece058d-b493-4fea-b3db-322cf7ea7f4f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '886'
 ht-degree: 0%
 
 ---
 
 # Gestire le enumerazioni{#managing-enumerations}
 
-![](../../assets/common.svg)
+
 
 Un&#39;enumerazione (nota anche come &quot;elenco dettagliato&quot;) è un elenco di valori suggeriti dal sistema per compilare alcuni campi. Le enumerazioni ti consentono di standardizzare i valori di questi campi e di utilizzare i dati immessi o utilizzati all’interno delle query.
 

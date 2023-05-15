@@ -2,9 +2,11 @@
 product: campaign
 title: Creare un flusso di lavoro di targeting
 description: Scopri come eseguire test A/B tramite un caso d’uso dedicato
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
 exl-id: aa21fa33-aef9-484a-b454-0cd5a6868a98
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 10%
@@ -13,7 +15,7 @@ ht-degree: 10%
 
 # Creare un flusso di lavoro di targeting {#step-1--creating-a-targeting-workflow}
 
-![](../../assets/common.svg)
+
 
 È necessario creare il flusso di lavoro nel **[!UICONTROL Targeting and Workflows]** scheda di una campagna. È costituito da un **[!UICONTROL Query]** un’attività **[!UICONTROL Split]** attività collegata a due **[!UICONTROL Email delivery]** attività, **[!UICONTROL Wait]** un’attività **[!UICONTROL JavaScript code]** e un **[!UICONTROL Delivery]** attività.
 

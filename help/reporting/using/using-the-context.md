@@ -2,9 +2,11 @@
 product: campaign
 title: Utilizzare il contesto nei rapporti
 description: Scopri come utilizzare il contesto nei rapporti
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: a19e2843-d3f9-48c3-af72-cc1bc54f6360
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 0%
@@ -13,7 +15,7 @@ ht-degree: 0%
 
 # Utilizzare il contesto nei rapporti{#using-the-context}
 
-![](../../assets/common.svg)
+
 
 Quando desideri rappresentare i dati sotto forma di **[!UICONTROL tables]** o **[!UICONTROL charts]**, può essere prelevato da due fonti: una nuova query (fare riferimento a [Definire un filtro diretto per i dati](#defining-a-direct-filter-on-data)) o il contesto del rapporto (consulta [Utilizzare i dati contestuali](#using-context-data)).
 

@@ -2,11 +2,13 @@
 product: campaign
 title: Versioni 2020
 description: Ulteriori informazioni sulle versioni di Campaign Classic 2020
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: User
 level: Beginner
+hidefromtoc: true
 exl-id: e2eb7e04-faaa-4df0-913d-471c291eeb03
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '6601'
 ht-degree: 73%
@@ -15,7 +17,7 @@ ht-degree: 73%
 
 # Versioni 2020{#release-2020}
 
-![](../../assets/v7-only.svg)
+
 
 
 ## Versione 20.3{#release-20-3}
@@ -35,7 +37,7 @@ _27 ottobre 2020_
 >
 > * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), è necessario eseguire l’aggiornamento affinché sia il server di Campaign che la console client possano connettersi a Campaign dopo il **30 giugno 2021**. [Ulteriori informazioni](../../technotes/using/ims-updates.md)
 > * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
-> * Se utilizzi l’integrazione Experience Cloud Triggers tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione OAuth legacy con Campaign [è stata ritirata](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) a **settembre 2021**. Gli ambienti in hosting usufruiscono di una proroga fino al **23 febbraio 2022**. Se sei un cliente on-premise o ibrido, contatta l’Assistenza clienti Adobe per estendere il supporto fino a febbraio 2022. Devi fornire ad Adobe [l’AppID dell’applicazione OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional).
+> * Se utilizzi l’integrazione Experience Cloud Triggers tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione OAuth legacy con Campaign [è stata ritirata](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) a **settembre 2021**. Gli ambienti in hosting usufruiscono di una proroga fino al **23 febbraio 2022**. In qualità di cliente on-premise o ibrido, contatta l’Assistenza clienti Adobe per estendere il supporto a febbraio 2022. Devi fornire ad Adobe [l’AppID dell’applicazione OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional).
 
 
 **Novità**
@@ -107,7 +109,7 @@ Ulteriori informazioni sono disponibili nella pagina [Funzioni obsolete e rimoss
 **Miglioramenti**
 
 * Sono stati apportati diversi miglioramenti alla **console Client**:
-   * Il protocollo di connessione è stato aggiornato per adeguarlo al nuovo meccanismo di autenticazione IMS. Per potersi connettere dopo il 30 giugno 2021, è necessario aggiornare l’applicazione server e la console client.
+   * Il protocollo di connessione è stato aggiornato per adeguarlo al nuovo meccanismo di autenticazione IMS. Per poter connettersi dopo il 30 giugno 2021 è obbligatorio l’aggiornamento della console server e client.
    * Per evitare l’incompatibilità con alcune limitazioni delle regole dell’oggetto Criteri di gruppo di protezione Internet, la schermata di accesso alla console del client Campaign è stata sostituita da un modulo Windows standard incorporato.
    * È stato risolto un problema che si verificava durante l’utilizzo di copia/incolla delle attività in un flusso di lavoro tramite la console Client a 64 bit. (NEO-27635)
    * Nel menu **Informazioni** sono state aggiunte informazioni per distinguere le console da 64 e da 32 bit.
@@ -125,7 +127,7 @@ Ulteriori informazioni sui cookie in [questa sezione](../../platform/using/priva
 * È stato migliorato il messaggio di errore visualizzato durante l’inserimento di un’immagine da Adobe Target che lasciava il nome del tenant vuoto nell’account esterno.
 * Nelle proprietà di consegna, l’opzione **[!UICONTROL Archive emails]** è stata rinominata **[!UICONTROL Email BCC]**.
 * Per migliorare la robustezza, ora vengono rifiutate le query selectAll con nodi non validi. In caso di necessità si può disattivare il controllo e tornare al comportamento precedente, impostando XtkSecurity_Disable_QueryCheck su 0.
-* È stato aggiunto il supporto per l’intervallo di ID negativo per la sequenza nmsBroadlogId. Questa build regola il valore min_value della sequenza nmsBroadlogId in modo da includere l’intervallo negativo. Nel caso in cui si disponga di un caso d’uso rigoroso che non consente ID negativi, ripristina il valore min_value della sequenza a 1.
+* È stato aggiunto il supporto dell’intervallo ID negativo per la sequenza nmsBroadlogId. Questa build regola il valore min_value della sequenza nmsBroadlogId in modo che includa l&#39;intervallo negativo. Nel caso in cui si disponga di un caso d’uso rigoroso che non consente ID negativi, ripristina il valore min_value della sequenza a 1.
 
 **Evoluzioni tecniche**
 
@@ -193,17 +195,17 @@ _31 marzo 2021_
 
 **Miglioramenti**
 
-* È stato apportato un miglioramento per evitare arresti anomali per chiamate soap non valide. Questo potrebbe causare l’interruzione del funzionamento dell’istanza durante il tentativo di eseguire specifiche query complesse. (NEO-28796, NEO-30553)
-* È stata corretta una regressione che impediva l’invio di consegne SMS con TLS a causa della verifica del nome host. (NEO-29581)
-* È stato risolto un problema che impediva il funzionamento di collegamenti di tracciamento firmati su alcuni client e-mail. (NEO-28414, NEO-29615)
-* È stata corretta una sequenza di ID di tracciamento durante l’utilizzo dei tag di tracciamento webApp che poteva causare conflitti con ID duplicati. (NEO-27931)
-* È stato risolto un problema che causava l’arresto dei flussi di lavoro in esecuzione a causa del riavvio giornaliero di wfserver. (NEO-30047)
+* È stato migliorato il modo per evitare arresti anomali in caso di chiamate di sapone non valide. Questo potrebbe causare l’interruzione del funzionamento dell’istanza quando si tenta di eseguire query complesse specifiche. (NEO-28796, NEO-30553)
+* È stato risolto un problema di regressione che impediva l’invio di consegne SMS con TLS a causa della verifica del nome host. (NEO-29581)
+* È stato risolto un problema che impediva il funzionamento dei collegamenti di tracciamento firmati su alcuni client e-mail. (NEO-28414, NEO-29615)
+* È stata corretta una sequenza di ID di tracciamento quando si utilizzano i tag di tracciamento webApp che poteva causare conflitti con ID duplicati. (NEO-27931)
+* È stato risolto un problema che causava l’arresto dei flussi di lavoro in esecuzione a causa del riavvio giornaliero del server wfserver. (NEO-30047)
 * È stato risolto un problema di sicurezza relativo all’utilizzo delle chiamate API effettuate da utenti non amministratori che tentavano di sincronizzare i modelli Adobe Experience Manager. (NEO-32389, NEO-23487)
 * È stato risolto un problema che causava l’arresto anomalo della console durante la chiusura di una finestra di dialogo di consegna su una consegna creata con da un modello. (NEO-31547)
-* È stato risolto un problema che si verificava durante la creazione e il salvataggio di una consegna in **Targeting e flusso di lavoro** scheda di una campagna: l’anteprima non riusciva e veniva visualizzato il seguente errore. (NEO-29440)
-* È stato risolto un problema a causa del quale Tomcat 8.5 inviava risposte non valide che causavano errori nei registri di Messaggistica transazionale. (NEO-30858)
-* È stato risolto un problema di regressione che causava il danneggiamento della memoria nella gestione dei thread esterni e influiva sulle prestazioni.
-* È stato risolto un problema che poteva causare un errore nel flusso di lavoro Fatturazione quando si utilizzava una mappatura di destinazione personalizzata. La chiave primaria dello schema personalizzato viene memorizzata nella colonna &quot;sourceId&quot; che consente solo valori interi. Ora consente sia valori interi che valori stringa. (NEO-25914, NEO-28146)
+* È stato risolto un problema che si verificava durante la creazione e il salvataggio di una consegna all’interno di **Targeting e flusso di lavoro** scheda di una campagna: l&#39;anteprima avrebbe esito negativo con il seguente errore. (NEO-29440)
+* È stato risolto un problema con l’invio di risposte non valide da parte di Tomcat 8.5 che causava errori nei registri di messaggistica transazionale. (NEO-30858)
+* È stato risolto un problema di regressione che causava il danneggiamento della memoria nella gestione dei thread esterni e un impatto sulle prestazioni.
+* È stato risolto un problema che poteva causare un errore del flusso di lavoro Fatturazione quando si utilizzava una mappatura di destinazione personalizzata. La chiave primaria dello schema personalizzato viene memorizzata nella colonna &quot;sourceId&quot;, che consentiva solo valori interi. Ora consente sia valori interi che valori stringa. (NEO-25914, NEO-28146)
 * È stata corretta una regressione che impediva l’utilizzo di alcuni componenti della console, come il selettore data e la gestione delle immagini nelle consegne. (NEO-31453)
 
 ### ![](assets/do-not-localize/red_2.png) Versione 20.2.4 - Build 9187 {#release-20-2-4-build-9187}
@@ -225,23 +227,23 @@ _22 dicembre 2020_
 >
 > * Questa versione include un nuovo protocollo di connessione: se ti connetti a Campaign tramite Adobe Identity Service (IMS), è necessario eseguire l’aggiornamento affinché sia il server di Campaign che la console client possano connettersi a Campaign dopo il **30 giugno 2021**.  [Ulteriori informazioni](../../technotes/using/ims-updates.md)
 > * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
-> * Se utilizzi l’integrazione Experience Cloud Triggers tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione OAuth legacy con Campaign [è stata ritirata](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) a **settembre 2021**. Gli ambienti in hosting usufruiscono di una proroga fino al **23 febbraio 2022**. Se sei un cliente on-premise o ibrido, contatta l’Assistenza clienti Adobe per estendere il supporto fino a febbraio 2022. Devi fornire ad Adobe [l’AppID dell’applicazione OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional).
+> * Se utilizzi l’integrazione Experience Cloud Triggers tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione OAuth legacy con Campaign [è stata ritirata](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) a **settembre 2021**. Gli ambienti in hosting usufruiscono di una proroga fino al **23 febbraio 2022**. In qualità di cliente on-premise o ibrido, contatta l’Assistenza clienti Adobe per estendere il supporto a febbraio 2022. Devi fornire ad Adobe [l’AppID dell’applicazione OAuth](../../integrations/using/configuring-pipeline.md?lang=en#step-optional).
 
 
 **Miglioramenti**
 
 * Il protocollo di connessione è stato aggiornato per adeguarlo al nuovo meccanismo di autenticazione IMS.
-* L’autenticazione dell’integrazione dei trigger per accedere alla pipeline, originariamente basata sulla configurazione di autenticazione OAuth, è stata modificata e spostata in Adobe I/O. [Ulteriori informazioni](../../integrations/using/configuring-adobe-io.md)
+* L’autenticazione dell’integrazione dei trigger originariamente basata su oAUTH per accedere alla pipeline è stata modificata e spostata in Adobe I/O. [Ulteriori informazioni](../../integrations/using/configuring-adobe-io.md)
 * Con la [fine del supporto del protocollo binario legacy del servizio APNs per iOS](https://developer.apple.com/news/?id=c88acm2b), tutte le istanze che lo utilizzano vengono aggiornate al protocollo HTTP/2 nella fase di post-aggiornamento.
 * È stato risolto un problema di sicurezza per rafforzare la protezione contro gli attacchi SSRF (Server Side Request Forgery). (NEO-27777)
 * È stato risolto un problema che causava la disattivazione del connettore SMPP dopo un errore di connessione, impedendo l’invio di altre consegne SMS e causando problemi di prestazioni. (NEO-28609)
 * È stato risolto un problema di arresto anomalo del server impedendo il danneggiamento della memoria durante la pulizia del parser di espressione. (NEO-26856)
 * È stato risolto un problema che causava l’arresto anomalo del server durante la visualizzazione dei dati di destinazione del resto di un’attività **Split** in un flusso di lavoro.
 * È stato risolto un problema che poteva mostrare un messaggio di errore durante il tentativo di visualizzare l’anteprima dei messaggi SMS dopo una query su uno schema diverso da **Destinatario** (nms:recipient). (NEO-27517)
-* È stato risolto un problema che si verificava quando si effettuava una richiesta di connessione HTTPS con il numero di porta definito in modo esplicito nel nome host. La chiamata non riusciva e veniva visualizzato un errore di certificato. (NEO-29146)
-* È stato risolto un problema nella gestione dei thread POSIX che generava file di dump di base di grandi dimensioni sull’istanza di marketing. (NEO-28117, NEO-29281)
-* Sono stati risolti dei problemi che potevano causare l’arresto anomalo del processo web durante la preparazione delle consegne o con l’anteprima ricorrente delle consegne. (NEO-27790, NEO-27517)
-* È stato risolto un problema che causava un errore nell’invio di consegne o bozze se attivato da un operatore non amministratore. (NEO-28597)
+* È stato risolto un problema che si verificava quando si effettuava una richiesta di connessione HTTPS con il numero di porta esplicitamente definito nel nome host, a causa del quale la chiamata non riusciva e si verificava un errore di certificato. (NEO-29146)
+* È stato risolto un problema nella gestione del thread POSIX che generava file di dump di grandi dimensioni sull&#39;istanza di marketing. (NEO-28117, NEO-29281)
+* Sono stati risolti dei problemi che potevano causare l’arresto anomalo del processo web durante la preparazione delle consegne o con un’anteprima ricorrente della consegna. (NEO-27790, NEO-27517)
+* È stato risolto un problema che causava un errore nell’invio di consegne o prove se attivato da un operatore non amministratore. (NEO-28597)
 
 ![](assets/do-not-localize/cp-icon.png) **Rilascio di ottobre del nuovo Pannello di controllo** con configurazione dei domini tramite CNAME e nuove funzionalità di monitoraggio del database. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=it).
 
@@ -251,7 +253,7 @@ _11 settembre 2020_
 
 * È stato risolto un problema di regressione dovuto una singola funzione errata sulla parte di consegna, che generava un sovraccarico di memoria causando il blocco della preparazione della consegna. (NEO-27346)
 * È stato risolto un problema di post-aggiornamento che disattivava Apache e il server web prima della ripubblicazione dell’applicazione web. (NEO-27155)
-* È stata corretta una regressione nella gestione dei modelli di HTML che, a causa di un’interpretazione errata delle schede, rendeva visibili gli URL di tracciamento. (NEO-25909)
+* È stato risolto un problema di regressione nella gestione dei modelli di HTML che causava la visualizzazione degli URL di tracciamento a causa di un’interpretazione errata delle schede. (NEO-25909)
 * È stato risolto un problema relativo al flusso di lavoro di pulizia del database che poteva non riuscire a causa di un&#39;origine dati non gestita. (NEO-23160, NEO-23364)
 * Il flusso di lavoro di pulizia ora svuota gli elenchi scaduti per batch di 100 invece che singolarmente.
 * È stata corretta una regressione che impediva di modificare il nome interno di un account esterno. (NEO-27323)
@@ -481,7 +483,7 @@ Un esempio per Linux è disponibile in questa [pagina](../../configuration/using
 * È stato risolto un problema di regressione che causava l’arresto anomalo del flusso di lavoro di pulizia.
 * È stato risolto un problema che poteva verificarsi durante la pubblicazione di un modello in un’istanza di esecuzione.
 * È stato risolto un problema che poteva impedire l’esecuzione del flusso di lavoro tecnico collectPrivacyRequests. (NEO-20513, NEO-25169)
-* Sono stati risolti dei problemi che potevano verificarsi durante il tentativo di connessione ad Audience Manager dopo l’aggiornamento alla build 9080. (NEO-20511, NEO-25167)
+* Sono stati risolti i problemi che potevano verificarsi durante il tentativo di connessione ad Audience Manager dopo l’aggiornamento alla build 9080. (NEO-20511, NEO-25167)
 * Sono stati risolti dei problemi che potevano verificarsi durante l’esportazione di report in formato PDF o XLS. (NEO-20982, NEO-23493, NEO-23348)
 * È stato risolto un problema che poteva far sì che una consegna fosse visualizzata due volte nell’elenco di consegna dopo l’invio.
 * È stato risolto un problema relativo alla preparazione delle consegne che poteva verificarsi quando la configurazione dell’indirizzamento era impostata per inviare la consegna tramite mid-sourcing.
@@ -553,8 +555,8 @@ _17 febbraio 2020_
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Il Snowflake è un data warehouse cloud completamente gestito e scalabile sia a livello di storage che di elaborazione. Con questo nuovo connettore, Adobe Campaign ora può sfruttare la potenza del Snowflake per eseguire la segmentazione dei Big Data. Questo connettore è disponibile per tutti i clienti, inclusi quelli ospitati da Adobe.</p>
-    <p>Per ulteriori informazioni, consulta <a href="../../installation/using/configure-fda-snowflake.md">documentazione dettagliata</a> e <a href="https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">video tutorial</a>.</p>
+   <td> <p>Snowflake è un data warehouse cloud completamente gestito costruito per scalare sia a livello di storage che di calcolo. Con questo nuovo connettore, Adobe Campaign ora può sfruttare la potenza del Snowflake per eseguire la segmentazione dei big data. Questo connettore è disponibile per tutti i clienti, incluso ospitato da Adobe.</p>
+    <p>Per ulteriori informazioni, consulta la <a href="../../installation/using/configure-fda-snowflake.md">documentazione dettagliata</a> e <a href="https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">video tutorial</a>.</p>
    </td> 
   </tr> 
  </tbody> 
@@ -563,12 +565,12 @@ _17 febbraio 2020_
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Miglioramenti del connettore FDA del hadoop</strong><br /> </th> 
+   <th> <strong>Miglioramenti al connettore FDA di hadoop</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Il connettore Hadoop FDA è stato migliorato per supportare sia Hadoop 3.0 che Cloudera.</p>
+   <td> <p>Il connettore FDA del Hadoop è stato migliorato per supportare il Hadoop 3.0 e Cloudera.</p>
     <p>Per ulteriori informazioni, consulta la <a href="../../installation/using/configure-fda-hadoop.md">documentazione dettagliata</a>.</p>
    </td> 
   </tr> 
@@ -577,15 +579,15 @@ _17 febbraio 2020_
 
 **Miglioramenti di sicurezza**
 
-* È stata migliorata la sicurezza nella configurazione dei rapporti per proteggerli dal clickjacking. Questo vale per i nuovi rapporti. Per applicare le modifiche ai rapporti precedenti, devi ripubblicarli. (NEO-13282)
+* Maggiore sicurezza nella configurazione dei report per proteggere dal click-jacking. Questo vale per i nuovi rapporti. Per applicare le modifiche ai vecchi rapporti, è necessario ripubblicarli. (NEO-13282)
 
-* È stato risolto un piccolo problema di memoria in cryptString. (NEO-20071)
+* Risolvere un piccolo problema di memoria in cryptString. (NEO-20071)
 
-* È stato migliorato il monitoraggio di JSP per correggere una divulgazione di IP interna. (NEO-16821)
+* È stato migliorato il monitoraggio JSP per correggere una divulgazione IP interna. (NEO-16821)
 
-* È stato risolto un problema che consentiva la visualizzazione delle informazioni di analisi dello stack agli utenti non amministratori. (NEO-12388)
+* È stato risolto un problema a causa del quale le informazioni sulla traccia dello stack potevano essere visualizzate agli utenti non amministratori. (NEO-12388)
 
-* È stata migliorata la gestione dei dati memorizzati in cache dalle sessioni precedenti. (NEO-17039)
+* È stata migliorata la gestione dei dati memorizzati nella cache delle sessioni precedenti. (NEO-17039)
 
 * È stato risolto un problema che impediva al file logins.log di registrare i tentativi di accesso riusciti tramite IMS. (NEO-11004)
 
@@ -593,67 +595,67 @@ _17 febbraio 2020_
 
 * iOS 13 è ora supportato con il connettore HTTP2.
 
-* Sono state migliorate la gestione della quarantena e la pulizia delle tabelle utilizzate dalla funzione di notifica push (nms:address e nms:appSubscriptionRcp). Per iOS (solo connettore HTTP2), i token disabilitati ora vengono gestiti nello stesso modo di Android. Il flag di disattivazione è ora impostato nella tabella NmsAppSubscriptionRcp. [Maggiori informazioni](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
+* È stata migliorata la gestione della quarantena e la pulizia delle tabelle utilizzate dalla funzione di notifica push (nms:address e nms:appSubscriptionRcp). Per iOS (solo per il connettore HTTP2), i token disattivati vengono ora gestiti nello stesso modo di Android. Il flag disable ora è impostato nella tabella NmsAppSubscriptionRcp. [Ulteriori informazioni](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
 
-* È stata aggiunta una nuova opzione nella sezione **Codice JavaScript** e **Codice JavaScript avanzato** attività del flusso di lavoro per definire un periodo di timeout. Questo impedisce che la fase di esecuzione JavaScript venga eseguita per troppo tempo. Se il periodo di timeout scade, il flusso di lavoro viene interrotto. Il timeout predefinito è di 1 ora. [Maggiori informazioni](../../workflow/using/sql-code-and-javascript-code.md)
+* È stata aggiunta una nuova opzione nel **Codice JavaScript** e **Codice JavaScript avanzato** attività del flusso di lavoro per definire un periodo di timeout. Questo impedisce l’esecuzione della fase di esecuzione di JavaScript per troppo tempo. Se trascorre il periodo di timeout, il flusso di lavoro viene interrotto. Il timeout predefinito è di 1 ora. [Ulteriori informazioni](../../workflow/using/sql-code-and-javascript-code.md)
 
-* L’analisi della consegna viene ora interrotta quando non viene trovata alcuna affinità di corrispondenza sul server di mid-sourcing e viene visualizzato il messaggio di errore corrispondente.
+* L’analisi della consegna viene ora interrotta quando non viene trovata alcuna affinità corrispondente sul server di mid-sourcing e viene visualizzato il messaggio di errore corrispondente.
 
-* Il failover del database per Postgres è ora supportato: quando il server di database si arresta anomalmente e si riavvia, Campaign si riconnette automaticamente a esso.
+* È ora supportato il failover del database per Postgres: quando il server di database si blocca e si riavvia, Campaign ora si riconnette automaticamente a esso.
 
-* Il **Avvio in sospeso** La vista è stata aggiunta al nodo Amministrazione > Audit > Stato flussi di lavoro. Questo consente di monitorare tutti i flussi di lavoro nell’istanza che sono in attesa di essere avviati da **operationManagement** processo. Questa visualizzazione viene fornita con il pacchetto Campagne di marketing. [Leggi tutto](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
+* La **Inizio in sospeso** la visualizzazione è stata aggiunta al nodo Amministrazione > Audit > Stato flussi di lavoro . Questo ti consente di monitorare tutti i flussi di lavoro sull’istanza in attesa di essere avviati dalla **operationMgt** processo. Questa visualizzazione viene fornita con il pacchetto Campagne di marketing . [Leggi tutto](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
 
 **Altre modifiche**
 
-* In Linux, l&#39;avvio del servizio nlserver ora utilizza un&#39;unità di sistema invece dello script /etc/init.d/nlserver6. La migrazione al nuovo schema di avvio viene eseguita automaticamente quando si installa il pacchetto 20.1. Il /etc/init.d/nlserver6 è ancora fornito, ma per interagire con il servizio nlserver (avvia, riavvia, arresta, ecc.), si consiglia di utilizzare direttamente il comando systemctl.
+* Su Linux, l&#39;avvio del servizio nlserver ora utilizza un&#39;unità di sistema invece dello script /etc/init.d/nlserver6. La migrazione al nuovo schema di avvio viene eseguita automaticamente quando installi il pacchetto 20.1. /etc/init.d/nlserver6 è ancora disponibile ma per interagire con il servizio nlserver (avvio, riavvio, arresto, ecc.), si consiglia di utilizzare direttamente il comando systemctl.
 
-* Le tabelle personalizzate più impegnative sono state spostate da **xtkNewId** sequenze dedicate.
+* Le tabelle personalizzate più utilizzate sono state spostate dalla **xtkNewId** sequenza a sequenze dedicate.
 
-* Sono state migliorate le prestazioni delle query, che potrebbero essere influenzate da connessioni al database non necessarie.
+* Prestazioni query migliorate che potrebbero essere influenzate da connessioni di database non necessarie.
 
-* Sono state migliorate le prestazioni della procedura guidata di aggiornamento del database per ridurre il numero di istruzioni SQL e ottimizzare il tempo di risposta.
+* Sono state migliorate le prestazioni della procedura guidata di aggiornamento del database per ridurre il numero di istruzioni SQL al fine di ottimizzare il tempo di risposta.
 
 * La gestione dei record del database è stata migliorata.
 
-* La robustezza del connection pool è stata migliorata e ciò potrebbe impedire che si verifichino errori di connessione imprevisti troppo spesso.
+* La robustezza del pool di connessioni è stata migliorata, il che potrebbe impedire che si verifichino errori di connessione imprevisti troppo spesso.
 
-* Sono state migliorate le regole di convalida degli indirizzi e-mail per mettere un indirizzo in quarantena in caso di errore morbido. [Maggiori informazioni](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
+* Le regole di convalida dell’indirizzo e-mail per inviare un indirizzo in quarantena in caso di errore soft sono state migliorate. [Ulteriori informazioni](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
 
 * Per Debian, Campaign ora utilizza le librerie PCRE di sistema quando sono disponibili.
 
-* Campaign ora consente di utilizzare una libreria ODBC di sistema più recente.
+* Campaign ora consente l’utilizzo di una libreria ODBC di sistema più recente.
 
-* Al servlet LINE è stato aggiunto un timeout all’apertura di una connessione per caricare un’immagine avanzata. Se il caricamento dell’immagine richiede troppo tempo, il servlet interrompe la connessione per evitare un collo di bottiglia.
+* È stato aggiunto un timeout al servlet LINE quando si apre una connessione per caricare un’immagine ricca. Se il caricamento dell’immagine richiede troppo tempo, il servlet interrompe la connessione per evitare un collo di bottiglia.
 
 **Patch**
 
-* È stato risolto un problema di crittografia della chiave dell’account che si verificava con l’utilizzo del connettore di Hadoop.
+* È stato risolto un problema di crittografia della chiave dell’account quando si utilizzava il connettore del Hadoop.
 
-* È stato risolto un problema di regressione dovuto all’implementazione della certificazione SSL che causava un errore di connessione utente sul server Windows. (NEO-20629)
+* È stato risolto un problema di regressione a causa dell’implementazione della certificazione SSL che causava un errore della connessione utente sul server Windows. (NEO-20629)
 
-* È stato risolto un problema con l’attività di query incrementale in caso di ID di flusso di lavoro negativi. (NEO-19779)
+* È stato risolto un problema relativo all’attività di query incrementale in caso di ID flusso di lavoro negativi. (NEO-19779)
 
-* È stato risolto un problema di codifica che si verificava durante l’esecuzione di query tramite il connettore Netezza FDA. (NEO-19594)
+* È stato risolto un problema di codifica durante l’esecuzione di query tramite il connettore FDA Netezza. (NEO-19594)
 
-* È stato risolto un problema che causava un errore durante l’utilizzo del metodo POST in. **Download Web** attività evento flusso di lavoro.
+* È stato risolto un problema che causava un errore durante l’utilizzo del metodo POST nel **Download Web** attività dell’evento del flusso di lavoro.
 
-* È stato risolto un problema nella generazione della proposta di offerta. (NEO-18176)
+* È stato risolto un problema relativo alla generazione di proposte di offerta. (NEO-18176)
 
-* È stato risolto un problema di visualizzazione del piè di pagina che si verificava con l’utilizzo del modello di modulo web di acquisizione.
+* È stato risolto un problema di visualizzazione del piè di pagina durante l’utilizzo del modello di modulo web di acquisizione.
 
-* È stato risolto un problema che si verificava durante l’analisi degli URL nel contenuto di consegne continue, che poteva causare l’arresto anomalo. (NEO-16910)
+* È stato risolto un problema che poteva causare l’arresto anomalo degli URL durante l’analisi del contenuto delle consegne continue. (NEO-16910)
 
-* È stato risolto un problema relativo al **Inizio** e **Fine** campi non calcolati durante la creazione di una nuova campagna.
+* È stato risolto un problema relativo alla **Inizio** e **Fine** campi che non vengono calcolati durante la creazione di una nuova campagna.
 
-* È stato risolto un problema relativo al **Download del file** attività del flusso di lavoro quando si utilizza un URL.
+* È stato risolto un problema relativo alla **Download file** attività del flusso di lavoro quando utilizzi un URL.
 
-* È stato risolto un problema che si verificava durante l’anteprima di un elenco importato in un’attività Query di un report. (NEO-13119)
+* È stato risolto un problema che si verificava durante l’anteprima di un elenco importato in un’attività query di un rapporto. (NEO-13119)
 
-* È stato risolto un problema che causava la visualizzazione di un’immagine obsoleta durante la selezione di **Powered by Campaign** blocco di personalizzazione nell’editor e-mail.
+* È stato risolto un problema che causava la visualizzazione di un&#39;immagine obsoleta durante la selezione della **Alimentato da campagna** blocco di personalizzazione nell’editor e-mail.
 
 * È stata migliorata la comunicazione di rete tra il client e il server.
 
-* È stato risolto un problema che si verificava quando nella stessa campagna venivano creati troppi flussi di lavoro. Ora non è possibile creare più di 28 flussi di lavoro. Viene visualizzato un avviso.
+* È stato risolto un problema che si verificava quando nella stessa campagna venivano creati troppi flussi di lavoro. Ora non puoi creare più di 28 flussi di lavoro. Viene visualizzato un avviso.
 
 * È stato risolto un problema che si verificava con l’utilizzo di **Selezione di colonne** opzione di riconciliazione in un **Union** attività del flusso di lavoro.
 
@@ -661,48 +663,48 @@ _17 febbraio 2020_
 
 * Sono stati risolti diversi problemi di arresto anomalo della console che potevano verificarsi nei flussi di lavoro (NEO-18010, NEO-18032)
 
-* È stato risolto un problema che consentiva l’esecuzione di un’ **Segnale esterno** attività del flusso di lavoro anche quando è stata disabilitata. (NEO-17524)
+* È stato risolto un problema che consentiva l’esecuzione di un **Segnale esterno** attività del flusso di lavoro anche quando è stato disabilitato. (NEO-17524)
 
 * È stato risolto un problema che si verificava durante la creazione di un nuovo schema.
 
-* È stato risolto un problema di tracciamento che si verificava durante l’invio di messaggi SMS. (NEO-19595)
+* È stato risolto un problema di tracking durante l’invio di messaggi SMS. (NEO-19595)
 
-* È stato risolto un problema che causava la visualizzazione di un numero di pubblico di destinazione errato negli indicatori di consegna.
+* È stato risolto un problema che mostrava un numero di pubblico di destinazione errato negli indicatori di consegna.
 
-* È stato risolto un problema che causava la visualizzazione di percentuali errate durante la generazione di un rapporto descrittivo tramite un’attività del flusso di lavoro. (NEO-14314)
+* È stato risolto un problema che visualizzava percentuali errate durante la generazione di un rapporto descrittivo tramite un’attività del flusso di lavoro. (NEO-14314)
 
-* È stato risolto un problema a causa del quale il rapporto del throughput di consegna mostrava numeri diversi quando il parametro di visualizzazione temporale. (NEO-11783)
+* È stato risolto un problema che causava la visualizzazione di numeri diversi nel report della velocità effettiva di consegna quando il parametro di visualizzazione dell&#39;ora. (NEO-11783)
 
-* È stato risolto un problema che impediva l’aggiornamento degli indicatori di tracciamento dei messaggi transazionali da parte del flusso di lavoro di tracciamento. (NEO-17770)
+* È stato risolto un problema che impediva agli indicatori di tracciamento dei messaggi transazionali di essere aggiornati dal flusso di lavoro Tracking. (NEO-17770)
 
-* È stato risolto un problema di regressione che causava l’arresto anomalo e il riavvio del processo web durante la richiesta di un’offerta tramite SOAP. (NEO-19482)
+* È stato risolto un problema di regressione che causava l’arresto anomalo del processo Web e il riavvio durante la richiesta di un’offerta tramite SOAP. (NEO-19482)
 
-* È stato risolto un problema che impediva il caricamento di dati nelle risorse pubbliche se la directory di caricamento era una posizione condivisa remota. (NEO-19361)
+* È stato risolto un problema che impediva il caricamento di dati in risorse pubbliche se la directory di caricamento era una posizione condivisa remota. (NEO-19361)
 
-* È stato risolto un problema che causava la **Importare tipi di pubblico da Adobe Experience Cloud** il tp del flusso di lavoro tecnico si interrompe costantemente. (NEO-18463)
+* È stato risolto un problema che causava il **Importare tipi di pubblico da Adobe Experience Cloud** il workflow tecnico non riesce costantemente. (NEO-18463)
 
-* È stato risolto un problema che impediva l’invio delle consegne quando si utilizzavano modelli importati da Experience Manager. (NEO-17540)
+* È stato risolto un problema che impediva l’invio di consegne durante l’utilizzo di modelli importati da Experience Manager. (NEO-17540)
 
-* È stato risolto un problema che si verificava dopo l’aggiornamento alla build 9032 e che impediva all’istanza di connettersi al server FTP tramite il protocollo SSL. (NEO-20498)
+* È stato risolto un problema che si verificava dopo l’aggiornamento alla build 9032 e che impediva la connessione dell’istanza al server FTP tramite il protocollo SSL. (NEO-20498)
 
-* È stato risolto un problema che si verificava durante l’eliminazione, l’inserimento o l’aggiornamento di una grande quantità di dati con **Aggiorna dati** attività in un flusso di lavoro utilizzando uno schema FDA come dimensione di targeting. (NEO-13280)
+* È stato risolto un problema che si verificava durante l&#39;eliminazione, l&#39;inserimento o l&#39;aggiornamento di una grande quantità di dati con il **Update data** in un flusso di lavoro utilizzando uno schema FDA come dimensione di targeting. (NEO-13280)
 
-* È stato risolto un problema che impediva l’invio delle e-mail in presenza di codice JavaScript esterno al tag di contenuto HTML. (NEO-18628)
+* È stato risolto un problema che impediva l’invio di e-mail in caso di codice JavaScript all’esterno del tag di contenuto di HTML. (NEO-18628)
 
-* È stato risolto un problema che si verificava durante il tentativo di visualizzare la pagina speculare dai registri di consegna di un messaggio inviato. (NEO-17976)
+* È stato risolto un problema che si verificava durante il tentativo di visualizzazione della pagina speculare dai registri di consegna di un messaggio inviato. (NEO-17976)
 
-* È stato risolto un problema che impediva alla funzione **Collegamento a pagina mirror** il blocco di personalizzazione non venga visualizzato in **Contenuto testo** dopo aver fatto clic su **Importa HTML** in una consegna. (NEO-17568)
+* È stato risolto un problema che impediva la **Collegamento a una pagina speculare** blocco di personalizzazione da visualizzare nel **Contenuto testo** scheda dopo aver fatto clic **Importa HTML** in una consegna. (NEO-17568)
 
-* Il messaggio di errore visualizzato quando si fa clic su un collegamento a una pagina speculare scaduta è stato chiarito. (NEO-17340)
+* È stato chiarito il messaggio di errore visualizzato quando si fa clic su un collegamento a una pagina speculare scaduta. (NEO-17340)
 
-* È stato risolto un problema che impediva l’utilizzo di alcuni pulsanti in **Distribuzione dei dati** schermata di creazione.
+* È stato risolto un problema che impediva l&#39;utilizzo di alcuni pulsanti nel **Distribuzione dei dati** schermata di creazione.
 
 * È stato risolto un problema che si verificava durante la pianificazione di un’attività di consegna in un’istanza con Asia/Calcutta come fuso orario. (NEO-20001)
 
 * Ora viene visualizzato un errore quando una consegna presenta un problema di configurazione dell’affinità.
 
-* È stato risolto un problema che causava la visualizzazione di un numero di tag di versione errato in **Informazioni su** menu.
+* È stato risolto un problema che causava la visualizzazione di un numero di tag di versione errato nel **Informazioni** menu.
 
-* È stato risolto un problema che si verificava durante il tentativo di aggiornare l’account di routing dalle proprietà di una consegna ricorrente in un flusso di lavoro. (NEO-18684)
+* È stato risolto un problema che si verificava durante il tentativo di aggiornare l&#39;account di indirizzamento dalle proprietà di una consegna ricorrente in un flusso di lavoro. (NEO-18684)
 
 * È stato risolto un problema che si verificava durante la connessione all’istanza tramite il modulo di reindirizzamento, che impediva la corretta pulizia della connessione una volta chiusa.

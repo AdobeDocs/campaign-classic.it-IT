@@ -2,20 +2,21 @@
 product: campaign
 title: Calcolo indicatore
 description: Calcolo indicatore
+badge: label="v7" type="Informative" tooltip="Si applica solo ad Campaign Classic v7"
 feature: Reporting
 exl-id: 52ca1595-16b3-4323-9122-d1ac13c08147
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '2972'
-ht-degree: 6%
+source-wordcount: '2983'
+ht-degree: 7%
 
 ---
 
 # Calcolo indicatore {#indicator-calculation}
 
-![](../../assets/common.svg)
 
-## Attività utente {#user-activities-1}
+
+## Attività degli utenti {#user-activities-1}
 
 <table> 
  <thead> 
@@ -28,8 +29,8 @@ ht-degree: 6%
  </thead> 
  <tbody> 
   <tr> 
-   <td> Messaggi aperti<br /> </td> 
-   <td> @opens<br /> </td> 
+   <td> Aperture<br /> </td> 
+   <td> @aperture<br /> </td> 
    <td> Somma di tutti @totalClicks con una chiave primaria URL uguale a 1.<br /> </td> 
    <td> sum(Iif([@url-id]=1, @totalClicks, 0))<br /> </td> 
   </tr> 
@@ -361,7 +362,7 @@ Questo rapporto si basa sul **[!UICONTROL Delivery]** (nms:delivery), **[!UICONT
    <td> Formula: count(@id)<br /> Filtro: @recipient-id != 0<br /> </td> 
   </tr> 
   <tr> 
-   <td> Messaggi aperti<br /> </td> 
+   <td> Aperture<br /> </td> 
    <td> @open<br /> </td> 
    <td> Numero di tutti gli @ids con un tipo di URL uguale a "Open".<br /> </td> 
    <td> count (Iif([url/@type] = 2, @id, 0))<br /> </td> 
@@ -561,7 +562,7 @@ Questo rapporto si basa sul **[!UICONTROL Delivery and tracking statistics]** (n
    <td> Count(@status=2 e msg/@failedReason=8)<br /> </td> 
   </tr> 
   <tr> 
-   <td> Messaggi aperti<br /> </td> 
+   <td> Aperture<br /> </td> 
    <td> @recipientOpen<br /> </td> 
    <td> Numero di tutti gli @wideLog-id in tutti i log di tracciamento.<br /> </td> 
    <td> Countdistinct ([@wideLog-id])<br /> </td> 
@@ -585,7 +586,7 @@ Questo rapporto si basa sul **[!UICONTROL Delivery and tracking statistics]** (n
    <td> Countdistinct(Iif([url/@type]=1, @source-id, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Clic cumulativo<br /> </td> 
+   <td> Click complessivi<br /> </td> 
    <td> @totalRecipientClick<br /> </td> 
    <td> Numero di tutti gli @id con una categoria URL che è uguale a "Clic su e-mail".<br /> </td> 
    <td> count(Iif([url/@type]=1, @id, 0))<br /> </td> 
@@ -710,13 +711,13 @@ Questo rapporto si basa sul **[!UICONTROL Delivery]** tabella (nms:delivery).
    <td> percentuale([indicatori/@destinatariClick], [indicatori/@stimatoRecipientOpen])<br /> </td> 
   </tr> 
   <tr> 
-   <td> Clic distinto<br /> </td> 
+   <td> Clic distinti<br /> </td> 
    <td> @distinctClicks<br /> </td> 
    <td> Rapporto tra il numero di persone distinte che hanno fatto clic su in una consegna almeno una volta rispetto al numero di messaggi consegnati con successo.<br /> </td> 
    <td> percentuale([indicatori/@personaClic], [indicatori/@successo])<br /> </td> 
   </tr> 
   <tr> 
-   <td> Clic cumulativo<br /> </td> 
+   <td> Click complessivi<br /> </td> 
    <td> @totalClicks<br /> </td> 
    <td> Rapporto tra il numero totale di clic dei destinatari con targeting e il numero di messaggi consegnati con successo.<br /> </td> 
    <td> percentuale([indicatori/@totalRecipientClick], [indicatori/@successo])<br /> </td> 
@@ -795,7 +796,7 @@ Questo rapporto si basa sulla consegna (nms:delivery) e **[!UICONTROL Consolidat
 
 Questo rapporto mostra il contenuto del messaggio (HTML e/o testo) e la percentuale di clic per ogni collegamento. I blocchi di personalizzazione per i collegamenti di annullamento dell’abbonamento e i collegamenti alle pagine mirror vengono presi in considerazione nei clic cumulati totali, ma non vengono visualizzati nel rapporto.
 
-## Tracking delle statistiche {#tracking-statistics-1}
+## Statistiche di tracciamento {#tracking-statistics-1}
 
 Questo rapporto si basa sul **[!UICONTROL Delivery]** tabella (nms:delivery).
 
@@ -823,7 +824,7 @@ Questo rapporto si basa sul **[!UICONTROL Delivery]** tabella (nms:delivery).
   </tr> 
   <tr> 
    <td> Apri<br /> </td> 
-   <td> @opens<br /> </td> 
+   <td> @aperture<br /> </td> 
    <td> Somma di tutti @totalClicks con una chiave primaria URL uguale a 1.<br /> </td> 
    <td> sum(Iif([@url-id] = 1, @totalClicks, 0))<br /> </td> 
   </tr> 
@@ -851,7 +852,7 @@ Questo rapporto si basa sul **[!UICONTROL Delivery and tracking statistics]** ta
    <td> @ready + @error + @success<br /> </td> 
   </tr> 
   <tr> 
-   <td> Consegnato<br /> </td> 
+   <td> Consegnati<br /> </td> 
    <td> @success<br /> </td> 
    <td> Numero di messaggi elaborati correttamente.<br /> </td> 
    <td> indicators/@success<br /> </td> 
@@ -869,7 +870,7 @@ Questo rapporto si basa sul **[!UICONTROL Delivery and tracking statistics]** ta
    <td> @unreachable + @mailBoxFull + @InvalidDomain + @disabled + @notConnected + @rifiutato<br /> </td> 
   </tr> 
   <tr> 
-   <td> Messaggi aperti<br /> </td> 
+   <td> Aperture<br /> </td> 
    <td> @recipientOpen<br /> </td> 
    <td> Numero totale di @wideLog-ids nei log di tracciamento.<br /> </td> 
    <td> Countdistinct ([@wideLog-id])<br /> </td> 
@@ -904,7 +905,7 @@ Questo rapporto si basa su **Consegne** (nms:delivery) e **Registri di tracciame
  </thead> 
  <tbody> 
   <tr> 
-   <td> Messaggi aperti<br /> </td> 
+   <td> Aperture<br /> </td> 
    <td> @totalRecipientOpen<br /> </td> 
    <td> Somma di tutti gli @id con una chiave primaria URL uguale a 1 (aperta). <br /> </td> 
    <td> count(Iif([@url-id] = 1, @id, 0))<br /> </td> 

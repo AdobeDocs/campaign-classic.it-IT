@@ -2,9 +2,11 @@
 product: campaign
 title: Dashboard delle consegne
 description: Ulteriori informazioni su come utilizzare il dashboard di consegna per monitorare le consegne
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1174'
 ht-degree: 7%
@@ -13,7 +15,7 @@ ht-degree: 7%
 
 # Dashboard delle consegne {#delivery-dashboard}
 
-![](../../assets/common.svg)
+
 
 La **dashboard di consegna** è fondamentale per monitorare le consegne e gli eventuali problemi riscontrati durante l’invio dei messaggi.
 

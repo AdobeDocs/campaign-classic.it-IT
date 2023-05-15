@@ -1,11 +1,13 @@
 ---
 product: campaign
 title: Configurazione degli eventi
-description: Scopri come configurare gli eventi per l’implementazione personalizzata
+description: Scopri come configurare eventi per l’implementazione personalizzata
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
-source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1198'
 ht-degree: 2%
@@ -14,29 +16,29 @@ ht-degree: 2%
 
 # Configurazione di eventi per l’implementazione personalizzata {#events}
 
-![](../../assets/common.svg)
 
-Parti di questa configurazione sono sviluppi personalizzati e richiedono quanto segue:
 
-* Conoscenza operativa dell’analisi JSON, XML e Javascript in Adobe Campaign.
+Parti di questa configurazione è uno sviluppo personalizzato e richiede quanto segue:
+
+* Conoscenza di base dell’analisi JSON, XML e Javascript in Adobe Campaign.
 * Conoscenza operativa delle API QueryDef e Writer.
-* Nozioni di lavoro di crittografia e autenticazione mediante chiavi private.
+* Nozioni di funzionamento di crittografia e autenticazione utilizzando chiavi private.
 
-Poiché la modifica del codice JavaScript richiede competenze tecniche, non tentare senza aver compreso il codice.
+Poiché la modifica del codice Javascript richiede competenze tecniche, non tentare senza la comprensione appropriata.
 
-## Elaborazione di eventi in JavaScript {#events-javascript}
+## Eventi di elaborazione in JavaScript {#events-javascript}
 
 ### File JavaScript {#file-js}
 
-La pipeline utilizza una funzione JavaScript per elaborare ogni messaggio. Questa funzione è definita dall’utente.
+La pipeline utilizza una funzione JavaScript per elaborare ogni messaggio. Questa funzione è definita dall&#39;utente.
 
-È configurato in **[!UICONTROL NmsPipeline_Config]** nell&#39;attributo &quot;JSConnector&quot;. Questo JavaScript viene chiamato ogni volta che viene ricevuto un evento. È gestito da [!DNL pipelined] processo.
+È configurato nella **[!UICONTROL NmsPipeline_Config]** sotto l&#39;attributo &quot;JSConnector&quot;. Questo JavaScript viene chiamato ogni volta che viene ricevuto un evento . È gestito dalla [!DNL pipelined] processo.
 
-Il file JavaScript di esempio è cus:triggers.js.
+Il file Javascript di esempio è cus:triggers.js.
 
 ### Funzione JavaScript {#function-js}
 
-Il [!DNL pipelined] JavaScript deve iniziare con una funzione specifica.
+La [!DNL pipelined] Javascript deve iniziare con una funzione specifica.
 
 Questa funzione viene chiamata una volta per ogni evento:
 
@@ -44,22 +46,22 @@ Questa funzione viene chiamata una volta per ogni evento:
 function processPipelineMessage(xmlTrigger) {}
 ```
 
-Deve restituire come
+Dovrebbe tornare come
 
 ```
 <undefined/>
 ```
 
-È necessario riavviare [!DNL pipelined] dopo aver modificato JavaScript.
+Riavvia [!DNL pipelined] dopo aver modificato il codice JavaScript.
 
-### Attiva formato dati {#trigger-format}
+### Formato dati del trigger {#trigger-format}
 
-Il [!DNL trigger] I dati vengono passati alla funzione JS in formato XML.
+La [!DNL trigger] i dati vengono passati alla funzione JS in formato XML.
 
-* Il **[!UICONTROL @triggerId]** contiene il nome del [!DNL trigger].
-* Il **arricchimenti** L&#39;elemento in formato JSON contiene i dati generati da Adobe Analytics e viene associato al trigger.
-* **[!UICONTROL @offset]** è il &quot;puntatore&quot; al messaggio. Indica l’ordine del messaggio all’interno della coda.
-* **[!UICONTROL @partition]** è un contenitore di messaggi all’interno della coda. L&#39;offset è relativo a una partizione. <br>Nella coda sono presenti circa 15 partizioni.
+* La **[!UICONTROL @triggerId]** l&#39;attributo contiene il nome dell&#39; [!DNL trigger].
+* La **arricchimenti** nel formato JSON contiene i dati generati da Adobe Analytics ed è associato al trigger.
+* **[!UICONTROL @offset]** è il &quot;puntatore&quot; del messaggio. Indica l’ordine del messaggio all’interno della coda.
+* **[!UICONTROL @partition]** è un contenitore di messaggi all’interno della coda. L&#39;offset è relativo a una partizione. <br>Ci sono circa 15 partizioni nella coda.
 
 Esempio:
 
@@ -74,14 +76,14 @@ Esempio:
 
 >[!NOTE]
 >
->Si tratta di un esempio specifico da varie implementazioni possibili.
+>È un esempio specifico tratto da varie implementazioni possibili.
 
 Il contenuto è definito in formato JSON in Adobe Analytics per ogni trigger.
 Ad esempio, in un trigger LogoUpload_uploading_Visits:
 
-* **[!UICONTROL eVar01]** può contenere l’ID acquirente in formato stringa, utilizzato per effettuare la riconciliazione con i destinatari di Adobe Campaign. <br>Deve essere riconciliato per trovare l’ID acquirente, che è la chiave primaria.
+* **[!UICONTROL eVar01]** può contenere l’ID acquirente in formato stringa, utilizzato per eseguire la riconciliazione con i destinatari di Adobe Campaign. <br>Deve essere riconciliato per trovare l’ID acquirente, che è la chiave primaria.
 
-* **[!UICONTROL timeGMT]** può contenere l’ora del trigger sul lato Adobe Analytics in formato epoca UTC (secondi dall’01/01/1970 UTC).
+* **[!UICONTROL timeGMT]** può contenere l’ora del trigger sul lato Adobe Analytics in formato Epoch UTC (secondi dall’1/01/1970 UTC).
 
 Esempio:
 
@@ -109,26 +111,26 @@ Esempio:
 
 ### Ordine di elaborazione degli eventi{#order-events}
 
-Gli eventi vengono elaborati uno alla volta, in ordine di offset. Ogni thread del [!DNL pipelined] elabora una partizione diversa.
+Gli eventi vengono elaborati uno alla volta, in base all’ordine di offset. Ogni thread del [!DNL pipelined] elabora una partizione diversa.
 
-L’&quot;offset&quot; dell’ultimo evento recuperato viene memorizzato nel database. Pertanto, se il processo viene interrotto, viene riavviato dall’ultimo messaggio. Questi dati vengono memorizzati nello schema predefinito xtk:pipelineOffset.
+L’&quot;offset&quot; dell’ultimo evento recuperato viene memorizzato nel database. Pertanto, se il processo viene interrotto, viene riavviato dall’ultimo messaggio. Questi dati vengono memorizzati nello schema incorporato xtk:pipelineOffset.
 
-Questo puntatore è specifico per ogni istanza e per ogni consumer. Pertanto, quando molte istanze accedono alla stessa pipeline con consumer diversi, ognuna riceve tutti i messaggi e nello stesso ordine.
+Questo puntatore è specifico per ogni istanza e per ogni consumatore. Pertanto, quando molte istanze accedono alla stessa pipeline con consumatori diversi, ricevono tutti i messaggi e nello stesso ordine.
 
-Il **consumer** Il parametro dell’opzione pipeline identifica l’istanza chiamante.
+La **consumer** Il parametro dell’opzione pipeline identifica l’istanza chiamante.
 
-Attualmente, non è possibile avere code diverse per ambienti separati, ad esempio &quot;staging&quot; o &quot;dev&quot;.
+Attualmente, non è possibile avere code diverse per ambienti separati come &quot;staging&quot; o &quot;dev&quot;.
 
 ### Registrazione e gestione degli errori {#logging-error-handling}
 
-I registri come logInfo() vengono indirizzati al [!DNL pipelined] log. Errori come logError() vengono scritti nel [!DNL pipelined] registra e fa sì che l’evento venga inserito in una coda di nuovi tentativi. In questo caso, controlla il registro pipeline.
-I messaggi in errore vengono ritentati più volte nella durata impostata in [!DNL pipelined] opzioni.
+I registri come logInfo() sono indirizzati al [!DNL pipelined] registro. Gli errori come logError() vengono scritti nel [!DNL pipelined] registra e fa sì che l’evento venga inserito in una coda di nuovi tentativi. In questo caso, è necessario controllare il registro pipeline.
+I messaggi di errore vengono riprovati più volte nella durata impostata nel [!DNL pipelined] opzioni.
 
-A scopo di debug e monitoraggio, i dati a trigger completi vengono scritti nella tabella dei trigger nel campo &quot;data&quot; in formato XML. In alternativa, un logInfo() contenente i dati del trigger ha lo stesso scopo.
+A scopo di debug e monitoraggio, i dati del trigger completo vengono scritti nella tabella dell’attivatore nel campo &quot;data&quot; in formato XML. In alternativa, un logInfo() contenente i dati del trigger ha lo stesso scopo.
 
 ### Analisi dei dati {#data-parsing}
 
-In questo esempio di codice JavaScript viene analizzato eVar01 negli arricchimenti.
+Questo codice Javascript di esempio analizza l’eVar01 negli arricchimenti.
 
 ```
 function processPipelineMessage(xmlTrigger)
@@ -148,13 +150,13 @@ function processPipelineMessage(xmlTrigger)
 ```
 
 Presta attenzione durante l’analisi per evitare errori.
-Poiché questo codice viene utilizzato per tutti i trigger, la maggior parte dei dati non è richiesta. Pertanto, può essere lasciato vuoto quando non presente.
+Poiché questo codice viene utilizzato per tutti gli attivatori, la maggior parte dei dati non è necessaria. Pertanto, può essere lasciato vuoto se non presente.
 
 ### Memorizzazione del trigger {#storing-triggers-js}
 
 >[!NOTE]
 >
->Si tratta di un esempio specifico da varie implementazioni possibili.
+>È un esempio specifico tratto da varie implementazioni possibili.
 
 Questo codice JS di esempio salva il trigger nel database.
 
@@ -180,67 +182,67 @@ function processPipelineMessage(xmlTrigger)
 
 ### Vincoli {#constraints}
 
-Le prestazioni di questo codice devono essere ottimali poiché viene eseguito ad alte frequenze e potrebbe causare potenziali effetti negativi per altre attività di marketing. Specialmente se elabora più di un milione di eventi trigger all’ora sul server Marketing o se non è regolato correttamente.
+Le prestazioni di questo codice devono essere ottimali in quanto viene eseguito ad alte frequenze e potrebbe causare potenziali effetti negativi per altre attività di marketing. Soprattutto se si elaborano più di un milione di eventi trigger all’ora sul server Marketing o se non viene sintonizzato correttamente.
 
-Il contesto di questo JavaScript è limitato. Non sono disponibili tutte le funzioni dell’API. Ad esempio, getOption() o getCurrentdate() non funzionano.
+Il contesto di questo JavaScript è limitato. Non tutte le funzioni dell’API sono disponibili. Ad esempio, getOption() o getCurrentdate() non funzionano.
 
-Per consentire un&#39;elaborazione più rapida, vengono eseguiti contemporaneamente diversi thread di questo script. Il codice deve essere thread safe.
+Per accelerare l&#39;elaborazione, diversi thread di questo script vengono eseguiti contemporaneamente. Il codice deve essere thread safe.
 
 ## Memorizzazione degli eventi {#store-events}
 
 >[!NOTE]
 >
->Si tratta di un esempio specifico da varie implementazioni possibili.
+>È un esempio specifico tratto da varie implementazioni possibili.
 
 ### Schema evento pipeline {#pipeline-event-schema}
 
-Gli eventi vengono memorizzati in una tabella di database. Viene utilizzato dalle campagne di marketing per eseguire il targeting dei clienti e arricchire le e-mail utilizzando i trigger.
-Anche se ogni trigger può avere una struttura di dati distinta, tutti i trigger possono essere tenuti in una singola tabella.
-Il campo triggerType identifica il trigger da cui hanno origine i dati.
+Gli eventi vengono memorizzati in una tabella di database. Viene utilizzato dalle campagne di marketing per indirizzare i clienti e arricchire le e-mail tramite i trigger.
+Anche se ogni trigger può avere una struttura di dati distinta, tutti i trigger possono essere mantenuti in una singola tabella.
+Il campo triggerType identifica da cui viene attivata l&#39;origine dei dati.
 
-Di seguito è riportato un codice schema di esempio per questa tabella:
+Di seguito è riportato un esempio di codice dello schema per questa tabella:
 
 | Attributo | Tipo | Etichetta | Descrizione |
 |:-:|:-:|:-:|:-:|
 | pipelineEventId | Lungo | Chiave principale | Chiave primaria interna del trigger. |
-| dati | Per memoria | Dati trigger | Contenuto completo dei dati del trigger in formato XML. A scopo di debug e audit. |
+| dati | Per memoria | Dati di attivazione | Contenuto completo dei dati di attivazione in formato XML. A scopo di debug e controllo. |
 | triggerType | Stringa 50 | TriggerType | Nome del trigger. Identifica il comportamento del cliente sul sito web. |
-| shopper_id | Stringa 32 | shopper_id | L’identificatore interno dell’acquirente. Impostato dal flusso di lavoro di riconciliazione. Se è zero, significa che il cliente è sconosciuto in Campaign. |
-| shopper_key | Lungo | shopper_key | L’identificatore esterno dell’acquirente acquisito da Analytics. |
-| creato | Data e ora | Creato | L’ora in cui l’evento è stato creato in Campaign. |
+| shopper_id | Stringa 32 | shopper_id | Identificatore interno dell&#39;acquirente. Impostato dal flusso di lavoro di riconciliazione. Se zero, significa che il cliente è sconosciuto in Campaign. |
+| shopper_key | Lungo | shopper_key | Identificatore esterno dell&#39;acquirente acquisito da Analytics. |
+| creato | Data e ora | Creato | L’ora in cui è stato creato l’evento in Campaign. |
 | lastModified | Data e ora | Ultima modifica | L’ultima volta che l’evento è stato modificato in Adobe. |
 | timeGMT | Data e ora | Timestamp | L’ora in cui l’evento è stato generato in Analytics. |
 
 ### Visualizzazione degli eventi {#display-events}
 
-Gli eventi possono essere visualizzati con un semplice modulo basato sullo schema degli eventi.
+Gli eventi possono essere visualizzati con un modulo semplice basato sullo schema degli eventi.
 
 >[!NOTE]
 >
->Il nodo Evento pipeline non è incorporato e deve essere aggiunto, così come il modulo correlato deve essere creato in Campaign. Queste operazioni sono riservate esclusivamente agli utenti esperti. Per ulteriori informazioni, consulta le sezioni seguenti: [Gerarchia di navigazione](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy). e [Modifica dei moduli](../../configuration/using/editing-forms.md).
+>Il nodo Evento pipeline non è incorporato e deve essere aggiunto, nonché il relativo modulo deve essere creato in Campaign. Queste operazioni sono riservate solo agli utenti esperti. Per ulteriori informazioni, consulta queste sezioni: [Gerarchia di navigazione](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy). e [Modifica dei moduli](../../configuration/using/editing-forms.md).
 
 ![](assets/triggers_7.png)
 
 ## Elaborazione degli eventi {#processing-the-events}
 
-### Flusso di lavoro riconciliazione {#reconciliation-workflow}
+### Flusso di lavoro di riconciliazione {#reconciliation-workflow}
 
-La riconciliazione è il processo di corrispondenza tra il cliente di Adobe Analytics e il database di Adobe Campaign. Ad esempio, il criterio di corrispondenza può essere shopper_id.
+La riconciliazione è il processo di corrispondenza del cliente da Adobe Analytics al database Adobe Campaign. Ad esempio, i criteri per la corrispondenza possono essere shopper_id.
 
-Per motivi di prestazioni, la corrispondenza deve essere eseguita in modalità batch da un flusso di lavoro.
-La frequenza deve essere impostata su 15 minuti per ottimizzare il carico di lavoro. Di conseguenza, il ritardo tra la ricezione di un evento in Adobe Campaign e la sua elaborazione da parte di un flusso di lavoro di marketing può arrivare a 15 minuti.
+Per motivi di prestazioni, la corrispondenza deve essere eseguita in modalità batch tramite un flusso di lavoro.
+La frequenza deve essere impostata su 15 minuti per ottimizzare il carico di lavoro. Di conseguenza, il ritardo tra la ricezione di un evento in Adobe Campaign e la relativa elaborazione da parte di un flusso di lavoro di marketing è fino a 15 minuti.
 
 ### Opzioni per la riconciliazione delle unità in JavaScript {#options-unit-reconciliation}
 
-È possibile eseguire la query di riconciliazione per ogni trigger in JavaScript. Ha un impatto maggiore sulle prestazioni e fornisce risultati più rapidi. Potrebbe essere necessario per casi d’uso specifici quando è necessaria la reattività.
+È possibile eseguire la query di riconciliazione per ogni trigger nel JavaScript. Ha un impatto maggiore sulle prestazioni e fornisce risultati più veloci. Può essere richiesto per casi d’uso specifici quando è necessaria la reattività.
 
-Può essere difficile da implementare se non è impostato alcun indice su shopper_id. Se i criteri si trovano su un server di database separato rispetto al server di marketing, viene utilizzato un database link con prestazioni scadenti.
+Può essere difficile da implementare se non è impostato alcun indice su shopper_id. Se i criteri si trovano su un server di database separato dal server di marketing, utilizza un collegamento al database che presenta prestazioni scadenti.
 
-### Rimuovi flusso di lavoro {#purge-workflow}
+### Elimina flusso di lavoro {#purge-workflow}
 
-Gli attivatori vengono elaborati entro un’ora. Il volume può essere di circa 1 milione di trigger all&#39;ora. Spiega perché è necessario implementare un flusso di lavoro di eliminazione. L’eliminazione viene eseguita una volta al giorno ed elimina tutti i trigger che risalgono a più di tre giorni prima.
+I trigger vengono elaborati entro l’ora specificata. Il volume può essere di circa 1 milione di trigger all&#39;ora. Questo spiega perché è necessario implementare un flusso di lavoro di eliminazione. L&#39;eliminazione viene eseguita una volta al giorno ed elimina tutti gli attivatori che sono più vecchi di tre giorni.
 
-### Flusso di lavoro della campagna {#campaign-workflow}
+### Flusso di lavoro di Campaign {#campaign-workflow}
 
-Il flusso di lavoro della campagna di attivazione è spesso simile ad altre campagne ricorrenti che sono state utilizzate.
-Ad esempio, può iniziare con una query sui trigger che cercano eventi specifici durante l’ultimo giorno. La destinazione viene utilizzata per inviare l’e-mail. Arricchimenti o dati possono provenire dal trigger. Può essere utilizzato in modo sicuro da Marketing in quanto non richiede alcuna configurazione.
+Il flusso di lavoro della campagna di attivazione è spesso simile ad altre campagne ricorrenti utilizzate.
+Ad esempio, può iniziare con una query sui trigger che cercano eventi specifici nell’ultimo giorno. Tale destinazione viene utilizzata per inviare l’e-mail. Arricchimenti o dati possono provenire dal trigger. Può essere utilizzato in modo sicuro da Marketing in quanto non richiede alcuna configurazione.

@@ -2,9 +2,11 @@
 product: campaign
 title: Stati di consegna
 description: Ulteriori informazioni sugli stati disponibili nel dashboard di consegna
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Deliverability
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 8%
@@ -13,7 +15,7 @@ ht-degree: 8%
 
 # Stati di consegna {#delivery-statuses}
 
-![](../../assets/common.svg)
+
 
 <!--ajouter intro 
 
@@ -50,7 +52,7 @@ Per ulteriori dettagli sui diversi errori di consegna riscontrabili e su come ri
    <td> La consegna non è stata inviata al destinatario a causa di un errore con il relativo indirizzo. Era elenco Bloccati, messo in quarantena, non fornito o un duplicato. <br /> </td> 
   </tr> 
   <tr> 
-   <td> Non riuscito<br /> </td> 
+   <td> Operazione non riuscita<br /> </td> 
    <td> Impossibile raggiungere il destinatario a causa di un indirizzo non valido o di una casella in entrata completa, ad esempio. Può anche essere collegato a un problema relativo ai blocchi di personalizzazione, in quanto possono generare errori quando gli schemi non corrispondono alla mappatura della consegna. Vedi <a href="understanding-delivery-failures.md" target="_blank">Informazioni sugli errori di consegna</a><br /> </td> 
   </tr>
   <tr> 

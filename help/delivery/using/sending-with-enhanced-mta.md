@@ -2,9 +2,11 @@
 product: campaign
 title: S con MTA avanzato in Adobe Campaign Classic
 description: Scopri l’ambito e le specificità dell’invio di e-mail con l’MTA avanzato di Adobe Campaign
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 2d5166c355ee090639dcc52866252bae6beb81f6
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1999'
 ht-degree: 4%
@@ -13,7 +15,7 @@ ht-degree: 4%
 
 # Invio con MTA avanzato {#sending-with-enhanced-mta}
 
-![](../../assets/common.svg)
+
 
 La **MTA avanzato di Adobe Campaign** (Mail Transfer Agent) fornisce un&#39;infrastruttura di invio aggiornata che consente di migliorare la consegna, la reputazione, il throughput, la generazione di rapporti, la gestione dei messaggi non recapitati, l&#39;espansione dell&#39;IP e la gestione delle impostazioni di connessione.
 
@@ -222,17 +224,17 @@ Le tabelle riportate di seguito mostrano le modifiche apportate ai KPI e agli st
 | Passaggio nel processo di invio | Riepilogo KPI | Stato dei registri di invio |
 |--- |--- |--- |
 | Il messaggio viene inviato correttamente da Campaign all’MTA avanzato | **[!UICONTROL Success]** percentuale non visualizzata (inizia a 0%) | Considerato dal fornitore di servizi |
-| I messaggi di rimbalzo rigido vengono segnalati nuovamente dall’MTA avanzato | Nessuna modifica in **[!UICONTROL Success]** percentuale | Non riuscito |
+| I messaggi di rimbalzo rigido vengono segnalati nuovamente dall’MTA avanzato | Nessuna modifica in **[!UICONTROL Success]** percentuale | Operazione non riuscita |
 | I messaggi di rimbalzo morbido vengono segnalati nuovamente dall’MTA avanzato | Nessuna modifica in **[!UICONTROL Success]** percentuale | Considerato dal fornitore di servizi |
 | I nuovi tentativi dei messaggi di rimbalzo non sono riusciti | **[!UICONTROL Success]** la percentuale viene aumentata di conseguenza | Inviato |
-| Messaggi di rimbalzo morbido non riusciti | Nessuna modifica in **[!UICONTROL Success]** percentuale | Non riuscito |
+| Messaggi di rimbalzo morbido non riusciti | Nessuna modifica in **[!UICONTROL Success]** percentuale | Operazione non riuscita |
 
 **Servizio senza feedback e-mail**
 
 | Passaggio nel processo di invio | Riepilogo KPI | Stato dei registri di invio |
 |--- |--- |--- |
 | Il messaggio viene inviato correttamente da Campaign all’MTA avanzato | **[!UICONTROL Success]** percentuale inizia al 100% | Inviato |
-| I messaggi di rimbalzo rigido vengono segnalati nuovamente dall’MTA avanzato | **[!UICONTROL Success]** la percentuale diminuisce di conseguenza | Non riuscito |
+| I messaggi di rimbalzo rigido vengono segnalati nuovamente dall’MTA avanzato | **[!UICONTROL Success]** la percentuale diminuisce di conseguenza | Operazione non riuscita |
 | I messaggi di rimbalzo morbido vengono segnalati nuovamente dall’MTA avanzato | Nessuna modifica in **[!UICONTROL Success]** percentuale | Inviato |
 | I nuovi tentativi dei messaggi di rimbalzo non sono riusciti | Nessuna modifica in **[!UICONTROL Success]** percentuale | Inviato | **[!UICONTROL Success]** la percentuale viene aumentata di conseguenza | Inviato |
-| Messaggi di rimbalzo morbido non riusciti | **[!UICONTROL Success]** la percentuale diminuisce di conseguenza | Non riuscito |
+| Messaggi di rimbalzo morbido non riusciti | **[!UICONTROL Success]** la percentuale diminuisce di conseguenza | Operazione non riuscita |

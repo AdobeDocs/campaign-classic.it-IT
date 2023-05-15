@@ -2,11 +2,12 @@
 product: campaign
 title: Domande frequenti sulla migrazione ad Adobe Managed Services (Public Cloud)
 description: Domande frequenti sulla migrazione di Campaign Classic a Public Cloud
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '2215'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 # Domande frequenti sulla migrazione a Public Cloud{#dc-faq}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe rimuove il Data Center legacy: Le istanze di Campaign Classic devono essere trasferite a Public Cloud Amazon Web Services (AWS). [Ulteriori informazioni su questa iniziativa](dc-migration.md).
 

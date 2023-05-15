@@ -2,8 +2,9 @@
 product: campaign
 title: Analisi web
 description: Ulteriori informazioni sul pacchetto Web Analytics
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Analytics Integration
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 4%
@@ -13,7 +14,7 @@ ht-degree: 4%
 
 # Analisi web{#web-analytics}
 
-![](../../assets/v7-only.svg)
+
 
 I flussi di lavoro descritti di seguito sono installati con **Connettori di Web Analytics** modulo per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questo [sezione](../../platform/using/adobe-analytics-connector.md).
 

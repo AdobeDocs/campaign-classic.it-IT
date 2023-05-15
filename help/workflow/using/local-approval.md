@@ -2,9 +2,10 @@
 product: campaign
 title: Approvazione locale
 description: Approvazione locale
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 2d9cbfc8-1f99-4b38-8460-77c7c986e9ca
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 2%
@@ -13,7 +14,7 @@ ht-degree: 2%
 
 # Approvazione locale{#local-approval}
 
-![](../../assets/v7-only.svg)
+
 
 Quando viene integrato in un flusso di lavoro di targeting, la **[!UICONTROL Local approval]** activity ti consente di impostare un processo di approvazione del destinatario prima che la consegna venga inviata.
 

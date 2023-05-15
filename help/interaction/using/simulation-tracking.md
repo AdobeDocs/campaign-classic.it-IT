@@ -2,11 +2,13 @@
 product: campaign
 title: Tracciamento della simulazione
 description: Tracciamento della simulazione
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 exl-id: 490ebbea-9bdc-453e-8a02-c02b095e55e9
-source-git-commit: d835da6c7b55d9bf70b6b5dc58880718e12211d5
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 10%
@@ -15,7 +17,7 @@ ht-degree: 10%
 
 # Tracciamento della simulazione{#simulation-tracking}
 
-![](../../assets/common.svg)
+
 
 Una volta completata la simulazione, puoi analizzarne il risultato tramite il **[!UICONTROL Results]** che viene aggiunta alla finestra di simulazione e alla **[!UICONTROL Breakdown of offers by rank]** , disponibile tramite nel dashboard di simulazione.
 

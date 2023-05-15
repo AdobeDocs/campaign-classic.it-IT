@@ -2,9 +2,11 @@
 product: campaign
 title: Creare indirizzi seed
 description: Scopri come creare e utilizzare gli indirizzi di seed
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Seed Address
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
-source-git-commit: 0065a25250d73c71e7569768a38b5836cccab992
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 1%
@@ -13,7 +15,7 @@ ht-degree: 1%
 
 # Creare indirizzi seed{#creating-seed-addresses}
 
-![](../../assets/common.svg)
+
 
 Gli indirizzi di seed non vengono gestiti tramite profili e destinazioni standard, ma in un nodo dedicato della gerarchia Adobe Campaign **[!UICONTROL Resources > Campaign management > Seed addresses]**.
 

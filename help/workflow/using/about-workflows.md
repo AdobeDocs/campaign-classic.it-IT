@@ -1,10 +1,11 @@
 ---
 product: campaign
 title: Informazioni sui flussi di lavoro
-description: Automatizza i processi con i flussi di lavoro, gestisci dati e tipi di pubblico, invia messaggi e altro ancora.
+description: Automatizza i processi con i flussi di lavoro, gestisci dati e tipi di pubblico, invia messaggi e altro ancora
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: 51be6b90-2a7a-4757-9754-d16c540a87ff
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 40%
@@ -13,7 +14,7 @@ ht-degree: 40%
 
 # Introduzione ai flussi di lavoro{#gs-workflows}
 
-![](../../assets/v7-only.svg)
+
 
 ## Informazioni sui flussi di lavoro{#about-workflows}
 

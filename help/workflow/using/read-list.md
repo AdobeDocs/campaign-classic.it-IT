@@ -2,9 +2,10 @@
 product: campaign
 title: Lettura di un elenco
 description: Ulteriori informazioni sull’attività del flusso di lavoro Leggi elenco
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Targeting Activity
 exl-id: 99f82e91-45cd-4dff-b8a4-3ad87f2f9639
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 # Lettura di un elenco{#read-list}
 
-![](../../assets/v7-only.svg)
+
 
 I dati elaborati in un flusso di lavoro possono provenire da elenchi in cui i dati sono stati preparati o strutturati in anticipo (dopo una precedente segmentazione o caricamento di file).
 

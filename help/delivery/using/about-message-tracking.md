@@ -1,19 +1,21 @@
 ---
 product: campaign
 title: Guida introduttiva al tracciamento
-description: Ulteriori informazioni sulle linee guida generali per il tracciamento in Adobe Campaign Classic
+description: Ulteriori informazioni sulle linee guida generali per il tracciamento in Adobe Campaign
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Email
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
-source-git-commit: 29fae1305a6d2b8debbc2aa705c047eaf3730457
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '683'
 ht-degree: 10%
 
 ---
 
 # Guida introduttiva al tracciamento dei messaggi {#get-started-tracking}
 
-![](../../assets/common.svg)
+
 
 Grazie alle sue funzionalità di tracciamento, Adobe Campaign ti consente di tenere traccia dei messaggi inviati e di controllare il comportamento dei destinatari: apertura, clic sui collegamenti, annullamento dell’abbonamento, ecc.
 
@@ -81,7 +83,7 @@ La rinuncia al tracciamento delle applicazioni web consente di interrompere il t
 
 <img src="assets/do-not-localize/icon_monitor.svg" width="60px">
 
-**Tracking delle statistiche**
+**Statistiche di tracciamento**
 
 Questo rapporto fornisce statistiche su aperture, clic e transazioni e consente di tenere traccia dell’impatto di marketing della consegna. [Ulteriori informazioni](../../reporting/using/delivery-reports.md#tracking-statistics)
 

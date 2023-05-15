@@ -2,18 +2,17 @@
 product: campaign
 title: API orientate ai dati
 description: API orientate ai dati
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: API
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1857'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # API orientate ai dati{#data-oriented-apis}
-
-![](../../assets/v7-only.svg)
 
 Le API orientate ai dati consentono di gestire l’intero modello dati.
 

@@ -2,20 +2,21 @@
 product: campaign
 title: Profili operatore
 description: Profili operatore
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '384'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
 # Profili operatore{#operator-profiles}
 
-![](../../assets/v7-only.svg)
+
 
 Esistono due tipi di operatori che utilizzano l’interazione: responsabili dell&#39;offerta e responsabili della consegna. Ognuno di essi ha diritti specifici che gli danno accesso solo ad alcune parti dell&#39;albero e della piattaforma.
 

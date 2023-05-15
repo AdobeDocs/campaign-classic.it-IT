@@ -2,18 +2,19 @@
 product: campaign
 title: Parametri avanzati
 description: Parametri avanzati
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '501'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
 # Parametri avanzati{#advanced-parameters}
 
-![](../../assets/v7-only.svg)
+
 
 La schermata delle proprietà di un’attività ha un **[!UICONTROL Advanced]** scheda che ti consente di definire un comportamento in caso di errori, il periodo di esecuzione dell’attività; e consente di inserire uno script di inizializzazione. Sono disponibili due versioni di questa scheda:
 
@@ -52,7 +53,7 @@ Puoi scegliere di forzare l’esecuzione di un flusso di lavoro o di un’attivi
 La configurazione del flusso di lavoro ad alta disponibilità è descritta in questo [sezione](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
 
 
-## Max periodo di esecuzione {#max--execution-period}
+## Max. periodo di esecuzione {#max--execution-period}
 
 Questo campo consente di impostare un avviso per il momento in cui l’attività richiede troppo tempo. Non influisce sul funzionamento del flusso di lavoro. Se l&#39;attività non è completata entro l&#39;ora **[!UICONTROL Max. execution period]** è finita, **[!UICONTROL Instance monitoring]** In questa pagina viene visualizzato un avviso per questo flusso di lavoro. Questa pagina è accessibile tramite il **[!UICONTROL Monitoring]** della home page.
 
