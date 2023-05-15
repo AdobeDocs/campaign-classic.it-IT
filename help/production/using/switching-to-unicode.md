@@ -2,11 +2,13 @@
 product: campaign
 title: Passaggio a Unicode
 description: Passaggio a Unicode
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4cfecf2f-cf98-42c1-b979-cdd26d5de48b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 7%
@@ -15,7 +17,7 @@ ht-degree: 7%
 
 # Passaggio a Unicode{#switching-to-unicode}
 
-![](../../assets/v7-only.svg)
+
 
 Per un **prod** istanza in Linux/PostgreSQL, i passaggi per passare a unicode sono i seguenti:
 

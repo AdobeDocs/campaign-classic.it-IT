@@ -2,18 +2,20 @@
 product: campaign
 title: Rendering della casella in entrata in Campaign
 description: Scopri come acquisire i rendering delle e-mail e renderli disponibili in un rapporto dedicato
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Inbox Rendering, Monitoring, Email Rendering
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: 048189f49623cf00f4c3f1f34ff4b795d80391ef
+source-git-commit: e011333411af79b985166a4e73592a1860749cf1
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 8%
+source-wordcount: '839'
+ht-degree: 9%
 
 ---
 
 # Rendering della casella in entrata{#inbox-rendering}
 
-![](../../assets/common.svg)
+
 
 ## Informazioni sul rendering della casella in entrata {#about-inbox-rendering}
 
@@ -33,6 +35,8 @@ Client per dispositivi mobili, di messaggistica e di posta sul web disponibili p
 >Il rendering della casella in entrata non è necessario per testare la personalizzazione nelle consegne. La personalizzazione può essere controllata con strumenti Adobe Campaign come **[!UICONTROL Preview]** e [Bozze](steps-validating-the-delivery.md#sending-a-proof).
 
 ## Attivazione del rendering della casella in entrata {#activating-inbox-rendering}
+
+[!BADGE On-Premise e ibrida]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Si applica solo alle distribuzioni on-premise e ibride"}
 
 Per i client in hosting e ibridi, il rendering della casella in entrata è configurato sulla tua istanza da parte del supporto tecnico e dei consulenti Adobe. Per ulteriori informazioni, contatta il tuo Adobe Account Executive.
 
