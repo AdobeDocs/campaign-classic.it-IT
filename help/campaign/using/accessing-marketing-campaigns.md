@@ -2,18 +2,17 @@
 product: campaign
 title: Accedere alle campagne di marketing
 description: Accedere alle campagne di marketing
+badge: label="v7" type="Informative" tooltip="Si applica a Campaign Classic v7"
 feature: Campaigns, Cross Channel Orchestration
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 517a343011ff313d016638c586867673e406fd88
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1257'
 ht-degree: 3%
 
 ---
 
 # Accesso alle campagne di marketing{#accessing-marketing-campaigns}
-
-![](../../assets/v7-only.svg)
 
 Adobe Campaign consente di creare, configurare, eseguire e analizzare campagne di marketing. Tutte le campagne di marketing possono essere gestite da un centro di controllo unificato.
 
@@ -21,70 +20,70 @@ Adobe Campaign consente di creare, configurare, eseguire e analizzare campagne d
 
 ### Pagina Home {#home-page}
 
-Dopo aver effettuato la connessione ad Adobe Campaign, viene visualizzata la pagina Home.
+Una volta effettuata la connessione ad Adobe Campaign, verrà visualizzata la home page.
 
 ![](assets/campaign_global_view.png)
 
 Fai clic sui collegamenti nella barra di navigazione per accedere alle varie funzionalità.
 
-Gli elementi della campagna si trovano nel **[!UICONTROL Campaigns]** scheda: qui puoi vedere una panoramica dei programmi e delle campagne di marketing e dei relativi sottoinsiemi. Un programma di marketing è costituito da campagne, che sono costituite da consegne, attività, risorse collegate, ecc. Nel contesto della gestione delle campagne di marketing tramite Campaign, le informazioni relative a consegne, budget, revisori e documenti collegati si trovano nelle campagne.
+Gli elementi della campagna si trovano in **[!UICONTROL Campaigns]** scheda: qui puoi vedere una panoramica dei programmi e delle campagne di marketing e dei relativi sottoinsiemi. Un programma di marketing è costituito da campagne, costituite da consegne, attività, risorse collegate, ecc. Nel contesto della gestione delle campagne di marketing tramite Campaign, le informazioni relative a consegne, budget, revisori e documenti collegati si trovano nelle campagne.
 
-Il **[!UICONTROL Browsing]** blocco del **[!UICONTROL Campaigns]** La scheda offre diverse voci, a seconda dei moduli installati nell’istanza. Ad esempio, puoi accedere a:
+La **[!UICONTROL Browsing]** blocco del **[!UICONTROL Campaigns]** tab offre varie voci, a seconda dei moduli installati nell’istanza. Ad esempio, puoi accedere a:
 
-* **Calendario della campagna**: calendario di piani, programmi di marketing, consegne e campagne. Fai riferimento a [Calendario della campagna](#campaign-calendar).
+* **Calendario delle campagne**: calendario di piani, programmi di marketing, consegne e campagne. Fai riferimento a [Calendario delle campagne](#campaign-calendar).
 * **Campagne**: accesso alle campagne contenute in tutti i programmi di marketing.
 * **Consegne**: accesso alle consegne collegate alle campagne.
-* **Applicazioni web**: accesso alle applicazioni web (moduli, pagine di destinazione, ecc.).
+* **Applicazioni Web**: accesso ad applicazioni web (moduli, pagine di destinazione, ecc.).
 
 >[!NOTE]
 >
 >Per ulteriori informazioni sull’ergonomia generale di Adobe Campaign, sulle autorizzazioni e sulle funzionalità di gestione dei profili, consulta [questa sezione](../../platform/using/adobe-campaign-workspace.md).
 >
->Tutte le funzionalità relative a canali e consegne sono descritte in [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md).
+>Tutte le funzionalità relative ai canali e alle consegne sono descritte in [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md).
 
-### Calendario della campagna {#campaign-calendar}
+### Calendario delle campagne {#campaign-calendar}
 
-Ogni campagna appartiene a un programma che a sua volta appartiene a un piano. I piani, i programmi e le campagne sono accessibili tramite **[!UICONTROL Campaign calendar]** menu in **Campagne** scheda.
+Ogni campagna appartiene a un programma che a sua volta appartiene a un piano. I piani, i programmi e le campagne sono accessibili tramite **[!UICONTROL Campaign calendar]** nel menu **Campagne** scheda .
 
-Per modificare un piano, un programma, una campagna o una consegna, fare clic sul relativo nome nel calendario e quindi su **[!UICONTROL Open...]**. Viene quindi visualizzato in una nuova scheda, come illustrato di seguito:
+Per modificare un piano, un programma, una campagna o una consegna, fare clic sul relativo nome nel calendario, quindi fare clic su **[!UICONTROL Open...]**. Viene quindi visualizzato in una nuova scheda, come illustrato di seguito:
 
 ![](assets/d_ncs_user_interface_hierar.png)
 
-Puoi filtrare le informazioni visualizzate nel calendario della campagna. A questo scopo, fai clic su **[!UICONTROL Filter]** e selezionare i criteri di filtro.
+Puoi filtrare le informazioni visualizzate nel calendario della campagna. A questo scopo, fai clic sul pulsante **[!UICONTROL Filter]** collega e seleziona i criteri di filtro.
 
 ![](assets/campaign_planning_filter.png)
 
 >[!NOTE]
 >
->Quando si applica un filtro in base a una data, vengono visualizzate tutte le campagne con una data di inizio successiva alla data specificata e/o con una data di fine precedente alla data specificata. Le date devono essere selezionate utilizzando i calendari a destra di ciascun campo.
+>Quando si filtra una data, vengono visualizzate tutte le campagne con una data di inizio successiva alla data specificata e/o con una data di fine precedente alla data specificata. Le date devono essere selezionate utilizzando i calendari a destra di ciascun campo.
 
 È inoltre possibile utilizzare **[!UICONTROL Search]** per filtrare gli elementi visualizzati.
 
-Le icone collegate a ciascun elemento ti consentono di visualizzarne lo stato: completato, in corso, in corso di modifica, ecc.
+Le icone collegate a ciascun elemento consentono di visualizzarne lo stato: finito, in corso, in corso, in corso di modifica, ecc.
 
-### Esplorazione in un programma di marketing {#browsing-in-a-marketing-program}
+### Esplorazione di un programma di marketing {#browsing-in-a-marketing-program}
 
-Campaign ti consente di gestire un set di programmi composto da varie campagne di marketing. Ogni campagna contiene consegne e i processi e le risorse associati.
+Campaign ti consente di gestire un set di programmi composti da varie campagne di marketing. Ogni campagna contiene consegne, processi e risorse associati.
 
-#### Esplorazione di un programma {#browsing-a-program}
+#### Navigazione in un programma {#browsing-a-program}
 
-Durante la modifica di un programma, utilizza le schede descritte di seguito per sfogliarlo e configurarlo.
+Quando modifichi un programma, utilizza le schede descritte di seguito per sfogliare e configurarlo.
 
-* Il **Pianificazione** scheda visualizza il calendario dei programmi per un mese, una settimana o un giorno, a seconda della scheda su cui si fa clic nell&#39;intestazione del calendario.
+* La **Pianificazione** Visualizza il calendario dei programmi per un mese, una settimana o un giorno a seconda della scheda su cui fai clic nell’intestazione del calendario.
 
    Se necessario, puoi creare una campagna, un programma o un’attività tramite questa pagina.
 
    ![](assets/s_ncs_user_interface_campaign02.png)
 
-* Il **Modifica** Questa scheda ti permette di personalizzare il programma: nome, date di inizio e fine, budget, documenti collegati, ecc.
+* La **Modifica** consente di personalizzare il programma: nome, date di inizio e fine, budget, documenti collegati, ecc.
 
    ![](assets/s_ncs_user_interface_campaign05.png)
 
-#### Navigazione nelle campagne {#browsing-campaigns}
+#### Campagne di navigazione {#browsing-campaigns}
 
-Le campagne sono accessibili tramite il calendario della campagna, il **[!UICONTROL Schedule]** del programma o dell’elenco delle campagne.
+È possibile accedere alle campagne tramite il calendario della campagna, **[!UICONTROL Schedule]** scheda del programma o elenco delle campagne.
 
-1. Seleziona la campagna da visualizzare tramite il calendario della campagna, quindi fai clic su **[!UICONTROL Open]** collegamento.
+1. Tramite il calendario della campagna, seleziona la campagna da visualizzare, quindi fai clic sul **[!UICONTROL Open]** link.
 
    ![](assets/campaign_planning_edit_op.png)
 
@@ -92,8 +91,8 @@ Le campagne sono accessibili tramite il calendario della campagna, il **[!UICONT
 
    ![](assets/campaign_op_edit.png)
 
-1. Attraverso il **[!UICONTROL Schedule]** del programma, la modalità di modifica è la stessa del calendario della campagna.
-1. Attraverso il **[!UICONTROL Campaigns]** collegamento del **[!UICONTROL Campaigns]** , fai clic sul nome della campagna da modificare.
+1. Tramite il **[!UICONTROL Schedule]** la modalità di modifica è la stessa del calendario della campagna.
+1. Tramite il **[!UICONTROL Campaigns]** collegamento **[!UICONTROL Campaigns]** , fai clic sul nome della campagna da modificare.
 
    ![](assets/campaign_edit_from_list.png)
 
@@ -101,13 +100,13 @@ Le campagne sono accessibili tramite il calendario della campagna, il **[!UICONT
 
 #### Dashboard {#dashboard}
 
-Per ogni campagna, processi, risorse e consegne sono centralizzati in un’unica schermata, la dashboard, che consente di gestire le azioni di marketing in collaborazione con gli altri.
+Per ogni campagna, processi, risorse e consegne sono centralizzati in un’unica schermata, ovvero il dashboard, che consente di gestire le azioni di marketing in collaborazione con altri.
 
-Il dashboard di una campagna viene utilizzato come interfaccia di controllo. Accede direttamente alle fasi principali di creazione e gestione della campagna: consegne, file di estrazione, notifiche, budget, ecc.
+Il dashboard di una campagna viene utilizzato come interfaccia di controllo. Accede direttamente alle principali fasi di creazione e gestione della campagna: consegne, file di estrazione, notifiche, budget, ecc.
 
 ![](assets/s_ncs_user_op_board_start_del.png)
 
-Con Adobe Campaign puoi impostare processi collaborativi per la creazione e l’approvazione delle varie fasi delle campagne di marketing e comunicazione: approvazione del budget, target, contenuto, ecc.
+Con Adobe Campaign puoi impostare processi collaborativi per la creazione e l’approvazione delle varie fasi delle campagne di marketing e comunicazione: approvazione del bilancio, dell&#39;obiettivo, del contenuto, ecc.
 
 ![](assets/s_ncs_user_op_board_validate.png)
 
@@ -117,19 +116,19 @@ Con Adobe Campaign puoi impostare processi collaborativi per la creazione e l’
 
 #### Pianificazione {#schedule}
 
-Una campagna centralizza una serie di consegne. Per ogni campagna, la pianificazione offre una visualizzazione globale di tutti i componenti: ciò ti consente di visualizzare le attività e le consegne e di accedervi facilmente.
+Una campagna centralizza un insieme di consegne. Per ogni campagna, la pianificazione offre una visualizzazione globale di tutti i componenti: questo ti consente di visualizzare le attività e le consegne e di accedervi facilmente.
 
 ![](assets/campaign_planning_tab.png)
 
 #### Forum {#forum}
 
-Per ogni campagna, gli operatori possono scambiarsi messaggi tramite un forum dedicato.
+Per ogni campagna, gli operatori possono scambiare messaggi tramite un forum dedicato.
 
 Per ulteriori informazioni, consulta [Forum di discussione](../../mrm/using/discussion-forums.md).
 
 #### Rapporti {#reports}
 
-Il **[!UICONTROL Reports]** consente di accedere ai rapporti della campagna.
+La **[!UICONTROL Reports]** link ti consente di accedere ai report della campagna.
 
 ![](assets/campaign_reporting_tab.png)
 
@@ -139,58 +138,58 @@ Il **[!UICONTROL Reports]** consente di accedere ai rapporti della campagna.
 
 #### Configurazione {#configuration}
 
-Le campagne vengono create tramite modelli di campagna. Puoi configurare modelli riutilizzabili per i quali sono selezionate alcune opzioni e altre impostazioni sono già salvate. Per ogni campagna sono offerte le seguenti funzionalità:
+Le campagne vengono create tramite modelli di campagna. Puoi configurare modelli riutilizzabili per i quali sono selezionate alcune opzioni e altre impostazioni già salvate. Per ogni campagna, è disponibile la seguente funzionalità:
 
-* Riferimento a documenti e risorse: è possibile associare documenti alla campagna (breve, rapporto, immagini, ecc.). Sono supportati tutti i formati di documento. Consulta [Gestione dei documenti associati](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents).
-* Definizione dei costi: per ogni campagna, Adobe Campaign consente di definire le voci di costo e le strutture di calcolo dei costi che possono essere utilizzate durante la creazione della campagna di marketing. Ad esempio: spese di stampa, ricorso ad agenzie esterne, affitto di stanze, ecc. Consulta [Definizione delle categorie di costo](../../campaign/using/providers--stocks-and-budgets.md#defining-cost-categories).
-* Definizione degli obiettivi: puoi definire obiettivi quantificabili per una campagna, ad esempio numero di abbonati, volume di business, ecc. Queste informazioni vengono successivamente utilizzate nei rapporti delle campagne.
-* Gestione degli indirizzi di seed (per ulteriori informazioni, consulta [questa sezione](../../delivery/using/about-seed-addresses.md)) e gruppi di controllo (fare riferimento a [Definizione di un gruppo di controllo](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)).
-* Gestione delle approvazioni: è possibile selezionare i trattamenti da approvare e, se necessario, selezionare gli operatori di revisione o i gruppi di operatori. Consulta [Verifica e approvazione delle consegne](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
+* Riferimento a documenti e risorse: puoi associare i documenti alla campagna (breve, rapporto, immagini, ecc.). Sono supportati tutti i formati di documento. Vedi [Gestione dei documenti associati](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents).
+* Definizione dei costi: per ogni campagna, Adobe Campaign ti consente di definire voci di costo e strutture di calcolo dei costi che possono essere utilizzate durante la creazione della campagna di marketing. Ad esempio: costi di stampa, utilizzo di un&#39;agenzia esterna, noleggio di camere, ecc. Vedi [Definizione delle categorie di costi](../../campaign/using/providers--stocks-and-budgets.md#defining-cost-categories).
+* Definizione degli obiettivi: puoi definire obiettivi quantificabili per una campagna, ad esempio numero di abbonati, volume di affari, ecc. Queste informazioni vengono successivamente utilizzate nei rapporti delle campagne.
+* Gestione degli indirizzi di seed (per ulteriori informazioni, consulta [questa sezione](../../delivery/using/about-seed-addresses.md)) e gruppi di controllo (consulta [Definizione di un gruppo di controllo](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)).
+* Gestione delle approvazioni: è possibile selezionare i trattamenti da approvare e, se necessario, selezionare gli operatori di revisione o i gruppi di operatori. Vedi [Controllo e approvazione delle consegne](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
 
 >[!NOTE]
 >
->Per accedere alle configurazioni della campagna e modificarle, fai clic sul pulsante **[!UICONTROL Advanced campaign parameters...]** collegamento in **[!UICONTROL Edit]** scheda.
+>Per accedere alle configurazioni della campagna e apportare loro modifiche, fai clic sul pulsante **[!UICONTROL Advanced campaign parameters...]** nel collegamento **[!UICONTROL Edit]** scheda .
 
 ## Utilizzo dell’interfaccia web {#using-the-web-interface-}
 
-Puoi accedere alle schermate della console Adobe Campaign tramite un browser Internet per visualizzare tutte le campagne e le consegne, nonché i rapporti e le informazioni sui profili nel database. Questo accesso non consente la creazione di record. A seconda dei diritti degli operatori, è possibile visualizzare e/o agire sui dati nel database. Ad esempio, puoi approvare il contenuto della campagna e il targeting, riavviare o interrompere una consegna, ecc.
+Puoi accedere alle schermate della console Adobe Campaign tramite un browser Internet per visualizzare tutte le campagne e le consegne, nonché i rapporti e le informazioni sui profili nel database. L&#39;accesso non consente la creazione di record. A seconda dei diritti dell’operatore, è possibile visualizzare e/o intervenire sui dati nel database. Ad esempio, puoi approvare il contenuto e il targeting della campagna, riavviare o interrompere una consegna, ecc.
 
-1. Accedi come al solito tramite https://`<your instance>:<port>/view/home`.
+1. Accedi come di consueto tramite https://`<your instance>:<port>/view/home`.
 1. Utilizza i menu per accedere alle panoramiche.
 
    ![](assets/s_ncs_user_interface_web_campaign_01.png)
 
-Oltre a navigare tra le campagne e visualizzarle, puoi eseguire i seguenti tipi di attività:
+Oltre a navigare tra le campagne e visualizzarle, è possibile eseguire i seguenti tipi di attività:
 
 * Monitorare l’attività su un’istanza
-* Partecipa ai processi di convalida, ad esempio approva o rifiuta un contenuto di consegna
+* Partecipa ai processi di convalida, ad esempio per approvare o rifiutare un contenuto di consegna
 * Eseguire altre azioni rapide, ad esempio sospendere un flusso di lavoro
 * Accedere a tutte le funzioni di reporting
-* Partecipa alle discussioni del forum
+* Partecipare alle discussioni del forum
 
-Questa tabella fornisce un riepilogo delle azioni che è possibile eseguire sulle campagne da un browser:
+In questa tabella sono riepilogate le azioni che è possibile eseguire sulle campagne da un browser:
 
 | Pagina  | Azione |
 | --- | --- |
-| Elenco di campagne, consegne, offerte, ecc. | Eliminare una voce di elenco |
+| Elenco di campagne, consegne, offerte, ecc. | Eliminare una voce dell’elenco |
 | Campaign | Annullare una campagna |
-| Consegna | Approvare il contenuto e la destinazione della consegna<br/>Inviare il contenuto della consegna<br/>Conferma una consegna<br/>Sospendere e interrompere una consegna |
-| Applicazione web | Creare un’applicazione web<br/>Modificare il contenuto e le proprietà dell’applicazione<br/>Salvare il contenuto dell’applicazione come modello<br/>Pubblicare l’applicazione |
-| Offerta | Approvare il contenuto e l’idoneità dell’offerta<br/>Disattivare un’offerta online |
-| Attività Task | Terminare un’attività<br/>Annullare un’attività |
+| Consegna | Approvare il contenuto e la destinazione della consegna<br/>Inviare il contenuto della consegna<br/>Conferma di una consegna<br/>Sospendi e interrompi una consegna |
+| Applicazione web | Creare un’applicazione web<br/>Modifica del contenuto e delle proprietà dell&#39;applicazione<br/>Salva il contenuto dell’applicazione come modello<br/>Pubblicare l’applicazione |
+| Offerta | Approvare il contenuto dell’offerta e l’idoneità<br/>Disattiva un’offerta online |
+| Attività Task | Completare un&#39;attività<br/>Annullare un’attività |
 | Risorse di marketing | Approvare una risorsa<br/>Bloccare e sbloccare una risorsa |
-| Pacchetto campagne | Inviare un pacchetto per l&#39;approvazione<br/>Approvare o rifiutare un pacchetto<br/>Annullare un pacchetto |
-| Ordine delle campagne | Crea un ordine<br/>Accettare o rifiutare un ordine <!-- Je n'ai pas pu créer de campaign order pour vérifier cela. Peut-on accéder à ces fonctionnalités depuis l'accès web ? --> |
-| Magazzino | Eliminare una linea di magazzino |
-| Simulazione di offerta | Avviare e interrompere una simulazione |
-| Flusso di lavoro di destinazione | Avviare, mettere in pausa e interrompere un flusso di lavoro |
-| Rapporto | Salva i dati correnti nella cronologia del rapporto |
-| Forum | Aggiungere una discussione<br/>Rispondere a un messaggio in una discussione<br/>Segui una discussione e annulla l’iscrizione |
+| Pacchetto campagne | Invia un pacchetto per l&#39;approvazione<br/>Approvare o rifiutare un pacchetto<br/>Annullare un pacchetto |
+| Ordine delle campagne | Creare un ordine<br/>Accettare o rifiutare un ordine <!-- Je n'ai pas pu créer de campaign order pour vérifier cela. Peut-on accéder à ces fonctionnalités depuis l'accès web ? --> |
+| Magazzino | Elimina una linea di magazzino |
+| Simulazione dell’offerta | Avviare e arrestare una simulazione |
+| Flusso di lavoro di targeting | Avviare, mettere in pausa e interrompere un flusso di lavoro |
+| Rapporto | Salva i dati correnti nella cronologia del report |
+| Forum | Aggiungi una discussione<br/>Risposta a un messaggio in una discussione<br/>Seguire una discussione e cancellarla |
 
 ### Approvazioni
 
-Le approvazioni (ad esempio di un target o di un contenuto di consegna) possono essere eseguite tramite accesso web.
+Le approvazioni (di un target o di un contenuto di consegna, ad esempio) possono essere eseguite tramite accesso web.
 
 ![](assets/campaign_web_interface_validation.png)
 
-Puoi anche utilizzare il collegamento contenuto nei messaggi di notifica. Per ulteriori informazioni, consulta [Verifica e approvazione delle consegne](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
+Puoi anche utilizzare il collegamento contenuto nei messaggi di notifica. Per ulteriori informazioni, consulta [Controllo e approvazione delle consegne](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
