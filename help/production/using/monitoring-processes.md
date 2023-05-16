@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
+source-git-commit: 9ea7eea5a539407a17b0a11c942570cfa6c16f2f
 workflow-type: tm+mt
-source-wordcount: '3610'
+source-wordcount: '3598'
 ht-degree: 0%
 
 ---
@@ -18,12 +18,11 @@ ht-degree: 0%
 # Monitoraggio dei processi{#monitoring-processes}
 
 
-
 Il server applicazioni e il server di reindirizzamento (**tracking**) può essere monitorata manualmente o automaticamente.
 
 ## Monitoraggio manuale {#manual-monitoring}
 
-Vai a **[!UICONTROL Monitoring]** e fai clic su **[!UICONTROL Overview]** link per visualizzare la pagina di monitoraggio del processo di Adobe Campaign.
+Per accedere alla pagina di monitoraggio del processo di Adobe Campaign, passa alla **[!UICONTROL Monitoring]** e fai clic sulla scheda **[!UICONTROL Overview]** link.
 
 ![](assets/d_ncs_monitoring.png)
 
@@ -33,71 +32,71 @@ La pagina visualizzata consente di visualizzare lo stato dell’istanza connessa
 * l’elenco dei processi mancanti e delle informazioni di esecuzione (data di inizio, PID, ecc.),
 * visualizzazione dei flussi di lavoro e delle consegne.
 
-Sono disponibili modalità aggiuntive di monitoraggio dei diversi processi di Campaign [questa pagina](../../production/using/monitoring-guidelines.md).
+Sono disponibili modalità aggiuntive di monitoraggio dei processi di Campaign in [questa pagina](../../production/using/monitoring-guidelines.md).
 
 ### Giornale di registrazione log {#log-journal}
 
-È possibile visualizzare il giornale di registrazione del registro relativo a un processo. A questo scopo, fai clic sul processo, **mta** ad esempio, quindi fai clic su **[!UICONTROL Open the log journal]** .
+Per visualizzare il giornale di registrazione del registro relativo a un processo, fare clic sul processo, **mta** ad esempio, seleziona **[!UICONTROL Open the log journal]** .
 
 ![](assets/d_ncs_monitoring2.png)
 
 ### Indicatori di sistema {#system-indicators}
 
-L&#39;elenco degli indicatori di sistema consente di visualizzare informazioni relative alla macchina, quali la memoria fisica e virtuale, i processi attivi e lo spazio disponibile su disco. Gli indicatori sono diversi per i sistemi operativi Linux e Windows. Vai a **[!UICONTROL Instance Monitoring]** e fai clic su **[!UICONTROL Display]** link per aprire l&#39;elenco degli indicatori
+Consultare l&#39;elenco degli indicatori di sistema per visualizzare le informazioni relative alla macchina, quali la memoria fisica e virtuale, i processi attivi e lo spazio su disco disponibile. Gli indicatori sono diversi per i sistemi operativi Linux e Windows. Vai a **[!UICONTROL Instance Monitoring]** e fai clic su **[!UICONTROL Display]** collegamento per aprire l’elenco degli indicatori.
 
 #### Windows {#in-windows}
 
-* **[!UICONTROL Pending events queued]** : indicatore specifico **Centro messaggi**. Fai riferimento a [questa sezione](../../message-center/using/additional-configurations.md#monitoring-thresholds) per ulteriori informazioni.
+* **[!UICONTROL Pending events queued]**: indicatore specifico **Centro messaggi**. [Ulteriori informazioni](../../message-center/using/additional-configurations.md#monitoring-thresholds)
 
-* **[!UICONTROL Memory]** : informazioni relative alla memoria fisica (RAM).
+* **[!UICONTROL Memory]**: informazioni relative alla memoria fisica (RAM).
 
-   **[!UICONTROL Current value]** : consumo effettivo di memoria.
+   **[!UICONTROL Current value]**: consumo di memoria corrente.
 
-   **[!UICONTROL Max Value]** : quantità totale di memoria installata.
+   **[!UICONTROL Max Value]**: quantità totale di memoria installata.
 
-   **[!UICONTROL Available]** : quantità di memoria disponibile.
+   **[!UICONTROL Available]**: quantità di memoria disponibile.
 
-   **[!UICONTROL Warning]** : questo indicatore viene visualizzato quando il consumo di memoria raggiunge l’80% della quantità totale.
+   **[!UICONTROL Warning]**: questo indicatore viene visualizzato quando il consumo di memoria raggiunge l’80% della quantità totale.
 
-   **[!UICONTROL Alert]** : questo indicatore viene visualizzato quando il consumo di memoria raggiunge il 90% della quantità totale.
+   **[!UICONTROL Alert]**: questo indicatore viene visualizzato quando il consumo di memoria raggiunge il 90% della quantità totale.
 
    Quando il **[!UICONTROL Warning]** e **[!UICONTROL Alert]** vengono visualizzati gli indicatori, è possibile risolvere il problema aggiungendo RAM al computer in cui è installato il server Adobe Campaign. Puoi anche decidere di installare il server Adobe Campaign su un computer dedicato.
 
-* **[!UICONTROL Swap Memory]** : informazioni relative alla memoria virtuale che corrisponde a un file di paging: un&#39;area del disco rigido utilizzata da Windows come RAM.
+* **[!UICONTROL Swap Memory]**: informazioni relative alla memoria virtuale che corrisponde a un file di paging: un&#39;area del disco rigido utilizzata da Windows come RAM.
 
-   **[!UICONTROL Current value]** : consumo effettivo di memoria.
+   **[!UICONTROL Current value]**: consumo effettivo di memoria.
 
-   **[!UICONTROL Max Value]** : quantità totale di memoria.
+   **[!UICONTROL Max Value]**: quantità totale di memoria.
 
-   **[!UICONTROL Available]** : quantità di memoria disponibile.
+   **[!UICONTROL Available]**: quantità di memoria disponibile.
 
-   **[!UICONTROL Warning]** : questo indicatore viene visualizzato quando il consumo di memoria raggiunge l’80% della quantità totale.
+   **[!UICONTROL Warning]**: questo indicatore viene visualizzato quando il consumo di memoria raggiunge l’80% della quantità totale.
 
-   **[!UICONTROL Alert]** : questo indicatore viene visualizzato quando il consumo di memoria raggiunge il 90% della quantità totale.
+   **[!UICONTROL Alert]**: questo indicatore viene visualizzato quando il consumo di memoria raggiunge il 90% della quantità totale.
 
    Quando il **[!UICONTROL Warning]** e **[!UICONTROL Alert]** vengono visualizzati gli indicatori, è possibile risolvere il problema aumentando le dimensioni del file di scambio nelle impostazioni avanzate di Windows.
 
-* **[!UICONTROL Disk XXX]** : informazioni relative ai lettori di macchine.
+* **[!UICONTROL Disk XXX]**: informazioni relative ai lettori di macchine.
 
-   **[!UICONTROL Current value]** : spazio su disco effettivamente utilizzato.
+   **[!UICONTROL Current value]**: spazio su disco effettivamente utilizzato.
 
-   **[!UICONTROL Max Value]** : capacità totale del disco.
+   **[!UICONTROL Max Value]**: capacità totale del disco.
 
-   **[!UICONTROL Available]** : spazio su disco disponibile
+   **[!UICONTROL Available]**: spazio su disco disponibile.
 
-   **[!UICONTROL Used]** : percentuale del disco utilizzato.
+   **[!UICONTROL Used]**: percentuale del disco utilizzato.
 
-   **[!UICONTROL Warning]** : questo indicatore viene visualizzato quando lo spazio su disco disponibile raggiunge l&#39;80% della capacità totale.
+   **[!UICONTROL Warning]**: questo indicatore viene visualizzato quando lo spazio su disco disponibile raggiunge l&#39;80% della capacità totale.
 
-   **[!UICONTROL Alert]** : questo indicatore viene visualizzato quando lo spazio su disco disponibile raggiunge il 90% della capacità totale.
+   **[!UICONTROL Alert]**: questo indicatore viene visualizzato quando lo spazio su disco disponibile raggiunge il 90% della capacità totale.
 
-* **[!UICONTROL Number of processes too old]** : informazioni sui processi Adobe Campaign attivi da più di un giorno.
+* **[!UICONTROL Number of processes too old]**: informazioni sui processi Adobe Campaign attivi da più di un giorno.
 
-   **[!UICONTROL Current value]** : numero di processi attualmente attivi.
+   **[!UICONTROL Current value]**: numero di processi attualmente attivi.
 
-   **[!UICONTROL Max Value]** : numero massimo di procedimenti autorizzati (1).
+   **[!UICONTROL Max Value]**: numero massimo di procedimenti autorizzati (1).
 
-   **[!UICONTROL Alert]** : questo indicatore viene visualizzato se il numero di processi è uguale a 1.
+   **[!UICONTROL Alert]**: questo indicatore viene visualizzato se il numero di processi è uguale a 1.
 
    Quando il **[!UICONTROL Alert]** viene visualizzato un indicatore, potrebbe essere che il processo interessato sia bloccato dal motore di database SQL o che sia bloccato in un ciclo infinito. La **cane da guardia** Il processo fornito da Adobe Campaign riavvia automaticamente tutti i processi ogni giorno e consente di risolvere questo problema. Tuttavia, è anche possibile interrompere il processo interessato per forzare il riavvio.
 
@@ -105,115 +104,115 @@ L&#39;elenco degli indicatori di sistema consente di visualizzare informazioni r
 
 ![](assets/production_system_indicators_linux_001.png)
 
-* **[!UICONTROL Pending events queued]** : indicatore specifico **Centro messaggi**. Fai riferimento a [questa sezione](../../message-center/using/additional-configurations.md#monitoring-thresholds) per ulteriori informazioni.
+* **[!UICONTROL Pending events queued]**: indicatore specifico **Centro messaggi**. Fai riferimento a [questa sezione](../../message-center/using/additional-configurations.md#monitoring-thresholds) per ulteriori informazioni.
 
-* **[!UICONTROL Load average (1/5/15 minutes)]** : informazioni relative al carico, ossia il tasso di utilizzo del processore da parte dei processi in esecuzione sulla macchina nell&#39;ultimo minuto, cinque minuti o quindici minuti
+* **[!UICONTROL Load average (1/5/15 minutes)]**: informazioni relative al carico, ossia il tasso di utilizzo del processore da parte dei processi in esecuzione sulla macchina nell&#39;ultimo minuto, cinque minuti o quindici minuti
 
-   **[!UICONTROL Current value]** : carico effettivo della macchina.
+   **[!UICONTROL Current value]**: carico effettivo della macchina.
 
-   **[!UICONTROL Max value]** : carico massimo di utilizzo dei processi sulla macchina
+   **[!UICONTROL Max value]**: carico massimo di utilizzo dei processi sulla macchina
 
-   **[!UICONTROL Warning]** : questo indicatore viene visualizzato quando il carico raggiunge l’80% del valore massimo autorizzato nell’ultimo minuto, cinque o quindici minuti.
+   **[!UICONTROL Warning]**: questo indicatore viene visualizzato quando il carico raggiunge l’80% del valore massimo autorizzato nell’ultimo minuto, cinque o quindici minuti.
 
-   **[!UICONTROL Alert]** : questo indicatore viene visualizzato quando il carico raggiunge il 90% del valore massimo autorizzato dell&#39;ultimo minuto, cinque minuti o quindici minuti.
+   **[!UICONTROL Alert]**: questo indicatore viene visualizzato quando il carico raggiunge il 90% del valore massimo autorizzato dell&#39;ultimo minuto, cinque minuti o quindici minuti.
 
-* **[!UICONTROL Memory]** : informazioni relative alla memoria fisica (RAM).
+* **[!UICONTROL Memory]**  informazioni relative alla memoria fisica (RAM).
 
-   **[!UICONTROL Current value]** : consumo effettivo di memoria.
+   **[!UICONTROL Current value]**: consumo effettivo di memoria.
 
-   **[!UICONTROL Max Value]** : quantità totale di memoria installata.
+   **[!UICONTROL Max Value]**: quantità totale di memoria installata.
 
-   **[!UICONTROL Available]** : quantità di memoria disponibile.
+   **[!UICONTROL Available]**: quantità di memoria disponibile.
 
-   **[!UICONTROL Warning]** : questo indicatore viene visualizzato quando il consumo di memoria raggiunge l’80% della quantità totale.
+   **[!UICONTROL Warning]**: questo indicatore viene visualizzato quando il consumo di memoria raggiunge l’80% della quantità totale.
 
-   **[!UICONTROL Alert]** : questo indicatore viene visualizzato quando il consumo di memoria raggiunge il 90% della quantità totale.
+   **[!UICONTROL Alert]**: questo indicatore viene visualizzato quando il consumo di memoria raggiunge il 90% della quantità totale.
 
    Quando il **[!UICONTROL Warning]** e **[!UICONTROL Alert]** vengono visualizzati gli indicatori, è possibile risolvere il problema aggiungendo RAM al computer in cui è installato il server Adobe Campaign. Puoi anche decidere di installare il server Adobe Campaign su un computer dedicato.
 
-* **[!UICONTROL Swap Memory]** : informazioni relative alla memoria virtuale che corrisponde a un file di paging: un&#39;area del disco rigido utilizzata da Windows come RAM.
+* **[!UICONTROL Swap Memory]**: informazioni relative alla memoria virtuale che corrisponde a un file di paging: un&#39;area del disco rigido utilizzata da Windows come RAM.
 
-   **[!UICONTROL Current value]** : consumo effettivo di memoria.
+   **[!UICONTROL Current value]**: consumo effettivo di memoria.
 
-   **[!UICONTROL Max Value]** : quantità totale di memoria.
+   **[!UICONTROL Max Value]**: quantità totale di memoria.
 
-   **[!UICONTROL Available]** : quantità di memoria disponibile.
+   **[!UICONTROL Available]**: quantità di memoria disponibile.
 
-   **[!UICONTROL Warning]** : questo indicatore viene visualizzato quando il consumo di memoria raggiunge l’80% della quantità totale.
+   **[!UICONTROL Warning]**: questo indicatore viene visualizzato quando il consumo di memoria raggiunge l’80% della quantità totale.
 
-   **[!UICONTROL Alert]** : questo indicatore viene visualizzato quando il consumo di memoria raggiunge il 90% della quantità totale.
+   **[!UICONTROL Alert]**: questo indicatore viene visualizzato quando il consumo di memoria raggiunge il 90% della quantità totale.
 
    Quando il **[!UICONTROL Warning]** e **[!UICONTROL Alert]** vengono visualizzati gli indicatori, è possibile risolvere il problema aumentando le dimensioni del file di scambio.
 
-* **[!UICONTROL Core Files]** : informazioni relative ai file generati in seguito all’arresto anomalo di un processo Adobe Campaign. Questi file ti consentono di diagnosticare i motivi dell&#39;arresto anomalo.
+* **[!UICONTROL Core Files]**: informazioni relative ai file generati in seguito all’arresto anomalo di un processo Adobe Campaign. Questi file ti consentono di diagnosticare i motivi dell&#39;arresto anomalo.
 
-   **[!UICONTROL Current Value]** : numero di file esistenti.
+   **[!UICONTROL Current Value]**: numero di file esistenti.
 
-   **[!UICONTROL Max Value]** : numero massimo di file autorizzati (1).
+   **[!UICONTROL Max Value]**: numero massimo di file autorizzati (1).
 
-   **[!UICONTROL Warning]** : questo indicatore viene visualizzato quando il numero di file si avvicina a 1.
+   **[!UICONTROL Warning]**: questo indicatore viene visualizzato quando il numero di file si avvicina a 1.
 
-   **[!UICONTROL Alert]** : questo indicatore viene visualizzato quando il numero di file è uguale a 1.
+   **[!UICONTROL Alert]**: questo indicatore viene visualizzato quando il numero di file è uguale a 1.
 
    Quando un processo risulta mancante a causa di un arresto anomalo, viene visualizzato in rosso nell’elenco dei processi e viene riavviato automaticamente dal **cane da guardia** processo fornito da Adobe Campaign.
 
-* **[!UICONTROL Number of shared memory segments]** : informazioni sui segmenti di memoria condivisi da tutti i processi Adobe Campaign.
+* **[!UICONTROL Number of shared memory segments]**: informazioni sui segmenti di memoria condivisi da tutti i processi Adobe Campaign.
 
-   **[!UICONTROL Current value]** : numero di segmenti di memoria attualmente in uso.
+   **[!UICONTROL Current value]**: numero di segmenti di memoria attualmente in uso.
 
-   **[!UICONTROL Max Value]** : numero massimo di segmenti di memoria autorizzati (2).
+   **[!UICONTROL Max Value]**: numero massimo di segmenti di memoria autorizzati (2).
 
-   **[!UICONTROL Warning]** : questo indicatore viene visualizzato quando il numero di segmenti di memoria raggiunge 1.
+   **[!UICONTROL Warning]**: questo indicatore viene visualizzato quando il numero di segmenti di memoria raggiunge 1.
 
-   **[!UICONTROL Alert]** : questo indicatore viene visualizzato quando il numero di segmenti di memoria raggiunge 2.
+   **[!UICONTROL Alert]**: questo indicatore viene visualizzato quando il numero di segmenti di memoria raggiunge 2.
 
-* **[!UICONTROL Number of processes too old]** : informazioni sui processi attivi da più di un giorno.
+* **[!UICONTROL Number of processes too old]**: informazioni sui processi attivi da più di un giorno.
 
-   **[!UICONTROL Current value]** : numero di processi attualmente attivi.
+   **[!UICONTROL Current value]**: numero di processi attualmente attivi.
 
-   **[!UICONTROL Max Value]** : numero massimo di processi autorizzati.
+   **[!UICONTROL Max Value]**: numero massimo di processi autorizzati.
 
-   **[!UICONTROL Warning]** : questo indicatore viene visualizzato quando il numero di processi raggiunge l’80% della soglia autorizzata.
+   **[!UICONTROL Warning]**: questo indicatore viene visualizzato quando il numero di processi raggiunge l’80% della soglia autorizzata.
 
-   **[!UICONTROL Alert]** : questo indicatore viene visualizzato quando il numero di processi raggiunge il 90% della soglia autorizzata.
+   **[!UICONTROL Alert]**: questo indicatore viene visualizzato quando il numero di processi raggiunge il 90% della soglia autorizzata.
 
-* **[!UICONTROL File Handles]** : informazioni relative ai descrittori dei file, ovvero il numero di file aperti per processo.
+* **[!UICONTROL File Handles]**: informazioni relative ai descrittori dei file, ovvero il numero di file aperti per processo.
 
-   **[!UICONTROL Current value]** : numero corrente di descrittori di file.
+   **[!UICONTROL Current value]**: numero corrente di descrittori di file.
 
-   **[!UICONTROL Max Value]** : numero massimo di descrittori di file autorizzati dal sistema operativo.
+   **[!UICONTROL Max Value]**: numero massimo di descrittori di file autorizzati dal sistema operativo.
 
-   **[!UICONTROL Warning]** : questo indicatore viene visualizzato quando il numero di descrittori di file autorizzati raggiunge la soglia dell’80%.
+   **[!UICONTROL Warning]**: questo indicatore viene visualizzato quando il numero di descrittori di file autorizzati raggiunge la soglia dell’80%.
 
-   **[!UICONTROL Alert]** : questo indicatore viene visualizzato quando il numero di descrittori di file autorizzati raggiunge la soglia del 90%.
+   **[!UICONTROL Alert]**: questo indicatore viene visualizzato quando il numero di descrittori di file autorizzati raggiunge la soglia del 90%.
 
-* **[!UICONTROL Processes]** : informazioni relative ai processi meccanici.
+* **[!UICONTROL Processes]**: informazioni relative ai processi meccanici.
 
-   **[!UICONTROL Current value]** : numero di processi attualmente attivi.
+   **[!UICONTROL Current value]**: numero di processi attualmente attivi.
 
-   **[!UICONTROL Max Value]** : numero massimo di processi autorizzati.
+   **[!UICONTROL Max Value]**: numero massimo di processi autorizzati.
 
-   **[!UICONTROL Active Processes]** : numero di processi attivi.
+   **[!UICONTROL Active Processes]**: numero di processi attivi.
 
-   **[!UICONTROL Inactive Processes]** : numero di processi inattivi.
+   **[!UICONTROL Inactive Processes]**: numero di processi inattivi.
 
-   **[!UICONTROL Warning]** : questo indicatore viene visualizzato quando il numero di processi autorizzati raggiunge la soglia dell’80%.
+   **[!UICONTROL Warning]**: questo indicatore viene visualizzato quando il numero di processi autorizzati raggiunge la soglia dell’80%.
 
-   **[!UICONTROL Alert]** : questo indicatore viene visualizzato quando il numero di processi autorizzati raggiunge la soglia del 90%.
+   **[!UICONTROL Alert]**: questo indicatore viene visualizzato quando il numero di processi autorizzati raggiunge la soglia del 90%.
 
-* **[!UICONTROL Zombie Processes]** : informazioni sui processi che sono stati interrotti ma che presentano ancora un identificatore del processo (PID) e rimangono visibili nella tabella del processo.
+* **[!UICONTROL Zombie Processes]**: informazioni sui processi che sono stati interrotti ma che presentano ancora un identificatore del processo (PID) e rimangono visibili nella tabella del processo.
 
-   **[!UICONTROL Current value]** : numero di processi zombie attualmente attivi.
+   **[!UICONTROL Current value]**: numero di processi zombie attualmente attivi.
 
-   **[!UICONTROL Max Value]** : numero massimo di processi di autorizzazione zombie (2).
+   **[!UICONTROL Max Value]**: numero massimo di processi di autorizzazione zombie (2).
 
-   **[!UICONTROL Warning]** : questo indicatore viene visualizzato quando il numero di processi zombie si avvicina a 2.
+   **[!UICONTROL Warning]**: questo indicatore viene visualizzato quando il numero di processi zombie si avvicina a 2.
 
-   **[!UICONTROL Alert]** questo indicatore viene visualizzato quando il numero di processi zombie raggiunge 2.
+   **[!UICONTROL Alert]**: questo indicatore viene visualizzato quando il numero di processi zombie raggiunge 2.
 
-#### Indicatori personalizzati {#customized-indicators}
+#### Personalizzare gli indicatori {#customized-indicators}
 
-Adobe Campaign ti consente di personalizzare gli indicatori. Per eseguire questa operazione:
+Adobe Campaign consente di personalizzare gli indicatori, come descritto di seguito:
 
 1. Crea un **.sh** file e denominalo **[!UICONTROL cust_indicators.sh]** .
 1. Aggiungi gli indicatori personalizzati a questo file. Ad esempio:
@@ -239,17 +238,15 @@ Adobe Campaign ti consente di personalizzare gli indicatori. Per eseguire questa
    </indicator>"
    ```
 
-1. Inserisci il file nel **[!UICONTROL usr/local/neolane/nl6]** cartella.
+1. Salva il file nel **[!UICONTROL usr/local/neolane/nl6]** cartella.
 
-Questo file verrà chiamato da Adobe Campaign.
+Questo file viene chiamato da Adobe Campaign.
 
 ## Rapporti SMTP {#smtp-reports}
 
 I rapporti di monitoraggio della consegna SMTP sono integrati nella piattaforma Adobe Campaign. È possibile accedervi tramite la console o utilizzando l’accesso Web.
 
-Questi report mostrano le statistiche di consegna SMTP e gli errori SMTP per dominio.
-
-Per accedervi, l’operatore deve disporre dei diritti di amministrazione.
+Questi report mostrano le statistiche di consegna SMTP e gli errori SMTP per dominio. Per accedervi, l&#39;operatore deve **Amministrazione** diritti.
 
 Sono raggruppati in **Monitoraggio** > &#39;Monitoraggio SMTP&#39;.
 
