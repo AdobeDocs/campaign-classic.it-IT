@@ -9,7 +9,7 @@ topic-tags: migration-procedure
 hide: true
 hidefromtoc: true
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 4%
@@ -56,13 +56,13 @@ Le varie opzioni consentono di misurare l’impatto di una migrazione e identifi
 * in **config** comando:
 
    ```
-   nlserver.exe config <option> -instance:<instanceName>
+   nlserver.exe config <option> -instance:<instance-name>
    ```
 
 * o al successivo aggiornamento:
 
    ```
-   nlserver.exe config -postupgrade <option> -instance:<instanceName>
+   nlserver.exe config -postupgrade <option> -instance:<instance-name>
    ```
 
 >[!NOTE]
@@ -76,7 +76,7 @@ Le varie opzioni consentono di misurare l’impatto di una migrazione e identifi
 * La **-showCustomEntities** visualizza l’elenco di tutti gli oggetti non standard:
 
    ```
-   nlserver.exe config -showCustomEntities -instance:<instanceName>
+   nlserver.exe config -showCustomEntities -instance:<instance-name>
    ```
 
    Esempio di messaggio inviato:
@@ -88,7 +88,7 @@ Le varie opzioni consentono di misurare l’impatto di una migrazione e identifi
 * La **-showDeletedEntities** visualizza l&#39;elenco di tutti gli oggetti standard mancanti nel database o nel file system. Per ogni oggetto mancante viene specificato il percorso.
 
    ```
-   nlserver.exe config -showDeletedEntities -instance:<instanceName>
+   nlserver.exe config -showDeletedEntities -instance:<instance-name>
    ```
 
    Esempio di messaggio inviato:
@@ -104,7 +104,7 @@ Integrato come standard nel comando post aggiornamento, questo processo consente
 È possibile avviare il processo di verifica da solo (senza migrazione) utilizzando il comando:
 
 ```
-nlserver.exe config -postupgrade -check -instance:<instanceName>
+nlserver.exe config -postupgrade -check -instance:<instance-name>
 ```
 
 >[!NOTE]
@@ -177,7 +177,7 @@ Viene inoltre eseguito un controllo della coerenza del database e dello schema.
 Questa opzione consente di ripristinare gli oggetti predefiniti se sono stati modificati. Per ogni oggetto ripristinato, un backup delle modifiche viene memorizzato nella cartella selezionata:
 
 ```
-nlserver.exe config -postupgrade -restoreFactory:<backupfolder> -instance:<instanceName>
+nlserver.exe config -postupgrade -restoreFactory:<backupfolder> -instance:<instance-name>
 ```
 
 >[!NOTE]

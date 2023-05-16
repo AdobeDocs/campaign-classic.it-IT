@@ -8,7 +8,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 3%
@@ -52,20 +52,20 @@ Ci possono essere diverse cause per questo problema, segui i passaggi seguenti p
    nlserver pdump
    HH:MM:SS > Application server for Adobe Campaign Version X.Y (build XXXX) of DD/MM/YYYY
    [...]
-   wfserver@<INSTANCENAME> (9340) - 11.3 Mb
+   wfserver@<instance-name> (9340) - 11.3 Mb
    [...]
    ```
 
    Se il modulo non è in esecuzione, contatta l’Assistenza clienti Adobe. Se disponi di un’installazione on-premise, un utente amministratore deve riavviare il servizio utilizzando il comando seguente.
 
    ```
-   nlserver start wfserver@<INSTANCENAME>
+   nlserver start wfserver@<instance-name>
    ```
 
    >[!NOTE]
    >
-   >Sostituisci **`<instancename>`** con il nome della tua istanza (produzione, sviluppo, ecc.). Il nome dell’istanza viene identificato tramite i file di configurazione:
-   >`[path of application]nl6/conf/config-<instancename>.xml`
+   >Sostituisci **`<instance-name>`** con il nome della tua istanza (produzione, sviluppo, ecc.). Il nome dell’istanza viene identificato tramite i file di configurazione:
+   >`[path of application]nl6/conf/config-<instance-name>.xml`
 
    Per ulteriori informazioni su come riavviare i moduli, consulta [questa sezione](../../production/using/usual-commands.md#module-launch-commands).
 
@@ -95,7 +95,7 @@ Per verificare questo e per avviare il modulo, se necessario, esegui i seguenti 
    nlserver pdump
    HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    [...]
-   wfserver@<INSTANCENAME> (9340) - 11.3 Mb
+   wfserver@<instance-name> (9340) - 11.3 Mb
    [...]
    ```
 
@@ -104,13 +104,13 @@ Per verificare questo e per avviare il modulo, se necessario, esegui i seguenti 
 1. Se il modulo non è in esecuzione, contatta l’Assistenza clienti Adobe. Se disponi di un’installazione on-premise, un amministratore deve riavviarla utilizzando il comando seguente.
 
    ```
-   nlserver start wfserver@<INSTANCENAME>
+   nlserver start wfserver@<instance-name>
    ```
 
    >[!NOTE]
    >
-   >Sostituisci **`<instancename>`** con il nome della tua istanza (produzione, sviluppo, ecc.). Il nome dell’istanza viene identificato tramite i file di configurazione:
-   >`[path of application]nl6/conf/config-<instancename>.xml`
+   >Sostituisci **`<instance-name>`** con il nome della tua istanza (produzione, sviluppo, ecc.). Il nome dell’istanza viene identificato tramite i file di configurazione:
+   >`[path of application]nl6/conf/config-<instance-name>.xml`
 
    Per ulteriori informazioni su come riavviare i moduli, consulta [questa sezione](../../production/using/usual-commands.md#module-launch-commands).
 

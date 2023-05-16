@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
 workflow-type: tm+mt
-source-wordcount: '2356'
+source-wordcount: '2355'
 ht-degree: 3%
 
 ---
@@ -93,9 +93,9 @@ Devi anche sapere tutte le [linee di comando utili](../../installation/using/com
 * **pdump nlserver**: elenchi dei processi in esecuzione
 * **nlserver pdump -who**: elenca le sessioni client attive
 * **monitor nlserver - mancante**: elenca le proprietà mancanti
-* **avvio server process@instanceName**: avvia un processo
-* **arresto del server process@instanceName**: interrompe un processo
-* **riavvio del server process@instanceName**: riavvia un processo
+* **avvio server process@instance-name**: avvia un processo
+* **arresto del server process@instance-name**: interrompe un processo
+* **riavvio del server process@instance-name**: riavvia un processo
 * **chiusura nlserver**: interrompe tutti i processi di Campaign
 * **nlserver watchdog -svc**: avvia il watchdog (solo UNIX)
 
@@ -278,7 +278,7 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 
 Se l’avviso riguarda un conflitto di risorse, è necessario prestare attenzione a risolverlo.
 
-La **postupgrade_ServerVersionNumber_TimeOfPostupgrade.log** il file contiene il risultato della sincronizzazione. È disponibile per impostazione predefinita nella seguente directory: **installationDirectory/var/instanceName/postupgrade**. Gli errori e gli avvisi sono indicati dagli attributi di errore e avviso.
+La **postupgrade_ServerVersionNumber_TimeOfPostupgrade.log** il file contiene il risultato della sincronizzazione. È disponibile per impostazione predefinita nella seguente directory: **installationDirectory/var/`<instance-name>`/postupgrade**. Gli errori e gli avvisi sono indicati dagli attributi di errore e avviso.
 
 ### Analizzare i conflitti
 
