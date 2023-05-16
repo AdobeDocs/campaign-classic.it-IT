@@ -8,16 +8,14 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: e5ef6aba-dc22-4c8d-9fbb-13d507181b65
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: dcc441272b29f682165a26006800e914e7c38252
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '179'
 ht-degree: 2%
 
 ---
 
 # Backup{#backup}
-
-
 
 Il backup è essenziale per evitare la perdita di dati in caso di problemi (fisici o relativi al sistema) su una macchina.
 
@@ -32,33 +30,29 @@ La maggior parte dei dati si trova nel database. Ciò rappresenta il 99% delle i
 
 I file sono suddivisi in diverse categorie:
 
-* File di configurazione, che si trovano in **nl6/conf**
+* File di configurazione, memorizzati in `nl6/conf`, ti consente di riconfigurare Adobe Campaign molto rapidamente.
 
-   Questi consentono di riconfigurare Adobe Campaign molto rapidamente.
+* File di reindirizzamento, memorizzati in  `nl6/var/`<instancename>`/redir`, sono presenti sui server di tracciamento (spesso denominati &quot;frontali&quot;) e includono tutti i reindirizzamenti precedenti delle campagne. Vengono ancora utilizzati dalle campagne precedenti.
 
-* File di reindirizzamento ** nl6/var/`<instancename>`/redir**
-
-   Si tratta dei server di tracciamento (spesso denominati &quot;frontali&quot;) e includono tutti i reindirizzamenti precedenti alle campagne. Vengono ancora utilizzati dalle campagne precedenti.
-
-* File di registro: **nl6/var/`<instancename>`/log**
-
-   Questi possono essere utilizzati per tracciare i problemi.
+* File di registro, memorizzati in `nl6/var/`<instancename>`/log`, può essere utilizzato per individuare i problemi.
 
 Le directory da sottoporre a backup sono pertanto:
 
-* nl6/conf
+* `nl6/conf`
 
-* nl6/var/`<instanceName>`/redir (per ogni istanza)
+* `nl6/var/`<instanceName>`/redir` (per ogni istanza)
 
-* nl6/var/`<instanceName>`/log (facoltativo)
+* `nl6/var/`<instanceName>`/log` (facoltativo)
 
-* nl6/var/`<instanceName>`/relay (facoltativo)
+* `nl6/var/`<instanceName>`/relay` (facoltativo)
+
+
+## Database {#database}
 
 >[!IMPORTANT]
 >
->È essenziale eseguire il backup del database.
+>È fondamentale eseguire il backup del database.
 
-## Database {#database}
 
 Il database contiene tutte le informazioni visualizzate nella console client avanzata di Adobe Campaign, nonché tutti i dati della linea di business.
 
