@@ -3,12 +3,12 @@ product: campaign
 title: Traccia dello stack in Linux
 description: Traccia dello stack in Linux
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 91662d6d-2177-4440-b31f-7b031bd953cb
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 11%
@@ -19,16 +19,16 @@ ht-degree: 11%
 
 
 
-A **traccia stack** rappresenta una traccia contenuta in un **nucleo centrale** digitare file. Questo file viene generato in caso di errore del computer. Può identificare l’origine dell’errore.
+A **analisi dello stack** rappresenta una traccia contenuta in una **core** digita il file. Questo file viene generato in caso di errore del computer. Può identificare l’origine dell’errore.
 
 >[!NOTE]
 >
->* A **nucleo centrale** file denominato **core.`<num>`**.
->* **gdb - Debugger GNU** deve essere installato sul computer.
+>* A **core** il file è denominato **core.`<num>`**.
+>* **gdb - Il debugger GNU** deve essere installato nel computer.
 >
 
 
-Il supporto tecnico Adobe Campaign può richiedere questo **traccia stack**. Per ottenerlo, immetti i seguenti comandi in Linux:
+L’assistenza tecnica Adobe Campaign può richiederti questo **analisi dello stack**. Per ottenerlo, immettete i seguenti comandi in Linux:
 
 ```
 su - neolane
@@ -55,7 +55,7 @@ gdb nlserver <coreFile>
 #16 0x5565918a in clone () from /lib/tls/libc.so.6
 ```
 
-Il supporto tecnico di Adobe Campaign potrebbe chiederti di eseguire questo comando utilizzando un eseguibile specifico (da noi fornito).
+Il supporto tecnico Adobe Campaign potrebbe richiedere di eseguire questo comando utilizzando un eseguibile specifico (che verrà fornito da noi).
 
 In questo caso, è sufficiente eseguire il comando seguente sostituendo **nlserver** con l’eseguibile fornito da Adobe Campaign:
 

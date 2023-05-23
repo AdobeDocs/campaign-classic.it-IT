@@ -4,9 +4,9 @@ title: Guida e opzioni di supporto per Campaign Classic
 description: Hai bisogno di supporto per Campaign Classic? Sei nel posto giusto!
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 9667bb436ffc591b05945dadd683e5f590ae43e5
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '796'
 ht-degree: 66%
 
 ---
@@ -31,7 +31,7 @@ Ottieni supporto tramite domande frequenti, best practice, risorse online e port
 
 ### Domande frequenti
 
-Come effettuare l’aggiornamento a una nuova build? Come monitorare l’esecuzione di un flusso di lavoro? cos&#39;è il flusso di lavoro di pulizia del database?.. [Consulta le 10 domande principali](platform/using/common-questions.md).
+Come effettuare l’aggiornamento a una nuova build? Come monitorare l’esecuzione di un flusso di lavoro? qual è il flusso di lavoro di pulizia del database?... [Leggi le 10 domande principali](platform/using/common-questions.md).
 
 <table>
     <tr><td><strong>Argomenti per domande e risposte</strong></td><td><strong>Problemi comuni</strong></td><td><strong>Best practice</strong></td><td><strong>Procedure</strong></td></tr>
@@ -61,12 +61,12 @@ Come effettuare l’aggiornamento a una nuova build? Come monitorare l’esecuzi
    <td valign="top">
         <ul>
         <li><a href="workflow/using/workflow-best-practices.md">Best practice per i flussi di lavoro</a></li>
-        <li><a href="workflow/using/monitoring-technical-workflows.md">Monitoraggio del flusso di lavoro tecnico</a></li>
+        <li><a href="workflow/using/monitoring-technical-workflows.md">Monitoraggio tecnico dei flussi di lavoro</a></li>
         <li><a href="delivery/using/about-message-tracking.md">Gestione del tracciamento</a></li>
         <li><a href="production/using/monitoring-guidelines.md">Scopri gli strumenti di monitoraggio</a></li>
         <li><a href="platform/using/import-export-workflows.md">Importare dati con flussi di lavoro</a></li>
-        <li><a href="delivery/using/steps-sending-the-delivery.md">Inviare messaggi a più ondate</a></li>
-        <li><a href="delivery/using/defining-the-email-content.md">Progettazione di contenuti e-mail</a></li>
+        <li><a href="delivery/using/steps-sending-the-delivery.md">Inviare messaggi in più ondate</a></li>
+        <li><a href="delivery/using/defining-the-email-content.md">Progettare contenuti e-mail</a></li>
         <li><a href="delivery/using/delivery-best-practices.md">Best practice per la consegna</a></li>
         </ul>
     </td>
@@ -90,49 +90,49 @@ Come effettuare l’aggiornamento a una nuova build? Come monitorare l’esecuzi
 
 <img src="platform/using/assets/do-not-localize/icon-control-panel.svg" width="60px">
 
-### Che cos’è il Pannello di controllo Campaign?
+### Che cos’è il Pannello di controllo?
 
-Il Pannello di controllo Campaign Campaign ti consente di aumentare l’efficienza del lavoro come amministratore di prodotto di Campaign Classic, consentendoti di gestire le impostazioni e tenere traccia degli utilizzi per ciascuna istanza.
+Campaign Pannelli di controllo Campaign ti aiuta a migliorare l’efficienza del tuo lavoro di amministratore di prodotto di Campaign Classic, consentendoti di gestire le impostazioni e tenere traccia dell’utilizzo di ciascuna istanza.
 Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=it).
 
 >[!NOTE]
 >
->Il Pannello di controllo Campaign è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente i diritti da amministratore sono descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel).
+>Il Pannello di controllo è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente i diritti da amministratore sono descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel).
 >
->Tieni presente che l’istanza deve essere ospitata su AWS e aggiornata con l’ultima [build GA](rn/using/rn-overview.md). Scopri come controllare la versione in [questa sezione](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+>Tieni presente che l’istanza deve essere ospitata su AWS e aggiornata con il [Build GA](rn/using/rn-overview.md). Scopri come controllare la versione in [questa sezione](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
 
-### Come accedere al Pannello di controllo Campaign?
+### Come accedere al Pannello di controllo?
 
-Il Pannello di controllo Campaign è disponibile direttamente da Adobe Experience Cloud. È accessibile solo agli utenti amministratori. Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=it).
+Il Pannello di controllo è disponibile direttamente da Adobe Experience Cloud. È accessibile solo agli utenti amministratori. Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=it).
 
-### Domande frequenti sul Pannello di controllo Campaign
+### Domande frequenti sul Pannello di controllo
 
 [Fai clic qui ](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) per accedere alle domande frequenti sul Pannello di controllo Campaign.
 
 ### Gestione SFTP
 
-Nel Pannello di controllo Campaign, puoi interagire con tutti i server SFTP collegati alle istanze di Campaign a cui hai accesso. Puoi monitorare la loro capacità di archiviazione, gestire gli indirizzi IP nell’inserire nell&#39;elenco Consentiti e le chiavi SSH pubbliche. Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
+Nel Pannello di controllo, puoi interagire con tutti i server SFTP collegati alle istanze di Campaign a cui hai accesso. Puoi monitorare la loro capacità di archiviazione, gestire gli indirizzi IP sul inserisco nell&#39;elenco Consentiti di e le chiavi SSH pubbliche. Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
 
 ### Sottodomini e certificati
 
-Puoi monitorare i sottodomini e i relativi certificati. Ulteriori informazioni nelle seguenti pagine:
+Puoi monitorare i sottodomini e i relativi certificati. Per ulteriori informazioni, consulta queste pagine:
 * [Branding dei sottodomini](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html?lang=it)
 * [Configurare un nuovo sottodominio](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=it)
 * [Monitorare i certificati SSL](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=it)
 
 ### Impostazioni delle istanze
 
-Scopri come gestire le impostazioni delle istanze Campaign Classic nel Pannello di controllo Campaign. Ulteriori informazioni nelle seguenti pagine:
-* [Aggiungi IP all’inserire nell&#39;elenco Consentiti](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=it) per accedere alle istanze Campaign
+Scopri come gestire le impostazioni delle istanze Campaign Classic nel Pannello di controllo Campaign. Per ulteriori informazioni, consulta queste pagine:
+* [Aggiungere IP nel inserisco nell&#39;elenco Consentiti di](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=it) per accedere alle istanze Campaign
 * [Gestire le autorizzazioni URL](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=it)
-* [Accedere ai dettagli dell’istanza](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=it)
+* [Accedi ai dettagli dell’istanza](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=it)
 * [Gestire le chiavi GPG per la crittografia dei dati](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=it)
 
 ## Richiesta di aiuto {#support}
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-Il nuovo sistema di ticket è stato lanciato attraverso [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Il nuovo sistema richiede nuovi account individuali per ogni utente, con le autorizzazioni corrette. Se non riesci ad accedere con il tuo Adobe ID, richiedi l’accesso tramite Experience League e il team di assistenza clienti completerà le tue impostazioni il prima possibile. [Ulteriori informazioni](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html)
+Il nuovo sistema di ticket è stato lanciato tramite [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Il nuovo sistema richiede nuovi account individuali per ogni utente, con le autorizzazioni corrette. Se non riesci ad accedere con il tuo Adobe ID, richiedi l’accesso tramite Experience League e il team di assistenza clienti completerà le tue impostazioni il prima possibile. [Ulteriori informazioni](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html)
 
 ### Chiedi agli esperti
 
@@ -140,7 +140,7 @@ Iscriviti alla community Campaign Classic: consulta le risposte già fornite all
 
 ### Accedi al Centro di download di Campaign
 
-A partire da giugno 2020, la soluzione Experience Cloud Software Distribution sostituisce il precedente Centro download di Neolane e offre un&#39;esperienza più efficiente per trovare e scaricare il software, i pacchetti e gli strumenti. [Fai clic qui](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) per accedere alla Distribuzione di software di Experience Cloud.
+A partire da giugno 2020, la soluzione di Experience Cloud Distribuzione di software sostituisce il precedente Centro di download Neolane e offre un’esperienza più efficiente per trovare e scaricare software, pacchetti e strumenti. [Fai clic qui](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) per accedere alla Distribuzione di software di Experience Cloud.
 Ulteriori informazioni sul nuovo Centro download [in questa pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it){_blank}.
 
 ### Crea un ticket o avvia una chat

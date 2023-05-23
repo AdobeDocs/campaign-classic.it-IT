@@ -3,12 +3,12 @@ product: campaign
 title: Configurazione di Campaign Tomcat
 description: Configurazione di Campaign Tomcat
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a2126458-2ae5-47c6-ad13-925f0e067ecf
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 1%
@@ -19,9 +19,9 @@ ht-degree: 1%
 
 
 
-Adobe Campaign utilizza un **servlet web incorporato chiamato Apache Tomcat** per elaborare le richieste HTTP/HTTPS tra l’applicazione e qualsiasi interfaccia esterna (compresa la console client, i collegamenti URL tracciati, le chiamate SOAP e altri). Spesso è presente davanti a questo un server web esterno (in genere IIS o Apache) per qualsiasi istanza Adobe Campaign rivolta all’esterno.
+Adobe Campaign utilizza un **servlet web incorporato denominato Apache Tomcat** per elaborare le richieste HTTP/HTTPS tra l’applicazione e qualsiasi interfaccia esterna (inclusa la console client, i collegamenti URL tracciati, le chiamate SOAP e altre). Di fronte a questo server spesso è presente un server web esterno (in genere IIS o Apache) per tutte le istanze Adobe Campaign rivolte all’esterno.
 
-Scopri di più su Tomcat in Campaign e su come individuare la tua versione Tomcat in [questa pagina](../../production/using/locate-tomcat-version.md).
+Ulteriori informazioni su Tomcat in Campaign e su come individuare la versione Tomcat in [questa pagina](../../production/using/locate-tomcat-version.md).
 
 >[!NOTE]
 >
@@ -29,9 +29,9 @@ Scopri di più su Tomcat in Campaign e su come individuare la tua versione Tomca
 
 ## Porta predefinita per Apache Tomcat {#default-port-for-tomcat}
 
-Quando la porta di ascolto 8080 del server Tomcat è già occupata con un&#39;altra applicazione necessaria per la configurazione, è necessario sostituire la porta 8080 con una gratuita (ad esempio 8090). Per modificarlo, modifica il **server.xml** file salvati in **/tomcat-8/conf** della cartella di installazione di Adobe Campaign.
+Quando la porta di ascolto 8080 del server Tomcat è già occupata con un&#39;altra applicazione necessaria per la configurazione, è necessario sostituire la porta 8080 con una libera (ad esempio, 8090). Per modificarlo, modifica il **server.xml** file salvato in **/tomcat-8/conf** della cartella di installazione di Adobe Campaign.
 
-Quindi modifica la porta delle pagine relay JSP. Per eseguire questa operazione, modifica la variabile **serverConf.xml** file salvati in **/conf** della directory di installazione di Adobe Campaign.
+Quindi modifica la porta delle pagine di inoltro JSP. Per eseguire questa operazione, modifica il **serverConf.xml** file salvato in **/conf** directory della directory di installazione di Adobe Campaign.
 
 ```
 <serverConf>
@@ -42,7 +42,7 @@ Quindi modifica la porta delle pagine relay JSP. Per eseguire questa operazione,
 
 ## Mappare una cartella in Apache Tomcat {#mapping-a-folder-in-tomcat}
 
-Per definire le impostazioni specifiche per il cliente, puoi creare una **user_contexts.xml** nel **/tomcat-8/conf** che contiene anche **contexts.xml** file.
+Per definire le impostazioni specifiche del cliente, puoi creare un’ **user_contexts.xml** file in **/tomcat-8/conf** cartella, che contiene anche **contexts.xml** file.
 
 Questo file conterrà il seguente tipo di informazioni:
 
@@ -52,15 +52,15 @@ Questo file conterrà il seguente tipo di informazioni:
 
 Se necessario, questa operazione può essere riprodotta sul lato server.
 
-## Nascondere il report di errore Tomcat {#hide-tomcat-error-report}
+## Nascondi il report di errori Tomcat {#hide-tomcat-error-report}
 
-Per motivi di sicurezza, consigliamo vivamente di nascondere il rapporto di errore Tomcat. Di seguito sono riportati i passaggi da seguire.
+Per motivi di sicurezza, si consiglia vivamente di nascondere il rapporto di errore Tomcat. Di seguito sono riportati i passaggi da seguire.
 
-1. Apri **server.xml** nel file **/tomcat-8/conf** directory della cartella di installazione di Adobe Campaign:  `/usr/local/neolane/nl6/tomcat-8/conf`
-1. Aggiungi il seguente elemento in basso dopo tutti gli elementi di contesto esistenti:
+1. Apri **server.xml** file che si trova in **/tomcat-8/conf** directory della cartella di installazione di Adobe Campaign:  `/usr/local/neolane/nl6/tomcat-8/conf`
+1. Aggiungi il seguente elemento in basso dopo tutti gli elementi contestuali esistenti:
 
    ```
    <Valve className="org.apache.catalina.valves.ErrorReportValve" showReport="false" showServerInfo="false"/>
    ```
 
-1. Riavvia il server nlserver e i server web Apache.
+1. Riavvia nlserver e i server web Apache.

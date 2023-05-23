@@ -3,12 +3,12 @@ product: campaign
 title: Installazione del server
 description: Installazione del server
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: c0cb4efa-cae9-4312-88fb-738857a89595
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 3%
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 Per una piattaforma Windows a 32 bit, installare Adobe Campaign a 32 bit. Per una piattaforma Windows a 64 bit, installare Adobe Campaign a 64 bit.
 
-I passaggi di installazione per il server Adobe Campaign sono i seguenti:
+I passaggi per l’installazione del server Adobe Campaign sono i seguenti:
 
 1. Esegui il file **setup.exe**.
 
@@ -35,28 +35,28 @@ I passaggi di installazione per il server Adobe Campaign sono i seguenti:
 
    Sono disponibili diversi tipi di installazione:
 
-   * **[!UICONTROL Installation of an application server]** : Installa il server applicazioni Adobe Campaign e la console client.
-   * **[!UICONTROL Minimal installation (Network)]** : Installazione del computer client dalla rete. Se necessario, sul computer verrà installato solo un numero limitato di DLL e tutti gli altri componenti verranno utilizzati da un&#39;unità di rete.
-   * **[!UICONTROL Installation of a client]** : Installazione dei componenti richiesti per il client Adobe Campaign.
-   * **[!UICONTROL Custom installation]** : L&#39;utente sceglie gli elementi da installare.
+   * **[!UICONTROL Installation of an application server]** : installa il server applicazioni Adobe Campaign e la console client.
+   * **[!UICONTROL Minimal installation (Network)]** : installazione del computer client dalla rete. Nel computer verrà installato solo un numero limitato di DLL, se necessario, e tutti gli altri componenti verranno utilizzati da un&#39;unità di rete.
+   * **[!UICONTROL Installation of a client]** : installazione dei componenti richiesti per il client Adobe Campaign.
+   * **[!UICONTROL Custom installation]** : l’utente sceglie gli elementi da installare.
 
-   Seleziona **Installazione di un application server** e segui i diversi passaggi come mostrato di seguito:
+   Seleziona **Installazione di un server applicazioni** e seguire i diversi passaggi descritti di seguito:
 
    ![](assets/s_ncs_install_installer_02.png)
 
-1. Seleziona la directory di installazione:
+1. Selezionare la directory di installazione:
 
    ![](assets/s_ncs_install_installer_03.png)
 
-1. Fai clic su **[!UICONTROL Finish]** per avviare l&#39;installazione:
+1. Clic **[!UICONTROL Finish]** per avviare l&#39;installazione:
 
    ![](assets/s_ncs_install_installer_04.png)
 
-   La barra di avanzamento mostra la distanza dell’installazione:
+   La barra di avanzamento mostra la distanza dell&#39;installazione:
 
    ![](assets/s_ncs_install_installer_05.png)
 
-   Al termine dell’installazione, viene visualizzato un messaggio per informarti:
+   Una volta completata l’installazione, viene visualizzato un messaggio per informare l’utente:
 
    ![](assets/s_ncs_install_installer_06.png)
 
@@ -66,9 +66,9 @@ I passaggi di installazione per il server Adobe Campaign sono i seguenti:
 
    Al termine dell’installazione, avvia Adobe Campaign per creare i file di configurazione. Fai riferimento a [Primo avvio del server](#first-start-up-of-the-server).
 
-## Riepilogo del test di installazione {#summary-installation-testing}
+## Riepilogo test di installazione {#summary-installation-testing}
 
-Puoi verificare l’installazione iniziale utilizzando il seguente comando:
+È possibile verificare l&#39;installazione iniziale utilizzando il comando seguente:
 
 ```
 nlserver pdump
@@ -82,7 +82,7 @@ No task
 
 ## Primo avvio del server {#first-start-up-of-the-server}
 
-Una volta completato il test di installazione, apri un prompt dei comandi tramite il **[!UICONTROL Start > Programs > Adobe Campaign]** e immetti il comando seguente:
+Al termine del test di installazione, aprire un prompt dei comandi tramite **[!UICONTROL Start > Programs > Adobe Campaign]** e immettere il comando seguente:
 
 ```
 nlserver web
@@ -90,7 +90,7 @@ nlserver web
 
 ![](assets/s_ncs_install_cmd_nlserverweb.png)
 
-I file nella directory di installazione vengono utilizzati per configurare i moduli server Adobe Campaign.
+I file nella directory di installazione vengono utilizzati per configurare i moduli server di Adobe Campaign.
 
 Vengono visualizzate le seguenti informazioni:
 
@@ -104,7 +104,7 @@ Vengono visualizzate le seguenti informazioni:
 15:30:12 >   Web server stop (pid=664, tid=4188)...
 ```
 
-Press **Ctrl+C** per interrompere il processo, immettere il comando seguente:
+Premi **CTRL+C** per arrestare il processo, immettere il comando seguente:
 
 ```
 nlserver start web
@@ -139,19 +139,19 @@ Vengono visualizzate le seguenti informazioni:
 
 ## Password per l’identificatore interno {#password-for-the-internal-identifier}
 
-Il server Adobe Campaign definisce un accesso tecnico denominato **interno** che ha tutti i diritti su tutte le istanze. Subito dopo l&#39;installazione, l&#39;accesso non dispone di una password. È obbligatorio definirne uno.
+Il server Adobe Campaign definisce un accesso tecnico denominato **interno** dispone di tutti i diritti su tutte le istanze. Subito dopo l&#39;installazione, l&#39;account di accesso non dispone di una password. È obbligatorio definirne uno.
 
 Per ulteriori informazioni, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
 ## Avvio dei servizi Adobe Campaign {#starting-adobe-campaign-services}
 
-Per avviare i servizi Adobe Campaign, puoi utilizzare il gestore dei servizi o immettere quanto segue nella riga di comando (con i diritti appropriati):
+Per avviare i servizi di Adobe Campaign, puoi utilizzare il gestore dei servizi o immettere quanto segue alla riga di comando (con i diritti appropriati):
 
 ```
 net start nlserver6
 ```
 
-Se devi interrompere i processi Adobe Campaign in un secondo momento, utilizza il comando :
+Per arrestare i processi di Adobe Campaign in un secondo momento, utilizza il comando:
 
 ```
 net stop nlserver6
@@ -159,7 +159,7 @@ net stop nlserver6
 
 ## Installazione di LibreOffice {#installing-libreoffice}
 
-Scarica LibreOffice e segui i passaggi regolari di installazione.
+Scarica LibreOffice e segui i passaggi regolari dell’installazione.
 
 Aggiungi la seguente variabile di ambiente:
 

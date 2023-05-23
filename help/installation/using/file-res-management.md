@@ -3,12 +3,12 @@ product: campaign
 title: Gestione di file e risorse
 description: Scopri come configurare la gestione di file e risorse in Campaign
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 0%
@@ -21,27 +21,27 @@ ht-degree: 0%
 
 ## Limita il formato del file di caricamento {#limiting-uploadable-files}
 
-Utilizza la **uploadWhiteList** per limitare i tipi di file disponibili per il caricamento sul server Adobe Campaign.
+Utilizza il **uploadWhiteList** per limitare i tipi di file disponibili per il caricamento sul server Adobe Campaign.
 
-Questo attributo è disponibile all&#39;interno della variabile **dataStore** elemento **serverConf.xml** file. Tutti i parametri disponibili nel **serverConf.xml** sono elencati in [sezione](../../installation/using/the-server-configuration-file.md).
+Questo attributo è disponibile all&#39;interno di **dataStore** elemento del **serverConf.xml** file. Tutti i parametri disponibili in **serverConf.xml** sono elencati in questo [sezione](../../installation/using/the-server-configuration-file.md).
 
 Il valore predefinito di questo attributo è **.+** e consente di caricare qualsiasi tipo di file.
 
-Per limitare i formati possibili, sostituisci il valore dell’attributo con un’espressione regolare java valida. È possibile immettere diversi valori separandoli con una virgola.
+Per limitare i formati possibili, sostituisci il valore dell’attributo con un’espressione regolare Java valida. È possibile immettere più valori separandoli con una virgola.
 
-Ad esempio: **uploadWhiteList=&quot;.&#42;.png,&#42;.jpg&quot;** consente di caricare i formati PNG e JPG sul server. Non verranno accettati altri formati.
+Ad esempio: **uploadWhiteList=&quot;.&#42;.png,.&#42;.jpg&quot;** consente di caricare i formati PNG e JPG sul server. Non verranno accettati altri formati.
 
 È inoltre possibile impedire il caricamento di file importanti configurando il server Web. [Ulteriori informazioni](web-server-configuration.md)
 
 >[!NOTE]
 >
->La **uploadWhiteList** questo attributo limita i tipi di file disponibili per il caricamento sul server Adobe Campaign. Tuttavia, quando la modalità di pubblicazione è **Server/i di tracciamento** o **Altri server Adobe Campaign**, **uploadWhitelist** Anche l&#39;attributo deve essere aggiornato su tali server.
+>Il **uploadWhiteList** attribute limita i tipi di file disponibili per il caricamento sul server Adobe Campaign. Tuttavia, quando la modalità di pubblicazione è **Server di tracciamento** o **Altri server Adobe Campaign**, il **uploadWhitelist** deve essere aggiornato anche su tali server.
 
 ## Configurazione della connessione proxy {#proxy-connection-configuration}
 
-Puoi collegare il server Campaign a un sistema esterno tramite un proxy utilizzando un **Trasferimento file** ad esempio, l’attività del flusso di lavoro . A questo scopo, devi configurare le **proxyConfig** della sezione **serverConf.xml** tramite un comando specifico. Tutti i parametri disponibili nel **serverConf.xml** sono elencati in [sezione](../../installation/using/the-server-configuration-file.md).
+Puoi collegare il server Campaign a un sistema esterno tramite un proxy, utilizzando un’ **Trasferimento file** attività del flusso di lavoro, ad esempio. A questo scopo, devi configurare il **proxyConfig** sezione del **serverConf.xml** mediante un comando specifico. Tutti i parametri disponibili in **serverConf.xml** sono elencati in questo [sezione](../../installation/using/the-server-configuration-file.md).
 
-Sono possibili le seguenti connessioni proxy: HTTP, HTTPS, FTP, SFTP. A partire dalla versione 20.2 di Campaign, i parametri del protocollo HTTP e HTTPS sono **non più disponibile**. Tali parametri sono ancora indicati di seguito in quanto rimangono disponibili nelle build precedenti, tra cui 9032.
+Sono possibili le seguenti connessioni proxy: HTTP, HTTPS, FTP, SFTP. A partire dalla versione 20.2 di Campaign, i parametri del protocollo HTTP e HTTPS sono **non più disponibile**. Tali parametri vengono ancora menzionati di seguito in quanto rimangono disponibili nelle build precedenti, incluso 9032.
 
 >[!CAUTION]
 >
@@ -57,7 +57,7 @@ nlserver config -setproxy:[protocol]/[serverIP]:[port]/[login][:‘https’|'htt
 
 i parametri del protocollo possono essere &quot;http&quot;, &quot;https&quot; o &quot;ftp&quot;.
 
-Se imposti FTP sulla stessa porta del traffico HTTP/HTTPS, puoi utilizzare quanto segue:
+Se imposti un FTP sulla stessa porta del traffico HTTP/HTTPS, puoi utilizzare quanto segue:
 
 ```
 nlserver config -setproxy:http/198.51.100.0:8080/user
@@ -65,7 +65,7 @@ nlserver config -setproxy:http/198.51.100.0:8080/user
 
 Le opzioni &quot;http&quot; e &quot;https&quot; vengono utilizzate solo quando il parametro del protocollo è &quot;ftp&quot; e indicano se il tunneling sulla porta specificata verrà eseguito su HTTPS o su HTTP.
 
-Se utilizzi porte diverse per il traffico FTP/SFTP e HTTP/HTTPS sul server proxy, devi impostare il parametro del protocollo &quot;ftp&quot;.
+Se utilizzi porte diverse per il traffico FTP/SFTP e HTTP/HTTPS sul server proxy, devi impostare il parametro del protocollo ‘ftp’.
 
 
 Ad esempio:
@@ -74,7 +74,7 @@ Ad esempio:
 nlserver config -setproxy:ftp/198.51.100.0:8080/user:’http’
 ```
 
-Quindi inserisci la password.
+Immettere quindi la password.
 
 Le connessioni HTTP sono definite nel parametro proxyHTTP:
 
@@ -100,34 +100,34 @@ Le connessioni FTP/FTPS sono definite nel parametro proxyFTP:
 </proxyConfig>
 ```
 
-Se si utilizza lo stesso proxy per diversi tipi di connessione, verrà definito solo il proxyHTTP con useSingleProxy impostato su &quot;1&quot; o &quot;true&quot;.
+Se si utilizza lo stesso proxy per diversi tipi di connessione, solo il proxyHTTP verrà definito con useSingleProxy impostato su &quot;1&quot; o &quot;true&quot;.
 
-Se disponi di connessioni interne che devono passare attraverso il proxy, aggiungili nel parametro override.
+Se disponi di connessioni interne che devono passare attraverso il proxy, aggiungile nel parametro di sostituzione.
 
-Se desideri disattivare temporaneamente la connessione proxy, imposta il parametro abilitato su &quot;false&quot; o &quot;0&quot;.
+Se si desidera disattivare temporaneamente la connessione proxy, impostare il parametro abilitato su &quot;false&quot; o &quot;0&quot;.
 
 Se devi utilizzare il connettore iOS HTTP/2 tramite un proxy, sono supportate le seguenti modalità proxy HTTP:
 
 * HTTP senza autenticazione
-* Autenticazione di base HTTP
+* autenticazione HTTP di base
 
-Per attivare la modalità proxy, è necessario eseguire la seguente modifica nel `serverconf.xml` file:
+Per attivare la modalità proxy, è necessario apportare la seguente modifica nel `serverconf.xml` file:
 
 ```
 <nmac useHTTPProxy="true">
 ```
 
-Per ulteriori informazioni su questo connettore iOS HTTP/2, consulta [page](../../delivery/using/about-mobile-app-channel.md).
+Per ulteriori informazioni su questo connettore iOS HTTP/2, consulta questa [pagina](../../delivery/using/about-mobile-app-channel.md).
 
-## Gestione delle risorse pubbliche {#managing-public-resources}
+## Gestire le risorse pubbliche {#managing-public-resources}
 
-Per essere disponibili al pubblico, le immagini utilizzate nelle e-mail e nelle risorse pubbliche collegate alle campagne devono essere presenti su un server accessibile esternamente. Possono quindi essere disponibili per i destinatari o gli operatori esterni. [Ulteriori informazioni](../../installation/using/deploying-an-instance.md#managing-public-resources).
+Per essere disponibili al pubblico, le immagini utilizzate nelle e-mail e nelle risorse pubbliche collegate alle campagne devono essere presenti su un server accessibile dall’esterno. Possono quindi essere disponibili per destinatari o operatori esterni. [Ulteriori informazioni](../../installation/using/deploying-an-instance.md#managing-public-resources).
 
-Le risorse pubbliche sono memorizzate nella **/var/res/instance** della directory di installazione di Adobe Campaign.
+Le risorse pubbliche sono memorizzate in **/var/res/instance** directory della directory di installazione di Adobe Campaign.
 
-L’URL corrispondente è: **http://server/res/instance** dove **istanza** è il nome dell&#39;istanza di tracciamento.
+L’URL corrispondente è: **http://server/res/instance** dove **istanza** è il nome dell’istanza di tracciamento.
 
-Puoi specificare un’altra directory aggiungendo un nodo al **conf-`<instance>`.xml** per configurare lo storage sul server. Questo significa aggiungere le seguenti righe:
+È possibile specificare un&#39;altra directory aggiungendo un nodo al **conf-`<instance>`.xml** per configurare l&#39;archiviazione sul server. Ciò significa aggiungere le seguenti righe:
 
 ```
 <serverconf>
@@ -140,4 +140,4 @@ Puoi specificare un’altra directory aggiungendo un nodo al **conf-`<instance>`
 </serverconf>
 ```
 
-In questo caso, il nuovo URL per le risorse pubbliche indicato nella parte superiore della finestra della procedura guidata di distribuzione deve puntare a questa cartella.
+In questo caso, il nuovo URL per le risorse pubbliche fornito nella parte superiore della finestra della procedura guidata di distribuzione deve puntare a questa cartella.

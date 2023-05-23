@@ -2,15 +2,15 @@
 product: campaign
 title: Utilizzare i diritti denominati per impostare le autorizzazioni
 description: Scopri come utilizzare i diritti denominati per impostare le autorizzazioni
-badge: label="v7" type="Informative" tooltip="Si applica solo ad Campaign Classic v7"
+badge: label="v7" type="Informative" tooltip="Si applica solo a Campaign Classic v7"
 feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 7%
+source-wordcount: '512'
+ht-degree: 5%
 
 ---
 
@@ -18,51 +18,51 @@ ht-degree: 7%
 
 
 
-Per impostazione predefinita, Adobe Campaign propone un set di diritti con nome che ti consente di definire le autorizzazioni assegnate a operatori e gruppi di operatori. Questi diritti possono essere modificati dalla **[!UICONTROL Administration > Access management > Named rights]** nodo dell&#39;albero.
+Per impostazione predefinita, Adobe Campaign propone una serie di diritti denominati che ti consentono di definire le autorizzazioni assegnate agli operatori e ai gruppi di operatori. Questi diritti possono essere modificati da **[!UICONTROL Administration > Access management > Named rights]** dell&#39;albero.
 
 ![](assets/s_ncs_admin_named_rights.png)
 
 Tali diritti sono i seguenti:
 
-* **[!UICONTROL ADMINISTRATION]**: Operatori con **[!UICONTROL ADMINISTRATION]** il diritto ha pieno accesso all&#39;istanza. Gli utenti amministratori possono eseguire/creare/modificare/eliminare qualsiasi oggetto, ad esempio flusso di lavoro, consegna, script e così via.
+* **[!UICONTROL ADMINISTRATION]**: operatori con **[!UICONTROL ADMINISTRATION]** right dispone dell’accesso completo all’istanza. Gli utenti amministratori possono eseguire/creare/modificare/eliminare qualsiasi oggetto, ad esempio flusso di lavoro, consegna, script e così via.
 
-* **[!UICONTROL APPROVAL ADMINISTRATION]**: Puoi impostare più passaggi di approvazione all’interno di flussi di lavoro e consegne per garantire che lo stato corrente sia stato approvato da un operatore o gruppo assegnato. Utenti con **[!UICONTROL APPROVAL ADMINISTRATION]** può impostare i passaggi di approvazione e assegnare anche un operatore o un gruppo di operatori che deve approvare tali passaggi.
+* **[!UICONTROL APPROVAL ADMINISTRATION]**: puoi impostare più passaggi di approvazione all’interno di flussi di lavoro e consegne per garantire che lo stato corrente sia stato approvato da un operatore o un gruppo assegnato. Utenti con **[!UICONTROL APPROVAL ADMINISTRATION]** L&#39;autorizzazione può impostare le fasi di approvazione e assegnare un operatore o un gruppo di operatori che deve approvarle.
 
-* **[!UICONTROL CENTRAL]**: Diritto alla gestione centrale (Distributed Marketing).
+* **[!UICONTROL CENTRAL]**: diritto alla gestione centrale (Marketing distribuito).
 
-* **[!UICONTROL DELETE FOLDER]**: Diritto di eliminare le cartelle. Con questo diritto, gli utenti possono eliminare le cartelle dalla visualizzazione Esplora risorse.
+* **[!UICONTROL DELETE FOLDER]**: diritto di eliminare le cartelle. Con questo diritto, gli utenti possono eliminare cartelle dalla visualizzazione Esplora risorse.
 
-* **[!UICONTROL EDIT FOLDERS]**: Diritto di modificare le proprietà della cartella come nome interno, etichetta, immagine associata, ordine delle sottocartelle, ecc.
+* **[!UICONTROL EDIT FOLDERS]**: diritto di modificare le proprietà della cartella come nome interno, etichetta, immagine associata, ordine delle sottocartelle e così via.
 
-* **[!UICONTROL EXPORT]**: Gli utenti possono esportare i dati dalle proprie istanze Adobe Campaign in un file su server o computer locale utilizzando **[!UICONTROL EXPORT]** attività del flusso di lavoro.
+* **[!UICONTROL EXPORT]**: gli utenti possono esportare i dati dalle istanze Adobe Campaign in un file sul server o sul computer locale utilizzando **[!UICONTROL EXPORT]** attività del flusso di lavoro.
 
-* **[!UICONTROL FILES ACCESS]**: Diritto di accesso in lettura e scrittura per i file tramite uno script che può essere scritto nel **[!UICONTROL JavaScript]** attività del flusso di lavoro per leggere/scrivere file su un server.
+* **[!UICONTROL FILES ACCESS]**: diritto di accesso in lettura e scrittura per i file tramite uno script che può essere scritto nel **[!UICONTROL JavaScript]** attività del flusso di lavoro per la lettura/scrittura di file su un server.
 
-* **[!UICONTROL IMPORT]**: Diritto all’importazione di dati generici. **[!UICONTROL IMPORT]** consente di importare dati in qualsiasi altra tabella, mentre il **[!UICONTROL RECIPIENT IMPORT]** right consente di importare solo nella tabella dei destinatari.
+* **[!UICONTROL IMPORT]**: diritto per l’importazione di dati generici. **[!UICONTROL IMPORT]** consente di importare dati in qualsiasi altra tabella, mentre **[!UICONTROL RECIPIENT IMPORT]** right consente di importare solo nella tabella dei destinatari.
 
-* **[!UICONTROL INSERT FOLDERS]**: Diritto di inserire cartelle. Utenti con **[!UICONTROL INSERT FOLDERS]** a destra è possibile creare nuove cartelle nella struttura delle cartelle in visualizzazione Esplora risorse.
+* **[!UICONTROL INSERT FOLDERS]**: diritto di inserire cartelle. Utenti con **[!UICONTROL INSERT FOLDERS]** con il pulsante destro del mouse è possibile creare nuove cartelle nella struttura cartelle in visualizzazione esplora risorse.
 
-* **[!UICONTROL LOCAL]**: Diritto alla gestione locale (Distributed Marketing).
+* **[!UICONTROL LOCAL]**: diritto alla gestione locale (Marketing distribuito).
 
-* **[!UICONTROL MERGE]**: Diritto di unire i record selezionati in un unico record. Se i destinatari esistono come duplicati, la **[!UICONTROL MERGE]** right consente all’utente di selezionare i duplicati e di unirli in un destinatario principale.
+* **[!UICONTROL MERGE]**: diritto di unire i record selezionati in uno. Se i destinatari esistono come duplicati, il **[!UICONTROL MERGE]** L’opzione a destra consente all’utente di selezionare i duplicati e unirli in un destinatario primario.
 
-* **[!UICONTROL PREPARE DELIVERIES]**: Diritto di creare, modificare e salvare una consegna. Utenti con **[!UICONTROL PREPARE DELIVERIES]** right può anche avviare il processo di analisi della consegna.
+* **[!UICONTROL PREPARE DELIVERIES]**: diritto di creare, modificare e salvare una consegna. Utenti con **[!UICONTROL PREPARE DELIVERIES]** right può anche avviare il processo di analisi della consegna.
 
-* **[!UICONTROL PRIVACY DATA RIGHT]**: Diritto di raccogliere ed eliminare dati sulla privacy. Per ulteriori informazioni, consulta questa [pagina](https://helpx.adobe.com/it/campaign/kb/acc-privacy.html).
+* **[!UICONTROL PRIVACY DATA RIGHT]**: diritto di raccogliere ed eliminare dati sulla privacy. Per ulteriori informazioni, consulta questa [pagina](https://helpx.adobe.com/it/campaign/kb/acc-privacy.html).
 
-* **[!UICONTROL PROGRAM EXECUTION]**: Diritto di eseguire comandi in vari linguaggi di programmazione.
+* **[!UICONTROL PROGRAM EXECUTION]**: diritto di eseguire comandi in vari linguaggi di programmazione.
 
-* **[!UICONTROL RECIPIENT IMPORT]**: Diritto di importare i destinatari. Utenti con **[!UICONTROL RECIPIENT IMPORT]** right può importare un file locale nella tabella dei destinatari.
+* **[!UICONTROL RECIPIENT IMPORT]**: diritto di importare i destinatari. Utenti con **[!UICONTROL RECIPIENT IMPORT]** right può importare un file locale nella tabella dei destinatari.
 
 * **[!UICONTROL SQL SCRIPT EXECUTION]** Diritto di eseguire qualsiasi comando SQL direttamente sul database.
 
-* **[!UICONTROL START DELIVERIES]**: Diritto di approvare le consegne analizzate in precedenza. Dopo l’analisi della consegna, la consegna verrà messa in pausa a vari passaggi di approvazione e dovrà essere approvata per riprendere. Utenti con **[!UICONTROL START DELIVERIES]** sono autorizzati ad approvare le consegne.
+* **[!UICONTROL START DELIVERIES]**: diritto di approvare le consegne analizzate in precedenza. Dopo l’analisi della consegna, la consegna viene sospesa in vari passaggi di approvazione e deve essere approvata per riprendere. Utenti con **[!UICONTROL START DELIVERIES]** I diritti di possono approvare le consegne.
 
-* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: Diritto di scrivere script SQL personalizzati utilizzando l&#39;attività SQL Data Management per creare e popolare tabelle di lavoro (vedere [questa sezione](../../workflow/using/sql-data-management.md)).
+* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: diritto di scrivere script SQL personalizzati utilizzando l’attività Gestione dati SQL per creare e popolare tabelle di lavoro (consulta [questa sezione](../../workflow/using/sql-data-management.md)).
 
-* **[!UICONTROL WORKFLOW]**: Diritto di eseguire flussi di lavoro. Senza questo diritto, gli utenti non possono avviare, arrestare o riavviare i flussi di lavoro.
+* **[!UICONTROL WORKFLOW]**: diritto di eseguire flussi di lavoro. Senza questo diritto, gli utenti non possono avviare, arrestare o riavviare i flussi di lavoro.
 
-* **[!UICONTROL WEBAPP]**: Diritto di utilizzare applicazioni web.
+* **[!UICONTROL WEBAPP]**: diritto di utilizzare le applicazioni web.
 
 >[!NOTE]
 >
@@ -74,4 +74,4 @@ I gruppi predefiniti e i diritti denominati consentono agli operatori di acceder
 
 È disponibile la matrice dei diritti di accesso di Adobe Campaign [qui](/help/platform/using/assets/access-rights-matrix.pdf).
 
-[![immagine](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=en)
+[![immagine](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf)

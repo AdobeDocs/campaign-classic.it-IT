@@ -3,12 +3,12 @@ product: campaign
 title: Integrazione in un server web per Windows
 description: Integrazione in un server web per Windows
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 4%
@@ -19,34 +19,34 @@ ht-degree: 4%
 
 
 
-Adobe Campaign include Apache Tomcat che agisce come punto di ingresso nell’application server tramite HTTP (e SOAP).
+Adobe Campaign include Apache Tomcat che funge da punto di ingresso nel server applicazioni tramite HTTP (e SOAP).
 
-Puoi utilizzare questo server Tomcat integrato per distribuire le richieste HTTP.
+Puoi utilizzare questo server Tomcat integrato per soddisfare le richieste HTTP.
 
 In questo caso:
 
-* la porta di ascolto predefinita è 8080. Per modificarlo, fai riferimento a [questa sezione](../../installation/using/configure-tomcat.md).
+* la porta di ascolto predefinita è 8080. Per modificarlo, fare riferimento a [questa sezione](../../installation/using/configure-tomcat.md).
 * Le console client si connettono quindi utilizzando un URL come ```https:// `<computer>`:8080```.
 
-Tuttavia, per motivi di sicurezza e amministrazione, si consiglia di utilizzare un server Web dedicato come punto di ingresso principale per il traffico HTTP quando il computer che esegue Adobe Campaign è esposto su Internet e si desidera aprire l&#39;accesso alla console all&#39;esterno della rete.
+Tuttavia, per motivi di sicurezza e amministrazione, si consiglia di utilizzare un server Web dedicato come punto di ingresso principale per il traffico HTTP quando il computer che esegue Adobe Campaign è esposto su Internet e si desidera aprire l&#39;accesso alla console al di fuori della rete.
 
-Un server Web consente inoltre di garantire la riservatezza dei dati con il protocollo HTTP.
+Un server web consente inoltre di garantire la riservatezza dei dati con il protocollo HTTP.
 
 Allo stesso modo, è necessario utilizzare un server Web quando si desidera utilizzare la funzionalità di tracciamento, disponibile solo come modulo di estensione del server Web.
 
 >[!NOTE]
 >
->Se non utilizzi la funzionalità di tracciamento, puoi eseguire un’installazione standard di Apache o IIS con un reindirizzamento a Campaign. Il modulo di estensione del server Web di tracciamento non è necessario.
+>Se non utilizzi la funzionalità di tracciamento, puoi eseguire un’installazione standard di Apache o IIS con un reindirizzamento a Campaign. Il modulo di estensione del server Web di tracciamento non è richiesto.
 
 ## Configurazione del server Web IIS {#configuring-the-iis-web-server}
 
-La procedura di configurazione per un server Web IIS è principalmente grafica. Per accedere alle risorse del server Adobe Campaign, è necessario utilizzare un sito Web (già creato o in attesa di creazione): File Java (.jsp), fogli di stile (.css, .xsl), immagini (.png), DLL ISAPI per il reindirizzamento, ecc.
+La procedura di configurazione per un server Web IIS è prevalentemente grafica. Comporta l’utilizzo di un sito web (già creato o in attesa di creazione) per accedere alle risorse del server Adobe Campaign: file Java (.jsp), fogli di stile (.css, .xsl), immagini (.png), DLL ISAPI per il reindirizzamento e così via.
 
-Nelle sezioni seguenti viene illustrata la configurazione dettagliata in IIS 7. La configurazione per IIS8 è sostanzialmente la stessa.
+Nelle sezioni seguenti viene descritta la configurazione in IIS 7. La configurazione per IIS8 è sostanzialmente la stessa.
 
-Se il server Web IIS non è già installato nel computer, è possibile installarlo tramite il **[!UICONTROL Add > Remove Programs > Enable or disable Windows functionalities]** menu.
+Se il server Web IIS non è già installato nel computer, è possibile installarlo tramite **[!UICONTROL Add > Remove Programs > Enable or disable Windows functionalities]** menu.
 
-In IIS 7, oltre ai servizi standard, è necessario installare le estensioni ISAPI e i filtri ISAPI.
+In IIS 7, oltre ai servizi standard, devi installare le estensioni ISAPI e i filtri ISAPI.
 
 ![](assets/s_ncs_install_iis7_isapi.png)
 
@@ -54,12 +54,12 @@ In IIS 7, oltre ai servizi standard, è necessario installare le estensioni ISAP
 
 Applica i seguenti passaggi di configurazione:
 
-1. Apri IIS tramite il **[!UICONTROL Control panel > Administrative tools > Services]** menu.
-1. Crea e configura il sito (Adobe Campaign, ad esempio) in base ai parametri della rete (porta di connessione TCP, host DNS, indirizzo IP).
+1. Apri IIS tramite **[!UICONTROL Control panel > Administrative tools > Services]** menu.
+1. Crea e configura il sito (ad esempio, Adobe Campaign) in base ai parametri della rete (porta di connessione TCP, host DNS, indirizzo IP).
 
    ![](assets/s_ncs_install_iis7_add_site.png)
 
-   È necessario specificare almeno il nome del sito e il percorso di accesso alla directory virtuale. Poiché il percorso di accesso alla directory del sito Web non viene utilizzato, è possibile utilizzare la seguente directory.
+   Specificare almeno il nome del sito e il percorso di accesso alla directory virtuale. Poiché non viene utilizzato il percorso per accedere alla directory del sito Web, è possibile utilizzare la directory seguente.
 
    ```
    C:\inetpub\wwwroot
@@ -67,17 +67,17 @@ Applica i seguenti passaggi di configurazione:
 
    ![](assets/s_ncs_install_iis7_parameters_step1.png)
 
-1. A **VBS** lo script consente di configurare automaticamente le risorse utilizzate dal server Adobe Campaign nella directory virtuale appena creata. Per avviarlo, fai doppio clic sul pulsante **iis_neolane_setup.vbs** nel file `[INSTALL]\conf` cartella, dove `[INSTALL]` è il percorso per accedere alla cartella di installazione di Adobe Campaign.
+1. A **VBS** script consente di configurare automaticamente le risorse utilizzate dal server Adobe Campaign nella directory virtuale appena creata. Per avviarlo, fai doppio clic sul pulsante **iis_neolane_setup.vbs** file che si trova in `[INSTALL]\conf` cartella, dove `[INSTALL]` è il percorso per accedere alla cartella di installazione di Adobe Campaign.
 
    ![](assets/s_ncs_install_iis7_parameters_step2.png)
 
    >[!NOTE]
    >
-   >In caso di installazione di un server Windows 2008/IIS7, è necessario aver effettuato l&#39;accesso come amministratore per eseguire lo script VBS o eseguire lo script come amministratore.
+   >In caso di installazione di Windows Server 2008/IIS7, è necessario aver effettuato l&#39;accesso come amministratore per eseguire lo script VBS o eseguire lo script come amministratore.
 
-   Fai clic su **[!UICONTROL OK]** se il server Web viene utilizzato come server di reindirizzamento di tracciamento, in caso contrario fare clic su **[!UICONTROL Cancel]**.
+   Clic **[!UICONTROL OK]** se il server Web viene utilizzato come server di reindirizzamento di tracciamento, altrimenti fai clic su **[!UICONTROL Cancel]**.
 
-   Quando più siti sono già configurati sul server Web, viene visualizzata una pagina intermedia per specificare a quale sito Web si applica l&#39;installazione: immettere il numero collegato al sito e fare clic su **[!UICONTROL OK]**.
+   Quando nel server Web sono già configurati più siti, viene visualizzata una pagina intermedia per specificare a quale sito Web si applica l&#39;installazione: immettere il numero collegato al sito e fare clic su **[!UICONTROL OK]**.
 
    ![](assets/s_ncs_install_iis7_parameters_step3.png)
 
@@ -85,11 +85,11 @@ Applica i seguenti passaggi di configurazione:
 
    ![](assets/s_ncs_install_iis7_parameters_step7.png)
 
-1. In **[!UICONTROL Content View]** verificare che il sito Web sia configurato correttamente con le risorse Adobe Campaign:
+1. In **[!UICONTROL Content View]** , accertarsi che il sito Web sia configurato correttamente con le risorse Adobe Campaign:
 
    ![](assets/s_ncs_install_iis7_parameters_step6.png)
 
-   Se la struttura non viene visualizzata, riavviare IIS.
+   Se la struttura non è visualizzata, riavviare IIS.
 
 ### Gestione delle autorizzazioni {#managing-rights}
 
@@ -97,21 +97,21 @@ Applica i seguenti passaggi di configurazione:
 
 A questo scopo, esegui i seguenti passaggi:
 
-1. Seleziona la **[!UICONTROL Features View]** e fai doppio clic sul pulsante **Autenticazione** link.
+1. Seleziona la **[!UICONTROL Features View]** e fare doppio clic sul pulsante **Autenticazione** collegamento.
 
    ![](assets/s_ncs_install_iis7_parameters_step8.png)
 
-1. In **Protezione directory** Assicurarsi che l&#39;accesso anonimo sia abilitato. Se necessario, fai clic sul pulsante **[!UICONTROL Edit]** per modificare le impostazioni.
+1. In **Sicurezza directory** del sito Web, verificare che l&#39;accesso anonimo sia abilitato. Se necessario, fai clic su **[!UICONTROL Edit]** per modificare le impostazioni.
 
    ![](assets/s_ncs_install_iis7_parameters_step9.png)
 
-### Avvio del server Web e verifica della configurazione {#launching-the-web-server-and-testing-the-configuration}
+### Avvio del server web e verifica della configurazione {#launching-the-web-server-and-testing-the-configuration}
 
 Ora devi verificare se la configurazione è corretta.
 
-A questo scopo, applicare la seguente procedura:
+A tale scopo, attenersi alla procedura descritta di seguito.
 
-1. Riavvia il server IIS utilizzando **iisreset** riga di comando.
+1. Riavviare il server IIS utilizzando **iisreset** riga di comando.
 
 1. Avvia il servizio Adobe Campaign, quindi assicurati che sia in esecuzione.
 
@@ -127,13 +127,13 @@ A questo scopo, applicare la seguente procedura:
    <redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='myserver.mydomain.com' localHost='localhost'/>
    ```
 
-Per verificare la presenza del modulo di reindirizzamento, eseguire la seguente riga di comando:
+Per verificare la presenza del modulo di reindirizzamento, eseguire la riga di comando seguente:
 
 ```
 nlserver pdump
 ```
 
-Deve restituire le seguenti informazioni:
+Deve inoltre fornire le seguenti informazioni:
 
 ```
 12:00:33 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -145,7 +145,7 @@ webmdl@default (1644) - 18.2 Mo
 A questo scopo, esegui i seguenti passaggi:
 
 1. Modifica i filtri ISAPI per il sito Adobe Campaign facendo clic sul pulsante **[!UICONTROL Driver mapping]** icona.
-1. Controlla il contenuto del filtro ISAPI:
+1. La sezione verifica il contenuto del filtro ISAPI:
 
    ![](assets/s_ncs_install_iis7_parameters_step11.png)
 
@@ -153,33 +153,33 @@ A questo scopo, esegui i seguenti passaggi:
 
 ### Modifica del limite di dimensione del file di caricamento {#changing-the-upload-file-size-limit}
 
-Durante la configurazione del server Web IIS, viene automaticamente impostato un limite di circa 28 MB per i file che vengono caricati sul server.
+Durante la configurazione del server Web IIS, viene automaticamente impostato un limite di circa 28 MB per i file impostati che vengono caricati sul server.
 
-Questo può avere un impatto in Adobe Campaign, in particolare se desideri caricare file che superano questo limite.
+Questo può avere un impatto su Adobe Campaign, in particolare se desideri caricare file di dimensioni superiori a questo limite.
 
-Ad esempio, se utilizzi un **Caricamento dati (file)** digita l’attività in un flusso di lavoro per importare un file da 50 MB. Un errore impedisce l’esecuzione corretta del flusso di lavoro.
+Ad esempio, se utilizzi un’ **Caricamento dati (file)** digita l’attività in un flusso di lavoro per importare un file da 50 MB; se si verifica un errore, il flusso di lavoro non viene eseguito correttamente.
 
 In questo caso, devi aumentare questo limite:
 
-1. Apri IIS tramite il **[!UICONTROL Start > (Control panel) > Administration tools]** menu.
-1. In **Connessioni** seleziona il sito creato per l’installazione dell’Adobe, quindi fai doppio clic su **Filtro richieste** nel riquadro principale.
-1. In **Azioni** riquadro, selezionare **Modificare le impostazioni delle funzioni** per poter modificare il valore nel **Dimensione massima del contenuto autorizzata (byte)** campo .
+1. Apri IIS tramite **[!UICONTROL Start > (Control panel) > Administration tools]** menu.
+1. In **Connessioni** , selezionare il sito creato per l&#39;installazione dell&#39;Adobe, quindi fare doppio clic su **Filtro richieste** nel riquadro principale.
+1. In **Azioni** riquadro, selezionare **Modifica impostazioni funzionalità** per poter modificare il valore in **Dimensione massima contenuto autorizzato (byte)** campo.
 
-   Ad esempio, per autorizzare il caricamento di file di 50 MB, devi specificare un valore superiore a &quot;52428800&quot; byte.
+   Ad esempio, per autorizzare il caricamento di file di 50 MB, è necessario specificare un valore superiore a &quot;52428800&quot; byte.
 
 >[!NOTE]
 >
->Per ulteriori informazioni su questa opzione IIS, consulta la sezione &quot;Come fare per&quot; nel [documentazione ufficiale](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits).
+>Per ulteriori informazioni su questa opzione IIS, consulta la sezione &quot;Procedura&quot; del [documentazione ufficiale](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits).
 
 ### Configurazione della visualizzazione del messaggio di errore http {#configuring-http-error-message-display}
 
-Se utilizzi un server IIS versione 6.1, i messaggi di errore generati possono risultare di difficile lettura a causa della visualizzazione di un codice HTML indesiderato nel messaggio.
+Se utilizzi un server IIS versione 6.1, i messaggi di errore generati potrebbero essere difficili da leggere a causa di un codice HTML indesiderato visualizzato nel messaggio.
 
 Per risolvere il problema e visualizzare correttamente l’errore, applica la seguente configurazione:
 
-1. Apri IIS tramite il **[!UICONTROL Start > Control Panel > Administrative tools]** menu.
-1. In **Connessioni** seleziona il sito creato per l’installazione di Adobe Campaign, quindi fai doppio clic su **Editor di configurazione** nel riquadro principale.
+1. Apri IIS tramite **[!UICONTROL Start > Control Panel > Administrative tools]** menu.
+1. In **Connessioni** , selezionare il sito creato per l&#39;installazione di Adobe Campaign, quindi fare doppio clic su **Editor configurazione** nel riquadro principale.
 1. In **Sezione** elenco a discesa, seleziona **system.webServer** > **httpErrors**.
-1. Seleziona la **PassThrough** nella **currentResponse** linea.
+1. Seleziona la **PassThrough** valore in corrispondenza di **existingResponse** linea.
 
 ![](assets/ins_iis_httperrors.png)

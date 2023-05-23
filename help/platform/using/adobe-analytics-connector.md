@@ -7,10 +7,10 @@ feature: Overview
 role: User, Admin
 level: Beginner
 exl-id: 0dc6ce98-dc3e-4242-953e-e7cec55289ff
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '1509'
-ht-degree: 96%
+source-wordcount: '1503'
+ht-degree: 94%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 96%
 
 ## Informazioni sull’integrazione del connettore Adobe Analytics {#about-analytics-connector-integration}
 
-Il connettore Adobe Analytics consente ad Adobe Campaign e Adobe Analytics di interagire attraverso il pacchetto **[!UICONTROL Web Analytics connectors]**. Invia dati ad Adobe Campaign sotto forma di segmenti relativi al comportamento degli utenti in seguito a una campagna. Al contrario, invia ad Adobe Analytics gli indicatori e gli attributi delle campagne inviate da Adobe Campaign.
+Il connettore Adobe Analytics consente ad Adobe Campaign e Adobe Analytics di interagire attraverso il pacchetto **[!UICONTROL Web Analytics connectors]**. Invia dati ad Adobe Campaign sotto forma di segmenti relativi al comportamento degli utenti dopo una campagna. Al contrario, invia ad Adobe Analytics gli indicatori e gli attributi delle campagne inviate da Adobe Campaign.
 
 >[!CAUTION]
 >
@@ -36,7 +36,7 @@ I campi di azione per ogni strumento sono i seguenti:
 * Ruolo di analisi web:
 
    1. contrassegna le campagne avviate con Adobe Campaign,
-   1. salva il comportamento del destinatario, sotto forma di segmenti, sul sito visualizzato dopo aver fatto clic sulla campagna. I segmenti riguardano prodotti abbandonati (visualizzati ma non aggiunti al carrello o acquistati), acquisti o abbandoni del carrello.
+   1. salva sotto forma di segmenti il comportamento del destinatario sul sito visualizzato dopo aver fatto clic sulla campagna. I segmenti riguardano prodotti abbandonati (visualizzati ma non aggiunti al carrello o acquistati), acquisti o abbandoni del carrello.
 
 * Ruolo di Adobe Campaign:
 
@@ -70,7 +70,7 @@ To set up the Adobe Analytics/Adobe Campaign Classic integration, you must conne
 
 1. From the **[!UICONTROL Report suite manager]** page, click **[!UICONTROL Create new]** then **[!UICONTROL Report suite]**.
 
-   For the detailed procedure on **[!UICONTROL Report suite]** creation, refer to this [section](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en#prerequisites).
+   For the detailed procedure on **[!UICONTROL Report suite]** creation, refer to this [section](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html#prerequisites).
 
    ![](assets/analytics_connnector_3.png)
 
@@ -101,7 +101,7 @@ Devi configurare **[!UICONTROL Conversion variables]** e **[!UICONTROL Success e
 
 1. Fai clic su **[!UICONTROL Add new]** per creare gli identificatori necessari per misurare l’impatto della campagna , ovvero il nome della campagna interna (cid) e l’ID della tabella iNmsBroadlog (bid).
 
-   Per informazioni su come modificare le **[!UICONTROL Conversion variables]**, consulta questa [sezione](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html?lang=it#admin-tools).
+   Per informazioni su come modificare le **[!UICONTROL Conversion variables]**, consulta questa [sezione](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html#admin-tools).
 
    ![](assets/analytics_connnector_6.png)
 
@@ -124,7 +124,7 @@ Devi configurare **[!UICONTROL Conversion variables]** e **[!UICONTROL Success e
    * **[!UICONTROL Unique Opens]**
    * **[!UICONTROL Unsubscribed]**
 
-   Per informazioni su come configurare **[!UICONTROL Success events]**, consulta questa [sezione](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html?lang=it#admin-tools).
+   Per informazioni su come configurare **[!UICONTROL Success events]**, consulta questa [sezione](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html#admin-tools).
 
    >[!NOTE]
    >
@@ -150,7 +150,7 @@ Ora devi configurare l’account esterno **[!UICONTROL Web Analytics]** in Adobe
 
 Nota che se uno dei **[!UICONTROL Report suite]**, **[!UICONTROL Conversion variables]** o **[!UICONTROL Success events]** non è visibile durante la configurazione dell’account esterno, significa che manca un’autorizzazione per questo componente appena creato nel **[!UICONTROL Product profile]** associato all’utente.
 
-Per ulteriori informazioni, consulta la pagina [Profili di prodotto per Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=it#product-profile-admins).
+Per ulteriori informazioni, consulta la pagina [Profili di prodotto per Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html#product-profile-admins).
 
 1. Vai alla cartella **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** della struttura Adobe Campaign e fai clic su **[!UICONTROL New]**.
 
@@ -208,7 +208,7 @@ Per ulteriori informazioni, consulta la pagina [Profili di prodotto per Adobe An
 1. La scheda **[!UICONTROL Advanced]** ti consente di configurare o modificare le impostazioni tecniche.
 
    * **[!UICONTROL Lifespan]**: consente di specificare il ritardo (in giorni) dopo il quale gli eventi web vengono recuperati in Adobe Campaign dai flussi di lavoro tecnici. Predefinito: 180 giorni.
-   * **[!UICONTROL Persistence]**: consente di definire il periodo durante il quale tutti gli eventi web (ad esempio, un acquisto) possono essere attribuiti a una campagna di remarketing, Predefinito: 7 giorni.
+   * **[!UICONTROL Persistence]**: consente di definire il periodo durante il quale tutti gli eventi web (ad esempio, un acquisto) possono essere attribuiti a una campagna di remarketing, predefinito: 7 giorni.
 
 >[!NOTE]
 >

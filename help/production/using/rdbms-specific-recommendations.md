@@ -3,12 +3,12 @@ product: campaign
 title: Raccomandazioni specifiche per RDBMS
 description: Raccomandazioni specifiche per RDBMS
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '1176'
 ht-degree: 1%
@@ -19,13 +19,13 @@ ht-degree: 1%
 
 
 
-Per facilitare l’impostazione dei piani di manutenzione, in questa sezione sono elencate alcune raccomandazioni e best practice adattate ai vari motori RDBMS supportati da Adobe Campaign. Tuttavia, si tratta solo di raccomandazioni. Spetta a voi adattarli alle vostre esigenze, in linea con la vostra procedura interna e i vostri vincoli. L&#39;amministratore del database ha la responsabilità di creare ed eseguire questi piani.
+Per aiutarti a impostare i piani di manutenzione, questa sezione elenca alcuni consigli e best practice adattati ai vari motori RDBMS supportati da Adobe Campaign. Tuttavia, si tratta solo di raccomandazioni. Sta a te adattarli alle tue esigenze, in conformità con la tua procedura interna e i tuoi vincoli. L&#39;amministratore del database ha la responsabilità di generare ed eseguire questi piani.
 
 ## PostgreSQL {#postgresql}
 
 ### Rilevamento di tabelle di grandi dimensioni {#detecting-large-tables}
 
-1. È possibile aggiungere la visualizzazione seguente al database:
+1. È possibile aggiungere la seguente vista al database:
 
    ```
    create or replace view uvSpace
@@ -40,13 +40,13 @@ Per facilitare l’impostazione dei piani di manutenzione, in questa sezione son
     ORDER BY 3 DESC, 1, 2 DESC;
    ```
 
-1. Puoi eseguire questa query per individuare tabelle e indici di grandi dimensioni:
+1. È possibile eseguire questa query per individuare tabelle e indici di grandi dimensioni:
 
    ```
    SELECT * FROM uvSpace;
    ```
 
-   In alternativa, è possibile eseguire questa query, ad esempio per visualizzare tutte le dimensioni dell&#39;indice collettivamente:
+   In alternativa, è possibile eseguire questa query, ad esempio, per visualizzare tutte le dimensioni dell’indice nel loro insieme:
 
    ```
    SELECT
@@ -84,7 +84,7 @@ Per facilitare l’impostazione dei piani di manutenzione, in questa sezione son
 
 In PostgreSQL è possibile utilizzare le seguenti parole chiave tipiche:
 
-* VUOTO (COMPLETO, ANALISI, VERBOSE)
+* VUOTO (COMPLETO, ANALIZZATO, DETTAGLIATO)
 
 Per eseguire l&#39;operazione VACUUM, analizzarla e temporizzarla, è possibile utilizzare la sintassi seguente:
 
@@ -93,9 +93,9 @@ Per eseguire l&#39;operazione VACUUM, analizzarla e temporizzarla, è possibile 
 VACUUM (FULL, ANALYZE, VERBOSE) <table>;
 ```
 
-È consigliabile non omettere l’istruzione ANALYZE. In caso contrario, la tabella svuotata viene lasciata senza statistiche. Il motivo è che viene creata una nuova tabella, quindi quella precedente viene eliminata. Di conseguenza, l’ID oggetto (OID) della tabella cambia, ma non vengono calcolate statistiche. Di conseguenza, si verificheranno immediatamente problemi di prestazioni.
+Si consiglia vivamente di non omettere l’istruzione ANALYZE. In caso contrario, la tabella vuota viene lasciata senza statistiche. Il motivo è che viene creata una nuova tabella, quindi viene eliminata la precedente. Di conseguenza, l’ID oggetto (OID) della tabella cambia, ma non vengono calcolate statistiche. Di conseguenza, si verificheranno immediatamente problemi di prestazioni.
 
-Di seguito è riportato un esempio tipico di un piano di manutenzione SQL da eseguire regolarmente:
+Di seguito è riportato un esempio tipico di piano di manutenzione SQL da eseguire regolarmente:
 
 ```
 \timing on
@@ -137,26 +137,26 @@ VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
 
 >[!NOTE]
 >
->* Adobe consiglia di iniziare con tabelle più piccole: in questo modo, se il processo non riesce su tabelle di grandi dimensioni (dove il rischio di guasto è più elevato), almeno una parte della manutenzione è stata completata.
->* Adobe consiglia di aggiungere le tabelle specifiche del modello dati, soggette a aggiornamenti significativi. Questo può essere il caso **NmsRecipient** se si dispone di flussi di replica dei dati giornalieri di grandi dimensioni.
+>* L’Adobe consiglia di iniziare con tabelle più piccole: in questo modo, se il processo non riesce su tabelle di grandi dimensioni (in cui il rischio di errore è maggiore), almeno parte della manutenzione è stata completata.
+>* L’Adobe consiglia di aggiungere le tabelle specifiche del modello dati, che possono essere soggette ad aggiornamenti significativi. Questo può essere il caso per **NmsRecipient** in caso di flussi di replica dei dati giornalieri di grandi dimensioni.
 >* L&#39;istruzione VACUUM blocca la tabella, che mette in pausa alcuni processi durante l&#39;esecuzione della manutenzione.
->* Per tabelle molto grandi (generalmente superiori a 5 Gb), l&#39;istruzione VACUUM FULL può diventare piuttosto inefficiente e richiedere molto tempo. Adobe sconsiglia di utilizzarlo per il **YyyNmsBroadLogXxx** tabella.
->* Questa operazione di manutenzione può essere implementata da un flusso di lavoro Adobe Campaign, utilizzando un **[!UICONTROL SQL]** attività. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../workflow/using/architecture.md). Assicurati di pianificare la manutenzione per un tempo di attività ridotto che non entri in conflitto con la finestra di backup.
+>* Per tabelle molto grandi (in genere superiori a 5 Gb), l&#39;istruzione VACUUM FULL può diventare piuttosto inefficiente e richiedere molto tempo. L’Adobe sconsiglia di utilizzarlo per il **YyyyNmsBroadLogXxx** tabella.
+>* Questa operazione di manutenzione può essere implementata da un flusso di lavoro Adobe Campaign, utilizzando un **[!UICONTROL SQL]** attività. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../workflow/using/architecture.md). Assicurati di pianificare la manutenzione per un tempo di attività basso che non si scontra con la finestra di backup.
 >
 
 
 ### Ricostruzione di un database {#rebuilding-a-database}
 
-PostgreSQL non fornisce un modo semplice per eseguire una ricostruzione della tabella online, poiché l&#39;istruzione VACUUM FULL blocca la tabella, impedendo così la produzione regolare. Ciò significa che la manutenzione deve essere eseguita quando la tabella non viene utilizzata. Puoi effettuare le seguenti operazioni:
+PostgreSQL non fornisce un modo semplice per eseguire una ricostruzione della tabella online, poiché l&#39;istruzione VACUUM FULL blocca la tabella, impedendo in tal modo la produzione regolare. Ciò significa che la manutenzione deve essere eseguita quando la tabella non viene utilizzata. Puoi effettuare le seguenti operazioni:
 
 * eseguire la manutenzione quando la piattaforma Adobe Campaign viene arrestata,
-* interrompi i vari sottoservizi Adobe Campaign che è probabile scrivano nella tabella in corso di ricostruzione (**nlserver interrompi nome istanza wfserver** per interrompere il processo del flusso di lavoro).
+* arresta i vari servizi secondari di Adobe Campaign che probabilmente scriveranno nella tabella in fase di ricostruzione (**nlserver stop wfserver nome_istanza** per interrompere il processo del flusso di lavoro).
 
-Di seguito è riportato un esempio di deframmentazione della tabella utilizzando funzioni specifiche per generare la DDL necessaria. Il seguente SQL consente di creare due nuove funzioni: **GenRebuildTablePart1** e **GenRebuildTablePart2**, che può essere utilizzato per generare la DDL necessaria per ricreare una tabella.
+Di seguito è riportato un esempio di deframmentazione della tabella che utilizza funzioni specifiche per generare la DDL necessaria. L&#39;istruzione SQL seguente consente di creare due nuove funzioni: **GenRebuildTablePart1** e **GenRebuildTablePart2**, che può essere utilizzato per generare la DDL necessaria per ricreare una tabella.
 
 * La prima funzione consente di creare una tabella di lavoro (** _tmp** qui) che è una copia della tabella originale.
 * La seconda funzione elimina quindi la tabella originale e rinomina la tabella di lavoro e i relativi indici.
-* L&#39;utilizzo di due funzioni invece di una indica che se la prima ha esito negativo, non si corre il rischio di eliminare la tabella originale.
+* Se si utilizzano due funzioni invece di una, se la prima non riesce, non si corre il rischio di eliminare la tabella originale.
 
 ```
  -- --------------------------------------------------------------------------
@@ -372,7 +372,7 @@ Di seguito è riportato un esempio di deframmentazione della tabella utilizzando
  $$ LANGUAGE plpgsql;
 ```
 
-L’esempio seguente può essere utilizzato in un flusso di lavoro per ricreare le tabelle richieste anziché utilizzare il **vuoto/ricostruzione** comando:
+L’esempio seguente può essere utilizzato in un flusso di lavoro per ricreare le tabelle richieste anziché utilizzare **vuoto/ricostruzione** comando:
 
 ```
 function sqlGetMemo(strSql)
@@ -403,7 +403,7 @@ function sqlGetMemo(strSql)
 
 ##  Oracle {#oracle}
 
-Contatta l’amministratore del database per informazioni sulle procedure più adatte alla tua versione dell’Oracle.
+Contattare l&#39;amministratore del database per informazioni sulle procedure più adatte alla versione di Oracle in uso.
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 
@@ -411,28 +411,28 @@ Contatta l’amministratore del database per informazioni sulle procedure più a
 >
 >Per Microsoft SQL Server è possibile utilizzare il piano di manutenzione descritto in [questa pagina](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html).
 
-L&#39;esempio seguente riguarda Microsoft SQL Server 2005. Se utilizzi un’altra versione, contatta l’amministratore del database per informazioni sulle procedure di manutenzione.
+L&#39;esempio seguente riguarda Microsoft SQL Server 2005. Se si utilizza un&#39;altra versione, contattare l&#39;amministratore del database per informazioni sulle procedure di manutenzione.
 
-1. Per prima cosa, connettersi a Microsoft SQL Server Management Studio con un accesso con diritti di amministratore.
+1. Eseguire innanzitutto la connessione a Microsoft SQL Server Management Studio, con un account di accesso con diritti di amministratore.
 1. Vai a **[!UICONTROL Management > Maintenance Plans]** cartella, fai clic con il pulsante destro del mouse e scegli **[!UICONTROL Maintenance Plan Wizard]**.
-1. Fai clic su **[!UICONTROL Next]** quando viene visualizzata la prima pagina.
-1. Selezionare il tipo di piano di manutenzione che si desidera creare (programmi separati per ogni attività o una singola pianificazione per l&#39;intero piano), quindi fare clic sul **[!UICONTROL Change...]** pulsante .
-1. In **[!UICONTROL Job schedule properties]** seleziona le impostazioni di esecuzione desiderate e fai clic su **[!UICONTROL OK]**, quindi fai clic su **[!UICONTROL Next]**.
-1. Selezionare le attività di manutenzione da eseguire, quindi fare clic su **[!UICONTROL Next]**.
+1. Clic **[!UICONTROL Next]** quando viene visualizzata la prima pagina.
+1. Selezionare il tipo di piano di manutenzione che si desidera creare (programmi separati per ciascun task o singolo programma per l&#39;intero piano), quindi fare clic su **[!UICONTROL Change...]** pulsante.
+1. In **[!UICONTROL Job schedule properties]** selezionare le impostazioni di esecuzione desiderate e fare clic su **[!UICONTROL OK]**, quindi fai clic su **[!UICONTROL Next]**.
+1. Seleziona le attività di manutenzione da eseguire, quindi fai clic su **[!UICONTROL Next]**.
 
    >[!NOTE]
    >
-   >È consigliabile eseguire almeno le attività di manutenzione riportate di seguito. È inoltre possibile selezionare l&#39;attività di aggiornamento delle statistiche, anche se è già eseguita dal flusso di lavoro di pulizia del database.
+   >È consigliabile eseguire almeno le attività di manutenzione elencate di seguito. Puoi anche selezionare l’attività di aggiornamento delle statistiche, anche se è già eseguita dal flusso di lavoro di pulizia del database.
 
-1. Nell’elenco a discesa, selezionare il database in cui si desidera eseguire il **[!UICONTROL Database Check Integrity]** compito.
-1. Seleziona il database e fai clic su **[!UICONTROL OK]**, quindi fai clic su **[!UICONTROL Next]**.
+1. Nell&#39;elenco a discesa selezionare il database in cui si desidera eseguire il comando **[!UICONTROL Database Check Integrity]** attività.
+1. Selezionare il database e fare clic su **[!UICONTROL OK]**, quindi fai clic su **[!UICONTROL Next]**.
 1. Configura la dimensione massima allocata al database, quindi fai clic su **[!UICONTROL Next]**.
 
    >[!NOTE]
    >
-   >Se la dimensione del database supera questa soglia, il piano di manutenzione tenterà di eliminare i dati non utilizzati per liberare spazio.
+   >Se la dimensione del database supera tale soglia, il piano di manutenzione tenterà di eliminare i dati inutilizzati per liberare spazio.
 
-1. Riorganizza o ricostruisci l&#39;indice:
+1. Riorganizza o rigenera l’indice:
 
    * Se il tasso di frammentazione dell’indice è compreso tra il 10% e il 40%, si consiglia una riorganizzazione.
 
@@ -440,30 +440,30 @@ L&#39;esempio seguente riguarda Microsoft SQL Server 2005. Se utilizzi un’altr
 
       >[!NOTE]
       >
-      >A seconda della configurazione, è possibile scegliere le tabelle selezionate in precedenza oppure tutte le tabelle del database.
+      >A seconda della configurazione, è possibile scegliere le tabelle selezionate in precedenza o tutte le tabelle del database.
 
-   * Se il tasso di frammentazione dell’indice è superiore al 40%, si consiglia di effettuare una ricostruzione.
+   * Se il tasso di frammentazione dell’indice è superiore al 40%, si consiglia di ricrearlo.
 
-      Selezionare le opzioni che si desidera applicare all&#39;attività di ricostruzione dell&#39;indice, quindi fare clic su **[!UICONTROL Next]**.
+      Seleziona le opzioni da applicare all’attività di ricompilazione dell’indice, quindi fai clic su **[!UICONTROL Next]**.
 
       >[!NOTE]
       >
-      >Il processo di ricostruzione dell&#39;indice è più restrittivo in termini di utilizzo del processore e blocca le risorse del database. Seleziona la **[!UICONTROL Keep index online while reindexing]** se desideri che l&#39;indice sia disponibile durante la ricostruzione.
+      >Il processo di ricostruzione dell&#39;indice è più restrittivo in termini di utilizzo del processore e blocca le risorse del database. Seleziona la **[!UICONTROL Keep index online while reindexing]** se desideri che l’indice sia disponibile durante la ricompilazione.
 
-1. Seleziona le opzioni da visualizzare nel rapporto di attività, quindi fai clic su **[!UICONTROL Next]**.
-1. Controllare l&#39;elenco delle attività configurate per il piano di manutenzione, quindi fare clic su **[!UICONTROL Finish]**.
+1. Seleziona le opzioni da visualizzare nel rapporto attività, quindi fai clic su **[!UICONTROL Next]**.
+1. Controlla l’elenco delle attività configurate per il piano di manutenzione, quindi fai clic su **[!UICONTROL Finish]**.
 
    Viene visualizzato un riepilogo del piano di manutenzione e degli stati dei vari passaggi.
 
-1. Una volta completato il piano di manutenzione, fai clic su **[!UICONTROL Close]**.
-1. Nell&#39;elenco di cartelle di Microsoft SQL Server fare doppio clic sul pulsante **[!UICONTROL Management > Maintenance Plans]** cartella.
-1. Seleziona il piano di manutenzione Adobe Campaign: i vari passaggi sono descritti in dettaglio in un flusso di lavoro.
+1. Una volta completato il piano di manutenzione, fare clic su **[!UICONTROL Close]**.
+1. In Esplora risorse di Microsoft SQL Server fare doppio clic sul pulsante **[!UICONTROL Management > Maintenance Plans]** cartella.
+1. Seleziona il piano di manutenzione di Adobe Campaign: i vari passaggi sono descritti in dettaglio in un flusso di lavoro.
 
-   È stato creato un oggetto nella **[!UICONTROL SQL Server Agent > Jobs]** cartella. Questo oggetto consente di avviare il piano di manutenzione. Nel nostro esempio, esiste un solo oggetto in quanto tutte le attività di manutenzione fanno parte dello stesso piano.
+   Un oggetto è stato creato in **[!UICONTROL SQL Server Agent > Jobs]** cartella. Questo oggetto consente di avviare il piano di manutenzione. Nel nostro esempio, esiste un solo oggetto, poiché tutte le attività di manutenzione fanno parte dello stesso piano.
 
    >[!IMPORTANT]
    >
-   >Affinché questo oggetto possa essere eseguito, è necessario che l&#39;agente Microsoft SQL Server sia abilitato.
+   >Affinché questo oggetto venga eseguito, è necessario che l&#39;agente di Microsoft SQL Server sia abilitato.
 
 **Configurazione di un database separato per le tabelle di lavoro**
 
@@ -471,10 +471,10 @@ L&#39;esempio seguente riguarda Microsoft SQL Server 2005. Se utilizzi un’altr
 >
 >Questa configurazione è facoltativa.
 
-La **WdbcOptions_TempDbName** consente di configurare un database separato per le tabelle di lavoro in Microsoft SQL Server. Questo ottimizza i backup e la replica.
+Il **WdbcOptions_TempDbName** consente di configurare un database separato per le tabelle di lavoro in Microsoft SQL Server. Ciò consente di ottimizzare backup e repliche.
 
-È possibile utilizzare questa opzione se si desidera creare le tabelle di lavoro (ad esempio le tabelle create durante l’esecuzione di un flusso di lavoro) in un altro database.
+Questa opzione può essere utilizzata se si desidera che le tabelle di lavoro, ad esempio quelle create durante l&#39;esecuzione di un flusso di lavoro, vengano create in un altro database.
 
 Quando si imposta l&#39;opzione su &quot;tempdb.dbo.&quot;, le tabelle di lavoro vengono create nel database temporaneo predefinito di Microsoft SQL Server. L&#39;amministratore del database deve consentire l&#39;accesso in scrittura al database tempdb.
 
-Se l&#39;opzione è impostata, viene utilizzata su tutti i database Microsoft SQL Server configurati in Adobe Campaign (database principale e account esterni). Se due account esterni condividono lo stesso server, possono verificarsi conflitti (in quanto tempdb è univoco). Allo stesso modo, se due istanze Campaign utilizzano lo stesso server MSSQL, potrebbero esserci conflitti se utilizzano lo stesso tempdb.
+Se l&#39;opzione è impostata, viene utilizzata in tutti i database di Microsoft SQL Server configurati in Adobe Campaign (database principale e account esterni). Tieni presente che se due account esterni condividono lo stesso server, possono verificarsi conflitti (in quanto tempdb è univoco). Allo stesso modo, se due istanze di Campaign utilizzano lo stesso server MSSQL, potrebbero verificarsi conflitti se utilizzano lo stesso tempdb.

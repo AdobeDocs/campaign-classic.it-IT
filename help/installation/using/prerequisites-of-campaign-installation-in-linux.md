@@ -3,12 +3,12 @@ product: campaign
 title: Prerequisiti per l’installazione di Campaign in Linux
 description: Prerequisiti per l’installazione di Campaign in Linux
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 1%
@@ -21,46 +21,46 @@ ht-degree: 1%
 
 ## Prerequisiti software {#software-prerequisites}
 
-Questa sezione descrive i passaggi preliminari delle configurazioni necessari prima di installare Adobe Campaign.
+Questa sezione descrive i passaggi di configurazione preliminari necessari prima di installare Adobe Campaign.
 
-La configurazione tecnica e software necessaria per l’installazione di Adobe Campaign è descritta nella sezione [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
+La configurazione tecnica e software necessaria per l’installazione di Adobe Campaign è descritta nella [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
 Come promemoria, è necessario installare e configurare correttamente i seguenti componenti:
 
-* Apache, fai riferimento a [Matrice di compatibilità](../../rn/using/compatibility-matrix.md),
-* Java JDK e OpenJDK, fai riferimento a [Kit di sviluppo Java - JDK](../../installation/using/application-server.md#java-development-kit---jdk),
-* Librerie, fai riferimento a [Librerie](#libraries),
+* Apache, fare riferimento a [Matrice di compatibilità](../../rn/using/compatibility-matrix.md),
+* Java JDK e OpenJDK, consultare [Java Development Kit - JDK](../../installation/using/application-server.md#java-development-kit---jdk),
+* Librerie, consultare [Librerie](#libraries),
 * Livelli di accesso al database, fare riferimento a [Livelli di accesso al database](#database-access-layers),
 * LibreOffice, fare riferimento a [Installazione di LibreOffice per Debian](#installing-libreoffice-for-debian) e [Installazione di LibreOffice per CentOS](#installing-libreoffice-for-centos),
 * Font, fare riferimento a [Font per le statistiche MTA](#fonts-for-mta-statistics) e [Font per istanze giapponesi](#fonts-for-japanese-instances).
 
 >[!NOTE]
 >
->Per installare una build inferiore o uguale a 8709 sulle piattaforme CentOS 7 e Debian 8, il modulo apache access_compat deve essere abilitato.
+>Per installare una build inferiore o uguale a 8709 sulle piattaforme CentOS 7 e Debian 8, è necessario abilitare il modulo apache access_compat.
 
 ### Librerie {#libraries}
 
-Per installare Adobe Campaign in Linux, assicurati di disporre delle librerie richieste.
+Per installare Adobe Campaign in Linux, assicurati di disporre delle librerie necessarie.
 
-* La libreria C deve essere in grado di supportare la modalità TLS (Thread Local Storage). Questa modalità è attiva nella maggior parte dei casi, tranne per alcuni kernel per i quali il supporto Xen è stato disabilitato.
+* La libreria C deve essere in grado di supportare la modalità TLS (Thread Local Storage). Questa modalità è attiva nella maggior parte dei casi, ad eccezione di alcuni kernel per i quali il supporto Xen è stato disattivato.
 
-   Per verificare questo, puoi utilizzare il **uname -a | xen grep** ad esempio.
+   Per verificare questo aspetto, puoi utilizzare **uname -a | grep xen** ad esempio.
 
    Se il comando non restituisce alcun elemento (riga vuota), significa che la configurazione è corretta.
 
-* È necessaria la versione OpenSSL **1.0.2** o superiore.
+* È necessaria la versione OpenSSL **1.0.2.** o superiore.
 
    Per le distribuzioni RHEL 7/8, è richiesta la versione 1.0 di OpenSSL.
 
-* Per utilizzare Adobe Campaign, è necessario disporre dei **libicu** libreria installata.
+* Per utilizzare Adobe Campaign, è necessario disporre del **libicu** libreria installata.
 
    Le seguenti versioni di **libicu** sono supportati (32 bit o 64 bit):
 
-   * RHEL 7/8, CentOS 7: libicu50
+   * 7/8, CentOS 7: libicu50
    * Debian 8: libicu52
    * Debian 9: libicu57
 
-   Per utilizzare Adobe Campaign, è necessario che la libreria libc-ares sia installata. Su RHEL/CentOS, esegui il seguente comando:
+   Per utilizzare Adobe Campaign, è necessario che sia installata la libreria libc-ares. In RHEL/CentOS, esegui il seguente comando:
 
    ```
    yum install c-ares
@@ -76,25 +76,25 @@ Per installare Adobe Campaign in Linux, assicurati di disporre delle librerie ri
 
 Se utilizzato, il modulo SELinux deve essere configurato correttamente.
 
-A questo scopo, accedi come root e immetti il seguente comando:
+Per eseguire questa operazione, accedere come radice e immettere il comando seguente:
 
 ```
 echo 0 >/selinux/enforce
 ```
 
-Oltre a ciò, nella **/etc/sysconfig/httpd** file, è stata aggiunta la riga seguente per fare riferimento allo script di configurazione dell’ambiente Adobe Campaign:
+Inoltre, nella sezione **/etc/sysconfig/httpd** file, è stata aggiunta la seguente riga per fare riferimento allo script di configurazione dell’ambiente Adobe Campaign:
 
 ```
 . ~neolane/nl6/env.sh
 ```
 
-In RHEL e CentOS, quando SELinux è abilitato, sono stati rilevati problemi di compatibilità con i livelli client dei database. Per essere certi che Adobe Campaign sia in grado di funzionare correttamente, si consiglia di disabilitare SELinux.
+In RHEL e CentOS, quando SELinux è abilitato sono stati notati problemi di compatibilità con i livelli client dei database. Per garantire il corretto funzionamento di Adobe Campaign, si consiglia di disabilitare SELinux.
 
 **Applica il seguente processo:**
 
-* Modificare il file **/etc/selinux/config**
+* Modifica il file **/etc/selinux/config**
 
-* Modificare la linea SELINUX come segue:
+* Modificare la riga SELINUX come segue:
 
 ```
 SELINUX=disabled
@@ -110,7 +110,7 @@ In Debian, aggiungi il comando:
 aptitude install xfonts-base xfonts-75dpi ttf-bitstream-vera ttf-dejavu
 ```
 
-In Redhat, utilizzare il comando seguente:
+In Redhat, utilizzate il seguente comando:
 
 * Per CentOS/RHEL 7:
 
@@ -118,7 +118,7 @@ In Redhat, utilizzare il comando seguente:
    yum install xorg-x11-fonts-base xorg-x11-fonts-75dpi bitstream-vera-fonts dejavu-lgc-fonts
    ```
 
-* Per RHEL 8:
+* per RHEL 8:
 
    ```
    dnf install xorg-x11-fonts-misc xorg-x11-fonts-75dpi dejavu-lgc-sans-fonts  dejavu-sans-fonts dejavu-sans-mono-fonts dejavu-serif-fonts
@@ -126,7 +126,7 @@ In Redhat, utilizzare il comando seguente:
 
 ### Font per istanze giapponesi {#fonts-for-japanese-instances}
 
-I font di caratteri specifici sono necessari per le istanze giapponesi per esportare i rapporti in formato PDF.
+I font con caratteri specifici sono necessari per le istanze giapponesi al fine di esportare i rapporti in formato PDF.
 
 In Debian, aggiungi il comando:
 
@@ -136,13 +136,13 @@ aptitude install fonts-ipafont
 
 In Red Hat, aggiungi il comando:
 
-* Per RHEL 7:
+* per RHEL 7:
 
    ```
    yum install ipa-gothic-fonts ipa-mincho-fonts
    ```
 
-* Per RHEL 8:
+* per RHEL 8:
 
    ```
    dnf install vlgothic-fonts
@@ -150,7 +150,7 @@ In Red Hat, aggiungi il comando:
 
 ### Installazione di LibreOffice per Debian {#installing-libreoffice-for-debian}
 
-Per Debian sono necessarie le seguenti configurazioni:
+Per Debian, sono necessarie le seguenti configurazioni:
 
 1. Installa i seguenti pacchetti standard:
 
@@ -158,7 +158,7 @@ Per Debian sono necessarie le seguenti configurazioni:
    apt-get install libreoffice-writer libreoffice-calc libreoffice-java-common
    ```
 
-1. Installa i seguenti font (facoltativi ma altamente raccomandati per le istanze giapponesi):
+1. Installa i seguenti font (facoltativo ma consigliato per le istanze giapponesi):
 
    ```
    apt-get install fonts-ipafont
@@ -174,45 +174,45 @@ yum install libreoffice-headless libreoffice-writer libreoffice-calc
 
 ## Livelli di accesso al database {#database-access-layers}
 
-I livelli di accesso per il motore di database utilizzato devono essere installati sul server ed essere accessibili tramite l’account Adobe Campaign. Le versioni e le modalità di installazione possono variare a seconda del motore di database utilizzato.
+I livelli di accesso per il motore di database in uso devono essere installati nel server ed essere accessibili tramite l&#39;account Adobe Campaign. Le versioni e le modalità di installazione possono variare a seconda del motore di database utilizzato.
 
 La versione pilota supportata è descritta nel [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
-Controlla anche il generale [Database](../../installation/using/database.md) sezione .
+Controlla anche il [Database](../../installation/using/database.md) sezione.
 
 ### PostgreSQL {#postgresql}
 
 Adobe Campaign supporta tutte le versioni delle librerie client PostgreSQL dalla versione 7.2: (**libpq.so.5**, **libpq.so.4**, **libpq.so.3.2** e **libpq.so.3.1**).
 
-L&#39;utilizzo di PostgreSQL con Adobe Campaign richiede anche l&#39;installazione del corrispondente **pgcrypto** librerie.
+L’utilizzo di PostgreSQL con Adobe Campaign richiede anche l’installazione della **pgcrypto** librerie.
 
 ###  Oracle {#oracle}
 
 Recupera la versione della libreria per Debian a 64 bit, ovvero: **libclntsh.so**, **libclntsh.so.11.1** e **libclntsh.so.10.1**.
 
-È possibile ottenere un pacchetto Linux RPM dalla rete di tecnologia Oracle.
+È possibile ottenere un pacchetto Linux RPM da Oracle Technology Network.
 
 >[!NOTE]
 >
->Se hai già installato il client Oracle ma l’ambiente globale (ad esempio: /etc/profile) non è configurato correttamente, puoi aggiungere informazioni mancanti al **nl6/customer.sh** script Per ulteriori informazioni, consulta [Variabili di ambiente](../../installation/using/installing-packages-with-linux.md#environment-variables).
+>Se il client Oracle è già stato installato ma l’ambiente globale (ad esempio: /etc/profile) non è configurato correttamente, puoi aggiungere le informazioni mancanti al **nl6/customer.sh** script Per ulteriori informazioni, consulta [Variabili di ambiente](../../installation/using/installing-packages-with-linux.md#environment-variables).
 
 **Risoluzione dei problemi e best practice**
 
-I problemi possono comparire dopo un client di Oracle o un aggiornamento del server, la modifica della versione o alla prima installazione dell&#39;istanza.
+I problemi possono comparire dopo un aggiornamento di un client o di un server Oracle, dopo una modifica della versione o alla prima installazione dell’istanza.
 
-Se nella console client si notano ritardi imprevisti (una o più ore) nei registri, nell’ultima elaborazione del flusso di lavoro, nell’elaborazione successiva e così via, potrebbe esserci un problema tra la libreria del client Oracle e il server Oracle. Per evitare tali problemi
+Se noti nella console client che nei registri sono presenti ritardi imprevisti (una o più ore), nell’ultima elaborazione del flusso di lavoro, nell’elaborazione successiva e così via, potrebbe esserci un problema tra la libreria del client Oracle e il server Oracle. Per evitare tali problemi
 
 1. Assicurati di utilizzare il **client completo**.
 
-   Sono stati identificati vari problemi durante l’utilizzo della versione Oracle Instant Client . Inoltre, è impossibile modificare il file Timezone sul client istantaneo.
+   Sono stati identificati diversi problemi durante l’utilizzo della versione Oracle Instant Client. Inoltre, è impossibile modificare il file del fuso orario sul client istantaneo.
 
-1. Assicurati che il **versione client** e **versione del server di database** sono **stesso**.
+1. Assicurati che il **versione client** e **versione del server di database** sono **uguale**.
 
-   È noto che la combinazione di versioni nonostante la matrice di compatibilità di Oracle e la raccomandazione per l’allineamento delle versioni client e server causa problemi.
+   È noto che la combinazione delle versioni nonostante la matrice di compatibilità di Oracle e i consigli per l’allineamento delle versioni client e server causano problemi.
 
-   Controlla anche il valore ORACLE_HOME per assicurarti che punti alla versione client prevista (nel caso in cui sul computer siano installate diverse versioni).
+   Controlla anche il valore ORACLE_HOME per assicurarti che punti alla versione client prevista (nel caso in cui sul computer siano installate più versioni).
 
-1. Assicurati che il client e il server utilizzino lo stesso **file timezone**.
+1. Assicurarsi che il client e il server utilizzino lo stesso **file del fuso orario**.
 
 ### DB2 {#db2}
 
@@ -220,11 +220,11 @@ La versione della libreria supportata è **libdb2.so**.
 
 ## Passaggi di implementazione {#implementation-steps}
 
-Le installazioni Adobe Campaign per Linux devono essere eseguite nella seguente sequenza: installazione del server seguita dalla configurazione dell&#39;istanza.
+Le installazioni di Adobe Campaign per Linux devono essere eseguite nella seguente sequenza: installazione del server seguita dalla configurazione dell’istanza.
 
-Il processo di installazione è descritto in questo capitolo. Le fasi di installazione sono le seguenti:
+Il processo di installazione è descritto in questo capitolo. I passaggi di installazione sono i seguenti:
 
-* Passaggio 1: Installazione dell&#39;application server, fare riferimento a [Installazione di pacchetti con Linux](../../installation/using/installing-packages-with-linux.md).
-* Passaggio 2: Integrazione con un server web (facoltativo, a seconda dei componenti distribuiti).
+* Passaggio 1: installazione del server applicazioni, fare riferimento a [Installazione di pacchetti con Linux](../../installation/using/installing-packages-with-linux.md).
+* Passaggio 2: integrazione con un server web (facoltativo, a seconda dei componenti distribuiti).
 
-Una volta completati i passaggi di installazione, devi configurare le istanze, il database e il server. Per ulteriori informazioni, consulta [Informazioni sulla configurazione iniziale](../../installation/using/about-initial-configuration.md).
+Una volta completati i passaggi di installazione, è necessario configurare le istanze, il database e il server. Per ulteriori informazioni, consulta [Informazioni sulla configurazione iniziale](../../installation/using/about-initial-configuration.md).

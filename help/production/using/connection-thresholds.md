@@ -3,12 +3,12 @@ product: campaign
 title: Soglie di connessione
 description: Soglie di connessione
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 4ee05559-e719-4e6e-b42c-1e82df428871
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 3%
@@ -19,19 +19,19 @@ ht-degree: 3%
 
 
 
-Per i server con carichi elevati, la soglia di connessione potrebbe essere superata. In ogni caso, è utile scoprire il perché.
+Per i server con carichi elevati, la soglia di connessione potrebbe essere superata. In ogni caso, è utile scoprirne il motivo.
 
-Esistono tre soglie diverse:
+Sono disponibili tre diverse soglie:
 
-* La **Soglia connessione web**, configurato nel server web. Per modificarlo, contattare l&#39;amministratore di sistema.
+* Il **Soglia di connessione web**, configurato nel server web. Per modificarlo, contatta l’amministratore di sistema.
 
-* La **soglia di connessione al database**. Per modificarlo, contattare l&#39;amministratore del database.
+* Il **soglia di connessione al database**. Per modificarlo, contattare l&#39;amministratore del database.
 
-* La **Soglia di connessione Adobe Campaign**, disponibile in due posizioni:
+* Il **Soglia di connessione Adobe Campaign**, disponibile in due posizioni:
 
-   * **Tomcat** lato: tutte le query in arrivo sul client Adobe Campaign Tomcat.
+   * **Tomcat** side: tutte le query in arrivo sul client Adobe Campaign Tomcat.
 
-      Questa soglia è configurata nella **nl6/tomcat-8/conf/server.xml** file. La **maxThreads** attributo ti consente di aumentare la soglia del numero di query elaborate alla volta. Può essere cambiato a 250, per esempio.
+      Questa soglia è configurata in **nl6/tomcat-8/conf/server.xml** file. Il **maxThreads** attribute consente di aumentare la soglia del numero di query elaborate alla volta. Ad esempio, può essere modificato in 250.
 
       ```
       <Connector protocol="HTTP/1.1" port="8080"
@@ -45,9 +45,9 @@ Esistono tre soglie diverse:
                   unpackWARs="true" autoDeploy="true">
       ```
 
-   * **Database**: insieme di tutte le connessioni aperte contemporaneamente nel database da un processo.
+   * **Database**: set di tutte le connessioni aperte contemporaneamente nel database da un processo.
 
-      Questa soglia è configurata nel file **nl6/conf/serverConf.xml**. La **maxCnx** attributo situato in **pool di dati** consente di aumentare la soglia delle query elaborate simultaneamente.
+      Questa soglia è configurata nel file **nl6/conf/serverConf.xml**. Il **maxCnx** attributo situato in **pool di origini dati** consente di aumentare la soglia di query elaborate simultaneamente.
 
       ```
           <!-- Data source

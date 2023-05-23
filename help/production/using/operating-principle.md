@@ -3,12 +3,12 @@ product: campaign
 title: Principio di funzionamento
 description: Principio di funzionamento
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1c032ef9-af11-4947-90c6-76cb9434ae85
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 2%
@@ -19,71 +19,71 @@ ht-degree: 2%
 
 
 
-Tecnicamente, la piattaforma Adobe Campaign è basata su diversi moduli.
+Tecnicamente, la piattaforma Adobe Campaign si basa su diversi moduli.
 
-Ci sono molti moduli Adobe Campaign. Alcuni funzionano continuamente, mentre altri vengono avviati occasionalmente per eseguire attività amministrative (ad esempio per configurare la connessione al database) o per eseguire un&#39;attività ricorrente (ad esempio per consolidare le informazioni di tracciamento).
+Esistono molti moduli Adobe Campaign. Alcuni operano continuamente, mentre altri vengono avviati occasionalmente per eseguire attività amministrative (ad esempio per configurare la connessione al database) o per eseguire un&#39;attività ricorrente (ad esempio per consolidare le informazioni di tracciamento).
 
 Esistono tre tipi di moduli Adobe Campaign:
 
-* Moduli a più istanze: viene eseguito un singolo processo per tutte le istanze. Questo vale per i seguenti moduli: **web**, **syslogd**, **trackinglogd** e **cane da guardia** (dalle attività **config-default.xml** file).
-* Moduli di istanza mono: viene eseguito un processo per istanza. Questo vale per i seguenti moduli: **mta**, **wfserver**, **inMail**, **sms** e **stat** (dalle attività **config-`<instance>`.xml** file).
-* Moduli di utilità: si tratta di moduli che vengono eseguiti occasionalmente per eseguire operazioni occasionali o ricorrenti (**pulizia**, **config**, il download dei registri di tracciamento, ecc.).
+* Moduli a più istanze: viene eseguito un unico processo per tutte le istanze. Questo vale per i seguenti moduli: **web**, **syslogd**, **trackinglogd** e **watchdog** (attività da **config-default.xml** file).
+* Moduli a istanza singola: viene eseguito un processo per istanza. Questo vale per i seguenti moduli: **mta**, **wfserver**, **inMail**, **sms** e **stat** (attività da **config-`<instance>`.xml** file).
+* Moduli di utilità: si tratta di moduli eseguiti occasionalmente per eseguire operazioni occasionali o ricorrenti (**cleanup**, **config**, download dei registri di tracciamento, ecc.).
 
-L’amministrazione del modulo viene eseguita utilizzando lo strumento della riga di comando **nlserver** installati in **bidone** della cartella di installazione.
+L&#39;amministrazione del modulo viene eseguita utilizzando lo strumento della riga di comando **nlserver** installato in **raccoglitore** della cartella di installazione.
 
-La sintassi generale del **nlserver** lo strumento è il seguente:
+La sintassi generale del **nlserver** è il seguente:
 
 **nlserver `<command>``<command arguments>`**
 
-Per l’elenco dei moduli disponibili, utilizza il **nlserver** comando.
+Per l’elenco dei moduli disponibili, utilizza **nlserver** comando.
 
-I moduli disponibili sono descritti nella seguente tabella:
+I moduli disponibili sono descritti nella tabella seguente:
 
 | Comando | Descrizione |
 |---|---|
 | aliasCleansing | Standardizzazione dei valori di enumerazione |
-| fatturazione | Invio del rapporto sull’attività del sistema a billing@neolane.net |
-| pulizia | Pulizia del database: elimina i dati obsoleti dal database ed esegue un aggiornamento delle statistiche utilizzate dall&#39;ottimizzatore del motore di database. |
-| config | Modifica della configurazione del server |
+| fatturazione | Invio del report attività di sistema a billing@neolane.net |
+| cleanup | Pulizia del database: elimina i dati obsoleti dal database ed esegue un aggiornamento delle statistiche utilizzate dall&#39;optimizer del motore di database. |
+| config | Modifica della configurazione server |
 | esportare | Esportazione nella riga di comando: consente di inviare alla riga di comando un modello di esportazione creato nella console client di Adobe Campaign |
 | fileconvert | Conversione di un file di dimensioni impostate |
-| importare | Importazione nella riga di comando: consente di inviare alla riga di comando un modello di importazione creato nella console client di Adobe Campaign. |
-| inMail | Analizzatore di posta in entrata |
-| installazione | Disponibilità del file di installazione del cliente |
-| javascript | Esecuzione di script JavaScript con accesso alle API SOAP. |
-| lavoro | Elaborazione della riga di comando |
-| merge | Unione dei moduli |
-| midSourcing | Recupero delle informazioni di consegna in modalità mid-sourcing |
-| monitor | Visualizzazione XML dello stato dei processi server e delle attività pianificate, per istanza. |
-| mta | Messaggio di trasferimento dell&#39;agente principale |
+| importa | Importazione nella riga di comando: consente di inviare alla riga di comando un modello di importazione creato nella console client di Adobe Campaign. |
+| inMail | Mail Analyzer in entrata |
+| installsetup | Disponibilità del file di installazione del cliente |
+| javascript | Esecuzione di script JavaScript, con accesso alle API SOAP. |
+| processo | Elaborazione riga di comando |
+| unione | Unione modulo |
+| midSourcing | Ripristino delle informazioni di consegna in modalità mid-sourcing |
+| monitor | XML Visualizzazione dello stato dei processi server e delle attività pianificate, per istanza. |
+| mta | Messaggio di trasferimento agente principale |
 | pacchetto | Importazione o esportazione di file di pacchetto di entità |
-| scampo | Visualizzazione degli stati del processo del server |
-| prepara | Preparazione di un’azione di consegna |
-| riavvio | Riavvio parziale del server |
-| becco | Esecuzione di un’istanza di flusso di lavoro |
-| arresto | Spegnimento del sistema completo |
+| pdump | Visualizzazione degli stati dei processi del server |
+| prepareda | Preparazione di un’azione di consegna |
+| riavvia | Riavvio parziale del server |
+| runwf | Esecuzione di un’istanza di flusso di lavoro |
+| arresto | Arresto completo del sistema |
 | sms | Elaborazione delle notifiche SMS |
 | sql | Esecuzione script SQL |
-| start | Inizio aggiuntivi |
-| stat | Mantiene le statistiche di connessione MTA |
-| stop | Spegnimento parziale del sistema |
-| sottomissione | Invio di un’azione di consegna |
-| syslogd | Server di registrazione e traccia |
+| inizio | Ulteriori avvii |
+| stat | Gestisce le statistiche di connessione MTA |
+| stop | Arresto parziale del sistema |
+| submitda | Invio di un’azione di consegna |
+| syslogd | Server di scrittura log and trace |
 | tracciamento | Consolidamento e recupero dei registri di tracciamento |
-| trackinglogd | Tracking del server di scrittura e pulizia del registro |
-| cane da guardia | Avvio e monitoraggio dell&#39;istanza |
+| trackinglogd | Tracciamento della scrittura del registro e rimozione del server |
+| watchdog | Istanza di avvio e monitoraggio |
 | web | Server applicazioni (HTTP e SOAP) |
 | wfserver | Server flusso di lavoro |
 
 >[!IMPORTANT]
 >
->Esiste un ultimo modulo: il modulo di tracking e relay collegato al server applicativo che, per motivi di prestazioni, è integrato tramite meccanismi nativi in un server web Apache o IIS tramite una libreria dinamica. Nessun comando Adobe Campaign consente di avviare o amministrare questo modulo. È quindi necessario utilizzare i comandi del server Web stesso.
+>Esiste un ultimo modulo: il modulo di tracciamento e inoltro collegato al server applicazioni che, per motivi di prestazioni, viene integrato tramite meccanismi nativi in un server web Apache o IIS tramite una libreria dinamica. Non esiste alcun comando di Adobe Campaign che consenta di avviare o amministrare questo modulo. È quindi necessario utilizzare i comandi del server Web stesso.
 
 L’utilizzo del modulo e la sintassi dei relativi parametri vengono visualizzati utilizzando il seguente comando: **nlserver `[module]` -?**
 
 Esempio:
 
-**configurazione nlserver -?**
+**Configurazione nlserver -?**
 
 ```
 Usage: nlserver [-verbose:<verbose mode>] [-?|h|H] [-version] [-noconsole]

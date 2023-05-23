@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: Raccomandazioni per Campaign Classic Database
+title: Raccomandazioni per il database Campaign Classic
 description: Raccomandazioni per il database
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 8a0426c1-9e8d-4053-bc2b-6a550e2eed2f
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 2%
@@ -19,21 +19,21 @@ ht-degree: 2%
 
 
 
-Il server di database può essere eseguito su qualsiasi sistema operativo specificato, indipendentemente dal sistema operativo utilizzato dal server o dai server applicazioni, purché tra di essi sia presente una connettività di rete.
+Il server di database può essere eseguito su qualsiasi sistema operativo, indipendentemente dal sistema operativo utilizzato dal server applicazioni o dai server applicazioni, purché vi sia connettività di rete tra di essi.
 
-Il sistema operativo del server di database non è importante finché è disponibile la connettività con i diversi componenti di Adobe Campaign.
+Il sistema operativo del server di database non è importante finché non è disponibile la connettività con i diversi componenti di Adobe Campaign.
 
-Controlla anche il [Livelli di accesso al database](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers) sezione .
+Controlla anche la [Livelli di accesso al database](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers) sezione.
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 
-Il client nativo deve essere installato sui server dell&#39;applicazione Adobe Campaign.
+Il client nativo deve essere installato sui server applicazioni Adobe Campaign.
 
-È possibile verificare la presenza del client nativo sul server tramite il pannello di configurazione del driver ODBC, in **Client nativo di SQL Server 11.0**.
+È possibile verificare la presenza del client nativo sul server tramite il pannello di configurazione del driver ODBC, in **Client nativo SQL Server 11.0**.
 
-La seguente DLL di accesso deve essere presente: **sqlncli11.dll**.
+Deve essere presente la seguente DLL di accesso: **sqlncli11.dll**.
 
-Le DLL di accesso si trovano sul sito web Microsoft.
+Le DLL di accesso si trovano sul sito Web Microsoft.
 
 >[!NOTE]
 >
@@ -45,9 +45,9 @@ Le DLL di accesso si trovano sul sito web Microsoft.
 >
 >I nomi di colonna con caratteri multibyte non sono supportati.
 
-La **NLS_NCHAR_CHARACTERSET** e **NLS_CHARACTERSET** i parametri devono essere configurati correttamente affinché il database funzioni in Unicode o ANSI.
+Il **NLS_NCHAR_CHARACTER SET** e **NLS_CARATTERSET** I parametri devono essere configurati correttamente affinché il database funzioni in Unicode o ANSI.
 
-Adobe Campaign utilizza la codifica Oracle predefinita. L’utilizzo di altre codifiche può causare problemi di compatibilità: in questo caso, contattare il supporto tecnico.
+Adobe Campaign utilizza la codifica Oracle predefinita. L’utilizzo di altra codifica può causare problemi di compatibilità: in questo caso, contatta il supporto tecnico.
 
 Per informazioni sulla codifica, utilizza quanto segue **sqlplus** comando:
 
@@ -55,14 +55,14 @@ Per informazioni sulla codifica, utilizza quanto segue **sqlplus** comando:
 SELECT * FROM nls_database_parameters ;
 ```
 
-* Per un’installazione Unicode, le codifiche supportate sono:
+* Per un&#39;installazione Unicode, le codifiche supportate sono:
 
    ```
    NLS_NCHAR_CHARACTERSET         AL16UTF16
    NLS_CHARACTERSET         AL32UTF8
    ```
 
-* Per un&#39;installazione ANSI (non unicode), è supportata solo la seguente codifica:
+* Per un&#39;installazione ANSI (non Unicode), è supportata solo la seguente codifica:
 
 ```
   NLS_CHARACTERSET WE8MSWIN1252
@@ -84,4 +84,4 @@ Puoi anche fare riferimento a [Client Oracle in Linux](../../installation/using/
 
 **Argomento correlato**
 
-* [Opzione non registrata nelle tabelle Adobe Campaign Classic](https://helpx.adobe.com/campaign/kb/unlogged-tables-classic.html)
+* [Opzione non registrata nelle tabelle di Adobe Campaign Classic](https://helpx.adobe.com/campaign/kb/unlogged-tables-classic.html)

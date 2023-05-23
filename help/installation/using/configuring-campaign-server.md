@@ -3,12 +3,12 @@ product: campaign
 title: Configurazione del server Campaign
 description: Configurazione del server Campaign
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '1578'
 ht-degree: 3%
@@ -19,15 +19,15 @@ ht-degree: 3%
 
 
 
-Questo capitolo descrive le configurazioni lato server che possono essere eseguite in base alle esigenze e alle specificità dell’ambiente.
+Questo capitolo descrive le configurazioni lato server che possono essere eseguite in base alle tue esigenze e alle specificità dell’ambiente.
 
 ## Restrizioni
 
-Tali procedure sono limitate a **on-premise**/**ibrido** implementazioni e richiedono le autorizzazioni di amministrazione.
+Tali procedure sono limitate a **on-premise**/**ibrido** e richiedono autorizzazioni di amministrazione.
 
-Per **ospitato** le implementazioni e le impostazioni lato server possono essere configurate solo per Adobe. Tuttavia, alcune impostazioni possono essere configurate in [Pannello di controllo Campaign campagna](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=it), ad esempio gestione inserire nell&#39;elenco Consentiti IP o autorizzazioni URL. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=it).
+Per **in hosting** implementazioni, le impostazioni lato server possono essere configurate solo per Adobe. Tuttavia, alcune impostazioni possono essere configurate in [Pannello di controllo Campaign della campagna](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=it), ad esempio IP Gestione dei elenchi Consentiti o autorizzazioni URL. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=it).
 
-Per ulteriori informazioni, consulta queste sezioni:
+Per ulteriori informazioni, consulta le sezioni seguenti:
 
 * [Documentazione del Pannello di controllo](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it)
 * [Modelli di hosting](../../installation/using/hosting-models.md)
@@ -35,37 +35,37 @@ Per ulteriori informazioni, consulta queste sezioni:
 
 ## File di configurazione
 
-I file di configurazione di Campaign Classic sono memorizzati nel **conf** della cartella di installazione di Adobe Campaign. La configurazione viene suddivisa in due file:
+I file di configurazione di Campaign Classic sono archiviati in **conf** cartella della cartella di installazione di Adobe Campaign. La configurazione è suddivisa in due file:
 
-* **serverConf.xml**: configurazione generale per tutte le istanze. Questo file combina i parametri tecnici del server Adobe Campaign: sono condivisi da tutte le istanze. La descrizione di alcuni di questi parametri è illustrata di seguito. I diversi nodi e parametri ed elencati in questo [sezione](../../installation/using/the-server-configuration-file.md).
-* **config-`<instance>`.xml** (4) **istanza** è il nome dell&#39;istanza): configurazione specifica dell’istanza. Se condividi il server tra più istanze, inserisci i parametri specifici di ciascuna istanza nel relativo file.
+* **serverConf.xml**: configurazione generale per tutte le istanze. Questo file combina i parametri tecnici del server Adobe Campaign, che sono condivisi da tutte le istanze. La descrizione di alcuni di questi parametri è riportata di seguito. I diversi nodi e parametri ed elencati in questo [sezione](../../installation/using/the-server-configuration-file.md).
+* **config-`<instance>`.xml** (dove **istanza** è il nome dell’istanza): configurazione specifica dell’istanza. Se condividi il server tra più istanze, immetti i parametri specifici di ciascuna istanza nel relativo file.
 
 ## Ambito di configurazione
 
-Configura o adatta il server Campaign in base alle tue esigenze e alla tua configurazione. È possibile eseguire le seguenti operazioni:
+Configura o adatta il server Campaign in base alle tue esigenze e configurazione. È possibile eseguire le seguenti operazioni:
 
-* Proteggere [Identificatore interno](#internal-identifier)
-* Abilita [Processi campagna](#enabling-processes)
+* Proteggi il [Identificatore interno](#internal-identifier)
+* Abilita [Processi della campagna](#enabling-processes)
 * Configura [Autorizzazioni URL](url-permissions.md)
-* Definisci [Zone di sicurezza](security-zones.md)
+* Definisci [Aree di protezione](security-zones.md)
 * Configura [Impostazioni Tomcat](configure-tomcat.md)
 * Personalizza [Parametri di consegna](configure-delivery-settings.md)
-* Definisci [Sicurezza e relè delle pagine dinamiche](#dynamic-page-security-and-relays)
-* Limita l&#39;elenco di [Comandi esterni consentiti](#restricting-authorized-external-commands)
+* Definisci [Sicurezza delle pagine dinamiche e inoltri](#dynamic-page-security-and-relays)
+* Limita l’elenco di [Comandi esterni consentiti](#restricting-authorized-external-commands)
 * Configurazione [Tracciamento ridondante](#redundant-tracking)
-* Gestisci [Elevata disponibilità e affinità dei flussi di lavoro](#high-availability-workflows-and-affinities)
-* Configurare la gestione dei file - [Ulteriori informazioni](file-res-management.md)
-   * Limitare il formato dei file di caricamento
+* Gestisci [Elevata disponibilità e affinità per i flussi di lavoro](#high-availability-workflows-and-affinities)
+* Configura gestione file - [Ulteriori informazioni](file-res-management.md)
+   * Limita il formato dei file da caricare
    * Abilitare l’accesso alle risorse pubbliche
-   * Configurare la connessione proxy
+   * Configura connessione proxy
 * [Riavvio automatico del processo](#automatic-process-restart)
 
 
 ## Identificatore interno {#internal-identifier}
 
-La **interno** identifier è un login tecnico da utilizzare a fini di installazione, amministrazione e manutenzione. Questo accesso non è associato a un&#39;istanza.
+Il **interno** identifier (identificatore) è un accesso tecnico da utilizzare per l’installazione, l’amministrazione e la manutenzione. Questo accesso non è associato a un’istanza.
 
-Gli operatori connessi che utilizzano questo accesso disporranno di tutti i diritti su tutte le istanze. Questo accesso non avrà una password nel caso di una nuova installazione. È necessario definire manualmente questa password.
+Gli operatori connessi tramite questo accesso disporranno di tutti i diritti su tutte le istanze. Questo login non avrà una password nel caso di una nuova installazione. È necessario definire manualmente questa password.
 
 Usa il comando seguente:
 
@@ -73,7 +73,7 @@ Usa il comando seguente:
 nlserver config -internalpassword
 ```
 
-Vengono quindi visualizzate le seguenti informazioni. Immetti e conferma la password:
+Vengono quindi visualizzate le seguenti informazioni. Immettere e confermare la password:
 
 ```
 17:33:57 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -85,17 +85,17 @@ Confirmation: XXXX
 17:34:02 >   Password successfully changed for account 'internal' (authentication mode 'nl')
 ```
 
-## Abilitare i processi {#enabling-processes}
+## Abilita processi {#enabling-processes}
 
-I processi Adobe Campaign sul server sono attivati (e disabilitati) tramite il **config-default.xml** e **`config-<instance>.xml`** file.
+I processi di Adobe Campaign sul server sono abilitati (e disabilitati) tramite **config-default.xml** e **`config-<instance>.xml`** file.
 
-Per applicare le modifiche a questi file, se il servizio Adobe Campaign viene avviato, è necessario eseguire il **nlserver config -reload** comando.
+Per applicare le modifiche a questi file, se il servizio Adobe Campaign è avviato, è necessario eseguire **nlserver config -ricarica** comando.
 
-Esistono due tipi di processi: istanza multipla e singola.
+Esistono due tipi di processi: a più istanze e a istanza singola.
 
-* **a più istanze**: viene avviato un singolo processo per tutte le istanze. Ciò vale per **web**, **syslogd** e **trackinglogd** processi.
+* **multi-istanza**: viene avviato un singolo processo per tutte le istanze. Questo è il caso per **web**, **syslogd** e **trackinglogd** processi.
 
-   L’abilitazione può essere configurata dal **config-default.xml** file.
+   L’abilitazione può essere configurata da **config-default.xml** file.
 
    Dichiarazione di un server Adobe Campaign per accedere alle console client e per il reindirizzamento (tracciamento):
 
@@ -106,7 +106,7 @@ Esistono due tipi di processi: istanza multipla e singola.
    <trackinglogd autoStart="true"/>
    ```
 
-   In questo esempio, il file viene modificato utilizzando un **vi** in Linux. Può essere modificato utilizzando **.txt** o **.xml** editor.
+   In questo esempio, il file viene modificato utilizzando un **vi** in Linux. Può essere modificato con qualsiasi **.txt** o **.xml** editor.
 
 * **mono-istanza**: viene avviato un processo per ogni istanza (moduli: **mta**, **wfserver**, **inMail**, **sms** e **stat**).
 
@@ -116,7 +116,7 @@ Esistono due tipi di processi: istanza multipla e singola.
    config-<instance>.xml
    ```
 
-   Dichiarazione di un server per la consegna, esecuzione delle istanze del flusso di lavoro e recupero della posta non recapitata:
+   Dichiarazione di un server per la consegna, esecuzione di istanze del flusso di lavoro e recupero della posta non recapitata:
 
    ```
    <mta autoStart="true" statServerAddress="localhost"/>
@@ -125,9 +125,9 @@ Esistono due tipi di processi: istanza multipla e singola.
    <stat autoStart="true"/>
    ```
 
-**Archiviazione dati di Campaign**
+**Archiviazione dei dati di Campaign**
 
-Puoi configurare la directory di archiviazione (**var** ) dei dati di Adobe Campaign (registri, download, reindirizzamenti, ecc.). Per eseguire questa operazione, utilizza la variabile **XTK_VAR_DIR** variabile di sistema:
+È possibile configurare la directory di archiviazione (**var** di Adobe Campaign (registri, download, reindirizzamenti, ecc.). A tale scopo, utilizza **XTK_VAR_DIR** variabile di sistema:
 
 * In Windows, indica il seguente valore nel **XTK_VAR_DIR** variabile di sistema
 
@@ -135,18 +135,18 @@ Puoi configurare la directory di archiviazione (**var** ) dei dati di Adobe Camp
    D:\log\AdobeCampaign
    ```
 
-* In Linux, vai al **customer.sh** e indicare: **esporta XTK_VAR_DIR=/app/log/AdobeCampaign**.
+* In Linux, passare alla **customer.sh** file e indicare: **esportare XTK_VAR_DIR=/app/log/AdobeCampaign**.
 
    Per ulteriori informazioni, consulta [Personalizzare i parametri](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
 
 
-## Sicurezza e relè delle pagine dinamiche {#dynamic-page-security-and-relays}
+## Sicurezza delle pagine dinamiche e inoltri {#dynamic-page-security-and-relays}
 
-Per impostazione predefinita, tutte le pagine dinamiche sono automaticamente correlate alla **locale** Server Tomcat del computer il cui modulo Web è stato avviato. Questa configurazione viene immessa nel **`<url>`** sezione della configurazione del relay query per **ServerConf.xml** file.
+Per impostazione predefinita, tutte le pagine dinamiche sono automaticamente correlate al **locale** Server Tomcat del computer di cui è stato avviato il modulo Web. Questa configurazione viene immessa nel **`<url>`** sezione della configurazione dell’inoltro query per **ServerConf.xml** file.
 
-È possibile inoltrare l’esecuzione della pagina dinamica su un **remoto** server; se il modulo Web non è attivato nel computer. A questo scopo, devi sostituire il **localhost** con il nome del computer remoto per JSP e JSSP, applicazioni Web, report e stringhe.
+Puoi inoltrare l’esecuzione della pagina dinamica su una **remoto** server; se il modulo Web non è attivato nel computer. A questo scopo, devi sostituire il **localhost** con il nome del computer remoto per JSP e JSSP, applicazioni Web, report e stringhe.
 
-Per ulteriori informazioni sui vari parametri disponibili, consulta la **serverConf.xml** file di configurazione.
+Per ulteriori informazioni sui vari parametri disponibili, consulta **serverConf.xml** file di configurazione.
 
 Per le pagine JSP, la configurazione predefinita è:
 
@@ -156,10 +156,10 @@ Per le pagine JSP, la configurazione predefinita è:
 
 Adobe Campaign utilizza le seguenti pagine JSP:
 
-* /nl/jsp/**soaprouter.jsp**: connessioni a console client e servizi Web (API SOAP),
+* /nl/jsp/**soaprouter.jsp**: connessioni alla console client e ai servizi web (API SOAP),
 * /nl/jsp/**m.jsp**: pagine mirror,
-* /nl/jsp/**logon.jsp**: accesso basato sul web ai rapporti e alla distribuzione della console client,
-* /nl/jsp/**s.jsp** : Utilizzo del marketing virale (sponsorizzazione e social network).
+* /nl/jsp/**logon.jsp**: accesso via web ai rapporti e alla distribuzione della console client,
+* /nl/jsp/**s.jsp** : utilizzando il marketing virale (sponsorizzazione e social network).
 
 I JSSP utilizzati per il canale app mobile sono i seguenti:
 
@@ -168,7 +168,7 @@ I JSSP utilizzati per il canale app mobile sono i seguenti:
 
 **Esempio:**
 
-È possibile impedire le connessioni dei computer client dall&#39;esterno. Per fare questo, è sufficiente limitare l&#39;esecuzione di **soaprouter.jsp** e autorizzare solo l&#39;esecuzione di pagine mirror, link virali, moduli web e risorse pubbliche.
+È possibile impedire le connessioni dei computer client dall&#39;esterno. Per farlo, limita semplicemente l’esecuzione di **soaprouter.jsp** autorizzando solo l’esecuzione di pagine mirror, collegamenti virali, moduli web e risorse pubbliche.
 
 I parametri sono i seguenti:
 
@@ -186,22 +186,22 @@ I parametri sono i seguenti:
 <url IPMask=""               deny="true" hostMask="" relayHost="false" relayPath="false" targetUrl="http://localhost:8080" timeout="" urlPath="*.jssp"/>
 ```
 
-In questo esempio, la **`<IP_addresses>`** il valore coincide con l’elenco degli indirizzi IP (separati da virgole) autorizzati a utilizzare il modulo relay per questa maschera.
+In questo esempio, la proprietà **`<IP_addresses>`** Il valore coincide con l’elenco degli indirizzi IP (separati da virgole) autorizzati a utilizzare il modulo di inoltro per questa maschera.
 
 >[!NOTE]
 >
->I valori devono essere adattati in base alla configurazione e ai vincoli di rete, specialmente se sono state sviluppate configurazioni specifiche per l&#39;installazione.
+>I valori devono essere adattati in base alla configurazione e ai vincoli di rete, soprattutto se sono state sviluppate configurazioni specifiche per l’installazione.
 
 ### Gestire le intestazioni HTTP {#managing-http-headers}
 
-Per impostazione predefinita, tutte le intestazioni HTTP non vengono trasmesse. È possibile aggiungere intestazioni specifiche nelle risposte inviate tramite relay. Per eseguire questa operazione:
+Per impostazione predefinita, non tutte le intestazioni HTTP vengono inoltrate. Puoi aggiungere intestazioni specifiche nelle risposte inviate dall’inoltro. Per eseguire questa operazione:
 
 1. Vai a **serverConf.xml** file.
-1. In **`<relay>`** vai all&#39;elenco delle intestazioni HTTP inoltrate.
+1. In **`<relay>`** , passare all&#39;elenco delle intestazioni HTTP inoltrate.
 1. Aggiungi un **`<responseheader>`** con i seguenti attributi:
 
-   * **name**: nome intestazione
-   * **value**: nome del valore.
+   * **nome**: nome intestazione
+   * **valore**: nome del valore.
 
    Ad esempio:
 
@@ -209,11 +209,11 @@ Per impostazione predefinita, tutte le intestazioni HTTP non vengono trasmesse. 
    <responseHeader name="Strict-Transport-Security" value="max-age=16070400; includeSubDomains"/>
    ```
 
-## Limitare i comandi esterni autorizzati {#restricting-authorized-external-commands}
+## Limita comandi esterni autorizzati {#restricting-authorized-external-commands}
 
-Dalla build 8780, gli amministratori tecnici possono limitare l’elenco dei comandi esterni autorizzati che possono essere utilizzati in Adobe Campaign.
+A partire dalla build 8780, gli amministratori tecnici possono limitare l’elenco dei comandi esterni autorizzati che possono essere utilizzati in Adobe Campaign.
 
-A questo scopo, è necessario creare un file di testo con l&#39;elenco dei comandi che si desidera impedire di utilizzare, ad esempio:
+A tale scopo, è necessario creare un file di testo con l&#39;elenco dei comandi che si desidera impedire l&#39;utilizzo, ad esempio:
 
 ```
 ln
@@ -232,9 +232,9 @@ sh
 >
 >Questo elenco non è esaustivo.
 
-In **exec** nodo del file di configurazione del server, è necessario fare riferimento al file creato in precedenza nel **blacklistFile** attributo.
+In **esegui** del file di configurazione del server, è necessario fare riferimento al file creato in precedenza **blacklistFile** attributo.
 
-**Solo per Linux**: nel file di configurazione del server, si consiglia di specificare un utente dedicato all&#39;esecuzione di comandi esterni per migliorare la configurazione di sicurezza. Questo utente è impostato nella **exec** nodo del file di configurazione. Tutti i parametri disponibili nel **serverConf.xml** sono elencati in [sezione](../../installation/using/the-server-configuration-file.md).
+**Solo per Linux**: nel file di configurazione del server, è consigliabile specificare un utente dedicato all’esecuzione di comandi esterni per migliorare la configurazione della sicurezza. Questo utente è impostato in **esegui** del file di configurazione. Tutti i parametri disponibili in **serverConf.xml** sono elencati in questo [sezione](../../installation/using/the-server-configuration-file.md).
 
 >[!NOTE]
 >
@@ -248,22 +248,22 @@ Ad esempio:
 </serverConf>
 ```
 
-Questo utente deve essere aggiunto all’elenco secondario dell’operatore Adobe Campaign &quot;neolane&quot;.
+Questo utente deve essere aggiunto all’elenco degli utenti dell’operatore Adobe Campaign &quot;neolane&quot;.
 
 >[!IMPORTANT]
 >
->Non utilizzare uno sudo personalizzato. Sul sistema deve essere installato uno sudo standard.
+>Non utilizzare un sudo personalizzato. Sul sistema deve essere installato un sudo standard.
 
 
 ## Tracciamento ridondante {#redundant-tracking}
 
-Quando per il reindirizzamento vengono utilizzati più server, questi devono essere in grado di comunicare tra loro tramite chiamate SOAP per condividere informazioni dagli URL da reindirizzare. Al momento dell&#39;avvio della consegna, è possibile che non tutti i server di reindirizzamento siano disponibili; pertanto potrebbero non avere lo stesso livello di informazioni.
+Quando si utilizzano più server per il reindirizzamento, questi devono essere in grado di comunicare tra loro tramite chiamate SOAP per condividere le informazioni dagli URL da reindirizzare. Al momento dell’avvio della consegna, è possibile che non tutti i server di reindirizzamento siano disponibili; pertanto, potrebbero non disporre dello stesso livello di informazioni.
 
 >[!NOTE]
 >
->Quando si utilizza l&#39;architettura standard o Enterprise, il server applicazioni principale deve essere autorizzato a caricare le informazioni di tracciamento su ogni computer.
+>Quando si utilizza l&#39;architettura standard o enterprise, il server applicazioni principale deve essere autorizzato a caricare le informazioni di tracciamento su ciascun computer.
 
-Gli URL dei server ridondanti devono essere specificati nella configurazione di reindirizzamento tramite il **serverConf.xml** file.
+Gli URL dei server ridondanti devono essere specificati nella configurazione di reindirizzamento tramite **serverConf.xml** file.
 
 **Esempio:**
 
@@ -272,48 +272,48 @@ Gli URL dei server ridondanti devono essere specificati nella configurazione di 
 <spareserver enabledIf="$(hostname)!='front_srv2'" id="2" url="http://front_srv2:8080" />
 ```
 
-La **enableIf** è facoltativo (vuoto per impostazione predefinita) e consente di abilitare la connessione solo se il risultato è vero. Ciò ti consente di ottenere una configurazione identica su tutti i server di reindirizzamento.
+Il **enableIf** La proprietà è facoltativa (vuota per impostazione predefinita) e consente di abilitare la connessione solo se il risultato è vero. Questo consente di ottenere una configurazione identica su tutti i server di reindirizzamento.
 
-Per ottenere il nome host del computer, eseguire il comando seguente: **hostname -s**.
+Per ottenere il nome host del computer, eseguire il comando seguente: **nome host -s**.
 
 
 
 ## Flussi di lavoro e affinità ad alta disponibilità {#high-availability-workflows-and-affinities}
 
-È possibile configurare diversi server del flusso di lavoro (wfserver) e distribuirli su due o più computer. Se scegli questo tipo di architettura, configura la modalità di connessione dei load balancer in base all’accesso Adobe Campaign.
+È possibile configurare diversi server di workflow (wfserver) e distribuirli su due o più computer. Se scegli questo tipo di architettura, configura la modalità di connessione dei load balancer in base all’accesso ad Adobe Campaign.
 
-Per accedere dal web, seleziona la **load balancer** per limitare i tempi di connessione.
+Per accedere dal Web, seleziona la **load balancer** per limitare i tempi di connessione.
 
-Se accedi tramite la console Adobe Campaign, scegli **hash** o **ip fisso** modalità. Ciò consente di mantenere la connessione tra il client avanzato e il server e di impedire l’interruzione di una sessione utente durante un’operazione di importazione o esportazione, ad esempio.
+Se accedi tramite la console Adobe Campaign, scegli **hash** o **ip fisso** modalità. In questo modo è possibile mantenere la connessione tra il client avanzato e il server e impedire, ad esempio, l&#39;interruzione di una sessione utente durante un&#39;operazione di importazione o esportazione.
 
 Puoi scegliere di forzare l’esecuzione di un flusso di lavoro o di un’attività del flusso di lavoro su un determinato computer. A questo scopo, devi definire una o più affinità per il flusso di lavoro o l’attività interessata.
 
-1. Crea le affinità del flusso di lavoro o dell’attività inserendole nel **[!UICONTROL Affinity]** campo .
+1. Creare le affinità del flusso di lavoro o dell’attività immettendole nel **[!UICONTROL Affinity]** campo.
 
-   Puoi scegliere qualsiasi nome di affinità, ma assicurati di non utilizzare spazi o segni di punteggiatura. Se si utilizzano server diversi, specificare nomi diversi.
+   È possibile scegliere qualsiasi nome di affinità, ma assicurarsi di non utilizzare spazi o segni di punteggiatura. Se si utilizzano server diversi, specificare nomi diversi.
 
    ![](assets/s_ncs_install_server_wf_affinity01.png)
 
    ![](assets/s_ncs_install_server_wf_affinity02.png)
 
-   L&#39;elenco a discesa contiene affinità precedentemente utilizzate. Viene completato nel tempo con i diversi valori immessi.
+   L’elenco a discesa contiene le affinità precedentemente utilizzate. Viene completato nel tempo con i diversi valori immessi.
 
 1. Apri **nl6/conf/config-`<instance>.xml`** file.
-1. Modifica la linea che corrisponde alla **[!UICONTROL wfserver]** modulo come segue:
+1. Modifica la riga che corrisponde al **[!UICONTROL wfserver]** come segue:
 
    ```
    <wfserver autoStart="true" affinity="XXX,"/>
    ```
 
-   Se definisci diverse affinità, queste devono essere separate da virgole senza spazi:
+   Se definisci più affinità, queste devono essere separate da virgole senza spazi:
 
    ```
    <wfserver autoStart="true" affinity="XXX,YYY,"/>
    ```
 
-   La virgola che segue il nome dell’affinità è necessaria per l’esecuzione dei flussi di lavoro per i quali non è definita alcuna affinità.
+   La virgola che segue il nome dell’affinità è necessaria per l’esecuzione di flussi di lavoro per i quali non è definita alcuna affinità.
 
-   Se desideri eseguire solo flussi di lavoro per i quali è definita un’affinità, non aggiungere una virgola alla fine dell’elenco delle affinità. Ad esempio, modificare la linea come segue:
+   Se desideri eseguire solo i flussi di lavoro per i quali è definita un’affinità, non aggiungere una virgola alla fine dell’elenco delle affinità. Ad esempio, modificare la riga come segue:
 
    ```
    <wfserver autoStart="true" affinity="XXX"/>
@@ -321,14 +321,14 @@ Puoi scegliere di forzare l’esecuzione di un flusso di lavoro o di un’attivi
 
 ## Riavvio automatico {#automatic-process-restart}
 
-Per impostazione predefinita, i diversi processi di Adobe Campaign vengono riavviati automaticamente alle 6 del mattino (ora del server) ogni giorno.
+Per impostazione predefinita, i diversi processi di Adobe Campaign vengono riavviati automaticamente ogni giorno alle 6 (ora del server).
 
 Tuttavia, puoi modificare questa configurazione.
 
-Per eseguire questa operazione, vai alla pagina **serverConf.xml** nel file **conf** archivio dell&#39;installazione.
+Per eseguire questa operazione, passare al **serverConf.xml** file, che si trova in **conf** dell’installazione.
 
-Ogni processo configurato in questo file ha un **processRestartTime** attributo. Puoi modificare il valore di questo attributo per adattare il tempo di riavvio di ogni processo in base alle tue esigenze.
+Ogni processo configurato in questo file ha un **processRestartTime** attributo. Puoi modificare il valore di questo attributo per adattare il tempo di riavvio di ciascun processo in base alle tue esigenze.
 
 >[!IMPORTANT]
 >
->Non eliminare questo attributo. Tutti i processi devono essere riavviati ogni giorno.
+>Non eliminare questo attributo. È necessario riavviare tutti i processi ogni giorno.

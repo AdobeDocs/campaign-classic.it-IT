@@ -5,9 +5,9 @@ description: Scopri come iniziare con la configurazione dell’app mobile
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Push
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: e011333411af79b985166a4e73592a1860749cf1
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '306'
 ht-degree: 10%
 
 ---
@@ -16,27 +16,27 @@ ht-degree: 10%
 
 
 
-In questa sezione puoi trovare un esempio di configurazione basato su un’azienda che vende pacchetti vacanza online. La sua applicazione mobile (Neotrips) è disponibile ai suoi clienti in due versioni: Suggerimenti per Android e Neotrips per iOS.
+Puoi trovare in questa sezione un esempio di configurazione basato su un’azienda che vende pacchetti vacanza online. La sua app mobile (Neotrips) è disponibile per i suoi clienti in due versioni: Neotrips per Android e Neotrips per iOS.
 
 Per inviare notifiche push in Adobe Campaign, devi:
 
-* Crea un **[!UICONTROL Mobile application]** digitare il servizio informazioni per l&#39;applicazione mobile Neotrips. Fai riferimento a [questa sezione per iOS](configuring-the-mobile-application.md#configuring-ios-service). e [questa sezione per Android](configuring-the-mobile-application-android.md#configuring-android-service).
-* Aggiungi al servizio le versioni iOS e Android dell&#39;applicazione.
+* Creare un **[!UICONTROL Mobile application]** servizio informazioni sui tipi per l’app mobile Neotrips. Fai riferimento a [questa sezione per iOS](configuring-the-mobile-application.md#configuring-ios-service). e [questa sezione per Android](configuring-the-mobile-application-android.md#configuring-android-service).
+* Aggiungi le versioni iOS e Android dell’applicazione a questo servizio.
 * Creare una consegna per [iOS](create-notifications-ios.md) e [Android](create-notifications-android.md).
 
 ![](assets/nmac_service_diagram.png)
 
 >[!NOTE]
 >
->Vai a **[!UICONTROL Subscriptions]** scheda del servizio per visualizzare l’elenco degli abbonati al servizio, vale a dire tutte le persone che hanno installato l’applicazione sul loro cellulare e hanno accettato di ricevere notifiche.
+>Vai a **[!UICONTROL Subscriptions]** scheda del servizio per visualizzare l’elenco degli abbonati al servizio, ovvero tutte le persone che hanno installato l’applicazione sul proprio cellulare e hanno accettato di ricevere notifiche.
 
-## Installa il pacchetto {#installing-package-ios}
+## Installare il pacchetto {#installing-package-ios}
 
-[!BADGE On-Premise e ibrida]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Si applica solo alle distribuzioni on-premise e ibride"}
+[!BADGE On-premise e ibrido]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"}
 
-![](assets/do-not-localize/how-to-video.png) [Scopri come installare il pacchetto dell’app mobile nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=en#sending-messages)
+![](assets/do-not-localize/how-to-video.png) [Scopri come installare il pacchetto per app mobile nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html#sending-messages)
 
-Come cliente ibrido/ospitato, contatta [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per accedere al canale di notifica push in Campaign.
+In qualità di cliente ibrido/in hosting, contatta [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team per accedere al canale di notifica push in Campaign.
 
 In qualità di cliente on-premise, devi installare un pacchetto integrato.
 
@@ -44,7 +44,7 @@ In qualità di cliente on-premise, devi installare un pacchetto integrato.
 >
 >Ulteriori informazioni sui pacchetti incorporati, sulle best practice e sui consigli di Campaign in [questa pagina](../../installation/using/installing-campaign-standard-packages.md).
 
-I passaggi di installazione sono:
+I passaggi di installazione sono i seguenti:
 
 1. Accedi alla procedura guidata di importazione del pacchetto da **[!UICONTROL Tools > Advanced > Import package]** nella console client di Adobe Campaign.
 
@@ -52,20 +52,20 @@ I passaggi di installazione sono:
 
 1. Seleziona **[!UICONTROL Install a standard package]**.
 
-1. Nell’elenco visualizzato, seleziona **[!UICONTROL Mobile App Channel]**.
+1. Nell&#39;elenco visualizzato selezionare **[!UICONTROL Mobile App Channel]**.
 
    ![](assets/package_ios_2.png)
 
-1. Fai clic su **[!UICONTROL Next]**, quindi **[!UICONTROL Start]** per avviare l&#39;installazione del pacchetto.
+1. Clic **[!UICONTROL Next]**, quindi **[!UICONTROL Start]** per avviare l&#39;installazione del pacchetto.
 
-   Una volta installati i pacchetti, la barra di avanzamento mostra **100%** e puoi visualizzare il seguente messaggio nei log di installazione: **[!UICONTROL Installation of packages successful]**.
+   Una volta installati i pacchetti, la barra di avanzamento viene visualizzata **100%** e puoi visualizzare il seguente messaggio nei registri di installazione: **[!UICONTROL Installation of packages successful]**.
 
    ![](assets/package_ios_3.png)
 
 1. **[!UICONTROL Close]** la finestra di installazione.
 
 Al termine di questo passaggio, puoi configurare le app Android e iOS.
-Fai riferimento a queste sezioni:
+Consulta queste sezioni:
 
 * [Passaggi di configurazione per iOS](configuring-the-mobile-application.md)
 

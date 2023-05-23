@@ -3,12 +3,12 @@ product: campaign
 title: Passaggio a Unicode
 description: Passaggio a Unicode
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4cfecf2f-cf98-42c1-b979-cdd26d5de48b
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 7%
@@ -19,9 +19,9 @@ ht-degree: 7%
 
 
 
-Per un **prod** istanza in Linux/PostgreSQL, i passaggi per passare a unicode sono i seguenti:
+Per un esistente **prod** in Linux/PostgreSQL, i passaggi per passare a unicode sono i seguenti:
 
-1. Interrompere i processi di scrittura nel database:
+1. Interrompere la scrittura dei processi nel database:
 
    ```
    su - neolane
@@ -35,7 +35,7 @@ Per un **prod** istanza in Linux/PostgreSQL, i passaggi per passare a unicode so
    pg_dump mydatabase > mydatabase.sql
    ```
 
-1. Crea un database Unicode:
+1. Creare un database Unicode:
 
    ```
    createdb -E UNICODE mydatabase_unicode
@@ -47,7 +47,7 @@ Per un **prod** istanza in Linux/PostgreSQL, i passaggi per passare a unicode so
    psql mydatabase_unicode < mydatabase.sql
    ```
 
-1. Aggiorna l&#39;opzione che indica che il database è Unicode:
+1. Aggiornare l&#39;opzione che indica che il database è Unicode:
 
    ```
    psql mydatabase_unicode
@@ -62,7 +62,7 @@ Per un **prod** istanza in Linux/PostgreSQL, i passaggi per passare a unicode so
    vi config-prod.xml
    ```
 
-   Aggiungi il **u** davanti al valore relativo all&#39;identificativo del database (**databaseId**):
+   Aggiungi il **u** davanti al valore relativo all&#39;identificatore del database (**databaseId**):
 
    ```
    <web>
@@ -88,7 +88,7 @@ Per un **prod** istanza in Linux/PostgreSQL, i passaggi per passare a unicode so
    </dataSource>
    ```
 
-1. Riavviare tutte le macchine:
+1. Riavviare tutti i computer:
 
    ```
    /etc/init.d/apache stop
@@ -97,7 +97,7 @@ Per un **prod** istanza in Linux/PostgreSQL, i passaggi per passare a unicode so
    /etc/init.d/apache start
    ```
 
-1. Confermare l&#39;interruttore. A questo scopo, connettiti tramite la console Adobe Campaign e:
+1. Confermare il pulsante. A questo scopo, effettua la connessione tramite la console Adobe Campaign e:
 
-   * verificare che i dati siano visualizzati correttamente, in particolare i caratteri accentuati:
-   * avvia una consegna e controlla che il recupero del tracciamento funzioni.
+   * verifica che i dati siano visualizzati correttamente, in particolare i caratteri accentuati:
+   * avvia una consegna e verifica che il recupero del tracciamento funzioni.

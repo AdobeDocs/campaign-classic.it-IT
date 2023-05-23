@@ -3,12 +3,12 @@ product: campaign
 title: Principio di configurazione
 description: Principio di configurazione
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 03d7e579-8678-44b8-bbe7-cf4204bffb25
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 4%
@@ -19,29 +19,29 @@ ht-degree: 4%
 
 
 
-La piattaforma Adobe Campaign si basa sul concetto di istanze, simile a quella degli host virtuali utilizzati da Apache. Questa modalità di funzionamento consente di condividere un server assegnandogli più istanze. Le istanze sono completamente separate l&#39;una dall&#39;altra e operano con il proprio database e file di configurazione.
+La piattaforma Adobe Campaign si basa sul concetto di istanze, simile a quella degli host virtuali utilizzati da Apache. Questa modalità operativa consente di condividere un server assegnandovi più istanze. Le istanze sono completamente separate tra loro e funzionano con il proprio database e file di configurazione.
 
-Per un determinato server, esistono due elementi comuni a tutte le istanze Adobe Campaign:
+Per un determinato server, esistono due elementi comuni a tutte le istanze di Adobe Campaign:
 
-* La **interno** password: password dell&#39;amministratore generale. È comune a tutte le istanze di un particolare server applicazioni.
+* Il **interno** password: password dell&#39;amministratore generale. È comune a tutte le istanze di un determinato server applicazioni.
 
    >[!IMPORTANT]
    >
-   >Per accedere con **Interno** identificatore, devi aver definito una password in precedenza. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#internal-identifier).
+   >Per accedere con **Interno** identificatore, è necessario aver già definito una password. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
-* Configurazioni di più server tecnici: queste configurazioni possono essere tutte sovraccaricate nella configurazione specifica di un’istanza.
+* Più configurazioni tecniche del server: queste configurazioni possono essere tutte sovraccariche nella configurazione specifica di un’istanza.
 
-I file di configurazione vengono salvati nel **conf** directory della directory di installazione. La configurazione è suddivisa in tre file:
+I file di configurazione vengono salvati in **conf** directory della directory di installazione. La configurazione è suddivisa in tre file:
 
-* **serverConf.xml**: configurazione complessiva per tutte le istanze.
-* **config-**`<instance>`**.xml** (4) **`<instance>`** è il nome dell&#39;istanza): configurazione specifica di un&#39;istanza.
+* **serverConf.xml**: configurazione generale per tutte le istanze.
+* **config-**`<instance>`**.xml** (dove **`<instance>`** è il nome dell’istanza): configurazione specifica di un’istanza.
 * **serverConf.xml.diff**: delta tra la configurazione iniziale e la configurazione corrente. Questo file viene generato automaticamente dall&#39;applicazione e non deve essere modificato manualmente. Viene utilizzato per propagare automaticamente le modifiche utente quando si aggiorna una versione di build.
 
 Viene caricata una configurazione di istanza come segue:
 
-* Il modulo carica il **serverConf.xml** per ottenere i parametri condivisi da tutte le istanze.
-* Poi carica il **config-**`<instance>`**.xml** file. I valori trovati in questo file hanno priorità rispetto ai valori contenuti in **serverConf.xml**.
+* Il modulo carica **serverConf.xml** per ottenere i parametri condivisi da tutte le istanze.
+* Quindi carica il **config-**`<instance>`**.xml** file. I valori trovati in questo file hanno priorità rispetto ai valori contenuti in **serverConf.xml**.
 
-   Questi due file hanno lo stesso formato. Qualsiasi valore in **serverConf.xml** può essere sovraccaricato per una determinata istanza nel **config-`<instance>`.xml** file.
+   Questi due file hanno lo stesso formato. Qualsiasi valore in **serverConf.xml** può essere sovraccaricato per una determinata istanza in **config-`<instance>`.xml** file.
 
-Questa modalità operativa offre una grande flessibilità per le configurazioni.
+Questa modalità operativa offre grande flessibilità per le configurazioni.

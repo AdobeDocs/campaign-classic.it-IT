@@ -3,12 +3,12 @@ product: campaign
 title: Tipi di manutenzione
 description: Tipi di manutenzione
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: 08e179aa-fd83-4c0a-879e-ab7aec168d92
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 2%
@@ -19,37 +19,37 @@ ht-degree: 2%
 
 
 
-## Manutenzione dell&#39;applicazione {#application-maintenance}
+## Manutenzione dell’applicazione {#application-maintenance}
 
-Adobe Campaign fornisce un flusso di lavoro integrato che consente di pianificare alcune attività di manutenzione del database: la **flusso di lavoro di pulizia del database**. Questo flusso di lavoro esegue le seguenti attività:
+Adobe Campaign fornisce un flusso di lavoro integrato che consente di pianificare alcune attività di manutenzione del database: **flusso di lavoro di pulizia del database**. Questo flusso di lavoro esegue le seguenti attività:
 
-* eliminazione dei record scaduti,
+* la cancellazione dei dati scaduti,
 * eliminazione dei record orfani e reinizializzazione dello stato per gli oggetti scaduti,
 * aggiornamento delle statistiche del database.
 
 >[!IMPORTANT]
 >
->L&#39;attività di pulizia riguarda principalmente la manutenzione a livello di applicazione, non la manutenzione a livello di RDBMS (ad eccezione dell&#39;aggiornamento delle statistiche). Tuttavia, nel database saranno necessarie operazioni di manutenzione. Anche se il flusso di lavoro di pulizia del database viene eseguito correttamente, ciò non significa che il database sia ottimizzato.
+>Si noti che l&#39;attività di pulizia riguarda principalmente la manutenzione a livello di applicazione, non la manutenzione a livello di RDBMS (ad eccezione dell&#39;aggiornamento delle statistiche). Tuttavia, le operazioni di manutenzione saranno richieste nel database. Anche se il flusso di lavoro di pulizia del database viene eseguito correttamente, ciò non significa che il database sia ottimizzato.
 
 ## Manutenzione tecnica {#technical-maintenance}
 
-Il flusso di lavoro di pulizia del database non include alcuno strumento di manutenzione del database: spetta a voi organizzare la manutenzione. A questo scopo, puoi effettuare le seguenti operazioni:
+Il flusso di lavoro di pulizia del database non include alcuno strumento di manutenzione del database: è possibile organizzare la manutenzione. A questo scopo, puoi effettuare le seguenti operazioni:
 
 * collaborare con l&#39;amministratore del database per impostare la manutenzione del database con strumenti di terze parti,
-* utilizza il motore del flusso di lavoro Adobe Campaign per pianificare e tenere traccia di queste attività di manutenzione.
+* utilizza il motore del flusso di lavoro di Adobe Campaign per pianificare e tenere traccia di queste attività di manutenzione.
 
-Tali procedure di manutenzione devono essere eseguite su base regolare e devono comprendere quanto segue:
+Tali procedure di manutenzione devono essere eseguite regolarmente e devono comprendere quanto segue:
 
-* reindicizzare tabelle aggiornate frequentemente,
-* compattare/ricreare le tabelle per evitare la frammentazione.
+* reindicizzare le tabelle aggiornate di frequente,
+* compatta/rigenera le tabelle per evitare la frammentazione.
 
-### Programma di manutenzione {#maintenance-schedule}
+### Pianificazione di manutenzione {#maintenance-schedule}
 
-È necessario trovare gli slot appropriati per l&#39;esecuzione di queste attività di manutenzione. Possono influire notevolmente sulle prestazioni del database durante l&#39;esecuzione o persino il blocco dell&#39;applicazione (a causa del blocco).
+È necessario trovare gli slot appropriati per eseguire queste attività di manutenzione. Possono influire pesantemente sulle prestazioni del database durante l’esecuzione o addirittura bloccare l’applicazione (a causa del blocco).
 
-Queste attività vengono in genere eseguite una volta alla settimana durante un periodo di bassa attività che non è in conflitto con i backup, il ricaricamento dei dati o il calcolo aggregato. Alcuni sistemi molto richiesti richiedono una manutenzione più frequente.
+Queste attività vengono in genere eseguite una volta alla settimana durante un periodo di bassa attività che non entra in conflitto con i backup, il ricaricamento dei dati o il calcolo dell’aggregazione. Alcuni sistemi molto richiesti richiedono una manutenzione più frequente.
 
-Una volta al mese è possibile eseguire una manutenzione più approfondita, ad esempio la ricostruzione completa delle tabelle, preferibilmente con applicazioni completamente interrotte, poiché il sistema è comunque inutilizzabile.
+Una manutenzione più approfondita, ad esempio la ricostruzione completa della tabella, può essere eseguita una volta al mese, preferibilmente con le applicazioni completamente arrestate in quanto il sistema è comunque inutilizzabile.
 
 ### Ricostruzione di una tabella {#rebuilding-a-table}
 
@@ -68,20 +68,20 @@ Sono disponibili diverse strategie:
   <tr> 
    <td> Deframmentazione online<br /> </td> 
    <td> La maggior parte dei motori di database fornisce metodi di deframmentazione.<br /> </td> 
-   <td> Utilizza semplicemente il metodo di deframmentazione del database. In genere, questi metodi si occupano dei problemi di integrità bloccando i dati durante la deframmentazione.<br /> </td> 
-   <td> A seconda del database, questi metodi di deframmentazione possono essere forniti come opzione RDBMS (ad Oracle) e non sono sempre il modo più efficiente per gestire tabelle più grandi.<br /> </td> 
+   <td> È sufficiente utilizzare il metodo di deframmentazione del database. Questi metodi in genere si occupano dei problemi di integrità bloccando i dati durante la deframmentazione.<br /> </td> 
+   <td> A seconda del database, questi metodi di deframmentazione possono essere forniti come opzione RDBMS (Oracle) e non rappresentano sempre il modo più efficiente per gestire le tabelle di grandi dimensioni.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Discesa e ripristino<br /> </td> 
-   <td> Eseguire il dump della tabella in un file, eliminare la tabella nel database e ripristinarla dal dump.<br /> </td> 
-   <td> Questo è il modo più semplice per deframmentare una tabella. Anche l'unica soluzione quando il database è quasi pieno.<br /> </td> 
-   <td> Poiché la tabella viene eliminata e ricreata, l’applicazione non può essere lasciata online, anche in modalità di sola lettura (la tabella non è disponibile durante la fase di ripristino).<br /> </td> 
+   <td> Effettua il dump e ripristina<br /> </td> 
+   <td> Scarica la tabella in un file, elimina la tabella nel database e ripristina dal dump.<br /> </td> 
+   <td> Questo è il modo più semplice per deframmentare una tabella. È anche l'unica soluzione quando il database è quasi pieno.<br /> </td> 
+   <td> Poiché la tabella viene eliminata e ricreata, l'applicazione non può essere lasciata online, nemmeno in modalità di sola lettura (la tabella non è disponibile durante la fase di ripristino).<br /> </td> 
   </tr> 
   <tr> 
-   <td> Duplicare, rinominare e rilasciare<br /> </td> 
-   <td> Crea una copia di una tabella e dei relativi indici, quindi rilascia quella esistente e rinomina la copia per sostituirla.<br /> </td> 
-   <td> Questo metodo è più veloce del primo approccio in quanto genera meno IO (nessuna copia come file e lettura da questo file).<br /> </td> 
-   <td> Richiede il doppio della quantità di spazio.<br /> È necessario arrestare tutti i processi attivi che scrivono alla tabella durante il processo. Tuttavia, i processi di lettura non saranno influenzati, poiché la tabella viene scambiata all’ultimo momento una volta ricostruita. <br /> </td> 
+   <td> Duplica, rinomina e rilascia<br /> </td> 
+   <td> In questo modo viene creata una copia di una tabella e dei relativi indici, quindi viene eliminato quello esistente e la copia viene rinominata per sostituirla.<br /> </td> 
+   <td> Questo metodo è più veloce del primo, in quanto genera meno I/O (nessuna copia come file e lettura da questo file).<br /> </td> 
+   <td> Richiede il doppio dello spazio.<br /> Tutti i processi attivi che scrivono nella tabella durante il processo devono essere interrotti. Tuttavia, i processi di lettura non saranno interessati, poiché la tabella viene scambiata all’ultimo momento una volta ricreata. <br /> </td> 
   </tr> 
  </tbody> 
 </table>
