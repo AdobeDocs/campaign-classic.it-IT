@@ -19,25 +19,25 @@ ht-degree: 2%
 Le caratteristiche di uno schema che fa riferimento a una tabella esistente sono le seguenti:
 
 * Adobe Campaign non deve modificare gli oggetti SQL relativi alle tabelle esistenti,
-* I nomi delle tabelle e delle colonne devono essere specificati esplicitamente,
+* I nomi di tabelle e colonne devono essere specificati in modo esplicito.
 * Gli indici devono essere dichiarati.
 
 >[!IMPORTANT]
 >
->Non eliminare i campi nella tabella dei destinatari incorporata, anche se sono inutili. Questo può causare errori comportamentali nel database Adobe Campaign.
+>Non eliminare i campi nella tabella dei destinatari incorporata, anche se sono inutili. Questo può causare errori comportamentali nel database di Adobe Campaign.
 
-## Attributo di visualizzazione {#the-view-attribute}
+## Attributo view {#the-view-attribute}
 
-Gli schemi di origine accettano **visualizzare** attributo per **srcSchema** elemento principale. Deve essere utilizzato quando Adobe Campaign viene manipolato nelle tabelle personalizzate. La **view=&quot;true&quot;** attributo indica alla procedura guidata di aggiornamento della struttura del database di ignorare questo schema. È pertanto vietato all’applicazione sincronizzare la tabella, le sue colonne e i suoi indici con lo schema corrispondente.
+Gli schemi di origine accettano **visualizza** attributo per **srcSchema** elemento principale. Deve essere utilizzato quando Adobe Campaign viene manipolato in tabelle personalizzate. Il **view=&quot;true&quot;** questo attributo indica alla procedura guidata di aggiornamento della struttura del database di ignorare questo schema. L’applicazione non può quindi sincronizzare la tabella, le sue colonne e i suoi indici con lo schema corrispondente.
 
 Quando questo attributo è impostato su **true**, lo schema viene utilizzato solo per generare query SQL per accedere ai dati di questa tabella.
 
 ## Nomi di tabelle e colonne {#names-of-tables-and-columns}
 
-Quando le tabelle vengono create dalla procedura guidata di aggiornamento delle tabelle, i nomi delle tabelle e delle colonne vengono generati automaticamente in base ai nomi dei rispettivi schemi e attributi. È tuttavia possibile forzare i nomi SQL da utilizzare immettendo i seguenti attributi:
+Quando le tabelle vengono create tramite la procedura guidata di aggiornamento, i nomi delle tabelle e delle colonne vengono generati automaticamente in base ai nomi dei rispettivi schemi e attributi. È tuttavia possibile forzare l&#39;utilizzo dei nomi SQL immettendo i seguenti attributi:
 
 * **sqltable** all’interno dell’elemento principale dello schema, per specificare la tabella,
-* **sqlname** all’interno di ogni attributo, per specificare le colonne.
+* **sqlname** all’interno di ciascun attributo, per specificare le colonne.
 
 **Esempio**:
 
@@ -54,17 +54,17 @@ Quando le tabelle vengono create dalla procedura guidata di aggiornamento delle 
 </element>
 ```
 
-In questo esempio, se i nomi delle tabelle e delle colonne non fossero stati specificati esplicitamente, l&#39;applicazione avrebbe utilizzato **CusIndividuale** per la tabella, **lastName** e **firstName** per le colonne.
+In questo esempio, se i nomi delle tabelle e delle colonne non fossero stati specificati in modo esplicito, l&#39;applicazione avrebbe utilizzato **CusIndividual** per la tabella, **lastName** e **firstName** per le colonne.
 
-In uno schema è possibile compilare solo una parte delle colonne di una tabella esistente. Le colonne non compilate non saranno accessibili all’utente.
+In uno schema, è possibile compilare solo una parte delle colonne di una tabella esistente. Le colonne non compilate non saranno accessibili all&#39;utente.
 
 ## Campi indicizzati {#indexed-fields}
 
-Quando si ordinano i record di un elenco dalla console client, si ottengono prestazioni migliori ordinando i campi indicizzati. La dichiarazione di un indice in uno schema fa sì che la console visualizzi i campi indicizzati con una linea rossa sotto la freccia dell’ordinamento a sinistra dell’etichetta della colonna, come illustrato di seguito:
+Quando si ordinano i record di un elenco dalla console client, si ottengono prestazioni migliori ordinando i campi indicizzati. La dichiarazione di un indice in uno schema fa sì che la console visualizzi i campi indicizzati con una linea rossa sotto la freccia di ordinamento a sinistra dell’etichetta della colonna, come mostrato di seguito:
 
 ![](assets/s_ncs_integration_mapping_index.png)
 
-In uno schema, un indice viene definito come segue:
+In uno schema, un indice è definito come segue:
 
 ```
 <dbindex name="name_of_index" unique="true/false"
@@ -76,7 +76,7 @@ In uno schema, un indice viene definito come segue:
 
 Per questo motivo è importante dichiarare gli indici esistenti della tabella personalizzata nello schema corrispondente.
 
-Viene implicitamente dichiarato un indice per ogni dichiarazione di chiave e collegamento dello schema di origine. La dichiarazione dell&#39;indice può essere impedita specificando **noDbIndex=&quot;true&quot;** attributo:
+Un indice viene dichiarato in modo implicito per ogni chiave e dichiarazione di collegamento dello schema di origine. È possibile impedire la dichiarazione dell’indice specificando **noDbIndex=&quot;true&quot;** attributo:
 
 **Esempio**:
 

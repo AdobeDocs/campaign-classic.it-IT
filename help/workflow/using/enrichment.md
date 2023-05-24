@@ -16,40 +16,40 @@ ht-degree: 2%
 
 
 
-La **[!UICONTROL Enrichment]** consente di aggiungere informazioni a un elenco di profili e di collegarsi a una tabella esistente (crea un nuovo join). È inoltre possibile definire criteri di riconciliazione con profili nel database.
+Il **[!UICONTROL Enrichment]** attività consente di aggiungere informazioni a un elenco di profili e collegamenti a una tabella esistente (creare un nuovo join). È inoltre possibile definire i criteri di riconciliazione con i profili nel database.
 
 ![](assets/enrichment_design.png)
 
 ## Definizioni {#definitions}
 
-Per utilizzare l’attività di arricchimento, è necessario avere familiarità con le varie opzioni disponibili quando si aggiungono dati.
+Per utilizzare l’attività di arricchimento, è necessario avere familiarità con le varie opzioni disponibili quando si aggiungono i dati.
 
 ![](assets/enrichment_edit.png)
 
-La **[!UICONTROL Data linked to the filtering dimension]** consente di accedere a:
+Il **[!UICONTROL Data linked to the filtering dimension]** consente di accedere a:
 
 * Dati della dimensione filtro: accesso ai dati della tabella di lavoro
-* Dati collegati alla dimensione di filtro: accesso ai dati collegati alla tabella di lavoro
+* Dati collegati alla dimensione filtro: accesso ai dati collegati alla tabella di lavoro
 
 ![](assets/wf_enrich_linkoptions.png)
 
-La **[!UICONTROL A link]** consente di creare un join su qualsiasi tabella del database.
+Il **[!UICONTROL A link]** consente di creare un join su qualsiasi tabella del database.
 
 ![](assets/wf_enrich_linkstype.png)
 
 Esistono quattro tipi di collegamenti:
 
-* **[!UICONTROL Define a collection]**: consente di definire un collegamento con una cardinalità 1-N tra le tabelle.
-* **[!UICONTROL Define a link whose target is still available]**: consente di definire un collegamento con una cardinalità 1-1 tra le tabelle. Le condizioni di join devono essere definite da un singolo record nella tabella di destinazione.
-* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**: consente di definire un collegamento con una cardinalità 0-1 tra le tabelle. La condizione di unione deve essere definita da 0 o 1 (max.) record nella tabella di destinazione.
+* **[!UICONTROL Define a collection]**: consente di definire un collegamento con cardinalità 1-N tra le tabelle.
+* **[!UICONTROL Define a link whose target is still available]**: consente di definire un collegamento con cardinalità 1-1 tra le tabelle. Le condizioni di join devono essere definite da un singolo record nella tabella di destinazione.
+* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**: consente di definire un collegamento con cardinalità 0-1 tra le tabelle. La condizione di unione deve essere definita da 0 o 1 (max) nella tabella di destinazione.
 
-   Questa opzione è configurata nella **[!UICONTROL Simple Join]** è accessibile tramite la scheda **[!UICONTROL Edit additional data]** collegamento **[!UICONTROL Enrichment]** attività.
+   Questa opzione è configurata in **[!UICONTROL Simple Join]** accessibile tramite il **[!UICONTROL Edit additional data]** collegamento del **[!UICONTROL Enrichment]** attività.
 
-* **[!UICONTROL Define a link by searching for a reference among several options]**: questo tipo di collegamento definisce una riconciliazione verso un record univoco. Adobe Campaign crea un collegamento a una tabella di destinazione aggiungendo una chiave esterna nella tabella di destinazione per memorizzare un riferimento al record univoco.
+* **[!UICONTROL Define a link by searching for a reference among several options]**: questo tipo di collegamento definisce una riconciliazione verso un record univoco. Adobe Campaign crea un collegamento a una tabella di destinazione aggiungendo una chiave esterna nella tabella di destinazione per la memorizzazione di un riferimento al record univoco.
 
-   Questa opzione è configurata nella **[!UICONTROL Reconciliation and deduplication]** è accessibile tramite la scheda **[!UICONTROL Edit additional data]** collegamento **[!UICONTROL Enrichment]** attività.
+   Questa opzione è configurata in **[!UICONTROL Reconciliation and deduplication]** accessibile tramite il **[!UICONTROL Edit additional data]** collegamento del **[!UICONTROL Enrichment]** attività.
 
-I casi d’uso che descrivono in dettaglio il funzionamento delle attività Enrichment nel loro contesto sono disponibili anche in queste sezioni:
+I casi d’uso che descrivono nel dettaglio il funzionamento delle attività di arricchimento nel loro contesto sono disponibili anche in queste sezioni:
 
 * [Arricchimento delle e-mail con campi data personalizzati](email-enrichment-with-custom-date-fields.md).
 * [Arricchimento dei dati](enriching-data.md)
@@ -57,17 +57,17 @@ I casi d’uso che descrivono in dettaglio il funzionamento delle attività Enri
 
 ## Aggiunta di informazioni {#adding-information}
 
-Utilizza la **[!UICONTROL Enrichment]** attività per aggiungere colonne a una tabella di lavoro: questa attività può essere utilizzata come complemento a un’attività di query.
+Utilizza il **[!UICONTROL Enrichment]** attività per aggiungere colonne a una tabella di lavoro: questa attività può essere utilizzata come complemento a un’attività query.
 
 La configurazione di colonne aggiuntive è descritta in [Aggiunta di dati](query.md#adding-data).
 
-La **[!UICONTROL Primary set]** consente di selezionare la transizione in entrata: i dati della tabella di lavoro di questa attività saranno arricchiti.
+Il **[!UICONTROL Primary set]** consente di selezionare la transizione in entrata: i dati della tabella di lavoro di questa attività verranno arricchiti.
 
-Fai clic sul pulsante **[!UICONTROL Add data]** e seleziona il tipo di dati da aggiungere. L’elenco dei tipi di dati offerti dipende dai moduli e dalle opzioni installati sulla piattaforma. In una configurazione minima, puoi sempre aggiungere dati collegati alla dimensione di filtro e a un collegamento.
+Fai clic su **[!UICONTROL Add data]** e selezionare il tipo di dati da aggiungere. L’elenco dei tipi di dati offerti dipende dai moduli e dalle opzioni installati nella piattaforma. In una configurazione minima, puoi sempre aggiungere dati collegati alla dimensione di filtro e un collegamento.
 
 ![](assets/enrichment_edit.png)
 
-Nell’esempio seguente, la transizione in uscita sarà arricchita di informazioni sull’età dei profili target.
+Nell’esempio seguente, la transizione in uscita verrà arricchita con informazioni sull’età dei profili target.
 
 ![](assets/enrichment_add_data.png)
 
@@ -79,31 +79,31 @@ La tabella di lavoro contiene i dati seguenti e lo schema associato:
 
 ![](assets/enrichment_content_before_a.png)
 
-Ripetere l&#39;operazione nell&#39;output della fase di arricchimento.
+Ripetete questa operazione nell&#39;output della fase di arricchimento.
 
 ![](assets/enrichment_content_after.png)
 
-Puoi notare che sono stati aggiunti i dati relativi alle pagine di profilo:
+Puoi vedere che sono stati aggiunti i dati relativi alle età del profilo:
 
 ![](assets/enrichment_content_after_a.png)
 
 Anche lo schema corrispondente è stato arricchito.
 
-## Gestione dei dati aggiuntivi {#managing-additional-data}
+## Gestione di dati aggiuntivi {#managing-additional-data}
 
-Deseleziona la **[!UICONTROL Keep all additional data from the main set]** se non desideri mantenere i dati aggiuntivi definiti in precedenza. In questo caso, solo le colonne aggiuntive selezionate nell’attività di arricchimento verranno aggiunte alla tabella di lavoro in uscita. Le informazioni aggiuntive aggiunte alle attività a monte non verranno salvate.
+Deseleziona il **[!UICONTROL Keep all additional data from the main set]** se non si desidera conservare i dati aggiuntivi definiti in precedenza. In questo caso, solo le colonne aggiuntive selezionate nell&#39;attività di arricchimento verranno aggiunte alla tabella di lavoro in uscita. Le informazioni aggiuntive aggiunte alle attività a monte non verranno salvate.
 
 ![](assets/enrichment_edit_without_additional.png)
 
-I dati e lo schema nella fase di arricchimento dell&#39;output saranno i seguenti:
+I dati e lo schema nell’output della fase di arricchimento saranno i seguenti:
 
 ![](assets/enrichment_content_after_without_additional.png)
 
 ## Creazione di un collegamento {#creating-a-link}
 
-Puoi utilizzare l’attività di arricchimento per creare un collegamento tra i dati di lavoro e il database Adobe Campaign: si tratta di un collegamento locale al flusso di lavoro tra i dati in entrata.
+Puoi utilizzare l’attività di arricchimento per creare un collegamento tra i dati di lavoro e il database di Adobe Campaign: si tratterà di un collegamento locale al flusso di lavoro tra i dati in entrata.
 
-Ad esempio, se carichi i dati di un file contenente il numero di account, il paese e l’e-mail dei destinatari, dovrai creare un collegamento alla tabella del paese per aggiornare tali informazioni nei loro profili.
+Ad esempio, se carichi i dati di un file che contiene il numero di account, il paese e l’e-mail dei destinatari, dovrai creare un collegamento alla tabella del paese per aggiornare queste informazioni nei loro profili.
 
 A questo scopo, esegui i seguenti passaggi:
 
@@ -120,15 +120,15 @@ A questo scopo, esegui i seguenti passaggi:
    83TY2;SWITZERLAND;mike@gmail.com
    ```
 
-1. Modifica l’attività di arricchimento e fai clic sul pulsante **Aggiungi dati...** collegamento per creare un join con la tabella Paese.
+1. Modifica l’attività di arricchimento e fai clic su **Aggiungi dati...** per creare un join con la tabella Country.
 
    ![](assets/enrichment_edit_after_file_box.png)
 
-1. Seleziona la **[!UICONTROL Link definition]** e fai clic su **[!UICONTROL Next]** pulsante . Specifica il tipo di collegamento da creare. In questo esempio, vogliamo riconciliare il paese del destinatario del file con un paese nell’elenco dei paesi disponibili nella tabella dedicata del database. Scegli l’opzione **[!UICONTROL Define a link by searching for a reference among several options]**. Selezionare la tabella del paese nel **[!UICONTROL Target schema]** campo .
+1. Seleziona la **[!UICONTROL Link definition]** e fare clic sul pulsante **[!UICONTROL Next]** pulsante. Specifica il tipo di collegamento da creare. In questo esempio, vogliamo riconciliare il paese del destinatario del file con un paese nell’elenco dei paesi disponibili nella tabella dedicata del database. Scegli l’opzione **[!UICONTROL Define a link by searching for a reference among several options]**. Selezionare la tabella dei paesi in **[!UICONTROL Target schema]** campo.
 
    ![](assets/enrichment_add_a_link_select_option4.png)
 
-1. Infine, selezionare i campi che ti consentiranno di collegare i valori del file di origine a quelli del database.
+1. Infine, selezionare i campi che consentono di collegare i valori del file di origine a quelli del database.
 
    ![](assets/enrichment_add_a_link_select_join.png)
 
@@ -138,27 +138,27 @@ All’output di questa attività di arricchimento, lo schema temporaneo conterr�
 
 ## Riconciliazione dei dati {#data-reconciliation}
 
-L’attività di arricchimento può essere utilizzata per configurare la riconciliazione dei dati, anche una volta caricati i dati nel database. In questo caso, il **[!UICONTROL Reconciliation]** La scheda ti consente di definire il collegamento tra i dati nel database di Adobe Campaign e i dati nella tabella di lavoro.
+L’attività di arricchimento può essere utilizzata per configurare la riconciliazione dei dati, anche dopo che i dati sono stati caricati nel database. In questo caso, il **[!UICONTROL Reconciliation]** Questa scheda ti consente di definire il collegamento tra i dati nel database di Adobe Campaign e i dati nella tabella di lavoro.
 
-Seleziona la **[!UICONTROL Identify the targeting document based on work data]** specificare lo schema a cui si desidera creare un collegamento e definire le condizioni di unione: a questo scopo, seleziona i campi da riconciliare nei dati di lavoro (**[!UICONTROL Source expression]**) e nella dimensione di targeting (**[!UICONTROL Destination expression]**).
+Seleziona la **[!UICONTROL Identify the targeting document based on work data]** , specificare lo schema a cui si desidera creare un collegamento e definire le condizioni di unione: a questo scopo, selezionare i campi da riconciliare nei dati di lavoro (**[!UICONTROL Source expression]**) e nella dimensione di targeting (**[!UICONTROL Destination expression]**).
 
 Puoi utilizzare uno o più criteri di riconciliazione.
 
 ![](assets/enrichment_reconciliations_tab_01.png)
 
-Se sono specificate più condizioni di join, è necessario verificarle TUTTE in modo che i dati possano essere collegati tra loro.
+Se sono specificate più condizioni di unione, è necessario verificarle TUTTE in modo che i dati possano essere collegati tra loro.
 
 ## Inserimento di una proposta di offerta {#inserting-an-offer-proposition}
 
-L’attività di arricchimento ti consente di aggiungere offerte o collegamenti alle offerte per i destinatari della consegna.
+L’attività Enrichment ti consente di aggiungere offerte o collegamenti alle offerte per i destinatari della consegna.
 
-Per ulteriori informazioni sull’attività di arricchimento, consulta questo [sezione](enrichment.md).
+Per ulteriori informazioni sull’attività di arricchimento, consulta [sezione](enrichment.md).
 
 Ad esempio, puoi arricchire i dati di una query del destinatario prima di una consegna.
 
 ![](assets/int_enrichment_offer1.png)
 
-Dopo aver configurato la query (consulta questo [sezione](query.md)):
+Dopo aver configurato la query (consulta questa [sezione](query.md)):
 
 1. Aggiungi e apri un’attività di arricchimento.
 1. Nella scheda **[!UICONTROL Enrichment]**, seleziona **[!UICONTROL Add data]**.
@@ -167,19 +167,19 @@ Dopo aver configurato la query (consulta questo [sezione](query.md)):
    ![](assets/int_enrichment_offer2.png)
 
 1. Specifica un identificatore e un’etichetta per la proposta che verrà aggiunta.
-1. Specifica la selezione dell’offerta. Sono disponibili due opzioni possibili:
+1. Specifica la selezione dell’offerta. Esistono due opzioni possibili per questo:
 
-   * **[!UICONTROL Search for the best offer in a category]**: seleziona questa opzione e specifica i parametri di chiamata del motore di offerta (spazio di offerta, categoria o tema/i, data di contatto, numero di offerte da mantenere). Il motore calcola automaticamente le offerte da aggiungere in base a questi parametri. È consigliabile completare una delle due opzioni **[!UICONTROL Category]** o **[!UICONTROL Theme]** anziché contemporaneamente.
+   * **[!UICONTROL Search for the best offer in a category]**: seleziona questa opzione e specifica i parametri di chiamata del motore di offerta (spazio dell’offerta, categoria o temi, data di contatto, numero di offerte da mantenere). Il motore calcola automaticamente le offerte da aggiungere in base a questi parametri. È consigliabile completare **[!UICONTROL Category]** o **[!UICONTROL Theme]** e non entrambi contemporaneamente.
 
       ![](assets/int_enrichment_offer3.png)
 
-   * **[!UICONTROL A predefined offer]**: seleziona questa opzione e specifica uno spazio di offerta, un’offerta specifica e una data di contatto per configurare direttamente l’offerta che desideri aggiungere, senza chiamare il motore di offerta.
+   * **[!UICONTROL A predefined offer]**: seleziona questa opzione e specifica uno spazio dell’offerta, un’offerta specifica e una data di contatto per configurare direttamente l’offerta da aggiungere, senza chiamare il motore delle offerte.
 
       ![](assets/int_enrichment_offer4.png)
 
-1. Quindi configura un’attività di consegna corrispondente al canale scelto. Fai riferimento a [Consegne cross-channel](cross-channel-deliveries.md).
+1. Quindi configura un’attività di consegna che corrisponde al canale scelto. Fai riferimento a [Consegne cross-channel](cross-channel-deliveries.md).
 
-   Il numero di proposte disponibili per l’anteprima dipende dalla configurazione effettuata nell’attività di arricchimento, anziché da qualsiasi configurazione possibile eseguita direttamente nella consegna.
+   Il numero di proposte disponibili per l’anteprima dipende dalla configurazione eseguita nell’attività di arricchimento anziché da qualsiasi configurazione possibile eseguita direttamente nella consegna.
 
 Per specificare le proposte di offerta, puoi anche scegliere di fare riferimento a un collegamento a un’offerta. Per ulteriori informazioni, consulta la sezione seguente [Riferimento a un collegamento a un’offerta](#referencing-a-link-to-an-offer).
 
@@ -189,27 +189,27 @@ Puoi anche fare riferimento a un collegamento a un’offerta in un’attività d
 
 Per eseguire questa operazione:
 
-1. Seleziona **[!UICONTROL Add data]** nel **[!UICONTROL Enrichment]** scheda .
-1. Nella finestra in cui scegli il tipo di dati da aggiungere, seleziona **[!UICONTROL A link]**.
-1. Seleziona il tipo di collegamento che desideri stabilire e la relativa destinazione. In questo caso, la destinazione è lo schema dell&#39;offerta.
+1. Seleziona **[!UICONTROL Add data]** nel file dell’attività **[!UICONTROL Enrichment]** scheda.
+1. Nella finestra in cui si sceglie il tipo di dati da aggiungere, selezionare **[!UICONTROL A link]**.
+1. Seleziona il tipo di collegamento che desideri stabilire e la relativa destinazione. In questo caso, la destinazione è lo schema dell’offerta.
 
    ![](assets/int_enrichment_link1.png)
 
-1. Specifica il join tra i dati della tabella in entrata nell’attività di arricchimento (in questo caso la tabella dei destinatari) e la tabella delle offerte. Ad esempio, puoi collegare un codice di offerta a un destinatario.
+1. Specifica il join tra i dati della tabella in entrata nell’attività di arricchimento (qui la tabella dei destinatari) e la tabella delle offerte. Ad esempio, puoi collegare un codice di offerta a un destinatario.
 
    ![](assets/int_enrichment_link2.png)
 
-1. Quindi configura un’attività di consegna corrispondente al canale scelto. Fai riferimento a [Consegne cross-channel](cross-channel-deliveries.md).
+1. Quindi configura un’attività di consegna che corrisponde al canale scelto. Fai riferimento a [Consegne cross-channel](cross-channel-deliveries.md).
 
    >[!NOTE]
    >
    >Il numero di proposte disponibili per l’anteprima dipende dalla configurazione eseguita nella consegna.
 
-## Memorizzazione di ranking e pesi delle offerte {#storing-offer-rankings-and-weights}
+## Memorizzazione delle classificazioni e dei pesi delle offerte {#storing-offer-rankings-and-weights}
 
-Per impostazione predefinita, quando un **arricchimento** l’attività viene utilizzata per fornire offerte, le loro classificazioni e i loro pesi non vengono memorizzati nella tabella delle proposte.
+Per impostazione predefinita, quando **arricchimento** L’attività viene utilizzata per fornire le offerte; le loro classificazioni e i loro pesi non vengono memorizzati nella tabella delle proposte.
 
-La **[!UICONTROL Offer engine]** per impostazione predefinita queste informazioni vengono memorizzate nell’attività .
+Il **[!UICONTROL Offer engine]** l’attività memorizza queste informazioni per impostazione predefinita.
 
 Tuttavia, è possibile memorizzare queste informazioni come segue:
 
@@ -218,10 +218,10 @@ Tuttavia, è possibile memorizzare queste informazioni come segue:
 
    ![](assets/ita_enrichment_rankweight_1.png)
 
-1. Aggiungi il **[!UICONTROL @rank]** colonne per la classificazione e **[!UICONTROL @weight]** per il peso dell&#39;offerta.
+1. Aggiungi il **[!UICONTROL @rank]** colonne per la classificazione e **[!UICONTROL @weight]** per il peso dell’offerta.
 
    ![](assets/ita_enrichment_rankweight_2.png)
 
 1. Conferma l’aggiunta e salva il flusso di lavoro.
 
-La consegna memorizza automaticamente la classificazione e il peso delle offerte. Queste informazioni sono visibili nella **[!UICONTROL Offers]** scheda .
+La consegna memorizza automaticamente la classificazione e il peso delle offerte. Queste informazioni sono visibili nel **[!UICONTROL Offers]** scheda.

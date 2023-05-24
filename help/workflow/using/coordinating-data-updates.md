@@ -16,9 +16,9 @@ ht-degree: 3%
 
 
 
-Questo caso d’uso descrive la creazione di un flusso di lavoro che consente di gestire gli aggiornamenti simultanei quando si utilizzano diverse esecuzioni di un flusso di lavoro.
+Questo caso d’uso descrive la creazione di un flusso di lavoro che consente di gestire gli aggiornamenti concomitanti quando si utilizzano diverse esecuzioni di un flusso di lavoro.
 
-L’obiettivo è quello di verificare che il processo di aggiornamento sia terminato prima di eseguire un’altra operazione di aggiornamento. A questo scopo, imposteremo una variabile di istanza e lasceremo che il flusso di lavoro verifichi se l’istanza è in esecuzione per decidere se continuare o meno l’esecuzione del flusso di lavoro ed eseguire l’aggiornamento.
+Lo scopo è verificare che il processo di aggiornamento sia terminato prima di eseguire un&#39;altra operazione di aggiornamento. A questo scopo, verrà impostata una variabile di istanza e verrà eseguito un test del flusso di lavoro se l’istanza è in esecuzione per decidere se continuare l’esecuzione del flusso di lavoro ed eseguire l’aggiornamento.
 
 ![](assets/uc_dataupdate_wkf.png)
 
@@ -26,13 +26,13 @@ Questo flusso di lavoro è costituito da:
 
 * a **Scheduler** che esegue il flusso di lavoro su una frequenza specifica.
 * a **Test** attività che controlla se il flusso di lavoro è già in esecuzione.
-* **Query** e **Update data** attività nel caso in cui il flusso di lavoro non sia già in esecuzione, seguite da un **Fine** attività che reinizializza la variabile dell’istanza del flusso di lavoro su false.
+* **Query** e **Aggiorna dati** attività nel caso in cui il flusso di lavoro non sia già in esecuzione, seguite da **Fine** attività che reinizializza la variabile dell’istanza del flusso di lavoro su false.
 * Un **Fine** se il flusso di lavoro è già in esecuzione.
 
-Per creare il flusso di lavoro, segui i passaggi seguenti:
+Per creare il flusso di lavoro, effettua le seguenti operazioni:
 
-1. Aggiungi un **Scheduler** , quindi configurane la frequenza in base alle tue esigenze.
-1. Aggiungi un **Test** per verificare se il flusso di lavoro è già in esecuzione, configuralo come segue.
+1. Aggiungi un **Scheduler** e configurarne la frequenza in base alle tue esigenze.
+1. Aggiungi un **Test** per verificare se il flusso di lavoro è già in esecuzione, quindi configuralo come segue.
 
    >[!NOTE]
    >
@@ -40,19 +40,19 @@ Per creare il flusso di lavoro, segui i passaggi seguenti:
 
    ![](assets/uc_dataupdate_test.png)
 
-1. Aggiungi un **Fine** attività **No** forchetta. In questo modo, non verrà eseguito nulla se il flusso di lavoro è già in esecuzione.
-1. Aggiungi le attività desiderate al **Sì** forchetta. Nel nostro caso, **Query** e **Aggiorna dati** attività.
-1. Apri la prima attività, quindi aggiungi la **instance.vars.isRunning = true** nel comando **[!UICONTROL Advanced]** scheda . In questo modo, la variabile di istanza viene impostata come in esecuzione.
+1. Aggiungi un **Fine** attività al **No** fork. In questo modo, non viene eseguito nulla se il flusso di lavoro è già in esecuzione.
+1. Aggiungi le attività desiderate al **Sì** fork. Nel nostro caso, **Query** e **Aggiorna dati** attività.
+1. Apri la prima attività, quindi aggiungi **instance.vars.isRunning = true** comando in **[!UICONTROL Advanced]** scheda. In questo modo, la variabile di istanza viene impostata come in esecuzione.
 
    ![](assets/uc_dataupdate_query.png)
 
-1. Aggiungi un **Fine** attività alla fine del **[!UICONTROL Yes]** fork, quindi aggiungere il **instance.vars.isRunning = false** nel comando **[!UICONTROL Advanced]** scheda .
+1. Aggiungi un **Fine** attività alla fine del **[!UICONTROL Yes]** fork, quindi aggiungi **instance.vars.isRunning = false** comando in **[!UICONTROL Advanced]** scheda.
 
-   In questo modo, non verrà eseguita alcuna azione finché il flusso di lavoro è in esecuzione.
+   In questo modo, non verrà eseguita alcuna azione durante l’esecuzione del flusso di lavoro.
 
    ![](assets/uc_dataupdate_end.png)
 
 **Argomenti correlati:**
 
 * [Impedire esecuzioni simultanee multiple](monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions)
-* [Aggiorna attività dati](update-data.md)
+* [Attività Update Data](update-data.md)

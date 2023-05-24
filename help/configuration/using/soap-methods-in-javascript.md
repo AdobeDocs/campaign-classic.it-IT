@@ -17,9 +17,9 @@ Questo è il JavaScript eseguito sul server Adobe Campaign.
 
 ## Metodi statici {#static-methods}
 
-È possibile accedere ai metodi SOAP statici richiamando un metodo sull&#39;oggetto che rappresenta lo schema. Gli schemi sono proprietà degli oggetti &quot;namespace&quot;. Questi namespace sono variabili globali, pertanto, ad esempio, le variabili xtk o nms rappresentano i namespace corrispondenti
+I metodi SOAP statici sono accessibili richiamando un metodo sull&#39;oggetto che rappresenta lo schema. Gli schemi sono proprietà degli oggetti &#39;namespace&#39;. Questi spazi dei nomi sono variabili globali, pertanto, ad esempio, le variabili xtk o nms rappresentano gli spazi dei nomi corrispondenti
 
-L&#39;esempio seguente richiama il metodo statico PostEvent dello schema xtk:workflow:
+Nell&#39;esempio seguente viene richiamato il metodo PostEvent statico dello schema xtk:workflow:
 
 ```
 xtk.workflow.PostEvent("WKF1", "signal", "", $recipient-id='123', false) 
@@ -27,9 +27,9 @@ xtk.workflow.PostEvent("WKF1", "signal", "", $recipient-id='123', false)
 
 ## Metodi non statici {#non-static-methods}
 
-Per utilizzare metodi SOAP non statici, è innanzitutto necessario recuperare un’entità utilizzando i metodi &quot;get&quot; o &quot;create&quot; negli schemi corrispondenti.
+Per utilizzare metodi SOAP non statici, è necessario innanzitutto recuperare un’entità utilizzando i metodi &quot;get&quot; o &quot;create&quot; negli schemi corrispondenti.
 
-L&#39;esempio seguente richiama il metodo ExecuteQuery dello schema &quot;xtk:queryDef&quot;:
+Nell&#39;esempio seguente viene richiamato il metodo ExecuteQuery dello schema &quot;xtk:queryDef&quot;:
 
 ```
 var query = xtk.queryDef.create(
@@ -48,7 +48,7 @@ for each (var w in res.workflow)
 
 ## Esempi {#examples}
 
-* Esegui una query sulla tabella dei destinatari con un’operazione &quot;get&quot;:
+* Eseguire una query sulla tabella dei destinatari con un’operazione &quot;get&quot;:
 
    ```
    var query = xtk.queryDef.create(  
@@ -69,7 +69,7 @@ for each (var w in res.workflow)
    logInfo(recipient.@lastName)
    ```
 
-* Esegui una query sulla tabella dei destinatari con un’operazione &quot;select&quot;:
+* Eseguire una query sulla tabella dei destinatari con un&#39;operazione di selezione:
 
    ```
    var query = xtk.queryDef.create(  

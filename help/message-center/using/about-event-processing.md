@@ -18,9 +18,9 @@ ht-degree: 2%
 
 
 
-Nel contesto della messaggistica transazionale, un evento viene generato da un sistema di informazioni esterno e inviato ad Adobe Campaign tramite il **[!UICONTROL PushEvent]** e **[!UICONTROL PushEvents]** metodi (vedi [Descrizione evento](../../message-center/using/event-description.md)).
+Nel contesto dei messaggi transazionali, un evento viene generato da un sistema di informazioni esterno e inviato ad Adobe Campaign tramite **[!UICONTROL PushEvent]** e **[!UICONTROL PushEvents]** metodi (vedere [Descrizione evento](../../message-center/using/event-description.md)).
 
-Questo evento contiene dati collegati all&#39;evento, ad esempio [type](../../message-center/using/creating-event-types.md) (conferma dell’ordine, creazione dell’account su un sito web, ecc.), indirizzo e-mail o numero di cellulare, nonché altre informazioni che consentono di arricchire e personalizzare il messaggio transazionale prima della consegna (informazioni di contatto del cliente, lingua del messaggio, formato e-mail, ecc.).
+Questo evento contiene dati collegati all’evento, ad esempio [tipo](../../message-center/using/creating-event-types.md) (conferma dell’ordine, creazione di un account su un sito web, ecc.), indirizzo e-mail o numero di cellulare, nonché altre informazioni che ti consentono di arricchire e personalizzare il messaggio transazionale prima della consegna (informazioni di contatto del cliente, lingua del messaggio, formato e-mail, ecc.).
 
 Esempio di dati evento:
 
@@ -28,28 +28,28 @@ Esempio di dati evento:
 
 ## Passaggi di elaborazione degli eventi {#event-processing}
 
-Per elaborare gli eventi di messaggistica transazionale, i seguenti passaggi vengono applicati alle istanze di esecuzione:
+Per elaborare gli eventi di messaggistica transazionale, alle istanze di esecuzione vengono applicati i seguenti passaggi:
 
 1. [Raccolta di eventi](#event-collection)
 1. [Trasferimento di eventi a un modello di messaggio](#routing-towards-a-template)
-1. Arricchimento degli eventi con dati di personalizzazione
+1. Arricchimento degli eventi con i dati di personalizzazione
 1. [Esecuzione della consegna](../../message-center/using/delivery-execution.md)
-1. [Riciclo degli eventi](#event-recycling) la cui consegna collegata non è riuscita (tramite un flusso di lavoro Adobe Campaign)
+1. [Riciclaggio di eventi](#event-recycling) consegna collegata non riuscita (tramite un flusso di lavoro Adobe Campaign)
 
-Una volta eseguiti tutti i passaggi precedenti tramite l’istanza di esecuzione, ogni destinatario con targeting riceve un messaggio personalizzato.
+Una volta eseguiti tutti i passaggi precedenti tramite l’istanza di esecuzione, ogni destinatario destinatario riceve un messaggio personalizzato.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle istanze di messaggistica transazionale, consulta [Architettura della messaggistica transazionale](../../message-center/using/transactional-messaging-architecture.md).
+>Per ulteriori informazioni sulle istanze di messaggistica transazionale, consulta [Architettura dei messaggi transazionali](../../message-center/using/transactional-messaging-architecture.md).
 
 
 ## Raccolta di eventi {#event-collection}
 
 Gli eventi generati dal sistema di informazione possono essere raccolti utilizzando due modalità:
 
-* Le chiamate ai metodi SOAP consentono di inviare eventi in push in Adobe Campaign: il metodo PushEvent consente di inviare un evento alla volta, il metodo PushEvents consente di inviare diversi eventi contemporaneamente. Per ulteriori informazioni, consulta [Descrizione evento](../../message-center/using/event-description.md).
+* Le chiamate ai metodi SOAP consentono di inviare eventi in Adobe Campaign: il metodo PushEvent consente di inviare un evento alla volta, il metodo PushEvents consente di inviare diversi eventi alla volta. Per ulteriori informazioni, consulta [Descrizione evento](../../message-center/using/event-description.md).
 
-* La creazione di un flusso di lavoro consente di recuperare gli eventi importando i file o tramite un gateway SQL (con [Federated Data Access](../../installation/using/about-fda.md) ).
+* La creazione di un flusso di lavoro consente di recuperare gli eventi importando file o tramite un gateway SQL (con [Federated Data Access](../../installation/using/about-fda.md) opzionale).
 
 Una volta raccolti, gli eventi vengono suddivisi per flussi di lavoro tecnici tra le code in tempo reale e batch delle istanze di esecuzione, in attesa di essere collegati a un modello di messaggio.
 
@@ -57,48 +57,48 @@ Una volta raccolti, gli eventi vengono suddivisi per flussi di lavoro tecnici tr
 
 >[!NOTE]
 >
->Nelle istanze di esecuzione, la **[!UICONTROL Real time events]** o **[!UICONTROL Batch events]** le cartelle non devono essere impostate come visualizzazioni, in quanto ciò potrebbe causare problemi di accesso ai diritti. Per ulteriori informazioni sull’impostazione di una cartella come visualizzazione, consulta [questa sezione](../../platform/using/access-management-folders.md).
+>Nelle istanze di esecuzione, il **[!UICONTROL Real time events]** o **[!UICONTROL Batch events]** le cartelle non devono essere impostate come viste, in quanto ciò potrebbe causare problemi di diritti di accesso. Per ulteriori informazioni sull’impostazione di una cartella come visualizzazione, consulta [questa sezione](../../platform/using/access-management-folders.md).
 
 ## Instradamento verso un modello {#routing-towards-a-template}
 
-Una volta pubblicato il modello di messaggio sulle istanze di esecuzione, vengono generati automaticamente due modelli: da collegare a un evento in tempo reale e da collegare a un evento batch.
+Una volta pubblicato il modello di messaggio nelle istanze di esecuzione, vengono generati automaticamente due modelli: uno da collegare a un evento in tempo reale e uno da collegare a un evento batch.
 
-La fase di indirizzamento consiste nel collegare un evento al modello di messaggio appropriato, in base a:
+La fase di instradamento consiste nel collegare un evento al modello di messaggio appropriato, in base a:
 
-* Il tipo di evento specificato nelle proprietà dell&#39;evento stesso:
+* Il tipo di evento specificato nelle proprietà dell’evento stesso:
 
    ![](assets/messagecenter_event_type_001.png)
 
-* Il tipo di evento specificato nelle proprietà del modello di messaggio:
+* Tipo di evento specificato nelle proprietà del modello di messaggio:
 
    ![](assets/messagecenter_event_type_002.png)
 
-Per impostazione predefinita, il ciclo di produzione si basa sulle seguenti informazioni:
+Per impostazione predefinita, il ciclo si basa sulle seguenti informazioni:
 
-* Il tipo di evento
-* Il canale da utilizzare (per impostazione predefinita: e-mail)
-* Il modello di consegna più recente, in base alla data di pubblicazione
+* Tipo di evento
+* Canale da utilizzare (per impostazione predefinita: e-mail)
+* Modello di consegna più recente, in base alla data di pubblicazione
 
 ## Stati degli eventi {#event-statuses}
 
-La **Cronologia eventi**, **[!UICONTROL Message Center]** > **[!UICONTROL Event history]** , raggruppa tutti gli eventi elaborati in un’unica visualizzazione. Possono essere suddivisi per tipo di evento o per **status**. Questi stati sono:
+Il **Cronologia eventi**, in **[!UICONTROL Message Center]** > **[!UICONTROL Event history]** , raggruppa tutti gli eventi elaborati in un’unica vista. Possono essere categorizzate per tipo di evento o per **stato**. Questi stati sono:
 
-* **In sospeso**: L’evento può essere:
+* **In sospeso**: l’evento può essere:
 
-   * Un evento che è appena stato raccolto e che non è ancora stato elaborato. La **[!UICONTROL Number of errors]** mostra il valore 0. Il modello e-mail non è ancora stato collegato.
-   * Un evento elaborato ma la cui conferma è errata. La **[!UICONTROL Number of errors]** mostra un valore diverso da 0. Per sapere quando questo evento verrà elaborato di nuovo, consulta la **[!UICONTROL Process requested on]** colonna.
+   * Un evento che è stato appena raccolto e che non è ancora stato elaborato. Il **[!UICONTROL Number of errors]** mostra il valore 0. Il modello e-mail non è ancora stato collegato.
+   * Un evento elaborato ma la cui conferma è errata. Il **[!UICONTROL Number of errors]** mostra un valore diverso da 0. Per sapere quando questo evento verrà elaborato di nuovo, consulta **[!UICONTROL Process requested on]** colonna.
 
-* **Consegna in sospeso**: L’evento è stato elaborato e il modello di consegna è collegato. L’e-mail è in attesa di consegna e viene applicato il processo di consegna classico . Per ulteriori informazioni, puoi aprire la consegna.
-* **Inviato**, **Ignorato** e **Errore di consegna**: Questi stati di consegna vengono recuperati tramite **updateEventsStatus** workflow. Per ulteriori informazioni, puoi aprire la consegna pertinente.
-* **Evento non coperto**: La fase di indirizzamento della messaggistica transazionale non è riuscita. Ad esempio, Adobe Campaign non ha trovato l’e-mail che funge da modello per l’evento.
-* **Evento scaduto**: È stato raggiunto il numero massimo di tentativi di invio. L&#39;evento è considerato nullo.
+* **Consegna in sospeso**: l’evento è stato elaborato e il modello di consegna è collegato. L’e-mail è in attesa di consegna e viene applicato il processo di consegna classico. Per ulteriori informazioni, puoi aprire la consegna.
+* **Inviato**, **Ignorato** e **Errore di consegna**: questi stati di consegna vengono recuperati tramite **updateEventsStatus** flusso di lavoro. Per ulteriori informazioni, puoi aprire la consegna pertinente.
+* **Evento non coperto**: fase di routing della messaggistica transazionale non riuscita. Ad esempio, Adobe Campaign non ha trovato l’e-mail che funge da modello per l’evento.
+* **Evento scaduto**: è stato raggiunto il numero massimo di tentativi di invio. L’evento è considerato nullo.
 
 ## Riciclaggio degli eventi {#event-recycling}
 
-Se la consegna di un messaggio su un canale specifico non riesce, Adobe Campaign può inviare nuovamente il messaggio utilizzando un canale diverso. Ad esempio, se una consegna sul canale SMS non riesce, il messaggio viene inviato nuovamente utilizzando il canale e-mail.
+Se la consegna di un messaggio su un canale specifico non riesce, Adobe Campaign può inviarlo nuovamente utilizzando un canale diverso. Ad esempio, se una consegna sul canale SMS non riesce, il messaggio viene inviato nuovamente utilizzando il canale e-mail.
 
-A questo scopo, devi configurare un flusso di lavoro che ricrea tutti gli eventi con il **Errore di consegna** e assegna loro un canale diverso.
+A questo scopo, devi configurare un flusso di lavoro che ricrea tutti gli eventi con **Errore di consegna** e assegna loro un canale diverso.
 
 >[!CAUTION]
 >
->Questo passaggio può essere eseguito solo utilizzando un flusso di lavoro ed è pertanto riservato agli utenti esperti. Per ulteriori informazioni, contatta il tuo responsabile dell&#39;account di Adobe.
+>Questo passaggio può essere eseguito solo utilizzando un flusso di lavoro ed è quindi riservato agli utenti esperti. Per ulteriori informazioni, contatta il responsabile del tuo account Adobe.

@@ -16,37 +16,37 @@ ht-degree: 0%
 
 
 
-Un **Approvazione** Il compito richiede la partecipazione di un operatore. All’operatore viene assegnata un’attività e può rispondere tramite e-mail, utilizzando la pagina web collegata nel messaggio e-mail o tramite la console.
+Un **Approvazione** l&#39;operazione richiede la partecipazione di un operatore. All’operatore viene assegnata un’attività e può rispondere tramite e-mail, utilizzando la pagina web collegata nel messaggio e-mail o tramite la console.
 
 ## Assegnazione attività {#task-assignment}
 
-Per impostazione predefinita, l’approvazione viene assegnata a un gruppo di operatori. Questo gruppo rappresenta un ruolo, ad esempio &quot;Gruppo di contenuti per newsletter&quot; o &quot;Gruppo di destinazione per newsletter&quot;. Ogni operatore del gruppo può rispondere, ma si tiene conto solo della prima risposta (salvo in caso di più approvazioni).
+Per impostazione predefinita, l’approvazione viene assegnata a un gruppo di operatori. Questo gruppo rappresenta un ruolo, ad esempio &quot;Gruppo di contenuti newsletter&quot; o &quot;Gruppo di targeting newsletter&quot;. Ogni operatore del gruppo può rispondere, ma viene presa in considerazione solo la prima risposta (tranne in caso di più approvazioni).
 
-Se necessario, è possibile assegnare l&#39;attività di approvazione a un singolo operatore o a un set di operatori definiti da un filtro.
+Se necessario, è possibile assegnare l&#39;attività di approvazione a un singolo operatore o a un insieme di operatori definiti da un filtro.
 
-* Per selezionare un singolo operatore, seleziona la **[!UICONTROL Operator]** nel **[!UICONTROL Assignment type]** e seleziona l’operatore pertinente nell’elenco a discesa del **[!UICONTROL Assignee]** campo .
+* Per selezionare un singolo operatore, selezionare **[!UICONTROL Operator]** valore in **[!UICONTROL Assignment type]** e selezionare l&#39;operatore pertinente nell&#39;elenco a discesa del **[!UICONTROL Assignee]** campo.
 
    ![](assets/s_advuser_validation_box_assign.png)
 
    >[!CAUTION]
    >
-   >Solo l’operatore scelto sarà autorizzato ad approvare l’attività.
+   >Solo l&#39;operatore scelto sarà autorizzato ad approvare l&#39;attività.
 
-* Puoi definire una query per filtrare l’approvazione degli operatori. A questo scopo, seleziona la **[!UICONTROL Filter]** nel **[!UICONTROL Assignment type]** e fai clic sul campo **[!UICONTROL Advanced parameters...]** per definire le condizioni di filtro, come illustrato nell’esempio seguente:
+* Puoi definire una query per filtrare gli operatori di approvazione. A questo scopo, seleziona la **[!UICONTROL Filter]** valore in **[!UICONTROL Assignment type]** e fare clic sul pulsante **[!UICONTROL Advanced parameters...]** per definire le condizioni di filtro, come mostrato nell’esempio seguente:
 
    ![](assets/s_advuser_validation_box_filter.png)
 
-In caso di singola approvazione, la transizione corrispondente alla scelta dell&#39;operatore viene attivata e l&#39;attività è terminata: gli altri operatori non possono rispondere.
+In caso di approvazione singola, viene attivata la transizione corrispondente alla scelta dell’operatore e l’operazione è terminata: gli altri operatori non possono rispondere.
 
-In caso di più approvazioni, le transizioni corrispondenti alla scelta di ciascun operatore sono abilitate. L&#39;attività è terminata quando tutti gli operatori del gruppo hanno risposto o quando l&#39;attività è scaduta.
+In caso di più approvazioni, sono abilitate le transizioni corrispondenti alla scelta di ciascun operatore. L&#39;attività viene completata quando tutti gli operatori del gruppo hanno risposto o quando l&#39;attività è scaduta.
 
-Questa attività non blocca l’elaborazione e il flusso di lavoro può eseguire altre attività in attesa di una risposta.
+Questa attività non blocca l’elaborazione e il flusso di lavoro può eseguire altre attività in attesa di risposta.
 
-Un operatore può approvare le attività assegnate a tale operatore dalla console. Un operatore con diritti di amministratore può visualizzare ed eliminare le attività assegnate a qualsiasi operatore, ma non può rispondervi.
+Un operatore può approvare i compiti assegnati a tale operatore dalla console. Un operatore con diritti di amministratore può visualizzare ed eliminare le attività assegnate a qualsiasi operatore, ma non può rispondervi.
 
-La modifica del corpo del titolo o del messaggio dell’attività non influisce sulle attività correnti, ma, d’altra parte, la modifica delle possibili scelte influisce direttamente sulle attività correnti, che ereditano automaticamente il nuovo elenco di scelte.
+La modifica del titolo o del corpo del messaggio dell’attività non influisce sulle attività correnti, ma, d’altra parte, la modifica delle scelte possibili influisce direttamente sulle attività correnti, che ereditano automaticamente il nuovo elenco di scelte.
 
-**Approvazione** le attività di tipo sono accessibili dal **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** nodo: gli operatori possono accedere al modulo di approvazione direttamente da questa visualizzazione.
+**Approvazione** le attività di tipo sono accessibili da **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** node: gli operatori possono accedere al modulo di approvazione direttamente tramite questa vista.
 
 ![](assets/s_advuser_validation_from_console.png)
 
@@ -56,15 +56,15 @@ Le variabili di personalizzazione possono essere utilizzate nel messaggio inviat
 
 ![](assets/edit_validation.png)
 
-Questo **[!UICONTROL Title]** il campo contiene il titolo del messaggio: Questo è l’oggetto del messaggio e-mail inviato. Il titolo e il corpo del messaggio sono modelli JavaScript e possono quindi contenere valori calcolati in base al contesto del flusso di lavoro.
+Questo **[!UICONTROL Title]** contiene il titolo del messaggio: Questo è l’oggetto del messaggio e-mail inviato. Il titolo, così come il corpo del messaggio, sono modelli JavaScript e possono quindi contenere valori calcolati in base al contesto del flusso di lavoro.
 
-La sezione inferiore dell’editor ti consente di definire l’elenco delle possibili risposte. Esiste una transizione corrispondente a ogni risposta. Il nome è l’identificatore interno e l’etichetta è il testo che verrà visualizzato nell’elenco delle scelte.
+La sezione inferiore dell’editor ti consente di definire l’elenco delle risposte possibili. Esiste una transizione corrispondente a ogni risposta. Il nome è l&#39;identificatore interno e l&#39;etichetta è il testo che verrà visualizzato nell&#39;elenco di scelte.
 
-Fai clic sul pulsante **[!UICONTROL Advanced parameters...]** collegamento per selezionare il modello di consegna da utilizzare per la notifica agli operatori. Il modello predefinito (nome interno &quot;notifyAssignee&quot;) prende il titolo e il messaggio e aggiunge un collegamento alla pagina web utilizzata per rispondere.
+Fai clic su **[!UICONTROL Advanced parameters...]** per selezionare il modello di consegna da utilizzare per la notifica agli operatori. Il modello predefinito (nome interno &quot;notificationAssignee&quot;) prende il titolo e il messaggio e aggiunge un collegamento alla pagina web utilizzata per rispondere.
 
-È possibile modificare questo modello per personalizzare il layout del messaggio, ma è preferibile creare una copia. Il meccanismo di targeting (file esterno, mappatura target) non deve essere modificato perché è necessario per il corretto funzionamento delle notifiche.
+Questo modello può essere modificato per personalizzare il layout del messaggio, ma è preferibile crearne una copia. Il meccanismo di targeting (file esterno, mappatura destinazione) non deve essere modificato perché è necessario per il corretto funzionamento delle notifiche.
 
-Un esempio di approvazione viene mostrato in [Definizione delle approvazioni](defining-approvals.md).
+Un esempio di approvazione è mostrato in [Definizione delle approvazioni](defining-approvals.md).
 
 ## Parametri di output {#output-parameters}
 
@@ -74,4 +74,4 @@ Un esempio di approvazione viene mostrato in [Definizione delle approvazioni](de
 
 * **[!UICONTROL responseOperator]**
 
-   Identificatore dell’operatore che ha risposto. Questo campo è un valore numerico, ma è **[!UICONTROL String]** campo .
+   Identificatore dell’operatore che ha risposto. Questo campo è un valore numerico, ma **[!UICONTROL String]** campo.

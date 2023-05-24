@@ -20,27 +20,27 @@ ht-degree: 0%
 
 ## Modello dati di messaggistica transazionale {#about-transactional-messaging-datamodel}
 
-La messaggistica transazionale si basa sul modello dati di Adobe Campaign e utilizza due tabelle separate aggiuntive. Tali [tabelle](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** e **NmsBatchEvent**, contiene gli stessi campi e consente di gestire gli eventi in tempo reale da un lato e gli eventi batch dall’altro.
+La messaggistica transazionale si basa sul modello dati di Adobe Campaign e utilizza due tabelle separate aggiuntive. Questi [tabelle](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** e **NmsBatchEvent**, contengono gli stessi campi e consentono di gestire gli eventi in tempo reale da un lato e gli eventi batch dall’altro.
 
 ## Metodi SOAP {#soap-methods}
 
 Questa sezione descrive i metodi SOAP associati agli schemi del modulo dei messaggi transazionali.
 
-Due **PushEvent** o **PushEvents** I metodi SOAP sono collegati ai due **nms:rtEvent** e **nms:BatchEvent** dataschemas. È il sistema di informazioni che determina se un evento è un tipo &quot;batch&quot; o &quot;in tempo reale&quot;.
+Due **PushEvent** o **PushEvents** I metodi SOAP sono collegati ai due **nms:rtEvent** e **nms:BatchEvent** dataschemi. È il sistema informativo che determina se un evento è di tipo &quot;batch&quot; o &quot;tempo reale&quot;.
 
 * **PushEvent** consente di inserire un singolo evento nel messaggio,
 * **PushEvents** consente di inserire una serie di eventi nel messaggio.
 
-Il percorso WSDL per l’accesso a entrambi i metodi è:
+Il percorso WSDL per l&#39;accesso a entrambi i metodi è:
 
 * **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent** per accedere allo schema del tipo in tempo reale.
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent** per accedere allo schema del tipo batch.
+* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent** per accedere allo schema del tipo di batch.
 
-Per ulteriori informazioni sulla generazione di un file WSDL, consulta [questa sezione](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
+Per ulteriori informazioni sulla generazione di un file WSDL, vedere [questa sezione](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
 
-Entrambi i metodi contengono un **`<urn:sessiontoken>`** per l’accesso al modulo di messaggistica transazionale. È consigliabile utilizzare un metodo di identificazione tramite indirizzi IP attendibili. Per recuperare il token di sessione, esegui una chiamata SOAP di accesso, quindi un token get seguito da una disconnessione. Utilizza lo stesso token per diverse chiamate RT. Gli esempi inclusi in questa sezione utilizzano il metodo token di sessione che è quello consigliato.
+Entrambi i metodi contengono un **`<urn:sessiontoken>`** per accedere al modulo di messaggistica transazionale. È consigliabile utilizzare un metodo di identificazione tramite indirizzi IP attendibili. Per recuperare il token di sessione, esegui una chiamata SOAP di accesso, quindi un token GET seguito da una disconnessione. Utilizza lo stesso token per diverse chiamate RT. Gli esempi inclusi in questa sezione utilizzano il metodo del token di sessione consigliato.
 
-Se utilizzi un server con carico bilanciato, puoi utilizzare l’autenticazione Utente/Password (a livello del messaggio RT). Esempio:
+Se utilizzi un server con bilanciamento del carico, puoi utilizzare l’autenticazione Utente/Password (a livello del messaggio RT). Esempio:
 
 ```
 <PushEvent xmlns="urn:nms:rtEvent">
@@ -54,11 +54,11 @@ Se utilizzi un server con carico bilanciato, puoi utilizzare l’autenticazione 
 </PushEvent>
 ```
 
-La **PushEvent** è costituito da un **`<urn:domevent>`** che contiene l&#39;evento .
+Il **PushEvent** è costituito da un **`<urn:domevent>`** parametro che contiene l’evento.
 
-La **PushEvents** è costituito da un **`<urn:domeventcollection>`** che contiene eventi.
+Il **PushEvents** è costituito da un **`<urn:domeventcollection>`** parametro che contiene eventi.
 
-Esempio con PushEvent:
+Esempio di utilizzo di PushEvent:
 
 ```
 <urn:PushEvent>
@@ -80,7 +80,7 @@ Esempio con PushEvent:
 
 >[!NOTE]
 >
->In caso di chiamata al **PushEvents** per rispettare gli standard XML, è necessario aggiungere un elemento XML padre. Questo elemento XML inquadrerà i vari **`<rtevent>`** elementi contenuti nell’evento.
+>In caso di chiamata al **PushEvents** , è necessario aggiungere un elemento XML padre per garantire la conformità con XML standard. Questo elemento XML incornicierà i vari **`<rtevent>`** elementi contenuti nell’evento.
 
 Esempio di utilizzo di PushEvents:
 
@@ -106,13 +106,13 @@ Esempio di utilizzo di PushEvents:
 </urn:PushEvents>
 ```
 
-La **`<rtevent>`** e **`<batchevent>`** gli elementi hanno un set di attributi e un elemento figlio obbligatorio: **`<ctx>`** per l’integrazione dei dati dei messaggi.
+Il **`<rtevent>`** e **`<batchevent>`** Gli elementi dispongono di un set di attributi e di un elemento figlio obbligatorio: **`<ctx>`** per l’integrazione dei dati dei messaggi.
 
 >[!NOTE]
 >
->La **`<batchevent>`** consente di aggiungere l’evento alla coda &quot;batch&quot;. La **`<rtevent>`** aggiunge l’evento alla coda &quot;in tempo reale&quot;.
+>Il **`<batchevent>`** consente di aggiungere l’evento alla coda &quot;batch&quot;. Il **`<rtevent>`** aggiunge l’evento alla coda &quot;in tempo reale&quot;.
 
-Gli attributi obbligatori del **`<rtevent>`** e **`<batchevent>`** gli elementi sono @type e @email. Il valore di @type deve essere lo stesso del valore di elenco dettagliato definito durante la configurazione dell’istanza di esecuzione. Questo valore ti consente di definire il modello da collegare al contenuto dell’evento durante la consegna.
+Gli attributi obbligatori del **`<rtevent>`** e **`<batchevent>`** Gli elementi sono @type e @email. Il valore di @type deve essere uguale al valore dell’elenco dettagliato definito durante la configurazione dell’istanza di esecuzione. Questo valore ti consente di definire il modello da collegare al contenuto dell’evento durante la consegna.
 
 `<rtevent> configuration example:`
 
@@ -120,21 +120,21 @@ Gli attributi obbligatori del **`<rtevent>`** e **`<batchevent>`** gli elementi 
 <rtEvent type="order_confirmation" email="john.doe@domain.com" origin="eCommerce" wishedChannel="0" externalId="1242" mobilePhone="+33620202020"> 
 ```
 
-In questo esempio vengono forniti due canali: l&#39;indirizzo e-mail e il numero di telefono cellulare. La **wishChannel** consente di selezionare il canale da utilizzare per trasformare l’evento in un messaggio. Il valore &quot;0&quot; corrisponde al canale e-mail, il valore &quot;1&quot; al canale mobile, ecc.
+In questo esempio, vengono forniti due canali: l’indirizzo e-mail e il numero di telefono cellulare. Il **wwishChannel** consente di selezionare il canale da utilizzare per trasformare l’evento in un messaggio. Il valore &quot;0&quot; corrisponde al canale e-mail, il valore &quot;1&quot; al canale mobile e così via.
 
-Se desideri posticipare la consegna di un evento, aggiungi la **[!UICONTROL scheduled]** campo seguito dalla data preferita. L’evento verrà trasformato in un messaggio in questa data.
+Se desideri rimandare la consegna di un evento, aggiungi **[!UICONTROL scheduled]** seguito dalla data preferita. L’evento verrà trasformato in un messaggio in questa data.
 
-È consigliabile compilare gli attributi @wishChannel e @emailFormat con valori numerici. La tabella delle funzioni che collega valori numerici ed etichette si trova nella descrizione dello schema dati.
-
->[!NOTE]
->
->Nella descrizione della **nms:rtEvent** e **nms:BatchEvent** schema dati.
-
-La **`<ctx>`** contiene i dati del messaggio. Il relativo contenuto XML è aperto, il che significa che può essere configurato a seconda del contenuto da distribuire.
+È consigliabile compilare gli attributi @wishedChannel e @emailFormat con valori numerici. La tabella delle funzioni che collega i valori numerici e le etichette si trova nella descrizione dello schema di dati.
 
 >[!NOTE]
 >
->È importante ottimizzare il numero e la dimensione dei nodi XML contenuti nel messaggio per evitare di sovraccaricare i server durante la distribuzione.
+>Una descrizione dettagliata di tutti gli attributi autorizzati e dei loro valori è disponibile nella descrizione del **nms:rtEvent** e **nms:BatchEvent** schema dati.
+
+Il **`<ctx>`** contiene i dati del messaggio. Il contenuto XML è aperto, il che significa che può essere configurato a seconda del contenuto da distribuire.
+
+>[!NOTE]
+>
+>È importante ottimizzare il numero e le dimensioni dei nodi XML contenuti nel messaggio per evitare di sovraccaricare i server durante la consegna.
 
 Esempio di dati:
 
@@ -159,13 +159,13 @@ Esempio di dati:
 
 ## Informazioni restituite dalla chiamata SOAP {#information-returned-by-the-soap-call}
 
-Quando riceve un evento, Adobe Campaign genera un ID di ritorno univoco. ID della versione archiviata dell&#39;evento.
+Quando riceve un evento, Adobe Campaign genera un ID restituito univoco. Questo è l’ID della versione archiviata dell’evento.
 
 >[!IMPORTANT]
 >
 >Quando si ricevono chiamate SOAP, Adobe Campaign verifica il formato dell’indirizzo e-mail. Se un indirizzo e-mail non è formattato correttamente, viene restituito un errore.
 
-* Esempio di identificatore restituito dal metodo quando l&#39;elaborazione dell&#39;evento ha esito positivo:
+* Esempio di un identificatore restituito dal metodo quando l’elaborazione dell’evento ha esito positivo:
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="http://xml.apache.org/xml-soap" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -179,9 +179,9 @@ Quando riceve un evento, Adobe Campaign genera un ID di ritorno univoco. ID dell
 
 Se il valore dell’identificatore restituito è rigorosamente maggiore di zero, significa che l’evento è stato archiviato correttamente in Adobe Campaign.
 
-Tuttavia, se l’elaborazione dell’evento non riesce, il metodo restituisce un messaggio di errore o un valore uguale a zero.
+Tuttavia, se l&#39;evento non viene elaborato, il metodo restituisce un messaggio di errore o un valore uguale a zero.
 
-* Esempio di elaborazione di un evento non riuscito quando la query non contiene un login o l’operatore specificato non dispone dei diritti richiesti:
+* Esempio di elaborazione di un evento non riuscito quando la query non contiene un account di accesso o l’operatore specificato non dispone dei diritti necessari:
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -220,7 +220,7 @@ Tuttavia, se l’elaborazione dell’evento non riesce, il metodo restituisce un
    </SOAP-ENV:Envelope>
    ```
 
-* Esempio di evento non riuscito che ha restituito un identificatore zero (nome metodo errato):
+* Esempio di un evento non riuscito e che ha restituito un identificatore zero (nome di metodo errato):
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="http://xml.apache.org/xml-soap" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">

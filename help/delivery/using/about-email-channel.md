@@ -17,20 +17,20 @@ ht-degree: 12%
 
 
 
-Adobe Campaign ti consente di inviare in massa messaggi elettronici personalizzati a una popolazione target.
+Adobe Campaign consente di inviare in massa messaggi elettronici personalizzati a una popolazione target.
 
-Prima di iniziare a inviare le e-mail:
+Prima di iniziare a inviare e-mail:
 
 * Assicurati che i profili dei destinatari contengano almeno un indirizzo e-mail.
-* Ulteriori informazioni su Adobe Campaign [Best practice per le consegne](delivery-best-practices.md).
-* Per ulteriori informazioni sul recapito messaggi, consulta le sezioni seguenti: [Gestione del recapito messaggi in Campaign](about-deliverability.md) e [Guida alle best practice per il recapito messaggi](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it).
+* Ulteriori informazioni su Adobe Campaign [Best practice per la consegna](delivery-best-practices.md).
+* Consulta queste sezioni per ulteriori informazioni sul recapito messaggi: [Gestione del recapito messaggi in Campaign](about-deliverability.md) e [Guida alle best practice per la consegna](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it).
 
-I passaggi chiave per l’invio di un’e-mail sono i seguenti:
+I passaggi chiave per inviare un’e-mail sono i seguenti:
 
 * [Creare una consegna e-mail](creating-an-email-delivery.md)
 * [Definire la popolazione target](steps-defining-the-target-population.md)
 * [Definire il contenuto dell’e-mail](defining-the-email-content.md)
-* [Invia l’e-mail](sending-messages.md)
+* [Inviare l’e-mail](sending-messages.md)
 * [Monitorare la consegna](about-delivery-monitoring.md)
 
 Le sezioni seguenti forniscono informazioni specifiche per il canale e-mail. Per informazioni globali su come creare una consegna, consulta [questa sezione](steps-about-delivery-creation-steps.md).

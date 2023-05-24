@@ -26,7 +26,7 @@ Scopri come orchestrare processi e attività con i flussi di lavoro di Adobe Cam
 
 ## Come posso importare dati in Campaign? {#how-can-i-import-data-in-campaign-}
 
-Scopri le best practice per importare i dati in [questa sezione](../../platform/using/import-export-best-practices.md).
+Scopri le best practice per importare dati in [questa sezione](../../platform/using/import-export-best-practices.md).
 
 ## Posso monitorare l’esecuzione di un flusso di lavoro? {#can-i-monitor-workflow-execution-}
 

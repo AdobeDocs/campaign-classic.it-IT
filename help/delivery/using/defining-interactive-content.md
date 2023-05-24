@@ -163,7 +163,7 @@ Puoi verificare l’invio di messaggi dinamici da Adobe Campaign a indirizzi e-m
 Per Gmail, devi innanzitutto aggiungere gli indirizzi del mittente che stai utilizzando al inserisco nell&#39;elenco Consentiti di consegna da Adobe Campaign per gli account Gmail di cui stai eseguendo il targeting.
 
 Per eseguire questa operazione:
-1. Assicurati che l’opzione di abilitazione dell’e-mail dinamica sia selezionata per i provider e-mail rilevanti.
+1. Assicurati che l’opzione di abilitazione dell’e-mail dinamica sia selezionata per i provider e-mail pertinenti.
 1. Copia l’indirizzo del mittente visualizzato nel file **[!UICONTROL From]** e incollarlo nella sezione appropriata delle impostazioni dell’account del provider di posta elettronica.
 
 Per ulteriori dettagli, consultare il [Gmail](https://developers.google.com/gmail/ampemail/testing-dynamic-email) documentazione per gli sviluppatori.

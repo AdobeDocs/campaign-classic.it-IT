@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Avviare il flusso di lavoro
-description: Scopri come eseguire test A/B tramite un caso d’uso dedicato
+description: Scopri come eseguire il test A/B tramite un caso d’uso dedicato
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
@@ -17,13 +17,13 @@ ht-degree: 9%
 
 
 
-1. Fai clic su **[!UICONTROL Start]** il flusso di lavoro.
+1. Clic **[!UICONTROL Start]** il flusso di lavoro.
 
    ![](assets/use_case_abtesting_startwkfl_001.png)
 
 1. Approva target e contenuto per le consegne A e B tramite il dashboard della campagna.
 1. Conferma la consegna.
-1. Attendi la fine del periodo di 5 giorni per scoprire quale contenuto è stato calcolato dopo i risultati dell’apertura della consegna.
+1. Attendi la fine del periodo di 5 giorni per scoprire quale contenuto è stato calcolato dopo i risultati di apertura della consegna.
 
    ![](assets/use_case_abtesting_startwkfl_002.png)
 

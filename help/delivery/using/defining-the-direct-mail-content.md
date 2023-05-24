@@ -19,17 +19,17 @@ ht-degree: 10%
 
 ## File di estrazione {#extraction-file}
 
-Il nome del file contenente i dati estratti è definito nella **[!UICONTROL File]** campo . Il pulsante a destra del campo consente di utilizzare campi di personalizzazione per creare il nome del file.
+Il nome del file che contiene i dati estratti è definito nel **[!UICONTROL File]** campo. Il pulsante a destra del campo consente di utilizzare i campi di personalizzazione per creare il nome del file.
 
-Per impostazione predefinita, il file di estrazione viene creato e memorizzato sul server. Puoi salvarlo sul tuo computer. Per eseguire questa operazione, controlla il **[!UICONTROL Download the generated file after the analysis of the delivery]**. In questo caso, è necessario indicare il percorso di accesso alla directory di archiviazione locale e il nome del file.
+Per impostazione predefinita, il file di estrazione viene creato e memorizzato sul server. È possibile salvarlo nel computer. A questo scopo, seleziona la **[!UICONTROL Download the generated file after the analysis of the delivery]**. In questo caso, è necessario indicare il percorso di accesso alla directory di archiviazione locale e il nome del file.
 
 ![](assets/s_ncs_user_mail_delivery_local_file.png)
 
-Per la consegna di direct mailing, il contenuto dell’estrazione è definito in **[!UICONTROL Edit the extraction file format...]** link.
+Per una consegna direct mailing, il contenuto dell’estrazione è definito in **[!UICONTROL Edit the extraction file format...]** collegamento.
 
 ![](assets/s_ncs_user_mail_delivery_format_link.png)
 
-Questo collegamento consente di accedere alla procedura guidata di estrazione e di definire le informazioni (colonne) da esportare nel file di output.
+Questo collegamento consente di accedere alla procedura guidata di estrazione e definire le informazioni (colonne) da esportare nel file di output.
 
 ![](assets/s_ncs_user_mail_delivery_format_wz.png)
 
@@ -37,4 +37,4 @@ Questo collegamento consente di accedere alla procedura guidata di estrazione e 
 
 >[!NOTE]
 >
->Questa procedura guidata include i passaggi della procedura guidata di esportazione descritti in [Introduzione](../../platform/using/executing-export-jobs.md) sezione .
+>Questa procedura guidata include i passaggi della procedura guidata di esportazione descritti in [Guida introduttiva](../../platform/using/executing-export-jobs.md) sezione.

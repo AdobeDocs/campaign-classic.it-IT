@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Elementi e attributi dello schema - elemento parametri
+title: 'Elementi e attributi dello schema: elemento parameters'
 description: elemento parameters
 exl-id: 54538c3e-3232-4bf7-a09c-dacf0f072be5
 source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
@@ -16,13 +16,13 @@ ht-degree: 12%
 
 ## Modello di contenuto {#content-model-13}
 
-parameters:==param
+parametri:==
 
 ## Attributi {#attributes-13}
 
 Nessuna
 
-## Genitori {#parents-13}
+## Padri {#parents-13}
 
 `<method>`
 

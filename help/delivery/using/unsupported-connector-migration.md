@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Migrazione del connettore SMS non supportata
-description: Migrare un connettore SMS non supportato al connettore SMPP generico esteso
+description: Migrare il connettore SMS non supportato al connettore SMPP generico esteso
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 hidefromtoc: true
 exl-id: 60acf80c-8506-410b-ab2c-4f67a5677b43
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 ---
 
-# Migrare un connettore SMS non supportato al connettore SMPP generico esteso{#unsupported-connector-migration}
+# Migrare il connettore SMS non supportato al connettore SMPP generico esteso{#unsupported-connector-migration}
 
 
 
@@ -20,42 +20,42 @@ A partire dalla versione 20.2, i connettori legacy sono diventati obsoleti. Ques
 
 >[!CAUTION]
 >
->Questa migrazione non è obbligatoria ma consigliata dall’Adobe e assicurerà di essere in esecuzione sull’ultima versione supportata del software.
+>Questa migrazione non è obbligatoria ma consigliata da Adobe e garantisce l’esecuzione sull’ultima versione supportata del software.
 
 ## Informazioni sui connettori SMS {#about-sms-connectors}
 
 I seguenti connettori sono obsoleti a partire dalla versione 20.2:
 
-* **[!UICONTROL Generic SMPP]** (SMPP versione 3.4 che supporta la modalità binaria)
+* **[!UICONTROL Generic SMPP]** (SMPP versione 3.4 supporta la modalità binaria)
 * **[!UICONTROL Sybase365]** (SAP SMS 365)
 * **[!UICONTROL CLX Communications]**
 * **[!UICONTROL Tele2]**
 * **[!UICONTROL O2]**
 * **[!UICONTROL iOS]**
 
-Le funzionalità obsolete sono ancora disponibili e supportate, ma non saranno ulteriormente migliorate. Si consiglia di utilizzare **[!UICONTROL Extended generic SMPP]** connettore.
+Le funzionalità obsolete sono ancora disponibili e supportate, ma non verranno ulteriormente migliorate. È consigliabile utilizzare **[!UICONTROL Extended generic SMPP]** connettore.
 
-Per ulteriori informazioni sulle funzioni obsolete e rimosse, consulta questo [page](../../rn/using/deprecated-features.md).
+Per ulteriori informazioni sulle funzioni obsolete e rimosse, consulta questa [pagina](../../rn/using/deprecated-features.md).
 
-I vecchi connettori SMS utilizzano il connettore SMS Java che sovraccarica il processo web. Migrazione al nuovo **[!UICONTROL Extended Generic SMPP]** il connettore sposterà questo carico nell’MTA che può supportarlo.
+I vecchi connettori SMS utilizzano il connettore Java SMS che sovraccarica il processo web. Migrazione al nuovo **[!UICONTROL Extended Generic SMPP]** Il connettore sposterà questo carico nell’MTA che potrà supportarlo.
 
 ## Migrazione al connettore SMPP generico esteso {#migrating-extended-generic-smpp}
 
 >[!CAUTION]
 >
->Anche se puoi trasporre i parametri, configura il **[!UICONTROL Extended Generic SMPP]** connettore richiede di parlare con il provider che ti fornirà le informazioni necessarie per compilare il resto dei parametri. Per ulteriori informazioni, consulta questa [pagina](sms-protocol.md).
+>Anche se è possibile trasporre i parametri, la configurazione **[!UICONTROL Extended Generic SMPP]** il connettore richiede di parlare con il provider che ti fornirà le informazioni necessarie per compilare il resto dei parametri. Per ulteriori informazioni, consulta questa [pagina](sms-protocol.md).
 
-Innanzitutto, devi creare una nuova **[!UICONTROL Extended Generic SMPP]** account esterno e quindi potresti essere in grado di trasporre alcuni dei parametri. Puoi trovare i passaggi dettagliati in questo [page](sms-set-up.md#creating-an-smpp-external-account).
+Innanzitutto, devi creare un nuovo **[!UICONTROL Extended Generic SMPP]** account esterno e potresti essere in grado di recepire alcuni parametri. Puoi trovare i passaggi dettagliati in questo [pagina](sms-set-up.md#creating-an-smpp-external-account).
 
-È ora necessario compilare i parametri dalla **[!UICONTROL Mobile]** scheda della nuova creazione **[!UICONTROL Extended Generic SMPP]** account esterno a seconda del connettore precedente.
+Ora devi compilare i parametri della **[!UICONTROL Mobile]** della nuova scheda **[!UICONTROL Extended Generic SMPP]** account esterno a seconda del connettore precedente.
 
 ### Dal connettore generico {#from-generic-connector}
 
-Quando scegli la **[!UICONTROL Generic]** connettore, è necessario disporre di un connettore JavaScript personalizzato che si adatta a ogni situazione.
+Quando si sceglie **[!UICONTROL Generic]** connettore, è necessario disporre di un connettore JavaScript personalizzato che si adatterà a ogni situazione.
 
-Se sai che questo connettore sta già utilizzando il protocollo SMPP, puoi effettuare la migrazione al **[!UICONTROL Extended Generic SMPP]** connettore. In caso contrario, verifica con il tuo provider se supporta il protocollo SMPP e configura un nuovo connettore con l’aiuto di un consulente.
+Se sai che il connettore sta già utilizzando il protocollo SMPP, puoi migrare al **[!UICONTROL Extended Generic SMPP]** connettore. In caso contrario, verifica con il provider se supporta il protocollo SMPP e configura un nuovo connettore con l’aiuto di un consulente.
 
-Dal tuo **[!UICONTROL Generic]** è possibile trasporre al connettore appena creato **[!UICONTROL Extended SMPP]** account:
+Dal tuo **[!UICONTROL Generic]** connettore, è possibile trasporre nel nuovo **[!UICONTROL Extended SMPP]** account:
 
 ![](assets/smpp_generic.png)
 
@@ -68,7 +68,7 @@ In **[!UICONTROL Connection Settings]** scheda:
 
 ### Dal connettore SMPP generico {#from-generic-smpp-connector}
 
-Dal tuo **[!UICONTROL Generic SMPP]** è possibile trasporre al connettore appena creato **[!UICONTROL Extended SMPP]** account:
+Dal tuo **[!UICONTROL Generic SMPP]** connettore, è possibile trasporre nel nuovo **[!UICONTROL Extended SMPP]** account:
 
 ![](assets/smpp_generic_2.png)
 
@@ -99,7 +99,7 @@ In **[!UICONTROL SMSC specificities]** scheda:
 
 ### Dal connettore Sybase365 {#from-sybase}
 
-Dal tuo **[!UICONTROL Sybase365]** è possibile trasporre al connettore appena creato **[!UICONTROL Extended SMPP]** account:
+Dal tuo **[!UICONTROL Sybase365]** connettore, è possibile trasporre nel nuovo **[!UICONTROL Extended SMPP]** account:
 
 ![](assets/smpp_3.png)
 
@@ -113,7 +113,7 @@ In **[!UICONTROL Connection Settings]** scheda:
 
 ### Da connettore CLX {#from-clx}
 
-Dal tuo **[!UICONTROL CLX]** è possibile trasporre al connettore appena creato **[!UICONTROL Extended SMPP]** account:
+Dal tuo **[!UICONTROL CLX]** connettore, è possibile trasporre nel nuovo **[!UICONTROL Extended SMPP]** account:
 
 ![](assets/smpp_4.png)
 
@@ -136,7 +136,7 @@ In **[!UICONTROL SMSC specificities]** scheda:
 
 ### Dal connettore Tele2 {#from-tele2}
 
-Dal tuo **[!UICONTROL Tele2]** è possibile trasporre al connettore appena creato **[!UICONTROL Extended SMPP]** account:
+Dal tuo **[!UICONTROL Tele2]** connettore, è possibile trasporre nel nuovo **[!UICONTROL Extended SMPP]** account:
 
 ![](assets/smpp_6.png)
 
@@ -161,7 +161,7 @@ In **[!UICONTROL Mapping of Encoding]** scheda:
 
 ### Dal connettore O2 {#from-O2}
 
-Dal tuo **[!UICONTROL O2]** è possibile trasporre al connettore appena creato **[!UICONTROL Extended SMPP]** account:
+Dal tuo **[!UICONTROL O2]** connettore, è possibile trasporre nel nuovo **[!UICONTROL Extended SMPP]** account:
 
 ![](assets/smpp_5.png)
 

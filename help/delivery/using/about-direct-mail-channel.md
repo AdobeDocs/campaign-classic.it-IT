@@ -17,11 +17,11 @@ ht-degree: 9%
 
 
 
-Adobe Campaign consente di produrre file per inviare in massa lettere personalizzate. I profili dei destinatari devono contenere almeno i loro nomi e indirizzi postali.
+Adobe Campaign consente di produrre file per distribuire in massa lettere personalizzate. I profili dei destinatari devono contenere almeno i propri nomi e indirizzi postali.
 
 >[!NOTE]
 >
->Gli indirizzi postali sono campi calcolati. Per impostazione predefinita, un indirizzo può contenere fino a sei righe: la prima contiene il nome e il cognome, le righe successive contengono l&#39;indirizzo postale (strada, ecc.) e l&#39;ultima riga contiene il codice postale o ZIP e la città o città.\
->Un indirizzo viene considerato completo se i campi nome, CAP e città non sono vuoti.
+>Gli indirizzi postali sono campi calcolati. Per impostazione predefinita, un indirizzo può contenere fino a sei righe: la prima contiene il nome e il cognome, le righe successive contengono l’indirizzo postale (strada, ecc.) e l’ultima riga contiene il codice postale o ZIP e la città o città.\
+>Un indirizzo è considerato completo se il nome, il campo CAP e i campi città non sono vuoti.
 
-Le sezioni seguenti forniscono informazioni specifiche per il canale direct mailing. Per informazioni globali su come creare e inviare una consegna, consulta [questa sezione](steps-about-delivery-creation-steps.md).
+Le sezioni seguenti forniscono informazioni specifiche per il canale di direct mailing. Per informazioni globali su come creare e inviare una consegna, consulta [questa sezione](steps-about-delivery-creation-steps.md).

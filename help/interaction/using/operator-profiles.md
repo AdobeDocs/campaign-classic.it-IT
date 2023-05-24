@@ -18,33 +18,33 @@ ht-degree: 9%
 
 
 
-Esistono due tipi di operatori che utilizzano l’interazione: responsabili dell&#39;offerta e responsabili della consegna. Ognuno di essi ha diritti specifici che gli danno accesso solo ad alcune parti dell&#39;albero e della piattaforma.
+Esistono due tipi di operatori che utilizzano l’interazione: gestori delle offerte e responsabili della consegna. Ognuno di essi dispone di diritti specifici che consentono loro di accedere solo ad alcune parti dell’albero e della piattaforma.
 
-* **[!UICONTROL Offer manager]** : crea e gestisce le offerte. Se nel flusso di lavoro vengono utilizzate le offerte , l’operatore deve trovarsi nella variabile **[!UICONTROL Administrator]** o **[!UICONTROL Offer managers]** gruppo di operatori per eseguire il flusso di lavoro.
+* **[!UICONTROL Offer manager]** : crea e mantiene le offerte. Tieni presente che se le offerte vengono utilizzate nel flusso di lavoro, l’operatore dovrà trovarsi nel **[!UICONTROL Administrator]** o **[!UICONTROL Offer managers]** per eseguire il flusso di lavoro.
 * **[!UICONTROL Delivery manager]** : approva e utilizza le offerte
 
-I passaggi per la creazione di operatori specifici dell’interazione sono identici a quelli utilizzati per creare tutti gli altri operatori sulla piattaforma. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/access-management.md). I diritti vengono configurati durante la creazione dell’operatore.
+I passaggi per la creazione di operatori specifici per l’interazione sono identici a quelli utilizzati per creare tutti gli altri operatori sulla piattaforma. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/access-management.md). I diritti vengono configurati durante la creazione dell’operatore.
 
-## Gestione delle offerte {#offer-manager}
+## Gestione offerte {#offer-manager}
 
 1. Crea un nuovo operatore.
 1. Vai a **[!UICONTROL Groups and named rights]** finestra, fai clic su **[!UICONTROL Add]** e seleziona la **[!UICONTROL Offer manager]** gruppo.
 
    ![](assets/offer_operators_create_001.png)
 
-I diritti assegnati al gestore delle offerte consentono loro di eseguire le seguenti attività:
+I diritti assegnati al gestore delle offerte consentono loro di svolgere le seguenti attività:
 
 * Modifica **[!UICONTROL Design]** ambienti.
 * Visualizza **[!UICONTROL Live]** ambienti.
-* Configura le funzioni di amministrazione (spazi e filtri predefiniti).
+* Configurare le funzioni di amministrazione (spazi e filtri predefiniti).
 * Creare e modificare le categorie.
 * Crea offerte.
-* Configura l’idoneità delle offerte.
+* Configurare l’idoneità per le offerte.
 * Approvare le offerte.
 
    >[!NOTE]
    >
-   >Il gestore delle offerte può approvare un’offerta solo in due casi specifici. Il primo è se nessuno in particolare è stato specificato come revisore e il secondo se l’operatore responsabile della creazione di modelli (con il diritto di assegnare i revisori) li ha specificati come revisore nel modello di offerta su cui si basa l’offerta.
+   >Il gestore delle offerte può approvare un’offerta solo in due casi specifici. Il primo è se nessuno in particolare è stato specificato come revisore, il secondo è se l’operatore responsabile della creazione dei modelli (con il diritto di assegnare i revisori) li ha specificati come revisori nel modello di offerta su cui era basata l’offerta.
 
 ## Responsabile della consegna {#delivery-manager}
 
@@ -53,24 +53,24 @@ I diritti assegnati al gestore delle offerte consentono loro di eseguire le segu
 
    ![](assets/offer_operators_create_002.png)
 
-I diritti assegnati ai gestori della consegna consentono loro di svolgere i seguenti compiti:
+I diritti assegnati ai responsabili della consegna consentono loro di svolgere i seguenti compiti:
 
 * Visualizzazione **[!UICONTROL Live]** ambienti.
-* Visualizza e modifica le categorie di offerte.
-* Approva le offerte se questo delivery manager è specificato come uno dei suoi revisori.
+* Visualizzare e modificare le categorie di offerta.
+* Approva le offerte se il responsabile della consegna è specificato come uno dei suoi revisori.
 
    >[!NOTE]
    >
-   >I gestori di consegne possono approvare un’offerta solo se sono stati definiti come revisore durante la configurazione dell’offerta.
+   >I responsabili della consegna possono approvare un’offerta solo se sono stati definiti come revisori durante la configurazione dell’offerta.
 
-## Recupero dei diritti secondo l&#39;operatore {#recap-of-rights-according-to-operator}
+## Riepilogo dei diritti in base all’operatore {#recap-of-rights-according-to-operator}
 
 <table> 
  <tbody> 
   <tr> 
    <td> </td> 
-   <td> <strong>Gestione delle offerte (modifica)</strong><br /> </td> 
-   <td> <strong>Gestione delle offerte (in diretta)</strong><br /> </td> 
+   <td> <strong>Gestione offerte (modifica)</strong><br /> </td> 
+   <td> <strong>Gestione offerte (live)</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Livello struttura ad albero</strong><br /> </td> 
@@ -78,49 +78,49 @@ I diritti assegnati ai gestori della consegna consentono loro di svolgere i segu
    <td> </td> 
   </tr> 
   <tr> 
-   <td> Offerte in corso di modifica / Offerte live<br /> </td> 
+   <td> Offerte in fase di modifica / Offerte live<br /> </td> 
    <td> Lettura/scrittura<br /> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Letto<br /> </td> 
   </tr> 
   <tr> 
    <td> Destinatario - Ambiente<br /> </td> 
    <td> Lettura/scrittura<br /> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Letto<br /> </td> 
   </tr> 
   <tr> 
    <td> Amministrazione<br /> </td> 
    <td> Lettura/scrittura<br /> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Letto<br /> </td> 
   </tr> 
   <tr> 
-   <td> Spazi<br /> </td> 
+   <td> Spaces<br /> </td> 
    <td> Lettura/scrittura<br /> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Letto<br /> </td> 
   </tr> 
   <tr> 
    <td> Filtri per offerte predefiniti<br /> </td> 
    <td> Lettura/scrittura<br /> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Letto<br /> </td> 
   </tr> 
   <tr> 
    <td> Tipologia<br /> </td> 
    <td> Lettura/scrittura<br /> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Letto<br /> </td> 
   </tr> 
   <tr> 
    <td> Regole di tipologia<br /> </td> 
    <td> Lettura/scrittura<br /> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Letto<br /> </td> 
   </tr> 
   <tr> 
    <td> Catalogo delle offerte<br /> </td> 
    <td> Lettura/scrittura<br /> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Letto<br /> </td> 
   </tr> 
   <tr> 
    <td> Categoria offerta<br /> </td> 
    <td> Lettura/scrittura<br /> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Letto<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -129,8 +129,8 @@ I diritti assegnati ai gestori della consegna consentono loro di svolgere i segu
  <tbody> 
   <tr> 
    <td> </td> 
-   <td> <strong>Gestione consegne (modifica)</strong><br /> </td> 
-   <td> <strong>Direttore consegna (dal vivo)</strong><br /> </td> 
+   <td> <strong>Gestione delle consegne (modifica)</strong><br /> </td> 
+   <td> <strong>Gestione delle consegne (in tempo reale)</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Livello struttura ad albero</strong><br /> </td> 
@@ -138,14 +138,14 @@ I diritti assegnati ai gestori della consegna consentono loro di svolgere i segu
    <td> </td> 
   </tr> 
   <tr> 
-   <td> Offerte in corso di modifica / Offerte live<br /> </td> 
+   <td> Offerte in fase di modifica / Offerte live<br /> </td> 
    <td> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Letto<br /> </td> 
   </tr> 
   <tr> 
    <td> Destinatario - Ambiente<br /> </td> 
    <td> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Letto<br /> </td> 
   </tr> 
   <tr> 
    <td> Amministrazione<br /> </td> 
@@ -153,34 +153,34 @@ I diritti assegnati ai gestori della consegna consentono loro di svolgere i segu
    <td> </td> 
   </tr> 
   <tr> 
-   <td> Spazi<br /> </td> 
+   <td> Spaces<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td> Filtri per offerte predefiniti<br /> </td> 
-   <td> Leggi<br /> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Letto<br /> </td> 
+   <td> Letto<br /> </td> 
   </tr> 
   <tr> 
    <td> Tipologia<br /> </td> 
-   <td> Leggi<br /> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Letto<br /> </td> 
+   <td> Letto<br /> </td> 
   </tr> 
   <tr> 
    <td> Regole di tipologia<br /> </td> 
    <td> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Letto<br /> </td> 
   </tr> 
   <tr> 
    <td> Catalogo delle offerte<br /> </td> 
-   <td> Leggi<br /> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Letto<br /> </td> 
+   <td> Letto<br /> </td> 
   </tr> 
   <tr> 
    <td> Categoria offerta<br /> </td> 
    <td> </td> 
-   <td> Leggi<br /> </td> 
+   <td> Letto<br /> </td> 
   </tr> 
  </tbody> 
 </table>

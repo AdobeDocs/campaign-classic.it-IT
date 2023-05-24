@@ -16,15 +16,15 @@ ht-degree: 8%
 
 
 
-La **[!UICONTROL Cells]** L’attività fornisce una visualizzazione dei vari sottoinsiemi sotto forma di colonne di dati. Semplifica la manipolazione dei sottoinsiemi ed è anche progettato per incoraggiare le possibilità di personalizzazione.
+Il **[!UICONTROL Cells]** activity fornisce una vista dei vari sottoinsiemi sotto forma di colonne di dati. Agevola la manipolazione dei sottoinsiemi ed è progettata anche per incoraggiare le possibilità di personalizzazione.
 
 ![](assets/wf_split_cells.png)
 
-Puoi configurare questa attività per immettere parametri specifici in base alle esigenze degli utenti. Per impostazione predefinita, il dettaglio di ciascun sottoinsieme è descritto in una finestra dedicata tramite la **[!UICONTROL Selection]** e **[!UICONTROL Advanced]** schede. Nell’esempio seguente, il modulo è stato modificato: a **[!UICONTROL Data]** è stata aggiunta una scheda per abilitare l’associazione di un’offerta e un livello di priorità per ciascun sottoinsieme.
+Questa attività può essere configurata per immettere parametri specifici in base alle esigenze dell’utente. Per impostazione predefinita, i dettagli di ciascun sottoinsieme vengono descritti in una finestra dedicata tramite **[!UICONTROL Selection]** e **[!UICONTROL Advanced]** schede. Nell’esempio seguente, il modulo è stato modificato: a **[!UICONTROL Data]** è stata aggiunta una scheda per abilitare l’associazione di un’offerta e un livello di priorità per ogni sottoinsieme.
 
 ![](assets/wf_split_cells_with_customization.png)
 
-Per questa configurazione, sono state aggiunte le seguenti informazioni al modulo del flusso di lavoro (nel **[!UICONTROL Administration > Configurations > Input forms]** nodo della struttura di Adobe Campaign):
+Per questa configurazione, le seguenti informazioni sono state aggiunte al modulo del flusso di lavoro (nel **[!UICONTROL Administration > Configurations > Input forms]** della struttura Adobe Campaign):
 
 ```
 <container img="nms:miniatures/mini-enrich.png" label="Data">
@@ -49,4 +49,4 @@ Per questa configurazione, sono state aggiunte le seguenti informazioni al modul
                 </container>
 ```
 
-La personalizzazione dei moduli di ingresso in Adobe Campaign è riservata agli utenti esperti. Per ulteriori informazioni, consulta questa [sezione](../../configuration/using/identifying-a-form.md).
+La personalizzazione del modulo di ingresso in Adobe Campaign è riservata agli utenti esperti. Per ulteriori informazioni, consulta questa [sezione](../../configuration/using/identifying-a-form.md).

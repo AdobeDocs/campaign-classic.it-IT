@@ -18,36 +18,36 @@ ht-degree: 2%
 
 
 
-I ganci nell’interazione consentono di modificare il **comportamento normale del motore**.
+Gli hook nell’interazione consentono di modificare **comportamento standard del motore**.
 
-La **[!UICONTROL Target loading]** e **[!UICONTROL Proposition post-processing]** gli hook sono configurati, in Adobe Campaign, nello spazio dell’offerta:
+Il **[!UICONTROL Target loading]** e **[!UICONTROL Proposition post-processing]** Gli hook di sono configurati, in Adobe Campaign, nello spazio dell’offerta:
 
 ![](assets/interaction_hooks_1.png)
 
-La **[!UICONTROL Dynamic offer]** hook configurato con il peso dell’offerta in Adobe Campaign:
+Il **[!UICONTROL Dynamic offer]** l’hook è configurato con il peso dell’offerta in Adobe Campaign:
 
 ![](assets/interaction_hooks_2.png)
 
 ## Caricamento di Target {#target-loading}
 
-Questo gancio ti consente di arricchire il profilo del contatto (caricato dalla query preconfigurata) con dati aggiuntivi provenienti da un sistema esterno.
+Questo hook ti consente di arricchire il profilo del contatto (caricato dalla query preconfigurata) con dati aggiuntivi provenienti da un sistema esterno.
 
-I dati raccolti devono essere inseriti nel nodo di dati della chiamata (nodo di interazione). L’integratore deve aver precedentemente esteso lo schema dei dati di chiamata per definire la struttura dei dati raccolti. L’utente può accedere a questi dati nello stesso modo in cui si trovano per i dati delle chiamate standard (a livello di regole di idoneità e personalizzazione).
+I dati raccolti devono essere inseriti nel nodo dei dati della chiamata (nodo di interazione). L’integratore deve aver esteso in precedenza lo schema dei dati della chiamata per definire la struttura dei dati raccolti. L’utente può accedere a questi dati con le stesse modalità dei dati di chiamata standard (a livello di regole di idoneità e personalizzazione).
 
 **Parametri di input:**
 
-* xmlInteraction (tipo xml): Nodo di interazione
-* aTargetId (tipo di tabella): identificatore target
-* sUid230 (tipo di stringa): valore del cookie permanente uuid230
-* sNlid (tipo di stringa): valore del cookie di sessione nlid
+* xmlInteraction (tipo xml): nodo di interazione
+* aTargetId (tipo di tabella): identificatore di destinazione
+* sUuid230 (tipo stringa): valore del cookie permanente uuid230
+* Nlid (tipo stringa): valore del cookie di sessione nlid
 
-**Parametri di ritorno:**
+**Parametri restituiti:**
 
-* nodo di interazione arricchito (primo parametro di questo gancio)
+* Nodo di interazione arricchito (primo parametro di questo hook)
 
 >[!NOTE]
 >
->La **xmlInteraction** Il parametro contiene sia i dati della chiamata che il profilo del contatto caricato dalla query preconfigurata.
+>Il **xmlInteraction** Il parametro contiene sia i dati della chiamata che il profilo del contatto caricato dalla query predefinita.
 
 **Esempio:**
 
@@ -58,27 +58,27 @@ I dati raccolti devono essere inseriti nel nodo di dati della chiamata (nodo di 
   interaction.@additionalData = additionalData;
 ```
 
-## Proposizione post-elaborazione {#proposition-post-processing-}
+## Post-elaborazione della proposta {#proposition-post-processing-}
 
-Questo gancio consente di verificare la coerenza e la compatibilità delle proposte idonee in una determinata interazione. Consente inoltre di definire una nuova funzionalità di calcolo del punteggio o della probabilità.
+Questo hook consente di verificare la coerenza e la compatibilità delle proposte idonee in una determinata interazione. Consente inoltre di definire una nuova funzionalità di calcolo del punteggio o della probabilità.
 
 Esempio di utilizzo delle regole di coerenza:
 
-* Limitazione del numero di proposte nella stessa chiamata, collegate allo stesso prodotto o alla stessa categoria.
+* Limitare il numero di proposte nella stessa chiamata, collegate allo stesso prodotto o alla stessa categoria.
 * Presentare solo offerte relative a un prodotto nella stessa interazione.
 
-Il processo di post-elaborazione viene eseguito dopo l’applicazione delle regole di tipologia e l’ordinamento delle proposte idonee, e prima della fase di definizione delle priorità.
+La post-elaborazione viene eseguita dopo l’applicazione delle regole di tipologia e l’ordinamento delle proposte idonee e prima del passaggio di definizione delle priorità.
 
 **Parametri di input:**
 
-* Proposta: tabella delle proposte ammissibili. Ecco un esempio della struttura di un elemento in questa tabella
+* Proposta: tabella delle proposte ammissibili. Esempio di struttura di un elemento nella tabella
 
    ```
    { offer_id:1234,
      weight:2}
    ```
 
-* dicOffer (tipo xml): dizionario di tutti gli attributi delle offerte idonee (codice offerta, ID categoria, nome completo categoria, data di inizio, data di fine, etichetta, nome interno, id offerta, campi di offerta aggiuntivi). Ad esempio
+* dicOffer (tipo xml): dizionario di tutti gli attributi delle offerte idonee (codice offerta, id categoria, nome completo categoria, data di inizio, data di fine, etichetta, nome interno, id offerta, campi offerta aggiuntivi). Ad esempio
 
    ```
    { "1242": <offer category-id="61242" categoryFullName="/FULL/PATH/TO/CATEGORY/" code="CODE" endDate="" id="62473" label="LABEL" name="OFR38_OE4" product-id="43" startDate=""/>,
@@ -86,13 +86,13 @@ Il processo di post-elaborazione viene eseguito dopo l’applicazione delle rego
    ```
 
 * xmlTarget (tipo xml): nodo dati profilo
-* xmlInteraction (tipo xml): nodo dati di chiamata
+* xmlInteraction (tipo xml): chiama nodo dati
 * iPropNumber (tipo intero): numero di offerte previste
 
-**Parametri di ritorno:**
+**Parametri restituiti:**
 
-* elenco delle proposte modificate (primo parametro del gancio)
-* nodo di interazione modificato
+* elenco delle proposte modificate (primo parametro dell&#39;hook)
+* nodo interazione modificato
 
 **Esempio:**
 
@@ -118,30 +118,30 @@ return aReturnedProps;
 
 ## Offerta dinamica {#dynamic-offer}
 
-Questo gancio consente di effettuare una chiamata a un motore esterno per selezionare un elenco di prodotti collegati a un’offerta. Viene configurato nell’offerta dopo le regole di idoneità e prima dell’applicazione delle regole di tipologia.
+Questo hook consente di effettuare una chiamata a un motore esterno per selezionare un elenco di prodotti collegati a un’offerta. È configurato nell’offerta dopo le regole di idoneità e prima dell’applicazione delle regole di tipologia.
 
-In precedenza, l’integratore dovrebbe estendere le proposte **PropositionRcp** schema con le informazioni aggiuntive sul prodotto. Per specificare la posizione di memorizzazione di questi dati, è necessario **[!UICONTROL Proposition being processed]** il collegamento è disponibile nella sezione **[!UICONTROL Storage]** scheda dello spazio
+In anticipo, l’integratore deve estendere le proposte **PropositionRcp** con le informazioni aggiuntive sul prodotto. Per specificare la posizione in cui verranno memorizzati i dati, **[!UICONTROL Proposition being processed]** è disponibile nella sezione **[!UICONTROL Storage]** scheda dello spazio
 
 ![](assets/interaction_hooks_3.png)
 
 **Parametri di input:**
 
-* xmlOffer (tipo xml): offerta (codice offerta, id categoria, nome completo categoria, data di inizio, data di fine, etichetta, nome interno, id offerta, campi offerta aggiuntivi)
-* dPeso: peso contestuale (doppio tipo)
+* xmlOffer (tipo xml): offerta (codice offerta, ID categoria, nome completo categoria, data di inizio, data di fine, etichetta, nome interno, ID offerta, campi offerta aggiuntivi)
+* dWeight: peso contestuale (tipo doppio)
 * xmlTarget (tipo xml): nodo dati profilo
-* xmlInteraction (tipo xml): nodo dati di chiamata
+* xmlInteraction (tipo xml): chiama nodo dati
 
-**Parametri di ritorno:**
+**Parametri restituiti:**
 
-Viene restituita una tabella di proposte da generare. Ogni elemento di questa tabella è costituito dalle seguenti informazioni:
+Viene restituita una tabella di proposte da generare. Ogni elemento di questa tabella è composto dalle seguenti informazioni:
 
-* identificatore di offerta
-* dati di prodotto aggiuntivi (ad esempio, codice prodotto)
-* weight
+* identificatore dell’offerta
+* dati di prodotto aggiuntivi (ad esempio codice prodotto)
+* peso
 
 >[!NOTE]
 >
->Il sistema controlla che l’id dell’offerta sia lo stesso per i parametri di input e di ritorno.
+>Il sistema controlla che l’ID offerta sia lo stesso per i parametri di input e di ritorno.
 
 **Esempio:**
 

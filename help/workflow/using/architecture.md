@@ -20,5 +20,5 @@ I flussi di lavoro vengono gestiti da un modulo specifico. Questo modulo può es
 
 ![](assets/architecture.png)
 
-* Il processo &#39;Workflow Instance Runner&#39; (runwf) esegue tutte le attività di una determinata istanza di flusso di lavoro. Quando non ci sono attività da eseguire per il momento, diventa &quot;passivo&quot;, ovvero salva il suo stato nel database, quindi si arresta.
-* Il modulo &#39;Workflow Server&#39; (wfserver) controlla le istanze correnti del flusso di lavoro. Quando è presente un&#39;attività da eseguire, questo modulo crea un processo per attivare (o riattivare) l&#39;istanza corrispondente.
+* Il processo &#39;Workflow Instance Runner&#39; (runwf) esegue tutte le attività di una determinata istanza del flusso di lavoro. Quando non ci sono attività da eseguire per il momento, diventa &quot;passivo&quot;, cioè salva il suo stato nel database, quindi si arresta.
+* Il modulo &#39;Workflow Server&#39; (wfserver) monitora le istanze di flusso di lavoro correnti. Quando è presente un task da eseguire, questo modulo crea un processo per attivare (o riattivare) l’istanza corrispondente.

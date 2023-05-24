@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Informazioni sui modelli
-description: Guida introduttiva ai modelli di consegna
+description: Introduzione ai modelli di consegna
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Delivery Templates
@@ -17,22 +17,22 @@ ht-degree: 1%
 
 
 
-Per essere riutilizzata, è possibile salvare una configurazione di consegna in un modello di consegna. Il modello può contenere una configurazione completa o parziale della consegna.
+Una configurazione di consegna può essere salvata in un modello di consegna per essere riutilizzata. Il modello può contenere una configurazione completa o parziale della consegna.
 
-Il modello di consegna può essere eseguito manualmente, come descritto in questo capitolo, o in base a un evento (avviato in un determinato momento, all&#39;arrivo di un file su un server, ecc.). I modelli di consegna possono essere configurati tramite **[!UICONTROL Resources > Templates > Delivery templates]** nell&#39;albero.
+Il modello di consegna può essere eseguito manualmente, come descritto in questo capitolo, o in base a un evento (avviato a un orario impostato, all’arrivo di un file su un server, ecc.). I modelli di consegna possono essere configurati tramite **[!UICONTROL Resources > Templates > Delivery templates]** nella struttura.
 
 ![](assets/s_user_template_list.png)
 
-Esistono due tipi di modelli:
+Esistono due tipi di modello:
 
-1. Modelli di consegna nativi per Adobe Campaign
+1. Modelli di consegna nativi di Adobe Campaign
 
-   I modelli nativi NON DEVONO essere eliminati dal sistema. Includono una configurazione minima per ogni canale di consegna. Tuttavia, l’amministratore può limitare determinate funzioni o offrire valori predefiniti agli utenti (tracciamento dell’attivazione, indirizzi e-mail del mittente, ecc.). Gli scenari nativi vengono visualizzati in grassetto nell’elenco dei modelli. Devono essere duplicati per modificarli.
+   I modelli nativi NON DEVONO essere eliminati dal sistema. Includono una configurazione minima per ciascun canale di consegna. L’amministratore può, tuttavia, limitare determinate funzioni o offrire valori predefiniti agli utenti (attivazione del tracciamento, indirizzi e-mail del mittente, ecc.). Gli scenari nativi vengono visualizzati in grassetto nell’elenco dei modelli. Devono essere duplicati per poterli modificare.
 
 1. Modelli di consegna predefiniti
 
-   L’amministratore di Adobe Campaign può creare nuovi modelli di consegna. Possono essere riutilizzati dagli operatori (quelli con diritti di accesso adeguati) o automaticamente dai processi server. Ad esempio, puoi configurare un modello di consegna e-mail e, quando gli utenti creano una consegna utilizzando questo modello, devono semplicemente inserire il contenuto di testo o HTML e quindi consegnarlo; le altre scelte sono già state definite dall’amministratore.
+   L’amministratore Adobe Campaign può creare nuovi modelli di consegna. Possono essere riutilizzati dagli operatori (che dispongono di diritti di accesso adeguati) o automaticamente dai processi server. Ad esempio, puoi configurare un modello di consegna e-mail e, quando gli utenti creano una consegna utilizzando questo modello, devono semplicemente inserire il testo o il contenuto HTML e quindi consegnarlo; le altre scelte sono già state definite dall’amministratore.
 
 >[!NOTE]
 >
->I modelli disponibili dipendono dai diritti di accesso, dalla configurazione dell’istanza e dal contesto. Ad esempio, quando crei un servizio di informazioni, puoi collegare un modello di consegna per i messaggi di conferma: potrai quindi accedere solo ai modelli la cui mappatura di destinazione è la mappatura della sottoscrizione. Per ulteriori informazioni, consulta [Selezionare una mappatura target](selecting-a-target-mapping.md) e [Servizi e abbonamenti](about-services-and-subscriptions.md).
+>I modelli disponibili dipendono dai diritti di accesso, dalla configurazione dell’istanza e dal contesto. Ad esempio, quando crei un servizio di informazioni, puoi collegare un modello di consegna per i messaggi di conferma: puoi quindi accedere solo ai modelli il cui mapping di destinazione è il mapping di abbonamento. Per ulteriori informazioni, consulta [Seleziona una mappatura di destinazione](selecting-a-target-mapping.md) e [Servizi e abbonamenti](about-services-and-subscriptions.md).

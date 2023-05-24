@@ -40,7 +40,7 @@ Consulta le [guide introduttive per le tabelle e gli schemi](../../configuration
 
 ## Come si utilizza una tabella dei destinatari personalizzata? {#how-to-use-a-custom-recipient-table-}
 
-Puoi creare e implementare una tabella dei destinatari non integrata in Campaign per l’invio dei messaggi.
+Puoi creare e implementare una tabella dei destinatari non incorporata in Campaign per inviare i messaggi.
 
 [Per ulteriori informazioni, fai clic qui](../../configuration/using/about-custom-recipient-table.md)
 

@@ -18,7 +18,7 @@ ht-degree: 2%
 
 
 
-Utilizzare Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) opzione per elaborare le informazioni memorizzate in database esterni. Segui i passaggi riportati di seguito per configurare l’accesso alle Teradate.
+Utilizzare Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) per elaborare le informazioni memorizzate in un database esterno. Per configurare l’accesso a Teradata, segui la procedura riportata di seguito.
 
 1. Installare e configurare [Teradate](#teradata-config)
 1. Configurare la Teradata [account esterno](#teradata-external) in Campaign
@@ -26,15 +26,15 @@ Utilizzare Campaign [Federated Data Access](../../installation/using/about-fda.m
 
 ## Configurazione teradata {#teradata-config}
 
-Per implementare la connessione a Campaign, devi installare i driver per la Teradata.
+È necessario installare i driver per Teradata per implementare la connessione a Campaign.
 
-1. Installa il [Driver ODBC per Teradata](https://downloads.teradata.com/download/connectivity/odbc-driver/linux).
+1. Installare [Driver ODBC per Teradata](https://downloads.teradata.com/download/connectivity/odbc-driver/linux).
 
-   È composto da tre pacchetti che possono essere installati su Red Hat (o CentOS)/Suse nel seguente ordine:
+   È costituito da tre pacchetti che possono essere installati su Red Hat (o CentOS)/Suse nell’ordine seguente:
 
    * TeraGSS
-   * tdicu1510 (installalo utilizzando setup_wrapper.sh)
-   * tdodbc1510 (installalo utilizzando setup_wrapper.sh)
+   * tdicu1510 (installarlo utilizzando setup_wrapper.sh)
+   * tdodbc1510 (installarlo utilizzando setup_wrapper.sh)
 
 1. Configurare il driver ODBC. La configurazione può essere eseguita nei file standard: **/etc/odbc.ini** per i parametri generali e /etc/odbcinst.ini per la dichiarazione dei driver:
 
@@ -71,82 +71,82 @@ Per implementare la connessione a Campaign, devi installare i driver per la Tera
 >
 >La connessione a un database esterno di Teradata in FDA richiede passaggi di configurazione aggiuntivi sul server Adobe Campaign. [Ulteriori informazioni](#teradata-additional-configurations).
 
-## Account esterno teradata{#teradata-external}
+## Teradata account esterno{#teradata-external}
 
 L’account esterno Teradata ti consente di collegare l’istanza Campaign al database esterno Teradata.
 
 1. Da campagna **[!UICONTROL Explorer]**, fai clic su **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
-1. Fai clic su **[!UICONTROL New]** e seleziona **[!UICONTROL External database]** come **[!UICONTROL Type]**.
+1. Clic **[!UICONTROL New]** e seleziona **[!UICONTROL External database]** as **[!UICONTROL Type]**.
 
    ![](assets/ext_account_19.png)
 
-1. Per configurare le **[!UICONTROL Teradata]** account esterno, devi specificare:
+1. Per configurare **[!UICONTROL Teradata]** account esterno, è necessario specificare:
 
-   * **[!UICONTROL Type]**: Scegli la **[!UICONTROL Teradata]** digitare.
+   * **[!UICONTROL Type]**: scegli il **[!UICONTROL Teradata]** tipo.
 
-   * **[!UICONTROL Server]**: URL o nome del server Teradata
+   * **[!UICONTROL Server]**: URL o nome del server di Teradata
 
-   * **[!UICONTROL Account]**: Nome dell’account utilizzato per accedere al database delle Teradate
+   * **[!UICONTROL Account]**: nome dell’account utilizzato per accedere al database Teradata
 
-   * **[!UICONTROL Password]**: Password utilizzata per la connessione al database delle Teradate
+   * **[!UICONTROL Password]**: password utilizzata per la connessione al database Teradata
 
-   * **[!UICONTROL Database]**: Nome del database (facoltativo)
+   * **[!UICONTROL Database]**: nome del database (facoltativo)
 
-   * **[!UICONTROL Options]**: Opzioni da passare attraverso le Teradate. Utilizza il formato seguente: &#39;parameter=value&#39;. Utilizzare un punto e virgola come separatore tra i valori.
+   * **[!UICONTROL Options]**: opzioni da trasmettere attraverso la Teradata. Utilizza il seguente formato: &#39;parameter=value&#39;. Utilizzare un punto e virgola come separatore tra i valori.
 
-   * **[!UICONTROL Timezone]**: Fuso orario impostato in Teradata. [Ulteriori informazioni](#timezone)
+   * **[!UICONTROL Timezone]**: fuso orario impostato nella Teradata. [Ulteriori informazioni](#timezone)
 
 Il connettore supporta le seguenti opzioni:
 
 | Opzione | Descrizione |
 |---|---|
-| TD_MAX_SESSIONS | Specifica il numero massimo di sessioni di accesso che il Transporter parallelo Teradata può acquisire per un processo dell&#39;operatore. <br>Per ulteriori informazioni, consulta [questa pagina](https://documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/ds2ref/p1naft0um1kn3vn1ubgkrjdf7c3a.html). |
+| TD_MAX_SESSIONS | Specifica il numero massimo di sessioni di accesso che il Trasportatore parallelo di Teradate può acquisire per un processo operatore. <br>Per ulteriori informazioni, consulta [questa pagina](https://documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/ds2ref/p1naft0um1kn3vn1ubgkrjdf7c3a.html). |
 | TimeZoneName | Nome del fuso orario del server. |
 | Set di caratteri | Utilizzato per configurare il set di caratteri Teradata. <br>Per ulteriori informazioni, consulta [questa pagina](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/Configuration-of-odbc.ini-in-UNIX/Linux-and-Apple-OS-X/Teradata-DSN-Options#rub1478609534082__table_N102D3_N102B6_N102B3_N10001). |
 | IANAAppCodePage | Tabella codici applicazione ODBC. <br>Per ulteriori informazioni, consulta [questa pagina](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/ODBC-Driver-for-Teradata-Application-Development/International-Character-Set-Support/Application-Code-Page) |
 
-### Aggiungi account esterni ODBC aggiuntivi {#add-external}
+### Aggiungi altri account esterni ODBC {#add-external}
 
 >[!NOTE]
 >
 > Questa opzione non è disponibile per le build precedenti alla versione 7.3.1.
 
-Il driver Teradata fornisce una propria libreria ODBC, ma questa libreria potrebbe non essere compatibile con altri account esterni ODBC.
+Il driver di Teradata fornisce una propria libreria ODBC, ma questa potrebbe non essere compatibile con altri account esterni ODBC.
 
-Se si desidera configurare un altro account esterno che utilizza anche ODBC, ad Snowflake, è necessario aggiungere un&#39;opzione ODBCLib impostata al percorso della libreria ODBC predefinita (`/usr/lib/x86_64-linux-gnu/libodbc.so` su Debian e `/usr/lib64/libodbc.so` su RHEL/CentOS).
+Se si desidera configurare un altro account esterno che utilizza anche ODBC, ad esempio Snowflake, è necessario aggiungere un&#39;opzione ODBCLib impostata al percorso della libreria ODBC predefinita (`/usr/lib/x86_64-linux-gnu/libodbc.so` su Debian e `/usr/lib64/libodbc.so` su RHEL/CentOS).
 
 ![](assets/ext_account_24.png)
 
 ### Query banding
 
-Quando più utenti Adobe Campaign si connettono allo stesso account esterno della Teradata FDA, la **[!UICONTROL Query banding]** La scheda ti consente di impostare una banda di query, ovvero un set di coppie chiave/valore, su una sessione.
+Quando più utenti di Adobe Campaign si connettono allo stesso account esterno di Teradata FDA, il **[!UICONTROL Query banding]** Questa scheda ti consente di impostare una banda di query, ovvero un set di coppie chiave/valore, in una sessione.
 
 ![](assets/ext_account_20.png)
 
-Quando questa opzione è configurata, ogni volta che un utente di Campaign esegue una query sul database di Teradata, Adobe Campaign invia metadati, costituiti da un elenco di chiavi associate a questo utente. Questi dati possono quindi essere utilizzati dagli amministratori delle Teradate a scopo di controllo o per gestire i diritti di accesso.
+Quando questa opzione è configurata, ogni volta che un utente di Campaign esegue una query sul database delle Teradate, Adobe Campaign invia metadati, costituiti da un elenco di chiavi, associati a tale utente. Questi dati possono quindi essere utilizzati dagli amministratori di Teradate a scopo di audit o per gestire i diritti di accesso.
 
 >[!NOTE]
 >
->Per ulteriori informazioni su **[!UICONTROL Query banding]**, fare riferimento alla [Documentazione sulle teradate](https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw).
+>Per ulteriori informazioni su **[!UICONTROL Query banding]**, fare riferimento a [Documentazione sulle teradate](https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw).
 
-Per configurare la banding delle query, effettua le seguenti operazioni:
+Per configurare l’assegnazione bande per le query, effettua le seguenti operazioni:
 
-1. Utilizza la  **[!UICONTROL Default]** per immettere una banda di query predefinita che verrà utilizzata se un utente non dispone di una banda di query associata. Se questo campo viene lasciato vuoto, gli utenti senza banda di query non saranno in grado di utilizzare la Teradata.
+1. Utilizza il  **[!UICONTROL Default]** per immettere una banda di query predefinita che verrà utilizzata se a un utente non è associata alcuna banda di query. Se questo campo viene lasciato vuoto, gli utenti senza banda di query non potranno utilizzare Teradata.
 
-1. Utilizza la **[!UICONTROL Users]** per specificare una banda di query per ogni utente. È possibile aggiungere tutte le coppie chiave/valore necessarie, ad esempio priority=1;carico di lavoro=alto. Se all’utente non è stata assegnata alcuna banda di query, la variabile **[!UICONTROL Default]** verrà applicato il campo .
+1. Utilizza il **[!UICONTROL Users]** per specificare una banda di query per ogni utente. Puoi aggiungere tutte le coppie chiave/valore necessarie, ad esempio priorità=1;carico di lavoro=alto. Se all’utente non è assegnata alcuna banda di query, il **[!UICONTROL Default]** verrà applicato.
 
-1. Controlla la **[!UICONTROL Active]** casella per attivare questa funzione
+1. Controlla la **[!UICONTROL Active]** per attivare questa funzione
 
-#### Risoluzione dei problemi degli account esterni {#external-account-troubleshooting}
+#### Risoluzione dei problemi dell’account esterno {#external-account-troubleshooting}
 
-Se viene visualizzato il seguente errore durante il test della connessione **TIM-030008 Data &#39;2&#39;: caratteri mancanti (iRc=-53)** assicurati che il driver ODBC sia installato correttamente e che LD_LIBRARY_PATH (Linux) / PATH (Windows) sia impostato per il server Campaign.
+Se durante il test della connessione viene visualizzato il seguente errore **TIM-030008 Data &#39;2&#39;: caratteri mancanti (iRc=-53)** verificare che il driver ODBC sia installato correttamente e che LD_LIBRARY_PATH (Linux) / PATH (Windows) sia impostato per il server Campaign.
 
-L&#39;errore **Errore ODBC ODB-24000: [Microsoft][ODBC Driver Manager] Nome origine dati non trovato e non è stato specificato alcun driver predefinito.** si verifica con Windows se si utilizza un driver 16.X. Adobe Campaign prevede che la teradata venga denominata &#39;{teradata}&#39; in odbcinst.ini.
+L’errore **Errore ODB-240000: [Microsoft][ODBC Driver Manager] Impossibile trovare il nome dell&#39;origine dati. Nessun driver predefinito specificato.** si verifica con Windows se si utilizza un driver 16.X. Adobe Campaign prevede che il nome della teradata sia &#39;{teradata}&#39; nel file odbcinst.ini.
 
-* A partire da Campaign 18.10, è possibile aggiungere ODBCDRiverName=&quot;Driver ODBC del database di Teradata 16.10&quot; nelle opzioni dell’account esterno. Il numero di versione può cambiare, il nome esatto può essere trovato eseguendo odbcad32.exe e accedendo alla scheda Driver.
+* A partire da Campaign 18.10, è possibile aggiungere ODBCDriverName=&quot;Teradata Database ODBC Driver 16.10&quot; nelle opzioni dell’account esterno. Il numero di versione può cambiare, il nome esatto può essere trovato eseguendo odbcad32.exe e accedendo alla scheda Driver.
 
-* Se utilizzi una versione precedente di Campaign, dovrai copiare la sezione Teradata di odbcinst.ini creata dall’installazione del driver in una nuova sezione denominata Teradata. In questo caso è possibile utilizzare Regedit. Se la base è in latin1, è necessario aggiungere **APICharSize=1** nelle opzioni .
+* Se utilizzi una versione di Campaign precedente, dovrai copiare la sezione Teradata di odbcinst.ini creata dall’installazione del driver in una nuova sezione denominata Teradata. In questo caso è possibile utilizzare Regedit. Se la base è in latino1, sarà necessario aggiungere **APICharSize=1** nelle opzioni.
 
 ## Configurazioni aggiuntive {#teradata-additional-configurations}
 
@@ -173,29 +173,29 @@ Customers with a Latin-1 Teradata database migrating to a recent Campaign Classi
 
 ### Configurazione utente {#user-configuration}
 
-Nel database esterno sono necessari i seguenti diritti: creare/rilasciare/eseguire procedure personalizzate, creare/rilasciare/inserire/selezionare tabelle. È inoltre possibile creare funzioni di modalità utente se si desidera utilizzare le funzioni md5 e sha2 nell’istanza Adobe Campaign.
+Nel database esterno sono necessari i seguenti diritti: crea/rilascia/esegui procedure personalizzate, crea/rilascia/inserisci/seleziona tabelle. Se desideri utilizzare le funzioni md5 e sha2 nell’istanza di Adobe Campaign, potrebbe essere necessario creare funzioni in modalità utente.
 
-Assicurati di configurare il fuso orario corretto. Deve corrispondere a ciò che verrà impostato nell’account esterno creato nell’istanza di Adobe Campaign.
+Assicurati di configurare il fuso orario corretto. Deve corrispondere a quanto verrà impostato nell’account esterno creato nell’istanza di Adobe Campaign.
 
-Adobe Campaign non imposta una modalità di protezione (fallback) sugli oggetti che creerà nel database. Potrebbe essere necessario impostare un valore predefinito per l’utente che Adobe Campaign utilizzerà per connettersi al database di Teradata utilizzando la seguente query:
+Adobe Campaign non imposterà una modalità di protezione (fallback) sugli oggetti che creerà nel database. Potrebbe essere necessario impostare un valore predefinito per l’utente che Adobe Campaign utilizzerà per connettersi al database Teradata utilizzando la seguente query:
 
-| disattiva fallback predefinito |
+| disabilita fallback predefinito |
 | :-: |
 | ```MODIFY USER $login$ AS NO FALLBACK;``` |
 
-### Installazione MD5 {#md5-installation}
+### Installazione di MD5 {#md5-installation}
 
-Se desideri utilizzare le funzioni md5 nella tua istanza di Adobe Campaign, dovrai installare la funzione di modalità utente nel database di Teradata da questo [page](https://downloads.teradata.com/download/extensibility/md5-message-digest-udf) (md5_20080530.zip).
+Se desideri utilizzare le funzioni md5 nell’istanza di Adobe Campaign, dovrai installare la funzione modalità utente nel database di Teradata da questo [pagina](https://downloads.teradata.com/download/extensibility/md5-message-digest-udf) (md5_20080530.zip).
 
-Lo sha1 del file scaricato è il seguente 65cc0bb6935f72fcd84fef1ebcd64c00115dfd1e.
+La sha1 del file scaricato è la seguente: 65cc0bb6935f72fcd84fef1ebcd64c00115dfd1e.
 
 Per installare md5:
 
 1. Decomprimi il file md5_20080530.zip.
 
-1. Vai alla directory md5/src .
+1. Vai alla directory md5/src.
 
-1. Connettiti al database delle Teradate utilizzando bteq.
+1. Connettersi al database delle Teradate utilizzando bteq.
 
 1. Esegui il seguente comando bteq:
 
@@ -203,19 +203,19 @@ Per installare md5:
    .run file = hash_md5.btq
    ```
 
-### Installazione SHA2 {#sha2-installation}
+### Installazione di SHA2 {#sha2-installation}
 
-Se desideri utilizzare le funzioni sha2 nella tua istanza di Adobe Campaign, dovrai installare la funzione di modalità utente nel database di Teradata da questo [page](https://github.com/akuroda/teradata-udf-sha2/archive/v1.0.zip) (teradata-udf-sha2-1.0.zip).
+Se desideri utilizzare le funzioni sha2 nell’istanza di Adobe Campaign, devi installare la funzione modalità utente nel database delle Teradate da questo [pagina](https://github.com/akuroda/teradata-udf-sha2/archive/v1.0.zip) (teradata-udf-sha2-1.0.zip).
 
-Lo sha1 del file scaricato è il seguente e87438d37424836358bd3902cf1adeb629349780.
+L’sha1 del file scaricato è il seguente e87438d37424836358bd3902cf1adeb629349780.
 
 Per installare sha2:
 
 1. Decomprimi il file teradata-udf-sha2-1.0.zip.
 
-1. Vai alla directory teradata-udf-sha2-1.0/src .
+1. Vai alla directory teradata-udf-sha2-1.0/src.
 
-1. Connettiti al database delle Teradate utilizzando bteq.
+1. Connettersi al database delle Teradate utilizzando bteq.
 
 1. Esegui i due seguenti comandi bteq:
 
@@ -226,19 +226,19 @@ Per installare sha2:
 
 ### Installazione di UDF_UTF16TO8 {#UDF-UTF16TO8-installation}
 
-Se desideri utilizzare le funzioni udf_utf16to8 nell&#39;istanza di Adobe Campaign, dovrai installare la funzione di modalità utente nel database delle Teradate dal **Kit utensile unicode teradata** di questo [page](https://downloads.teradata.com/download/tools/unicode-tool-kit) (utk_release1.7.0.0.zip).
+Se si desidera utilizzare le funzioni udf_utf16to8 nell&#39;istanza di Adobe Campaign, è necessario installare la funzione modalità utente nel database Teradata dal **Kit di strumenti Unicode teradata** di questo [pagina](https://downloads.teradata.com/download/tools/unicode-tool-kit) (utk_release1.7.0.0.zip).
 
-Lo sha1 del file scaricato è il seguente e58235f434f52c71316a577cb48e20b97d24f470.
+Lo sha1 del file scaricato è il seguente: e58235f434f52c71316a577cb48e20b97d24f470.
 
 Per installare udf_utf16to8:
 
 1. Decomprimi il file utk_release1.7.0.0.zip.
 
-1. Cerca l&#39;udf_utf16to8.o nei file estratti e passa alla directory che contiene il file. Deve essere denominato utk_release1.7.0.0/utk_release1.7.0.0/04 TranslationUDFs/01 Teradata UDFs/suselinux-x8664/udf_installation/.
+1. Cercate udf_utf16to8.o nei file estratti e individuate la directory che contiene il file. Deve essere denominato utk_release1.7.0.0/utk_release1.7.0.0/04 TranslationUDFs/01 Teradata UDFs/suselinux-x8664/udf_installation/.
 
-1. Connettiti al database delle Teradate utilizzando bteq.
+1. Connettersi al database delle Teradate utilizzando bteq.
 
-1. Digitare il seguente comando bteq:
+1. Digita il seguente comando bteq:
 
    ```
    REPLACE FUNCTION udf_utf16to8 (
@@ -257,17 +257,17 @@ Per installare udf_utf16to8:
 
 Per l&#39;installazione del driver è necessario quanto segue:
 
-* Driver ODBC teradata, che si trova in questo [page](https://downloads.teradata.com/download/connectivity/odbc-driver/linux)
+* Driver ODBC di teradata, disponibile in questo [pagina](https://downloads.teradata.com/download/connectivity/odbc-driver/linux)
 
-* Strumenti e utility teradate (utilizzati per il carico di massa), che si trova in questo [page](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-linux-installation-package-0)
+* Utilità e strumenti di teradata (utilizzati per il carico di massa), disponibili in [pagina](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-linux-installation-package-0)
 
 Nomi di file e sha1:
 
-* tdodbc1620__linux_indep.16.20.00.00-1.tar.gz 121fdd978b56fe1304fc5cb7819741b0847f4 4fd
+* tdodbc1620__linux_indep.16.20.00.00-1.tar.gz 121fdd978b56fe1304fc5cb7819741b0847f44fd
 
 * TeradataToolsAndUtilitiesBase__linux_indep.16.20.01.00.tar.gz b 29d0af5ffd8dcf68a9dbbaa6f8639387b19c563
 
-Se non c&#39;è alcun pacchetto per la distribuzione Linux, è possibile installare come spiegato su un CentOS 7 (per esempio utilizzando docker) e quindi copiare il contenuto di /opt/teradata sul server Adobe Campaign.
+Se non è presente alcun pacchetto per la distribuzione Linux, puoi installarlo come descritto su CentOS 7 (ad esempio utilizzando il docker) e quindi copiare il contenuto di /opt/teradata sul server Adobe Campaign.
 
 ### Installazione driver ODBC {#odbc-installation}
 
@@ -275,7 +275,7 @@ Per installare il driver ODBC:
 
 1. Estrai il file tdodbc1620__linux_indep.16.20.00.00-1.tar.gz.
 
-1. Vai alla directory tdodbc1620.
+1. Passare alla directory tdodbc1620.
 
 1. Potrebbe essere necessario correggere lo script di installazione:
 
@@ -283,51 +283,51 @@ Per installare il driver ODBC:
    "sed -i s/16.10/16.20/ setup_wrapper.sh".
    ```
 
-1. Esegui setup_wrapper.sh.
+1. Eseguire setup_wrapper.sh.
 
-### Installazione di strumenti e utility di teradata {#teradata-tools-installation}
+### Installazione di strumenti e utilità di teradata {#teradata-tools-installation}
 
-Per installare Strumenti:
+Per installare gli strumenti:
 
 1. Estrai il file TeradataToolsAndUtilitiesBase__linux_indep.16.20.01.00.tar.gz.
 
-1. Vai alla directory TeradataToolsAndUtilitiesBase/Linux/i386-x8664/tdicu.
+1. Andare alla directory TeradataToolsAndUtilitiesBase/Linux/i386-x8664/tdicu.
 
-1. Esegui setup_wrapper.sh.
+1. Eseguire setup_wrapper.sh.
 
-1. Vai alla directory TeradataToolsAndUtilitiesBase/Linux/i386-x8664/cliv2 .
+1. Andare alla directory TeradataToolsAndUtilitiesBase/Linux/i386-x8664/cliv2.
 
-1. Esegui setup_wrapper.sh.
+1. Eseguire setup_wrapper.sh.
 
-1. Vai alla directory TeradataToolsAndUtilitiesBase/Linux/i386-x8664/tptbase.
+1. Andare alla directory TeradataToolsAndUtilitiesBase/Linux/i386-x8664/tptbase.
 
-1. Esegui setup_wrapper.sh.
+1. Eseguire setup_wrapper.sh.
 
-1. Un file libtelapi.so dovrebbe essere disponibile in /opt/teradata/client/16.20/lib64.
+1. Un file libtelapi.so deve essere disponibile in /opt/teradata/client/16.20/lib64.
 
 ## Configurazione del server Campaign per Windows {#campaign-server-windows}
 
-Prima di tutto è necessario scaricare strumenti e utilità di Teradata per Windows. Puoi scaricarlo da questo [page](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-windows-installation-package)
+È innanzitutto necessario scaricare Strumenti e utilità di Teradata per Windows. Puoi scaricarlo da questo [pagina](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-windows-installation-package)
 
-Assicurati di installare il driver ODBC e la base del trasportatore parallelo Teradata. Verrà installato telapi.dll utilizzato per eseguire il caricamento in massa sul database delle Teradate.
+Assicurarsi di installare il driver ODBC e la Teradata Parallel Transporter Base. Verrà installato telapi.dll utilizzato per eseguire il caricamento in massa sul database delle Teradate.
 
-Assicurati che il percorso del driver e delle utility sia nella variabile PATH che nlserver avrà durante l&#39;esecuzione. Per impostazione predefinita, il percorso è C:\Program Files (x86)\Teradata\Client\15.10\bin on Windows 32 bits or C:\Program Files\Teradata\Client\15.10\bin on 64 bit).
+Assicurarsi che il percorso del driver e delle utilità sia nella variabile PATH che nlserver avrà durante l&#39;esecuzione. Per impostazione predefinita, il percorso è C:\Program Files (x86)\Teradata\Client\15.10\bin su Windows 32 bit o C:\Program Files\Teradata\Client\15.10\bin su 64 bit).
 
 ## Fuso orario {#timezone}
 
-La teradata utilizza un nome di fuso orario non standard, è possibile trovare l&#39;elenco nella [Teradata](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/oGKvgl7gCeBMTGrp59BnwA). Adobe Campaign cercherà di convertire il fuso orario specificato nella configurazione esterna in qualcosa che le Teradate possano comprendere. Se non viene trovata una corrispondenza, verrà trovato il fuso orario GMT+X (o GMT-X) più vicino per la sessione, con un avviso nel registro.
+La teradata utilizza un nome di fuso orario non standard. L&#39;elenco è disponibile nella [Teradata](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/oGKvgl7gCeBMTGrp59BnwA). Adobe Campaign tenterà di convertire il fuso orario specificato nella configurazione esterna in un formato comprensibile alle Teradate. Se non viene trovata alcuna corrispondenza, per la sessione verrà trovato il fuso orario GMT+X (o GMT-X) dell’armadio, con un avviso nel registro.
 
-La conversione viene eseguita leggendo un file denominato teradata_timezones.txt che dovrebbe trovarsi nella seguente directory del datakit: /usr/local/neolane/nl6/datakit sotto linux. Se modifichi questo file, contatta il team Adobe Campaign per apportare la modifica al codice sorgente, altrimenti il file verrà sovrascritto durante il prossimo aggiornamento di Campaign.
+La conversione viene eseguita leggendo un file denominato teradata_timezones.txt che deve trovarsi nella seguente directory datakit: /usr/local/neolane/nl6/datakit in linux. Se modifichi questo file, assicurati di contattare il team di Adobe Campaign per apportare la modifica nel codice sorgente; in caso contrario, il file verrà sovrascritto durante il prossimo aggiornamento di Campaign.
 
-Il fuso orario utilizzato per la connessione viene indicato quando si esegue nlserver con lo switch -verbose, ad esempio:
+Il fuso orario utilizzato per la connessione verrà indicato quando si esegue nlserver con lo switch -verbose, ad esempio:
 
 ```
 15:04:04 >   ODB-240007 Teradata: will use 'Europe Central' as session time zone.
 ```
 
-Se il fuso orario utilizzato non è quello corretto, è possibile aggiungere sull’account esterno un’opzione denominata &quot;TimeZoneName&quot;. In questo caso, utilizza il valore della Teradata, ad esempio &quot;TimeZoneName=Europe Central&quot;.
+Se il fuso orario utilizzato non è quello corretto, è possibile aggiungere un&#39;opzione denominata &quot;TimeZoneName&quot; all&#39;account esterno. In tal caso, utilizzare il valore della Teradata, ad esempio &quot;TimeZoneName=Europe Central&quot;.
 
-Quando si utilizza il caricamento in serie o il &quot;caricamento rapido&quot; nei documenti di Teradata, Campaign non può indicare il fuso orario. Pertanto, si consiglia di impostare il fuso orario predefinito dell’utente che Campaign utilizzerà per connettersi:
+Quando si utilizza il caricamento in massa o il &quot;caricamento rapido&quot; nei documenti delle Teradate, Campaign non può indicare il fuso orario. Pertanto, si consiglia di impostare il fuso orario predefinito dell’utente che Campaign utilizzerà per connettersi:
 
 ```
 MODIFY USER $login$ AS TIME ZONE = 'Europe Central';

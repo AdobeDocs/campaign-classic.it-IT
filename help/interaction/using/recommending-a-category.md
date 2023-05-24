@@ -18,12 +18,12 @@ ht-degree: 5%
 
 
 
-Può essere che un destinatario non sia considerato idoneo per tutte le offerte. Per garantire che tutti i destinatari ricevano una proposta di offerta, è possibile aggiungere sistematicamente una o più categorie di offerta nelle raccomandazioni. A differenza delle offerte principali, queste offerte di &quot;backup&quot; devono avere un peso basso (ma non zero), in modo che siano prese in considerazione solo se non sono idonee offerte di alto peso. Inoltre, non deve essere applicata alcuna regola di presentazione a queste offerte per garantire che siano sempre incluse nelle raccomandazioni. Ciò significa che, nel corso di una proposta, se non è disponibile un’offerta elevata, il destinatario riceverà almeno un’offerta da questa categoria.
+Può accadere che un destinatario non sia considerato idoneo per tutte le offerte. Al fine di garantire che tutti i destinatari ricevano una proposta di offerta, è possibile aggiungere sistematicamente una o più categorie di offerta nelle raccomandazioni. A differenza delle offerte principali, queste offerte di &quot;backup&quot; devono avere un peso basso (ma non zero), in modo che vengano prese in considerazione solo se non sono idonee offerte di peso elevato. Inoltre, a queste offerte non deve essere applicata alcuna regola di presentazione per garantire che vengano sempre incluse nelle raccomandazioni. Ciò significa che, durante una proposta, se non è disponibile alcuna offerta di peso elevato, il destinatario riceverà almeno un’offerta da questa categoria.
 
-Per includere sempre una categoria nei consigli, esegui i seguenti passaggi:
+Per includere sempre una categoria nei consigli, effettua le seguenti operazioni:
 
-1. Apri l’explorer e fai clic su un catalogo di offerte dalla struttura ad albero.
-1. Fai clic sul pulsante **[!UICONTROL Eligibility]** e seleziona **[!UICONTROL Always include this category in the recommendations]** scatola.
-1. Completa e approva facendo clic su **[!UICONTROL Save]**.
+1. Apri l’Explorer e fai clic su un catalogo di offerte dalla struttura ad albero.
+1. Fai clic su **[!UICONTROL Eligibility]** e spuntare la **[!UICONTROL Always include this category in the recommendations]** casella.
+1. Termina e approva facendo clic su **[!UICONTROL Save]**.
 
    ![](assets/offer_cat_default_001.png)

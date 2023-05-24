@@ -18,14 +18,14 @@ ht-degree: 4%
 
 
 
-Un catalogo di offerte è sempre composto da categorie che hanno poi sottocategorie o offerte direttamente.
+Un catalogo di offerta è sempre costituito da categorie che a loro volta hanno sottocategorie o offerte direttamente.
 
-Un catalogo di offerte fa parte di un unico ambiente, da specificare in precedenza. Le offerte contenute in questo catalogo possono essere associate solo agli spazi specificati in questo ambiente.
+Un catalogo di offerte fa parte di un unico ambiente, da specificare in anticipo. Le offerte contenute in questo catalogo possono essere associate solo agli spazi specificati in questo ambiente.
 
-La gestione delle offerte viene eseguita tramite un albero di cartelle in Adobe Campaign.
+La gestione delle offerte viene eseguita tramite una struttura ad albero delle cartelle nell’Adobe Campaign.
 
-Prima di creare le offerte, è necessario specificare un ambiente (consulta [Panoramica sugli ambienti](../../interaction/using/environments-overview.md)). Conterrà tutte le caratteristiche (idoneità, vincoli sul target, regole di presentazione) di un insieme di offerte, suddivise in categorie, nonché l’elenco dei relativi spazi.
+Prima di creare le offerte, devi specificare un ambiente (consulta [Panoramica sugli ambienti](../../interaction/using/environments-overview.md)). Conterrà tutte le caratteristiche (idoneità, vincoli sul target, regole di presentazione) di un set di offerte, ordinate in categorie, nonché l’elenco dei relativi spazi.
 
 >[!IMPORTANT]
 >
->La creazione del catalogo delle offerte, ovvero le categorie e le offerte, è responsabilità della **[!UICONTROL Offer manager]**.
+>La creazione del catalogo delle offerte, ovvero le categorie e le offerte, è responsabilità del **[!UICONTROL Offer manager]**.

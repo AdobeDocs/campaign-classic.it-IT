@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Definire la consegna finale
-description: Scopri come eseguire test A/B tramite un caso d’uso dedicato
+description: Scopri come eseguire il test A/B tramite un caso d’uso dedicato
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
@@ -19,13 +19,13 @@ ht-degree: 9%
 
 Una volta creato lo script per selezionare il vincitore del test A/B, puoi definire i parametri della consegna finale.
 
-1. Collega **[!UICONTROL JavaScript code]** attività per gli altri **[!UICONTROL Delivery]** attività.
+1. Connetti **[!UICONTROL JavaScript code]** attività al resto **[!UICONTROL Delivery]** attività.
 1. Apri **[!UICONTROL Delivery]** attività.
-1. Deseleziona **[!UICONTROL Generate an outbound transition]** per completare il flusso di lavoro con questa attività.
-1. Lascia i valori predefiniti delle altre opzioni.
+1. Deseleziona la **[!UICONTROL Generate an outbound transition]** per completare il flusso di lavoro con questa attività.
+1. Lascia i valori predefiniti per le altre opzioni.
 
    ![](assets/ab_test_final_delivery.png)
 
-Preparando la consegna specificata nella transizione (definita tramite il **[!UICONTROL Javascript Code]** attività), potrai quindi approvarla e avviare l’invio, come descritto nel passaggio successivo.
+Preparando la consegna specificata nella transizione (definita tramite il **[!UICONTROL Javascript Code]** attività), potrai quindi approvarlo e avviare l’invio, come descritto nel passaggio successivo.
 
 Ora puoi avviare il flusso di lavoro. [Ulteriori informazioni](a-b-testing-uc-start-workflow.md).

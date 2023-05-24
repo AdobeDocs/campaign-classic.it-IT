@@ -16,30 +16,30 @@ ht-degree: 0%
 
 ---
 
-# Migrazione di una piattaforma Linux a Campaign v7{#migrating-in-linux-for-adobe-campaign-v}
+# Migrare una piattaforma Linux a Campaign v7{#migrating-in-linux-for-adobe-campaign-v}
 
 
 
 I passaggi di migrazione in Linux sono i seguenti:
 
 1. Arresta tutti i servizi - [Ulteriori informazioni](#service-stop).
-1. Salva il database - [Ulteriori informazioni](#back-up-the-database).
+1. Salvare il database - [Ulteriori informazioni](#back-up-the-database).
 1. Disinstallare i pacchetti della versione precedente di Adobe Campaign - [Ulteriori informazioni](#uninstalling-adobe-campaign-previous-version-packages).
 1. Migrare la piattaforma - [Ulteriori informazioni](#deploying-adobe-campaign-v7).
-1. Servizio di riavvio - [Ulteriori informazioni](#re-starting-services).
+1. Riavvia servizio - [Ulteriori informazioni](#re-starting-services).
 
-## Interruzione del servizio {#service-stop}
+## Arresto del servizio {#service-stop}
 
 In primo luogo, interrompere tutti i processi con accesso al database su tutti i computer interessati.
 
-1. Accedi come **root**.
+1. Accedi come **radice**.
 1. Tutti i server che utilizzano il modulo di reindirizzamento (**webmdl** servizio) deve essere arrestato. Per Apache, esegui il seguente comando:
 
    ```
    /etc/init.d/apache2 stop
    ```
 
-1. Accedi di nuovo come **root**.
+1. Accedi di nuovo come **radice**.
 1. Arresta i servizi della versione precedente di Adobe Campaign su tutti i server.
 
    ```
@@ -55,21 +55,21 @@ In primo luogo, interrompere tutti i processi con accesso al database su tutti i
 
 -->
 
-1. Assicurati che i servizi Adobe Campaign siano arrestati su ogni server.
+1. Assicurati che i servizi Adobe Campaign siano arrestati su ciascun server.
 
    ```
    ps waux | grep nlserver
    ```
 
-   Viene visualizzato l’elenco dei processi attivi insieme al relativo ID (PID).
+   L&#39;elenco dei processi attivi viene visualizzato insieme al relativo ID (PID).
 
-1. Se uno o più processi Adobe Campaign sono ancora attivi o bloccati dopo qualche minuto, eliminali.
+1. Se uno o più processi di Adobe Campaign sono ancora attivi o bloccati dopo alcuni minuti, eliminali.
 
    ```
    killall nlserver
    ```
 
-1. Se alcuni processi sono ancora attivi dopo alcuni minuti, puoi forzarli a chiuderli utilizzando il comando :
+1. Se alcuni processi sono ancora attivi dopo alcuni minuti, è possibile forzarne la chiusura utilizzando il comando:
 
    ```
    killall -9 nlserver
@@ -155,8 +155,8 @@ In primo luogo, interrompere tutti i processi con accesso al database su tutti i
 
 -->
 
-1. Esegui un backup del database Adobe Campaign.
-1. Accedi come **neolano** e fare un backup del **nl6** utilizzando il seguente comando:
+1. Esegui un backup del database di Adobe Campaign.
+1. Accedi come **neolano** e creare un backup del **nl6** utilizzando il comando seguente:
 
    ```
    su - neolane
@@ -165,7 +165,7 @@ In primo luogo, interrompere tutti i processi con accesso al database su tutti i
 
    >[!IMPORTANT]
    >
-   >Per precauzione, ti consigliamo di comprimere la **nl6.back** e salvarlo in un percorso sicuro diverso dal server.
+   >Come precauzione, ti consigliamo di comprimere il **nl6.indietro** e salvarla in un percorso sicuro diverso dal server.
 
 ## Disinstallare i pacchetti della versione precedente di Adobe Campaign {#uninstalling-adobe-campaign-previous-version-packages}
 
@@ -213,45 +213,45 @@ In primo luogo, interrompere tutti i processi con accesso al database su tutti i
 
 Questa sezione mostra come disinstallare i pacchetti Adobe Campaign v6.1.
 
-1. Accedi come **root**.
+1. Accedi come **radice**.
 1. Identifica i pacchetti Adobe Campaign installati utilizzando il seguente comando.
 
-   * In **Debian**:
+   * In entrata **Debian**:
 
       ```
       dpkg -l | grep nl
       ```
 
-      Viene visualizzato l&#39;elenco dei pacchetti installati:
+      Viene visualizzato l’elenco dei pacchetti installati:
 
       ```
       ii  nlserver6                       XXXX                     nlserver6-XXXX
       ii  nlthirdparty6                   XXXX                     nlthirdparty6-XXXX
       ```
 
-   * In **Cappello rosso**:
+   * In entrata **Cappello rosso**:
 
       ```
       rpm -qa | grep nl
       ```
 
-1. Disinstalla i pacchetti Adobe Campaign v6.
+1. Disinstallare i pacchetti Adobe Campaign v6.
 
-   * In **Debian**:
+   * In entrata **Debian**:
 
       ```
       dpkg --purge nlserver6 nlthirdparty6
       ```
 
-   * In **Cappello rosso**:
+   * In entrata **Cappello rosso**:
 
       ```
       rprm -ev nlserver6 nlthirdparty6
       ```
 
-## Distribuzione di Adobe Campaign v7 {#deploying-adobe-campaign-v7}
+## Distribuire Adobe Campaign v7 {#deploying-adobe-campaign-v7}
 
-Procedura per distribuire v7.
+Di seguito è riportata la procedura per distribuire v7.
 
 <!--
 
@@ -467,32 +467,32 @@ To deploy Adobe Campaign, apply the following steps:
 La distribuzione di Adobe Campaign prevede due fasi:
 
 * Installazione dei pacchetti Adobe Campaign v7: questa operazione deve essere eseguita su ciascun server.
-* L&#39;aggiornamento post: questo comando deve essere avviato su ogni istanza.
+* Post aggiornamento: questo comando deve essere avviato su ogni istanza.
 
-Per distribuire Adobe Campaign, esegui i seguenti passaggi:
+Per distribuire Adobe Campaign, effettua le seguenti operazioni:
 
 1. Installa i pacchetti Adobe Campaign v7 più recenti utilizzando il seguente comando:
 
-   * In **Debian**:
+   * In entrata **Debian**:
 
       ```
       dpkg -i nlserver6-XXXX-amd64_debX.deb
       ```
 
-   * In **Cappello rosso**:
+   * In entrata **Cappello rosso**:
 
       ```
       rpm -Uvh nlserver6-XXXX-x86_64_rhX.rpm
       ```
    >[!IMPORTANT]
    >
-   >È necessario installare correttamente i pacchetti prima di passare al passaggio successivo.
+   >È necessario installare i pacchetti correttamente prima di procedere al passaggio successivo.
 
    >[!NOTE]
    >
    >Adobe Campaign v7 è installato nel **/usr/local/neolane/nl6/** per impostazione predefinita.
 
-1. Per rendere disponibile il programma di installazione della console client, copialo nella directory di installazione di Adobe Campaign:
+1. Per rendere disponibile il programma di installazione della console client, copiarlo nella directory di installazione di Adobe Campaign:
 
    ```
    cp setup-client-7.0.XXXX.exe /usr/local/neolane/nl6/datakit/nl/eng/jsp
@@ -502,7 +502,7 @@ Per distribuire Adobe Campaign, esegui i seguenti passaggi:
    >
    >Per ulteriori informazioni su come installare Adobe Campaign in Linux, consulta [questa sezione](../../installation/using/installing-campaign-standard-packages.md).
 
-1. Vai a **nl6.back** copia (sovrascrivi) i file di configurazione e le sottocartelle di ogni istanza. Accedi come **neolano** ed esegui il comando seguente:
+1. Vai a **nl6.indietro** copia di backup e copia (sovrascrivi) i file di configurazione e le sottocartelle di ciascuna istanza. Accedi come **neolano** ed esegui il comando seguente:
 
    ```
    su - neolane
@@ -513,13 +513,13 @@ Per distribuire Adobe Campaign, esegui i seguenti passaggi:
    cp -r nl6.back/var/* nl6/var/
    ```
 
-1. Ricarica la configurazione Adobe Campaign v7 utilizzando il seguente comando:
+1. Ricarica la configurazione di Adobe Campaign v7 con il seguente comando:
 
    ```
    nlserver config -reload
    ```
 
-1. Avvia il processo di post-aggiornamento utilizzando il seguente comando (ancora come **neolano**):
+1. Avvia il processo di post-aggiornamento utilizzando il seguente comando (statico come **neolano**):
 
    ```
    su - neolane
@@ -596,9 +596,9 @@ If you are migrating from v6.02 or earlier, you must configure your security zon
 
 -->
 
-## Servizi di riavvio {#re-starting-services}
+## Riavvia servizi {#re-starting-services}
 
-Procedura per riavviare i servizi.
+Di seguito è riportata la procedura per riavviare i servizi.
 
 <!--
 
@@ -672,7 +672,7 @@ Avvia i servizi Apache e Adobe Campaign su ciascuno dei seguenti server:
 1. Server di mid-sourcing.
 1. Server di marketing.
 
-Verificare completamente la nuova installazione, verificare che non regredisca e assicurarsi che tutto funzioni correttamente.
+Eseguire il test completo della nuova installazione, verificare che non regredisca e assicurarsi che tutto funzioni correttamente.
 
 <!--
 

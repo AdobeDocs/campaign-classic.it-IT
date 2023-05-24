@@ -19,37 +19,37 @@ ht-degree: 36%
 
 In seguito alle modifiche recenti, gli URL tracciati possono non riuscire quando la firma URL è attiva in Campaign. Alcune caselle e-mail possono essere più interessate di altre, in particolare quelle di aziende che usano strumenti di sicurezza specifici che possono interessare i collegamenti e modificare il meccanismo di firma degli URL.
 
-Di conseguenza, l’Adobe consiglia di disabilitare il meccanismo di firma per i collegamenti di tracciamento. Questa procedura corregge i vecchi collegamenti di tracciamento, ad eccezione di quelli ricevuti con un doppio escape.
+Di conseguenza, l’Adobe consiglia di disabilitare il meccanismo di firma per il tracciamento dei collegamenti. Questa procedura corregge i vecchi collegamenti di tracciamento, ad eccezione di quelli ricevuti con un doppio escape.
 
 Tieni presente che anche i collegamenti di annullamento di abbonamento, come tutti gli altri collegamenti, possono non riuscire; la frequenza varia da host a host ma è comunque inferiore all’1%.
 
 **Sei interessato da questo problema?**
 
-Per migliorare la sicurezza, è stato introdotto il meccanismo di firma per il tracciamento dei collegamenti nelle e-mail in [Campaign Gold Standard 8](../../rn/using/gold-standard.md#gs8) - Aprile 2020 - ed è abilitato per impostazione predefinita per tutti i clienti a partire da Build 19.1.4 (9032@3a9dc9c) e Campaign 20.2.
+Per migliorare la sicurezza, il meccanismo di firma per il tracciamento dei collegamenti nelle e-mail è stato introdotto in [Campaign Gold Standard 8](../../rn/using/gold-standard.md#gs8) - Aprile 2020 - ed è abilitato per impostazione predefinita per tutti i clienti che iniziano con Build 19.1.4 (9032@3a9dc9c) e Campaign 20.2.
 
 Se l’ambiente è in esecuzione su una delle versioni elencate di seguito, può essere interessato:
 
 * Gold Standard da 8 a 11. [Ulteriori informazioni](../../rn/using/gold-standard.md#gs-8)
-* Rilasci di Campaign 21.1.1 (build 9277) a 21.1.2 (build 9282). [Ulteriori informazioni](../../rn/using/latest-release.md)
-* versioni da Campaign 20.3.1 (build 9228) a 20.3.3 (build 9234). [Ulteriori informazioni](../../rn/using/release--2020.md#release-20-3)
-* versioni da Campaign 20.2.1 (build 9178) a 20.2.4 (build 9187). [Ulteriori informazioni](../../rn/using/release--2020.md#release-20-2)
-* versioni da Campaign 20.1.1 (build 9122) a 21.1.3 (build 9124). [Ulteriori informazioni](../../rn/using/release--2020.md#release-20-1)
-* Rilasci di Campaign 19.2.2 (build 9080) a 19.2.3 (build 9081). [Ulteriori informazioni](../../rn/using/release--2019.md#release-19-2)
-* Rilasci di Campaign 19.1.5 (build 9033) a 19.1.7 (build 9036). [Ulteriori informazioni](../../rn/using/release--2019.md#release-19-1)
+* Campaign da 21.1.1 (build 9277) a 21.1.2 (build 9282). [Ulteriori informazioni](../../rn/using/latest-release.md)
+* Da Campaign 20.3.1 (build 9228) a 20.3.3 (build 9234). [Ulteriori informazioni](../../rn/using/release--2020.md#release-20-3)
+* Campaign versioni da 20.2.1 (build 9178) a 20.2.4 (build 9187). [Ulteriori informazioni](../../rn/using/release--2020.md#release-20-2)
+* Da Campaign 20.1.1 (build 9122) a 21.1.3 (build 9124). [Ulteriori informazioni](../../rn/using/release--2020.md#release-20-1)
+* Campaign dalle versioni 19.2.2 (build 9080) alla versione 19.2.3 (build 9081). [Ulteriori informazioni](../../rn/using/release--2019.md#release-19-2)
+* Campaign: versioni da 19.1.5 (build 9033) a 19.1.7 (build 9036). [Ulteriori informazioni](../../rn/using/release--2019.md#release-19-1)
 
 
 Scopri come controllare la versione [in questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 **Come si esegue l’aggiornamento?**
 
-Come **cliente ospitato**, Adobe collaborerà con te per aggiornare la configurazione a breve.
+As a **cliente in hosting**, Adobe collaborerà con te per aggiornare la tua configurazione a breve.
 
-Come **cliente on-premise/ibrido**, devi aggiornare la configurazione.
+Come un **cliente on-premise/ibrido**, è necessario aggiornare la configurazione.
 
-Segui il passaggio seguente:
+Effettua le seguenti operazioni:
 
 1. In [file di configurazione del server](../../installation/using/the-server-configuration-file.md) (serverConf.xml), modifica **signEmailLinks** a **false**.
-1. Riavvia **nlserver** servizio.
+1. Riavvia il **nlserver** servizio.
 1. Sul server di tracciamento, riavvia il server web (apache2 su Debian, httpd su CentOS/RedHat, IIS su Windows).
 
    ```
@@ -58,7 +58,7 @@ Segui il passaggio seguente:
 
 >[!NOTE]
 >
->La **config-`<instance>`.xml** sostituisce il file **serverConf.xml** impostazioni. Se la **signEmailLinks** è presente nel  **config-`<instance>`.xml** (4) **istanza** è il nome della tua istanza), deve anche essere girato a **false**.
+>Il **config-`<instance>`.xml** il file sostituisce **serverConf.xml** impostazioni. Se il **signEmailLinks** è presente in  **config-`<instance>`.xml** (dove **istanza** è il nome dell’istanza), deve anche essere convertito in **false**.
 
 **Quale sarà l’impatto dell&#39;aggiornamento?**
 

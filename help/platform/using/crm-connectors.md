@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Connettori per sistemi CRM
-description: Guida introduttiva ai connettori di gestione delle relazioni con i clienti in Campaign
+description: Introduzione ai connettori CRM in Campaign
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
@@ -35,7 +35,7 @@ Il CRM e le versioni supportate sono descritti in dettaglio in Campaign [Matrice
 
 >[!NOTE]
 >
->I connettori di gestione delle relazioni con i clienti funzionano solo con un URL sicuro (https).
+>I connettori di gestione delle relazioni con i clienti funzionano solo con un URL protetto (https).
 
 ### Passaggi di implementazione {#crm-implementation-steps}
 

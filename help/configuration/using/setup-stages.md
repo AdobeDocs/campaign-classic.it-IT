@@ -16,7 +16,7 @@ ht-degree: 2%
 
 # Fasi di configurazione{#setup-stages}
 
-Il principio di base è l&#39;inserimento di tag di web tracking in alcune pagine del sito web.
+Il principio di base è l’inserimento di tag di tracciamento web in determinate pagine del sito web.
 
 Esistono due tipi di tag:
 
@@ -25,18 +25,18 @@ Esistono due tipi di tag:
 
 Per impostare questi tag, effettua le seguenti operazioni:
 
-1. Identificare le pagine da monitorare e determinarne il tipo (WEB o TRANSAZIONE).
-1. Stabilire quali informazioni aggiuntive si desidera raccogliere ed estendere il **nms:webTrackingLog** schema con la descrizione di queste informazioni. Per impostazione predefinita, questo schema può memorizzare gli importi delle transazioni e il numero di elementi per transazione.
-1. Creazione di tag di web tracking. Ci sono due modi per farlo:
+1. Identifica le pagine da tracciare e determinane il tipo (WEB o TRANSACTION).
+1. Determinare quali informazioni aggiuntive si desidera raccogliere ed estendere **nms:webTrackingLog** con la descrizione di tali informazioni. Per impostazione predefinita, questo schema può memorizzare gli importi delle transazioni e il numero di elementi per transazione.
+1. Creazione dei tag di tracciamento web. Esistono due modi per farlo:
 
-   * Inserisci gli URL corrispondenti a queste pagine nella tua piattaforma Adobe Campaign, quindi genera ed estrae i tag di web tracking associati (dal **[!UICONTROL Campaign execution>Resources>Web tracking tags]** nodo della console client).
-   * Crea tu stesso i tag di web tracking in modalità &quot;on-the-fly create&quot;: gli URL corrispondenti a queste pagine verranno inseriti automaticamente nella piattaforma Adobe Campaign.
+   * Inserisci gli URL corrispondenti a queste pagine nella piattaforma Adobe Campaign, quindi genera ed estrai i tag di tracciamento web associati (dalla **[!UICONTROL Campaign execution>Resources>Web tracking tags]** della console client).
+   * Crea tu stesso i tag di web-tracking in modalità &quot;creazione immediata&quot;: gli URL corrispondenti a queste pagine verranno inseriti automaticamente nella tua piattaforma Adobe Campaign.
 
-1. Aggiungi questi tag in modo statico o dinamico nelle pagine da monitorare.
+1. Aggiungi questi tag in modo statico o dinamico nelle pagine che desideri tracciare.
 
    >[!NOTE]
    >
-   >Tutti i tag di tipo WEB possono essere aggiunti così come sono alle pagine del sito. I tag TRANSAZIONE devono essere modificati o aggiunti dinamicamente per contenere le informazioni aggiuntive (quantità, elementi, ecc.).
+   >Tutti i tag di tipo WEB possono essere aggiunti così come sono alle pagine del sito. I tag TRANSACTION devono essere modificati o aggiunti in modo dinamico per contenere le informazioni aggiuntive (importo, elementi, ecc.).
 
 **Esempio**:
 

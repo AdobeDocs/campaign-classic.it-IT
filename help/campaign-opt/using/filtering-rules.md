@@ -14,25 +14,25 @@ ht-degree: 2%
 
 # Regole di filtro{#filtering-rules}
 
-Le regole di filtro ti consentono di definire i messaggi da escludere in base ai criteri definiti in una query. Queste regole sono collegate a una dimensione di targeting.
+Le regole di filtro consentono di definire i messaggi da escludere in base ai criteri definiti in una query. Queste regole sono collegate a una dimensione di targeting.
 
-Le regole di filtro possono essere collegate ad altri tipi di regole (controllo, pressione, ecc.) in tipologie o raggruppate in un **Filtro** tipologia. Per ulteriori informazioni, consulta [Creazione e utilizzo di una tipologia di filtro](#creating-and-using-a-filtering-typology).
+Le regole di filtro possono essere collegate ad altri tipi di regole (controllo, pressione, ecc.) in tipologie, o raggruppati in un **Filtraggio** tipologia. Per ulteriori informazioni, consulta [Creazione e utilizzo di una tipologia di filtro](#creating-and-using-a-filtering-typology).
 
 ## Creare una regola di filtro {#creating-a-filtering-rule}
 
-Ad esempio, puoi filtrare gli abbonati alla newsletter per impedire l’invio di comunicazioni ai destinatari minorenni.
+Ad esempio, puoi filtrare gli abbonati alle newsletter per evitare che le comunicazioni vengano inviate a destinatari minorenni.
 
 Per definire questo filtro, effettua le seguenti operazioni:
 
-1. Crea un **[!UICONTROL Filtering]** regola di tipologia applicabile a tutti i canali di comunicazione.
+1. Creare un **[!UICONTROL Filtering]** regola di tipologia applicabile a tutti i canali di comunicazione.
 
    ![](assets/campaign_opt_create_filter_01.png)
 
-1. Modifica la dimensione di targeting predefinita e seleziona le sottoscrizioni (**nms:abbonamento**).
+1. Modifica la dimensione di targeting predefinita e seleziona le sottoscrizioni (**nms:sottoscrizione**).
 
    ![](assets/campaign_opt_create_filter_02.png)
 
-1. Crea il filtro utilizzando **[!UICONTROL Edit the query from the targeting dimension...]** link.
+1. Creare il filtro utilizzando **[!UICONTROL Edit the query from the targeting dimension...]** collegamento.
 
    ![](assets/campaign_opt_create_filter_03.png)
 
@@ -40,15 +40,15 @@ Per definire questo filtro, effettua le seguenti operazioni:
 
    ![](assets/campaign_opt_create_filter_04.png)
 
-Quando questa regola viene utilizzata in una consegna, gli utenti con sottoscrizione inferiore vengono esclusi automaticamente. Un messaggio specifico indica l&#39;applicazione della regola:
+Quando questa regola viene utilizzata in una consegna, gli abbonati minorenni vengono esclusi automaticamente. Un messaggio specifico indica l’applicazione della regola:
 
 ![](assets/campaign_opt_create_filter_05.png)
 
 ## Condizione di una regola di filtro {#conditioning-a-filtering-rule}
 
-Puoi limitare il campo dell’applicazione della regola di filtro in base al profilo di consegna o consegna collegato.
+Puoi limitare il campo dell’applicazione della regola di filtro in base alla consegna o alla struttura della consegna collegata.
 
-Per eseguire questa operazione, vai alla pagina **[!UICONTROL General]** scheda della regola di tipologia, seleziona il tipo di restrizione da applicare e crea il filtro, come illustrato di seguito:
+Per eseguire questa operazione, passare al **[!UICONTROL General]** della regola di tipologia, seleziona il tipo di restrizione da applicare e crea il filtro, come illustrato di seguito:
 
 ![](assets/campaign_opt_create_filter_06.png)
 
@@ -64,13 +64,13 @@ Puoi creare **[!UICONTROL Filtering]** tipologie: contengono solo regole di filt
 
 ![](assets/campaign_opt_create_typo_filtering.png)
 
-Puoi collegare queste tipologie specifiche a una consegna quando viene selezionato il target: nella procedura guidata di consegna, fai clic su **[!UICONTROL To]** fai clic sul collegamento **[!UICONTROL Exclusions]** scheda .
+Queste tipologie specifiche possono essere collegate a una consegna quando viene selezionato il target: nella procedura guidata di consegna, fai clic su **[!UICONTROL To]** , quindi fare clic sul pulsante **[!UICONTROL Exclusions]** scheda.
 
 ![](assets/campaign_opt_apply_typo_filtering.png)
 
-Quindi seleziona la tipologia di filtro da applicare alla consegna. A questo scopo, fai clic sul pulsante **[!UICONTROL Add]** e selezionare le tipologie da applicare.
+Quindi seleziona la tipologia di filtro da applicare alla consegna. A questo scopo, fai clic su **[!UICONTROL Add]** e selezionare le tipologie da applicare.
 
-Puoi anche collegare le regole di filtro direttamente tramite questa scheda, senza raggrupparle in una tipologia. A questo scopo, utilizza la sezione inferiore della finestra.
+Puoi anche collegare le regole di filtro direttamente tramite questa scheda, senza raggrupparle in una tipologia. A tale scopo, utilizzare la sezione inferiore della finestra.
 
 ![](assets/campaign_opt_select_typo_filtering.png)
 
@@ -78,13 +78,13 @@ Puoi anche collegare le regole di filtro direttamente tramite questa scheda, sen
 >
 >Nella finestra di selezione sono disponibili solo le tipologie e le regole di filtro.
 >
->Queste configurazioni possono essere definite nel modello di consegna da applicare automaticamente a tutte le nuove consegne create utilizzando il modello .
+>Queste configurazioni possono essere definite nel modello di consegna e applicate automaticamente a tutte le nuove consegne create utilizzando il modello.
 
 ## Regole di esclusione del recapito messaggi predefinite {#default-deliverability-exclusion-rules}
 
-Per impostazione predefinita sono disponibili due regole di filtro: **[!UICONTROL Exclude addresses]** ( **[!UICONTROL addressExclusions]** ) e **[!UICONTROL Exclude domains]** ( **[!UICONTROL domainExclusions]** ). Durante l’analisi delle e-mail, queste regole confrontano gli indirizzi e-mail dei destinatari con gli indirizzi o i nomi di dominio vietati contenuti in un elenco di eliminazione globale crittografato gestito nell’istanza di recapito messaggi. In caso di corrispondenza, il messaggio non viene inviato al destinatario.
+Per impostazione predefinita, sono disponibili due regole di filtro: **[!UICONTROL Exclude addresses]** ( **[!UICONTROL addressExclusions]** ) e **[!UICONTROL Exclude domains]** ( **[!UICONTROL domainExclusions]** ). Durante l’analisi e-mail, queste regole confrontano gli indirizzi e-mail dei destinatari con gli indirizzi o i nomi di dominio non consentiti contenuti in un elenco di soppressione globale crittografato gestito nell’istanza di recapito messaggi. In caso di corrispondenza, il messaggio non viene inviato al destinatario.
 
-Questo per evitare di essere aggiunti al elenco Bloccati a causa di attività dannose, soprattutto l&#39;uso di uno Spamtrap. Ad esempio, se si utilizza uno Spamtrap per effettuare l’abbonamento tramite uno dei moduli web, viene inviata automaticamente un’e-mail di conferma a tale Spamtrap, con conseguente aggiunta automatica dell’indirizzo al elenco Bloccati.
+In questo modo si evita di essere aggiunti al elenco Bloccati a causa di attività dannose, in particolare l’uso di una spamtrap. Ad esempio, se utilizzi uno Spamtrap per abbonarti tramite uno dei tuoi moduli web, un’e-mail di conferma viene inviata automaticamente a quello Spamtrap, e il tuo indirizzo viene aggiunto automaticamente al inserisco nell&#39;elenco Bloccati di.
 
 >[!NOTE]
 >

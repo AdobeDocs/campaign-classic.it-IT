@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Configurare l’accesso alla Netezza
+title: Configurare l’accesso a Netezza
 description: Scopri come configurare l’accesso a Netezza in FDA
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
@@ -14,25 +14,25 @@ ht-degree: 0%
 
 ---
 
-# Configurare l’accesso alla Netezza {#configure-access-to-netezza}
+# Configurare l’accesso a Netezza {#configure-access-to-netezza}
 
 
 
-Utilizzare Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) opzione per elaborare le informazioni memorizzate in database esterni. Segui i passaggi riportati di seguito per configurare l’accesso a Netezza.
+Utilizzare Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) per elaborare le informazioni memorizzate in un database esterno. Segui i passaggi seguenti per configurare l’accesso a Netezza.
 
-1. Installare e configurare [Netezze](#netezza-config)
+1. Installare e configurare [Netezza driver](#netezza-config)
 1. Configurare la Netezza [account esterno](#netezza-external) in Campaign
 
 ## Netezza configurazione {#netezza-config}
 
-La connessione a un database esterno Netezza in FDA richiede configurazioni aggiuntive qui sotto sul server Adobe Campaign:
+La connessione a un database esterno Netezza in FDA richiede configurazioni aggiuntive di seguito sul server Adobe Campaign:
 
 1. Installare i driver ODBC per Netezza, in base al sistema operativo utilizzato:
 
-   * **nz-linuxclient-v7.2.0.0.tar.gz** per Linux. Selezionare la cartella corrispondente al sistema operativo (linux o linux64) e avviare il comando di rimozione dal pacchetto. Puoi lasciare l’installazione da eseguire nell’archivio come consigliato per impostazione predefinita: &quot;/usr/local/nz&quot;.
-   * **nz-winclient-v7.2.0.0.zip** per Windows. Decomprimere il file e avviare lo script eseguibile corrispondente al sistema operativo in uso: nzodbcsetup.exe o nzodbcsetup64.exe. Seguire le istruzioni della procedura guidata per completare l&#39;installazione dei driver.
+   * **nz-linuxclient-v7.2.0.0.tar.gz** per Linux. Seleziona la cartella corrispondente al sistema operativo in uso (linux o linux64) e avvia il comando unpack. È possibile lasciare che l’installazione venga eseguita nell’archivio suggerito per impostazione predefinita: &quot;/usr/local/nz&quot;.
+   * **nz-winclient-v7.2.0.0.zip** per Windows. Decomprimere il file e avviare lo script eseguibile corrispondente al sistema operativo: nzodbcsetup.exe o nzodbcsetup64.exe. Seguire le istruzioni della procedura guidata per completare l&#39;installazione dei driver.
 
-1. Configurare il driver ODBC. La configurazione può essere eseguita nei file standard: **/etc/odbc.ini** per i parametri generali e **/etc/odbcinst.ini** per la dichiarazione dei conducenti.
+1. Configurare il driver ODBC. La configurazione può essere eseguita nei file standard: **/etc/odbc.ini** per i parametri generali e **/etc/odbcinst.ini** per la dichiarazione dei driver.
 
    * **/etc/odbc.ini**
 
@@ -76,22 +76,22 @@ L’account esterno Netezza ti consente di collegare l’istanza Campaign al dat
 
 1. Da campagna **[!UICONTROL Explorer]**, fai clic su **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
-1. Fai clic su **[!UICONTROL New]** e seleziona **[!UICONTROL External database]** come **[!UICONTROL Type]**.
+1. Clic **[!UICONTROL New]** e seleziona **[!UICONTROL External database]** as **[!UICONTROL Type]**.
 
-1. Per configurare le **[!UICONTROL Netezza]** account esterno, devi specificare:
+1. Per configurare **[!UICONTROL Netezza]** account esterno, è necessario specificare:
 
    * **[!UICONTROL Type]**: Netezza
 
    * **[!UICONTROL Server]**: URL del server di Netezza
 
-   * **[!UICONTROL Account]**: Nome dell’utente
+   * **[!UICONTROL Account]**: nome dell’utente
 
-   * **[!UICONTROL Password]**: Password account utente
+   * **[!UICONTROL Password]**: password dell’account utente
 
-   * **[!UICONTROL Database]**: Nome del database
+   * **[!UICONTROL Database]**: nome del database
 
 >[!NOTE]
 >
->Non vengono prese in considerazione le operazioni sugli schemi contenenti chiavi primarie generate automaticamente.
+>Le operazioni sugli schemi contenenti chiavi primarie generate automaticamente non vengono prese in considerazione.
 >
->La tabella utilizzerà il **Organizza su** sul primo indice definito nello schema. Poiché questa clausola è limitata a 1 a 4 colonne con Netezza, questo indice non può contenere più di 4 colonne.
+>La tabella utilizzerà **Organizza su** clausola sul primo indice definito nello schema. Poiché questa clausola è limitata a 1-4 colonne con Netezza, l&#39;indice non può contenere più di 4 colonne.

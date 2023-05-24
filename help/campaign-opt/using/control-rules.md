@@ -14,32 +14,32 @@ ht-degree: 1%
 
 # Regole di controllo{#control-rules}
 
-## Regole di analisi e di controllo dell&#39;arbitrato {#analysis-and-arbitration-control-rules}
+## Regole di analisi e di controllo arbitrato {#analysis-and-arbitration-control-rules}
 
 Le regole di controllo ti consentono di garantire la validità e la qualità dei messaggi prima della consegna: visualizzazione dei caratteri, dimensioni dell’SMS, formato dell’indirizzo, ecc.
 
-Una serie di regole predefinite ti consente di eseguire i controlli consueti. Questi controlli (in grassetto nell’interfaccia) sono:
+Una serie di regole pronte all’uso consente di eseguire i controlli standard. Questi controlli (visualizzati in grassetto nell’interfaccia) sono:
 
-* **[!UICONTROL Object approval]** (e-mail): controlla che l&#39;oggetto e l&#39;indirizzo del mittente non contengano caratteri speciali che possono causare problemi ad alcuni agenti di posta elettronica.
-* **[!UICONTROL URL label approval]** (e-mail): controlla che ogni URL di tracciamento abbia un’etichetta.
+* **[!UICONTROL Object approval]** (e-mail): verifica che l’oggetto e l’indirizzo del mittente non contengano caratteri speciali che potrebbero causare problemi a determinati agenti di posta.
+* **[!UICONTROL URL label approval]** (e-mail): controlla che ogni URL di tracciamento sia associato a un’etichetta.
 * **[!UICONTROL URL approval]** (e-mail): controlla gli URL di tracciamento (presenza del carattere &quot;&amp;&quot;).
-* **[!UICONTROL Message size approval]** (mobile): controlla le dimensioni dei messaggi SMS.
+* **[!UICONTROL Message size approval]** (mobile): controlla la dimensione dei messaggi SMS.
 * **[!UICONTROL Validity period check]** (e-mail): controlla che il periodo di validità della consegna sia sufficientemente lungo da consentire l’invio di tutti i messaggi.
 * **[!UICONTROL Proof size check]** (tutti i canali): genera un messaggio di errore se la popolazione target della bozza supera i 100 destinatari.
-* **[!UICONTROL Wave scheduling check]** (e-mail): controlla che l’ultima serie di consegne abbia inizio prima della fine del periodo di validità, se la consegna è suddivisa in più ondate.
-* **[!UICONTROL Unsubscription link approval]** (e-mail): verifica la presenza di almeno un URL di annullamento dell’abbonamento (opt-out) in ciascun contenuto (HTML e testo).
+* **[!UICONTROL Wave scheduling check]** (e-mail): controlla che l’ultimo ciclo di consegne inizi prima della fine del periodo di validità, se la consegna è suddivisa in più cicli.
+* **[!UICONTROL Unsubscription link approval]** (e-mail): controlla la presenza di almeno un URL di annullamento dell’abbonamento (rinuncia) in ogni contenuto (HTML e Testo).
 
 ## Creazione di una regola di controllo {#creating-a-control-rule}
 
-È possibile creare nuove regole di controllo in base alle proprie esigenze. A questo scopo, crea un **[!UICONTROL Control]** regola di tipologia e immettere la formula di controllo in SQL nel **[!UICONTROL Code]** scheda .
+È possibile creare nuove regole di controllo in base alle tue esigenze. A questo scopo, crea un’ **[!UICONTROL Control]** regola di tipologia e immettere la formula di controllo in SQL nel **[!UICONTROL Code]** scheda.
 
 **Esempio:**
 
-Nell’esempio seguente, creeremo una regola per impedire l’invio di un’offerta SMS a più di 100 destinatari. Questa regola sarà collegata a una tipologia di campagna, quindi alle consegne SMS per le quali è disponibile l’offerta interessata.
+Nell’esempio seguente verrà creata una regola per impedire l’invio di un’offerta SMS a più di 100 destinatari. Questa regola sarà collegata a una tipologia di campagna, quindi alle consegne di SMS per le quali è disponibile l’offerta in questione.
 
 Applica i seguenti passaggi:
 
-1. Crea un **[!UICONTROL Control]** regola di tipologia. Seleziona una **[!UICONTROL Warning]** livello di avviso.
+1. Creare un **[!UICONTROL Control]** regola di tipologia. Seleziona un **[!UICONTROL Warning]** livello di avviso.
 
    ![](assets/campaign_opt_create_control_01.png)
 
@@ -47,13 +47,13 @@ Applica i seguenti passaggi:
 
    ![](assets/campaign_opt_create_control_02.png)
 
-   Questo script attiva un avviso se il target di consegna supera i 100 contatti:
+   Questo script attiverà un avviso se il target della consegna supera i 100 contatti:
 
    ```
    if( delivery.FCP == false && delivery.properties.toDeliver > 100 ) { logWarning("Significant number of SMS to deliver (" + delivery.properties.toDeliver + "). Please make sure the target is correct.") return false; } return true
    ```
 
-1. Collega questa regola a una tipologia di campagna e fai riferimento alla tipologia nella consegna SMS interessata.
+1. Collega questa regola a una tipologia di campagna e fai riferimento alla tipologia nell’SMS interessato.
 
    ![](assets/campaign_opt_create_control_03.png)
 
@@ -63,10 +63,10 @@ Applica i seguenti passaggi:
 
    Tuttavia, la consegna sarà ancora pronta per l’invio.
 
-   Se aumenti il livello di avviso, la consegna non verrà avviata.
+   Se aumenti il livello di avviso, ciò impedirà l’avvio della consegna.
 
    ![](assets/campaign_opt_create_control_05.png)
 
-   Al termine dell&#39;analisi, il **[!UICONTROL Confirm delivery]** questo pulsante non sarà disponibile.
+   Al termine dell&#39;analisi, la **[!UICONTROL Confirm delivery]** non sarà disponibile.
 
    ![](assets/campaign_opt_create_control_06.png)

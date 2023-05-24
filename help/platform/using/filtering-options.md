@@ -21,7 +21,7 @@ ht-degree: 3%
 
 ## Informazioni sul filtro {#about-filtering}
 
-Per impostazione predefinita, Adobe Campaign visualizza tutti i dati nel database per i quali l’operatore interessato dispone di diritti di lettura.
+Per impostazione predefinita, Adobe Campaign visualizza tutti i dati nel database per i quali l’operatore interessato dispone dei diritti di lettura.
 
 Questi dati possono essere filtrati tramite le opzioni che si trovano nella sezione superiore della finestra del browser.
 
@@ -29,14 +29,14 @@ Questi dati possono essere filtrati tramite le opzioni che si trovano nella sezi
 
 Esistono diversi modi per filtrare i dati da visualizzare. Se necessario, possono essere utilizzati insieme:
 
-* Filtrare le cartelle, fai riferimento a [Filtra per cartella](#filter-by-folder),
-* Filtra per stato, fai riferimento a [Filtra per stato](#filter-by-status),
-* Ordinamento dei dati, fai riferimento a [Ordina per](#order-by),
+* Filtrare in base alle cartelle, fare riferimento a [Filtra per cartella](#filter-by-folder),
+* Filtra per stato, fare riferimento a [Filtra per stato](#filter-by-status),
+* Ordinamento dei dati, fare riferimento a [Ordina per](#order-by),
 * Cerca, fai riferimento a [Ricerca rapida](#quick-search).
 
 ## Filtra per cartella {#filter-by-folder}
 
-Fai clic sul pulsante **[!UICONTROL Folder]** per selezionare la cartella contenente i dati da visualizzare.
+Fai clic su **[!UICONTROL Folder]** per selezionare la cartella contenente i dati da visualizzare.
 
 ![](assets/filter_web_select_folder.png)
 
@@ -44,26 +44,26 @@ Verranno visualizzati solo i profili presenti nella cartella:
 
 ![](assets/filter_web_folder_display.png)
 
-Utilizzare la croce a destra del campo di selezione della cartella per tornare alla modalità di visualizzazione predefinita.
+Utilizza la croce a destra del campo di selezione della cartella per tornare alla modalità di visualizzazione predefinita.
 
 ## Filtra per stato {#filter-by-status}
 
-A seconda del tipo di informazioni visualizzate, è possibile applicare un filtro per stato o per stato. Ad esempio, per le consegne, puoi scegliere di visualizzare solo le consegne finite come mostrato di seguito:
+A seconda del tipo di informazioni visualizzate, è possibile applicare un filtro in base allo stato o allo stato. Ad esempio, per le consegne, puoi scegliere di visualizzare solo le consegne finite come mostrato di seguito:
 
 ![](assets/d_ncs_user_interface_filter_delivery.png)
 
 ## Ordina per {#order-by}
 
-Puoi selezionare l’ordinamento dei dati offerti sulle pagine tramite l’elenco a discesa a destra del campo di filtro &quot;per cartella&quot;. Il contenuto di questo campo dipende dal tipo di dati sulla pagina.
+Puoi selezionare l’ordinamento dei dati offerti sulle pagine tramite l’elenco a discesa a destra del campo di filtro &quot;per cartella&quot;. Il contenuto di questo campo dipende dal tipo di dati nella pagina.
 
-Ad esempio, è possibile ordinare le attività in base a priorità, data di creazione o ordine alfabetico.
+È ad esempio possibile ordinare le attività in base alla priorità, alla data di creazione o all&#39;ordine alfabetico.
 
 ![](assets/order_data_sample.png)
 
 ## Ricerca rapida {#quick-search}
 
-Utilizza il campo di ricerca per accedere rapidamente all’elemento che stai cercando: immetti i caratteri inclusi nell’etichetta o nel nome interno dell’elemento che desideri visualizzare, quindi conferma di applicare un filtro automatico ai dati nella pagina.
+Utilizza il campo di ricerca per accedere rapidamente all’elemento che stai cercando: inserisci i caratteri inclusi nell’etichetta o nel nome interno dell’elemento che desideri visualizzare, quindi conferma l’applicazione di un filtro automatico ai dati della pagina.
 
 ![](assets/d_ncs_user_interface_filter_search.png)
 
-Per visualizzare di nuovo tutti gli elementi, fare clic sulla croce per eliminare il contenuto del campo di ricerca.
+Per visualizzare di nuovo tutti gli elementi, fai clic sulla croce per eliminare il contenuto del campo di ricerca.

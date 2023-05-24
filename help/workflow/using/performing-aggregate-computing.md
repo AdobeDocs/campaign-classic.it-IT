@@ -16,38 +16,38 @@ ht-degree: 2%
 
 
 
-In questo esempio, vogliamo contare il numero di destinatari che vivono a Londra, in base al sesso.
+In questo esempio, vogliamo contare il numero di destinatari che vivono a Londra, in base al genere.
 
 * Quale tabella deve essere selezionata?
 
-   La tabella dei destinatari (**nms:recipient**)
+   Tabella dei destinatari (**nms:destinatario**)
 
 * Quali campi devono essere selezionati nella colonna di output?
 
    Chiave primaria (con conteggio) e genere
 
-* A quali condizioni vengono filtrate le informazioni?
+* Su quali condizioni vengono filtrate le informazioni?
 
-   Basato sui destinatari che vivono a Londra
+   In base ai destinatari che vivono a Londra
 
-Per creare questo esempio, esegui i seguenti passaggi:
+Per creare questo esempio, attieniti alla seguente procedura:
 
-1. In **[!UICONTROL Data to extract]**, definisci un conteggio per la chiave primaria (come mostrato nell’esempio precedente). Aggiungi il **[!UICONTROL Gender]** nella colonna di output. Controlla la **[!UICONTROL Group]** in **[!UICONTROL Gender]** colonna. In questo modo i destinatari saranno raggruppati per genere.
+1. In entrata **[!UICONTROL Data to extract]**, definisci un conteggio per la chiave primaria (come mostrato nell’esempio precedente). Aggiungi il **[!UICONTROL Gender]** nella colonna di output. Controlla la **[!UICONTROL Group]** opzione in **[!UICONTROL Gender]** colonna. In questo modo i destinatari saranno raggruppati per genere.
 
    ![](assets/query_editor_nveau_27.png)
 
-1. In **[!UICONTROL Sorting]** finestra, fai clic su **[!UICONTROL Next]**: qui non è necessaria alcuna selezione.
-1. Configura il filtro dati. Qui, si desidera limitare la selezione ai contatti che vivono a Londra.
+1. In **[!UICONTROL Sorting]** finestra, fai clic su **[!UICONTROL Next]**: non è necessario eseguire alcun ordinamento in questo punto.
+1. Configura il filtro dei dati. In questo caso, si desidera limitare la selezione ai contatti che risiedono a Londra.
 
    ![](assets/query_editor_22.png)
 
    >[!NOTE]
    >
-   >I valori sono sensibili all’uso di maiuscole e minuscole. Se il valore &quot;Londra&quot; è inserito nella condizione senza lettera maiuscola e l’elenco dei destinatari contiene la parola &quot;Londra&quot; con una lettera maiuscola, la query non riuscirà.
+   >I valori fanno distinzione tra maiuscole e minuscole. Se il valore &quot;Londra&quot; viene immesso nella condizione senza una lettera maiuscola e l’elenco dei destinatari contiene la parola &quot;Londra&quot; con una lettera maiuscola, la query avrà esito negativo.
 
-1. In **[!UICONTROL Data formatting]** finestra, fai clic su **[!UICONTROL Next]**: per questo esempio non è necessaria alcuna formattazione.
+1. In **[!UICONTROL Data formatting]** finestra, fai clic su **[!UICONTROL Next]**: per questo esempio non è richiesta alcuna formattazione.
 1. Nella finestra di anteprima, fai clic su **[!UICONTROL Launch data preview]**.
 
-   Ci sono tre valori distinti per ogni tipo di genere: **2** per le donne, **1** per i maschi e **0** quando il genere è sconosciuto. In questo esempio, l&#39;elenco contiene 10 donne, 16 uomini e 2 persone il cui genere non è conosciuto.
+   Esistono tre valori distinti per ogni ordinamento in base al sesso: **2** per le femmine, **1** per i maschi e **0** quando il sesso è sconosciuto. In questo esempio, l&#39;elenco contiene 10 donne, 16 uomini e 2 persone il cui genere non è noto.
 
    ![](assets/query_editor_agregat_04.png)

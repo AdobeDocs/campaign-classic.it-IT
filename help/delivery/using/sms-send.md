@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Inviare, monitorare e tracciare SMS
-description: Scopri come inviare, monitorare e tracciare gli SMS in Campaign
+title: Inviare, monitorare e tenere traccia degli SMS
+description: Scopri come inviare, monitorare e tenere traccia degli SMS in Campaign
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: SMS
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ## Inviare messaggi SMS {#sending-sms-messages}
 
-Per approvare il messaggio e inviarlo ai destinatari della consegna in fase di creazione, fai clic su **[!UICONTROL Send]**.
+Per approvare il messaggio e inviarlo ai destinatari della consegna creata, fai clic su **[!UICONTROL Send]**.
 
 Il processo dettagliato di convalida e invio di una consegna è presentato nelle sezioni seguenti:
 
@@ -28,11 +28,11 @@ Il processo dettagliato di convalida e invio di una consegna è presentato nelle
 
 ## Parametri avanzati {#advanced-parameters}
 
-La **[!UICONTROL Properties]** consente di accedere al parametro di consegna avanzato. I parametri specifici delle consegne SMS si trovano nella **[!UICONTROL SMS parameters]** della sezione **[!UICONTROL Delivery]** scheda .
+Il **[!UICONTROL Properties]** consente di accedere al parametro di consegna avanzata. I parametri specifici per le consegne SMS si trovano in **[!UICONTROL SMS parameters]** sezione del **[!UICONTROL Delivery]** scheda.
 
 Sono disponibili le seguenti opzioni:
 
-* **Indirizzo mittente**: ti consente di personalizzare il nome del mittente della consegna utilizzando una stringa di caratteri alfanumerici limitati a undici caratteri. Il campo non deve essere costituito esclusivamente da cifre. È possibile definire una condizione per visualizzare, ad esempio, nomi diversi in base al codice dell’area del destinatario:
+* **Indirizzo mittente**: consente di personalizzare il nome del mittente della consegna utilizzando una stringa di caratteri alfanumerici limitata a undici caratteri. Il campo non deve essere costituito esclusivamente da cifre. È possibile definire una condizione da visualizzare, ad esempio nomi diversi in base all’indicativo di località del destinatario:
 
    ```
    <% if( String(recipient.mobilePhone).indexOf("+1") == 0){ %>NeoShopUS<%} else {%>NeoShopWorld<%}%>
@@ -40,25 +40,25 @@ Sono disponibili le seguenti opzioni:
 
    >[!IMPORTANT]
    >
-   >Controlla le leggi del tuo paese riguardo alla modifica dei nomi dei mittenti. È inoltre necessario verificare con l’operatore se offre questa funzionalità.
+   >Controlla la legge del tuo paese relativa alla modifica dei nomi dei mittenti. Dovresti anche verificare con l’operatore se offre questa funzionalità.
 
 * **Modalità di trasmissione**: trasmissione di messaggi tramite SMS.
-* **Priorità**: livello di importanza assegnato a un messaggio. **[!UICONTROL Normal]** la priorità è selezionata per impostazione predefinita. Chiedi al tuo provider di servizi il costo degli SMS inviati con **[!UICONTROL High]** priorità.
-* **Tipo di applicazione**: scegli l’applicazione che desideri assegnare alla consegna SMS. La **[!UICONTROL Direct Marketing]** è selezionata per impostazione predefinita ed è la più comune utilizzata.
+* **Priorità**: livello di importanza assegnato a un messaggio. **[!UICONTROL Normal]** priorità è selezionata per impostazione predefinita. Chiedi al tuo provider di servizi informazioni sul costo degli SMS inviati con **[!UICONTROL High]** priorità.
+* **Tipo di applicazione**: scegli l’applicazione da assegnare alla consegna SMS. Il **[!UICONTROL Direct Marketing]** è selezionata per impostazione predefinita ed è la più comune.
 
 **Parametri specifici del connettore NetSize**
 
 ![](assets/s_user_mobile_sms_adv_netsize.png)
 
-* **Utilizza diversi SMS per un singolo messaggio**: questo ti consente di inviare un messaggio lungo più di 160 caratteri tramite diversi messaggi SMS.
+* **Utilizzare più SMS per un singolo messaggio**: questo ti consente di inviare un messaggio lungo più di 160 caratteri tramite diversi messaggi SMS.
 
 **Parametri specifici di un connettore SMPP**
 
 ![](assets/s_user_mobile_sms_adv_smpp.png)
 
-* **Numero massimo di SMS per messaggio**: questa opzione ti consente di impostare il numero di SMS da utilizzare per inviare un messaggio. Se il numero è impostato su 0, puoi utilizzare un SMS per inviare il messaggio. Se il numero di SMS è impostato ad esempio su 1 o 2 e il messaggio supera questa soglia, non verrà inviato.
+* **Numero massimo di SMS per messaggio**: questa opzione ti consente di impostare il numero di SMS da utilizzare per inviare un messaggio. Se il numero è impostato su 0, puoi utilizzare un SMS per recapitare il messaggio. Se ad esempio il numero di SMS è impostato su 1 o 2 e il messaggio supera questa soglia, non verrà inviato.
 
-## Monitorare e monitorare gli SMS {#monitoring-and-tracking-sms-deliveries}
+## Monitorare e tenere traccia degli SMS {#monitoring-and-tracking-sms-deliveries}
 
 Dopo aver inviato i messaggi, puoi monitorare e tenere traccia delle consegne. Per ulteriori informazioni, consulta queste sezioni:
 
@@ -68,61 +68,61 @@ Dopo aver inviato i messaggi, puoi monitorare e tenere traccia delle consegne. P
 
 ## Elabora messaggi in entrata {#processing-inbound-messages}
 
-La **sms nlserver** Il modulo invia query al router SMS a intervalli regolari. Questo consente ad Adobe Campaign di tenere traccia dell’avanzamento delle consegne e di gestire i rapporti sullo stato e le richieste di annullamento dell’abbonamento ai destinatari.
+Il **nlserver sms** Il modulo esegue query sul router SMS a intervalli regolari. Questo consente ad Adobe Campaign di tenere traccia dell’avanzamento delle consegne e di gestire le relazioni sullo stato e le richieste di annullamento dell’abbonamento dei destinatari.
 
-* **Rapporti sullo stato**: visualizza i registri di consegna per controllare lo stato dei messaggi.
+* **Relazioni sullo stato**: visualizza i registri di consegna per controllare lo stato dei messaggi.
 
    >[!NOTE]
    >
-   >Ogni SMS inviato è collegato a un account esterno la sua chiave primaria. In questo modo:
+   >Ogni SMS inviato è collegato a un account esterno che ne rappresenta la chiave primaria. In questo modo:
    >
-   > * I rapporti di stato da un account SMS esterno eliminato non vengono elaborati correttamente.
-   > * Un account SMS può essere collegato solo a un singolo account esterno per garantire che i rapporti di stato siano attribuiti all’account corretto
+   > * Le relazioni sullo stato da un account SMS esterno eliminato non vengono elaborate correttamente.
+   > * Un account SMS può essere collegato solo a un singolo account esterno per garantire che le relazioni sullo stato siano attribuite all’account corretto
 
 
-* **Annullamento dell’abbonamento**: i destinatari che desiderano interrompere la ricezione delle consegne SMS possono restituire un messaggio contenente la parola STOP. Se il tuo provider lo consente ai termini del contratto, puoi recuperare i messaggi tramite il **SMS in entrata** attività del flusso di lavoro e quindi crea una query per abilitare il **Non contatta più questo destinatario** opzione per i beneficiari interessati.
+* **Annullamento iscrizione**: i destinatari che desiderano interrompere la ricezione delle consegne SMS possono restituire un messaggio contenente la parola STOP. Se il tuo provider lo consente in base ai termini del contratto, puoi recuperare i messaggi tramite il **SMS in entrata** attività del flusso di lavoro e quindi creare una query per abilitare **Non contattare più questo destinatario** per i destinatari interessati.
 
-   Fai riferimento a [Flussi di lavoro](../../workflow/using/architecture.md) guida.
+   Consulta la sezione [Flussi di lavoro](../../workflow/using/architecture.md) guida.
 
 ## Schema InSMS {#insms-schema}
 
-Lo schema InSMS contiene informazioni relative agli SMS in arrivo. Una descrizione di questi campi è disponibile tramite l’attributo desc .
+Lo schema InSMS contiene informazioni relative agli SMS in arrivo. Una descrizione di questi campi è disponibile tramite l&#39;attributo desc.
 
-* **message**: contenuto dell’SMS ricevuto.
+* **messaggio**: contenuto dell’SMS ricevuto.
 * **origine**: numero di cellulare all’origine del messaggio.
-* **providerId**: identificatore del messaggio restituito da SMSC (message center).
-* **creato**: il messaggio data in arrivo è stato inserito in Adobe Campaign.
-* **extAccount**: Account esterno Adobe Campaign.
+* **providerId**: identificatore del messaggio restituito da SMSC (centro messaggi).
+* **creato**: data in cui il messaggio in arrivo è stato inserito in Adobe Campaign.
+* **extAccount**: account esterno di Adobe Campaign.
 
    >[!IMPORTANT]
    >
    >I campi seguenti sono specifici di NetSize.
    >
-   >Se l&#39;operatore in uso non è NetSize, questi campi sono considerati vuoti.
+   >Se l&#39;operatore in uso non è NetSize, questi campi vengono considerati vuoti.
 
 * **alias**: alias del messaggio in arrivo.
 * **separatore**: separatore tra l’alias e il corpo del messaggio.
 * **messageDate**: data del messaggio fornita dall’operatore.
-* **receivalDate**: messaggio data dall&#39;operatore ricevuto da SMSC (message center).
-* **deliveryDate**: messaggio data inviato da SMSC (message center).
-* **largeAccount**: codice dell’account cliente collegato all’SMS in entrata.
-* **countryCode**: codice del paese dell&#39;operatore.
-* **operatorCode**: codice di rete dell&#39;operatore.
-* **linkedSmsId**: Identificatore Adobe Campaign (broadlogId) collegato all’SMS in uscita, dove questo SMS è la risposta.
+* **receivalDate**: il messaggio della data dall’operatore è stato ricevuto da SMSC (centro messaggi).
+* **deliveryDate**: messaggio sulla data inviato da SMSC (centro messaggi).
+* **largeAccount**: codice dell’account cliente collegato agli SMS in entrata.
+* **countryCode**: codice del paese dell’operatore.
+* **operatorCode**: codice di rete dell’operatore.
+* **linkedSmsId**: identificatore Adobe Campaign (broadlogId) collegato all’SMS in uscita, dove questo SMS è la risposta.
 
-## Gestire le risposte automatiche (regolamento americano) {#managing-automatic-replies--american-regulation-}
+## Gestisci risposte automatiche (regolamento americano) {#managing-automatic-replies--american-regulation-}
 
-Quando gli abbonati rispondono a un messaggio SMS loro inviato tramite Adobe Campaign e utilizzano una parola chiave come STOP, HELP o YES, è necessario, nel mercato statunitense, configurare messaggi che vengono restituiti automaticamente.
+Quando gli abbonati rispondono a un messaggio SMS che è stato loro inviato tramite Adobe Campaign e utilizzano una parola chiave come STOP, HELP o YES, è necessario, nel mercato statunitense, configurare i messaggi che vengono restituiti automaticamente.
 
-Ad esempio, se i destinatari inviano la parola chiave STOP, ricevono automaticamente un messaggio di conferma in cui si informa che l’iscrizione è stata annullata.
+Ad esempio, se i destinatari inviano la parola chiave STOP, ricevono automaticamente un messaggio di conferma che informa che l’iscrizione è stata annullata.
 
-Il nome del mittente di questo tipo di messaggio è un codice breve solitamente utilizzato per inviare consegne.
+Il nome del mittente per questo tipo di messaggio è un codice breve utilizzato in genere per inviare consegne.
 
 >[!IMPORTANT]
 >
->La seguente procedura dettagliata è valida solo per i connettori SMPP, ad eccezione del connettore SMPP generico esteso. Per ulteriori informazioni, consulta la sezione [Creare un account esterno SMPP](sms-set-up.md#creating-an-smpp-external-account) sezione .
+>La procedura dettagliata seguente è valida solo per i connettori SMPP, ad eccezione del connettore SMPP generico esteso. Per ulteriori informazioni, consulta [Creare un account esterno SMPP](sms-set-up.md#creating-an-smpp-external-account) sezione.
 >
->Essa fa parte del processo di certificazione effettuato dagli operatori americani per le campagne di marketing negli Stati Uniti. Queste risposte ai messaggi SMS degli abbonati contenenti la parola chiave devono essere rimandate all’utente immediatamente dopo aver ricevuto un messaggio da loro.
+>Esso fa parte del processo di certificazione svolto dagli operatori americani per campagne di marketing negli Stati Uniti. Queste risposte ai messaggi SMS dell’abbonato contenenti la parola chiave devono essere rimandate all’abbonato immediatamente dopo aver ricevuto un messaggio da parte loro.
 
 1. Crea questo tipo di file XML:
 
@@ -142,9 +142,9 @@ Il nome del mittente di questo tipo di messaggio è un codice breve solitamente 
    </autoreply>
    ```
 
-1. Per **name** dell&#39;attributo **`<shortcode>`** Specifica il codice breve da visualizzare al posto del nome del mittente del messaggio.
+1. Per **nome** attributo del **`<shortcode>`** , specifica il codice breve che verrà visualizzato al posto del nome del mittente del messaggio.
 
-   In ciascuno **`<reply>`** , immetti **keyword** attributo con una parola chiave e **text** con il messaggio che desideri inviare per questa parola chiave.
+   In ogni **`<reply>`** , immetti il **parola chiave** con una parola chiave e **text** con il messaggio da inviare per questa parola chiave.
 
    >[!NOTE]
    >
@@ -159,14 +159,14 @@ Il nome del mittente di questo tipo di messaggio è un codice breve solitamente 
    <reply keyword="QUIT" text="You will not receive SMS anymore" />
    ```
 
-1. Una volta completato, salvare il file con il nome **smsAutoReply.xml**.
+1. Al termine, salva il file con il nome **smsAutoReply.xml**.
 
-   Nota che il nome del file è sensibile a maiuscole e minuscole in Linux.
+   In Linux, il nome del file distingue tra maiuscole e minuscole.
 
-1. Copia questo file nel **conf** in Adobe Campaign, nella stessa posizione del server Web.
+1. Copia il file in **conf** in Adobe Campaign, nella stessa posizione del server Web.
 
 >[!IMPORTANT]
 >
->Questo tipo di messaggi automatici non mantiene una cronologia. Pertanto, non vengono visualizzate nel dashboard di consegna. [Ulteriori informazioni](delivery-dashboard.md).
+>Questi tipi di messaggi automatici non conservano una cronologia. Pertanto, non vengono visualizzati nel dashboard di consegna. [Ulteriori informazioni](delivery-dashboard.md).
 >
 >Tali messaggi non sono presi in considerazione nelle norme sulla pressione commerciale. [Ulteriori informazioni](../../campaign-opt/using/pressure-rules.md).

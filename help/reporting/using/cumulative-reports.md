@@ -17,12 +17,12 @@ ht-degree: 8%
 
 
 
-Puoi visualizzare rapporti cumulati sulle consegne. A questo scopo, seleziona le consegne da confrontare per ottenere l’elenco dei rapporti per queste consegne.
+Puoi visualizzare i rapporti cumulativi sulle consegne. A questo scopo, seleziona le consegne da confrontare per ottenere l’elenco dei rapporti per queste consegne.
 
 ![](assets/s_ncs_user_report_compare_tab.png)
 
-Per selezionare dall’elenco consegne non adiacenti, tenere premuto il tasto CTRL durante la selezione.
+Per selezionare consegne non adiacenti dall’elenco, tieni premuto il tasto CTRL durante la selezione.
 
-Per selezionare le consegne salvate in una cartella diversa, fai clic su **[!UICONTROL Display sub-levels]** (accessibile tramite la barra degli strumenti). Vengono quindi visualizzati nello stesso elenco.
+Per selezionare le consegne salvate in un’altra cartella, fai clic su **[!UICONTROL Display sub-levels]** (accessibile tramite la barra degli strumenti). Vengono quindi visualizzati nello stesso elenco.
 
 ![](assets/s_ncs_user_display_children_icon.png)

@@ -18,9 +18,9 @@ ht-degree: 1%
 
 
 
-Utilizzare Campaign **Federated Data Access** (FDA) opzione per elaborare le informazioni memorizzate in database esterni. Segui i passaggi riportati di seguito per configurare l’accesso alle Sybasi IQ.
+Utilizzare Campaign **Federated Data Access** (FDA) per elaborare le informazioni memorizzate in un database esterno. Per configurare l’accesso a Sybase IQ, segui la procedura riportata di seguito.
 
-1. Configura [Database sybase IQ](#configuring-sybase)
+1. Configura [database Sybase IQ](#configuring-sybase)
 1. Configurare la Sybase IQ [account esterno](#sybase-external) in Campaign
 
 ## Configurazione sybase IQ {#configuring-sybase}
@@ -29,15 +29,15 @@ La connessione a un database esterno di Sybase IQ in FDA richiede configurazioni
 
 >[!NOTE]
 >
->Prima di iniziare, assicurati che il **unixodbc** il pacchetto è sul server.
+>Prima di iniziare, assicurarsi che **unixodbc** sul server.
 
-1. Installa **iq_odbc**. Alla fine dell&#39;installazione può verificarsi un errore. Questo errore può essere ignorato.
+1. Installa **iq_odbc**. È possibile che si verifichi un errore al termine dell&#39;installazione. Questo errore può essere ignorato.
 
-1. Installa **iq_client_common**. Alla fine dell&#39;installazione può verificarsi un errore Java. Questo errore può essere ignorato.
+1. Installa **iq_client_common**. Al termine dell&#39;installazione può verificarsi un errore Java. Questo errore può essere ignorato.
 
 1. Configurare il driver ODBC. La configurazione può essere eseguita nei file standard: /etc/odbc.ini per i parametri generali e /etc/odbcinst.ini per la dichiarazione dei driver:
 
-   * **/etc/odbc.ini** (sostituisci valori come `<server_alias>` caratteri per tuo):
+   * **/etc/odbc.ini** (sostituisci valori come `<server_alias>` caratteri personalizzati):
 
       ```
       [ODBC Data Sources]
@@ -62,30 +62,30 @@ La connessione a un database esterno di Sybase IQ in FDA richiede configurazioni
       Driver=/opt/sybase/IQ-16_0/lib64/libdbodbc16.so
       ```
 
-1. Aggiungi il percorso della nuova libreria libodbc16.so nella variabile LD_LIBRARY_PATH . Per farlo:
+1. Aggiungi il percorso per la nuova libreria libodbc16.so nella variabile LD_LIBRARY_PATH. Per eseguire questa operazione:
 
-   * Se utilizzi un file customer.sh per dichiarare il percorso: aggiungi il percorso /opt/sybase/IQ-16_0/lib64 per la variabile LD_LIBRARY_PATH .
-   * In caso contrario, utilizzare un comando Unix.
+   * Se si utilizza un file customer.sh per dichiarare il percorso: aggiungere il percorso /opt/sybase/IQ-16_0/lib64 per la variabile LD_LIBRARY_PATH.
+   * In caso contrario, utilizza un comando Unix.
 
-## Account esterno sybase IQ {#sybase-external}
+## Sybase IQ account esterno {#sybase-external}
 
 L’account esterno Sybase IQ ti consente di collegare l’istanza Campaign al database esterno Sybase IQ.
 
 1. Da campagna **[!UICONTROL Explorer]**, fai clic su **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
-1. Fai clic su **[!UICONTROL New]** e seleziona **[!UICONTROL External database]** come **[!UICONTROL Type]**.
+1. Clic **[!UICONTROL New]** e seleziona **[!UICONTROL External database]** as **[!UICONTROL Type]**.
 
-1. Per configurare le **[!UICONTROL Sybase IQ]** account esterno, devi specificare:
+1. Per configurare **[!UICONTROL Sybase IQ]** account esterno, è necessario specificare:
 
    * **[!UICONTROL Type]**: ODBC (Sybase ASE, Sybase IQ)
 
-   * **[!UICONTROL Server]**: Corrisponde alla connessione ODBC (`<server_alias>`) definita al punto 5. Non necessariamente il nome del server stesso.
+   * **[!UICONTROL Server]**: corrisponde alla connessione ODBC (`<server_alias>`) definita al punto 5. Non necessariamente il nome del server stesso.
 
-   * **[!UICONTROL Account]**: Nome dell’utente
+   * **[!UICONTROL Account]**: nome dell’utente
 
-   * **[!UICONTROL Password]**: Password account utente
+   * **[!UICONTROL Password]**: password dell’account utente
 
-   * **[!UICONTROL Database]**: Nome del database
+   * **[!UICONTROL Database]**: nome del database
 
 >[!NOTE]
 >

@@ -22,52 +22,52 @@ Di seguito sono riportate alcune delle best practice principali relative alla co
 
 * Modificare le pagine di errore predefinite.
 
-* Disattiva la versione e i codici SSL precedenti:
+* Disattiva la versione SSL e le crittografie precedenti:
 
    **Su Apache**, modifica /etc/apache2/mods-available/ssl.conf. Ecco un esempio:
 
-   * SSLv2 -SSLv3 -TLSv1
+   * SSLProtocol all -SSLv2 -SSLv3 -TLSv1
    * SSLCipherSuite HIGH:MEDIUM:!aNULL:!MD5:!SSLv3:!SSLv2:!TLSv1
 
-   **In IIS** (vedi [documentazione](https://support.microsoft.com/en-us/kb/245030)), esegui la seguente configurazione:
+   **In IIS** (vedere [documentazione](https://support.microsoft.com/en-us/kb/245030)), esegui la seguente configurazione:
 
-   * Aggiungi la sottochiave del Registro di sistema in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL
-   * Per consentire al sistema di utilizzare i protocolli che non saranno negoziati per impostazione predefinita (ad esempio TLS 1.2), cambia i dati del valore DWORD del valore DisabledByDefault in 0x0 nelle seguenti chiavi del Registro di sistema sotto la **Protocolli** chiave:
+   * Aggiungi sottochiave del Registro di sistema in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL
+   * Per consentire al sistema di utilizzare i protocolli che non verranno negoziati per impostazione predefinita (ad esempio TLS 1.2), modificare i dati del valore DWORD del valore DisabledByDefault su 0x0 nelle seguenti chiavi del Registro di sistema sotto **Protocoli** chiave:
 
       SCHANNEL\Protocolli\TLS 1.2\Client
 
       SCHANNEL\Protocolli\TLS 1.2\Server
-   **Disattiva SSL x.0**
+   **Disabilita SSL x.0**
 
-   SCHANNEL\Protocols\SSL 3.0\Client: DisabledByDefault: Valore DWORD (32 bit) a 1
+   SCHANNEL\Protocols\SSL 3.0\Client: DisabledByDefault: valore DWORD (32 bit) su 1
 
-   SCHANNEL\Protocols\SSL 3.0\Server: Abilitato: Valore DWORD (32 bit) a 0
+   SCHANNEL\Protocolli\SSL 3.0\Server: abilitato: valore DWORD (32 bit) su 0
 
-* Rimuovi **TRACE** metodo:
+* Rimuovi il **TRACE** metodo:
 
    **Su Apache**, modifica in /etc/apache2/conf.d/security: TraceEnable **Disattivato**
 
-   **In IIS** (vedi [documentazione](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)), esegui la seguente configurazione:
+   **In IIS** (vedere [documentazione](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)), esegui la seguente configurazione:
 
-   * Assicurati che **Filtro richieste** il servizio ruolo o la funzionalità è installata.
-   * In **Filtro richieste** fare clic sulla scheda Verbi HTTP, quindi fare clic su Nega verbo. Nel riquadro Azioni, immettere TRACE nella finestra di dialogo aperta.
+   * Assicurati che **Filtro richieste** servizio ruolo o funzionalità installata.
+   * In **Filtro richieste** fare clic sulla scheda Verbi HTTP e quindi su Nega verbo. Nel riquadro Azioni, immettere TRACE nella finestra di dialogo aperta.
 
 * Rimuovi il banner:
 
-   **Su Apache**, modifica /etc/apache2/conf.d/security:
+   **Su Apache**, modifica /etc/apache2/conf.d/sicurezza:
 
    * FirmaServer **Disattivato**
-   * ServerToken **Prod**
+   * ServerTokens **Prod**
 
-   **In IIS**, esegui la seguente configurazione:
+   **In IIS**, esegui la configurazione seguente:
 
    * Installa **URLcan**.
-   * Modifica le **Urlscan.ini** file **RemoveServerHeader=1**
+   * Modifica il **Urlscan.ini** file da avere **RemoveServerHeader=1**
 
 
-* Limita le dimensioni della query per impedire il caricamento di file importanti:
+* Limita le dimensioni delle query per impedire il caricamento di file importanti:
 
-   **Su Apache**, aggiungi **LimitRequestBody** Direttiva (dimensione in byte) nella directory / .
+   **Su Apache**, aggiungi **LimitRequestBody** direttiva (dimensioni in byte) nella directory /.
 
    ```
    <Directory />
@@ -77,7 +77,7 @@ Di seguito sono riportate alcune delle best practice principali relative alla co
    </Directory>
    ```
 
-   **In IIS** (vedi [documentazione](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits)), imposta la **maxAllowedContentLength** (lunghezza massima consentita per il contenuto) nelle opzioni di filtro del contenuto.
+   **In IIS** (vedere [documentazione](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits)), imposta **maxAllowedContentLength** (lunghezza massima consentita del contenuto) nelle opzioni di filtro del contenuto.
 
 Argomenti correlati:
 

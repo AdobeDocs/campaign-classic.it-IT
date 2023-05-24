@@ -22,27 +22,27 @@ ht-degree: 4%
 
 In una configurazione minima, Adobe Campaign funziona con:
 
-* il server dell’applicazione Adobe Campaign,
+* il server applicazioni Adobe Campaign,
 * il database.
 
    ![](assets/formation_exploitation.png)
 
 Questo diagramma mostra che l’unico traffico coinvolto nel contesto di un’architettura minima è:
 
-1. traffico del protocollo HTTP verso il server Adobe Campaign tramite Internet,
+1. traffico del protocollo HTTP verso il server Adobe Campaign via Internet,
 1. Traffico del protocollo SMTP da e verso il server Adobe Campaign tramite Internet.
 
 ## Architettura distribuita {#distributed-architecture}
 
-Adobe Campaign è costituito da più moduli che possono essere suddivisi su più macchine. Questa modalità operativa presenta diversi vantaggi:
+Adobe Campaign è costituito da più moduli che possono essere suddivisi su più computer. Questa modalità operativa presenta diversi vantaggi:
 
 * bilanciamento del carico,
-* l&#39;impostazione della ridondanza dei moduli,
-* creazione di un’architettura suddivisa per diversi fornitori di servizi (segmentazione dei servizi forniti).
+* impostazione della ridondanza del modulo,
+* costruzione di un&#39;architettura suddivisa tra più fornitori di servizi (segmentazione dei servizi forniti).
 
 ![](assets/architecturerepartie.png)
 
-La distribuzione dei moduli su diverse macchine offre una grande flessibilità d&#39;uso e una migliore adattabilità.
+La distribuzione dei moduli su più macchine offre una grande flessibilità di utilizzo e una migliore adattabilità.
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ La distribuzione dei moduli su diverse macchine offre una grande flessibilità d
 | Numero della porta | Modulo o applicazione Adobe Campaign interessati | Configurabile |
 |---|---|---|
 | 443/tcp o 80/tcp | Server web (Apache/IIS) | SÌ |
-| 6666/udp (locale) | Adobe Campaign: Slogd | SÌ |
-| 8005/tcp (locale) | Adobe Campaign: modulo web | SÌ |
+| 6666/udp (locale) | Adobe Campaign: Syslogd | SÌ |
+| 8005/tcp locale | Adobe Campaign: modulo web | SÌ |
 | 8080/tcp | Adobe Campaign: modulo web (tomcat) | SÌ |
-| 7777 | Server statistiche (server stat) | SÌ |
+| 7777 | Server delle statistiche (server stat) | SÌ |

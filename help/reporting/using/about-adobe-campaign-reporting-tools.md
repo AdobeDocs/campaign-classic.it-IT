@@ -17,15 +17,15 @@ ht-degree: 19%
 
 
 
-Oltre a [report incorporati](../../reporting/using/about-campaign-built-in-reports.md), Adobe Campaign consente di generare rapporti in vari contesti e per soddisfare esigenze diverse. I principi relativi alle modalità di utilizzo e di implementazione sono descritti nel presente documento.
+Oltre a [rapporti incorporati](../../reporting/using/about-campaign-built-in-reports.md), Adobe Campaign consente di generare rapporti in vari contesti e per soddisfare esigenze diverse. I principi relativi alle modalità di utilizzo e di implementazione sono descritti nel presente documento.
 
 Adobe Campaign non è uno strumento di reporting specializzato: i rapporti creati in Adobe Campaign consentono principalmente di visualizzare i dati aggregati. I rapporti di Adobe Campaign, dedicati all’analisi e alla rappresentazione dei dati, non sono progettati per le esportazioni di database.
 
-Per esportare i dati dal database Adobe Campaign, devi creare un flusso di lavoro e utilizzare un’attività di esportazione dei dati. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../workflow/using/about-action-activities.md).
+Per esportare dati dal database di Adobe Campaign, devi creare un flusso di lavoro e utilizzare un’attività di esportazione dati. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../workflow/using/about-action-activities.md).
 
 Adobe Campaign fornisce diversi strumenti di reporting:
 
-1. **Report incorporati**: Adobe Campaign offre una serie di rapporti su consegne, campagne, attività della piattaforma, funzionalità facoltative, ecc. Tali rapporti sono disponibili tramite le varie funzionalità a cui si riferiscono. Possono essere adattati alle tue esigenze specifiche.
+1. **Rapporti incorporati**: Adobe Campaign offre una serie di rapporti su consegne, campagne, attività della piattaforma, funzionalità opzionali e così via. Questi rapporti sono disponibili attraverso le varie funzionalità a cui si riferiscono. Possono essere adattati alle tue esigenze specifiche.
 
    Per ulteriori informazioni al riguardo, consulta [questa sezione](../../reporting/using/about-campaign-built-in-reports.md).
 
@@ -35,14 +35,14 @@ Adobe Campaign fornisce diversi strumenti di reporting:
 
 1. **Rapporti personalizzati**: Adobe Campaign consente di creare rapporti sui dati nel database. Una volta create, queste sono rese accessibili nei contesti appropriati.
 
-   A seconda della complessità delle query, dei calcoli e dei volumi, i dati analizzati in questi rapporti possono essere raccolti tramite una query e preaggregati in un elenco (flusso di lavoro di tipo &quot;gestione dati&quot;) o in un cubo (tramite Marketing Analytics). Viene visualizzato sotto forma di tabella pivot o di elenco di gruppi.
+   A seconda della complessità delle query, dei calcoli e dei volumi, i dati analizzati in questi rapporti possono essere raccolti tramite una query e preaggregati in un elenco (flusso di lavoro di tipo &quot;gestione dati&quot;) o in un cubo (utilizzando Marketing Analytics). Verrà visualizzata sotto forma di tabella pivot o di elenco di gruppi.
 
    Per ulteriori informazioni al riguardo, consulta [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md).
 
-1. **Rapporti di analisi**: Marketing Analytics consente un&#39;esplorazione intuitiva dei dati.
+1. **Rapporti di analisi**: Marketing Analytics consente l’esplorazione intuitiva dei dati.
 
    Per ulteriori informazioni al riguardo, consulta [questa sezione](../../reporting/using/ac-cubes.md).
 
 >[!CAUTION]
 >
->Per una visualizzazione e una manipolazione semplici ed esportazioni efficienti, i rapporti non devono contenere più di 1.000 righe.
+>Per semplificare la visualizzazione e la manipolazione, nonché per un&#39;esportazione efficiente, i report non devono contenere più di 1.000 righe.

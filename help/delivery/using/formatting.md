@@ -19,11 +19,11 @@ ht-degree: 0%
 
 ## Modelli JavaScript {#javascript-templates}
 
-Un modello JavaScript è un documento di testo o HTML che include il codice JavaScript. Viene generato nello stesso modo di un contenuto e-mail in un’azione di consegna.
+Un modello JavaScript è un HTML o un documento di testo che include codice JavaScript. Viene costruito allo stesso modo del contenuto di un’e-mail in un’azione di consegna.
 
 ### Identificazione di un modello JavaScript {#identification-of-a-javascript-template}
 
-Un modello JavaScript è identificato dal nome e dallo spazio dei nomi, come schemi e moduli. Si consiglia tuttavia di aggiungere il **.js** al nome del modello.
+Un modello JavaScript è identificato dal nome e dallo spazio dei nomi, proprio come gli schemi e i moduli. Si consiglia tuttavia di aggiungere **.js** al nome del modello.
 
 ### Struttura di un modello JavaScript {#structure-of-a-javascript-template}
 
@@ -43,20 +43,20 @@ Esempio di modello di formattazione JavaScript HTML basato sullo schema &quot;cu
 </html>
 ```
 
-Le varie direttive JavaScript vengono visualizzate nel seguente modulo:
+Le varie direttive JavaScript vengono visualizzate nel seguente formato:
 
-* Unisci campi: visualizza il contenuto dei dati con **`<%= <source> %>`** sintassi dove `<source>`è il campo di origine dei dati da visualizzare.
-* Blocchi di istruzione: esegue una serie di istruzioni JavaScript incluse tra i tag &lt;% e %>.
+* Unisci campi: visualizza il contenuto dei dati con il **`<%= <source> %>`** sintassi dove `<source>`è il campo di origine dei dati da visualizzare.
+* Blocchi di istruzioni: esegue una serie di istruzioni JavaScript incluse tra i tag &lt;% e %>.
 
-La **content** l&#39;oggetto rappresenta l&#39;elemento principale del documento XML di input.
+Il **contenuto** object rappresenta l&#39;elemento principale del documento XML di input.
 
-Nel nostro esempio, la riga seguente visualizza il contenuto del nome della rubrica:
+Nel nostro esempio, la riga seguente mostra il contenuto del nome del registro:
 
 ```
 <h1><%= content.@name %></h1>
 ```
 
-Il codice seguente si ripeterà sul `<chapter>` elemento di raccolta:
+Il codice seguente esegue iterazioni sul `<chapter>` elemento di raccolta:
 
 ```
 <% for each(var chapter in content.chapter) { %>
@@ -68,20 +68,20 @@ Gli attributi e gli elementi del contenuto sono rappresentati come oggetti JavaS
 
 **Esempio**:
 
-* **contenuto.@name**: recupera il valore dell&#39;attributo &quot;name&quot; dell&#39;elemento principale
-* **contenuto.@`['name']`**: identico a **contenuto.@name** sintassi
-* **content.capitolo.length**: restituisce il numero di elementi nel `<chapter` elemento di raccolta
-* **content.capitolo`[0]`.@name**: recupera il nome del primo `<chapter>` elemento
-* **capitolo.name()**: restituisce il nome della `<chapter>` elemento
-* **capitolo.parent().name()**: restituisce il nome dell&#39;elemento padre di `<chapter>`
+* **contenuto.@name**: recupera il valore dell’attributo &quot;name&quot; dell’elemento principale
+* **contenuto.@`['name']`**: identico al **contenuto.@name** sintassi
+* **content.chapter.length**: restituisce il numero di elementi sul `<chapter` elemento di raccolta
+* **content.chapter`[0]`.@name**: recupera il nome del primo `<chapter>` elemento
+* **chapter.name()**: restituisce il nome del `<chapter>` elemento
+* **chapter.parent().name()**: restituisce il nome dell’elemento padre di `<chapter>`
 
 >[!CAUTION]
 >
->Poiché il carattere &quot;-&quot; è riservato nel linguaggio JavaScript, il recupero del valore di qualsiasi attributo o elemento contenente questo carattere deve essere eseguito tramite il `['<field>']` sintassi.
+>Poiché il carattere &quot;-&quot; è riservato nel linguaggio JavaScript, il recupero del valore di qualsiasi attributo o elemento contenente tale carattere deve essere eseguito tramite `['<field>']` sintassi.
 >
 >Ad esempio: `content.@['offer-id']`.
 
-Tutta la potenza di un linguaggio di programmazione (variabili, loop, test condizionali, funzioni, ecc.) ) è disponibile per creare il documento di output. Le API SOAP sono accessibili per arricchire il documento di output.
+Tutta la potenza di un linguaggio di programmazione (variabili, cicli, test condizionali, funzioni, ecc.) ) è disponibile per creare il documento di output. Le API SOAP sono accessibili per arricchire il documento di output.
 
 Esempi:
 
@@ -123,7 +123,7 @@ Esempi:
    <%= formatName(content.@name) %>
    ```
 
-* Dichiarazioni e chiamata variabile:
+* Dichiarazioni e chiamata di variabile:
 
    ```
    <%  var counter = 0; %>
@@ -131,7 +131,7 @@ Esempi:
    <%= counter += 10 %>
    ```
 
-* Recupero e visualizzazione del nome di un destinatario con metodi statici:
+* Recupero e visualizzazione di un nome di destinatario con metodi statici:
 
    ```
    <% var recipient = nms.recipient.get(1246); %>
@@ -159,7 +159,7 @@ Esempi:
 
 ### Inclusione di un modello JavaScript {#including-a-javascript-template}
 
-Puoi costituire una libreria di funzioni o variabili da utilizzare in un secondo momento. A questo scopo, importa il modello JavaScript con il **eval** funzione . Questo consente di arricchire i contesti con funzioni aggiuntive dichiarate in altri modelli JavaScript.
+Puoi creare una libreria di funzioni o variabili da utilizzare in un secondo momento. A questo scopo, importa il modello JavaScript con **eval** funzione. Questo consente di arricchire i contesti con funzioni aggiuntive dichiarate in altri modelli JavaScript.
 
 **Esempio**: importazione di **common.jsp** modello.
 
@@ -169,13 +169,13 @@ Puoi costituire una libreria di funzioni o variabili da utilizzare in un secondo
 
 ### Modifica di un modello JavaScript {#editing-a-javascript-template}
 
-L’area di modifica consente di compilare il contenuto del modello JavaScript:
+La zona di modifica consente di popolare il contenuto del modello JavaScript:
 
 ![](assets/d_ncs_content_form16.png)
 
 >[!NOTE]
 >
->Lo schema del modello dati associato deve essere popolato per l&#39;inizializzazione degli oggetti JavaScript.
+>Lo schema del modello dati associato deve essere compilato per l’inizializzazione degli oggetti JavaScript.
 
 Per generare l&#39;anteprima del documento di output in qualsiasi momento, selezionare un contenuto e un formato di output (HTML, Testo, XML), quindi fare clic su **[!UICONTROL Generate]** :
 
@@ -185,13 +185,13 @@ Per generare l&#39;anteprima del documento di output in qualsiasi momento, selez
 >
 >Non è necessario salvare le modifiche per visualizzare in anteprima il documento di output.
 
-### Esempio di creazione e utilizzo di un modello JavaScript {#example-of-how-to-create-and-use-a-javascript-template}
+### Esempio di come creare e utilizzare un modello JavaScript {#example-of-how-to-create-and-use-a-javascript-template}
 
 Di seguito è riportata la configurazione necessaria per implementare la seguente gestione dei contenuti utilizzando un modello JavaScript:
 
 ![](assets/d_ncs_content_sample_1.png)
 
-Questo esempio include i seguenti passaggi:
+Questo esempio prevede i seguenti passaggi:
 
 1. Crea il seguente schema (in questo caso: **neo:news**):
 
@@ -232,7 +232,7 @@ Questo esempio include i seguenti passaggi:
    </srcSchema>
    ```
 
-1. Crea i collegamenti **[!UICONTROL Content management]** tipo di modulo (**neo:news**)
+1. Creare il **[!UICONTROL Content management]** digita modulo (**neo:news**)
 
    ```
    <form _cs="News (neo)" entitySchema="xtk:form"  img="xtk:form.png" label="News"  name="news" namespace="neo" type="contentForm" xtkschema="xtk:form">
@@ -264,7 +264,7 @@ Questo esempio include i seguenti passaggi:
    </form>
    ```
 
-1. Crea i modelli JavaScript con il contenuto dei messaggi per i formati HTML e Testo .
+1. Crea i modelli JavaScript con il contenuto del messaggio per i formati HTML e Text.
 
    * Nel nostro esempio, per HTML:
 
@@ -360,7 +360,7 @@ Questo esempio include i seguenti passaggi:
 
       ![](assets/d_ncs_content_sample_2.png)
 
-   * Per testo:
+   * Per il testo:
 
       ![](assets/d_ncs_content_sample_3.png)
 
@@ -368,21 +368,21 @@ Questo esempio include i seguenti passaggi:
 
    Per ulteriori informazioni, consulta [Utilizzo di un modello di contenuto](using-a-content-template.md).
 
-## Schede di stile XSL {#xsl-stylesheets}
+## Fogli di stile XSL {#xsl-stylesheets}
 
-Il linguaggio XSLT consente di modificare un documento XML in un documento di output. A seconda del metodo di output del foglio di stile, il documento risultante può essere generato in HTML, testo normale o un altro albero XML.
+Il linguaggio XSLT consente di trasformare un documento XML in un documento di output. A seconda del metodo di output del foglio di stile, il documento risultante può essere generato in HTML, in testo normale o in un&#39;altra struttura XML.
 
-Questa trasformazione è a sua volta dettagliata in XML in un documento noto come foglio di stile.
+Questa trasformazione viene a sua volta descritta in XML in un documento noto come foglio di stile.
 
 ### Identificazione di un foglio di stile {#identifying-a-stylesheet}
 
-Un foglio di stile è identificato dal nome e dallo spazio dei nomi, come schemi e moduli. Si consiglia tuttavia di aggiungere il **xsl** estensione al nome del foglio di stile.
+Un foglio di stile è identificato dal nome e dallo spazio dei nomi, proprio come gli schemi e le maschere. Tuttavia, si consiglia di aggiungere **.xsl** estensione al nome del foglio di stile.
 
-La chiave di identificazione di un foglio di stile è una stringa formata dallo spazio dei nomi e dal nome separato da due punti; ad esempio: **cus:book.xsl**.
+La chiave di identificazione di un foglio di stile è una stringa formata dallo spazio dei nomi e dal nome separato da due punti, ad esempio: **cus:book.xsl**.
 
 ### Struttura di un foglio di stile {#structure-of-a-stylesheet}
 
-Esempio di un foglio di stile di formattazione di HTML basato sullo schema di esempio &quot;cus:book&quot;:
+Esempio di un foglio di stile di formattazione HTML basato sullo schema di esempio &quot;cus:book&quot;:
 
 ```
 <?xml version="1.0" encoding="ISO-8859-1" ?>
@@ -406,20 +406,20 @@ Esempio di un foglio di stile di formattazione di HTML basato sullo schema di es
 </xsl:stylesheet>
 ```
 
-Un foglio di stile è un documento XML conforme alle regole seguenti:
+Un foglio di stile è un documento XML che rispetta le regole seguenti:
 
-* i valori degli attributi sono compresi tra virgolette,
+* i valori degli attributi sono tra virgolette,
 * un elemento deve avere un marcatore di apertura e un marcatore di chiusura,
-* sostituisci i caratteri &#39;&lt;&#39; o &#39;&amp;&#39; con **&#39;&lt;&#39;** o **&#39;&amp;&#39;** entità,
+* sostituire i caratteri &#39;&lt;&#39; o &#39;&amp;&#39; con il simbolo **&#39;&lt;&#39;** o **&#39;&amp;&#39;** entità,
 * ogni elemento XSL deve utilizzare **xsl** spazio dei nomi.
 
-Un foglio di stile deve iniziare con il marcatore elemento principale XSL **`<xsl:stylesheet>`** e termina con **`</xsl:stylesheet>`** pennarello. Lo spazio dei nomi XSL deve essere definito nel marcatore di apertura come segue:
+Un foglio di stile deve iniziare con l&#39;indicatore dell&#39;elemento principale XSL **`<xsl:stylesheet>`** e termina con **`</xsl:stylesheet>`** marcatore. Lo spazio dei nomi XSL deve essere definito nel marcatore di apertura come segue:
 
 ```
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 ```
 
-La **`<xsl:output>`** specifica il formato del documento generato. Specifica il set di caratteri desiderato e il formato di output.
+Il **`<xsl:output>`** specifica il formato del documento generato. Specifica il set di caratteri desiderato e il formato di output.
 
 ```
 <xsl:output encoding="ISO-8859-1" method="html"/>
@@ -444,23 +444,23 @@ Le istruzioni seguenti descrivono la configurazione del foglio di stile per la f
 </xsl:template>
 ```
 
-Per impostazione predefinita, il processore XSLT cerca il **template** che si applica al nodo principale o principale del documento XML di input. La costruzione del documento di output inizia con questo **template**.
+Per impostazione predefinita, il processore XSLT cerca **modello** applicabile al nodo principale o principale del documento XML di input. La costruzione del documento di output inizia con questo **modello**.
 
 Nel nostro esempio, una pagina HTML viene generata dallo schema &quot;cus:book&quot; visualizzando il nome del libro e l’elenco dei capitoli.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul linguaggio XSLT, fare riferimento a un documento di riferimento XSLT.
+>Per ulteriori informazioni sul linguaggio XSLT, consultare un documento di riferimento XSLT.
 
 ### Visualizzazione di HTML/XML {#displaying-html-xml}
 
-Per visualizzare un **html** campo , utilizza **disable-output-escape=&quot;yes&quot;** dall&#39;opzione **`<xsl:value-of>`** direttiva. Questo consente di evitare la sostituzione dei caratteri con la relativa entità XML (ad esempio &lt; con &lt;).
+Per visualizzare un **html** , utilizza il **disable-output-escape=&quot;yes&quot;** opzione dalla **`<xsl:value-of>`** direttiva. Questo consente di evitare la sostituzione dei caratteri con la relativa entità XML (ad esempio &lt; con &lt;).
 
-La **`<xsl:text>`** direttiva con **disable-output-escape=&quot;yes&quot;** consente di inserire tag JavaScript per campi di personalizzazione o test condizionali.
+Il **`<xsl:text>`** direttiva con **disable-output-escape=&quot;yes&quot;** Questa opzione consente di inserire tag JavaScript per campi di personalizzazione o test condizionali.
 
 Esempi:
 
-* Visualizzazione del contenuto di un campo di tipo &quot;html&quot;:
+* Visualizzazione del contenuto di un campo di tipo html:
 
    ```
    <xsl:value-of select="summary" disable-output-escaping="yes"/>
@@ -472,17 +472,17 @@ Esempi:
    <xsl:text disable-output-escaping="yes"><%= recipient.email %></xsl:text>
    ```
 
-* Aggiunta del test condizionale **&lt;% if (recipient.language == &#39;en&#39;) `{` %>**:
+* Aggiunta del test condizionale **&lt;% se (recipient.language == &#39;it&#39;) `{` %>**:
 
    ```
    <xsl:text disable-output-escaping="yes"><% if (recipient.language == 'en') { %></xsl:text>
    ```
 
-### Inclusi fogli di stile {#including-stylesheets}
+### Inclusione dei fogli di stile {#including-stylesheets}
 
-È possibile creare una libreria di modelli o variabili da condividere tra diversi fogli di stile. Il &quot;longMonth&quot; **template**, presentato in precedenza, è un esempio tipico del vantaggio di individuare un modello in modo remoto in un foglio di stile in modo che possa essere riutilizzato in un secondo momento.
+È possibile creare una libreria di modelli o variabili da condividere tra più fogli di stile. Il &quot;longMonth&quot; **modello**, presentato in precedenza, è un tipico esempio del vantaggio di individuare un modello in remoto in un foglio di stile in modo che possa essere riutilizzato in un secondo momento.
 
-La **`<xsl:include>`** Direttiva indica il nome del foglio di stile da includere nel documento.
+Il **`<xsl:include>`** direttiva indica il nome del foglio di stile da includere nel documento.
 
 **Esempio**: incluso il foglio di stile &quot;common.xsl&quot;.
 
@@ -497,11 +497,11 @@ La **`<xsl:include>`** Direttiva indica il nome del foglio di stile da includere
 
 >[!NOTE]
 >
->Il nome dello spazio dei nomi non deve essere immesso nel riferimento del foglio di stile da includere. Come standard, questo foglio di stile viene creato con lo spazio dei nomi utente.
+>Il nome dello spazio dei nomi non deve essere inserito nel riferimento del foglio di stile da includere. Come standard, questo foglio di stile viene creato con lo spazio dei nomi utente.
 
 ### Modifica di un foglio di stile {#editing-a-stylesheet}
 
-La zona di modifica consente di compilare il contenuto del foglio di stile:
+La zona di modifica consente di popolare il contenuto del foglio di stile:
 
 ![](assets/d_ncs_content_form14.png)
 
@@ -515,22 +515,22 @@ Per generare un&#39;anteprima del documento di output in qualsiasi momento, sele
 
 ## Gestione delle immagini {#image-management}
 
-### Riferimento immagine {#image-referencing}
+### Immagine con riferimento {#image-referencing}
 
-È possibile fare riferimento alle immagini inserite nel documento di output di HTML con riferimenti assoluti o relativi.
+È possibile fare riferimento alle immagini immesse nel documento di output di HTML con riferimenti assoluti o relativi.
 
-Il riferimento relativo ti consente di inserire l’URL del server contenente le immagini nel **NcmResourceDir** e **NcmResourceDirPreview** opzioni. Queste opzioni contengono il percorso delle immagini per la pubblicazione e l’anteprima nella console client di Adobe Campaign.
+Il riferimento relativo consente di immettere l&#39;URL del server contenente le immagini in **NcmRessourcesDir** e **NcmRessourcesDirPreview** opzioni. Queste opzioni contengono la posizione delle immagini da pubblicare e visualizzare in anteprima nella console client di Adobe Campaign.
 
-Queste due opzioni sono accessibili tramite la schermata di gestione delle opzioni nel **[!UICONTROL Administration > Platform > Options]** cartella.
+Queste due opzioni sono accessibili tramite la schermata di gestione delle opzioni nella **[!UICONTROL Administration > Platform > Options]** cartella.
 
 **Esempio**:
 
 * NcmResourcesDir = &quot;https://server/images/&quot;
 * NcmResourcesDirPreview = &quot;x:/images/&quot;
 
-Durante l&#39;elaborazione dei fogli di stile, il **_resPath** l&#39;attributo sull&#39;elemento principale del documento XML di input viene compilato automaticamente con una o più opzioni a seconda del contesto (anteprima o pubblicazione).
+Durante l&#39;elaborazione del foglio di stile, **_resPath** L&#39;attributo dell&#39;elemento principale del documento XML di input viene automaticamente compilato con una o più opzioni a seconda del contesto (anteprima o pubblicazione).
 
-Esempio di utilizzo dell’opzione di posizionamento dell’immagine e del relativo utilizzo con un’immagine:
+Esempio di come utilizzare l’opzione di posizionamento immagine e il relativo utilizzo con un’immagine:
 
 ```
 <img src="<%= content.@_resPath %>/newsletter/image.png"/>
@@ -538,19 +538,19 @@ Esempio di utilizzo dell’opzione di posizionamento dell’immagine e del relat
 
 >[!NOTE]
 >
->Si consiglia di dichiarare una variabile contenente il riferimento del server in cui vengono memorizzate le immagini (&quot;resPath&quot; nel nostro esempio).
+>È consigliabile dichiarare una variabile contenente il riferimento del server in cui sono memorizzate le immagini (&quot;resPath&quot; nel nostro esempio).
 
-### Utilizzo delle risorse pubbliche {#using-public-resources}
+### Utilizzo di risorse pubbliche {#using-public-resources}
 
-È inoltre possibile utilizzare **[!UICONTROL Public resources]** per dichiarare le immagini e caricarle sul server in base alle impostazioni dell&#39;istanza immesse nella procedura guidata di distribuzione.
+Puoi anche utilizzare **[!UICONTROL Public resources]** per dichiarare le immagini e caricarle sul server a seconda delle impostazioni di istanza immesse nella procedura guidata di distribuzione.
 
-Puoi quindi richiamare queste immagini nel contenuto. a questo scopo, utilizza la seguente sintassi nello schema di gestione del contenuto:
+Puoi quindi richiamare queste immagini nel contenuto. a questo scopo, utilizza la seguente sintassi nello schema di gestione dei contenuti:
 
 ```
 <element label="Image" name="image" target="xtk:fileRes" type="link"/>
 ```
 
-Nel modulo, il campo per la selezione dell’immagine verrà aggiunto tramite la seguente sintassi:
+Nel modulo, il campo per la selezione dell’immagine viene aggiunto con la seguente sintassi:
 
 ```
 <input img="nl:sryimage.png" newEntityFormChoice="true" xpath="image">
@@ -562,27 +562,27 @@ Nel modulo, il campo per la selezione dell’immagine verrà aggiunto tramite la
 
 >[!NOTE]
 >
->Per ulteriori informazioni **[!UICONTROL Public resources]** e come configurarli e utilizzarli, consulta [questa sezione](../../installation/using/deploying-an-instance.md#managing-public-resources).
+>Per ulteriori informazioni su **[!UICONTROL Public resources]** e come configurarli e utilizzarli, consulta [questa sezione](../../installation/using/deploying-an-instance.md#managing-public-resources).
 
 ## Visualizzazione data {#date-display}
 
-Nel documento di input XML, le date sono memorizzate nel formato XML interno: **AAAA/MM/GG HH:MM:SS** (esempio 2018/10/01 12:23:30).
+Nel documento di input XML le date vengono memorizzate in formato XML interno: **AAAA/MM/GG HH:MM:SS** (esempio 2018/10/01 12:23:30).
 
 Adobe Campaign fornisce funzioni di formattazione della data per i modelli JavaScript e i fogli di stile XSL descritti di seguito.
 
 ### Formattazione data JavaScript {#javascript-date-formatting}
 
-Per visualizzare una data nel formato desiderato, Adobe Campaign fornisce **formatDate** funzione che prende come input il contenuto della data e una stringa che specifica il formato di output con la seguente sintassi: **%4Y/%2M/%2D %2H%2N%2S**
+Per visualizzare una data nel formato desiderato, Adobe Campaign fornisce **formatDate** funzione che accetta come input il contenuto della data e una stringa che specifica il formato di output con la seguente sintassi: **%4Y/%2M/%2D %2H%2N%2S**
 
 Esempi:
 
-* Visualizza la data nella **10/03/2018** formato:
+* Visualizza la data in **31/10/2018** formato:
 
    ```
     <%= formatDate(content.@date, "%2D/%2M/%4Y") %>
    ```
 
-* Visualizza la data nella **Luglio 2018** formato:
+* Visualizza la data in **Luglio 2018** formato:
 
    ```
    <%
@@ -603,17 +603,17 @@ Esempi:
 
 ### Formattazione data XSL {#xsl-date-formatting}
 
-Nella sintassi XSLT non è presente una funzione di gestione della data standard. Per visualizzare una data nel formato desiderato, Adobe Campaign fornisce la funzione esterna **formato data**. Questa funzione assume come input il contenuto della data e una stringa che specifica il formato di output con la seguente sintassi: **%4Y/%2M/%2D %2H%2N%2S**
+La sintassi XSLT non contiene funzioni standard di gestione delle date. Per visualizzare una data nel formato desiderato, Adobe Campaign fornisce la funzione esterna **data-formato**. Questa funzione considera come input il contenuto della data e una stringa che specifica il formato di output con la seguente sintassi: **%4Y/%2M/%2D %2H%2N%2S**
 
 Esempi:
 
-* Per visualizzare la data nel **10/01/2018** formato:
+* Per visualizzare la data in **01/10/2018** formato:
 
    ```
    <xsl:value-of select="external:date-format(@date, '%2D/%2M/%4Y')"/>
    ```
 
-* Per visualizzare la data nel **Luglio 2018** formato:
+* Per visualizzare la data in **Luglio 2018** formato:
 
    ```
    <!-- Returns the month in the form of a string with the month number as input -->

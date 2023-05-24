@@ -19,24 +19,24 @@ ht-degree: 7%
 
 
 
-Una volta configurati i modelli, le operazioni di importazione ed esportazione possono essere avviate in diversi contesti in Adobe Campaign.
+Una volta configurati i modelli, è possibile avviare le operazioni di importazione ed esportazione in diversi contesti in Adobe Campaign.
 
-* In **[!UICONTROL Profiles and targets]** nell’area di lavoro di Adobe Campaign, fai clic sul pulsante **[!UICONTROL Jobs]** link: viene visualizzato l’elenco delle importazioni e delle esportazioni esistenti.
+* In **[!UICONTROL Profiles and targets]** nell’area di lavoro di Adobe Campaign, fai clic su **[!UICONTROL Jobs]** link (collegamento): per visualizzare l’elenco delle importazioni ed esportazioni esistenti.
 
-   Fai clic sul pulsante **[!UICONTROL Create]** e selezionare il tipo di processo che si desidera eseguire.
+   Fai clic su **[!UICONTROL Create]** e selezionare il tipo di job da eseguire.
 
    ![](assets/s_ncs_user_import_from_home.png)
 
-* Puoi anche avviare importazioni ed esportazioni da **[!UICONTROL Monitoring]** sezione dell’area di lavoro: due collegamenti dedicati consentono di avviare direttamente l’importazione o l’esportazione.
+* Puoi anche avviare importazioni ed esportazioni dal **[!UICONTROL Monitoring]** sezione dell’area di lavoro: due collegamenti dedicati ti consentono di avviare direttamente l’importazione o l’esportazione.
 
    ![](assets/s_ncs_user_import_from_production.png)
 
-* Infine, le importazioni e le esportazioni possono essere avviate da Adobe Campaign Explorer.
+* Infine, è possibile avviare le importazioni e le esportazioni da Adobe Campaign Explorer.
 
    ![](assets/s_ncs_user_export_wizard_launch_from_menu.png)
 
 
-Tutte queste procedure guidate per l’importazione o l’esportazione di dati aperti. Sono descritti in dettaglio in queste sezioni:
+Tutte queste procedure guidate per l&#39;importazione o l&#39;esportazione di dati aperti. Sono descritte in dettaglio nelle seguenti sezioni:
 
 * [Configurare un processo di importazione](../../platform/using/executing-import-jobs.md)
 * [Configurare un processo di esportazione](../../platform/using/executing-export-jobs.md)

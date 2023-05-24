@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Informazioni sugli indirizzi seed
-description: Guida introduttiva agli indirizzi di seed
+description: Introduzione agli indirizzi di seed
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Seed Address
@@ -17,35 +17,35 @@ ht-degree: 8%
 
 
 
-Gli indirizzi di seed vengono utilizzati per eseguire il targeting di destinatari che non corrispondono ai criteri di target definiti. In questo modo, i destinatari che non rientrano nell’ambito di consegna possono ricevere la consegna, come farebbe qualsiasi altro destinatario di destinazione.
+Gli indirizzi di seed vengono utilizzati per eseguire il targeting di destinatari che non corrispondono ai criteri di target definiti. In questo modo, i destinatari che non rientrano nell’ambito di consegna possono ricevere la consegna, come farebbe qualsiasi altro destinatario.
 
-Una delle ragioni principali per utilizzarli è **la protezione della mailing list**. L’inserimento di indirizzi di seed nella mailing list consente di notare se viene utilizzato da terze parti, in quanto gli indirizzi di seed in essa contenuti riceveranno le consegne inviate alla mailing list.
+Una delle ragioni principali per utilizzarli è **protezione della mailing list**. L’inserimento di indirizzi di seed nella mailing list ti consente di notare se è utilizzato da una terza parte, in quanto gli indirizzi di seed in esso contenuti riceveranno le consegne inviate alla mailing list.
 
-Inoltre, gli indirizzi di seed consentono di: **visualizzare in anteprima e testare la personalizzazione e il rendering delle consegne** prima dell’invio, inviando le bozze (vedi [Usa indirizzi di seed come prova](steps-defining-the-target-population.md#using-seed-addresses-as-proof)).
+Inoltre, gli indirizzi di seed consentono di: **anteprima e test della personalizzazione e del rendering delle consegne** prima del loro invio, inviando loro le bozze (vedi [Utilizza indirizzi seed come bozza](steps-defining-the-target-population.md#using-seed-addresses-as-proof)).
 
 ![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](steps-defining-the-target-population.md#seeds-and-proofs-video)
 
-La funzione degli indirizzi di seed presenta i seguenti vantaggi:
+La funzione Indirizzi seed offre i seguenti vantaggi:
 
-* Sostituzione casuale di campi con dati provenienti dai profili dei destinatari: questo ti consente di inserire solo l’indirizzo e-mail, ad esempio nella sezione dell’indirizzo di seed, e di consentire a Campaign di compilare automaticamente gli altri campi del profilo (consulta [Caso di utilizzo: configurare la sostituzione del campo](use-case--configuring-the-field-substitution.md)).
-* Quando utilizzi un flusso di lavoro con funzionalità di gestione dati, i dati aggiuntivi elaborati nelle consegne possono essere immessi a livello di indirizzo di seed per forzare i valori: questo elimina la sostituzione casuale di valori.
-* Gli indirizzi di seed vengono automaticamente esclusi dai rapporti relativi alle seguenti statistiche di consegna: **[!UICONTROL Clicks]**, **[!UICONTROL Opens]**, **[!UICONTROL Unsubscriptions]**.
+* Sostituzione casuale di campi con dati ottenuti dai profili dei destinatari: ciò ti consente di inserire solo l’indirizzo e-mail, ad esempio nella sezione dell’indirizzo di seed, e di consentire a Campaign di compilare automaticamente gli altri campi del profilo (consulta [Caso d’uso: configurare la sostituzione del campo](use-case--configuring-the-field-substitution.md)).
+* Quando si utilizza un flusso di lavoro con funzionalità di gestione dati, i dati aggiuntivi elaborati nelle consegne possono essere inseriti a livello di indirizzo di seed per forzare i valori: in questo modo si evita la sostituzione casuale dei valori.
+* Gli indirizzi di seed vengono automaticamente esclusi dai rapporti sulle seguenti statistiche di consegna: **[!UICONTROL Clicks]**, **[!UICONTROL Opens]**, **[!UICONTROL Unsubscriptions]**.
 
 Gli indirizzi di seed vengono aggiunti al target delle consegne importando o creando direttamente nella consegna o nella campagna.
 
 >[!NOTE]
 >
->Gli indirizzi di seed non appartengono alla tabella dei destinatari, ma vengono creati in una tabella separata. Se estendi la tabella dei destinatari con nuovi dati, devi estendere anche la tabella degli indirizzi di seed con gli stessi dati. In caso contrario, i campi estesi non saranno presi in considerazione per gli indirizzi di seed.
+>Gli indirizzi seed non appartengono alla tabella dei destinatari, ma vengono creati in una tabella separata. Se estendi la tabella dei destinatari con nuovi dati, devi estendere anche la tabella degli indirizzi di seed con gli stessi dati. In caso contrario, i campi estesi non verranno presi in considerazione per gli indirizzi seed.
 >
->Un esempio di come estendere la tabella degli indirizzi di seed è presentato in questa sezione: [Caso di utilizzo: seleziona gli indirizzi di seed in base ai criteri](use-case--selecting-seed-addresses-on-criteria.md).
+>Un esempio di come estendere la tabella degli indirizzi di seed è presentato in questa sezione: [Caso d’uso: selezionare gli indirizzi seed in base ai criteri](use-case--selecting-seed-addresses-on-criteria.md).
 
 Per le consegne di direct mailing, gli indirizzi di seed vengono aggiunti durante l’estrazione e mescolati nel documento di output.
 
 >[!IMPORTANT]
 >
->Per le consegne di direct mailing, il formato del file di estrazione deve rispettare i seguenti limiti:
+>Per le consegne di direct mailing, il formato del file di estrazione deve rispettare le seguenti limitazioni:
 >
->* Non deve utilizzare l&#39;opzione **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**.
->* Se le raccolte di elementi sono estratte, questi campi avranno un valore vuoto per gli indirizzi di seed, a meno che il valore **[!UICONTROL Single row (expert user)]** è selezionata. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/executing-export-jobs.md#step-7---data-formatting).
+>* Non deve utilizzare l’opzione **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**.
+>* Se le raccolte di elementi vengono estratte, questi campi avranno un valore vuoto per gli indirizzi di seed, a meno che **[!UICONTROL Single row (expert user)]** è selezionata. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/executing-export-jobs.md#step-7---data-formatting).
 >
 

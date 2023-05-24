@@ -42,7 +42,7 @@ In qualità di utente esperto, puoi configurare le funzionalità di tracking nel
 
 ## Come si configura il recapito messaggi e-mail? {#how-to-configure-email-deliverability-}
 
-Oltre al [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it), consulta le raccomandazioni tecniche per il recapito messaggi per scoprire come configurare la tua istanza per massimizzare le funzionalità di consegna di Campaign.
+Oltre al [Guida alle procedure consigliate per la consegna dei messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it), consulta le raccomandazioni tecniche per il recapito dei messaggi per scoprire come configurare la tua istanza per massimizzare le funzionalità di consegna di Campaign.
 
 [Fai clic qui per ulteriori informazioni](../../delivery/using/about-deliverability.md).
 

@@ -1,7 +1,7 @@
 ---
 keywords: Campaign Classic;home;argomenti principali
 product: campaign
-title: Documentazione del prodotto Adobe Campaign Classic v7
+title: Documentazione del prodotto di Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: ddac38fb79101bcff910345c9b04c7cc5eaf39a6
 workflow-type: tm+mt
@@ -16,13 +16,13 @@ ht-degree: 62%
 
 ## Novità
 
-* **[Il rilascio di novembre è live!](rn/using/latest-release.md)**<br/> Scopri nuove funzionalità, miglioramenti e correzioni nelle note sulla versione
+* **[È attiva la versione di novembre.](rn/using/latest-release.md)**<br/> Scopri nuove funzionalità, miglioramenti e correzioni nelle Note sulla versione
 
-* **[Programma di rilascio 2022](technotes/using/dc-migration.md)**<br/> Aggiornare l’ambiente e migliorare la sicurezza, l’infrastruttura e le prestazioni
+* **[Programma di versione 2022](technotes/using/dc-migration.md)**<br/> Aggiornamento dell&#39;ambiente e miglioramento di sicurezza, infrastruttura e prestazioni
 
 <!--* **[Secure your Campaign environment](technotes/using/tech-stack-upgrade.md)**<br/> Update to the latest versions to secure your Campaign platform-->
 
-* **[Aggiornare l’integrazione di Adobe Experience Cloud Triggers](integrations/using/configuring-adobe-io.md)**<br/> Il servizio di autenticazione oAuth legacy ha raggiunto la fine del ciclo di vita: devi effettuare la migrazione ad Adobe I/O
+* **[Aggiornare l’integrazione di Adobe Experience Cloud Triggers](integrations/using/configuring-adobe-io.md)**<br/> Il servizio di autenticazione OAuth legacy ha raggiunto la fine del ciclo di vita: è necessario migrare ad Adobe I/O
 
 [Altri aggiornamenti](rn/using/documentation-updates.md)
 

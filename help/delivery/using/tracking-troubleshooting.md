@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Risoluzione dei problemi di tracciamento
-description: Questa sezione contiene domande comuni relative alla configurazione e all’implementazione del tracciamento in Adobe Campaign
+description: Questa sezione fornisce domande comuni relative alla configurazione e all’implementazione del tracciamento in Adobe Campaign
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring
@@ -17,32 +17,32 @@ ht-degree: 1%
 
 
 
-In questa sezione troverai le domande comuni relative alla configurazione e all’implementazione del tracciamento in Adobe Campaign Classic.
+In questa sezione troverai domande comuni relative alla configurazione e all’implementazione del tracciamento in Adobe Campaign Classic.
 
 ## Il flusso di lavoro di tracciamento non riesce {#tracking-workflow-failing}
 
-Il mio flusso di lavoro di tracciamento non riesce, come posso rilevare le linee danneggiate nel file di tracciamento?
+Il flusso di lavoro di tracciamento non riesce, come posso rilevare le righe danneggiate nel file di tracciamento?
 
 >[!NOTE]
 >
 >Disponibile solo per Windows
 
-File di registro di tracciamento danneggiato .../nl6/var/&lt;instance_name>Il registro /redir/log/0x0000 può interrompere il flusso di lavoro di tracciamento. Per rilevare facilmente le linee danneggiate e rimuoverle per riprendere il flusso di lavoro di tracciamento, puoi utilizzare i comandi riportati di seguito.
+Il file di registro di tracciamento danneggiato .../nl6/var/&lt;instance_name>/redir/log/0x0000 log può arrestare il flusso di lavoro di tracciamento. Per rilevare facilmente le righe danneggiate e rimuoverle per riprendere il flusso di lavoro di tracciamento, puoi utilizzare i comandi seguenti.
 
-### So in quale file è la linea danneggiata
+### So in quale file si trova la riga danneggiata
 
-In questo caso, le linee danneggiate possono essere trovate nel file 0x000000000A0000.log ma lo stesso processo può essere applicato a un set di file - uno per uno.
+In questo caso, le righe danneggiate si trovano nel file 0x00000000000A0000.log, ma lo stesso processo può essere applicato a un set di file - uno per uno.
 
 ```
 $ cd {install directory}/var/{instance name}/redir/log
 $ cat 0x00000000000A0000.log | sed -nE '/^[[:alnum:]]{2}x[[:alnum:]]*\t[0-9T:\.-]*\t[0-9a-fA-F]*\t[0-9a-fA-F]*\t[0-9a-fA-F]*\t[[:alnum:]]*\t[[:alnum:]-]*\t[[:print:]]*\t[[:print:]]*\t[[:print:]]*\t([0-9a-fA-F\.:]*|[0-9a-fA-F\.:]*\t[[:print:]]*|[0-9a-fA-F\.:]*,[[:print:]]*)$/!p'
 ```
 
-Puoi quindi interrompere il flusso di lavoro di tracciamento, eliminare le linee danneggiate e riavviare il flusso di lavoro.
+Puoi quindi interrompere il flusso di lavoro di tracciamento, eliminare le righe danneggiate e riavviare il flusso di lavoro.
 
-### Non so in quale file è la linea danneggiata
+### Non è possibile individuare il file in cui si trova la riga danneggiata
 
-1. utilizzare la seguente riga di comando per archiviare tutti i file di tracciamento.
+1. utilizzare la riga di comando seguente per archiviare tutti i file di tracciamento.
 
    ```
    $ cd {install directory}/var/{instance name}/redir/log
@@ -58,7 +58,7 @@ Puoi quindi interrompere il flusso di lavoro di tracciamento, eliminare le linee
 
    >[!NOTE]
    >
-   >Il ritorno a capo è stato aggiunto prima dell&#39;agente utente per consentire una migliore lettura e non riflette il rendering efficace.
+   >Il ritorno a capo è stato aggiunto prima dell’agente utente per consentire una migliore lettura e non riflette l’efficacia del rendering.
 
 1. Esegui un comando grep per trovare il file corrispondente.
 
@@ -68,7 +68,7 @@ $ grep -Rn <Log Id>
 $ grep -Rn 50x000000000FD7EC86
 ```
 
-1. Trova il registro difettoso con il nome del file e il numero di riga. Ad esempio:
+1. Individuare il registro con il nome del file e il numero di riga. Ad esempio:
 
    ```
    ./0x000000000FD7E000.log:3207:50x000000000FD7EC86 2017-06-24T21:00:50.96 1f506d71 1aeab4b6 1af77020 0 e5155671-4ab7-4ce4-a763-3b82dda6d881 h
@@ -77,19 +77,19 @@ $ grep -Rn 50x000000000FD7EC86
 
    >[!NOTE]
    >
-   >È stato aggiunto un ritorno a capo prima dell&#39;agente utente per consentire una migliore lettura e non riflette il rendering efficace.
+   >È stato aggiunto un ritorno a capo prima dell’agente utente per consentire una migliore lettura e non riflette l’efficacia del rendering.
 
-Puoi quindi interrompere il flusso di lavoro di tracciamento, eliminare le linee danneggiate e riavviare il flusso di lavoro.
+Puoi quindi interrompere il flusso di lavoro di tracciamento, eliminare le righe danneggiate e riavviare il flusso di lavoro.
 
-## Tracciamento dei collegamenti non riuscito a intermittenza {#tracking-links-fail-intermittently}
+## Il tracciamento dei collegamenti ha esito negativo a intermittenza {#tracking-links-fail-intermittently}
 
 Quando tenti di accedere ai collegamenti di tracciamento, viene visualizzato il seguente messaggio:
 
 `Requested URL '/r/ id=h787bc0,281a4d8,281a4da&amp;p1=1' cannot be found`
 
-1. Accesso &lt;redirection_server>/r/test URL e controlla se il numero di build e localhost sono stati restituiti dalla richiesta.
+1. Accesso &lt;redirection_server>/r/test URL e verifica se il numero di build e localhost sono stati restituiti dalla richiesta.
 
-1. Controlla la configurazione di spareServer nel file serverConf.xml per il server di tracciamento. Questa configurazione deve essere in modalità di reindirizzamento.
+1. Verificare la configurazione spareServer nel file serverConf.xml per il server di tracciamento. Questa configurazione deve essere in modalità di reindirizzamento.
 
    ```
    <redirection>
@@ -104,27 +104,27 @@ Quando tenti di accedere ai collegamenti di tracciamento, viene visualizzato il 
    </redirection>
    ```
 
-1. Controlla manualmente se la &lt;deliveryid>Il file .xml esiste nel computer in .../nl6/var/&lt;instance_name>/redir/url/&lt;yyyy> directory (AAAA rappresenta l’anno di consegna).
+1. Controllare manualmente se &lt;deliveryid>Il file .xml esiste nel computer in .../nl6/var/&lt;instance_name>/redir/url/&lt;yyyy> (AAAA rappresenta l’anno di consegna).
 
-1. Controlla manualmente se &lt;trackingurlid> si trova nella &lt;deliveryid>file .xml.
+1. Controlla manualmente se &lt;trackingurlid> si trova nella sezione &lt;deliveryid>file .xml.
 
-1. Verifica manualmente l’esistenza di broadlogID nella relativa consegna deliveryID.
+1. Verifica manualmente l’esistenza di broadlogID nella consegna deliveryID correlata.
 
-1. Controlla &lt;deliveryid>autorizzazioni per i file .xml in .../nl6/var/&lt;instance_name>/redir/url/year directory.
+1. Verifica &lt;deliveryid>autorizzazioni dei file .xml in .../nl6/var/&lt;instance_name>directory /redir/url/year.
 
-   Dovrebbero disporre di almeno 644 autorizzazioni in modo che Apache possa leggere gli url di tracciamento per reindirizzare il collegamento richiesto.
+   Devono disporre di almeno 644 autorizzazioni in modo che Apache possa leggere gli URL di tracciamento per reindirizzare il collegamento richiesto.
 
-## È in corso l’aggiornamento dell’opzione NmsTracking_Pointer? {#updating-option}
+## Aggiornare l&#39;opzione NmsTracking_Pointer? {#updating-option}
 
-Segui questi passaggi durante l’aggiornamento dell’opzione NmsTracking_Pointer :
+Per aggiornare l&#39;opzione NmsTracking_Pointer, effettuare le seguenti operazioni:
 
 1. Interrompi il flusso di lavoro di tracciamento.
 
 1. Arresta il servizio trackinglogd.
 
-1. Aggiorna l&#39;opzione NmsTracking_Pointer al valore desiderato.
+1. Aggiornare l&#39;opzione NmsTracking_Pointer al valore desiderato.
 
-1. Riavvia il servizio trackinglogd.
+1. Riavviare il servizio trackinglogd.
 
 1. Riavvia il flusso di lavoro di tracciamento.
 
@@ -132,9 +132,9 @@ Segui questi passaggi durante l’aggiornamento dell’opzione NmsTracking_Point
 
 Puoi personalizzare la formula di tracciamento dei clic e specificare una formula di tracciamento Adobe Analytics personalizzata.
 
-Questo tipo di personalizzazione deve essere effettuata con cautela per evitare di aggiungere caratteri di feed aggiuntivi. Tutti i caratteri di feed lineari presenti al di fuori dell’espressione JavaScript saranno presenti nella formula finale.
+Questo tipo di personalizzazione deve essere fatto con cautela per evitare di aggiungere caratteri di avanzamento riga aggiuntivi. Tutti i caratteri di avanzamento riga presenti al di fuori dell’espressione JavaScript saranno presenti nella formula finale.
 
-Questo tipo di carattere di feed aggiuntivo nell&#39;URL di tracciamento porterà a un problema in alcuni WebMail (AOL, GMail, ecc.).
+Questo tipo di carattere di avanzamento riga aggiuntivo nell’URL di tracciamento causerà un problema in alcuni webMail (AOL, GMail, ecc.).
 
 **Primo esempio:**
 
@@ -159,7 +159,7 @@ Questo tipo di carattere di feed aggiuntivo nell&#39;URL di tracciamento porter�
    %>&cid=<%= message.delivery.internalName %>&bid=<%= message.id.toString().toLowerCase() %><% } %>
    ```
 
-Per capire dove si trova il feed di linea aggiuntivo, è possibile sostituire l&#39;espressione JavaScript con una stringa fissa STRING.
+Per capire dove si trova l’avanzamento di riga aggiuntivo, puoi sostituire l’espressione JavaScript con una stringa fissa STRING.
 
 ```
 // Incorrect
@@ -195,7 +195,7 @@ STRING1&cid=STRING2&bid=STRING3
    %>
    ```
 
-Per capire dove si trova il feed di linea aggiuntivo, è possibile sostituire l&#39;espressione JavaScript con una stringa fissa STRING.
+Per capire dove si trova l’avanzamento di riga aggiuntivo, puoi sostituire l’espressione JavaScript con una stringa fissa STRING.
 
 ```
 // Incorrect
@@ -205,24 +205,24 @@ STRING1&cid=STRING2&bid=STRING3&SHPID=STRING4
 STRING1&cid=STRING2&bid=STRING3&SHPID=STRING4
 ```
 
-## Il recupero dei log di tracciamento è troppo lento {#slow-retrieval}
+## Il recupero dei registri di tracciamento è troppo lento {#slow-retrieval}
 
-Quando l’istanza non recupera direttamente i registri di tracciamento ma da un server Adobe Campaign Classic remoto, i registri vengono recuperati tramite la chiamata SOAP GetTrackingLogs definita nello schema remoteTracking.
+Quando l’istanza non recupera i registri di tracciamento direttamente ma da un server Adobe Campaign Classic lontano, i registri vengono recuperati tramite la chiamata SOAP GetTrackingLogs definita nello schema remoteTracking.
 
-Un&#39;opzione nel file serverConf.xml consente di impostare il numero di log recuperati contemporaneamente tramite questo metodo: logCountPerRequest.
+Un&#39;opzione nel file serverConf.xml consente di impostare il numero di registri recuperati contemporaneamente tramite questo metodo: logCountPerRequest.
 
-Il valore predefinito di logCountPerRequest è 1000, in alcuni casi potrebbe essere troppo piccolo. I valori accettati devono essere compresi tra 0 e 10.000.
+Il valore predefinito di logCountPerRequest è 1000 e in alcuni casi potrebbe essere troppo piccolo. I valori accettati devono essere compresi tra 0 e 10.000.
 
-## Impossibile collegare i registri ai destinatari {#link-recipients}
+## Impossibile collegare i registri di tracciamento ai destinatari {#link-recipients}
 
-In Adobe Campaign Classic, una mappatura di destinazione dovrebbe essere univoca in termini di schema del destinatario rispetto a schemi di registro/registro di trasmissione.
+In Adobe Campaign Classic, una mappatura di destinazione dovrebbe essere univoca in termini di schema del destinatario rispetto agli schemi broadlog/trackinglog.
 
 ![](assets/tracking-troubleshooting.png)
 
-Non è possibile utilizzare più schemi di targeting con lo stesso schema di registro di tracciamento, in quanto il flusso di lavoro di tracciamento non sarà in grado di riconciliare i dati con l’ID di targeting.
+Non è possibile utilizzare più schemi di targeting con lo stesso schema di registro di tracciamento, poiché il flusso di lavoro di tracciamento non sarà in grado di riconciliare i dati con l’ID di targeting.
 
 Se non desideri utilizzare la mappatura di destinazione predefinita con nms:recipient, ti consigliamo i seguenti approcci:
 
-* Se desideri utilizzare la dimensione di targeting personalizzata, devi creare uno schema wideLog/trackingLog personalizzato utilizzando nms:broadlog come modello (ad esempio nms:wideLogRcp, nms:wideLogSvc, ecc.).
+* Se desideri utilizzare una dimensione di targeting personalizzata, devi creare uno schema broadLog/trackingLog personalizzato utilizzando nms:broadlog come modello (ad esempio nms:broadLogRcp, nms:broadLogSvc, ecc.).
 
-* Se desideri utilizzare OOB trackingLogRcp/wideLogRcp, la dimensione di targeting deve essere nms:recipient e la dimensione di filtro può essere uno schema personalizzato.
+* Se desideri utilizzare OOB trackingLogRcp/broadLogRcp, la dimensione di targeting deve essere nms:recipient e la dimensione di filtro può essere uno schema personalizzato.

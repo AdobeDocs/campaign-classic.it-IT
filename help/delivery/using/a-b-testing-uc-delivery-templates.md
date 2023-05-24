@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Creare modelli di consegna
-description: Scopri come eseguire test A/B tramite un caso d’uso dedicato
+description: Scopri come eseguire il test A/B tramite un caso d’uso dedicato
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
@@ -17,10 +17,10 @@ ht-degree: 20%
 
 
 
-Ora vogliamo creare due modelli di consegna. A ogni modello verrà fatto riferimento in un **[!UICONTROL Email delivery]** attività collegata al **[!UICONTROL Split]** attività. Per ulteriori informazioni al riguardo, consulta [questa sezione](about-templates.md).
+Ora vogliamo creare due modelli di consegna. A ciascun modello verrà fatto riferimento in un **[!UICONTROL Email delivery]** attività collegata al **[!UICONTROL Split]** attività. Per ulteriori informazioni al riguardo, consulta [questa sezione](about-templates.md).
 
-1. Sfoglia il **[!UICONTROL Resources > Delivery template]** cartella.
-1. Duplica la **[!UICONTROL Email]** modello di consegna.
+1. Accedi a **[!UICONTROL Resources > Delivery template]** cartella.
+1. Duplica il **[!UICONTROL Email]** modello di consegna.
 
    ![](assets/use_case_abtesting_deliverymodel_001.png)
 

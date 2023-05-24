@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Elementi e attributi dello schema - elemento dei metodi
-description: elemento del metodo
+title: 'Elementi e attributi dello schema: elemento methods'
+description: elemento method
 exl-id: f45e32ce-6534-4df2-ac7c-ba1134f0ffc8
 source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
@@ -22,7 +22,7 @@ metodi:==metodo
 
 Nessuna
 
-## Genitori {#parents-11}
+## Padri {#parents-11}
 
 `<srcschema>`
 
@@ -32,7 +32,7 @@ metodo
 
 ## Descrizione {#description-11}
 
-Questo elemento consente di definire un `<method>`  elemento. È obbligatorio dichiarare un metodo.
+Questo elemento ti consente di definire un `<method>`  elemento. È obbligatorio per dichiarare un metodo.
 
 ## Descrizione attributo {#attribute-description-11}
 

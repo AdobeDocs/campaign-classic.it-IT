@@ -16,21 +16,21 @@ ht-degree: 3%
 
 
 
-In questo esempio, vogliamo inviare un’e-mail con campi di dati personalizzati ai destinatari che questo mese festeggiano i loro compleanni. L&#39;e-mail includerà un coupon valido una settimana prima e dopo i loro compleanni.
+In questo esempio, vogliamo inviare un’e-mail con campi dati personalizzati ai destinatari che festeggeranno il loro compleanno questo mese. L’e-mail includerà un coupon valido una settimana prima e dopo il loro compleanno.
 
-Dobbiamo indirizzare i destinatari da una lista che festeggerà i loro compleanni questo mese con un **[!UICONTROL Split]** attività. Quindi, utilizzando **[!UICONTROL Enrichment]** attività , il campo dati personalizzato fungerà da data di validità nell’e-mail per l’offerta speciale del cliente.
+È necessario eseguire il targeting dei destinatari di un elenco che festeggeranno il loro compleanno questo mese con un **[!UICONTROL Split]** attività. Quindi, utilizzando **[!UICONTROL Enrichment]** attività, il campo dati personalizzato fungerà da date di validità nell’e-mail per l’offerta speciale del cliente.
 
 ![](assets/uc_enrichment.png)
 
-Per creare questo esempio, esegui i seguenti passaggi:
+Per creare questo esempio, attieniti alla seguente procedura:
 
-1. In **[!UICONTROL Targeting and workflows]** scheda della campagna, trascina e rilascia una **[!UICONTROL Read list]** attività per eseguire il targeting dell’elenco di destinatari.
-1. L’elenco da elaborare può essere specificato esplicitamente, calcolato da uno script o localizzato dinamicamente, in base alle opzioni selezionate e ai parametri qui definiti.
+1. In **[!UICONTROL Targeting and workflows]** della campagna, trascina e rilascia una **[!UICONTROL Read list]** attività per eseguire il targeting dell’elenco di destinatari.
+1. L’elenco da elaborare può essere specificato in modo esplicito, calcolato da uno script o localizzato in modo dinamico, in base alle opzioni selezionate e ai parametri definiti qui.
 
    ![](assets/uc_enrichment_1.png)
 
-1. Aggiungi un **[!UICONTROL Split]** attività per differenziare i destinatari che questo mese festeggeranno i loro compleanni da altri destinatari.
-1. Per dividere l&#39;elenco, nella **[!UICONTROL Filtering of selected records]** categoria, seleziona **[!UICONTROL Add a filtering condition on the inbound population]**. Quindi, fai clic su **[!UICONTROL Edit]**.
+1. Aggiungi un **[!UICONTROL Split]** attività per distinguere i destinatari che festeggeranno il loro compleanno questo mese da altri destinatari.
+1. Per suddividere l’elenco, in **[!UICONTROL Filtering of selected records]** categoria, seleziona **[!UICONTROL Add a filtering condition on the inbound population]**. Quindi, fai clic su **[!UICONTROL Edit]**.
 
    ![](assets/uc_enrichment_2.png)
 
@@ -38,77 +38,77 @@ Per creare questo esempio, esegui i seguenti passaggi:
 
    ![](assets/uc_enrichment_3.png)
 
-1. Fai clic su **[!UICONTROL Advanced Selection]** then **[!UICONTROL Edit the formula using an expression]** e aggiungi la seguente espressione: Month(@datadinascita).
-1. In **[!UICONTROL Operator]** seleziona la colonna **[!UICONTROL equal to]**.
-1. Per filtrare ulteriormente la condizione, aggiungi la **[!UICONTROL Value]** mese della data corrente: Month(GetDate()).
+1. Clic **[!UICONTROL Advanced Selection]** allora **[!UICONTROL Edit the formula using an expression]** e aggiungi la seguente espressione: Month(@birthDate).
+1. In **[!UICONTROL Operator]** , seleziona la **[!UICONTROL equal to]**.
+1. Filtrare ulteriormente la condizione aggiungendo il **[!UICONTROL Value]** mese della data corrente: Month(GetDate()).
 
-   Verranno eseguiti query sui destinatari il cui mese di compleanno corrisponde al mese corrente.
+   Questa operazione eseguirà una query sui destinatari il cui mese di compleanno corrisponde al mese corrente.
 
    ![](assets/uc_enrichment_4.png)
 
-1. Fai clic su **[!UICONTROL Finish]**. Quindi, nella **[!UICONTROL General]** scheda **[!UICONTROL Split]** fai clic su **[!UICONTROL Generate complement]** in **[!UICONTROL Results]** categoria.
+1. Fai clic su **[!UICONTROL Finish]**. Quindi, nella **[!UICONTROL General]** scheda del **[!UICONTROL Split]** attività, fai clic su **[!UICONTROL Generate complement]** nel **[!UICONTROL Results]** categoria.
 
-   Con la **[!UICONTROL Complement]** di conseguenza, puoi aggiungere un’attività di consegna o aggiornare un elenco. Qui abbiamo appena aggiunto un **[!UICONTROL End]** attività.
+   Con il **[!UICONTROL Complement]** di conseguenza, puoi aggiungere un’attività di consegna o aggiornare un elenco. In questo caso, abbiamo appena aggiunto un’ **[!UICONTROL End]** attività.
 
    ![](assets/uc_enrichment_6.png)
 
-È ora necessario configurare il **[!UICONTROL Enrichment]** attività:
+Ora devi configurare il **[!UICONTROL Enrichment]** attività:
 
-1. Aggiungi un **[!UICONTROL Enrichment]** dopo il sottoinsieme per aggiungere campi data personalizzati.
+1. Aggiungi un **[!UICONTROL Enrichment]** per aggiungere campi data personalizzati, attività dopo il sottoinsieme.
 
    ![](assets/uc_enrichment_7.png)
 
-1. Apri il tuo **[!UICONTROL Enrichment]** attività. In **[!UICONTROL Complementary information]** categoria, fai clic su **[!UICONTROL Add data]**.
+1. Apri il **[!UICONTROL Enrichment]** attività. In **[!UICONTROL Complementary information]** categoria, fai clic su **[!UICONTROL Add data]**.
 
    ![](assets/uc_enrichment_8.png)
 
-1. Seleziona **[!UICONTROL Data linked to the filtering dimension]** then **[!UICONTROL Data of the filtering dimension]**.
+1. Seleziona **[!UICONTROL Data linked to the filtering dimension]** allora **[!UICONTROL Data of the filtering dimension]**.
 1. Fai clic sul pulsante **[!UICONTROL Add]**.
 
    ![](assets/uc_enrichment_9.png)
 
-1. Aggiungi un **[!UICONTROL Label]**. Quindi, nella **[!UICONTROL Expression]** colonna, fai clic su **[!UICONTROL Edit expression]**.
+1. Aggiungi un **[!UICONTROL Label]**. Quindi, nella **[!UICONTROL Expression]** , fare clic su **[!UICONTROL Edit expression]**.
 
    ![](assets/uc_enrichment_10.png)
 
-1. Per prima cosa, dobbiamo eseguire il targeting della settimana prima della data di nascita come **Data di inizio validità** con i seguenti **[!UICONTROL Expression]**: `SubDays([target/@birthDate], 7)`.
+1. Innanzitutto, dobbiamo impostare come target la settimana precedente la data di nascita **Data di inizio validità** con le seguenti **[!UICONTROL Expression]**: `SubDays([target/@birthDate], 7)`.
 
    ![](assets/uc_enrichment_11.png)
 
-1. Quindi, per creare il campo data personalizzato **Data di fine validità** che eseguirà il targeting della settimana dopo la data di nascita, è necessario aggiungere il **[!UICONTROL Expression]**: `AddDays([target/@birthDate], 7)`.
+1. Quindi, per creare il campo data personalizzato **Data di fine validità** , che eseguirà il targeting della settimana successiva alla data di nascita, è necessario aggiungere **[!UICONTROL Expression]**: `AddDays([target/@birthDate], 7)`.
 
-   Puoi aggiungere un’etichetta all’espressione.
+   È possibile aggiungere un&#39;etichetta all&#39;espressione.
 
    ![](assets/uc_enrichment_12.png)
 
-1. Fai clic su **[!UICONTROL Ok]**. L&#39;arricchimento è ora pronto.
+1. Fai clic su **[!UICONTROL Ok]**. Il tuo arricchimento è ora pronto.
 
-Dopo il **[!UICONTROL Enrichment]** puoi aggiungere una consegna. In questo caso, abbiamo aggiunto una consegna e-mail per inviare ai destinatari un’offerta speciale con date di validità ai clienti che festeggiano il compleanno questo mese.
+Dopo il **[!UICONTROL Enrichment]** attività, puoi aggiungere una consegna. In questo caso, abbiamo aggiunto una consegna e-mail per inviare ai destinatari un’offerta speciale con date di validità ai clienti che festeggiano il loro compleanno questo mese.
 
-1. Trascina e rilascia una **[!UICONTROL Email delivery]** dopo la **[!UICONTROL Enrichment]** attività.
+1. Trascina e rilascia una **[!UICONTROL Email delivery]** attività dopo **[!UICONTROL Enrichment]** attività.
 
    ![](assets/uc_enrichment_15.png)
 
-1. Fai doppio clic sul **[!UICONTROL Email delivery]** per iniziare a personalizzare la consegna.
+1. Fai doppio clic sul tuo **[!UICONTROL Email delivery]** attività per iniziare a personalizzare la consegna.
 1. Aggiungi un **[!UICONTROL Label]** alla consegna e fai clic su **[!UICONTROL Continue]**.
-1. Fai clic su **[!UICONTROL Save]** per creare la consegna e-mail.
-1. Archivia i **[!UICONTROL Approval]** scheda della consegna e-mail **[!UICONTROL Properties]** che **[!UICONTROL Confirm delivery before sending option]** è controllata.
+1. Clic **[!UICONTROL Save]** per creare la consegna e-mail.
+1. Archivia **[!UICONTROL Approval]** scheda della consegna e-mail **[!UICONTROL Properties]** che il **[!UICONTROL Confirm delivery before sending option]** è selezionato.
 
-   Quindi, avvia il flusso di lavoro per arricchire la transizione in uscita con le informazioni mirate.
+   Quindi, avvia il flusso di lavoro per arricchire la transizione in uscita con le informazioni di destinazione.
 
    ![](assets/uc_enrichment_18.png)
 
-Ora puoi iniziare a progettare la consegna e-mail con i campi data personalizzati creati nella **[!UICONTROL Enrichment]** attività.
+Ora puoi iniziare a progettare la consegna e-mail con i campi data personalizzati creati nel **[!UICONTROL Enrichment]** attività.
 
-1. Fai doppio clic sul **[!UICONTROL Email delivery]** attività.
-1. Aggiungi le estensioni di destinazione all’e-mail. Deve trovarsi all’interno della seguente espressione per configurare il formato delle date di validità:
+1. Fai doppio clic sul tuo **[!UICONTROL Email delivery]** attività.
+1. Aggiungi le estensioni target all’e-mail. Per configurare il formato delle date di validità, deve trovarsi all’interno della seguente espressione:
 
    ```
    <%=
            formatDate(targetData.alias of your expression,"%2D.%2M")  %>
    ```
 
-1. Fai clic su ![](assets/uc_enrichment_16.png) . Seleziona **[!UICONTROL Target extension]** quindi le date di validità personalizzate create in precedenza con **[!UICONTROL Enrichment]** per aggiungere l&#39;estensione all&#39;espressione formatDate.
+1. Fai clic su ![](assets/uc_enrichment_16.png) . Seleziona **[!UICONTROL Target extension]** quindi le date di validità personalizzate create in precedenza con **[!UICONTROL Enrichment]** per aggiungere la tua estensione all’espressione formatDate.
 
    ![](assets/uc_enrichment_19.png)
 

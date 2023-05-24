@@ -19,11 +19,11 @@ ht-degree: 2%
 
 Di seguito sono riportati alcuni principi generali relativi all’utilizzo dei moduli di input in Adobe Campaign.
 
-Forms è descritto in [questa sezione](../../configuration/using/identifying-a-form.md).
+Forms sono descritti in [questa sezione](../../configuration/using/identifying-a-form.md).
 
 ## Struttura di un modulo {#form-structure}
 
-Il documento XML di un modulo di input deve contenere **`<form>`** elemento principale con **name** e **namespace** attributi per compilare rispettivamente il nome del modulo e il relativo namespace.
+Il documento XML di un modulo di input deve contenere **`<form>`** elemento principale con **nome** e **namespace** attributi per compilare rispettivamente il nome del modulo e il relativo spazio dei nomi.
 
 ```xml
 <form name="form_name" namespace="name_space">
@@ -31,13 +31,13 @@ Il documento XML di un modulo di input deve contenere **`<form>`** elemento prin
 </form>
 ```
 
-Per impostazione predefinita, un modulo è associato allo schema dati con lo stesso nome e lo stesso spazio dei nomi. Per associare un modulo a un nome diverso, immettere la chiave di schema nel **entity-schema** dell&#39;attributo **`<form>`** elemento.
+Per impostazione predefinita, un modulo è associato allo schema dati con lo stesso nome e lo stesso spazio dei nomi. Per associare un modulo a un nome diverso, immettere la chiave dello schema nel **entity-schema** attributo del **`<form>`** elemento.
 
-Per illustrare la struttura di un modulo di input, descriviamo un’interfaccia basata sul nostro schema di esempio &quot;cus:book&quot;:
+Per illustrare la struttura di un modulo di input, descriviamo un’interfaccia basata sullo schema di esempio &quot;cus:book&quot;:
 
 ![](assets/d_ncs_content_form1.png)
 
-Modulo di input corrispondente:
+Questo è il modulo di input corrispondente:
 
 ```xml
 <form name="book" namespace="cus" type="contentForm">
@@ -49,43 +49,43 @@ Modulo di input corrispondente:
 
 La descrizione degli elementi di modifica inizia con **`<form>`** elemento principale.
 
-Un controllo di modifica viene immesso in un **`<input>`** con **xpath** attributo contenente il percorso del campo nel relativo schema.
+Un controllo di modifica viene immesso in un **`<input>`** elemento con **xpath** attributo contenente il percorso del campo nel relativo schema.
 
-**Promemoria relativa alla sintassi XPath:**
+**Promemoria relativo alla sintassi XPath:**
 
-Il linguaggio XPath viene utilizzato in Adobe Campaign per fare riferimento a un elemento o un attributo appartenente a uno schema di dati.
+Il linguaggio XPath viene utilizzato in Adobe Campaign per fare riferimento a un elemento o attributo appartenente a uno schema di dati.
 
 XPath è una sintassi che consente di individuare un nodo nella struttura di un documento XML.
 
-Gli elementi sono designati in base al loro nome e gli attributi sono designati in base al nome preceduto dal carattere &quot;@&quot;.
+Gli elementi sono designati dal loro nome e gli attributi sono designati dal nome preceduto dal carattere &quot;@&quot;.
 
 Esempi:
 
-* **@date**: seleziona l&#39;attributo con il nome &quot;date&quot;
-* **capitolo/@title**: seleziona l&#39;attributo &quot;title&quot; sotto il `<chapter>` elemento
-* **../@date**: seleziona la data dall’elemento padre dell’elemento corrente
+* **@date**: seleziona l’attributo denominato &quot;date&quot;
+* **capitolo/@title**: seleziona l’attributo &quot;title&quot; sotto il `<chapter>` elemento
+* **.../@date**: seleziona la data dall’elemento padre dell’elemento corrente
 
-Il controllo edit si adatta automaticamente al tipo di dati corrispondente e utilizza l’etichetta definita nello schema.
+Il controllo di modifica si adatta automaticamente al tipo di dati corrispondente e utilizza l&#39;etichetta definita nello schema.
 
 Per impostazione predefinita, ogni campo viene visualizzato su una riga e occupa tutto lo spazio disponibile, a seconda del tipo di dati.
 
 >[!CAUTION]
 >
->Il modulo di input deve fare riferimento a un **type=&quot;contentForm&quot;** dell&#39;attributo **`<form>`** per aggiungere automaticamente il frame necessario per l&#39;input del contenuto.
+>Il modulo di input deve fare riferimento a **type=&quot;contentForm&quot;** attributo su **`<form>`** per aggiungere automaticamente il frame richiesto per l&#39;immissione del contenuto.
 
 ## Formattazione {#formatting}
 
-La disposizione dei controlli relativi l&#39;uno all&#39;altro assomiglia alla disposizione utilizzata nelle tabelle HTML, con la possibilità di dividere un controllo in più colonne, di elementi interlacciati o di specificare l&#39;occupazione dello spazio disponibile. Tuttavia, la formattazione autorizza soltanto la distribuzione delle proporzioni; non è possibile specificare dimensioni fisse per un oggetto.
+La disposizione dei controlli l&#39;uno rispetto all&#39;altro è simile alla disposizione utilizzata nelle tabelle HTML, con la possibilità di dividere un controllo in più colonne, di elementi interlacciati o di specificare l&#39;occupazione dello spazio disponibile. Tenete presente, tuttavia, che la formattazione autorizza solo la distribuzione delle proporzioni; non potete specificare dimensioni fisse per un oggetto.
 
 Per ulteriori informazioni al riguardo, consulta [questa sezione](../../configuration/using/form-structure.md#formatting).
 
 ## Controlli del tipo di elenco {#list-type-controls}
 
-Per modificare un elemento di raccolta, è necessario utilizzare un controllo tipo elenco.
+Per modificare un elemento della raccolta, è necessario utilizzare un controllo di tipo elenco.
 
-### Elenco a colonne {#column-list}
+### Elenco colonne {#column-list}
 
-Questo controllo visualizza un elenco di colonne modificabili con una barra degli strumenti contenente i pulsanti Aggiungi ed Elimina .
+Questo controllo visualizza un elenco di colonne modificabile con una barra degli strumenti contenente i pulsanti Aggiungi ed Elimina.
 
 ![](assets/d_ncs_content_form4.png)
 
@@ -96,13 +96,13 @@ Questo controllo visualizza un elenco di colonne modificabili con una barra degl
 </input>
 ```
 
-Il controllo elenco deve essere compilato con **type=&quot;list&quot;** e il percorso dell&#39;elenco deve fare riferimento all&#39;elemento di raccolta.
+Il controllo elenco deve essere compilato con **type=&quot;list&quot;** e il percorso dell&#39;elenco deve fare riferimento all&#39;elemento collection.
 
-Le colonne sono dichiarate dal figlio **`<input>`** elementi dell&#39;elenco.
+Le colonne sono dichiarate dall&#39;elemento figlio **`<input>`** elementi dell&#39;elenco.
 
 >[!NOTE]
 >
->Le frecce di ordinamento Su e Giù vengono aggiunte automaticamente quando la **ordered=&quot;true&quot;** attributo completato per l&#39;elemento di raccolta nello schema dati.
+>Le frecce di ordinamento verso l&#39;alto e verso il basso vengono aggiunte automaticamente quando **ordered=&quot;true&quot;** l&#39;attributo viene completato per l&#39;elemento di raccolta nello schema dati.
 
 Per impostazione predefinita, i pulsanti della barra degli strumenti sono allineati verticalmente. Possono anche essere allineati orizzontalmente:
 
@@ -115,21 +115,21 @@ Per impostazione predefinita, i pulsanti della barra degli strumenti sono alline
 </input>
 ```
 
-La **toolbarCaption** forza l’allineamento orizzontale della barra degli strumenti e riempie il titolo sopra l’elenco.
+Il **toolbarCaption** l&#39;attributo forza l&#39;allineamento orizzontale della barra degli strumenti e compila il titolo sopra l&#39;elenco.
 
 >[!NOTE]
 >
->Per evitare che l’etichetta dell’elemento di raccolta venga visualizzata a sinistra del controllo, aggiungi la **nolabel=&quot;true&quot;** attributo.
+>Per non visualizzare l&#39;etichetta dell&#39;elemento di raccolta a sinistra del controllo, aggiungere **nolabel=&quot;true&quot;** attributo.
 
-#### Zoom in un elenco {#zoom-in-a-list}
+#### Ingrandire un elenco {#zoom-in-a-list}
 
-L’inserimento e la modifica dei dati dell’elenco possono essere eseguiti in un modulo di modifica separato.
+L&#39;inserimento e la modifica dei dati dell&#39;elenco possono essere eseguiti in un modulo di modifica separato.
 
-Le modifiche ai moduli negli elenchi vengono utilizzate nei casi seguenti:
+I moduli di modifica all’interno di elenchi vengono utilizzati nei casi seguenti:
 
-* Per facilitare l&#39;immissione di informazioni,
-* Presenza di un controllo a più linee,
-* Le colonne dell’elenco contengono solo i campi principali e nel modulo vengono visualizzati tutti i campi dell’elemento di raccolta.
+* Per semplificare l&#39;immissione delle informazioni,
+* presenza di un controllo su più righe,
+* Le colonne dell&#39;elenco contengono solo i campi principali e nel modulo vengono visualizzati tutti i campi dell&#39;elemento di raccolta.
 
 ![](assets/d_ncs_content_form7.png)
 
@@ -146,17 +146,17 @@ Le modifiche ai moduli negli elenchi vengono utilizzate nei casi seguenti:
 </input>
 ```
 
-La definizione del modulo di modifica viene specificata tramite la **`<form>`** sotto l’elemento elenco. La sua struttura è identica alla struttura di un modulo di input.
+La definizione del modulo di modifica viene specificata tramite **`<form>`** sotto l&#39;elemento elenco. La sua struttura è identica a quella di un modulo di input.
 
-A **[!UICONTROL Detail]** viene aggiunto automaticamente quando **zoom=&quot;true&quot;** attributo è inserito nella definizione dell&#39;elenco. Consente di aprire il modulo di modifica sulla riga selezionata.
+A **[!UICONTROL Detail]** viene aggiunto automaticamente quando **zoom=&quot;true&quot;** nella definizione dell&#39;elenco. In questo modo è possibile aprire il modulo di modifica sulla riga selezionata.
 
 >[!NOTE]
 >
->Aggiunta di **zoomOnAdd=&quot;true&quot;** forza la chiamata di modifica del modulo all’inserimento di un elemento dell’elenco.
+>Aggiunta di **zoomOnAdd=&quot;true&quot;** attribute forza la chiamata del form di modifica all&#39;inserimento di un elemento dell&#39;elenco.
 
-### Elenco a schede {#tab-list}
+### Elenco schede {#tab-list}
 
-Questo elenco presenta la modifica degli elementi della raccolta sotto forma di schede.
+Questo elenco presenta la modifica degli elementi di raccolta sotto forma di schede.
 
 ![](assets/d_ncs_content_form6.png)
 
@@ -170,32 +170,32 @@ Questo elenco presenta la modifica degli elementi della raccolta sotto forma di 
 </container>
 ```
 
-Il controllo elenco deve essere compilato con **type=&quot;lista dei preferiti&quot;** e il percorso dell&#39;elenco deve fare riferimento all&#39;elemento di raccolta.
+Il controllo elenco deve essere compilato con **type=&quot;notebooklist&quot;** e il percorso dell&#39;elenco deve fare riferimento all&#39;elemento collection.
 
-Il titolo della scheda contiene il valore dei dati immessi tramite il **xpath-label** attributo.
+Il titolo della scheda contiene il valore dei dati immessi tramite **xpath-label** attributo.
 
-I controlli di modifica devono essere dichiarati sotto un **`<container>`** elemento secondario del controllo elenco.
+I controlli di modifica devono essere dichiarati in un **`<container>`** elemento figlio del controllo elenco.
 
-Utilizzare i pulsanti della barra degli strumenti per aggiungere o eliminare elementi dell’elenco.
+Utilizzare i pulsanti della barra degli strumenti per aggiungere o eliminare elementi dell&#39;elenco.
 
 >[!NOTE]
 >
->Le frecce di ordinamento a sinistra e a destra vengono aggiunte automaticamente quando la **ordered=&quot;true&quot;** viene popolato per l&#39;elemento di raccolta nello schema dati.
+>Le frecce di ordinamento a sinistra e a destra vengono aggiunte automaticamente quando **ordered=&quot;true&quot;** L&#39;attributo viene popolato per l&#39;elemento di raccolta nello schema dati.
 
 ## Contenitori {#containers}
 
-I contenitori consentono di raggruppare un set di controlli. Esistono tramite **`<container>`** elemento. Sono già stati utilizzati per formattare i controlli in più colonne e per il controllo dell’elenco delle schede.
+I contenitori consentono di raggruppare un insieme di controlli. Esistono tramite **`<container>`** elemento. Sono già stati utilizzati per formattare i controlli in diverse colonne e per il controllo dell&#39;elenco di schede.
 
 Per ulteriori informazioni sui contenitori e su come utilizzarli nei moduli di input, consulta [questa sezione](../../configuration/using/form-structure.md#containers).
 
 ## Modifica dei moduli {#editing-forms}
 
-La zona di modifica consente di immettere il contenuto XML del modulo di input:
+L&#39;area di modifica consente di immettere il contenuto XML del modulo di input:
 
 ![](assets/d_ncs_content_form12.png)
 
-La **[!UICONTROL Preview]** consente di visualizzare il modulo di input:
+Il **[!UICONTROL Preview]** Questa scheda consente di visualizzare il modulo di input:
 
 ![](assets/d_ncs_content_form13.png)
 
-Ulteriori informazioni [modifica dei moduli](../../configuration/using/editing-forms.md) e [struttura del modulo](../../configuration/using/form-structure.md).
+Ulteriori informazioni su [modifica di moduli](../../configuration/using/editing-forms.md) e [struttura del modulo](../../configuration/using/form-structure.md).

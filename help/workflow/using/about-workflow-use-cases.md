@@ -16,9 +16,9 @@ ht-degree: 67%
 
 
 
-In questa sezione troverai vari casi d’uso che sfruttano le funzionalità dei flussi di lavoro di Campaign.
+In questa sezione troverai diversi casi d’uso che sfruttano le funzionalità dei flussi di lavoro di Campaign.
 
-Ti aiuterà a scoprire i diversi contesti in cui i flussi di lavoro possono essere utilizzati e a rispondere alle tue esigenze.
+Consentono di scoprire i diversi contesti in cui è possibile utilizzare i flussi di lavoro e di rispondere alle esigenze specifiche.
 
 ## Consegne {#deliveries}
 
@@ -49,8 +49,8 @@ Ti aiuterà a scoprire i diversi contesti in cui i flussi di lavoro possono esse
 * [Creazione di un elenco di riepilogo](creating-a-summary-list.md)
 * [Arricchimento dei dati](enriching-data.md)
 * [Utilizzo di aggregati](using-aggregates.md)
-* [Importazione di dati crittografati utilizzando una chiave generata dal Pannello di controllo Campaign](../../platform/using/unzip-decrypt.md)
-* [Crittografia ed esportazione di dati utilizzando una chiave installata sul Pannello di controllo Campaign](how-to-use-workflow-data.md#use-case-gpg-encrypt)
+* [Importazione di dati crittografati tramite una chiave generata dal Pannello di controllo Campaign](../../platform/using/unzip-decrypt.md)
+* [Crittografia ed esportazione di dati mediante una chiave installata nel Pannello di controllo Campaign](how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [Aggiornamento dell’elenco trimestrale tramite una query incrementale](quarterly-list-update.md)
 * [Utilizzo della funzionalità di unione dell’attività Deduplicazione](deduplication-merge.md)
 * [Impostazione di un flusso di lavoro di importazione ricorrente](recurring-import-workflow.md)

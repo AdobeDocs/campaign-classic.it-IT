@@ -16,10 +16,10 @@ ht-degree: 12%
 
 
 
-Il flusso di lavoro descritto di seguito è pianificato per l’esecuzione ogni ora. È installato con **Centro messaggi - Controllo** modulo per impostazione predefinita.
+Il flusso di lavoro descritto di seguito viene pianificato per l’esecuzione ogni ora. Viene installato con **Centro messaggi - Controllo** per impostazione predefinita.
 
 
-Per ulteriori informazioni, a seconda della versione di Campaign, consulta queste sezioni:
+Per ulteriori informazioni, a seconda della versione di Campaign in uso, consulta le sezioni seguenti:
 
 ![](assets/do-not-localize/v7.jpeg)[  Documentazione di Campaign v7](../../message-center/using/about-transactional-messaging.md)
 
@@ -39,9 +39,9 @@ Per ulteriori informazioni, a seconda della versione di Campaign, consulta quest
    <td> Questo flusso di lavoro:<br /> 
     <ul> 
      <li> <p>recupera l’elenco degli eventi elaborati dalle operazioni.</p> </li> 
-     <li> <p>si sincronizza con la tabella NmsBroadLogMsg per recuperare i requisiti dei messaggi di consegna.</p> </li> 
+     <li> <p>si sincronizza con la tabella NmsBroadLogMsg per recuperare le qualifiche dei messaggi di consegna.</p> </li> 
      <li> <p>recupera i registri di consegna degli eventi non appena la sincronizzazione con la tabella NmsBroadLogMsg è stata completata.</p> </li> 
-     <li> <p>si sincronizza con la tabella NmsTrackingUrl al fine di recuperare il tracciamento per gli URL di consegna.</p> </li> 
+     <li> <p>si sincronizza con la tabella NmsTrackingUrl per recuperare il tracciamento per gli URL di consegna.</p> </li> 
      <li> <p>recupera gli URL di tracciamento degli eventi non appena la sincronizzazione con la tabella NmsTrackingUrl è stata completata.</p> </li> 
      <li> <p>consente di recuperare tutti gli indirizzi e-mail messi in quarantena ogni tre ore dopo l’invio di una consegna.</p> </li> 
     </ul> </td> 

@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Elementi e attributi dello schema - elemento param
+title: 'Elementi e attributi dello schema: elemento param'
 description: elemento param
 exl-id: d8960a2e-6900-4346-9f06-e7dd9d7b5139
 source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
@@ -16,7 +16,7 @@ ht-degree: 7%
 
 ## Modello di contenuto {#content-model-12}
 
-param:==help
+parametro:==guida
 
 ## Attributi {#attributes-12}
 
@@ -30,7 +30,7 @@ param:==help
 * @namespace (MNTOKEN)
 * @type (stringa)
 
-## Genitori {#parents-12}
+## Padri {#parents-12}
 
 `<parameters>`
 
@@ -40,22 +40,22 @@ param:==help
 
 ## Descrizione {#description-12}
 
-Questo elemento ti consente di definire un parametro per la chiamata a un metodo SOAP.
+Questo elemento consente di definire un parametro per la chiamata di un metodo SOAP.
 
 ## Descrizione attributo {#attribute-description-12}
 
 * **desc (stringa)**: descrizione che riguarda `<param>` elemento.
 * **inout (stringa)**: questo attributo definisce se il parametro si trova o meno all’input (in) o all’output (out) della chiamata SOAP. Se questo attributo non è specificato, il parametro predefinito è input (&quot;@inout=in&quot;).
-* **label (stringa)**: `<param>` etichetta
-* **localizable (stringa)**: se è attivato, questo attributo indica allo strumento di raccolta di recuperare il valore dell&#39;attributo &quot;@label&quot; per la traduzione (uso interno).
-* **nome (MNTOKEN)**: nome interno `<param>`
-* **type (string)**: questo attributo definisce il tipo di `<param>` elemento
+* **etichetta (stringa)**: `<param>` etichetta
+* **localizzabile (stringa)**: se è attivato, questo attributo indica allo strumento di raccolta di recuperare il valore dell’attributo &quot;@label&quot; per la traduzione (uso interno).
+* **nome (MNTOKEN)**: nome interno del `<param>`
+* **tipo (stringa)**: questo attributo definisce il tipo `<param>` elemento
 
    Elenco dei tipi disponibili:
 
    * QUALSIASI
-   * bidone
-   * macchia
+   * raccoglitore
+   * blob
    * booleano
    * byte
    * CDATA
@@ -65,9 +65,9 @@ Questo elemento ti consente di definire un parametro per la chiamata a un metodo
    * date
    * DOMDocument
    * DOMElement
-   * double
+   * doppio
    * enum
-   * float
+   * galleggiare
    * html
    * int64
    * link
@@ -75,16 +75,16 @@ Questo elemento ti consente di definire un parametro per la chiamata a un metodo
    * promemoria
    * MNTOKEN
    * percent
-   * primarykey
-   * short
+   * chiave primaria
+   * corto
    * stringa
    * orario
-   * timespan
+   * intervallo di tempo
    * uuid
 
 ## Esempi {#examples-9}
 
-Definizione dell&#39;impostazione in entrata &quot;serviceName&quot; del tipo di stringa di caratteri:
+Definizione dell’impostazione in entrata &quot;serviceName&quot; del tipo di stringa di caratteri:
 
 ```
 <param desc="Name of the information service(s) (separated with commas)"

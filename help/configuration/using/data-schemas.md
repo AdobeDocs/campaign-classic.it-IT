@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Schemi di dati
-description: Guida introduttiva agli schemi di dati di Campaign
+description: Introduzione agli schemi dati di Campaign
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Schema Extension
 exl-id: d4446035-3988-4d89-b7df-7b8528c2e371
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ## Principi {#principles}
 
-Per modificare, creare e configurare gli schemi, fai clic sul pulsante **[!UICONTROL Administration > Configuration > Data schemas]** nodo della console client di Adobe Campaign.
+Per modificare, creare e configurare gli schemi, fai clic sul pulsante **[!UICONTROL Administration > Configuration > Data schemas]** della console client di Adobe Campaign.
 
 >[!NOTE]
 >
@@ -30,30 +30,30 @@ Il campo di modifica mostra il contenuto XML dello schema di origine:
 
 >[!NOTE]
 >
->Il controllo di modifica &quot;Nome&quot; consente di inserire la chiave dello schema composta dal nome e dallo spazio dei nomi. Gli attributi &quot;name&quot; e &quot;namespace&quot; dell’elemento principale dello schema vengono aggiornati automaticamente nella zona di modifica XML dello schema.
+>Il controllo di modifica &quot;Nome&quot; consente di immettere la chiave dello schema composta dal nome e dallo spazio dei nomi. Gli attributi &quot;name&quot; e &quot;namespace&quot; dell&#39;elemento principale dello schema vengono aggiornati automaticamente nell&#39;area di modifica XML dello schema.
 
-L&#39;anteprima genera automaticamente lo schema esteso:
+L’anteprima genera automaticamente lo schema esteso:
 
 ![](assets/d_ncs_integration_schema_edition2.png)
 
 >[!NOTE]
 >
->Quando lo schema di origine viene salvato, la generazione dello schema esteso viene avviata automaticamente.
+>Quando lo schema di origine viene salvato, viene avviata automaticamente la generazione dello schema esteso.
 
-Se è necessario controllare la struttura completa di uno schema, è possibile utilizzare la scheda anteprima. Se lo schema è stato esteso, potrai visualizzarne tutte le estensioni. Come complemento, la scheda Documentazione visualizza tutti gli attributi e gli elementi dello schema e le relative proprietà (Campo SQL, tipo/lunghezza, etichetta, descrizione). La scheda Documentazione si applica solo agli schemi generati. Per ulteriori informazioni, consulta la sezione [Rigenerazione degli schemi](../../configuration/using/regenerating-schemas.md) sezione .
+Se devi controllare la struttura completa di uno schema, puoi utilizzare la scheda anteprima. Se lo schema è stato esteso, potrai visualizzarne tutte le estensioni. In aggiunta, nella scheda Documentazione vengono visualizzati tutti gli attributi e gli elementi dello schema e le relative proprietà (Campo SQL, tipo/lunghezza, etichetta, descrizione). La scheda Documentazione si applica solo agli schemi generati. Per ulteriori informazioni, consulta [Rigenerazione degli schemi](../../configuration/using/regenerating-schemas.md) sezione.
 
 ## Esempio: creazione di una tabella dei contratti {#example--creating-a-contract-table}
 
-Nell’esempio seguente, si desidera creare una nuova tabella per **contratti** nel modello di database del database Adobe Campaign. Questa tabella ti consente di memorizzare i nomi e i cognomi e gli indirizzi e-mail dei titolari e dei co-titolari per ogni contratto.
+Nell’esempio seguente, vogliamo creare una nuova tabella per **contratti** nel modello di database del database Adobe Campaign. Questa tabella consente di memorizzare i nomi e i cognomi e gli indirizzi e-mail dei titolari e dei co-titolari per ogni contratto.
 
-A questo scopo, è necessario creare lo schema della tabella e aggiornare la struttura del database per generare la tabella corrispondente. Applicare le seguenti fasi:
+A questo scopo, devi creare lo schema della tabella e aggiornare la struttura del database per generare la tabella corrispondente. Applica le seguenti fasi:
 
-1. Modifica le **[!UICONTROL Administration > Configuration > Data schemas]** nodo della struttura di Adobe Campaign e fai clic su **[!UICONTROL New]** .
+1. Modifica il **[!UICONTROL Administration > Configuration > Data schemas]** nodo della struttura Adobe Campaign e fai clic su **[!UICONTROL New]** .
 1. Scegli la **[!UICONTROL Create a new table in the data model]** e fai clic su **[!UICONTROL Next]** .
 
    ![](assets/s_ncs_configuration_create_new_schema.png)
 
-1. Specifica un nome per la tabella e uno spazio dei nomi.
+1. Specificare un nome per la tabella e uno spazio dei nomi.
 
    ![](assets/s_ncs_configuration_create_new_param.png)
 
@@ -61,11 +61,11 @@ A questo scopo, è necessario creare lo schema della tabella e aggiornare la str
    >
    >Per impostazione predefinita, gli schemi creati dagli utenti vengono memorizzati nello spazio dei nomi &quot;cus&quot;. Per ulteriori informazioni, consulta [Identificazione di uno schema](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 
-1. Crea il contenuto della tabella. È consigliabile utilizzare la procedura guidata per verificare che non siano presenti impostazioni. A questo scopo, fai clic sul pulsante **[!UICONTROL Insert]** e scegliere il tipo di impostazione da aggiungere.
+1. Crea il contenuto della tabella. È consigliabile utilizzare la procedura guidata di immissione per verificare che non manchino impostazioni. A questo scopo, fai clic su **[!UICONTROL Insert]** e scegliere il tipo di impostazione da aggiungere.
 
    ![](assets/s_ncs_configuration_create_new_content.png)
 
-1. Definire le impostazioni per la tabella del contratto:
+1. Definire le impostazioni per la tabella dei contratti:
 
    ```
    <srcSchema desc="Active contracts" img="ncm:channels.png" label="Contracts" labelSingular="Contract" mappingType="sql" name="Contracts" namespace="cus" xtkschema="xtk:srcSchema">
@@ -83,7 +83,7 @@ A questo scopo, è necessario creare lo schema della tabella e aggiornare la str
    </srcSchema>
    ```
 
-   Aggiungere il tipo di contratto e inserire un indice sul numero del contratto.
+   Aggiungere il tipo di contratto e inserire un indice nel numero di contratto.
 
    ```
    <srcSchema _cs="Contracts (cus)" desc="Active contracts" entitySchema="xtk:srcSchema" img="ncm:channels.png"
@@ -117,4 +117,4 @@ A questo scopo, è necessario creare lo schema della tabella e aggiornare la str
 
    ![](assets/s_ncs_configuration_structure.png)
 
-1. Aggiornare la struttura del database per creare la tabella a cui verrà collegato lo schema. Per ulteriori informazioni, consulta [Aggiornamento della struttura del database](../../configuration/using/updating-the-database-structure.md).
+1. Aggiorna la struttura del database per creare la tabella a cui verrà collegato lo schema. Per ulteriori informazioni, consulta [Aggiornamento della struttura del database](../../configuration/using/updating-the-database-structure.md).

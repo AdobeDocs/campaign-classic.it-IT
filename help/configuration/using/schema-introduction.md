@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Riferimento schema
-description: Elenco di riferimento dello schema
+description: Elenco di riferimenti dello schema
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 5745fc60-9df3-4ad0-bbeb-f6ae8c86a5aa
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
@@ -13,11 +13,11 @@ ht-degree: 21%
 
 # Riferimento schema {#schema-reference}
 
-Durante la modifica di uno schema, è disponibile un sistema di approvazione basato sullo schema di origine (xtk:srcSchema). È inoltre possibile individuare alcuni errori durante l&#39;aggiornamento del database utilizzando l&#39;&quot;aggiornamento della struttura del database...&quot; procedura guidata.
+Quando si modifica uno schema, è disponibile un sistema di approvazione basato sullo schema di origine (xtk:srcSchema). È inoltre possibile individuare alcuni errori durante l&#39;aggiornamento del database mediante la procedura guidata &quot;Aggiornamento della struttura del database...&quot;.
 
 Per impostazione predefinita, negli schemi di Adobe Campaign, tutti gli attributi del tipo booleano sono &quot;false&quot;. Per attivarli, devi specificare l’attributo nello schema e impostarne il valore su &quot;true&quot;.
 
-Elenco di riferimento:
+Elenco riferimenti:
 
 * [Attributo](schema/attribute.md)
 * [Elemento “compute-string”](schema/compute-string.md)

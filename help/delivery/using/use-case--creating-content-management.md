@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: "Caso di utilizzo: crea gestione dei contenuti"
-description: "Caso di utilizzo: crea gestione dei contenuti"
+title: "Caso d’uso: creare gestione dei contenuti"
+description: "Caso d’uso: creare gestione dei contenuti"
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Delivery Templates
@@ -13,22 +13,22 @@ ht-degree: 2%
 
 ---
 
-# Caso di utilizzo: creazione di gestione dei contenuti{#use-case-creating-content-management}
+# Caso d’uso: creare gestione dei contenuti{#use-case-creating-content-management}
 
 
 
 Per creare la gestione dei contenuti in Adobe Campaign, sono necessari i seguenti passaggi:
 
 * [Passaggio 1: analizzare il contenuto da produrre](#step-1---analyzing-the-content-to-be-produced),
-* [Passaggio 2: creare lo schema dei dati](#step-2---creating-the-data-schema),
+* [Passaggio 2: creare lo schema dati](#step-2---creating-the-data-schema),
 * [Passaggio 3: creare il modulo di input](#step-3---creating-the-input-form),
-* [Passaggio 4: creare il modello di costruzione](#step-4---creating-the-construction-template),
+* [Passaggio 4: creare la maschera di costruzione](#step-4---creating-the-construction-template),
 * [Passaggio 5: creare il modello di pubblicazione](#step-5---creating-the-publication-template),
-* [Passaggio 6: creare contenuti](#step-6---creating-contents).
+* [Passaggio 6: creare il contenuto](#step-6---creating-contents).
 
 ## Passaggio 1: analizzare il contenuto da produrre {#step-1---analyzing-the-content-to-be-produced}
 
-Prima di iniziare, è necessario eseguire un&#39;analisi precisa del contenuto da produrre: identificare gli elementi da visualizzare, studiare i vincoli ad essi collegati, definire un tipo per ciascun elemento, ecc. È inoltre necessario differenziare gli elementi statici e quelli variabili.
+Prima di iniziare, è necessario eseguire un’analisi precisa del contenuto da produrre: identificare gli elementi da visualizzare, studiare i vincoli ad essi collegati, definire un tipo per ciascun elemento, ecc. È inoltre necessario distinguere gli elementi statici da quelli variabili.
 
 Ad esempio, per creare una newsletter in HTML con il seguente tipo di contenuto:
 
@@ -40,35 +40,35 @@ Questa newsletter contiene tre tipi di elementi:
 
    ![](assets/s_ncs_content_define_element_types.png)
 
-1. Campi di personalizzazione immessi in modo dinamico in base alle informazioni salvate nel database (in questo caso il nome e il cognome del destinatario).
+1. Campi di personalizzazione immessi in modo dinamico in base alle informazioni salvate nel database (in questo caso, il nome e il cognome del destinatario).
 
    ![](assets/s_ncs_content_define_dynamics.png)
 
-1. Elementi statici, uguali per tutte le newsletter.
+1. Elementi statici, che sono gli stessi per tutte le newsletter.
 
    ![](assets/s_ncs_content_define_statics.png)
 
-I vari elementi di questa newsletter vengono assemblati in base alle regole definite in un modello JavaScript che fa riferimento a tutti gli elementi da inserire e ne concettualizza il layout.
+I vari elementi di questa newsletter sono messi insieme in base alle regole definite in un modello JavaScript che fa riferimento a tutti gli elementi da inserire e ne concettualizza il layout.
 
-Questi elementi vengono creati tramite uno schema dedicato che specifica i seguenti elementi per ogni contenuto: nome, etichetta, tipo, dimensione e qualsiasi altra informazione pertinente alla sua elaborazione in Adobe Campaign.
+Questi elementi vengono creati tramite uno schema dedicato che specifica i seguenti elementi per ciascun contenuto: nome, etichetta, tipo, dimensione e qualsiasi altra informazione rilevante per la sua elaborazione in Adobe Campaign.
 
-## Passaggio 2: creare lo schema dei dati {#step-2---creating-the-data-schema}
+## Passaggio 2: creare lo schema dati {#step-2---creating-the-data-schema}
 
-Uno schema dati è un documento XML associato al contenuto. Descrive la struttura XML dei dati presenti in questo contenuto.
+Uno schema di dati è un documento XML associato al contenuto. Descrive la struttura XML dei dati in questo contenuto.
 
 >[!NOTE]
 >
 >Per ulteriori informazioni sulla creazione e la configurazione di schemi di dati in Adobe Campaign, consulta [questa sezione](../../configuration/using/about-schema-edition.md).
 >
->Gli elementi di configurazione specifici per la gestione dei contenuti sono descritti in [Schemi di dati](data-schemas.md).
+>Gli elementi di configurazione specifici per la gestione dei contenuti sono descritti in dettaglio in [Schemi di dati](data-schemas.md).
 
-Per creare uno schema di dati, esegui i seguenti passaggi:
+Per creare uno schema di dati, effettua le seguenti operazioni:
 
 1. Apri Adobe Campaign Explorer e seleziona la **[!UICONTROL Administration > Configuration > Data schemas]** nodo.
 
-   Fai clic sul pulsante **[!UICONTROL New]** icona situata sopra l’elenco degli schemi di dati.
+   Fai clic su **[!UICONTROL New]** si trova sopra l’elenco degli schemi di dati.
 
-1. Seleziona la **[!UICONTROL Create a schema]** opzione per la gestione dei contenuti, quindi fai clic su **[!UICONTROL Next]**.
+1. Seleziona la **[!UICONTROL Create a schema]** per la gestione dei contenuti, quindi fai clic su **[!UICONTROL Next]**.
 
    ![](assets/s_ncs_content_create_schema.png)
 
@@ -76,11 +76,11 @@ Per creare uno schema di dati, esegui i seguenti passaggi:
 
    ![](assets/s_ncs_content_param_schema.png)
 
-   Fai clic su **[!UICONTROL Next]** da convalidare.
+   Clic **[!UICONTROL Next]** da convalidare.
 
-1. Immetti il contenuto dello schema nel **[!UICONTROL Edit schema]** finestra.
+1. Immetti il contenuto dello schema in **[!UICONTROL Edit schema]** finestra.
 
-   Utilizza la **[!UICONTROL Insert]** per creare il contenuto dello schema.
+   Utilizza il **[!UICONTROL Insert]** per creare il contenuto dello schema.
 
    ![](assets/s_ncs_content_param_schema_step2.png)
 
@@ -88,7 +88,7 @@ Per creare uno schema di dati, esegui i seguenti passaggi:
 
    Per ogni elemento a cui si fa riferimento nel contenuto, devi selezionare un tipo corrispondente.
 
-   In questo esempio il contenuto identificato, il formato e il tipo sono:
+   In questo esempio i contenuti identificati, il loro formato e il loro tipo sono:
 
 <table> 
  <thead> 
@@ -137,7 +137,7 @@ Per creare uno schema di dati, esegui i seguenti passaggi:
    <td> Autore<br /> </td> 
   </tr> 
   <tr> 
-   <td> Logo dell’intestazione (archiviato nelle risorse pubbliche di Adobe Campaign)<br /> </td> 
+   <td> Logo intestazione (memorizzato nelle risorse pubbliche di Adobe Campaign)<br /> </td> 
    <td> Attributo<br /> </td> 
    <td> Collegamento<br /> </td> 
    <td> Immagine<br /> </td> 
@@ -160,7 +160,7 @@ Lo schema conterrà le seguenti informazioni:
   </element>
 ```
 
-1. Fai clic su **[!UICONTROL Save]** per creare lo schema dati.
+1. Clic **[!UICONTROL Save]** per creare lo schema dati.
 
 ## Passaggio 3: creare il modulo di input {#step-3---creating-the-input-form}
 
@@ -172,25 +172,25 @@ La descrizione di un modulo è un documento XML strutturato che osserva la gramm
 >
 >Per ulteriori informazioni sulla creazione e la configurazione di moduli in Adobe Campaign, consulta [questa sezione](../../configuration/using/identifying-a-form.md).
 >
->Gli elementi di configurazione specifici per la gestione dei contenuti sono descritti in [Moduli di input](input-forms.md).
+>Gli elementi di configurazione specifici per la gestione dei contenuti sono descritti in dettaglio in [Moduli di input](input-forms.md).
 
-Per creare un modulo di input per la gestione del contenuto, esegui i seguenti passaggi:
+Per creare un modulo di input per la gestione dei contenuti, attieniti alla seguente procedura:
 
 1. Apri Adobe Campaign Explorer e seleziona la **[!UICONTROL Administration > Configuration > Input forms]** nodo.
 
-   Fai clic sul pulsante **[!UICONTROL New]** sopra l’elenco dei moduli.
+   Fai clic su **[!UICONTROL New]** sopra l’elenco dei moduli.
 
-1. Immettere il nome del modulo e l’etichetta collegata al modulo, quindi selezionare il **[!UICONTROL Content management]** digitare.
+1. Inserisci il nome del modulo e l’etichetta collegata al modulo, quindi seleziona la **[!UICONTROL Content management]** tipo.
 
    ![](assets/s_ncs_content_param_form_edit.png)
 
    >[!NOTE]
    >
-   >Per abilitare la corrispondenza automatica di entrambi gli elementi, è consigliabile utilizzare lo stesso nome dello schema dati collegato. Utilizza la **[!UICONTROL Insert]** al di sopra della zona di input per aggiungere campi dallo schema collegato al modulo.
+   >Per consentire a entrambi gli elementi di corrispondere automaticamente, si consiglia di utilizzare lo stesso nome dello schema di dati collegato. Utilizza il **[!UICONTROL Insert]** sopra l’area di input per aggiungere campi dallo schema collegato al modulo.
 
    ![](assets/s_ncs_content_param_form_edit_step2.png)
 
-1. Nella sezione centrale dell’editor, specifica i campi da visualizzare nel modulo di input.
+1. Nella sezione centrale dell&#39;editor specificare i campi che si desidera visualizzare nel modulo di input.
 
    In questo esempio, avremo il seguente tipo di informazioni:
 
@@ -208,32 +208,32 @@ Per creare un modulo di input per la gestione del contenuto, esegui i seguenti p
      </input>
    ```
 
-   La **[!UICONTROL Preview]** consente di controllare il rendering del modulo durante la modifica:
+   Il **[!UICONTROL Preview]** Questa scheda consente di controllare il rendering del modulo durante la modifica:
 
    ![](assets/s_ncs_content_param_form_preview.png)
 
-1. Fai clic su **[!UICONTROL Save]** per creare il modulo di input.
+1. Clic **[!UICONTROL Save]** per creare il modulo di input.
 
-## Passaggio 4: creare il modello di costruzione {#step-4---creating-the-construction-template}
+## Passaggio 4: creare la maschera di costruzione {#step-4---creating-the-construction-template}
 
-Il linguaggio XSLT consente di trasformare un documento XML in un altro documento di output. Questa trasformazione viene descritta in XML in un documento denominato foglio di stile.
+Il linguaggio XSLT consente di trasformare un documento XML in un altro documento di output. Questa trasformazione è descritta in XML in un documento denominato foglio di stile.
 
-In questo esempio, si desidera utilizzare un modello JavaScript per definire la costruzione dei dati e la modalità di layout nel documento generato.
+In questo esempio, si desidera utilizzare un modello JavaScript per definire la modalità di costruzione e layout dei dati nel documento generato.
 
 >[!NOTE]
 >
 >I vincoli collegati alla creazione di documenti (modello JavaScript o XSL) sono descritti in [Formattazione](formatting.md).
 
-Per utilizzare un modello JavaScript in Adobe Campaign, esegui i seguenti passaggi:
+Per utilizzare un modello JavaScript in Adobe Campaign, effettua le seguenti operazioni:
 
 1. Apri Adobe Campaign Explorer e seleziona la **[!UICONTROL Administration > Configuration > JavaScript Templates]** nodo.
 
-   Fai clic sul pulsante **[!UICONTROL New]** , sopra l’elenco dei modelli.
+   Fai clic su **[!UICONTROL New]** sopra l’elenco dei modelli.
 
-1. Immetti un nome di modello e seleziona lo schema creato per la gestione del contenuto.
+1. Immetti un nome per il modello e seleziona lo schema creato per la gestione dei contenuti.
 1. Importa il contenuto del set che desideri visualizzare nel messaggio.
 
-   Aggiungi gli elementi variabili rispettando la sintassi dettagliata in [Modelli JavaScript](formatting.md#javascript-templates).
+   Aggiungi gli elementi variabili rispettando la sintassi descritta in [Modelli JavaScript](formatting.md#javascript-templates).
 
    Per visualizzare il contenuto mostrato nel nostro esempio, il modello JavaScript deve contenere i seguenti elementi:
 
@@ -326,7 +326,7 @@ Per utilizzare un modello JavaScript in Adobe Campaign, esegui i seguenti passag
    </html>
    ```
 
-   La chiamata di una funzione all’inizio di un modello consente di impostare una chiamata ai dati di personalizzazione provenienti dal database di Adobe Campaign (in questo caso: recipient.firstName e recipient.lastName), in modo che possa essere interpretato quando viene utilizzato in una consegna. Per ulteriori informazioni, consulta [Includere un modello JavaScript](formatting.md#including-a-javascript-template).
+   La chiamata di una funzione all’inizio di un modello consente di impostare una chiamata ai dati di personalizzazione estratti dal database di Adobe Campaign (in questo caso: recipient.firstName e recipient.lastName), in modo che possano essere interpretati quando vengono utilizzati in una consegna. Per ulteriori informazioni, consulta [Includi un modello JavaScript](formatting.md#including-a-javascript-template).
 
    In questo esempio, la funzione conterrà il seguente codice:
 
@@ -345,7 +345,7 @@ Per utilizzare un modello JavaScript in Adobe Campaign, esegui i seguenti passag
    }
    ```
 
-   Affinché il modello JavaScript sia valido, questa funzione deve essere creata in precedenza dal **[!UICONTROL JavaScript codes]** nella struttura ad albero, come segue:
+   Affinché il modello JavaScript sia valido, questa funzione deve essere creata in anticipo dal **[!UICONTROL JavaScript codes]** nella struttura ad albero, come indicato di seguito:
 
    ![](assets/contentmgt_jscode_perso_sample.png)
 
@@ -359,23 +359,23 @@ Il passaggio successivo prevede la creazione di un modello di pubblicazione del 
 
 In questo esempio, i passaggi sono i seguenti:
 
-1. Crea un nuovo modello di pubblicazione tramite **[!UICONTROL Administration > Configuration > Publication templates]** nodo.
-1. Immettere un nome e un&#39;etichetta, quindi selezionare lo schema e il modulo da utilizzare.
-1. Quindi immetti il nome del modello e scegli la modalità di rendering da applicare. Qui abbiamo un **[!UICONTROL JavaScript]** effettua il rendering in base al modello creato in precedenza.
+1. Creare un nuovo modello di pubblicazione tramite **[!UICONTROL Administration > Configuration > Publication templates]** nodo.
+1. Inserisci un nome e un’etichetta, quindi seleziona lo schema e il modulo da utilizzare.
+1. Quindi immettete il nome del modello e scegliete la modalità di rendering da applicare. Ecco, abbiamo un **[!UICONTROL JavaScript]** digita il rendering in base al modello creato in precedenza.
 
    ![](assets/s_ncs_content_param_form_publish.png)
 
    >[!NOTE]
    >
-   >La **[!UICONTROL DOM interface]** Questa opzione è selezionata per impostazione predefinita e questo significa che il documento non sarà accessibile se si utilizza la sintassi E4X. L’interfaccia DOM deve essere utilizzata quando questa opzione è selezionata ed è la sintassi consigliata.
+   >Il **[!UICONTROL DOM interface]** L&#39;opzione è selezionata per impostazione predefinita, pertanto il documento non sarà accessibile se si utilizza la sintassi E4X. Quando questa opzione è selezionata ed è la sintassi consigliata, deve essere utilizzata l’interfaccia DOM.
    >
-   >È comunque possibile utilizzare la sintassi E4X. In tal caso, deselezionare questa opzione.
+   >È comunque possibile utilizzare la sintassi E4X. In tal caso, deseleziona questa opzione.
 
-   Utilizza la **[!UICONTROL Add]** per creare altri modelli di trasformazione.
+   Utilizza il **[!UICONTROL Add]** per creare altri modelli di trasformazione.
 
-1. Fai clic su **[!UICONTROL Save]** per creare il modello di pubblicazione.
+1. Clic **[!UICONTROL Save]** per creare il modello di pubblicazione.
 
-## Passaggio 6: creare contenuti {#step-6---creating-contents}
+## Passaggio 6: creare il contenuto {#step-6---creating-contents}
 
 È ora possibile creare contenuti basati su questo modello di pubblicazione.
 
@@ -383,20 +383,20 @@ In questo esempio, i passaggi sono i seguenti:
 >
 >Per ulteriori informazioni sulla creazione dei contenuti, consulta [Utilizzare un modello di contenuto](using-a-content-template.md).
 
-### Creare contenuto nella procedura guidata di consegna {#creating-content-in-the-delivery-wizard}
+### Creare contenuti nella consegna guidata {#creating-content-in-the-delivery-wizard}
 
-Per creare contenuti direttamente nelle consegne, esegui i seguenti passaggi:
+Per creare il contenuto direttamente nelle consegne, effettua le seguenti operazioni:
 
-1. Inizia facendo riferimento al modello di pubblicazione tramite il **[!UICONTROL Advanced]** scheda delle proprietà di consegna.
+1. Per iniziare, fai riferimento al modello di pubblicazione tramite **[!UICONTROL Advanced]** delle proprietà di consegna.
 
    ![](assets/s_ncs_content_in_delivery.png)
 
-   Alla procedura guidata di consegna viene aggiunta una scheda aggiuntiva per definire il contenuto tramite il modulo di gestione del contenuto.
+   Alla procedura guidata di consegna viene aggiunta una scheda aggiuntiva per definire il contenuto tramite il modulo di gestione dei contenuti.
 
-1. Inserisci le informazioni variabili della newsletter.
+1. Inserisci le informazioni sulla variabile della newsletter.
 
    ![](assets/s_ncs_content_in_delivery_edition_tab.png)
 
-1. Fai clic sul pulsante **[!UICONTROL HTML preview]** per visualizzare il rendering. Devi selezionare un destinatario per testare la personalizzazione.
+1. Fai clic su **[!UICONTROL HTML preview]** per visualizzare il rendering. Devi selezionare un destinatario per testare la personalizzazione.
 
    ![](assets/s_ncs_content_use_in_delivery_preview.png)

@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Supervisione dei flussi di lavoro
-description: Scopri come supervisionare i flussi di lavoro di Campaign
+description: Scopri come monitorare i flussi di lavoro di Campaign
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
@@ -12,35 +12,35 @@ ht-degree: 0%
 
 ---
 
-# Caso di utilizzo: supervisionare i flussi di lavoro{#supervising-workflows}
+# Caso di utilizzo: supervisione dei flussi di lavoro{#supervising-workflows}
 
 
 
-Questo caso d’uso descrive la creazione di un flusso di lavoro che consente di monitorare lo stato di un set di flussi di lavoro che vengono &quot;messi in pausa&quot;, &quot;interrotti&quot; o &quot;con errori&quot;.
+Questo caso d’uso descrive la creazione di un flusso di lavoro che consente di monitorare lo stato di un set di flussi di lavoro &quot;in pausa&quot;, &quot;interrotti&quot; o &quot;con errori&quot;.
 
-Il suo scopo è:
+Il suo obiettivo è:
 
 * Utilizza un flusso di lavoro per monitorare un gruppo di flussi di lavoro aziendali.
-* Invia un messaggio a un supervisore tramite un&#39;attività di &quot;consegna&quot;.
+* Invia un messaggio a un supervisore tramite un’attività di &quot;consegna&quot;.
 
 Per monitorare lo stato di un set di flussi di lavoro, è necessario seguire questi passaggi:
 
 1. Crea il flusso di lavoro di monitoraggio.
-1. Scrivi il JavaScript per determinare se i flussi di lavoro vengono messi in pausa, interrotti o con errori.
-1. Crea il **[!UICONTROL Test]** attività.
+1. Scrivere il codice JavaScript per determinare se i flussi di lavoro vengono sospesi, interrotti o con errori.
+1. Creare **[!UICONTROL Test]** attività.
 1. Prepara il modello di consegna.
 
 >[!NOTE]
 >
->Oltre al flusso di lavoro, Campaign **Workflow Heatmap** consente di analizzare in dettaglio i flussi di lavoro attualmente in esecuzione. Per ulteriori informazioni, consulta la sezione [sezione dedicata](heatmap.md).
+>Oltre al flusso di lavoro, Campaign **Workflow Heatmap** consente di analizzare in dettaglio i flussi di lavoro attualmente in esecuzione. Per ulteriori informazioni, consulta [sezione dedicata](heatmap.md).
 >
 >Per ulteriori informazioni su come **monitorare l’esecuzione dei flussi di lavoro**, fare riferimento a [questa sezione](monitoring-workflow-execution.md).
 
-## Passaggio 1: Creazione del flusso di lavoro di monitoraggio {#step-1--creating-the-monitoring-workflow}
+## Passaggio 1: creazione del flusso di lavoro di monitoraggio {#step-1--creating-the-monitoring-workflow}
 
-La cartella del flusso di lavoro che verrà monitorata è la **&quot;CustomWorkflows&quot;** cartella memorizzata in **Amministrazione > Produzione > Flussi di lavoro tecnici** nodo. Questa cartella contiene un set di flussi di lavoro aziendali.
+La cartella del flusso di lavoro che verrà monitorata è **&quot;CustomWorkflows&quot;** cartella memorizzata in **Amministrazione > Produzione > Flussi di lavoro tecnici** nodo. Questa cartella contiene un set di flussi di lavoro aziendali.
 
-La **Monitoraggio del flusso di lavoro** viene memorizzato nella directory principale della cartella Flussi di lavoro tecnici. L’etichetta utilizzata è **&quot;Monitoraggio&quot;**.
+Il **Monitoraggio del flusso di lavoro** viene memorizzato nella directory principale della cartella Flussi di lavoro tecnici. L’etichetta utilizzata è **&quot;Monitoraggio&quot;**.
 
 Lo schema seguente mostra la sequenza di attività:
 
@@ -50,15 +50,15 @@ Questo flusso di lavoro è costituito da:
 
 * a **&quot;Start&quot;** attività.
 * a **&quot;Codice JavaScript&quot;** attività responsabile dell’analisi della cartella dei flussi di lavoro aziendali.
-* a **&quot;Test&quot;** attività per inviare una consegna al supervisore o riavviare il flusso di lavoro.
-* a **&quot;Consegna&quot;** attività responsabile del layout dei messaggi.
+* a **&quot;Test&quot;** per inviare una consegna al supervisore o riavviare il flusso di lavoro.
+* a **&quot;Delivery&quot;** attività responsabile del layout dei messaggi.
 * a **&quot;Wait&quot;** attività che controlla i lead time tra le iterazioni del flusso di lavoro.
 
-## Passaggio 2: Scrittura di JavaScript {#step-2--writing-the-javascript}
+## Passaggio 2: scrittura di JavaScript {#step-2--writing-the-javascript}
 
-La prima parte del codice JavaScript coincide con un **query (queryDef)** che consente di identificare i flussi di lavoro con uno stato di &quot;pausa&quot; (@state == 13), &quot;error&quot; (@failed == 1) o &quot;stop&quot; (@state == 20).
+La prima parte del codice JavaScript coincide con un **query (queryDef)** che consente di identificare i flussi di lavoro con lo stato &quot;pausa&quot; (@state == 13), &quot;errore&quot; (@failed == 1) o &quot;interrotto&quot; (@state == 20).
 
-La **nome interno** della cartella del flusso di lavoro da monitorare è indicata nella seguente condizione:
+Il **nome interno** della cartella del flusso di lavoro da monitorare viene fornita nella seguente condizione:
 
 ```
 <condition boolOperator="AND" expr="[folder/@name] = 'Folder20'" internalId="1"/>
@@ -90,7 +90,7 @@ var queryWkfError = xtk.queryDef.create(
 var ndWkfError = queryWkfError.ExecuteQuery(); 
 ```
 
-La seconda parte del codice JavaScript consente di: **visualizzare un messaggio per ogni flusso di lavoro** in base allo stato recuperato durante la query.
+La seconda parte del codice JavaScript consente di: **visualizza un messaggio per ogni flusso di lavoro** in base allo stato recuperato durante la query.
 
 >[!NOTE]
 >
@@ -116,54 +116,54 @@ vars.strWorkflowPaused = strPaused;
 vars.strWorkflowStop = strStop;
 ```
 
-## Passaggio 3: Creazione dell’attività &quot;Test&quot; {#step-3--creating-the--test--activity}
+## Passaggio 3: creazione dell’attività &quot;Test&quot; {#step-3--creating-the--test--activity}
 
-L’attività &quot;Test&quot; ti consente di determinare se una consegna deve essere inviata o se il flusso di lavoro di monitoraggio deve eseguire un altro ciclo in base all’attività &quot;Wait&quot; (Attendi) .
+L’attività &quot;Test&quot; consente di determinare se una consegna deve essere inviata o se il flusso di lavoro di monitoraggio deve eseguire un altro ciclo in base all’attività &quot;Wait&quot; (Attendi).
 
-Viene inviata una consegna al supervisore **se almeno una delle tre variabili di evento &quot;vars.strWorkflowError&quot;, &quot;vars.strWorkflowPaused&quot; o &quot;vars.strWorkflowStop&quot; non è nulla.**
+Una consegna viene inviata al supervisore **se almeno una delle tre variabili di evento &quot;vars.strWorkflowError&quot;, &quot;vars.strWorkflowPaused&quot; o &quot;vars.strWorkflowStop&quot; non è nulla.**
 
 ![](assets/uc_monitoring_workflow_test.png)
 
-L’attività &quot;Wait&quot; può essere configurata per riavviare il flusso di lavoro di monitoraggio a intervalli regolari. Per questo caso d&#39;uso, **il tempo di attesa è impostato su un&#39;ora**.
+L’attività &quot;Attendi&quot; può essere configurata per riavviare il flusso di lavoro di monitoraggio a intervalli regolari. Per questo caso d’uso, **il tempo di attesa è impostato su un&#39;ora**.
 
 ![](assets/uc_monitoring_workflow_attente.png)
 
-## Passaggio 4: Preparazione della consegna {#step-4--preparing-the-delivery}
+## Passaggio 4: preparazione della consegna {#step-4--preparing-the-delivery}
 
-L’attività &quot;Delivery&quot; è basata su un **modello di consegna** memorizzati in **Risorse > Modelli > Modelli di consegna** nodo.
+L’attività &quot;Delivery&quot; si basa su una **modello di consegna** memorizzato in **Risorse > Modelli > Modelli di consegna** nodo.
 
 Questo modello deve includere:
 
-* **l&#39;indirizzo e-mail del supervisore**.
-* **Contenuto HTML** per l’inserimento di testo personalizzato.
+* **l’indirizzo e-mail del supervisore**.
+* **Contenuto HTML** per inserire testo personalizzato.
 
    ![](assets/uc_monitoring_workflow_variables_diffusion.png)
 
-   Le tre variabili dichiarate (WF_Stop, WF_Paused, WF_Error) corrispondono alle tre variabili dell’evento del flusso di lavoro.
+   Le tre variabili dichiarate (WF_Stop, WF_Paused, WF_Error) corrispondono alle tre variabili di evento del flusso di lavoro.
 
-   Queste variabili devono essere dichiarate nella variabile **Variabili** scheda delle proprietà del modello di consegna.
+   Queste variabili devono essere dichiarate nella **Variabili** scheda delle proprietà del modello di consegna.
 
-   Per recuperare **il contenuto delle variabili dell’evento del flusso di lavoro**, è necessario dichiarare le variabili specifiche della consegna che verranno inizializzate con i valori restituiti dal codice JavaScript.
+   Da recuperare **il contenuto delle variabili evento del flusso di lavoro**, devi dichiarare le variabili specifiche della consegna che verranno inizializzate con i valori restituiti dal codice JavaScript.
 
    Il modello di consegna ha il seguente contenuto:
 
    ![](assets/uc_monitoring_workflow_model_diffusion.png)
 
-Una volta creato e approvato il modello, devi configurare il **Consegna** attività per:
+Una volta creato e approvato il modello, è necessario configurare **Consegna** attività a:
 
-* collega l’attività &quot;Consegna&quot; al modello di consegna creato in precedenza.
+* collega l’attività &quot;Delivery&quot; al modello di consegna creato in precedenza.
 * collega le variabili evento del flusso di lavoro a quelle specifiche del modello di consegna.
 
-Fai doppio clic sul pulsante **Consegna** e seleziona le seguenti opzioni:
+Fai doppio clic su **Consegna** e selezionare le opzioni seguenti:
 
-* Consegna: select **Nuovo, creato da un modello**, quindi seleziona il modello di consegna creato in precedenza.
-* Per **Destinatari e contenuti** campi, seleziona **Specificato nella consegna**.
-* Azione da eseguire: select **Preparare e iniziare**.
-* Deseleziona **Errori di processo** opzione .
+* Consegna: selezionare **Nuovo, creato da un modello** e seleziona il modello di consegna creato in precedenza.
+* Per **Destinatari e contenuto** campi, seleziona **Specificato nella consegna**.
+* Azione da eseguire: seleziona **Prepara e avvia**.
+* Deseleziona la **Errori di processo** opzione.
 
    ![](assets/uc_monitoring_workflow_optionmodel.png)
 
-* Vai a **Script** della scheda **Consegna** aggiungi tre attività **stringa di caratteri** digita le variabili tramite il menu del campo di personalizzazione.
+* Vai a **Script** scheda di **Consegna** attività, aggiungi tre **stringa di caratteri** digita le variabili tramite il menu del campo di personalizzazione.
 
    ![](assets/uc_monitoring_workflow_selectlinkvariables.png)
 
@@ -177,6 +177,6 @@ Fai doppio clic sul pulsante **Consegna** e seleziona le seguenti opzioni:
    delivery.variables._var[2].stringValue = vars.strWorkflowStop; 
    ```
 
-Una volta avviato il flusso di lavoro di monitoraggio, invia il seguente riepilogo al destinatario:
+Una volta avviato, il flusso di lavoro di monitoraggio invia il riepilogo seguente al destinatario:
 
 ![](assets/uc_monitoring_workflow_mailfinal.png)

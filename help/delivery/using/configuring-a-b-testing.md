@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Configurare il test A/B
-description: Scopri come configurare i test A/B in Campaign
+description: Scopri come configurare il test A/B in Campaign
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
@@ -19,17 +19,17 @@ ht-degree: 3%
 
 Questa sezione descrive come creare un flusso di lavoro per eseguire test A/B.
 
-1. Crea un nuovo flusso di lavoro e configura un [Query](../../workflow/using/query.md) attività per indirizzare la popolazione desiderata.
+1. Crea un nuovo flusso di lavoro, quindi configura un [Query](../../workflow/using/query.md) attività per eseguire il targeting della popolazione desiderata.
 
-1. Aggiungi un [Divisione](../../workflow/using/split.md) attività per dividere la popolazione target in più sottoinsiemi.
+1. Aggiungi un [Dividi](../../workflow/using/split.md) attività per suddividere la popolazione target in più sottoinsiemi.
 
-1. Apri l’attività, quindi configura ogni sottoinsieme in base alle tue esigenze. Per ulteriori informazioni su come configurare un **[!UICONTROL Split]** attività, fai riferimento a [questa sezione](../../workflow/using/split.md).
+1. Apri l’attività, quindi configura ogni sottoinsieme in base alle tue esigenze. Per ulteriori informazioni su come configurare un **[!UICONTROL Split]** attività, fare riferimento a [questa sezione](../../workflow/using/split.md).
 
-   In questo esempio, vogliamo sottoporre a test 2 nuovi soggetti per una newsletter presentandoli ciascuno al 10% della popolazione target.
+   In questo esempio, vogliamo testare 2 nuovi argomenti per una newsletter presentandoli a ciascuno di loro al 10% della popolazione target.
 
    ![](assets/ab-testing-split.png)
 
-1. Aggiungi una transizione per inviare alla popolazione rimanente la newsletter con l’oggetto corrente. Per eseguire questa operazione, attiva il **[!UICONTROL Generate complement]** dall&#39;opzione **[!UICONTROL General]** scheda .
+1. Aggiungi una transizione per inviare alla popolazione rimanente la newsletter con l’oggetto corrente. A questo scopo, attiva il **[!UICONTROL Generate complement]** opzione dalla **[!UICONTROL General]** scheda.
 
    ![](assets/ab-testing-complement.png)
 
@@ -37,6 +37,6 @@ Questa sezione descrive come creare un flusso di lavoro per eseguire test A/B.
 
    ![](assets/ab-testing-delivery.png)
 
-Ora puoi avviare il flusso di lavoro. Una volta inviate le consegne, potrai tenere traccia del comportamento dei tre sottoinsiemi nei registri di consegna, in modo da individuare l’oggetto che ha avuto maggior successo.
+Ora puoi avviare il flusso di lavoro. Una volta inviate le consegne, potrai tenere traccia del comportamento dei tre sottoinsiemi nei registri di consegna, per vedere quale soggetto ha ottenuto il maggior successo.
 
-I flussi di lavoro ti consentono inoltre di automatizzare i processi identificando automaticamente la variante di consegna che ha ottenuto migliori prestazioni e inviandola alla popolazione rimanente. Per ulteriori informazioni, consulta questa sezione dedicata [caso d&#39;uso](a-b-testing-use-case.md).
+I flussi di lavoro consentono inoltre di automatizzare i processi identificando automaticamente la variante di consegna che ha registrato prestazioni migliori e inviandola alla popolazione rimanente. Per ulteriori informazioni, consulta questa pagina dedicata [caso d’uso](a-b-testing-use-case.md).

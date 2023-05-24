@@ -11,28 +11,28 @@ ht-degree: 4%
 
 ---
 
-# Implementazione dei metodi SOAP{#implementing-soap-methods}
+# Implementare metodi SOAP{#implementing-soap-methods}
 
 
 
 ## Introduzione {#introduction}
 
-È possibile creare metodi SOAP in JavaScript. Questa funzione consente semplicemente i processi applicativi, può evitare lo sviluppo di JSP e la loro chiamata nei moduli.
+È possibile creare metodi SOAP in JavaScript. Questa funzione abilita semplicemente i processi applicativi, evitando di sviluppare JSP e le relative chiamate nei moduli.
 
-Questi metodi SOAP si comportano come quelli definiti in modo nativo nell’applicazione. Sono supportati gli stessi attributi: statica, solo chiave e const.
+Questi metodi SOAP si comportano nello stesso modo di quelli definiti in modo nativo nell’applicazione. Sono supportati gli stessi attributi: static, key only e const.
 
 ## Definire una libreria di metodi {#defining-a-method-library}
 
 La creazione di una libreria di metodi prevede due fasi:
 
-* la dichiarazione del metodo SOAP,
+* Dichiarazione del metodo SOAP,
 * Definizione (o implementazione) in JavaScript.
 
 ### Dichiarazione {#declaration}
 
 Inizia dichiarando i metodi negli schemi (per ulteriori informazioni su come creare e modificare gli schemi, consulta [questa sezione](../../configuration/using/about-schema-edition.md)).
 
-La loro dichiarazione è simile a quella dei metodi nativi, tranne per il fatto che è necessario aggiungere l&#39;attributo &quot;library&quot; specificando il nome della libreria dei metodi in cui si trova la definizione.
+La loro dichiarazione è simile a quella dei metodi nativi, con la differenza che è necessario aggiungere l&#39;attributo &quot;library&quot; che specifica il nome della libreria dei metodi in cui si trova la definizione.
 
 Questo nome coincide con il nome (con lo spazio dei nomi) dell’entità di tipo &quot;Codice JavaScript&quot;.
 
@@ -50,7 +50,7 @@ Il metodo testLog(msg) è dichiarato in un&#39;estensione nms:recipient
 
 >[!NOTE]
 >
->Lo spazio dei nomi e il nome utilizzati per la libreria sono indipendenti dallo spazio dei nomi e dal nome dello schema in cui viene trovata la dichiarazione.
+>Lo spazio dei nomi e il nome utilizzati per la libreria sono indipendenti dallo spazio dei nomi e dal nome dello schema in cui si trova la dichiarazione.
 
 ### Definizione {#definition}
 
@@ -58,13 +58,13 @@ I metodi SOAP sono implementati sotto forma di funzione JavaScript raggruppata i
 
 >[!NOTE]
 >
->Una libreria di metodi può raggruppare funzioni per vari schemi o viceversa, le funzioni di uno schema possono essere definite in librerie separate.
+>Una libreria di metodi può raggruppare le funzioni per vari schemi o viceversa, le funzioni di uno schema possono essere definite in librerie separate.
 
-Lo script può contenere codice da eseguire durante il caricamento della libreria iniziale.
+Lo script può contenere il codice da eseguire durante il caricamento iniziale della libreria.
 
 **1. Nome**
 
-Il nome della funzione deve essere conforme al seguente formato:
+Il nome della funzione deve rispettare il seguente formato:
 
 ```
  <schema-namespace>_<schema-name>_<method-name>
@@ -72,7 +72,7 @@ Il nome della funzione deve essere conforme al seguente formato:
 
 Esempio:
 
-La seguente funzione JavaScript è l&#39;implementazione del metodo descritto sopra. Deve essere definito nell’entità di tipo &quot;codice JavaScript&quot; utilizzando il nome &quot;cus:test&quot;.
+La seguente funzione JavaScript è l’implementazione del metodo descritto sopra. È definita nell&#39;entità di tipo &quot;Codice JavaScript&quot; utilizzando il nome &quot;cus:test&quot;.
 
 ```
 function nms_recipient_testLog(message)
@@ -87,12 +87,12 @@ La firma della funzione deve includere un argomento per ogni parametro &#39;in&#
 
 Casi specifici:
 
-* **metodi non statici**: la funzione deve includere prima un argomento aggiuntivo, che coincide con l&#39;entità XML passata sotto forma di un oggetto di tipo &quot;xml&quot; (E4X).
-* **Metodi di tipo &quot;solo chiave&quot;**: la funzione deve prima includere un argomento aggiuntivo, che coincide con la chiave passata sotto forma di stringhe di caratteri.
+* **metodi non statici**: la funzione deve innanzitutto includere un argomento aggiuntivo, che coincida con l’entità XML passata sotto forma di oggetto di tipo &quot;xml&quot; (E4X).
+* **metodi di tipo &quot;solo chiave&quot;**: la funzione deve includere prima un argomento aggiuntivo, che coincide con la chiave passata sotto forma di stringhe di caratteri.
 
 **3. Valori restituiti**
 
-La funzione deve restituire un valore per ogni parametro di tipo &#39;out&#39; o &#39;inout&#39;. Caso specifico: Se il metodo è dichiarato senza gli attributi &quot;static&quot;, &quot;key only&quot; o &quot;const&quot;, il primo valore restituito deve coincidere con l’entità modificata. È possibile restituire un nuovo oggetto o il primo parametro modificato.
+La funzione deve restituire un valore per ogni parametro di tipo &quot;out&quot; o &quot;inout&quot;. Caso specifico: se il metodo viene dichiarato senza gli attributi &quot;static&quot;, &quot;key only&quot; o &quot;const&quot;, il primo valore restituito deve coincidere con l’entità modificata. È possibile restituire un nuovo oggetto o il primo parametro modificato.
 
 Ad esempio:
 

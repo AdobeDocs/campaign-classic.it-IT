@@ -17,13 +17,13 @@ ht-degree: 29%
 
 
 
-Scopri le best practice relative alla progettazione e all’invio delle consegne con Adobe Campaign. Utilizza i collegamenti seguenti per navigare tra gli argomenti e trovare indicazioni.
+Scopri le best practice relative alla progettazione della consegna e all’invio con Adobe Campaign. Utilizza i collegamenti riportati di seguito per consultare gli argomenti e trovare indicazioni.
 
 <table>
 <tr>
   <td>
     <a href="optimize-delivery.md">
-      <img alt="Ottimizzare" src="assets/do-not-localize/optimize.svg" width="60px"/>
+      <img alt="Ottimizza" src="assets/do-not-localize/optimize.svg" width="60px"/>
     </a>
     <div>
       <a href="optimize-delivery.md">
@@ -44,7 +44,7 @@ Scopri le best practice relative alla progettazione e all’invio delle consegne
     </a>
     </div>
     <p>
-    <em>Agevolare e fissare nuove consegne</em>
+    <em>Facilitare e fissare nuove consegne</em>
     <p>
   </td>
   <td>
@@ -57,7 +57,7 @@ Scopri le best practice relative alla progettazione e all’invio delle consegne
     </a>
     </div>
     <p>
-    <em>Applica impostazioni corrette</em>
+    <em>Applicare le impostazioni corrette</em>
     <p>
   </td>
 </tr>
@@ -72,7 +72,7 @@ Scopri le best practice relative alla progettazione e all’invio delle consegne
     </a>
     </div>
     <p>
-    <em>La popolazione mirata è la chiave</em>
+    <em>La popolazione di destinazione è la chiave</em>
     <p>
   </td>
    <td>
@@ -90,7 +90,7 @@ Scopri le best practice relative alla progettazione e all’invio delle consegne
   </td>
   <td>
     <a href="track-and-monitor.md">
-      <img alt="Ottimizzare" src="assets/do-not-localize/troubleshoot.svg" width="60px"/>
+      <img alt="Ottimizza" src="assets/do-not-localize/troubleshoot.svg" width="60px"/>
     </a>
     <div>
       <a href="track-and-monitor.md">
@@ -108,6 +108,6 @@ Vedi anche:
 
 * [Introduzione al recapito messaggi](about-deliverability.md)
 
-* [Passaggi per la creazione di consegne](steps-about-delivery-creation-steps.md)
+* [Passaggi per la creazione della consegna](steps-about-delivery-creation-steps.md)
 
-* [Lista di controllo protezione e privacy](https://helpx.adobe.com/it/campaign/kb/acc-security.html)
+* [Lista di controllo per sicurezza e privacy](https://helpx.adobe.com/it/campaign/kb/acc-security.html)

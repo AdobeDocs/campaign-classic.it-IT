@@ -17,7 +17,7 @@ ht-degree: 9%
 
 
 
-Questo esempio ti aiuterà a comprendere la differenza tra una persona/a e un destinatario in Adobe Campaign. Invieremo una consegna a più persone per evidenziare la differenza tra persone e destinatari, specificando al tempo stesso il metodo di calcolo per i seguenti indicatori:
+Questo esempio ti aiuterà a comprendere la differenza tra una persona/una persona e un destinatario in Adobe Campaign. Invieremo una consegna a diverse persone per evidenziare la differenza tra persone e destinatari e specificare il metodo di calcolo per i seguenti indicatori:
 
 * **[!UICONTROL Clicks]**
 * **[!UICONTROL Distinct clicks for the population reached]**
@@ -27,16 +27,16 @@ Questo esempio ti aiuterà a comprendere la differenza tra una persona/a e un de
 
 >[!NOTE]
 >
->Questi indicatori sono utilizzati nella **[!UICONTROL Tracking indicators]** rapporto. Per ulteriori informazioni, consulta [Indicatori di tracciamento](../../reporting/using/delivery-reports.md#tracking-indicators).
+>Questi indicatori sono utilizzati nel **[!UICONTROL Tracking indicators]** rapporto. Per ulteriori informazioni, consulta [Indicatori di tracciamento](../../reporting/using/delivery-reports.md#tracking-indicators).
 
 A una consegna vengono aggiunti tre collegamenti. Viene inviato a 4 destinatari:
 
 ![](assets/s_ncs_user_indicators_example_1.png)
 
-* **[!UICONTROL John Davis]** : il destinatario non apre l’e-mail (e quindi non fa clic su alcun collegamento).
+* **[!UICONTROL John Davis]** : questo destinatario non apre l’e-mail (e quindi non fa clic su alcun collegamento).
 * **[!UICONTROL Marie Stuart]** : apre l’e-mail ma non fa clic su alcun collegamento.
-* **[!UICONTROL Florian David]** : apre l’e-mail e fa clic sui collegamenti 9 volte. Inoltra anche l’e-mail a qualcuno che l’apre e fa clic due volte.
-* **[!UICONTROL Henry Macdonald]** : il destinatario ha configurato il proprio browser Internet per rifiutare i cookie. Apre l&#39;e-mail e fa clic sui collegamenti 4 volte.
+* **[!UICONTROL Florian David]** : apre l’e-mail e fa clic sui collegamenti 9 volte. Inoltre, inoltra l’e-mail a qualcuno che la apre e fa clic due volte.
+* **[!UICONTROL Henry Macdonald]** : questo destinatario ha configurato il proprio browser Internet per rifiutare i cookie. Apre l’e-mail e fa clic sui collegamenti 4 volte.
 
 Vengono restituiti i seguenti registri di tracciamento:
 
@@ -50,7 +50,7 @@ Per avere un’idea più chiara del conteggio delle persone e dei destinatari, a
 
 ![](assets/s_ncs_user_indicators_example_8.png)
 
-Poiché John non ha aperto né cliccato nell&#39;e-mail, non appare nei log.
+Poiché John non ha aperto né fatto clic nell’e-mail, non viene visualizzato nei registri.
 
 **Calcolo intermedio:**
 
@@ -69,7 +69,7 @@ L&#39;apertura di Marie viene visualizzata nel seguente registro:
 
 ![](assets/s_ncs_user_indicators_example_4bis.png)
 
-L’apertura viene assegnata a un destinatario: Marie. Pertanto, Adobe Campaign aggiunge un nuovo destinatario al conteggio.
+L&#39;apertura viene assegnata a un destinatario: Marie. Adobe Campaign aggiunge quindi un nuovo destinatario al conteggio.
 
 **Calcolo intermedio:**
 
@@ -81,17 +81,17 @@ L’apertura viene assegnata a un destinatario: Marie. Pertanto, Adobe Campaign 
 
 ## Passaggio 3: Florian {#step-3--florian}
 
-**[!UICONTROL Florian David]** apre l’e-mail e fa clic sui collegamenti 9 volte. Inoltra anche l’e-mail a qualcuno che l’apre e fa clic due volte.
+**[!UICONTROL Florian David]** apre l’e-mail e fa clic sui collegamenti 9 volte. Inoltre, inoltra l’e-mail a qualcuno che la apre e fa clic due volte.
 
 ![](assets/s_ncs_user_indicators_example_9.png)
 
-Le azioni di Florian (uno aperto e 9 clic) vengono visualizzate nei seguenti registri:
+Le azioni di Florian (un clic aperto e 9 clic) vengono visualizzate nei seguenti registri:
 
 ![](assets/s_ncs_user_indicators_example_3bis.png)
 
-**Destinatari**: gli open e i clic vengono assegnati allo stesso destinatario (Florian). Poiché questo destinatario è diverso da quello precedente (Marie), Adobe Campaign aggiunge al conteggio un nuovo destinatario.
+**Destinatari**: l’apertura e i clic vengono assegnati allo stesso destinatario (Florian). Poiché questo destinatario è diverso dal precedente (Marie), Adobe Campaign aggiunge al conteggio un nuovo destinatario.
 
-Persone: Poiché il browser di questo destinatario accetta i cookie, lo stesso identificatore (UUID) viene assegnato a tutti i registri di clic: **`fe37a503 [...]`**. Adobe Campaign identifica correttamente questi clic come appartenenti alla stessa persona. Al conteggio viene aggiunta una nuova persona.
+Persone: poiché il browser di questo destinatario accetta i cookie, possiamo vedere che lo stesso identificatore (UUID) viene assegnato a tutti i registri di clic: **`fe37a503 [...]`**. Adobe Campaign identifica correttamente questi clic come appartenenti alla stessa persona. Al conteggio viene aggiunta una nuova persona.
 
 **Calcolo intermedio:**
 
@@ -102,15 +102,15 @@ Persone: Poiché il browser di questo destinatario accetta i cookie, lo stesso i
 | Florian | +1 | +1 | +1 |
 | Totale intermedio | 1 | 1 | 2 |
 
-I registri seguenti coincidono con i due clic aperti effettuati dalla persona a cui Florian ha inoltrato l’e-mail a:
+I seguenti registri coincidono con l’apertura e i due clic effettuati dalla persona a cui Florian ha inoltrato l’e-mail:
 
 ![](assets/s_ncs_user_indicators_example_6bis.png)
 
-**Destinatari**: i relativi clic e aperti vengono assegnati al destinatario che ha inoltrato l’e-mail (Florian). Poiché questo destinatario è già stato conteggiato, il conteggio dei destinatari rimane lo stesso.
+**Destinatari**: i clic e gli indirizzi aperti vengono assegnati al destinatario che ha inoltrato l’e-mail (Florian). Poiché questo destinatario è già stato conteggiato, il conteggio dei destinatari rimane lo stesso.
 
 ![](assets/s_ncs_user_indicators_example_12.png)
 
-**Persone**: per quanto riguarda i clic, lo stesso identificatore (UUID) viene assegnato a tutti i log: **`9ab648f9 [...]`**. Questo identificatore non è ancora stato conteggiato. Viene quindi aggiunta una nuova persona al conteggio.
+**Persone**: per quanto riguarda i clic, possiamo vedere che lo stesso identificatore (UUID) viene assegnato a tutti i registri: **`9ab648f9 [...]`**. Questo identificatore non è ancora stato conteggiato. Una nuova persona viene quindi aggiunta al conteggio.
 
 ![](assets/s_ncs_user_indicators_example_13.png)
 
@@ -126,17 +126,17 @@ I registri seguenti coincidono con i due clic aperti effettuati dalla persona a 
 
 ## Passaggio 4: Henry {#step-4--henry}
 
-**[!UICONTROL Henry Macdonald]** ha configurato il browser Internet per rifiutare i cookie. Apre l&#39;e-mail e fa clic sui collegamenti 4 volte.
+**[!UICONTROL Henry Macdonald]** ha configurato il browser Internet per rifiutare i cookie. Apre l’e-mail e fa clic sui collegamenti 4 volte.
 
 ![](assets/s_ncs_user_indicators_example_10.png)
 
-I 4 clic aperti e quelli effettuati da Henry compaiono nei seguenti registri:
+I clic aperti e i 4 clic eseguiti da Henry vengono visualizzati nei seguenti registri:
 
 ![](assets/s_ncs_user_indicators_example_5bis.png)
 
-**Destinatari**: i clic aperti e vengono assegnati allo stesso destinatario (Henry). Poiché questo destinatario non è ancora stato conteggiato, Adobe Campaign aggiunge un destinatario al conteggio.
+**Destinatari**: i clic e le aperture vengono assegnati allo stesso destinatario (Henry). Poiché questo destinatario non è ancora stato conteggiato, Adobe Campaign aggiunge un destinatario al conteggio.
 
-**Persone**: Poiché il browser di Henry non accetta i cookie, per ogni clic viene generato un nuovo identificatore (UUID). Ognuno dei 4 clic viene interpretato come proveniente da una persona diversa. Poiché questi identificatori non sono ancora stati conteggiati, vengono aggiunti al conteggio.
+**Persone**: poiché il browser di Henry non accetta i cookie, viene generato un nuovo identificatore (UUID) per ogni clic. Ciascuno dei 4 clic viene interpretato come proveniente da una persona diversa. Poiché questi identificatori non sono ancora stati conteggiati, vengono aggiunti al conteggio.
 
 **Calcolo intermedio:**
 
@@ -151,15 +151,15 @@ I 4 clic aperti e quelli effettuati da Henry compaiono nei seguenti registri:
 
 ## Riepilogo {#summary}
 
-A livello di consegna, otteniamo i seguenti risultati:
+A livello di consegna, si ottengono i seguenti risultati:
 
 ![](assets/s_ncs_user_indicators_example.png)
 
-* **[!UICONTROL Clicks]** (destinatari che hanno fatto clic su): 2
-* **[!UICONTROL Distinct clicks for the population reached]** (persone che hanno fatto clic su): 6
+* **[!UICONTROL Clicks]** (destinatari che hanno fatto clic): 2
+* **[!UICONTROL Distinct clicks for the population reached]** (persone che hanno fatto clic): 6
 * **[!UICONTROL Distinct opens for the population reached]** (destinatari che hanno aperto): 3
 
-La reattività grezza e la stima dei contratti a termine sono calcolate come segue:
+La reattività grezza e la stima dei forward sono calcolate come segue:
 
 ![](assets/s_ncs_user_indicators_example11.png)
 
@@ -170,7 +170,7 @@ La reattività grezza e la stima dei contratti a termine sono calcolate come seg
 >
 >Nelle seguenti formule:
 >
->* A rappresenta **[!UICONTROL Clicks]** (destinatari che hanno fatto clic su).
->* B rappresenta **[!UICONTROL Distinct clicks for the population reached]** (persone che hanno fatto clic su).
+>* Una rappresenta la **[!UICONTROL Clicks]** (destinatari che hanno fatto clic).
+>* B rappresenta **[!UICONTROL Distinct clicks for the population reached]** (persone che hanno fatto clic).
 >* C rappresenta **[!UICONTROL Distinct opens for the population reached]** (destinatari che hanno aperto).
 

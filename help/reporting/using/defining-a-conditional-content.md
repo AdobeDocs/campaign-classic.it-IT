@@ -17,32 +17,32 @@ ht-degree: 8%
 
 
 
-È possibile condizionare la visualizzazione di specifici elementi o pagine del rapporto.
+Puoi condizionare la visualizzazione di pagine o elementi del rapporto specifici.
 
-Per rendere condizionali elementi specifici, adattane le impostazioni di visibilità. Per ulteriori informazioni, consulta [Visualizzazione dell&#39;elemento condizione](#conditioning-item-display).
+Per rendere condizionali elementi specifici, adattarne le impostazioni di visibilità. Per ulteriori informazioni, consulta [Visualizzazione elemento condizione](#conditioning-item-display).
 
-Per rendere condizionale la visualizzazione di una o più pagine, utilizza un **[!UICONTROL Test]** digitare activity. Per ulteriori informazioni, consulta [Visualizzazione della pagina Condizione](#conditioning-page-display).
+Per rendere condizionale la visualizzazione di una o più pagine, utilizzare una **[!UICONTROL Test]** attività di tipo. Per ulteriori informazioni, consulta [Visualizzazione pagina condizione](#conditioning-page-display).
 
-## Visualizzazione dell&#39;elemento condizione {#conditioning-item-display}
+## Visualizzazione elemento condizione {#conditioning-item-display}
 
-Per condizionare la visualizzazione di parte di un rapporto, è necessario definirne le condizioni di visibilità: se questi elementi non sono soddisfatti, gli elementi non verranno visualizzati.
+Per rendere condizionale la visualizzazione di una parte di un rapporto, è necessario definirne le condizioni di visibilità: se queste non vengono soddisfatte, gli elementi non verranno visualizzati.
 
-Le condizioni di visibilità possono dipendere dallo stato dell’operatore, dagli elementi selezionati o inseriti nella pagina del rapporto.
+Le condizioni di visibilità possono dipendere dallo stato dell’operatore, dagli elementi selezionati o immessi nella pagina del rapporto.
 
-Gli esempi che mostrano la visualizzazione condizionale degli elementi in una pagina sono forniti in [questa sezione](../../web/using/form-rendering.md#defining-fields-conditional-display).
+Esempi che mostrano la visualizzazione condizionale degli elementi su una pagina sono forniti in [questa sezione](../../web/using/form-rendering.md#defining-fields-conditional-display).
 
 Nell’esempio seguente, la condizione di visualizzazione dipende dalla lingua:
 
 ![](assets/reporting_display_condition.png)
 
-## Visualizzazione della pagina Condizione {#conditioning-page-display}
+## Visualizzazione pagina condizione {#conditioning-page-display}
 
-Nel grafico di un rapporto, la **[!UICONTROL Test]** attività ti consente di modificare la sequenza di pagine a seconda di una o più condizioni.
+Nel grafico di un report, il **[!UICONTROL Test]** attività consente di modificare la sequenza di pagine a seconda di una o più condizioni.
 
-Questa attività si basa sul seguente principio operativo:
+Questa attività si basa sul seguente principio di funzionamento:
 
-1. Posiziona un **[!UICONTROL Test]** in un grafico e modificalo.
-1. Fai clic sul pulsante **[!UICONTROL Add]** per creare i vari casi possibili.
+1. Inserisci un **[!UICONTROL Test]** in un grafico e modificarlo.
+1. Fai clic su **[!UICONTROL Add]** per creare i vari casi possibili.
 
    ![](assets/reporting_test_sample.png)
 
@@ -54,4 +54,4 @@ Questa attività si basa sul seguente principio operativo:
 
    Per ulteriori informazioni al riguardo, consulta [questa sezione](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display).
 
-A **[!UICONTROL Test]** l’attività può essere posizionata all’inizio del grafico per condizionare la visualizzazione in base al contesto o al profilo dell’operatore, ad esempio.
+A **[!UICONTROL Test]** L’attività può essere posizionata all’inizio del grafico per condizionare la visualizzazione in base al contesto o al profilo dell’operatore, ad esempio.

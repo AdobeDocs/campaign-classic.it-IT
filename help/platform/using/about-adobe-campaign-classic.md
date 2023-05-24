@@ -14,7 +14,7 @@ ht-degree: 92%
 
 ---
 
-# Guida introduttiva di Campaign Classic{#about-adobe-campaign-classic}
+# Introduzione a Campaign Classic{#about-adobe-campaign-classic}
 
 
 
@@ -24,12 +24,12 @@ Per offrire un elevato grado di coinvolgimento dei clienti e ottime esperienze, 
 
 >[!AVAILABILITY]
 >
->* I materiali della Guida in questa raccolta si applicano a Campaign Classic v7 nel suo [build più recente](../../rn/using/latest-release.md). Un badge specifico è disponibile quando una sezione si applica anche a Campaign v8.
+>* I materiali della Guida di questa raccolta sono applicabili a Campaign Classic v7 nei suoi [build più recente](../../rn/using/latest-release.md). Un badge specifico è disponibile quando una sezione si applica anche a Campaign v8.
 >
 >* È disponibile la documentazione di Adobe Campaign v8 [qui](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=it).
 
 
-![](assets/do-not-localize/how-to-video.png) [Scopri le funzioni e le funzionalità principali del video](#video)
+![](assets/do-not-localize/how-to-video.png) [Scopri le funzionalità principali nel video](#video)
 
 ## Funzionalità principali {#key-capabilities}
 
@@ -93,8 +93,8 @@ Sono disponibili le seguenti funzionalità. A seconda del tuo contratto di licen
 
 ## Video tutorial {#video}
 
-Questo video presenta le funzioni e le funzionalità principali di Campaign Classic.
+Questo video illustra le funzionalità e le caratteristiche principali di Campaign Classic.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
 
-Sono disponibili ulteriori video dimostrativi su Campaign Classic [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
+Sono disponibili altri video dimostrativi sui Campaign Classic [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

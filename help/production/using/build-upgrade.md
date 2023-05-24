@@ -45,7 +45,7 @@ Il processo di aggiornamento della build richiede le seguenti risorse:
 * un architetto Adobe: per comprendere le strutture del database (schemi predefiniti ed eventuali schemi aggiuntivi aggiunti, progettazioni di campagne ed eventuali funzionalità di percorso critiche che devono essere avviate e testate in un ordine specifico).
 * un project manager: nel caso in cui l’aggiornamento della build coinvolga molte istanze diverse (produzione, staging, test) e altri server e applicazioni di terze parti (database, siti SFTP, provider di servizi di messaggistica), è considerata una best practice disporre di un project manager per coordinare tutti i test.
 * amministratore di Adobe Campaign: l’amministratore conosce la configurazione del server, compresi, tra l’altro: sicurezza, layout delle cartelle, reporting e requisiti di importazione/esportazione. Non eseguire un aggiornamento della build senza l’amministratore.
-* un operatore di Adobe Campaign (utente marketing): per eseguire correttamente un aggiornamento, è necessario che l’utente sia in grado di eseguire correttamente le attività quotidiane. Per questo motivo, includi sempre almeno uno degli operatori giornalieri nel test dei server aggiornati.
+* un operatore di Adobe Campaign (utente marketing): un aggiornamento corretto si basa sulla capacità dell’utente di eseguire correttamente le attività quotidiane. Per questo motivo, includi sempre almeno uno degli operatori giornalieri nel test dei server aggiornati.
 
 ### Pianificazione
 

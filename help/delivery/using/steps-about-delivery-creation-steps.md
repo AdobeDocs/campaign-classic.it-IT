@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Informazioni sui passaggi per la creazione di consegne in Adobe Campaign
-description: Scopri i passaggi principali per la creazione di consegne in Adobe Campaign
+title: Informazioni sui passaggi di creazione delle consegne in Adobe Campaign
+description: Scopri i passaggi principali per la creazione della consegna in Adobe Campaign
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Channel Configuration
@@ -17,11 +17,11 @@ ht-degree: 14%
 
 
 
-I passaggi chiave per la creazione di una consegna sono i seguenti:
+I passaggi chiave durante la creazione di una consegna sono i seguenti:
 
 1. **Creare e identificare la consegna**. [Ulteriori informazioni](steps-create-and-identify-the-delivery.md)
 
-1. **Definire il contenuto della consegna**. La definizione del contenuto di consegna è specifica per ciascun canale. Per ulteriori informazioni, consulta la sezione dedicata:
+1. **Definire il contenuto della consegna**. La definizione del contenuto della consegna è specifica per ciascun canale. Per ulteriori informazioni, consulta la sezione dedicata:
 
    * [Canale e-mail](defining-the-email-content.md)
    * [Canale SMS](sms-create.md#defining-the-sms-content)
@@ -32,7 +32,7 @@ I passaggi chiave per la creazione di una consegna sono i seguenti:
 
 1. **Inviare la consegna**. [Ulteriori informazioni](steps-sending-the-delivery.md)
 
-1. **Monitorare la consegna** (tracciamento, quarantena, rapporti, ecc.). Per ulteriori informazioni, consulta la sezione [Monitoraggio delle consegne](about-delivery-monitoring.md) e [Tracciamento delle consegne](about-message-tracking.md) sezioni.
+1. **Monitorare la consegna** (tracciamento, quarantena, rapporti, ecc.). Per ulteriori informazioni, consulta [Monitoraggio delle consegne](about-delivery-monitoring.md) e [Tracciamento delle consegne](about-message-tracking.md) sezioni.
 
 >[!NOTE]
 >

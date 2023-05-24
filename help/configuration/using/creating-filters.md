@@ -16,12 +16,12 @@ ht-degree: 4%
 
 
 
-Proprio come la tabella dei destinatari integrata fornita con Adobe Campaign, anche la nuova tabella dei destinatari può ricevere un batch di filtri predefiniti.
+Proprio come la tabella dei destinatari integrata fornita con Adobe Campaign, la nuova tabella dei destinatari potrebbe ricevere un batch di filtri predefiniti.
 
-Questi filtri saranno disponibili nella finestra di selezione di destinazione con le stesse funzionalità dei segmenti per i destinatari (utilizzando moduli di input con parametri, cartelle, ecc.).
+Questi filtri saranno disponibili nella finestra di selezione del target con le stesse funzionalità dei segmenti per i destinatari (utilizzando moduli di input dei parametri, cartelle, ecc.).
 
 1. Vai a **[!UICONTROL Administration > Configuration > Predefined filters]** nodo.
 1. Crea un nuovo filtro.
-1. Inserisci il **[!UICONTROL Label]** del filtro , quindi seleziona lo schema che corrisponde alla tabella dei destinatari esterni nel **[!UICONTROL Document type]** campo .
-1. Crea il tuo **[!UICONTROL filtering conditions]** in base ai campi dello schema.
+1. Inserisci il **[!UICONTROL Label]** del filtro, quindi seleziona lo schema che corrisponde alla tabella dei destinatari esterni in **[!UICONTROL Document type]** campo.
+1. Crea **[!UICONTROL filtering conditions]** in base ai campi dello schema.
 1. Salva il filtro.

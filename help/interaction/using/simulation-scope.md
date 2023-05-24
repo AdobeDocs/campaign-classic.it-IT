@@ -19,11 +19,11 @@ ht-degree: 5%
 
 
 
-## Definizione dell&#39;ambito di applicazione {#definition-of-the-scope}
+## Definizione del campo di applicazione {#definition-of-the-scope}
 
-Apri **[!UICONTROL Scope]** scheda per scegliere le impostazioni.
+Apri **[!UICONTROL Scope]** per scegliere le impostazioni.
 
-Sono obbligatori i seguenti elementi:
+I seguenti elementi sono obbligatori:
 
 * Ambiente o categoria di offerta.
 * Spazio dell’offerta.
@@ -34,22 +34,22 @@ Sono obbligatori i seguenti elementi:
 
 * Numero di proposte da simulare per target.
 
-   Il destinatario riceverà queste numerose proposte. Ad esempio, se immetti 5, ogni destinatario riceverà un massimo di 5 proposte di offerta.
+   Il destinatario riceverà un numero così elevato di proposte. Ad esempio, se immetti 5, ogni destinatario riceverà un massimo di 5 proposte di offerta.
 
    ![](assets/offer_simulation_009.png)
 
 Per perfezionare le offerte da prendere in considerazione per la simulazione, puoi aggiungere uno o più temi (precedentemente specificati nelle categorie).
 
-Puoi anche scegliere di eseguire la simulazione su tutte le offerte o solo su quelle online. Alcuni filtri consentono di modificare la selezione, se lo desideri.
+Puoi anche scegliere di eseguire la simulazione su tutte le offerte o solo su quelle online. Alcuni filtri ti consentono di modificare la selezione, se lo desideri.
 
 >[!NOTE]
 >
->È necessario specificare una data di contatto. Questo consente al motore di interazione di ordinare le offerte nell’ambiente o nella categoria selezionati. Se non è configurata alcuna data, la simulazione genererà un errore.
+>Specificare una data di contatto. In questo modo il motore di interazione può ordinare le offerte nell’ambiente o nella categoria selezionati. Se non è configurata alcuna data, la simulazione genera un errore.
 
 ## Aggiunta di assi di reporting {#adding-reporting-axes}
 
-Puoi migliorare l’analisi di simulazione aggiungendo assi di reporting sul target o le offerte stesse tramite il **[!UICONTROL Calculations]** scheda .
+Puoi migliorare l’analisi della simulazione aggiungendo assi di reporting sul target o sulle offerte stesse tramite **[!UICONTROL Calculations]** scheda.
 
-A questo scopo, fai clic sul pulsante **[!UICONTROL Add]** e scegliere i campi appropriati. Gli assi verranno utilizzati per calcolare la simulazione e saranno visualizzati nel rapporto di analisi. Per ulteriori informazioni, consulta [Tracking della simulazione](../../interaction/using/simulation-tracking.md).
+A questo scopo, fai clic su **[!UICONTROL Add]** e scegliere i campi appropriati. Gli assi vengono utilizzati per il calcolo della simulazione e vengono visualizzati nel rapporto di analisi. Per ulteriori informazioni, consulta [Tracciamento della simulazione](../../interaction/using/simulation-tracking.md).
 
 ![](assets/offer_simulation_011.png)

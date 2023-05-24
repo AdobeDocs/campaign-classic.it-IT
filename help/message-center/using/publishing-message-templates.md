@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Pubblicare modelli di messaggio
-description: Informazioni sulla pubblicazione e sull’annullamento della pubblicazione dei modelli di messaggio transazionali in Adobe Campaign Classic
+description: Scopri come pubblicare e annullare la pubblicazione di modelli di messaggi transazionali in Adobe Campaign Classic
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
@@ -20,54 +20,54 @@ ht-degree: 2%
 
 ## Pubblicazione di modelli {#template-publication}
 
-Quando il [modello di messaggio](../../message-center/using/creating-the-message-template.md) creato sull&#39;istanza di controllo è completo e una volta che hai [testato](../../message-center/using/testing-message-templates.md) puoi pubblicarlo. Questo processo lo pubblicherà anche su tutte le istanze di esecuzione.
+Quando [modello di messaggio](../../message-center/using/creating-the-message-template.md) creato sull&#39;istanza di controllo è completo e una volta [testato](../../message-center/using/testing-message-templates.md) puoi pubblicarlo. Questo processo lo pubblicherà anche su tutte le istanze di esecuzione.
 
 La pubblicazione consente di creare automaticamente **due modelli di messaggio** sulle istanze di esecuzione, che ti consentiranno di inviare messaggi collegati a **eventi in tempo reale** e **eventi batch**.
 
 >[!NOTE]
 >
->Quando si pubblicano modelli di messaggi transazionali, anche le regole di tipologia vengono pubblicate automaticamente sulle istanze di esecuzione.
+>Quando si pubblicano modelli di messaggi transazionali, le regole di tipologia vengono pubblicate automaticamente anche nelle istanze di esecuzione.
 
 >[!IMPORTANT]
 >
->Ogni volta che apporti modifiche a un modello, accertati di pubblicarlo nuovamente affinché queste modifiche siano effettive durante la consegna dei messaggi transazionali.
+>Ogni volta che apporti modifiche a un modello, assicurati di pubblicarle nuovamente affinché risultino efficaci durante la consegna dei messaggi transazionali.
 
-1. Nell’istanza di controllo, passa a **[!UICONTROL Message Center > Transactional message templates]** cartella dell&#39;albero.
+1. Nell’istanza di controllo, vai a **[!UICONTROL Message Center > Transactional message templates]** cartella della struttura.
 1. Seleziona il modello da pubblicare sulle istanze di esecuzione.
 1. Fai clic su **[!UICONTROL Publish]**.
 
    ![](assets/messagecenter_publish_model_008.png)
 
-Una volta completata la pubblicazione, entrambi i modelli di messaggio da applicare agli eventi di tipo batch e in tempo reale vengono creati nella struttura dell’istanza di produzione in **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]** cartella.
+Una volta completata la pubblicazione, entrambi i modelli di messaggio da applicare a eventi di tipo batch e in tempo reale vengono creati nella struttura dell’istanza di produzione in **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]** cartella.
 
 ![](assets/messagecenter_deployed_model_001.png)
 
-Una volta pubblicato un modello, se viene attivato l’evento corrispondente, l’istanza di esecuzione riceverà l’evento, lo collegherà al modello transazionale e invierà il messaggio transazionale corrispondente a ciascun destinatario. Per ulteriori informazioni, consulta [Elaborazione di eventi](../../message-center/using/about-event-processing.md).
+Dopo la pubblicazione di un modello, se l’evento corrispondente viene attivato, l’istanza di esecuzione riceverà l’evento, lo collegherà al modello transazionale e invierà il messaggio transazionale corrispondente a ciascun destinatario. Per ulteriori informazioni, consulta [Elaborazione di eventi](../../message-center/using/about-event-processing.md).
 
 >[!NOTE]
 >
->Se sostituisci un campo esistente del modello di messaggio transazionale, ad esempio l’indirizzo del mittente, con un valore vuoto, il campo corrispondente nelle istanze di esecuzione non verrà aggiornato una volta che il messaggio sulle transazioni viene pubblicato nuovamente. Conterrà ancora il valore precedente.
+>Se sostituisci un campo esistente del modello di messaggio transazionale, ad esempio l’indirizzo del mittente, con un valore vuoto, il campo corrispondente nelle istanze di esecuzione non verrà aggiornato dopo la nuova pubblicazione del messaggio transazionale. Conterrà ancora il valore precedente.
 >
 >Tuttavia, se aggiungi un valore non vuoto, il campo corrispondente verrà aggiornato come di consueto dopo la pubblicazione successiva.
 
 ## Annullamento della pubblicazione di modelli {#template-unpublication}
 
-Una volta pubblicato un modello di messaggio sulle istanze di esecuzione, puoi annullarne la pubblicazione. Per ulteriori informazioni sul processo di pubblicazione dei modelli, consulta [questa sezione](#template-publication).
+Una volta pubblicato un modello di messaggio nelle istanze di esecuzione, è possibile annullarne la pubblicazione. Per ulteriori informazioni sul processo di pubblicazione dei modelli, consulta [questa sezione](#template-publication).
 
-* In effetti, un modello pubblicato può ancora essere chiamato se viene attivato l’evento corrispondente: se non utilizzi più un modello di messaggio, è consigliabile annullarne la pubblicazione. In questo modo si evita di inviare per errore un messaggio sulle transazioni indesiderato.
+* In effetti, un modello pubblicato può ancora essere chiamato se viene attivato l’evento corrispondente: se non utilizzi più un modello di messaggio, si consiglia di annullarne la pubblicazione. In questo modo si evita di inviare per errore un messaggio transazionale indesiderato.
 
-   Ad esempio, hai pubblicato un modello di messaggio da utilizzare solo per le campagne di Natale. Puoi annullare la pubblicazione dopo la fine del periodo natalizio e pubblicarlo nuovamente l’anno prossimo.
+   Ad esempio, hai pubblicato un modello di messaggio da utilizzare solo per le campagne natalizie. Puoi annullarne la pubblicazione al termine del periodo natalizio e pubblicarla nuovamente l’anno prossimo.
 
-* Inoltre, non puoi eliminare un modello di messaggio transazionale con il **[!UICONTROL Published]** stato. Per prima cosa devi annullarla pubblicazione.
+* Inoltre, non puoi eliminare un modello di messaggio transazionale con **[!UICONTROL Published]** stato. Devi prima annullare la pubblicazione.
 
 >[!NOTE]
 >
 >Questa funzionalità è disponibile a partire dalla versione 20.2 di Campaign.
 
-Per annullare la pubblicazione di un modello di messaggio sulle transazioni, segui i passaggi riportati di seguito.
+Per annullare la pubblicazione di un modello di messaggio sulle transazioni, effettua le seguenti operazioni.
 
-1. Nell’istanza di controllo, passa a **[!UICONTROL Message Center > Transactional message templates]** cartella dell&#39;albero.
-1. Seleziona il modello da annullare la pubblicazione.
+1. Nell’istanza di controllo, vai a **[!UICONTROL Message Center > Transactional message templates]** cartella della struttura.
+1. Seleziona il modello di cui vuoi annullare la pubblicazione.
 1. Fai clic su **[!UICONTROL Unpublish]**.
 
    <!--1. Fill in the **[!UICONTROL Log of the process]** field.-->
@@ -76,14 +76,14 @@ Per annullare la pubblicazione di un modello di messaggio sulle transazioni, seg
 
 ![](assets/message-center-unpublish.png)
 
-Lo stato del modello di messaggio sulle transazioni cambia da **[!UICONTROL Published]** a **[!UICONTROL Being edited]**.
+Lo stato del modello di messaggio transazionale torna da **[!UICONTROL Published]** a **[!UICONTROL Being edited]**.
 
-Al termine dell’annullamento della pubblicazione:
+Una volta completata la pubblicazione:
 
 * Entrambi i modelli di messaggio (applicati a eventi di tipo batch e in tempo reale) vengono eliminati da ogni istanza di esecuzione.
 
-   Non vengono più visualizzati nella **[!UICONTROL Administration > Production > Message Center Execution > Default > Transactional message templates]** cartella (vedi [questa sezione](#template-publication)).
+   Non vengono più visualizzati nel **[!UICONTROL Administration > Production > Message Center Execution > Default > Transactional message templates]** cartella (vedere [questa sezione](#template-publication)).
 
-* Una volta annullato la pubblicazione di un modello, puoi eliminarlo dall’istanza di controllo.
+* Dopo aver annullato la pubblicazione di un modello, è possibile eliminarlo dall&#39;istanza di controllo.
 
-   A tale scopo, selezionala dall’elenco e fai clic sul pulsante **[!UICONTROL Delete]** in alto a destra dello schermo.
+   A tale scopo, selezionalo dall’elenco e fai clic sul pulsante **[!UICONTROL Delete]** in alto a destra.

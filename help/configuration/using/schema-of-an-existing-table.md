@@ -15,19 +15,19 @@ ht-degree: 10%
 
 ## Panoramica {#overview}
 
-Quando l&#39;applicazione deve accedere ai dati di una tabella esistente, di una vista SQL o ai dati di un database remoto, creare lo schema in Adobe Campaign con i seguenti dati:
+Quando l’applicazione deve accedere ai dati di una tabella esistente, di una vista SQL o di dati provenienti da un database remoto, crea lo schema in Adobe Campaign con i dati seguenti:
 
-* Nome della tabella: inserire il nome della tabella (con il relativo alias quando viene utilizzato un collegamento) con l’attributo &quot;sqltable&quot;,
-* chiave di schema: fare riferimento ai campi di riconciliazione,
-* indici: utilizzato per generare query,
-* I campi e la relativa posizione nella struttura XML: compilare solo i campi utilizzati nell’applicazione,
-* collegamenti: se ci sono giunti con le altre tabelle della base.
+* Nome della tabella: immettere il nome della tabella (con il relativo alias quando si utilizza un collegamento dblink) con l&#39;attributo &quot;sqltable&quot;.
+* chiave dello schema: fare riferimento ai campi di riconciliazione,
+* indici: utilizzati per generare query,
+* I campi e la loro posizione nella struttura XML: compilare solo i campi utilizzati nell’applicazione,
+* collegamenti: se sono presenti join con le altre tabelle della base.
 
 ## Implementazione {#implementation}
 
-Per creare lo schema corrispondente, applicare le seguenti fasi:
+Per creare lo schema corrispondente, attieniti alle seguenti fasi:
 
-1. Modifica le **[!UICONTROL Administration>Configuration>Data schemas]** nodo della struttura di Adobe Campaign e fai clic su **[!UICONTROL New]** .
+1. Modifica il **[!UICONTROL Administration>Configuration>Data schemas]** nodo della struttura Adobe Campaign e fai clic su **[!UICONTROL New]** .
 1. Seleziona la **[!UICONTROL Access data from an existing table or an SQL view]** e fai clic su **[!UICONTROL Next]** .
 
    ![](assets/s_ncs_configuration_extand_a_schema.png)
@@ -40,7 +40,7 @@ Per creare lo schema corrispondente, applicare le seguenti fasi:
 
    ![](assets/s_ncs_configuration_view_create_schema.png)
 
-   Lo schema deve essere compilato con l&#39;attributo view=&quot;true&quot; nel `<srcSchema>` elemento principale per non generare uno script SQL per la creazione di tabelle.
+   Lo schema deve essere compilato con l’attributo view=&quot;true&quot; sul `<srcSchema>` per non generare uno script SQL per la creazione di tabelle.
 
 **Esempio** :
 
@@ -57,6 +57,6 @@ Per creare lo schema corrispondente, applicare le seguenti fasi:
 
 ## Accesso a un database esterno {#accessing-an-external-database}
 
-La **Federated Data Access - FDA** consente di accedere ai dati archiviati in un database esterno.
+Il **Federated Data Access - FDA** consente di accedere ai dati memorizzati in un database esterno.
 
 La configurazione da eseguire sugli schemi per accedere ai dati in un database esterno è descritta in [questa pagina](../../installation/using/creating-data-schema.md).

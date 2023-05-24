@@ -97,7 +97,7 @@ Per ogni URL del messaggio, puoi scegliere se attivare o meno il tracking, cambi
 
 ### Dove posso accedere ai log di consegna e di tracking? {#where-can-i-access-delivery-and-tracking-logs-}
 
-Scopri come tracciare le consegne e comprendere il comportamento dei destinatari [da questa pagina](../../delivery/using/delivery-dashboard.md).
+Scopri come tenere traccia delle consegne e comprendere il comportamento dei destinatari [da questa pagina](../../delivery/using/delivery-dashboard.md).
 
 ### Dove posso ottenere i report di consegna? {#where-can-i-get-delivery-reports-}
 

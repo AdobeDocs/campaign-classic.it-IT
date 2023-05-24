@@ -17,15 +17,15 @@ ht-degree: 4%
 
 
 
-In qualità di utente tecnico, oltre a [proprietà generali](../../reporting/using/properties-of-the-report.md), puoi sfruttare le funzionalità avanzate per configurare i rapporti, ad esempio:
+Come utente tecnico, oltre a [proprietà generali](../../reporting/using/properties-of-the-report.md), puoi sfruttare funzionalità avanzate per configurare i rapporti, ad esempio:
 
-* Creare query complesse per elaborare i dati in un **Script** attività. [Ulteriori informazioni](#script-activity)
+* Creare query complesse per elaborare i dati in una **Script** attività. [Ulteriori informazioni](#script-activity)
 
 * Aggiungi uno script esterno da eseguire sul lato server o client. [Ulteriori informazioni](#external-script)
 
-* Richiama un rapporto con un **Salto** attività. [Ulteriori informazioni](#calling-up-another-report)
+* Chiama un rapporto con un **Salta** attività. [Ulteriori informazioni](#calling-up-another-report)
 
-* Aggiungi un parametro URL a un rapporto per renderlo più accessibile. [Ulteriori informazioni](#calling-up-another-report)
+* Aggiungi un parametro URL a un report per renderlo più accessibile. [Ulteriori informazioni](#calling-up-another-report)
 
 * Aggiungi le variabili da utilizzare nel contesto del rapporto. [Ulteriori informazioni](#adding-variables)
 
@@ -33,29 +33,29 @@ In qualità di utente tecnico, oltre a [proprietà generali](../../reporting/usi
 
 ### Riferimento a script esterni {#external-script}
 
-È possibile fare riferimento ai codici JavaScript che verranno eseguiti sul lato client e/o server quando viene richiamata la pagina del rapporto.
+Puoi fare riferimento ai codici JavaScript che verranno eseguiti sul lato client e/o server quando viene richiamata la pagina del rapporto.
 
 Per eseguire questa operazione:
 
-1. Modifica le [proprietà del report](../../reporting/using/properties-of-the-report.md) e fai clic su **[!UICONTROL Scripts]**.
-1. Fai clic su **[!UICONTROL Add]** e selezionare lo script a cui fare riferimento.
+1. Modifica il [proprietà report](../../reporting/using/properties-of-the-report.md) e fai clic su **[!UICONTROL Scripts]**.
+1. Clic **[!UICONTROL Add]** e seleziona lo script a cui fare riferimento.
 1. Quindi seleziona la modalità di esecuzione.
 
-   Se si aggiungono diversi script, utilizzare le frecce della barra degli strumenti per definirne la sequenza di esecuzione.
+   Se aggiungi più script, utilizza le frecce della barra degli strumenti per definirne la sequenza di esecuzione.
 
    ![](assets/reporting_custom_js.png)
 
-Per una normale esecuzione sul lato client, gli script a cui si fa riferimento devono essere scritti in JavaScript e devono essere compatibili con i browser più comuni. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../web/using/web-forms-answers.md).
+Per la normale esecuzione sul lato client, gli script di riferimento devono essere scritti in JavaScript e devono essere compatibili con i browser più diffusi. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../web/using/web-forms-answers.md).
 
 ### Aggiunta di un’attività Script {#script-activity}
 
-Quando [progettazione del rapporto](../../reporting/using/creating-a-new-report.md#modelizing-the-chart), utilizza **[!UICONTROL Script]** attività per elaborare i dati e creare facilmente query complesse che non abilitano SQL Language. È possibile immettere direttamente la query nella finestra dello script.
+Quando [progettazione del report](../../reporting/using/creating-a-new-report.md#modelizing-the-chart), utilizza **[!UICONTROL Script]** attività per elaborare i dati e creare facilmente query complesse che non abilitano il linguaggio SQL. È possibile inserire direttamente la query nella finestra dello script.
 
-La **[!UICONTROL Texts]** consente di definire stringhe di testo. Possono quindi essere utilizzati con la seguente sintassi: **$(Identifier)**. Per ulteriori informazioni sull&#39;utilizzo dei testi, consulta [Aggiunta di un’intestazione e di un piè di pagina](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
+Il **[!UICONTROL Texts]** consente di definire stringhe di testo. Possono quindi essere utilizzati con la seguente sintassi: **$(Identifier)**. Per ulteriori informazioni sull’utilizzo dei testi, consulta [Aggiunta di un’intestazione e un piè di pagina](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
 
 >[!CAUTION]
 >
->NON è consigliabile utilizzare il codice JavaScript per creare aggregati.
+>Si sconsiglia di utilizzare il codice JavaScript per creare aggregati.
 
 Per creare una cronologia del rapporto, aggiungi la seguente riga alla query JavaScript per salvare i dati archiviati:
 
@@ -67,55 +67,55 @@ In caso contrario, verranno visualizzati solo i dati correnti.
 
 ## Aggiunta di un parametro URL {#defining-additional-settings}
 
-La **[!UICONTROL Parameters]** della scheda [proprietà del report](../../reporting/using/properties-of-the-report.md) consente di definire impostazioni aggiuntive per il rapporto: queste impostazioni verranno passate nell’URL durante la chiamata .
+Il **[!UICONTROL Parameters]** scheda di [proprietà report](../../reporting/using/properties-of-the-report.md) consente di definire impostazioni aggiuntive per il rapporto: queste impostazioni verranno trasmesse nell’URL durante la chiamata.
 
 >[!CAUTION]
 >
->Per motivi di sicurezza, questi parametri devono essere utilizzati con grande cautela.
+>Per motivi di sicurezza, questi parametri devono essere utilizzati con cautela.
 
 Per creare una nuova impostazione:
 
-1. Fai clic sul pulsante **[!UICONTROL Add]** e immettere il nome dell&#39;impostazione.
+1. Fai clic su **[!UICONTROL Add]** e immettere il nome dell&#39;impostazione.
 
    ![](assets/s_ncs_advuser_report_properties_09a.png)
 
-1. Se necessario, specifica se l’impostazione sarà obbligatoria o meno.
+1. Se necessario, specificare se l&#39;impostazione sarà obbligatoria o meno.
 
-1. Seleziona il tipo di impostazione da creare: **[!UICONTROL Filter]** o **[!UICONTROL Variable]**.
+1. Selezionare il tipo di impostazione che si desidera creare: **[!UICONTROL Filter]** o **[!UICONTROL Variable]**.
 
-   La **[!UICONTROL Filter entities]** consente di utilizzare un campo del database come parametro.
+   Il **[!UICONTROL Filter entities]** consente di utilizzare un campo del database come parametro.
 
    ![](assets/s_ncs_advuser_report_properties_09b.png)
 
    I dati vengono recuperati direttamente a livello di entità: **ctx/recipient/@account**.
 
-   La **[!UICONTROL Variable]** consente di creare o selezionare una variabile che verrà passata come parametro dell’URL e può essere utilizzata nei filtri.
+   Il **[!UICONTROL Variable]** L’opzione ti consente di creare o selezionare una variabile che verrà passata come parametro dell’URL e che può essere utilizzata nei filtri.
 
-La **[!UICONTROL Response HTTP headers]** consente di evitare il clic quando si include la pagina del rapporto in una pagina di HTML tramite iframe. Per evitare il clickjacking, puoi scegliere il **[!UICONTROL X-Frame-options header]** comportamento:
+Il **[!UICONTROL Response HTTP headers]** consente di impedire il clickjacking quando si include la pagina del report in una pagina HTML utilizzando iframe. Per evitare il clickjacking, puoi scegliere **[!UICONTROL X-Frame-options header]** comportamento:
 
-* **[!UICONTROL None]**: Il rapporto non avrà **[!UICONTROL X-Frame-options header]**.
-* **[!UICONTROL Same as origin]**: Impostato per impostazione predefinita per nuovi rapporti e rapporti ripubblicati. Il nome host sarà lo stesso dell’URL del rapporto.
-* **[!UICONTROL Deny]**: Il rapporto non può essere incluso in una pagina HTML utilizzando iframe.
+* **[!UICONTROL None]**: il rapporto non avrà **[!UICONTROL X-Frame-options header]**.
+* **[!UICONTROL Same as origin]**: impostato per impostazione predefinita per i nuovi rapporti e i rapporti ripubblicati. Il nome host sarà lo stesso dell’URL del rapporto.
+* **[!UICONTROL Deny]**: il report non può essere incluso in una pagina HTML utilizzando iframe.
 
 ![](assets/s_ncs_advuser_report_properties_09c.png)
 
 ## Aggiunta di variabili {#adding-variables}
 
-La **[!UICONTROL Variables]** contiene l’elenco delle variabili configurate nel rapporto. Queste variabili sono esposte nel contesto del rapporto e possono essere utilizzate nei calcoli.
+Il **[!UICONTROL Variables]** La scheda contiene l’elenco delle variabili configurate nel rapporto. Queste variabili sono esposte nel contesto del rapporto e possono essere utilizzate nei calcoli.
 
-Fai clic sul pulsante **[!UICONTROL Add]** per creare una nuova variabile.
+Fai clic su **[!UICONTROL Add]** per creare una nuova variabile.
 
-Per visualizzare la definizione di una variabile, selezionala e fai clic sul pulsante **[!UICONTROL Detail...]** pulsante .
+Per visualizzare la definizione di una variabile, selezionala e fai clic sul pulsante **[!UICONTROL Detail...]** pulsante.
 
 ![](assets/s_ncs_advuser_report_properties_10.png)
 
 ## Caso d’uso: utilizzare variabili e parametri in un rapporto
 
-Nell’esempio video seguente, imparerai come aggiungere un parametro &quot;_type&quot; per creare visualizzazioni diverse di un rapporto, in base al valore di questo attributo.
+Nell’esempio video seguente, scoprirai come aggiungere un parametro &quot;_type&quot; per creare visualizzazioni diverse di un rapporto, in base al valore di questo attributo.
 
 ![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](https://helpx.adobe.com/campaign/classic/how-to/add-url-parameter-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/business-practitioners/explevel/intermediate/applaunch/how-to-4/collection.ccx.js&amp;ref=helpx.adobe.com)
 
 
-## Chiamata di un altro rapporto {#calling-up-another-report}
+## Richiamo di un altro report {#calling-up-another-report}
 
-A **Salto** L’attività è simile a una transizione senza una freccia: ti consente di passare da un’attività all’altra o di accedere a un altro rapporto.
+A **Salta** l’attività è simile a una transizione senza freccia: ti consente di passare da un’attività all’altra o di accedere a un altro rapporto.

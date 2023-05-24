@@ -19,8 +19,8 @@ ht-degree: 6%
 
 Per garantire il funzionamento ottimale dell’editor, si consiglia di osservare le seguenti linee guida:
 
-* Prima **importazione di un modello di pagina di HTML** in Adobe Campaign, assicurati che il modello si apra e venga visualizzato correttamente nei vari browser.
-* Se la pagina HTML contiene **Script JavaScript**, devono eseguire **senza errori** all&#39;esterno dell&#39;editor.
+* Prima di **importazione di un modello di pagina HTML** in Adobe Campaign, accertati che il modello si apra e venga visualizzato correttamente nei vari browser.
+* Se la pagina HTML contiene **Script JavaScript**, devono essere eseguiti **senza errori** all’esterno dell’editor.
 * Durante la creazione di un modello, è consigliabile aggiungere un attributo **“type”** ai tag. `<input>` Queste informazioni verranno elaborate dall&#39;editor e consentiranno all&#39;utente di collegare un campo del database al campo del modulo durante la configurazione dell&#39;applicazione Web.
 
    Esempio di codice HTML nel modello:
@@ -29,31 +29,31 @@ Per garantire il funzionamento ottimale dell’editor, si consiglia di osservare
    <input id="email" type="email" name="email"/>
    ```
 
-   La **&#39;type&#39;** L’attributo è visibile nell’interfaccia nel seguente modulo:
+   Il **&#39;tipo&#39;** è visibile nell&#39;interfaccia nel seguente formato:
 
    ![](assets/dce_sidebar_inputtypechanges.png)
 
-   È disponibile l’elenco ufficiale degli attributi &quot;type&quot; [in questo sito web](https://www.w3schools.com/tags/att_input_type.asp).
+   È disponibile l’elenco ufficiale degli attributi &quot;type&quot; [in questo sito Web](https://www.w3schools.com/tags/att_input_type.asp).
 
-* Passaggi per simulare una pagina finale con il DCE:
+* Passaggi per simulare una pagina finale con DCE:
 
    ![](assets/dce_enchainement.png)
 
-* Assicurati che sia presente una sola `<body> </body>` nella pagina .
-* Quando viene caricato un file CSS o JS, le immagini contenute nel file .zip non vengono caricate. I riferimenti a queste immagini presenti nel CSS non vengono quindi aggiornati.
+* Assicurati che ce ne sia solo uno `<body> </body>` nella pagina.
+* Quando viene caricato un file CSS o JS, le immagini contenute nel file.zip non vengono caricate. I riferimenti a queste immagini presenti nel CSS non vengono quindi aggiornati.
 
-## Formati supportati dall’editor dei contenuti {#content-editor-supported-formats}
+## Formati supportati dall’editor di contenuti {#content-editor-supported-formats}
 
-Digital Content Editor supporta il formato HTML: puoi passare a **source** in qualsiasi momento.
+Digital Content Editor supporta il formato HTML: è possibile passare a **sorgente** in qualsiasi momento.
 
-La funzione di importazione di Digital Content Editor funziona come segue con i seguenti formati supportati:
+La funzione di importazione dell&#39;Editor di contenuti digitali funziona come segue con i seguenti formati supportati:
 
 * CSS: le immagini presenti nel file .zip non vengono importate. I riferimenti a queste immagini nel CSS non vengono aggiornati.
-* JS: le immagini presenti nel file .zip non vengono importate. I riferimenti a queste immagini nel JS non vengono aggiornati.
+* JS: le immagini presenti nel file .zip non vengono importate. I riferimenti a queste immagini in JS non vengono aggiornati.
 * Iframe: le pagine collegate non vengono importate.
-* Pagine di destinazione e app web: se **modulo** tag mancante. Viene visualizzato un avviso. A `<form> </form>` deve essere sempre presente nel corpo del messaggio.
+* Pagine di destinazione e app web: se **modulo** manca il tag, verrà visualizzato un avviso. A `<form> </form>` deve essere sempre presente nel corpo del messaggio.
 
-L’editor di contenuti digitali funziona anche con le seguenti pagine di codice supportate:
+Digital Content Editor funziona anche con le seguenti tabelle codici supportate:
 
 * iso-8859-1
 * iso-8859-2
@@ -61,7 +61,7 @@ L’editor di contenuti digitali funziona anche con le seguenti pagine di codice
 * utf-8 (consigliato quando si utilizza una distinta base)
 * iso-8859-15
 * us-ascii
-* turno jis
+* shift jis
 * iso-2022-jp
 * big-5
 * euc-kr
@@ -69,28 +69,28 @@ L’editor di contenuti digitali funziona anche con le seguenti pagine di codice
 
 >[!NOTE]
 >
->La pagina del codice HTML deve essere definita in un tag meta (HTML 4 o HTML 5) o nella distinta base. Se non è disponibile alcuna tabella codici, apri il file in latino1.
+>La tabella codici di HTML deve essere definita in un tag meta (HTML 4 o HTML 5) o nella distinta base. Se non è disponibile alcuna tabella codici, aprire il file in latino1.
 
-## Stato del contenuto di HTML {#html-content-statuses}
+## Stati dei contenuti HTML {#html-content-statuses}
 
-Nella sezione superiore dell’editor vengono visualizzati i messaggi relativi allo stato del contenuto. I codici colore dei messaggi sono i seguenti:
+La sezione superiore dell’editor visualizza i messaggi relativi allo stato del contenuto. I codici colore per i messaggi sono i seguenti:
 
-* **Messaggio grigio**: messaggio informativo, non è necessario eseguire azioni nell’editor.
-* **Messaggio blu**: messaggio informativo relativo al contenuto in corso di modifica.
-* **Messaggio giallo**: avviso o messaggio di errore che richiede un&#39;azione per conto dell&#39;utente.
+* **Messaggio grigio**: messaggio informativo, non è necessario eseguire alcuna azione nell’editor.
+* **Messaggio blu**: messaggio informativo relativo al contenuto in fase di modifica.
+* **Messaggio giallo**: messaggio di avviso o di errore che richiede un’azione da parte dell’utente.
 
-### Elenco dei messaggi durante la modifica di un&#39;applicazione Web {#list-of-messages-when-editing-a-web-application}
+### Elenco dei messaggi durante la modifica di un’applicazione web {#list-of-messages-when-editing-a-web-application}
 
-* Il contenuto di HTML è funzionale.
+* Il contenuto HTML funziona.
 * L&#39;applicazione Web non è stata pubblicata e non è possibile accedervi online.
-* L&#39;applicazione Web è online. Per applicare eventuali modifiche, eseguire di nuovo la pubblicazione.
+* L&#39;applicazione Web è online. Pubblicare di nuovo per applicare le modifiche.
 * Il contenuto della pagina non funziona. Deve includere un modulo HTML (`<form>`)
-* Non sono presenti aree di input o pulsanti da configurare.
-* Per abilitare la transizione alla pagina successiva, devi collegare l’azione &quot;Pagina successiva&quot; a un pulsante o a un collegamento nella pagina corrente.
+* Nessuna zona o pulsante di input da configurare.
+* Per attivare la transizione alla pagina successiva, è necessario collegare l&#39;azione &#39;Pagina successiva&#39; a un pulsante o a un collegamento nella pagina corrente.
 
 ### Elenco dei messaggi durante la modifica di una consegna {#list-of-messages-when-editing-a-delivery}
 
 * Il contenuto della consegna è funzionale
-* Non ci sono campi o blocchi di personalizzazione da configurare.
-* Il contenuto della consegna è pronto. Esegui di nuovo l’analisi per applicare eventuali modifiche.
+* Non sono presenti campi o blocchi di personalizzazione da configurare.
+* Il contenuto della consegna è pronto, esegui nuovamente l’analisi per applicare eventuali modifiche.
 * La consegna è pronta per essere inviata.

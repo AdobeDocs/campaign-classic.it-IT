@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Integrare Campaign SDK
-description: Scopri come integrare l’SDK Campaign nella tua app mobile
+title: Integrare l’SDK di Campaign
+description: Scopri come integrare l’SDK di Campaign nella tua app mobile
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Mobile SDK Integration, Push
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
@@ -12,25 +12,25 @@ ht-degree: 1%
 
 ---
 
-# Integrare Campaign SDK con la tua app {#integrating-campaign-sdk-into-the-mobile-application}
+# Integrare l’SDK Campaign con la tua app {#integrating-campaign-sdk-into-the-mobile-application}
 
 
 
 >[!CAUTION]
 >
->Adobe consiglia vivamente di utilizzare l’SDK di Adobe Experience Platform Mobile configurando l’estensione Adobe Campaign nell’interfaccia utente di raccolta dati. L&#39;SDK di Adobe Experience Platform Mobile consente di sviluppare soluzioni e servizi di Experience Cloud nelle app mobili. La configurazione degli SDK viene gestita tramite l’interfaccia utente di raccolta dati per una configurazione flessibile e integrazioni estensibili basate su regole. [Ulteriori informazioni nella documentazione di Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
+>L’Adobe consiglia vivamente di utilizzare l’SDK di Adobe Experience Platform Mobile configurando l’estensione Adobe Campaign nell’interfaccia utente di Data Collection. L’SDK di Adobe Experience Platform Mobile aiuta ad alimentare soluzioni e servizi di Experience Cloud di Adobe nelle app mobili. La configurazione degli SDK viene gestita tramite l’interfaccia utente di Data Collection per una configurazione flessibile e integrazioni estensibili basate su regole. [Ulteriori informazioni sono disponibili nella documentazione di Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 
-Per ottenere l’SDK di Campaign (noto in precedenza come SDK di Neolane), contatta [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
+Per ottenere l’SDK di Campaign (precedentemente noto come SDK Neolane), contatta [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
 
-Per ulteriori informazioni sulle diverse versioni di Android e iOS supportate, consulta la [Matrice di compatibilità](../../rn/using/compatibility-matrix.md#MobileSDK).
+Per ulteriori informazioni sulle diverse versioni supportate di Android e iOS, consulta [Matrice di compatibilità](../../rn/using/compatibility-matrix.md#MobileSDK).
 
 Di seguito sono riportati i passaggi di integrazione per l’SDK di Campaign.
 
 +++**Caricamento dell’SDK di Campaign**
 
-* **In Android**: la **neolane_sdk-release.aar** deve essere collegato al progetto.
+* **In Android**: il **neolane_sdk-release.aar** Il file deve essere collegato al progetto.
 
-   La seguente autorizzazione consente l’accesso al server Adobe Campaign:
+   Le seguenti autorizzazioni concedono l’accesso al server Adobe Campaign:
 
    ```
    Neolane.getInstance().setIntegrationKey("your Adobe mobile app integration key");
@@ -38,36 +38,36 @@ Di seguito sono riportati i passaggi di integrazione per l’SDK di Campaign.
    Neolane.getInstance().setTrackingHost("https://yourTrackingHost:yourTrackingPort/");
    ```
 
-   La seguente autorizzazione consente di recuperare l&#39;ID univoco di un telefono:
+   L&#39;autorizzazione seguente consente di recuperare l&#39;ID univoco di un telefono:
 
    ```
    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> 
    ```
 
-   Dalla versione 1.0.24 dell&#39;SDK, questa autorizzazione è utilizzata solo per le versioni precedenti a Android 6.0.
+   Dalla versione 1.0.24 dell’SDK, questa autorizzazione viene utilizzata solo per le versioni precedenti ad Android 6.0.
 
-   Dalla versione 1.0.26 dell&#39;SDK, questa autorizzazione non viene più utilizzata.
+   A partire dalla versione 1.0.26 dell’SDK, questa autorizzazione non viene più utilizzata.
 
-* **In iOS**: la **libNeolaneSDK.a** e **Neolane_SDK.h** i file devono essere collegati al progetto. Dalla versione 1.0.24 dell’SDK, l’opzione **ENABLE_BITCODE** è attivato.
+* **In iOS**: il **libNeolaneSDK.a** e **Neolane_SDK.h** I file devono essere collegati al progetto. Dalla versione 1.0.24 dell’SDK, l’opzione **ENABLE_BITCODE** è attivato.
 
    >[!NOTE]
    >
-   >Per la versione 1.0.25 dell’SDK, le quattro architetture sono disponibili nella sezione **Neolane_SDK.h** file.
+   >Per la versione 1.0.25 dell’SDK, le quattro architetture sono disponibili nel **Neolane_SDK.h** file.
 
 +++
 
 +++**Dichiarazione delle impostazioni di integrazione**
 
-Per integrare l’SDK di Campaign nell’app mobile, l’amministratore funzionale deve fornire allo sviluppatore le seguenti informazioni:
+Per integrare l’SDK di Campaign nell’app mobile, l’amministratore funzionale deve fornire le seguenti informazioni allo sviluppatore:
 
 * **Una chiave di integrazione**: per abilitare la piattaforma Adobe Campaign per identificare l’app mobile.
 
    >[!NOTE]
    >
-   >Questa chiave di integrazione viene immessa nella console Adobe Campaign, nella **[!UICONTROL Information]** scheda di servizio dedicata all’app mobile. Fai riferimento a [Configurazione di un’app mobile in Adobe Campaign](configuring-the-mobile-application.md).
+   >Questa chiave di integrazione viene immessa nella console Adobe Campaign, nel **[!UICONTROL Information]** scheda del servizio dedicata all’app mobile. Fai riferimento a [Configurazione di un’app mobile in Adobe Campaign](configuring-the-mobile-application.md).
 
-* **Un URL di tracciamento**: che corrisponde all’indirizzo del server di tracciamento di Adobe Campaign.
-* **Un URL di marketing**: per abilitare la raccolta degli abbonamenti.
+* **Un URL di tracciamento**: corrisponde all’indirizzo del server di tracciamento di Adobe Campaign.
+* **Un URL di marketing**: per abilitare la raccolta di abbonamenti.
 
 * **In Android**:
 
@@ -92,8 +92,8 @@ Per integrare l’SDK di Campaign nell’app mobile, l’amministratore funziona
 
 La funzione di registrazione consente di:
 
-* invia l&#39;ID di notifica o l&#39;ID push (deviceToken per iOS e registrationID per Android) ad Adobe Campaign.
-* recuperare la chiave di riconciliazione o userKey (ad esempio il numero di e-mail o account)
+* invia l’ID notifica o l’ID push (deviceToken per iOS e registrationID per Android) ad Adobe Campaign.
+* recupera la chiave di riconciliazione o userKey (ad esempio e-mail o numero di account)
 
 * **In Android**:
 
@@ -110,7 +110,7 @@ La funzione di registrazione consente di:
    }
    ```
 
-   Se utilizzi FCM (Firebase Cloud Messaging), ti consigliamo di utilizzare il **registerDevice** quando si chiama **onTokenRefresh** per notificare ad Adobe Campaign la modifica del token del dispositivo mobile dell’utente.
+   Se utilizzi FCM (Firebase Cloud Messaging), ti consigliamo di utilizzare il **registerDevice** quando si chiama il **onTokenRefresh** per notificare ad Adobe Campaign la modifica nel token del dispositivo mobile dell’utente.
 
    ```
    public class NeoTripFirebaseInstanceIDService extends FirebaseInstanceIdService {
@@ -150,9 +150,9 @@ La funzione di registrazione consente di:
 
 * **In Android**:
 
-   Le funzioni di tracciamento ti consentono di tenere traccia delle attivazioni di notifica (aperture) e delle visualizzazioni di notifica (schermata).
+   Le funzioni di tracciamento consentono di tenere traccia delle attivazioni delle notifiche (aperture) e delle visualizzazioni delle notifiche (schermata).
 
-   Per tenere traccia della visualizzazione della notifica (mediante una chiamata al **notifyReceive** (funzione dell&#39;SDK), segui l&#39;implementazione seguente. Se utilizzi FCM (Firebase Cloud Messaging), ti consigliamo di utilizzare il **notifyReceive** quando **onMessageReceived** La funzione viene chiamata dal sistema Android.
+   Per tenere traccia della visualizzazione delle notifiche (eseguita chiamando il **notificationReceive** dell’SDK), segui l’implementazione riportata di seguito. Se utilizzi FCM (Firebase Cloud Messaging), ti consigliamo di utilizzare il **notificationReceive** funzione quando **onMessageReceived** viene richiamata dal sistema Android.
 
    ```
    package com.android.YourApplication;
@@ -248,7 +248,7 @@ La funzione di registrazione consente di:
    }
    ```
 
-   Ecco un esempio di implementazione per tenere traccia di una notifica aperta (eseguita chiamando il **notifyOpening** funzione dell&#39;SDK). La **NotificationActivity** corrisponde a quello utilizzato per creare il **notificaIntent** nell&#39;esempio precedente.
+   Esempio di implementazione per il tracciamento di una notifica aperta (eseguita chiamando il **notificationOpening** dell&#39;SDK). Il **NotificationActivity** la classe corrisponde a quella utilizzata per creare **notifIntent** nell&#39;esempio precedente.
 
    ```
    public class NotificationActivity extends Activity {
@@ -281,7 +281,7 @@ La funzione di registrazione consente di:
 
 * **In iOS**:
 
-   La funzione di tracciamento ti consente di tenere traccia di quando vengono attivate le notifiche (si apre).
+   La funzione di tracciamento ti consente di tenere traccia di quando le notifiche vengono attivate (si apre).
 
    ```
    (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)launchOptions
@@ -296,15 +296,15 @@ La funzione di registrazione consente di:
 
    >[!NOTE]
    >
-   >Dalla versione 7.0, una volta **applicazione:didReceiveRemoteNotification:fetchCompletionHandler** viene implementata, il sistema operativo chiama solo questa funzione. La **applicazione:didReceiveRemoteNotification** La funzione non viene pertanto chiamata.
+   >Dalla versione 7.0, una volta **applicazione:didReceiveRemoteNotification:fetchCompletionHandler** è implementata, il sistema operativo chiama solo questa funzione. Il **applicazione:didReceiveRemoteNotification** La funzione non viene quindi chiamata.
 
 +++
 
 +++**Tracciamento delle notifiche silenziose**
 
-iOS ti consente di inviare notifiche silenziose, notifiche o dati che verranno inviati direttamente a un’app mobile senza visualizzarli. Adobe Campaign ti consente di seguirli.
+iOS consente di inviare notifiche invisibili all’utente, una notifica o dati che verranno inviati direttamente a un’app mobile senza visualizzarli. Adobe Campaign consente di tracciarli.
 
-Per tenere traccia della notifica silenziosa, segui l’esempio seguente:
+Per tenere traccia della notifica invisibile all’utente, segui l’esempio seguente:
 
 ```
 // AppDelegate.m
@@ -348,15 +348,15 @@ Per tenere traccia della notifica silenziosa, segui l’esempio seguente:
 >
 >Tieni presente che questo è esclusivo per iOS.
 
-In iOS, il protocollo delegato ti consente di ottenere il risultato della **registerDevice** chiama e può essere utilizzato per sapere se si è verificato un errore durante la registrazione.
+In iOS, il protocollo delegato ti consente di ottenere il risultato del **registerDevice** e può essere utilizzato per sapere se si è verificato un errore durante la registrazione.
 
-La **registerDeviceStatus** prototipo:
+Il **registerDeviceStatus** prototipo:
 
 ```
 - (void) registerDeviceStatus: (ACCRegisterDeviceStatus) status:(NSString *) errorReason;
 ```
 
-**Stato** consente di sapere se una registrazione è riuscita o se si è verificato un errore.
+**Stato** consente di sapere se la registrazione è riuscita o se si è verificato un errore.
 
 **ErrorReason** fornisce ulteriori informazioni sugli errori che si sono verificati. Per ulteriori informazioni sugli errori disponibili e sulle relative descrizioni, consulta la tabella seguente.
 
@@ -376,7 +376,7 @@ La **registerDeviceStatus** prototipo:
   </tr>
   <tr> 
    <td> ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty <br /> </td>
-   <td> Il nome host del server di marketing ACC è vuoto o non è impostato.<br /> </td>
+   <td> Il nome host del server di marketing ACC è vuoto o non impostato.<br /> </td>
    <td> VUOTO<br /> </td>
   </tr>
   <tr> 
@@ -391,18 +391,18 @@ La **registerDeviceStatus** prototipo:
   </tr>
   <tr> 
    <td> ACCRegisterDeviceStatusFailureUnknownUUID<br /> </td>
-   <td> L'UUID fornito (chiave di integrazione) è sconosciuto.<br /> </td>
+   <td> L’UUID (chiave di integrazione) fornito è sconosciuto.<br /> </td>
    <td> VUOTO<br /> </td>
   </tr>
   <tr> 
    <td> ACCRegisterDeviceStatusFailureUnexpectedError<br /> </td>
    <td> Errore imprevisto restituito al server ACC.<br /> </td>
-   <td> Il messaggio di errore è stato restituito ad ACC.<br /> </td>
+   <td> Messaggio di errore restituito ad ACC.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-**Neolane_SDKDelegate** protocollo e **registerDeviceStatus** la definizione di delegato è la seguente:
+**Neolane_SDKDelegate** protocollo e **registerDeviceStatus** la definizione del delegato è la seguente:
 
 ```
 //  Neolane_SDK.h
@@ -434,9 +434,9 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
 @end
 ```
 
-Implementazione **registerDeviceStatus** delegare, segui questi passaggi:
+Per implementare **registerDeviceStatus** delegato, segui questi passaggi:
 
-1. Implementare **setDelegate** durante l&#39;inizializzazione dell&#39;SDK.
+1. Implementare **setDelegate** durante l’inizializzazione dell’SDK.
 
    ```
    // AppDelegate.m
@@ -465,7 +465,7 @@ Implementazione **registerDeviceStatus** delegare, segui questi passaggi:
    }
    ```
 
-1. Aggiungi il protocollo nel **@interface** della tua classe.
+1. Aggiungere il protocollo in **@interface** della tua classe.
 
    ```
    //  AppDelegate.h
@@ -487,7 +487,7 @@ Implementazione **registerDeviceStatus** delegare, segui questi passaggi:
    }
    ```
 
-1. Implementa il delegato nel **AppDelegate**.
+1. Implementare il delegato in **AppDelegate**.
 
    ```
    //  AppDelegate.m
@@ -542,7 +542,7 @@ Implementazione **registerDeviceStatus** delegare, segui questi passaggi:
 
 +++**Variabili**
 
-Le variabili ti consentono di definire il comportamento dell’app mobile dopo aver ricevuto una notifica. Queste variabili devono essere definite nel codice dell’app mobile e nella console Adobe Campaign, nella **[!UICONTROL Variables]** scheda nel servizio dedicato per le applicazioni mobili (vedi [Configurazione di un’app mobile in Adobe Campaign](configuring-the-mobile-application.md)). Ecco un esempio di codice che consente a un’app mobile di raccogliere tutte le variabili aggiunte in una notifica. Nel nostro esempio, utilizziamo la variabile &quot;VAR&quot;.
+Le variabili ti consentono di definire il comportamento dell’app mobile dopo aver ricevuto una notifica. Queste variabili devono essere definite nel codice dell’app mobile e nella console Adobe Campaign, nel **[!UICONTROL Variables]** nel servizio dedicato di app mobili (vedere [Configurazione di un’app mobile in Adobe Campaign](configuring-the-mobile-application.md)). Di seguito è riportato un esempio di codice che consente a un’app mobile di raccogliere tutte le variabili aggiunte in una notifica. Nel nostro esempio, utilizziamo la variabile &quot;VAR&quot;.
 
 * **In Android**:
 
@@ -586,7 +586,7 @@ Le variabili ti consentono di definire il comportamento dell’app mobile dopo a
 
 >[!CAUTION]
 >
->Adobe consiglia di scegliere nomi di variabili brevi perché le dimensioni di notifica sono limitate a 4kB per iOS e Android.
+>L’Adobe consiglia di scegliere nomi di variabili brevi, perché la dimensione della notifica è limitata a 4 kB per iOS e Android.
 
 +++
 
@@ -594,7 +594,7 @@ Le variabili ti consentono di definire il comportamento dell’app mobile dopo a
 
 **Per iOS**
 
-I file multimediali devono essere scaricati a livello di estensione del servizio di notifica.
+Il supporto deve essere scaricato a livello di estensione del servizio di notifica.
 
 ```
 #import "NotificationService.h"
@@ -630,19 +630,19 @@ I file multimediali devono essere scaricati a livello di estensione del servizio
 
 **Per iOS**
 
-A questo livello, è necessario:
+A questo livello, devi:
 
-* Associa l’estensione del contenuto alla categoria inviata da Adobe Campaign:
+* Associa l’estensione di contenuto alla categoria inviata da Adobe Campaign:
 
-   Se desideri che l’app mobile visualizzi un’immagine, puoi impostare il valore della categoria su &quot;image&quot; in Adobe Campaign e nella tua app mobile, crea un’estensione di notifica con il **UNNotificationExtensionCategory** impostato su &quot;image&quot;. Quando la notifica push viene ricevuta sul dispositivo, l&#39;estensione viene chiamata in base al valore di categoria definito.
+   Se desideri che nell’app mobile venga visualizzata un’immagine, puoi impostare il valore della categoria su &quot;image&quot; in Adobe Campaign e creare un’estensione di notifica con il **UNNotificationExtensionCategory** parametro impostato su &quot;image&quot;. Quando la notifica push viene ricevuta sul dispositivo, l’estensione viene chiamata in base al valore di categoria definito.
 
 * Definire il layout delle notifiche
 
-   È necessario definire un layout con i widget pertinenti. Per un&#39;immagine, il widget viene denominato **UIImageView**.
+   È necessario definire un layout con i widget pertinenti. Per un’immagine, il widget è denominato **UimageView**.
 
-* Visualizzare i supporti
+* Visualizzare i file multimediali
 
-   Devi aggiungere del codice per inviare i dati multimediali al widget. Ecco un esempio di codice per un&#39;immagine:
+   È necessario aggiungere il codice per alimentare i dati multimediali al widget. Di seguito è riportato un esempio di codice per un’immagine:
 
    ```
    #import "NotificationViewController.h"

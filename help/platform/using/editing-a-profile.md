@@ -18,7 +18,7 @@ ht-degree: 5%
 
 
 
-Per visualizzare le informazioni relative a un profilo, fai clic sul relativo nome nell’elenco dei profili.
+Per visualizzare le informazioni relative a un profilo, fare clic sul nome nell&#39;elenco dei profili.
 
 I dettagli del profilo vengono visualizzati in una nuova scheda.
 
@@ -26,35 +26,35 @@ I dettagli del profilo vengono visualizzati in una nuova scheda.
 
 I dati relativi ai profili sono raggruppati in schede.
 
-Le schede e il relativo contenuto dipendono dalla configurazione e dai pacchetti installati.
+Le schede e il loro contenuto dipendono dalla configurazione e dai pacchetti installati.
 
 >[!CAUTION]
 >
->Lo schema XML e il modulo che riguarda i campi della tabella dei profili sono accessibili tramite il **[!UICONTROL Administration > Configuration > Data schemas]** nodo della struttura Adobe Campaign. Solo gli utenti esperti possono apportare modifiche a tali schemi.
+>Lo schema XML e il modulo relativo ai campi della tabella dei profili sono accessibili tramite **[!UICONTROL Administration > Configuration > Data schemas]** della struttura Adobe Campaign. Solo gli utenti esperti possono apportare modifiche a questi schemi.
 >
->Per ulteriori informazioni, consulta [questa pagina](../../configuration/using/about-schema-edition.md).
+>Per ulteriori informazioni, fare riferimento a [questa pagina](../../configuration/using/about-schema-edition.md).
 
 ## Scheda Generale {#general-tab}
 
-Questa schermata contiene tutti i dati generali sul profilo selezionato. In particolare, contiene il cognome, il nome, l’indirizzo e-mail, il formato di ricezione e-mail, ecc. Si presenta così:
+Questa schermata contiene tutti i dati generali sul profilo selezionato. In particolare, contiene il cognome, il nome, l’indirizzo e-mail, il formato di ricezione e-mail, ecc. Ecco come si presenta:
 
 ![](assets/s_ncs_user_profile_general_tab.png)
 
 >[!NOTE]
 >
->Quando il **[!UICONTROL No longer contact (by any channel)]** è selezionata l’opzione , il che significa che il profilo è in elenco Bloccati, ovvero il profilo ha espresso il desiderio di non essere contattato (ad esempio, facendo clic su un collegamento di annullamento dell’abbonamento in una newsletter). Non saranno più oggetto di targeting per consegne su alcun canale (e-mail, direct mailing, ecc.). Per ulteriori informazioni, consulta [questa pagina](../../delivery/using/understanding-quarantine-management.md).
+>Quando **[!UICONTROL No longer contact (by any channel)]** se è selezionata l’opzione, significa che il profilo è in fase di inserisco nell&#39;elenco Bloccati, ovvero ha espresso il desiderio di non essere contattato (ad esempio, facendo clic su un collegamento di annullamento dell’abbonamento in una newsletter). Non saranno più oggetto di consegne su alcun canale (e-mail, direct mailing, ecc.). Per ulteriori informazioni, consulta [questa pagina](../../delivery/using/understanding-quarantine-management.md).
 
-## Scheda Informazioni contatto {#contact-information-tab}
+## Scheda Informazioni di contatto {#contact-information-tab}
 
-Questa schermata contiene l’indirizzo direct mailing del profilo selezionato. Si presenta così:
+Questa schermata contiene l’indirizzo di direct mailing del profilo selezionato. Ecco come si presenta:
 
 ![](assets/s_ncs_user_profile_details_tab.png)
 
-Questa schermata mostra l&#39;indice di qualità dell&#39;indirizzo, nonché quanti errori contiene l&#39;indirizzo. Queste informazioni vengono utilizzate direttamente dal gestore della posta in base al numero di errori riscontrati durante le consegne precedenti e non possono essere modificate manualmente.
+Questa schermata mostra l’indice di qualità dell’indirizzo e quanti errori contiene l’indirizzo. Queste informazioni vengono utilizzate direttamente dal gestore della posta in base al numero di errori rilevati durante le consegne precedenti e non possono essere modificate manualmente.
 
-## Scheda Altro {#other-tab}
+## Altra scheda {#other-tab}
 
-Questa schermata contiene campi definiti dall’utente che possono essere personalizzati in base ai requisiti. È inoltre possibile modificare i nomi dei campi e definirne il formato tramite **[!UICONTROL Field properties...]**, come illustrato di seguito:
+Questa schermata contiene campi definiti dall’utente che possono essere personalizzati in base ai requisiti. Puoi anche modificare i nomi dei campi e definirne il formato tramite **[!UICONTROL Field properties...]**, come illustrato di seguito:
 
 ![](assets/s_ncs_user_profile_others_tab.png)
 
@@ -64,19 +64,19 @@ Questa schermata contiene campi definiti dall’utente che possono essere person
 
 ## Scheda Elenchi {#lists-tab}
 
-In questa schermata vengono visualizzati i gruppi a cui appartiene il profilo selezionato. Fai clic su **[!UICONTROL Add]** per sottoscrivere il profilo a un elenco. Fai clic su **[!UICONTROL Detail]** per visualizzare la descrizione e l’elenco dei profili nell’elenco selezionato.
+Questa schermata visualizza i gruppi a cui appartiene il profilo selezionato. Clic **[!UICONTROL Add]** per sottoscrivere il profilo a un elenco. Clic **[!UICONTROL Detail]** per visualizzare la descrizione e l’elenco dei profili nell’elenco selezionato.
 
 ![](assets/s_ncs_user_profile_groups_tab_details.png)
 
-Per ulteriori informazioni, consulta [Creare e gestire elenchi](../../platform/using/creating-and-managing-lists.md).
+Per ulteriori informazioni, consulta [Creare e gestire gli elenchi](../../platform/using/creating-and-managing-lists.md).
 
-## Scheda Abbonamenti {#subscriptions-tab}
+## Scheda Iscrizioni {#subscriptions-tab}
 
-Questa schermata contiene i servizi di informazioni a cui il profilo si è iscritto.
+Questa schermata contiene i servizi di informazioni a cui il profilo si è abbonato.
 
 ![](assets/s_ncs_user_profile_subscript_tab_details.png)
 
-La **[!UICONTROL Detail]** visualizza le proprietà della sottoscrizione selezionata. La **[!UICONTROL Add]** viene utilizzato per aggiungere manualmente una nuova sottoscrizione.
+Il **[!UICONTROL Detail]** visualizza le proprietà della sottoscrizione selezionata. Il **[!UICONTROL Add]** per aggiungere manualmente un nuovo abbonamento.
 
 Per ulteriori informazioni, consulta [questa pagina](../../delivery/using/managing-subscriptions.md).
 
@@ -86,7 +86,7 @@ In questa schermata vengono visualizzati i registri di consegna per il profilo s
 
 ![](assets/s_ncs_user_profile_delivery_tab.png)
 
-## Scheda Tracking {#tracking-tab}
+## Scheda Tracciamento {#tracking-tab}
 
 Questa schermata ti consente di visualizzare i registri di tracciamento per il profilo selezionato. Queste informazioni vengono utilizzate per tenere traccia del comportamento del profilo dopo le consegne.
 
@@ -94,7 +94,7 @@ Questa schermata ti consente di visualizzare i registri di tracciamento per il p
 
 Questa scheda mostra il totale cumulativo di tutti gli URL tracciati nelle consegne.
 
-L’elenco è configurabile e in genere contiene: l’URL che ha fatto clic, la data e l’ora del clic e il documento che conteneva l’URL.
+L’elenco è configurabile e in genere contiene: l’URL su cui è stato fatto clic, la data e l’ora del clic e il documento che conteneva l’URL.
 
 >[!NOTE]
 >

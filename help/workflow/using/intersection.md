@@ -23,33 +23,33 @@ ht-degree: 13%
 
 
 
-Un **Intersection** L’attività -type crea un target dall’intersezione dei target ricevuti.
+Un **Intersezione** L&#39;attività -type crea un oggetto dall&#39;intersezione degli oggetti ricevuti.
 
-L’intersezione consente di estrarre solo la popolazione comune a tutti i risultati delle attività in entrata. Il target viene creato con tutti i risultati ricevuti: tutte le attività precedenti devono pertanto essere completate prima che sia possibile eseguire l’intersezione. Per configurare questa attività, devi immettere un’etichetta per essa e le opzioni relative al risultato.
+L’intersezione consente di estrarre solo la popolazione comune a tutti i risultati delle attività in entrata. Il target viene creato con tutti i risultati ricevuti: tutte le attività precedenti devono quindi essere completate prima che l’intersezione possa essere eseguita. Per configurare questa attività, devi immettere un’etichetta e le opzioni relative al risultato.
 
 ![](assets/s_user_segmentation_inter.png)
 
-Per ulteriori informazioni sulla configurazione e l’utilizzo dell’attività di intersezione, consulta [Estrazione di dati comuni (intersezione)](targeting-data.md#extracting-joint-data--intersection-).
+Per ulteriori informazioni sulla configurazione e sull’utilizzo dell’attività di intersezione, consulta [Estrazione dei dati articolari (intersezione)](targeting-data.md#extracting-joint-data--intersection-).
 
-Controlla la **[!UICONTROL Generate complement]** se desideri elaborare la popolazione rimanente. Il complemento conterrà l&#39;unione dei risultati di tutte le attività in entrata meno l&#39;intersezione. All’attività verrà quindi aggiunta una transizione in uscita aggiuntiva, come segue:
+Controlla la **[!UICONTROL Generate complement]** se desideri elaborare la popolazione rimanente. Il complemento conterrà l’unione dei risultati di tutte le attività in entrata meno l’intersezione. Verrà quindi aggiunta all’attività un’ulteriore transizione in uscita, come segue:
 
 ![](assets/s_user_segmentation_inter_compl.png)
 
 ## Esempio di intersezione {#intersection-example}
 
-Nell’esempio seguente, lo scopo dell’intersezione è quello di calcolare i destinatari comuni a tre semplici query per creare un elenco.
+Nell’esempio seguente, lo scopo dell’intersezione è quello di calcolare i destinatari comuni a tre query semplici per creare un elenco.
 
-1. Dopo tre semplici query, inserisci un **[!UICONTROL Intersection]** attività di tipo -type.
+1. Dopo tre query semplici, inserisci un **[!UICONTROL Intersection]** attività di tipo.
 
-   In questo esempio; le query riguardano rispettivamente gli uomini, i beneficiari che vivono a Parigi e i beneficiari di età compresa tra i 18 e i 30 anni.
+   In questo esempio, le query riguardano rispettivamente uomini, destinatari che vivono a Parigi e destinatari di età compresa tra i 18 e i 30 anni.
 
-1. Configura l&#39;intersezione. A questo scopo, seleziona la **[!UICONTROL Keys only]** metodo di riconciliazione in quanto le popolazioni risultanti dalle query contengono dati coerenti.
-1. Se hai inserito dati aggiuntivi per le query, puoi scegliere di mantenere solo quelli condivisi dai destinatari selezionando la casella corrispondente.
-1. Se desideri utilizzare il resto dei dati (per quanto riguarda le query ma non la loro intersezione), controlla il **[!UICONTROL Generate complement]** scatola.
-1. Aggiungi un’attività di aggiornamento elenco dopo il risultato dell’intersezione. È inoltre possibile aggiungere un aggiornamento dell’elenco al complemento, se lo si desidera.
-1. Esegui il flusso di lavoro. In questo caso, due destinatari si applicano a tutte e tre le query inserite contemporaneamente. Il complemento è composto da cinque destinatari che si applicano solo a una o due delle tre query.
+1. Configura l’intersezione. A questo scopo, seleziona la **[!UICONTROL Keys only]** metodo di riconciliazione, poiché le popolazioni risultanti dalle query contengono dati coerenti.
+1. Se sono stati immessi dati aggiuntivi per le query, è possibile scegliere di mantenere solo quelli condivisi dai destinatari selezionando la casella pertinente.
+1. Se desideri utilizzare il resto dei dati (per quanto riguarda le query, ma non la loro intersezione), controlla **[!UICONTROL Generate complement]** casella.
+1. Aggiungi un’attività di aggiornamento elenco dopo il risultato dell’intersezione. È inoltre possibile aggiungere un aggiornamento elenco al complemento se si desidera utilizzare anche questo.
+1. Esegui il flusso di lavoro. In questo caso, due destinatari si applicano a tutte e tre le query immesse contemporaneamente. Il complemento è costituito da cinque destinatari che si applicano solo a una o due delle tre query.
 
-   Il risultato dell’intersezione viene inviato al primo aggiornamento dell’elenco. Se hai scelto di utilizzare il complemento, questo viene inviato anche al secondo aggiornamento dell’elenco.
+   Il risultato dell&#39;intersezione viene inviato al primo aggiornamento elenco. Se hai scelto di utilizzare il complemento, questo viene inviato anche al secondo aggiornamento dell’elenco.
 
    ![](assets/intersection_example.png)
 
@@ -58,7 +58,7 @@ Nell’esempio seguente, lo scopo dell’intersezione è quello di calcolare i d
 * tableName
 * schema
 
-Ogni evento in entrata deve specificare un target definito da questi parametri.
+Ogni evento in entrata deve specificare una destinazione definita da questi parametri.
 
 ## Parametri di output {#output-parameters}
 
@@ -66,4 +66,4 @@ Ogni evento in entrata deve specificare un target definito da questi parametri.
 * schema
 * recCount
 
-Questo insieme di tre valori identifica il target risultante dall&#39;intersezione. **[!UICONTROL tableName]** è il nome della tabella che registra gli identificatori target, **[!UICONTROL schema]** è lo schema del gruppo (in genere **[!UICONTROL nms:recipient]**) e **[!UICONTROL recCount]** è il numero di elementi nella tabella.
+Questo insieme di tre valori identifica il target risultante dall&#39;intersezione. **[!UICONTROL tableName]** è il nome della tabella che registra gli identificativi target, **[!UICONTROL schema]** è lo schema della popolazione (in genere **[!UICONTROL nms:recipient]**) e **[!UICONTROL recCount]** è il numero di elementi nella tabella.

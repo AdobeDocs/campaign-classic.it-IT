@@ -147,7 +147,7 @@ L’integrazione di Adobe Campaign nelle piattaforme Analytics viene eseguita ut
 1. La scheda **[!UICONTROL Advanced]** ti consente di configurare o modificare le impostazioni tecniche.
 
    * **[!UICONTROL Lifespan]**: consente di specificare il ritardo (in giorni) dopo il quale gli eventi web vengono recuperati in Adobe Campaign dai flussi di lavoro tecnici. Predefinito: 180 giorni.
-   * **[!UICONTROL Persistence]**: consente di definire il periodo durante il quale tutti gli eventi web (ad esempio, un acquisto) possono essere attribuiti a una campagna di remarketing, Predefinito: 7 giorni.
+   * **[!UICONTROL Persistence]**: consente di definire il periodo durante il quale tutti gli eventi web (ad esempio, un acquisto) possono essere attribuiti a una campagna di remarketing, predefinito: 7 giorni.
 
 >[!NOTE]
 >

@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Installazione dei font
+title: Installazione dei tipi di carattere
 description: Scopri come installare i font
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
@@ -14,10 +14,10 @@ ht-degree: 0%
 
 ---
 
-# Installazione dei font {#installing-fonts}
+# Installazione dei tipi di carattere {#installing-fonts}
 
 
 
-Ecco come installare i nuovi font nel server dell’applicazione Campaign.
+Ecco come installare nuovi font nel server applicazioni Campaign.
 
-È possibile inserire nuovi font nel `/usr/local/share/` su tutti i contenitori in cui viene eseguito il processo MTA.
+È possibile inserire nuovi font nel `/usr/local/share/` in tutti i contenitori in cui viene eseguito il processo MTA.

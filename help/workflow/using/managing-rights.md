@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Gestione delle autorizzazioni del flusso di lavoro
+title: Gestire le autorizzazioni del flusso di lavoro
 description: Scopri come gestire le autorizzazioni del flusso di lavoro
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
@@ -12,29 +12,29 @@ ht-degree: 1%
 
 ---
 
-# Gestione delle autorizzazioni del flusso di lavoro{#managing-rights}
+# Gestire le autorizzazioni del flusso di lavoro{#managing-rights}
 
 
 
 Se non sono amministratori, gli operatori Adobe Campaign devono disporre dei diritti di accesso per creare, eseguire o modificare i flussi di lavoro.
 
-In generale, gli operatori che agiscono sui flussi di lavoro devono accedere ai file contenenti i dati utilizzati durante le varie attività (destinatari, elenco destinatari, abbonamenti, consegne, ecc.) ed eventualmente ai relativi sottofile.
+In generale, gli operatori che agiscono sui flussi di lavoro devono accedere ai file contenenti i dati utilizzati durante le varie attività (destinatari, elenco destinatari, abbonamenti, consegne, ecc.) ed eventualmente ai loro sottofile.
 
-Devono anche essere mappati ai diritti denominati che coincidono con le azioni eseguite dai flussi di lavoro che influiranno (importazione dei destinatari, accesso ai file, fusione, esecuzione degli script SQL, ecc.).
+Devono inoltre essere mappati ai diritti denominati che coincidono con le azioni eseguite dai flussi di lavoro che avranno effetto (importazione dei destinatari, accesso ai file, fusione, esecuzione di script SQL, ecc.).
 
-Per ulteriori informazioni sulla gestione di operatori e autorizzazioni, consulta questo [sezione](../../platform/using/access-management.md).
+Per ulteriori informazioni sulla gestione di operatori e autorizzazioni, consulta questa [sezione](../../platform/using/access-management.md).
 
 ## Gruppi di operatori {#operator-groups-wf}
 
-I seguenti gruppi di operatori sono associati al flusso di lavoro:
+Al flusso di lavoro sono associati i seguenti gruppi di operatori:
 
-* La **[!UICONTROL Workflow execution]** consente di controllare l’esecuzione e l’approvazione dei flussi di lavoro di targeting: il WORKFLOW denominato right è mappato sugli operatori di questo gruppo. È richiesto per tutte le azioni sui flussi di lavoro, oltre ad accedere ai diritti ai file di dati. Per impostazione predefinita, la **[!UICONTROL Workflow execution]** gruppo ha accesso in sola lettura ai file di flusso di lavoro di targeting standard e ai modelli di flusso di lavoro. Gli operatori di questo gruppo hanno anche accesso in lettura e scrittura al file di approvazione in sospeso.
-* La **[!UICONTROL Workflow supervisors]** consente agli operatori di gestire le approvazioni del flusso di lavoro.
-* La **[!UICONTROL Operation Managers]** per accedere ai flussi di lavoro delle campagne.
+* Il **[!UICONTROL Workflow execution]** Il gruppo consente di controllare l’esecuzione e l’approvazione dei flussi di lavoro di targeting: il FLUSSO DI LAVORO denominato right è mappato agli operatori di questo gruppo. È richiesto per tutte le azioni sui flussi di lavoro, oltre ai diritti di accesso ai file di dati. Per impostazione predefinita, il **[!UICONTROL Workflow execution]** Il gruppo ha accesso in sola lettura ai file di flusso di lavoro di targeting standard e ai modelli di flusso di lavoro. Gli operatori di questo gruppo dispongono inoltre dell&#39;accesso in lettura e scrittura al file di approvazione in sospeso.
+* Il **[!UICONTROL Workflow supervisors]** consente agli operatori di gestire le approvazioni dei flussi di lavoro.
+* Il **[!UICONTROL Operation Managers]** gruppo per accedere ai flussi di lavoro delle campagne.
 
 ## Diritti denominati {#named-rights}
 
-Solo il flusso di lavoro denominato a destra è specifico per i flussi di lavoro: consente di creare, avviare e interrompere i flussi di lavoro. I diritti di lettura sul file del flusso di lavoro sono necessari perché sia applicabile il diritto denominato . Per il targeting dei flussi di lavoro, la lettura a destra **[!UICONTROL Profiles and Targets]** file necessario.
+Solo il FLUSSO DI LAVORO con nome right è specifico per i flussi di lavoro: consente di creare, avviare e interrompere i flussi di lavoro. Affinché il diritto denominato sia applicabile, è necessario disporre dei diritti di lettura per il file del flusso di lavoro. Per i flussi di lavoro di targeting, la lettura a destra nella **[!UICONTROL Profiles and Targets]** è necessario.
 
 ## Account di esecuzione del flusso di lavoro {#workflow-execution-account}
 

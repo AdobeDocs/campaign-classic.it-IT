@@ -18,31 +18,31 @@ ht-degree: 3%
 
 
 
-È possibile configurare una zona buffer dati per migliorare le prestazioni di interazione in entrata desincronizzando i calcoli delle proposte di offerta. Questa configurazione deve essere eseguita nel file di configurazione dell&#39;istanza (config-Instance.xml).
+Puoi configurare una zona buffer dati per migliorare le prestazioni dell’interazione in entrata desincronizzando i calcoli della proposta di offerta. Questa configurazione deve essere eseguita nel file di configurazione dell’istanza (config-Instance.xml).
 
-In Adobe Campaign, un **zona buffer dati** è stato introdotto nel modulo Interaction. Questo consente di: **migliorare le prestazioni** di Interazione in entrata tramite la desincronizzazione dei calcoli di stock e offerte.
+In Adobe Campaign, una **zona buffer dati** è stato introdotto nel modulo Interazione. Ciò ti consente di: **migliorare le prestazioni** dell’interazione in entrata tramite la desincronizzazione dei calcoli relativi alle azioni e alle offerte.
 
-Riguarda solo l’interazione in entrata, sia tramite una chiamata (con o senza dati di chiamata), sia tramite un aggiornamento di stato (updateStatus).
+Riguarda solo l’interazione in entrata, sia tramite chiamata (con o senza dati di chiamata), sia tramite aggiornamento dello stato (updateStatus).
 
-Per evitare una coda durante la scrittura di proposte relative a un destinatario, un nuovo processo genera un **zona buffer dati** che consente di presentare proposte **scritto in modo asincrono**. Questa zona del buffer dati viene periodicamente letta e svuotata. Il periodo predefinito si trova nello spazio di circa un secondo.La scrittura della proposta è quindi raggruppata.
+Per evitare una coda durante la scrittura di proposte relative a un destinatario, un nuovo processo genera un **zona buffer dati** che consente di **scritto in modo asincrono**. Questa zona buffer dati viene letta e svuotata periodicamente. Il periodo predefinito è nello spazio di circa un secondo. La scrittura delle proposte è quindi raggruppata.
 
 >[!NOTE]
 >
 >Questo parametro è essenziale se utilizzi l’interazione con un’architettura distribuita.
 
-Zona buffer dati **configurazione** può essere eseguito nel file di configurazione dell&#39;istanza (config-Instance.xml).
+Zona buffer dati **configurazione** può essere eseguita nel file di configurazione dell’istanza (config-Instance.xml).
 
 >[!CAUTION]
 >
->Alcune configurazioni possono essere eseguite solo per Adobe per le distribuzioni ospitate da Adobe. Ad esempio, per accedere ai file di configurazione del server e dell’istanza. Per ulteriori informazioni sulle diverse implementazioni, consulta [Modelli di hosting](../../installation/using/hosting-models.md) sezione o [questa pagina](../../installation/using/capability-matrix.md).
+>Alcune configurazioni possono essere eseguite solo da Adobe per le distribuzioni in hosting da Adobe. Ad esempio, per accedere ai file di configurazione del server e dell’istanza. Per ulteriori informazioni sulle diverse implementazioni, consulta [Modelli di hosting](../../installation/using/hosting-models.md) sezione o a [questa pagina](../../installation/using/capability-matrix.md).
 >
->Qualsiasi modifica apportata alla configurazione richiede un riavvio del server web (Apache:IIS) e dei processi Adobe Campaign.\
->Dopo aver configurato la zona del buffer dati, verificare che sia disponibile una configurazione hardware adattata. (quantità di memoria presente).
+>Qualsiasi modifica apportata alla configurazione richiede il riavvio del server web (Apache:IIS) e dei processi di Adobe Campaign.\
+>Dopo aver configurato la zona buffer dati, verificare che sia disponibile una configurazione hardware adattata. (quantità di memoria presente).
 
 
-Dopo aver configurato la zona del buffer dati, verificare che sia disponibile una configurazione hardware adattata. (quantità di memoria presente).
+Dopo aver configurato la zona buffer dati, verificare che sia disponibile una configurazione hardware adattata. (quantità di memoria presente).
 
-Definizione di un daemon di scrittura (processo denominato: interazione) è la seguente:
+La definizione di un daemon di scrittura (processo denominato: interazione) è la seguente:
 
 ```
 <interactiond args="" autoStart="false" callDataSize="0" initScript="" maxProcessMemoryAlertMb="1800"

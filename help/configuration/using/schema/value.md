@@ -13,17 +13,17 @@ ht-degree: 4%
 
 ---
 
-# elemento value {#value--element}
+# elemento valore {#value--element}
 
 ![](../../../assets/v7-only.svg)
 
 ## Modello di contenuto {#content-model-16}
 
-value:==help
+valore:==guida
 
 ## Attributi {#attributes-16}
 
-* @applyIf (stringa)
+* @applicableIf (stringa)
 * @desc (stringa)
 * @enabledIf (stringa)
 * @img (stringa)
@@ -31,7 +31,7 @@ value:==help
 * @name (stringa)
 * @value (stringa)
 
-## Genitori {#parents-16}
+## Padri {#parents-16}
 
 `<enumeration>`
 
@@ -45,13 +45,13 @@ Questo elemento ti consente di definire i valori memorizzati in un’enumerazion
 
 ## Descrizione attributo {#attribute-description-16}
 
-* **applyIf (stringa)**: questo attributo consente di rendere facoltativo un valore di enumerazione. Riceve un&#39;espressione XTK.
+* **applyIf (stringa)**: questo attributo ti consente di rendere facoltativo un valore di enumerazione. Riceve un’espressione XTK.
 * **desc (stringa)**: descrizione del valore di enumerazione.
 * **enabledIf (stringa)**: condizione per attivare il valore di enumerazione.
-* **img (stringa)**: immagine collegata all’enumerazione nel modulo &quot;namespace:image_name&quot;. L&#39;immagine deve essere importata sul server dell&#39;applicazione.
-* **label (stringa)**: etichetta del valore di enumerazione.
-* **name (stringa)**: nome interno del valore di enumerazione.
-* **value (stringa)**: valore del valore di enumerazione. Il tipo di valore viene definito in base al tipo di enumerazione. Se l&#39;enumerazione è di tipo stringa di caratteri, può contenere solo valori di tipo stringa di caratteri.
+* **img (stringa)**: immagine collegata all’enumerazione nel modulo &quot;namespace:image_name&quot;. L&#39;immagine deve essere importata nel server applicazioni.
+* **etichetta (stringa)**: etichetta del valore di enumerazione.
+* **nome (stringa)**: nome interno del valore di enumerazione.
+* **valore (stringa)**: valore dell’enumerazione. Il tipo di valore è definito in base al tipo di enumerazione. Se l’enumerazione è di tipo stringa di caratteri, può contenere solo valori di tipo stringa di caratteri.
 
 ## Esempi {#examples-13}
 

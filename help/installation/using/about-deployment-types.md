@@ -18,12 +18,12 @@ ht-degree: 6%
 
 
 
-Il design modulare di Adobe Campaign consente un&#39;ampia gamma di configurazioni di implementazione, dalle configurazioni standalone (tutti i componenti su un unico computer) alle implementazioni aziendali con architettura completamente ridondante e distribuita che utilizzano più server. Tutto dipende dal livello di prestazioni e sicurezza richiesto.
+La progettazione modulare di Adobe Campaign consente un&#39;ampia gamma di configurazioni di distribuzione, dalle configurazioni autonome (tutti i componenti di un unico computer) alle implementazioni aziendali con architettura completamente ridondante e distribuita che utilizzano più server. Tutto dipende dal livello richiesto di prestazioni e sicurezza.
 
-In caso di configurazione su più computer, non è necessario utilizzare lo stesso sistema operativo in: ad esempio, puoi utilizzare un server di reindirizzamento su Linux + Apache con server di consegna su Windows.
+In caso di configurazione su più computer, non è necessario utilizzare lo stesso sistema operativo in: ad esempio, è possibile utilizzare un server di reindirizzamento su Linux + Apache con server di consegna su Windows.
 
 >[!NOTE]
 >
->I passaggi di configurazione dell’installazione principale possono essere eseguiti solo da Adobe per le distribuzioni ospitate da Adobe, ad esempio per configurare i file di configurazione del server e dell’istanza.
+>I passaggi di configurazione dell’installazione principale possono essere eseguiti solo da Adobe per le distribuzioni in hosting da Adobe, ad esempio per configurare i file di configurazione del server e dell’istanza.
 >
->Per ulteriori informazioni sulle principali differenze tra le implementazioni, consulta [Modelli di hosting](../../installation/using/hosting-models.md) o alla sezione [Differenze di funzionalità per le distribuzioni in hosting e on-premise](../../installation/using/capability-matrix.md).
+>Per ulteriori informazioni sulle principali differenze tra le distribuzioni, consulta [Modelli di hosting](../../installation/using/hosting-models.md) sezione o al [Differenze tra le funzioni per le distribuzioni in hosting e on-premise](../../installation/using/capability-matrix.md).

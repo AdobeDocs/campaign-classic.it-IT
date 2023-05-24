@@ -16,7 +16,7 @@ ht-degree: 19%
 
 
 
-Il flusso di lavoro descritto di seguito è installato con **Piattaforma di mid-sourcing** modulo per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questo [sezione](../../installation/using/mid-sourcing-deployment.md).
+Il flusso di lavoro descritto di seguito viene installato con **Piattaforma mid-sourcing** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../installation/using/mid-sourcing-deployment.md).
 
 <table> 
  <tbody> 

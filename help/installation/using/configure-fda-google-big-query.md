@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Configurare l'accesso a Google BigQuery
+title: Configurare l’accesso a Google BigQuery
 description: Scopri come configurare l’accesso a Google BigQuery in FDA
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
@@ -14,83 +14,83 @@ ht-degree: 2%
 
 ---
 
-# Configurare l&#39;accesso a Google BigQuery {#configure-fda-google-big-query}
+# Configurare l’accesso a Google BigQuery {#configure-fda-google-big-query}
 
 
 
-Utilizza Adobe Campaign Classic **Federated Data Access** (FDA) opzione per elaborare le informazioni memorizzate in un database esterno. Segui i passaggi seguenti per configurare l’accesso a [!DNL Google BigQuery].
+Usa Adobe Campaign Classic **Federated Data Access** (FDA) per elaborare le informazioni memorizzate in un database esterno. Segui i passaggi seguenti per configurare l’accesso a [!DNL Google BigQuery].
 
-1. Configura [!DNL Google BigQuery] su [Windows](#google-windows) o [Linux](#google-linux)
-1. Configura le [!DNL Google BigQuery] [account esterno](#google-external) in Adobe Campaign Classic
-1. Configurazione [!DNL Google BigQuery] carico in blocco del connettore [Windows](#bulk-load-windows) o [Linux](#bulk-load-linux)
+1. Configura [!DNL Google BigQuery] il [Windows](#google-windows) o [Linux](#google-linux)
+1. Configurare [!DNL Google BigQuery] [account esterno](#google-external) in Adobe Campaign Classic
+1. Configurazione [!DNL Google BigQuery] carico di massa del connettore attivato [Windows](#bulk-load-windows) o [Linux](#bulk-load-linux)
 
 >[!NOTE]
 >
-> [!DNL Google BigQuery] è disponibile per le distribuzioni in hosting, ibride e on-premise. Per ulteriori informazioni, consulta [questa pagina](../../installation/using/capability-matrix.md).
+> [!DNL Google BigQuery] il connettore è disponibile per le distribuzioni in hosting, ibride e on-premise. Per ulteriori informazioni, consulta [questa pagina](../../installation/using/capability-matrix.md).
 
 ![](assets/snowflake_3.png)
 
-## Google BigQuery su Windows {#google-windows}
+## BigQuery Google su Windows {#google-windows}
 
-### Driver configurato su Windows {#driver-window}
+### Configurazione del driver su Windows {#driver-window}
 
-1. Scarica la [Driver ODBC per Windows](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers).
+1. Scarica il file [Driver ODBC per Windows](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers).
 
 1. Configurare il driver ODBC in Windows. Per ulteriori informazioni, consulta [questa pagina](https://storage.googleapis.com/simba-bq-release/jdbc/Simba%20JDBC%20Driver%20for%20Google%20BigQuery%20Install%20and%20Configuration%20Guide.pdf).
 
-1. Per [!DNL Google BigQuery] Connettore per funzionare, Adobe Campaign Classic richiede i seguenti parametri per connettersi:
+1. Per [!DNL Google BigQuery] per il funzionamento del connettore, Adobe Campaign Classic richiede i seguenti parametri per la connessione:
 
    * **[!UICONTROL Project]**: crea o utilizza un progetto esistente.
 
-      Per ulteriori informazioni, consulta [page](https://cloud.google.com/resource-manager/docs/creating-managing-projects).
+      Per ulteriori informazioni, consulta questa [pagina](https://cloud.google.com/resource-manager/docs/creating-managing-projects).
 
-   * **[!UICONTROL Service account]**: creare un account di servizio.
+   * **[!UICONTROL Service account]**: crea un account di servizio.
 
-      Per ulteriori informazioni, consulta [page](https://cloud.google.com/iam/docs/creating-managing-service-accounts).
+      Per ulteriori informazioni, consulta questa [pagina](https://cloud.google.com/iam/docs/creating-managing-service-accounts).
 
-   * **[!UICONTROL Key File Path]**: la **[!UICONTROL Service account]** richiede un **[!UICONTROL Key File]** per [!DNL Google BigQuery] connessione tramite ODBC.
+   * **[!UICONTROL Key File Path]**: il **[!UICONTROL Service account]** richiede un **[!UICONTROL Key File]** per un [!DNL Google BigQuery] tramite ODBC.
 
-      Per ulteriori informazioni, consulta [page](https://cloud.google.com/iam/docs/creating-managing-service-account-keys).
+      Per ulteriori informazioni, consulta questa [pagina](https://cloud.google.com/iam/docs/creating-managing-service-account-keys).
 
-   * **[!UICONTROL Dataset]**: **[!UICONTROL Dataset]** è facoltativo per una connessione ODBC. Poiché ogni query deve fornire il set di dati in cui si trova la tabella, specificando **[!UICONTROL Dataset]** è obbligatorio per [!DNL Google BigQuery] Connettore FDA in Adobe Campaign Classic.
+   * **[!UICONTROL Dataset]**: **[!UICONTROL Dataset]** è facoltativo per una connessione ODBC. Poiché ogni query deve fornire il set di dati in cui si trova la tabella, specificando un **[!UICONTROL Dataset]** è obbligatorio per [!DNL Google BigQuery] Connettore FDA in Adobe Campaign Classic.
 
-      Per ulteriori informazioni, consulta [page](https://cloud.google.com/bigquery/docs/datasets).
+      Per ulteriori informazioni, consulta questa [pagina](https://cloud.google.com/bigquery/docs/datasets).
 
-1. In Adobe Campaign Classic puoi quindi configurare il [!DNL Google BigQuery] conto esterno. Per ulteriori informazioni su come configurare l’account esterno, consulta [questa sezione](#google-external).
+1. In Adobe Campaign Classic, puoi quindi configurare [!DNL Google BigQuery] account esterno. Per ulteriori informazioni su come configurare l’account esterno, consulta [questa sezione](#google-external).
 
-### Caricamento in serie configurato su Windows {#bulk-load-window}
+### Caricamento di massa configurato su Windows {#bulk-load-window}
 
 >[!NOTE]
 >
->Per il funzionamento dell’SDK di Google Cloud è necessario installare Python.
+>Per il corretto funzionamento di Google Cloud SDK è necessario che sia installato Python.
 >
->Consigliamo di utilizzare Python3, consulta questo [page](https://www.python.org/downloads/).
+>Si consiglia di utilizzare Python3, vedere [pagina](https://www.python.org/downloads/).
 
-L&#39;utilità di caricamento collettivo consente un trasferimento più veloce, che viene ottenuto tramite Google Cloud SDK.
+L’utility Bulk Load consente un trasferimento più rapido, grazie all’SDK di Google Cloud.
 
-1. Scarica l&#39;archivio Windows a 64 bit (x86_64) da questo [page](https://cloud.google.com/sdk/docs/downloads-versioned-archives) ed estrarlo nella directory corrispondente.
+1. Scarica l&#39;archivio Windows a 64 bit (x86_64) da questo [pagina](https://cloud.google.com/sdk/docs/downloads-versioned-archives) ed estrarlo nella directory corrispondente.
 
 1. Esegui il `google-cloud-sdk\install.sh` script. È necessario accettare l&#39;impostazione della variabile di percorso.
 
-1. Dopo l&#39;installazione, controlla che la variabile del percorso `...\google-cloud-sdk\bin` è impostato. In caso contrario, aggiungilo manualmente.
+1. Dopo l’installazione, verifica che la variabile del percorso `...\google-cloud-sdk\bin` è impostato. In caso contrario, aggiungerlo manualmente.
 
-1. In  `..\google-cloud-sdk\bin\bq.cmd` aggiungi il `CLOUDSDK_PYTHON` variabile locale, che reindirizza alla posizione dell&#39;installazione Python.
+1. In  `..\google-cloud-sdk\bin\bq.cmd` file, aggiungi `CLOUDSDK_PYTHON` variabile locale, che verrà reindirizzata alla posizione dell’installazione Python.
 
    Ad esempio:
 
    ![](assets/google-big-query_1.png)
 
-1. Riavvia Adobe Campaign Classic per prendere in considerazione le modifiche.
+1. Riavvia Adobe Campaign Classic per tenere conto delle modifiche.
 
 ## Google BigQuery su Linux {#google-linux}
 
-### Driver configurato su Linux {#driver-linux}
+### Configurazione del driver su Linux {#driver-linux}
 
-Prima di configurare il driver, tenere presente che lo script e i comandi devono essere eseguiti dall&#39;utente principale. Si consiglia inoltre di utilizzare Google DNS 8.8.8.8 durante l&#39;esecuzione dello script.
+Prima di configurare il driver, si noti che gli script e i comandi devono essere eseguiti dall&#39;utente root. Durante l’esecuzione dello script, si consiglia inoltre di utilizzare il DNS Google 8.8.8.8.
 
 Per configurare [!DNL Google BigQuery] su Linux, segui i passaggi seguenti:
 
-1. Prima dell&#39;installazione ODBC, verificare che i seguenti pacchetti siano installati nella distribuzione Linux:
+1. Prima dell&#39;installazione di ODBC, verificare che i seguenti pacchetti siano installati nella distribuzione Linux:
 
    * Per Red Hat/CentOS:
 
@@ -131,24 +131,24 @@ Per configurare [!DNL Google BigQuery] su Linux, segui i passaggi seguenti:
    ./bigquery_odbc-setup.sh --help
    ```
 
-1. Accedi alla directory in cui si trova lo script ed esegui il seguente script come utente principale:
+1. Accedere alla directory in cui si trova lo script ed eseguire lo script seguente come utente root:
 
    ```
    cd /usr/local/neolane/nl6/bin/fda-setup-scripts
    ./bigquery_odbc-setup.sh
    ```
 
-### Caricamento in serie configurato su Linux {#bulk-load-linux}
+### Caricamento di massa configurato su Linux {#bulk-load-linux}
 
 >[!NOTE]
 >
->Per il funzionamento dell’SDK di Google Cloud è necessario installare Python.
+>Per il corretto funzionamento di Google Cloud SDK è necessario che sia installato Python.
 >
->Consigliamo di utilizzare Python3, consulta questo [page](https://www.python.org/downloads/).
+>Si consiglia di utilizzare Python3, vedere [pagina](https://www.python.org/downloads/).
 
-L&#39;utilità di caricamento collettivo consente un trasferimento più veloce, che viene ottenuto tramite Google Cloud SDK.
+L’utility Bulk Load consente un trasferimento più rapido, grazie all’SDK di Google Cloud.
 
-1. Prima dell&#39;installazione ODBC, verificare che i seguenti pacchetti siano installati nella distribuzione Linux:
+1. Prima dell&#39;installazione di ODBC, verificare che i seguenti pacchetti siano installati nella distribuzione Linux:
 
    * Per Red Hat/CentOS:
 
@@ -166,7 +166,7 @@ L&#39;utilità di caricamento collettivo consente un trasferimento più veloce, 
       apt-get install -y python3
       ```
 
-1. Accedi alla directory in cui si trova lo script ed esegui il seguente script:
+1. Accedere alla directory in cui si trova lo script ed eseguire lo script seguente:
 
    ```
    cd /usr/local/neolane/nl6/bin/fda-setup-scripts
@@ -175,27 +175,27 @@ L&#39;utilità di caricamento collettivo consente un trasferimento più veloce, 
 
 ## Account esterno Google BigQuery {#google-external}
 
-È necessario creare un [!DNL Google BigQuery] account esterno per collegare la tua istanza Adobe Campaign Classic al tuo [!DNL Google BigQuery] database esterno.
+Devi creare un [!DNL Google BigQuery] account esterno per collegare l’istanza Adobe Campaign Classic al tuo [!DNL Google BigQuery] database esterno.
 
 1. Da Adobe Campaign Classic **[!UICONTROL Explorer]**, fai clic su **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
 1. Fai clic su **[!UICONTROL New]**.
 
-1. Seleziona **[!UICONTROL External database]** come account esterno **[!UICONTROL Type]**.
+1. Seleziona **[!UICONTROL External database]** come dell’account esterno **[!UICONTROL Type]**.
 
-1. Configura le [!DNL Google BigQuery] account esterno, devi specificare:
+1. Configurare [!DNL Google BigQuery] account esterno, è necessario specificare:
 
    * **[!UICONTROL Type]**: [!DNL Google BigQuery]
 
-   * **[!UICONTROL Service account]**: E-mail del tuo **[!UICONTROL Service account]**. Per ulteriori informazioni, consulta [Documentazione di Google Cloud](https://cloud.google.com/iam/docs/creating-managing-service-accounts).
+   * **[!UICONTROL Service account]**: e-mail del **[!UICONTROL Service account]**. Per ulteriori informazioni, consulta [Documentazione di Google Cloud](https://cloud.google.com/iam/docs/creating-managing-service-accounts).
 
-   * **[!UICONTROL Project]**: Nome della **[!UICONTROL Project]**. Per ulteriori informazioni, consulta [Documentazione di Google Cloud](https://cloud.google.com/resource-manager/docs/creating-managing-projects).
+   * **[!UICONTROL Project]**: nome del **[!UICONTROL Project]**. Per ulteriori informazioni, consulta [Documentazione di Google Cloud](https://cloud.google.com/resource-manager/docs/creating-managing-projects).
 
    * **[!UICONTROL Key file Path]**:
-      * **[!UICONTROL Upload key file to the server]**: select **[!UICONTROL Click here to upload]** se scegli di caricare la chiave tramite Adobe Campaign Classic.
+      * **[!UICONTROL Upload key file to the server]**: seleziona **[!UICONTROL Click here to upload]** se scegli di caricare la chiave tramite Adobe Campaign Classic.
 
       * **[!UICONTROL Enter manually the key file path]**: copia/incolla il percorso assoluto in questo campo se scegli di utilizzare una chiave preesistente.
-   * **[!UICONTROL Dataset]**: Nome della **[!UICONTROL Dataset]**. Per ulteriori informazioni, consulta [Documentazione di Google Cloud](https://cloud.google.com/bigquery/docs/datasets-intro).
+   * **[!UICONTROL Dataset]**: nome del **[!UICONTROL Dataset]**. Per ulteriori informazioni, consulta [Documentazione di Google Cloud](https://cloud.google.com/bigquery/docs/datasets-intro).
 
    ![](assets/google-big-query.png)
 
@@ -203,9 +203,9 @@ Il connettore supporta le seguenti opzioni:
 
 | Opzione | Descrizione |
 |:-:|:-:|
-| ProxyType | Tipo di proxy utilizzato per la connessione a BigQuery tramite connettori ODBC e SDK. </br>HTTP (predefinito), http_no_tunnel, socks4 e socks5 sono attualmente supportati. |
+| ProxyType | Tipo di proxy utilizzato per connettersi a BigQuery tramite connettori ODBC e SDK. </br>Attualmente sono supportati HTTP (impostazione predefinita), http_no_tunnel, socks4 e socks5. |
 | ProxyHost | Nome host o indirizzo IP in cui è possibile raggiungere il proxy. |
 | ProxyPort | Numero di porta su cui è in esecuzione il proxy, ad esempio 8080 |
 | ProxyUid | Nome utente utilizzato per il proxy autenticato |
 | ProxyPwd | Password ProxyUid |
-| bqpath | Questo è applicabile solo per lo strumento a caricamento collettivo (Cloud SDK). </br> Per evitare di utilizzare la variabile PATH o se la directory google-cloud-sdk deve essere spostata in un’altra posizione, puoi specificare con questa opzione il percorso esatto della directory cloud sdk bin sul server. |
+| bqpath | Tieni presente che questo è applicabile solo per lo strumento di caricamento in blocco (SDK per cloud). </br> Per evitare di utilizzare la variabile PATH o se la directory google-cloud-sdk deve essere spostata in un’altra posizione, con questa opzione puoi specificare il percorso esatto della directory bin dell’SDK cloud sul server. |

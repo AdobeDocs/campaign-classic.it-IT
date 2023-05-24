@@ -18,7 +18,7 @@ ht-degree: 0%
 
 La descrizione di un modulo è un documento XML strutturato che osserva la grammatica dello schema del modulo **xtk:form**.
 
-Il documento XML del modulo di input deve contenere `<form>` elemento principale con **name** e **namespace** attributi per compilare il nome e lo spazio dei nomi del modulo.
+Il documento XML del modulo di input deve contenere `<form>` elemento principale con **nome** e **namespace** attributi per compilare il nome del modulo e lo spazio dei nomi.
 
 ```xml
 <form name="form_name" namespace="name_space">
@@ -26,7 +26,7 @@ Il documento XML del modulo di input deve contenere `<form>` elemento principale
 </form>
 ```
 
-Per impostazione predefinita, un modulo è associato allo schema dati con lo stesso nome e lo stesso spazio dei nomi. Per associare un modulo con un nome diverso, impostare la **entity-schema** dell&#39;attributo `<form>` al nome della chiave dello schema. Per illustrare la struttura di un modulo di input, descriviamo un’interfaccia utilizzando lo schema di esempio &quot;cus:recipient&quot;:
+Per impostazione predefinita, un modulo è associato allo schema dati con lo stesso nome e lo stesso spazio dei nomi. Per associare un modulo a un nome diverso, impostare **entity-schema** attributo del `<form>` al nome della chiave dello schema. Per illustrare la struttura di un modulo di input, descriviamo un’interfaccia utilizzando lo schema di esempio &quot;cus:recipient&quot;:
 
 ```xml
 <srcSchema name="recipient" namespace="cus">
@@ -56,20 +56,20 @@ Il modulo di input basato sullo schema di esempio:
 </form>
 ```
 
-La descrizione dei controlli di modifica inizia dal `<form>` elemento principale. Un controllo di modifica viene immesso in un **`<input>`** con **xpath** attributo contenente il percorso del campo nel relativo schema.
+La descrizione dei controlli di modifica inizia da `<form>` elemento principale. Un controllo di modifica viene immesso in un **`<input>`** elemento con **xpath** attributo contenente il percorso del campo nel relativo schema.
 
-Il controllo edit si adatta automaticamente al tipo di dati corrispondente e utilizza l’etichetta definita nello schema.
+Il controllo di modifica si adatta automaticamente al tipo di dati corrispondente e utilizza l&#39;etichetta definita nello schema.
 
 >[!NOTE]
 >
->Puoi sovraccaricare l’etichetta definita nel relativo schema di dati aggiungendo la variabile **etichetta** attributo `<input>` elemento:\
+>Puoi sovraccaricare l’etichetta definita nel relativo schema di dati aggiungendo la **etichetta** attribuire a `<input>` elemento:\
 >`<input label="Email address" xpath="@name" />`
 
-Per impostazione predefinita, ogni campo viene visualizzato su una singola riga e occupa tutto lo spazio disponibile a seconda del tipo di dati.
+Per impostazione predefinita, ogni campo viene visualizzato su una sola riga e occupa tutto lo spazio disponibile a seconda del tipo di dati.
 
 ## Formattazione {#formatting}
 
-Il layout dei controlli è simile al layout utilizzato nelle tabelle di HTML, con la possibilità di dividere un controllo in più colonne, elementi di interlacciamento o di specificare l&#39;occupazione dello spazio disponibile. Tenere tuttavia presente che la formattazione consente solo di suddividere l&#39;area per proporzioni; non è possibile specificare dimensioni fisse per un oggetto.
+Il layout dei controlli è simile al layout utilizzato nelle tabelle HTML, con la possibilità di dividere un controllo in più colonne, di interlacciare elementi o di specificare l&#39;occupazione dello spazio disponibile. Tenete presente, tuttavia, che la formattazione consente di dividere l&#39;area solo per le proporzioni; non è possibile specificare dimensioni fisse per un oggetto.
 
 Per visualizzare i controlli dell&#39;esempio precedente in due colonne:
 
@@ -85,9 +85,9 @@ Per visualizzare i controlli dell&#39;esempio precedente in due colonne:
 </form>
 ```
 
-La **`<container>`** con **colcount** attributo consente di forzare la visualizzazione dei controlli figlio su due colonne.
+Il **`<container>`** elemento con **colcount** attributo consente di forzare la visualizzazione dei controlli figlio in due colonne.
 
-La **colata** l&#39;attributo di un controllo estende il controllo in base al numero di colonne inserite nel relativo valore:
+Il **colspan** in un controllo estende il controllo in base al numero di colonne immesse nel relativo valore:
 
 ![](assets/d_ncs_integration_form_exemple3.png)
 
@@ -101,7 +101,7 @@ La **colata** l&#39;attributo di un controllo estende il controllo in base al nu
 </form> 
 ```
 
-Compilando il **type=&quot;frame&quot;** attributo , il contenitore aggiunge una cornice intorno ai controlli secondari con l&#39;etichetta contenuta in **etichetta** attributo:
+Compilando il **type=&quot;frame&quot;** , il contenitore aggiunge una cornice intorno ai controlli figlio con l&#39;etichetta contenuta nel **etichetta** attributo:
 
 ![](assets/d_ncs_integration_form_exemple4.png)
 
@@ -129,15 +129,15 @@ A **`<static>`** può essere utilizzato per formattare il modulo di input:
 </form>
 ```
 
-La **`<static>`** con il tag **separatore** Il tipo consente di aggiungere una barra separatrice con un’etichetta contenuta in **etichetta** attributo.
+Il **`<static>`** tag con **separatore** tipo consente di aggiungere una barra di separazione con un&#39;etichetta contenuta nel **etichetta** attributo.
 
 È stato aggiunto un testo della guida utilizzando `<static>` tag con tipo di guida. Il contenuto del testo viene immesso nel **etichetta** attributo.
 
 ## Contenitori {#containers}
 
-I contenitori consentono di raggruppare un set di controlli. Sono rappresentati dal **`<container>`** elemento. Sono stati utilizzati in precedenza per formattare i controlli su più colonne.
+I contenitori consentono di raggruppare un insieme di controlli. Essi sono rappresentati dal **`<container>`** elemento. Sono stati utilizzati in precedenza per formattare i controlli su più colonne.
 
-La **xpath** attributo su `<container>` consente di semplificare il riferimento ai controlli figlio. Il riferimento ai controlli è quindi relativo all&#39;elemento padre `<container>` elemento.
+Il **xpath** attributo su una `<container>` consente di semplificare il riferimento ai controlli figlio. Il riferimento dei controlli viene quindi relativo al padre `<container>` elemento.
 
 Esempio di contenitore senza &quot;xpath&quot;:
 
@@ -157,13 +157,13 @@ Esempio con l’aggiunta di &quot;xpath&quot; all’elemento denominato &quot;lo
 </container>
 ```
 
-### Tipi di contenitori {#types-of-container}
+### Tipi di contenitore {#types-of-container}
 
 I contenitori vengono utilizzati per creare controlli complessi utilizzando un set di campi formattati nelle pagine.
 
-#### Contenitore a schede {#tab-container}
+#### Contenitore di schede {#tab-container}
 
-Un contenitore a schede formatta i dati in pagine accessibili dalle schede.
+Un contenitore di schede formatta i dati nelle pagine accessibili dalle schede.
 
 ![](assets/d_ncs_integration_form_exemple6.png)
 
@@ -180,18 +180,18 @@ Un contenitore a schede formatta i dati in pagine accessibili dalle schede.
 </container>
 ```
 
-Il contenitore principale è definito dalla **type=&quot;notebook&quot;** attributo. Le schede vengono dichiarate nei contenitori secondari e l’etichetta delle schede viene compilata dalla **etichetta** attributo.
+Il contenitore principale è definito da **type=&quot;notebook&quot;** attributo. Le schede vengono dichiarate nei contenitori figlio e l’etichetta delle schede viene compilata dalla sezione **etichetta** attributo.
 
 ![](assets/d_ncs_integration_form_exemple7.png)
 
 >[!NOTE]
 >
->A **style=&quot;down|up**(per impostazione predefinita)**&quot;** forza il posizionamento verticale delle etichette di tabulazione sotto o sopra il controllo. Questa funzione è facoltativa.
+>A **style=&quot;down|up**(per impostazione predefinita)**&quot;** La funzione forza il posizionamento verticale delle etichette di tabulazione sotto o sopra il controllo. Questa funzione è facoltativa.
 >`<container style="down" type="notebook">  … </container>`
 
 #### Elenco icone {#icon-list}
 
-Questo contenitore presenta una barra delle icone verticale che consente di selezionare le pagine da visualizzare.
+Questo contenitore visualizza una barra di icone verticale che consente di selezionare le pagine da visualizzare.
 
 ![](assets/d_ncs_integration_form_exemple8.png)
 
@@ -208,17 +208,17 @@ Questo contenitore presenta una barra delle icone verticale che consente di sele
 </container>
 ```
 
-Il contenitore principale è definito dalla **type=&quot;iconbox&quot;** attributo. Le pagine associate alle icone vengono dichiarate nei contenitori secondari. L’etichetta delle icone viene compilata dal **etichetta** attributo.
+Il contenitore principale è definito da **type=&quot;iconbox&quot;** attributo. Le pagine associate alle icone vengono dichiarate nei contenitori figlio. L’etichetta delle icone viene compilata dal file **etichetta** attributo.
 
-L’icona di una pagina viene compilata dal `img="<image>"` attributo, dove `<image>` è il nome dell’immagine corrispondente alla chiave costituita dal nome e dallo spazio dei nomi (ad esempio, &quot;xtk:properties.png&quot;).
+L’icona di una pagina viene compilata dalla sezione `img="<image>"` attributo, dove `<image>` è il nome dell’immagine corrispondente alla sua chiave composta dal nome e dallo spazio dei nomi (ad esempio, &quot;xtk:properties.png&quot;).
 
-Le immagini sono disponibili dal **[!UICONTROL Administration > Configuration > Images]** nodo.
+Le immagini sono disponibili nella sezione **[!UICONTROL Administration > Configuration > Images]** nodo.
 
 #### Contenitore Visibilità {#visibility-container}
 
-È possibile mascherare un set di controlli tramite una condizione dinamica.
+È possibile mascherare un insieme di controlli tramite una condizione dinamica.
 
-Questo esempio illustra la visibilità dei controlli sul valore del campo &quot;Genere&quot;:
+Questo esempio illustra la visibilità dei controlli sul valore del campo &quot;Gender&quot;:
 
 ```xml
 <container type="visibleGroup" visibleIf="@gender=1">
@@ -229,17 +229,17 @@ Questo esempio illustra la visibilità dei controlli sul valore del campo &quot;
 </container>
 ```
 
-Un contenitore di visibilità è definito dall’attributo **type=&quot;visibleGroup&quot;**. La **visibleIf** l&#39;attributo contiene la condizione di visibilità.
+Un contenitore di visibilità è definito dall&#39;attributo **type=&quot;visibleGroup&quot;**. Il **visibleIf** contiene la condizione di visibilità.
 
-Esempi di sintassi della condizione:
+Esempi di sintassi delle condizioni:
 
-* **visibleIf=&quot;@email=&#39;peter.martinezATneeolane.net&#39;&quot;**: verifica l&#39;uguaglianza nei dati di tipo stringa. Il valore di confronto deve essere tra virgolette.
-* **visibleIf=&quot;@gender >= 1 e @gender != 2&quot;**: su un valore numerico.
-* **visibleIf=&quot;@boolean1=true o @boolean2=false&quot;**: test su campi booleani.
+* **visibleIf=&quot;@email=&#39;peter.martinezATneeolane.net&#39;&quot;**: verifica l’uguaglianza nei dati di tipo stringa. Il valore di confronto deve essere tra virgolette.
+* **visibleIf=&quot;@gender >= 1 e @gender != 2&quot;**: condizione su un valore numerico.
+* **visibleIf=&quot;@boolean1=true o @boolean2=false&quot;**: verifica sui campi booleani.
 
 #### Abilitazione del contenitore {#enabling-container}
 
-Questo contenitore consente di abilitare o disabilitare un set di dati da una condizione dinamica. La disattivazione di un controllo ne impedisce la modifica. L&#39;esempio seguente illustra l&#39;abilitazione dei controlli dal valore del campo &quot;Genere&quot;:
+Questo contenitore ti consente di abilitare o disabilitare un set di dati da una condizione dinamica. La disattivazione di un controllo ne impedisce la modifica. L’esempio seguente illustra l’abilitazione dei controlli dal valore del campo &quot;Genere&quot;:
 
 ```xml
 <container type="enabledGroup" enabledIf="@gender=1">
@@ -250,11 +250,11 @@ Questo contenitore consente di abilitare o disabilitare un set di dati da una co
 </container>
 ```
 
-Un contenitore di abilitazione è definito dalla **type=&quot;enabledGroup&quot;** attributo. La **enabledIf** l&#39;attributo contiene la condizione di attivazione.
+Un contenitore di abilitazione è definito da **type=&quot;enabledGroup&quot;** attributo. Il **enabledIf** contiene la condizione di attivazione.
 
 ## Modifica di un collegamento {#editing-a-link}
 
-Ricorda che nello schema dati è dichiarato un collegamento come segue:
+Ricorda che un collegamento viene dichiarato nello schema di dati come segue:
 
 ```xml
 <element label="Company" name="company" target="cus:company" type="link"/>
@@ -268,17 +268,17 @@ Il controllo di modifica del collegamento nel relativo modulo di input è il seg
 <input xpath="company"/>
 ```
 
-La selezione di Target è accessibile tramite il campo di modifica. L’ingresso è assistito dal tipo avanti in modo che un elemento di destinazione possa essere facilmente trovato dai primi caratteri immessi. La ricerca viene quindi basata sul **Stringa di calcolo** definito nello schema di destinazione. Se lo schema non esiste dopo la convalida nel controllo, viene visualizzato un messaggio di conferma della creazione rapida del target. La conferma crea un nuovo record nella tabella di destinazione e lo associa al collegamento.
+La selezione del target è accessibile tramite il campo di modifica. L&#39;immissione è assistita dal completamento automatico in modo che un elemento di destinazione possa essere facilmente trovato dai primi caratteri immessi. La ricerca si basa quindi sul **Stringa di calcolo** definito nello schema di destinazione. Se lo schema non esiste dopo la convalida nel controllo, viene visualizzato un messaggio di conferma della creazione immediata del target. La conferma crea un nuovo record nella tabella di destinazione e lo associa al collegamento.
 
-Un elenco a discesa viene utilizzato per selezionare un elemento di destinazione dall’elenco di record già creati.
+Viene utilizzato un elenco a discesa per selezionare un elemento di destinazione dall’elenco di record già creato.
 
-La **[!UICONTROL Modify the link]** (cartella) lancia un modulo di selezione con l’elenco degli elementi di destinazione e una zona filtro:
+Il **[!UICONTROL Modify the link]** (cartella) avvia un modulo di selezione con l’elenco degli elementi target e un’area filtro:
 
 ![](assets/d_ncs_integration_form_exemple10.png)
 
-La **[!UICONTROL Edit link]** (lente di ingrandimento) lancia il modulo di modifica dell’elemento collegato. Il modulo utilizzato viene dedotto per impostazione predefinita sulla chiave dello schema di destinazione. La **modulo** consente di forzare il nome del modulo di modifica (ad esempio &quot;cus:company2&quot;).
+Il **[!UICONTROL Edit link]** (lente di ingrandimento) avvia il modulo di modifica dell’elemento collegato. Il modulo utilizzato viene dedotto per impostazione predefinita sulla chiave dello schema di destinazione. Il **modulo** attribute consente di forzare il nome del modulo di modifica (ad esempio, &quot;cus:company2&quot;).
 
-Puoi limitare la scelta degli elementi di destinazione aggiungendo il **`<sysfilter>`** elemento dalla definizione del collegamento nel modulo di input:
+Puoi limitare la scelta degli elementi target aggiungendo il **`<sysfilter>`** dalla definizione del collegamento nel modulo di input:
 
 ```xml
 <input xpath="company">
@@ -288,7 +288,7 @@ Puoi limitare la scelta degli elementi di destinazione aggiungendo il **`<sysfil
 </input>
 ```
 
-È inoltre possibile ordinare l’elenco con **`<orderby>`** elemento:
+Puoi anche ordinare l’elenco con **`<orderby>`** elemento:
 
 ```xml
 <input xpath="company">
@@ -298,13 +298,13 @@ Puoi limitare la scelta degli elementi di destinazione aggiungendo il **`<sysfil
 </input>
 ```
 
-### Proprietà di controllo {#control-properties}
+### Proprietà controllo {#control-properties}
 
-* **noAutoComplete**: disabilita type-ahead (con il valore &quot;true&quot;)
-* **createMode**: crea il collegamento al volo, se non esiste. I valori possibili sono:
+* **noAutoComplete**: disabilita la funzione di completamento automatico (con il valore &quot;true&quot;)
+* **createMode**: crea il collegamento al volo se non esiste. I valori possibili sono:
 
-   * **nessuno**: disabilita la creazione. Se il collegamento non esiste, viene visualizzato un messaggio di errore
-   * **inline**: crea il collegamento con il contenuto del campo di modifica
+   * **nessuno**: disabilita la creazione di. Se il collegamento non esiste, viene visualizzato un messaggio di errore
+   * **in linea**: crea il collegamento con il contenuto nel campo di modifica
    * **edizione**: visualizza il modulo di modifica sul collegamento. Quando il modulo viene convalidato, i dati vengono salvati (modalità predefinita)
 
 * **noZoom**: nessun modulo di modifica sul collegamento (con il valore &quot;true&quot;)
@@ -312,11 +312,11 @@ Puoi limitare la scelta degli elementi di destinazione aggiungendo il **`<sysfil
 
 ## Elenco dei collegamenti {#list-of-links}
 
-Un collegamento inserito nello schema dati come elemento di raccolta (unbound=&quot;true&quot;) deve passare attraverso un elenco per visualizzare tutti gli elementi associati ad esso.
+Un collegamento immesso nello schema dati come elemento di raccolta (unbound=&quot;true&quot;) deve scorrere un elenco per visualizzare tutti gli elementi associati.
 
-Il principio consiste nel visualizzare l’elenco degli elementi collegati con il caricamento ottimizzato dei dati (download per batch di dati, esecuzione dell’elenco solo se visibile).
+Il principio consiste nella visualizzazione dell’elenco degli elementi collegati con caricamento dei dati ottimizzato (download per batch di dati, esecuzione dell’elenco solo se è visibile).
 
-Esempio di collegamento di una raccolta in uno schema:
+Esempio di un collegamento di raccolta in uno schema:
 
 ```xml
 <element label="Events" name="rcpEvent" target="cus:event" type="link" unbound="true">
@@ -324,7 +324,7 @@ Esempio di collegamento di una raccolta in uno schema:
 </element>
 ```
 
-L’elenco nel relativo modulo di immissione:
+L’elenco nella sua forma di input:
 
 ![](assets/d_ncs_integration_form_exemple11.png)
 
@@ -335,19 +335,19 @@ L’elenco nel relativo modulo di immissione:
 </input>
 ```
 
-Il controllo elenco è definito dalla **type=&quot;linklist&quot;** attributo. Il percorso dell&#39;elenco deve fare riferimento al collegamento della raccolta.
+Il controllo elenco è definito da **type=&quot;linklist&quot;** attributo. Il percorso dell’elenco deve fare riferimento al collegamento della raccolta.
 
-Le colonne vengono dichiarate tramite il **`<input>`** elementi dell&#39;elenco. La **xpath** attributo si riferisce al percorso del campo nello schema di destinazione.
+Le colonne vengono dichiarate tramite **`<input>`** elementi dell&#39;elenco. Il **xpath** l&#39;attributo fa riferimento al percorso del campo nello schema di destinazione.
 
 Una barra degli strumenti con un’etichetta (definita sul collegamento nello schema) viene automaticamente posizionata sopra l’elenco.
 
-L’elenco può essere filtrato tramite **[!UICONTROL Filters]** e configurati per aggiungere e ordinare le colonne.
+L’elenco può essere filtrato tramite **[!UICONTROL Filters]** e configurate per aggiungere e ordinare le colonne.
 
-La **[!UICONTROL Add]** e **[!UICONTROL Delete]** I pulsanti ti consentono di aggiungere ed eliminare elementi della raccolta sul collegamento. Per impostazione predefinita, l’aggiunta di un elemento avvia il modulo di modifica dello schema di destinazione.
+Il **[!UICONTROL Add]** e **[!UICONTROL Delete]** I pulsanti consentono di aggiungere ed eliminare elementi della raccolta sul collegamento. Per impostazione predefinita, l’aggiunta di un elemento avvia il modulo di modifica dello schema di destinazione.
 
-La **[!UICONTROL Detail]** viene aggiunto automaticamente quando **zoom=&quot;true&quot;** l&#39;attributo è completato nel **`<input>`** tag dell’elenco: consente di avviare il modulo di modifica della riga selezionata.
+Il **[!UICONTROL Detail]** viene aggiunto automaticamente quando **zoom=&quot;true&quot;** l&#39;attributo è completato il **`<input>`** tag dell’elenco: ti consente di avviare il modulo di modifica della riga selezionata.
 
-È possibile applicare filtri e ordinamento quando l’elenco viene caricato:
+È possibile applicare filtri e ordinamenti durante il caricamento dell’elenco:
 
 ```xml
  <input xpath="rcpEvent" type="linklist">
@@ -362,13 +362,13 @@ La **[!UICONTROL Detail]** viene aggiunto automaticamente quando **zoom=&quot;tr
 </input>
 ```
 
-### Tabella di relazione {#relationship-table}
+### Tabella relazioni {#relationship-table}
 
 Una tabella di relazione consente di collegare due tabelle con cardinalità N-N. La tabella delle relazioni contiene solo i collegamenti alle due tabelle.
 
-L’aggiunta di un elemento all’elenco dovrebbe pertanto consentire di completare un elenco da uno dei due collegamenti presenti nella tabella delle relazioni.
+L’aggiunta di un elemento all’elenco dovrebbe pertanto consentirti di completare un elenco da uno dei due collegamenti nella tabella delle relazioni.
 
-Esempio di tabella di relazione in uno schema:
+Esempio di tabella di relazioni in uno schema:
 
 ```xml
 <srcSchema name="subscription" namespace="cus">
@@ -377,7 +377,7 @@ Esempio di tabella di relazione in uno schema:
 </srcSchema>
 ```
 
-Per il nostro esempio, iniziamo con il modulo di input dello schema &quot;cus:recipient&quot;. L’elenco deve visualizzare le associazioni con abbonamenti ai servizi e deve consentire di aggiungere un abbonamento selezionando un servizio esistente.
+Nel nostro esempio, iniziamo con il modulo di input dello schema &quot;cus:recipient&quot;. L’elenco deve visualizzare le associazioni con gli abbonamenti ai servizi e deve consentirti di aggiungere un abbonamento selezionando un servizio esistente.
 
 ![](assets/d_ncs_integration_form_exemple12.png)
 
@@ -388,32 +388,32 @@ Per il nostro esempio, iniziamo con il modulo di input dello schema &quot;cus:re
 </input>
 ```
 
-La **xpathChoiceTarget** consente di avviare un modulo di selezione dal collegamento inserito. La creazione del record della tabella delle relazioni aggiornerà automaticamente il collegamento al destinatario corrente e al servizio selezionato.
+Il **xpathChoiceTarget** attributo consente di avviare un modulo di selezione dal collegamento inserito. La creazione del record della tabella delle relazioni aggiornerà automaticamente il collegamento al destinatario corrente e al servizio selezionato.
 
 >[!NOTE]
 >
->La **xpathEditTarget** attributo ti consente di forzare la modifica della riga selezionata sul collegamento inserito.
+>Il **xpathEditTarget** L&#39;attributo consente di forzare la modifica della riga selezionata sul collegamento inserito.
 
 ### Proprietà elenco {#list-properties}
 
-* **noToolbar**: nasconde la barra degli strumenti (con valore &quot;true&quot;)
+* **noToolbar**: nasconde la barra degli strumenti (con il valore &quot;true&quot;)
 * **toolbarCaption**: sovraccarica l’etichetta della barra degli strumenti
 * **toolbarAlign**: modifica la geometria verticale o orizzontale della barra degli strumenti (valori possibili: &quot;verticale&quot;|&quot;orizzontale&quot;)
 * **img**: visualizza l’immagine associata all’elenco
 * **modulo**: sovraccarica il modulo di modifica dell’elemento di destinazione
-* **zoom**: aggiunge la **[!UICONTROL Zoom]** per modificare l’elemento di destinazione
-* **xpathEditTarget**: imposta la modifica del collegamento inserito
-* **xpathChoiceTarget**: inoltre, avvia il modulo di selezione sul collegamento inserito
+* **zoom**: aggiunge **[!UICONTROL Zoom]** per modificare l’elemento di destinazione
+* **xpathEditTarget**: imposta la modifica sul collegamento inserito
+* **xpathChoiceTarget**: avvia inoltre il modulo di selezione sul collegamento inserito
 
-## Controlli per l&#39;elenco di memoria {#memory-list-controls}
+## Controlli dell’elenco della memoria {#memory-list-controls}
 
-Gli elenchi di memoria consentono di modificare gli elementi della raccolta utilizzando il precaricamento dei dati dell’elenco. Impossibile filtrare o configurare l&#39;elenco.
+Gli elenchi di memoria consentono di modificare gli elementi della raccolta utilizzando il precaricamento dei dati dell’elenco. Questo elenco non può essere filtrato o configurato.
 
-Questi elenchi vengono utilizzati su elementi di raccolta mappati XML o su collegamenti a basso volume.
+Questi elenchi vengono utilizzati su elementi di raccolta XML mappati o su collegamenti di volumi ridotti.
 
-### Elenco a colonne {#column-list}
+### Elenco colonne {#column-list}
 
-Questo controllo visualizza un elenco di colonne modificabili con una barra degli strumenti contenente i pulsanti Aggiungi ed Elimina .
+Questo controllo visualizza un elenco di colonne modificabile con una barra degli strumenti contenente i pulsanti Aggiungi ed Elimina.
 
 ![](assets/d_ncs_integration_form_exemple13.png)
 
@@ -424,13 +424,13 @@ Questo controllo visualizza un elenco di colonne modificabili con una barra degl
 </input>
 ```
 
-Il controllo elenco deve essere compilato con **type=&quot;list&quot;** e il percorso dell&#39;elenco deve fare riferimento all&#39;elemento di raccolta.
+Il controllo elenco deve essere compilato con **type=&quot;list&quot;** e il percorso dell&#39;elenco deve fare riferimento all&#39;elemento collection.
 
-Le colonne sono dichiarate nel figlio **`<input>`** tag dell’elenco. L’etichetta e la dimensione della colonna possono essere forzate con **etichetta** e **colSize** attributi.
+Le colonne vengono dichiarate nell&#39;elemento figlio **`<input>`** dell’elenco. L’etichetta e la dimensione della colonna possono essere forzate con **etichetta** e **colSize** attributi.
 
 >[!NOTE]
 >
->Le frecce di ordinamento vengono aggiunte automaticamente quando **ordered=&quot;true&quot;** viene aggiunto all&#39;elemento di raccolta nello schema dati.
+>Le frecce di ordinamento vengono aggiunte automaticamente quando **ordered=&quot;true&quot;** L&#39;attributo viene aggiunto all&#39;elemento di raccolta nello schema dati.
 
 I pulsanti della barra degli strumenti possono essere allineati orizzontalmente:
 
@@ -443,11 +443,11 @@ I pulsanti della barra degli strumenti possono essere allineati orizzontalmente:
 </input>
 ```
 
-La **toolbarCaption** forza l’allineamento orizzontale della barra degli strumenti e immette il titolo sopra l’elenco.
+Il **toolbarCaption** L&#39;attributo forza l&#39;allineamento orizzontale della barra degli strumenti e immette il titolo sopra l&#39;elenco.
 
-#### Zoom in un elenco {#zoom-in-a-list}
+#### Ingrandire un elenco {#zoom-in-a-list}
 
-L’inserimento e la modifica dei dati in un elenco possono essere immessi in un modulo di modifica separato.
+L&#39;inserimento e la modifica dei dati in un elenco possono essere immessi in un modulo di modifica separato.
 
 ![](assets/d_ncs_integration_form_exemple15.png)
 
@@ -463,28 +463,28 @@ L’inserimento e la modifica dei dati in un elenco possono essere immessi in un
 </input>
 ```
 
-Il modulo di modifica viene completato dal `<form>` in definizione elenco. La sua struttura è identica a quella di un modulo di input. La **[!UICONTROL Detail]** viene aggiunto automaticamente quando **zoom=&quot;true&quot;** l&#39;attributo è completato nel **`<input>`** tag dell’elenco. Questo attributo consente di avviare il modulo di modifica della riga selezionata.
+Il modulo di modifica viene completato da `<form>` elemento nella definizione dell’elenco. La sua struttura è identica a quella di un modulo di input. Il **[!UICONTROL Detail]** viene aggiunto automaticamente quando **zoom=&quot;true&quot;** l&#39;attributo è completato il **`<input>`** dell’elenco. Questo attributo consente di avviare il modulo di modifica della riga selezionata.
 
 >[!NOTE]
 >
->Aggiunta di **zoomOnAdd=&quot;true&quot;** forza la chiamata del modulo di modifica quando viene inserito un elemento elenco.
+>Aggiunta di **zoomOnAdd=&quot;true&quot;** attribute forza la chiamata del modulo di modifica quando viene inserito un elemento elenco.
 
 ### Proprietà elenco {#list-properties-1}
 
-* **noToolbar**: nasconde la barra degli strumenti (con valore &quot;true&quot;)
+* **noToolbar**: nasconde la barra degli strumenti (con il valore &quot;true&quot;)
 * **toolbarCaption**: sovraccarica l’etichetta della barra degli strumenti
 * **toolbarAlign**: modifica il posizionamento della barra degli strumenti (valori possibili: &quot;verticale&quot;|&quot;orizzontale&quot;)
 * **img**: visualizza l’immagine associata all’elenco
 * **modulo**: sovraccarica il modulo di modifica dell’elemento di destinazione
-* **zoom**: aggiunge la **[!UICONTROL Zoom]** per modificare l’elemento di destinazione
+* **zoom**: aggiunge **[!UICONTROL Zoom]** per modificare l’elemento di destinazione
 * **zoomOnAdd**: avvia il modulo di modifica sull’aggiunta
-* **xpathChoiceTarget**: inoltre, avvia il modulo di selezione sul collegamento inserito
+* **xpathChoiceTarget**: avvia inoltre il modulo di selezione sul collegamento inserito
 
 ## Campi non modificabili {#non-editable-fields}
 
-Per visualizzare un campo ed impedirne la modifica, utilizza la **`<value>`** oppure completa il **readOnly=&quot;true&quot;** dell&#39;attributo **`<input>`** tag .
+Per visualizzare un campo e impedirne la modifica, utilizzare **`<value>`** o completa il **readOnly=&quot;true&quot;** attributo su **`<input>`** tag.
 
-Esempio nel campo &quot;Genere&quot;:
+Esempio sul campo &quot;Genere&quot;:
 
 ![](assets/d_ncs_integration_form_exemple16.png)
 
@@ -495,9 +495,9 @@ Esempio nel campo &quot;Genere&quot;:
 
 ## Pulsante di opzione {#radio-button}
 
-Un pulsante di scelta consente di scegliere tra diverse opzioni. La **`<input>`** vengono utilizzati per elencare le opzioni possibili e **checkedValue** attributo specifica il valore associato alla scelta.
+Un pulsante di scelta consente di scegliere tra diverse opzioni. Il **`<input>`** i tag vengono utilizzati per elencare le opzioni possibili e le **selectedValue** attribute specifica il valore associato alla scelta.
 
-Esempio nel campo &quot;Genere&quot;:
+Esempio sul campo &quot;Genere&quot;:
 
 ```xml
 <input type="RadioButton" xpath="@gender" checkedValue="0" label="Choice 1"/>
@@ -509,7 +509,7 @@ Esempio nel campo &quot;Genere&quot;:
 
 ## Casella di controllo {#checkbox}
 
-Una casella di controllo riflette uno stato booleano (selezionato o meno). Per impostazione predefinita, questo controllo è utilizzato dai campi &quot;booleani&quot; (true/false). A questo pulsante può essere associata una variabile con un valore predefinito pari a 0 o 1. Questo valore può essere sovraccaricato tramite il **checkValue** attributi.
+Una casella di controllo riflette uno stato booleano (selezionato o meno). Per impostazione predefinita, questo controllo viene utilizzato dai campi &quot;booleani&quot; (true/false). A questo pulsante può essere associata una variabile che assume un valore predefinito pari a 0 o 1. Questo valore può essere sovraccaricato tramite **checkValue** attributi.
 
 ```xml
 <input xpath="@boolean1"/>
@@ -522,11 +522,11 @@ Una casella di controllo riflette uno stato booleano (selezionato o meno). Per i
 
 <!-- to be completed -->
 
-## Modifica della gerarchia di navigazione {#navigation-hierarchy-edit}
+## Modifica gerarchia di navigazione {#navigation-hierarchy-edit}
 
-Questo controllo crea una struttura ad albero in un insieme di campi da modificare.
+Questo controllo crea una struttura ad albero su un insieme di campi da modificare.
 
-I controlli da modificare sono raggruppati in un **`<container>`** inserito sotto **`<input>`** tag del controllo struttura:
+I controlli da modificare sono raggruppati in un **`<container>`** immessi in **`<input>`** tag del controllo struttura:
 
 ```xml
 <input nolabel="true" type="treeEdit">
@@ -545,7 +545,7 @@ I controlli da modificare sono raggruppati in un **`<container>`** inserito sott
 
 ## Campo espressione {#expression-field}
 
-Un campo espressione aggiorna dinamicamente un campo da un’espressione; la **`<input>`** viene utilizzato con un **xpath** per inserire il percorso del campo da aggiornare e un **expo** attributo contenente l&#39;espressione update .
+Un campo espressione aggiorna dinamicamente un campo da un’espressione; il campo **`<input>`** viene utilizzato con un tag **xpath** per immettere il percorso del campo da aggiornare e un attributo **expo** attributo contenente l&#39;espressione di aggiornamento.
 
 ```xml
 <!-- Example: updating the boolean1 field from the value contained in the field with path /tmp/@flag -->
@@ -555,20 +555,20 @@ Un campo espressione aggiorna dinamicamente un campo da un’espressione; la **`
 
 ## Contesto dei moduli {#context-of-forms}
 
-L’esecuzione di un modulo di input inizializza un documento XML contenente i dati dell’entità da modificare. Questo documento rappresenta il contesto del modulo e può essere utilizzato come area di lavoro.
+L&#39;esecuzione di un modulo di input inizializza un documento XML contenente i dati dell&#39;entità da modificare. Questo documento rappresenta il contesto del modulo e può essere utilizzato come area di lavoro.
 
 ### Aggiornamento del contesto {#updating-the-context}
 
-Per modificare il contesto del modulo, utilizzare la `<set expr="<value>" xpath="<field>"/>` tag, dove `<field>` è il campo di destinazione e `<value>` è l&#39;espressione o il valore di aggiornamento.
+Per modificare il contesto del modulo, utilizzare `<set expr="<value>" xpath="<field>"/>` tag, dove `<field>` è il campo di destinazione, e `<value>` è l’espressione o il valore di aggiornamento.
 
-Esempi di utilizzo `<set>` tag:
+Esempi di utilizzo del `<set>` tag:
 
-* **`<set expr="'Test'" xpath="/tmp/@test" />`**: posiziona il valore &#39;Test&#39; nella posizione temporanea /tmp/@test1
+* **`<set expr="'Test'" xpath="/tmp/@test" />`**: posiziona il valore &quot;Test&quot; nella posizione temporanea /tmp/@test1
 * **`<set expr="'Test'" xpath="@lastName" />`**: aggiorna l’entità sull’attributo &quot;lastName&quot; con il valore &quot;Test&quot;
 * **`<set expr="true" xpath="@boolean1" />`**: imposta il valore del campo &quot;boolean1&quot; su &quot;true&quot;
-* **`<set expr="@lastName" xpath="/tmp/@test" />`**: aggiornamenti relativi al contenuto dell&#39;attributo &quot;lastName&quot;
+* **`<set expr="@lastName" xpath="/tmp/@test" />`**: viene aggiornato con il contenuto dell’attributo &quot;lastName&quot;
 
-Il contesto del modulo può essere aggiornato al momento dell’inizializzazione e della chiusura del modulo tramite la **`<enter>`** e **`<leave>`** tag.
+È possibile aggiornare il contesto del modulo durante l&#39;inizializzazione e la chiusura del modulo tramite **`<enter>`** e **`<leave>`** tag.
 
 ```xml
 <form name="recipient" namespace="cus">
@@ -584,13 +584,13 @@ Il contesto del modulo può essere aggiornato al momento dell’inizializzazione
 
 >[!NOTE]
 >
->La `<enter>` e `<leave>` possono essere utilizzati nei `<container>` di pagine (tipi &quot;blocco appunti&quot; e &quot;casella icone&quot;).
+>Il `<enter>` e `<leave>` I tag possono essere utilizzati nel `<container>` di pagine (tipi &quot;notebook&quot; e &quot;iconbox&quot;).
 
-### Linguaggio delle espressioni {#expression-language-}
+### Linguaggio di espressione {#expression-language-}
 
-Per eseguire test condizionali, è possibile utilizzare una macro-lingua nella definizione del modulo.
+Nella definizione del modulo è possibile utilizzare un linguaggio macro per eseguire test condizionali.
 
-La **`<if expr="<expression>" />`** se l’espressione è verificata, il tag esegue le istruzioni specificate sotto il tag :
+Il **`<if expr="<expression>" />`** Il tag esegue le istruzioni specificate nel tag se l’espressione viene verificata:
 
 ```xml
 <if expr="([/tmp/@test] == 'Test' or @lastName != 'Doe') and @boolean2 == true">
@@ -598,7 +598,7 @@ La **`<if expr="<expression>" />`** se l’espressione è verificata, il tag ese
 </if>
 ```
 
-La **`<check expr="<condition>" />`** combinato con **`<error>`** impedisce la convalida del modulo e visualizza un messaggio di errore se la condizione non è soddisfatta:
+Il **`<check expr="<condition>" />`** combinato con **`<error>`** impedisce la convalida del modulo e visualizza un messaggio di errore se la condizione non viene soddisfatta:
 
 ```xml
 <leave>
@@ -612,7 +612,7 @@ La **`<check expr="<condition>" />`** combinato con **`<error>`** impedisce la c
 
 ## Procedure guidate {#wizards}
 
-Una procedura guidata ti guida attraverso un set di passaggi di immissione dati sotto forma di pagine. I dati immessi vengono salvati al momento della convalida del modulo.
+Una procedura guidata consente di eseguire una serie di passaggi di immissione dati sotto forma di pagine. I dati immessi vengono salvati al momento della convalida del modulo.
 
 Una procedura guidata ha la seguente struttura:
 
@@ -631,15 +631,15 @@ Una procedura guidata ha la seguente struttura:
 
 ![](assets/d_ncs_integration_form_exemple19.png)
 
-La presenza di **type=&quot;Wizard&quot;** dell&#39;attributo `<form>` consente di definire la modalità di creazione guidata nella costruzione del modulo. Le pagine vengono completate da `<container>` elementi, che sono figli del `<form>` elemento. La `<container>` L’elemento di una pagina viene popolato con gli attributi title per il titolo e desc per visualizzare la descrizione sotto il titolo della pagina. La **[!UICONTROL Previous]** e **[!UICONTROL Next]** i pulsanti vengono aggiunti automaticamente per consentire la navigazione tra le pagine.
+La presenza del **type=&quot;wizard&quot;** attributo su `<form>` consente di definire la modalità procedura guidata nella costruzione del modulo. Le pagine vengono completate da `<container>` elementi, che sono figli di `<form>` elemento. Il `<container>` L&#39;elemento di una pagina viene compilato con gli attributi title per il titolo e desc per visualizzare la descrizione sotto il titolo della pagina. Il **[!UICONTROL Previous]** e **[!UICONTROL Next]** I pulsanti vengono aggiunti automaticamente per consentire la navigazione tra le pagine.
 
-La **[!UICONTROL Finish]** salva i dati immessi e chiude il modulo.
+Il **[!UICONTROL Finish]** consente di salvare i dati immessi e di chiudere il modulo.
 
 ### Metodi SOAP {#soap-methods}
 
-L’esecuzione del metodo SOAP può essere avviata da un popolato **`<leave>`** alla fine di una pagina.
+L&#39;esecuzione del metodo SOAP può essere avviata da un **`<leave>`** alla fine di una pagina.
 
-La **`<soapcall>`** Il tag contiene la chiamata per il metodo con i seguenti parametri di input:
+Il **`<soapcall>`** Il tag contiene la chiamata per il metodo con i seguenti parametri di input:
 
 ```xml
 <soapCall name="<name>" service="<schema>">
@@ -648,22 +648,22 @@ La **`<soapcall>`** Il tag contiene la chiamata per il metodo con i seguenti par
 </soapCall>
 ```
 
-Il nome del servizio e il relativo schema di implementazione vengono immessi tramite il **name** e **servizio** gli attributi **`<soapcall>`** tag .
+Il nome del servizio e il relativo schema di implementazione vengono immessi tramite **nome** e **servizio** attributi di **`<soapcall>`** tag.
 
-I parametri di input sono descritti nella sezione **`<param>`** gli elementi **`<soapcall>`** tag .
+I parametri di input sono descritti nella **`<param>`** elementi sotto **`<soapcall>`** tag.
 
-Il tipo di parametro deve essere specificato tramite il **type** attributo. I tipi possibili sono i seguenti:
+Il tipo di parametro deve essere specificato tramite **tipo** attributo. I tipi possibili sono i seguenti:
 
-* **string**: stringa di caratteri
-* **booleano**: Booleano
-* **byte**: Numero intero a 8 bit
-* **short**: Numero intero a 16 bit
-* **long**: Numero intero a 32 bit
-* **short**: Numero intero a 16 bit
-* **double**: numero a virgola mobile a doppia precisione
+* **stringa**: stringa di caratteri
+* **booleano**: booleano
+* **byte**: numero intero a 8 bit
+* **corto**: numero intero a 16 bit
+* **long**: numero intero a 32 bit
+* **corto**: numero intero a 16 bit
+* **doppio**: numero a virgola mobile a doppia precisione
 * **DOMElement**: nodo di tipo elemento
 
-La **exprIn** L&#39;attributo contiene la posizione dei dati da trasmettere come parametro.
+Il **exprIn** contiene la posizione dei dati da passare come parametro.
 
 **Esempio**:
 

@@ -13,32 +13,32 @@ ht-degree: 3%
 
 # Rilevare gli URL di tracciamento
 
-## Esempio di mancata rilevazione
+## Esempio di non rilevamento
 
-`<%= getURL("http://mynewsletter.com") %>` funziona e invia il contenuto effettivo della pagina web tramite e-mail ai destinatari. Ma nessuno dei collegamenti è tracciato. Il motivo è che l’MTA viene eseguito `"<%=getURL(..."` per ogni e-mail prima dell’invio. Può essere diverso per ogni destinatario, pertanto Adobe Campaign non può conoscere gli URL per il tracciamento e assegnargli un ID tag.
+`<%= getURL("http://mynewsletter.com") %>` funziona e invia il contenuto effettivo della pagina web tramite e-mail ai destinatari. Ma nessuno dei collegamenti viene tracciato. Questo perché l’MTA viene eseguito `"<%=getURL(..."` per ogni e-mail prima dell’invio. Può essere diverso per ogni destinatario, pertanto Adobe Campaign non può conoscere gli URL per il tracciamento e assegnare loro un ID tag.
 
-Quando la pagina da scaricare è la stessa per tutti i destinatari, si consiglia di effettuare le seguenti operazioni:
+Quando la pagina da scaricare è la stessa per tutti i destinatari, la best practice prevede di effettuare le seguenti operazioni:
 
 `<%@ include url="http://mynewsletter.com" %>`
 
-In tal caso, la pagina viene scaricata durante l’analisi, prima del rilevamento del tracciamento. Consente ad Adobe Campaign di individuare i collegamenti, assegnare un ID tag e tenerli traccia.
+In tal caso, la pagina viene scaricata durante l’analisi, prima del rilevamento del tracciamento. Consente ad Adobe Campaign di scoprire i collegamenti, assegnare un ID tag e tracciarli.
 
 ## Pattern consigliato
 
-Dopo l’elaborazione `<%@` , l’URL da tracciare presenta la seguente sintassi: `<a href="http://myurl.com/a.php?param1=aaa&param2=<%=escapeUrl(recipient.xxx)%>&param3=<%=escapeUrl(recipient.xxx)%>">`
+Dopo l’elaborazione `<%@` istruzioni, l’URL da tracciare ha la seguente sintassi: `<a href="http://myurl.com/a.php?param1=aaa&param2=<%=escapeUrl(recipient.xxx)%>&param3=<%=escapeUrl(recipient.xxx)%>">`
 
 >[!IMPORTANT]
 >
->Tutti gli altri modelli non sono supportati dall&#39;Adobe e dovrebbero essere evitati per evitare potenziali lacune di sicurezza.
+>Tutti gli altri modelli non sono supportati da Adobe e devono essere evitati per evitare potenziali lacune di sicurezza.
 
 ## Pattern non protetto
 
-Quando aggiungi collegamenti personalizzati al contenuto, evita sempre di avere alcuna personalizzazione nella parte dell’URL relativa al nome host per evitare potenziali lacune nella sicurezza. Per ulteriori informazioni, consulta [questa pagina](../../installation/using/privacy.md#url-personalization).
+Quando aggiungi collegamenti personalizzati al contenuto, evita sempre di includere alcuna personalizzazione nella parte nome host dell’URL per evitare potenziali lacune di sicurezza. Per ulteriori informazioni, consulta [questa pagina](../../installation/using/privacy.md#url-personalization).
 
-Ad esempio, il `<a href="http://<%=myURL%>">` sintassi **non protetto** e deve essere evitato.
+Ad esempio, il `<a href="http://<%=myURL%>">` la sintassi è **non protetto** e devono essere evitati.
 
 * L’utilizzo di questa sintassi può causare problemi di sicurezza se il collegamento generato da Adobe Campaign contiene uno o più parametri.
-* Tidy può attaccare in modo errato alcuni dei collegamenti, che possono accadere in modo casuale. Il sintomo tipico è un elemento di HTML visibile nelle bozze e-mail ma non nell’anteprima.
-* La fuga dall’URL è problematica, alcuni caratteri nell’URL possono causare problemi.
-* Nell&#39;URL di reindirizzamento non può essere presente un parametro denominato ID in conflitto con il parametro .
-* L’interesse del tracciamento è quindi limitato alle statistiche sulla consegna, in quanto Adobe Campaign tiene traccia indifferentemente di tutti i valori possibili di &quot;myURL&quot;.
+* Tidy può correggere in modo errato alcuni collegamenti, che possono verificarsi in modo casuale. Il sintomo tipico è un pezzo di HTML visibile nelle bozze e-mail ma non nell’anteprima.
+* L’escape dall’URL è problematico; alcuni caratteri nell’URL possono causare problemi.
+* Nell&#39;URL di reindirizzamento non può essere presente un parametro denominato ID in conflitto con il parametro.
+* L’interesse del tracciamento è quindi limitato alle statistiche sulla consegna, in quanto Adobe Campaign tiene traccia in modo indifferente di tutti i possibili valori di &quot;myURL&quot;.

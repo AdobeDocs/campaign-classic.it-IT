@@ -18,6 +18,6 @@ ht-degree: 3%
 
 
 
-Questo documento descrive le procedure di produzione per Adobe Campaign: configurazione, monitoraggio, processo di aggiornamento, elaborazione dei dati, procedura di manutenzione del database e raccomandazioni. Una sezione sulla risoluzione dei problemi è disponibile alla fine di questo documento.
+Questo documento descrive le procedure di produzione per Adobe Campaign: configurazione, monitoraggio, processo di aggiornamento, elaborazione dei dati, procedura di manutenzione del database e raccomandazioni. Alla fine di questo documento è disponibile una sezione per la risoluzione dei problemi.
 
-Le procedure di produzione devono essere eseguite con cautela, i loro impatti devono essere esaminati in anticipo e la procedura deve essere eseguita con rigore. Deve essere eseguito solo da un utente esperto. È consigliabile contattare Adobe Campaign prima di avviare qualsiasi procedura di produzione, in particolare i passaggi successivi all’aggiornamento.
+Le procedure di produzione devono essere eseguite con cautela, i loro impatti devono essere valutati in anticipo e la procedura deve essere eseguita con rigore. Deve essere eseguito solo da un utente esperto. Consigliamo vivamente di contattare Adobe Campaign prima di iniziare qualsiasi procedura di produzione, in particolare i passaggi successivi all’aggiornamento.

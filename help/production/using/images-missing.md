@@ -18,17 +18,17 @@ ht-degree: 5%
 
 
 
-Nella versione 17.9 sono stati spostati diversi file (in particolare icone).
+Nella versione 17.9, sono stati spostati diversi file (in particolare icone).
 
-Per i clienti in hosting, non vi è alcun impatto. Per le installazioni on-premise, leggi quanto segue.
+Per i clienti in hosting, non vi è alcun impatto. Per le installazioni on-premise, leggere quanto segue.
 
 **Utenti Apache:**
 
-Gli utenti Apache non hanno alcun impatto se utilizzano il **apache_neolane.conf**.
+Non c’è alcun impatto per gli utenti Apache se utilizzano il fornito **apache_neolane.conf**.
 
 **Utenti IIS:**
 
-Per gli utenti IIS (su Windows), dopo l&#39;aggiornamento della build nella console appariranno diverse icone mancanti. Sono necessari ulteriori passaggi di aggiornamento IIS:
+Per gli utenti IIS (su Windows), dopo l’aggiornamento della build nella console mancheranno diverse icone. Sono necessari ulteriori passaggi per l’aggiornamento di IIS:
 
 1. Dopo l’aggiornamento della build, fai doppio clic su **iis_neolane_setup.vbs** si trova nella directory di installazione di Campaign. Il percorso predefinito è C:\Program Files (x86)\Adobe\Adobe Campaign v7\conf
-1. Riavvia il sito IIS aggiornato dal passaggio precedente.
+1. Riavvia il sito IIS che è stato aggiornato dal passaggio precedente.

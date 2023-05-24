@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Informazioni sulla gestione dei contenuti
-description: Guida introduttiva al modulo Campaign Content Manager
+description: Guida introduttiva al modulo Gestione contenuti di Campaign
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Landing Pages, Email Design
@@ -17,15 +17,15 @@ ht-degree: 2%
 
 
 
-Il modulo Adobe Campaign Content Manager è uno specifico Campaign Classic [pacchetto integrato](../../installation/using/installing-campaign-standard-packages.md) che è possibile installare per creare newsletter o siti web ricorrenti. Può essere utile per creare, convalidare e pubblicare i messaggi.
+Il modulo Adobe Campaign Content Manager è un Campaign Classic specifico [pacchetto integrato](../../installation/using/installing-campaign-standard-packages.md) installabile per creare newsletter o siti Web ricorrenti. Può essere utile per creare, convalidare e pubblicare i messaggi.
 
 >[!NOTE]
 >
->Questa sezione fa riferimento al modulo Content Management. Per ulteriori informazioni su come progettare il contenuto delle consegne e-mail, consulta [questa sezione](defining-the-email-content.md).
+>Questa sezione fa riferimento al modulo Gestione dei contenuti. Per ulteriori informazioni su come progettare il contenuto delle consegne e-mail, consulta [questa sezione](defining-the-email-content.md).
 
-Il modulo di gestione dei contenuti include funzionalità di gruppo di lavoro, flusso di lavoro e aggregazione dei contenuti. Questo consente di formattare automaticamente un messaggio: e-mail, posta, SMS, web, ecc.
+Il modulo Content Management incorpora le funzionalità di gruppo di lavoro, flusso di lavoro e aggregazione dei contenuti. Questo consente di formattare automaticamente un messaggio: e-mail, e-mail, SMS, web, ecc.
 
-L’utilizzo di content manager in una consegna consente di offrire campi di input o di selezione agli operatori responsabili della creazione dei contenuti. Il layout e la visualizzazione di questo contenuto e le eventuali modifiche apportate vengono gestiti automaticamente utilizzando il foglio di stile.
+L’utilizzo del gestore dei contenuti in una consegna ti consente di offrire campi di input o selezione agli operatori incaricati della creazione dei contenuti. Il layout e la visualizzazione di questo contenuto e di eventuali modifiche apportate vengono gestiti automaticamente utilizzando il foglio di stile.
 
 ![](assets/s_ncs_content_create_content_sample.png)
 
@@ -35,13 +35,13 @@ L’utilizzo di content manager in una consegna consente di offrire campi di inp
 
 La gestione dei contenuti offre i seguenti vantaggi:
 
-* Modifica strutturata dei messaggi tramite interfacce di input,
-* Separazione del contenuto dei dati e relativa presentazione (generata in formato XML),
-* Generazione di documenti in più formati (html, txt, XML, ecc.) basati su fogli di stile per garantire il rispetto dei caratteri grafici,
-* recupero e aggregazione automatica dei flussi di contenuto esterno,
+* Modifica strutturata dei messaggi mediante interfacce di ingresso,
+* Separazione del contenuto dei dati e modalità di presentazione (generato in formato XML),
+* Generazione di documenti in più formati (html, txt, XML, ecc.) basati su fogli di stile per garantire la conformità con i caratteri grafici,
+* Recupero e aggregazione automatica dei flussi di contenuti esterni,
 * Collaborazione con il flusso di lavoro per la convalida e il controllo dei dati.
 
-Questa modalità di creazione dei contenuti comporta tuttavia alcuni vincoli; in particolare:
+Questa modalità di creazione dei contenuti comporta tuttavia alcuni vincoli, tra cui in particolare:
 
-* Libertà limitata per quanto riguarda la progettazione definitiva del documento,
-* L&#39;analisi dei requisiti deve essere rigorosa in modo che gli utenti finali non siano disturbati da una funzione mancante.
+* La libertà limitata per quanto riguarda il disegno o modello del documento finale,
+* L’analisi dei requisiti deve essere rigorosa in modo che gli utenti finali non siano disturbati da una funzione mancante.

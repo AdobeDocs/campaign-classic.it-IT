@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Creare lo script
-description: Scopri come eseguire test A/B tramite un caso d’uso dedicato
+description: Scopri come eseguire il test A/B tramite un caso d’uso dedicato
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
@@ -17,11 +17,11 @@ ht-degree: 5%
 
 
 
-La scelta del contenuto di consegna destinato alla popolazione rimanente viene calcolata da uno script. Questo script recupera le informazioni relative alla consegna con il tasso di apertura più elevato e copia il contenuto nella consegna finale.
+La scelta del contenuto di consegna destinato al gruppo rimanente viene calcolata da uno script. Questo script recupera le informazioni relative alla consegna con il tasso più elevato di aperture e copia il contenuto nella consegna finale.
 
 ## Esempio di script {#example-of-a-script}
 
-Il seguente script può essere utilizzato così come è nel flusso di lavoro di targeting. Per ulteriori informazioni al riguardo, consulta [questa sezione](#implementation).
+Lo script seguente può essere utilizzato così come è nel flusso di lavoro di targeting. Per ulteriori informazioni al riguardo, consulta [questa sezione](#implementation).
 
 ```
  // query the database to find the winner (best open rate)
@@ -71,12 +71,12 @@ Per una spiegazione dettagliata dello script, fare riferimento a [questa sezione
 
 ## Implementazione {#implementation}
 
-1. Apri il tuo **[!UICONTROL JavaScript code]** attività.
-1. Copia lo script offerto in [Esempio di script](#example-of-a-script) nel **[!UICONTROL JavaScript code]** finestra.
+1. Apri il **[!UICONTROL JavaScript code]** attività.
+1. Copia lo script offerto in [Esempio di script](#example-of-a-script) in **[!UICONTROL JavaScript code]** finestra.
 
    ![](assets/use_case_abtesting_configscript_002.png)
 
-1. In **[!UICONTROL Label]** immettere il nome dello script, ovvero
+1. In **[!UICONTROL Label]** , immettere il nome dello script, ad esempio
 
    ```
    <%= vars.deliveryId %>
@@ -91,7 +91,7 @@ Per una spiegazione dettagliata dello script, fare riferimento a [questa sezione
 
 Questa sezione descrive le varie parti dello script e la relativa modalità operativa.
 
-* La prima parte dello script è una query. La **queryDef** consente di recuperare dal **NmsDelivery** tabella delle consegne create eseguendo il flusso di lavoro di targeting e per ordinarle in base al tasso di apertura stimato, vengono recuperate le informazioni dalla consegna con il tasso di apertura più elevato.
+* La prima parte dello script è una query. Il **queryDef** consente di ripristinare da **NmsDelivery** compila una tabella delle consegne create eseguendo il flusso di lavoro di targeting e ordinale in base al tasso stimato di aperture, quindi recupera le informazioni della consegna con il tasso più alto di aperture.
 
    ```
    // query the database to find the winner (best open rate)
@@ -111,7 +111,7 @@ Questa sezione descrive le varie parti dello script e la relativa modalità oper
         </queryDef>).ExecuteQuery()
    ```
 
-* La consegna con il tasso di apertura più alto è duplicata.
+* La consegna con la più alta frequenza di aperture viene duplicata.
 
    ```
     // create a new delivery object and initialize it by doing a copy of
@@ -160,14 +160,14 @@ Questa sezione descrive le varie parti dello script e la relativa modalità oper
 
 ## Altri criteri di selezione {#other-selection-criteria}
 
-L’esempio precedente ti consente di selezionare il contenuto di una consegna in base al tasso di apertura delle e-mail. Puoi adattarlo in base ad altri indicatori specifici per la consegna:
+L’esempio precedente ti consente di selezionare il contenuto di una consegna in base alla frequenza di aperture delle e-mail. Puoi adattarlo per basarti su altri indicatori specifici per la consegna:
 
-* Velocità effettiva di clic migliore: `[indicators/@recipientClickRatio]`,
-* Tasso di reattività più alto (apertura e-mail e clic nel messaggio): `[indicators/@reactivity]`,
-* Tasso di reclamo inferiore: `[indicators/@refusedRatio]` (usa il valore false per l&#39;attributo sortDesc),
+* Velocità di clic migliore: `[indicators/@recipientClickRatio]`,
+* Tasso di reattività più alto (apertura dell’e-mail e clic nel messaggio): `[indicators/@reactivity]`,
+* Percentuale di reclami più bassa: `[indicators/@refusedRatio]` utilizzare il valore false per l&#39;attributo sortDesc.
 * Tasso di conversione più alto: `[indicators/@transactionRatio]`,
 * Numero di pagine visitate dopo la ricezione di un messaggio: `[indicators/@totalWebPage]`,
-* Tasso minimo di annullamento sottoscrizione: `[indicators/@optOutRatio]`,
+* Percentuale di annullamento dell’abbonamento più bassa: `[indicators/@optOutRatio]`,
 * Importo transazione: `[indicators/@amount]`.
 
 Ora puoi definire la consegna finale. [Ulteriori informazioni](a-b-testing-uc-final-delivery.md).

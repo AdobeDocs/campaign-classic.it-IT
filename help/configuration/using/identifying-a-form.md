@@ -20,4 +20,4 @@ Un modulo di input consente di modificare un’istanza associata a uno schema di
 
 Il modulo è identificato dal nome e dallo spazio dei nomi.
 
-La chiave di identificazione di un modulo è una stringa costituita dallo spazio dei nomi e dal nome separati da due punti (&#39;:&#39;) (ad esempio: &quot;cus:contact&quot;).
+La chiave di identificazione di un modulo è una stringa costituita dallo spazio dei nomi e dal nome separato da due punti (&#39;:&#39;) (ad esempio: &quot;cus:contact&quot;).

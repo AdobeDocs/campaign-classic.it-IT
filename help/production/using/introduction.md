@@ -18,36 +18,36 @@ ht-degree: 1%
 
 
 
-Questa sezione presenta la procedura da applicare per l’aggiornamento di Adobe Campaign, lato client e lato server e descrive il passaggio a Unicode di un’istanza esistente.
+Questa sezione descrive la procedura da applicare per aggiornare Adobe Campaign, lato client e lato server, e descrive il passaggio a Unicode di un’istanza esistente.
 
 >[!NOTE]
 >
->Per le istanze di servizi ospitati e gestiti, è necessario coordinarsi con l&#39;amministratore di Adobe.\
->Per le istanze on-premise, puoi ottenere assistenza dai Consulenti Adobe.
+>Per le istanze di servizi ospitati/gestiti, è necessario coordinarsi con l&#39;amministratore Adobe.\
+>Per le istanze on-premise, puoi ottenere assistenza da Consulenti Adobe.
 
-L&#39;aggiornamento deve essere applicato a tutti i server in cui è installato Adobe Campaign.
+L’aggiornamento deve essere applicato a tutti i server in cui è installato Adobe Campaign.
 
-1. Esegui la migrazione dei server di reindirizzamento e tracking (Apache/IIS).
+1. Esegui la migrazione dei server di reindirizzamento e tracciamento (Apache/IIS).
 1. Eseguire la migrazione dei server Power Booster/Cluster.
 1. Esegui la migrazione del server di marketing.
 
-Adobe Campaign si basa su diversi processi eseguiti sul lato server che sarà necessario manipolare durante gli aggiornamenti, in particolare:
+Adobe Campaign si basa su diversi processi eseguiti sul lato server che dovranno essere modificati durante gli aggiornamenti, in particolare:
 
-* Server applicazioni (web nlserver)
+* Server applicazioni (nlserver web)
 * Server di consegna (mta nlserver)
 * Server di reindirizzamento (webmdl)
 
 >[!CAUTION]
 >
->La console client deve trovarsi nella stessa build dell’istanza server.
+>La console client deve trovarsi nella stessa build dell’istanza del server.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sui vari processi Adobe Campaign, consulta [questa sezione](../../installation/using/general-architecture.md#logical-application-layer).\
+>Per ulteriori informazioni sui vari processi di Adobe Campaign, consulta [questa sezione](../../installation/using/general-architecture.md#logical-application-layer).\
 >Quando si utilizza l&#39;architettura di tipo Power Booster o Power Cluster, è necessario applicare questo processo a tutti i server Power Booster/Cluster.
 
-Se la nuova versione comporta una modifica della struttura del database, si consiglia di riavviare i server nel seguente ordine:
+Se la nuova versione comporta una modifica della struttura del database, si consiglia di riavviare i server nell&#39;ordine seguente:
 
-1. server applicazioni (web nlserver),
+1. Server applicazioni (nlserver web),
 1. server di reindirizzamento (webmdl),
-1. Server di consegna (nlserver mta).
+1. Server di consegna (mta nlserver).

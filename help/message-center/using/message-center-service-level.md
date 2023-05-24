@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Livello di servizio del Centro messaggi
-description: Ulteriori informazioni sul report a livello di servizio del Centro messaggi
+description: Ulteriori informazioni sul report del livello di servizio del Centro messaggi
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
@@ -18,23 +18,23 @@ ht-degree: 3%
 
 
 
-Questo rapporto visualizza le statistiche di consegna relative ai messaggi transazionali e la suddivisione degli errori. Puoi fare clic su un tipo di errore per visualizzarne i dettagli.
+Questo rapporto visualizza le statistiche di consegna relative ai messaggi transazionali e il raggruppamento degli errori. Puoi fare clic su un tipo di errore per visualizzarne i dettagli.
 
-Questo rapporto, rivolto agli amministratori tecnici, è accessibile anche tramite **[!UICONTROL Monitoring]** nell&#39;istanza di controllo.
+Il report, destinato agli amministratori tecnici, è accessibile anche tramite il **[!UICONTROL Monitoring]** sull&#39;istanza di controllo.
 
 ![](assets/mc_reports_1.png)
 
-In questo rapporto puoi scegliere di visualizzare le statistiche generali o quelle relative a una particolare istanza di esecuzione. Puoi anche filtrare i dati per canale e per un periodo di tempo specifico.
+In questo rapporto puoi scegliere di visualizzare le statistiche generali o quelle relative a una particolare istanza di esecuzione. Puoi anche filtrare i dati per canale e in un periodo specifico.
 
-Gli indicatori visualizzati nel **[!UICONTROL Indicators over the period]** La sezione viene calcolata nel periodo selezionato:
+Gli indicatori visualizzati nella **[!UICONTROL Indicators over the period]** vengono calcolate nel periodo selezionato:
 
 * **[!UICONTROL Incoming (throughput event/h)]** : numero medio orario di eventi immessi nella coda del Centro messaggi.
 * **[!UICONTROL Incoming (event vol)]** : numero di eventi immessi nella coda del Centro messaggi.
 * **[!UICONTROL Outgoing (throughput msg/h)]** : numero medio orario di eventi del Centro messaggi in uscita riusciti (inviati da una consegna).
-* **[!UICONTROL Outgoing (msg vol)]** : numero di eventi del Centro messaggi in uscita riusciti (inviati da una consegna).
-* **[!UICONTROL Average sending time (seconds)]** : tempo medio trascorso in Centro messaggi per gli eventi elaborati correttamente. Il calcolo tiene conto del tempo di elaborazione e del tempo di invio mta.
-* **[!UICONTROL Error rate]** : numero di eventi con errori rispetto al numero di eventi che sono entrati nella coda del Centro messaggi. Vengono presi in considerazione i seguenti errori: errore di routing, evento scaduto (evento che è stato in coda troppo a lungo), errore di consegna, ignorato dalla consegna (quarantena, ecc.).
+* **[!UICONTROL Outgoing (msg vol)]** : numero di eventi del Centro messaggi in uscita completati (inviati da una consegna).
+* **[!UICONTROL Average sending time (seconds)]** : tempo medio trascorso nel Centro messaggi per gli eventi elaborati correttamente. Il calcolo tiene conto del tempo di elaborazione e del tempo di invio dell’MTA.
+* **[!UICONTROL Error rate]** : numero di eventi con errori rispetto al numero di eventi che sono entrati nella coda del Centro messaggi. Vengono presi in considerazione i seguenti errori: errore di routing, evento scaduto (evento che è stato nella coda troppo lungo), errore di consegna, ignorato dalla consegna (quarantena, ecc.).
 
 >[!NOTE]
 >
->Le soglie degli indicatori di avviso (arancione) e avviso (rosso) possono essere configurate nella procedura guidata di distribuzione. Fai riferimento a [Monitorare le soglie](../../message-center/using/additional-configurations.md#monitoring-thresholds).
+>Le soglie degli indicatori di avviso (arancione) e di avviso (rosso) possono essere configurate nella procedura guidata di distribuzione. Fai riferimento a [Monitorare le soglie](../../message-center/using/additional-configurations.md#monitoring-thresholds).

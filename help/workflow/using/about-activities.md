@@ -16,11 +16,11 @@ ht-degree: 12%
 
 
 
-Questa sezione descrive tutte le attività disponibili. A seconda del nodo o del contesto in cui viene creato/modificato il flusso di lavoro, le attività disponibili possono variare. Ad esempio, i flussi di lavoro creati in una campagna hanno attività di consegna specifiche per canale.
+Questa sezione descrive tutte le attività disponibili. Le attività disponibili possono variare a seconda del nodo o del contesto in cui viene creato/modificato il flusso di lavoro. Ad esempio, i flussi di lavoro creati in una campagna presentano attività di consegna specifiche per il canale.
 
 Le attività del flusso di lavoro sono raggruppate per categoria. Sono disponibili quattro schede contemporaneamente.
 
-Nei flussi di lavoro delle campagne, la **[!UICONTROL Events]** viene sostituita dalla scheda **[!UICONTROL Deliveries]** scheda . Le attività in questa scheda sono descritte in [Attività azione](about-action-activities.md) sezione .
+Nei flussi di lavoro della campagna, il **[!UICONTROL Events]** è sostituito da **[!UICONTROL Deliveries]** scheda. Le attività in questa scheda sono descritte in dettaglio nella [Attività azione](about-action-activities.md) sezione.
 
 ![](assets/wf-activity-tabs.png)
 

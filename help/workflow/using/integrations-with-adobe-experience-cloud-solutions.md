@@ -16,7 +16,7 @@ ht-degree: 23%
 
 
 
-I flussi di lavoro descritti di seguito sono installati con **Integrazione con Adobe Experience Cloud** modulo per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questo [sezione](../../integrations/using/configuring-ims.md#installing-the-package).
+I flussi di lavoro descritti di seguito vengono installati con **Integrazione con Adobe Experience Cloud** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../integrations/using/configuring-ims.md#installing-the-package).
 
 <table> 
  <tbody> 
@@ -31,9 +31,9 @@ I flussi di lavoro descritti di seguito sono installati con **Integrazione con A
    <td> Questo flusso di lavoro ti consente di importare tipi di pubblico/segmenti da diverse soluzioni Adobe Experience Cloud in Adobe Campaign.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Esportare tipi di pubblico in Adobe Experience Cloud</span> <br /> </td> 
+   <td> <span class="uicontrol">Esportare i tipi di pubblico in Adobe Experience Cloud</span> <br /> </td> 
    <td> <span class="uicontrol">exportSharedAudience</span> <br /> </td> 
-   <td> Questo flusso di lavoro esporta i tipi di pubblico come pubblici/segmenti condivisi. Questi tipi di pubblico possono essere utilizzati nelle diverse soluzioni Adobe Experience Cloud che utilizzi.<br /> </td> 
+   <td> Questo flusso di lavoro esporta i tipi di pubblico come tipi di pubblico/segmenti condivisi. Questi tipi di pubblico possono essere utilizzati nelle diverse soluzioni Adobe Experience Cloud che utilizzi.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

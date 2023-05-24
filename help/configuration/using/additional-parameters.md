@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Parametri di web tracking aggiuntivi
-description: Ulteriori informazioni sui parametri per il web tracking
+title: Parametri di tracciamento web aggiuntivi
+description: Ulteriori informazioni sui parametri per il tracciamento web
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: d14d94fd-b078-4893-be84-31d37a1d50f5
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
@@ -11,18 +11,18 @@ ht-degree: 0%
 
 ---
 
-# Parametri di web tracking aggiuntivi{#additional-parameters}
+# Parametri di tracciamento web aggiuntivi{#additional-parameters}
 
 ## Definizione dei parametri {#definition-of-parameters}
 
-La piattaforma Adobe Campaign offre due parametri standard per il web tracking di tipo TRANSAZIONE:
+La piattaforma Adobe Campaign offre due parametri di tracciamento web di tipo TRANSACTION come standard:
 
-* **importo**: rappresenta l&#39;importo di una transazione,
+* **quantità**: rappresenta l’importo di una transazione,
 * **articolo**: rappresenta il numero di elementi in una transazione.
 
-Questi parametri sono definiti nella variabile **nms:webTrackingLog** e sono alcuni degli indicatori visualizzati nel reporting.
+Questi parametri sono definiti nella **nms:webTrackingLog** e sono alcuni degli indicatori visualizzati nel reporting.
 
-Per definire parametri aggiuntivi, è necessario estendere questo schema.
+Per definire parametri aggiuntivi, devi estendere questo schema.
 
 **Esempio**:
 
@@ -40,21 +40,21 @@ Per definire parametri aggiuntivi, è necessario estendere questo schema.
 
 Puoi visualizzare i valori di questi parametri configurando l’elenco dei registri di tracciamento (di una consegna o di un destinatario).
 
-## Reindirizzamento della configurazione del server {#redirection-server-configuration}
+## Configurazione server di reindirizzamento {#redirection-server-configuration}
 
-Nella configurazione del server, puoi definire il numero massimo di caratteri da prendere in considerazione per i parametri di web tracking.
+Nella configurazione del server, puoi definire il numero massimo di caratteri da considerare per i parametri di tracciamento web.
 
 >[!IMPORTANT]
 >
->L’aumento del numero massimo di caratteri da prendere in considerazione può influire sulle prestazioni di web tracking della piattaforma.
+>L’aumento del numero massimo di caratteri da considerare può influire sulle prestazioni di tracciamento web della piattaforma.
 
-A questo scopo, modifica la **webTrackingParamSize** dell&#39;attributo **`<trackinglogd>`** nel **serverConf.xml** file. Questo file viene salvato nella **conf** sottodirectory della directory di installazione di Adobe Campaign.
+A questo scopo, modifica il **webTrackingParamSize** attributo del **`<trackinglogd>`** elemento nel **serverConf.xml** file. Questo file viene salvato in **conf** sottodirectory della directory di installazione di Adobe Campaign.
 
 **Esempio**:
 
-Il valore predefinito è 64 caratteri. Questo valore consente di tenere conto del **importo** e **articolo** (&quot;amount=xxxxxxxxxx&amp;article=xxxxxxxx&quot;) parametri standard.
+Il valore predefinito è 64 caratteri. Questo valore ti consente di prendere in considerazione **quantità** e **articolo** (&quot;amount=xxxxxxxx&amp;article=xxxxxxxx&quot;) parametri standard.
 
-Tenendo conto di entrambi i parametri (dimensione del nome + dimensione del valore) indicati nell&#39;esempio di schema dell&#39;estensione di cui sopra, puoi modificare la configurazione per prendere in considerazione 100 caratteri (&quot;amount=xxxxxxxxxxxx&amp;article=xxxxxxxx&amp;mode=xxxxxxxxxx&amp;code=xxxxx&quot;).
+Tenendo conto di entrambi i parametri (dimensione del nome + dimensione del valore) indicati nell’esempio di schema di estensione precedente, puoi modificare la configurazione in modo da tenere conto di 100 caratteri (&quot;amount=xxxxxxxx&amp;article=xxxxxx&amp;mode=xxxxxxxx&amp;code=xxxxxxx&quot;).
 
 ```
 <trackinglogd args="" autoStart="false" initScript="" maxCreateFileRetry="5" maxLogsSizeOnDiskMb="500"
@@ -63,21 +63,21 @@ processRestartTime="06:00:00" purgeLogsPeriod="50000" runLevel="10"
 webTrackingParamSize="64"/>
 ```
 
-Quando la configurazione è stata modificata, devi:
+Dopo aver modificato la configurazione, è necessario:
 
-* Arrestare il server web che ospita il modulo di reindirizzamento (Apache, IIS, ecc.),
+* Arrestare il server Web che ospita il modulo di reindirizzamento (Apache, IIS, ecc.),
 * Arresta il server Adobe Campaign: **net stop nlserver6** in Windows, **/etc/init.d/nlserver6 stop** in Linux,
 
    >[!NOTE]
    >
-   >A partire da 20.1, si consiglia di utilizzare invece il seguente comando (per Linux): **system stop nlserver**
+   >A partire dalla versione 20.1, si consiglia invece di utilizzare il seguente comando (per Linux): **systemctl stop nlserver**
 
-* In Linux, elimina i segmenti di memoria condivisa utilizzando **ipcrm** comando,
+* In Linux, eliminare i segmenti di memoria condivisa utilizzando **ipcrm** comando,
 * Riavvia il server Adobe Campaign: **net start nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux,
 
    >[!NOTE]
    >
-   >A partire da 20.1, si consiglia di utilizzare invece il seguente comando (per Linux): **system start nlserver**
+   >A partire dalla versione 20.1, si consiglia invece di utilizzare il seguente comando (per Linux): **systemctl start nlserver**
 
 * Riavvia il server web.
 
@@ -107,4 +107,4 @@ adobe@selma:~$ systemctl start apache2
 
 >[!NOTE]
 >
->Per Linux, se si aumenta la dimensione del **webTrackingParamSize** o **maxSharedLogs** parametri, potrebbe essere necessario aumentare le dimensioni della memoria condivisa (SHM).
+>Per Linux, se si aumentano le dimensioni del **webTrackingParamSize** o **maxSharedLogs** , potrebbe essere necessario aumentare le dimensioni della memoria condivisa (SHM).

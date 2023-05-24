@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Adattare la configurazione
-description: Scopri come adattare la configurazione prima e dopo una migrazione a Campaign v7
+description: Scopri come adattare la configurazione prima e dopo la migrazione a Campaign v7
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: migration
 content-type: reference
@@ -22,18 +22,18 @@ ht-degree: 2%
 
 Alcune modifiche principali in Adobe Campaign v7 richiedono una configurazione specifica. Queste configurazioni possono essere necessarie prima o dopo la migrazione.
 
-Durante la migrazione, il **NmsRecipient** la tabella viene ricreata dalla definizione degli schemi. Eventuali modifiche apportate alla struttura SQL di questa tabella al di fuori di Adobe Campaign andranno perse.
+Durante la migrazione, il **NmsRecipient** viene ricreata dalla definizione degli schemi. Qualsiasi modifica apportata alla struttura SQL di questa tabella al di fuori di Adobe Campaign andrà persa.
 
-Esempio di elementi da controllare:
+Esempio di elementi da verificare:
 
-* Se hai aggiunto una colonna (o un indice) nel **NmsRecipient** tabella ma non dettagliata nello schema, questa non verrà salvata.
-* La **tablespace** l&#39;attributo recupera i valori per impostazione predefinita, ovvero quelli definiti nella procedura guidata di distribuzione.
-* Se hai aggiunto una visualizzazione di riferimento al **NmsRecipient** prima di eseguire la migrazione, è necessario eliminarla.
+* Se hai aggiunto una colonna (o un indice) alla **NmsRecipient** ma non è stata specificata in dettaglio nello schema, non verrà salvata.
+* Il **tablespace** l’attributo recupera i propri valori per impostazione predefinita, ovvero quelli definiti nella procedura guidata di distribuzione.
+* Se è stata aggiunta una vista di riferimento al **NmsRecipient** tabella, è necessario eliminarla prima di eseguire la migrazione.
 
 
 ## Prima della migrazione {#before-the-migration}
 
-Durante la migrazione ad Adobe Campaign v7, è necessario configurare i seguenti elementi. Questi elementi devono essere affrontati prima di avviare il **postupgrade**.
+Durante la migrazione ad Adobe Campaign v7, è necessario configurare i seguenti elementi. Questi elementi devono essere affrontati prima di avviare **post-aggiornamento**.
 
 <!--
 
@@ -59,7 +59,7 @@ Durante la migrazione ad Adobe Campaign v7, è necessario configurare i seguenti
 
 * Password
 
-   È necessario configurare le **Amministratore** e **Interno** password. [Ulteriori informazioni](../../migration/using/before-starting-migration.md#user-passwords)
+   Devi configurare il **Amministratore** e **Interno** password. [Ulteriori informazioni](../../migration/using/before-starting-migration.md#user-passwords)
 
 <!--
 * Tree structure
@@ -78,37 +78,37 @@ Durante la migrazione ad Adobe Campaign v7, è necessario configurare i seguenti
 
 ## Dopo la migrazione {#after-the-migration}
 
-Dopo l&#39;esecuzione **postupgrade**, controlla e configura i seguenti elementi:
+Dopo l’esecuzione **post-aggiornamento**, verifica e configura i seguenti elementi:
 
 * Pagine mirror
 
-   Il blocco di personalizzazione della pagina speculare è stato modificato con v6.x. Questa nuova versione migliora la sicurezza durante l’accesso a queste pagine.
+   Il blocco di personalizzazione della pagina mirror è stato modificato con v6.x. Questa nuova versione migliora la sicurezza durante l’accesso a queste pagine.
 
-   Se hai utilizzato il blocco di personalizzazione v5 nei messaggi, la visualizzazione della pagina speculare avrà esito negativo. Adobe consiglia vivamente di utilizzare il nuovo blocco di personalizzazione quando si inserisce una pagina speculare nei messaggi.
+   Se hai utilizzato il blocco di personalizzazione v5 nei messaggi, la visualizzazione della pagina speculare non riuscirà. Adobe consiglia vivamente di utilizzare il nuovo blocco di personalizzazione durante l’inserimento di una pagina speculare nei messaggi.
 
-   Tuttavia, come soluzione temporanea (e dato che le pagine mirror sono ancora in tempo reale), puoi tornare al vecchio blocco di personalizzazione per evitare questo problema modificando l’opzione **[!UICONTROL XtkAcceptOldPasswords]** e impostarlo su **[!UICONTROL 1]**. Questo non influisce sull’utilizzo del nuovo blocco di personalizzazione v6.x.
+   Tuttavia, come soluzione alternativa temporanea (e poiché le pagine mirror sono ancora attive), puoi tornare al vecchio blocco di personalizzazione per evitare questo problema modificando l’opzione **[!UICONTROL XtkAcceptOldPasswords]** e impostarlo su **[!UICONTROL 1]**. Questo non influirà sull’utilizzo del nuovo blocco di personalizzazione v6.x.
 
 * Sintassi
 
-   Se si verificano errori relativi alla sintassi, durante il post aggiornamento devi attivare temporaneamente il **allowSQLInjection** in **serverConf.xml** file , poiché questo ti dà il tempo di riscrivere il codice. Una volta adattato il codice, assicurati di riattivare la sicurezza.
+   Se durante il post-aggiornamento si verificano errori relativi alla sintassi, è necessario attivare temporaneamente **allowSQLInjection** opzione in **serverConf.xml** in quanto consente di riscrivere il codice. Una volta adattato il codice, assicurati di riattivare la sicurezza.
 
 * Conflitti
 
-   La migrazione viene eseguita tramite un aggiornamento successivo e possono comparire conflitti in rapporti, moduli o applicazioni web. Questi conflitti possono essere risolti dalla console.
+   La migrazione viene eseguita tramite un post-aggiornamento e i conflitti possono essere visualizzati nei report, nei moduli o nelle applicazioni web. Questi conflitti possono essere risolti dalla console.
 
 * Tomcat
 
-   Se hai personalizzato la cartella di installazione, accertati che sia stata aggiornata correttamente dopo la migrazione.
+   Se hai personalizzato la cartella di installazione, assicurati di verificarne il corretto aggiornamento dopo la migrazione.
 
 * Rapporti
 
-   Tutti i report predefiniti al momento utilizzano il motore di rendering v6.x. Se hai aggiunto codice JavaScript ai rapporti, alcuni elementi potrebbero essere interessati.
+   Tutti i rapporti predefiniti utilizzano attualmente il motore di rendering v6.x. Se hai aggiunto codice JavaScript ai rapporti, alcuni elementi potrebbero essere interessati.
 
-* Applicazioni Web
+* Applicazioni web
 
-   Dopo l&#39;aggiornamento, se si verificano problemi di connessione alle applicazioni Web identificate, è necessario attivare la **allowUserPassword** e **sessionTokenOnly** nelle opzioni **serverConf.xml** file. Per evitare problemi di sicurezza, queste due opzioni devono essere riattivate dopo che il problema è stato risolto.
+   Dopo il post-aggiornamento, se si verificano problemi di connessione alle applicazioni Web identificate, è necessario attivare **allowUserPassword** e **sessionTokenOnly** opzioni in **serverConf.xml** file. Per evitare problemi di sicurezza, queste due opzioni devono essere riattivate dopo la risoluzione del problema.
 
-   A seconda del tipo di applicazioni Web e della relativa configurazione, è necessario eseguire ulteriori manipolazioni per garantirne il corretto funzionamento.
+   A seconda del tipo di applicazioni Web e della relativa configurazione, è necessario eseguire ulteriori manipolazioni per assicurarne il corretto funzionamento.
 
 <!--
   If migrating from a v5.11 platform, additional configurations must be carried out. [Learn more](../../migration/using/general-configurations.md#specific-configurations-in-v5-11.md)
@@ -137,7 +137,7 @@ Dopo l&#39;esecuzione **postupgrade**, controlla e configura i seguenti elementi
 
 * Interazione
 
-   Se utilizzi **Interazione**, è necessario regolare eventuali parametri dopo la migrazione.
+   Se usa **Interazione**, è necessario regolare tutti i parametri dopo la migrazione.
 
 <!--
 

@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Elementi e attributi dello schema - elemento di enumerazione
-description: elemento di enumerazione
+title: 'Elementi e attributi dello schema: elemento di enumerazione'
+description: elemento enumerazione
 exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
 source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
@@ -10,13 +10,13 @@ ht-degree: 6%
 
 ---
 
-# elemento di enumerazione {#enumeration--element}
+# elemento enumerazione {#enumeration--element}
 
 ![](../../../assets/v7-only.svg)
 
 ## Modello di contenuto {#content-model-5}
 
-enumerazione:==(help| valore)
+enumerazione:==(valore help|)
 
 ## Attributi {#attributes-5}
 
@@ -27,7 +27,7 @@ enumerazione:==(help| valore)
 * @name (stringa)
 * @template (stringa)
 
-## Genitori {#parents-5}
+## Padri {#parents-5}
 
 `<srcschema>`
 
@@ -38,21 +38,21 @@ enumerazione:==(help| valore)
 
 ## Descrizione {#description-5}
 
-Questo elemento ci consente di definire un’enumerazione di valori. Un&#39;enumerazione appartiene allo schema in cui è definita, ma è accessibile tramite un altro schema.
+Questo elemento ci consente di definire un’enumerazione di valori. Un’enumerazione appartiene allo schema in cui è definita, ma è accessibile tramite un altro schema.
 
 ## Uso e contesto di utilizzo {#use-and-context-of-use-4}
 
-Le enumerazioni sono definite all&#39;inizio di uno schema (prima che l&#39;elemento principale sia definito).
+Le enumerazioni vengono definite all’inizio di uno schema (prima che sia definito l’elemento principale).
 
 ## Descrizione attributo {#attribute-description-5}
 
-* **basetype (stringa)**: tipo dei valori memorizzati nell&#39;enumerazione.
+* **basetype (string)**: tipo di valori memorizzati nell’enumerazione.
 
    Elenco dei tipi disponibili:
 
    * QUALSIASI
-   * bidone
-   * macchia
+   * raccoglitore
+   * blob
    * booleano
    * byte
    * CDATA
@@ -62,9 +62,9 @@ Le enumerazioni sono definite all&#39;inizio di uno schema (prima che l&#39;elem
    * date
    * DOMDocument
    * DOMElement
-   * double
+   * doppio
    * enum
-   * float
+   * galleggiare
    * html
    * int64
    * link
@@ -72,18 +72,18 @@ Le enumerazioni sono definite all&#39;inizio di uno schema (prima che l&#39;elem
    * promemoria
    * MNTOKEN
    * percent
-   * primarykey
-   * short
+   * chiave primaria
+   * corto
    * stringa
    * orario
-   * timespan
+   * intervallo di tempo
    * uuid
 
-* **default (string)**: Valore predefinito. Il valore predefinito può anche essere uno dei valori definiti nell&#39;enumerazione.
-* **desc (stringa)**: descrizione dell&#39;enumerazione.
-* **label (stringa)**: etichetta di enumerazione.
-* **name (stringa)**: nome interno dell&#39;enumerazione.
-* **template (stringa)**: questo attributo definisce un riferimento a un `<enumeration>` elemento condiviso da diversi schemi. La definizione viene copiata automaticamente nello schema corrente.
+* **impostazione predefinita (stringa)**: valore predefinito. Il valore predefinito può anche essere uno dei valori definiti nell’enumerazione.
+* **desc (stringa)**: descrizione enumerazione.
+* **etichetta (stringa)**: etichetta di enumerazione.
+* **nome (stringa)**: nome interno dell’enumerazione.
+* **modello (stringa)**: questo attributo definisce un riferimento a un `<enumeration>` condiviso da più schemi. La definizione viene copiata automaticamente nello schema corrente.
 
 ## Esempi {#examples-4}
 
@@ -100,7 +100,7 @@ Esempio di valori di enumerazione i cui valori sono memorizzati nel database:
     </element>
 ```
 
-Definizione di un&#39;enumerazione con un valore predefinito:
+Definizione di un’enumerazione con un valore predefinito:
 
 ```
  <enumeration basetype="byte" default="email" name="canal">

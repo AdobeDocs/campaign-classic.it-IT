@@ -12,44 +12,44 @@ ht-degree: 5%
 
 ---
 
-# Caso di utilizzo: Inviare e-mail transazionali con allegati {#transactional-email-with-attachments}
+# Caso d’uso: inviare e-mail transazionali con allegati {#transactional-email-with-attachments}
 
 
 
-Lo scopo di questo caso d’uso è quello di aggiungere al volo allegati e-mail a messaggi in uscita.
+Lo scopo di questo caso d’uso è quello di aggiungere al volo allegati e-mail alle spedizioni in uscita.
 
 ## Passaggi chiave {#key-steps}
 
-In questo scenario, imparerai a inviare e-mail transazionali con allegati singoli e/o personalizzati. Gli allegati non verranno precaricati sul server di messaggistica transazionale: invece saranno generate al volo.
+In questo scenario, imparerai a inviare e-mail transazionali con allegati singoli e/o personalizzati. Gli allegati non verranno precaricati sul server di messaggistica transazionale, ma verranno generati immediatamente.
 
-Quando acquisisci le interazioni o i dettagli dei clienti, potrebbe essere necessario inviare queste informazioni al cliente al termine del processo, ad esempio in un file PDF allegato a un messaggio e-mail.
+Quando acquisisci le interazioni o i dettagli del cliente, potrebbe essere necessario inviare nuovamente queste informazioni al cliente alla fine del processo, ad esempio in un file PDF allegato a un messaggio e-mail.
 
 Di seguito sono riportati i passaggi principali di questo scenario:
 
 1. Il cliente accede al sito web e trova un prodotto che desidera acquistare.
 1. Il cliente seleziona il prodotto e personalizza alcune opzioni.
 1. Il cliente completa la transazione.
-1. Viene inviata al cliente un’e-mail di conferma della transazione. Poiché si sconsiglia di inviare informazioni PII (personalmente identificabili) nell’e-mail, viene generato un PDF protetto che viene allegato all’e-mail.
-1. Il cliente riceve l’e-mail e il relativo allegato contenente i dati pertinenti.
+1. Al cliente viene inviata un’e-mail di conferma della transazione. Poiché non è consigliabile inviare dati PII (personalmente identificabili) nell’e-mail, viene generato un PDF sicuro, che viene allegato all’e-mail.
+1. Il cliente riceve l’e-mail e il relativo allegato contenente i dati rilevanti.
 
-In questo scenario, gli allegati non vengono pre-creati, ma aggiunti al volo alle e-mail in uscita, il che offre i seguenti vantaggi:
+In questo scenario, gli allegati non vengono precreati, ma aggiunti al volo alle e-mail in uscita, il che offre i seguenti vantaggi:
 
-* Questo consente di personalizzare il contenuto dell’allegato.
-* Se l&#39;allegato è associato a una transazione (come nello scenario di esempio descritto sopra), potrebbe contenere dati dinamici generati durante il processo del cliente.
-* L’allegato ai file PDF ottimizza la sicurezza in quanto è possibile crittografarli e inviarli tramite HTTPS.
+* Ciò ti consente di personalizzare il contenuto dell’allegato.
+* Se l&#39;allegato è associato a una transazione (come nell&#39;esempio descritto in precedenza), può contenere dati dinamici generati durante il processo del cliente.
+* Allegando i file PDF si ottimizza la sicurezza in quanto è possibile crittografarli e inviarli tramite HTTPS.
 
 >[!NOTE]
 >
->Per evitare problemi di prestazioni, se includi al volo immagini scaricate da un URL personalizzato come allegato, ciascuna dimensione immagine non deve superare i 100.000 byte per impostazione predefinita. Questa soglia consigliata può essere configurata da [elenco delle opzioni di Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+>Per evitare problemi di prestazioni, se includi come allegato immagini scaricate al volo da un URL personalizzato, per impostazione predefinita ogni immagine non deve superare i 100.000 byte. Questa soglia consigliata può essere configurata da [elenco delle opzioni di Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Raccomandazioni {#important-notes}
 
-Prima di implementare questo scenario, leggi attentamente le linee guida riportate di seguito:
+Prima di implementare questo scenario, leggi attentamente le linee guida seguenti:
 
-* Le istanze di messaggistica transazionale non devono essere utilizzate per memorizzare, esportare o caricare file o dati. Possono essere utilizzati solo per i dati evento e le relative informazioni. Non devono essere considerati come un sistema di archiviazione file.
-* Poiché non esiste un accesso diretto alle istanze o ai server di messaggistica transazionale al di fuori di Adobe, non esiste un modo standard per inviare tali file su questi server (nessun accesso FTP).
-* Non è contrattualmente corretto utilizzare lo spazio su disco nelle istanze di messaggistica transazionale per archiviare file di qualsiasi tipo, nemmeno per gli allegati.
-* Per ospitare questi file è necessario utilizzare un altro sistema di dischi online. È necessario un accesso FTP a questo sistema e devi essere in grado di scrivere ed eliminare file.
+* Le istanze di messaggistica transazionale non devono essere utilizzate per archiviare, esportare o caricare file o dati. Possono essere utilizzati solo per i dati evento e le informazioni correlate. Non devono essere considerati come un sistema di storage di file.
+* Poiché non esiste un accesso diretto alle istanze di messaggistica transazionale o ai server al di fuori di Adobe, non esiste una modalità standard per inviare tali file a tali server (nessun accesso FTP).
+* Non è contrattualmente corretto utilizzare lo spazio su disco nelle istanze di messaggistica transazionale per memorizzare file di qualsiasi tipo, nemmeno per gli allegati.
+* Per ospitare questi file è necessario utilizzare un altro sistema di dischi online. È necessario disporre di un accesso FTP al sistema ed essere in grado di scrivere ed eliminare file.
 
 >[!NOTE]
 >
@@ -57,23 +57,23 @@ Prima di implementare questo scenario, leggi attentamente le linee guida riporta
 
 ## Implementazione {#implementation}
 
-Il diagramma seguente illustra i diversi passaggi necessari per implementare questo scenario:
+Il diagramma seguente mostra i diversi passaggi necessari per implementare questo scenario:
 
 ![](assets/message-center-uc1.png)
 
-Per aggiungere istantaneamente un allegato e-mail a un messaggio sulle transazioni, effettua le seguenti operazioni:
+Per aggiungere al volo un allegato e-mail a un messaggio sulle transazioni, effettua le seguenti operazioni:
 
 1. Iniziare progettando l&#39;allegato. Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/attaching-files.md#attach-a-personalized-file).
 
-   Questo ti consente di allegare i file a un’e-mail, anche se non sono in hosting sull’istanza di esecuzione.
+   Ciò ti consente di allegare i file a un messaggio e-mail, anche se non sono ospitati nell’istanza di esecuzione.
 
-1. Puoi inviare e-mail tramite un trigger di messaggio SOAP. Nella chiamata SOAP è presente un parametro URL (attachmentURL).
+1. Puoi inviare e-mail tramite un attivatore di messaggi SOAP. Nella chiamata SOAP è presente un parametro URL (attachmentURL).
 
    Per ulteriori informazioni sulle richieste SOAP, consulta [Descrizione evento](../../message-center/using/event-description.md).
 
 1. Durante la progettazione dell’e-mail, fai clic su **[!UICONTROL Attachment]**.
 
-1. In **[!UICONTROL Attachment definition]** immettere il parametro di attacco SOAP:
+1. In **[!UICONTROL Attachment definition]** immettere il parametro SOAP attach:
 
    ```
    <%= rtEvent.ctx.attachmentUrl %>
@@ -81,6 +81,6 @@ Per aggiungere istantaneamente un allegato e-mail a un messaggio sulle transazio
 
 1. Quando il messaggio viene elaborato, il sistema riceve il file dalla posizione remota (server di terze parti) e lo allega al singolo messaggio.
 
-   Poiché questo parametro può essere una variabile, deve accettare la variabile URL remota completa del file, inviata tramite la chiamata SOAP.
+   Poiché questo parametro può essere una variabile, deve accettare la variabile URL remota del file completamente formata, inviata tramite la chiamata SOAP.
 
    ![](assets/message-center-uc2.png)

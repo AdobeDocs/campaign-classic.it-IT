@@ -15,9 +15,9 @@ ht-degree: 3%
 
 
 
-Adobe Campaign ti consente di definire la mappatura dei dati in una tabella esterna.
+Adobe Campaign consente di definire la mappatura sui dati in una tabella esterna.
 
-A questo scopo, una volta creato lo schema della tabella esterna, devi creare una nuova mappatura della consegna per utilizzare i dati presenti in questa tabella come destinazione della consegna.
+A questo scopo, una volta creato lo schema della tabella esterna, è necessario creare una nuova mappatura di consegna per utilizzare i dati in questa tabella come destinazione di consegna.
 
 A questo scopo, esegui i seguenti passaggi:
 
@@ -29,16 +29,16 @@ A questo scopo, esegui i seguenti passaggi:
 
    ![](assets/wf_new_mapping_define_join.png)
 
-1. Specifica i parametri per l’archiviazione delle informazioni, compreso il suffisso degli schemi di estensione, in modo che siano facilmente identificabili.
+1. Specifica i parametri per l’archiviazione delle informazioni, compreso il suffisso degli schemi di estensione affinché siano facilmente identificabili.
 
    ![](assets/wf_new_mapping_define_names.png)
 
-   Puoi scegliere di memorizzare le esclusioni (**excludelog**), con messaggi (**broadlog**) o in una tabella separata.
+   Puoi scegliere se memorizzare le esclusioni (**excludelog**), con messaggi (**broadlog**) o in una tabella separata.
 
-   Puoi anche scegliere di gestire il tracciamento per questa mappatura della consegna (**trackinglog**).
+   Puoi anche scegliere se gestire il tracciamento per questa mappatura di consegna (**trackinglog**).
 
-1. Quindi seleziona le estensioni da prendere in considerazione. Il tipo di estensione dipende dai parametri e dalle opzioni della piattaforma (visualizza il contratto di licenza).
+1. Quindi seleziona le estensioni da prendere in considerazione. Il tipo di estensione dipende dai parametri e dalle opzioni della piattaforma (vedi il contratto di licenza).
 
    ![](assets/wf_new_mapping_define_extensions.png)
 
-   Fai clic sul pulsante **[!UICONTROL Save]** pulsante per avviare la creazione della mappatura della consegna: tutte le tabelle collegate vengono create automaticamente in base ai parametri selezionati.
+   Fai clic su **[!UICONTROL Save]** pulsante per avviare la creazione della mappatura di consegna: tutte le tabelle collegate vengono create automaticamente in base ai parametri selezionati.

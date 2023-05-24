@@ -22,13 +22,13 @@ ht-degree: 0%
 
 Dopo una migrazione, in caso di problemi, potrebbe essere necessario eseguire il rollback alla versione precedente di Campaign.
 
-La procedura di rollback dipende dalla versione iniziale di Campaign.
+La procedura di ripristino dipende dalla versione iniziale di Campaign.
 
-Questa è la procedura per ripristinare una v6.1 da una v7.
+Di seguito è illustrata la procedura per ripristinare una versione v6.1 da una v7.
 
-1. Recuperare il backup del database e ripristinarlo.
-1. Recuperare **Adobe Campaign v6.back** cartella (**nl6.back** in Linux), rinominalo in **Adobe Campaign v6** (**nl6** in Linux) e ripristinarlo nella sua posizione originale.
-1. Riconfigura IIS riassegnando le porte di ascolto per ristabilire l&#39;integrazione di Adobe Campaign v6.1 a livello di sito Web IIS.
+1. Ripristinare il backup del database e ripristinarlo.
+1. Recupera **Adobe Campaign v6.back** cartella (**nl6.indietro** in Linux), rinominarlo **Adobe Campaign v6** (**nl6** in Linux) e ripristinarla nella posizione originale.
+1. Riconfigura IIS riassegnando le porte di ascolto per ristabilire l’integrazione di Adobe Campaign v6.1 a livello di sito web IIS.
 1. Arresta il servizio Adobe Campaign v7.
 1. Riavvia IIS.
 1. Riavvia il servizio Adobe Campaign v6.1.

@@ -18,11 +18,11 @@ ht-degree: 38%
 
 Adobe Campaign offre l’opzione Federated Data Access (FDA) per elaborare le informazioni archiviare in uno o più database esterni: puoi accedere ai dati esterni senza modificare la struttura dei dati di Adobe Campaign.
 
-Attività multiple consentono di interagire con i dati provenienti da un database esterno:
+Più attività consentono di interagire con i dati di un database esterno:
 
 * Query
 * Divisione
 * Arricchimento
 * Caricamento dati
 
-L’utilizzo dell’opzione FDA dipende dalla licenza Adobe Campaign. La configurazione di questa opzione, nonché le best practice e limitazioni correlate all’utilizzo di questa sono descritte in [sezione](../../installation/using/about-fda.md).
+L’utilizzo dell’opzione FDA dipende dalla licenza Adobe Campaign. La configurazione di questa opzione, nonché le best practice e le limitazioni correlate all’utilizzo, sono descritte in questo [sezione](../../installation/using/about-fda.md).

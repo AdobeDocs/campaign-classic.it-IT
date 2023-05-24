@@ -17,9 +17,9 @@ ht-degree: 20%
 
 
 
-Con Adobe Campaign, puoi inviare campagne cross-channel tra cui e-mail, SMS, messaggi LINE, notifiche push e direct mailing e misurarne l’efficacia utilizzando vari strumenti dedicati [rapporti](../../reporting/using/delivery-reports.md). Questi messaggi sono progettati e inviati tramite consegna e possono essere personalizzati per ogni destinatario.
+Con Adobe Campaign, puoi inviare campagne cross-channel tra cui e-mail, SMS, messaggi LINE, notifiche push e direct mail; inoltre, puoi misurarne l’efficacia utilizzando diversi [rapporti](../../reporting/using/delivery-reports.md). Questi messaggi sono progettati e inviati tramite consegna e possono essere personalizzati per ogni destinatario.
 
-Le funzionalità di base includono il targeting, la definizione e la personalizzazione dei messaggi, l’esecuzione delle comunicazioni e i relativi rapporti operativi. Il punto di accesso funzionale principale è la procedura guidata di consegna. Permette di sfruttare diverse funzionalità incluse in Adobe Campaign.
+Le funzionalità di base includono il targeting, la definizione e la personalizzazione dei messaggi, l’esecuzione delle comunicazioni e i relativi rapporti operativi. Il punto di accesso funzionale principale è la consegna guidata. Permette di sfruttare diverse funzionalità incluse in Adobe Campaign.
 
 >[!NOTE]
 >
@@ -30,9 +30,9 @@ L’invio della consegna può essere automatizzato preparando una consegna e/o i
 Adobe Campaign offre i seguenti canali di consegna:
 
 1. **Canale e-mail**: le consegne e-mail ti consentono di inviare e-mail personalizzate alla popolazione target. Fai riferimento a [Informazioni sul canale e-mail](about-email-channel.md).
-1. **Canale direct mailing**: le consegne tramite direct mailing ti consentono di generare un file di estrazione che contiene dati sulla popolazione target. Fai riferimento a [Informazioni sul canale direct mail](about-direct-mail-channel.md).
-1. **Canale mobile**: le consegne sui canali mobili ti consentono di inviare messaggi SMS o LINE personalizzati alla popolazione target. Fai riferimento a [Canale SMS](sms-channel.md).
-1. **Canale dell’app mobile**: le consegne tramite app mobile ti consentono di inviare notifiche ai sistemi iOS e Android. Fai riferimento a [Canale app mobile](about-mobile-app-channel.md) capitolo.
+1. **Canale direct mailing**: le consegne tramite direct mailing ti consentono di generare un file di estrazione che contiene dati sulla popolazione target. Fai riferimento a [Informazioni sul canale direct mailing](about-direct-mail-channel.md).
+1. **Canale mobile**: le consegne sui canali mobili ti consentono di inviare SMS personalizzati o messaggi LINE alla popolazione target. Fai riferimento a [Canale SMS](sms-channel.md).
+1. **Canale dell’app mobile**: le consegne tramite app mobile ti consentono di inviare notifiche ai sistemi iOS e Android. Consulta la sezione [Canale app mobile](about-mobile-app-channel.md) capitolo.
 
    Altri canali sono descritti su [questa pagina](steps-about-delivery-creation-steps.md#other-channels).
 
@@ -40,45 +40,45 @@ Adobe Campaign offre i seguenti canali di consegna:
    >
    >Il numero di canali disponibili dipende dal contratto. Controlla il contratto di licenza.
 
-Le consegne possono essere effettuate **online** (tramite e-mail, uno dei canali mobili e notifiche push) e **offline** (canale direct mailing).
+Le consegne possono essere eseguite **online** (tramite e-mail, uno dei canali mobili e notifiche push) e **offline** (canale direct mailing).
 
 A seconda del canale, le modalità di consegna possono essere:
 
-* Consegna di massa diretta tramite Adobe Campaign (modalità predefinita per il canale e-mail).
-* Consegna esterna tramite un operatore specializzato a cui viene assegnato il file di output generato dalla procedura guidata di consegna (modalità predefinita per il canale direct mailing).
+* Consegna diretta di massa tramite Adobe Campaign (modalità predefinita per il canale e-mail).
+* Consegna esterna tramite un operatore specializzato a cui viene fornito il file di output generato dalla procedura guidata di consegna (modalità predefinita per il canale direct mailing).
 
-Gli account esterni sono configurati tramite il **[!UICONTROL Administration > Platform > External accounts]** nodo. Questa configurazione deve essere eseguita solo da utenti esperti.
+Gli account esterni vengono configurati tramite **[!UICONTROL Administration > Platform > External accounts]** nodo. Questa configurazione deve essere eseguita solo da utenti esperti.
 
 ## Consegne e-mail {#email-deliveries}
 
-La [Canale e-mail](about-email-channel.md) è uno dei canali principali di Adobe Campaign che ti consente di pianificare e inviare e-mail personalizzate a destinazioni specifiche.
+Il [Canale e-mail](about-email-channel.md) è uno dei canali core di Adobe Campaign, che ti consente di pianificare e inviare e-mail personalizzate a target specifici.
 
 Puoi inviare diversi tipi di e-mail:
 
-* E-mail a invio singolo: e-mail che puoi inviare una volta a un target definito. In genere vengono utilizzati per promuovere un contenuto specifico che verrebbe preparato e inviato una sola volta (newsletter, e-mail promozionale, ecc.).
-* E-mail ricorrenti: in una campagna, invia regolarmente la stessa e-mail e aggrega ogni invio e i relativi rapporti su base periodica. La stessa e-mail viene inviata, ma di solito a un target diverso, in base al target idoneo per il giorno dell’invio. Un esempio comune è rappresentato da un’e-mail di compleanno. Per ulteriori informazioni, consulta [Consegne ricorrenti](../../workflow/using/recurring-delivery.md).
-* E-mail transazionali: e-mail unitarie attivate in base al comportamento dei clienti. Fai riferimento a [Messaggistica transazionale](../../message-center/using/about-transactional-messaging.md).
+* E-mail a invio singolo: e-mail che puoi inviare una volta a una destinazione definita. Vengono solitamente utilizzati per promuovere un contenuto specifico che verrebbe preparato e inviato una sola volta (newsletter, e-mail promozionale, ecc.).
+* E-mail ricorrenti: in una campagna, invia regolarmente la stessa e-mail e aggrega ogni invio e i relativi rapporti su base periodica. Viene inviata la stessa e-mail, ma in genere a una destinazione diversa, in base alla destinazione idonea per il giorno dell’invio. Un esempio comune è un’e-mail di compleanno. Per ulteriori informazioni, consulta [Consegne ricorrenti](../../workflow/using/recurring-delivery.md).
+* E-mail transazionali: e-mail unitarie che vengono attivate in base al comportamento dei clienti. Fai riferimento a [Messaggistica transazionale](../../message-center/using/about-transactional-messaging.md).
 
-Per informazioni sull’utilizzo e i consigli della consegna, consulta Campaign [Best practice per le consegne](delivery-best-practices.md).
+Per informazioni sull’utilizzo e i consigli per la consegna, consulta Campaign [Best practice per la consegna](delivery-best-practices.md).
 
 Per ulteriori informazioni sui diversi tipi di consegne, consulta [questa sezione](#types-of-deliveries).
 
-## Consegne mobile {#mobile-deliveries}
+## Consegne su dispositivi mobili {#mobile-deliveries}
 
-Adobe Campaign consente di [SMS](sms-channel.md) e [LINEA](line-channel.md) su dispositivi mobili.
+Adobe Campaign consente di distribuire [SMS](sms-channel.md) e [LINE](line-channel.md) messaggi su dispositivi mobili.
 
-Per i messaggi SMS, puoi creare, modificare e personalizzare i messaggi solo in formato testo. Puoi anche visualizzare in anteprima i messaggi SMS prima di inviarli.
+Per i messaggi SMS, puoi creare, modificare e personalizzare i messaggi solo in formato testo. Puoi anche visualizzare in anteprima i messaggi SMS prima che vengano inviati.
 
-Per i messaggi LINE, è possibile inviare testo o immagini e collegamenti.
+Per i messaggi LINE, puoi inviare testo o immagini e collegamenti.
 
-Per inviare messaggi SMS o LINE a un cellulare è necessario:
+Per inviare messaggi SMS o LINE a un telefono cellulare è necessario:
 
-* Un account esterno configurato nel **[!UICONTROL Mobile (SMS)]** o sul **[!UICONTROL LINE]** canale.
-* Un modello di consegna SMS o LINE correttamente collegato a questo account esterno.
+* Un account esterno configurato su **[!UICONTROL Mobile (SMS)]** canale o sul **[!UICONTROL LINE]** canale.
+* Un modello di consegna SMS o LINE collegato correttamente a questo account esterno.
 
 ## Notifiche push {#push-notifications}
 
-Adobe Campaign consente di inviare messaggi personalizzati e segmentati [notifiche push](about-mobile-app-channel.md) su dispositivi mobili iOS e Android, tramite app dedicate. Una volta eseguiti i passaggi di configurazione e integrazione, è possibile creare e inviare le consegne di iOS e Android. Puoi anche progettare notifiche avanzate con immagini o video.
+Adobe Campaign ti consente di inviare messaggi personalizzati e segmentati [notifiche push](about-mobile-app-channel.md) su dispositivi mobili iOS e Android, tramite app dedicate. Dopo aver eseguito i passaggi di configurazione e integrazione, è possibile creare e inviare consegne iOS e Android. Puoi anche progettare notifiche avanzate con immagini o video.
 
 ## Direct mail {#direct-mail}
 
@@ -88,17 +88,17 @@ I canali online ti consentono di creare i messaggi (e-mail, SMS, consegna su app
 
 ## Altri canali {#other-channels}
 
-Adobe Campaign offre il modello di consegna telefonica, utilizzato per creare consegne esterne. L&#39;utilizzo di questo canale implica la configurazione di metodologie dedicate per elaborare i file di output. I passaggi di configurazione sono gli stessi di [Canale direct mailing](about-direct-mail-channel.md).
+Adobe Campaign offre il modello di consegna telefonica, utilizzato per creare consegne esterne. L’utilizzo di questo canale implica la configurazione di metodologie dedicate per l’elaborazione dei file di output. I passaggi di configurazione sono gli stessi [Canale direct mail](about-direct-mail-channel.md).
 
 >[!NOTE]
 >
->Il canale telefonico non è disponibile come standard. La sua implementazione richiede il coinvolgimento di Consulenza Adobe o di un Partner Adobe. Per ulteriori informazioni, contatta il tuo rappresentante di Adobe.
+>Il canale telefonico non è disponibile come standard. La sua implementazione richiede il coinvolgimento di un Adobe Consulting o di un Adobe Partner. Per ulteriori informazioni, contatta il rappresentante del tuo Adobe.
 
 Inoltre, le consegne di tipo &quot;Altro&quot; utilizzano un modello tecnico specifico che non esegue un processo: questo consente loro di gestire le azioni di marketing eseguite al di fuori della piattaforma Adobe Campaign.
 
-Questo canale non ha un meccanismo specifico. Si tratta di un canale generico che dispone della propria opzione di indirizzamento account esterno, del tipo di modello di consegna e dell’attività del flusso di lavoro della campagna, proprio come qualsiasi altro canale di comunicazione disponibile in Adobe Campaign.
+Questo canale non dispone di un meccanismo specifico. Si tratta di un canale generico con una propria opzione di indirizzamento dell’account esterno, un tipo di modello di consegna e un’attività del flusso di lavoro della campagna, come qualsiasi altro canale di comunicazione disponibile in Adobe Campaign.
 
-Questo canale è progettato solo a scopo descrittivo, ad esempio per definire le consegne per le quali desideri mantenere una traccia del target di una campagna eseguita in uno strumento diverso da Adobe Campaign.
+Questo canale è progettato solo a scopo descrittivo, ad esempio per definire consegne per le quali desideri tenere traccia del target di una campagna eseguita in uno strumento diverso da Adobe Campaign.
 
 ## Tipi di consegne{#types-of-deliveries}
 
@@ -106,25 +106,25 @@ In Campaign sono disponibili tre tipi di oggetti di consegna:
 
 ### Consegna unica {#single-delivery}
 
-A **consegna** è un oggetto di consegna autonomo che viene eseguito una volta. Può essere duplicato, preparato di nuovo, ma finché è nello stato finale (annullato, interrotto, finito) non può essere riutilizzato.
+A **consegna** è un oggetto di consegna indipendente che viene eseguito una volta. Può essere duplicato, preparato di nuovo, ma finché è nel suo stato finale (annullato, interrotto, finito), non può essere riutilizzato.
 
-Le consegne possono essere create dall’elenco delle consegne o all’interno di un flusso di lavoro tramite un [Consegna](../../workflow/using/delivery.md) attività.
+Le consegne possono essere create dall’elenco delle consegne o all’interno di un flusso di lavoro tramite una [Consegna](../../workflow/using/delivery.md) attività.
 
 I flussi di lavoro forniscono anche attività di consegna specifiche in base al tipo di canale che desideri utilizzare. Per ulteriori informazioni su queste attività, consulta [questa sezione](../../workflow/using/cross-channel-deliveries.md).
 
 ### Consegna ricorrente {#recurring-delivery}
 
-A **consegna ricorrente** consente di creare una nuova consegna ogni volta che l’attività viene eseguita. In questo modo si evita la necessità di creare una nuova consegna per le attività ricorrenti.
+A **consegna ricorrente** consente di creare una nuova consegna ogni volta che l’attività viene eseguita. In questo modo si evita di dover creare una nuova consegna per attività ricorrenti.
 
-Ad esempio, se esegui questo tipo di attività una volta al mese, finirai con 12 consegne dopo un anno.
+Ad esempio, se esegui questo tipo di attività una volta al mese, dopo un anno finirai con 12 consegne.
 
-Le consegne ricorrenti vengono create all’interno dei flussi di lavoro tramite il [Attività di consegna ricorrente](../../workflow/using/recurring-delivery.md). Un esempio di questa attività in uso è presentato in questa sezione: [Creazione di una consegna ricorrente in un flusso di lavoro di targeting](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
+Le consegne ricorrenti vengono create all’interno dei flussi di lavoro tramite [Attività di consegna ricorrente](../../workflow/using/recurring-delivery.md). Un esempio di questa attività in uso è presentato in questa sezione: [Creazione di una consegna ricorrente in un flusso di lavoro di targeting](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
 ### Consegna continua {#continuous-delivery}
 
-A **consegna continua** consente di aggiungere nuovi destinatari a una consegna esistente, evitando di dover creare una nuova consegna ogni volta che viene eseguita.
+A **consegna continua** consente di aggiungere nuovi destinatari a una consegna esistente, evitando di dover crearne una nuova ogni volta che viene eseguita.
 
-Se vengono modificate delle informazioni nella consegna (contenuto, nome, ecc.), all’esecuzione della consegna viene creato un nuovo oggetto di consegna. Se non sono state modificate informazioni, lo stesso oggetto di consegna viene riutilizzato e i registri di consegna e di tracciamento vengono aggiunti nello stesso oggetto.
+Se un’informazione nella consegna cambia (contenuto, nome, ecc.), all’esecuzione della consegna viene creato un nuovo oggetto di consegna. Se non è stata modificata alcuna informazione, viene riutilizzato lo stesso oggetto di consegna e i registri di consegna e di tracciamento vengono aggiunti nello stesso oggetto.
 
 Ad esempio, se esegui questo tipo di attività una volta al mese, finirai con una singola consegna dopo un anno (purché non sia stata apportata alcuna modifica alla consegna).
 

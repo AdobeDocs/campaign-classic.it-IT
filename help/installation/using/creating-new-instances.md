@@ -18,14 +18,14 @@ ht-degree: 10%
 
 
 
-Una volta installato Adobe Campaign e creata l’istanza, puoi aggiungere una nuova istanza dalla console. Questa modalità di creazione consente di creare istanze di tracciamento senza accedere alla console.
+Dopo aver installato Adobe Campaign e creato l’istanza, puoi aggiungere una nuova istanza dalla console. Questa modalità di creazione consente di creare istanze di tracciamento senza accedere alla console.
 
-A questo scopo, accedi a un database esistente e applica i seguenti passaggi:
+A tale scopo, accedere a un database esistente e seguire la procedura descritta di seguito.
 
-1. Dichiarare una nuova istanza
+1. Dichiara una nuova istanza
 
    Vai a **[!UICONTROL Tools > Advanced > Declare a new instance...]** per avviare la procedura guidata.
 
    ![](assets/s_ncs_install_declare_instance_menu.png)
 
-   Specifica i parametri della nuova istanza. Per ulteriori informazioni, consulta [Creazione di un&#39;istanza e accesso](../../installation/using/creating-an-instance-and-logging-on.md).
+   Specificate i parametri della nuova istanza. Per ulteriori informazioni, consulta [Creazione di un’istanza e accesso](../../installation/using/creating-an-instance-and-logging-on.md).

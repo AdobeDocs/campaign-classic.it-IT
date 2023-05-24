@@ -22,13 +22,13 @@ Può trattarsi della consegna specificata nella transizione, di una consegna sel
 
 ![](assets/edit_diffusion_act.png)
 
-Se si seleziona **[!UICONTROL Start]**, l’attività eseguirà tutti i passaggi necessari per avviare la consegna (calcolo del target, preparazione dei contenuti, consegna). Se alcuni di questi passaggi sono già stati eseguiti da un’attività di flusso di lavoro precedente, non verranno eseguiti di nuovo. Ad esempio, se la stima del target è già stata eseguita da un **[!UICONTROL Delivery]** attività del tipo (fare riferimento a [Consegna](delivery.md)), **[!UICONTROL Act on the delivery]** l’attività avvia i passaggi rimanenti (preparazione e distribuzione dei contenuti).
+Se si seleziona **[!UICONTROL Start]**, l’attività eseguirà tutti i passaggi necessari per avviare la consegna (calcolo del target, preparazione dei contenuti, consegna). Se alcuni di questi passaggi sono già stati eseguiti da un’attività del flusso di lavoro precedente, non verranno eseguiti nuovamente. Ad esempio, se la stima target è già stata eseguita da un **[!UICONTROL Delivery]** attività di tipo (fare riferimento a [Consegna](delivery.md)), il **[!UICONTROL Act on the delivery]** L’attività avvierà i passaggi rimanenti (preparazione e distribuzione dei contenuti).
 
 Sono disponibili le seguenti opzioni:
 
 * **[!UICONTROL Generate an outbound transition]**
 
-   Crea una transizione in uscita che verrà attivata al termine dell’esecuzione. Puoi scegliere se recuperare o meno il target della consegna in uscita.
+   Crea una transizione in uscita che verrà attivata alla fine dell’esecuzione. Puoi scegliere se recuperare o meno la destinazione della consegna in uscita.
 
 * **[!UICONTROL Processing errors]**
 
@@ -38,4 +38,4 @@ Sono disponibili le seguenti opzioni:
 
 * deliveryId
 
-Identificatore di consegna, se l’azione selezionata è **[!UICONTROL Specified in the transition]**.
+Identificatore della consegna, se l’azione selezionata è **[!UICONTROL Specified in the transition]**.

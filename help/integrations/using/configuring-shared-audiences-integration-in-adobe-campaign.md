@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Configurazione dell’integrazione dei tipi di pubblico condivisi in Adobe Campaign
-description: Scopri come configurare l’integrazione dei tipi di pubblico condivisi
+description: Scopri come configurare l’integrazione dei pubblici condivisi
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
@@ -19,32 +19,32 @@ ht-degree: 3%
 
 
 
-Dopo aver inviato questa richiesta, Adobe procederà al provisioning dell’integrazione per te e ti contatterà per fornire i dettagli e le informazioni necessarie per completare la configurazione:
+Dopo aver inviato questa richiesta, Adobe procederà al provisioning dell’integrazione per te e ti contatterà per fornire dettagli e informazioni necessari per finalizzare la configurazione:
 
-1. [Passaggio 1: Configurare o controllare gli account esterni in Adobe Campaign](#step-1--configure-or-check-the-external-accounts-in-adobe-campaign)
-1. [Passaggio 2: Configurare l&#39;origine dati](#step-2--configure-the-data-source)
-1. [Passaggio 3: Configurare il server di tracciamento delle campagne](#step-3--configure-campaign-tracking-server)
-1. [Passaggio 4: Configurare il servizio ID visitatori](#step-4--configure-the-visitor-id-service)
+1. [Passaggio 1: configurare o controllare gli account esterni in Adobe Campaign](#step-1--configure-or-check-the-external-accounts-in-adobe-campaign)
+1. [Passaggio 2: configurare l’origine dati](#step-2--configure-the-data-source)
+1. [Passaggio 3: configurare il server di tracciamento campagna](#step-3--configure-campaign-tracking-server)
+1. [Passaggio 4: configurare il servizio ID visitatori](#step-4--configure-the-visitor-id-service)
 
 >[!IMPORTANT]
 >
->Se utilizzi il dominio demdex e segui la sintassi **ftp-out.demdex.com** per l’account esterno di importazione e **ftp-in.demdex.com** per l’account esterno di esportazione, devi adattare di conseguenza la tua implementazione e passare al connettore Amazon Simple Storage Service (S3) per importare o esportare dati. Per ulteriori informazioni su come configurare gli account esterni con Amazon S3, consulta questo articolo [sezione](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md#step-1--configure-or-check-the-external-accounts-in-adobe-campaign).
+>Se utilizzi il dominio demdex e segui la sintassi **ftp-out.demdex.com** per l’account esterno import e **ftp-in.demdex.com** per esportare un account esterno, è necessario adattare di conseguenza l’implementazione e passare al connettore Amazon Simple Storage Service (S3) per importare o esportare i dati. Per ulteriori informazioni su come configurare gli account esterni con Amazon S3, consulta questa [sezione](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md#step-1--configure-or-check-the-external-accounts-in-adobe-campaign).
 
-## Passaggio 1: Configurare o controllare gli account esterni in Adobe Campaign {#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}
+## Passaggio 1: configurare o controllare gli account esterni in Adobe Campaign {#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}
 
-Innanzitutto, dobbiamo configurare o controllare gli account esterni in Adobe Campaign come segue:
+Innanzitutto, devi configurare o controllare gli account esterni in Adobe Campaign come segue:
 
-1. Fai clic sul pulsante **[!UICONTROL Explorer]** icona.
-1. Vai a **[!UICONTROL Administration > Platform > External accounts]**. Gli account SFTP menzionati avrebbero dovuto essere configurati per Adobe e le informazioni necessarie avrebbero dovuto essere comunicate all&#39;utente.
+1. Fai clic su **[!UICONTROL Explorer]** icona.
+1. Vai a **[!UICONTROL Administration > Platform > External accounts]**. Gli account SFTP menzionati avrebbero dovuto essere configurati da Adobe e le informazioni necessarie avrebbero dovuto essere comunicate all’utente.
 
    * **[!UICONTROL importSharedAudience]**: account dedicato all’importazione di tipi di pubblico.
-   * **[!UICONTROL exportSharedAudience]**: account dedicato all’esportazione di tipi di pubblico.
+   * **[!UICONTROL exportSharedAudience]**: account dedicato all’esportazione dei tipi di pubblico.
 
    ![](assets/aam_config_1.png)
 
-1. Seleziona la **[!UICONTROL Export audiences to the Adobe Marketing Cloud]** conto esterno.
+1. Seleziona la **[!UICONTROL Export audiences to the Adobe Marketing Cloud]** account esterno.
 
-1. Da **[!UICONTROL Type]** a discesa, seleziona **[!UICONTROL AWS S3]**.
+1. Dalla sezione **[!UICONTROL Type]** a discesa, seleziona **[!UICONTROL AWS S3]**.
 
 1. Fornisci i seguenti dettagli:
 
@@ -56,39 +56,39 @@ URL del server, deve essere compilato come segue:
       ```
 
    * **[!UICONTROL AWS access key ID]**
-Per sapere dove trovare il tuo ID chiave di accesso AWS, consulta questo [page](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
+Per sapere dove trovare il tuo ID chiave di accesso ad AWS, consulta questa [pagina](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
 
    * **[!UICONTROL Secret access key to AWS]**
-Per sapere dove trovare la chiave di accesso segreto per AWS, consulta questo [page](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
+Per sapere dove trovare la chiave di accesso segreta ad AWS, consulta questa [pagina](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
 
    * **[!UICONTROL AWS Region]**
-Per ulteriori informazioni sull’area geografica di AWS, consulta questo articolo [page](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
+Per ulteriori informazioni sull’area geografica di AWS, consulta [pagina](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
    ![](assets/aam_config_2.png)
 
-1. Fai clic su **[!UICONTROL Save]** e configura **[!UICONTROL Import audiences from the Adobe Marketing Cloud]** account esterno come descritto nei passaggi precedenti.
+1. Clic **[!UICONTROL Save]** e configurare **[!UICONTROL Import audiences from the Adobe Marketing Cloud]** account esterno come descritto nei passaggi precedenti.
 
 Gli account esterni sono ora configurati.
 
-## Passaggio 2: Configurare l&#39;origine dati {#step-2--configure-the-data-source}
+## Passaggio 2: configurare l’origine dati {#step-2--configure-the-data-source}
 
-La **Destinatario - ID visitatore** viene creato all’interno di Audience Manager. Si tratta di un’origine dati preconfigurata configurata configurata configurata per l’ID visitatore per impostazione predefinita. I segmenti creati da Campaign faranno parte di questa origine dati.
+Il **Destinatario - ID visitatore** viene creato all’interno di Audience Manager. Si tratta di un’origine dati predefinita configurata per impostazione predefinita per l’ID visitatore. I segmenti creati da Campaign faranno parte di questa origine dati.
 
-Per configurare le **[!UICONTROL Recipient - Visitor ID]** origine dati:
+Per configurare **[!UICONTROL Recipient - Visitor ID]** origine dati:
 
-1. Da **[!UICONTROL Explorer]** nodo, seleziona **[!UICONTROL Administration > Platform > AMC Data sources]**.
+1. Dalla sezione **[!UICONTROL Explorer]** nodo, seleziona **[!UICONTROL Administration > Platform > AMC Data sources]**.
 1. Seleziona **[!UICONTROL Recipient - Visitor ID]**.
-1. Inserisci il **[!UICONTROL Data Source ID]** e **[!UICONTROL AAM Destination ID]** fornito dall&#39;Adobe.
+1. Inserisci il **[!UICONTROL Data Source ID]** e **[!UICONTROL AAM Destination ID]** fornite dall’Adobe.
 
    ![](assets/aam_config_3.png)
 
-## Passaggio 3: Configurare il server di tracciamento delle campagne {#step-3--configure-campaign-tracking-server}
+## Passaggio 3: configurare il server di tracciamento campagna {#step-3--configure-campaign-tracking-server}
 
-Per la configurazione dell’integrazione con il servizio core Persone o Audience Manager, dobbiamo anche configurare il server di tracciamento delle campagne.
+Per la configurazione dell’integrazione con il servizio core People o Audience Manager, è necessario configurare anche il server di tracciamento di Campaign.
 
-Devi accertarti che Campaign Tracking Server sia registrato sul dominio (CNAME). Puoi trovare ulteriori informazioni sulla delega dei nomi di dominio in [articolo](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=it).
+Assicurati che il server di tracciamento di Campaign sia registrato nel dominio (CNAME). Per ulteriori informazioni sulla delega dei nomi di dominio, consulta [questo articolo](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=it).
 
-## Passaggio 4: Configurare il servizio ID visitatori {#step-4--configure-the-visitor-id-service}
+## Passaggio 4: configurare il servizio ID visitatori {#step-4--configure-the-visitor-id-service}
 
-Nel caso in cui il servizio ID visitatore non sia mai stato configurato sulle proprietà web o sui siti web, consulta quanto segue [documento](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html) per scoprire come configurare il servizio o quanto segue [video](https://helpx.adobe.com/it/marketing-cloud/how-to/email-marketing.html#step-two).
+Nel caso in cui il servizio ID visitatore non sia mai stato configurato sulle proprietà o sui siti web, consulta le seguenti [documento](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html) per informazioni su come configurare il servizio o sui seguenti [video](https://helpx.adobe.com/it/marketing-cloud/how-to/email-marketing.html#step-two).
 
-La configurazione e il provisioning sono completati. L’integrazione può ora essere utilizzata per importare ed esportare tipi di pubblico o segmenti.
+La configurazione e il provisioning sono finalizzati, l’integrazione ora può essere utilizzata per importare ed esportare tipi di pubblico o segmenti.

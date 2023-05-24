@@ -16,7 +16,7 @@ ht-degree: 9%
 
 
 
-I flussi di lavoro descritti di seguito sono installati con **Trasferisci a mid-Sourcing** modulo per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta [Guida all’installazione di Campaign Classic v7](../../installation/using/mid-sourcing-deployment.md).
+I flussi di lavoro descritti di seguito vengono installati con **Trasferisci a mid-sourcing** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta [Guida all’installazione di Campaign Classic v7](../../installation/using/mid-sourcing-deployment.md).
 
 <table> 
  <tbody> 
@@ -28,7 +28,7 @@ I flussi di lavoro descritti di seguito sono installati con **Trasferisci a mid-
   <tr> 
    <td> <span class="uicontrol">Mid-sourcing (contatori di consegna)</span> <br /> </td> 
    <td> <span class="uicontrol">defaultMidSourcingDlv</span> <br /> </td> 
-   <td> <p>Questo flusso di lavoro raccoglie le informazioni sul conteggio delle consegne sul server di mid-sourcing. Le informazioni sul conteggio includono indicatori generali di consegna come il numero di consegne inviate, ecc.</p> <p>Le informazioni di tracciamento come le aperture non sono incluse.</p> <p>Viene attivato ogni dieci minuti per impostazione predefinita.</p> </td> 
+   <td> <p>Questo flusso di lavoro raccoglie informazioni sul conteggio delle consegne sul server di mid-sourcing. Le informazioni sul conteggio includono indicatori generali di consegna come il numero di consegne inviate, ecc.</p> <p>Le informazioni di tracciamento come le aperture non sono incluse.</p> <p>Viene attivato ogni dieci minuti per impostazione predefinita.</p> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Mid-sourcing (registri di consegna)</span> <br /> </td> 

@@ -19,13 +19,13 @@ ht-degree: 17%
 
 ## Modello di contenuto {#content-model-15}
 
-sysFilter:==condition
+sysFilter:==condizione
 
 ## Attributi {#attributes-15}
 
 Nessuna
 
-## Genitori {#parents-15}
+## Padri {#parents-15}
 
 `<element>`
 
@@ -43,7 +43,7 @@ Questo elemento non ha attributi.
 
 ## Esempi {#examples-12}
 
-Definizione di un filtro con una condizione sull&#39;attributo @name:
+Definizione di un filtro con una condizione sull’attributo @name:
 
 ```
 <sysFilter>

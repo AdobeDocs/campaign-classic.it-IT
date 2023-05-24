@@ -17,16 +17,16 @@ ht-degree: 0%
 
 
 
-## Proprietà del sondaggio {#survey-properties}
+## Proprietà sondaggio {#survey-properties}
 
 I sondaggi online sono completamente configurabili e personalizzabili per soddisfare le tue esigenze. I parametri devono essere immessi nella finestra delle proprietà.
 
-I parametri disponibili sono descritti in [presente documento](../../web/using/defining-web-forms-properties.md).
+I parametri disponibili sono descritti in [questo documento](../../web/using/defining-web-forms-properties.md).
 
 ![](assets/s_ncs_admin_survey_properties_general.png)
 
-## Archiviazione dati del sondaggio {#survey-data-storage}
+## Archiviazione dei dati del sondaggio {#survey-data-storage}
 
-Per impostazione predefinita, i campi modulo Web sono memorizzati nella tabella dei destinatari. Per utilizzare un’altra tabella, selezionala nel **[!UICONTROL Document type]** campo . La **[!UICONTROL Zoom]** consente di visualizzare il contenuto della tabella selezionata.
+Per impostazione predefinita, i campi del modulo Web vengono memorizzati nella tabella dei destinatari. Per utilizzare un&#39;altra tabella, selezionarla nel **[!UICONTROL Document type]** campo. Il **[!UICONTROL Zoom]** consente di visualizzare il contenuto della tabella selezionata.
 
-Le risposte ai sondaggi forniti dagli utenti che non sono memorizzati nei campi (ma nelle variabili locali) sono memorizzate nel **Risposte ai sondaggi** tabella. Puoi modificare lo schema utilizzato in base alla **[!UICONTROL Library]** campo . Questo campo è disponibile solo per **sondaggi**.
+Le risposte ai sondaggi forniti dagli utenti che non sono memorizzate nei campi (ma in variabili locali) sono memorizzate in **Risposte ai sondaggi** tabella. Puoi modificare lo schema utilizzato in base al **[!UICONTROL Library]** campo. Questo campo è disponibile solo per **sondaggi**.

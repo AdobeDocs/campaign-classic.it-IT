@@ -19,10 +19,10 @@ ht-degree: 6%
 
 ## Creare la consegna {#creating-the-delivery}
 
-Puoi creare una consegna tramite la panoramica o tramite il **[!UICONTROL Create > Delivery]** menu.
+Puoi creare una consegna tramite la panoramica o il **[!UICONTROL Create > Delivery]** menu.
 
 
-Per creare una consegna, fai clic su **[!UICONTROL Create]** sopra l’elenco delle consegne. Quando crei una nuova consegna, devi indicare il canale di consegna utilizzato. A questo scopo, seleziona il modello di consegna appropriato dall’elenco a discesa nel **[!UICONTROL Delivery template]** campo .
+Per creare una consegna, fai clic su **[!UICONTROL Create]** sopra l’elenco delle consegne. Quando crei una nuova consegna, devi indicare il canale di consegna utilizzato. A questo scopo, seleziona il modello di consegna appropriato dall’elenco a discesa nel **[!UICONTROL Delivery template]** campo.
 
 ![](assets/s_ncs_user_wizard_email01_1.png)
 
@@ -38,18 +38,18 @@ Puoi creare nuovi modelli di consegna per preconfigurare parametri specifici in 
 
 Devi completare i parametri per identificare la consegna. Per eseguire questa operazione:
 
-1. Immetti un nome per la consegna nel **[!UICONTROL Label]** campo .
+1. Immetti un nome per la consegna in **[!UICONTROL Label]** campo.
 
-   Un codice di consegna può anche essere assegnato alla consegna. Il nome della consegna e il relativo codice vengono visualizzati nell’elenco delle consegne, ma non possono essere visualizzati dai destinatari.
+   Alla consegna può essere assegnato anche un codice di consegna. Il nome della consegna e il relativo codice vengono visualizzati nell’elenco delle consegne, ma non possono essere visualizzati dai destinatari.
 
-1. Aggiungi una descrizione nel **[!UICONTROL Description]** campo .
-1. Selezionare la natura della consegna nel campo pertinente. Queste informazioni sono utili per il tracciamento delle consegne: puoi filtrare in base a questo criterio nell’elenco di consegna o creare query utilizzando questo criterio di selezione.
+1. Aggiungi una descrizione in **[!UICONTROL Description]** campo.
+1. Seleziona la natura della consegna nel campo pertinente. Queste informazioni sono utili per il tracciamento della consegna: puoi filtrare in base a questo criterio nell’elenco di consegna o creare query utilizzando questo criterio di selezione.
 
    ![](assets/s_ncs_user_email_del_nature.png)
 
-1. Fai clic su **[!UICONTROL Continue]** per confermare queste informazioni e visualizzare la finestra di configurazione del messaggio.
+1. Clic **[!UICONTROL Continue]** per confermare queste informazioni e visualizzare la finestra configurazione messaggio.
 
-Il contenuto della consegna è pronto per essere configurato. La definizione del contenuto di consegna è specifica per ciascun canale. Per ulteriori informazioni, consulta la sezione dedicata:
+Il contenuto della consegna è pronto per essere configurato. La definizione del contenuto della consegna è specifica per ciascun canale. Per ulteriori informazioni, consulta la sezione dedicata:
 
 * [Definire il contenuto dell’e-mail](defining-the-email-content.md)
 * [Definisci il contenuto dell’SMS](sms-create.md#defining-the-sms-content)

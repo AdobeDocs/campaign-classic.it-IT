@@ -36,9 +36,9 @@ La mappatura SQL dello schema di esempio fornisce il seguente documento XML:
 
 ## Descrizione {#description}
 
-L&#39;elemento principale dello schema non è più **`<srcschema>`**, ma **`<schema>`**.
+L’elemento principale dello schema non è più **`<srcschema>`**, ma **`<schema>`**.
 
-Questo ci porta a un altro tipo di documento, generato automaticamente dallo schema di origine, semplicemente denominato schema. Questo schema verrà utilizzato dall&#39;applicazione Adobe Campaign.
+Questo ci porta a un altro tipo di documento, che viene generato automaticamente dallo schema di origine, semplicemente denominato schema. Questo schema verrà utilizzato dall’applicazione Adobe Campaign.
 
 I nomi SQL vengono determinati automaticamente in base al nome e al tipo dell&#39;elemento.
 
@@ -52,9 +52,9 @@ Le regole di denominazione SQL sono le seguenti:
    <element name="recipient" sqltable="CusRecipient">
    ```
 
-* campo: nome dell’elemento preceduto da un prefisso definito in base al tipo (&#39;i&#39; per integer, &#39;d&#39; per double, &#39;s&#39; per string, &#39;ts&#39; per date, ecc.)
+* campo: nome dell’elemento preceduto da un prefisso definito secondo il tipo (&quot;i&quot; per numero intero, &quot;d&quot; per doppio, &quot;s&quot; per stringa, &quot;ts&quot; per date, ecc.)
 
-   Il nome del campo viene immesso tramite la variabile **sqlname** attributo per ogni tipo **`<attribute>`** e **`<element>`**:
+   Il nome del campo viene immesso tramite **sqlname** attributo per ogni tipo **`<attribute>`** e **`<element>`**:
 
    ```
    <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
@@ -81,11 +81,11 @@ I vincoli del campo SQL sono i seguenti:
 
 ## Campi XML {#xml-fields}
 
-Per impostazione predefinita, qualsiasi tipo digitato **`<attribute>`** e **`<element>`** è mappato su un campo SQL della tabella dello schema dati. È tuttavia possibile fare riferimento a questo campo in XML anziché in SQL, il che significa che i dati vengono memorizzati in un campo Memo (&quot;mData&quot;) della tabella contenente i valori di tutti i campi XML. L&#39;archiviazione di questi dati è un documento XML che osserva la struttura dello schema.
+Per impostazione predefinita, qualsiasi **`<attribute>`** e **`<element>`** viene mappato su un campo SQL della tabella dello schema di dati. È tuttavia possibile fare riferimento a questo campo in formato XML anziché in formato SQL, il che significa che i dati vengono memorizzati in un campo Memo (&quot;mData&quot;) della tabella contenente i valori di tutti i campi XML. La memorizzazione di questi dati è un documento XML che osserva la struttura dello schema.
 
-Per compilare un campo in XML, è necessario aggiungere il **xml** attributo con il valore &quot;true&quot; all&#39;elemento interessato.
+Per compilare un campo in XML, è necessario aggiungere **xml** con il valore &quot;true&quot; all&#39;elemento interessato.
 
-**Esempio**: di seguito sono riportati due esempi di utilizzo del campo XML.
+**Esempio**: ecco due esempi di utilizzo dei campi XML.
 
 * Campo commento su più righe:
 
@@ -99,9 +99,9 @@ Per compilare un campo in XML, è necessario aggiungere il **xml** attributo con
    <element name="description" xml="true" type="html" label="Description"/>
    ```
 
-   Il tipo &quot;html&quot; ti consente di memorizzare il contenuto di HTML in un tag CDATA e visualizzare un controllo speciale di modifica di HTML nell’interfaccia client di Adobe Campaign.
+   Il tipo &quot;html&quot; consente di memorizzare il contenuto HTML in un tag CDATA e di visualizzare uno speciale controllo di modifica HTML nell’interfaccia client di Adobe Campaign.
 
-L’utilizzo di campi XML consente di aggiungere campi senza dover modificare la struttura fisica del database. Un altro vantaggio è l&#39;utilizzo di meno risorse (dimensioni assegnate ai campi SQL, limite al numero di campi per tabella, ecc.).
+L&#39;utilizzo di campi XML consente di aggiungere campi senza dover modificare la struttura fisica del database. Un altro vantaggio consiste nell&#39;utilizzo di meno risorse (dimensioni allocate ai campi SQL, limite al numero di campi per tabella, ecc.).
 
 Lo svantaggio principale è l&#39;impossibilità di indicizzare o filtrare un campo XML.
 
@@ -109,7 +109,7 @@ Lo svantaggio principale è l&#39;impossibilità di indicizzare o filtrare un ca
 
 Gli indici consentono di ottimizzare le prestazioni delle query SQL utilizzate nell&#39;applicazione.
 
-Un indice viene dichiarato dall&#39;elemento principale dello schema dati.
+Un indice viene dichiarato dall’elemento principale dello schema di dati.
 
 ```
 <dbindex name="name_of_index" unique="true/false">
@@ -119,10 +119,10 @@ Un indice viene dichiarato dall&#39;elemento principale dello schema dati.
 </key>
 ```
 
-Gli indici obbediscono alle seguenti regole:
+Gli indici rispettano le regole seguenti:
 
 * Un indice può fare riferimento a uno o più campi della tabella.
-* Un indice può essere univoco (per evitare duplicati) in tutti i campi se **unico** l&#39;attributo contiene il valore &quot;true&quot;.
+* Un indice può essere univoco (per evitare duplicati) in tutti i campi se **univoco** contiene il valore &quot;true&quot;.
 * Il nome SQL dell&#39;indice è determinato dal nome SQL della tabella e dal nome dell&#39;indice.
 
 >[!NOTE]
@@ -131,11 +131,11 @@ Gli indici obbediscono alle seguenti regole:
 
 >[!NOTE]
 >
->Gli indici vengono creati automaticamente durante la mappatura della tabella (standard o FDA).
+>Gli indici vengono creati automaticamente durante la mappatura delle tabelle (standard o FDA).
 
 **Esempio**:
 
-* Aggiunta di un indice all&#39;indirizzo e-mail e alla città:
+* Aggiunta di un indice all’indirizzo e-mail e alla città:
 
    ```
    <srcSchema name="recipient" namespace="cus">
@@ -176,7 +176,7 @@ Gli indici obbediscono alle seguenti regole:
 
 Una tabella deve avere almeno una chiave per identificare un record nella tabella.
 
-Una chiave viene dichiarata dall&#39;elemento principale dello schema dati.
+Una chiave viene dichiarata dall’elemento principale dello schema di dati.
 
 ```
 <key name="name_of_key">
@@ -186,15 +186,15 @@ Una chiave viene dichiarata dall&#39;elemento principale dello schema dati.
 </key>
 ```
 
-Le chiavi obbediscono alle seguenti regole:
+Le chiavi rispettano le seguenti regole:
 
 * Una chiave può fare riferimento a uno o più campi della tabella.
-* Una chiave è nota come &quot;primaria&quot; (o &quot;priorità&quot;) quando è la prima nello schema da compilare o se contiene la **interno** attributo con il valore &quot;true&quot;.
-* Un indice univoco viene dichiarato implicitamente per ogni definizione di chiave. È possibile impedire la creazione di un indice sulla chiave aggiungendo il **noDbIndex** attributo con il valore &quot;true&quot;.
+* Una chiave è nota come &quot;primaria&quot; (o &quot;priorità&quot;) quando è la prima dello schema a essere compilata o se contiene **interno** con il valore &quot;true&quot;.
+* Un indice univoco viene dichiarato in modo implicito per ogni definizione di chiave. La creazione di un indice sulla chiave può essere impedita aggiungendo il **noDbIndex** con il valore &quot;true&quot;.
 
 >[!NOTE]
 >
->Come standard, le chiavi sono gli elementi dichiarati dall&#39;elemento principale dello schema dopo la definizione degli indici.
+>Come standard, le chiavi sono gli elementi dichiarati dall’elemento principale dello schema dopo la definizione degli indici.
 
 >[!NOTE]
 >
@@ -243,7 +243,7 @@ Le chiavi obbediscono alle seguenti regole:
    </schema>
    ```
 
-* Aggiunta di una chiave primaria o interna al campo del nome &quot;id&quot;:
+* Aggiunta di una chiave primaria o interna nel campo del nome &quot;id&quot;:
 
    ```
    <srcSchema name="recipient" namespace="cus">
@@ -287,23 +287,23 @@ Le chiavi obbediscono alle seguenti regole:
 
 ### Tasto incrementale automatico {#auto-incremental-key}
 
-La chiave primaria della maggior parte delle tabelle Adobe Campaign è un numero intero lungo 32 bit generato automaticamente dal motore di database. Il calcolo del valore chiave dipende da una sequenza (per impostazione predefinita, il **XtkNewId** funzione SQL) generando un numero univoco nell&#39;intero database. Il contenuto della chiave viene immesso automaticamente all&#39;inserimento del record.
+La chiave primaria della maggior parte delle tabelle di Adobe Campaign è un numero intero a 32 bit generato automaticamente dal motore di database. Il calcolo del valore chiave dipende da una sequenza (per impostazione predefinita, il **XtkNewId** funzione SQL) che genera un numero univoco nell&#39;intero database. Il contenuto della chiave viene immesso automaticamente all’inserimento del record.
 
 Il vantaggio di una chiave incrementale è che fornisce una chiave tecnica non modificabile per i join tra tabelle. Inoltre, questa chiave non occupa molta memoria perché utilizza un numero intero a doppio byte.
 
-È possibile specificare nello schema di origine il nome della sequenza da utilizzare con il **pkSequence** attributo. Se questo attributo non è specificato nello schema di origine, il **XtkNewId** viene utilizzata la sequenza predefinita. L&#39;applicazione utilizza sequenze dedicate per **nms:wideLog** e **nms:trackingLog** schemi (**NmsBroadLogId** e **NmsTrackingLogId** rispettivamente) perché queste sono le tabelle che contengono il maggior numero di record.
+È possibile specificare nello schema di origine il nome della sequenza da utilizzare con **pkSequence** attributo. Se questo attributo non è specificato nello schema di origine, **XtkNewId** verrà utilizzata la sequenza predefinita. L&#39;applicazione utilizza sequenze dedicate per **nms:broadLog** e **nms:trackingLog** schemi (**NmsBroadLogId** e **NmsTrackingLogId** rispettivamente) perché queste sono le tabelle che contengono il maggior numero di record.
 
-da ACC 18.10, **XtkNewId** non è più il valore predefinito per la sequenza negli schemi predefiniti. Ora puoi creare uno schema o estendere lo schema esistente con una sequenza dedicata.
+ACC 18.10, **XtkNewId** non è più il valore predefinito per la sequenza negli schemi predefiniti. Ora puoi creare uno schema o estendere uno schema esistente con una sequenza dedicata.
 
 >[!IMPORTANT]
 >
->Durante la creazione di un nuovo schema o durante un&#39;estensione dello schema, è necessario mantenere lo stesso valore di sequenza della chiave primaria (@pkSequence) per l&#39;intero schema.
+>Quando crei un nuovo schema o durante un’estensione dello schema, devi mantenere lo stesso valore di sequenza di chiave primaria (@pkSequence) per l’intero schema.
 
 >[!NOTE]
 >
->Una sequenza a cui si fa riferimento in uno schema Adobe Campaign (**NmsTrackingLogId** ad esempio) deve essere associata a una funzione SQL che restituisce il numero di ID nei parametri, separati da virgole. Questa funzione deve essere chiamata **GetNew** XXX **Id**, dove **XXX** è il nome della sequenza (**GetNewNmsTrackingLogIds** ad esempio). Visualizza la **postgres-nms.sql**, **mssql-nms.sql** o **oracle-nms.sql** file forniti con l&#39;applicazione nel **datakit/nms/eng/sql/** directory per recuperare l&#39;esempio di creazione di una sequenza &#39;NmsTrackingLogId&#39; per ogni motore di database.
+>Una sequenza a cui si fa riferimento in uno schema di Adobe Campaign (**NmsTrackingLogId** ad esempio) deve essere associata a una funzione SQL che restituisce il numero di ID nei parametri, separati da virgole. Questa funzione deve essere chiamata **GetNew** XXX **Id**, dove **XXX** è il nome della sequenza (**GetNewNmsTrackingLogIds** ad esempio). Visualizza **postgres-nms.sql**, **mssql-nms.sql** o **oracle-nms.sql** file forniti con l&#39;applicazione in **datakit/nms/eng/sql/** per recuperare l&#39;esempio di creazione di una sequenza &#39;NmsTrackingLogId&#39; per ciascun motore di database.
 
-Per dichiarare una chiave univoca, compila **autopk** attributo (con valore &quot;true&quot;) sull&#39;elemento principale dello schema dati.
+Per dichiarare una chiave univoca, compila il **autopk** (con valore &quot;true&quot;) sull’elemento principale dello schema di dati.
 
 **Esempio**:
 
@@ -339,7 +339,7 @@ Oltre alla definizione della chiave e del relativo indice, allo schema esteso è
 
 >[!IMPORTANT]
 >
->Al momento della creazione della tabella viene inserito automaticamente un record con una chiave primaria impostata su 0. Questo record viene utilizzato per evitare i join esterni, che non sono efficaci nelle tabelle dei volumi. Per impostazione predefinita, tutte le chiavi esterne vengono inizializzate con il valore 0 in modo che sia sempre possibile restituire un risultato sul join quando l&#39;elemento dati non è popolato.
+>Un record con una chiave primaria impostata su 0 viene inserito automaticamente al momento della creazione della tabella. Questo record viene utilizzato per evitare outer join che non sono validi per le tabelle dei volumi. Per impostazione predefinita, tutte le chiavi esterne sono inizializzate con il valore 0, in modo che un risultato possa sempre essere restituito sul join quando l&#39;elemento dati non viene popolato.
 
 ## Collegamenti: relazione tra tabelle {#links--relation-between-tables}
 
@@ -351,22 +351,22 @@ I vari tipi di associazioni (note come &quot;cardinalità&quot;) sono i seguenti
 * Cardinalità 1-N: una occorrenza della tabella sorgente può avere diverse occorrenze corrispondenti della tabella di destinazione, ma una occorrenza della tabella di destinazione può avere al massimo una occorrenza corrispondente della tabella sorgente.
 * Cardinalità N-N: una occorrenza della tabella sorgente può avere diverse occorrenze corrispondenti della tabella di destinazione e viceversa.
 
-Nell’interfaccia è possibile distinguere facilmente i diversi tipi di relazioni grazie alle loro icone.
+Nell’interfaccia, è possibile distinguere facilmente i diversi tipi di relazioni grazie alle relative icone.
 
-Per le relazioni di unione con una tabella/database della campagna:
+Per le relazioni di join con una tabella o un database di Campaign:
 
-* ![](assets/join_with_campaign11.png) : Cardinalità 1-1. Ad esempio, tra un destinatario e un ordine corrente. Un destinatario può essere correlato a una sola occorrenza della tabella dell&#39;ordine corrente alla volta.
-* ![](assets/externaljoin11.png) : Cardinalità 1-1, unione esterna. Ad esempio, tra un destinatario e il proprio paese. Un destinatario può essere correlato a una sola occorrenza del paese della tabella. Il contenuto della tabella del paese non verrà salvato.
-* ![](assets/join_with_campaign1n.png) : Cardinalità 1-N. Ad esempio, tra un destinatario e la tabella Abbonamenti. Un destinatario può essere correlato a diverse occorrenze nella tabella delle sottoscrizioni.
+* ![](assets/join_with_campaign11.png) Cardinalità 1-1. Ad esempio, tra un destinatario e un ordine corrente. Un destinatario può essere correlato a una sola occorrenza della tabella dell&#39;ordine corrente alla volta.
+* ![](assets/externaljoin11.png) : Cardinalità 1-1, join esterno. Ad esempio, tra un destinatario e il suo paese. Un destinatario può essere correlato a una sola occorrenza del paese della tabella. Il contenuto della country table non verrà salvato.
+* ![](assets/join_with_campaign1n.png) : Cardinalità 1-N. Ad esempio, tra un destinatario e la tabella delle sottoscrizioni. Un destinatario può essere correlato a diverse occorrenze nella tabella delle sottoscrizioni.
 
-Per le relazioni di unione che utilizzano Federated Database Access:
+Per le relazioni di join che utilizzano Federated Database Access:
 
 * ![](assets/join_fda_11.png) : Cardinalità 1-1
 * ![](assets/join_fda_1m.png) : Cardinalità 1-N
 
 Per ulteriori informazioni sulle tabelle FDA, consulta [Accesso a un database esterno](../../installation/using/about-fda.md).
 
-Un collegamento deve essere dichiarato nello schema contenente la chiave esterna della tabella collegata tramite l’elemento principale:
+È necessario dichiarare un collegamento nello schema contenente la chiave esterna della tabella collegata tramite l’elemento principale:
 
 ```
 <element name="name_of_link" type="link" target="key_of_destination_schema">
@@ -376,31 +376,31 @@ Un collegamento deve essere dichiarato nello schema contenente la chiave esterna
 </element>
 ```
 
-I collegamenti obbediscono alle seguenti regole:
+I collegamenti rispettano le seguenti regole:
 
-* La definizione di un collegamento viene inserita in un **collegamento**-type **`<element>`** con i seguenti attributi:
+* La definizione di un collegamento viene immessa su un **link**-type **`<element>`** con i seguenti attributi:
 
-   * **name**: nome del collegamento dalla tabella sorgente,
-   * **target**: nome dello schema di destinazione,
+   * **nome**: nome del collegamento dalla tabella di origine,
+   * **destinazione**: nome dello schema di destinazione,
    * **etichetta**: etichetta del collegamento,
    * **revLink** (facoltativo): nome del collegamento inverso dallo schema di destinazione (dedotto automaticamente per impostazione predefinita),
-   * **integrità** (facoltativo): integrità referenziale dell&#39;occorrenza della tabella di origine all&#39;occorrenza della tabella di destinazione. I valori possibili sono i seguenti:
+   * **integrità** (facoltativo): integrità referenziale dell’occorrenza della tabella sorgente rispetto all’occorrenza della tabella di destinazione. I valori possibili sono i seguenti:
 
-      * **definire**: è possibile eliminare l&#39;occorrenza sorgente se non è più referenziata da un&#39;occorrenza di destinazione,
-      * **normale**: l&#39;eliminazione dell&#39;occorrenza di origine inizializza le chiavi del collegamento all&#39;occorrenza di destinazione (modalità predefinita). Questo tipo di integrità inizializza tutte le chiavi esterne,
-      * **proprio**: l&#39;eliminazione dell&#39;occorrenza di origine porta all&#39;eliminazione dell&#39;occorrenza di destinazione,
-      * **copia**: come **proprio** (in caso di cancellazione) o duplica gli eventi (in caso di duplicazione),
-      * **neutro**: non fa nulla.
-   * **revIntegrity** (facoltativo): integrità dello schema di destinazione (facoltativo, &quot;normale&quot; per impostazione predefinita),
-   * **revCardinalità** (facoltativo): con il valore &quot;single&quot; popola la cardinalità con il tipo 1-1 (1-N per impostazione predefinita).
-   * **externalJoin** (facoltativo): forza il join esterno
-   * **revExternalJoin** (facoltativo): forza l&#39;unione esterna sul collegamento inverso
+      * **definire**: è possibile eliminare l’occorrenza sorgente se un’occorrenza target non vi fa più riferimento,
+      * **normale**: l’eliminazione dell’occorrenza sorgente inizializza le chiavi del collegamento all’occorrenza target (modalità predefinita); questo tipo di integrità inizializza tutte le chiavi esterne,
+      * **proprio**: l’eliminazione dell’occorrenza sorgente determina l’eliminazione dell’occorrenza target,
+      * **owncopy**: uguale a **proprio** (in caso di eliminazione) o duplica le occorrenze (in caso di duplicazione),
+      * **neutro**: non esegue alcuna operazione.
+   * **revIntegrity** (facoltativo): integrità nello schema di destinazione (opzionale, &quot;normale&quot; per impostazione predefinita),
+   * **revCardinality** (facoltativo): con il valore &quot;single&quot; compila la cardinalità con il tipo 1-1 (1-N per impostazione predefinita).
+   * **externalJoin** (facoltativo): forza l’outer join
+   * **revExternalJoin** (facoltativo): forza il join esterno sul collegamento inverso
 
 
-* Un collegamento fa riferimento a uno o più campi dalla tabella di origine alla tabella di destinazione. I campi che compongono l&#39;unione ( `<join>`  elemento) non è necessario compilarli perché vengono dedotti automaticamente per impostazione predefinita utilizzando la chiave interna dello schema di destinazione.
+* Un collegamento fa riferimento a uno o più campi dalla tabella di origine alla tabella di destinazione. Campi che compongono il join ( `<join>`  element) non devono essere compilati perché vengono automaticamente dedotti per impostazione predefinita utilizzando la chiave interna dello schema di destinazione.
 * Un indice viene aggiunto automaticamente alla chiave esterna del collegamento nello schema esteso.
-* Un collegamento è costituito da due collegamenti parziali, in cui il primo è dichiarato dallo schema di origine e il secondo viene creato automaticamente nello schema esteso dello schema di destinazione.
-* Un join può essere un join esterno se **externalJoin** viene aggiunto l&#39;attributo , con il valore &quot;true&quot; (supportato in PostgreSQL).
+* Un collegamento è costituito da due collegamenti intermedi, in cui il primo viene dichiarato dallo schema di origine e il secondo viene creato automaticamente nello schema esteso dello schema di destinazione.
+* Un join può essere un outer join se **externalJoin** con il valore &quot;true&quot; (supportato in PostgreSQL).
 
 >[!NOTE]
 >
@@ -408,7 +408,7 @@ I collegamenti obbediscono alle seguenti regole:
 
 ### Esempio 1 {#example-1}
 
-Relazione 1-N alla tabella dello schema &quot;cus:company&quot;:
+Relazione 1-N con la tabella dello schema &quot;cus:company&quot;:
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -436,7 +436,7 @@ Lo schema generato:
 </schema>
 ```
 
-La definizione del collegamento è completata dai campi che compongono il join, ovvero la chiave primaria con il relativo XPath (&quot;@id&quot;) nello schema di destinazione, e la chiave esterna con il relativo XPath (&quot;@company-id&quot;) nello schema.
+La definizione del collegamento è completata dai campi che compongono il join, ovvero la chiave primaria con il relativo XPath (&quot;@id&quot;) nello schema di destinazione e la chiave esterna con il relativo XPath (&quot;@company-id&quot;) nello schema.
 
 La chiave esterna viene aggiunta automaticamente in un elemento che utilizza le stesse caratteristiche del campo associato nella tabella di destinazione, con la seguente convenzione di denominazione: nome dello schema di destinazione seguito dal nome del campo associato (&quot;company-id&quot; nel nostro esempio).
 
@@ -461,17 +461,17 @@ Schema esteso del target (&quot;cus:company&quot;):
 </schema>
 ```
 
-È stato aggiunto un link inverso alla tabella &quot;cus:recipient&quot; con i seguenti parametri:
+È stato aggiunto un collegamento inverso alla tabella &quot;cus:recipient&quot; con i seguenti parametri:
 
-* **name**: dedotto automaticamente dal nome dello schema di origine (può essere forzato con l&#39;attributo &quot;revLink&quot; nella definizione del collegamento sullo schema di origine)
-* **revLink**: nome del link inverso
-* **target**: chiave dello schema collegato ( schema &quot;cus:recipient&quot;)
-* **non legato**: il collegamento viene dichiarato come elemento di raccolta per una cardinalità 1-N (per impostazione predefinita)
-* **integrità**: &quot;define&quot; per impostazione predefinita (può essere forzato con l&#39;attributo &quot;revIntegrity&quot; nella definizione del collegamento sullo schema di origine).
+* **nome**: dedotto automaticamente dal nome dello schema di origine (può essere forzato con l’attributo &quot;revLink&quot; nella definizione del collegamento nello schema di origine)
+* **revLink**: nome del collegamento inverso
+* **destinazione**: chiave dello schema collegato (schema &quot;cus:recipient&quot;)
+* **non associato**: il collegamento viene dichiarato come elemento di raccolta per una cardinalità 1-N (per impostazione predefinita)
+* **integrità**: &quot;define&quot; per impostazione predefinita (può essere forzato con l’attributo &quot;revIntegrity&quot; nella definizione del collegamento nello schema di origine).
 
 ### Esempio 2 {#example-2}
 
-In questo esempio, dichiareremo un collegamento verso la tabella di schema &quot;nms:address&quot;. Il join è un join esterno ed è popolato esplicitamente con l&#39;indirizzo e-mail del destinatario e il campo &quot;@address&quot; della tabella collegata (&quot;nms:address&quot;).
+In questo esempio, dichiareremo un collegamento verso la tabella dello schema &quot;nms:address&quot;. Il join è un outer join e viene compilato esplicitamente con l&#39;indirizzo e-mail del destinatario e il campo &quot;@address&quot; della tabella collegata (&quot;nms:address&quot;).
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -486,7 +486,7 @@ In questo esempio, dichiareremo un collegamento verso la tabella di schema &quot
 
 ### Esempio 3 {#example-3}
 
-Relazione 1-1 alla tabella dello schema &quot;cus:extension&quot;:
+1-1 relazione con la tabella dello schema &quot;cus:extension&quot;:
 
 ```
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
@@ -494,17 +494,17 @@ Relazione 1-1 alla tabella dello schema &quot;cus:extension&quot;:
 
 ### Esempio 4 {#example-4}
 
-Collega a una cartella (&quot;schema xtk:folder&quot;):
+Collegamento a una cartella (schema &quot;xtk:folder&quot;):
 
 ```
 <element default="DefaultFolder('nmsFolder')" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="own" revLabel="Recipients" target="xtk:folder" type="link"/>
 ```
 
-Il valore predefinito restituisce l&#39;identificatore del primo file di tipo di parametro idoneo immesso nella funzione &quot;DefaultFolder(&#39;nmsFolder&#39;)&quot;.
+Il valore predefinito restituisce l&#39;identificatore del primo file del tipo di parametro idoneo immesso nella funzione &quot;DefaultFolder(&#39;nmsFolder&#39;)&quot;.
 
 ### Esempio 5 {#example-5}
 
-In questo esempio, desideriamo creare una chiave su un collegamento (&quot;azienda&quot; a schema &quot;cus:company&quot;) con **xlink** e un campo della tabella (&quot;e-mail&quot;):
+In questo esempio, vogliamo creare una chiave su un collegamento (schema &quot;company&quot; to &quot;cus:company&quot;) con **xlink** e un campo della tabella (&quot;email&quot;):
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -548,4 +548,4 @@ Lo schema generato:
 </schema>
 ```
 
-La definizione della chiave del nome &quot;companyEmail&quot; è stata estesa con la chiave esterna del link &quot;company&quot;. Questa chiave genera un indice univoco su entrambi i campi.
+La definizione della chiave del nome &quot;companyEmail&quot; è stata estesa con la chiave esterna del collegamento &quot;company&quot;. Questa chiave genera un indice univoco su entrambi i campi.

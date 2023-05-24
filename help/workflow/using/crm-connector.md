@@ -1,6 +1,6 @@
 ---
 title: Connettore per sistema CRM
-description: Ulteriori informazioni sul connettore di gestione delle relazioni con i clienti e configurazione della sincronizzazione dei dati
+description: Ulteriori informazioni sul connettore CRM e configurazione della sincronizzazione dati
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: 41966f31-9f37-4ab7-919a-d4624f9d1178
@@ -15,20 +15,20 @@ ht-degree: 10%
 
 
 
-La **Connettore CRM** activity ti consente di configurare la sincronizzazione dati tra Adobe Campaign e un sistema CRM.
+Il **Connettore CRM** attività consente di configurare la sincronizzazione dei dati tra Adobe Campaign e un sistema di gestione delle relazioni con i clienti.
 
-Per ulteriori informazioni sui connettori di gestione delle relazioni con i clienti in Adobe Campaign, consulta questo [sezione](../../platform/using/crm-connectors.md).
+Per ulteriori informazioni sui connettori CRM in Adobe Campaign, consulta questa [sezione](../../platform/using/crm-connectors.md).
 
-Con questa attività puoi:
+Con questa attività, puoi:
 
-* Importazione da CRM
+* Importa dal CRM
 * Esporta in CRM
 * Importa oggetti eliminati nel CRM
 * Elimina oggetti nel CRM
 
 ![](assets/crm_task_select_op.png)
 
-Seleziona l&#39;account esterno che corrisponde al CRM con cui desideri configurare la sincronizzazione, quindi seleziona l&#39;oggetto da sincronizzare (account, opportunità, contatti, ecc.).
+Seleziona l’account esterno che corrisponde al CRM con cui desideri configurare la sincronizzazione, quindi seleziona l’oggetto da sincronizzare (account, opportunità, contatti, ecc.).
 
 ![](assets/crm_task_select_obj.png)
 

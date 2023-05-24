@@ -20,33 +20,33 @@ ht-degree: 6%
 
 ## Invio di messaggi transazionali {#transactional-message-send}
 
-Nell’istanza di esecuzione, una volta completata la fase di arricchimento e collegato all’evento un modello di consegna, la consegna viene inviata.
+Nell’istanza di esecuzione, una volta completata la fase di arricchimento e dopo aver collegato un modello di consegna all’evento, la consegna viene inviata.
 
 >[!NOTE]
 >
 >L’MTA dà priorità all’elaborazione dei messaggi transazionali rispetto a qualsiasi altra consegna.
 
-Tutte le consegne sono raggruppate nel **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]** cartella.
+Tutte le consegne sono raggruppate in **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]** cartella.
 
 ![](assets/messagecenter_deliveries_execinstances_001.png)
 
-Per impostazione predefinita, sono ordinate in sottocartelle per mese di consegna. Questo ordinamento può essere modificato nelle proprietà del modello di messaggio come mostrato di seguito.
+Per impostazione predefinita, sono ordinate in sottocartelle per mese di consegna. Questo ordinamento può essere modificato nelle proprietà del modello di messaggio, come illustrato di seguito.
 
 ![](assets/messagecenter_deliveries_properties_001.png)
 
 >[!NOTE]
 >
->Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento al [MTA avanzato](../../delivery/using/sending-with-enhanced-mta.md), tutti i messaggi transazionali possono anche essere inviati con l’MTA avanzato di Adobe Campaign per migliorare il recapito messaggi, il throughput e la gestione dei messaggi non recapitati. Tutti gli effetti sono gli stessi dei messaggi di marketing standard.
+>Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento al [MTA avanzato](../../delivery/using/sending-with-enhanced-mta.md), tutti i messaggi transazionali possono essere inviati anche con l’MTA avanzato di Adobe Campaign per migliorare il recapito messaggi, la velocità effettiva e la gestione delle e-mail non consegnate. Tutti gli effetti sono gli stessi dei messaggi di marketing standard.
 
 ## Monitoraggio dei messaggi transazionali {#transactional-message-monitoring}
 
-Per monitorare i messaggi transazionali, controlla il [registri di consegna](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
+Per monitorare i messaggi transazionali, seleziona la [registri di consegna](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
 
-Le consegne transazionali inviate dall’istanza di esecuzione vengono sincronizzate nuovamente nell’istanza di controllo tramite un flusso di lavoro tecnico (**[!UICONTROL Message Center execution instance]**) che viene eseguito ogni ora.
+Le consegne transazionali inviate dall’istanza di esecuzione vengono sincronizzate nuovamente con l’istanza di controllo tramite un flusso di lavoro tecnico (**[!UICONTROL Message Center execution instance]**) che viene eseguito ogni ora.
 
 >[!NOTE]
 >
->Le consegne accumulano settimanalmente gli eventi in base all’ultimo aggiornamento dell’evento e non alla data di creazione dell’evento. Pertanto, quando si estraggono i registri di consegna dei messaggi transazionali dall’istanza di controllo, l’ID di consegna associato a ciascun ID di registro di consegna può cambiare nel tempo mentre il registro viene aggiornato (ad esempio, quando viene ricevuto un messaggio non recapitato in entrata per l’evento).
+>Le consegne settimanali accumulano gli eventi in base all’ultimo aggiornamento dell’evento e non alla data di creazione dell’evento. Pertanto, durante l’estrazione dei registri di consegna della messaggistica transazionale dall’istanza di controllo, l’ID di consegna associato a ciascun ID del registro di consegna può cambiare nel tempo man mano che il registro viene aggiornato (ad esempio, quando viene ricevuto un mancato recapito in entrata per l’evento).
 
 <!--The transactional deliveries sent from the execution instance are synchronized back to the control instance as follows.
 

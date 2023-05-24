@@ -17,20 +17,20 @@ ht-degree: 5%
 
 
 
-L’editor di contenuti digitali offre **modelli standard** per applicazioni e consegne Web.
+Digital Content Editor offre **modelli standard** per applicazioni web e consegne.
 
-Quando si crea un’applicazione Web di tipo Pagina di destinazione, l’utente può scegliere uno di questi modelli. Puoi anche importare un modello HTML creato al di fuori di Adobe Campaign.
+Durante la creazione di un&#39;applicazione Web di tipo Pagina di destinazione, l&#39;utente può scegliere uno di questi modelli. Puoi anche importare un modello di HTML creato al di fuori di Adobe Campaign.
 
 ![](assets/dce_popup_templatechoice.png)
 
-Per aggiungere un modello, fai riferimento a [Opzioni globali](content-editor-interface.md#global-options).
+Per aggiungere un modello, fare riferimento a [Opzioni globali](content-editor-interface.md#global-options).
 
 ## Salvataggio di una consegna come modello {#saving-a-delivery-as-a-template}
 
 Dopo aver configurato una consegna, puoi salvarla come modello per riutilizzarla per le consegne future.
 
-In **Campagne** , apri la consegna scelta. Fai clic sul pulsante **Salva come modello** , denomina il modello e salva.
+In **Campagne** , apri la consegna scelta. Fai clic sul pulsante **Salva come modello** , assegna un nome al modello e quindi salva.
 
 ![](assets/dce_save_model.png)
 
-Il nuovo modello viene salvato in **Risorse > Modelli > Modelli di contenuto** nodo nell&#39;esploratore.
+Il nuovo modello viene salvato in **Risorse > Modelli > Modelli di contenuto** in esplora risorse.

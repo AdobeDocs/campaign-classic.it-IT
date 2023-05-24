@@ -20,23 +20,23 @@ ht-degree: 13%
 
 Dopo la fine del ciclo di vita di Microsoft Internet Explorer 11, il motore di rendering HTML per le dashboard nella console client utilizza Edge Chromium, a partire da Campaign Classic v7.3.
 
-Oltre all’installazione del runtime Microsoft Edge Webview 2, che è ora [necessaria per qualsiasi installazione della console client](../../installation/using/installing-the-client-console.md#webview), Microsoft Edge Chromium deve essere abilitato nelle istanze.
+Oltre all&#39;installazione di Microsoft Edge WebView2 Runtime, ora [richiesto per qualsiasi installazione della console client](../../installation/using/installing-the-client-console.md#webview), Microsoft Edge Chromium deve essere abilitato sulle istanze.
 
 ## Sei interessato da questo problema?
 
-Se l’ambiente è stato aggiornato a Campaign Classic v7.3 (o versione successiva), l’utente è interessato.
+L’aggiornamento dell’ambiente a Campaign Classic v7.3 (o versione successiva) influisce su di esso.
 
 ## Come si esegue l’aggiornamento?
 
-* Come **ospitato** cliente, Adobe ha già abilitato Microsoft Edge Chromium nelle istanze. Non è richiesta alcuna azione aggiuntiva.
+* As a **in hosting** cliente, Adobe ha già abilitato Microsoft Edge Chromium nelle istanze. Non è richiesta alcuna azione aggiuntiva.
 
-* Come **on-premise/ibrido** cliente, devi abilitare Microsoft Edge Chromium nelle istanze.
+* Come un **on-premise/ibrido** cliente, devi abilitare Microsoft Edge Chromium nelle istanze.
 
-   Durante l’aggiornamento ad Campaign Classic v7.3 (e versioni successive), viene visualizzata una nuova `webView2Mode` l’attributo è disponibile nel file di configurazione del server Campaign `serverConf.xml`. Questo attributo deve essere abilitato.
+   Durante l’aggiornamento a Campaign Classic v7.3 (e versioni successive), viene `webView2Mode` L’attributo è disponibile nel file di configurazione del server Campaign `serverConf.xml`. Questo attributo deve essere abilitato.
 
-   Per eseguire questa operazione, applica i seguenti passaggi a tutti gli ambienti (MKT, MID, RT):
+   Per farlo, applica i seguenti passaggi a tutti gli ambienti (MKT, MID, RT):
 
-   1. Modifica il file di configurazione del server Campaign (`serverConf.xml`)
+   1. Modificare il file di configurazione del server Campaign (`serverConf.xml`)
    1. In `<web>` modulo, set `webView2Mode = "1"`
    1. Esegui il comando seguente per ricaricare la configurazione del server:
 
@@ -44,13 +44,13 @@ Se l’ambiente è stato aggiornato a Campaign Classic v7.3 (o versione successi
       nlserver config -reload
       ```
 
-   1. Esegui il seguente comando per riavviare il server Web:
+   1. Esegui il comando seguente per riavviare il server Web:
 
       ```
       nlserver restart web
       ```
 
-   1. Se il tuo ambiente utilizza Apache come server web, esegui il seguente comando per riavviare Apache:
+   1. Se l’ambiente utilizza Apache come server web, esegui il seguente comando per riavviare Apache:
 
       ```
       /etc/init.d/apache2 restart

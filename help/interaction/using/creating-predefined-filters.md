@@ -18,11 +18,11 @@ ht-degree: 10%
 
 
 
-I filtri predefiniti consentono di creare regole di idoneità per la popolazione target, che possono essere facilmente riutilizzate durante la creazione dell’offerta. Sono specifici per ogni ambiente e tengono conto dei parametri dell’offerta.
+I filtri predefiniti ti consentono di creare regole di idoneità per la popolazione target che possono essere facilmente riutilizzate durante la creazione dell’offerta. Sono specifici per ogni ambiente e tengono conto dei parametri dell’offerta.
 
 Per creare un filtro, applica il seguente processo:
 
-1. Vai a **[!UICONTROL Administration]** e seleziona **[!UICONTROL Pre-defined offer filters]**.
+1. Vai a **[!UICONTROL Administration]** cartella e seleziona **[!UICONTROL Pre-defined offer filters]**.
 
    ![](assets/offer_filter_create_005.png)
 
@@ -30,7 +30,7 @@ Per creare un filtro, applica il seguente processo:
 
    ![](assets/offer_filter_create_001.png)
 
-1. Modifica l’etichetta per identificare il filtro in un secondo momento.
+1. Modifica l’etichetta per poter identificare il filtro in un secondo momento.
 
    ![](assets/offer_filter_create_002.png)
 
@@ -38,10 +38,10 @@ Per creare un filtro, applica il seguente processo:
 
    ![](assets/offer_filter_create_003.png)
 
-1. Se necessario, seleziona un operatore e un valore, quindi salva la query.
+1. Seleziona un operatore e un valore, se necessario, quindi salva la query.
 
    ![](assets/offer_filter_create_004.png)
 
-1. Fai clic su **[!UICONTROL Preview]** per visualizzare il risultato del filtro.
+1. Clic **[!UICONTROL Preview]** per visualizzare il risultato del filtro.
 
    ![](assets/offer_filter_create_006.png)

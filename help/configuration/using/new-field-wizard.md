@@ -19,23 +19,23 @@ Una procedura guidata accessibile tramite **[!UICONTROL Tools > Advanced > Add n
 
 La convalida della procedura guidata aggiorna lo schema di estensione della tabella da estendere e avvia lo script SQL per modificare la struttura fisica del database.
 
-L’assistente ha il vantaggio di aggiungere rapidamente un campo senza dover conoscere la struttura di uno schema di dati.
+Questo assistente ha il vantaggio di aggiungere rapidamente un campo senza dover conoscere la struttura di uno schema di dati.
 
 Lo svantaggio principale è la limitazione dei dati e delle proprietà da estendere.
 
 Le schermate della procedura guidata contengono i seguenti passaggi:
 
-1. La prima pagina ti consente di immettere il nome dello schema da estendere e lo spazio dei nomi dello schema di estensione in cui verranno salvate le modifiche:
+1. La prima pagina consente di immettere il nome dello schema da estendere e lo spazio dei nomi dello schema di estensione in cui verranno salvate le modifiche:
 
    ![](assets/d_ncs_integration_schema_addfield.png)
 
-1. La pagina successiva ti consente di immettere le proprietà del campo da aggiungere.
+1. Nella pagina successiva è possibile immettere le proprietà del campo da aggiungere.
 
    ![](assets/d_ncs_integration_schema_addfield2.png)
 
-1. Per confermare le modifiche, fai clic sul pulsante **[!UICONTROL Finish]** pulsante .
+1. Per confermare le modifiche, fai clic su **[!UICONTROL Finish]** pulsante.
 
-Nel nostro esempio viene creato automaticamente un file di estensione denominato &quot;cus:recipient&quot; e viene eseguito lo script SQL corrispondente:
+Nel nostro esempio, viene creato automaticamente un file di estensione denominato &quot;cus:recipient&quot; e viene eseguito lo script SQL corrispondente:
 
 ```
 <srcSchema extendedSchema="nms:recipient" label="Recipients" name="recipient"  namespace="cus">  
@@ -47,4 +47,4 @@ Nel nostro esempio viene creato automaticamente un file di estensione denominato
 
 >[!NOTE]
 >
->Per impostazione predefinita, i campi aggiunti sono dichiarati con la proprietà **user** (con il valore &quot;true&quot;). Questo consente di visualizzare e modificare il campo nel modulo di input dello schema esteso utilizzando un controllo di tipo &quot;treeEdit&quot; (fare riferimento a Modulo di input).
+>Per impostazione predefinita, i campi aggiunti vengono dichiarati con la proprietà **utente** con il valore &quot;true&quot;. Questo consente di visualizzare e modificare il campo nel modulo di input dello schema esteso utilizzando un controllo di tipo &quot;treeEdit&quot; (fare riferimento a Modulo di input).

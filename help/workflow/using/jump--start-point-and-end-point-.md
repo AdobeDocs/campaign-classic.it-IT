@@ -16,7 +16,7 @@ ht-degree: 15%
 
 
 
-**[!UICONTROL Jump]** Gli oggetti grafici di tipo -type sono utilizzati per migliorare la leggibilità di un diagramma complesso, in particolare di quello con transizioni di attraversamento.
+**[!UICONTROL Jump]** Gli oggetti grafici di tipo -type vengono utilizzati per migliorare la leggibilità di un diagramma complesso, in particolare quello con transizioni incrociate.
 
 I salti sono transizioni senza frecce.
 
@@ -24,10 +24,10 @@ Passano da un’attività all’altra, come nell’esempio seguente:
 
 ![](assets/s_user_segmentation_jump_sample.png)
 
-Per ogni transizione di tipo &quot;punto iniziale&quot;, deve essere posizionata una transizione di tipo &quot;punto finale&quot;.
+Per ogni transizione di tipo &quot;punto iniziale&quot;, è necessario posizionare una transizione di tipo &quot;punto finale&quot;.
 
-È possibile inserire diversi ponticelli di punto iniziale e punto finale nello stesso flusso di lavoro. Sono identificati da un numero che deve essere inserito nei parametri:
+Nello stesso flusso di lavoro è possibile inserire più salti di punti iniziali e finali. Sono identificati da un numero che deve essere inserito nei parametri:
 
 ![](assets/s_user_segmentation_jump_in.png)
 
-Per migliorare la leggibilità del diagramma, puoi modificare l’immagine associata ai salti per visualizzare il numero correlato. Vedi [Modificare le immagini delle attività](managing-activity-images.md).
+Per migliorare la leggibilità del diagramma, è possibile modificare l&#39;immagine associata ai salti per visualizzare il numero correlato. Consulta [Modificare le immagini dell’attività](managing-activity-images.md).

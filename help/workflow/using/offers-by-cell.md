@@ -16,19 +16,19 @@ ht-degree: 8%
 
 
 
-La **[!UICONTROL Offers by cell]** l’attività ti consente di distribuire il gruppo in entrata (da una query, ad esempio) in diversi segmenti e di specificare un’offerta da presentare per ciascuno di questi segmenti.
+Il **[!UICONTROL Offers by cell]** L’attività ti consente di distribuire il gruppo in entrata (ad esempio da una query) in più segmenti e di specificare un’offerta da presentare per ciascuno di questi segmenti.
 
-Questa attività può essere utilizzata solo con **Interazione**. Per ulteriori informazioni, consulta [sezione](../../interaction/using/about-outbound-channels.md).
+Questa attività può essere utilizzata solo con **Interazione**. Per ulteriori informazioni, consulta questa [sezione](../../interaction/using/about-outbound-channels.md).
 
 Per eseguire questa operazione:
 
-1. Aggiungi il **[!UICONTROL Offers by cell]** una volta specificata la popolazione target, aprila.
-1. In **[!UICONTROL General]** seleziona lo spazio di offerta in cui desideri presentare le offerte.
-1. In **[!UICONTROL Cells]** , specifica i diversi sottoinsiemi utilizzando **[!UICONTROL Add]** pulsante:
+1. Aggiungi il **[!UICONTROL Offers by cell]** dopo aver specificato la popolazione target, aprila.
+1. In **[!UICONTROL General]** , seleziona lo spazio dell’offerta in cui desideri presentare le offerte.
+1. In **[!UICONTROL Cells]** , specificare i diversi sottoinsiemi utilizzando la scheda **[!UICONTROL Add]** pulsante:
 
-   * Specifica il gruppo di sottoinsiemi utilizzando le regole di filtraggio e limitazione disponibili.
-   * Quindi, seleziona l’offerta da presentare al set secondario. Le offerte disponibili sono quelle idonee per lo spazio di offerta selezionato al passaggio precedente.
+   * Specifica la popolazione del sottoinsieme utilizzando le regole di filtro e limitazione disponibili.
+   * Quindi, seleziona l’offerta da presentare al sottoinsieme. Le offerte disponibili sono quelle idonee per lo spazio dell’offerta selezionato al passaggio precedente.
 
       ![](assets/int_offer_per_cell1.png)
 
-1. Quindi configura un’attività di consegna corrispondente al canale scelto. Fai riferimento a [Consegne cross-channel](cross-channel-deliveries.md).
+1. Quindi configura un’attività di consegna che corrisponde al canale scelto. Fai riferimento a [Consegne cross-channel](cross-channel-deliveries.md).

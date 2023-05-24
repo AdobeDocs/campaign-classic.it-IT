@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Attività Update data
-description: Ulteriori informazioni sull’attività del flusso di lavoro Update data
+description: Ulteriori informazioni sull’attività del flusso di lavoro Aggiorna dati
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Targeting Activity, Data Management
 exl-id: 9f5735d2-73b8-469f-bc10-482c99cdd4a1
@@ -16,27 +16,27 @@ ht-degree: 2%
 
 
 
-Un **Update data** L’attività -type esegue un aggiornamento di massa dei campi nel database.
+Un **Aggiorna dati** L&#39;attività -type esegue un aggiornamento di massa dei campi nel database.
 
 ## Tipo di operazione {#operation-type}
 
-La **[!UICONTROL Operation type]** consente di scegliere il processo da eseguire sui dati del database:
+Il **[!UICONTROL Operation type]** consente di scegliere il processo da eseguire sui dati del database:
 
-* **[!UICONTROL Insert or update]**: aggiungi dati o aggiornali se sono già stati aggiunti.
-* **[!UICONTROL Insert]**: aggiungi solo dati.
+* **[!UICONTROL Insert or update]**: aggiungi i dati o aggiornali, se sono già stati aggiunti.
+* **[!UICONTROL Insert]**: aggiungi solo i dati.
 * **[!UICONTROL Update]**: aggiorna solo i dati.
-* **[!UICONTROL Update and merge collections]**: aggiorna i dati e scegli un record principale, quindi collega gli elementi collegati ai duplicati in questo record principale. I duplicati possono quindi essere eliminati senza creare elementi orfani collegati.
+* **[!UICONTROL Update and merge collections]**: aggiorna i dati e scegli un record principale, quindi collega gli elementi collegati ai duplicati in questo record principale. I duplicati possono quindi essere eliminati senza creare elementi collegati orfani.
 * **[!UICONTROL Delete]**: elimina i dati.
 
 ![](assets/s_advuser_update_data_1.png)
 
-La **[!UICONTROL Batch size]** consente di selezionare il numero di elementi di transizione in entrata da aggiornare. Ad esempio, se dici 500, i primi 500 record trattati verranno aggiornati.
+Il **[!UICONTROL Batch size]** Questo campo consente di selezionare il numero di elementi di transizione in entrata da aggiornare. Se ad esempio si specifica 500, verranno aggiornati i primi 500 record trattati.
 
 ## Identificazione del record {#record-identification}
 
-Specifica come identificare i record nel database:
+Specificare come identificare i record nel database:
 
-* Se le voci di dati si riferiscono a una dimensione di targeting esistente, seleziona la **[!UICONTROL By directly using the targeting dimension]** e selezionala nel **[!UICONTROL Updated dimension]** campo .
+* Se le voci di dati si riferiscono a una dimensione di targeting esistente, seleziona la **[!UICONTROL By directly using the targeting dimension]** e selezionarla nella **[!UICONTROL Updated dimension]** campo.
 
    Puoi visualizzare i campi per la dimensione selezionata utilizzando **[!UICONTROL Edit this link]** pulsante lente di ingrandimento.
 
@@ -46,7 +46,7 @@ Specifica come identificare i record nel database:
 
 ## Selezione dei campi da aggiornare {#selecting-the-fields-to-be-updated}
 
-Utilizza la **[!UICONTROL Automatically associate fields with the same name]** affinché Adobe Campaign identifichi automaticamente i campi da aggiornare.
+Utilizza il **[!UICONTROL Automatically associate fields with the same name]** affinché Adobe Campaign identifichi automaticamente i campi da aggiornare.
 
 ![](assets/s_advuser_update_data_3b.png)
 
@@ -54,74 +54,74 @@ Utilizza la **[!UICONTROL Automatically associate fields with the same name]** a
 
 ![](assets/s_advuser_update_data_3.png)
 
-Seleziona tutti i campi da aggiornare e, se necessario, aggiungi condizioni in base a quale deve essere eseguito l’aggiornamento. A questo scopo, utilizza la colonna **[!UICONTROL Taken into account if]**. Le condizioni sono applicate una dopo l&#39;altra e in linea con l&#39;ordine nell&#39;elenco. Utilizza le frecce a destra per cambiare l’ordine degli aggiornamenti.
+Seleziona tutti i campi da aggiornare e, se necessario, aggiungi condizioni in base a cui eseguire l’aggiornamento. A questo scopo, utilizza la colonna **[!UICONTROL Taken into account if]**. Le condizioni vengono applicate una dopo l’altra e in conformità all’ordine nell’elenco. Utilizza le frecce a destra per modificare l’ordine degli aggiornamenti.
 
-È possibile utilizzare più volte lo stesso campo di destinazione.
+Puoi utilizzare lo stesso campo di destinazione più volte.
 
-All&#39;interno di un **[!UICONTROL Insert or update]** Puoi selezionare la campagna da applicare, singolarmente o per ogni campo. A questo scopo, seleziona il valore desiderato nel **[!UICONTROL Operation]** colonna.
+In un **[!UICONTROL Insert or update]** , puoi selezionare la campagna da applicare, singolarmente o per ciascun campo. A questo scopo, seleziona il valore desiderato nella **[!UICONTROL Operation]** colonna.
 
 ![](assets/s_advuser_update_data_5.png)
 
-La **[!UICONTROL modifiedDate]**, **[!UICONTROL modifiedBy]**, **[!UICONTROL createdDate]** e **[!UICONTROL createdBy]** i campi vengono aggiornati automaticamente durante gli aggiornamenti dei dati, a meno che la relativa modalità di gestione non sia configurata specificatamente nella tabella di aggiornamento dei campi.
+Il **[!UICONTROL modifiedDate]**, **[!UICONTROL modifiedBy]**, **[!UICONTROL createdDate]** e **[!UICONTROL createdBy]** I campi vengono aggiornati automaticamente durante gli aggiornamenti dei dati, a meno che la relativa modalità di gestione non sia configurata specificamente nella tabella di aggiornamento dei campi.
 
-L&#39;aggiornamento del record viene eseguito solo per i record contenenti almeno una differenza. Se i valori sono uguali, non viene eseguito alcun aggiornamento.
+L&#39;aggiornamento del record viene eseguito solo per i record contenenti almeno una differenza. Se i valori sono identici, non viene eseguito alcun aggiornamento.
 
-La **[!UICONTROL Advanced parameters]** link ti consente di specificare opzioni aggiuntive per gestire l’aggiornamento dei dati e la gestione dei duplicati. Puoi anche:
+Il **[!UICONTROL Advanced parameters]** Il collegamento ti consente di specificare opzioni aggiuntive per l’aggiornamento dei dati e la gestione dei duplicati. È inoltre possibile:
 
 * **[!UICONTROL Disable automatic key management]**.
 * **[!UICONTROL Disable audit]**.
 * **[!UICONTROL Empty the destination value if the source value is empty (NULL)]**. Questa opzione è selezionata automaticamente per impostazione predefinita.
 * **[!UICONTROL Update all columns with matching names]**.
-* Specifica le condizioni che considerano gli elementi di origine che utilizzano un&#39;espressione nel **[!UICONTROL Enabled if]** campo .
-* Specifica le condizioni che considerano i duplicati utilizzando un’espressione. Se controlli la **[!UICONTROL Ignore records which concern the same target]** , verrà considerata solo la prima delle espressioni dell’elenco.
+* Specificare le condizioni che considerano gli elementi di origine utilizzando un&#39;espressione nella **[!UICONTROL Enabled if]** campo.
+* Specifica le condizioni che considerano i duplicati utilizzando un’espressione. Se si controlla **[!UICONTROL Ignore records which concern the same target]** , verrà considerata solo la prima nell’elenco delle espressioni.
 
 **[!UICONTROL Generate an outbound transition]**
 
-Crea una transizione in uscita che verrà attivata al termine dell’esecuzione. L’aggiornamento di solito segnala la fine di un flusso di lavoro di targeting e pertanto l’opzione non viene attivata per impostazione predefinita.
+Crea una transizione in uscita che verrà attivata alla fine dell’esecuzione. L’aggiornamento in genere segnala la fine di un flusso di lavoro di targeting e l’opzione non viene quindi attivata per impostazione predefinita.
 
 **[!UICONTROL Generate an outbound transition for the rejects]**
 
-Crea una transizione in uscita contenente record che non sono stati elaborati correttamente dopo l’aggiornamento (ad esempio, se è presente un duplicato). L’aggiornamento in genere segna la fine di un flusso di lavoro di targeting e pertanto l’opzione non è attivata per impostazione predefinita.
+Crea una transizione in uscita contenente record che non sono stati elaborati correttamente dopo l’aggiornamento (ad esempio se è presente un duplicato). L’aggiornamento in genere segna la fine di un flusso di lavoro di targeting e pertanto l’opzione non è attivata per impostazione predefinita.
 
-## Aggiornamento e unione delle raccolte {#updating-and-merging-collections}
+## Aggiornamento e unione di raccolte {#updating-and-merging-collections}
 
-L’aggiornamento dei dati e l’unione delle raccolte consente di aggiornare i dati contenuti in un record utilizzando i dati di uno o più record secondari, allo scopo di conservarne uno solo se lo desideri. Questi aggiornamenti sono gestiti da un set di regole.
+L’aggiornamento dei dati e l’unione delle raccolte ti consentono di aggiornare i dati contenuti in un record utilizzando i dati di uno o più record secondari, allo scopo di conservarne solo uno, se lo desideri. Questi aggiornamenti sono gestiti da un set di regole.
 
 >[!NOTE]
 >
->Questa opzione consente inoltre di elaborare i riferimenti ai record secondari dalle tabelle di lavoro del flusso di lavoro (targetWorkflow), dalle consegne (targetDelivery) e dagli elenchi (targetList). Se necessario, questi collegamenti vengono visualizzati nell’elenco in cui si selezionano campi e raccolte.
+>Questa opzione consente inoltre di elaborare i riferimenti ai record secondari dalle tabelle di lavoro del flusso di lavoro (targetWorkflow), dalle consegne (targetDelivery) e dagli elenchi (targetList). Se necessario, questi collegamenti vengono visualizzati nell’elenco in cui si selezionano i campi e le raccolte.
 
-1. Seleziona la **[!UICONTROL Update and merge collections]** funzionamento.
+1. Seleziona la **[!UICONTROL Update and merge collections]** operazione.
 
    ![](assets/update_and_merge_collections1.png)
 
-1. Seleziona l’ordine di priorità per i collegamenti. Ciò ti consente di identificare il record principale. I collegamenti disponibili variano a seconda della transizione in entrata.
+1. Seleziona l’ordine di priorità dei collegamenti. Questo consente di identificare il record principale. I collegamenti disponibili variano a seconda della transizione in entrata.
 
    ![](assets/update_and_merge_collections2.png)
 
-1. Selezionare le raccolte da spostare al record principale e i campi da aggiornare.
+1. Selezionare le raccolte da spostare nel record principale e i campi da aggiornare.
 
-   Immettere le regole che si applicano a questi record secondari una o più volte identificati. A questo scopo, puoi utilizzare il Generatore di espressioni. Per ulteriori informazioni, consulta questa [sezione](../../platform/using/defining-filter-conditions.md#building-expressions). Ad esempio, specificando che si tratta del valore aggiornato più di recente tra tutti i diversi record che devono essere conservati.
+   Immettere le regole applicabili a questi record una volta identificati uno o più record secondari. A questo scopo, puoi utilizzare il Generatore di espressioni. Per ulteriori informazioni, consulta questa [sezione](../../platform/using/defining-filter-conditions.md#building-expressions). Ad esempio, specificando che si tratta del valore aggiornato più di recente tra tutti i diversi record che devono essere conservati.
 
-   Quindi inserisci le condizioni da prendere in considerazione per la regola.
+   Quindi inserisci le condizioni da considerare per la regola.
 
-   Infine, specifica il tipo di aggiornamento da eseguire. Ad esempio, puoi scegliere di eliminare i record secondari dopo l’aggiornamento dei dati.
+   Infine, specifica il tipo di aggiornamento da eseguire. Ad esempio, è possibile scegliere di eliminare i record secondari dopo l&#39;aggiornamento dei dati.
 
-   Ad esempio, puoi configurare l’unione di raccolte contenenti dati eterogenei, ad esempio l’elenco delle sottoscrizioni per un destinatario. Utilizzando le regole, puoi anche creare nuove storie di abbonamento da sottoscrizioni di record secondari o persino spostare l’elenco di sottoscrizioni da un record secondario a un record principale.
+   Ad esempio, puoi configurare l’unione di raccolte contenenti dati eterogenei come l’elenco delle sottoscrizioni di un destinatario. Utilizzando le regole, è inoltre possibile creare nuove cronologie di abbonamenti da abbonamenti a record secondari o persino spostare l’elenco di abbonamenti da un record secondario a un record principale.
 
 1. Specificare l&#39;ordine di elaborazione dei record secondari selezionando **[!UICONTROL Advanced parameters]** > **[!UICONTROL Duplicates]**.
 
    ![](assets/update_and_merge_collections3.png)
 
-I dati per i record secondari sono associati al record principale se sono applicabili le regole definite. A seconda del tipo di aggiornamento selezionato, i record secondari possono essere eliminati.
+I dati per i record secondari sono associati al record principale se sono applicabili le regole definite. A seconda del tipo di aggiornamento selezionato, è possibile eliminare i record secondari.
 
-## Esempio: Aggiornare i dati dopo un arricchimento {#example--update-data-following-an-enrichment}
+## Esempio: aggiornare i dati in seguito a un arricchimento {#example--update-data-following-an-enrichment}
 
-La [Passaggio 2: Scrittura di dati arricchiti nella tabella &quot;Acquisti&quot;](creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) sezione del caso d’uso che descrive la creazione di un elenco di ricap offre un esempio di aggiornamento dei dati dopo un’attività di arricchimento.
+Il [Passaggio 2: scrittura di dati arricchiti nella tabella &quot;Acquisti&quot;](creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) sezione del caso d’uso che descrive come creare un elenco di riepilogo offre un esempio di aggiornamento dei dati dopo un’attività di arricchimento.
 
 ## Parametri di input {#input-parameters}
 
 * tableName
 * schema
 
-Ogni evento in entrata deve specificare un target definito da questi parametri.
+Ogni evento in entrata deve specificare una destinazione definita da questi parametri.

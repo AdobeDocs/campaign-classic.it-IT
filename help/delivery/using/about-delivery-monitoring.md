@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Introduzione al monitoraggio della consegna
-description: Ulteriori informazioni sulle funzionalità di monitoraggio della distribuzione di Campaign Classic
+description: Ulteriori informazioni sulle funzionalità di monitoraggio della consegna Campaign Classic
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Deliverability
@@ -17,9 +17,9 @@ ht-degree: 16%
 
 
 
-Il monitoraggio delle consegne dopo l’invio è un passaggio chiave per garantire l’efficienza delle campagne di marketing e la loro vicinanza ai clienti.
+Il monitoraggio delle consegne dopo l’invio è un passaggio chiave per garantire l’efficienza delle campagne di marketing e l’effettivo raggiungimento dei clienti.
 
-In questa sezione troverai ulteriori informazioni sulle informazioni da monitorare dopo l’invio di una consegna, nonché su come vengono gestiti gli errori di consegna e le quarantena.
+In questa sezione, scopri di più sulle informazioni che puoi monitorare dopo l’invio di una consegna, nonché come vengono gestiti gli errori di consegna e le quarantene.
 
 <img src="assets/do-not-localize/icon_monitor.svg" width="60px">
 
@@ -27,7 +27,7 @@ In questa sezione troverai ulteriori informazioni sulle informazioni da monitora
 
 L’elenco delle consegne ti consente di visualizzare tutte le consegne create in un’unica posizione.
 
-Per ogni consegna è disponibile un dashboard dedicato. Consente di monitorare eventuali problemi riscontrati durante l’invio, nonché vari tipi di informazioni relative alla consegna: rapporti, pagine mirror, esclusioni, registri di tracciamento, rendering, ecc.
+Per ogni consegna è disponibile una dashboard dedicata. Consente di monitorare eventuali problemi riscontrati durante l’invio nonché vari tipi di informazioni relative alla consegna: rapporti, pagine mirror, esclusioni, registri di tracciamento, rendering, ecc.
 
 * [Accesso all’elenco delle consegne](list-of-deliveries.md)
 * [Dashboard delle consegne](delivery-dashboard.md)
@@ -36,18 +36,18 @@ Per ogni consegna è disponibile un dashboard dedicato. Consente di monitorare e
 
 **Prestazioni di consegna sicure**
 
-È necessario seguire diverse linee guida per garantire il corretto svolgimento delle consegne. Sono inoltre disponibili problemi comuni che potresti riscontrare durante l’invio delle consegne per consentirti di inviare le consegne in modo efficiente.
+È necessario seguire diverse linee guida per garantire il corretto funzionamento delle consegne. Sono inoltre disponibili problemi comuni che possono verificarsi durante l’invio delle consegne per aiutarti a inviare le consegne in modo efficiente.
 
-* [Prestazioni e best practice di consegna](delivery-performances.md)
+* [Prestazioni di consegna e best practice](delivery-performances.md)
 * [Risoluzione dei problemi di invio della consegna](delivery-troubleshooting.md)
 
 <img src="assets/do-not-localize/icon_failure.svg" width="60px">
 
 **Errori di consegna**
 
-Quando un messaggio non può essere inviato a un profilo, il server remoto invia automaticamente un messaggio di errore, rilevato dalla piattaforma Adobe Campaign e qualificato per determinare se l’indirizzo e-mail o il numero di telefono devono essere messi in quarantena o meno.
+Quando un messaggio non può essere inviato a un profilo, il server remoto invia automaticamente un messaggio di errore, raccolto dalla piattaforma Adobe Campaign e qualificato per determinare se l’indirizzo e-mail o il numero di telefono devono essere posti in quarantena o meno.
 
-[Informazioni sugli errori di consegna](understanding-delivery-failures.md) è un passaggio chiave per migliorare le campagne di marketing.
+[Informazioni sugli errori di consegna](understanding-delivery-failures.md) è un passaggio chiave per aiutarti a migliorare le campagne di marketing.
 
 <img src="assets/do-not-localize/icon_quarantine.svg" width="60px">
 
@@ -55,4 +55,4 @@ Quando un messaggio non può essere inviato a un profilo, il server remoto invia
 
  Adobe Campaign gestisce un elenco di indirizzi in quarantena. I destinatari il cui indirizzo è stato messo in quarantena sono esclusi per impostazione predefinita durante l’analisi della consegna e non saranno oggetto di targeting.
 
-In [questa sezione](understanding-quarantine-management.md), troverai informazioni su come identificare e gestire gli indirizzi messi in quarantena e ulteriori informazioni sulle condizioni per l’invio di un indirizzo in quarantena.
+In entrata [questa sezione](understanding-quarantine-management.md), troverai informazioni su come identificare e gestire gli indirizzi messi in quarantena e ulteriori informazioni sulle condizioni per l’invio di un indirizzo in quarantena.

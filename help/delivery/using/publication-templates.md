@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Il modello di pubblicazione è la carta di identità del contenuto da pubblicare. Fa riferimento alle risorse utilizzate nel processo di pubblicazione, ovvero:
 
-* lo schema dei dati,
+* lo schema di dati,
 * il modulo di input,
 * i modelli di trasformazione per ciascun documento di output.
 
@@ -29,7 +29,7 @@ Il modello di pubblicazione è la carta di identità del contenuto da pubblicare
 
 Un modello di pubblicazione è identificato dal nome e dallo spazio dei nomi.
 
-La chiave di identificazione di un foglio di stile è una stringa costituita dallo spazio dei nomi e dal nome separati da due punti; ad esempio: **cus:newsletter**.
+La chiave di identificazione di un foglio di stile è una stringa costituita dallo spazio dei nomi e dal nome separati da due punti, ad esempio: **cus:newsletter**.
 
 >[!NOTE]
 >
@@ -37,29 +37,29 @@ La chiave di identificazione di un foglio di stile è una stringa costituita dal
 
 ## Creare e configurare il modello {#creating-and-configuring-the-template}
 
-I modelli di pubblicazione sono memorizzati per impostazione predefinita in **[!UICONTROL Administration > Configuration > Publication templates]** nodo. Per creare un nuovo modello, fai clic sul pulsante **[!UICONTROL New]** , sopra l’elenco dei modelli.
+I modelli di pubblicazione sono memorizzati per impostazione predefinita nel **[!UICONTROL Administration > Configuration > Publication templates]** nodo. Per creare un nuovo modello, fai clic su **[!UICONTROL New]** sopra l’elenco dei modelli.
 
-Per configurare il modello di pubblicazione, compilare il nome del modello (ovvero la chiave di identificazione costituita dal nome e dallo spazio dei nomi), l’etichetta, lo schema dei dati e il modulo di input a cui è collegato.
+Per configurare il modello di pubblicazione, compila il nome del modello (ovvero la chiave di identificazione costituita dal nome e dallo spazio dei nomi), l’etichetta, lo schema dati e il modulo di input a cui è collegato.
 
 ![](assets/d_ncs_content_model.png)
 
 >[!NOTE]
 >
->L’etichetta viene visualizzata ogni volta che il contenuto viene creato in base a questo modello di pubblicazione.
+>L&#39;etichetta verrà visualizzata ogni volta che il contenuto viene creato in base a questo modello di pubblicazione.
 
-La **Controllare lo stato per convalidare la generazione di contenuto** forza un controllo sullo stato &quot;Convalidato&quot; delle istanze di contenuto per autorizzare la generazione di file. Per ulteriori informazioni, consulta [Pubblicazione](#publication).
+Il **Controlla lo stato per convalidare la generazione dei contenuti** Questa opzione forza un controllo dello stato &quot;Convalidato&quot; delle istanze di contenuto per autorizzare la generazione di file. Per ulteriori informazioni, consulta [Pubblicazione](#publication).
 
 È necessario aggiungere un modello di trasformazione per ciascun documento di output. Puoi creare tutti i modelli di trasformazione necessari.
 
-La **[!UICONTROL Name of template]** field è un’etichetta gratuita che descrive il tipo di rendering nell’output. Per ogni modello di trasformazione, le impostazioni di pubblicazione sono disponibili nelle schede .
+Il **[!UICONTROL Name of template]** è un’etichetta libera che descrive il tipo di rendering nell’output. Per ogni modello di trasformazione, le impostazioni di pubblicazione sono disponibili nelle schede.
 
 ### Rendering {#rendering}
 
-La **[!UICONTROL Rendering]** scheda , scegli:
+Il **[!UICONTROL Rendering]** , scegliere:
 
-* tipo di rendering utilizzato per la proiezione del documento di output: modello di foglio di stile XSL o JavaScript,
-* il formato del documento di output: HTML, testo, XML o RTF,
-* il modello che contiene i dati di costruzione, ovvero il modello foglio di stile o JavaScript da utilizzare.
+* il tipo di rendering utilizzato per proiettare il documento di output: foglio di stile XSL o modello JavaScript,
+* il formato del documento di output: HTML, Text, XML o RTF,
+* il modello che contiene i dati di costruzione, ovvero il foglio di stile o il modello JavaScript da utilizzare.
 
 ### Pubblicazione {#publication}
 
@@ -69,13 +69,13 @@ La pubblicazione comporta la generazione del documento di output sotto forma di 
 
 Sono disponibili le seguenti opzioni di pubblicazione:
 
-* Il set di caratteri di codifica del file di output può essere forzato tramite il **[!UICONTROL Encoding]** campo . Per impostazione predefinita viene utilizzato il set di caratteri Latin 1 (1252).
-* La **[!UICONTROL Multi-file generation]** attiva una modalità speciale di pubblicazione del documento. Questa opzione consiste nel popolare un tag di partizionamento all&#39;inizio di ogni pagina del documento di output. La generazione del contenuto genera un file per ciascun tag di partizionamento popolato. Questa modalità viene utilizzata per generare mini-siti da un blocco di contenuto. per ulteriori informazioni, consulta [Generazione di più file](#multi-file-generation).
-* La **[!UICONTROL Location]** contiene il nome del file di output. Il nome può essere composto da variabili per generare un nome di file automatico.
+* Il set di caratteri di codifica del file di output può essere forzato tramite **[!UICONTROL Encoding]** campo. Per impostazione predefinita viene utilizzato il set di caratteri Latin 1 (1252).
+* Il **[!UICONTROL Multi-file generation]** attiva una modalità speciale di pubblicazione del documento. Questa opzione consiste nel popolare un tag di partizionamento all&#39;inizio di ogni pagina del documento di output. La generazione del contenuto genera un file per ogni tag di partizionamento popolato. Questa modalità viene utilizzata per generare mini-siti da un blocco di contenuto. per ulteriori informazioni, consulta [Generazione di più file](#multi-file-generation).
+* Il **[!UICONTROL Location]** contiene il nome del file di output. Il nome può essere composto da variabili per generare un nome di file automatico.
 
    Una variabile viene compilata con il seguente formato: **`$(<xpath>)`**, dove **`<xpath>`** è il percorso di un campo dello schema dati del modello di pubblicazione.
 
-   Il nome di un file può essere costituito da un campo di tipo data. Per formattare correttamente questo campo, utilizza il **Formato $date** utilizzando come parametri il percorso del campo e il formato di output.
+   Il nome di un file può essere un campo di tipo data. Per formattare correttamente questo campo, utilizza **$date-format** , utilizzando il percorso del campo e il formato di output come parametri.
 
    Per impostazione predefinita, il formato di costruzione del nome del file utilizza le variabili nei campi &quot;@name&quot; e &quot;@date&quot;:
 
@@ -87,31 +87,31 @@ Sono disponibili le seguenti opzioni di pubblicazione:
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sulla generazione dei contenuti, consulta [Creare un’istanza di contenuto](using-a-content-template.md#creating-a-content-instance).
+   >Per ulteriori informazioni sulla generazione di contenuti, consulta [Creare un’istanza di contenuto](using-a-content-template.md#creating-a-content-instance).
 
 ### Consegna {#delivery}
 
-Questa scheda ti consente di selezionare uno scenario per avviare una consegna direttamente sul contenuto. Il contenuto dell’e-mail verrà compilato automaticamente in base al formato di output (HTML o Testo).
+Questa scheda ti consente di selezionare uno scenario per avviare una consegna direttamente sul contenuto. Il contenuto dell’e-mail verrà popolato automaticamente in base al formato di output (HTML o Testo).
 
 ![](assets/d_ncs_content_model3.png)
 
 >[!NOTE]
 >
->Ad esempio, per creare una consegna basata su un contenuto, consulta [Fornire un’istanza di contenuto](using-a-content-template.md#delivering-a-content-instance).
+>Per un esempio di creazione di una consegna basata su un contenuto, consulta [Distribuire un’istanza di contenuto](using-a-content-template.md#delivering-a-content-instance).
 
 ### Aggregatore {#aggregator}
 
-L&#39;aggregazione dei dati da uno script o da un elenco di query consente di arricchire il documento XML con i dati del contenuto. L&#39;obiettivo è quello di integrare alcune informazioni a cui fanno riferimento i collegamenti o di aggiungere elementi dal database.
+L&#39;aggregazione dei dati da un elenco di script o query consente di arricchire il documento XML con i dati del contenuto. Lo scopo è integrare determinate informazioni a cui fanno riferimento i collegamenti o aggiungere elementi dal database.
 
 ### Generazione di più file {#multi-file-generation}
 
-Per attivare la generazione di più file, seleziona la **[!UICONTROL Multi-file generation]** nel modello di pubblicazione. Questa opzione consente di specificare i tag di partizionamento nel foglio di stile per l&#39;inizio di ogni pagina del documento di output. La generazione del contenuto produrrà un file per ogni tag di partizionamento rilevato.
+Per attivare la generazione di più file, selezionare **[!UICONTROL Multi-file generation]** nel modello di pubblicazione. Questa opzione consente di specificare i tag di partizionamento nel foglio di stile per l&#39;inizio di ogni pagina del documento di output. La generazione del contenuto genera un file per ogni tag di partizionamento rilevato.
 
-Il tag di partizionamento da integrare nel foglio di stile è il seguente:
+Il tag di partizione da integrare nel foglio di stile è il seguente:
 
 **`<xsl:comment> #nl:output_replace(<name_of_file>) </xsl:comment>`** dove **`<name_of_file>`** è il nome file della pagina da generare.
 
-**Esempio:** Generazione multipla di file utilizzando lo schema &quot;cus:book&quot;.
+**Esempio:** Generazione di più file utilizzando lo schema &quot;cus:book&quot;.
 
 Il principio consiste nel generare una pagina principale in cui sono elencati i capitoli, con la possibilità di visualizzare i dettagli del capitolo in una pagina esterna.
 
@@ -140,7 +140,7 @@ Il foglio di stile corrispondente (&quot;cus:book.xsl&quot;) è il seguente:
 </xsl:stylesheet>
 ```
 
-È necessario un secondo foglio di stile (&quot;cus:capitolo.xsl&quot;) per generare i dettagli dei capitoli:
+Per generare i dettagli dei capitoli è necessario un secondo foglio di stile (&quot;cus:chapter.xsl&quot;):
 
 ```
 <?xml version="1.0" encoding="ISO-8859-1" ?>
@@ -173,12 +173,12 @@ Il tag di partizionamento viene popolato all’inizio della pagina da includere 
 <xsl:comment> #nl:output_replace($(path)/<xsl:value-of select="@id"/>.htm)</xsl:comment>
 ```
 
-Il nome del file viene costruito con il **$(path)** contenente il percorso della pubblicazione e **`<xsl:value-of select="@id" />`**, che corrisponde all’identificatore del capitolo nel documento di input.
+Il nome del file è costruito con **$(path)** variabile contenente il percorso di pubblicazione e **`<xsl:value-of select="@id" />`**, che corrisponde all&#39;identificatore del capitolo nel documento di input.
 
-Il modello di pubblicazione deve essere compilato con i due fogli di stile &quot;cus:book.xsl&quot; e &quot;cus:capitolo.xsl&quot;.
+Il modello di pubblicazione deve essere composto dai due fogli di stile &quot;cus:book.xsl&quot; e &quot;cus:chapter.xsl&quot;.
 
-La **[!UICONTROL Multi-file generation]** l&#39;opzione deve essere attiva sul modello di trasformazione del capitolo:
+Il **[!UICONTROL Multi-file generation]** l&#39;opzione deve essere attiva nel modello di trasformazione capitolo:
 
 ![](assets/d_ncs_content_chunk2.png)
 
-La **[!UICONTROL Location]** campo non utilizzato nella generazione di più file, ma devi comunque compilare il campo per evitare un errore durante la pubblicazione.
+Il **[!UICONTROL Location]** Questo campo non viene utilizzato nella generazione di più file, ma è comunque necessario compilarlo per evitare errori durante la pubblicazione.

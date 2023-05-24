@@ -18,11 +18,11 @@ ht-degree: 10%
 
 
 
-La **[!UICONTROL Offer analysis]** il rapporto fornisce una panoramica del numero di proposte accettate o rifiutate.
+Il **[!UICONTROL Offer analysis]** Questo rapporto fornisce una panoramica del numero di proposte accettate o rifiutate.
 
 >[!NOTE]
 >
->Questa funzionalità è visibile solo online e solo per il gestore consegne.
+>Questa funzionalità è visibile solo online e solo al responsabile della consegna.
 
 Le statistiche sono ordinate in base a tre criteri:
 
@@ -38,6 +38,6 @@ Le statistiche sono ordinate in base a tre criteri:
 
    ![](assets/offer_report_perdeliveries.png)
 
-I dati possono essere filtrati in base ai vari criteri disponibili nella sezione superiore del rapporto. Dopo aver selezionato i criteri desiderati, fai clic sul pulsante **[!UICONTROL Refresh]** per applicarli al rapporto.
+I dati possono essere filtrati in base ai vari criteri disponibili nella sezione superiore del rapporto. Dopo aver selezionato i criteri desiderati, fai clic su **[!UICONTROL Refresh]** per applicarli al report.
 
 ![](assets/offer_report_criteria.png)

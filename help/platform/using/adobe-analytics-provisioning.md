@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Provisioning dei connettori Adobe Analytics
+title: Provisioning del connettore Adobe Analytics
 description: Ulteriori informazioni sul provisioning dei connettori Adobe Analytics
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
@@ -22,25 +22,25 @@ ht-degree: 2%
 >
 > Questi passaggi devono essere eseguiti solo da implementazioni ibride e on-premise.
 >
->Per le implementazioni in hosting, contatta [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) squadra.
+>Per le implementazioni in hosting, contatta [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team.
 
-L’integrazione tra Adobe Campaign Classic e l’autenticazione Adobe Analytics supporta Adobe Identity Management Service (IMS):
+L’integrazione tra l’autenticazione di Adobe Campaign Classic e Adobe Analytics supporta Adobe Identity Management Service (IMS):
 
-* Se gestisci un account esterno migrato, devi implementare Adobe IMS e connetterti ad Adobe Campaign tramite un Adobe ID. L’utente che ha effettuato l’accesso tramite Adobe ID IMS deve essere il proprietario del **Connettore dati** in Adobe Analytics e dispongono di un set di autorizzazioni per **Profilo di prodotto** di seguito.
+* Se gestisci un account esterno migrato, devi implementare Adobe IMS e connetterti ad Adobe Campaign tramite un Adobe ID. L’utente connesso tramite Adobe ID IMS deve essere il proprietario del **Connettore dati** in Adobe Analytics e disporre di un set di autorizzazioni per **Profilo di prodotto** di seguito.
 
-* Se stai implementando un nuovo connettore, l’implementazione di Adobe IMS è facoltativa. Senza un utente Adobe ID, Adobe Campaign utilizzerà un utente tecnico per la sincronizzazione con Adobe Analytics.
+* Se implementi un nuovo connettore, l’implementazione di Adobe IMS è facoltativa. Senza un utente Adobe ID, Adobe Campaign utilizzerà un utente tecnico per la sincronizzazione con Adobe Analytics.
 
 Affinché questa integrazione funzioni, devi creare un profilo di prodotto Adobe Analytics che verrà utilizzato esclusivamente per il connettore Analytics. Quindi, dovrai creare un progetto di Adobe I/O.
 
 ## Creare un profilo di prodotto Adobe Analytics {#analytics-product-profile}
 
-Il profilo di prodotto determina il livello di accesso di un utente ai diversi componenti di Analytics.
+Il profilo prodotto determina il livello di accesso di un utente ai diversi componenti di Analytics.
 
-Se disponi già di un profilo di prodotto Analytics, devi comunque creare un nuovo profilo di prodotto Adobe Analytics utilizzato esclusivamente per il connettore Analytics. In questo modo il profilo di prodotto sarà impostato con le autorizzazioni corrette per questa integrazione.
+Se disponi già di un profilo di prodotto Analytics, devi comunque creare un nuovo profilo di prodotto Adobe Analytics utilizzato esclusivamente per il connettore Analytics. In questo modo il tuo profilo di prodotto sarà impostato con le autorizzazioni corrette per questa integrazione.
 
 Per ulteriori informazioni sui profili di prodotto, consulta [Documentazione di Admin Console](https://helpx.adobe.com/mt/enterprise/admin-guide.html).
 
-1. Da [Admin Console](https://adminconsole.adobe.com/), seleziona il tuo Adobe Analytics **[!UICONTROL Product]**.
+1. Dalla sezione [Admin Console](https://adminconsole.adobe.com/), seleziona il tuo Adobe Analytics **[!UICONTROL Product]**.
 
    ![](assets/do-not-localize/triggers_1.png)
 
@@ -50,29 +50,29 @@ Per ulteriori informazioni sui profili di prodotto, consulta [Documentazione di 
 
 1. Aggiungi un **[!UICONTROL Product profile name]**, si consiglia di utilizzare la sintassi seguente: `reserved_campaign_classic_<Company Name>`. Quindi, fai clic su **[!UICONTROL Next]**.
 
-   Questo **[!UICONTROL Product profile]** deve essere utilizzato esclusivamente per Analytics Connector per evitare errori di configurazione errata.
+   Questo **[!UICONTROL Product profile]** deve essere utilizzato esclusivamente per il connettore Analytics per evitare errori di configurazione.
 
-1. Apri la nuova **[!UICONTROL Product profile]** e seleziona la **[!UICONTROL Permissions]** scheda .
+1. Apri il nuovo **[!UICONTROL Product profile]** e seleziona la **[!UICONTROL Permissions]** scheda.
 
    ![](assets/do-not-localize/triggers_3.png)
 
-1. Configura le diverse funzionalità facendo clic su **[!UICONTROL Edit]** e seleziona le autorizzazioni da assegnare al tuo **[!UICONTROL Product profile]** facendo clic sull’icona più (+).
+1. Configurare le diverse funzionalità facendo clic su **[!UICONTROL Edit]** e seleziona le autorizzazioni da assegnare al tuo **[!UICONTROL Product profile]** facendo clic sull&#39;icona più (+).
 
-   Per ulteriori informazioni su come gestire le autorizzazioni, consulta la [Documentazione di Admin Console](https://helpx.adobe.com/mt/enterprise/using/manage-permissions-and-roles.html).
+   Per ulteriori informazioni su come gestire le autorizzazioni, consulta [Documentazione di Admin Console](https://helpx.adobe.com/mt/enterprise/using/manage-permissions-and-roles.html).
 
-1. Per **[!UICONTROL Report Suites]** aggiungi la funzionalità **[!UICONTROL Report Suites]** è necessario utilizzare in seguito.
+1. Per **[!UICONTROL Report Suites]** , aggiungi **[!UICONTROL Report Suites]** in seguito sarà necessario utilizzare.
 
    Se non disponi di suite di rapporti, puoi crearle come segue [questi passaggi](../../platform/using/adobe-analytics-connector.md#report-suite-analytics).
 
    ![](assets/do-not-localize/triggers_4.png)
 
-1. Per **[!UICONTROL Metrics]** aggiungi la funzionalità **[!UICONTROL Metrics]** dovrai effettuare la configurazione in un secondo momento.
+1. Per **[!UICONTROL Metrics]** , aggiungi **[!UICONTROL Metrics]** dovrai configurare in seguito.
 
-   Se necessario, puoi attivare l’opzione di inclusione automatica che aggiungerà ogni elemento delle autorizzazioni nell’elenco incluso e aggiungerà automaticamente nuovi elementi delle autorizzazioni.
+   Se necessario, puoi attivare l’opzione di inclusione automatica, che consente di aggiungere tutti gli elementi di autorizzazione all’elenco incluso e automaticamente quelli nuovi.
 
    ![](assets/do-not-localize/triggers_13.png)
 
-1. Per **[!UICONTROL Dimensions]** aggiungi la funzionalità **[!UICONTROL Dimensions]** dovrai effettuare la configurazione in un secondo momento.
+1. Per **[!UICONTROL Dimensions]** , aggiungi **[!UICONTROL Dimensions]** dovrai configurare in seguito.
 
 1. Per **[!UICONTROL Report Suite Tools]** , aggiungi le seguenti autorizzazioni:
 
@@ -92,19 +92,19 @@ Per ulteriori informazioni sui profili di prodotto, consulta [Documentazione di 
    * **[!UICONTROL Calculated metric creation]**
    * **[!UICONTROL Segment creation]**
 
-Il tuo profilo di prodotto è ora configurato. Quindi devi creare il progetto di Adobe I/O.
+Il tuo profilo di prodotto è ora configurato. Quindi devi creare il progetto Adobe I/O.
 
 ## Crea progetto di Adobe I/O {#create-adobe-io}
 
-1. Accedi all&#39;Adobe I/O e accedi come **Amministratore di sistema** della tua organizzazione.
+1. Accedi all’Adobe I/O e accedi come **Amministratore di sistema** della tua organizzazione.
 
-   Per ulteriori informazioni sui ruoli amministratore, consulta questo [page](https://helpx.adobe.com/enterprise/using/admin-roles.html).
+   Per ulteriori informazioni sui ruoli di amministratore, consulta questa [pagina](https://helpx.adobe.com/enterprise/using/admin-roles.html).
 
 1. Fai clic su **[!UICONTROL Create a new project]**.
 
    ![](assets/do-not-localize/triggers_5.png)
 
-1. Fai clic su **[!UICONTROL Add to Project]** e seleziona **[!UICONTROL API]**.
+1. Clic **[!UICONTROL Add to Project]** e seleziona **[!UICONTROL API]**.
 
    ![](assets/do-not-localize/triggers_6.png)
 
@@ -118,7 +118,7 @@ Il tuo profilo di prodotto è ora configurato. Quindi devi creare il progetto di
 
 1. Seleziona la **[!UICONTROL Option 1: Generate a Key-Pair]** e fai clic su **[!UICONTROL Generate a Key-Pair]**.
 
-   Il file config.zip viene quindi scaricato automaticamente.
+   Il file config.zip verrà quindi scaricato automaticamente.
 
    ![](assets/do-not-localize/triggers_9.png)
 
@@ -126,7 +126,7 @@ Il tuo profilo di prodotto è ora configurato. Quindi devi creare il progetto di
 
    ![](assets/do-not-localize/triggers_10.png)
 
-1. Seleziona la **[!UICONTROL Product profile]** creato nei passaggi precedenti descritti in questo [sezione](#analytics-product-profile).
+1. Seleziona la **[!UICONTROL Product profile]** create nei passaggi precedenti descritti in questo [sezione](#analytics-product-profile).
 
 1. Quindi, fai clic su **[!UICONTROL Save Configured API]**.
 
@@ -141,19 +141,19 @@ Il tuo profilo di prodotto è ora configurato. Quindi devi creare il progetto di
 
    ![](assets/do-not-localize/triggers_12.png)
 
-1. Utilizza la chiave privata generata al passaggio 6.
+1. Utilizza la chiave privata generata nel passaggio 6.
 
-   Se hai già configurato Triggers con queste credenziali, la chiave privata deve essere la stessa per questa configurazione del connettore.
+   Se hai già configurato Triggers utilizzando queste credenziali, la chiave privata deve essere la stessa per questa configurazione del connettore.
 
-1. Codifica la chiave privata utilizzando il seguente comando: `base64 ./private.key > private.key.base64`. In questo modo il contenuto base64 verrà salvato in un nuovo file `private.key.base64`.
+1. Codifica la chiave privata utilizzando il comando seguente: `base64 ./private.key > private.key.base64`. Il contenuto base64 verrà salvato in un nuovo file `private.key.base64`.
 
    >[!NOTE]
    >
-   >Talvolta è possibile aggiungere automaticamente righe extra quando si copia/incolla la chiave privata. Ricorda di rimuoverlo prima di codificare la chiave privata.
+   >Talvolta è possibile aggiungere automaticamente righe supplementari quando si copia/incolla la chiave privata. Ricordati di rimuoverlo prima di codificare la chiave privata.
 
 1. Copia il contenuto dal file `private.key.base64`.
 
-1. Accedi tramite SSH a ciascun contenitore in cui è installata l’istanza Adobe Campaign e aggiungi le credenziali Progetto in Adobe Campaign eseguendo il seguente comando come `neolane` utente. Verrà inserito il **[!UICONTROL Technical Account]** nel file di configurazione dell&#39;istanza.
+1. Accedi tramite SSH a ogni contenitore in cui è installata l’istanza di Adobe Campaign e aggiungi le credenziali del progetto in Adobe Campaign eseguendo il seguente comando come `neolane` utente. Verrà inserito il **[!UICONTROL Technical Account]** credenziali nel file di configurazione dell’istanza.
 
    ```
    nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>

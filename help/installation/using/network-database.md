@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Rete, database e SSL/TLS
-description: Ulteriori informazioni sulle best practice per la configurazione di rete, database e SSL/TLS
+description: Ulteriori informazioni sulle best practice per la configurazione di reti, database e SSL/TLS
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
@@ -20,20 +20,20 @@ ht-degree: 9%
 
 ## Configurazione della rete
 
-Una cosa molto importante da verificare quando si implementa un tipo di architettura on-premise è la [configurazione di rete](../../installation/using/network-configuration.md). Assicurati che il server Tomcat NON sia direttamente accessibile all&#39;esterno del server:
+Una cosa molto importante da verificare durante la distribuzione di un tipo di architettura on-premise è la [configurazione di rete](../../installation/using/network-configuration.md). Verificare che il server Tomcat NON sia direttamente accessibile all&#39;esterno del server:
 
-* Chiudi la porta Tomcat (8080) su IP esterni (deve funzionare su localhost)
-* Non mappare la porta HTTP standard (80) su quella Tomcat (8080)
+* Chiudi la porta Tomcat (8080) sugli IP esterni (deve funzionare su localhost)
+* Non mappare la porta HTTP standard (80) su Tomcat 1 (8080)
 
-Quando è possibile, utilizza un canale sicuro: POP3S invece POP3 (o POP3 su TLS).
+Quando è possibile, utilizza un canale sicuro: POP3S invece di POP3 (o POP3 su TLS).
 
 ## Database
 
-È necessario applicare le best practice relative alla sicurezza del motore di database.
+È necessario applicare le procedure consigliate per la protezione del motore di database.
 
 ## Configurazione SSL/TLS
 
-Per controllare il certificato, puoi utilizzare openssl. Per controllare i caratteri attivi, puoi utilizzare nmap:
+Per verificare il certificato, puoi utilizzare openssl. Per controllare le crittografie attive, puoi utilizzare nmap:
 
 ```
 #!/bin/sh
@@ -51,7 +51,7 @@ openssl x509 -noout -subject -dates
 nmap --script ssl-enum-ciphers -p ${REMPORT} ${REMHOST}
 ```
 
-È inoltre possibile utilizzare un [balzo](https://github.com/nabla-c0d3/sslyze/releases) script di pitone che fa entrambi.
+È inoltre possibile utilizzare un’ [dimensioni](https://github.com/nabla-c0d3/sslyze/releases) script python che esegue entrambe le operazioni.
 
 ```
 python sslyze.py --sslv2 --sslv3 --tlsv1 --reneg --resum --certinfo=basic --hide_rejected_ciphers --sni=SNI myserver.com

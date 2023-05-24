@@ -18,14 +18,14 @@ ht-degree: 6%
 
 
 
-Se riscontri problemi di visualizzazione delle immagini in un messaggio inviato, i motivi potrebbero essere collegati a una posizione errata:
+Se si verificano problemi di visualizzazione delle immagini in un messaggio inviato, i motivi potrebbero essere collegati alla posizione errata:
 
-* Le posizioni potrebbero non corrispondere o le immagini potrebbero non essere state inviate correttamente al server di tracciamento duplicato: controlla la configurazione.
+* Le posizioni potrebbero non corrispondere oppure le immagini potrebbero non essere state inviate correttamente al server di tracciamento duplicato: controlla la configurazione.
 * Le immagini potrebbero non trovarsi nella cartella delle risorse pubbliche nell’istanza di marketing: carica le immagini nella cartella delle risorse per risolvere il problema.
-* Se lavori in un’architettura di mid-sourcing: verifica che le immagini vengano caricate senza errori quando vengono inviate le bozze (le informazioni vengono visualizzate nei registri di analisi).
+* Se utilizzi un’architettura di mid-sourcing: controlla che le immagini vengano caricate senza errori quando vengono inviate le bozze (le informazioni vengono visualizzate nei registri di analisi).
 
 Come risolvere i problemi:
 
-1. Invia una prova che mostri le immagini.
-1. Convalida la configurazione delle risorse nella configurazione dell’istanza corretta.
-1. Controlla la cartella delle risorse pubbliche o, se non si trova nella cartella delle risorse pubbliche, la cartella a cui si fa riferimento nella consegna.
+1. Invia una bozza che mostri le immagini.
+1. Verifica che la configurazione delle risorse nella configurazione dell’istanza sia corretta.
+1. Controlla la cartella delle risorse pubbliche o, se non la cartella delle risorse pubbliche, la cartella a cui si fa riferimento nella consegna.

@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Attività Wait
-description: Ulteriori informazioni sull’attività del flusso di lavoro Wait
+description: Ulteriori informazioni sull’attività del flusso di lavoro Attendi
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 4872f756-14d7-4e37-a9cf-b929c77e34ca
@@ -16,18 +16,18 @@ ht-degree: 1%
 
 
 
-A **Wait** l’attività attiva la relativa transizione dopo un ritardo di tempo compreso tra alcuni secondi e diversi mesi. Un’attività di attesa non blocca l’esecuzione di altre attività; il flusso di lavoro può eseguire attività in parallelo mentre questa attività è in sospeso.
+A **Wait** l’attività attiva la relativa transizione dopo un ritardo di tempo compreso tra pochi secondi e diversi mesi. Un’attività in attesa non blocca l’esecuzione di altre attività; il flusso di lavoro può eseguire le attività in parallelo mentre questa attività è in sospeso.
 
-Puoi immettere l’etichetta e attendere il tempo di attesa utilizzando l’editor, come nell’esempio seguente:
+Puoi immettere l’etichetta e il tempo di attesa utilizzando l’editor, come nell’esempio seguente:
 
 ![](assets/edit_wait.png)
 
-In **[!UICONTROL Duration]** campo, il valore può essere espresso nell&#39;unità scelta: (secondo le impostazioni regionali dell&#39;operatore):
+In **[!UICONTROL Duration]** , il valore può essere espresso nell&#39;unità scelta: (in base alle impostazioni internazionali dell&#39;operatore):
 
-* Se le impostazioni internazionali non sono specificate: **s** per secondi, **m** per i minuti, **h** per ore, **d** per giorni, **y** per anni. Al momento dell’approvazione, il valore viene automaticamente convertito nell’unità più leggibile.
+* Se non si specificano le impostazioni internazionali: **s** per secondi, **m** per minuti, **h** per ore, **d** per giorni, **y** per anni. Al momento dell’omologazione, il valore viene automaticamente convertito nell’unità più leggibile.
 
-   L’unità predefinita è il giorno (**d**).
+   L&#39;unità predefinita è il giorno (**d**).
 
-* Se, ad esempio, le impostazioni regionali sono impostate su &quot;Français&quot;: **s** per secondi, **mn** per i minuti, **h** per ore, **j** per giorni, **m** per mesi, **a** per anni. Al momento dell’approvazione, il valore viene automaticamente convertito nell’unità più leggibile, come nell’esempio precedente **Anni 90** è stato convertito in **1 milione e 30 anni**.
+* Se, ad esempio, le impostazioni internazionali sono impostate su &quot;Français&quot;: **s** per secondi, **mn** per minuti, **h** per ore, **j** per giorni, **m** per mesi, **a** per anni. Al momento dell’omologazione, il valore viene automaticamente convertito nell’unità più leggibile, come nell’esempio precedente **90s** convertito in **1mn 30s**.
 
-   L’unità predefinita è il giorno (**d**).
+   L&#39;unità predefinita è il giorno (**d**).

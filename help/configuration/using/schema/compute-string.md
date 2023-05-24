@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Elementi e attributi - elemento stringa di calcolo
-description: elemento compute-string
+title: 'Elementi e attributi: elemento stringa di calcolo'
+description: elemento stringa di calcolo
 exl-id: 8a079bb8-3f53-4144-a065-5bd402649cc7
 source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
@@ -10,19 +10,19 @@ ht-degree: 5%
 
 ---
 
-# elemento compute-string {#compute-string--element}
+# elemento stringa di calcolo {#compute-string--element}
 
 ![](../../../assets/v7-only.svg)
 
 ## Modello di contenuto {#content-model-1}
 
-compute-string:==EMPTY
+stringa di calcolo:==EMPTY
 
 ## Attributi {#attributes-1}
 
 @expr
 
-## Genitori {#parents-1}
+## Padri {#parents-1}
 
 `<element>`
 
@@ -32,15 +32,15 @@ Nessuna
 
 ## Descrizione {#description-1}
 
-La `<compute-string>` consente di generare una stringa basata su un’espressione XTK per visualizzare un’etichetta &quot;generata&quot; nell’interfaccia in base a diversi valori.
+Il `<compute-string>` consente di generare una stringa basata su un’espressione XTK per visualizzare un’etichetta &quot;generata&quot; nell’interfaccia in base a diversi valori.
 
 ## Uso e contesto di utilizzo {#use-and-context-of-use-1}
 
-Quando no `<compute-string>` è definito come `<compute-string>` l’elemento viene immesso per impostazione predefinita con i valori della chiave primaria nello schema.
+In caso contrario `<compute-string>` è definito, un `<compute-string>` L&#39;elemento viene immesso per impostazione predefinita con i valori della chiave primaria nello schema.
 
 ## Descrizione attributo {#attribute-description-1}
 
-* **expr (stringa)**: Espressione XTK e/o Xpath
+* **expr (stringa)**: espressione XTK e/o Xpath
 
 ## Esempi {#examples-1}
 

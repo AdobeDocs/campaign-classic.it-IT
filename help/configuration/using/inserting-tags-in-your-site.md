@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Inserisci i tag di web tracking nel sito
-description: Scopri come inserire tag di web tracking nel sito
+title: Inserire i tag di tracciamento web nel sito
+description: Scopri come inserire i tag di tracciamento web nel sito
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: e7fcec75-82fe-45ff-8d45-7d6e95baeb14
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
@@ -11,15 +11,15 @@ ht-degree: 0%
 
 ---
 
-# Inserire tag di web tracking nel sito{#inserting-tags-in-your-site}
+# Inserire i tag di web tracking nel sito{#inserting-tags-in-your-site}
 
 ## Metodo semplice {#simple-method}
 
-Questo metodo consiste nell&#39;inviare una chiamata HTTP al server di reindirizzamento inserendo un **`<img>`** tag HTML nel codice sorgente HTML della pagina Web che si desidera monitorare.
+Questo metodo consiste nell’inviare una chiamata HTTP al server di reindirizzamento inserendo un **`<img>`** HTML nel codice sorgente HTML della pagina web che desideri monitorare.
 
 >[!IMPORTANT]
 >
->Questo metodo utilizza i cookie inviati dal browser Web per identificare il destinatario e non è affidabile al 100%.
+>Questo metodo utilizza i cookie inviati dal browser web per identificare il destinatario e non è affidabile al 100%.
 
 **Esempio**:
 
@@ -31,15 +31,15 @@ Il tag inserito contatta il server di reindirizzamento.
 
 ![](assets/d_ncs_integration_webtracking_structure2.png)
 
-Quando definisci una pagina da tracciare nella console, puoi generare un tag di web tracking di esempio da copiare e incollare nel codice sorgente della pagina web.
+Quando definisci una pagina da tracciare nella console, puoi generare un tag di tracciamento web di esempio da copiare e incollare nel codice sorgente della pagina web.
 
-Tuttavia, quando si utilizzano i tag di tipo TRANSAZIONE, è necessario modificare il tag di esempio utilizzando JavaScript per inserire le informazioni sulla transazione (quantità, numero di elementi) e qualsiasi informazione definita da uno schema di estensione.
+Quando si utilizzano i tag di tipo TRANSACTION, tuttavia, è necessario modificare il tag di esempio utilizzando JavaScript per inserire le informazioni sulla transazione (importo, numero di elementi) ed eventuali informazioni definite da uno schema di estensione.
 
-### Inserimento statico dei tag {#static-insertion-of-tags}
+### Inserimento statico di tag {#static-insertion-of-tags}
 
-Per eseguire l’inserimento di tag statici, è sufficiente copiare e incollare i tag generati dalla console o creati manualmente nell’origine della pagina web.
+Per eseguire l’inserimento di tag statici, è sufficiente copiare e incollare i tag generati dalla console o costruiti manualmente nell’origine della pagina web.
 
-**Esempio**: inserimento di un tag di web tracking in una pagina in cui è visualizzato un modulo.
+**Esempio**: inserimento di un tag di tracciamento web in una pagina che visualizza un modulo.
 
 ```
 <html>
@@ -61,7 +61,7 @@ Per eseguire l’inserimento di tag statici, è sufficiente copiare e incollare 
 </html>
 ```
 
-Inserimento di un tag di web tracking di tipo TRANSAZIONE nella pagina di conferma (&quot;amount.md&quot;).
+Inserimento di un tag di tracciamento web di tipo TRANSACTION nella pagina di conferma (&quot;amount.md&quot;).
 
 ```
 <html>
@@ -83,11 +83,11 @@ Inserimento di un tag di web tracking di tipo TRANSAZIONE nella pagina di confer
 </html>
 ```
 
-### Generazione dinamica di tag di web tracking {#dynamic-generation-of-web-tracking-tags}
+### Generazione dinamica di tag di tracciamento web {#dynamic-generation-of-web-tracking-tags}
 
-Quando le pagine web vengono generate in modo dinamico, puoi aggiungere il tag di web tracking in fase di generazione delle pagine.
+Quando le pagine web vengono generate dinamicamente, puoi aggiungere il tag di tracciamento web al momento della generazione della pagina.
 
-**Esempio**: Tracciamento Web aggiunto a JSP.
+**Esempio**: tracciamento web aggiunto alle JSP.
 
 ```
 <%@page import="java.util.Random" %>
@@ -120,19 +120,19 @@ Quando le pagine web vengono generate in modo dinamico, puoi aggiungere il tag d
 </html>
 ```
 
-## Metodo Optimum {#optimum-method-}
+## Metodo ottimale {#optimum-method-}
 
-Se si desidera controllare le informazioni inviate al server di reindirizzamento, il modo più affidabile è quello di eseguire la query HTTP in modo sincrono utilizzando un linguaggio di generazione della pagina.
+Se desideri controllare le informazioni inviate al server di reindirizzamento, il modo più affidabile è quello di eseguire la query HTTP in modo sincrono utilizzando un linguaggio per la generazione delle pagine.
 
-L’URL creato deve rispettare le regole di sintassi definite in [Tag di web tracking: definizione](../../configuration/using/web-tracking-tag--definition.md).
+L’URL creato deve rispettare le regole di sintassi definite in [Tag di tracciamento web: definizione](../../configuration/using/web-tracking-tag--definition.md).
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 
 >[!NOTE]
 >
->Il reindirizzamento e il web tracking utilizzano i cookie ed è importante che il server web che esegue la chiamata HTTP sincrona si trovi nello stesso dominio del server di reindirizzamento. I vari scambi HTTP devono trasmettere i cookie &quot;id&quot;, &quot;uuid&quot; e &quot;uuid230&quot;.
+>Il reindirizzamento e il tracciamento web utilizzano i cookie ed è importante che il server web che esegue la chiamata HTTP sincrona si trovi nello stesso dominio del server di reindirizzamento. I vari scambi HTTP devono trasmettere i cookie &quot;id&quot;, &quot;uuid&quot; e &quot;uuid230&quot;.
 
-**Esempio**: Generazione dinamica in Java, con autenticazione dei destinatari utilizzando il loro numero di account.
+**Esempio**: generazione dinamica in Java, con autenticazione del destinatario tramite il relativo numero di account.
 
 ```
 [...]
