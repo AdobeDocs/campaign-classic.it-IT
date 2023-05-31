@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Informazioni sugli strumenti di reporting di Adobe Campaign
-description: Analizza il successo delle campagne in report integrati o personalizzati
+description: Analizza il successo delle campagne con rapporti integrati o personalizzati
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
