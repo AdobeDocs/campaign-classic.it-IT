@@ -7,10 +7,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
-source-wordcount: '935'
-ht-degree: 100%
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+workflow-type: tm+mt
+source-wordcount: '933'
+ht-degree: 98%
 
 ---
 
@@ -129,7 +129,7 @@ Abbiamo organizzato un team di responsabili dell’Assistenza clienti, Product M
     </a>
     </div>
     <ul>
-    <li>L’aggiornamento dell’istanza di Campaign Classic risulta più complesso e laborioso se si salta una versione (passando da v6 a v7).</li>
+    <li>L’aggiornamento dell’istanza Campaign Classic risulta più complesso e laborioso se si salta una versione.</li>
     <li>Più si rimanda l’aggiornamento, più questo diventa complesso (e più ci si espone a vulnerabilità).</li>
     <li>Con aggiornamenti regolari si riducono sia i tempi di inattività associati alla procedura di aggiornamento, sia il rischio di regressione.</li>
     </ul>

@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '7979'
-ht-degree: 41%
+source-wordcount: '7955'
+ht-degree: 42%
 
 ---
 
@@ -1618,12 +1618,12 @@ Di seguito sono riportati i diversi parametri di **mta** nodo. Si tratta della c
    <td> Booleano<br /> </td> 
    <td> vero <br /> </td> 
   </tr> 
-  <tr> 
+  <!--tr> 
    <td> statServerVersion<br /> </td> 
-   <td> Versione protocollo utilizzata: versione protocollo di comunicazione (1 per un server v5.11 e 6.0.2, 2 per un server v6.1).<br /> </td> 
-   <td> Stringa<br /> </td> 
-   <td> Se non è definita, viene utilizzata la versione più recente. <br /> </td> 
-  </tr> 
+   <td> Protocol version used: communication protocol version (1 for a v5.11 and 6.0.2 server, 2 for a v6.1 server).<br /> </td> 
+   <td> String<br /> </td> 
+   <td> If undefined, the latest version is used. <br /> </td> 
+  </tr--> 
   <tr> 
    <td> useMomentum<br /> </td> 
    <td> Se impostato su "true", l’istanza utilizza <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">MTA avanzato</a>.<br /> </td> 

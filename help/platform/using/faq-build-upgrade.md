@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '2031'
+source-wordcount: '1995'
 ht-degree: 3%
 
 ---
@@ -54,15 +54,16 @@ Gli aggiornamenti delle versioni, d’altra parte, di solito sono accompagnati d
 
 Ad esempio, utilizzando le informazioni sul server tratte dalla schermata della sezione precedente:
 
-* Un aggiornamento della build richiederebbe il passaggio dalla build 6880 a qualsiasi build superiore alla 6880. Ad esempio, da v6.1.1 a v6.1.1 build 8666
+* Un aggiornamento della build richiederebbe il passaggio dalla build 9342 a qualsiasi build maggiore di 9342. Ad esempio, da v7.1 a v7.1 build 9342
 
-* Un aggiornamento della versione richiederebbe lo spostamento dalla versione 6.0.2 a qualsiasi versione successiva alla 6.0.2. Ad esempio: versioni da v6.0.1 a v6.1.1 build 8666
+* Un aggiornamento della versione richiederebbe il passaggio dalla versione 6 a una versione più recente.  Ad esempio: da v6.1.1 a v7.1 build 9342.
 
 ## È necessario eseguire il backup dei dati prima di questi aggiornamenti?
 
 Adobe esegue un backup del sistema prima di qualsiasi modifica. Tuttavia, se nel sistema non di produzione (server di sviluppo o di staging) è presente un lavoro di personalizzazione critico, si CONSIGLIA VIVAMENTE di esportare il lavoro come pacchetto prima di qualsiasi aggiornamento.
 
-![](assets/do-not-localize/how-to-video.png) Per ulteriori informazioni, [guarda questo video come](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).
+<!--
+![](assets/do-not-localize/how-to-video.png) For more information, [watch this how to video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).-->
 
 ## Quando avverranno gli aggiornamenti?
 
@@ -97,7 +98,9 @@ Il processo di aggiornamento della build richiede le seguenti risorse:
 
 ## Come posso prepararmi per l’aggiornamento della build?
 
-Nei sistemi di sviluppo e staging, esporta qualsiasi lavoro critico che deve essere mantenuto. Per ulteriori informazioni, [guarda questo video come](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).
+Nei sistemi di sviluppo e staging, esporta qualsiasi lavoro critico che deve essere mantenuto.
+
+<!--For more information please [watch this how to video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).-->
 
 Aggiorna la tua conoscenza dei flussi di lavoro e delle consegne dei percorsi critici sviluppati nei libri di esecuzione (o dal team/partner di consulenza) esaminando la documentazione fornita al team al termine dell’implementazione.
 
@@ -105,7 +108,7 @@ Identifica i tempi di traffico ridotti o ridotti che sarebbero ideali per le fin
 
 Rivedi il nostro [elenco di controllo per l’aggiornamento della build seguente](#check-list) e i tuoi piani di test e assicurati che le risorse in grado di eseguire questi test siano disponibili entro 24-48 ore. del completamento di un aggiornamento.
 
-Per ulteriori informazioni, [fai riferimento a questo documento](https://helpx.adobe.com/it/campaign/kb/acc-build-upgrade.html).
+Per ulteriori informazioni, [fai riferimento a questa sezione](../../production/using/build-upgrade.md).
 
 ## Gli aggiornamenti possono essere eseguiti di notte o fuori orario di lavoro?
 

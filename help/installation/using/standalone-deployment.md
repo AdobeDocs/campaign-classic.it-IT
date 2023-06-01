@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '1086'
+source-wordcount: '1077'
 ht-degree: 2%
 
 ---
@@ -165,7 +165,7 @@ Applica i seguenti passaggi:
 
    Per ulteriori informazioni, consulta [Configurazione del server Campaign](../../installation/using/configuring-campaign-server.md).
 
-1. Copia il programma di installazione della console client (**setup-client-7.XX**, **YYYY.exe** per v7 o **setup-client-6.XX**, **YYYY.exe** per v6.1) al **/datakit/nl/eng/jsp** cartella. [Ulteriori informazioni](../../installation/using/client-console-availability-for-windows.md).
+1. Copia il programma di installazione della console client **setup-client-7.XXX.exe** al **/datakit/nl/eng/jsp** cartella. [Ulteriori informazioni](../../installation/using/client-console-availability-for-windows.md).
 
 1. Segui la procedura di integrazione del server web (IIS, Apache) descritta nelle sezioni seguenti:
 
