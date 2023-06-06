@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
 workflow-type: tm+mt
-source-wordcount: '1111'
+source-wordcount: '1109'
 ht-degree: 3%
 
 ---
@@ -40,7 +40,7 @@ Rivedi i dettagli riportati di seguito per capire cosa è necessario per l’imp
 
 A partire dalla versione della build Campaign Classic 7.3, l’installazione di Microsoft Edge Webview 2 Runtime è necessaria per qualsiasi installazione della console.
 
-La visualizzazione Web è installata per impostazione predefinita come parte del sistema operativo Windows 11. Se non è già presente nel sistema, Campaign Classic Console Installer ti chiederà di scaricarlo da [Sito Web Microsoft Developer](http://www.adobe.com/go/acc-ms-webview2-runtime-download_it). Il collegamento di download non funziona nel browser Internet Explorer 11 in quanto Microsoft ne ha dichiarato obsoleto il supporto. Utilizza un browser diverso per accedere al collegamento.
+La visualizzazione Web è installata per impostazione predefinita come parte del sistema operativo Windows 11. Se non è già presente nel sistema, Campaign Classic Console Installer ti chiederà di scaricarlo da [Sito Web Microsoft Developer](https://www.adobe.com/go/acc-ms-webview2-runtime-download). Il collegamento di download non funziona nel browser Internet Explorer 11 in quanto Microsoft ne ha dichiarato obsoleto il supporto. Utilizza un browser diverso per accedere al collegamento.
 
 ## Adobe di implementazioni in hosting {#hosted-customers}
 
@@ -132,7 +132,7 @@ Dopo aver installato la console client, attenersi alla procedura descritta di se
 
 1. Specifica una connessione al server applicazioni Adobe Campaign tramite un URL. Utilizza un DNS o un alias del computer oppure il tuo indirizzo IP.
 
-   Ad esempio, puoi utilizzare [`https://<machine>.<domain>.com`](https://myserver.adobe.com) digita URL.
+   Ad esempio, puoi utilizzare `https://<machine>.<domain>.com` digita URL.
 
 1. Se Adobe IMS è configurato per la tua organizzazione, seleziona l’opzione **[!UICONTROL Connect with an Adobe ID]**
 

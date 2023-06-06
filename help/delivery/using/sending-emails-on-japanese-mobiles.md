@@ -6,9 +6,9 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email, Email Design
 exl-id: 44634227-2340-49c4-b330-740c739ea551
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '720'
 ht-degree: 0%
 
 ---
@@ -43,11 +43,7 @@ Pertanto, devi:
 
 >[!NOTE]
 >
->Le limitazioni specifiche di ciascun operatore devono essere prese in considerazione durante la creazione del messaggio. Fai riferimento a:
->
->* Per DoCoMo, fare riferimento a [questa pagina](https://www.nttdocomo.co.jp/service/developer/make/content/deco_mail/index.html)
->* Per KDDI AU, fare riferimento a [questa pagina](https://www.au.com/ezfactory/tec/spec/decorations/template.html)
->* Per Softbank, fare riferimento a [questa pagina](https://www.support.softbankmobile.co.jp/partner/home_tech3/index.cfm)
+>Le limitazioni specifiche di ciascun operatore devono essere tenute in considerazione durante la creazione del messaggio. Consulta la relativa documentazione del prodotto.
 
 
 ## Verificare il contenuto dell’e-mail {#testing-the-email-content}

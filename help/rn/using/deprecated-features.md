@@ -7,10 +7,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
-source-wordcount: '1684'
-ht-degree: 100%
+source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
+workflow-type: tm+mt
+source-wordcount: '1508'
+ht-degree: 96%
 
 ---
 
@@ -211,24 +211,24 @@ A partire dalla versione 20.2, Adobe Campaign non è più compatibile con i segu
 
 A partire dalla versione 19.1 di primavera, Adobe Campaign non è più compatibile con i seguenti server FDA:
 
-* PostgreSQL 9.3. [Ulteriori informazioni](https://www.postgresql.org/support/versioning)
-* MySQL 5.5. [Ulteriori informazioni](https://www.fromdual.com/support-for-mysql-from-oracle)
-* DB2 9.5. [Ulteriori informazioni](https://www-01.ibm.com/support/docview.wss?uid=swg21168270)
-* Teradata 14 - 14.1. [Ulteriori informazioni](https://community.teradata.com/t5/Database/Teradata-Database-Product-Life-Cycle/td-p/35068)
+* PostgreSQL 9.3.
+* MySQL 5.5.
+* DB2 9,5.
+* Teradate 14-14.1.
 
-Campaign Classic non è compatibile con i seguenti server in Federated Data Access (FDA).
+Campaign Classic non è compatibile con i seguenti server in Federated Data Access (FDA). Utilizza versioni più recenti o sistemi.
 
-* DB2 UDB 9.5, 9.7. La versione più recente di DB2 è supportata tramite Federated Data Access (FDA). [Ulteriori informazioni](https://www-01.ibm.com/support/docview.wss?uid=swg21168270)
-* Oracle 9i, 10G R2. Versioni più recenti di Oracle sono supportate tramite Federated Data Access (FDA). [Ulteriori informazioni](https://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf)
-* Le versioni PostgreSQL fino a 9.6 hanno raggiunto la fine del ciclo di vita. Versioni più recenti di PostgreSQL sono supportate tramite Federated Data Access (FDA). [Ulteriori informazioni](https://www.postgresql.org/support/versioning)
-* MSSQL 2000, 2005, 2008 R2. Versioni più recenti di SQL Server sono supportate tramite Federated Data Access (FDA). [Ulteriori informazioni](https://support.microsoft.com/it-it/lifecycle/search/1044)
-* MySQL 5.1. Versioni più recenti di MySQL sono supportate tramite Federated Data Access (FDA). [Ulteriori informazioni](https://en.wikipedia.org/wiki/InfiniDB)
-* InfiniDB ha raggiunto la fine del ciclo di vita. [Ulteriori informazioni](https://www.mysql.com/support)
-* Teradata 13, 13.1. Versioni più recenti di Teradata sono supportate tramite Federated Data Access (FDA). [Ulteriori informazioni](https://www.info.teradata.com/download.cfm?ItemID=1007255)
-* Netezza 6.02, 7.0. Netezza ha raggiunto la fine del ciclo di vita. [Ulteriori informazioni](https://it.wikipedia.org/wiki/Netezza)
-* AsterData 5.0. AsterData ha raggiunto la fine del ciclo di vita. [Ulteriori informazioni](https://en.wikipedia.org/wiki/Aster_Data_Systems)
-* Sybase IQ 15.2, 15.4, 15.5 e Sybase ASE 15.0. Versioni più recenti di Sybase sono supportate tramite Federated Data Access (FDA). [Ulteriori informazioni](https://sites.google.com/site/dbatipsandtricks/time-tracker)
-* Hadoop tramite HiveSQL: Hadoop 2.7.3, HiveSQL 1.2.1. Adobe Campaign Classic continuerà a supportare le versioni elencate di Hadoop tramite HiveSQL attraverso Federated Data Access (FDA), ma queste versioni vengono unite con: HortonWorks (HDP 2.4.X, 2.5.x, 2.6.x) e HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)
+* DB2 UDB 9.5, 9.7.
+* Oracle 9i, 10G R2.
+* Le versioni PostgreSQL fino a 9.6 hanno raggiunto la fine del ciclo di vita.
+* MSSQL 2000, 2005, 2008 R2.
+* MySQL 5.1.
+* InfiniDB ha raggiunto la fine del ciclo di vita.
+* Teradata 13, 13.1.
+* Netezza 6.02, 7.0. Netezza ha raggiunto la fine del ciclo di vita.
+* AsterData 5.0. AsterData ha raggiunto la fine del ciclo di vita.
+* Sybasi IQ 15.2, 15.4, 15.5 e Sybase ASE 15.0.
+* Hadoop tramite HiveSQL: Hadoop 2.7.3, HiveSQL 1.2.1. Adobe Campaign Classic supporta ancora le versioni elencate di Hadoop tramite HiveSQL tramite Federated Data Access (FDA), ma queste versioni vengono unite con: HortonWorks (HDP 2.4.X, 2.5.x, 2.6.x) e HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)
 
 **SERVER RDBMS**
 
