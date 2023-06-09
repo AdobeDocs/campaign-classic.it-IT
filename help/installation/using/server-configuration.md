@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 4%
@@ -15,8 +15,6 @@ ht-degree: 4%
 ---
 
 # Impostazioni di sicurezza del server {#server-configuration}
-
-
 
 ## Protezione caricamento file
 
@@ -76,9 +74,9 @@ Puoi aggiungere altre intestazioni HTTP per tutte le pagine (per ulteriori infor
 * Puoi aggiungere altre intestazioni come HSTS, X-FRAME-OPTIONS, CSP...
 * È necessario testarli in un ambiente di test prima di applicarli in produzione.
 
-   >[!IMPORTANT]
-   >
-   >Adobe Campaign può essere interrotto aggiungendo determinate intestazioni.
+  >[!IMPORTANT]
+  >
+  >Adobe Campaign può essere interrotto aggiungendo determinate intestazioni.
 
 Adobe Campaign consente di impostare una password semplice nel `<dbcnx .../>` elemento. Non utilizzare questa funzione.
 

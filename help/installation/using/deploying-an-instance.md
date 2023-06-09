@@ -8,16 +8,14 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
-source-wordcount: '3140'
+source-wordcount: '3333'
 ht-degree: 2%
 
 ---
 
 # Distribuzione di un’istanza{#deploying-an-instance}
-
-
 
 >[!NOTE]
 >
@@ -25,7 +23,7 @@ ht-degree: 2%
 
 ## Distribuzione guidata {#deployment-wizard}
 
-Una procedura guidata grafica, disponibile nella console client di Adobe Campaign, ti consente di definire i parametri dell’istanza a cui stai per connetterti.
+Adobe Campaign fornisce un assistente grafico, disponibile nella console client di Adobe Campaign, per definire i parametri dell’istanza a cui stai per connetterti.
 
 Per avviare la procedura guidata di distribuzione, selezionare **Strumenti > Avanzate > Procedura guidata di distribuzione**.
 
@@ -80,13 +78,36 @@ Questi parametri possono essere sovraccaricati nei modelli di consegna e singola
 
 Indicare i seguenti parametri:
 
-* **[!UICONTROL Sender name]** : nome del mittente
-* **[!UICONTROL Sender address]** : indirizzo del mittente
-* **[!UICONTROL Reply address text]** : nome personalizzabile che verrà utilizzato quando il destinatario farà clic sul **[!UICONTROL Reply]** nel software client di posta elettronica
-* **[!UICONTROL Reply address]** : indirizzo e-mail da utilizzare quando il destinatario fa clic su **[!UICONTROL Reply]** nel software client di posta elettronica
-* **[!UICONTROL Error address]** : indirizzo e-mail dei messaggi con errori. Si tratta dell’indirizzo tecnico utilizzato per gestire le e-mail non recapitate, incluse quelle ricevute dal server Adobe Campaign a causa di indirizzi di destinazione inesistenti.
+* **[!UICONTROL Sender name]** : immetti il nome del mittente.
+* **[!UICONTROL Sender address]** : immetti l’indirizzo e-mail del mittente.
+
+  >[!NOTE]
+  >
+  > Quando si inviano e-mail da Adobe Campaign, il **Indirizzo mittente** la cassetta postale non è monitorata e gli utenti marketing non possono accedere a questa cassetta postale. Inoltre, Adobe Campaign non offre la possibilità di rispondere automaticamente o inoltrare automaticamente le e-mail ricevute in questa casella di posta.
+
+* **[!UICONTROL Reply address text]** : immetti il nome utilizzato quando il destinatario fa clic su **[!UICONTROL Reply]** pulsante.
+* **[!UICONTROL Reply address]** : immetti l’indirizzo e-mail da utilizzare quando il destinatario fa clic su **[!UICONTROL Reply]** nel software client di posta elettronica.
+
+  >[!NOTE]
+  >
+  >Scopo della **Indirizzo di risposta** è il momento in cui desideri che il destinatario risponda a un indirizzo diverso da **Indirizzo mittente**.  Questo indirizzo deve essere un indirizzo e-mail valido e collegato a una cassetta postale monitorata.  Questa cassetta postale deve essere ospitata dal cliente.  Potrebbe trattarsi di una casella di posta di supporto, ad esempio customer-care@customer.com, in cui le e-mail vengono lette e a cui viene inviata una risposta.
+
+* **[!UICONTROL Error address]** : immetti l’indirizzo e-mail dei messaggi con errori. Si tratta dell’indirizzo tecnico utilizzato per gestire le e-mail non recapitate, incluse quelle ricevute dal server Adobe Campaign a causa di indirizzi di destinazione inesistenti.
+
+  >[!NOTE]
+  >
+  > Questo indirizzo deve essere un indirizzo e-mail valido e collegato a una cassetta postale monitorata. Questa cassetta postale deve essere ospitata dal cliente. Potrebbe trattarsi di una cassetta postale di mancato recapito, ad esempio errors@customer.com.
+
 
 Inoltre, puoi specificare **maschere** autorizzato per l’indirizzo del mittente e l’indirizzo di errore. Se necessario, queste maschere possono essere separate da virgole. Questa configurazione è facoltativa. Quando vengono immessi i campi, Adobe Campaign controlla al momento della consegna (durante l’analisi, se l’indirizzo non include alcuna variabile) che gli indirizzi siano validi. Questa modalità operativa assicura che non vengano utilizzati indirizzi che potrebbero attivare problemi di consegna. Gli indirizzi di consegna devono essere configurati sul server di consegna.
+
+>[!NOTE]
+>
+>* Queste impostazioni vengono salvate nelle opzioni della piattaforma Campaign. [Ulteriori informazioni](../../installation/using/configuring-campaign-options.md).
+> 
+>* Per le configurazioni con più marchi, puoi adattare l’indirizzo Error e ignorare questa configurazione dall’account esterno di indirizzamento e-mail. [Ulteriori informazioni](../../installation/using/external-accounts.md#email-routing-external-account).
+>
+
 
 ### Caratteri autorizzati negli indirizzi {#characters-authorized-in-addresses}
 
@@ -183,15 +204,15 @@ Quando attivi il tracciamento su un’istanza, gli URL nelle consegne vengono mo
 
 * Le informazioni sugli URL esterni (protetti o meno) immesse in questa pagina della procedura guidata di distribuzione vengono utilizzate per generare il nuovo URL. Oltre a queste informazioni, il collegamento modificato contiene: gli identificatori della consegna, il destinatario e l’URL.
 
-   Le informazioni di tracciamento vengono raccolte da Adobe Campaign sui server di tracciamento per arricchire i profili dei destinatari e i dati collegati alla consegna ( **[!UICONTROL Tracking]** schede).
+  Le informazioni di tracciamento vengono raccolte da Adobe Campaign sui server di tracciamento per arricchire i profili dei destinatari e i dati collegati alla consegna ( **[!UICONTROL Tracking]** schede).
 
-   Le informazioni sugli URL interni vengono utilizzate solo dal server applicazioni Adobe Campaign per contattare il server o i server di tracciamento.
+  Le informazioni sugli URL interni vengono utilizzate solo dal server applicazioni Adobe Campaign per contattare il server o i server di tracciamento.
 
-   Per ulteriori informazioni, consulta [Server di tracciamento](#tracking-server).
+  Per ulteriori informazioni, consulta [Server di tracciamento](#tracking-server).
 
 * Una volta configurati gli URL, devi abilitare il tracciamento. A questo scopo, l’istanza deve essere registrata sui server di tracciamento.
 
-   Per ulteriori informazioni, consulta [Salvataggio del tracciamento](#saving-tracking).
+  Per ulteriori informazioni, consulta [Salvataggio del tracciamento](#saving-tracking).
 
 ### Server di tracciamento {#tracking-server}
 
@@ -203,7 +224,7 @@ Per garantire l’efficienza del tracciamento in questa istanza, è necessario v
 * **[!UICONTROL External URL]** e/o **[!UICONTROL Secure external URL]** : immetti l’URL di reindirizzamento da utilizzare nell’e-mail da inviare.
 * **[!UICONTROL Internal URL(s)]** : URL utilizzati solo dal server Adobe Campaign per contattare i server di tracciamento e raccogliere i registri e caricare gli URL. Non è necessario associarlo all’istanza.
 
-   Se non specifichi un URL, per impostazione predefinita verrà utilizzato l’URL di tracciamento.
+  Se non specifichi un URL, per impostazione predefinita verrà utilizzato l’URL di tracciamento.
 
 Con l’architettura mid-sourcing, puoi esternalizzare la gestione del tracciamento. Per eseguire questa operazione:
 
@@ -337,6 +358,13 @@ Utilizzare questa pagina per popolare gli URL del server per:
 
 Adobe Campaign consente di distinguere questi tre URL per distribuire il carico su più piattaforme.
 
+
+>[!NOTE]
+>
+>* Queste impostazioni vengono salvate nelle opzioni della piattaforma Campaign. [Ulteriori informazioni](../../installation/using/configuring-campaign-options.md).
+>* Per le configurazioni con più marchi, puoi adattare l’URL della pagina mirror e ignorare questa configurazione dall’account esterno di indirizzamento e-mail. [Ulteriori informazioni](../../installation/using/configuring-campaign-options.md).
+
+
 ## Gestione delle risorse pubbliche {#managing-public-resources}
 
 >[!IMPORTANT]
@@ -365,7 +393,7 @@ In una consegna, puoi utilizzare le immagini memorizzate nella libreria di risor
 
 * Per le immagini delle e-mail, **https://** server **/res/img** URL.
 
-   Questo valore può essere sovrascritto per ogni consegna.
+  Questo valore può essere sovrascritto per ogni consegna.
 
 * Per le risorse pubbliche, l’URL **https://** server **/res/** istanza ****dove **istanza**è il nome dell’istanza di tracciamento.
 
@@ -390,38 +418,38 @@ Sono disponibili le seguenti modalità di pubblicazione:
 
 * Server di tracciamento
 
-   Le risorse verranno copiate automaticamente sui diversi server di tracciamento. Sono configurati nel passaggio [Configurazione del tracciamento](#tracking-configuration).
+  Le risorse verranno copiate automaticamente sui diversi server di tracciamento. Sono configurati nel passaggio [Configurazione del tracciamento](#tracking-configuration).
 
 * Altri server Adobe Campaign
 
-   Puoi utilizzare uno o più altri server Adobe Campaign in cui copiare le risorse.
+  Puoi utilizzare uno o più altri server Adobe Campaign in cui copiare le risorse.
 
-   Lato server, per utilizzare un server Adobe Campaign dedicato, devi creare una nuova istanza con il seguente comando:
+  Lato server, per utilizzare un server Adobe Campaign dedicato, devi creare una nuova istanza con il seguente comando:
 
-   ```
-   nlserver config -addtrackinginstance:<trackingA>/<trackingA*>
-   ```
+  ```
+  nlserver config -addtrackinginstance:<trackingA>/<trackingA*>
+  ```
 
-   Immettere quindi la password.
+  Immettere quindi la password.
 
-   I parametri dei server dedicati sono riportati nella **[!UICONTROL Media URL(s)]**, **[!UICONTROL Password]** e **[!UICONTROL Instance name]** campi.
+  I parametri dei server dedicati sono riportati nella **[!UICONTROL Media URL(s)]**, **[!UICONTROL Password]** e **[!UICONTROL Instance name]** campi.
 
-   ![](assets/s_ncs_install_images_upload_b.png)
+  ![](assets/s_ncs_install_images_upload_b.png)
 
 * Script di pubblicazione manuale (solo per risorse pubbliche)
 
-   ![](assets/s_ncs_install_images_upload_c.png)
+  ![](assets/s_ncs_install_images_upload_c.png)
 
-   Puoi pubblicare le immagini utilizzando uno script:
+  Puoi pubblicare le immagini utilizzando uno script:
 
    * Devi creare questo script: il suo contenuto dipende dalla configurazione.
    * Lo script verrà richiamato dal comando seguente:
 
-      ```
-      [INSTALL]/copyToFrontal.vbs "$(XTK_INSTALL_DIR)\var\<instance>\upload\" "img1,img2,img3"
-      ```
+     ```
+     [INSTALL]/copyToFrontal.vbs "$(XTK_INSTALL_DIR)\var\<instance>\upload\" "img1,img2,img3"
+     ```
 
-      dove `[INSTALL]` è il percorso di accesso alla cartella di installazione di Adobe Campaign.
+     dove `[INSTALL]` è il percorso di accesso alla cartella di installazione di Adobe Campaign.
 
    * In Unix, assicurati che lo script sia eseguibile.
 

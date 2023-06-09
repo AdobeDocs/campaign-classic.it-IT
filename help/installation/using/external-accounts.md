@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
-source-wordcount: '1714'
-ht-degree: 9%
+source-wordcount: '1830'
+ht-degree: 8%
 
 ---
 
@@ -59,27 +59,27 @@ Per configurare **[!UICONTROL Bounce mails (defaultPopAccount)]** account estern
 
 * **[!UICONTROL Server]**
 
-   URL del server POP3.
+  URL del server POP3.
 
 * **[!UICONTROL Port]**
 
-   Numero porta di connessione POP3. La porta predefinita è 110.
+  Numero porta di connessione POP3. La porta predefinita è 110.
 
 * **[!UICONTROL Account]**
 
-   Nome dell’utente.
+  Nome dell’utente.
 
 * **[!UICONTROL Password]**
 
-   Password dell’account utente.
+  Password dell’account utente.
 
 * **[!UICONTROL Encryption]**
 
-   Tipo di crittografia scelta tra **[!UICONTROL By default]**, **[!UICONTROL POP3 + STARTTLS]**, **[!UICONTROL POP3]** o **[!UICONTROL POP3S]**.
+  Tipo di crittografia scelta tra **[!UICONTROL By default]**, **[!UICONTROL POP3 + STARTTLS]**, **[!UICONTROL POP3]** o **[!UICONTROL POP3S]**.
 
 * **[!UICONTROL Function]**
 
-   E-mail in entrata o router SOAP
+  E-mail in entrata o router SOAP
 
 >[!IMPORTANT]
 >
@@ -89,19 +89,19 @@ Per configurare un POP3 esterno tramite **Microsoft OAuth 2.0**, controlla **[!U
 
 * **[!UICONTROL Azure tenant]**
 
-   L’ID di Azure (o l’ID di directory (tenant)) si trova nel **Elementi di base** della panoramica dell’applicazione nel portale di Azure.
+  L’ID di Azure (o l’ID di directory (tenant)) si trova nel **Elementi di base** della panoramica dell’applicazione nel portale di Azure.
 
 * **[!UICONTROL Azure Client ID]**
 
-   L’ID client (o ID applicazione (client)) si trova nella sezione **Elementi di base** della panoramica dell’applicazione nel portale di Azure.
+  L’ID client (o ID applicazione (client)) si trova nella sezione **Elementi di base** della panoramica dell’applicazione nel portale di Azure.
 
 * **[!UICONTROL Azure Client secret]**
 
-   L’ID del segreto client si trova in **Segreti client** colonna da **Certificati e segreti** dell’applicazione nel portale di Azure.
+  L’ID del segreto client si trova in **Segreti client** colonna da **Certificati e segreti** dell’applicazione nel portale di Azure.
 
 * **[!UICONTROL Azure Redirect URL]**
 
-   L’URL di reindirizzamento si trova nella sezione **Autenticazione** dell’applicazione nel portale di Azure. Deve terminare con la seguente sintassi `nl/jsp/oauth.jsp`, ad es. `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
+  L’URL di reindirizzamento si trova nella sezione **Autenticazione** dell’applicazione nel portale di Azure. Deve terminare con la seguente sintassi `nl/jsp/oauth.jsp`, ad es. `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
 
 Dopo aver immesso le diverse credenziali, puoi fare clic su **[!UICONTROL Setup the connection]** per completare la configurazione dell’account esterno.
 
@@ -113,7 +113,7 @@ Il **[!UICONTROL Routing]** l’account esterno ti consente di configurare ogni 
 
 È possibile configurare i seguenti canali:
 
-* [E-mail](../../installation/using/deploying-an-instance.md#email-channel-parameters)
+* [E-mail](#email-routing-external-account)
 * [Dispositivo mobile (SMS)](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)
 * [Telefono](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Direct mail](../../delivery/using/about-direct-mail-channel.md)
@@ -122,23 +122,37 @@ Il **[!UICONTROL Routing]** l’account esterno ti consente di configurare ogni 
 * [Canale iOS](../../delivery/using/configuring-the-mobile-application.md)
 * [Canale Android](../../delivery/using/configuring-the-mobile-application-android.md)
 
+### Indirizzamento e-mail {#email-routing-external-account}
+
+L’account esterno di indirizzamento e-mail è fornito per impostazione predefinita, adattato alla configurazione.
+
+In qualità di cliente on-premise, puoi creare nuovi account esterni di instradamento o aggiornare i parametri come descritto di seguito. Questa configurazione è riservata agli utenti esperti e può influire sul recapito messaggi. Per qualsiasi domanda, contatta l’Assistenza clienti di Adobe o il tuo rappresentante Adobe.
+
+* È possibile utilizzare un **Mid-sourcing**, **Esterno** instradamento, o **In blocco** tipo di instradamento della consegna.
+
+* Per **In blocco** e **Mid-sourcing** modalità di consegna, puoi specificare i parametri di branding in **Marchio** scheda. Questi parametri vengono utilizzati per sostituire [parametri predefiniti](../../installation/using/deploying-an-instance.md#email-channel-parameters) per **URL pagina mirror** e **Indirizzo errore** con impostazioni specifiche per il tuo marchio.
+
+  ![](assets/ext-account-branding.png)
+
+* Per configurare un account esterno di mid-sourcing, consulta [questa sezione](mid-sourcing-server.md)
+
 ### Istanza di esecuzione  {#execution-instance-external-account}
 
-Se si dispone di un&#39;architettura con raggruppamenti, è necessario specificare le istanze di esecuzione collegate all&#39;istanza di controllo e collegarle. I modelli di messaggi transazionali vengono distribuiti nell’istanza di esecuzione
+Se si dispone di un&#39;architettura con raggruppamenti, è necessario specificare le istanze di esecuzione collegate all&#39;istanza di controllo e collegarle. I modelli di messaggi transazionali vengono distribuiti nell’istanza di esecuzione.
 
 ![](assets/ext_account_13.png)
 
 * **[!UICONTROL URL]**
 
-   URL del server in cui è installata l’istanza di esecuzione.
+  URL del server in cui è installata l’istanza di esecuzione.
 
 * **[!UICONTROL Account]**
 
-   Il nome dell&#39;account deve corrispondere all&#39;agente del Centro messaggi definito nella cartella dell&#39;operatore.
+  Il nome dell&#39;account deve corrispondere all&#39;agente del Centro messaggi definito nella cartella dell&#39;operatore.
 
 * **[!UICONTROL Password]**
 
-   Password dell’account definita nella cartella dell’operatore.
+  Password dell’account definita nella cartella dell’operatore.
 
 Per ulteriori informazioni su questa configurazione, consulta [pagina](../../message-center/using/configuring-instances.md#control-instance).
 
@@ -154,23 +168,23 @@ A questo scopo, specifica in questo account esterno l’indirizzo e le credenzia
 
 * **[!UICONTROL Server]**
 
-   Nome del server FTP.
+  Nome del server FTP.
 
 * **[!UICONTROL Port]**
 
-   Numero porta di connessione FTP. La porta predefinita è 21.
+  Numero porta di connessione FTP. La porta predefinita è 21.
 
 * **[!UICONTROL Account]**
 
-   Nome dell’utente.
+  Nome dell’utente.
 
 * **[!UICONTROL Password]**
 
-   Password dell’account utente.
+  Password dell’account utente.
 
 * **[!UICONTROL Encryption]**
 
-   Tipo di crittografia scelta tra **[!UICONTROL None]** o **[!UICONTROL SSL]**.
+  Tipo di crittografia scelta tra **[!UICONTROL None]** o **[!UICONTROL SSL]**.
 
 Per sapere dove individuare queste credenziali, consulta questa [pagina](https://help.dreamhost.com/hc/en-us/articles/115000675027-FTP-overview-and-credentials).
 
@@ -182,19 +196,19 @@ L’account esterno SFTP consente di configurare e testare l’accesso a un serv
 
 * **[!UICONTROL Server]**
 
-   URL del server SFTP.
+  URL del server SFTP.
 
 * **[!UICONTROL Port]**
 
-   Numero porta di connessione FTP. La porta predefinita è 22.
+  Numero porta di connessione FTP. La porta predefinita è 22.
 
 * **[!UICONTROL Account]**
 
-   Nome account utilizzato per connettersi al server SFTP.
+  Nome account utilizzato per connettersi al server SFTP.
 
 * **[!UICONTROL Password]**
 
-   Password utilizzata per la connessione al server SFTP.
+  Password utilizzata per la connessione al server SFTP.
 
 Per aggiungere chiavi SSH in Windows:
 
@@ -237,39 +251,39 @@ Per connettersi alla console Adobe Campaign utilizzando un Adobe ID, devi config
 
 * **[!UICONTROL IMS server]**
 
-   URL del server IMS. Assicurati che le istanze di stage e produzione puntino allo stesso endpoint di produzione IMS.
+  URL del server IMS. Assicurati che le istanze di stage e produzione puntino allo stesso endpoint di produzione IMS.
 
 * **[!UICONTROL IMS scope]**
 
-   Gli ambiti definiti qui devono essere un sottoinsieme di quelli per i quali è stato eseguito il provisioning da IMS.
+  Gli ambiti definiti qui devono essere un sottoinsieme di quelli per i quali è stato eseguito il provisioning da IMS.
 
 * **[!UICONTROL IMS client identifier]**
 
-   ID del client IMS.
+  ID del client IMS.
 
 * **[!UICONTROL IMS client secret]**
 
-   Credenziali del segreto client IMS.
+  Credenziali del segreto client IMS.
 
 * **[!UICONTROL Callback server]**
 
-   URL di accesso dell’istanza di Adobe Campaign.
+  URL di accesso dell’istanza di Adobe Campaign.
 
 * **[!UICONTROL IMS organization ID]**
 
-   ID della tua organizzazione. Per trovare l’ID organizzazione, consulta [questa pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=it){_blank}.
+  ID della tua organizzazione. Per trovare l’ID organizzazione, consulta [questa pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=it){_blank}.
 
 * **[!UICONTROL Association mask]**
 
-   Sintassi che consentirà la sincronizzazione dei nomi di configurazione nel dashboard di Enterprise con i gruppi in Adobe Campaign.
+  Sintassi che consentirà la sincronizzazione dei nomi di configurazione nel dashboard di Enterprise con i gruppi in Adobe Campaign.
 
 * **[!UICONTROL Server]**
 
-   URL dell’istanza di Adobe Experience Cloud.
+  URL dell’istanza di Adobe Experience Cloud.
 
 * **[!UICONTROL Tenant]**
 
-   Nome del tenant Adobe Experience Cloud.
+  Nome del tenant Adobe Experience Cloud.
 
 Per ulteriori informazioni su questa configurazione, consulta [questa pagina](../../integrations/using/configuring-ims.md).
 
@@ -289,15 +303,15 @@ Il **[!UICONTROL AEM (AEM instance)]** l’account esterno consente di gestire i
 
 * **[!UICONTROL Server]**
 
-   URL del server Adobe Experience Manager.
+  URL del server Adobe Experience Manager.
 
 * **[!UICONTROL Port]**
 
-   Nome account utilizzato per connettersi all’istanza di authoring di Adobe Experience Manager.
+  Nome account utilizzato per connettersi all’istanza di authoring di Adobe Experience Manager.
 
 * **[!UICONTROL Password]**
 
-   Password utilizzata per connettersi all’istanza di authoring di Adobe Experience Manager.
+  Password utilizzata per connettersi all’istanza di authoring di Adobe Experience Manager.
 
 Per ulteriori informazioni, consulta questa [sezione](../../integrations/using/about-adobe-experience-manager.md).
 
@@ -319,21 +333,21 @@ Con **[!UICONTROL Web API]** tipo di distribuzione e **[!UICONTROL Password cred
 
 * **[!UICONTROL Account]**
 
-   Account utilizzato per accedere a Microsoft CRM.
+  Account utilizzato per accedere a Microsoft CRM.
 
 * **[!UICONTROL Server]**
 
-   URL del server Microsoft CRM.
+  URL del server Microsoft CRM.
 
-   Per trovare il Microsoft CRM **[!UICONTROL Server URL]**, accedere all&#39;account di Microsoft Dynamics CRM e quindi fare clic su **Dynamics 365** e seleziona la tua app. Potrai quindi trovare il tuo **[!UICONTROL Server URL]** nella barra degli indirizzi del browser, ad es. `https://myserver.crm.dynamics.com/`.
+  Per trovare il Microsoft CRM **[!UICONTROL Server URL]**, accedere all&#39;account di Microsoft Dynamics CRM e quindi fare clic su **Dynamics 365** e seleziona la tua app. Potrai quindi trovare il tuo **[!UICONTROL Server URL]** nella barra degli indirizzi del browser, ad es. `https://myserver.crm.dynamics.com/`.
 
 * **[!UICONTROL Client identifier]**
 
-   ID client, reperibile dal portale di gestione di Microsoft Azure in **[!UICONTROL Update your code]** categoria, **[!UICONTROL Client ID]** campo.
+  ID client, reperibile dal portale di gestione di Microsoft Azure in **[!UICONTROL Update your code]** categoria, **[!UICONTROL Client ID]** campo.
 
 * **[!UICONTROL CRM version]**
 
-   Scegli **[!UICONTROL Dynamics CRM 365]** Versione CRM.
+  Scegli **[!UICONTROL Dynamics CRM 365]** Versione CRM.
 
 Con **[!UICONTROL Web API]** tipo di distribuzione e **[!UICONTROL Certificate]** autenticazione, è necessario fornire i seguenti dettagli:
 
@@ -341,15 +355,15 @@ Con **[!UICONTROL Web API]** tipo di distribuzione e **[!UICONTROL Certificate]*
 
 * **[!UICONTROL Server]**
 
-   URL del server Microsoft CRM.
+  URL del server Microsoft CRM.
 
-   Per trovare il Microsoft CRM **[!UICONTROL Server URL]**, accedere all&#39;account di Microsoft Dynamics CRM e quindi fare clic su **Dynamics 365** e seleziona la tua app. Potrai quindi trovare il tuo **[!UICONTROL Server URL]** nella barra degli indirizzi del browser, ad es. `https://myserver.crm.dynamics.com/`.
+  Per trovare il Microsoft CRM **[!UICONTROL Server URL]**, accedere all&#39;account di Microsoft Dynamics CRM e quindi fare clic su **Dynamics 365** e seleziona la tua app. Potrai quindi trovare il tuo **[!UICONTROL Server URL]** nella barra degli indirizzi del browser, ad es. `https://myserver.crm.dynamics.com/`.
 
 * **[!UICONTROL Private Key (Base64 encoded)]**
 
-   La chiave privata deve essere codificata in Base64.
+  La chiave privata deve essere codificata in Base64.
 
-   A tale scopo, è possibile utilizzare l&#39;aiuto di un codificatore Base64 o la riga di comando `base64 -w0 private.key` per Linux.
+  A tale scopo, è possibile utilizzare l&#39;aiuto di un codificatore Base64 o la riga di comando `base64 -w0 private.key` per Linux.
 
 * **[!UICONTROL Custom Key identifier]**
 
@@ -357,11 +371,11 @@ Con **[!UICONTROL Web API]** tipo di distribuzione e **[!UICONTROL Certificate]*
 
 * **[!UICONTROL Client identifier]**
 
-   ID client, reperibile dal portale di gestione di Microsoft Azure in **[!UICONTROL Update your code]** categoria, **[!UICONTROL Client ID]** campo.
+  ID client, reperibile dal portale di gestione di Microsoft Azure in **[!UICONTROL Update your code]** categoria, **[!UICONTROL Client ID]** campo.
 
 * **[!UICONTROL CRM version]**
 
-   Versione del CRM tra **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** o **[!UICONTROL Dynamics CRM 2016]**.
+  Versione del CRM tra **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** o **[!UICONTROL Dynamics CRM 2016]**.
 
 Per ulteriori informazioni su questa configurazione, consulta [pagina](../../platform/using/crm-connectors.md).
 
@@ -375,23 +389,23 @@ Per configurare l’account esterno del sistema di gestione delle relazioni con 
 
 * **[!UICONTROL Account]**
 
-   Account utilizzato per accedere a Salesforce CRM.
+  Account utilizzato per accedere a Salesforce CRM.
 
 * **[!UICONTROL Password]**
 
-   Password utilizzata per accedere a Salesforce CRM.
+  Password utilizzata per accedere a Salesforce CRM.
 
 * **[!UICONTROL Client identifier]**
 
-   Per sapere dove trovare l’identificatore del client, consulta questa [pagina](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+  Per sapere dove trovare l’identificatore del client, consulta questa [pagina](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
 * **[!UICONTROL Security token]**
 
-   Per sapere dove trovare il token di sicurezza, consulta questa [pagina](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+  Per sapere dove trovare il token di sicurezza, consulta questa [pagina](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
 * **[!UICONTROL API version]**
 
-   Seleziona la versione dell’API.
+  Seleziona la versione dell’API.
 
 Per questo account esterno, devi configurare Salesforce CRM con la configurazione guidata.
 
@@ -409,23 +423,23 @@ Quando imposti questo nuovo account esterno, dovrai fornire i seguenti dettagli:
 
 * **[!UICONTROL AWS S3 Account Server]**
 
-   URL del server, deve essere compilato come segue:
+  URL del server, deve essere compilato come segue:
 
-   ```
-   <S3bucket name>.s3.amazonaws.com/<s3object path>
-   ```
+  ```
+  <S3bucket name>.s3.amazonaws.com/<s3object path>
+  ```
 
 * **[!UICONTROL AWS access key ID]**
 
-   Per sapere dove trovare il tuo ID chiave di accesso ad AWS, consulta questa [pagina](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
+  Per sapere dove trovare il tuo ID chiave di accesso ad AWS, consulta questa [pagina](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
 
 * **[!UICONTROL Secret access key to AWS]**
 
-   Per sapere dove trovare la chiave di accesso segreta ad AWS, consulta questa [pagina](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
+  Per sapere dove trovare la chiave di accesso segreta ad AWS, consulta questa [pagina](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
 
 * **[!UICONTROL AWS Region]**
 
-   Per ulteriori informazioni sull’area geografica di AWS, consulta [pagina](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
+  Per ulteriori informazioni sull’area geografica di AWS, consulta [pagina](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
 
 * Il **[!UICONTROL Use server side encryption]** casella di controllo consente di memorizzare il file in modalità crittografata S3.
 
@@ -441,12 +455,12 @@ Per configurare **[!UICONTROL Azure external account]** per lavorare con Adobe C
 
 * **[!UICONTROL Server]**
 
-   URL del server di archiviazione BLOB di Azure.
+  URL del server di archiviazione BLOB di Azure.
 
 * **[!UICONTROL Encryption]**
 
-   Tipo di crittografia scelta tra **[!UICONTROL None]** o **[!UICONTROL SSL]**.
+  Tipo di crittografia scelta tra **[!UICONTROL None]** o **[!UICONTROL SSL]**.
 
 * **[!UICONTROL Access key]**
 
-   Per sapere dove trovare **[!UICONTROL Access key]**, fai riferimento a questo [pagina](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
+  Per sapere dove trovare **[!UICONTROL Access key]**, fai riferimento a questo [pagina](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).

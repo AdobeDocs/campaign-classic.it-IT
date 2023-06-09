@@ -6,7 +6,7 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability, Email Rendering, Proofs
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 8%
@@ -106,6 +106,7 @@ Per accelerare la preparazione della consegna, puoi controllare il **[!UICONTROL
 Quando questa opzione è abilitata, la preparazione della consegna viene eseguita direttamente all’interno del database, il che può accelerare notevolmente l’analisi.
 
 Attualmente, questa opzione è disponibile solo quando sono soddisfatte le seguenti condizioni:
+
 * La consegna deve essere un’e-mail. Al momento gli altri canali non sono supportati.
 * Non utilizzare il mid-sourcing o il ciclo esterno, ma solo il tipo di ciclo di consegna in blocco. È possibile controllare il ciclo di produzione utilizzato nel **[!UICONTROL General]** scheda di **[!UICONTROL Delivery properties]**.
 * Non è possibile eseguire il targeting di una popolazione proveniente da un file esterno. Per una singola consegna, fai clic su **[!UICONTROL To]** collegamento da **[!UICONTROL Email parameters]** e verifica che **[!UICONTROL Defined in the database]** è selezionata. Per una consegna utilizzata in un flusso di lavoro, verifica che i destinatari siano **[!UICONTROL Specified by the inbound event(s)]** nel **[!UICONTROL Delivery]** scheda.
@@ -136,7 +137,6 @@ Per rilevare eventuali errori nella configurazione dei messaggi, Adobe consiglia
 >* Le modalità di convalida disponibili sono descritte in dettaglio [Modificare la modalità di approvazione](steps-validating-the-delivery.md#changing-the-approval-mode).
 >* La configurazione del target della bozza è spiegata in [Definire un target di bozza specifico](steps-defining-the-target-population.md#defining-a-specific-proof-target).
 >
-
 
 Per inviare una bozza, effettua le seguenti operazioni:
 

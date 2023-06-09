@@ -7,16 +7,14 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
-source-wordcount: '3991'
+source-wordcount: '3993'
 ht-degree: 6%
 
 ---
 
 # Elenco opzioni di Campaign Classic{#configuring-campaign-options}
-
-
 
 Il **[!UICONTROL Administration / Platform / Options]** consente di configurare le opzioni di Adobe Campaign. Alcuni sono incorporati durante l’installazione di Campaign, altri possono essere aggiunti manualmente quando necessario. Le opzioni disponibili variano a seconda dei pacchetti installati con l’istanza.
 
@@ -26,7 +24,6 @@ Il **[!UICONTROL Administration / Platform / Options]** consente di configurare 
 >* Le opzioni non elencate in questa pagina sono solo interne e **non deve essere modificato**.
 >
 >* La modifica o l’aggiornamento delle opzioni di Adobe Campaign può essere eseguito solo da utenti esperti.
-
 
 ## Consegna {#delivery}
 
@@ -151,7 +148,7 @@ Il **[!UICONTROL Administration / Platform / Options]** consente di configurare 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ExpOrganization</span> <br /> </td> 
-   <td> Nome comune del cliente. Utilizzato in alcuni messaggi di avviso visualizzati ai destinatari.<br /> "Hai ricevuto questo messaggio perché hai contattato ***** o un'azienda affiliata. Non ricevere più messaggi da *****".<br /> </td> 
+   <td> Nome comune del cliente. Utilizzato in alcuni messaggi di avviso visualizzati ai destinatari.<br /> "Stai ricevendo questo messaggio perché sei stato in contatto con "Organizzazione" o un’azienda affiliata. Per non ricevere più messaggi da "Organization"<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_FromName</span> <br /> </td> 
@@ -159,7 +156,7 @@ Il **[!UICONTROL Administration / Platform / Options]** consente di configurare 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ReplyToName</span> <br /> </td> 
-   <td> Etichetta e-mail di risposta predefinita a livello di istanza, utilizzata per la consegna e-mail se lasciata vuota dall’utente.<br /> </td> 
+   <td> L’etichetta e-mail predefinita di risposta a livello di istanza, utilizzata per la consegna e-mail se lasciata vuota dall’utente.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_RetryCount</span> <br /> </td> 

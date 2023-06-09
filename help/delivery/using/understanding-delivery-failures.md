@@ -6,7 +6,7 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Deliverability
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
 source-wordcount: '2614'
 ht-degree: 17%
@@ -201,15 +201,15 @@ Un messaggio può non riuscire immediatamente (errore sincrono) o in seguito, do
 * Errore sincrono: il server di posta remota contattato dal server di consegna Adobe Campaign ha restituito immediatamente un messaggio di errore. La consegna non può essere inviata al server del profilo. Adobe Campaign qualifica ogni errore per determinare se gli indirizzi e-mail interessati devono essere posti in quarantena o meno. Consulta [Qualificazione di mail non recapitate](#bounce-mail-qualification).
 * Errore asincrono: una mail non recapitata o un SR è stato inviato in seguito dal server ricevente. Il messaggio viene caricato in una cassetta postale tecnica utilizzata dall&#39;applicazione per etichettare i messaggi con un errore. Gli errori asincroni possono verificarsi fino a una settimana dopo l’invio di una consegna.
 
-   >[!NOTE]
-   >
-   >La configurazione della cassetta postale di mancato recapito è descritta in [questa sezione](../../installation/using/deploying-an-instance.md#managing-bounced-emails).
+  >[!NOTE]
+  >
+  >La configurazione della cassetta postale di mancato recapito è descritta in [questa sezione](../../installation/using/deploying-an-instance.md#managing-bounced-emails).
 
-   Il [ciclo di feedback](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops) funziona come le e-mail non recapitate. Quando un utente qualifica un’e-mail come spam, puoi configurare le regole e-mail in Adobe Campaign per bloccare tutte le consegne a questo utente. I messaggi inviati agli utenti che hanno qualificato un’e-mail come spam vengono automaticamente reindirizzati verso una casella e-mail creata appositamente a tale scopo. Gli indirizzi di questi utenti sono in inserita nell&#39;elenco Bloccati di anche se non hanno fatto clic sul collegamento di annullamento dell’iscrizione. Gli indirizzi sono in inserito nell&#39;elenco Bloccati di nel (**NmsAddress**) e non nella tabella di quarantena (**NmsRecipient**) tabella dei destinatari.
+  Il [ciclo di feedback](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops) funziona come le e-mail non recapitate. Quando un utente qualifica un’e-mail come spam, puoi configurare le regole e-mail in Adobe Campaign per bloccare tutte le consegne a questo utente. I messaggi inviati agli utenti che hanno qualificato un’e-mail come spam vengono automaticamente reindirizzati verso una casella e-mail creata appositamente a tale scopo. Gli indirizzi di questi utenti sono in inserita nell&#39;elenco Bloccati di anche se non hanno fatto clic sul collegamento di annullamento dell’iscrizione. Gli indirizzi sono in inserito nell&#39;elenco Bloccati di nel (**NmsAddress**) e non nella tabella di quarantena (**NmsRecipient**) tabella dei destinatari.
 
-   >[!NOTE]
-   >
-   >La gestione dei reclami è descritta nel [Gestione del recapito messaggi](about-deliverability.md) sezione.
+  >[!NOTE]
+  >
+  >La gestione dei reclami è descritta nel [Gestione del recapito messaggi](about-deliverability.md) sezione.
 
 ## Gestione posta non recapitata {#bounce-mail-management}
 
@@ -234,7 +234,6 @@ Per le installazioni on-premise e le installazioni in hosting/ibride che utilizz
 >* **** Le mancate consegne asincrone vengono comunque qualificate dal processo inMail attraverso le regole **[!UICONTROL Inbound email]**. Per ulteriori informazioni, consulta [Regole di gestione e-mail](#email-management-rules).
 >
 >* Per le istanze che utilizzano l’MTA avanzato **senza webhook/EFS**, il **[!UICONTROL Inbound email]** Le regole verranno utilizzate anche per elaborare le e-mail non recapitate sincrone provenienti dall’MTA avanzato, utilizzando lo stesso indirizzo e-mail utilizzato per le e-mail non recapitate asincrone.
-
 
 Per le installazioni on-premise e in hosting/ibride utilizzando l’MTA di Campaign legacy, quando la consegna di un’e-mail non riesce, il server di consegna Adobe Campaign riceve un messaggio di errore dal server di messaggistica o dal server DNS remoto. L&#39;elenco degli errori è costituito dalle stringhe contenute nel messaggio restituito dal server remoto. A ogni messaggio di errore vengono assegnati tipi e motivi di errore.
 
@@ -287,7 +286,6 @@ Le regole predefinite sono le seguenti.
 >* Se i parametri sono stati modificati, il server di consegna (MTA) deve essere riavviato.
 >* La modifica o la creazione di regole di gestione è riservata agli utenti esperti.
 
-
 #### E-mail in entrata {#inbound-email}
 
 >[!IMPORTANT]
@@ -296,7 +294,7 @@ Le regole predefinite sono le seguenti.
 
 Per le installazioni on-premise e le installazioni in hosting/ibride che utilizzano l’MTA di Campaign legacy, queste regole contengono l’elenco di stringhe di caratteri che possono essere restituite dai server remoti e che consentono di qualificare l’errore (**Rigido**, **Morbido** o **Ignorato**).
 
-Quando un messaggio e-mail non riesce, il server remoto restituisce un messaggio di mancato recapito all’indirizzo specificato nei parametri della piattaforma. Adobe Campaign confronta il contenuto di ogni e-mail non recapitata con le stringhe nell’elenco delle regole, quindi assegna a ciascuna una delle tre opzioni [tipi di errore](#delivery-failure-types-and-reasons).
+Quando un messaggio e-mail non riesce, il server remoto restituisce un messaggio di mancato recapito all’indirizzo specificato nella [parametri piattaforma](../../installation/using/deploying-an-instance.md). Adobe Campaign confronta il contenuto di ogni e-mail non recapitata con le stringhe nell’elenco delle regole, quindi assegna a ciascuna una delle tre opzioni [tipi di errore](#delivery-failure-types-and-reasons).
 
 >[!NOTE]
 >
