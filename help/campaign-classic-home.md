@@ -3,7 +3,7 @@ keywords: Campaign Classic;home;argomenti principali
 product: campaign
 title: Documentazione del prodotto di Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: ddac38fb79101bcff910345c9b04c7cc5eaf39a6
+source-git-commit: ad6a39f69c07662f43c39d4c96d53acccbe4a60c
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 62%
@@ -16,7 +16,7 @@ ht-degree: 62%
 
 ## Novità
 
-* **[È attiva la versione di novembre.](rn/using/latest-release.md)**<br/> Scopri nuove funzionalità, miglioramenti e correzioni nelle Note sulla versione
+* **[È attiva la versione di marzo.](rn/using/latest-release.md)**<br/> Scopri nuove funzionalità, miglioramenti e correzioni nelle Note sulla versione
 
 * **[Programma di versione 2022](technotes/using/dc-migration.md)**<br/> Aggiornamento dell&#39;ambiente e miglioramento di sicurezza, infrastruttura e prestazioni
 
