@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
+source-git-commit: 43158445f688f4c2612d4dad76f2243b2e358b35
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 8%
@@ -126,9 +126,9 @@ Il **[!UICONTROL Routing]** l’account esterno ti consente di configurare ogni 
 
 L’account esterno di indirizzamento e-mail è fornito per impostazione predefinita, adattato alla configurazione.
 
-In qualità di cliente on-premise, puoi creare nuovi account esterni di instradamento o aggiornare i parametri come descritto di seguito. Questa configurazione è riservata agli utenti esperti e può influire sul recapito messaggi. Per qualsiasi domanda, contatta l’Assistenza clienti di Adobe o il tuo rappresentante Adobe.
+In qualità di cliente on-premise/ibrido, puoi creare nuovi account esterni di instradamento o aggiornare i parametri come descritto di seguito. Questa configurazione è riservata agli utenti esperti e può influire sul recapito messaggi. Per qualsiasi domanda, contatta l’Assistenza clienti di Adobe o il tuo rappresentante Adobe.
 
-* È possibile utilizzare un **Mid-sourcing**, **Esterno** instradamento, o **In blocco** tipo di instradamento della consegna.
+* È possibile utilizzare una **Mid-sourcing**, **Esterno** instradamento, o **In blocco** tipo di instradamento della consegna.
 
 * Per **In blocco** e **Mid-sourcing** modalità di consegna, puoi specificare i parametri di branding in **Marchio** scheda. Questi parametri vengono utilizzati per sostituire [parametri predefiniti](../../installation/using/deploying-an-instance.md#email-channel-parameters) per **URL pagina mirror** e **Indirizzo errore** con impostazioni specifiche per il tuo marchio.
 

@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 84dc10d9f1979b7b9277fbc6837bc5ee9ab0e9dd
+source-git-commit: 43158445f688f4c2612d4dad76f2243b2e358b35
 workflow-type: tm+mt
-source-wordcount: '3341'
+source-wordcount: '3366'
 ht-degree: 2%
 
 ---
@@ -84,7 +84,7 @@ Indicare i seguenti parametri:
 * **[!UICONTROL Reply address text]** : immetti il nome utilizzato quando il destinatario fa clic su **[!UICONTROL Reply]** pulsante.
 * **[!UICONTROL Reply address]** : immetti l’indirizzo e-mail da utilizzare quando il destinatario fa clic su **[!UICONTROL Reply]** nel software client di posta elettronica. Scopo della **Indirizzo di risposta** è il momento in cui desideri che il destinatario risponda a un indirizzo diverso da **Indirizzo mittente**.  Questo indirizzo deve essere un indirizzo e-mail valido, collegato a una cassetta postale monitorata e ospitato dal cliente.  Potrebbe trattarsi di una casella di posta di supporto, ad esempio, `customer-care@customer.com`: in cui le e-mail vengono lette e a cui viene data risposta.
 
-* **[!UICONTROL Error address]** : immetti l’indirizzo e-mail dei messaggi con errori. Si tratta dell’indirizzo tecnico utilizzato per gestire le e-mail non recapitate, incluse quelle ricevute dal server Adobe Campaign a causa di indirizzi di destinazione inesistenti. Questo indirizzo deve essere un indirizzo e-mail valido, collegato a una cassetta postale monitorata e ospitato dal cliente. Potrebbe trattarsi di una cassetta postale di mancato recapito, ad esempio: `errors@customer.com`.
+* **[!UICONTROL Error address]** : immetti l’indirizzo e-mail dei messaggi con errori. Si tratta dell’indirizzo tecnico utilizzato per gestire le e-mail non recapitate, incluse quelle ricevute dal server Adobe Campaign a causa di indirizzi di destinazione inesistenti. Questo indirizzo deve essere un indirizzo e-mail valido, collegato a una cassetta postale monitorata e ospitato dal cliente. Potrebbe trattarsi di una cassetta postale di mancato recapito, ad esempio: `errors@customer.com`. Questo indirizzo può essere modificato per una consegna o nei modelli di consegna, dal **SMTP** scheda delle proprietà del modello di consegna/consegna. [Ulteriori informazioni](../../delivery/using/email-parameters.md#managing-bounce-emails-managing-bounce-emails).
 
 
 Inoltre, puoi specificare **maschere** autorizzato per l’indirizzo del mittente e l’indirizzo di errore. Se necessario, queste maschere possono essere separate da virgole. Questa configurazione è facoltativa. Quando vengono immessi i campi, Adobe Campaign controlla al momento della consegna (durante l’analisi, se l’indirizzo non include alcuna variabile) che gli indirizzi siano validi. Questa modalità operativa assicura che non vengano utilizzati indirizzi che potrebbero attivare problemi di consegna. Gli indirizzi di consegna devono essere configurati sul server di consegna.

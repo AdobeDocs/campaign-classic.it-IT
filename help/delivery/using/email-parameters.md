@@ -6,7 +6,7 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 43158445f688f4c2612d4dad76f2243b2e358b35
 workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 14%
@@ -61,19 +61,19 @@ Seleziona il formato dell’e-mail nella sezione inferiore della finestra:
 
 * **[!UICONTROL Use recipient preferences]** (modalità predefinita)
 
-   Il formato del messaggio è definito in base ai dati memorizzati nel profilo del destinatario e memorizzati per impostazione predefinita nel **[!UICONTROL email format]** campo (@emailFormat). Se un destinatario desidera ricevere i messaggi in un determinato formato, questo sarà il formato inviato. Se il campo non è compilato, viene inviato un messaggio multipart-alternative (vedi sotto).
+  Il formato del messaggio è definito in base ai dati memorizzati nel profilo del destinatario e memorizzati per impostazione predefinita nel **[!UICONTROL email format]** campo (@emailFormat). Se un destinatario desidera ricevere i messaggi in un determinato formato, questo sarà il formato inviato. Se il campo non è compilato, viene inviato un messaggio multipart-alternative (vedi sotto).
 
 * **[!UICONTROL Let recipient mail client choose the most appropriate format]**
 
-   Il messaggio contiene entrambi i formati: testo e HTML. Il formato visualizzato sulla ricezione dipende dalla configurazione del software di posta del destinatario (multipart-alternative).
+  Il messaggio contiene entrambi i formati: testo e HTML. Il formato visualizzato sulla ricezione dipende dalla configurazione del software di posta del destinatario (multipart-alternative).
 
-   >[!IMPORTANT]
-   >
-   >Questa opzione include entrambe le versioni del documento. Di conseguenza, influisce sulla velocità di consegna, perché la dimensione del messaggio è maggiore.
+  >[!IMPORTANT]
+  >
+  >Questa opzione include entrambe le versioni del documento. Di conseguenza, influisce sulla velocità di consegna, perché la dimensione del messaggio è maggiore.
 
 * **[!UICONTROL Send all messages in text format]**
 
-   Il messaggio viene inviato in formato testo. Il formato HTML non verrà inviato, ma verrà utilizzato per la pagina speculare solo quando il destinatario farà clic sul messaggio.
+  Il messaggio viene inviato in formato testo. Il formato HTML non verrà inviato, ma verrà utilizzato per la pagina speculare solo quando il destinatario farà clic sul messaggio.
 
 >[!NOTE]
 >
@@ -99,7 +99,7 @@ Oltre alla modalità predefinita, sono disponibili anche le seguenti opzioni:
 * **[!UICONTROL Do not generate the mirror page]**: non viene generata alcuna pagina speculare, anche se il collegamento è presente nella consegna.
 * **[!UICONTROL Generates a mirror page accessible using only the message identifier]**: questa opzione ti consente di accedere al contenuto della pagina speculare, con le informazioni sulla personalizzazione, nella finestra del registro di consegna. A questo scopo, dopo la fine della consegna, fai clic sul pulsante **[!UICONTROL Delivery]** e seleziona la riga del destinatario di cui desideri visualizzare la pagina speculare. Fai clic sul collegamento **[!UICONTROL Display the mirror page for this message...]**.
 
-   ![](assets/s_ncs_user_wizard_miror_page_link.png)
+  ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
 ## Codifica caratteri {#character-encoding}
 
@@ -117,7 +117,7 @@ A questo scopo, seleziona la **[!UICONTROL Force the encoding used for messages]
 
 Il **[!UICONTROL SMTP]** La scheda dei parametri di consegna ti consente di configurare la gestione dei messaggi non recapitati.
 
-Per impostazione predefinita, le e-mail non consegnate vengono ricevute nella casella di errore predefinita della piattaforma, ma puoi definire un indirizzo di errore specifico per una consegna.
+Per impostazione predefinita, le e-mail non consegnate vengono ricevute in [casella di errore predefinita della piattaforma](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails), ma puoi definire un indirizzo di errore specifico per una consegna.
 
 Puoi anche definire un indirizzo specifico da questa schermata per indagare i motivi dei messaggi non recapitati quando l’applicazione non è in grado di qualificarli automaticamente. Per ciascuno di questi campi, il **Aggiungere campi personalizzati** consente di aggiungere parametri di personalizzazione.
 
