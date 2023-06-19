@@ -4,10 +4,10 @@ title: Guida e opzioni di supporto per Campaign Classic
 description: Hai bisogno di supporto per Campaign Classic? Sei nel posto giusto!
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: a119378e4285d3258a9b4f1f68c0b625264e5d37
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 66%
+source-wordcount: '755'
+ht-degree: 69%
 
 ---
 
@@ -99,7 +99,7 @@ Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/do
 >
 >Il Pannello di controllo è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente i diritti da amministratore sono descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel).
 >
->Tieni presente che l’istanza deve essere ospitata su AWS e aggiornata con il [Build GA](rn/using/rn-overview.md). Scopri come controllare la versione in [questa sezione](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+>Tieni presente che l’istanza deve essere ospitata su AWS e aggiornata con il [Build GA](rn/using/rn-overview.md). Scopri come controllare la versione in [questa sezione](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=it).
 
 ### Come accedere al Pannello di controllo?
 
@@ -107,7 +107,7 @@ Il Pannello di controllo è disponibile direttamente da Adobe Experience Cloud. 
 
 ### Domande frequenti sul Pannello di controllo
 
-[Fai clic qui ](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) per accedere alle domande frequenti sul Pannello di controllo Campaign.
+[Fai clic qui ](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=it) per accedere alle domande frequenti sul Pannello di controllo Campaign.
 
 ### Gestione SFTP
 
@@ -140,8 +140,7 @@ Iscriviti alla community Campaign Classic: consulta le risposte già fornite all
 
 ### Accedi al Centro di download di Campaign
 
-A partire da giugno 2020, la soluzione di Experience Cloud Distribuzione di software sostituisce il precedente Centro di download Neolane e offre un’esperienza più efficiente per trovare e scaricare software, pacchetti e strumenti. [Fai clic qui](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) per accedere alla Distribuzione di software di Experience Cloud.
-Ulteriori informazioni sul nuovo Centro download [in questa pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it){_blank}.
+In qualità di amministratore di Campaign, passa a [questa pagina](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) per accedere alla Distribuzione di software Experience Cloud.
 
 ### Crea un ticket o avvia una chat
 

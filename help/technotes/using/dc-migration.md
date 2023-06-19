@@ -7,9 +7,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: a119378e4285d3258a9b4f1f68c0b625264e5d37
 workflow-type: tm+mt
-source-wordcount: '1557'
+source-wordcount: '1533'
 ht-degree: 2%
 
 ---
@@ -76,8 +76,6 @@ Il programma ha tre obiettivi principali:
 ![](assets/GSMigrations.png)
 
 ## Informazioni sulla migrazione
-
-La migrazione ad Adobe Managed Services (Public Cloud) avverrà nel 2020/2021 per gli account interessati. Adobe guiderà la tua organizzazione attraverso questo percorso.
 
 Per iniziare, gli account che richiedono questa migrazione riceveranno una comunicazione e-mail da Adobe, con una timeline e l’accesso alla documentazione. Questa sarà la notifica che avvisa che è pianificata la migrazione del tuo account.
 
