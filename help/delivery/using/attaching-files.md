@@ -6,9 +6,9 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: 9e1d49cd1ae89a3bdf42febd48c5a340fe7ec674
+source-git-commit: 64a94982ea1eebc30c652e0025eb0aaa0eab1ce9
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '966'
 ht-degree: 7%
 
 ---
@@ -34,7 +34,7 @@ Esistono due casi possibili:
 
 ## Guardrail {#attachments-guardrails}
 
-Per evitare problemi di prestazioni, per impostazione predefinita le immagini incluse nelle e-mail non devono superare i 100 MB. Questo limite può essere configurato dal `NmsDelivery_MaxDownloadedImageSize` opzione.
+Per evitare problemi di prestazioni, le immagini incluse nelle e-mail non possono superare i 100 MB. Questo limite, impostato per impostazione predefinita, può essere modificato dal `NmsDelivery_MaxDownloadedImageSize` opzione. Tuttavia, Adobe consiglia vivamente di evitare le immagini di grandi dimensioni nelle consegne e-mail.
 
 L&#39;Adobe consiglia inoltre di limitare le dimensioni e il numero di file allegati. Per impostazione predefinita, è possibile aggiungere un solo file come allegato a un messaggio e-mail. Questa soglia può essere configurata dal `NmsDelivery_MaxRecommendedAttachments` opzione.
 

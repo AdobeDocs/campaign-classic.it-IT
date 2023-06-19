@@ -6,9 +6,9 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 9e1d49cd1ae89a3bdf42febd48c5a340fe7ec674
+source-git-commit: 64a94982ea1eebc30c652e0025eb0aaa0eab1ce9
 workflow-type: tm+mt
-source-wordcount: '1931'
+source-wordcount: '1943'
 ht-degree: 1%
 
 ---
@@ -149,7 +149,7 @@ Le consegne e-mail in formato HTML possono contenere immagini. Dalla procedura g
 
 ### Guardrail {#img-guardrails}
 
-Per evitare problemi di prestazioni, per impostazione predefinita le immagini incluse nelle e-mail non devono superare i 100 MB. Questo limite può essere configurato dal `NmsDelivery_MaxDownloadedImageSize` opzione.
+Per evitare problemi di prestazioni, le immagini incluse nelle e-mail non possono superare i 100 MB. Questo limite, impostato per impostazione predefinita, può essere modificato dal `NmsDelivery_MaxDownloadedImageSize` opzione. Tuttavia, Adobe consiglia vivamente di evitare le immagini di grandi dimensioni nelle consegne e-mail.
 
 Ulteriori informazioni in [elenco delle opzioni di Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
