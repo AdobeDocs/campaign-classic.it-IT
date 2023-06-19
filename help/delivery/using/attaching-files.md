@@ -6,16 +6,14 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 9e1d49cd1ae89a3bdf42febd48c5a340fe7ec674
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '954'
 ht-degree: 7%
 
 ---
 
 # Allegare file a un messaggio e-mail{#attaching-files}
-
-
 
 ## Informazioni sugli allegati e-mail {#about-email-attachments}
 
@@ -33,6 +31,14 @@ Esistono due casi possibili:
 >[!NOTE]
 >
 >Questo tipo di configurazione viene generalmente eseguito nei modelli di consegna. Per ulteriori informazioni, consulta [Informazioni sui modelli](about-templates.md).
+
+## Guardrail {#attachments-guardrails}
+
+Per evitare problemi di prestazioni, per impostazione predefinita le immagini incluse nelle e-mail non devono superare i 100 MB. Questo limite può essere configurato dal `NmsDelivery_MaxDownloadedImageSize` opzione.
+
+L&#39;Adobe consiglia inoltre di limitare le dimensioni e il numero di file allegati. Per impostazione predefinita, è possibile aggiungere un solo file come allegato a un messaggio e-mail. Questa soglia può essere configurata dal `NmsDelivery_MaxRecommendedAttachments` opzione.
+
+Ulteriori informazioni in [elenco delle opzioni di Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Allega un file locale {#attaching-a-local-file}
 
@@ -113,9 +119,7 @@ Per questo tipo di allegato, attenersi ai seguenti passaggi di configurazione:
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_08.png)
 
->[!NOTE]
->
->Per evitare problemi di prestazioni, se includi come allegato immagini scaricate al volo da un URL personalizzato, per impostazione predefinita ogni immagine non deve superare i 100.000 byte. Questa soglia consigliata può essere configurata da [elenco delle opzioni di Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+
 
 ### Allegare un file calcolato {#attach-a-calculated-file}
 
@@ -182,6 +186,6 @@ Il **[!UICONTROL Advanced]** Questa scheda consente di definire le opzioni avanz
 * Puoi definire le opzioni di filtro per evitare di inviare il file allegato a tutti i destinatari. Opzione **[!UICONTROL Enable filtering of recipients who will receive the attachment]** attiva un campo di input utilizzato per definire uno script di selezione dei destinatari, che deve essere immesso in JavaScript.
 * Puoi scrivere nello script il nome del file per personalizzarlo.
 
-   Inserisci il testo nella finestra e utilizza i campi di personalizzazione disponibili nell’elenco a discesa. Nell’esempio seguente, il nome del file viene personalizzato in modo da contenere la data odierna e il nome del destinatario.
+  Inserisci il testo nella finestra e utilizza i campi di personalizzazione disponibili nell’elenco a discesa. Nell’esempio seguente, il nome del file viene personalizzato in modo da contenere la data odierna e il nome del destinatario.
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_09.png)
+  ![](assets/s_ncs_user_wizard_email_calc_attachement_09.png)

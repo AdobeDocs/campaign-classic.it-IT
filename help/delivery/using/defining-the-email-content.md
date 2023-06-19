@@ -6,16 +6,14 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 9e1d49cd1ae89a3bdf42febd48c5a340fe7ec674
 workflow-type: tm+mt
-source-wordcount: '1989'
+source-wordcount: '1931'
 ht-degree: 1%
 
 ---
 
 # Definire il contenuto dell’e-mail {#defining-the-email-content}
-
-
 
 ## Mittente {#sender}
 
@@ -29,15 +27,14 @@ Per informazioni su come inserire e utilizzare i campi di personalizzazione, con
 
 >[!NOTE]
 >
->* Per impostazione predefinita, per le risposte verrà utilizzato l&#39;indirizzo del mittente.
->* I parametri di intestazione non possono essere vuoti. Per impostazione predefinita, contengono i valori immessi durante la configurazione della procedura guidata di distribuzione. Per ulteriori informazioni, fare riferimento a [Guida all’installazione](../../installation/using/deploying-an-instance.md).
+>* Per impostazione predefinita, per le risposte viene utilizzato l&#39;indirizzo del mittente.
+>* I parametri di intestazione non possono essere vuoti. Per impostazione predefinita, contengono i valori immessi durante la configurazione della procedura guidata di distribuzione. Per ulteriori informazioni, consulta [questa sezione](../../installation/using/deploying-an-instance.md).
 >* L’indirizzo del mittente è obbligatorio per consentire l’invio di un’e-mail (standard RFC).
 >* Adobe Campaign controlla la sintassi degli indirizzi e-mail immessi.
 
-
->[!IMPORTANT]
+>[!CAUTION]
 >
->Nel contesto dei controlli implementati dai provider di accesso a Internet (ISP) per combattere la posta indesiderata, l’Adobe consiglia di creare account e-mail che corrispondano agli indirizzi specificati per le consegne e le risposte. Rivolgiti all’amministratore del sistema di messaggistica.
+>Per evitare problemi di recapito messaggi, gli account e-mail che corrispondono agli indirizzi specificati per le consegne e le risposte devono esistere e devono essere monitorati. Rivolgiti all’amministratore di sistema.
 
 ## Oggetto del messaggio {#message-subject}
 
@@ -71,45 +68,45 @@ Per impostazione predefinita, i messaggi vengono inviati in formato HTML o testo
 
 * Per importare un contenuto HTML, utilizza **[!UICONTROL Open]** pulsante. Puoi anche incollare il codice sorgente direttamente nel **[!UICONTROL Source]** scheda secondaria.
 
-   Se utilizzi il [Editor di contenuti digitali](../../web/using/about-campaign-html-editor.md) (DCE), fare riferimento a [Selezione di un modello di contenuto](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content).
+  Se utilizzi il [Editor di contenuti digitali](../../web/using/about-campaign-html-editor.md) (DCE), fare riferimento a [Selezione di un modello di contenuto](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content).
 
-   >[!IMPORTANT]
-   >
-   >Il contenuto HTML deve essere creato in precedenza, quindi importato in Adobe Campaign. L’editor di HTML non è progettato per la creazione di contenuti.
+  >[!IMPORTANT]
+  >
+  >Il contenuto HTML deve essere creato in precedenza, quindi importato in Adobe Campaign. L’editor di HTML non è progettato per la creazione di contenuti.
 
-   Il **[!UICONTROL Preview]** scheda secondaria consente di visualizzare il rendering di ciascun contenuto per un destinatario. I campi di personalizzazione e gli elementi condizionali del contenuto vengono sostituiti con le informazioni corrispondenti per il profilo selezionato.
+  Il **[!UICONTROL Preview]** scheda secondaria consente di visualizzare il rendering di ciascun contenuto per un destinatario. I campi di personalizzazione e gli elementi condizionali del contenuto vengono sostituiti con le informazioni corrispondenti per il profilo selezionato.
 
-   I pulsanti della barra degli strumenti consentono di accedere alle azioni standard e ai parametri di formattazione per la pagina HTML.
+  I pulsanti della barra degli strumenti consentono di accedere alle azioni standard e ai parametri di formattazione per la pagina HTML.
 
-   ![](assets/s_ncs_user_wizard_email01_138.png)
+  ![](assets/s_ncs_user_wizard_email01_138.png)
 
-   È possibile inserire immagini nei messaggi da un file locale o da una libreria di immagini in Adobe Campaign. A questo scopo, fai clic su **[!UICONTROL Image]** e seleziona l’opzione appropriata.
+  È possibile inserire immagini nei messaggi da un file locale o da una libreria di immagini in Adobe Campaign. A questo scopo, fai clic su **[!UICONTROL Image]** e seleziona l’opzione appropriata.
 
-   ![](assets/s_ncs_user_wizard_email01_18.png)
+  ![](assets/s_ncs_user_wizard_email01_18.png)
 
-   Le immagini della libreria sono accessibili tramite **[!UICONTROL Resources>Online>Public resources]** nella struttura ad albero delle cartelle. Consulta anche [Aggiunta di immagini](#adding-images).
+  Le immagini della libreria sono accessibili tramite **[!UICONTROL Resources>Online>Public resources]** nella struttura ad albero delle cartelle. Consulta anche [Aggiunta di immagini](#adding-images).
 
-   L’ultimo pulsante nella barra degli strumenti consente di inserire campi di personalizzazione.
+  L’ultimo pulsante nella barra degli strumenti consente di inserire campi di personalizzazione.
 
-   >[!NOTE]
-   >
-   >L’utilizzo dei campi di personalizzazione è presentato in [Informazioni sulla personalizzazione](about-personalization.md).
+  >[!NOTE]
+  >
+  >L’utilizzo dei campi di personalizzazione è presentato in [Informazioni sulla personalizzazione](about-personalization.md).
 
-   Le schede nella parte inferiore della pagina ti consentono di visualizzare il codice HTML della pagina in fase di creazione e il rendering del messaggio con la relativa personalizzazione. Per avviare la visualizzazione, fai clic su **[!UICONTROL Preview]** e selezionare un destinatario utilizzando **[!UICONTROL Test personalization]** nella barra degli strumenti. Puoi selezionare un destinatario dalle destinazioni definite o scegliere un altro destinatario.
+  Le schede nella parte inferiore della pagina ti consentono di visualizzare il codice HTML della pagina in fase di creazione e il rendering del messaggio con la relativa personalizzazione. Per avviare la visualizzazione, fai clic su **[!UICONTROL Preview]** e selezionare un destinatario utilizzando **[!UICONTROL Test personalization]** nella barra degli strumenti. Puoi selezionare un destinatario dalle destinazioni definite o scegliere un altro destinatario.
 
-   ![](assets/s_ncs_user_wizard_email01_139.png)
+  ![](assets/s_ncs_user_wizard_email01_139.png)
 
-   Puoi convalidare il messaggio HTML. Puoi anche visualizzare il contenuto dell’intestazione dell’e-mail.
+  Puoi convalidare il messaggio HTML. Puoi anche visualizzare il contenuto dell’intestazione dell’e-mail.
 
-   ![](assets/s_ncs_user_wizard_email01_140.png)
+  ![](assets/s_ncs_user_wizard_email01_140.png)
 
 * Per importare un contenuto di testo, utilizzare **[!UICONTROL Open]** o il pulsante **[!UICONTROL Text Content]** per immettere il contenuto del messaggio visualizzato in formato testo. Utilizza i pulsanti della barra degli strumenti per accedere alle azioni sul contenuto. L’ultimo pulsante ti consente di inserire campi di personalizzazione.
 
-   ![](assets/s_ncs_user_wizard_email01_141.png)
+  ![](assets/s_ncs_user_wizard_email01_141.png)
 
-   Per quanto riguarda il formato HTML, fare clic su **[!UICONTROL Preview]** nella parte inferiore della pagina per visualizzare il rendering del messaggio con la relativa personalizzazione.
+  Per quanto riguarda il formato HTML, fare clic su **[!UICONTROL Preview]** nella parte inferiore della pagina per visualizzare il rendering del messaggio con la relativa personalizzazione.
 
-   ![](assets/s_ncs_user_wizard_email01_142.png)
+  ![](assets/s_ncs_user_wizard_email01_142.png)
 
 
 ## Definire il contenuto interattivo {#amp-for-email-format}
@@ -118,7 +115,7 @@ Adobe Campaign consente di provare il nuovo [AMP per e-mail](https://amp.dev/abo
 
 Per ulteriori informazioni, consulta [questa sezione](defining-interactive-content.md).
 
-## Utilizzo della gestione dei contenuti {#using-content-management}
+## Utilizza gestione contenuti {#using-content-management}
 
 Puoi definire il contenuto della consegna utilizzando i moduli di gestione del contenuto, direttamente nella procedura guidata di consegna. A questo scopo, devi fare riferimento al modello di pubblicazione del content management da utilizzare, nel **[!UICONTROL Advanced]** delle proprietà di consegna.
 
@@ -132,7 +129,7 @@ Una scheda aggiuntiva consente di immettere contenuto che verrà automaticamente
 >
 >Per ulteriori informazioni sulla gestione dei contenuti in Adobe Campaign, consulta [questa sezione](about-content-management.md).
 
-## Inserimento di emoticon {#inserting-emoticons}
+## Inserisci emoticon {#inserting-emoticons}
 
 Puoi inserire emoticon nel contenuto delle e-mail.
 
@@ -145,22 +142,29 @@ Puoi inserire emoticon nel contenuto delle e-mail.
 
 Per personalizzare l’elenco delle emoticon, consulta questa [pagina](customizing-emoticon-list.md).
 
-## Aggiunta di immagini {#adding-images}
+## Aggiungi immagini {#adding-images}
 
 Le consegne e-mail in formato HTML possono contenere immagini. Dalla procedura guidata di consegna, puoi importare una pagina di HTML contenente immagini o inserirle direttamente utilizzando l’editor di HTML tramite **[!UICONTROL Image]** icona.
+
+
+### Guardrail {#img-guardrails}
+
+Per evitare problemi di prestazioni, per impostazione predefinita le immagini incluse nelle e-mail non devono superare i 100 MB. Questo limite può essere configurato dal `NmsDelivery_MaxDownloadedImageSize` opzione.
+
+Ulteriori informazioni in [elenco delle opzioni di Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+
+### Tipi di immagini {#img-types}
 
 Le immagini possono essere:
 
 * Un&#39;immagine locale o un&#39;immagine denominata da un server
 * Immagine memorizzata nella libreria delle risorse pubbliche di Adobe Campaign
 
-   Le risorse pubbliche sono accessibili tramite **[!UICONTROL Resources > Online]** nodo della gerarchia di Adobe Campaign. Sono raggruppati in una libreria e possono essere inclusi nei messaggi e-mail, ma possono anche essere utilizzati per campagne o attività o per la gestione del contenuto.
+  Le risorse pubbliche sono accessibili tramite **[!UICONTROL Resources > Online]** nodo della gerarchia di Adobe Campaign. Sono raggruppati in una libreria e possono essere inclusi nei messaggi e-mail, ma possono anche essere utilizzati per campagne o attività o per la gestione del contenuto.
 
 * Una risorsa condivisa con Adobe Experience Cloud. Fai riferimento a [questa sezione](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md).
 
->[!IMPORTANT]
->
->Per includere le immagini nei messaggi e-mail tramite la consegna guidata, l’istanza di Adobe Campaign deve essere configurata per abilitare la gestione delle risorse pubbliche. Questa procedura può essere eseguita dalla procedura guidata di distribuzione. Consulta la sezione [questa sezione](../../installation/using/deploying-an-instance.md) per ulteriori informazioni sulla configurazione.
+### Inserire e gestire le immagini {#manage-images}
 
 La consegna guidata consente di aggiungere al contenuto dei messaggi immagini locali, o immagini memorizzate nella libreria. A questo scopo, fai clic su **[!UICONTROL Image]** sulla barra degli strumenti del contenuto di HTML.
 
@@ -188,12 +192,10 @@ Quando apri contenuti HTML con immagini incluse nella procedura guidata di conse
 
 >[!IMPORTANT]
 >
->* I percorsi di accesso alle immagini vengono modificati durante il caricamento manuale o l’invio di messaggi.
+> Gli URL dell’immagine vengono modificati durante il caricamento manuale o l’invio di messaggi.
 > 
->* Per evitare problemi di prestazioni, se includi immagini scaricate al volo da un URL personalizzato come [allegato](attaching-files.md), per impostazione predefinita, ogni immagine non deve superare i 100.000 byte. Questa soglia consigliata può essere configurata da [elenco delle opzioni di Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
-
-**Caso d’uso: inviare un messaggio con immagini**
+### Caso d’uso: inviare un messaggio con immagini {#uc-images}
 
 Di seguito è riportato un esempio di consegna con quattro immagini:
 
@@ -253,23 +255,23 @@ Quindi configura i seguenti elementi in base alle tue esigenze:
 
    * Per il formato 1D, in Adobe Campaign sono disponibili i seguenti tipi: Codabar, Code 128, GS1-128 (precedentemente EAN-128), UPC-A, UPC-E, ISBN, EAN-8, Code39, Interleaved 2 of 5, POSTNET e Royal Mail (RM4SCC).
 
-      Esempio di codice a barre 1D:
+     Esempio di codice a barre 1D:
 
-      ![](assets/barcode_insert_08.png)
+     ![](assets/barcode_insert_08.png)
 
    * I tipi DataMatrix e PDF417 riguardano il formato 2D.
 
-      Esempio di codice a barre 2D:
+     Esempio di codice a barre 2D:
 
-      ![](assets/barcode_insert_09.png)
+     ![](assets/barcode_insert_09.png)
 
    * Per inserire un codice QR, selezionare questo tipo e immettere il tasso di correzione dell&#39;errore da applicare. Questo tasso definisce la quantità di informazioni ripetute e la tolleranza al deterioramento.
 
-      ![](assets/barcode_insert_06.png)
+     ![](assets/barcode_insert_06.png)
 
-      Esempio di codice QR:
+     Esempio di codice QR:
 
-      ![](assets/barcode_insert_12.png)
+     ![](assets/barcode_insert_12.png)
 
 1. Immetti la dimensione del codice a barre che desideri inserire nell’e-mail: la configurazione della scala ti consente di aumentare o ridurre la dimensione del codice a barre, da x1 a x10.
 1. Il **[!UICONTROL Value]** consente di definire il valore del codice a barre. Un valore può corrispondere a un’offerta speciale e può essere la funzione di un criterio, può essere il valore di un campo di database collegato ai clienti.

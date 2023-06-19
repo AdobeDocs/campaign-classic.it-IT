@@ -5,10 +5,10 @@ description: Scopri come inviare e-mail transazionali con allegati singoli e/o p
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Transactional Messaging
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 9e1d49cd1ae89a3bdf42febd48c5a340fe7ec674
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 5%
+source-wordcount: '651'
+ht-degree: 4%
 
 ---
 
@@ -38,11 +38,13 @@ In questo scenario, gli allegati non vengono precreati, ma aggiunti al volo alle
 * Se l&#39;allegato è associato a una transazione (come nell&#39;esempio descritto in precedenza), può contenere dati dinamici generati durante il processo del cliente.
 * Allegando i file PDF si ottimizza la sicurezza in quanto è possibile crittografarli e inviarli tramite HTTPS.
 
->[!NOTE]
->
->Per evitare problemi di prestazioni, se includi come allegato immagini scaricate al volo da un URL personalizzato, per impostazione predefinita ogni immagine non deve superare i 100.000 byte. Questa soglia consigliata può essere configurata da [elenco delle opzioni di Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+## Recommendations e guardrail {#important-notes}
 
-## Raccomandazioni {#important-notes}
+Per evitare problemi di prestazioni, per impostazione predefinita le immagini incluse nelle e-mail non devono superare i 100 MB. Questo limite può essere configurato dal `NmsDelivery_MaxDownloadedImageSize` opzione.
+
+L&#39;Adobe consiglia inoltre di limitare le dimensioni e il numero di file allegati. Per impostazione predefinita, è possibile aggiungere un solo file come allegato a un messaggio e-mail. Questa soglia può essere configurata dal `NmsDelivery_MaxRecommendedAttachments` opzione.
+
+Ulteriori informazioni in [elenco delle opzioni di Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 Prima di implementare questo scenario, leggi attentamente le linee guida seguenti:
 
