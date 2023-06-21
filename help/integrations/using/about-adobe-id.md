@@ -8,9 +8,9 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 403d0b7df74b2c958bea9a2d718a15f597ca0d9c
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '196'
 ht-degree: 24%
 
 ---
@@ -35,12 +35,16 @@ Gli utenti di Campaign possono connettersi alla console Adobe Campaign utilizzan
 >
 > * [Campagna [!DNL Gold Standard] 11](../../rn/using/gold-standard.md)
 > * [Campaign 21.1.4](../../rn/using/latest-release.md)
-> * [Campaign 20.2.5](../../rn/using/release--2020.md#release-20-2-5-build-9188)
-> * [Campaign 20.1.4](../../rn/using/release--2020.md#release-20-1-4-build-9126)
-> * [Campaign 19.2.4](../../rn/using/release--2019.md#release-19-2-4-build-9082)
-> * [Campaign 19.1.8](../../rn/using/release--2019.md#release-19-1-8-build-9039)
+
+e inoltre:
+
+> * Campaign 20.2.5
+> * Campaign 20.1.4
+> * Campaign 19.2.4
+> * Campaign 19.1.8
 >
 > [!DNL :bulb:] [Ulteriori informazioni sugli aggiornamenti IMS](../../technotes/using/ims-updates.md)
+>
 
 ## Altre risorse
 

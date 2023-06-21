@@ -6,10 +6,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 hide: true
 hidefromtoc: true
 exl-id: e7d4331b-7149-4768-8e46-2e2911319074
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 403d0b7df74b2c958bea9a2d718a15f597ca0d9c
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 36%
+source-wordcount: '351'
+ht-degree: 35%
 
 ---
 
@@ -31,11 +31,11 @@ Se l’ambiente è in esecuzione su una delle versioni elencate di seguito, può
 
 * Gold Standard da 8 a 11. [Ulteriori informazioni](../../rn/using/gold-standard.md#gs-8)
 * Campaign da 21.1.1 (build 9277) a 21.1.2 (build 9282). [Ulteriori informazioni](../../rn/using/latest-release.md)
-* Da Campaign 20.3.1 (build 9228) a 20.3.3 (build 9234). [Ulteriori informazioni](../../rn/using/release--2020.md#release-20-3)
-* Campaign versioni da 20.2.1 (build 9178) a 20.2.4 (build 9187). [Ulteriori informazioni](../../rn/using/release--2020.md#release-20-2)
-* Da Campaign 20.1.1 (build 9122) a 21.1.3 (build 9124). [Ulteriori informazioni](../../rn/using/release--2020.md#release-20-1)
-* Campaign dalle versioni 19.2.2 (build 9080) alla versione 19.2.3 (build 9081). [Ulteriori informazioni](../../rn/using/release--2019.md#release-19-2)
-* Campaign: versioni da 19.1.5 (build 9033) a 19.1.7 (build 9036). [Ulteriori informazioni](../../rn/using/release--2019.md#release-19-1)
+* Da Campaign 20.3.1 (build 9228) a 20.3.3 (build 9234).
+* Campaign versioni da 20.2.1 (build 9178) a 20.2.4 (build 9187).
+* Da Campaign 20.1.1 (build 9122) a 21.1.3 (build 9124).
+* Campaign dalle versioni 19.2.2 (build 9080) alla versione 19.2.3 (build 9081).
+* Campaign: versioni da 19.1.5 (build 9033) a 19.1.7 (build 9036).
 
 
 Scopri come controllare la versione [in questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
@@ -59,6 +59,7 @@ Effettua le seguenti operazioni:
 >[!NOTE]
 >
 >Il **config-`<instance>`.xml** il file sostituisce **serverConf.xml** impostazioni. Se il **signEmailLinks** è presente in  **config-`<instance>`.xml** (dove **istanza** è il nome dell’istanza), deve anche essere convertito in **false**.
+>
 
 **Quale sarà l’impatto dell&#39;aggiornamento?**
 
@@ -69,3 +70,4 @@ Al termine dell’aggiornamento, tutti i collegamenti torneranno a funzionare co
 >[!NOTE]
 >
 >Per qualsiasi domanda su queste modifiche, contatta [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>
