@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: 0bea34e2db2b54bdd2a6fed80b47d473c89f631e
+source-git-commit: 45bf9d76dc41fd8cecfaab3f258856861201db3f
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 3%
@@ -32,9 +32,9 @@ Rivedi i dettagli riportati di seguito per capire cosa è necessario per l’imp
 
 >[!CAUTION]
 >
->La console del client di Campaign e il server applicazioni di Campaign devono essere eseguiti **sulla stessa versione del prodotto**. Adobe consiglia inoltre vivamente di utilizzare **stessa build del prodotto**. Scopri come controllare le versioni client e server di Campaign in [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+>* La console del client di Campaign e il server applicazioni di Campaign devono essere eseguiti **sulla stessa versione del prodotto**. Adobe consiglia inoltre vivamente di utilizzare **stessa build del prodotto**. Scopri come controllare le versioni client e server di Campaign in [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 >
->L&#39;accesso alla cartella di installazione in cui è installata la console deve essere limitato solo all&#39;utente desiderato, assicurandosi che le autorizzazioni di scrittura siano limitate di conseguenza.
+>* L&#39;accesso alla cartella di installazione in cui è installata la console deve essere limitato solo all&#39;utente desiderato, assicurandosi che le autorizzazioni di scrittura siano limitate di conseguenza.
 
 
 
