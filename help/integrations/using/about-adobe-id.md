@@ -8,7 +8,7 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: 403d0b7df74b2c958bea9a2d718a15f597ca0d9c
+source-git-commit: 4751de9b1feb4165b86ac3ea57a52bb4b687b6c7
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 24%
@@ -16,8 +16,6 @@ ht-degree: 24%
 ---
 
 # Informazioni su Adobe ID{#about-adobe-id}
-
-
 
 Adobe Identity Management System (IMS) consente agli amministratori di creare e gestire l’accesso degli utenti ad applicazioni e servizi. Per ulteriori informazioni sui diversi tipi di ID di Adobe, consulta [questa pagina](https://helpx.adobe.com/enterprise/using/identity.html).
 
@@ -31,20 +29,22 @@ Gli utenti di Campaign possono connettersi alla console Adobe Campaign utilizzan
 
 >[!IMPORTANT]
 >
->Se ti connetti a Campaign tramite Adobe Identity Service (IMS), devi effettuare l’aggiornamento alla build più recente per poter connettersi a Campaign dopo **30 giugno 2021**. Questo aggiornamento è obbligatorio sia per il server Campaign che per la console client. A seconda della versione corrente, devi eseguire l’aggiornamento a una delle seguenti versioni:
+>Se ti connetti a Campaign tramite Adobe Identity Service (IMS), devi effettuare l’aggiornamento alla build più recente per poter connettersi a Campaign dopo **30 giugno 2021**. Questo aggiornamento è obbligatorio sia per il server Campaign che per la console client.
+>
+>A seconda della versione corrente, devi eseguire l’aggiornamento a una delle seguenti versioni:
 >
 > * [Campagna [!DNL Gold Standard] 11](../../rn/using/gold-standard.md)
 > * [Campaign 21.1.4](../../rn/using/latest-release.md)
-
-e inoltre:
-
-> * Campaign 20.2.5
-> * Campaign 20.1.4
-> * Campaign 19.2.4
-> * Campaign 19.1.8
 >
-> [!DNL :bulb:] [Ulteriori informazioni sugli aggiornamenti IMS](../../technotes/using/ims-updates.md)
+>e inoltre:
 >
+>* Campaign 20.2.5
+>* Campaign 20.1.4
+>* Campaign 19.2.4
+>* Campaign 19.1.8
+>
+>[Ulteriori informazioni sugli aggiornamenti IMS](../../technotes/using/ims-updates.md)
+
 
 ## Altre risorse
 
