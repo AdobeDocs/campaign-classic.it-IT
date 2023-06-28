@@ -5,16 +5,18 @@ description: Ulteriori informazioni sulle versioni di Campaign Classic 2022
 feature: Overview
 role: User
 level: Beginner
-source-git-commit: 88ee8d1575f6397a35fb6f7412cd08119a75c131
+source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
 workflow-type: tm+mt
-source-wordcount: '1995'
+source-wordcount: '2025'
 ht-degree: 100%
 
 ---
 
 # Versioni 2022{#release-2022}
 
-## ![](assets/do-not-localize/orange_2.png) Versione 7.3.1 - Build 9352 {#release-7-3-1}
+## Versione 7.3.1 - Build 9352 {#release-7-3-1}
+
+[!BADGE Obsoleta]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Obsoleta"}
 
 _1 luglio 2022_
 
@@ -82,7 +84,9 @@ Consulta la [Matrice di compatibilità di Campaign](../../rn/using/compatibility
 * È stato risolto un problema che poteva impedire il caricamento di un’immagine in modalità blocco da un server esterno durante la preparazione dei messaggi. (NEO-40307)
 * È stato risolto un problema che poteva causare l’invio della consegna a un numero di destinatari maggiore del previsto. (NEO-45108)
 
-## ![](assets/do-not-localize/green_2.png) Versione 7.2.2 - Build 9349 {#release-7-2-2}
+## Versione 7.2.2 - Build 9349 {#release-7-2-2}
+
+[!BADGE Obsoleta]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Obsoleta"}
 
 _1° marzo 2022_
 
@@ -104,7 +108,9 @@ _1° marzo 2022_
 * È stato risolto un problema che causava un errore durante l’aggiornamento del flusso di lavoro di recapito messaggi in caso di più di 1000 registri broadlog contemporaneamente. (NEO-40276)
 * È stato risolto un problema che impediva l&#39;aggiornamento automatico degli indicatori di consegna dei rapporti di apertura e di clic. (NEO-43253)
 
-## ![](assets/do-not-localize/limited_2.png) Versione 7.2.1 - Build 9346 {#release-7-2-1}
+## Versione 7.2.1 - Build 9346 {#release-7-2-1}
+
+[!BADGE Obsoleta]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Obsoleta"}
 
 _10 gennaio 2022_
 
