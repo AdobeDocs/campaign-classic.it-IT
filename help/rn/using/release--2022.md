@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2025'
 ht-degree: 100%
 
@@ -88,7 +88,7 @@ Consulta la [Matrice di compatibilità di Campaign](../../rn/using/compatibility
 
 [!BADGE Obsoleta]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Obsoleta"}
 
-_1° marzo 2022_
+_1 marzo 2022_
 
 >[!NOTE]
 >
