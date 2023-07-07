@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '932'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -27,9 +27,9 @@ A ogni nuova versione è associato uno stato identificato da un colore nelle [No
 
 | Stato | Descrizione |
 |---|---|
-| [!BADGE Disponibilità generale]{type=Positive} | Build stabile più recente, convalidata in produzione e raccomandata da Adobe. |
-| [!BADGE Disponibilità limitata]{type=Neutral} | solo per implementazione su richiesta. |
-| [!BADGE Candidata al rilascio]{type=Informative} | Build più recente con nuove funzionalità. |
+| [!BADGE Disponibilità generale]{type=Positive} | La più recente build stabile, convalidata in produzione e raccomandata da Adobe. |
+| [!BADGE Disponibilità limitata]{type=Neutral} | Solo per implementazione su richiesta. |
+| [!BADGE Candidata al rilascio]{type=Informative} | Build stabile più recente con nuove funzionalità. |
 | [!BADGE Non più disponibile]{type=Caution} | Nessuna distribuzione. Nessun bug fix. Si consiglia di eseguire l’aggiornamento a una versione più recente. |
 | [!BADGE Obsoleta]{type=negative} | Nessuna distribuzione. Nessun bug fix. Le implementazioni esistenti devono essere aggiornate. |
 
