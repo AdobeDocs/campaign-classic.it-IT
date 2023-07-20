@@ -2,14 +2,14 @@
 product: campaign
 title: Configurazione delle opzioni di Campaign
 description: Scopri come configurare le opzioni di Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
+source-git-commit: 942d44104ae56e9334f42f10751979ce4f4a714d
 workflow-type: tm+mt
-source-wordcount: '3993'
+source-wordcount: '4011'
 ht-degree: 6%
 
 ---
@@ -57,7 +57,7 @@ Il **[!UICONTROL Administration / Platform / Options]** consente di configurare 
   </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> Consente all’operatore responsabile della consegna di confermare l’invio, se un operatore o un gruppo di operatori specifico è designato per avviare una consegna nelle proprietà della consegna.</p><p> A questo scopo, attiva l’opzione immettendo "1" come valore. Per disattivare questa opzione, immettere "0".</p><p> Il processo di conferma dell’invio funzionerà quindi come predefinito: solo l’operatore o il gruppo di operatori designati per l’invio nelle proprietà di consegna (o un amministratore) sarà in grado di confermare ed eseguire l’invio. Vedi <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">questa sezione</a>.</p> </td> 
+   <td><p> Consente all’operatore responsabile della consegna di confermare l’invio, se un operatore o un gruppo di operatori specifico è designato per avviare una consegna nelle proprietà della consegna.</p><p> A questo scopo, attiva l’opzione immettendo "1" come valore. Per disattivare questa opzione, immettere "0".</p><p> Il processo di conferma dell’invio funzionerà quindi come predefinito: solo l’operatore o il gruppo di operatori designati per l’invio nelle proprietà di consegna (o un amministratore) sarà in grado di confermare ed eseguire l’invio. Consulta <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">questa sezione</a>.</p> </td> 
    <tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
    <td> Adobe Campaign utilizza una variabile globale "Nms_DefaultRcpSchema" per la finestra di dialogo con il database dei destinatari predefinito (nms:recipient).<br /> Il valore dell’opzione deve corrispondere al nome dello schema che corrisponde alla tabella dei destinatari esterna.<br /> </td> 
@@ -72,11 +72,11 @@ Il **[!UICONTROL Administration / Platform / Options]** consente di configurare 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_LogsPerTransac</span> <br /> </td> 
-   <td> Numero di BroadLogs creati per una consegna contemporaneamente.<br /> </td> 
+   <td> Dimensione minima del batch (numero di righe) per l’inserimento di broadLogs durante la preparazione di una consegna.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MaxDelayPerTransac</span> <br /> </td> 
-   <td> Inserimento (nella tabella) di registri (broadLogs) per transazioni: numero di righe da elaborare per batch.<br /> </td> 
+   <td> Soglia di durata del batch (numero di millisecondi) sotto la quale la dimensione del batch per l’inserimento di broadLogs viene raddoppiata durante la preparazione di una consegna.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MidAnalyzeBatchSize</span> <br /> </td> 
@@ -287,11 +287,11 @@ Il **[!UICONTROL Administration / Platform / Options]** consente di configurare 
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">NcmRessourcesDir</span> <br /> </td> 
-   <td> Posizione delle risorse da pubblicare nella console client di Adobe Campaign. Vedi <a href="../../delivery/using/formatting.md#image-referencing">questa sezione</a>.<br /> </td> 
+   <td> Posizione delle risorse da pubblicare nella console client di Adobe Campaign. Consulta <a href="../../delivery/using/formatting.md#image-referencing">questa sezione</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NcmRessourcesDirPreview</span> <br /> </td> 
-   <td> Posizione delle risorse da visualizzare in anteprima nella console client di Adobe Campaign. Vedi <a href="../../delivery/using/formatting.md#image-referencing">questa sezione</a>.<br /> </td> 
+   <td> Posizione delle risorse da visualizzare in anteprima nella console client di Adobe Campaign. Consulta <a href="../../delivery/using/formatting.md#image-referencing">questa sezione</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_DefaultIgnoredImage</span> <br /> </td> 
