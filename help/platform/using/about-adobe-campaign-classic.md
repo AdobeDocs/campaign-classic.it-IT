@@ -2,21 +2,19 @@
 product: campaign
 title: Informazioni su Adobe Campaign Classic
 description: Scopri le funzionalità principali, l’interfaccia utente e le linee guida globali
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: be57635a6165790b8c8964d106ed0a3cb76c63af
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '930'
 ht-degree: 92%
 
 ---
 
 # Introduzione a Campaign Classic{#about-adobe-campaign-classic}
-
-
 
 Per offrire un elevato grado di coinvolgimento dei clienti e ottime esperienze, i brand devono creare customer journey coerenti ad ogni punto di contatto. Gli esperti di marketing possono ora progettare, pianificare, eseguire, gestire e ottimizzare in modo efficiente campagne di marketing cross-channel, in modo tale da offrire un ritorno elevato sull’investimento marketing e promuovere la fidelizzazione.
 
@@ -27,7 +25,6 @@ Per offrire un elevato grado di coinvolgimento dei clienti e ottime esperienze, 
 >* I materiali della Guida di questa raccolta sono applicabili a Campaign Classic v7 nei suoi [build più recente](../../rn/using/latest-release.md). Un badge specifico è disponibile quando una sezione si applica anche a Campaign v8.
 >
 >* È disponibile la documentazione di Adobe Campaign v8 [qui](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=it).
-
 
 ![](assets/do-not-localize/how-to-video.png) [Scopri le funzionalità principali nel video](#video)
 

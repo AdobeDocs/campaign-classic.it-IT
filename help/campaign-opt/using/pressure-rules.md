@@ -2,12 +2,12 @@
 product: campaign
 title: Regole di pressione
 description: Regole di pressione
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Fatigue Management, Typology Rules
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: be57635a6165790b8c8964d106ed0a3cb76c63af
 workflow-type: tm+mt
-source-wordcount: '3285'
+source-wordcount: '3266'
 ht-degree: 7%
 
 ---
@@ -62,7 +62,6 @@ Per creare e configurare una regola di tipologia **[!UICONTROL Pressure]**, atti
    >
    >Le consegne programmate vengono prese in considerazione solo se **[!UICONTROL Take the deliveries into account in the provisional calendar]** è selezionata. Per ulteriori informazioni, consulta [Impostazione del periodo](#setting-the-period).
    >
-   >Questa opzione non è disponibile in Campaign v8.
 
 1. Definisci il metodo di calcolo del numero massimo di messaggi.
 
@@ -87,7 +86,8 @@ Per creare e configurare una regola di tipologia **[!UICONTROL Pressure]**, atti
    * La sezione superiore di questa scheda ti consente di limitare i destinatari interessati.
    * La sezione inferiore di questa scheda ti consente di filtrare i messaggi da conteggiare.
 
-      Nell’esempio seguente, solo i destinatari salvati nel **Nuovi contatti** vengono prese in considerazione e le consegne che iniziano con **Newsletter** sono preoccupati.
+     Nell’esempio seguente, solo i destinatari salvati nel **Nuovi contatti** vengono prese in considerazione e le consegne che iniziano con **Newsletter** sono preoccupati.
+
    ![](assets/campaign_opt_create_a_rule_05.png)
 
 1. Il **[!UICONTROL Typologies]** Questa scheda ti consente di visualizzare le tipologie di campagne che applicano questa regola o di collegare la regola a una o più tipologie esistenti. Per ulteriori informazioni, consulta [Applicazione delle tipologie](about-campaign-typologies.md#applying-typologies).
@@ -157,9 +157,6 @@ Per limitare le consegne prese in considerazione a un periodo di 2 settimane, pu
 o
 
 1. Invio **7d** nel **[!UICONTROL Period considered]** e controllare il **[!UICONTROL Take the deliveries into account in the provisional calendar]** opzione: nel calcolo verranno prese in considerazione le consegne inviate fino a 7 giorni prima della data di consegna e pianificate fino a 7 giorni dopo la data di consegna in cui viene applicata la regola.
-
-   >[!AVAILABILITY]
-   >Questo metodo non è disponibile in Campaign v8.
 
 La data di inizio del periodo dipende dalla configurazione del database.
 
@@ -276,15 +273,15 @@ Durante l’analisi della consegna, i destinatari della consegna sono esclusi da
 
 * Visualizzare il risultato dell&#39;analisi:
 
-   ![](assets/campaign_opt_pressure_sample_1_8.png)
+  ![](assets/campaign_opt_pressure_sample_1_8.png)
 
 * Modifica la consegna e fai clic su **[!UICONTROL Delivery]** e il **[!UICONTROL Exclusions]** scheda secondaria:
 
-   ![](assets/campaign_opt_pressure_sample_1_9.png)
+  ![](assets/campaign_opt_pressure_sample_1_9.png)
 
 * Fai clic su **[!UICONTROL Audit]** , quindi la scheda **[!UICONTROL Causes of exclusions]** scheda secondaria per visualizzare il numero di esclusioni e le regole di tipologia applicate:
 
-   ![](assets/campaign_opt_pressure_sample_1_10.png)
+  ![](assets/campaign_opt_pressure_sample_1_10.png)
 
 ### Calcolare il peso della consegna in base al comportamento {#calculating-the-delivery-weight-based-on-behavior}
 
@@ -333,9 +330,6 @@ Innanzitutto, configura la regola di pressione.
    ![](assets/campaign_opt_pressure_example_1.png)
 
    Le consegne inviate fino a 7 giorni prima della data di consegna e pianificate fino a 7 giorni dopo la data di consegna verranno prese in considerazione nel calcolo. Per ulteriori informazioni, consulta [Imposta il periodo](#setting-the-period).
-
-   >[!AVAILABILITY]
-   >Le consegne pianificate non possono essere prese in considerazione in Campaign v8.
 
 1. In **[!UICONTROL Typologies]** , collega la regola a una tipologia di campagna.
 1. Salva le modifiche.
