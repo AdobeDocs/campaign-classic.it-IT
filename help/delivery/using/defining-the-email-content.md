@@ -2,13 +2,13 @@
 product: campaign
 title: Definire il contenuto dell’e-mail in Adobe Campaign Classic
 description: Scopri come definire il contenuto delle e-mail quando utilizzi Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Email Design
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 64a94982ea1eebc30c652e0025eb0aaa0eab1ce9
+source-git-commit: 728fc285fbd562003199c53339899bbc4441bfc6
 workflow-type: tm+mt
-source-wordcount: '1943'
+source-wordcount: '1955'
 ht-degree: 1%
 
 ---
@@ -149,7 +149,7 @@ Le consegne e-mail in formato HTML possono contenere immagini. Dalla procedura g
 
 ### Guardrail {#img-guardrails}
 
-Per evitare problemi di prestazioni, le immagini incluse nelle e-mail non possono superare i 100 MB. Questo limite, impostato per impostazione predefinita, può essere modificato dal `NmsDelivery_MaxDownloadedImageSize` opzione. Tuttavia, Adobe consiglia vivamente di evitare le immagini di grandi dimensioni nelle consegne e-mail.
+Per evitare problemi di prestazioni, le immagini incluse nelle e-mail non possono superare i 100 KB. Questo limite, impostato per impostazione predefinita, può essere modificato dal `NmsDelivery_MaxDownloadedImageSize` opzione. Tuttavia, Adobe consiglia vivamente di evitare le immagini di grandi dimensioni nelle consegne e-mail.
 
 Ulteriori informazioni in [elenco delle opzioni di Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
@@ -211,7 +211,7 @@ Per ogni immagine rilevata, puoi visualizzarne lo stato:
 
 * Se un&#39;immagine viene archiviata localmente o si trova in un altro server, anche se questo server è visibile dall&#39;esterno (ad esempio in un sito Internet), verrà rilevato come **[!UICONTROL Not yet online]**.
 * Le immagini vengono rilevate come **[!UICONTROL Already online]** se sono stati caricati in precedenza durante la creazione di un’altra consegna.
-* Nella procedura guidata di distribuzione, puoi definire URL per i quali non è abilitato il rilevamento delle immagini: il caricamento di queste immagini sarà **[!UICONTROL Skipped]**.
+* Nella procedura guidata di distribuzione puoi definire URL per i quali non è abilitato il rilevamento delle immagini: il caricamento di queste immagini sarà **[!UICONTROL Skipped]**.
 
 >[!NOTE]
 >
