@@ -2,14 +2,15 @@
 product: campaign
 title: Implementazione aziendale
 description: Implementazione aziendale
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Architecture, Deployment
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1220'
 ht-degree: 3%
 
 ---
@@ -120,19 +121,19 @@ I passaggi per l&#39;installazione del primo server sono i seguenti:
 
    * Crea l’istanza tramite la console:
 
-      ![](assets/install_create_new_connexion.png)
+     ![](assets/install_create_new_connexion.png)
 
-      Per ulteriori informazioni, consulta [Creazione di un’istanza e accesso](../../installation/using/creating-an-instance-and-logging-on.md).
+     Per ulteriori informazioni, consulta [Creazione di un’istanza e accesso](../../installation/using/creating-an-instance-and-logging-on.md).
 
-      o
+     o
 
    * Crea l’istanza utilizzando le righe di comando:
 
-      ```
-      nlserver config -addinstance:demo/tracking.campaign.net*,console.campaign.net*
-      ```
+     ```
+     nlserver config -addinstance:demo/tracking.campaign.net*,console.campaign.net*
+     ```
 
-      Per ulteriori informazioni, consulta [Creazione di un’istanza](../../installation/using/command-lines.md#creating-an-instance).
+     Per ulteriori informazioni, consulta [Creazione di un’istanza](../../installation/using/command-lines.md#creating-an-instance).
 
 1. Modifica il **config-demo.xml** file (creato tramite il comando precedente e posizionato accanto al file **config-default.xml** file), verificare che il **mta** (consegna), **wfserver** (workflow), **inMail** (messaggi di rimbalzo) e **stat** (statistiche) i processi sono abilitati, quindi configura l’indirizzo del **app** server di statistiche:
 

@@ -2,10 +2,11 @@
 product: campaign
 title: Glossario di Adobe Campaign
 description: Glossario di Adobe Campaign
+feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '5974'
 ht-degree: 4%
@@ -277,7 +278,7 @@ Ulteriori informazioni su [Distribuzione dei valori](../../platform/using/defini
 +++**Delega del dominio**
 
 La configurazione del sottodominio ti consente di configurare una sottosezione del dominio (tecnicamente una &quot;zona DNS&quot;) per l’utilizzo con Adobe Campaign.
-La delega del dominio consente agli Adobi di controllare e mantenere tutti gli aspetti del DNS necessari per la distribuzione, il rendering e il tracciamento delle campagne e-mail.
+Adobe La delega del dominio consente di controllare e mantenere tutti gli aspetti del DNS necessari per la distribuzione, il rendering e il tracciamento delle campagne e-mail.
 
 Ulteriori informazioni su [Delega del dominio](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=it)
 +++
@@ -333,7 +334,7 @@ An engine call is a server call that starts real-time processing on server side 
 +++
 -->
 
-+++**Attività di arricchimento**
++++**Attività Arricchimento**
 
 L’attività Enrichment è un’attività avanzata del flusso di lavoro che consente agli operatori di arricchire i dati della tabella di lavoro generati che verranno elaborati nel flusso di lavoro. Questa attività viene generalmente utilizzata dopo attività di targeting o dopo l’importazione di un file e prima di attività che utilizzano dati oggetto di targeting. Gli arricchimenti possono trasformare i dati di transizione in entrata e configurare l’attività in modo da completare la transizione in uscita con dati migliorati. Consente all’operatore di combinare dati da più set di dati o di creare collegamenti a una risorsa temporanea.
 
@@ -760,7 +761,7 @@ Ulteriori informazioni su [Monitoraggio delle prestazioni](../../production/usin
 
 +++**Blocchi di personalizzazione**
 
-Adobe Campaign offre blocchi di personalizzazione incorporati che puoi inserire nelle consegne. Sono dinamici, personalizzati e contengono un rendering specifico. Ad esempio, puoi aggiungere un logo, un messaggio di saluto o un collegamento a una pagina speculare. Per impostazione predefinita, sono disponibili diversi blocchi di personalizzazione. Puoi anche definire blocchi di personalizzazione personalizzati che ti consentiranno di ottimizzare la personalizzazione della consegna. I dati effettivi vengono inseriti in ogni messaggio generato durante la fase di analisi della consegna.
+Adobe Campaign offre blocchi di personalizzazione incorporati che puoi inserire nelle consegne. Sono dinamici, personalizzati e contengono un rendering specifico. Ad esempio, puoi aggiungere un logo, un messaggio di auguri o un collegamento alla pagina mirror. Per impostazione predefinita, sono disponibili diversi blocchi di personalizzazione. Puoi anche definire blocchi di personalizzazione personalizzati che ti consentiranno di ottimizzare la personalizzazione della consegna. I dati effettivi vengono inseriti in ogni messaggio generato durante la fase di analisi della consegna.
 
 Ulteriori informazioni su [Blocchi di personalizzazione](../../delivery/using/personalization-blocks.md).
 +++
@@ -835,7 +836,7 @@ Ulteriori informazioni su [Risorse pubbliche](../../installation/using/deploying
 
 *Contesto: canale app mobile*
 
-Le notifiche push sono messaggi ricevuti dalle app mobili. Le notifiche push sono configurate per funzionare con Adobe Campaign includendo il codice SDK di Experience Platform nell’app mobile. Per il push, sono disponibili due canali di consegna: iOS e Android.
+Le notifiche push sono messaggi ricevuti dalle app mobili. Le notifiche push sono configurate per funzionare con Adobe Campaign includendo il codice SDK di Experienci Platform nell’app mobile. Per il push, sono disponibili due canali di consegna: iOS e Android.
 
 Ulteriori informazioni su [Push](../../delivery/using/about-mobile-app-channel.md).
 +++

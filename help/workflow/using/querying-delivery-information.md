@@ -2,12 +2,12 @@
 product: campaign
 title: Query delle informazioni di consegna
 description: Scopri come eseguire query sulle informazioni di consegna
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Query Editor
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
+feature: Query Editor, Workflows
 exl-id: b699b064-1287-41c9-8d94-1c1aa2c145ab
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1248'
 ht-degree: 1%
 
 ---
@@ -22,15 +22,15 @@ In questo esempio, stiamo cercando di recuperare il numero di clic per una conse
 
 * Quale tabella deve essere selezionata?
 
-   Tabella di tracciamento del registro dei destinatari (**[!UICONTROL nms:trackingLogRcp]**)
+  Tabella di tracciamento del registro dei destinatari (**[!UICONTROL nms:trackingLogRcp]**)
 
 * Campi da selezionare per le colonne di output?
 
-   Chiave primaria (con conteggio) e e-mail
+  Chiave primaria (con conteggio) e e-mail
 
 * Su quali criteri verranno filtrate le informazioni?
 
-   Un periodo specifico e un elemento dell’etichetta di consegna
+  Un periodo specifico e un elemento dell’etichetta di consegna
 
 Per eseguire questo esempio, attieniti alla seguente procedura:
 
@@ -44,19 +44,19 @@ Per eseguire questo esempio, attieniti alla seguente procedura:
 
    * Fai clic su **[!UICONTROL Add]** a destra del **[!UICONTROL Output columns]** campo. In **[!UICONTROL Formula type]** , selezionare la **[!UICONTROL Edit the formula using an expression]** e fai clic su **[!UICONTROL Next]**. In **[!UICONTROL Field to select]** finestra, fai clic su **[!UICONTROL Advanced selection]**.
 
-      ![](assets/query_editor_tracklog_06.png)
+     ![](assets/query_editor_tracklog_06.png)
 
    * In **[!UICONTROL Formula type]** eseguire un processo sulla funzione di aggregazione. Questo processo sarà un conteggio di chiavi primarie.
 
-      Seleziona **[!UICONTROL Process on an aggregate function]** nel **[!UICONTROL Aggregate]** e fai clic su **[!UICONTROL Count]**.
+     Seleziona **[!UICONTROL Process on an aggregate function]** nel **[!UICONTROL Aggregate]** e fai clic su **[!UICONTROL Count]**.
 
-      ![](assets/query_editor_nveau_18.png)
+     ![](assets/query_editor_nveau_18.png)
 
-      Fai clic su **[!UICONTROL Next]**.
+     Fai clic su **[!UICONTROL Next]**.
 
    * Seleziona la **[!UICONTROL Primary key (@id)]** campo. Il **[!UICONTROL count (primary key)]** colonna di output configurata.
 
-      ![](assets/query_editor_nveau_19.png)
+     ![](assets/query_editor_nveau_19.png)
 
 1. Selezionare l&#39;altro campo da visualizzare nella colonna di output. In **[!UICONTROL Available fields]** , aprire la **[!UICONTROL Recipient]** e scegli **[!UICONTROL Email]**. Controlla la **[!UICONTROL Group]** casella a **[!UICONTROL Yes]** per raggruppare i registri di tracciamento per indirizzo e-mail: questo gruppo collega ciascun registro al relativo destinatario.
 
@@ -72,39 +72,39 @@ Per eseguire questo esempio, attieniti alla seguente procedura:
 
    * Configura il filtro dei dati. A questo scopo, seleziona **[!UICONTROL Filter conditions]** quindi fai clic su **[!UICONTROL Next]**.
 
-      ![](assets/query_editor_nveau_22.png)
+     ![](assets/query_editor_nveau_22.png)
 
    * Recupera i registri di tracciamento in un determinato periodo per una consegna specifica. Sono necessarie tre condizioni di filtro: due condizioni di data per impostare il periodo di ricerca tra 2 settimane prima della data corrente e il giorno prima della data corrente; e un’altra condizione per limitare la ricerca a una consegna specifica.
 
-      In **[!UICONTROL Target element]** , configura la data a partire dalla quale i registri di tracciamento verranno presi in considerazione. Fai clic su **[!UICONTROL Add]**. Viene visualizzata una riga di condizione. Modifica il **[!UICONTROL Expression]** facendo clic sul pulsante **[!UICONTROL Edit expression]** funzione. In **[!UICONTROL Field to select]** finestra, scegli **[!UICONTROL Date (@logDate)]**.
+     In **[!UICONTROL Target element]** , configura la data a partire dalla quale i registri di tracciamento verranno presi in considerazione. Fai clic su **[!UICONTROL Add]**. Viene visualizzata una riga di condizione. Modifica il **[!UICONTROL Expression]** facendo clic sul pulsante **[!UICONTROL Edit expression]** funzione. In **[!UICONTROL Field to select]** finestra, scegli **[!UICONTROL Date (@logDate)]**.
 
-      ![](assets/query_editor_nveau_23.png)
+     ![](assets/query_editor_nveau_23.png)
 
-      Seleziona la **[!UICONTROL greater than]** operatore. In **[!UICONTROL Value]** , fare clic su **[!UICONTROL Edit expression]**, e nella **[!UICONTROL Formula type]** finestra, seleziona **[!UICONTROL Process on dates]**. Infine, in **[!UICONTROL Current date minus n days]**, immettere &quot;15&quot;.
+     Seleziona la **[!UICONTROL greater than]** operatore. In **[!UICONTROL Value]** , fare clic su **[!UICONTROL Edit expression]**, e nella **[!UICONTROL Formula type]** finestra, seleziona **[!UICONTROL Process on dates]**. Infine, in **[!UICONTROL Current date minus n days]**, immettere &quot;15&quot;.
 
-      Fai clic su **[!UICONTROL Finish]**.
+     Fai clic su **[!UICONTROL Finish]**.
 
-      ![](assets/query_editor_nveau_24.png)
+     ![](assets/query_editor_nveau_24.png)
 
    * Per selezionare la data di fine della ricerca nel registro di tracciamento, crea una seconda condizione facendo clic su **[!UICONTROL Add]**. In **[!UICONTROL Expression]** , scegli **[!UICONTROL Date (@logDate)]** di nuovo.
 
-      Seleziona la **[!UICONTROL less than]** operatore. In **[!UICONTROL Value]** , fare clic su **[!UICONTROL Edit expression]**. Per l’elaborazione della data, vai a **[!UICONTROL Formula type]** finestra, immettere &quot;1&quot; in **[!UICONTROL Current date minus n days]**.
+     Seleziona la **[!UICONTROL less than]** operatore. In **[!UICONTROL Value]** , fare clic su **[!UICONTROL Edit expression]**. Per l’elaborazione della data, vai a **[!UICONTROL Formula type]** finestra, immettere &quot;1&quot; in **[!UICONTROL Current date minus n days]**.
 
-      Fai clic su **[!UICONTROL Finish]**.
+     Fai clic su **[!UICONTROL Finish]**.
 
-      ![](assets/query_editor_nveau_65.png)
+     ![](assets/query_editor_nveau_65.png)
 
-      Ora vogliamo configurare la terza condizione di filtro, ovvero l’etichetta di consegna interessata dalla query.
+     Ora vogliamo configurare la terza condizione di filtro, ovvero l’etichetta di consegna interessata dalla query.
 
    * Fai clic su **[!UICONTROL Add]** per creare un&#39;altra condizione di filtro. In **[!UICONTROL Expression]** , fare clic su **[!UICONTROL Edit expression]**. In **[!UICONTROL Field to select]** finestra, scegli **[!UICONTROL Label]** nel **[!UICONTROL Delivery]** nodo.
 
-      Fai clic su **[!UICONTROL Finish]**.
+     Fai clic su **[!UICONTROL Finish]**.
 
-      ![](assets/query_editor_nveau_66.png)
+     ![](assets/query_editor_nveau_66.png)
 
-      Cerca una consegna contenente la parola &quot;vendite&quot;. Poiché non si ricorda l&#39;etichetta esatta, è possibile scegliere **[!UICONTROL contains]** e inserire &quot;sales&quot; in **[!UICONTROL Value]** colonna.
+     Cerca una consegna contenente la parola &quot;vendite&quot;. Poiché non si ricorda l&#39;etichetta esatta, è possibile scegliere **[!UICONTROL contains]** e inserire &quot;sales&quot; in **[!UICONTROL Value]** colonna.
 
-      ![](assets/query_editor_nveau_25.png)
+     ![](assets/query_editor_nveau_25.png)
 
 1. Clic **[!UICONTROL Next]** fino a quando non raggiungi il **[!UICONTROL Data preview]** window: non è necessaria alcuna formattazione qui.
 1. In **[!UICONTROL Data preview]** finestra, fai clic su **[!UICONTROL Start the preview of the data]** per visualizzare il numero di registri di tracciamento per ogni destinatario della consegna.
@@ -184,13 +184,13 @@ In un flusso di lavoro, il **[!UICONTROL Query]** e **[!UICONTROL Split]** Le ca
 
 * Scopo dell’esempio
 
-   In un flusso di lavoro di consegna sono disponibili diversi modi per dare seguito a una prima comunicazione e-mail. Questo tipo di operazione comporta l&#39;utilizzo di **[!UICONTROL Split]** casella.
+  In un flusso di lavoro di consegna sono disponibili diversi modi per dare seguito a una prima comunicazione e-mail. Questo tipo di operazione comporta l&#39;utilizzo di **[!UICONTROL Split]** casella.
 
 * Contesto
 
-   Viene inviata un’offerta di &quot;Sport estivi&quot;. Quattro giorni dopo la consegna, vengono inviate altre due consegne. Uno di questi è &quot;offerta di sport acquatici&quot;, l&#39;altro è un follow-up della prima consegna &quot;Offerta di sport estivi&quot;.
+  Viene inviata un’offerta di &quot;Sport estivi&quot;. Quattro giorni dopo la consegna, vengono inviate altre due consegne. Uno di questi è &quot;offerta di sport acquatici&quot;, l&#39;altro è un follow-up della prima consegna &quot;Offerta di sport estivi&quot;.
 
-   La consegna &quot;Offerta sport acquatici&quot; viene inviata ai destinatari che hanno fatto clic sul collegamento &quot;sport acquatici&quot; nella prima consegna. Questi clic mostrano che il destinatario è interessato all’argomento. Ha senso indirizzarli verso offerte simili. Tuttavia, i destinatari che non hanno fatto clic su nell’offerta &quot;Sport estivi&quot; riceveranno nuovamente lo stesso contenuto.
+  La consegna &quot;Offerta sport acquatici&quot; viene inviata ai destinatari che hanno fatto clic sul collegamento &quot;sport acquatici&quot; nella prima consegna. Questi clic mostrano che il destinatario è interessato all’argomento. Ha senso indirizzarli verso offerte simili. Tuttavia, i destinatari che non hanno fatto clic su nell’offerta &quot;Sport estivi&quot; riceveranno nuovamente lo stesso contenuto.
 
 I passaggi seguenti mostrano come configurare **[!UICONTROL Split]** integrando due comportamenti diversi:
 
@@ -242,4 +242,4 @@ Di seguito è riportato l’elenco dei vari componenti configurati per impostazi
 * **[!UICONTROL Recipients who didn't open or click (email),]**
 * **[!UICONTROL Recipients who didn't click (email).]**
 
-   ![](assets/query_editor_ex_02.png)
+  ![](assets/query_editor_ex_02.png)

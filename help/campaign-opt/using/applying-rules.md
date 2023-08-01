@@ -2,12 +2,12 @@
 product: campaign
 title: Applicare le regole di tipologia
 description: Scopri come applicare le regole di tipologia
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Typology Rules
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
+feature: Typology Rules, Campaigns
 exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '990'
 ht-degree: 9%
 
 ---
@@ -104,21 +104,21 @@ I valori possibili sono:
 
 * **[!UICONTROL At the start of targeting]**
 
-   Per evitare che il passaggio di personalizzazione venga eseguito in caso di errori, puoi applicare la regola di controllo qui.
+  Per evitare che il passaggio di personalizzazione venga eseguito in caso di errori, puoi applicare la regola di controllo qui.
 
 * **[!UICONTROL After targeting]**
 
-   Se è necessario conoscere il volume della destinazione per applicare la regola di controllo, selezionare questa fase.
+  Se è necessario conoscere il volume della destinazione per applicare la regola di controllo, selezionare questa fase.
 
-   Ad esempio, il **[!UICONTROL Check proof size]** la regola di controllo si applica dopo ogni fase di targeting: questa regola impedisce la personalizzazione dei messaggi se ci sono troppi destinatari bozza.
+  Ad esempio, il **[!UICONTROL Check proof size]** la regola di controllo si applica dopo ogni fase di targeting: questa regola impedisce la personalizzazione dei messaggi se ci sono troppi destinatari bozza.
 
 * **[!UICONTROL At the start of personalization]**
 
-   Questa fase deve essere selezionata se il controllo riguarda l’approvazione della personalizzazione dei messaggi. La personalizzazione dei messaggi viene eseguita durante la fase di analisi.
+  Questa fase deve essere selezionata se il controllo riguarda l’approvazione della personalizzazione dei messaggi. La personalizzazione dei messaggi viene eseguita durante la fase di analisi.
 
 * **[!UICONTROL At the end of the analysis]**
 
-   Quando un controllo richiede il completamento della personalizzazione dei messaggi, seleziona questa fase.
+  Quando un controllo richiede il completamento della personalizzazione dei messaggi, seleziona questa fase.
 
 ## Configurazioni aggiuntive {#additional-configurations}
 

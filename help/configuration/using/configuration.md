@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: Configurare la struttura di navigazione di Campaign Explorer
+feature: Application Settings
 description: Scopri come configurare la struttura di navigazione di Campaign Explorer
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1196'
+source-wordcount: '1203'
 ht-degree: 1%
 
 ---
@@ -99,35 +100,35 @@ Il contesto del modulo può essere aggiornato all’inizializzazione da **`<ente
 
 * Dichiarazione di un comando globale per avviare il modulo &quot;xtk:import&quot;:
 
-   ```
-   <command desc="Start the data import wizard" form="xtk:import" label="&amp;Data import..." name="import" rights="import,recipientImport"/>
-   ```
+  ```
+  <command desc="Start the data import wizard" form="xtk:import" label="&amp;Data import..." name="import" rights="import,recipientImport"/>
+  ```
 
-   Una scelta rapida da tastiera è dichiarata sul carattere &quot;I&quot; dalla presenza di **E** nell&#39;etichetta del comando.
+  Una scelta rapida da tastiera è dichiarata sul carattere &quot;I&quot; dalla presenza di **E** nell&#39;etichetta del comando.
 
 * Esempio di sottomenu con separatore:
 
-   ![](assets/d_ncs_integration_navigation_exemple1.png)
+  ![](assets/d_ncs_integration_navigation_exemple1.png)
 
-   ```
-   <command label="Administration" name="admin">
-     <command name="cmd1" label="Example 1" form="cus:example1"/>
-     <command name="sep" label="-"/>
-     <command name="cmd1" label="Example 2" form="cus:example2">
-       <enter>
-         <set xpath="@type" expr="1"/>
-       </enter>
-     </command>
-   </command>
-   ```
+  ```
+  <command label="Administration" name="admin">
+    <command name="cmd1" label="Example 1" form="cus:example1"/>
+    <command name="sep" label="-"/>
+    <command name="cmd1" label="Example 2" form="cus:example2">
+      <enter>
+        <set xpath="@type" expr="1"/>
+      </enter>
+    </command>
+  </command>
+  ```
 
 * Esecuzione di un metodo SOAP:
 
-   ```
-   <command name="cmd3" label="Example 3" promptLabel="Do you really want to execute the command?">
-     <soapCall name="Execute" service="xtk:sql"/>
-   </command>
-   ```
+  ```
+  <command name="cmd3" label="Example 3" promptLabel="Do you really want to execute the command?">
+    <soapCall name="Execute" service="xtk:sql"/>
+  </command>
+  ```
 
 ## Tipo di cartella {#folder-type}
 

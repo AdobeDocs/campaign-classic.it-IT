@@ -2,14 +2,15 @@
 product: campaign
 title: Flusso di lavoro di pulizia del database
 description: Scopri come pulire automaticamente i dati obsoleti
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Monitoring, Workflows
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2823'
+source-wordcount: '2830'
 ht-degree: 0%
 
 ---
@@ -63,16 +64,16 @@ I campi del **[!UICONTROL Purge of data]** coincidono con le seguenti opzioni. Q
 * Profili dei visitatori: **NmsCleanup_VisitorPurgeDelay** (consultare [Pulizia dei visitatori](#cleanup-of-visitors))
 * Proposte di offerte: **NmsCleanup_PropositionPurgeDelay** (consultare [Pulizia delle proposte](#cleanup-of-propositions))
 
-   >[!NOTE]
-   >
-   >Il **[!UICONTROL Offer propositions]** è disponibile solo quando **Interazione** è installato.
+  >[!NOTE]
+  >
+  >Il **[!UICONTROL Offer propositions]** è disponibile solo quando **Interazione** è installato.
 
 * Eventi: **NmsCleanup_EventPurgeDelay** (consultare [Pulizia degli eventi scaduti](#cleansing-expired-events))
 * Eventi archiviati: **NmsCleanup_EventHistoPurgeDelay** (consultare [Pulizia degli eventi scaduti](#cleansing-expired-events))
 
-   >[!NOTE]
-   >
-   >Il **[!UICONTROL Events]** e **[!UICONTROL Archived events]** sono disponibili solo se **Centro messaggi** è installato.
+  >[!NOTE]
+  >
+  >Il **[!UICONTROL Events]** e **[!UICONTROL Archived events]** sono disponibili solo se **Centro messaggi** è installato.
 
 * Audit trail: **XtkCleanup_AuditTrailPurgeDelay** (consultare [Pulizia di Audit trail](#cleanup-of-audit-trail))
 
@@ -132,19 +133,19 @@ Questa attività elimina tutte le consegne da eliminare o riciclare.
 
    * Nella tabella di esclusione della consegna (**NmsDlvExclusion**), viene utilizzata la seguente query:
 
-      ```sql
-      DELETE FROM NmsDlvExclusion WHERE iDeliveryId=$(l)
-      ```
+     ```sql
+     DELETE FROM NmsDlvExclusion WHERE iDeliveryId=$(l)
+     ```
 
-      dove **$(l)** è l’identificatore della consegna.
+     dove **$(l)** è l’identificatore della consegna.
 
    * Nella tabella coupon (**NmsCouponValue**), viene utilizzata la seguente query (con eliminazioni di massa):
 
-      ```sql
-      DELETE FROM NmsCouponValue WHERE iMessageId IN (SELECT iMessageId FROM NmsCouponValue WHERE EXISTS (SELECT B.iBroadLogId FROM $(BroadLogTableName) B WHERE B.iDeliveryId = $(l) AND B.iBroadLogId = iMessageId ) LIMIT 5000)
-      ```
+     ```sql
+     DELETE FROM NmsCouponValue WHERE iMessageId IN (SELECT iMessageId FROM NmsCouponValue WHERE EXISTS (SELECT B.iBroadLogId FROM $(BroadLogTableName) B WHERE B.iDeliveryId = $(l) AND B.iBroadLogId = iMessageId ) LIMIT 5000)
+     ```
 
-      dove `$(l)` è l’identificatore della consegna.
+     dove `$(l)` è l’identificatore della consegna.
 
    * Nelle tabelle del registro di consegna (**NmsBroadlogXxx**), le eliminazioni di massa vengono eseguite in batch di 20.000 record.
    * Nelle tabelle della proposta di offerta (**NmsPropositionXxx**), le eliminazioni di massa vengono eseguite in batch di 20.000 record.
@@ -155,13 +156,13 @@ Questa attività elimina tutte le consegne da eliminare o riciclare.
    * Nella tabella del registro del processo batch (**XtkJobLog**), le eliminazioni di massa vengono eseguite in batch di 20.000 record. Questa tabella contiene il registro delle consegne da eliminare.
    * Nella tabella di tracciamento dell’URL di consegna (**NmsTrackingUrl**), viene utilizzata la seguente query:
 
-      ```sql
-      DELETE FROM NmsTrackingUrl WHERE iDeliveryId=$(l)
-      ```
+     ```sql
+     DELETE FROM NmsTrackingUrl WHERE iDeliveryId=$(l)
+     ```
 
-      dove `$(l)` è l’identificatore della consegna.
+     dove `$(l)` è l’identificatore della consegna.
 
-      Questa tabella contiene gli URL trovati nelle consegne da eliminare per abilitarne il tracciamento.
+     Questa tabella contiene gli URL trovati nelle consegne da eliminare per abilitarne il tracciamento.
 
 1. La consegna viene eliminata dalla tabella di consegna (**NmsDelivery**):
 

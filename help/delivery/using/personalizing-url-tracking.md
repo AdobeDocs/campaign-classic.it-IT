@@ -2,14 +2,14 @@
 product: campaign
 title: Configurare le opzioni di tracciamento URL
 description: Scopri come configurare le opzioni di tracciamento URL
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Monitoring, Email Design
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+feature: Monitoring, Email Design, Personalization
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 9%
+source-wordcount: '179'
+ht-degree: 10%
 
 ---
 
@@ -29,9 +29,9 @@ Puoi configurare le opzioni di tracciamento:
 
 * Attiva/disattiva il tracciamento URL per tutti i messaggi.
 
-   >[!CAUTION]
-   >
-   >Quando il tracciamento non è attivato su una consegna (ad es. **[!UICONTROL Activate tracking]** (opzione non selezionata), i rapporti e i dati relativi al tracciamento non sono disponibili: i rapporti Opens, Hot click e Tracked URLs non mostrano alcun dato, e **[!UICONTROL Tracking logs]** per questa consegna non verranno visualizzate schede.
+  >[!CAUTION]
+  >
+  >Quando il tracciamento non è attivato su una consegna (ad es. **[!UICONTROL Activate tracking]** (opzione non selezionata), i rapporti e i dati relativi al tracciamento non sono disponibili: i rapporti Opens, Hot click e Tracked URLs non mostrano alcun dato, e **[!UICONTROL Tracking logs]** per questa consegna non verranno visualizzate schede.
 
 * Attiva/disattiva il tracciamento per le aperture dei messaggi.
 

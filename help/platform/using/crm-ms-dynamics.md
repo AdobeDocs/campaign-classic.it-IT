@@ -2,13 +2,13 @@
 product: campaign
 title: Campaign - Connettore Microsoft Dynamics CRM
 description: Scopri come collegare Campaign e Microsoft Dynamics
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Microsoft CRM Integration
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 3%
+source-wordcount: '1118'
+ht-degree: 4%
 
 ---
 
@@ -48,7 +48,6 @@ In Campaign Classic:
 > Quando si collega Adobe Campaign con Microsoft Dynamics, non è possibile:
 > * Installa plug-in che possono modificare il comportamento del sistema CRM e causare problemi di compatibilità con Adobe Campaign
 > * Seleziona più enumerazioni
-
 
 ## Configurare Microsoft Dynamics CRM {#config-crm-microsoft}
 
@@ -146,6 +145,7 @@ L’utente dell’app è l’utente che verrà utilizzato dall’applicazione re
    >[!NOTE]
    >
    >Se si utilizza lo stesso nome, viene generato un errore di chiave duplicata; finché non viene confermato se questo passaggio è necessario, utilizza un nome utente diverso e procedi.
+   >
 
 1. Assegna la **ID applicazione** per [l&#39;applicazione creata in precedenza](#get-client-id-microsoft).
 1. Fai clic su **Gestisci ruoli** e scegli la **Amministratore di sistema** ruolo all&#39;utente.

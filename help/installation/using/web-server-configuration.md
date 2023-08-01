@@ -2,14 +2,15 @@
 product: campaign
 title: Configurazione server web
 description: Ulteriori informazioni sulle best practice principali per la configurazione del server web
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: fc0d3f16-5f62-473d-a1de-aab574eff734
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -24,60 +25,60 @@ Di seguito sono riportate alcune delle best practice principali relative alla co
 
 * Disattiva la versione SSL e le crittografie precedenti:
 
-   **Su Apache**, modifica /etc/apache2/mods-available/ssl.conf. Ecco un esempio:
+  **Su Apache**, modifica /etc/apache2/mods-available/ssl.conf. Ecco un esempio:
 
    * SSLProtocol all -SSLv2 -SSLv3 -TLSv1
    * SSLCipherSuite HIGH:MEDIUM:!aNULL:!MD5:!SSLv3:!SSLv2:!TLSv1
 
-   **In IIS** (vedere [documentazione](https://support.microsoft.com/en-us/kb/245030)), esegui la seguente configurazione:
+  **In IIS** (vedere [documentazione](https://support.microsoft.com/en-us/kb/245030)), esegui la seguente configurazione:
 
    * Aggiungi sottochiave del Registro di sistema in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL
    * Per consentire al sistema di utilizzare i protocolli che non verranno negoziati per impostazione predefinita (ad esempio TLS 1.2), modificare i dati del valore DWORD del valore DisabledByDefault su 0x0 nelle seguenti chiavi del Registro di sistema sotto **Protocoli** chiave:
 
-      SCHANNEL\Protocolli\TLS 1.2\Client
+     SCHANNEL\Protocolli\TLS 1.2\Client
 
-      SCHANNEL\Protocolli\TLS 1.2\Server
-   **Disabilita SSL x.0**
+     SCHANNEL\Protocolli\TLS 1.2\Server
 
-   SCHANNEL\Protocols\SSL 3.0\Client: DisabledByDefault: valore DWORD (32 bit) su 1
+  **Disabilita SSL x.0**
 
-   SCHANNEL\Protocolli\SSL 3.0\Server: abilitato: valore DWORD (32 bit) su 0
+  SCHANNEL\Protocols\SSL 3.0\Client: DisabledByDefault: valore DWORD (32 bit) su 1
+
+  SCHANNEL\Protocolli\SSL 3.0\Server: abilitato: valore DWORD (32 bit) su 0
 
 * Rimuovi il **TRACE** metodo:
 
-   **Su Apache**, modifica in /etc/apache2/conf.d/security: TraceEnable **Disattivato**
+  **Su Apache**, modifica in /etc/apache2/conf.d/security: TraceEnable **Disattivato**
 
-   **In IIS** (vedere [documentazione](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)), esegui la seguente configurazione:
+  **In IIS** (vedere [documentazione](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)), esegui la seguente configurazione:
 
    * Assicurati che **Filtro richieste** servizio ruolo o funzionalità installata.
    * In **Filtro richieste** fare clic sulla scheda Verbi HTTP e quindi su Nega verbo. Nel riquadro Azioni, immettere TRACE nella finestra di dialogo aperta.
 
 * Rimuovi il banner:
 
-   **Su Apache**, modifica /etc/apache2/conf.d/sicurezza:
+  **Su Apache**, modifica /etc/apache2/conf.d/sicurezza:
 
    * FirmaServer **Disattivato**
    * ServerTokens **Prod**
 
-   **In IIS**, esegui la configurazione seguente:
+  **In IIS**, esegui la configurazione seguente:
 
    * Installa **URLcan**.
    * Modifica il **Urlscan.ini** file da avere **RemoveServerHeader=1**
 
-
 * Limita le dimensioni delle query per impedire il caricamento di file importanti:
 
-   **Su Apache**, aggiungi **LimitRequestBody** direttiva (dimensioni in byte) nella directory /.
+  **Su Apache**, aggiungi **LimitRequestBody** direttiva (dimensioni in byte) nella directory /.
 
-   ```
-   <Directory />
-       Options FollowSymLinks
-       AllowOverride None
-       LimitRequestBody 10485760
-   </Directory>
-   ```
+  ```
+  <Directory />
+      Options FollowSymLinks
+      AllowOverride None
+      LimitRequestBody 10485760
+  </Directory>
+  ```
 
-   **In IIS** (vedere [documentazione](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits)), imposta **maxAllowedContentLength** (lunghezza massima consentita del contenuto) nelle opzioni di filtro del contenuto.
+  **In IIS** (vedere [documentazione](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits)), imposta **maxAllowedContentLength** (lunghezza massima consentita del contenuto) nelle opzioni di filtro del contenuto.
 
 Argomenti correlati:
 

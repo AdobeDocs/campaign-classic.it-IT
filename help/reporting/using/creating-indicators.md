@@ -2,11 +2,11 @@
 product: campaign
 title: Creare indicatori
 description: Creare indicatori
-feature: Reporting
+feature: Reporting, Monitoring
 hide: true
 hidefromtoc: true
 exl-id: e4806bb8-de9d-47e4-8b37-d6c0565b7f5a
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 2%
@@ -58,39 +58,39 @@ Fai clic su **[!UICONTROL Add]** per creare una nuova dimensione, quindi nella *
 
 * Per iniziare, seleziona il destinatario **Età**. Per questo campo, puoi definire il binning per raggruppare le pagine e semplificare la lettura delle informazioni. È consigliabile utilizzare il binning quando è probabile che siano presenti più valori separati.
 
-   A questo scopo, seleziona la **[!UICONTROL Enable binning]** opzione. Le modalità di binning sono descritte in [Binning dati](../../reporting/using/concepts-and-methodology.md#data-binning).
+  A questo scopo, seleziona la **[!UICONTROL Enable binning]** opzione. Le modalità di binning sono descritte in [Binning dati](../../reporting/using/concepts-and-methodology.md#data-binning).
 
-   ![](assets/s_advuser_cube_wz_05.png)
+  ![](assets/s_advuser_cube_wz_05.png)
 
 * Aggiungi un **Data** dimensione del tipo. In questo caso, vogliamo visualizzare le date di creazione del profilo del destinatario
 
-   A questo scopo, fai clic su **[!UICONTROL Add]** e seleziona la **[!UICONTROL Creation date]** nella tabella dei destinatari.
+  A questo scopo, fai clic su **[!UICONTROL Add]** e seleziona la **[!UICONTROL Creation date]** nella tabella dei destinatari.
 
-   ![](assets/s_advuser_cube_wz_06.png)
+  ![](assets/s_advuser_cube_wz_06.png)
 
-   È possibile selezionare la modalità di visualizzazione della data. A questo scopo, seleziona la gerarchia da utilizzare e i livelli da generare:
+  È possibile selezionare la modalità di visualizzazione della data. A questo scopo, seleziona la gerarchia da utilizzare e i livelli da generare:
 
-   ![](assets/s_advuser_cube_wz_07.png)
+  ![](assets/s_advuser_cube_wz_07.png)
 
-   Nel nostro esempio, vogliamo visualizzare solo anni, mesi e giorni, poiché non è possibile lavorare con settimane e semestri/mesi contemporaneamente: questi livelli non sono compatibili.
+  Nel nostro esempio, vogliamo visualizzare solo anni, mesi e giorni, poiché non è possibile lavorare con settimane e semestri/mesi contemporaneamente: questi livelli non sono compatibili.
 
 * Crea un’altra dimensione per analizzare i dati relativi alla città del destinatario
 
-   A questo scopo, aggiungi una nuova dimensione e seleziona la città nel **[!UICONTROL Location]** nodo dello schema del destinatario.
+  A questo scopo, aggiungi una nuova dimensione e seleziona la città nel **[!UICONTROL Location]** nodo dello schema del destinatario.
 
-   ![](assets/s_advuser_cube_wz_08.png)
+  ![](assets/s_advuser_cube_wz_08.png)
 
-   È possibile abilitare il binning per semplificare la lettura delle informazioni e collegare i valori a un&#39;enumerazione.
+  È possibile abilitare il binning per semplificare la lettura delle informazioni e collegare i valori a un&#39;enumerazione.
 
-   ![](assets/s_advuser_cube_wz_09.png)
+  ![](assets/s_advuser_cube_wz_09.png)
 
-   Seleziona l’enumerazione dall’elenco a discesa
+  Seleziona l’enumerazione dall’elenco a discesa
 
-   ![](assets/s_advuser_cube_wz_10.png)
+  ![](assets/s_advuser_cube_wz_10.png)
 
-   Verranno visualizzati solo i valori nell’enumerazione. Gli altri saranno raggruppati sotto l’etichetta definita nella **[!UICONTROL Label of the other values]** campo.
+  Verranno visualizzati solo i valori nell’enumerazione. Gli altri saranno raggruppati sotto l’etichetta definita nella **[!UICONTROL Label of the other values]** campo.
 
-   Per ulteriori informazioni, consulta [Gestione dinamica dei contenitori](../../reporting/using/concepts-and-methodology.md#dynamically-managing-bins).
+  Per ulteriori informazioni, consulta [Gestione dinamica dei contenitori](../../reporting/using/concepts-and-methodology.md#dynamically-managing-bins).
 
 ## Creare indicatori {#building-indicators}
 
@@ -105,7 +105,7 @@ A questo scopo, esegui i seguenti passaggi:
 
    ![](assets/s_advuser_cube_wz_11.png)
 
-   Il **[!UICONTROL Filter the measure data...]** consente di selezionare solo donne. Per ulteriori informazioni sulla definizione delle misure e delle opzioni disponibili, consulta [Definire le misure](../../reporting/using/concepts-and-methodology.md#defining-measures).
+   Il **[!UICONTROL Filter the measure data...]** consente di selezionare solo donne. Per ulteriori informazioni sulla definizione delle misure e sulle opzioni disponibili, consulta [Definire le misure](../../reporting/using/concepts-and-methodology.md#defining-measures).
 
    ![](assets/s_advuser_cube_wz_12.png)
 

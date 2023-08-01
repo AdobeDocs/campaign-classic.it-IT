@@ -2,14 +2,15 @@
 product: campaign
 title: Controllare i costi
 description: Scopri come controllare i costi
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Resource Management
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2468'
+source-wordcount: '2475'
 ht-degree: 0%
 
 ---
@@ -52,21 +53,21 @@ I budget vengono creati nella mappa, tramite **[!UICONTROL Campaign management >
 
 * Aggiunta di un nuovo budget
 
-   Fai clic su **[!UICONTROL New]** , assegna un nome e salva il budget.
+  Fai clic su **[!UICONTROL New]** , assegna un nome e salva il budget.
 
 * Inserimento dell&#39;importo iniziale
 
-   Indica l’importo assegnato nel campo pertinente. Gli altri importi vengono inseriti automaticamente. Consulta [Calcola importi](#calculating-amounts).
+  Indica l’importo assegnato nel campo pertinente. Gli altri importi vengono inseriti automaticamente. Consulta [Calcola importi](#calculating-amounts).
 
 * Definizione del periodo di validità
 
-   Specifica le date di inizio e di fine. Queste informazioni sono puramente indicative.
+  Specifica le date di inizio e di fine. Queste informazioni sono puramente indicative.
 
 * Spese
 
-   Crea le categorie di spesa a cui assegnare i costi di questo budget per campagne, attività e così via. possono essere collegati. Consulta [Categorie di spesa](#expense-categories).
+  Crea le categorie di spesa a cui assegnare i costi di questo budget per campagne, attività e così via. possono essere collegati. Consulta [Categorie di spesa](#expense-categories).
 
-   ![](assets/s_ncs_user_budget_create_and_save.png)
+  ![](assets/s_ncs_user_budget_create_and_save.png)
 
 >[!NOTE]
 >

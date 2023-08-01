@@ -2,13 +2,13 @@
 product: campaign
 title: Introduzione all’analisi descrittiva
 description: Introduzione all’analisi descrittiva
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+feature: Reporting, Monitoring
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -25,15 +25,15 @@ Puoi generare rapporti di analisi quantitativa o qualitativa. Le analisi qualita
 
 * Tabella e istogramma:
 
-   ![](assets/reporting_descriptive_sample_1.png)
+  ![](assets/reporting_descriptive_sample_1.png)
 
 * Valori cumulativi, senza la tabella:
 
-   ![](assets/reporting_descriptive_sample_3.png)
+  ![](assets/reporting_descriptive_sample_3.png)
 
 * Raggruppamento per area di attività
 
-   ![](assets/reporting_descriptive_sample_2.png)
+  ![](assets/reporting_descriptive_sample_2.png)
 
 Le analisi quantitative forniscono statistiche generali sui dati numerici della selezione, come illustrato di seguito:
 

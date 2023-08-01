@@ -2,12 +2,12 @@
 product: campaign
 title: Regole di filtro
 description: Scopri come utilizzare le regole di filtro
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Typology Rules
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
+feature: Typology Rules, Campaigns
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '514'
 ht-degree: 2%
 
 ---
@@ -79,6 +79,7 @@ Puoi anche collegare le regole di filtro direttamente tramite questa scheda, sen
 >Nella finestra di selezione sono disponibili solo le tipologie e le regole di filtro.
 >
 >Queste configurazioni possono essere definite nel modello di consegna e applicate automaticamente a tutte le nuove consegne create utilizzando il modello.
+>
 
 ## Regole di esclusione del recapito messaggi predefinite {#default-deliverability-exclusion-rules}
 

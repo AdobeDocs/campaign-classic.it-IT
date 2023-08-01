@@ -2,14 +2,15 @@
 product: campaign
 title: Creazione di un’offerta
 description: Creazione di un’offerta
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: c6dd2709-06e3-4227-bbec-99f3d80144fe
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '810'
 ht-degree: 3%
 
 ---
@@ -110,7 +111,7 @@ Per creare un peso in un’offerta, effettua le seguenti operazioni:
 
    >[!NOTE]
    >
-   >Se un target è idoneo per più pesi per un’offerta selezionata, il motore mantiene il peso migliore (il più alto). Quando si richiama il motore di offerta, viene selezionata un’offerta al massimo una volta per contatto.
+   >Se un target è idoneo per più pesi per un’offerta selezionata, il motore mantiene il peso migliore (massimo). Quando si richiama il motore di offerta, viene selezionata un’offerta al massimo una volta per contatto.
 
 ### Riepilogo delle regole di idoneità dell’offerta {#a-summary-of-offer-eligibility-rules}
 

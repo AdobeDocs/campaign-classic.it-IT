@@ -2,13 +2,13 @@
 product: campaign
 title: Persona, persone e destinatari
 description: Persona, persone e destinatari
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+feature: Reporting, Monitoring
 exl-id: 69b810f3-aa8b-4ab5-95c1-831257d7fcb9
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '715'
 ht-degree: 9%
 
 ---
@@ -54,7 +54,7 @@ Poiché John non ha aperto né fatto clic nell’e-mail, non viene visualizzato 
 
 **Calcolo intermedio:**
 
-|  | Destinatari che hanno fatto clic | Persone che hanno fatto clic | Destinatari che hanno aperto |
+|   | Destinatari che hanno fatto clic | Persone che hanno fatto clic | Destinatari che hanno aperto |
 |---|---|---|---|
 | John | - | - | - |
 | Totale intermedio | 0 | 0 | 0 |
@@ -73,7 +73,7 @@ L&#39;apertura viene assegnata a un destinatario: Marie. Adobe Campaign aggiunge
 
 **Calcolo intermedio:**
 
-|  | Destinatari che hanno fatto clic | Persone che hanno fatto clic | Destinatari che hanno aperto |
+|   | Destinatari che hanno fatto clic | Persone che hanno fatto clic | Destinatari che hanno aperto |
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
@@ -95,7 +95,7 @@ Persone: poiché il browser di questo destinatario accetta i cookie, possiamo ve
 
 **Calcolo intermedio:**
 
-|  | Destinatari che hanno fatto clic | Persone che hanno fatto clic | Destinatari che hanno aperto |
+|   | Destinatari che hanno fatto clic | Persone che hanno fatto clic | Destinatari che hanno aperto |
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
@@ -116,7 +116,7 @@ I seguenti registri coincidono con l’apertura e i due clic effettuati dalla pe
 
 **Calcolo intermedio:**
 
-|  | Destinatari che hanno fatto clic | Persone che hanno fatto clic | Destinatari che hanno aperto |
+|   | Destinatari che hanno fatto clic | Persone che hanno fatto clic | Destinatari che hanno aperto |
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
@@ -140,7 +140,7 @@ I clic aperti e i 4 clic eseguiti da Henry vengono visualizzati nei seguenti reg
 
 **Calcolo intermedio:**
 
-|  | Destinatari che hanno fatto clic | Persone che hanno fatto clic | Destinatari che hanno aperto |
+|   | Destinatari che hanno fatto clic | Persone che hanno fatto clic | Destinatari che hanno aperto |
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
@@ -173,4 +173,3 @@ La reattività grezza e la stima dei forward sono calcolate come segue:
 >* Una rappresenta la **[!UICONTROL Clicks]** (destinatari che hanno fatto clic).
 >* B rappresenta **[!UICONTROL Distinct clicks for the population reached]** (persone che hanno fatto clic).
 >* C rappresenta **[!UICONTROL Distinct opens for the population reached]** (destinatari che hanno aperto).
-

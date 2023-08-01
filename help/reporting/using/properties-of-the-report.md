@@ -2,14 +2,14 @@
 product: campaign
 title: Proprietà del rapporto
 description: Ulteriori informazioni sulle impostazioni delle proprietà del report
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+feature: Reporting, Monitoring
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 2%
+source-wordcount: '441'
+ht-degree: 4%
 
 ---
 
@@ -33,7 +33,7 @@ In **[!UICONTROL General]** della scheda delle proprietà del rapporto, puoi mod
 
 * Il **Storage** viene selezionato durante la creazione del rapporto. Per modificare la tabella dati del rapporto, fare clic su **[!UICONTROL Select link]** a destra del **[!UICONTROL Document type]** campo.
 
-   ![](assets/s_ncs_advuser_report_properties_02.png)
+  ![](assets/s_ncs_advuser_report_properties_02.png)
 
 * Il **Controllo degli accessi** parametri. Queste impostazioni sono descritte di seguito.
 
@@ -47,7 +47,7 @@ Le opzioni possibili sono:
 
 * **[!UICONTROL Anonymous access]**: questa opzione consente l’accesso illimitato al rapporto. Tuttavia, non è possibile alcuna manipolazione.
 
-   Le autorizzazioni dell’operatore tecnico &quot;webapp&quot; vengono utilizzate per visualizzare gli elementi del rapporto. Ulteriori informazioni [in questa sezione](../../platform/using/access-management-operators.md).
+  Le autorizzazioni dell’operatore tecnico &quot;webapp&quot; vengono utilizzate per visualizzare gli elementi del rapporto. Per ulteriori informazioni, consulta [questa sezione](../../platform/using/access-management-operators.md).
 
 * **[!UICONTROL Access control]**: questa opzione consente agli operatori Adobe Campaign di accedervi dopo aver effettuato l’accesso.
 * **[!UICONTROL Specific account]**: questa opzione ti consente di eseguire il rapporto con i diritti dell’operatore selezionato nel **[!UICONTROL Operator]** campo.

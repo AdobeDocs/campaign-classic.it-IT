@@ -2,14 +2,15 @@
 product: campaign
 title: Linee guida per scripting e codifica
 description: Scopri le linee guida da seguire per lo sviluppo in Adobe Campaign (flussi di lavoro, JavaScript, JSSP, ecc.)
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '755'
 ht-degree: 5%
 
 ---
@@ -28,28 +29,28 @@ Se esegui uno script utilizzando workflow, applicazioni web e jssp, segui le bes
 
 * Se necessario, utilizza funzioni con parametri (istruzione di preparazione) invece della concatenazione di stringhe.
 
-   Pratica non valida:
+  Pratica non valida:
 
-   ```
-   sqlGetInt( "select iRecipientId from NmsRecipient where sEmail ='" + request.getParameter('email') +  "'  limit 1" )
-   ```
+  ```
+  sqlGetInt( "select iRecipientId from NmsRecipient where sEmail ='" + request.getParameter('email') +  "'  limit 1" )
+  ```
 
-   Buone pratiche:
+  Buone pratiche:
 
-   ```
-   sqlGetInt( "select iRecipientId from NmsRecipient where sEmail = $(sz) limit 1", request.getParameter('email'));
-   ```
+  ```
+  sqlGetInt( "select iRecipientId from NmsRecipient where sEmail = $(sz) limit 1", request.getParameter('email'));
+  ```
 
-   >[!IMPORTANT]
-   >
-   >sqlSelect non supporta questa funzionalità, pertanto è necessario utilizzare la funzione query della classe DBEngine:
+  >[!IMPORTANT]
+  >
+  >sqlSelect non supporta questa funzionalità, pertanto è necessario utilizzare la funzione query della classe DBEngine:
 
-   ```
-   var cnx = application.getConnection()
-   var stmt = cnx.query("SELECT sFirstName, sLastName FROM NmsRecipient where sEmail = $(sz)", request.getParameter('email'))
-   for each(var row in stmt) logInfo(row[0] + " : " + row[1])
-   cnx.dispose()
-   ```
+  ```
+  var cnx = application.getConnection()
+  var stmt = cnx.query("SELECT sFirstName, sLastName FROM NmsRecipient where sEmail = $(sz)", request.getParameter('email'))
+  for each(var row in stmt) logInfo(row[0] + " : " + row[1])
+  cnx.dispose()
+  ```
 
 Per evitare SQL injection, è necessario aggiungere le funzioni SQL al inserisco nell&#39;elenco Consentiti di da utilizzare in Adobe Campaign. Una volta aggiunte al inserisco nell&#39;elenco Consentiti di, queste diventano visibili agli operatori nell’editor di espressioni. Consulta [questa pagina](../../configuration/using/adding-additional-sql-functions.md).
 
@@ -79,23 +80,23 @@ Oltre al modello di protezione basato su cartelle, è possibile utilizzare i dir
 
 * È possibile aggiungere alcuni filtri di sistema (sysFilter) per impedire la lettura/scrittura dei dati (vedere [questa pagina](../../configuration/using/filtering-schemas.md)).
 
-   ```
-   <sysFilter name="writeAccess">    
-       <condition enabledIf="hasNamedRight('myNewRole')=false" expr="FALSE"/>  
-   </sysFilter>
-   ```
+  ```
+  <sysFilter name="writeAccess">    
+      <condition enabledIf="hasNamedRight('myNewRole')=false" expr="FALSE"/>  
+  </sysFilter>
+  ```
 
 * Puoi anche proteggere alcune azioni (metodo SOAP) definite negli schemi. È sufficiente impostare l’attributo di accesso con il diritto denominato corrispondente come valore.
 
-   ```
-   <method name="grantVIPAccess" access="myNewRole">
-       <parameters>
-   ...
-       </parameters>
-   </method>
-   ```
+  ```
+  <method name="grantVIPAccess" access="myNewRole">
+      <parameters>
+  ...
+      </parameters>
+  </method>
+  ```
 
-   Per ulteriori informazioni, consulta [questa pagina](../../configuration/using/implementing-soap-methods.md).
+  Per ulteriori informazioni, consulta [questa pagina](../../configuration/using/implementing-soap-methods.md).
 
 >[!IMPORTANT]
 >
@@ -146,7 +147,8 @@ Il modo generale per aggiungere un captcha nel DCE consiste nel creare un blocco
    * La riga 4 consente di modificare le dimensioni della casella grigia captcha (larghezza/altezza) e la lunghezza della parola generata (minWordSize/maxWordSize).
    * Prima di utilizzare Google reCAPTCHA, è necessario registrarsi su Google e creare un nuovo sito reCAPTCHA.
 
-      `<div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>`
+     `<div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>`
+
    Dovresti poter disabilitare il pulsante di convalida, ma poiché non disponiamo di pulsanti/collegamenti standard, è meglio farlo nel HTML stesso. Per informazioni su come eseguire questa operazione, consulta [questa pagina](https://developers.google.com/recaptcha/).
 
 ### Aggiornamento dell’applicazione web

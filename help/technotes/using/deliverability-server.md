@@ -2,8 +2,9 @@
 product: campaign
 title: Aggiornamento al nuovo server di recapito messaggi
 description: Scopri come aggiornare al nuovo server di recapito messaggi di Campaign
+feature: Technote, Deliverability
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 50ef144950ca9e79b1b3acdf587ffc13e0beeec4
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '1319'
 ht-degree: 3%
@@ -19,6 +20,7 @@ In qualità di cliente Campaign Classic, devi implementare il nuovo server di re
 >[!NOTE]
 >
 >Per ulteriori domande su queste modifiche, consulta [Domande frequenti](#faq), o contatto [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}.
+>
 
 ## Cosa è cambiato?{#acc-deliverability-changes}
 
@@ -43,6 +45,7 @@ Come parte della nuova integrazione del server di recapito messaggi, Campaign de
 >[!WARNING]
 >
 >Questi passaggi devono essere eseguiti solo per le implementazioni ibride e on-premise.
+>
 
 ### Prerequisiti{#prerequisites}
 

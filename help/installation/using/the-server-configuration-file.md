@@ -2,14 +2,15 @@
 product: campaign
 title: Il file di configurazione del server
 description: Il file di configurazione del server
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '7955'
+source-wordcount: '7962'
 ht-degree: 42%
 
 ---
@@ -1761,7 +1762,7 @@ Per ulteriori informazioni, consulta questa [sezione](../../installation/using/c
   </tr> 
   <tr> 
    <td> minSpareServers<br /> </td> 
-   <td> Numero minimo di server secondari. L'MTA cerca di mantenere in funzione almeno questo numero di server. Se ne sono presenti meno, i nuovi server vengono riavviati ogni secondo fino al raggiungimento di questo valore.<br /> </td> 
+   <td> Numero minimo di server secondari. L’MTA cerca di mantenere in funzione almeno questo numero di server. Se ne sono presenti meno, i nuovi server vengono riavviati ogni secondo fino al raggiungimento di questo valore.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
@@ -2617,7 +2618,7 @@ Di seguito sono riportati i diversi parametri di **tracciamento** nodo. Configur
   </tr> 
   <tr> 
    <td> blockRedirectForUnsignedTrackingLink<br /> </td> 
-   <td> Disattiva gli URL non validi generati da build precedenti.<br /> </td> 
+   <td> Disattiva gli URL non validi generati dalle build precedenti.<br /> </td> 
    <td> Booleano<br /> </td> 
    <td> falso<br /> </td> 
   </tr> 

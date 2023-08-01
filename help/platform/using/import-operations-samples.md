@@ -2,15 +2,16 @@
 product: campaign
 title: Esempi di importazione generica
 description: Ulteriori informazioni sulle importazioni generiche eseguibili mediante processi di importazione
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Data Management
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '1007'
 ht-degree: 1%
 
 ---
@@ -76,31 +77,31 @@ Per importare nel database di Adobe Campaign nuovi profili dei destinatari memor
    * Vai a **Destinatari (nms:recipient)** tabella.
    * Seleziona la **[!UICONTROL Insertion]** e lasciare i valori predefiniti negli altri campi.
 
-      ![](assets/s_ncs_user_import_example04_01.png)
+     ![](assets/s_ncs_user_import_example04_01.png)
 
 1. Importazione dei destinatari
 
    * Se necessario, specificare una cartella in cui importare i record.
 
-      ![](assets/s_ncs_user_import_example05_01.png)
+     ![](assets/s_ncs_user_import_example05_01.png)
 
 1. Avvio dell’importazione
 
    * Fai clic su **[!UICONTROL Start]**.
 
-      Nell’area centrale dell’editor, puoi verificare che l’operazione di importazione sia stata eseguita correttamente e visualizzare il numero di record elaborati.
+     Nell’area centrale dell’editor, puoi verificare che l’operazione di importazione sia stata eseguita correttamente e visualizzare il numero di record elaborati.
 
-      ![](assets/s_ncs_user_import_example06_01.png)
+     ![](assets/s_ncs_user_import_example06_01.png)
 
-      Il **[!UICONTROL Tracking]** modalità consente di tenere traccia dei dettagli dell’importazione per ciascun record nel file sorgente. A questo scopo, dalla pagina Home fai clic su **[!UICONTROL Profiles and Targets]** allora **[!UICONTROL Processes]**, selezionare l&#39;importazione pertinente e cercare **[!UICONTROL General]**, **[!UICONTROL Journal]** e **[!UICONTROL Rejects]** schede.
+     Il **[!UICONTROL Tracking]** modalità consente di tenere traccia dei dettagli dell’importazione per ciascun record nel file sorgente. A questo scopo, dalla pagina Home fai clic su **[!UICONTROL Profiles and Targets]** allora **[!UICONTROL Processes]**, selezionare l&#39;importazione pertinente e cercare **[!UICONTROL General]**, **[!UICONTROL Journal]** e **[!UICONTROL Rejects]** schede.
 
       * Verifica dello stato di avanzamento dell’importazione
 
-         ![](assets/s_ncs_user_import_example07_01.png)
+        ![](assets/s_ncs_user_import_example07_01.png)
 
       * Elabora visualizzazione per ogni record
 
-         ![](assets/s_ncs_user_import_example07_02.png)
+        ![](assets/s_ncs_user_import_example07_02.png)
 
 ## Aggiornare e inserire destinatari {#example--update-and-insert-recipients}
 
@@ -128,19 +129,19 @@ Si desidera aggiornare i record esistenti nel database e crearne di nuovi da un 
    * Mantieni l’opzione **[!UICONTROL Management of duplicates]** in **[!UICONTROL Update]** in modo che i record esistenti nel database vengano modificati con i dati del file di testo.
    * Seleziona i campi **[!UICONTROL Birth date]**, **[!UICONTROL Name]** e **[!UICONTROL Company]** e assegna loro una chiave di riconciliazione.
 
-      ![](assets/s_ncs_user_import_example04_02.png)
+     ![](assets/s_ncs_user_import_example04_02.png)
 
 1. Avvio dell’importazione
 
    * Fai clic su **[!UICONTROL Start]**.
 
-      Nella finestra di rilevamento, è possibile verificare che l&#39;importazione sia stata eseguita correttamente e visualizzare il numero di record elaborati.
+     Nella finestra di rilevamento, è possibile verificare che l&#39;importazione sia stata eseguita correttamente e visualizzare il numero di record elaborati.
 
-      ![](assets/s_ncs_user_import_example06_02.png)
+     ![](assets/s_ncs_user_import_example06_02.png)
 
    * Controllare che i record siano stati modificati da questa operazione nella tabella dei destinatari.
 
-      ![](assets/s_ncs_user_import_example06_03.png)
+     ![](assets/s_ncs_user_import_example06_03.png)
 
 ## Arricchisci i valori con quelli di un file esterno {#example--enrich-the-values-with-those-of-an-external-file}
 
@@ -150,11 +151,11 @@ In questo esempio, è possibile vedere che alcuni campi nel file di testo hanno 
 
 * Contenuto del file di testo da importare.
 
-   ![](assets/s_ncs_user_import_example02_03.png)
+  ![](assets/s_ncs_user_import_example02_03.png)
 
 * Stato del database prima dell’importazione
 
-   ![](assets/s_ncs_user_import_example06_04.png)
+  ![](assets/s_ncs_user_import_example06_04.png)
 
 Applica i seguenti passaggi:
 
@@ -181,7 +182,7 @@ Applica i seguenti passaggi:
    * Ripeti questa operazione per **[!UICONTROL Company (@company)]** nodo.
    * Assegnare una chiave di riconciliazione ai campi **[!UICONTROL Birth date]**, **[!UICONTROL Email]** e **[!UICONTROL First name]**.
 
-      ![](assets/s_ncs_user_import_example04_03.png)
+     ![](assets/s_ncs_user_import_example04_03.png)
 
 1. Avvio dell’importazione
 
@@ -201,11 +202,11 @@ In questo esempio, si noterà che alcuni campi nel file di testo hanno un valore
 
 * Contenuto del file di testo da importare.
 
-   ![](assets/s_ncs_user_import_example02_04.png)
+  ![](assets/s_ncs_user_import_example02_04.png)
 
 * Stato del database prima dell’importazione
 
-   ![](assets/s_ncs_user_import_example06_07.png)
+  ![](assets/s_ncs_user_import_example06_07.png)
 
 1. Scelta di un modello
 
@@ -229,13 +230,13 @@ In questo esempio, si noterà che alcuni campi nel file di testo hanno un valore
    * Posizionare il cursore sul **[!UICONTROL Account number (@account)]** e seleziona l’opzione **[!UICONTROL Take empty values into account]**.
    * Seleziona i campi **[!UICONTROL Birth date]**, **[!UICONTROL Email]** e **[!UICONTROL First name]** e assegna loro una chiave di riconciliazione.
 
-      ![](assets/s_ncs_user_import_example04_04.png)
+     ![](assets/s_ncs_user_import_example04_04.png)
 
 1. Avvio dell’importazione
 
    * Fai clic su **[!UICONTROL Start]**.
    * Controllare che i record siano stati modificati dall&#39;operazione nella tabella dei destinatari.
 
-      ![](assets/s_ncs_user_import_example06_06.png)
+     ![](assets/s_ncs_user_import_example06_06.png)
 
-      I valori del file di testo vuoti hanno sovrascritto quelli presenti nel database. I valori esistenti nel database sono stati aggiornati con quelli nel file di importazione in conformità con **[!UICONTROL Update]** opzione selezionata per i duplicati al punto 4.
+     I valori del file di testo vuoti hanno sovrascritto quelli presenti nel database. I valori esistenti nel database sono stati aggiornati con quelli nel file di importazione in conformità con **[!UICONTROL Update]** opzione selezionata per i duplicati al punto 4.

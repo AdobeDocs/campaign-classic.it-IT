@@ -2,14 +2,15 @@
 product: campaign
 title: Implementazione autonoma
 description: Implementazione autonoma
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Architecture, Deployment
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1084'
 ht-degree: 2%
 
 ---
@@ -48,7 +49,7 @@ Con la crescita del volume, una variante di questa architettura sposta il server
 
 ### Vantaggi {#advantages}
 
-* Completamente indipendente e a basso costo di configurazione (non sono richieste licenze fatturabili se viene utilizzato il software open-source elencato di seguito).
+* Completamente indipendente e a basso costo di configurazione (non sono richieste licenze fatturabili se viene utilizzato il software open source elencato di seguito).
 * Installazione e configurazione di rete semplificate.
 
 ### Svantaggi {#disadvantages}
@@ -119,19 +120,19 @@ Applica i seguenti passaggi:
 
    * Crea l’istanza tramite la console:
 
-      ![](assets/install_create_new_connexion.png)
+     ![](assets/install_create_new_connexion.png)
 
-      Per ulteriori informazioni, consulta [Creare un’istanza e accedere](../../installation/using/creating-an-instance-and-logging-on.md).
+     Per ulteriori informazioni, consulta [Creare un’istanza e accedere](../../installation/using/creating-an-instance-and-logging-on.md).
 
-      o
+     o
 
    * Crea l’istanza utilizzando le righe di comando:
 
-      ```
-      nlserver config -addinstance:demo/tracking.campaign.net*,console.campaign.net*
-      ```
+     ```
+     nlserver config -addinstance:demo/tracking.campaign.net*,console.campaign.net*
+     ```
 
-      Per ulteriori informazioni, consulta [Creazione di un’istanza](../../installation/using/command-lines.md#creating-an-instance).
+     Per ulteriori informazioni, consulta [Creazione di un’istanza](../../installation/using/command-lines.md#creating-an-instance).
 
 1. Modifica il **config-demo.xml** file (creato nel passaggio precedente accanto a **config-default.xml**) e assicurarsi che il **mta** (consegna), **wfserver** (workflow), **inMail** (messaggi non recapitati) e **stat** (statistiche) i processi sono abilitati. Quindi configura l’indirizzo del server delle statistiche:
 
@@ -235,13 +236,13 @@ Applica i seguenti passaggi:
    * Email delivery: indirizzo del mittente e della risposta e cassetta postale di errore per la mail non recapitata.
    * Tracciamento: popola l’URL esterno utilizzato per il reindirizzamento e l’URL interno, fai clic su **Registrazione sui server di tracciamento** e quindi convalidarlo sulla **demo** istanza del server di tracciamento.
 
-      Per ulteriori informazioni, consulta [Configurazione del tracciamento](../../installation/using/deploying-an-instance.md#tracking-configuration).
+     Per ulteriori informazioni, consulta [Configurazione del tracciamento](../../installation/using/deploying-an-instance.md#tracking-configuration).
 
-      ![](assets/s_ncs_install_deployment_wiz_09.png)
+     ![](assets/s_ncs_install_deployment_wiz_09.png)
 
-      Poiché il server Adobe Campaign viene utilizzato sia come server applicazioni che come server di reindirizzamento, l’URL interno utilizzato per raccogliere i registri di tracciamento e trasferire gli URL è una connessione interna diretta a Tomcat (https://localhost:8080).
+     Poiché il server Adobe Campaign viene utilizzato sia come server applicazioni che come server di reindirizzamento, l’URL interno utilizzato per raccogliere i registri di tracciamento e trasferire gli URL è una connessione interna diretta a Tomcat (https://localhost:8080).
 
    * Gestione delle e-mail non recapitate: immetti i parametri per gestire le e-mail non recapitate (non accettare il **E-mail non recapitate non elaborate** sezione in considerazione).
    * Accesso da: fornisci i due URL per i rapporti, i moduli web e le pagine mirror.
 
-      ![](assets/d_ncs_install_web_url.png)
+     ![](assets/d_ncs_install_web_url.png)

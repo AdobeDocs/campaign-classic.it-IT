@@ -2,16 +2,17 @@
 product: campaign
 title: Traccia dello stack in Linux
 description: Traccia dello stack in Linux
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
+badge-v7-prem: label="on-premise e ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 91662d6d-2177-4440-b31f-7b031bd953cb
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 11%
+source-wordcount: '144'
+ht-degree: 16%
 
 ---
 
@@ -26,7 +27,6 @@ A **analisi dello stack** rappresenta una traccia contenuta in una **core** digi
 >* A **core** il file è denominato **core.`<num>`**.
 >* **gdb - Il debugger GNU** deve essere installato nel computer.
 >
-
 
 L’assistenza tecnica Adobe Campaign può richiederti questo **analisi dello stack**. Per ottenerlo, immettete i seguenti comandi in Linux:
 

@@ -2,14 +2,15 @@
 product: campaign
 title: Utilizzare Adobe Campaign Explorer
 description: Scopri come utilizzare Campaign Explorer
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Overview
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f91d69a4-b794-40f0-b450-de862d7333e2
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '449'
 ht-degree: 3%
 
 ---
@@ -50,24 +51,24 @@ Scopri come impostare le autorizzazioni sulle cartelle [in questa sezione](acces
 
 * **Utilizzare le cartelle incorporate**
 
-   L’utilizzo delle cartelle incorporate semplifica l’utilizzo, la manutenzione e la risoluzione dei problemi dell’applicazione da parte degli utenti non coinvolti nel progetto. Non devi creare strutture di cartelle personalizzate per destinatari, elenchi, consegne e così via, ma utilizza le cartelle standard come Amministrazione, Profili e destinazioni, Gestione campagne.
+  L’utilizzo delle cartelle incorporate semplifica l’utilizzo, la manutenzione e la risoluzione dei problemi dell’applicazione da parte degli utenti non coinvolti nel progetto. Non devi creare strutture di cartelle personalizzate per destinatari, elenchi, consegne e così via, ma utilizza le cartelle standard come Amministrazione, Profili e destinazioni, Gestione campagne.
 
 * **Creare sottocartelle**
 
-   Posiziona i flussi di lavoro tecnici nella cartella standard: Amministrazione / Produzione / Flussi di lavoro tecnici e crea sottodirectory per tipo di flusso di lavoro.
+  Posiziona i flussi di lavoro tecnici nella cartella standard: Amministrazione / Produzione / Flussi di lavoro tecnici e crea sottodirectory per tipo di flusso di lavoro.
 
 * **Impostare una convenzione di denominazione**
 
-   Ad esempio, puoi denominare i flussi di lavoro in ordine alfabetico, in modo che vengano visualizzati ordinati in base all’ordine di esecuzione.
+  Ad esempio, puoi denominare i flussi di lavoro in ordine alfabetico, in modo che vengano visualizzati ordinati in base all’ordine di esecuzione.
 
-   Ad esempio:
+  Ad esempio:
 
    * A1 - destinatari delle importazioni, inizia alle 10:00;
    * A2 - l&#39;importazione dei biglietti inizia alle 11:00.
 
 * **Creare modelli con cui iniziare gli utenti**
 
-   Crea modelli di consegna, modelli di flusso di lavoro e modelli di campagna specifici per gli utenti. Questa struttura può risparmiare tempo e garantire che vengano utilizzate la mappatura e le tipologie di consegna corrette per ogni utente.
+  Crea modelli di consegna, modelli di flusso di lavoro e modelli di campagna specifici per gli utenti. Questa struttura può risparmiare tempo e garantire che vengano utilizzate la mappatura e le tipologie di consegna corrette per ogni utente.
 
 ## Risoluzione dello schermo {#screen-resolution}
 

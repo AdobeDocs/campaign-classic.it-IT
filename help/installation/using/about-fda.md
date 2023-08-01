@@ -2,13 +2,13 @@
 product: campaign
 title: Introduzione a Federated Data Access
 description: Scopri come accedere ed elaborare i dati in un database esterno
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Federated Data Access
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 exl-id: 9d8d1e9c-63e4-40c4-8338-b921d08ea405
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 0%
+source-wordcount: '170'
+ht-degree: 1%
 
 ---
 
@@ -27,7 +27,7 @@ Per utilizzare questa funzionalità, i prerequisiti sono elencati di seguito:
 * **Configurazione**: l’elenco dei database esterni compatibili dipende dai [modello di hosting](../../installation/using/hosting-models.md).
 * **Versione database esterno**: è necessario disporre di un database esterno compatibile con il modulo FDA di Adobe Campaign.
 
-   L’elenco dei sistemi di database e delle versioni compatibili per ciascun modello di hosting è descritto in Campaign [Matrice di compatibilità](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
+  L’elenco dei sistemi di database e delle versioni compatibili per ciascun modello di hosting è descritto in Campaign [Matrice di compatibilità](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
 
 * **Autorizzazioni**: gli utenti devono inoltre disporre [autorizzazioni necessarie](../../installation/using/remote-database-access-rights.md) in Adobe Campaign e sul database esterno.
 

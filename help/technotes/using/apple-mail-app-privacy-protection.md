@@ -1,9 +1,10 @@
 ---
 product: campaign
 title: Protezione della privacy della posta nell’app Mail di Apple
+feature: Technote, Privacy, Privacy Tools
 description: Scopri in che modo le campagne possono essere influenzate dalla funzione di protezione della privacy della posta di Apple
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
-source-git-commit: 83fe7eb4f857306ac1c8bb3a93a9393b76ae1e3c
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '2056'
 ht-degree: 1%
@@ -61,21 +62,21 @@ Per raccogliere informazioni dai dati di Adobe Campaign, puoi utilizzare rapport
 
 * **[!UICONTROL Operating Systems]** rapporto
 
-   Per identificare la proporzione di visitatori per sistema operativo e per versione, utilizza questo rapporto. [Ulteriori informazioni](../../reporting/using/global-reports.md#operating-systems).
+  Per identificare la proporzione di visitatori per sistema operativo e per versione, utilizza questo rapporto. [Ulteriori informazioni](../../reporting/using/global-reports.md#operating-systems).
 
-   Puoi visualizzare il raggruppamento dei visitatori per sistema operativo in relazione al numero totale di visitatori.
+  Puoi visualizzare il raggruppamento dei visitatori per sistema operativo in relazione al numero totale di visitatori.
 
-   ![](../../reporting/using/assets/s_ncs_user_os_report.png)
+  ![](../../reporting/using/assets/s_ncs_user_os_report.png)
 
-   Per ogni sistema operativo, puoi visualizzare il raggruppamento dei visitatori per versione del sistema operativo.
+  Per ogni sistema operativo, puoi visualizzare il raggruppamento dei visitatori per versione del sistema operativo.
 
-   ![](../../reporting/using/assets/s_ncs_user_os_report2.png)
+  ![](../../reporting/using/assets/s_ncs_user_os_report2.png)
 
 * **[!UICONTROL Breakdown of opens]** rapporto
 
-   Per identificare la proporzione di aperture di e-mail per sistema operativo, utilizza questo rapporto. [Ulteriori informazioni](../../reporting/using/global-reports.md#breakdown-of-opens).
+  Per identificare la proporzione di aperture di e-mail per sistema operativo, utilizza questo rapporto. [Ulteriori informazioni](../../reporting/using/global-reports.md#breakdown-of-opens).
 
-   ![](../../reporting/using/assets/dlv_useragent_report.png)
+  ![](../../reporting/using/assets/dlv_useragent_report.png)
 
 ### Determinare il modo in cui viene utilizzato il tracciamento dell’apertura delle e-mail {#find-email-open-tracking}
 
@@ -89,21 +90,21 @@ In questo esempio, un addetto al marketing desidera inviare un’offerta di rico
 
 * Puoi utilizzare le aperture e-mail come criterio di targeting in una query.
 
-   Puoi specificare, come condizione di filtro, che il tipo di URL dei registri di tracciamento di una consegna specifica deve essere impostato su **[!UICONTROL Open]**.
+  Puoi specificare, come condizione di filtro, che il tipo di URL dei registri di tracciamento di una consegna specifica deve essere impostato su **[!UICONTROL Open]**.
 
-   ![](assets/identify-email-open-tracking-2.png)
+  ![](assets/identify-email-open-tracking-2.png)
 
 * Puoi utilizzare un filtro predefinito. [Ulteriori informazioni](../../workflow/using/creating-a-filter.md).
 
-   ![](assets/identify-email-open-tracking-3.png)
+  ![](assets/identify-email-open-tracking-3.png)
 
-   Puoi utilizzare questo filtro predefinito nelle attività di query nei flussi di lavoro.
+  Puoi utilizzare questo filtro predefinito nelle attività di query nei flussi di lavoro.
 
-   ![](assets/identify-email-open-tracking-4.png)
+  ![](assets/identify-email-open-tracking-4.png)
 
-   >[!NOTE]
-   >
-   >Da un flusso di lavoro non è possibile visualizzare i criteri di targeting di un filtro predefinito.
+  >[!NOTE]
+  >
+  >Da un flusso di lavoro non è possibile visualizzare i criteri di targeting di un filtro predefinito.
 
 Per recuperare l’elenco dei flussi di lavoro in cui le e-mail aperte vengono utilizzate come criterio di targeting, è necessario eseguire una query sul `xtk:workflow` schema. Il contenuto del flusso di lavoro viene memorizzato in **[!UICONTROL XML memo (data)]** in formato XML.
 
@@ -326,7 +327,7 @@ Si consiglia vivamente di conservare questi dati, per diversi motivi:
 
 * Questi dati vengono conservati da Adobe Campaign per un periodo limitato. Il periodo di conservazione varia a seconda della configurazione dell’istanza.
 
-   Controlla la configurazione dell’istanza. [Ulteriori informazioni](../../platform/using/privacy-management.md#data-retention).
+  Controlla la configurazione dell’istanza. [Ulteriori informazioni](../../platform/using/privacy-management.md#data-retention).
 
 * A parte le modifiche recenti di Apple, puoi utilizzare i dati di tracciamento per aggiungere un valore immenso per stimolare il coinvolgimento del pubblico.
 * Apple potrebbe apportare ulteriori modifiche alla sua app Mail nativa e alla sua funzione di protezione della privacy della posta.
@@ -433,9 +434,9 @@ Questi esempi mostrano come utilizzare i flussi di lavoro per suddividere i reco
 
    1. Un **[!UICONTROL End]** l&#39;attività segue ogni **[!UICONTROL Deduplication]** attività.
 
-   Questo tipo di flusso di lavoro è utile se memorizzi i destinatari solo nella tabella dei destinatari predefinita per il targeting.
+  Questo tipo di flusso di lavoro è utile se memorizzi i destinatari solo nella tabella dei destinatari predefinita per il targeting.
 
-   ![](assets/export-tracking-data-wkf-1.png)
+  ![](assets/export-tracking-data-wkf-1.png)
 
 * Il secondo esempio di flusso di lavoro comprende le seguenti attività:
 
@@ -445,8 +446,9 @@ Questi esempi mostrano come utilizzare i flussi di lavoro per suddividere i reco
 
       * In una transizione, il **[!UICONTROL Change dimension]** L’attività viene utilizzata per trovare i destinatari a cui si riferisce il registro di tracciamento.
       * Nell&#39;altra transizione, il **[!UICONTROL Split]** L’attività viene utilizzata per suddividere la selezione per applicazione e-mail, browser, sistema operativo e dispositivo.
+
    1. Un **[!UICONTROL End]** l&#39;attività segue ogni transizione dopo il **[!UICONTROL Split]** attività.
 
-   Questo tipo di flusso di lavoro è utile se i destinatari vengono memorizzati in una tabella diversa da quella predefinita.
+  Questo tipo di flusso di lavoro è utile se i destinatari vengono memorizzati in una tabella diversa da quella predefinita.
 
-   ![](assets/export-tracking-data-wkf-2.png)
+  ![](assets/export-tracking-data-wkf-2.png)

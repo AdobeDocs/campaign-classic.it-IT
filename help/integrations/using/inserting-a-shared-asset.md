@@ -2,11 +2,12 @@
 product: campaign
 title: Inserimento di una risorsa condivisa
 description: Inserimento di una risorsa condivisa
+feature: Asset Sharing
 audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: 30a94bce-6d96-4a6d-a62f-7451c822f0e3
-source-git-commit: d399c4800fe6c5b128a6ccb5fec15262cbef5ee8
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 7%
@@ -27,15 +28,15 @@ Le risorse condivise da Adobe Experience Cloud possono essere utilizzate nelle e
 
    * Se utilizzi il [modalità di modifica standard](../../delivery/using/defining-the-email-content.md#adding-images), seleziona **[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**.
 
-      ![](assets/dam_insert_image_standard.png)
+     ![](assets/dam_insert_image_standard.png)
 
    * Se utilizzi il [modalità di modifica avanzata](../../web/using/about-campaign-html-editor.md) (DCE), vai a un blocco di immagine, quindi tramite il menu contestuale, seleziona **[!UICONTROL Select a shared asset]**.
 
-      ![](assets/dam_insert_image_dce.png)
+     ![](assets/dam_insert_image_dce.png)
 
-      >[!NOTE]
-      >
-      >Impossibile inserire immagini condivise da Adobe Campaign in [accesso web](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) quando si utilizza il DCE.
+     >[!NOTE]
+     >
+     >Impossibile inserire immagini condivise da Adobe Campaign in [accesso web](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) quando si utilizza il DCE.
 
 1. Nella finestra di selezione visualizzata, seleziona un’immagine, quindi conferma.
 

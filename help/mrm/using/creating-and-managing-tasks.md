@@ -2,14 +2,15 @@
 product: campaign
 title: Creazione e gestione di attività
 description: Creazione e gestione di attività
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Resource Management
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3729'
+source-wordcount: '3736'
 ht-degree: 1%
 
 ---
@@ -308,7 +309,7 @@ L’attività di creazione delle risorse di marketing interagisce con la risorsa
 * Gli operatori possono lavorare sulla risorsa come di consueto (download o caricamento, blocco e sblocco): questo non influisce sull’attività.
 * L’approvazione e la pubblicazione delle risorse possono essere eseguite tramite l’attività: se **[!UICONTROL Publish the marketing resource]** se questa opzione è abilitata, la risorsa viene approvata e pubblicata automaticamente al termine dell’attività. Se l&#39;opzione non è abilitata, l&#39;attività e la risorsa non interagiscono: agire su una delle due non influirà sull&#39;altra.
 
-   È possibile utilizzare una serie di attività collegate per definire un ciclo di approvazione completo. Controlla la **[!UICONTROL Publish the marketing resource]** opzione solo per l’ultima attività: per pubblicare la risorsa è necessario che tutte le attività siano state completate. Inoltre, quando crei un’attività di risorsa di marketing figlio, la risorsa viene selezionata automaticamente nell’attività figlio.
+  È possibile utilizzare una serie di attività collegate per definire un ciclo di approvazione completo. Controlla la **[!UICONTROL Publish the marketing resource]** opzione solo per l’ultima attività: per pubblicare la risorsa è necessario che tutte le attività siano state completate. Inoltre, quando crei un’attività di risorsa di marketing figlio, la risorsa viene selezionata automaticamente nell’attività figlio.
 
    * **Tramite la risorsa**: se invii la risorsa per l’approvazione o la approvi, queste azioni non influiranno sull’attività.
    * **Tramite l’attività**: se il **[!UICONTROL Publish the marketing resource]** è selezionata nell’attività, la risorsa viene approvata e pubblicata automaticamente al termine dell’attività (vedi sopra). Se l&#39;opzione non è selezionata, l&#39;attività e la risorsa non interagiscono: agire su una delle due non influirà sull&#39;altra.
@@ -319,7 +320,7 @@ La persona che rivede l’attività non è necessaria se è la stessa persona ch
 
 ![](assets/mrm_task_asset_creation.png)
 
-In **[!UICONTROL Marketing resource]** , definisci la risorsa da gestire tramite questa attività. È possibile eseguire le seguenti operazioni:
+In **[!UICONTROL Marketing resource]** , definisci la risorsa da gestire tramite questa attività. Puoi:
 
 * Selezionare una risorsa esistente: l’elenco a discesa offre tutte le risorse con lo stato **[!UICONTROL Being edited]**.
 * Creazione di una risorsa: fai clic su **[!UICONTROL Select the link]** , quindi fare clic sul pulsante **[!UICONTROL Create]** icona.
@@ -350,7 +351,7 @@ Tuttavia, se è già stata creata un&#39;attività che si desidera collegare a u
 
 ### Attività di notifica {#notification-task}
 
-Le attività di notifica ti consentono di pianificare le consegne e-mail (a un operatore, a un gruppo di operatori, a un fornitore di servizi, ecc.). Questo consente di pianificare i promemoria, ad esempio per avvisare qualcuno che una campagna sta per terminare o per inviare documenti prima dell’inizio di una campagna in modo che gli operatori possano prepararla. Potrai quindi tenere traccia delle tue comunicazioni nella campagna o nel programma e seguire da vicino le azioni svolte.
+Le attività di notifica ti consentono di pianificare le consegne e-mail (a un operatore, a un gruppo di operatori, a un fornitore di servizi, ecc.). Questo consente di pianificare i promemoria, ad esempio per avvisare qualcuno che una campagna sta per terminare o per inviare documenti prima dell’inizio di una campagna in modo che gli operatori possano prepararla. Potrai quindi tenere traccia delle tue comunicazioni nella campagna o nel programma e seguire con attenzione le azioni svolte.
 
 #### Ciclo di vita {#life-cycle}
 
@@ -375,7 +376,7 @@ Durante la creazione, è necessario immettere i seguenti elementi nell&#39;attiv
 * **Data di fine attività**: data in cui lo stato dell&#39;attività cambia in **[!UICONTROL Finished]**. Per impostazione predefinita, la data di fine è identica alla data di inizio. Tuttavia, l’assegnazione di una durata all’attività ti consente di simboleggiare il tempo di azione dell’operatore nella pianificazione, se necessario.
 * **[!UICONTROL Description]** : il testo inserito qui verrà visualizzato nel corpo dell’e-mail di notifica.
 
-   ![](assets/mrm_task_notif_dashboard_msg.png)
+  ![](assets/mrm_task_notif_dashboard_msg.png)
 
 Puoi aggiungere un allegato all’attività e all’e-mail di notifica. A questo scopo, fai clic su **[!UICONTROL Documents]** nella barra degli strumenti nell’angolo in alto a destra.
 
@@ -437,7 +438,6 @@ Un&#39;attività può essere: **[!UICONTROL Scheduled]**, **[!UICONTROL In progr
 >* Anche se il periodo di validità è terminato, le attività non chiuse vengono comunque visualizzate nell&#39;elenco delle attività in corso. Un avviso avvisa gli operatori che l&#39;attività è in ritardo.
 >
 
-
 ### Stato di avanzamento di un&#39;attività {#progress-status-of-a-task}
 
 Oltre allo stato di esecuzione, un&#39;attività può essere associata a uno stato di avanzamento: **[!UICONTROL Late]**, **[!UICONTROL To approve]**, **[!UICONTROL To do today]** o **[!UICONTROL To do this week]**. Queste informazioni vengono immesse automaticamente in base alla programmazione delle attività.
@@ -466,7 +466,7 @@ Di seguito sono riportate le fasi di un ciclo di vita completo di un&#39;attivit
    * tramite l’e-mail di notifica.
    * tramite la console o l’interfaccia web, nel dashboard attività.
 
-      ![](assets/s_ncs_user_task_start_rea.png)
+     ![](assets/s_ncs_user_task_start_rea.png)
 
 1. Ogni volta che un partecipante approva un job, lo stato di avanzamento del task viene aggiornato.
 

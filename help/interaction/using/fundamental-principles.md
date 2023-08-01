@@ -2,15 +2,16 @@
 product: campaign
 title: Principi fondamentali
 description: Principi fondamentali
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: general-operation
 exl-id: b13ecfc9-1723-42b2-ab30-d5637cc3d0dd
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 1%
+source-wordcount: '345'
+ht-degree: 2%
 
 ---
 
@@ -24,9 +25,9 @@ Esistono due ambienti per ogni dimensione di targeting utilizzata durante la ges
 
 * Un ambiente di progettazione in cui il gestore delle offerte si occupa di creare e classificare le offerte, modificarle e avviare il processo di approvazione in modo che possano essere utilizzate. In questo ambiente sono definite anche le regole per ogni categoria, gli spazi di offerta su cui possono essere presentate le offerte e i filtri predefiniti utilizzati per definire l’idoneità di un’offerta.
 
-   Le categorie possono inoltre essere pubblicate manualmente nell&#39;ambiente online.
+  Le categorie possono inoltre essere pubblicate manualmente nell&#39;ambiente online.
 
-   Il processo di approvazione delle offerte è descritto nel [Approvazione e attivazione di un’offerta](../../interaction/using/approving-and-activating-an-offer.md) sezione.
+  Il processo di approvazione delle offerte è descritto nel [Approvazione e attivazione di un’offerta](../../interaction/using/approving-and-activating-an-offer.md) sezione.
 
 * Ambiente live in cui sono disponibili offerte approvate dall’ambiente di progettazione, nonché vari spazi di offerta, filtri, categorie e regole configurati nell’ambiente di progettazione. Durante una chiamata al motore di offerta, il motore utilizzerà sempre le offerte dell’ambiente live.
 

@@ -2,13 +2,13 @@
 product: campaign
 title: Tracciare le visite in un’applicazione web
 description: Tracciare le visite in un’applicazione web
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Web Apps
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+feature: Web Apps, Reporting, Monitoring
 exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '413'
 ht-degree: 4%
 
 ---
@@ -24,21 +24,21 @@ In questo modo, puoi definire diversi percorsi di navigazione e valutarne il suc
 I principali miglioramenti presenti in questa versione sono i seguenti:
 
 * Possibilità di inserire diversi tag di tracciamento nella stessa pagina per semplificare la definizione dei percorsi di navigazione (ad esempio acquisto, abbonamento, restituzione, ecc.).
-* Visualizzazione dei percorsi di navigazione e dei tag di tracciamento delle diverse pagine nel dashboard dell&#39;applicazione Web.
+* Visualizzazione dei percorsi di navigazione e dei tag di tracciamento delle diverse pagine nel dashboard dell’applicazione Web.
 
-   ![](assets/trackers_1.png)
+  ![](assets/trackers_1.png)
 
 * Generazione di un rapporto di tracciamento completo.
 
-   ![](assets/trackers_5.png)
+  ![](assets/trackers_5.png)
 
-   I principali indicatori sono i seguenti:
+  I principali indicatori sono i seguenti:
 
    * **Tasso di conversione**: numero di persone che hanno visualizzato tutti i passaggi di un percorso di navigazione.
    * **Percentuale non recapitate**: numero di persone che hanno visualizzato solo il primo passaggio
    * **Funnel di conversione**: tasso di perdita tra ciascun passaggio.
 
-   Inoltre, un **Settore** grafico tipo mostra la popolazione in base alla sua origine.
+  Inoltre, un **Settore** grafico tipo mostra la popolazione in base alla sua origine.
 
 ## Identificazione dell’origine del traffico {#identifying-the-traffic-source}
 

@@ -2,12 +2,13 @@
 product: campaign
 title: Modificare i moduli
 description: Modificare i moduli
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Configuration
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1710'
 ht-degree: 2%
 
 ---
@@ -48,39 +49,39 @@ Per visualizzare l&#39;anteprima di un modulo, fare clic su **[!UICONTROL Previe
 
 * Schermata console
 
-   Questo è il tipo di modulo predefinito. Il modulo comprende una singola pagina.
+  Questo è il tipo di modulo predefinito. Il modulo comprende una singola pagina.
 
-   ![](assets/console_screen_form.png)
+  ![](assets/console_screen_form.png)
 
 * Gestione dei contenuti
 
-   Utilizza questo tipo di modulo per la gestione dei contenuti. Vedi questo [caso d’uso](../../delivery/using/use-case--creating-content-management.md).
+  Utilizza questo tipo di modulo per la gestione dei contenuti. Vedi questo [caso d’uso](../../delivery/using/use-case--creating-content-management.md).
 
-   ![](../../delivery/using/assets/d_ncs_content_form13.png)
+  ![](../../delivery/using/assets/d_ncs_content_form13.png)
 
 * Assistente virtuale
 
-   Questo modulo comprende più schermi mobili ordinati in una sequenza specifica. Gli utenti possono passare da una schermata all’altra. [Ulteriori informazioni](form-structure.md#wizards).
+  Questo modulo comprende più schermi mobili ordinati in una sequenza specifica. Gli utenti possono passare da una schermata all’altra. [Ulteriori informazioni](form-structure.md#wizards).
 
 * Iconbox
 
-   Questo modulo comprende più pagine. Per spostarsi nel modulo, gli utenti selezionano le icone a sinistra del modulo.
+  Questo modulo comprende più pagine. Per spostarsi nel modulo, gli utenti selezionano le icone a sinistra del modulo.
 
-   ![](assets/iconbox_form_preview.png)
+  ![](assets/iconbox_form_preview.png)
 
 * Notebook
 
-   Questo modulo comprende più pagine. Per spostarsi nel modulo, gli utenti selezionano le schede nella parte superiore del modulo.
+  Questo modulo comprende più pagine. Per spostarsi nel modulo, gli utenti selezionano le schede nella parte superiore del modulo.
 
-   ![](assets/notebook_form_preview.png)
+  ![](assets/notebook_form_preview.png)
 
 * Riquadro verticale
 
-   In questo modulo viene visualizzata una struttura di spostamento.
+  In questo modulo viene visualizzata una struttura di spostamento.
 
 * Riquadro orizzontale
 
-   Questo modulo mostra un elenco di elementi.
+  Questo modulo mostra un elenco di elementi.
 
 ## Contenitori
 
@@ -185,28 +186,28 @@ Per creare un modulo, eseguire la procedura seguente:
 
    * Specifica il nome del modulo e lo spazio dei nomi.
 
-      Il nome del modulo e lo spazio dei nomi possono corrispondere allo schema di dati correlato.  Questo esempio mostra un modulo per `cus:order` schema dati:
+     Il nome del modulo e lo spazio dei nomi possono corrispondere allo schema di dati correlato.  Questo esempio mostra un modulo per `cus:order` schema dati:
 
-      ```xml
-      <form entitySchema="xtk:form" img="xtk:form.png" label="Order" name="order" namespace="cus" type="iconbox" xtkschema="xtk:form">
-        […]
-      </form>
-      ```
+     ```xml
+     <form entitySchema="xtk:form" img="xtk:form.png" label="Order" name="order" namespace="cus" type="iconbox" xtkschema="xtk:form">
+       […]
+     </form>
+     ```
 
-      In alternativa, è possibile specificare esplicitamente lo schema dati nel `entity-schema` attributo.
+     In alternativa, è possibile specificare esplicitamente lo schema dati nel `entity-schema` attributo.
 
-      ```xml
-      <form entity-schema="cus:stockLine" entitySchema="xtk:form" img="xtk:form.png" label="Stock order" name="stockOrder" namespace="cus" xtkschema="xtk:form">
-        […]
-      </form>
-      ```
+     ```xml
+     <form entity-schema="cus:stockLine" entitySchema="xtk:form" img="xtk:form.png" label="Stock order" name="stockOrder" namespace="cus" xtkschema="xtk:form">
+       […]
+     </form>
+     ```
 
    * Specificare l&#39;etichetta da visualizzare nel modulo.
    * Facoltativamente, specificare il tipo di modulo. Se non si specifica un tipo di modulo, per impostazione predefinita viene utilizzato il tipo di schermata della console.
 
-      ![](assets/input-form-create-2.png)
+     ![](assets/input-form-create-2.png)
 
-      Se si progetta un modulo multipagina, è possibile omettere il tipo di modulo nel `<form>` e specificare il tipo in un contenitore.
+     Se si progetta un modulo multipagina, è possibile omettere il tipo di modulo nel `<form>` e specificare il tipo in un contenitore.
 
 1. Fai clic su **[!UICONTROL Save]**.
 
@@ -320,6 +321,7 @@ Per modificare il tipo di un modulo esistente in `iconbox`, effettua le seguenti
           </container>
       </form>
       ```
+
    In alternativa, rimuovi il `type="frame"` attributo esistente `<container>` elementi.
 
 ### Creare un modulo per blocchi appunti
@@ -374,7 +376,7 @@ Questo esempio mostra un modulo complesso:
 
 * Il modulo di primo livello è un modulo iconbox. Questo modulo comprende due contenitori etichettati **Generale** e **Dettagli**.
 
-   Di conseguenza, nella maschera esterna viene visualizzato **Generale** e **Dettagli** pagine al livello superiore. Per accedere a queste pagine, gli utenti possono fare clic sulle icone a sinistra del modulo.
+  Di conseguenza, nella maschera esterna viene visualizzato **Generale** e **Dettagli** pagine al livello superiore. Per accedere a queste pagine, gli utenti possono fare clic sulle icone a sinistra del modulo.
 
 * La sottomaschera è una maschera del blocco appunti nidificata all&#39;interno del **Generale** contenitore. La sottomaschera comprende due contenitori etichettati **Nome** e **Contatto**.
 
@@ -411,7 +413,7 @@ Questo esempio mostra un modulo complesso:
 
 * Il modulo di primo livello è un modulo iconbox. Questo modulo comprende due contenitori etichettati **Generale** e **Dettagli**.
 
-   Di conseguenza, nella maschera esterna viene visualizzato **Generale** e **Dettagli** pagine al livello superiore. Per accedere a queste pagine, gli utenti possono fare clic sulle icone a sinistra del modulo.
+  Di conseguenza, nella maschera esterna viene visualizzato **Generale** e **Dettagli** pagine al livello superiore. Per accedere a queste pagine, gli utenti possono fare clic sulle icone a sinistra del modulo.
 
 * La sottomaschera è una maschera del blocco appunti nidificata all&#39;interno del **Generale** contenitore. La sottomaschera comprende due contenitori etichettati **Nome** e **Contatto**.
 

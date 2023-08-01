@@ -2,12 +2,12 @@
 product: campaign
 title: Audit trail
 description: Scopri come monitorare l’istanza con Campaign Audit trail
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Audit Trail, Monitoring
+feature: Audit Trail, Monitoring, Workflows
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '468'
 ht-degree: 3%
 
 ---
@@ -29,7 +29,7 @@ Audit Trail è costituito da tre componenti:
 
 * **Audit trail dello schema**: controlla le attività e le ultime modifiche apportate agli schemi.
 
-   Per ulteriori informazioni sugli schemi, consulta questa [pagina](../../configuration/using/data-schemas.md).
+  Per ulteriori informazioni sugli schemi, consulta questa [pagina](../../configuration/using/data-schemas.md).
 
 * **Audit trail del flusso di lavoro**: controlla le attività e le ultime modifiche apportate ai flussi di lavoro e, inoltre, lo stato dei flussi di lavoro, ad esempio:
 
@@ -42,13 +42,13 @@ Audit Trail è costituito da tre componenti:
    * Attivazione uguale all&#39;azione Esegui attività in sospeso ora
    * Arresto totale
 
-   Per ulteriori informazioni sui flussi di lavoro, consulta questa [pagina](../../workflow/using/about-workflows.md).
+  Per ulteriori informazioni sui flussi di lavoro, consulta questa [pagina](../../workflow/using/about-workflows.md).
 
-   Per ulteriori informazioni su come monitorare i flussi di lavoro, consulta [sezione dedicata](../../workflow/using/monitoring-workflow-execution.md).
+  Per ulteriori informazioni su come monitorare i flussi di lavoro, consulta [sezione dedicata](../../workflow/using/monitoring-workflow-execution.md).
 
 * **Opzione audit trail**: controlla le attività e le ultime modifiche apportate alle opzioni.
 
-   Per ulteriori informazioni sulle opzioni, consulta questa [pagina](../../installation/using/configuring-campaign-options.md).
+  Per ulteriori informazioni sulle opzioni, consulta questa [pagina](../../installation/using/configuring-campaign-options.md).
 
 ## Accesso a Audit trail {#accessing-audit-trail}
 

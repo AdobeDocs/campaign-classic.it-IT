@@ -2,14 +2,15 @@
 product: campaign
 title: Archiviazione di e-mail
 description: Archiviazione di e-mail
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings, Email
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1366'
 ht-degree: 5%
 
 ---
@@ -85,16 +86,16 @@ Una volta definito il percorso della cartella locale, aggiungi e modifica i segu
 
 * **compressionFormat**: formato utilizzato per comprimere i file .eml. I valori possibili sono:
 
-   **0**: nessuna compressione (valore predefinito)
+  **0**: nessuna compressione (valore predefinito)
 
-   **1**: compressione (formato .zip)
+  **1**: compressione (formato .zip)
 
 * **compressBatchSize**: numero di file eml aggiunti a un archivio (file .zip).
 * **archivingType**: strategia di archiviazione da utilizzare. I valori possibili sono:
 
-   **0**: le copie non elaborate delle e-mail inviate vengono salvate in formato .eml in **dataLogPath** cartella (valore predefinito). Una copia di archiviazione del **`<deliveryid>-<broadlogid>-sent.eml`** il file viene salvato in **dataLogPath/archivi** cartella. Il percorso del file e-mail inviato diventa **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`**.
+  **0**: le copie non elaborate delle e-mail inviate vengono salvate in formato .eml in **dataLogPath** cartella (valore predefinito). Una copia di archiviazione del **`<deliveryid>-<broadlogid>-sent.eml`** il file viene salvato in **dataLogPath/archivi** cartella. Il percorso del file e-mail inviato diventa **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`**.
 
-   **1**: le copie non elaborate delle e-mail inviate vengono salvate in formato .eml in **dataLogPath** e vengono inviati all’indirizzo e-mail Ccn tramite SMTP. Una volta inviate le copie dell&#39;e-mail all&#39;indirizzo Ccn, il nome del file di archivio diventa **`<deliveryid>-<broadlogid>-sent-archived.eml`** e il file viene spostato in **dataLogPath/archivi** cartella. Il percorso del file e-mail archiviato in Ccn e inviato è quindi **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`**.
+  **1**: le copie non elaborate delle e-mail inviate vengono salvate in formato .eml in **dataLogPath** e vengono inviati all’indirizzo e-mail Ccn tramite SMTP. Una volta inviate le copie dell&#39;e-mail all&#39;indirizzo Ccn, il nome del file di archivio diventa **`<deliveryid>-<broadlogid>-sent-archived.eml`** e il file viene spostato in **dataLogPath/archivi** cartella. Il percorso del file e-mail archiviato in Ccn e inviato è quindi **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`**.
 
 * **expirationDelay**: numero di giorni in cui i file eml vengono conservati per l’archiviazione. Dopo questo ritardo, vengono automaticamente spostati nel **dataLogPath/archivi** cartella per la compressione. Per impostazione predefinita, i file .eml scadono dopo due giorni.
 * **purgeArchivesDelay**: numero di giorni in cui gli archivi vengono conservati nel **dataLogPath/`<archives>`** cartella. Dopo tale periodo, vengono eliminati definitivamente. L’eliminazione inizia quando viene avviato l’MTA. Per impostazione predefinita viene eseguita ogni sette giorni.

@@ -2,12 +2,12 @@
 product: campaign
 title: Eseguire una query tramite una relazione molti-a-molti
 description: Scopri come eseguire query utilizzando una relazione molti-a-molti
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Query Editor
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
+feature: Query Editor, Workflows
 exl-id: e1d40ba1-2493-45c1-bd54-af9cb332028d
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
@@ -22,15 +22,15 @@ Questo esempio mostra anche come configurare un filtro correlato alla scelta di 
 
 * Quale tabella deve essere selezionata?
 
-   Tabella dei destinatari (**nms:destinatario**)
+  Tabella dei destinatari (**nms:destinatario**)
 
 * Campi da selezionare per la colonna di output
 
-   Chiave primaria, cognome, nome e indirizzo e-mail
+  Chiave primaria, cognome, nome e indirizzo e-mail
 
 * In base a quali criteri vengono filtrate le informazioni
 
-   In base ai registri di consegna dei destinatari che risalgono a 7 giorni prima di oggi
+  In base ai registri di consegna dei destinatari che risalgono a 7 giorni prima di oggi
 
 Applica i seguenti passaggi:
 
@@ -48,21 +48,21 @@ Applica i seguenti passaggi:
 
    * Per iniziare, seleziona la **[!UICONTROL Recipient delivery logs (broadlog)]** elemento di raccolta (nodo arancione) per il primo **[!UICONTROL Value]** colonna.
 
-      ![](assets/query_editor_nveau_67.png)
+     ![](assets/query_editor_nveau_67.png)
 
-      Scegli la **[!UICONTROL do not exist as]** operatore. Non è necessario selezionare un secondo valore in questa riga.
+     Scegli la **[!UICONTROL do not exist as]** operatore. Non è necessario selezionare un secondo valore in questa riga.
 
    * Il contenuto della seconda condizione di filtro dipende dalla prima. Ecco, il **[!UICONTROL Event date]** il campo è offerto direttamente nel **[!UICONTROL Recipient delivery logs]** perché è presente un collegamento a questa tabella.
 
-      ![](assets/query_editor_nveau_36.png)
+     ![](assets/query_editor_nveau_36.png)
 
-      Seleziona **[!UICONTROL Event date]** con **[!UICONTROL greater than or equal to]** operatore. Seleziona la **[!UICONTROL DaysAgo (7)]** valore. A questo scopo, fai clic su **[!UICONTROL Edit expression]** nel **[!UICONTROL Value]** campo. In **[!UICONTROL Formula type]** finestra, seleziona **[!UICONTROL Process on dates]** e **[!UICONTROL Current date minus n days]**, specificando &quot;7&quot; come valore.
+     Seleziona **[!UICONTROL Event date]** con **[!UICONTROL greater than or equal to]** operatore. Seleziona la **[!UICONTROL DaysAgo (7)]** valore. A questo scopo, fai clic su **[!UICONTROL Edit expression]** nel **[!UICONTROL Value]** campo. In **[!UICONTROL Formula type]** finestra, seleziona **[!UICONTROL Process on dates]** e **[!UICONTROL Current date minus n days]**, specificando &quot;7&quot; come valore.
 
-      ![](assets/query_editor_nveau_37.png)
+     ![](assets/query_editor_nveau_37.png)
 
-      La condizione del filtro è configurata.
+     La condizione del filtro è configurata.
 
-      ![](assets/query_editor_nveau_38.png)
+     ![](assets/query_editor_nveau_38.png)
 
 1. In **[!UICONTROL Data formatting]** , impostare i cognomi in maiuscolo. Fai clic su **[!UICONTROL Last name]** riga in **[!UICONTROL Transformation]** e seleziona **[!UICONTROL Switch to upper case]** nel menu a discesa.
 

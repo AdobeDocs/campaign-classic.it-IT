@@ -2,15 +2,16 @@
 product: campaign
 title: Introduzione agli aggiornamenti della build
 description: Scopri i passaggi chiave per l’aggiornamento a una nuova build
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring, Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
+badge-v7-prem: label="on-premise e ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2380'
 ht-degree: 3%
 
 ---
@@ -125,22 +126,22 @@ A tale scopo, segui la procedura indicata di seguito:
 
    * Verifica che l’unica parte di consegna sia quella con ID impostato su **0**:
 
-      ```
-      SELECT * FROM neolane.nmsdeliverypart;
-      ```
+     ```
+     SELECT * FROM neolane.nmsdeliverypart;
+     ```
 
    * Verifica che l’aggiornamento dello stato della consegna sia corretto:
 
-      ```
-      SELECT iSate, count(*) FROM neolane.nmsdeliveryGroup By iProd;
-      ```
+     ```
+     SELECT iSate, count(*) FROM neolane.nmsdeliveryGroup By iProd;
+     ```
 
    * Verifica che l’aggiornamento dello stato del flusso di lavoro sia corretto:
 
-      ```
-      SELECT iState, count (*) FROM neolane.xtkworkflowGROUP BY iState;
-      SELECT iStatus, count (*) FROM neolane.xtkworkflowGROUP BY iStatus;
-      ```
+     ```
+     SELECT iState, count (*) FROM neolane.xtkworkflowGROUP BY iState;
+     SELECT iStatus, count (*) FROM neolane.xtkworkflowGROUP BY iStatus;
+     ```
 
 ### Arresta servizi
 
@@ -154,6 +155,7 @@ Per sostituire tutti i file con la nuova versione, è necessario che tutte le is
    >[!NOTE]
    >
    >Verificare che il server di reindirizzamento (webmdl) sia arrestato, in modo che il file nlsrvmod.dll utilizzato da IIS possa essere sostituito con la nuova versione.
+   >
 
 1. Verificare che non siano attive attività eseguendo il comando **nlserver pdump** comando. Se non sono presenti attività, l’output deve essere simile al seguente:
 
@@ -188,6 +190,7 @@ Per sostituire tutti i file con la nuova versione, è necessario che tutte le is
    >[!NOTE]
    >
    >Questa operazione deve essere eseguita una sola volta e solo su un server applicazioni nlserverweb.
+   >
 
    Per sincronizzare un solo database, eseguire il comando seguente:
 
@@ -235,7 +238,7 @@ Quando la messaggistica transazionale (Centro messaggi) è abilitata nell’ista
    * Aggiorna database
    * Disconnetti e riconnetti
    * Importa pacchetto di amministrazione
-   * Importa pacchetto contenuti
+   * Importa pacchetto di contenuti
    * Importa pacchetto gestione contenuti
    * Disconnetti e riconnetti
    * Eseguire un rapido controllo di integrità dei flussi di lavoro
@@ -258,6 +261,7 @@ Nel contesto di un ambiente di mid-sourcing, è necessario eseguire questi passa
 >[!NOTE]
 >
 >Il server Mid-Sourcing deve sempre eseguire la stessa versione (o più recente) dei server di marketing.
+>
 
 ## In caso di conflitti
 
@@ -345,6 +349,7 @@ Per risolvere i conflitti sono disponibili tre opzioni: **Accetta la nuova versi
 
 >[!IMPORTANT]
 >Si consiglia vivamente di risolvere i conflitti.
+>
 
 ### Eseguire un&#39;unione{#perform-a-merge}
 
@@ -408,6 +413,7 @@ Di seguito sono riportati i passaggi per eseguire un’unione complessa:
 
 >[!IMPORTANT]
 >Per eseguire unioni complesse sono necessarie competenze di sviluppo.
+>
 
 **Argomenti correlati**
 

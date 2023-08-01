@@ -2,13 +2,13 @@
 product: campaign
 title: Risoluzione dei problemi di invio della consegna
 description: Ulteriori informazioni sulle prestazioni di consegna e su come risolvere i problemi relativi al monitoraggio della consegna
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Monitoring, Deliverability
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+feature: Monitoring, Deliverability, Troubleshooting
 exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '803'
 ht-degree: 1%
 
 ---
@@ -57,42 +57,42 @@ I registri di consegna sono fondamentali per comprendere il motivo per cui una c
 
 * I messaggi dei destinatari non riescono e viene visualizzato un errore &quot;Non raggiungibile&quot; che indica:
 
-   ```
-   Error while compiling script 'content htmlContent' line X: `[table]` is not defined. JavaScript: error while evaluating script 'content htmlContent
-   ```
+  ```
+  Error while compiling script 'content htmlContent' line X: `[table]` is not defined. JavaScript: error while evaluating script 'content htmlContent
+  ```
 
-   La causa di questo problema è quasi sempre una personalizzazione in HTML che tenta di invocare una tabella o un campo che non è stato definito o mappato nel targeting a monte o nella mappatura di destinazione della consegna.
+  La causa di questo problema è quasi sempre una personalizzazione in HTML che tenta di invocare una tabella o un campo che non è stato definito o mappato nel targeting a monte o nella mappatura di destinazione della consegna.
 
-   Per risolvere questo problema, è necessario rivedere il flusso di lavoro e il contenuto della consegna per determinare in modo specifico quale personalizzazione sta tentando di chiamare la tabella in questione e se è possibile mappare o meno la tabella. Da lì, il percorso per la risoluzione sarà la rimozione della chiamata a questa tabella nel HTML o la correzione della mappatura alla consegna.
+  Per risolvere questo problema, è necessario rivedere il flusso di lavoro e il contenuto della consegna per determinare in modo specifico quale personalizzazione sta tentando di chiamare la tabella in questione e se è possibile mappare o meno la tabella. Da lì, il percorso per la risoluzione sarà la rimozione della chiamata a questa tabella nel HTML o la correzione della mappatura alla consegna.
 
 * Nel modello di distribuzione mid-sourcing, nei registri di consegna può essere visualizzato il seguente messaggio:
 
-   ```
-   Error during the call of method 'AppendDeliveryPart' on the mid sourcing server: 'Communication error with the server: please check this one is correctly configured. Code HTTP 408 'Service temporarily unavailable'.
-   ```
+  ```
+  Error during the call of method 'AppendDeliveryPart' on the mid sourcing server: 'Communication error with the server: please check this one is correctly configured. Code HTTP 408 'Service temporarily unavailable'.
+  ```
 
-   La causa è collegata a problemi di prestazioni. Significa che l’istanza di marketing impiega troppo tempo a creare i dati prima di inviarli al server di mid-sourcing.
+  La causa è collegata a problemi di prestazioni. Significa che l’istanza di marketing impiega troppo tempo a creare i dati prima di inviarli al server di mid-sourcing.
 
-   Per risolvere questo problema, si consiglia di effettuare una prova di vuoto e reindicizzare il database. Per ulteriori informazioni sulla manutenzione del database, fare riferimento a [questa sezione](../../production/using/recommendations.md).
+  Per risolvere questo problema, si consiglia di effettuare una prova di vuoto e reindicizzare il database. Per ulteriori informazioni sulla manutenzione del database, fare riferimento a [questa sezione](../../production/using/recommendations.md).
 
-   È inoltre necessario riavviare tutti i flussi di lavoro con un&#39;attività pianificata e tutti i flussi di lavoro con stato non riuscito. Fai riferimento a [questa sezione](../../workflow/using/scheduler.md).
+  È inoltre necessario riavviare tutti i flussi di lavoro con un&#39;attività pianificata e tutti i flussi di lavoro con stato non riuscito. Fai riferimento a [questa sezione](../../workflow/using/scheduler.md).
 
 * Quando una consegna non riesce, nei registri di consegna può essere visualizzato il seguente errore:
 
-   ```
-   DLV-XXXX The count of message prepared (123) is greater than the number of messages to send (111). Please contact support.
-   ```
+  ```
+  DLV-XXXX The count of message prepared (123) is greater than the number of messages to send (111). Please contact support.
+  ```
 
-   In genere, questo errore indica che esiste un campo o un blocco di personalizzazione all’interno dell’e-mail con più valori per il destinatario. Un blocco di personalizzazione è in uso e sta recuperando più di un record per un destinatario specifico.
+  In genere, questo errore indica che esiste un campo o un blocco di personalizzazione all’interno dell’e-mail con più valori per il destinatario. Un blocco di personalizzazione è in uso e sta recuperando più di un record per un destinatario specifico.
 
-   Per risolvere questo problema, controlla i dati di personalizzazione utilizzati, quindi controlla il target per i destinatari che hanno più di una voce per uno qualsiasi di questi campi. È inoltre possibile utilizzare un’ **[!UICONTROL Deduplication]** attività nel flusso di lavoro di targeting prima dell’attività di consegna per verificare che sia presente un solo campo di personalizzazione alla volta. Per ulteriori informazioni sulla deduplicazione, consulta [questa pagina](../../workflow/using/deduplication.md).
+  Per risolvere questo problema, controlla i dati di personalizzazione utilizzati, quindi controlla il target per i destinatari che hanno più di una voce per uno qualsiasi di questi campi. È inoltre possibile utilizzare un’ **[!UICONTROL Deduplication]** attività nel flusso di lavoro di targeting prima dell’attività di consegna per verificare che sia presente un solo campo di personalizzazione alla volta. Per ulteriori informazioni sulla deduplicazione, consulta [questa pagina](../../workflow/using/deduplication.md).
 
 * Alcune consegne possono non riuscire e viene visualizzato un errore &quot;Non raggiungibile&quot; che indica:
 
-   ```
-   Inbound email bounce (rule 'Auto_replies' has matched this bounce).
-   ```
+  ```
+  Inbound email bounce (rule 'Auto_replies' has matched this bounce).
+  ```
 
-   Ciò significa che la consegna è riuscita, ma Adobe Campaign ha ricevuto una risposta automatica dal destinatario (ad esempio, una risposta &quot;Fuori sede&quot;) corrispondente alle regole di e-mail in entrata &quot;Auto_reply&quot;.
+  Ciò significa che la consegna è riuscita, ma Adobe Campaign ha ricevuto una risposta automatica dal destinatario (ad esempio, una risposta &quot;Fuori sede&quot;) corrispondente alle regole di e-mail in entrata &quot;Auto_reply&quot;.
 
-   L’e-mail di risposta automatica viene ignorata da Adobe Campaign e l’indirizzo del destinatario non verrà messo in quarantena.
+  L’e-mail di risposta automatica viene ignorata da Adobe Campaign e l’indirizzo del destinatario non verrà messo in quarantena.

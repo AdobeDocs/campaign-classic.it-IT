@@ -2,11 +2,12 @@
 product: campaign
 title: Parametri di tracciamento web aggiuntivi
 description: Ulteriori informazioni sui parametri per il tracciamento web
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Configuration, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 exl-id: d14d94fd-b078-4893-be84-31d37a1d50f5
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '359'
 ht-degree: 0%
 
 ---
@@ -68,16 +69,16 @@ Dopo aver modificato la configurazione, è necessario:
 * Arrestare il server Web che ospita il modulo di reindirizzamento (Apache, IIS, ecc.),
 * Arresta il server Adobe Campaign: **net stop nlserver6** in Windows, **/etc/init.d/nlserver6 stop** in Linux,
 
-   >[!NOTE]
-   >
-   >A partire dalla versione 20.1, si consiglia invece di utilizzare il seguente comando (per Linux): **systemctl stop nlserver**
+  >[!NOTE]
+  >
+  >A partire dalla versione 20.1, si consiglia invece di utilizzare il seguente comando (per Linux): **systemctl stop nlserver**
 
 * In Linux, eliminare i segmenti di memoria condivisa utilizzando **ipcrm** comando,
 * Riavvia il server Adobe Campaign: **net start nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux,
 
-   >[!NOTE]
-   >
-   >A partire dalla versione 20.1, si consiglia invece di utilizzare il seguente comando (per Linux): **systemctl start nlserver**
+  >[!NOTE]
+  >
+  >A partire dalla versione 20.1, si consiglia invece di utilizzare il seguente comando (per Linux): **systemctl start nlserver**
 
 * Riavvia il server web.
 

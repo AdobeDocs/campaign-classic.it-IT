@@ -2,15 +2,16 @@
 product: campaign
 title: Tracciare l’ipotesi
 description: Scopri come tracciare le ipotesi in Campaign Response Manager
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Campaigns, Monitoring, Reporting
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 1dc6d03b-698c-4750-9563-0676fcd185df
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '467'
 ht-degree: 1%
 
 ---
@@ -73,8 +74,8 @@ Il **[!UICONTROL Hypothesis report]** consente di visualizzare i risultati delle
 
 * **A livello di campagna**: fai clic su **[!UICONTROL Reports]** collegamento della campagna in questione e seleziona la **[!UICONTROL Hypothesis report]**. Questo rapporto contiene l’elenco delle consegne delle campagne e le ipotesi calcolate per ciascuna consegna.
 
-   ![](assets/response_hypothesis_campaign_report_001.png)
+  ![](assets/response_hypothesis_campaign_report_001.png)
 
 * **A livello di consegna**: per accedere al rapporto, apri la consegna interessata, fai clic su **[!UICONTROL Reports]** nel **[!UICONTROL Summary]** e seleziona la scheda **[!UICONTROL Hypothesis report]**. Se sono state calcolate più ipotesi per la stessa consegna, il rapporto conterrà tutte le ipotesi.
 
-   ![](assets/response_hypothesis_delivery_report_001.png)
+  ![](assets/response_hypothesis_delivery_report_001.png)

@@ -2,13 +2,13 @@
 product: campaign
 title: Dati di targeting
 description: Ulteriori informazioni sul targeting dei dati in un flusso di lavoro
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Query Editor, Data Management
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
+feature: Query Editor, Data Management, Workflows
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1922'
-ht-degree: 4%
+source-wordcount: '1929'
+ht-degree: 5%
 
 ---
 
@@ -90,33 +90,33 @@ Sono disponibili le seguenti opzioni di riconciliazione dei dati:
 
 * **[!UICONTROL Keys only]**
 
-   Questa opzione può essere utilizzata se le popolazioni di input sono omogenee.
+  Questa opzione può essere utilizzata se le popolazioni di input sono omogenee.
 
 * **[!UICONTROL All columns in common]**
 
-   Questa opzione consente di riconciliare i dati in base a tutte le colonne comuni alle varie popolazioni del target.
+  Questa opzione consente di riconciliare i dati in base a tutte le colonne comuni alle varie popolazioni del target.
 
-   Adobe Campaign identifica le colonne in base al loro nome. È accettata una soglia di tolleranza: ad esempio, una colonna &quot;E-mail&quot; può essere riconosciuta come identica a una colonna &quot;@email&quot;.
+  Adobe Campaign identifica le colonne in base al loro nome. È accettata una soglia di tolleranza: ad esempio, una colonna &quot;E-mail&quot; può essere riconosciuta come identica a una colonna &quot;@email&quot;.
 
 * **[!UICONTROL A selection of columns]**
 
-   Seleziona questa opzione per definire l’elenco di colonne alle quali verrà applicata la riconciliazione dei dati.
+  Seleziona questa opzione per definire l’elenco di colonne alle quali verrà applicata la riconciliazione dei dati.
 
-   Inizia selezionando il set principale (quello contenente i dati di origine), quindi le colonne da utilizzare per il join.
+  Inizia selezionando il set principale (quello contenente i dati di origine), quindi le colonne da utilizzare per il join.
 
-   ![](assets/join_reconciliation_options_01.png)
+  ![](assets/join_reconciliation_options_01.png)
 
-   >[!CAUTION]
-   >
-   >Durante la riconciliazione dei dati, le popolazioni non vengono deduplicate.
+  >[!CAUTION]
+  >
+  >Durante la riconciliazione dei dati, le popolazioni non vengono deduplicate.
 
-   È possibile limitare la dimensione della popolazione a un determinato numero di record. A questo scopo, fai clic sull’opzione appropriata e specifica il numero di record da conservare.
+  È possibile limitare la dimensione della popolazione a un determinato numero di record. A questo scopo, fai clic sull’opzione appropriata e specifica il numero di record da conservare.
 
-   Inoltre, specifica la priorità delle popolazioni in entrata: la sezione inferiore della finestra elenca le transizioni in entrata dell’attività unione e ti consente di ordinarle utilizzando le frecce blu a destra della finestra.
+  Inoltre, specifica la priorità delle popolazioni in entrata: la sezione inferiore della finestra elenca le transizioni in entrata dell’attività unione e ti consente di ordinarle utilizzando le frecce blu a destra della finestra.
 
-   I record verranno ricavati prima dalla popolazione della prima transizione in entrata nell’elenco, quindi, se non è stato raggiunto il massimo, verranno ricavati dalla popolazione della seconda transizione in entrata e così via.
+  I record verranno ricavati prima dalla popolazione della prima transizione in entrata nell’elenco, quindi, se non è stato raggiunto il massimo, verranno ricavati dalla popolazione della seconda transizione in entrata e così via.
 
-   ![](assets/join_limit_nb_priority.png)
+  ![](assets/join_limit_nb_priority.png)
 
 ### Estrai dati articolari (intersezione) {#extracting-joint-data--intersection-}
 
@@ -132,7 +132,7 @@ L’attività di intersezione è descritta nel [Intersezione](intersection.md) s
 
 L’attività di esclusione ti consente di escludere gli elementi di un target da una popolazione target diversa. La dimensione di targeting di output di questa attività sarà quella del set principale.
 
-Se necessario, è possibile manipolare le tabelle in entrata. In effetti, per escludere un target da un’altra dimensione, tale target deve essere riportato alla stessa dimensione di targeting del target principale. A questo scopo, fai clic su **[!UICONTROL Add]** e specificare le condizioni per la modifica delle quote.
+Se necessario, è possibile manipolare le tabelle in entrata. In effetti, per escludere un target da un’altra dimensione, tale target deve essere restituito nella stessa dimensione targeting del target principale. A questo scopo, fai clic su **[!UICONTROL Add]** e specificare le condizioni per la modifica delle quote.
 
 La riconciliazione dei dati viene eseguita tramite un identificatore, la modifica dell’asse o un join. Un esempio è disponibile in [Utilizzo di dati da un elenco: Leggi elenco](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list).
 
@@ -178,9 +178,9 @@ Per configurarlo, devi innanzitutto selezionare i criteri:
 
    Per ulteriori informazioni, a seconda della versione di Campaign in uso, consulta le sezioni seguenti:
 
-   ![](assets/do-not-localize/v7.jpeg)[  Documentazione di Campaign v7](../../installation/using/about-fda.md)
+   ![](assets/do-not-localize/v7.jpeg)[Documentazione di Campaign v7](../../installation/using/about-fda.md)
 
-   ![](assets/do-not-localize/v8.png)[  Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
+   ![](assets/do-not-localize/v8.png)[Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
 
 Quindi, è necessario aggiungere nuovi sottoinsiemi:
 
@@ -220,15 +220,15 @@ Una volta identificati e preparati i dati, è possibile utilizzarli nei seguenti
 
 * Puoi aggiornare i dati nel database seguendo la manipolazione dei dati nelle varie fasi del flusso di lavoro.
 
-   Per ulteriori informazioni, [Aggiorna dati](update-data.md).
+  Per ulteriori informazioni, [Aggiorna dati](update-data.md).
 
 * È inoltre possibile aggiornare il contenuto degli elenchi esistenti.
 
-   Per ulteriori informazioni, consulta [Aggiornamento elenco](list-update.md).
+  Per ulteriori informazioni, consulta [Aggiornamento elenco](list-update.md).
 
 * Puoi preparare o avviare le consegne direttamente nel flusso di lavoro.
 
-   Per ulteriori informazioni, consulta [Consegna](delivery.md), [Controllo della consegna](delivery-control.md) e [Consegna continua](continuous-delivery.md).
+  Per ulteriori informazioni, consulta [Consegna](delivery.md), [Controllo della consegna](delivery-control.md) e [Consegna continua](continuous-delivery.md).
 
 ## Gestione dati {#data-management}
 

@@ -2,16 +2,17 @@
 product: campaign
 title: Test della migrazione
 description: Test della migrazione
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
 hide: true
 hidefromtoc: true
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '713'
 ht-degree: 4%
 
 ---
@@ -55,47 +56,46 @@ Varie opzioni consentono di misurare l’impatto di una migrazione e identificar
 
 * nel **config** comando:
 
-   ```
-   nlserver.exe config <option> -instance:<instance-name>
-   ```
+  ```
+  nlserver.exe config <option> -instance:<instance-name>
+  ```
 
 * o al momento del post-aggiornamento:
 
-   ```
-   nlserver.exe config -postupgrade <option> -instance:<instance-name>
-   ```
+  ```
+  nlserver.exe config -postupgrade <option> -instance:<instance-name>
+  ```
 
 >[!NOTE]
 >
 >* È necessario utilizzare il **-instance:`<instanceame>`** opzione. Si sconsiglia di utilizzare **-allinstances** opzione.
 >* Il comando di aggiornamento di Adobe Campaign (**post-aggiornamento**) consente di sincronizzare le risorse e aggiornare gli schemi e il database. Questa operazione può essere eseguita solo una volta e solo sul server applicazioni. Dopo aver sincronizzato le risorse, il **post-aggiornamento** consente di rilevare se la sincronizzazione genera errori o avvisi.
 
-
 ### Oggetti mancanti o non standard
 
 * Il **-showCustomEntities** viene visualizzato l&#39;elenco di tutti gli oggetti non standard:
 
-   ```
-   nlserver.exe config -showCustomEntities -instance:<instance-name>
-   ```
+  ```
+  nlserver.exe config -showCustomEntities -instance:<instance-name>
+  ```
 
-   Esempio di messaggio inviato:
+  Esempio di messaggio inviato:
 
-   ```
-   xtk_migration:opsecurity2 xtk:entity
-   ```
+  ```
+  xtk_migration:opsecurity2 xtk:entity
+  ```
 
 * Il **-showDeletedEntities** viene visualizzato l&#39;elenco di tutti gli oggetti standard mancanti nel database o nel file system. Per ogni oggetto mancante, viene specificato il percorso.
 
-   ```
-   nlserver.exe config -showDeletedEntities -instance:<instance-name>
-   ```
+  ```
+  nlserver.exe config -showDeletedEntities -instance:<instance-name>
+  ```
 
-   Esempio di messaggio inviato:
+  Esempio di messaggio inviato:
 
-   ```
-   Out of the box object 'nms:deliveryCustomizationMdl' belonging to the 'xtk:srcSchema' schema has not been found in the file system.
-   ```
+  ```
+  Out of the box object 'nms:deliveryCustomizationMdl' belonging to the 'xtk:srcSchema' schema has not been found in the file system.
+  ```
 
 ### Processo di verifica {#verification-process}
 

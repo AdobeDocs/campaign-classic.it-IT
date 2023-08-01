@@ -2,15 +2,16 @@
 product: campaign
 title: Configurazione dei processi di esportazione
 description: Scopri come configurare ed eseguire i processi di esportazione in Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+fearture: Overview
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '937'
 ht-degree: 2%
 
 ---
@@ -53,17 +54,17 @@ Per impostazione predefinita, quando l’esportazione viene avviata da **[!UICON
 
 * Per impostazione predefinita, il **[!UICONTROL Download the file generated on the server after the export]** è selezionata. In **[!UICONTROL Local file]** inserire il nome e il percorso del file da creare oppure sfogliare il disco locale facendo clic sulla cartella a destra del campo. È possibile deselezionare questa opzione per immettere il percorso di accesso e il nome del file di output del server.
 
-   >[!NOTE]
-   >
-   >I processi di importazione ed esportazione automatici vengono sempre eseguiti sul server.
-   >
-   >Per esportare solo alcuni dati, fare clic su **[!UICONTROL Advanced parameters]** e immettere il numero di righe da esportare nel campo appropriato.
+  >[!NOTE]
+  >
+  >I processi di importazione ed esportazione automatici vengono sempre eseguiti sul server.
+  >
+  >Per esportare solo alcuni dati, fare clic su **[!UICONTROL Advanced parameters]** e immettere il numero di righe da esportare nel campo appropriato.
 
 * È possibile creare un&#39;esportazione differenziale per esportare solo i record modificati dopo l&#39;ultima esecuzione. A questo scopo, fai clic su **[!UICONTROL Advanced parameters]** , quindi fare clic sul pulsante **[!UICONTROL Differential export]** , quindi seleziona **[!UICONTROL Activate differential export]**.
 
-   ![](assets/s_ncs_user_export_wizard02_b.png)
+  ![](assets/s_ncs_user_export_wizard02_b.png)
 
-   Immettere la data dell&#39;ultima modifica. Può essere recuperato da un campo o calcolato.
+  Immettere la data dell&#39;ultima modifica. Può essere recuperato da un campo o calcolato.
 
 ## Passaggio 3: definire il formato di output {#step-3---defining-the-output-format}
 
@@ -111,7 +112,7 @@ Puoi aggiungere condizioni di filtro per evitare di esportare tutti i dati. La c
    * Passa al carattere maiuscolo
    * Prima lettera in carattere maiuscolo
 
-   ![](assets/s_ncs_user_export_wizard06.png)
+  ![](assets/s_ncs_user_export_wizard06.png)
 
 * Clic **[!UICONTROL Add a calculated field]** se si desidera creare un nuovo campo calcolato, ad esempio una colonna contenente cognome + nome. Per ulteriori informazioni, consulta [Campi calcolati](../../platform/using/executing-import-jobs.md#calculated-fields).
 

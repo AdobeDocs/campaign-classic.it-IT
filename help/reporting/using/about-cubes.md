@@ -2,16 +2,16 @@
 product: campaign
 title: Informazioni sui cubi
 description: Introduzione ai cubi
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+feature: Reporting, Monitoring
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 hide: true
 hidefromtoc: true
 exl-id: ade4c857-9233-4bc8-9ba1-2fec84b7c3e6
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 2%
+source-wordcount: '409'
+ht-degree: 3%
 
 ---
 
@@ -43,22 +43,22 @@ I principali contesti di utilizzo dei cubi sono i seguenti:
 
 * Le esportazioni di dati possono essere eseguite direttamente in un rapporto, progettato in **[!UICONTROL Reports]** della piattaforma Adobe Campaign.
 
-   A questo scopo, crea un nuovo rapporto e seleziona il cubo da utilizzare.
+  A questo scopo, crea un nuovo rapporto e seleziona il cubo da utilizzare.
 
-   ![](assets/cube_create_new.png)
+  ![](assets/cube_create_new.png)
 
-   I cubi vengono visualizzati come modelli in base ai rapporti creati. Dopo aver scelto un modello, fai clic su **[!UICONTROL Create]** per configurare e visualizzare il rapporto corrispondente.
+  I cubi vengono visualizzati come modelli in base ai rapporti creati. Dopo aver scelto un modello, fai clic su **[!UICONTROL Create]** per configurare e visualizzare il rapporto corrispondente.
 
-   Puoi adattare le misure, modificare la modalità di visualizzazione o configurare la tabella, quindi visualizzare il rapporto utilizzando il pulsante principale.
+  Puoi adattare le misure, modificare la modalità di visualizzazione o configurare la tabella, quindi visualizzare il rapporto utilizzando il pulsante principale.
 
-   ![](assets/cube_display_new.png)
+  ![](assets/cube_display_new.png)
 
 * È inoltre possibile fare riferimento a un cubo nel **[!UICONTROL Query]** di una relazione per utilizzare i propri indicatori, come illustrato di seguito:
 
-   ![](assets/s_advuser_query_using_a_cube.png)
+  ![](assets/s_advuser_query_using_a_cube.png)
 
 * È inoltre possibile inserire una tabella pivot basata su un cubo in qualsiasi pagina di un report. A questo scopo, fai riferimento al cubo da utilizzare nel **[!UICONTROL Data]** della tabella pivot sulla pagina interessata.
 
-   ![](assets/s_advuser_cube_in_report.png)
+  ![](assets/s_advuser_cube_in_report.png)
 
-   Per ulteriori informazioni, consulta [Esplorare i dati in un rapporto](../../reporting/using/using-cubes-to-explore-data.md#exploring-the-data-in-a-report).
+  Per ulteriori informazioni, consulta [Esplorare i dati in un rapporto](../../reporting/using/using-cubes-to-explore-data.md#exploring-the-data-in-a-report).

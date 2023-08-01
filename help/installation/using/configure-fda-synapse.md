@@ -2,14 +2,15 @@
 product: campaign
 title: Configurare l’accesso a Synapse
 description: Scopri come configurare l’accesso a Synapse in FDA
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '779'
 ht-degree: 2%
 
 ---
@@ -30,7 +31,6 @@ Utilizzare Campaign [Federated Data Access](../../installation/using/about-fda.m
 >* Per installare un driver ODBC sono necessari i privilegi radice.
 >* I driver ODBC Red Hat Enterprise forniti da Microsoft possono essere utilizzati anche con CentOS per la connessione a SQL Server.
 >* La versione 13.0 funziona con Red Hat 6 e 7.
-
 
 Per configurare l’Azure synapse su CentOS, effettua le seguenti operazioni:
 
@@ -101,7 +101,7 @@ Per configurare l’Azure synapse su CentOS, effettua le seguenti operazioni:
    >
    >Per consentire la comunicazione dal lato di Analytics per l’Azure synapse inserii nell&#39;elenco Consentiti, potrebbe essere necessario aggiungere l’IP pubblico all’. A tale scopo, consulta [Documentazione di Azure](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
-1. In caso di iptables, esegui il seguente comando:
+1. Nel caso di iptables, esegui il seguente comando:
 
    ```
    iptables -A OUTPUT -p tcp -d [server_hostname_here] --dport 1433 -j ACCEPT
@@ -136,9 +136,9 @@ Per configurare l&#39;Azure synapse su Windows:
 * Per installare un driver ODBC sono necessari i privilegi radice.
 * Per installare il pacchetto msodbcsql è necessario Curl. Se non è installato, eseguire il comando seguente:
 
-   ```
-   sudo apt-get install curl
-   ```
+  ```
+  sudo apt-get install curl
+  ```
 
 Per configurare l’Azure synapse su Debian:
 
@@ -222,7 +222,7 @@ Per creare [!DNL Azure Synapse] l’account esterno effettua le seguenti operazi
 
       * **[!UICONTROL Database]**: nome del database
 
-      ![](assets/azure_3.png)
+     ![](assets/azure_3.png)
 
    * Per l&#39;autenticazione delle identità gestite assegnata dal sistema, è necessario specificare:
 
@@ -232,9 +232,7 @@ Per creare [!DNL Azure Synapse] l’account esterno effettua le seguenti operazi
 
       * **[!UICONTROL Options]**: aggiungi la seguente sintassi `Authentication=ActiveDirectoryMsi`
 
-      ![](assets/azure_4.png)
-
-
+     ![](assets/azure_4.png)
 
 1. Fai clic su **[!UICONTROL Save]**.
 

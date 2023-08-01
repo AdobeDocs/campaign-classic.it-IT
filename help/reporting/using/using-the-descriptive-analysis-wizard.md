@@ -2,13 +2,13 @@
 product: campaign
 title: Usare la procedura guidata di analisi descrittiva
 description: Usare la procedura guidata di analisi descrittiva
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+feature: Reporting, Monitoring
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: '1570'
 ht-degree: 1%
 
 ---
@@ -47,17 +47,17 @@ Apri la procedura guidata di analisi descrittiva selezionando gli elementi e fac
 
 * Per un set di **destinatari**, seleziona i destinatari da analizzare, quindi fai clic con il pulsante destro del mouse e seleziona **[!UICONTROL Actions > Explore...]**, come mostrato sopra. Se all’elenco dei destinatari viene applicato un filtro, verrà analizzato solo il relativo contenuto.
 
-   Per selezionare tutti i destinatari della cartella o del filtro corrente, utilizzare la scelta rapida CTRL+A. Ciò significa che verranno selezionati anche i destinatari non visualizzati.
+  Per selezionare tutti i destinatari della cartella o del filtro corrente, utilizzare la scelta rapida CTRL+A. Ciò significa che verranno selezionati anche i destinatari non visualizzati.
 
-   Per un esempio di analisi descrittiva dei destinatari, consulta: [Analisi qualitativa dei dati](../../reporting/using/use-cases.md#qualitative-data-analysis).
+  Per un esempio di analisi descrittiva dei destinatari, consulta: [Analisi qualitativa dei dati](../../reporting/using/use-cases.md#qualitative-data-analysis).
 
 * Nell&#39;ambito di una **workflow**, posiziona il cursore su una transizione che punta verso la tabella dei destinatari, fai clic con il pulsante destro del mouse e seleziona **[!UICONTROL Analyze target]**. Per ulteriori informazioni, consulta l’esempio in [Analizzare un target di transizione in un flusso di lavoro](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow).
 * Per **elenchi**, seleziona uno o più elenchi e applica lo stesso processo utilizzato per i destinatari.
 * Nell&#39;ambito di una **consegna**, seleziona le consegne di cui desideri analizzare la destinazione, fai clic con il pulsante destro del mouse e seleziona **[!UICONTROL Actions > Explore the target]**, come illustrato di seguito:
 
-   ![](assets/reporting_descriptive_from_deliveries.png)
+  ![](assets/reporting_descriptive_from_deliveries.png)
 
-   Di seguito sono riportati esempi di analisi descrittive per le consegne: [Analizzare una popolazione](../../reporting/using/use-cases.md#analyzing-a-population) e qui: [Analizzare i registri di tracciamento dei destinatari](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
+  Di seguito sono riportati esempi di analisi descrittive per le consegne: [Analizzare una popolazione](../../reporting/using/use-cases.md#analyzing-a-population) e qui: [Analizzare i registri di tracciamento dei destinatari](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
 
 ## Configurare il modello di distribuzione qualitativa {#configuring-the-qualitative-distribution-template}
 
@@ -81,32 +81,32 @@ Le opzioni variano a seconda del contenuto del campo:
 
 * **[!UICONTROL None]** : questa opzione ti consente di visualizzare tutti i valori disponibili per la variabile, senza binning.
 
-   >[!CAUTION]
-   >
-   >Questa opzione deve essere utilizzata con cautela: può avere un impatto importante sul rapporto e sulle prestazioni della macchina.
+  >[!CAUTION]
+  >
+  >Questa opzione deve essere utilizzata con cautela: può avere un impatto importante sul rapporto e sulle prestazioni della macchina.
 
 * **[!UICONTROL Auto]** : questa opzione consente di visualizzare gli n valori rappresentati più di frequente. Vengono calcolati automaticamente e ognuno di essi rappresenta una percentuale delle variabili rispetto al numero di raccoglitori. Per i valori numerici, Adobe Campaign genera automaticamente n classi in cui ordinare i dati.
 * **[!UICONTROL Manual]** : questa opzione funziona come il **[!UICONTROL Auto]** tranne per il fatto che è possibile impostare questi valori manualmente. A questo scopo, fai clic su **[!UICONTROL Add]** a destra della tabella dei valori.
 
-   I valori possono essere inizializzati automaticamente da Adobe Campaign prima della personalizzazione: a questo scopo, inserisci il numero di raccoglitori che desideri generare e fai clic su **[!UICONTROL Initialize with]** come mostrato di seguito:
+  I valori possono essere inizializzati automaticamente da Adobe Campaign prima della personalizzazione: a questo scopo, inserisci il numero di raccoglitori che desideri generare e fai clic su **[!UICONTROL Initialize with]** come mostrato di seguito:
 
-   ![](assets/reporting_descriptive_initialize.png)
+  ![](assets/reporting_descriptive_initialize.png)
 
-   Quindi adatta i contenuti in base alle tue esigenze:
+  Quindi adatta i contenuti in base alle tue esigenze:
 
-   ![](assets/reporting_descriptive_initialize_perso.png)
+  ![](assets/reporting_descriptive_initialize_perso.png)
 
-   A seconda del livello di precisione desiderato, i campi contenenti date possono essere raggruppati per ora, giorno, mese, anno e così via.
+  A seconda del livello di precisione desiderato, i campi contenenti date possono essere raggruppati per ora, giorno, mese, anno e così via.
 
-   ![](assets/reporting_descriptive_group_by_year.png)
+  ![](assets/reporting_descriptive_group_by_year.png)
 
 * **[!UICONTROL Modulo]** : consente di creare gruppi di valori in caso di valori numerici. Ad esempio, un modulo con un valore di 10 consente di creare un intervallo di valori che cambiano di dieci per dieci.
 
-   ![](assets/reporting_descriptive_initialize_modulo.png)
+  ![](assets/reporting_descriptive_initialize_modulo.png)
 
-   Questo esempio ti consente di visualizzare la suddivisione dei destinatari per gruppo di età.
+  Questo esempio ti consente di visualizzare la suddivisione dei destinatari per gruppo di età.
 
-   ![](assets/reporting_descriptive_initialize_modulo_result.png)
+  ![](assets/reporting_descriptive_initialize_modulo_result.png)
 
 ### Visualizza dati nella tabella {#displaying-data-in-the-table}
 
@@ -158,17 +158,17 @@ Sono possibili le seguenti operazioni:
 * **[!UICONTROL Column percentage distribution]** per calcolare il rapporto tra il valore di una riga e il valore di una colonna (disponibile solo per le tabelle),
 * **[!UICONTROL Total percentage distribution]** calcolare la distribuzione dei destinatari interessati dai valori,
 
-   ![](assets/s_ncs_user_report_wizard_026.png)
+  ![](assets/s_ncs_user_report_wizard_026.png)
 
 * **[!UICONTROL Calculated field]** per creare un operatore personalizzato (disponibile solo per le tabelle) Il **[!UICONTROL User function]** consente di immettere il calcolo da applicare ai dati.
 
-   Esempio: calcolo dell’importo medio dell’acquisto per cliente in base al paese e all’origine
+  Esempio: calcolo dell’importo medio dell’acquisto per cliente in base al paese e all’origine
 
-   ![](assets/report_compute_data_sample1.png)
+  ![](assets/report_compute_data_sample1.png)
 
-   Per visualizzare le informazioni di cui sopra in una tabella, devi creare un campo calcolato per memorizzare l’importo medio dell’acquisto per cliente.
+  Per visualizzare le informazioni di cui sopra in una tabella, devi creare un campo calcolato per memorizzare l’importo medio dell’acquisto per cliente.
 
-   Per eseguire questa operazione:
+  Per eseguire questa operazione:
 
    1. Calcola il totale degli acquisti.
 
@@ -226,12 +226,12 @@ Sono possibili le seguenti operazioni:
 * **[!UICONTROL Decile distribution]** per distribuire i valori restituiti in modo che ciascuno di essi rappresenti 1/10 dei valori in un campo numerico.
 * **[!UICONTROL Custom distribution]** per distribuire i valori restituiti in base alle soglie definite dall&#39;utente.
 
-   Il **[!UICONTROL Detail...]** Questo pulsante consente di modificare una statistica e, se necessario, di personalizzarne il calcolo o la visualizzazione:
+  Il **[!UICONTROL Detail...]** Questo pulsante consente di modificare una statistica e, se necessario, di personalizzarne il calcolo o la visualizzazione:
 
-   ![](assets/s_ncs_user_report_wizard_030.png)
+  ![](assets/s_ncs_user_report_wizard_030.png)
 
-   L&#39;ultimo passaggio della procedura guidata mostra il rapporto di analisi quantitativa.
+  L&#39;ultimo passaggio della procedura guidata mostra il rapporto di analisi quantitativa.
 
-   ![](assets/reporting_descriptive_view_report.png)
+  ![](assets/reporting_descriptive_view_report.png)
 
-   Per apportare modifiche al rapporto, fare riferimento a [Elaborare un rapporto](../../reporting/using/processing-a-report.md).
+  Per apportare modifiche al rapporto, fare riferimento a [Elaborare un rapporto](../../reporting/using/processing-a-report.md).

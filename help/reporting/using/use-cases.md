@@ -2,13 +2,13 @@
 product: campaign
 title: Casi d’uso
 description: Casi di utilizzo della generazione rapporti
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+feature: Reporting, Monitoring
 exl-id: e326e32e-7bb0-46ff-9ba5-94ccd1169af2
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1317'
+source-wordcount: '1329'
 ht-degree: 0%
 
 ---
@@ -194,15 +194,15 @@ L’analisi di una popolazione in un flusso di lavoro richiede che la popolazion
 
 * Stacca la transizione dalla sua attività di destinazione e avvia il flusso di lavoro per renderla attiva. Una volta che la transizione inizia a lampeggiare, avvia la procedura guidata nel modo consueto.
 
-   ![](assets/s_ncs_user_report_wizard_018.png)
+  ![](assets/s_ncs_user_report_wizard_018.png)
 
 * Modifica le proprietà del flusso di lavoro selezionando la **[!UICONTROL Keep the result of interim populations between two executions]** opzione. Questo consente di avviare un’analisi della transizione scelta, anche se il flusso di lavoro è stato completato.
 
-   ![](assets/s_ncs_user_report_wizard_020.png)
+  ![](assets/s_ncs_user_report_wizard_020.png)
 
-   Se la popolazione è stata eliminata dalla transizione, un messaggio di errore richiede di selezionare l’opzione interessata prima di avviare la procedura guidata di analisi descrittiva.
+  Se la popolazione è stata eliminata dalla transizione, un messaggio di errore richiede di selezionare l’opzione interessata prima di avviare la procedura guidata di analisi descrittiva.
 
-   ![](assets/s_ncs_user_report_wizard_019.png)
+  ![](assets/s_ncs_user_report_wizard_019.png)
 
 >[!CAUTION]
 >

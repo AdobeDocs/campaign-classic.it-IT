@@ -2,14 +2,14 @@
 product: campaign
 title: Rapporti sulle consegne
 description: Rapporti sulle consegne
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+feature: Reporting, Monitoring
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1451'
-ht-degree: 7%
+source-wordcount: '1463'
+ht-degree: 9%
 
 ---
 
@@ -71,9 +71,9 @@ Questo rapporto combina gli indicatori chiave per monitorare il comportamento de
 * **[!UICONTROL Clicks on the mirror page link]** : numero di clic sul collegamento alla pagina speculare. Per poter essere preso in considerazione, il collegamento deve essere definito come tale nella procedura guidata di consegna (URL tracciati). Fai riferimento a questo [pagina](../../delivery/using/about-delivery-monitoring.md).
 * **[!UICONTROL Estimation of forwards]** : stima del numero di e-mail inoltrate dai destinatari interessati. Questo valore viene calcolato sottraendo il numero di persone distinte e il numero di destinatari distinti che hanno fatto clic nell’e-mail.
 
-   >[!NOTE]
-   >
-   >Per ulteriori informazioni sulla differenza tra persone distinte e destinatari mirati, consulta [Persone/destinatari interessati](../../reporting/using/indicator-calculation.md#targeted-persons---recipients).
+  >[!NOTE]
+  >
+  >Per ulteriori informazioni sulla differenza tra persone distinte e destinatari mirati, consulta [Persone/destinatari interessati](../../reporting/using/indicator-calculation.md#targeted-persons---recipients).
 
 **[!UICONTROL 3. Open and click-through rate]**
 
@@ -110,9 +110,9 @@ Questa tabella di valori mostra il raggruppamento di consegne, aperture, clic e 
 * **[!UICONTROL Average count of articles per transaction]** : numero medio di articoli per acquisto effettuato da destinatari distinti.
 * **[!UICONTROL Average amount per message]** : importo medio degli acquisti generati per messaggio.
 
-   >[!NOTE]
-   >
-   >Affinché una pagina, una transazione, un importo o un articolo visitato possa essere preso in considerazione, è necessario inserire un tag di web tracking nella pagina web corrispondente. La configurazione del tracciamento web è presentata in [questa sezione](../../configuration/using/about-web-tracking.md).
+  >[!NOTE]
+  >
+  >Affinché una pagina, una transazione, un importo o un articolo visitato possa essere preso in considerazione, è necessario inserire un tag di web tracking nella pagina web corrispondente. La configurazione del tracciamento web è presentata in [questa sezione](../../configuration/using/about-web-tracking.md).
 
 **[!UICONTROL 6. Sharing activities to email and social networks]**
 
@@ -130,9 +130,9 @@ Nella sezione superiore del rapporto vengono visualizzate le seguenti percentual
 
 * **[!UICONTROL Reactivity]** : rapporto tra il numero di destinatari interessati che hanno fatto clic in una consegna e il numero stimato di destinatari interessati che hanno aperto una consegna. I clic sul collegamento di rinuncia e sulla pagina mirror non vengono presi in considerazione.
 
-   >[!NOTE]
-   >
-   >Per ulteriori informazioni sulle aperture di tracciamento, consulta [Tracciamento delle aperture](../../reporting/using/indicator-calculation.md#tracking-opens-).
+  >[!NOTE]
+  >
+  >Per ulteriori informazioni sulle aperture di tracciamento, consulta [Tracciamento delle aperture](../../reporting/using/indicator-calculation.md#tracking-opens-).
 
 * **[!UICONTROL Distinct clicks]** : numero di persone distinte che hanno fatto clic almeno una volta (esclusi il collegamento di annullamento dell’abbonamento e la pagina mirror) in una consegna. La frequenza visualizzata viene calcolata in base al numero di messaggi consegnati correttamente.
 * **[!UICONTROL Cumulated clicks]** : numero totale di clic da parte dei destinatari target (esclusi il collegamento di annullamento all’abbonamento e la pagina mirror). La frequenza visualizzata viene calcolata in base al numero di messaggi inoltrati correttamente.
@@ -148,7 +148,7 @@ La tabella centrale fornisce le seguenti informazioni:
 
 Questo grafico mostra la suddivisione dei clic cumulativi al giorno.
 
-## Riepilogo consegne {#delivery-summary}
+## Riepilogo delle consegne {#delivery-summary}
 
 Questo rapporto fornisce tutte le informazioni principali sulla consegna.
 

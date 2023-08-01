@@ -2,14 +2,15 @@
 product: campaign
 title: Gestire le risorse di marketing
 description: Scopri come gestire le risorse di marketing
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Resource Management
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: f661e1d1-de2f-4c6a-bbff-e3ffcd1831f0
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1393'
 ht-degree: 1%
 
 ---
@@ -45,7 +46,7 @@ Fai clic su **[!UICONTROL General]** per selezionare gli operatori o i gruppi di
 * L’operatore a cui è assegnata la risorsa è responsabile del tracciamento.
 * L’operatore di approvazione è responsabile dell’approvazione della risorsa di marketing. Verranno avvisati all’avvio del processo di convalida delle risorse.
 
-   Se non è selezionato alcun revisore, la risorsa **[!UICONTROL cannot be]** soggetto ad approvazione.
+  Se non è selezionato alcun revisore, la risorsa **[!UICONTROL cannot be]** soggetto ad approvazione.
 
 * Se necessario, è anche possibile specificare un correttore di bozze.
 
@@ -53,7 +54,7 @@ Puoi specificare una data di disponibilità (indicativa) per la risorsa. Oltre q
 
 ## Lavoro collaborativo sulle risorse {#collaborative-work-on-resources}
 
-Puoi modificare e aggiornare una risorsa di marketing e, se necessario, informarne altri operatori Adobe Campaign. È possibile eseguire le seguenti operazioni:
+Puoi modificare e aggiornare una risorsa di marketing e, se necessario, informarne altri operatori Adobe Campaign. Puoi:
 
 * Scarica la risorsa localmente per modificarla.
 * Aggiornare il file sul server e renderlo accessibile ad altri operatori.

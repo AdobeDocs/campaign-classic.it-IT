@@ -2,16 +2,17 @@
 product: campaign
 title: Configurare le aree di protezione
 description: Scopri come configurare le aree di protezione
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
+badge-v7-prem: label="on-premise e ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1464'
-ht-degree: 1%
+source-wordcount: '1489'
+ht-degree: 2%
 
 ---
 
@@ -30,6 +31,7 @@ Gli operatori sono collegati a un’area di sicurezza dal suo profilo nella cons
 >As a **in hosting** cliente, se è possibile accedere [Pannello di controllo Campaign della campagna](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it), è possibile utilizzare l&#39;interfaccia self-service dell&#39;area di protezione. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=it)
 >
 >Altro **ibrido/in hosting** i clienti devono contattare il team di supporto Adobe per aggiungere l’IP al inserisco nell&#39;elenco Consentiti di.
+>
 
 ## Creare aree di protezione {#creating-security-zones}
 
@@ -150,15 +152,15 @@ Possono verificarsi vari casi:
 
 * Nell’area di sicurezza viene fatto riferimento direttamente a una sottorete e non è configurato alcun proxy: gli utenti della sottorete possono connettersi direttamente al server Adobe Campaign.
 
-   ![](assets/8101_proxy1.png)
+  ![](assets/8101_proxy1.png)
 
 * È specificato un proxy per una sottorete nell&#39;area di sicurezza: gli utenti di questa sottorete possono accedere al server Adobe Campaign tramite questo proxy.
 
-   ![](assets/8101_proxy2.png)
+  ![](assets/8101_proxy2.png)
 
 * Un proxy è incluso in una sottorete dell’area di sicurezza: gli utenti che hanno accesso tramite questo proxy, indipendentemente dalla loro origine, possono accedere al server Adobe Campaign.
 
-   ![](assets/8101_proxy3.png)
+  ![](assets/8101_proxy3.png)
 
 Gli indirizzi IP dei proxy che probabilmente accederanno al server Adobe Campaign devono essere immessi in entrambi **`<subnetwork>`** interessata e la sottorete di primo livello **`<subnetwork name="all"/>`**. Ad esempio, qui per un proxy il cui indirizzo IP è 10.131.146.102:
 
@@ -240,15 +242,15 @@ Una volta definite le zone e **[!UICONTROL Security zone]** l&#39;enumerazione �
 
    * Quando allowDebug è impostato su false, l’output è:
 
-      ```
-      <redir status='OK' date='...' sourceIP='...'/>
-      ```
+     ```
+     <redir status='OK' date='...' sourceIP='...'/>
+     ```
 
    * Quando allowDebug è impostato su true, l’output è:
 
-      ```
-      <redir status='OK' date='...' build='...' OR version='...' sha1='...' instance='...' sourceIP='...' host='...' localHost='...'/>
-      ```
+     ```
+     <redir status='OK' date='...' build='...' OR version='...' sha1='...' instance='...' sourceIP='...' host='...' localHost='...'/>
+     ```
 
 * Non impostare mai allowEmptyPassword, allowUserPassword, allowSQLInjection su true. Questi attributi sono qui solo per consentire una migrazione fluida dalle versioni v5 e v6.0:
 

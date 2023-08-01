@@ -2,13 +2,13 @@
 product: campaign
 title: Modificare i contenuti
 description: Modificare i contenuti
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Web Apps, Web Forms, Landing Pages
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1214'
+source-wordcount: '1226'
 ht-degree: 1%
 
 ---
@@ -75,11 +75,11 @@ Per eseguire questa operazione:
 
 * Fai clic su **[!UICONTROL Edit]** icona.
 
-   ![](assets/dce_sidebar_options.png)
+  ![](assets/dce_sidebar_options.png)
 
 * Immetti il valore dell’elenco dettagliato (definito dal campo selezionato) in **[!UICONTROL Value]** campo.
 
-   ![](assets/dce_sidebar_completeoptionradio.png)
+  ![](assets/dce_sidebar_completeoptionradio.png)
 
 ### Modifica dei campi modulo {#modifying-form-fields}
 
@@ -91,7 +91,7 @@ Ciò significa che è possibile:
 * Duplica il campo selezionato creando un nuovo blocco utilizzando **[!UICONTROL Duplicate]** icona.
 * Modifica il **[!UICONTROL Form data]** finestra per collegare un campo di database all&#39;area del modulo, utilizzando **[!UICONTROL Edit]** icona.
 
-   ![](assets/dce_toolbar_formblock_edition.png)
+  ![](assets/dce_toolbar_formblock_edition.png)
 
 ## Aggiunta di un&#39;azione a un pulsante {#adding-an-action-to-a-button}
 
@@ -138,7 +138,6 @@ I blocchi e i campi di personalizzazione possono essere inseriti solo in blocchi
 >* Finestra corrente (_self)
 >* Comportamento predefinito del browser
 >
-
 
 ### Collegamento a un URL {#link-to-a-url}
 
@@ -204,7 +203,6 @@ Le opzioni disponibili sono le seguenti:
 >
 >* **Duplica** icona: duplica il blocco e tutti gli stili ad esso correlati.
 
-
 ## Gestione di immagini e animazioni {#managing-images-and-animations}
 
 Digital Content Editor consente di lavorare su **qualsiasi tipo di immagine** compatibile con i browser.
@@ -238,7 +236,7 @@ Quando selezioni un blocco contenente un’immagine, puoi accedere alle seguenti
 * **Didascalia** consente di definire la didascalia collegata all&#39;immagine (corrisponde alla **Alt** HTML).
 * **Dimension** consente di specificare la dimensione dell’immagine, in pixel.
 
-   ![](assets/dce_popup_imgsize.png)
+  ![](assets/dce_popup_imgsize.png)
 
 ## Aggiunta di contenuti di personalizzazione {#adding-personalization-content}
 

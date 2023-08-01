@@ -2,15 +2,16 @@
 product: campaign
 title: Integrazione tramite SOAP (lato server)
 description: Integrazione tramite SOAP (lato server)
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: 3eaef689-44fa-41b3-ade8-9fe447e165ec
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 3%
+source-wordcount: '325'
+ht-degree: 4%
 
 ---
 
@@ -44,7 +45,7 @@ In risposta alla query, il servizio SOAP restituirà i seguenti parametri:
 
 ## Aggiornamento offerta {#offer-update}
 
-Aggiungi il **nms:interazione#AggiornaStato** all&#39;URL, seguito dai seguenti parametri:
+Aggiungi il **nms:interazione#UpdateStatus** all&#39;URL, seguito dai seguenti parametri:
 
 * **proposta**: stringa di caratteri che contiene l’ID della proposta fornito come output durante una proposta di offerta. Fai riferimento a [Proposta di offerta](#offer-proposition).
 * **stato**: tipo di stringa, specifica il nuovo stato dell’offerta. I valori possibili sono elencati nella **propositionStatus** enumerazione, nel **nms:comune** schema. Ad esempio, il numero 3 corrisponde al valore **Accettato** stato.

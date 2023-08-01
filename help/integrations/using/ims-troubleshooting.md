@@ -2,15 +2,16 @@
 product: campaign
 title: Risoluzione dei problemi di IMS
 description: Risoluzione dei problemi di IMS
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Configuration
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 1ce89c3a-1fe6-4ed6-9547-2eb9713a0ec3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '419'
 ht-degree: 2%
 
 ---
@@ -75,12 +76,12 @@ Riavvia il server se vengono apportate modifiche alle impostazioni precedenti ne
 
 * L&#39;utente viene reindirizzato alla pagina adobe.com:
 
-   Si è verificato un problema con **[!UICONTROL Callback URL]**. Consulta i passaggi precedenti per verificare **[!UICONTROL Callback URL]** configurazione.
+  Si è verificato un problema con **[!UICONTROL Callback URL]**. Consulta i passaggi precedenti per verificare **[!UICONTROL Callback URL]** configurazione.
 
 * Messaggio &quot;L’accesso non dispone di diritti corrispondenti all’espressione&quot;:
 
-   Consulta i passaggi precedenti per verificare **[!UICONTROL Association Mask]** e la configurazione dei gruppi di operatori.
+  Consulta i passaggi precedenti per verificare **[!UICONTROL Association Mask]** e la configurazione dei gruppi di operatori.
 
 * L’utente non è in grado di accedere alla pagina di accesso di Adobe ID:
 
-   Per verificare la configurazione dell’ambito, consulta i passaggi precedenti.
+  Per verificare la configurazione dell’ambito, consulta i passaggi precedenti.

@@ -2,15 +2,16 @@
 product: campaign
 title: Utilizzo dei pacchetti di dati
 description: Utilizzo dei pacchetti di dati
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Data Management, Package Export/Import
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2442'
+source-wordcount: '2454'
 ht-degree: 3%
 
 ---
@@ -34,11 +35,11 @@ Esistono tre tipi di pacchetti esportabili: pacchetti utente, pacchetti piattafo
 * **Pacchetto utente**: consente di selezionare l’elenco delle entità da esportare. Questo tipo di pacchetto gestisce le dipendenze e verifica gli errori.
 * **Pacchetto piattaforma**: include tutte le risorse tecniche aggiunte (non standard): schemi, codice JavaScript, ecc.
 
-   ![](assets/ncs_datapackage_package_platform.png)
+  ![](assets/ncs_datapackage_package_platform.png)
 
 * **Pacchetto di amministrazione**: include tutti i modelli e gli oggetti business aggiunti (non standard): modelli, librerie, ecc.
 
-   ![](assets/ncs_datapackage_package_admin.png)
+  ![](assets/ncs_datapackage_package_admin.png)
 
 >[!CAUTION]
 >
@@ -281,15 +282,15 @@ La generazione del pacchetto può essere configurata dalla definizione del pacch
 * **[!UICONTROL Include an installation script]**: consente di aggiungere uno script javascript da eseguire all’importazione del pacchetto. Se selezionata, **[!UICONTROL Script]** viene aggiunta nella schermata di definizione del pacchetto.
 * **[!UICONTROL Include default values]**: aggiunge al pacchetto i valori di tutti gli attributi delle entità.
 
-   Questa opzione non è selezionata per impostazione predefinita, al fine di evitare lunghe esportazioni. Ciò significa che gli attributi delle entità con valori predefiniti (&quot;stringa vuota&quot;, &quot;0&quot; e &quot;false&quot; se non sono definiti altrimenti nello schema) non verranno aggiunti al pacchetto e pertanto non verranno esportati.
+  Questa opzione non è selezionata per impostazione predefinita, al fine di evitare lunghe esportazioni. Ciò significa che gli attributi delle entità con valori predefiniti (&quot;stringa vuota&quot;, &quot;0&quot; e &quot;false&quot; se non sono definiti altrimenti nello schema) non verranno aggiunti al pacchetto e pertanto non verranno esportati.
 
-   >[!CAUTION]
-   >
-   >Deselezionando questa opzione si può ottenere un’unione di versioni locali e importate.
-   >
-   >Se l’istanza in cui viene importato il pacchetto contiene entità identiche a quelle del pacchetto (ad esempio con lo stesso ID esterno), i relativi attributi non verranno aggiornati. Ciò può verificarsi se gli attributi dell’istanza precedente dispongono di valori predefiniti, in quanto non sono inclusi nel pacchetto.
-   >
-   >In tal caso, selezionare **[!UICONTROL Include default values]** L’opzione impediva l’unione delle versioni, in quanto tutti gli attributi dell’istanza precedente venivano esportati con il pacchetto.
+  >[!CAUTION]
+  >
+  >Deselezionando questa opzione si può ottenere un’unione di versioni locali e importate.
+  >
+  >Se l’istanza in cui viene importato il pacchetto contiene entità identiche a quelle del pacchetto (ad esempio con lo stesso ID esterno), i relativi attributi non verranno aggiornati. Ciò può verificarsi se gli attributi dell’istanza precedente dispongono di valori predefiniti, in quanto non sono inclusi nel pacchetto.
+  >
+  >In tal caso, selezionare **[!UICONTROL Include default values]** L’opzione impediva l’unione delle versioni, in quanto tutti gli attributi dell’istanza precedente venivano esportati con il pacchetto.
 
 ### Esportare pacchetti da una definizione di pacchetto {#exporting-packages-from-a-package-definition}
 
@@ -442,7 +443,7 @@ Il pacchetto di aggiornamento deve contenere solo un’entità specifica, per es
    * Account esterno creato.
    * Il nuovo pacchetto è: 5101 - 2 - Account esterno dell’applicazione social (socialApplication_extAccount).
    * Parallelamente, il pacchetto 101 viene aggiornato per essere aggiunto all’account esterno, ma non viene distribuito.
-      ![](assets/ncs_datapackage_best-practices-1.png)
+     ![](assets/ncs_datapackage_best-practices-1.png)
 
 #### Documentazione del pacchetto {#package-documentation}
 

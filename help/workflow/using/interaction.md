@@ -2,12 +2,12 @@
 product: campaign
 title: Interazione
 description: Interazione
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Workflows, Interaction
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+feature: Workflows, Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 7%
+source-wordcount: '178'
+ht-degree: 10%
 
 ---
 
@@ -20,9 +20,9 @@ I flussi di lavoro descritti di seguito vengono installati con **Motore di offer
 
 Per ulteriori informazioni, a seconda della versione di Campaign in uso, consulta le sezioni seguenti:
 
-![](assets/do-not-localize/v7.jpeg)[  Documentazione di Campaign v7](../../interaction/using/interaction-and-offer-management.md)
+![](assets/do-not-localize/v7.jpeg)[Documentazione di Campaign v7](../../interaction/using/interaction-and-offer-management.md)
 
-![](assets/do-not-localize/v8.png)[  Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/interaction/interaction.html)
+![](assets/do-not-localize/v8.png)[Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/interaction/interaction.html)
 
 
 <table> 
@@ -33,7 +33,7 @@ Per ulteriori informazioni, a seconda della versione di Campaign in uso, consult
    <td> <strong>Descrizione</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Calcolo aggregato completo (cubo propositionrcp)</span> <br /> </td> 
+   <td> <span class="uicontrol">Calcolo aggregato complessivo (cubo propositionRcp)</span> <br /> </td> 
    <td> <span class="uicontrol">agg_nmspropositionrcp_full</span> <br /> </td> 
    <td> Questo flusso di lavoro aggiorna <strong>Completo</strong> aggregato per <strong>Proposta di offerta</strong> cubo. Per impostazione predefinita viene attivato ogni giorno alle 6. Questo aggregato acquisisce le seguenti dimensioni: Canale, Consegna, Offerta di marketing e Data.<br /> Il <strong>Proposta di offerta</strong> Il cubo viene quindi utilizzato per generare rapporti basati sulle offerte. Ulteriori informazioni sui cubi sono disponibili in <a href="../../reporting/using/ac-cubes.md">questa sezione</a>.<br /> </td> 
   </tr> 

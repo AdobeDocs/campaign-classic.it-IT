@@ -2,11 +2,12 @@
 product: campaign
 title: Filtraggio degli schemi
 description: Filtraggio degli schemi
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Custom Resources
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 exl-id: 009bed25-cd35-437c-b789-5b58a6d2d7c6
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '418'
 ht-degree: 1%
 
 ---
@@ -23,7 +24,7 @@ Puoi filtrare l’accesso allo schema per utenti specifici, a seconda delle loro
 
 * **readAccess**: fornisce accesso in sola lettura ai dati dello schema.
 
-   **Avvertenza** - Tutte le tabelle collegate devono essere impostate con la stessa restrizione. Questa configurazione può influire sulle prestazioni.
+  **Avvertenza** - Tutte le tabelle collegate devono essere impostate con la stessa restrizione. Questa configurazione può influire sulle prestazioni.
 
 * **writeAccess**: fornisce accesso in scrittura ai dati dello schema.
 
@@ -31,29 +32,29 @@ Questi filtri vengono immessi nella **elemento** degli schemi e, come mostrato n
 
 * Limita autorizzazioni SCRITTURA
 
-   In questo caso, il filtro viene utilizzato per non consentire le autorizzazioni di SCRITTURA sullo schema per gli operatori che non dispongono dell’autorizzazione AMMINISTRAZIONE. Ciò significa che solo gli amministratori avranno autorizzazioni di scrittura sulle entità descritte da questo schema.
+  In questo caso, il filtro viene utilizzato per non consentire le autorizzazioni di SCRITTURA sullo schema per gli operatori che non dispongono dell’autorizzazione AMMINISTRAZIONE. Ciò significa che solo gli amministratori avranno autorizzazioni di scrittura sulle entità descritte da questo schema.
 
-   ```
-   <sysFilter name="writeAccess">      
-    <condition enabledIf="hasNamedRight('admin')=false" expr="FALSE"/>    
-   </sysFilter>
-   ```
+  ```
+  <sysFilter name="writeAccess">      
+   <condition enabledIf="hasNamedRight('admin')=false" expr="FALSE"/>    
+  </sysFilter>
+  ```
 
 * Limita le autorizzazioni di LETTURA e SCRITTURA:
 
-   In questo caso, il filtro viene utilizzato per non consentire le autorizzazioni di LETTURA e SCRITTURA sullo schema per tutti gli operatori. Solo il **interno** , rappresentato dall&#39;espressione &quot;$(loginId)!=0&quot;, dispone delle seguenti autorizzazioni.
+  In questo caso, il filtro viene utilizzato per non consentire le autorizzazioni di LETTURA e SCRITTURA sullo schema per tutti gli operatori. Solo il **interno** , rappresentato dall&#39;espressione &quot;$(loginId)!=0&quot;, dispone delle seguenti autorizzazioni.
 
-   ```
-   <sysFilter name="readAccess"> 
-    <condition enabledIf="$(loginId)!=0" expr="FALSE"/>
-   </sysFilter>
-   
-   <sysFilter name="writeAccess">  
-    <condition enabledIf="$(loginId)!=0" expr="FALSE"/>
-   </sysFilter>
-   ```
+  ```
+  <sysFilter name="readAccess"> 
+   <condition enabledIf="$(loginId)!=0" expr="FALSE"/>
+  </sysFilter>
+  
+  <sysFilter name="writeAccess">  
+   <condition enabledIf="$(loginId)!=0" expr="FALSE"/>
+  </sysFilter>
+  ```
 
-   Possibile **espr** I valori degli attributi utilizzati per definire la condizione sono TRUE o FALSE.
+  Possibile **espr** I valori degli attributi utilizzati per definire la condizione sono TRUE o FALSE.
 
 >[!NOTE]
 >

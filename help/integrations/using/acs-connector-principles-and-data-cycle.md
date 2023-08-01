@@ -2,14 +2,14 @@
 product: campaign
 title: Introduzione al connettore ACS
 description: Principi e ciclo dei dati del connettore ACS
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: ACS Connector
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 hide: true
 hidefromtoc: true
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2038'
+source-wordcount: '2045'
 ht-degree: 3%
 
 ---
@@ -151,9 +151,9 @@ I seguenti flussi di lavoro di replica sono disponibili come modelli &quot;pront
 * **[!UICONTROL `[ACS] Delivery-message replication`]** (newDlvMsgQualification): questo flusso di lavoro incrementale replica i messaggi di consegna da Campaign Standard a Campaign v7.
 * **[!UICONTROL `[ACS] Profile delivery log replication`]** (newRcpDeliveryLogReplication): questo flusso di lavoro incrementale replica gli ID di consegna, i registri di indirizzi e-mail generali e i registri di tracciamento e-mail da Campaign Standard a Campaign v7. Tiene conto solo delle consegne inviate da Campaign Standard ai profili che fanno parte della tabella nms:recipients di Campaign v7.
 
-   >[!NOTE]
-   >
-   > Se per inviare e-mail con URL tracciati vengono utilizzate sia le istanze di Campaign Classic che di Campaign Standard, durante la sincronizzazione potrebbe verificarsi un problema relativo agli ID di tag URL duplicati. Per evitare che ciò si verifichi, aggiorna il **Aggiorna URL di tracciamento** (writerTrackingUrls) nel flusso di lavoro e aggiungi il prefisso &quot;ACS&quot; all’espressione di origine @tagId.
+  >[!NOTE]
+  >
+  > Se per inviare e-mail con URL tracciati vengono utilizzate sia le istanze di Campaign Classic che di Campaign Standard, durante la sincronizzazione potrebbe verificarsi un problema relativo agli ID di tag URL duplicati. Per evitare che ciò si verifichi, aggiorna il **Aggiorna URL di tracciamento** (writerTrackingUrls) nel flusso di lavoro e aggiungi il prefisso &quot;ACS&quot; all’espressione di origine @tagId.
 
 * **[!UICONTROL `[ACS] New delivery log replication`]** (newRcpDeliveryLogReplication): questo flusso di lavoro incrementale replica gli ID di consegna, i registri di indirizzi e-mail generali e i registri di tracciamento e-mail da Campaign Standard a Campaign v7. Tiene conto solo delle consegne inviate da Campaign Standard a profili che fanno parte di una tabella specifica (per definire, diversa da nms:recipients) di Campaign v7.
 

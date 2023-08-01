@@ -2,17 +2,18 @@
 product: campaign
 title: Utilizzo dei server MX con Campaign
 description: Scopri come funzionano i server MX con Adobe Campaign Classic
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
+badge-v7-prem: label="on-premise e ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 hidefromtoc: true
 exl-id: 47f50bf5-4d5b-4c07-af71-de4390177cf5
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 1%
+source-wordcount: '830'
+ht-degree: 2%
 
 ---
 
@@ -50,7 +51,7 @@ Nel protocollo di connessione devono essere rispettate le norme per prevenire lo
 
 L’indirizzo di errore elaborerà i mancati recapiti inviati dagli ISP. Il processo analizza diversi codici di errore SMTP e applica l’azione giusta secondo lo standard RegEx.
 
-Ad esempio, un indirizzo e-mail ha un feedback &quot;550 Utente sconosciuto&quot; inviato da un ISP. Questo codice di errore viene elaborato dall’indirizzo di errore di Adobe Campaign (indirizzo del percorso di ritorno). Questo errore viene quindi confrontato con lo standard RegEx e verrà applicata la regola giusta. L’e-mail è considerata *Mancato recapito permanente* (corrispondente al tipo) e quindi *Utente sconosciuto* (corrispondente al motivo) e messo in quarantena dopo il primo ciclo nel sistema.
+Ad esempio, un indirizzo e-mail ha un feedback &quot;550 Utente sconosciuto&quot; inviato da un ISP. Questo codice di errore viene elaborato dall’indirizzo di errore Adobe Campaign (indirizzo del percorso di ritorno). Questo errore viene quindi confrontato con lo standard RegEx e verrà applicata la regola giusta. L’e-mail è considerata *Mancato recapito permanente* (corrispondente al tipo) e quindi *Utente sconosciuto* (corrispondente al motivo) e messo in quarantena dopo il primo ciclo nel sistema.
 
 ### Come viene gestita da Adobe Campaign?
 

@@ -2,12 +2,13 @@
 product: campaign
 title: Marketing virale e social marketing
 description: Marketing virale e social marketing
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Social Marketing
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 exl-id: 10fd561f-1b07-490e-9f66-d67e44a0def5
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '573'
 ht-degree: 2%
 
 ---
@@ -61,7 +62,7 @@ Applica le seguenti fasi:
 
    ![](assets/s_ncs_user_viral_email_link.png)
 
-   Un modulo di riferimento consente di inserire gli indirizzi e-mail degli utenti che hanno inviato il messaggio.
+   Un modulo di riferimento consente di immettere gli indirizzi e-mail degli utenti che hanno inviato il messaggio.
 
    ![](assets/s_ncs_user_viral_email_msg.png)
 
@@ -93,8 +94,8 @@ Viene tenuta traccia della condivisione e dell&#39;accesso alle informazioni con
 
 * nel **[!UICONTROL Tracking]** scheda della consegna (o singolarmente per ciascun destinatario):
 
-   ![](assets/s_ncs_user_network_del_tracking_tab.png)
+  ![](assets/s_ncs_user_network_del_tracking_tab.png)
 
 * in un **[!UICONTROL Sharing to social networks]** rapporto:
 
-   ![](assets/s_ncs_user_viral_report.png)
+  ![](assets/s_ncs_user_viral_report.png)

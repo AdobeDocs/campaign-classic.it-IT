@@ -2,14 +2,15 @@
 product: campaign
 title: Autorizzazioni per accedere a un database esterno
 description: Autorizzazioni di accesso al database esterno
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3d43010e-53f8-4aa2-a651-c422a02191fe
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '987'
 ht-degree: 1%
 
 ---
@@ -28,9 +29,9 @@ In primo luogo, affinché l’utente possa eseguire operazioni su un database es
    * **base** corrisponde al nome del database esterno.
    * **server** corrisponde al nome del server di database esterno.
 
-      >[!NOTE]
-      >
-      >Il **:base** La parte è facoltativa in Oracle.
+     >[!NOTE]
+     >
+     >Il **:base** La parte è facoltativa in Oracle.
 
 1. Salva l’autorizzazione denominata e collegala all’utente scelto da **[!UICONTROL Administration > Access Management > Operators]** nodo di Adobe Campaign explorer.
 

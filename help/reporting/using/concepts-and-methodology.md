@@ -2,14 +2,14 @@
 product: campaign
 title: Best practice per i cubi
 description: Best practice per i cubi
-badge: label="v7" type="Informative" tooltip="Si applica solo a Campaign Classic v7"
-feature: Reporting
+feature: Reporting, Monitoring
+badge: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 hide: true
 hidefromtoc: true
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1504'
+source-wordcount: '1500'
 ht-degree: 1%
 
 ---
@@ -89,11 +89,11 @@ Puoi effettuare le seguenti operazioni:
 
 * Recupera i valori utilizzati più di frequente
 
-   Nell’esempio seguente, vengono visualizzati i 4 valori utilizzati più di frequente, mentre gli altri vengono contati e raggruppati nella categoria &quot;Altri&quot;.
+  Nell’esempio seguente, vengono visualizzati i 4 valori utilizzati più di frequente, mentre gli altri vengono contati e raggruppati nella categoria &quot;Altri&quot;.
 
 * Generare raccoglitori sotto forma di slot
 
-   Nell’esempio seguente, Adobe Campaign crea automaticamente 4 slot di valori delle stesse dimensioni per visualizzare i valori nel database.
+  Nell’esempio seguente, Adobe Campaign crea automaticamente 4 slot di valori delle stesse dimensioni per visualizzare i valori nel database.
 
 In questo caso, il filtro selezionato nello schema dei fatti viene ignorato.
 
@@ -153,9 +153,9 @@ Per creare un nuovo aggregato, attenersi alla procedura descritta di seguito.
    * Il **[!UICONTROL Scheduler]** attività consente di definire la frequenza degli aggiornamenti di calcolo. Il modulo di pianificazione è descritto in [questa sezione](../../workflow/using/scheduler.md).
    * Il **[!UICONTROL Aggregate update]** attività consente di selezionare la modalità di aggiornamento da applicare: completo o parziale.
 
-      Per impostazione predefinita, durante ogni calcolo viene eseguito un aggiornamento completo. Per abilitare un aggiornamento parziale, seleziona l’opzione pertinente e definisci le condizioni di aggiornamento.
+     Per impostazione predefinita, durante ogni calcolo viene eseguito un aggiornamento completo. Per abilitare un aggiornamento parziale, seleziona l’opzione pertinente e definisci le condizioni di aggiornamento.
 
-      ![](assets/s_advuser_cube_agregate_05.png)
+     ![](assets/s_advuser_cube_agregate_05.png)
 
 ## Definire le misure {#defining-measures}
 
@@ -203,7 +203,7 @@ La configurazione di misure, linee e colonne può essere eseguita singolarmente 
 
 * Fai clic su **[!UICONTROL Edit the configuration of the pivot table]** per accedere alla finestra di configurazione.
 
-   È possibile scegliere se visualizzare o meno le etichette delle misure e configurarne il layout (righe o colonne).
+  È possibile scegliere se visualizzare o meno le etichette delle misure e configurarne il layout (righe o colonne).
 
 ![](assets/s_advuser_cube_in_report_config_05.png)
 

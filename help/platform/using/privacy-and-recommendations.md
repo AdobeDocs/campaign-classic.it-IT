@@ -2,16 +2,17 @@
 product: campaign
 title: Privacy e consenso
 description: Ulteriori informazioni su Privacy e consenso
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Privacy, Privacy Tools
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: a119378e4285d3258a9b4f1f68c0b625264e5d37
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2025'
-ht-degree: 99%
+source-wordcount: '2037'
+ht-degree: 98%
 
 ---
 
@@ -50,7 +51,7 @@ Adobe Campaign fa parte delle soluzioni Adobe Experience Cloud. Il modo in cui v
 
 * **Quali informazioni vengono raccolte durante l’utilizzo di Adobe Experience Cloud**
 
-  In qualità di azienda che utilizza le soluzioni Adobe Experience Cloud, puoi scegliere quali informazioni raccogliere e inviare all’account Adobe Experience Cloud. Alcuni esempi dei tipi di informazioni che possono essere raccolti includono l’attività di navigazione web, gli indirizzi IP, le informazioni sulla posizione inviate dai dispositivi mobili, i tassi di successo delle campagne, gli elementi acquistati o inseriti nel carrello, ecc.
+  In qualità di azienda che utilizza le soluzioni Adobe Experience Cloud, puoi scegliere quali informazioni raccogliere e inviare all’account Adobe Experience Cloud. Alcuni esempi dei tipi di informazioni che possono essere raccolti includono attività di navigazione web, indirizzi IP, informazioni sulla posizione inviate dai dispositivi mobili, tassi di successo delle campagne, articoli acquistati o inseriti nel carrello, ecc.
 
   >[!NOTE]
   >

@@ -2,13 +2,13 @@
 product: campaign
 title: Punti chiave durante la gestione del recapito messaggi in Adobe Campaign Classic
 description: Scopri i punti chiave da verificare durante la gestione del recapito messaggi in Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Deliverability
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+feature: Deliverability, Troubleshooting
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '666'
 ht-degree: 2%
 
 ---
@@ -51,13 +51,14 @@ Se il problema persiste, contattare il servizio commerciale o di consegna, [Assi
    * Stato **[!UICONTROL Denylisted]** è il risultato di un ciclo di feedback (quando una persona segnala un messaggio come spam).
 
    * Stato **[!UICONTROL Quarantined]** è il risultato di un mancato recapito morbido o permanente.
-   Per ulteriori informazioni, consulta [questa sezione](understanding-quarantine-management.md#quarantine-vs-denylist).
+
+  Per ulteriori informazioni, consulta [questa sezione](understanding-quarantine-management.md#quarantine-vs-denylist).
 
 * **Cosa significano i diversi motivi di errore di quarantena?**
 
-   10 possibili motivi: non definito, utente sconosciuto, dominio non valido, in inserita nell&#39;elenco Bloccati di accesso, rifiutato, errore ignorato, non raggiungibile, account disabilitato, cassetta postale piena, non connesso.
+  10 possibili motivi: non definito, utente sconosciuto, dominio non valido, in inserita nell&#39;elenco Bloccati di accesso, rifiutato, errore ignorato, non raggiungibile, account disabilitato, cassetta postale piena, non connesso.
 
-   Per ulteriori informazioni, consulta [Informazioni sulla gestione della quarantena](understanding-quarantine-management.md).
+  Per ulteriori informazioni, consulta [Informazioni sulla gestione della quarantena](understanding-quarantine-management.md).
 
 ## Rimozione dal inserisco nell&#39;elenco Bloccati {#remove-from-denylist}
 
@@ -69,14 +70,14 @@ Se il problema persiste, contattare il servizio commerciale o di consegna, [Assi
 
 * **Come posso scoprire se uno dei miei IP si trova su un inserisco nell&#39;elenco Bloccati di? Come posso rimuovere gli IP da un inserisco nell&#39;elenco Bloccati di?**
 
-   Per verificare se l’indirizzo IP si trova su un inserisco nell&#39;elenco Bloccati di, puoi utilizzare vari siti web per verificarlo, ad esempio:
+  Per verificare se l’indirizzo IP si trova su un inserisco nell&#39;elenco Bloccati di, puoi utilizzare vari siti web per verificarlo, ad esempio:
    * [Casella degli strumenti MX](https://mxtoolbox.com/)
    * [Qual è il mio indirizzo IP](https://whatismyipaddress.com)
 
-   In genere, il risultato della verifica dell’indirizzo IP restituirà un elenco contenente i dettagli del inserisco nell&#39;elenco Bloccati di e anche il nome del sito web che ha negato l’indirizzo IP.
+  In genere, il risultato della verifica dell’indirizzo IP restituirà un elenco contenente i dettagli del inserisco nell&#39;elenco Bloccati di e anche il nome del sito web che ha negato l’indirizzo IP.
 
-   Facendo clic sul collegamento corrispondente, è possibile accedere ai dettagli del sito Web. Quindi puoi richiedere che il tuo sito web venga cancellato dal sito web che ha aggiunto l’indirizzo IP al suo inserisco nell&#39;elenco Bloccati di.
+  Facendo clic sul collegamento corrispondente, è possibile accedere ai dettagli del sito Web. Quindi puoi richiedere che il tuo sito web venga cancellato dal sito web che ha aggiunto l’indirizzo IP al suo inserisco nell&#39;elenco Bloccati di.
 
-   >[!NOTE]
-   >
-   >Il processo di cancellazione dall’elenco può variare a seconda del sito web. Alcuni siti richiedono la creazione di un account, mentre altri richiedono solo che tu fornisca l’indirizzo IP.
+  >[!NOTE]
+  >
+  >Il processo di cancellazione dall’elenco può variare a seconda del sito web. Alcuni siti richiedono la creazione di un account, mentre altri richiedono solo che tu fornisca l’indirizzo IP.

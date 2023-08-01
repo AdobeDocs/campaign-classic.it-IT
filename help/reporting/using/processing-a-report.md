@@ -2,13 +2,13 @@
 product: campaign
 title: Utilizzare un rapporto di analisi
 description: Utilizzare un rapporto di analisi
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Reporting
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+feature: Reporting, Monitoring
 exl-id: d133efec-33e1-4711-a90f-e40385059386
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '828'
 ht-degree: 1%
 
 ---
@@ -94,7 +94,7 @@ Puoi personalizzare il layout dei dati direttamente nelle tabelle di analisi des
 * **[!UICONTROL Sort from A to Z]** per ordinare i valori delle variabili da basso a alto.
 * **[!UICONTROL Sort from Z to A]** per ordinare i valori delle variabili da alto a basso.
 
-   ![](assets/s_ncs_advuser_report_wizard_016.png)
+  ![](assets/s_ncs_advuser_report_wizard_016.png)
 
 Per tornare alla visualizzazione iniziale, aggiornare la visualizzazione.
 
@@ -111,11 +111,11 @@ Sono disponibili le seguenti opzioni:
 * Il **[!UICONTROL Accumulate values]** consente di aggiungere valori da una serie all&#39;altra.
 * È possibile decidere se visualizzare o meno la legenda del grafico: per nasconderla, deselezionare l&#39;opzione appropriata. Per impostazione predefinita, la legenda viene visualizzata all&#39;esterno del grafico nell&#39;angolo in alto a destra.
 
-   La legenda può essere visualizzata anche sopra il grafico per risparmiare spazio. A questo scopo, seleziona l’opzione **[!UICONTROL Include in the chart]**
+  La legenda può essere visualizzata anche sopra il grafico per risparmiare spazio. A questo scopo, seleziona l’opzione **[!UICONTROL Include in the chart]**
 
-   Selezionare l&#39;allineamento verticale e orizzontale nella **[!UICONTROL Caption position]** elenco a discesa.
+  Selezionare l&#39;allineamento verticale e orizzontale nella **[!UICONTROL Caption position]** elenco a discesa.
 
-   ![](assets/s_ncs_advuser_report_wizard_3d.png)
+  ![](assets/s_ncs_advuser_report_wizard_3d.png)
 
 ## Esportare un rapporto di analisi {#exporting-an-analysis-report}
 

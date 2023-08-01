@@ -2,16 +2,17 @@
 product: campaign
 title: Configurazione delle impostazioni di consegna di Campaign
 description: Scopri come configurare le impostazioni di consegna delle campagne
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Channel Configuration
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
+badge-v7-prem: label="on-premise e ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2968d8db-2b4b-48e6-a22e-daba5ffe0576
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 5%
+source-wordcount: '487'
+ht-degree: 6%
 
 ---
 
@@ -23,13 +24,13 @@ I parametri di consegna devono essere configurati in **serverConf.xml** cartella
 
 * **Configurazione DNS**: specifica il dominio di consegna e gli indirizzi IP (o host) dei server DNS utilizzati per rispondere alle query DNS di tipo MX eseguite dal modulo MTA dal **`<dnsconfig>`** e oltre.
 
-   >[!NOTE]
-   >
-   >Il **nameServers** è essenziale per un&#39;installazione in Windows. Per un&#39;installazione in Linux, deve essere lasciata vuota.
+  >[!NOTE]
+  >
+  >Il **nameServers** è essenziale per un&#39;installazione in Windows. Per un&#39;installazione in Linux, deve essere lasciata vuota.
 
-   ```
-   <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
-   ```
+  ```
+  <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
+  ```
 
 A seconda delle esigenze e delle impostazioni, è inoltre possibile eseguire le seguenti configurazioni: [Inoltro SMTP](#smtp-relay), adattare il numero di [Processi secondari MTA](#mta-child-processes), [Gestire il traffico SMTP in uscita](#managing-outbound-smtp-traffic-with-affinities).
 
@@ -47,7 +48,7 @@ In questo caso, questi parametri vengono impostati configurando il server SMTP n
 
 >[!IMPORTANT]
 >
->Questa modalità operativa implica gravi limitazioni alle consegne, in quanto può ridurre notevolmente il throughput a causa delle prestazioni intrinseche del server di inoltro (latenza, larghezza di banda...). Inoltre, la capacità di qualificare gli errori di consegna sincrona (rilevati analizzando il traffico SMTP) sarà limitata e l’invio non sarà possibile se il server di inoltro non è disponibile.
+>Questa modalità operativa implica serie limitazioni sulle consegne, in quanto può ridurre notevolmente il throughput a causa delle prestazioni intrinseche del server di inoltro (latenza, larghezza di banda...). Inoltre, la capacità di qualificare gli errori di consegna sincrona (rilevati analizzando il traffico SMTP) sarà limitata e l’invio non sarà possibile se il server di inoltro non è disponibile.
 
 ## Processi secondari MTA {#mta-child-processes}
 

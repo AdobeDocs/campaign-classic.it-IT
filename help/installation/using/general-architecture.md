@@ -2,14 +2,15 @@
 product: campaign
 title: Architettura generale di Campaign Classic
 description: Scopri come installare e configurare Campaign Classic
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Architecture
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 exl-id: 04e6dc17-427b-4745-84cc-bf45c03dbf81
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1342'
+source-wordcount: '1349'
 ht-degree: 0%
 
 ---
@@ -22,15 +23,15 @@ La tipica distribuzione della soluzione Adobe Campaign è costituita dai seguent
 
 * **Ambiente client personalizzato**
 
-   Interfaccia grafica intuitiva in cui gli utenti possono comunicare e tenere traccia delle offerte di marketing, creare campagne, rivedere e gestire tutte le attività di marketing, i programmi e i piani (comprese e-mail, flussi di lavoro e pagine di destinazione), creare e gestire profili cliente e definire i tipi di pubblico cliente.
+  Interfaccia grafica intuitiva in cui gli utenti possono comunicare e tenere traccia delle offerte di marketing, creare campagne, rivedere e gestire tutte le attività di marketing, i programmi e i piani (comprese e-mail, flussi di lavoro e pagine di destinazione), creare e gestire profili cliente e definire i tipi di pubblico cliente.
 
 * **Ambiente di sviluppo**
 
-   Software lato server che esegue le campagne di marketing tramite canali di comunicazione scelti, tra cui e-mail, SMS, notifiche push, direct mail, web o social, in base alle regole e ai flussi di lavoro definiti nell’interfaccia utente.
+  Software lato server che esegue le campagne di marketing tramite canali di comunicazione scelti, tra cui e-mail, SMS, notifiche push, direct mail, web o social, in base alle regole e ai flussi di lavoro definiti nell’interfaccia utente.
 
 * **Contenitori database**
 
-   Basato sulla tecnologia del database relazionale, il database di Adobe Campaign memorizza tutte le informazioni sui clienti, i componenti delle campagne, le offerte e i flussi di lavoro, nonché i risultati delle campagne nei contenitori del database dei clienti.
+  Basato sulla tecnologia del database relazionale, il database di Adobe Campaign memorizza tutte le informazioni sui clienti, i componenti delle campagne, le offerte e i flussi di lavoro, nonché i risultati delle campagne nei contenitori del database dei clienti.
 
 Adobe Campaign si basa su un’architettura orientata ai servizi (SOA, Service-Oriented Architecture) e comprende diversi moduli funzionali. Questi moduli possono essere distribuiti su uno o più computer, in una o più istanze, a seconda dei vincoli in termini di scalabilità, disponibilità e isolamento del servizio. L&#39;ambito delle configurazioni di distribuzione è pertanto molto ampio e si estende su un singolo computer centrale fino a configurazioni che includono più server dedicati su più siti.
 

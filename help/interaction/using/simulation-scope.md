@@ -2,15 +2,16 @@
 product: campaign
 title: Ambito della simulazione
 description: Ambito della simulazione
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Interaction, Offers
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 exl-id: 4f6b3de2-3fdf-441d-925d-476e20e75c6f
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '248'
 ht-degree: 5%
 
 ---
@@ -30,13 +31,13 @@ I seguenti elementi sono obbligatori:
 * Data di contatto. Le offerte non idonee alla data di contatto non vengono prese in considerazione.
 * Popolazione target.
 
-   Se non configuri un filtro sulla destinazione, verrà presa in considerazione l’intera tabella dei destinatari.
+  Se non configuri un filtro sulla destinazione, verrà presa in considerazione l’intera tabella dei destinatari.
 
 * Numero di proposte da simulare per target.
 
-   Il destinatario riceverà un numero così elevato di proposte. Ad esempio, se immetti 5, ogni destinatario riceverà un massimo di 5 proposte di offerta.
+  Il destinatario riceverà un numero così elevato di proposte. Ad esempio, se immetti 5, ogni destinatario riceverà un massimo di 5 proposte di offerta.
 
-   ![](assets/offer_simulation_009.png)
+  ![](assets/offer_simulation_009.png)
 
 Per perfezionare le offerte da prendere in considerazione per la simulazione, puoi aggiungere uno o più temi (precedentemente specificati nelle categorie).
 

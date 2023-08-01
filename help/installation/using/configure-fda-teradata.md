@@ -2,14 +2,15 @@
 product: campaign
 title: Configurare l’accesso alle Teradate
 description: Scopri come configurare l’accesso alle Teradate in FDA
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
-source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1760'
+source-wordcount: '1767'
 ht-degree: 1%
 
 ---
@@ -40,26 +41,26 @@ Utilizzare Campaign [Federated Data Access](../../installation/using/about-fda.m
 
    * **/etc/odbc.ini**
 
-      ```
-      [ODBC]
-      InstallDir=/etc/
-      ```
+     ```
+     [ODBC]
+     InstallDir=/etc/
+     ```
 
-      &quot;InstallDir&quot; corrisponde alla posizione del **odbcinst.ini** file.
+     &quot;InstallDir&quot; corrisponde alla posizione del **odbcinst.ini** file.
 
    * **/etc/odbcinst.ini**
 
-      ```
-      [ODBC DRIVERS]
-      teradata=Installed
-      
-      [teradata]
-      Driver=/opt/teradata/client/17.10/lib64/tdataodbc_sb64.so
-      APILevel=CORE
-      ConnectFunctions=YYY
-      DriverODBCVer=3.51
-      SQLLevel=1
-      ```
+     ```
+     [ODBC DRIVERS]
+     teradata=Installed
+     
+     [teradata]
+     Driver=/opt/teradata/client/17.10/lib64/tdataodbc_sb64.so
+     APILevel=CORE
+     ConnectFunctions=YYY
+     DriverODBCVer=3.51
+     SQLLevel=1
+     ```
 
 1. Specifica le variabili di ambiente del server Adobe Campaign:
 
@@ -70,6 +71,7 @@ Utilizzare Campaign [Federated Data Access](../../installation/using/about-fda.m
 >[!NOTE]
 >
 >La connessione a un database esterno di Teradata in FDA richiede passaggi di configurazione aggiuntivi sul server Adobe Campaign. [Ulteriori informazioni](#teradata-additional-configurations).
+>
 
 ## Teradata account esterno{#teradata-external}
 
@@ -142,7 +144,7 @@ Per configurare l’assegnazione bande per le query, effettua le seguenti operaz
 
 Se durante il test della connessione viene visualizzato il seguente errore **TIM-030008 Data &#39;2&#39;: caratteri mancanti (iRc=-53)** verificare che il driver ODBC sia installato correttamente e che LD_LIBRARY_PATH (Linux) / PATH (Windows) sia impostato per il server Campaign.
 
-L’errore **Errore ODB-240000: [Microsoft][ODBC Driver Manager] Impossibile trovare il nome dell&#39;origine dati. Nessun driver predefinito specificato.** si verifica con Windows se si utilizza un driver 16.X. Adobe Campaign prevede che il nome della teradata sia &#39;{teradata}&#39; nel file odbcinst.ini.
+L’errore **Errore ODB-240000: [Microsoft][ODBC Driver Manager] Impossibile trovare il nome dell&#39;origine dati. Nessun driver predefinito specificato.** si verifica con Windows se si utilizza un driver 16.X. Adobe Campaign prevede che la teradata sia denominata &quot;{teradata}&#39; in odbcinst.ini.
 
 * A partire da Campaign 18.10, è possibile aggiungere ODBCDriverName=&quot;Teradata Database ODBC Driver 16.10&quot; nelle opzioni dell’account esterno. Il numero di versione può cambiare, il nome esatto può essere trovato eseguendo odbcad32.exe e accedendo alla scheda Driver.
 

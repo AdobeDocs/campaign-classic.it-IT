@@ -2,14 +2,15 @@
 product: campaign
 title: Domande frequenti sull’aggiornamento della build
 description: Domande comuni relative agli aggiornamenti della build di Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Upgrade, Troubleshooting
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1995'
+source-wordcount: '2002'
 ht-degree: 3%
 
 ---
@@ -28,7 +29,7 @@ In qualità di utente in hosting, puoi beneficiare automaticamente, senza alcun 
 
 Un aggiornamento della build si verifica quando il software Adobe Campaign Classic viene aggiornato al numero di build sicuro più recente, ma rimane nello stesso livello di build principale/secondario. Ad esempio: da Campaign Classic v7 build 9026 a Campaign v7 build 9032.
 
-Ulteriori informazioni [in questa sezione](../../rn/using/rn-overview.md).
+Per ulteriori informazioni, consulta [questa sezione](../../rn/using/rn-overview.md).
 
 ## Qual è la versione più recente di Adobe Campaign Classic?
 
@@ -38,13 +39,13 @@ L’ultima versione di Campaign Classic, con nuove funzioni e documentazione, è
 
 Controlla la versione da **[!UICONTROL Help > About...]** nella console del client di Adobe Campaign. Il **[!UICONTROL About]**  contiene informazioni dettagliate sulla versione e sulla build in esecuzione sia per la console che per il server.
 
-Ulteriori informazioni [in questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+Per ulteriori informazioni, consulta [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 ## Cosa significa lo stato della build?
 
 A partire da Campaign Classic 19.2, a ogni build viene associato uno stato.
 
-Ulteriori informazioni [in questa sezione](../../rn/using/rn-overview.md).
+Per ulteriori informazioni, consulta [questa sezione](../../rn/using/rn-overview.md).
 
 ## Un aggiornamento della build è uguale a un aggiornamento della versione?
 

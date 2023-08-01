@@ -2,13 +2,13 @@
 product: campaign
 title: Best practice per il reporting
 description: Best practice per la generazione di rapporti sulle campagne
-badge: label="v7" type="Informative" tooltip="Si applica solo a Campaign Classic v7"
-feature: Reporting
+feature: Reporting, Monitoring
+badge: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 0%
+source-wordcount: '848'
+ht-degree: 5%
 
 ---
 
@@ -30,15 +30,15 @@ Per ottimizzare la creazione, l’utilizzo e la durata di un rapporto, è necess
 
    Ad esempio, puoi:
 
-   * Esplora i dati nel database e definisci le misurazioni. Ulteriori informazioni [in questa sezione](../../reporting/using/ac-cubes.md)
-   * Aggiungere indicatori a un rapporto esistente. Ulteriori informazioni [in questa sezione](../../reporting/using/about-reports-creation-in-campaign.md)
-   * Visualizzare i dati nel database. Ulteriori informazioni [in questa sezione](../../reporting/using/about-descriptive-analysis.md)
-   * Crea un nuovo rapporto di consegna. Ulteriori informazioni [in questa sezione](../../reporting/using/about-reports-creation-in-campaign.md)),
+   * Esplora i dati nel database e definisci le misurazioni. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/ac-cubes.md)
+   * Aggiungere indicatori a un rapporto esistente. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md)
+   * Visualizzare i dati nel database. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/about-descriptive-analysis.md)
+   * Crea un nuovo rapporto di consegna. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md)),
    * Esportare dati dal database di Adobe Campaign (tramite un flusso di lavoro, fare riferimento a [questa sezione](../../workflow/using/about-workflows.md)
-   * Creare una tabella pivot. Ulteriori informazioni [in questa sezione](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
-   * Esplora i dati aggregati. Ulteriori informazioni [in questa sezione](../../reporting/using/ac-cubes.md)
-   * Utilizza una procedura guidata per analizzare i dati. Ulteriori informazioni [in questa sezione](../../reporting/using/about-descriptive-analysis.md)
-   * Analizzare grandi volumi di dati. Ulteriori informazioni [in questa sezione](../../reporting/using/about-reports-creation-in-campaign.md)
+   * Creare una tabella pivot. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
+   * Esplora i dati aggregati. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/ac-cubes.md)
+   * Utilizza una procedura guidata per analizzare i dati. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/about-descriptive-analysis.md)
+   * Analizzare grandi volumi di dati. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md)
 
 1. Identificare la popolazione target
 
@@ -71,7 +71,7 @@ Segnatamente:
 
 * Il tempo di calcolo per un report non deve mai superare i 5 minuti.
 
-   Analogamente, durante la fase di progettazione, con un piccolo volume di dati, se il calcolo del rapporto supera i 60 secondi, è necessario modificare i metodi di calcolo.
+  Analogamente, durante la fase di progettazione, con un piccolo volume di dati, se il calcolo del rapporto supera i 60 secondi, è necessario modificare i metodi di calcolo.
 
 * Quando si utilizza il modulo Marketing Analytics, i dati di reporting non devono superare i 10 milioni di righe.
 
@@ -99,17 +99,17 @@ Inoltre, Adobe Campaign consiglia di apportare i seguenti miglioramenti:
 
 * Lavorare sul modello dati: i campi indicizzati devono essere utilizzati principalmente per migliorare le formule di calcolo.
 
-   Per trovare rapidamente un campo indicizzato, osserva il nome della colonna nell’interfaccia di Adobe Campaign: se il campo è indicizzato, la freccia di ordinamento è sottolineata in rosso.
+  Per trovare rapidamente un campo indicizzato, osserva il nome della colonna nell’interfaccia di Adobe Campaign: se il campo è indicizzato, la freccia di ordinamento è sottolineata in rosso.
 
-   Per ulteriori informazioni sugli indici, consulta [questa sezione](../../configuration/using/data-model-best-practices.md#indexes).
+  Per ulteriori informazioni sugli indici, consulta [questa sezione](../../configuration/using/data-model-best-practices.md#indexes).
 
 * Assicurati che il rapporto sia scalabile: il volume dei dati potrebbe aumentare in modo significativo nel tempo.
 
-   Analogamente, il volume dei dati manipolati durante le fasi di prova può differire dal volume effettivo dei dati in produzione. Ecco perché le fasi di test sono importanti.
+  Analogamente, il volume dei dati manipolati durante le fasi di prova può differire dal volume effettivo dei dati in produzione. Ecco perché le fasi di test sono importanti.
 
-   Infine, i ritardi di eliminazione dei dati devono essere noti e adattati quando necessario per una facile manipolazione dei dati.
+  Infine, i ritardi di eliminazione dei dati devono essere noti e adattati quando necessario per una facile manipolazione dei dati.
 
-   Per ulteriori informazioni sulla pulizia e la conservazione dei dati, consulta [questa sezione](../../configuration/using/data-model-best-practices.md#data-retention).
+  Per ulteriori informazioni sulla pulizia e la conservazione dei dati, consulta [questa sezione](../../configuration/using/data-model-best-practices.md#data-retention).
 
 ### Esportare i rapporti {#exporting-reports}
 

@@ -2,9 +2,9 @@
 product: campaign
 title: Creare un nuovo rapporto
 description: Scopri i passaggi chiave per creare un nuovo rapporto
-feature: Reporting
+feature: Reporting, Monitoring
 exl-id: 4c2aad47-0e2d-4d0b-8898-b437f4a05e11
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 1%
@@ -145,15 +145,15 @@ Per ulteriori informazioni sulla creazione e la configurazione dei campi di inpu
 
 * tramite pulsanti di scelta o caselle di controllo:
 
-   ![](assets/reporting_radio_buttons.png)
+  ![](assets/reporting_radio_buttons.png)
 
 * tramite un elenco a discesa:
 
-   ![](assets/reporting_control_list.png)
+  ![](assets/reporting_control_list.png)
 
 * tramite un calendario:
 
-   ![](assets/reporting_control_date.png)
+  ![](assets/reporting_control_date.png)
 
 Infine, è possibile integrare uno o più controlli avanzati nei report. Questo tipo di controllo consente di inserire un collegamento, una costante o di selezionare una cartella.
 

@@ -2,16 +2,17 @@
 product: campaign
 title: Connessione tramite LDAP
 description: Scopri come utilizzare LDAP per accedere a Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
+badge-v7-prem: label="on-premise e ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 0533cd50-3aa4-4160-9152-e916e149e77f
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1008'
-ht-degree: 1%
+source-wordcount: '1033'
+ht-degree: 2%
 
 ---
 
@@ -34,27 +35,27 @@ La finestra consente di configurare l’identificazione degli utenti di Adobe Ca
 
    * Password crittografata (**md5**)
 
-      modalità predefinita.
+     modalità predefinita.
 
    * Password in testo normale + SSL (**TLS**)
 
-      L&#39;intera procedura di autenticazione (password inclusa) è crittografata. La porta sicura 636 non deve essere utilizzata in questa modalità: Adobe Campaign passa automaticamente alla modalità protetta.
+     L&#39;intera procedura di autenticazione (password inclusa) è crittografata. La porta sicura 636 non deve essere utilizzata in questa modalità: Adobe Campaign passa automaticamente alla modalità protetta.
 
-      Quando si utilizza questa modalità di autenticazione, in Linux il certificato viene verificato da una libreria client openLDAP. È consigliabile utilizzare un certificato SSL valido in modo che la procedura di autenticazione sia crittografata. In caso contrario, le informazioni saranno in testo normale.
+     Quando si utilizza questa modalità di autenticazione, in Linux il certificato viene verificato da una libreria client openLDAP. È consigliabile utilizzare un certificato SSL valido in modo che la procedura di autenticazione sia crittografata. In caso contrario, le informazioni saranno in testo normale.
 
-      Il certificato viene verificato anche in Windows.
+     Il certificato viene verificato anche in Windows.
 
    * Gestione LAN di Windows NT (**NTLM**)
 
-      Autenticazione Windows proprietaria. Il **[!UICONTROL Unique identifier]** viene utilizzato solo per il nome di dominio.
+     Autenticazione Windows proprietaria. Il **[!UICONTROL Unique identifier]** viene utilizzato solo per il nome di dominio.
 
    * Autenticazione password distribuita (**DPA**)
 
-      Autenticazione Windows proprietaria. Il **[!UICONTROL Unique identifier]** viene utilizzato solo per il nome di dominio (domain.com).
+     Autenticazione Windows proprietaria. Il **[!UICONTROL Unique identifier]** viene utilizzato solo per il nome di dominio (domain.com).
 
    * Password in testo semplice
 
-      Nessuna crittografia (da utilizzare solo nelle fasi di test).
+     Nessuna crittografia (da utilizzare solo nelle fasi di test).
 
 * Selezionare la modalità di autenticazione utente: **[!UICONTROL Automatically compute the unique user identifier]** (vedere passaggio [Calcolo del nome distinto](#distinguished-name-calculation)) o **[!UICONTROL Search the unique user identifier in the directory]** (vedere passaggio [Ricerca di identificatori](#searching-for-identifiers)).
 
@@ -102,17 +103,17 @@ Se si desidera calcolare gli identificatori del nome distinto (DN), il passaggio
 
 * Specifica l’identificatore univoco dell’utente nella directory (Nome distinto - DN) in **[!UICONTROL Distinguished Name]** campo.
 
-   **[!UICONTROL (login)]** verrà sostituito con l’identificatore dell’operatore Adobe Campaign.
+  **[!UICONTROL (login)]** verrà sostituito con l’identificatore dell’operatore Adobe Campaign.
 
-   >[!CAUTION]
-   >
-   >Il **[!UICONTROL dc]** L&#39;impostazione deve essere in minuscolo.
+  >[!CAUTION]
+  >
+  >Il **[!UICONTROL dc]** L&#39;impostazione deve essere in minuscolo.
 
 * Seleziona l’opzione **[!UICONTROL Enable synchronization of user rights from authorizations and groups in the directory]** per sincronizzare le associazioni di gruppi e utenti nella directory LDAP e le associazioni di gruppi e utenti in Adobe Campaign.
 
-   Quando si seleziona questa opzione, la **[!UICONTROL Application level DN used for the search]** e **[!UICONTROL Password of the application login]** sono attivati.
+  Quando si seleziona questa opzione, la **[!UICONTROL Application level DN used for the search]** e **[!UICONTROL Password of the application login]** sono attivati.
 
-   Se si compilano questi due campi, Adobe Campaign si connette al server LDAP con il proprio login e la propria password. Se sono vuoti, Adobe Campaign si connette al server in modo anonimo.
+  Se si compilano questi due campi, Adobe Campaign si connette al server LDAP con il proprio login e la propria password. Se sono vuoti, Adobe Campaign si connette al server in modo anonimo.
 
 ## Ricerca di identificatori {#searching-for-identifiers}
 
@@ -121,9 +122,9 @@ Se si sceglie di cercare un identificatore, la procedura guidata di distribuzion
 * In **[!UICONTROL Application level DN used for the search]** e **[!UICONTROL Password of the application login]** forniscono l’identificatore e la password con cui Adobe Campaign si connette per cercare l’identificatore. Se sono vuoti, Adobe Campaign si connette al server in modo anonimo.
 * Specifica la **[!UICONTROL Base identifier]** e **[!UICONTROL Search scope]** per determinare un sottoinsieme della directory LDAP da cui avviare la ricerca.
 
-   Seleziona la modalità desiderata nell’elenco a discesa:
+  Seleziona la modalità desiderata nell’elenco a discesa:
 
-   ![](assets/s_ncs_install_deployment_wiz_ldap_03.png)
+  ![](assets/s_ncs_install_deployment_wiz_ldap_03.png)
 
    1. **[!UICONTROL Recursive (default mode)]**.
 
@@ -150,9 +151,9 @@ Questa finestra viene visualizzata quando si seleziona **[!UICONTROL Enable sync
 * il **[!UICONTROL Database identifier]** campo,
 * il **[!UICONTROL Search scope]** campo,
 
-   >[!NOTE]
-   >
-   >Se hai scelto di cercare il DN, puoi selezionare **[!UICONTROL Reuse the DN search parameters]** per riportare i valori selezionati per il DN e l’ambito di ricerca dalla schermata precedente.
+  >[!NOTE]
+  >
+  >Se hai scelto di cercare il DN, puoi selezionare **[!UICONTROL Reuse the DN search parameters]** per riportare i valori selezionati per il DN e l’ambito di ricerca dalla schermata precedente.
 
 * il **[!UICONTROL Rights search filter]** in base al nome di accesso e al nome distinto dell&#39;utente,
 * il **[!UICONTROL Attribute containing the group or authorization name]** campo relativo all’utilizzatore,

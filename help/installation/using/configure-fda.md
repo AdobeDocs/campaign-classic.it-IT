@@ -2,14 +2,15 @@
 product: campaign
 title: Configurare i connettori FDA
 description: Scopri i passaggi di configurazione per FDA
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '349'
 ht-degree: 5%
 
 ---
@@ -25,6 +26,7 @@ Come regola generale, devi installare il livello client corrispondente sul datab
 >[!NOTE]
 >
 >Le versioni compatibili sono elencate in [Matrice di compatibilità di Campaign](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
+>
 
 ## Passaggi di configurazione {#fda-configuration-steps}
 

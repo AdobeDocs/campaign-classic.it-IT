@@ -2,10 +2,11 @@
 product: campaign
 title: Nota tecnica - Adobe Campaign - Aggiornamento sulla sicurezza della versione di Apache
 description: Adobe Campaign - Aggiornamento sulla sicurezza della versione di Apache
+feature: Technote, Upgrade
 hide: true
 hidefromtoc: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
-source-git-commit: a3eae4e253f66f5a651ffe0458f60b1f8bdf2258
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '539'
 ht-degree: 0%
@@ -30,37 +31,38 @@ Le istanze non di produzione verranno aggiornate prima da Adobe, quindi le istan
 
 >[!NOTE]
 >Questo aggiornamento richiede il riavvio del server web Apache. I tempi di inattività non superano i 10 minuti nell&#39;intervallo indicato di seguito.
+> 
 
 ## Domande frequenti {#apache-faq}
 
 * **Perché è un aggiornamento obbligatorio?**
 
-   L’attuale versione di Apache è vulnerabile e presenta una potenziale minaccia per la sicurezza. È importante che le istanze di Campaign siano aggiornate alla versione di Apache più recente applicabile per evitare rischi per la sicurezza.
+  L’attuale versione di Apache è vulnerabile e presenta una potenziale minaccia per la sicurezza. È importante che le istanze di Campaign siano aggiornate alla versione di Apache più recente applicabile per evitare rischi per la sicurezza.
 
 * **Quali sono i clienti target degli aggiornamenti di sicurezza?**
 
-   Tutti i clienti che utilizzano ambienti Campaign implementati su versioni precedenti di Apache vengono aggiornati all’ultima versione di Apache applicabile.
+  Tutti i clienti che utilizzano ambienti Campaign implementati su versioni precedenti di Apache vengono aggiornati all’ultima versione di Apache applicabile.
 
 * **Quali sono i tempi di inattività previsti?**
 
-   Il tempo di inattività previsto è inferiore a 10 minuti.
+  Il tempo di inattività previsto è inferiore a 10 minuti.
 
 * **Il cliente deve eseguire delle azioni per l&#39;aggiornamento della sicurezza?**
 
-   Non è richiesta alcuna azione poiché l&#39;aggiornamento della sicurezza verrà eseguito automaticamente.
+  Non è richiesta alcuna azione poiché l&#39;aggiornamento della sicurezza verrà eseguito automaticamente.
 
 * **Qual è l’impatto sulle campagne/flussi di lavoro in esecuzione durante la finestra di manutenzione?**
 
-   Durante la finestra di manutenzione, il flusso di lavoro e i servizi di posta verranno entrambi arrestati e le attività pianificate non saranno in esecuzione. Tutte le attività in corso o i processi in esecuzione verranno interrotti durante il tempo di inattività fino al riavvio del server. Una volta completata l’attività e riavviato il server, tutti i servizi riprenderanno.
+  Durante la finestra di manutenzione, il flusso di lavoro e i servizi di posta verranno entrambi arrestati e le attività pianificate non saranno in esecuzione. Tutte le attività in corso o i processi in esecuzione verranno interrotti durante il tempo di inattività fino al riavvio del server. Una volta completata l’attività e riavviato il server, tutti i servizi riprenderanno.
 
 * **Quali convalide devono essere eseguite dai clienti?**
 
-   Non sono necessari test specifici per questo aggiornamento della sicurezza. In caso di problemi, contatta il [Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+  Non sono necessari test specifici per questo aggiornamento della sicurezza. In caso di problemi, contatta il [Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 
 * **È possibile richiedere una modifica in Data/ora nello slot di aggiornamento della sicurezza pianificato?**
 
-   Poiché si tratta di una correzione di sicurezza, si consiglia vivamente di adattarsi alla pianificazione esistente.
+  Poiché si tratta di una correzione di sicurezza, si consiglia vivamente di adattarsi alla pianificazione esistente.
 
 
 Per qualsiasi altra domanda, puoi contattare [Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support).

@@ -2,14 +2,15 @@
 product: campaign
 title: Profili operatore
 description: Profili operatore
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '391'
 ht-degree: 9%
 
 ---
@@ -42,9 +43,9 @@ I diritti assegnati al gestore delle offerte consentono loro di svolgere le segu
 * Configurare l’idoneità per le offerte.
 * Approvare le offerte.
 
-   >[!NOTE]
-   >
-   >Il gestore delle offerte può approvare un’offerta solo in due casi specifici. Il primo è se nessuno in particolare è stato specificato come revisore, il secondo è se l’operatore responsabile della creazione dei modelli (con il diritto di assegnare i revisori) li ha specificati come revisori nel modello di offerta su cui era basata l’offerta.
+  >[!NOTE]
+  >
+  >Il gestore delle offerte può approvare un’offerta solo in due casi specifici. Il primo è se nessuno in particolare è stato specificato come revisore, il secondo è se l’operatore responsabile della creazione dei modelli (con il diritto di assegnare i revisori) li ha specificati come revisori nel modello di offerta su cui era basata l’offerta.
 
 ## Responsabile della consegna {#delivery-manager}
 
@@ -59,9 +60,9 @@ I diritti assegnati ai responsabili della consegna consentono loro di svolgere i
 * Visualizzare e modificare le categorie di offerta.
 * Approva le offerte se il responsabile della consegna è specificato come uno dei suoi revisori.
 
-   >[!NOTE]
-   >
-   >I responsabili della consegna possono approvare un’offerta solo se sono stati definiti come revisori durante la configurazione dell’offerta.
+  >[!NOTE]
+  >
+  >I responsabili della consegna possono approvare un’offerta solo se sono stati definiti come revisori durante la configurazione dell’offerta.
 
 ## Riepilogo dei diritti in base all’operatore {#recap-of-rights-according-to-operator}
 

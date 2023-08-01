@@ -2,15 +2,16 @@
 product: campaign
 title: Configurazione dell’integrazione dei tipi di pubblico condivisi in Adobe Campaign
 description: Scopri come configurare l’integrazione dei pubblici condivisi
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Audiences, People Core Service Integration
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '496'
 ht-degree: 3%
 
 ---
@@ -51,9 +52,9 @@ Innanzitutto, devi configurare o controllare gli account esterni in Adobe Campai
    * **[!UICONTROL AWS S3 Account Server]**
 URL del server, deve essere compilato come segue:
 
-      ```
-      <S3bucket name>.s3.amazonaws.com/<s3object path>
-      ```
+     ```
+     <S3bucket name>.s3.amazonaws.com/<s3object path>
+     ```
 
    * **[!UICONTROL AWS access key ID]**
 Per sapere dove trovare il tuo ID chiave di accesso ad AWS, consulta questa [pagina](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
@@ -63,6 +64,7 @@ Per sapere dove trovare la chiave di accesso segreta ad AWS, consulta questa [pa
 
    * **[!UICONTROL AWS Region]**
 Per ulteriori informazioni sull’area geografica di AWS, consulta [pagina](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
+
    ![](assets/aam_config_2.png)
 
 1. Clic **[!UICONTROL Save]** e configurare **[!UICONTROL Import audiences from the Adobe Marketing Cloud]** account esterno come descritto nei passaggi precedenti.
@@ -71,7 +73,7 @@ Gli account esterni sono ora configurati.
 
 ## Passaggio 2: configurare l’origine dati {#step-2--configure-the-data-source}
 
-Il **Destinatario - ID visitatore** viene creato all’interno di Audience Manager. Si tratta di un’origine dati predefinita configurata per impostazione predefinita per l’ID visitatore. I segmenti creati da Campaign faranno parte di questa origine dati.
+Il **Destinatario - ID visitatore** viene creato all’interno di Audienci Manager. Si tratta di un’origine dati predefinita configurata per impostazione predefinita per l’ID visitatore. I segmenti creati da Campaign faranno parte di questa origine dati.
 
 Per configurare **[!UICONTROL Recipient - Visitor ID]** origine dati:
 

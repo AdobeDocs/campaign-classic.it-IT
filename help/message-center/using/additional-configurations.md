@@ -2,14 +2,15 @@
 product: campaign
 title: Configurazioni aggiuntive
 description: Scopri come impostare configurazioni aggiuntive per la messaggistica transazionale in Adobe Campaign Classic
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Transactional Messaging, Message Center
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '754'
 ht-degree: 7%
 
 ---
@@ -83,7 +84,7 @@ Nelle istanze di esecuzione, è possibile accedere ai flussi di lavoro tecnici p
 * **[!UICONTROL Processing real time events]** (nome interno: **[!UICONTROL rtEventsProcessing]** ): questo flusso di lavoro ti consente di suddividere gli eventi in tempo reale in una coda prima che vengano collegati a un modello di messaggio.
 * **[!UICONTROL Update event status]** (nome interno: **[!UICONTROL updateEventStatus]** ): questo flusso di lavoro ti consente di attribuire uno stato all’evento.
 
-   Sono disponibili i seguenti stati dell’evento:
+  Sono disponibili i seguenti stati dell’evento:
 
    * **[!UICONTROL Pending]** : l’evento è in coda. Non è ancora stato assegnato alcun modello di messaggio.
    * **[!UICONTROL Pending delivery]** : l’evento è in coda, gli è stato assegnato un modello di messaggio e viene elaborato dalla consegna.

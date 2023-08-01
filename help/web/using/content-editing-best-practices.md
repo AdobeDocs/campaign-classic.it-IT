@@ -2,14 +2,14 @@
 product: campaign
 title: Best practice per la modifica dei contenuti
 description: Best practice per la modifica dei contenuti
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Web Apps, Web Forms, Landing Pages
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 6%
+source-wordcount: '560'
+ht-degree: 7%
 
 ---
 
@@ -23,21 +23,21 @@ Per garantire il funzionamento ottimale dell’editor, si consiglia di osservare
 * Se la pagina HTML contiene **Script JavaScript**, devono essere eseguiti **senza errori** all’esterno dell’editor.
 * Durante la creazione di un modello, è consigliabile aggiungere un attributo **“type”** ai tag. `<input>` Queste informazioni verranno elaborate dall&#39;editor e consentiranno all&#39;utente di collegare un campo del database al campo del modulo durante la configurazione dell&#39;applicazione Web.
 
-   Esempio di codice HTML nel modello:
+  Esempio di codice HTML nel modello:
 
-   ```
-   <input id="email" type="email" name="email"/>
-   ```
+  ```
+  <input id="email" type="email" name="email"/>
+  ```
 
-   Il **&#39;tipo&#39;** è visibile nell&#39;interfaccia nel seguente formato:
+  Il **&#39;tipo&#39;** è visibile nell&#39;interfaccia nel seguente formato:
 
-   ![](assets/dce_sidebar_inputtypechanges.png)
+  ![](assets/dce_sidebar_inputtypechanges.png)
 
-   È disponibile l’elenco ufficiale degli attributi &quot;type&quot; [in questo sito Web](https://www.w3schools.com/tags/att_input_type.asp).
+  È disponibile l’elenco ufficiale degli attributi &quot;type&quot; [in questo sito Web](https://www.w3schools.com/tags/att_input_type.asp).
 
 * Passaggi per simulare una pagina finale con DCE:
 
-   ![](assets/dce_enchainement.png)
+  ![](assets/dce_enchainement.png)
 
 * Assicurati che ce ne sia solo uno `<body> </body>` nella pagina.
 * Quando viene caricato un file CSS o JS, le immagini contenute nel file.zip non vengono caricate. I riferimenti a queste immagini presenti nel CSS non vengono quindi aggiornati.

@@ -2,14 +2,15 @@
 product: campaign
 title: Integrazione di un’offerta tramite un flusso di lavoro
 description: Integrazione di un’offerta tramite un flusso di lavoro
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers, Workflows
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1050'
 ht-degree: 3%
 
 ---
@@ -39,9 +40,10 @@ L’attività di struttura della consegna, disponibile nei flussi di lavoro dell
 
    * Se desideri chiamare il motore di offerta, seleziona la **[!UICONTROL Restrict the number of propositions selected]** casella. Specifica lo spazio dell’offerta e il numero di proposte che verranno presentate nella consegna.
 
-      Il motore di offerta terrà conto dei pesi delle offerte e delle regole di idoneità.
+     Il motore di offerta terrà conto dei pesi delle offerte e delle regole di idoneità.
 
    * Se non selezioni la casella, tutte le offerte nella struttura della consegna verranno presentate senza effettuare una chiamata al motore di offerta.
+
    >[!NOTE]
    >
    >L’anteprima prende in considerazione il numero di offerte specificato nella consegna. Durante l’esecuzione di un flusso di lavoro, viene preso in considerazione il numero specificato nella struttura della consegna.
@@ -80,11 +82,11 @@ Dopo aver configurato la query (consulta la [Guida ai flussi di lavoro](../../wo
 
    * **[!UICONTROL Search for the best offer in a category]** : seleziona questa opzione e specifica i parametri di chiamata del motore di offerta (spazio dell’offerta, categoria o temi, data di contatto, numero di offerte da mantenere). Il motore calcola automaticamente le offerte da aggiungere in base a questi parametri. È consigliabile completare **[!UICONTROL Category]** o **[!UICONTROL Theme]** e non entrambi contemporaneamente.
 
-      ![](assets/int_enrichment_offer3.png)
+     ![](assets/int_enrichment_offer3.png)
 
    * **[!UICONTROL A predefined offer]** : seleziona questa opzione e specifica uno spazio dell’offerta, un’offerta specifica e una data di contatto per configurare direttamente l’offerta da aggiungere, senza chiamare il motore delle offerte.
 
-      ![](assets/int_enrichment_offer4.png)
+     ![](assets/int_enrichment_offer4.png)
 
 1. Quindi configura un’attività di consegna che corrisponde al canale scelto. Per ulteriori informazioni, consulta [Inserimento di una proposta di offerta in una consegna](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) sezione.
 
@@ -171,6 +173,6 @@ A questo scopo, utilizza il seguente processo:
    * Specifica la popolazione del sottoinsieme utilizzando le regole di filtro e limitazione disponibili.
    * Quindi seleziona l’offerta da presentare al sottoinsieme. Le offerte disponibili sono quelle idonee nell’ambiente delle offerte selezionato al passaggio precedente.
 
-      ![](assets/int_offer_per_cell1.png)
+     ![](assets/int_offer_per_cell1.png)
 
 1. Quindi configura un’attività di consegna che corrisponde al canale scelto. Per ulteriori informazioni, consulta [Inserimento di una proposta di offerta in una consegna](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery) sezione.

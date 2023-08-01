@@ -2,14 +2,15 @@
 product: campaign
 title: Configurare l’accesso al Snowflake
 description: Scopri come configurare l’accesso al Snowflake in FDA
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '519'
 ht-degree: 6%
 
 ---
@@ -37,19 +38,19 @@ Per configurare [!DNL Snowflake] su Linux, segui i passaggi seguenti:
 
    * Per Red Hat/CentOS:
 
-      ```
-      yum update
-      yum upgrade
-      yum install -y grep sed tar wget perl curl
-      ```
+     ```
+     yum update
+     yum upgrade
+     yum install -y grep sed tar wget perl curl
+     ```
 
    * Per Debian:
 
-      ```
-      apt-get update
-      apt-get upgrade
-      apt-get install -y grep sed tar wget perl curl
-      ```
+     ```
+     apt-get update
+     apt-get upgrade
+     apt-get install -y grep sed tar wget perl curl
+     ```
 
 1. Prima di eseguire lo script, è possibile accedere a ulteriori informazioni con `--help` opzione:
 
@@ -98,12 +99,11 @@ Devi creare un [!DNL Snowflake] account esterno per collegare la tua istanza Cam
 
       * **[!UICONTROL Password]**: password dell’account utente.
 
-      ![](assets/snowflake.png)
+     ![](assets/snowflake.png)
 
    * Per l’autenticazione tramite coppia di chiavi, fai clic su **[!UICONTROL Keypair Auth]** per utilizzare il **[!UICONTROL Private key]** per autenticare e copiare e incollare **[!UICONTROL Private key]**.
 
-      ![](assets/snowflake_4.png)
-
+     ![](assets/snowflake_4.png)
 
 1. Fai clic su **[!UICONTROL Parameters]** , quindi la scheda **[!UICONTROL Deploy functions]** per creare funzioni.
 

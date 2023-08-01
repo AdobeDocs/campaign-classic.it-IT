@@ -2,15 +2,16 @@
 product: campaign
 title: Invio di una richiesta ad Adobe
 description: Invio di una richiesta ad Adobe
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Audiences, People Core Service Integration
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: f3c19fcd-12cb-4ca3-b4b7-7dc4be57f4ea
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '158'
 ht-degree: 17%
 
 ---
@@ -45,7 +46,7 @@ Una volta che IMS è abilitato per la tua organizzazione, puoi richiedere il pro
   </tr> 
   <tr> 
    <td> <strong>AAM o il servizio People</strong><br /> </td> 
-   <td> Esempio: Adobe Audience Manager. Assicurati di indicare se possiedi o meno la licenza Audience Manager.</td> 
+   <td> Esempio: Adobe Audience Manager. Assicurati di indicare se possiedi o meno la licenza Audienci Manager.</td> 
   </tr> 
   <tr> 
    <td> <strong>ID dichiarato o ID visitatore</strong><br /> </td> 

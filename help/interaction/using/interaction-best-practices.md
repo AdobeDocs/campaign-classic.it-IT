@@ -2,14 +2,15 @@
 product: campaign
 title: Best practice di interazione con Adobe Campaign Classic
 description: Questa sezione presenta l’approccio best practice per gestire il modulo di interazione in Adobe Campaign Classic
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 exl-id: 98413cde-50c9-416c-8316-85837f724c27
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1200'
 ht-degree: 0%
 
 ---
@@ -29,7 +30,7 @@ L’interazione in Adobe Campaign richiede un’attenta gestione per funzionare 
 Di seguito sono elencati gli elementi importanti da tenere presenti durante l’implementazione e la configurazione delle interazioni.
 
 * Per il motore batch (in genere utilizzato nelle comunicazioni in uscita come le e-mail), la velocità effettiva è il problema principale, in quanto è possibile gestire più contatti contemporaneamente. Il collo di bottiglia tipico è rappresentato dalle prestazioni del database.
-* Il vincolo principale per il motore unitario (in genere utilizzato nelle comunicazioni in entrata come un banner su un sito web) è la latenza, in quanto qualcuno si aspetta una risposta. Il collo di bottiglia tipico è rappresentato dalle prestazioni della CPU.
+* Il vincolo principale per un motore unitario (in genere utilizzato nelle comunicazioni in entrata come un banner su un sito web) è la latenza, in quanto qualcuno si aspetta una risposta. Il collo di bottiglia tipico è rappresentato dalle prestazioni della CPU.
 * Il design del catalogo delle offerte ha un impatto enorme sulle prestazioni di Adobe Campaign Classic.
 * Quando ci sono molte offerte, suddividile in diversi cataloghi di offerte.
 
@@ -127,9 +128,9 @@ Quando estendi lo schema nms:offer, accertati di seguire la struttura preconfigu
 * Definisci un nuovo campo per l’archiviazione dei contenuti in `<element name="view">`.
 * Ogni nuovo campo deve essere definito due volte. Una volta come campo XML normale e una volta come campo XML CDATA con &quot;_jst&quot; aggiunto al nome. Ad esempio:
 
-   ```
-   <element label="Price" name="price" type="long" xml="true"/>
-   <element advanced="true" label="Script price" name="price_jst" type="CDATA" xml="true"/>
-   ```
+  ```
+  <element label="Price" name="price" type="long" xml="true"/>
+  <element advanced="true" label="Script price" name="price_jst" type="CDATA" xml="true"/>
+  ```
 
 * Tutti i campi che contengono URL da tracciare devono essere posizionati in `<element name="trackedUrls">` che si trova in `<element name="view" >`.

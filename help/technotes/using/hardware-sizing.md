@@ -2,11 +2,12 @@
 product: campaign
 title: Consigli per il dimensionamento hardware per Campaign Classic v7
 description: Consigli per il dimensionamento hardware per Campaign Classic v7
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Technote
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 exl-id: c47e73a0-dbd8-43f5-a363-7e6783dc7685
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2512'
+source-wordcount: '2519'
 ht-degree: 1%
 
 ---
@@ -188,10 +189,10 @@ Questa distribuzione include anche le chiamate al Centro messaggi, guidate dai s
 In questo scenario, Adobe consiglia di installare Adobe Campaign su quattro computer, come segue:
 
 * Server applicazioni
-   **Due sistemi, CPU quad-core da 3 GHz, 8 GB di RAM, RAID 1 o 10, SSD da 80 GB**
+  **Due sistemi, CPU quad-core da 3 GHz, 8 GB di RAM, RAID 1 o 10, SSD da 80 GB**
 
 * Server web
-   **Due sistemi, CPU quad-core da 3 GHz, 16 GB di RAM, RAID 1 o 10, SSD da 80 GB**
+  **Due sistemi, CPU quad-core da 3 GHz, 16 GB di RAM, RAID 1 o 10, SSD da 80 GB**
 
 
 Gli Application Server supportano direttamente gli utenti della console Campaign e l’esecuzione dei flussi di lavoro delle campagne. Questa funzionalità viene implementata su due server identici per l&#39;elevata disponibilità, condividendo un file system NAS (Network-Attached Storage) per abilitare il failover.
@@ -229,7 +230,7 @@ Come per la dimensione della campagna e-mail, il volume dei messaggi SMS non car
 * **Complessità dello schema del database**
 La quantità di dati per ogni destinatario attivo richiede sia spazio di archiviazione che spazio buffer del database, pertanto più destinatari in genere richiedono più memoria e CPU sul server del database. Gli schemi complessi richiedono inoltre l’unione di più tabelle per la segmentazione, in modo che le operazioni di segmentazione possano essere eseguite molto più lentamente e richiedano più CPU e memoria del database quando i dati vengono distribuiti su più tabelle.
 
-   La memoria del server di database viene stimata assicurandosi che il pool di buffer del database possa essere sufficientemente grande da contenere tutti i dati dei destinatari, più tabelle temporanee per l&#39;esecuzione dei flussi di lavoro e un margine per altre operazioni del database.
+  La memoria del server di database viene stimata assicurandosi che il pool di buffer del database possa essere sufficientemente grande da contenere tutti i dati dei destinatari, più tabelle temporanee per l&#39;esecuzione dei flussi di lavoro e un margine per altre operazioni del database.
 
 * **Utilizzo dell’interazione in uscita**
 Le regole di interazione in modalità batch vengono valutate nei flussi di lavoro che trasferiscono tutta la complessità di calcolo al database. Il fattore principale di impegno nel database è il numero totale di offerte idonee calcolate durante una chiamata al motore (dimensione target X numero medio di offerte per destinatario prima di mantenere le N migliori offerte). La velocità della CPU del server di database è il primo fattore di prestazioni.
@@ -240,7 +241,7 @@ Le regole e le offerte di interazione in entrata vengono valutate nel database d
 * **Tracciamento del periodo di conservazione dei dati**
 Un aumento della conservazione dei dati di tracciamento oltre i 90 giorni richiede una maggiore capacità di archiviazione del database e può rallentare il sistema perché l’inserimento di nuovi dati di tracciamento va a beneficio di tabelle di grandi dimensioni. Il tracciamento dei dati non è utile per la segmentazione della campagna dopo 90 giorni, pertanto si consiglia di ridurre il periodo di conservazione.
 
-   Se hai bisogno di un’analisi a lungo termine dell’esperienza di marketing del destinatario, i dati di tracciamento devono essere spostati in Adobe Analytics o in un altro sistema di analisi.
+  Se hai bisogno di un’analisi a lungo termine dell’esperienza di marketing del destinatario, i dati di tracciamento devono essere spostati in Adobe Analytics o in un altro sistema di analisi.
 
 ## Virtualizzazione
 

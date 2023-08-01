@@ -2,11 +2,12 @@
 product: campaign
 title: Definisci tag di tracciamento web
 description: Definisci tag di tracciamento web
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Application Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 exl-id: 0b5575be-57e7-4eee-9c0a-e9ef4b0931bf
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '360'
 ht-degree: 2%
 
 ---
@@ -100,23 +101,23 @@ Nella tabella seguente viene fornito un elenco di parametri speciali supportati 
 
 * Visita a una pagina di identificazione &quot;home&quot;
 
-   **https://myserver.adobe.com/r/9862?tagid=home**
+  **https://myserver.adobe.com/r/9862?tagid=home**
 
 * Raccolta dei dati del volume di business
 
-   **https://myserver.adobe.com/r/4567?tagid=command&amp;amount=100&amp;article=2l**
+  **https://myserver.adobe.com/r/4567?tagid=command&amp;amount=100&amp;article=2l**
 
 * Specifica di un campo per trovare il destinatario
 
-   **https://myserver.adobe.com/r/2353?tagid=home&amp;rcpid=saccount%3D10**
+  **https://myserver.adobe.com/r/2353?tagid=home&amp;rcpid=saccount%3D10**
 
-   Un destinatario il cui numero di conto è 10 viene inviato alla home page.
+  Un destinatario il cui numero di conto è 10 viene inviato alla home page.
 
 * Utilizzo di una consegna predefinita
 
-   **https://myserver.adobe.com/r/2456?tagid=home&amp;jobid=e6**
+  **https://myserver.adobe.com/r/2456?tagid=home&amp;jobid=e6**
 
-   Un destinatario viene inviato alla home page. Queste informazioni verranno memorizzate nella consegna con l’identificatore 230 (e6 nel database 16) a meno che con questa query non venga inviato un cookie di sessione contenente un identificatore di consegna.
+  Un destinatario viene inviato alla home page. Queste informazioni verranno memorizzate nella consegna con l’identificatore 230 (e6 nel database 16) a meno che con questa query non venga inviato un cookie di sessione contenente un identificatore di consegna.
 
 >[!NOTE]
 >

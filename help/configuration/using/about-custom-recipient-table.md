@@ -2,13 +2,13 @@
 product: campaign
 title: Informazioni sulla tabella dei destinatari personalizzata
 description: Informazioni sulla tabella dei destinatari personalizzata
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Custom Resources
+feature: Configuration, Custom Resources
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 exl-id: d8cea496-b3f3-420a-bf6e-b7cbb321b30d
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '679'
 ht-degree: 2%
 
 ---
@@ -40,31 +40,31 @@ L’utilizzo di una tabella dei destinatari personalizzata presenta le seguenti 
 
 * Adobe Campaign non supporta più schemi di destinatari, noti come schemi di targeting, collegati agli stessi schemi broadlog e/o trackinglog. In caso contrario, potrebbero verificarsi anomalie nella riconciliazione dei dati in seguito.
 
-   L’immagine seguente descrive la struttura relazionale richiesta per ciascuno schema destinatario personalizzato:
-   ![](assets/custom_recipient_limitation.png)
+  L’immagine seguente descrive la struttura relazionale richiesta per ciascuno schema destinatario personalizzato:
+  ![](assets/custom_recipient_limitation.png)
 
-   Si consiglia di:
+  Si consiglia di:
 
    * Dedicando il **[!UICONTROL nms:BroadLogRcp]** e **[!UICONTROL nms:TrackingLogRcp]** schemi predefiniti **[!UICONTROL nms:Recipientschema]**. Queste due tabelle di registro non devono essere collegate ad alcuna tabella dei destinatari personalizzata aggiuntiva.
    * Definizione di schemi broadlog e trackinglog personalizzati dedicati per ogni nuovo schema destinatario personalizzato. Questa operazione può essere eseguita automaticamente durante la configurazione della mappatura di destinazione, vedi [Mappatura target](../../configuration/using/target-mapping.md).
 
 * Impossibile utilizzare lo standard **[!UICONTROL Services and Subscriptions]** nel prodotto.
 
-   Ciò significa che il funzionamento complessivo descritto in [questa sezione](../../delivery/using/managing-subscriptions.md) non è applicabile.
+  Ciò significa che il funzionamento complessivo descritto in [questa sezione](../../delivery/using/managing-subscriptions.md) non è applicabile.
 
 * Il collegamento con **[!UICONTROL visitor]** la tabella non funziona.
 
-   Pertanto, per utilizzare **[!UICONTROL Social Marketing]** è necessario configurare il passaggio di archiviazione in modo che faccia riferimento alla tabella corretta.
+  Pertanto, per utilizzare **[!UICONTROL Social Marketing]** è necessario configurare il passaggio di archiviazione in modo che faccia riferimento alla tabella corretta.
 
-   Analogamente, quando si utilizzano funzioni di riferimento, è necessario adattare il modello standard di trasferimento iniziale dei messaggi.
+  Analogamente, quando si utilizzano funzioni di riferimento, è necessario adattare il modello standard di trasferimento iniziale dei messaggi.
 
 * Non è possibile aggiungere manualmente profili in un elenco.
 
-   Pertanto, la procedura descritta in [questa sezione](../../platform/using/creating-and-managing-lists.md) non è applicabile senza una configurazione aggiuntiva.
+  Pertanto, la procedura descritta in [questa sezione](../../platform/using/creating-and-managing-lists.md) non è applicabile senza una configurazione aggiuntiva.
 
-   >[!NOTE]
-   >
-   >Puoi comunque creare gli elenchi dei destinatari utilizzando i flussi di lavoro. Per ulteriori informazioni, consulta [Creazione di un elenco di profili con un flusso di lavoro](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
+  >[!NOTE]
+  >
+  >Puoi comunque creare gli elenchi dei destinatari utilizzando i flussi di lavoro. Per ulteriori informazioni, consulta [Creazione di un elenco di profili con un flusso di lavoro](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
 
 Consigliamo inoltre di controllare i valori predefiniti utilizzati nelle diverse configurazioni pronte all’uso: a seconda delle funzionalità utilizzate, è necessario effettuare diversi adeguamenti.
 

@@ -2,17 +2,18 @@
 product: campaign
 title: Adattare la configurazione
 description: Scopri come adattare la configurazione prima e dopo la migrazione a Campaign v7
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
 hide: true
 hidefromtoc: true
 exl-id: ad71dead-c0ca-42d5-baa8-0f340979231a
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 2%
+source-wordcount: '478'
+ht-degree: 3%
 
 ---
 
@@ -59,7 +60,7 @@ Durante la migrazione ad Adobe Campaign v7, è necessario configurare i seguenti
 
 * Password
 
-   Devi configurare il **Amministratore** e **Interno** password. [Ulteriori informazioni](../../migration/using/before-starting-migration.md#user-passwords)
+  Devi configurare il **Amministratore** e **Interno** password. [Ulteriori informazioni](../../migration/using/before-starting-migration.md#user-passwords)
 
 <!--
 * Tree structure
@@ -82,33 +83,33 @@ Dopo l’esecuzione **post-aggiornamento**, verifica e configura i seguenti elem
 
 * Pagine mirror
 
-   Il blocco di personalizzazione della pagina mirror è stato modificato con v6.x. Questa nuova versione migliora la sicurezza durante l’accesso a queste pagine.
+  Il blocco di personalizzazione della pagina mirror è stato modificato con v6.x. Questa nuova versione migliora la sicurezza durante l’accesso a queste pagine.
 
-   Se hai utilizzato il blocco di personalizzazione v5 nei messaggi, la visualizzazione della pagina speculare non riuscirà. Adobe consiglia vivamente di utilizzare il nuovo blocco di personalizzazione durante l’inserimento di una pagina speculare nei messaggi.
+  Se hai utilizzato il blocco di personalizzazione v5 nei messaggi, la visualizzazione della pagina speculare non riuscirà. Adobe consiglia vivamente di utilizzare il nuovo blocco di personalizzazione durante l’inserimento di una pagina speculare nei messaggi.
 
-   Tuttavia, come soluzione alternativa temporanea (e poiché le pagine mirror sono ancora attive), puoi tornare al vecchio blocco di personalizzazione per evitare questo problema modificando l’opzione **[!UICONTROL XtkAcceptOldPasswords]** e impostarlo su **[!UICONTROL 1]**. Questo non influirà sull’utilizzo del nuovo blocco di personalizzazione v6.x.
+  Tuttavia, come soluzione alternativa temporanea (e poiché le pagine mirror sono ancora attive), puoi tornare al vecchio blocco di personalizzazione per evitare questo problema modificando l’opzione **[!UICONTROL XtkAcceptOldPasswords]** e impostarlo su **[!UICONTROL 1]**. Questo non influirà sull’utilizzo del nuovo blocco di personalizzazione v6.x.
 
 * Sintassi
 
-   Se durante il post-aggiornamento si verificano errori relativi alla sintassi, è necessario attivare temporaneamente **allowSQLInjection** opzione in **serverConf.xml** in quanto consente di riscrivere il codice. Una volta adattato il codice, assicurati di riattivare la sicurezza.
+  Se durante il post-aggiornamento si verificano errori relativi alla sintassi, è necessario attivare temporaneamente **allowSQLInjection** opzione in **serverConf.xml** in quanto consente di riscrivere il codice. Una volta adattato il codice, assicurati di riattivare la sicurezza.
 
 * Conflitti
 
-   La migrazione viene eseguita tramite un post-aggiornamento e i conflitti possono essere visualizzati nei report, nei moduli o nelle applicazioni web. Questi conflitti possono essere risolti dalla console.
+  La migrazione viene eseguita tramite un post-aggiornamento e i conflitti possono essere visualizzati nei report, nei moduli o nelle applicazioni web. Questi conflitti possono essere risolti dalla console.
 
 * Tomcat
 
-   Se hai personalizzato la cartella di installazione, assicurati di verificarne il corretto aggiornamento dopo la migrazione.
+  Se hai personalizzato la cartella di installazione, assicurati di verificare che sia aggiornata correttamente dopo la migrazione.
 
 * Rapporti
 
-   Tutti i rapporti predefiniti utilizzano attualmente il motore di rendering v6.x. Se hai aggiunto codice JavaScript ai rapporti, alcuni elementi potrebbero essere interessati.
+  Tutti i rapporti predefiniti utilizzano attualmente il motore di rendering v6.x. Se hai aggiunto codice JavaScript ai rapporti, alcuni elementi potrebbero essere interessati.
 
 * Applicazioni web
 
-   Dopo il post-aggiornamento, se si verificano problemi di connessione alle applicazioni Web identificate, è necessario attivare **allowUserPassword** e **sessionTokenOnly** opzioni in **serverConf.xml** file. Per evitare problemi di sicurezza, queste due opzioni devono essere riattivate dopo la risoluzione del problema.
+  Dopo il post-aggiornamento, se si verificano problemi di connessione alle applicazioni Web identificate, è necessario attivare **allowUserPassword** e **sessionTokenOnly** opzioni in **serverConf.xml** file. Per evitare problemi di sicurezza, queste due opzioni devono essere riattivate dopo la risoluzione del problema.
 
-   A seconda del tipo di applicazioni Web e della relativa configurazione, è necessario eseguire ulteriori manipolazioni per assicurarne il corretto funzionamento.
+  A seconda del tipo di applicazioni Web e della relativa configurazione, è necessario eseguire ulteriori manipolazioni per assicurarne il corretto funzionamento.
 
 <!--
   If migrating from a v5.11 platform, additional configurations must be carried out. [Learn more](../../migration/using/general-configurations.md#specific-configurations-in-v5-11.md)
@@ -137,7 +138,7 @@ Dopo l’esecuzione **post-aggiornamento**, verifica e configura i seguenti elem
 
 * Interazione
 
-   Se usa **Interazione**, è necessario regolare tutti i parametri dopo la migrazione.
+  Se usa **Interazione**, è necessario regolare tutti i parametri dopo la migrazione.
 
 <!--
 

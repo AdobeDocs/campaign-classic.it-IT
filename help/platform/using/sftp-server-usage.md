@@ -2,16 +2,17 @@
 product: campaign
 title: Utilizzo di server SFTP
 description: Ulteriori informazioni sulle best practice e sulla risoluzione dei problemi per il server SFTP
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Troubleshooting
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 14%
+source-wordcount: '1160'
+ht-degree: 15%
 
 ---
 
@@ -25,7 +26,7 @@ Quando gestisci file e dati per un processo di ETL, questi file vengono memorizz
 
 * Utilizza l’autenticazione basata su chiave anziché su password, per evitare la scadenza della password (le password hanno un periodo di validità di 90 giorni). Inoltre, l’autenticazione basata su chiave consente di generare più chiavi, ad esempio quando si gestiscono più entità. Al contrario, l’autenticazione tramite password richiede che tu condivida la password con tutte le entità che stai gestendo.
 
-   Il formato di chiave supportato è SSH-2 RSA 2048. Le chiavi possono essere generate con strumenti come PyTTY (Windows) o ssh-keygen (Unix).Dovrai fornire la chiave pubblica al team di supporto Adobe tramite [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per caricarlo sul server Campaign.
+  Il formato di chiave supportato è SSH-2 RSA 2048. Le chiavi possono essere generate con strumenti come PyTTY (Windows) o ssh-keygen (Unix).Dovrai fornire la chiave pubblica al team di supporto Adobe tramite [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per caricarlo sul server Campaign.
 
 * Utilizza la suddivisione in batch nei caricamenti SFTP e nei flussi di lavoro.
 
@@ -45,7 +46,7 @@ Per evitare tali problemi, l’Adobe consiglia di seguire le best practice ripor
 
 >[!NOTE]
 >
->Se l’istanza è ospitata su AWS, puoi monitorare l’archiviazione del server SFTP con il Campaign Classic [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html). Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+>Se l’istanza è ospitata su AWS, puoi monitorare l’archiviazione del server SFTP con il Campaign Classic [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html). Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=it).
 >
 >Il Pannello di controllo è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente l’accesso come amministratore sono descritti in[questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel).
 >

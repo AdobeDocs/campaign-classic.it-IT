@@ -2,16 +2,17 @@
 product: campaign
 title: Prerequisiti per l’installazione di Campaign in Linux
 description: Prerequisiti per l’installazione di Campaign in Linux
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
+badge-v7-prem: label="on-premise e ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 1%
+source-wordcount: '914'
+ht-degree: 2%
 
 ---
 
@@ -44,33 +45,33 @@ Per installare Adobe Campaign in Linux, assicurati di disporre delle librerie ne
 
 * La libreria C deve essere in grado di supportare la modalità TLS (Thread Local Storage). Questa modalità è attiva nella maggior parte dei casi, ad eccezione di alcuni kernel per i quali il supporto Xen è stato disattivato.
 
-   Per verificare questo aspetto, puoi utilizzare **uname -a | grep xen** ad esempio.
+  Per verificare questo aspetto, puoi utilizzare **uname -a | grep xen** ad esempio.
 
-   Se il comando non restituisce alcun elemento (riga vuota), significa che la configurazione è corretta.
+  Se il comando non restituisce alcun elemento (riga vuota), significa che la configurazione è corretta.
 
 * È necessaria la versione OpenSSL **1.0.2.** o superiore.
 
-   Per le distribuzioni RHEL 7/8, è richiesta la versione 1.0 di OpenSSL.
+  Per le distribuzioni RHEL 7/8, è richiesta la versione 1.0 di OpenSSL.
 
 * Per utilizzare Adobe Campaign, è necessario disporre del **libicu** libreria installata.
 
-   Le seguenti versioni di **libicu** sono supportati (32 bit o 64 bit):
+  Le seguenti versioni di **libicu** sono supportati (32 bit o 64 bit):
 
    * 7/8, CentOS 7: libicu50
    * Debian 8: libicu52
    * Debian 9: libicu57
 
-   Per utilizzare Adobe Campaign, è necessario che sia installata la libreria libc-ares. In RHEL/CentOS, esegui il seguente comando:
+  Per utilizzare Adobe Campaign, è necessario che sia installata la libreria libc-ares. In RHEL/CentOS, esegui il seguente comando:
 
-   ```
-   yum install c-ares
-   ```
+  ```
+  yum install c-ares
+  ```
 
-   Su Debian:
+  Su Debian:
 
-   ```
-   aptitude install libc-ares2
-   ```
+  ```
+  aptitude install libc-ares2
+  ```
 
 ### SELinux {#selinux}
 
@@ -114,15 +115,15 @@ In Redhat, utilizzate il seguente comando:
 
 * Per CentOS/RHEL 7:
 
-   ```
-   yum install xorg-x11-fonts-base xorg-x11-fonts-75dpi bitstream-vera-fonts dejavu-lgc-fonts
-   ```
+  ```
+  yum install xorg-x11-fonts-base xorg-x11-fonts-75dpi bitstream-vera-fonts dejavu-lgc-fonts
+  ```
 
 * per RHEL 8:
 
-   ```
-   dnf install xorg-x11-fonts-misc xorg-x11-fonts-75dpi dejavu-lgc-sans-fonts  dejavu-sans-fonts dejavu-sans-mono-fonts dejavu-serif-fonts
-   ```
+  ```
+  dnf install xorg-x11-fonts-misc xorg-x11-fonts-75dpi dejavu-lgc-sans-fonts  dejavu-sans-fonts dejavu-sans-mono-fonts dejavu-serif-fonts
+  ```
 
 ### Font per istanze giapponesi {#fonts-for-japanese-instances}
 
@@ -138,15 +139,15 @@ In Red Hat, aggiungi il comando:
 
 * per RHEL 7:
 
-   ```
-   yum install ipa-gothic-fonts ipa-mincho-fonts
-   ```
+  ```
+  yum install ipa-gothic-fonts ipa-mincho-fonts
+  ```
 
 * per RHEL 8:
 
-   ```
-   dnf install vlgothic-fonts
-   ```
+  ```
+  dnf install vlgothic-fonts
+  ```
 
 ### Installazione di LibreOffice per Debian {#installing-libreoffice-for-debian}
 

@@ -2,15 +2,16 @@
 product: campaign
 title: Approvazione e attivazione di un’offerta
 description: Approvazione e attivazione di un’offerta
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Interaction, Offers
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: cf7649fe-f62a-4dfa-a19e-9c1ca545e3e3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '634'
 ht-degree: 2%
 
 ---
@@ -65,27 +66,27 @@ L’approvazione dell’idoneità per l’offerta comporta l’accettazione o il
 
 * Per visualizzare l’elenco completo delle regole, fai clic su **[!UICONTROL Schedule and eligibility rules]**.
 
-   ![](assets/offer_validate_005.png)
+  ![](assets/offer_validate_005.png)
 
 * Per modificare le regole di idoneità, fai clic su **[!UICONTROL Reject]**, quindi fai clic su **[!UICONTROL Eligibility approval]**.
 
-   ![](assets/offer_validate_007.png)
+  ![](assets/offer_validate_007.png)
 
-   I vari stati vengono aggiornati nel dashboard delle offerte.
+  I vari stati vengono aggiornati nel dashboard delle offerte.
 
-   ![](assets/offer_validate_006.png)
+  ![](assets/offer_validate_006.png)
 
 * Per accettare l’idoneità dell’offerta, fai clic su **[!UICONTROL Approve eligibility]**.
 
-   ![](assets/offer_validate_008.png)
+  ![](assets/offer_validate_008.png)
 
-   Approva l’idoneità, aggiungi un commento se necessario, quindi fai clic su **[!UICONTROL Eligibility approval]**.
+  Approva l’idoneità, aggiungi un commento se necessario, quindi fai clic su **[!UICONTROL Eligibility approval]**.
 
-   ![](assets/offer_validate_009.png)
+  ![](assets/offer_validate_009.png)
 
-   I vari stati vengono aggiornati nel dashboard delle offerte.
+  I vari stati vengono aggiornati nel dashboard delle offerte.
 
-   ![](assets/offer_validate_010.png)
+  ![](assets/offer_validate_010.png)
 
 ## Tracciamento approvazione {#approval-tracking}
 

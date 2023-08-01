@@ -2,16 +2,17 @@
 product: campaign
 title: Principio di configurazione
 description: Principio di configurazione
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring, Configuration
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
+badge-v7-prem: label="on-premise e ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 03d7e579-8678-44b8-bbe7-cf4204bffb25
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 4%
+source-wordcount: '306'
+ht-degree: 7%
 
 ---
 
@@ -25,9 +26,9 @@ Per un determinato server, esistono due elementi comuni a tutte le istanze di Ad
 
 * Il **interno** password: password dell&#39;amministratore generale. È comune a tutte le istanze di un determinato server applicazioni.
 
-   >[!IMPORTANT]
-   >
-   >Per accedere con **Interno** identificatore, è necessario aver già definito una password. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#internal-identifier).
+  >[!IMPORTANT]
+  >
+  >Per accedere con **Interno** identificatore, è necessario aver già definito una password. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
 * Più configurazioni tecniche del server: queste configurazioni possono essere tutte sovraccariche nella configurazione specifica di un’istanza.
 
@@ -42,6 +43,6 @@ Viene caricata una configurazione di istanza come segue:
 * Il modulo carica **serverConf.xml** per ottenere i parametri condivisi da tutte le istanze.
 * Quindi carica il **config-**`<instance>`**.xml** file. I valori trovati in questo file hanno priorità rispetto ai valori contenuti in **serverConf.xml**.
 
-   Questi due file hanno lo stesso formato. Qualsiasi valore in **serverConf.xml** può essere sovraccaricato per una determinata istanza in **config-`<instance>`.xml** file.
+  Questi due file hanno lo stesso formato. Qualsiasi valore in **serverConf.xml** può essere sovraccaricato per una determinata istanza in **config-`<instance>`.xml** file.
 
 Questa modalità operativa offre grande flessibilità per le configurazioni.

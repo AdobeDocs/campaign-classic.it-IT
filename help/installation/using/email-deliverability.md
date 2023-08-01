@@ -2,16 +2,17 @@
 product: campaign
 title: Configurazione tecnica delle e-mail
 description: Scopri come configurare Campaign per controllare l’output delle istanze durante la consegna delle e-mail
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Deliverability
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
+badge-v7-prem: label="on-premise e ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3023'
-ht-degree: 0%
+source-wordcount: '3048'
+ht-degree: 1%
 
 ---
 
@@ -243,41 +244,41 @@ I seguenti parametri disponibili per ciascuna regola sono:
 
 * **[!UICONTROL MX mask]**: dominio a cui viene applicata la regola. Ogni regola definisce una maschera di indirizzo per l’MX. Qualsiasi MX il cui nome corrisponde a questa maschera è quindi idoneo. La maschera può contenere &quot;&#42;&quot; e &quot;?&quot; caratteri generici.
 
-   Ad esempio, i seguenti indirizzi:
+  Ad esempio, i seguenti indirizzi:
 
    * a.mx.yahoo.com
    * b.mx.yahoo.com
    * c.mx.yahoo.com
 
-   sono compatibili con le seguenti maschere:
+  sono compatibili con le seguenti maschere:
 
    * &#42;.yahoo.com
    * ?.mx.yahoo.com
 
-   Ad esempio, per l’indirizzo e-mail foobar@gmail.com, il dominio è gmail.com e il record MX è:
+  Ad esempio, per l’indirizzo e-mail foobar@gmail.com, il dominio è gmail.com e il record MX è:
 
-   ```
-   gmail.com mail exchanger = 20 alt2.gmail-smtp-in.l.google.com.
-   gmail.com mail exchanger = 10 alt1.gmail-smtp-in.l.google.com.
-   gmail.com mail exchanger = 40 alt4.gmail-smtp-in.l.google.com.
-   gmail.com mail exchanger = 5  gmail-smtp-in.l.google.com.
-   gmail.com mail exchanger = 30 alt3.gmail-smtp-in.l.google.com.
-   ```
+  ```
+  gmail.com mail exchanger = 20 alt2.gmail-smtp-in.l.google.com.
+  gmail.com mail exchanger = 10 alt1.gmail-smtp-in.l.google.com.
+  gmail.com mail exchanger = 40 alt4.gmail-smtp-in.l.google.com.
+  gmail.com mail exchanger = 5  gmail-smtp-in.l.google.com.
+  gmail.com mail exchanger = 30 alt3.gmail-smtp-in.l.google.com.
+  ```
 
-   In questo caso, la regola MX `*.google.com` verrà utilizzato. Come puoi vedere, la maschera della regola MX non corrisponde necessariamente al dominio nell’e-mail. Le regole MX applicate per gli indirizzi e-mail gmail.com saranno quelle con la maschera `*.google.com`.
+  In questo caso, la regola MX `*.google.com` verrà utilizzato. Come puoi vedere, la maschera della regola MX non corrisponde necessariamente al dominio nell’e-mail. Le regole MX applicate per gli indirizzi e-mail gmail.com saranno quelle con la maschera `*.google.com`.
 
 * **[!UICONTROL Range of identifiers]**: questa opzione ti consente di indicare gli intervalli di identificatori (publicID) per i quali si applica la regola. Puoi specificare:
 
    * Un numero: la regola si applicherà solo a questo publicId,
    * Un intervallo di numeri (**number1-number2**): la regola si applica a tutti gli id pubblici compresi tra questi due numeri.
 
-   >[!NOTE]
-   >
-   >Se il campo è vuoto, la regola si applica a tutti gli identificatori.
+  >[!NOTE]
+  >
+  >Se il campo è vuoto, la regola si applica a tutti gli identificatori.
 
-   Un ID pubblico è un identificatore interno di un IP pubblico utilizzato da uno o più MTA. Questi ID sono definiti nei server MTA di **config-instance.xml** file.
+  Un ID pubblico è un identificatore interno di un IP pubblico utilizzato da uno o più MTA. Questi ID sono definiti nei server MTA di **config-instance.xml** file.
 
-   ![](assets/s_ncs_install_mta_ips.png)
+  ![](assets/s_ncs_install_mta_ips.png)
 
 * **[!UICONTROL Shared]**: definisce l’ambito delle proprietà per questa regola MX. Se questa opzione è selezionata, tutti i parametri vengono condivisi su tutti gli IP disponibili nell’istanza. Se questa opzione è deselezionata, le regole MX vengono definite per ogni IP. Il numero massimo di messaggi viene moltiplicato per il numero di IP disponibili.
 * **[!UICONTROL Maximum number of connections]**: numero massimo di connessioni simultanee al dominio del mittente.
@@ -285,9 +286,9 @@ I seguenti parametri disponibili per ciascuna regola sono:
 * **[!UICONTROL Messages per hour]**: numero massimo di messaggi che possono essere inviati in un’ora al dominio del mittente.
 * **[!UICONTROL Connection time out]**: soglia di tempo per la connessione a un dominio.
 
-   >[!NOTE]
-   >
-   >Windows può emettere un **timeout** prima di questa soglia, che dipende dalla versione di Windows in uso.
+  >[!NOTE]
+  >
+  >Windows può emettere un **timeout** prima di questa soglia, che dipende dalla versione di Windows in uso.
 
 * **[!UICONTROL Timeout Data]**: tempo di attesa massimo dopo l’invio del contenuto del messaggio (sezione DATA del protocollo SMTP).
 * **[!UICONTROL Timeout]**: tempo massimo di attesa per altri scambi con il server SMTP.
@@ -295,9 +296,9 @@ I seguenti parametri disponibili per ciascuna regola sono:
 
    * **[!UICONTROL Default configuration]**: si tratta della configurazione generale specificata nel file di configurazione serverConf.xml applicato.
 
-      >[!IMPORTANT]
-      >
-      >Non è consigliabile modificare la configurazione predefinita.
+     >[!IMPORTANT]
+     >
+     >Non è consigliabile modificare la configurazione predefinita.
 
    * **[!UICONTROL Disabled]** : i messaggi vengono inviati sistematicamente senza crittografia.
    * **[!UICONTROL Opportunistic]** : la consegna dei messaggi è crittografata se il server ricevente (SMTP) può generare il protocollo TLS.
@@ -324,7 +325,7 @@ Il **Struttura MIME** (Multipurpose Internet Mail Extensions) consente di defini
 
 * **Multipart**: il messaggio viene inviato in formato testo o HTML. Se il formato HTML non viene accettato, il messaggio potrà comunque essere visualizzato in formato testo.
 
-   Per impostazione predefinita, la struttura multipart è **multipart/alternative**, ma diventa automaticamente **multipart/related** quando un’immagine viene aggiunta al messaggio. Alcuni provider si aspettano che **multipart/related** per impostazione predefinita, il **[!UICONTROL Force multipart/related]** impone questo formato anche se non è allegata alcuna immagine.
+  Per impostazione predefinita, la struttura multipart è **multipart/alternative**, ma diventa automaticamente **multipart/related** quando un’immagine viene aggiunta al messaggio. Alcuni provider si aspettano che **multipart/related** per impostazione predefinita, il **[!UICONTROL Force multipart/related]** impone questo formato anche se non è allegata alcuna immagine.
 
 * **HTML**: viene inviato un messaggio solo HTML. Se il formato HTML non è accettato, il messaggio non viene visualizzato.
 * **Testo**: viene inviato un messaggio in formato di solo testo. Il vantaggio dei messaggi in formato testo è la loro dimensione molto ridotta.
@@ -406,11 +407,11 @@ Se, ad esempio, il primo indirizzo non può essere utilizzato per un determinato
 
 * **includeDomains**: consente di riservare questo indirizzo IP per le e-mail appartenenti a un dominio specifico. Elenco di maschere che possono contenere uno o più caratteri jolly (&#39;&#42;&#39;). Se l’attributo non è specificato, tutti i domini possono utilizzare questo indirizzo IP.
 
-   Esempio: **includeDomains=&quot;wanadoo.com,orange.com,yahoo.&#42;&quot;**
+  Esempio: **includeDomains=&quot;wanadoo.com,orange.com,yahoo.&#42;&quot;**
 
 * **excludeDomains**: esclude un elenco di domini per questo indirizzo IP. Questo filtro viene applicato dopo il **includeDomains** filtro.
 
-   ![](assets/s_ncs_install_mta_ips.png)
+  ![](assets/s_ncs_install_mta_ips.png)
 
 ## Ottimizzazione dell’invio di e-mail {#email-sending-optimization}
 

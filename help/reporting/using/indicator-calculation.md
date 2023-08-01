@@ -2,12 +2,12 @@
 product: campaign
 title: Calcolo indicatore
 description: Calcolo indicatore
-badge: label="v7" type="Informative" tooltip="Si applica solo a Campaign Classic v7"
-feature: Reporting
+badge: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
+feature: Reporting, Monitoring
 exl-id: 52ca1595-16b3-4323-9122-d1ac13c08147
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2983'
+source-wordcount: '2979'
 ht-degree: 7%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 7%
  <tbody> 
   <tr> 
    <td> Aperture<br /> </td> 
-   <td> @aperture<br /> </td> 
+   <td> @opens<br /> </td> 
    <td> Somma di tutte le @totalClicks con una chiave primaria URL uguale a 1.<br /> </td> 
    <td> sum(Iif([@url-id]=1, @totalClicks, 0))<br /> </td> 
   </tr> 
@@ -51,7 +51,7 @@ ht-degree: 7%
 
 Questo rapporto si basa sulla **[!UICONTROL Consolidated tracking]** tabella (nms:trackingStats). Questa tabella aggregata viene utilizzata per motivi di prestazioni quando si visualizzano i report al posto del **[!UICONTROL Recipient tracking logs]** (nms:trackingLogRcp) e non viene calcolata in tempo reale. La tabella viene generata pochi minuti dopo il recupero dei registri di tracciamento. Se gli indicatori sono aggiornati, i risultati saranno gli stessi degli indicatori del **Indicatori di tracciamento** rapporto. L’indicatore @totalclicks esprime il numero totale di clic in un periodo di 5 minuti.
 
-## Messaggi non recapitati e non trasferibili {#non-deliverables-and-bounces-1}
+## Messaggi non recapitabili e mancati recapiti {#non-deliverables-and-bounces-1}
 
 **Raggruppamento per tipo di errore**
 
@@ -473,7 +473,7 @@ Questo rapporto si basa sulla **[!UICONTROL Services]** tabella (nms:service).
    <td> sum(Iif(@action = 1 e @date &gt; addDays(getDate(), (-1)), 1, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Abbonamenti annullati<br /> </td> 
+   <td> Iscrizioni annullate<br /> </td> 
    <td> @_unsubscription<br /> </td> 
    <td> numero di annullamenti di abbonamenti (azione = 0) nel giorno precedente.<br /> </td> 
    <td> sum(Iif(@action = 0 e @date &gt; addDays(getDate(), (-1)), 1, 0))<br /> </td> 
@@ -514,7 +514,7 @@ Questo rapporto si basa sulla **[!UICONTROL Delivery and tracking statistics]** 
    <td> sum([proprietà/@toDeliver])<br /> </td> 
   </tr> 
   <tr> 
-   <td> Operazione riuscita<br /> </td> 
+   <td> Completato<br /> </td> 
    <td> @successWithoutSeeds<br /> </td> 
    <td> Numero di messaggi per i quali il campo "Indirizzo seed" è uguale a "No" e con uno stato uguale a "Preso in considerazione dal fornitore di servizi" o "Inviato" o "Ricevuto sul dispositivo mobile".<br /> </td> 
    <td> sum([indicatori/@success])<br /> </td> 
@@ -737,7 +737,7 @@ Questo rapporto si basa sulla **[!UICONTROL Delivery]** tabella (nms:delivery).
  </tbody> 
 </table>
 
-## Riepilogo consegne {#delivery-summary-1}
+## Riepilogo delle consegne {#delivery-summary-1}
 
 Questo rapporto si basa sulla **[!UICONTROL Delivery]** tabella (nms:delivery).
 
@@ -770,7 +770,7 @@ Questo rapporto si basa sulla **[!UICONTROL Delivery]** tabella (nms:delivery).
    <td> sum([proprietà/@toDeliver])<br /> </td> 
   </tr> 
   <tr> 
-   <td> Operazione riuscita<br /> </td> 
+   <td> Completato<br /> </td> 
    <td> @success<br /> </td> 
    <td> Numero di messaggi elaborati con successo.<br /> </td> 
    <td> sum([indicatori/@success])<br /> </td> 
@@ -824,7 +824,7 @@ Questo rapporto si basa sulla **[!UICONTROL Delivery]** tabella (nms:delivery).
   </tr> 
   <tr> 
    <td> Apri<br /> </td> 
-   <td> @aperture<br /> </td> 
+   <td> @opens<br /> </td> 
    <td> Somma di tutte le @totalClicks con una chiave primaria URL uguale a 1.<br /> </td> 
    <td> sum(Iif([@url-id] = 1, @totalClicks, 0))<br /> </td> 
   </tr> 
@@ -882,7 +882,7 @@ Questo rapporto si basa sulla **[!UICONTROL Delivery and tracking statistics]** 
    <td> Countdistinct(Iif([url/@type]=1, @source-id, 0)) <br /> </td> 
   </tr> 
   <tr> 
-   <td> Abbonamenti annullati<br /> </td> 
+   <td> Iscrizioni annullate<br /> </td> 
    <td> @optOut<br /> </td> 
    <td> Numero totale di @ids per i quali la categoria URL è uguale a "Rinuncia".<br /> </td> 
    <td> count(Iif([url/@type]=3, @id, 0))<br /> </td> 
@@ -890,7 +890,7 @@ Questo rapporto si basa sulla **[!UICONTROL Delivery and tracking statistics]** 
  </tbody> 
 </table>
 
-## Breakdown delle aperture {#breakdown-of-opens-1}
+## Raggruppamenti delle aperture {#breakdown-of-opens-1}
 
 Questo rapporto si basa su **Consegne** (nms:delivery) e **Registri di tracciamento** (nms:trackingLogRcp).
 

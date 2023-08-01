@@ -2,15 +2,16 @@
 product: campaign
 title: Architettura generale
 description: Architettura generale
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Monitoring, Architecture
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: production
 content-type: reference
 topic-tags: introduction
 exl-id: 3bfb5448-6996-4080-bf9a-434f1207637e
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 4%
+source-wordcount: '188'
+ht-degree: 5%
 
 ---
 
@@ -25,7 +26,7 @@ In una configurazione minima, Adobe Campaign funziona con:
 * il server applicazioni Adobe Campaign,
 * il database.
 
-   ![](assets/formation_exploitation.png)
+  ![](assets/formation_exploitation.png)
 
 Questo diagramma mostra che l’unico traffico coinvolto nel contesto di un’architettura minima è:
 

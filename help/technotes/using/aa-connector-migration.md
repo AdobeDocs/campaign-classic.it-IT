@@ -2,11 +2,12 @@
 product: campaign
 title: Migrare al connettore Adobe Analytics
 description: Campaign - Domande frequenti sul connettore Analytics
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Technote, Analytics Integration
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '865'
 ht-degree: 5%
 
 ---
@@ -81,7 +82,7 @@ Dopo la migrazione, un nuovo connettore (migrato dal vecchio connettore) inizier
 
 L’integrazione si basa sui dati del token dell’account tecnico per il funzionamento quotidiano. Se manca l’autorizzazione per una dimensione, una metrica o una suite di rapporti dal profilo di prodotto associato all’utente dell’account tecnico, le API che utilizziamo falliranno semplicemente per tali richieste.
 
-Se stiamo leggendo i dettagli di un componente Analytics (come metriche/dimensioni/segmenti/suite di rapporti), l’API non restituirà questi componenti nel risultato (che potrebbe sembrare che sia stato eliminato qualcosa dal lato Analytics o che non sia presente). Le API di Analytics rifiuteranno tali richieste e si verificherà un errore.
+Se stiamo leggendo i dettagli di un componente Analytics (come metriche/dimensioni/segmenti/suite di rapporti), l’API non restituirà questi componenti nel risultato (che potrebbe sembrare che qualcosa sia stato eliminato dal lato Analytics o che non sia presente). Le API di Analytics rifiuteranno tali richieste e si verificherà un errore.
 
 La soluzione consiste nell&#39;aggiornare **Profilo prodotto** in Analytics User Context del token utente tecnico con i componenti appena creati/mancanti aggiungendo questi componenti in [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}. Per maggiori informazioni, contattare [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 

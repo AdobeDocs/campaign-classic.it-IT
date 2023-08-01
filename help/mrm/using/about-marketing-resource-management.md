@@ -2,15 +2,16 @@
 product: campaign
 title: Introduzione alla gestione delle risorse di marketing
 description: Scopri la gestione delle risorse di marketing
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Resource Management
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 8cf4d30d-f914-438d-8836-030202b6a449
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 1%
+source-wordcount: '382'
+ht-degree: 2%
 
 ---
 
@@ -34,15 +35,15 @@ Nel contesto di Adobe Campaign Marketing Resource Management, i concetti e i ter
 
 * **Attività**
 
-   Un’attività corrisponde a un’azione da eseguire nel contesto di una campagna. Un&#39;attività viene assegnata a un gruppo o a una persona. Un&#39;attività figlio può dipendere da un&#39;attività padre, il che significa che l&#39;attività padre non verrà eseguita fino al completamento di tutte le attività figlio. Alcuni esempi di attività includono: riferimento a un sito web, una revisione del budget, una descrizione, ecc.
+  Un’attività corrisponde a un’azione da eseguire nel contesto di una campagna. Un&#39;attività viene assegnata a un gruppo o a una persona. Un&#39;attività figlio può dipendere da un&#39;attività padre, il che significa che l&#39;attività padre non verrà eseguita fino al completamento di tutte le attività figlio. Alcuni esempi di attività includono: riferimento a un sito web, una revisione del budget, una descrizione, ecc.
 
-   Per ulteriori informazioni, consulta [Creare e gestire le attività](../../mrm/using/creating-and-managing-tasks.md).
+  Per ulteriori informazioni, consulta [Creare e gestire le attività](../../mrm/using/creating-and-managing-tasks.md).
 
 * **Risorse di marketing**
 
-   Adobe Campaign consente di monitorare l’avanzamento dei progetti di marketing collaborativo come mezzi di comunicazione, piani d’azione, newsletter, ecc. Il ciclo di creazione e approvazione di queste risorse di marketing può essere tracciato dal dashboard delle risorse fino alla loro pubblicazione.
+  Adobe Campaign consente di monitorare l’avanzamento dei progetti di marketing collaborativo come mezzi di comunicazione, piani d’azione, newsletter, ecc. Il ciclo di creazione e approvazione di queste risorse di marketing può essere tracciato dal dashboard delle risorse fino alla loro pubblicazione.
 
-   Per ulteriori informazioni, consulta [Gestire le risorse di marketing](../../mrm/using/managing-marketing-resources.md).
+  Per ulteriori informazioni, consulta [Gestire le risorse di marketing](../../mrm/using/managing-marketing-resources.md).
 
 >[!NOTE]
 >

@@ -2,14 +2,15 @@
 product: campaign
 title: Gestione delle enumerazioni
 description: Gestione delle enumerazioni
-badge: label="v7" type="Informative" tooltip="Si applica solo a Campaign Classic v7"
+feature: Data Management
+badge: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 2ece058d-b493-4fea-b3db-322cf7ea7f4f
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '882'
 ht-degree: 0%
 
 ---
@@ -33,15 +34,15 @@ I valori per questo tipo di campo sono definiti e l’amministrazione complessiv
 * La sezione superiore offre un elenco di campi per i quali è stato definito un elenco dettagliato.
 * Nella sezione inferiore sono elencati i valori proposti. Questi valori verranno ripetuti negli editor che utilizzano questo campo.
 
-   ![](assets/s_ncs_user_itemized_list_values.png)
+  ![](assets/s_ncs_user_itemized_list_values.png)
 
-   Per creare un nuovo valore di enumerazione, fai clic su **[!UICONTROL Add]**.
+  Per creare un nuovo valore di enumerazione, fai clic su **[!UICONTROL Add]**.
 
-   ![](assets/s_ncs_user_itemized_list.png)
+  ![](assets/s_ncs_user_itemized_list.png)
 
-   Se il **[!UICONTROL Open]** è selezionata, l’utente può aggiungere un nuovo valore di elenco dettagliato direttamente nel campo corrispondente. Un messaggio di conferma ti consente di creare questo valore.
+  Se il **[!UICONTROL Open]** è selezionata, l’utente può aggiungere un nuovo valore di elenco dettagliato direttamente nel campo corrispondente. Un messaggio di conferma ti consente di creare questo valore.
 
-   ![](assets/s_ncs_user_itemized_list_new_value.png)
+  ![](assets/s_ncs_user_itemized_list_new_value.png)
 
 * Se il **[!UICONTROL Closed]** è selezionata, gli utenti non potranno creare nuovi valori, ma potranno semplicemente scegliere tra quelli disponibili.
 
@@ -61,9 +62,9 @@ Il valore immesso è quindi:
 * o automaticamente sostituito dal relativo alias corrispondente: in questo caso, il caso deve essere definito nel **[!UICONTROL Alias]** scheda dell’elenco dettagliato,
 * o viene memorizzato nell’elenco degli alias: gli verrà successivamente assegnato un alias.
 
-   >[!NOTE]
-   >
-   >Se devi utilizzare le funzionalità di pulizia dei dati, seleziona la **[!UICONTROL Alias cleansing]** nell&#39;elenco dettagliato.
+  >[!NOTE]
+  >
+  >Se devi utilizzare le funzionalità di pulizia dei dati, seleziona la **[!UICONTROL Alias cleansing]** nell&#39;elenco dettagliato.
 
 ### Utilizzo degli alias {#using-aliases}
 

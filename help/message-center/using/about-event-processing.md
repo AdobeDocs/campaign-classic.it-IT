@@ -2,14 +2,15 @@
 product: campaign
 title: Elaborazione di eventi
 description: Scopri come vengono elaborati gli eventi di messaggistica transazionale in Adobe Campaign Classic
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Transactional Messaging, Message Center
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '698'
 ht-degree: 2%
 
 ---
@@ -67,11 +68,11 @@ La fase di instradamento consiste nel collegare un evento al modello di messaggi
 
 * Il tipo di evento specificato nelle proprietà dell’evento stesso:
 
-   ![](assets/messagecenter_event_type_001.png)
+  ![](assets/messagecenter_event_type_001.png)
 
 * Tipo di evento specificato nelle proprietà del modello di messaggio:
 
-   ![](assets/messagecenter_event_type_002.png)
+  ![](assets/messagecenter_event_type_002.png)
 
 Per impostazione predefinita, il ciclo si basa sulle seguenti informazioni:
 

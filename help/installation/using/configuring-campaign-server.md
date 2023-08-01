@@ -2,15 +2,16 @@
 product: campaign
 title: Configurazione del server Campaign
 description: Configurazione del server Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
+badge-v7-prem: label="on-premise e ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1578'
+source-wordcount: '1603'
 ht-degree: 3%
 
 ---
@@ -42,7 +43,7 @@ I file di configurazione di Campaign Classic sono archiviati in **conf** cartell
 
 ## Ambito di configurazione
 
-Configura o adatta il server Campaign in base alle tue esigenze e configurazione. È possibile eseguire le seguenti operazioni:
+Configura o adatta il server Campaign in base alle tue esigenze e configurazione. Puoi:
 
 * Proteggi il [Identificatore interno](#internal-identifier)
 * Abilita [Processi della campagna](#enabling-processes)
@@ -55,7 +56,7 @@ Configura o adatta il server Campaign in base alle tue esigenze e configurazione
 * Configurazione [Tracciamento ridondante](#redundant-tracking)
 * Gestisci [Elevata disponibilità e affinità per i flussi di lavoro](#high-availability-workflows-and-affinities)
 * Configura gestione file - [Ulteriori informazioni](file-res-management.md)
-   * Limita il formato dei file da caricare
+   * Limita il formato dei file di caricamento
    * Abilitare l’accesso alle risorse pubbliche
    * Configura connessione proxy
 * [Riavvio automatico del processo](#automatic-process-restart)
@@ -95,35 +96,35 @@ Esistono due tipi di processi: a più istanze e a istanza singola.
 
 * **multi-istanza**: viene avviato un singolo processo per tutte le istanze. Questo è il caso per **web**, **syslogd** e **trackinglogd** processi.
 
-   L’abilitazione può essere configurata da **config-default.xml** file.
+  L’abilitazione può essere configurata da **config-default.xml** file.
 
-   Dichiarazione di un server Adobe Campaign per accedere alle console client e per il reindirizzamento (tracciamento):
+  Dichiarazione di un server Adobe Campaign per accedere alle console client e per il reindirizzamento (tracciamento):
 
-   ```
-   vi nl6/conf/config-default.xml
-   <web args="-tomcat" autoStart="true"/>  
-   <!-- to start if the machine is also a redirection server -->  
-   <trackinglogd autoStart="true"/>
-   ```
+  ```
+  vi nl6/conf/config-default.xml
+  <web args="-tomcat" autoStart="true"/>  
+  <!-- to start if the machine is also a redirection server -->  
+  <trackinglogd autoStart="true"/>
+  ```
 
-   In questo esempio, il file viene modificato utilizzando un **vi** in Linux. Può essere modificato con qualsiasi **.txt** o **.xml** editor.
+  In questo esempio, il file viene modificato utilizzando un **vi** in Linux. Può essere modificato con qualsiasi **.txt** o **.xml** editor.
 
 * **mono-istanza**: viene avviato un processo per ogni istanza (moduli: **mta**, **wfserver**, **inMail**, **sms** e **stat**).
 
-   L’abilitazione può essere configurata utilizzando il file di configurazione dell’istanza:
+  L’abilitazione può essere configurata utilizzando il file di configurazione dell’istanza:
 
-   ```
-   config-<instance>.xml
-   ```
+  ```
+  config-<instance>.xml
+  ```
 
-   Dichiarazione di un server per la consegna, esecuzione di istanze del flusso di lavoro e recupero della posta non recapitata:
+  Dichiarazione di un server per la consegna, esecuzione di istanze del flusso di lavoro e recupero della posta non recapitata:
 
-   ```
-   <mta autoStart="true" statServerAddress="localhost"/>
-   <wfserver autoStart="true"/>  
-   <inMail autoStart="true"/>
-   <stat autoStart="true"/>
-   ```
+  ```
+  <mta autoStart="true" statServerAddress="localhost"/>
+  <wfserver autoStart="true"/>  
+  <inMail autoStart="true"/>
+  <stat autoStart="true"/>
+  ```
 
 **Archiviazione dei dati di Campaign**
 
@@ -131,13 +132,13 @@ Esistono due tipi di processi: a più istanze e a istanza singola.
 
 * In Windows, indica il seguente valore nel **XTK_VAR_DIR** variabile di sistema
 
-   ```
-   D:\log\AdobeCampaign
-   ```
+  ```
+  D:\log\AdobeCampaign
+  ```
 
 * In Linux, passare alla **customer.sh** file e indicare: **esportare XTK_VAR_DIR=/app/log/AdobeCampaign**.
 
-   Per ulteriori informazioni, consulta [Personalizzare i parametri](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
+  Per ulteriori informazioni, consulta [Personalizzare i parametri](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
 
 
 ## Sicurezza delle pagine dinamiche e inoltri {#dynamic-page-security-and-relays}

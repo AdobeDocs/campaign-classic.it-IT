@@ -2,15 +2,16 @@
 product: campaign
 title: Gestione della presentazione delle offerte
 description: Gestione della presentazione delle offerte
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Interaction, Offers
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 6158ffaa-cb08-4f77-82b8-b3e5e1bf7fd7
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '1007'
 ht-degree: 1%
 
 ---
@@ -110,41 +111,41 @@ Questi criteri rappresentano le applicazioni più frequenti delle regole di pres
 
 * **Filtra sul canale**
 
-   **[!UICONTROL On the same channel only]** : ti consente di escludere le proposte di offerta sul canale specificato in **[!UICONTROL General]** scheda.
+  **[!UICONTROL On the same channel only]** : ti consente di escludere le proposte di offerta sul canale specificato in **[!UICONTROL General]** scheda.
 
-   Ad esempio, il canale specificato per la regola nel **[!UICONTROL General]** La scheda è e-mail. Se le offerte a cui si applica la regola sono state finora offerte solo sul canale web, il motore di interazione può presentare le offerte in una consegna e-mail. Tuttavia, una volta che le offerte sono state presentate tramite e-mail, il motore di interazione sceglierà un canale diverso per presentarle.
+  Ad esempio, il canale specificato per la regola nel **[!UICONTROL General]** La scheda è e-mail. Se le offerte a cui si applica la regola sono state finora offerte solo sul canale web, il motore di interazione può presentare le offerte in una consegna e-mail. Tuttavia, una volta che le offerte sono state presentate tramite e-mail, il motore di interazione sceglierà un canale diverso per presentarle.
 
-   >[!NOTE]
-   >
-   >Stiamo parlando del canale e non dello spazio. Se la regola deve escludere un’offerta sul canale web, l’offerta destinata a essere presentata su un sito web in due spazi (ad esempio, in un banner e nel corpo della pagina) non verrà visualizzata sul sito se è già stata presentata in precedenza.
-   >
-   >Per un flusso di lavoro che coinvolge la presentazione di offerte, le regole vengono prese in considerazione correttamente solo se sono configurate in **[!UICONTROL All channels]**.
+  >[!NOTE]
+  >
+  >Stiamo parlando del canale e non dello spazio. Se la regola deve escludere un’offerta sul canale web, l’offerta destinata a essere presentata su un sito web in due spazi (ad esempio, in un banner e nel corpo della pagina) non verrà visualizzata sul sito se è già stata presentata in precedenza.
+  >
+  >Per un flusso di lavoro che coinvolge la presentazione di offerte, le regole vengono prese in considerazione correttamente solo se sono configurate in **[!UICONTROL All channels]**.
 
 * **Filtra l’offerta**
 
-   Questo filtro consente di limitare il conteggio delle proposte di offerta a specifici set di offerte.
+  Questo filtro consente di limitare il conteggio delle proposte di offerta a specifici set di offerte.
 
-   **[!UICONTROL All offers]** : valore predefinito. Alle offerte non viene applicato alcun filtro.
+  **[!UICONTROL All offers]** : valore predefinito. Alle offerte non viene applicato alcun filtro.
 
-   **[!UICONTROL Offer being presented]** : l’offerta specificata nella **[!UICONTROL General]** La scheda è esclusa se è già stata presentata.
+  **[!UICONTROL Offer being presented]** : l’offerta specificata nella **[!UICONTROL General]** La scheda è esclusa se è già stata presentata.
 
-   **[!UICONTROL Offers from the same category]** : un’offerta viene esclusa se è già stata presentata un’offerta della stessa categoria.
+  **[!UICONTROL Offers from the same category]** : un’offerta viene esclusa se è già stata presentata un’offerta della stessa categoria.
 
-   **[!UICONTROL The offers which the rule applies to]** : quando più offerte sono definite in **[!UICONTROL General]** , ogni proposta di offerta da questo set di offerte viene presa in considerazione e termina con l’esclusione di tutte le offerte se viene raggiunta la soglia di proposta.
+  **[!UICONTROL The offers which the rule applies to]** : quando più offerte sono definite in **[!UICONTROL General]** , ogni proposta di offerta da questo set di offerte viene presa in considerazione e termina con l’esclusione di tutte le offerte se viene raggiunta la soglia di proposta.
 
-   Ad esempio, le offerte 2, 3 e 5 sono definite nel **[!UICONTROL General]** scheda. Il numero massimo di proposte è impostato su 2. Se le offerte 2 e 5 vengono presentate una volta, il numero di proposte conteggiate sarà 2. Di conseguenza, l’offerta 3 non verrà mai presentata.
+  Ad esempio, le offerte 2, 3 e 5 sono definite nel **[!UICONTROL General]** scheda. Il numero massimo di proposte è impostato su 2. Se le offerte 2 e 5 vengono presentate una volta, il numero di proposte conteggiate sarà 2. Di conseguenza, l’offerta 3 non verrà mai presentata.
 
 * **Filtrare in base allo stato della proposta**
 
-   Questo filtro consente di scegliere gli stati più frequenti per le proposte di offerta da prendere in considerazione nella cronologia delle proposte.
+  Questo filtro consente di scegliere gli stati più frequenti per le proposte di offerta da prendere in considerazione nella cronologia delle proposte.
 
-   **[!UICONTROL Regardless of the proposition status]** : valore predefinito. Nessun filtro applicato allo stato della proposta.
+  **[!UICONTROL Regardless of the proposition status]** : valore predefinito. Nessun filtro applicato allo stato della proposta.
 
-   **[!UICONTROL Accepted or rejected propositions]** : ti consente di escludere le offerte presentate in precedenza che sono state accettate o rifiutate.
+  **[!UICONTROL Accepted or rejected propositions]** : ti consente di escludere le offerte presentate in precedenza che sono state accettate o rifiutate.
 
-   **[!UICONTROL Accepted propositions]** : ti consente di escludere le offerte precedentemente presentate che sono state accettate.
+  **[!UICONTROL Accepted propositions]** : ti consente di escludere le offerte precedentemente presentate che sono state accettate.
 
-   **[!UICONTROL Rejected propositions]** : ti consente di escludere le offerte precedentemente presentate che sono state rifiutate.
+  **[!UICONTROL Rejected propositions]** : ti consente di escludere le offerte precedentemente presentate che sono state rifiutate.
 
 ### Definizione dei destinatari {#defining-recipients}
 

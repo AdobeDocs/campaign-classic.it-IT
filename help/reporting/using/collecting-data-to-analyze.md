@@ -2,13 +2,13 @@
 product: campaign
 title: Raccogliere dati da analizzare
 description: Raccogliere dati da analizzare
-badge: label="v7" type="Informative" tooltip="Si applica solo a Campaign Classic v7"
-feature: Reporting
+feature: Reporting, Monitoring
+badge: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 exl-id: cf621374-88f9-4def-8bea-87e0ea69ecd3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 3%
+source-wordcount: '510'
+ht-degree: 4%
 
 ---
 

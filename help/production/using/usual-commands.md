@@ -2,16 +2,17 @@
 product: campaign
 title: Comandi abituali
 description: Comandi abituali
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
+badge-v7-prem: label="on-premise e ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 3%
+source-wordcount: '432'
+ht-degree: 5%
 
 ---
 
@@ -32,7 +33,6 @@ Il parametro **`<command>`** corrisponde al modulo.
 >* In ogni caso, puoi aggiungere **-noconsole** per eliminare i commenti visualizzati all&#39;avvio dei moduli.
 >* Al contrario, è possibile aggiungere l’argomento **-verboso** per visualizzare ulteriori informazioni.
 >
-
 
 ## Comandi di monitoraggio {#monitoring-commands-}
 
@@ -100,25 +100,25 @@ Per arrestare i servizi di Adobe Campaign, utilizzare uno dei seguenti comandi:
 
    * In Linux:
 
-      ```
-      /etc/init.d/nlserver6 stop
-      ```
+     ```
+     /etc/init.d/nlserver6 stop
+     ```
 
-      >[!NOTE]
-      >
-      >A partire dalla versione 20.1, si consiglia invece di utilizzare il seguente comando (per Linux): **systemctl stop nlserver**
+     >[!NOTE]
+     >
+     >A partire dalla versione 20.1, si consiglia invece di utilizzare il seguente comando (per Linux): **systemctl stop nlserver**
 
    * In Windows:
 
-      ```
-      net stop nlserver6
-      ```
+     ```
+     net stop nlserver6
+     ```
 
 * In caso contrario, nell’account Adobe Campaign:
 
-   ```
-   nlserver shutdown 
-   ```
+  ```
+  nlserver shutdown 
+  ```
 
 ## Riavvia servizi {#restart-services}
 
@@ -128,9 +128,9 @@ Allo stesso modo, per riavviare Adobe Campaign è possibile utilizzare uno dei s
 
    * In Linux: /etc/init.d/nlserver6 start
 
-      >[!NOTE]
-      >
-      >A partire dalla versione 20.1, si consiglia invece di utilizzare il seguente comando (per Linux): **systemctl start nlserver**
+     >[!NOTE]
+     >
+     >A partire dalla versione 20.1, si consiglia invece di utilizzare il seguente comando (per Linux): **systemctl start nlserver**
 
    * In Windows: net start nlserver6
 
@@ -165,3 +165,4 @@ Per modificare il **interno** password: **nlserver config -internalpassword**
 >* Nel caso di un database Oracle, non è necessario specificare l&#39;account. La sintassi sarà la seguente:
 >
 >  configurazione nlserver -setdblogin:Oracle:test6@dbserver
+>

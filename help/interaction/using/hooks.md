@@ -2,14 +2,15 @@
 product: campaign
 title: Hook
 description: Hook
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: e1d7d7c2-61e7-40d6-a8ce-69bc976f8c73
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '520'
 ht-degree: 2%
 
 ---
@@ -73,17 +74,17 @@ La post-elaborazione viene eseguita dopo l’applicazione delle regole di tipolo
 
 * Proposta: tabella delle proposte ammissibili. Esempio di struttura di un elemento nella tabella
 
-   ```
-   { offer_id:1234,
-     weight:2}
-   ```
+  ```
+  { offer_id:1234,
+    weight:2}
+  ```
 
 * dicOffer (tipo xml): dizionario di tutti gli attributi delle offerte idonee (codice offerta, id categoria, nome completo categoria, data di inizio, data di fine, etichetta, nome interno, id offerta, campi offerta aggiuntivi). Ad esempio
 
-   ```
-   { "1242": <offer category-id="61242" categoryFullName="/FULL/PATH/TO/CATEGORY/" code="CODE" endDate="" id="62473" label="LABEL" name="OFR38_OE4" product-id="43" startDate=""/>,
-     "1243": ...}
-   ```
+  ```
+  { "1242": <offer category-id="61242" categoryFullName="/FULL/PATH/TO/CATEGORY/" code="CODE" endDate="" id="62473" label="LABEL" name="OFR38_OE4" product-id="43" startDate=""/>,
+    "1243": ...}
+  ```
 
 * xmlTarget (tipo xml): nodo dati profilo
 * xmlInteraction (tipo xml): chiama nodo dati

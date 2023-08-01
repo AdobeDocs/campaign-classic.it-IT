@@ -2,14 +2,14 @@
 product: campaign
 title: Connettore Adobe Analytics
 description: Ulteriori informazioni sul connettore Adobe Analytics
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Overview
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
+feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 0dc6ce98-dc3e-4242-953e-e7cec55289ff
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1503'
+source-wordcount: '1510'
 ht-degree: 94%
 
 ---
@@ -27,7 +27,6 @@ Il connettore Adobe Analytics consente ad Adobe Campaign e Adobe Analytics di in
 >* Il connettore Adobe Analytics non è compatibile con la messaggistica transazionale (Centro messaggi).
 >
 >* Prima di iniziare, assicurati che in Campaign sia implementato Adobe Identity Management System (IMS). [Per ulteriori informazioni, consulta questa pagina](../../integrations/using/about-adobe-id.md).
-
 
 Utilizzando il connettore Adobe Analytics, Adobe Campaign ha un modo di misurare il pubblico Internet (analisi web). Grazie a queste integrazioni, Adobe Campaign può recuperare i dati sul comportamento dei visitatori per uno o più siti dopo una campagna di marketing e (dopo l’analisi) può eseguire campagne di remarketing per convertirli in acquirenti. Al contrario, gli strumenti di analisi web consentono ad Adobe Campaign di inoltrare indicatori e attributi della campagna alle proprie piattaforme.
 
@@ -227,9 +226,9 @@ Sono disponibili nella struttura Adobe Campaign, nella cartella **[!UICONTROL Ad
 * **[!UICONTROL Identification of converted contacts]**: directory dei visitatori che hanno effettuato un acquisto in seguito a una campagna di remarketing. I dati raccolti da questo flusso di lavoro sono accessibili nel rapporto **[!UICONTROL Re-marketing efficiency]**, fai riferimento a questa [pagina](#creating-a-re-marketing-campaign).
 * **[!UICONTROL Sending of indicators and campaign attributes]**: consente di inviare gli indicatori della campagna tramite Adobe Campaign a Adobe Experience Cloud utilizzando il connettore Adobe Analytics. Questo flusso di lavoro viene attivato alle 4 del mattino ogni giorno e possono essere necessarie 24 ore per l’invio dei dati ad Analytics.
 
-   Tieni presente che questo flusso di lavoro non deve essere riavviato altrimenti invierà nuovamente tutti i dati precedenti che possono distorcere i risultati di Analytics.
+  Tieni presente che questo flusso di lavoro non deve essere riavviato altrimenti invierà nuovamente tutti i dati precedenti che possono distorcere i risultati di Analytics.
 
-   Gli indicatori interessati sono i seguenti:
+  Gli indicatori interessati sono i seguenti:
 
    * **[!UICONTROL Messages to deliver]** (@toDeliver)
    * **[!UICONTROL Processed]** (@processed)
@@ -242,11 +241,11 @@ Sono disponibili nella struttura Adobe Campaign, nella cartella **[!UICONTROL Ad
    * **[!UICONTROL Opt-Out]** (@optOut)
    * **[!UICONTROL Errors]** (@error)
 
-   >[!NOTE]
-   >
-   >I dati inviati sono il delta basato sull’ultima istantanea che può portare a un valore negativo nei dati della metrica.
+  >[!NOTE]
+  >
+  >I dati inviati sono il delta basato sull’ultima istantanea che può portare a un valore negativo nei dati della metrica.
 
-   Gli attributi inviati sono i seguenti:
+  Gli attributi inviati sono i seguenti:
 
    * **[!UICONTROL Internal name]** (@internalName)
    * **[!UICONTROL Label]** (@label)
@@ -256,7 +255,6 @@ Sono disponibili nella struttura Adobe Campaign, nella cartella **[!UICONTROL Ad
    * **[!UICONTROL Tag 2]** (webAnalytics/@tag2)
    * **[!UICONTROL Tag 3]** (webAnalytics/@tag3)
    * **[!UICONTROL Contact date]** (scheduling/@contactDate)
-
 
 ## Tracciamento delle consegne in Adobe Campaign {#tracking-deliveries-in-adobe-campaign}
 

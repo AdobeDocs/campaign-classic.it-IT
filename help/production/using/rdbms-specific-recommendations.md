@@ -2,16 +2,17 @@
 product: campaign
 title: Raccomandazioni specifiche per RDBMS
 description: Raccomandazioni specifiche per RDBMS
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
+badge-v7-prem: label="on-premise e ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
 audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1176'
-ht-degree: 1%
+source-wordcount: '1201'
+ht-degree: 2%
 
 ---
 
@@ -143,7 +144,6 @@ VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
 >* Per tabelle molto grandi (in genere superiori a 5 Gb), l&#39;istruzione VACUUM FULL può diventare piuttosto inefficiente e richiedere molto tempo. L’Adobe sconsiglia di utilizzarlo per il **YyyyNmsBroadLogXxx** tabella.
 >* Questa operazione di manutenzione può essere implementata da un flusso di lavoro Adobe Campaign, utilizzando un **[!UICONTROL SQL]** attività. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../workflow/using/architecture.md). Assicurati di pianificare la manutenzione per un tempo di attività basso che non si scontra con la finestra di backup.
 >
-
 
 ### Ricostruzione di un database {#rebuilding-a-database}
 
@@ -436,19 +436,19 @@ L&#39;esempio seguente riguarda Microsoft SQL Server 2005. Se si utilizza un&#39
 
    * Se il tasso di frammentazione dell’indice è compreso tra il 10% e il 40%, si consiglia una riorganizzazione.
 
-      Scegliere i database e gli oggetti (tabelle o viste) da riorganizzare, quindi fare clic su **[!UICONTROL Next]**.
+     Scegliere i database e gli oggetti (tabelle o viste) da riorganizzare, quindi fare clic su **[!UICONTROL Next]**.
 
-      >[!NOTE]
-      >
-      >A seconda della configurazione, è possibile scegliere le tabelle selezionate in precedenza o tutte le tabelle del database.
+     >[!NOTE]
+     >
+     >A seconda della configurazione, è possibile scegliere le tabelle selezionate in precedenza o tutte le tabelle del database.
 
    * Se il tasso di frammentazione dell’indice è superiore al 40%, si consiglia di ricrearlo.
 
-      Seleziona le opzioni da applicare all’attività di ricompilazione dell’indice, quindi fai clic su **[!UICONTROL Next]**.
+     Seleziona le opzioni da applicare all’attività di ricompilazione dell’indice, quindi fai clic su **[!UICONTROL Next]**.
 
-      >[!NOTE]
-      >
-      >Il processo di ricostruzione dell&#39;indice è più restrittivo in termini di utilizzo del processore e blocca le risorse del database. Seleziona la **[!UICONTROL Keep index online while reindexing]** se desideri che l’indice sia disponibile durante la ricompilazione.
+     >[!NOTE]
+     >
+     >Il processo di ricostruzione dell&#39;indice è più restrittivo in termini di utilizzo del processore e blocca le risorse del database. Seleziona la **[!UICONTROL Keep index online while reindexing]** se desideri che l’indice sia disponibile durante la ricompilazione.
 
 1. Seleziona le opzioni da visualizzare nel rapporto attività, quindi fai clic su **[!UICONTROL Next]**.
 1. Controlla l’elenco delle attività configurate per il piano di manutenzione, quindi fai clic su **[!UICONTROL Finish]**.

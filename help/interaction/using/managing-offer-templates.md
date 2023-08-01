@@ -2,16 +2,17 @@
 product: campaign
 title: Gestione dei modelli di offerta
 description: Gestione dei modelli di offerta
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Interaction, Offers, Templates
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: e4a6cc22-05bd-4b8a-984d-d0706fc210e1
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 5%
+source-wordcount: '177'
+ht-degree: 8%
 
 ---
 
@@ -32,7 +33,7 @@ Per creare un’offerta modello, effettua le seguenti operazioni:
 
 1. Configura il modello applicando lo stesso processo di un’offerta normale, quindi salvalo facendo clic su **Salva**.
 
-## Duplica un modello esistente {#duplicate-an-existing-template}
+## Duplicare un modello esistente {#duplicate-an-existing-template}
 
 Per duplicare un modello di offerta (preconfigurato o meno), effettua le seguenti operazioni:
 

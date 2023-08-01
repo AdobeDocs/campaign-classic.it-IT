@@ -2,16 +2,17 @@
 product: campaign
 title: Creazione di modelli di importazione ed esportazione
 description: Scopri come creare modelli di importazione ed esportazione in Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Templates
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1180e664-5ead-4d5d-b1c3-6fe397c1f3a2
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 7%
+source-wordcount: '139'
+ht-degree: 8%
 
 ---
 
@@ -29,7 +30,7 @@ Per impostazione predefinita, in questa directory sono presenti tre modelli di i
 
 ![](assets/s_ncs_user_export_wizard_template_create.png)
 
-Puoi duplicare i modelli esistenti per crearne di nuovi o crearne di nuovi tramite **[!UICONTROL New > Import template]** / **[!UICONTROL Export template]** menu.
+È possibile duplicare i modelli esistenti per creare modelli personalizzati o crearne uno nuovo tramite **[!UICONTROL New > Import template]** / **[!UICONTROL Export template]** menu.
 
 Il processo di configurazione di un modello è quindi lo stesso di quello presentato in queste sezioni:
 

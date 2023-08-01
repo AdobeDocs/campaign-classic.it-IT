@@ -2,15 +2,16 @@
 product: campaign
 title: Creare richieste di accesso ai dati personali
 description: Scopri come creare e gestire le richieste di accesso a dati personali
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Privacy, Privacy Tools
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 73b90d79-88b6-4aaf-8103-4564de5e06be
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 100%
+source-wordcount: '778'
+ht-degree: 99%
 
 ---
 
@@ -68,7 +69,6 @@ Se hai creato tabelle personalizzate con un collegamento alla tabella dei profil
 >* L’eliminazione del profilo tramite flussi di lavoro non elabora eventuali tabelle secondarie.
 >* È necessario gestire l’eliminazione per tutte le tabelle secondarie.
 >* Adobe consiglia di creare un flusso di lavoro ETL che aggiunga le righe da eliminare nella tabella di accesso ai dati personali e consenta al flusso di lavoro **[!UICONTROL Delete privacy requests data]** di eseguire l’eliminazione. Consigliamo di limitare l’eliminazione a 200 profili al giorno, per motivi di prestazioni.
-
 
 ## Stati delle richieste di accesso a dati personali {#privacy-request-statuses}
 
