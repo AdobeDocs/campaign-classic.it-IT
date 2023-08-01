@@ -2,8 +2,9 @@
 product: campaign
 title: 'Elementi e attributi dello schema: elemento'
 description: elemento
+feature: Schema Extension
 exl-id: 60f15ae5-b2bd-48f9-aa45-8f795a3071aa
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '2014'
 ht-degree: 0%
@@ -54,9 +55,9 @@ Esistono quattro tipi di `<element>`  elementi in Adobe Campaign:
 
 * **_operation (stringa)**: definisce il tipo di scrittura nel database.
 
-   Questo attributo viene utilizzato principalmente quando si estendono schemi predefiniti.
+  Questo attributo viene utilizzato principalmente quando si estendono schemi predefiniti.
 
-   I valori accessibili sono:
+  I valori accessibili sono:
 
    * &quot;Nessuno&quot;: la riconciliazione da sola. Ciò significa che Adobe Campaign recupererà l’elemento senza aggiornarlo o genererà un errore, se non esiste.
    * &quot;insertOrUpdate&quot;: aggiornamento con inserimento. Ciò significa che Adobe Campaign aggiornerà l’elemento o lo creerà se non esiste.
@@ -93,14 +94,14 @@ Esistono quattro tipi di `<element>`  elementi in Adobe Campaign:
    * &quot;shared&quot; (condiviso): il contenuto viene memorizzato in una tabella condivisa per tipo di dati
    * &quot;dedicato&quot;: il contenuto viene memorizzato in una tabella dedicata
 
-   Le tabelle delle caratteristiche SQL vengono create automaticamente in base al tipo di caratteristica:
+  Le tabelle delle caratteristiche SQL vengono create automaticamente in base al tipo di caratteristica:
 
    * dedicato: `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
    * condiviso: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
 
-   Esistono due tipi di campi delle caratteristiche: campi semplici in cui è autorizzato un singolo valore sulla caratteristica e campi a scelta multipla in cui la caratteristica è collegata a un elemento di raccolta che può contenere più valori.
+  Esistono due tipi di campi delle caratteristiche: campi semplici in cui è autorizzato un singolo valore sulla caratteristica e campi a scelta multipla in cui la caratteristica è collegata a un elemento di raccolta che può contenere più valori.
 
-   Quando una caratteristica è definita in uno schema, questo schema deve avere una chiave principale basata su un singolo campo (le chiavi composite non sono autorizzate).
+  Quando una caratteristica è definita in uno schema, questo schema deve avere una chiave principale basata su un singolo campo (le chiavi composite non sono autorizzate).
 
 * **featureDate (booleano)**: attributo collegato al campo @feature delle caratteristiche. Se il suo valore è &quot;true&quot;, ti consente di scoprire quando è stato aggiornato l’ultima volta il valore.
 * **filterPath (stringa)**: questo attributo riceve un Xpath e ti consente di definire un filtro per un campo.
@@ -111,7 +112,7 @@ Esistono quattro tipi di `<element>`  elementi in Adobe Campaign:
 * **img (stringa)**: riceve il percorso di un’immagine collegata a un elemento. Il valore di questo attributo è del tipo &quot;namespace:image name&quot;. Ad esempio: img=&quot;cus:myImage.jpg&quot;. A livello fisico, l&#39;immagine deve essere importata nel server applicazioni.
 * **integrità (stringa)**: integrità referenziale dell’occorrenza della tabella sorgente verso la tabella di destinazione.
 
-   I valori accessibili sono:
+  I valori accessibili sono:
 
    * &quot;define&quot;: Adobe Campaign non elimina l’entità se vi si fa riferimento tramite il collegamento
    * &quot;normal&quot;: l’eliminazione dell’occorrenza sorgente inizializza le chiavi del collegamento nell’occorrenza target (modalità predefinita). questo tipo di integrità inizializza tutte le chiavi esterne
@@ -125,14 +126,14 @@ Esistono quattro tipi di `<element>`  elementi in Adobe Campaign:
 * **localizzabile (booleano)**: se è attivato, questo attributo indica allo strumento di raccolta di recuperare il valore dell’attributo &quot;@label&quot; per la traduzione (uso interno).
 * **nome (MNTOKEN)**: nome interno dell’elemento che corrisponde al nome della tabella. Il valore dell&#39;attributo &quot;@name&quot; deve essere breve, preferibilmente in inglese, e deve essere conforme ai vincoli di denominazione collegati a XML.
 
-   Quando lo schema viene scritto nel database, Adobe Campaign aggiunge automaticamente i prefissi al nome del campo.
+  Quando lo schema viene scritto nel database, Adobe Campaign aggiunge automaticamente i prefissi al nome del campo.
 
    * &quot;i&quot;: prefisso per il tipo &#39;integer&#39;.
    * &quot;d&quot;: prefisso per il tipo &quot;double&quot;.
    * &quot;s&quot;: prefisso per il tipo di stringa di caratteri.
    * &quot;ts&quot;: prefisso per il tipo &quot;date&quot;.
 
-   Per definire il nome della tabella in modo autonomo, è necessario utilizzare l&#39;attributo &quot;@sqltable&quot; nella definizione dell&#39;elemento dello schema principale.
+  Per definire il nome della tabella in modo autonomo, è necessario utilizzare l&#39;attributo &quot;@sqltable&quot; nella definizione dell&#39;elemento dello schema principale.
 
 * **noDbIndex (booleano)**: consente di specificare che l’elemento non sarà indicizzato.
 * **ordinato (booleano)**: se l’attributo è attivato (ordered=&quot;true&quot;), Adobe Campaign mantiene la sequenza di dichiarazione dell’elemento in un elemento di raccolta XML.
@@ -148,12 +149,12 @@ Esistono quattro tipi di `<element>`  elementi in Adobe Campaign:
 * **revAdvanced (booleano)**: quando è attivato, questo attributo specifica che il collegamento opposto è un collegamento &quot;avanzato&quot;.
 * **revCardinality (stringa)**: questo attributo definisce la cardinalità di un collegamento tra due tabelle. Viene utilizzato in un tipo &quot;link&quot; `<element>`.
 
-   I valori possibili sono:
+  I valori possibili sono:
 
    * &quot;single&quot; : collegamento semplice di tipo 1-1
    * &quot;unbound&quot;: collegamento per raccolta di tipo 1-N
 
-   Per impostazione predefinita, se l’attributo non è specificato durante la creazione del collegamento, la cardinalità sarà 1-N.
+  Per impostazione predefinita, se l’attributo non è specificato durante la creazione del collegamento, la cardinalità sarà 1-N.
 
 * **revDesc (stringa)**: questo attributo riceve una descrizione collegata al collegamento opposto.
 * **revExternalJoin (booleano)**: quando è attivato, questo attributo ti consente di forzare il join esterno sul collegamento opposto.
@@ -168,11 +169,11 @@ Esistono quattro tipi di `<element>`  elementi in Adobe Campaign:
 * **tableSpaceIndex (stringa)**: questo attributo consente di specificare una nuova tablespace di archiviazione dell’indice per una tabella (valida nella directory principale) `<element>`).
 * **target (MNTOKEN)**: riceve il nome dello schema di destinazione durante la creazione di un collegamento tra tabelle. Questo attributo è attivo solo per gli elementi di tipo &quot;link&quot;.
 * **modello (stringa)**: questo attributo definisce un riferimento a un `<element>` condiviso da più schemi. La definizione viene copiata automaticamente nello schema corrente.
-* **translDefault (stringa)**: se viene trovato un attributo &quot;@default&quot;, il &quot;@translatedDefault&quot; ti consente di ridefinire un’espressione che corrisponda a quella definita in @default, da raccogliere tramite lo strumento di traduzione (uso interno).
+* **translDefault (stringa)**: se viene trovato un attributo &quot;@default&quot;, il &quot;@translatedDefault&quot; ti consente di ridefinire un’espressione che corrisponda a quella definita in @default, e che deve essere raccolta dallo strumento di traduzione (uso interno).
 * **translExpr (stringa)**: se viene trovato un attributo &quot;@expr&quot;, l’attributo &quot;@translatedExpr&quot; ti consente di ridefinire un’espressione corrispondente a quella definita in &quot;@expr&quot; e che verrà raccolta dallo strumento di traduzione (uso interno).
 * **tipo (MNTOKEN)**: definisce il tipo di dati memorizzati nell’elemento.
 
-   Elenco dei tipi disponibili:
+  Elenco dei tipi disponibili:
 
    * QUALSIASI
    * raccoglitore

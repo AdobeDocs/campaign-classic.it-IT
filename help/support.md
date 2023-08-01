@@ -2,9 +2,10 @@
 product: campaign
 title: Guida e opzioni di supporto per Campaign Classic
 description: Hai bisogno di supporto per Campaign Classic? Sei nel posto giusto!
+feature: Troubleshooting
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: a119378e4285d3258a9b4f1f68c0b625264e5d37
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 69%
@@ -92,7 +93,7 @@ Come effettuare l’aggiornamento a una nuova build? Come monitorare l’esecuzi
 
 ### Che cos’è il Pannello di controllo?
 
-Campaign Pannelli di controllo Campaign ti aiuta a migliorare l’efficienza del tuo lavoro di amministratore di prodotto di Campaign Classic, consentendoti di gestire le impostazioni e tenere traccia dell’utilizzo di ciascuna istanza.
+Campaign Pannello di controllo Campaign ti aiuta a migliorare l’efficienza del tuo lavoro di amministratore di prodotto di Campaign Classic, consentendoti di gestire le impostazioni e tenere traccia dell’utilizzo di ciascuna istanza.
 Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=it).
 
 >[!NOTE]

@@ -2,8 +2,9 @@
 product: campaign
 title: Elementi e attributi - elemento dbindex
 description: elemento dbindex
+feature: Schema Extension
 exl-id: d7d1e427-12e0-4f07-9e01-d184dbe2ebf1
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 1%
@@ -50,9 +51,9 @@ Il nome dell&#39;indice nel database viene calcolato concatenando il nome della 
 
 * **_operation (stringa)**: definisce il tipo di scrittura nel database.
 
-   Questo attributo viene utilizzato principalmente quando si estendono schemi predefiniti.
+  Questo attributo viene utilizzato principalmente quando si estendono schemi predefiniti.
 
-   I valori accessibili sono:
+  I valori accessibili sono:
 
    * &quot;Nessuno&quot;: la riconciliazione da sola. Ciò significa che Adobe Campaign recupererà l’elemento senza aggiornarlo o genererà un errore, se non esiste.
    * &quot;insertOrUpdate&quot;: aggiornamento con inserimento. Ciò significa che Adobe Campaign aggiornerà l’elemento o lo creerà se non esiste.

@@ -2,11 +2,12 @@
 product: campaign
 title: 'Elementi e attributi: elemento attributo'
 description: Elementi e attributi
+feature: Schema Extension
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '1555'
 ht-degree: 1%
@@ -47,9 +48,9 @@ La sequenza in cui `<attribute>` gli elementi sono definiti in un `<srcschema>` 
 
 * **_operation (stringa)**: definisce il tipo di scrittura nel database.
 
-   Questo attributo viene utilizzato principalmente quando si estendono schemi predefiniti.
+  Questo attributo viene utilizzato principalmente quando si estendono schemi predefiniti.
 
-   I valori accessibili sono:
+  I valori accessibili sono:
 
    * &quot;Nessuno&quot;: la riconciliazione da sola. Ciò significa che Adobe Campaign recupererà l’elemento senza aggiornarlo o genererà un errore, se non esiste.
    * &quot;insertOrUpdate&quot;: aggiornamento con inserimento. Ciò significa che Adobe Campaign aggiornerà l’elemento o lo creerà se non esiste.
@@ -61,7 +62,7 @@ La sequenza in cui `<attribute>` gli elementi sono definiti in un `<srcschema>` 
 * **applyIf (stringa)**: questo attributo ti consente di rendere facoltativi i campi. Il `<attribute>` verrà preso in considerazione quando si aggiorna il database quando il vincolo viene rispettato. &quot;applyIf&quot; riceve un’espressione XTK.
 * **autoIncrement (booleano)**: se questa opzione è attivata, il campo diventa un contatore. Questo consente di incrementare un valore (per lo più ID). (uso esterno)
 * **membersTo (stringa)**: prende il nome e lo spazio dei nomi della tabella che condivide il campo e popola lo schema in cui è dichiarato l’attributo. (utilizzato solo in un `<schema>`).
-* **dataPolicy (stringa)**: consente di specificare i vincoli di approvazione per i valori consentiti nel campo SQL o XML. I valori per questo attributo sono:
+* **dataPolicy (stringa)**: consente di specificare vincoli di approvazione per i valori consentiti nel campo SQL o XML. I valori per questo attributo sono:
 
    * &quot;none&quot;: nessun valore
    * &quot;smartCase&quot;: prime lettere maiuscole
@@ -84,14 +85,14 @@ La sequenza in cui `<attribute>` gli elementi sono definiti in un `<srcschema>` 
    * &quot;shared&quot; (condiviso): il contenuto viene memorizzato in una tabella condivisa per tipo di dati
    * &quot;dedicato&quot;: il contenuto viene memorizzato in una tabella dedicata
 
-   Le tabelle delle caratteristiche SQL vengono create automaticamente in base al tipo di caratteristica:
+  Le tabelle delle caratteristiche SQL vengono create automaticamente in base al tipo di caratteristica:
 
    * dedicato: `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
    * condiviso: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
 
-   Esistono due tipi di campi delle caratteristiche: campi à¹ semplici in cui è autorizzato un singolo valore sulla caratteristica e campi oà¹ a scelta multipla in cui la caratteristica è collegata a un elemento di raccolta che può contenere più valori.
+  Esistono due tipi di campi delle caratteristiche: campi à¹ semplici in cui è autorizzato un singolo valore sulla caratteristica e campi oà¹ a scelta multipla in cui la caratteristica è collegata a un elemento di raccolta che può contenere più valori.
 
-   Quando una caratteristica è definita in uno schema, questo schema deve avere una chiave principale basata su un singolo campo (le chiavi composite non sono autorizzate).
+  Quando una caratteristica è definita in uno schema, questo schema deve avere una chiave principale basata su un singolo campo (le chiavi composite non sono autorizzate).
 
 * **featureDate (booleano)**: attributo collegato al campo @feature delle caratteristiche. Se il suo valore è &quot;true&quot;, ti consente di scoprire quando è stato aggiornato l’ultima volta il valore.
 * **img (stringa)**: consente di definire un percorso per un’immagine collegata a un campo (spazio dei nomi + nome immagine) (ad esempio: img=&quot;cus:mypicture.jpg&quot;). A livello fisico, l&#39;immagine deve essere importata nel server applicazioni.
@@ -100,14 +101,14 @@ La sequenza in cui `<attribute>` gli elementi sono definiti in un `<srcschema>` 
 * **localizzabile (booleano)**: se è attivato, questo attributo indica allo strumento di raccolta di recuperare il valore dell’attributo &quot;@label&quot; per la traduzione (uso interno).
 * **nome (MNTOKEN)**: nome dell’attributo che corrisponderà al nome del campo nella tabella. Il valore dell&#39;attributo &quot;@name&quot; deve essere breve, preferibilmente in inglese, e deve essere conforme ai vincoli di denominazione XML.
 
-   Quando lo schema viene scritto nel database, Adobe Campaign aggiunge automaticamente i prefissi al nome del campo:
+  Quando lo schema viene scritto nel database, Adobe Campaign aggiunge automaticamente i prefissi al nome del campo:
 
    * &quot;i&quot;: prefisso per il tipo &#39;integer&#39;.
    * &quot;d&quot;: prefisso per il tipo &quot;double&quot;.
    * &quot;s&quot;: prefisso per il tipo di stringa di caratteri.
    * &quot;ts&quot;: prefisso per il tipo &quot;date&quot;.
 
-   Per definire completamente il nome del campo nella tabella, utilizzare l&#39;opzione &quot;@sqlname&quot; durante la definizione di un attributo.
+  Per definire completamente il nome del campo nella tabella, utilizzare l&#39;opzione &quot;@sqlname&quot; durante la definizione di un attributo.
 
 * **notNull (booleano)**: consente di ridefinire il comportamento di Adobe Campaign per quanto riguarda la gestione dei record NULL nel database. Per impostazione predefinita, i campi numerici non sono nulli e i campi di tipo stringa e data possono essere nulli.
 * **pkgStatus (stringa)**: durante le esportazioni dei pacchetti, i valori vengono presi in considerazione a seconda del valore del &quot;@pkgStatus&quot;:
@@ -122,13 +123,13 @@ La sequenza in cui `<attribute>` gli elementi sono definiti in un `<srcschema>` 
 * **sqlDefault (stringa)**: questo attributo consente di definire il valore predefinito preso in considerazione per l’aggiornamento del database, se l’attributo @notNull è attivato. Se questo attributo viene aggiunto dopo la creazione dell’attributo, il comportamento dello schema non cambia nemmeno per i nuovi record. Per modificare lo schema e aggiornare il valore per i nuovi record, è necessario eliminare e creare nuovamente l’attributo.
 * **sqlname (stringa)**: del campo durante la creazione della tabella. Se non @sqlname specificato, per impostazione predefinita viene utilizzato il valore dell&#39;attributo &quot;@name&quot;. Quando lo schema viene scritto nel database, i prefissi vengono aggiunti automaticamente a seconda del tipo di campo.
 * **modello (stringa)**: questo attributo definisce un riferimento a un `<attribute>` condiviso da più schemi. La definizione viene copiata automaticamente nello schema corrente.
-* **translDefault (stringa)**: se viene trovato un attributo &quot;@default&quot;, il &quot;@translatedDefault&quot; ti consente di ridefinire un’espressione che corrisponda a quella definita in @default, da raccogliere tramite lo strumento di traduzione (uso interno).
+* **translDefault (stringa)**: se viene trovato un attributo &quot;@default&quot;, il &quot;@translatedDefault&quot; ti consente di ridefinire un’espressione che corrisponda a quella definita in @default, e che deve essere raccolta dallo strumento di traduzione (uso interno).
 * **translExpr (stringa)**: se è presente un attributo &quot;@expr&quot;, l’attributo &quot;@translatedExpr&quot; ti consente di ridefinire un’espressione in modo che corrisponda a quella definita in @expr, che deve essere raccolta dallo strumento di traduzione (uso interno).
 * **tipo (MNTOKEN)**: tipo di campo.
 
-   I tipi di campo sono generici. A seconda del tipo di database installato, Adobe Campaign modifica il tipo definito in un valore specifico per il database installato durante l’aggiornamento della struttura.
+  I tipi di campo sono generici. A seconda del tipo di database installato, Adobe Campaign modifica il tipo definito in un valore specifico per il database installato durante l’aggiornamento della struttura.
 
-   Elenco dei tipi disponibili:
+  Elenco dei tipi disponibili:
 
    * QUALSIASI
    * raccoglitore
@@ -157,16 +158,16 @@ La sequenza in cui `<attribute>` gli elementi sono definiti in un `<srcschema>` 
    * intervallo di tempo
    * uuid
 
-   Se l’attributo &quot;@type&quot; viene lasciato vuoto, Adobe Campaign collega al campo per impostazione predefinita una stringa di caratteri (STRING) di lunghezza pari a 100.
+  Se l’attributo &quot;@type&quot; viene lasciato vuoto, Adobe Campaign collega al campo per impostazione predefinita una stringa di caratteri (STRING) di lunghezza pari a 100.
 
-   Se il campo è di tipo STRING e il nome del campo non è specificato dalla presenza dell’attributo &quot;@sqlname&quot;, il nome del campo nel database sarà automaticamente preceduto da una &quot;s&quot;. Questa modalità operativa sarà simile ai campi di tipo INTEGER (i), DOUBLE (d) e DATE (ts).
+  Se il campo è di tipo STRING e il nome del campo non è specificato dalla presenza dell’attributo &quot;@sqlname&quot;, il nome del campo nel database sarà automaticamente preceduto da una &quot;s&quot;. Questa modalità operativa sarà simile ai campi di tipo INTEGER (i), DOUBLE (d) e DATE (ts).
 
 * **userEnum (stringa)**: riceve il nome interno di un’enumerazione &quot;open&quot;. I valori dell’enumerazione possono essere definiti dall’utente nell’interfaccia.
 * **visibleIf (stringa)**: definisce una condizione sotto forma di espressione XTK per mostrare o nascondere l’attributo.
 
-   >[!IMPORTANT]
-   >
-   >L’attributo è nascosto, ma è comunque possibile accedere ai relativi dati.
+  >[!IMPORTANT]
+  >
+  >L’attributo è nascosto, ma è comunque possibile accedere ai relativi dati.
 
 * **xml (booleano)**: se questa opzione è attivata, i valori del campo non hanno un campo SQL collegato. Adobe Campaign crea un campo di tipo Testo &quot;mData&quot; per l’archiviazione dei record. Ciò significa che non è presente alcun filtro o ordinamento in questi campi.
 

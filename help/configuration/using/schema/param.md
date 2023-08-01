@@ -2,8 +2,9 @@
 product: campaign
 title: 'Elementi e attributi dello schema: elemento param'
 description: elemento param
+feature: Schema Extension
 exl-id: d8960a2e-6900-4346-9f06-e7dd9d7b5139
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 7%
@@ -51,7 +52,7 @@ Questo elemento consente di definire un parametro per la chiamata di un metodo S
 * **nome (MNTOKEN)**: nome interno del `<param>`
 * **tipo (stringa)**: questo attributo definisce il tipo `<param>` elemento
 
-   Elenco dei tipi disponibili:
+  Elenco dei tipi disponibili:
 
    * QUALSIASI
    * raccoglitore
