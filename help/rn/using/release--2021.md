@@ -6,9 +6,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
-source-wordcount: '2595'
+source-git-commit: dbbc5d9f354357e5ca13eaeffddf67865480070d
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
@@ -268,9 +268,6 @@ Ulteriori informazioni sono disponibili nella pagina [Funzioni obsolete e rimoss
 * Vengono ora acquisite tutte le categorie di feedback per la generazione di rapporti completi e precisi.
 * Il calcolo dell’indicatore Delivered è ora basato sul feedback in tempo reale dall’MTA avanzato per una maggiore precisione e reattività.
 * Il servizio EFS risolve il problema dei ritardi nella generazione sincrona di rapporti sui soft bounce.
-
-Per ulteriori informazioni consulta la [documentazione dettagliata](../../delivery/using/sending-with-enhanced-mta.md#efs).
-Per partecipare alla versione beta privata, compila questo [modulo](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) e ti contatteremo.
 
 **Altre modifiche**
 
