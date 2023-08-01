@@ -2,14 +2,14 @@
 product: campaign
 title: S con MTA avanzato in Adobe Campaign Classic
 description: Scopri l’ambito e le specificità dell’invio di e-mail con MTA avanzato di Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Email
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 4c0c3007a03d4274fa1b436259cb2d302fcc8185
 workflow-type: tm+mt
-source-wordcount: '1999'
-ht-degree: 4%
+source-wordcount: '1736'
+ht-degree: 5%
 
 ---
 
@@ -90,32 +90,9 @@ No. L’aggiornamento non richiede il passaggio a nuovi IP, quindi puoi continua
 
 **L’aggiornamento a MTA avanzato influisce su eventuali campagne o consegne attualmente in corso?**
 
-Tutte le consegne preparate prima che l’istanza fosse aggiornata per utilizzare l’MTA avanzato dovranno essere ripreparate per utilizzare correttamente il nuovo MTA.
-
 Per i clienti che utilizzano la funzionalità di messaggistica transazionale di Adobe Campaign, tutte le chiamate API per attivare un’e-mail verranno messe in coda durante il brevissimo tempo di inattività dell’aggiornamento e verranno tentate al termine dello stesso.
 
 ## Specificità MTA migliorate {#enhanced-mta-impacts}
-
-### Intestazioni MTA avanzate
-
-Le ultime istanze di Campaign Classic includono il codice che aggiunge le intestazioni MTA avanzate richieste a ogni messaggio. Se utilizzi Adobe Campaign 19.1 (build 9032) o versione successiva e in caso contrario, devi richiedere [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per aggiungere il parametro &quot;useMomentum=true&quot; alla configurazione dell’istanza di esecuzione (in [serverConf.xml](../../installation/using/the-server-configuration-file.md#mta) file), che può essere la tua istanza di marketing, [istanza mid-sourcing](../../installation/using/mid-sourcing-server.md), o [istanza di esecuzione della messaggistica transazionale](../../message-center/using/configuring-instances.md#execution-instance), a seconda della configurazione.
-
-Tuttavia, se utilizzi un’istanza precedente che non include questo codice, viene creata una nuova regola di tipologia denominata **[!UICONTROL Typology Rule for Enhanced MTAs]** devono essere aggiunte a tutte le tipologie esistenti nell’istanza Campaign.
-Questa regola viene aggiunta da un **[!UICONTROL Typology]** pacchetto installato nell’ambito dell’aggiornamento all’MTA avanzato.
-
->[!IMPORTANT]
->
->Se trovi questa regola di tipologia nelle tue tipologie, non eliminarla o modificarla in alcun modo. In caso contrario, le consegne di e-mail potrebbero essere influenzate negativamente.
-
-Questo **[!UICONTROL Typology]** il pacchetto deve essere installato nell’istanza marketing di Adobe Campaign.
-
-Se sei un client ibrido, il team Adobe Campaign ti fornirà le istruzioni su come installare il **[!UICONTROL Typology]** creare un pacchetto sull’istanza di marketing come parte dell’aggiornamento all’MTA avanzato. Contatta il responsabile del tuo account per ricevere istruzioni complete.
-
->[!IMPORTANT]
->
->Istruzioni fornite dal team di Adobe Campaign su come installare **[!UICONTROL Typology]** la confezione deve essere seguita attentamente. In caso contrario, potresti riscontrare problemi gravi con gli IP utilizzati per inviare e-mail.
-
-Per ulteriori informazioni sulle tipologie, consulta [questa sezione](../../campaign-opt/using/about-campaign-typologies.md).
 
 ### Nuove regole MX
 
@@ -224,17 +201,17 @@ Le tabelle seguenti mostrano le modifiche nei KPI e negli stati dei registri di 
 | Passaggio nel processo di invio | Riepilogo KPI | Stato dei registri di invio |
 |--- |--- |--- |
 | Il messaggio è stato inoltrato correttamente da Campaign all’MTA avanzato | **[!UICONTROL Success]** percentuale non visualizzata (inizia da 0%) | Considerato dal fornitore di servizi |
-| I messaggi non recapitabili vengono segnalati dall’MTA avanzato | Nessuna modifica in **[!UICONTROL Success]** percentuale | Operazione non riuscita |
+| I messaggi non recapitabili vengono segnalati dall’MTA avanzato | Nessuna modifica in **[!UICONTROL Success]** percentuale | Non riuscito |
 | I messaggi in soft-bouncing vengono segnalati dall’MTA avanzato | Nessuna modifica in **[!UICONTROL Success]** percentuale | Considerato dal fornitore di servizi |
 | Nuovi tentativi di messaggi con mancati recapiti non permanenti riusciti | **[!UICONTROL Success]** la percentuale viene aumentata di conseguenza | Inviato |
-| Nuovi tentativi di messaggi con mancati recapiti non riusciti | Nessuna modifica in **[!UICONTROL Success]** percentuale | Operazione non riuscita |
+| Nuovi tentativi di messaggi con mancati recapiti non riusciti | Nessuna modifica in **[!UICONTROL Success]** percentuale | Non riuscito |
 
 **Senza servizio di feedback delle e-mail**
 
 | Passaggio nel processo di invio | Riepilogo KPI | Stato dei registri di invio |
 |--- |--- |--- |
 | Il messaggio è stato inoltrato correttamente da Campaign all’MTA avanzato | **[!UICONTROL Success]** la percentuale inizia al 100% | Inviato |
-| I messaggi non recapitabili vengono segnalati dall’MTA avanzato | **[!UICONTROL Success]** la percentuale è diminuita di conseguenza | Operazione non riuscita |
+| I messaggi non recapitabili vengono segnalati dall’MTA avanzato | **[!UICONTROL Success]** la percentuale è diminuita di conseguenza | Non riuscito |
 | I messaggi in soft-bouncing vengono segnalati dall’MTA avanzato | Nessuna modifica in **[!UICONTROL Success]** percentuale | Inviato |
 | Nuovi tentativi di messaggi con mancati recapiti non permanenti riusciti | Nessuna modifica in **[!UICONTROL Success]** percentuale | Inviato | **[!UICONTROL Success]** la percentuale viene aumentata di conseguenza | Inviato |
-| Nuovi tentativi di messaggi con mancati recapiti non riusciti | **[!UICONTROL Success]** la percentuale è diminuita di conseguenza | Operazione non riuscita |
+| Nuovi tentativi di messaggi con mancati recapiti non riusciti | **[!UICONTROL Success]** la percentuale è diminuita di conseguenza | Non riuscito |
