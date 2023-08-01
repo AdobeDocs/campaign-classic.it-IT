@@ -6,10 +6,10 @@ badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic 
 badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Email
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 4c0c3007a03d4274fa1b436259cb2d302fcc8185
+source-git-commit: dbbc5d9f354357e5ca13eaeffddf67865480070d
 workflow-type: tm+mt
-source-wordcount: '1736'
-ht-degree: 5%
+source-wordcount: '1352'
+ht-degree: 4%
 
 ---
 
@@ -116,10 +116,6 @@ Il grafico della velocità effettiva di consegna della campagna non mostrerà pi
 
 Per ulteriori informazioni sulla velocità effettiva di consegna, consulta [questa sezione](../../reporting/using/global-reports.md#delivery-throughput).
 
->[!NOTE]
->
->Con il [Servizio di feedback delle e-mail](#email-feedback-service) (EFS) (attualmente disponibile come versione beta), il grafico della velocità effettiva di consegna di Campaign mostra ancora la velocità effettiva per i destinatari delle e-mail.
-
 ### Nuovi tentativi
 
 Le impostazioni per i nuovi tentativi nella consegna non vengono più utilizzate da Campaign. I nuovi tentativi di mancato recapito non permanenti e il periodo di tempo che intercorre tra di essi sono determinati dall’MTA avanzato in base al tipo e alla gravità delle risposte di mancato recapito provenienti dal dominio e-mail del messaggio.
@@ -157,61 +153,13 @@ Quando i messaggi con mancati recapiti non permanenti vengono segnalati dall’M
 
 Di conseguenza, attendi fino alla fine del periodo di validità per visualizzare il **[!UICONTROL Success]** percentuale e il numero finale di **[!UICONTROL Sent]** e **[!UICONTROL Failed]** messaggi.
 
-<!--The fact that the Success percentage will go to 100% very quickly indicates that your instance has been upgraded to the Enhanced MTA.-->
-
-### Servizio di feedback delle e-mail (beta) {#email-feedback-service}
-
-Con la funzionalità Email Feedback Service (EFS), lo stato di ogni e-mail viene segnalato con precisione, perché il feedback viene acquisito direttamente dall’MTA (Message Transfer Agent) avanzato.
-
->[!IMPORTANT]
->
->Il servizio di feedback delle e-mail è attualmente disponibile come funzionalità beta.
->
->Se ti interessa partecipare a questo programma beta, compila [questo modulo](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) e noi torneremo da te.
-
-Una volta iniziata la consegna, non vi è alcuna modifica nel **[!UICONTROL Success]** percentuale di inoltro del messaggio da Campaign all’MTA avanzato.
-
-<!--![](assets/efs-sending.png)-->
-
-I registri di consegna mostrano **[!UICONTROL Taken into account by the service provider]** stato per ogni indirizzo di destinazione.
-
-<!--![](assets/efs-pending.png)-->
-
-Quando il messaggio viene effettivamente recapitato ai profili target e una volta che queste informazioni vengono segnalate in tempo reale dall’MTA avanzato, i registri di consegna mostrano **[!UICONTROL Sent]** stato di ogni indirizzo che ha ricevuto correttamente il messaggio. Il **[!UICONTROL Success]** la percentuale viene aumentata di conseguenza con ogni consegna riuscita.
-
-Quando i messaggi non recapitabili vengono segnalati dall’MTA avanzato, lo stato del registro cambia da **[!UICONTROL Taken into account by the service provider]** a **[!UICONTROL Failed]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
-
-Quando i messaggi in mancati recapiti non permanenti vengono segnalati dall’MTA avanzato, il loro stato di registro rimane invariato (**[!UICONTROL Taken into account by the service provider]**): solo il [motivo errore](understanding-delivery-failures.md#delivery-failure-types-and-reasons) è aggiornato<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. Il **[!UICONTROL Success]** La percentuale rimane invariata. I messaggi in mancati recapiti non permanenti vengono quindi ritentati durante la consegna [periodo di validità](steps-sending-the-delivery.md#defining-validity-period):
-
-* Se un nuovo tentativo ha esito positivo prima della fine del periodo di validità, lo stato del messaggio cambia in **[!UICONTROL Sent]** e **[!UICONTROL Success]** la percentuale viene aumentata di conseguenza.
-
-* In caso contrario, lo stato cambia in **[!UICONTROL Failed]**. Il **[!UICONTROL Success]** <!--and **[!UICONTROL Bounces + errors]** -->La percentuale rimane invariata.
-
->[!NOTE]
->
->Per ulteriori informazioni sui mancati recapiti non permanenti, consulta [questa sezione](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
->
->Per ulteriori informazioni sui nuovi tentativi dopo un errore temporaneo di consegna, consulta [questa sezione](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
-
-
-Le tabelle seguenti mostrano le modifiche nei KPI e negli stati dei registri di invio introdotte dalla funzionalità EFS.
-
-**Con servizio di feedback delle e-mail**
-
-| Passaggio nel processo di invio | Riepilogo KPI | Stato dei registri di invio |
-|--- |--- |--- |
-| Il messaggio è stato inoltrato correttamente da Campaign all’MTA avanzato | **[!UICONTROL Success]** percentuale non visualizzata (inizia da 0%) | Considerato dal fornitore di servizi |
-| I messaggi non recapitabili vengono segnalati dall’MTA avanzato | Nessuna modifica in **[!UICONTROL Success]** percentuale | Non riuscito |
-| I messaggi in soft-bouncing vengono segnalati dall’MTA avanzato | Nessuna modifica in **[!UICONTROL Success]** percentuale | Considerato dal fornitore di servizi |
-| Nuovi tentativi di messaggi con mancati recapiti non permanenti riusciti | **[!UICONTROL Success]** la percentuale viene aumentata di conseguenza | Inviato |
-| Nuovi tentativi di messaggi con mancati recapiti non riusciti | Nessuna modifica in **[!UICONTROL Success]** percentuale | Non riuscito |
-
-**Senza servizio di feedback delle e-mail**
+La tabella seguente mostra i diversi passaggi del processo di invio con i KPI corrispondenti e gli stati dei registri di invio.
 
 | Passaggio nel processo di invio | Riepilogo KPI | Stato dei registri di invio |
 |--- |--- |--- |
 | Il messaggio è stato inoltrato correttamente da Campaign all’MTA avanzato | **[!UICONTROL Success]** la percentuale inizia al 100% | Inviato |
-| I messaggi non recapitabili vengono segnalati dall’MTA avanzato | **[!UICONTROL Success]** la percentuale è diminuita di conseguenza | Non riuscito |
-| I messaggi in soft-bouncing vengono segnalati dall’MTA avanzato | Nessuna modifica in **[!UICONTROL Success]** percentuale | Inviato |
-| Nuovi tentativi di messaggi con mancati recapiti non permanenti riusciti | Nessuna modifica in **[!UICONTROL Success]** percentuale | Inviato | **[!UICONTROL Success]** la percentuale viene aumentata di conseguenza | Inviato |
-| Nuovi tentativi di messaggi con mancati recapiti non riusciti | **[!UICONTROL Success]** la percentuale è diminuita di conseguenza | Non riuscito |
+| I messaggi non recapitabili vengono segnalati dall’MTA avanzato | **[!UICONTROL Success]** la percentuale è diminuita di conseguenza | Non riuscito |
+| I messaggi in soft-bouncing vengono segnalati dall’MTA avanzato | Nessuna modifica in **[!UICONTROL Success]** percentuale | Inviato |
+| Nuovi tentativi di messaggi con mancati recapiti non permanenti riusciti | Nessuna modifica in **[!UICONTROL Success]** percentuale | Inviato | **[!UICONTROL Success]** la percentuale viene aumentata di conseguenza | Inviato |
+| Nuovi tentativi di messaggi con mancati recapiti non riusciti | **[!UICONTROL Success]** la percentuale è diminuita di conseguenza | Non riuscito |
+

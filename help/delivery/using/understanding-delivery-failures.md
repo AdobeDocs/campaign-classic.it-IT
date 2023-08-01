@@ -2,13 +2,13 @@
 product: campaign
 title: Errori di consegna
 description: Scopri come comprendere gli errori di consegna
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Monitoring, Deliverability
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
+source-git-commit: dbbc5d9f354357e5ca13eaeffddf67865480070d
 workflow-type: tm+mt
-source-wordcount: '2614'
+source-wordcount: '2624'
 ht-degree: 17%
 
 ---
@@ -80,7 +80,7 @@ I possibili motivi di un errore di consegna sono:
    <td> La valutazione della qualità per questo indirizzo è troppo bassa.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Indirizzo inserito nell’elenco Bloccati </td> 
+   <td> Indirizzo inserito nell’elenco bloccati </td> 
    <td> Rigido </td> 
    <td> 8 </td> 
    <td> L’indirizzo è stato aggiunto al inserisco nell'elenco Bloccati di invio della. Questo stato viene utilizzato per importare i dati da elenchi esterni e sistemi esterni nell’elenco di quarantena di Adobe Campaign.<br /> </td> 
@@ -233,7 +233,7 @@ Per le installazioni on-premise e le installazioni in hosting/ibride che utilizz
 >
 >* **** Le mancate consegne asincrone vengono comunque qualificate dal processo inMail attraverso le regole **[!UICONTROL Inbound email]**. Per ulteriori informazioni, consulta [Regole di gestione e-mail](#email-management-rules).
 >
->* Per le istanze che utilizzano l’MTA avanzato **senza webhook/EFS**, il **[!UICONTROL Inbound email]** Le regole verranno utilizzate anche per elaborare le e-mail non recapitate sincrone provenienti dall’MTA avanzato, utilizzando lo stesso indirizzo e-mail utilizzato per le e-mail non recapitate asincrone.
+>* Per le istanze che utilizzano l’MTA avanzato **senza webhook**, il **[!UICONTROL Inbound email]** Le regole verranno utilizzate anche per elaborare le e-mail non recapitate sincrone provenienti dall’MTA avanzato, utilizzando lo stesso indirizzo e-mail utilizzato per le e-mail non recapitate asincrone.
 
 Per le installazioni on-premise e in hosting/ibride utilizzando l’MTA di Campaign legacy, quando la consegna di un’e-mail non riesce, il server di consegna Adobe Campaign riceve un messaggio di errore dal server di messaggistica o dal server DNS remoto. L&#39;elenco degli errori è costituito dalle stringhe contenute nel messaggio restituito dal server remoto. A ogni messaggio di errore vengono assegnati tipi e motivi di errore.
 
@@ -290,7 +290,7 @@ Le regole predefinite sono le seguenti.
 
 >[!IMPORTANT]
 >
->Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento al [MTA avanzato](sending-with-enhanced-mta.md), e se l’istanza ha **Webhook/EFS** funzionalità, **[!UICONTROL Inbound email]** le regole non vengono più utilizzate per i messaggi di errore di consegna sincrona. Per ulteriori informazioni, consulta [questa sezione](#bounce-mail-qualification).
+>Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento al [MTA avanzato](sending-with-enhanced-mta.md), e se l’istanza ha **Webhook** funzionalità, **[!UICONTROL Inbound email]** le regole non vengono più utilizzate per i messaggi di errore di consegna sincrona. Per ulteriori informazioni, consulta [questa sezione](#bounce-mail-qualification).
 
 Per le installazioni on-premise e le installazioni in hosting/ibride che utilizzano l’MTA di Campaign legacy, queste regole contengono l’elenco di stringhe di caratteri che possono essere restituite dai server remoti e che consentono di qualificare l’errore (**Rigido**, **Morbido** o **Ignorato**).
 
