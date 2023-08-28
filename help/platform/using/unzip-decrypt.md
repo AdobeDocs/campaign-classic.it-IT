@@ -9,22 +9,25 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 32c2ce24bdd62724e4b4ff66f4664e8faa259b4b
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '739'
 ht-degree: 11%
 
 ---
 
+
 # Decomprimere o decrittografare un file {#unzipping-or-decrypting-a-file-before-processing}
-
-
 
 Adobe Campaign consente di importare file compressi o crittografati. Prima di poter essere letti in un [Caricamento dati (file)](../../workflow/using/data-loading--file-.md) attività, puoi definire una pre-elaborazione per decomprimere o decrittografare il file.
 
+>[!IMPORTANT]
+>
+>Non è possibile decomprimere file compressi di dimensioni superiori a 4 Gb.
+
 Per poterlo fare:
 
-1. Utilizza il [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) per generare una coppia di chiavi pubblica/privata.
+1. Utilizza il [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) per generare una coppia di chiavi pubblica/privata al fine di consentire la decrittografia dei file.
 
    >[!NOTE]
    >
@@ -32,8 +35,9 @@ Per poterlo fare:
    >
    >La tua istanza deve essere ospitata su AWS e aggiornata con [build GA più recente](../../rn/using/rn-overview.md). Scopri come controllare la versione in [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=it).
 
-1. Se l’installazione di Adobe Campaign è ospitata da Adobe, contatta [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per installare le utility necessarie sul server.
 1. Se l’installazione di Adobe Campaign è on-premise, installa l’utility che desideri utilizzare (ad esempio: GPG, GZIP) nonché le chiavi necessarie (chiave di crittografia) sul server applicazioni.
+
+   Se l’installazione di Adobe Campaign è ospitata da Adobe, contatta [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per installare le utility necessarie sul server.
 
 Puoi quindi utilizzare nei flussi di lavoro i comandi di pre-elaborazione desiderati:
 
