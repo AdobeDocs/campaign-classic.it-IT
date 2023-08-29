@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: S con MTA avanzato in Adobe Campaign Classic
+title: Inviare con MTA avanzato in Adobe Campaign Classic
 description: Scopri l’ambito e le specificità dell’invio di e-mail con MTA avanzato di Adobe Campaign
 badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Email
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: dbbc5d9f354357e5ca13eaeffddf67865480070d
+source-git-commit: e83d85a26a5c8dd26ea2468246ef448edf8fee9b
 workflow-type: tm+mt
 source-wordcount: '1352'
 ht-degree: 4%
