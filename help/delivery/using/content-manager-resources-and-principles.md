@@ -2,19 +2,19 @@
 product: campaign
 title: Risorse e principi di gestione dei contenuti
 description: Risorse e principio di gestione dei contenuti
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Templates
+role: User, Developer, Data Engineer
 exl-id: ade3f1d1-2235-4148-9b6f-721d3f521a15
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '250'
 ht-degree: 4%
 
 ---
 
 # Risorse e principi di gestione dei contenuti{#content-manager-resources-and-principles}
-
 
 
 È necessario definire un modello di pubblicazione contenente modelli di trasformazione per ogni contenuto.

@@ -2,13 +2,14 @@
 product: campaign
 title: Indirizzi di seed
 description: Indirizzi di seed
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+role: Data Engineer, Developer
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Seed Address
 exl-id: a16103bf-0498-4f59-ad96-8bfdeea26577
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '334'
 ht-degree: 7%
 
 ---
@@ -80,7 +81,8 @@ Applica i seguenti passaggi:
    >    * Durante l’estensione, devi specificare un’ **Nome SQL (@sqlname)** per il campo &quot;email&quot;. Il nome SQL deve essere diverso da &#39;sEmail&#39; riservato allo schema del destinatario.
    >    * È necessario aggiornare la struttura del database con lo schema creato durante l’estensione **nms:seedingMember**.
    >    * In **nms:seedingMember** , il campo contenente l&#39;indirizzo e-mail deve avere **name=&quot;email&quot;** come attributo. Il nome SQL deve essere diverso da &#39;sEmail&#39; che è già in uso per lo schema del destinatario. Questo attributo deve essere dichiarato immediatamente in **`<element name="custom_cus_person" />`** elemento.
-
+   >    
+   >
 
 1. Modifica il **[!UICONTROL seedMember]** per definire una nuova scheda &quot;Destinatario interno&quot; nel **[!UICONTROL Seed addresses]** finestra. Per ulteriori informazioni, consulta [questa pagina](../../configuration/using/form-structure.md).
 

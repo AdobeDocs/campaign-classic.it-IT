@@ -2,20 +2,19 @@
 product: campaign
 title: Creare una consegna direct mailing
 description: Scopri come creare una consegna direct mailing
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Direct Mail
+role: User
 exl-id: 964cc600-19b8-449e-bac6-dc9da2b5ea12
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '87'
+source-wordcount: '99'
 ht-degree: 20%
 
 ---
 
 # Creare una consegna direct mailing{#creating-a-direct-mail-delivery}
-
-
 
 Per creare una nuova consegna di direct mailing, segui i passaggi seguenti:
 

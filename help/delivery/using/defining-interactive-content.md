@@ -2,20 +2,19 @@
 product: campaign
 title: Definire il contenuto interattivo in Adobe Campaign Classic
 description: Scopri come definire contenuti e-mail interattivi e dinamici con AMP in Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Email Design
+role: User
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-source-git-commit: ae7aa6989314677a839795e8caa8ba0f95009e09
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1499'
+source-wordcount: '1511'
 ht-degree: 4%
 
 ---
 
 # Definire il contenuto interattivo{#defining-interactive-content}
-
-
 
 Adobe Campaign consente di utilizzare il [AMP per e-mail](https://amp.dev/about/email/) che consente di inviare e-mail dinamiche, in determinate condizioni.
 
@@ -87,7 +86,7 @@ Per creare un’e-mail utilizzando il formato AMP, segui i passaggi indicati di 
 
    Ad esempio, puoi utilizzare il componente elenco prodotti dal modello AMP e gestire un elenco di prodotti da un sistema di terze parti, o anche all’interno di Adobe Campaign. Ogni volta che regoli un prezzo o un altro elemento, questo viene automaticamente visualizzato quando i destinatari aprono l’e-mail dalla loro cassetta postale.
 
-1. Personalizza il contenuto AMP in base alle esigenze, come solitamente faresti con il formato HTML in Adobe Campaign, con campi di personalizzazione e blocchi di personalizzazione.
+1. Personalizza il contenuto AMP in base alle esigenze, come faresti solitamente con il formato HTML in Adobe Campaign, con campi di personalizzazione e blocchi di personalizzazione.
 
    ![](assets/amp_tab_perso.png)
 

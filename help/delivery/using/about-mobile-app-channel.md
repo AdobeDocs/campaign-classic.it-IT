@@ -2,20 +2,19 @@
 product: campaign
 title: Guida introduttiva al canale app mobile
 description: Introduzione al canale app mobile in Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Push
+role: User
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '677'
 ht-degree: 2%
 
 ---
 
 # Guida introduttiva al canale app mobile{#about-mobile-app-channel}
-
-
 
 Il **Canale app mobile** consente di utilizzare la piattaforma Adobe Campaign per inviare notifiche push personalizzate ai terminali iOS e Android tramite app.
 
@@ -27,11 +26,11 @@ Sono disponibili due canali di consegna:
 
 * Canale iOS che consente di inviare notifiche ai dispositivi mobili Apple.
 
-   ![](assets/nmac_intro_2.png)
+  ![](assets/nmac_intro_2.png)
 
 * Canale Android che consente di inviare messaggi di dati a dispositivi mobili Android.
 
-   ![](assets/nmac_intro_1.png)
+  ![](assets/nmac_intro_1.png)
 
 Corrispondente a questi due canali, nei flussi di lavoro delle campagne sono presenti due attività di consegna:
 
@@ -51,7 +50,6 @@ Corrispondente a questi due canali, nei flussi di lavoro delle campagne sono pre
 >
 >* È necessario assicurarsi che le notifiche inviate a un’app mobile siano conformi ai prerequisiti e alle condizioni specificati da Apple (Apple Push Notification Service) e Google (Firebase Cloud Messaging).
 >* Avvertenza: in alcuni paesi, la legge richiede che tu informi gli utenti del tipo di dati raccolto dalle app mobili e dello scopo del loro trattamento. Dovete controllare la legislazione.
-
 
 Il **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) il flusso di lavoro aggiorna gli annullamenti degli abbonamenti alle notifiche sui dispositivi mobili. Per ulteriori informazioni su questo flusso di lavoro, consulta [elenco dei flussi di lavoro tecnici](../../workflow/using/about-technical-workflows.md).
 
@@ -92,15 +90,15 @@ Per verificare che funzioni correttamente, utilizza i seguenti comandi:
 
 * Per i test:
 
-   ```
-   api.development.push.apple.com:443
-   ```
+  ```
+  api.development.push.apple.com:443
+  ```
 
 * In produzione:
 
-   ```
-   api.push.apple.com:443
-   ```
+  ```
+  api.push.apple.com:443
+  ```
 
 Con il connettore iOS HTTP/2, l’MTA e il server web devono essere in grado di contattare gli APN sulla porta 443.
 

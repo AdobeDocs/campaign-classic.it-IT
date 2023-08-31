@@ -2,13 +2,14 @@
 product: campaign
 title: Consegne di campagne di marketing
 description: Ulteriori informazioni sulle consegne delle campagne di marketing
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+role: User
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1487'
-ht-degree: 3%
+source-wordcount: '1494'
+ht-degree: 4%
 
 ---
 
@@ -18,7 +19,7 @@ Le consegne possono essere create tramite il dashboard della campagna, un flusso
 
 Quando vengono create da una campagna, le consegne verranno collegate a questa campagna e consolidate a livello di campagna.
 
-![](assets/do-not-localize/how-to-video.png)[ Scopri questa funzione nel video](#create-email-video)
+![](assets/do-not-localize/how-to-video.png)[Scopri questa funzione nel video](#create-email-video)
 
 ## Creare consegne {#creating-deliveries}
 
@@ -68,32 +69,32 @@ Per ulteriori informazioni, consulta [Approvare un file di estrazione](../../cam
 
 * Una volta approvato il file di estrazione, puoi generare la bozza dell’e-mail di notifica del router. Questo messaggio e-mail è costruito in base a un modello di consegna. Deve essere approvato.
 
-   >[!NOTE]
-   >
-   >Questo passaggio è disponibile solo se l’invio e l’approvazione delle bozze sono stati abilitati nella finestra approvazioni.
+  >[!NOTE]
+  >
+  >Questo passaggio è disponibile solo se l’invio e l’approvazione delle bozze sono stati abilitati nella finestra approvazioni.
 
 ![](assets/s_ncs_user_file_valid_select_BAT.png)
 
 
 * Fai clic su **[!UICONTROL Send a proof]** per creare le bozze.
 
-   Il target della bozza deve essere definito in anticipo.
+  Il target della bozza deve essere definito in anticipo.
 
-   Puoi creare tutte le bozze necessarie. Per accedervi, utilizza **[!UICONTROL Direct mail...]** collegamento dei dettagli della consegna.
+  Puoi creare tutte le bozze necessarie. Per accedervi, utilizza **[!UICONTROL Direct mail...]** collegamento dei dettagli della consegna.
 
-   ![](assets/s_ncs_user_file_notif_submit_proof.png)
+  ![](assets/s_ncs_user_file_notif_submit_proof.png)
 
 * Lo stato della consegna cambia in **[!UICONTROL To submit]**. Fai clic su **[!UICONTROL Submit proofs]** per avviare il processo di approvazione.
 
-   ![](assets/s_ncs_user_file_notif_submit_proof_validation.png)
+  ![](assets/s_ncs_user_file_notif_submit_proof_validation.png)
 
 * Lo stato della consegna cambia in **[!UICONTROL Proof to validate]** e un pulsante ti consente di accettare o rifiutare l’approvazione.
 
-   ![](assets/s_ncs_user_file_notif_supplier_link.png)
+  ![](assets/s_ncs_user_file_notif_supplier_link.png)
 
-   Puoi accettare o rifiutare questa approvazione oppure tornare al passaggio di estrazione.
+  Puoi accettare o rifiutare questa approvazione oppure tornare al passaggio di estrazione.
 
-   ![](assets/s_ncs_user_file_notif_supplier_link_confirm.png)
+  ![](assets/s_ncs_user_file_notif_supplier_link_confirm.png)
 
 * Il file di estrazione viene inviato al router e la consegna è terminata.
 
@@ -103,11 +104,11 @@ L&#39;estrazione del file avvia due operazioni: il calcolo del budget e il calco
 
 * Il **[!UICONTROL Budget]** consente di gestire i budget per la campagna. Il totale delle voci di costo è indicato nella **[!UICONTROL Calculates cost]** della scheda principale della campagna e il programma a cui appartiene. Gli importi sono riportati anche nel bilancio della campagna.
 
-   Il costo reale verrà calcolato in base alle informazioni fornite dal router. Solo i messaggi effettivamente inviati vengono fatturati.
+  Il costo reale verrà calcolato in base alle informazioni fornite dal router. Solo i messaggi effettivamente inviati vengono fatturati.
 
 * Le scorte sono definite nella **[!UICONTROL Administration > Campaign management > Stocks]** nodo della struttura e strutture dei costi nel **[!UICONTROL Administration > Campaign management > Service providers]** nodo.
 
-   Le linee del grezzo sono visibili nella sezione del grezzo. Per definire il materiale iniziale, aprire una linea del materiale. Le scorte vengono diminuite ogni volta che si verifica una consegna. Puoi definire un livello di avviso e le notifiche.
+  Le linee del grezzo sono visibili nella sezione del grezzo. Per definire il materiale iniziale, aprire una linea del materiale. Le scorte vengono diminuite ogni volta che si verifica una consegna. Puoi definire un livello di avviso e le notifiche.
 
 >[!NOTE]
 >
@@ -190,19 +191,19 @@ Una struttura può contenere elementi e campi di personalizzazione, risorse e of
 * Gli elementi possono essere, ad esempio, documenti fisici a cui viene fatto riferimento e che vengono descritti qui e che verranno allegati alla consegna.
 * I campi di personalizzazione ti consentono di creare elementi di personalizzazione relativi alle consegne anziché ai destinatari. È quindi possibile creare valori da utilizzare nelle consegne per un target specifico (offerta di benvenuto, uno sconto, ecc.) Vengono creati in Adobe Campaign e importati nella struttura tramite **[!UICONTROL Import personalization fields...]** collegamento.
 
-   ![](assets/s_ncs_user_op_add_composition_field.png)
+  ![](assets/s_ncs_user_op_add_composition_field.png)
 
-   È inoltre possibile crearli direttamente nella struttura facendo clic sul pulsante **[!UICONTROL Add]** a destra della zona elenco.
+  È inoltre possibile crearli direttamente nella struttura facendo clic sul pulsante **[!UICONTROL Add]** a destra della zona elenco.
 
-   ![](assets/s_ncs_user_op_add_composition_field_button.png)
+  ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
 * Le risorse sono risorse di marketing generate nel dashboard delle risorse di marketing a cui si accede tramite **[!UICONTROL Resources]** collegamento del **[!UICONTROL Campaigns]** scheda.
 
-   ![](assets/s_ncs_user_mkg_resource_ovv.png)
+  ![](assets/s_ncs_user_mkg_resource_ovv.png)
 
-   >[!NOTE]
-   >
-   >Per ulteriori informazioni sulle risorse di marketing, consulta [Gestione delle risorse di marketing](../../mrm/using/managing-marketing-resources.md).
+  >[!NOTE]
+  >
+  >Per ulteriori informazioni sulle risorse di marketing, consulta [Gestione delle risorse di marketing](../../mrm/using/managing-marketing-resources.md).
 
 #### Seleziona una struttura {#selecting-an-outline}
 

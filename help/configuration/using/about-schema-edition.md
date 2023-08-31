@@ -2,13 +2,14 @@
 product: campaign
 title: Informazioni sulla modifica degli schemi
 description: Introduzione alla modifica degli schemi
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Schema Extension
+role: Data Engineer, Developer
 exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1004'
-ht-degree: 7%
+source-wordcount: '1011'
+ht-degree: 8%
 
 ---
 
@@ -133,7 +134,7 @@ L’elenco completo degli attributi è disponibile nella sezione [`<attribute>` 
 * **@xml**
 * **@tipo**
 
-   Per visualizzare una tabella che elenca i mapping per i tipi di dati generati da Adobe Campaign per i diversi sistemi di gestione del database, fare riferimento alla [Mappatura dei tipi di dati Adobe Campaign/DBMS](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) sezione.
+  Per visualizzare una tabella che elenca i mapping per i tipi di dati generati da Adobe Campaign per i diversi sistemi di gestione del database, fare riferimento alla [Mappatura dei tipi di dati Adobe Campaign/DBMS](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) sezione.
 
 Per ulteriori informazioni su ciascun attributo, consultare [Descrizione attributo](../../configuration/using/schema/attribute.md) sezione.
 

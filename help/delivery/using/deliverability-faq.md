@@ -5,8 +5,9 @@ description: Scopri i punti chiave da verificare durante la gestione del recapit
 badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Deliverability, Troubleshooting
+role: User
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 2%
@@ -14,8 +15,6 @@ ht-degree: 2%
 ---
 
 # Risoluzione dei problemi di recapito{#deliverability-faq}
-
-
 
 Si è verificato un problema di recapito messaggi? La soluzione potrebbe essere disponibile qui.
 

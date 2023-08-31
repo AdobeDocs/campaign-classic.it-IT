@@ -2,20 +2,19 @@
 product: campaign
 title: Definire la consegna finale
 description: Scopri come eseguire il test A/B tramite un caso d’uso dedicato
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: A/B Testing
+role: User
 exl-id: bc23a444-a872-48fb-8bba-64b301541089
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 9%
+source-wordcount: '122'
+ht-degree: 6%
 
 ---
 
-# Definire la consegna finale {#step-6--defining-the-final-delivery}
-
-
+# Test AB: definire la consegna finale {#step-6--defining-the-final-delivery}
 
 Una volta creato lo script per selezionare il vincitore del test A/B, puoi definire i parametri della consegna finale.
 

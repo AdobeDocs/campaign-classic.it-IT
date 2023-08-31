@@ -5,8 +5,9 @@ description: Ulteriori informazioni sulle prestazioni di consegna e su come riso
 badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Monitoring, Deliverability, Troubleshooting
+role: User
 exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 1%
@@ -14,8 +15,6 @@ ht-degree: 1%
 ---
 
 # Risoluzione dei problemi di invio della consegna {#delivery-troubleshooting}
-
-
 
 In questa sezione sono elencati i problemi comuni che possono verificarsi durante l’invio delle consegne e come risolverli.
 

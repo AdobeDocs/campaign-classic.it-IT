@@ -2,13 +2,14 @@
 product: campaign
 title: Monitoraggio delle campagne di marketing
 description: Monitoraggio delle campagne di marketing
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+role: User
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Campaigns, Monitoring
 exl-id: c2b523ac-e900-4db8-85b0-dafc6ddb3eca
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 2%
+source-wordcount: '252'
+ht-degree: 4%
 
 ---
 
@@ -20,19 +21,19 @@ Per ogni campagna, il **[!UICONTROL Tracking]** Questa scheda consente di visual
 
 * Il giornale di registrazione attività mostra i processi eseguiti sulla campagna in generale: creazione o avvio del flusso di lavoro, approvazione, estrazione, ecc.
 
-   ![](assets/s_ncs_user_op_edit_exe_tab_a.png)
+  ![](assets/s_ncs_user_op_edit_exe_tab_a.png)
 
 * Il **[!UICONTROL Deliveries]** scheda secondaria contiene tutte le consegne della campagna che possono essere modificate da questa vista. A questo scopo, seleziona la consegna e fai clic sul pulsante **[!UICONTROL Detail]** icona.
 
-   ![](assets/s_ncs_user_op_edit_exe_tab_b.png)
+  ![](assets/s_ncs_user_op_edit_exe_tab_b.png)
 
 * Il **[!UICONTROL Tasks]** scheda secondaria raggruppa tutte le attività collegate alla campagna. Questa visualizzazione consente di modificarli o eliminarli. Le attività sono disponibili con l&#39;applicazione MRM. Sono descritte in dettaglio [questa sezione](../../mrm/using/creating-and-managing-tasks.md).
 
-   ![](assets/s_ncs_user_op_edit_exe_tab_e.png)
+  ![](assets/s_ncs_user_op_edit_exe_tab_e.png)
 
 * I flussi di lavoro creati per generare messaggi per i provider di servizi vengono visualizzati nella sezione **[!UICONTROL Jobs on service providers]** scheda secondaria. Fai clic su **[!UICONTROL Detail]** per visualizzare il workflow selezionato.
 
-   ![](assets/s_ncs_user_op_edit_exe_tab_d.png)
+  ![](assets/s_ncs_user_op_edit_exe_tab_d.png)
 
 ## Tracciamento della consegna {#delivery-tracking}
 

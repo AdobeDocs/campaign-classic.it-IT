@@ -2,20 +2,19 @@
 product: campaign
 title: Controllare prima dell’invio
 description: Quando il messaggio è pronto, esegui tutti i controlli prima di inviarlo
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Deliverability
+role: User
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 4%
+source-wordcount: '904'
+ht-degree: 7%
 
 ---
 
 # Esegui tutti i controlli prima dell’invio {#perform-all-checks}
-
-
 
 Quando il messaggio è pronto, accertati che il suo contenuto sia visualizzato correttamente, su tutti i dispositivi, e non contenga errori quali personalizzazione errata o collegamenti interrotti.
 
@@ -39,13 +38,13 @@ Il rendering della casella in entrata consente di visualizzare in anteprima i me
 
 * Le funzionalità di rendering della casella in entrata sono fondamentali per identificare se le campagne e-mail sono riuscite a superare i filtri dei principali ISP (provider di servizi Internet) e servizi di posta sul web. Tali strumenti inviano una copia pre-volo di un’e-mail a una rete di caselle in entrata di prova, in modo da poter vedere come verrà visualizzato il messaggio o come verrà eseguito il rendering tra questi servizi. Possono inoltre includere rapporti e opzioni di correzione del codice che consentono di identificare rapidamente e apportare correzioni che migliorano il recapito messaggi.
 
-Ulteriori informazioni [in questa sezione](inbox-rendering.md).
+Per ulteriori informazioni, consulta [questa sezione](inbox-rendering.md).
 
 ## Messaggi di bozza {#proof-messages}
 
 L’invio di bozze ti consente di controllare il collegamento di rinuncia, la pagina speculare e tutti gli altri collegamenti, convalidare il messaggio, verificare che siano visualizzate le immagini, rilevare eventuali errori, ecc. Puoi anche controllare la progettazione e il rendering su dispositivi diversi.
 
-Ulteriori informazioni [in questa sezione](steps-validating-the-delivery.md#sending-a-proof).
+Per ulteriori informazioni, consulta [questa sezione](steps-validating-the-delivery.md#sending-a-proof).
 
 ## Configurare le consegne dei test A/B {#a-b-testing-deliveries}
 
@@ -57,7 +56,7 @@ Se disponi di diversi contenuti per una consegna e-mail, puoi utilizzare il test
 
 * Seleziona quello con il tasso di successo più alto e invialo al resto della destinazione
 
-Ulteriori informazioni [in questa sezione](get-started-a-b-testing.md).
+Per ulteriori informazioni, consulta [questa sezione](get-started-a-b-testing.md).
 
 ## Assicurati che il messaggio sia consegnato {#make-sure-your-message-is-delivered}
 
@@ -65,11 +64,11 @@ Come ultimo passo, massimizza le opportunità e sfrutta la potenza di Adobe Camp
 
 ### Seguire un processo di convalida
 
-Puoi definire un processo di convalida completo, che coinvolga operatori e gruppi di Adobe Campaign, per convalidare sia il contenuto di destinazione che quello del messaggio. Ciò garantirà il monitoraggio e il controllo completo dei vari processi della campagna: targeting, contenuto, budget, estrazione e invio di una bozza. A seconda delle autorizzazioni, gli utenti riceveranno una notifica, riceveranno delle bozze e saranno in grado di convalidare o rifiutare il messaggio. Ulteriori informazioni [in questa sezione](../../campaign/using/marketing-campaign-approval.md).
+Puoi definire un processo di convalida completo, che coinvolga operatori e gruppi di Adobe Campaign, per convalidare sia il contenuto di destinazione che quello del messaggio. Ciò garantirà il monitoraggio e il controllo completo dei vari processi della campagna: targeting, contenuto, budget, estrazione e invio di una bozza. A seconda delle autorizzazioni, gli utenti riceveranno una notifica, riceveranno delle bozze e saranno in grado di convalidare o rifiutare il messaggio. Per ulteriori informazioni, consulta [questa sezione](../../campaign/using/marketing-campaign-approval.md).
 
 ### Usa ondate
 
-È possibile aumentare progressivamente il volume inviato mediante scaglioni. In questo modo i messaggi non verranno contrassegnati come spam o quando desideri limitare il numero di messaggi al giorno. Utilizzando le scaglioni è possibile suddividere le consegne in più batch anziché inviare contemporaneamente volumi elevati di messaggi. Ulteriori informazioni [in questa sezione](steps-sending-the-delivery.md#sending-using-multiple-waves).
+È possibile aumentare progressivamente il volume inviato mediante scaglioni. In questo modo i messaggi non verranno contrassegnati come spam o quando desideri limitare il numero di messaggi al giorno. Utilizzando le scaglioni è possibile suddividere le consegne in più batch anziché inviare contemporaneamente volumi elevati di messaggi. Per ulteriori informazioni, consulta [questa sezione](steps-sending-the-delivery.md#sending-using-multiple-waves).
 
 ### Assegnare priorità ai messaggi
 
@@ -87,7 +86,7 @@ Puoi impostare l’ordine di invio per le consegne indicando il livello di prior
 
 Per controllare meglio il traffico SMTP in uscita, puoi gestire le affinità definendo quali indirizzi IP specifici possono essere utilizzati per ogni affinità. Questo ti consente di limitare il numero di e-mail per consegne specifiche a computer o indirizzi di output. Ad esempio, puoi utilizzare un’affinità per paese o sottodominio. Puoi quindi creare una tipologia per paese e collegare ogni affinità alla tipologia corrispondente.
 
-È possibile eseguire le seguenti operazioni:
+Puoi:
 
 * Definisci le affinità IP nel file di configurazione serverConf.xml. [Ulteriori informazioni](../../installation/using/configuring-campaign-server.md#managing-outbound-smtp-traffic-with-affinities)
 

@@ -3,10 +3,11 @@ product: campaign
 title: Modificare i moduli
 description: Modificare i moduli
 feature: Configuration
+role: Data Engineer, Developer
 badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '1710'
 ht-degree: 2%
@@ -15,8 +16,6 @@ ht-degree: 2%
 
 
 # Modificare i moduli{#editing-forms}
-
-
 
 ## Panoramica
 

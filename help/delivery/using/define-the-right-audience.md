@@ -2,20 +2,19 @@
 product: campaign
 title: Definire il pubblico adatto
 description: Scopri le best practice per la selezione del pubblico
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Audiences
+role: User
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 4%
+source-wordcount: '499'
+ht-degree: 6%
 
 ---
 
 # Definire il pubblico adatto {#define-the-right-audience}
-
-
 
 La popolazione target è fondamentale: crea i tuoi elenchi con attenzione, testa le e-mail sui client e-mail e sui dispositivi mobili più diffusi e assicurati che i tuoi elenchi e-mail siano aggiornati (senza indirizzi sconosciuti o obsoleti). Puoi anche inviare bozze utili per impostare un ciclo di convalida completo.
 
@@ -39,11 +38,11 @@ Puoi anche creare e utilizzare una mappatura di destinazione personalizzata. Per
 
 ## Destinatari esterni {#external-recipients}
 
-Puoi consegnare a destinatari memorizzati in un file esterno anziché salvati nel database. Ulteriori informazioni [in questa sezione](steps-defining-the-target-population.md#selecting-external-recipients).
+Puoi consegnare a destinatari memorizzati in un file esterno anziché salvati nel database. Per ulteriori informazioni, consulta [questa sezione](steps-defining-the-target-population.md#selecting-external-recipients).
 
 ## Invia ai tuoi abbonati {#send-to-subscribers}
 
-Per inviare messaggi agli abbonati di una newsletter, puoi indirizzare direttamente questi ultimi al servizio di informazioni corrispondente. Ulteriori informazioni [in questa sezione](managing-subscriptions.md#delivering-to-the-subscribers-of-a-service).
+Per inviare messaggi agli abbonati di una newsletter, puoi indirizzare direttamente questi ultimi al servizio di informazioni corrispondente. Per ulteriori informazioni, consulta [questa sezione](managing-subscriptions.md#delivering-to-the-subscribers-of-a-service).
 
 
 ## Destinatari di test e indirizzi seed {#test-recipients-seed-addresses}

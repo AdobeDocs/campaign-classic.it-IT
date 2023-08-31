@@ -2,13 +2,14 @@
 product: campaign
 title: Accedere alle campagne di marketing
 description: Accedere alle campagne di marketing
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+role: User
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Campaigns, Cross Channel Orchestration
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1199'
-ht-degree: 3%
+source-wordcount: '1206'
+ht-degree: 4%
 
 ---
 
@@ -71,13 +72,13 @@ Durante la modifica di un programma, utilizza le schede descritte di seguito per
 
 * Il **Pianificazione** scheda visualizza il calendario dei programmi per un mese, una settimana o un giorno, a seconda della scheda su cui si fa clic nell&#39;intestazione del calendario.
 
-   Se necessario, puoi creare una campagna, un programma o un’attività tramite questa pagina.
+  Se necessario, puoi creare una campagna, un programma o un’attività tramite questa pagina.
 
-   ![](assets/s_ncs_user_interface_campaign02.png)
+  ![](assets/s_ncs_user_interface_campaign02.png)
 
 * Il **Modifica** Questa scheda ti permette di personalizzare il programma: nome, date di inizio e fine, budget, documenti collegati, ecc.
 
-   ![](assets/s_ncs_user_interface_campaign05.png)
+  ![](assets/s_ncs_user_interface_campaign05.png)
 
 #### Navigazione nelle campagne {#browsing-campaigns}
 

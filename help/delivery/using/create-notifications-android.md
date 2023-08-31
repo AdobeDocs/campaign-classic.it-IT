@@ -2,19 +2,18 @@
 product: campaign
 title: Creare una notifica push per dispositivi Android
 description: Scopri come creare notifiche push per Android
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Push
+role: User, Developer, Data Engineer
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 1%
+source-wordcount: '720'
+ht-degree: 18%
 
 ---
 
 # Creare notifiche per Android{#create-notificaations-android}
-
-
 
 Utilizza Adobe Campaign per inviare notifiche push su dispositivi Android. I concetti globali sulla creazione della consegna sono presentati in [questa sezione](steps-about-delivery-creation-steps.md).
 
@@ -25,10 +24,10 @@ Inizia creando una nuova consegna.
 Con Firebase Cloud Messaging puoi scegliere tra due tipi di messaggi:
 
 * **[!UICONTROL Data message]**, gestito dall&#39;app client.
-   <br>I messaggi vengono inviati direttamente all’app mobile che genererà e visualizzerà la notifica Android al dispositivo. I messaggi di dati contengono solo variabili dell’applicazione personalizzate.
+  <br>I messaggi vengono inviati direttamente all’app mobile che genererà e visualizzerà la notifica Android al dispositivo. I messaggi di dati contengono solo variabili dell’applicazione personalizzate.
 
 * **[!UICONTROL Notification message]**, gestito automaticamente dall’SDK FCM.
-   <br> FCM visualizza automaticamente il messaggio sui dispositivi degli utenti per conto dell’app client. I messaggi di notifica contengono un set predefinito di parametri e opzioni, ma possono ancora essere personalizzati con variabili di applicazione personalizzate.
+  <br>FCM mostra automaticamente il messaggio sui dispositivi degli utenti per conto dell’app client. I messaggi di notifica contengono un set predefinito di parametri e opzioni, ma possono ancora essere personalizzati con variabili di applicazione personalizzate.
 
 Per ulteriori informazioni sui tipi di messaggi Firebase Cloud Messaging, consulta [Documentazione FCM](https://firebase.google.com/docs/cloud-messaging/concept-options#notifications_and_data_messages).
 
@@ -98,7 +97,7 @@ L’immagine e la pagina web devono essere visualizzate nella notifica push quan
 1. Aggiungi un titolo e modifica il messaggio. Personalizzare la notifica push con **[!UICONTROL Notification options]**:
 
    * **[!UICONTROL Channel ID]**: imposta l’ID canale della notifica. L’app deve creare un canale con questo ID canale prima di ricevere qualsiasi notifica con questo ID canale.
-   * **[!UICONTROL Sound]**: consente di impostare l&#39;audio da riprodurre quando il dispositivo riceve la notifica.
+   * **[!UICONTROL Sound]**: Imposta l’audio da riprodurre quando il dispositivo riceve la notifica.
    * **[!UICONTROL Color]**: imposta il colore dell’icona della notifica.
    * **[!UICONTROL Icon]**: imposta l’icona della notifica da visualizzare sui dispositivi dei profili.
    * **[!UICONTROL Tag]**: imposta l’identificatore utilizzato per sostituire le notifiche esistenti nel cassetto delle notifiche.
@@ -114,8 +113,8 @@ L’immagine e la pagina web devono essere visualizzate nella notifica push quan
    * **[!UICONTROL Image]**: imposta l’URL dell’immagine da visualizzare nella notifica.
    * **[!UICONTROL Notification Count]**: imposta il numero di nuove informazioni non lette da visualizzare direttamente sull’icona dell’applicazione.
    * **[!UICONTROL Sticky]**: impostato su true o false. Se impostato su false, la notifica viene automaticamente ignorata quando l’utente fa clic su di essa. Se impostato su true, la notifica viene comunque visualizzata anche quando l’utente fa clic su di essa.
-   * **[!UICONTROL Notification Priority]**: imposta i livelli di priorità della notifica su predefinito, minimo, basso o alto. Per ulteriori informazioni, consulta [Documentazione FCM](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#NotificationPriority).
-   * **[!UICONTROL Visibility]**: imposta i livelli di visibilità della notifica su pubblico, privato o segreto. Per ulteriori informazioni, consulta [Documentazione FCM](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#visibility).
+   * **[!UICONTROL Notification Priority]**: imposta i livelli di priorità della notifica su predefinito, minimo, basso o alto. Per ulteriori informazioni, consulta la [documentazione FCM ](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#NotificationPriority).
+   * **[!UICONTROL Visibility]**: imposta i livelli di visibilità della notifica su pubblico, privato o segreto. Per ulteriori informazioni, consulta la [documentazione FCM ](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#visibility).
 
    Per ulteriori informazioni su **[!UICONTROL HTTP v1 additional options]** e come compilare questi campi, consulta [Documentazione FCM](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification).
 

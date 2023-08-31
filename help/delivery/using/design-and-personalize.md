@@ -2,20 +2,19 @@
 product: campaign
 title: Creare contenuti personalizzati
 description: Scopri come creare contenuti personalizzati nelle consegne di Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Email Design, Personalization
+role: User
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1288'
-ht-degree: 7%
+source-wordcount: '1300'
+ht-degree: 8%
 
 ---
 
 # Creare contenuti personalizzati {#build-personalized-content}
-
-
 
 Durante la progettazione del contenuto del messaggio, cerca di evitare problemi comuni che potrebbero impedirti di eseguire la consegna. Nella maggior parte dei casi, i possibili errori sono correlati a [personalizzazione](about-personalization.md), [formattazione](defining-the-email-content.md#message-content) e [immagini](defining-the-email-content.md#adding-images).
 
@@ -97,7 +96,7 @@ Assicurati di verificare eventuali modifiche prima dell’invio finale
 Per impostazione predefinita, il numero di caratteri in un SMS soddisfa gli standard GSM (Global System for Mobile Communications). I messaggi SMS che utilizzano la codifica GSM sono limitati a 160 caratteri o 153 caratteri per SMS per messaggi inviati in più parti.
 
 La traslitterazione consiste nel sostituire un carattere di un SMS con un altro quando quel carattere non è preso in considerazione dallo standard GSM. L’inserimento di campi di personalizzazione nel contenuto del messaggio SMS potrebbe introdurre caratteri che non vengono presi in considerazione dalla codifica GSM. Puoi autorizzare la traslitterazione di caratteri selezionando la casella corrispondente nella scheda delle impostazioni del canale SMPP della **[!UICONTROL External account]**.
-Ulteriori informazioni [in questa sezione](sms-set-up.md#creating-an-smpp-external-account).
+Per ulteriori informazioni, consulta [questa sezione](sms-set-up.md#creating-an-smpp-external-account).
 
 **Suggerimenti**:
 
@@ -105,7 +104,7 @@ Ulteriori informazioni [in questa sezione](sms-set-up.md#creating-an-smpp-extern
 
 * Tuttavia, se i messaggi SMS contengono molti caratteri che non sono presi in considerazione dallo standard GSM, abilita la traslitterazione per limitare i costi di invio dei messaggi.
 
-Ulteriori informazioni [in questa sezione](sms-set-up.md#about-character-transliteration).
+Per ulteriori informazioni, consulta [questa sezione](sms-set-up.md#about-character-transliteration).
 
 ## Lavorare sulla formattazione {#formatting}
 

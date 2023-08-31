@@ -3,10 +3,11 @@ product: campaign
 title: Informazioni sulla tabella dei destinatari personalizzata
 description: Informazioni sulla tabella dei destinatari personalizzata
 feature: Configuration, Custom Resources
+role: User, Data Engineer, Developer
 badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 exl-id: d8cea496-b3f3-420a-bf6e-b7cbb321b30d
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 2%
@@ -15,11 +16,9 @@ ht-degree: 2%
 
 # Utilizzare una tabella dei destinatari personalizzata{#about-custom-recipient-table}
 
-
-
 Questa sezione descrive i principi per l’utilizzo di una tabella dei destinatari personalizzata (o esterna).
 
-Per impostazione predefinita, Adobe Campaign offre una tabella dei destinatari incorporata alla quale sono collegati le funzioni e i processi predefiniti. La tabella dei destinatari incorporata dispone di una serie di campi e tabelle predefiniti che possono essere facilmente estesi mediante una tabella delle estensioni.
+Per impostazione predefinita, Adobe Campaign offre una tabella dei destinatari incorporata alla quale sono collegati le funzioni e i processi predefiniti. La tabella dei destinatari incorporata dispone di una serie di campi e tabelle predefiniti che possono essere facilmente estesi utilizzando una tabella delle estensioni.
 
 Se questo metodo di estensione offre una buona flessibilità per estendere una tabella, non consente di ridurre il numero di campi o collegamenti presenti. L’utilizzo di una tabella non standard, o &quot;tabella dei destinatari esterna&quot;, offre una maggiore flessibilità ma richiede alcune precauzioni durante l’implementazione.
 

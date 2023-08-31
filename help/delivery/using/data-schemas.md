@@ -2,20 +2,19 @@
 product: campaign
 title: Utilizzare gli schemi di dati in Campaign
 description: Scopri come utilizzare gli schemi di dati in Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Data Model
+role: User, Developer, Data Engineer
 exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '570'
 ht-degree: 1%
 
 ---
 
 # Utilizzare gli schemi di dati in Campaign{#data-schemas}
-
-
 
 Di seguito sono riportati alcuni principi generali relativi all’utilizzo degli schemi di dati in Adobe Campaign.
 
@@ -23,7 +22,7 @@ Per ulteriori informazioni sulla creazione e la configurazione di schemi di dati
 
 ## Struttura dello schema {#schema-structure}
 
-Il documento XML di uno schema di dati deve contenere **`<srcschema>`** elemento principale con **nome** e **namespace** attributi per popolare il nome dello schema e il relativo spazio dei nomi.
+Il documento XML di uno schema dati deve contenere **`<srcschema>`** elemento principale con **nome** e **namespace** attributi per popolare il nome dello schema e il relativo spazio dei nomi.
 
 ```
 <srcSchema name="schema_name" namespace="namespace">

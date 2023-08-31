@@ -2,12 +2,13 @@
 product: campaign
 title: Descrizione del modello dati di Adobe Campaign Classic
 description: Questo documento descrive il modello dati di Adobe Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Data Model
+role: Data Engineer, Developer
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '2374'
+source-wordcount: '2381'
 ht-degree: 2%
 
 ---
@@ -265,7 +266,7 @@ Questo set di tabelle è collegato a **Gestione dei social network** che consent
 ![](assets/data-model_social.png)
 
 * **NmsVisitor**: questa tabella corrisponde a **nms:visitatore** schema. Contiene informazioni sui visitatori.
-* **NmsVisitorSub**: questa tabella corrisponde a **nms:visitorSub** schema. Consente di collegare un visitatore ai servizi a cui si è abbonato (Twitter o Facebook).
+* **NmsVisitorSub**: questa tabella corrisponde a **nms:visitorSub** schema. Ti consente di collegare un visitatore ai servizi a cui si è abbonato (Twitter o Facebook).
 * **NmsFriendShipRel**: questa tabella corrisponde a **nms:amiciziaRel** schema. Consente di collegare i visitatori con i loro amici nel contesto del servizio Facebook.
 * **NmsVisitorInterestRel**: questa tabella corrisponde a **nms:visitorInterestRel** schema. Consente di collegare i visitatori e i loro interessi.
 * **NmsInterest**: questa tabella corrisponde a **nms:interesse** schema. Contiene l’elenco degli interessi di ogni visitatore.

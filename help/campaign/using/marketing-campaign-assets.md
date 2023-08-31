@@ -2,12 +2,13 @@
 product: campaign
 title: Documenti della campagna di marketing e profili di consegna
 description: Ulteriori informazioni sui documenti della campagna di marketing e sui profili di consegna
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+role: User
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Campaigns
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '762'
 ht-degree: 1%
 
 ---
@@ -89,19 +90,19 @@ Una struttura può contenere elementi e campi di personalizzazione, risorse e of
 * Gli elementi possono essere, ad esempio, documenti fisici a cui viene fatto riferimento e che vengono descritti qui e che verranno allegati alla consegna.
 * I campi di personalizzazione ti consentono di creare elementi di personalizzazione relativi alle consegne anziché ai destinatari. È quindi possibile creare valori da utilizzare nelle consegne per un target specifico (offerta di benvenuto, uno sconto, ecc.) Vengono creati in Adobe Campaign e importati nella struttura tramite **[!UICONTROL Import personalization fields...]** collegamento.
 
-   ![](assets/s_ncs_user_op_add_composition_field.png)
+  ![](assets/s_ncs_user_op_add_composition_field.png)
 
-   È inoltre possibile crearli direttamente nella struttura facendo clic sul pulsante **[!UICONTROL Add]** a destra della zona elenco.
+  È inoltre possibile crearli direttamente nella struttura facendo clic sul pulsante **[!UICONTROL Add]** a destra della zona elenco.
 
-   ![](assets/s_ncs_user_op_add_composition_field_button.png)
+  ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
 * Le risorse sono risorse di marketing generate nel dashboard delle risorse di marketing a cui si accede tramite **[!UICONTROL Resources]** collegamento del **[!UICONTROL Campaigns]** scheda.
 
-   ![](assets/s_ncs_user_mkg_resource_ovv.png)
+  ![](assets/s_ncs_user_mkg_resource_ovv.png)
 
-   >[!NOTE]
-   >
-   >Per ulteriori informazioni sulle risorse di marketing, consulta [questa sezione](../../mrm/using/managing-marketing-resources.md).
+  >[!NOTE]
+  >
+  >Per ulteriori informazioni sulle risorse di marketing, consulta [questa sezione](../../mrm/using/managing-marketing-resources.md).
 
 ### Seleziona una struttura {#selecting-an-outline}
 
@@ -125,7 +126,7 @@ Nell’esempio seguente, l’etichetta, il costo stimato e la descrizione della 
 
 ![](assets/s_ncs_user_op_composition_in_export_template.png)
 
-Il modello di esportazione deve essere associato al fornitore di servizi selezionato per la consegna interessata. Vedi [questa sezione](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
+Il modello di esportazione deve essere associato al fornitore di servizi selezionato per la consegna interessata. Consulta [questa sezione](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
 >[!NOTE]
 >

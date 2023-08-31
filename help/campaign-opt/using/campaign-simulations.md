@@ -2,13 +2,14 @@
 product: campaign
 title: Simulazioni delle campagne
 description: Introduzione alle simulazioni di Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+role: User, Data Engineer
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Campaigns
 exl-id: 709c64a8-34bf-43fa-a820-238295fb26b8
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1245'
-ht-degree: 1%
+source-wordcount: '1252'
+ht-degree: 2%
 
 ---
 
@@ -34,7 +35,7 @@ La simulazione consente di monitorare e confrontare l’impatto delle consegne.
 
 Per creare una simulazione, attieniti alla seguente procedura:
 
-1. Apri **[!UICONTROL Campaigns]** , fare clic sulla scheda **[!UICONTROL More]** collegamento all&#39;interno del **[!UICONTROL Create]** e seleziona la sezione **[!UICONTROL Simulation]** opzione.
+1. Apri **[!UICONTROL Campaigns]** , fare clic sulla scheda **[!UICONTROL More]** collegamento all&#39;interno del **[!UICONTROL Create]** e seleziona la **[!UICONTROL Simulation]** opzione.
 
    ![](assets/simu_campaign_opti_01.png)
 
@@ -113,9 +114,9 @@ Al termine dell’esecuzione, apri la simulazione e fai clic su **[!UICONTROL Re
    * Il **[!UICONTROL Initial count]** è il target calcolato durante la stima nella consegna.
    * Il **[!UICONTROL Final count]** è il numero di destinatari conteggiati dopo la simulazione.
 
-      La differenza tra i conteggi iniziali e finali riflette l’applicazione delle varie regole o filtri configurati prima della simulazione.
+     La differenza tra i conteggi iniziali e finali riflette l’applicazione delle varie regole o filtri configurati prima della simulazione.
 
-      Per ulteriori informazioni su questo calcolo, modifica **[!UICONTROL Exclusions]** scheda secondaria.
+     Per ulteriori informazioni su questo calcolo, modifica **[!UICONTROL Exclusions]** scheda secondaria.
 
 1. Il **[!UICONTROL Exclusions]** scheda secondaria consente di visualizzare il raggruppamento di esclusione.
 
@@ -207,15 +208,15 @@ Nell’esempio seguente, vogliamo creare un asse di reporting aggiuntivo basato 
 
    * **[!UICONTROL Generate target overlap statistics]** consente di recuperare tutte le statistiche di sovrapposizione nel rapporto di simulazione. Le sovrapposizioni sono destinatari di almeno due consegne nell’ambito di una simulazione.
 
-      >[!IMPORTANT]
-      >
-      >Selezionando questa opzione si aumenta notevolmente il tempo di esecuzione della simulazione.
+     >[!IMPORTANT]
+     >
+     >Selezionando questa opzione si aumenta notevolmente il tempo di esecuzione della simulazione.
 
    * **[!UICONTROL Keep the simulation work table]** consente di conservare le tracce della simulazione.
 
-      >[!IMPORTANT]
-      >
-      >Il salvataggio automatico di queste tabelle richiede una capacità di archiviazione significativa: assicurati che il database sia sufficientemente grande.
+     >[!IMPORTANT]
+     >
+     >Il salvataggio automatico di queste tabelle richiede una capacità di archiviazione significativa: assicurati che il database sia sufficientemente grande.
 
 Quando vengono visualizzati i risultati della simulazione, le informazioni sull’espressione selezionata vengono visualizzate nel **[!UICONTROL Overlaps]** scheda secondaria.
 

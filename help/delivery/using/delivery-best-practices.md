@@ -2,19 +2,19 @@
 product: campaign
 title: Best practice per la consegna delle campagne
 description: Scopri le best practice per la progettazione e l’invio di una consegna
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Deliverability
+role: User
 exl-id: eb5ad5a4-f640-4b26-b04f-b5567761d996
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 29%
+source-wordcount: '115'
+ht-degree: 27%
 
 ---
 
 # Best practice per la consegna {#delivery-best-practices}
-
 
 
 Scopri le best practice relative alla progettazione della consegna e all’invio con Adobe Campaign. Utilizza i collegamenti riportati di seguito per consultare gli argomenti e trovare indicazioni.

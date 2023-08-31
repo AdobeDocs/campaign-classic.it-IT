@@ -2,20 +2,19 @@
 product: campaign
 title: Informazioni sugli indirizzi seed
 description: Introduzione agli indirizzi di seed
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Seed Address
+role: User
 exl-id: 1f55eda8-c393-4f86-9118-01bcd981c6df
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 8%
+source-wordcount: '391'
+ht-degree: 9%
 
 ---
 
 # Informazioni sugli indirizzi seed{#about-seed-addresses}
-
-
 
 Gli indirizzi di seed vengono utilizzati per eseguire il targeting di destinatari che non corrispondono ai criteri di target definiti. In questo modo, i destinatari che non rientrano nell’ambito di consegna possono ricevere la consegna, come farebbe qualsiasi altro destinatario.
 
@@ -48,4 +47,3 @@ Per le consegne di direct mailing, gli indirizzi di seed vengono aggiunti durant
 >* Non deve utilizzare l’opzione **[!UICONTROL Handle groupings (GROUP BY+HAVING)]**.
 >* Se le raccolte di elementi vengono estratte, questi campi avranno un valore vuoto per gli indirizzi di seed, a meno che **[!UICONTROL Single row (expert user)]** è selezionata. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/executing-export-jobs.md#step-7---data-formatting).
 >
-

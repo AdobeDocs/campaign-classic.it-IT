@@ -2,20 +2,19 @@
 product: campaign
 title: Introduzione al recapito messaggi in Campaign
 description: Scopri le best practice per la consegna dei messaggi
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Deliverability
+role: User
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 8%
+source-wordcount: '736'
+ht-degree: 9%
 
 ---
 
 # Che cos’è il recapito messaggi{#about-deliverability}
-
-
 
 Il recapito messaggi consente di misurare il successo delle campagne che raggiungono la casella in entrata dei destinatari senza che vengano saltati o contrassegnati come spam. [Scopri perché il recapito messaggi è importante](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html#why-deliverability-matters).
 
@@ -74,7 +73,7 @@ Per ulteriori informazioni sulle best practice per la raccolta di dati dai clien
 
 ### Gestione della quarantena
 
-Adobe Campaign gestisce un elenco che raccoglie i reclami e i mancati recapiti non permanenti, nonché i mancati recapiti non permanenti che si verificano in modo coerente.
+Adobe Campaign gestisce un elenco che raccoglie i reclami e i mancati recapiti non recapitati di posta indesiderata, i mancati recapiti permanenti e i mancati recapiti non permanenti che si verificano in modo coerente.
 
 Per proteggere il recapito messaggi, i destinatari i cui indirizzi sono in tale elenco sono esclusi per impostazione predefinita da tutte le consegne future, perché l’invio a questi contatti potrebbe danneggiare la reputazione del mittente.
 

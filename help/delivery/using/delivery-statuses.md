@@ -2,13 +2,14 @@
 product: campaign
 title: Stati di consegna
 description: Ulteriori informazioni sugli stati disponibili nel dashboard di consegna
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Monitoring, Deliverability
+role: User
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '644'
 ht-degree: 8%
 
 ---
@@ -52,7 +53,7 @@ Per ulteriori dettagli sui diversi errori di consegna riscontrabili e su come ri
    <td> La consegna non è stata inviata al destinatario a causa di un errore con il suo indirizzo. È stato o messo in quarantena al elenco Bloccati, non fornito o duplicato. <br /> </td> 
   </tr> 
   <tr> 
-   <td> Operazione non riuscita<br /> </td> 
+   <td> Non riuscito<br /> </td> 
    <td> La consegna non è riuscita a raggiungere il destinatario a causa, ad esempio, di un indirizzo non valido o di una casella in entrata completa. Può anche essere collegato a un problema con i blocchi di personalizzazione, in quanto possono generare errori quando gli schemi non corrispondono alla mappatura della consegna. Consulta <a href="understanding-delivery-failures.md" target="_blank">Informazioni sugli errori di consegna</a><br /> </td> 
   </tr>
   <tr> 
@@ -99,11 +100,11 @@ Se la consegna non viene inviata e il suo stato rimane **[!UICONTROL Pending]**,
 
 * L’MTA (Message Transfer Agent), che esegue moduli e processi sul server di consegna e gestisce l’invio di e-mail, potrebbe non essere stato avviato o potrebbe essere necessario riavviarlo.
 
-   Per verificare e avviare il modulo, se necessario, attieniti alla seguente procedura:
+  Per verificare e avviare il modulo, se necessario, attieniti alla seguente procedura:
 
-   >[!NOTE]
-   >
-   >Questa operazione può essere eseguita con un **on-premise** o **ibrido** modello di hosting con accesso al server Campaign (consulta [modelli di hosting](../../installation/using/hosting-models.md)).
+  >[!NOTE]
+  >
+  >Questa operazione può essere eseguita con un **on-premise** o **ibrido** modello di hosting con accesso al server Campaign (consulta [modelli di hosting](../../installation/using/hosting-models.md)).
 
    1. Verifica che `mta@<instance>` I moduli vengono avviati sui server MTA.
 
@@ -127,13 +128,13 @@ Se la consegna non viene inviata e il suo stato rimane **[!UICONTROL Pending]**,
 
 * È possibile che la consegna utilizzi un’affinità non configurata sul server di invio.
 
-   In questo caso, controlla la configurazione della gestione del traffico (affinità IP) e utilizza **[!UICONTROL Managing affinities with IP addresses]** campo per collegare le consegne all’MTA che gestisce l’affinità. Per ulteriori informazioni sulle affinità, consulta [questa sezione](../../installation/using/configure-delivery-settings.md).
+  In questo caso, controlla la configurazione della gestione del traffico (affinità IP) e utilizza **[!UICONTROL Managing affinities with IP addresses]** campo per collegare le consegne all’MTA che gestisce l’affinità. Per ulteriori informazioni sulle affinità, consulta [questa sezione](../../installation/using/configure-delivery-settings.md).
 
 * Quando sono in esecuzione troppe campagne, lo stato di consegna rimane &quot;In sospeso&quot;.
 
-   Il limite delle campagne simultanee è definito nel **[!UICONTROL NmsOperation_LimitConcurrency]** opzione. Il valore predefinito è 10.
+  Il limite delle campagne simultanee è definito nel **[!UICONTROL NmsOperation_LimitConcurrency]** opzione. Il valore predefinito è 10.
 
-   Ulteriori informazioni sulle opzioni disponibili in [questa pagina](../../installation/using/configuring-campaign-options.md).
+  Ulteriori informazioni sulle opzioni disponibili in [questa pagina](../../installation/using/configuring-campaign-options.md).
 
 
 **Argomenti correlati:**

@@ -4,8 +4,9 @@ title: Introduzione al modello dati di Campaign Classic
 description: Scopri come estendere il modello dati di Campaign, modificare gli schemi, utilizzare le API e altro ancora
 badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Data Model, Configuration
+role: Data Engineer, Developer
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 6%

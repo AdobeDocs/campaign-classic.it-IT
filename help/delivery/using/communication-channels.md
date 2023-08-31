@@ -2,20 +2,19 @@
 product: campaign
 title: Canali di comunicazione
 description: Crea consegne per inviare messaggi personalizzati su canali diversi
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
+role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1204'
+source-wordcount: '1216'
 ht-degree: 20%
 
 ---
 
 # Canali di comunicazione{#communication-channels}
-
-
 
 Con Adobe Campaign, puoi inviare campagne cross-channel tra cui e-mail, SMS, messaggi LINE, notifiche push e direct mail; inoltre, puoi misurarne l’efficacia utilizzando diversi [rapporti](../../reporting/using/delivery-reports.md). Questi messaggi sono progettati e inviati tramite consegna e possono essere personalizzati per ogni destinatario.
 
@@ -32,7 +31,7 @@ Adobe Campaign offre i seguenti canali di consegna:
 1. **Canale e-mail**: le consegne e-mail ti consentono di inviare e-mail personalizzate alla popolazione target. Fai riferimento a [Informazioni sul canale e-mail](about-email-channel.md).
 1. **Canale direct mailing**: le consegne tramite direct mailing ti consentono di generare un file di estrazione che contiene dati sulla popolazione target. Fai riferimento a [Informazioni sul canale direct mailing](about-direct-mail-channel.md).
 1. **Canale mobile**: le consegne sui canali mobili ti consentono di inviare SMS personalizzati o messaggi LINE alla popolazione target. Fai riferimento a [Canale SMS](sms-channel.md).
-1. **Canale dell’app mobile**: le consegne tramite app mobile ti consentono di inviare notifiche ai sistemi iOS e Android. Consulta la sezione [Canale app mobile](about-mobile-app-channel.md) capitolo.
+1. **Canale applicazione mobile**: le consegne tramite app mobile ti consentono di inviare notifiche ai sistemi iOS e Android. Consulta la sezione [Canale app mobile](about-mobile-app-channel.md) capitolo.
 
    Altri canali sono descritti su [questa pagina](steps-about-delivery-creation-steps.md#other-channels).
 

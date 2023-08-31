@@ -2,19 +2,19 @@
 product: campaign
 title: Informazioni sul recapito messaggi in Adobe Campaign Classic
 description: Ulteriori informazioni sulla gestione del recapito messaggi in Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Deliverability
+role: User
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '772'
 ht-degree: 6%
 
 ---
 
 # Controllare il contenuto del messaggio{#control-message-content}
-
 
 
 Per fare in modo che le e-mail raggiungano i destinatari e migliorare il tasso di recapito dei messaggi e-mail, devono rispettare una serie di regole. In caso contrario, il contenuto di alcuni messaggi potrebbe essere rilevato come spam. Adobe Campaign fornisce diversi strumenti per rendere i contenuti conformi a queste regole.
@@ -35,7 +35,7 @@ Per ulteriori suggerimenti su come ottimizzare il recapito messaggi durante la p
 
 ## Indirizzo mittente {#sender-address}
 
-Alcuni ISP verificano la validità dell&#39;indirizzo del mittente (**[!UICONTROL From]**) prima di accettare i messaggi. Un indirizzo in formato non corretto può comportare il rifiuto da parte del server ricevente.
+Alcuni ISP verificano la validità dell&#39;indirizzo del mittente (**[!UICONTROL From]**) prima di accettare i messaggi. Un indirizzo con formato non corretto può comportare il rifiuto da parte del server ricevente.
 
 È necessario assicurarsi che venga fornito un indirizzo corretto a livello di istanza (menu **[!UICONTROL Tools > Advanced > Deployment wizard...]**) o negli scenari più utilizzati.
 
@@ -43,7 +43,7 @@ Per ulteriori informazioni, consulta [questa pagina](defining-the-email-content.
 
 ## Personalizzazione {#personalization}
 
-Per migliorare l’esperienza dei destinatari e farli aprire l’e-mail, Adobe Campaign consente di personalizzare i messaggi.
+Per migliorare l’esperienza dei destinatari e farli aprire l’e-mail, Adobe Campaign ti consente di personalizzare i messaggi.
 
 Per ulteriori informazioni sull’utilizzo dei campi di personalizzazione in Adobe Campaign, consulta [questa sezione](personalization-fields.md).
 

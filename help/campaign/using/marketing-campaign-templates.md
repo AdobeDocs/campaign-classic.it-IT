@@ -2,13 +2,14 @@
 product: campaign
 title: Modelli di campagna di marketing
 description: Modelli di campagna di marketing
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+role: User
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Campaigns, Templates
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 4%
+source-wordcount: '1135'
+ht-degree: 5%
 
 ---
 
@@ -94,53 +95,53 @@ Verranno visualizzati i collegamenti e le schede seguenti:
 
 * **Gruppo di controllo**
 
-   Quando questo modulo è selezionato, viene aggiunta una scheda aggiuntiva alle impostazioni avanzate del modello e delle campagne basate su questo modello. La configurazione può essere definita tramite il modello o singolarmente per ogni campagna. Ulteriori informazioni sui gruppi di controllo in [questa sezione](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
+  Quando questo modulo è selezionato, viene aggiunta una scheda aggiuntiva alle impostazioni avanzate del modello e delle campagne basate su questo modello. La configurazione può essere definita tramite il modello o singolarmente per ogni campagna. Ulteriori informazioni sui gruppi di controllo in [questa sezione](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 
-   ![](assets/s_ncs_user_op_template_activate_1.png)
+  ![](assets/s_ncs_user_op_template_activate_1.png)
 
 * **Indirizzi di seed**
 
-   Quando questo modulo è selezionato, viene aggiunta una scheda aggiuntiva alle impostazioni avanzate del modello e delle campagne basate su questo modello. La configurazione può essere definita tramite il modello o singolarmente per ogni campagna. Ulteriori informazioni sugli indirizzi di seed in [questa sezione](../../delivery/using/about-seed-addresses.md).
+  Quando questo modulo è selezionato, viene aggiunta una scheda aggiuntiva alle impostazioni avanzate del modello e delle campagne basate su questo modello. La configurazione può essere definita tramite il modello o singolarmente per ogni campagna. Ulteriori informazioni sugli indirizzi di seed in [questa sezione](../../delivery/using/about-seed-addresses.md).
 
-   ![](assets/s_ncs_user_op_template_activate_2.png)
+  ![](assets/s_ncs_user_op_template_activate_2.png)
 
 * **Documenti**
 
-   Quando questo modulo è selezionato, viene aggiunta una scheda aggiuntiva al **[!UICONTROL Edition]** del modello e delle campagne basate su questo modello. I documenti allegati possono essere aggiunti dal modello o singolarmente per ciascuna campagna. Ulteriori informazioni sui documenti in [questa sezione](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents).
+  Quando questo modulo è selezionato, viene aggiunta una scheda aggiuntiva al **[!UICONTROL Edition]** del modello e delle campagne basate su questo modello. I documenti allegati possono essere aggiunti dal modello o singolarmente per ciascuna campagna. Ulteriori informazioni sui documenti in [questa sezione](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents).
 
-   ![](assets/s_ncs_user_op_template_activate_3.png)
+  ![](assets/s_ncs_user_op_template_activate_3.png)
 
 * **Struttura**
 
-   Quando questo modulo è selezionato, **[!UICONTROL Delivery outlines]** scheda secondaria aggiunta al **[!UICONTROL Documents]** per definire i profili di consegna per la campagna. Ulteriori informazioni sui profili di consegna in [questa sezione](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+  Quando questo modulo è selezionato, **[!UICONTROL Delivery outlines]** scheda secondaria aggiunta al **[!UICONTROL Documents]** per definire i profili di consegna per la campagna. Ulteriori informazioni sui profili di consegna in [questa sezione](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
-   ![](assets/s_ncs_user_op_template_activate_4.png)
+  ![](assets/s_ncs_user_op_template_activate_4.png)
 
 * **Targeting e flussi di lavoro**
 
-   Quando selezioni il **[!UICONTROL Targeting and workflows]** , viene aggiunta una scheda che consente di creare uno o più flussi di lavoro per le campagne basate su questo modello. I flussi di lavoro possono anche essere configurati singolarmente per ogni campagna in base a questo modello.Ulteriori informazioni sui flussi di lavoro delle campagne in [questa sezione](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
+  Quando selezioni il **[!UICONTROL Targeting and workflows]** , viene aggiunta una scheda che consente di creare uno o più flussi di lavoro per le campagne basate su questo modello. I flussi di lavoro possono anche essere configurati singolarmente per ogni campagna in base a questo modello.Ulteriori informazioni sui flussi di lavoro delle campagne in [questa sezione](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
-   ![](assets/s_ncs_user_op_template_activate_5.png)
+  ![](assets/s_ncs_user_op_template_activate_5.png)
 
-   Quando questo modulo è abilitato, viene aggiunta una scheda alle impostazioni avanzate della campagna per definire la sequenza di esecuzione del processo.
+  Quando questo modulo è abilitato, viene aggiunta una scheda alle impostazioni avanzate della campagna per definire la sequenza di esecuzione del processo.
 
-   ![](assets/s_ncs_user_op_template_activate_5a.png)
+  ![](assets/s_ncs_user_op_template_activate_5a.png)
 
 * **Approvazione**
 
-   Se si seleziona la **[!UICONTROL Approval]**, puoi selezionare i processi da approvare e gli operatori responsabili delle approvazioni. Ulteriori informazioni sulle approvazioni in [questa sezione](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
+  Se si seleziona la **[!UICONTROL Approval]**, puoi selezionare i processi da approvare e gli operatori responsabili delle approvazioni. Ulteriori informazioni sulle approvazioni in [questa sezione](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
 
-   ![](assets/s_ncs_user_op_template_activate_5b.png)
+  ![](assets/s_ncs_user_op_template_activate_5b.png)
 
-   È possibile scegliere se abilitare o meno l&#39;approvazione del processo tramite **[!UICONTROL Approvals]** della sezione impostazioni avanzate dei modelli. Per poter autorizzare la consegna dei messaggi, i processi per i quali è selezionata l’approvazione devono essere approvati.
+  È possibile scegliere se abilitare o meno l&#39;approvazione del processo tramite **[!UICONTROL Approvals]** della sezione impostazioni avanzate dei modelli. Per poter autorizzare la consegna dei messaggi, i processi per i quali è selezionata l’approvazione devono essere approvati.
 
-   È necessario associare un operatore revisore o un gruppo di operatori a ogni approvazione abilitata.
+  È necessario associare un operatore revisore o un gruppo di operatori a ogni approvazione abilitata.
 
 * **Spese e obiettivi**
 
-   Quando questo modulo è selezionato, **[!UICONTROL Budget]** Questa scheda viene aggiunta ai dettagli del modello e delle campagne basate su questo modello, in modo da poter selezionare il budget associato.
+  Quando questo modulo è selezionato, **[!UICONTROL Budget]** Questa scheda viene aggiunta ai dettagli del modello e delle campagne basate su questo modello, in modo da poter selezionare il budget associato.
 
-   ![](assets/s_ncs_user_op_template_activate_7.png)
+  ![](assets/s_ncs_user_op_template_activate_7.png)
 
 ## Proprietà ed esecuzione {#general-configuration}
 
@@ -153,14 +154,14 @@ Quando crei un modello di campagna, devi immettere le seguenti informazioni:
 * Inserisci il **etichetta** del modello: questa etichetta verrà assegnata per impostazione predefinita a tutte le campagne create tramite questo modello.
 * Seleziona la campagna **natura** dall’elenco a discesa. I valori disponibili in questo elenco sono quelli salvati nel **[!UICONTROL natureOp]** enumerazione.
 
-   >[!NOTE]
-   >
-   >Per ulteriori informazioni sulle enumerazioni, consulta [Guida introduttiva](../../platform/using/managing-enumerations.md) sezione.
+  >[!NOTE]
+  >
+  >Per ulteriori informazioni sulle enumerazioni, consulta [Guida introduttiva](../../platform/using/managing-enumerations.md) sezione.
 
 * Seleziona la **tipo di campagna**: univoco, ricorrente o periodico. Per impostazione predefinita, i modelli di campagna si applicano a campagne univoche. Le campagne ricorrenti e periodiche sono descritte in [questa sezione](../../campaign/using/setting-up-marketing-campaigns.md#recurring-and-periodic-campaigns).
 * Specifica la durata della campagna, ovvero il numero di giorni durante i quali la campagna avrà luogo. Quando crei una campagna basata su questo modello, le date di inizio e di fine della campagna verranno compilate automaticamente.
 
-   Se la campagna è ricorrente, devi specificare le date di inizio e di fine della campagna direttamente nel modello.
+  Se la campagna è ricorrente, devi specificare le date di inizio e di fine della campagna direttamente nel modello.
 
 * Specifica la **programma correlato** del modello: le campagne basate su questo modello verranno collegate al programma selezionato.
 

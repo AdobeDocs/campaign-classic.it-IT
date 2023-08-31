@@ -2,13 +2,14 @@
 product: campaign
 title: Introduzione al tracciamento
 description: Scopri le linee guida generali per il tracciamento in Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Monitoring, Email
+role: User
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '695'
 ht-degree: 10%
 
 ---
@@ -111,12 +112,12 @@ I seguenti suggerimenti per la risoluzione dei problemi consentono di risolvere 
 
 * Verificare che il processo trackinglogd sia in esecuzione
 
-   Questo processo legge dalla memoria condivisa IIS/server Web e scrive i registri di reindirizzamento.
+  Questo processo legge dalla memoria condivisa IIS/server Web e scrive i registri di reindirizzamento.
 
-   Puoi accedervi dalla homepage selezionando la scheda Monitoraggio nella tua istanza. Puoi anche eseguire il seguente comando sull’istanza: `<user>@<instance>:~$ nlserver pdump`
+  Puoi accedervi dalla homepage selezionando la scheda Monitoraggio nella tua istanza. Puoi anche eseguire il seguente comando sull’istanza: `<user>@<instance>:~$ nlserver pdump`
 
-   Se il processo trackinglogd non viene visualizzato nell&#39;elenco, avviarlo con il seguente comando nell&#39;istanza: `<user>@<instance>:~$ nlserver start trackinglogd`
+  Se il processo trackinglogd non viene visualizzato nell&#39;elenco, avviarlo con il seguente comando nell&#39;istanza: `<user>@<instance>:~$ nlserver start trackinglogd`
 
 * Verifica che il flusso di lavoro tecnico di tracciamento sia stato eseguito di recente.
 
-   Puoi individuare il flusso di lavoro tecnico Tracciamento nelle cartelle Amministrazione > Produzione > Flussi di lavoro tecnici.
+  Puoi individuare il flusso di lavoro tecnico Tracciamento nelle cartelle Amministrazione > Produzione > Flussi di lavoro tecnici.

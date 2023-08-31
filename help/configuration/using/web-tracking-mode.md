@@ -3,12 +3,13 @@ product: campaign
 title: Modalità di tracciamento web
 description: Scopri come selezionare la modalità di tracciamento web
 feature: Instance Settings
+role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 exl-id: b0f30c1f-cdc9-4ad2-8a6c-19d5aae4feb3
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '688'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -66,7 +67,7 @@ Questa modalità è economica in termini di volume (numero limitato di record ne
 
 Questa modalità di tracciamento web consente di creare un registro di tracciamento basato sulla presenza del cookie uuid230 permanente. Se un visitatore chiude la sessione, Adobe Campaign utilizza il cookie permanente per recuperare informazioni su di esso dai registri di tracciamento precedenti. Adobe Campaign inserisce nuovamente un registro di tracciamento se l’uuid230 della sessione corrente ha lo stesso valore di un uuid230 già memorizzato nella tabella di tracciamento.
 
-Ciò significa che il visitatore deve essere stato precedentemente identificato in Adobe Campaign (tramite una consegna) per abilitare la riconciliazione sui valori uuid230.
+Questo significa che il visitatore deve essere stato precedentemente identificato in Adobe Campaign (tramite una consegna) per abilitare la riconciliazione sui valori uuid230.
 
 Per impostazione predefinita, le ricerche nei registri di tracciamento precedenti vengono eseguite nella tabella &quot;trackingLog&quot;. Se il pacchetto Lead è abilitato, prima di eseguire una ricerca nella tabella &quot;trackingLog&quot;, Adobe Campaign cercherà nella tabella &quot;incomingLead&quot; i record dei registri di tracciamento precedenti.
 

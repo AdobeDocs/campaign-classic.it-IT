@@ -5,8 +5,9 @@ description: Scopri come definire il contenuto delle e-mail quando utilizzi Adob
 badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Email Design
+role: User
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 728fc285fbd562003199c53339899bbc4441bfc6
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '1955'
 ht-degree: 1%
@@ -211,7 +212,7 @@ Per ogni immagine rilevata, puoi visualizzarne lo stato:
 
 * Se un&#39;immagine viene archiviata localmente o si trova in un altro server, anche se questo server è visibile dall&#39;esterno (ad esempio in un sito Internet), verrà rilevato come **[!UICONTROL Not yet online]**.
 * Le immagini vengono rilevate come **[!UICONTROL Already online]** se sono stati caricati in precedenza durante la creazione di un’altra consegna.
-* Nella procedura guidata di distribuzione puoi definire URL per i quali non è abilitato il rilevamento delle immagini: il caricamento di queste immagini sarà **[!UICONTROL Skipped]**.
+* Nella procedura guidata di distribuzione, puoi definire URL per i quali non è abilitato il rilevamento delle immagini: il caricamento di queste immagini sarà **[!UICONTROL Skipped]**.
 
 >[!NOTE]
 >

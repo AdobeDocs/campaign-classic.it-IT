@@ -2,20 +2,19 @@
 product: campaign
 title: Automatizzare tramite flussi di lavoro
 description: Scopri come automatizzare la gestione dei contenuti tramite flussi di lavoro
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Workflows
+role: User
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1190'
+source-wordcount: '1202'
 ht-degree: 1%
 
 ---
 
 # Automatizzare con i flussi di lavoro{#automating-via-workflows}
-
-
 
 ## Attività di gestione dei contenuti {#content-management-activity}
 
@@ -36,41 +35,41 @@ Le proprietà delle attività sono suddivise in quattro passaggi:
 
 * **Specificato dalla transizione**
 
-   Il contenuto da utilizzare è stato creato in precedenza. I processi riguarderanno l’istanza di contenuto propagata dall’evento in ingresso. L’identificatore del contenuto è accessibile tramite la variabile &quot;contentId&quot; dell’evento.
+  Il contenuto da utilizzare è stato creato in precedenza. I processi riguarderanno l’istanza di contenuto propagata dall’evento in ingresso. L’identificatore del contenuto è accessibile tramite la variabile &quot;contentId&quot; dell’evento.
 
 * **Esplicito**
 
-   Consente di scegliere il contenuto creato in precedenza.
+  Consente di scegliere il contenuto creato in precedenza.
 
 * **Calcolato da uno script**
 
-   Seleziona un&#39;istanza di contenuto basata su un modello JavaScript. Il codice da valutare ti consente di recuperare l’identificatore del contenuto.
+  Seleziona un&#39;istanza di contenuto basata su un modello JavaScript. Il codice da valutare ti consente di recuperare l’identificatore del contenuto.
 
 * **Nuovo, creato tramite un modello di pubblicazione**
 
-   Crea un nuovo contenuto tramite un modello di pubblicazione. L’istanza di contenuto verrà salvata nella cartella &quot;String&quot; compilata.
+  Crea un nuovo contenuto tramite un modello di pubblicazione. L’istanza di contenuto verrà salvata nella cartella &quot;String&quot; compilata.
 
 ### Aggiornare il contenuto {#update-the-content}
 
 * **Argomento**
 
-   Consente di modificare l’oggetto dell’azione di consegna durante la pubblicazione.
+  Consente di modificare l’oggetto dell’azione di consegna durante la pubblicazione.
 
 * **Accesso ai dati da un feed XML**
 
-   Il contenuto viene aggiornato da un feed XML da un’origine esterna. È necessario immettere un URL per consentire il download dei dati.
+  Il contenuto viene aggiornato da un feed XML da un’origine esterna. È necessario immettere un URL per consentire il download dei dati.
 
-   È possibile utilizzare un foglio di stile XSL per trasformare i dati XML in ingresso.
+  È possibile utilizzare un foglio di stile XSL per trasformare i dati XML in ingresso.
 
 ### Azione da eseguire {#action-to-execute}
 
 * **Salva**
 
-   Salva il contenuto creato o modificato. L’identificatore del contenuto salvato viene propagato nella variabile &quot;contentId&quot; dell’evento in uscita.
+  Salva il contenuto creato o modificato. L’identificatore del contenuto salvato viene propagato nella variabile &quot;contentId&quot; dell’evento in uscita.
 
 * **Genera**
 
-   Genera i file di output per ciascun modello di trasformazione con una pubblicazione di tipo &quot;File&quot;. La transizione in uscita viene attivata per ogni file generato, con i seguenti parametri: l’identificatore del contenuto salvato nella variabile &quot;contentId&quot; e il nome del file nella variabile &quot;filename&quot;.
+  Genera i file di output per ciascun modello di trasformazione con una pubblicazione di tipo &quot;File&quot;. La transizione in uscita viene attivata per ogni file generato, con i seguenti parametri: l’identificatore del contenuto salvato nella variabile &quot;contentId&quot; e il nome del file nella variabile &quot;filename&quot;.
 
 ### Transition {#transition}
 

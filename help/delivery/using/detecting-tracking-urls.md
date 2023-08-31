@@ -3,8 +3,9 @@ product: campaign
 title: Rilevamento degli URL di tracciamento
 description: Ulteriori informazioni sul pattern consigliato per il tracciamento degli URL
 feature: Monitoring
+role: User, Developer, Data Engineer
 exl-id: 7611d6a1-6c55-4ba3-b905-58426c944991
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 3%

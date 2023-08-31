@@ -2,20 +2,19 @@
 product: campaign
 title: Contenuto condizionale
 description: Scopri come aggiungere contenuti condizionali
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Personalization, Multilingual Messages
+role: User
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '494'
 ht-degree: 7%
 
 ---
 
 # Contenuto condizionale{#conditional-content}
-
-
 
 Configurando i campi di contenuto condizionale, puoi creare una personalizzazione dinamica basata, ad esempio, sul profilo del destinatario. I blocchi di testo e/o le immagini vengono sostituiti quando viene soddisfatta una particolare condizione.
 
@@ -48,22 +47,22 @@ Per creare contenuto condizionale in base al valore di un campo, effettua le seg
 
    * Selezionare il primo elemento dell&#39;espressione, **`<field>`**, (per impostazione predefinita, questo elemento viene evidenziato durante l’inserimento del **se** espressione ) e fai clic sull’icona di personalizzazione per sostituirla con il campo del test.
 
-      ![](assets/s_ncs_user_conditional_content03.png)
+     ![](assets/s_ncs_user_conditional_content03.png)
 
    * Sostituisci **`<value>`** con il valore del campo per il quale verrà soddisfatta la condizione. Questo valore deve essere racchiuso tra virgolette.
    * Specifica il contenuto da inserire quando la condizione viene soddisfatta. Potrebbe trattarsi di testo, immagine, modulo, collegamento ipertestuale, ecc.
 
-      ![](assets/s_ncs_user_conditional_content04.png)
+     ![](assets/s_ncs_user_conditional_content04.png)
 
 1. Fai clic su **[!UICONTROL Preview]** per visualizzare il contenuto del messaggio in base al destinatario della consegna:
 
    * Selezione di un destinatario per il quale la condizione è true:
 
-      ![](assets/s_ncs_user_conditional_content05.png)
+     ![](assets/s_ncs_user_conditional_content05.png)
 
    * Selezione di un destinatario per il quale la condizione non è true:
 
-      ![](assets/s_ncs_user_conditional_content06.png)
+     ![](assets/s_ncs_user_conditional_content06.png)
 
 Puoi aggiungere altri casi e definire contenuti diversi in base ai valori di uno o più campi. A tale scopo, utilizza **[!UICONTROL Conditional content > Else]** e **[!UICONTROL Conditional content > Else if]**. Queste espressioni sono configurate come **se** espressione.
 

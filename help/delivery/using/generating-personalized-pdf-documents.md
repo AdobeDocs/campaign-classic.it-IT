@@ -2,20 +2,19 @@
 product: campaign
 title: Generare documenti PDF personalizzati
 description: Scopri come generare documenti PDF personalizzati
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Personalization
+role: User
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 1%
+source-wordcount: '454'
+ht-degree: 2%
 
 ---
 
 # Generare documenti PDF personalizzati{#generating-personalized-pdf-documents}
-
-
 
 ## Informazioni sui documenti PDF variabili {#about-variable-pdf-documents}
 
@@ -43,9 +42,9 @@ La procedura per la generazione di tabelle dinamiche è la seguente:
 * In ogni cella della seconda riga della tabella, inserire gli script che restituiscono i valori da visualizzare.
 * Chiudete il loop nella terza e ultima riga della tabella.
 
-   Esempio di definizione di una tabella dinamica:
+  Esempio di definizione di una tabella dinamica:
 
-   ![](assets/s_ncs_pdf_table.png)
+  ![](assets/s_ncs_pdf_table.png)
 
 ## Inserisci immagini esterne {#inserting-external-images}
 
@@ -68,9 +67,9 @@ A questo scopo, devi configurare un blocco di personalizzazione, quindi includer
 * Crea un nuovo blocco di personalizzazione &quot;Il mio logo&quot; con &quot;Il mio_logo&quot; come nome interno.
 * Fai clic sul pulsante **[!UICONTROL Advanced parameters...]** quindi controlla il **[!UICONTROL "The content of the block is included in an attachment"]** opzione. Questo consente di copiare la definizione del blocco di personalizzazione direttamente nel contenuto del file OpenOffice.
 
-   ![](assets/s_ncs_pdf_bloc_option.png)
+  ![](assets/s_ncs_pdf_bloc_option.png)
 
-   Devi distinguere due tipi di dichiarazioni all’interno del blocco di personalizzazione:
+  Devi distinguere due tipi di dichiarazioni all’interno del blocco di personalizzazione:
 
    * Il codice Adobe Campaign dei campi di personalizzazione per i quali le virgolette &quot;aperta&quot; e &quot;chiusa&quot; devono essere sostituite da caratteri di escape (rispettivamente `&lt;` e `&gt;`).
    * L&#39;intero codice XML OpenOffice verrà copiato nel documento OpenOffice.

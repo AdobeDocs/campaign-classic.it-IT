@@ -2,20 +2,19 @@
 product: campaign
 title: Caso di utilizzo del test AB
 description: Scopri come eseguire il test A/B tramite un caso d’uso dedicato
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: A/B Testing
+role: User
 exl-id: 4eb139a0-5342-4084-9f6d-d736e05bf1c6
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 4%
+source-wordcount: '260'
+ht-degree: 5%
 
 ---
 
-# Test A/B di questo caso d’uso {#ab-testing-use-case}
-
-
+# Test AB: test A/B per questo caso d’uso {#ab-testing-use-case}
 
 In questo caso d’uso, confronteremo due contenuti di consegna e-mail tramite un flusso di lavoro di targeting. Il messaggio e il testo sono identici in entrambe le consegne: cambia solo il layout.
 

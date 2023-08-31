@@ -2,19 +2,19 @@
 product: campaign
 title: Informazioni sul canale direct mail
 description: Informazioni sul canale direct mail
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Direct Mail
+role: User
 exl-id: 6474cf2e-c4db-4430-b001-18bf4911b0ea
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '142'
 ht-degree: 9%
 
 ---
 
 # Informazioni sul canale direct mail{#about-direct-mail-channel}
-
 
 
 Adobe Campaign consente di produrre file per distribuire in massa lettere personalizzate. I profili dei destinatari devono contenere almeno i propri nomi e indirizzi postali.

@@ -2,13 +2,14 @@
 product: campaign
 title: Applicare le regole di tipologia
 description: Scopri come applicare le regole di tipologia
+role: User, Data Engineer
 badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Typology Rules, Campaigns
 exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '990'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 

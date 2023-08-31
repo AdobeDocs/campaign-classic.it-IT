@@ -2,19 +2,20 @@
 product: campaign
 title: Fornitori, scorte e budget
 description: Fornitori, scorte e budget
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+role: User
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Budget Management, Campaigns
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1902'
-ht-degree: 0%
+source-wordcount: '1909'
+ht-degree: 1%
 
 ---
 
 # Fornitori, scorte e budget{#providers-stocks-and-budgets}
 
-Adobe Campaign consente di definire i provider di servizi che saranno coinvolti nei processi eseguiti all’interno delle campagne. Le informazioni relative ai fornitori di servizi e alle relative strutture di costo sono definite dall’amministratore di Adobe Campaign a partire dalla visualizzazione principale. Il fornitore di servizi è indicato dalla consegna e la sua struttura dei costi consente il calcolo dei costi associati a tale consegna e la gestione delle scorte interessate.
+Adobe Campaign consente di definire i provider di servizi che saranno coinvolti nei processi eseguiti all’interno delle campagne. Le informazioni relative ai fornitori di servizi e alle relative strutture di costo sono definite dall’amministratore di Adobe Campaign a partire dalla visualizzazione principale. Il fornitore di servizi è indicato dalla consegna e la sua struttura dei costi consente il calcolo dei costi associati a tale consegna e la gestione delle scorte in questione.
 
 ## Creazione di fornitori di servizi e delle relative strutture dei costi {#creating-service-providers-and-their-cost-structures}
 
@@ -77,10 +78,10 @@ Per creare un modello di servizio e definirne il contenuto, attenersi alla proce
    * Fai clic su **[!UICONTROL Add]** per definire i tipi di costo associati a questa categoria.
    * Se necessario, associare una linea di magazzino a ciascun tipo di costo in modo che le quantità utilizzate vengano automaticamente correlate alle scorte esistenti.
 
-      >[!NOTE]
-      >
-      >Le linee delle scorte sono definite nella **[!UICONTROL Stock management]** nodo.\
-      >Per ulteriori informazioni, consulta [Gestione di scorte e ordini](#stock-and-order-management).
+     >[!NOTE]
+     >
+     >Le linee delle scorte sono definite nella **[!UICONTROL Stock management]** nodo.\
+     >Per ulteriori informazioni, consulta [Gestione di scorte e ordini](#stock-and-order-management).
 
 1. È possibile preselezionare un valore per questa categoria di costo, che verrà offerta per impostazione predefinita nelle categorie di costo fornitore di servizi (anziché una vuota). A questo scopo, seleziona l’opzione nella sezione **[!UICONTROL Selected]** colonna relativa al tipo di categoria interessata:
 
@@ -100,15 +101,15 @@ Fai clic su **[!UICONTROL Cost structure]** per configurare il calcolo del costo
 
 * Per creare la struttura dei costi, selezionare il tipo di messaggio e la categoria di costo interessati dagli elenchi a discesa, nonché il tipo di costo a cui verrà applicata la regola di calcolo. Il contenuto di questi elenchi a discesa proviene dalle informazioni immesse tramite **[!UICONTROL Cost categories]** scheda.
 
-   È necessario assegnare un&#39;etichetta alla struttura dei costi. Per impostazione predefinita, presenta la seguente struttura di consegna: **Categoria di costo - Tipo di costo**.
+  È necessario assegnare un&#39;etichetta alla struttura dei costi. Per impostazione predefinita, presenta la seguente struttura di consegna: **Categoria di costo - Tipo di costo**.
 
-   Tuttavia, puoi rinominarlo: inserisci il valore desiderato direttamente in **[!UICONTROL Label]** campo.
+  Tuttavia, puoi rinominarlo: inserisci il valore desiderato direttamente in **[!UICONTROL Label]** campo.
 
 * La formula di calcolo dei costi è definita nella sezione inferiore della finestra.
 
-   Questa formula può essere corretta (per qualsiasi numero di messaggi) o calcolata in base al numero di messaggi.
+  Questa formula può essere corretta (per qualsiasi numero di messaggi) o calcolata in base al numero di messaggi.
 
-   Quando dipende dal numero di messaggi, la struttura di calcolo dei costi può essere **[!UICONTROL Linear]**, **[!UICONTROL Linear by threshold]**, o **[!UICONTROL Constant by threshold]**.
+  Quando dipende dal numero di messaggi, la struttura di calcolo dei costi può essere **[!UICONTROL Linear]**, **[!UICONTROL Linear by threshold]**, o **[!UICONTROL Constant by threshold]**.
 
 #### Struttura lineare {#linear-structure}
 
@@ -146,11 +147,11 @@ A questo scopo, fai clic su **[!UICONTROL Processes]** per configurare l&#39;inv
 
 * Il **[!UICONTROL File extraction]** indica il modello di esportazione utilizzato per la consegna quando viene selezionato questo servizio. È possibile indicare il nome del file di output nel **[!UICONTROL Extraction file]** campo. Il pulsante a destra del campo consente di inserire le variabili.
 
-   ![](assets/s_ncs_user_supplier_node_02a.png)
+  ![](assets/s_ncs_user_supplier_node_02a.png)
 
 * Il **[!UICONTROL Notification email]** sezione consente di specificare il modello per la notifica ai provider di servizi dopo l&#39;invio dei file. Selezionare il modello utilizzato per creare il messaggio di avviso e il gruppo di destinatari.
 
-   Per impostazione predefinita, i modelli di consegna per i messaggi di notifica vengono salvati in **[!UICONTROL Administration > Campaign management > Technical delivery templates]** , accessibile dalla vista generale.
+  Per impostazione predefinita, i modelli di consegna per i messaggi di notifica vengono salvati in **[!UICONTROL Administration > Campaign management > Technical delivery templates]** , accessibile dalla vista generale.
 
 * Il **[!UICONTROL Post-processing]** consente di selezionare il flusso di lavoro da avviare dopo l’approvazione della consegna. Se viene immesso un modello di flusso di lavoro, viene creata automaticamente un’istanza di flusso di lavoro e quindi viene avviata non appena l’approvazione diventa effettiva. Questo flusso di lavoro può inviare il file di estrazione a un provider di servizi esterno, ad esempio per l’elaborazione.
 
@@ -166,12 +167,12 @@ Quando viene selezionato un servizio, le categorie di costo corrispondenti al ti
 
 * Per una consegna direct mailing, puoi selezionare il servizio dalla finestra di configurazione.
 
-   ![](assets/s_ncs_user_supplier_mail_delivery_select.png)
+  ![](assets/s_ncs_user_supplier_mail_delivery_select.png)
 
 * Per le consegne su canali mobili o telefono, si applica la stessa modalità di selezione.
 * Per una consegna e-mail, il servizio viene selezionato da **[!UICONTROL Advanced]** nelle proprietà di consegna, come nell’esempio seguente:
 
-   ![](assets/s_ncs_user_supplier_email_delivery_select.png)
+  ![](assets/s_ncs_user_supplier_email_delivery_select.png)
 
 Il **[!UICONTROL Amount to surcharge]** consente di aggiungere un costo per questa categoria nel contesto della consegna o dell’attività interessata.
 
@@ -236,7 +237,7 @@ Fai clic su **[!UICONTROL Create]** per definire i parametri del grezzo.
 
 * Indicare la quantità inizialmente in giacenza nel **[!UICONTROL Initial stock]** campo. Il **[!UICONTROL Consumed]** e **[!UICONTROL In stock]** I campi vengono calcolati automaticamente e aggiornati in base all’avanzamento delle campagne.
 
-   ![](assets/s_ncs_user_stocks_create_line.png)
+  ![](assets/s_ncs_user_stocks_create_line.png)
 
 * Indicare la soglia a partire dalla quale gli operatori devono essere avvisati di ordinare le scorte nella **[!UICONTROL Alert level]** campo. Quando viene raggiunto il livello di avviso, nella finestra di approvazione delle consegne che utilizzano questo stock viene visualizzato un messaggio di avviso.
 

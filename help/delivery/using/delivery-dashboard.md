@@ -2,19 +2,19 @@
 product: campaign
 title: Dashboard delle consegne
 description: Scopri come utilizzare il dashboard di consegna per monitorare le consegne
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Monitoring
+role: User, Data Engineer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1186'
 ht-degree: 7%
 
 ---
 
 # Dashboard delle consegne {#delivery-dashboard}
-
 
 
 Il **dashboard di consegna** è fondamentale per monitorare le consegne e gli eventuali problemi riscontrati durante l’invio dei messaggi.
@@ -23,7 +23,7 @@ Ti consente di recuperare informazioni su una consegna e modificarle, se necessa
 
 Di seguito sono riportate le informazioni che è possibile monitorare utilizzando le diverse schede disponibili nel dashboard:
 
-* [Riepilogo consegne](#delivery-summary)
+* [Riepilogo delle consegne](#delivery-summary)
 * [Rapporti sulle consegne](#delivery-reports)
 * [Registri di consegna, pagine mirror, esclusioni](#delivery-logs-and-history)
 * [Registri e cronologia di tracciamento delle consegne](#tracking-logs)
@@ -39,7 +39,7 @@ Di seguito sono riportate le informazioni che è possibile monitorare utilizzand
 * [Best practice per la consegna](delivery-best-practices.md)
 * [Gestione delle consegne](about-deliverability.md)
 
-## Riepilogo consegne {#delivery-summary}
+## Riepilogo delle consegne {#delivery-summary}
 
 Il **[!UICONTROL Summary]** La scheda contiene le caratteristiche della consegna: stato della consegna, canale utilizzato, informazioni sul mittente, oggetto, informazioni sull’esecuzione.
 
@@ -79,7 +79,7 @@ Il **[!UICONTROL Tracking]** Questa scheda elenca la cronologia di tracciamento 
 
 La configurazione del tracciamento viene eseguita nella fase appropriata della procedura guidata di consegna. Consulta [Come configurare collegamenti tracciati](how-to-configure-tracked-links.md).
 
-**[!UICONTROL Tracking]** I dati di vengono interpretati nei rapporti di consegna. Vedi [questa sezione](../../reporting/using/delivery-reports.md).
+**[!UICONTROL Tracking]** I dati di vengono interpretati nei rapporti di consegna. Consulta [questa sezione](../../reporting/using/delivery-reports.md).
 
 ![](assets/s_ncs_user_delivery_tracking_tab.png)
 
