@@ -2,20 +2,19 @@
 product: campaign
 title: Verifica tracciamento dei messaggi
 description: Scopri come verificare il tracciamento dei messaggi
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Monitoring
+role: User
 exl-id: 16ad36b7-c13e-4b77-86ca-41c9ef174172
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '268'
 ht-degree: 1%
 
 ---
 
 # Verifica tracciamento dei messaggi{#testing-tracking}
-
-
 
 Puoi verificare il tracciamento su pagine mirror, registri e collegamenti e-mail. Per eseguire questa operazione:
 

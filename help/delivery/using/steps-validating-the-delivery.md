@@ -2,20 +2,19 @@
 product: campaign
 title: Convalidare la consegna
 description: Scopri come convalidare una consegna
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Deliverability, Email Rendering, Proofs
+role: User
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1678'
 ht-degree: 8%
 
 ---
 
 # Convalidare la consegna {#validating-the-delivery}
-
-
 
 Quando una consegna è stata creata e configurata, devi convalidarla prima di inviarla al target principale.
 
@@ -173,7 +172,7 @@ Il **[!UICONTROL Advanced]** scheda delle proprietà di consegna consente di def
 Sono disponibili le seguenti opzioni:
 
 * La prima opzione ti consente di mantenere la bozza doppia.
-* Elenco Bloccati Entrambe le opzioni seguenti consentono di mantenere in quarantena i destinatari che si trovano in posizione di e gli indirizzi. Consulta la descrizione di queste opzioni per il target principale in [Personalizzare le impostazioni di esclusione](steps-defining-the-target-population.md#customizing-exclusion-settings). A differenza del target di una consegna, in cui questi indirizzi sono esclusi per impostazione predefinita, vengono conservati per impostazione predefinita per il target di una bozza.
+* Inserire nell&#39;elenco Bloccati Entrambe le opzioni seguenti consentono di mantenere in quarantena i destinatari che si trovano in posizione di e gli indirizzi. Consulta la descrizione di queste opzioni per il target principale in [Personalizzare le impostazioni di esclusione](steps-defining-the-target-population.md#customizing-exclusion-settings). A differenza del target di una consegna, in cui questi indirizzi sono esclusi per impostazione predefinita, vengono conservati per impostazione predefinita per il target di una bozza.
 * Il **[!UICONTROL Keep the delivery code for the proof]** Questa opzione ti consente di assegnare alla bozza lo stesso codice di consegna definito per la consegna a cui si riferisce. Questo codice è specificato nel primo passaggio della consegna guidata.
 * Per impostazione predefinita, l’oggetto della bozza è preceduto dal prefisso &quot;N. bozza&quot;, dove # è il numero della bozza. È possibile modificare questo prefisso in **[!UICONTROL Label prefix]** campo.
 

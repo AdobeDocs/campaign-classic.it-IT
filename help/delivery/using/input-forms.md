@@ -2,20 +2,19 @@
 product: campaign
 title: Moduli di input
 description: Scopri come utilizzare i moduli di input in Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Data Management
+role: User, Developer
 exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '844'
 ht-degree: 2%
 
 ---
 
 # Moduli di input{#input-forms}
-
-
 
 Di seguito sono riportati alcuni principi generali relativi all’utilizzo dei moduli di input in Adobe Campaign.
 
@@ -152,7 +151,7 @@ A **[!UICONTROL Detail]** viene aggiunto automaticamente quando **zoom=&quot;tru
 
 >[!NOTE]
 >
->Aggiunta di **zoomOnAdd=&quot;true&quot;** attribute forza la chiamata del form di modifica all&#39;inserimento di un elemento dell&#39;elenco.
+>Aggiunta di **zoomOnAdd=&quot;true&quot;** attribute forza la chiamata del modulo di modifica all’inserimento di un elemento dell’elenco.
 
 ### Elenco schede {#tab-list}
 

@@ -2,20 +2,19 @@
 product: campaign
 title: Creare un SMS con Campaign
 description: Scopri come creare SMS con Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: SMS
+role: User
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 3%
+source-wordcount: '444'
+ht-degree: 4%
 
 ---
 
 # Creare una consegna SMS {#creating-a-sms-delivery}
-
-
 
 ## Seleziona il canale di consegna {#selecting-the-delivery-channel}
 

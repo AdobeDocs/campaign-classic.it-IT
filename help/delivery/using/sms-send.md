@@ -2,20 +2,19 @@
 product: campaign
 title: Inviare, monitorare e tenere traccia degli SMS
 description: Scopri come inviare, monitorare e tenere traccia degli SMS in Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: SMS
+role: User
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '970'
 ht-degree: 3%
 
 ---
 
 # Inviare, monitorare e tenere traccia delle consegne SMS{#sms-properties}
-
-
 
 ## Inviare messaggi SMS {#sending-sms-messages}
 
@@ -34,13 +33,13 @@ Sono disponibili le seguenti opzioni:
 
 * **Indirizzo mittente**: consente di personalizzare il nome del mittente della consegna utilizzando una stringa di caratteri alfanumerici limitata a undici caratteri. Il campo non deve essere costituito esclusivamente da cifre. È possibile definire una condizione da visualizzare, ad esempio nomi diversi in base all’indicativo di località del destinatario:
 
-   ```
-   <% if( String(recipient.mobilePhone).indexOf("+1") == 0){ %>NeoShopUS<%} else {%>NeoShopWorld<%}%>
-   ```
+  ```
+  <% if( String(recipient.mobilePhone).indexOf("+1") == 0){ %>NeoShopUS<%} else {%>NeoShopWorld<%}%>
+  ```
 
-   >[!IMPORTANT]
-   >
-   >Controlla la legge del tuo paese relativa alla modifica dei nomi dei mittenti. Dovresti anche verificare con l’operatore se offre questa funzionalità.
+  >[!IMPORTANT]
+  >
+  >Controlla la legge del tuo paese relativa alla modifica dei nomi dei mittenti. Dovresti anche verificare con l’operatore se offre questa funzionalità.
 
 * **Modalità di trasmissione**: trasmissione di messaggi tramite SMS.
 * **Priorità**: livello di importanza assegnato a un messaggio. **[!UICONTROL Normal]** priorità è selezionata per impostazione predefinita. Chiedi al tuo provider di servizi informazioni sul costo degli SMS inviati con **[!UICONTROL High]** priorità.
@@ -72,17 +71,16 @@ Il **nlserver sms** Il modulo esegue query sul router SMS a intervalli regolari.
 
 * **Relazioni sullo stato**: visualizza i registri di consegna per controllare lo stato dei messaggi.
 
-   >[!NOTE]
-   >
-   >Ogni SMS inviato è collegato a un account esterno che ne rappresenta la chiave primaria. In questo modo:
-   >
-   > * Le relazioni sullo stato da un account SMS esterno eliminato non vengono elaborate correttamente.
-   > * Un account SMS può essere collegato solo a un singolo account esterno per garantire che le relazioni sullo stato siano attribuite all’account corretto
-
+  >[!NOTE]
+  >
+  >Ogni SMS inviato è collegato a un account esterno che ne rappresenta la chiave primaria. In questo modo:
+  >
+  > * Le relazioni sullo stato da un account SMS esterno eliminato non vengono elaborate correttamente.
+  > * Un account SMS può essere collegato solo a un singolo account esterno per garantire che le relazioni sullo stato siano attribuite all’account corretto
 
 * **Annullamento iscrizione**: i destinatari che desiderano interrompere la ricezione delle consegne SMS possono restituire un messaggio contenente la parola STOP. Se il tuo provider lo consente in base ai termini del contratto, puoi recuperare i messaggi tramite il **SMS in entrata** attività del flusso di lavoro e quindi creare una query per abilitare **Non contattare più questo destinatario** per i destinatari interessati.
 
-   Consulta la sezione [Flussi di lavoro](../../workflow/using/architecture.md) guida.
+  Consulta la sezione [Flussi di lavoro](../../workflow/using/architecture.md) guida.
 
 ## Schema InSMS {#insms-schema}
 
@@ -94,11 +92,11 @@ Lo schema InSMS contiene informazioni relative agli SMS in arrivo. Una descrizio
 * **creato**: data in cui il messaggio in arrivo è stato inserito in Adobe Campaign.
 * **extAccount**: account esterno di Adobe Campaign.
 
-   >[!IMPORTANT]
-   >
-   >I campi seguenti sono specifici di NetSize.
-   >
-   >Se l&#39;operatore in uso non è NetSize, questi campi vengono considerati vuoti.
+  >[!IMPORTANT]
+  >
+  >I campi seguenti sono specifici di NetSize.
+  >
+  >Se l&#39;operatore in uso non è NetSize, questi campi vengono considerati vuoti.
 
 * **alias**: alias del messaggio in arrivo.
 * **separatore**: separatore tra l’alias e il corpo del messaggio.

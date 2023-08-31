@@ -5,8 +5,9 @@ description: Scopri come tracciare e monitorare i messaggi
 badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Monitoring, Reporting
+role: User
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 3%
@@ -14,8 +15,6 @@ ht-degree: 3%
 ---
 
 # Tracciare e monitorare {#track-and-monitor}
-
-
 
 Hai fatto clic su **Invia** pulsante? Vediamo cosa succede. Una volta inviata la consegna, Adobe Campaign ti consente di tenere traccia dei messaggi inviati e scoprire come i destinatari reagiscono alla consegna. Questo ti aiuterà a migliorare l’invio futuro e a ottimizzare le campagne successive.
 

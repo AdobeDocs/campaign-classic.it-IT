@@ -2,20 +2,19 @@
 product: campaign
 title: Monitorare il recapito messaggi in Adobe Campaign
 description: Scopri gli strumenti e le linee guida per il monitoraggio del recapito messaggi in Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Deliverability
+role: User, Admin
 exl-id: e4caa316-242f-46cd-a20b-a5eee5a0c456
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 1%
+source-wordcount: '543'
+ht-degree: 2%
 
 ---
 
 # Monitorare il recapito messaggi{#monitoring-deliverability}
-
-
 
 Di seguito trovi i dettagli sui diversi strumenti di monitoraggio forniti da Adobe Campaign, nonché alcune linee guida aggiuntive sull’utilizzo delle funzioni offerte da Adobe Campaign per monitorare il recapito messaggi della piattaforma.
 
@@ -42,7 +41,7 @@ Il pacchetto di recapito messaggi consente di accedere a:
    * **[!UICONTROL Hard bounces]** indicare la qualità dei dati. Questo numero deve essere inferiore al 2%.
    * **[!UICONTROL Soft bounces]** indicare la reputazione. Questo numero non deve essere superiore al 10% per un dato ISP.
 
-   Per ulteriori informazioni, consulta [Statistiche consegna](../../reporting/using/global-reports.md#delivery-statistics) sezione.
+  Per ulteriori informazioni, consulta [Statistiche consegna](../../reporting/using/global-reports.md#delivery-statistics) sezione.
 * Più in generale, [dashboard di consegna](about-delivery-monitoring.md) consente di accedere a:
    * il [riepilogo della consegna](delivery-dashboard.md#delivery-summary), che mostra i dettagli dell&#39;invio e il numero di messaggi da inviare, elaborare e inviare con esito positivo;
    * il [registri e cronologia di consegna](delivery-dashboard.md#delivery-logs-and-history), che indicano quale obiettivo è stato escluso e perché;

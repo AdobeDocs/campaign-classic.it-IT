@@ -2,22 +2,21 @@
 product: campaign
 title: Blocchi di personalizzazione
 description: Scopri come utilizzare i blocchi di personalizzazione
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Personalization
+role: User
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 3%
+source-wordcount: '873'
+ht-degree: 5%
 
 ---
 
 # Blocchi di personalizzazione{#personalization-blocks}
 
-
-
-I blocchi di personalizzazione sono dinamici, personalizzati e contengono un rendering specifico che puoi inserire nelle consegne. Ad esempio, puoi aggiungere un logo, un messaggio di saluto o un collegamento a una pagina speculare. Consulta [Inserire blocchi di personalizzazione](#inserting-personalization-blocks).
+I blocchi di personalizzazione sono dinamici, personalizzati e contengono un rendering specifico che puoi inserire nelle consegne. Ad esempio, puoi aggiungere un logo, un messaggio di auguri o un collegamento alla pagina mirror. Consulta [Inserire blocchi di personalizzazione](#inserting-personalization-blocks).
 
 ![](assets/do-not-localize/how-to-video.png)[ Scopri questa funzione nel video](#personalization-blocks-video)
 
@@ -100,9 +99,9 @@ Per impostazione predefinita, è disponibile un elenco di blocchi di personalizz
 * **[!UICONTROL Powered by Adobe Campaign]** : inserisce il logo &quot;Powered by Adobe Campaign&quot;.
 * **[!UICONTROL Mirror page URL]** : inserisce l’URL della pagina speculare, consentendo ai designer della consegna di controllare il collegamento.
 
-   >[!NOTE]
-   >
-   >Per ulteriori informazioni sulla generazione della pagina speculare, consulta [Genera la pagina mirror](sending-messages.md#generating-the-mirror-page).
+  >[!NOTE]
+  >
+  >Per ulteriori informazioni sulla generazione della pagina speculare, consulta [Genera la pagina mirror](sending-messages.md#generating-the-mirror-page).
 
 * **[!UICONTROL Link to mirror page]** : inserisce un collegamento alla pagina speculare: &quot;Se non riesci a visualizzare correttamente questo messaggio, fai clic qui&quot;.
 * **[!UICONTROL Unsubscription link]** : inserisce un collegamento che consente di annullare l’abbonamento a tutte le consegne (inserisco nell&#39;elenco Bloccati di annullamento dell’abbonamento).
@@ -111,12 +110,12 @@ Per impostazione predefinita, è disponibile un elenco di blocchi di personalizz
 * **[!UICONTROL Registration link]** : inserisce un collegamento di abbonamento. che è stato definito durante la configurazione dell’istanza.
 * **[!UICONTROL Registration link (with referrer)]** : inserisce un collegamento di abbonamento, che consente di identificare il visitatore e la consegna. Il collegamento è stato definito durante la configurazione dell’istanza.
 
-   >[!NOTE]
-   >
-   >Questo blocco può essere utilizzato nelle consegne indirizzate solo ai visitatori.
+  >[!NOTE]
+  >
+  >Questo blocco può essere utilizzato nelle consegne indirizzate solo ai visitatori.
 
 * **[!UICONTROL Registration confirmation]** : inserisce un collegamento che consente di confermare la sottoscrizione.
-* **[!UICONTROL Social network sharing links]** : inserisce pulsanti che consentono al destinatario di condividere un collegamento al contenuto della pagina speculare con il client e-mail, Facebook, Twitter e LinkedIn (consulta [Marketing virale: inoltro a un amico](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
+* **[!UICONTROL Social network sharing links]** : inserisce pulsanti che consentono al destinatario di condividere un collegamento al contenuto della pagina speculare con il client e-mail, il Facebook, il Twitter e il LinkedIn (consulta [Marketing virale: inoltro a un amico](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
 * **[!UICONTROL Style of content emails]** e **[!UICONTROL Notification style]** : genera un codice che formatta un’e-mail con stili HTML predefiniti. Questi blocchi devono essere inseriti nel codice sorgente della consegna, nel **[!UICONTROL ...]** sezione, in **`<style>...</style>`** tag.
 * **[!UICONTROL Offer acceptance URL in unitary mode]** : inserisce un URL che consente di impostare un’offerta di interazione su **[!UICONTROL Accepted]** (vedere [questa sezione](../../interaction/using/offer-analysis-report.md)).
 
@@ -136,9 +135,9 @@ Per creare un blocco di personalizzazione, passa a Esplora e applica i seguenti 
    * Seleziona **[!UICONTROL Visible in the customization menus]** per rendere accessibile questo blocco dall’icona di inserimento del campo di personalizzazione.
    * Se necessario, selezionare **[!UICONTROL The content of the personalization block depends upon the format]** per definire due blocchi separati per le e-mail in formato HTML e quelli in formato testo.
 
-      Nella sezione inferiore di questo editor (Contenuto HTML e Contenuto testo) vengono quindi visualizzate due schede per definire il contenuto corrispondente.
+     Nella sezione inferiore di questo editor (Contenuto HTML e Contenuto testo) vengono quindi visualizzate due schede per definire il contenuto corrispondente.
 
-      ![](assets/s_ncs_user_personalized_block_b.png)
+     ![](assets/s_ncs_user_personalized_block_b.png)
 
    * Inserisci il contenuto (in HTML, testo, JavaScript, ecc.) dei blocchi di personalizzazione e fai clic su **[!UICONTROL Save]**.
 

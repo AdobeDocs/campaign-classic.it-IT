@@ -2,24 +2,23 @@
 product: campaign
 title: Modelli di pubblicazione
 description: Modelli di pubblicazione
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Templates
+role: User
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '825'
 ht-degree: 1%
 
 ---
 
 # Modelli di pubblicazione{#publication-templates}
 
-
-
 ## Informazioni sui modelli di pubblicazione {#about-publication-templates}
 
-Il modello di pubblicazione è la carta di identità del contenuto da pubblicare. Fa riferimento alle risorse utilizzate nel processo di pubblicazione, ovvero:
+Il modello di pubblicazione fa riferimento alle risorse utilizzate nel processo di pubblicazione, ovvero:
 
 * lo schema di dati,
 * il modulo di input,
@@ -73,21 +72,21 @@ Sono disponibili le seguenti opzioni di pubblicazione:
 * Il **[!UICONTROL Multi-file generation]** attiva una modalità speciale di pubblicazione del documento. Questa opzione consiste nel popolare un tag di partizionamento all&#39;inizio di ogni pagina del documento di output. La generazione del contenuto genera un file per ogni tag di partizionamento popolato. Questa modalità viene utilizzata per generare mini-siti da un blocco di contenuto. per ulteriori informazioni, consulta [Generazione di più file](#multi-file-generation).
 * Il **[!UICONTROL Location]** contiene il nome del file di output. Il nome può essere composto da variabili per generare un nome di file automatico.
 
-   Una variabile viene compilata con il seguente formato: **`$(<xpath>)`**, dove **`<xpath>`** è il percorso di un campo dello schema dati del modello di pubblicazione.
+  Una variabile viene compilata con il seguente formato: **`$(<xpath>)`**, dove **`<xpath>`** è il percorso di un campo dello schema dati del modello di pubblicazione.
 
-   Il nome di un file può essere un campo di tipo data. Per formattare correttamente questo campo, utilizza **$date-format** , utilizzando il percorso del campo e il formato di output come parametri.
+  Il nome di un file può essere un campo di tipo data. Per formattare correttamente questo campo, utilizza **$date-format** , utilizzando il percorso del campo e il formato di output come parametri.
 
-   Per impostazione predefinita, il formato di costruzione del nome del file utilizza le variabili nei campi &quot;@name&quot; e &quot;@date&quot;:
+  Per impostazione predefinita, il formato di costruzione del nome del file utilizza le variabili nei campi &quot;@name&quot; e &quot;@date&quot;:
 
-   ```
-   ct_$(@name)_$date-format(@date,'%4Y%2M%2D').htm
-   ```
+  ```
+  ct_$(@name)_$date-format(@date,'%4Y%2M%2D').htm
+  ```
 
-   Il nome del file generato sarà simile al seguente: ct_news12_20110901.htm.
+  Il nome del file generato sarà simile al seguente: ct_news12_20110901.htm.
 
-   >[!NOTE]
-   >
-   >Per ulteriori informazioni sulla generazione di contenuti, consulta [Creare un’istanza di contenuto](using-a-content-template.md#creating-a-content-instance).
+  >[!NOTE]
+  >
+  >Per ulteriori informazioni sulla generazione di contenuti, consulta [Creare un’istanza di contenuto](using-a-content-template.md#creating-a-content-instance).
 
 ### Consegna {#delivery}
 

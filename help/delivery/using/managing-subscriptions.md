@@ -1,21 +1,20 @@
 ---
 product: campaign
 title: Gestire le iscrizioni
-description: Gestire le iscrizioni
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+description: Scopri come gestire gli abbonamenti in Adobe Campaign
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Subscriptions
+role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1116'
 ht-degree: 2%
 
 ---
 
 # Gestire le iscrizioni{#managing-subscriptions}
-
-
 
 ## Informazioni sui servizi di informazione {#about-information-services}
 
@@ -54,9 +53,9 @@ Per modificare un servizio esistente, fare clic sul relativo nome. Per creare un
 
 * Inserisci il nome del servizio nel **[!UICONTROL Label]** e seleziona il canale di consegna: e-mail, dispositivi mobili, Facebook, Twitter o applicazioni mobili.
 
-   >[!NOTE]
-   >
-   >Gli abbonamenti a facebook e Twitter sono descritti in dettaglio [questa sezione](../../social/using/about-social-marketing.md). Gli abbonamenti alle app mobili sono descritti in dettaglio in [Informazioni sul canale app mobile](about-mobile-app-channel.md).
+  >[!NOTE]
+  >
+  >Gli abbonamenti a facebook e al Twitter sono descritti in dettaglio in [questa sezione](../../social/using/about-social-marketing.md). Gli abbonamenti alle app mobili sono descritti in dettaglio in [Informazioni sul canale app mobile](about-mobile-app-channel.md).
 
 * Per un servizio di tipo E-mail, seleziona la **Modalità di consegna**. Le modalità possibili sono: **[!UICONTROL Newsletter]** o **[!UICONTROL Viral]**.
 * Puoi inviare **messaggi di conferma** per un abbonamento o per il suo annullamento. A questo scopo, seleziona i modelli di consegna da utilizzare per creare le consegne corrispondenti dal **[!UICONTROL Subscription]** e **[!UICONTROL Unsubscription]** campi. Questi modelli devono essere configurati con **[!UICONTROL Subscription]** tipo mappatura target, senza target definito. Vedere la sezione [Informazioni sul canale e-mail](about-email-channel.md).
@@ -125,22 +124,22 @@ Per registrare i destinatari di un servizio informazioni, è possibile:
 
 * Aggiungi manualmente il servizio: a questo scopo, dal **[!UICONTROL Subscriptions]** del loro profilo, fai clic su **[!UICONTROL Add]** e selezionare il servizio di informazione interessato.
 
-   Per ulteriori informazioni, consulta la sezione sulla modifica del profilo in [questa sezione](../../platform/using/editing-a-profile.md).
+  Per ulteriori informazioni, consulta la sezione sulla modifica del profilo in [questa sezione](../../platform/using/editing-a-profile.md).
 
 * Iscrivi automaticamente un set di destinatari a questo servizio. L’elenco dei destinatari può provenire da un’operazione di filtro, un gruppo, una cartella, un’importazione o una selezione diretta effettuata con il mouse. Per sottoscrivere questi destinatari, seleziona i profili e fai clic con il pulsante destro del mouse. Seleziona **[!UICONTROL Actions > Subscribe selection to a service...]**, selezionare il servizio interessato e avviare l&#39;operazione.
 * Importa i destinatari e abbonali automaticamente a un servizio di informazioni. A questo scopo, seleziona il servizio interessato nell’ultimo passaggio della procedura guidata di importazione.
 
-   Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/executing-import-jobs.md).
+  Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/executing-import-jobs.md).
 
 * Utilizza un modulo web in modo che i destinatari possano abbonarsi a un servizio.
 
-   Per ulteriori informazioni al riguardo, consulta [questa sezione](../../web/using/about-web-applications.md).
+  Per ulteriori informazioni al riguardo, consulta [questa sezione](../../web/using/about-web-applications.md).
 
 * Creazione di un flusso di lavoro di targeting e utilizzo di un **[!UICONTROL Subscription service]** casella.
 
-   ![](assets/s_ncs_user_subscribe_from_wf.png)
+  ![](assets/s_ncs_user_subscribe_from_wf.png)
 
-   I flussi di lavoro e le relative modalità di utilizzo sono descritti in [questa sezione](../../workflow/using/about-workflows.md).
+  I flussi di lavoro e le relative modalità di utilizzo sono descritti in [questa sezione](../../workflow/using/about-workflows.md).
 
 ### Annullamento dell’abbonamento di un destinatario da un servizio {#unsubscribing-a-recipient-from-a-service}
 
@@ -154,7 +153,7 @@ I destinatari possono tuttavia scegliere di annullare l’abbonamento a un servi
 
 Puoi anche annullare manualmente l’abbonamento di un destinatario dal profilo del destinatario. A questo scopo, fai clic su **[!UICONTROL Subscriptions]** scheda del destinatario interessato, selezionare i servizi di informazione interessati e fare clic su **[!UICONTROL Delete]**.
 
-Puoi annullare l’abbonamento di uno o più destinatari tramite il servizio di informazioni interessato. A questo scopo, fai clic su **[!UICONTROL Subscriptions]** del servizio, seleziona i destinatari interessati e fai clic su **[!UICONTROL Delete]**.
+È infine possibile annullare l’abbonamento di uno o più destinatari tramite il servizio di informazioni interessato. A questo scopo, fai clic su **[!UICONTROL Subscriptions]** del servizio, seleziona i destinatari interessati e fai clic su **[!UICONTROL Delete]**.
 
 #### Annullamento automatico dell’iscrizione {#automatic-unsubscription}
 

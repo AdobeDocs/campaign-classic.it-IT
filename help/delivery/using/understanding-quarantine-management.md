@@ -2,20 +2,19 @@
 product: campaign
 title: Informazioni sulla gestione della quarantena
 description: Informazioni sulla gestione della quarantena
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Monitoring, Deliverability
+role: User
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '2997'
+source-wordcount: '3009'
 ht-degree: 12%
 
 ---
 
 # Informazioni sulla gestione della quarantena{#understanding-quarantine-management}
-
-
 
  Adobe Campaign gestisce un elenco di indirizzi in quarantena. I destinatari il cui indirizzo è stato messo in quarantena sono esclusi per impostazione predefinita durante l’analisi della consegna e non saranno oggetto di targeting. Un indirizzo e-mail può essere posto in quarantena, ad esempio, quando la casella di posta è piena o se l’indirizzo non esiste. In ogni caso, la procedura di quarantena è conforme alle norme specifiche descritte di seguito.
 
@@ -35,19 +34,19 @@ Per ulteriori informazioni sulle best practice per proteggere e ottimizzare le c
 
 ### Quarantena e inserisco nell&#39;elenco Bloccati di {#quarantine-vs-denylist}
 
-Elenco Bloccati La quarantena e il non si applicano allo stesso oggetto:
+Inserire nell&#39;elenco Bloccati La quarantena e il non si applicano allo stesso oggetto:
 
 * **Quarantena** si applica solo a un **indirizzo** (o numero di telefono, ecc.), non al profilo stesso. Ad esempio, un profilo con un indirizzo e-mail messo in quarantena può aggiornare il profilo e immettere un nuovo indirizzo, per poi essere nuovamente indirizzato mediante azioni di consegna. Allo stesso modo, se due profili hanno lo stesso numero di telefono, saranno entrambi interessati se il numero viene messo in quarantena.
 
-   Gli indirizzi o i numeri di telefono in quarantena vengono visualizzati nel [registri di esclusione](#identifying-quarantined-addresses-for-a-delivery) (per una consegna) o nella [elenco di quarantena](#identifying-quarantined-addresses-for-the-entire-platform) (per l’intera piattaforma).
+  Gli indirizzi o i numeri di telefono in quarantena vengono visualizzati nel [registri di esclusione](#identifying-quarantined-addresses-for-a-delivery) (per una consegna) o nella [elenco di quarantena](#identifying-quarantined-addresses-for-the-entire-platform) (per l’intera piattaforma).
 
 * Essere sul **inserisco nell&#39;elenco Bloccati**, dall&#39;altro, darà luogo al **profilo** non sono più oggetto della consegna, ad esempio dopo l’annullamento dell’abbonamento (rinuncia) per un determinato canale. Ad esempio, se un profilo nella inserisce nell&#39;elenco Bloccati di invio del canale e-mail presenta due indirizzi e-mail, entrambi gli indirizzi verranno esclusi dalla consegna.
 
-   Puoi verificare se un profilo si trova nel inserisco nell&#39;elenco Bloccati di per uno o più canali nel **[!UICONTROL No longer contact]** sezione del profilo **[!UICONTROL General]** scheda. Vedi [questa sezione](../../platform/using/editing-a-profile.md#general-tab).
+  Puoi verificare se un profilo si trova nel inserisco nell&#39;elenco Bloccati di per uno o più canali nel **[!UICONTROL No longer contact]** sezione del profilo di **[!UICONTROL General]** scheda. Consulta [questa sezione](../../platform/using/editing-a-profile.md#general-tab).
 
 >[!NOTE]
 >
->La quarantena include **[!UICONTROL Denylisted]** stato, che si applica quando i destinatari segnalano il messaggio come spam o rispondono a un messaggio SMS con una parola chiave come &quot;STOP&quot;. In tal caso, l’indirizzo o il numero di telefono del profilo interessato viene messo in quarantena con il **[!UICONTROL Denylisted]** stato. Per ulteriori informazioni sulla gestione dei messaggi STOP SMS, consulta [questa sezione](../../delivery/using/sms-send.md#processing-inbound-messages).
+>La quarantena include **[!UICONTROL Denylisted]** stato, che si applica quando i destinatari segnalano il messaggio come spam o rispondono a un messaggio SMS con una parola chiave come &quot;STOP&quot;. In tal caso, l’indirizzo o il numero di telefono del profilo viene messo in quarantena con il **[!UICONTROL Denylisted]** stato. Per ulteriori informazioni sulla gestione dei messaggi STOP SMS, consulta [questa sezione](../../delivery/using/sms-send.md#processing-inbound-messages).
 
 ## Identificare gli indirizzi messi in quarantena {#identifying-quarantined-addresses}
 
@@ -173,11 +172,10 @@ Di seguito sono riportate le linee guida consigliate per questa query:
 
    * **Testo di errore (testo di quarantena)** contiene &quot;550-5.1.1&quot; E **Testo di errore (testo di quarantena)** contiene &quot;support.ISP.com&quot;
 
-   dove &quot;support.ISP.com&quot; può essere: &quot;support.apple.com&quot; o &quot;support.google.com&quot;, ad esempio
+  dove &quot;support.ISP.com&quot; può essere: &quot;support.apple.com&quot; o &quot;support.google.com&quot;, ad esempio
 
    * **Stato aggiornamento (@lastModified)** il o dopo il GG/MM/AAAA HH:MM:SS AM
    * **Stato aggiornamento (@lastModified)** entro il GG/MM/AAAA HH:MM:SS PM
-
 
 Dopo aver visualizzato l’elenco dei destinatari interessati, aggiungi un **[!UICONTROL Update data]** per impostare lo stato del loro indirizzo e-mail su **[!UICONTROL Valid]** in modo che vengano rimossi dall’elenco di quarantena dal **[!UICONTROL Database cleanup]** flusso di lavoro. Puoi anche semplicemente eliminarli dalla tabella di quarantena.
 
@@ -591,21 +589,21 @@ SR Generic DELIVRD 000|#MESSAGE#
 * Tutti i messaggi di errore iniziano con **SR** per distinguere i codici di errore SMS dai codici di errore e-mail.
 * La seconda parte (**Generico** in questo esempio) del messaggio di errore si riferisce al nome dell’implementazione SMSC, come definito nella **[!UICONTROL SMSC implementation name]** campo dell’account esterno SMS. Consulta [questa pagina](sms-set-up.md#creating-an-smpp-external-account).
 
-   Poiché lo stesso codice di errore può avere un significato diverso per ogni provider, questo campo consente di sapere quale provider ha generato il codice di errore. L’errore è quindi disponibile nella documentazione del provider pertinente.
+  Poiché lo stesso codice di errore può avere un significato diverso per ogni provider, questo campo consente di sapere quale provider ha generato il codice di errore. L’errore è quindi disponibile nella documentazione del provider pertinente.
 
 * La terza parte (**CONSEGNA** in questo esempio) del messaggio di errore corrisponde al codice di stato recuperato dall’SR utilizzando il regex di estrazione dello stato definito nell’account esterno SMS.
 
-   Questo regex è specificato nel **[!UICONTROL SMSC specificities]** dell’account esterno. Consulta [questa pagina](sms-set-up.md#creating-an-smpp-external-account).
+  Questo regex è specificato nel **[!UICONTROL SMSC specificities]** dell’account esterno. Consulta [questa pagina](sms-set-up.md#creating-an-smpp-external-account).
 
-   ![](assets/tech_quarant_error_regex.png)
+  ![](assets/tech_quarant_error_regex.png)
 
-   Per impostazione predefinita, il codice regex estrae **stat:** campo definito dalla **Appendice B** sezione del **Specifiche SMPP 3.4**.
+  Per impostazione predefinita, il codice regex estrae **stat:** campo definito dalla **Appendice B** sezione del **Specifiche SMPP 3.4**.
 
 * La quarta parte (**000** in questo esempio) del messaggio di errore corrisponde al codice di errore estratto dall’SR utilizzando l’estrazione del codice di errore regex definita nell’account esterno SMS.
 
-   Questo regex è specificato nel **[!UICONTROL SMSC specificities]** dell’account esterno. Consulta [questa pagina](sms-set-up.md#creating-an-smpp-external-account).
+  Questo regex è specificato nel **[!UICONTROL SMSC specificities]** dell’account esterno. Consulta [questa pagina](sms-set-up.md#creating-an-smpp-external-account).
 
-   Per impostazione predefinita, il codice regex estrae **errore:** campo definito dalla **Appendice B** sezione del **Specifiche SMPP 3.4**.
+  Per impostazione predefinita, il codice regex estrae **errore:** campo definito dalla **Appendice B** sezione del **Specifiche SMPP 3.4**.
 
 * Tutto ciò che segue il simbolo di barra verticale (|) viene visualizzato solo nel **[!UICONTROL First text]** colonna del **[!UICONTROL Delivery log qualification]** tabella. Questo contenuto viene sempre sostituito da **#MESSAGE#** dopo la normalizzazione del messaggio. Questo processo evita di inserire più voci per errori simili ed è lo stesso delle e-mail. Per ulteriori informazioni, consulta [Qualificazione di mail non recapitate](understanding-delivery-failures.md#bounce-mail-qualification).
 

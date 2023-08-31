@@ -2,20 +2,19 @@
 product: campaign
 title: Coupon personalizzati
 description: Scopri come creare e inserire coupon personalizzati
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Personalization
+role: User
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '897'
 ht-degree: 1%
 
 ---
 
 # Coupon personalizzati{#personalized-coupons}
-
-
 
 L’aggiunta di coupon alle consegne può fornire ai destinatari un valore aggiunto per prodotti e servizi. Puoi utilizzare il modulo coupon di Campaign per creare un set di coupon da aggiungere alle prossime offerte di marketing. Quando sei pronto a creare una consegna, assegna i coupon applicabili. Poiché i coupon sono validi per un periodo selezionato, un coupon assegnato è collegato in modo univoco al relativo messaggio di consegna. Inoltre, Campaign conferma che sono presenti coupon sufficienti per il numero di messaggi prima dell’invio della consegna.
 
@@ -109,13 +108,14 @@ Nell’esempio seguente, la consegna viene creata dalla pagina Home. Per istruzi
 
    * Coupon anonimo: **[!UICONTROL Coupon > Coupon code]**
 
-      ![](assets/deliv_coup_10.png)
+     ![](assets/deliv_coup_10.png)
 
    * Coupon individuale: **[!UICONTROL Coupon value > Coupon code]**
 
-      ![](assets/deliv_coup_11.png)
+     ![](assets/deliv_coup_11.png)
 
-      Il coupon viene inserito nel messaggio come codice anziché come nome assegnato. Il codice viene utilizzato all’interno del modello dati di Campaign ootb.
+     Il coupon viene inserito nel messaggio come codice anziché come nome assegnato. Il codice viene utilizzato all’interno del modello dati di Campaign ootb.
+
    ![](assets/deliv_coup_12.png)
 
 1. Esegui un test per confermare il nome assegnato al coupon. Vai a **[!UICONTROL Preview]** e fai clic su **[!UICONTROL Test personalization]**. Scegli un destinatario per il test.

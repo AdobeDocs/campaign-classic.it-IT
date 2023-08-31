@@ -2,20 +2,19 @@
 product: campaign
 title: Definire la popolazione target
 description: Scopri come definire la popolazione target
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Audiences, Proofs
+role: User
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '1598'
+source-wordcount: '1610'
 ht-degree: 2%
 
 ---
 
 # Definire la popolazione target {#defining-the-target-population}
-
-
 
 Per ogni consegna, puoi definire diversi tipi di popolazioni target:
 
@@ -52,23 +51,23 @@ Per selezionare i destinatari di una consegna, segui i passaggi seguenti:
    * **[!UICONTROL Filtering conditions]** : questa opzione ti consente di definire una query e visualizzare il risultato. Il metodo per definire le query è presentato in [questa sezione](../../platform/using/creating-filters.md#creating-an-advanced-filter).
    * **[!UICONTROL Subscribers of an information service]** : questa opzione ti consente di selezionare una newsletter a cui i destinatari devono iscriversi per essere interessati dalla consegna creata.
 
-      ![](assets/s_ncs_user_wizard_email02c.png)
+     ![](assets/s_ncs_user_wizard_email02c.png)
 
    * **[!UICONTROL Recipients of a delivery]** : questa opzione ti consente di definire i destinatari di una consegna esistente come criterio di targeting. Seleziona quindi la consegna nell’elenco:
 
-      ![](assets/s_ncs_user_wizard_email02d.png)
+     ![](assets/s_ncs_user_wizard_email02d.png)
 
    * **[!UICONTROL Delivery recipients belonging to a folder]** : questa opzione ti consente di selezionare una cartella di consegna e di eseguire il targeting dei destinatari delle consegne in tale cartella.
 
-      ![](assets/s_ncs_user_wizard_email02e.png)
+     ![](assets/s_ncs_user_wizard_email02e.png)
 
-      Puoi filtrare il comportamento dei destinatari selezionando dall’elenco a discesa:
+     Puoi filtrare il comportamento dei destinatari selezionando dall’elenco a discesa:
 
-      ![](assets/s_ncs_user_wizard_email02f.png)
+     ![](assets/s_ncs_user_wizard_email02f.png)
 
-      >[!NOTE]
-      >
-      >Il **[!UICONTROL Include sub-folders]** consente inoltre di eseguire il targeting delle consegne contenute nelle cartelle che si trovano nella struttura ad albero sotto il nodo selezionato.
+     >[!NOTE]
+     >
+     >Il **[!UICONTROL Include sub-folders]** consente inoltre di eseguire il targeting delle consegne contenute nelle cartelle che si trovano nella struttura ad albero sotto il nodo selezionato.
 
    * **[!UICONTROL Recipients included in a folder]** : questa opzione ti consente di eseguire il targeting dei profili contenuti in una cartella specifica della struttura.
    * **[!UICONTROL A recipient]** : questa opzione ti consente di selezionare un destinatario specifico dai profili nel database.
@@ -76,7 +75,7 @@ Per selezionare i destinatari di una consegna, segui i passaggi seguenti:
    * **[!UICONTROL User filters]** : questa opzione ti consente di accedere ai filtri preconfigurati per utilizzarli come criteri di filtro per i profili nel database. I filtri preconfigurati sono presentati in [questa sezione](../../platform/using/creating-filters.md#saving-a-filter).
    * Opzione **[!UICONTROL Exclude recipients corresponding to this segment]** consente di eseguire il targeting di destinatari che non soddisfano i criteri di target definiti. Per utilizzare questa opzione, seleziona la casella appropriata e quindi applica il targeting, come definito in precedenza, per escludere i profili risultanti.
 
-      ![](assets/s_ncs_user_wizard_email02g.png)
+     ![](assets/s_ncs_user_wizard_email02g.png)
 
 1. Immetti un nome per il targeting in **[!UICONTROL Label]** campo. Per impostazione predefinita, l’etichetta corrisponde al primo criterio di targeting. Per una combinazione, è meglio utilizzare un nome esplicito.
 1. Clic **[!UICONTROL Finish]** per convalidare il targeting configurato.
@@ -134,23 +133,23 @@ Sono disponibili le seguenti opzioni:
 
 * **[!UICONTROL Exclude duplicate addresses during delivery]**. Questa opzione è attiva per impostazione predefinita: ti consente di eliminare gli indirizzi e-mail duplicati durante la consegna. La strategia applicata può variare a seconda del modo in cui Adobe Campaign viene utilizzato e del tipo di dati nel database.
 
-   Il valore predefinito dell’opzione può essere configurato per ogni modello di consegna.
+  Il valore predefinito dell’opzione può essere configurato per ogni modello di consegna.
 
-   Ad esempio:
+  Ad esempio:
 
    * Consegna di una newsletter o di un documento elettronico. In alcuni casi non è prevista alcuna esclusione di duplicati se i dati non contengono duplicati nativi. Una coppia che si abbona con lo stesso indirizzo e-mail può aspettarsi di ricevere due specifici messaggi e-mail personalizzati: uno indirizzato a ogni individuo per nome. In questo caso, questa opzione può essere deselezionata.
    * Consegna di una campagna di marketing: la duplicazione dell’esclusione è essenziale per evitare di inviare troppi messaggi allo stesso destinatario. In questo caso, è possibile selezionare questa opzione.
 
-      Se deselezioni questa opzione, puoi accedere a un’altra opzione: **[!UICONTROL Keep duplicate records (same identifier)]**. Ti consente di autorizzare più consegne a destinatari che soddisfano diversi criteri di targeting.
+     Se deselezioni questa opzione, puoi accedere a un’altra opzione: **[!UICONTROL Keep duplicate records (same identifier)]**. Ti consente di autorizzare più consegne a destinatari che soddisfano diversi criteri di targeting.
 
-      ![](assets/s_ncs_user_wizard_email02j.png)
+     ![](assets/s_ncs_user_wizard_email02j.png)
 
 * **[!UICONTROL Exclude recipients who no longer want to be contacted]** , ovvero i destinatari i cui indirizzi e-mail sono in fase di inserisco nell&#39;elenco Bloccati di (&quot;rinuncia&quot;). Questa opzione deve rimanere selezionata al fine di rispettare l&#39;etica professionale dell&#39;e-marketing e le leggi che disciplinano l&#39;e-commerce.
 * **[!UICONTROL Exclude quarantined recipients]**. Questa opzione ti consente di escludere dal target tutti i profili con un indirizzo che non risponde. Si consiglia vivamente di mantenere selezionata questa opzione.
 
-   >[!NOTE]
-   >
-   >Per ulteriori informazioni sulla gestione della quarantena, consulta [Informazioni sulla gestione della quarantena](understanding-quarantine-management.md).
+  >[!NOTE]
+  >
+  >Per ulteriori informazioni sulla gestione della quarantena, consulta [Informazioni sulla gestione della quarantena](understanding-quarantine-management.md).
 
 * **[!UICONTROL Limit delivery]** a un determinato numero di messaggi. Questa opzione consente di immettere il numero massimo di messaggi da inviare. Se il contenuto del target supera il numero di messaggi indicati, viene applicata una selezione casuale.
 

@@ -5,8 +5,9 @@ description: Scopri come risolvere i problemi del canale SMS
 badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: SMS, Troubleshooting
+role: User
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
 source-wordcount: '2756'
 ht-degree: 0%
@@ -14,8 +15,6 @@ ht-degree: 0%
 ---
 
 # Risoluzione dei problemi SMS {#troubleshooting-sms}
-
-
 
 ## Conflitto tra diversi account esterni {#external-account-conflict}
 
@@ -41,11 +40,11 @@ Una volta verificato ogni singolo account, esistono due possibili scenari:
 
   Si è verificato un conflitto tra gli account. Come accennato in precedenza, Adobe Campaign tratta gli account singolarmente, ma il provider può trattarli come un singolo account.
 
-   * Stai utilizzando combinazioni di login/password diverse tra tutti i tuoi account.
-Contattare il provider per diagnosticare potenziali conflitti.
+   * Stai utilizzando diverse combinazioni login/password tra tutti i tuoi account.
+Dovrai contattare il fornitore per diagnosticare potenziali conflitti dalla loro parte.
 
-   * Alcuni degli account esterni condividono la stessa combinazione di login/password.
-Il provider non è in grado di individuare l&#39;account esterno `BIND PDU` proviene da, in modo che tratti tutte le connessioni da più account come un unico. Potrebbero aver indirizzato MO e SR in modo casuale sui due account, causando problemi.
+   * Alcuni account esterni condividono la stessa combinazione login/password.
+Il provider non ha modo di dire da quale account esterno proviene il `BIND PDU` mittente, quindi tratta tutte le connessioni da più account come una sola. Potrebbero aver indirizzato MO e SR in modo casuale sui due account, causando problemi.
 Se il provider supporta più codici brevi per la stessa combinazione di login/password, dovrai chiedere loro dove inserire tale codice breve nella `BIND PDU`. Tieni presente che questa informazione deve essere inserita all’interno del `BIND PDU`, e non in `SUBMIT_SM`, poiché `BIND PDU` è l&#39;unica posizione in cui sarà possibile instradare correttamente i moduli di gestione di rete.
 Consulta la [Informazioni in ogni tipo di PDU](sms-protocol.md#information-pdu) per sapere quale campo è disponibile nella sezione `BIND PDU`, in genere si aggiunge il codice breve in `address_range`, ma questo richiede un supporto speciale da parte del provider. Contattali per sapere in che modo si aspettano di instradare più codici brevi in modo indipendente.
 Adobe Campaign supporta la gestione di più codici brevi sullo stesso account esterno.
@@ -67,9 +66,9 @@ Adobe Campaign supporta la gestione di più codici brevi sullo stesso account es
   ```
 
 * Verificare (nella directory /postupgrade) se il sistema è stato aggiornato e quando
-* Verifica se eventuali pacchetti che influiscono sugli SMS potrebbero essere stati aggiornati di recente (/var/log/dpkg.log).
+* Controlla se i pacchetti che interessano gli SMS potrebbero essere stati aggiornati di recente (/var/log/dpkg.log).
 
-## Problema con il mid-sourcing (in hosting){#issue-mid-sourcing}
+## Problema con il mid-sourcing (ospitato){#issue-mid-sourcing}
 
 * Se il problema si verifica in un ambiente di mid-sourcing, accertati che i registri di consegna e generali siano creati e aggiornati correttamente sul server di mid-sourcing. In caso contrario, non si tratta di un problema SMS.
 
@@ -77,13 +76,13 @@ Adobe Campaign supporta la gestione di più codici brevi sullo stesso account es
 
 ## Problema durante la connessione al provider {#issue-provider}
 
-* Se il `BIND PDU` restituisce un valore diverso da zero `command_status` codice, chiedi al provider ulteriori informazioni.
+* Se restituisce `BIND PDU` un codice diverso da zero `command_status` , chiedere ulteriori informazioni al provider.
 
-* Verificare che la rete sia configurata correttamente in modo da consentire la connessione TCP al provider.
+* Verificare che la rete sia configurata correttamente in modo che la connessione TCP possa essere effettuata al provider.
 
-* Chiedi al provider di verificare che gli IP siano stati aggiunti correttamente al inserisco nell&#39;elenco Consentiti di dell’istanza di Adobe Campaign.
+* Chiedi al provider di verificare che gli IP siano stati aggiunti correttamente alla allowlist del Adobe Campaign istanza.
 
-* Verifica **Account esterno** impostazioni. Chiedi al provider il valore dei campi.
+* Controlla **le impostazioni dei account** esterni. Chiedi al provider il valore dei campi.
 
 * Se la connessione ha esito positivo ma è instabile, controllare [Problema con connessioni instabili](troubleshooting-sms.md#issues-unstable-connection) sezione.
 
@@ -145,9 +144,9 @@ I duplicati sono spesso causati da nuovi tentativi. È normale disporre di dupli
 
 Riduzione della quantità di duplicati in caso di un nuovo tentativo:
 
-* Abbassare la finestra di invio. La finestra di invio deve essere sufficientemente grande da coprire `SUBMIT_SM_RESP` latenza. Il valore rappresenta il numero massimo di messaggi che è possibile duplicare se si verifica un errore mentre la finestra è piena.
+* Abbassa la finestra di invio. La finestra di invio deve essere sufficientemente grande da coprire `SUBMIT_SM_RESP` la latenza. Il suo valore rappresenta il numero massimo di messaggi che possono essere duplicati se si verifica un errore mentre la finestra è piena.
 
-## Problema durante l’elaborazione di SR (conferme di consegna) {#issue-process-SR}
+## Problema durante l&#39;elaborazione di SR (ricevute di consegna) {#issue-process-SR}
 
 * Per eseguire qualsiasi tipo di risoluzione dei problemi SR, è necessario abilitare le tracce SMPP.
 
@@ -157,9 +156,9 @@ Riduzione della quantità di duplicati in caso di un nuovo tentativo:
 
 Se il `DELIVER_SM PDU` non è stato riconosciuto correttamente, è necessario verificare quanto segue:
 
-* Controlla la regex relativa all’estrazione degli ID e all’elaborazione degli errori nel **Account esterno**. Potrebbe essere necessario convalidarli in base al contenuto della `DELIVER_SM PDU`.
+* Controlla la regex relativa all’estrazione degli ID e all’elaborazione degli errori nel **Account esterno**. Potrebbe essere necessario convalidarli rispetto al contenuto di `DELIVER_SM PDU`.
 
-* Verifica che il provisioning degli errori sia stato eseguito correttamente in `broadLogMsg` tabella.
+* Verifica che gli `broadLogMsg` errori siano correttamente forniti nella tabella.
 
 Se il `DELIVER_SM PDU` è stato confermato dal connettore SMPP esteso di Adobe Campaign Classic, ma il broadLog non viene aggiornato correttamente. Controlla il processo di riconciliazione degli ID descritto nella sezione [Voci MT, SR e broadlog corrispondenti](sms-protocol.md#matching-mt).
 
@@ -167,7 +166,7 @@ Se hai corretto tutto ma alcuni SR non validi si trovano ancora nei buffer del p
 
 ## Problema durante l’elaborazione di MO (e blacklist/risposta automatica){#issue-process-MO}
 
-* Abilita le tracce SMPP durante i test. Se non si abilita TLS, è necessario eseguire un&#39;acquisizione di rete durante la risoluzione dei problemi di MO per verificare che le PDU contengano le informazioni corrette e siano formattate correttamente.
+* Abilitare le tracce SMPP durante i test. Se non si abilita TLS, è necessario eseguire un&#39;acquisizione di rete durante la risoluzione dei problemi relativi a MO per verificare che le PDU contengano le informazioni corrette e siano formattate correttamente.
 
 * Quando acquisisci il traffico di rete o analizzi le tracce SMPP, assicurati di acquisire l’intera conversazione con il MO e il relativo messaggio MT di risposta se è configurata una risposta.
 
@@ -237,9 +236,9 @@ Ogni volta che chiedi assistenza su un problema relativo agli SMS, che si tratti
 
 * Prova a riprodurre il problema in un ambiente di test. Se non sei sicuro di un’impostazione, prova nell’ambiente di test e verifica il risultato con le tracce SMPP. In genere è meglio segnalare i problemi replicati negli ambienti di test piuttosto che segnalare direttamente i problemi negli ambienti di produzione.
 
-* Includi eventuali modifiche apportate alla piattaforma. Inoltre, includi eventuali modifiche apportate dal provider al proprio lato.
+* Includi eventuali modifiche o modifiche apportate sulla piattaforma. Inoltre, includi eventuali modifiche che il provider potrebbe aver apportato dalla sua parte.
 
-### Acquisizione di rete {#network-capture}
+### Acquisizione della rete {#network-capture}
 
 L’acquisizione di rete non è sempre necessaria, in genere è sufficiente disporre di messaggi SMPP dettagliati. Di seguito sono riportate alcune linee guida utili per determinare se è necessario acquisire una rete:
 
@@ -296,7 +295,7 @@ In `config-instance.xml` file, impostare i seguenti parametri:
 Per verificare il numero di connessioni aperte in un contenitore, è possibile utilizzare questo comando:
 
 ```
-(for pid in $(ss -neopts  | sed -n ‘s/^.*:3600[ \t].*users:(([0-9A-Za-z”]*,pid=\([0-9]*\),.*$/\1/p’ | sort ); do  cat /proc/$pid/cmdline; echo  ” $pid” ;done;) | uniq --count
+(for pid in $(ss -neopts  | sed -n 's/^.*:3600[ \t].*users:(([0-9A-Za-z"]*,pid=\([0-9]*\),.*$/\1/p' | sort ); do  cat /proc/$pid/cmdline; echo  " $pid" ;done;) | uniq --count
 ```
 
 Elenca il numero di connessioni aperte per una determinata porta. In questo caso viene utilizzata la porta 3600.

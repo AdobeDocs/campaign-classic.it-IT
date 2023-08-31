@@ -2,20 +2,19 @@
 product: campaign
 title: Rendering della casella in entrata in Campaign
 description: Scopri come acquisire i rendering di e-mail e renderli disponibili in un rapporto dedicato
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Inbox Rendering, Monitoring, Email Rendering
+role: User
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: e011333411af79b985166a4e73592a1860749cf1
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '851'
 ht-degree: 9%
 
 ---
 
 # Rendering della casella in entrata{#inbox-rendering}
-
-
 
 ## Informazioni sul rendering della casella in entrata {#about-inbox-rendering}
 
@@ -25,6 +24,7 @@ Per ottenere questo risultato, Adobe Campaign sfrutta [Litmus](https://litmus.co
 
 >[!CAUTION]
 >Il rendering della casella in entrata non è compatibile con [consegne ricorrenti](communication-channels.md#recurring-delivery).
+>
 
 Litmus è un’applicazione di convalida e anteprima delle e-mail ricca di funzioni. Consente ai creatori di contenuti e-mail di visualizzare in anteprima il contenuto dei messaggi in oltre 70 renderer e-mail, ad esempio la casella in entrata Gmail o il client Apple Mail.
 
@@ -90,7 +90,6 @@ Ogni volta che utilizza **[!UICONTROL Inbox rendering]** in una consegna, ogni r
 >* Ogni volta che viene generato il report di rendering della casella in entrata, viene dedotto un token per ogni client di messaggistica: un token per il rendering di Outlook 2000, uno per il rendering di Outlook 2010, uno per il rendering di Apple Mail 9 e così via.
 >* Per la stessa consegna, se generi nuovamente il rendering della casella in entrata, il numero di token disponibili viene nuovamente diminuito del numero di rendering generati.
 >
-
 
 Il numero di token rimanenti disponibili viene visualizzato in **[!UICONTROL General summary]** del [Rapporto di rendering della casella in entrata](#inbox-rendering-report).
 

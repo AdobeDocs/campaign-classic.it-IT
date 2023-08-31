@@ -2,20 +2,19 @@
 product: campaign
 title: Passaggi chiave per inviare un’e-mail
 description: Scopri come confermare la consegna di un’e-mail e scoprire le specificità della consegna dei messaggi e-mail
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Email
+role: User
 exl-id: c75a5ea2-8d62-4f98-bccd-7116a4d404fd
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 0%
+source-wordcount: '226'
+ht-degree: 1%
 
 ---
 
 # Passaggi chiave per inviare un’e-mail {#key-steps-to-send-an-email}
-
-
 
 Una volta creata e configurata l’e-mail, puoi inviarla al target principale. Questa sezione descrive i passaggi principali per verificare e confermare la consegna di un’e-mail.
 

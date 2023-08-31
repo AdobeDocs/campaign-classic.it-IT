@@ -2,24 +2,24 @@
 product: campaign
 title: Protocollo e impostazioni del connettore SMS
 description: Ulteriori informazioni sul connettore SMS e su come configurarlo
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: SMS
+role: Developer, Data Engineer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '8460'
+source-wordcount: '8458'
 ht-degree: 1%
 
 ---
 
 # Protocollo e impostazioni del connettore SMS {#sms-connector-protocol}
 
-
-
 >[!NOTE]
 >
 >Attraverso questo documento, tutti i riferimenti ai dettagli del protocollo, i nomi dei campi e i valori fanno riferimento al [Specifiche SMPP 3.4](https://smpp.org/SMPP_v3_4_Issue1_2.pdf).
+>
 
 ## Panoramica {#overview}
 
@@ -452,7 +452,7 @@ La traslitterazione è il processo di ricerca di caratteri equivalenti a quelli 
 
 Se questa casella non è selezionata, la codifica del testo avrà esito negativo se non è in grado di codificare la stringa esattamente come è.
 
-Se questa casella è selezionata, la codifica del testo tenterà di convertire la stringa in una versione approssimativa, senza errori. Se alcuni caratteri non hanno un equivalente nella codifica di destinazione, la codifica del testo avrà esito negativo.
+Se questa casella è selezionata, la codifica del testo tenterà di convertire la stringa in una versione approssimativa anziché non riuscire. Se alcuni caratteri non hanno un equivalente nella codifica di destinazione, la codifica del testo avrà esito negativo.
 
 Consulta la [Definire una mappatura specifica delle impostazioni di codifica](sms-protocol.md#SMSC-specifics) per una spiegazione più generale del processo di codifica.
 
@@ -832,17 +832,16 @@ Anche se non riesci a controllare i registri autonomamente, sarà più facile pe
 ### Verifica l’SMS {#test}
 
 * **Inviare SMS con tutti i tipi di caratteri**
-Se devi inviare un SMS con caratteri non GSM o non ASCII, prova a inviare alcuni messaggi con il maggior numero possibile di caratteri diversi. Se imposti una tabella di mappatura caratteri personalizzata, invia almeno un SMS per tutti i possibili 
-`data_coding` values.
+Se devi inviare un SMS con caratteri non GSM o non ASCII, prova a inviare alcuni messaggi con il maggior numero possibile di caratteri diversi. Se imposti una tabella di mappatura caratteri personalizzata, invia almeno un SMS per tutti i possibili `data_coding` valori.
 
 * **Verifica che gli SR siano elaborati correttamente**
-L’SMS deve essere contrassegnato come ricevuto nel registro di consegna. Il registro di consegna deve avere esito positivo e avere un aspetto simile al seguente: Verifica di aver modificato il nome del provider di consegna. Il registro di consegna non deve mai contenere    `SR yourProvider stat=DELIVRD err=000|#MESSAGE`
+L’SMS deve essere contrassegnato come ricevuto nel registro di consegna. Il registro di consegna deve avere esito positivo e avere un aspetto simile al seguente:
+  `SR yourProvider stat=DELIVRD err=000|#MESSAGE`
 Verifica di aver modificato il nome del provider di consegna. Il registro di consegna non deve mai contenere **SR generico** negli ambienti di produzione.
 
 * **Verifica che i messaggi MO siano elaborati**
 Se devi elaborare messaggi MO (risposte automatiche, memorizzazione di messaggi MO nel database, ecc.) prova a fare alcuni test. Invia alcuni SMS per tutte le parole chiave di risposta automatica e controlla se la risposta è abbastanza veloce, non più di qualche secondo.
-Archivia il registro che Adobe Campaign risponde con un 
-`DELIVER_SM_RESP` (command_status=0).
+Archivia il registro che Adobe Campaign risponde con un `DELIVER_SM_RESP` (command_status=0).
 
 ### Controllare le PDU {#check-pdus}
 

@@ -5,8 +5,9 @@ description: Scopri l’ambito e le specificità dell’invio di e-mail con MTA 
 badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Email
+role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: e83d85a26a5c8dd26ea2468246ef448edf8fee9b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
 source-wordcount: '1352'
 ht-degree: 4%
@@ -14,8 +15,6 @@ ht-degree: 4%
 ---
 
 # Invio con MTA avanzato {#sending-with-enhanced-mta}
-
-
 
 Il **MTA avanzato di Adobe Campaign** (Mail Transfer Agent) fornisce un’infrastruttura di invio aggiornata che consente di migliorare il recapito messaggi, la reputazione, la velocità effettiva, il reporting, la gestione dei messaggi non recapitati, l’incremento graduale dell’IP e la gestione delle impostazioni di connessione.
 

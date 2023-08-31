@@ -2,20 +2,19 @@
 product: campaign
 title: SpamAssassin
 description: Scopri come impostare il rilevamento di posta indesiderata con SpamAssassin
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Email, Deliverability
+role: User
 exl-id: 8be6836d-f7dc-4199-b2b2-b6a9cac9d162
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 6%
+source-wordcount: '267'
+ht-degree: 7%
 
 ---
 
 # SpamAssassin{#spamassassin}
-
-
 
 Adobe Campaign può essere configurato per funzionare con [SpamAssassin](https://spamassassin.apache.org), servizio di terze parti utilizzato per il filtro dello spam nelle e-mail. Ciò ti consente di valutare le e-mail per determinare se un messaggio corre il rischio di essere considerato come spam dagli strumenti anti-spam utilizzati al momento della ricezione.
 

@@ -2,20 +2,19 @@
 product: campaign
 title: Configurare il canale SMS di Campaign
 description: Scopri come configurare il canale SMS in Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: SMS
+role: User, Developer, Admin
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '1734'
 ht-degree: 34%
 
 ---
 
 # Configurare il canale SMS {#setting-up-sms-channel}
-
-
 
 Per inviare a un telefono cellulare, è necessario:
 
@@ -349,7 +348,7 @@ Per evitare questo problema, applica una delle seguenti soluzioni, a seconda del
 * Crea un account provider per ogni account esterno.
 * Utilizza il **[!UICONTROL System type]** campo da **[!UICONTROL Mobile]** > **[!UICONTROL Connection settings]** per distinguere ciascun codice breve. Chiedi al tuo provider un valore diverso per ogni account.
 
-   ![](assets/extended_smpp_system-type.png)
+  ![](assets/extended_smpp_system-type.png)
 
 I passaggi per configurare un account esterno utilizzando il connettore SMPP generico esteso sono descritti in [Creare un account esterno SMPP](#creating-an-smpp-external-account) sezione.
 
