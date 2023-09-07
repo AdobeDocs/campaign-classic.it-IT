@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaig
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 155fbcd2846cfc5a8db25194bd8d7007356db24e
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 99%
+source-wordcount: '1869'
+ht-degree: 57%
 
 ---
 
@@ -18,9 +18,77 @@ ht-degree: 99%
 
 In questa pagina sono elencate nuove funzionalità, miglioramenti e correzioni introdotti con l’**ultima versione di Campaign v7**. Ogni nuova build viene fornita con uno stato che viene materializzato da un colore. Ulteriori informazioni sugli stati della build di Campaign Classic v7 in [questa pagina](rn-overview.md).
 
-## Versione 7.3.3 - Build 9359 {#release-7-3-3}
+## Versione 7.3.4 - Build 9364 {#release-7-3-4}
 
 [!BADGE Disponibilità generale]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Disponibilità generale"}
+
+>[!CAUTION]
+>
+>L’aggiornamento della console client è obbligatorio. Scopri come aggiornare la console client in questa [pagina](../../installation/using/installing-the-client-console.md).
+>
+> Se sta usando [Campaign - Connettore Microsoft Dynamics CRM](../../platform/using/crm-connectors.md), con questa nuova build è necessario aggiornare sia i server di marketing che quelli di mid-sourcing.
+
+_7 settembre 2023_
+
+**Miglioramento della sicurezza**
+
+* La sicurezza è stata migliorata nelle API IMS. Le informazioni sensibili per il client (ad esempio i token di accesso) sono state rimosse dai parametri URL. Queste credenziali vengono ora inviate nell’intestazione dei dati post o dell’autorizzazione, garantendo un processo di comunicazione più sicuro. (NEO-63045)
+* È stata migliorata la sicurezza nelle app web per prevenire gli attacchi DDOS. (NEO-50757)
+* È stata migliorata la sicurezza per evitare che i dati PII vengano esposti negli errori dei registri web. (NEO-46827)
+* La sicurezza è stata ottimizzata per impedire l’inclusione del token di sicurezza nell’URL della pagina Home di Campaign. (NEO-38519)
+
+**Aggiornamenti della compatibilità**
+
+* Tomcat è stato aggiornato alla versione 8.5.91
+* La libreria libexpat è stata aggiornata alla versione 2.5.0 per migliorare la sicurezza. (NEO-51023)
+
+**Miglioramenti**
+
+* Il parametro MaxWorkingSetMb nel file di configurazione del server (serverConf.xml) è stato modificato per ottimizzare l’allocazione della memoria per le consegne. (NEO-49204)
+* L’account esterno BigQuery è stato migliorato con nuove opzioni utilizzate per configurare l’SDK GCloud. (NEO-63879) [Ulteriori informazioni](../../installation/using/configure-fda-google-big-query.md#google-external)
+* Una nuova `cusHeader` nel file di configurazione del server (serverConf.xml). Consente di aggiungere intestazioni personalizzate durante il caricamento di un file da un server esterno. (NEO-58339) [Ulteriori informazioni](../../installation/using/the-server-configuration-file.md#cusheaders).
+* La gestione del registro di tracciamento è stata migliorata per evitare ID negativi per lastMsgId. È stato modificato da int32 a int64. (NEO-52290)
+* Il flusso di lavoro di mid-sourcing (statistiche di consegna) è stato aggiunto come preconfigurato. Questo nuovo flusso di lavoro sincronizza i dati statistici di consegna (nms:deliveryStat) dal mid all’istanza di marketing. (NEO-36802)
+
+**Patch**
+
+* È stato risolto un problema che poteva verificarsi quando una richiesta di servizio veniva effettuata prima dell’accesso IMS, se l’autenticazione della chiamata della richiesta di servizio utilizzava un token di servizio. (NEO-64903)
+* È stato risolto un problema di regressione che poteva causare problemi di scorrimento durante l’utilizzo dell’Editor di contenuti digitali. (NEO-64671, NEO-59256)
+* È stato risolto un problema di regressione che si verificava quando si incollava contenuto da Excel a Digital Content Editor. (NEO-63287)
+* È stato risolto un problema che poteva impedire la corretta visualizzazione delle applicazioni web in modalità di compatibilità v5. (NEO-63174)
+* È stato risolto un problema che impediva agli operatori non amministratori di inviare consegne WebAnalytics. (NEO-62750)
+* È stato risolto un problema che impediva ai browser di aggiungere spazi aggiuntivi durante l’utilizzo di contenuto condizionale in una consegna. (NEO-62132)
+* È stato risolto un problema di regressione che impediva il corretto funzionamento del calcolo del contatto attivo nel flusso di lavoro Fatturazione quando si utilizzavano schemi di destinazione associati a più schemi di registro. (NEO-61468)
+* È stato risolto un problema che poteva causare un errore e impedire lo scorrimento durante la modifica del contenuto di una consegna. (NEO-61364)
+* È stato risolto un problema che causava l’apertura di una finestra a comparsa quando si faceva clic su un’immagine nell’editor dei contenuti e-mail. (NEO-60752)
+* È stato risolto un problema che poteva causare la codifica errata in diversi browser dei caratteri speciali nel contenuto HTML di una consegna. (NEO-60081)
+* È stato risolto un problema di sincronizzazione che poteva verificarsi durante l’utilizzo dell’attività del flusso di lavoro inSMS. (NEO-59544)
+* È stato risolto un problema che si verificava con l’utilizzo del connettore Big Query con campi timestamp o datetime. (NEO-59502, NEO-49768)
+* È stato risolto un problema che impediva l’utilizzo dei rapporti di consegna cumulativi. (NEO-59211)
+* È stato risolto un problema che poteva causare errori durante la condivisione dei tipi di pubblico con il servizio core People. (NEO-58637)
+* È stato risolto un problema che si verificava durante la visualizzazione della pagina speculare di una consegna. (NEO-58325)
+* È stato risolto un problema che impediva il funzionamento dell’espressione XtkLibrary.Right() xtk. (NEO-57870)
+* È stato risolto un problema che causava la modifica dell’attributo di stile del tag body durante il caricamento di un’immagine nell’Editor di contenuti digitali. (NEO-57697)
+* È stato risolto un problema relativo ai caratteri speciali durante l’esecuzione di esportazioni batch con l’attività del connettore di gestione delle relazioni con i clienti. (NEO-54300)
+* È stato risolto un problema che impediva il funzionamento del caricamento in blocco con i tipi di dati &quot;stringa&quot; quando si utilizzava un’attività di caricamento dati e il connettore Big Query. (NEO-53748)
+* È stato risolto un problema relativo alla chiave della cache che poteva causare problemi di rendering delle offerte. (NEO-51516, NEO-49995)
+* È stato risolto un problema che poteva causare un errore di convalida durante l’invio di una consegna direct mailing utilizzando targetMapping con approvazioni. (NEO-50758)
+* È stato risolto un problema di gestione delle query che poteva influire sulle prestazioni di consegna. (NEO-49991)
+* È stato risolto un problema che si verificava durante l’utilizzo di account esterni nelle attività di consegna del flusso di lavoro della campagna e che poteva causare problemi di configurazione dell’account esterno. (NEO-49959)
+* È stato risolto un problema di prestazioni che si verificava durante l’invio di notifiche push. (NEO-49953) È stato risolto un problema che poteva causare la visualizzazione errata dei caratteri giapponesi durante l’esportazione dei rapporti (NEO-49308).
+* È stato risolto un problema che causava la visualizzazione di troppi dettagli sull’errore nel report Tomcat. (NEO-49029)
+* È stato risolto un problema che poteva causare un errore di consegna se si utilizzava un numero elevato di offerte. (NEO-48807)
+* È stato risolto un problema che poteva impedire il **Aggiorna dati** il corretto funzionamento dell’attività del flusso di lavoro. (NEO-48140)
+* È stato risolto un problema che poteva impedire la sincronizzazione dei dati di tracciamento dei clic per le consegne tramite un account esterno diverso dall’e-mail.(NEO-47277)
+* È stato risolto un problema che poteva impedire la sincronizzazione dei registri di tracciamento in tempo reale nell’istanza marketing del Centro messaggi. (NEO-42540)
+* È stato risolto un problema che impediva la visualizzazione del prefisso dell’area di lavoro nella finestra di individuazione di uno schema, per le tabelle del database di Snowflake. (NEO-40297)
+* È stato risolto un problema che impediva `<img-amp>` funzionamento dei tag nel contenuto delle e-mail. (NEO-38685)
+* È stato risolto un problema che poteva causare un errore nel flusso di lavoro di archiviazione del Centro messaggi quando si utilizzava un inoltro HTTP. (NEO-33783)
+* È stato risolto un problema che poteva causare errori nel nome del font e nelle dimensioni nell’editor del contenuto dell’e-mail. (NEO-61342)
+
+## Versione 7.3.3 - Build 9359 {#release-7-3-3}
+
+[!BADGE Disponibilità limitata]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Disponibilità limitata"}
 
 >[!CAUTION]
 >
