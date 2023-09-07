@@ -9,10 +9,10 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: e5ed96cc-3fc7-4af4-a29e-5a4c81f4fe39
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 2%
+source-wordcount: '978'
+ht-degree: 3%
 
 ---
 
@@ -102,3 +102,7 @@ Esempio di valori possibili:
 * America/New_York, ecc.
 
   Questi valori vengono ricavati dal database tz (Olson). Per ulteriori informazioni, consulta [https://en.wikipedia.org/wiki/List_of_tz_database_time_zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+
+## Fuso orario del database e del server Oracle
+
+Per il database principale, Campaign utilizza il fuso orario del server per impostare il fuso orario della sessione nella connessione al database. L&#39;opzione &quot;WdbcTimeZone&quot; non ha alcun impatto. Pertanto, il fuso orario del server deve corrispondere a quello del database principale utilizzato da Campaign. Se non è possibile modificare il fuso orario del server, quello utilizzato da Campaign può essere sovrascritto impostando la variabile di ambiente TZ in customer.sh.

@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '4012'
+source-wordcount: '4004'
 ht-degree: 6%
 
 ---
@@ -696,7 +696,7 @@ Il **[!UICONTROL Administration / Platform / Options]** consente di configurare 
     <ul> 
      <li> <p> <span class="uicontrol">Tipo di dati:</span> Intero</p> </li> 
      <li> <p> <span class="uicontrol">Valore (testo)</span> : 1 </p> </li> 
-    </ul> Utilizza questa opzione solo se la struttura di navigazione predefinita ha subito troppe modifiche.<br /> Per ulteriori informazioni al riguardo, consulta <a href="../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11">questa sezione</a>.<br /> </td> 
+    </ul> Utilizza questa opzione solo se la struttura di navigazione predefinita ha subito troppe modifiche.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLastErrorStatCoalesce</span> <br /> </td> 

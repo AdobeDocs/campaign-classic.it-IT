@@ -8,10 +8,10 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '7962'
-ht-degree: 42%
+source-wordcount: '8056'
+ht-degree: 41%
 
 ---
 
@@ -43,6 +43,7 @@ I primi parametri si trovano all&#39;interno del **condiviso** nodo. Sono correl
 * [proxyConfig](#proxyconfig)
 * [threadPool](#threadpool)
 * [urlPermission](#urlpermission)
+* [cusHeaders](#cusheaders)
 * [xtkJobs](#xtkjobs)
 
 **Altri parametri**
@@ -997,6 +998,29 @@ Per ulteriori informazioni, consulta [Protezione delle connessioni in uscita](..
   </tr> 
  </tbody> 
 </table>
+
+## cusHeaders {#cusheaders}
+
+Questo nodo consente di aggiungere intestazioni specifiche nelle richieste eseguite durante il caricamento di un file da un server esterno. Content Delivery Networks (CND) può richiedere un&#39;intestazione specifica per considerare attendibile il richiedente. Queste intestazioni possono essere utilizzate per migliorare l’attendibilità sulle richieste di Campaign, in particolare durante il download di documenti personalizzati per ciascun destinatario nella fase di esecuzione della consegna. Un numero elevato di richieste di download di risorse può essere interpretato come un attacco DDos. dnsPattern consente di impostare nomi e valori di intestazione specifici per diverse CDN in base al nome di dominio.
+
+```
+  <!-- List of custom headers added to request. 
+         -->
+    <cusHeaders>
+
+    <!-- Pattern of DNS name or domain 
+         value :  dnsPattern: All or part of the URL's domain to verify, * is a wild card Default:  -->
+      <dnsPattern value="">
+
+    <!-- Header Name and Value 
+           headerName :  Header Name 
+           headerValue :  Header Value -->
+        <headerDef headerName="" headerValue=""/>
+
+      </dnsPattern>
+
+    </cusHeaders> 
+```
 
 ### url {#url}
 
@@ -2618,7 +2642,7 @@ Di seguito sono riportati i diversi parametri di **tracciamento** nodo. Configur
   </tr> 
   <tr> 
    <td> blockRedirectForUnsignedTrackingLink<br /> </td> 
-   <td> Disattiva gli URL non validi generati dalle build precedenti.<br /> </td> 
+   <td> Disattiva gli URL non validi generati da build precedenti.<br /> </td> 
    <td> Booleano<br /> </td> 
    <td> falso<br /> </td> 
   </tr> 

@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '2002'
-ht-degree: 3%
+source-wordcount: '1998'
+ht-degree: 4%
 
 ---
 
@@ -57,7 +57,7 @@ Ad esempio, utilizzando le informazioni sul server tratte dalla schermata della 
 
 * Un aggiornamento della build richiederebbe il passaggio dalla build 9342 a qualsiasi build maggiore di 9342. Ad esempio, da v7.1 a v7.1 build 9342
 
-* Un aggiornamento della versione richiederebbe il passaggio dalla versione 6 a una versione più recente.  Ad esempio: da v6.1.1 a v7.1 build 9342.
+* Un aggiornamento della versione richiederebbe il passaggio da una versione principale precedente a una versione più recente.
 
 ## È necessario eseguire il backup dei dati prima di questi aggiornamenti?
 
