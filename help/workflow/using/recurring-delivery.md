@@ -2,13 +2,13 @@
 product: campaign
 title: Consegna ricorrente
 description: Ulteriori informazioni sull’attività del flusso di lavoro Consegna ricorrente
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 05210269da2a32310c19911a3bc32240c84dc7ad
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 17%
+source-wordcount: '277'
+ht-degree: 19%
 
 ---
 
@@ -34,7 +34,7 @@ Il processo di configurazione per questa attività è simile a quello della crea
 
 Per un esempio di questa attività in uso, fai riferimento a questo [sezione](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
-## Come impostare la consegna ricorrente
+## Come impostare la consegna ricorrente {#set-up-recurring-delivery}
 
 A **consegna ricorrente** creerà una nuova istanza di consegna ogni volta che viene eseguita. Ad esempio, se il flusso di lavoro è pianificato per essere eseguito una volta alla settimana, in un anno si otterranno 52 consegne. Ciò significa anche che i log ampi e quelli di tracciamento saranno separati per ogni istanza di consegna.
 
@@ -46,9 +46,9 @@ Se desideri interrompere l’esecuzione di una consegna ricorrente, devi annulla
 >
 >Non è possibile inviare una bozza da un **[!UICONTROL Recurring delivery]** attività di tipo.
 > 
->Per creare direttamente una consegna tramite un flusso di lavoro della campagna, utilizza le attività specifiche del canale preconfigurate (ad esempio **[!UICONTROL Email delivery]**).
+>Per creare direttamente una consegna tramite un flusso di lavoro della campagna, utilizza le attività specifiche del canale preconfigurate (ad esempio **[!UICONTROL Recurring delivery]**).
 
-## Video tutorial (#recurring-delivery-video)
+## Video tutorial {#recurring-delivery-video}
 
 Questo video spiega come configurare una consegna ricorrente e un’attività di pianificazione.
 
