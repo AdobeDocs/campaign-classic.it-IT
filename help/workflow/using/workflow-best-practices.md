@@ -2,13 +2,13 @@
 product: campaign
 title: Best practice per i flussi di lavoro
 description: Scopri le best practice per i flussi di lavoro di Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 1baf424138c95b16add37d9d556e3a2566a869c2
 workflow-type: tm+mt
-source-wordcount: '1687'
-ht-degree: 12%
+source-wordcount: '1385'
+ht-degree: 15%
 
 ---
 
@@ -30,17 +30,17 @@ Sono disponibili due soluzioni aggiuntive:
 
 * **Mantieni il risultato delle popolazioni provvisorie tra due esecuzioni**
 
-   Questa opzione mantiene le tabelle temporanee tra due esecuzioni di un flusso di lavoro. È disponibile nelle proprietà del flusso di lavoro&quot; **[!UICONTROL General]** e può essere utilizzato a scopo di sviluppo e test per monitorare i dati e verificare i risultati. Puoi utilizzare questa opzione negli ambienti di sviluppo ma mai negli ambienti di produzione. Mantenere tabelle temporanee potrebbe comportare un aumento significativo delle dimensioni del database e, in ultima analisi, il raggiungimento del limite consentito. Inoltre, rallenterà il backup.
+  Questa opzione mantiene le tabelle temporanee tra due esecuzioni di un flusso di lavoro. È disponibile nelle proprietà del flusso di lavoro&quot; **[!UICONTROL General]** e può essere utilizzato a scopo di sviluppo e test per monitorare i dati e verificare i risultati. Puoi utilizzare questa opzione negli ambienti di sviluppo ma mai negli ambienti di produzione. Mantenere tabelle temporanee potrebbe comportare un aumento significativo delle dimensioni del database e, in ultima analisi, il raggiungimento del limite consentito. Inoltre, rallenterà il backup.
 
-   Vengono mantenute solo le tabelle di lavoro dell’ultima esecuzione del flusso di lavoro. Le tabelle di lavoro delle esecuzioni precedenti vengono eliminate dal **[!UICONTROL cleanup]** flusso di lavoro, eseguito su base giornaliera.
+  Vengono mantenute solo le tabelle di lavoro dell’ultima esecuzione del flusso di lavoro. Le tabelle di lavoro delle esecuzioni precedenti vengono eliminate dal **[!UICONTROL cleanup]** flusso di lavoro, eseguito su base giornaliera.
 
-   >[!CAUTION]
-   >
-   >Questa opzione non deve mai essere selezionata in un flusso di lavoro di produzione. Viene utilizzata per analizzare i risultati ed è progettata solo a scopo di test e quindi deve essere utilizzata solo in ambienti di sviluppo o di staging.
+  >[!CAUTION]
+  >
+  >Questa opzione non deve mai essere selezionata in un flusso di lavoro di produzione. Viene utilizzata per analizzare i risultati ed è progettata solo a scopo di test e quindi deve essere utilizzata solo in ambienti di sviluppo o di staging.
 
 * **Registra le query SQL nel giornale di registrazione**
 
-   Disponibile in **[!UICONTROL Execution]** scheda delle proprietà del flusso di lavoro, questa opzione registra tutte le query SQL generate dallo strumento dalle diverse attività. È un buon modo per vedere cosa viene effettivamente eseguito dalla piattaforma. Tuttavia, questa opzione deve essere utilizzata solo temporaneamente durante lo sviluppo e non deve essere attivata durante la produzione.
+  Disponibile in **[!UICONTROL Execution]** scheda delle proprietà del flusso di lavoro, questa opzione registra tutte le query SQL generate dallo strumento dalle diverse attività. È un buon modo per vedere cosa viene effettivamente eseguito dalla piattaforma. Tuttavia, questa opzione deve essere utilizzata solo temporaneamente durante lo sviluppo e non deve essere attivata durante la produzione.
 
 Elimina i registri quando non sono più necessari. La cronologia del flusso di lavoro non viene eliminata automaticamente: tutti i messaggi vengono conservati per impostazione predefinita. La cronologia può essere eliminata tramite **[!UICONTROL File > Actions]** oppure facendo clic sul pulsante Azioni nella barra degli strumenti sopra l&#39;elenco. Selezionare Rimuovi cronologia.
 Per informazioni su come eliminare i registri, consulta questa [documentazione](starting-a-workflow.md).
@@ -53,23 +53,6 @@ Per informazioni su come eliminare i registri, consulta questa [documentazione](
 * Per ridurre i tempi di esecuzione complessivi, sostituisci le attività che richiedono tempo con attività semplificate e più veloci.
 * Evita di eseguire più di 20 flussi di lavoro simultaneamente. Quando vengono eseguiti troppi flussi di lavoro contemporaneamente, il sistema può esaurire le risorse e diventare instabile. Per ulteriori informazioni sul motivo per cui il flusso di lavoro potrebbe non essere avviato, consulta questa [articolo](https://helpx.adobe.com/ie/campaign/kb/workflows-not-starting-in-a-campaign-technical-workflows.html).
 
-### Esecuzione di un flusso di lavoro {#workflow-execution}
-
-**Non pianificare l&#39;esecuzione di un flusso di lavoro ogni 15 minuti** perché potrebbe ostacolare le prestazioni complessive del sistema e creare blocchi nel database.
-
-**Evitare di lasciare i flussi di lavoro in stato di pausa**. Se crei un flusso di lavoro temporaneo, assicurati che possa terminare correttamente e non rimanere in un **[!UICONTROL paused]** stato. Se viene messo in pausa, implicherebbe la necessità di mantenere le tabelle temporanee e quindi aumentare le dimensioni del database. Assegna supervisori flusso di lavoro in Proprietà flusso di lavoro per inviare un avviso quando un flusso di lavoro non riesce o viene messo in pausa dal sistema.
-
-Per evitare che i flussi di lavoro si trovino in stato di pausa:
-
-* Controlla i flussi di lavoro regolarmente per assicurarti che non si verifichino errori imprevisti.
-* Mantieni i flussi di lavoro il più semplici possibile, ad esempio suddividendo flussi di lavoro di grandi dimensioni in diversi flussi di lavoro. È possibile utilizzare **[!UICONTROL External signal]** Le attività attivano la loro esecuzione in base all’esecuzione di altri flussi di lavoro.
-* Evita di disabilitare le attività con i flussi nei flussi di lavoro, lasciando aperti i thread e portando a molte tabelle temporanee che possono occupare molto spazio. Non mantenere le attività in **[!UICONTROL Do not enable]** o **[!UICONTROL Enable but do not execute]** nei flussi di lavoro.
-
-**Interrompere i flussi di lavoro inutilizzati**. I flussi di lavoro in esecuzione gestiscono le connessioni al database.
-
-**Utilizza l’interruzione incondizionata solo nei casi più rari**. Non utilizzi questa azione regolarmente. La mancata esecuzione di una chiusura pulita delle connessioni generate dai flussi di lavoro al database influisce sulle prestazioni.
-
-**Non eseguire più richieste di arresto sullo stesso flusso di lavoro**. L’arresto di un flusso di lavoro è un processo asincrono: la richiesta viene registrata, quindi il server o i server del flusso di lavoro annullano le operazioni in corso. L&#39;arresto di un&#39;istanza del flusso di lavoro può quindi richiedere tempo, soprattutto se il flusso di lavoro è in esecuzione su più server, ognuno dei quali deve assumere il controllo per annullare le attività in corso. Per evitare problemi, attendi il completamento dell’operazione di arresto ed evita di arrestare più volte un flusso di lavoro.
 
 ### Esegui nel motore, opzione {#execute-in-the-engine-option}
 
@@ -135,14 +118,14 @@ Workflow HeatMap consente agli amministratori della piattaforma Adobe Campaign d
 
 Durante lo sviluppo del flusso di lavoro, tutte le attività avranno un nome, così come tutti gli oggetti di Adobe Campaign. Mentre il nome viene generato dallo strumento, è consigliabile rinominarlo con un nome esplicito durante la configurazione. Se lo facesse in un secondo momento, potrebbe interrompere il flusso di lavoro con le attività che utilizzano il nome di un’altra attività precedente. Sarebbe quindi difficile aggiornare i nomi in seguito.
 
-Il nome dell’attività si trova nella sezione **[!UICONTROL Advanced]** scheda. Non lasciarle con il nome **[!UICONTROL query]**, **[!UICONTROL query1]**, **[!UICONTROL query11]**, ma assegna loro nomi espliciti quali **[!UICONTROL querySubscribedRecipients]**. Questo nome verrà visualizzato nel giornale di registrazione e, se applicabile, nei registri SQL e sarà utile per eseguire il debug del flusso di lavoro durante la configurazione.
+Il nome dell’attività si trova nella sezione **[!UICONTROL Advanced]** scheda. Non lasciarle chiamate **[!UICONTROL query]**, **[!UICONTROL query1]**, **[!UICONTROL query11]**, ma assegna loro nomi espliciti quali **[!UICONTROL querySubscribedRecipients]**. Questo nome verrà visualizzato nel giornale di registrazione e, se applicabile, nei registri SQL e sarà utile per eseguire il debug del flusso di lavoro durante la configurazione.
 
 ### Prima e ultima attività {#first-and-last-activities}
 
 * Avvia sempre il flusso di lavoro con un **[!UICONTROL Start]** attività o un **[!UICONTROL Scheduler]** attività. Se necessario, puoi anche utilizzare un’ **[!UICONTROL External signal]** attività.
 * Durante la creazione del flusso di lavoro, utilizza un solo **[!UICONTROL Scheduler]** attività per ramo. Se lo stesso ramo di un flusso di lavoro include più pianificatori (collegati tra loro), il numero di attività da eseguire verrà moltiplicato in modo esponenziale, il che sovraccaricherebbe notevolmente il database. Questa regola si applica anche a tutte le attività con **[!UICONTROL Scheduling & History]** scheda. Ulteriori informazioni su [Pianificazione](scheduler.md).
 
-   ![](assets/wf-scheduler.png)
+  ![](assets/wf-scheduler.png)
 
 * Utilizzare **[!UICONTROL End]** per ogni flusso di lavoro. Questo consente ad Adobe Campaign di liberare spazio temporaneo utilizzato per i calcoli all’interno dei flussi di lavoro. Per ulteriori informazioni, consulta: [Inizio e fine](start-and-end.md).
 
