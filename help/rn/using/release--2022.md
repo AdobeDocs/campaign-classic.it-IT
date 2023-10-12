@@ -5,8 +5,9 @@ description: Ulteriori informazioni sulle versioni di Campaign Classic 2022
 feature: Release Notes
 role: User
 level: Beginner
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+exl-id: 28490323-41d0-4d61-b309-6892fb826d21
+source-git-commit: 2a1ba4b2d11eb953d2533d06786c1464c9cf64b6
+workflow-type: ht
 source-wordcount: '2025'
 ht-degree: 100%
 
@@ -161,7 +162,7 @@ Adobe Campaign è ora compatibile con Windows Server 2019. Consulta la [Matrice 
 * È stato risolto un problema che poteva causare un errore del flusso di lavoro di tracciamento in Oracle a causa di elevati volumi di indicatori di consegna aggiornati simultaneamente (NEO-39653).
 * È stato risolto un problema che poteva impedire l’invio di una consegna a causa di un errore che si verificava durante l’esecuzione di una tipologia di controllo (NEO-39833).
 * È stato risolto un problema nelle pagine di destinazione che poteva impedire la corretta visualizzazione dei caratteri speciali nelle pagine HTML delle risposte ai sondaggi online (NEO-39438).
-* È stato risolto un problema che poteva impedire il funzionamento della console Campaign Classic facendo clic con il pulsante destro del mouse su una delle cartelle nella scheda Esplora risorse (NEO-38884).
+* È stato risolto un problema che poteva impedire il funzionamento della console Campaign Classic facendo clic con il pulsante destro del mouse su una delle cartelle nella scheda Explorer risorse (NEO-38884).
 * È stato corretto un errore che si verificava utilizzando un modello di consegna creato in precedenza collegato a un account Web Analytics in una nuova consegna in cui la configurazione di Web Analytics era mancante. (NEO-28666)
 * È stato risolto un problema che poteva impedire la visualizzazione in anteprima delle consegne mobili collegate a un flusso di lavoro.
 * È stato corretto un errore che impediva il reindirizzamento degli URL di tracciamento personalizzati quando era abilitato il meccanismo di firma URL per i collegamenti di tracciamento.
