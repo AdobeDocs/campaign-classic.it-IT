@@ -2,15 +2,15 @@
 product: campaign
 title: Inserire segmenti Adobe Experience Platform in Campaign
 description: Scopri come acquisire il pubblico di Adobe Experience Platform in Campaign Classic
-feature: Platform Integration
+feature: Experience Platform Integration
 badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: integrations
 content-type: reference
 exl-id: 6db8a653-b649-402c-8814-24826edadba7
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: d15592aaccf036fc956049e611139ea5a46e9fc0
 workflow-type: tm+mt
 source-wordcount: '310'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
