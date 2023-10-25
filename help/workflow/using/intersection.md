@@ -2,17 +2,17 @@
 product: campaign
 title: Intersezione
 description: Intersezione
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: f426bf02-9899-49eb-b699-728d51b57c64
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 13%
+source-wordcount: '443'
+ht-degree: 18%
 
 ---
 
-# Intersezione{#intersection}
+# Intersezione {#intersection}
 
 >[!CONTEXTUALHELP]
 >id="ac_workflow_intersection"
@@ -31,7 +31,7 @@ L’intersezione consente di estrarre solo la popolazione comune a tutti i risul
 
 Per ulteriori informazioni sulla configurazione e sull’utilizzo dell’attività di intersezione, consulta [Estrazione dei dati articolari (intersezione)](targeting-data.md#extracting-joint-data--intersection-).
 
-Controlla la **[!UICONTROL Generate complement]** se desideri elaborare la popolazione rimanente. Il complemento conterrà l’unione dei risultati di tutte le attività in entrata meno l’intersezione. Verrà quindi aggiunta all’attività un’ulteriore transizione in uscita, come segue:
+Controlla la **[!UICONTROL Generate complement]** se desideri elaborare la popolazione rimanente. Il complemento conterrà l’unione dei risultati di tutte le attività in entrata senza l’intersezione. Verrà quindi aggiunta all’attività un’ulteriore transizione in uscita, come segue:
 
 ![](assets/s_user_segmentation_inter_compl.png)
 
