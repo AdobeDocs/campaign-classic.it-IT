@@ -2,12 +2,12 @@
 product: campaign
 title: Caricamento dati (file)
 description: Ulteriori informazioni sull’attività del flusso di lavoro Caricamento dati (file)
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows, Data Management Activity
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 5723d3d617413070b7aed2be2849acca61c10815
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1082'
 ht-degree: 15%
 
 ---
@@ -49,6 +49,10 @@ A questo scopo, seleziona **[!UICONTROL Click here to change the file format...]
 La formattazione generale del file consente di definire il modo in cui le colonne verranno riconosciute (codifica file, separatori utilizzati, ecc.).
 
 La formattazione della colonna ti consente di definire il valore di elaborazione di ciascuna colonna:
+
+>[!NOTE]
+>
+>Puoi aggiungere tutte le colonne che desideri. La lunghezza massima dei valori in ogni colonna è determinata dal tipo di dati scelto.
 
 * **[!UICONTROL Ignore column]**: non elabora questa colonna durante il caricamento dei dati.
 * **[!UICONTROL Data type]**: specifica il tipo di dati previsto per ogni colonna.
