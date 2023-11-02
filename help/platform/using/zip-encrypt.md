@@ -2,14 +2,14 @@
 product: campaign
 title: Compressione o crittografia di un file
 description: Scopri come comprimere o crittografare un file in Campaign prima dell’elaborazione
-feature: Data Management
+feature: Data Management, Encryption
 badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a2106e55617209f28da42c50008d16188563b2da
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 8%

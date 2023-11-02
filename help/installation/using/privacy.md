@@ -5,17 +5,14 @@ description: Scopri le best practice sulla sicurezza per la privacy e la persona
 feature: Installation, Privacy, Privacy Tools, URL Personalization
 badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a2106e55617209f28da42c50008d16188563b2da
 workflow-type: tm+mt
 source-wordcount: '852'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 # Personalizzazione e privacy {#privacy}
-
-
-
 
 ## Personalizzazione URL {#url-personalization}
 
@@ -58,7 +55,7 @@ Inoltre, puoi utilizzare un miglioramento per disabilitare gli URL generati nell
 
 Se esegui la build 19.1.4, potrebbero verificarsi problemi con le consegne di notifiche push tramite collegamenti di tracciamento o le consegne con tag di ancoraggio. In tal caso, si consiglia di disabilitare la firma URL.
 
-In qualità di cliente ibrido, con hosting campagna o Cloud Services gestiti, devi contattare [Assistenza clienti](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) per disabilitare la firma URL.
+In qualità di cliente ibrido, con hosting campagna o Cloud Service gestiti, devi contattare [Assistenza clienti](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) per disabilitare la firma URL.
 
 Se esegui Campaign in un’architettura ibrida, prima di abilitare la firma URL, assicurati che l’istanza mid-sourcing ospitata sia stata aggiornata come segue:
 
@@ -88,7 +85,7 @@ Per abilitare la firma URL, effettua le seguenti operazioni su tutti i server Ca
 
 Questa restrizione ti consente di rimuovere i campi delle password, ma di consentire all’account esterno di essere accessibile dall’interfaccia per tutti gli utenti. [Ulteriori informazioni](../../configuration/using/restricting-pii-view.md).
 
-Per farlo, segui la procedura indicata di seguito:
+A tale scopo, segui i passaggi indicati di seguito:
 
 1. Accedi a **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** cartella di Campaign explorer.
 
