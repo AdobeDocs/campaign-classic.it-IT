@@ -8,9 +8,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 52dcc8c01c5ce2421bfb59235bd0e458e7c8122f
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '812'
 ht-degree: 7%
 
 ---
@@ -92,6 +92,12 @@ Nelle istanze di esecuzione, è possibile accedere ai flussi di lavoro tecnici p
    * **[!UICONTROL Ignored by the delivery]** : questo stato viene copiato dai registri di consegna. Significa che la consegna è stata ignorata.
    * **[!UICONTROL Delivery failed]** : questo stato viene copiato dai registri di consegna. Significa che la consegna è non è andata a buon fine.
    * **[!UICONTROL Event not taken into account]** : impossibile collegare l’evento a un modello di messaggio. L’evento non viene elaborato.
+
+### Pianificazione del flusso di lavoro di archiviazione
+
+Evita di modificare **workflow di archiviazione** pianificazione in esecuzione sull&#39;istanza di controllo. In caso contrario, alcuni dati di tracciamento estratti dall’istanza di esecuzione potrebbero andare persi.
+
+Se si modifica la pianificazione del flusso di lavoro di archiviazione, è necessario modificare anche **workflow di tracciamento** pianifica l’istanza di esecuzione in modo che corrisponda alla pianificazione del flusso di lavoro di archiviazione nell’istanza di controllo.
 
 ## Configurare più brand {#configuring-multibranding}
 
