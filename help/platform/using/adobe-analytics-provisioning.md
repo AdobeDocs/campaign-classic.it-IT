@@ -7,16 +7,14 @@ feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: ccc48c93d81266b0971acc3a549458e0823eeb37
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 2%
+source-wordcount: '673'
+ht-degree: 3%
 
 ---
 
 # Provisioning del connettore Adobe Analytics {#adobe-analytics-connector-provisioning}
-
-
 
 >[!IMPORTANT]
 >
@@ -31,6 +29,12 @@ L’integrazione tra l’autenticazione di Adobe Campaign Classic e Adobe Analyt
 * Se implementi un nuovo connettore, l’implementazione di Adobe IMS è facoltativa. Senza un utente Adobe ID, Adobe Campaign utilizzerà un utente tecnico per la sincronizzazione con Adobe Analytics.
 
 Affinché questa integrazione funzioni, devi creare un profilo di prodotto Adobe Analytics che verrà utilizzato esclusivamente per il connettore Analytics. Quindi, dovrai creare un progetto di Adobe I/O.
+
+<!--
+>[!AVAILABILITY]
+>
+> JWT (JSON Web Tokens) is currently in the process of depreciation and is being replaced with OAuth. The transition is being carried out progressively within Campaign's upcoming releases and documentation will be updated to reflect these updates.
+-->
 
 ## Creare un profilo di prodotto Adobe Analytics {#analytics-product-profile}
 
@@ -72,7 +76,9 @@ Per ulteriori informazioni sui profili di prodotto, consulta [Documentazione di 
 
    ![](assets/do-not-localize/triggers_13.png)
 
-1. Per **[!UICONTROL Dimensions]** , aggiungi **[!UICONTROL Dimensions]** dovrai configurare in seguito.
+1. Per **[!UICONTROL Dimensions]** , aggiungi **[!UICONTROL Dimensions]** necessario per la configurazione futura.
+
+   Assicurati che i Dimension scelti corrispondano a quelli da configurare nel [Account esterno](adobe-analytics-connector.md#external-account-classic) e allinea con il numero eVar corrispondente da [Adobe Analytics](adobe-analytics-connector.md#configure-conversion-success).
 
 1. Per **[!UICONTROL Report Suite Tools]** , aggiungi le seguenti autorizzazioni:
 
