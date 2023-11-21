@@ -4,9 +4,9 @@ title: Aggiornamento al nuovo server di recapito messaggi
 description: Scopri come aggiornare al nuovo server di recapito messaggi di Campaign
 feature: Technote, Deliverability
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 65b6f91e083c955df044ffeb10f5338104d1ce56
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1356'
 ht-degree: 3%
 
 ---
@@ -40,12 +40,15 @@ Come un **cliente on-premise/ibrido**, è necessario eseguire l’aggiornamento 
 
 ## Passaggi di implementazione {#implementation-steps}
 
-Come parte della nuova integrazione del server di recapito messaggi, Campaign deve comunicare con Adobe Shared Services tramite un’autenticazione basata su Identity Management Service (IMS). Il modo migliore è quello di utilizzare il token gateway basato su Adobe Developer (detto anche token account tecnico o Adobe di IO JWT).
-
 >[!WARNING]
 >
 >Questi passaggi devono essere eseguiti solo per le implementazioni ibride e on-premise.
+
+Come parte della nuova integrazione del server di recapito messaggi, Campaign deve comunicare con Adobe Shared Services tramite un’autenticazione basata su Identity Management Service (IMS). Il modo migliore è quello di utilizzare il token gateway basato su Adobe Developer (detto anche token account tecnico o Adobe di IO JWT).
+
+>[!AVAILABILITY]
 >
+> Il codice JWT (JSON Web Tokens) è attualmente in fase di ammortamento e viene sostituito con OAuth. La transizione viene eseguita progressivamente nelle prossime versioni di Campaign e la documentazione verrà aggiornata per riflettere tali aggiornamenti.
 
 ### Prerequisiti{#prerequisites}
 
@@ -60,7 +63,7 @@ Prima di avviare l’implementazione, controlla la configurazione dell’istanza
 
    Questa opzione deve essere compilata su tutte le istanze Campaign (MKT, MID, RT, EXEC) con il valore corretto. In qualità di cliente ibrido, rivolgiti a Adobe per avere l’opzione impostata sulle istanze MID, RT ed EXEC.
 
-In qualità di cliente on-premise, devi anche verificare che una campagna **[!UICONTROL Product profile]** è disponibile per la tua organizzazione. Per farlo, segui la procedura indicata di seguito:
+In qualità di cliente on-premise, devi anche verificare che una campagna **[!UICONTROL Product profile]** è disponibile per la tua organizzazione. A tale scopo, segui i passaggi indicati di seguito:
 
 1. Come amministratore, connettiti a [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}.
 1. Accedere a **Prodotti e servizi** sezione e controllo **Adobe Campaign** è elencato.
