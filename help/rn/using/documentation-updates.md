@@ -7,22 +7,24 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaig
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 324e26ba1db14e10bb79eee60ba43ddc36e8e94f
+source-git-commit: 8ecb5aba9a070276927e97586ed463ab485717d6
 workflow-type: tm+mt
-source-wordcount: '3607'
-ht-degree: 100%
+source-wordcount: '3645'
+ht-degree: 98%
 
 ---
 
 # Aggiornamenti alla documentazione{#documentation-updates}
-
-
 
 In questa pagina sono elencate tutte le nuove funzioni e gli aggiornamenti alla documentazione in base al mese e alla versione di Campaign.
 
 Per gli aggiornamenti relativi alla versione, consulta le [Note sulla versione di Adobe Campaign Classic](../../rn/using/latest-release.md).
 
 ## 2023
+
+### Novembre 2023
+
+Il codice JWT (JSON Web Tokens) è attualmente in fase di ammortamento e viene sostituito con OAuth. La transizione viene eseguita progressivamente nelle prossime versioni di Campaign e la documentazione verrà aggiornata per riflettere tali aggiornamenti.
 
 ### Agosto 2023
 
@@ -183,7 +185,7 @@ Nuovo connettore FDA Vertica Analytics - [Ulteriori informazioni](../../installa
 
 Nuovo connettore FDA BigQuery Google: [ulteriori informazioni](../../installation/using/configure-fda-google-big-query.md)
 
-La descrizione del flusso di lavoro tecnico “Fatturazione (billing)” include ora le attività originariamente eseguite dal “Numero di profili di fatturazione attivi (billingActiveContactCount)”. [Ulteriori informazioni](../../workflow/using/about-technical-workflows.md)
+La descrizione del flusso di lavoro tecnico &quot;Fatturazione (fatturazione)&quot; ora include le attività originariamente eseguite dal &quot;Numero di profili di fatturazione attivi (billingActiveContactCount)&quot;. [Ulteriori informazioni](../../workflow/using/about-technical-workflows.md)
 
 ## Maggio 2021 {#may-2021}
 
@@ -400,9 +402,9 @@ Le [Note sulla versione](../../rn/using/latest-release.md) sono state riorganizz
 
 La sezione Privacy e consenso è stata migliorata con informazioni più dettagliate e collegamenti utili. [Leggi tutto](../../platform/using/privacy-and-recommendations.md)
 
-La pagina Gestione della privacy in Campaign Classic è stata aggiornata con informazioni sul campo “regolamentazione” che ora è disponibile quando si utilizza l’API per configurare il processo automatico di richiesta di accesso a dati personali. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
+La pagina Gestione della privacy in Campaign Classic è stata aggiornata con informazioni sul campo “regolamentazione” che ora è disponibile quando si utilizza l’API per configurare il processo automatico di richiesta di accesso a dati personali. [Ulteriori informazioni](https://helpx.adobe.com/it/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
-La Panoramica sulla Gestione della privacy è stata aggiornata con informazioni sulla Legge tailandese sulla protezione dei dati personali (PDPA) e sulla Lei Geral de Proteção de Dados (LGPD) brasiliana. [Leggi tutto](../../platform/using/privacy-and-recommendations.md)
+La pagina di panoramica sulla Gestione della privacy è stata aggiornata con informazioni sulla Legge tailandese sulla protezione dei dati personali (PDPA) e sulla Lei Geral de Proteção de Dados (LGPD) brasiliana. [Ulteriori informazioni](../../platform/using/privacy-and-recommendations.md)
 
 Sono state aggiunte informazioni sui registri e sul comportamento dei flussi di lavoro secondari in caso di errore. [Leggi tutto](../../workflow/using/sub-workflow.md)
 
