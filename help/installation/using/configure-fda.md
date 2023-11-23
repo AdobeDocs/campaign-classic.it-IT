@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 6939307c0b33ff662fe4ef9ae0192ae7b500a95c
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 5%
+source-wordcount: '354'
+ht-degree: 7%
 
 ---
 
@@ -45,6 +45,7 @@ A seconda dei database esterni a cui desideri poter accedere da Adobe Campaign, 
 
 Per ulteriori informazioni, segui i collegamenti riportati di seguito:
 
+* Connetti Campaign e [Amazon Redshift](../../installation/using/configure-fda-redshift.md)
 * Connetti Campaign e [Azure synapse](../../installation/using/configure-fda-synapse.md)
 * Connetti Campaign e [BigQuery Google](../../installation/using/configure-fda-google-big-query.md)
 * Connetti Campaign e [Hadoop](../../installation/using/configure-fda-hadoop.md)

@@ -8,16 +8,14 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 6939307c0b33ff662fe4ef9ae0192ae7b500a95c
 workflow-type: tm+mt
 source-wordcount: '519'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
 # Configurare l’accesso al Snowflake {#configure-access-to-snowflake}
-
-
 
 Utilizzare Campaign **Federated Data Access** (FDA) per elaborare le informazioni memorizzate in un database esterno. Segui i passaggi seguenti per configurare l’accesso a [!DNL Snowflake].
 

@@ -1,0 +1,97 @@
+---
+product: campaign
+title: Configurare l’accesso ad Amazon Redshift
+description: Scopri come configurare l’accesso a Amazon Redshift in FDA
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
+audience: platform
+content-type: reference
+topic-tags: connectors
+source-git-commit: 6939307c0b33ff662fe4ef9ae0192ae7b500a95c
+workflow-type: tm+mt
+source-wordcount: '263'
+ht-degree: 6%
+
+---
+
+# Configurare l’accesso ad Amazon Redshift {#configure-access-to-redshift}
+
+Utilizzare Campaign **Federated Data Access** (FDA) per elaborare le informazioni memorizzate in un database esterno. Segui i passaggi seguenti per configurare l’accesso ad Amazon Redshift.
+
+1. Configura [Database Amazon Redshift](#configuring-redshift)
+1. Configurare Amazon Redshift [account esterno](#redshift-external) in Campaign
+
+## Amazon Redshift su Linux {#redshift-linux}
+
+Per configurare [!DNL Amazon Redshift] su Linux, segui i passaggi seguenti:
+
+1. Prima dell&#39;installazione di ODBC, verificare che i seguenti pacchetti siano installati nella distribuzione Linux:
+
+   * Per Red Hat/CentOS:
+
+     ```
+      yum update
+      yum upgrade
+      yum install -y grep sed tar wget perl curl
+     ```
+
+   * Per Debian:
+
+     ```
+      apt-get update
+      apt-get upgrade
+      apt-get install -y grep sed tar wget perl curl
+     ```
+
+1. Prima di eseguire lo script, è possibile accedere a ulteriori informazioni con `--help` opzione:
+
+   ```
+   cd /usr/local/neolane/nl6/bin/fda-setup-scripts/
+   ./redshift_odbc-setup.sh --help
+   ```
+
+1. Accedere alla directory in cui si trova lo script ed eseguire lo script seguente come utente root:
+
+   ```
+     cd /usr/local/neolane/nl6/bin/fda-setup-scripts
+     ./redshift_odbc-setup.sh
+   ```
+
+1. Dopo aver installato i driver ODBC, è necessario riavviare Campaign Classic. A tale scopo, eseguire il comando seguente:
+
+   ```
+   systemctl stop nlserver.service
+   systemctl start nlserver.service
+   ```
+
+1. In Campaign, puoi quindi configurare i [!DNL Amazon Redshift] account esterno. Per ulteriori informazioni su come configurare l’account esterno, consulta [questa sezione](#redshift-external).
+
+## Account esterno Amazon Redshift {#redshift-external}
+
+Il [!DNL Amazon Redshift] l’account esterno ti consente di collegare l’istanza Campaign al database esterno Amazon Redshift.
+
+1. In Campaign Classic, configura il tuo [!DNL Amazon Redshift] account esterno. Dalla sezione **[!UICONTROL Explorer]**, fai clic su **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+
+1. Fai clic su **[!UICONTROL New]**.
+
+1. Seleziona **[!UICONTROL External database]** come dell’account esterno **[!UICONTROL Type]**.
+
+1. Configurare **[!UICONTROL Amazon Redshift]** account esterno, è necessario specificare:
+
+   * **[!UICONTROL Type]**: Amazon Redshift
+
+   * **[!UICONTROL Server]**: nome del DNS
+
+   * **[!UICONTROL Account]**: nome dell’utente
+
+   * **[!UICONTROL Password]**: password dell’account utente
+
+   * **[!UICONTROL Database]**: nome del database, se non specificato nel DSN. Può essere lasciato vuoto se specificato nel DSN
+
+   * **[!UICONTROL Working schema]**: nome dello schema di lavoro. [Ulteriori informazioni](https://docs.aws.amazon.com/redshift/latest/dg/r_Schemas_and_tables.html)
+
+   * **[!UICONTROL Time zone]**: Fuso orario server
+
+   ![](assets/amazon_redshift.png)
+
+1. Fai clic su **[!UICONTROL Save]**.
