@@ -9,10 +9,10 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: e6a2986e5355b32164386e1f6d64f52dc6977632
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 3%
+source-wordcount: '582'
+ht-degree: 4%
 
 ---
 
@@ -30,6 +30,10 @@ Dopo aver inviato questa richiesta, Adobe procederà al provisioning dell’inte
 >[!IMPORTANT]
 >
 >Se utilizzi il dominio demdex e segui la sintassi **ftp-out.demdex.com** per l’account esterno import e **ftp-in.demdex.com** per esportare un account esterno, è necessario adattare di conseguenza l’implementazione e passare al connettore Amazon Simple Storage Service (S3) per importare o esportare i dati. Per ulteriori informazioni su come configurare gli account esterni con Amazon S3, consulta questa [sezione](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md#step-1--configure-or-check-the-external-accounts-in-adobe-campaign).
+
+Il diagramma seguente illustra il funzionamento di questa integrazione. Qui AAM sta per Adobe Audience Manager e AC per Adobe Campaign.
+
+![](assets/aam_diagram.png){align="center"}
 
 ## Passaggio 1: configurare o controllare gli account esterni in Adobe Campaign {#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}
 
@@ -87,10 +91,16 @@ Per configurare **[!UICONTROL Recipient - Visitor ID]** origine dati:
 
 Per la configurazione dell’integrazione con il servizio core People o Audience Manager, è necessario configurare anche il server di tracciamento di Campaign.
 
-Assicurati che il server di tracciamento di Campaign sia registrato nel dominio (CNAME). Per ulteriori informazioni sulla delega dei nomi di dominio, consulta [questo articolo](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=it).
+Per consentire ai tipi di pubblico condivisi di funzionare con l’ID visitatore, il dominio del server di tracciamento deve essere un sottodominio dell’URL su cui è stato fatto clic o del sito web principale.
+
+>[!IMPORTANT]
+>
+>Assicurati che il server di tracciamento di Campaign sia registrato nel dominio (CNAME). Per ulteriori informazioni sulla delega dei nomi di dominio, consulta [questo articolo](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=it).
 
 ## Passaggio 4: configurare il servizio ID visitatori {#step-4--configure-the-visitor-id-service}
 
-Nel caso in cui il servizio ID visitatore non sia mai stato configurato sulle proprietà o sui siti web, consulta le seguenti [documento](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html) per informazioni su come configurare il servizio o sui seguenti [video](https://helpx.adobe.com/it/marketing-cloud/how-to/email-marketing.html#step-two).
+Nel caso in cui il servizio ID visitatore non sia mai stato configurato nelle tue proprietà web o sui tuoi siti web, consulta quanto segue [documento](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html) per informazioni su come configurare il servizio o sui seguenti [video](https://helpx.adobe.com/it/marketing-cloud/how-to/email-marketing.html#step-two).
+
+Sincronizzare gli identificatori dei clienti con l’ID dichiarato utilizzando `setCustomerID` funzione nel servizio ID Experience Cloud con il codice di integrazione: `AdobeCampaignID`. Il `AdobeCampaignID` deve corrispondere al valore della chiave di riconciliazione impostata nell’origine dati del destinatario configurata in [Passaggio 2: configurare le origini dati](#step-2--configure-the-data-sources).
 
 La configurazione e il provisioning sono finalizzati, l’integrazione ora può essere utilizzata per importare ed esportare tipi di pubblico o segmenti.
