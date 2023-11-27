@@ -8,7 +8,7 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 624978901943b4c74f50c20298c9596f73b25b1b
 workflow-type: tm+mt
 source-wordcount: '2830'
 ht-degree: 0%
@@ -282,7 +282,7 @@ Questa attività elimina dal database tutte le tabelle di lavoro che corrispondo
 1. Elenco di tabelle i cui nomi iniziano con **wkDlv_** viene recuperato per primo con la seguente query (postgresql):
 
    ```sql
-   SELECT relname FROM pg_class WHERE relname LIKE Lower('wkDlv_') ESCAPE E'\\' AND relkind IN ('r','v') AND pg_get_userbyid(relowner)<>'postgres'
+   SELECT relname FROM pg_class WHERE relname LIKE Lower('wkDlv_%') ESCAPE E'\\' AND relkind IN ('r','v') AND pg_get_userbyid(relowner)<>'postgres'
    ```
 
 1. Le tabelle utilizzate dai flussi di lavoro in corso vengono quindi escluse. A questo scopo, viene recuperato l’elenco delle consegne in corso utilizzando la seguente query:
