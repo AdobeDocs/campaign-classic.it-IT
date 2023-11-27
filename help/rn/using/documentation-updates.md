@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 8ecb5aba9a070276927e97586ed463ab485717d6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3645'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -185,7 +185,7 @@ Nuovo connettore FDA Vertica Analytics - [Ulteriori informazioni](../../installa
 
 Nuovo connettore FDA BigQuery Google: [ulteriori informazioni](../../installation/using/configure-fda-google-big-query.md)
 
-La descrizione del flusso di lavoro tecnico &quot;Fatturazione (fatturazione)&quot; ora include le attività originariamente eseguite dal &quot;Numero di profili di fatturazione attivi (billingActiveContactCount)&quot;. [Ulteriori informazioni](../../workflow/using/about-technical-workflows.md)
+La descrizione del flusso di lavoro tecnico “Fatturazione (billing)” include ora le attività originariamente eseguite dal “Numero di profili di fatturazione attivi (billingActiveContactCount)”. [Ulteriori informazioni](../../workflow/using/about-technical-workflows.md)
 
 ## Maggio 2021 {#may-2021}
 
