@@ -7,10 +7,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: be57635a6165790b8c8964d106ed0a3cb76c63af
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 92%
+source-wordcount: '934'
+ht-degree: 91%
 
 ---
 
@@ -77,7 +77,7 @@ Sono disponibili le seguenti funzionalità. A seconda del tuo contratto di licen
 * [MRM](../../mrm/using/about-marketing-resource-management.md): gestire risorse di marketing e budget,
 * [Interazione](../../interaction/using/interaction-and-offer-management.md): gestione delle offerte con Campaign,
 * [Centro messaggi](../../message-center/using/about-transactional-messaging.md): inviare messaggi transazionali tramite e-mail, SMS o su app mobili,
-* [Social marketing](../../social/using/about-social-marketing.md): comunicare sui social media: Facebook, Twitter,
+* [Social marketing](../../social/using/about-social-marketing.md) - comunicare sui social media: Facebook, X (precedentemente noto come Twitter),
 * [Flusso di lavoro](../../workflow/using/about-workflows.md) / Gestione dati: automatizzare i processi e gestire i dati con i flussi di lavoro,
 * [Applicazioni web](../../web/using/about-web-applications.md): creare pagine e moduli web,
 * [Gestione dei sondaggi](../../surveys/using/about-surveys.md): creare sondaggi e votazioni online,

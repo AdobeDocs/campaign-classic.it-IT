@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '1837'
-ht-degree: 8%
+source-wordcount: '1841'
+ht-degree: 9%
 
 ---
 
@@ -119,7 +119,7 @@ Il **[!UICONTROL Routing]** l’account esterno ti consente di configurare ogni 
 * [Telefono](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Direct mail](../../delivery/using/about-direct-mail-channel.md)
 * [Agenzia](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
-* [Twitter](../../social/using/about-social-marketing.md)
+* [X (precedentemente noto come Twitter)](../../social/using/about-social-marketing.md)
 * [Canale iOS](../../delivery/using/configuring-the-mobile-application.md)
 * [Canale Android](../../delivery/using/configuring-the-mobile-application-android.md)
 
@@ -308,11 +308,11 @@ Il **[!UICONTROL AEM (AEM instance)]** l’account esterno consente di gestire i
 
 * **[!UICONTROL Port]**
 
-  Nome account utilizzato per connettersi all’istanza di authoring di Adobe Experience Manager.
+  Nome account utilizzato per connettersi all’istanza di authoring Adobe Experience Manager.
 
 * **[!UICONTROL Password]**
 
-  Password utilizzata per connettersi all’istanza di authoring di Adobe Experience Manager.
+  Password utilizzata per la connessione all’istanza di authoring Adobe Experience Manager.
 
 Per ulteriori informazioni, consulta questa [sezione](../../integrations/using/about-adobe-experience-manager.md).
 

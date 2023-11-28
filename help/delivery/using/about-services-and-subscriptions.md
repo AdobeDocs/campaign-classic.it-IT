@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Subscriptions
 role: User
 exl-id: eb72f19a-7669-4596-bf9b-8c0ce22b67bf
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 6%
+source-wordcount: '170'
+ht-degree: 5%
 
 ---
 
@@ -22,4 +22,4 @@ Puoi anche consentire ai destinatari della consegna di condividerli con i membri
 
 >[!NOTE]
 >
->Questa funzionalità è fornita come standard con Adobe Campaign. L’applicazione opzionale Social Marketing consente di contattare clienti e potenziali clienti tramite Facebook e Twitter.
+>Questa funzionalità è fornita come standard con Adobe Campaign. L’applicazione opzionale Social Marketing consente di contattare clienti e potenziali clienti tramite Facebook e X (precedentemente noti come Twitter).

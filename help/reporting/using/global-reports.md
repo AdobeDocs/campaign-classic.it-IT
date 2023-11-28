@@ -2,13 +2,13 @@
 product: campaign
 title: Rapporti globali
 description: Rapporti globali
-badge: label="v7" type="Informative" tooltip="Si applica solo a Campaign Classic v7"
+badge: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '2304'
-ht-degree: 7%
+source-wordcount: '2308'
+ht-degree: 9%
 
 ---
 
@@ -42,7 +42,7 @@ Per visualizzare i rapporti, fai clic sui relativi nomi. Per impostazione predef
 * **[!UICONTROL Delivery statistics]** : fai riferimento a [Statistiche consegna](#delivery-statistics).
 * **[!UICONTROL Breakdown of opens]** : fai riferimento a [Raggruppamento delle aperture](#breakdown-of-opens).
 
-## Velocità effettiva di consegna {#delivery-throughput}
+## Velocità di consegna {#delivery-throughput}
 
 Questo rapporto contiene informazioni sulla velocità effettiva di consegna dell’intera piattaforma per un determinato periodo. I criteri utilizzati per misurare la velocità con cui vengono consegnati i messaggi comprendono il numero di messaggi inviati all’ora e le dimensioni dei messaggi (in bit al secondo). Nell’esempio seguente, il primo grafico mostra le consegne riuscite in blu e il numero di consegne con errori in arancione.
 
@@ -52,7 +52,7 @@ Puoi configurare i valori visualizzati modificando la scala cronologica: visuali
 
 >[!NOTE]
 >
->Se l’istanza è ospitata su AWS, puoi anche monitorare il numero di consegne inviate all’ora utilizzando il Campaign Classic [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html). Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+>Se l’istanza è ospitata su AWS, puoi anche monitorare il numero di consegne inviate all’ora utilizzando il Campaign Classic [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html). Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=it).
 >
 >Il Pannello di controllo è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente l’accesso come amministratore sono descritti in[questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel).
 >
@@ -70,7 +70,7 @@ Sono disponibili le seguenti opzioni:
 * **[!UICONTROL Clicks]** : numero totale di clic sui collegamenti nelle consegne. I clic sui collegamenti di annullamento dell’abbonamento e sulle pagine mirror non vengono presi in considerazione.
 * **[!UICONTROL Transactions]** : numero totale di transazioni dopo la ricezione di un messaggio. Affinché una transazione possa essere presa in considerazione, è necessario inserire un tag di tracciamento web di tipo transazione nella pagina web corrispondente. La configurazione del tracciamento web è presentata in [questa sezione](../../configuration/using/about-web-tracking.md).
 
-## Messaggi non recapitati e non trasferibili {#non-deliverables-and-bounces}
+## Messaggi non recapitabili e mancati recapiti {#non-deliverables-and-bounces}
 
 Questo rapporto mostra il raggruppamento dei messaggi non recapitati e dei messaggi non recapitati per dominio Internet.
 
@@ -82,7 +82,7 @@ Il **[!UICONTROL Number of messages processed]** rappresenta il numero totale di
 
 >[!NOTE]
 >
->Gli errori visualizzati in questo report attivano il processo di quarantena. Per ulteriori informazioni sulla gestione della quarantena, consulta [Gestione della quarantena](../../delivery/using/understanding-quarantine-management.md).
+>Gli errori inclusi in questo rapporto attivano il processo di quarantena. Per ulteriori informazioni sulla gestione della quarantena, consulta [Gestione della quarantena](../../delivery/using/understanding-quarantine-management.md).
 
 La prima sezione di questo rapporto mostra la suddivisione dei messaggi non recapitati sotto forma di tabella di valori e di grafico.
 
@@ -102,13 +102,13 @@ Sono utilizzati i seguenti indicatori:
 * **[!UICONTROL Unreachable]** : tipo di errore che si verifica nella stringa di distribuzione del messaggio: incidente sull’inoltro SMTP, dominio temporaneamente non raggiungibile, ecc.
 * **[!UICONTROL Not connected]** : tipo di errore per indicare che il telefono cellulare del destinatario è spento o disconnesso dalla rete al momento dell’invio.
 
-   >[!NOTE]
-   >
-   >Questo indicatore riguarda solo le consegne sui canali mobili. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/sms-channel.md).
+  >[!NOTE]
+  >
+  >Questo indicatore riguarda solo le consegne sui canali mobili. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../delivery/using/sms-channel.md).
 
-   È possibile aprire ogni riga della tabella dei valori facendo clic sul pulsante `[+]` simbolo. Per ogni tipo di errore, puoi visualizzare la suddivisione dei messaggi di errore per dominio.
+  È possibile aprire ogni riga della tabella dei valori facendo clic sul pulsante `[+]` simbolo. Per ogni tipo di errore, puoi visualizzare la suddivisione dei messaggi di errore per dominio.
 
-   ![](assets/s_ncs_user_errors_report_detail.png)
+  ![](assets/s_ncs_user_errors_report_detail.png)
 
 **[!UICONTROL Breakdown of errors per domain]**
 
@@ -167,9 +167,9 @@ La tabella dei valori utilizza i seguenti indicatori:
 
 ### Condivisione sui social network {#sharing-to-social-networks}
 
-Il marketing virale consente ai destinatari delle consegne di condividere informazioni con la loro rete di contatti: possono aggiungere un collegamento al loro profilo (Facebook, Twitter, ecc.) o inviare un messaggio a un amico. Ogni condivisione e ogni accesso alle informazioni condivise vengono tracciati all’interno della consegna. Per ulteriori informazioni sul marketing virale, fare riferimento a [questa sezione](../../delivery/using/viral-and-social-marketing.md).
+Il marketing virale consente ai destinatari delle consegne di condividere informazioni con la loro rete di contatti: possono aggiungere un collegamento al loro profilo (Facebook, X, precedentemente noto come Twitter, ecc.) o inviare un messaggio a un amico. Ogni condivisione e ogni accesso alle informazioni condivise vengono tracciati all’interno della consegna. Per ulteriori informazioni sul marketing virale, fare riferimento a [questa sezione](../../delivery/using/viral-and-social-marketing.md).
 
-Questo rapporto mostra il raggruppamento dei messaggi condivisi e aperti per social network (Facebook, Twitter, ecc.) e/o per e-mail.
+Questo rapporto mostra il raggruppamento dei messaggi condivisi e aperti per social network (Facebook, X, ecc.) e/o per e-mail.
 
 ![](assets/s_ncs_user_social_report.png)
 
@@ -202,7 +202,7 @@ Questa sezione include due grafici che rappresentano il raggruppamento delle att
 
 ## Statistiche sulla condivisione delle attività {#statistics-on-sharing-activities}
 
-Questo rapporto mostra l’evoluzione delle condivisioni nei social network (Facebook, Twitter, e-mail, ecc.) nel tempo.
+Questo rapporto mostra l’evoluzione delle condivisioni nei social network (Facebook, X - precedentemente noto come Twitter, e-mail, ecc.) nel tempo.
 
 Per ulteriori informazioni sul marketing virale, fare riferimento a [questa sezione](../../delivery/using/viral-and-social-marketing.md).
 
@@ -292,17 +292,17 @@ Sono utilizzati i seguenti indicatori:
 * **[!UICONTROL Hard bounces]** : percentuale del numero di mancati recapiti &quot;permanenti&quot; rispetto al numero totale di messaggi elaborati.
 * **[!UICONTROL Soft bounces]** : percentuale del numero di mancati recapiti &quot;non permanenti&quot; rispetto al numero totale di messaggi elaborati.
 
-   >[!NOTE]
-   >
-   >Per ulteriori informazioni sui mancati recapiti permanenti e non permanenti, consulta [Gestione della quarantena](../../delivery/using/understanding-quarantine-management.md).
+  >[!NOTE]
+  >
+  >Per ulteriori informazioni sui mancati recapiti permanenti e non permanenti, consulta [Gestione della quarantena](../../delivery/using/understanding-quarantine-management.md).
 
 * **[!UICONTROL Opens]** : percentuale del numero di destinatari che hanno aperto un messaggio almeno una volta rispetto al numero di messaggi elaborati correttamente.
 * **[!UICONTROL Clicks]** : percentuale del numero di persone che hanno fatto clic su una consegna almeno una volta rispetto al numero di messaggi elaborati correttamente.
 * **[!UICONTROL Unsubscription]** : percentuale del numero di clic su un collegamento di annullamento dell’abbonamento rispetto al numero di messaggi elaborati correttamente.
 
-## Breakdown delle aperture {#breakdown-of-opens}
+## Raggruppamenti delle aperture {#breakdown-of-opens}
 
-Questo rapporto mostra il raggruppamento delle aperture per sistema operativo, dispositivo e browser per il periodo in questione. Per ogni categoria vengono utilizzati due grafici. Il primo visualizza le statistiche relative all’apertura su un computer e dispositivi mobili. Il secondo visualizza le statistiche relative solo all’apertura su dispositivi mobili.
+Raggruppamenti delle aperture: questo rapporto mostra le aperture raggruppate per sistema operativo, dispositivo e browser per il periodo in questione. Per ogni categoria vengono utilizzati due grafici. Il primo visualizza le statistiche relative all’apertura su un computer e dispositivi mobili. Il secondo visualizza le statistiche relative solo all’apertura su dispositivi mobili.
 
 Il numero di aperture corrisponde al numero totale di messaggi aperti. Le e-mail in formato testo non vengono conteggiate. Per ulteriori informazioni sulle aperture di tracciamento, consulta [Tracciamento delle aperture](../../reporting/using/indicator-calculation.md#tracking-opens-) sezione.
 

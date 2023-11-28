@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaig
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '1515'
-ht-degree: 99%
+source-wordcount: '1519'
+ht-degree: 98%
 
 ---
 
@@ -46,7 +46,7 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
   </tr>
 <tr>
  <td>Social Marketing con Facebook</td>
- <td>Il Social Marketing con Facebook è ora obsoleto. Per pubblicare sui social media o lavorare con Adobe per creare un canale personalizzato, è possibile utilizzare Twitter.
+ <td>Il Social Marketing con Facebook è ora obsoleto. Puoi utilizzare l’integrazione X (precedentemente nota come Twitter) per pubblicare sui social media o lavorare con Adobe per creare un canale personalizzato.
  <p></p>
   <p>Data prevista di rimozione: fine 2023</p>
   </td>

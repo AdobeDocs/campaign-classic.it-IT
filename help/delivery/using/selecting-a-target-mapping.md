@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Delivery Templates
 role: User
 exl-id: b5514fa3-1e65-45dc-8e40-d1ba3b673e7a
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 14%
+source-wordcount: '196'
+ht-degree: 42%
 
 ---
 
@@ -24,13 +24,13 @@ Queste mappature sono le seguenti:
 
 | Nome | Utilizzare | Schema standard |
 |---|---|---|
-| Destinatari | Consegna ai destinatari del database di Adobe Campaign | nms:destinatario |
-| Visitatori | Distribuisci ai visitatori i cui profili sono stati raccolti tramite riferimento (marketing virale) o tramite social network (Facebook, Twitter), ad esempio. | mns:visitatore |
-| Abbonamenti | Consegna ai destinatari abbonati a un servizio di informazioni, ad esempio una newsletter | nms:sottoscrizione |
-| Abbonamenti visitatore | Consegna ai visitatori abbonati a un servizio di informazioni | nms:visitorSub |
-| Servizio | Pubblicare su un account di Twitter o su una pagina Facebook | nms:service |
-| Operatori | Consegna agli operatori Adobe Campaign | nms:operatore |
-| File esterno | Consegna tramite un file contenente tutte le informazioni necessarie per la consegna | Nessuno schema collegato, nessuna destinazione immessa |
+| Destinatari | Consegna ai destinatari del database di Adobe Campaign | nms:recipient |
+| Visitatori | Distribuisci ai visitatori i cui profili sono stati raccolti tramite riferimento (marketing virale) o tramite social network (Facebook, X, precedentemente noto come Twitter), ad esempio. | mns:visitor |
+| Abbonamenti | Consegnare ai destinatari abbonati o iscritti a un servizio informativo, ad esempio una newsletter | nms:subscription |
+| Abbonamenti visitatore | Consegnare ai visitatori abbonati o iscritti a un servizio informativo | nms:visitorSub |
+| Servizio | Pubblicare su un account X o su una pagina Facebook | nms:service |
+| Operatori | Consegnare agli operatori Adobe Campaign | nms:operator |
+| File esterno | Consegnare tramite un file contenente tutte le informazioni necessarie per la consegna | Nessuno schema collegato, nessuna destinazione immessa |
 
 >[!NOTE]
 >

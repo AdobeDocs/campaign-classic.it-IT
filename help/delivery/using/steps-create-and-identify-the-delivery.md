@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Channel Configuration
 role: User
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 7%
+source-wordcount: '287'
+ht-degree: 6%
 
 ---
 
@@ -25,7 +25,7 @@ Per creare una consegna, fai clic su **[!UICONTROL Create]** sopra l’elenco de
 
 ![](assets/s_ncs_user_wizard_email01_1.png)
 
-Per ogni canale installato viene fornito un modello predefinito: direct mailing, e-mail, fax, telefono, canale mobile (SMS), Facebook, Twitter, ecc.
+Per ogni canale installato viene fornito un modello predefinito: direct mailing, e-mail, fax, telefono, canale mobile (SMS), Facebook, X (precedentemente noto come Twitter), ecc.
 
 >[!NOTE]
 >

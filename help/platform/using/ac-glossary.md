@@ -6,10 +6,10 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '5974'
-ht-degree: 4%
+source-wordcount: '5978'
+ht-degree: 5%
 
 ---
 
@@ -119,7 +119,7 @@ Learn more about [Interaction](../../interaction/using/interaction-and-offer-man
 
 +++**Canale**
 
-Un canale è un mezzo attraverso il quale viene inviata una comunicazione. I canali incorporati in Adobe Campaign sono e-mail, SMS, direct mailing, notifiche push, LINE e Twitter. I canali personalizzati possono essere implementati per esigenze di canale non standard.
+Un canale è un mezzo attraverso il quale viene inviata una comunicazione. I canali incorporati in Adobe Campaign sono e-mail, SMS, direct mailing, notifiche push, LINE e X (precedentemente noti come Twitter). I canali personalizzati possono essere implementati per esigenze di canale non standard.
 
 Ulteriori informazioni su [Canali](../../delivery/using/communication-channels.md).
 +++
@@ -278,7 +278,7 @@ Ulteriori informazioni su [Distribuzione dei valori](../../platform/using/defini
 +++**Delega del dominio**
 
 La configurazione del sottodominio ti consente di configurare una sottosezione del dominio (tecnicamente una &quot;zona DNS&quot;) per l’utilizzo con Adobe Campaign.
-Adobe La delega del dominio consente di controllare e mantenere tutti gli aspetti del DNS necessari per la distribuzione, il rendering e il tracciamento delle campagne e-mail.
+La delega del dominio consente agli Adobi di controllare e mantenere tutti gli aspetti del DNS necessari per la distribuzione, il rendering e il tracciamento delle campagne e-mail.
 
 Ulteriori informazioni su [Delega del dominio](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=it)
 +++
@@ -334,7 +334,7 @@ An engine call is a server call that starts real-time processing on server side 
 +++
 -->
 
-+++**Attività Arricchimento**
++++**Attività di Arricchimento**
 
 L’attività Enrichment è un’attività avanzata del flusso di lavoro che consente agli operatori di arricchire i dati della tabella di lavoro generati che verranno elaborati nel flusso di lavoro. Questa attività viene generalmente utilizzata dopo attività di targeting o dopo l’importazione di un file e prima di attività che utilizzano dati oggetto di targeting. Gli arricchimenti possono trasformare i dati di transizione in entrata e configurare l’attività in modo da completare la transizione in uscita con dati migliorati. Consente all’operatore di combinare dati da più set di dati o di creare collegamenti a una risorsa temporanea.
 
@@ -515,7 +515,7 @@ Ulteriori informazioni su [Cache locale](../../platform/using/faq-campaign-confi
 
 +++**Gestione delle risorse marketing (MRM)**
 
-*Contesto: Gestione risorse marketing (MRM)*
+*Contesto: Marketing Resource Management (MRM)*
 
 Il **Gestione delle risorse marketing (MRM)** in Adobe Campaign consente di controllare le azioni di marketing in modalità collaborativa fornendo una gestione completa e il tracciamento in tempo reale delle attività, dei budget e delle risorse di marketing coinvolte. Gli operatori Adobe Campaign possono coordinare le loro azioni e approvare l’avanzamento in tutte le fasi tramite processi di convalida completi e strumenti di tracciamento appropriati: reporting, tracciamento delle approvazioni, notifiche, forum di discussione, ecc.
 
@@ -563,7 +563,7 @@ Ulteriori informazioni su [Struttura di navigazione](../../platform/using/adobe-
 
 +++**Finalità**
 
-*Contesto: Gestione risorse marketing (MRM)*
+*Contesto: Marketing Resource Management (MRM)*
 
 All’interno della campagna, del programma o del piano, gli operatori possono indicare un elenco di obiettivi. Si tratta di valori quantificati da raggiungere. Al termine della campagna, del programma o del piano, il modulo MRM consente agli operatori di confrontare gli obiettivi e i risultati in report dedicati.
 
@@ -958,7 +958,7 @@ Ulteriori informazioni su [Dimensione targeting](../../workflow/using/targeting-
 
 +++**Attività attività**
 
-*Contesto: Gestione risorse marketing (MRM)*
+*Contesto: Marketing Resource Management (MRM)*
 
 L’attività del flusso di lavoro Attività incorpora l’azione umana nella logica di un flusso di lavoro. È possibile specificare due scenari: il primo se l&#39;attività è completata e il secondo se l&#39;attività non è completata. I casi d’uso tipici consistono nell’incorporare azioni offline in una campagna o in azioni personalizzate come le approvazioni.
 

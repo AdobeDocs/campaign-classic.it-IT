@@ -2,14 +2,14 @@
 product: campaign
 title: Introduzione ai profili
 description: Utilizzare i profili in Adobe Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '853'
 ht-degree: 16%
 
 ---
@@ -22,7 +22,7 @@ I profili sono centralizzati nel database di Adobe Campaign. Esistono molti poss
 
 &quot;**Profilo**&quot;record di informazioni (ad esempio, un record nella tabella nmsRecipient o una tabella esterna contenente un ID cookie, un ID cliente, un identificatore mobile o altre informazioni rilevanti per un canale specifico) che rappresenta un cliente finale, potenziale o un lead.
 
-In Adobe Campaign, i destinatari sono i profili predefiniti oggetto di targeting per l’invio di consegne (e-mail, SMS, ecc.). I dati dei destinatari memorizzati nel database consentono di filtrare il target che riceverà una determinata consegna e di aggiungere dati di personalizzazione al contenuto della consegna. Nel database sono presenti altri tipi di profili. Essi sono progettati per diversi utilizzi. Ad esempio, i profili di seed vengono creati per testare le consegne prima che vengano inviate al target finale.
+In Adobe Campaign, i destinatari sono i profili target predefiniti per l’invio di consegne (e-mail, SMS, ecc). I dati dei destinatari memorizzati nel database consentono di filtrare il target che riceverà una determinata consegna e di aggiungere dati di personalizzazione al contenuto della consegna. Nel database sono presenti altri tipi di profili. Essi sono progettati per diversi utilizzi. Ad esempio, i profili di seed vengono creati per testare le consegne prima che vengano inviate al target finale.
 
 ![](assets/do-not-localize/how-to-video.png) [Comprendere il concetto dei profili nel video](#create-profiles-video)
 
@@ -98,7 +98,7 @@ Un profilo che è stato oggetto di targeting per diverse consegne viene conteggi
 
 >[!NOTE]
 >
->I canali Facebook e Twitter non vengono presi in considerazione.
+>I canali facebook e X (precedentemente noti come Twitter) non vengono presi in considerazione.
 
 Il conteggio dei profili attivi è disponibile per **Istanze di marketing** solo. Non è disponibile per le istanze di esecuzione, ovvero per le istanze MID (mid sourcing) e RT (Message Center / Real-time messaging [Centro messaggi/Messaggistica in tempo reale]).
 
@@ -124,6 +124,6 @@ Sono disponibili altri video dimostrativi sui Campaign Classic [qui](https://exp
 
 * [Creare query e dati dei segmenti nei flussi di lavoro](../../workflow/using/targeting-data.md)
 
-* [Seleziona la mappatura target](../../delivery/using/selecting-a-target-mapping.md)
+* [Seleziona mappatura target](../../delivery/using/selecting-a-target-mapping.md)
 
 * [Definire il pubblico: best practice](../../delivery/using/define-the-right-audience.md)

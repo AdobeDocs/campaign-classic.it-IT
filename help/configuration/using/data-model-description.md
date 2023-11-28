@@ -6,9 +6,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaig
 feature: Data Model
 role: Data Engineer, Developer
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '2381'
+source-wordcount: '2385'
 ht-degree: 2%
 
 ---
@@ -140,7 +140,7 @@ Questo set di tabelle è collegato a **Ottimizzazione di Campaign** che consente
 * **NmsVolumeLine**: questa tabella corrisponde a **nms:volumeLine** schema. Contiene l&#39;insieme di righe di disponibilità delle regole di capacità.
 * **NmsVolumeConsumed**: questa tabella corrisponde a **nms:volumeConsumed** schema. Contiene tutte le righe di consumo delle regole di capacità.
 
-## Gestione della risposta {#response-management}
+## Gestione risposte {#response-management}
 
 Questo set di tabelle è collegato a **Gestione della risposta** che consente di misurare il successo e la redditività delle campagne di marketing o delle proposte di offerte per tutti i canali di comunicazione. Per ulteriori informazioni, consulta [Informazioni sulla gestione della risposta](../../response/using/about-response-manager.md).
 
@@ -261,12 +261,12 @@ Questo set di tabelle è collegato a **Canale app mobile**, che consente di invi
 
 ## Modulo di social marketing {#social-marketing-module}
 
-Questo set di tabelle è collegato a **Gestione dei social network** che consente di interagire con clienti acquisiti e potenziali tramite Facebook e Twitter. Per ulteriori informazioni, consulta [Informazioni sul social marketing](../../social/using/about-social-marketing.md).
+Questo set di tabelle è collegato a **Gestione dei social network** che consente di interagire con clienti acquisiti e potenziali tramite Facebook e X (precedentemente noto come Twitter). Per ulteriori informazioni, consulta [Informazioni sul social marketing](../../social/using/about-social-marketing.md).
 
 ![](assets/data-model_social.png)
 
 * **NmsVisitor**: questa tabella corrisponde a **nms:visitatore** schema. Contiene informazioni sui visitatori.
-* **NmsVisitorSub**: questa tabella corrisponde a **nms:visitorSub** schema. Ti consente di collegare un visitatore ai servizi a cui si è abbonato (Twitter o Facebook).
+* **NmsVisitorSub**: questa tabella corrisponde a **nms:visitorSub** schema. Ti consente di collegare un visitatore ai servizi a cui si è abbonato (X o Facebook).
 * **NmsFriendShipRel**: questa tabella corrisponde a **nms:amiciziaRel** schema. Consente di collegare i visitatori con i loro amici nel contesto del servizio Facebook.
 * **NmsVisitorInterestRel**: questa tabella corrisponde a **nms:visitorInterestRel** schema. Consente di collegare i visitatori e i loro interessi.
 * **NmsInterest**: questa tabella corrisponde a **nms:interesse** schema. Contiene l’elenco degli interessi di ogni visitatore.

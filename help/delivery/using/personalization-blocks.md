@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Personalization
 role: User
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '877'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 5%
 
 I blocchi di personalizzazione sono dinamici, personalizzati e contengono un rendering specifico che puoi inserire nelle consegne. Ad esempio, puoi aggiungere un logo, un messaggio di auguri o un collegamento alla pagina mirror. Consulta [Inserire blocchi di personalizzazione](#inserting-personalization-blocks).
 
-![](assets/do-not-localize/how-to-video.png)[ Scopri questa funzione nel video](#personalization-blocks-video)
+![](assets/do-not-localize/how-to-video.png)[ Guarda il video su questa funzione](#personalization-blocks-video)
 
 I blocchi di personalizzazione sono accessibili tramite **[!UICONTROL Resources > Campaign Management > Personalization blocks]** nodo di Adobe Campaign explorer. Per impostazione predefinita sono disponibili diversi blocchi (vedi [Blocchi di personalizzazione predefiniti](#out-of-the-box-personalization-blocks)).
 
@@ -115,7 +115,7 @@ Per impostazione predefinita, è disponibile un elenco di blocchi di personalizz
   >Questo blocco può essere utilizzato nelle consegne indirizzate solo ai visitatori.
 
 * **[!UICONTROL Registration confirmation]** : inserisce un collegamento che consente di confermare la sottoscrizione.
-* **[!UICONTROL Social network sharing links]** : inserisce pulsanti che consentono al destinatario di condividere un collegamento al contenuto della pagina speculare con il client e-mail, il Facebook, il Twitter e il LinkedIn (consulta [Marketing virale: inoltro a un amico](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
+* **[!UICONTROL Social network sharing links]** : inserisce pulsanti che consentono al destinatario di condividere un collegamento al contenuto della pagina speculare con il client e-mail, Facebook, X (precedentemente noto come Twitter) e LinkedIn (vedi [Marketing virale: inoltro a un amico](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
 * **[!UICONTROL Style of content emails]** e **[!UICONTROL Notification style]** : genera un codice che formatta un’e-mail con stili HTML predefiniti. Questi blocchi devono essere inseriti nel codice sorgente della consegna, nel **[!UICONTROL ...]** sezione, in **`<style>...</style>`** tag.
 * **[!UICONTROL Offer acceptance URL in unitary mode]** : inserisce un URL che consente di impostare un’offerta di interazione su **[!UICONTROL Accepted]** (vedere [questa sezione](../../interaction/using/offer-analysis-report.md)).
 

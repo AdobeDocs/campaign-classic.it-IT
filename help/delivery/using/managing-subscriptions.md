@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Subscriptions
 role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 2%
+source-wordcount: '1120'
+ht-degree: 3%
 
 ---
 
@@ -47,19 +47,19 @@ Per accedere alla mappa dei servizi di informazioni, aprire **[!UICONTROL Profil
 
 ![](assets/s_ncs_user_services_new.png)
 
-Per modificare un servizio esistente, fare clic sul relativo nome. Per creare un servizio, fai clic su **[!UICONTROL Create]** sopra l&#39;elenco.
+Per modificare un servizio esistente, fai clic sul suo nome. Per creare un servizio, fai clic su **[!UICONTROL Create]** sopra l&#39;elenco.
 
 ![](assets/s_ncs_user_services_add.png)
 
-* Inserisci il nome del servizio nel **[!UICONTROL Label]** e seleziona il canale di consegna: e-mail, dispositivi mobili, Facebook, Twitter o applicazioni mobili.
+* Inserisci il nome del servizio nel **[!UICONTROL Label]** e seleziona il canale di consegna: e-mail, dispositivi mobili, Facebook, X (precedentemente noto come Twitter) o applicazioni mobili.
 
   >[!NOTE]
   >
-  >Gli abbonamenti a facebook e al Twitter sono descritti in dettaglio in [questa sezione](../../social/using/about-social-marketing.md). Gli abbonamenti alle app mobili sono descritti in dettaglio in [Informazioni sul canale app mobile](about-mobile-app-channel.md).
+  >Gli abbonamenti a facebook e X sono descritti in dettaglio [questa sezione](../../social/using/about-social-marketing.md). Gli abbonamenti alle app mobili sono descritti in dettaglio in [Informazioni sul canale app mobile](about-mobile-app-channel.md).
 
 * Per un servizio di tipo E-mail, seleziona la **Modalità di consegna**. Le modalità possibili sono: **[!UICONTROL Newsletter]** o **[!UICONTROL Viral]**.
 * Puoi inviare **messaggi di conferma** per un abbonamento o per il suo annullamento. A questo scopo, seleziona i modelli di consegna da utilizzare per creare le consegne corrispondenti dal **[!UICONTROL Subscription]** e **[!UICONTROL Unsubscription]** campi. Questi modelli devono essere configurati con **[!UICONTROL Subscription]** tipo mappatura target, senza target definito. Vedere la sezione [Informazioni sul canale e-mail](about-email-channel.md).
-* Per impostazione predefinita, gli abbonamenti sono illimitati. È possibile deselezionare **[!UICONTROL Unlimited]** per definire una durata di validità per il servizio. La durata può essere specificata in giorni (**[!UICONTROL d]** ) o mesi (**[!UICONTROL m]** ).
+* Per impostazione predefinita, le iscrizioni hanno un periodo di validità illimitato. È possibile deselezionare **[!UICONTROL Unlimited]** per definire una durata di validità per il servizio. La durata può essere specificata in giorni (**[!UICONTROL d]** ) o mesi (**[!UICONTROL m]** ).
 
 Una volta salvato, il servizio viene aggiunto all’elenco Servizi e abbonamenti: fai clic sul nome per modificarlo. Sono disponibili diverse schede. Il **[!UICONTROL Subscriptions]** scheda consente di esaminare l&#39;elenco degli abbonati al servizio di informazioni (**[!UICONTROL Active subscriptions]** ) o la cronologia degli abbonamenti/annullamenti (**[!UICONTROL History]** ). Da questa scheda è inoltre possibile aggiungere ed eliminare sottoscrittori. Consulta [Aggiunta ed eliminazione di abbonati](#adding-and-deleting-subscribers).
 
