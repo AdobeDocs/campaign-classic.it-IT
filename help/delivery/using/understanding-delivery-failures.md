@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Monitoring, Deliverability
 role: User
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 8b0162680d6a3a2d4891d1f71020b44b28046ad7
 workflow-type: tm+mt
-source-wordcount: '2624'
+source-wordcount: '2573'
 ht-degree: 17%
 
 ---
@@ -287,11 +287,13 @@ Le regole predefinite sono le seguenti.
 
 #### E-mail in entrata {#inbound-email}
 
->[!IMPORTANT]
->
->Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento al [MTA avanzato](sending-with-enhanced-mta.md), e se l’istanza ha **Webhook** funzionalità, **[!UICONTROL Inbound email]** le regole non vengono più utilizzate per i messaggi di errore di consegna sincrona. Per ulteriori informazioni, consulta [questa sezione](#bounce-mail-qualification).
+<!--
+STATEMENT ONLY TRUE with Momentum and EFS+:
+For hosted or hybrid installations, if you have upgraded to the [Enhanced MTA](sending-with-enhanced-mta.md), and if your instance has **Webhooks** functionality, the **[!UICONTROL Inbound email]** rules are no longer used for synchronous delivery failure error messages. For more on this, see [this section](#bounce-mail-qualification).
 
-Per le installazioni on-premise e le installazioni in hosting/ibride che utilizzano l’MTA di Campaign legacy, queste regole contengono l’elenco di stringhe di caratteri che possono essere restituite dai server remoti e che consentono di qualificare l’errore (**Rigido**, **Morbido** o **Ignorato**).
+For on-premise installations and hosted/hybrid installations using the legacy Campaign MTA, these rules contain the list of character strings which can be returned by remote servers and which let you qualify the error (**Hard**, **Soft** or **Ignored**).-->
+
+Il **[!UICONTROL Inbound email]** le regole contengono l’elenco di stringhe di caratteri che possono essere restituite dai server remoti e che ti consentono di qualificare l’errore (**Rigido**, **Morbido** o **Ignorato**).
 
 Quando un messaggio e-mail non riesce, il server remoto restituisce un messaggio di mancato recapito all’indirizzo specificato nella [parametri piattaforma](../../installation/using/deploying-an-instance.md). Adobe Campaign confronta il contenuto di ogni e-mail non recapitata con le stringhe nell’elenco delle regole, quindi assegna a ciascuna una delle tre opzioni [tipi di errore](#delivery-failure-types-and-reasons).
 
