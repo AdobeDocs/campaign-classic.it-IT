@@ -5,20 +5,18 @@ description: Ulteriori informazioni sull’attività del flusso di lavoro Conseg
 badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 05210269da2a32310c19911a3bc32240c84dc7ad
+source-git-commit: 198921813ff097db0d4ba0a8203fef65bb591af7
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 19%
+source-wordcount: '289'
+ht-degree: 12%
 
 ---
 
 # Consegna ricorrente{#recurring-delivery}
 
-
-
 A **[!UICONTROL Recurring delivery]** attività consente di configurare un’occorrenza del modello di consegna specifica per una campagna.
 
-![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#recurring-delivery-video)
+![](assets/do-not-localize/how-to-video.png) [Guarda il video su questa funzione](#recurring-delivery-video)
 
 Questa attività è disponibile solo da **[!UICONTROL Targeting and workflows]** scheda trovata in una campagna.
 
@@ -31,6 +29,10 @@ Per eseguire questa operazione:
 1. Configura il modello di consegna.
 
 Il processo di configurazione per questa attività è simile a quello della creazione di un modello di consegna in termini di opzioni disponibili. Per ulteriori informazioni, consulta questa [sezione](../../delivery/using/about-templates.md).
+
+>[!CAUTION]
+>
+>Le consegne ricorrenti non supportano l’invio di bozze, tra cui [dati di destinazione](../../workflow/using/data-life-cycle.md#target-data) elementi di personalizzazione.
 
 Per un esempio di questa attività in uso, fai riferimento a questo [sezione](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 

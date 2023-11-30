@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Deliverability, Email Rendering, Proofs
 role: User
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 198921813ff097db0d4ba0a8203fef65bb591af7
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1677'
 ht-degree: 8%
 
 ---
@@ -133,13 +133,16 @@ Per rilevare eventuali errori nella configurazione dei messaggi, Adobe consiglia
 
 >[!NOTE]
 >
->* Le modalità di convalida disponibili sono descritte in dettaglio [Modificare la modalità di approvazione](steps-validating-the-delivery.md#changing-the-approval-mode).
->* La configurazione del target della bozza è spiegata in [Definire un target di bozza specifico](steps-defining-the-target-population.md#defining-a-specific-proof-target).
->
+>Le modalità di convalida disponibili sono descritte in dettaglio [Modificare la modalità di approvazione](steps-validating-the-delivery.md#changing-the-approval-mode).
 
 Per inviare una bozza, effettua le seguenti operazioni:
 
 1. Assicurati che la destinazione della bozza sia stata configurata come descritto in [Definire un target di bozza specifico](steps-defining-the-target-population.md#defining-a-specific-proof-target).
+
+   >[!CAUTION]
+   >
+   >[Consegne ricorrenti](../../workflow/using/recurring-delivery.md) non supportano l’invio di bozze, tra cui [dati di destinazione](../../workflow/using/data-life-cycle.md#target-data) elementi di personalizzazione.
+
 1. Clic **[!UICONTROL Send a proof]** sulla barra superiore della consegna guidata.
 
    ![](assets/s_ncs_user_email_del_send_proof.png)
