@@ -5,9 +5,9 @@ description: Ulteriori informazioni sull’attività del flusso di lavoro Conseg
 badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 198921813ff097db0d4ba0a8203fef65bb591af7
+source-git-commit: cfc38df8184a8f59d49ce27eb7875783e8941611
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '292'
 ht-degree: 12%
 
 ---
@@ -32,7 +32,7 @@ Il processo di configurazione per questa attività è simile a quello della crea
 
 >[!CAUTION]
 >
->Le consegne ricorrenti non supportano l’invio di bozze, tra cui [dati di destinazione](../../workflow/using/data-life-cycle.md#target-data) elementi di personalizzazione.
+>Le consegne ricorrenti non supportano l’anteprima del contenuto o l’invio di bozze, tra cui [dati di destinazione](../../workflow/using/data-life-cycle.md#target-data) elementi di personalizzazione.
 
 Per un esempio di questa attività in uso, fai riferimento a questo [sezione](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 

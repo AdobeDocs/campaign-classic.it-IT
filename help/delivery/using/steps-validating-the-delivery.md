@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Deliverability, Email Rendering, Proofs
 role: User
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 198921813ff097db0d4ba0a8203fef65bb591af7
+source-git-commit: cfc38df8184a8f59d49ce27eb7875783e8941611
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1665'
 ht-degree: 8%
 
 ---
@@ -138,10 +138,6 @@ Per rilevare eventuali errori nella configurazione dei messaggi, Adobe consiglia
 Per inviare una bozza, effettua le seguenti operazioni:
 
 1. Assicurati che la destinazione della bozza sia stata configurata come descritto in [Definire un target di bozza specifico](steps-defining-the-target-population.md#defining-a-specific-proof-target).
-
-   >[!CAUTION]
-   >
-   >[Consegne ricorrenti](../../workflow/using/recurring-delivery.md) non supportano l’invio di bozze, tra cui [dati di destinazione](../../workflow/using/data-life-cycle.md#target-data) elementi di personalizzazione.
 
 1. Clic **[!UICONTROL Send a proof]** sulla barra superiore della consegna guidata.
 
