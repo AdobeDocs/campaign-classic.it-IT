@@ -4,10 +4,10 @@ title: Aggiornamento al nuovo server di recapito messaggi
 description: Scopri come aggiornare al nuovo server di recapito messaggi di Campaign
 feature: Technote, Deliverability
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 65b6f91e083c955df044ffeb10f5338104d1ce56
+source-git-commit: eea3657f1cffa215e1fc1cb1eb8782b83321aae4
 workflow-type: tm+mt
-source-wordcount: '1356'
-ht-degree: 3%
+source-wordcount: '1252'
+ht-degree: 4%
 
 ---
 
@@ -28,7 +28,7 @@ Ad Adobe, è in corso la disattivazione dei datacenter meno recenti per motivi d
 
 Questo nuovo server garantisce un’elevata disponibilità (99.9)&#x200B; e fornisce endpoint sicuri e autenticati per consentire ai server di Campaign di recuperare i dati richiesti: anziché connettersi al database per ogni richiesta, il nuovo server di recapito messaggi memorizza in cache i dati per soddisfare le richieste, ove possibile. Questo meccanismo migliora il tempo di risposta&#x200B;
 
-## Sei interessato da questo problema?{#acc-deliverability-impacts}
+## Sei interessato?{#acc-deliverability-impacts}
 
 Tutti i clienti sono interessati e devono effettuare l’aggiornamento a [Campaign v7.2.2](../../rn/using/latest-release.md#release-7-2-2) (o più) e implementare il proprio ambiente per trarre vantaggio dal nuovo server di recapito messaggi.
 
@@ -145,15 +145,7 @@ Per eseguire questa operazione:
 
 1. È necessario arrestare e quindi riavviare il server affinché la modifica possa essere presa in considerazione. È inoltre possibile eseguire una `config -reload` comando.
 
-### Passaggio 3: abilitare il nuovo server di recapito messaggi
-
-Ora puoi abilitare il nuovo server di recapito messaggi. Per eseguire questa operazione:
-
-1. Apri la console client e accedi ad Adobe Campaign come amministratore.
-1. Sfoglia per **Amministrazione > Piattaforma > Opzioni**.
-1. Accedere a `NewDeliverabilityServer_FeatureFlag` e imposta il valore su `1`. Questa configurazione deve essere eseguita su tutte le istanze di Campaign (MKT, MID, RT, EXEC). In qualità di cliente ibrido, rivolgiti a Adobe per avere l’opzione impostata sulle istanze MID, RT ed EXEC.
-
-### Passaggio 4: Convalidare la configurazione
+### Passaggio 3: Convalidare la configurazione
 
 Per verificare il successo dell’integrazione, segui i passaggi seguenti:
 
