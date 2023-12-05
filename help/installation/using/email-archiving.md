@@ -8,10 +8,10 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: e808e71ccf949bdaf735cdb2895389f03638bd71
 workflow-type: tm+mt
-source-wordcount: '1366'
-ht-degree: 5%
+source-wordcount: '1218'
+ht-degree: 2%
 
 ---
 
@@ -80,7 +80,7 @@ Una volta definito il percorso della cartella locale, aggiungi e modifica i segu
 
 ```
 <archiving autoStart="false" compressionFormat="0" compressBatchSize="10000"
-           archivingType="0" expirationDelay="2" purgeArchivesDelay="7"
+           archivingType="1" expirationDelay="2" purgeArchivesDelay="7"
            pollDelay="600" acquireLimit="5000" smtpNbConnection="2"/>
 ```
 
@@ -91,11 +91,12 @@ Una volta definito il percorso della cartella locale, aggiungi e modifica i segu
   **1**: compressione (formato .zip)
 
 * **compressBatchSize**: numero di file eml aggiunti a un archivio (file .zip).
-* **archivingType**: strategia di archiviazione da utilizzare. I valori possibili sono:
 
-  **0**: le copie non elaborate delle e-mail inviate vengono salvate in formato .eml in **dataLogPath** cartella (valore predefinito). Una copia di archiviazione del **`<deliveryid>-<broadlogid>-sent.eml`** il file viene salvato in **dataLogPath/archivi** cartella. Il percorso del file e-mail inviato diventa **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`**.
 
-  **1**: le copie non elaborate delle e-mail inviate vengono salvate in formato .eml in **dataLogPath** e vengono inviati all’indirizzo e-mail Ccn tramite SMTP. Una volta inviate le copie dell&#39;e-mail all&#39;indirizzo Ccn, il nome del file di archivio diventa **`<deliveryid>-<broadlogid>-sent-archived.eml`** e il file viene spostato in **dataLogPath/archivi** cartella. Il percorso del file e-mail archiviato in Ccn e inviato è quindi **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`**.
+* **archivingType**: strategia di archiviazione da utilizzare. L’unico valore possibile è **1**. Le copie non elaborate delle e-mail inviate vengono salvate in formato .eml in **dataLogPath** e vengono inviati all’indirizzo e-mail Ccn tramite SMTP. Una volta inviate le copie dell&#39;e-mail all&#39;indirizzo Ccn, il nome del file di archivio diventa **`<deliveryid>-<broadlogid>-sent-archived.eml`** e il file viene spostato in **dataLogPath/archivi** cartella. Il percorso del file e-mail archiviato in Ccn e inviato è quindi **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`**.
+
+  <!--
+  **0**: raw copies of sent emails are saved in .eml format to the **dataLogPath** folder (default value). An archiving copy of the **`<deliveryid>-<broadlogid>-sent.eml`** file is saved to the **dataLogPath/archives** folder. The sent email file path becomes **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`**.-->
 
 * **expirationDelay**: numero di giorni in cui i file eml vengono conservati per l’archiviazione. Dopo questo ritardo, vengono automaticamente spostati nel **dataLogPath/archivi** cartella per la compressione. Per impostazione predefinita, i file .eml scadono dopo due giorni.
 * **purgeArchivesDelay**: numero di giorni in cui gli archivi vengono conservati nel **dataLogPath/`<archives>`** cartella. Dopo tale periodo, vengono eliminati definitivamente. L’eliminazione inizia quando viene avviato l’MTA. Per impostazione predefinita viene eseguita ogni sette giorni.
@@ -131,23 +132,23 @@ In **config-`<instance name>.xml`** , utilizzare i seguenti parametri per defini
 >
 >Inoltre, l&#39;inoltro assegna un **[!UICONTROL Sent]** stato di tutte le e-mail, incluse quelle che non vengono inviate. Pertanto, tutti i messaggi vengono archiviati.
 
-## Passaggio al nuovo campo CCN e-mail {#updated-email-archiving-system--bcc-}
+<!--
+## Moving to the new Email BCC {#updated-email-archiving-system--bcc-}
 
-[!BADGE On-premise e ibrido]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"}
-
-
+[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"}
 
 >[!IMPORTANT]
 >
->Il sistema di archiviazione delle e-mail (CCN) è stato modificato con Adobe Campaign 17.2 (build 8795). Se si esegue l&#39;aggiornamento da una build precedente e si utilizzavano già le funzionalità di archiviazione delle e-mail, è necessario eseguire l&#39;aggiornamento manualmente al nuovo sistema di archiviazione delle e-mail (CCN).
+>The email archiving system (BCC) changed with Adobe Campaign 17.2 (build 8795). If you are upgrading from an older build and were already using email archiving capabilities, you must upgrade manually to the new email archiving system (BCC).
 
-A questo scopo, apporta le seguenti modifiche alla **`config-<instance>.xml`** file:
+To do this, make the following changes to the **`config-<instance>.xml`** file:
 
-1. Rimuovi il **zipPath** parametro da **`<archiving>`** nodo.
-1. Imposta il **compressionFormat** parametro a **1** se necessario.
-1. Imposta il **archivingType** parametro a **1**.
+1. Remove the **zipPath** parameter from the **`<archiving>`** node.
+1. Set the **compressionFormat** parameter to **1** if needed.
+1. Set the **archivingType** parameter to **1**.
 
-Una volta configurato il campo CCN e-mail, assicurati di selezionare **[!UICONTROL Email BCC]** nel modello di consegna o nella consegna. Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/sending-messages.md#archiving-emails).
+Once email BCC is configured, make sure you select the **[!UICONTROL Email BCC]** option in the delivery template or the delivery. For more on this, see [this section](../../delivery/using/sending-messages.md#archiving-emails).
+-->
 
 ## Best practice per il CCN dell’e-mail {#best-practices}
 
