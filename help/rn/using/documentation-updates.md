@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaig
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 8ecb5aba9a070276927e97586ed463ab485717d6
-workflow-type: ht
-source-wordcount: '3645'
-ht-degree: 100%
+source-git-commit: 38cd50072bdedbac566eb3a56d86328d1e5e1883
+workflow-type: tm+mt
+source-wordcount: '3648'
+ht-degree: 99%
 
 ---
 
@@ -22,9 +22,11 @@ Per gli aggiornamenti relativi alla versione, consulta le [Note sulla versione d
 
 ## 2023
 
-### Novembre 2023
+### Dicembre 2023
 
 Il codice JWT (JSON Web Tokens) è attualmente in fase di ammortamento e viene sostituito con OAuth. La transizione viene eseguita progressivamente nelle prossime versioni di Campaign e la documentazione verrà aggiornata per riflettere tali aggiornamenti.
+
+È stata aggiunta la configurazione dell’account esterno FDA per Amazon Redshift. [Ulteriori informazioni](../../installation/using/configure-fda-redshift.md)
 
 ### Agosto 2023
 
@@ -534,7 +536,7 @@ La guida [Invio di notifiche push](../../delivery/using/about-mobile-app-channel
 
 Il nuovo parametro per la configurazione dei report URL è stato documentato [qui](../../reporting/using/properties-of-the-report.md#defining-additional-settings).
 
-La pagina della **matrice delle funzionalità on-premise e in hosting di Campaign Classic** è stata aggiornata con i nuovi connettori FDA. [Leggi tutto](../../installation/using/capability-matrix.md).
+La pagina della **matrice delle funzionalità on-premise e in hosting di Campaign Classic** è stata aggiornata con i nuovi connettori FDA. [Ulteriori informazioni](../../installation/using/capability-matrix.md).
 
 La pagina della **matrice delle funzionalità di Campaign Classic** è stata aggiornata. [Leggi tutto](https://helpx.adobe.com/it/campaign/kb/compatibility-matrix.html)
 
