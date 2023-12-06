@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1519'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
   </tr>
 <tr>
  <td>Social Marketing con Facebook</td>
- <td>Il Social Marketing con Facebook è ora obsoleto. Puoi utilizzare l’integrazione X (precedentemente nota come Twitter) per pubblicare sui social media o lavorare con Adobe per creare un canale personalizzato.
+ <td>Il Social Marketing con Facebook è ora obsoleto. Per pubblicare sui social media o lavorare con Adobe per creare un canale personalizzato, è possibile utilizzare l’integrazione con X (precedentemente noto come Twitter).
  <p></p>
   <p>Data prevista di rimozione: fine 2023</p>
   </td>
