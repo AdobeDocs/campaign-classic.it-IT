@@ -6,8 +6,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaig
 feature: Technote, Upgrade
 role: User
 level: Beginner
+solution: Campaign
+version: Classic v7
 exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 87a27eb96fe9fbcb68a5e961b95cb4588eee85e3
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 2%
@@ -20,7 +22,7 @@ ht-degree: 2%
 
 ## Contesto
 
-In qualità di cliente Adobe Campaign Classic, ci impegniamo a fornirti la migliore esperienza e il miglior valore. Nel corso degli anni, abbiamo realizzato il valore e l&#39;affidabilità di ospitare i nostri clienti nel cloud.  Come parte del nostro [Iniziativa di aggiornamento annuale](../../rn/using/rn-overview.md#yearly-upgrade), stiamo trasferendo tutti i nostri clienti ad Adobe Managed Services (Public Cloud su AWS) per fornire servizi migliori e più affidabili.
+In qualità di cliente Adobe Campaign Classic, ci impegniamo a fornirti la migliore esperienza e il miglior valore. Nel corso degli anni, abbiamo realizzato il valore e l&#39;affidabilità di ospitare i nostri clienti nel cloud.  Come parte del nostro [Iniziativa di aggiornamento annuale](../../rn/using/rn-overview.md#yearly-upgrade), stiamo trasferendo tutti i nostri clienti ad Adobe Managed Services (Public Cloud on AWS) per fornire servizi migliori e più affidabili.
 
 Il programma ha tre obiettivi principali:
 
@@ -85,7 +87,7 @@ Una migrazione può essere avviata da [apertura di un nuovo ticket di supporto a
 
 Questa migrazione al cloud è **primo passaggio al [programma di aggiornamento annuale](../../rn/using/rn-overview.md#yearly-upgrade)** delle istanze di Adobe Campaign. Questa migrazione è obbligatoria se sei ospitato in un centro dati che non è il cloud pubblico (AWS).
 
-Il cloud Adobe Managed Services è ospitato su Amazon Web Services (AWS), un ambiente moderno, sicuro e ottimizzato. [Ulteriori informazioni su AWS](https://aws.amazon.com/application-hosting/benefits/).
+Il cloud Managed Services di Adobe è ospitato su Amazon Web Services (AWS), un ambiente moderno, sicuro e ottimizzato. [Ulteriori informazioni su AWS](https://aws.amazon.com/application-hosting/benefits/).
 
 Adobe pianifica di smantellare il centro dati legacy; le istanze Adobe Campaign in esecuzione in tale centro devono essere trasferite al nuovo centro dati di riferimento, AWS.
 
@@ -93,7 +95,7 @@ Si tratta di un percorso critico in avanti in quanto la posizione corrente potre
 
 Inoltre, questa migrazione è ora **prerequisito per qualsiasi aggiornamento futuro della build** del tuo Adobe Campaign. L&#39;aggiornamento della build non è più possibile sui datacenter legacy.
 
-Adobe si impegna a proteggere i dati e a camminare sulla strada giusta per il futuro di Adobe Campaign. Abbiamo bisogno della vostra collaborazione per farla diventare un successo comune!
+Adobe si impegna a proteggere i dati e a camminare sulla strada giusta per il futuro di Adobe Campaign. Abbiamo bisogno della vostra collaborazione per farne un successo comune!
 
 
 **Abbiamo organizzato un team** di responsabili dell’Assistenza clienti, Customer Success Manager, Product Manager, ingegneri, specialisti TechOps e consulenti di prodotto che offrano assistenza e garanzia di un’esperienza fluida e fluida. Facciamo tutto il possibile affinché tu possa disporre sempre delle informazioni di progetto e di contatto di cui puoi avere bisogno.
@@ -157,7 +159,7 @@ Ciò significa che la modifica sarà trasparente per gli utenti e le implementaz
 
 **IP di invio e-mail**
 
-In primo luogo, Adobe Deliverability valuterà lo stato di recapito della piattaforma e raccomanderà un piano per il passaggio ai nuovi IP.
+Innanzitutto, Adobe Deliverability valuta lo stato di recapito della piattaforma e consiglia un piano per il passaggio ai nuovi IP.
 
 Adobe esegue il provisioning dello stesso numero di IP sul nuovo centro dati.
 
@@ -188,7 +190,7 @@ Suggerimenti:
 
 Durante la migrazione, rimarrà funzionante un solo servizio: reindirizzamento dei collegamenti e-mail. In altre parole, i destinatari saranno in grado di raggiungere la pagina di destinazione quando fanno clic in un’e-mail. Tuttavia, questi clic non verranno registrati, pertanto le percentuali di clic per le consegne avviate poco prima della migrazione saranno inferiori al normale.
 
-**Riavvio**
+**Riavvia**
 
 Dopo la migrazione al nuovo ambiente, l’applicazione verrà riavviata progressivamente:
 
