@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2553'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -291,7 +291,7 @@ Ulteriori informazioni sono disponibili nella pagina [Funzioni obsolete e rimoss
 * È stato risolto un problema che poteva ridurre l’utilizzo di memoria sul server durante l’analisi della consegna.
 * È stato risolto un problema che poteva impedire il funzionamento dell’istanza durante il tentativo di eseguire specifiche query complesse.
 * È stato risolto un problema che poteva impedire l’esecuzione del flusso di lavoro tecnico per la **sincronizzazione delle pagine Twitter**. (NEO-28634)
-* È stato risolto un problema che poteva mostrare un messaggio di errore relativo alla funzione decryptPassword quando si tentava di pubblicare su X (precedentemente noto come Twitter) utilizzando **Tweet (twitter)** modello di consegna. (NEO-28216)
+* È stato risolto un problema che poteva mostrare un messaggio di errore relativo alla funzione decryptPassword quando si tentava di pubblicare su X (precedentemente noto come Twitter) utilizzando il modello di consegna **Tweet (twitter)**. (NEO-28216)
 * È stato risolto un problema che si verificava durante l’utilizzo di un’attività **JavaScript** per effettuare una richiesta HTTP in un flusso di lavoro. Dopo aver definito il numero di porta nel nome host, la chiamata non riusciva e veniva visualizzato il seguente errore (NEO-29146):
 
 ```
