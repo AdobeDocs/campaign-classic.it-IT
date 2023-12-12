@@ -7,9 +7,9 @@ user-guide-description: Con Adobe Campaign, puoi utilizzare dati approfonditi su
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: c2ac8fcf1d9746dbddffc90491a6f214e2c3df2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2544'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -422,7 +422,7 @@ ht-degree: 99%
       + [Cambiare dimensione](workflow/using/change-dimension.md)
       + [Aggiornare un elenco](workflow/using/list-update.md)
       + [Servizi di abbonamento](workflow/using/subscription-services.md)
-      + [Aggiornamento dei dati](workflow/using/update-data.md)
+      + [Aggiornare i dati](workflow/using/update-data.md)
       + [Connettore per sistema CRM](workflow/using/crm-connector.md)
       + [Modificare l’origine dati](workflow/using/change-data-source.md)
    + Attività di controllo del flusso {#flow-control-activities}
@@ -822,7 +822,7 @@ ht-degree: 99%
    + [Consigli sui requisiti hardware in base alle dimensioni](technotes/using/hardware-sizing.md)
    + Aggiornamento a IMS{#ims}
       + [Migrazione utenti a IMS](technotes/using/migrate-users-to-ims.md)
-      + [Migrazione degli operatori tecnici a Console sviluppatori](technotes/using/ims-migration.md)
+      + [Migrazione degli operatori tecnici a Developer Console](technotes/using/ims-migration.md)
    + Aggiornamenti e compatibilità{#technote-migration}
       + [Note tecniche](technotes/using/technote.md)
       + [Abilitare Microsoft Edge basato su Chromium](technotes/using/edge-chromium.md)
