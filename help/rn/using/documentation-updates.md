@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: cc6d85bcf822ba9be99e39cf459a5aa20cc2d4fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3648'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -434,7 +434,7 @@ Leggi sulla privacy in Thailandia e Brasile. [Leggi tutto](https://helpx.adobe.c
 
 La nuova opzione che consente di annullare la pubblicazione di un modello di messaggio transazionale è documentata in [questa sezione](../../message-center/using/publishing-message-templates.md#template-unpublication).
 
-Le nuove opzioni che consentono di impostare limitazioni durante l’invio di e-mail contenenti immagini scaricate da un URL personalizzato e allegati sono state aggiunte all’elenco delle opzioni di Campaign Classic. [Leggi tutto](../../installation/using/configuring-campaign-options.md#delivery)
+All’elenco delle opzioni di Campaign Classic sono state aggiunte le nuove opzioni che consentono di impostare limitazioni durante l’invio di e-mail contenenti immagini scaricate da un URL personalizzato e allegati. [Leggi tutto](../../installation/using/configuring-campaign-options.md#delivery)
 
 La nuova opzione **Prepare the delivery parts in the database** è documentata in [questa sezione](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis).
 
