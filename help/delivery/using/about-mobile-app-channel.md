@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Push
 role: User
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 9756f05e3887bc74578bae00138c4d1317a480f8
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '684'
 ht-degree: 2%
 
 ---
@@ -17,10 +17,6 @@ ht-degree: 2%
 # Guida introduttiva al canale app mobile{#about-mobile-app-channel}
 
 Il **Canale app mobile** consente di utilizzare la piattaforma Adobe Campaign per inviare notifiche push personalizzate ai terminali iOS e Android tramite app.
-
->[!CAUTION]
->
->Questo documento descrive il processo di integrazione dell’app mobile con la piattaforma Adobe Campaign. Non fornisce informazioni su come creare l’app mobile o configurarla per gestire le notifiche. Per ulteriori informazioni, consulta l’Apple ufficiale [documentazione](https://developer.apple.com/) e Android [documentazione](https://developer.android.com/index.html).
 
 Sono disponibili due canali di consegna:
 
@@ -32,14 +28,14 @@ Sono disponibili due canali di consegna:
 
   ![](assets/nmac_intro_1.png)
 
-Corrispondente a questi due canali, nei flussi di lavoro delle campagne sono presenti due attività di consegna:
+  >[!IMPORTANT]
+  >
+  >Alcune modifiche importanti al servizio Android Firebase Cloud Messaging (FCM) saranno rilasciate nel 2024 e potrebbero influire sull’implementazione di Adobe Campaign. Per supportare questa modifica, potrebbe essere necessario aggiornare la configurazione dei servizi di abbonamento per i messaggi push Android. Puoi già verificare ed eseguire azioni. Ulteriori informazioni [Nota tecnica su Adobe Campaign v8](https://experienceleague.corp.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html){target="_blank"}.
+
+Corrispondente a questi due canali, nei flussi di lavoro delle campagne sono presenti due attività di consegna. Per la messaggistica transazionale sono disponibili anche due modelli di messaggi transazionali.
 
 ![](assets/nmac_intro_3.png)
 
-
->[!NOTE]
->
->Per la messaggistica transazionale sono disponibili anche due modelli di messaggi transazionali.
 
 È possibile definire il comportamento dell’applicazione per quando l’utente attiva la notifica per visualizzare la schermata che corrisponde al contesto dell’applicazione. Ad esempio:
 
