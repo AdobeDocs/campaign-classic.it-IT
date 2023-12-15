@@ -3,9 +3,9 @@ keywords: Campaign Classic;home;argomenti principali
 product: campaign
 title: Documentazione del prodotto di Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 92c79e7050124bc707f4d6b87c7952016586002c
+source-git-commit: 6dd2a2343c0204c01dd0fa4910299efa15c29849
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '342'
 ht-degree: 4%
 
 ---
@@ -27,14 +27,14 @@ Scopri gli aggiornamenti, i miglioramenti e le patch disponibili con Campaign Cl
 
 [![immagine](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
->[!TAB Passa al sistema Identity Management Adobe]
+>[!TAB Sposta in Adobe IMS]
 
 Per rafforzare la sicurezza e il processo di autenticazione, Adobe Campaign consiglia vivamente di migrare la modalità di autenticazione dell’utente finale dall’autenticazione nativa di login/password ad Adobe Identity Management System (IMS).
 
 [![immagine](assets/do-not-localize/learn-more-button.svg)](technotes/using/migrate-users-to-ims.md)
 
 
->[!TAB Modifiche imminenti del canale push]
+>[!TAB Modifiche al canale push]
 
 Alcune modifiche importanti al servizio Android Firebase Cloud Messaging (FCM) saranno rilasciate nel 2024 e potrebbero influire sull’implementazione di Adobe Campaign. Per supportare questa modifica, potrebbe essere necessario aggiornare la configurazione dei servizi di abbonamento per i messaggi push Android. Puoi già verificare ed eseguire azioni.
 
