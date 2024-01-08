@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaig
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: f2e6db9e198f96e1e0250d461b419ac00e39bf45
-workflow-type: ht
-source-wordcount: '2221'
-ht-degree: 100%
+source-git-commit: 9083c9c11b6b9c695cc98882e99ceb3cffc20ec7
+workflow-type: tm+mt
+source-wordcount: '2258'
+ht-degree: 97%
 
 ---
 
@@ -20,20 +20,20 @@ In questa pagina sono elencate nuove funzionalità, miglioramenti e correzioni i
 
 ## Versione 7.3.5 - Build 9368 {#release-7-3-5}
 
-[!BADGE Disponibilità generale]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Disponibilità generale"}
+[!BADGE Disponibilità generale]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Disponibilità generale"}
 
 
 _5 dicembre 2023_
 
 
-**Miglioramenti di sicurezza**
+### Miglioramenti di sicurezza {#release-7-3-5-security}
 
 
 * Con Campaign Classic v7.3.5, il processo di autenticazione è stato migliorato e protetto. Gli operatori tecnici ora devono utilizzare Adobe Identity Management System (IMS) per connettersi a Campaign. Scopri come eseguire la migrazione degli account tecnici esistenti in [questa nota tecnica](../../technotes/using/ims-migration.md).
 
 * Inoltre, come parte del tentativo di rafforzare la sicurezza e il processo di autenticazione, Adobe Campaign consiglia vivamente di migrare la modalità di autenticazione dell’utente finale dall’autenticazione nativa di login/password ad Adobe Identity Management System (IMS). Scopri come effettuare la migrazione degli operatori in [questa nota tecnica](../../technotes/using/migrate-users-to-ims.md).
 
-**Patch**
+### Patch {#release-7-3-5-patches}
 
 * È stato risolto un problema che si verificava durante l’utilizzo di dati da un database Google Big Query e l’aggiornamento di dati in un database di Oracle: tutte le chiavi erano impostate su `0` nella tabella temporanea del flusso di lavoro. (NEO-65091)
 * È stato risolto un problema che causava un errore nell’esecuzione di un flusso di lavoro quando due query su un database Google Big Query venivano combinate in un’attività del flusso di lavoro **Unione**. (NEO-63705)
@@ -48,27 +48,28 @@ _5 dicembre 2023_
 
 [!BADGE Disponibilità limitata]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Disponibilità limitata"}
 
+
 >[!CAUTION]
 >
 >L’aggiornamento della console client è obbligatorio. Scopri come aggiornare la console client in questa [pagina](../../installation/using/installing-the-client-console.md).
 >
-> Se stai usando il [Connettore per la gestione delle relazioni con i clienti Microsoft Dynamics - Campaign](../../platform/using/crm-connectors.md), con questa nuova build devi aggiornare sia i server di marketing che quelli di mid-sourcing.
+>Se stai usando il [Connettore per la gestione delle relazioni con i clienti Microsoft Dynamics - Campaign](../../platform/using/crm-connectors.md), con questa nuova build devi aggiornare sia i server di marketing che quelli di mid-sourcing.
 
 _7 settembre 2023_
 
-**Miglioramento della sicurezza**
+### Miglioramenti di sicurezza {#release-7-3-4-security}
 
 * La sicurezza è stata migliorata nelle API IMS. Le informazioni sensibili per il client (ad esempio i token di accesso) sono state rimosse dai parametri URL. Queste credenziali vengono ora inviate nell’intestazione dei dati post o dell’autorizzazione, garantendo un processo di comunicazione più sicuro. (NEO-63045)
 * È stata migliorata la sicurezza nelle app web per prevenire gli attacchi DDOS. (NEO-50757)
 * È stata migliorata la sicurezza per evitare che i dati PII vengano esposti negli errori dei registri web. (NEO-46827)
 * La sicurezza è stata ottimizzata per impedire l’inclusione del token di sicurezza nell’URL della pagina Home di Campaign. (NEO-38519)
 
-**Aggiornamenti della compatibilità**
+### Aggiornamenti della compatibilità  {#release-7-3-4-compat}
 
 * Tomcat è stato aggiornato alla versione 8.5.91
 * La libreria libexpat è stata aggiornata alla versione 2.5.0 per migliorare la sicurezza. (NEO-51023)
 
-**Miglioramenti**
+### Miglioramenti {#release-7-3-4-improvements}
 
 * Il parametro MaxWorkingSetMb nel file di configurazione del server (serverConf.xml) è stato modificato per ottimizzare l’allocazione della memoria per le consegne. (NEO-49204)
 * L’account esterno BigQuery è stato migliorato con nuove opzioni utilizzate per configurare l’SDK GCloud. (NEO-63879) [Ulteriori informazioni](../../installation/using/configure-fda-google-big-query.md#google-external)
@@ -76,7 +77,7 @@ _7 settembre 2023_
 * La gestione del registro di tracciamento è stata migliorata per evitare ID negativi per lastMsgId. È stato modificato da int32 a int64. (NEO-52290)
 * Il flusso di lavoro di mid-sourcing (statistiche di consegna) è stato aggiunto come preconfigurato. Questo nuovo flusso di lavoro sincronizza i dati statistici di consegna (nms:deliveryStat) dall’istanza mid a quella di marketing. (NEO-36802)
 
-**Patch**
+### Patch {#release-7-3-4-patches}
 
 * È stato risolto un problema che poteva verificarsi quando una richiesta di servizio veniva effettuata prima dell’accesso IMS, se l’autenticazione della chiamata della richiesta di servizio utilizzava un token di servizio. (NEO-64903)
 * È stato risolto un problema di regressione che poteva causare problemi di scorrimento durante l’utilizzo di Digital Content Editor. (NEO-64671, NEO-59256)
@@ -117,17 +118,21 @@ _7 settembre 2023_
 
 [!BADGE Disponibilità limitata]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Disponibilità limitata"}
 
->[!CAUTION]
+>[!AVAILABILITY]
 >
->L’aggiornamento della console client è obbligatorio. Scopri come aggiornare la console client in questa [pagina](../../installation/using/installing-the-client-console.md).
+>Per questa versione è disponibile un aggiornamento specifico della patch di Campaign v7.3.3.IMS, se non è stata applicata alcuna altra patch all’ambiente. Esso porta [Adobe di aggiornamenti alla sicurezza di Identity Management System (IMS) in arrivo con la versione v7.3.5](#release-7-3-5-security) negli ambienti v7.3.3 esistenti.
+
 
 _20 marzo 2023_
 
-**Miglioramento della sicurezza**
+
+### Miglioramento della sicurezza {#release-7-3-3-security}
 
 * Per migliorare la sicurezza, Tomcat è stato aggiornato dalla versione 8.5.81 alla versione 8.5.85. (NEO-56936)
 
-**Miglioramenti**
+
+
+### Miglioramenti {#release-7-3-3-improvements}
 
 * Il flusso di lavoro Fatturazione è stato migliorato per ottimizzarne le prestazioni. (NEO-47658)
 * Il flusso di lavoro di tracciamento è stato migliorato per ottimizzarne le prestazioni in caso di consegne di dimensioni elevate. (NEO-45064)
@@ -135,7 +140,11 @@ _20 marzo 2023_
 
 <!--To apply this change, the marketing, tracking and mid servers need to be updated to 7.3.3. To enable the new tracking management mode, set the `emailLinksVersion` parameter to '3' in the configuration file of the marketing server. (NEO-46535)-->
 
-**Patch**
+>[!CAUTION]
+>
+>L’aggiornamento della console client è obbligatorio. Scopri come aggiornare la console client in questa [pagina](../../installation/using/installing-the-client-console.md).
+
+### Patch {#release-7-3-3-patches}
 
 * È stato risolto un problema che poteva impedire all’istanza di controllo (contesto Messaggistica transazionale) di inviare notifiche push iOS in stato di bozza. (NEO-54713)
 * È stato risolto un problema che poteva impedire lo scorrimento nella scheda **Modifica** dell’editor di contenuti digitali (DCE). (NEO-54474)
@@ -145,13 +154,14 @@ _20 marzo 2023_
 
 [!BADGE Disponibilità limitata]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Disponibilità limitata"}
 
+<!--
+>[!AVAILABILITY]
+>
+>A specific Campaign v7.3.2.IMS patch upgrade is available for this version - if no other patch has been applied to your environment. It brings [Adobe Identity Management System (IMS) security updates coming with v7.3.5](#release-7-3-5-security) to existing v7.3.3 environments.-->
+
 _21 novembre 2022_
 
->[!CAUTION]
->
->L’aggiornamento della console client è obbligatorio. Scopri come aggiornare la console client in questa [pagina](../../installation/using/installing-the-client-console.md).
-
-**Aggiornamenti della compatibilità**
+### Aggiornamenti della compatibilità {#release-7-3-2-compat}
 
 * Adobe Campaign è ora compatibile con PostgreSQL 14. Per ulteriori informazioni, consulta questa [nota tecnica](../../technotes/using/tech-stack-upgrade.md).
 
@@ -159,20 +169,24 @@ _21 novembre 2022_
 
 Ulteriori informazioni nella [matrice di compatibilità di Campaign](../../rn/using/compatibility-matrix.md#RDBMSservers).
 
-**Miglioramenti**
+>[!CAUTION]
+>
+>L’aggiornamento della console client è obbligatorio. Scopri come aggiornare la console client in questa [pagina](../../installation/using/installing-the-client-console.md).
+
+### Miglioramenti {#release-7-3-2-improvements}
 
 * Il connettore Google BigQuery ora supporta completamente i campi booleani. (NEO-49181)
 * Ora è possibile configurare la durata di validità dei cookie IMS nella sezione `Configuration for the redirection service` del file serverConf.xml. Questo vale per i seguenti cookie: `uuid230`, `nllastdelid` e `AMCV_` (NEO-42541)
 * Nella richiesta “r/test” ora l’IP può essere nascosto impostando `showSourceIP` su false nel nodo di reindirizzamento del file serverConf.xml. [Maggiori informazioni](../../installation/using/the-server-configuration-file.md#redirection-redirection)(NEO-46656)
 
-**Funzioni obsolete**
+### Funzioni obsolete  {#release-7-3-2-deprecated}
 
 * Il Social Marketing con Facebook è ora obsoleto. Per pubblicare sui social media o lavorare con Adobe per creare un canale personalizzato, è possibile utilizzare l’integrazione con X (precedentemente noto come Twitter).
 * Il connettore ACS (offerta Prime) è ora obsoleto. È possibile utilizzare le funzionalità di esportazione/importazione di Campaign per estrarre e inserire dati in entrambi i prodotti.
 
 Ulteriori informazioni sono disponibili nella pagina [Funzioni obsolete e rimosse](deprecated-features.md).
 
-**Altre modifiche**
+### Altre modifiche  {#release-7-3-2-other}
 
 * I registri web sono stati migliorati: gli avvisi `logonEscalation` vengono ora visualizzati solo per gli utenti con privilegi di amministratore. (NEO-47167)
 * Per evitare errori, il flusso di lavoro **Raccolta dati per il servizio Heatmap** (collectDataHeatMapService) ora viene interrotto per impostazione predefinita. (NEO-33959)
@@ -180,7 +194,7 @@ Ulteriori informazioni sono disponibili nella pagina [Funzioni obsolete e rimoss
 * Per evitare arresti anomali, è stato rimosso il metodo JS loadLibraryDebug. (NEO-46968)
 * I riferimenti rimanenti alla libreria log4j sono stati rimossi dall’installazione di Campaign su Windows. (NEO-44851)
 
-**Patch**
+### Patch {#release-7-3-2-patches}
 
 * È stato risolto un problema che impediva l’utilizzo dell’opzione **Unisci righe selezionate** del flusso di lavoro. (NEO-48488)
 * È stato risolto un problema che impediva l’aggiornamento corretto dell’indicatore di consegna **riuscita** quando si utilizzava l’MTA avanzato di Adobe Campaign. (NEO-50462)

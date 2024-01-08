@@ -4,9 +4,9 @@ description: Scopri come migrare gli operatori tecnici di Campaign all’account
 feature: Technote
 role: Admin
 exl-id: 1a409daf-57be-43c9-a3d9-b8ab54c88068
-source-git-commit: bc9367d598474b7971f25c27980ff25dd93bf87a
+source-git-commit: 9083c9c11b6b9c695cc98882e99ceb3cffc20ec7
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1694'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Un operatore tecnico è un profilo utente di Campaign creato esplicitamente per 
 
 Se effettui chiamate API da un sistema esterno a Campaign all’istanza Campaign Marketing o al Centro messaggi in tempo reale, l’Adobe ti consiglia vivamente di migrare gli operatori tecnici agli account tecnici tramite la console Adobe Developer come descritto di seguito.
 
-Questa modifica è applicabile a partire da Campaign Classic v7.3.5 ed è **obbligatorio** per passare ad Adobe Campaign v8.
+Questa modifica è applicabile a partire da Campaign Classic v7.3.5 (e più recente [Versioni compatibili con la migrazione IMS](#ims-versions-tech)) ed è **obbligatorio** per passare ad Adobe Campaign v8.
 
 ## Processo di migrazione {#ims-migration-procedure}
 
@@ -36,13 +36,24 @@ Ecco una panoramica dei passaggi:
 * Aggiornamento delle API per utilizzare le credenziali dell’account tecnico appena create
 * Rimuovere gli operatori tecnici legacy dall’istanza Campaign
 
+
+### Versioni compatibili con la migrazione IMS {#ims-versions-tech}
+
+Un prerequisito per questa migrazione è aggiornare l’ambiente a una delle seguenti versioni del prodotto:
+
+* Campaign v7.3.5 (consigliato)
+* Campaign v7.3.3.IMS
+  <!--* Campaign v7.3.2.IMS-->
+
+Queste versioni di Campaign sono descritte in dettaglio [Note sulla versione](../../rn/using/latest-release.md).
+
 ### Prerequisiti per la migrazione{#ims-migration-prerequisites}
 
 <!--To be able to create the technical accounts which replace the technical operators, the prerequisite that the proper Campaign Product Profiles exist within the Admin Console for all Campaign instances need to be validated. You can learn more about Product Profiles within the Adobe Console in [Adobe Developer Console documentation](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"}.-->
 
 * Clienti Campaign in hosting e Managed Services
 
-  Per le chiamate API nelle istanze del Centro messaggi, avrebbe dovuto essere creato un profilo di prodotto durante l’aggiornamento a Campaign v7.3.5 o durante il provisioning dell’istanza. Questo profilo di prodotto è denominato:
+  Per le chiamate API nelle istanze del Centro messaggi, avrebbe dovuto essere creato un profilo di prodotto durante l’aggiornamento a Campaign v7.3.5 (o altro) [Versione compatibile con migrazione IMS](#ims-versions-tech)) o durante il provisioning dell’istanza. Questo profilo di prodotto è denominato:
 
   `campaign - <your campaign instance> - messagecenter`
 
@@ -227,7 +238,7 @@ L’utente dell’account tecnico NON esisterà in Adobe Campaign finché non ve
 
    ![](assets/do-not-translate/ims-updates-07.png)
 
-   Nella schermata Credenziali, scorri verso il basso per individuare il **E-mail account tecnico **e fai clic su **Copia** pulsante.
+   In **Dettagli delle credenziali** , scorri verso il basso per individuare **E-mail account tecnico** e fai clic su **Copia** pulsante.
 
    ![](assets/do-not-translate/ims-updates-08.png)
 
