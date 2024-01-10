@@ -4,23 +4,22 @@ title: Risoluzione dei problemi di IMS
 description: Risoluzione dei problemi di IMS
 feature: Configuration
 badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v7-prem: label="on-premise e ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 1ce89c3a-1fe6-4ed6-9547-2eb9713a0ec3
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 49271e291953483ee14709b26ec053217a336718
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 2%
+source-wordcount: '418'
+ht-degree: 1%
 
 ---
 
 # Risoluzione dei problemi di IMS{#ims-troubleshooting}
 
 
-
-Di seguito sono riportati alcuni suggerimenti utili per la risoluzione dei problemi **on-premise** I clienti di risolvono i problemi più comuni che si verificano durante l’utilizzo dell’integrazione IMS. Per **in hosting** clienti, contatta l’Adobe.
+Di seguito sono riportati alcuni suggerimenti utili per la risoluzione dei problemi **on-premise** e **ibrido** I clienti di risolvono i problemi più comuni che si verificano durante l’utilizzo dell’integrazione IMS. Per **in hosting** clienti, contatta l’Adobe.
 
 **Account esterno**
 
@@ -54,7 +53,7 @@ Nella campagna **Adobe Marketing Cloud** account esterno, verifica che **[!UICON
 <Association Mask> + <Operator Group Name in Campaign> = Complete name of the operator group in Enterprise Dashboard
 ```
 
-**Scopo**
+**Ambito**
 
 Gli ambiti definiti nell’account esterno Campaign devono essere un sottoinsieme di quelli per i quali è stato eseguito il provisioning da IMS.
 
