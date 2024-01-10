@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 9083c9c11b6b9c695cc98882e99ceb3cffc20ec7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2258'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -120,13 +120,13 @@ _7 settembre 2023_
 
 >[!AVAILABILITY]
 >
->Per questa versione è disponibile un aggiornamento specifico della patch di Campaign v7.3.3.IMS, se non è stata applicata alcuna altra patch all’ambiente. Esso porta [Adobe di aggiornamenti alla sicurezza di Identity Management System (IMS) in arrivo con la versione v7.3.5](#release-7-3-5-security) negli ambienti v7.3.3 esistenti.
+>Per questa versione è disponibile un aggiornamento specifico della patch di Campaign v7.3.3.IMS, se non è stata applicata alcuna altra patch all’ambiente. Questa porta negli ambienti v7.3.3 esistenti [gli aggiornamenti di sicurezza di Adobe Identity Management System (IMS) in arrivo con la versione v7.3.5](#release-7-3-5-security).
 
 
 _20 marzo 2023_
 
 
-### Miglioramento della sicurezza {#release-7-3-3-security}
+### Miglioramento di sicurezza {#release-7-3-3-security}
 
 * Per migliorare la sicurezza, Tomcat è stato aggiornato dalla versione 8.5.81 alla versione 8.5.85. (NEO-56936)
 
