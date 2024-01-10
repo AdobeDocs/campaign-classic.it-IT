@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: SMS
 role: Developer, Data Engineer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 73fd678d54ba1db647c1c188e8064b28466b3cd2
 workflow-type: tm+mt
-source-wordcount: '8458'
+source-wordcount: '8448'
 ht-degree: 1%
 
 ---
@@ -358,7 +358,7 @@ La dimensione massima di un messaggio dipende dalla relativa codifica. Questa ta
 
 | Codifica | Data_coding abituale | Dimensione del messaggio (caratteri) | Dimensione parte per SMS in più parti | Caratteri disponibili |
 |:-:|:-:|:-:|:-:|:-:|
-| GSM 7 | 0 | 160 | 152 | Set di caratteri di base GSM7 + estensione (i caratteri estesi contengono 2 caratteri) |
+| GSM7 | 0 | 160 | 152 | Set di caratteri di base GSM7 + estensione (i caratteri estesi contengono 2 caratteri) |
 | Latin-1 | 3 | 140 | 134 | ISO-8859-1 |
 | UCS-2 <br>UTF-16 | 8 | 70 | 67 | Unicode (varia da telefono a telefono) |
 
@@ -412,7 +412,7 @@ Il connettore SMPP esteso di Adobe Campaign Classic può controllare il numero d
 
 Per Adobe Campaign Classic, può esistere un diverso numero di connessioni ricevitore e trasmettitore:
 
-* **Connessioni trasmettitore = numero di connessioni MTA secondarie * numero di processi MTA secondari * numero di MTA </br> (se è impostata la risposta automatica) + Numero di connessioni secondarie MTA**
+* **Connessioni trasmettitore = Numero di connessioni MTA secondarie * Numero di processi MTA secondari * Numero di MTA (se è impostata la risposta automatica) * Numero di connessioni MTA secondarie**
 
 Come suggerito in precedenza, il processo SMS di Adobe Campaign Classic apre più connessioni trasmettitore se è abilitata la risposta automatica. Queste connessioni aggiuntive vengono utilizzate per inviare le risposte automatiche.
 
