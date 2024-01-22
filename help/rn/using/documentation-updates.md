@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaig
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: cc6d85bcf822ba9be99e39cf459a5aa20cc2d4fe
-workflow-type: ht
-source-wordcount: '3648'
-ht-degree: 100%
+source-git-commit: 31705e7dd0ecb4e66fe4a22369995384d3ce39d4
+workflow-type: tm+mt
+source-wordcount: '3680'
+ht-degree: 99%
 
 ---
 
@@ -19,6 +19,12 @@ ht-degree: 100%
 In questa pagina sono elencate tutte le nuove funzioni e gli aggiornamenti alla documentazione in base al mese e alla versione di Campaign.
 
 Per gli aggiornamenti relativi alla versione, consulta le [Note sulla versione di Adobe Campaign Classic](../../rn/using/latest-release.md).
+
+## 2024
+
+### Gennaio 2024 {#jan-2024}
+
+Sono state aggiunte informazioni sulla definizione del campo postalAddress predefinito per Direct Mail e sul motivo per cui è importante assicurarsi che gli indirizzi siano completi. [Ulteriori informazioni](../../delivery/using/about-direct-mail-channel.md)
 
 ## 2023
 
