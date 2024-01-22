@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Direct Mail
 role: User
 exl-id: 6474cf2e-c4db-4430-b001-18bf4911b0ea
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: ba542c0811141e707589568706d44c73c280c0d3
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 9%
+source-wordcount: '170'
+ht-degree: 7%
 
 ---
 
@@ -21,7 +21,8 @@ Adobe Campaign consente di produrre file per distribuire in massa lettere person
 
 >[!NOTE]
 >
->Gli indirizzi postali sono campi calcolati. Per impostazione predefinita, un indirizzo può contenere fino a sei righe: la prima contiene il nome e il cognome, le righe successive contengono l’indirizzo postale (strada, ecc.) e l’ultima riga contiene il codice postale o ZIP e la città o città.\
->Un indirizzo è considerato completo se il nome, il campo CAP e i campi città non sono vuoti.
+>Gli indirizzi postali sono campi calcolati. Per impostazione predefinita, un indirizzo può contenere fino a sei righe: la prima contiene il nome e il cognome, le righe successive contengono l’indirizzo postale (strada, ecc.) e l’ultima riga contiene il codice postale o ZIP e la città o città. La definizione del campo postalAddress predefinito calcolato può essere rivista nello schema nms:recipient.
+>
+>Un indirizzo è considerato completo se il nome, il campo CAP e i campi città non sono vuoti. Tutti i destinatari con indirizzi incompleti saranno esclusi dalle consegne di direct mailing.
 
 Le sezioni seguenti forniscono informazioni specifiche per il canale di direct mailing. Per informazioni globali su come creare e inviare una consegna, consulta [questa sezione](steps-about-delivery-creation-steps.md).
