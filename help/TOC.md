@@ -6,10 +6,10 @@ title: Guida di Campaign Classic v7
 user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: cb1f079fbb7af6bb6645aae86261ca723fd97c3a
+source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
 workflow-type: tm+mt
-source-wordcount: '2524'
-ht-degree: 100%
+source-wordcount: '2536'
+ht-degree: 99%
 
 ---
 
@@ -141,7 +141,9 @@ ht-degree: 100%
       + [Allegare file](delivery/using/attaching-files.md)
    + Inviare SMS {#sending-messages-on-mobiles}
       + [Introduzione agli SMS](delivery/using/sms-channel.md)
-      + [Configurare il canale SMS](delivery/using/sms-set-up.md)
+      + Configurare il canale SMS {#sms-set-up}
+         + [Configurare SMS in un’istanza autonoma](delivery/using/sms-set-up.md)
+         + [Configurare gli SMS su un’infrastruttura mid-sourcing](delivery/using/sms-set-up-mid.md)
       + [Creare un SMS](delivery/using/sms-create.md)
       + [Inviare e tenere traccia degli SMS](delivery/using/sms-send.md)
       + [Protocollo e impostazioni del connettore SMS](delivery/using/sms-protocol.md)
@@ -205,7 +207,7 @@ ht-degree: 100%
       + [Introduzione al monitoraggio della consegna](delivery/using/about-delivery-monitoring.md)
       + [Accesso all’elenco delle consegne](delivery/using/list-of-deliveries.md)
       + [Dashboard delle consegne](delivery/using/delivery-dashboard.md)
-      + [Best practice per la consegna](delivery/using/delivery-performances.md)
+      + [Best practice per le prestazioni di consegna](delivery/using/delivery-performances.md)
       + [Risoluzione dei problemi nelle consegne](delivery/using/delivery-troubleshooting.md)
       + [Stati di consegna](delivery/using/delivery-statuses.md)
       + [Errori di consegna](delivery/using/understanding-delivery-failures.md)

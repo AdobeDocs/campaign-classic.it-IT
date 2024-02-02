@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaig
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 31705e7dd0ecb4e66fe4a22369995384d3ce39d4
-workflow-type: ht
-source-wordcount: '3680'
-ht-degree: 100%
+source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
+workflow-type: tm+mt
+source-wordcount: '3699'
+ht-degree: 99%
 
 ---
 
@@ -25,6 +25,8 @@ Per gli aggiornamenti relativi alla versione, consulta le [Note sulla versione d
 ### Gennaio 2024 {#jan-2024}
 
 Sono state aggiunte informazioni sulla definizione del campo postalAddress predefinito per Direct Mail e sul motivo per cui è importante assicurarsi che gli indirizzi siano completi. [Ulteriori informazioni](../../delivery/using/about-direct-mail-channel.md)
+
+È stata aggiunta una nuova pagina su come configurare il canale SMS in Campaign su un’infrastruttura mid-sourcing. [Ulteriori informazioni](../../delivery/using/sms-set-up-mid.md)
 
 ## 2023
 

@@ -7,14 +7,14 @@ badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: SMS
 role: User, Developer, Admin
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 34%
+source-wordcount: '1751'
+ht-degree: 26%
 
 ---
 
-# Configurare il canale SMS {#setting-up-sms-channel}
+# Configurare il canale SMS in un’istanza autonoma {#setting-up-sms-channel}
 
 Per inviare a un telefono cellulare, è necessario:
 
@@ -37,7 +37,7 @@ Per inviare a un telefono cellulare, è necessario:
 Per inviare un SMS a un telefono cellulare, devi innanzitutto creare l’account esterno SMPP.
 Per ulteriori informazioni sul protocollo e sulle impostazioni di SMS, consulta questa [pagina](sms-protocol.md).
 
-A tale scopo, segui la procedura indicata di seguito:
+A questo scopo, segui la procedura indicata di seguito:
 
 1. In **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** dell&#39;albero, fare clic sul pulsante **[!UICONTROL New]** icona.
 1. Definisci il tipo di conto come **Indirizzamento**, il canale come **Dispositivi mobili (SMS)** e la modalità di consegna come **Consegna in blocco**.
@@ -67,7 +67,7 @@ A tale scopo, segui la procedura indicata di seguito:
 
    >[!NOTE]
    >
-   >Alcuni caratteri contano come due (parentesi graffe e quadre, il simbolo dell’euro, ecc.).
+   >Alcuni caratteri contano come due (parentesi graffe, parentesi quadre, il simbolo dell’euro, ecc.).
    >
    >L’elenco dei caratteri GSM disponibili è presentato di seguito.
 
@@ -123,9 +123,9 @@ La tabella seguente presenta i caratteri presi in considerazione dallo standard 
    <td> <img height="21px" src="assets/delta.png" /> </td> 
    <td> SP </td> 
    <td> 0 </td> 
-   <td> ¡ </td> 
+   <td> I </td> 
    <td> P </td> 
-   <td> ¿ </td> 
+   <td> si può </td> 
    <td> p </td> 
   </tr> 
   <tr> 
@@ -151,7 +151,7 @@ La tabella seguente presenta i caratteri presi in considerazione dallo standard 
   <tr> 
    <td> ¥ </td> 
    <td> <img height="21px" src="assets/gamma.png" /> </td> 
-   <td> # </td> 
+   <td> N. </td> 
    <td> 3 </td> 
    <td> C </td> 
    <td> S </td> 
@@ -161,11 +161,11 @@ La tabella seguente presenta i caratteri presi in considerazione dallo standard 
   <tr> 
    <td> è </td> 
    <td> <img height="21px" src="assets/delta.png" /> </td> 
-   <td> ¤ </td> 
+   <td> }Permesso </td> 
    <td> 4 </td> 
    <td> D </td> 
-   <td> T </td> 
-   <td> d </td> 
+   <td> M </td> 
+   <td> g </td> 
    <td> t </td> 
   </tr> 
   <tr> 
@@ -181,9 +181,9 @@ La tabella seguente presenta i caratteri presi in considerazione dallo standard 
   <tr> 
    <td> ù </td> 
    <td> <img height="21px" src="assets/pi.png" /> </td> 
-   <td> &amp; </td> 
+   <td> E </td> 
    <td> 6 </td> 
-   <td> F </td> 
+   <td> V </td> 
    <td> V </td> 
    <td> f </td> 
    <td> v </td> 
@@ -194,9 +194,9 @@ La tabella seguente presenta i caratteri presi in considerazione dallo standard 
    <td> ' </td> 
    <td> 7 </td> 
    <td> G </td> 
-   <td> W </td> 
+   <td> L </td> 
    <td> g </td> 
-   <td> w </td> 
+   <td> m </td> 
   </tr> 
   <tr> 
    <td> ò </td> 
@@ -240,7 +240,7 @@ La tabella seguente presenta i caratteri presi in considerazione dallo standard 
   </tr> 
   <tr> 
    <td> ø </td> 
-   <td> Æ </td> 
+   <td> AE </td> 
    <td> , </td> 
    <td> &lt; </td> 
    <td> L </td> 
@@ -253,7 +253,7 @@ La tabella seguente presenta i caratteri presi in considerazione dallo standard 
    <td> æ </td> 
    <td> - </td> 
    <td> = </td> 
-   <td> M </td> 
+   <td> L </td> 
    <td> Ñ </td> 
    <td> m </td> 
    <td> ñ </td> 
