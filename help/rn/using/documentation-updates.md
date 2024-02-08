@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3699'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Per gli aggiornamenti relativi alla versione, consulta le [Note sulla versione d
 
 Sono state aggiunte informazioni sulla definizione del campo postalAddress predefinito per Direct Mail e sul motivo per cui è importante assicurarsi che gli indirizzi siano completi. [Ulteriori informazioni](../../delivery/using/about-direct-mail-channel.md)
 
-È stata aggiunta una nuova pagina su come configurare il canale SMS in Campaign su un’infrastruttura mid-sourcing. [Ulteriori informazioni](../../delivery/using/sms-set-up-mid.md)
+È stata aggiunta una nuova pagina su come configurare il canale SMS in Campaign in un’infrastruttura mid-sourcing. [Ulteriori informazioni](../../delivery/using/sms-set-up-mid.md)
 
 ## 2023
 
