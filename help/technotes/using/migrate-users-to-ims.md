@@ -2,9 +2,9 @@
 title: Migrazione degli operatori di Campaign a Adobe Identity Management System (IMS)
 description: Scopri come migrare gli operatori di Campaign a Adobe Identity Management System (IMS)
 exl-id: f01948c7-b523-492d-a4e8-67f4adde5fc5
-source-git-commit: da35a3050d838cd8e57bf802dc066e32f22f8273
+source-git-commit: 1879fe179381be654bad876de2423d25049db43c
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1280'
 ht-degree: 2%
 
 ---
@@ -132,6 +132,24 @@ L’Adobe consiglia vivamente di disconnettersi da tutti gli utenti durante la f
 Questa migrazione presenta due aspetti: migrazione degli utenti finali (più profili di prodotto) e migrazione degli utenti tecnici (utilizzata nelle API nel codice personalizzato).
 
 Se tutti gli utenti (operatori di Campaign) utilizzano IMS, dovrai comunque contattare il rappresentante Adobe/supporto clienti per pianificare la migrazione dei profili di prodotto. Sarà inoltre necessario eseguire la migrazione degli utenti tecnici eventualmente utilizzati nel codice personalizzato. Per ulteriori informazioni, consulta [questa pagina](ims-migration.md).
+
+### Come si visualizza il tipo di autenticazione degli operatori?
+
+Scopri come visualizzare il tipo di autenticazione degli operatori in Campaign:
+
+1. Dalla sezione **Esplora**, accesso **Amministrazione** `>` **Gestione degli accessi** `>` **Operatori**.
+
+1. Fare clic con il pulsante destro del mouse sulla riga di intestazione e selezionare **Configura elenco** menu.
+
+   ![](assets/ims_2.png)
+
+1. Aggiungi **Account disabilitato** e **Tipo di autenticazione** as **Colonne di output**.
+
+   ![](assets/ims_1.png)
+
+Ora puoi visualizzare l’elenco delle **Operatori** e i loro **Tipo di autenticazione**.
+
+![](assets/ims_3.png)
 
 ## Collegamenti utili {#ims-useful-links}
 
