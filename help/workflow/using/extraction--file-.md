@@ -2,13 +2,13 @@
 product: campaign
 title: Estrazione dati (file)
 description: Ulteriori informazioni sull’attività del flusso di lavoro Estrazione dati (file)
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows, Data Management Activity
 exl-id: 06eafedd-6386-498f-a80d-7f57ddcccad6
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 58998fa2480a33776507a434ed846541ac19e58b
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 1%
+source-wordcount: '332'
+ht-degree: 3%
 
 ---
 
@@ -49,7 +49,7 @@ Per configurare l’estrazione dei dati, effettua le seguenti operazioni:
 
 Puoi definire un post-processo da eseguire durante l’estrazione dei dati, per comprimere o crittografare i file. A questo scopo, il comando desiderato deve essere aggiunto nel **[!UICONTROL Script]** dell’attività.
 
-Per ulteriori informazioni, consulta questa sezione: [Compressione o crittografia di un file](how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
+Per ulteriori informazioni, consulta questa sezione: [Compressione o crittografia di un file](../../platform/using/zip-encrypt.md)
 
 ![](assets/postprocessing_dataextraction.png)
 
@@ -59,7 +59,7 @@ Di seguito è riportato un elenco delle funzioni di aggregazione disponibili:
 
 * **[!UICONTROL Count]** per contare tutti i valori non nulli del campo da aggregare, compresi i valori duplicati (del campo aggregato),
 
-   **[!UICONTROL Distinct]** per contare il numero totale di valori diversi e non nulli del campo da aggregare (i valori duplicati sono esclusi prima del calcolo),
+  **[!UICONTROL Distinct]** per contare il numero totale di valori diversi e non nulli del campo da aggregare (i valori duplicati sono esclusi prima del calcolo),
 
 * **[!UICONTROL Sum]** calcolare la somma dei valori di un campo numerico,
 * **[!UICONTROL Minimum value]** calcolare i valori minimi di un campo (numerici o di altro tipo),

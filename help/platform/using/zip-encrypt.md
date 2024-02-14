@@ -9,16 +9,14 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
-source-git-commit: a2106e55617209f28da42c50008d16188563b2da
+source-git-commit: 58998fa2480a33776507a434ed846541ac19e58b
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 8%
+source-wordcount: '517'
+ht-degree: 5%
 
 ---
 
 # Comprimere o crittografare un file {#zipping-or-encrypting-a-file}
-
-
 
 Adobe Campaign consente di esportare file compressi o crittografati. Quando si definisce un’esportazione tramite un **[!UICONTROL Data extraction (file)]** attività, puoi definire una post-elaborazione da comprimere o crittografare il file.
 
@@ -45,7 +43,7 @@ Puoi quindi utilizzare comandi o codice nel **[!UICONTROL Script]** scheda dell�
 
 In questo caso d’uso, creeremo un flusso di lavoro per crittografare ed esportare i dati utilizzando una chiave installata sul Pannello di controllo Campaign.
 
-![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#video)
+![](assets/do-not-localize/how-to-video.png) [Guarda il video su questa funzione](#video)
 
 I passaggi per eseguire questo caso d’uso sono i seguenti:
 
