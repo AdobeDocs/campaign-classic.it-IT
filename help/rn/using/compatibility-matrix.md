@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaig
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 3db5242e2074c6d0530258073ae83c11164d7365
-workflow-type: ht
-source-wordcount: '772'
-ht-degree: 100%
+source-git-commit: e430978dd182eaea082122ef748118e5210b05d5
+workflow-type: tm+mt
+source-wordcount: '805'
+ht-degree: 96%
 
 ---
 
@@ -41,6 +41,7 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 <tr> 
 <td>CentOs</td>
 <td>
+<p>8.x (solo per ambienti ibridi)</p>
 <p>7.x</p>
 <p><strong>Importante:</strong> se utilizzi RHEL, disabilita SELinux o fai in modo che gli architetti scrivano regole SELinux personalizzate per evitare che il SELinux abilitato causi problemi alle attività di Campaign.</p>
 </td>
@@ -353,7 +354,7 @@ Per utilizzare la [console client di Campaign](../../installation/using/installi
 
 ### Microsoft WebView2 Runtime
 
-Microsoft Edge WebView2 Runtime - Per la console del client Campaign è necessario utilizzare la versione più recente.
+Per la console client di Campaign è obbligatoria la versione più recente di Microsoft Edge WebView2 Runtime.
 
 Scarica Microsoft Edge WebView2 dal [sito web per sviluppatori Microsoft](https://www.adobe.com/go/acc-ms-webview2-runtime-download).
 
