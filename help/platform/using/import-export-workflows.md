@@ -9,10 +9,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 266ecd49-7101-4ff1-941f-1f9b39b44955
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '272'
-ht-degree: 5%
+ht-degree: 3%
 
 ---
 
@@ -36,7 +36,7 @@ Per ulteriori informazioni sull’utilizzo dell’attività di lettura elenco in
 
 I dati elaborati in un flusso di lavoro possono essere estratti da un file strutturato in modo che possa essere importato in Adobe Campaign.
 
-Una descrizione dell’attività di caricamento dei dati si trova nella sezione [Caricamento dati (file)](../../workflow/using/data-loading--file-.md) sezione.
+Una descrizione dell’attività di caricamento dei dati si trova nella sezione [Caricamento dati (file)](../../workflow/using/data-loading-file.md) sezione.
 
 Esempio di file strutturato da importare:
 
@@ -54,4 +54,4 @@ Una volta raccolti i dati, puoi utilizzarli nei flussi di lavoro, ad esempio per
 
 I flussi di lavoro possono essere utili per automatizzare alcuni dei processi di esportazione o per esportare set di dati precisi dopo aver utilizzato alcune delle attività di gestione dati disponibili per trasformare i dati.
 
-Le operazioni di esportazione vengono eseguite utilizzando **[!UICONTROL Data extraction (file) activity]**. Per ulteriori informazioni su come configurare e utilizzare l’attività, consulta [questa pagina](../../workflow/using/extraction--file-.md).
+Le operazioni di esportazione vengono eseguite utilizzando **[!UICONTROL Data extraction (file) activity]**. Per ulteriori informazioni su come configurare e utilizzare l’attività, consulta [questa pagina](../../workflow/using/extraction-file.md).

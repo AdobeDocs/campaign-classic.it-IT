@@ -9,7 +9,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
-source-git-commit: 58998fa2480a33776507a434ed846541ac19e58b
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 5%
@@ -37,7 +37,7 @@ Puoi quindi utilizzare comandi o codice nel **[!UICONTROL Script]** scheda dell�
 **Argomenti correlati:**
 
 * [Decomprimere o decrittografare un file prima dell’elaborazione](../../platform/using/unzip-decrypt.md)
-* [Attività di estrazione dati (file)](../../workflow/using/extraction--file-.md).
+* [Attività di estrazione dati (file)](../../workflow/using/extraction-file.md).
 
 ## Caso d’uso: crittografare ed esportare dati utilizzando una chiave installata sul Pannello di controllo Campaign {#use-case-gpg-encrypt}
 
@@ -60,7 +60,7 @@ I passaggi per eseguire questo caso d’uso sono i seguenti:
 
 1. Configurare **[!UICONTROL Query]** per eseguire il targeting dei dati desiderati dal database. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../workflow/using/query.md).
 
-1. Apri **[!UICONTROL Data extraction (file)]** quindi configurarlo in base alle tue esigenze. I concetti globali su come configurare l’attività sono disponibili in [questa sezione](../../workflow/using/extraction--file-.md).
+1. Apri **[!UICONTROL Data extraction (file)]** quindi configurarlo in base alle tue esigenze. I concetti globali su come configurare l’attività sono disponibili in [questa sezione](../../workflow/using/extraction-file.md).
 
    ![](assets/gpg-data-extraction.png)
 

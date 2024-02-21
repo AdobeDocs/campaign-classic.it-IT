@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Audiences, Proofs
 role: User
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1610'
+source-wordcount: '1605'
 ht-degree: 2%
 
 ---
@@ -163,7 +163,7 @@ Puoi ridurre la dimensione della popolazione target. A questo scopo, specifica i
 
 La bozza è un messaggio speciale che consente di testare una consegna prima di inviarla al target principale. I destinatari della bozza sono responsabili dell’approvazione del modulo e del contenuto del messaggio.
 
-![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#seeds-and-proofs-video)
+![](assets/do-not-localize/how-to-video.png) [Guarda il video su questa funzione](#seeds-and-proofs-video)
 
 
 Per selezionare la destinazione delle bozze, segui i passaggi seguenti:
@@ -226,7 +226,7 @@ Vedi anche:
 
 * [Seleziona la destinazione della bozza](#selecting-the-proof-target)
 * [Informazioni sugli indirizzi seed](about-seed-addresses.md)
-* [Caso d’uso: selezionare gli indirizzi seed in base ai criteri](use-case--selecting-seed-addresses-on-criteria.md)
+* [Caso d’uso: selezionare gli indirizzi seed in base ai criteri](use-case-selecting-seed-addresses-on-criteria.md)
 
 ## Video tutorial {#seeds-and-proofs-video}
 

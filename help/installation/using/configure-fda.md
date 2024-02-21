@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: 6939307c0b33ff662fe4ef9ae0192ae7b500a95c
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '354'
-ht-degree: 7%
+ht-degree: 6%
 
 ---
 
@@ -37,7 +37,7 @@ Per impostare l’accesso a un database esterno con FDA, effettua le seguenti op
 1. Crea lo schema del database esterno in Adobe Campaign. Questo consente di identificare la struttura dati del database esterno. [Ulteriori informazioni](../../installation/using/creating-data-schema.md)
 1. Se necessario, crea una nuova mappatura di destinazione dallo schema creato in precedenza. Questa opzione è necessaria se i destinatari delle consegne provengono dal database esterno. Questa implementazione comporta limitazioni relative alla personalizzazione dei messaggi. [Ulteriori informazioni](../../installation/using/defining-data-mapping.md)
 
-Una volta creato lo schema di dati, i dati possono essere elaborati nei flussi di lavoro di Adobe Campaign. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../workflow/using/accessing-an-external-database--fda-.md).
+Una volta creato lo schema di dati, i dati possono essere elaborati nei flussi di lavoro di Adobe Campaign. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../workflow/using/accessing-an-external-database-fda.md).
 
 ## Configurazione specifica del database {#fda-specific-configuration}
 

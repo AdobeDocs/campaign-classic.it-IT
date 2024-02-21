@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Introduzione alle applicazioni web
-description: Crea e condividi applicazioni web, pagine di destinazione e sondaggi dinamici
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+description: Creazione e condivisione di applicazioni Web, pagine di destinazione e sondaggi dinamici
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Landing Pages, Web Apps
 exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '689'
-ht-degree: 22%
+source-wordcount: '697'
+ht-degree: 20%
 
 ---
 
@@ -50,12 +50,12 @@ Le applicazioni web in Adobe Campaign consentono di accedere alle seguenti funzi
 * Inviti o notifiche e-mail. Per ulteriori informazioni, consulta questa [pagina](publishing-a-web-form.md#delivering-a-form-via-email).
 * Personalizzazione dei messaggi di errore e dei messaggi finali. Per ulteriori informazioni, consulta questa [pagina](defining-web-forms-properties.md#setting-up-an-error-page).
 * Utilizzo di immagini, video, collegamenti ipertestuali, captcha, ecc. Per ulteriori informazioni, consulta questa [pagina](editing-content.md).
-* Monitoraggio delle risposte in tempo reale Per ulteriori informazioni, consulta questa [pagina](../../surveys/using/publish--track-and-use-collected-data.md#response-tracking).
+* Monitoraggio delle risposte in tempo reale Per ulteriori informazioni, consulta questa [pagina](../../surveys/using/publish-track-and-use-collected-data.md#response-tracking).
 
 L&#39;opzione **Sondaggio** Il modulo di creazione offre le seguenti funzionalità aggiuntive:
 
 * Estensione dinamica del database: creazione di risposte non incluse nel modello di dati iniziale. Per ulteriori informazioni, consulta questa [pagina](../../surveys/using/managing-answers.md#storing-collected-answers).
-* Generazione di rapporti dedicati. Per ulteriori informazioni, consulta questa [pagina](../../surveys/using/publish--track-and-use-collected-data.md#reports-on-surveys).
+* Generazione di rapporti dedicati. Per ulteriori informazioni, consulta questa [pagina](../../surveys/using/publish-track-and-use-collected-data.md#reports-on-surveys).
 
 Rispetto alle applicazioni Web, i sondaggi hanno un&#39;interfaccia grafica semplificata con un numero ridotto di controlli di modifica.
 

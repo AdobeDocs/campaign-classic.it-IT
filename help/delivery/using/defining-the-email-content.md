@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Email Design
 role: User
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1955'
+source-wordcount: '1961'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ Per impostazione predefinita, i messaggi vengono inviati in formato HTML o testo
 
 * Per importare un contenuto HTML, utilizza **[!UICONTROL Open]** pulsante. Puoi anche incollare il codice sorgente direttamente nel **[!UICONTROL Source]** scheda secondaria.
 
-  Se utilizzi il [Editor di contenuti digitali](../../web/using/about-campaign-html-editor.md) (DCE), fare riferimento a [Selezione di un modello di contenuto](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content).
+  Se utilizzi il [Editor di contenuti digitali](../../web/using/about-campaign-html-editor.md) (DCE), fare riferimento a [Selezione di un modello di contenuto](../../web/using/use-case-creating-an-email-delivery.md#step-3---selecting-a-content).
 
   >[!IMPORTANT]
   >

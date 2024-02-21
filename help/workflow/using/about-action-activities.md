@@ -2,13 +2,13 @@
 product: campaign
 title: Informazioni sulle attività di azione
 description: Informazioni sulle attività di azione
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 8758601b-c4bd-4179-8816-305d1a68d499
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 2%
+source-wordcount: '277'
+ht-degree: 4%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 2%
 * **Consegna ricorrente**: consente di configurare un’occorrenza del modello di consegna all’interno di una campagna. Fai riferimento a [Consegna ricorrente](recurring-delivery.md).
 * **Consegne cross-channel**: consente di configurare una consegna sul canale corrispondente. Consulta la sezione [Consegne cross-channel](cross-channel-deliveries.md) sezione.
 * **Approvazione locale**: consente di eseguire approvazioni e notifiche di targeting all’interno di un contesto di marketing distribuito (modulo opzionale). Fai riferimento a [Approvazione locale](local-approval.md).
-* **Caricamento dati (RDBMS)**: ti consente di accedere a un database esterno per ottenere dati. Consulta la sezione [Caricamento dati (RDBMS)](data-loading--rdbms-.md) sezione.
-* **Caricamento (SOAP)**: consente di raccogliere dati tramite una chiamata SOAP. Fai riferimento a [Caricamento (SOAP)](loading--soap-.md).
-* **Caricamento dati (file)**: ti consente di accedere a un’origine dati esterna per utilizzarne i dati. Consulta la sezione [Caricamento dati (file)](data-loading--file-.md) sezione.
+* **Caricamento dati (RDBMS)**: ti consente di accedere a un database esterno per ottenere dati. Consulta la sezione [Caricamento dati (RDBMS)](data-loading-rdbms.md) sezione.
+* **Caricamento (SOAP)**: consente di raccogliere dati tramite una chiamata SOAP. Fai riferimento a [Caricamento (SOAP)](loading-soap.md).
+* **Caricamento dati (file)**: ti consente di accedere a un’origine dati esterna per utilizzarne i dati. Consulta la sezione [Caricamento dati (file)](data-loading-file.md) sezione.
 * **Gestione dei contenuti**: consente di creare o personalizzare il contenuto. Consulta la sezione [Gestione dei contenuti](content-management.md) sezione.
-* **Estrazione (file)**: consente di estrarre dati da una tabella in un file. Consulta la sezione [Estrazione (file)](extraction--file-.md) sezione.
+* **Estrazione (file)**: consente di estrarre dati da una tabella in un file. Consulta la sezione [Estrazione (file)](extraction-file.md) sezione.
 * **Codice SQL e codice JavaScript**: esegue lo script SQL o JavaScript specificato nell’attività. Fai riferimento a [Codice SQL e codice JavaScript](sql-code-and-javascript-code.md).
 * **Gestione dati SQL**: consente di scrivere query SQL personalizzate per creare e popolare tabelle di lavoro. Fai riferimento a [Gestione dati SQL](sql-data-management.md).
 * **modulo nlserver**: avvia un modulo nlserver con i relativi argomenti. Fai riferimento a [Modulo Nlserver](nlserver-module.md).

@@ -6,10 +6,10 @@ badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic 
 badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Reporting, Monitoring, Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 5%
+source-wordcount: '490'
+ht-degree: 1%
 
 ---
 
@@ -37,7 +37,7 @@ Prima di iniziare questo caso d’uso, devi avere accesso a un sondaggio e a una
 
 Per raccogliere le risposte al sondaggio, attieniti alla seguente procedura:
 
-1. Creare un flusso di lavoro e inserire un’ **[!UICONTROL Answers to a survey]** attività. Per ulteriori informazioni sull&#39;utilizzo di questa attività, consulta [questa sezione](../../surveys/using/publish--track-and-use-collected-data.md#using-the-collected-data).
+1. Creare un flusso di lavoro e inserire un’ **[!UICONTROL Answers to a survey]** attività. Per ulteriori informazioni sull&#39;utilizzo di questa attività, consulta [questa sezione](../../surveys/using/publish-track-and-use-collected-data.md#using-the-collected-data).
 1. Modifica l’attività e seleziona il sondaggio di cui desideri analizzare le risposte.
 1. Abilita **[!UICONTROL Select all the answer data]** per raccogliere tutte le informazioni.
 

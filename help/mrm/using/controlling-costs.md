@@ -8,9 +8,9 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '2475'
+source-wordcount: '2495'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Per implementare la gestione del budget utilizzando MRM, è necessario eseguire 
 
 1. Definizione del metodo di calcolo dei costi
 
-   Le strutture di costo vengono definite per i fornitori di servizi. Consulta [Creazione di un provider di servizi e delle relative categorie di costo](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+   Le strutture di costo vengono definite per i fornitori di servizi. Consulta [Creazione di un provider di servizi e delle relative categorie di costo](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
 1. Definizione dei costi della campagna (consegne/attività)
 
@@ -170,7 +170,7 @@ In base alle categorie di costo selezionate, per calcolare le linee di costo ven
 
 >[!NOTE]
 >
->Le categorie e le strutture di costo sono presentate in [Creazione di un provider di servizi e delle relative categorie di costo](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+>Le categorie e le strutture di costo sono presentate in [Creazione di un provider di servizi e delle relative categorie di costo](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
 ## Impegno, calcolo e addebito dei costi {#cost-commitment--calculation-and-charging}
 
@@ -233,7 +233,7 @@ Stiamo per creare una campagna con:
 
 #### Passaggio 2: configurare il provider di servizi e definire le strutture dei costi {#step-2---configuring-the-service-provider-and-defining-the-cost-structures}
 
-1. Creare un provider di servizi e un modello di servizi con la relativa struttura dei costi dall&#39;elenco **[!UICONTROL Administration > Campaigns]** nodo. Per ulteriori informazioni, consulta [Creazione di un provider di servizi e delle relative categorie di costo](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+1. Creare un provider di servizi e un modello di servizi con la relativa struttura dei costi dall&#39;elenco **[!UICONTROL Administration > Campaigns]** nodo. Per ulteriori informazioni, consulta [Creazione di un provider di servizi e delle relative categorie di costo](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
    Per le consegne di direct mailing, crea categorie di costo **[!UICONTROL Envelopes]** (tipi 114x229 e 162x229), **[!UICONTROL Postage]** e **[!UICONTROL Print]** (tipi A3 e A4). Quindi creare le seguenti strutture di costo:
 

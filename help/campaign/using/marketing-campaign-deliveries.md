@@ -6,10 +6,10 @@ role: User
 badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1494'
-ht-degree: 4%
+source-wordcount: '1492'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,7 @@ Per creare una consegna collegata a una campagna, fai clic sul pulsante **[!UICO
 
 Le configurazioni suggerite sono adatte ai diversi tipi di consegna: direct mailing, e-mail, canali mobili. [Ulteriori informazioni](../../delivery/using/steps-about-delivery-creation-steps.md).
 
-## Inizia una consegna {#starting-a-delivery}
+## Avviare una consegna {#starting-a-delivery}
 
 Una volta concesse tutte le approvazioni, la consegna è pronta per essere avviata. La procedura di consegna dipende quindi dal tipo di consegna. Per le consegne tramite e-mail o canale mobile, consulta [Avvio di una consegna online](#starting-an-online-delivery), e per le consegne di direct mailing, consulta [Avvio di una consegna offline](#starting-an-offline-delivery).
 
@@ -112,11 +112,11 @@ L&#39;estrazione del file avvia due operazioni: il calcolo del budget e il calco
 
 >[!NOTE]
 >
->Per ulteriori informazioni sul calcolo dei costi e sulla gestione delle scorte, vedere [Fornitori, scorte e budget](../../campaign/using/providers--stocks-and-budgets.md).
+>Per ulteriori informazioni sul calcolo dei costi e sulla gestione delle scorte, vedere [Fornitori, scorte e budget](../../campaign/using/providers-stocks-and-budgets.md).
 
 ## Gestire i documenti associati {#managing-associated-documents}
 
-È possibile associare vari documenti a una campagna: rapporti, foto, pagine web, diagrammi, ecc. Questi documenti possono essere in qualsiasi formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, ecc.). Scopri come collegare i documenti a una campagna [in questa sezione](../../campaign/using/marketing-campaign-assets.md).
+È possibile associare vari documenti a una campagna: report, foto, pagina web, diagramma, ecc. Questi documenti possono essere in qualsiasi formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, ecc.). Scopri come collegare i documenti a una campagna [in questa sezione](../../campaign/using/marketing-campaign-assets.md).
 
 >[!IMPORTANT]
 >
@@ -227,7 +227,7 @@ Nell’esempio seguente, l’etichetta, il costo stimato e la descrizione della 
 
 ![](assets/s_ncs_user_op_composition_in_export_template.png)
 
-Il modello di esportazione deve essere associato al fornitore di servizi selezionato per la consegna interessata. Consulta [Creazione di fornitori di servizi e delle relative strutture dei costi](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
+Il modello di esportazione deve essere associato al fornitore di servizi selezionato per la consegna interessata. Consulta [Creazione di fornitori di servizi e delle relative strutture dei costi](../../campaign/using/providers-stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
 >[!NOTE]
 >
@@ -235,7 +235,7 @@ Il modello di esportazione deve essere associato al fornitore di servizi selezio
 
 #### Video tutorial {#create-email-video}
 
-In questo video viene illustrato come creare una campagna e un messaggio e-mail in Adobe Campaign.
+Questo video spiega come creare una campagna e un messaggio e-mail in Adobe Campaign.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 

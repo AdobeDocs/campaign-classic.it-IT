@@ -2,13 +2,13 @@
 product: campaign
 title: Introduzione ai sondaggi
 description: Introduzione ai sondaggi di Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '534'
 ht-degree: 4%
 
 ---
@@ -31,7 +31,6 @@ Scopri come creare il tuo primo sondaggio in [questa pagina](getting-started-wit
 >
 >* La gestione delle applicazioni web è descritta in [questo documento](../../web/using/about-web-applications.md). Fare riferimento a questo capitolo per ulteriori informazioni.
 
-
 ## Ambito della funzione {#campaign-surveys-scope}
 
 In Adobe Campaign, utilizza [Applicazioni web](../../web/using/about-web-forms.md) a:
@@ -52,8 +51,8 @@ Il modulo opzionale per la creazione di sondaggi offre un’interfaccia utente i
 * Estensione dinamica del database: creazione di risposte che non fanno parte del modello dati iniziale. [Ulteriori informazioni](../../surveys/using/managing-answers.md#storing-collected-answers).
 * Gestione dei punteggi. [Ulteriori informazioni](../../surveys/using/managing-answers.md#score-management).
 * Visualizzazione casuale delle domande. [Ulteriori informazioni](../../surveys/using/building-a-survey.md#adding-questions).
-* Tracciamento in tempo reale delle risposte. [Ulteriori informazioni](../../surveys/using/publish--track-and-use-collected-data.md#response-tracking).
-* Generazione di rapporti dedicati. [Ulteriori informazioni](../../surveys/using/publish--track-and-use-collected-data.md#reports-on-surveys).
+* Tracciamento in tempo reale delle risposte. [Ulteriori informazioni](../../surveys/using/publish-track-and-use-collected-data.md#response-tracking).
+* Generazione di rapporti dedicati. [Ulteriori informazioni](../../surveys/using/publish-track-and-use-collected-data.md#reports-on-surveys).
 
 
 ## Passaggi di implementazione {#surveys-implementation-steps}

@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 48926e87-03d9-4aa0-89cb-e3fb4f99c1f5
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '348'
-ht-degree: 98%
+ht-degree: 82%
 
 ---
 
@@ -39,9 +39,9 @@ Scopri come importare un HTML esistente per creare e inviare un’e-mail in Adob
 
 [Fai clic qui per ulteriori informazioni](../../delivery/using/defining-the-email-content.md#message-content).
 
-## Come si utilizza Campaign DCE per creare il contenuto di un’e-mail? {#how-to-use-campaign-dce-to-create-an-email-content-}
+## Come si utilizza Campaign DCE per creare un contenuto e-mail? {#how-to-use-campaign-dce-to-create-an-email-content-}
 
-[Progettare un’e-mail con l’editor di contenuti digitali di Campaign](../../web/using/use-case--creating-an-email-delivery.md): scopri come utilizzare Campaign DCE per progettare un’e-mail mediante un esempio.
+[Progettare un’e-mail con l’editor di contenuti digitali di Campaign](../../web/using/use-case-creating-an-email-delivery.md): scopri come utilizzare Campaign DCE per progettare un’e-mail mediante un esempio.
 
 ## Come posso creare una newsletter basata su abbonamento in Campaign? {#how-can-i-create-a-subscription-based-newsletter-in-campaign-}
 

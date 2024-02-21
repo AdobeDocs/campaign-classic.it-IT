@@ -2,13 +2,13 @@
 product: campaign
 title: Utilizzare un modello di contenuto
 description: Utilizzare un modello di contenuto
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Templates
 exl-id: e43dd68e-2e95-4367-9029-4622fbcb1759
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '439'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ Il layout viene applicato automaticamente in base alle impostazioni selezionate.
 
 ![](assets/s_ncs_content_deliver_a_content_html.png)
 
-Per ulteriori informazioni, consulta l’esempio di implementazione completa: [Creazione di contenuti nella consegna guidata](use-case--creating-content-management.md#creating-content-in-the-delivery-wizard).
+Per ulteriori informazioni, consulta l’esempio di implementazione completa: [Creazione di contenuti nella consegna guidata](use-case-creating-content-management.md#creating-content-in-the-delivery-wizard).
 
 ## Creazione di un’istanza di contenuto {#creating-a-content-instance}
 

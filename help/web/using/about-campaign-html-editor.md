@@ -6,7 +6,7 @@ feature: Web Apps, Web Forms, Landing Pages, Email Design
 badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 exl-id: f5d65e89-6b18-482b-97d8-11ab94f6775e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 1%
@@ -50,11 +50,11 @@ Per creare un semplice **applicazione web**, è necessario:
 
 Per creare un **consegna e-mail**, è necessario:
 
-1. Creare una consegna da un modello DCE - [Ulteriori informazioni](use-case--creating-an-email-delivery.md)
+1. Creare una consegna da un modello DCE - [Ulteriori informazioni](use-case-creating-an-email-delivery.md)
 1. Seleziona un contenuto esistente o creane uno da un [modello standard](template-management.md)
 1. Modificare e configurare i contenuti online
 1. Inviare la consegna - [Ulteriori informazioni](../../delivery/using/steps-about-delivery-creation-steps.md)
 
 >[!NOTE]
 >
->Un esempio completo di implementazione nel contesto di una consegna e-mail è disponibile in [questo caso d’uso](use-case--creating-an-email-delivery.md).
+>Un esempio completo di implementazione nel contesto di una consegna e-mail è disponibile in [questo caso d’uso](use-case-creating-an-email-delivery.md).

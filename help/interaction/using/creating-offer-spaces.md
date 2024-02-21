@@ -1,21 +1,21 @@
 ---
 product: campaign
-title: Creazione di spazi di offerta
-description: Creazione di spazi di offerta
+title: Creazione di spazi dell’offerta
+description: Creazione di spazi dell’offerta
 feature: Interaction, Offers
 badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: bdda98f7-a083-4f3b-b691-c28ec79af780
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '993'
 ht-degree: 1%
 
 ---
 
-# Creazione di spazi di offerta{#creating-offer-spaces}
+# Creazione di spazi dell’offerta{#creating-offer-spaces}
 
 
 
@@ -23,7 +23,7 @@ La creazione dello spazio dell’offerta può essere eseguita solo da un **ammin
 
 Il contenuto delle offerte di catalogo è configurato negli spazi dell’offerta. Per impostazione predefinita, il contenuto può includere i campi seguenti: **[!UICONTROL Title]**, **[!UICONTROL Destination URL]**, **[!UICONTROL Image URL]**, **[!UICONTROL HTML content]** e **[!UICONTROL Text content]**. La sequenza di campi viene configurata nello spazio dell’offerta.
 
-I parametri avanzati ti consentono di specificare una chiave di identificazione del contatto (che può essere costituita da vari elementi, ad esempio il nome e il campo e-mail contemporaneamente). Per ulteriori informazioni, consulta [Presentazione di un’offerta identificata](../../interaction/using/integration-via-javascript--client-side-.md#presenting-an-identified-offer) sezione.
+I parametri avanzati ti consentono di specificare una chiave di identificazione del contatto (che può essere costituita da vari elementi, ad esempio il nome e il campo e-mail contemporaneamente). Per ulteriori informazioni, consulta [Presentazione di un’offerta identificata](../../interaction/using/integration-via-javascript-client-side.md#presenting-an-identified-offer) sezione.
 
 Il rendering HTML o XML viene creato tramite una funzione di rendering. La sequenza dei campi definiti nella funzione di rendering deve essere identica alla sequenza configurata nel contenuto.
 

@@ -5,9 +5,9 @@ description: Ulteriori informazioni sul targeting dei dati in un flusso di lavor
 badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Query Editor, Data Management, Workflows
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1929'
+source-wordcount: '1926'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 5%
 
 ## Creare le query {#creating-queries}
 
-### Seleziona dati {#selecting-data}
+### Selezionare i dati {#selecting-data}
 
 A **[!UICONTROL Query]** attività consente di selezionare dati di base per generare la popolazione target. Per ulteriori informazioni, consulta [Creazione di una query](query.md#creating-a-query).
 
@@ -198,7 +198,7 @@ Quindi, è necessario aggiungere nuovi sottoinsiemi:
 
    >[!NOTE]
    >
-   >Se hai acquisito **Federated Data Access** , è possibile creare sottoinsiemi in base alle informazioni contenute in una base esterna. A questo scopo, seleziona lo schema della tabella esterna in **[!UICONTROL Targeting dimension]** campo. Per ulteriori informazioni, consulta [Accesso a un database esterno (FDA)](accessing-an-external-database--fda-.md).
+   >Se hai acquisito **Federated Data Access** , è possibile creare sottoinsiemi in base alle informazioni contenute in una base esterna. A questo scopo, seleziona lo schema della tabella esterna in **[!UICONTROL Targeting dimension]** campo. Per ulteriori informazioni, consulta [Accesso a un database esterno (FDA)](accessing-an-external-database-fda.md).
 
 Una volta creati i sottoinsiemi, per impostazione predefinita l’attività divisa mostra tante transizioni di output quanti sono i sottoinsiemi:
 
@@ -240,7 +240,7 @@ In Adobe Campaign, Data Management combina una serie di attività per risolvere 
 
 Per implementare queste operazioni, Adobe Campaign offre:
 
-* Attività di raccolta dati: [Trasferimento file](file-transfer.md), [Caricamento dati (file)](data-loading--file-.md), [Caricamento dati (RDBMS)](data-loading--rdbms-.md), [Aggiorna dati](update-data.md). Questo primo passaggio di raccolta dei dati prepara i dati per consentirne l’elaborazione in altre attività. È necessario monitorare diversi parametri per garantire che il flusso di lavoro venga eseguito correttamente e dia i risultati previsti. Ad esempio, quando si importano dati, la chiave primaria (Pkey) per questi dati deve essere univoca per ciascun record.
+* Attività di raccolta dati: [Trasferimento file](file-transfer.md), [Caricamento dati (file)](data-loading-file.md), [Caricamento dati (RDBMS)](data-loading-rdbms.md), [Aggiorna dati](update-data.md). Questo primo passaggio di raccolta dei dati prepara i dati per consentirne l’elaborazione in altre attività. È necessario monitorare diversi parametri per garantire che il flusso di lavoro venga eseguito correttamente e dia i risultati previsti. Ad esempio, quando si importano dati, la chiave primaria (Pkey) per questi dati deve essere univoca per ciascun record.
 * Le attività di targeting sono state arricchite con opzioni di gestione dati: [Query](query.md), [Union](union.md), [Intersezione](intersection.md), [Dividi](split.md). Questo consente di configurare un’unione o un’intersezione tra dati provenienti da diverse dimensioni di targeting diverse, purché sia possibile la riconciliazione dei dati.
 * Attività di trasformazione dei dati: [Arricchimento](enrichment.md), [Cambia dimensione](change-dimension.md).
 

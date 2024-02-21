@@ -2,13 +2,13 @@
 product: campaign
 title: Rendering di un modulo
 description: Rendering di un modulo
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Web Forms
 exl-id: 723a6c47-5323-4914-a014-58be493852cc
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '999'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ Puoi modificare o ignorare questi modelli. A questo scopo, fai clic su **[!UICON
 
 ![](assets/s_ncs_admin_survey_render_edit_param.png)
 
-È possibile eseguire le seguenti operazioni:
+Puoi eseguire le seguenti azioni:
 
 * Modificare l&#39;immagine utilizzata come logo e adattarne le dimensioni,
 * Specificate anche il percorso di accesso all&#39;immagine di anteprima quando gli utenti selezionano questo modello di rendering.
@@ -75,12 +75,12 @@ Consente di definire le seguenti proprietà:
 * **[!UICONTROL Label format]**: ritorno a capo automatico o nessun ritorno a capo automatico,
 * **[!UICONTROL Number of cells]** : vedi [Posizionamento dei campi nella pagina](defining-web-forms-layout.md#positioning-the-fields-on-the-page),
 * **[!UICONTROL Horizontal alignment]** (Sinistra, Destra, Centrata) e **[!UICONTROL Vertical alignment]** (Alta, Bassa, Media),
-* **[!UICONTROL Width]** della zona: può essere espresso come percentuale o in em, punti o pixel (valore predefinito),
+* **[!UICONTROL Width]** della zona: può essere espressa come percentuale o in em, punti o pixel (valore predefinito),
 * Massimo **[!UICONTROL Length]**: numero massimo di caratteri consentito (per i controlli Testo, Numero e Tipo password),
 * **[!UICONTROL Lines]**: numero di righe per una **[!UICONTROL Multi-line text]** tipo di zona,
 * **[!UICONTROL Style inline]**: consente di sovraccaricare il foglio di stile CSS con impostazioni aggiuntive. Questi vengono separati utilizzando **;** caratteri come mostrato nell’esempio seguente:
 
-   ![](assets/s_ncs_admin_survey_advanced_tab_inline.png)
+  ![](assets/s_ncs_admin_survey_advanced_tab_inline.png)
 
 ### Definizione di intestazioni e piè di pagina {#defining-headers-and-footers}
 
@@ -148,15 +148,15 @@ Nella finestra di selezione dei campi è possibile scegliere tra i seguenti dati
 
 * La struttura principale contiene i parametri del contesto del modulo. I parametri predefiniti sono Identificatore (che corrisponde all’identificatore crittografato del destinatario), Lingua e Origine.
 
-   Per ulteriori informazioni, consulta questa [pagina](defining-web-forms-properties.md#form-url-parameters).
+  Per ulteriori informazioni, consulta questa [pagina](defining-web-forms-properties.md#form-url-parameters).
 
 * Il **[!UICONTROL Recipients]** sottostruttura contiene i campi di input inseriti nel modulo e memorizzati nel database.
 
-   Per ulteriori informazioni, consulta [Memorizzazione dei dati nel database](web-forms-answers.md#storing-data-in-the-database).
+  Per ulteriori informazioni, consulta [Memorizzazione dei dati nel database](web-forms-answers.md#storing-data-in-the-database).
 
 * Il **[!UICONTROL Variables]** sottoalbero contiene le variabili disponibili per questo modulo. Per ulteriori informazioni, consulta [Memorizzazione dei dati in una variabile locale](web-forms-answers.md#storing-data-in-a-local-variable).
 
-Per ulteriori informazioni, consulta il caso d’uso disponibile qui: [Visualizzazione di opzioni diverse a seconda dei valori selezionati](use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values).
+Per ulteriori informazioni, consulta il caso d’uso disponibile qui: [Visualizzazione di opzioni diverse a seconda dei valori selezionati](use-cases-web-forms.md#displaying-different-options-depending-on-the-selected-values).
 
 È inoltre possibile condizionare la visualizzazione delle pagine del modulo utilizzando **[!UICONTROL Test]** oggetto. Per ulteriori informazioni, consulta questa [pagina](defining-web-forms-page-sequencing.md#conditional-page-display).
 

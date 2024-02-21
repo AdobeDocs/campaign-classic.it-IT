@@ -6,10 +6,10 @@ role: User
 badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Campaigns, Cross Channel Orchestration
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '1206'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,7 @@ Adobe Campaign consente di creare, configurare, eseguire e analizzare campagne d
 
 ## Nozioni di base su Workspace {#workspace-basics}
 
-### Pagina Home {#home-page}
+### Home page {#home-page}
 
 Una volta connesso ad Adobe Campaign, sfoglia le varie funzionalità utilizzando i collegamenti nella barra di navigazione.
 
@@ -142,7 +142,7 @@ Il **[!UICONTROL Reports]** consente di accedere ai rapporti della campagna.
 Le campagne vengono create tramite modelli di campagna. Puoi configurare modelli riutilizzabili per i quali sono selezionate alcune opzioni e altre impostazioni sono già salvate. Per ogni campagna sono offerte le seguenti funzionalità:
 
 * Riferimento a [documenti e risorse](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents): puoi associare documenti alla campagna (breve, rapporto, immagini, ecc.). Sono supportati tutti i formati di documento.
-* Definizione dei costi: per ogni campagna, Adobe Campaign consente di definire [voci di costo e strutture di calcolo dei costi](../../campaign/using/providers--stocks-and-budgets.md#defining-cost-categories) che possono essere utilizzati durante la creazione della campagna di marketing. Ad esempio: spese di stampa, ricorso ad agenzie esterne, affitto di stanze.
+* Definizione dei costi: per ogni campagna, Adobe Campaign consente di definire [voci di costo e strutture di calcolo dei costi](../../campaign/using/providers-stocks-and-budgets.md#defining-cost-categories) che possono essere utilizzati durante la creazione della campagna di marketing. Ad esempio: spese di stampa, ricorso ad agenzie esterne, affitto di stanze.
 * Definizione degli obiettivi: puoi definire obiettivi quantificabili per una campagna, ad esempio numero di abbonati, volume di business, ecc. Queste informazioni vengono successivamente utilizzate nei rapporti delle campagne.
 * Gestione [indirizzi seed](../../delivery/using/about-seed-addresses.md) e [gruppi di controllo](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 * Gestione delle approvazioni: è possibile selezionare i trattamenti da approvare e, se necessario, selezionare gli operatori di revisione o i gruppi di operatori. [Ulteriori informazioni](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries)
@@ -179,12 +179,12 @@ Questa tabella fornisce un riepilogo delle azioni che è possibile eseguire sull
 | Offerta | Approvare il contenuto e l’idoneità dell’offerta<br/>Disattivare un’offerta online |
 | Attività Task | Terminare un’attività<br/>Annullare un’attività |
 | Risorse di marketing | Approvare una risorsa<br/>Bloccare e sbloccare una risorsa |
-| Pacchetto campagne | Inviare un pacchetto per l&#39;approvazione<br/>Approvare o rifiutare un pacchetto<br/>Annullare un pacchetto |
+| Pacchetto campagna | Inviare un pacchetto per l&#39;approvazione<br/>Approvare o rifiutare un pacchetto<br/>Annullare un pacchetto |
 | Ordine delle campagne | Crea un ordine<br/>Accettare o rifiutare un ordine <!-- Je n'ai pas pu créer de campaign order pour vérifier cela. Peut-on accéder à ces fonctionnalités depuis l'accès web ? --> |
 | Magazzino | Eliminare una linea di magazzino |
 | Simulazione di offerta | Avviare e interrompere una simulazione |
 | Flusso di lavoro di destinazione | Avviare, mettere in pausa e interrompere un flusso di lavoro |
-| Rapporto | Salva i dati correnti nella cronologia del rapporto |
+| Report | Salva i dati correnti nella cronologia del rapporto |
 | Forum | Aggiungere una discussione<br/>Rispondere a un messaggio in una discussione<br/>Segui una discussione e annulla l’iscrizione |
 
 ### Approvazioni

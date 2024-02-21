@@ -8,10 +8,10 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '8056'
-ht-degree: 41%
+source-wordcount: '8075'
+ht-degree: 3%
 
 ---
 
@@ -80,9 +80,9 @@ Di seguito sono riportati i diversi parametri di **autenticazione** nodo:
  <tbody> 
   <tr> 
    <td> checkIPConsistent<br /> </td> 
-   <td> Abilita controllo indirizzo IP.<br /> </td> 
+   <td> Abilita il controllo degli indirizzi IP.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> defaultMode<br /> </td> 
@@ -92,7 +92,7 @@ Di seguito sono riportati i diversi parametri di **autenticazione** nodo:
   </tr> 
   <tr> 
    <td> longSessionTimeOutSec<br /> </td> 
-   <td> Timeout delle sessioni lunghe in secondi.<br /> </td> 
+   <td> Timeout di sessioni lunghe in secondi.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 1296000<br /> </td> 
   </tr> 
@@ -204,7 +204,7 @@ Di seguito sono riportati i diversi parametri di **dataStore** nodo. Qui vengono
   </tr> 
   <tr> 
    <td> uploadAllowlist<br /> </td> 
-   <td> File autorizzati da scaricare separati da “,”. La stringa deve essere un’espressione Java regolare valida. Consulta <a href="file-res-management.md" target="_blank">Limitazione dei file caricabili</a>.<br /> </td> 
+   <td> File autorizzati da scaricare separati da ",". La stringa deve essere un'espressione Java regolare valida. Consulta <a href="file-res-management.md" target="_blank">Limitazione dei file caricabili</a>.<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> '.+' <br /> </td> 
   </tr> 
@@ -212,7 +212,7 @@ Di seguito sono riportati i diversi parametri di **dataStore** nodo. Qui vengono
    <td> useVault<br /> </td> 
    <td> Memorizza i segreti in Vault: usa Hashicorp Vault.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> vaultSecretPath<br /> </td> 
@@ -228,7 +228,7 @@ Di seguito sono riportati i diversi parametri di **dataStore** nodo. Qui vengono
   </tr> 
   <tr> 
    <td> vaultUrl<br /> </td> 
-   <td> URL di HashiCorp Vault <br /> </td> 
+   <td> URL di Hashicorp Vault <br /> </td> 
    <td> Stringa<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -262,12 +262,12 @@ Di seguito sono riportati i diversi parametri di **dataStore > proxyAdjust** nod
  <tbody> 
   <tr> 
    <td> urlBase<br /> </td> 
-   <td> Base da utilizzare per la generazione di URL esterni. Es: https://server.domain.com<br /> </td> 
+   <td> Base da utilizzare per la generazione di URL esterni. Esempio: https://server.domain.com<br /> </td> 
    <td> Stringa<br /> </td> 
   </tr> 
   <tr> 
    <td> urlRegEx<br /> </td> 
-   <td> Espressione regolare che corrisponde agli URL. Es: http://server\.lan\.net.*<br /> </td> 
+   <td> Espressione regolare che corrisponde agli URL. Esempio: http://server\.lan\.net.*<br /> </td> 
    <td> Stringa<br /> </td> 
   </tr> 
  </tbody> 
@@ -288,7 +288,7 @@ Di seguito sono riportati i diversi parametri di **dataStore > dataSource** nodo
  </thead> 
  <tbody> 
   <tr> 
-   <td> name<br /> </td> 
+   <td> nome<br /> </td> 
    <td> Nome origine dati<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> predefinito<br /> </td> 
@@ -316,7 +316,7 @@ In **dataStore > dataSource > dbcnx** configurare le impostazioni di connessione
   </tr> 
   <tr> 
    <td> dbSchema<br /> </td> 
-   <td> Area di lavoro<br /> </td> 
+   <td> Workspace<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> </td> 
   </tr> 
@@ -418,7 +418,7 @@ In **dataStore > dataSource > pool** configurare i parametri del pool di conness
   </tr> 
   <tr> 
    <td> maxIdleDelaySec<br /> </td> 
-   <td> Tempo di inattività massimo della connessione. 0 significa valore predefinito.<br /> </td> 
+   <td> Tempo massimo di inattività della connessione. 0 significa valore predefinito.<br /> </td> 
    <td> Breve<br /> </td> 
   </tr> 
  </tbody> 
@@ -440,7 +440,7 @@ Per ulteriori informazioni, consulta [Gestione delle risorse pubbliche](file-res
  </thead> 
  <tbody> 
   <tr> 
-   <td> name<br /> </td> 
+   <td> nome<br /> </td> 
    <td> Nome della directory virtuale <br /> </td> 
    <td> Stringa<br /> </td> 
   </tr> 
@@ -479,12 +479,12 @@ Di seguito sono riportati i diversi parametri di **dataStore > preprocessCommand
    <td> Stringa<br /> </td> 
   </tr> 
   <tr> 
-   <td> label<br /> </td> 
+   <td> etichetta<br /> </td> 
    <td> Etichetta della riga di comando<br /> </td> 
    <td> Stringa<br /> </td> 
   </tr> 
   <tr> 
-   <td> name<br /> </td> 
+   <td> nome<br /> </td> 
    <td> Nome riga di comando<br /> </td> 
    <td> Stringa<br /> </td> 
   </tr> 
@@ -516,7 +516,7 @@ Per ulteriori informazioni, consulta questa [sezione](../../installation/using/c
  <tbody> 
   <tr> 
    <td> localDomain<br /> </td> 
-   <td> Nome di dominio: nome di dominio predefinito. Utilizzato dal comando SMTP HELO. Per impostazione predefinita, utilizza i parametri di rete della prima interfaccia di rete dichiarata in Windows; o analizza il file/etc/resolv.conf in Linux (dominio o voce di ricerca). <br /> </td> 
+   <td> Nome di dominio: nome di dominio predefinito. Utilizzato dal comando SMTP HELO. Per impostazione predefinita, utilizza i parametri di rete della prima interfaccia di rete dichiarata in Windows oppure analizza file/etc/resolv.conf in Linux (dominio o voce di ricerca). <br /> </td> 
    <td> Stringa<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -528,7 +528,7 @@ Per ulteriori informazioni, consulta questa [sezione](../../installation/using/c
   </tr> 
   <tr> 
    <td> riprova<br /> </td> 
-   <td> Numero di nuovi tentativi per una query DNS.<br /> </td> 
+   <td> Numero di tentativi per una query DNS.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 4<br /> </td> 
   </tr> 
@@ -577,7 +577,7 @@ Per ulteriori informazioni, consulta [Limitazione dei comandi esterni autorizzat
   </tr> 
   <tr> 
    <td> utente<br /> </td> 
-   <td> Esecuzione di comandi come utente diverso.<br /> </td> 
+   <td> Eseguire i comandi come un altro utente.<br /> </td> 
    <td> Stringa<br /> </td> 
   </tr> 
  </tbody> 
@@ -605,7 +605,7 @@ Di seguito sono riportati i diversi parametri di **htmlToPdf** nodo. Configurazi
   </tr> 
   <tr> 
    <td> maxProcessusCount<br /> </td> 
-   <td> Max. numero di processi di conversione consentiti alla volta in un computer.<br /> </td> 
+   <td> Max numero di processi di conversione consentiti alla volta in un computer.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
@@ -625,7 +625,7 @@ Di seguito sono riportati i diversi parametri di **htmlToPdf** nodo. Configurazi
    <td> verboso<br /> </td> 
    <td> Modalità dettagliata: avvia in modalità dettagliata per diagnosticare i possibili errori.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> waitTime<br /> </td> 
@@ -664,7 +664,7 @@ Di seguito sono riportati i diversi parametri di **ims** nodo. Questa è la conf
   </tr> 
   <tr> 
    <td> authIMSClientSecret<br /> </td> 
-   <td> Chiave segreto (crittografata in AES)<br /> </td> 
+   <td> Chiave segreta (crittografata in AES)<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -812,13 +812,13 @@ Di seguito sono riportati i diversi parametri di **monitoraggio** nodo. Configur
   </tr> 
   <tr> 
    <td> unixScript<br /> </td> 
-   <td> Script Unix gestito dal servizio di monitoraggio.<br /> </td> 
+   <td> Script Unix eseguito dal servizio di monitoraggio.<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> winScript<br /> </td> 
-   <td> Script Windows eseguito dal servizio di monitoraggio.<br /> </td> 
+   <td> Script Windows che deve essere eseguito dal servizio di monitoraggio.<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -841,7 +841,7 @@ Di seguito sono riportati i diversi parametri di **ooconv** nodo. Configurazione
  <tbody> 
   <tr> 
    <td> maxConversions<br /> </td> 
-   <td> Numero massimo di conversioni che possono essere eseguite da un server OpenOffice. Oltre questo numero, il server viene riavviato.<br /> </td> 
+   <td> Numero massimo di conversioni che un server OpenOffice può eseguire. Oltre questo numero, il server viene riavviato.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
@@ -853,9 +853,9 @@ Di seguito sono riportati i diversi parametri di **ooconv** nodo. Configurazione
   </tr> 
   <tr> 
    <td> portRange<br /> </td> 
-   <td> Intervallo delle porte in cui i server OpenOffice sono in ascolto.<br /> </td> 
+   <td> Intervallo di porte in cui i server OpenOffice sono in ascolto.<br /> </td> 
    <td> Stringa<br /> </td> 
-   <td> 8101-8110<br /> </td> 
+   <td> 8101 - 8110<br /> </td> 
   </tr> 
   <tr> 
    <td> url<br /> </td> 
@@ -886,7 +886,7 @@ Per ulteriori informazioni, consulta [Configurazione della connessione proxy](fi
    <td> abilitato<br /> </td> 
    <td> Utilizza un server proxy.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> sostituire<br /> </td> 
@@ -898,7 +898,7 @@ Per ulteriori informazioni, consulta [Configurazione della connessione proxy](fi
    <td> useSingleProxy<br /> </td> 
    <td> Server proxy univoco: utilizza la stessa configurazione per tutti i tipi di proxy.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -994,7 +994,7 @@ Per ulteriori informazioni, consulta [Protezione delle connessioni in uscita](..
    <td> debugTrace<br /> </td> 
    <td> Traccia di debug del meccanismo di selezione URL: invia messaggi aggiuntivi durante il processo di verifica URL.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1138,7 +1138,7 @@ Per ulteriori informazioni, consulta [Attivazione dell’archiviazione delle e-m
    <td> autoStart<br /> </td> 
    <td> Avvio automatico<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> compressBatchSize<br /> </td> 
@@ -1210,7 +1210,7 @@ Per ulteriori informazioni, consulta [Attivazione dell’archiviazione delle e-m
    <td> smtpEnableTLS<br /> </td> 
    <td> Attiva il supporto SMTPS: attiva la consegna di e-mail in modalità provvisoria (STARTTLS/SMTPS) quando supportata dal server remoto.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> smtpNbConnection<br /> </td> 
@@ -1257,19 +1257,19 @@ Di seguito sono riportati i diversi parametri di **inMail** nodo. Si tratta dell
    <td> autoStart<br /> </td> 
    <td> Avvio automatico<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> checkInstanceName<br /> </td> 
    <td> Verifica il nome dell’istanza: se è true, il nome dell’istanza Adobe Campaign contenuta nelle intestazioni ID messaggio deve essere uguale all’istanza corrente. <br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> vero<br /> </td> 
+   <td> true<br /> </td> 
   </tr> 
   <tr> 
    <td> defaultForwardAddress<br /> </td> 
    <td> Indirizzo di inoltro: indirizzo e-mail predefinito non elaborato da una regola. <br /> </td> 
    <td> Stringa<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> errorForwardAddress<br /> </td> 
@@ -1281,7 +1281,7 @@ Di seguito sono riportati i diversi parametri di **inMail** nodo. Si tratta dell
    <td> ignoreSize<br /> </td> 
    <td> Ignora dimensione messaggio: viene utilizzato per ignorare la dimensione di un messaggio restituito dai server POP3. In questo caso, il modulo richiede un "." alla fine dei messaggi. <br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> inMailPeriodSec<br /> </td> 
@@ -1382,11 +1382,11 @@ In **inMail > msgDump** , configura i seguenti parametri. Configurazione del dum
    <td> dump<br /> </td> 
    <td> Salva tutti i messaggi in entrata in formato testo. <br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> msgPath<br /> </td> 
-   <td> Percorso del dump del messaggio.<br /> </td> 
+   <td> Percorso dell’immagine del messaggio.<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> '/tmp/inMail'<br /> </td> 
   </tr> 
@@ -1397,7 +1397,7 @@ In **inMail > msgDump** , configura i seguenti parametri. Configurazione del dum
 
 Di seguito sono riportati i diversi parametri di **interagire** nodo. Configurazione del daemon di scrittura per gli eventi di interazione in entrata.
 
-Per ulteriori informazioni, consulta [Interazione - Buffer dati](../../installation/using/interaction---data-buffer.md).
+Per ulteriori informazioni, consulta [Interazione - Buffer dati](../../installation/using/interaction-data-buffer.md).
 
 <table> 
  <thead> 
@@ -1419,11 +1419,11 @@ Per ulteriori informazioni, consulta [Interazione - Buffer dati](../../installat
    <td> autoStart<br /> </td> 
    <td> Avvio automatico<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> callDataSize<br /> </td> 
-   <td> Max. numero di caratteri memorizzati nella memoria condivisa per i dati di chiamata.<br /> </td> 
+   <td> Max numero di caratteri memorizzati nella memoria condivisa per i dati di chiamata.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
@@ -1447,7 +1447,7 @@ Per ulteriori informazioni, consulta [Interazione - Buffer dati](../../installat
   </tr> 
   <tr> 
    <td> maxSharedEntries<br /> </td> 
-   <td> Max. numero di eventi archiviati nella memoria condivisa.<br /> </td> 
+   <td> Max numero di eventi archiviati nella memoria condivisa.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 25000<br /> </td> 
   </tr> 
@@ -1471,13 +1471,13 @@ Per ulteriori informazioni, consulta [Interazione - Buffer dati](../../installat
   </tr> 
   <tr> 
    <td> statsPeriod<br /> </td> 
-   <td> Durata dell’aggregazione in secondi per le statistiche del tempo di risposta. 0 significa che l’archiviazione delle statistiche è stata disattivata.<br /> </td> 
+   <td> Durata dell’aggregazione in secondi per le statistiche sul tempo di risposta. 0 significa che l’archiviazione delle statistiche è stata disattivata.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> targetKeySize<br /> </td> 
-   <td> Max. numero di caratteri memorizzati nella memoria condivisa per l’identificazione dei singoli utenti.<br /> </td> 
+   <td> Max numero di caratteri memorizzati nella memoria condivisa per l’identificazione dei singoli utenti.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 16<br /> </td> 
   </tr> 
@@ -1508,7 +1508,7 @@ Di seguito sono riportati i diversi parametri di **mta** nodo. Si tratta della c
    <td> autoStart<br /> </td> 
    <td> Avvio automatico<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> dataLogPath<br /> </td> 
@@ -1542,19 +1542,19 @@ Di seguito sono riportati i diversi parametri di **mta** nodo. Si tratta della c
   </tr> 
   <tr> 
    <td> logEmailErrors<br /> </td> 
-   <td> Genera statistiche di errore e le archivia nel database.<br /> </td> 
+   <td> Genera statistiche di errore e le memorizza nel database.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> vero<br /> </td> 
+   <td> true<br /> </td> 
   </tr> 
   <tr> 
    <td> logLevel<br /> </td> 
-   <td> Mostra il livello dei messaggi di registro. Livello di gravità dei registri scritti nel database. I messaggi di registro generati dall’MTA non sono sempre scritti nel database. Con questo parametro, puoi definire il livello in base al quale ritieni che un messaggio debba essere scritto nel database. Se si definisce il livello 2, vengono scritti anche i messaggi di livello 1 e 0, mentre se si definisce il livello 1, vengono scritti solo i messaggi di livello 1 e 0. I valori possibili sono: 0 (errori), 1 (avviso), 2 (informazioni)<br /> </td> 
+   <td> Visualizza il livello dei messaggi di registro. Livello di gravità dei registri scritti nel database. I messaggi di registro generati dall’MTA non sono sempre scritti nel database. Con questo parametro, puoi definire il livello in base al quale ritieni che un messaggio debba essere scritto nel database. Se si definisce il livello 2, vengono scritti anche i messaggi di livello 1 e 0, mentre se si definisce il livello 1, vengono scritti solo i messaggi di livello 1 e 0. I valori possibili sono: 0 (errori), 1 (avviso), 2 (informazioni)<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
   <tr> 
    <td> maxMemoryMb<br /> </td> 
-   <td> Dimensioni massime di memoria (in MB) utilizzabili da un processo MTA. Al di sopra di questo limite, il processo viene riavviato in modo che la memoria utilizzata venga liberata per il sistema.<br /> </td> 
+   <td> Dimensione massima della memoria (in MB) utilizzabile da un processo MTA. Al di sopra di questo limite, il processo viene riavviato in modo che la memoria utilizzata venga rilasciata al sistema.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 1024<br /> </td> 
   </tr> 
@@ -1610,7 +1610,7 @@ Di seguito sono riportati i diversi parametri di **mta** nodo. Si tratta della c
    <td> retryLostMessages<br /> </td> 
    <td> Ritenta messaggi persi: parti delle consegne saranno ritentate se il processo secondario è inattivo.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> vero<br /> </td> 
+   <td> true<br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -1622,7 +1622,7 @@ Di seguito sono riportati i diversi parametri di **mta** nodo. Si tratta della c
    <td> signEmailLinks<br /> </td> 
    <td> Abilita il meccanismo di firma. Ciò migliora la sicurezza sul tracciamento dei collegamenti nelle e-mail.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> vero<br /> </td> 
+   <td> true<br /> </td> 
   </tr>
   <tr> 
    <td> statServerAddress<br /> </td> 
@@ -1641,7 +1641,7 @@ Di seguito sono riportati i diversi parametri di **mta** nodo. Si tratta della c
    <td> statServerTLSSupport<br /> </td> 
    <td> Abilita TLS per dominio: abilita TLS configurabile da MX (richiede un server di statistiche aggiornato).<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> vero <br /> </td> 
+   <td> true <br /> </td> 
   </tr> 
   <!--tr> 
    <td> statServerVersion<br /> </td> 
@@ -1659,7 +1659,7 @@ Di seguito sono riportati i diversi parametri di **mta** nodo. Si tratta della c
    <td> verifyMode<br /> </td> 
    <td> Modalità di verifica: attiva la modalità di verifica (nessuna trasmissione fisica dei messaggi; utilizzata per la simulazione e i test).<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> workingPath<br /> </td> 
@@ -1762,37 +1762,37 @@ Per ulteriori informazioni, consulta questa [sezione](../../installation/using/c
  <tbody> 
   <tr> 
    <td> dataBasePoolPeriodSec<br /> </td> 
-   <td> Frequenza di polling del database dei processi da consegnare. Questo valore indica la frequenza di polling del database (in secondi). Per ottenere la lista dei processi in attesa di consegna, l’MTA esegue il polling del database su base regolare. In assenza di processi in attesa, il periodo di polling viene definito da questo valore. In caso contrario, se un processo è stato trasferito a un server secondario, la durata del polling viene automaticamente ridotta a un secondo affinché un nuovo processo possa essere elaborato di nuovo il più presto possibile, ovvero non appena è nuovamente disponibile un server secondario. Ciò non significa che la query del database verrà eseguita ogni secondo fino a quando non sarà nuovamente disponibile un server secondario. L’accesso al database viene eseguito solo quando almeno un server secondario diventa disponibile.<br /> </td> 
+   <td> Frequenza di polling del database dei processi da consegnare. Questo valore indica la frequenza di polling del database in secondi. Per ottenere l’elenco dei processi in attesa di consegna, l’MTA esegue il polling del database su base regolare. In assenza di processi in attesa, il periodo di polling è definito da questo valore. In caso contrario, se un processo è stato trasferito a un server secondario, la durata del polling viene automaticamente ridotta a un secondo, in modo che un nuovo processo possa essere elaborato nuovamente il prima possibile, ovvero non appena un server secondario è nuovamente disponibile. Ciò non significa che la query sul database verrà eseguita ogni secondo finché non sarà nuovamente disponibile un server secondario. L'accesso a un database viene infatti eseguito solo quando almeno un server secondario diventa disponibile.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
   <tr> 
    <td> dataBaseRetryDelaySec<br /> </td> 
-   <td> Periodo di attesa dopo un errore di connessione al database. Un errore di connessione al database è in genere causato dal server del database stesso. Ad esempio, il server può anche essere interrotto per scopi di manutenzione. Il parametro DataBaseRetryDelay definisce la durata tra due tentativi di connessione in caso di errore di connessione al database.<br /> </td> 
+   <td> Periodo di attesa dopo un errore di connessione al database. Un errore di connessione al database è in genere causato dal server di database stesso. Il server può anche essere arrestato per scopi di manutenzione, ad esempio. Il parametro DataBaseRetryDelay definisce la durata tra due tentativi di connessione in caso di errore di connessione al database.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
   <tr> 
    <td> domainKeysReloadPeriodSec<br /> </td> 
-   <td> Periodo di validità per la cache delle chiavi private (DomainKeys). Le chiavi private utilizzate per firmare le e-mail che seguono i consigli DomainKeys (http://antispam.yahoo.com/domainkeys) sono archivate come opzioni nel database. Il parametro domainKeysReloadPeriodSec definisce il numero di secondi in cui l’MTA può conservare queste chiavi in una cache. Dopo questo ritardo, tutte le chiavi devono essere ricaricate dal database.<br /> </td> 
+   <td> Periodo di validità per la cache delle chiavi private (DomainKeys). Le chiavi private utilizzate per firmare le e-mail che seguono i consigli DomainKeys (http://antispam.yahoo.com/domainkeys) sono memorizzate come opzioni nel database. Il parametro domainKeysReloadPeriodSec definisce il numero di secondi in cui l’MTA può mantenere queste chiavi in una cache. Dopo questo ritardo, tutte le chiavi devono essere ricaricate dal database.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSpareServers<br /> </td> 
-   <td> Numero massimo di server secondari. Rappresenta il numero massimo di server in esecuzione. Si consiglia di limitare questo numero a un numero ottimale compatibile con le risorse di memoria del server, che può essere verificata durante una consegna. La memoria utilizzata non deve superare un terzo della memoria fisica disponibile; in caso contrario verrà utilizzato lo swap su disco. Consulta <a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">Processi secondari MTA</a>.<br /> </td> 
+   <td> Numero massimo di server secondari. Rappresenta il numero massimo di server in esecuzione. Si consiglia di limitare questo numero a un livello ottimale compatibile con le risorse di memoria del server. Questo può essere verificato durante una consegna. La memoria utilizzata non deve superare un terzo della memoria fisica disponibile, altrimenti verrà utilizzato lo swap. Consulta <a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">Processi secondari MTA</a>.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
   <tr> 
    <td> minSpareServers<br /> </td> 
-   <td> Numero minimo di server secondari. L’MTA cerca di mantenere in funzione almeno questo numero di server. Se ne sono presenti meno, i nuovi server vengono riavviati ogni secondo fino al raggiungimento di questo valore.<br /> </td> 
+   <td> Numero minimo di server secondari. L’MTA tenta di mantenere in esecuzione almeno questo numero di server. Se ne sono presenti meno, i nuovi server vengono riavviati ogni secondo fino al raggiungimento di questo valore.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
   <tr> 
    <td> startSpareServers<br /> </td> 
-   <td> Numero di server secondari all’avvio. Il numero di server secondari è monitorato dinamicamente; all’avvio dell’MTA, vengono creati tutti i server secondari indicati da questo valore. Normalmente, i server secondari non possono essere avviati più velocemente di un server al secondo per risparmiare risorse host. Tuttavia, all’avvio dell’MTA, questa limitazione viene annullata in modo che i server secondari siano disponibili il prima possibile.<br /> </td> 
+   <td> Numero di server secondari all’avvio. Il numero di server secondari viene monitorato dinamicamente; all’avvio dell’MTA, vengono creati tutti i server secondari indicati da questo valore. Normalmente, i server secondari non possono essere avviati più velocemente di un server al secondo per risparmiare risorse host. Tuttavia, all’avvio dell’MTA, questa limitazione viene annullata in modo che i server secondari siano disponibili il prima possibile.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
@@ -1823,13 +1823,13 @@ Per ulteriori informazioni, consulta [Ottimizzazione dell’invio di e-mail](../
   </tr> 
   <tr> 
    <td> idleChildTimeoutSec<br /> </td> 
-   <td> Timeout fino all’interruzione dei server secondari inattivi. Se un server secondario ha un tempo di inattività maggiore di questo parametro, si disconnetterà automaticamente per liberare risorse host.<br /> </td> 
+   <td> Timeout fino all’arresto dei server secondari inattivi. Se un server secondario ha un tempo di inattività maggiore di questo parametro, si disconnetterà automaticamente per liberare risorse host.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
   <tr> 
    <td> maxAgeSec<br /> </td> 
-   <td> Tempo massimo di conservazione dei messaggi. Se un messaggio preparato non può essere inviato a causa di limitazione o non è stato in grado di connettersi all’MTA di destinazione, il messaggio viene abbandonato e verrà elaborato al nuovo tentativo successivo.<br /> </td> 
+   <td> Tempo massimo di conservazione dei messaggi. Se un messaggio preparato non può essere inviato a causa di una limitazione o non è stato in grado di connettersi all’MTA di destinazione, il messaggio viene abbandonato e verrà elaborato al nuovo tentativo successivo.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
@@ -1841,7 +1841,7 @@ Per ulteriori informazioni, consulta [Ottimizzazione dell’invio di e-mail](../
   </tr> 
   <tr> 
    <td> maxMsgPerChild<br /> </td> 
-   <td> Numero massimo di messaggi per server secondario. Ogni elemento secondario MTA elabora questo numero di messaggi e si disattiva. È importante specificare un numero tale che la perdita di memoria o di risorse nell’MTA sia innocua (in genere poche migliaia). Anche se non ci sono perdite di memoria conosciute nel codice MTA, i motori JavaScript e XSL incorporati non sono completamente affidabili.<br /> </td> 
+   <td> Numero massimo di messaggi per server secondario. Ogni elemento secondario MTA elabora questo numero di messaggi e muore. È importante specificare un numero tale che la perdita di memoria o di risorse nell’MTA sia innocua (in genere poche migliaia). Anche se non ci sono perdite di memoria note nel codice MTA, i motori JavaScript e XSL incorporati non sono completamente affidabili.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 5000000<br /> </td> 
   </tr> 
@@ -1853,7 +1853,7 @@ Per ulteriori informazioni, consulta [Ottimizzazione dell’invio di e-mail](../
   </tr> 
   <tr> 
    <td> maxWorkingSetMb<br /> </td> 
-   <td> Dimensione massima della memoria (in MB) utilizzabile da un processo secondario. Al di sopra di questo limite, il processo viene interrotto in modo che la memoria utilizzata venga liberata per il sistema. <br /> </td> 
+   <td> Dimensione massima della memoria (in MB) utilizzabile da un processo secondario. Al di sopra di questo limite, il processo viene interrotto in modo che la memoria utilizzata venga rilasciata al sistema. <br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 128<br /> </td> 
   </tr> 
@@ -1867,11 +1867,11 @@ Per ulteriori informazioni, consulta [Ottimizzazione dell’invio di e-mail](../
    <td> startWithFirstMX<br /> </td> 
    <td> Inizia sempre con la massima priorità MX.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> timeToLive<br /> </td> 
-   <td> Numero massimo di tentativi consecutivi quando viene ripristinato.<br /> </td> 
+   <td> Numero massimo di tentativi consecutivi quando viene ripreso.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 48<br /> </td> 
   </tr> 
@@ -1892,25 +1892,25 @@ In **mta > figlio > smtp** , configura i seguenti parametri. Questa è la config
  <tbody> 
   <tr> 
    <td> enableTLS<br /> </td> 
-   <td> Attiva la consegna di e-mail in modalità sicura (STARTTLS/SMTPS) se supportata dal server remoto.<br /> </td> 
+   <td> Attiva la consegna di e-mail in modalità provvisoria (STARTTLS/SMTPS) se supportata dal server remoto.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> idleSessionTimeoutSec<br /> </td> 
-   <td> Timeout della sessione inattiva. Questo parametro è utilizzato solo se la sessione viene riutilizzata per trasmettere diversi messaggi a un determinato dominio. Quando l’MTA ha completato la trasmissione del messaggio, la sessione SMTP utilizzata non è chiusa sistematicamente. Se un messaggio è pronto per essere inviato per lo stesso dominio, la stessa sessione SMTP verrà riutilizzata, e questo è il motivo per cui la sessione non viene chiusa automaticamente. Il parametro IdleSessionTimeout consente di definire il tempo durante il quale una sessione SMTP può rimanere attiva in attesa di un altro messaggio. Quando la durata è trascorsa, la sessione viene chiusa automaticamente.<br /> </td> 
+   <td> Timeout della sessione di inattività. Questo parametro viene utilizzato solo se la sessione viene riutilizzata per trasmettere diversi messaggi a un determinato dominio. Quando l’MTA ha completato la trasmissione del messaggio, la sessione SMTP utilizzata non viene chiusa sistematicamente. Se un messaggio è pronto per essere inviato per lo stesso dominio, verrà riutilizzata la stessa sessione SMTP, e questo è il motivo per cui la sessione non viene chiusa automaticamente. Il parametro IdleSessionTimeout consente di definire il tempo durante il quale una sessione SMTP può rimanere attiva in attesa di un altro messaggio. Una volta trascorsa la durata, la sessione viene automaticamente chiusa.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
   <tr> 
    <td> initialDelaySec<br /> </td> 
-   <td> Ritardo iniziale prima di un nuovo tentativo di connessione. Questo ritardo viene raddoppiato ogni volta che la connessione non riesce.<br /> </td> 
+   <td> Ritardo iniziale prima di ritentare la connessione. Questo ritardo viene raddoppiato ogni volta che la connessione non riesce.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 4<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSessionsPerChild<br /> </td> 
-   <td> Numero massimo di sessioni SMTP da parte del server secondario. Per inviare un messaggio, l’MTA inizializza una connessione SMTP con l’MTA del destinatario. Questo valore limita il numero massimo di sessioni SMTP simultanee e attive per un determinato server secondario. Se si moltiplica questo valore per maxSpareServers, si ottiene il numero massimo di messaggi che possono essere elaborati in simultanea per un dato server secondario.<br /> </td> 
+   <td> Numero massimo di sessioni SMTP da parte del server secondario. Per inviare un messaggio, l’MTA inizializza una connessione SMTP con l’MTA del destinatario. Questo valore limita il numero massimo di sessioni SMTP simultanee e attive per un determinato server secondario. Se si moltiplica questo valore per maxSpareServers, si ottiene il numero massimo di messaggi che possono essere elaborati contemporaneamente da un determinato server secondario.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
@@ -1936,7 +1936,7 @@ Per ulteriori informazioni, consulta [Elenco di indirizzi IP da utilizzare](../.
    <td> Stringa<br /> </td> 
   </tr> 
   <tr> 
-   <td> name<br /> </td> 
+   <td> nome<br /> </td> 
    <td> Nome logico: nomi collegati all’affinità dagli utenti. I nomi sono separati da un punto e virgola;<br /> </td> 
    <td> Stringa<br /> </td> 
   </tr> 
@@ -1963,27 +1963,27 @@ Per ulteriori informazioni, consulta [Elenco di indirizzi IP da utilizzare](../.
   </tr> 
   <tr> 
    <td> publicId<br /> </td> 
-   <td> ID indirizzo pubblico associato. Utilizzato come chiave per il server di statistiche. Deve essere numerico. Consulta questa <a href="../../installation/using/email-deliverability.md#managing-ip-addresses">sezione</a>.<br /> </td> 
+   <td> ID indirizzo pubblico associato. Utilizzato come chiave per il server delle statistiche. Deve essere numerico. Vedi questo <a href="../../installation/using/email-deliverability.md#managing-ip-addresses">sezione</a>.<br /> </td> 
    <td> Lungo<br /> </td> 
   </tr> 
   <tr> 
    <td> peso<br /> </td> 
-   <td> Specifica la frequenza di utilizzo per questo indirizzo IP, rispetto ad altri indirizzi IP (i pesi maggiori determinano frequenze più alte).<br /> </td> 
+   <td> Specifica la frequenza di utilizzo per questo IP, rispetto ad altri IP (i pesi maggiori determinano frequenze più alte).<br /> </td> 
    <td> Lungo<br /> </td> 
   </tr> 
   <tr> 
    <td> includeDomains<br /> </td> 
-   <td> Elenco di maschere di dominio separato da virgole da includere.<br /> </td> 
+   <td> Elenco separato da virgole di maschere di dominio da includere.<br /> </td> 
    <td> Stringa<br /> </td> 
   </tr> 
   <tr> 
    <td> excludeDomains<br /> </td> 
-   <td> Elenco separato da virgole delle maschere di dominio da escludere.<br /> </td> 
+   <td> Elenco separato da virgole di maschere di dominio da escludere.<br /> </td> 
    <td> Stringa<br /> </td> 
   </tr> 
   <tr> 
    <td> heloHost<br /> </td> 
-   <td> Nome del computer collegato all’indirizzo IP. Utilizzato quando si esegue un comando SMTP HELO.<br /> </td> 
+   <td> Nome computer collegato all'indirizzo IP. Utilizzato quando si esegue un comando SMTP HELO.<br /> </td> 
    <td> Stringa<br /> </td> 
   </tr> 
  </tbody> 
@@ -2005,9 +2005,9 @@ Di seguito sono riportati i diversi parametri di **nmac** nodo. Si tratta della 
  <tbody> 
   <tr> 
    <td> useHTTPProxy<br /> </td> 
-   <td> Usa il proxy HTTP definito in shared/proxyHTTP. <br /> </td> 
+   <td> Utilizza il proxy HTTP definito in shared/proxyHTTP. <br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -2063,7 +2063,7 @@ Di seguito sono riportati i diversi parametri di **pipeline** nodo. Si tratta de
  <tbody> 
   <tr> 
    <td> appName<br /> </td> 
-   <td> Nome dell’applicazione generata nella connessione a Developer quando viene salvata la chiave pubblica. <br /> </td> 
+   <td> Nome dell’applicazione generata nella connessione Developer quando viene salvata la chiave pubblica. <br /> </td> 
    <td> Stringa<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2075,7 +2075,7 @@ Di seguito sono riportati i diversi parametri di **pipeline** nodo. Si tratta de
   </tr> 
   <tr> 
    <td> authGatewayEndpoint<br /> </td> 
-   <td> URL per ottenere un token del gateway.<br /> </td> 
+   <td> URL per ottenere un token gateway.<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> 'https://api.omniture.com' <br /> </td> 
   </tr> 
@@ -2089,7 +2089,7 @@ Di seguito sono riportati i diversi parametri di **pipeline** nodo. Si tratta de
    <td> autoStart<br /> </td> 
    <td> Avvio automatico <br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> disableAuth<br /> </td> 
@@ -2141,7 +2141,7 @@ Di seguito sono riportati i diversi parametri di **pipeline** nodo. Si tratta de
   </tr> 
   <tr> 
    <td> pointerFlushMessageCount<br /> </td> 
-   <td> Il puntatore viene memorizzato nel database ogni volta che questo numero di messaggi viene elaborato.<br /> </td> 
+   <td> Il puntatore verrà memorizzato nel database ogni volta che questo numero di messaggi viene elaborato.<br /> </td> 
    <td> <br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
@@ -2165,7 +2165,7 @@ Di seguito sono riportati i diversi parametri di **pipeline** nodo. Si tratta de
   </tr> 
   <tr> 
    <td> processingThreads<br /> </td> 
-   <td> Numero di thread per l’elaborazione dell’evento.<br /> </td> 
+   <td> Numero di thread per l’elaborazione degli eventi.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 4<br /> </td> 
   </tr> 
@@ -2233,55 +2233,55 @@ Per ulteriori informazioni, consulta [Definire le aree di protezione](../../inst
    <td> allowDebug<br /> </td> 
    <td> Autorizza la modalità di debug per le applicazioni web.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> allowEmptyPassword<br /> </td> 
    <td> Autorizza l’utente a utilizzare l’applicazione senza una password.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> allowHTTP<br /> </td> 
    <td> Autorizza l’utilizzo di HTTP per l’accesso dell’operatore.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> allowSQLInjection<br /> </td> 
-   <td> Autorizza l’uso di SQLDATA nelle espressioni.<br /> </td> 
+   <td> Autorizzare l'utilizzo di SQLDATA nelle espressioni.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> allowUserPassword<br /> </td> 
    <td> Autorizza i token della sessione utente/password.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
-   <td> label<br /> </td> 
+   <td> etichetta<br /> </td> 
    <td> Etichetta<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> NewLabel()<br /> </td> 
   </tr> 
   <tr> 
-   <td> name<br /> </td> 
+   <td> nome<br /> </td> 
    <td> Nome interno<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> NewName() <br /> </td> 
   </tr> 
   <tr> 
    <td> sessionTokenOnly<br /> </td> 
-   <td> Non utilizza il token di sicurezza.<br /> </td> 
+   <td> Non utilizzare il token di sicurezza.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> showErrors<br /> </td> 
-   <td> Mostra i dettagli dell’errore<br /> </td> 
+   <td> Visualizza dettagli errore<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -2328,7 +2328,7 @@ Per ulteriori informazioni, consulta [Definire le aree di protezione](../../inst
  </thead> 
  <tbody> 
   <tr> 
-   <td> label<br /> </td> 
+   <td> etichetta<br /> </td> 
    <td> Etichetta<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> NewLabel()<br /> </td> 
@@ -2340,14 +2340,14 @@ Per ulteriori informazioni, consulta [Definire le aree di protezione](../../inst
    <td> <br /> </td> 
   </tr> 
   <tr> 
-   <td> name<br /> </td> 
+   <td> nome<br /> </td> 
    <td> Nome interno<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> NewName() <br /> </td> 
   </tr> 
   <tr> 
    <td> proxy<br /> </td> 
-   <td> Maschera o indirizzo del proxy (inverso) utilizzato da questa sottorete per accedere all’istanza. In questo caso, al posto del proxy verrà testata l’intestazione “X-Forwarded-For”.<br /> </td> 
+   <td> Maschera o indirizzo del proxy (inverso) utilizzato da questa sottorete per accedere all’istanza. In questo caso, al posto del proxy verrà testata l’intestazione "X-Forwarded-For".<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> 127.0.0.1 <br /> </td> 
   </tr> 
@@ -2378,7 +2378,7 @@ Di seguito sono riportati i diversi parametri di **sms** nodo. Si tratta della c
    <td> autoStart<br /> </td> 
    <td> Avvio automatico<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> dataRetentionDays<br /> </td> 
@@ -2502,7 +2502,7 @@ Di seguito sono riportati i diversi parametri di **stat** nodo. Questa è la con
    <td> autoStart<br /> </td> 
    <td> Avvio automatico<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
@@ -2524,7 +2524,7 @@ Di seguito sono riportati i diversi parametri di **stat** nodo. Questa è la con
   </tr> 
   <tr> 
    <td> porta<br /> </td> 
-   <td> Porta di ascolto del server. Consulta questa <a href="../../installation/using/email-deliverability.md#definition-of-the-server-port">sezione</a>.<br /> </td> 
+   <td> Porta di ascolto del server. Vedi questo <a href="../../installation/using/email-deliverability.md#definition-of-the-server-port">sezione</a>.<br /> </td> 
    <td> Breve<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2567,7 +2567,7 @@ Di seguito sono riportati i diversi parametri di **syslogd** nodo. Questa è la 
    <td> autoStart<br /> </td> 
    <td> Avvio automatico<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
@@ -2638,13 +2638,13 @@ Di seguito sono riportati i diversi parametri di **tracciamento** nodo. Configur
    <td> autoStart<br /> </td> 
    <td> Avvio automatico<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> blockRedirectForUnsignedTrackingLink<br /> </td> 
    <td> Disattiva gli URL non validi generati da build precedenti.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> ConsolidationPeriodSec<br /> </td> 
@@ -2769,7 +2769,7 @@ Di seguito sono riportati i diversi parametri di **trackinglogd** nodo. Configur
    <td> autoStart<br /> </td> 
    <td> Avvio automatico<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
@@ -2852,7 +2852,7 @@ Per ulteriori informazioni, consulta questa [sezione](configuring-campaign-serve
  <tbody> 
   <tr> 
    <td> Opzioni JVMO<br /> </td> 
-   <td> Opzioni di JVM trasferite come stringa.<br /> </td> 
+   <td> Opzioni della JVM passata come stringa.<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2878,7 +2878,7 @@ Per ulteriori informazioni, consulta questa [sezione](configuring-campaign-serve
    <td> autoStart<br /> </td> 
    <td> Avvio automatico<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> controlPort<br /> </td> 
@@ -2936,9 +2936,9 @@ Per ulteriori informazioni, consulta questa [sezione](configuring-campaign-serve
   </tr> 
   <tr> 
    <td> startSoapRouterInModule<br /> </td> 
-   <td> Avvia il router SOAP in modalità modulo.<br /> </td> 
+   <td> Avviare il router SOAP in modalità modulo.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -3038,9 +3038,9 @@ Di seguito sono riportati i diversi parametri di **web > jssp** nodo. Si tratta 
  <tbody> 
   <tr> 
    <td> collectsGarbageAfterRequest<br /> </td> 
-   <td> Attiva il garbage collector JavaScript dopo ogni query.<br /> </td> 
+   <td> Abilita il garbage collector del contesto JavaScript dopo ogni query.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> vero<br /> </td> 
+   <td> true<br /> </td> 
   </tr> 
   <tr> 
    <td> timeToLive<br /> </td> 
@@ -3071,9 +3071,9 @@ Per ulteriori informazioni, consulta questa [sezione](../../installation/using/d
  <tbody> 
   <tr> 
    <td> debugRelay<br /> </td> 
-   <td> Avvia il modulo di inoltro HTTP nel server web in modalità debug.<br /> </td> 
+   <td> Avvia il modulo di inoltro HTTP nel server web in modalità di debug.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> forbiddenCharsInAuthority<br /> </td> 
@@ -3097,17 +3097,17 @@ Per ulteriori informazioni, consulta questa [sezione](../../installation/using/d
    <td> startRelay<br /> </td> 
    <td> Avvia il modulo di inoltro HTTP.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> startRelayInModule<br /> </td> 
-   <td> Avvia il modulo inoltro HTTP all’interno del server Web. <br /> </td> 
+   <td> Avvia il modulo di inoltro HTTP all’interno del server web. <br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> vero<br /> </td> 
+   <td> true<br /> </td> 
   </tr> 
   <tr> 
    <td> timeout<br /> </td> 
-   <td> Attendi prima di eliminare l’URL escluso.<br /> </td> 
+   <td> Tempo di attesa prima di eliminare l’URL vietato.<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> '60'<br /> </td> 
   </tr> 
@@ -3148,7 +3148,7 @@ Per ulteriori informazioni, consulta [Sicurezza delle pagine dinamiche e inoltri
   </tr> 
   <tr> 
    <td> httpAllowed<br /> </td> 
-   <td> Accesso HTTP autorizzato indipendentemente dall’area di sicurezza (ad esempio webApps). <br /> </td> 
+   <td> Accesso HTTP autorizzato indipendentemente dall’area di sicurezza (come webApps). <br /> </td> 
    <td> Booleano<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3184,7 +3184,7 @@ Per ulteriori informazioni, consulta [Sicurezza delle pagine dinamiche e inoltri
   </tr> 
   <tr> 
    <td> urlPath<br /> </td> 
-   <td> Maschera degli URL da inoltrare (ad esempio: “/nl*”, “*.jsp”).<br /> </td> 
+   <td> Maschera degli URL da inoltrare (ad esempio: "/nl*", "*.jsp").<br /> </td> 
    <td> Stringa<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3270,7 +3270,7 @@ Per ulteriori informazioni, consulta [Gestione delle intestazioni HTTP](../../in
  </thead> 
  <tbody> 
   <tr> 
-   <td> name<br /> </td> 
+   <td> nome<br /> </td> 
    <td> Nome intestazione<br /> </td> 
    <td> Stringa<br /> </td> 
   </tr> 
@@ -3318,7 +3318,7 @@ Per ulteriori informazioni, consulta questa [sezione](../../installation/using/d
   </tr> 
   <tr> 
    <td> cookieDomain<br /> </td> 
-   <td> Elenco di domini separati da virgole da configurare per indicare esplicitamente il dominio per impostare i cookie. <br /> </td> 
+   <td> Elenco separato da virgole di domini da configurare per indicare esplicitamente al dominio di impostare i cookie. <br /> </td> 
    <td> Stringa<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3350,25 +3350,25 @@ Per ulteriori informazioni, consulta questa [sezione](../../installation/using/d
    <td> showSourceIP<br /> </td> 
    <td> Se impostato su false, il valore di sourceIP nella risposta restituita da r/test è una stringa vuota. <br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> vero<br /> </td> 
+   <td> true<br /> </td> 
   </tr> 
   <tr> 
    <td> startRedirection<br /> </td> 
    <td> Avvia il servizio di reindirizzamento.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> vero<br /> </td> 
+   <td> true<br /> </td> 
   </tr> 
   <tr> 
    <td> startRedirectionInModule<br /> </td> 
    <td> Avvia il servizio di reindirizzamento in modalità modulo.<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> vero<br /> </td> 
+   <td> true<br /> </td> 
   </tr> 
   <tr> 
    <td> trackWebVisitors<br /> </td> 
    <td> Tracciamento web: creazione di registri per le pagine visitate da utenti sconosciuti. <br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> trackingPassword<br /> </td> 
@@ -3469,7 +3469,7 @@ Per ulteriori informazioni, consulta [Flussi di lavoro e affinità ad alta dispo
    <td> autoStart<br /> </td> 
    <td> Avvio automatico<br /> </td> 
    <td> Booleano<br /> </td> 
-   <td> falso<br /> </td> 
+   <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> dataBasePoolPeriodSec<br /> </td> 

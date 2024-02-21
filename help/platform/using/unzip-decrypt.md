@@ -9,17 +9,17 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: a2106e55617209f28da42c50008d16188563b2da
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 11%
+source-wordcount: '702'
+ht-degree: 9%
 
 ---
 
 
 # Decomprimere o decrittografare un file {#unzipping-or-decrypting-a-file-before-processing}
 
-Adobe Campaign consente di importare file compressi o crittografati. Prima di poter essere letti in un [Caricamento dati (file)](../../workflow/using/data-loading--file-.md) attività, puoi definire una pre-elaborazione per decomprimere o decrittografare il file.
+Adobe Campaign consente di importare file compressi o crittografati. Prima di poter essere letti in un [Caricamento dati (file)](../../workflow/using/data-loading-file.md) attività, puoi definire una pre-elaborazione per decomprimere o decrittografare il file.
 
 >[!IMPORTANT]
 >
@@ -52,14 +52,14 @@ Un esempio è presentato nel caso d’uso seguente.
 
 **Argomenti correlati:**
 
-* [Attività di caricamento dati (file)](../../workflow/using/data-loading--file-.md).
+* [Attività di caricamento dati (file)](../../workflow/using/data-loading-file.md).
 * [Comprimere o crittografare un file](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
 
 ## Caso d’uso: importare dati crittografati utilizzando una chiave generata dal Pannello di controllo Campaign {#use-case-gpg-decrypt}
 
 In questo caso d’uso, creeremo un flusso di lavoro per importare dati che sono stati crittografati in un sistema esterno, utilizzando una chiave generata nel Pannello di controllo Campaign.
 
-![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#video)
+![](assets/do-not-localize/how-to-video.png) [Guarda il video su questa funzione](#video)
 
 I passaggi per eseguire questo caso d’uso sono i seguenti:
 
@@ -85,7 +85,7 @@ I passaggi per eseguire questo caso d’uso sono i seguenti:
 
    I concetti globali su come configurare l’attività sono disponibili in [questa sezione](../../workflow/using/file-transfer.md).
 
-1. Apri **[!UICONTROL Data loading (file)]** e configurarlo in base alle tue esigenze. I concetti globali su come configurare l’attività sono disponibili in [questa sezione](../../workflow/using/data-loading--file-.md).
+1. Apri **[!UICONTROL Data loading (file)]** e configurarlo in base alle tue esigenze. I concetti globali su come configurare l’attività sono disponibili in [questa sezione](../../workflow/using/data-loading-file.md).
 
    Aggiungi una fase di pre-elaborazione all’attività per decrittografare i dati in arrivo. A questo scopo, seleziona la **[!UICONTROL Pre-process the file]** , quindi copia e incolla questo comando di decrittografia nel **[!UICONTROL Command]** campo:
 

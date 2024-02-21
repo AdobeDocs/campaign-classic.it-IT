@@ -1,0 +1,226 @@
+---
+product: campaign
+title: "Casi d’uso: creare panoramiche"
+description: "Casi d’uso: creare panoramiche"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+feature: Web Apps
+exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+workflow-type: tm+mt
+source-wordcount: '960'
+ht-degree: 0%
+
+---
+
+# Casi di utilizzo: creare pagine di panoramica{#use-cases-creating-overviews}
+
+
+
+Nell&#39;esempio seguente verranno create applicazioni Web di tipo panoramica per visualizzare tutte le applicazioni Web del database. Configura i seguenti elementi:
+
+* un filtro sulla cartella (fare riferimento a [Aggiunta di un filtro a una cartella](#adding-a-filter-on-a-folder)),
+* un pulsante per la creazione di una nuova applicazione Web (fare riferimento a [Aggiunta di un pulsante per configurare una nuova applicazione Web](#adding-a-button-to-configure-a-new-web-application)),
+* visualizzazione dei dettagli per ogni voce dell&#39;elenco (fare riferimento a [Aggiunta di dettagli a un elenco](#adding-detail-to-a-list)),
+* un filtro per strumento di modifica dei collegamenti (fare riferimento a [Creazione di un filtro tramite un editor di collegamenti](#creating-a-filter-using-a-link-editor)),
+* un collegamento di aggiornamento (fare riferimento a [Creazione di un collegamento di aggiornamento](#creating-a-refresh-link)).
+
+![](assets/s_ncs_configuration_webapp_overview.png)
+
+## Creazione di un&#39;applicazione Web a pagina singola {#creating-a-single-page-web-application}
+
+1. Crea un singolo **[!UICONTROL Page]** Applicazione Web e disattivare le transizioni in uscita e le transizioni alla pagina successiva.
+
+   ![](assets/s_ncs_configuration_webapp_create.png)
+
+1. Modifica del titolo della pagina.
+
+   Questo titolo verrà visualizzato nell’intestazione della panoramica e nella panoramica dell’applicazione web.
+
+1. Nelle proprietà dell’applicazione web, modifica il rendering dell’applicazione selezionando la **[!UICONTROL Single-page Web application]** modello.
+
+   ![](assets/s_ncs_configuration_webapp_rendering.png)
+
+1. Apri **[!UICONTROL Page]** dell&#39;applicazione Web e aprire un elenco (**[!UICONTROL Static element > List]**).
+1. In **[!UICONTROL Data]** dell’elenco, seleziona il tipo di **[!UICONTROL Web applications]** documento e **[!UICONTROL Label]** , **[!UICONTROL Creation date]** e **[!UICONTROL Type of application]** colonne di output.
+1. In **[!UICONTROL Filter]** sotto-scheda, crea il seguente filtro come mostrato di seguito per visualizzare solo le applicazioni Web ed escludere i modelli dalla vista.
+
+   ![](assets/s_ncs_configuration_webapp_filter.png)
+
+1. Chiudi la finestra di configurazione della pagina e fai clic su **[!UICONTROL Preview]**.
+
+   Viene visualizzato l&#39;elenco delle applicazioni Web disponibili nel database.
+
+   ![](assets/s_ncs_configuration_webapp_preview.png)
+
+## Aggiunta di un filtro a una cartella {#adding-a-filter-on-a-folder}
+
+In una panoramica, puoi scegliere di accedere ai dati a seconda della loro posizione nella struttura Adobe Campaign. Questo è un filtro su una cartella. Applica il seguente processo per aggiungerlo alla panoramica.
+
+1. Posizionare il cursore sul **[!UICONTROL Page]** dell&#39;applicazione Web e aggiungere un **[!UICONTROL Select folder]** elemento (**[!UICONTROL Advanced controls > Select folder]**).
+1. In **[!UICONTROL Storage]** che viene visualizzata, fare clic sul pulsante **[!UICONTROL Edit variables]** collegamento.
+1. Modifica l’etichetta della variabile in base alle tue esigenze.
+1. Modifica il nome della variabile con **cartella** valore.
+
+   >[!NOTE]
+   >
+   >Il nome della variabile deve corrispondere al nome dell’elemento collegato alla cartella (definito nello schema), ovvero **cartella** in questo caso. È necessario riutilizzare questo nome quando si fa riferimento alla tabella.
+
+1. Applica **[!UICONTROL XML]** digita nella variabile.
+
+   ![](assets/s_ncs_configuration_webapp_variable_xml.png)
+
+1. Seleziona la **[!UICONTROL Refresh page]** interazione.
+
+   ![](assets/s_ncs_configuration_webapp_variable.png)
+
+1. Posizionare il cursore sull&#39;elenco e nella **[!UICONTROL Advanced]** , fare riferimento alla variabile creata in precedenza nella **[!UICONTROL Folder filter XPath]** dell&#39;elenco. È necessario utilizzare il nome dell’elemento interessato dal collegamento alla cartella, ad esempio **cartella**.
+
+   ![](assets/s_ncs_configuration_webapp_variable002.png)
+
+   >[!NOTE]
+   >
+   >In questa fase, l’applicazione web non rientra nel suo contesto applicativo, pertanto il filtro non può essere testato sulla cartella.
+
+## Aggiunta di un pulsante per configurare una nuova applicazione Web {#adding-a-button-to-configure-a-new-web-application}
+
+1. Posizionare il cursore sul **[!UICONTROL Page]** e aggiungere un collegamento (**[!UICONTROL Static elements > Link]**).
+1. Modifica l’etichetta del collegamento poiché verrà visualizzata sul pulsante nella panoramica.
+
+   Nel nostro esempio, l’etichetta è **Nuovo**.
+
+1. Inserisci il seguente URL nel campo URL: **xtk://open/?schema=nms:webApp&amp;form=nms:newWebApp**.
+
+   >[!NOTE]
+   >
+   >**nms:webApp** coincide con lo schema dell&#39;applicazione Web.
+   >
+   >**nms:newWebApp** coincide con la creazione guidata nuova applicazione Web.
+
+1. Scegli di visualizzare l’URL nella stessa finestra.
+1. Aggiungi l’icona dell’applicazione web nel campo immagine: **/nms/img/webApp.png**.
+
+   Questa icona verrà visualizzata sul **[!UICONTROL New]** pulsante.
+
+1. Invio **pulsante** nel **[!UICONTROL Style]** campo.
+
+   Questo stile è indicato nel **[!UICONTROL Single-page Web application]** modello selezionato in precedenza.
+
+   ![](assets/s_ncs_configuration_webapp_link.png)
+
+## Aggiunta di dettagli a un elenco {#adding-detail-to-a-list}
+
+Quando configuri un elenco nella panoramica, puoi scegliere di visualizzare ulteriori dettagli per ogni voce dell’elenco.
+
+1. Posizionare il cursore sull&#39;elemento elenco creato in precedenza.
+1. In **[!UICONTROL General]** , seleziona la scheda **[!UICONTROL Columns and additional detail]** nell’elenco a discesa.
+
+   ![](assets/s_ncs_configuration_webapp_detail.png)
+
+1. In **[!UICONTROL Data]** , aggiungi **[!UICONTROL Primary key]** , **[!UICONTROL Internal name]** e **[!UICONTROL Description]** e seleziona la **[!UICONTROL Hidden field]** per ciascuna opzione.
+
+   ![](assets/s_ncs_configuration_webapp_detail002.png)
+
+   In questo modo, queste informazioni saranno visibili solo nei dettagli di ciascuna voce.
+
+1. In **[!UICONTROL Additional detail]** , aggiungi il seguente codice:
+
+   ```
+   <div class="detailBox">
+     <div class="actionBox">
+       <span class="action"><img src="/xtk/img/fileEdit.png"/><a title="Open" class="linkAction" href="xtk://open/?schema=nms:webApp&form=nms:webApp&pk=
+       <%=webApp.id%>">Open...</a></span>
+       <% 
+       if( webApp.@appType == 1 ) { //survey
+       %>
+       <span class="action"><img src="/xtk/img/report.png"/><a target="_blank" title="Reports" class="linkAction" href="/xtk/report.jssp?_context=selection&
+         _schema=nms:webApp&_selection=<%=webApp.@id%>
+         &__sessiontoken=<%=document.controller.getSessionToken()%>">Reports</a></span>
+       <% 
+       } 
+       %>
+     </div>
+     <div>
+       Internal name: <%= webApp.@internalName %>
+     </div>
+     <%
+     if( webApp.desc != "" )
+     {
+     %>
+     <div>
+       Description: <%= webApp.desc %>
+     </div>
+     <% 
+     } 
+     %>
+   </div>
+   ```
+
+>[!NOTE]
+>
+>L&#39;aggiornamento delle librerie JavaScript sul server richiede cinque minuti. È possibile riavviare il server per evitare di attendere questo ritardo.
+
+## Filtraggio e aggiornamento dell’elenco {#filtering-and-updating-the-list}
+
+In questa sezione verrà creato un filtro per visualizzare la panoramica delle applicazioni Web create da un operatore specifico. Questo filtro viene creato con un editor di collegamenti. Dopo aver selezionato un operatore, aggiorna l’elenco per applicare il filtro; è necessario creare un collegamento di aggiornamento.
+
+Questi due elementi saranno raggruppati nello stesso contenitore per essere raggruppati graficamente nella panoramica.
+
+1. Posizionare il cursore sul **[!UICONTROL Page]** e seleziona **[!UICONTROL Container > Standard]**.
+1. Imposta il numero di colonne su **2**, in modo che l’editor dei collegamenti e il collegamento siano adiacenti.
+
+   ![](assets/s_ncs_configuration_webapp_container.png)
+
+   Per informazioni sul layout degli elementi, consulta [questa sezione](about-web-forms.md).
+
+1. Applica **dottedFilter**.
+
+   Questo stile è indicato nel **[!UICONTROL Single-page Web application]** modello selezionato in precedenza.
+
+   ![](assets/s_ncs_configuration_webapp_container002.png)
+
+### Creazione di un filtro tramite un editor di collegamenti {#creating-a-filter-using-a-link-editor}
+
+1. Posiziona il cursore sul contenitore creato durante la fase precedente e inserisci un editor di collegamenti tramite **[!UICONTROL Advanced controls]** menu.
+1. Nella finestra di memorizzazione che si apre automaticamente, selezionare **[!UICONTROL Variables]** , quindi fare clic sul pulsante **[!UICONTROL Edit variables]** e creare una variabile XML per filtrare i dati.
+
+   ![](assets/s_ncs_configuration_webapp_variable003.png)
+
+1. Modifica l’etichetta.
+
+   Verrà visualizzato accanto al **[!UICONTROL Filter]** nella panoramica.
+
+1. Scegliere la tabella Operatore come schema dell&#39;applicazione.
+
+   ![](assets/s_ncs_configuration_webapp_linkeditor.png)
+
+1. Posizionare il cursore sull&#39;elemento elenco e creare un filtro tramite **[!UICONTROL Data > Filter]** scheda:
+
+   * **Espressione:** Chiave esterna del collegamento &#39;Creato da&#39;
+   * **Operatore:** è uguale a
+   * **Valore:** Variabili (variabili)
+   * **Preso in considerazione se:** &#39;$(var2/@id)&#39;!=&#39;&#39;
+
+   ![](assets/s_ncs_configuration_webapp_filter002.png)
+
+>[!CAUTION]
+>
+>L&#39;utente dell&#39;applicazione Web deve essere un operatore identificato con i diritti Adobe Campaign appropriati per accedere alle informazioni. Questo tipo di configurazione non funzionerà per le applicazioni Web anonime.
+
+### Creazione di un collegamento di aggiornamento {#creating-a-refresh-link}
+
+1. Posizionare il cursore sul contenitore e inserire un **[!UICONTROL Link]** tramite **[!UICONTROL Static elements]** menu.
+1. Modifica l’etichetta.
+1. Seleziona **[!UICONTROL Refresh data in a list]**.
+1. Aggiungi l’elenco creato in precedenza.
+
+   ![](assets/s_ncs_configuration_webapp_refreshlink.png)
+
+1. Aggiungi l’icona di aggiornamento sulla **[!UICONTROL Image]** campo: **/xtk/img/refresh.png**.
+1. Utilizzando le frecce di ordinamento, riorganizzare i vari elementi dell&#39;applicazione Web come illustrato di seguito.
+
+   ![](assets/s_ncs_configuration_webapp_orderelements.png)
+
+L&#39;applicazione Web è ora configurata. Puoi fare clic su **[!UICONTROL Preview]** per visualizzarla in anteprima.
+
+![](assets/s_ncs_configuration_webapp_result.png)

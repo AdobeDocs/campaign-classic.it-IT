@@ -7,9 +7,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaig
 audience: integrations
 content-type: reference
 exl-id: 8d1404c5-030b-47fe-a4c3-e72f15f09bbb
-source-git-commit: d15592aaccf036fc956049e611139ea5a46e9fc0
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '477'
 ht-degree: 5%
 
 ---
@@ -32,7 +32,7 @@ Per esportare i dati da Campaign Classic nel percorso di archiviazione S3 o BLOB
 
 A questo scopo, aggiungi e configura:
 
-* Un **[!UICONTROL Data extraction (file)]** per estrarre i dati di destinazione in un file CSV. Per ulteriori informazioni su come configurare questa attività, consulta [questa sezione](../../workflow/using/extraction--file-.md).
+* Un **[!UICONTROL Data extraction (file)]** per estrarre i dati di destinazione in un file CSV. Per ulteriori informazioni su come configurare questa attività, consulta [questa sezione](../../workflow/using/extraction-file.md).
 
   ![](assets/rtcdp-extract-file.png)
 

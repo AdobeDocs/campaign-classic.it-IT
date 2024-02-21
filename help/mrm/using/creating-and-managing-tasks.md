@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Creazione e gestione di attività
-description: Creazione e gestione di attività
+title: Creazione e gestione delle attività
+description: Creazione e gestione delle attività
 feature: Resource Management
 badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '3736'
-ht-degree: 1%
+source-wordcount: '3750'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 
 
-Adobe Campaign consente di creare attività e gestirne il ciclo di vita completo direttamente dall’interno dell’applicazione. L’implementazione del programma e della campagna può essere suddivisa in attività assegnate ad operatori Adobe Campaign o a fornitori di servizi esterni. Questa modalità operativa consente di creare un ambiente di collaborazione aperto che includa tutti i partecipanti al programma e i partecipanti esterni.
+Adobe Campaign consente di creare attività e gestirne il ciclo di vita completo direttamente all’interno dell’applicazione. L’implementazione del programma e della campagna può essere suddivisa in attività assegnate ad operatori Adobe Campaign o a fornitori di servizi esterni. Questa modalità operativa consente di creare un ambiente di collaborazione aperto che includa tutti i partecipanti al programma e i partecipanti esterni.
 
 Le attività possono essere create, visualizzate e monitorate dall’elenco delle attività o dal dashboard della campagna. Possono anche essere visualizzate e tracciate nelle pianificazioni del piano di marketing, dei programmi e delle campagne.
 
@@ -195,7 +195,7 @@ Un fornitore di servizi esterno può essere coinvolto nella gestione di un&#39;a
 
 A tale scopo, modificare le proprietà dell&#39;attività e selezionare il provider di servizi interessato. Le categorie di costo associate al fornitore di servizi vengono elencate automaticamente nella sezione centrale della finestra.
 
-Per ulteriori informazioni, consulta [Creazione di un provider di servizi e delle relative categorie di costo](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+Per ulteriori informazioni, consulta [Creazione di un provider di servizi e delle relative categorie di costo](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
 Selezionare le categorie di costo correlate all&#39;esecuzione del task. A tale scopo, selezionare il tipo di costo e, se necessario, aggiungere un importo alla maggiorazione.
 
@@ -320,7 +320,7 @@ La persona che rivede l’attività non è necessaria se è la stessa persona ch
 
 ![](assets/mrm_task_asset_creation.png)
 
-In **[!UICONTROL Marketing resource]** , definisci la risorsa da gestire tramite questa attività. Puoi:
+In **[!UICONTROL Marketing resource]** , definisci la risorsa da gestire tramite questa attività. Puoi eseguire le seguenti azioni:
 
 * Selezionare una risorsa esistente: l’elenco a discesa offre tutte le risorse con lo stato **[!UICONTROL Being edited]**.
 * Creazione di una risorsa: fai clic su **[!UICONTROL Select the link]** , quindi fare clic sul pulsante **[!UICONTROL Create]** icona.

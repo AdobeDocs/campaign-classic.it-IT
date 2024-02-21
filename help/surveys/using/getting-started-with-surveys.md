@@ -2,13 +2,13 @@
 product: campaign
 title: Passaggi chiave per creare un sondaggio
 description: Creare il primo sondaggio con Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Surveys
 exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '942'
 ht-degree: 1%
 
 ---
@@ -53,12 +53,12 @@ Un sondaggio deve contenere **almeno** i tre componenti seguenti: una pagina, un
 
 * Per creare una pagina, seleziona la **[!UICONTROL Page]** nella sezione sinistra dell&#39;editor e depositarlo nella sezione centrale, come illustrato di seguito:
 
-   ![](assets/s_ncs_admin_survey_new_page.png)
+  ![](assets/s_ncs_admin_survey_new_page.png)
 
 * Quindi, seleziona la **[!UICONTROL Storage]** e posizionarlo nella transizione di output della pagina.
 * Infine, seleziona la **[!UICONTROL End]** e posizionarlo alla fine della transizione di output della casella di memorizzazione per ottenere il diagramma seguente:
 
-   ![](assets/s_ncs_admin_survey_end.png)
+  ![](assets/s_ncs_admin_survey_end.png)
 
 ## Passaggio 4: creare il contenuto della pagina {#step-4---creating-the-page-content}
 
@@ -68,51 +68,51 @@ Nell’esempio seguente viene utilizzato un **[!UICONTROL Page (v5 compatibility
 
 * **Aggiungi campi di input**
 
-   Per creare il contenuto della pagina, devi modificarlo: a questo scopo, fai doppio clic sul pulsante **[!UICONTROL Page]** oggetto. Fai clic sulla prima icona nella barra degli strumenti per aprire la procedura guidata di creazione dei campi. Per creare un campo di immissione per il nome utente da memorizzare nel campo corrispondente del profilo del destinatario, seleziona **[!UICONTROL Edit a recipient]**.
+  Per creare il contenuto della pagina, devi modificarlo: a questo scopo, fai doppio clic sul pulsante **[!UICONTROL Page]** oggetto. Fai clic sulla prima icona nella barra degli strumenti per aprire la procedura guidata di creazione dei campi. Per creare un campo di immissione per il nome utente da memorizzare nel campo corrispondente del profilo del destinatario, seleziona **[!UICONTROL Edit a recipient]**.
 
-   ![](assets/s_ncs_admin_survey_add_field_menu.png)
+  ![](assets/s_ncs_admin_survey_add_field_menu.png)
 
-   Fai clic su **[!UICONTROL Next]** per selezionare il campo per l&#39;archiviazione dei dati nel database. In questo caso, il campo &quot;Cognome&quot;.
+  Fai clic su **[!UICONTROL Next]** per selezionare il campo per l&#39;archiviazione dei dati nel database. In questo caso, il campo &quot;Cognome&quot;.
 
-   ![](assets/s_ncs_admin_survey_choose_field.png)
+  ![](assets/s_ncs_admin_survey_choose_field.png)
 
-   Clic **[!UICONTROL Finish]** per confermare la creazione del campo.
+  Clic **[!UICONTROL Finish]** per confermare la creazione del campo.
 
-   Per impostazione predefinita, quando le informazioni vengono memorizzate in un campo già esistente nel database, il campo assume il nome del campo selezionato, ovvero &#39;Cognome&#39; in questo esempio. Puoi modificare questa etichetta come mostrato di seguito:
+  Per impostazione predefinita, quando le informazioni vengono memorizzate in un campo già esistente nel database, il campo assume il nome del campo selezionato, ovvero &#39;Cognome&#39; in questo esempio. Puoi modificare questa etichetta come mostrato di seguito:
 
-   ![](assets/s_ncs_admin_survey_change_label.png)
+  ![](assets/s_ncs_admin_survey_change_label.png)
 
-   Ora crea un campo di immissione per il numero di account utente. Ripetere l&#39;operazione e selezionare &#39;nr. account&#39;. campo.
+  Ora crea un campo di immissione per il numero di account utente. Ripetere l&#39;operazione e selezionare &#39;nr. account&#39;. campo.
 
-   Applica la stessa procedura per aggiungere un campo in modo che l’utente inserisca un indirizzo e-mail.
+  Applica la stessa procedura per aggiungere un campo in modo che l’utente inserisca un indirizzo e-mail.
 
 * **Crea una domanda**
 
-   Per creare una domanda, fare clic con il pulsante destro del mouse sull&#39;ultimo elemento della struttura e selezionare **[!UICONTROL Containers > Question]** , oppure fai clic su **[!UICONTROL Containers]** e seleziona **[!UICONTROL Question]**.
+  Per creare una domanda, fare clic con il pulsante destro del mouse sull&#39;ultimo elemento della struttura e selezionare **[!UICONTROL Containers > Question]** , oppure fai clic su **[!UICONTROL Containers]** e seleziona **[!UICONTROL Question]**.
 
-   ![](assets/s_ncs_admin_survey_add_qu.png)
+  ![](assets/s_ncs_admin_survey_add_qu.png)
 
-   Immettere l&#39;etichetta della domanda e inserire il campo o i campi di risposta come sottosezione della domanda. A questo scopo, quando crei il campo di risposta devi selezionare il nodo collegato alla domanda. Aggiungi un **[!UICONTROL drop-down listx]** utilizzando **[!UICONTROL Selection controls]** o facendo clic con il pulsante destro del mouse, come illustrato di seguito:
+  Immettere l&#39;etichetta della domanda e inserire il campo o i campi di risposta come sottosezione della domanda. A questo scopo, quando crei il campo di risposta devi selezionare il nodo collegato alla domanda. Aggiungi un **[!UICONTROL drop-down listx]** utilizzando **[!UICONTROL Selection controls]** o facendo clic con il pulsante destro del mouse, come illustrato di seguito:
 
-   ![](assets/s_ncs_admin_survey_add_list.png)
+  ![](assets/s_ncs_admin_survey_add_list.png)
 
-   Seleziona uno spazio di archiviazione: seleziona un campo di enumerazione per recuperare automaticamente i valori (in questo caso, il formato e-mail).
+  Seleziona uno spazio di archiviazione: seleziona un campo di enumerazione per recuperare automaticamente i valori (in questo caso, il formato e-mail).
 
-   ![](assets/s_ncs_admin_survey_add_itz_list.png)
+  ![](assets/s_ncs_admin_survey_add_itz_list.png)
 
-   In **[!UICONTROL General]** , fare clic sulla scheda **[!UICONTROL Initialize the list of values from the database]** link (collegamento): l’indice dei valori viene immesso automaticamente.
+  In **[!UICONTROL General]** , fare clic sulla scheda **[!UICONTROL Initialize the list of values from the database]** link (collegamento): l’indice dei valori viene immesso automaticamente.
 
-   ![](assets/s_ncs_admin_survey_add_value.png)
+  ![](assets/s_ncs_admin_survey_add_value.png)
 
-   Clic **[!UICONTROL OK]** per chiudere l’editor e **[!UICONTROL Save]** per salvare le modifiche.
+  Clic **[!UICONTROL OK]** per chiudere l’editor e **[!UICONTROL Save]** per salvare le modifiche.
 
-   >[!NOTE]
-   >
-   >Per ogni campo o domanda, è possibile adattare il layout di pagina in base alle proprie esigenze, grazie alle opzioni disponibili nel **[!UICONTROL Advanced]** scheda. Il layout delle schermate del sondaggio è descritto nel [questa sezione](../../web/using/about-web-forms.md).
+  >[!NOTE]
+  >
+  >Per ogni campo o domanda, è possibile adattare il layout di pagina in base alle proprie esigenze, grazie alle opzioni disponibili nel **[!UICONTROL Advanced]** scheda. Il layout delle schermate del sondaggio è descritto nel [questa sezione](../../web/using/about-web-forms.md).
 
-   Nella schermata di dettaglio, fai clic su **[!UICONTROL Preview]** per visualizzare il rendering del sondaggio appena creato.
+  Nella schermata di dettaglio, fai clic su **[!UICONTROL Preview]** per visualizzare il rendering del sondaggio appena creato.
 
-   ![](assets/s_ncs_admin_survey_preview.png)
+  ![](assets/s_ncs_admin_survey_preview.png)
 
 ## Passaggio 5: memorizzare i dati del sondaggio {#step-5---storing-the-survey-data-}
 
@@ -133,11 +133,11 @@ Affinché gli utenti possano accedere alle pagine HTML, l’applicazione deve es
 * Fai clic su **[!UICONTROL Publish]** si trova sopra il dashboard del sondaggio.
 * Clic **[!UICONTROL Start]** per avviare la pubblicazione e chiudere la procedura guidata.
 
-   ![](assets/s_ncs_admin_survey_start_publ.png)
+  ![](assets/s_ncs_admin_survey_start_publ.png)
 
-   Lo stato del sondaggio cambia in: **Online**.
+  Lo stato del sondaggio cambia in: **Online**.
 
-   ![](assets/survey_published.png)
+  ![](assets/survey_published.png)
 
 ## Passaggio 7: condividere un sondaggio online {#step-7---sharing-your-online-survey}
 
@@ -147,7 +147,7 @@ Una volta che è in produzione, il sondaggio è accessibile sul server e puoi di
 
 Per inviare il sondaggio, puoi inviare un messaggio contenente un collegamento di accesso alla popolazione target oppure, ad esempio, inserire l’URL di accesso al sondaggio in una pagina web.
 
-Puoi quindi monitorare le risposte degli utenti tramite rapporti e registri. Consulta [Tracciamento delle risposte](../../surveys/using/publish--track-and-use-collected-data.md#response-tracking).
+Puoi quindi monitorare le risposte degli utenti tramite rapporti e registri. Consulta [Tracciamento delle risposte](../../surveys/using/publish-track-and-use-collected-data.md#response-tracking).
 
 >[!CAUTION]
 >

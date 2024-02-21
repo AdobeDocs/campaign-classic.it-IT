@@ -2,12 +2,12 @@
 product: campaign
 title: Query
 description: Ulteriori informazioni sull’attività del flusso di lavoro Query
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows, Targeting Activity, Query Editor
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1629'
+source-wordcount: '1638'
 ht-degree: 1%
 
 ---
@@ -74,7 +74,7 @@ Per iniziare, seleziona il tipo di dati da aggiungere:
 ![](assets/wf_add_data_1st_option.png)
 
 * Seleziona **[!UICONTROL Data linked to the filtering dimension]** per selezionare i dati nel database di Adobe Campaign.
-* Seleziona **[!UICONTROL External data]** per aggiungere dati da un database esterno. Questa opzione è disponibile solo se hai acquistato **Federated Data Access** opzione. Per ulteriori informazioni, consulta [Accedere a un database esterno (FDA)](accessing-an-external-database--fda-.md).
+* Seleziona **[!UICONTROL External data]** per aggiungere dati da un database esterno. Questa opzione è disponibile solo se hai acquistato **Federated Data Access** opzione. Per ulteriori informazioni, consulta [Accedere a un database esterno (FDA)](accessing-an-external-database-fda.md).
 * Seleziona la **[!UICONTROL An offer proposition]** opzione per aggiungere un set di colonne che ti consente di memorizzare la proposta migliore generata dal motore di offerta. Questa opzione è disponibile solo se hai acquistato **Interazione** modulo.
 
 Se sulla piattaforma non è installato alcun modulo opzionale, questa fase non viene visualizzata. Si passerà direttamente alla fase successiva.
@@ -94,7 +94,7 @@ Per aggiungere dati dal database di Adobe Campaign:
    * Un campo calcolato in base ai dati ottenuti dalla popolazione target o a un aggregato (numero di acquisti in sospeso nell’ultimo mese, importo medio di una ricevuta, ecc.). Ad esempio, vai a [Seleziona dati](targeting-data.md#selecting-data).
    * Un nuovo campo, creato utilizzando **[!UICONTROL Add]** a destra dell&#39;elenco delle colonne di output.
 
-      Puoi anche aggiungere una raccolta di informazioni, ad esempio un elenco di contratti, le ultime 5 consegne e così via. Le raccolte coincidono con campi che possono avere più valori per lo stesso profilo (relazione 1-N). Per ulteriori informazioni, consulta [Modifica dati aggiuntivi](targeting-data.md#editing-additional-data).
+     Puoi anche aggiungere una raccolta di informazioni, ad esempio un elenco di contratti, le ultime 5 consegne e così via. Le raccolte coincidono con campi che possono avere più valori per lo stesso profilo (relazione 1-N). Per ulteriori informazioni, consulta [Modifica dati aggiuntivi](targeting-data.md#editing-additional-data).
 
 Per aggiungere una raccolta di informazioni collegate a una popolazione target:
 
@@ -107,11 +107,11 @@ Per aggiungere una raccolta di informazioni collegate a una popolazione target:
 
    * Se un singolo elemento della raccolta coincide con le condizioni di filtro per questa raccolta, seleziona **[!UICONTROL Single row]** nel **[!UICONTROL Data collected]** campo.
 
-      >[!IMPORTANT]
-      >
-      >Questa modalità ottimizza la query SQL generata grazie a una giunzione diretta sugli elementi di raccolta.
-      >
-      >Se la condizione iniziale non viene rispettata, il risultato potrebbe essere difettoso (linee mancanti o sovrapposte).
+     >[!IMPORTANT]
+     >
+     >Questa modalità ottimizza la query SQL generata grazie a una giunzione diretta sugli elementi di raccolta.
+     >
+     >Se la condizione iniziale non viene rispettata, il risultato potrebbe essere difettoso (linee mancanti o sovrapposte).
 
    * Se si sceglie di recuperare più righe (**[!UICONTROL Limit the line count]**) puoi specificare il numero di righe da raccogliere.
    * Se le colonne raccolte contengono aggregati, ad esempio il numero di errori dichiarati, la spesa media in un sito e così via. è possibile utilizzare **[!UICONTROL Aggregates]** valore.
@@ -179,24 +179,24 @@ La sezione seguente fornisce le best practice per ottimizzare le query in esecuz
 * Evitare di eseguire outer join. Se possibile, utilizza il record ID zero per ottenere la funzionalità outer join.
 * Utilizza il tipo di dati corretto per i join.
 
-   Assicurati che `where` è dello stesso tipo del campo.
+  Assicurati che `where` è dello stesso tipo del campo.
 
-   Un errore comune è: `iBlacklist='3'` dove `iBlacklist` è un campo numerico e `3` indica un valore di testo.
+  Un errore comune è: `iBlacklist='3'` dove `iBlacklist` è un campo numerico e `3` indica un valore di testo.
 
-   Assicurati di sapere quale sarà il piano di esecuzione della query. Evita scansioni complete delle tabelle, in particolare per query in tempo reale o quasi query in tempo reale in esecuzione ogni minuto.
+  Assicurati di sapere quale sarà il piano di esecuzione della query. Evita scansioni complete delle tabelle, in particolare per query in tempo reale o quasi query in tempo reale in esecuzione ogni minuto.
 
-   Per ulteriori informazioni, a seconda della versione di Campaign in uso, consulta le sezioni seguenti:
+  Per ulteriori informazioni, a seconda della versione di Campaign in uso, consulta le sezioni seguenti:
 
-   ![](assets/do-not-localize/v7.jpeg)[  Documentazione di Campaign v7](../../configuration/using/database-mapping.md)
+  ![](assets/do-not-localize/v7.jpeg)[Documentazione di Campaign v7](../../configuration/using/database-mapping.md)
 
-   ![](assets/do-not-localize/v8.png)[  Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
+  ![](assets/do-not-localize/v8.png)[Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
 
 ### Funzioni {#functions}
 
 * Attenzione a funzioni come `Lower(...)`. Quando si utilizza la funzione Lower, non viene utilizzato Index.
 * Controlla attentamente le query utilizzando l’istruzione &quot;like&quot; o le istruzioni &quot;upper&quot; o &quot;lower&quot;. Applica &quot;Upper&quot; all&#39;input dell&#39;utente, non al campo del database.
 
-   Per ulteriori informazioni sulle funzioni, consulta [questa sezione](../../platform/using/defining-filter-conditions.md#list-of-functions).
+  Per ulteriori informazioni sulle funzioni, consulta [questa sezione](../../platform/using/defining-filter-conditions.md#list-of-functions).
 
 ### Filtrare le dimensioni {#filtering-dimensions}
 
@@ -229,10 +229,10 @@ Per ulteriori informazioni sul filtraggio delle dimensioni, consulta [questa sez
    * Applicazione,
    * Volumi.
 
-   >[!NOTE]
-   >
-   >Una funzione che funziona in un ambiente di sviluppo potrebbe non funzionare in un ambiente di produzione in cui i dati potrebbero essere diversi. Cercare di individuare le principali differenze per anticipare i rischi e preparare soluzioni.
+  >[!NOTE]
+  >
+  >Una funzione che funziona in un ambiente di sviluppo potrebbe non funzionare in un ambiente di produzione in cui i dati potrebbero essere diversi. Cercare di individuare le principali differenze per anticipare i rischi e preparare soluzioni.
 
 * Creare configurazioni corrispondenti ai volumi di destinazione. Volumi di grandi dimensioni richiedono configurazioni specifiche. Una configurazione che ha funzionato per 100.000 destinatari potrebbe non funzionare per 10.000.000 di destinatari.
 
-   Considera come il sistema si ridimensionerà quando andrà in diretta. Solo perché qualcosa funziona su piccola scala non significa che sarà adatto con volumi maggiori. Le prove devono essere eseguite con volumi simili al volume in produzione. È inoltre necessario valutare l’effetto delle modifiche nei volumi (numero di chiamate, dimensioni del database) nelle ore di picco, nei giorni di picco e per tutta la durata del progetto.
+  Considera come il sistema si ridimensionerà quando andrà in diretta. Solo perché qualcosa funziona su piccola scala non significa che sarà adatto con volumi maggiori. Le prove devono essere eseguite con volumi simili al volume in produzione. È inoltre necessario valutare l’effetto delle modifiche nei volumi (numero di chiamate, dimensioni del database) nelle ore di picco, nei giorni di picco e per tutta la durata del progetto.

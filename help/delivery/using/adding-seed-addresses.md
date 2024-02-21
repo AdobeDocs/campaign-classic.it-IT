@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Seed Address
 role: User
 exl-id: ae6eb4b0-b419-4661-9d63-e758f0242a0f
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 5%
@@ -38,7 +38,7 @@ Sono disponibili tre modalità di inserimento:
 
    A questo scopo, fai clic su **[!UICONTROL Edit the dynamic condition...]** , quindi immettere i parametri di selezione dell&#39;indirizzo di seed. Ad esempio, puoi includere tutti gli indirizzi seed contenuti in una cartella specifica o gli indirizzi seed appartenenti a un reparto specifico della tua organizzazione.
 
-   Un esempio è presentato in questa sezione: [Caso d’uso: selezionare gli indirizzi seed in base ai criteri](use-case--selecting-seed-addresses-on-criteria.md).
+   Un esempio è presentato in questa sezione: [Caso d’uso: selezionare gli indirizzi seed in base ai criteri](use-case-selecting-seed-addresses-on-criteria.md).
 
 >[!NOTE]
 >

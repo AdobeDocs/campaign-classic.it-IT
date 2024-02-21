@@ -8,7 +8,7 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: f661e1d1-de2f-4c6a-bbff-e3ffcd1831f0
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '1393'
 ht-degree: 1%
@@ -54,7 +54,7 @@ Puoi specificare una data di disponibilità (indicativa) per la risorsa. Oltre q
 
 ## Lavoro collaborativo sulle risorse {#collaborative-work-on-resources}
 
-Puoi modificare e aggiornare una risorsa di marketing e, se necessario, informarne altri operatori Adobe Campaign. Puoi:
+Puoi modificare e aggiornare una risorsa di marketing e, se necessario, informarne altri operatori Adobe Campaign. Puoi eseguire le seguenti azioni:
 
 * Scarica la risorsa localmente per modificarla.
 * Aggiornare il file sul server e renderlo accessibile ad altri operatori.
@@ -195,7 +195,7 @@ Le risorse di marketing possono essere associate alle consegne tramite i profili
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla gestione delle scorte in Adobe Campaign, consulta [Gestione delle scorte](../../campaign/using/providers--stocks-and-budgets.md#stock-management).
+>Per ulteriori informazioni sulla gestione delle scorte in Adobe Campaign, consulta [Gestione delle scorte](../../campaign/using/providers-stocks-and-budgets.md#stock-management).
 
 Per associare una risorsa marketing a un magazzino, modificare la mappa del magazzino e modificare o creare un magazzino. Aggiungere una linea magazzino e selezionare la risorsa marketing corrispondente.
 

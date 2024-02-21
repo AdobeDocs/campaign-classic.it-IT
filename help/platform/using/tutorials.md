@@ -9,10 +9,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: e612a4e7-f4ef-4db4-afab-5544b73430d3
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 8%
+source-wordcount: '344'
+ht-degree: 2%
 
 ---
 
@@ -34,9 +34,9 @@ Inizia a usare Adobe Campaign consultando le nostre guide intuitive.
 Per ulteriori informazioni su Adobe Campaign, consulta i seguenti casi d’uso ed esempi:
 
 * [Creazione di un filtro per il formato e-mail degli abbonati](../../platform/using/use-case.md#creating-a-filter-on-the-email-format-of-subscribers): scopri come creare un filtro per ordinare le iscrizioni alle newsletter in base al formato e-mail del destinatario.
-* [Creare un modulo di abbonamento con doppio consenso](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in): scopri come inviare una richiesta di conferma dell’abbonamento per creare un doppio consenso per assicurarsi che il destinatario si sia iscritto intenzionalmente.
-* [Creazione di una consegna e-mail](../../web/using/use-case--creating-an-email-delivery.md): scopri come creare una consegna e-mail utilizzando l’Editor di contenuti digitali.
-* [Creazione di panoramiche](../../web/using/use-cases--creating-overviews.md): crea applicazioni Web di tipo panoramica per visualizzare tutte le applicazioni Web del database.
+* [Creare un modulo di abbonamento con doppio consenso](../../web/using/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in): scopri come inviare una richiesta di conferma dell’abbonamento per creare un doppio consenso per assicurarsi che il destinatario si sia iscritto intenzionalmente.
+* [Creazione di una consegna e-mail](../../web/using/use-case-creating-an-email-delivery.md): scopri come creare una consegna e-mail utilizzando l’Editor di contenuti digitali.
+* [Creazione di panoramiche](../../web/using/use-cases-creating-overviews.md): crea applicazioni Web di tipo panoramica per visualizzare tutte le applicazioni Web del database.
 * [Casi di utilizzo del flusso di lavoro](../../workflow/using/about-workflow-use-cases.md): scopri attraverso questi casi d’uso diversi modi di utilizzare i flussi di lavoro.
 
 ## Aiuto e documentazione {#how-to-videos}

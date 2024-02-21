@@ -2,13 +2,13 @@
 product: campaign
 title: Gestire le risposte
 description: Scopri come gestire le risposte ai sondaggi
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Surveys
 exl-id: 0b5dc602-e16f-4bf1-bd8f-352e0bc78996
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '851'
 ht-degree: 1%
 
 ---
@@ -101,7 +101,7 @@ Per ogni modulo è possibile utilizzare le risposte fornite nei campi o nelle et
 
 ### Impostazioni di archiviazione {#storage-settings}
 
-È possibile archiviare le risposte ai sondaggi in formato XML. Questo consente di salvare una copia non elaborata delle risposte raccolte, che può essere utile in caso di standardizzazione eccessiva dei dati in un elenco dettagliato. [Ulteriori informazioni](../../surveys/using/publish--track-and-use-collected-data.md#standardizing-data)
+È possibile archiviare le risposte ai sondaggi in formato XML. Questo consente di salvare una copia non elaborata delle risposte raccolte, che può essere utile in caso di standardizzazione eccessiva dei dati in un elenco dettagliato. [Ulteriori informazioni](../../surveys/using/publish-track-and-use-collected-data.md#standardizing-data)
 
 >[!CAUTION]
 >
@@ -138,7 +138,7 @@ I punteggi possono essere utilizzati nei test o negli script.
 
 * Per utilizzare i punteggi nei test, utilizza **[!UICONTROL Score]** nella formula di calcolo del test, come illustrato di seguito:
 
-   ![](assets/s_ncs_admin_survey_score_in_a_test.png)
+  ![](assets/s_ncs_admin_survey_score_in_a_test.png)
 
 * Puoi utilizzare il punteggio in uno script.
 
@@ -146,18 +146,18 @@ I punteggi possono essere utilizzati nei test o negli script.
 
 * In un sondaggio, la pagina successiva ti consente di assegnare punteggi diversi agli utenti a seconda del valore selezionato nell’elenco a discesa:
 
-   ![](assets/s_ncs_admin_survey_score_exa.png)
+  ![](assets/s_ncs_admin_survey_score_exa.png)
 
 * Puoi combinare questo punteggio con un secondo valore, a seconda dell’opzione selezionata:
 
-   ![](assets/s_ncs_admin_survey_score_exb.png)
+  ![](assets/s_ncs_admin_survey_score_exb.png)
 
 * Quando l’utente fa clic su **[!UICONTROL Next]** , i due valori vengono sommati.
 
-   ![](assets/s_ncs_admin_survey_score_exe.png)
+  ![](assets/s_ncs_admin_survey_score_exe.png)
 
 * È possibile applicare le condizioni per la visualizzazione della pagina in base al punteggio. Questa configurazione è configurata come segue:
 
-   ![](assets/s_ncs_admin_survey_score_exd.png)
+  ![](assets/s_ncs_admin_survey_score_exd.png)
 
-   ![](assets/s_ncs_admin_survey_score_exg.png)
+  ![](assets/s_ncs_admin_survey_score_exg.png)

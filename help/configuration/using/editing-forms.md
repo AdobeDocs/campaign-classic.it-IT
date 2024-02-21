@@ -7,7 +7,7 @@ role: Data Engineer, Developer
 badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '1710'
 ht-degree: 2%
@@ -54,7 +54,7 @@ Per visualizzare l&#39;anteprima di un modulo, fare clic su **[!UICONTROL Previe
 
 * Gestione dei contenuti
 
-  Utilizza questo tipo di modulo per la gestione dei contenuti. Vedi questo [caso d’uso](../../delivery/using/use-case--creating-content-management.md).
+  Utilizza questo tipo di modulo per la gestione dei contenuti. Vedi questo [caso d’uso](../../delivery/using/use-case-creating-content-management.md).
 
   ![](../../delivery/using/assets/d_ncs_content_form13.png)
 
@@ -223,7 +223,7 @@ Per creare un modulo, eseguire la procedura seguente:
 
 1. Se il modulo è basato su un tipo di schema specifico, è possibile cercare i campi per questo schema:
 
-   1. Fai clic su **[!UICONTROL Insert]** > **[!UICONTROL Document fields]**.
+   1. Clic **[!UICONTROL Insert]** > **[!UICONTROL Document fields]**.
 
       ![](assets/input-form-create-4.png)
 

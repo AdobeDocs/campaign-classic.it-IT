@@ -2,13 +2,13 @@
 product: campaign
 title: Flusso di lavoro secondario
 description: Ulteriori informazioni sull’attività del flusso di lavoro secondario
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows
 exl-id: bc64ca11-2c50-4896-b6c6-ae42c0315924
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 0%
+source-wordcount: '426'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,7 @@ Il **[!UICONTROL Sub-workflow]** L’attività ti consente di attivare l’esecu
 
 È possibile chiamare più flussi di lavoro secondari in un unico flusso di lavoro. I workflow secondari vengono eseguiti in modo sincrono.
 
-Nell’esempio seguente, un flusso di lavoro primario sta chiamando un flusso di lavoro secondario utilizzando i ponticelli. Per ulteriori informazioni sugli oggetti grafici di tipo Salto, consultate [questa sezione](jump--start-point-and-end-point-.md).
+Nell’esempio seguente, un flusso di lavoro primario sta chiamando un flusso di lavoro secondario utilizzando i ponticelli. Per ulteriori informazioni sugli oggetti grafici di tipo Salto, consultate [questa sezione](jump-start-point-and-end-point.md).
 
 1. Crea un flusso di lavoro da utilizzare come flusso di lavoro secondario in un altro flusso di lavoro.
 1. Inserisci un **[!UICONTROL Jump (end point)]** attività con priorità 1 all’inizio del flusso di lavoro. Se disponi di più salti di tipo &quot;end point&quot;, Adobe Campaign utilizzerà il salto &quot;end point&quot; con il numero più basso.
@@ -54,7 +54,7 @@ Una volta eseguito, il flusso di lavoro chiamato come flusso di lavoro secondari
 * Impossibile visualizzare il conteggio delle popolazioni intermedie.
 * I registri del flusso di lavoro secondario vengono visualizzati nel flusso di lavoro principale.
 
-   ![](assets/subworkflow_logs.png)
+  ![](assets/subworkflow_logs.png)
 
 >[!NOTE]
 >

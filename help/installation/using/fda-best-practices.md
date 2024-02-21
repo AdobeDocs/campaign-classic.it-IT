@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '416'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -35,7 +35,7 @@ In più attività del flusso di lavoro di Adobe Campaign, puoi utilizzare i dati
 
 * **Crea sottoinsiemi** - Il [Dividi](../../workflow/using/split.md) attività ti consente di creare sottoinsiemi. Puoi utilizzare dati esterni per definire i criteri di filtro da utilizzare. Per ulteriori informazioni, consulta [questa pagina](../../workflow/using/split.md).
 
-* **Carica database esterno** - È possibile utilizzare i dati esterni nel [Caricamento dati](../../workflow/using/data-loading--rdbms-.md) (RDBMS). Per ulteriori informazioni, consulta [questa pagina](../../workflow/using/data-loading--rdbms-.md).
+* **Carica database esterno** - È possibile utilizzare i dati esterni nel [Caricamento dati](../../workflow/using/data-loading-rdbms.md) (RDBMS). Per ulteriori informazioni, consulta [questa pagina](../../workflow/using/data-loading-rdbms.md).
 
 * **Aggiunta di informazioni e collegamenti** - Il [Arricchimento](../../workflow/using/enrichment.md) attività consente di aggiungere dati aggiuntivi alla tabella di lavoro del flusso di lavoro e collegamenti a una tabella esterna. In questo contesto, può utilizzare dati provenienti da un database esterno. Per ulteriori informazioni, consulta [questa pagina](../../workflow/using/enrichment.md).
 

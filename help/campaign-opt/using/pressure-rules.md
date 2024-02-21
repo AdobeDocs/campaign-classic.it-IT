@@ -6,10 +6,10 @@ role: User, Data Engineer
 badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Fatigue Management, Typology Rules, Campaigns
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '3274'
-ht-degree: 7%
+source-wordcount: '3343'
+ht-degree: 6%
 
 ---
 
@@ -24,7 +24,7 @@ L’implementazione della gestione della pressione di vendita consente di evitar
 Le campagne vengono selezionate in base a soglie e peso del messaggio definiti.
 
 * Una soglia è il numero più elevato di consegne autorizzate per un determinato destinatario in un determinato periodo. Può essere impostato o variabile. Viene impostata o calcolata nelle impostazioni delle regole di tipologia. Fai riferimento a [Numero massimo di messaggi](#maximum-number-of-messages).
-* Il “peso” delle consegne consente di individuare le consegne prioritarie nel quadro della gestione della pressione. I messaggi con il peso maggiore hanno priorità. Fai riferimento a [Spessore messaggio](#message-weight).
+* Il peso delle consegne consente di individuare le consegne prioritarie nel quadro della gestione della pressione. I messaggi con il peso maggiore hanno la priorità. Fai riferimento a [Spessore messaggio](#message-weight).
 
 L’arbitrato consiste nell’assicurarsi che le campagne pianificate il cui peso è maggiore della campagna in corso non comportino un’eccessiva sollecitazione del profilo: in questo caso, il profilo viene escluso dalla consegna.
 
@@ -113,7 +113,7 @@ Puoi indicizzare il numero di messaggi autorizzati in base al segmento a cui app
 
 ![](assets/campaign_opt_pressure_sample.png)
 
-Per definire la soglia, puoi utilizzare una dimensione collegata alla dimensione di targeting: ad esempio, per includere i messaggi inviati ai profili dei destinatari memorizzati nella tabella visitatori (per ulteriori informazioni sulla tabella visitatori, consulta [questa sezione](../../surveys/using/use-case--creating-a-refer-a-friend-form.md)) o per evitare di inviare più di un messaggio alla settimana alla stessa famiglia (che può fare riferimento a più indirizzi e-mail) identificata in una dimensione collegata a quella dei destinatari.
+Per definire la soglia, puoi utilizzare una dimensione collegata alla dimensione di targeting: ad esempio, per includere i messaggi inviati ai profili dei destinatari memorizzati nella tabella visitatori (per ulteriori informazioni sulla tabella visitatori, consulta [questa sezione](../../surveys/using/use-case-creating-a-refer-a-friend-form.md)) o per evitare di inviare più di un messaggio alla settimana alla stessa famiglia (che può fare riferimento a più indirizzi e-mail) identificata in una dimensione collegata a quella dei destinatari.
 
 A questo scopo, seleziona la **[!UICONTROL Count messages on a linked dimension]** , quindi seleziona il visitatore o la tabella dei contatti.
 
@@ -369,7 +369,7 @@ Considerando che un’e-mail è già stata inviata ai destinatari interessati in
   <tr> 
    <th> Consegna<br /> </th> 
    <th> Approvazioni<br /> </th> 
-   <th> Peso<br /> </th> 
+   <th> Spessore<br /> </th> 
    <th> Data/ora di estrazione<br /> </th> 
    <th> Data di contatto<br /> </th> 
    <th> Data/ora di inizio della consegna<br /> </th> 
@@ -383,20 +383,20 @@ Considerando che un’e-mail è già stata inviata ai destinatari interessati in
    <td> Consegna 1<br /> </td> 
    <td> Disabilitato<br /> </td> 
    <td> 5<br /> </td> 
-   <td> 3pm<br /> </td> 
+   <td> 15:00<br /> </td> 
    <td> 8:00 (giorno successivo)<br /> </td> 
-   <td> 2pm<br /> </td> 
+   <td> 14:00<br /> </td> 
    <td> Notte<br /> </td> 
-   <td> Esclusi<br /> </td> 
-   <td> Esclusi<br /> </td> 
+   <td> Escluso<br /> </td> 
+   <td> Escluso<br /> </td> 
   </tr> 
   <tr> 
    <td> Consegna 2<br /> </td> 
    <td> Disabilitato<br /> </td> 
    <td> 10<br /> </td> 
-   <td> 4pm<br /> </td> 
+   <td> 16:00<br /> </td> 
    <td> 9 (giorno successivo)<br /> </td> 
-   <td> 2pm<br /> </td> 
+   <td> 14:00<br /> </td> 
    <td> Notte<br /> </td> 
    <td> Inviato<br /> </td> 
    <td> 9 (giorno successivo)<br /> </td> 

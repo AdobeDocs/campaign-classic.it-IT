@@ -9,7 +9,7 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: d4acf99b-cef4-48f7-b4cd-c032ec12592f
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 4%
@@ -34,4 +34,4 @@ Nel caso di un contatto in entrata (call center o sito web), le offerte più ril
 
   ![](assets/s_ncs_configuration_offer_context.png)
 
-* Durante la configurazione delle chiamate SOAP, inserisci **contesto** Elemento XML per fare riferimento alle informazioni di contesto aggiunte nello schema di interazione. Per ulteriori informazioni, fare riferimento a [Integrazione tramite SOAP (lato server)](../../interaction/using/integration-via-soap--server-side-.md).
+* Durante la configurazione delle chiamate SOAP, inserisci **contesto** Elemento XML per fare riferimento alle informazioni di contesto aggiunte nello schema di interazione. Per ulteriori informazioni, fare riferimento a [Integrazione tramite SOAP (lato server)](../../interaction/using/integration-via-soap-server-side.md).
