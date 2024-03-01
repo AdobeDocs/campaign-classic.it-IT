@@ -7,9 +7,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaig
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: da35a3050d838cd8e57bf802dc066e32f22f8273
-workflow-type: ht
-source-wordcount: '2295'
+source-git-commit: 23f2565cc847805cff6df028935f74404cdcff24
+workflow-type: tm+mt
+source-wordcount: '2278'
 ht-degree: 100%
 
 ---
@@ -188,7 +188,7 @@ Ulteriori informazioni sono disponibili nella pagina [Funzioni obsolete e rimoss
 
 ### Altre modifiche  {#release-7-3-2-other}
 
-* I registri web sono stati migliorati: gli avvisi `logonEscalation` vengono ora visualizzati solo per gli utenti con privilegi di amministratore. (NEO-47167)
+<!--* Web logs have been improved: `logonEscalation` warnings are now only displayed for users with admin privileges. (NEO-47167)-->
 * Per evitare errori, il flusso di lavoro **Raccolta dati per il servizio Heatmap** (collectDataHeatMapService) ora viene interrotto per impostazione predefinita. (NEO-33959)
 * Sono stati implementati diversi miglioramenti per ottimizzare l’utilizzo della CPU per il dashboard delle campagne. (NEO-46417)
 * Per evitare arresti anomali, è stato rimosso il metodo JS loadLibraryDebug. (NEO-46968)

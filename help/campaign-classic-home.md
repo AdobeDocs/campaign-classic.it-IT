@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;argomenti principali
 product: campaign
 title: Documentazione del prodotto di Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 6dd2a2343c0204c01dd0fa4910299efa15c29849
+source-git-commit: 23f2565cc847805cff6df028935f74404cdcff24
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 4%
+source-wordcount: '354'
+ht-degree: 11%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 ## Novità
 
-Dai un’occhiata ai miglioramenti più recenti del prodotto e della documentazione di Adobe Campaign Classic v7. Per un elenco completo delle funzioni, dei miglioramenti e delle correzioni, consulta la [Note sulla versione](rn/using/latest-release.md).  Resta aggiornato sulle ultime modifiche apportate alla documentazione di visitando il [pagina aggiornamenti della documentazione](rn/using/documentation-updates.md).
+Dai un’occhiata ai miglioramenti più recenti del prodotto e della documentazione di Adobe Campaign Classic v7. Per un elenco completo delle funzioni, dei miglioramenti e delle correzioni, consulta la [Note sulla versione](rn/using/latest-release.md).  Per essere sempre al corrente delle ultime modifiche apportate all documentazione, visita rgolarmente la [pagina degli aggiornamenti della documentazione](rn/using/documentation-updates.md).
 
 >[!BEGINTABS]
 
@@ -43,7 +43,7 @@ Alcune modifiche importanti al servizio Android Firebase Cloud Messaging (FCM) s
 
 >[!ENDTABS]
 
-## Inizia con le nozioni di base
+## Inizia dalle basi
 
 <table style="table-layout:fixed">
   <tr style="border: 0;">
@@ -106,7 +106,7 @@ Alcune modifiche importanti al servizio Android Firebase Cloud Messaging (FCM) s
     <td>
       <img src="assets/do-not-localize/icon-dev.svg" width="35px">
       <br/>
-      <strong>Risorse per sviluppatori</strong><br/><a href="configuration/using/about-data-model.md">Descrizione del modello dati</a> - <a href="configuration/using/about-schema-reference.md">Struttura dello schema</a> - <a href="configuration/using/editing-forms.md">Struttura dello schema</a> - <a href="configuration/using/about-web-services.md">API</a> - <a href="configuration/using/about-custom-recipient-table.md">Tabella dei destinatari personalizzata</a>
+      <strong>Risorse per sviluppatori</strong><br/><a href="configuration/using/about-data-model.md">Descrizione del modello dati</a> - <a href="configuration/using/about-schema-reference.md">Struttura dello schema</a> - <a href="configuration/using/editing-forms.md">Struttura dello schema</a> - <a href="configuration/using/about-web-services.md">API</a> - <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html&gt;Documentazione di riferimento JSAPI&lt;/a&gt; - &lt;a href=&quot;&quot;&gt;" configuration/using/about-custom-recipient-table.md">Tabella dei destinatari personalizzata</a>
     </td>
   </tr>
 </table>
