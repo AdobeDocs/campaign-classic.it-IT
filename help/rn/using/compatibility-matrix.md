@@ -7,7 +7,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaig
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 915b550c28c8d7dd9c29ce5142a4a835a39019b4
+source-git-commit: 3e771d9a18c083bee8239b95d1d68d63928217c2
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 92%
@@ -68,7 +68,7 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 </tbody>
 </table>
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Se utilizzi RHEL, disabilita SELinux o fai in modo che gli architetti scrivano regole SELinux personalizzate per evitare che il SELinux abilitato causi problemi alle operazioni di Campaign.
 
