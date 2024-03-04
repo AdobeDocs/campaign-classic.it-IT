@@ -5,7 +5,7 @@ description: Gestione delle chiavi negli schemi di dati
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
-source-git-commit: 46220dcfdddb8f6f1e7026cafc503aaeecb7e0fa
+source-git-commit: 4a29c189e1e438bbb90067ece63ced0196c618ec
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 2%
@@ -28,7 +28,6 @@ Una chiave viene dichiarata dall’elemento principale dello schema di dati.
 ```
 
 Una chiave è nota come &quot;chiave primaria&quot; quando è la prima dello schema a essere compilata, o se contiene `internal` attributo impostato su &quot;true&quot;.
-
 
 Le seguenti regole si applicano alle chiavi:
 
