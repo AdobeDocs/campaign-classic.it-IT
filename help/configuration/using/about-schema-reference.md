@@ -1,27 +1,27 @@
 ---
 product: campaign
-title: Informazioni sul riferimento di schema in Adobe Campaign Classic
-description: Scopri come configurare gli schemi di estensione per estendere il modello dati concettuale del database di Adobe Campaign Classic
+title: Introduzione agli schemi in Adobe Campaign
+description: Scopri come utilizzare gli schemi ed estendere il modello dati concettuale del database di Adobe Campaign
 badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: bd1007ffcfa58ee60fdafa424c7827e267845679
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 9%
+source-wordcount: '376'
+ht-degree: 2%
 
 ---
 
-# Informazioni sulla documentazione sugli schemi{#about-schema-reference}
+# Introduzione agli schemi {#about-schema-reference}
+
+## Che cos’è uno schema {#what-is-a-schema}
 
 Questo capitolo descrive come configurare gli schemi di estensione per estendere il modello dati concettuale del database di Adobe Campaign.
 
-Per informazioni sulle tabelle integrate di Campaign e sulla loro interazione, consulta [Modello dati Campaign Classic](https://helpx.adobe.com/it/campaign/kb/acc-datamodel.html).
+Per informazioni sulle tabelle integrate di Campaign e sulla loro interazione, consulta [Modello dati Campaign Classic](about-data-model.md).
 
-La struttura fisica e logica dei dati trasferiti nell’applicazione è descritta in XML. Obbedisce a una grammatica specifica di Adobe Campaign, denominata **schema**.
-
-Uno schema è un documento XML associato a una tabella di database. Definisce la struttura dati e descrive la definizione SQL della tabella:
+In Adobe Campaign, la struttura fisica e logica dei dati trasferiti nell’applicazione è descritta in XML. A **schema** è un documento XML associato a una tabella di database. Definisce la struttura dati e descrive la definizione SQL della tabella:
 
 * Nome della tabella
 * Campi

@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Struttura dello schema
+title: Comprendere la struttura dello schema in Adobe Campaign
 description: Struttura dello schema
 feature: Custom Resources
 role: Data Engineer, Developer
@@ -9,18 +9,22 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: bd1007ffcfa58ee60fdafa424c7827e267845679
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 2%
+source-wordcount: '1496'
+ht-degree: 1%
 
 ---
 
-# Struttura dello schema{#schema-structure}
+# Comprendere la struttura dello schema {#schema-structure}
 
-La struttura di base di un `<srcschema>` è il seguente:
+La struttura di base di uno schema è descritta di seguito.
 
-```
+## Schemi di dati  {#data-schema}
+
+Per un `<srcschema>`, la struttura è la seguente:
+
+```sql
 <srcSchema>
     <enumeration>
         ...          //definition of enumerations
@@ -63,7 +67,7 @@ La struttura di base di un `<srcschema>` è il seguente:
 
 Il documento XML di uno schema dati deve contenere **`<srcschema>`** elemento principale con **nome** e **namespace** attributi per popolare il nome dello schema e il relativo spazio dei nomi.
 
-```
+```sql
 <srcSchema name="schema_name" namespace="namespace">
 ...
 </srcSchema>
@@ -71,7 +75,7 @@ Il documento XML di uno schema dati deve contenere **`<srcschema>`** elemento pr
 
 Per illustrare la struttura di uno schema di dati, utilizziamo i seguenti contenuti XML:
 
-```
+```sql
 <recipient email="John.doe@aol.com" created="2009/03/12" gender="1"> 
   <location city="London"/>
 </recipient>
@@ -79,7 +83,7 @@ Per illustrare la struttura di uno schema di dati, utilizziamo i seguenti conten
 
 Con lo schema di dati corrispondente:
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     <attribute name="email"/>
@@ -102,11 +106,11 @@ Nel nostro esempio, l’elemento principale è rappresentato dalla seguente riga
 <element name="recipient">
 ```
 
-Gli elementi **`<attribute>`** e **`<element>`** che seguono l&#39;elemento principale consentono di definire le posizioni e i nomi degli elementi dati nella struttura XML.
+Il **`<attribute>`** e **`<element>`** Gli elementi che seguono l&#39;elemento principale vengono utilizzati per definire le posizioni e i nomi degli elementi dati nella struttura XML.
 
 Nello schema di esempio, questi sono:
 
-```
+```sql
 <attribute name="email"/>
 <attribute name="created"/>
 <attribute name="gender"/>
@@ -115,13 +119,13 @@ Nello schema di esempio, questi sono:
 </element>
 ```
 
-Devono essere rispettate le seguenti regole:
+Si applicano le seguenti regole:
 
 * Ogni **`<element>`** e **`<attribute>`** devono essere identificati per nome tramite **nome** attributo.
 
   >[!IMPORTANT]
   >
-  >Il nome dell&#39;elemento deve essere conciso, preferibilmente in inglese, e includere solo caratteri autorizzati in conformità alle regole di denominazione XML.
+  >Il nome dell&#39;elemento deve essere conciso, preferibilmente in inglese, e includere solo i caratteri consentiti nelle regole di denominazione XML.
 
 * Solo **`<element>`** Gli elementi possono contenere **`<attribute>`** elementi e **`<element>`** elementi nella struttura XML.
 * Un **`<attribute>`** deve avere un nome univoco all&#39;interno di un **`<element>`**.
@@ -131,7 +135,7 @@ Devono essere rispettate le seguenti regole:
 
 Il tipo di dati viene immesso tramite **tipo** attributo in **`<attribute>`** e **`<element>`** elementi.
 
-Un elenco dettagliato è disponibile nella [`<attribute>` elemento](../../configuration/using/schema/attribute.md) e [`<element>` elemento](../../configuration/using/schema/element.md)).
+Un elenco dettagliato è disponibile nella [`<attribute>` elemento](../../configuration/using/schema/attribute.md) e [`<element>` elemento](../../configuration/using/schema/element.md).
 
 Quando questo attributo non viene popolato, **stringa** è il tipo di dati predefinito a meno che l&#39;elemento non contenga elementi figlio. In caso affermativo, viene utilizzato solo per strutturare gli elementi in modo gerarchico (**`<location>`** nel nostro esempio).
 
@@ -152,11 +156,11 @@ Negli schemi sono supportati i seguenti tipi di dati:
 
   >[!NOTE]
   >
-  >Per contenere un **uuid** nei motori diversi da Microsoft SQL Server, è necessario aggiungere la funzione &quot;newuuid()&quot; e completarla con il relativo valore predefinito.
+  >Per contenere un **uuid** campo in RDBMS diverso da Microsoft SQL Server, `the newuuid()` deve essere aggiunta e completata con il relativo valore predefinito.
 
 Di seguito è riportato uno schema di esempio con i tipi immessi:
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     <attribute name="email" type="string" length="80"/>
@@ -178,92 +182,77 @@ La tabella seguente elenca le mappature per i tipi di dati generati da Adobe Cam
   <tr> 
    <td> <strong>Adobe Campaign</strong><br /> </td> 
    <td> <strong>PosgreSQL</strong><br /> </td> 
-   <td> <strong> Oracle</strong><br /> </td> 
-   <td> <strong>MS SQL</strong><br /> </td> 
+   <td> <strong>Oracle</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> Stringa<br /> </td> 
    <td> VARCHAR(255)<br /> </td> 
    <td> VARCHAR2 (NVARCHAR2 se Unicode)<br /> </td> 
-   <td> VARCHAR (NVARCHAR se unicode)<br /> </td> 
   </tr> 
   <tr> 
    <td> Booleano<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> NUMERO(3)<br /> </td> 
-   <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Byte<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> NUMERO(3)<br /> </td> 
-   <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Breve<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> NUMERO(5)<br /> </td> 
-   <td> SMALLINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Doppio<br /> </td> 
    <td> PRECISIONE DOPPIA<br /> </td> 
-   <td> MOBILE<br /> </td> 
    <td> MOBILE<br /> </td> 
   </tr> 
   <tr> 
    <td> Lungo<br /> </td> 
    <td> NUMERO INTERO<br /> </td> 
    <td> NUMERO(10)<br /> </td> 
-   <td> INTERO<br /> </td> 
   </tr> 
   <tr> 
-   <td> Int64<br /> </td> 
+   <td> Intero64<br /> </td> 
    <td> BIGINT<br /> </td> 
    <td> NUMERO(20)<br /> </td> 
-   <td> BIGINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Data<br /> </td> 
    <td> DATA<br /> </td> 
    <td> DATA<br /> </td> 
-   <td> DATETIME<br /> </td> 
   </tr> 
   <tr> 
    <td> Ora<br /> </td> 
-   <td> TEMPO<br /> </td> 
-   <td> MOBILE<br /> </td> 
+   <td> ORA<br /> </td> 
    <td> MOBILE<br /> </td> 
   </tr> 
   <tr> 
-   <td> Data e ora<br /> </td> 
+   <td> Datetime<br /> </td> 
    <td> MARCA TEMPORALE<br /> </td> 
    <td> DATA<br /> </td> 
-   <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIMEOFFSET<br /> </td> 
   </tr> 
   <tr> 
    <td> Datetimenotz<br /> </td> 
    <td> MARCA TEMPORALE<br /> </td> 
    <td> DATA<br /> </td> 
-   <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIME2<br /> </td> 
   </tr> 
   <tr> 
    <td> Intervallo temporale<br /> </td> 
    <td> PRECISIONE DOPPIA<br /> </td> 
-   <td> MOBILE<br /> </td> 
    <td> MOBILE<br /> </td> 
   </tr> 
   <tr> 
    <td> Per memoria<br /> </td> 
    <td> TESTO<br /> </td> 
    <td> CLOB (NCLOB se Unicode)<br /> </td> 
-   <td> TEXT (NTEXT se Unicode)<br /> </td> 
   </tr> 
   <tr> 
    <td> Blob<br /> </td> 
    <td> BLOB<br /> </td> 
    <td> BLOB<br /> </td> 
-   <td> IMMAGINE<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -282,17 +271,17 @@ Il **`<elements>`** e **`<attributes>`** Gli elementi dello schema dati possono 
 
   **Esempio**:
 
-  ```
+  ```sql
   <attribute name="email" type="string" length="80" label="Email"/>
   ```
 
-  L’etichetta può essere vista dal modulo di input della console client di Adobe Campaign:
+  L’etichetta viene visualizzata nel modulo di input della console client di Adobe Campaign:
 
   ![](assets/d_ncs_integration_schema_label.png)
 
 * Il **desc** consente di immettere una descrizione lunga.
 
-  La descrizione può essere visualizzata dal modulo di input nella barra di stato della finestra principale della console client di Adobe Campaign.
+  La descrizione viene visualizzata nel modulo di input nella barra di stato della finestra principale della console client di Adobe Campaign.
 
   >[!NOTE]
   >
@@ -300,13 +289,13 @@ Il **`<elements>`** e **`<attributes>`** Gli elementi dello schema dati possono 
 
   **Esempio**:
 
-  ```
+  ```sql
   <attribute name="email" type="string" length="80" label="Email" desc="Email of recipient"/>
   ```
 
 ### Valori predefiniti {#default-values}
 
-Il **predefinito** consente di definire un’espressione che restituisce un valore predefinito al momento della creazione del contenuto.
+Utilizza il **predefinito** per definire un’espressione che restituisce un valore predefinito durante la creazione del contenuto.
 
 Il valore deve essere un&#39;espressione compatibile con il linguaggio XPath. Per ulteriori informazioni, consulta [Riferimento a XPath](../../configuration/using/schema-structure.md#referencing-with-xpath).
 
@@ -319,9 +308,9 @@ Il valore deve essere un&#39;espressione compatibile con il linguaggio XPath. Pe
 
   >[!NOTE]
   >
-  >Nella console client di Adobe Campaign, il **[!UICONTROL Administration>Counters]** nodo utilizzato per gestire i contatori.
+  >Nella console client di Adobe Campaign, passa a **[!UICONTROL Administration > Counters]** cartella dell&#39;Explorer per la gestione dei contatori.
 
-Per collegare un valore predefinito a un campo, è possibile utilizzare `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
+Per collegare un valore predefinito a un campo, è possibile utilizzare `<default>`  o  `<sqldefault>`   campo.
 
 `<default>` : consente di precompilare il campo con un valore predefinito durante la creazione di entità. Il valore non sarà un valore SQL predefinito.
 
@@ -329,13 +318,13 @@ Per collegare un valore predefinito a un campo, è possibile utilizzare `<defaul
 
 ### Enumerazioni {#enumerations}
 
-#### Enumerazione gratuita {#free-enumeration}
+#### Enumerazione aperta {#free-enumeration}
 
-Il **userEnum** consente di definire un’enumerazione gratuita per memorizzare e visualizzare i valori immessi tramite questo campo. La sintassi è la seguente:
+Il **userEnum** consente di definire un’enumerazione aperta per memorizzare e visualizzare i valori immessi tramite questo campo.
 
-**userEnum=&quot;nome dell’enumerazione&quot;**
+La sintassi è la seguente:
 
-Il nome assegnato all’enumerazione può essere scelto liberamente e condiviso con altri campi.
+`userEnum="name of enumeration"`
 
 Questi valori vengono visualizzati in un elenco a discesa dal modulo di input:
 
@@ -343,7 +332,7 @@ Questi valori vengono visualizzati in un elenco a discesa dal modulo di input:
 
 >[!NOTE]
 >
->Nella console client di Adobe Campaign, il **[!UICONTROL Administration > Enumerations]** nodo utilizzato per gestire le enumerazioni.
+>Nella console client di Adobe Campaign, passa a **[!UICONTROL Administration > Enumerations]** cartella dell&#39;Explorer per gestire le enumerazioni.
 
 #### Imposta enumerazione {#set-enumeration}
 
@@ -357,7 +346,7 @@ Le enumerazioni consentono di selezionare un valore da un elenco a discesa anzic
 
 Esempio di dichiarazione di enumerazione nello schema dati:
 
-```
+```sql
 <enumeration name="gender" basetype="byte" default="0">    
   <value name="unknown" label="Not specified" value="0"/>    
   <value name="male" label="male" value="1"/>   
@@ -369,33 +358,31 @@ Un’enumerazione viene dichiarata all’esterno dell’elemento principale tram
 
 Le proprietà di enumerazione sono le seguenti:
 
-* **baseType**: tipo di dati associati ai valori,
-* **etichetta**: descrizione dell’enumerazione,
-* **nome**: nome dell’enumerazione,
-* **predefinito**: valore predefinito dell’enumerazione.
+* **baseType**: tipo di dati associati ai valori
+* **etichetta**: descrizione dell’enumerazione
+* **nome**: nome dell’enumerazione
+* **predefinito**: valore predefinito dell’enumerazione
 
 I valori di enumerazione sono dichiarati nel **`<value>`** con i seguenti attributi:
 
-* **nome**: nome del valore memorizzato internamente,
-* **etichetta**: etichetta visualizzata tramite l’interfaccia grafica.
+* **nome**: nome del valore memorizzato internamente
+* **etichetta**: etichetta visualizzata nell’interfaccia grafica
 
 #### enumerazione del dbenum {#dbenum-enumeration}
 
-* Il **dbenum** proprietà consente di definire un’enumerazione le cui proprietà sono simili a quelle della proprietà **enum** proprietà.
+*Il **dbenum** proprietà consente di definire un’enumerazione le cui proprietà sono simili a quelle della proprietà **enum** proprietà.
 
-  Tuttavia, il **nome** L’attributo non memorizza il valore internamente, ma memorizza un codice che consente di estendere le tabelle interessate senza modificarne lo schema.
+Tuttavia, il **nome** L’attributo non memorizza il valore internamente, ma memorizza un codice che consente di estendere le tabelle interessate senza modificarne lo schema.
 
-  I valori sono definiti tramite **[!UICONTROL Administration>Enumerations]** nodo.
+Questa enumerazione viene utilizzata per specificare la natura delle campagne, ad esempio.
 
-  Questa enumerazione viene utilizzata per specificare la natura delle campagne, ad esempio.
-
-  ![](assets/d_ncs_configuration_schema_dbenum.png)
+![](assets/d_ncs_configuration_schema_dbenum.png)
 
 ### Esempio {#example}
 
 Di seguito è riportato uno schema di esempio con le proprietà compilate:
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <enumeration name="gender" basetype="byte">    
     <value name="unknown" label="Not specified" value="0"/>    
@@ -422,7 +409,7 @@ Il **non associato** con il valore &quot;true&quot; consente di popolare un elem
 
 **Esempio**: definizione del **`<group>`** elemento di raccolta nello schema.
 
-```
+```sql
 <element name="group" unbound="true" label="List of groups">
   <attribute name="label" type="string" label="Label"/>
 </element>
@@ -430,7 +417,7 @@ Il **non associato** con il valore &quot;true&quot; consente di popolare un elem
 
 Con la proiezione del contenuto XML:
 
-```
+```sql
 <group label="Group1"/>
 <group label="Group2"/>
 ```
@@ -473,8 +460,8 @@ Puoi accedere all’elenco delle funzioni disponibili tramite qualsiasi editor d
 **Esempio**:
 
 * **GetDate()**: restituisce la data corrente
-* **Year(@created)**: restituisce l’anno della data contenuta nell’attributo &quot;created&quot;.
-* **GetEmailDomain(@email)**: restituisce il dominio dell’indirizzo e-mail.
+* **Year(@created)**: restituisce l’anno della data contenuta nell’attributo &quot;created&quot;
+* **GetEmailDomain(@email)**: restituisce il dominio dell’indirizzo e-mail
 
 ## Creazione di una stringa tramite la stringa di calcolo {#building-a-string-via-the-compute-string}
 
@@ -484,7 +471,7 @@ Il **Stringa di calcolo** è definito tramite **`<compute-string>`** nell&#39;el
 
 **Esempio**: stringa di calcolo della tabella dei destinatari.
 
-```
+```sql
 <srcSchema name="recipient" namespace="nms">  
   <element name="recipient">
     <compute-string expr="@lastName + ' ' + @firstName +' (' + @email + ')' "/>
