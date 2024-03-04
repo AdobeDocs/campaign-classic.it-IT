@@ -5,10 +5,10 @@ description: Gestione delle chiavi negli schemi di dati
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
-source-git-commit: f03e72d4ecd17446264adf74603aefca95f99d41
+source-git-commit: 46220dcfdddb8f6f1e7026cafc503aaeecb7e0fa
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 1%
+source-wordcount: '625'
+ht-degree: 2%
 
 ---
 
@@ -180,3 +180,13 @@ Oltre alla definizione della chiave e del relativo indice, allo schema esteso è
 >
 >Un record con una chiave primaria impostata su 0 viene inserito automaticamente al momento della creazione della tabella. Questo record viene utilizzato per evitare outer join che non sono validi per le tabelle dei volumi. Per impostazione predefinita, tutte le chiavi esterne sono inizializzate con il valore 0, in modo che un risultato possa sempre essere restituito sul join quando l&#39;elemento dati non viene popolato.
 
+
+## Ulteriori informazioni
+
+Per ulteriori informazioni, consulta i seguenti collegamenti:
+
+* [Introduzione agli schemi](about-schema-reference.md)
+* [Struttura dello schema](schema-structure.md)
+* [Mappatura del database](database-mapping.md)
+* [Gestione dei collegamenti](database-links.md)
+* [Modello dati di Campaign](about-data-model.md)

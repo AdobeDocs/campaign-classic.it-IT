@@ -9,9 +9,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: bd1007ffcfa58ee60fdafa424c7827e267845679
+source-git-commit: 46220dcfdddb8f6f1e7026cafc503aaeecb7e0fa
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1517'
 ht-degree: 1%
 
 ---
@@ -485,3 +485,14 @@ Risultato della stringa calcolata per un destinatario: **Doe John (john.doe@aol.
 >[!NOTE]
 >
 >Se lo schema non contiene una stringa di calcolo, per impostazione predefinita viene compilata una stringa di calcolo con i valori della chiave primaria dello schema.
+
+
+## Ulteriori informazioni
+
+Per ulteriori informazioni, consulta i seguenti collegamenti:
+
+* [Introduzione agli schemi](about-schema-reference.md)
+* [Mappatura del database](database-mapping.md)
+* [Gestione dei collegamenti](database-links.md)
+* [Gestione delle chiavi](database-keys.md)
+* [Modello dati di Campaign](about-data-model.md)
