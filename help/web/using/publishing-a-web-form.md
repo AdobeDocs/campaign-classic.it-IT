@@ -2,13 +2,13 @@
 product: campaign
 title: Pubblicare un modulo web
 description: Pubblicare un modulo web
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Web Forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 8bb839bd0118010ac8e3e4bde88f6f3972786ed0
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '1287'
 ht-degree: 1%
 
 ---
@@ -25,43 +25,43 @@ Sono possibili i seguenti metodi di identificazione:
 
 * **[!UICONTROL Adobe Campaign Encryption]**
 
-   Questo metodo di crittografia utilizza l’identificatore (ID) crittografato di Adobe Campaign. Questo metodo è applicabile solo a un oggetto Adobe Campaign e l’ID crittografato può essere generato solo dalla piattaforma Adobe Campaign.
+  Questo metodo di crittografia utilizza l’identificatore (ID) crittografato di Adobe Campaign. Questo metodo è applicabile solo a un oggetto Adobe Campaign e l’ID crittografato può essere generato solo dalla piattaforma Adobe Campaign.
 
-   Quando si utilizza questo metodo, è necessario adattare l’URL del modulo da consegnare all’indirizzo e-mail aggiungendo **`<%=escapeUrl(recipient.cryptedId) %>`** parametro. Per ulteriori informazioni, consulta [Consegna di un modulo tramite e-mail](#delivering-a-form-via-email).
+  Quando si utilizza questo metodo, è necessario adattare l’URL del modulo da consegnare all’indirizzo e-mail aggiungendo **`<%=escapeUrl(recipient.cryptedId) %>`** parametro. Per ulteriori informazioni, consulta [Consegna di un modulo tramite e-mail](#delivering-a-form-via-email).
 
 * **[!UICONTROL DES encryption]**
 
-   ![](assets/s_ncs_admin_survey_preload_methods_001.png)
+  ![](assets/s_ncs_admin_survey_preload_methods_001.png)
 
-   Questo metodo di crittografia utilizza un identificatore (ID) fornito esternamente, collegato a una chiave condivisa da Adobe Campaign e dal provider esterno. Il **[!UICONTROL Des key]** consente di immettere questa chiave di crittografia.
+  Questo metodo di crittografia utilizza un identificatore (ID) fornito esternamente, collegato a una chiave condivisa da Adobe Campaign e dal provider esterno. Il **[!UICONTROL Des key]** consente di immettere questa chiave di crittografia.
 
 * **[!UICONTROL List of fields]**
 
-   Questa opzione consente di scegliere tra i campi nel contesto corrente del modulo quelli che verranno utilizzati per trovare il profilo corrispondente nel database.
+  Questa opzione consente di scegliere tra i campi nel contesto corrente del modulo quelli che verranno utilizzati per trovare il profilo corrispondente nel database.
 
-   ![](assets/s_ncs_admin_survey_preload_methods_002.png)
+  ![](assets/s_ncs_admin_survey_preload_methods_002.png)
 
-   I campi possono essere aggiunti alle proprietà del modulo tramite **[!UICONTROL Parameters]** scheda (fare riferimento a [Aggiunta di parametri](defining-web-forms-properties.md#adding-parameters)). Vengono inseriti sotto forma di URL o aree di input.
+  I campi possono essere aggiunti alle proprietà del modulo tramite **[!UICONTROL Parameters]** scheda (fare riferimento a [Aggiunta di parametri](defining-web-forms-properties.md#adding-parameters)). Vengono inseriti sotto forma di URL o aree di input.
 
-   >[!CAUTION]
-   >
-   >I dati nei campi selezionati non sono crittografati. Non deve essere fornito in formato crittografato perché Adobe Campaign non sarà in grado di decrittografarlo se **[!UICONTROL Field list]** è selezionata.
+  >[!CAUTION]
+  >
+  >I dati nei campi selezionati non sono crittografati. Non deve essere fornito in formato crittografato perché Adobe Campaign non sarà in grado di decrittografarlo se **[!UICONTROL Field list]** è selezionata.
 
-   Nell’esempio seguente, il precaricamento del profilo si basa sull’indirizzo e-mail.
+  Nell’esempio seguente, il precaricamento del profilo si basa sull’indirizzo e-mail.
 
-   L’URL può includere l’indirizzo e-mail non crittografato, nel qual caso gli utenti hanno accesso diretto alle pagine che li riguardano.
+  L’URL può includere l’indirizzo e-mail non crittografato, nel qual caso gli utenti hanno accesso diretto alle pagine che li riguardano.
 
-   ![](assets/s_ncs_admin_survey_preload_methods_003.png)
+  ![](assets/s_ncs_admin_survey_preload_methods_003.png)
 
-   In caso contrario, verrà richiesta loro la password.
+  In caso contrario, verrà richiesta loro la password.
 
-   ![](assets/s_ncs_admin_survey_preload_methods_004.png)
+  ![](assets/s_ncs_admin_survey_preload_methods_004.png)
 
-   >[!CAUTION]
-   >
-   >Se nell&#39;elenco sono specificati più campi, i dati di **TUTTI I CAMPI** deve corrispondere ai dati memorizzati nel database per aggiornare il profilo. In caso contrario, viene creato un nuovo profilo.
-   > 
-   >Questa funzione è particolarmente utile per le applicazioni Web, ma non è consigliata per i moduli pubblici. L&#39;opzione di controllo di accesso selezionata deve essere &quot;Abilita controllo di accesso&quot;.
+  >[!CAUTION]
+  >
+  >Se nell&#39;elenco sono specificati più campi, i dati di **TUTTI I CAMPI** deve corrispondere ai dati memorizzati nel database per aggiornare il profilo. In caso contrario, viene creato un nuovo profilo.
+  > 
+  >Questa funzione è particolarmente utile per le applicazioni Web, ma non è consigliata per i moduli pubblici. L&#39;opzione di controllo di accesso selezionata deve essere &quot;Abilita controllo di accesso&quot;.
 
 Il **[!UICONTROL Skip preloading if no ID]** deve essere selezionata se non desideri aggiornare i profili. In questo caso, ogni profilo inserito verrà aggiunto al database dopo l’approvazione del modulo. Questa opzione viene utilizzata, ad esempio, quando il modulo viene pubblicato su un sito Web.
 
@@ -81,7 +81,7 @@ Una volta creato, configurato e pubblicato il modulo, è possibile distribuirlo 
 
 Il ciclo di vita di una forma prevede tre fasi:
 
-1. **Modulo in fase di modifica**
+1. **In fase di modifica**
 
    Questa è la fase di progettazione iniziale. Quando viene creato un nuovo modulo, questo si trova nella fase di modifica. L’accesso al modulo, solo a scopo di test, richiede quindi il parametro **[!UICONTROL __uuid]** da utilizzare nel relativo URL. Questo URL è accessibile nel **[!UICONTROL Preview]** scheda secondaria. Consulta [Parametri URL modulo](defining-web-forms-properties.md#form-url-parameters).
 
@@ -89,21 +89,33 @@ Il ciclo di vita di una forma prevede tre fasi:
    >
    >Durante la modifica del modulo, il relativo URL di accesso è un URL speciale.
 
-1. **Modulo online**
+1. **Pubblicazione in sospeso**
 
-   Una volta completata la fase di progettazione, il modulo può essere consegnato. Innanzitutto, deve essere pubblicato. Per ulteriori informazioni, consulta [Pubblicazione di un modulo](#publishing-a-form).
+   In alcuni casi (ad esempio quando [importazione di un modulo tramite un pacchetto](#import-web-packages)), un modulo web può avere **[!UICONTROL Pending publication]** fino a quando non è attivo.
+
+   >[!NOTE]
+   >
+   >Per applicazioni web di tipo tecnico (disponibili tramite **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Web applications]** ), un modulo con **[!UICONTROL Pending publication]** lo stato viene impostato automaticamente [pubblicato](#publishing-a-form) e ottiene il **[!UICONTROL Online]** stato.
+
+1. **Online**
+
+   Una volta completata la fase di progettazione, il modulo può essere consegnato.
+
+   Quando un modulo presenta **[!UICONTROL Being edited]** o **[!UICONTROL Pending publication]** stato, deve essere [pubblicato](#publishing-a-form) essere online e accessibile tramite l’URL del modulo web in un browser.
+
+   Dopo la pubblicazione, il modulo sarà attivo fino alla scadenza.
 
    Il modulo sarà **[!UICONTROL Live]** fino alla scadenza.
 
    >[!CAUTION]
    >
-   >Per essere consegnato, l’URL del sondaggio non deve contenere **[!UICONTROL __uuid]** parametro.
+   >Per essere consegnato, l’URL del modulo non deve contenere **[!UICONTROL __uuid]** parametro.
 
-1. **Modulo non disponibile**
+1. **Chiuso**
 
    Una volta chiuso il modulo, la fase di consegna è terminata e il modulo diventa non disponibile: non è più accessibile agli utenti.
 
-   La data di scadenza può essere definita nella finestra delle proprietà del modulo. Per ulteriori informazioni, consulta [Come rendere un modulo disponibile online](#making-a-form-available-online)
+   La data di scadenza può essere definita nella finestra delle proprietà del modulo. Per ulteriori informazioni, consulta [Come rendere un modulo disponibile online](#making-a-form-available-online).
 
 Lo stato di pubblicazione di un modulo viene visualizzato nell&#39;elenco dei moduli.
 
@@ -121,11 +133,11 @@ Per essere accessibile agli utenti, il modulo deve essere in produzione e deve e
 
 * Utilizza i campi in **[!UICONTROL Project]** per immettere le date di inizio e fine del modulo.
 
-   ![](assets/webapp_availability_date.png)
+  ![](assets/webapp_availability_date.png)
 
 * Fai clic su **[!UICONTROL Personalize the message displayed if the form is closed...]** collegamento per definire il messaggio di errore da visualizzare se l&#39;utente tenta di accedere al modulo mentre non è valido.
 
-   Consulta [Accessibilità del modulo](defining-web-forms-properties.md#accessibility-of-the-form).
+  Consulta [Accessibilità del modulo](defining-web-forms-properties.md#accessibility-of-the-form).
 
 ### Consegna di un modulo tramite e-mail {#delivering-a-form-via-email}
 
@@ -156,3 +168,35 @@ Seleziona un destinatario e fai clic su **[!UICONTROL Detail...]** per visualizz
 ![](assets/s_ncs_admin_survey_trace_edit.png)
 
 Puoi elaborare i registri di risposta forniti nelle query, ad esempio per eseguire il targeting solo dei non-rispondenti durante l’invio di promemoria o per offrire comunicazioni specifiche solo ai rispondenti.
+
+### Importazione di pacchetti di moduli web {#import-web-packages}
+
+Durante l’esportazione e l’importazione di un pacchetto che include un modulo web da un’istanza a un’altra (ad esempio, dalla fase di produzione), lo stato del modulo web nella nuova istanza può variare in base a diverse condizioni. I diversi casi sono elencati di seguito.
+
+Ulteriori informazioni sui diversi stati di un modulo web in [questa sezione](#life-cycle-of-a-form).
+
+>[!NOTE]
+>
+>Quando si esporta un modulo web tramite un pacchetto, lo stato del modulo è visibile nel contenuto del pacchetto risultante.
+
+* Se lo stato del modulo web era **[!UICONTROL Pending publication]** o **[!UICONTROL Online]** quando si esporta dalla prima istanza:
+
+   * Il modulo web ottiene il **[!UICONTROL Pending publication]** stato quando viene importato nella nuova istanza.
+
+   * Se il modulo web esiste già nella nuova istanza, viene sostituito con la nuova versione del modulo e accetta **[!UICONTROL Pending publication]** anche se la vecchia versione del modulo era **[!UICONTROL Online]**.
+
+   * Indipendentemente dal fatto che il modulo esista o meno, il modulo deve essere [pubblicato](#publishing-a-form) per diventare **[!UICONTROL Online]** nella nuova istanza e accessibile tramite l’URL del modulo web in un browser.
+
+* Se lo stato del modulo web era **[!UICONTROL Being edited]** quando viene esportato:
+
+   * Se il modulo web è nuovo nell’istanza in cui viene importato il pacchetto, il modulo web ottiene il **[!UICONTROL Being edited]** stato.
+
+   * Se il modulo web esiste già nella nuova istanza, si tratta di una modifica apportata a un modulo esistente. Se la vecchia versione del modulo era **[!UICONTROL Online]**, la vecchia versione rimane online fino a quando la nuova versione del modulo non viene [pubblicato](#publishing-a-form) nella nuova istanza.
+
+  >[!NOTE]
+  >
+  >È possibile controllare l&#39;ultima versione del modulo Web utilizzando **[!UICONTROL Preview]** scheda.
+
+<!--For RN:
+* Now, when a web form has the **Pending publication** status, it must be published before it becomes **Online** and accessible through the web form URL in a web browser. [Read more](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
+-->
