@@ -10,9 +10,9 @@ topic-tags: configuration
 hide: true
 hidefromtoc: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '2632'
+source-wordcount: '2607'
 ht-degree: 1%
 
 ---
@@ -118,9 +118,9 @@ nlserver config -internalpassword
 
 * Il tracciamento non funziona più se la password è vuota. In questo caso, viene visualizzato un messaggio di errore che richiede di riconfigurarlo.
 * Le password utente non sono più memorizzate in **xtk:sessionInfo** schema.
-* Le autorizzazioni di amministrazione sono ora necessarie per utilizzare **xtk:builder:Valuta JavaScript** e **xtk:builder:EvaluateJavaScriptTemplate** funzioni.
+* Le autorizzazioni di amministrazione sono ora necessarie per utilizzare **`xtk:builder:EvaluateJavaScript`** e **`xtk:builder:EvaluateJavaScriptTemplate`** funzioni.
 
-Alcuni schemi predefiniti sono stati modificati e ora sono accessibili solo in scrittura, per impostazione predefinita, per gli operatori con **admin** autorizzazione:
+Alcuni schemi preconfigurati sono stati modificati e ora sono accessibili, per impostazione predefinita, solo con accesso in scrittura per gli operatori con **admin** autorizzazione:
 
 * ncm:pubblicazione
 * nl:monitoraggio
@@ -338,7 +338,7 @@ Di seguito sono riportati alcuni esempi di confronto tra la vecchia e la nuova s
     </queryFilter>
   ```
 
-**L’aggregato**
+**L&#39;aggregato**
 
 Aggregate function(collection)
 
@@ -461,7 +461,7 @@ Esistono tre modi possibili per risolvere un conflitto:
 
   >[!IMPORTANT]
   >
-  >Se si seleziona questa modalità di risoluzione, si rischia di perdere le patch nella nuova versione. Si raccomanda pertanto vivamente che questa opzione non sia utilizzata o riservata solo agli operatori esperti.
+  Se si seleziona questa modalità di risoluzione, si rischia di perdere le patch nella nuova versione. Si raccomanda pertanto vivamente che questa opzione non sia utilizzata o riservata solo agli operatori esperti.
 
 Se si sceglie di risolvere manualmente il conflitto, procedere come segue:
 
@@ -508,13 +508,13 @@ Nella versione 7, il contenuto dell’offerta è stato spostato. Nella versione 
 
 >[!IMPORTANT]
 >
->Se alcune consegne che utilizzano offerte configurate dovevano essere inviate dopo la migrazione, devi eliminare e ricreare tutte queste consegne in v7. In caso contrario, viene offerta una &quot;modalità di compatibilità&quot;. Questa modalità non è consigliata perché non tutte le nuove funzioni di Interaction v7 sono disponibili. Si tratta di una modalità transitoria che consente di completare le campagne in corso prima della migrazione effettiva alla versione 6.1. Per ulteriori informazioni su questa modalità, contattateci.
+Se alcune consegne che utilizzano offerte configurate dovevano essere inviate dopo la migrazione, devi eliminare e ricreare tutte queste consegne in v7. In caso contrario, viene offerta una &quot;modalità di compatibilità&quot;. Questa modalità non è consigliata perché non tutte le nuove funzioni di Interaction v7 sono disponibili. Si tratta di una modalità transitoria che consente di completare le campagne in corso prima della migrazione effettiva alla versione 6.1. Per ulteriori informazioni su questa modalità, contattateci.
 
 Esempio di script di spostamento (**interfaceTo610_full_XX.js**) è disponibile nella **Migrazione** cartella all’interno della cartella Adobe Campaign v7. Questo file mostra un esempio di script per un cliente che utilizza una singola rappresentazione e-mail per offerta (la **[!UICONTROL htmlSource]** e **[!UICONTROL textSource]** campi). Il contenuto che era nel **NmsEmailOfferView** è stata spostata nella tabella delle offerte.
 
 >[!NOTE]
 >
->L’utilizzo di questo script non consente di trarre vantaggio dalle opzioni di &quot;gestione dei contenuti&quot; e &quot;funzioni di rendering&quot;. Per beneficiare di queste funzioni, devi ripensare le offerte del catalogo, in particolare il contenuto dell’offerta e gli spazi di configurazione.
+L’utilizzo di questo script non consente di trarre vantaggio dalle opzioni di &quot;gestione dei contenuti&quot; e &quot;funzioni di rendering&quot;. Per beneficiare di queste funzioni, devi ripensare le offerte del catalogo, in particolare il contenuto dell’offerta e gli spazi di configurazione.
 
 ```
 loadLibrary("/nl/core/shared/nl.js");
@@ -614,7 +614,7 @@ Di seguito è riportata la procedura da seguire dopo aver spostato il contenuto 
 
    >[!NOTE]
    >
-   >I nomi delle categorie e delle offerte online vengono modificati dopo la pubblicazione. Sul canale in entrata, aggiorna tutti i riferimenti a offerte e categorie.
+   I nomi delle categorie e delle offerte online vengono modificati dopo la pubblicazione. Sul canale in entrata, aggiorna tutti i riferimenti a offerte e categorie.
 
 ## Rapporti {#reports}
 

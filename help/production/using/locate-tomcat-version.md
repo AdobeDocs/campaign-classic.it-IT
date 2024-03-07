@@ -9,9 +9,9 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 76411b29-d300-4aaa-8d3b-d8ff74c3ce93
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '503'
 ht-degree: 1%
 
 ---
@@ -52,11 +52,11 @@ Per individuare la versione di Tomcat incorporata in un’istanza di Adobe Campa
 
 Ad esempio, *ServerInfo.properties* il file per Adobe Campaign conterrà le seguenti informazioni, che indicano Tomcat v8.5.X:
 
-*server.info=Apache Tomcat/8.5.X*
+*`server.info=Apache Tomcat/8.5.X`*
 
-*server.number=8.5.X.Y*
+*`server.number=8.5.X.Y`*
 
-*server.built=MM GG AAAA HH:MM:SS*
+*`server.built=MM DD YYY HH:MM:SS`*
 
 Una volta che sei in grado di stabilire la versione esatta di Tomcat utilizzata in una particolare istanza, potrebbe aiutarti nella risoluzione dei problemi relativi a Tomcat.
 

@@ -5,10 +5,10 @@ description: Questa sezione descrive l’architettura di messaggistica transazio
 feature: Transactional Messaging, Message Center, Architecture
 badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 1%
+source-wordcount: '1110'
+ht-degree: 2%
 
 ---
 
@@ -157,7 +157,7 @@ Di seguito è riportato un esempio di evento che contiene queste informazioni:
          <urn:domEvent>
 
               <rtEvent wishedChannel="41" type="DELIVERY" registrationToken="2cefnefzef758398493srefzefkzq483974">
-                <mobileApp _operation=”none” uuid="com.adobe.NeoMiles"/>
+                <mobileApp _operation="none" uuid="com.adobe.NeoMiles"/>
                 <ctx>
                     <deliveryTime>1:30 PM</deliveryTime>
                     <url>http://www.adobe.com</url>
@@ -178,7 +178,7 @@ Di seguito è riportato un esempio di evento che contiene queste informazioni:
 
 In combinazione con il canale LINE, i messaggi transazionali ti consentono di inviare messaggi in tempo reale sull’app LINE installata su dispositivi mobili di consumo. Viene utilizzato per inviare il messaggio di benvenuto quando un utente LINE aggiunge la pagina del brand.
 
-Per utilizzare il modulo di messaggi transazionali con LINE, sono necessari i seguenti elementi per la configurazione nel **marketing** e il tuo **esecuzione** istanza:
+Per utilizzare il modulo di messaggi transazionali con LINE, sono necessari i seguenti elementi per la configurazione sul **marketing** e il tuo **esecuzione** istanza:
 
 * Installare **[!UICONTROL LINE Connect]** su entrambe le istanze.
 * Installare **[!UICONTROL Transactional message control]** nella tua istanza di marketing e nella **[!UICONTROL Transactional message execution]** sull&#39;istanza di esecuzione.
@@ -222,7 +222,7 @@ Quindi, dalla sezione **[!UICONTROL Explorer]** , in **[!UICONTROL Platform]** >
    * **[!UICONTROL Server]** : immetti l’URL del server della campagna per l’istanza di esecuzione.
    * **[!UICONTROL Account]** : inserisci l’account utilizzato per accedere all’istanza di esecuzione.
    * **[!UICONTROL Password]** : immetti la password dell’account utilizzato per accedere all’istanza di esecuzione.
-   * **[!UICONTROL Data Source]** : immetti la sintassi seguente **[!UICONTROL nms:extAccount:ID of your external database account in the execution instance]** .
+   * **[!UICONTROL Data Source]** : immetti la sintassi seguente **`nms:extAccount:ID`** dell’account di database esterno nell’istanza di esecuzione.
 
 1. Creare un **[!UICONTROL Execution instance]** account esterno nel tuo **marketing** che utilizza la seguente configurazione per creare il flusso di lavoro di sincronizzazione dati:
 

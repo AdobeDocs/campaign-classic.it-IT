@@ -5,9 +5,9 @@ description: Gestire i dati tra Campaign e il CRM
 feature: Microsoft CRM Integration, Salesforce Integration
 badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '1543'
+source-wordcount: '1536'
 ht-degree: 1%
 
 ---
@@ -93,7 +93,7 @@ Per impostazione predefinita, la data dell’ultima sincronizzazione viene memor
 >
 >Questa nota si applica solo al modello generico **[!UICONTROL CRM Connector]** attività. Per altre attività CRM, il processo è automatico.
 >
->Questa opzione deve essere creata e compilata manualmente in **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. Deve essere un’opzione di testo e il suo valore deve corrispondere al seguente formato: **aaaa/MM/gg hh:mm:ss**.
+>Questa opzione deve essere creata e compilata manualmente in **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. Deve essere un’opzione di testo e il suo valore deve corrispondere al seguente formato: **`yyyy/MM/dd hh:mm:ss`**.
 > 
 >È necessario aggiornare manualmente questa opzione per ulteriori importazioni.
 
@@ -112,7 +112,7 @@ Attivazione di **[!UICONTROL Automatic index]** genera tre variabili che possono
 
   >[!NOTE]
   >
-  >Queste date sono visualizzate nel seguente formato: **aaaa/MM/gg hh:mm:ss**.
+  >Queste date sono visualizzate nel seguente formato: **`yyyy/MM/dd hh:mm:ss`**.
 
 ### Filtrare i dati {#filtering-data}
 
@@ -142,7 +142,7 @@ L’ordine delle colonne nell’elenco è il seguente:
 
 ![](assets/crm_import_order.png)
 
-### Identificazione del record {#record-identification}
+### Identificazione record {#record-identification}
 
 Invece di importare gli elementi inclusi (e possibilmente filtrati) nel CRM, puoi utilizzare una popolazione calcolata in precedenza nel flusso di lavoro.
 

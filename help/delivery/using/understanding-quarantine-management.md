@@ -7,16 +7,16 @@ badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Monitoring, Deliverability
 role: User
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '3009'
-ht-degree: 12%
+source-wordcount: '2990'
+ht-degree: 8%
 
 ---
 
 # Informazioni sulla gestione della quarantena{#understanding-quarantine-management}
 
- Adobe Campaign gestisce un elenco di indirizzi in quarantena. I destinatari il cui indirizzo è stato messo in quarantena sono esclusi per impostazione predefinita durante l’analisi della consegna e non saranno oggetto di targeting. Un indirizzo e-mail può essere posto in quarantena, ad esempio, quando la casella di posta è piena o se l’indirizzo non esiste. In ogni caso, la procedura di quarantena è conforme alle norme specifiche descritte di seguito.
+ Adobe Campaign gestisce un elenco di indirizzi in quarantena. I destinatari il cui indirizzo è stato messo in quarantena sono esclusi per impostazione predefinita durante l’analisi della consegna e non saranno oggetto di targeting. Un indirizzo e-mail può essere messo in quarantena, ad esempio, quando la casella di posta è piena o se l’indirizzo non esiste. In ogni caso, la procedura di quarantena è conforme alle norme specifiche descritte di seguito.
 
 >[!NOTE]
 >
@@ -74,7 +74,7 @@ Per ogni indirizzo sono disponibili le seguenti informazioni:
 >
 >Fine anno 1: (1&#42;0,33)/(1+0,5)=22%.
 >
->Fine anno 2: ((1,22&#42;0,33)+0,33)/(1,5+0,75)=32,5%.
+Fine anno 2: ((1,22&#42;0,33)+0,33)/(1,5+0,75)=32,5%.
 
 ### Identificare gli indirizzi messi in quarantena nei rapporti di consegna {#identifying-quarantined-addresses-in-delivery-reports}
 
@@ -109,7 +109,7 @@ Se un utente qualifica un’e-mail come spam ([ciclo di feedback](https://experi
 
 >[!NOTE]
 >
->In Adobe Campaign la quarantena distingue tra maiuscole e minuscole. Accertati di importare gli indirizzi e-mail in lettere minuscole, in modo che non vengano reindirizzate in un secondo momento.
+In Adobe Campaign la quarantena distingue tra maiuscole e minuscole. Accertati di importare gli indirizzi e-mail in lettere minuscole, in modo che non vengano reindirizzate in un secondo momento.
 
 Nell’elenco degli indirizzi messi in quarantena (vedi [Identificazione degli indirizzi messi in quarantena per l’intera piattaforma](#identifying-quarantined-addresses-for-the-entire-platform)), il **[!UICONTROL Error reason]** indica il motivo per cui l’indirizzo selezionato è stato messo in quarantena.
 
@@ -145,7 +145,7 @@ Il loro stato diventa quindi **[!UICONTROL Valid]**.
 
 >[!IMPORTANT]
 >
->Destinatari con un indirizzo in una **[!UICONTROL Quarantine]** o **[!UICONTROL Denylisted]** non vengono mai rimossi, anche se ricevono un’e-mail.
+Destinatari con un indirizzo in una **[!UICONTROL Quarantine]** o **[!UICONTROL Denylisted]** non vengono mai rimossi, anche se ricevono un’e-mail.
 
 ### Aggiornamenti manuali {#unquarantine-manual}
 
@@ -165,8 +165,8 @@ Di seguito sono riportate le linee guida consigliate per questa query:
 
    * **Testo di errore (testo di quarantena)** contiene &quot;Momen_Code10_InvalidRecipient&quot;
    * **Dominio e-mail (@domain)** uguale a domain1.com OR **Dominio e-mail (@domain)** uguale a domain2.com OR **Dominio e-mail (@domain)** uguale a domain3.com
-   * **Stato aggiornamento (@lastModified)** il o dopo il GG/MM/AAAA HH:MM:SS AM
-   * **Stato aggiornamento (@lastModified)** entro il GG/MM/AAAA HH:MM:SS PM
+   * **Stato aggiornamento (@lastModified)** il o dopo il `MM/DD/YYYY HH:MM:SS AM`
+   * **Stato aggiornamento (@lastModified)** il o prima del `MM/DD/YYYY HH:MM:SS PM`
 
 * Per le istanze di Campaign Classic v7 con informazioni di risposta SMTP non recapitate in **[!UICONTROL Error text]** campo dell’elenco di quarantena:
 
@@ -174,8 +174,8 @@ Di seguito sono riportate le linee guida consigliate per questa query:
 
   dove &quot;support.ISP.com&quot; può essere: &quot;support.apple.com&quot; o &quot;support.google.com&quot;, ad esempio
 
-   * **Stato aggiornamento (@lastModified)** il o dopo il GG/MM/AAAA HH:MM:SS AM
-   * **Stato aggiornamento (@lastModified)** entro il GG/MM/AAAA HH:MM:SS PM
+   * **Stato aggiornamento (@lastModified)** il o dopo il `MM/DD/YYYY HH:MM:SS AM`
+   * **Stato aggiornamento (@lastModified)** il o prima del  `MM/DD/YYYY HH:MM:SS PM`
 
 Dopo aver visualizzato l’elenco dei destinatari interessati, aggiungi un **[!UICONTROL Update data]** per impostare lo stato del loro indirizzo e-mail su **[!UICONTROL Valid]** in modo che vengano rimossi dall’elenco di quarantena dal **[!UICONTROL Database cleanup]** flusso di lavoro. Puoi anche semplicemente eliminarli dalla tabella di quarantena.
 
@@ -292,13 +292,13 @@ Durante l’analisi della consegna, tutti i dispositivi esclusi dalla destinazio
 
 >[!NOTE]
 >
->Per i clienti che utilizzano il connettore Baidu, di seguito sono riportati i diversi tipi di errori:
+Per i clienti che utilizzano il connettore Baidu, di seguito sono riportati i diversi tipi di errori:
 >
->* Problema di connessione all’inizio della consegna: tipo di errore **[!UICONTROL Undefined]**, motivo dell’errore **[!UICONTROL Unreachable]**, viene eseguito un nuovo tentativo.
->* Connessione persa durante una consegna: errore morbido, motivo dell’errore **[!UICONTROL Refused]**, viene eseguito un nuovo tentativo.
->* Errore sincrono restituito da Baidu durante l’invio: errore rigido, motivo dell’errore **[!UICONTROL Refused]**, non viene eseguito alcun nuovo tentativo.
+* Problema di connessione all’inizio della consegna: tipo di errore **[!UICONTROL Undefined]**, motivo dell’errore **[!UICONTROL Unreachable]**, viene eseguito un nuovo tentativo.
+* Connessione persa durante una consegna: errore morbido, motivo dell’errore **[!UICONTROL Refused]**, viene eseguito un nuovo tentativo.
+* Errore sincrono restituito da Baidu durante l’invio: errore rigido, motivo dell’errore **[!UICONTROL Refused]**, non viene eseguito alcun nuovo tentativo.
 >
->Adobe Campaign contatta il server Baidu ogni 10 minuti per recuperare lo stato del messaggio inviato e aggiorna i broadLog. Se un messaggio viene dichiarato come inviato, lo stato del messaggio nei broadLog viene impostato su **[!UICONTROL Received]**. Se Baidu dichiara un errore, lo stato viene impostato su **[!UICONTROL Failed]**.
+Adobe Campaign contatta il server Baidu ogni 10 minuti per recuperare lo stato del messaggio inviato e aggiorna i broadLog. Se un messaggio viene dichiarato come inviato, lo stato del messaggio nei broadLog viene impostato su **[!UICONTROL Received]**. Se Baidu dichiara un errore, lo stato viene impostato su **[!UICONTROL Failed]**.
 
 **Per Android V2**
 
@@ -517,7 +517,7 @@ Il meccanismo di quarantena per i messaggi SMS è globalmente lo stesso del proc
 
 >[!NOTE]
 >
->Il **[!UICONTROL Delivery log qualification]** la tabella non si applica **SMPP generico esteso** connettore.
+Il **[!UICONTROL Delivery log qualification]** la tabella non si applica **SMPP generico esteso** connettore.
 
 <table> 
  <tbody> 
@@ -576,9 +576,9 @@ Prima di qualificare un nuovo tipo di errore, il motivo dell’errore è sempre 
 
 >[!NOTE]
 >
->I tipi di errore e i motivi dell’errore sono gli stessi delle e-mail. Consulta [Tipi e motivi di errori di consegna](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+I tipi di errore e i motivi dell’errore sono gli stessi delle e-mail. Consulta [Tipi e motivi di errori di consegna](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 >
->Chiedi al provider un elenco di stati e codici di errore per impostare i tipi di errore e i motivi dell’errore nella tabella Qualificazione del registro di consegna.
+Chiedi al provider un elenco di stati e codici di errore per impostare i tipi di errore e i motivi dell’errore nella tabella Qualificazione del registro di consegna.
 
 Esempio di messaggio generato:
 
