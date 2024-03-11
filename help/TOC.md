@@ -6,7 +6,7 @@ title: Guida di Campaign Classic v7
 user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: de57e7aec255ab2995d1a758642e6a73cafa91b3
+source-git-commit: e4d57effe5cae1effcd6fbcd716b9dcf4eec6189
 workflow-type: tm+mt
 source-wordcount: '2549'
 ht-degree: 99%
@@ -824,7 +824,7 @@ ht-degree: 99%
    + [Procedura di ripristino](migration/using/about-rollback.md)
 + Note tecniche {#technotes}
    + [Consigli sui requisiti hardware in base alle dimensioni](technotes/using/hardware-sizing.md)
-   + [Attività del flusso di lavoro SMS in entrata per l’infrastruttura di mid-sourcing](technotes/using/inbound-sms.md)
+   + [Attività del flusso di lavoro SMS in entrata per l’infrastruttura di mid-sourcing](technotes/using/inbound-SMS.md)
    + Aggiornamento a IMS{#ims}
       + [Migrazione utenti a IMS](technotes/using/migrate-users-to-ims.md)
       + [Migrazione degli operatori tecnici a Developer Console](technotes/using/ims-migration.md)
