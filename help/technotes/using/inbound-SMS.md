@@ -4,7 +4,7 @@ title: Attività del flusso di lavoro SMS in entrata per l’infrastruttura di m
 description: Attività del flusso di lavoro SMS in entrata per l’infrastruttura di mid-sourcing
 feature: Technote, SMS
 badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
-source-git-commit: 5667cb6b45742638f8c984d7eb9633660f64fc0f
+source-git-commit: 85adfe3515480bed559091427ff1acec14a70320
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 2%
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 1. Aggiungi un&#39;estensione al `nms:inSMS` schema nell’istanza Marketing. L&#39;estensione aggiungerà un nuovo attributo al `nms:inSMS` e tieni traccia della chiave primaria del record inSMS proveniente dall’istanza di mid-sourcing.
 
-   ```
+   ```xml
    <element img="nms:miniatures/mini-sms.png" label="Incoming SMS"
           labelSingular="Incoming SMS" name="inSMS">
    <dbindex name="midInSMSId" unique="false">
@@ -55,7 +55,7 @@ ht-degree: 2%
 
    Sostituisci il blocco seguente. Tieni presente che questo script può variare se in precedenza hai personalizzato questo codice.
 
-   ```
+   ```Javascript
    var lastSynchKey = getOption('SMS_MO_INDEX_WKF1105_inSmsUS_smsmidus');
    
    var smsId = application.getNewIds(1);
@@ -70,7 +70,8 @@ ht-degree: 2%
    ```
 
    Con il seguente nuovo script personalizzato per aggiornare i dati inSMS in base a una chiave composita, che combina la chiave primaria del record di mid-sourcing e l’ID account esterno del routing Marketing SMS.
-Segui i prerequisiti seguenti:
+
+   Segui i prerequisiti seguenti:
 
    * Immetti il valore reale per `<EXTERNAL_ACCOUNT_ID>`, ad esempio, `var iExtAccountId=72733155`.
    * Assicurati di mantenere i seguenti elementi nello script personalizzato:
@@ -111,7 +112,7 @@ Segui i prerequisiti seguenti:
 
    Lo script ripristina il puntatore della chiave primaria a 24 ore prima. Il flusso di lavoro tenterà di rielaborare tutti i dati inSMS dall’istanza Mid-sourcing nelle 24 ore precedenti e di aggiungere eventuali dati mancanti all’istanza Marketing.
 
-   ```
+   ```Javascript
    // please enter real external account ID to replace <EXTERNAL_ACCOUNT_ID>
    // please enter real pointer option name to replace '<POINTER_OPTION_NAME>'
    // OPTION NAME format: SMS_MO_INDEX_{internal name of the workflow}_inSms_{internal name of the external account to access the mid}
