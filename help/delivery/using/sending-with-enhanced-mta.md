@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: bc6f5d569d0c8a5eba4499a854af370258ce83a2
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 4%
+source-wordcount: '1380'
+ht-degree: 1%
 
 ---
 
@@ -109,7 +109,11 @@ Qualifiche di mancato recapito nella campagna **[!UICONTROL Delivery log qualifi
 
 Per ulteriori informazioni sulla qualifica di mancato recapito, consulta [questa sezione](understanding-delivery-failures.md#bounce-mail-qualification).
 
-### Velocità effettiva di consegna
+### Consegna
+
+Una consegna non può essere interrotta dopo essere stata trasferita all’MTA avanzato, anche se viene visualizzata con **[!UICONTROL Stopped]** stato in Campaign.
+
+### Velocità di consegna
 
 Il grafico della velocità effettiva di consegna della campagna non mostrerà più la velocità effettiva per i destinatari delle e-mail. Il grafico ora mostra la velocità effettiva per l’inoltro dei messaggi da Campaign all’MTA avanzato.
 
@@ -127,7 +131,7 @@ L’impostazione del periodo di validità nelle consegne di Campaign verrà util
 
 Ad esempio, se il periodo di validità è impostato sul valore predefinito di 5 giorni in Campaign, i messaggi in soft bouncing verranno inseriti nella coda dei nuovi tentativi dell’MTA avanzato e verranno ritentati solo per un massimo di 3,5 giorni da quando il messaggio ha raggiunto l’MTA avanzato. In tal caso, il valore impostato in Campaign non verrà utilizzato.
 
-Una volta che un messaggio è rimasto nella coda dell’MTA avanzato per 3,5 giorni e la consegna non è riuscita, si verificherà un timeout e il suo stato verrà aggiornato da **[!UICONTROL Sent]** a **[!UICONTROL Failed]** nei log di consegna.
+Una volta che un messaggio è rimasto nella coda dell’MTA avanzato per 3,5 giorni e la consegna non è riuscita, si verificherà un timeout e il suo stato verrà aggiornato da **[!UICONTROL Sent]** a **[!UICONTROL Failed]** nei registri di consegna.
 
 Per ulteriori informazioni sul periodo di validità, consulta [questa sezione](steps-sending-the-delivery.md#defining-validity-period).
 
