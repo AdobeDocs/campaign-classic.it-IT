@@ -6,9 +6,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaig
 feature: Push
 role: User, Developer
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 9756f05e3887bc74578bae00138c4d1317a480f8
+source-git-commit: 466f04bce8f4c62b5dbb0e9d15150ab0c3bf2fbd
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '603'
 ht-degree: 4%
 
 ---
@@ -103,21 +103,24 @@ Nell’esempio seguente, aggiungiamo **mediaURl** e **mediaExt** per creare una 
 
 1. Seleziona una delle icone pronte all’uso dal menu **[!UICONTROL Application icon]** per personalizzare l’app mobile nel servizio.
 
-1. Seleziona **[!UICONTROL Authentication mode]**. Puoi sempre modificare la modalità di autenticazione in un secondo momento nella sezione **[!UICONTROL Certificate]** della tua app mobile.
+1. Seleziona **[!UICONTROL Authentication mode]**.
+
+   ![](assets/nmac_ios_5.png)
+
+   Sono disponibili due modalità:
+
+   * (Consigliato) **[!UICONTROL Token-based authentication]**: inserisci le impostazioni di connessione APNs **[!UICONTROL Key Id]**, **[!UICONTROL Team Id]** e **[!UICONTROL Bundle Id]** quindi seleziona il certificato p8 facendo clic su **[!UICONTROL Enter the private key...]**. Per ulteriori informazioni su **[!UICONTROL Token-based authentication]**, fare riferimento a [Documentazione di Apple](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
+
    * **[!UICONTROL Certificate-based authentication]**: fai clic **[!UICONTROL Enter the certificate...]**  quindi seleziona la chiave p12 e immetti la password fornita dallo sviluppatore dell’app mobile.
-   * **[!UICONTROL Token-based authentication]**: specifica le impostazioni di connessione **[!UICONTROL Key ID]**, **[!UICONTROL Team ID]** e **[!UICONTROL Bundle ID]** quindi seleziona il certificato p8 facendo clic su **[!UICONTROL Enter the private key]**. Per ulteriori informazioni su **[!UICONTROL Token-based authentication]**, fare riferimento a [Documentazione di Apple](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns).
 
    >[!NOTE]
    >
-   > L’Adobe consiglia di utilizzare **[!UICONTROL Token-based authentication]** per la configurazione di iOS, in quanto questa modalità di autenticazione è più protetta e non è associata alla scadenza del certificato.
+   > L’Adobe consiglia di utilizzare **[!UICONTROL Token-based authentication]** per la configurazione di iOS, in quanto le chiavi di autenticazione P8 sono più recenti e più sicure.
 
-   ![](assets/nmac_ios_4.png)
-
-1. Puoi fare clic su **[!UICONTROL Test the connection]** per essere sicuro che abbia successo.
+1. Utilizza il **[!UICONTROL Test the connection]** per convalidare la configurazione.
 
 1. Clic **[!UICONTROL Next]** per iniziare a configurare l’applicazione di produzione e seguire gli stessi passaggi descritti in precedenza.
 
-   ![](assets/nmac_ios_5.png)
 
 1. Fai clic su **[!UICONTROL Finish]**.
 
