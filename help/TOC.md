@@ -7,9 +7,9 @@ user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 834d6c02536187b348842e6d524c4a83d02b355d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2552'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 99%
    + [Introduzione agli aggiornamenti](rn/using/rn-overview.md)
    + [Ultima versione](rn/using/latest-release.md)
    + Versioni precedenti {#previous-releases}
-      + [Versioni del 2022](rn/using/release-2022.md)
+      + [Versioni 2022](rn/using/release-2022.md)
       + [Versioni 2021](rn/using/release-2021.md)
       + [Versioni [!DNL Gold Standard]](rn/using/gold-standard.md)
    + [Funzioni obsolete](rn/using/deprecated-features.md)
@@ -512,7 +512,7 @@ ht-degree: 99%
       + [Flussi di lavoro tecnici](workflow/using/about-technical-workflows.md)
 + Gestire le offerte {#managing-offers}
    + Introduzione all’interazione {#interaction-overview}
-      + [Gestione dell’interazione e dell’offerta](interaction/using/interaction-and-offer-management.md)
+      + [Gestione dell’interazione e delle offerte](interaction/using/interaction-and-offer-management.md)
       + [Glossario](interaction/using/i-glossary.md)
       + [Best practice di interazione](interaction/using/interaction-best-practices.md)
    + Funzionamento generale {#general-operation}
@@ -745,7 +745,7 @@ ht-degree: 99%
       + [Struttura dello schema](configuration/using/schema-structure.md)
       + [Mappatura del database](configuration/using/database-mapping.md)
       + [Gestione delle chiavi](configuration/using/database-keys.md)
-      + [Gestione dei collegamenti](configuration/using/database-links.md)
+      + [Gestione collegamenti](configuration/using/database-links.md)
       + Elementi e attributi {#elements-attributes}
          + [Introduzione](configuration/using/schema-introduction.md)
          + [Attributo](configuration/using/schema/attribute.md)
@@ -824,7 +824,7 @@ ht-degree: 99%
    + [Procedura di ripristino](migration/using/about-rollback.md)
 + Note tecniche {#technotes}
    + [Consigli sui requisiti hardware in base alle dimensioni](technotes/using/hardware-sizing.md)
-   + [Attività del flusso di lavoro SMS in entrata per l’infrastruttura di mid-sourcing](technotes/using/inbound-SMS.md)
+   + [Attività del flusso di lavoro SMS in entrata per l’infrastruttura mid-sourcing](technotes/using/inbound-SMS.md)
    + Aggiornamento a IMS{#ims}
       + [Migrazione utenti a IMS](technotes/using/migrate-users-to-ims.md)
       + [Migrazione degli operatori tecnici a Developer Console](technotes/using/ims-migration.md)

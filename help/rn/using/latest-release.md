@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 517f09e508207b14e6b870f926753b2d9a547262
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2319'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ _5 dicembre 2023_
 
 * Inoltre, come parte del tentativo di rafforzare la sicurezza e il processo di autenticazione, Adobe Campaign consiglia vivamente di migrare la modalità di autenticazione dell’utente finale dall’autenticazione nativa di login/password ad Adobe Identity Management System (IMS). Scopri come effettuare la migrazione degli operatori in [questa nota tecnica](../../technotes/using/migrate-users-to-ims.md).
 
-* Ora, quando un modulo web ha **Pubblicazione in sospeso** , non diventa automaticamente live. Per evitare problemi di sicurezza, è necessario pubblicarlo prima che diventi **Online** e accessibile tramite l’URL del modulo web in un browser web. [Ulteriori informazioni](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
+* Ora, quando un modulo web è in stato di **Pubblicazione in sospeso**, non diventa automaticamente disponibile. Per evitare problemi di sicurezza, è necessario pubblicarlo prima che sia **Online** e accessibile tramite l’URL del modulo web in un browser web. [Ulteriori informazioni](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
 
 ### Patch {#release-7-3-5-patches}
 

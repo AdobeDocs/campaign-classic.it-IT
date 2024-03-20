@@ -1,12 +1,12 @@
 ---
 keywords: Campaign Classic;home;argomenti principali
 product: campaign
-title: Documentazione del prodotto di Adobe Campaign Classic v7
+title: Documentazione del prodotto Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: b74ae2335fa5ba7a2cc4c3a0fdb375d7698dcd81
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '346'
-ht-degree: 12%
+ht-degree: 100%
 
 ---
 
@@ -16,29 +16,29 @@ ht-degree: 12%
 
 ## Novità
 
-Dai un’occhiata ai miglioramenti più recenti del prodotto e della documentazione di Adobe Campaign Classic v7. Per un elenco completo delle funzioni, dei miglioramenti e delle correzioni, consulta la [Note sulla versione](rn/using/latest-release.md).  Per essere sempre al corrente delle ultime modifiche apportate all documentazione, visita rgolarmente la [pagina degli aggiornamenti della documentazione](rn/using/documentation-updates.md).
+Dai un’occhiata ai più recenti miglioramenti apportati al prodotto e alla documentazione di Adobe Campaign Classic v7. Per un elenco completo di funzionalità, miglioramenti e correzioni, consulta le [Note sulla versione](rn/using/latest-release.md).  Per essere sempre al corrente delle ultime modifiche apportate all documentazione, visita regolarmente la [pagina degli aggiornamenti della documentazione](rn/using/documentation-updates.md).
 
 >[!BEGINTABS]
 
 
->[!TAB La versione di dicembre è live!]
+>[!TAB La versione di dicembre è ora disponibile!]
 
-Scopri gli aggiornamenti, i miglioramenti e le patch disponibili con Campaign Classic v7.3.5.
+Scopri gli aggiornamenti, i miglioramenti e le patch disponibili in Campaign Classic v7.3.5.
 
 [![immagine](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
->[!TAB Sposta in Adobe IMS]
+>[!TAB Migrare ad Adobe IMS]
 
-Per rafforzare la sicurezza e il processo di autenticazione, Adobe Campaign consiglia vivamente di migrare la modalità di autenticazione dell’utente finale dall’autenticazione nativa di login/password ad Adobe Identity Management System (IMS).
+Al fine di rafforzare la sicurezza e il processo di autenticazione, Adobe Campaign consiglia vivamente di migrare la modalità di autenticazione dell’utente finale dall’autenticazione nativa di login/password ad Adobe Identity Management System (IMS).
 
 [![immagine](assets/do-not-localize/learn-more-button.svg)](technotes/using/migrate-users-to-ims.md)
 
 
 >[!TAB Modifiche al canale push]
 
-Alcune modifiche importanti al servizio Android Firebase Cloud Messaging (FCM) saranno rilasciate nel 2024 e potrebbero influire sull’implementazione di Adobe Campaign. Per supportare questa modifica, potrebbe essere necessario aggiornare la configurazione dei servizi di abbonamento per i messaggi push Android. Puoi già verificare ed eseguire azioni.
+Alcune importanti modifiche al servizio Android Firebase Cloud Messaging (FCM) verranno rilasciate nel 2024 e potranno influenzare la tua implementazione di Adobe Campaign. Per supportare questa modifica, potrebbe essere necessario aggiornare la configurazione dei servizi di abbonamento per i messaggi push Android. Puoi già verificare e intervenire.
 
-[![immagine](assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html){target="_blank"}
+[![immagine](assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=it){target="_blank"}
 
 
 >[!ENDTABS]
@@ -53,15 +53,15 @@ Alcune modifiche importanti al servizio Android Firebase Cloud Messaging (FCM) s
     </td>
     <td>
     <a href="platform/using/about-profiles.md"><img src="assets/do-not-localize/start-profiles.png"></a>
-    <div><strong>Aggiungere e gestire i profili</strong><br/>Esplora facilmente la gestione dei profili nel database di Adobe Campaign v7. Aggiungi profili manualmente o tramite importazioni, perfezionando i dati dei clienti e personalizzando le campagne in modo semplice.</div>
+    <div><strong>Aggiungere e gestire i profili</strong><br/>Esplora con facilità la gestione dei profili nel database di Adobe Campaign v7. Aggiungi profili manualmente o tramite importazioni, perfezionando i dati dei clienti e personalizzando le campagne in modo semplice.</div>
     </td>
     <td>
     <a href="workflow/using/about-workflows.md"><img src="assets/do-not-localize/start-workflows.jpeg"></a>
-    <div><strong>Automatizzare con i flussi di lavoro</strong><br/>Scopri come sfruttare il flusso di lavoro per progettare processi quali segmentazione, esecuzione di campagne, elaborazione di file, partecipazione di utenti, ecc.
+    <div><strong>Automatizzare con i flussi di lavoro</strong><br/>Scopri come sfruttare il flusso di lavoro per progettare i processi come segmentazione, esecuzione di campagne, elaborazione di file, partecipazione di utenti, ecc.
     </div></td>
     <td>
     <a href="delivery/using/steps-about-delivery-creation-steps.md"><img src="assets/do-not-localize/start-deliveries.jpeg"></a>
-    <div><strong>Creare consegne</strong><br/>Scopri come inviare messaggi su vari canali come e-mail, SMS, notifiche push e così via.</div>
+    <div><strong>Creare consegne</strong><br/>Scopri come inviare messaggi attraverso vari canali come ad esempio e-mail, SMS e notifiche push.</div>
     </td>
   </tr>
   <tr style="border: 0;">
@@ -79,29 +79,29 @@ Alcune modifiche importanti al servizio Android Firebase Cloud Messaging (FCM) s
     <td>
       <img src="assets/do-not-localize/icon-start.svg" width="35px">
     <br/>
-      <strong>Introduzione</strong><br/><a href="platform/using/adobe-campaign-workspace.md">Interfaccia utente</a> - <a href="platform/using/ac-glossary.md">Glossario</a> - <a href="platform/using/launching-adobe-campaign.md">Connetti a Campaign</a> - <a href="platform/using/get-started-data-import-export.md">Importare ed esportare dati</a> - <a href="platform/using/access-management.md">Autorizzazioni</a>
+      <strong>Introduzione</strong><br/><a href="platform/using/adobe-campaign-workspace.md">Interfaccia utente</a> - <a href="platform/using/ac-glossary.md">Glossario</a> - <a href="platform/using/launching-adobe-campaign.md">Connettiti a Campaign</a> - <a href="platform/using/get-started-data-import-export.md">Importare ed esportare dati</a> - <a href="platform/using/access-management.md">Autorizzazioni</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>Esperienza del cliente</strong><br/><a href="workflow/using/about-workflows.md">Automatizzare con i flussi di lavoro</a> - <a href="campaign/using/setting-up-marketing-campaigns.md">Campagna di marketing</a> - <a href="interaction/using/interaction-and-offer-management.md">Gestione dell’interazione e dell’offerta</a> - <a href="delivery/using/about-personalization.md">Personalizzazione</a> - <a href="reporting/using/about-adobe-campaign-reporting-tools.md">Generazione rapporti</a>
+      <strong>Esperienza cliente</strong><br/><a href="workflow/using/about-workflows.md">Automatizza con i flussi di lavoro</a> - <a href="campaign/using/setting-up-marketing-campaigns.md">Campagna di marketing</a> - <a href="interaction/using/interaction-and-offer-management.md">Gestione dell’interazione e delle offerte</a> - <a href="delivery/using/about-personalization.md">Personalizzazione</a> - <a href="reporting/using/about-adobe-campaign-reporting-tools.md">Reporting</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
-      <strong>Inviare messaggi</strong><br/><a href="delivery/using/communication-channels.md">Canali di comunicazione</a> - <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">Inviare bozze</a> - <a href="delivery/using/get-started-a-b-testing.md">Test A/B</a> - <a href="delivery/using/about-message-tracking.md">Tracciamento dei messaggi</a> - <a href="delivery/using/about-deliverability.md">Recapito messaggi</a> - <a href="message-center/using/about-transactional-messaging.md">Messaggistica transazionale</a>
+      <strong>Inviare messaggi</strong><br/><a href="delivery/using/communication-channels.md">Canali di comunicazione</a> - <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">Inviare bozze</a> - <a href="delivery/using/get-started-a-b-testing.md">Test A/B</a> - <a href="delivery/using/about-message-tracking.md">Tracciamento dei messaggi</a> - <a href="delivery/using/about-deliverability.md">Recapitabilità</a> - <a href="message-center/using/about-transactional-messaging.md">Messaggistica transazionale</a>
     </td>
   </tr>
   <tr style="border: 0;">
     <td>
       <img src="assets/do-not-localize/icon_profile-audience.svg" width="35px">
       <br/>
-      <strong>Profili e pubblico</strong><br/><a href="platform/using/adding-profiles.md">Aggiungere profili</a> - <a href="platform/using/creating-and-managing-lists.md">Creare elenchi</a> - <a href="delivery/using/about-services-and-subscriptions.md">Servizi e abbonamenti</a> - <a href="platform/using/privacy-management.md">Privacy e consenso</a>
+      <strong>Profili e tipi di pubblico</strong><br/><a href="platform/using/adding-profiles.md">Aggiungere profili</a> - <a href="platform/using/creating-and-managing-lists.md">Creare elenchi</a> - <a href="delivery/using/about-services-and-subscriptions.md">Servizi e abbonamenti</a> - <a href="platform/using/privacy-management.md">Privacy e consenso</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-configure.svg" width="35px">
       <br/>
-      <strong>Architettura e configurazione</strong><br/><a href="production/using/general-architecture.md">Principi dell’architettura</a> - <a href="production/using/build-upgrade.md">Esecuzione di un aggiornamento della build</a> - <a href="production/using/configuration.md">Configurare Campaign</a> - <a href="installation/using/external-accounts.md">Connessione a sistemi esterni</a>
+      <strong>Architettura e configurazione</strong><br/><a href="production/using/general-architecture.md">Principi dell’architettura</a> - <a href="production/using/build-upgrade.md">Esecuzione di un aggiornamento della versione</a> - <a href="production/using/configuration.md">Configurare Campaign</a> - <a href="installation/using/external-accounts.md">Connessione a sistemi esterni</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-dev.svg" width="35px">
