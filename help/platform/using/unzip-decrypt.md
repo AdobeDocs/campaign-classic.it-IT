@@ -9,9 +9,9 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: 67a6e03318a74b665dc6928028470f98c0abae5e
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '703'
 ht-degree: 9%
 
 ---
@@ -44,7 +44,7 @@ Puoi quindi utilizzare nei flussi di lavoro i comandi di pre-elaborazione deside
 1. Aggiungere e configurare un **[!UICONTROL File transfer]** attività nel flusso di lavoro.
 1. Aggiungi un **[!UICONTROL Data loading (file)]** e definire il formato del file.
 1. Seleziona l’opzione **[!UICONTROL Pre-process the file]**.
-1. Specifica il comando di pre-elaborazione da applicare.
+1. Selezionare il comando di pre-elaborazione da applicare.
 1. Aggiungi altre attività per gestire i dati provenienti dal file.
 1. Salva ed esegui il flusso di lavoro.
 
@@ -87,17 +87,15 @@ I passaggi per eseguire questo caso d’uso sono i seguenti:
 
 1. Apri **[!UICONTROL Data loading (file)]** e configurarlo in base alle tue esigenze. I concetti globali su come configurare l’attività sono disponibili in [questa sezione](../../workflow/using/data-loading-file.md).
 
-   Aggiungi una fase di pre-elaborazione all’attività per decrittografare i dati in arrivo. A questo scopo, seleziona la **[!UICONTROL Pre-process the file]** , quindi copia e incolla questo comando di decrittografia nel **[!UICONTROL Command]** campo:
-
-   `gpg --batch --passphrase passphrase --decrypt <%=vars.filename%>`
+   Aggiungi una fase di pre-elaborazione all’attività per decrittografare i dati in arrivo. A questo scopo, seleziona la **[!UICONTROL Pre-process the file]** , quindi seleziona **[!UICONTROL Decrypt]** dal **[!UICONTROL Command]** elenco a discesa:
 
    ![](assets/gpg_load.png)
 
-   >[!CAUTION]
+   >[!NOTE]
    >
-   >In questo esempio, utilizziamo la passphrase utilizzata per impostazione predefinita dal Pannello di controllo Campaign, che è &quot;passphrase&quot;.
+   >Se sono necessarie modifiche ai comandi disponibili, è possibile contattare [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per regolare le impostazioni di preProcessCommand.
    >
-   >Se in passato hai già installato le chiavi GPG nell’istanza tramite una richiesta dell’Assistenza clienti, la passphrase potrebbe essere stata modificata ed essere diversa da quella predefinita.
+   >Se si utilizza una distribuzione ibrida, è possibile configurare questi comandi direttamente dal file di configurazione del server (serverConf.xml). [Scopri come configurare i comandi di pre-elaborazione nel file di configurazione del server](../../installation/using/the-server-configuration-file.md#preprocesscommand)
 
 1. Clic **[!UICONTROL OK]** per confermare la configurazione dell’attività.
 
