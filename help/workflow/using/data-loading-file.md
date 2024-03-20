@@ -5,10 +5,10 @@ description: Ulteriori informazioni sull’attività del flusso di lavoro Carica
 badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows, Data Management Activity
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: 67a6e03318a74b665dc6928028470f98c0abae5e
+source-git-commit: 229844437770c460d958724e2dc15941e35939a6
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 15%
+source-wordcount: '1147'
+ht-degree: 14%
 
 ---
 
@@ -28,11 +28,17 @@ La sezione superiore della finestra di configurazione per questa attività ti co
 
 ![](assets/s_advuser_wf_etl_file.png)
 
-È possibile definire un pre-processo da eseguire durante l&#39;importazione dei file, ad esempio per non dover decomprimere il file sul server (e quindi risparmiare spazio per il file decompresso) ma per includere la decompressione nell&#39;elaborazione dei file. Seleziona la **[!UICONTROL Pre-process the file]** e scegliere una delle tre opzioni seguenti: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) oppure **[!UICONTROL Decrypt]** (gpg).
+## Applica fase di pre-elaborazione {#pre-processing}
+
+È possibile definire un pre-processo da eseguire durante l&#39;importazione dei file, ad esempio per non dover decomprimere il file sul server (e quindi risparmiare spazio per il file decompresso) ma per includere la decompressione nell&#39;elaborazione dei file. [Scopri come decomprimere o decrittografare un file prima dell’elaborazione](../../platform/using/unzip-decrypt.md).
+
+A questo scopo, seleziona la **[!UICONTROL Pre-process the file]** e scegliere una delle tre opzioni seguenti: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) oppure **[!UICONTROL Decrypt]** (gpg).
 
 ![](assets/preprocessing-dataloading.png)
 
-Per ulteriori informazioni, consulta questa sezione: [Estrazione o decrittografia di un file prima dell’elaborazione](../../platform/using/unzip-decrypt.md).
+>[!CAUTION]
+>
+>Se si utilizza una distribuzione ibrida o on-premise, i comandi di pre-elaborazione potrebbero non funzionare come preconfigurati, in quanto la configurazione predefinita utilizza &#39;zcat&#39;, che non è disponibile in Windows. In tal caso, è necessario regolare **preProcessCommand** nel file di configurazione del server (serverConf.xml) in base alle tue esigenze. [Scopri come configurare i comandi di pre-elaborazione nel file di configurazione del server](../../installation/using/the-server-configuration-file.md#preprocesscommand)
 
 ## Definizione del formato del file {#defining-the-file-format}
 
