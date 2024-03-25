@@ -2,12 +2,12 @@
 product: campaign
 title: Analisi web
 description: Ulteriori informazioni sul pacchetto Web Analytics
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows, Analytics Integration
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 4%
+source-wordcount: '185'
+ht-degree: 7%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 
 
-I flussi di lavoro descritti di seguito vengono installati con **Connettori di analisi web** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../platform/using/adobe-analytics-connector.md).
+I flussi di lavoro descritti di seguito vengono installati con **Connettori di analisi web** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../platform/using/gs-aa.md).
 
 <table> 
  <tbody> 
@@ -33,7 +33,7 @@ I flussi di lavoro descritti di seguito vengono installati con **Connettori di a
   <tr> 
    <td> <span class="uicontrol">Identificazione dei contatti convertiti</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsFindConverted</span> <br /> </td> 
-   <td> Questo flusso di lavoro indicizza i visitatori del sito che hanno completato l’acquisto dopo una campagna di remarketing. I dati recuperati da questo flusso di lavoro sono accessibili nel <span class="uicontrol">Rapporto sull’efficienza del remarketing</span> (Fai riferimento a questo <a href="../../platform/using/adobe-analytics-connector.md#creating-a-re-marketing-campaign"> pagina</a>). <br /> </td> 
+   <td> Questo flusso di lavoro indicizza i visitatori del sito che hanno completato l’acquisto dopo una campagna di remarketing. I dati recuperati da questo flusso di lavoro sono accessibili nel <span class="uicontrol">Rapporto sull’efficienza del remarketing</span>. <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Eliminazione eventi</span> <br /> </td> 

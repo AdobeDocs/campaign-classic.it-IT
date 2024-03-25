@@ -6,11 +6,13 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaig
 feature: Analytics Integration
 role: User, Admin
 level: Beginner
+hide: true
+hidefromtoc: true
 exl-id: 0dc6ce98-dc3e-4242-953e-e7cec55289ff
-source-git-commit: ccc48c93d81266b0971acc3a549458e0823eeb37
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 94%
+source-wordcount: '1489'
+ht-degree: 89%
 
 ---
 
@@ -18,7 +20,7 @@ ht-degree: 94%
 
 ## Informazioni sull’integrazione del connettore Adobe Analytics {#about-analytics-connector-integration}
 
-Il connettore Adobe Analytics consente ad Adobe Campaign e Adobe Analytics di interagire attraverso il pacchetto **[!UICONTROL Web Analytics connectors]**. Invia dati ad Adobe Campaign sotto forma di segmenti relativi al comportamento degli utenti dopo una campagna. Al contrario, invia ad Adobe Analytics gli indicatori e gli attributi delle campagne inviate da Adobe Campaign.
+Il connettore Adobe Analytics consente ad Adobe Campaign e Adobe Analytics di interagire attraverso il pacchetto **[!UICONTROL Web Analytics connectors]**. Invia dati ad Adobe Campaign sotto forma di segmenti relativi al comportamento degli utenti dopo una campagna. Al contrario, invia ad Adobe Analytics indicatori e attributi delle campagne distribuite da Adobe Campaign.
 
 >[!CAUTION]
 >
@@ -96,7 +98,7 @@ Devi configurare **[!UICONTROL Conversion variables]** e **[!UICONTROL Success e
 
    ![](assets/analytics_connnector_5.png)
 
-1. Fai clic su **[!UICONTROL Add new]** per creare gli identificatori necessari per misurare l’impatto della campagna , ovvero il nome della campagna interna (cid) e l’ID della tabella iNmsBroadlog (bid).
+1. Clic **[!UICONTROL Add new]** per creare gli identificatori necessari per misurare l’impatto della campagna, ovvero il nome della campagna interna (cid) e l’ID della tabella iNmsBroadlog (bid).
 
    Per informazioni su come modificare le **[!UICONTROL Conversion variables]**, consulta questa [sezione](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html#admin-tools).
 
@@ -121,7 +123,7 @@ Devi configurare **[!UICONTROL Conversion variables]** e **[!UICONTROL Success e
    * **[!UICONTROL Unique Opens]**
    * **[!UICONTROL Unsubscribed]**
 
-   Per informazioni su come configurare **[!UICONTROL Success events]**, consulta questa [sezione](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html#admin-tools).
+   Per scoprire come configurare **[!UICONTROL Success events]**, fai riferimento a questo [sezione](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html#admin-tools).
 
    >[!NOTE]
    >
@@ -200,7 +202,7 @@ Per ulteriori informazioni, consulta la pagina [Profili di prodotto per Adobe An
 
    >[!IMPORTANT]
    >
-   >Questa modalità di configurazione è riservata agli utenti esperti: eventuali errori in questa formula possono causare consegne interrotte.
+   >Questa modalità di configurazione è riservata agli utenti esperti: eventuali errori in questa formula potrebbero causare consegne interrotte.
 
 1. La scheda **[!UICONTROL Advanced]** ti consente di configurare o modificare le impostazioni tecniche.
 

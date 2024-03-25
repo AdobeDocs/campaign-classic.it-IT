@@ -9,10 +9,10 @@ audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 12%
+source-wordcount: '736'
+ht-degree: 7%
 
 ---
 
@@ -35,7 +35,7 @@ L’elenco completo delle soluzioni e dei servizi principali di Adobe che posson
 
 ## Collegamento delle soluzioni {#working-with-experience-cloud-solutions}
 
-È possibile collegare più soluzioni a Adobe Experience Cloud. Il **organizzazione** è l&#39;entità cliente che consente all&#39;amministratore di configurare gruppi e utenti e di controllare il single sign-on (SSO) in Adobe Experience Cloud. L’organizzazione si comporta come un’azienda di accesso che abbraccia tutti i prodotti e le soluzioni di Experience Cloud. Nella maggior parte dei casi l’organizzazione corrisponde al nome aziendale, ma una stessa azienda può avere molte organizzazioni.
+È possibile collegare più soluzioni a Adobe Experience Cloud. Il **organizzazione** è l&#39;entità cliente che consente all&#39;amministratore di configurare gruppi e utenti e di controllare il single sign-on (SSO) in Adobe Experience Cloud. L’organizzazione si comporta come un’azienda di accesso che abbraccia tutti i prodotti e le soluzioni di Experience Cloud. Nella maggior parte dei casi l’organizzazione corrisponde al nome aziendale, Tuttavia, un’azienda può avere molte organizzazioni.
 
 La gestione dell&#39;organizzazione e il collegamento degli account Adobe Experience Cloud sono descritti in dettaglio nella [Portale della guida di Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html).
 
@@ -49,7 +49,7 @@ Ai destinatari che generano i registri di tracciamento verrà assegnato un ID vi
 
 L’ID verrà quindi riconosciuto dalle altre soluzioni Adobe Experience Cloud con lo stesso CNAME. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/cname.html)
 
-## Integrazioni Experience Cloud {#experience-cloud-integrations}
+## Integrazioni di Experience Cloud {#experience-cloud-integrations}
 
 La tabella seguente fornisce l’accesso alla documentazione disponibile sull’integrazione di Experience Cloud.
 
@@ -90,12 +90,12 @@ La tabella seguente fornisce l’accesso alla documentazione disponibile sull’
    <td> Consente di inserire risorse dal <strong>AEM Assets</strong> nelle e-mail e nelle pagine di destinazione create in Adobe Campaign.<br /> <p><a href="../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets">Ulteriori informazioni</a> informazioni sull’integrazione Adobe Campaign - AEM Assets.</p><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Trigger di Experience Cloud</strong><br /> </td> 
+   <td> <strong>Trigger Experience Cloud</strong><br /> </td> 
    <td> Integrazione tra <strong>Attiva il servizio core</strong> e Adobe Campaign consente di inviare e-mail personalizzate ai clienti come reazione a comportamenti specifici tracciati sul sito web da Adobe Analytics.<br /> <p><a href="https://helpx.adobe.com/it/campaign/kb/triggers-and-campaign.html">Ulteriori informazioni</a> informazioni su Adobe Campaign: integrazione Experience Cloud triggers.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Connettore Adobe Analytics</strong><br /> </td> 
-   <td> <strong>Connettore Adobe Analytics</strong> consente ad Adobe Campaign e Adobe Analytics di interagire attraverso segmenti relativi al comportamento degli utenti in seguito a una campagna e-mail. Al contrario, invia ad Adobe Analytics gli indicatori e gli attributi delle campagne e-mail inviate da Adobe Campaign.<br /> <p><a href="../../platform/using/adobe-analytics-connector.md">Ulteriori informazioni</a> informazioni sull’integrazione Campaign - Analytics Connectors.</p><br /> </td> 
+   <td> <strong>Connettore Adobe Analytics</strong> consente ad Adobe Campaign e Adobe Analytics di interagire attraverso segmenti relativi al comportamento degli utenti in seguito a una campagna e-mail. Al contrario, invia ad Adobe Analytics indicatori e attributi delle campagne e-mail consegnate da Adobe Campaign.<br /> <p><a href="../../platform/using/gs-aa.md">Ulteriori informazioni</a> informazioni sull’integrazione Campaign - Analytics Connectors.</p><br /> </td> 
   </tr> 
  </tbody> 
 </table>
