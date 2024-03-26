@@ -21,7 +21,7 @@ metodi:==metodo
 
 ## Attributi {#attributes-11}
 
-Nessuna
+Nessuno
 
 ## Padri {#parents-11}
 

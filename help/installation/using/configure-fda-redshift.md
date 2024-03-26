@@ -7,10 +7,11 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaig
 audience: platform
 content-type: reference
 topic-tags: connectors
-source-git-commit: 6939307c0b33ff662fe4ef9ae0192ae7b500a95c
+exl-id: ef2b98bd-441e-4e59-bb41-4e835e250663
+source-git-commit: 2ba6066b2999973e64ed3b429af78696f093dd09
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 6%
+source-wordcount: '255'
+ht-degree: 4%
 
 ---
 
@@ -90,7 +91,7 @@ Il [!DNL Amazon Redshift] l’account esterno ti consente di collegare l’istan
 
    * **[!UICONTROL Working schema]**: nome dello schema di lavoro. [Ulteriori informazioni](https://docs.aws.amazon.com/redshift/latest/dg/r_Schemas_and_tables.html)
 
-   * **[!UICONTROL Time zone]**: Fuso orario server
+   * **[!UICONTROL Time zone]**: fuso orario del server
 
    ![](assets/amazon_redshift.png)
 

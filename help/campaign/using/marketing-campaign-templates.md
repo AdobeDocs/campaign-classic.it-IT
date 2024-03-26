@@ -29,7 +29,7 @@ Viene fornito un modello integrato al fine di creare una campagna per la quale n
 
 ## Creare un modello di campagna {#creating-or-duplicating-a-campaign-template}
 
-Per creare un modello di campagna, effettua le seguenti operazioni:
+Per creare un modello per campagne, segui la procedura seguente:
 
 1. Apri campagna **Esplora**.
 1. In entrata **Risorse > Modelli > Modelli per campagne**, fai clic su **Nuovo** nella barra degli strumenti sopra l’elenco dei modelli.
@@ -53,7 +53,7 @@ Per creare un modello di campagna, effettua le seguenti operazioni:
 
 1. Completa il **Etichetta** e fai clic su **Ok**.
 1. Crea il flusso di lavoro in base alle tue esigenze.
-1. Fai clic su **Salva**. Il modello è ora pronto per essere utilizzato in una campagna.
+1. Clic **Salva**. Il modello è ora pronto per essere utilizzato in una campagna.
 
 È inoltre possibile **duplicare** il modello predefinito per riutilizzare e adattare la propria configurazione.
 

@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: File allegati
-description: File allegati
+title: Allegare file
+description: Allegare file
 badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Email
@@ -10,7 +10,7 @@ exl-id: db65e83e-276f-4163-98c3-3658a48acffc
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '978'
-ht-degree: 7%
+ht-degree: 1%
 
 ---
 
@@ -79,9 +79,9 @@ Per creare un allegato personalizzato, effettua le seguenti operazioni:
 
 Sono disponibili le seguenti opzioni:
 
-* **Il nome del file viene specificato quando si crea il modello di consegna**
+* **Nome file specificato durante la creazione del modello di consegna**
 * **Il contenuto del file è personalizzato e convertito in PDF durante la consegna di ciascun messaggio**
-* **Il nome del file viene calcolato durante l’analisi della consegna (non può dipendere dal profilo del destinatario)**
+* **Il nome file viene calcolato durante l’analisi della consegna (non può dipendere dal profilo del destinatario)**
 * **Il nome file viene calcolato al momento della consegna per ciascun destinatario (può dipendere dal destinatario)**
 
 ### Come allegare un file locale {#attach-a-local-file}

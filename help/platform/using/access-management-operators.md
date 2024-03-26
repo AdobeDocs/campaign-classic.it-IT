@@ -2,14 +2,14 @@
 product: campaign
 title: Introduzione agli operatori di Campaign
 description: Scopri come creare e gestire gli utenti della campagna
-badge: label="v7" type="Informative" tooltip="Si applica solo a Campaign Classic v7"
+badge: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1152'
 ht-degree: 2%
 
 ---
@@ -102,31 +102,31 @@ Il **[!UICONTROL Edit the access parameters...]** Il collegamento ti consente di
 
 * Il **[!UICONTROL Disable account]** consente di disabilitare l’account dell’operatore: questo utente non accederà più ad Adobe Campaign.
 
-   >[!NOTE]
-   >
-   >Anche se il loro account è disabilitato, l’operatore può comunque ricevere avvisi o notifiche da Campaign. Per interrompere l’invio delle notifiche di Campaign a questo operatore, l’Adobe consiglia di rimuovere l’indirizzo e-mail dal proprio profilo.
+  >[!NOTE]
+  >
+  >Anche se il loro account è disabilitato, l’operatore può comunque ricevere avvisi o notifiche da Campaign. Per interrompere l’invio delle notifiche di Campaign a questo operatore, l’Adobe consiglia di rimuovere l’indirizzo e-mail dal proprio profilo.
 
 * Il **[!UICONTROL Forbid access from the rich client]** consente di limitare l’utilizzo di Adobe Campaign a [Accesso web](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) o tramite API: l’accesso alla console client di Adobe Campaign non è più disponibile.
 * È possibile collegare una zona di sicurezza all&#39;operatore. Per ulteriori informazioni, consulta [questa pagina](../../installation/using/security-zones.md).
 * Puoi anche definire una maschera IP attendibile utilizzando il collegamento appropriato.
 
-   L’operatore può connettersi ad Adobe Campaign senza inserire la password se il suo indirizzo IP si trova in questo elenco.
+  L’operatore può connettersi ad Adobe Campaign senza inserire la password se il suo indirizzo IP si trova in questo elenco.
 
-   È inoltre possibile specificare un insieme di indirizzi IP che verranno autorizzati a connettersi senza una password, ad esempio nell&#39;esempio seguente:
+  È inoltre possibile specificare un insieme di indirizzi IP che verranno autorizzati a connettersi senza una password, ad esempio nell&#39;esempio seguente:
 
-   ![](assets/operator_trustip.png)
+  ![](assets/operator_trustip.png)
 
-   >[!NOTE]
-   >
-   >Per proteggere l’accesso alla piattaforma, utilizza questa opzione con cautela.
+  >[!NOTE]
+  >
+  >Per proteggere l’accesso alla piattaforma, utilizza questa opzione con cautela.
 
 * Il **[!UICONTROL Restrict to information found in sub-folders of:]** consente di limitare i diritti attribuiti all’operatore di una cartella. Solo le sottocartelle del nodo specificato in questa opzione saranno visibili all’utente:
 
-   ![](assets/s_ncs_user_restrictions_operators.png)
+  ![](assets/s_ncs_user_restrictions_operators.png)
 
-   >[!IMPORTANT]
-   >
-   >Questa è una restrizione molto rigida, e deve essere utilizzata con cautela. Un operatore connesso con questo tipo di diritti può visualizzare SOLO il contenuto della cartella specificata e non ha accesso a nessun altro nodo della struttura tramite l&#39;Explorer. Tuttavia, a seconda delle funzionalità a cui questo operatore ha accesso (ad esempio: flussi di lavoro), l’utente può visualizzare dati che sono solitamente memorizzati in nodi che non sono accessibili.
+  >[!IMPORTANT]
+  >
+  >Questa è una restrizione molto rigida, e deve essere utilizzata con cautela. Un operatore connesso con questo tipo di diritti può visualizzare SOLO il contenuto della cartella specificata e non ha accesso a nessun altro nodo della struttura tramite l&#39;Explorer. Tuttavia, a seconda delle funzionalità a cui questo operatore ha accesso (ad esempio: flussi di lavoro), l’utente può visualizzare dati che sono solitamente memorizzati in nodi che non sono accessibili.
 
 ### Verifica impostazioni {#check-settings}
 
@@ -136,15 +136,15 @@ Puoi accedere a:
 
 * Elenco dei diritti sulle cartelle collegate all’operatore.
 
-   ![](assets/operator_folder_permissions.png)
+  ![](assets/operator_folder_permissions.png)
 
-   >[!NOTE]
-   >
-   >Per ulteriori informazioni, consulta [Gestione dell’accesso alle cartelle](#folder-access-management).
+  >[!NOTE]
+  >
+  >Per ulteriori informazioni, consulta [Gestione dell’accesso alle cartelle](#folder-access-management).
 
 * Registro delle approvazioni dell&#39;operatore.
 
-   ![](assets/operator_profile_validations.png)
+  ![](assets/operator_profile_validations.png)
 
 * L’elenco dei forum di discussione a cui sono iscritti.
 * Eventi nel loro calendario.

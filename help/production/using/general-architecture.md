@@ -10,8 +10,8 @@ topic-tags: introduction
 exl-id: 3bfb5448-6996-4080-bf9a-434f1207637e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 5%
+source-wordcount: '193'
+ht-degree: 7%
 
 ---
 
@@ -51,7 +51,7 @@ La distribuzione dei moduli su più macchine offre una grande flessibilità di u
 
 ## Elenco delle porte aperte {#list-of-open-ports}
 
-| Numero della porta | Modulo o applicazione Adobe Campaign interessati | Configurabile |
+| Numero di porta | Modulo o applicazione Adobe Campaign interessati | Configurabile |
 |---|---|---|
 | 443/tcp o 80/tcp | Server web (Apache/IIS) | SÌ |
 | 6666/udp (locale) | Adobe Campaign: Syslogd | SÌ |

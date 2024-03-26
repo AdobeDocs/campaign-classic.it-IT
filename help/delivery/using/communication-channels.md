@@ -9,8 +9,8 @@ role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1216'
-ht-degree: 20%
+source-wordcount: '1217'
+ht-degree: 15%
 
 ---
 
@@ -29,9 +29,9 @@ L’invio della consegna può essere automatizzato preparando una consegna e/o i
 Adobe Campaign offre i seguenti canali di consegna:
 
 1. **Canale e-mail**: le consegne e-mail ti consentono di inviare e-mail personalizzate alla popolazione target. Fai riferimento a [Informazioni sul canale e-mail](about-email-channel.md).
-1. **Canale direct mailing**: le consegne tramite direct mailing ti consentono di generare un file di estrazione che contiene dati sulla popolazione target. Fai riferimento a [Informazioni sul canale direct mailing](about-direct-mail-channel.md).
+1. **Canale direct mail**: le consegne di direct mailing ti consentono di generare un file di estrazione che contiene dati sulla popolazione target. Fai riferimento a [Informazioni sul canale direct mailing](about-direct-mail-channel.md).
 1. **Canale mobile**: le consegne sui canali mobili ti consentono di inviare SMS personalizzati o messaggi LINE alla popolazione target. Fai riferimento a [Canale SMS](sms-channel.md).
-1. **Canale applicazione mobile**: le consegne tramite app mobile ti consentono di inviare notifiche ai sistemi iOS e Android. Consulta la sezione [Canale app mobile](about-mobile-app-channel.md) capitolo.
+1. **Canale dell’applicazione mobile**: le consegne tramite app mobile ti consentono di inviare notifiche ai sistemi iOS e Android. Consulta la sezione [Canale app mobile](about-mobile-app-channel.md) capitolo.
 
    Altri canali sono descritti su [questa pagina](steps-about-delivery-creation-steps.md#other-channels).
 
@@ -81,7 +81,7 @@ Adobe Campaign ti consente di inviare messaggi personalizzati e segmentati [noti
 
 ## Direct mail {#direct-mail}
 
-[La direct mailing è un canale offline che ti consente di personalizzare e generare il file richiesto dai provider di direct mailing. ](about-direct-mail-channel.md) Offre la possibilità di combinare i canali online e offline all’interno dei percorsi dei clienti.
+[Direct mail](about-direct-mail-channel.md) è un canale offline che ti consente di personalizzare e generare il file richiesto dai provider di direct mailing. Offre la possibilità di combinare i canali online e offline all’interno dei percorsi dei clienti.
 
 I canali online ti consentono di creare i messaggi (e-mail, SMS, consegna su app mobili e così via) e di inviarli al tuo pubblico direttamente da Adobe Campaign. Con i canali offline, la situazione è diversa. Quando prepari una consegna di direct mailing, Adobe Campaign genera un file contenente tutti i profili target e le informazioni del contatto selezionato, ad esempio l’indirizzo postale. Potrai quindi inviare questo file al provider di direct mailing, che si occuperà dell’invio effettivo.
 

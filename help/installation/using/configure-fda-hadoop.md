@@ -10,7 +10,7 @@ topic-tags: connectors
 exl-id: e3a97e55-dd8b-41e1-b48c-816d973f62a8
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '590'
 ht-degree: 2%
 
 ---
@@ -63,7 +63,7 @@ Il [!DNL Hadoop] l’account esterno ti consente di collegare l’istanza Campai
 
    * **[!UICONTROL Database]**: nome del database, se non specificato nel DSN. Può essere lasciato vuoto se specificato nel DSN
 
-   * **[!UICONTROL Time zone]**: Fuso orario server
+   * **[!UICONTROL Time zone]**: fuso orario del server
 
    ![](assets/hadoop3.png)
 
@@ -72,7 +72,7 @@ Il connettore supporta le seguenti opzioni ODBC:
 | Nome | Elemento “value” |
 |---|---|
 | ODBCMgr | iODBC |
-| data warehouse | 1/2/4 |
+| data warehouse | 04/02 |
 
 Il connettore supporta anche le seguenti opzioni Hive:
 

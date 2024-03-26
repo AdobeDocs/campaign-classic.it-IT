@@ -2,14 +2,14 @@
 product: campaign
 title: Introduzione ai moduli web
 description: Introduzione ai moduli web in Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Landing Pages, Web Forms
 exl-id: 63602bed-ace6-4632-a735-5d268a7d72d0
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '497'
-ht-degree: 5%
+source-wordcount: '510'
+ht-degree: 2%
 
 ---
 
@@ -55,15 +55,15 @@ Per definire la configurazione e il contenuto del modulo Web, attenersi alla pro
 
 * Inizia creando le pagine e i controlli richiesti: campi di input, elenchi a discesa, contenuto HTML, ecc.
 
-   Questo passaggio è descritto di seguito.
+  Questo passaggio è descritto di seguito.
 
 * Definire la sequenza di pagine e condizionare la visualizzazione.
 
-   Questo passaggio è descritto in [Definizione della sequenza di pagine dei moduli web](defining-web-forms-page-sequencing.md).
+  Questo passaggio è descritto in [Definizione della sequenza di pagine dei moduli web](defining-web-forms-page-sequencing.md).
 
 * Traduci il contenuto, se necessario.
 
-   Questo passaggio è descritto in [Traduzione di un modulo web](translating-a-web-form.md).
+  Questo passaggio è descritto in [Traduzione di un modulo web](translating-a-web-form.md).
 
 ## Informazioni sulla progettazione di moduli web {#about-web-forms-designing}
 
@@ -81,7 +81,6 @@ Nelle sezioni seguenti viene descritto come definire il contenuto e il layout de
 >* Durante la progettazione della pagina, è possibile visualizzare il rendering finale nel **[!UICONTROL Preview]** scheda. Per visualizzare le modifiche, salvare prima il modulo. Eventuali errori vengono visualizzati in **[!UICONTROL Log]** scheda.
 >* Per assicurarsi che la visualizzazione delle pagine e l&#39;archiviazione delle informazioni avvengano nella sequenza appropriata, attivare la modalità di debug nel modulo Web. Per eseguire questa operazione, passare al **[!UICONTROL Preview]** scheda secondaria e controlla **[!UICONTROL Enable debug mode]** box: tutte le informazioni raccolte e i possibili errori di esecuzione vengono visualizzati nella parte inferiore di ogni pagina.
 >
-
 
 ### Utilizzo delle icone nella barra degli strumenti {#using-the-icons-in-the-toolbar}
 

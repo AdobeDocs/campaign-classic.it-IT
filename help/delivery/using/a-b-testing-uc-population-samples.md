@@ -9,8 +9,8 @@ role: User
 exl-id: 1ca01cab-734a-4299-b112-04eec51222fb
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 6%
+source-wordcount: '186'
+ht-degree: 4%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 6%
 
   ![](assets/use_case_abtesting_createrecipients_003.png)
 
-## Configurare l’attività Split {#configuring-the-split-activity}
+## Configurare l’attività Dividi {#configuring-the-split-activity}
 
 Questa attività ti consente di creare diverse popolazioni: quella che riceve la consegna A, quella che riceve la consegna B e la popolazione rimanente. L’utilizzo della selezione casuale consente di eseguire il targeting di solo una parte della popolazione di ogni consegna.
 
@@ -68,7 +68,7 @@ Questa attività ti consente di creare diverse popolazioni: quella che riceve la
 
 1. Creazione della popolazione rimanente:
 
-   * Vai alla scheda **[!UICONTROL General]**. 
+   * Vai a **[!UICONTROL General]** scheda.
 
      ![](assets/use_case_abtesting_createrecipients_011.png)
 

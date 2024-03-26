@@ -7,8 +7,8 @@ feature: Query Editor, Workflows
 exl-id: b699b064-1287-41c9-8d94-1c1aa2c145ab
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1248'
-ht-degree: 1%
+source-wordcount: '1259'
+ht-degree: 7%
 
 ---
 
@@ -188,9 +188,9 @@ In un flusso di lavoro, il **[!UICONTROL Query]** e **[!UICONTROL Split]** Le ca
 
 * Contesto
 
-  Viene inviata un’offerta di &quot;Sport estivi&quot;. Quattro giorni dopo la consegna, vengono inviate altre due consegne. Uno di questi è &quot;offerta di sport acquatici&quot;, l&#39;altro è un follow-up della prima consegna &quot;Offerta di sport estivi&quot;.
+  Viene inviata una consegna per un’“offerta di sport estivi”. Quattro giorni dopo la consegna, vengono inviate altre due consegne. Uno di questi è &quot;offerta di sport acquatici&quot;, l&#39;altro è un follow-up della prima consegna &quot;Offerta di sport estivi&quot;.
 
-  La consegna &quot;Offerta sport acquatici&quot; viene inviata ai destinatari che hanno fatto clic sul collegamento &quot;sport acquatici&quot; nella prima consegna. Questi clic mostrano che il destinatario è interessato all’argomento. Ha senso indirizzarli verso offerte simili. Tuttavia, i destinatari che non hanno fatto clic su nell’offerta &quot;Sport estivi&quot; riceveranno nuovamente lo stesso contenuto.
+  La consegna “Offerta sport acquatici” viene inviata ai destinatari che hanno fatto clic sul collegamento “sport acquatici” nella prima consegna. Questi clic mostrano che il destinatario è interessato all’argomento. Ha senso indirizzarli verso offerte simili. Tuttavia, i destinatari che non hanno fatto clic sull’“offerta sport estivi” riceveranno nuovamente lo stesso contenuto.
 
 I passaggi seguenti mostrano come configurare **[!UICONTROL Split]** integrando due comportamenti diversi:
 

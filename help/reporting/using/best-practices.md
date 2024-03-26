@@ -7,7 +7,7 @@ badge: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classi
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '851'
 ht-degree: 5%
 
 ---
@@ -33,7 +33,7 @@ Per ottimizzare la creazione, l’utilizzo e la durata di un rapporto, è necess
    * Esplora i dati nel database e definisci le misurazioni. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/ac-cubes.md)
    * Aggiungere indicatori a un rapporto esistente. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md)
    * Visualizzare i dati nel database. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/about-descriptive-analysis.md)
-   * Crea un nuovo rapporto di consegna. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md)),
+   * Crea un nuovo rapporto di consegna. Ulteriori informazioni [in questa sezione](../../reporting/using/about-reports-creation-in-campaign.md)),
    * Esportare dati dal database di Adobe Campaign (tramite un flusso di lavoro, fare riferimento a [questa sezione](../../workflow/using/about-workflows.md)
    * Creare una tabella pivot. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
    * Esplora i dati aggregati. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/ac-cubes.md)
@@ -111,6 +111,6 @@ Inoltre, Adobe Campaign consiglia di apportare i seguenti miglioramenti:
 
   Per ulteriori informazioni sulla pulizia e la conservazione dei dati, consulta [questa sezione](../../configuration/using/data-model-best-practices.md#data-retention).
 
-### Esportare i rapporti {#exporting-reports}
+### Esportazione dei rapporti {#exporting-reports}
 
 Recommendations specifico per l’esportazione dei rapporti è descritto in [questa sezione](../../reporting/using/actions-on-reports.md#exporting-a-report).

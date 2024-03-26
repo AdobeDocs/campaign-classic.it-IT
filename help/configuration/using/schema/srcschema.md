@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## Modello di contenuto {#content-model-14}
 
-srcSchema:==(attribute | creatoDa | dati | elemento | enumerazione | guida | interfaccia | metodi | ModificatoDa)
+srcSchema:==(attribute | createdBy | dati | elemento | enumerazione | aiuto | Interfaccia | metodi | modifiedBy)
 
 ## Attributi {#attributes-14}
 
@@ -28,7 +28,7 @@ created (datetime), createdBy-id (long), desc (string), entitySchema (string), e
 
 ## Padri {#parents-14}
 
-Nessuna
+Nessuno
 
 ## Elementi figli {#children-14}
 

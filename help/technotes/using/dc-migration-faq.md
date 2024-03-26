@@ -9,7 +9,7 @@ level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2211'
 ht-degree: 0%
 
 ---
@@ -272,7 +272,7 @@ Gli impatti globali durante la migrazione sono elencati di seguito.
 
 * **Quanto tempo sarà consentito per il test di ogni istanza dopo la migrazione a Cloud pubblico?**
 
-  A seconda della complessità del cliente, è necessario attendere almeno 1 settimana prima di eseguire la migrazione dall’ambiente di staging all’ambiente di produzione.
+  A seconda della complessità del cliente, è necessario un tempo di almeno 1 settimana tra le migrazioni dell’ambiente di staging e dell’ambiente di produzione.
 
 * **Chi gestirà l’aggiunta di nuovi IP al inserisco nell&#39;elenco Consentiti di?**
 

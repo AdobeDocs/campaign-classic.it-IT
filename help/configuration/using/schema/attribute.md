@@ -9,8 +9,8 @@ topic-tags: schema-reference
 exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
-source-wordcount: '1555'
-ht-degree: 1%
+source-wordcount: '1558'
+ht-degree: 0%
 
 ---
 
@@ -62,7 +62,7 @@ La sequenza in cui `<attribute>` gli elementi sono definiti in un `<srcschema>` 
 * **applyIf (stringa)**: questo attributo ti consente di rendere facoltativi i campi. Il `<attribute>` verrà preso in considerazione quando si aggiorna il database quando il vincolo viene rispettato. &quot;applyIf&quot; riceve un’espressione XTK.
 * **autoIncrement (booleano)**: se questa opzione è attivata, il campo diventa un contatore. Questo consente di incrementare un valore (per lo più ID). (uso esterno)
 * **membersTo (stringa)**: prende il nome e lo spazio dei nomi della tabella che condivide il campo e popola lo schema in cui è dichiarato l’attributo. (utilizzato solo in un `<schema>`).
-* **dataPolicy (stringa)**: consente di specificare vincoli di approvazione per i valori consentiti nel campo SQL o XML. I valori per questo attributo sono:
+* **dataPolicy (stringa)**: consente di specificare i vincoli di approvazione per i valori consentiti nel campo SQL o XML. I valori per questo attributo sono:
 
    * &quot;none&quot;: nessun valore
    * &quot;smartCase&quot;: prime lettere maiuscole
@@ -137,24 +137,24 @@ La sequenza in cui `<attribute>` gli elementi sono definiti in un `<srcschema>` 
    * booleano
    * byte
    * CDATA
-   * datetime
+   * Data e ora
    * datetimetz
    * datetimenotz
-   * date
+   * data
    * doppio
    * enum
-   * galleggiare
+   * mobile
    * html
    * int64
    * link
    * long
    * promemoria
    * MNTOKEN
-   * percent
+   * percentuale
    * chiave primaria
    * corto
    * stringa
-   * orario
+   * ora
    * intervallo di tempo
    * uuid
 

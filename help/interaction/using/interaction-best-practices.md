@@ -10,8 +10,8 @@ topic-tags: interaction-overview
 exl-id: 98413cde-50c9-416c-8316-85837f724c27
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1200'
-ht-degree: 0%
+source-wordcount: '1207'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ L’interazione in Adobe Campaign richiede un’attenta gestione per funzionare 
 Di seguito sono elencati gli elementi importanti da tenere presenti durante l’implementazione e la configurazione delle interazioni.
 
 * Per il motore batch (in genere utilizzato nelle comunicazioni in uscita come le e-mail), la velocità effettiva è il problema principale, in quanto è possibile gestire più contatti contemporaneamente. Il collo di bottiglia tipico è rappresentato dalle prestazioni del database.
-* Il vincolo principale per un motore unitario (in genere utilizzato nelle comunicazioni in entrata come un banner su un sito web) è la latenza, in quanto qualcuno si aspetta una risposta. Il collo di bottiglia tipico è rappresentato dalle prestazioni della CPU.
+* Il vincolo principale per il motore unitario (in genere utilizzato nelle comunicazioni in entrata come un banner su un sito web) è la latenza, in quanto qualcuno si aspetta una risposta. Il collo di bottiglia tipico è rappresentato dalle prestazioni della CPU.
 * Il design del catalogo delle offerte ha un impatto enorme sulle prestazioni di Adobe Campaign Classic.
 * Quando ci sono molte offerte, suddividile in diversi cataloghi di offerte.
 

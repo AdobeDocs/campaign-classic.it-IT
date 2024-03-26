@@ -2,13 +2,13 @@
 product: campaign
 title: Approvazione
 description: Approvazione
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows, Approvals
 exl-id: 7ff5da71-ef82-48a2-a608-06a4ca188bb9
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 0%
+source-wordcount: '553'
+ht-degree: 1%
 
 ---
 
@@ -26,15 +26,15 @@ Se necessario, è possibile assegnare l&#39;attività di approvazione a un singo
 
 * Per selezionare un singolo operatore, selezionare **[!UICONTROL Operator]** valore in **[!UICONTROL Assignment type]** e selezionare l&#39;operatore pertinente nell&#39;elenco a discesa del **[!UICONTROL Assignee]** campo.
 
-   ![](assets/s_advuser_validation_box_assign.png)
+  ![](assets/s_advuser_validation_box_assign.png)
 
-   >[!CAUTION]
-   >
-   >Solo l&#39;operatore scelto sarà autorizzato ad approvare l&#39;attività.
+  >[!CAUTION]
+  >
+  >Solo l&#39;operatore scelto sarà autorizzato ad approvare l&#39;attività.
 
 * Puoi definire una query per filtrare gli operatori di approvazione. A questo scopo, seleziona la **[!UICONTROL Filter]** valore in **[!UICONTROL Assignment type]** e fare clic sul pulsante **[!UICONTROL Advanced parameters...]** per definire le condizioni di filtro, come mostrato nell’esempio seguente:
 
-   ![](assets/s_advuser_validation_box_filter.png)
+  ![](assets/s_advuser_validation_box_filter.png)
 
 In caso di approvazione singola, viene attivata la transizione corrispondente alla scelta dell’operatore e l’operazione è terminata: gli altri operatori non possono rispondere.
 
@@ -70,8 +70,8 @@ Un esempio di approvazione è mostrato in [Definizione delle approvazioni](defin
 
 * **[!UICONTROL response]**
 
-   Commento relativo alla risposta
+  Commento relativo alla risposta
 
 * **[!UICONTROL responseOperator]**
 
-   Identificatore dell’operatore che ha risposto. Questo campo è un valore numerico, ma **[!UICONTROL String]** campo.
+  Identificatore dell’operatore che ha risposto. Questo campo è un valore numerico, ma **[!UICONTROL String]** campo.

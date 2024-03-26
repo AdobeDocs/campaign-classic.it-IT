@@ -9,7 +9,7 @@ exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '1492'
-ht-degree: 4%
+ht-degree: 1%
 
 ---
 
@@ -27,7 +27,7 @@ Per creare il target della consegna, puoi definire i criteri di filtro per i des
 
 ## Invia a un gruppo
 
-Puoi importare una popolazione in un elenco, quindi eseguire il targeting di questo elenco nelle consegne. A tale scopo, segui la procedura indicata di seguito:
+Puoi importare una popolazione in un elenco, quindi eseguire il targeting di questo elenco nelle consegne. A questo scopo, segui la procedura indicata di seguito:
 
 1. Modifica la consegna interessata e fai clic su **[!UICONTROL To]** collegamento per modificare la popolazione target.
 
@@ -218,7 +218,7 @@ Puoi estrarre i destinatari dal target principale della consegna. In questo caso
 Per estrarre un gruppo di controllo, abilita il gruppo di controllo per la campagna o la consegna e seleziona una delle opzioni seguenti: **[!UICONTROL Activate random sampling]** o **[!UICONTROL Keep only the first records after sorting]**.
 
 * **[!UICONTROL Activate random sampling]** : questa opzione applica il campionamento casuale ai destinatari nella popolazione target. Se in seguito imposti su 100 la soglia, il gruppo di controllo sarà composto da 100 destinatari selezionati in modo casuale dalla popolazione target. Il campionamento casuale dipende dal motore del database.
-* **[!UICONTROL Keep only the first records after sorting]** : questa opzione consente di definire un limite basato su uno o più criteri di ordinamento. Se si seleziona la **[!UICONTROL Age]** come criterio di ordinamento e quindi definire 100 come soglia, il gruppo di controllo sarà composto dai 100 destinatari più giovani. Ad esempio, potrebbe essere interessante definire un gruppo di controllo che includa destinatari che effettuano pochi acquisti, o destinatari che effettuano acquisti frequenti, e confrontare il loro comportamento con quello dei destinatari contattati.
+* **[!UICONTROL Keep only the first records after sorting]** : questa opzione consente di definire un limite basato su uno o più ordini di ordinamento. Se si seleziona la **[!UICONTROL Age]** come criterio di ordinamento e quindi definire 100 come soglia, il gruppo di controllo sarà composto dai 100 destinatari più giovani. Ad esempio, potrebbe essere interessante definire un gruppo di controllo che includa destinatari che effettuano pochi acquisti, o destinatari che effettuano acquisti frequenti, e confrontare il loro comportamento con quello dei destinatari contattati.
 
 Clic **[!UICONTROL Next]** per definire l’ordinamento (se necessario) e selezionare la modalità di limitazione del destinatario.
 
@@ -239,7 +239,7 @@ Questa configurazione equivale a un’attività di condivisione nel flusso di la
 
 #### Video tutorial {#create-email-video}
 
-In questo video viene illustrato come creare una campagna e un messaggio e-mail in Adobe Campaign.
+Questo video spiega come creare una campagna e un messaggio e-mail in Adobe Campaign.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 

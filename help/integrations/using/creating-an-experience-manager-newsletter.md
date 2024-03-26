@@ -11,7 +11,7 @@ exl-id: 9fa3ce08-3007-4c65-9841-bad339428b7c
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '287'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ Questa integrazione può essere utilizzata, ad esempio, per creare una newslette
 
 **Da Adobe Experience Manager:**
 
-1. Nell’istanza di authoring dell’AEM, fai clic su **Adobe Experience** in alto a sinistra della pagina e seleziona **[!UICONTROL Sites]**.
+1. Nell’istanza di authoring dell’AEM, fai clic su **Esperienza Adobe** in alto a sinistra della pagina e seleziona **[!UICONTROL Sites]**.
 
    ![](assets/aem_uc_1.png)
 

@@ -2,13 +2,13 @@
 product: campaign
 title: Supervisione dei flussi di lavoro
 description: Scopri come monitorare i flussi di lavoro di Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows
 exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 0%
+source-wordcount: '657'
+ht-degree: 1%
 
 ---
 
@@ -137,17 +137,17 @@ Questo modello deve includere:
 * **l’indirizzo e-mail del supervisore**.
 * **Contenuto HTML** per inserire testo personalizzato.
 
-   ![](assets/uc_monitoring_workflow_variables_diffusion.png)
+  ![](assets/uc_monitoring_workflow_variables_diffusion.png)
 
-   Le tre variabili dichiarate (WF_Stop, WF_Paused, WF_Error) corrispondono alle tre variabili di evento del flusso di lavoro.
+  Le tre variabili dichiarate (WF_Stop, WF_Paused, WF_Error) corrispondono alle tre variabili di evento del flusso di lavoro.
 
-   Queste variabili devono essere dichiarate nella **Variabili** scheda delle proprietà del modello di consegna.
+  Queste variabili devono essere dichiarate nella **Variabili** scheda delle proprietà del modello di consegna.
 
-   Da recuperare **il contenuto delle variabili evento del flusso di lavoro**, devi dichiarare le variabili specifiche della consegna che verranno inizializzate con i valori restituiti dal codice JavaScript.
+  Da recuperare **il contenuto delle variabili evento del flusso di lavoro**, devi dichiarare le variabili specifiche della consegna che verranno inizializzate con i valori restituiti dal codice JavaScript.
 
-   Il modello di consegna ha il seguente contenuto:
+  Il modello di consegna ha il seguente contenuto:
 
-   ![](assets/uc_monitoring_workflow_model_diffusion.png)
+  ![](assets/uc_monitoring_workflow_model_diffusion.png)
 
 Una volta creato e approvato il modello, è necessario configurare **Consegna** attività a:
 
@@ -161,21 +161,21 @@ Fai doppio clic su **Consegna** e selezionare le opzioni seguenti:
 * Azione da eseguire: seleziona **Prepara e avvia**.
 * Deseleziona la **Errori di processo** opzione.
 
-   ![](assets/uc_monitoring_workflow_optionmodel.png)
+  ![](assets/uc_monitoring_workflow_optionmodel.png)
 
 * Vai a **Script** scheda di **Consegna** attività, aggiungi tre **stringa di caratteri** digita le variabili tramite il menu del campo di personalizzazione.
 
-   ![](assets/uc_monitoring_workflow_selectlinkvariables.png)
+  ![](assets/uc_monitoring_workflow_selectlinkvariables.png)
 
-   ![](assets/uc_monitoring_workflow_linkvariables.png)
+  ![](assets/uc_monitoring_workflow_linkvariables.png)
 
-   Le tre variabili dichiarate sono:
+  Le tre variabili dichiarate sono:
 
-   ```
-   delivery.variables._var[0].stringValue = vars.strWorkflowError;
-   delivery.variables._var[1].stringValue = vars.strWorkflowPaused;
-   delivery.variables._var[2].stringValue = vars.strWorkflowStop; 
-   ```
+  ```
+  delivery.variables._var[0].stringValue = vars.strWorkflowError;
+  delivery.variables._var[1].stringValue = vars.strWorkflowPaused;
+  delivery.variables._var[2].stringValue = vars.strWorkflowStop; 
+  ```
 
 Una volta avviato, il flusso di lavoro di monitoraggio invia il riepilogo seguente al destinatario:
 

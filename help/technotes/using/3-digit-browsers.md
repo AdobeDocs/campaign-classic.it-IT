@@ -6,7 +6,7 @@ feature: Technote
 exl-id: 2016279a-7b02-4399-b2ed-9a15456de816
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ La compatibilità dei principali siti web è stata testata in anticipo. In caso 
 
 I potenziali problemi o la perdita di funzionalità sul sito web derivano dalla stringa dell’agente utente inviata dai browser ai siti web che stai visitando: l’agente utente è una stringa inviata dal browser al sito web per comunicare al sito il browser e la versione in uso, nonché la tecnologia associata. Quando il browser invia una richiesta a un sito web, si identifica con la stringa dell’agente utente prima di recuperare il contenuto richiesto. I dati nella stringa dell’agente utente aiutano il sito web a distribuire il contenuto in un formato adatto al browser. La versione dell’agente utente viene incrementata in modo che corrisponda al numero di versione del browser. Il passaggio da 2 a 3 cifre può causare problemi.
 
-## Sei interessato da questo problema?{#version-100-impact}
+## Sei interessato?{#version-100-impact}
 
 L’Adobe consiglia di testare le applicazioni web di Campaign, inclusi moduli web e sondaggi, per assicurarsi che continuino a funzionare correttamente con queste nuove versioni del browser.
 

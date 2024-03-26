@@ -2,12 +2,12 @@
 product: campaign
 title: Gestire e personalizzare gli elenchi
 description: Scopri come sfogliare e configurare gli elenchi
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Audiences, Data Management
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1151'
+source-wordcount: '1160'
 ht-degree: 2%
 
 ---
@@ -85,7 +85,7 @@ Un altro modo per aggiungere colonne, ad esempio per visualizzare dati non visua
    >
    >I campi sono identificati da icone specifiche: campi SQL, tabelle collegate, campi calcolati e così via. Per ogni campo selezionato, la descrizione viene visualizzata nell’elenco dei campi disponibili. [Ulteriori informazioni](#configuring-lists).
    >
-   >Puoi anche ordinare e filtrare i dati. Vedi [questa sezione](../../platform/using/filtering-options.md).
+   >Puoi anche ordinare e filtrare i dati. Consulta [questa sezione](../../platform/using/filtering-options.md).
 
 1. Ripetere l&#39;operazione per ogni colonna da visualizzare.
 1. Utilizza le frecce per modificare **ordine di visualizzazione**. La colonna più alta si troverà a sinistra nell&#39;elenco dei record.
@@ -178,7 +178,7 @@ Gli elenchi possono contenere una grande quantità di dati. Puoi ordinare questi
 
 Fai clic sull’intestazione della colonna per applicare un ordinamento crescente o decrescente oppure per annullare l’ordinamento dei dati. Lo stato e l’ordinamento attivi sono indicati da una freccia blu prima dell’etichetta della colonna. Un trattino rosso prima dell’etichetta della colonna indica che l’ordinamento viene applicato ai dati indicizzati dal database. Questo metodo di ordinamento viene utilizzato per ottimizzare i processi di ordinamento.
 
-È inoltre possibile configurare criteri di ordinamento o combinare criteri di ordinamento. A tale scopo, segui la procedura indicata di seguito:
+È inoltre possibile configurare criteri di ordinamento o combinare criteri di ordinamento. A questo scopo, segui la procedura indicata di seguito:
 
 1. **[!UICONTROL Configure list]** in basso e a destra dell&#39;elenco.
 

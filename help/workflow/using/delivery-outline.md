@@ -2,13 +2,13 @@
 product: campaign
 title: Profilo di consegna
 description: Ulteriori informazioni sull’attività del flusso di lavoro Struttura della consegna
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: b4dee085-ccc4-43fd-850d-1501a99272aa
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 1%
+source-wordcount: '274'
+ht-degree: 4%
 
 ---
 
@@ -40,7 +40,7 @@ Il **struttura della consegna** l’attività, disponibile nei flussi di lavoro 
 
    * Se desideri chiamare il motore di offerta, seleziona la **[!UICONTROL Restrict the number of propositions selected]** casella. Specifica lo spazio dell’offerta e il numero di proposte che verranno presentate nella consegna.
 
-      Il motore di offerta terrà conto dei pesi delle offerte e delle regole di idoneità.
+     Il motore di offerta terrà conto dei pesi delle offerte e delle regole di idoneità.
 
    * Se non selezioni la casella, tutte le offerte nella struttura della consegna verranno presentate senza effettuare una chiamata al motore di offerta.
 

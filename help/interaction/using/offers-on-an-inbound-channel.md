@@ -174,7 +174,7 @@ Questo caso di studio si basa sullo scenario seguente:
 
    ![](assets/offer_inbound_fallback_example_053.png)
 
-Per implementare questo caso aziendale, devi disporre di due ambienti di offerta: uno per le interazioni anonime e uno con le offerte configurate in modo specifico per i contatti identificati. L’ambiente dell’offerta identificato verrà configurato per passare automaticamente all’ambiente dell’offerta anonimo se il contatto non è connesso e quindi non è identificato.
+Per implementare questo caso di studio, devi disporre di due ambienti di offerta: uno per le interazioni anonime e uno con le offerte configurate in modo specifico per i contatti identificati. L’ambiente dell’offerta identificato verrà configurato per passare automaticamente all’ambiente dell’offerta anonimo se il contatto non è connesso e quindi non è identificato.
 
 Applica i seguenti passaggi:
 
@@ -198,7 +198,7 @@ Applica i seguenti passaggi:
 
 ### Creazione di un ambiente per i contatti anonimi {#creating-an-environment-for-anonymous-contacts}
 
-1. Creare un ambiente di offerta per interazioni in entrata anonime tramite la procedura guidata di mappatura della consegna (**Visitatore** mapping). Per ulteriori informazioni, consulta [Creazione di un ambiente di offerta](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+1. Creare un ambiente di offerta per le interazioni in entrata anonime tramite la procedura guidata di mappatura della consegna (**Visitatore** mapping). Per ulteriori informazioni, consulta [Creazione di un ambiente di offerta](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
    ![](assets/offer_env_anonymous_003.png)
 

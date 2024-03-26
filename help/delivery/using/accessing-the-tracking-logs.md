@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Accesso ai log di tracking
-description: Accesso ai log di tracking
+title: Accesso ai registri di tracciamento
+description: Accesso ai registri di tracciamento
 badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Monitoring
@@ -10,7 +10,7 @@ exl-id: df494786-5950-4646-aa9c-4dde45845057
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '101'
-ht-degree: 17%
+ht-degree: 8%
 
 ---
 

@@ -6,8 +6,8 @@ feature: Technote, Upgrade
 exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 9%
+source-wordcount: '502'
+ht-degree: 4%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 L’infrastruttura di Campaign si basa su sistemi di terze parti che devono essere regolarmente aggiornati con le versioni e le correzioni più recenti. Questi aggiornamenti sono obbligatori per garantire la continuità del servizio e la protezione degli ambienti Campaign dai rischi di sicurezza. Inoltre, è necessario un aggiornamento di Campaign per garantire la compatibilità con modifiche al sistema di terze parti.
 
-As a **Cliente di Cloud Services in hosting o gestiti**, Adobe fornisce informazioni su questi aggiornamenti quando sono necessari. Sarà necessario aggiornare gli ambienti in conformità con le raccomandazioni per garantire la conformità.
+As a **Cliente di Cloud Service in hosting o gestiti**, Adobe fornisce informazioni su questi aggiornamenti quando sono necessari. Sarà necessario aggiornare gli ambienti in conformità con le raccomandazioni per garantire la conformità.
 
 Come un **Cliente on-premise o ibrido**, Adobe consiglia vivamente di aggiornare le versioni di sistema e Campaign in base allo stesso calendario.
 
@@ -23,7 +23,7 @@ Per motivi di sicurezza, è necessario [installare la build Campaign più recent
 
 >[!NOTE]
 >
->Per qualsiasi domanda su queste modifiche, contatta [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Consulta anche [Domande frequenti sull’aggiornamento della build](../../platform/using/faq-build-upgrade.md).
+>Per qualsiasi domanda su queste modifiche, contatta [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Consulta anche [Domande frequenti sull’aggiornamento della build](../../platform/using/faq-build-upgrade.md).
 >
 
 ## Aggiornamento della build di Campaign {#ac-upgrade}
@@ -34,7 +34,7 @@ Se è interessato da [aggiornamento del sistema operativo](#os-upgrade) e/o [agg
 
 **Come si esegue l’aggiornamento?**
 
-* In qualità di cliente di Cloud Services in hosting o gestiti, Adobe ti contatterà e aggiornerà la tua versione di Campaign.
+* In qualità di cliente di Cloud Service in hosting o gestiti, Adobe ti contatterà e aggiornerà la tua versione di Campaign.
 * In qualità di cliente ibrido, Adobe ti informerà sulle date pianificate per l’aggiornamento della build per l’ambiente di mid-sourcing. Devi anche aggiornare l’ambiente di marketing alla stessa versione.
 * In qualità di cliente on-premise, ti viene richiesto di aggiornare gli ambienti Campaign alla build 7.3.2 più recente.
 
@@ -47,7 +47,7 @@ Se esegui Campaign su un sistema operativo Debian, per beneficiare degli ultimi 
 
 **Come si esegue l’aggiornamento?**
 
-* In qualità di cliente di Cloud Services in hosting o gestiti, Adobe ti contatterà e aggiornerà il tuo ambiente.
+* In qualità di cliente di Cloud Service in hosting o gestiti, Adobe ti contatterà e aggiornerà il tuo ambiente.
 * In qualità di cliente ibrido, Adobe ti informerà sulle date di aggiornamento pianificate per l’ambiente di mid-sourcing. Se il tuo ambiente di marketing è in esecuzione anche su Debian, devi aggiornarlo a Debian 11 troppo.
 * In qualità di cliente on-premise, ti viene richiesto di aggiornare i tuoi ambienti a Debian 11.
 
@@ -59,7 +59,7 @@ Se il sistema di database per Campaign è PostgreSQL, per beneficiare delle ulti
 
 **Come si esegue l’aggiornamento?**
 
-* In qualità di cliente di Cloud Services in hosting o gestiti, Adobe contatterà l&#39;utente e aggiornerà il sistema di database da PostgreSQL 11 a PostgreSQL 14.
+* In qualità di cliente di Cloud Service in hosting o gestiti, Adobe contatterà l&#39;utente e aggiornerà il sistema di database da PostgreSQL 11 a PostgreSQL 14.
 * In qualità di cliente ibrido, se il sistema del database di marketing è PostgreSQL, è necessario aggiornarlo a PostgreSQL 14.
 * In qualità di cliente on-premise, ti viene richiesto di aggiornare il sistema di database a PostgreSQL 14.
 

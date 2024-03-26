@@ -8,7 +8,7 @@ badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 exl-id: 8b51d0fc-1692-41cd-9aa8-3bb8f4ee454e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '613'
 ht-degree: 4%
 
 ---
@@ -94,7 +94,7 @@ Per creare una nuova impostazione:
 Il **[!UICONTROL Response HTTP headers]** consente di impedire il clickjacking quando si include la pagina del report in una pagina HTML utilizzando iframe. Per evitare il clickjacking, puoi scegliere **[!UICONTROL X-Frame-options header]** comportamento:
 
 * **[!UICONTROL None]**: il rapporto non avrà **[!UICONTROL X-Frame-options header]**.
-* **[!UICONTROL Same as origin]**: impostato per impostazione predefinita per i nuovi rapporti e i rapporti ripubblicati. Il nome host sarà uguale all’URL del rapporto.
+* **[!UICONTROL Same as origin]**: impostato per impostazione predefinita per i nuovi rapporti e i rapporti ripubblicati. Il nome host sarà lo stesso dell’URL del rapporto.
 * **[!UICONTROL Deny]**: il report non può essere incluso in una pagina HTML utilizzando iframe.
 
 ![](assets/s_ncs_advuser_report_properties_09c.png)

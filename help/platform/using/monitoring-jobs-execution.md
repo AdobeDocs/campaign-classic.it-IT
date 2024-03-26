@@ -12,7 +12,7 @@ exl-id: 415c5137-2eb0-4581-a46e-26e8e3d264fa
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '196'
-ht-degree: 12%
+ht-degree: 3%
 
 ---
 
@@ -57,7 +57,7 @@ Ogni stato è rappresentato da un’icona e un’etichetta speciali. Gli stati e
 
   Clic **[!UICONTROL Pause]**: processo sospeso. Per riavviarlo, fai clic su **[!UICONTROL Start]**.
 
-* **Finito**
+* **Completato**
 
   Esecuzione del processo completata.
 

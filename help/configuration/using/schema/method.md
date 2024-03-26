@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ## Modello di contenuto {#content-model-10}
 
-metodo:==( guida | parametri)
+metodo:==( guida | )
 
 ## Attributi {#attributes-10}
 

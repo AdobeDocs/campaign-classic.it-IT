@@ -31,7 +31,7 @@ condizione:==VUOTO
 
 ## Elementi figli {#children-2}
 
-Nessuna
+Nessuno
 
 ## Descrizione {#description-2}
 

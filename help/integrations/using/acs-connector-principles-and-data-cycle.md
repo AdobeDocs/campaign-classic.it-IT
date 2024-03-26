@@ -9,8 +9,8 @@ hidefromtoc: true
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2045'
-ht-degree: 3%
+source-wordcount: '2043'
+ht-degree: 0%
 
 ---
 
@@ -54,7 +54,7 @@ Questo documento illustra le funzionalità del connettore ACS. Le sezioni seguen
 Il connettore ACS replica periodicamente i seguenti elementi da Campaign v7 a Campaign Standard:
 
 * **Destinatari**
-* **Abbonamenti**
+* **Iscrizioni**
 * **Servizi**
 * **Pagine di destinazione**
 
@@ -170,11 +170,11 @@ Di seguito è riportato l’elenco dei campi dei destinatari replicati con l’i
    <td> <strong>Nome interno</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> ID origine<br /> </td> 
+   <td> ID sorgente<br /> </td> 
    <td> @sourceId<br /> </td> 
   </tr> 
   <tr> 
-   <td> Data creazione<br /> </td> 
+   <td> Data di creazione<br /> </td> 
    <td> @created<br /> </td> 
   </tr> 
   <tr> 
@@ -183,7 +183,7 @@ Di seguito è riportato l’elenco dei campi dei destinatari replicati con l’i
   </tr> 
   <tr> 
    <td> E-mail<br /> </td> 
-   <td> @e-mail<br /> </td> 
+   <td> @email<br /> </td> 
   </tr> 
   <tr> 
    <td> Cognome<br /> </td> 
@@ -198,7 +198,7 @@ Di seguito è riportato l’elenco dei campi dei destinatari replicati con l’i
    <td> @middleName<br /> </td> 
   </tr> 
   <tr> 
-   <td> Mobile<br /> </td> 
+   <td> Dispositivi mobili<br /> </td> 
    <td> @mobilePhone<br /> </td> 
   </tr> 
   <tr> 
@@ -214,7 +214,7 @@ Di seguito è riportato l’elenco dei campi dei destinatari replicati con l’i
    <td> @salutation<br /> </td> 
   </tr> 
   <tr> 
-   <td> Non desidera più essere contattato (tramite nessun canale)<br /> </td> 
+   <td> Non contattare più (tramite alcun canale)<br /> </td> 
    <td> @blackList<br /> </td> 
   </tr> 
   <tr> 
@@ -222,7 +222,7 @@ Di seguito è riportato l’elenco dei campi dei destinatari replicati con l’i
    <td> @blackListEmail<br /> </td> 
   </tr> 
   <tr> 
-   <td> Non contattare più via SMS<br /> </td> 
+   <td> Non contattare più tramite SMS<br /> </td> 
    <td> @blackListMobile<br /> </td> 
   </tr> 
   <tr> 
@@ -250,7 +250,7 @@ Di seguito è riportato l’elenco dei campi dei destinatari replicati con l’i
    <td> [posizione/@address4]<br /> </td> 
   </tr> 
   <tr> 
-   <td> CAP/Codice postale<br /> </td> 
+   <td> CAP/CAP<br /> </td> 
    <td> [posizione/@zipCode]<br /> </td> 
   </tr> 
   <tr> 

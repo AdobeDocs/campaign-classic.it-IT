@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaig
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 3%
+source-wordcount: '471'
+ht-degree: 4%
 
 ---
 
@@ -37,7 +37,7 @@ Audit Trail è costituito da tre componenti:
    * Pausa
    * Interruzione
    * Riavvio
-   * Pulizia che è uguale all’azione Rimuovi cronologia
+   * Pulizia uguale all’azione Cancella cronologia
    * Simula, che è uguale all’azione Avvia in modalità simulazione
    * Attivazione uguale all&#39;azione Esegui attività in sospeso ora
    * Arresto totale
@@ -105,4 +105,4 @@ Per eseguire questa operazione:
 
    ![](assets/audit_trail_6.png)
 
-1. Fai clic su **[!UICONTROL Save]** .
+1. Clic **[!UICONTROL Save]** .

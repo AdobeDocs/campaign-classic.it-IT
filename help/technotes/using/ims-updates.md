@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaig
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 9%
+source-wordcount: '569'
+ht-degree: 6%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 9%
 
 
 
-Il 30 giugno 2021 sono state apportate modifiche a [Adobe di sistema Identity Management](https://helpx.adobe.com/enterprise/using/identity.html) Funzionalità di accesso (IMS) che potrebbero influire sulla capacità di continuare a utilizzare Adobe Campaign. Scopri come continuare a utilizzare Adobe Campaign Classic v7 senza interruzioni.
+Il 30 giugno 2021 sono state apportate modifiche a [Adobe di sistema Identity Management](https://helpx.adobe.com/it/enterprise/using/users.html) Funzionalità di accesso (IMS) che potrebbero influire sulla capacità di continuare a utilizzare Adobe Campaign. Scopri come continuare a utilizzare Adobe Campaign Classic v7 senza interruzioni.
 
 ## Cosa è cambiato?
 
@@ -26,7 +26,7 @@ Adobe vuole preservare la funzionalità IMS per tutti i clienti oltre il 30 giug
 
 Per mantenere questa funzionalità, i clienti devono aggiornare la console client sul computer di ogni utente e garantire l’ultimo aggiornamento della [Versione di Windows](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems), con **Internet Explorer 11** incorporato, è installato sul computer di ogni utente.
 
-## Sei interessato da questo problema?
+## Sei interessato?
 
 Se ti connetti a Campaign [tramite un Adobe ID](../../integrations/using/about-adobe-id.md), tramite Identity Management Service (IMS) di Adobe ed eseguendo una versione di Campaign precedente a quelle elencate di seguito, sei interessato.
 

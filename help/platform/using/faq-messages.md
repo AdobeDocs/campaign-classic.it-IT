@@ -11,7 +11,7 @@ exl-id: 7fc24ef2-b021-440b-b1f2-8c77e2425328
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '742'
-ht-degree: 97%
+ht-degree: 83%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 97%
 
 Scopri come eseguire i passaggi di test e convalida prima di inviare messaggi all’interno di Adobe Campaign.
 
-### Che cos’è l’analisi della consegna? {#what-is-the-delivery-analysis-}
+### Cos’è l’analisi della consegna? {#what-is-the-delivery-analysis-}
 
 L’analisi della consegna è la fase in cui viene calcolata la popolazione target e viene preparato il contenuto della consegna. Una volta completata, la consegna è pronta all’invio. Consulta i log per verificare che tutto sia corretto.
 
@@ -52,7 +52,7 @@ Per rilevare eventuali errori nella configurazione dei messaggi, Adobe consiglia
 
 [Fai clic qui per ulteriori informazioni](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
-### Che cos’è una regola di tipologia? {#what-is-a-typology-rule-}
+### Cos’è una regola di tipologia? {#what-is-a-typology-rule-}
 
 Per evitare conflitti tra campagne, Adobe Campaign può sottoporre a test diverse combinazioni applicando regole di vincolo specifiche. Ciò garantisce che i messaggi inviati soddisfino al meglio le esigenze e le aspettative dei clienti, in linea con le politiche di comunicazione aziendali.
 
@@ -96,7 +96,7 @@ Per ogni URL del messaggio, puoi scegliere se attivare o meno il tracking, cambi
 
 [Fai clic qui per ulteriori informazioni](../../delivery/using/about-message-tracking.md) su come tracciare i messaggi in Campaign Classic.
 
-### Dove posso accedere ai log di consegna e di tracking? {#where-can-i-access-delivery-and-tracking-logs-}
+### Dove posso accedere ai registri di consegna e di tracciamento? {#where-can-i-access-delivery-and-tracking-logs-}
 
 Scopri come tenere traccia delle consegne e comprendere il comportamento dei destinatari [da questa pagina](../../delivery/using/delivery-dashboard.md).
 

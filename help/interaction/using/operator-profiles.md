@@ -11,7 +11,7 @@ exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '391'
-ht-degree: 9%
+ht-degree: 3%
 
 ---
 
@@ -24,7 +24,7 @@ Esistono due tipi di operatori che utilizzano l’interazione: gestori delle off
 * **[!UICONTROL Offer manager]** : crea e mantiene le offerte. Tieni presente che se le offerte vengono utilizzate nel flusso di lavoro, l’operatore dovrà trovarsi nel **[!UICONTROL Administrator]** o **[!UICONTROL Offer managers]** per eseguire il flusso di lavoro.
 * **[!UICONTROL Delivery manager]** : approva e utilizza le offerte
 
-I passaggi per la creazione di operatori specifici per l’interazione sono identici a quelli utilizzati per creare tutti gli altri operatori sulla piattaforma. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/access-management.md). I diritti vengono configurati durante la creazione dell’operatore.
+I passaggi per la creazione di operatori specifici per l’interazione sono identici a quelli utilizzati per creare tutti gli altri operatori sulla piattaforma. Per ulteriori informazioni, consulta [questa sezione](../../platform/using/access-management.md). I diritti vengono configurati durante la creazione dell’operatore.
 
 ## Gestione offerte {#offer-manager}
 
@@ -39,7 +39,7 @@ I diritti assegnati al gestore delle offerte consentono loro di svolgere le segu
 * Visualizza **[!UICONTROL Live]** ambienti.
 * Configurare le funzioni di amministrazione (spazi e filtri predefiniti).
 * Creare e modificare le categorie.
-* Crea offerte.
+* Creare le offerte.
 * Configurare l’idoneità per le offerte.
 * Approvare le offerte.
 
@@ -99,7 +99,7 @@ I diritti assegnati ai responsabili della consegna consentono loro di svolgere i
    <td> Letto<br /> </td> 
   </tr> 
   <tr> 
-   <td> Filtri per offerte predefiniti<br /> </td> 
+   <td> Filtri di offerta predefiniti<br /> </td> 
    <td> Lettura/scrittura<br /> </td> 
    <td> Letto<br /> </td> 
   </tr> 
@@ -119,7 +119,7 @@ I diritti assegnati ai responsabili della consegna consentono loro di svolgere i
    <td> Letto<br /> </td> 
   </tr> 
   <tr> 
-   <td> Categoria offerta<br /> </td> 
+   <td> Categoria di offerta<br /> </td> 
    <td> Lettura/scrittura<br /> </td> 
    <td> Letto<br /> </td> 
   </tr> 
@@ -159,7 +159,7 @@ I diritti assegnati ai responsabili della consegna consentono loro di svolgere i
    <td> </td> 
   </tr> 
   <tr> 
-   <td> Filtri per offerte predefiniti<br /> </td> 
+   <td> Filtri di offerta predefiniti<br /> </td> 
    <td> Letto<br /> </td> 
    <td> Letto<br /> </td> 
   </tr> 
@@ -179,7 +179,7 @@ I diritti assegnati ai responsabili della consegna consentono loro di svolgere i
    <td> Letto<br /> </td> 
   </tr> 
   <tr> 
-   <td> Categoria offerta<br /> </td> 
+   <td> Categoria di offerta<br /> </td> 
    <td> </td> 
    <td> Letto<br /> </td> 
   </tr> 

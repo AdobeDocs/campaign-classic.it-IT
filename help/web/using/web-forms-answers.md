@@ -2,14 +2,14 @@
 product: campaign
 title: Risposte ai moduli web
 description: Risposte ai moduli web
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Web Forms
 exl-id: 5d48bb27-1884-47f1-acb7-dff5113565bc
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 1%
+source-wordcount: '872'
+ht-degree: 0%
 
 ---
 
@@ -26,11 +26,11 @@ Per ogni campo di input di un modulo sono disponibili le seguenti opzioni di arc
 
 * **[!UICONTROL Edit a recipient]**
 
-   È possibile selezionare un campo del database: le risposte degli utenti verranno memorizzate in questo campo. Per ogni utente, viene salvato solo l’ultimo valore inserito: viene aggiunto al suo profilo: fai riferimento a [Memorizzazione dei dati nel database](#storing-data-in-the-database).
+  È possibile selezionare un campo del database: le risposte degli utenti verranno memorizzate in questo campo. Per ogni utente, viene salvato solo l’ultimo valore inserito: viene aggiunto al suo profilo: fai riferimento a [Memorizzazione dei dati nel database](#storing-data-in-the-database).
 
 * **[!UICONTROL Variable]**
 
-   Se non si desidera memorizzare informazioni nel database, è possibile utilizzare una variabile. Le variabili locali possono essere dichiarate a monte. Fai riferimento a [Memorizzazione dei dati in una variabile locale](#storing-data-in-a-local-variable).
+  Se non si desidera memorizzare informazioni nel database, è possibile utilizzare una variabile. Le variabili locali possono essere dichiarate a monte. Fai riferimento a [Memorizzazione dei dati in una variabile locale](#storing-data-in-a-local-variable).
 
 ### Memorizzazione dei dati nel database {#storing-data-in-the-database}
 
@@ -88,25 +88,25 @@ Per ogni modulo, le risposte fornite possono essere riutilizzate nei campi o nel
 
 * Per un contenuto memorizzato in un campo del database:
 
-   ```
-   <%=ctx.recipient.@field name%
-   ```
+  ```
+  <%=ctx.recipient.@field name%
+  ```
 
 * Per un contenuto archiviato in una variabile locale:
 
-   ```
-   <%= ctx.vars.variable name %
-   ```
+  ```
+  <%= ctx.vars.variable name %
+  ```
 
 * Per un contenuto memorizzato in un campo di testo HTML:
 
-   ```
-   <%== HTML field name %
-   ```
+  ```
+  <%== HTML field name %
+  ```
 
-   >[!NOTE]
-   >
-   >A differenza degli altri campi per i quali `<%=` vengono sostituiti con caratteri di escape, il contenuto del HTML viene salvato così come è utilizzando `<%==` sintassi.
+  >[!NOTE]
+  >
+  >A differenza degli altri campi per i quali `<%=` vengono sostituiti con caratteri di escape, il contenuto del HTML viene salvato così come è utilizzando `<%==` sintassi.
 
 ## Salvataggio delle risposte ai moduli Web {#saving-web-forms-answers}
 
@@ -118,15 +118,15 @@ Esistono due modi per utilizzare questa casella:
 
 * Se il modulo Web è accessibile tramite un collegamento inviato in un messaggio di posta elettronica e l&#39;utente che accede all&#39;applicazione si trova già nel database, è possibile controllare **[!UICONTROL Update the preloaded record]** opzione. Per ulteriori informazioni, consulta [Consegna di un modulo tramite e-mail](publishing-a-web-form.md#delivering-a-form-via-email).
 
-   In questo caso, Adobe Campaign utilizza la chiave primaria crittografata del profilo utente, un identificatore univoco assegnato a ciascun profilo da Adobe Campaign. È necessario configurare le informazioni da precaricare tramite la casella di precaricamento. Per ulteriori informazioni, consulta [Precaricamento dei dati del modulo](publishing-a-web-form.md#pre-loading-the-form-data).
+  In questo caso, Adobe Campaign utilizza la chiave primaria crittografata del profilo utente, un identificatore univoco assegnato a ciascun profilo da Adobe Campaign. È necessario configurare le informazioni da precaricare tramite la casella di precaricamento. Per ulteriori informazioni, consulta [Precaricamento dei dati del modulo](publishing-a-web-form.md#pre-loading-the-form-data).
 
-   >[!CAUTION]
-   >
-   >Questa opzione sostituisce i dati utente, incluso l’indirizzo e-mail se è presente un campo in cui immetterlo. Non può essere utilizzato per creare nuovi profili e richiede l’utilizzo di una casella di precaricamento nel modulo.
+  >[!CAUTION]
+  >
+  >Questa opzione sostituisce i dati utente, incluso l’indirizzo e-mail se è presente un campo in cui immetterlo. Non può essere utilizzato per creare nuovi profili e richiede l’utilizzo di una casella di precaricamento nel modulo.
 
 * Per arricchire i dati dei destinatari nel database, modifica la casella di archiviazione e seleziona la chiave di riconciliazione. Per uso interno (in genere un sistema Intranet) o per un modulo utilizzato per creare nuovi profili, ad esempio, puoi selezionare i campi di riconciliazione. Nella casella sono disponibili tutti i campi del database utilizzati nelle varie pagine dell&#39;applicazione Web:
 
-   ![](assets/s_ncs_admin_survey_save_box_edit.png)
+  ![](assets/s_ncs_admin_survey_save_box_edit.png)
 
 Per impostazione predefinita, i dati vengono importati nel database da un **[!UICONTROL Update or insertion]** operazione: se esiste nel database, l’elemento viene aggiornato (ad esempio, la newsletter selezionata o l’indirizzo e-mail inserito). Se non esiste, le informazioni vengono aggiunte.
 

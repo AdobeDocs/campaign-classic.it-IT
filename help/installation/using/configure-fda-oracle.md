@@ -10,7 +10,7 @@ topic-tags: connectors
 exl-id: 320bfbb4-533b-4c45-a46f-c3c8dd68221f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '356'
 ht-degree: 1%
 
 ---
@@ -98,6 +98,6 @@ Il [!DNL Oracle] l’account esterno ti consente di collegare l’istanza Campai
 
    * **[!UICONTROL Password]**: password dell’account utente
 
-   * **[!UICONTROL Time zone]**: Fuso orario server
+   * **[!UICONTROL Time zone]**: fuso orario del server
 
    ![](assets/oracle_config.png)

@@ -2,12 +2,12 @@
 product: campaign
 title: Monitorare i flussi di lavoro tecnici
 description: Monitorare i flussi di lavoro tecnici
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '511'
 ht-degree: 6%
 
 ---
@@ -95,4 +95,4 @@ Puoi creare un flusso di lavoro di monitoraggio per inviare un’e-mail ogni vol
 
 È possibile creare una vista in modo da poter monitorare tutti i flussi di lavoro in un’area funzionale o a livello di sistema.
 
-Puoi anche utilizzare la funzionalità per processi o rapporti di Adobe Campaign per creare la documentazione su richiesta, sempre aggiornata.
+Puoi anche utilizzare la funzionalità per job o report di Adobe Campaign per creare la documentazione su richiesta, sempre aggiornata.

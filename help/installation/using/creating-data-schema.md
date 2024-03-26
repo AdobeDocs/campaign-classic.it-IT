@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaig
 exl-id: 8702499b-1700-4d1f-a0e0-f7a9dfb4b88f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 4%
+source-wordcount: '190'
+ht-degree: 3%
 
 ---
 
@@ -32,7 +32,7 @@ Per creare uno schema su un database esterno:
 
    ![](assets/wf_new_schema_select_table_fda.png)
 
-1. Fai clic su **[!UICONTROL OK]** per confermare. Adobe Campaign rileva automaticamente la struttura della tabella selezionata e genera lo schema logico. Tieni presente che Adobe Campaign non genera collegamenti.
+1. Clic **[!UICONTROL OK]** per confermare. Adobe Campaign rileva automaticamente la struttura della tabella selezionata e genera lo schema logico. Tieni presente che Adobe Campaign non genera collegamenti.
 
 1. Clic **[!UICONTROL Save]** per confermare la creazione.
 

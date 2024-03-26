@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Invio di una richiesta ad Adobe
-description: Invio di una richiesta ad Adobe
+title: Invio di una richiesta all’Adobe
+description: Invio di una richiesta all’Adobe
 feature: Audiences, People Core Service Integration
 badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
@@ -11,12 +11,12 @@ topic-tags: audience-sharing
 exl-id: f3c19fcd-12cb-4ca3-b4b7-7dc4be57f4ea
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 17%
+source-wordcount: '152'
+ht-degree: 2%
 
 ---
 
-# Invio di una richiesta ad Adobe{#submitting-request-to-adobe}
+# Invio di una richiesta all’Adobe{#submitting-request-to-adobe}
 
 
 
@@ -37,7 +37,7 @@ Una volta che IMS è abilitato per la tua organizzazione, puoi richiedere il pro
    <td> Nome dell’organizzazione </td> 
   </tr> 
   <tr> 
-   <td> <strong>ID organizzazione </strong><br /> </td> 
+   <td> <strong>ID organizzazione</strong><br /> </td> 
    <td> Il tuo Organization ID. <br> Per trovare l’ID organizzazione, consulta <a href="https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=it">questa pagina</a></td> 
   </tr> 
   <tr> 

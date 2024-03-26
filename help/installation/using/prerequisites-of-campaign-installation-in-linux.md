@@ -4,15 +4,15 @@ title: Prerequisiti per l’installazione di Campaign in Linux
 description: Prerequisiti per l’installazione di Campaign in Linux
 feature: Installation, Instance Settings
 badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
-badge-v7-prem: label="on-premise e ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
+badge-v7-prem: label="on-premise e ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo a distribuzioni on-premise e ibride"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 2%
+source-wordcount: '923'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 ## Prerequisiti software {#software-prerequisites}
 
-Questa sezione descrive i passaggi di configurazione preliminari necessari prima di installare Adobe Campaign.
+Questa sezione descrive in dettaglio i passaggi preliminari di configurazione necessari prima dell&#39;installazione di Adobe Campaign.
 
 La configurazione tecnica e software necessaria per l’installazione di Adobe Campaign è descritta nella [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
@@ -43,9 +43,9 @@ Come promemoria, è necessario installare e configurare correttamente i seguenti
 
 Per installare Adobe Campaign in Linux, assicurati di disporre delle librerie necessarie.
 
-* La libreria C deve essere in grado di supportare la modalità TLS (Thread Local Storage). Questa modalità è attiva nella maggior parte dei casi, ad eccezione di alcuni kernel per i quali il supporto Xen è stato disattivato.
+* La libreria C deve essere in grado di supportare la modalità TLS (Thread Local Storage). Questa modalità è attiva nella maggior parte dei casi tranne che con alcuni kernel per i quali il supporto Xen è stato disabilitato.
 
-  Per verificare questo aspetto, puoi utilizzare **uname -a | grep xen** ad esempio.
+  Per verificarlo, puoi usare il **comando uname -a | grep xen** per esempio.
 
   Se il comando non restituisce alcun elemento (riga vuota), significa che la configurazione è corretta.
 
@@ -53,15 +53,15 @@ Per installare Adobe Campaign in Linux, assicurati di disporre delle librerie ne
 
   Per le distribuzioni RHEL 7/8, è richiesta la versione 1.0 di OpenSSL.
 
-* Per utilizzare Adobe Campaign, è necessario disporre del **libicu** libreria installata.
+* Per utilizzare Adobe Campaign, è necessario avere installato il **libreria** libizu.
 
-  Le seguenti versioni di **libicu** sono supportati (32 bit o 64 bit):
+  Sono supportate le seguenti versioni di **libicu** (32bit o 64bit):
 
-   * 7/8, CentOS 7: libicu50
+   * RHEL 7/8, CentOS 7: libicu50
    * Debian 8: libicu52
    * Debian 9: libicu57
 
-  Per utilizzare Adobe Campaign, è necessario che sia installata la libreria libc-ares. In RHEL/CentOS, esegui il seguente comando:
+  Per utilizzare Adobe Campaign, è necessario che libc-ares libreria installato. In RHEL/CentOS, esegui il seguente comando:
 
   ```
   yum install c-ares
@@ -103,7 +103,7 @@ SELINUX=disabled
 
 ### Font per le statistiche MTA {#fonts-for-mta-statistics}
 
-Per visualizzare correttamente i rapporti sulle statistiche MTA (nms/fra/jsp/stat.jsp), aggiungi i font.
+Affinché i rapporti sulle statistiche MTA (nms/fra/jsp/stat.jsp) vengano visualizzati correttamente, aggiungere i caratteri.
 
 In Debian, aggiungi il comando:
 
@@ -125,7 +125,7 @@ In Redhat, utilizzate il seguente comando:
   dnf install xorg-x11-fonts-misc xorg-x11-fonts-75dpi dejavu-lgc-sans-fonts  dejavu-sans-fonts dejavu-sans-mono-fonts dejavu-serif-fonts
   ```
 
-### Font per istanze giapponesi {#fonts-for-japanese-instances}
+### Font per Giapponese istanze {#fonts-for-japanese-instances}
 
 I font con caratteri specifici sono necessari per le istanze giapponesi al fine di esportare i rapporti in formato PDF.
 
@@ -167,7 +167,7 @@ Per Debian, sono necessarie le seguenti configurazioni:
 
 ### Installazione di LibreOffice per CentOS {#installing-libreoffice-for-centos}
 
-Con CentOS sono necessarie le seguenti configurazioni:
+Le seguenti configurazioni sono necessarie con CentOS:
 
 ```
 yum install libreoffice-headless libreoffice-writer libreoffice-calc
@@ -183,15 +183,15 @@ Controlla anche il [Database](../../installation/using/database.md) sezione.
 
 ### PostgreSQL {#postgresql}
 
-Adobe Campaign supporta tutte le versioni delle librerie client PostgreSQL dalla versione 7.2: (**libpq.so.5**, **libpq.so.4**, **libpq.so.3.2** e **libpq.so.3.1**).
+Adobe Campaign supporta tutte le versioni del client PostgreSQL librerie dalla versione 7.2: (libpq.so.5 **,** libpq.so.4 **,** libpq.so.3.2 **e** libpq.so.3.1 ****).
 
-L’utilizzo di PostgreSQL con Adobe Campaign richiede anche l’installazione della **pgcrypto** librerie.
+L&#39;utilizzo di PostgreSQL con Adobe Campaign richiede anche l&#39;installazione del corrispondente **librerie pgcrypto** .
 
 ###  Oracle {#oracle}
 
-Recupera la versione della libreria per Debian a 64 bit, ovvero: **libclntsh.so**, **libclntsh.so.11.1** e **libclntsh.so.10.1**.
+Recupera la versione libreria per Debian a 64 bit, cioè: **libclntsh.so**, **libclntsh.so.11.1** e **libclntsh.so.10.1**.
 
-È possibile ottenere un pacchetto Linux RPM da Oracle Technology Network.
+È possibile ottenere un pacchetto RPM Linux da Oracle Technology Network.
 
 >[!NOTE]
 >
@@ -225,7 +225,7 @@ Le installazioni di Adobe Campaign per Linux devono essere eseguite nella seguen
 
 Il processo di installazione è descritto in questo capitolo. I passaggi di installazione sono i seguenti:
 
-* Passaggio 1: installazione del server applicazioni, fare riferimento a [Installazione di pacchetti con Linux](../../installation/using/installing-packages-with-linux.md).
-* Passaggio 2: integrazione con un server web (facoltativo, a seconda dei componenti distribuiti).
+* Passo 1: Installazione del server applicazione, fare riferimento a [Installazione di pacchetti con Linux](../../installation/using/installing-packages-with-linux.md).
+* Passaggio 2: integrazione con un server Web (facoltativo, a seconda dei componenti distribuiti).
 
-Una volta completati i passaggi di installazione, è necessario configurare le istanze, il database e il server. Per ulteriori informazioni, consulta [Informazioni sulla configurazione iniziale](../../installation/using/about-initial-configuration.md).
+Una volta completati i passaggi di installazione, è necessario configurare le istanze, il database e il server. Per ulteriori informazioni, fare riferimento a [Informazioni sulla configurazione](../../installation/using/about-initial-configuration.md) iniziale.

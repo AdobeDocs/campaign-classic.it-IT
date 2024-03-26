@@ -9,8 +9,8 @@ role: User
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 10%
+source-wordcount: '894'
+ht-degree: 9%
 
 ---
 
@@ -20,7 +20,7 @@ I campi di personalizzazione sono utilizzati per la personalizzazione di primo l
 
 Ad esempio, il campo di personalizzazione con **&lt;%= recipient.LastName %>** La sintassi indica ad Adobe Campaign di inserire il nome del destinatario nel database (tabella dei destinatari).
 
-![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#personalization-fields-video)
+![](assets/do-not-localize/how-to-video.png) [Guarda il video su questa funzione](#personalization-fields-video)
 
 >[!CAUTION]
 >

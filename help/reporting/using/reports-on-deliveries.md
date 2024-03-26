@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Report sulle consegne
-description: Report sulle consegne
+title: Rapporti sulle consegne
+description: Rapporti sulle consegne
 badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Reporting, Monitoring
@@ -9,11 +9,11 @@ exl-id: dcbf280c-3040-4218-a453-1497662fef2e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '223'
-ht-degree: 6%
+ht-degree: 1%
 
 ---
 
-# Informazioni sui report sulle consegne{#reports-on-deliveries}
+# Informazioni sui rapporti sulle consegne{#reports-on-deliveries}
 
 
 
@@ -36,7 +36,7 @@ Quando viene generato il rapporto, è possibile eseguire varie azioni utilizzand
 
 ![](assets/s_ncs_user_report_toolbar.png)
 
-Puoi:
+Puoi eseguire le seguenti azioni:
 
 * Esportare il report in Excel, PDF o Apri documento
 * Stampa il report,

@@ -12,7 +12,7 @@ exl-id: 1180e664-5ead-4d5d-b1c3-6fe397c1f3a2
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 8%
+ht-degree: 4%
 
 ---
 
@@ -30,7 +30,7 @@ Per impostazione predefinita, in questa directory sono presenti tre modelli di i
 
 ![](assets/s_ncs_user_export_wizard_template_create.png)
 
-È possibile duplicare i modelli esistenti per creare modelli personalizzati o crearne uno nuovo tramite **[!UICONTROL New > Import template]** / **[!UICONTROL Export template]** menu.
+Puoi duplicare i modelli esistenti per crearne di nuovi o crearne di nuovi tramite **[!UICONTROL New > Import template]** / **[!UICONTROL Export template]** menu.
 
 Il processo di configurazione di un modello è quindi lo stesso di quello presentato in queste sezioni:
 

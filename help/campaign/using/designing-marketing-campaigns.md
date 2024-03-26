@@ -8,8 +8,8 @@ feature: Campaigns
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 23%
+source-wordcount: '445'
+ht-degree: 21%
 
 ---
 
@@ -53,7 +53,7 @@ Nel contesto di Campaign devono essere noti i seguenti concetti:
 
   Per ulteriori informazioni al riguardo, consulta [questa sezione](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
-* **Finalità**
+* **Obiettivi**
 
   All’interno della campagna, del programma o del piano, puoi fornire un elenco di obiettivi. Si tratta di valori quantificati da raggiungere. Al termine della campagna, del programma o del piano, il modulo MRM consente di confrontare gli obiettivi e i risultati in report dedicati.
 

@@ -12,8 +12,8 @@ hidefromtoc: true
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 4%
+source-wordcount: '722'
+ht-degree: 1%
 
 ---
 
@@ -41,7 +41,7 @@ A seconda della configurazione, esistono diversi modi per eseguire i test di mig
    >
    >Il comando viene avviato per impostazione predefinita in **asciutto** ed elenca tutte le richieste eseguite da tale comando, senza avviarle. Per eseguire le richieste di cauterizzazione, utilizzare **eseguire** nel comando.
 
-1. Per verificare che i backup siano corretti, provare a ripristinarli. Assicurati di poter accedere al database, alle tabelle, ai dati, ecc.
+1. Per verificare che i backup siano corretti, provare a ripristinarli. Assicurati di poter accedere al database, alle tabelle, ai dati e così via.
 1. Verifica la procedura di migrazione nell’ambiente di sviluppo.
 1. Se la migrazione dell’ambiente di sviluppo ha esito positivo, puoi eseguire la migrazione dell’ambiente di produzione.
 
@@ -117,7 +117,7 @@ Vengono cercate le seguenti espressioni (distinzione maiuscole/minuscole):
  <thead> 
   <tr> 
    <th> Espressione<br /> </th> 
-   <th> Codice errore<br /> </th> 
+   <th> Codice di errore<br /> </th> 
    <th> Tipo di registro<br /> </th> 
    <th> Commenti<br /> </th> 
   </tr> 

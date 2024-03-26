@@ -9,7 +9,7 @@ exl-id: 728b509f-2755-48df-8b12-449b7044e317
 source-git-commit: 4a29c189e1e438bbb90067ece63ced0196c618ec
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -175,5 +175,5 @@ Per ulteriori informazioni, consulta i seguenti collegamenti:
 * [Introduzione agli schemi](about-schema-reference.md)
 * [Struttura dello schema](schema-structure.md)
 * [Gestione delle chiavi](database-keys.md)
-* [Gestione dei collegamenti](database-links.md)
+* [Gestione collegamenti](database-links.md)
 * [Modello dati di Campaign](about-data-model.md)

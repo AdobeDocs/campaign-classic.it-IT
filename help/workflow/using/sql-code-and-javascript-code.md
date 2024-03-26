@@ -2,13 +2,13 @@
 product: campaign
 title: Codice SQL e codice JavaScript
 description: Ulteriori informazioni sulle attività del flusso di lavoro relative ai codici SQL e JavaScript
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows
 exl-id: 729a2010-c2d8-481b-8c9e-780b9e5f97ef
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 10%
+source-wordcount: '277'
+ht-degree: 12%
 
 ---
 
@@ -24,11 +24,11 @@ Un **[!UICONTROL SQL code]** L&#39;attività esegue uno script SQL. Lo script è
 
 * **[!UICONTROL Script]**
 
-   L’area centrale dell’editor contiene lo script da eseguire. Questo script è un modello JST e può quindi essere configurato in base al contesto del flusso di lavoro.
+  L’area centrale dell’editor contiene lo script da eseguire. Questo script è un modello JST e può quindi essere configurato in base al contesto del flusso di lavoro.
 
 * **[!UICONTROL Processing errors]**
 
-   Fai riferimento a [Errori di elaborazione](monitoring-workflow-execution.md#processing-errors).
+  Fai riferimento a [Errori di elaborazione](monitoring-workflow-execution.md#processing-errors).
 
 ## Codice JavaScript e codice JavaScript avanzato {#javascript-code}
 

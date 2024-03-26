@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Best practice per la consegna
+title: Best practice per le prestazioni di consegna
 description: Ulteriori informazioni sulle prestazioni di consegna e sulle best practice
 badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
@@ -9,12 +9,12 @@ role: User, Data Engineer
 exl-id: cc793d7b-0a26-4a75-97ed-d79c87d9b3b8
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 6%
+source-wordcount: '468'
+ht-degree: 5%
 
 ---
 
-# Best practice per la consegna {#delivery-performances}
+# Best practice per le prestazioni di consegna {#delivery-performances}
 
 È consigliabile seguire le linee guida riportate di seguito per garantire il corretto funzionamento delle consegne, nonché i controlli da eseguire in caso di problemi con le consegne.
 

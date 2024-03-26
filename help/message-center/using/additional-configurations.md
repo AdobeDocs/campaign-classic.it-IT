@@ -10,8 +10,8 @@ topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
 source-git-commit: 52dcc8c01c5ce2421bfb59235bd0e458e7c8122f
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 7%
+source-wordcount: '811'
+ht-degree: 5%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 7%
 
 È possibile configurare le soglie di avviso (arancione) e di avviso (rosso) degli indicatori visualizzati nella **Livello di servizio del Centro messaggi** e **Tempo di elaborazione del Centro messaggi** rapporti (fare riferimento a [Accedere ai rapporti di messaggistica transazionale](../../message-center/using/about-transactional-messaging-reports.md)).
 
-A tale scopo, segui la procedura indicata di seguito:
+A questo scopo, segui la procedura indicata di seguito:
 
 1. Apri la procedura guidata di distribuzione su **istanza di esecuzione**.
 
@@ -91,7 +91,7 @@ Nelle istanze di esecuzione, è possibile accedere ai flussi di lavoro tecnici p
    * **[!UICONTROL Sent]** : questo stato viene copiato dai registri di consegna. Significa che la consegna è stata inviata.
    * **[!UICONTROL Ignored by the delivery]** : questo stato viene copiato dai registri di consegna. Significa che la consegna è stata ignorata.
    * **[!UICONTROL Delivery failed]** : questo stato viene copiato dai registri di consegna. Significa che la consegna è non è andata a buon fine.
-   * **[!UICONTROL Event not taken into account]** : impossibile collegare l’evento a un modello di messaggio. L’evento non viene elaborato.
+   * **[!UICONTROL Event not taken into account]** : impossibile collegare l’evento a un modello di messaggio. L’evento non verrà elaborato.
 
 ### Pianificazione del flusso di lavoro di archiviazione
 
@@ -166,7 +166,7 @@ Nelle istanze di esecuzione, segui i passaggi seguenti:
 
 Nell’istanza di controllo, devi collegare i modelli di consegna e gli account esterni.
 
-A tale scopo, segui la procedura indicata di seguito:
+A questo scopo, segui la procedura indicata di seguito:
 
 1. Crea un account esterno per marchio con lo stesso nome interno definito nel [istanza di esecuzione](#execution-instance) (passaggio 1).
 

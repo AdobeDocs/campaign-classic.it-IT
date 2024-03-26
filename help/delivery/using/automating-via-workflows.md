@@ -9,8 +9,8 @@ role: User
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1202'
-ht-degree: 1%
+source-wordcount: '1200'
+ht-degree: 0%
 
 ---
 
@@ -51,7 +51,7 @@ Le proprietà delle attività sono suddivise in quattro passaggi:
 
 ### Aggiornare il contenuto {#update-the-content}
 
-* **Argomento**
+* **Oggetto**
 
   Consente di modificare l’oggetto dell’azione di consegna durante la pubblicazione.
 

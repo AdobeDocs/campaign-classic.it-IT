@@ -60,26 +60,26 @@ Questo elemento consente di definire un parametro per la chiamata di un metodo S
    * booleano
    * byte
    * CDATA
-   * datetime
+   * Data e ora
    * datetimetz
    * datetimenotz
-   * date
+   * data
    * DOMDocument
    * DOMElement
    * doppio
    * enum
-   * galleggiare
+   * mobile
    * html
    * int64
    * link
    * long
    * promemoria
    * MNTOKEN
-   * percent
+   * percentuale
    * chiave primaria
    * corto
    * stringa
-   * orario
+   * ora
    * intervallo di tempo
    * uuid
 

@@ -7,8 +7,8 @@ hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 69%
+source-wordcount: '657'
+ht-degree: 63%
 
 ---
 
@@ -55,7 +55,7 @@ Come effettuare l’aggiornamento a una nuova build? Come monitorare l’esecuzi
         <li><a href="delivery/using/delivery-performances.md">Prestazioni di consegna</a></li>
         <li><a href="workflow/using/workflow-best-practices.md">Ottimizzare le prestazioni del flusso di lavoro</a></li>
         <li><a href="workflow/using/monitoring-workflow-execution.md">Risoluzione dei problemi di esecuzione dei flussi di lavoro</a></li>
-        <li><a href="platform/using/sftp-server-usage.md">Utilizzo di server SFTP</a></li>
+        <li><a href="platform/using/sftp-server-usage.md">Utilizzo del server SFTP</a></li>
         <li><a href="delivery/using/understanding-delivery-failures.md">Errori di consegna</a></li>
         </ul>
     </td>
@@ -73,7 +73,7 @@ Come effettuare l’aggiornamento a una nuova build? Come monitorare l’esecuzi
     </td>
     <td valign="top">
         <ul>
-        <li><a href="production/using/build-upgrade.md">Eseguire l’aggiornamento alla build più recente</a></li>
+        <li><a href="production/using/build-upgrade.md">Effettua l’aggiornamento alla build più recente</a></li>
         <li><a href="platform/using/faq-build-upgrade.md">Domande frequenti sull’aggiornamento della build</a></li>
         <li><a href="delivery/using/about-delivery-monitoring.md">Monitorare una consegna</a></li>
         <li><a href="delivery/using/understanding-quarantine-management.md">Gestione della quarantena</a></li>
@@ -137,7 +137,7 @@ Il nuovo sistema di ticket è stato lanciato tramite [Adobe Admin Console](https
 
 ### Chiedi agli esperti
 
-Iscriviti alla community Campaign Classic: consulta le risposte già fornite alle domande esistenti o sottoponi alla community le tue domande. [Partecipa alla conversazione](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_vuoto}.
+Iscriviti alla community Campaign Classic: consulta le risposte già fornite alle domande esistenti o sottoponi alla community le tue domande. [Partecipa alla conversazione](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
 
 ### Accedi al Centro di download di Campaign
 

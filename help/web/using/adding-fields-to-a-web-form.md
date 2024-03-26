@@ -2,14 +2,14 @@
 product: campaign
 title: Aggiungere campi a un modulo web
 description: Aggiungere campi a un modulo web
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Web Forms, Landing Pages
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '2368'
-ht-degree: 1%
+source-wordcount: '2376'
+ht-degree: 0%
 
 ---
 
@@ -72,39 +72,40 @@ In una pagina modulo è possibile inserire cinque diversi tipi di campi di testo
 
 * **Testo**: consente all’utente di immettere un testo su una riga.
 
-   ![](assets/s_ncs_admin_survey_txt_ex.png)
+  ![](assets/s_ncs_admin_survey_txt_ex.png)
 
 * **Numero**: consente all’utente di immettere un numero su una riga. per ulteriori informazioni, consulta [Aggiunta di numeri](#adding-numbers).
 
-   Quando la pagina viene approvata, il contenuto del campo viene controllato per verificare che il valore immesso sia compatibile con il campo. Per ulteriori informazioni, consulta [Definizione delle impostazioni di controllo](form-rendering.md#defining-control-settings).
+  Quando la pagina viene approvata, il contenuto del campo viene controllato per verificare che il valore immesso sia compatibile con il campo. Per ulteriori informazioni, consulta [Definizione delle impostazioni di controllo](form-rendering.md#defining-control-settings).
 
 * **Password**: consente all’utente di immettere testo su una singola riga. Durante l&#39;immissione del testo, i caratteri vengono sostituiti da punti:
 
-   ![](assets/s_ncs_admin_survey_passwd_ex.png)
+  ![](assets/s_ncs_admin_survey_passwd_ex.png)
 
-   >[!CAUTION]
-   >
-   >Le password vengono archiviate non crittografate nel database.
+  >[!CAUTION]
+  >
+  >Le password vengono archiviate non crittografate nel database.
 
 * **Testo su più righe**: consente all’utente di immettere testo su più righe.
 
-   ![](assets/s_ncs_admin_survey_txtmulti_ex.png)
+  ![](assets/s_ncs_admin_survey_txtmulti_ex.png)
 
-   >[!CAUTION]
-   >
-   >I campi di testo su più righe sono campi specifici che possono contenere ritorni a capo. Il relativo spazio di archiviazione deve essere associato a un campo mappato su un elemento XML, non a un attributo XML.
+  >[!CAUTION]
+  >
+  >I campi di testo su più righe sono campi specifici che possono contenere ritorni a capo. Il relativo spazio di archiviazione deve essere associato a un campo mappato su un elemento XML, non a un attributo XML.
+  >   
 
 * **Testo su più righe arricchito**: consente all’utente di immettere il testo con un layout da memorizzare in formato HTML.
 
-   ![](assets/s_ncs_admin_survey_txthtmli_ex.png)
+  ![](assets/s_ncs_admin_survey_txthtmli_ex.png)
 
-   Puoi selezionare il tipo di editor offerto agli utenti. A questo scopo, utilizza la casella a discesa del **[!UICONTROL HTML editor]** campo in **[!UICONTROL Advanced]** scheda.
+  Puoi selezionare il tipo di editor offerto agli utenti. A questo scopo, utilizza la casella a discesa del **[!UICONTROL HTML editor]** campo in **[!UICONTROL Advanced]** scheda.
 
-   ![](assets/webapp_enrich_text_type.png)
+  ![](assets/webapp_enrich_text_type.png)
 
-   Il numero di icone visualizzate varia a seconda del tipo di editor. Per un **[!UICONTROL Advanced]** nell’editor, il rendering sarà il seguente:
+  Il numero di icone visualizzate varia a seconda del tipo di editor. Per un **[!UICONTROL Advanced]** nell’editor, il rendering sarà il seguente:
 
-   ![](assets/webapp_enrich_text_max.png)
+  ![](assets/webapp_enrich_text_max.png)
 
 ### Configurare i campi di input {#configure-input-fields}
 
@@ -378,7 +379,6 @@ Per impostazione predefinita, i file caricati vengono memorizzati in file di ris
 >* Se all’istanza sono collegati più server (architettura di bilanciamento del carico), è necessario assicurarsi che le chiamate al modulo web arrivino sullo stesso server.
 >* Queste implementazioni richiedono l’assistenza del team di consulenza Adobe Campaign.
 >
-
 
 ## Inserire una costante nascosta {#inserting-a-hidden-constant}
 

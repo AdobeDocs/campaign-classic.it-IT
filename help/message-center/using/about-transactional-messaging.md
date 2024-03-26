@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaig
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 7%
+source-wordcount: '647'
+ht-degree: 5%
 
 ---
 
@@ -29,7 +29,7 @@ Le funzionalità di messaggistica transazionale sono progettate per supportare l
 
 * **Perché è importante?** In genere, un messaggio sulle transazioni ha tassi di apertura elevati. Dovrebbe quindi essere concepita con attenzione, in quanto può avere un forte impatto sul comportamento dei clienti in quanto definisce la relazione con essi.
 
-* **Ad esempio?** Potrebbe essere un messaggio di benvenuto dopo la creazione di un account, una conferma della spedizione di un ordine, una fattura, un messaggio di conferma di una modifica della password, una notifica dopo che un cliente ha navigato sul tuo sito web, una comunicazione di indisponibilità del prodotto, un estratto conto, ecc.
+* **Per esempio?** Potrebbe essere un messaggio di benvenuto dopo la creazione di un account, una conferma della spedizione di un ordine, una fattura, un messaggio di conferma di una modifica della password, una notifica dopo che un cliente ha navigato sul tuo sito web, una comunicazione di indisponibilità del prodotto, un estratto conto, ecc.
 
 >[!IMPORTANT]
 >
@@ -72,7 +72,7 @@ Il giorno **istanza di controllo**, è necessario eseguire le azioni seguenti:
 1. [Creare un tipo di evento](../../message-center/using/creating-event-types.md).
 1. [Creare e progettare il modello di messaggio](../../message-center/using/creating-the-message-template.md). Collega un evento al messaggio durante questo passaggio.
 1. [Verifica il messaggio](../../message-center/using/testing-message-templates.md).
-1. [Pubblica il modello di messaggio](../../message-center/using/publishing-message-templates.md).
+1. [Pubblicare il modello di messaggio](../../message-center/using/publishing-message-templates.md).
 
 >[!NOTE]
 >

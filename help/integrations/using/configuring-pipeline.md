@@ -10,8 +10,8 @@ content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 2%
+source-wordcount: '920'
+ht-degree: 1%
 
 ---
 
@@ -31,7 +31,7 @@ Prima di avviare questa configurazione, verifica di utilizzare:
    * 19.1.8.9039
    * 19.1.4.9032 - Gold Standard 11
    * 20.2.4.9187
-   * 20.3.1
+   * 20.3.1.
 * Versione Adobe Analytics Standard
 
 Sono inoltre necessari:

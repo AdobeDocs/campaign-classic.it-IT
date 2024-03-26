@@ -11,7 +11,7 @@ topic-tags: importing-and-exporting-data
 exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1014'
 ht-degree: 1%
 
 ---
@@ -72,7 +72,7 @@ Per importare nel database di Adobe Campaign nuovi profili dei destinatari memor
 
    ![](assets/s_ncs_user_import_example03_01.png)
 
-1. Attività Reconciliation
+1. Riconciliazione
 
    * Vai a **Destinatari (nms:recipient)** tabella.
    * Seleziona la **[!UICONTROL Insertion]** e lasciare i valori predefiniti negli altri campi.
@@ -123,7 +123,7 @@ Si desidera aggiornare i record esistenti nel database e crearne di nuovi da un 
 
    Applicare la procedura descritta nell&#39;esempio 2 precedente.
 
-1. Attività Reconciliation
+1. Riconciliazione
 
    * Mantieni **[!UICONTROL Update or insert]** selezionato per impostazione predefinita.
    * Mantieni l’opzione **[!UICONTROL Management of duplicates]** in **[!UICONTROL Update]** in modo che i record esistenti nel database vengano modificati con i dati del file di testo.
@@ -173,7 +173,7 @@ Applica i seguenti passaggi:
 
    Nell&#39;anteprima delle prime righe del file è possibile vedere che il file contiene aggiornamenti per determinati record.
 
-1. Attività Reconciliation
+1. Riconciliazione
 
    * Vai alla tabella e seleziona la **[!UICONTROL Update]** operazione.
    * Seleziona l’opzione **[!UICONTROL Reject entity]** per **[!UICONTROL Management of doubles]** campo.
@@ -222,7 +222,7 @@ In questo esempio, si noterà che alcuni campi nel file di testo hanno un valore
 
    Applicare la procedura descritta nell&#39;esempio 2 precedente.
 
-1. Attività Reconciliation
+1. Riconciliazione
 
    * Vai alla tabella e seleziona **[!UICONTROL Update]**.
    * Seleziona l’opzione **[!UICONTROL Reject entity]** per **[!UICONTROL Management of doubles]** campo.

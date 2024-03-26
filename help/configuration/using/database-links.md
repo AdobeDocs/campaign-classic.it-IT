@@ -5,15 +5,15 @@ description: Mappatura del database
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
-source-git-commit: 46220dcfdddb8f6f1e7026cafc503aaeecb7e0fa
+exl-id: e05dcd81-bbca-4767-8da3-ea064f7f6c8e
+source-git-commit: 46dcd80d5adc31a66b47c6d75e7914b0a686326b
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 2%
 
 ---
 
-
-# Gestione dei collegamenti {#links--relation-between-tables}
+# Gestione collegamenti {#links--relation-between-tables}
 
 Un collegamento descrive l’associazione tra una tabella e un’altra.
 

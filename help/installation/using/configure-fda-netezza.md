@@ -10,8 +10,8 @@ topic-tags: connectors
 exl-id: b148d34b-4060-4c54-9cb2-9e712a7c17d7
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 0%
+source-wordcount: '376'
+ht-degree: 1%
 
 ---
 
@@ -81,7 +81,7 @@ L’account esterno Netezza ti consente di collegare l’istanza Campaign al dat
 
 1. Per configurare **[!UICONTROL Netezza]** account esterno, è necessario specificare:
 
-   * **[!UICONTROL Type]**: Netezza
+   * **[!UICONTROL Type]**: NETEZZA
 
    * **[!UICONTROL Server]**: URL del server di Netezza
 

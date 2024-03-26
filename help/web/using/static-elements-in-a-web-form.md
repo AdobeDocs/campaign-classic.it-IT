@@ -2,14 +2,14 @@
 product: campaign
 title: Elementi statici in un modulo web
 description: Elementi statici in un modulo web
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Web Forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1031'
-ht-degree: 3%
+source-wordcount: '1039'
+ht-degree: 1%
 
 ---
 
@@ -28,9 +28,9 @@ Sono disponibili i seguenti tipi di campo:
 * Immagine salvata nella libreria delle risorse o in un server accessibile agli utenti. Consulta [Inserimento di immagini](#inserting-images).
 * Script eseguito lato client e/o lato server. Deve essere scritto in JavaScript ed essere compatibile con la maggior parte dei browser per garantire la corretta esecuzione sul lato client.
 
-   >[!NOTE]
-   >
-   >Sul lato server, lo script può utilizzare le funzioni definite in [Documentazione JSAPI per Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=it).
+  >[!NOTE]
+  >
+  >Sul lato server, lo script può utilizzare le funzioni definite in [Documentazione JSAPI per Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=it).
 
 ## Inserisci contenuto HTML {#inserting-html-content}
 
@@ -63,7 +63,7 @@ Per aggiungere un collegamento ipertestuale, vai a **[!UICONTROL Static elements
 * Il **[!UICONTROL Window]** consente di selezionare la modalità di visualizzazione del collegamento nel caso di un sito. È possibile decidere di aprire il collegamento in una nuova finestra, nella finestra corrente o in un&#39;altra finestra.
 * È possibile aggiungere una descrizione comandi, come illustrato di seguito:
 
-   ![](assets/s_ncs_admin_survey_send_an_email.png)
+  ![](assets/s_ncs_admin_survey_send_an_email.png)
 
 * Puoi scegliere di visualizzare il collegamento come pulsante o immagine. A questo scopo, seleziona il tipo di visualizzazione nell’ **[!UICONTROL Type]** campo.
 
@@ -77,39 +77,39 @@ Puoi definire altre azioni per il collegamento, in modo che l’utente possa far
 
 * Aggiorna la pagina
 
-   A questo scopo, seleziona la **[!UICONTROL Refresh page]** nella casella a discesa del **[!UICONTROL Action]** campo.
+  A questo scopo, seleziona la **[!UICONTROL Refresh page]** nella casella a discesa del **[!UICONTROL Action]** campo.
 
-   ![](assets/s_ncs_admin_survey_link_refresh.png)
+  ![](assets/s_ncs_admin_survey_link_refresh.png)
 
 * Visualizza la pagina precedente/successiva
 
-   A questo scopo, seleziona la **[!UICONTROL Next page]** o **[!UICONTROL Previous page]** nella casella a discesa del **[!UICONTROL Action]** campo.
+  A questo scopo, seleziona la **[!UICONTROL Next page]** o **[!UICONTROL Previous page]** nella casella a discesa del **[!UICONTROL Action]** campo.
 
-   ![](assets/s_ncs_admin_survey_link_next.png)
+  ![](assets/s_ncs_admin_survey_link_next.png)
 
-   È possibile nascondere **[!UICONTROL Next]** e/o **[!UICONTROL Back]** se devono essere sostituiti da un collegamento. Fai riferimento a questo [pagina](defining-web-forms-page-sequencing.md).
+  È possibile nascondere **[!UICONTROL Next]** e/o **[!UICONTROL Back]** se devono essere sostituiti da un collegamento. Fai riferimento a questo [pagina](defining-web-forms-page-sequencing.md).
 
-   Il collegamento sostituirà il **[!UICONTROL Next]** utilizzato per impostazione predefinita.
+  Il collegamento sostituirà il **[!UICONTROL Next]** utilizzato per impostazione predefinita.
 
-   ![](assets/s_ncs_admin_survey_link_next_ex.png)
+  ![](assets/s_ncs_admin_survey_link_next_ex.png)
 
 * Visualizza un&#39;altra pagina
 
-   Il **[!UICONTROL Enable a transition]** consente di visualizzare una pagina specifica associata alla transizione in uscita selezionata nel **[!UICONTROL Transition]** campo.
+  Il **[!UICONTROL Enable a transition]** consente di visualizzare una pagina specifica associata alla transizione in uscita selezionata nel **[!UICONTROL Transition]** campo.
 
-   ![](assets/s_ncs_admin_survey_link_viral.png)
+  ![](assets/s_ncs_admin_survey_link_viral.png)
 
-   Per impostazione predefinita, una pagina ha una sola transizione di output. Per creare nuove transizioni, seleziona la pagina e fai clic su **[!UICONTROL Add]** pulsante in **[!UICONTROL Output transitions]** come mostrato di seguito:
+  Per impostazione predefinita, una pagina ha una sola transizione di output. Per creare nuove transizioni, seleziona la pagina e fai clic su **[!UICONTROL Add]** pulsante in **[!UICONTROL Output transitions]** come mostrato di seguito:
 
-   ![](assets/s_ncs_admin_survey_add_transition.png)
+  ![](assets/s_ncs_admin_survey_add_transition.png)
 
-   Nel diagramma, l’aggiunta avrà un aspetto simile al seguente:
+  Nel diagramma, l’aggiunta avrà un aspetto simile al seguente:
 
-   ![](assets/s_ncs_admin_survey_add_transition_graph.png)
+  ![](assets/s_ncs_admin_survey_add_transition_graph.png)
 
-   >[!NOTE]
-   >
-   >Per ulteriori informazioni sulla sequenza delle pagine in un modulo web, consulta [Definizione della sequenza di pagine dei moduli web](defining-web-forms-page-sequencing.md).
+  >[!NOTE]
+  >
+  >Per ulteriori informazioni sulla sequenza delle pagine in un modulo web, consulta [Definizione della sequenza di pagine dei moduli web](defining-web-forms-page-sequencing.md).
 
 ### Personalizzare il contenuto di HTML {#personalizing-html-content}
 
@@ -142,7 +142,7 @@ Il **[!UICONTROL Text]** La scheda consente di creare campi variabili che posson
 
 Utilizzare questo metodo per localizzare facilmente le stringhe. Consulta [Traduzione di un modulo web](translating-a-web-form.md)
 
-Ad esempio, puoi creare un’ **Contatto** che ti consentirà di visualizzare la stringa &quot;Date of last contact:&quot; (Data dell’ultimo contatto) nel contenuto del HTML. A tale scopo, segui la procedura indicata di seguito:
+Ad esempio, puoi creare un’ **Contatto** che ti consentirà di visualizzare la stringa &quot;Date of last contact:&quot; (Data dell’ultimo contatto) nel contenuto del HTML. A questo scopo, segui la procedura indicata di seguito:
 
 1. Fai clic sul pulsante **[!UICONTROL Text]** del testo del HTML.
 1. Fai clic su **[!UICONTROL Add]** icona.

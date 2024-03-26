@@ -10,8 +10,8 @@ topic-tags: tracking-messages
 exl-id: e18d43b6-2a77-4881-85e7-ca36248d4634
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 4%
+source-wordcount: '867'
+ht-degree: 5%
 
 ---
 
@@ -52,7 +52,7 @@ Anche il sistema operativo e i framework dell’applicazione devono supportare T
 
 * **Quale sarà l’impatto dell&#39;aggiornamento?**
 
-  Gli standard di sicurezza e conformità di Adobe richiedono che i protocolli più vecchi vengano resi obsoleti a maggio 2018 e richiedono l’utilizzo di TLS 1.2 come versione aggiornata. Se il sistema non è compatibile con TLS 1.2, l’accesso ad alcuni servizi e app di Adobe è limitato.
+  Gli standard di sicurezza e conformità di Adobe richiedono che i protocolli più vecchi vengano resi obsoleti a maggio 2018 e richiedono l’utilizzo di TLS 1.2 come versione aggiornata. Se il sistema non è conforme a TLS 1.2, l’accesso ad alcuni servizi e app di Adobe è limitato.
 
 * **Quali sono gli effetti di TLS su di te?**
 

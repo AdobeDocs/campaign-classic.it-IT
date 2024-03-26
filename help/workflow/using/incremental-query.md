@@ -2,13 +2,13 @@
 product: campaign
 title: Query incrementale
 description: Ulteriori informazioni sull’attività del flusso di lavoro Incremental query
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: abc08232-1a92-41e8-90f1-02e0a673539b
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 3%
+source-wordcount: '363'
+ht-degree: 5%
 
 ---
 
@@ -50,15 +50,15 @@ Per eseguire questa operazione:
 
    * **[!UICONTROL History in days]**
 
-      I destinatari già oggetto di targeting possono essere registrati per un numero massimo di giorni dal giorno in cui sono stati oggetto di targeting. Se questo valore è zero, i destinatari non vengono mai eliminati dal registro.
+     I destinatari già oggetto di targeting possono essere registrati per un numero massimo di giorni dal giorno in cui sono stati oggetto di targeting. Se questo valore è zero, i destinatari non vengono mai eliminati dal registro.
 
    * **[!UICONTROL Keep history when starting]**
 
-      Questa opzione consente di non eliminare il registro quando l’attività è abilitata.
+     Questa opzione consente di non eliminare il registro quando l’attività è abilitata.
 
    * **[!UICONTROL SQL table name]**
 
-      Questo parametro consente di sovraccaricare la tabella SQL predefinita contenente i dati della cronologia.
+     Questo parametro consente di sovraccaricare la tabella SQL predefinita contenente i dati della cronologia.
 
 ## Parametri di output {#output-parameters}
 

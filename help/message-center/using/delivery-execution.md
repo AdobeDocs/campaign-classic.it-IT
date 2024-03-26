@@ -11,7 +11,7 @@ exl-id: 930c6395-0c00-40ee-a925-3e0cae67c55f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '240'
-ht-degree: 6%
+ht-degree: 4%
 
 ---
 
@@ -37,7 +37,7 @@ Per impostazione predefinita, sono ordinate in sottocartelle per mese di consegn
 
 >[!NOTE]
 >
->Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento al [MTA avanzato](../../delivery/using/sending-with-enhanced-mta.md), tutti i messaggi transazionali possono essere inviati anche con l’MTA avanzato di Adobe Campaign per migliorare il recapito messaggi, la velocità effettiva e la gestione delle e-mail non consegnate. Tutti gli effetti sono gli stessi dei messaggi di marketing standard.
+>Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento al [MTA avanzato](../../delivery/using/sending-with-enhanced-mta.md), tutti i messaggi transazionali possono essere inviati anche con l’MTA avanzato di Adobe Campaign per migliorare il recapito messaggi, la velocità effettiva e la gestione delle e-mail non consegnate. Tutti gli impatti sono gli stessi dei messaggi di marketing standard.
 
 ## Monitoraggio dei messaggi transazionali {#transactional-message-monitoring}
 

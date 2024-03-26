@@ -30,7 +30,7 @@ keyfield:==VUOTO
 
 ## Elementi figli {#children-9}
 
-Nessuna
+Nessuno
 
 ## Descrizione {#description-9}
 

@@ -7,7 +7,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaig
 exl-id: c47e73a0-dbd8-43f5-a363-7e6783dc7685
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2519'
+source-wordcount: '2576'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ L’istanza marketing è la parte dell’architettura di Adobe Campaign che gest
 
 >[!CAUTION]
 >
->Le informazioni contenute in questo documento non si applicano se utilizzi un’istanza Adobe Campaign completamente in hosting (distribuita in Cloud Services di Adobi).
+>Le informazioni contenute in questo documento non si applicano se utilizzi un’istanza Adobe Campaign completamente in hosting (distribuita in Cloud Service di Adobi).
 
 La compatibilità software è descritta in [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
@@ -139,7 +139,7 @@ Volume stimato:
 | E-mail | 42 milioni/mese |
 | Direct mail | 10 milioni/mese |
 | SMS mobile | 1.000.000/mese |
-| Volume e-mail giornaliero di picco | 5,000,000 |
+| Volume e-mail giornaliero di picco | 5.000.000 |
 
 ### Server Web e Application Server
 

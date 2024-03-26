@@ -11,8 +11,8 @@ topic-tags: troubleshooting
 exl-id: 064eb41f-6685-4ac1-adc5-40f9d5a2f96d
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 12%
+source-wordcount: '188'
+ht-degree: 7%
 
 ---
 
@@ -29,7 +29,7 @@ Esistono due possibili scenari:
 ## Password persa da un operatore Campaign {#password-lost-by-campaign-operator}
 
 Se un operatore Adobe Campaign perde la propria password, puoi modificarla.
-A tale scopo, segui la procedura indicata di seguito:
+A questo scopo, segui la procedura indicata di seguito:
 
 1. Connetti tramite un operatore con diritti di amministratore.
 1. Fare clic con il pulsante destro del mouse su un operatore.

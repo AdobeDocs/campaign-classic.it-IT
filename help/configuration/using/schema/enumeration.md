@@ -7,7 +7,7 @@ exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 ## Modello di contenuto {#content-model-5}
 
-enumerazione:==(valore help|)
+enumerazione:==(guida| value)
 
 ## Attributi {#attributes-5}
 
@@ -57,26 +57,26 @@ Le enumerazioni vengono definite all’inizio di uno schema (prima che sia defin
    * booleano
    * byte
    * CDATA
-   * datetime
+   * Data e ora
    * datetimetz
    * datetimenotz
-   * date
+   * data
    * DOMDocument
    * DOMElement
    * doppio
    * enum
-   * galleggiare
+   * mobile
    * html
    * int64
    * link
    * long
    * promemoria
    * MNTOKEN
-   * percent
+   * percentuale
    * chiave primaria
    * corto
    * stringa
-   * orario
+   * ora
    * intervallo di tempo
    * uuid
 

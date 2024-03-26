@@ -2,13 +2,13 @@
 product: campaign
 title: Definire le proprietà dei moduli web
 description: Definire le proprietà dei moduli web
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Web Forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1223'
 ht-degree: 1%
 
 ---
@@ -136,15 +136,15 @@ Per impostazione predefinita sono disponibili i seguenti parametri:
 * **origine** specificare l&#39;origine del convenuto.
 * **_uuid** consente la visualizzazione dei moduli prima della pubblicazione e il tracciamento degli errori. Questo parametro è per uso interno (creazione ed debug): quando accedi al modulo Web tramite questo URL, i record creati non vengono presi in considerazione nel tracciamento (report). L’origine è forzata a **[!UICONTROL Adobe Campaign]** valore.
 
-   Viene utilizzato con **_anteprima** parametri e/o **_debug**:
+  Viene utilizzato con **_anteprima** parametri e/o **_debug**:
 
-   **_anteprima** per visualizzare l&#39;ultima versione salvata. Questo parametro deve essere utilizzato solo nella fase di test.
+  **_anteprima** per visualizzare l&#39;ultima versione salvata. Questo parametro deve essere utilizzato solo nella fase di test.
 
-   **_debug** per visualizzare la traccia dei dati immessi o calcolati nelle pagine del modulo. Viene utilizzato per ottenere ulteriori informazioni sugli errori, anche dopo la pubblicazione del modulo.
+  **_debug** per visualizzare la traccia dei dati immessi o calcolati nelle pagine del modulo. Viene utilizzato per ottenere ulteriori informazioni sugli errori, anche dopo la pubblicazione del modulo.
 
-   >[!CAUTION]
-   >
-   >Quando il modulo viene visualizzato tramite un URL con **_uuid** parametro, il valore del **[!UICONTROL origin]** il parametro è forzato a **Adobe Campaign**.
+  >[!CAUTION]
+  >
+  >Quando il modulo viene visualizzato tramite un URL con **_uuid** parametro, il valore della proprietà **[!UICONTROL origin]** il parametro è forzato a **Adobe Campaign**.
 
 ## Aggiunta di parametri {#adding-parameters}
 

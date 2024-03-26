@@ -6,7 +6,7 @@ feature: Schema Extension
 exl-id: 60f15ae5-b2bd-48f9-aa45-8f795a3071aa
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
-source-wordcount: '2014'
+source-wordcount: '2016'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## Modello di contenuto {#content-model-4}
 
-element:==(attribute) | stringa di calcolo | dbindex | predefinito | elemento | guida | unire | chiave | sysFilter | translationDefault)
+element:==(attribute) | stringa di calcolo | dbindex | predefinito | elemento | aiuto | unire | chiave | sysFilter | translationDefault)
 
 ## Attributi {#attributes-4}
 
@@ -181,24 +181,24 @@ Esistono quattro tipi di `<element>`  elementi in Adobe Campaign:
    * booleano
    * byte
    * CDATA
-   * datetime
+   * Data e ora
    * datetimetz
    * datetimenotz
-   * date
+   * data
    * doppio
    * enum
-   * galleggiare
+   * mobile
    * html
    * int64
    * link
    * long
    * promemoria
    * MNTOKEN
-   * percent
+   * percentuale
    * chiave primaria
    * corto
    * stringa
-   * orario
+   * ora
    * intervallo di tempo
    * uuid
 

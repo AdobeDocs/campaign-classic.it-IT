@@ -2,12 +2,12 @@
 product: campaign
 title: Arricchimento
 description: Ulteriori informazioni sull’attività del flusso di lavoro Arricchimento
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows, Enrichment Activity, Targeting Activity
 exl-id: 4c7bc0f3-5877-47dc-bd72-dc94fb7bd479
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '1304'
 ht-degree: 2%
 
 ---
@@ -43,11 +43,11 @@ Esistono quattro tipi di collegamenti:
 * **[!UICONTROL Define a link whose target is still available]**: consente di definire un collegamento con cardinalità 1-1 tra le tabelle. Le condizioni di join devono essere definite da un singolo record nella tabella di destinazione.
 * **[!UICONTROL Define a link whose target does not necessarily exist in the base]**: consente di definire un collegamento con cardinalità 0-1 tra le tabelle. La condizione di unione deve essere definita da 0 o 1 (max) nella tabella di destinazione.
 
-   Questa opzione è configurata in **[!UICONTROL Simple Join]** accessibile tramite il **[!UICONTROL Edit additional data]** collegamento del **[!UICONTROL Enrichment]** attività.
+  Questa opzione è configurata in **[!UICONTROL Simple Join]** accessibile tramite il **[!UICONTROL Edit additional data]** collegamento del **[!UICONTROL Enrichment]** attività.
 
 * **[!UICONTROL Define a link by searching for a reference among several options]**: questo tipo di collegamento definisce una riconciliazione verso un record univoco. Adobe Campaign crea un collegamento a una tabella di destinazione aggiungendo una chiave esterna nella tabella di destinazione per la memorizzazione di un riferimento al record univoco.
 
-   Questa opzione è configurata in **[!UICONTROL Reconciliation and deduplication]** accessibile tramite il **[!UICONTROL Edit additional data]** collegamento del **[!UICONTROL Enrichment]** attività.
+  Questa opzione è configurata in **[!UICONTROL Reconciliation and deduplication]** accessibile tramite il **[!UICONTROL Edit additional data]** collegamento del **[!UICONTROL Enrichment]** attività.
 
 I casi d’uso che descrivono nel dettaglio il funzionamento delle attività di arricchimento nel loro contesto sono disponibili anche in queste sezioni:
 
@@ -124,7 +124,7 @@ A questo scopo, esegui i seguenti passaggi:
 
    ![](assets/enrichment_edit_after_file_box.png)
 
-1. Seleziona la **[!UICONTROL Link definition]** e fare clic sul pulsante **[!UICONTROL Next]** pulsante. Specifica il tipo di collegamento da creare. In questo esempio, vogliamo riconciliare il paese del destinatario del file con un paese nell’elenco dei paesi disponibili nella tabella dedicata del database. Scegli l’opzione **[!UICONTROL Define a link by searching for a reference among several options]**. Selezionare la tabella dei paesi in **[!UICONTROL Target schema]** campo.
+1. Seleziona la **[!UICONTROL Link definition]** e fare clic sul pulsante **[!UICONTROL Next]** pulsante. Specifica il tipo di collegamento da creare. In questo esempio, vogliamo riconciliare il paese del destinatario del file con un paese nell’elenco dei paesi disponibili nella tabella dedicata del database. Scegli la **[!UICONTROL Define a link by searching for a reference among several options]** opzione. Selezionare la tabella dei paesi in **[!UICONTROL Target schema]** campo.
 
    ![](assets/enrichment_add_a_link_select_option4.png)
 
@@ -161,7 +161,7 @@ Ad esempio, puoi arricchire i dati di una query del destinatario prima di una co
 Dopo aver configurato la query (consulta questa [sezione](query.md)):
 
 1. Aggiungi e apri un’attività di arricchimento.
-1. Nella scheda **[!UICONTROL Enrichment]**, seleziona **[!UICONTROL Add data]**.
+1. In **[!UICONTROL Enrichment]** , seleziona **[!UICONTROL Add data]**.
 1. Seleziona **[!UICONTROL An offer proposition]** nei tipi di dati da aggiungere.
 
    ![](assets/int_enrichment_offer2.png)
@@ -171,11 +171,11 @@ Dopo aver configurato la query (consulta questa [sezione](query.md)):
 
    * **[!UICONTROL Search for the best offer in a category]**: seleziona questa opzione e specifica i parametri di chiamata del motore di offerta (spazio dell’offerta, categoria o temi, data di contatto, numero di offerte da mantenere). Il motore calcola automaticamente le offerte da aggiungere in base a questi parametri. È consigliabile completare **[!UICONTROL Category]** o **[!UICONTROL Theme]** e non entrambi contemporaneamente.
 
-      ![](assets/int_enrichment_offer3.png)
+     ![](assets/int_enrichment_offer3.png)
 
    * **[!UICONTROL A predefined offer]**: seleziona questa opzione e specifica uno spazio dell’offerta, un’offerta specifica e una data di contatto per configurare direttamente l’offerta da aggiungere, senza chiamare il motore delle offerte.
 
-      ![](assets/int_enrichment_offer4.png)
+     ![](assets/int_enrichment_offer4.png)
 
 1. Quindi configura un’attività di consegna che corrisponde al canale scelto. Fai riferimento a [Consegne cross-channel](cross-channel-deliveries.md).
 

@@ -2,11 +2,11 @@
 product: campaign
 title: Consegne
 description: Ulteriori informazioni sui flussi di lavoro predefiniti per le consegne
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '331'
 ht-degree: 6%
 
 ---
@@ -66,7 +66,7 @@ I flussi di lavoro descritti di seguito vengono installati con **Consegne** per 
    <td> Questo flusso di lavoro analizza le consegne salvate nel calendario provvisorio (crea registri provvisori). Per impostazione predefinita viene attivato ogni giorno all’1.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Tracking</span> <br /> </td> 
+   <td> <span class="uicontrol">Tracciamento</span> <br /> </td> 
    <td> <span class="uicontrol">tracciamento</span> <br /> </td> 
    <td> Questo flusso di lavoro esegue il ripristino e il consolidamento delle informazioni di tracciamento. Assicura inoltre il ricalcolo delle statistiche di tracciamento e consegna, in particolare quelle utilizzate dai flussi di lavoro di archiviazione del Centro messaggi. Per impostazione predefinita viene attivato una volta all’ora. <br /> </td> 
   </tr> 

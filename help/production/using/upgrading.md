@@ -11,8 +11,8 @@ topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1170'
-ht-degree: 4%
+source-wordcount: '1133'
+ht-degree: 2%
 
 ---
 
@@ -75,8 +75,8 @@ Per eseguire il file di aggiornamento, attenersi alla seguente procedura:
    Per scaricare questo file, connettiti a [Portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/campaign.html) utilizzando le credenziali utente. Ulteriori informazioni sulla distribuzione di software in [questa pagina](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it).
 
 1. Selezionare la modalità di installazione: scegli **[!UICONTROL Update or repair]**
-1. Fai clic su **[!UICONTROL Next]** .
-1. Fai clic su **[!UICONTROL Finish]** .
+1. Clic **[!UICONTROL Next]** .
+1. Clic **[!UICONTROL Finish]** .
 
    Il programma di installazione copia quindi i nuovi file.
 

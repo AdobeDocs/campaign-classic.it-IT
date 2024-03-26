@@ -2,13 +2,13 @@
 product: campaign
 title: Consegna
 description: Ulteriori informazioni sull’attività del flusso di lavoro di tipo Consegna
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows, Channels Activity
 exl-id: 72fbdd1d-a105-4e9f-9e17-2e9d62d2bb80
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 1%
+source-wordcount: '924'
+ht-degree: 2%
 
 ---
 
@@ -24,37 +24,37 @@ Per configurarlo, modifica l’attività e immetti le opzioni di consegna.
 
 1. **Consegna**
 
-   È possibile eseguire le seguenti operazioni:
+   Puoi eseguire le seguenti azioni:
 
    * Agisci sulla consegna specificata nella transizione in entrata. A questo scopo, seleziona la prima opzione della **[!UICONTROL Delivery]** sezione della finestra.
 
-      Questa opzione può essere utilizzata quando una precedente attività del flusso di lavoro ha già creato o specificato la consegna. Ciò può essere stato fatto, come nell’esempio seguente, da un’attività dello stesso tipo che ha generato una transizione in uscita.
+     Questa opzione può essere utilizzata quando una precedente attività del flusso di lavoro ha già creato o specificato la consegna. Ciò può essere stato fatto, come nell’esempio seguente, da un’attività dello stesso tipo che ha generato una transizione in uscita.
 
-      Nell’esempio seguente, la consegna viene creata per la prima volta. La popolazione e il contenuto vengono definiti in un secondo momento. Successivamente, le informazioni per questi tre elementi vengono reinserite in una nuova attività di consegna utilizzando la transizione in entrata in modo che possa essere inviata.
+     Nell’esempio seguente, la consegna viene creata per la prima volta. La popolazione e il contenuto vengono definiti in un secondo momento. Successivamente, le informazioni per questi tre elementi vengono reinserite in una nuova attività di consegna utilizzando la transizione in entrata in modo che possa essere inviata.
 
-      ![](assets/specified_transition_option_exemple.png)
+     ![](assets/specified_transition_option_exemple.png)
 
    * Seleziona direttamente la consegna interessata. A questo scopo, seleziona la **[!UICONTROL Explicit]** e seleziona la consegna dall’elenco a discesa del **[!UICONTROL Delivery]** campo.
 
-      L’elenco mostra le consegne non completate contenute in **Consegne** cartella per impostazione predefinita. Per accedere ad altre campagne, fai clic su **[!UICONTROL Select link]** icona.
+     L’elenco mostra le consegne non completate contenute in **Consegne** cartella per impostazione predefinita. Per accedere ad altre campagne, fai clic su **[!UICONTROL Select link]** icona.
 
-      ![](assets/diffusion_edit_1.png)
+     ![](assets/diffusion_edit_1.png)
 
-      Seleziona la campagna dall’elenco a discesa della **[!UICONTROL Folder]** o fai clic su **[!UICONTROL Display sub-levels]** per visualizzare tutte le consegne contenute nelle sottocartelle:
+     Seleziona la campagna dall’elenco a discesa della **[!UICONTROL Folder]** o fai clic su **[!UICONTROL Display sub-levels]** per visualizzare tutte le consegne contenute nelle sottocartelle:
 
-      ![](assets/diffusion_edit_2.png)
+     ![](assets/diffusion_edit_2.png)
 
-      Dopo aver selezionato l’azione di consegna, puoi visualizzare il contenuto facendo clic sulla **[!UICONTROL Edit link]** icona.
+     Dopo aver selezionato l’azione di consegna, puoi visualizzare il contenuto facendo clic sulla **[!UICONTROL Edit link]** icona.
 
    * Crea uno script per calcolare la consegna. A questo scopo, seleziona la **[!UICONTROL Computed by a script]** e immettere lo script. È possibile aprire una finestra di input facendo clic sul pulsante **[!UICONTROL Edit...]** opzione. L’esempio seguente recupera l’identificatore della consegna:
 
-      ![](assets/diffusion_edit_3.png)
+     ![](assets/diffusion_edit_3.png)
 
    * Crea una nuova consegna. A questo scopo, seleziona la **[!UICONTROL New, created from a template]** e seleziona il modello di consegna su cui basare la consegna.
 
-      ![](assets/diffusion_edit_4.png)
+     ![](assets/diffusion_edit_4.png)
 
-      Fai clic su **[!UICONTROL Select link]** per sfogliare le cartelle e fare clic su **[!UICONTROL Edit link]** se desideri visualizzare il contenuto del modello selezionato.
+     Fai clic su **[!UICONTROL Select link]** per sfogliare le cartelle e fare clic su **[!UICONTROL Edit link]** se desideri visualizzare il contenuto del modello selezionato.
 
 1. **Destinatari**
 
@@ -88,15 +88,16 @@ Per configurarlo, modifica l’attività e immetti le opzioni di consegna.
 
    * **[!UICONTROL Generate an outbound transition]**
 
-      Crea una transizione in uscita che verrà attivata alla fine dell’esecuzione. Puoi scegliere se recuperare o meno la destinazione della consegna in uscita.
+     Crea una transizione in uscita che verrà attivata alla fine dell’esecuzione. Puoi scegliere se recuperare o meno la destinazione della consegna in uscita.
 
    * **[!UICONTROL Do not recover target]**
 
-      Non recupera il target dell’azione di consegna in uscita.
+     Non recupera il target dell’azione di consegna in uscita.
 
    * **[!UICONTROL Processing errors]**
 
-      Fai riferimento a [Controllo della consegna](delivery-control.md).
+     Fai riferimento a [Controllo della consegna](delivery-control.md).
+
    Il **Script** Questa scheda ti consente di modificare i parametri di consegna.
 
    ![](assets/edit_diffusion_fil_script.png)
@@ -148,11 +149,11 @@ Ogni evento in entrata deve specificare una destinazione definita da questi para
 
 * nome file
 
-   Nome completo del file generato se **[!UICONTROL File(s) specified by inbound event(s)]** è selezionata in **[!UICONTROL Recipients]** sezione.
+  Nome completo del file generato se **[!UICONTROL File(s) specified by inbound event(s)]** è selezionata in **[!UICONTROL Recipients]** sezione.
 
 * contentId
 
-   Identificatore del contenuto se **[!UICONTROL Specified by inbound events]** è selezionata in **[!UICONTROL Content]** sezione.
+  Identificatore del contenuto se **[!UICONTROL Specified by inbound events]** è selezionata in **[!UICONTROL Content]** sezione.
 
 ## Parametri di output {#output-parameters}
 

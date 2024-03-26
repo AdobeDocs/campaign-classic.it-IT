@@ -11,7 +11,7 @@ exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '1050'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -72,7 +72,7 @@ Esistono due metodi per specificare le proposte di offerta.
 Dopo aver configurato la query (consulta la [Guida ai flussi di lavoro](../../workflow/using/query.md)):
 
 1. Aggiungi e apri un’attività di arricchimento.
-1. Nella scheda **[!UICONTROL Enrichment]**, seleziona **[!UICONTROL Add data]**.
+1. In **[!UICONTROL Enrichment]** , seleziona **[!UICONTROL Add data]**.
 1. Seleziona **[!UICONTROL An offer proposition]** nei tipi di dati da aggiungere.
 
    ![](assets/int_enrichment_offer2.png)

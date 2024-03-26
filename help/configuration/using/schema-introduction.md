@@ -29,7 +29,7 @@ Elenco riferimenti:
 * [Elemento “enumeration”](schema/enumeration.md)
 * [Elemento “help”](schema/help.md)
 * [Elemento “join”](schema/join.md)
-* [Elemento “key”](schema/key.md)
+* [Chiave](schema/key.md)
 * [Elemento “keyfield”](schema/keyfield.md)
 * [Elemento “method”](schema/method.md)
 * [Elemento “methods”](schema/methods.md)

@@ -11,7 +11,7 @@ exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '1084'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -35,8 +35,8 @@ La comunicazione generale tra i processi viene effettuata secondo il seguente sc
 Questo tipo di configurazione può essere eseguito quando si gestiscono elenchi con meno di 100.000 destinatari e con, ad esempio, i seguenti livelli software:
 
 * Linux
-* Apache,
-* PostgreSQL,
+* Apache
+* PostgreSQL
 * Qmail.
 
 Con la crescita del volume, una variante di questa architettura sposta il server di database in un altro computer per migliorare le prestazioni.
@@ -49,7 +49,7 @@ Con la crescita del volume, una variante di questa architettura sposta il server
 
 ### Vantaggi {#advantages}
 
-* Completamente indipendente e a basso costo di configurazione (non sono richieste licenze fatturabili se viene utilizzato il software open source elencato di seguito).
+* Completamente indipendente e a basso costo di configurazione (non sono richieste licenze fatturabili se viene utilizzato il software open-source elencato di seguito).
 * Installazione e configurazione di rete semplificate.
 
 ### Svantaggi {#disadvantages}
@@ -234,7 +234,7 @@ Applica i seguenti passaggi:
    I parametri principali da impostare sono i seguenti:
 
    * Email delivery: indirizzo del mittente e della risposta e cassetta postale di errore per la mail non recapitata.
-   * Tracciamento: popola l’URL esterno utilizzato per il reindirizzamento e l’URL interno, fai clic su **Registrazione sui server di tracciamento** e quindi convalidarlo sulla **demo** istanza del server di tracciamento.
+   * Tracciamento: popola l’URL esterno utilizzato per il reindirizzamento e l’URL interno, fai clic su **Registrazione sui server di tracciamento** e quindi convalidarlo sulla scheda **demo** istanza del server di tracciamento.
 
      Per ulteriori informazioni, consulta [Configurazione del tracciamento](../../installation/using/deploying-an-instance.md#tracking-configuration).
 

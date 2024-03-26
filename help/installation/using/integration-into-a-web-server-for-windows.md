@@ -11,8 +11,8 @@ topic-tags: installing-campaign-in-windows-
 exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 5%
+source-wordcount: '896'
+ht-degree: 2%
 
 ---
 
@@ -92,7 +92,7 @@ Applica i seguenti passaggi di configurazione:
 
    Se la struttura non è visualizzata, riavviare IIS.
 
-### Gestione delle autorizzazioni {#managing-rights}
+### Gestione dei diritti {#managing-rights}
 
 È quindi necessario configurare le impostazioni di protezione per la DLL ISAPI e per le risorse nella directory di installazione di Adobe Campaign.
 

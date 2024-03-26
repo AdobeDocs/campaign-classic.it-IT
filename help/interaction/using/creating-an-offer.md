@@ -10,7 +10,7 @@ topic-tags: managing-an-offer-catalog
 exl-id: c6dd2709-06e3-4227-bbec-99f3d80144fe
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '814'
 ht-degree: 3%
 
 ---
@@ -59,7 +59,7 @@ Al di fuori di queste date, l’offerta non verrà selezionata dal motore di int
 
 Puoi applicare filtri al target dell’offerta.
 
-A questo scopo, fai clic su **[!UICONTROL Edit query]** e seleziona il filtro da applicare. (Fai riferimento a [questa sezione](../../platform/using/steps-to-create-a-query.md#step-4---filter-data)).
+A questo scopo, fai clic su **[!UICONTROL Edit query]** e seleziona il filtro da applicare. (Fare riferimento a [questa sezione](../../platform/using/steps-to-create-a-query.md#step-4---filter-data)).
 
 ![](assets/offer_eligibility_create_003.png)
 
@@ -111,7 +111,7 @@ Per creare un peso in un’offerta, effettua le seguenti operazioni:
 
    >[!NOTE]
    >
-   >Se un target è idoneo per più pesi per un’offerta selezionata, il motore mantiene il peso migliore (massimo). Quando si richiama il motore di offerta, viene selezionata un’offerta al massimo una volta per contatto.
+   >Se un target è idoneo per più pesi per un’offerta selezionata, il motore mantiene il peso migliore (il più alto). Quando si richiama il motore di offerta, viene selezionata un’offerta al massimo una volta per contatto.
 
 ### Riepilogo delle regole di idoneità dell’offerta {#a-summary-of-offer-eligibility-rules}
 

@@ -9,7 +9,7 @@ role: User
 exl-id: 44634227-2340-49c4-b330-740c739ea551
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '736'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Oltre alla diagnosi di anteprima, viene eseguito un secondo controllo quando si 
 
 Questa regola di tipologia ti consente di verificare che la consegna rispetti le [vincoli di formato](#limitations-and-recommendations) definiti dagli operatori giapponesi, in particolare in relazione alle dimensioni totali dell’e-mail, alle dimensioni delle sezioni HTML e testo, al numero di immagini nei messaggi e ai tag nel contenuto di HTML.
 
-### Invia bozze {#sending-proofs}
+### Inviare bozze {#sending-proofs}
 
 Puoi inviare delle bozze per verificare la consegna. Quando invii la bozza, se utilizzi indirizzi di sostituzione, inserisci gli indirizzi che corrispondono al formato e-mail del profilo utilizzato.
 

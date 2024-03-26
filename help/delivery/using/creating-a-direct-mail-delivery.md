@@ -10,7 +10,7 @@ exl-id: 964cc600-19b8-449e-bac6-dc9da2b5ea12
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '99'
-ht-degree: 20%
+ht-degree: 11%
 
 ---
 
@@ -27,5 +27,5 @@ Per creare una nuova consegna di direct mailing, segui i passaggi seguenti:
 
    ![](assets/direct_mail.png)
 
-1. Identifica la consegna con un’etichetta, un codice e una descrizione. Per ulteriori informazioni al riguardo, consulta [questa sezione](steps-create-and-identify-the-delivery.md#identifying-the-delivery)
+1. Identifica la consegna con un’etichetta, un codice e una descrizione. Per ulteriori informazioni, consulta [questa sezione](steps-create-and-identify-the-delivery.md#identifying-the-delivery)
 1. Clic **Continua** per confermare queste informazioni e visualizzare la finestra configurazione messaggio.

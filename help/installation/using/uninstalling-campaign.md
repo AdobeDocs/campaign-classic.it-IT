@@ -23,7 +23,7 @@ ht-degree: 18%
 >
 >Queste procedure disinstalleranno definitivamente Adobe Campaign. Tutti i dati andranno persi.
 
-**RHEL:**
+**RHEL**
 
 ```
 rpm -e nlserver6-v7

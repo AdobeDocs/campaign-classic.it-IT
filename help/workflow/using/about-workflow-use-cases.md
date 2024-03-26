@@ -2,13 +2,13 @@
 product: campaign
 title: Informazioni sui casi d’uso dei flussi di lavoro
 description: Ulteriori informazioni sui casi d’uso che è possibile eseguire utilizzando i flussi di lavoro di Campaign Classic
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 7c093b34-6b0e-4403-9d9d-fba9ba39ea41
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 67%
+source-wordcount: '213'
+ht-degree: 30%
 
 ---
 
@@ -27,7 +27,7 @@ Consentono di scoprire i diversi contesti in cui è possibile utilizzare i fluss
 * [Utilizzo dell’attività di approvazione locale](using-the-local-approval-activity.md)
 * [Test A/B](../../delivery/using/a-b-testing-use-case.md)
 * [Invio di un’e-mail di compleanno](sending-a-birthday-email.md)
-* [Caricamento del contenuto di una consegna](loading-delivery-content.md)
+* [Caricamento del contenuto della consegna](loading-delivery-content.md)
 * [Flusso di lavoro di consegna cross-channel](cross-channel-delivery-workflow.md)
 * [Arricchimento delle e-mail con campi data personalizzati](email-enrichment-with-custom-date-fields.md)
 * [Automazione di creazione, edizione e pubblicazione di contenuti](../../delivery/using/automating-via-workflows.md#examples)
@@ -41,14 +41,14 @@ Consentono di scoprire i diversi contesti in cui è possibile utilizzare i fluss
 * [Invio di avvisi personalizzati agli operatori](sending-personalized-alerts-to-operators.md)
 * [Impostazione di un processo di approvazione del destinatario prima di avviare una consegna](using-the-local-approval-activity.md)
 
-## Gestione dei dati {#management}
+## Gestione dati {#management}
 
 <img src="assets/do-not-localize/icon_manage.svg" width="60px">
 
-* [Coordinamento degli aggiornamenti dati](coordinating-data-updates.md)
+* [Coordinamento degli aggiornamenti dei dati](coordinating-data-updates.md)
 * [Creazione di un elenco di riepilogo](creating-a-summary-list.md)
 * [Arricchimento dei dati](enriching-data.md)
-* [Utilizzo di aggregati](using-aggregates.md)
+* [Utilizzo degli aggregati](using-aggregates.md)
 * [Importazione di dati crittografati tramite una chiave generata dal Pannello di controllo Campaign](../../platform/using/unzip-decrypt.md)
 * [Crittografia ed esportazione di dati mediante una chiave installata nel Pannello di controllo Campaign](how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [Aggiornamento dell’elenco trimestrale tramite una query incrementale](quarterly-list-update.md)

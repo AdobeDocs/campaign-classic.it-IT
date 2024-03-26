@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Connettori per sistemi CRM
+title: Connettori CRM
 description: Introduzione ai connettori CRM in Campaign
 feature: Microsoft CRM Integration, Salesforce Integration
 badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
@@ -11,11 +11,11 @@ exl-id: 7ccab3a4-f323-464a-9ec4-dd597279d0eb
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '165'
-ht-degree: 58%
+ht-degree: 59%
 
 ---
 
-# Connettori per sistemi CRM{#crm-connectors}
+# Connettori CRM{#crm-connectors}
 
 
 

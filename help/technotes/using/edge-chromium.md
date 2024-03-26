@@ -7,8 +7,8 @@ feature: Technote, Upgrade
 exl-id: 22f4cbaf-ca37-47b9-b7dd-1ee73d5b348d
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 13%
+source-wordcount: '249'
+ht-degree: 10%
 
 ---
 
@@ -23,7 +23,7 @@ Dopo la fine del ciclo di vita di Microsoft Internet Explorer 11, il motore di r
 
 Oltre all&#39;installazione di Microsoft Edge WebView2 Runtime, ora [richiesto per qualsiasi installazione della console client](../../installation/using/installing-the-client-console.md#webview), Microsoft Edge Chromium deve essere abilitato sulle istanze.
 
-## Sei interessato da questo problema?
+## Sei interessato?
 
 L’aggiornamento dell’ambiente a Campaign Classic v7.3 (o versione successiva) influisce su di esso.
 

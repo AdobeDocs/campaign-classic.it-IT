@@ -49,7 +49,7 @@ Applica i seguenti passaggi:
 
    Puoi accedere a questi campi per definire le condizioni del filtro nel corpo dell’editor di filtri. Un filtro di applicazione viene definito esattamente nello stesso modo di un filtro avanzato. Consulta [Creare un filtro avanzato](../../platform/using/creating-filters.md#creating-an-advanced-filter).
 
-1. Crea un nuovo filtro per gli abbonamenti in modo da visualizzare solo gli abbonamenti con un formato e-mail non definito:
+1. Crea un nuovo filtro per gli abbonamenti per visualizzare solo gli abbonamenti con un formato e-mail non definito:
 
    ![](assets/s_ncs_user_filter_parameters.png)
 

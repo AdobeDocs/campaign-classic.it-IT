@@ -2,17 +2,17 @@
 product: campaign
 title: Flussi di lavoro del regolamento sulla protezione dei dati sulla privacy
 description: Ulteriori informazioni sui flussi di lavoro del Regolamento sulla protezione dei dati sulla privacy
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows, Privacy
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 12%
+source-wordcount: '111'
+ht-degree: 9%
 
 ---
 
 
-# Regolamento sulla protezione dei dati sulla privacy{#general-data-protection-regulation-gdpr}
+# Regolamento sulla protezione dei dati personali{#general-data-protection-regulation-gdpr}
 
 
 

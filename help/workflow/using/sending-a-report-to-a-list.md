@@ -2,13 +2,13 @@
 product: campaign
 title: Inviare un rapporto a un elenco
 description: Scopri come inviare un rapporto a un elenco con un flusso di lavoro
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows
 exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 1%
+source-wordcount: '639'
+ht-degree: 2%
 
 ---
 
@@ -52,25 +52,25 @@ Per ulteriori informazioni sulla creazione di elenchi, consulta questa [sezione]
 
    * Fai clic su **[!UICONTROL Attachments]** link e click **[!UICONTROL Add]**, quindi seleziona **[!UICONTROL Calculated attachment]**.
 
-      ![](assets/use_case_report_4.png)
+     ![](assets/use_case_report_4.png)
 
    * Vai a **[!UICONTROL Type]** e selezionare la quarta opzione: **[!UICONTROL File name is computed during delivery of each message (it may then depend on the recipient profile)]**.
 
-      ![](assets/use_case_report_5.png)
+     ![](assets/use_case_report_5.png)
 
-      Il valore immesso nel **[!UICONTROL Label]** non verrà visualizzato nella consegna finale.
+     Il valore immesso nel **[!UICONTROL Label]** non verrà visualizzato nella consegna finale.
 
    * Vai alla zona di modifica e immetti il percorso di accesso e il nome del file.
 
-      ![](assets/use_case_report_6.png)
+     ![](assets/use_case_report_6.png)
 
-      >[!CAUTION]
-      >
-      >Il file deve essere presente sul server. Il percorso e il nome devono essere identici a quelli immessi nella **[!UICONTROL JavaScript code]** attività di tipo del flusso di lavoro (consulta: [Passaggio 3: creazione del flusso di lavoro](#step-3--creating-the-workflow)).
+     >[!CAUTION]
+     >
+     >Il file deve essere presente sul server. Il percorso e il nome devono essere identici a quelli immessi nella **[!UICONTROL JavaScript code]** attività di tipo del flusso di lavoro (consulta: [Passaggio 3: creazione del flusso di lavoro](#step-3--creating-the-workflow)).
 
    * Seleziona la **[!UICONTROL Advanced]** Tab e check **[!UICONTROL Script the name of the file name displayed in the mails sent]**. Vai alla zona di modifica e immetti il nome che desideri assegnare all’allegato nella consegna finale.
 
-      ![](assets/use_case_report_6bis.png)
+     ![](assets/use_case_report_6bis.png)
 
 ## Passaggio 3: creazione del flusso di lavoro {#step-3--creating-the-workflow}
 
@@ -114,9 +114,9 @@ Per questo caso d’uso è stato creato il seguente flusso di lavoro. L’impres
    * **var reportName**: inserisci il nome interno del rapporto tra virgolette. In questo caso, il nome interno del **Indicatore di tracciamento** report è &quot;deliveryFeedback&quot;.
    * **percorso var**: immetti il percorso di salvataggio del file (&quot;tmp/files/&quot;), il nome che desideri assegnare al file (&quot;deliveryFeedback&quot;) e l’estensione (&quot;.pdf&quot;). In questo caso, abbiamo utilizzato il nome interno come nome del file. I valori devono essere compresi tra virgolette doppie e separati dal carattere &quot;+&quot;.
 
-      >[!CAUTION]
-      >
-      >Il file deve essere salvato sul server. È necessario immettere lo stesso percorso e lo stesso nome nel **[!UICONTROL General]** scheda della finestra di modifica per l&#39;allegato calcolato (fare riferimento a: [Passaggio 2: creazione del modello di consegna](#step-2--creating-the-delivery-template)).
+     >[!CAUTION]
+     >
+     >Il file deve essere salvato sul server. È necessario immettere lo stesso percorso e lo stesso nome nel **[!UICONTROL General]** scheda della finestra di modifica per l&#39;allegato calcolato (fare riferimento a: [Passaggio 2: creazione del modello di consegna](#step-2--creating-the-delivery-template)).
 
    * **var exportFormat**: inserisci il formato di esportazione del file (&quot;PDF&quot;).
    * **var_ctx** (contesto): in questo caso utilizziamo il **[!UICONTROL Tracking indicators]** nel suo contesto globale.
@@ -127,4 +127,5 @@ Per questo caso d’uso è stato creato il seguente flusso di lavoro. L’impres
    * Per **[!UICONTROL Recipients]** e **[!UICONTROL Content]** campi, seleziona **[!UICONTROL Specified in the delivery]**.
    * **[!UICONTROL Action to execute]**: seleziona **[!UICONTROL Prepare and start]**.
    * Deseleziona **[!UICONTROL Generate an outbound transition]** e **[!UICONTROL Process errors]**.
+
    ![](assets/use_case_report_11.png)

@@ -2,13 +2,13 @@
 product: campaign
 title: Cambiare dimensione
 description: Cambiare dimensione
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: c3de99f8-089f-4c7c-be11-f375a9463eaa
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 2%
+source-wordcount: '378'
+ht-degree: 4%
 
 ---
 
@@ -52,27 +52,27 @@ Per configurare l’attività di modifica della dimensione, effettua le seguenti
 
    * Fai clic su **[!UICONTROL Add data...]** collega e seleziona **[!UICONTROL Data linked to the filtering dimension]**.
 
-      ![](assets/wf_change-dimension_sample_01.png)
+     ![](assets/wf_change-dimension_sample_01.png)
 
-      >[!NOTE]
-      >
-      >Per informazioni sulla creazione e la gestione di colonne aggiuntive, fare riferimento a [Aggiunta di dati](query.md#adding-data).
+     >[!NOTE]
+     >
+     >Per informazioni sulla creazione e la gestione di colonne aggiuntive, fare riferimento a [Aggiunta di dati](query.md#adding-data).
 
    * Selezionare la dimensione di targeting precedente (prima del cambio asse) e selezionare **[!UICONTROL Zip Code]** nel campo del destinatario **[!UICONTROL Location]** sottostruttura, quindi fai clic su **[!UICONTROL Edit expression]**.
 
-      ![](assets/wf_change-dimension_sample_02.png)
+     ![](assets/wf_change-dimension_sample_02.png)
 
    * Clic **[!UICONTROL Advanced selection]** e scegli **[!UICONTROL Edit the formula using an expression]**.
 
-      ![](assets/wf_change-dimension_sample_03.png)
+     ![](assets/wf_change-dimension_sample_03.png)
 
    * Utilizzare le funzioni offerte nell&#39;elenco e specificare il calcolo da eseguire.
 
-      ![](assets/wf_change-dimension_sample_04.png)
+     ![](assets/wf_change-dimension_sample_04.png)
 
    * Infine, immetti l’etichetta della colonna appena creata.
 
-      ![](assets/wf_change-dimension_sample_05.png)
+     ![](assets/wf_change-dimension_sample_05.png)
 
 1. Esegui il flusso di lavoro per visualizzare il risultato di questa configurazione. Confronta i dati nelle tabelle prima e dopo l’attività di modifica della dimensione e confronta la struttura delle tabelle del flusso di lavoro, come illustrato negli esempi seguenti:
 

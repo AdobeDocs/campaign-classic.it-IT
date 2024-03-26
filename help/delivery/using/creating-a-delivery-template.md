@@ -9,14 +9,14 @@ role: User
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 11%
+source-wordcount: '390'
+ht-degree: 7%
 
 ---
 
 # Creazione di un modello di consegna{#creating-a-delivery-template}
 
-![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#delivery-template-video)
+![](assets/do-not-localize/how-to-video.png) [Guarda il video su questa funzione](#delivery-template-video)
 
 ## Conversione di una consegna esistente in un modello {#converting-an-existing-delivery-to-a-template}
 
@@ -65,7 +65,7 @@ Per configurare un modello di consegna, effettua le seguenti operazioni:
 
    ![](assets/delivery_template_5.png)
 
-1. Fai clic su **Salva**. Il modello è ora pronto per essere utilizzato in una consegna.
+1. Clic **Salva**. Il modello è ora pronto per essere utilizzato in una consegna.
 
 
 ## Video tutorial {#delivery-template-video}

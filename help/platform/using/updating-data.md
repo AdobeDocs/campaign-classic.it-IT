@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Aggiornamenti dei dati
-description: Aggiornamenti dei dati
+title: Aggiornamento dei dati
+description: Aggiornamento dei dati
 feature: Data Management
 badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: platform
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 ---
 
-# Attività Update data{#updating-data}
+# Aggiornare i dati{#updating-data}
 
 
 

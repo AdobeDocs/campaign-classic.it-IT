@@ -2,13 +2,13 @@
 product: campaign
 title: Pubblicare un modulo web
 description: Pubblicare un modulo web
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Web Forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
 source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1547'
 ht-degree: 1%
 
 ---
@@ -114,16 +114,16 @@ Per visualizzare solo le stringhe non tradotte, seleziona **[!UICONTROL To trans
    * **[!UICONTROL One file per language]**: l’esportazione genera un file per lingua di traduzione. Ogni file sarà comune a tutte le applicazioni Web selezionate.
    * **[!UICONTROL One file per Web application]**: l’esportazione genera un file per ogni applicazione web selezionata. Ogni file conterrà tutte le lingue di traduzione.
 
-      >[!NOTE]
-      >
-      >Questo tipo di esportazione non è disponibile per le esportazioni XLIFF.
+     >[!NOTE]
+     >
+     >Questo tipo di esportazione non è disponibile per le esportazioni XLIFF.
 
    * **[!UICONTROL One file per language and per Web application]**: l’esportazione genera diversi file. Ogni file conterrà una lingua di traduzione per ogni applicazione web.
    * **[!UICONTROL One file for all]**: l’esportazione genera un singolo file multilingue per tutte le applicazioni web. Conterrà tutte le lingue di traduzione per tutte le applicazioni Web selezionate.
 
-      >[!NOTE]
-      >
-      >Questo tipo di esportazione non è disponibile per le esportazioni XLIFF.
+     >[!NOTE]
+     >
+     >Questo tipo di esportazione non è disponibile per le esportazioni XLIFF.
 
 1. Quindi scegli il **[!UICONTROL Target folder]** dove verranno registrati i file.
 1. Seleziona il formato del file ( **[!UICONTROL CSV]** o **[!UICONTROL XLIFF]** ) e fai clic su **[!UICONTROL Start]**.

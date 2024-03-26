@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Centro messaggi (Esecuzione)
-description: Centro messaggi (Esecuzione)
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+title: Centro messaggi (esecuzione)
+description: Centro messaggi (esecuzione)
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '229'
-ht-degree: 10%
+source-wordcount: '230'
+ht-degree: 5%
 
 ---
 
 
-# Centro messaggi (Esecuzione){#message-center-execution}
+# Centro messaggi (esecuzione){#message-center-execution}
 
 
 
@@ -20,9 +20,9 @@ I flussi di lavoro descritti di seguito vengono installati con **Centro messaggi
 
 Per ulteriori informazioni, a seconda della versione di Campaign in uso, consulta le sezioni seguenti:
 
-![](assets/do-not-localize/v7.jpeg)[  Documentazione di Campaign v7](../../message-center/using/about-transactional-messaging.md)
+![](assets/do-not-localize/v7.jpeg)[Documentazione di Campaign v7](../../message-center/using/about-transactional-messaging.md)
 
-![](assets/do-not-localize/v8.png)[  Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
+![](assets/do-not-localize/v8.png)[Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
 
 <table> 
  <tbody> 

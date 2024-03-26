@@ -7,8 +7,8 @@ feature: Query Editor, Workflows
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 4%
+source-wordcount: '263'
+ht-degree: 6%
 
 ---
 
@@ -48,7 +48,7 @@ Per creare questo esempio, attieniti alla seguente procedura:
 
    ![](assets/query_editor_nveau_70.png)
 
-1. In **[!UICONTROL Data filtering]**, seleziona **[!UICONTROL Filtering conditions]**. Vai a **[!UICONTROL Target elements]** e fai clic su **[!UICONTROL Next]**.
+1. In entrata **[!UICONTROL Data filtering]**, seleziona **[!UICONTROL Filtering conditions]**. Vai a **[!UICONTROL Target elements]** e fai clic su **[!UICONTROL Next]**.
 1. In **[!UICONTROL Data grouping]** , selezionare la **[!UICONTROL Email domain]** facendo clic su **[!UICONTROL Add]**.
 
    Questa finestra di raggruppamento dati viene visualizzata solo se **[!UICONTROL Handle groupings (GROUP BY + HAVING]**) è stata selezionata.

@@ -10,8 +10,8 @@ topic-tags: starting-with-adobe-campaign
 exl-id: ba8bf610-cbac-41e9-8b6e-130deb8b97e2
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 90%
+source-wordcount: '261'
+ht-degree: 76%
 
 ---
 
@@ -25,7 +25,7 @@ Scopri come eseguire il targeting di una popolazione e gestire pubblici all’in
 
 Puoi importare i destinatari o crearli manualmente utilizzando la console del client Campaign. Per scoprire come creare e gestire i profili in Campaign, leggi [questa sezione](../../platform/using/about-profiles.md).
 
-## Importare i profili? {#how-to-import-profiles-}
+## Come si importano i profili? {#how-to-import-profiles-}
 
 Scopri dei facili casi d’uso per [importare profili](../../platform/using/import-operations-samples.md) nel tuo database.
 
@@ -36,7 +36,7 @@ Scopri dei facili casi d’uso per [importare profili](../../platform/using/impo
 Puoi [utilizzare i flussi di lavoro per creare una popolazione target](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) per una campagna di marketing.
 
 
-## Come si crea un elenco di profili? {#how-can-i-create-a-list-of-profiles-}
+## Come posso creare un elenco di profili? {#how-can-i-create-a-list-of-profiles-}
 
 Un elenco è un set statico di destinatari che possono essere oggetto di targeting nelle azioni di consegna, aggiornato durante le operazioni di importazione o l’esecuzione di un flusso di lavoro. Ad esempio, una popolazione estratta dal database tramite una query può fornire un elenco.
 
@@ -50,7 +50,7 @@ Puoi utilizzare un flusso di lavoro per escludere un duplicato dal target di una
 
 [Fai clic qui per ulteriori informazioni](../../workflow/using/deduplication.md#example--identify-the-duplicates-before-a-delivery) con un esempio.
 
-## In che modo è possibile identificare ed eseguire il targeting degli abbonati a una newsletter? {#how-to-identify-and-target-subscribers-to-a-newsletter-}
+## Come identificare ed eseguire il targeting degli abbonati a una newsletter? {#how-to-identify-and-target-subscribers-to-a-newsletter-}
 
 Scopri la gestione degli abbonamenti in Campaign e come [inviare un messaggio agli abbonati](../../delivery/using/managing-subscriptions.md).
 

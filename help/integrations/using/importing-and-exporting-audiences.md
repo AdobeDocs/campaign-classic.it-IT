@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Importazione ed esportazione di pubblici
-description: Importazione ed esportazione di pubblici
+title: Importazione ed esportazione di tipi di pubblico
+description: Importazione ed esportazione di tipi di pubblico
 feature: Audiences, People Core Service Integration
 badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
@@ -11,13 +11,13 @@ topic-tags: audience-sharing
 exl-id: c2293fc5-c9ba-4a73-8f39-fa7cdd06e8dd
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 4%
+source-wordcount: '630'
+ht-degree: 1%
 
 ---
 
 
-# Importazione ed esportazione di pubblici{#importing-and-exporting-audiences}
+# Importazione ed esportazione di tipi di pubblico{#importing-and-exporting-audiences}
 
 
 
@@ -33,7 +33,7 @@ Puoi importare tipi di pubblico/segmenti da Audience Manager o dal servizio core
 1. Nella finestra visualizzata, fai clic su **[!UICONTROL Select a shared audience]** per passare all’elenco dei tipi di pubblico/segmenti condivisi disponibili dalle altre soluzioni Adobe Experience Cloud.
 1. Seleziona un pubblico e conferma. Le informazioni del pubblico vengono completate automaticamente.
 
-   Tieni presente che per importare un pubblico condiviso, ti deve essere assegnato il **[!UICONTROL Audience library]** in admin console e fungere da amministratore in Audienci Manager. Per ulteriori informazioni, consulta la documentazione di [Admin Console](https://helpx.adobe.com/it/enterprise/managing/user-guide.html).
+   Tieni presente che per importare un pubblico condiviso, ti deve essere assegnato il **[!UICONTROL Audience library]** in admin console e fungere da amministratore in Audienci Manager. Per ulteriori informazioni, consulta [Documentazione di Admin Console](https://helpx.adobe.com/it/enterprise/managing/user-guide.html).
 
    ![](assets/aam_import_audience_3.png)
 

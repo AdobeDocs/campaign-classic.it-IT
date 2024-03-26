@@ -9,16 +9,16 @@ role: User
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '877'
-ht-degree: 5%
+source-wordcount: '873'
+ht-degree: 2%
 
 ---
 
 # Blocchi di personalizzazione{#personalization-blocks}
 
-I blocchi di personalizzazione sono dinamici, personalizzati e contengono un rendering specifico che puoi inserire nelle consegne. Ad esempio, puoi aggiungere un logo, un messaggio di auguri o un collegamento alla pagina mirror. Consulta [Inserire blocchi di personalizzazione](#inserting-personalization-blocks).
+I blocchi di personalizzazione sono dinamici, personalizzati e contengono un rendering specifico che puoi inserire nelle consegne. Ad esempio, puoi aggiungere un logo, un messaggio di saluto o un collegamento a una pagina speculare. Consulta [Inserire blocchi di personalizzazione](#inserting-personalization-blocks).
 
-![](assets/do-not-localize/how-to-video.png)[ Guarda il video su questa funzione](#personalization-blocks-video)
+![](assets/do-not-localize/how-to-video.png) Scopri questa funzione [nel video](#personalization-blocks-video)
 
 I blocchi di personalizzazione sono accessibili tramite **[!UICONTROL Resources > Campaign Management > Personalization blocks]** nodo di Adobe Campaign explorer. Per impostazione predefinita sono disponibili diversi blocchi (vedi [Blocchi di personalizzazione predefiniti](#out-of-the-box-personalization-blocks)).
 

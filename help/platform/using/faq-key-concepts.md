@@ -10,8 +10,8 @@ topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 97%
+source-wordcount: '835'
+ht-degree: 83%
 
 ---
 
@@ -112,7 +112,7 @@ Puoi tracciare le consegne inviate con Campaign Classic tramite [report di conse
 
 Ulteriori informazioni sulla gestione del tracking in Campaign sono disponibili in [questa pagina](https://helpx.adobe.com/it/campaign/kb/acc-tracking.html).
 
-## Quali sono le best practice per la protezione (on-premise)? {#what-are-security-best-practices--on-premise--}
+## Quali sono le best practice per la sicurezza (on-premise)? {#what-are-security-best-practices--on-premise--}
 
 Consulta la [lista di controllo per la configurazione della protezione](https://helpx.adobe.com/it/campaign/kb/acc-security.html) per scoprire gli elementi chiave da verificare per la configurazione e l’irrigidimento della protezione per le distribuzioni on-premise.
 

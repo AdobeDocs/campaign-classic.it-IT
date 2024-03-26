@@ -11,8 +11,8 @@ topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2380'
-ht-degree: 3%
+source-wordcount: '2330'
+ht-degree: 1%
 
 ---
 
@@ -110,7 +110,7 @@ Le procedure seguenti vengono eseguite solo da **on-premise** clienti. Per i cli
 
 Ecco come duplicare un ambiente Adobe Campaign per ripristinare un ambiente di origine in un ambiente di destinazione, creando due ambienti di lavoro identici.
 
-A tale scopo, segui la procedura indicata di seguito:
+A questo scopo, segui la procedura indicata di seguito:
 
 1. Creare una copia dei database in tutte le istanze nell&#39;ambiente di origine.
 
@@ -238,7 +238,7 @@ Quando la messaggistica transazionale (Centro messaggi) è abilitata nell’ista
    * Aggiorna database
    * Disconnetti e riconnetti
    * Importa pacchetto di amministrazione
-   * Importa pacchetto di contenuti
+   * Importa pacchetto contenuti
    * Importa pacchetto gestione contenuti
    * Disconnetti e riconnetti
    * Eseguire un rapido controllo di integrità dei flussi di lavoro

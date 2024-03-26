@@ -1,17 +1,18 @@
 ---
 product: campaign
-title: Attività del flusso di lavoro SMS in entrata per l’infrastruttura di mid-sourcing
-description: Attività del flusso di lavoro SMS in entrata per l’infrastruttura di mid-sourcing
+title: Attività del flusso di lavoro SMS in entrata per l’infrastruttura mid-sourcing
+description: Attività del flusso di lavoro SMS in entrata per l’infrastruttura mid-sourcing
 feature: Technote, SMS
 badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
-source-git-commit: 85adfe3515480bed559091427ff1acec14a70320
+exl-id: 756039b2-5f57-4dc5-8166-a421206b886b
+source-git-commit: f9a17541596ba2afa96502dc99408b6f99d2cb2b
 workflow-type: tm+mt
 source-wordcount: '430'
-ht-degree: 2%
+ht-degree: 7%
 
 ---
 
-# Attività del flusso di lavoro SMS in entrata per l’infrastruttura di mid-sourcing {#inbound-sms}
+# Attività del flusso di lavoro SMS in entrata per l’infrastruttura mid-sourcing {#inbound-sms}
 
 ## Limitazioni {#limitations}
 
@@ -145,5 +146,3 @@ ht-degree: 2%
    > * Se esistono più flussi di lavoro inSMS per istanza di mid-sourcing, può verificarsi la duplicazione dei dati in quanto l’ID SMS di mid-sourcing rimane costante mentre gli ID dell’account esterno variano.
 
 1. Salva e riavvia il flusso di lavoro.
-
-

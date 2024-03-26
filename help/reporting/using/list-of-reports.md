@@ -16,7 +16,7 @@ ht-degree: 2%
 
 
 
-## Report sulle consegne {#reports-on-deliveries}
+## Rapporti sulle consegne {#reports-on-deliveries}
 
 I rapporti incorporati forniti da Adobe Campaign sono disponibili nella tabella seguente.
 

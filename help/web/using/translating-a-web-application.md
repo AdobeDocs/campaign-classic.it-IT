@@ -2,13 +2,13 @@
 product: campaign
 title: Progettare un’applicazione web
 description: Progettare un’applicazione web
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Web Apps
 exl-id: 82c5c610-8161-4686-aa79-1b690e763765
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '376'
 ht-degree: 5%
 
 ---
@@ -45,11 +45,11 @@ Per contrassegnare le stringhe da tradurre:
    * Quando il blocco selezionato contiene più stringhe/blocchi, viene contrassegnato come una singola stringa da tradurre. La stringa contiene quindi il codice HTML degli elementi all’interno di questo blocco.
    * Se si desidera contrassegnare un blocco contenente più stringhe e almeno una di esse è già contrassegnata, viene visualizzato un avviso. Puoi quindi rimuovere il flag dalla stringa isolata e aggiungere l’intero blocco.
 
-      ![](assets/dce_translation_4.png)
+     ![](assets/dce_translation_4.png)
 
    * Quando desideri rimuovere il flag da una stringa contenuta in un blocco già contrassegnato, non puoi modificare direttamente l’opzione di traduzione della stringa. Tuttavia, puoi accedere al blocco contenente la stringa per modificarlo.
 
-      ![](assets/dce_translation_2.png)
+     ![](assets/dce_translation_2.png)
 
 1. Dopo aver completato il contrassegno delle stringhe, torna all’applicazione Web e seleziona la **[!UICONTROL Translations]** scheda.
 1. Seleziona **[!UICONTROL Collect the strings to translate]**. Le stringhe contrassegnate in DCE vengono aggiunte alle stringhe dell&#39;applicazione Web.

@@ -2,15 +2,15 @@
 product: campaign
 title: Utilizzare i diritti denominati per impostare le autorizzazioni
 description: Scopri come utilizzare i diritti denominati per impostare le autorizzazioni
-badge: label="v7" type="Informative" tooltip="Si applica solo a Campaign Classic v7"
+badge: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
 source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 5%
+source-wordcount: '499'
+ht-degree: 6%
 
 ---
 

@@ -9,8 +9,8 @@ role: User, Data Engineer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1186'
-ht-degree: 7%
+source-wordcount: '1189'
+ht-degree: 4%
 
 ---
 
@@ -23,7 +23,7 @@ Ti consente di recuperare informazioni su una consegna e modificarle, se necessa
 
 Di seguito sono riportate le informazioni che è possibile monitorare utilizzando le diverse schede disponibili nel dashboard:
 
-* [Riepilogo delle consegne](#delivery-summary)
+* [Riepilogo della consegna](#delivery-summary)
 * [Rapporti sulle consegne](#delivery-reports)
 * [Registri di consegna, pagine mirror, esclusioni](#delivery-logs-and-history)
 * [Registri e cronologia di tracciamento delle consegne](#tracking-logs)
@@ -37,9 +37,9 @@ Di seguito sono riportate le informazioni che è possibile monitorare utilizzand
 * [Informazioni sugli errori di consegna](understanding-delivery-failures.md)
 * [Informazioni sulla gestione della quarantena](understanding-quarantine-management.md)
 * [Best practice per la consegna](delivery-best-practices.md)
-* [Gestione delle consegne](about-deliverability.md)
+* [Gestione del recapito messaggi](about-deliverability.md)
 
-## Riepilogo delle consegne {#delivery-summary}
+## Riepilogo della consegna {#delivery-summary}
 
 Il **[!UICONTROL Summary]** La scheda contiene le caratteristiche della consegna: stato della consegna, canale utilizzato, informazioni sul mittente, oggetto, informazioni sull’esecuzione.
 
@@ -71,7 +71,7 @@ La pagina speculare è disponibile solo per le consegne per le quali è stato de
 
 ## Registri e cronologia di tracciamento delle consegne {#tracking-logs}
 
-Il **[!UICONTROL Tracking]** Questa scheda elenca la cronologia di tracciamento per questa consegna. In questa scheda vengono visualizzati i dati di tracciamento per i messaggi inviati, ovvero tutti gli URL che vengono tracciati da Adobe Campaign. I dati di tracciamento vengono aggiornati ogni ora.
+Il **[!UICONTROL Tracking]** Questa scheda elenca la cronologia di tracciamento per questa consegna. In questa scheda vengono visualizzati i dati di tracciamento per i messaggi inviati, ovvero tutti gli URL soggetti a tracciamento da parte di Adobe Campaign. I dati di tracciamento vengono aggiornati ogni ora.
 
 >[!NOTE]
 >
@@ -168,7 +168,7 @@ Da aggiungere **publicID** nei registri di consegna devi prima estendere lo sche
 
 Dopo aver apportato le modifiche, è necessario aggiornare la struttura del database in modo che sia allineata alla relativa descrizione logica.
 
-A tale scopo, segui la procedura indicata di seguito:
+A questo scopo, segui la procedura indicata di seguito:
 
 1. Fai clic su **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Update database structure...]** menu.
 

@@ -8,7 +8,7 @@ exl-id: f426bf02-9899-49eb-b699-728d51b57c64
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '443'
-ht-degree: 18%
+ht-degree: 13%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 18%
 
 Un **Intersezione** L&#39;attività -type crea un oggetto dall&#39;intersezione degli oggetti ricevuti.
 
-L’intersezione consente di estrarre solo la popolazione comune a tutti i risultati delle attività in entrata. Il target viene creato con tutti i risultati ricevuti: tutte le attività precedenti devono quindi essere completate prima che l’intersezione possa essere eseguita. Per configurare questa attività, devi immettere un’etichetta e le opzioni relative al risultato.
+Un’intersezione ti consente di estrarre solo la popolazione comune a tutti i risultati delle attività in entrata. Il target viene creato con tutti i risultati ricevuti: tutte le attività precedenti devono quindi essere completate prima che l’intersezione possa essere eseguita. Per configurare questa attività, devi immettere un’etichetta e le opzioni relative al risultato.
 
 ![](assets/s_user_segmentation_inter.png)
 

@@ -9,8 +9,8 @@ role: User, Developer, Data Engineer
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 14%
+source-wordcount: '915'
+ht-degree: 10%
 
 ---
 
@@ -82,7 +82,7 @@ Seleziona il formato dell’e-mail nella sezione inferiore della finestra:
 
 La pagina mirror è una pagina HTML accessibile online tramite un browser web. Il contenuto è identico a quello dell’e-mail.
 
-Per impostazione predefinita, la pagina mirror viene generata se il collegamento viene inserito nel contenuto dell’e-mail. Per ulteriori informazioni sull’inserimento di blocchi di personalizzazione, consulta [Blocchi di personalizzazione](personalization-blocks.md).
+Per impostazione predefinita, la pagina speculare viene generata se il collegamento viene inserito nel contenuto dell’e-mail. Per ulteriori informazioni sull’inserimento di blocchi di personalizzazione, consulta [Blocchi di personalizzazione](personalization-blocks.md).
 
 Nelle proprietà di consegna, il **[!UICONTROL Mode]** campo del **[!UICONTROL Validity]** Questa scheda ti consente di modificare la modalità di generazione per questa pagina.
 
@@ -134,6 +134,6 @@ Se necessario, i valori vengono codificati automaticamente.
 
 >[!IMPORTANT]
 >
->L’aggiunta di uno script per l’inserimento di intestazioni SMTP aggiuntive è un’operazione riservata agli utenti avanzati.
+>L’aggiunta di uno script per l’inserimento di intestazioni SMTP aggiuntive è riservata agli utenti avanzati.
 >
 >La sintassi di questo script deve essere conforme ai requisiti di questo tipo di contenuto: nessuno spazio inutilizzato, nessuna linea vuota e così via.

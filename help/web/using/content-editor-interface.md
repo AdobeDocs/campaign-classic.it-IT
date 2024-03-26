@@ -9,7 +9,7 @@ exl-id: cb76f3dc-7f3a-49de-89cb-c106865ecb17
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '545'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -71,7 +71,7 @@ La sezione a destra dell’editor raggruppa le opzioni principali che ti consent
 
 ![](assets/dce_right_section.png)
 
-Puoi:
+Puoi eseguire le seguenti azioni:
 
 * Determinare la visualizzazione per uno o più blocchi, fare riferimento a [Definizione di una condizione di visibilità](editing-content.md#defining-a-visibility-condition),
 * Definire i bordi e le cornici, fare riferimento a [Aggiunta di un bordo e uno sfondo](editing-content.md#adding-a-border-and-background),

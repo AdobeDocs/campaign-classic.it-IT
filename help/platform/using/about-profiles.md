@@ -9,8 +9,8 @@ level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 16%
+source-wordcount: '839'
+ht-degree: 17%
 
 ---
 
@@ -98,7 +98,7 @@ Un profilo che è stato oggetto di targeting per diverse consegne viene conteggi
 
 >[!NOTE]
 >
->I canali facebook e X (precedentemente noti come Twitter) non vengono presi in considerazione.
+>I canali Facebook e X (noto in precedenza come Twitter) non vengono presi in considerazione.
 
 Il conteggio dei profili attivi è disponibile per **Istanze di marketing** solo. Non è disponibile per le istanze di esecuzione, ovvero per le istanze MID (mid sourcing) e RT (Message Center / Real-time messaging [Centro messaggi/Messaggistica in tempo reale]).
 

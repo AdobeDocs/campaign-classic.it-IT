@@ -2,12 +2,12 @@
 product: campaign
 title: Monitorare l’esecuzione di un flusso di lavoro
 description: Monitorare l’esecuzione di un flusso di lavoro
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '2016'
+source-wordcount: '2025'
 ht-degree: 2%
 
 ---
@@ -38,27 +38,27 @@ Quando questa opzione è selezionata, le attività eseguite vengono visualizzate
 
 ## Visualizzazione dei registri {#displaying-logs}
 
-Il registro contiene la cronologia o l’audit trail del flusso di lavoro. Registra tutte le azioni dell’utente, tutte le operazioni eseguite e gli errori riscontrati. È possibile eseguire le seguenti operazioni:
+Il registro contiene la cronologia o l’audit trail del flusso di lavoro. Registra tutte le azioni dell’utente, tutte le operazioni eseguite e gli errori riscontrati. Puoi eseguire le seguenti azioni:
 
 * Seleziona la **[!UICONTROL Tracking]** nel dettaglio. Questo elenco contiene tutti i messaggi del flusso di lavoro.
 
-   ![](assets/new-workflow-display-log-tab.png)
+  ![](assets/new-workflow-display-log-tab.png)
 
 * Filtra i messaggi di registro per attività. A questo scopo, fai clic su **[!UICONTROL Display the tasks and the log]** sulla barra degli strumenti sopra il diagramma per visualizzare **[!UICONTROL Log]** e **[!UICONTROL Tasks]** sotto il diagramma. Seleziona un’attività per visualizzare tutti i messaggi correlati. Questo elenco contiene tutti i messaggi quando non è selezionata alcuna attività.
 
-   ![](assets/new-workflow-display-log-activity.png)
+  ![](assets/new-workflow-display-log-activity.png)
 
-   >[!NOTE]
-   >
-   >Fare clic sullo sfondo del diagramma per deselezionare tutti gli elementi.
+  >[!NOTE]
+  >
+  >Fare clic sullo sfondo del diagramma per deselezionare tutti gli elementi.
 
 * Visualizza solo i messaggi collegati a una determinata attività. A questo scopo, seleziona la **[!UICONTROL Tasks]** e quindi selezionare un&#39;attività nel diagramma per limitare l&#39;elenco. Fare doppio clic su un&#39;attività per visualizzare le informazioni; l&#39;ultima scheda della finestra contiene il registro.
 
-   ![](assets/new-workflow-display-tasks-activity.png)
+  ![](assets/new-workflow-display-tasks-activity.png)
 
-   Il **[!UICONTROL Details...]** consente di visualizzare tutte le informazioni aggiuntive sull’esecuzione dell’attività. Ad esempio, puoi visualizzare l’operatore di convalida e, se applicabile, il commento inserito durante l’approvazione, come nell’esempio seguente:
+  Il **[!UICONTROL Details...]** consente di visualizzare tutte le informazioni aggiuntive sull’esecuzione dell’attività. Ad esempio, puoi visualizzare l’operatore di convalida e, se applicabile, il commento inserito durante l’approvazione, come nell’esempio seguente:
 
-   ![](assets/new-workflow-display-tasks-activity-details.png)
+  ![](assets/new-workflow-display-tasks-activity-details.png)
 
 >[!NOTE]
 >
@@ -68,15 +68,15 @@ Il registro mostra l’elenco cronologico dei messaggi di esecuzione relativi al
 
 * Registro di una campagna di targeting
 
-   Dopo aver eseguito una campagna di targeting, fai clic su **[!UICONTROL Tracking]** per visualizzare la traccia dell’esecuzione.
+  Dopo aver eseguito una campagna di targeting, fai clic su **[!UICONTROL Tracking]** per visualizzare la traccia dell’esecuzione.
 
-   ![](assets/s_user_segmentation_journal.png)
+  ![](assets/s_user_segmentation_journal.png)
 
-   Vengono visualizzati tutti i messaggi della campagna: campagne eseguite, avvisi o errori.
+  Vengono visualizzati tutti i messaggi della campagna: campagne eseguite, avvisi o errori.
 
 * Registro di un’attività
 
-   Puoi anche visualizzare il registro di esecuzione e i dettagli di ogni attività. Esistono due modi per farlo:
+  Puoi anche visualizzare il registro di esecuzione e i dettagli di ogni attività. Esistono due modi per farlo:
 
    1. Seleziona l’attività con targeting e fai clic su **[!UICONTROL Display the tasks and the log]** icona.
 
@@ -225,9 +225,9 @@ Tieni presente che:
 * In JavaScript, un valore non definito è falso in un test, consentendo di testare la variabile di istanza anche prima di averla inizializzata.
 * Per monitorare le attività non elaborate a causa di questo meccanismo, aggiungi un’istruzione di registrazione allo script di inizializzazione dell’endpoint &quot;no&quot;.
 
-   ```
-   logInfo("Workflow already running, parallel execution not allowed.");
-   ```
+  ```
+  logInfo("Workflow already running, parallel execution not allowed.");
+  ```
 
 Un caso d’uso è presentato in questa sezione: [Coordinamento degli aggiornamenti dei dati](coordinating-data-updates.md).
 

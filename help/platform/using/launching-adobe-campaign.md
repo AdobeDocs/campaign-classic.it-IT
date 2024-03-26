@@ -10,8 +10,8 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 12%
+source-wordcount: '508'
+ht-degree: 10%
 
 ---
 
@@ -33,7 +33,7 @@ La finestra di connessione della console client consente di selezionare o config
 
 ![](assets/acc-logon.png)
 
-## Connettersi ad Adobe Campaign {#connecting-to-adobe-campaign}
+## Connessione ad Adobe Campaign {#connecting-to-adobe-campaign}
 
 Puoi connetterti ad Adobe Campaign utilizzando il tuo Adobe ID. Per ulteriori informazioni, consulta [questa pagina](../../integrations/using/about-adobe-id.md).
 
@@ -47,7 +47,7 @@ Puoi anche connetterti con un login/password dedicato:
 
    La prima volta che si accede al database, la password è quella fornita dall&#39;amministratore. Una volta effettuata la connessione, è possibile modificare la password tramite **[!UICONTROL Tools > Change password...]** menu. I dettagli sugli operatori e sulle connessioni sono disponibili in [Gestione degli accessi](../../platform/using/access-management.md).
 
-1. Fai clic su **[!UICONTROL LOG IN]** per confermare.<!--You can also press the **Enter** key to launch connection.-->
+1. Clic **[!UICONTROL LOG IN]** per confermare.<!--You can also press the **Enter** key to launch connection.-->
 
 Ora puoi accedere a [Area di lavoro di Adobe Campaign](../../platform/using/adobe-campaign-workspace.md).
 

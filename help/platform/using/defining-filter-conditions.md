@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Definizione delle condizioni di filtro
-description: Definizione delle condizioni di filtro
+title: Definizione delle condizioni del filtro
+description: Definizione delle condizioni del filtro
 feature: Query Editor
 badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
@@ -11,8 +11,8 @@ topic-tags: creating-queries
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3241'
-ht-degree: 37%
+source-wordcount: '3307'
+ht-degree: 48%
 
 ---
 
@@ -85,7 +85,7 @@ Di seguito è riportato un elenco degli operatori disponibili:
   <tr> 
    <td> <span class="uicontrol">Non contiene</span> <br /> </td> 
    <td> Restituisce risultati che non contengono il valore inserito.<br /> </td> 
-   <td> <strong>Il dominio e-mail (@domain) non contiene 'vo'</strong>. In questo caso, i nomi di dominio che contengono 'vo' non verranno restituiti. Il nome di dominio "voilà.fr" non verrà visualizzato nei risultati.<br /> </td> 
+   <td> <strong>Il dominio e-mail (@domain) non contiene 'vo'</strong>. In questo caso, i nomi di dominio che contengono “vo” non verranno restituiti. Il nome di dominio "voilà.fr" non verrà visualizzato nei risultati.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Simile</span> <br /> </td> 
@@ -94,7 +94,7 @@ Di seguito è riportato un elenco degli operatori disponibili:
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Diverso</span> <br /> </td> 
-   <td> È simile a <span class="uicontrol">Simile</span> . Consente di non recuperare il valore immesso. Anche in questo caso, il valore immesso deve contenere il carattere jolly <span class="uicontrol">%</span>.<br /> </td> 
+   <td> È simile a <span class="uicontrol">Mi piace</span> . Consente di non recuperare il valore immesso. Anche in questo caso, il valore immesso deve contenere il carattere jolly <span class="uicontrol">%</span>.<br /> </td> 
    <td> <strong>Cognome (@lastName) diverso da 'Smi%h'</strong>. In questo caso, i destinatari il cui cognome è 'Smi%h' non verranno restituiti.<br /> </td> 
   </tr> 
   <tr> 
@@ -210,7 +210,7 @@ Le varie categorie di campi:
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_48.png" /> </td> 
-   <td> Chiave principale. Questo campo SQL consente di identificare un record in una tabella.<br /> </td> 
+   <td> Chiave primaria. Questo campo SQL consente di identificare un record in una tabella.<br /> </td> 
    <td> I destinatari degli identificatori sono chiavi primarie e gli identificatori sono univoci per definizione.<br /> </td> 
   </tr> 
   <tr> 
@@ -375,7 +375,7 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
   </tr> 
   <tr> 
    <td> <strong>Conteggio</strong><br /> </td> 
-   <td> Conta i valori non nulli di una colonna<br /> </td> 
+   <td> Conta i valori non nulli in una colonna<br /> </td> 
    <td> Count(&lt;valore&gt;)<br /></td>  
   </tr> 
   <tr> 
@@ -385,27 +385,27 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
   </tr> 
   <tr> 
    <td> <strong>Countdistinct</strong><br /> </td> 
-   <td> Conta i valori distinti non nulli di una colonna<br /> </td> 
+   <td> Conta i valori distinti non nulli in una colonna<br /> </td> 
    <td> Countdistinct(&lt;valore&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Max</strong><br /> </td> 
-   <td> Restituisce il valore massimo di una colonna di tipo numero, stringa o data<br /> </td> 
+   <td> Restituisce il valore massimo in una colonna numerica, stringa o data<br /> </td> 
    <td> Max(&lt;valore&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>Min</strong><br /> </td> 
-   <td> Restituisce il valore minimo di una colonna di tipo numero, stringa o data<br /> </td> 
+   <td> Restituisce il valore minimo in una colonna numerica, stringa o data.<br /> </td> 
    <td> Min(&lt;valore&gt;)<br /></td> 
   </tr> 
   <tr> 
-   <td> <strong>DevStandard</strong><br /> </td> 
-   <td> Restituisce la deviazione standard di una colonna numerica, stringa o data<br /> </td> 
-   <td> StdDev(&lt;value&gt;)<br /></td> 
+   <td> <strong>StdDev</strong><br /> </td> 
+   <td> Restituisce la deviazione standard in una colonna numerica, stringa o data<br /> </td> 
+   <td> StdDev(&lt;valore&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Somma</strong><br /> </td> 
-   <td> Restituisce la somma dei valori di una colonna di tipo numero, stringa o data<br /> </td> 
+   <td> Restituisce la somma dei valori in una colonna numerica, stringa o data<br /> </td> 
    <td> Sum(&lt;valore&gt;)<br /></td> 
   </tr> 
  </tbody> 
@@ -432,7 +432,7 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
   </tr> 
   <tr> 
    <td> <strong>Ascii</strong><br /> </td> 
-   <td> Restituisce il valore ASCII del primo carattere della stringa.<br /> </td> 
+   <td> Restituisce il valore ASCII del primo carattere della stringa<br /> </td> 
    <td> Ascii(&lt;stringa&gt;)<br /></td> 
   </tr> 
   <tr> 
@@ -458,7 +458,7 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
   <tr> 
    <td> <strong>IsMemoNull</strong><br /> </td> 
    <td> Indica se il promemoria passato come parametro è nullo<br /> </td> 
-   <td> IsMemoNull(&lt;memo&gt;)<br /></td> 
+   <td> IsMemoNull(&lt;promemoria&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>JuxtWords</strong><br /> </td> 
@@ -473,7 +473,7 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
   <tr> 
    <td> <strong>LPad</strong><br /> </td> 
    <td> Restituisce la stringa completata a sinistra<br /> </td> 
-   <td> LPad(&lt;string&gt;, &lt;number&gt;, &lt;character&gt;)<br /></td> 
+   <td> LPad(&lt;stringa&gt;, &lt;numero&gt;, &lt;carattere&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Left</strong><br /> </td> 
@@ -527,13 +527,13 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
   </tr> 
   <tr> 
    <td> <strong>Substring</strong><br /> </td> 
-   <td> Estrae la sottostringa a partire dal carattere n1 della stringa e dalla lunghezza n2<br /> </td> 
+   <td> Estrae la stringa secondaria a partire dal carattere n1 della stringa e con una lunghezza n2<br /> </td> 
    <td> Substring(&lt;stringa&gt;, &lt;offset&gt;, &lt;lunghezza&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>ToString</strong><br /> </td> 
    <td> Converte il numero in una stringa<br /> </td> 
-   <td> ToString(&lt;number&gt;, &lt;number&gt;)<br /> </td>  
+   <td> ToString(&lt;numero&gt;, &lt;numero&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>Upper</strong><br /> </td> 
@@ -552,8 +552,8 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
   </tr> 
   <tr> 
    <td> <strong>dataLength</strong><br /> </td> 
-   <td> Restituisce la dimensione della stringa<br /> </td> 
-   <td> dataLength(&lt;string&gt;)<br /> </td>  
+   <td> Restituisce le dimensioni della stringa<br /> </td> 
+   <td> dataLength(&lt;stringa&gt;)<br /> </td>  
   </tr> 
  </tbody> 
 </table>
@@ -609,7 +609,7 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
   </tr> 
   <tr> 
    <td> <strong>DayOfYear</strong><br /> </td> 
-   <td> Restituisce il numero del giorno dell’anno della data<br /> </td> 
+   <td> Restituisce un numero del giorno dell’anno della data<br /> </td> 
    <td> DayOfYear(&lt;data&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -619,7 +619,7 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
   </tr> 
   <tr> 
    <td> <strong>DaysAgoInt</strong><br /> </td> 
-   <td> Restituisce la data (numero intero aaaammgg) corrispondente alla data corrente meno n giorni<br /> </td> 
+   <td> Restituisce la data corrispondente (numero intero aaaammgg) alla data corrente meno n giorni<br /> </td> 
    <td> DaysAgoInt(&lt;numero&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -745,7 +745,7 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
   <tr> 
    <td> <strong>TruncTime</strong><br /> </td> 
    <td> Arrotonda la parte dell’ora al secondo più vicino<br /> </td> 
-   <td> TruncTim(e&lt;date&gt;, &lt;number of="" seconds=""&gt;)<br /> </td>  
+   <td> TruncTime(&lt;data&gt;, &lt;numero di secondi&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>TruncWeek</strong><br /> </td> 
@@ -787,9 +787,9 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
 
 >[!NOTE]
 >
->Tieni presente che **Dateonly** tiene conto del fuso orario del server, non di quello dell’operatore.
+>Tieni presente che la funzione **Dateonly** tiene conto del fuso orario del server, non di quello dell’operatore.
 
-**Numeriche**
+**Numerico**
 
 <table> 
  <tbody> 
@@ -810,7 +810,7 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
   </tr> 
   <tr> 
    <td> <strong>Floor</strong><br /> </td> 
-   <td> Restituisce il numero intero più grande maggiore o uguale a un numero<br /> </td> 
+   <td> Restituisce il numero intero maggiore o uguale a un numero<br /> </td> 
    <td> Floor(&lt;numero&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -825,7 +825,7 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
   </tr> 
   <tr> 
    <td> <strong>Mod</strong><br /> </td> 
-   <td> Restituisce il resto della divisione di n1 per n2<br /> </td> 
+   <td> Restituisce il resto della divisione del numero intero da n1 per n2<br /> </td> 
    <td> Mod(&lt;numero 1&gt;, &lt;numero 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -904,7 +904,7 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
   </tr> 
   <tr> 
    <td> <strong>Distance</strong><br /> </td> 
-   <td> Restituisce la distanza tra due punti definiti da longitudine e latitudine, espressa in gradi.<br /> </td> 
+   <td> Restituisce la distanza tra due punti definiti da longitudine e latitudine espressa in gradi.<br /> </td> 
    <td> Distance(&lt;Longitudine A&gt;, &lt;Latitudine A&gt;, &lt;Longitudine B&gt;, &lt;Latitudine B&gt;)<br /> </td>  
   </tr> 
  </tbody> 
@@ -921,7 +921,7 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
   </tr> 
   <tr> 
    <td> <strong>Case</strong><br /> </td> 
-   <td> Restituisce il valore 1 se la condizione è true. In caso contrario, restituisce il valore 2.<br /> </td> 
+   <td> Restituisce il valore 1 se la condizione è vera. In caso contrario, restituisce il valore 2.<br /> </td> 
    <td> Case(When(&lt;condizione&gt;, &lt;valore 1&gt;), Else(&lt;valore 2&gt;))<br /> </td> 
   </tr> 
   <tr> 
@@ -936,13 +936,13 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
   </tr> 
   <tr> 
    <td> <strong>Decode</strong><br /> </td> 
-   <td> Restituisce il valore 3 se il valore 1 = valore 2. Se non restituisce il valore 4.<br /> </td> 
+   <td> Restituisce il valore 3 se il valore 1 = al valore 2. In caso contrario, restituisce il valore 4.<br /> </td> 
    <td> Decode(&lt;valore 1&gt;, &lt;valore 2&gt;, &lt;valore 3&gt;, &lt;valore 4&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>Else</strong><br /> </td> 
    <td> Restituisce il valore 1 (può essere utilizzato solo come parametro della funzione Case)<br /> </td> 
-   <td> Else(&lt;value&gt;, &lt;value&gt;)<br /> </td>  
+   <td> Else(&lt;valore 1&gt;, &lt;valore 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>GetEmailDomain</strong><br /> </td> 
@@ -951,12 +951,12 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
   </tr> 
   <tr> 
    <td> <strong>GetMirrorURL</strong><br /> </td> 
-   <td> Recupera l’URL del server della pagina speculare<br /> </td> 
+   <td> Recupera l’URL del server della pagina mirror<br /> </td> 
    <td> GetMirrorURL(&lt;valore&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>Iif</strong><br /> </td> 
-   <td> Restituisce il valore 1 se l’espressione è true. In caso contrario, restituisce il valore 2<br /> </td> 
+   <td> Restituisce il valore 1 se l’espressione è vera. In caso contrario, restituisce il valore 2<br /> </td> 
    <td> Iif(&lt;condizione&gt;, &lt;valore 1&gt;, &lt;valore 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -966,8 +966,8 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
   </tr> 
   <tr> 
    <td> <strong>IsEmptyString</strong><br /> </td> 
-   <td> Restituisce il valore 2 se la stringa 1 è vuota, altrimenti restituisce il valore 3<br /> </td> 
-   <td> IsEmptyString(&lt;value&gt;, &lt;value&gt;, &lt;value&gt;)<br /> </td>  
+   <td> Restituisce il valore 2 se la stringa è vuota, altrimenti restituisce il valore 3<br /> </td> 
+   <td> IsEmptyString(&lt;valore 1&gt;, &lt;valore 2&gt;, &lt;valore 3&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>NoNull</strong><br /> </td> 
@@ -991,7 +991,7 @@ Consente di selezionare i campi nelle tabelle del database e di aggiungere funzi
   </tr> 
   <tr> 
    <td> <strong>When</strong><br /> </td> 
-   <td> Restituisce il valore 1 se l’espressione è true. In caso contrario, restituisce il valore 2 (può essere utilizzato solo come parametro della funzione Case)<br /> </td> 
+   <td> Restituisce il valore 1 se l’espressione è vera. In caso contrario, restituisce il valore 2 (può essere utilizzato solo come parametro della funzione Case)<br /> </td> 
    <td> When(&lt;condizione&gt;, &lt;valore 1&gt;)<br /> </td>  
   </tr> 
  </tbody> 

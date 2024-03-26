@@ -2,13 +2,13 @@
 product: campaign
 title: Script e modelli JavaScript
 description: Script e modelli JavaScript
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1242'
-ht-degree: 2%
+source-wordcount: '1254'
+ht-degree: 3%
 
 ---
 
@@ -25,7 +25,7 @@ Gli script sono onnipresenti in un diagramma di flusso di lavoro:
 * L’attività &quot;Test&quot; valuta le espressioni JavaScript per attivare la transizione appropriata.
 * La maggior parte dei campi di testo sono modelli JavaScript: le espressioni JavaScript possono essere incluse tra &lt;%= e %>. Questi campi offrono un pulsante che apre un elenco a discesa per facilitare l’immissione di espressioni.
 
-   ![](assets/script-button.png)
+  ![](assets/script-button.png)
 
 ## Oggetti esposti {#objects-exposed}
 
@@ -34,7 +34,7 @@ Gli script Java eseguiti nel contesto di un flusso di lavoro accedono a una seri
 * **istanza**: rappresenta il flusso di lavoro in esecuzione. Lo schema di questo oggetto è **xtk:workflow**.
 * **attività**: rappresenta le attività in esecuzione. Lo schema di questo oggetto è **xtk:workflowTask**.
 * **evento**: rappresenta gli eventi che hanno attivato l’attività in esecuzione. Lo schema di questo oggetto è **xtk:workflowEvent**. Oggetto non inizializzato per **Unione AND** digita le attività che sono state attivate da più transizioni.
-* **Eventi**: rappresenta l&#39;elenco degli eventi che hanno attivato l&#39;attività corrente. Lo schema di questo oggetto è **xtk:workflowEvent**. Questa tabella contiene in genere un elemento, ma può contenerne diversi per **Unione AND** digita le attività che sono state attivate in base a diverse transizioni.
+* **Eventi**: rappresenta l&#39;elenco degli eventi che hanno attivato l&#39;attività corrente. Lo schema di questo oggetto è **xtk:workflowEvent**. Questa tabella contiene in genere un elemento, ma può contenere più elementi per **Unione AND** digita le attività che sono state attivate in base a diverse transizioni.
 * **attività**: rappresenta il modello dell’attività in esecuzione. Lo schema di questo oggetto dipende dal tipo di attività. Questo oggetto può essere modificato dallo script di inizializzazione, in altri script, modifiche con effetti indeterminabili.
 
 Le proprietà disponibili per questi oggetti possono essere visualizzate in un elenco a discesa facendo clic sul pulsante a destra della barra degli strumenti dello script.
@@ -66,7 +66,7 @@ Clic **[!UICONTROL OK]** per chiudere la procedura guidata di creazione, avvia i
 
 Le variabili sono le proprietà libere del **[!UICONTROL instance]**, **[!UICONTROL task]** e **[!UICONTROL event]** oggetti. I tipi JavaScript autorizzati per queste variabili sono **[!UICONTROL string]**, **[!UICONTROL number]** e **[!UICONTROL Date]**.
 
-### Variabili dell&#39;istanza {#instance-variables}
+### Variabili dell’istanza {#instance-variables}
 
 Le variabili di istanza (**[!UICONTROL instance.vars.xxx]**) sono paragonabili alle variabili globali. Sono condivise da tutte le attività.
 

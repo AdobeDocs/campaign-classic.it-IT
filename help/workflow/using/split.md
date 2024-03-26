@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Divisione
+title: Dividi
 description: Ulteriori informazioni sull’attività Dividi flusso di lavoro
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1935'
+source-wordcount: '1953'
 ht-degree: 0%
 
 ---
 
-# Divisione{#split}
+# Dividi{#split}
 
 
 
@@ -76,7 +76,8 @@ Se non si desidera utilizzare l&#39;intera popolazione contenuta in un sottoinsi
    * **[!UICONTROL Keep only the first records after sorting]**: questa opzione consente di definire un limite basato su uno o più ordini di ordinamento. Se si seleziona la **[!UICONTROL Age]** come criterio di ordinamento e 100 come limite, verranno mantenuti solo i 100 destinatari più giovani.
    * **[!UICONTROL Keep the first ones after sorting (criteria, random)]**: questa opzione combina le due opzioni precedenti. Consente di definire un limite basato su uno o più criteri di ordinamento e quindi di applicare una selezione casuale ai primi record se alcuni di essi hanno gli stessi valori dei criteri definiti.
 
-      Ad esempio, se selezioni il **[!UICONTROL Age]** come criterio di ordinamento, si definisce quindi un limite di 100, ma i 2.000 destinatari più giovani nel database sono tutti 18, quindi verranno selezionati in modo casuale 100 di questi 2.000.
+     Ad esempio, se selezioni il **[!UICONTROL Age]** come criterio di ordinamento, si definisce quindi un limite di 100, ma i 2.000 destinatari più giovani nel database sono tutti 18, quindi verranno selezionati in modo casuale 100 di questi 2.000.
+
    ![](assets/s_user_segmentation_partage_wz1.png)
 
 1. Se si desidera definire i criteri di ordinamento, è possibile definire le colonne e l&#39;ordine di ordinamento in un passaggio aggiuntivo.
@@ -91,7 +92,7 @@ Se non si desidera utilizzare l&#39;intera popolazione contenuta in un sottoinsi
 
    * **[!UICONTROL Size (in %)]**: una percentuale di record. Ad esempio, la configurazione seguente estrae il 10% della popolazione totale.
 
-      La percentuale si applica alla popolazione iniziale, non al risultato dell’attività.
+     La percentuale si applica alla popolazione iniziale, non al risultato dell’attività.
 
    * **[!UICONTROL Size (as a % of the segment)]**: una percentuale di record relativi solo ai sottoinsiemi e non alla popolazione iniziale.
    * **[!UICONTROL Maximum size]**: numero massimo di record.
@@ -152,7 +153,7 @@ Il modello di distribuzione dati consente di limitare il numero di record utiliz
    * **[!UICONTROL Assignment type]**: seleziona il tipo di assegnazione della distribuzione dati. È possibile scegliere tra l&#39;assegnazione per gruppo o operatore o l&#39;assegnazione per entità locale. L’assegnazione per entità locale viene utilizzata in **Marketing distribuito**. Per ulteriori informazioni, consulta questa [sezione](../../distributed/using/about-distributed-marketing.md).
    * **[!UICONTROL Approval storage]**: se utilizzi un’ **[!UICONTROL Local approval]** attività nel flusso di lavoro di targeting (consulta [Approvazione locale](local-approval.md)), inserisci lo schema in cui verranno memorizzati i risultati dell&#39;approvazione. È necessario specificare uno schema di archiviazione per ogni schema di destinazione. Se si utilizza **[!UICONTROL Recipients]** schema di targeting, immetti il valore predefinito **[!UICONTROL Local approval of recipients]** schema di archiviazione.
 
-      In caso di una semplice limitazione per raggruppamento di dati senza approvazione locale, non è necessario immettere **[!UICONTROL Approvals storage]** campo.
+     In caso di una semplice limitazione per raggruppamento di dati senza approvazione locale, non è necessario immettere **[!UICONTROL Approvals storage]** campo.
 
 1. Se si utilizza un **[!UICONTROL Local approval]** attività (fare riferimento a [Approvazione locale](local-approval.md)), immetti il **[!UICONTROL Advanced settings]** per il modello di distribuzione:
 
@@ -162,23 +163,23 @@ Il modello di distribuzione dati consente di limitare il numero di record utiliz
 
    * **[!UICONTROL Approve targeted messages]**: seleziona questa opzione se desideri che tutti i destinatari siano preselezionati dall’elenco di destinatari da approvare. Se questa opzione è deselezionata, nessun destinatario sarà preselezionato.
 
-      >[!NOTE]
-      >
-      >Questa opzione è selezionata per impostazione predefinita.
+     >[!NOTE]
+     >
+     >Questa opzione è selezionata per impostazione predefinita.
 
-      ![](assets/local_validation_notification.png)
+     ![](assets/local_validation_notification.png)
 
    * **[!UICONTROL Delivery label]**: ti consente di definire un’espressione per visualizzare l’etichetta di consegna nella notifica di ritorno. L’espressione predefinita fornisce informazioni sull’etichetta standard della consegna (stringa di calcolo). È possibile modificare questa espressione.
 
-      ![](assets/local_validation_notification_3.png)
+     ![](assets/local_validation_notification_3.png)
 
    * **[!UICONTROL Grouping field]**: questo campo ti consente di definire il raggruppamento utilizzato per visualizzare i destinatari nelle notifiche di approvazione e di ritorno.
 
-      ![](assets/local_validation_notification_4.png)
+     ![](assets/local_validation_notification_4.png)
 
    * **[!UICONTROL Web Interface]**: consente di collegare un’applicazione web all’elenco dei destinatari. Nella notifica di approvazione e di ritorno, ogni destinatario sarà cliccabile e si collegherà all’applicazione web selezionata. Il **[!UICONTROL Parameters]** campo (ad esempio **[!UICONTROL recipientId]**) consente di configurare il parametro aggiuntivo da utilizzare nell’URL e nell’applicazione web.
 
-      ![](assets/local_validation_notification_5.png)
+     ![](assets/local_validation_notification_5.png)
 
 1. Il **[!UICONTROL Breakdown]** Questa scheda ti consente di definire l’elenco dei valori di distribuzione.
 
@@ -187,16 +188,16 @@ Il modello di distribuzione dati consente di limitare il numero di record utiliz
    * **[!UICONTROL Value]**: inserisci i valori di distribuzione.
    * **[!UICONTROL Percentage / Set]**: inserisci il limite del record (fisso o percentuale) collegato a ciascun valore.
 
-      Questa colonna è definita da **[!UICONTROL Distribution type]** campo all&#39;interno del **[!UICONTROL General]** scheda.
+     Questa colonna è definita da **[!UICONTROL Distribution type]** campo all&#39;interno del **[!UICONTROL General]** scheda.
 
    * **[!UICONTROL Label]**: inserisci l’etichetta collegata a ciascun valore.
    * **[!UICONTROL Group or operator]**: se utilizzi una **[!UICONTROL Local approval]** attività (fare riferimento a [Approvazione locale](local-approval.md)), seleziona l’operatore o il gruppo di operatori assegnati a ciascun valore di distribuzione.
 
-      In caso di una semplice limitazione per raggruppamento di dati senza approvazione locale, non è necessario immettere **[!UICONTROL Group or operator]** campo.
+     In caso di una semplice limitazione per raggruppamento di dati senza approvazione locale, non è necessario immettere **[!UICONTROL Group or operator]** campo.
 
-      >[!IMPORTANT]
-      >
-      >Assicurati che agli operatori siano stati assegnati i diritti appropriati.
+     >[!IMPORTANT]
+     >
+     >Assicurati che agli operatori siano stati assegnati i diritti appropriati.
 
    * **[!UICONTROL Local entity]**: seleziona l’entità locale assegnata a ciascun valore di distribuzione. Le entità locali vengono utilizzate in **Marketing distribuito**. Per ulteriori informazioni, consulta questa [sezione](../../distributed/using/about-distributed-marketing.md).
 

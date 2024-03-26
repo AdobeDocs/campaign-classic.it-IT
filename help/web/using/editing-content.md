@@ -8,8 +8,8 @@ feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 1%
+source-wordcount: '1230'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +31,7 @@ Per aggiungere una condizione di visibilità, selezionate un blocco e immettete 
 
 ![](assets/dce_popup_visibilitycondition.png)
 
-Queste condizioni adottano la sintassi dell’espressione XTK (ad esempio **ctx.recipient.@e-mail != &quot;&quot;** o **ctx.recipient.@status==&quot;0&quot;**). Per impostazione predefinita, tutti i campi sono visibili.
+Queste condizioni adottano la sintassi dell’espressione XTK (ad esempio **ctx.recipient.@email!= &quot;&quot;** o **ctx.recipient.@status==&quot;0&quot;**). Per impostazione predefinita, tutti i campi sono visibili.
 
 >[!NOTE]
 >

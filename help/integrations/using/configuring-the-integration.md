@@ -10,8 +10,8 @@ content-type: reference
 exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 4%
+source-wordcount: '509'
+ht-degree: 2%
 
 ---
 
@@ -62,11 +62,11 @@ Se l’istanza di Campaign è ospitata da Adobe, contatta [Assistenza clienti Ad
 1. Apri **serverConf.xml** file di configurazione.
 1. Accedere a **allowUserPassword** attributo dell&#39;area di sicurezza selezionata e impostarlo su **true**.
 
-   Questo consentirà ad Adobe Experience Manager di connettere Adobe Campaign tramite login/password.
+   Questo consentirà a Adobe Experience Manager di connettere Adobe Campaign tramite login/password.
 
 ### Configurare l’account esterno {#configure-the-external-account}
 
-Il **[!UICONTROL AEM integration]** il pacchetto ha creato l’account esterno per Adobe Experience Cloud. Ora devi configurarlo per connettersi all’istanza di Adobe Experience Manager.
+Il **[!UICONTROL AEM integration]** il pacchetto ha creato l’account esterno per Adobe Experience Cloud. Ora devi configurarlo per connettersi all’istanza Adobe Experience Manager.
 
 Per configurare l’account esterno dell’AEM, effettua le seguenti operazioni:
 
@@ -124,7 +124,7 @@ Per avviare la configurazione in Adobe Experience Manager, effettua le seguenti 
 
 1. Connettere Adobe Experience Manager ad Adobe Campaign configurando un **Cloud Service**.
 
-   Per informazioni su come collegare entrambe le soluzioni tramite Cloud Services, consulta Adobe Experience Manager [documentazione](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) .
+   Per informazioni su come collegare entrambe le soluzioni tramite Cloud Service, consulta Adobe Experience Manager [documentazione](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) .
 
 1. Configurare **Servizio esternalizzazione**.
 

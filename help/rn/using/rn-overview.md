@@ -9,8 +9,8 @@ level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '939'
-ht-degree: 99%
+source-wordcount: '936'
+ht-degree: 97%
 
 ---
 
@@ -29,9 +29,9 @@ A ogni nuova versione è associato uno stato identificato da un colore nelle [No
 |---|---|
 | [!BADGE Disponibilità generale]{type=Positive} | La più recente build stabile, convalidata in produzione e raccomandata da Adobe. |
 | [!BADGE Disponibilità limitata]{type=Neutral} | Solo per implementazione su richiesta. |
-| [!BADGE Candidata al rilascio]{type=Informative} | Build stabile più recente con nuove funzionalità. |
+| [!BADGE Release Candidate]{type=Informative} | Build stabile più recente con nuove funzionalità. |
 | [!BADGE Non più disponibile]{type=Caution} | Nessuna distribuzione. Nessun bug fix. Si consiglia di eseguire l’aggiornamento a una versione più recente. |
-| [!BADGE Obsoleta]{type=negative} | Nessuna distribuzione. Nessun bug fix. Le implementazioni esistenti devono essere aggiornate. |
+| [!BADGE Obsoleto]{type=negativo} | Nessuna distribuzione. Nessun bug fix. Le implementazioni esistenti devono essere aggiornate. |
 
 <!--
 ![](assets/do-not-localize/green3.png) **General Availability** (GA) - Latest stable build, validated in production, and recommended by Adobe. 

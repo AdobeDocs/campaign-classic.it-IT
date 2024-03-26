@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaig
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 4%
+source-wordcount: '1111'
+ht-degree: 3%
 
 ---
 
@@ -33,7 +33,7 @@ In Microsoft Dynamics CRM:
 1. Creare un utente dell’app
 1. Codifica la chiave privata
 
-[Per ulteriori informazioni, consulta questa sezione](#config-crm-microsoft)
+[Ulteriori informazioni](#config-crm-microsoft)
 
 In Campaign Classic:
 1. Crea un nuovo account esterno
@@ -41,7 +41,7 @@ In Campaign Classic:
 1. Utilizzare la configurazione guidata per mappare tabelle e sincronizzare enumerazioni
 1. Creare il flusso di lavoro di sincronizzazione
 
-[Per ulteriori informazioni, consulta questa sezione](#configure-acc-for-microsoft)
+[Ulteriori informazioni](#configure-acc-for-microsoft)
 
 
 >[!CAUTION]
@@ -170,7 +170,7 @@ Per connettere Microsoft Dynamics 365 e Campaign, è necessario creare e configu
 
    ![](assets/crm-ms-dynamics-ext-account.png)
 
-1. Fai clic sul collegamento **[!UICONTROL Microsoft CRM configuration wizard...]**. Adobe Campaign rileva automaticamente le tabelle dal modello dati di Microsoft Dynamics.
+1. Fai clic su **[!UICONTROL Microsoft CRM configuration wizard...]** collegamento. Adobe Campaign rileva automaticamente le tabelle dal modello dati di Microsoft Dynamics.
 
    ![](assets/crm_connectors_msdynamics_02.png)
 

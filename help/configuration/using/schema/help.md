@@ -21,7 +21,7 @@ guida:==VUOTO
 
 ## Attributi {#attributes-6}
 
-Nessuna
+Nessuno
 
 ## Padri {#parents-6}
 
@@ -29,7 +29,7 @@ Nessuna
 
 ## Elementi figli {#children-6}
 
-Nessuna
+Nessuno
 
 ## Descrizione {#description-6}
 

@@ -2,15 +2,15 @@
 product: campaign
 title: Area di lavoro di Adobe Campaign
 description: Scopri come utilizzare e personalizzare l’area di lavoro di Campaign
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 6%
+source-wordcount: '923'
+ht-degree: 4%
 
 ---
 
@@ -26,7 +26,7 @@ Dalla sezione centrale della home page, puoi utilizzare i collegamenti per acced
 
 ![](assets/d_ncs_user_interface_home.png)
 
-![](assets/do-not-localize/how-to-video.png)[ Scopri l’area di lavoro di Campaign nel video](#video)
+![](assets/do-not-localize/how-to-video.png) Scopri l’area di lavoro di Campaign in [video](#video)
 
 >[!NOTE]
 >
@@ -90,11 +90,11 @@ Gli elenchi sono disponibili tramite **[!UICONTROL Lists]** nella sezione a sini
 
 * Quando fai clic su una funzionalità di base o su un collegamento, la pagina pertinente sostituisce la pagina corrente. Per tornare alla pagina precedente, fare clic su **[!UICONTROL Back]** sulla barra degli strumenti. Per tornare alla home page, fare clic su **[!UICONTROL Home]** pulsante.
 
-   ![](assets/d_ncs_user_interface_back_home_buttons.png)
+  ![](assets/d_ncs_user_interface_back_home_buttons.png)
 
 * Nel caso di un menu o di un collegamento a una schermata di visualizzazione (ad esempio un’applicazione web, un programma, una consegna, un rapporto, ecc.), la pagina corrispondente viene visualizzata in un’altra scheda. Questo consente di navigare da una pagina all’altra utilizzando le schede.
 
-   ![](assets/d_ncs_user_interface_tabs.png)
+  ![](assets/d_ncs_user_interface_tabs.png)
 
 ### Creare un elemento {#creating-an-element}
 

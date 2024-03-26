@@ -2,13 +2,13 @@
 product: campaign
 title: Gestire i fusi orari
 description: Gestire i fusi orari
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows
 exl-id: c2f6033c-30cd-4eb4-adf1-ab2de7510220
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 4%
+source-wordcount: '289'
+ht-degree: 5%
 
 ---
 
@@ -34,19 +34,19 @@ I valori possibili sono:
 
 * Fuso orario server
 
-   Utilizza il fuso orario del server applicazioni Adobe Campaign.
+  Utilizza il fuso orario del server applicazioni Adobe Campaign.
 
 * Fuso orario utente
 
-   Utilizza il fuso orario dell’operatore Adobe Campaign che esegue il flusso di lavoro.
+  Utilizza il fuso orario dell’operatore Adobe Campaign che esegue il flusso di lavoro.
 
 * Fuso orario del database
 
-   Utilizza il fuso orario del server di database utilizzato.
+  Utilizza il fuso orario del server di database utilizzato.
 
 * Fusi orari specifici
 
-   Utilizza il fuso orario selezionato.
+  Utilizza il fuso orario selezionato.
 
 Se il **[!UICONTROL By default]** se è selezionato il valore, viene applicato il fuso orario del flusso di lavoro o, in caso contrario, quello del server applicazioni.
 

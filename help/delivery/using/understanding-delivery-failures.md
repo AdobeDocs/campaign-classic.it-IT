@@ -9,8 +9,8 @@ role: User
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
 source-git-commit: 8b0162680d6a3a2d4891d1f71020b44b28046ad7
 workflow-type: tm+mt
-source-wordcount: '2573'
-ht-degree: 17%
+source-wordcount: '2570'
+ht-degree: 12%
 
 ---
 
@@ -118,7 +118,7 @@ I possibili motivi di un errore di consegna sono:
    <td> Dominio non valido </td> 
    <td> Morbido </td> 
    <td> 2 </td> 
-   <td> Il dominio dell’indirizzo e-mail non è corretto o non esiste più. Questo profilo sarà nuovamente oggetto di targeting fino a raggiungere 5 errori. Successivamente, il record verrà impostato sullo stato di quarantena e non verrà eseguito alcun nuovo tentativo.<br /> </td> 
+   <td> Il dominio dell’indirizzo e-mail non è corretto o non esiste più. Questo profilo sarà nuovamente oggetto di targeting fino a raggiungere 5 errori. In seguito, il record verrà impostato sullo stato di quarantena e non verrà eseguito alcun nuovo tentativo.<br /> </td> 
   </tr> 
   <tr> 
    <td> Cassetta postale piena </td> 
@@ -127,7 +127,7 @@ I possibili motivi di un errore di consegna sono:
    <td> La cassetta postale dell'utente è piena e non può accettare altri messaggi. Questo profilo sarà nuovamente oggetto di targeting fino a raggiungere 5 errori. Successivamente, il record verrà impostato sullo stato di quarantena e non verrà eseguito alcun nuovo tentativo.<br /> Questo tipo di errore è gestito da un processo di pulizia, l’indirizzo viene impostato su uno stato valido dopo 30 giorni.<br /> Avviso: per consentire la rimozione automatica dell’indirizzo dall’elenco degli indirizzi in quarantena, è necessario avviare il flusso di lavoro tecnico Database cleanup.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Non connessi </td> 
+   <td> Non connesso </td> 
    <td> Ignorato </td> 
    <td> 6 </td> 
    <td> Il telefono cellulare del destinatario è spento o non è connesso alla rete quando il messaggio viene inviato.<br /> </td> 
@@ -160,7 +160,7 @@ I possibili motivi di un errore di consegna sono:
    <td> Indirizzo non qualificato </td> 
    <td> Ignorato </td> 
    <td> 15 </td> 
-   <td> L’indirizzo postale non è stato qualificato.<br /> </td> 
+   <td> L'indirizzo postale non è stato qualificato.<br /> </td> 
   </tr> 
   <tr> 
    <td> Non raggiungibile </td> 
@@ -230,7 +230,7 @@ Per le installazioni on-premise e le installazioni in hosting/ibride che utilizz
 >
 >* Le qualifiche di mancato recapito in **[!UICONTROL Delivery log qualification]** tabella non più utilizzata per **sincrono** messaggi di errore di consegna. L’MTA avanzato determina il tipo e la qualifica di mancato recapito e invia nuovamente tali informazioni a Campaign.
 >
->* **** Le mancate consegne asincrone vengono comunque qualificate dal processo inMail attraverso le regole **[!UICONTROL Inbound email]**. Per ulteriori informazioni, consulta [Regole di gestione e-mail](#email-management-rules).
+>* **Asincrono** i mancati recapiti sono ancora qualificati dal processo inMail attraverso **[!UICONTROL Inbound email]** regole. Per ulteriori informazioni, consulta [Regole di gestione e-mail](#email-management-rules).
 >
 >* Per le istanze che utilizzano l’MTA avanzato **senza webhook**, il **[!UICONTROL Inbound email]** Le regole verranno utilizzate anche per elaborare le e-mail non recapitate sincrone provenienti dall’MTA avanzato, utilizzando lo stesso indirizzo e-mail utilizzato per le e-mail non recapitate asincrone.
 

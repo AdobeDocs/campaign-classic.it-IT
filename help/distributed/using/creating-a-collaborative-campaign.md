@@ -2,12 +2,12 @@
 product: campaign
 title: Creare una campagna collaborativa
 description: Scopri come creare una campagna collaborativa
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Distributed Marketing
 exl-id: 17313fe5-ad42-45ca-a35a-1e7aa89380ef
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '922'
 ht-degree: 4%
 
 ---
@@ -76,7 +76,7 @@ Per creare una campagna collaborativa (tramite approvazione target), **[!UICONTR
 
 Il flusso di lavoro della campagna deve essere integrato **Approvazione locale** attività di tipo. I parametri di attività sono i seguenti:
 
-* **[!UICONTROL Action to perform]** : Notifica di approvazione di destinazione.
+* **[!UICONTROL Action to perform]** : notifica di approvazione di Target.
 * **[!UICONTROL Distribution context]** : Esplicito.
 * **[!UICONTROL Data distribution]** : distribuzione di entità locali.
 

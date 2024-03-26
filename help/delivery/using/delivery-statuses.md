@@ -9,8 +9,8 @@ role: User
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 8%
+source-wordcount: '640'
+ht-degree: 3%
 
 ---
 
@@ -69,7 +69,7 @@ Per ulteriori dettagli sui diversi errori di consegna riscontrabili e su come ri
    <td> La consegna è stata annullata da un operatore.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Considerato dal fornitore di servizi<br /> </td> 
+   <td> Preso in considerazione dal fornitore di servizi<br /> </td> 
    <td> Il provider del servizio SMS ha ricevuto la consegna.<br /> Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento al <a href="sending-with-enhanced-mta.md" target="_blank">MTA avanzato</a>, il messaggio è stato inoltrato correttamente da Campaign all’MTA avanzato.</td> 
   </tr> 
   <tr> 

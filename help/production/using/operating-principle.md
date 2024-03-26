@@ -11,7 +11,7 @@ topic-tags: production-procedures
 exl-id: 1c032ef9-af11-4947-90c6-76cb9434ae85
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '512'
 ht-degree: 4%
 
 ---
@@ -46,7 +46,7 @@ I moduli disponibili sono descritti nella tabella seguente:
 | fatturazione | Invio del report attività di sistema a billing@neolane.net |
 | cleanup | Pulizia del database: elimina i dati obsoleti dal database ed esegue un aggiornamento delle statistiche utilizzate dall&#39;optimizer del motore di database. |
 | config | Modifica della configurazione server |
-| esportare | Esportazione nella riga di comando: consente di inviare alla riga di comando un modello di esportazione creato nella console client di Adobe Campaign |
+| esporta | Esportazione nella riga di comando: consente di inviare alla riga di comando un modello di esportazione creato nella console client di Adobe Campaign |
 | fileconvert | Conversione di un file di dimensioni impostate |
 | importa | Importazione nella riga di comando: consente di inviare alla riga di comando un modello di importazione creato nella console client di Adobe Campaign. |
 | inMail | Mail Analyzer in entrata |

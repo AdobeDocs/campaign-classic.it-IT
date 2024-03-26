@@ -2,13 +2,13 @@
 product: campaign
 title: Ciclo di vita dei dati
 description: Ulteriori informazioni sul ciclo di vita dei dati nei flussi di lavoro
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 5%
+source-wordcount: '517'
+ht-degree: 6%
 
 ---
 
@@ -28,17 +28,17 @@ A questo scopo, seleziona il menu pertinente:
 
 * Visualizzazione del target
 
-   Questo menu visualizza i dati disponibili sulla popolazione target e la struttura della tabella di lavoro (**[!UICONTROL Schema]** ).
+  Questo menu visualizza i dati disponibili sulla popolazione target e la struttura della tabella di lavoro (**[!UICONTROL Schema]** ).
 
-   ![](assets/wf-right-click-display.png)
+  ![](assets/wf-right-click-display.png)
 
-   Per ulteriori informazioni, consulta [Tabelle di lavoro e schema flusso di lavoro](monitoring-workflow-execution.md#worktables-and-workflow-schema).
+  Per ulteriori informazioni, consulta [Tabelle di lavoro e schema flusso di lavoro](monitoring-workflow-execution.md#worktables-and-workflow-schema).
 
 * Analisi del target
 
-   Questo menu consente di accedere alla procedura guidata di analisi descrittiva che consente di produrre statistiche e rapporti sui dati di transizione.
+  Questo menu consente di accedere alla procedura guidata di analisi descrittiva che consente di produrre statistiche e rapporti sui dati di transizione.
 
-   Per ulteriori informazioni, consulta questa [sezione](../../reporting/using/using-the-descriptive-analysis-wizard.md).
+  Per ulteriori informazioni, consulta questa [sezione](../../reporting/using/using-the-descriptive-analysis-wizard.md).
 
 I dati di destinazione vengono eliminati durante l’esecuzione del flusso di lavoro. È accessibile solo l&#39;ultima tabella di lavoro. È possibile configurare il flusso di lavoro in modo che tutte le tabelle di lavoro rimangano accessibili: selezionare **[!UICONTROL Keep the result of interim populations between two executions]** nelle proprietà del flusso di lavoro.
 

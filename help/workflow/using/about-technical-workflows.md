@@ -7,8 +7,8 @@ feature: Workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '1716'
-ht-degree: 4%
+source-wordcount: '1711'
+ht-degree: 2%
 
 ---
 
@@ -39,11 +39,11 @@ Per ulteriori informazioni su come monitorare i flussi di lavoro tecnici, consul
 | **Calcolo delle statistiche del Twitter** (statsTwitter) | Social network (Social marketing) - Solo Campaign v7 | Questo flusso di lavoro calcola le statistiche relative ai retweet e alle visite su X (precedentemente noto come Twitter). |
 | **Processi della campagna** (operationMgt) | Campagne di marketing (Campaign) | Questo flusso di lavoro gestisce i processi per le campagne di marketing (avvio, targeting, estrazione file, ecc.). Crea anche flussi di lavoro relativi a campagne ricorrenti e periodiche. |
 | **Raccogli dati per il servizio HeatMap** (collectDataHeatMapService) | Installato per impostazione predefinita | Questo flusso di lavoro recupera i dati richiesti dal servizio HeatMap. |
-| **Raccogliere richieste di privacy** (collectPrivacyRequests) | Regolamento sulla protezione dei dati sulla privacy | Questo flusso di lavoro genera i dati del destinatario memorizzati in Adobe Campaign e li rende disponibili per il download nella schermata della richiesta di accesso a dati personali. |
+| **Raccogliere richieste di privacy** (collectPrivacyRequests) | Regolamento sulla protezione dei dati personali | Questo flusso di lavoro genera i dati del destinatario memorizzati in Adobe Campaign e li rende disponibili per il download nella schermata della richiesta di accesso a dati personali. |
 | **Calcolo dei costi** (budgetMgt) | Campagne di marketing (Campaign) | Questo flusso di lavoro avvia il calcolo delle righe spese e costi per budget, piani, programmi, campagne, consegne e attività. |
 | **Database cleanup** (pulizia) | Consegna | Questo flusso di lavoro è il flusso di lavoro di manutenzione del database: esegue calcoli diversi dalle statistiche e dai processi ed elimina i dati obsoleti dal database in base alla configurazione definita nell’assistente alla distribuzione. Viene attivato ogni giorno alle 4 per impostazione predefinita. Per ulteriori informazioni, consulta [questa pagina](../../production/using/database-cleanup-workflow.md#monitoring-campaign-classic). |
 | **Elimina utenti LINE bloccati** (deleteBlockedLineUsersV2) | Canale LINE | Questo flusso di lavoro assicura che i dati degli utenti LINE V2 vengano eliminati dopo che hanno bloccato l’account ufficiale LINE per 180 giorni. |
-| **Eliminare i dati delle richieste di privacy** (deletePrivacyRequestsData) | Regolamento sulla protezione dei dati sulla privacy | Questo flusso di lavoro elimina i dati del destinatario memorizzati in Adobe Campaign. |
+| **Eliminare i dati delle richieste di privacy** (deletePrivacyRequestsData) | Regolamento sulla protezione dei dati personali | Questo flusso di lavoro elimina i dati del destinatario memorizzati in Adobe Campaign. |
 | **Indicatori di consegna** (deliveryIndicators) | Piattaforma di mid-sourcing | Questo flusso di lavoro aggiorna gli indicatori di tracciamento della consegna per una consegna. Questo flusso di lavoro viene attivato ogni ora per impostazione predefinita. |
 | **Processi del forum di discussione** (newsgroupMgt) | Risorse di marketing (MRM) | Questo flusso di lavoro gestisce la consegna delle notifiche dai forum di discussione. Viene attivato quando si riceve un segnale di approvazione |
 | **Processi di marketing distribuito** (centralLocalMgt) | Marketing centrale e locale (marketing distribuito) | Questo flusso di lavoro avvia l’elaborazione correlata all’utilizzo del modulo di marketing distribuito. Avvia la creazione di campagne locali e gestisce le notifiche relative agli ordini e alla disponibilità dei pacchetti delle campagne. |
@@ -65,7 +65,7 @@ Per ulteriori informazioni su come monitorare i flussi di lavoro tecnici, consul
 | **Gestione degli opt-out NMAC** (mobileAppOptOutMgt) | Canale app mobile | Questo flusso di lavoro aggiorna gli annullamenti degli abbonamenti alle notifiche sui dispositivi mobili. Viene attivato ogni 6 ore tra l’1 e mezzanotte. Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines). |
 | **Notifica di offerta** (offerMgt) | Consegna | Questo flusso di lavoro distribuisce le offerte approvate nell’ambiente online, nonché in ogni categoria contenuta nel catalogo delle offerte. |
 | **Pulizia dei flussi di lavoro in pausa** (cleanupPausedWorkflows) | Consegna | Questo flusso di lavoro analizza i flussi di lavoro in pausa la cui gravità è impostata su Normal e attiva avvisi e notifiche se sono stati messi in pausa troppo a lungo. Dopo un mese, i flussi di lavoro tecnici in pausa vengono interrotti incondizionatamente. Per impostazione predefinita viene attivato ogni lunedì alle 5. Per ulteriori informazioni, consulta [Gestione dei flussi di lavoro in pausa](monitoring-workflow-execution.md#handling-of-paused-workflows). |
-| **Pulizia richiesta di accesso a dati personali** (cleanupPrivacyRequests) | Regolamento sulla protezione dei dati sulla privacy | Questo flusso di lavoro cancella i file di richiesta di accesso che sono più vecchi di 90 giorni. |
+| **Pulizia richiesta di accesso a dati personali** (cleanupPrivacyRequests) | Regolamento sulla protezione dei dati personali | Questo flusso di lavoro cancella i file di richiesta di accesso che sono più vecchi di 90 giorni. |
 | **Elaborazione di eventi batch** (batchEventsProcessing) | Esecuzione dei messaggi transazionali (Centro messaggi - Esecuzione) | Questo flusso di lavoro ti consente di mettere in coda gli eventi batch prima di associarli a un modello di messaggio. |
 | **Elaborazione di eventi in tempo reale** (rtEventsProcessing) | Esecuzione dei messaggi transazionali (Centro messaggi - Esecuzione) | Questo flusso di lavoro consente di mettere in coda eventi in tempo reale prima di associarli a un modello di messaggio. |
 | **Sincronizzazione delle proposte** (propositionSynch) | Controllo del motore di offerta con istanza di esecuzione | Questo flusso di lavoro sincronizza le proposte tra l’istanza di marketing e l’istanza di esecuzione utilizzate per le interazioni. |

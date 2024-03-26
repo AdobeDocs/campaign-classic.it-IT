@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Come utilizzare i dati dei flussi di lavoro
+title: Come utilizzare i dati del flusso di lavoro
 description: Scopri come utilizzare i dati dei flussi di lavoro
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 5354d608-2fea-45f9-a0aa-11c7e965ab04
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 2%
+source-wordcount: '416'
+ht-degree: 1%
 
 ---
 
-# Come utilizzare i dati dei flussi di lavoro{#how-to-use-workflow-data}
+# Come utilizzare i dati del flusso di lavoro{#how-to-use-workflow-data}
 
 
 
@@ -26,15 +26,15 @@ I dati del database di Adobe Campaign e gli elenchi esistenti possono essere agg
 
 * Il **[!UICONTROL List update]** attività consente di memorizzare le tabelle di lavoro in un datalist.
 
-   È possibile selezionare un elenco esistente o crearlo. In questo caso, vengono calcolati il nome e, se possibile, la cartella dei record.
+  È possibile selezionare un elenco esistente o crearlo. In questo caso, vengono calcolati il nome e, se possibile, la cartella dei record.
 
-   ![](assets/s_user_create_list.png)
+  ![](assets/s_user_create_list.png)
 
-   Fai riferimento a [Aggiornamento elenco](list-update.md).
+  Fai riferimento a [Aggiornamento elenco](list-update.md).
 
 * Il **[!UICONTROL Update data]** l’attività esegue un aggiornamento di massa dei campi nel database.
 
-   Per ulteriori informazioni, consulta [Aggiorna dati](update-data.md).
+  Per ulteriori informazioni, consulta [Aggiorna dati](update-data.md).
 
 ### Gestione abbonamento/annullamento abbonamento {#subscription-unsubscription-management}
 

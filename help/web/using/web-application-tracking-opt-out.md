@@ -2,13 +2,13 @@
 product: campaign
 title: Rinuncia al tracciamento delle applicazioni web
 description: Rinuncia al tracciamento delle applicazioni web
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Web Apps
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '679'
 ht-degree: 3%
 
 ---
@@ -42,11 +42,11 @@ Se il tracciamento web è attivato, puoi avere:
 * Nessun banner.
 * Configura il banner manualmente su ogni pagina: seleziona questa opzione e seleziona il banner in ogni pagina nelle proprietà della pagina.
 
-   ![](assets/pageproperties.png)
+  ![](assets/pageproperties.png)
 
 * Aggiungi automaticamente il banner a tutte le pagine: seleziona il banner direttamente nelle proprietà dell&#39;applicazione Web.
 
-   ![](assets/optoutconfig.png)
+  ![](assets/optoutconfig.png)
 
 >[!NOTE]
 >
@@ -84,7 +84,7 @@ Le API lato client disponibili per personalizzare il banner sono:
 * **NL.ClientWebTracking.forbid()**: imposta il valore del cookie di rinuncia per impedire il tracciamento web. Il tracciamento web richiede che un input dell’utente sia vietato.
 * **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**: chiude il banner del cookie di rinuncia dopo che l’utente ha fatto clic sul pulsante Accetta o Rifiuta. (durante la fase di bubbling dell’evento clic)
 
-   bannerDomElt {DOMElement} l’elemento DOM principale del banner del cookie da rimuovere
+  bannerDomElt {DOMElement} l’elemento DOM principale del banner del cookie da rimuovere
 
 * **NL.ClientWebTracking.hasUserPrefs()**: restituisce true se l’utente ha scelto le proprie preferenze per il tracciamento web.
 * **NL.ClientWebTracking.getUserPrefs()**: restituisce il valore del cookie di rinuncia che definisce le preferenze dell’utente.
@@ -93,23 +93,23 @@ Se devi scrivere un JSSP, sono disponibili le API lato server:
 
 * **NL.ServerWebTracking.generateOptOutBanner(escapeJs)**: genera il markup per il banner di rinuncia da inserire nella pagina JSSP
 
-   **escapeJs {Boolean}**: true quando il markup generato deve avere l’escape per essere utilizzato all’interno di JavaScript.
+  **escapeJs {Boolean}**: true quando il markup generato deve avere l’escape per essere utilizzato all’interno di JavaScript.
 
-   Restituisce il HTML del markup del banner di rinuncia da stampare nella pagina.
+  Restituisce il HTML del markup del banner di rinuncia da stampare nella pagina.
 
 * **NL.ServerWebTracking._displayOptOutBanner()**
 
-   Restituisce &quot;true&quot; se il banner di rinuncia deve essere visualizzato dopo che l’amministratore ha selezionato un banner di rinuncia
+  Restituisce &quot;true&quot; se il banner di rinuncia deve essere visualizzato dopo che l’amministratore ha selezionato un banner di rinuncia
 
-   Questo codice viene richiamato quando l’amministratore ha già scelto di utilizzare il banner di rinuncia al tracciamento web.
+  Questo codice viene richiamato quando l’amministratore ha già scelto di utilizzare il banner di rinuncia al tracciamento web.
 
-   Se l&#39;utente non ha ancora scelto di essere tracciato, il banner deve essere visualizzato.
+  Se l&#39;utente non ha ancora scelto di essere tracciato, il banner deve essere visualizzato.
 
 * **NL.ServerWebTracking.renderOptOutBanner(escapeJs)**
 
-   Esegue il rendering del markup per il banner di rinuncia inserendolo nella pagina JSSP. Viene chiamato così com&#39;è in Jssp tra &lt;% %>
+  Esegue il rendering del markup per il banner di rinuncia inserendolo nella pagina JSSP. Viene chiamato così com&#39;è in Jssp tra &lt;% %>
 
-   **escapeJs {Boolean}**: true quando il markup generato deve avere l’escape per essere utilizzato all’interno di JavaScript
+  **escapeJs {Boolean}**: true quando il markup generato deve avere l’escape per essere utilizzato all’interno di JavaScript
 
 Esempio JSSP:
 

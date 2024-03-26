@@ -2,12 +2,12 @@
 product: campaign
 title: Esecuzione del calcolo aggregato
 description: Scopri come eseguire il calcolo aggregato nelle query
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows
 exl-id: 5b05788f-498b-4a84-bdde-2852900f0129
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '238'
 ht-degree: 2%
 
 ---
@@ -20,15 +20,15 @@ In questo esempio, vogliamo contare il numero di destinatari che vivono a Londra
 
 * Quale tabella deve essere selezionata?
 
-   Tabella dei destinatari (**nms:destinatario**)
+  Tabella dei destinatari (**nms:destinatario**)
 
 * Quali campi devono essere selezionati nella colonna di output?
 
-   Chiave primaria (con conteggio) e genere
+  Chiave primaria (con conteggio) e genere
 
 * Su quali condizioni vengono filtrate le informazioni?
 
-   In base ai destinatari che vivono a Londra
+  In base ai destinatari che vivono a Londra
 
 Per creare questo esempio, attieniti alla seguente procedura:
 

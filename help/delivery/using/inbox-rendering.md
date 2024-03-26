@@ -9,8 +9,8 @@ role: User
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 9%
+source-wordcount: '842'
+ht-degree: 7%
 
 ---
 
@@ -49,7 +49,7 @@ Per le installazioni on-premise, segui i passaggi seguenti per configurare il re
    * **[!UICONTROL Internal name]**: deliverabilityInstance
    * **[!UICONTROL Type]**: HTTP
    * **[!UICONTROL Server]**: https://deliverability-app.neolane.net/deliverability
-   * **[!UICONTROL Encryption]**: Nessuna
+   * **[!UICONTROL Encryption]**: nessuna
    * Seleziona l’opzione **[!UICONTROL Enabled]**.
 
    ![](assets/s_tn_inbox_rendering_external-account.png)

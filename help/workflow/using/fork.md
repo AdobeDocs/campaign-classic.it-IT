@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Attività Fork
+title: Fork
 description: Ulteriori informazioni sull’attività del flusso di lavoro Fork
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows
 exl-id: 7a38653b-c15d-4ed8-85dc-f7214409f42b
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 1%
+source-wordcount: '424'
+ht-degree: 3%
 
 ---
 
-# Attività Fork{#fork}
+# Fork{#fork}
 
 
 
@@ -40,7 +40,7 @@ In questo esempio, e-mail diverse vengono inviate a gruppi di popolazione divers
 * Salvare il risultato della query
 * Segmentare il risultato per inviare più consegne
 
-   ![L’attività fork segue l’intersezione di due query e precede un’attività di aggiornamento elenco e un’attività divisa.](assets/wkf_fork_example.png)
+  ![L’attività fork segue l’intersezione di due query e precede un’attività di aggiornamento elenco e un’attività divisa.](assets/wkf_fork_example.png)
 
 Il flusso di lavoro comprende le seguenti attività:
 

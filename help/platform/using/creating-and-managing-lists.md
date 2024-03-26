@@ -2,14 +2,14 @@
 product: campaign
 title: Creazione e gestione di elenchi
 description: Scopri come creare e gestire gli elenchi
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Profiles
 role: User
 level: Beginner
 exl-id: 711b84cd-bac8-4f1a-9999-0124fbfc3a01
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '806'
 ht-degree: 9%
 
 ---
@@ -30,13 +30,13 @@ In Adobe Campaign sono disponibili due tipi di elenchi:
 
 * **[!UICONTROL Group]** type (tipo): The **[!UICONTROL Group]** gli elenchi di tipi appartengono a un **statico** elenco di persone selezionate secondo criteri specifici. L’elenco è simile a un’istantanea di un set di profili. Tieni presente che non viene aggiornato automaticamente nel caso in cui i profili vengano aggiunti al database.
 
-   Per ulteriori informazioni su come creare una **[!UICONTROL Group]** digita elenco, fai riferimento a questo [pagina](#creating-a-profile-list-from-a-group).
+  Per ulteriori informazioni su come creare una **[!UICONTROL Group]** digita elenco, fai riferimento a questo [pagina](#creating-a-profile-list-from-a-group).
 
 * **[!UICONTROL List]** type (tipo): The **[!UICONTROL List]** gli elenchi di tipo consentono di utilizzare i flussi di lavoro per creare e gestire gli elenchi. Si tratta di elenchi specifici risultanti dalle importazioni di dati, che possono essere aggiornati tramite l’ **[!UICONTROL List update]** attività del flusso di lavoro.
 
-   A differenza della **[!UICONTROL Group]** elenco dei tipi, questo elenco dei tipi può essere aggiornato automaticamente con **[!UICONTROL Scheduler]** attività. Tieni presente che per un esempio su come creare **[!UICONTROL List]** elenchi di tipi, fare riferimento a [questa pagina](../../workflow/using/list-update.md).
+  A differenza della **[!UICONTROL Group]** elenco dei tipi, questo elenco dei tipi può essere aggiornato automaticamente con **[!UICONTROL Scheduler]** attività. Tieni presente che per un esempio su come creare **[!UICONTROL List]** elenchi di tipi, fare riferimento a [questa pagina](../../workflow/using/list-update.md).
 
-![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#create-list-video)
+![](assets/do-not-localize/how-to-video.png) [Guarda il video su questa funzione](#create-list-video)
 
 ## Creare un elenco di profili da un gruppo {#creating-a-profile-list-from-a-group}
 
@@ -58,7 +58,7 @@ Per creare un nuovo **[!UICONTROL Group]** tipo, applica i seguenti passaggi:
    * Aggiungere una descrizione per l&#39;elenco.
    * Puoi specificare una data di scadenza: una volta raggiunta tale data, l’elenco viene eliminato e rimosso automaticamente.
 
-      ![](assets/list_expiration_date.png)
+     ![](assets/list_expiration_date.png)
 
 1. In **[!UICONTROL Content]** , fare clic su **[!UICONTROL Add]** per selezionare i profili appartenenti all’elenco.
 
@@ -70,7 +70,7 @@ Puoi creare nuovi profili direttamente dalla finestra &quot;Aggiungi profili&quo
 
 ![](assets/s_ncs_user_new_recipient_from_group.png)
 
-L’elenco dei profili può essere configurato come gli altri elenchi. Vedi [questa sezione](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
+L’elenco dei profili può essere configurato come gli altri elenchi. Consulta [questa sezione](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
 
 ## Collegare dati a un elenco {#linking-data-to-a-list}
 
@@ -113,11 +113,11 @@ Per rimuovere un profilo da un elenco, puoi:
 
 * Modifica l’elenco, seleziona il profilo in **[!UICONTROL Content]** , quindi fare clic sulla scheda **[!UICONTROL Delete]** icona.
 
-   ![](assets/list_remove_a_recipient.png)
+  ![](assets/list_remove_a_recipient.png)
 
 * Modifica il profilo, fai clic su **[!UICONTROL List]** , quindi fare clic sulla scheda **[!UICONTROL Delete]** icona.
 
-   ![](assets/recipient_remove_a_list.png)
+  ![](assets/recipient_remove_a_list.png)
 
 ## Eliminare un elenco di profili {#deleting-a-list-of-profiles}
 

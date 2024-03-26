@@ -12,7 +12,7 @@ hidefromtoc: true
 exl-id: 3743d018-3316-4ce3-ae1c-25760aaf5785
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
@@ -256,7 +256,7 @@ Per distribuire Adobe Campaign, effettua le seguenti operazioni:
    >
    >Per il primo comando precedente, non copiare **config-default.xml** file.
 
-1. In **serverConf.xml** e **config-default.xml** file di Adobe Campaign v7, applica le configurazioni specifiche di Adobe Campaign precedenti. Per **serverConf.xml** file, utilizza **Neolane v5/conf/serverConf.xml.diff**, **Neolane v6/conf/serverConf.xml.diff** o **Adobe Campaign v6/conf/serverConf.xml.diff** file.
+1. In **serverConf.xml** e **config-default.xml** file di Adobe Campaign v7, applica le configurazioni specifiche di Adobe Campaign versione precedente. Per **serverConf.xml** file, utilizza **Neolane v5/conf/serverConf.xml.diff**, **Neolane v6/conf/serverConf.xml.diff** o **Adobe Campaign v6/conf/serverConf.xml.diff** file.
 
    >[!NOTE]
    >

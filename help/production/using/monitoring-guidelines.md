@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaig
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 22%
+source-wordcount: '750'
+ht-degree: 18%
 
 ---
 
@@ -73,7 +73,7 @@ Audit trail consente di visualizzare tutte le modifiche apportate nei flussi di 
 
 **Risoluzione dei problemi dei flussi di lavoro**
 
-È possibile eseguire azioni specifiche quando si verificano problemi con l’esecuzione di un flusso di lavoro. Per ulteriori informazioni, [fai clic qui](../../production/using/workflow-execution.md)
+È possibile eseguire azioni specifiche quando si verificano problemi con l’esecuzione di un flusso di lavoro. [Fai clic qui](../../production/using/workflow-execution.md) per ulteriori informazioni
 
 **Monitoraggio dello stato del flusso di lavoro**
 
@@ -126,7 +126,7 @@ Il flusso di lavoro di pulizia del database consente di eliminare i dati obsolet
 
 *solo modelli di hosting on-premise e ibridi*
 
-Il backup è essenziale per evitare la perdita di dati in caso di problemi (fisici o di sistema) su una macchina. Per ulteriori informazioni, [fai clic qui. ](../../production/using/backup.md) La procedura di ripristino è descritta in [questa sezione](../../production/using/restoration.md).
+Il backup è essenziale per evitare la perdita di dati in caso di problemi (fisici o di sistema) su una macchina. [Fai clic qui](../../production/using/backup.md) per ulteriori informazioni. La procedura di ripristino è descritta in [questa sezione](../../production/using/restoration.md).
 
 ## Principi tecnici Campaign Classic {#campaign-classic-technical-principles}
 

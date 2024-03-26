@@ -11,8 +11,8 @@ topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1603'
-ht-degree: 3%
+source-wordcount: '1575'
+ht-degree: 1%
 
 ---
 
@@ -43,7 +43,7 @@ I file di configurazione di Campaign Classic sono archiviati in **conf** cartell
 
 ## Ambito di configurazione
 
-Configura o adatta il server Campaign in base alle tue esigenze e configurazione. Puoi:
+Configura o adatta il server Campaign in base alle tue esigenze e configurazione. Puoi eseguire le seguenti azioni:
 
 * Proteggi il [Identificatore interno](#internal-identifier)
 * Abilita [Processi della campagna](#enabling-processes)

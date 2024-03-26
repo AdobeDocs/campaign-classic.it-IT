@@ -9,8 +9,8 @@ role: User
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1511'
-ht-degree: 4%
+source-wordcount: '1425'
+ht-degree: 3%
 
 ---
 
@@ -44,7 +44,7 @@ AMP for Email è compatibile con le e-mail esistenti. La versione AMP del messag
 
 Per ulteriori informazioni sul formato, le specifiche e i requisiti dell’AMP per e-mail, consulta la sezione [Documentazione per gli sviluppatori AMP](https://amp.dev/documentation/guides-and-tutorials/learn/email-spec/amp-email-format/?format=email).
 
-![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#amp-email-video)
+![](assets/do-not-localize/how-to-video.png) [Guarda il video su questa funzione](#amp-email-video)
 
 ## Passaggi chiave per utilizzare AMP per e-mail con Adobe Campaign {#key-steps-to-use-amp}
 

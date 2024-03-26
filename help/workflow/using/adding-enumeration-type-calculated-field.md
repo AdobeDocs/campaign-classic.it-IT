@@ -2,7 +2,7 @@
 product: campaign
 title: Aggiungere un campo calcolato di tipo enumerazione
 description: Scopri come aggiungere un campo calcolato di tipo enumerazione
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 audience: workflow
 content-type: reference
 topic-tags: use-cases
@@ -10,8 +10,8 @@ feature: Workflows, Data Management
 exl-id: 3f606d3a-0af5-4315-bb08-1b21a71f1721
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 0%
+source-wordcount: '444'
+ht-degree: 2%
 
 ---
 
@@ -23,15 +23,15 @@ In questo caso vogliamo creare una query con un **[!UICONTROL Enumerations]** di
 
 * Quale tabella deve essere selezionata?
 
-   Tabella dei destinatari (nms:recipient)
+  Tabella dei destinatari (nms:recipient)
 
 * Campi da selezionare nella colonna di output?
 
-   Cognome, Nome, Genere
+  Cognome, Nome, Genere
 
 * Criteri in base ai quali le informazioni verranno filtrate?
 
-   La lingua del destinatario
+  La lingua del destinatario
 
 Applica i seguenti passaggi:
 

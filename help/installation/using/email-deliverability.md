@@ -11,8 +11,8 @@ topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3048'
-ht-degree: 1%
+source-wordcount: '3100'
+ht-degree: 0%
 
 ---
 
@@ -425,7 +425,7 @@ Questo parametro è molto importante e particolarmente critico se i messaggi non
 
 Una volta **maxWorkingSetMb** (256) quando viene raggiunta la soglia, il server di consegna interrompe l’invio dei messaggi. Le prestazioni diminuiranno in modo significativo fino a quando **mtachild** riavvia. Per evitare questo problema, puoi aumentare la soglia del **maxWorkingSetMb** o diminuire la soglia del **maxWaitingMessages** parametro.
 
-Il **maxWorkingSetMb** Il parametro viene calcolato empiricamente moltiplicando il numero massimo di messaggi per la dimensione media e moltiplicando il risultato per 2,5. Ad esempio, se un messaggio ha una dimensione media di 50 KB e **maxWaitingMessages** è uguale a 1.000, la memoria utilizzata è in media di 125 MB.
+Il **maxWorkingSetMb** Il parametro viene calcolato empiricamente moltiplicando il numero massimo di messaggi per la dimensione media dei messaggi e moltiplicando il risultato per 2,5. Ad esempio, se un messaggio ha una dimensione media di 50 KB e **maxWaitingMessages** è uguale a 1.000, la memoria utilizzata è in media di 125 MB.
 
 ### Regola il numero di matchild {#adjust-the-number-of-mtachild}
 

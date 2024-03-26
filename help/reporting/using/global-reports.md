@@ -7,8 +7,8 @@ feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '2308'
-ht-degree: 9%
+source-wordcount: '2292'
+ht-degree: 8%
 
 ---
 
@@ -48,7 +48,7 @@ Questo rapporto contiene informazioni sulla velocità effettiva di consegna dell
 
 ![](assets/s_ncs_user_report_toolbar.png)
 
-Puoi configurare i valori visualizzati modificando la scala cronologica: visualizzazione a 1 ora, visualizzazione a 3 ore, visualizzazione a 24 ore, ecc. Fai clic su **[!UICONTROL Refresh]** per confermare la selezione.
+Puoi configurare i valori visualizzati modificando la scala cronologica: visualizzazione a 1 ora, visualizzazione a 3 ore, visualizzazione a 24 ore, ecc. Clic **[!UICONTROL Refresh]** per confermare la selezione.
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Per ogni nome di dominio, abbiamo:
 
 >[!NOTE]
 >
->I nomi di dominio visualizzati in questo report sono definiti a livello di cubo. Per modificare questi valori, modificare il **[!UICONTROL Delivery logs (broadlogrcp)]** cubo. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../reporting/using/ac-cubes.md). Il **[!UICONTROL Others]** categoria include i nomi di dominio che non appartengono a una classe specifica.
+>I nomi di dominio visualizzati in questo report sono definiti a livello di cubo. Per modificare questi valori, modificare il **[!UICONTROL Delivery logs (broadlogrcp)]** cubo. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/ac-cubes.md). Il **[!UICONTROL Others]** categoria include i nomi di dominio che non appartengono a una classe specifica.
 
 ## Browser {#browsers}
 

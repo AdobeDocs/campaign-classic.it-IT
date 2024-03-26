@@ -2,13 +2,13 @@
 product: campaign
 title: Flusso di lavoro di consegna cross-channel
 description: Ulteriori informazioni sui flussi di lavoro di consegna cross-channel
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows, Channels Activity
 exl-id: dfd36d2c-44ff-49a9-80b4-09eaf3377072
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 3%
+source-wordcount: '677'
+ht-degree: 4%
 
 ---
 

@@ -21,7 +21,7 @@ parametri:==
 
 ## Attributi {#attributes-13}
 
-Nessuna
+Nessuno
 
 ## Padri {#parents-13}
 
@@ -41,7 +41,7 @@ Questo elemento è obbligatorio, anche per un singolo `<param>` elemento figlio 
 
 ## Descrizione attributo {#attribute-description-13}
 
-Nessuna
+Nessuno
 
 ## Esempi {#examples-10}
 

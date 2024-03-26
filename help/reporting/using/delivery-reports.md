@@ -8,8 +8,8 @@ feature: Reporting, Monitoring
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1463'
-ht-degree: 9%
+source-wordcount: '1464'
+ht-degree: 10%
 
 ---
 
@@ -57,7 +57,7 @@ Questo rapporto combina gli indicatori chiave per monitorare il comportamento de
 **[!UICONTROL 1. Delivery statistics]**
 
 * **[!UICONTROL Messages to deliver]** : numero totale di messaggi da consegnare dopo l’analisi della consegna.
-* **[!UICONTROL Success]** : Numero di messaggi elaborati correttamente.
+* **[!UICONTROL Success]** : numero di messaggi elaborati correttamente.
 
 **[!UICONTROL 2. Reception statistics]**
 
@@ -87,7 +87,7 @@ Questa tabella di valori mostra il raggruppamento di consegne, aperture, clic e 
 
 >[!NOTE]
 >
->I nomi di dominio visualizzati in questo report sono definiti nell&#39;elenco dettagliato utilizzato a livello di cubo. Per modificare, aggiungere o rimuovere i domini predefiniti, modificare **[!UICONTROL Domains]** elenco dettagliato e modifica di valori e alias. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/managing-enumerations.md). Il **[!UICONTROL Others]** La categoria include i nomi di dominio che non appartengono ad alcun valore dell&#39;elenco dettagliato.
+>I nomi di dominio visualizzati in questo report sono definiti nell&#39;elenco dettagliato utilizzato a livello di cubo. Per modificare, aggiungere o rimuovere i domini predefiniti, modificare **[!UICONTROL Domains]** elenco dettagliato e modifica di valori e alias. Per ulteriori informazioni, consulta [questa sezione](../../platform/using/managing-enumerations.md). Il **[!UICONTROL Others]** La categoria include i nomi di dominio che non appartengono ad alcun valore dell&#39;elenco dettagliato.
 
 **[!UICONTROL 4. Generated click streams]**
 
@@ -124,7 +124,7 @@ Questo rapporto mostra l’elenco delle pagine visitate dopo una consegna.
 
 ![](assets/s_ncs_user_url_report.png)
 
-Puoi configurare il contenuto di questo rapporto selezionando: il grafico a punteggio da visualizzare, il filtro temporale (dal lancio dell’azione, nelle prime 6 ore successive al lancio, ecc.) e la modalità di visualizzazione dei dati (per etichetta, URL, categoria). Fai clic su **[!UICONTROL Refresh]** per confermare la selezione.
+Puoi configurare il contenuto di questo rapporto selezionando: il grafico a punteggio da visualizzare, il filtro temporale (dal lancio dell’azione, nelle prime 6 ore successive al lancio, ecc.) e la modalità di visualizzazione dei dati (per etichetta, URL, categoria). Clic **[!UICONTROL Refresh]** per confermare la selezione.
 
 Nella sezione superiore del rapporto vengono visualizzate le seguenti percentuali:
 
@@ -148,7 +148,7 @@ La tabella centrale fornisce le seguenti informazioni:
 
 Questo grafico mostra la suddivisione dei clic cumulativi al giorno.
 
-## Riepilogo delle consegne {#delivery-summary}
+## Riepilogo della consegna {#delivery-summary}
 
 Questo rapporto fornisce tutte le informazioni principali sulla consegna.
 
@@ -170,9 +170,9 @@ Il grafico centrale mostra il raggruppamento per regola dei messaggi rifiutati d
 Questa sezione include i seguenti indicatori:
 
 * **[!UICONTROL Messages to be delivered]** : numero totale di messaggi da consegnare dopo l’analisi della consegna.
-* **[!UICONTROL Success]** : numero di messaggi elaborati correttamente. La frequenza associata è il rapporto con il numero di messaggi da consegnare.
-* **[!UICONTROL Errors]** : numero totale di errori accumulati durante le consegne ed elaborazione automatica del rimbalzo. La frequenza associata è il rapporto con il numero di messaggi da consegnare.
-* **[!UICONTROL New quarantines]** : numero di indirizzi messi in quarantena a seguito di una consegna non riuscita (utente sconosciuto, dominio non valido). La frequenza associata è il rapporto con il numero di messaggi da consegnare.
+* **[!UICONTROL Success]** : numero di messaggi elaborati correttamente. Il tasso associato è il rapporto con il numero di messaggi da consegnare.
+* **[!UICONTROL Errors]** : numero totale di errori accumulati durante le consegne ed elaborazione automatica del rimbalzo. Il tasso associato è il rapporto con il numero di messaggi da consegnare.
+* **[!UICONTROL New quarantines]** : numero di indirizzi messi in quarantena a seguito di una consegna non riuscita (utente sconosciuto, dominio non valido). Il tasso associato è il rapporto con il numero di messaggi da consegnare.
 
 ## Hot click {#hot-clicks}
 
@@ -190,7 +190,7 @@ Questo rapporto fornisce statistiche su aperture, clic e transazioni.
 
 ![](assets/s_ncs_user_stat_report.png)
 
-Ti consente di monitorare l’impatto di marketing della consegna. Puoi configurare la modalità di visualizzazione dei valori modificando la scala cronologica (visualizzazione a 1 ora, a 3 ore o a 24 ore, ecc.). Fai clic su **[!UICONTROL Refresh]** per confermare la selezione.
+Ti consente di monitorare l’impatto di marketing della consegna. Puoi configurare la modalità di visualizzazione dei valori modificando la scala cronologica (visualizzazione a 1 ora, a 3 ore o a 24 ore, ecc.). Clic **[!UICONTROL Refresh]** per confermare la selezione.
 
 Questo rapporto fornisce una tabella di valori e un grafico Pareto che mostra il tempo necessario affinché la consegna raggiunga la massima efficienza. Sono utilizzati i seguenti indicatori:
 

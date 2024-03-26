@@ -5,13 +5,13 @@ description: Gestione delle chiavi negli schemi di dati
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
-source-git-commit: 4a29c189e1e438bbb90067ece63ced0196c618ec
+exl-id: faf63c8f-9d10-43c1-a990-91361594af9f
+source-git-commit: 46dcd80d5adc31a66b47c6d75e7914b0a686326b
 workflow-type: tm+mt
 source-wordcount: '625'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
-
 
 # Gestione delle chiavi negli schemi {#management-of-keys}
 
@@ -187,5 +187,5 @@ Per ulteriori informazioni, consulta i seguenti collegamenti:
 * [Introduzione agli schemi](about-schema-reference.md)
 * [Struttura dello schema](schema-structure.md)
 * [Mappatura del database](database-mapping.md)
-* [Gestione dei collegamenti](database-links.md)
+* [Gestione collegamenti](database-links.md)
 * [Modello dati di Campaign](about-data-model.md)

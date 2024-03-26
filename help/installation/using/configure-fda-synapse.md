@@ -10,8 +10,8 @@ topic-tags: connectors
 exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 2%
+source-wordcount: '742'
+ht-degree: 3%
 
 ---
 
@@ -224,7 +224,7 @@ Per creare [!DNL Azure Synapse] l’account esterno effettua le seguenti operazi
 
      ![](assets/azure_3.png)
 
-   * Per l&#39;autenticazione delle identità gestite assegnata dal sistema, è necessario specificare:
+   * Per l&#39;autenticazione delle identità gestite assegnate dal sistema, è necessario specificare:
 
       * **[!UICONTROL Server]**: URL del server di Azure synapse
 

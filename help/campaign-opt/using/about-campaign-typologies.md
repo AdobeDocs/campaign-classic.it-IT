@@ -8,8 +8,8 @@ feature: Typology Rules, Campaigns
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 22%
+source-wordcount: '470'
+ht-degree: 17%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 22%
 
 Ottimizzazione delle campagne è il modulo di Adobe Campaign che consente di controllare, filtrare e monitorare l’invio delle consegne. Per evitare conflitti tra campagne, Adobe Campaign può sottoporre a test diverse combinazioni applicando specifiche regole di vincolo. Ciò garantisce che i messaggi inviati soddisfino le esigenze e le aspettative dei clienti, in linea con le politiche di comunicazione aziendali.
 
-![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#typologies-video)
+![](assets/do-not-localize/how-to-video.png) [Guarda il video su questa funzione](#typologies-video)
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Di seguito sono elencati i passaggi per creare e applicare una tipologia alle co
 1. Configura la consegna in modo da utilizzare la tipologia creata. Per ulteriori informazioni al riguardo, consulta [questa sezione](applying-rules.md#applying-a-typology-to-a-delivery).
 1. Puoi testare e controllare il comportamento tramite simulazioni di campagne. Per ulteriori informazioni sulle simulazioni delle campagne, consulta [questa sezione](campaign-simulations.md).
 
-Durante la preparazione della consegna, i destinatari vengono esclusi quando viene soddisfatto il criterio. Per monitorare le esclusioni, puoi controllare i registri. Casi d’uso di esempio sulle regole di tipologia della pressione sono disponibili in [questa pagina](pressure-rules.md#use-cases-on-pressure-rules).
+Durante la preparazione della consegna, i destinatari vengono esclusi quando viene soddisfatto il criterio. Puoi controllare i registri per monitorare le esclusioni. Casi d’uso di esempio sulle regole di tipologia della pressione sono disponibili in [questa pagina](pressure-rules.md#use-cases-on-pressure-rules).
 
 ## Video tutorial {#typologies-video}
 

@@ -2,13 +2,13 @@
 product: campaign
 title: Esempi di marketing distribuito
 description: Esempi di marketing distribuito
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Distributed Marketing
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1293'
-ht-degree: 0%
+source-wordcount: '1303'
+ht-degree: 1%
 
 ---
 
@@ -42,35 +42,35 @@ In questo esempio, la proprietà **Ordine delle campagne** l&#39;attività inclu
 
 * campi che l’ente locale deve inserire durante l’ordine,
 
-   ![](assets/mkg_dist_web_app2.png)
+  ![](assets/mkg_dist_web_app2.png)
 
 * collegamenti che consentano all’ente locale di valutare la campagna (ad esempio, target, budget, contenuto, ecc.),
 
-   ![](assets/mkg_dist_web_app3.png)
+  ![](assets/mkg_dist_web_app3.png)
 
 * script che consentono di calcolare e visualizzare il risultato di queste valutazioni.
 
-   ![](assets/mkg_dist_web_app4.png)
+  ![](assets/mkg_dist_web_app4.png)
 
 In questo esempio, vengono utilizzate le seguenti API:
 
 * Per la valutazione del target,
 
-   ```
-   var res = nms.localOrder.EvaluateTarget(ctx.localOrder);
-   ```
+  ```
+  var res = nms.localOrder.EvaluateTarget(ctx.localOrder);
+  ```
 
 * Per la valutazione del bilancio,
 
-   ```
-   var res = nms.localOrder.EvaluateDeliveryBudget(ctx.@deliveryId, NL.XTK.parseNumber(ctx.@compt));
-   ```
+  ```
+  var res = nms.localOrder.EvaluateDeliveryBudget(ctx.@deliveryId, NL.XTK.parseNumber(ctx.@compt));
+  ```
 
 * Per la valutazione del contenuto,
 
-   ```
-   var res = nms.localOrder.EvaluateContent(ctx.localOrder, ctx.@deliveryId, "html", resSeed.@id);
-   ```
+  ```
+  var res = nms.localOrder.EvaluateContent(ctx.localOrder, ctx.@deliveryId, "html", resSeed.@id);
+  ```
 
 ## Creare una campagna collaborativa (tramite approvazione target) {#creating-a-collaborative-campaign--by-target-approval-}
 
@@ -181,7 +181,7 @@ Ora puoi aggiungere una **pacchetto della campagna** dal **[!UICONTROL Campaigns
 
 ### Introduzione {#introduction-1}
 
-Sei il responsabile marketing per un grande marchio di trucco che ha un negozio online e diverse boutique in tutti gli Stati Uniti. Per scaricare il tuo stock invernale e fare spazio per il tuo nuovo stock, decidi di creare un’offerta speciale che sarà rivolta a due categorie di clienti: gli over 30, a cui offrirai prodotti per la cura della pelle sensibili all’età, e gli under 30, a cui offrirai i prodotti per la cura della pelle più semplici.
+Sei il responsabile marketing per un grande marchio di trucco che ha un negozio online e diverse boutique in tutti gli Stati Uniti. Per scaricare il tuo stock invernale e fare spazio per il tuo nuovo stock, decidi di creare un’offerta speciale che sarà rivolta a due categorie di clienti: gli over 30, ai quali offrirai prodotti per la cura della pelle sensibili all’età, e gli under 30, ai quali offrirai i prodotti per la cura della pelle più semplici.
 
 Decidi quindi di utilizzare il Marketing distribuito per creare una campagna collaborativa (per modulo) che ti consenta di selezionare i clienti dai diversi store in base alle fasce di età. Questi clienti riceveranno una consegna e-mail con un’offerta speciale che sarà stata personalizzata in base alla loro fascia di età.
 
@@ -219,7 +219,7 @@ I passaggi sono i seguenti:
    * visualizzare in anteprima il contenuto della consegna,
    * approvano la loro partecipazione.
 
-      ![](assets/mkg_dist_use_case_form_8.png)
+     ![](assets/mkg_dist_use_case_form_8.png)
 
 1. L’operatore incaricato di convalidare gli ordini ne approva la partecipazione.
 

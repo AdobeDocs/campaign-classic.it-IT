@@ -11,8 +11,8 @@ topic-tags: database-maintenance
 exl-id: 194f12de-4671-4a56-8cdc-cd5e3dac147b
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 3%
+source-wordcount: '1146'
+ht-degree: 1%
 
 ---
 
@@ -47,7 +47,7 @@ L’elenco seguente contiene solo le tabelle più soggette a frammentazione. Gli
   </tr> 
   <tr> 
    <td> NmsDeliveryPart<br /> </td> 
-   <td> Medium<br /> </td> 
+   <td> Medio<br /> </td> 
    <td> Inserimenti, aggiornamenti, eliminazioni<br /> </td> 
    <td> Tabella di lavoro in cui vengono inseriti i record durante la preparazione della consegna. Vengono quindi aggiornati durante la consegna e infine eliminati una volta completata la consegna.<br /> Questa tabella tende a frammentarsi rapidamente anche se la sua dimensione media è piuttosto limitata.<br /> </td> 
   </tr> 
@@ -59,13 +59,13 @@ L’elenco seguente contiene solo le tabelle più soggette a frammentazione. Gli
   </tr> 
   <tr> 
    <td> NmsDeliveryStat<br /> </td> 
-   <td> Medium<br /> </td> 
+   <td> Medio<br /> </td> 
    <td> Inserimenti, aggiornamenti, eliminazioni<br /> </td> 
    <td> Questa tabella contiene statistiche sul processo di consegna. I suoi registri sono regolarmente aggiornati. <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsAddress<br /> </td> 
-   <td> Medium<br /> </td> 
+   <td> Medio<br /> </td> 
    <td> Aggiornamenti, inserimenti<br /> </td> 
    <td> Questa tabella contiene informazioni sugli indirizzi e-mail. Viene spesso aggiornato come parte del processo di quarantena (i record vengono creati al primo errore di consegna, aggiornati quando i contatori cambiano ed eliminati una volta che la consegna è andata a buon fine). <br /> </td> 
   </tr> 
@@ -113,7 +113,7 @@ L’elenco seguente contiene solo le tabelle più soggette a frammentazione. Gli
   </tr> 
   <tr> 
    <td> NmsEmailErrorStat<br /> </td> 
-   <td> Medium<br /> </td> 
+   <td> Medio<br /> </td> 
    <td> Inserimenti, aggiornamenti, eliminazioni<br /> </td> 
    <td> Questa tabella contiene gli aggregati sugli errori SMTP ordinati per dominio. Inizialmente contiene informazioni dettagliate che vengono aggregate dall’attività di pulizia una volta che diventa obsoleta. <br /> </td> 
   </tr> 

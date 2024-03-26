@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Attività Scheduler
+title: Modulo di pianificazione
 description: Ulteriori informazioni sull’attività del flusso di lavoro Scheduler
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows
 exl-id: 30a9bd2a-afb1-481c-ab5f-5acebd9cbb5a
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 10%
+source-wordcount: '340'
+ht-degree: 19%
 
 ---
 
-# Attività Scheduler {#scheduler}
+# Modulo di pianificazione {#scheduler}
 
 
 
@@ -22,13 +22,13 @@ Dovresti considerare l’attività **[!UICONTROL Scheduler]** come un inizio pia
 
 ## Best practice {#best-practices}
 
-* Non pianificare l’esecuzione di un flusso di lavoro con una frequenza superiore a 15 minuti, in quanto ciò potrebbe impedire le prestazioni complessive del sistema e creare blocchi nel database.
+* Non pianificare l’esecuzione di un flusso di lavoro con una frequenza superiore a 15 minuti, in quanto ciò potrebbe ostacolare le prestazioni complessive del sistema e creare blocchi nel database.
 
 * Non utilizzarne mai più di uno **[!UICONTROL Scheduler]** attività per ramo in un flusso di lavoro. Consulta [Utilizzo delle attività](workflow-best-practices.md#using-activities).
 
 * L’utilizzo di un’attività di pianificazione può comportare l’esecuzione simultanea di più esecuzioni di un flusso di lavoro. Ad esempio, puoi fare in modo che una pianificazione attivi l’esecuzione del flusso di lavoro ogni ora, ma a volte l’esecuzione dell’intero flusso di lavoro richiede più di un’ora.
 
-   Potrebbe essere necessario saltare l’esecuzione se il flusso di lavoro è già in esecuzione. Per ulteriori informazioni su come impedire l’esecuzione simultanea di un flusso di lavoro, consulta [questa pagina](monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions).
+  Potrebbe essere necessario saltare l’esecuzione se il flusso di lavoro è già in esecuzione. Per ulteriori informazioni su come impedire l’esecuzione simultanea di un flusso di lavoro, consulta [questa pagina](monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions).
 
 * Si noti che la transizione può essere attivata diverse ore dopo se il flusso di lavoro eseguiva un&#39;attività a lungo termine, ad esempio un&#39;importazione, oppure se il modulo wfserver è stato interrotto per un certo periodo di tempo. In questo caso, potrebbe essere necessario limitare l&#39;esecuzione dell&#39;operazione attivata dal modulo di pianificazione a un determinato intervallo di tempo.
 

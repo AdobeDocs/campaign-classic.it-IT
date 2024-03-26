@@ -13,7 +13,7 @@ ht-degree: 6%
 
 ---
 
-# Introduzione al modello dati di Campaign {#about-data-model}
+# Introduzione al modello dati di Campaign{#about-data-model}
 
 Il modello dati concettuale del database di Adobe Campaign è costituito da una serie di tabelle integrate e dalla loro interazione. Le tabelle e i concetti principali sono elencati in questa pagina.
 

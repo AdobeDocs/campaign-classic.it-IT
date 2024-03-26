@@ -10,8 +10,8 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 95%
+source-wordcount: '515'
+ht-degree: 86%
 
 ---
 
@@ -43,7 +43,7 @@ Consulta le [guide introduttive per le tabelle e gli schemi](../../configuration
 
 Puoi creare e implementare una tabella dei destinatari non incorporata in Campaign per inviare i messaggi.
 
-[Per ulteriori informazioni, fai clic qui](../../configuration/using/about-custom-recipient-table.md)
+[Fai clic qui per ulteriori informazioni](../../configuration/using/about-custom-recipient-table.md)
 
 ## Quali sono le best practice per definire le query in Campaign? {#what-are-the-best-practices-to-define-queries-in-campaign-}
 

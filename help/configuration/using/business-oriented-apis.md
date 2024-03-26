@@ -8,8 +8,8 @@ role: Data Engineer, Developer
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 4%
+source-wordcount: '636'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +23,7 @@ Le API aziendali sono specifiche per ciascun tipo di oggetto. Hanno un effetto s
    * invio di una campagna (avvio, pausa, arresto, invio di una bozza),
    * recupero dei registri di consegna.
 
-* Flussi di lavoro:
+* Flussi di lavoro
 
    * avvio di un flusso di lavoro,
    * verifica dei processi, ecc.

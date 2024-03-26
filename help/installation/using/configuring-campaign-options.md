@@ -10,12 +10,12 @@ topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
 source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '4004'
-ht-degree: 6%
+source-wordcount: '3838'
+ht-degree: 1%
 
 ---
 
-# Elenco opzioni di Campaign Classic{#configuring-campaign-options}
+# Elenco delle opzioni di Campaign Classic{#configuring-campaign-options}
 
 Il **[!UICONTROL Administration / Platform / Options]** consente di configurare le opzioni di Adobe Campaign. Alcuni sono incorporati durante l’installazione di Campaign, altri possono essere aggiunti manualmente quando necessario. Le opzioni disponibili variano a seconda dei pacchetti installati con l’istanza.
 
@@ -276,7 +276,7 @@ Il **[!UICONTROL Administration / Platform / Options]** consente di configurare 
   </tr>
 -->
 
-## Resources {#resources}
+## Risorse {#resources}
 
 <table> 
  <thead> 
@@ -304,7 +304,7 @@ Il **[!UICONTROL Administration / Platform / Options]** consente di configurare 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImageSubDirectory</span> <br /> </td> 
-   <td> Cartella in cui devono essere archiviate le immagini sul server.<br /> </td> 
+   <td> Cartella in cui archiviare le immagini sul server.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_LogoPath</span> <br /> </td> 
@@ -336,7 +336,7 @@ Il **[!UICONTROL Administration / Platform / Options]** consente di configurare 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkFileRes_Public_URL</span> <br /> </td> 
-   <td> Nuovo URL per file della risorsa pubblica.<br /> </td> 
+   <td> Nuovo URL per i file di risorse pubbliche.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -741,11 +741,11 @@ Il **[!UICONTROL Administration / Platform / Options]** consente di configurare 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_EdgeServer</span> <br /> </td> 
-   <td> Server Adobe Target utilizzato per l’integrazione. Questa opzione è già selezionata per impostazione predefinita. Questo valore corrisponde al server di dominio Adobe Target, seguito dal valore /m2. Ad esempio: tt.omtrdc.net/m2.<br /><a href="../../integrations/using/configuring-the-integration-with-adobe-target.md"> Consulta questa sezione</a>.<br /> </td> 
+   <td> Server Adobe Target utilizzato per l’integrazione. Questa opzione è già selezionata per impostazione predefinita. Questo valore corrisponde al server di dominio Adobe Target, seguito dal valore /m2. Ad esempio: tt.omtrdc.net/m2.<br /> Consulta <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">questa sezione</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TenantName</span> <br /> </td> 
-   <td> Nome dell’organizzazione Adobe Target. Questo valore corrisponde al nome del client Adobe Target.<br /><a href="../../integrations/using/configuring-the-integration-with-adobe-target.md"> Consulta questa sezione</a>.<br /> </td> 
+   <td> Nome dell’organizzazione Adobe Target. Questo valore corrisponde al nome del client Adobe Target.<br /> Consulta <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">questa sezione</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 
@@ -819,7 +819,7 @@ Il **[!UICONTROL Administration / Platform / Options]** consente di configurare 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_CustomerId</span> <br /> </td> 
-   <td> Identificatore cliente utilizzato per l’invio del rapporto di fatturazione.<br /> </td> 
+   <td> Identificatore cliente utilizzato per inviare il rapporto di fatturazione.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_IntranetURL</span> <br /> </td> 
@@ -872,7 +872,7 @@ Il **[!UICONTROL Administration / Platform / Options]** consente di configurare 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_OpenFormula</span> <br /> </td> 
-   <td> Apri lo script di calcolo dell’URL.<br /> </td> 
+   <td> Apri lo script di calcolo URL.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_Password</span> <br /> </td> 
@@ -986,7 +986,7 @@ Il **[!UICONTROL Administration / Platform / Options]** consente di configurare 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_DNSearchScope</span> <br /> </td> 
-   <td> Ambito della ricerca.<br /> </td> 
+   <td> Ambito di ricerca.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_Mechanism</span> <br /> </td> 
@@ -1014,7 +1014,7 @@ Il **[!UICONTROL Administration / Platform / Options]** consente di configurare 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsScope</span> <br /> </td> 
-   <td> Ambito della ricerca.<br /> </td> 
+   <td> Ambito di ricerca.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_Server</span> <br /> </td> 
@@ -1047,7 +1047,7 @@ Il **[!UICONTROL Administration / Platform / Options]** consente di configurare 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersMode</span> <br /> </td> 
-   <td> Opzione che consente di specificare la modalità di invalidazione dei moduli Web: locale per impostazione predefinita, utilizza server di tracciamento se l’opzione è “tracciamento” e utilizza un elenco personalizzato con l’opzione “altri server”.<br /> </td> 
+   <td> Opzione che consente di specificare la modalità di invalidazione dei moduli web: locale per impostazione predefinita, utilizza i server di tracciamento se l’opzione è "tracciamento" e utilizza un elenco personalizzato con l’opzione "altri server".<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServerURLs</span> <br /> </td> 

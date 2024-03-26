@@ -9,8 +9,8 @@ role: User
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '1514'
-ht-degree: 12%
+source-wordcount: '1527'
+ht-degree: 11%
 
 ---
 
@@ -106,7 +106,7 @@ Ad esempio, se pianifichi una consegna da eseguire automaticamente alle 8 (ora d
 
 ![](assets/s_ncs_user_email_del_plan_calendar_timezone.png)
 
-## Invia in più scaglioni {#sending-using-multiple-waves}
+## Inviare in più scaglioni {#sending-using-multiple-waves}
 
 Per bilanciare il carico, puoi dividere le consegne in più batch. Configura il numero di batch e la loro proporzione rispetto all’intera consegna.
 

@@ -31,7 +31,7 @@ join:==EMPTY
 
 ## Elementi figli {#children-7}
 
-Nessuna
+Nessuno
 
 ## Descrizione {#description-7}
 

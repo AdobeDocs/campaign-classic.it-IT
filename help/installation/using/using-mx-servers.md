@@ -51,7 +51,7 @@ Nel protocollo di connessione devono essere rispettate le norme per prevenire lo
 
 L’indirizzo di errore elaborerà i mancati recapiti inviati dagli ISP. Il processo analizza diversi codici di errore SMTP e applica l’azione giusta secondo lo standard RegEx.
 
-Ad esempio, un indirizzo e-mail ha un feedback &quot;550 Utente sconosciuto&quot; inviato da un ISP. Questo codice di errore viene elaborato dall’indirizzo di errore Adobe Campaign (indirizzo del percorso di ritorno). Questo errore viene quindi confrontato con lo standard RegEx e verrà applicata la regola giusta. L’e-mail è considerata *Mancato recapito permanente* (corrispondente al tipo) e quindi *Utente sconosciuto* (corrispondente al motivo) e messo in quarantena dopo il primo ciclo nel sistema.
+Ad esempio, un indirizzo e-mail ha un feedback &quot;550 Utente sconosciuto&quot; inviato da un ISP. Questo codice di errore viene elaborato dall’indirizzo di errore di Adobe Campaign (indirizzo del percorso di ritorno). Questo errore viene quindi confrontato con lo standard RegEx e verrà applicata la regola giusta. L’e-mail è considerata *Mancato recapito permanente* (corrispondente al tipo) e quindi *Utente sconosciuto* (corrispondente al motivo) e messo in quarantena dopo il primo ciclo nel sistema.
 
 ### Come viene gestita da Adobe Campaign?
 
@@ -73,7 +73,7 @@ Un aggiornamento giornaliero delle regole MX e delle regole in entrata viene ges
 
 Questo aggiornamento giornaliero è in esecuzione per tutti i clienti che desiderano mantenere aggiornata la propria istanza attraverso un processo di trasparenza.
 
-Le regole MX hanno 6 diversi livelli di throughput che sono utilizzati principalmente durante il processo di incremento:
+Le regole MX hanno 6 diversi livelli di velocità effettiva che sono utilizzati principalmente durante il processo di incremento:
 
 ![](assets/mx-rules-throughput.png)
 

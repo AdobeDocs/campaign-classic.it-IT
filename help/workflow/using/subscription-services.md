@@ -2,13 +2,13 @@
 product: campaign
 title: Attività Subscription services
 description: Ulteriori informazioni sull’attività del flusso di lavoro Subscription Services
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows, Targeting Activity, Subscription Services Activity
 exl-id: 1b526d1c-4a33-45a1-98f4-dcb803c8d228
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 2%
+source-wordcount: '416'
+ht-degree: 4%
 
 ---
 
@@ -58,7 +58,7 @@ A questo scopo, devi escludere anche i destinatari che si sono già abbonati.
    Se lo desideri, puoi informare i destinatari della loro iscrizione alla newsletter controllando il **[!UICONTROL Send a confirmation message]** casella.
 
 1. Seleziona la cartella in cui si trova la newsletter, quindi seleziona la newsletter dall’elenco visualizzato.
-1. Lascia **[!UICONTROL Generate outbound transition]** deselezionata in modo che questa attività contrassegni la fine del flusso di lavoro, quindi fai clic su **[!UICONTROL Ok]**.
+1. Lascia **[!UICONTROL Generate outbound transition]** deselezionato in modo che questa attività contrassegni la fine del flusso di lavoro, quindi fai clic su **[!UICONTROL Ok]**.
 
 Durante l’esecuzione del flusso di lavoro, i destinatari corrispondenti a tutte e tre le query vengono aggiunti all’elenco e iscritti alla newsletter.
 

@@ -29,7 +29,7 @@ stringa di calcolo:==EMPTY
 
 ## Elementi figli {#children-1}
 
-Nessuna
+Nessuno
 
 ## Descrizione {#description-1}
 

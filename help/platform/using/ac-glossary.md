@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '5978'
-ht-degree: 5%
+source-wordcount: '5959'
+ht-degree: 2%
 
 ---
 
@@ -131,7 +131,7 @@ La console client di Campaign è un client avanzato che consente di connettersi 
 Ulteriori informazioni su [Console client](../../platform/using/adobe-campaign-workspace.md).
 +++
 
-+++**Approvazione contenuti**
++++**Approvazione dei contenuti**
 
 L’approvazione del contenuto è il processo in base al quale un operatore o un gruppo di operatori separato approva il contenuto di una consegna prima che possa essere inviata.
 
@@ -311,7 +311,7 @@ Un’offerta idonea è un’offerta che soddisfa i vincoli definiti a monte e ch
 Ulteriori informazioni su [Interazione](../../interaction/using/interaction-and-offer-management.md).
 +++
 
-+++**Invia e-mail in Ccn**
++++**CCN e-mail**
 
 La funzionalità Ccn e-mail invia una copia esatta in formato EML di un’e-mail consegnata corrispondente, che viene salvata in un indirizzo e-mail Ccn dedicato in cui le e-mail possono essere elaborate e archiviate dal mittente in un sistema esterno.
 
@@ -334,7 +334,7 @@ An engine call is a server call that starts real-time processing on server side 
 +++
 -->
 
-+++**Attività di Arricchimento**
++++**Attività Enrichment**
 
 L’attività Enrichment è un’attività avanzata del flusso di lavoro che consente agli operatori di arricchire i dati della tabella di lavoro generati che verranno elaborati nel flusso di lavoro. Questa attività viene generalmente utilizzata dopo attività di targeting o dopo l’importazione di un file e prima di attività che utilizzano dati oggetto di targeting. Gli arricchimenti possono trasformare i dati di transizione in entrata e configurare l’attività in modo da completare la transizione in uscita con dati migliorati. Consente all’operatore di combinare dati da più set di dati o di creare collegamenti a una risorsa temporanea.
 
@@ -387,7 +387,7 @@ L’approvazione dell’estrazione del file è il processo in base al quale un o
 Ulteriori informazioni su [Approvazione estrazione file](../../delivery/using/validating.md).
 +++
 
-+++**Dimensioni filtro**
++++**Dimensione filtro**
 
 La dimensione di filtro è lo schema che contiene i dati o gli attributi utilizzati da una query per filtrare le righe desiderate. Lo schema della dimensione di filtro deve essere collegato direttamente alla dimensione di targeting definita per consentire ad Adobe Campaign di attraversare il database join e restituire le righe dei partecipanti.
 
@@ -408,7 +408,7 @@ La visualizzazione Cartella è uno speciale tipo di cartella di Explorer utilizz
 Ulteriori informazioni su [Visualizzazione cartella](../../platform/using/adobe-campaign-explorer.md).
 +++
 
-+++**Moduli**
++++**Forms**
 
 Forms definisce la rappresentazione dell’interfaccia per un tipo di schema specifico. Forms è lo strumento utilizzato per creare e modificare facilmente elementi di dati nel prodotto, ad esempio Destinatari, Consegne e Campagne. Tutti gli elementi dell’interfaccia in Adobe Campaign vengono creati nel prodotto stesso utilizzando Forms. I moduli sono facoltativi e non tutti gli schemi dispongono di moduli.
 
@@ -537,7 +537,7 @@ I diritti di accesso granulari al database utilizzati per definire l&#39;accesso
 Ulteriori informazioni su [Diritti denominati](../../platform/using/access-management-named-rights.md).
 +++
 
-+++**Spazio dei nomi**
++++**Namespace**
 
 Lo spazio dei nomi è una partizione che separa i tipi di dati del cliente dai tipi di dati nativi di Adobe Campaign nel modello di dati. Utilizzato anche per facilitare la migrazione delle definizioni da un’istanza all’altra, ad esempio per spostare uno schema o un modello dall’istanza Sviluppo all’istanza Produzione.
 
@@ -561,7 +561,7 @@ La struttura di navigazione è la navigazione principale nella vista Esplora di 
 Ulteriori informazioni su [Struttura di navigazione](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarch).
 +++
 
-+++**Finalità**
++++**Obiettivi**
 
 *Contesto: Marketing Resource Management (MRM)*
 
@@ -618,7 +618,7 @@ L’eliminazione del motore di offerta è il processo di eliminazione delle offe
 Ulteriori informazioni su [Interazione](../../interaction/using/interaction-and-offer-management.md).
 +++
 
-+++**Ambiente offerta**
++++**Ambiente dell’offerta**
 
 *Contesto: interazione campagna*
 
@@ -654,7 +654,7 @@ Questa è l’anteprima dell’offerta così come viene visualizzata nella sua c
 Ulteriori informazioni su [Anteprima offerta](../../interaction/using/creating-an-offer.md#previewing-the-offer).
 +++
 
-+++**Proposta di offerte**
++++**Proposta di offerta**
 
 *Contesto: interazione campagna*
 
@@ -761,7 +761,7 @@ Ulteriori informazioni su [Monitoraggio delle prestazioni](../../production/usin
 
 +++**Blocchi di personalizzazione**
 
-Adobe Campaign offre blocchi di personalizzazione incorporati che puoi inserire nelle consegne. Sono dinamici, personalizzati e contengono un rendering specifico. Ad esempio, puoi aggiungere un logo, un messaggio di auguri o un collegamento alla pagina mirror. Per impostazione predefinita, sono disponibili diversi blocchi di personalizzazione. Puoi anche definire blocchi di personalizzazione personalizzati che ti consentiranno di ottimizzare la personalizzazione della consegna. I dati effettivi vengono inseriti in ogni messaggio generato durante la fase di analisi della consegna.
+Adobe Campaign offre blocchi di personalizzazione incorporati che puoi inserire nelle consegne. Sono dinamici, personalizzati e contengono un rendering specifico. Ad esempio, puoi aggiungere un logo, un messaggio di saluto o un collegamento a una pagina speculare. Per impostazione predefinita, sono disponibili diversi blocchi di personalizzazione. Puoi anche definire blocchi di personalizzazione personalizzati che ti consentiranno di ottimizzare la personalizzazione della consegna. I dati effettivi vengono inseriti in ogni messaggio generato durante la fase di analisi della consegna.
 
 Ulteriori informazioni su [Blocchi di personalizzazione](../../delivery/using/personalization-blocks.md).
 +++
@@ -804,7 +804,7 @@ Learn more about [Predictive Engagement Scoring](../../platform/using/creating-f
 +++
 -->
 
-+++**Chiave principale**
++++**Chiave primaria**
 
 La chiave primaria è l&#39;identificatore univoco di ogni record di una tabella di database. Una tabella deve avere almeno una chiave. Di regola, le chiavi vengono dichiarate dopo l’elemento principale dello schema e gli indici. Le chiavi primarie non possono essere composite (includere diversi campi).
 
@@ -845,7 +845,7 @@ Ulteriori informazioni su [Push](../../delivery/using/about-mobile-app-channel.m
 
 +++**Destinatario**
 
-In Adobe Campaign, i destinatari sono i profili predefiniti oggetto di targeting per l’invio di consegne (e-mail, SMS, ecc.) ai tuoi clienti. I dati dei destinatari memorizzati nel database consentono di filtrare il target e aggiungere dati di personalizzazione. In genere si tratta di informazioni personali, di contatto, demografiche e transazionali, ma potrebbe trattarsi di qualsiasi tipo di informazione che supporta il marketing e l’analisi.
+In Adobe Campaign, i destinatari sono i profili predefiniti target per l’invio di consegne (e-mail, SMS, ecc.) ai tuoi clienti. I dati dei destinatari memorizzati nel database consentono di filtrare il target e aggiungere dati di personalizzazione. In genere si tratta di informazioni personali, di contatto, demografiche e transazionali, ma potrebbe trattarsi di qualsiasi tipo di informazione che supporta il marketing e l’analisi.
 
 Ulteriori informazioni su [Destinatario](../../configuration/using/about-data-model.md).
 +++

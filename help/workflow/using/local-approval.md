@@ -2,13 +2,13 @@
 product: campaign
 title: Approvazione locale
 description: Approvazione locale
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows
 exl-id: 2d9cbfc8-1f99-4b38-8460-77c7c986e9ca
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 2%
+source-wordcount: '650'
+ht-degree: 4%
 
 ---
 
@@ -32,13 +32,13 @@ Per iniziare, inserisci un’etichetta per l’attività e il **[!UICONTROL Acti
 
 * Seleziona la **[!UICONTROL Target approval notification]** opzione per inviare un’e-mail di notifica ai supervisori locali prima della consegna, chiedendo di approvare i destinatari assegnati.
 
-   ![](assets/local_validation_intro_2.png)
+  ![](assets/local_validation_intro_2.png)
 
 * **Query incrementale**: consente di eseguire una query e pianificarne l’esecuzione. Consulta la sezione [Query incrementale](incremental-query.md) sezione.
 
-   ![](assets/local_validation_intro_3.png)
+  ![](assets/local_validation_intro_3.png)
 
-## Notifica di approvazione di destinazione {#target-approval-notification}
+## Notifica per approvazione target {#target-approval-notification}
 
 In questo caso, il **[!UICONTROL Local approval]** l’attività viene inserita tra il targeting a monte e la consegna:
 
@@ -50,24 +50,24 @@ I campi da inserire in caso di notifica per l’approvazione del target sono:
 
 * **[!UICONTROL Distribution context]**: seleziona la **[!UICONTROL Specified in the transition]** opzione se si utilizza un **[!UICONTROL Split]** tipo di attività per limitare la popolazione target. In questo caso, il modello di distribuzione viene inserito nell’attività di suddivisione. Se non stai limitando la popolazione target, seleziona **[!UICONTROL Explicit]** e inserire il modello di distribuzione nel **[!UICONTROL Data distribution]** campo.
 
-   Per ulteriori informazioni sulla creazione di un modello di distribuzione dati, consulta [Limitazione del numero di record di sottoinsiemi per distribuzione dei dati](split.md#limiting-the-number-of-subset-records-per-data-distribution).
+  Per ulteriori informazioni sulla creazione di un modello di distribuzione dati, consulta [Limitazione del numero di record di sottoinsiemi per distribuzione dei dati](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
 * **[!UICONTROL Approval management]**
 
    * Seleziona il modello di consegna e l’oggetto che verrà utilizzato per la notifica e-mail. È disponibile un modello predefinito: **[!UICONTROL Local approval notification]**. Puoi anche aggiungere una descrizione che verrà visualizzata sopra gli elenchi dei destinatari nelle notifiche di approvazione e feedback.
    * Specifica la **[!UICONTROL Approval type]** che corrisponde alla scadenza dell’approvazione (data o scadenza dall’inizio dell’approvazione). In questa data, il flusso di lavoro viene riavviato e i destinatari che non sono stati approvati non vengono presi in considerazione nel targeting. Dopo l’invio delle notifiche, l’attività viene messa in coda in modo che i supervisori locali possano approvare i loro contatti.
 
-      >[!NOTE]
-      >
-      >Per impostazione predefinita, all’avvio del processo di approvazione, l’attività viene sospesa per tre giorni.
+     >[!NOTE]
+     >
+     >Per impostazione predefinita, all’avvio del processo di approvazione, l’attività viene sospesa per tre giorni.
 
-      Puoi anche aggiungere uno o più promemoria per informare i supervisori locali che la scadenza si sta avvicinando. A questo scopo, fai clic su **[!UICONTROL Add a reminder]** collegamento.
+     Puoi anche aggiungere uno o più promemoria per informare i supervisori locali che la scadenza si sta avvicinando. A questo scopo, fai clic su **[!UICONTROL Add a reminder]** collegamento.
 
 * **[!UICONTROL Complementary set]**: il **[!UICONTROL Generate complement]** consente di generare un secondo set che include tutti gli oggetti non approvati.
 
-   >[!NOTE]
-   >
-   >Questa opzione è disabilitata per impostazione predefinita.
+  >[!NOTE]
+  >
+  >Questa opzione è disabilitata per impostazione predefinita.
 
 ## Rapporto del feedback sulla consegna {#delivery-feedback-report}
 
@@ -90,19 +90,19 @@ Un operatore può approvare una consegna in uno dei due modi seguenti: utilizzan
 
 * Approvazione web
 
-   L’e-mail inviata agli operatori del gruppo Amministratore ti consente di approvare il target di consegna. Il messaggio utilizza il testo definito e l’espressione JavaScript viene sostituita dal valore calcolato (in questo caso, &quot;574&quot;)
+  L’e-mail inviata agli operatori del gruppo Amministratore ti consente di approvare il target di consegna. Il messaggio utilizza il testo definito e l’espressione JavaScript viene sostituita dal valore calcolato (in questo caso, &quot;574&quot;)
 
-   Per approvare la consegna, fai clic sul collegamento pertinente e accedi alla console Adobe Campaign.
+  Per approvare la consegna, fai clic sul collegamento pertinente e accedi alla console Adobe Campaign.
 
-   ![](assets/new-workflow-valid-webaccess.png)
+  ![](assets/new-workflow-valid-webaccess.png)
 
-   Effettuare una scelta e fare clic su **[!UICONTROL Submit]** pulsante.
+  Effettuare una scelta e fare clic su **[!UICONTROL Submit]** pulsante.
 
-   ![](assets/new-workflow-valid-webaccess-confirm.png)
+  ![](assets/new-workflow-valid-webaccess-confirm.png)
 
 * Approvazione tramite la console
 
-   Nella struttura ad albero, il **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** Il nodo contiene l&#39;elenco delle attività che devono essere approvate dall&#39;operatore attualmente connesso. L’elenco deve visualizzare una riga. Fare doppio clic su questa riga per rispondere. Viene visualizzata la seguente finestra:
+  Nella struttura ad albero, il **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** Il nodo contiene l&#39;elenco delle attività che devono essere approvate dall&#39;operatore attualmente connesso. L’elenco deve visualizzare una riga. Fare doppio clic su questa riga per rispondere. Viene visualizzata la seguente finestra:
 
 ![](assets/new-workflow-7.png)
 

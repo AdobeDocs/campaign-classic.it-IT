@@ -10,7 +10,7 @@ exl-id: 6b308299-4d07-4c9e-bd2f-a0860c41cf02
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '195'
-ht-degree: 12%
+ht-degree: 11%
 
 ---
 
@@ -21,7 +21,7 @@ Per creare un **[!UICONTROL List]** digita elenco in base alla nuova tabella dei
 
 Per ulteriori informazioni sugli elenchi in Campaign, consulta [questa sezione](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign).
 
-![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](../../platform/using/creating-and-managing-lists.md#create-list-in-a-wf-video)
+![](assets/do-not-localize/how-to-video.png) [Guarda il video su questa funzione](../../platform/using/creating-and-managing-lists.md#create-list-in-a-wf-video)
 
 Per creare un flusso di lavoro di targeting e aggiornare i destinatari in una tabella dei destinatari personalizzata, effettua le seguenti operazioni:
 

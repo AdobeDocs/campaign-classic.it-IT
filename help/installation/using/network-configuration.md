@@ -11,8 +11,8 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: b86236ae-95e9-4406-b60f-6d90ad0d4a01
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 6%
+source-wordcount: '713'
+ht-degree: 2%
 
 ---
 
@@ -137,7 +137,7 @@ Per il rich client di Adobe Campaign (**nlclient**), è necessario aprire le seg
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p>443/tcp (https)</p><br /> </td> 
-   <td> Server dell’applicazione<br /> </td> 
+   <td> Server applicazioni<br /> </td> 
    <td> traffico SOAP (HTTP).<br /> </td> 
   </tr> 
  </tbody> 
@@ -157,9 +157,9 @@ Le porte predefinite sono le seguenti:
    <td> Destinazione<br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong> Oracle</strong><br /> </td> 
+   <td> <strong>Oracle</strong><br /> </td> 
    <td> 1521/cp<br /> </td> 
-   <td> Server del database<br /> </td> 
+   <td> Server di database<br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>PostgreSQL</strong><br /> </td> 

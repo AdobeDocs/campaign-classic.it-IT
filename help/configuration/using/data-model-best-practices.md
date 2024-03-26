@@ -2,12 +2,12 @@
 product: campaign
 title: Best practice per i modelli di dati
 description: Scopri come utilizzare il modello dati di Campaign Classic
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Data Model
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '3988'
+source-wordcount: '4020'
 ht-degree: 1%
 
 ---
@@ -171,7 +171,7 @@ Tuttavia, tieni presente quanto segue:
 ### Esempio
 
 La gestione degli indici può diventare molto complessa, pertanto è importante comprenderne il funzionamento. Per illustrare questa complessità, prendiamo un esempio di base, ad esempio la ricerca dei destinatari filtrando il nome e il cognome. Per eseguire questa operazione:
-1. Passare alla cartella in cui sono elencati tutti i destinatari del database. Per ulteriori informazioni, consulta [Gestione dei profili di ](../../platform/using/managing-profiles.md).
+1. Passare alla cartella in cui sono elencati tutti i destinatari del database. Per ulteriori informazioni, consulta [Gestione dei profili](../../platform/using/managing-profiles.md).
 1. Fare clic con il pulsante destro del mouse **[!UICONTROL First name]** campo.
 1. Seleziona **[!UICONTROL Filter on this field]**.
 

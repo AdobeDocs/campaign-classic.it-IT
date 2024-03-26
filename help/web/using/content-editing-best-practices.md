@@ -8,8 +8,8 @@ feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 7%
+source-wordcount: '566'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +21,7 @@ Per garantire il funzionamento ottimale dell’editor, si consiglia di osservare
 
 * Prima di **importazione di un modello di pagina HTML** in Adobe Campaign, accertati che il modello si apra e venga visualizzato correttamente nei vari browser.
 * Se la pagina HTML contiene **Script JavaScript**, devono essere eseguiti **senza errori** all’esterno dell’editor.
-* Durante la creazione di un modello, è consigliabile aggiungere un attributo **“type”** ai tag. `<input>` Queste informazioni verranno elaborate dall&#39;editor e consentiranno all&#39;utente di collegare un campo del database al campo del modulo durante la configurazione dell&#39;applicazione Web.
+* Durante la creazione di un modello, si consiglia di aggiungere una **&#39;tipo&#39;** attribuire a `<input>` tag. Queste informazioni verranno elaborate dall&#39;editor e consentiranno all&#39;utente di collegare un campo del database al campo del modulo durante la configurazione dell&#39;applicazione Web.
 
   Esempio di codice HTML nel modello:
 

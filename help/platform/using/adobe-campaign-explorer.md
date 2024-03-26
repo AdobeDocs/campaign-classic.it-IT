@@ -10,7 +10,7 @@ topic-tags: starting-with-adobe-campaign
 exl-id: f91d69a4-b794-40f0-b450-de862d7333e2
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '454'
 ht-degree: 3%
 
 ---
@@ -25,7 +25,7 @@ Il **[!UICONTROL Explorer]** l’area di lavoro è suddivisa in tre aree:
 
 ![](assets/s_ncs_user_navigation.png)
 
-**1 - Albero**: puoi personalizzare il contenuto della struttura (aggiungere, spostare o eliminare nodi). Questa procedura è destinata esclusivamente agli utenti esperti. Per ulteriori informazioni al riguardo, consulta [questa sezione](#about-navigation-hierarchy).).
+**1 - Albero**: puoi personalizzare il contenuto della struttura (aggiungere, spostare o eliminare nodi). Questa procedura è destinata esclusivamente agli utenti esperti. Per ulteriori informazioni, consulta  [questa sezione](#about-navigation-hierarchy).).
 
 **2 - Elenco**: puoi filtrare questo elenco, eseguire ricerche, aggiungere informazioni o ordinare dati. [Ulteriori informazioni](adobe-campaign-ui-lists.md).
 

@@ -10,8 +10,8 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '765'
-ht-degree: 92%
+source-wordcount: '759'
+ht-degree: 76%
 
 ---
 
@@ -35,13 +35,13 @@ Puoi combinare le funzionalità di consegna e le funzionalità avanzate di gesti
 
 Fai clic qui per scoprire [come lavorare con altre soluzioni Adobe](../../integrations/using/about-campaign-integrations.md) e [come impostare IMS in Campaign](../../integrations/using/about-adobe-id.md).
 
-## Come posso impostare le funzionalità di tracking nella mia istanza di Campaign? {#how-can-i-set-up-tracking-capabilities-on-my-campaign-instance-}
+## Come posso impostare le funzionalità di tracciamento nella mia istanza di Campaign? {#how-can-i-set-up-tracking-capabilities-on-my-campaign-instance-}
 
 In qualità di utente esperto, puoi configurare le funzionalità di tracking nella tua istanza di Campaign.
 
 [Fai clic qui per ulteriori informazioni](../../installation/using/deploying-an-instance.md#tracking-configuration).
 
-## Come si configura il recapito messaggi e-mail? {#how-to-configure-email-deliverability-}
+## Come configurare il recapito messaggi e-mail? {#how-to-configure-email-deliverability-}
 
 Oltre al [Guida alle procedure consigliate per la consegna dei messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it), consulta le raccomandazioni tecniche per il recapito dei messaggi per scoprire come configurare la tua istanza per massimizzare le funzionalità di consegna di Campaign.
 
@@ -53,7 +53,7 @@ Campaign ti consente di impostare processi di approvazione per i passaggi princi
 
 [Fai clic qui per ulteriori informazioni](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries) e per scoprire i passaggi per implementare l’approvazione dei contenuti della tua consegna in Campaign.
 
-## Come posso accedere ai dati archiviati in un database esterno? {#how-can-i-access-data-stored-in-an-external-database-}
+## Come posso accedere ai dati memorizzati in un database esterno? {#how-can-i-access-data-stored-in-an-external-database-}
 
 Adobe Campaign offre l’opzione Federated Data Access (FDA) per elaborare le informazioni archiviare in uno o più database esterni: puoi accedere ai dati esterni senza modificare la struttura dei dati di Adobe Campaign.
 
@@ -75,9 +75,9 @@ Adobe Campaign fornisce diversi connettori di gestione delle relazioni con i cli
 
 Questi connettori consentono un’integrazione rapida e semplice dei dati: Adobe Campaign offre una procedura guidata dedicata per la raccolta e la selezione dalle tabelle disponibili nella gestione delle relazioni con i clienti. Ciò garantisce la sincronizzazione bidirezionale per far sì che i dati siano sempre aggiornati in tutti i sistemi.
 
-Consulta [Configurare i connettori di gestione delle relazioni con i clienti](../../platform/using/crm-connectors.md) per scoprire come sincronizzare il tuo strumento di gestione delle relazioni con i clienti con Adobe Campaign.
+Leggete [Configurare i connettori CRM](../../platform/using/crm-connectors.md) per scoprire come sincronizzare il tuo strumento CRM con Adobe Campaign.
 
-![](assets/do-not-localize/how-to-video.png) Guarda questo video relativo a un caso di utilizzo sull’[integrazione di Adobe Campaign e Microsoft Dynamics 365](https://helpx.adobe.com/it/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
+![](assets/do-not-localize/how-to-video.png) Guarda questo video relativo al caso d’uso su [Integrazione tra Adobe Campaign e Microsoft Dynamics 365](https://helpx.adobe.com/it/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
 
 ## Come si esegue la cancellazione della Soft Cache quando i problemi riguardano nello specifico il computer o l’utente? {#perform-soft-cache-clear}
 

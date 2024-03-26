@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Caricare i contenuti della consegna
-description: Caricamento del contenuto di una consegna
+description: Caricamento del contenuto della consegna
 badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows
 exl-id: a52baffd-402b-4b33-ab72-ac954e4dee85

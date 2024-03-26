@@ -2,13 +2,13 @@
 product: campaign
 title: Unione
 description: Ulteriori informazioni sull’attività del flusso di lavoro dell’Unione
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: 1cda3146-c333-4743-a871-c44583b6e5b2
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 1%
+source-wordcount: '312'
+ht-degree: 2%
 
 ---
 
@@ -37,7 +37,7 @@ Nell’esempio seguente, i risultati di due query sono stati combinati per aggio
    Specifica questo numero finale immettendo il numero massimo di destinatari e selezionando la query la cui popolazione avrà la priorità.
 
 1. Approva l’attività unione, quindi configura l’attività di aggiornamento elenco (consulta [Aggiornamento elenco](list-update.md)).
-1. Avviare il flusso di lavoro. Viene visualizzato il numero di risultati e viene creato o aggiornato l’elenco definito nell’attività di aggiornamento elenco. Questo elenco contiene il set di destinatari per entrambe le query o, se applicabile, il numero definito al passaggio precedente.
+1. Avvia il flusso di lavoro. Viene visualizzato il numero di risultati e viene creato o aggiornato l’elenco definito nell’attività di aggiornamento elenco. Questo elenco contiene il set di destinatari per entrambe le query o, se applicabile, il numero definito al passaggio precedente.
 
    ![](assets/union_example.png)
 

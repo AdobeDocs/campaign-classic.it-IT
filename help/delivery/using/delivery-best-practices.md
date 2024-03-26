@@ -9,8 +9,8 @@ role: User
 exl-id: eb5ad5a4-f640-4b26-b04f-b5567761d996
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 27%
+source-wordcount: '111'
+ht-degree: 7%
 
 ---
 
@@ -53,7 +53,7 @@ Scopri le best practice relative alla progettazione della consegna e all’invio
     </a>
     <div>
       <a href="design-and-personalize.md">
-    <strong>Personalizzazione dei contenuti</strong>
+    <strong>Personalizzare il contenuto</strong>
     </a>
     </div>
     <p>
@@ -77,11 +77,11 @@ Scopri le best practice relative alla progettazione della consegna e all’invio
   </td>
    <td>
     <a href="check-before-sending.md">
-      <img alt="Controlla" src="assets/do-not-localize/start.svg" width="60px"/>
+      <img alt="Verifica" src="assets/do-not-localize/start.svg" width="60px"/>
     </a>
     <div>
       <a href="check-before-sending.md">
-    <strong>Controllare prima dell’invio</strong>
+    <strong>Controlla prima dell’invio</strong>
     </a>
     </div>
     <p>
@@ -94,7 +94,7 @@ Scopri le best practice relative alla progettazione della consegna e all’invio
     </a>
     <div>
       <a href="track-and-monitor.md">
-    <strong>Tracciare e monitorare</strong>
+    <strong>Tracciamento e monitoraggio</strong>
     </a>
     </div>
     <p>

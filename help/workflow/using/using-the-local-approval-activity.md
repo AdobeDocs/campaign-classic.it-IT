@@ -2,13 +2,13 @@
 product: campaign
 title: Utilizzare l’attività di approvazione locale
 description: Scopri come utilizzare l’attività di approvazione locale
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows
 exl-id: cc29eec9-9c97-4d1b-9567-2581154d7b3f
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1272'
-ht-degree: 2%
+source-wordcount: '1290'
+ht-degree: 3%
 
 ---
 
@@ -82,9 +82,9 @@ Per ulteriori informazioni sulla creazione di un modello di distribuzione dati, 
    * **[!UICONTROL Label]**: immetti l’etichetta del dominio da visualizzare nelle notifiche di approvazione e feedback.
    * **[!UICONTROL Group or operator]**: seleziona l’operatore o il gruppo di operatori assegnati al dominio.
 
-      >[!CAUTION]
-      >
-      >Assicurati che agli operatori siano stati assegnati i diritti appropriati.
+     >[!CAUTION]
+     >
+     >Assicurati che agli operatori siano stati assegnati i diritti appropriati.
 
 ## Passaggio 2: creazione del flusso di lavoro di targeting {#step-2--creating-the-targeting-workflow}
 
@@ -153,7 +153,7 @@ L’e-mail di notifica inviata dal **[!UICONTROL Local approval]** alle autorit�
 
 ![](assets/local_validation_intro_2.png)
 
-### Attività Wait {#wait}
+### Attendi {#wait}
 
 L’attività Attendi ti consente di posticipare l’inizio della seconda attività di approvazione locale che invierà la notifica di feedback della consegna. In **[!UICONTROL Duration]** , è stato immesso il **[!UICONTROL 5d]** (5 giorni). Le azioni eseguite dai destinatari nei 5 giorni successivi all’invio della consegna verranno incluse nella notifica di feedback.
 

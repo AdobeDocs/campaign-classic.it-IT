@@ -11,8 +11,8 @@ topic-tags: initial-configuration
 exl-id: a2126458-2ae5-47c6-ad13-925f0e067ecf
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 4%
+source-wordcount: '293'
+ht-degree: 2%
 
 ---
 
@@ -56,7 +56,7 @@ Se necessario, questa operazione può essere riprodotta sul lato server.
 
 ## Nascondi il report di errori Tomcat {#hide-tomcat-error-report}
 
-Per motivi di sicurezza, si consiglia vivamente di nascondere il rapporto di errore Tomcat. Di seguito sono riportati i passaggi da seguire.
+Per motivi di sicurezza, si consiglia vivamente di nascondere il rapporto di errore Tomcat. Ecco i passaggi.
 
 1. Apri **server.xml** file che si trova in **/tomcat-8/conf** directory della cartella di installazione di Adobe Campaign:  `/usr/local/neolane/nl6/tomcat-8/conf`
 1. Aggiungi il seguente elemento in basso dopo tutti gli elementi contestuali esistenti:

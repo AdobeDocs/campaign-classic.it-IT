@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Attività Update data
+title: Aggiornare i dati
 description: Ulteriori informazioni sull’attività del flusso di lavoro Aggiorna dati
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows, Targeting Activity, Data Management
 exl-id: 9f5735d2-73b8-469f-bc10-482c99cdd4a1
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '859'
 ht-degree: 2%
 
 ---
 
-# Attività Update data{#update-data}
+# Aggiornare i dati{#update-data}
 
 
 
@@ -32,13 +32,13 @@ Il **[!UICONTROL Operation type]** consente di scegliere il processo da eseguire
 
 Il **[!UICONTROL Batch size]** Questo campo consente di selezionare il numero di elementi di transizione in entrata da aggiornare. Se ad esempio si specifica 500, verranno aggiornati i primi 500 record trattati.
 
-## Identificazione del record {#record-identification}
+## Identificazione record {#record-identification}
 
 Specificare come identificare i record nel database:
 
 * Se le voci di dati si riferiscono a una dimensione di targeting esistente, seleziona la **[!UICONTROL By directly using the targeting dimension]** e selezionarla nella **[!UICONTROL Updated dimension]** campo.
 
-   Puoi visualizzare i campi per la dimensione selezionata utilizzando **[!UICONTROL Edit this link]** pulsante lente di ingrandimento.
+  Puoi visualizzare i campi per la dimensione selezionata utilizzando **[!UICONTROL Edit this link]** pulsante lente di ingrandimento.
 
 * In caso contrario, specifica uno o più collegamenti che consentano l’identificazione dei dati nel database o l’uso diretto delle chiavi di riconciliazione.
 
@@ -62,7 +62,7 @@ In un **[!UICONTROL Insert or update]** , puoi selezionare la campagna da applic
 
 ![](assets/s_advuser_update_data_5.png)
 
-Il **[!UICONTROL modifiedDate]**, **[!UICONTROL modifiedBy]**, **[!UICONTROL createdDate]** e **[!UICONTROL createdBy]** I campi vengono aggiornati automaticamente durante gli aggiornamenti dei dati, a meno che la relativa modalità di gestione non sia configurata specificamente nella tabella di aggiornamento dei campi.
+Il **[!UICONTROL modifiedDate]**, **[!UICONTROL modifiedBy]**, **[!UICONTROL createdDate]** e **[!UICONTROL createdBy]** I campi vengono aggiornati automaticamente durante gli aggiornamenti dei dati, a meno che la relativa modalità di gestione non sia configurata in modo specifico nella tabella di aggiornamento dei campi.
 
 L&#39;aggiornamento del record viene eseguito solo per i record contenenti almeno una differenza. Se i valori sono identici, non viene eseguito alcun aggiornamento.
 

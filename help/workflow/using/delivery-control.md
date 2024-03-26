@@ -2,13 +2,13 @@
 product: campaign
 title: Controllo della consegna
 description: Ulteriori informazioni sull’attività del flusso di lavoro Controllo consegna
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows
 exl-id: c7cface2-0837-4e6a-91dc-b8353010a7a4
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 2%
+source-wordcount: '171'
+ht-degree: 6%
 
 ---
 
@@ -28,11 +28,11 @@ Sono disponibili le seguenti opzioni:
 
 * **[!UICONTROL Generate an outbound transition]**
 
-   Crea una transizione in uscita che verrà attivata alla fine dell’esecuzione. Puoi scegliere se recuperare o meno la destinazione della consegna in uscita.
+  Crea una transizione in uscita che verrà attivata alla fine dell’esecuzione. Puoi scegliere se recuperare o meno la destinazione della consegna in uscita.
 
 * **[!UICONTROL Processing errors]**
 
-   Fai riferimento a [Errori di elaborazione](monitoring-workflow-execution.md#processing-errors).
+  Fai riferimento a [Errori di elaborazione](monitoring-workflow-execution.md#processing-errors).
 
 ## Parametri di input {#input-parameters}
 

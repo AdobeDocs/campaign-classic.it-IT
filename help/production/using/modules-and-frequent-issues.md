@@ -11,7 +11,7 @@ topic-tags: troubleshooting
 exl-id: dbd50178-0a16-46ed-bfad-47beb3c2a420
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '273'
 ht-degree: 9%
 
 ---
@@ -32,7 +32,7 @@ Elenco dei moduli interessati da problemi frequenti:
  </thead> 
  <tbody> 
   <tr> 
-   <td> esportare </td> 
+   <td> esporta </td> 
    <td> Esecuzione di un processo di esportazione<br /> </td> 
    <td> L'operatore che ha pianificato l'esportazione deve riavviarla. Delta o riavvio completo.<br /> </td> 
   </tr> 

@@ -2,13 +2,13 @@
 product: campaign
 title: Introduzione al marketing distribuito
 description: Introduzione al marketing distribuito
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Distributed Marketing
 exl-id: c166409b-e040-491e-840a-a41310935d75
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1134'
-ht-degree: 1%
+source-wordcount: '1142'
+ht-degree: 2%
 
 ---
 
@@ -28,9 +28,9 @@ L’entità centrale fornisce campagne che le entità locali possono utilizzare.
 
 * **Entità centrali**
 
-   Gli enti centrali sono composti da operatori di marketing incaricati di specificare le comunicazioni e assistere gli enti locali nell’esecuzione della loro campagna di marketing.
+  Gli enti centrali sono composti da operatori di marketing incaricati di specificare le comunicazioni e assistere gli enti locali nell’esecuzione della loro campagna di marketing.
 
-   Il modulo di marketing distribuito consente all’entità centrale di:
+  Il modulo di marketing distribuito consente all’entità centrale di:
 
    * configurare pacchetti di campagne di marketing per enti locali,
    * aumentare il grado di autonomia delle entità locali per quanto riguarda la scelta di comunicazione, targeting, contenuto, ecc. tra clienti e potenziali.
@@ -39,40 +39,40 @@ L’entità centrale fornisce campagne che le entità locali possono utilizzare.
 
 * **Entità locali**
 
-   Gli enti locali possono essere agenzie, negozi o gruppi di operatori locali specifici (responsabili nazionali o regionali, gestori di marchi, ecc.).
+  Gli enti locali possono essere agenzie, negozi o gruppi di operatori locali specifici (responsabili nazionali o regionali, gestori di marchi, ecc.).
 
-   Il Marketing distribuito consente alle entità locali di disporre di maggiore autonomia, ottimizzando al contempo i costi di esecuzione.
+  Il Marketing distribuito consente alle entità locali di disporre di maggiore autonomia, ottimizzando al contempo i costi di esecuzione.
 
 * **Localizzazione**
 
-   La localizzazione è la capacità di un’entità locale di modificare la destinazione e il contenuto di una campagna. Il possibile livello di localizzazione dipende dal tipo di campagna e dalla relativa implementazione.
+  La localizzazione è la capacità di un’entità locale di modificare la destinazione e il contenuto di una campagna. Il possibile livello di localizzazione dipende dal tipo di campagna e dalla relativa implementazione.
 
 * **Elenco dei pacchetti di campagne**
 
-   L’elenco dei pacchetti di campagne contiene le campagne disponibili per le entità locali.
+  L’elenco dei pacchetti di campagne contiene le campagne disponibili per le entità locali.
 
 * **Pacchetto campagne**
 
-   Modello (o istanza della campagna) creato da un&#39;entità centrale e reso disponibile a un set di entità locali.
+  Modello (o istanza della campagna) creato da un&#39;entità centrale e reso disponibile a un set di entità locali.
 
 * **Campagna locale**
 
-   Una campagna locale è un’istanza creata da un modello a cui si fa riferimento nell’elenco di **[!UICONTROL campaign packages]** con un **pianificazione di esecuzione specifica**. Il suo obiettivo è soddisfare una necessità di comunicazione locale utilizzando un modello di campagna configurato e configurato dall’entità centrale.
+  Una campagna locale è un’istanza creata da un modello a cui si fa riferimento nell’elenco di **[!UICONTROL campaign packages]** con un **pianificazione di esecuzione specifica**. Il suo obiettivo è soddisfare una necessità di comunicazione locale utilizzando un modello di campagna configurato e configurato dall’entità centrale.
 
-   Il grado di autonomia dell’entità locale dipende dall’implementazione utilizzata.
+  Il grado di autonomia dell’entità locale dipende dall’implementazione utilizzata.
 
-   Fai riferimento a [Creazione di una campagna locale](creating-a-local-campaign.md).
+  Fai riferimento a [Creazione di una campagna locale](creating-a-local-campaign.md).
 
 * **Campagna collaborativa**
 
-   Una campagna collaborativa è una campagna **pianificazione di esecuzione definita** dall&#39;entità centrale, che l&#39;entità locale può utilizzare. Il contenuto rimane lo stesso per ogni entità locale, ma i costi sono condivisi. Per partecipare, gli enti locali si abbonano alla campagna collaborativa.
+  Una campagna collaborativa è una campagna **pianificazione di esecuzione definita** dall&#39;entità centrale, che l&#39;entità locale può utilizzare. Il contenuto rimane lo stesso per ogni entità locale, ma i costi sono condivisi. Per partecipare, gli enti locali si abbonano alla campagna collaborativa.
 
    * **[!UICONTROL Collaborative campaign (by form)]**: consigliato per campagne che coinvolgono fino a 300 entità locali. L’entità locale può immettere parametri predefiniti per il targeting e la personalizzazione del contenuto in un modulo web. Il modulo può essere un modulo Adobe Campaign o un modulo esterno (client Extranet). Un amministratore funzionale può definire e configurare il modulo in base a un modello di modulo definito dall&#39;integratore. Per ordinare la campagna, l’entità locale ha solo bisogno dell’accesso web.
    * **[!UICONTROL Collaborative campaign (by campaign)]**: consigliato per campagne destinate a decine di entità locali. Questo tipo di campagna crea campagne secondarie per ogni entità locale. Una volta **[!UICONTROL collaborative campaign (by campaign)]** è approvata dall’entità centrale, la campagna viene resa disponibile all’entità locale, che può modificarla. L’esecuzione viene sincronizzata automaticamente tra le campagne principali e secondarie. L’entità locale deve avere accesso a un’istanza per ordinare una campagna e parteciparvi.
    * **[!UICONTROL Collaborative campaign (by target approval)]**: consigliato per campagne indirizzate a diverse migliaia di enti locali. L&#39;entità locale riceve un elenco di contatti predefinito dall&#39;entità centrale. L’entità locale decide se mantenere o meno alcuni contatti in base al contenuto della campagna tramite un modulo web. Le entità locali vengono dedotte dall&#39;elenco dei contatti selezionati. Per partecipare alla campagna, l’entità locale ha solo bisogno dell’accesso web.
    * **[!UICONTROL Collaborative campaign (simple)]**: questa modalità garantisce la compatibilità con i processi di esecuzione specifici delle versioni precedenti.
 
-   Fai riferimento a [Creazione di una campagna collaborativa](creating-a-collaborative-campaign.md).
+  Fai riferimento a [Creazione di una campagna collaborativa](creating-a-collaborative-campaign.md).
 
 **Ordinamento di pacchetti di campagne**
 
