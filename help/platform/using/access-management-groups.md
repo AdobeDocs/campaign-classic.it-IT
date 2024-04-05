@@ -7,9 +7,9 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 4e99ec73f99264e91ca427542e29bd42da88a3f9
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '512'
 ht-degree: 1%
 
 ---
@@ -80,7 +80,7 @@ I gruppi di operatori predefiniti sono:
 
 1. **[!UICONTROL Access to reports]**
 
-   Questo gruppo è riservato agli operatori esterni, per accedere ai rapporti di consegna tramite un accesso web.
+   Questo gruppo è riservato agli operatori esterni, per abilitare le icone Report, Schedule e Forum nel Dashboard di Campaign per un operatore specifico.
 
 1. **[!UICONTROL Workflow execution]**
 
