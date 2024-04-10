@@ -7,10 +7,10 @@ feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: c4fa3ea6d5a9d9acae267fc1ca27cf3bc140683c
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 17%
+source-wordcount: '912'
+ht-degree: 16%
 
 ---
 
@@ -90,21 +90,19 @@ Il layout generale di Adobe Campaign Explorer è presentato in [questa pagina](.
 
 ## Profili attivi {#active-profiles}
 
-I profili attivi sono i profili conteggiati a scopo di fatturazione.
+Un profilo attivo è un profilo con cui il cliente ha tentato di comunicare negli ultimi 12 mesi tramite qualsiasi canale.
 
-La fatturazione riguarda solo i profili **attivo**. Un profilo è considerato attivo se è stato oggetto di targeting o se negli ultimi 12 mesi è stato comunicato con tramite un canale qualsiasi.
+In base al contratto, a ciascuna istanza di Campaign viene fornito un numero specifico di profili attivi conteggiati a scopo di fatturazione. Fai riferimento al contratto più recente per informazioni sul numero di profili attivi acquistati. Ulteriori informazioni in [Descrizione del prodotto Adobe Campaign](https://helpx.adobe.com/it/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-Un profilo che è stato oggetto di targeting per diverse consegne viene conteggiato una sola volta.
+Puoi monitorare il numero di profili attivi nell’istanza direttamente dal Pannello di controllo Campaign Campaign. Per ulteriori informazioni, consulta [Documentazione del Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}.
 
->[!NOTE]
->
->I canali Facebook e X (noto in precedenza come Twitter) non vengono presi in considerazione.
+Si applicano le seguenti protezioni e limitazioni:
 
-Il conteggio dei profili attivi è disponibile per **Istanze di marketing** solo. Non è disponibile per le istanze di esecuzione, ovvero per le istanze MID (mid sourcing) e RT (Message Center / Real-time messaging [Centro messaggi/Messaggistica in tempo reale]).
+* Un profilo che è stato oggetto di targeting per diverse consegne viene conteggiato una sola volta.
+* I profili target nel contesto di Social marketing su X (Twitter) o Facebook non vengono considerati come profili attivi.
+* Il numero di profili attivi è disponibile per **Istanze di marketing** solo. Non è disponibile per le istanze di esecuzione, ovvero per le istanze MID (mid sourcing) e RT (Message Center / Real-time messaging [Centro messaggi/Messaggistica in tempo reale]).
+* Il conteggio si basa sulla chiave primaria del destinatario. Di conseguenza, se un profilo è presente in due diverse tabelle dei destinatari, può essere conteggiato due volte come profilo attivo.
 
->[!NOTE]
->
->Puoi anche monitorare il numero di profili attivi nell’istanza direttamente dal Pannello di controllo Campaign Campaign. Per ulteriori informazioni, consulta [Documentazione del Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
 
 ## Video tutorial {#create-profiles-video}
 
