@@ -7,10 +7,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: 776560c5f9ba91a5864a7dc950fd7499ceb37d1b
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 90%
+source-wordcount: '919'
+ht-degree: 89%
 
 ---
 
@@ -68,7 +68,7 @@ Puoi combinare le funzionalità di consegna e le funzionalità avanzate di gesti
 
 ## Funzionalità di base e componenti aggiuntivi {#core-capabilities-and-add-ons}
 
- Adobe Campaign offre una serie di funzionalità per aiutarti a implementare e ottimizzare le funzionalità di marketing conversazionale in base alle tue esigenze e alla tua architettura. Alcune di queste sono funzionalità di base e altre dipendono dall’installazione di un pacchetto e dalla configurazione. Una descrizione dettagliata del prodotto è disponibile qui: [Adobe Campaign Classic Product Description](https://helpx.adobe.com/it/legal/product-descriptions/adobe-campaign-classic---product-description.html).
+ Adobe Campaign offre una serie di funzionalità per aiutarti a implementare e ottimizzare le funzionalità di marketing conversazionale in base alle tue esigenze e alla tua architettura. Alcune di queste sono funzionalità di base e altre dipendono dall’installazione di un pacchetto e dalla configurazione. Una descrizione dettagliata del prodotto è disponibile qui: [Descrizione del prodotto Adobe Campaign](https://helpx.adobe.com/it/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 Sono disponibili le seguenti funzionalità. A seconda del tuo contratto di licenza, alcune di queste funzionalità possono essere disponibili o meno nella tua istanza.
 
