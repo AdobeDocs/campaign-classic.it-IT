@@ -3,13 +3,12 @@ product: campaign
 title: Funzioni obsolete e rimosse di Campaign Classic
 description: In questa pagina sono elencate le funzioni obsolete e rimosse di Adobe Campaign Classic
 feature: Release Notes
-badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 59156851156338c9462781d31ce81a651362f2da
-workflow-type: ht
-source-wordcount: '1558'
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+workflow-type: tm+mt
+source-wordcount: '1551'
 ht-degree: 100%
 
 ---

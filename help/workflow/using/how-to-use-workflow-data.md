@@ -2,13 +2,12 @@
 product: campaign
 title: Come utilizzare i dati del flusso di lavoro
 description: Scopri come utilizzare i dati dei flussi di lavoro
-badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 5354d608-2fea-45f9-a0aa-11c7e965ab04
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 1%
+source-wordcount: '409'
+ht-degree: 0%
 
 ---
 

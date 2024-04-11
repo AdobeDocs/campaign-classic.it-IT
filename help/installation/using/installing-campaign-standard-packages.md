@@ -3,13 +3,12 @@ product: campaign
 title: Installare i pacchetti incorporati di Campaign Classic
 description: Scopri come installare i pacchetti incorporati di Campaign
 feature: Installation, Application Settings
-badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 badge-v7-prem: label="on-premise e ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 59156851156338c9462781d31ce81a651362f2da
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1271'
-ht-degree: 4%
+source-wordcount: '1264'
+ht-degree: 3%
 
 ---
 

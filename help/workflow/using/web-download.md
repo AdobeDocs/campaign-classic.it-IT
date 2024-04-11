@@ -2,13 +2,12 @@
 product: campaign
 title: Download web
 description: Ulteriori informazioni sull’attività del flusso di lavoro Download web
-badge-v7-only: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Workflows
 exl-id: b6005eae-5fbc-4e22-ab3a-c9b7ed6506f6
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 3%
+source-wordcount: '408'
+ht-degree: 1%
 
 ---
 
