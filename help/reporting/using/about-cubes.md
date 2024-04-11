@@ -3,15 +3,14 @@ product: campaign
 title: Informazioni sui cubi
 description: Introduzione ai cubi
 feature: Reporting, Monitoring
-badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 hide: true
 hidefromtoc: true
 exl-id: ade4c857-9233-4bc8-9ba1-2fec84b7c3e6
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 2%
+source-wordcount: '406'
+ht-degree: 1%
 
 ---
 

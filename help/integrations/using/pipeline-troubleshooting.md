@@ -3,15 +3,14 @@ product: campaign
 title: Risoluzione dei problemi relativi alla pipeline
 description: Risoluzione dei problemi relativi alla pipeline
 feature: Triggers
-badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 1%
+source-wordcount: '713'
+ht-degree: 0%
 
 ---
 

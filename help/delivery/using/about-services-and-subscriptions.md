@@ -2,15 +2,14 @@
 product: campaign
 title: Informazioni su servizi e abbonamenti
 description: Guida introduttiva a servizi e abbonamenti in Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Subscriptions
 role: User
 exl-id: eb72f19a-7669-4596-bf9b-8c0ce22b67bf
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 5%
+source-wordcount: '167'
+ht-degree: 4%
 
 ---
 

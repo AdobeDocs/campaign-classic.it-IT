@@ -2,14 +2,13 @@
 product: campaign
 title: Istruzioni di pre-elaborazione per gli URL tracciati
 description: Scopri di più sulle istruzioni di pre-elaborazione da utilizzare per creare uno script per l’URL di un’e-mail e tenerne traccia
-badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Monitoring
 role: User, Data Engineer, Developer
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '653'
 ht-degree: 1%
 
 ---

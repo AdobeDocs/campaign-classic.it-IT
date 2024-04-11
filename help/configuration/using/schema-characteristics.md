@@ -4,12 +4,11 @@ title: Caratteristiche di uno schema
 description: Caratteristiche di uno schema
 feature: Custom Resources
 role: Data Engineer, Developer
-badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 exl-id: 099161b4-b4cb-433c-aed6-71157269a536
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '389'
 ht-degree: 1%
 
 ---

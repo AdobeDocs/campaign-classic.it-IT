@@ -2,14 +2,13 @@
 product: campaign
 title: Creare un SMS con Campaign
 description: Scopri come creare SMS con Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: SMS
 role: User
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '446'
 ht-degree: 2%
 
 ---

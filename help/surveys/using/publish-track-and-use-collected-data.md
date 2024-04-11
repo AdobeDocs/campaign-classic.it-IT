@@ -2,13 +2,12 @@
 product: campaign
 title: Pubblicare, tracciare e utilizzare i dati raccolti
 description: Scopri come pubblicare, tracciare e utilizzare i dati raccolti in un sondaggio
-badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '843'
 ht-degree: 2%
 
 ---

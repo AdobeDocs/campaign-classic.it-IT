@@ -2,14 +2,13 @@
 product: campaign
 title: Inviare e-mail su cellulari giapponesi con Adobe Campaign Classic
 description: Scopri come configurare, progettare e inviare e-mail che verranno lette su un dispositivo mobile giapponese
-badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Email, Email Design
 role: User
 exl-id: 44634227-2340-49c4-b330-740c739ea551
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '733'
 ht-degree: 0%
 
 ---

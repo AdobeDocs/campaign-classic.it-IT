@@ -2,14 +2,13 @@
 product: campaign
 title: Moduli di input
 description: Scopri come utilizzare i moduli di input in Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Data Management
 role: User, Developer
 exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '841'
 ht-degree: 2%
 
 ---

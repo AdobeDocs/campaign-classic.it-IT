@@ -2,13 +2,12 @@
 product: campaign
 title: Passaggi chiave per creare un sondaggio
 description: Creare il primo sondaggio con Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Surveys
 exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '939'
 ht-degree: 1%
 
 ---

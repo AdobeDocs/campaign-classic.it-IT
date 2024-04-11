@@ -2,13 +2,12 @@
 product: campaign
 title: Aggiornare la qualifica di mancato recapito dopo l’interruzione di Apple 2021
 description: Scopri come aggiornare la qualifica di mancato recapito dopo l’interruzione di Apple 2021
-badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---

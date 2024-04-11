@@ -2,13 +2,12 @@
 product: campaign
 title: Creare una nuova applicazione web
 description: Creare una nuova applicazione web
-badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Web Apps
 exl-id: 5ccf5a21-48aa-4c0d-8cc8-457eb07d9f74
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '365'
 ht-degree: 20%
 
 ---

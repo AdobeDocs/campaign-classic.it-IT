@@ -2,15 +2,14 @@
 product: campaign
 title: Aggiornare la qualifica di mancato recapito dopo un’interruzione del servizio ISP
 description: Scopri come aggiornare la qualifica di mancato recapito dopo un’interruzione del servizio ISP
-badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Deliverability
 hide: true
 hidefromtoc: true
 exl-id: 7a9afe0a-0219-40f1-9fe2-6374db8d555c
-source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '492'
 ht-degree: 3%
 
 ---

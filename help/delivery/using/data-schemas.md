@@ -2,14 +2,13 @@
 product: campaign
 title: Utilizzare gli schemi di dati in Campaign
 description: Scopri come utilizzare gli schemi di dati in Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Data Model
 role: User, Developer, Data Engineer
 exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '567'
 ht-degree: 1%
 
 ---

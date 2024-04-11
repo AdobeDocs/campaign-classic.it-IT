@@ -2,13 +2,12 @@
 product: campaign
 title: "Casi d’uso: creare panoramiche"
 description: "Casi d’uso: creare panoramiche"
-badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Web Apps
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---

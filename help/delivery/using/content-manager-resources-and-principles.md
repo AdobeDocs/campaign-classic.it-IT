@@ -2,14 +2,13 @@
 product: campaign
 title: Risorse e principi di gestione dei contenuti
 description: Risorse e principio di gestione dei contenuti
-badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Templates
 role: User, Developer, Data Engineer
 exl-id: ade3f1d1-2235-4148-9b6f-721d3f521a15
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '247'
 ht-degree: 4%
 
 ---

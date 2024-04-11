@@ -3,12 +3,11 @@ product: campaign
 title: Funzionalità avanzate
 description: Ulteriori informazioni sulle funzionalità avanzate quando si lavora con i rapporti
 feature: Reporting, Monitoring
-badge-v7: label="v7" type="Informative" tooltip="Applicabile a Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 exl-id: 8b51d0fc-1692-41cd-9aa8-3bb8f4ee454e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '610'
 ht-degree: 4%
 
 ---
