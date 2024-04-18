@@ -4,9 +4,9 @@ title: Download web
 description: Ulteriori informazioni sull’attività del flusso di lavoro Download web
 feature: Workflows
 exl-id: b6005eae-5fbc-4e22-ab3a-c9b7ed6506f6
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: a0c0c7d13704b0155004e578d6739852ceb43c81
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '483'
 ht-degree: 1%
 
 ---
@@ -58,6 +58,10 @@ Il **Download web** l’attività avvia il download di un file su un URL esplici
 1. **Parametri avanzati**
 
    Il **[!UICONTROL Advanced parameters...]** Il collegamento ti consente di specificare le opzioni aggiuntive riportate di seguito:
+
+   * **[!UICONTROL Follow redirections]**: il reindirizzamento dei file consente di utilizzare gli override per indirizzare l’input o l’output di dati a un dispositivo di tipo diverso.
+   * **[!UICONTROL Add the HTTP headers to the file]**: in alcuni casi, potrebbe essere utile aggiungere ulteriori intestazioni HTTP a un file. Nella maggior parte dei casi, queste intestazioni vengono utilizzate per fornire informazioni aggiuntive a scopo di risoluzione dei problemi, per [Condivisione delle risorse tra diverse origini (CORS)](https://developer.mozilla.org/docs/Web/HTTP/CORS), o per impostare specifiche direttive di caching.
+   * **[!UICONTROL Ignore the HTTP return code]**: i codici di ritorno HTTP, o codici di stato HTTP, indicano il risultato di una richiesta HTTP.
 
    ![](assets/download_web_edit_advanced.png)
 
