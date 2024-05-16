@@ -6,7 +6,7 @@ title: Guida di Campaign Classic v7
 user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: be29827280592991e876e158f03a986bd000a4ad
+source-git-commit: c8cd1ef5e79e14c3ce804c32be0e995408d9358c
 workflow-type: tm+mt
 source-wordcount: '2550'
 ht-degree: 99%
@@ -845,7 +845,3 @@ ht-degree: 99%
       + [Migrazione a cloud pubblico](technotes/using/dc-migration.md)
       + [Domande frequenti](technotes/using/dc-migration-faq.md)
 + [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it)
-
-<!--
-With Adobe Campaign Classic v7, you can use rich customer data to create, coordinate, and deliver dynamic campaigns that customers actually want — through email, mobile, offline channels, and more.
--->
