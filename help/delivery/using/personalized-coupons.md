@@ -6,9 +6,9 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Personalization
 role: User
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 8e5a328bee7701adfedec6a533cc21b4ce548187
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '911'
 ht-degree: 1%
 
 ---
@@ -17,15 +17,17 @@ ht-degree: 1%
 
 L’aggiunta di coupon alle consegne può fornire ai destinatari un valore aggiunto per prodotti e servizi. Puoi utilizzare il modulo coupon di Campaign per creare un set di coupon da aggiungere alle prossime offerte di marketing. Quando sei pronto a creare una consegna, assegna i coupon applicabili. Poiché i coupon sono validi per un periodo selezionato, un coupon assegnato è collegato in modo univoco al relativo messaggio di consegna. Inoltre, Campaign conferma che sono presenti coupon sufficienti per il numero di messaggi prima dell’invio della consegna.
 
->[!NOTE]
+>[!AVAILABILITY]
 >
->La gestione dei coupon è un pacchetto che deve essere installato. Per confermare che hai la gestione Coupon, seleziona **[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
->
->I dati del coupon possono essere importati ed esportati utilizzando i formati CSV e XML. Per ulteriori informazioni sull&#39;importazione e l&#39;esportazione, fare riferimento a [questa sezione](../../platform/using/get-started-data-import-export.md).
+>La gestione dei coupon non è disponibile in Campaign v8 nel contesto di una distribuzione Enterprise (FFDA). Ulteriori informazioni in [Documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
+
+La gestione dei coupon si basa su un pacchetto che deve essere installato. Per confermare che hai la gestione Coupon, seleziona **[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
+
+I dati del coupon possono essere importati ed esportati utilizzando i formati CSV e XML. [Ulteriori informazioni](../../platform/using/get-started-data-import-export.md).
 
 ## Crea un coupon {#creating-a-coupon}
 
-Il modulo coupon offre due opzioni per la creazione di coupon:
+Il modulo Gestione coupon offre due opzioni per la creazione di coupon:
 
 * **Anonimo**: coupon generico per determinati destinatari o elenchi di destinatari.
 * **Individuale**: coupon personalizzato per destinatari selezionati.
