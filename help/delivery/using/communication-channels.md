@@ -6,7 +6,7 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 8fbfc211c4e791b324c34d3d180daa7597c00c7f
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 15%
@@ -32,7 +32,7 @@ Adobe Campaign offre i seguenti canali di consegna:
 1. **Canale mobile**: le consegne sui canali mobili ti consentono di inviare SMS personalizzati o messaggi LINE alla popolazione target. Fai riferimento a [Canale SMS](sms-channel.md).
 1. **Canale dell’applicazione mobile**: le consegne tramite app mobile ti consentono di inviare notifiche ai sistemi iOS e Android. Consulta la sezione [Canale app mobile](about-mobile-app-channel.md) capitolo.
 
-   Altri canali sono descritti su [questa pagina](steps-about-delivery-creation-steps.md#other-channels).
+   Altri canali sono descritti su [questa sezione](#other-channels).
 
    >[!NOTE]
    >

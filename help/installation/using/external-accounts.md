@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 8fbfc211c4e791b324c34d3d180daa7597c00c7f
 workflow-type: tm+mt
 source-wordcount: '1787'
 ht-degree: 8%
@@ -15,8 +15,6 @@ ht-degree: 8%
 ---
 
 # Account esterni{#external-accounts}
-
-
 
 Adobe Campaign è dotato di un set di account esterni predefiniti. Per impostare connessioni con sistemi esterni, puoi creare nuovi account esterni.
 
@@ -115,9 +113,9 @@ Il **[!UICONTROL Routing]** l’account esterno ti consente di configurare ogni 
 
 * [E-mail](#email-routing-external-account)
 * [Dispositivo mobile (SMS)](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)
-* [Telefono](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
+* [Telefono](../../delivery/using/communication-channels.md#other-channels)
 * [Direct mail](../../delivery/using/about-direct-mail-channel.md)
-* [Agenzia](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
+* [Agenzia](../../delivery/using/communication-channels.md#other-channels)
 * [X (precedentemente noto come Twitter)](../../social/using/about-social-marketing.md)
 * [Canale iOS](../../delivery/using/configuring-the-mobile-application.md)
 * [Canale Android](../../delivery/using/configuring-the-mobile-application-android.md)
