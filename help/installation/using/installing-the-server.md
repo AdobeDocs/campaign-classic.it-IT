@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: c0cb4efa-cae9-4312-88fb-738857a89595
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: b7dedddc080d1ea8db700fabc9ee03238b3706cc
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 1%
@@ -16,8 +16,6 @@ ht-degree: 1%
 ---
 
 # Installazione del server{#installing-the-server}
-
-
 
 ## Esecuzione del programma di installazione {#executing-the-installation-program}
 
@@ -70,13 +68,13 @@ I passaggi per l’installazione del server Adobe Campaign sono i seguenti:
 
 È possibile verificare l&#39;installazione iniziale utilizzando il comando seguente:
 
-```
+```sql
 nlserver pdump
 ```
 
 Se Adobe Campaign non viene avviato, la risposta è:
 
-```
+```sql
 No task
 ```
 
@@ -84,7 +82,7 @@ No task
 
 Al termine del test di installazione, aprire un prompt dei comandi tramite **[!UICONTROL Start > Programs > Adobe Campaign]** e immettere il comando seguente:
 
-```
+```sql
 nlserver web
 ```
 
@@ -104,13 +102,13 @@ Vengono visualizzate le seguenti informazioni:
 
 Premi **CTRL+C** per arrestare il processo, immettere il comando seguente:
 
-```
+```sql
 nlserver start web
 ```
 
 Vengono visualizzate le seguenti informazioni:
 
-```
+```sql
 12:17:21 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
 12:17:21 >   Start of the 'web@default' ('nlserver web -tracefile:web@default -instance:default -detach -tomcat -autorepair') task in a new process 
 12:17:21 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -122,13 +120,13 @@ Vengono visualizzate le seguenti informazioni:
 
 Per interromperlo, immetti:
 
-```
+```sql
 nlserver stop web
 ```
 
 Vengono visualizzate le seguenti informazioni:
 
-```
+```sql
 12:18:31 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
 12:18:31 >   Stop requested for 'web@default' ('nlserver web -tracefile:web@default -instance:default -detach -tomcat -autorepair', pid=29188, tid=-1224824320)...
 12:18:31 >   Stop requested (pid=29188)
@@ -145,13 +143,13 @@ Per ulteriori informazioni, consulta [questa sezione](../../installation/using/c
 
 Per avviare i servizi di Adobe Campaign, puoi utilizzare il gestore dei servizi o immettere quanto segue alla riga di comando (con i diritti appropriati):
 
-```
+```sql
 net start nlserver6
 ```
 
 Per arrestare i processi di Adobe Campaign in un secondo momento, utilizza il comando:
 
-```
+```sql
 net stop nlserver6
 ```
 
@@ -161,6 +159,6 @@ Scarica LibreOffice e segui i passaggi regolari dell’installazione.
 
 Aggiungi la seguente variabile di ambiente:
 
-```
+```sql
 OOO_BASIS_INSTALL_DIR="C:\Program Files (x86)\LibreOffice 6\"
 ```

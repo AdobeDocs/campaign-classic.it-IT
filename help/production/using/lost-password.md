@@ -8,7 +8,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 064eb41f-6685-4ac1-adc5-40f9d5a2f96d
-source-git-commit: ef7f3888e010cbe331b5e06cd1ea5e07127a47d2
+source-git-commit: b7dedddc080d1ea8db700fabc9ee03238b3706cc
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 3%
@@ -71,7 +71,7 @@ A tale scopo, attenersi alla procedura descritta di seguito.
 
 1. Salva le modifiche e chiudi il file.
 
-1. Interrompi `nlserver` processo
+1. Interrompi `nlserver` processo.
 
 1. Configura la nuova password. A tale scopo, immetti i seguenti comandi:
 
@@ -85,6 +85,6 @@ A tale scopo, attenersi alla procedura descritta di seguito.
    Confirmation 
    ```
 
-1. Avvia il `nlserver` processo
+1. Avvia il `nlserver` processo.
 
 1. Ora puoi usare la nuova password per connetterti a **Interno** modalità.
