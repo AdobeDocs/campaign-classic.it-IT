@@ -8,15 +8,14 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 5d237d42adabe42a07bc759913dd9453df650671
 workflow-type: tm+mt
-source-wordcount: '1977'
-ht-degree: 98%
+source-wordcount: '1910'
+ht-degree: 97%
 
 ---
 
 # Privacy e consenso{#privacy-and-recommendations}
-
 
 
 ## Raccomandazioni generali {#general-recommendations}
@@ -31,18 +30,7 @@ Prenditi del tempo per esaminare la [Lista di controllo sicurezza e privacy](../
 
 ### Normative sulla privacy {#privacy-regulations}
 
-Per gestire correttamente la privacy e i dati personali, attieniti alle normative applicabili alle regioni in cui operi. Tali normative comprendono:
-* [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_it) (Regolamento generale europeo sulla protezione dei dati)
-* [DPA](https://www.gov.uk/data-protection) (implementazione del GDPR nel Regno Unito)
-* [Direttiva europea relativa alla vita privata e alle comunicazioni elettroniche](https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:02002L0058-20091219)
-* [CAN-SPAM Act](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business) (legge statunitense che definisce le regole e i requisiti per le e-mail commerciali)
-* [CCPA](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&amp;division=3.&amp;title=1.81.5.&amp;part=4.&amp;chapter=&amp;article=) (California Consumer Privacy Act)
-* [PDPA](https://secureprivacy.ai/thailand-pdpa-summary-what-businesses-need-to-know/) (legge sulla protezione dei dati personali in Thailandia)
-* [LGPD](https://iapp.org/media/pdf/resource_center/Brazilian_General_Data_Protection_Law.pdf) (Legge Generale brasiliana sulla Protezione dei Dati)
-
->[!NOTE]
->
->Per ulteriori informazioni sulle modalità con cui GDPR, CCPA, PDPA e LGPD si applicano ad Adobe Campaign, consulta [questa pagina](../../platform/using/privacy-management.md#privacy-management-regulations).
+Per gestire correttamente la privacy e i dati personali, attieniti alle normative applicabili alle regioni in cui operi. Le funzionalità di Adobe Campaign consentono di rispettare le normative elencate in [questa pagina](../../platform/using/privacy-management.md#privacy-management-regulations).
 
 ### Privacy di Adobe Experience Cloud {#experience-cloud-privacy}
 
