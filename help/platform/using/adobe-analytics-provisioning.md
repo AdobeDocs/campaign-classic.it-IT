@@ -7,10 +7,10 @@ feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: a08b386ff73fd9a2e9b3909c8f8de5e419104ce4
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 6%
+source-wordcount: '857'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +36,11 @@ Affinché questa integrazione funzioni, devi creare un profilo di prodotto Adobe
 
 >[!AVAILABILITY]
 >
-> Il codice JWT (JSON Web Tokens) è attualmente in fase di ammortamento e viene sostituito con OAuth. La transizione viene eseguita progressivamente nelle prossime versioni di Campaign e la documentazione verrà aggiornata per riflettere tali aggiornamenti.
+> Le credenziali dell’account di servizio (JWT) sono state dichiarate obsolete da Adobe. Le integrazioni di Campaign con le soluzioni e le app Adobe ora devono basarsi sulle credenziali server-to-server OAuth. </br>
+>
+> * Se hai implementato le integrazioni in entrata con Campaign, devi migrare l’account tecnico come descritto in questa documentazione. Le credenziali dell’account di servizio (JWT) esistenti continueranno a funzionare fino al 27 gennaio 2025. Inoltre, a partire dal 3 giugno 2024 non sarà più possibile creare nuove credenziali dell’account di servizio (JWT) in Console sviluppatori. Non è possibile creare o aggiungere a un progetto una nuova credenziale dell’account di servizio (JWT) dopo questa data. </br>
+>
+> * Se hai implementato integrazioni in uscita, ad esempio l’integrazione Campaign-Analytics o l’integrazione Experience Cloud Triggers, queste continueranno a funzionare fino al 27 gennaio 2025. Tuttavia, prima di tale data, devi aggiornare l’ambiente Campaign alla versione v7.4.1 e migrare l’account tecnico a oAuth. Poiché la creazione di nuove credenziali dell’account di servizio (JWT) in Console sviluppatori non è più possibile a partire dal 3 giugno 2024, non è possibile creare una nuova integrazione in uscita basata su JWT dopo questa data
 
 ## Creare un profilo di prodotto Adobe Analytics {#analytics-product-profile}
 
