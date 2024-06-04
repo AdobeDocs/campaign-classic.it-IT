@@ -8,20 +8,20 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 87103c31-1530-4f8d-ab3a-6ff73093b80c
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 30670fba2fb84b968ef2e8a8f24746c81cc05f57
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '565'
 ht-degree: 1%
 
 ---
 
 # Server dell’applicazione{#application-server}
 
-
-
 I livelli di accesso al database richiesti devono essere installati sul server e accessibili dall’account Adobe Campaign.
 
 ## Java Development Kit - JDK {#java-development-kit---jdk}
+
+Java Development Kit, o JDK, è un kit di sviluppo software. È il componente fondamentale che consente lo sviluppo di applicazioni Java e applet Java.
 
 Il generatore di pagine web dinamiche utilizza la tecnologia JSP 1.2. Per questo, nell’applicazione è incluso un motore Tomcat (di Apache). Richiede un Java Development Kit (JDK), installato su tutti i server in cui è installata l’applicazione Adobe Campaign.
 
@@ -31,33 +31,46 @@ L’applicazione è stata approvata per Java Development Kit (JDK) sviluppato da
 
 Le versioni supportate sono dettagliate in Campaign [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
->[!NOTE]
->
->Può essere installata utilizzando la versione JDK appropriata già utilizzata da altre applicazioni sul computer.
->  
->Durante l’installazione, non è necessario eseguire l’integrazione con i browser web.
->
->In un computer che esegue solo agenti di consegna (**mta nlserver** processo) o il server del flusso di lavoro (**nlserver wfserver** processo), l&#39;installazione di un JDK non è necessaria.
 
-Per scaricare Java JDK, connettiti a: [https://www.oracle.com/technetwork/java/javase/downloads/index.html](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
-**Avviso: è necessario scaricare un JDK, non un JRE.**
+### Raccomandazioni
+
+Java Development Kit può essere installato utilizzando la versione JDK appropriata già utilizzata da altre applicazioni sul computer.
+
+Durante l’installazione di JDK, non è richiesta l’integrazione con i browser web.
+
+In un computer che esegue solo agenti di consegna (**mta nlserver** processo) o il server del flusso di lavoro (**nlserver wfserver** processo), non è necessario installare un JDK.
+
 
 >[!CAUTION]
 >
->Per mantenere le prestazioni operative della piattaforma e garantire la compatibilità con la versione installata, è necessario disabilitare le funzioni di aggiornamento automatico JDK in Windows e Linux.
+> Per mantenere le prestazioni operative della piattaforma e garantire la compatibilità con la versione installata, è necessario disabilitare le funzioni di aggiornamento automatico JDK in Windows e Linux.
+>
+> Quando aggiorni la versione Java, devi prima disinstallare la versione precedente. Entrambe le versioni di Java installate nello stesso computer possono causare conflitti.
 
-Per installare JDSL in un ambiente Linux, è preferibile utilizzare un gestore di pacchetti.
 
-In Debian 8 e 9, usa il seguente comando:
+### Passaggi per l’installazione
 
-```
+Java Development Kit è specifico per la piattaforma: sono necessari programmi di installazione separati per ciascun sistema operativo.
+
+Per scaricare Java JDK, connettiti a [Oracle di sito web](https://www.oracle.com/technetwork/java/javase/downloads/index.html){target="_blank"}.
+
+>[!CAUTION]
+>
+> Assicurati di scaricare Java Development Kit (JDK) e non un ambiente Java Runtime (JRE).
+
+
+Per installare JDSL in un ambiente Linux, l’Adobe consiglia di utilizzare un gestore di pacchetti.
+
+Per Debian, usa il seguente comando:
+
+```sql
 aptitude install openjdk-8-jdk
 ```
 
-Per RHEL 7, utilizzare il comando seguente:
+Per RHEL, utilizzare il comando seguente:
 
-```
+```sql
 yum install java-1.8.0-openjdk
 ```
 
@@ -65,9 +78,13 @@ yum install java-1.8.0-openjdk
 
 In Linux, OpenSSL deve essere installato. Adobe Campaign supporta OpenSSL versione 1.0.2 o successiva.
 
-## Esportazione di report {#exporting-reports}
+## Esportare rapporti {#exporting-reports}
 
-Adobe Campaign consente di esportare i rapporti della piattaforma in formato Microsoft Excel e Adobe PDF. Per il formato Microsoft Excel, Adobe Campaign utilizza **LibreOffice**. Per il formato Adobe PDF, Adobe Campaign utilizza **PhantomJS** convertitore. PhantomJs è incluso nel pacchetto di fabbrica e LibreOffice deve essere installato sui computer su cui viene eseguito il server applicazioni Adobe Campaign (**nlserver web** processo).
+Puoi utilizzare Adobe Campaign per esportare rapporti in Microsoft Excel e Adobe PDF.
+
+* Per il formato Microsoft Excel, Adobe Campaign si basa su **LibreOffice**.
+
+* Per il formato Adobe PDF, Adobe Campaign utilizza **PhantomJS** convertitore. PhantomJs è incluso nel pacchetto di fabbrica e LibreOffice deve essere installato sui computer su cui viene eseguito il server applicazioni Adobe Campaign (**nlserver web** processo).
 
 >[!NOTE]
 >
