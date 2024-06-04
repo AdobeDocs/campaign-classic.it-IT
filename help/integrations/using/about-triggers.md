@@ -7,9 +7,9 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 271e0f9fde0cbfb016e201c8390b26673d8fc696
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '258'
 ht-degree: 7%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->Questa funzionalità non è disponibile come funzione predefinita del prodotto. Per questa implementazione, devi innanzitutto aprire un ticket con il supporto Adobe. Potrai quindi seguire i passaggi descritti in questo [pagina](../../integrations/using/configuring-pipeline.md#prerequisites).
+>Questa funzionalità non è disponibile come funzione predefinita del prodotto. Per questa implementazione, rivolgiti al tuo rappresentante Adobe/all’Assistenza clienti. Potrai quindi seguire i passaggi descritti in questo [pagina](../../integrations/using/configuring-pipeline.md#prerequisites).
 
 [!DNL Triggers] eseguire azioni di marketing entro un breve intervallo di tempo dopo l’azione di un utente. Il tempo di risposta tipico è inferiore a un&#39;ora.
 
