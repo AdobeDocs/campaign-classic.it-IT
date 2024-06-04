@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 87103c31-1530-4f8d-ab3a-6ff73093b80c
-source-git-commit: 30670fba2fb84b968ef2e8a8f24746c81cc05f57
+source-git-commit: 7e1c3b256cf43232e49d9daa0bf44d1e114b565b
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '622'
 ht-degree: 1%
 
 ---
@@ -32,28 +32,28 @@ L’applicazione è stata approvata per Java Development Kit (JDK) sviluppato da
 Le versioni supportate sono dettagliate in Campaign [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
 
-
 ### Raccomandazioni
 
-Java Development Kit può essere installato utilizzando la versione JDK appropriata già utilizzata da altre applicazioni sul computer.
+Durante l’installazione e l’aggiornamento di Java Development Kit, applica i seguenti consigli:
 
-Durante l’installazione di JDK, non è richiesta l’integrazione con i browser web.
+* Java Development Kit può essere installato utilizzando la versione JDK appropriata già utilizzata da altre applicazioni sul computer.
 
-In un computer che esegue solo agenti di consegna (**mta nlserver** processo) o il server del flusso di lavoro (**nlserver wfserver** processo), non è necessario installare un JDK.
+* Durante l’installazione di JDK, non è richiesta l’integrazione con i browser web.
 
+* In un computer che esegue solo agenti di consegna (**mta nlserver** processo) o il server del flusso di lavoro (**nlserver wfserver** processo), non è necessario installare un JDK.
 
->[!CAUTION]
->
-> Per mantenere le prestazioni operative della piattaforma e garantire la compatibilità con la versione installata, è necessario disabilitare le funzioni di aggiornamento automatico JDK in Windows e Linux.
->
-> Quando aggiorni la versione Java, devi prima disinstallare la versione precedente. Entrambe le versioni di Java installate nello stesso computer possono causare conflitti.
+* Per mantenere le prestazioni operative della piattaforma e garantire la compatibilità con la versione installata, è necessario disabilitare le funzioni di aggiornamento automatico JDK in Windows e Linux.
+
+* Quando aggiorni la versione Java, devi prima disinstallare la versione precedente. Entrambe le versioni di Java installate nello stesso computer possono causare conflitti.
+
+  In qualità di cliente on-premise, puoi controllare `LD_LIBRARY_PATH` [variabile di ambiente](installing-packages-with-linux.md#environment-variables) è impostato sulla versione più recente (ad es. java11). Se è impostata su una versione precedente (ad es. Java8), quindi deve essere aggiornato. Per JDK 11, il percorso per individuare le librerie JDK è `/usr/lib/jvm/java-11-openjdk-amd64/lib`.
 
 
 ### Passaggi per l’installazione
 
 Java Development Kit è specifico per la piattaforma: sono necessari programmi di installazione separati per ciascun sistema operativo.
 
-Per scaricare Java JDK, connettiti a [Oracle di sito web](https://www.oracle.com/technetwork/java/javase/downloads/index.html){target="_blank"}.
+Per scaricare JDK, connettiti a [Oracle di sito web](https://www.oracle.com/technetwork/java/javase/downloads/index.html){target="_blank"}.
 
 >[!CAUTION]
 >
@@ -73,6 +73,7 @@ Per RHEL, utilizzare il comando seguente:
 ```sql
 yum install java-1.8.0-openjdk
 ```
+
 
 ## OpenSSL {#openssl}
 
