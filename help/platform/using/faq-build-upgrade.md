@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 991ad88101468c3e7f5d676586dfdd05d63e7c6d
 workflow-type: tm+mt
-source-wordcount: '1996'
+source-wordcount: '2042'
 ht-degree: 1%
 
 ---
@@ -122,13 +122,17 @@ L’installazione dell’aggiornamento della build per i clienti in hosting non 
 
 No. Il server viene arrestato durante un aggiornamento per garantire l&#39;integrità dei dati durante l&#39;aggiornamento del prodotto. Una volta completato, viene riavviato e tutti i servizi riprendono.
 
+## Posso ancora utilizzare la mia istanza Campaign durante il processo di aggiornamento?
+
+No. L’Adobe consiglia di disabilitare tutte le operazioni nella campagna durante il periodo di manutenzione per evitare la perdita o l’assenza di dati. Non devi creare o distribuire campagne, query, flussi di lavoro o consegne durante l’aggiornamento.
+
 ## Le e-mail continueranno a essere inviate dal Centro messaggi durante il processo di aggiornamento?
 
 Quando si esegue l’aggiornamento per il Centro messaggi (RT), non invierà e-mail dall’istanza. Nota: tutti i processi interrotti alla chiusura di un sistema Campaign vengono ripresi automaticamente al riavvio del sistema. Ciò include consegne attive o pianificate, calcoli di tracciamento e metriche per le consegne inviate in precedenza.
 
 ## I flussi di lavoro continueranno a essere eseguiti e a inviare le consegne?
 
-No. Durante l’aggiornamento della build, il flusso di lavoro e i servizi di posta vengono entrambi interrotti. Ciò significa che i flussi di lavoro non verranno eseguiti e le consegne non verranno inviate. Riprenderanno una volta riavviato il sistema. Tuttavia, Adobe consiglia vivamente di controllare tutti i flussi di lavoro dei percorsi critici dopo un aggiornamento per garantirne l’esecuzione e l’integrità.
+No. Durante l’aggiornamento della build, il flusso di lavoro e i servizi di posta vengono entrambi interrotti. Ciò significa che i flussi di lavoro non verranno eseguiti e le consegne non verranno inviate. Riprenderanno una volta riavviato il sistema. Tuttavia, Adobe consiglia vivamente di controllare tutti i flussi di lavoro dei percorsi critici dopo un aggiornamento per verificarne l’esecuzione e l’integrità.
 
 ## I miei collegamenti di tracciamento continueranno a funzionare durante l’aggiornamento?
 
