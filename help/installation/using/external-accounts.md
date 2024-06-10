@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 8fbfc211c4e791b324c34d3d180daa7597c00c7f
+source-git-commit: ef6a864c76c04ac94383c1c2ad74095dd5ef63a1
 workflow-type: tm+mt
-source-wordcount: '1787'
+source-wordcount: '1757'
 ht-degree: 8%
 
 ---
@@ -208,13 +208,14 @@ L’account esterno SFTP consente di configurare e testare l’accesso a un serv
 
   Password utilizzata per la connessione al server SFTP.
 
-Per aggiungere chiavi SSH in Windows:
+<!--To add SSH keys on Windows:
 
-1. Creare **HOME** variabile di ambiente con valore impostato come directory di installazione.
+1. Create the **HOME** environment variable with value set as the installation directory.
 
-2. Aggiungi la chiave privata al `/$HOME/.ssh/id_rsa` cartella.
+2. Add your private key to the `/$HOME/.ssh/id_rsa` folder.
 
-3. Riavvia i servizi Adobe Campaign.
+3. Restart the Adobe Campaign services.
+-->
 
 ### Database esterno (FDA) {#external-database-external-account}
 
