@@ -8,15 +8,14 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: 4f8ea358-a38d-4137-9dea-f398e60c5f5d
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 0e88ac270423ad419237264e562a03ab0c42efb5
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 0%
 
 ---
 
-# Integrazione in un server web per Linux{#integration-into-a-web-server-for-linux}
-
+# Integrazione in un server web per Linux {#integration-into-a-web-server-for-linux}
 
 
 Adobe Campaign include Apache Tomcat che funge da punto di ingresso nel server applicazioni tramite HTTP (e SOAP).
@@ -29,7 +28,7 @@ In questo caso:
 * Le console client si connettono quindi utilizzando un URL come:
 
   ```
-  http://<computer>:8080
+  https://<computer>:8080
   ```
 
 Tuttavia, per motivi di sicurezza e amministrazione, si consiglia di utilizzare un server Web dedicato come punto di ingresso principale per il traffico HTTP quando il computer che esegue Adobe Campaign è esposto su Internet e si desidera aprire l&#39;accesso alla console al di fuori della rete.

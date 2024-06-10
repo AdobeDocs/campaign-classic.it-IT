@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: a94774daa4005fe95066b85f921d9baa981b2a7c
+source-git-commit: 0e88ac270423ad419237264e562a03ab0c42efb5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '856'
+ht-degree: 86%
 
 ---
 
@@ -33,7 +33,10 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 >
 >La matrice viene regolarmente aggiornata con l’aggiunta dei nuovi elementi supportati e la rimozione di quelli obsoleti.
 
-## Sistemi operativi{#OperatingSystems}
+## Sistemi operativi {#OperatingSystems}
+
+In qualità di cliente on-premise/ibrido, devi installare Adobe Campaign in uno dei sistemi operativi elencati di seguito. Ulteriori informazioni sui passaggi di installazione di Campaign Classic v7 in [questa pagina](../../installation/using/application-server.md).
+
 
 <table> 
 <tbody> 
@@ -71,7 +74,9 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 >
 >Se utilizzi RHEL, disabilita SELinux o fai in modo che gli architetti scrivano regole SELinux personalizzate per evitare che il SELinux abilitato causi problemi alle attività di Campaign.
 
-## Server web{#WebServers}
+## Server web {#WebServers}
+
+In qualità di cliente on-premise/ibrido, a seconda del sistema operativo in uso, devi integrare Campaign in uno dei server web elencati di seguito. Ulteriori informazioni sui passaggi di configurazione dei server web in [questa pagina](../../installation/using/integration-into-a-web-server-for-windows.md) (per Windows) e [questa pagina](../../installation/using/integration-into-a-web-server-for-linux.md) (per Linux).
 
 <table>
 <tbody>
@@ -90,7 +95,9 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 </tbody>
 </table>
 
-## Strumenti{#Tools}
+## Strumenti {#Tools}
+
+In qualità di cliente on-premise/ibrido, devi installare e configurare gli strumenti elencati di seguito. [Ulteriori informazioni](../../installation/using/application-server.md).
 
 <table>
 <tbody>
@@ -119,6 +126,9 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 </table>
 
 ## Sistemi di gestione del database relazionale (RDBMS){#RDBMSservers}
+
+In qualità di cliente on-premise/ibrido, devi installare e configurare uno dei database elencati di seguito. [Ulteriori informazioni](../../installation/using/database.md).
+
 
 <table>
 <tbody>
@@ -158,7 +168,7 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 >
 >* Il driver RDBMS deve corrispondere alla versione del server RDBMS.
 >
->* PostgreSQL è il RDBMS per gli ambienti in hosting.
+>* PostgreSQL è il RDBMS per gli ambienti di Cloud Service in hosting/gestiti.
 
 ## Connettori CRM{#CRMconnectors}
 
@@ -394,7 +404,7 @@ I seguenti browser, nella loro versione più recente, sono compatibili con Campa
 
 
 
-## Altri argomenti correlati{#Morelikethis}
+## Altri argomenti correlati {#Morelikethis}
 
 * [Note sulla versione Campaign Classic](../../rn/using/latest-release.md)
 * [Architettura generale di Campaign](../../installation/using/general-architecture.md)
