@@ -5,9 +5,9 @@ description: Definire le proprietà dei moduli web
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Web Forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 1d4990917fea54e67ed23cd0771295de03a4f01a
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1375'
 ht-degree: 1%
 
 ---
@@ -83,6 +83,32 @@ I temi vengono salvati in **[!UICONTROL Administration>Configuration>Form render
 Nella parte inferiore della finestra delle proprietà viene visualizzato un rendering di esempio. Il **[!UICONTROL Edit link]** consente di visualizzare la configurazione per il tema selezionato.
 
 ![](assets/s_ncs_admin_survey_properties_render.png)
+
+## Logo nel modulo {#logo-in-the-form}
+
+È possibile modificare il logo utilizzato nel modulo utilizzando il proprio logo.
+
+In **[!UICONTROL Rendering]** all&#39;interno del **[!UICONTROL Properties]** della tua app web, fai clic sull’icona a forma di vetro del modello:
+
+![](assets/logo_glass.png)
+
+Nella nuova finestra, fai clic sul pulsante **[!UICONTROL Page layout]** collegamento:
+
+![](assets/logo_pagelayout.png)
+
+Qui è possibile modificare il percorso dell&#39;immagine del logo:
+
+![](assets/logo_path.png)
+
+Le immagini disponibili si trovano in **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Images]**. Puoi aggiungere il tuo logo qui.
+
+Queste immagini vengono inserite nella directory back-end dell’istanza *datakit\nms\fra\img\activities* o *datakit\nms\eng\img\activities* (eng o fra, a seconda della lingua dell’istanza).
+
+Per rendere disponibile una nuova immagine in questa directory (e nelle Immagini), contatta il supporto Adobe per apportare modifiche alle directory back-end.
+
+Per le istanze locali, puoi aggiungere autonomamente immagini al datakit.
+
+L’immagine caricata non deve essere visibile dal client Campaign. Il percorso corretto è sufficiente per utilizzare come nuovo logo.
 
 ## Testi nel modulo {#texts-in-the-form}
 
