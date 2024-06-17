@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 28302b40d4fa43b400a3e1b6dd3e133976a01418
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '856'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../
 
 ## Sistemi operativi {#OperatingSystems}
 
-In qualità di cliente on-premise/ibrido, devi installare Adobe Campaign in uno dei sistemi operativi elencati di seguito. Ulteriori informazioni sui passaggi di installazione di Campaign Classic v7 in [questa pagina](../../installation/using/application-server.md).
+In qualità di cliente on-premise/ibrido, devi installare Adobe Campaign in uno dei sistemi operativi elencati di seguito. Ulteriori informazioni sui passaggi per l’installazione di Campaign Classic v7 sono disponibili in [questa pagina](../../installation/using/application-server.md).
 
 
 <table> 
@@ -76,7 +76,7 @@ In qualità di cliente on-premise/ibrido, devi installare Adobe Campaign in uno 
 
 ## Server web {#WebServers}
 
-In qualità di cliente on-premise/ibrido, a seconda del sistema operativo in uso, devi integrare Campaign in uno dei server web elencati di seguito. Ulteriori informazioni sui passaggi di configurazione dei server web in [questa pagina](../../installation/using/integration-into-a-web-server-for-windows.md) (per Windows) e [questa pagina](../../installation/using/integration-into-a-web-server-for-linux.md) (per Linux).
+In qualità di cliente on-premise/ibrido, a seconda del sistema operativo in uso, devi integrare Campaign in uno dei server web elencati di seguito. Ulteriori informazioni sui passaggi di configurazione dei server web sono disponibili in [questa pagina](../../installation/using/integration-into-a-web-server-for-windows.md) (per Windows) e in [questa pagina](../../installation/using/integration-into-a-web-server-for-linux.md) (per Linux).
 
 <table>
 <tbody>
@@ -107,7 +107,7 @@ In qualità di cliente on-premise/ibrido, devi installare e configurare gli stru
 <p>11</p>
 <p>9</p>
 <p>8</p>
-<p>Ulteriori informazioni su JDK e Campaign in <a href="https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/deployment-guidelines/application-server#java-development-kit---jdk" target="_blank">questa pagina</a>.</p>
+<p>Ulteriori informazioni su JDK e Campaign sono disponibili in <a href="https://experienceleague.adobe.com/it/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/deployment-guidelines/application-server#java-development-kit---jdk" target="_blank">questa pagina</a>.</p>
 </td>
 </tr>
 <tr>
@@ -168,7 +168,7 @@ In qualità di cliente on-premise/ibrido, devi installare e configurare uno dei 
 >
 >* Il driver RDBMS deve corrispondere alla versione del server RDBMS.
 >
->* PostgreSQL è il RDBMS per gli ambienti di Cloud Service in hosting/gestiti.
+>* PostgreSQL è il RDBMS per gli ambienti in hosting/Managed Cloud Services.
 
 ## Connettori CRM{#CRMconnectors}
 

@@ -7,9 +7,9 @@ user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: efd333aed2b14667dc95f92341fc16482f0fb6aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2548'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -423,7 +423,7 @@ ht-degree: 99%
       + [Deduplicazione](workflow/using/deduplication.md)
       + [Cambiare dimensione](workflow/using/change-dimension.md)
       + [Aggiornare un elenco](workflow/using/list-update.md)
-      + [Servizi di abbonamento](workflow/using/subscription-services.md)
+      + [Servizi di iscrizione](workflow/using/subscription-services.md)
       + [Aggiornare i dati](workflow/using/update-data.md)
       + [Connettore per sistema CRM](workflow/using/crm-connector.md)
       + [Modificare l’origine dati](workflow/using/change-data-source.md)
