@@ -4,10 +4,10 @@ title: Avviare un flusso di lavoro
 description: Scopri come avviare un flusso di lavoro e scoprire i flussi di lavoro, la barra degli strumenti delle azioni e il menu di scelta rapida
 feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 98815fe0417f9126826e0273caa80888164793ec
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -64,6 +64,16 @@ I pulsanti della barra degli strumenti sono descritti in questo [sezione](../../
   Questa azione si interrompe e riavvia il flusso di lavoro. Nella maggior parte dei casi, consente un riavvio più rapido. È inoltre utile automatizzare il riavvio quando l’arresto richiede un certo periodo di tempo, perché il comando &quot;Interrompi&quot; non è disponibile quando il flusso di lavoro viene arrestato.
 
   Il **[!UICONTROL Start / Pause / Stop / Restart]** Le azioni sono disponibili anche tramite le icone di esecuzione nella barra degli strumenti. Per ulteriori informazioni, consulta questa [sezione](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow).
+
+  Tieni presente che **Riavvia** L&#39;azione non cancella le variabili dell&#39;istanza del flusso di lavoro confrontate con **Esecuzione**, **Interrompi**, e **Inizio** (la cancellazione delle variabili di istanza avviene al momento dell’azione Avvia). Durante il riavvio di un flusso di lavoro, le variabili dell’istanza sono ancora disponibili per l’utilizzo con valori conservati. Per cancellarli, puoi effettuare le seguenti operazioni:
+   * Esegui **Interrompi** e **Inizio** azioni.
+   * Aggiungi di seguito il codice JavaScript alla fine dell’esecuzione del flusso di lavoro:
+
+     ```
+     var wkf = xtk.workflow.load(instance.id)
+     wkf.variables='<variables/>'
+     wkf.save()
+     ```
 
 * **[!UICONTROL Purge history]**
 
