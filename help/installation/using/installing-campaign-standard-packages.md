@@ -5,9 +5,9 @@ description: Scopri come installare i pacchetti incorporati di Campaign
 feature: Installation, Application Settings
 badge-v7-prem: label="Solo on-premise/ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1264'
 ht-degree: 3%
 
 ---
@@ -192,7 +192,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
   </tr> 
   <tr> 
    <td> Connettori di analisi web<br /> </td> 
-   <td> Consente ad Adobe Campaign e Adobe Analytics di interagire attraverso il pacchetto Connettori di analisi web. Non compatibile con la messaggistica transazionale (pacchetto del centro messaggi). <a href="../../platform/using/gs-aa.md">Ulteriori informazioni</a><br /> </td> 
+   <td> Consente ad Adobe Campaign e Adobe Analytics di interagire attraverso il pacchetto Connettori di analisi web. Non compatibile con la messaggistica transazionale (pacchetto del centro messaggi). <a href="../../integrations/using/gs-aa.md">Ulteriori informazioni</a><br /> </td> 
    <td> Marketing </td> 
   </tr> 
   <tr> 
@@ -202,7 +202,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
   </tr> 
   <tr> 
    <td> Integrazione dei tipi di pubblico condivisi di Adobe Experience Cloud<br /> </td> 
-   <td> Consente di scambiare e condividere tipi di pubblico/segmenti con le soluzioni e i servizi di base di Adobe Experience Cloud. Richiede IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Ulteriori informazioni</a> <br /> </td> 
+   <td> Consente di scambiare e condividere tipi di pubblico/segmenti con soluzioni e app Adobe Experience Cloud. Richiede IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 

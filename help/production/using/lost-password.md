@@ -8,16 +8,18 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 064eb41f-6685-4ac1-adc5-40f9d5a2f96d
-source-git-commit: b7dedddc080d1ea8db700fabc9ee03238b3706cc
+source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '221'
 ht-degree: 3%
 
 ---
 
 # Password persa{#lost-password}
 
-
+>[!NOTE]
+>
+>Questa pagina si applica solo agli operatori che si connettono a Campaign con autenticazione nativa.
 
 È possibile modificare o recuperare una password persa.
 Esistono due possibili scenari:

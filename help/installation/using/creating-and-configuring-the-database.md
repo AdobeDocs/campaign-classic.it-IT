@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1306'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ Identificare il server e scegliere il tipo di operazione da eseguire. In questo 
 A seconda del motore di database selezionato, le informazioni di identificazione del server possono variare.
 
 * Per un **Oracle** motore, compila il **Nome TNS** definito per il server applicazioni.
-* Per un **PostgreSQL** o **DB2** per accedere al server di database, è necessario specificare il nome DNS (o l&#39;indirizzo IP) definito nel server applicazioni.
+* Per un **PostgreSQL** per accedere al server di database, è necessario specificare il nome DNS (o l&#39;indirizzo IP) definito nel server applicazioni.
 * Per un **Microsoft SQL Server** motore, è necessario definire: il nome DNS (o indirizzo IP) definito nel server applicazioni per accedere al server database: **DNS** o **DNS`\<instance>`** (modalità istanza),
 
   >[!CAUTION]
@@ -78,7 +78,6 @@ A questo scopo, immetti il nome e la password di un **Account del sistema di amm
 * **sistema** per una banca dati di Oracle,
 * **sa** per un database di Microsoft SQL Server,
 * **postgres** database PostgreSQL,
-* **db2inst1** per un database DB2.
 
 ### Passaggio 3: connessione e caratteristiche del database {#step-3---connection-and-characteristics-of-the-database}
 
@@ -89,11 +88,6 @@ Il passaggio seguente consente di configurare le impostazioni per l&#39;accesso 
 È necessario definire le seguenti impostazioni:
 
 * Specificare il nome del database da creare.
-
-  >[!NOTE]
-  >
-  >Per un database DB2, il nome del database non deve superare gli 8 caratteri.
-
 * Immettere la password dell&#39;account collegato al database.
 * Indicare se il database deve trovarsi o meno in Unicode.
 
@@ -182,7 +176,7 @@ Identificare il server e scegliere il tipo di operazione che si desidera eseguir
 A seconda del motore di database selezionato, le informazioni di identificazione del server possono variare.
 
 * Per un **Oracle** motore, compila il **Nome TNS** definito per il server applicazioni.
-* Per un **PostgreSQL** o **DB2** per accedere al server di database, è necessario specificare il nome DNS (o l&#39;indirizzo IP) definito nel server applicazioni.
+* Per un **PostgreSQL** per accedere al server di database, è necessario specificare il nome DNS (o l&#39;indirizzo IP) definito nel server applicazioni.
 * Per un **Microsoft SQL Server** motore, è necessario definire:
 
    1. il nome DNS (o indirizzo IP) definito nel server applicazioni per accedere al server database,

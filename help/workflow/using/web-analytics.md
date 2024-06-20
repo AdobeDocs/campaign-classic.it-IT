@@ -3,7 +3,7 @@ product: campaign
 title: Analisi web
 description: Ulteriori informazioni sul pacchetto Web Analytics
 feature: Workflows, Analytics Integration
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: a1dbef3e1feca1e3347de013db8bd7809d315016
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 
 
-I flussi di lavoro descritti di seguito vengono installati con **Connettori di analisi web** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../platform/using/gs-aa.md).
+I flussi di lavoro descritti di seguito vengono installati con **Connettori di analisi web** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../integrations/using/gs-aa.md).
 
 <table> 
  <tbody> 

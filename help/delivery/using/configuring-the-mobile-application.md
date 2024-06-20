@@ -5,9 +5,9 @@ description: Scopri come configurare l’app mobile per iOS
 feature: Push
 role: User, Developer
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 81b47231b027a189bc8b9029b7d48939734d08ed
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '588'
 ht-degree: 3%
 
 ---
@@ -94,7 +94,7 @@ Nell’esempio seguente, aggiungiamo **mediaURl** e **mediaExt** per creare una 
 
 1. Clic **[!UICONTROL Next]** per avviare la configurazione dell&#39;applicazione di sviluppo.
 
-1. Assicurati che lo stesso **[!UICONTROL Integration key]** è definito in Adobe Campaign e nel codice dell’applicazione tramite l’SDK. Per ulteriori informazioni, consulta [questa pagina](integrating-campaign-sdk-into-the-mobile-application.md). Questa chiave di integrazione, specifica per ogni applicazione, consente di collegare l’app mobile alla piattaforma Adobe Campaign.
+1. Assicurati che lo stesso **[!UICONTROL Integration key]** è definito in Adobe Campaign e nel codice dell’applicazione tramite l’SDK. <!--For more on this, refer to [this page](integrating-campaign-sdk-into-the-mobile-application.md).--> Questa chiave di integrazione, specifica per ogni applicazione, consente di collegare l’app mobile alla piattaforma Adobe Campaign.
 
    >[!NOTE]
    >

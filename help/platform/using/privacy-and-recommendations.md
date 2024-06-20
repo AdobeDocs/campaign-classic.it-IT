@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: 5d237d42adabe42a07bc759913dd9453df650671
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '1910'
-ht-degree: 97%
+source-wordcount: '1907'
+ht-degree: 95%
 
 ---
 
@@ -68,11 +68,14 @@ Nella gestione della privacy è importante definire quali dati devono essere ges
 * **I dati personali** sono informazioni che possono identificare direttamente o indirettamente un individuo.
 * **I dati personali riservati** sono informazioni relative a etnia, opinioni politiche, credenze religiose, precedenti penali, informazioni genetiche, dati sanitari, orientamento sessuale e informazioni biometriche di un individuo, nonché ad appartenenze a sindacati.
 
-È necessario prestare maggiore attenzione alla protezione dei dati personali durante l’integrazione di Campaign con altre soluzioni Experience Cloud in cui i tipi di pubblico possono essere trasferiti da un sistema all’altro, come [Adobe Analytics](../../platform/using/gs-aa.md), [Audience Manager o il servizio core Persone](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md) o con altre soluzioni quali [Connettori CRM](../../platform/using/crm-connectors.md).
+Durante l’integrazione di Campaign con altre soluzioni Experience Cloud in cui i tipi di pubblico possono essere trasferiti da un sistema all’altro, ad esempio [Adobe Analytics](../../integrations/using/gs-aa.md), [Tipi di pubblico di Experience Cloud](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md), o con altre soluzioni tramite [Connettori CRM](../../platform/using/crm-connectors.md), devi prestare maggiore attenzione alla protezione dei dati personali.
 
 Le [normative principali](#privacy-regulations) si riferiscono alle diverse entità che gestiscono i dati come segue:
+
 * Il **titolare del trattamento** è l’autorità che determina i mezzi e lo scopo della raccolta, dell’utilizzo e della condivisione dei dati personali.
+
 * Il **responsabile del trattamento** è qualsiasi individuo o parte che raccoglie, utilizza o condivide dati personali come indicato dal titolare del trattamento.
+
 * L’**interessato** è qualsiasi individuo i cui dati personali vengono raccolti, utilizzati o condivisi e che può essere identificato direttamente o indirettamente in base a tali dati personali.
 
 Pertanto, in quanto azienda che raccoglie e condivide dati personali, ricopri il ruolo di titolare del trattamento, i tuoi clienti costituiscono gli interessati e Adobe Campaign agisce come responsabile del trattamento quando tratta i loro dati personali secondo le istruzioni da te fornite. In quanto titolare del trattamento, sei responsabile della gestione del rapporto con gli interessati, ad esempio durante la gestione delle [richieste di accesso a dati personali](#privacy-requests).

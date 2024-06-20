@@ -7,9 +7,9 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: e1a085384fb27ec165c487c112fbc70fe9738d9e
+source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1259'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,11 @@ ht-degree: 2%
 >Dopo questa migrazione, la sezione seguente non è più applicabile.  Scopri come impostare le autorizzazioni con Adobe IMS in [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=it){target="_blank"}.
 
 
-## Introduzione agli operatori di Campaign  {#about-operators}
+## Introduzione agli operatori di Campaign {#about-operators}
+
+>[!NOTE]
+>
+>Queste procedure si applicano solo agli operatori che si connettono a Campaign con autenticazione nativa. Per l’autenticazione Adobe IMS, consulta [questa documentazione](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#_blank).
 
 Un operatore è un utente di Adobe Campaign che dispone delle autorizzazioni per accedere ed eseguire azioni.
 

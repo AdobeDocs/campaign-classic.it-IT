@@ -5,7 +5,9 @@ description: Campaign - Domande frequenti sul connettore Analytics
 feature: Technote, Analytics Integration
 badge-v7-prem: label="Solo on-premise/ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride v7"
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+hide: true
+hidefromtoc: true
+source-git-commit: a1dbef3e1feca1e3347de013db8bd7809d315016
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 2%
@@ -14,13 +16,11 @@ ht-degree: 2%
 
 # Come migrare le integrazioni di Genesis esistenti al connettore Adobe Analytics {#acc-aa-faq}
 
-
-
 A partire dalla versione 21.1.3 di Campaign Classic v7, il Connettore dati di Adobe Analytics è diventato obsoleto. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/data-connectors-eol.html)
 
 Il 1° agosto 2021 Adobe Campaign Classic è stato rimosso dalla precedente interfaccia utente di Data Connectors, tuttavia, le integrazioni esistenti di Campaign continueranno a raccogliere e trasmettere dati ad Adobe Analytics fino al 17 agosto 2022. Dopo tale data, l’integrazione cesserà di raccogliere e trasmettere dati ad Adobe Analytics.
 
-Tu **deve implementare** la nuova integrazione del connettore Adobe Analytics su Adobe Exchange che sostituisce l’integrazione legacy di Data Connectors. Per ulteriori informazioni sul connettore Adobe Analytics, consulta [questa pagina](../../platform/using/gs-aa.md).
+Tu **deve implementare** la nuova integrazione del connettore Adobe Analytics su Adobe Exchange che sostituisce l’integrazione legacy di Data Connectors. Per ulteriori informazioni sul connettore Adobe Analytics, consulta [questa pagina](../../integrations/using/gs-aa.md).
 
 Per qualsiasi domanda su queste modifiche, leggi [Domande frequenti](#faq-aa). Per ulteriori informazioni, contattare [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
@@ -46,7 +46,7 @@ Per qualsiasi domanda su queste modifiche, leggi [Domande frequenti](#faq-aa). P
 
 Se utilizzi un Connettore dati di Adobe Analytics esistente (precedentemente noto come integrazione di Genesis) e l’integrazione è stata implementata su una build inferiore rispetto a Campaign 21.1.3, sei interessato.
 
-Scopri come controllare la versione [in questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+Scopri come controllare la versione [in questa sezione](../../integrations/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 ## Come si esegue l’aggiornamento?
 
@@ -55,7 +55,7 @@ Devi effettuare l’aggiornamento a Campaign 21.1.3 (o versione successiva) **pr
 In qualità di cliente in hosting, Adobe collaborerà con te per aggiornare le istanze alla versione più recente. Potrai quindi utilizzare [Connettore Adobe Analytics](../../platform/using/gs-aa.md).
 
 In qualità di cliente on-premise/ibrido, devi effettuare l’aggiornamento a una delle versioni più recenti per beneficiare della nuova integrazione.
-Una volta aggiornate tutte le istanze, potrai [implementare la nuova integrazione](../../platform/using/adobe-analytics-provisioning.md) al connettore Adobe Analytics e garantire una transizione senza soluzione di continuità.
+Una volta aggiornate tutte le istanze, potrai [implementare la nuova integrazione](../../integrations/using/adobe-analytics-provisioning.md) al connettore Adobe Analytics e garantire una transizione senza soluzione di continuità.
 
 ## Domande frequenti{#faq-aa}
 

@@ -6,10 +6,10 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Personalization
 role: User
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 0cf7f249f366a6ef0e9bd0326ec14131fcf7dc18
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 9%
+source-wordcount: '1024'
+ht-degree: 8%
 
 ---
 
@@ -115,6 +115,26 @@ Durante l’anteprima o l’invio, se la fase di personalizzazione supera il tem
 Il valore predefinito è 5 secondi.
 
 Se imposti questa opzione su 0, non ci sarà alcun limite di tempo per la fase di personalizzazione.
+
+## Scheda Personalizzazione {#personalization-tab}
+
+Nelle Proprietà della consegna, hai una scheda Personalizzazione.
+
+È possibile aggiungere dati alla query di profilo della dimensione di targeting facendo clic sul pulsante **&quot;Modifica la query di caricamento del profilo del destinatario&quot;**. Puoi utilizzare i dati estratti direttamente all’interno di un’espressione per estrarre ciò di cui hai realmente bisogno. Tali dati verranno aggiunti al contesto.
+
+![](assets/persotab-edit.png){zoomable="yes"}
+
+Se i dati che desideri aggiungere non si trovano nella dimensione di targeting, puoi fare clic su **&quot;Aggiungere oggetti nel contesto di esecuzione degli script&quot;**.
+
+![](assets/persotab_addobjects.png){zoomable="yes"}
+
+Puoi selezionare lì lo schema di oggetti necessario, quindi utilizzare tali dati all’interno del codice JavaScript, che verrà eseguito durante la preparazione della consegna.
+
+![](assets/persotab_addobjects_articles.png){zoomable="yes"}
+
+Aggiungendo lo schema di oggetti, è possibile selezionare i campi che si desidera aggiungere al contesto:
+
+![](assets/persotab_addobjects_fields.png){zoomable="yes"}
 
 ## Video tutorial {#personalization-fields-video}
 

@@ -6,14 +6,46 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
-source-git-commit: ac086604b17df96355563308c3dec3096b407542
-workflow-type: ht
-source-wordcount: '1973'
-ht-degree: 100%
+source-git-commit: f39dc6077a7ddc3fb9b53d4082c08e65e7683f10
+workflow-type: tm+mt
+source-wordcount: '2337'
+ht-degree: 97%
 
 ---
 
 # Versioni 2023{#release-2023}
+
+## Versione 7.3.5 - Build 9368 {#release-7-3-5}
+
+[!BADGE Disponibilità limitata]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Disponibilità limitata"}
+
+_5 dicembre 2023_
+
+### Miglioramenti di sicurezza {#release-7-3-5-security}
+
+
+* Con Campaign Classic v7.3.5, il processo di autenticazione è stato migliorato e protetto. Gli operatori tecnici ora devono utilizzare Adobe Identity Management System (IMS) per connettersi a Campaign. Scopri come eseguire la migrazione degli account tecnici esistenti in [questa nota tecnica](../../technotes/using/ims-migration.md).
+
+* Inoltre, come parte del tentativo di rafforzare la sicurezza e il processo di autenticazione, Adobe Campaign consiglia vivamente di migrare la modalità di autenticazione dell’utente finale dall’autenticazione nativa di login/password ad Adobe Identity Management System (IMS). Scopri come effettuare la migrazione degli operatori in [questa nota tecnica](../../technotes/using/migrate-users-to-ims.md).
+
+* Ora, quando un modulo web è in stato di **Pubblicazione in sospeso**, non diventa automaticamente disponibile. Per evitare problemi di sicurezza, è necessario pubblicarlo prima che sia **Online** e accessibile tramite l’URL del modulo web in un browser web. [Ulteriori informazioni](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
+
+### Altri miglioramenti {#release-7-3-5-other}
+
+A partire da questa versione, i collegamenti di tracciamento sulle e-mail già inviate continueranno a funzionare durante l’aggiornamento. [Ulteriori informazioni](../../platform/using/faq-build-upgrade.md)
+
+### Patch {#release-7-3-5-patches}
+
+* È stato risolto un problema che si verificava durante l’utilizzo di dati da un database Google Big Query e l’aggiornamento di dati in un database di Oracle: tutte le chiavi erano impostate su `0` nella tabella temporanea del flusso di lavoro. (NEO-65091)
+* È stato risolto un problema che causava un errore nell’esecuzione di un flusso di lavoro quando due query su un database Google Big Query venivano combinate in un’attività del flusso di lavoro **Unione**. (NEO-63705)
+* È stato risolto un problema che richiedeva all’utente di autenticarsi nuovamente facendo clic sul pulsante `Back` in un rapporto sulla campagna. (NEO-65087)
+* È stato corretto un errore nel flusso di lavoro di pulizia del database che si verificava quando una consegna veniva eliminata prima delle relative bozze di consegna. (NEO-48114)
+* È stato risolto un problema che si verificava durante la connessione alla console client: gli aggiornamenti recenti sulla verifica TLS causavano un errore di connessione. (NEO-50488)
+* È stato risolto un problema relativo all’autenticazione proxy HTTP dopo l’aggiornamento di Campaign alla versione 7.3.1. Le richieste HTTP nei flussi di lavoro di Campaign generavano errori con `error 407 – proxy auth required is returned`. (NEO-49624)
+* È stato risolto un errore intermittente con la decrittografia GPG nelle attività del flusso di lavoro **Script**. Il messaggio di errore associato era: `gpg: decryption failed: No secret key`. (NEO-50257)
+  <!--* Workflow temporary tables now have a primary index in Teradata with a Federated Data Access (FDA) connection. (NEO-62575)-->
+
+
 
 
 ## Versione 7.3.4 - Build 9364 {#release-7-3-4}
@@ -103,12 +135,12 @@ _20 marzo 2023_
 * Per migliorare la sicurezza, Tomcat è stato aggiornato dalla versione 8.5.81 alla versione 8.5.85. (NEO-56936)
 
 
-
 ### Miglioramenti {#release-7-3-3-improvements}
 
 * Il flusso di lavoro Fatturazione è stato migliorato per ottimizzarne le prestazioni. (NEO-47658)
 * Il flusso di lavoro di tracciamento è stato migliorato per ottimizzarne le prestazioni in caso di consegne di dimensioni elevate. (NEO-45064)
 * La gestione del tracciamento è stata migliorata per risolvere possibili problemi relativi ai parametri dinamici negli URL. La gestione del tracciamento v3 ora gestisce gli URL di tipo AJAX (con parametri dopo il simbolo “#”) e impedisce agli strumenti di terze parti di modificare gli URL di tracciamento. Per applicare questa modifica, contatta Adobe. (NEO-46535)
+* A partire da questa versione, i collegamenti di tracciamento sulle e-mail già inviate continueranno a funzionare durante l’aggiornamento. [Ulteriori informazioni](../../platform/using/faq-build-upgrade.md)
 
 <!--To apply this change, the marketing, tracking and mid servers need to be updated to 7.3.3. To enable the new tracking management mode, set the `emailLinksVersion` parameter to '3' in the configuration file of the marketing server. (NEO-46535)-->
 
@@ -150,6 +182,8 @@ Ulteriori informazioni nella [matrice di compatibilità di Campaign](../../rn/us
 * Il connettore Google BigQuery ora supporta completamente i campi booleani. (NEO-49181)
 * Ora è possibile configurare la durata di validità dei cookie IMS nella sezione `Configuration for the redirection service` del file serverConf.xml. Questo vale per i seguenti cookie: `uuid230`, `nllastdelid` e `AMCV_` (NEO-42541)
 * Nella richiesta “r/test” ora l’IP può essere nascosto impostando `showSourceIP` su false nel nodo di reindirizzamento del file serverConf.xml. [Maggiori informazioni](../../installation/using/the-server-configuration-file.md#redirection-redirection)(NEO-46656)
+* A partire da questa versione, i collegamenti di tracciamento sulle e-mail già inviate continueranno a funzionare durante l’aggiornamento. [Ulteriori informazioni](../../platform/using/faq-build-upgrade.md)
+
 
 ### Funzioni obsolete  {#release-7-3-2-deprecated}
 

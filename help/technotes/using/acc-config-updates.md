@@ -6,7 +6,7 @@ feature: Technote, Upgrade
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 8%
@@ -123,11 +123,11 @@ Scopri come controllare la versione [in questa sezione](../../platform/using/lau
 
 **Come si esegue l’aggiornamento?**
 
-Una volta aggiornate le istanze a una versione più recente, tutti i clienti devono seguire la [routine passa alla nuova modalità di autenticazione](../../integrations/using/configuring-adobe-io.md). Questo richiede di generare il nuovo token di Adobe I/O e utilizzarlo nell’implementazione.  
+Una volta aggiornate le istanze a una versione più recente, tutti i clienti devono seguire la [routine passa alla nuova modalità di autenticazione](../../integrations/using/about-triggers.md#implement). Questo richiede di generare il nuovo token di Adobe I/O e utilizzarlo nell’implementazione.  
 
 Inoltre, per gli ambienti ibridi, i clienti devono assicurarsi che la pipeline sia configurata sull’istanza di mid-sourcing. [Ulteriori informazioni](../../integrations/using/configuring-pipeline.md).
 
-[Scopri come migrare ad Adobe I/O](../../integrations/using/configuring-adobe-io.md).
+[Scopri come migrare ad Adobe I/O](../../integrations/using/about-triggers.md#implement).
 
 ## Aggiornamenti APNs {#acc-apns-updates}
 

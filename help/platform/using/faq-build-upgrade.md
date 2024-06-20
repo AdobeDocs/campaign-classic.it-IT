@@ -7,15 +7,14 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 991ad88101468c3e7f5d676586dfdd05d63e7c6d
+source-git-commit: f39dc6077a7ddc3fb9b53d4082c08e65e7683f10
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2026'
 ht-degree: 1%
 
 ---
 
 # Domande frequenti sull’aggiornamento della build {#build-upgrade-faq}
-
 
 
 Adobe Campaign viene aggiornato regolarmente. Se hai familiarità con la nostra pubblicazione [Note sulla versione](../../rn/using/rn-overview.md)Tuttavia, probabilmente sai che in media ogni anno vengono rilasciate 2/3 versioni secondarie complete di nuove funzioni, miglioramenti e correzioni. Inoltre, rilasciamo periodicamente build contenenti solo correzioni cumulative. Questa frequenza regolare di aggiornamenti mira a ottenere il massimo e più recente nelle tue mani, mantenendo l’ambiente completamente sicuro e ovviamente migliorando la tua esperienza con il nostro prodotto.
@@ -136,7 +135,7 @@ No. Durante l’aggiornamento della build, il flusso di lavoro e i servizi di po
 
 ## I miei collegamenti di tracciamento continueranno a funzionare durante l’aggiornamento?
 
-Durante l’aggiornamento non funzioneranno i collegamenti di tracciamento sulle e-mail già inviate, perché tutti i server vengono arrestati. Saranno nuovamente operativi al termine dell&#39;aggiornamento e al riavvio dei server.
+A partire da Campaign Classic v7.3.5, i collegamenti di tracciamento sulle e-mail già inviate continuano a funzionare durante l’aggiornamento.
 
 ## Devo essere disponibile durante il processo di aggiornamento della build?
 

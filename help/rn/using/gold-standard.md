@@ -6,11 +6,12 @@ feature: Release Notes
 role: User
 level: Beginner
 hidefromtoc: true
+hide: true
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 1e738bb4a81e0d497dfe4cdacac33728f106c014
-workflow-type: ht
+source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
+workflow-type: tm+mt
 source-wordcount: '1774'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -57,7 +58,7 @@ La build 9032@d030c36 include la seguente correzione:
 >
 > * Se ti connetti a Campaign con il tuo Adobe ID, tramite Adobe Identity Management Service (IMS), è necessario eseguire l’aggiornamento affinché il server Campaign e la console client possano connettersi a Campaign dopo il **30 giugno 2021**. [Ulteriori informazioni](../../technotes/using/ims-updates.md)
 > * Questa versione include una [correzione di sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb21-04.html): l’aggiornamento è obbligatorio per rafforzare la sicurezza dell’ambiente.
-> * Se utilizzi l’integrazione Experience Cloud Triggers tramite autenticazione oAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/configuring-adobe-io.md). La modalità di autenticazione OAuth legacy con Campaign [è stata ritirata](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) a **settembre 2021**. Gli ambienti in hosting usufruiscono di una proroga fino al **23 febbraio 2022**. Se sei un cliente on-premise o ibrido, contatta l’Assistenza clienti Adobe per estendere il supporto fino a febbraio 2022. Devi fornire ad Adobe [l’AppID dell’applicazione OAuth](../../integrations/using/configuring-pipeline.md#step-optional).
+> * Se utilizzi l’integrazione Experience Cloud Triggers tramite l’autenticazione OAuth, devi passare ad Adobe I/O come descritto [in questa pagina](../../integrations/using/about-triggers.md#implement). La modalità di autenticazione OAuth legacy con Campaign [è stata ritirata](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) a **settembre 2021**. Gli ambienti in hosting usufruiscono di una proroga fino al **23 febbraio 2022**. Se sei un cliente on-premise o ibrido, contatta l’Assistenza clienti Adobe per estendere il supporto fino a febbraio 2022. Devi fornire ad Adobe [l’AppID dell’applicazione OAuth](../../integrations/using/configuring-pipeline.md#step-optional).
 >
 >Per ulteriori informazioni, consulta questa [[!DNL Gold Standard] sezione](../../rn/using/gold-standard.md).
 
@@ -79,7 +80,7 @@ La build 9032@d3b452f include i miglioramenti e le correzioni seguenti:
 
 * Il protocollo di connessione è stato aggiornato per adeguarlo al nuovo meccanismo di autenticazione IMS.
 
-* L’autenticazione dell’integrazione dei trigger per accedere alla pipeline, originariamente basata sulla configurazione di autenticazione OAUTH, è ora stata modificata e spostata in Adobe I/O. [Ulteriori informazioni](../../integrations/using/configuring-adobe-io.md)
+* L’autenticazione dell’integrazione dei trigger per accedere alla pipeline, originariamente basata sulla configurazione di autenticazione OAUTH, è ora stata modificata e spostata in Adobe I/O. [Ulteriori informazioni](../../integrations/using/about-triggers.md#implement)
 
 * Con la [fine del supporto del protocollo binario legacy del servizio APNs per iOS](https://developer.apple.com/news/?id=c88acm2b), tutte le istanze che lo utilizzano vengono aggiornate al protocollo HTTP/2 nella fase di post-aggiornamento.
 

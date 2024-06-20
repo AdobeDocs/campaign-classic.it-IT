@@ -9,9 +9,9 @@ topic-tags: configuration
 hide: true
 hidefromtoc: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: afbec7b3df810c8c1818a4fb93c5f7e30f7a753b
 workflow-type: tm+mt
-source-wordcount: '2600'
+source-wordcount: '2558'
 ht-degree: 0%
 
 ---
@@ -475,19 +475,21 @@ Se si sceglie di risolvere manualmente il conflitto, procedere come segue:
 1. Passare al conflitto che si sarebbe risolto. Fai clic su **[!UICONTROL Actions]** e seleziona **[!UICONTROL Declare as resolved]**.
 1. Salva le modifiche: il conflitto è stato risolto.
 
+<!--
 ## Tomcat {#tomcat}
 
-La versione del server Tomcat integrato in Adobe Campaign v7 è stata modificata. Anche la cartella di installazione (tomcat-6) è stata modificata (tomcat 7). Dopo il post-aggiornamento, assicurati di verificare che i percorsi siano collegati alla cartella aggiornata (nella **[!UICONTROL serverConf.xml]** file):
+The integrated Tomcat server in Adobe Campaign v7 has changed version. Its installation folder (tomcat-6) has therefore also changed (tomcat 7). After the postupgrade, make sure to check that the paths do link to the updated folder (in the **[!UICONTROL serverConf.xml]** file):
 
 ```
-$(XTK_INSTALL_DIR)/tomcat-8/bin/bootstrap.jar 
-$(XTK_INSTALL_DIR)/tomcat-8/bin/tomcat-juli.jar
-$(XTK_INSTALL_DIR)/tomcat-8/lib/tomcat-util.jar
-$(XTK_INSTALL_DIR)/tomcat-8/lib/tomcat-api.jar
-$(XTK_INSTALL_DIR)/tomcat-8/lib/servlet-api.jar
-$(XTK_INSTALL_DIR)/tomcat-8/lib/jsp-api.jar
-$(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
+$(XTK_INSTALL_DIR)/tomcat-X/bin/bootstrap.jar 
+$(XTK_INSTALL_DIR)/tomcat-X/bin/tomcat-juli.jar
+$(XTK_INSTALL_DIR)/tomcat-X/lib/tomcat-util.jar
+$(XTK_INSTALL_DIR)/tomcat-X/lib/tomcat-api.jar
+$(XTK_INSTALL_DIR)/tomcat-X/lib/servlet-api.jar
+$(XTK_INSTALL_DIR)/tomcat-X/lib/jsp-api.jar
+$(XTK_INSTALL_DIR)/tomcat-X/lib/el-api.jar
 ```
+-->
 
 ## Interazione {#interaction}
 

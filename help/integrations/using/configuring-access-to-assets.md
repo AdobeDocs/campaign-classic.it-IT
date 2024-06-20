@@ -8,18 +8,16 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
 
-# Configurazione dell’accesso alle risorse{#configuring-access-to-assets}
+# Configurazione dell’accesso alle risorse {#configuring-access-to-assets}
 
-
-
-Questa sezione descrive i passaggi di configurazione necessari in Adobe Campaign per utilizzare le funzionalità di integrazione con il servizio core Assets o la libreria Adobe Experience Manager Assets (AEM Assets).
+Questa sezione descrive i passaggi di configurazione necessari in Adobe Campaign per utilizzare le funzionalità di integrazione con Assets o la libreria Adobe Experience Manager Assets (AEM Assets).
 
 >[!CAUTION]
 >

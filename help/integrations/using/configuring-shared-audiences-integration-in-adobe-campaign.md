@@ -2,21 +2,20 @@
 product: campaign
 title: Configurazione dell’integrazione dei tipi di pubblico condivisi in Adobe Campaign
 description: Scopri come configurare l’integrazione dei pubblici condivisi
-feature: Audiences, People Core Service Integration
+feature: Audiences
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
 
 # Configurazione dell’integrazione dei tipi di pubblico condivisi in Adobe Campaign{#configuring-shared-audiences-integration-in-adobe-campaign}
-
 
 
 Dopo aver inviato questa richiesta, Adobe procederà al provisioning dell’integrazione per te e ti contatterà per fornire dettagli e informazioni necessari per finalizzare la configurazione:
@@ -88,7 +87,7 @@ Per configurare **[!UICONTROL Recipient - Visitor ID]** origine dati:
 
 ## Passaggio 3: configurare il server di tracciamento campagna {#step-3--configure-campaign-tracking-server}
 
-Per la configurazione dell’integrazione con il servizio core People o Audience Manager, è necessario configurare anche il server di tracciamento di Campaign.
+Per la configurazione dell’integrazione con Audience Manager, è necessario configurare anche il server di tracciamento di Campaign.
 
 Per consentire ai tipi di pubblico condivisi di funzionare con l’ID visitatore, il dominio del server di tracciamento deve essere un sottodominio dell’URL su cui è stato fatto clic o del sito web principale.
 

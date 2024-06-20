@@ -5,10 +5,10 @@ description: Scopri come configurare l’app mobile per Android
 feature: Push
 role: User, Developer
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 81b47231b027a189bc8b9029b7d48939734d08ed
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 11%
+source-wordcount: '837'
+ht-degree: 10%
 
 ---
 
@@ -90,7 +90,7 @@ Dopo aver creato il servizio, ora devi creare l’applicazione Android:
 
    ![](assets/nmac_android.png)
 
-1. Assicurati che lo stesso **[!UICONTROL Integration key]** è definito in Adobe Campaign e nel codice dell’applicazione tramite l’SDK. Per ulteriori informazioni al riguardo, consulta [questa sezione](integrating-campaign-sdk-into-the-mobile-application.md).
+1. Assicurati che lo stesso **[!UICONTROL Integration key]** è definito in Adobe Campaign e nel codice dell’applicazione tramite l’SDK. <!--For more on this, refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->
 
    >[!NOTE]
    >
@@ -156,4 +156,4 @@ Di seguito sono riportati i nomi del payload FCM per personalizzare ulteriorment
 
    >[!CAUTION]
    >
-   >Assicurati che i nomi delle configurazioni in **[!UICONTROL Subscription parameters]** sono le stesse del codice dell’app mobile. Fai riferimento a [questa sezione](integrating-campaign-sdk-into-the-mobile-application.md).
+   >Assicurati che i nomi delle configurazioni in **[!UICONTROL Subscription parameters]** sono le stesse del codice dell’app mobile. <!--Refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->

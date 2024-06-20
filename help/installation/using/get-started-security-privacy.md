@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 19b40f0b827c4b5b7b6484fe4953aebe61d00d1d
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '445'
 ht-degree: 7%
 
 ---
@@ -51,7 +51,7 @@ La gestione degli accessi è una parte importante della protezione avanzata. Di 
 
 Durante lo sviluppo in Adobe Campaign (flussi di lavoro, JavaScript, JSSP, ecc.), segui sempre le seguenti linee guida:
 
-* **Scripting**: prova ad evitare le istruzioni SQL, utilizza funzioni con parametri invece della concatenazione di stringhe, evita SQL injection aggiungendo le funzioni SQL da utilizzare al inserisco nell&#39;elenco Consentiti di.
+* **Scripting**: prova a evitare le istruzioni SQL, utilizza funzioni con parametri invece della concatenazione di stringhe, evita l’iniezione di SQL aggiungendo le funzioni SQL da utilizzare per il inserisco nell&#39;elenco Consentiti di.
 
 * **Proteggere il modello dati**: utilizzare diritti denominati per limitare le azioni dell’operatore, aggiungere filtri di sistema (sysFilter)
 
@@ -69,9 +69,6 @@ Una cosa molto importante da controllare quando si distribuisce un tipo di archi
 
 [Maggiori informazioni](../../installation/using/network-database.md)
 
->[!CAUTION]
->
->A partire dal 14 luglio 2021, i sistemi client che non supportano il protocollo TLS 1.2 perderanno l’accesso a tutti i prodotti e servizi Adobe. Assicurati che tutti i sistemi utente e client siano conformi a TLS 1.2 prima di questa data. [Ulteriori informazioni](https://helpx.adobe.com/x-productkb/multi/eol-tls-support.html)
 
 ## Configurazione del server
 

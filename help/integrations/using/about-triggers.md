@@ -7,9 +7,9 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: 271e0f9fde0cbfb016e201c8390b26673d8fc696
+source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '398'
 ht-degree: 7%
 
 ---
@@ -37,4 +37,26 @@ Il [!DNL pipelined] Il processo è sempre in esecuzione sul server di marketing 
 
 Il [!DNL pipelined] process accede all’Experience Cloud utilizzando un servizio di autenticazione e invia una chiave privata. Il servizio di autenticazione restituisce un token. Il token viene utilizzato per l’autenticazione durante il recupero degli eventi.
 
-Per ulteriori informazioni sull’autenticazione, consulta [pagina](../../integrations/using/configuring-adobe-io.md).
+## Prerequisiti {#adobe-io-prerequisites}
+
+Prima di iniziare questa implementazione, verifica di disporre di:
+
+* un valore valido **Identificatore organizzazione**: l’ID organizzazione è l’identificatore univoco all’interno di Adobe Experience Cloud, utilizzato ad esempio per il servizio VisitorID e l’accesso Single Sign-On (SSO) di IMS. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=it)
+* a **Accesso per sviluppatori** alla tua organizzazione. L’amministratore di sistema dell’organizzazione deve seguire la procedura **Aggiungere sviluppatori a un singolo profilo di prodotto** procedura dettagliata [in questa pagina](https://helpx.adobe.com/enterprise/using/manage-developers.html) per fornire agli sviluppatori l&#39;accesso per `Analytics - {tenantID}` Profilo prodotto del prodotto Adobe Analytics associato a Triggers.
+
+## Passaggi di implementazione {#implement}
+
+Per implementare Campaign e Triggers Experience Cloud, segui i passaggi seguenti:
+
+1. Crea un progetto OAuth. [Ulteriori informazioni](oauth-technical-account.md#oauth-service)
+
+1. Aggiungi le credenziali del progetto OAuth in Adobe Campaign. [Ulteriori informazioni](oauth-technical-account.md#add-credentials)
+
+1. Aggiorna il tipo di autenticazione al progetto Developer Console nel file di configurazione **config-&lt; nome-istanza >.xml** come segue:
+
+   ```
+   <pipelined ... authType="imsJwtToken"  ... />
+   ```
+
+   Quindi, esegui una `config -reload` e il riavvio del [!DNL pipelined] affinché le modifiche siano prese in considerazione.
+

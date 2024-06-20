@@ -1,23 +1,21 @@
 ---
 product: campaign
 title: Prerequisiti per l’installazione di Campaign in Linux
-description: Prerequisiti per l’installazione di Campaign in Linux
+description: Prerequisiti per l'installazione di Campaign in Linux
 feature: Installation, Instance Settings
-badge-v7-prem: label="Solo on-premise/ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
+badge-v7-prem: label="Solo on-premise/ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo a distribuzioni on-premise e ibride"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '829'
 ht-degree: 0%
 
 ---
 
 # Prerequisiti per installare Campaign su Linux{#prerequisites-of-campaign-installation-in-linux}
-
-
 
 ## Prerequisiti software {#software-prerequisites}
 
@@ -27,18 +25,15 @@ La configurazione tecnica e software necessaria per l’installazione di Adobe C
 
 Come promemoria, è necessario installare e configurare correttamente i seguenti componenti:
 
-* Apache, fare riferimento a [Compatibilità matrice](../../rn/using/compatibility-matrix.md),
-* Java JDK e OpenJDK, fare riferimento a [Java Development Kit - JDK](../../installation/using/application-server.md#java-development-kit---jdk),
-* Librerie, fare riferimento a [Librerie](#libraries),
+* Apache, fare riferimento a [Matrice di compatibilità](../../rn/using/compatibility-matrix.md),
+* Java JDK e OpenJDK, consultare [Java Development Kit - JDK](../../installation/using/application-server.md#jdk),
+* Librerie, consultare [Librerie](#libraries),
 * Livelli di accesso al database, fare riferimento a [Livelli di accesso al database](#database-access-layers),
 * LibreOffice, fare riferimento a [Installazione di LibreOffice per Debian](#installing-libreoffice-for-debian) e [Installazione di LibreOffice per CentOS](#installing-libreoffice-for-centos),
 * Font, fare riferimento a [Font per le statistiche MTA](#fonts-for-mta-statistics) e [Font per istanze giapponesi](#fonts-for-japanese-instances).
 
->[!NOTE]
->
->Per installare una build inferiore o uguale a 8709 sulle piattaforme CentOS 7 e Debian 8, è necessario abilitare il modulo apache access_compat.
 
-### Librerie {#libraries}
+### Biblioteche {#libraries}
 
 Per installare Adobe Campaign in Linux, assicurati di avere il librerie richiesto.
 
@@ -46,33 +41,15 @@ Per installare Adobe Campaign in Linux, assicurati di avere il librerie richiest
 
   Per verificarlo, puoi usare il **comando uname -a | grep xen** per esempio.
 
-  Se il comando non restituisce alcun elemento (riga vuota), significa che la configurazione è corretta.
+  Se il comando non restituisce una riga vuota, significa che la configurazione è corretta.
 
 * È necessaria la versione OpenSSL **1.0.2.** o superiore.
 
-  Per le distribuzioni RHEL 7/8, è richiesta la versione 1.0 di OpenSSL.
+  Per le distribuzioni RHEL, è richiesta la versione 1.0 di OpenSSL.
 
 * Per utilizzare Adobe Campaign, è necessario disporre del **libicu** libreria installata.
 
-  Le seguenti versioni di **libicu** sono supportati (32 bit o 64 bit):
-
-   * 7/8, CentOS 7: libicu50
-   * Debian 8: libicu52
-   * Debian 9: libicu57
-
-  Per utilizzare Adobe Campaign, è necessario che sia installata la libreria libc-ares. In RHEL/CentOS, esegui il seguente comando:
-
-  ```
-  yum install c-ares
-  ```
-
-  Su Debian:
-
-  ```
-  aptitude install libc-ares2
-  ```
-
-### Selinux {#selinux}
+### SELinux {#selinux}
 
 Quando viene utilizzato, il modulo SELinux deve essere configurato correttamente.
 
@@ -94,7 +71,7 @@ In RHEL e CentOS, quando SELinux è abilitato sono stati notati problemi di comp
 
 * Modifica il file **/etc/selinux/config**
 
-* Modificare la linea SELINUX come segue:
+* Modificare la riga SELINUX come segue:
 
 ```
 SELINUX=disabled
@@ -102,51 +79,36 @@ SELINUX=disabled
 
 ### Font per le statistiche MTA {#fonts-for-mta-statistics}
 
-Affinché i rapporti sulle statistiche MTA (nms/fra/jsp/stat.jsp) vengano visualizzati correttamente, aggiungere i caratteri.
-
-In Debian, aggiungere il comando:
-
-```
-aptitude install xfonts-base xfonts-75dpi ttf-bitstream-vera ttf-dejavu
-```
-
-In Redhat, utilizzate il seguente comando:
-
-* Per CentOS/RHEL 7:
-
-  ```
-  yum install xorg-x11-fonts-base xorg-x11-fonts-75dpi bitstream-vera-fonts dejavu-lgc-fonts
-  ```
-
-* per RHEL 8:
-
-  ```
-  dnf install xorg-x11-fonts-misc xorg-x11-fonts-75dpi dejavu-lgc-sans-fonts  dejavu-sans-fonts dejavu-sans-mono-fonts dejavu-serif-fonts
-  ```
-
-### Font per istanze giapponesi {#fonts-for-japanese-instances}
-
-I font con caratteri specifici sono necessari per le istanze giapponesi al fine di esportare i rapporti in formato PDF.
+Per visualizzare correttamente i rapporti sulle statistiche MTA (nms/fra/jsp/stat.jsp), aggiungi i font.
 
 In Debian, aggiungi il comando:
 
 ```
-aptitude install fonts-ipafont
+apt install xfonts-base xfonts-75dpi ttf-bitstream-vera ttf-dejavu
 ```
 
-In Red Hat, aggiungi il comando:
+Utilizza il seguente comando per RHEL:
 
-* Per RHEL 7:
+```
+dnf install xorg-x11-fonts-misc xorg-x11-fonts-75dpi dejavu-lgc-sans-fonts  dejavu-sans-fonts dejavu-sans-mono-fonts dejavu-serif-fonts
+```
 
-  ```
-  yum install ipa-gothic-fonts ipa-mincho-fonts
-  ```
+### Font per istanze giapponesi {#fonts-for-japanese-instances}
 
-* per RHEL 8:
+Font di caratteri specifici sono necessari per le istanze Giapponese per esportare i report in formato PDF.
 
-  ```
-  dnf install vlgothic-fonts
-  ```
+In Debian, aggiungere il comando:
+
+```
+apt install fonts-ipafont
+```
+
+Per RHEL, aggiungere il seguente comando:
+
+```
+dnf install epel-release # if required
+dnf install vlgothic-fonts
+```
 
 ### Installazione di LibreOffice per Debian {#installing-libreoffice-for-debian}
 
@@ -158,7 +120,7 @@ Per Debian, sono necessarie le seguenti configurazioni:
    apt-get install libreoffice-writer libreoffice-calc libreoffice-java-common
    ```
 
-1. Installa i seguenti font (facoltativo ma consigliato per le istanze giapponesi):
+1. Installa i seguenti font (facoltativo ma altamente consigliato per Giapponese istanze):
 
    ```
    apt-get install fonts-ipafont
@@ -174,7 +136,7 @@ yum install libreoffice-headless libreoffice-writer libreoffice-calc
 
 ## Livelli di accesso del database {#database-access-layers}
 
-I livelli di accesso per il motore di database in uso devono essere installati nel server ed essere accessibili tramite l&#39;account Adobe Campaign. Le versioni e le modalità di installazione possono variare a seconda del motore di database utilizzato.
+I layer accesso per il motore di database in uso devono essere installati nel server ed essere accessibili tramite il Adobe Campaign account. Le versioni e le modalità di installazione possono variare a seconda del motore di database utilizzato.
 
 La versione pilota supportata è descritta nel [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
@@ -182,41 +144,37 @@ Controlla anche il [Database](../../installation/using/database.md) sezione.
 
 ### PostgreSQL {#postgresql}
 
-Adobe Campaign supporta tutte le versioni delle librerie client PostgreSQL dalla versione 7.2: (**libpq.so.5**, **libpq.so.4**, **libpq.so.3.2** e **libpq.so.3.1**).
+Adobe Campaign supporta tutte le versioni delle librerie client PostgreSQL dalla versione 9.6: **libpq.so.5**.
 
 L’utilizzo di PostgreSQL con Adobe Campaign richiede anche l’installazione della **pgcrypto** librerie.
 
 ###  Oracle {#oracle}
 
-Recupera la versione della libreria per Debian a 64 bit, ovvero: **libclntsh.so**, **libclntsh.so.11.1** e **libclntsh.so.10.1**.
+Recupera la versione libreria per Debian a 64 bit, cioè: libclntsh.so, libclntsh.so.19.1 **,** libclntsh.so.18.1 **,** libclntsh.so.12.1 **,** libclntsh.so.11.1 **o** libclntsh.so.10.1 **.******
 
-È possibile ottenere un pacchetto Linux RPM da Oracle Technology Network.
+È possibile ottenere un pacchetto RPM Linux da Oracle Technology Network.
 
 >[!NOTE]
 >
->Se il client Oracle è già stato installato ma l’ambiente globale (ad esempio: /etc/profile) non è configurato correttamente, puoi aggiungere le informazioni mancanti al **nl6/customer.sh** script Per ulteriori informazioni, consulta [Variabili di ambiente](../../installation/using/installing-packages-with-linux.md#environment-variables).
+>Se hai già installato il client Oracle ma l&#39;ambiente globale (per istanza: /etc/profile) non è configurato correttamente, puoi aggiungere le **informazioni mancanti allo script nl6/customer.sh** Per ulteriori informazioni, fai riferimento a [Variabili](../../installation/using/installing-packages-with-linux.md#environment-variables) d&#39;ambiente.
 
-**Risoluzione dei problemi e best practice**
+**Risoluzione dei problemi e procedure consigliate**
 
-I problemi possono comparire dopo un aggiornamento del client Oracle o di un server, un cambio di versione o alla prima installazione del istanza.
+I problemi possono comparire dopo un aggiornamento di un client o di un server Oracle, dopo una modifica della versione o alla prima installazione dell’istanza.
 
-Se si nota sulla console client che sono presenti ritardi imprevisti (una o più ore) nei log, workflow ultima elaborazione, elaborazione successiva e così via, potrebbe esserci un problema tra il libreria del client Oracle e Oracle Server. Per evitare tali problemi
+Se noti nella console client che nei registri sono presenti ritardi imprevisti (una o più ore), nell’ultima elaborazione del flusso di lavoro, nell’elaborazione successiva e così via, potrebbe esserci un problema tra la libreria del client Oracle e il server Oracle. Per evitare tali problemi
 
 1. Assicurati di utilizzare il **client completo**.
 
-   Sono stati identificati diversi problemi durante l’utilizzo della versione Oracle Instant Client. Inoltre, è impossibile modificare il file del fuso orario sul client istantaneo.
+   Sono stati identificati vari problemi durante l&#39;utilizzo della versione Oracle Instant Client. Inoltre, è impossibile modificare il file Timezone su Instant Client.
 
-1. Assicurati che il **versione client** e **versione del server di database** sono **uguale**.
+1. Assicurarsi che la **versione client e la versione** del **server database corrispondano a quella del server database****.**
 
-   È noto che la combinazione di versioni nonostante la matrice di compatibilità di Oracle e la consiglio per allineare le versioni client e server causa problemi.
+   È noto che la combinazione delle versioni nonostante la matrice di compatibilità di Oracle e i consigli per l’allineamento delle versioni client e server causano problemi.
 
-   Controllare inoltre ORACLE_HOME valore per assicurarsi che punti alla versione client prevista (nel caso in cui nel computer siano installate più versioni).
+   Controlla anche il valore ORACLE_HOME per assicurarti che punti alla versione client prevista (nel caso in cui sul computer siano installate più versioni).
 
-1. Assicurarsi che il client e il server utilizzino lo stesso **file** di fuso orario.
-
-### DB2 {#db2}
-
-La versione libreria supportata è **libdb2.so**.
+1. Assicurarsi che il client e il server utilizzino lo stesso **file del fuso orario**.
 
 ## Passaggi di implementazione {#implementation-steps}
 

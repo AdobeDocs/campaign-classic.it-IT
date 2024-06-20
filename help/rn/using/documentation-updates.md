@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 98815fe0417f9126826e0273caa80888164793ec
+source-git-commit: 98859f6452b5f1008a19a48b9b77edd9acf49261
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3746'
+ht-degree: 99%
 
 ---
 
@@ -82,7 +82,7 @@ La guida alla migrazione è stata aggiornata. I riferimenti alle versioni non su
 
 ## Luglio 2022 {#july-2022}
 
-La transizione al nuovo server di recapito messaggi è descritta in una nuova nota tecnica. [Ulteriori informazioni](../../technotes/using/deliverability-server.md)
+<!--Transition to the new deliverability server is detailed in a new technote. [Read more](../../technotes/using/deliverability-server.md)-->
 
 **Aggiornamenti alla documentazione in arrivo con la versione 7.3.1**
 
@@ -155,11 +155,9 @@ CentOs 8 ha raggiunto la fine del ciclo di vita ed è ora obsoleto con Adobe Cam
 
 Aggiornamento dei dettagli dei registri del processo di migrazione per la distribuzione del connettore CRM. [Maggiori informazioni](../../migration/using/testing-the-migration.md#verification-process)
 
-Sono stati aggiunti requisiti sulle autorizzazioni IMS per implementare l’integrazione Adobe Campaign-Adobe Analytics. [Maggiori informazioni](../../platform/using/adobe-analytics-provisioning.md)
+Sono stati aggiunti requisiti sulle autorizzazioni IMS per implementare l’integrazione Adobe Campaign-Adobe Analytics. [Maggiori informazioni](../../integrations/using/adobe-analytics-provisioning.md)
 
 È stata aggiornata la data di fine del ciclo di vita di Connettore dati Adobe Analytics dal 1° marzo 2022 al 17 agosto 2022. [Maggiori informazioni](deprecated-features.md)
-
-È stato aggiunto un collegamento alla documentazione dell’SDK per dispositivi mobili Adobe Experience Platform per informazioni su come configurare l’estensione Campaign in Adobe Launch. [Maggiori informazioni](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
 
 È stata aggiunta una sezione su come utilizzare JavaScript per calcolare i valori, scambiare dati ed eseguire operazioni specifiche utilizzando chiamate SOAP.[Maggiori informazioni](../../workflow/using/javascript-scripts-and-templates.md)
 
@@ -350,7 +348,7 @@ La pagina Funzioni obsolete e rimosse è stata aggiornata. [Leggi tutto](../../r
 Le note sulla versione e la matrice di compatibilità per la versione [!DNL Gold Standard] sono ora disponibili in una pagina dedicata.
 [Leggi tutto](../../rn/using/gold-standard.md).
 
-L’integrazione Triggers, originariamente basata sull’autenticazione OAuth per accedere alla pipeline ora è stata modificata e spostata in Adobe I/O. [Ulteriori informazioni](../../integrations/using/configuring-adobe-io.md)
+L’integrazione Triggers, originariamente basata sull’autenticazione OAuth per accedere alla pipeline ora è stata modificata e spostata in Adobe I/O. [Ulteriori informazioni](../../integrations/using/about-triggers.md#implement)
 
 **Altri aggiornamenti**
 

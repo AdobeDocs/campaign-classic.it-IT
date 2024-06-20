@@ -7,16 +7,18 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 6%
+source-wordcount: '520'
+ht-degree: 5%
 
 ---
 
 # Utilizzare i diritti denominati per impostare le autorizzazioni{#named-rights}
 
-
+>[!NOTE]
+>
+>Questa pagina si applica solo agli operatori che si connettono a Campaign con autenticazione nativa. Per l’autenticazione Adobe IMS, consulta [questa documentazione](https://helpx.adobe.com/enterprise/using/manage-permissions-and-roles.html).
 
 Per impostazione predefinita, Adobe Campaign propone una serie di diritti denominati che ti consentono di definire le autorizzazioni assegnate agli operatori e ai gruppi di operatori. Questi diritti possono essere modificati da **[!UICONTROL Administration > Access management > Named rights]** dell&#39;albero.
 

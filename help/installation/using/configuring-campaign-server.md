@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-source-git-commit: fa089574b028193b6da346482d6ea42b1d19f0aa
+source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
 workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Questo capitolo descrive le configurazioni lato server che possono essere esegui
 
 Tali procedure sono limitate a **on-premise**/**ibrido** e richiedono autorizzazioni di amministrazione.
 
-Per **in hosting** implementazioni, le impostazioni lato server possono essere configurate solo per Adobe. Tuttavia, alcune impostazioni possono essere configurate in [Pannello di controllo Campaign della campagna](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=it), ad esempio IP Gestione dei elenchi Consentiti o autorizzazioni URL. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=it).
+Per **in hosting** implementazioni, le impostazioni lato server possono essere configurate solo per Adobe. Tuttavia, alcune impostazioni possono essere configurate in [Pannello di controllo Campaign della campagna](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=it), ad esempio la gestione del inserisco nell&#39;elenco Consentiti IP o le autorizzazioni URL. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=it).
 
 Per ulteriori informazioni, consulta le sezioni seguenti:
 
@@ -69,13 +69,13 @@ Gli operatori connessi tramite questo accesso disporranno di tutti i diritti su 
 
 Usa il comando seguente:
 
-```
+```sql
 nlserver config -internalpassword
 ```
 
 Vengono quindi visualizzate le seguenti informazioni. Immettere e confermare la password:
 
-```
+```sql
 17:33:57 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
 Enter the current password.
 Password:
@@ -156,7 +156,7 @@ Per le pagine JSP, la configurazione predefinita è:
 
 Adobe Campaign utilizza le seguenti pagine JSP:
 
-* /nl/jsp/**soaprouter.jsp**: connessioni alla console client e ai servizi web (API SOAP),
+* /nl/jsp/**soaprouter.jsp**: console client e connessioni ai servizi web (API SOAP),
 * /nl/jsp/**m.jsp**: pagine mirror,
 * /nl/jsp/**logon.jsp**: accesso via web ai rapporti e alla distribuzione della console client,
 * /nl/jsp/**s.jsp** : utilizzando il marketing virale (sponsorizzazione e social network).

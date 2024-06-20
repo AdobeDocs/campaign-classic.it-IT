@@ -7,9 +7,9 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: 271e0f9fde0cbfb016e201c8390b26673d8fc696
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '833'
 ht-degree: 1%
 
 ---
@@ -31,15 +31,13 @@ Prima di avviare questa configurazione, verifica di disporre di:
 * Accesso per sviluppatori all’organizzazione
 * Una configurazione dei trigger valida in Adobe Analytics
 
-## File di autenticazione e configurazione {#authentication-configuration}
-
-È necessaria l’autenticazione perché la pipeline è ospitata in Adobe Experience Cloud. Utilizza una coppia di chiavi pubbliche e private. Questo processo ha la stessa funzione di un utente/password, ma è più sicuro. L’autenticazione è supportata per il Marketing Cloud tramite il progetto Adobe Developer.
+È necessaria l’autenticazione perché la pipeline è ospitata in Adobe Experience Cloud. Utilizza un’autenticazione supportata per tramite un progetto Adobe Developer.
 
 ## Passaggio 1: creare/aggiornare il progetto Adobe Developer {#creating-adobe-io-project}
 
-Per i clienti in hosting, collabora con il tuo rappresentante di Adobe/Assistenza clienti per abilitare la tua organizzazione con i Token dell’account Adobe Developer per l’integrazione con Triggers.
+Abilita la tua organizzazione con i token di account Adobe Developer per l’integrazione Triggers.
 
-Per i clienti on-premise/ibridi, consulta [Configurazione di Adobe I/O per Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) pagina. Tieni presente che devi selezionare **[!UICONTROL Adobe Analytics]** durante l’aggiunta dell’API alle credenziali di Adobe Developer.
+Scopri come creare l’account tecnico Adobe in [questa pagina](../../integrations/using/oauth-technical-account.md). Tieni presente che devi selezionare **[!UICONTROL Adobe Analytics]** durante l’aggiunta dell’API alle credenziali di Adobe Developer.
 
 ## Passaggio 2: configurare l’opzione pipeline {#configuring-nmspipeline}
 
@@ -111,7 +109,7 @@ Per configurare l’opzione Pipeline, segui queste raccomandazioni:
 * il `pipelined`Il processo supporta anche l&#39;argomento &quot;alias&quot;.
 * È sempre necessario riavviare `pipelined`dopo aver apportato modifiche.
 
-## Passaggio 3: configurazione opzionale {#step-optional}
+## (facoltativo) Passaggio 3: configurazione aggiuntiva {#step-optional}
 
 Puoi modificare alcuni parametri interni in base ai requisiti di carico, ma assicurati di testarli prima di applicarli all’ambiente di produzione.
 
