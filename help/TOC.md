@@ -7,9 +7,9 @@ user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 3307c75ed7df0fcd357dd7c684481c62e0457e04
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2552'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -352,7 +352,7 @@ ht-degree: 99%
    + [Caso d’uso: visualizzare un rapporto sulle risposte a un sondaggio online](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
 + Integrare con Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [Introduzione alle integrazioni con Campaign](integrations/using/about-campaign-integrations.md)
-   + [Crea il tuo account tecnico Adobe](integrations/using/oauth-technical-account.md)
+   + [Creare un account tecnico Adobe personale](integrations/using/oauth-technical-account.md)
    + Adobe Experience Cloud Triggers {#experience-triggers}
       + [Utilizzare  [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Configurare la pipeline](integrations/using/configuring-pipeline.md)
@@ -825,7 +825,7 @@ ht-degree: 99%
    + [Consigli sui requisiti hardware in base alle dimensioni](technotes/using/hardware-sizing.md)
    + [Attività del flusso di lavoro SMS in entrata per l’infrastruttura mid-sourcing](technotes/using/inbound-sms-wf.md)
    + Aggiornamento a IMS{#ims}
-      + [Transizione ad Adobe IMS](technotes/using/ac-ims.md)
+      + [Transizione verso Adobe IMS](technotes/using/ac-ims.md)
       + [Migrazione utenti a IMS](technotes/using/migrate-users-to-ims.md)
       + [Migrazione degli operatori tecnici a Developer Console](technotes/using/ims-migration.md)
       + [Impatto dell’interfaccia dopo la migrazione IMS](technotes/using/impact-ims-migration.md)

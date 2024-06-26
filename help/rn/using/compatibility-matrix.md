@@ -7,15 +7,15 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: b23632d0718d62d61e94e636937b93aa39bbe43f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '840'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
 # Matrice di compatibilità {#compatibility-matrix}
 
-Nel suo [build più recente](../../rn/using/latest-release.md), Adobe Campaign Classic v7 è compatibile con tutti i sistemi e gli strumenti elencati in questa pagina. Quando versioni specifiche di questi sistemi e strumenti di terze parti raggiungono la fine del ciclo di vita (EOL) con i rispettivi creatori, Adobe Campaign non è più compatibile con tali versioni, che vengono rimosse dalla matrice di compatibilità nella versione del prodotto successiva. Per evitare problemi, assicurati di disporre delle versioni supportate di tutti i sistemi elencati in questa matrice di compatibilità. Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../../rn/using/deprecated-features.md).
+L’[ultima versione](../../rn/using/latest-release.md) di Adobe Campaign Classic v7 è compatibile con tutti i sistemi e gli strumenti elencati in questa pagina. Quando versioni specifiche di questi sistemi e strumenti di terze parti raggiungono la fine del ciclo di vita (EOL) con i rispettivi creatori, Adobe Campaign non è più compatibile con tali versioni, che vengono rimosse dalla matrice di compatibilità nella versione del prodotto successiva. Assicurati di disporre delle versioni supportate di tutti i sistemi elencati nella matrice di compatibilità per evitare problemi. Per ulteriori informazioni sugli elementi obsoleti, consulta [questa pagina](../../rn/using/deprecated-features.md).
 
 Salvo diversa indicazione, sono supportate tutte le versioni minori.
 
@@ -30,8 +30,8 @@ In qualità di cliente on-premise/ibrido, devi installare Adobe Campaign in uno 
 <table> 
 <tbody> 
 <td><strong>Sistema operativo</strong></td>
-<td><strong>Versione sistema operativo</strong></td>
-<td><strong>Versione minima campagna</strong></td>
+<td><strong>Versione del sistema operativo</strong></td>
+<td><strong>Versione minima di Campaign</strong></td>
 <tr> 
 <td>CentOs</td>
 <td>
@@ -83,7 +83,7 @@ In qualità di cliente on-premise/ibrido, devi installare Adobe Campaign in uno 
 
 >[!IMPORTANT]
 >
->Se utilizzi RHEL, devi essere disposto a disabilitare [SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux) oppure affinché gli architetti scrivano regole SELinux personalizzate per evitare che il SELinux abilitato causi problemi alle operazioni di Campaign.
+>Se utilizzi RHEL, disabilita [SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux) o fai in modo che gli architetti scrivano regole SELinux personalizzate per evitare che il SELinux abilitato causi problemi alle attività di Campaign.
 
 ## Server web {#WebServers}
 
@@ -114,7 +114,7 @@ In qualità di cliente on-premise/ibrido, devi installare e configurare gli stru
 <tbody>
 <td><strong>Strumento</strong></td>
 <td><strong>Versione</strong></td>
-<td><strong>Versione minima campagna</strong></td>
+<td><strong>Versione minima di Campaign</strong></td>
 <tr>
 <td><p>Java Development Kit (JDK)</p>
 <p>Per ulteriori informazioni, consulta <a href="../../installation/using/application-server.md#jdk" target="_blank">questa pagina</a>.</p>
@@ -126,7 +126,7 @@ In qualità di cliente on-premise/ibrido, devi installare e configurare gli stru
 <p></p>
 </td>
 <td>
-<p>richiesto a partire dalla versione v7.4.1</p>
+<p>obbligatorio a partire dalla versione v7.4.1</p>
 <p>fino alla versione v7.4.1</p>
 <p>fino alla versione v7.4.1</p>
 </tr>
@@ -159,9 +159,9 @@ In qualità di cliente on-premise/ibrido, devi installare e configurare uno dei 
 <tbody>
 <td><strong>Sistema di database</strong></td>
 <td><strong>Versione del database</strong></td>
-<td><strong>Versione minima campagna</strong></td>
+<td><strong>Versione minima di Campaign</strong></td>
 <tr>
-<td> Oracle</td>
+<td>Oracle</td>
 <td>
 <p>23c</p>
 <p>19c</p>
@@ -216,7 +216,7 @@ In qualità di cliente on-premise/ibrido, devi installare e configurare uno dei 
 >
 >* Il driver RDBMS deve corrispondere alla versione del server RDBMS.
 >
->* Microsoft SQL Server non è supportato come database primario quando il server Campaign è in esecuzione su Linux. [Ulteriori informazioni](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).
+>* Microsoft SQL Server non è supportato come database principale quando il server Campaign è in esecuzione su Linux. [Ulteriori informazioni](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).
 >
 >* È inoltre possibile utilizzare Amazon RDS per PostgreSQL con le versioni sopra specificate.
 >
@@ -254,7 +254,7 @@ Dagli ambienti **Managed Services** (in hosting), **Ibrido** e **On-Premise** è
 <tbody>
 <td><strong>Sistema di database</strong></td>
 <td><strong>Versione del database</strong></td>
-<td><strong>Versione minima campagna</strong></td>
+<td><strong>Versione minima di Campaign</strong></td>
 <tr>
 <td> Amazon Redshift</td>
 <td><p> </p>
@@ -295,7 +295,7 @@ Negli ambienti **ibridi** e **on-premise** è possibile collegare Campaign ai se
 <tbody>
 <td><strong>Sistema di database</strong></td>
 <td><strong>Versione del database</strong></td>
-<td><strong>Versione minima campagna</strong></td>
+<td><strong>Versione minima di Campaign</strong></td>
 <tr>
 <td>Microsoft Azure Synapse Analytics</td>
 <td> </td>
@@ -319,7 +319,7 @@ Negli ambienti **ibridi** e **on-premise** è possibile collegare Campaign ai se
 <td></td>
 </tr>
 <tr>
-<td> Oracle</td>
+<td>Oracle</td>
 <td>
 <p>23c</p>
 <p>19c</p>
@@ -391,7 +391,7 @@ Per utilizzare la [console client di Campaign](../../installation/using/installi
 <tbody>
 <td><strong>Sistema</strong></td>
 <td><strong>Versione sistema operativo</strong></td>
-<td><strong>Versione minima campagna</strong></td>
+<td><strong>Versione minima di Campaign</strong></td>
 <tr>
 <td>Microsoft Windows</td>
 <td>
@@ -424,11 +424,11 @@ Per la console client di Campaign è obbligatoria la versione più recente di Mi
 Scarica Microsoft Edge WebView2 dal [sito web per sviluppatori Microsoft](https://www.adobe.com/go/acc-ms-webview2-runtime-download).
 
 
-## SDK per dispositivi mobili {#MobileSDK}
+## Mobile SDK {#MobileSDK}
 
-Puoi utilizzare Campaign per [inviare notifiche push](../../delivery/using/about-mobile-app-channel.md), tramite l’SDK di Adobe Experience Platform Mobile configurando l’estensione Adobe Campaign nell’interfaccia utente di Data Collection.
+Puoi anche utilizzare Campaign per [inviare notifiche push](../../delivery/using/about-mobile-app-channel.md) tramite Adobe Experience Platform Mobile SDK configurando l’estensione Adobe Campaign nell’interfaccia utente di raccolta dati.
 
-L’SDK di Campaign è [obsoleto](deprecated-features.md) avvio di Campaign v7.4. Per garantire una transizione fluida per l’implementazione esistente all’SDK di AEP Mobile, puoi continuare a utilizzarlo sui sistemi operativi elencati di seguito<!--, using the associated [mobile SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)-->.
+L’SDK di Campaign è [obsoleto](deprecated-features.md) a partire da Campaign v7.4. Per garantire una transizione fluida delle implementazioni esistenti verso AEP Mobile SDK, puoi continuare a utilizzarlo sui sistemi operativi elencati di seguito<!--, using the associated [mobile SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)-->.
 
 
 <table>
@@ -437,16 +437,16 @@ L’SDK di Campaign è [obsoleto](deprecated-features.md) avvio di Campaign v7.4
 <td>Google Android</td>
 <td>
 <p>7 - 14</p>
-<p>con la build 1.1.1 dell’SDK per dispositivi mobili.</p>
+<p>con Mobile SDK build 1.1.1</p>
 <p>Android 13 e 14 sono supportati a partire da Campaign v7.4.</p>
-<p>Android 12 è supportato a partire da Campaign v7.3.</p>
+<p>Android 12 è supportato a partire da Campaign v7.3</p>
 </td>
 </tr>
 <tr>
 <td>Apple iOS</td>
 <td>
 <p>iOS 9 - 17</p>
-<p>con la build 1.0.26 dell’SDK per dispositivi mobili.</p>
+<p>con Mobile SDK build 1.0.26</p>
 <p>Apple iOS 15 è supportato a partire da Campaign v7.3. </p>
 <p>Apple iOS 16 e 17 sono supportati a partire da Campaign v7.4.</p>
 </td>
@@ -469,6 +469,6 @@ I seguenti browser, nella loro versione più recente, sono compatibili con Campa
 >
 >* [Note sulla versione Campaign Classic](../../rn/using/latest-release.md)
 >* [Architettura generale di Campaign](../../installation/using/general-architecture.md)
->* [Consigli per il dimensionamento dell&#39;hardware](../../technotes/using/hardware-sizing.md)
+>* [Consigli sui requisiti hardware in base alle dimensioni](../../technotes/using/hardware-sizing.md)
 >* [Funzioni e sistemi obsoleti](../../rn/using/deprecated-features.md)
 >* [Procedura di aggiornamento build](../../production/using/build-upgrade.md)
