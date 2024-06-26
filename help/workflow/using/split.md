@@ -4,26 +4,26 @@ title: Dividi
 description: Ulteriori informazioni sull’attività Dividi flusso di lavoro
 feature: Workflows, Targeting Activity
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 13eb777e96602ddd3463f721c6b2a3e6b67cb329
 workflow-type: tm+mt
-source-wordcount: '1946'
+source-wordcount: '1971'
 ht-degree: 0%
 
 ---
 
 # Dividi{#split}
 
-
-
 A **Dividi** L’attività di tipo -type consente di suddividere un target in diversi sottoinsiemi. Il target viene costruito con tutti i risultati ricevuti: affinché questa attività possa essere eseguita, tutte le attività precedenti devono essere state completate.
 
 Questa attività non attiva un’unione di popolazioni in entrata. Se nell’ambito di un’attività divisa si verificano più transizioni, si consiglia di inserire un’ **[!UICONTROL Union]** attività di fronte a esso.
 
-Per un esempio dell’attività divisa in uso, fai riferimento a [Creazione di sottoinsiemi tramite l’attività Dividi](targeting-data.md#creating-subsets-using-the-split-activity).
+>[!NOTE]
+>
+>Non è possibile eseguire operazioni di suddivisione per tabelle con origini diverse. A questo scopo, devi aggiungere una **Arricchimento** attività prima del **Dividi** attività.
 
-Un esempio che illustra come utilizzare l’attività Split per segmentare il target in popolazioni diverse utilizzando condizioni di filtro è descritto in [questa sezione](cross-channel-delivery-workflow.md).
-
-Un esempio che mostra come utilizzare una variabile di istanza in un’attività Split è disponibile in [questa sezione](javascript-scripts-and-templates.md).
+* Per un esempio dell’attività divisa in uso, fai riferimento a [Creazione di sottoinsiemi tramite l’attività Dividi](targeting-data.md#creating-subsets-using-the-split-activity).
+* Un esempio che illustra come utilizzare l’attività Split per segmentare il target in popolazioni diverse utilizzando condizioni di filtro è descritto in [questa sezione](cross-channel-delivery-workflow.md).
+* Un esempio che mostra come utilizzare una variabile di istanza in un’attività Split è disponibile in [questa sezione](javascript-scripts-and-templates.md).
 
 Per configurare questa attività, definisci il contenuto e l’etichetta del sottoinsieme in **[!UICONTROL Subsets]** , quindi scegliere la dimensione di destinazione nella scheda **[!UICONTROL General]** scheda.
 

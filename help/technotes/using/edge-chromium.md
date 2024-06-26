@@ -4,23 +4,24 @@ title: 'Nota tecnica: abilitare Microsoft Edge Chromium nell’ambiente Campaign
 description: Campaign - Cromo Edge
 feature: Technote, Upgrade
 exl-id: 22f4cbaf-ca37-47b9-b7dd-1ee73d5b348d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 8734e6ef26a7342042a5242d54854b7d3a5e6244
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 7%
+source-wordcount: '263'
+ht-degree: 6%
 
 ---
 
-# Come abilitare Microsoft Edge Chromium nell’ambiente {#edge-conf}
-
-
-
+# Come abilitare Microsoft Edge Chromium nel tuo ambiente {#edge-conf}
 
 ## Cosa è cambiato?
 
 Dopo la fine del ciclo di vita di Microsoft Internet Explorer 11, il motore di rendering HTML per le dashboard nella console client utilizza Edge Chromium, a partire da Campaign Classic v7.3.
 
-Oltre all&#39;installazione di Microsoft Edge WebView2 Runtime, ora [richiesto per qualsiasi installazione della console client](../../installation/using/installing-the-client-console.md#webview), Microsoft Edge Chromium deve essere abilitato sulle istanze.
+Oltre all&#39;installazione di Microsoft Edge WebView2 Runtime, ora [richiesto per qualsiasi installazione della console client](../../installation/using/installing-the-client-console.md#webview), Microsoft Edge Chromium deve essere abilitato nelle istanze.
+
+>[!NOTE]
+>
+>Dopo aver abilitato Microsoft Edge Chromium, `Ctrl+F` (Windows) o `Command+F` (Mac) la scelta rapida per aprire la finestra di dialogo di ricerca del browser non funzionerà più.
 
 ## Sei interessato?
 
@@ -28,9 +29,9 @@ L’aggiornamento dell’ambiente a Campaign Classic v7.3 (o versione successiva
 
 ## Come si esegue l’aggiornamento?
 
-* As a **in hosting** cliente, Adobe ha già abilitato Microsoft Edge Chromium nelle istanze. Non è richiesta alcuna azione aggiuntiva.
+* As a **in hosting** cliente, Adobe già abilitato per Microsoft Edge Chromium nelle istanze. Non è richiesta alcuna azione aggiuntiva.
 
-* Come un **on-premise/ibrido** cliente, devi abilitare Microsoft Edge Chromium nelle istanze.
+* Come un **on-premise/ibrido** cliente, è necessario abilitare Microsoft Edge Chromium nelle istanze.
 
   Durante l’aggiornamento a Campaign Classic v7.3 (e versioni successive), viene `webView2Mode` L’attributo è disponibile nel file di configurazione del server Campaign `serverConf.xml`. Questo attributo deve essere abilitato.
 
