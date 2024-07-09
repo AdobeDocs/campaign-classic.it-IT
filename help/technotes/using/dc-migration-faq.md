@@ -6,9 +6,9 @@ feature: Technote, Upgrade
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 6803b6628313db9108a191fd143dac68ee799149
 workflow-type: tm+mt
-source-wordcount: '2204'
+source-wordcount: '2225'
 ht-degree: 0%
 
 ---
@@ -59,13 +59,13 @@ Gli impatti globali su database e infrastruttura sono elencati di seguito.
 
 Gli impatti globali su IP, elenchi Bloccati, sottodomini e URL sono elencati di seguito.
 
-* **Come verrà gestito l’IP sul inserisco nell&#39;elenco Consentiti di? I clienti dovranno aggiungere nuovi indirizzi IP al inserisco nell&#39;elenco Consentiti di per il traffico in entrata da Campaign?**
+* **Come verrà gestito l’IP sul elenco Consentiti di gestione del sistema di gestione dei rapporti con i clienti ()? I clienti dovranno aggiungere nuovi indirizzi IP al elenco Consentiti di per il traffico in entrata da Campaign?**
 
   L’indirizzo IP dei server di Adobe cambierà. Pertanto, i clienti potrebbero dover aggiungere questi nuovi indirizzi IP nel inserisco nell&#39;elenco Consentiti di nel proprio sistema.
 
-  [Ulteriori informazioni](#config) informazioni su IP nel inserisco nell&#39;elenco Consentiti di.
+  [Ulteriori informazioni](#config) informazioni su IP nel inserisco nell&#39;elenco Consentiti di selezione del.
 
-* **Come gestiremo la porta aggiunta al inserisco nell&#39;elenco Consentiti di accesso SFTP/FTP di?**
+* **Come gestiremo la porta aggiunta al inserisco nell&#39;elenco Consentiti di accesso SFTP/FTP del?**
 
   Anche la configurazione SFTP (chiavi pubbliche + IP sul inserisco nell&#39;elenco Consentiti di) verrà spostata dal datacenter legacy al cloud pubblico (AWS). Nessuna azione prevista dal cliente.
 
@@ -73,11 +73,15 @@ Gli impatti globali su IP, elenchi Bloccati, sottodomini e URL sono elencati di 
 
   L’indirizzo IP dei server di Adobe cambierà. Pertanto, i clienti potrebbero dover aggiungere questi nuovi indirizzi IP al inserisco nell&#39;elenco Consentiti di nel proprio sistema.
 
-  [Ulteriori informazioni](#config) informazioni su IP nel inserisco nell&#39;elenco Consentiti di.
+  [Ulteriori informazioni](#config) informazioni su IP nel inserisco nell&#39;elenco Consentiti di selezione del.
 
 * **Come verrà gestita la delega dei sottodomini?**
 
   I sottodomini esistenti verranno spostati dal datacenter legacy al cloud pubblico (AWS). Questa parte verrà gestita dal team di recapito messaggi Adobe come parte del processo di migrazione.
+
+  >[!NOTE]
+  >
+  >Il team di recapito messaggi si basa sul contratto e i clienti devono contattare il proprio rappresentante di Adobe per informazioni relative al progetto di recapito messaggi.
 
   Adobe guiderà il cliente attraverso i test richiesti per garantire che la configurazione sia attiva e in esecuzione sui nuovi server Public Cloud (AWS) dopo la migrazione.
 
@@ -99,7 +103,7 @@ Gli impatti globali su IP, elenchi Bloccati, sottodomini e URL sono elencati di 
 
   Al termine della migrazione, l’istanza Campaign avrà IP di invio completamente diversi. Al fine di garantire una transizione senza intoppi, Adobe implementerà un incremento dei nuovi IP di invio passando progressivamente dal vecchio ai nuovi IP.
 
-* **Stiamo passando all’URL nel inserisco nell&#39;elenco Consentiti di?**
+* **Si sta spostando l&#39;URL sul inserisco nell&#39;elenco Consentiti di?**
 
   Sì, viene memorizzato nel file di configurazione del server che verrà copiato dall’origine alla nuova istanza.
 
@@ -113,7 +117,7 @@ Gli impatti globali su IP, elenchi Bloccati, sottodomini e URL sono elencati di 
 
 ![](assets/do-not-translate/maintenance.png)
 
-### Nota sull&#39;IP nel inserisco nell&#39;elenco Consentiti di{#config}
+### Nota sull&#39;IP sul inserisco nell&#39;elenco Consentiti di{#config}
 
 La migrazione al cloud pubblico sarà accompagnata da nuovi IP per i server applicazioni Adobe Campaign, in modo che la modifica dell’IP possa avere un impatto sulla connettività tra i server Adobe e i sistemi informativi.
 
@@ -131,15 +135,15 @@ Di seguito sono elencati gli impatti globali su configurazione, connettività co
 
 * **La migrazione influirà sulla connettività con account esterni?**
 
-  Sì. Le integrazioni di terze parti, ad esempio i provider di SMS, devono aggiungere nuovi indirizzi IP dei server applicazioni Adobe Campaign al inserisco nell&#39;elenco Consentiti di.
+  Sì. Le integrazioni di terze parti, ad esempio i provider di SMS, devono aggiungere al Adobe Campaign nuovi indirizzi IP dei server applicazioni di inserire nell&#39;elenco Consentiti.
 
-* **La migrazione influirà sulla connettività ad Adobe Analytics utilizzando il connettore di Genesis? E se si aggiungessero gli indirizzi IP di Campaign al inserisco nell&#39;elenco Consentiti di lato Adobe Analytics?**
+* **La migrazione influirà sulla connettività ad Adobe Analytics utilizzando il connettore di Genesis? E se si aggiungessero gli indirizzi IP di Campaign al inserisco nell&#39;elenco Consentiti di sul lato Adobe Analytics?**
 
   Gli indirizzi IP dei server applicazioni Adobe Campaign cambieranno. Questo passaggio sarà gestito da Adobe Customer Care dopo la migrazione.
 
 * **La migrazione influirà sulla connettività con altre soluzioni Adobi (AEM, Target, ecc.)?**
 
-  Le integrazioni sono una combinazione di indirizzi IP dichiarati nel inserisco nell&#39;elenco Consentiti di e nella configurazione dell’account del servizio web. Questo sarà registrato e di proprietà dell’Assistenza clienti Adobe.
+  Le integrazioni sono una combinazione di indirizzi IP dichiarati nel inserisco nell&#39;elenco Consentiti di gestione dei rapporti con i clienti e nella configurazione dell’account del servizio web. Questo sarà registrato e di proprietà dell’Assistenza clienti Adobe.
 
   Nel inserisco nell&#39;elenco Consentiti di saranno presenti indirizzi IP che saranno necessari nella soluzione esterna man mano che l&#39;IP degli Application Server cambierà. Queste informazioni verranno fornite. Altre parti dell’integrazione sono basate su IMS e dovrebbero funzionare così come sono.
 
@@ -155,9 +159,9 @@ Di seguito sono elencati gli impatti globali su configurazione, connettività co
 
   L’indirizzo IP dei server di Adobe cambierà. Pertanto, i clienti potrebbero dover aggiungere questi nuovi indirizzi IP al inserisco nell&#39;elenco Consentiti di nel proprio sistema.
 
-  [Ulteriori informazioni](#config) informazioni su IP nella inserisce nell&#39;elenco Consentiti di.
+  [Ulteriori informazioni](#config) informazioni su IP in modalità di inserisce nell&#39;elenco Consentiti di.
 
-* **Dopo la migrazione, verificheremo che tutti i parametri di configurazione della memoria JavaScript siano impostati correttamente?**
+* **Dopo la migrazione, verrà verificato che tutti i parametri di configurazione della memoria JavaScript siano impostati correttamente?**
 
   Copieremo la configurazione dell’istanza dal datacenter legacy al cloud pubblico (AWS), in modo che questi valori vengano mantenuti dopo la migrazione.
 
@@ -198,9 +202,9 @@ Gli impatti su autorizzazioni, certificati e accesso SFTP sono elencati di segui
 
 * **Se non è stato possibile stabilire la connessione SFTP, qual è la soluzione alternativa o il piano per mantenere operativo il cliente?**
 
-  L’unico problema di connettività che può verificarsi è relativo al inserisco nell&#39;elenco Consentiti di sul lato cliente. Il cliente deve aggiungere questo test all’ambiente non di produzione per assicurarsi che funzioni prima di passare alla produzione.
+  L’unico problema di connettività che può sorgere è relativo al inserisco nell&#39;elenco Consentiti di sul lato cliente. Il cliente deve aggiungere questo test all’ambiente non di produzione per assicurarsi che funzioni prima di passare alla produzione.
 
-* **Esistono configurazioni di inserisce nell&#39;elenco Consentiti di data center specifiche per il centro dati che devono essere spostate?**
+* **Esistono configurazioni di inserisco nell&#39;elenco Consentiti specifiche per i data center che devono essere spostate?**
 
   No, non esiste una configurazione di inserisco nell&#39;elenco Consentiti specifica per il centro dati da gestire.
 
@@ -273,9 +277,9 @@ Gli impatti globali durante la migrazione sono elencati di seguito.
 
   A seconda della complessità del cliente, è necessario un tempo di almeno 1 settimana tra le migrazioni dell’ambiente di staging e dell’ambiente di produzione.
 
-* **Chi gestirà l’aggiunta di nuovi IP al inserisco nell&#39;elenco Consentiti di?**
+* **Chi gestirà l’aggiunta di nuovi IP al elenco Consentiti di?**
 
-  Il team di assistenza clienti Adobe si occuperà di garantire che il cliente e tutte le terze parti possano accedere al nuovo elenco Consentiti aggiungendo i nuovi IP all’.
+  Il team di assistenza clienti di Adobe provvederà a garantire che il cliente e tutte le terze parti possano accedere al nuovo elenco Consentiti aggiungendo i nuovi IP al sistema di.
 
 ## Supporto e altri collegamenti utili{#support}
 

@@ -6,9 +6,9 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: SMS
 role: Developer, Data Engineer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 6803b6628313db9108a191fd143dac68ee799149
 workflow-type: tm+mt
-source-wordcount: '8445'
+source-wordcount: '8466'
 ht-degree: 1%
 
 ---
@@ -108,7 +108,7 @@ Un `SUBMIT_SM_RESP PDU` attiva lo stato del messaggio &quot;inviato&quot; nel re
 
 ### Aspetti relativi alla sicurezza {#security-aspects}
 
-Il protocollo non è crittografato. La maggior parte dei provider implementa una variante di IP su un elenco Consentiti di in modo che gli indirizzi IP del server Adobe Campaign debbano essere dichiarati al provider.
+Il protocollo non è crittografato. La maggior parte dei provider implementa una variante di IP su un elenco Consentiti di, pertanto gli indirizzi IP del server Adobe Campaign devono essere dichiarati al provider.
 
 Adobe Campaign supporta il passaggio di un login e di una password durante la fase di binding. Supporta anche SMPP su TLS. Si noti che i certificati sono necessari per una sicurezza adeguata. Anche se il connettore SMPP consente di evitare i controlli dei certificati, deve essere utilizzato solo per il test, in quanto TLS senza certificati offre un livello di sicurezza notevolmente inferiore.
 
@@ -383,6 +383,10 @@ Se devi controllare con precisione il numero di connessioni, ad esempio il requi
 
 Imposta il nome dell’implementazione SMSC. Deve essere impostato sul nome del provider. Contatta l’amministratore o il team di recapito messaggi per sapere cosa aggiungere in questo campo. Il ruolo di questo campo è descritto nel [Gestione degli errori SR](sms-protocol.md#sr-error-management) sezione.
 
+>[!NOTE]
+>
+>Il team di recapito messaggi si basa sul contratto e i clienti devono contattare il proprio rappresentante di Adobe per informazioni relative al progetto di recapito messaggi.
+
 #### Server {#server}
 
 Nome DNS o indirizzo IP del server a cui connettersi.
@@ -485,9 +489,9 @@ La specifica di un codice breve è utile per due funzioni:
 
 * Se non viene fornito alcun numero di origine, nell’anteprima viene visualizzato il codice breve. Rifletterà il comportamento reale sul telefono cellulare.
 
-* L’impostazione di inserisce nell&#39;elenco Bloccati del della funzione di risposta automatica mette in quarantena l’utente solo per un codice breve specifico.
+* L’impostazione di inserisce nell&#39;elenco Bloccati del codice di risposta automatica dell’di mette in quarantena l’utente solo per un codice breve specifico.
 
-#### TON/NPI di origine, TON/NPI di destinazione {#ton-npi}
+#### Source TON/NPI, TON di destinazione/NPI {#ton-npi}
 
 TON (Tipo di numero) e NPI (Numbering Plan Indicator) sono descritti nella sezione 5.2.5 del [Specifiche SMPP 3.4](https://smpp.org/SMPP_v3_4_Issue1_2.pdf) (pagina 117). Questi valori devono essere impostati in base alle esigenze del provider.
 
@@ -589,7 +593,7 @@ Se questa casella di controllo non è selezionata, solo le cifre del numero di t
 
 Quando la casella di controllo è selezionata, il numero di telefono viene inviato così com’è, senza preelaborazione e spazi potenziali, + prefisso o cancelletto/hash/asterisco.
 
-Questa funzione ha anche un effetto sul comportamento della funzione di elenco Bloccati di risposta automatica: quando la casella di controllo non è selezionata, ai numeri di telefono inseriti nella tabella di quarantena viene aggiunto un prefisso + per compensare la rimozione del prefisso + dal numero di telefono da parte del protocollo SMPP stesso.
+Questa funzione ha anche un effetto sul comportamento della funzione di inserisce nell&#39;elenco Bloccati automatica di risposta di un’: quando la casella di controllo non è selezionata, ai numeri di telefono inseriti nella tabella di quarantena viene aggiunto un prefisso + per compensare la rimozione del prefisso + dal numero di telefono da parte del protocollo SMPP stesso.
 
 #### Ignora controllo certificato TLS {#skip-tls}
 
@@ -721,7 +725,7 @@ Questa impostazione consente di aggiungere solo un’opzione TLV per messaggio.
 >
 >In Adobe Campaign Classic e in un’architettura ibrida, l’applicazione della risposta automatica per il connettore SMPP esteso richiede di aggiungere l’accesso in scrittura per l’operatore mid sul **Account esterno** cartella.
 
-Questa funzione consente di rispondere rapidamente al testo MO e gestire l’invio di codice per-breve al inserisco nell&#39;elenco Bloccati di.
+Questa funzione consente di rispondere rapidamente al testo in formato MO e gestire l’invio di codice per short a un inserisco nell&#39;elenco Bloccati di tipo.
 
 Il **Parola chiave** e **Codice breve** Le colonne definiscono le condizioni per attivare la risposta automatica. Se entrambi i campi corrispondono, viene inviato il messaggio MO e viene attivata l’azione aggiuntiva. Per specificare un carattere jolly, lasciare vuoto il campo. La parola chiave corrisponde alla prima parola alfanumerica nel testo MO, ignorando la punteggiatura e gli spazi iniziali. Ciò significa che **Parola chiave** il campo non può contenere spazi e deve essere una singola parola.
 
