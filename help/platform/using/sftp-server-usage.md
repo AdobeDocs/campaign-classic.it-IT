@@ -8,9 +8,9 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: b02089bd205de58c6af86fc8de3d5b3294ec9975
+source-git-commit: e40331266f34e2d6aa7b7720948d0cf26d4c6009
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1066'
 ht-degree: 8%
 
 ---
@@ -43,11 +43,11 @@ Per evitare tali problemi, l’Adobe consiglia di seguire le best practice ripor
 
 >[!NOTE]
 >
->Puoi monitorare l’archiviazione del server SFTP con Campaign Classic [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}.
+>* Puoi monitorare l’archiviazione del server SFTP con Campaign Classic [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}.
 >
->Il Pannello di controllo è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente i diritti da amministratore sono descritti in [questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel){target="_blank"}.
+>* Il Pannello di controllo è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente i diritti da amministratore sono descritti in [questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel){target="_blank"}.
 >
->La tua istanza deve essere aggiornata con [build GA più recente](../../rn/using/rn-overview.md). Scopri come controllare la versione in [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version){target="_blank"}.
+>* La tua istanza deve essere aggiornata con [build GA più recente](../../rn/using/rn-overview.md). Scopri come controllare la versione in [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version){target="_blank"}.
 
 * Le dimensioni del server variano a seconda della licenza. In ogni caso, mantieni i dati minimi possibili e conservali solo per il tempo necessario (15 giorni è il limite di tempo massimo).
 
@@ -72,13 +72,13 @@ La sezione seguente elenca le informazioni da verificare e fornire al team di su
 
 1. Verifica che l’istanza sia in esecuzione. Per farlo, apri il browser, quindi fai una **[!UICONTROL GET]** chiama sull’istanza **[!UICONTROL /r/test]** endpoint:
 
-   ```
+   ```xml
    https://instanceUrl/r/test
    ```
 
    Se l’istanza è in esecuzione, dovresti ricevere questo tipo di risposta:
 
-   ```
+   ```xml
    <redir status='OK' date='YYYY-MM-DD HH:MM:SS' build='XXXX' instance='instance-name'
    sourceIP='AAA.BB.CCC.DD' host='instanceUrl' localHost='instance-name'/>
    ```
@@ -87,7 +87,7 @@ La sezione seguente elenca le informazioni da verificare e fornire al team di su
 
 1. Verifica se la porta in uscita 22 è aperta nel sito da cui stai tentando di avviare la connessione SFTP. A questo scopo, utilizza il seguente comando:
 
-   ```
+   ```xml
    bash-3.2$ nc -vz <SFTP_URL> 22
    # Replace the SFTP_URL with actual SFTP instance URL
    # If the port 22 is opened you will see output similar to the below one
@@ -109,7 +109,7 @@ Questa sezione fornisce informazioni sui controlli e sull’azione da eseguire q
 
 Il giornale di registrazione del flusso di lavoro mostra i seguenti registri:
 
-```
+```xml
 16/05/2016 12:49:03    fileTransfer    Upload error in cURL
 16/05/2016 12:49:03    fileTransfer    Couldn't resolve host name
 16/05/2016 12:49:03    fileTransfer    Couldn't resolve host name
@@ -144,7 +144,7 @@ Questo errore indica che il nome di dominio del server FTP non è stato risolto 
 
    In caso contrario, convalida:
 
-   * La password non contiene &#39;@&#39;. Connessione non riuscita se la password contiene &#39;@&#39;.
+   * La password non contiene `@` carattere. La connessione non riesce se è presente un `@` nella password.
    * Non vi sono problemi di firewall che possono ostacolare la comunicazione tra il server applicazioni Adobe Campaign e il server SFTP.
    * Esegui i comandi tracert e telnet dal server della campagna all’sftp per verificare se sono presenti problemi di connessione.
    * Nessun problema relativo al protocollo di comunicazione.
