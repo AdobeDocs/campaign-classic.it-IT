@@ -8,16 +8,14 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: b02089bd205de58c6af86fc8de3d5b3294ec9975
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 11%
+source-wordcount: '1060'
+ht-degree: 8%
 
 ---
 
 # Best practice e risoluzione dei problemi per il server SFTP {#sftp-server-usage}
-
-
 
 ## Raccomandazioni globali per il server SFTP {#global-recommendations}
 
@@ -25,7 +23,7 @@ Quando gestisci file e dati per un processo di ETL, questi file vengono memorizz
 
 * Utilizza l’autenticazione basata su chiave anziché su password, per evitare la scadenza della password (le password hanno un periodo di validità di 90 giorni). Inoltre, l’autenticazione basata su chiave consente di generare più chiavi, ad esempio quando si gestiscono più entità. Al contrario, l’autenticazione tramite password richiede che tu condivida la password con tutte le entità che stai gestendo.
 
-  Il formato di chiave supportato è SSH-2 RSA 2048. Le chiavi possono essere generate con strumenti come PyTTY (Windows) o ssh-keygen (Unix).Dovrai fornire la chiave pubblica al team di supporto Adobe tramite [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per caricarlo sul server Campaign.
+  Il formato di chiave supportato è SSH-2 RSA 2048. Lo strumento per generare le chiavi SSH per Windows è PuTTYgen e ssh-keygen per Linux. Puoi caricare le chiavi SSH pubbliche tramite il Pannello di controllo Campaign Campaign. [Ulteriori informazioni](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/key-management){target="_blank"}
 
 * Utilizza la suddivisione in batch nei caricamenti SFTP e nei flussi di lavoro.
 
@@ -33,9 +31,9 @@ Quando gestisci file e dati per un processo di ETL, questi file vengono memorizz
 
 * Per impostazione predefinita, tutte le cartelle create sono in modalità di lettura/scrittura solo per l&#39;identificatore. Durante la creazione delle cartelle a cui Campaign deve accedere, accertati di configurarle con diritti di lettura/scrittura per l’intero gruppo. In caso contrario, i flussi di lavoro potrebbero non essere in grado di creare/eliminare file in quanto vengono eseguiti con un identificatore diverso all’interno dello stesso gruppo per motivi di sicurezza.
 
-* Gli IP pubblici da cui stai tentando di avviare la connessione SFTP devono essere aggiunti all’istanza di Campaign nel inserisco nell&#39;elenco Consentiti di. È possibile richiedere l’aggiunta di indirizzi IP al inserisco nell&#39;elenco Consentiti di tramite [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+* Gli IP pubblici da cui stai tentando di avviare la connessione SFTP devono essere aggiunti al inserisco nell&#39;elenco Consentiti di nell’istanza Campaign. Gli IP pubblici possono essere aggiunti tramite il Pannello di controllo Campaign. [Ulteriori informazioni](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/ip-range-allow-listing){target="_blank"}
 
-## Best practice per l’utilizzo del database {#sftp-server-best-practices}
+## Best practice per l’utilizzo dell’archiviazione SFTP {#sftp-server-best-practices}
 
 I server SFTP sono progettati per essere spazi di archiviazione temporanei su cui puoi controllare la conservazione e l’eliminazione dei file.
 
@@ -45,11 +43,11 @@ Per evitare tali problemi, l’Adobe consiglia di seguire le best practice ripor
 
 >[!NOTE]
 >
->Se l’istanza è ospitata su AWS, puoi monitorare l’archiviazione del server SFTP con il Campaign Classic [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html). Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=it).
+>Puoi monitorare l’archiviazione del server SFTP con Campaign Classic [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}.
 >
->Il Pannello di controllo è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente l’accesso come amministratore sono descritti in[questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel).
+>Il Pannello di controllo è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente i diritti da amministratore sono descritti in [questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel){target="_blank"}.
 >
->La tua istanza deve essere aggiornata con [build GA più recente](../../rn/using/rn-overview.md). Scopri come controllare la versione in [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+>La tua istanza deve essere aggiornata con [build GA più recente](../../rn/using/rn-overview.md). Scopri come controllare la versione in [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version){target="_blank"}.
 
 * Le dimensioni del server variano a seconda della licenza. In ogni caso, mantieni i dati minimi possibili e conservali solo per il tempo necessario (15 giorni è il limite di tempo massimo).
 
@@ -70,7 +68,7 @@ Inoltre, quando si specifica in Campaign Classic un percorso per un server SFTP 
 
 ## Problemi di connessione con il server SFTP ospitato da Adobe {#sftp-server-troubleshooting}
 
-La sezione seguente elenca le informazioni da verificare e fornire al team di supporto Adobe tramite [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) quando si verificano problemi di connessione con i server SFTP ospitati da Adobe.
+La sezione seguente elenca le informazioni da verificare e fornire al team di supporto Adobe tramite [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"} quando si verificano problemi di connessione con i server SFTP ospitati da Adobe.
 
 1. Verifica che l’istanza sia in esecuzione. Per farlo, apri il browser, quindi fai una **[!UICONTROL GET]** chiama sull’istanza **[!UICONTROL /r/test]** endpoint:
 
@@ -98,13 +96,9 @@ La sezione seguente elenca le informazioni da verificare e fornire al team di su
    myCompany-stage-sftp.neolane.net [AAA.BBB.CCC.D] 22 (ssh) open
    ```
 
-   >[!NOTE]
-   >
-   >Lo strumento Netcat consente di gestire facilmente le connessioni di rete su vari sistemi operativi (vedere [https://eternallybored.org/misc/netcat/](https://eternallybored.org/misc/netcat/)).
-
    Se la porta non è aperta, assicurarsi di aprire le connessioni in uscita sul lato, quindi riprovare. Se riscontri ancora problemi di connessione, condividi l’output del comando con [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team.
 
-1. Verifica che l’IP pubblico da cui stai tentando di avviare la connessione SFTP sia quello fornito al supporto Adobe per il inserisco nell&#39;elenco Consentiti di.
+1. Verifica che l’IP pubblico da cui stai tentando di avviare la connessione SFTP sia quello fornito all’Adobe di supporto per il inserisco nell&#39;elenco Consentiti di.
 1. Se si utilizza un&#39;autenticazione basata su password, la password potrebbe essere scaduta (le password hanno un periodo di validità di 90 giorni). Pertanto, consigliamo vivamente di utilizzare un’autenticazione basata su chiave (consulta [Best practice per il server SFTP](#sftp-server-best-practices)).
 1. Se utilizzi un’autenticazione basata su chiave, verifica che la chiave utilizzata sia la stessa fornita a [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team per la configurazione dell’istanza.
 1. Se utilizzi FileZilla o uno strumento FTP equivalente, fornisci i dettagli dei registri di connessione nel ticket di supporto.
