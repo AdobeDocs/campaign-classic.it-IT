@@ -5,10 +5,10 @@ description: Scopri come limitare la visualizzazione delle PI
 feature: PI
 role: Data Engineer, Developer
 exl-id: 0f32d62d-a10a-4feb-99fe-4679b98957d4
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: e198defd60f4b12681025b04b12a1498df015047
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 2%
+source-wordcount: '439'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ Alcuni clienti hanno bisogno che gli utenti marketing possano accedere ai record
 
 ## Implementazione {#implementation}
 
-È stato aggiunto agli schemi un nuovo attributo che può essere applicato a qualsiasi elemento o attributo, che integra l’attributo esistente **[!UICONTROL visibleIf]** . Questo attributo è: **[!UICONTROL accessibleIf]** . Quando contiene un’espressione XTK correlata al contesto utente corrente, può sfruttare **[!UICONTROL HasNamedRight]** o **[!UICONTROL $(login)]** , ad esempio.
+Un nuovo attributo che può essere applicato a qualsiasi elemento o attributo è stato aggiunto agli schemi. Completa l&#39;attributo esistente **[!UICONTROL visibleIf]**. Questo attributo è: **[!UICONTROL accessibleIf]** . Quando contiene un&#39;espressione XTK correlata al contesto utente corrente, può sfruttare **[!UICONTROL HasNamedRight]** o **[!UICONTROL $(login)]**, ad esempio.
 
 Di seguito è riportato un esempio di estensione dello schema del destinatario, con questo utilizzo:
 
@@ -39,8 +39,8 @@ Di seguito è riportato un esempio di estensione dello schema del destinatario, 
 
 Le proprietà principali sono:
 
-* **[!UICONTROL visibleIf]** : nasconde i campi dai metadati, per cui non è possibile accedervi all’interno di una vista schema, di una selezione di colonne o di un generatore di espressioni. Tuttavia, se il nome del campo viene immesso manualmente in un’espressione, il valore non viene nascosto.
-* **[!UICONTROL accessibleIf]** : nasconde i dati (sostituendoli con valori vuoti) dalla query risultante. Se visibleIf è vuoto, ottiene la stessa espressione di **[!UICONTROL accessibleIf]** .
+* **[!UICONTROL visibleIf]** : nasconde i campi dai metadati, pertanto non è possibile accedervi all&#39;interno di una visualizzazione schema, di una selezione di colonne o di un generatore di espressioni. Tuttavia, se il nome del campo viene immesso manualmente in un’espressione, il valore non viene nascosto.
+* **[!UICONTROL accessibleIf]** : nasconde i dati (sostituendoli con valori vuoti) dalla query risultante. Se visibleIf è vuoto, ottiene la stessa espressione di **[!UICONTROL accessibleIf]**.
 
 Di seguito sono riportate le conseguenze dell’utilizzo di questo attributo in Campaign:
 
@@ -53,9 +53,13 @@ Di seguito sono riportate le conseguenze dell’utilizzo di questo attributo in 
 * Quando si archivia la popolazione target in un gruppo (elenco), le caratteristiche dei campi memorizzati sono le stesse dell’origine dei dati.
 * Per impostazione predefinita, i dati non sono accessibili al codice JS.
 
+>[!IMPORTANT]
+>
+>L&#39;utilizzo dell&#39;attributo **accessibleIf** nei parametri critici (ad esempio quelli nelle chiavi composite) può causare errori per gli utenti che non sono autorizzati a leggere i dati a causa di dati nascosti. Questo può causare errori di query o comportamenti imprevisti. Assicurati che i parametri essenziali siano accessibili per evitare interruzioni.
+
 ## Raccomandazioni {#recommendations}
 
-In ogni consegna, gli indirizzi e-mail vengono copiati nel **[!UICONTROL broadLog]** e **[!UICONTROL forecastLog]** tabelle: di conseguenza, anche tali campi devono essere protetti.
+In ogni consegna, gli indirizzi e-mail vengono copiati nelle tabelle **[!UICONTROL broadLog]** e **[!UICONTROL forecastLog]**: di conseguenza, anche questi campi devono essere protetti.
 
 Di seguito è riportato un esempio di estensione della tabella di registro per implementare questo:
 
