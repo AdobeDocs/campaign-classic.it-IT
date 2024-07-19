@@ -18,11 +18,11 @@ ht-degree: 2%
 
 Adobe Campaign consente di interrompere il tracciamento dei comportamenti web degli utenti finali che rinunciano al tracciamento comportamentale tramite cookie o web beacon. La funzione include la possibilità di visualizzare un banner per presentare all’utente finale tale opzione; è possibile aggiungere questi banner nelle applicazioni web o nelle pagine di destinazione.
 
-Se un utente finale rinuncia al tracciamento comportamentale tramite cookie o web beacon, tali informazioni vengono trasmesse al server di tracciamento di Adobe Campaign con API JavaScript. Tieni presente che alcune giurisdizioni potrebbero richiedere che il Cliente presenti agli utenti finali un consenso prima che sia possibile offrire un rifiuto (o altri requisiti legali), ed è responsabilità del Cliente conformarsi alle leggi applicabili.
+Se un utente finale rinuncia al tracciamento comportamentale tramite cookie o web beacon, tali informazioni vengono trasmesse al server di tracciamento di Adobe Campaign con le API di JavaScript. Tieni presente che alcune giurisdizioni potrebbero richiedere che il Cliente presenti agli utenti finali un consenso prima che sia possibile offrire un rifiuto (o altri requisiti legali), ed è responsabilità del Cliente conformarsi alle leggi applicabili.
 
 >[!NOTE]
 >
->Quando si esegue lo scripting, seguire sempre le linee guida descritte nella [Lista di controllo per sicurezza e privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
+>Durante la creazione degli script, seguire sempre le linee guida descritte nell&#39;[Elenco di controllo protezione e privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
 
 ## Configurazione del banner {#configuring-the-banner-}
 
@@ -34,7 +34,7 @@ Adobe Campaign viene fornito con un banner di esempio da adattare in base alle t
 >
 >Per creare un banner personalizzato, devi personalizzare il banner predefinito.
 
-Per attivare il banner, è necessario configurare le proprietà dell&#39;applicazione Web. Consulta la sezione [Progettazione di un’applicazione web](designing-a-web-application.md) sezione.
+Per attivare il banner, è necessario configurare le proprietà dell&#39;applicazione Web. Consulta la sezione [Progettazione di un&#39;applicazione Web](designing-a-web-application.md).
 
 Se il tracciamento web è attivato, puoi avere:
 
@@ -63,7 +63,7 @@ Il banner predefinito ha la seguente struttura:
       
 ```
 
-Sostituire il **Inserire il messaggio qui** con il blocco contenente le informazioni di tracciamento. Questa sostituzione deve essere eseguita nel nuovo blocco di personalizzazione relativo al banner di rinuncia.
+È necessario sostituire **Inserire qui il messaggio** con il blocco contenente le informazioni di tracciamento. Questa sostituzione deve essere eseguita nel nuovo blocco di personalizzazione relativo al banner di rinuncia.
 
 Il banner viene consegnato con un CSS specifico. Tuttavia, è possibile sovrascrivere gli stili durante la creazione e la configurazione di una pagina Web. Consulta [questa pagina](content-editor-interface.md).
 
@@ -79,20 +79,20 @@ Il nome del cookie è **acoptout**. I valori comuni sono:
 
 Le API lato client disponibili per personalizzare il banner sono:
 
-* **NL.ClientWebTracking.allow()**: imposta il valore del cookie di rinuncia per consentire il tracciamento web. Il tracciamento web è consentito per impostazione predefinita.
-* **NL.ClientWebTracking.forbid()**: imposta il valore del cookie di rinuncia per impedire il tracciamento web. Il tracciamento web richiede che un input dell’utente sia vietato.
-* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**: chiude il banner del cookie di rinuncia dopo che l’utente ha fatto clic sul pulsante Accetta o Rifiuta. (durante la fase di bubbling dell’evento clic)
+* **NL.ClientWebTracking.allow()**: imposta il valore del cookie di rinuncia per consentire il tracciamento Web. Il tracciamento web è consentito per impostazione predefinita.
+* **NL.ClientWebTracking.forbid()**: imposta il valore del cookie di rinuncia per impedire il tracciamento Web. Il tracciamento web richiede che un input dell’utente sia vietato.
+* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**: chiude il banner del cookie di rinuncia dopo che l&#39;utente ha fatto clic sul pulsante Accetta o Rifiuta. (durante la fase di bubbling dell’evento clic)
 
-  bannerDomElt {DOMElement} l’elemento DOM principale del banner del cookie da rimuovere
+  bannerDomElt {DOMElement} l&#39;elemento DOM principale del banner del cookie da rimuovere
 
-* **NL.ClientWebTracking.hasUserPrefs()**: restituisce true se l’utente ha scelto le proprie preferenze per il tracciamento web.
-* **NL.ClientWebTracking.getUserPrefs()**: restituisce il valore del cookie di rinuncia che definisce le preferenze dell’utente.
+* **NL.ClientWebTracking.hasUserPrefs()**: restituisce true se l&#39;utente ha scelto le proprie preferenze per il tracciamento Web.
+* **NL.ClientWebTracking.getUserPrefs()**: restituisce il valore del cookie di rinuncia che definisce le preferenze dell&#39;utente.
 
 Se devi scrivere un JSSP, sono disponibili le API lato server:
 
 * **NL.ServerWebTracking.generateOptOutBanner(escapeJs)**: genera il markup per il banner di rinuncia da inserire nella pagina JSSP
 
-  **escapeJs {Boolean}**: true quando il markup generato deve avere l’escape per essere utilizzato all’interno di JavaScript.
+  **escapeJs {Boolean}**: true quando il markup generato deve essere preceduto da un escape per essere utilizzato in JavaScript.
 
   Restituisce il HTML del markup del banner di rinuncia da stampare nella pagina.
 
@@ -108,7 +108,7 @@ Se devi scrivere un JSSP, sono disponibili le API lato server:
 
   Esegue il rendering del markup per il banner di rinuncia inserendolo nella pagina JSSP. Viene chiamato così com&#39;è in Jssp tra &lt;% %>
 
-  **escapeJs {Boolean}**: true quando il markup generato deve avere l’escape per essere utilizzato all’interno di JavaScript
+  **escapeJs {Boolean}**: true quando il markup generato deve essere escape per essere utilizzato in JavaScript
 
 Esempio JSSP:
 

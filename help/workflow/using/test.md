@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Attività Test
+title: Test
 description: Ulteriori informazioni sull’attività del flusso di lavoro Test
 feature: Workflows
 exl-id: 6f246d56-01c8-43f5-b12b-c40d258b93c8
@@ -11,19 +11,19 @@ ht-degree: 1%
 
 ---
 
-# Attività Test{#test}
+# Test{#test}
 
 
 
-A **Test** l’attività di tipo attiva la prima transizione che soddisfa la condizione associata. Se non viene soddisfatta alcuna condizione e se **[!UICONTROL Use the default fork]** viene attivata, viene attivata la transizione predefinita.
+Un&#39;attività di tipo **Test** attiva la prima transizione che soddisfa la condizione associata. Se non viene soddisfatta alcuna condizione e se l&#39;opzione **[!UICONTROL Use the default fork]** è attivata, verrà attivata la transizione predefinita.
 
-Una condizione è un’espressione JavaScript che deve essere valutata come &quot;true&quot; o &quot;false&quot;. Per immettere l’espressione, fai clic sull’icona a destra del nome della condizione, quindi seleziona **[!UICONTROL Edit...]**.
+Una condizione è un’espressione JavaScript che deve essere valutata come &quot;true&quot; o &quot;false&quot;. Per immettere l&#39;espressione, fare clic sull&#39;icona a destra del nome della condizione, quindi selezionare **[!UICONTROL Edit...]**.
 
 ![](assets/edit_test.png)
 
-Per ulteriori informazioni su tutte le funzioni JavaScript aggiuntive e i metodi SOAP del server applicativo accessibili tramite JavaScript del flusso di lavoro, consulta [Documentazione JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=it).
+Per ulteriori informazioni su tutte le funzioni JavaScript aggiuntive e i metodi SOAP del server applicativo accessibili tramite JavaScript del flusso di lavoro, fare riferimento alla [documentazione JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=it).
 
-Puoi anche inserire le variabili direttamente da questo editor. Per ulteriori informazioni su come lavorare con le variabili, consulta [questa sezione](javascript-scripts-and-templates.md#variables).
+Puoi anche inserire le variabili direttamente da questo editor. Per ulteriori informazioni su come utilizzare le variabili, consulta [questa sezione](javascript-scripts-and-templates.md#variables).
 
 Le condizioni possono essere aggiunte, eliminate o ordinate dalla finestra di modifica delle proprietà dell’attività, ma possono anche essere modificate dalla transizione.
 

@@ -46,7 +46,7 @@ Una tabella deve avere almeno una chiave.
 
 Di regola, le chiavi vengono dichiarate dopo l’elemento principale dello schema e gli indici.
 
-Una chiave è nota come composita se include diversi campi (ad esempio diversi `<keyfield>` elementi figlio). Non utilizzare una chiave composita per definire una chiave primaria.
+Una chiave è nota come composita se include diversi campi (ad esempio diversi `<keyfield>` elementi secondari). Non utilizzare una chiave composita per definire una chiave primaria.
 
 Se l’elemento principale dello schema contiene l’attributo &quot;@autopk=true&quot;, la chiave primaria è univoca. È possibile disporre di una sola chiave primaria per schema.
 
@@ -54,12 +54,12 @@ I primi 1000 identificatori sono riservati, quindi se è necessario definire un 
 
 ## Descrizione attributo {#attribute-description-8}
 
-* **allowEmptyPart (booleano)**: nel caso di una chiave composita, se questo attributo è attivato, la chiave viene considerata valida se almeno una delle sue chiavi non è vuota. In questo caso, il valore della nozione vuoto è &quot;0&quot; (booleano o per tutti i tipi di dati numerici). Per impostazione predefinita, è necessario immettere tutti i tasti che compongono una chiave composita.
+* **allowEmptyPart (booleano)**: nel caso di una chiave composita, se questo attributo è attivato, la chiave viene considerata valida se almeno una delle chiavi non è vuota. In questo caso, il valore della nozione vuoto è &quot;0&quot; (booleano o per tutti i tipi di dati numerici). Per impostazione predefinita, è necessario immettere tutti i tasti che compongono una chiave composita.
 * **applyIf (stringa)**: questo attributo ti consente di rendere facoltativa la chiave. Definisce la condizione in base alla quale verrà applicata la definizione di chiave. Questo attributo riceve un&#39;espressione XTK.
 * **internal (booleano)**: se è attivato, questo attributo consente ad Adobe Campaign di sapere che la chiave è primaria.
 * **etichetta (stringa)**: etichetta della chiave.
 * **nome (MNTOKEN)**: nome interno della chiave.
-* **noDbIndex (booleano)**: se è attivato (noDbIndex=&quot;true&quot;), il campo che corrisponde alla chiave non verrà indicizzato.
+* **noDbIndex (booleano)**: se attivato (noDbIndex=&quot;true&quot;), il campo corrispondente alla chiave non verrà indicizzato.
 
 ## Esempi {#examples-------}
 
@@ -72,7 +72,7 @@ Dichiarazione di una chiave composita che autorizza il campo &quot;@expr&quot; o
  </key>
 ```
 
-Dichiarazione di una chiave primaria nel campo &quot;Name&quot; del tipo STRING in un `<srcschema>`  e la query SQL corrispondente:
+Dichiarazione di una chiave primaria nel campo &quot;Name&quot; di tipo STRING in un `<srcschema>` e query SQL corrispondente:
 
 ```
  

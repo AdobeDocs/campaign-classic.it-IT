@@ -20,23 +20,23 @@ Per fare in modo che le e-mail raggiungano i destinatari e migliorare il tasso d
 
 Durante la progettazione del contenuto del messaggio, segui i principi elencati di seguito:
 
-* [Indirizzo mittente](#sender-address): l’indirizzo deve identificare esplicitamente il mittente. Il dominio deve essere di proprietà del mittente e deve essere registrato presso di esso. Impossibile privatizzare il Registro di sistema del dominio.
-* [Personalizzazione](#personalization): la personalizzazione del contenuto e la definizione di un tempo di invio per destinatario aumentano le possibilità che il messaggio venga aperto.
+* [Indirizzo mittente](#sender-address): l&#39;indirizzo deve identificare esplicitamente il mittente. Il dominio deve essere di proprietà del mittente e deve essere registrato presso di esso. Impossibile privatizzare il Registro di sistema del dominio.
+* [Personalization](#personalization): la personalizzazione del contenuto e la definizione di un tempo di invio per destinatario aumentano le possibilità che il messaggio venga aperto.
 * Immagini e testo: rispetta un rapporto testo/immagine decente (ad esempio 60% di testo e 40% di immagini).
-* [Collegamento per annullare l’iscrizione](#opt-out) e pagina di destinazione: il collegamento di annullamento dell’abbonamento è essenziale. Deve essere visibile e valido e il modulo deve essere funzionale.
-* Anteprima: utilizza gli strumenti offerti da Adobe Campaign per verificare e ottimizzare il contenuto dell’e-mail ([Rendering casella in entrata](#message-responsiveness), [SpamAssassin](#spamassassin)).
+* [Collegamento per l&#39;annullamento dell&#39;abbonamento](#opt-out) e pagina di destinazione: il collegamento per l&#39;annullamento dell&#39;abbonamento è essenziale. Deve essere visibile e valido e il modulo deve essere funzionale.
+* Anteprima: utilizza gli strumenti offerti da Adobe Campaign per verificare e ottimizzare il contenuto dell&#39;e-mail ([Rendering della casella in entrata](#message-responsiveness), [SpamAssassin](#spamassassin)).
 
-Per ulteriori suggerimenti su come ottimizzare il recapito messaggi durante la progettazione dei contenuti, consulta [Guida alle procedure consigliate per la consegna dei messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html).
+Per ulteriori suggerimenti su come ottimizzare il recapito messaggi durante la progettazione del contenuto, consulta la [Guida alle best practice per il recapito messaggi](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html) di Adobe.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla modifica del contenuto delle e-mail, consulta [Definire il contenuto dell’e-mail](defining-the-email-content.md) e [Creare contenuti personalizzati](design-and-personalize.md).
+>Per ulteriori informazioni sulla modifica del contenuto delle e-mail, vedere [Definire il contenuto delle e-mail](defining-the-email-content.md) e [Creare contenuto personalizzato](design-and-personalize.md).
 
 ## Indirizzo mittente {#sender-address}
 
 Alcuni ISP verificano la validità dell&#39;indirizzo del mittente (**[!UICONTROL From]**) prima di accettare i messaggi. Un indirizzo con formato non corretto può comportare il rifiuto da parte del server ricevente.
 
-È necessario assicurarsi che venga fornito un indirizzo corretto a livello di istanza (menu **[!UICONTROL Tools > Advanced > Deployment wizard...]**) o negli scenari più utilizzati.
+È necessario assicurarsi che sia fornito un indirizzo corretto a livello di istanza (menu **[!UICONTROL Tools > Advanced > Deployment wizard...]**) o negli scenari utilizzati più di frequente.
 
 Per ulteriori informazioni, consulta [questa pagina](defining-the-email-content.md).
 
@@ -44,15 +44,15 @@ Per ulteriori informazioni, consulta [questa pagina](defining-the-email-content.
 
 Per migliorare l’esperienza dei destinatari e farli aprire l’e-mail, Adobe Campaign ti consente di personalizzare i messaggi.
 
-Per ulteriori informazioni sull’utilizzo dei campi di personalizzazione in Adobe Campaign, consulta [questa sezione](personalization-fields.md).
+Per ulteriori informazioni sull&#39;utilizzo dei campi di personalizzazione in Adobe Campaign, consulta [questa sezione](personalization-fields.md).
 
 Alcuni suggerimenti per ottimizzare la personalizzazione durante la creazione dei contenuti sono presentati in [questa sezione](design-and-personalize.md#optimize-personalization).
 
 ## Collegamento e modulo per la rinuncia {#opt-out}
 
-Per impostazione predefinita, quando il messaggio viene analizzato, viene [regola di tipologia](steps-validating-the-delivery.md#validation-process-with-typologies) controlla se è stato incluso un collegamento di rinuncia e, in caso contrario, genera un avviso. Puoi modificare questa regola in modo da generare un errore anziché un semplice avviso e interrompere una consegna senza questo collegamento.
+Per impostazione predefinita, quando il messaggio viene analizzato, una [regola di tipologia](steps-validating-the-delivery.md#validation-process-with-typologies) controlla se è stato incluso un collegamento di rinuncia e, in caso contrario, genera un avviso. Puoi modificare questa regola in modo da generare un errore anziché un semplice avviso e interrompere una consegna senza questo collegamento.
 
-Prima di ogni invio, verifica che il collegamento di rinuncia funzioni correttamente. Ad esempio, quando invii la bozza, accertati che il collegamento sia valido, che il modulo sia in linea e che la convalida di questo modifichi il valore di **[!UICONTROL No longer contact this recipient]** campo a **[!UICONTROL Yes]**. Dovresti effettuare questo controllo in modo sistematico perché è sempre possibile un errore umano durante l’immissione del collegamento o la modifica del modulo.
+Prima di ogni invio, verifica che il collegamento di rinuncia funzioni correttamente. Ad esempio, quando invii la bozza, accertati che il collegamento sia valido, che il modulo sia in linea e che la convalida di questo modifichi il valore del campo **[!UICONTROL No longer contact this recipient]** in **[!UICONTROL Yes]**. Dovresti effettuare questo controllo in modo sistematico perché è sempre possibile un errore umano durante l’immissione del collegamento o la modifica del modulo.
 
 Scopri come inserire un collegamento di rinuncia [in questa sezione](personalization-blocks.md#personalization-blocks-example).
 
@@ -68,12 +68,12 @@ Prima di inviare il messaggio, puoi verificarne la reattività controllando come
 
 Per ottenere questo risultato, Adobe Campaign acquisisce il rendering e lo rende disponibile in un report dedicato. Ciò ti permette di visualizzare in anteprima il messaggio inviato nei vari contesti in cui potrebbe essere ricevuto.
 
-Per ulteriori informazioni, consulta [Rendering casella in entrata](inbox-rendering.md).
+Per ulteriori informazioni, consulta [Rendering in entrata](inbox-rendering.md).
 
 ## SpamAssassin {#spamassassin}
 
 Adobe Campaign può essere configurato per funzionare con SpamAssassin. Questo consente di valutare le e-mail per determinare se un messaggio corre il rischio di essere considerato come spam dagli strumenti anti-spam utilizzati al momento della ricezione.
 
-Prima di iniziare una consegna, il **[!UICONTROL Preview]** consente di valutare i rischi. Un messaggio di avvertenza fornisce il risultato del test.
+Prima di avviare una consegna, la scheda **[!UICONTROL Preview]** consente di valutare i rischi. Un messaggio di avvertenza fornisce il risultato del test.
 
-Ulteriori informazioni [sezione](spamassassin.md).
+Ulteriori informazioni in questa [sezione](spamassassin.md).

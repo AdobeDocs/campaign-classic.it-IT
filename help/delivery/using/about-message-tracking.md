@@ -19,9 +19,9 @@ ht-degree: 9%
 
 Grazie alle sue funzionalità di tracciamento, Adobe Campaign ti consente di tenere traccia dei messaggi inviati e di controllare il comportamento dei destinatari: apertura, clic sui collegamenti, annullamento dell’abbonamento, ecc.
 
-Queste informazioni vengono recuperate in **[!UICONTROL Tracking]** scheda del profilo di ciascun destinatario della consegna. Questa scheda presenta tutti i collegamenti URL tracciati e cliccati dal destinatario selezionato dall’elenco. Si tratta dell’accumulo di tutti gli URL tracciati nelle consegne ancora presenti nella schermata di consegna. L’elenco può essere configurato e in genere contiene: l’URL su cui è stato fatto clic, la data e l’ora del clic e il documento in cui è stato trovato l’URL. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/editing-a-profile.md#tracking-tab).
+Queste informazioni vengono recuperate nella scheda **[!UICONTROL Tracking]** del profilo di ciascun destinatario della consegna. Questa scheda presenta tutti i collegamenti URL tracciati e cliccati dal destinatario selezionato dall’elenco. Si tratta dell’accumulo di tutti gli URL tracciati nelle consegne ancora presenti nella schermata di consegna. L’elenco può essere configurato e in genere contiene: l’URL su cui è stato fatto clic, la data e l’ora del clic e il documento in cui è stato trovato l’URL. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/editing-a-profile.md#tracking-tab).
 
-Il **dashboard di consegna** è inoltre fondamentale per monitorare le consegne e gli eventuali problemi riscontrati durante l’invio dei messaggi. Per ulteriori informazioni, consulta [questa sezione](delivery-dashboard.md).
+Il **dashboard di consegna** è inoltre fondamentale per monitorare le consegne e gli eventuali problemi rilevati durante l&#39;invio dei messaggi. Per ulteriori informazioni, consulta [questa sezione](delivery-dashboard.md).
 
 Il diagramma seguente mostra le fasi della finestra di dialogo tra l’utente e i vari server.
 
@@ -35,7 +35,7 @@ Il diagramma seguente mostra le fasi della finestra di dialogo tra l’utente e 
 
 Prima di utilizzare il tracciamento, devi configurarlo per la tua istanza. [Ulteriori informazioni](../../installation/using/deploying-an-instance.md#operating-principle)
 
-**Server di tracciamento**
+**Server di monitoraggio**
 
 Per configurare il tracciamento, l’istanza deve essere dichiarata e registrata con i server di tracciamento. [Ulteriori informazioni](../../installation/using/deploying-an-instance.md#tracking-server)
 
@@ -55,7 +55,7 @@ Puoi tenere traccia della ricezione dei messaggi e dell’attivazione dei colleg
 
 Le opzioni di tracciamento possono essere configurate attivando o disattivando gli URL tracciati. [Ulteriori informazioni](personalizing-url-tracking.md)
 
-**Personalizzazione dei collegamenti tracciati**
+**Personalizzazione collegamento tracciato**
 
 Le funzionalità di tracciamento di Campaign Classic ti consentono di aggiungere nelle e-mail collegamenti che possono essere personalizzati e che supportano il tracciamento. [Ulteriori informazioni](tracking-personalized-links.md)
 
@@ -107,15 +107,15 @@ Le diverse tabelle forniscono l’elenco degli indicatori utilizzati nei diversi
 
 <img src="assets/do-not-localize/icon-troubleshooting.svg" width="60px">
 
-I seguenti suggerimenti per la risoluzione dei problemi consentono di risolvere i problemi più comuni che si verificano durante l’utilizzo del tracciamento in Adobe Campaign Classic. Per una risoluzione dei problemi più avanzata, consulta [questa sezione](tracking-troubleshooting.md).
+I seguenti suggerimenti per la risoluzione dei problemi consentono di risolvere i problemi più comuni che si verificano durante l’utilizzo del tracciamento in Adobe Campaign Classic. Per una risoluzione dei problemi più avanzata, consultare [questa sezione](tracking-troubleshooting.md).
 
 * Verificare che il processo trackinglogd sia in esecuzione
 
   Questo processo legge dalla memoria condivisa IIS/server Web e scrive i registri di reindirizzamento.
 
-  Puoi accedervi dalla homepage selezionando la scheda Monitoraggio nella tua istanza. Puoi anche eseguire il seguente comando sull’istanza: `<user>@<instance>:~$ nlserver pdump`
+  Puoi accedervi dalla homepage selezionando la scheda Monitoraggio nella tua istanza. È inoltre possibile eseguire il comando seguente sull&#39;istanza: `<user>@<instance>:~$ nlserver pdump`
 
-  Se il processo trackinglogd non viene visualizzato nell&#39;elenco, avviarlo con il seguente comando nell&#39;istanza: `<user>@<instance>:~$ nlserver start trackinglogd`
+  Se il processo trackinglogd non viene visualizzato nell&#39;elenco, avviarlo con il comando seguente nell&#39;istanza: `<user>@<instance>:~$ nlserver start trackinglogd`
 
 * Verifica che il flusso di lavoro tecnico di tracciamento sia stato eseguito di recente.
 

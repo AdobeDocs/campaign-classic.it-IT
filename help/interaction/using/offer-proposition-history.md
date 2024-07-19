@@ -24,14 +24,14 @@ Una volta create le proposte di offerta, puoi visualizzare la cronologia delle p
 >
 >Questa funzionalità è visibile solo online e solo al responsabile della consegna.
 
-* A livello di offerta, nella **[!UICONTROL Edit]** , fare clic su **[!UICONTROL Propositions]**.
+* A livello di offerta, nella scheda **[!UICONTROL Edit]**, fare clic su **[!UICONTROL Propositions]**.
 
   ![](assets/offer_followup_006.png)
 
-* Dal profilo di un destinatario, fai clic sul pulsante **[!UICONTROL Propositions]** scheda.
+* Dal profilo di un destinatario, fare clic sulla scheda **[!UICONTROL Propositions]**.
 
   ![](assets/offer_followup_002.png)
 
-* A livello di spazio dell’offerta, fai clic su **[!UICONTROL Propositions]** scheda.
+* A livello di spazio dell&#39;offerta, fare clic sulla scheda **[!UICONTROL Propositions]**.
 
   ![](assets/offer_space_prop_001_b.png)

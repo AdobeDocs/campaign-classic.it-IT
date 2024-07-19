@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # Informazioni sulla gestione dei contenuti{#about-content-management}
 
-Il modulo Adobe Campaign Content Manager è un Campaign Classic specifico [pacchetto integrato](../../installation/using/installing-campaign-standard-packages.md) installabile per creare newsletter o siti Web ricorrenti. Può essere utile per creare, convalidare e pubblicare i messaggi.
+Il modulo Adobe Campaign Content Manager è un pacchetto predefinito [Campaign Classic specifico](../../installation/using/installing-campaign-standard-packages.md) che è possibile installare per creare newsletter o siti Web ricorrenti. Può essere utile per creare, convalidare e pubblicare i messaggi.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ La gestione dei contenuti offre i seguenti vantaggi:
 * Separazione del contenuto dei dati e modalità di presentazione (generato in formato XML),
 * Generazione di documenti in più formati (html, txt, XML, ecc.) basati su fogli di stile per garantire la conformità con i caratteri grafici,
 * Recupero e aggregazione automatica dei flussi di contenuti esterni,
-* Collaborazione con il flusso di lavoro per la convalida e il controllo dei dati.
+* Collaboration con workflow per la convalida e il controllo dei dati.
 
 Questa modalità di creazione dei contenuti comporta tuttavia alcuni vincoli, tra cui in particolare:
 

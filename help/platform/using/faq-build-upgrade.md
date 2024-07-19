@@ -17,7 +17,7 @@ ht-degree: 1%
 # Domande frequenti sull’aggiornamento della build {#build-upgrade-faq}
 
 
-Adobe Campaign viene aggiornato regolarmente. Se hai familiarità con la nostra pubblicazione [Note sulla versione](../../rn/using/rn-overview.md)Tuttavia, probabilmente sai che in media ogni anno vengono rilasciate 2/3 versioni secondarie complete di nuove funzioni, miglioramenti e correzioni. Inoltre, rilasciamo periodicamente build contenenti solo correzioni cumulative. Questa frequenza regolare di aggiornamenti mira a ottenere il massimo e più recente nelle tue mani, mantenendo l’ambiente completamente sicuro e ovviamente migliorando la tua esperienza con il nostro prodotto.
+Adobe Campaign viene aggiornato regolarmente. Se conosci le nostre [Note sulla versione](../../rn/using/rn-overview.md) pubblicate, probabilmente sai che ogni anno vengono rilasciate in media 2/3 versioni secondarie complete di nuove funzioni, miglioramenti e correzioni. Inoltre, rilasciamo periodicamente build contenenti solo correzioni cumulative. Questa frequenza regolare di aggiornamenti mira a ottenere il massimo e più recente nelle tue mani, mantenendo l’ambiente completamente sicuro e ovviamente migliorando la tua esperienza con il nostro prodotto.
 
 È fondamentale che i nostri clienti eseguano la versione più recente di Adobe Campaign. Consente inoltre ad Adobe di aiutare in modo molto più efficiente in caso di problemi: in genere, identificare, riprodurre e risolvere un problema in una build precedente richiede più tempo, per non parlare del fatto che alcuni problemi che potresti incontrare potrebbero essere già stati risolti in una build recente.
 
@@ -31,11 +31,11 @@ Per ulteriori informazioni, consulta [questa sezione](../../rn/using/rn-overview
 
 ## Qual è la versione più recente di Adobe Campaign Classic?
 
-L’ultima versione di Campaign Classic, con nuove funzioni e documentazione, è illustrata in dettaglio nella [Note sulla versione](../../rn/using/latest-release.md).
+La versione più recente di Campaign Classic, incluse le nuove funzionalità e la documentazione, è illustrata in dettaglio nelle [Note sulla versione](../../rn/using/latest-release.md) più recenti.
 
 ## Come posso sapere quale versione sto eseguendo?
 
-Controlla la versione da **[!UICONTROL Help > About...]** nella console del client di Adobe Campaign. Il **[!UICONTROL About]**  contiene informazioni dettagliate sulla versione e sulla build in esecuzione sia per la console che per il server.
+Controlla la versione dal menu **[!UICONTROL Help > About...]** nella console del client Adobe Campaign. La casella **[!UICONTROL About]** contiene informazioni dettagliate sulla versione e sulla build in esecuzione sia per la console che per il server.
 
 Per ulteriori informazioni, consulta [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
@@ -84,7 +84,7 @@ L’aggiornamento della build è un processo in due fasi:
 
 1. L’aggiornamento stesso: l’ambiente di produzione viene aggiornato. Questa fase viene generalmente eseguita in poche ore. Per gli ambienti molto complessi è previsto un tempo di inattività più lungo. In caso di problemi, viene definita una strategia di rollback che può essere eseguita.
 
-Per ulteriori informazioni, [fai riferimento a questo documento](https://helpx.adobe.com/it/campaign/kb/acc-build-upgrade.html).
+Per ulteriori informazioni, [fare riferimento a questo documento](https://helpx.adobe.com/it/campaign/kb/acc-build-upgrade.html).
 
 ## Quali risorse sono necessarie per l’aggiornamento della build?
 
@@ -105,9 +105,9 @@ Aggiorna la tua conoscenza dei flussi di lavoro e delle consegne dei percorsi cr
 
 Identifica i tempi di traffico ridotti o ridotti che sarebbero ideali per le finestre di manutenzione in quanto produrrebbero l’impatto aziendale più basso.
 
-Rivedi il nostro [elenco di controllo per l’aggiornamento della build seguente](#check-list) e i tuoi piani di test e assicurati che le risorse in grado di eseguire questi test siano disponibili entro 24-48 ore. del completamento di un aggiornamento.
+Controlla la [lista di controllo per l&#39;aggiornamento della build seguente](#check-list) e i tuoi piani di test e assicurati che le risorse in grado di eseguire questi test siano disponibili entro 24-48 ore. del completamento di un aggiornamento.
 
-Per ulteriori informazioni, [fai riferimento a questa sezione](../../production/using/build-upgrade.md).
+Per ulteriori informazioni, [consulta questa sezione](../../production/using/build-upgrade.md).
 
 ## Gli aggiornamenti possono essere eseguiti di notte o fuori orario di lavoro?
 
@@ -155,13 +155,13 @@ Dipende dalle dimensioni del backup del database. Il tempo medio necessario per 
 
 ## Quali tipi di test vengono eseguiti sul sistema dopo l’aggiornamento?
 
-Consulta la sezione [elenco di controllo per l’aggiornamento della build seguente](#check-list).
+Consulta l&#39;[elenco di controllo per l&#39;aggiornamento della build seguente](#check-list).
 
 ## Quale tipo di test devo eseguire dopo l’aggiornamento?
 
 Gli ambienti di sviluppo e staging vengono aggiornati in sequenza o insieme, ma è necessario un abbonamento prima di aggiornare l’istanza di produzione. Questo consente a ciascun cliente di eseguire test approfonditi prima di approvare qualsiasi modifica alla produzione.
 
-Vedi elenco [elenco di controllo per l’aggiornamento della build seguente](#check-list). I clienti devono eseguire test simili e quelli di cui potrebbero aver bisogno per l’ambiente.
+Vedi l&#39;elenco di controllo per l&#39;aggiornamento della build [di seguito](#check-list). I clienti devono eseguire test simili e quelli di cui potrebbero aver bisogno per l’ambiente.
 
 ## Con quale frequenza devo eseguire un aggiornamento della build?
 
@@ -173,7 +173,7 @@ Sì. Il server viene arrestato durante un aggiornamento per garantire l&#39;inte
 
 ## Chi devo contattare per aprire il ticket di aggiornamento della build?
 
-Se riscontri problemi dopo un aggiornamento della build, contatta [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). L’Assistenza clienti pianifica le date di build e apre i ticket relativi all’aggiornamento della build.
+Se riscontri problemi dopo un aggiornamento della build, contatta [l&#39;Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). L’Assistenza clienti pianifica le date di build e apre i ticket relativi all’aggiornamento della build.
 
 Ulteriori informazioni in [Opzioni di assistenza e supporto per Campaign Classic](../../support.md)
 
@@ -192,9 +192,12 @@ Ulteriori informazioni in [Opzioni di assistenza e supporto per Campaign Classic
 
 * È possibile accedere al server? Controlla che la console client di Campaign funzioni senza pop-up di errore/avviso.
 * Dopo l’aggiornamento, assicurati di utilizzare la stessa versione della console della versione di build.
-* Esistono applicazioni web che inseriscono dati nel database di Campaign? In tal caso, eseguili e verifica che possano inserire nuovi record tramite API.
-* È possibile inviare un messaggio e-mail di test correttamente? Crea una nuova consegna utilizzando un modello noto, invialo a un destinatario del test, verifica la personalizzazione, annulla collegamento, pagina mirror tutto funziona.
-* Sono in esecuzione tutti i flussi di lavoro dei percorsi critici? Controlla i flussi di lavoro, apri il giornale di registrazione del flusso di lavoro, verifica che non vi siano errori.
+* Esistono applicazioni web che inseriscono dati nel database di Campaign? In tal caso, eseguili e
+verifica di poter inserire nuovi record tramite API.
+* È possibile inviare un messaggio e-mail di test correttamente? Crea una nuova consegna utilizzando un modello noto, invialo a
+un destinatario del test, verifica la personalizzazione, annulla collegamento, pagina mirror tutto funziona.
+* Sono in esecuzione tutti i flussi di lavoro dei percorsi critici? Controlla flussi di lavoro, apri giornale di registrazione flussi di lavoro, verifica
+che non ci sono errori.
 * Tutte le cartelle sono presenti, visibili e accessibili? Sfoglia diverse cartelle e seleziona.
 tutti i contenuti vengono visualizzati e presenti.
 * Le consegne vengono consegnate con il fuso orario corretto?

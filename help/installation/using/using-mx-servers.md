@@ -36,9 +36,9 @@ Quando si invia un&#39;e-mail, il server software stabilisce una connessione con
 
 Nel protocollo di connessione devono essere rispettate le norme per prevenire lo spamming e il monopolio dei server. I più importanti sono i seguenti:
 
-* **Numero massimo di connessioni consentite**: quando questo numero viene rispettato, gli IP non sono nel inserisco nell&#39;elenco Bloccati di e le e-mail non vengono rifiutate a causa di connessioni aggiuntive.
-* **Numero massimo di messaggi**: durante la connessione, è necessario definire il numero di messaggi consentiti da inviare. Se questo numero non è definito, il server ne invierà il maggior numero possibile. Questo comporta l’identificazione come spammer e l’aggiunta al elenco Bloccati da parte dell’ISP.
-* **Messaggi all&#39;ora**: per corrispondere alla tua e-reputazione, Adobe Campaign controllerà il numero di e-mail che gli IP saranno in grado di inviare all’ora. Questo sistema ti proteggerà dal rifiuto delle e-mail e/o dal inserisco nell&#39;elenco Bloccati di posta elettronica.
+* **Numero massimo di connessioni consentite**: se questo numero viene rispettato, gli IP non sono nel inserisco nell&#39;elenco Bloccati di e le e-mail non vengono rifiutate a causa di connessioni aggiuntive.
+* **Numero massimo di messaggi**: durante la connessione è necessario definire il numero di messaggi consentito per l&#39;invio. Se questo numero non è definito, il server ne invierà il maggior numero possibile. Questo comporta l’identificazione come spammer e l’aggiunta al inserisco nell&#39;elenco Bloccati di da parte dell’ISP.
+* **Messaggi all&#39;ora**: per corrispondere alla tua e-reputazione, Adobe Campaign controllerà il numero di e-mail che gli IP saranno in grado di inviare all&#39;ora. Questo sistema ti proteggerà dal rifiuto delle e-mail e/o dall’inserisco nell&#39;elenco Bloccati delle e-mail di accesso e di accesso ai dati di accesso.
 
 ## E-mail in entrata
 
@@ -50,21 +50,21 @@ Nel protocollo di connessione devono essere rispettate le norme per prevenire lo
 
 L’indirizzo di errore elaborerà i mancati recapiti inviati dagli ISP. Il processo analizza diversi codici di errore SMTP e applica l’azione giusta secondo lo standard RegEx.
 
-Ad esempio, un indirizzo e-mail ha un feedback &quot;550 Utente sconosciuto&quot; inviato da un ISP. Questo codice di errore viene elaborato dall’indirizzo di errore di Adobe Campaign (indirizzo del percorso di ritorno). Questo errore viene quindi confrontato con lo standard RegEx e verrà applicata la regola giusta. L’e-mail è considerata *Mancato recapito permanente* (corrispondente al tipo) e quindi *Utente sconosciuto* (corrispondente al motivo) e messo in quarantena dopo il primo ciclo nel sistema.
+Ad esempio, un indirizzo e-mail ha un feedback &quot;550 Utente sconosciuto&quot; inviato da un ISP. Questo codice di errore viene elaborato dall’indirizzo di errore di Adobe Campaign (indirizzo del percorso di ritorno). Questo errore viene quindi confrontato con lo standard RegEx e verrà applicata la regola giusta. L&#39;e-mail è considerata un *messaggio non recapitato* (corrispondente al tipo) e quindi *Utente sconosciuto* (corrispondente al motivo) ed è stato messo in quarantena dopo il primo ciclo nel sistema.
 
 ### Come viene gestita da Adobe Campaign?
 
 Adobe Campaign gestisce questo processo con una corrispondenza tra un tipo di errore e un motivo:
 
-* **[!UICONTROL User Unknown]**: indirizzo corretto dal punto di vista sintattico, ma inesistente. Questo errore viene classificato come mancato recapito permanente e messo in quarantena all’interno del primo errore.
+* **[!UICONTROL User Unknown]**: indirizzo corretto dal punto di vista sintattico ma inesistente. Questo errore viene classificato come mancato recapito permanente e messo in quarantena all’interno del primo errore.
 * **[!UICONTROL Mailbox full]**: cassetta postale che ha raggiunto la capacità massima. Questo errore può anche indicare che l&#39;utente non utilizza più questa cassetta postale. Questo errore viene classificato come messaggio non recapitato e messo in quarantena entro il terzo errore, quindi rimosso dalla quarantena dopo un periodo di 30 giorni.
-* **[!UICONTROL Inactive User]**: la cassetta postale è stata disattivata dall’ISP a causa di un utente inattivo negli ultimi 6 mesi. Questo errore viene classificato come messaggio non recapitato e messo in quarantena all’interno del terzo errore.
-* **[!UICONTROL Invalid domain]**: il dominio nell’indirizzo e-mail non esiste. Questo errore viene classificato come messaggio non recapitato e messo in quarantena all’interno del terzo errore.
-* **[!UICONTROL Refused]**: l’ISP si è rifiutato di inviare l’e-mail ai propri utenti. Questo errore è classificato come messaggio non recapitato e non viene messo in quarantena poiché non è collegato all’indirizzo e-mail ma all’IP o alla reputazione di un dominio.
+* **[!UICONTROL Inactive User]**: la cassetta postale è stata disattivata dall&#39;ISP a causa di un utente inattivo negli ultimi 6 mesi. Questo errore viene classificato come messaggio non recapitato e messo in quarantena all’interno del terzo errore.
+* **[!UICONTROL Invalid domain]**: il dominio nell&#39;indirizzo e-mail non esiste. Questo errore viene classificato come messaggio non recapitato e messo in quarantena all’interno del terzo errore.
+* **[!UICONTROL Refused]**: l&#39;ISP ha rifiutato di inviare l&#39;e-mail ai propri utenti. Questo errore è classificato come messaggio non recapitato e non viene messo in quarantena poiché non è collegato all’indirizzo e-mail ma all’IP o alla reputazione di un dominio.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sui tipi e sui motivi di errori di consegna, consulta questa [sezione](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>Per ulteriori informazioni sui tipi e sui motivi degli errori di consegna, consulta questa [sezione](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
 ## Istanza di recapito messaggi {#deliveratbility-env}
 
@@ -81,11 +81,11 @@ La modalità personalizzata è per i client avanzati che desiderano impostare le
 ## Esempi di mancato recapito
 
 * **Utente sconosciuto** (mancato recapito permanente): 550 5.1.1 ... Utente sconosciuto {mx003}
-* **Cassetta postale piena** (mancati recapiti non permanenti): 550 5.2.2 Quota utente superata
-* **Cassetta postale inattiva** (messaggio non recapitato): 550 5.7.1 : indirizzo del destinatario rifiutato: MailBox inattiva, non aperto per più di 6 mesi
-* **Dominio non valido** (mancati recapiti non permanenti): query DNS non riuscita per &#39;ourdan.com&#39;
-* **Rifiutato** (mancato recapito non permanente): mancato recapito e-mail in entrata (la regola &#39;Feedback_loop_Hotmail&#39; ha restituito un mancato recapito corrispondente)
-* **Non raggiungibile** (mancati recapiti non permanenti): 421 4.16.55 [TS01] Messaggi da x.x.x.x temporaneamente differiti a causa di eccessivi reclami degli utenti
+* **Cassetta postale piena** (mancato recapito non permanente): quota utente 550 5.2.2 superata
+* **Cassetta postale inattiva** (messaggio non recapitato): 550 5.7.1: indirizzo destinatario rifiutato: MailBox inattiva, non recapitato per più di 6 mesi
+* **Dominio non valido** (mancato recapito non permanente): query DNS non riuscita per &#39;ourdan.com&#39;
+* **Rifiutato** (mancato recapito non permanente): il mancato recapito dell&#39;e-mail in entrata (regola &#39;Feedback_loop_Hotmail&#39; corrispondente a questo mancato recapito)
+* **Non raggiungibile** (mancato recapito non permanente): 421 4.16.55 [TS01] I messaggi da x.x.x.x sono stati temporaneamente posticipati a causa di un numero eccessivo di reclami da parte degli utenti
 
 **Argomenti correlati:**
 * [Configurazione MX](../../installation/using/email-deliverability.md#mx-configuration)

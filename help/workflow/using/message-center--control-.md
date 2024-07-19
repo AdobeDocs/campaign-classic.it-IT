@@ -15,7 +15,7 @@ ht-degree: 1%
 
 
 
-Il flusso di lavoro descritto di seguito viene pianificato per l’esecuzione ogni ora. Viene installato con **Centro messaggi - Controllo** per impostazione predefinita.
+Il flusso di lavoro descritto di seguito viene pianificato per l’esecuzione ogni ora. Per impostazione predefinita, è installato con il modulo **Centro messaggi - Controllo**.
 
 
 Per ulteriori informazioni, a seconda della versione di Campaign in uso, consulta le sezioni seguenti:
@@ -33,8 +33,8 @@ Per ulteriori informazioni, a seconda della versione di Campaign in uso, consult
    <td> <strong>Descrizione</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> Centro messaggi &lt;external_account_name&gt;<br /> </td> 
-   <td> mcSynch_&lt;external_account_name&gt;<br /> </td> 
+   <td> Centro messaggi &lt;nome_account_esterno&gt;<br /> </td> 
+   <td> mcSynch_&lt;nome_account_esterno&gt;<br /> </td> 
    <td> Questo flusso di lavoro:<br /> 
     <ul> 
      <li> <p>recupera l’elenco degli eventi elaborati dalle operazioni.</p> </li> 

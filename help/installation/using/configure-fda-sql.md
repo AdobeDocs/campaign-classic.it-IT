@@ -15,12 +15,12 @@ ht-degree: 1%
 
 
 
-Utilizzare Campaign **Federated Data Access** (FDA) per elaborare le informazioni memorizzate in un database esterno di Microsoft SQL Server. Segui i passaggi seguenti per configurare l’accesso a [!DNL Microsoft SQL Server].
+Utilizzare l&#39;opzione **Federated Data Access** (FDA) di Campaign per elaborare le informazioni archiviate in un database esterno di Microsoft SQL Server. Per configurare l&#39;accesso a [!DNL Microsoft SQL Server], eseguire la procedura seguente.
 
-1. Configura [!DNL Microsoft SQL Server] il [CentOS](#sql-centos).
-1. Configura [!DNL Microsoft SQL Server] il [Linux](#sql-linux).
-1. Configura [!DNL Microsoft SQL Server] il [Windows](#sql-windows).
-1. Configurare [!DNL Microsoft SQL Server] [account esterno](#sql-external) in Campaign
+1. Configura [!DNL Microsoft SQL Server] in [CentOS](#sql-centos).
+1. Configura [!DNL Microsoft SQL Server] in [Linux](#sql-linux).
+1. Configura [!DNL Microsoft SQL Server] in [Windows](#sql-windows).
+1. Configura l&#39;[!DNL Microsoft SQL Server] [account esterno](#sql-external) in Campaign
 
 ## Microsoft SQL Server su CentOS {#sql-centos}
 
@@ -28,7 +28,7 @@ Utilizzare Campaign **Federated Data Access** (FDA) per elaborare le informazion
 >
 > [!DNL Microsoft SQL Server] è disponibile su CentOS 7 e 6.
 
-Per configurare [!DNL Microsoft SQL Server] su CentOS, segui i passaggi seguenti:
+Per configurare [!DNL Microsoft SQL Server] su CentOS, eseguire la procedura seguente:
 
 1. Scaricare e installare il driver ODBC SQL con il comando seguente:
 
@@ -40,15 +40,15 @@ Per configurare [!DNL Microsoft SQL Server] su CentOS, segui i passaggi seguenti
    sudo ACCEPT_EULA=Y yum install msodbcsql
    ```
 
-1. In Adobe Campaign, puoi quindi configurare i [!DNL Microsoft SQL Server] account esterno. Per ulteriori informazioni su come configurare l’account esterno, consulta [questa sezione](#sql-external).
+1. In Adobe Campaign, puoi quindi configurare l&#39;account esterno [!DNL Microsoft SQL Server]. Per ulteriori informazioni su come configurare l&#39;account esterno, consulta [questa sezione](#sql-external).
 
 ## Microsoft SQL Server su Linux {#sql-linux}
 
 >[!NOTE]
 >
-> Se utilizzi una versione precedente di Adobe Campaign (precedente alla versione 7.2.1), devi installare `unix ODBC drivers`.
+> Se si esegue una versione precedente di Adobe Campaign (precedente alla versione 7.2.1), è necessario installare `unix ODBC drivers`.
 
-1. Scaricare il driver MS ODBC da [questa pagina](https://packages.microsoft.com/ubuntu/16.04/prod/pool/main/m/msodbcsql17/).
+1. Scarica il driver MS ODBC da [questa pagina](https://packages.microsoft.com/ubuntu/16.04/prod/pool/main/m/msodbcsql17/).
 
 1. Esegui il comando seguente come utente root:
 
@@ -58,60 +58,60 @@ Per configurare [!DNL Microsoft SQL Server] su CentOS, segui i passaggi seguenti
    # accept the license terms
    ```
 
-1. In Adobe Campaign, puoi quindi configurare i [!DNL Microsoft SQL Server] account esterno. Per ulteriori informazioni su come configurare l’account esterno, consulta [questa sezione](#sql-external).
+1. In Adobe Campaign, puoi quindi configurare l&#39;account esterno [!DNL Microsoft SQL Server]. Per ulteriori informazioni su come configurare l&#39;account esterno, consulta [questa sezione](#sql-external).
 
 ## Microsoft SQL Server su Windows {#sql-windows}
 
 Per configurare [!DNL Microsoft SQL Server] in Windows:
 
-1. In Windows, fai clic su **[!UICONTROL Control Panel]** &#39;>&#39; **[!UICONTROL System and Security]** &#39;>&#39; **[!UICONTROL Administrative Tools]**&#39;>&#39; **[!UICONTROL ODBC Data Sources (64-bit)]**.
+1. In Windows, fare clic su **[!UICONTROL Control Panel]** &#39;>&#39; **[!UICONTROL System and Security]** &#39;>&#39; **[!UICONTROL Administrative Tools]**&#39;>&#39; **[!UICONTROL ODBC Data Sources (64-bit)]**.
 
-1. Dalla sezione **[!UICONTROL ODBC Data Sources (64-bit)]** nuova finestra, fai clic su **[!UICONTROL Add...]**.
+1. Nella nuova finestra **[!UICONTROL ODBC Data Sources (64-bit)]**, fare clic su **[!UICONTROL Add...]**.
 
-1. Verificare se SQL Server Native Client v11 è elencato in **[!UICONTROL Create New Data Source]** finestra.
+1. Verificare se SQL Server Native Client v11 è elencato nella finestra **[!UICONTROL Create New Data Source]**.
 
 1. Se il client nativo di SQL Server non è elencato, è possibile scaricarlo in [questa pagina](https://www.microsoft.com/en-my/download/details.aspx?id=36434).
 
-1. In Adobe Campaign, puoi quindi configurare i [!DNL Microsoft SQL Server] account esterno. Per ulteriori informazioni su come configurare l’account esterno, consulta [questa sezione](#sql-external).
+1. In Adobe Campaign, puoi quindi configurare l&#39;account esterno [!DNL Microsoft SQL Server]. Per ulteriori informazioni su come configurare l&#39;account esterno, consulta [questa sezione](#sql-external).
 
 ## Account esterno di Microsoft SQL Server {#sql-external}
 
-Devi creare un [!DNL Microsoft SQL Server] account esterno per collegare la tua istanza Campaign al tuo [!DNL Microsoft SQL Server] database esterno.
+È necessario creare un account esterno [!DNL Microsoft SQL Server] per collegare l&#39;istanza Campaign al database esterno [!DNL Microsoft SQL Server].
 
-1. Da campagna **[!UICONTROL Explorer]**, fai clic su **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. Dalla campagna **[!UICONTROL Explorer]**, fare clic su **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
 1. Fai clic su **[!UICONTROL New]**.
 
-1. Seleziona **[!UICONTROL External database]** come dell’account esterno **[!UICONTROL Type]**.
+1. Seleziona **[!UICONTROL External database]** come **[!UICONTROL Type]** del tuo account esterno.
 
-1. Sotto **[!UICONTROL Configuration]**, seleziona [!DNL Microsoft SQL Server] dal **[!UICONTROL Type]** a discesa.
+1. In **[!UICONTROL Configuration]**, selezionare [!DNL Microsoft SQL Server] dal menu a discesa **[!UICONTROL Type]**.
 
    ![](assets/sql.png)
 
-1. Configurare **[!UICONTROL Microsoft SQL Server]** autenticazione account esterno:
+1. Configurare l&#39;autenticazione dell&#39;account esterno **[!UICONTROL Microsoft SQL Server]**:
 
-   * **[!UICONTROL Server]**: URL del [!DNL Microsoft SQL Server] server.
+   * **[!UICONTROL Server]**: URL del server [!DNL Microsoft SQL Server].
 
-   * **[!UICONTROL Account]**: nome dell’utente.
+   * **[!UICONTROL Account]**: nome dell&#39;utente.
 
-   * **[!UICONTROL Password]**: password dell’account utente.
+   * **[!UICONTROL Password]**: password account utente.
 
    * **[!UICONTROL Database]**: nome del database (facoltativo).
 
-   * **[!UICONTROL Timezone]**: fuso orario impostato in [!DNL Microsoft SQL Server]. [Ulteriori informazioni](https://docs.microsoft.com/en-us/sql/t-sql/functions/current-timezone-transact-sql?view=sql-server-ver15)
+   * **[!UICONTROL Timezone]**: Fuso orario impostato in [!DNL Microsoft SQL Server]. [Ulteriori informazioni](https://docs.microsoft.com/en-us/sql/t-sql/functions/current-timezone-transact-sql?view=sql-server-ver15)
 
-1. Fai clic su **[!UICONTROL Parameters]** , quindi la scheda **[!UICONTROL Deploy functions]** per creare funzioni.
+1. Fare clic sulla scheda **[!UICONTROL Parameters]** e quindi sul pulsante **[!UICONTROL Deploy functions]** per creare le funzioni.
 
    >[!NOTE]
    >
    >Affinché tutte le funzioni siano disponibili, è necessario creare le funzioni SQL di Adobe Campaign nel database remoto. Per ulteriori informazioni, consulta questa [pagina](../../configuration/using/adding-additional-sql-functions.md).
 
-1. Clic **[!UICONTROL Save]** al termine della configurazione.
+1. Al termine della configurazione, fai clic su **[!UICONTROL Save]**.
 
 Il connettore supporta le seguenti opzioni:
 
 | Opzione | Descrizione |
 |---|---|
-| Autenticazione | Tipo di autenticazione supportato dal connettore. Valore attualmente supportato: ActiveDirectoryMSI. <br> Per ulteriori informazioni, consulta l’esempio 8 di [Documentazione di Microsoft](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings). |
-| Crittografa | Specifica se le connessioni utilizzano la crittografia TLS in rete. I valori possibili sono **sì/obbligatorio (18.0 e versioni successive)**, **no/optional (18.0 e versioni successive)**, e **strict (18.0 e versioni successive)**. Il valore predefinito è impostato su **sì** nella versione 18.0 o successiva e **no** nelle versioni precedenti. <br>Per ulteriori informazioni, consulta [Documentazione di Microsoft](https://docs.microsoft.com/en-us/sql/connect/odbc/dsn-connection-string-attribute?view=azure-sqldw-latest#encrypt). |
-| TrustServerCertificate | Abilita la crittografia utilizzando un certificato server autofirmato, se utilizzato con **Crittografa**. <br>Valori accettati: **sì** o **no** (valore predefinito, che indica che il certificato del server verrà convalidato). |
+| Autenticazione | Tipo di autenticazione supportato dal connettore. Valore attualmente supportato: ActiveDirectoryMSI. <br> Per ulteriori informazioni, consulta l&#39;esempio 8 della [documentazione di Microsoft](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings). |
+| Crittografa | Specifica se le connessioni utilizzano la crittografia TLS in rete. I valori possibili sono **yes/required (18.0 e versioni successive)**, **no/optional (18.0 e versioni successive)** e **strict (18.0 e versioni successive)**. Il valore predefinito è impostato su **yes** nella versione 18.0 e successive e su **no** nelle versioni precedenti. <br>Per ulteriori informazioni, consulta la [documentazione di Microsoft](https://docs.microsoft.com/en-us/sql/connect/odbc/dsn-connection-string-attribute?view=azure-sqldw-latest#encrypt). |
+| TrustServerCertificate | Abilita la crittografia utilizzando un certificato server autofirmato, se utilizzato con **Crittografia**. <br>Valori accettati: **yes** o **no** (valore predefinito, che indica la convalida del certificato del server). |

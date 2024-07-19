@@ -17,9 +17,9 @@ ht-degree: 4%
 
 
 
-Per impostazione predefinita, i nuovi flussi di lavoro si basano su un modello di flusso di lavoro preconfigurato e basato su una tabella dei destinatari (nms:recipient). Per basarli automaticamente sulla tabella personalizzata dei destinatari a cui si fa riferimento nel **Nms_DefaultRcpSchema** (vedere [Configurazione dell’interfaccia](../../configuration/using/configuring-the-interface.md) sezione ), è necessario creare un nuovo modello di workflow.
+Per impostazione predefinita, i nuovi flussi di lavoro si basano su un modello di flusso di lavoro preconfigurato e basato su una tabella dei destinatari (nms:recipient). Per basarli automaticamente sulla tabella personalizzata dei destinatari a cui si fa riferimento nell&#39;opzione **Nms_DefaultRcpSchema** (vedere la [sezione Configurazione dell&#39;interfaccia](../../configuration/using/configuring-the-interface.md)), è necessario creare un nuovo modello di flusso di lavoro.
 
-Creare un nuovo modello tramite **[!UICONTROL Resources > Templates > Workflow templates]** nodo. Nelle proprietà del modello, le dimensioni fornite corrispondono alla tabella dei destinatari esterni.
+Crea un nuovo modello tramite il nodo **[!UICONTROL Resources > Templates > Workflow templates]**. Nelle proprietà del modello, le dimensioni fornite corrispondono alla tabella dei destinatari esterni.
 
 Basando i nuovi flussi di lavoro su un modello creato di recente, la tabella personalizzata verrà selezionata per impostazione predefinita per le dimensioni di targeting e filtro globali del flusso di lavoro.
 

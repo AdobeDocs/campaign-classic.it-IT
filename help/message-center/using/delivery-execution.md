@@ -26,7 +26,7 @@ Nell’istanza di esecuzione, una volta completata la fase di arricchimento e do
 >
 >L’MTA dà priorità all’elaborazione dei messaggi transazionali rispetto a qualsiasi altra consegna.
 
-Tutte le consegne sono raggruppate in **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]** cartella.
+Tutte le consegne sono raggruppate nella cartella **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]**.
 
 ![](assets/messagecenter_deliveries_execinstances_001.png)
 
@@ -36,13 +36,13 @@ Per impostazione predefinita, sono ordinate in sottocartelle per mese di consegn
 
 >[!NOTE]
 >
->Per le installazioni in hosting o ibride, se hai effettuato l’aggiornamento al [MTA avanzato](../../delivery/using/sending-with-enhanced-mta.md), tutti i messaggi transazionali possono essere inviati anche con l’MTA avanzato di Adobe Campaign per migliorare il recapito messaggi, la velocità effettiva e la gestione delle e-mail non consegnate. Tutti gli impatti sono gli stessi dei messaggi di marketing standard.
+>Per le installazioni in hosting o ibride, se hai eseguito l&#39;aggiornamento all&#39;[MTA avanzato](../../delivery/using/sending-with-enhanced-mta.md), tutti i messaggi transazionali possono essere inviati anche con l&#39;MTA avanzato di Adobe Campaign per migliorare il recapito messaggi, la velocità effettiva e la gestione dei messaggi non recapitati. Tutti gli impatti sono gli stessi dei messaggi di marketing standard.
 
 ## Monitoraggio dei messaggi transazionali {#transactional-message-monitoring}
 
-Per monitorare i messaggi transazionali, seleziona la [registri di consegna](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
+Per monitorare i messaggi transazionali, controlla i [registri di consegna](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
 
-Le consegne transazionali inviate dall’istanza di esecuzione vengono sincronizzate nuovamente con l’istanza di controllo tramite un flusso di lavoro tecnico (**[!UICONTROL Message Center execution instance]**) che viene eseguito ogni ora.
+Le consegne transazionali inviate dall&#39;istanza di esecuzione vengono sincronizzate con l&#39;istanza di controllo tramite un flusso di lavoro tecnico (**[!UICONTROL Message Center execution instance]**) che viene eseguito ogni ora.
 
 >[!NOTE]
 >
@@ -75,4 +75,4 @@ To summarize, the deliveries weekly accumulate the events based on the latest ev
 
 Therefore, when extracting transactional messaging delivery logs from the control instance, the delivery ID associated with each delivery log ID changes every week.-->
 
-Per monitorare l’attività e l’esecuzione delle istanze di esecuzione, vedi [Rapporti di messaggistica transazionale](../../message-center/using/about-transactional-messaging-reports.md).
+Per monitorare l&#39;attività e l&#39;esecuzione delle istanze di esecuzione, vedere [Rapporti sulla messaggistica transazionale](../../message-center/using/about-transactional-messaging-reports.md).

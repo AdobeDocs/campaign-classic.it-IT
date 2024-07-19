@@ -43,15 +43,15 @@ A seconda dell’implementazione, puoi riscontrare diversi problemi comuni.
    <td> pubblico<br /> </td> 
   </tr> 
   <tr> 
-   <td> flussi di lavoro per campagne, flussi di lavoro di targeting<br /> </td> 
-   <td> workflow<br /> </td> 
+   <td> flussi di lavoro per campagne, targeting dei flussi di lavoro<br /> </td> 
+   <td> flussi di lavoro<br /> </td> 
   </tr> 
   <tr> 
    <td> operazioni<br /> </td> 
    <td> campagne<br /> </td> 
   </tr> 
   <tr> 
-   <td> applicazioni web<br /> </td> 
+   <td> applicazioni Web<br /> </td> 
    <td> pagine di destinazione<br /> </td> 
   </tr> 
   <tr> 
@@ -77,25 +77,25 @@ A seconda dell’implementazione, puoi riscontrare diversi problemi comuni.
 
   Per impostazione predefinita, 20 campi della tabella nms:recipient sono sincronizzati con Campaign Standard. Consulta l’elenco dettagliato dei campi sincronizzati. Qualsiasi campo aggiuntivo da recuperare in Campaign Standard deve essere mappato e configurato dal tuo consulente.
 
-  Per assicurarti che il campo da utilizzare sia disponibile, puoi controllare la definizione della risorsa profilo da **[!UICONTROL Administration > Development > Diagnosis > Data schemas]**.
+  Per assicurarsi che il campo da utilizzare sia disponibile, è possibile controllare la definizione della risorsa profilo da **[!UICONTROL Administration > Development > Diagnosis > Data schemas]**.
 
   Inoltre, tutti i dati allegati ai destinatari e memorizzati nelle tabelle relative a nms:recipients non vengono sincronizzati per impostazione predefinita con Campaign Standard.
 
-  Per poter continuare a utilizzare i dati correlati, puoi eseguire il targeting in Campaign v7 e aggiungere dati aggiuntivi come spiegato nella [Sincronizzare i tipi di pubblico](../../integrations/using/synchronizing-audiences.md) oppure puoi rivolgerti al tuo consulente per scoprire le possibilità di personalizzazione.
+  Per poter continuare a utilizzare i dati correlati, puoi eseguire il targeting in Campaign v7 e aggiungere dati aggiuntivi come descritto nella sezione [Sincronizzare i tipi di pubblico](../../integrations/using/synchronizing-audiences.md) oppure puoi fare riferimento al tuo consulente per esplorare le possibilità di personalizzazione.
 
-* **In Campaign v7, utilizzo una dimensione di profilo diversa da nms:recipient predefinita, come posso sincronizzarle con Campaign Standard?**
+* **Sto utilizzando una dimensione di profilo diversa da nms:recipient predefinita in Campaign v7, come posso sincronizzarla con Campaign Standard?**
 
-  Campaign Standard utilizza una risorsa di targeting univoca denominata **profili**. L’implementazione di base della funzione Campaign Standard Connect fornisce una mappatura predefinita tra i destinatari di Campaign v7 e i profili di Campaign Standard.
+  Campaign Standard utilizza una risorsa di targeting univoca denominata **profiles**. L’implementazione di base della funzione Campaign Standard Connect fornisce una mappatura predefinita tra i destinatari di Campaign v7 e i profili di Campaign Standard.
 
   Se utilizzi un’altra dimensione di profilo in Campaign v7, o se ne utilizzi diverse, tutte devono essere mappate con i profili di Campaign Standard. Per rispondere a questa esigenza specifica, rivolgiti al tuo consulente.
 
-* **Voglio condividere un elenco di profili con Campaign Standard tramite un flusso di lavoro, ma non posso trovare il mio pubblico in Campaign Standard**.
+* **Desidero condividere un elenco di profili con Campaign Standard tramite un flusso di lavoro, ma non riesco a trovare il mio pubblico in Campaign Standard**.
 
-  I tipi di pubblico si trovano in **[!UICONTROL Audiences]** in Campaign Standard. Hanno l’etichetta specificata nel **[!UICONTROL List update]** attività nel flusso di lavoro di Campaign v7. Sono soggette alla mappatura delle cartelle definita durante l’implementazione.
+  I tipi di pubblico si trovano nel menu **[!UICONTROL Audiences]** in Campaign Standard. Hanno l&#39;etichetta specificata nell&#39;attività **[!UICONTROL List update]** nel flusso di lavoro di Campaign v7. Sono soggette alla mappatura delle cartelle definita durante l’implementazione.
 
-  La prima cosa da verificare è se il flusso di lavoro è stato completato senza errori. Se noti un errore in **[!UICONTROL List update]** significa che la sincronizzazione con Campaign Standard potrebbe non essere riuscita. Per visualizzare ulteriori dettagli su ciò che è andato storto, vai a **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**. Questa cartella contiene flussi di lavoro di sincronizzazione attivati da **[!UICONTROL List update]** esecuzione dell’attività.
+  La prima cosa da verificare è se il flusso di lavoro è stato completato senza errori. Se si verifica un errore nell&#39;attività **[!UICONTROL List update]**, è possibile che la sincronizzazione con Campaign Standard non sia riuscita. Per visualizzare ulteriori dettagli sul problema, passa a **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**. Questa cartella contiene flussi di lavoro di sincronizzazione attivati dall&#39;esecuzione dell&#39;attività **[!UICONTROL List update]**.
 
-  Inoltre, assicurati che le **[!UICONTROL Share with ACS]** l&#39;opzione è selezionata in **[!UICONTROL List update]** e che il flusso di lavoro sia stato eseguito correttamente.
+  Verificare inoltre che l&#39;opzione **[!UICONTROL Share with ACS]** sia selezionata nell&#39;attività **[!UICONTROL List update]** e che il flusso di lavoro sia stato eseguito correttamente.
 
   I profili dei destinatari contenuti nell’elenco devono essere stati sincronizzati con Campaign Standard prima dell’esecuzione del flusso di lavoro. Una volta condiviso con Campaign Standard, i destinatari dell’elenco vengono riconciliati con i profili Campaign Standard, il che significa che devono esistere lì. I destinatari dell’elenco che non possono essere riconciliati con i profili in Campaign Standard vengono ignorati.
 
@@ -108,7 +108,7 @@ A seconda dell’implementazione, puoi riscontrare diversi problemi comuni.
    * **[!UICONTROL acsDefaultRelayAccount]** in Campaign Standard.
    * **[!UICONTROL acsDefaultAccount]** in Campaign v7.
 
-* **Non sono disponibile gruppi di sicurezza per la mappatura di cartelle tra Campaign v7 e Campaign Standard.**
+* **Non sono disponibile gruppi di sicurezza per il mapping di cartelle tra Campaign v7 e Campaign Standard.**
 
   Devi prima sincronizzare i gruppi di sicurezza da **[!UICONTROL Administration > ACS Connector > Rights management > Security groups]**. Questa azione controlla i gruppi di sicurezza disponibili in Campaign Standard. Una volta sincronizzati, è possibile trovare i gruppi di sicurezza durante la configurazione della mappatura delle cartelle.
 
@@ -116,10 +116,10 @@ A seconda dell’implementazione, puoi riscontrare diversi problemi comuni.
 
   Le risorse sincronizzate da Campaign v7 sono in modalità di sola lettura in Campaign Standard, per garantire la coerenza dei dati. Se devi modificare uno di questi elementi, puoi farlo in Campaign v7 e quindi replicare la modifica in Campaign Standard.
 
-* **Si verificano errori in [ACS] Flusso di lavoro di replica del registro di consegna del profilo. Cosa devo fare?**
+* **Si sono verificati errori nel flusso di lavoro di replica del registro di consegna del profilo [ACS]. Cosa devo fare?**
 
-  Se per inviare e-mail con URL tracciati vengono utilizzate sia le istanze di Campaign Classic che di Campaign Standard, durante la sincronizzazione potrebbe verificarsi un problema relativo agli ID di tag URL duplicati. In questo caso, il **[ACS] Replica del registro di consegna del profilo** Il flusso di lavoro di (newRcpDeliveryLogReplication) non riesce e viene restituito il seguente errore:
+  Se per inviare e-mail con URL tracciati vengono utilizzate sia le istanze di Campaign Classic che di Campaign Standard, durante la sincronizzazione potrebbe verificarsi un problema relativo agli ID di tag URL duplicati. In questo caso, il flusso di lavoro **[ACS] per la replica del registro di consegna del profilo** (newRcpDeliveryLogReplication) non riesce e viene visualizzato il seguente errore:
 
   ```PGS-220000 PostgreSQL error: ERROR: duplicate key value violates unique constraint "nmstrackingurl_tagid" DETAIL: Key (stagid) = (1c7bdec2) already exists.```
 
-  Per risolvere il problema ed evitare che si verifichi di nuovo, aggiorna il **Aggiorna URL di tracciamento** (writerTrackingUrls) nel flusso di lavoro e aggiungi il prefisso &quot;ACS&quot; all’espressione di origine @tagId.
+  Per risolvere il problema ed evitare che si verifichi di nuovo, aggiorna l&#39;attività **Aggiorna URL di tracciamento** (writerTrackingUrls) nel flusso di lavoro e aggiungi il prefisso &quot;ACS&quot; all&#39;espressione di origine @tagId.

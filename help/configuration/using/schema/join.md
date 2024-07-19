@@ -39,17 +39,17 @@ Consente di definire i campi che creano un join tra tabelle SQL.
 
 ## Uso e contesto di utilizzo {#use-and-context-of-use-5}
 
-A `<join>`  può essere utilizzato solo se l&#39;elemento padre  `<element>`  l&#39;elemento è di tipo &quot;link&quot;. Ciò significa che l’elemento padre deve avere l’attributo &quot;@type=link&quot; dichiarato.
+Un elemento `<join>` può essere utilizzato solo se l&#39;elemento padre `<element>` è di tipo &#39;link&#39;. Ciò significa che l’elemento padre deve avere l’attributo &quot;@type=link&quot; dichiarato.
 
-Non è necessario specificare il nome e lo spazio dei nomi della tabella remota in `<join>`  elemento. Devono essere specificate nell&#39;elemento padre  `<element>`.
+Non è necessario specificare nome e spazio dei nomi della tabella remota nell&#39;elemento `<join>`. È necessario specificarli nell&#39;elemento padre `<element>`.
 
 Per convenzione, i collegamenti sono definiti alla fine dello schema.
 
-Se il `<join>` non viene specificato quando viene definito l&#39;elemento tipo di collegamento, il collegamento verrà inserito automaticamente nelle chiavi primarie di entrambe le tabelle.
+Se l&#39;elemento `<join>` non viene specificato quando viene definito l&#39;elemento del tipo di collegamento, il collegamento verrà inserito automaticamente nelle chiavi primarie di entrambe le tabelle.
 
 ## Descrizione attributo {#attribute-description-7}
 
-* **dstFilterExpr (stringa)**: questo attributo ti consente di limitare il numero di valori idonei nella tabella remota.
+* **dstFilterExpr (stringa)**: questo attributo consente di limitare il numero di valori idonei nella tabella remota.
 * **xpath-dst (stringa)**: questo attributo riceve un Xpath (attributo @name della tabella remota).
 * **xpath-src (stringa)**: questo attributo riceve un Xpath (attributo @name nello schema corrente).
 

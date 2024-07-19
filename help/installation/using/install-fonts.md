@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Ecco come installare nuovi font nel server applicazioni Campaign.
 
-È possibile inserire nuovi font nel `/usr/local/share/` in tutti i contenitori in cui viene eseguito il processo MTA.
+È possibile inserire nuovi font nella cartella `/usr/local/share/` in tutti i contenitori in cui viene eseguito il processo MTA.

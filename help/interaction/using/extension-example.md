@@ -19,9 +19,9 @@ ht-degree: 3%
 
 
 
-Nel caso di un contatto in entrata (call center o sito web), le offerte più rilevanti sono suggerite a un determinato contatto utilizzando una serie di regole di idoneità. Per arricchire i criteri di idoneità delle offerte, estendere **nms:interazione** schema.
+Nel caso di un contatto in entrata (call center o sito web), le offerte più rilevanti sono suggerite a un determinato contatto utilizzando una serie di regole di idoneità. Per arricchire i criteri di idoneità delle offerte, estendere lo schema **nms:interface**.
 
-* Per aggiungere un nuovo contesto di interazione, estendere **nms:interazione** schema e crearne altrettanti **attributo** elementi necessari nello schema.
+* Per aggiungere un nuovo contesto di interazione, estendere lo schema **nms:interface** e creare tutti gli elementi **attribute** necessari nello schema.
 
   Nell’esempio seguente, i criteri aggiunti sono il codice del paese e l’ultima pagina visitata.
 
@@ -33,4 +33,4 @@ Nel caso di un contatto in entrata (call center o sito web), le offerte più ril
 
   ![](assets/s_ncs_configuration_offer_context.png)
 
-* Durante la configurazione delle chiamate SOAP, inserisci **contesto** Elemento XML per fare riferimento alle informazioni di contesto aggiunte nello schema di interazione. Per ulteriori informazioni, fare riferimento a [Integrazione tramite SOAP (lato server)](../../interaction/using/integration-via-soap-server-side.md).
+* Durante la configurazione delle chiamate SOAP, inserisci l&#39;elemento XML **context** per fare riferimento alle informazioni di contesto aggiunte nello schema di interazione. Per ulteriori informazioni, consultare [Integrazione tramite SOAP (lato server)](../../interaction/using/integration-via-soap-server-side.md).

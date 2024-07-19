@@ -32,15 +32,15 @@ I pacchetti incorporati contengono una serie di funzioni che possono essere inst
 
 Per installare un pacchetto integrato:
 
-1. Accedi alla procedura guidata di importazione del pacchetto da **[!UICONTROL Tools > Advanced > Import package]** nella console client di Adobe Campaign.
+1. Accedere alla procedura guidata di importazione del pacchetto da **[!UICONTROL Tools > Advanced > Import package]** nella console client di Adobe Campaign.
 1. Seleziona **[!UICONTROL Install a standard package]**.
 1. Nell&#39;elenco dei pacchetti, selezionare i pacchetti da installare.
    >[!NOTE]
    >
    >Quando un pacchetto è disattivato, significa che è già installato o non è compatibile con l’istanza. La compatibilità è illustrata nella tabella seguente.
-1. Clic **[!UICONTROL Next]**, quindi **[!UICONTROL Start]** per avviare l&#39;installazione del pacchetto.
+1. Fare clic su **[!UICONTROL Next]**, quindi su **[!UICONTROL Start]** per avviare l&#39;installazione del pacchetto.
 
-   Una volta installati i pacchetti, la barra di avanzamento viene visualizzata **100%** e puoi visualizzare il seguente messaggio nei registri di installazione: **[!UICONTROL Installation of packages successful]**.
+   Una volta installati i pacchetti, la barra di avanzamento mostra **100%** ed è possibile visualizzare il seguente messaggio nei registri di installazione: **[!UICONTROL Installation of packages successful]**.
 
 1. **[!UICONTROL Close]** la finestra di installazione.
 
@@ -132,7 +132,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
   </tr> 
   <tr> 
    <td> Canale app mobile<br /> </td> 
-   <td> Utilizza la piattaforma Adobe Campaign per inviare notifiche personalizzate ai terminali iOS e Android tramite app. Facoltativo. <a href="../../delivery/using/about-mobile-app-channel.md">Ulteriori informazioni</a> <br /> </td> 
+   <td> Utilizza la piattaforma Adobe Campaign per inviare notifiche personalizzate ai terminali di iOS e Android tramite app. Facoltativo. <a href="../../delivery/using/about-mobile-app-channel.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Tutto<br /> </td> 
   </tr> 
   <tr> 
@@ -151,17 +151,17 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Gestione della risposta<br /> </td> 
+   <td> Gestione risposte<br /> </td> 
    <td> Misura il successo e la redditività delle campagne di marketing o delle proposte di offerte per tutti i canali di comunicazione.  Facoltativo. <a href="../../response/using/about-response-manager.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Accesso a dati esterni (Federated Data Access)<br /> </td> 
+   <td> Accesso ai dati esterni (Federated Data Access)<br /> </td> 
    <td> Fornisce l’opzione Federated Data Access (FDA) per elaborare le informazioni memorizzate in uno o più database esterni in modo da poter accedere ai dati esterni senza modificare la struttura dei dati di Adobe Campaign.  Facoltativo. <a href="../../workflow/using/accessing-an-external-database-fda.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Tutto<br /> </td> 
   </tr> 
   <tr> 
-   <td> Ottimizzazione di Campaign<br /> </td> 
+   <td> Ottimizzazione campagna<br /> </td> 
    <td> Controlla, filtra e monitora l’invio delle consegne in modo che i messaggi inviati soddisfino al meglio le esigenze e le aspettative dei clienti, in linea con le politiche di comunicazione aziendali. Facoltativo. <a href="../../campaign-opt/using/about-campaign-typologies.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
@@ -181,7 +181,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Marketing centrale e locale (marketing distribuito)<br /> </td> 
+   <td> Marketing centrale/locale (Marketing distribuito)<br /> </td> 
    <td> Implementa campagne di cooperazione tra entità centrali (sedi centrali, dipartimenti di marketing, ecc.) e gli enti locali (punti vendita, agenzie regionali, ecc.). Facoltativo. <a href="../../distributed/using/about-distributed-marketing.md">Ulteriori informazioni</a><br /> </td> 
    <td> Marketing </td> 
   </tr> 
@@ -211,7 +211,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
    <td> Marketing</td> 
   </tr> 
   <tr> 
-   <td> Regolamento sulla protezione dei dati personali<br /> </td> 
+   <td> Regolamento sulla protezione dei dati sulla privacy<br /> </td> 
    <td> Contiene funzionalità aggiuntive per aiutarti con la conformità in materia di privacy in Campaign Classic. <a href="https://helpx.adobe.com/it/campaign/kb/acc-privacy.html">Ulteriori informazioni</a> <br /> </td> 
    <td> Tutto</td> 
   </tr> 
@@ -221,7 +221,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
    <td> Marketing </td> 
   </tr> 
   <tr> 
-   <td> Piattaforma di mid-sourcing<br /> </td> 
+   <td> Piattaforma mid-sourcing<br /> </td> 
    <td> Questa configurazione rappresenta una soluzione intermedia ottimale tra una configurazione ASP (Hosted Configuration) e l’internalizzazione. I componenti di esecuzione rivolti all’esterno vengono eseguiti su un server di "mid-sourcing" ospitato in Adobe Campaign. Facoltativo. <a href="../../installation/using/mid-sourcing-server.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Mid-sourcing </td> 
   </tr> 
@@ -242,30 +242,30 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
 
 Devi installare i canali di consegna (e-mail, canale mobile, canale app mobile, LINE, ecc.) prima di installare la messaggistica transazionale (pacchetto del centro messaggi). Se hai avviato un progetto di Centro messaggi di sola posta elettronica e in seguito devi aggiungere un nuovo canale, devi seguire questi passaggi:
 
-1. Installare il nuovo canale, ad esempio **Canale mobile**, utilizzando la procedura guidata di importazione del pacchetto ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
-1. Importa il file ( **[!UICONTROL Tools > Advanced > Import package > File]**) e selezionare:
+1. Installa il nuovo canale, ad esempio il **canale mobile**, utilizzando l&#39;importazione guidata del pacchetto ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
+1. Importare il file ( **[!UICONTROL Tools > Advanced > Import package > File]**) e selezionare:
 
    ```
    \datakit\nms\[Your language]\package\messageCenter.xml
    ```
 
-1. In **[!UICONTROL XML data content to import]**, mantieni solo il modello di consegna del Centro messaggi corrispondente al canale correlato. Ad esempio, se hai aggiunto il **Canale mobile**, mantieni solo **entità** elemento corrispondente al **[!UICONTROL Mobile transactional message]** (smsTriggerMessage). Se hai aggiunto il **Canale app mobile**, mantieni solo **Messaggio transazionale di iOS** modelli (iosTriggerMessage) e **Messaggio transazionale Android** (androidTriggerMessage)
+1. In **[!UICONTROL XML data content to import]**, mantieni solo il modello di consegna del Centro messaggi corrispondente al canale correlato. Ad esempio, se hai aggiunto il **Canale mobile**, mantieni solo l&#39;elemento **entità** corrispondente al modello **[!UICONTROL Mobile transactional message]** (smsTriggerMessage). Se hai aggiunto il **canale app mobile**, mantieni solo i **modelli di messaggi transazionali di iOS** (iosTriggerMessage) e **messaggi transazionali di Android** (androidTriggerMessage).
 
    ![](assets/messagecenter_install_channel.png)
 
 
-### [!DNL LINE] configurazione del canale{#line-package}
+### Configurazione canale [!DNL LINE]{#line-package}
 
-Per impostare [!DNL LINE] canale, devi prima installare il [!DNL LINE] pacchetto.
+Per configurare il canale [!DNL LINE], è necessario prima installare il pacchetto [!DNL LINE].
 
 Nel contesto di una configurazione di mid-sourcing, devi:
 
-* Installare [!DNL LINE] pacchetto sia sull’istanza Marketing che sull’istanza MID
+* Installa il pacchetto [!DNL LINE] sia sull&#39;istanza Marketing che su quella MID
 
-* Imposta il [!DNL LINE] account esterno nell’istanza di marketing per puntare all’istanza mid modificando la modalità di consegna. [Ulteriori informazioni](../../delivery/using/line-channel.md#configure-line-external)
+* Imposta l&#39;account esterno [!DNL LINE] nell&#39;istanza di marketing in modo che punti all&#39;istanza mid modificando la modalità di consegna. [Ulteriori informazioni](../../delivery/using/line-channel.md#configure-line-external)
 
-* Imposta il [!DNL LINE] credenziali nell’account esterno nell’istanza MID.
+* Imposta le credenziali [!DNL LINE] nell&#39;account esterno nell&#39;istanza MID.
 
 >[!CAUTION]
 >
->I modelli di consegna del Centro messaggi per [!DNL LINE] canale non sarà disponibile se i pacchetti del Centro messaggi sono installati prima [!DNL LINE].
+>I modelli di recapito del Centro messaggi per il canale [!DNL LINE] non saranno disponibili se i pacchetti del Centro messaggi sono installati prima di [!DNL LINE].

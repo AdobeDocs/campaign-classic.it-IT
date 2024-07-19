@@ -15,9 +15,9 @@ ht-degree: 3%
 
 
 
-La mappa di calore dei flussi di lavoro di Campaign consiste in una rappresentazione grafica codificata per colori di tutti i flussi di lavoro attualmente in esecuzione. È disponibile solo per **Amministratori di Campaign**.
+La mappa di calore dei flussi di lavoro di Campaign consiste in una rappresentazione grafica codificata per colori di tutti i flussi di lavoro attualmente in esecuzione. È disponibile solo per **amministratori di campagne**.
 
-Scopri ulteriori modi per monitorare i processi di Campaign in [questa pagina](../../production/using/monitoring-guidelines.md).
+Scopri altri modi per monitorare i processi di Campaign in [questa pagina](../../production/using/monitoring-guidelines.md).
 
 ## Introduzione a Workflow HeatMap {#about-the-workflow-heatmap}
 
@@ -29,22 +29,22 @@ Più precisamente, aiuta gli amministratori di piattaforma a:
 * Filtrare i flussi di lavoro per durata per vedere quali potrebbero presentare problemi
 * Filtra le attività per durata per vedere quali attività possono incontrare problemi
 * Trovare facilmente singoli flussi di lavoro e le attività correlate ad essi (con la relativa durata)
-* Filtra per tipo di flusso di lavoro: [flussi di lavoro tecnici](building-a-workflow.md#technical-workflows) o [flussi di lavoro per campagne](building-a-workflow.md#campaign-workflows)
+* Filtra per tipo di flusso di lavoro: [flussi di lavoro tecnici](building-a-workflow.md#technical-workflows) o [flussi di lavoro campagne](building-a-workflow.md#campaign-workflows)
 * Cercare un flusso di lavoro specifico da analizzare
 
 >[!NOTE]
 >
->Oltre al **Workflow Heatmap**, puoi creare un flusso di lavoro che ti consenta di monitorare lo stato di un set di flussi di lavoro e inviare messaggi ricorrenti ai supervisori. Per ulteriori informazioni, consulta [sezione dedicata](supervising-workflows.md).
+>Oltre alla **Workflow Heatmap**, puoi creare un flusso di lavoro che ti consenta di monitorare lo stato di un set di flussi di lavoro e inviare messaggi ricorrenti ai supervisori. Per ulteriori informazioni, consulta la [sezione dedicata](supervising-workflows.md).
 
-L’utilizzo di Workflow HeatMap richiede una buona comprensione dei seguenti concetti: [Flussi di lavoro](about-workflows.md), [Attività](about-activities.md) e [Best practice per i flussi di lavoro](workflow-best-practices.md).
+L&#39;utilizzo di Workflow HeatMap richiede una buona comprensione dei seguenti concetti: [Flussi di lavoro](about-workflows.md), [Attività](about-activities.md) e [Best practice per i flussi di lavoro](workflow-best-practices.md).
 
 ## Personalizzare la Workflow HeatMap {#using-the-heatmap}
 
 >[!NOTE]
 >
->Se nella Workflow HeatMap non vengono visualizzati dati, fai clic sul pulsante **[!UICONTROL Load data]** pulsante.
+>Se nel Workflow HeatMap non viene visualizzato alcun dato, fare clic sul pulsante **[!UICONTROL Load data]**.
 
-1. Vai a **[!UICONTROL Monitoring]** e fai clic su **[!UICONTROL Workflow HeatMap]** collegamento per visualizzare **[!UICONTROL Campaign Workflow HeatMap]** pagina.
+1. Vai a **[!UICONTROL Monitoring]** e fai clic sul collegamento **[!UICONTROL Workflow HeatMap]** per visualizzare la pagina **[!UICONTROL Campaign Workflow HeatMap]**.
 
    ![](assets/wkf_monitoring_path.png)
 
@@ -54,7 +54,7 @@ L’utilizzo di Workflow HeatMap richiede una buona comprensione dei seguenti co
 
    >[!NOTE]
    >
-   >Solo i flussi di lavoro che non sono stati eliminati da **[!UICONTROL Database cleanup]** sono visibili. Per ulteriori informazioni sul flusso di lavoro di pulizia del database, consulta [questa sezione](../../production/using/database-cleanup-workflow.md).\
+   >Sono visibili solo i flussi di lavoro non eliminati dal flusso di lavoro **[!UICONTROL Database cleanup]**. Per ulteriori informazioni sul flusso di lavoro di pulizia del database, consulta [questa sezione](../../production/using/database-cleanup-workflow.md).\
    >Per impostazione predefinita, il fuso orario Workflow HeatMap è quello definito per l’utente amministratore corrente. Ad esempio, potrebbe essere utile modificarlo se non ti trovi nella stessa area degli utenti marketing con cui stai lavorando.
 
 1. Fai clic sul pulsante **[!UICONTROL Filters]**.
@@ -65,22 +65,22 @@ L’utilizzo di Workflow HeatMap richiede una buona comprensione dei seguenti co
 
    ![](assets/wkf_monitoring_filters_duration.png)
 
-1. Puoi anche scegliere un flusso di lavoro specifico da **[!UICONTROL Workflows]** elenco a discesa.
+1. È inoltre possibile scegliere un workflow specifico dall&#39;elenco a discesa **[!UICONTROL Workflows]**.
 
    ![](assets/wkf_monitoring_filters_workflows.png)
 
    >[!NOTE]
    >
-   >Il **[!UICONTROL Min duration]** viene applicato un filtro. Se non riesci a trovare un flusso di lavoro specifico, reimposta la durata minima su 0 in modo che tutti i flussi di lavoro vengano visualizzati nell’elenco.
+   >Il filtro **[!UICONTROL Min duration]** è applicato. Se non riesci a trovare un flusso di lavoro specifico, reimposta la durata minima su 0 in modo che tutti i flussi di lavoro vengano visualizzati nell’elenco.
 
-1. Puoi anche filtrare in base al **[!UICONTROL Workflow type]** :
+1. È inoltre possibile filtrare in base a **[!UICONTROL Workflow type]**:
 
-   * **[!UICONTROL Technical]** : Solo [flussi di lavoro tecnici pronti all’uso](building-a-workflow.md#technical-workflows) e [flussi di lavoro di gestione dati](targeting-data.md#data-management) vengono visualizzati.
-   * **[!UICONTROL Marketing]** : solo flussi di lavoro collegati a una campagna di marketing, noti come [flussi di lavoro per campagne](building-a-workflow.md#campaign-workflows)vengono visualizzati.
+   * **[!UICONTROL Technical]**: vengono visualizzati solo [flussi di lavoro tecnici predefiniti](building-a-workflow.md#technical-workflows) e [flussi di lavoro di gestione dati](targeting-data.md#data-management).
+   * **[!UICONTROL Marketing]** : vengono visualizzati solo i flussi di lavoro collegati a una campagna di marketing, noti come [flussi di lavoro campagna](building-a-workflow.md#campaign-workflows).
 
-1. Per cercare un flusso di lavoro specifico per nome, puoi anche utilizzare **[!UICONTROL Workflow name filter]** campo.
+1. Per cercare un flusso di lavoro specifico per nome, è inoltre possibile utilizzare il campo **[!UICONTROL Workflow name filter]**.
 
-1. Se hai modificato alcuni flussi di lavoro nell’intervallo di tempo tra, fai clic su **[!UICONTROL Reload data]** per aggiornare i dati visualizzati nella griglia.
+1. Se sono stati modificati alcuni flussi di lavoro nell&#39;intervallo di tempo compreso tra, fare clic sul pulsante **[!UICONTROL Reload data]** per aggiornare i dati visualizzati nella griglia.
 
 ## Interpretare la Workflow HeatMap {#reading-the-heatmap}
 
@@ -89,7 +89,7 @@ La mappa di calore del flusso di lavoro della campagna è una griglia naturalmen
 * Le celle rosse più scure corrispondono ai periodi in cui è in esecuzione un numero elevato di flussi di lavoro contemporaneamente.
 * Le celle grigie corrispondono ai periodi in cui non è in esecuzione alcun flusso di lavoro.
 
-Per scoprire come viene applicato il codice del colore e come navigare nella mappa di calore, fai clic sul pulsante **[!UICONTROL Help]** pulsante.
+Per informazioni sull&#39;applicazione del codice colore e su come esplorare la mappa di calore, fare clic sul pulsante **[!UICONTROL Help]**.
 
 ![](assets/wkf_monitoring_legend.png)
 
@@ -108,7 +108,7 @@ Nell’esempio seguente, tra le 8.00 e le 8.05 sono in esecuzione tre flussi di 
    Per ogni flusso di lavoro, vengono elencate tutte le attività in esso contenute, con la relativa durata.
 
 1. Fai clic sull’ID o sul nome del flusso di lavoro per aprirlo direttamente.
-1. Per tornare al **[!UICONTROL Campaign Workflow HeatMap]** , fare clic sul pulsante **[!UICONTROL Home]** pulsante.
+1. Per tornare alla visualizzazione **[!UICONTROL Campaign Workflow HeatMap]**, fare clic sul pulsante **[!UICONTROL Home]**.
 
 ## Casi di utilizzo: utilizza la mappa di calore per eseguire azioni {#use-cases--using-the-heatmap-to-take-actions}
 
@@ -118,7 +118,7 @@ Esistono due casi principali in cui la mappa di calore del flusso di lavoro di C
 
 In qualità di amministratore di Campaign, la Workflow HeatMap può aiutarti a comprendere il carico sull’istanza e a pianificare flussi di lavoro esistenti o nuovi nei momenti opportuni.
 
-1. Dalla sezione **[!UICONTROL Campaign Workflow HeatMap]** , fare clic sul pulsante **[!UICONTROL Filters]** pulsante.
+1. Dalla visualizzazione **[!UICONTROL Campaign Workflow HeatMap]**, fare clic sul pulsante **[!UICONTROL Filters]**.
 1. Imposta la durata su alcuni secondi o minuti.
 1. Escludi i flussi di lavoro più brevi che non sono significativi aumentando il filtro della durata.
 
@@ -133,12 +133,12 @@ In qualità di amministratore di Campaign, la Workflow HeatMap può aiutarti a c
 
 In qualità di amministratore di Campaign, Workflow HeatMap ti consente di trovare i flussi di lavoro più lunghi che possono rallentare l’attività.
 
-1. Dalla sezione **[!UICONTROL Campaign Workflow HeatMap]** , fare clic sul pulsante **[!UICONTROL Filters]** pulsante.
+1. Dalla visualizzazione **[!UICONTROL Campaign Workflow HeatMap]**, fare clic sul pulsante **[!UICONTROL Filters]**.
 1. Imposta la durata su 1 ora.
 
    ![](assets/wkf_monitoring_long_duration.png)
 
-1. Includi più risultati diminuendo il **[!UICONTROL Min duration]** filtro.
+1. Includi altri risultati diminuendo il filtro **[!UICONTROL Min duration]**.
 1. Esplora i risultati per trovare i flussi di lavoro più lunghi, che possono potenzialmente avere un maggiore impatto sulle risorse del server e del database (CPU, RAM, rete, IOPS e così via).
 1. Adottare le azioni appropriate:
 
@@ -151,9 +151,9 @@ L’esempio seguente mostra come la pianificazione può essere più efficiente e
 
 In questo caso, molti utenti si lamentano delle prestazioni del flusso di lavoro. Devi verificare cosa sta rallentando l’attività e come risolvere il problema.
 
-1. Vai a **[!UICONTROL Monitoring]** e fai clic su **[!UICONTROL Workflows]** collegamento per visualizzare **[!UICONTROL Campaign Workflow HeatMap]** pagina.
-1. Imposta il **[!UICONTROL Min duration]** filtra a 5 minuti.
-1. Imposta il **[!UICONTROL Workflow type]** filtra per **[!UICONTROL Marketing]** .
+1. Vai a **[!UICONTROL Monitoring]** e fai clic sul collegamento **[!UICONTROL Workflows]** per visualizzare la pagina **[!UICONTROL Campaign Workflow HeatMap]**.
+1. Impostare il filtro **[!UICONTROL Min duration]** su 5 minuti.
+1. Impostare il filtro **[!UICONTROL Workflow type]** su **[!UICONTROL Marketing]**.
 1. Osservate quanto segue dalla griglia di HeatMap:
 
    ![](assets/wkf_monitoring_without.png)
@@ -164,7 +164,7 @@ In questo caso, molti utenti si lamentano delle prestazioni del flusso di lavoro
    * Le prestazioni sono basse.
 
 1. Invece di disporre di cinquanta flussi di lavoro a partire dalle ore 10, distribuire gli orari di inizio dei flussi di lavoro in modo uniforme nel resto della giornata.
-1. Torna a **[!UICONTROL Campaign Workflow HeatMap]** e fai clic su **[!UICONTROL Reload data]** pulsante.
+1. Tornare alla pagina **[!UICONTROL Campaign Workflow HeatMap]** e fare clic sul pulsante **[!UICONTROL Reload data]**.
 1. Osserva ora quanto segue:
 
    ![](assets/wkf_monitoring_with.png)

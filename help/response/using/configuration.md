@@ -23,7 +23,7 @@ Questa sezione è destinata alle persone responsabili della configurazione della
 
 Questo consente di comprendere come adattare il modello dati standard alla natura specifica di una tabella di transazione esterna ad Adobe Campaign con la tabella dei singoli utenti. Questa tabella di singoli utenti può coincidere con la tabella degli utenti singoli disponibili in Adobe Campaign o con una tabella diversa
 
-L’ipotesi di misurazione viene avviata dal flusso di lavoro del processo operativo ( **[!UICONTROL operationMgt]** ). Ogni ipotesi rappresenta un processo separato eseguito in modo asincrono con uno stato di esecuzione (In corso di modifica, In sospeso, Completato, Non riuscito, ecc.) e controllata da un modulo di pianificazione che gestisce i vincoli di priorità, la limitazione del numero di processi simultanei, la pagina a bassa attività e l’esecuzione automatica con frequenza.
+L&#39;ipotesi di misurazione viene avviata dal flusso di lavoro del processo di operazione ( **[!UICONTROL operationMgt]** ). Ogni ipotesi rappresenta un processo separato eseguito in modo asincrono con uno stato di esecuzione (In corso di modifica, In sospeso, Completato, Non riuscito, ecc.) e controllata da un modulo di pianificazione che gestisce i vincoli di priorità, la limitazione del numero di processi simultanei, la pagina a bassa attività e l’esecuzione automatica con frequenza.
 
 ## Configurare gli schemi {#configuring-schemas}
 
@@ -35,9 +35,9 @@ L’integrazione dell’applicazione è necessaria prima di utilizzare il modulo
 
 ### Schemi standard {#standard-schemas}
 
-La soluzione preconfigurata **[!UICONTROL nms:remaMatch]** lo schema contiene la tabella del registro delle reazioni, ovvero la relazione tra singoli utenti, l’ipotesi e la tabella delle transazioni. Questo schema è utilizzato come schema di ereditarietà per la tabella di destinazione finale dei registri di reazione.
+Lo schema predefinito **[!UICONTROL nms:remaMatch]** contiene la tabella del registro delle reazioni, ovvero la relazione tra singoli utenti, l&#39;ipotesi e la tabella delle transazioni. Questo schema è utilizzato come schema di ereditarietà per la tabella di destinazione finale dei registri di reazione.
 
-Il **[!UICONTROL nms:remaMatchRcp]** viene fornito anche come schema standard, contiene l’archiviazione dei registri di reazione per i destinatari di Adobe Campaign ( **[!UICONTROL nms:recipient]** ). Per essere utilizzata, deve essere estesa per essere mappata a una tabella di transazione (contenente acquisti, ecc.).
+Anche lo schema **[!UICONTROL nms:remaMatchRcp]** è standard e contiene l&#39;archiviazione dei registri di reazione per i destinatari di Adobe Campaign ( **[!UICONTROL nms:recipient]** ). Per essere utilizzata, deve essere estesa per essere mappata a una tabella di transazione (contenente acquisti, ecc.).
 
 ### Tabelle delle transazioni e dettagli delle transazioni {#transaction-tables-and-transaction-details}
 
@@ -59,22 +59,22 @@ Lo schema seguente mostra i join tra le diverse tabelle al termine della configu
 
 ### Gestione della risposta e destinatari {#response-management-with-adobe-campaign-recipients}
 
-In questo esempio, integreremo una tabella di acquisti nel nostro modulo di gestione delle risposte utilizzando la tabella dei destinatari integrata in Adobe Campaign **[!UICONTROL nms:recipient]**.
+In questo esempio, integreremo una tabella di acquisti nel nostro modulo di gestione delle risposte utilizzando la tabella dei destinatari integrata di Adobe Campaign **[!UICONTROL nms:recipient]**.
 
-Tabella dei registri di risposta su un **[!UICONTROL nms:remaMatchRcp]** il destinatario viene esteso per aggiungere un collegamento allo schema della tabella di acquisto. Nell’esempio seguente, la tabella degli acquisti è denominata **demo:acquisto**.
+La tabella dei registri di risposta su un destinatario **[!UICONTROL nms:remaMatchRcp]** è stata estesa per aggiungere un collegamento allo schema della tabella di acquisto. Nell&#39;esempio seguente, la tabella degli acquisti è denominata **demo:purchase**.
 
-1. Tramite Adobe Campaign Explorer, seleziona la **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**.
-1. Clic con il pulsante destro **Destinatario** quindi seleziona **[!UICONTROL Actions]** e **[!UICONTROL Modify the options of the targeting dimensions]**.
+1. Tramite Adobe Campaign Explorer, seleziona **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**.
+1. Fare clic con il pulsante destro del mouse su **Destinatario**, quindi selezionare **[!UICONTROL Actions]** e **[!UICONTROL Modify the options of the targeting dimensions]**.
 
    ![](assets/delivery_mapping1.png)
 
-1. Puoi personalizzare il **[!UICONTROL Extension namespace]** nella finestra successiva, fai clic su **[!UICONTROL Next]**.
+1. È possibile personalizzare **[!UICONTROL Extension namespace]** nella finestra successiva, quindi fare clic su **[!UICONTROL Next]**.
 
    ![](assets/delivery_mapping2.png)
 
-1. In **[!UICONTROL Response management]** categoria, assicurati che il **[!UICONTROL Generate a storage schema for reactions]** è selezionata.
+1. Nella categoria **[!UICONTROL Response management]**, assicurarsi che la casella **[!UICONTROL Generate a storage schema for reactions]** sia selezionata.
 
-   Quindi fai clic su **[!UICONTROL Define additional fields...]** per selezionare le tabelle di transazione correlate e aggiungere i campi desiderati all&#39;estensione dello schema nms:remaMatchRcp.
+   Quindi fare clic su **[!UICONTROL Define additional fields...]** per selezionare le tabelle di transazione correlate e aggiungere i campi desiderati all&#39;estensione dello schema nms:remaMatchRcp.
 
    ![](assets/delivery_mapping3.png)
 
@@ -106,11 +106,11 @@ name="remaMatchRcp" namespace="cus">
 
 In questo esempio, integreremo una tabella acquisti nel nostro modulo di gestione delle risposte utilizzando una tabella di singoli utenti diversa dalla tabella dei destinatari disponibile in Adobe Campaign.
 
-* Crea un nuovo schema di registro risposte derivato da **[!UICONTROL nms:remaMatch]** schema.
+* Creare un nuovo schema di log delle risposte derivato dallo schema **[!UICONTROL nms:remaMatch]**.
 
-  Poiché la tabella dei singoli utenti è diversa da quella dei destinatari di Adobe Campaign, è necessario creare un nuovo schema dei registri di risposta in base a **[!UICONTROL nms:remaMatch]** schema. Quindi completalo con i collegamenti verso i registri di consegna e la tabella di acquisto.
+  Poiché la tabella dei singoli utenti è diversa dalla tabella dei destinatari di Adobe Campaign, è necessario creare un nuovo schema dei registri di risposta basati sullo schema **[!UICONTROL nms:remaMatch]**. Quindi completalo con i collegamenti verso i registri di consegna e la tabella di acquisto.
 
-  Nell’esempio seguente utilizzeremo **demo:broadLogPers** e **demo:acquisto** tabella delle transazioni:
+  Nell&#39;esempio seguente verranno utilizzati lo schema **demo:broadLogPers** e la tabella delle transazioni **demo:purchase**:
 
   ```
   <srcSchema desc="Linking of a recipient transaction to a hypothesis"    
@@ -129,7 +129,7 @@ In questo esempio, integreremo una tabella acquisti nel nostro modulo di gestion
   </srcSchema>
   ```
 
-* Modificare la forma dell’ipotesi in **[!UICONTROL nms:remaHypothesis]** schema.
+* Modificare il modulo di ipotesi nello schema **[!UICONTROL nms:remaHypothesis]**.
 
   Per impostazione predefinita, l’elenco dei registri di risposta è visibile nei registri dei destinatari. Pertanto, devi modificare il modulo dell’ipotesi per visualizzare i nuovi registri di risposta creati durante il passaggio precedente.
 

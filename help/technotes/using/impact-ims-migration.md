@@ -1,7 +1,8 @@
 ---
 title: Aggiornare l’interfaccia di Campaign dopo la migrazione IMS
 description: Scopri come attivare gli impatti dell’interfaccia di Adobe Identity Management System Migration
-source-git-commit: ab1bb91bdbc9961b4f3f0feba7cfd354b02b6511
+exl-id: 8b13fe4d-d8d3-43b3-bbe4-c8c5574f585a
+source-git-commit: 8eadea9f9cc0a44522726024bfbc825e3b4cad98
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 1%
@@ -10,7 +11,7 @@ ht-degree: 1%
 
 # Aggiornare l’interfaccia di Campaign dopo la migrazione IMS {#impact-ims-migration}
 
-Una volta che [migrazione degli operatori tecnici di Campaign a Console sviluppatori](ims-migration.md) e [è stata effettuata la transizione a IMS per l’autenticazione dell’utente finale](migrate-users-to-ims.md), l’ultimo passaggio consiste nell’abilitare l’interfaccia utente e le restrizioni API per rimuovere le opzioni e le funzionalità specifiche dell’autenticazione nativa. Questo aggiornamento è disponibile a partire da Campaign v7.4.1.
+Dopo che [hai eseguito la migrazione degli operatori tecnici di Campaign a Developer Console](ims-migration.md) e che [hai eseguito la transizione a IMS per l&#39;autenticazione dell&#39;utente finale](migrate-users-to-ims.md), l&#39;ultimo passaggio consiste nell&#39;abilitare le restrizioni dell&#39;interfaccia utente e dell&#39;API per rimuovere le opzioni e le funzionalità specifiche dell&#39;autenticazione nativa. Questo aggiornamento è disponibile a partire da Campaign v7.4.1.
 
 ## Abilita restrizioni IMS {#ims-restrictions}
 
@@ -20,8 +21,8 @@ In qualità di utente del Cloud Service gestito/in hosting, contatta l’Adobe p
 
 In qualità di utente on-premise/ibrido, segui questi passaggi:
 
-1. Accedi a `<imsConfig>` del file di configurazione dell’istanza.
-1. Per abilitare le restrizioni dell’interfaccia utente, aggiorna il `nonIMSOperatorMgmtInClientConsoleRestricted` all&#39;interno del `nonIMSOperatorMgmtInClientConsole` elemento, a `true`, come segue:
+1. Passare alla sezione `<imsConfig>` del file di configurazione dell&#39;istanza.
+1. Per abilitare le restrizioni dell&#39;interfaccia utente, aggiornare l&#39;opzione `nonIMSOperatorMgmtInClientConsoleRestricted`, all&#39;interno dell&#39;elemento `nonIMSOperatorMgmtInClientConsole`, a `true`, come indicato di seguito:
 
 
    ```xml
@@ -34,7 +35,7 @@ In qualità di utente on-premise/ibrido, segui questi passaggi:
    </serverConf>
    ```
 
-1. Per abilitare le restrizioni API, aggiorna la `disableAPI` all&#39;interno del `nonIMSAuthnAPI` elemento, a `true`, come segue:
+1. Per abilitare le restrizioni API, aggiornare l&#39;opzione `disableAPI`, all&#39;interno dell&#39;elemento `nonIMSAuthnAPI`, a `true`, come indicato di seguito:
 
    ```xml
    <serverConf>
@@ -48,7 +49,7 @@ In qualità di utente on-premise/ibrido, segui questi passaggi:
    </serverConf>
    ```
 
-Alcuni operatori possono connettersi ad Adobe Campaign con un’autenticazione nativa. Questi operatori tecnici sono abilitati per impostazione predefinita e non devono essere modificati. Per consentire questa eccezione, per impostazione predefinita questi operatori tecnici vengono aggiunti all’elenco Consentiti. Puoi trovare questo elenco in `<imsConfig>` del file di configurazione dell’istanza, nella sezione `allowOperator` all&#39;interno del `nonIMSAuthnAPI` elemento.
+Alcuni operatori possono connettersi ad Adobe Campaign con un’autenticazione nativa. Questi operatori tecnici sono abilitati per impostazione predefinita e non devono essere modificati. Per consentire questa eccezione, per impostazione predefinita questi operatori tecnici vengono aggiunti all’elenco Consentiti. L&#39;elenco è disponibile nella sezione `<imsConfig>` del file di configurazione dell&#39;istanza, nell&#39;opzione `allowOperator` all&#39;interno dell&#39;elemento `nonIMSAuthnAPI`.
 
 ```xml
 <serverConf>
@@ -65,7 +66,7 @@ Alcuni operatori possono connettersi ad Adobe Campaign con un’autenticazione n
 </serverConf>
 ```
 
-Se devi aggiungere un operatore al inserisco nell&#39;elenco Consentiti di, aggiungi un nuovo `allowOperator` con il nome dell&#39;operatore. Ad esempio, per aggiungere un nuovo operatore con il nome `test`, aggiorna questa sezione come segue:
+Se è necessario aggiungere un operatore al inserisco nell&#39;elenco Consentiti di, aggiungere un nuovo elemento `allowOperator` con il nome dell&#39;operatore. Ad esempio, se desideri aggiungere un nuovo operatore con il nome `test`, aggiorna questa sezione come segue:
 
 ```xml
 <serverConf>
@@ -93,13 +94,13 @@ Non è più possibile creare, modificare, aggiornare o eliminare operatori con a
 
 Di conseguenza, queste azioni sono state disabilitate nella console client.
 
-L’amministrazione degli operatori è centralizzata in Adobe Admin Console e le seguenti attività ora sono gestite esclusivamente tramite questa console. Scopri come creare utenti e assegnare autorizzazioni in [Documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}.
+L’amministrazione degli operatori è centralizzata in Adobe Admin Console e le seguenti attività ora sono gestite esclusivamente tramite questa console. Scopri come creare utenti e assegnare autorizzazioni nella [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}.
 
 ### Opzioni non disponibili {#unavailable-migration}
 
 Dopo la migrazione, le seguenti attività non sono più disponibili nella console client:
 
-* Utilizza il [Opzione Unisci righe selezionate](../../platform/using/updating-data.md#merge-data) per unire gli operatori.
+* Utilizza l&#39;opzione [Unisci righe selezionate](../../platform/using/updating-data.md#merge-data) per unire gli operatori.
 
 * Aggiorna i seguenti campi per gli operatori:
    * Nome
@@ -119,5 +120,4 @@ Dopo la migrazione, le seguenti attività non sono più disponibili nella consol
 >* [Migrazione degli utenti finali a IMS](migrate-users-to-ims.md)
 >* [Migrazione degli operatori tecnici alla console Adobe Developer](ims-migration.md)
 >* [Note sulla versione più recente di Adobe Campaign Classic v7](../../rn/using/latest-release.md)
->* [Che cos’è Adobe Identity Management System (IMS)](https://helpx.adobe.com/it/enterprise/using/users.html){target="_blank"}
-
+>* [Che cos&#39;è Adobe Identity Management System (IMS)](https://helpx.adobe.com/it/enterprise/using/users.html){target="_blank"}

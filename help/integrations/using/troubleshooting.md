@@ -25,13 +25,13 @@ In caso di errore, assicurati che i seguenti elementi siano configurati corretta
 
 * **Account esterni**
 
-  In entrata **[!UICONTROL Administration > Platform > External accounts]**, assicurati che i seguenti account SFTP esterni siano configurati correttamente. I server SFTP menzionati avrebbero dovuto essere configurati in Adobe Experience Cloud dal tuo consulente.
+  In **[!UICONTROL Administration > Platform > External accounts]**, assicurati che i seguenti account SFTP esterni siano configurati correttamente. I server SFTP menzionati avrebbero dovuto essere configurati in Adobe Experience Cloud dal tuo consulente.
 
-   * **[!UICONTROL importSharedAudience]** : account SFTP dedicato all’importazione di tipi di pubblico.
-   * **[!UICONTROL exportSharedAudience]** : account SFTP dedicato all’esportazione dei tipi di pubblico.
+   * **[!UICONTROL importSharedAudience]** : account SFTP dedicato all&#39;importazione di tipi di pubblico.
+   * **[!UICONTROL exportSharedAudience]** : account SFTP dedicato all&#39;esportazione dei tipi di pubblico.
 
 * **Origine dati AMC**
 
-  In entrata **[!UICONTROL Administration > Platform > AMC Data sources]**, verificare che l&#39;origine dati AMC sia impostata correttamente.
+  In **[!UICONTROL Administration > Platform > AMC Data sources]**, verificare che l&#39;origine dati AMC sia impostata correttamente.
 
 Alcuni dati possono mancare quando si condivide un pubblico tramite Experience Cloud Audience o quando si importa un pubblico. Vengono trasferiti solo i record per i quali l’ID (&quot;ID visitatore&quot; o &quot;ID dichiarato&quot;) è stato riconciliato con la dimensione del profilo. Gli ID dai segmenti non riconosciuti da Adobe Campaign non vengono importati.

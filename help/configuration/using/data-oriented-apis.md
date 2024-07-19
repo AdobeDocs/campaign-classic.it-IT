@@ -30,7 +30,7 @@ I documenti XML vengono memorizzati nei campi di tipo MEMO del database.
 
 Per poter gestire i campi del database negli script, è necessario avere familiarità con il modello dati di Adobe Campaign.
 
-Per una presentazione del modello dati, consulta [Descrizione del modello dati di Adobe Campaign](../../configuration/using/data-model-description.md).
+Per una presentazione del modello dati, fare riferimento alla [descrizione del modello dati Adobe Campaign](../../configuration/using/data-model-description.md).
 
 ## Query e writer {#query-and-writer}
 
@@ -44,19 +44,19 @@ Per le colonne e le condizioni, è possibile utilizzare le query.
 
 In questo modo è possibile isolare l&#39;istruzione SQL sottostante. Il linguaggio di query non dipende dal motore sottostante: alcune funzioni verranno nuovamente mappate, il che potrebbe generare diversi ordini SELECT SQL.
 
-Per ulteriori informazioni, consulta [Esempio sul metodo &#39;ExecuteQuery&#39; dello schema &#39;xtk:queryDef&#39;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
+Per ulteriori informazioni, consultare [Esempio sul metodo &#39;ExecuteQuery&#39; dello schema &#39;xtk:queryDef&#39;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
 
-Il **ExecuteQuery** il metodo è presentato in [ExecuteQuery (xtk:queryDef)](#executequery--xtk-querydef-).
+Il metodo **ExecuteQuery** è presentato in [ExecuteQuery (xtk:queryDef)](#executequery--xtk-querydef-).
 
 ### Scrittura {#write}
 
 I comandi di scrittura consentono di scrivere documenti semplici o complessi, con voci in una o più tabelle della base.
 
-Le API transazionali consentono di gestire le riconciliazioni tramite **updateOrInsert** comando: un comando consente di creare o aggiornare dati. Puoi anche configurare l’unione di modifiche (**unione**): con questa modalità operativa puoi autorizzare aggiornamenti parziali.
+Le API transazionali consentono di gestire le riconciliazioni tramite il comando **updateOrInsert**: un comando consente di creare o aggiornare dati. È inoltre possibile configurare l&#39;unione modifiche (**merge**): questa modalità operativa consente di autorizzare aggiornamenti parziali.
 
 La struttura XML offre una vista logica dei dati e consente di ignorare la struttura fisica della tabella SQL.
 
-Il metodo Write è presentato in [Write/WriteCollection (xtk:session)](#write---writecollection--xtk-session-).
+Il metodo Write è presentato in [Write / WriteCollection (xtk:session)](#write---writecollection--xtk-session-).
 
 ## ExecuteQuery (xtk:queryDef) {#executequery--xtk-querydef-}
 
@@ -110,7 +110,7 @@ La struttura del documento XML della query è descritta nello schema &quot;xtk:q
 </queryDef>
 ```
 
-Una sottoquery ( `<subquery>`  ) può essere definito in una  `<condition> `  elemento. La sintassi per un   `<subquery> `   è basato sulla sintassi di un elemento    `<querydef>`.
+È possibile definire una sottoquery ( `<subquery>` ) in un elemento `<condition> `. La sintassi per un   `<subquery> `   è basato sulla sintassi di un elemento    `<querydef>`.
 
 Esempio di `<subquery>  : </subquery>`
 
@@ -128,16 +128,16 @@ Esempio di `<subquery>  : </subquery>`
   
 ```
 
-Una query deve fare riferimento a uno schema iniziale da **schema** attributo.
+Una query deve fare riferimento a uno schema iniziale dall&#39;attributo **schema**.
 
-Il tipo di operazione desiderata viene immesso nel **operazione** e contiene uno dei seguenti valori:
+Il tipo di operazione desiderato viene immesso nell&#39;attributo **operation** e contiene uno dei valori seguenti:
 
-* **ottenere**: recupera un record dalla tabella e restituisce un errore se i dati non esistono,
+* **get**: recupera un record dalla tabella e restituisce un errore se i dati non esistono,
 * **getIfExists**: recupera un record dalla tabella e restituisce un documento vuoto se i dati non esistono,
-* **seleziona**: crea un cursore per restituire diversi record e restituisce un documento vuoto se non sono presenti dati,
+* **select**: crea un cursore per restituire più record e restituisce un documento vuoto se non sono presenti dati.
 * **count**: restituisce un conteggio di dati.
 
-Il **XPath** La sintassi viene utilizzata per individuare i dati in base allo schema di input. Per ulteriori informazioni su XPaths, fare riferimento a [Schemi di dati](../../configuration/using/data-schemas.md).
+La sintassi **XPath** viene utilizzata per individuare i dati in base allo schema di input. Per ulteriori informazioni su XPaths, fare riferimento a [Schemi di dati](../../configuration/using/data-schemas.md).
 
 #### Esempio con l’operazione &quot;get&quot; {#example-with-the--get--operation}
 
@@ -185,7 +185,7 @@ Restituisce l’elenco dei destinatari filtrati su una cartella e il dominio e-m
 
 Le espressioni possono essere campi semplici o espressioni complesse, ad esempio operazioni aritmetiche o concatenazione di stringhe.
 
-Per limitare il numero di record da restituire, aggiungere **lineCount** attribuire a `<querydef>` elemento.
+Per limitare il numero di record da restituire, aggiungere l&#39;attributo **lineCount** all&#39;elemento `<querydef>`.
 
 Per limitare a 100 il numero di record restituiti dalla query:
 
@@ -194,7 +194,7 @@ Per limitare a 100 il numero di record restituiti dalla query:
 ...
 ```
 
-Per recuperare i 100 record successivi, eseguire nuovamente la stessa query, aggiungendo **startLine** attributo.
+Per recuperare i 100 record successivi, eseguire nuovamente la stessa query, aggiungendo l&#39;attributo **startLine**.
 
 ```
 <queryDef schema="nms:recipient" operation="select" lineCount="100" startLine="100">
@@ -216,7 +216,7 @@ Per contare il numero di record in una query:
 
 >[!NOTE]
 >
->Anche in questo caso, utilizziamo la condizione dell’esempio precedente. Il `<select>` Le clausole e non vengono utilizzate. `</select>`
+>Anche in questo caso, utilizziamo la condizione dell’esempio precedente. `<select>` e le clausole non sono utilizzate. `</select>`
 
 #### Raggruppamento di dati {#data-grouping}
 
@@ -242,7 +242,7 @@ Per recuperare gli indirizzi e-mail a cui si fa riferimento più di una volta:
 </queryDef>
 ```
 
-La query può essere semplificata aggiungendo **groupBy** attribuire direttamente al campo da raggruppare:
+La query può essere semplificata aggiungendo l&#39;attributo **groupBy** direttamente al campo da raggruppare:
 
 ```
 <select>
@@ -252,7 +252,7 @@ La query può essere semplificata aggiungendo **groupBy** attribuire direttament
 
 >[!NOTE]
 >
->Non è più necessario compilare il `<groupby>` elemento.
+>Non è più necessario popolare l&#39;elemento `<groupby>`.
 
 #### Parentesi quadra in condizioni {#bracketing-in-conditions}
 
@@ -266,7 +266,7 @@ Di seguito sono riportati due esempi di parentesi quadre nella stessa condizione
   </where>
   ```
 
-* La versione strutturata con `<condition>` elementi:
+* Versione strutturata con `<condition>` elementi:
 
   ```
   <where>
@@ -317,7 +317,7 @@ Questa sintassi semplifica la query quando nella condizione vengono utilizzati p
   </select>
   ```
 
-* Collegamenti alle raccolte (1N): il filtro sui campi di una tabella di raccolta deve essere eseguito tramite **ESISTE** o **NON ESISTE** operatore.
+* Collegamenti di raccolta (1N): il filtro sui campi di una tabella di raccolta deve essere eseguito tramite l&#39;operatore **EXISTS** o **NOT EXISTS**.
 
   Per filtrare i destinatari abbonati al servizio di informazioni &quot;Newsletter&quot;:
 
@@ -329,7 +329,7 @@ Questa sintassi semplifica la query quando nella condizione vengono utilizzati p
   </where>
   ```
 
-  Recupero diretto dei campi di un collegamento di raccolta dal `<select>` non è consigliata perché la query restituisce un prodotto cardinale. Viene utilizzato solo quando la tabella collegata contiene un solo record (ad esempio `<node expr="">`).
+  Il recupero diretto dei campi di un collegamento di raccolta dalla clausola `<select>` non è consigliato perché la query restituisce un prodotto cardinale. Viene utilizzato solo quando la tabella collegata contiene un solo record (esempio: `<node expr="">`).
 
   Esempio sul collegamento di raccolta &quot;subscription&quot;:
 
@@ -339,9 +339,9 @@ Questa sintassi semplifica la query quando nella condizione vengono utilizzati p
   </select>
   ```
 
-  È possibile recuperare un sottoelenco contenente gli elementi di un collegamento di raccolta nel `<select>` clausola. Gli XPaths dei campi a cui si fa riferimento sono contestuali rispetto all&#39;elemento di raccolta.
+  È possibile recuperare un sottoelenco contenente gli elementi di un collegamento di raccolta nella clausola `<select>`. Gli XPaths dei campi a cui si fa riferimento sono contestuali rispetto all&#39;elemento di raccolta.
 
-  Il filtro ( `<orderby>`  ) e restrizione (  `<where>`  ) possono essere aggiunti all&#39;elemento raccolta.
+  È possibile aggiungere all&#39;elemento raccolta gli elementi di filtro ( `<orderby>` ) e di restrizione ( `<where>` ).
 
   In questo esempio, per ogni destinatario la query restituisce l’e-mail e l’elenco dei servizi di informazione a cui il destinatario si abbona:
 
@@ -369,7 +369,7 @@ Questa sintassi semplifica la query quando nella condizione vengono utilizzati p
 
 L’associazione dei parametri consente al motore di impostare i valori dei parametri utilizzati nella query. Questo è molto utile, poiché il motore è responsabile dell’escape dei valori e c’è il vantaggio aggiuntivo di una cache per i parametri da recuperare.
 
-Quando viene creata una query, i valori &quot;associati&quot; vengono sostituiti da un carattere (? in ODBC, `#[index]#` in postgres... nel corpo della query SQL.
+Quando viene creata una query, i valori &quot;associati&quot; vengono sostituiti da un carattere (? in ODBC, `#[index]#` in postgres...) nel corpo della query SQL.
 
 ```
 <select>
@@ -388,7 +388,7 @@ Per evitare di associare un parametro, l&#39;attributo &quot;noSqlBind&quot; dev
 
 #### Suggerimento per creazione query: {#query-building-tip-}
 
-Per semplificare la sintassi di una query, puoi scriverla utilizzando l’editor di query generico nella console client di Adobe Campaign ( **[!UICONTROL Tools/ Generic query editor...]** menu). Per eseguire questa operazione:
+Per semplificare la sintassi di una query, è possibile scrivere la query utilizzando l&#39;editor di query generico nella console del client Adobe Campaign (menu **[!UICONTROL Tools/ Generic query editor...]**). Per eseguire questa operazione:
 
 1. Seleziona i dati da recuperare:
 
@@ -431,7 +431,7 @@ Esempio di documento restituito per l&#39;operazione di tipo &quot;conteggio&quo
 
 #### Alias {#alias}
 
-Un alias consente di modificare la posizione dei dati nel documento di output. Il **alias** L&#39;attributo deve specificare un XPath nel campo corrispondente.
+Un alias consente di modificare la posizione dei dati nel documento di output. L&#39;attributo **alias** deve specificare un XPath nel campo corrispondente.
 
 ```
 <queryDef schema="nms:recipient" operation="get">
@@ -532,17 +532,17 @@ Definizione dei metodi &quot;Write&quot; e &quot;WriteCollection&quot; nello sch
 
 La riconciliazione dei dati funziona in base alla definizione delle chiavi immesse nello schema associato. La procedura di scrittura cerca la prima chiave idonea in base ai dati immessi nel documento di input. L’entità viene inserita o aggiornata in base alla sua esistenza nel database.
 
-La chiave dello schema dell’entità da aggiornare viene completata in base alla **xtkschema** attributo.
+La chiave dello schema dell&#39;entità da aggiornare è completata in base all&#39;attributo **xtkschema**.
 
-La chiave di riconciliazione può quindi essere forzata con **_chiave** attributo contenente l&#39;elenco di XPaths che compongono la chiave (separati da virgole).
+È quindi possibile forzare la chiave di riconciliazione con l&#39;attributo **_key** contenente l&#39;elenco di XPaths che compongono la chiave (separati da virgole).
 
-È possibile forzare il tipo di operazione compilando il **_operation** con i seguenti valori:
+È possibile forzare il tipo di operazione compilando l&#39;attributo **_operation** con i valori seguenti:
 
-* **inserire**: forza l’inserimento del record (la chiave di riconciliazione non viene utilizzata),
+* **insert**: forza l&#39;inserimento del record (la chiave di riconciliazione non viene utilizzata),
 * **insertOrUpdate**: aggiorna o inserisce il record a seconda della chiave di riconciliazione (modalità predefinita),
-* **aggiorna**: aggiorna il record; non esegue alcuna operazione se i dati non esistono,
-* **eliminare**: elimina i record,
-* **nessuno**: utilizzato solo per la riconciliazione dei collegamenti, senza aggiornamento o inserimento.
+* **update**: aggiorna il record; non esegue alcuna operazione se i dati non esistono,
+* **delete**: elimina i record,
+* **none**: utilizzato solo per la riconciliazione dei collegamenti, senza aggiornamento o inserimento.
 
 ### Esempio con il metodo &#39;Write&#39; {#example-with-the--write--method}
 
@@ -590,7 +590,7 @@ Associazione della cartella a un destinatario in base al suo nome interno (@name
 
 Gli attributi &quot;_key&quot; e &quot;_operation&quot; possono essere immessi in un elemento collegato. Il comportamento di questo elemento è lo stesso dell’elemento principale dello schema di input.
 
-La definizione della chiave dell’entità principale (&quot;nms:recipient&quot;) è costituita da un campo di una tabella collegata (elemento `<folder>`  schema &quot;xtk:folder&quot;) e l’e-mail.
+La definizione della chiave dell&#39;entità principale (&quot;nms:recipient&quot;) è costituita da un campo di una tabella collegata (elemento `<folder>` schema &quot;xtk:folder&quot;) e dall&#39;e-mail.
 
 >[!NOTE]
 >
@@ -620,7 +620,7 @@ Aggiunta di un destinatario a un gruppo con la tabella delle relazioni di gruppo
 
 >[!NOTE]
 >
->La definizione della chiave non viene immessa nel `<rcpgroup>` perché nello schema &quot;nms:group&quot; è definita una chiave implicita basata sul nome del gruppo.
+>La definizione della chiave non viene immessa nell&#39;elemento `<rcpgroup>` perché nello schema &quot;nms:group&quot; è definita una chiave implicita basata sul nome del gruppo.
 
 ### Elementi della raccolta XML {#xml-collection-elements}
 

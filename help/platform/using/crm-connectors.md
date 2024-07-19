@@ -26,12 +26,12 @@ Questi connettori consentono un’integrazione rapida e semplice dei dati: Adobe
 
 >[!NOTE]
 >
->Questa funzione è disponibile in Adobe Campaign tramite **Connettori CRM** pacchetto dedicato.
+>Questa funzione è disponibile in Adobe Campaign tramite il pacchetto dedicato **Connettori CRM**.
 
 
 ### Sistemi compatibili {#compatible-crm-systems-and-limitations}
 
-Il CRM e le versioni supportate sono descritti in dettaglio in Campaign [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
+Il CRM e le versioni supportate sono descritti in dettaglio nella [Matrice di compatibilità](../../rn/using/compatibility-matrix.md) della campagna.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Il CRM e le versioni supportate sono descritti in dettaglio in Campaign [Matrice
 
 ### Passaggi di implementazione {#crm-implementation-steps}
 
-Scopri la procedura dettagliata per collegare Campaign e Microsoft Dynamics [in questa sezione](../../platform/using/crm-ms-dynamics.md)
+Scopri la procedura dettagliata per connettere Campaign e Microsoft Dynamics [in questa sezione](../../platform/using/crm-ms-dynamics.md)
 
 
-Scopri la procedura dettagliata per collegare Campaign e Salesforce [in questa sezione](../../platform/using/crm-sfdc.md)
+Scopri la procedura dettagliata per connettere Campaign e Salesforce [in questa sezione](../../platform/using/crm-sfdc.md)

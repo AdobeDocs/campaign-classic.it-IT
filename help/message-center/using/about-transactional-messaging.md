@@ -18,17 +18,17 @@ ht-degree: 4%
 
 ## Panoramica {#overview}
 
-**Messaggistica transazionale** (Centro messaggi) è un modulo di Campaign progettato per gestire le notifiche di attivazione personalizzate generate da eventi inviati da un sistema di informazione esterno.
+**La messaggistica transazionale** (Centro messaggi) è un modulo di Campaign progettato per gestire le notifiche di attivazione personalizzate generate da eventi inviati da un sistema di informazioni esterno.
 
 Un messaggio transazionale è una comunicazione singola e univoca, inviata in tempo reale da un provider, ad esempio un sito web. È particolarmente atteso, perché contiene informazioni importanti che il destinatario desidera controllare o confermare.
 
 Le funzionalità di messaggistica transazionale sono progettate per supportare la scalabilità e fornire un servizio 24 ore su 24, 7 giorni su 7.
 
-* **Quando deve essere consegnata?** Poiché questo messaggio contiene informazioni importanti, l’utente si aspetta che vengano inviate in tempo reale. Di conseguenza, il ritardo tra l’attivazione dell’evento e l’arrivo del messaggio deve essere molto breve.
+* **Quando scade?** Poiché questo messaggio contiene informazioni importanti, l&#39;utente si aspetta che vengano inviate in tempo reale. Di conseguenza, il ritardo tra l’attivazione dell’evento e l’arrivo del messaggio deve essere molto breve.
 
 * **Perché è importante?** In genere, un messaggio sulle transazioni ha tassi di apertura elevati. Dovrebbe quindi essere concepita con attenzione, in quanto può avere un forte impatto sul comportamento dei clienti in quanto definisce la relazione con essi.
 
-* **Per esempio?** Potrebbe essere un messaggio di benvenuto dopo la creazione di un account, una conferma della spedizione di un ordine, una fattura, un messaggio di conferma di una modifica della password, una notifica dopo che un cliente ha navigato sul tuo sito web, una comunicazione di indisponibilità del prodotto, un estratto conto, ecc.
+* **Ad esempio?** Potrebbe trattarsi di un messaggio di benvenuto dopo la creazione di un account, di una conferma della spedizione di un ordine, di una fattura, di un messaggio di conferma di una modifica della password, di una notifica dopo che un cliente ha visitato il tuo sito Web, di una comunicazione di indisponibilità del prodotto, di un estratto conto, ecc.
 
 >[!IMPORTANT]
 >
@@ -40,11 +40,11 @@ Le funzionalità di messaggistica transazionale sono progettate per supportare l
 
 Il modulo di messaggistica transazionale di Adobe Campaign si integra in un sistema di informazioni che restituisce eventi da trasformare in messaggi transazionali personalizzati. Questi messaggi possono essere inviati singolarmente o in batch tramite e-mail, SMS o notifiche push.
 
-Questa funzione si basa su un’architettura specifica, in cui **istanza di esecuzione** è separato dal **istanza di controllo**. Questa distribuzione garantisce una maggiore disponibilità e una migliore gestione del carico. Per ulteriori informazioni, consulta [Architettura dei messaggi transazionali](../../message-center/using/transactional-messaging-architecture.md).
+Questa funzionalità si basa su un&#39;architettura specifica, in cui l&#39;**istanza di esecuzione** è separata dall&#39;**istanza di controllo**. Questa distribuzione garantisce una maggiore disponibilità e una migliore gestione del carico. Per ulteriori informazioni, consulta [Architettura dei messaggi transazionali](../../message-center/using/transactional-messaging-architecture.md).
 
 >[!NOTE]
 >
->Per creare nuovi utenti per le istanze di esecuzione del Centro messaggi ospitate su Adobe Cloud, devi contattare [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Gli utenti del Centro messaggi sono operatori specifici che richiedono autorizzazioni dedicate per accedere **[!UICONTROL Real time events (nmsRtEvent)]** cartelle.
+>Per creare nuovi utenti per le istanze di esecuzione del Centro messaggi ospitate su Adobe Cloud, devi contattare [l&#39;Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Gli utenti del Centro messaggi sono operatori specifici che richiedono autorizzazioni dedicate per accedere alle cartelle **[!UICONTROL Real time events (nmsRtEvent)]**.
 
 Il processo generale di messaggistica transazionale può essere descritto come segue:
 
@@ -54,7 +54,7 @@ Ad esempio, immagina di essere un’azienda con un sito web in cui i clienti pos
 
 Adobe Campaign consente di inviare un’e-mail di notifica ai clienti che hanno aggiunto prodotti al carrello. Quando uno di loro lascia il sito web senza procedere con gli acquisti (evento esterno che attiva un evento Campaign), riceve automaticamente un’e-mail di abbandono del carrello (consegna di messaggi transazionali).
 
-I passaggi principali per mettere in atto questo processo sono descritti di seguito [questa sezione](#key-steps).
+I passaggi principali per l&#39;implementazione sono descritti di seguito in [questa sezione](#key-steps).
 
 >[!NOTE]
 >
@@ -66,24 +66,24 @@ Di seguito sono riepilogati i passaggi principali per la creazione e la gestione
 
 ### Passaggi da eseguire sull’istanza di controllo
 
-Il giorno **istanza di controllo**, è necessario eseguire le azioni seguenti:
+Nell&#39;**istanza di controllo** è necessario eseguire le azioni seguenti:
 
-1. [Creare un tipo di evento](../../message-center/using/creating-event-types.md).
+1. [Crea un tipo di evento](../../message-center/using/creating-event-types.md).
 1. [Creare e progettare il modello di messaggio](../../message-center/using/creating-the-message-template.md). Collega un evento al messaggio durante questo passaggio.
 1. [Verifica il messaggio](../../message-center/using/testing-message-templates.md).
-1. [Pubblicare il modello di messaggio](../../message-center/using/publishing-message-templates.md).
+1. [Publish il modello di messaggio](../../message-center/using/publishing-message-templates.md).
 
 >[!NOTE]
 >
->Tutti i passaggi precedenti vengono eseguiti il **istanza di controllo**. La pubblicazione del modello sull’istanza di controllo lo pubblicherà anche su tutti **istanze di esecuzione**. Per ulteriori informazioni sulle istanze di messaggistica transazionale, consulta [Architettura dei messaggi transazionali](../../message-center/using/transactional-messaging-architecture.md).
+>Tutti i passaggi precedenti vengono eseguiti sull&#39;**istanza di controllo**. La pubblicazione del modello nell&#39;istanza di controllo lo pubblicherà anche in tutte le **istanze di esecuzione**. Per ulteriori informazioni sulle istanze di messaggistica transazionale, consulta [Architettura della messaggistica transazionale](../../message-center/using/transactional-messaging-architecture.md).
 
 ### Elaborazione degli eventi nell’istanza di esecuzione
 
-Una volta progettato e pubblicato il modello di messaggio transazionale, se viene attivato un evento corrispondente, i passaggi principali seguenti vengono eseguiti il **istanza di esecuzione**:
+Dopo aver progettato e pubblicato il modello di messaggio transazionale, se viene attivato un evento corrispondente, i passaggi principali seguenti vengono eseguiti sull&#39;**istanza di esecuzione**:
 
-1. Quando l’evento viene generato dal sistema di informazione esterno, i dati pertinenti vengono inviati a Campaign tramite **PushEvent** e **PushEvents** metodi. Consulta [Raccolta di eventi](../../message-center/using/about-event-processing.md#event-collection).
-1. L’evento è collegato al modello di messaggio appropriato. Consulta [Instradamento verso un modello](../../message-center/using/about-event-processing.md#routing-towards-a-template).
-1. Una volta completata la fase di arricchimento, la consegna viene inviata. Consulta [Esecuzione della consegna](../../message-center/using/delivery-execution.md). Ogni destinatario riceve un messaggio personalizzato.
+1. Quando l&#39;evento viene generato dal sistema di informazioni esterno, i dati rilevanti vengono inviati a Campaign tramite i metodi **PushEvent** e **PushEvents**. Vedi [Raccolta eventi](../../message-center/using/about-event-processing.md#event-collection).
+1. L’evento è collegato al modello di messaggio appropriato. Vedi [Instradamento verso un modello](../../message-center/using/about-event-processing.md#routing-towards-a-template).
+1. Una volta completata la fase di arricchimento, la consegna viene inviata. Vedi [Esecuzione della consegna](../../message-center/using/delivery-execution.md). Ogni destinatario riceve un messaggio personalizzato.
 
 ## Argomenti correlati {#related-topics}
 

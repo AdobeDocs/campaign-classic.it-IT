@@ -21,13 +21,13 @@ Per garantire che ogni evento possa essere trasformato in un messaggio personali
 >
 >I tipi di evento devono essere creati in anticipo. Per ulteriori informazioni, consulta [Creare tipi di evento](../../message-center/using/creating-event-types.md).
 
-I modelli per messaggi transazionali contengono le informazioni necessarie per personalizzare il messaggio transazionale. Puoi inoltre utilizzare i modelli per verificare l’anteprima dei messaggi e inviare bozze utilizzando indirizzi di seed prima della consegna al target finale. Per ulteriori informazioni, consulta [Testare modelli di messaggi transazionali](../../message-center/using/testing-message-templates.md).
+I modelli per messaggi transazionali contengono le informazioni necessarie per personalizzare il messaggio transazionale. Puoi inoltre utilizzare i modelli per verificare l’anteprima dei messaggi e inviare bozze utilizzando indirizzi di seed prima della consegna al target finale. Per ulteriori informazioni, consulta [Test dei modelli di messaggi transazionali](../../message-center/using/testing-message-templates.md).
 
 ## Creare il modello di messaggio {#creating-message-template}
 
-1. Vai a **[!UICONTROL Message Center >Transactional message templates]** nella struttura Adobe Campaign.
+1. Passare alla cartella **[!UICONTROL Message Center >Transactional message templates]** nella struttura Adobe Campaign.
 
-1. Nell’elenco dei modelli di messaggi transazionali, fai clic con il pulsante destro del mouse e seleziona **[!UICONTROL New]** nel menu a discesa o fai clic sul pulsante **[!UICONTROL New]** sopra l’elenco dei modelli di messaggi transazionali.
+1. Nell&#39;elenco dei modelli di messaggi transazionali, fare clic con il pulsante destro del mouse e selezionare **[!UICONTROL New]** nel menu a discesa oppure fare clic sul pulsante **[!UICONTROL New]** sopra l&#39;elenco dei modelli di messaggi transazionali.
 
    ![](assets/messagecenter_create_model_001.png)
 
@@ -47,18 +47,18 @@ I modelli per messaggi transazionali contengono le informazioni necessarie per p
    >
    >Un tipo di evento non può essere collegato a più modelli.
 
-1. Inserisci una natura e una descrizione, quindi fai clic su **[!UICONTROL Continue]** per creare il corpo del messaggio (fare riferimento a [Creare il contenuto del messaggio](#creating-message-content)).
+1. Immettere una natura e una descrizione, quindi fare clic su **[!UICONTROL Continue]** per creare il corpo del messaggio (fare riferimento a [Creare il contenuto del messaggio](#creating-message-content)).
 
    ![](assets/messagecenter_create_model_004.png)
 
 ## Creare il contenuto del messaggio {#creating-message-content}
 
-La definizione del contenuto dei messaggi transazionali è la stessa utilizzata per le consegne regolari in Adobe Campaign. Ad esempio, per una consegna e-mail, puoi creare contenuto in formato HTML o testo, aggiungere allegati o personalizzare l’oggetto di consegna. Per ulteriori informazioni, consulta [Consegna e-mail](../../delivery/using/about-email-channel.md) capitolo.
+La definizione del contenuto dei messaggi transazionali è la stessa utilizzata per le consegne regolari in Adobe Campaign. Ad esempio, per una consegna e-mail, puoi creare contenuto in formato HTML o testo, aggiungere allegati o personalizzare l’oggetto di consegna. Per ulteriori informazioni, consulta il capitolo [Email delivery](../../delivery/using/about-email-channel.md).
 
 >[!IMPORTANT]
 >
 >Le immagini incluse nel messaggio devono essere accessibili al pubblico. Adobe Campaign non fornisce alcun meccanismo di caricamento di immagini per i messaggi transazionali.\
->A differenza di JSSP o webApp, `<%=` non ha alcun escape predefinito.
+>A differenza di JSSP o WebApp, `<%=` non ha alcun escape predefinito.
 >
 >In questo caso, è necessario eseguire correttamente l’escape di ogni dato proveniente dall’evento. L’escape dipende da come viene utilizzato questo campo. Ad esempio, all’interno di un URL, utilizza encodeURIComponent. Per essere visualizzato in HTML, è possibile utilizzare escapeXMLString.
 
@@ -75,11 +75,11 @@ Per inserire i tag di personalizzazione nel corpo di un messaggio e-mail, effett
 
 1. Inserisci il corpo del messaggio.
 
-1. Nel corpo del testo, inserisci il tag utilizzando **[!UICONTROL Real time events > Event XML]** menu.
+1. Nel corpo del testo, inserire il tag utilizzando il menu **[!UICONTROL Real time events > Event XML]**.
 
    ![](assets/messagecenter_create_custo_002.png)
 
-1. Compila il tag utilizzando la sintassi seguente: **nome elemento**.@**nome attributo** come mostrato di seguito.
+1. Compila il tag utilizzando la seguente sintassi: **nome elemento**.@**nome attributo** come mostrato di seguito.
 
    ![](assets/messagecenter_create_custo_003.png)
 

@@ -18,7 +18,7 @@ ht-degree: 1%
 
 
 
-Il [!DNL pipelined] servizio web di stato fornisce informazioni sullo stato del [!DNL pipelined] processo.
+Il servizio Web di stato [!DNL pipelined] fornisce informazioni sullo stato del processo [!DNL pipelined].
 
 È accessibile manualmente tramite un browser o automaticamente con un&#39;applicazione di monitoraggio.
 
@@ -43,7 +43,7 @@ Vengono evidenziati gli indicatori consigliati per il monitoraggio.
    * next-offsets-flush: tempo di attesa del batch successivo al termine.
    * processed-Since-last-flush: numero di trigger elaborati nell&#39;ultimo batch.
 * indirizzamento
-   * trigger: elenco di trigger recuperati. Configurato in [!DNL pipelined] opzione.
+   * trigger: elenco di trigger recuperati. Configurato nell&#39;opzione [!DNL pipelined].
 * statistiche
    * average-pointer-flush-time-ms: tempo medio di elaborazione per un batch di trigger.
    * average-trigger-processing-time-ms: tempo medio impiegato per l’analisi dei dati dei trigger.

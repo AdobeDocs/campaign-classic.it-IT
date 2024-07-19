@@ -20,7 +20,7 @@ Utilizza Adobe Campaign per inviare messaggi SMS personalizzati.
 Prima di iniziare a inviare SMS:
 
 * Assicurati che nel profilo dei destinatari sia presente almeno un telefono cellulare.
-* Ulteriori informazioni su Adobe Campaign [Best practice per la consegna](delivery-best-practices.md).
+* Ulteriori informazioni sulle [best practice per la consegna](delivery-best-practices.md) di Adobe Campaign.
 
 I passaggi chiave per inviare un SMS sono i seguenti:
 
@@ -37,6 +37,6 @@ Per informazioni globali su come creare una consegna, consulta [questa sezione](
 
 >[!NOTE]
 >
->Adobe Campaign consente inoltre di inviare notifiche sui terminali mobili tramite **Canale app mobile Adobe Campaign (NMAC)** opzione.
+>Adobe Campaign consente inoltre di inviare notifiche sui terminali mobili tramite l&#39;opzione **Canale app mobile Adobe Campaign (NMAC)**.
 > 
->Per ulteriori informazioni, consulta [Introduzione al canale app mobile](about-mobile-app-channel.md) sezione.
+>Per ulteriori informazioni, consulta la sezione [Introduzione al canale dell&#39;app mobile](about-mobile-app-channel.md).

@@ -16,14 +16,14 @@ ht-degree: 1%
 
 # Configurare l’accesso ad Amazon Redshift {#configure-access-to-redshift}
 
-Utilizzare Campaign **Federated Data Access** (FDA) per elaborare le informazioni memorizzate in un database esterno. Segui i passaggi seguenti per configurare l’accesso ad Amazon Redshift.
+Utilizza l&#39;opzione **Federated Data Access** (FDA) di Campaign per elaborare le informazioni archiviate in un database esterno. Segui i passaggi seguenti per configurare l’accesso ad Amazon Redshift.
 
-1. Configura [Database Amazon Redshift](#configuring-redshift)
-1. Configurare Amazon Redshift [account esterno](#redshift-external) in Campaign
+1. Configura [database Amazon Redshift](#configuring-redshift)
+1. Configura l&#39;[account esterno](#redshift-external) di Amazon Redshift in Campaign
 
 ## Amazon Redshift su Linux {#redshift-linux}
 
-Per configurare [!DNL Amazon Redshift] su Linux, segui i passaggi seguenti:
+Per configurare [!DNL Amazon Redshift] su Linux, eseguire la procedura seguente:
 
 1. Prima dell&#39;installazione di ODBC, verificare che i seguenti pacchetti siano installati nella distribuzione Linux:
 
@@ -43,7 +43,7 @@ Per configurare [!DNL Amazon Redshift] su Linux, segui i passaggi seguenti:
       apt-get install -y grep sed tar wget perl curl
      ```
 
-1. Prima di eseguire lo script, è possibile accedere a ulteriori informazioni con `--help` opzione:
+1. Prima di eseguire lo script, è possibile accedere a ulteriori informazioni con l&#39;opzione `--help`:
 
    ```
    cd /usr/local/neolane/nl6/bin/fda-setup-scripts/
@@ -64,29 +64,29 @@ Per configurare [!DNL Amazon Redshift] su Linux, segui i passaggi seguenti:
    systemctl start nlserver.service
    ```
 
-1. In Campaign, puoi quindi configurare i [!DNL Amazon Redshift] account esterno. Per ulteriori informazioni su come configurare l’account esterno, consulta [questa sezione](#redshift-external).
+1. In Campaign, puoi quindi configurare l&#39;account esterno [!DNL Amazon Redshift]. Per ulteriori informazioni su come configurare l&#39;account esterno, consulta [questa sezione](#redshift-external).
 
 ## Account esterno Amazon Redshift {#redshift-external}
 
-Il [!DNL Amazon Redshift] l’account esterno ti consente di collegare l’istanza Campaign al database esterno Amazon Redshift.
+L&#39;account esterno [!DNL Amazon Redshift] ti consente di collegare l&#39;istanza Campaign al database esterno Amazon Redshift.
 
-1. In Campaign Classic, configura il tuo [!DNL Amazon Redshift] account esterno. Dalla sezione **[!UICONTROL Explorer]**, fai clic su **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. In Campaign Classic, configura l&#39;account esterno [!DNL Amazon Redshift]. Da **[!UICONTROL Explorer]**, fare clic su **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
 
 1. Fai clic su **[!UICONTROL New]**.
 
-1. Seleziona **[!UICONTROL External database]** come dell’account esterno **[!UICONTROL Type]**.
+1. Seleziona **[!UICONTROL External database]** come **[!UICONTROL Type]** del tuo account esterno.
 
-1. Configurare **[!UICONTROL Amazon Redshift]** account esterno, è necessario specificare:
+1. Configurare l&#39;account esterno **[!UICONTROL Amazon Redshift]**. È necessario specificare:
 
    * **[!UICONTROL Type]**: Amazon Redshift
 
    * **[!UICONTROL Server]**: nome del DNS
 
-   * **[!UICONTROL Account]**: nome dell’utente
+   * **[!UICONTROL Account]**: nome dell&#39;utente
 
-   * **[!UICONTROL Password]**: password dell’account utente
+   * **[!UICONTROL Password]**: password dell&#39;account utente
 
-   * **[!UICONTROL Database]**: nome del database, se non specificato nel DSN. Può essere lasciato vuoto se specificato nel DSN
+   * **[!UICONTROL Database]**: nome del database se non specificato nel DSN. Può essere lasciato vuoto se specificato nel DSN
 
    * **[!UICONTROL Working schema]**: nome dello schema di lavoro. [Ulteriori informazioni](https://docs.aws.amazon.com/redshift/latest/dg/r_Schemas_and_tables.html)
 

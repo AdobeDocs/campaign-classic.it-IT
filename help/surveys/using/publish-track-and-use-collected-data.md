@@ -20,7 +20,7 @@ Una volta creato, configurato e pubblicato il modulo, puoi condividere il colleg
 
 >[!NOTE]
 >
->Il ciclo di vita di un sondaggio in Adobe Campaign e le sue modalità di pubblicazione e consegna sono simili a quelle dei moduli web: questi sono descritti in [questa sezione](../../web/using/about-web-forms.md).
+>Il ciclo di vita e le modalità di pubblicazione e consegna di un sondaggio in Adobe Campaign sono simili a quelli dei moduli Web: sono descritti in [questa sezione](../../web/using/about-web-forms.md).
 
 ## Dashboard sondaggio {#survey-dashboard}
 
@@ -36,7 +36,7 @@ Puoi tenere traccia delle risposte al sondaggio nei registri e nei rapporti.
 
 ### Registri del sondaggio {#survey-logs}
 
-Per ogni sondaggio consegnato, puoi tenere traccia delle risposte nel **[!UICONTROL Logs]** scheda. In questa scheda viene visualizzato l’elenco degli utenti che hanno completato il sondaggio e la loro origine:
+Per ogni sondaggio consegnato, è possibile tenere traccia delle risposte nella scheda **[!UICONTROL Logs]**. In questa scheda viene visualizzato l’elenco degli utenti che hanno completato il sondaggio e la loro origine:
 
 ![](assets/s_ncs_admin_survey_logs.png)
 
@@ -48,7 +48,7 @@ L’origine è indicata nell’URL del sondaggio aggiungendo i seguenti caratter
 ?origin=xxx
 ```
 
-durante la modifica del sondaggio, il relativo URL contiene il parametro **[!UICONTROL __uuid]**, che indica che si trova in una fase di test e non è ancora online. Quando accedi al sondaggio tramite questo URL, i record creati non vengono presi in considerazione nel tracciamento (rapporti). L’origine viene forzata al valore **[!UICONTROL Adobe Campaign]**.
+durante la modifica del sondaggio, l&#39;URL contiene il parametro **[!UICONTROL __uuid]**, che indica che si trova in una fase di test e non è ancora online. Quando accedi al sondaggio tramite questo URL, i record creati non vengono presi in considerazione nel tracciamento (rapporti). Origine forzata al valore **[!UICONTROL Adobe Campaign]**.
 
 Per ulteriori informazioni sui parametri URL, consulta [questa pagina](../../web/using/defining-web-forms-properties.md#form-url-parameters).
 
@@ -58,9 +58,9 @@ La scheda della dashboard ti consente di accedere ai rapporti dei sondaggi. Fai 
 
 ![](assets/s_ncs_admin_survey_report_doc.png)
 
-La struttura dell’indagine è visibile nella sezione **[!UICONTROL Documentation]** rapporto.
+La struttura del sondaggio è visibile nel report **[!UICONTROL Documentation]**.
 
-Altri due rapporti sui sondaggi Web sono disponibili nel **[!UICONTROL Reports]** scheda dei sondaggi: **[!UICONTROL General]** e **[!UICONTROL Breakdown of responses]**.
+Nella scheda **[!UICONTROL Reports]** dei sondaggi sono disponibili altri due rapporti sui sondaggi Web: **[!UICONTROL General]** e **[!UICONTROL Breakdown of responses]**.
 
 * Generale
 
@@ -72,7 +72,7 @@ Altri due rapporti sui sondaggi Web sono disponibili nel **[!UICONTROL Reports]*
 
 * Raggruppamento delle risposte
 
-  Questo rapporto mostra il raggruppamento delle risposte per ogni domanda. Questo raggruppamento è disponibile solo per le risposte date ai campi memorizzati in **[!UICONTROL Question]** contenitori di tipi. È valida solo per i controlli di selezione (ad esempio, nessuna suddivisione nei campi di testo).
+  Questo rapporto mostra il raggruppamento delle risposte per ogni domanda. Questo raggruppamento è disponibile solo per le risposte date ai campi memorizzati nei contenitori di tipo **[!UICONTROL Question]**. È valida solo per i controlli di selezione (ad esempio, nessuna suddivisione nei campi di testo).
 
   ![](assets/s_ncs_admin_survey_report_2.png)
 
@@ -82,13 +82,13 @@ Le risposte a un sondaggio possono essere esportate in un file esterno per esser
 
 1. Esportazione dei dati del rapporto
 
-   Per esportare i dati del rapporto, fai clic su **[!UICONTROL Export]** e scegliere il formato di esportazione.
+   Per esportare i dati del report, fare clic sul pulsante **[!UICONTROL Export]** e scegliere il formato di esportazione.
 
-   Per ulteriori informazioni sull’esportazione dei dati del rapporto, consulta [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md).
+   Per ulteriori informazioni sull&#39;esportazione dei dati del report, consultare [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md).
 
 1. Esportazione delle risposte
 
-   Per esportare le risposte, fare clic su **[!UICONTROL Responses]** del sondaggio e fare clic con il pulsante destro del mouse. Seleziona **[!UICONTROL Export...]**.
+   Per esportare le risposte, fare clic sulla scheda **[!UICONTROL Responses]** del sondaggio e fare clic con il pulsante destro del mouse. Seleziona **[!UICONTROL Export...]**.
 
    ![](assets/s_ncs_admin_survey_logs_export_menu.png)
 
@@ -102,11 +102,11 @@ Le risposte a un sondaggio possono essere esportate in un file esterno per esser
    * formattare i dati esportati,
    * selezionare il formato di codifica per le informazioni contenute nel file.
 
-   Se il sondaggio che desideri esportare contiene diversi **[!UICONTROL Multi-line text]** o **[!UICONTROL HTML text]** , deve essere esportato in **[!UICONTROL XML]** formato. A questo scopo, seleziona questo formato nell’elenco a discesa del **[!UICONTROL Output format]** come mostrato di seguito:
+   Se il sondaggio che si desidera esportare contiene diversi campi **[!UICONTROL Multi-line text]** o **[!UICONTROL HTML text]**, deve essere esportato in formato **[!UICONTROL XML]**. A tale scopo, selezionare questo formato nell&#39;elenco a discesa del campo **[!UICONTROL Output format]**, come illustrato di seguito:
 
    ![](assets/s_ncs_admin_survey_logs_export_xml.png)
 
-   Clic **[!UICONTROL Start]** per eseguire l&#39;esportazione.
+   Fare clic su **[!UICONTROL Start]** per eseguire l&#39;esportazione.
 
    >[!NOTE]
    >
@@ -114,19 +114,19 @@ Le risposte a un sondaggio possono essere esportate in un file esterno per esser
 
 ## Utilizzo dei dati raccolti {#using-the-collected-data}
 
-Le informazioni raccolte tramite sondaggi online possono essere recuperate nel quadro di un flusso di lavoro di targeting. A tale scopo, utilizza **[!UICONTROL Survey responses]** casella.
+Le informazioni raccolte tramite sondaggi online possono essere recuperate nel quadro di un flusso di lavoro di targeting. A tale scopo, utilizzare la casella **[!UICONTROL Survey responses]**.
 
 Nell’esempio seguente, vogliamo fare un’offerta Web appositamente per i cinque destinatari con almeno due figli e con i punteggi più elevati in un sondaggio online. Le risposte a questo sondaggio sono le seguenti:
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_4.png)
 
-Nel flusso di lavoro di targeting, il **[!UICONTROL Survey responses]** sarà configurato come segue:
+Nel flusso di lavoro di targeting, **[!UICONTROL Survey responses]** verrà configurato come segue:
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_1.png)
 
 Inizia selezionando il sondaggio interessato, quindi i dati da estrarre nella sezione centrale della finestra. In questo caso, è necessario estrarre almeno la colonna di punteggio, in quanto verrà utilizzata nella casella di divisione per recuperare i cinque punteggi più elevati.
 
-Indica le condizioni di filtro per le risposte facendo clic sul pulsante **[!UICONTROL Edit query...]** collegamento.
+Indicare le condizioni di filtro per le risposte facendo clic sul collegamento **[!UICONTROL Edit query...]**.
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_2.png)
 
@@ -142,23 +142,23 @@ Quindi inserisci una casella di divisione nel flusso di lavoro per recuperare i 
 
 Modifica la casella di divisione per configurarla:
 
-* Per iniziare, seleziona lo schema adeguato nella sezione **[!UICONTROL General]** , quindi configura il sottoinsieme:
+* Iniziare selezionando lo schema adeguato nella scheda **[!UICONTROL General]**, quindi configurare il sottoinsieme:
 
   ![](assets/s_ncs_admin_survey_responses_wf_box_6b.png)
 
-* Vai a **[!UICONTROL Sub-sets]** e seleziona la scheda **[!UICONTROL Limit the selected records]** , quindi fare clic sul pulsante **[!UICONTROL Edit...]** collegamento.
+* Vai alla scheda **[!UICONTROL Sub-sets]** e seleziona l&#39;opzione **[!UICONTROL Limit the selected records]**, quindi fai clic sul collegamento **[!UICONTROL Edit...]**.
 
   ![](assets/s_ncs_admin_survey_responses_wf_box_7.png)
 
-* Seleziona la **[!UICONTROL Keep only the first records after sorting]** e selezionare la colonna di ordinamento. Seleziona l’opzione **[!UICONTROL Descending sort]**.
+* Selezionare l&#39;opzione **[!UICONTROL Keep only the first records after sorting]** e la colonna di ordinamento. Seleziona l’opzione **[!UICONTROL Descending sort]**.
 
   ![](assets/s_ncs_admin_survey_responses_wf_box_8.png)
 
-* Fai clic su **[!UICONTROL Next]** e limitare il numero di record a 5.
+* Fare clic sul pulsante **[!UICONTROL Next]** e limitare il numero di record a 5.
 
   ![](assets/s_ncs_admin_survey_responses_wf_box_9.png)
 
-* Clic **[!UICONTROL Finish]** quindi riavvia il flusso di lavoro per approvare il targeting.
+* Fai clic su **[!UICONTROL Finish]**, quindi riavvia il flusso di lavoro per approvare il targeting.
 
 ## Standardizzazione dei dati {#standardizing-data}
 

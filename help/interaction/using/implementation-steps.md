@@ -19,12 +19,12 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->I seguenti passaggi devono essere eseguiti da un **Amministratore** profilo e solo in ambienti di progettazione.
+>I passaggi seguenti devono essere eseguiti da un profilo **Amministratore** e solo in ambienti di progettazione.
 
 1. Creazione di profili utente. Per ulteriori informazioni, consulta [Profili operatore](../../interaction/using/operator-profiles.md).
 1. Creazione di un ambiente di offerta tramite la dimensione di targeting. Per ulteriori informazioni, consulta [Creazione di un ambiente di offerta](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
-1. Creazione di regole di tipologia per ogni ambiente. Per ulteriori informazioni, consulta [Creazione e riferimento a una regola di presentazione dell’offerta](../../interaction/using/managing-offer-presentation.md#creating-and-referencing-an-offer-presentation-rule).
-1. Creazione di spazi di offerta per ogni ambiente e configurazione delle funzioni di rendering. Per ulteriori informazioni, consulta [Creazione di spazi dell’offerta](../../interaction/using/creating-offer-spaces.md).
+1. Creazione di regole di tipologia per ogni ambiente. Per ulteriori informazioni, consulta [Creazione e riferimento a una regola di presentazione delle offerte](../../interaction/using/managing-offer-presentation.md#creating-and-referencing-an-offer-presentation-rule).
+1. Creazione di spazi di offerta per ogni ambiente e configurazione delle funzioni di rendering. Per ulteriori informazioni, consulta [Creazione di spazi dell&#39;offerta](../../interaction/using/creating-offer-spaces.md).
 
    >[!NOTE]
    >
@@ -42,17 +42,17 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Le seguenti fasi devono essere eseguite da un **Gestione offerte**.
+>I seguenti passaggi devono essere eseguiti da un **Gestione offerte**.
 
 1. Creazione di categorie di offerta in ambienti di progettazione. Per ulteriori informazioni, consulta [Creazione di categorie di offerta](../../interaction/using/creating-offer-categories.md).
-1. Creazione di offerte in ambienti di progettazione. Per ulteriori informazioni, consulta [Creazione di un’offerta](../../interaction/using/creating-an-offer.md).
-1. Approvazione e pubblicazione di offerte su uno o più spazi per renderle disponibili negli ambienti live per il gestore della consegna. Per ulteriori informazioni, consulta [Approvazione e attivazione di un’offerta](../../interaction/using/approving-and-activating-an-offer.md).
+1. Creazione di offerte in ambienti di progettazione. Per ulteriori informazioni, consulta [Creazione di un&#39;offerta](../../interaction/using/creating-an-offer.md).
+1. Approvazione e pubblicazione di offerte su uno o più spazi per renderle disponibili negli ambienti live per il gestore della consegna. Per ulteriori informazioni, consulta [Approvazione e attivazione di un&#39;offerta](../../interaction/using/approving-and-activating-an-offer.md).
 
 ## Utilizzo del catalogo delle offerte {#using-the-offer-catalog-}
 
 >[!NOTE]
 >
->I seguenti passaggi devono essere eseguiti da un **Responsabile della consegna** profilo. Possono modificare le offerte solo in ambienti live.
+>I seguenti passaggi devono essere eseguiti da un profilo **Delivery Manager**. Possono modificare le offerte solo in ambienti live.
 
 1. Creazione di una campagna.
 1. Riferimento a un’offerta in una campagna o in una consegna di campagne. Per ulteriori informazioni, consulta [Informazioni sui canali in uscita](../../interaction/using/about-outbound-channels.md).

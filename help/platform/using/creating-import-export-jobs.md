@@ -21,13 +21,13 @@ ht-degree: 7%
 
 Una volta configurati i modelli, è possibile avviare le operazioni di importazione ed esportazione in diversi contesti in Adobe Campaign.
 
-* In **[!UICONTROL Profiles and targets]** nell’area di lavoro di Adobe Campaign, fai clic su **[!UICONTROL Jobs]** link (collegamento): per visualizzare l’elenco delle importazioni ed esportazioni esistenti.
+* Nella sezione **[!UICONTROL Profiles and targets]** dell&#39;area di lavoro di Adobe Campaign, fai clic sul collegamento **[!UICONTROL Jobs]**: per visualizzare l&#39;elenco delle importazioni ed esportazioni esistenti.
 
-  Fai clic su **[!UICONTROL Create]** e selezionare il tipo di job da eseguire.
+  Fare clic sul pulsante **[!UICONTROL Create]** e selezionare il tipo di processo che si desidera eseguire.
 
   ![](assets/s_ncs_user_import_from_home.png)
 
-* Puoi anche avviare importazioni ed esportazioni dal **[!UICONTROL Monitoring]** sezione dell’area di lavoro: due collegamenti dedicati ti consentono di avviare direttamente l’importazione o l’esportazione.
+* È inoltre possibile avviare importazioni ed esportazioni dalla sezione **[!UICONTROL Monitoring]** dell&#39;area di lavoro: due collegamenti dedicati consentono di avviare direttamente l&#39;importazione o l&#39;esportazione.
 
   ![](assets/s_ncs_user_import_from_production.png)
 

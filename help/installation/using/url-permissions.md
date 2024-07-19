@@ -25,21 +25,21 @@ Per impostazione predefinita, le istanze non possono connettersi a URL esterni. 
 
 >[!NOTE]
 >
->Questa procedura è limitata a **on-premise** distribuzioni.
+>Questa procedura è limitata a **distribuzioni locali**.
 >
->As a **in hosting** cliente, se è possibile accedere [Pannello di controllo Campaign della campagna](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it), puoi utilizzare l’interfaccia self-service per le autorizzazioni URL. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=it)
+>In qualità di cliente **hosted**, se puoi accedere a [Pannello di controllo Campaign Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it), puoi utilizzare l&#39;interfaccia self-service delle autorizzazioni URL. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=it)
 >
->Altro **ibrido/in hosting** i clienti devono contattare il team di supporto Adobe per aggiungere l’IP al inserisco nell&#39;elenco Consentiti di.
+>Altri clienti **ibridi/ospitati** devono contattare il team di supporto Adobe per aggiungere l&#39;IP al inserisco nell&#39;elenco Consentiti di.
 >
 
-Per **Ibrido** e **On-premise** implementazioni, l’amministratore deve fare riferimento a una nuova **urlPermission** nel **serverConf.xml** file.
+Per le distribuzioni **Hybrid** e **On-Premise**, l&#39;amministratore deve fare riferimento a un nuovo **urlPermission** nel file **serverConf.xml**.
 
 
 Sono disponibili tre modalità di protezione della connessione:
 
-* **Blocco**: tutti gli URL che non appartengono al inserisco nell&#39;elenco Consentiti di vengono bloccati e viene visualizzato un messaggio di errore. Questa è la modalità predefinita dopo un post-aggiornamento.
+* **Blocco**: tutti gli URL che non appartengono al inserisco nell&#39;elenco Consentiti di sono bloccati, con un messaggio di errore. Questa è la modalità predefinita dopo un post-aggiornamento.
 * **Permissivo**: sono consentiti tutti gli URL che non appartengono al inserisco nell&#39;elenco Consentiti di.
-* **Avvertenza**: sono consentiti tutti gli URL che non appartengono al inserisco nell&#39;elenco Consentiti di, ma l’interprete JS genera un avviso che consente all’amministratore di raccoglierli. Questa modalità aggiunge messaggi di avviso JST-310027.
+* **Avviso**: sono consentiti tutti gli URL che non appartengono al inserisco nell&#39;elenco Consentiti di, ma l&#39;interprete JS genera un avviso che consente all&#39;amministratore di raccoglierli. Questa modalità aggiunge messaggi di avviso JST-310027.
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -51,9 +51,9 @@ Sono disponibili tre modalità di protezione della connessione:
 
 >[!IMPORTANT]
 >
->Per impostazione predefinita, le nuove implementazioni utilizzano **Blocco** modalità.
+>Per impostazione predefinita, le nuove implementazioni utilizzano la modalità **Blocco**.
 >
->In qualità di cliente esistente proveniente da una migrazione, puoi utilizzare temporaneamente la **Avvertenza** modalità. Analizza il traffico in uscita prima di consentire gli URL. Una volta definito l’elenco degli URL consentiti, puoi aggiungerli al elenco Consentiti di e attivare **Blocco** modalità.
+>In qualità di cliente esistente proveniente da una migrazione, puoi utilizzare temporaneamente la modalità **Avviso**. Analizza il traffico in uscita prima di consentire gli URL. Una volta definito l&#39;elenco degli URL consentiti, puoi aggiungerli al inserisco nell&#39;elenco Consentiti di e attivare la modalità **Blocco**.
 
 Per ulteriori informazioni, consulta le sezioni seguenti:
 

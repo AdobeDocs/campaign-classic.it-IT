@@ -55,18 +55,18 @@ Questo tipo di configurazione è in grado di gestire un numero elevato di destin
    * il primo esposto al pubblico per il tracciamento e il puntamento al load balancer su un indirizzo IP virtuale (VIP) e che viene quindi distribuito ai due server frontali,
    * il secondo esposto agli utenti interni per l’accesso tramite la console e che punta allo stesso application server.
 
-* Firewall configurato per aprire STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 ad Oracle, 5432 per PostgreSQL, ecc.) porte. Per ulteriori informazioni, consulta la sezione [Accesso al database](../../installation/using/network-configuration.md#database-access).
+* Firewall configurato per aprire STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 ad Oracle, 5432 per PostgreSQL, ecc.) porte. Per ulteriori informazioni, vedere la sezione [Accesso al database](../../installation/using/network-configuration.md#database-access).
 
 ### Installazione del server applicazioni {#installing-the-application-server}
 
-Segui i passaggi per installare un’istanza autonoma dal server applicazioni Adobe Campaign alla creazione del database (passaggio 12). Fai riferimento a [Installazione e configurazione (singolo computer)](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
+Segui i passaggi per installare un’istanza autonoma dal server applicazioni Adobe Campaign alla creazione del database (passaggio 12). Fare riferimento a [Installazione e configurazione (computer singolo)](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
 
 Poiché il computer non è un server di tracciamento, non prendere in considerazione l&#39;integrazione con il server Web.
 
 Negli esempi seguenti, i parametri della variante sono:
 
-* Nome dell’istanza: **demo**
-* Maschera DNS: **console.campaign.net&#42;** (solo per le connessioni alla console client e per i rapporti)
+* Nome dell&#39;istanza: **demo**
+* Maschera DNS: **console.campaign.net&#42;** (solo per le connessioni della console client e per i report)
 * Lingua: inglese
 * Database: **campagna:demo@dbsrv**
 
@@ -78,20 +78,20 @@ I passaggi sono i seguenti:
 
 1. Installa il server Adobe Campaign.
 
-   Per ulteriori informazioni, consulta [Prerequisiti per l’installazione di Campaign in Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) [Prerequisiti per l’installazione di Campaign in Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows)
+   Per ulteriori informazioni, consulta [Prerequisiti per l&#39;installazione di Campaign in Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) e [Prerequisiti per l&#39;installazione di Campaign in Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
 
 1. Segui la procedura di integrazione del server web (IIS, Apache) descritta nelle sezioni seguenti:
 
-   * Per Linux: [Integrazione in un server web per Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
-   * Per Windows: [Integrazione in un server web per Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
+   * Per Linux: [Integrazione in un server Web per Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
+   * Per Windows: [Integrazione in un server Web per Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
 
-1. Creare **demo** dell&#39;istanza. Esistono due modi per farlo:
+1. Crea l&#39;istanza **demo**. Esistono due modi per farlo:
 
    * Crea l’istanza tramite la console:
 
      ![](assets/install_create_new_connexion.png)
 
-     Per ulteriori informazioni, consulta [Creazione di un’istanza e accesso](../../installation/using/creating-an-instance-and-logging-on.md).
+     Per ulteriori informazioni, consulta [Creazione di un&#39;istanza e accesso](../../installation/using/creating-an-instance-and-logging-on.md).
 
      o
 
@@ -101,13 +101,13 @@ I passaggi sono i seguenti:
      nlserver config -addinstance:demo/tracking.campaign.net*
      ```
 
-     Per ulteriori informazioni, consulta [Creazione di un’istanza](../../installation/using/command-lines.md#creating-an-instance).
+     Per ulteriori informazioni, consulta [Creazione di un&#39;istanza](../../installation/using/command-lines.md#creating-an-instance).
 
    Il nome dell&#39;istanza è uguale a quello del server applicazioni.
 
-   La connessione al server con **nlserver web** (pagine mirror, annullamento dell’abbonamento) verrà effettuato dall’URL del load balancer (tracking.campaign.net).
+   La connessione al server con il modulo **nlserver web** (pagine mirror, annullamento abbonamento) verrà effettuata dall&#39;URL del load balancer (tracking.campaign.net).
 
-1. Modificare il **interno** allo stesso server dell&#39;applicazione.
+1. Modificare **internal** nello stesso modo del server applicazioni.
 
    Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
@@ -117,11 +117,11 @@ I passaggi sono i seguenti:
    nlserver config -setdblogin:PostgreSQL:campaign:demo@dbsrv -instance:demo
    ```
 
-1. In **config-default.xml** e **config-demo.xml** file, abilita **web**, **trackinglogd** e **mta** moduli.
+1. Nei file **config-default.xml** e **config-demo.xml**, abilita i moduli **web**, **trackinglogd** e **mta**.
 
    Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#enabling-processes).
 
-1. Modifica il **serverConf.xml** file e popola:
+1. Modifica il file **serverConf.xml** e popola:
 
    * la configurazione DNS del modulo MTA:
 
@@ -131,7 +131,7 @@ I passaggi sono i seguenti:
 
      >[!NOTE]
      >
-     >Il **nameServers** Il parametro viene utilizzato solo in Windows.
+     >Il parametro **nameServers** è utilizzato solo in Windows.
 
      Per ulteriori informazioni, consulta [Impostazioni di consegna](configure-delivery-settings.md).
 
@@ -144,7 +144,7 @@ I passaggi sono i seguenti:
 
      Per ulteriori informazioni, consulta [Tracciamento ridondante](configuring-campaign-server.md#redundant-tracking).
 
-1. Avvia il sito web e verifica il reindirizzamento dall’URL: [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test).
+1. Avviare il sito Web e verificare il reindirizzamento dall&#39;URL: [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test).
 
    Il browser deve visualizzare i seguenti messaggi (a seconda dell’URL reindirizzato dal load balancer):
 
@@ -160,13 +160,13 @@ I passaggi sono i seguenti:
 
    Per ulteriori informazioni, consulta le sezioni seguenti:
 
-   * Per Linux: [Avvio del server web e verifica della configurazione](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
-   * Per Windows: [Avvio del server web e verifica della configurazione](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
+   * Per Linux: [Avvio del server Web e test della configurazione](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
+   * Per Windows: [Avvio del server Web e test della configurazione](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
 
 1. Avvia il server Adobe Campaign.
-1. Nella console Adobe Campaign, connetti utilizzando **admin** effettua l’accesso senza una password e avvia la procedura guidata di distribuzione.
+1. Nella console Adobe Campaign, connettiti utilizzando l&#39;accesso **admin** senza password e avvia la procedura guidata di distribuzione.
 
-   Per ulteriori informazioni, consulta [Distribuzione di un’istanza](../../installation/using/deploying-an-instance.md).
+   Per ulteriori informazioni, consulta [Distribuzione di un&#39;istanza](../../installation/using/deploying-an-instance.md).
 
    La configurazione è identica a un’istanza indipendente, a parte la configurazione del modulo di tracciamento.
 
@@ -178,4 +178,4 @@ I passaggi sono i seguenti:
 
    >[!NOTE]
    >
-   >Utilizziamo l’istanza esistente dei due server di tracciamento creati in precedenza e utilizziamo **interno** accesso.
+   >Utilizziamo l&#39;istanza esistente dei due server di monitoraggio creati in precedenza e utilizziamo l&#39;accesso **internal**.

@@ -16,7 +16,7 @@ ht-degree: 2%
 
 ## Esempio di non rilevamento
 
-`<%= getURL("http://mynewsletter.com") %>` funziona e invia il contenuto effettivo della pagina web tramite e-mail ai destinatari. Ma nessuno dei collegamenti viene tracciato. Questo perché l’MTA viene eseguito `"<%=getURL(..."` per ogni e-mail prima dell’invio. Può essere diverso per ogni destinatario, pertanto Adobe Campaign non può conoscere gli URL per il tracciamento e assegnare loro un ID tag.
+`<%= getURL("http://mynewsletter.com") %>` funziona e invia il contenuto effettivo della pagina Web tramite e-mail ai destinatari. Ma nessuno dei collegamenti viene tracciato. Il motivo è che l&#39;MTA esegue `"<%=getURL(..."` per ogni e-mail prima dell&#39;invio. Può essere diverso per ogni destinatario, pertanto Adobe Campaign non può conoscere gli URL per il tracciamento e assegnare loro un ID tag.
 
 Quando la pagina da scaricare è la stessa per tutti i destinatari, la best practice prevede di effettuare le seguenti operazioni:
 
@@ -26,7 +26,7 @@ In tal caso, la pagina viene scaricata durante l’analisi, prima del rilevament
 
 ## Pattern consigliato
 
-Dopo l’elaborazione `<%@` istruzioni, l’URL da tracciare ha la seguente sintassi: `<a href="http://myurl.com/a.php?param1=aaa&param2=<%=escapeUrl(recipient.xxx)%>&param3=<%=escapeUrl(recipient.xxx)%>">`
+Dopo aver elaborato le istruzioni `<%@`, l&#39;URL da tracciare ha la seguente sintassi: `<a href="http://myurl.com/a.php?param1=aaa&param2=<%=escapeUrl(recipient.xxx)%>&param3=<%=escapeUrl(recipient.xxx)%>">`
 
 >[!IMPORTANT]
 >
@@ -36,7 +36,7 @@ Dopo l’elaborazione `<%@` istruzioni, l’URL da tracciare ha la seguente sint
 
 Quando aggiungi collegamenti personalizzati al contenuto, evita sempre di includere alcuna personalizzazione nella parte nome host dell’URL per evitare potenziali lacune di sicurezza. Per ulteriori informazioni, consulta [questa pagina](../../installation/using/privacy.md#url-personalization).
 
-Ad esempio, il `<a href="http://<%=myURL%>">` la sintassi è **non protetto** e devono essere evitati.
+Ad esempio, la sintassi `<a href="http://<%=myURL%>">` è **non sicura** e deve essere evitata.
 
 * L’utilizzo di questa sintassi può causare problemi di sicurezza se il collegamento generato da Adobe Campaign contiene uno o più parametri.
 * Tidy può correggere in modo errato alcuni collegamenti, che possono verificarsi in modo casuale. Il sintomo tipico è un pezzo di HTML visibile nelle bozze e-mail ma non nell’anteprima.

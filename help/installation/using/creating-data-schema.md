@@ -17,23 +17,23 @@ ht-degree: 0%
 
 Per creare uno schema su un database esterno:
 
-1. Fai clic su **[!UICONTROL New]** sopra l’elenco degli schemi di dati e scegli **[!UICONTROL Access external data]**.
+1. Fare clic sul pulsante **[!UICONTROL New]** sopra l&#39;elenco degli schemi di dati e scegliere **[!UICONTROL Access external data]**.
 
    ![](assets/wf_new_schema_fda.png)
 
-1. Immetti un **[!UICONTROL Namespace]** e  **[!UICONTROL Name]** per lo schema e seleziona la **[!UICONTROL External account]** che abiliterà la connessione al database. Ciò consente di accedere all’elenco di tabelle disponibili nella base esterna.
+1. Immettere **[!UICONTROL Namespace]** e **[!UICONTROL Name]** per lo schema e selezionare **[!UICONTROL External account]** che consentirà la connessione al database. Ciò consente di accedere all’elenco di tabelle disponibili nella base esterna.
 
    ![](assets/wf_new_schema_select_table_fda.png)
 
-1. Dalla sezione **[!UICONTROL Table name]** scegliere la tabella contenente i dati da raccogliere.
+1. Dal campo **[!UICONTROL Table name]**, scegliere la tabella contenente i dati da raccogliere.
 
-   Con Snowflake, è possibile selezionare qui le viste se all&#39;utente del database sono stati concessi i privilegi corretti. Tieni presente che quando utilizzi le viste, Adobe Campaign non sarà in grado di generare automaticamente lo schema XML, dovrai crearlo tu stesso. Per ulteriori informazioni sulle visualizzazioni, consulta [Documentazione del Snowflake](https://docs.snowflake.com/en/user-guide/views-introduction.html).
+   Con Snowflake, è possibile selezionare qui le viste se all&#39;utente del database sono stati concessi i privilegi corretti. Tieni presente che quando utilizzi le viste, Adobe Campaign non sarà in grado di generare automaticamente lo schema XML, dovrai crearlo tu stesso. Per ulteriori informazioni sulle visualizzazioni, consulta la [documentazione del Snowflake](https://docs.snowflake.com/en/user-guide/views-introduction.html).
 
    ![](assets/wf_new_schema_select_table_fda.png)
 
-1. Clic **[!UICONTROL OK]** per confermare. Adobe Campaign rileva automaticamente la struttura della tabella selezionata e genera lo schema logico. Tieni presente che Adobe Campaign non genera collegamenti.
+1. Fai clic su **[!UICONTROL OK]** per confermare. Adobe Campaign rileva automaticamente la struttura della tabella selezionata e genera lo schema logico. Tieni presente che Adobe Campaign non genera collegamenti.
 
-1. Clic **[!UICONTROL Save]** per confermare la creazione.
+1. Fare clic su **[!UICONTROL Save]** per confermare la creazione.
 
    >[!CAUTION]
    >

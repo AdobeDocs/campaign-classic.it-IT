@@ -26,19 +26,19 @@ Questo capitolo descrive la creazione e la gestione di moduli web, le modalità 
 
 ## Passaggi per la creazione di un modulo web {#steps-for-creating-a-web-form}
 
-Questo capitolo descrive i passaggi necessari per progettare un **webForm** digita il modulo in Adobe Campaign, nonché le opzioni e le configurazioni disponibili. Adobe Campaign consente di rendere questo modulo web disponibile agli utenti, nonché di raccogliere e archiviare le risposte nel database.
+Questo capitolo descrive i passaggi necessari per progettare un modulo di tipo **webForm** in Adobe Campaign, nonché le opzioni e le configurazioni disponibili. Adobe Campaign consente di rendere questo modulo web disponibile agli utenti, nonché di raccogliere e archiviare le risposte nel database.
 
 >[!CAUTION]
 >
 >Durante la configurazione di applicazioni web e moduli web, è necessario un minimo di risoluzione verticale di 900 pixel (ad esempio, 1600x900).
 
-I moduli Web sono accessibili tramite il menu Applicazioni Web del **Campagne** scheda. Nella struttura Adobe Campaign, sono raggruppati sotto **[!UICONTROL Resources > Online > Web Applications]** nodo.
+I moduli Web sono accessibili tramite il menu Applicazioni Web della scheda **Campagne**. Nella struttura Adobe Campaign sono raggruppati sotto il nodo **[!UICONTROL Resources > Online > Web Applications]**.
 
-Per creare un modulo Web, fare clic su **[!UICONTROL Create]** sopra l&#39;elenco delle applicazioni Web.
+Per creare un modulo Web, fare clic sul pulsante **[!UICONTROL Create]** sopra l&#39;elenco delle applicazioni Web.
 
 ![](assets/webapp_create_new.png)
 
-Selezionare il modello di modulo Web ( **[!UICONTROL newWebForm]** per impostazione predefinita).
+Selezionare il modello di modulo Web **[!UICONTROL newWebForm]** per impostazione predefinita.
 
 ![](assets/s_ncs_admin_survey_select_template.png)
 
@@ -46,7 +46,7 @@ Verrà visualizzata la dashboard del modulo.
 
 ![](assets/webapp_empty_dashboard.png)
 
-Il **[!UICONTROL Edit]** consente di creare il contenuto.
+La scheda **[!UICONTROL Edit]** consente di creare il contenuto.
 
 ![](assets/webapp_edit_tab.png)
 
@@ -58,11 +58,11 @@ Per definire la configurazione e il contenuto del modulo Web, attenersi alla pro
 
 * Definire la sequenza di pagine e condizionare la visualizzazione.
 
-  Questo passaggio è descritto in [Definizione della sequenza di pagine dei moduli web](defining-web-forms-page-sequencing.md).
+  Questo passaggio è descritto in [Definizione della sequenza di pagine dei moduli Web](defining-web-forms-page-sequencing.md).
 
 * Traduci il contenuto, se necessario.
 
-  Questo passaggio è descritto in [Traduzione di un modulo web](translating-a-web-form.md).
+  Questo passaggio è descritto in [Traduzione di un modulo Web](translating-a-web-form.md).
 
 ## Informazioni sulla progettazione di moduli web {#about-web-forms-designing}
 
@@ -70,15 +70,15 @@ Le pagine del modulo vengono create tramite un editor specifico che consente di 
 
 Nelle sezioni seguenti viene descritto come definire il contenuto e il layout delle schermate dei moduli:
 
-* [Aggiunta di campi a un modulo web](adding-fields-to-a-web-form.md),
+* [Aggiunta di campi a un modulo Web](adding-fields-to-a-web-form.md),
 * [Inserimento di contenuto HTML](static-elements-in-a-web-form.md#inserting-html-content),
-* [Elementi statici in un modulo web](static-elements-in-a-web-form.md),
-* [Definizione del layout dei moduli web](defining-web-forms-layout.md).
+* [Elementi statici in un modulo Web](static-elements-in-a-web-form.md),
+* [Definizione del layout dei moduli Web](defining-web-forms-layout.md).
 
 >[!NOTE]
 >
->* Durante la progettazione della pagina, è possibile visualizzare il rendering finale nel **[!UICONTROL Preview]** scheda. Per visualizzare le modifiche, salvare prima il modulo. Eventuali errori vengono visualizzati in **[!UICONTROL Log]** scheda.
->* Per assicurarsi che la visualizzazione delle pagine e l&#39;archiviazione delle informazioni avvengano nella sequenza appropriata, attivare la modalità di debug nel modulo Web. Per eseguire questa operazione, passare al **[!UICONTROL Preview]** scheda secondaria e controlla **[!UICONTROL Enable debug mode]** box: tutte le informazioni raccolte e i possibili errori di esecuzione vengono visualizzati nella parte inferiore di ogni pagina.
+>* Durante la progettazione della pagina, è possibile visualizzare il rendering finale nella scheda **[!UICONTROL Preview]**. Per visualizzare le modifiche, salvare prima il modulo. Eventuali errori vengono visualizzati nella scheda **[!UICONTROL Log]**.
+>* Per assicurarsi che la visualizzazione delle pagine e l&#39;archiviazione delle informazioni avvengano nella sequenza appropriata, attivare la modalità di debug nel modulo Web. A tale scopo, passare alla scheda secondaria **[!UICONTROL Preview]** e selezionare la casella **[!UICONTROL Enable debug mode]**: tutte le informazioni raccolte e i possibili errori di esecuzione verranno visualizzati nella parte inferiore di ogni pagina.
 >
 
 ### Utilizzo delle icone nella barra degli strumenti {#using-the-icons-in-the-toolbar}
@@ -91,6 +91,6 @@ In questo caso, inizia selezionando il tipo di campo da aggiungere e la modalit�
 
 ![](assets/s_ncs_admin_webform_select_storage.png)
 
-Clic **[!UICONTROL Ok]** per approvare la selezione.
+Fare clic su **[!UICONTROL Ok]** per approvare la selezione.
 
 ![](assets/s_ncs_admin_webform_confirm_storage.png)

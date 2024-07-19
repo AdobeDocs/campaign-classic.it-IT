@@ -16,7 +16,7 @@ ht-degree: 8%
 
 
 
-Per applicare le modifiche apportate agli schemi, avviare la procedura guidata di aggiornamento del database. Questa procedura guidata è accessibile tramite **[!UICONTROL Tools > Advanced > Update database structure]** . Controlla se la struttura fisica del database corrisponde alla relativa descrizione logica ed esegue gli script di aggiornamento SQL.
+Per applicare le modifiche apportate agli schemi, avviare la procedura guidata di aggiornamento del database. La procedura guidata è accessibile tramite **[!UICONTROL Tools > Advanced > Update database structure]**. Controlla se la struttura fisica del database corrisponde alla relativa descrizione logica ed esegue gli script di aggiornamento SQL.
 
 ![](assets/d_ncs_integration_schema_update.png)
 
@@ -24,9 +24,9 @@ I moduli nel database vengono compilati e attivati automaticamente.
 
 ![](assets/d_ncs_integration_schema_update_select.png)
 
-Il **[!UICONTROL Add stored procedures]** e **[!UICONTROL Import initialization data]** Le opzioni vengono utilizzate per avviare gli script SQL iniziali e i pacchetti di dati eseguiti al momento della creazione del database.
+Le opzioni **[!UICONTROL Add stored procedures]** e **[!UICONTROL Import initialization data]** vengono utilizzate per avviare gli script SQL iniziali e i pacchetti di dati eseguiti al momento della creazione del database.
 
-Puoi importare un set di dati da un pacchetto di dati esterno. A questo scopo, seleziona **[!UICONTROL Import a package]** e immettere il file XML del pacchetto.
+Puoi importare un set di dati da un pacchetto di dati esterno. A tale scopo, selezionare **[!UICONTROL Import a package]** e immettere il file XML del pacchetto.
 
 Seguire la procedura riportata di seguito e visualizzare lo script SQL di aggiornamento del database:
 

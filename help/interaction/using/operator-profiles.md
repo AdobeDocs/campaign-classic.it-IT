@@ -20,7 +20,7 @@ ht-degree: 2%
 
 Esistono due tipi di operatori che utilizzano l’interazione: gestori delle offerte e responsabili della consegna. Ognuno di essi dispone di diritti specifici che consentono loro di accedere solo ad alcune parti dell’albero e della piattaforma.
 
-* **[!UICONTROL Offer manager]** : crea e mantiene le offerte. Tieni presente che se le offerte vengono utilizzate nel flusso di lavoro, l’operatore dovrà trovarsi nel **[!UICONTROL Administrator]** o **[!UICONTROL Offer managers]** per eseguire il flusso di lavoro.
+* **[!UICONTROL Offer manager]** : crea e mantiene le offerte. Se le offerte vengono utilizzate nel flusso di lavoro, l&#39;operatore dovrà trovarsi nel gruppo di operatori **[!UICONTROL Administrator]** o **[!UICONTROL Offer managers]** per eseguire il flusso di lavoro.
 * **[!UICONTROL Delivery manager]** : approva e utilizza le offerte
 
 I passaggi per la creazione di operatori specifici per l’interazione sono identici a quelli utilizzati per creare tutti gli altri operatori sulla piattaforma. Per ulteriori informazioni, consulta [questa sezione](../../platform/using/access-management.md). I diritti vengono configurati durante la creazione dell’operatore.
@@ -28,14 +28,14 @@ I passaggi per la creazione di operatori specifici per l’interazione sono iden
 ## Gestione offerte {#offer-manager}
 
 1. Crea un nuovo operatore.
-1. Vai a **[!UICONTROL Groups and named rights]** finestra, fai clic su **[!UICONTROL Add]** e seleziona la **[!UICONTROL Offer manager]** gruppo.
+1. Passare alla finestra **[!UICONTROL Groups and named rights]**, fare clic su **[!UICONTROL Add]** e selezionare il gruppo **[!UICONTROL Offer manager]**.
 
    ![](assets/offer_operators_create_001.png)
 
 I diritti assegnati al gestore delle offerte consentono loro di svolgere le seguenti attività:
 
-* Modifica **[!UICONTROL Design]** ambienti.
-* Visualizza **[!UICONTROL Live]** ambienti.
+* Modificare gli ambienti **[!UICONTROL Design]**.
+* Visualizza gli ambienti **[!UICONTROL Live]**.
 * Configurare le funzioni di amministrazione (spazi e filtri predefiniti).
 * Creare e modificare le categorie.
 * Creare le offerte.
@@ -49,13 +49,13 @@ I diritti assegnati al gestore delle offerte consentono loro di svolgere le segu
 ## Responsabile della consegna {#delivery-manager}
 
 1. Crea un nuovo operatore.
-1. Vai a **[!UICONTROL Groups and named rights]** finestra, fai clic su **[!UICONTROL Add]** e seleziona la **[!UICONTROL Delivery manager]** gruppo.
+1. Passare alla finestra **[!UICONTROL Groups and named rights]**, fare clic su **[!UICONTROL Add]** e selezionare il gruppo **[!UICONTROL Delivery manager]**.
 
    ![](assets/offer_operators_create_002.png)
 
 I diritti assegnati ai responsabili della consegna consentono loro di svolgere i seguenti compiti:
 
-* Visualizzazione **[!UICONTROL Live]** ambienti.
+* Visualizza **[!UICONTROL Live]** ambienti.
 * Visualizzare e modificare le categorie di offerta.
 * Approva le offerte se il responsabile della consegna è specificato come uno dei suoi revisori.
 
@@ -93,7 +93,7 @@ I diritti assegnati ai responsabili della consegna consentono loro di svolgere i
    <td> Letto<br /> </td> 
   </tr> 
   <tr> 
-   <td> Spaces<br /> </td> 
+   <td> Spazi<br /> </td> 
    <td> Lettura/scrittura<br /> </td> 
    <td> Letto<br /> </td> 
   </tr> 
@@ -113,12 +113,12 @@ I diritti assegnati ai responsabili della consegna consentono loro di svolgere i
    <td> Letto<br /> </td> 
   </tr> 
   <tr> 
-   <td> Catalogo delle offerte<br /> </td> 
+   <td> Catalogo offerte<br /> </td> 
    <td> Lettura/scrittura<br /> </td> 
    <td> Letto<br /> </td> 
   </tr> 
   <tr> 
-   <td> Categoria di offerta<br /> </td> 
+   <td> Categoria offerta<br /> </td> 
    <td> Lettura/scrittura<br /> </td> 
    <td> Letto<br /> </td> 
   </tr> 
@@ -129,8 +129,8 @@ I diritti assegnati ai responsabili della consegna consentono loro di svolgere i
  <tbody> 
   <tr> 
    <td> </td> 
-   <td> <strong>Gestione delle consegne (modifica)</strong><br /> </td> 
-   <td> <strong>Gestione delle consegne (in tempo reale)</strong><br /> </td> 
+   <td> <strong>Gestione consegne (modifica)</strong><br /> </td> 
+   <td> <strong>Gestione consegne (in tempo reale)</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Livello struttura ad albero</strong><br /> </td> 
@@ -153,7 +153,7 @@ I diritti assegnati ai responsabili della consegna consentono loro di svolgere i
    <td> </td> 
   </tr> 
   <tr> 
-   <td> Spaces<br /> </td> 
+   <td> Spazi<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
@@ -173,12 +173,12 @@ I diritti assegnati ai responsabili della consegna consentono loro di svolgere i
    <td> Letto<br /> </td> 
   </tr> 
   <tr> 
-   <td> Catalogo delle offerte<br /> </td> 
+   <td> Catalogo offerte<br /> </td> 
    <td> Letto<br /> </td> 
    <td> Letto<br /> </td> 
   </tr> 
   <tr> 
-   <td> Categoria di offerta<br /> </td> 
+   <td> Categoria offerta<br /> </td> 
    <td> </td> 
    <td> Letto<br /> </td> 
   </tr> 

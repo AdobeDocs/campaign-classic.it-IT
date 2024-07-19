@@ -18,19 +18,19 @@ Una volta installato il pacchetto, puoi definire le impostazioni dell’app Andr
 
 I passaggi chiave sono i seguenti:
 
-1. [Configurare l’account esterno Android](#configuring-external-account-android)
+1. [Configurare l’account esterno di Android](#configuring-external-account-android)
 1. [Configurare il servizio Android](#configuring-android-service)
 1. [Creare l’app mobile in Campaign](#creating-android-app)
 1. [Estendere lo schema dell’app con dati aggiuntivi](#extend-subscription-schema)
 
-Potrai quindi [creare una notifica Android potenziata](create-notifications-android.md).
+Potrai quindi [creare una notifica avanzata di Android](create-notifications-android.md).
 
 >[!IMPORTANT]
 >
->Alcune importanti modifiche al servizio Android Firebase Cloud Messaging (FCM) verranno rilasciate nel 2024 e potranno influenzare la tua implementazione di Adobe Campaign. Per supportare questa modifica, potrebbe essere necessario aggiornare la configurazione dei servizi di abbonamento per i messaggi push Android. Puoi già verificare ed eseguire azioni. Ulteriori informazioni [Nota tecnica su Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=it){target="_blank"}.
+>Alcune importanti modifiche al servizio Android Firebase Cloud Messaging (FCM) verranno rilasciate nel 2024 e potranno influenzare la tua implementazione di Adobe Campaign. Per supportare questa modifica, potrebbe essere necessario aggiornare la configurazione dei servizi di abbonamento per i messaggi push Android. Puoi già verificare ed eseguire azioni. Per ulteriori informazioni, consulta questa [nota tecnica su Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=it){target="_blank"}.
 
 
-## Configurare l’account esterno Android {#configuring-external-account-android}
+## Configurare l’account esterno di Android {#configuring-external-account-android}
 
 Per Android sono disponibili due connettori:
 
@@ -40,8 +40,8 @@ Per Android sono disponibili due connettori:
 Per scegliere il connettore da utilizzare, eseguire la procedura seguente:
 
 1. Vai a **[!UICONTROL Administration > Platform > External accounts]**.
-1. Seleziona la **[!UICONTROL Android routing]** account esterno.
-1. In **[!UICONTROL Connector]** , compila la scheda **[!UICONTROL JavaScript used in the connector]** campo:
+1. Selezionare l&#39;account esterno **[!UICONTROL Android routing]**.
+1. Nella scheda **[!UICONTROL Connector]**, compila il campo **[!UICONTROL JavaScript used in the connector]**:
 
    Per Android V2: https://localhost:8080/nms/jsp/androidPushConnectorV2.js
 
@@ -53,26 +53,26 @@ Per scegliere il connettore da utilizzare, eseguire la procedura seguente:
 
 1. Per Android V2, nel file di configurazione del server Adobe (serverConf.xml) è disponibile un parametro aggiuntivo:
 
-   * **maxGCMConnectPerChild**: limite massimo di richieste HTTP parallele alla FCM avviate da ciascun server secondario (8 per impostazione predefinita).
+   * **maxGCMConnectPerChild**: limite massimo di richieste HTTP parallele a FCM avviate da ogni server secondario (8 per impostazione predefinita).
 
 ## Configurare un servizio Android {#configuring-android-service}
 
-![](assets/do-not-localize/how-to-video.png) [Scopri come configurare un servizio Android in un video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"}.
+![](assets/do-not-localize/how-to-video.png) [Scopri come configurare un servizio Android nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"}.
 
-1. Vai a **[!UICONTROL Profiles and Targets > Services and subscriptions]** e fai clic su **[!UICONTROL New]**.
+1. Passare al nodo **[!UICONTROL Profiles and Targets > Services and subscriptions]** e fare clic su **[!UICONTROL New]**.
 
    ![](assets/nmac_service_1.png)
 
-1. Definisci un **[!UICONTROL Label]** e un **[!UICONTROL Internal name]**.
-1. Vai a **[!UICONTROL Type]** e seleziona **[!UICONTROL Mobile application]**.
+1. Definisci **[!UICONTROL Label]** e **[!UICONTROL Internal name]**.
+1. Vai al campo **[!UICONTROL Type]** e seleziona **[!UICONTROL Mobile application]**.
 
    >[!NOTE]
    >
-   >Il valore predefinito **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** la mappatura di destinazione è collegata alla tabella dei destinatari. Se desideri utilizzare una mappatura di destinazione diversa, devi creare una nuova mappatura di destinazione e immetterla nella **[!UICONTROL Target mapping]** del servizio. Per ulteriori informazioni sulla creazione della mappatura di destinazione, consulta [questa sezione](../../configuration/using/about-custom-recipient-table.md).
+   >Il mapping di destinazione predefinito **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** è collegato alla tabella dei destinatari. Se si desidera utilizzare una mappatura di destinazione diversa, è necessario creare una nuova mappatura di destinazione e immetterla nel campo **[!UICONTROL Target mapping]** del servizio. Per ulteriori informazioni sulla creazione della mappatura di destinazione, consulta [questa sezione](../../configuration/using/about-custom-recipient-table.md).
 
    ![](assets/nmac_ios.png)
 
-1. Quindi fai clic su **[!UICONTROL Add]** per selezionare il tipo di applicazione.
+1. Quindi fare clic sul pulsante **[!UICONTROL Add]** per selezionare il tipo di applicazione.
 
    ![](assets/nmac_service_2.png)
 
@@ -80,43 +80,43 @@ Per scegliere il connettore da utilizzare, eseguire la procedura seguente:
 
 ## Creare l’app mobile Android {#creating-android-app}
 
-Dopo aver creato il servizio, ora devi creare l’applicazione Android:
+Dopo aver creato il servizio, ora è necessario creare l’applicazione Android:
 
-1. Dal servizio appena creato, fai clic su **[!UICONTROL Add]** per selezionare il tipo di applicazione.
+1. Dal servizio appena creato, fare clic sul pulsante **[!UICONTROL Add]** per selezionare il tipo di applicazione.
 
    ![](assets/nmac_service_2.png)
 
-1. Seleziona **[!UICONTROL Create an Android application]** e inserisci un **[!UICONTROL Label]**.
+1. Selezionare **[!UICONTROL Create an Android application]** e immettere **[!UICONTROL Label]**.
 
    ![](assets/nmac_android.png)
 
-1. Assicurati che lo stesso **[!UICONTROL Integration key]** è definito in Adobe Campaign e nel codice dell’applicazione tramite l’SDK. <!--For more on this, refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->
+1. Assicurati che lo stesso **[!UICONTROL Integration key]** sia definito in Adobe Campaign e nel codice dell&#39;applicazione tramite l&#39;SDK. <!--For more on this, refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->
 
    >[!NOTE]
    >
-   > Il **[!UICONTROL Integration key]** è completamente personalizzabile con un valore stringa, ma deve essere esattamente lo stesso specificato nell’SDK.
+   > **[!UICONTROL Integration key]** è completamente personalizzabile con valore stringa, ma deve essere esattamente lo stesso specificato nell&#39;SDK.
 
-1. Seleziona la **[!UICONTROL API version]**: HTTP v1 o HTTP (legacy). Queste configurazioni sono descritte in dettaglio [questa sezione](#select-api-version)
+1. Selezionare **[!UICONTROL API version]**: HTTP v1 o HTTP (legacy). Queste configurazioni sono descritte in [questa sezione](#select-api-version)
 
-1. Compila il **[!UICONTROL Firebase Cloud Messaging the Android connection settings]** campi.
+1. Compila i campi **[!UICONTROL Firebase Cloud Messaging the Android connection settings]**.
 
-1. Clic **[!UICONTROL Finish]** allora **[!UICONTROL Save]**. L’applicazione Android è ora pronta per essere utilizzata in Campaign Classic.
+1. Fare clic su **[!UICONTROL Finish]** e quindi su **[!UICONTROL Save]**. L’applicazione Android è ora pronta per essere utilizzata in Campaign Classic.
 
-Per impostazione predefinita, Adobe Campaign salva una chiave nel **[!UICONTROL User identifier]** (@userKey) campo di applicazione **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** tabella. Questa chiave consente di collegare una sottoscrizione a un destinatario. Per raccogliere dati aggiuntivi (ad esempio una chiave di riconciliazione complessa), è necessario applicare la seguente configurazione:
+Per impostazione predefinita, Adobe Campaign salva una chiave nel campo **[!UICONTROL User identifier]** (@userKey) della tabella **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]**. Questa chiave consente di collegare una sottoscrizione a un destinatario. Per raccogliere dati aggiuntivi (ad esempio una chiave di riconciliazione complessa), è necessario applicare la seguente configurazione:
 
 ### Configurare la versione API{#select-api-version}
 
 >[!IMPORTANT]
 >
->Alcune importanti modifiche al servizio Android Firebase Cloud Messaging (FCM) verranno rilasciate nel 2024 e potranno influenzare la tua implementazione di Adobe Campaign. Come parte del continuo sforzo di Google per migliorare i suoi servizi, le API FCM legacy saranno interrotte il **20 giugno 2024**. Ulteriori informazioni [Nota tecnica su Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=it){target="_blank"}.
+>Alcune importanti modifiche al servizio Android Firebase Cloud Messaging (FCM) verranno rilasciate nel 2024 e potranno influenzare la tua implementazione di Adobe Campaign. Nell&#39;ambito del continuo impegno di Google per migliorare i propri servizi, le API FCM legacy cesseranno il **20 giugno 2024**. Per ulteriori informazioni, consulta questa [nota tecnica su Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=it){target="_blank"}.
 
-Dopo aver creato il servizio e una nuova app mobile, è necessario configurare l’app mobile. Il **HTTP (legacy)** L’API non deve essere selezionata perché è stata dichiarata obsoleta da Google.
+Dopo aver creato il servizio e una nuova app mobile, è necessario configurare l’app mobile. L&#39;API **HTTP (legacy)** non deve essere selezionata in quanto è stata dichiarata obsoleta da Google.
 
 Per configurare la versione API HTTP v1, segui i passaggi seguenti:
 
-1. Nel tuo **[!UICONTROL Mobile application creation wizard]** finestra, seleziona **[!UICONTROL HTTPV1]** nel **[!UICONTROL API version]** a discesa.
+1. Nella finestra **[!UICONTROL Mobile application creation wizard]**, seleziona **[!UICONTROL HTTPV1]** nel menu a discesa **[!UICONTROL API version]**.
 
-1. Clic **[!UICONTROL Load project json file to extract project details...]** per caricare direttamente il file di chiave JSON. Per ulteriori informazioni su come estrarre il file JSON, consulta [questa pagina](https://firebase.google.com/docs/admin/setup#initialize-sdk).
+1. Fai clic su **[!UICONTROL Load project json file to extract project details...]** per caricare direttamente il file di chiave JSON. Per ulteriori informazioni su come estrarre il file JSON, consulta [questa pagina](https://firebase.google.com/docs/admin/setup#initialize-sdk).
 
    È inoltre possibile immettere manualmente i seguenti dettagli:
    * **[!UICONTROL Project Id]**
@@ -125,17 +125,17 @@ Per configurare la versione API HTTP v1, segui i passaggi seguenti:
 
    ![](assets/nmac_android_10.png)
 
-1. Clic **[!UICONTROL Test the connection]** per verificare che la configurazione sia corretta e che il server di marketing abbia accesso a FCM.
+1. Fare clic su **[!UICONTROL Test the connection]** per verificare che la configurazione sia corretta e che il server di marketing abbia accesso a FCM.
 
    >[!CAUTION]
    >
-   >Per l&#39;implementazione mid-sourcing, **[!UICONTROL Test connection]** non verifica se il server MID ha accesso al server FCM.
+   >Per la distribuzione mid-sourcing, il pulsante **[!UICONTROL Test connection]** non verifica se il server MID ha accesso al server FCM.
 
    ![](assets/nmac_android_11.png)
 
-1. Come opzione, puoi arricchire il contenuto di un messaggio push con **[!UICONTROL Application variables]** se necessario. Questi sono completamente personalizzabili e fanno parte del payload del messaggio inviato al dispositivo mobile.
+1. Se necessario, puoi arricchire il contenuto di un messaggio push con alcuni **[!UICONTROL Application variables]**. Questi sono completamente personalizzabili e fanno parte del payload del messaggio inviato al dispositivo mobile.
 
-1. Clic **[!UICONTROL Finish]** allora **[!UICONTROL Save]**. L’applicazione Android è ora pronta per essere utilizzata in Campaign Classic.
+1. Fare clic su **[!UICONTROL Finish]** e quindi su **[!UICONTROL Save]**. L’applicazione Android è ora pronta per essere utilizzata in Campaign Classic.
 
 Di seguito sono riportati i nomi del payload FCM per personalizzare ulteriormente la notifica push:
 
@@ -148,12 +148,12 @@ Di seguito sono riportati i nomi del payload FCM per personalizzare ulteriorment
 
 ![](assets/do-not-localize/how-to-video.png) [Scopri come estendere lo schema appsubscriptionRcp nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html#extending-the-app-subscription-schema-to-personalize-push-notifications)
 
-È necessario estendere **appsubscriptionRcp** per definire nuovi campi aggiuntivi per archiviare i parametri dell’app nel database di Campaign. Questi campi vengono utilizzati per la personalizzazione, ad esempio. Per eseguire questa operazione:
+È necessario estendere **appsubscriptionRcp** per definire nuovi campi aggiuntivi per archiviare i parametri dell&#39;app nel database di Campaign. Questi campi vengono utilizzati per la personalizzazione, ad esempio. Per eseguire questa operazione:
 
-1. Crea un&#39;estensione del **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** e definiscono i nuovi campi. Ulteriori informazioni sull’estensione dello schema in [questa pagina](../../configuration/using/about-schema-edition.md)
+1. Creare un&#39;estensione dello schema **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** e definire i nuovi campi. Ulteriori informazioni sull&#39;estensione dello schema in [questa pagina](../../configuration/using/about-schema-edition.md)
 
-1. Definisci la mappatura in **[!UICONTROL Subscription parameters]** scheda.
+1. Definire il mapping nella scheda **[!UICONTROL Subscription parameters]**.
 
    >[!CAUTION]
    >
-   >Assicurati che i nomi delle configurazioni in **[!UICONTROL Subscription parameters]** sono le stesse del codice dell’app mobile. <!--Refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->
+   >Assicurarsi che i nomi di configurazione nella scheda **[!UICONTROL Subscription parameters]** siano gli stessi di quelli nel codice dell&#39;app mobile. <!--Refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->

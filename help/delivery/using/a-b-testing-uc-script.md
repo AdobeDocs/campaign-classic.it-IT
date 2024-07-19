@@ -66,16 +66,16 @@ Lo script seguente può essere utilizzato così come è nel flusso di lavoro di 
    vars.deliveryId = delivery.id
 ```
 
-Per una spiegazione dettagliata dello script, fare riferimento a [questa sezione](#details-of-the-script).
+Per una spiegazione dettagliata dello script, consultare [questa sezione](#details-of-the-script).
 
 ## Implementazione {#implementation}
 
-1. Apri il **[!UICONTROL JavaScript code]** attività.
-1. Copia lo script offerto in [Esempio di script](#example-of-a-script) in **[!UICONTROL JavaScript code]** finestra.
+1. Apri l&#39;attività **[!UICONTROL JavaScript code]**.
+1. Copiare lo script offerto in [Esempio di uno script](#example-of-a-script) nella finestra **[!UICONTROL JavaScript code]**.
 
    ![](assets/use_case_abtesting_configscript_002.png)
 
-1. In **[!UICONTROL Label]** , immettere il nome dello script, ad esempio
+1. Nel campo **[!UICONTROL Label]**, immettere il nome dello script, ad esempio
 
    ```
    <%= vars.deliveryId %>
@@ -83,14 +83,14 @@ Per una spiegazione dettagliata dello script, fare riferimento a [questa sezione
 
    ![](assets/use_case_abtesting_configscript_003.png)
 
-1. Chiudi **[!UICONTROL JavaScript code]** attività.
+1. Chiudere l&#39;attività **[!UICONTROL JavaScript code]**.
 1. Salva il flusso di lavoro.
 
 ## Dettagli dello script {#details-of-the-script}
 
 Questa sezione descrive le varie parti dello script e la relativa modalità operativa.
 
-* La prima parte dello script è una query. Il **queryDef** consente di ripristinare da **NmsDelivery** compila una tabella delle consegne create eseguendo il flusso di lavoro di targeting e ordinale in base al tasso stimato di aperture, quindi recupera le informazioni della consegna con il tasso più alto di aperture.
+* La prima parte dello script è una query. Il comando **queryDef** consente di recuperare dalla tabella **NmsDelivery** le consegne create eseguendo il flusso di lavoro di targeting e di ordinarle in base alla frequenza stimata di aperture, quindi vengono recuperate le informazioni della consegna con la frequenza più elevata di aperture.
 
   ```
   // query the database to find the winner (best open rate)
@@ -119,7 +119,7 @@ Questa sezione descrive le varie parti dello script e la relativa modalità oper
   delivery.Duplicate("nms:delivery|" + winner.@id)
   ```
 
-* L’etichetta della consegna duplicata viene modificata e la parola **finale** viene aggiunto a esso.
+* L&#39;etichetta della consegna duplicata è stata modificata e vi è stata aggiunta la parola **final**.
 
   ```
   // append 'final' to the delivery label
@@ -161,12 +161,12 @@ Questa sezione descrive le varie parti dello script e la relativa modalità oper
 
 L’esempio precedente ti consente di selezionare il contenuto di una consegna in base alla frequenza di aperture delle e-mail. Puoi adattarlo per basarti su altri indicatori specifici per la consegna:
 
-* Velocità di clic migliore: `[indicators/@recipientClickRatio]`,
-* Tasso di reattività più alto (apertura dell’e-mail e clic nel messaggio): `[indicators/@reactivity]`,
-* Percentuale di reclami più bassa: `[indicators/@refusedRatio]` utilizzare il valore false per l&#39;attributo sortDesc.
-* Tasso di conversione più alto: `[indicators/@transactionRatio]`,
+* Throughput clic migliore: `[indicators/@recipientClickRatio]`,
+* Tasso di reattività massimo (apertura e clic dell&#39;e-mail nel messaggio): `[indicators/@reactivity]`,
+* Frequenza reclami più bassa: `[indicators/@refusedRatio]` (utilizzare il valore false per l&#39;attributo sortDesc),
+* Tasso di conversione massimo: `[indicators/@transactionRatio]`,
 * Numero di pagine visitate dopo la ricezione di un messaggio: `[indicators/@totalWebPage]`,
-* Percentuale di annullamento dell’abbonamento più bassa: `[indicators/@optOutRatio]`,
+* Percentuale di annullamento abbonamento più bassa: `[indicators/@optOutRatio]`,
 * Importo transazione: `[indicators/@amount]`.
 
 Ora puoi definire la consegna finale. [Ulteriori informazioni](a-b-testing-uc-final-delivery.md).

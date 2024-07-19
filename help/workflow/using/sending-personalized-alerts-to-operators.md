@@ -17,20 +17,20 @@ ht-degree: 2%
 
 In questo esempio, vogliamo inviare un avviso a un operatore che conterrà il nome dei profili che hanno aperto una newsletter ma non hanno fatto clic sul collegamento in essa contenuto.
 
-I campi Nome e Cognome dei profili sono collegati al **[!UICONTROL Recipients]** la dimensione di targeting, mentre **[!UICONTROL Alert]** l&#39;attività è collegata al **[!UICONTROL Operator]** dimensione di targeting. Di conseguenza, non è disponibile alcun campo tra le due dimensioni di targeting per eseguire una riconciliazione, recuperare i campi nome e cognome e visualizzarli nell’attività Avviso.
+I campi di nome e cognome dei profili sono collegati alla dimensione di targeting **[!UICONTROL Recipients]**, mentre l&#39;attività **[!UICONTROL Alert]** è collegata alla dimensione di targeting **[!UICONTROL Operator]**. Di conseguenza, non è disponibile alcun campo tra le due dimensioni di targeting per eseguire una riconciliazione, recuperare i campi nome e cognome e visualizzarli nell’attività Avviso.
 
 Il processo consiste nel creare un flusso di lavoro come indicato di seguito:
 
-1. Utilizza un **[!UICONTROL Query]** attività per eseguire il targeting dei dati.
-1. Aggiungi un **[!UICONTROL JavaScript code]** per salvare il gruppo dalla query alla variabile dell’istanza.
-1. Utilizza un **[!UICONTROL Test]** attività per controllare il conteggio della popolazione.
-1. Utilizza un **[!UICONTROL Alert]** per inviare un avviso a un operatore, a seconda della **[!UICONTROL Test]** risultato dell’attività.
+1. Utilizza un&#39;attività **[!UICONTROL Query]** per eseguire il targeting dei dati.
+1. Aggiungi un&#39;attività **[!UICONTROL JavaScript code]** nel flusso di lavoro per salvare il gruppo dalla query alla variabile dell&#39;istanza.
+1. Utilizzare un&#39;attività **[!UICONTROL Test]** per verificare il conteggio della popolazione.
+1. Utilizzare un&#39;attività **[!UICONTROL Alert]** per inviare un avviso a un operatore, a seconda del risultato dell&#39;attività **[!UICONTROL Test]**.
 
 ![](assets/uc_operator_1.png)
 
 ## Salvataggio del gruppo nella variabile di istanza {#saving-the-population-to-the-instance-variable}
 
-Aggiungi il codice seguente alla **[!UICONTROL JavaScript code]** attività.
+Aggiungi il codice seguente all&#39;attività **[!UICONTROL JavaScript code]**.
 
 ```
 var query = xtk.queryDef.create(  
@@ -46,18 +46,18 @@ var query = xtk.queryDef.create(
 
 Assicurati che il codice JavaScript corrisponda alle informazioni del flusso di lavoro:
 
-* Il **[!UICONTROL queryDef schema]** il tag deve corrispondere al nome della dimensione di targeting utilizzata nell’attività di query.
-* Il **[!UICONTROL node expr]** deve corrispondere al nome dei campi che desideri recuperare.
+* Il tag **[!UICONTROL queryDef schema]** deve corrispondere al nome della dimensione di targeting utilizzata nell&#39;attività di query.
+* Il tag **[!UICONTROL node expr]** deve corrispondere al nome dei campi che si desidera recuperare.
 
 ![](assets/uc_operator_3.png)
 
 Per recuperare queste informazioni, effettua le seguenti operazioni:
 
-1. Fare clic con il pulsante destro del mouse sulla transizione in uscita dalla **[!UICONTROL Query]** attività, quindi seleziona **[!UICONTROL Display the target]**.
+1. Fare clic con il pulsante destro del mouse sulla transizione in uscita dall&#39;attività **[!UICONTROL Query]**, quindi selezionare **[!UICONTROL Display the target]**.
 
    ![](assets/uc_operator_4.png)
 
-1. Fai clic con il pulsante destro del mouse sull’elenco, quindi seleziona **[!UICONTROL Configure list]**.
+1. Fare clic con il pulsante destro del mouse sull&#39;elenco, quindi selezionare **[!UICONTROL Configure list]**.
 
    ![](assets/uc_operator_5.png)
 
@@ -67,7 +67,7 @@ Per recuperare queste informazioni, effettua le seguenti operazioni:
 
 ## Verifica del conteggio della popolazione {#testing-the-population-count}
 
-Aggiungi il codice seguente alla **[!UICONTROL Test]** attività per verificare se la popolazione target contiene almeno 1 profilo.
+Aggiungi il codice seguente all&#39;attività **[!UICONTROL Test]** per verificare se la popolazione di destinazione contiene almeno 1 profilo.
 
 ```
 var.recCount>0
@@ -77,9 +77,9 @@ var.recCount>0
 
 ## Configurazione dell’avviso {#setting-up-the-alert}
 
-Ora che il gruppo è stato aggiunto alla variabile dell’istanza con i campi desiderati, puoi aggiungere queste informazioni nel **[!UICONTROL Alert]** attività.
+Ora che il gruppo è stato aggiunto alla variabile dell&#39;istanza con i campi desiderati, è possibile aggiungere queste informazioni nell&#39;attività **[!UICONTROL Alert]**.
 
-Per eseguire questa operazione, aggiungi in **[!UICONTROL Source]** seleziona il codice seguente:
+A tale scopo, aggiungere nella scheda **[!UICONTROL Source]** il codice seguente:
 
 ```
 <ul>
@@ -94,7 +94,7 @@ for each (var item in items){
 
 >[!NOTE]
 >
->Il **[!UICONTROL <%= item.target.recipient.@fieldName %>]** consente di aggiungere uno dei campi salvati nella variabile di istanza tramite il comando **[!UICONTROL JavaScript code]** attività.\
+>Il comando **[!UICONTROL <%= item.target.recipient.@fieldName %>]** consente di aggiungere uno dei campi salvati nella variabile di istanza tramite l&#39;attività **[!UICONTROL JavaScript code]**.\
 >Puoi aggiungere tutti i campi desiderati, purché siano stati inseriti nel codice JavaScript.
 
 ![](assets/uc_operator_8.png)

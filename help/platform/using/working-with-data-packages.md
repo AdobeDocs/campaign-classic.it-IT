@@ -25,14 +25,14 @@ ht-degree: 2%
 
 I pacchetti di dati consentono la visualizzazione delle entità del database di Adobe Campaign tramite file in formato XML. Ogni entità contenuta in un pacchetto viene rappresentata con tutti i suoi dati.
 
-Il principio di **pacchetti di dati** consiste nell’esportare una configurazione di dati e integrarla in un altro sistema Adobe Campaign. Scopri come mantenere un set coerente di pacchetti di dati in questo [sezione](#data-package-best-practices).
+Il principio di **pacchetti di dati** consiste nell&#39;esportare una configurazione di dati e integrarla in un altro sistema Adobe Campaign. Scopri come mantenere un set coerente di pacchetti di dati in questa [sezione](#data-package-best-practices).
 
 ### Tipi di pacchetti {#types-of-packages}
 
 Esistono tre tipi di pacchetti esportabili: pacchetti utente, pacchetti piattaforma e pacchetti amministratore.
 
-* **Pacchetto utente**: consente di selezionare l’elenco delle entità da esportare. Questo tipo di pacchetto gestisce le dipendenze e verifica gli errori.
-* **Pacchetto piattaforma**: include tutte le risorse tecniche aggiunte (non standard): schemi, codice JavaScript, ecc.
+* **Pacchetto utente**: consente di selezionare l&#39;elenco di entità da esportare. Questo tipo di pacchetto gestisce le dipendenze e verifica gli errori.
+* **Pacchetto Platform**: include tutte le risorse tecniche aggiunte (non standard): schemi, codice JavaScript, ecc.
 
   ![](assets/ncs_datapackage_package_platform.png)
 
@@ -42,11 +42,11 @@ Esistono tre tipi di pacchetti esportabili: pacchetti utente, pacchetti piattafo
 
 >[!CAUTION]
 >
->Il **piattaforma** e **admin** i tipi contengono un elenco predefinito di entità da esportare. Ogni entità è collegata a condizioni di filtro che consentono di rimuovere le risorse pronte all’uso del pacchetto creato.
+>I tipi **platform** e **admin** contengono un elenco predefinito di entità da esportare. Ogni entità è collegata a condizioni di filtro che consentono di rimuovere le risorse pronte all’uso del pacchetto creato.
 
 ## Struttura dei dati {#data-structure}
 
-La descrizione di un pacchetto di dati è un documento XML strutturato conforme alla grammatica del **xrk:navtree** schema dati.
+La descrizione di un pacchetto di dati è un documento XML strutturato conforme alla grammatica dello schema di dati **xrk:navtree**.
 
 Esempio di pacchetto dati:
 
@@ -66,11 +66,11 @@ Esempio di pacchetto dati:
 </package>
 ```
 
-Il documento XML deve iniziare e terminare con **`<package>`** elemento. Qualsiasi **`<entities>`** elementi che seguono distribuiscono i dati per tipo di documento.
+Il documento XML deve iniziare e terminare con l&#39;elemento **`<package>`**. Tutti gli elementi **`<entities>`** che seguono distribuiscono i dati per tipo di documento.
 
-Un **`<entities>`** contiene i dati del pacchetto nel formato dello schema di dati immesso nel **schema** attributo.
+Un elemento **`<entities>`** contiene i dati del pacchetto nel formato dello schema dati immesso nell&#39;attributo **schema**.
 
-I dati in un pacchetto non devono contenere chiavi interne non compatibili tra le basi, ad esempio chiavi generate automaticamente (**autopk** opzionale).
+I dati di un pacchetto non devono contenere chiavi interne non compatibili tra le basi, ad esempio chiavi generate automaticamente (**autopk** opzione).
 
 Nel nostro esempio, i join sui collegamenti &quot;cartella&quot; e &quot;azienda&quot; sono stati sostituiti dai tasti &quot;di alto livello&quot; sulle tabelle di destinazione:
 
@@ -81,7 +81,7 @@ Nel nostro esempio, i join sui collegamenti &quot;cartella&quot; e &quot;azienda
 </recipient>
 ```
 
-Il **`operation`** con il valore &quot;none&quot; definisce un collegamento di riconciliazione.
+L&#39;attributo **`operation`** con il valore &quot;none&quot; definisce un collegamento di riconciliazione.
 
 Un pacchetto di dati può essere costruito manualmente da qualsiasi editor di testo. Assicurati semplicemente che la struttura del documento XML sia conforme allo schema di dati &quot;xtk:navtree&quot;. La console Adobe Campaign dispone di un modulo di esportazione e importazione del pacchetto di dati.
 
@@ -91,15 +91,15 @@ Un pacchetto di dati può essere costruito manualmente da qualsiasi editor di te
 
 I pacchetti possono essere esportati in tre modi diversi:
 
-* Il **[!UICONTROL Package Export Wizard]** consente di esportare un set di oggetti in un singolo package. Per ulteriori informazioni, consulta [Esportare un set di oggetti in un pacchetto](#exporting-a-set-of-objects-in-a-package)
-* A **oggetto singolo** possono essere esportati direttamente in un pacchetto facendo clic con il pulsante destro del mouse su di esso e selezionando **[!UICONTROL Actions > Export in a package]**.
-* **Definizioni dei pacchetti** consente di creare una struttura di pacchetto in cui aggiungere oggetti che verranno esportati successivamente in un pacchetto. Per ulteriori informazioni, consulta [Gestire le definizioni dei pacchetti](#managing-package-definitions)
+* **[!UICONTROL Package Export Wizard]** consente di esportare un set di oggetti in un singolo pacchetto. Per ulteriori informazioni, consulta [Esportare un set di oggetti in un pacchetto](#exporting-a-set-of-objects-in-a-package)
+* È possibile esportare un **oggetto singolo** in un pacchetto facendo clic con il pulsante destro del mouse su di esso e selezionando **[!UICONTROL Actions > Export in a package]**.
+* **Le definizioni dei pacchetti** ti consentono di creare una struttura di pacchetti in cui aggiungere oggetti che verranno esportati successivamente in un pacchetto. Per ulteriori informazioni, consulta [Gestire le definizioni dei pacchetti](#managing-package-definitions)
 
 Una volta esportato un pacchetto, potrai importarlo e tutte le entità aggiunte in un’altra istanza di Campaign.
 
 ### Esportare un set di oggetti in un pacchetto {#exporting-a-set-of-objects-in-a-package}
 
-La procedura guidata di esportazione del pacchetto è accessibile tramite **[!UICONTROL Tools > Advanced > Export package...]** della console client di Adobe Campaign.
+La procedura guidata di esportazione del pacchetto è accessibile tramite il menu **[!UICONTROL Tools > Advanced > Export package...]** della console client di Adobe Campaign.
 
 ![](assets/ncs_datapackage_typepackage.png)
 
@@ -111,11 +111,11 @@ Per i tre tipi di pacchetti, la procedura guidata offre i passaggi seguenti:
 
    >[!CAUTION]
    >
-   >Se si esporta un **[!UICONTROL Offer category]**, **[!UICONTROL Offer environment]**, **[!UICONTROL Program]** o **[!UICONTROL Plan]** digita la cartella, non selezionare mai la cartella **xtk:cartella** poiché alcuni dati potrebbero andare persi. Seleziona l’entità che corrisponde alla cartella: **nms:offerCategory** per le categorie di offerta, **nms:offerEnv** per gli ambienti di offerta, **nms:programma** per i programmi, e **nms:piano** per i piani.
+   >Se si esporta una cartella di tipo **[!UICONTROL Offer category]**, **[!UICONTROL Offer environment]**, **[!UICONTROL Program]** o **[!UICONTROL Plan]**, non selezionare mai la cartella **xtk:folder** poiché alcuni dati potrebbero andare persi. Selezionare l&#39;entità che corrisponde alla cartella: **nms:offerCategory** per le categorie di offerta, **nms:offerEnv** per gli ambienti di offerta, **nms:program** per i programmi e **nms:plan** per i piani.
 
-   La gestione degli elenchi consente di aggiungere o eliminare entità da esportare dalla configurazione. Clic **[!UICONTROL Add]** per selezionare una nuova entità.
+   La gestione degli elenchi consente di aggiungere o eliminare entità da esportare dalla configurazione. Fare clic su **[!UICONTROL Add]** per selezionare una nuova entità.
 
-   Il **[!UICONTROL Detail]** modifica la configurazione selezionata.
+   Il pulsante **[!UICONTROL Detail]** modifica la configurazione selezionata.
 
    >[!NOTE]
    >
@@ -129,9 +129,9 @@ Per i tre tipi di pacchetti, la procedura guidata offre i passaggi seguenti:
 
    >[!NOTE]
    >
-   >L’editor delle query viene presentato in [questa sezione](../../platform/using/about-queries-in-campaign.md).
+   >L&#39;editor delle query è presentato in [questa sezione](../../platform/using/about-queries-in-campaign.md).
 
-1. Clic **[!UICONTROL Next]** e seleziona le colonne di ordinamento per ordinare i dati durante l’estrazione:
+1. Fare clic su **[!UICONTROL Next]** e selezionare le colonne di ordinamento per ordinare i dati durante l&#39;estrazione:
 
    ![](assets/ncs_datapackage_export5.png)
 
@@ -139,7 +139,7 @@ Per i tre tipi di pacchetti, la procedura guidata offre i passaggi seguenti:
 
    ![](assets/ncs_datapackage_export6.png)
 
-1. L’ultima pagina della procedura guidata di esportazione del pacchetto ti consente di avviare l’esportazione. I dati verranno memorizzati nel file indicato nella **[!UICONTROL File]** campo.
+1. L’ultima pagina della procedura guidata di esportazione del pacchetto ti consente di avviare l’esportazione. I dati verranno memorizzati nel file indicato nel campo **[!UICONTROL File]**.
 
    ![](assets/ncs_datapackage_export7.png)
 
@@ -149,8 +149,8 @@ Il meccanismo di esportazione consente ad Adobe Campaign di tenere traccia dei c
 
 Questo meccanismo è definito da due regole:
 
-* oggetti collegati a un collegamento con un **proprio** o **owncopy** l&#39;integrità del tipo viene esportata nello stesso pacchetto dell&#39;oggetto esportato.
-* oggetti collegati a un collegamento con un **neutro** o **definire** l&#39;integrità del tipo (collegamento definito) deve essere esportata separatamente.
+* gli oggetti collegati a un collegamento con integrità di tipo **own** o **owncopy** vengono esportati nello stesso pacchetto dell&#39;oggetto esportato.
+* gli oggetti collegati a un collegamento con integrità di tipo **neutral** o **define** (collegamento definito) devono essere esportati separatamente.
 
 >[!NOTE]
 >
@@ -207,22 +207,22 @@ label="" name="" namespace="" vendor="">
 </package>   
 ```
 
-L’affiliazione a un tipo di pacchetto è definita in uno schema con **@pkgAdmin e @pkgPlatform** attributo. Entrambi questi attributi ricevono un’espressione XTK che definisce le condizioni di affiliazione al pacchetto.
+L&#39;affiliazione a un tipo di pacchetto è definita in uno schema con gli attributi **@pkgAdmin e @pkgPlatform**. Entrambi questi attributi ricevono un’espressione XTK che definisce le condizioni di affiliazione al pacchetto.
 
 ```
 <element name="offerEnv" img="nms:offerEnv.png" 
 template="xtk:folder" pkgAdmin="@id != 0">
 ```
 
-Infine, la **@pkgStatus** attribute consente di definire le regole di esportazione per questi elementi o attributi. A seconda del valore dell’attributo, l’elemento o l’attributo si trova nel pacchetto esportato. I tre valori possibili per questo attributo sono:
+Infine, l&#39;attributo **@pkgStatus** consente di definire le regole di esportazione per questi elementi o attributi. A seconda del valore dell’attributo, l’elemento o l’attributo si trova nel pacchetto esportato. I tre valori possibili per questo attributo sono:
 
 * **mai**: non esporta il campo o il collegamento
-* **sempre**: forza l’esportazione per questo campo
-* **preCrea**: autorizza la creazione dell’entità collegata
+* **always**: forza l&#39;esportazione per questo campo
+* **preCreate**: autorizza la creazione dell&#39;entità collegata
 
 >[!NOTE]
 >
->Il **preCrea** il valore è ammesso solo per gli eventi di tipo collegamento. Ti autorizza a creare o puntare a un’entità non ancora caricata nel pacchetto esportato.
+>Il valore **preCreate** è ammesso solo per eventi di tipo collegamento. Ti autorizza a creare o puntare a un’entità non ancora caricata nel pacchetto esportato.
 
 ## Gestire le definizioni dei pacchetti {#managing-package-definitions}
 
@@ -237,9 +237,9 @@ Le definizioni dei pacchetti consentono di creare una struttura di pacchetti in 
 
 ### Creare una definizione di pacchetto {#creating-a-package-definition}
 
-È possibile accedere alle definizioni dei pacchetti da **[!UICONTROL Administration > Configuration > Package management > Package definitions]** menu.
+È possibile accedere alle definizioni dei pacchetti dal menu **[!UICONTROL Administration > Configuration > Package management > Package definitions]**.
 
-Per creare una definizione di pacchetto, fare clic su **[!UICONTROL New]** , quindi inserire le informazioni generali sulla definizione del pacchetto.
+Per creare una definizione di pacchetto, fare clic sul pulsante **[!UICONTROL New]**, quindi inserire le informazioni generali sulla definizione del pacchetto.
 
 ![](assets/packagedefinition_create.png)
 
@@ -253,32 +253,32 @@ Per creare una definizione di pacchetto, fare clic su **[!UICONTROL New]** , qui
 
 ### Aggiungere entità a una definizione di pacchetto {#adding-entities-to-a-package-definition}
 
-In **[!UICONTROL Content]** , fare clic sulla scheda **[!UICONTROL Add]** per selezionare le entità da esportare con il pacchetto. Le best practice per la selezione delle entità sono presentate in [questa sezione](#exporting-a-set-of-objects-in-a-package) sezione.
+Nella scheda **[!UICONTROL Content]**, fare clic sul pulsante **[!UICONTROL Add]** per selezionare le entità da esportare con il pacchetto. Le best practice per la selezione delle entità sono presentate nella sezione [questa sezione](#exporting-a-set-of-objects-in-a-package).
 
 ![](assets/packagedefinition_addentities.png)
 
 Le entità possono essere aggiunte a una definizione di pacchetto direttamente dalla loro posizione nell’istanza. A questo scopo, segui la procedura indicata di seguito:
 
-1. Fai clic con il pulsante destro del mouse sull’entità desiderata, quindi seleziona **[!UICONTROL Actions > Export in a package]**.
+1. Fare clic con il pulsante destro del mouse sull&#39;entità desiderata, quindi selezionare **[!UICONTROL Actions > Export in a package]**.
 
    ![](assets/packagedefinition_singleentity.png)
 
-1. Seleziona **[!UICONTROL Add to a package definition]**, quindi seleziona la definizione del pacchetto a cui desideri aggiungere l’entità.
+1. Selezionare **[!UICONTROL Add to a package definition]**, quindi selezionare la definizione del pacchetto a cui si desidera aggiungere l&#39;entità.
 
    ![](assets/packagedefinition_packageselection.png)
 
-1. L’entità viene aggiunta alla definizione del pacchetto, verrà esportata con il pacchetto (vedi [questa sezione](#exporting-packages-from-a-package-definition)).
+1. L&#39;entità viene aggiunta alla definizione del pacchetto e verrà esportata con il pacchetto (vedere [questa sezione](#exporting-packages-from-a-package-definition)).
 
    ![](assets/packagedefinition_entityadded.png)
 
 ### Configurare la generazione delle definizioni dei pacchetti {#configuring-package-definitions-generation}
 
-La generazione del pacchetto può essere configurata dalla definizione del pacchetto **[!UICONTROL Content]** scheda. A questo scopo, fai clic su **[!UICONTROL Generation parameters]** collegamento.
+La generazione del pacchetto può essere configurata dalla scheda Definizione pacchetto **[!UICONTROL Content]**. A tale scopo, fare clic sul collegamento **[!UICONTROL Generation parameters]**.
 
 ![](assets/packagedefinition_generationparameters.png)
 
 * **[!UICONTROL Include the definition]**: include la definizione attualmente utilizzata nella definizione del pacchetto.
-* **[!UICONTROL Include an installation script]**: consente di aggiungere uno script javascript da eseguire all’importazione del pacchetto. Se selezionata, **[!UICONTROL Script]** viene aggiunta nella schermata di definizione del pacchetto.
+* **[!UICONTROL Include an installation script]**: consente di aggiungere uno script javascript da eseguire all&#39;importazione del pacchetto. Se selezionata, nella schermata di definizione del pacchetto viene aggiunta una scheda **[!UICONTROL Script]**.
 * **[!UICONTROL Include default values]**: aggiunge al pacchetto i valori di tutti gli attributi delle entità.
 
   Questa opzione non è selezionata per impostazione predefinita, al fine di evitare lunghe esportazioni. Ciò significa che gli attributi delle entità con valori predefiniti (&quot;stringa vuota&quot;, &quot;0&quot; e &quot;false&quot; se non sono definiti altrimenti nello schema) non verranno aggiunti al pacchetto e pertanto non verranno esportati.
@@ -289,23 +289,23 @@ La generazione del pacchetto può essere configurata dalla definizione del pacch
   >
   >Se l’istanza in cui viene importato il pacchetto contiene entità identiche a quelle del pacchetto (ad esempio con lo stesso ID esterno), i relativi attributi non verranno aggiornati. Ciò può verificarsi se gli attributi dell’istanza precedente dispongono di valori predefiniti, in quanto non sono inclusi nel pacchetto.
   >
-  >In tal caso, selezionare **[!UICONTROL Include default values]** L’opzione impediva l’unione delle versioni, in quanto tutti gli attributi dell’istanza precedente venivano esportati con il pacchetto.
+  >In tal caso, la selezione dell&#39;opzione **[!UICONTROL Include default values]** impedirebbe l&#39;unione delle versioni, in quanto tutti gli attributi dell&#39;istanza precedente verrebbero esportati con il pacchetto.
 
 ### Esportare pacchetti da una definizione di pacchetto {#exporting-packages-from-a-package-definition}
 
 Per esportare un pacchetto da una definizione di pacchetto, effettua le seguenti operazioni:
 
-1. Seleziona la definizione del pacchetto da esportare, quindi fai clic su **[!UICONTROL Actions]** e seleziona **[!UICONTROL Export the package]**.
+1. Selezionare la definizione del pacchetto da esportare, quindi fare clic sul pulsante **[!UICONTROL Actions]** e selezionare **[!UICONTROL Export the package]**.
 1. Per impostazione predefinita, viene selezionato un file XML corrispondente al pacchetto esportato. Viene denominato in base allo spazio dei nomi e al nome della definizione del pacchetto.
-1. Una volta definiti il nome e la posizione del pacchetto, fai clic su **[!UICONTROL Start]** per avviare l&#39;esportazione.
+1. Una volta definiti il nome e il percorso del pacchetto, fare clic sul pulsante **[!UICONTROL Start]** per avviare l&#39;esportazione.
 
    ![](assets/packagedefinition_packageexport.png)
 
 ## Importazione dei pacchetti {#importing-packages}
 
-La procedura guidata di importazione del pacchetto è accessibile tramite il menu principale **[!UICONTROL Tools > Advanced > Import package]** della console client di Adobe Campaign.
+L&#39;Importazione guidata pacchetti è accessibile tramite il menu principale **[!UICONTROL Tools > Advanced > Import package]** della console client di Adobe Campaign.
 
-Puoi importare un pacchetto da un’esportazione eseguita in precedenza, ad esempio da un’altra istanza di Adobe Campaign, oppure [pacchetto integrato](../../installation/using/installing-campaign-standard-packages.md), a seconda dei termini della licenza.
+Puoi importare un pacchetto da un&#39;esportazione eseguita in precedenza, ad esempio da un&#39;altra istanza di Adobe Campaign, o da un [pacchetto incorporato](../../installation/using/installing-campaign-standard-packages.md), a seconda dei termini della licenza.
 
 ![](assets/ncs_datapackage_import.png)
 
@@ -317,7 +317,7 @@ Per importare un pacchetto di dati esistente, selezionare il file XML e fare cli
 
 Il contenuto del pacchetto da importare viene quindi visualizzato nella sezione centrale dell’editor.
 
-Clic **[!UICONTROL Next]** e **[!UICONTROL Start]** per avviare l&#39;importazione.
+Fare clic su **[!UICONTROL Next]** e **[!UICONTROL Start]** per avviare l&#39;importazione.
 
 ![](assets/ncs_datapackage_import_2.png)
 
@@ -327,7 +327,7 @@ I pacchetti standard sono pacchetti incorporati, installati quando è configurat
 
 Fare riferimento al contratto di licenza per verificare quali pacchetti è possibile installare.
 
-Per ulteriori informazioni sui pacchetti incorporati, consulta [questa pagina](../../installation/using/installing-campaign-standard-packages.md).
+Per ulteriori informazioni sui pacchetti incorporati, fare riferimento a [questa pagina](../../installation/using/installing-campaign-standard-packages.md).
 
 ## Best practice relative ai pacchetti dati {#data-package-best-practices}
 
@@ -345,7 +345,7 @@ I principali vincoli sono i seguenti:
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla configurazione di un flusso di lavoro per esportare automaticamente i pacchetti, consulta [questa pagina](https://helpx.adobe.com/campaign/kb/export-packages-automatically.html).
+>Per ulteriori informazioni sulla configurazione di un flusso di lavoro per l&#39;esportazione automatica dei pacchetti, vedere [questa pagina](https://helpx.adobe.com/campaign/kb/export-packages-automatically.html).
 
 ### Raccomandazioni {#data-package-recommendations}
 
@@ -373,7 +373,7 @@ Per iniziare, definisci diversi tipi di pacchetti. Verranno utilizzati solo quat
 
 Se devi distribuire la configurazione su una nuova istanza, puoi importare tutti i pacchetti di entità.
 
-**Funzioni**
+**Caratteristiche**
 
 Questo tipo di pacchetto:
 * Risponde a un requisito/specifica del cliente.

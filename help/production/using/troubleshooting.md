@@ -22,10 +22,10 @@ Questa sezione contiene le procedure di risoluzione dei problemi relativi ai pro
 
 ## Problemi comuni e generali {#common-and-general-issues}
 
-* Questo [pagina](../../production/using/modules-and-frequent-issues.md) presenta i problemi più frequenti riscontrati per i moduli elencati.
-* Questo [pagina](../../production/using/workflow-execution.md) elenca le procedure comuni per la risoluzione dei problemi da seguire in caso di problemi relativi all’esecuzione del flusso di lavoro.
-* Questo [pagina](../../production/using/lost-password.md) dettagli su come modificare o recuperare una password persa.
-* Questo [pagina](../../production/using/console-update.md) descrive come riattivare la richiesta di aggiornamento della console se è stata disattivata l’opzione corrispondente.
+* Questa [pagina](../../production/using/modules-and-frequent-issues.md) presenta i problemi più frequenti riscontrati per i moduli elencati.
+* In questa [pagina](../../production/using/workflow-execution.md) sono elencate le procedure comuni per la risoluzione dei problemi da seguire quando si verificano problemi con l&#39;esecuzione del flusso di lavoro.
+* Questa [pagina](../../production/using/lost-password.md) descrive come modificare o recuperare una password persa.
+* In questa [pagina](../../production/using/console-update.md) è descritto come riattivare la richiesta di aggiornamento della console se è stata disattivata l&#39;opzione corrispondente.
 
 ## Risoluzione dei problemi nelle consegne {#delivery-troubleshooting}
 

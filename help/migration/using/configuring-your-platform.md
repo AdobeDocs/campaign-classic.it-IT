@@ -22,18 +22,18 @@ ht-degree: 2%
 
 Alcune modifiche principali in Adobe Campaign v7 richiedono una configurazione specifica. Queste configurazioni possono essere necessarie prima o dopo la migrazione.
 
-Durante la migrazione, il **NmsRecipient** viene ricreata dalla definizione degli schemi. Qualsiasi modifica apportata alla struttura SQL di questa tabella al di fuori di Adobe Campaign andrà persa.
+Durante la migrazione, la tabella **NmsRecipient** viene ricreata dalla definizione degli schemi. Qualsiasi modifica apportata alla struttura SQL di questa tabella al di fuori di Adobe Campaign andrà persa.
 
 Esempio di elementi da verificare:
 
-* Se hai aggiunto una colonna (o un indice) alla **NmsRecipient** ma non è stata specificata in dettaglio nello schema, non verrà salvata.
-* Il **tablespace** l’attributo recupera i propri valori per impostazione predefinita, ovvero quelli definiti nella procedura guidata di distribuzione.
-* Se è stata aggiunta una vista di riferimento al **NmsRecipient** tabella, è necessario eliminarla prima di eseguire la migrazione.
+* Se nella tabella **NmsRecipient** è stata aggiunta una colonna (o un indice) ma la colonna non è stata specificata nello schema, la colonna non verrà salvata.
+* L&#39;attributo **tablespace** riprende i valori per impostazione predefinita, ovvero quelli definiti nella procedura guidata di distribuzione.
+* Se è stata aggiunta una visualizzazione di riferimento alla tabella **NmsRecipient**, è necessario eliminarla prima di eseguire la migrazione.
 
 
 ## Prima della migrazione {#before-the-migration}
 
-Durante la migrazione ad Adobe Campaign v7, è necessario configurare i seguenti elementi. Questi elementi devono essere affrontati prima di avviare **post-aggiornamento**.
+Durante la migrazione ad Adobe Campaign v7, è necessario configurare i seguenti elementi. Questi elementi devono essere corretti prima di avviare **postupgrade**.
 
 <!--
 
@@ -59,7 +59,7 @@ Durante la migrazione ad Adobe Campaign v7, è necessario configurare i seguenti
 
 * Password
 
-  Devi configurare il **Amministratore** e **Interno** password. [Ulteriori informazioni](../../migration/using/before-starting-migration.md#user-passwords)
+  È necessario configurare le password **Admin** e **Internal**. [Ulteriori informazioni](../../migration/using/before-starting-migration.md#user-passwords)
 
 <!--
 * Tree structure
@@ -78,7 +78,7 @@ Durante la migrazione ad Adobe Campaign v7, è necessario configurare i seguenti
 
 ## Dopo la migrazione {#after-the-migration}
 
-Dopo l’esecuzione **post-aggiornamento**, verifica e configura i seguenti elementi:
+Dopo aver eseguito **post-aggiornamento**, verifica e configura i seguenti elementi:
 
 * Pagine mirror
 
@@ -86,11 +86,11 @@ Dopo l’esecuzione **post-aggiornamento**, verifica e configura i seguenti elem
 
   Se hai utilizzato il blocco di personalizzazione v5 nei messaggi, la visualizzazione della pagina speculare non riuscirà. Adobe consiglia vivamente di utilizzare il nuovo blocco di personalizzazione durante l’inserimento di una pagina speculare nei messaggi.
 
-  Tuttavia, come soluzione alternativa temporanea (e poiché le pagine mirror sono ancora attive), puoi tornare al vecchio blocco di personalizzazione per evitare questo problema modificando l’opzione **[!UICONTROL XtkAcceptOldPasswords]** e impostarlo su **[!UICONTROL 1]**. Questo non influirà sull’utilizzo del nuovo blocco di personalizzazione v6.x.
+  Tuttavia, come soluzione alternativa temporanea (e poiché le pagine mirror sono ancora attive), puoi tornare al vecchio blocco di personalizzazione per evitare questo problema modificando l&#39;opzione **[!UICONTROL XtkAcceptOldPasswords]** e impostandola su **[!UICONTROL 1]**. Questo non influirà sull’utilizzo del nuovo blocco di personalizzazione v6.x.
 
 * Sintassi
 
-  Se durante il post-aggiornamento si verificano errori relativi alla sintassi, è necessario attivare temporaneamente **allowSQLInjection** opzione in **serverConf.xml** in quanto consente di riscrivere il codice. Una volta adattato il codice, assicurati di riattivare la sicurezza.
+  Se durante il post-aggiornamento si verificano errori relativi alla sintassi, è necessario attivare temporaneamente l&#39;opzione **allowSQLInjection** nel file **serverConf.xml**, in quanto consente di riscrivere il codice. Una volta adattato il codice, assicurati di riattivare la sicurezza.
 
 * Conflitti
 
@@ -106,7 +106,7 @@ Dopo l’esecuzione **post-aggiornamento**, verifica e configura i seguenti elem
 
 * Applicazioni web
 
-  Dopo il post-aggiornamento, se si verificano problemi di connessione alle applicazioni Web identificate, è necessario attivare **allowUserPassword** e **sessionTokenOnly** opzioni in **serverConf.xml** file. Per evitare problemi di sicurezza, queste due opzioni devono essere riattivate dopo la risoluzione del problema.
+  Dopo l&#39;aggiornamento, se si verificano problemi di connessione alle applicazioni Web identificate, è necessario attivare le opzioni **allowUserPassword** e **sessionTokenOnly** nel file **serverConf.xml**. Per evitare problemi di sicurezza, queste due opzioni devono essere riattivate dopo la risoluzione del problema.
 
   A seconda del tipo di applicazioni Web e della relativa configurazione, è necessario eseguire ulteriori manipolazioni per assicurarne il corretto funzionamento.
 
@@ -137,7 +137,7 @@ Dopo l’esecuzione **post-aggiornamento**, verifica e configura i seguenti elem
 
 * Interazione
 
-  Se usa **Interazione**, è necessario regolare tutti i parametri dopo la migrazione.
+  Se utilizzi **Interaction**, devi regolare tutti i parametri dopo la migrazione.
 
 <!--
 

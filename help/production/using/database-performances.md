@@ -32,11 +32,11 @@ Verifica che la configurazione iniziale della piattaforma Adobe Campaign sia anc
 
 >[!NOTE]
 >
->Puoi consultare [Guida al dimensionamento dell&#39;hardware Adobe Campaign](https://helpx.adobe.com/it/campaign/kb/hardware-sizing-guide.html) per approfondimenti.
+>Per ulteriori informazioni, consultare la [Guida al dimensionamento hardware di Adobe Campaign](https://helpx.adobe.com/it/campaign/kb/hardware-sizing-guide.html).
 
 ## Configurazione della piattaforma {#platform-configuration}
 
-Una configurazione non appropriata può influire sulle prestazioni della piattaforma. È consigliabile controllare la configurazione di rete, le opzioni di recapito messaggi della piattaforma e la configurazione MTA in **serverConf.xml** file.
+Una configurazione non appropriata può influire sulle prestazioni della piattaforma. È consigliabile controllare la configurazione di rete, le opzioni di recapito messaggi della piattaforma e la configurazione MTA nel file **serverConf.xml**.
 
 ## Manutenzione del database {#database-maintenance}
 
@@ -62,20 +62,20 @@ Per ulteriori informazioni al riguardo, consulta [questa sezione](../../producti
 
 Controllare il numero e le dimensioni delle tabelle di lavoro. Se superano una determinata dimensione, le prestazioni del database ne risentono. Queste tabelle vengono create dai flussi di lavoro e dalle consegne. Rimangono nel database mentre i flussi di lavoro e le consegne sono attivi. Per limitare le dimensioni delle tabelle di lavoro, è possibile eseguire le operazioni seguenti:
 
-* Interrompere o eliminare consegne con i seguenti stati: **[!UICONTROL Failed]**, **[!UICONTROL In progress]**, **[!UICONTROL Ready for delivery]**, o **[!UICONTROL Paused]**.
+* Interrompere o eliminare le consegne con i seguenti stati: **[!UICONTROL Failed]**, **[!UICONTROL In progress]**, **[!UICONTROL Ready for delivery]** o **[!UICONTROL Paused]**.
 * Arresta o elimina flussi di lavoro sospesi a causa di un errore.
-* Arresta tutti i flussi di lavoro utilizzati per i test che non contengono un **[!UICONTROL End]** attività e il cui status rimane pertanto **[!UICONTROL Paused]**.
+* Arrestare tutti i flussi di lavoro utilizzati per i test che non contengono un&#39;attività **[!UICONTROL End]** e il cui stato rimane quindi **[!UICONTROL Paused]**.
 
 >[!IMPORTANT]
 >
 >Se l’operazione richiede molto tempo e libera molto spazio, è necessaria una manutenzione approfondita (ricostruzione dell’indice, ecc.). Per ulteriori informazioni al riguardo, consulta [questa sezione](../../production/using/recommendations.md).
 
-**Monitoraggio dei processi in Adobe Campaign**
+**Monitoraggio dei processi di Adobe Campaign**
 
 A seconda delle impostazioni di installazione di Adobe Campaign, è possibile utilizzare due strumenti per il monitoraggio della piattaforma:
 
 * La pagina di produzione dell’istanza. Per ulteriori informazioni, consulta [Monitoraggio manuale](../../production/using/monitoring-processes.md#manual-monitoring).
-* Il *netreport* script. Per ulteriori informazioni, consulta [Monitoraggio automatico tramite script di Adobe Campaign](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts).
+* Lo script *netreport*. Per ulteriori informazioni, consulta [Monitoraggio automatico tramite script di Adobe Campaign](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts).
 
 ## Specifiche {#specifics}
 

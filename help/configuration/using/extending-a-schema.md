@@ -18,7 +18,7 @@ ht-degree: 4%
 >
 >Alcuni schemi integrati non devono essere estesi: principalmente quelli per i quali sono definite le seguenti impostazioni:\
 >**dataSource=&quot;file&quot;** e **mappingType=&quot;xmlFile&quot;**.\
->Non estendere i seguenti schemi: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, **ncm:pubblicazione**, **nl:monitoraggio**, **nms:calendario**, **nms:remoteTracking**, **nms:userAgentRules**, **xtk:builder**, **xtk:connessioni**, **xtk:dbInit**, **xtk:funcList**, **xtk:fusion**, **xtk: jst**, **xtk:navtree**, **xtk:queryDef**, **xtk:resourceMenu**, **xtk:schema**, **xtk:scriptContext**, **xtk:session**, **xtk:sqlSchema**, **xtk:stringhe**.
+>I seguenti schemi non devono essere estesi: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, **ncm:publishing**, **nl:monitoring**, **nms:calendar**, **nms:remoteTracking**, {16 8}nms:userAgentRules **,** xtk:builder **,** xtk:connections **,** xtk:dbInit **,** xtk:funcList **,** xtk:fusion **,** xtk: jst **,** xtk:navtree **,** xtk:query Def **,** xtk:resourceMenu **,** xtk:schema **,** xtk:scriptContext **,** xtk:session **,** xtk:sqlSchema **,** xtk:string **.**
 >Questo elenco non è esaustivo.
 
 Esistono due metodi per estendere uno schema esistente:
@@ -26,7 +26,7 @@ Esistono due metodi per estendere uno schema esistente:
 1. Modifica diretta dello schema di origine.
 1. Creazione di un altro schema con lo stesso nome ma uno spazio dei nomi diverso. Il vantaggio è che è possibile estendere una tabella senza dover modificare lo schema originale.
 
-   L’elemento principale dello schema deve contenere **extendedSchema** con il nome dello schema da estendere come valore.
+   L&#39;elemento radice dello schema deve contenere l&#39;attributo **extendedSchema** con il nome dello schema da estendere come valore.
 
    Uno schema di estensione non dispone di un proprio schema: lo schema generato dallo schema di origine verrà compilato con i campi dello schema di estensione.
 
@@ -34,7 +34,7 @@ Esistono due metodi per estendere uno schema esistente:
    >
    >Non è consentito modificare gli schemi incorporati dell’applicazione, ma il meccanismo di estensione dello schema. In caso contrario, gli schemi modificati non verranno aggiornati al momento di aggiornamenti futuri dell’applicazione. Questo può causare malfunzionamenti nell’utilizzo di Adobe Campaign.
 
-   **Esempio**: estensione del **nms:destinatario** schema.
+   **Esempio**: estensione dello schema **nms:recipient**.
 
    ```
    <srcSchema extendedSchema="nms:recipient" name="recipient" namespace="cus">
@@ -44,7 +44,7 @@ Esistono due metodi per estendere uno schema esistente:
    </srcSchema>
    ```
 
-   Il **nms:destinatario** lo schema esteso viene compilato con il campo popolato nello schema dell’estensione:
+   Lo schema esteso **nms:recipient** viene compilato con il campo popolato nello schema dell&#39;estensione:
 
    ```
    <schema dependingSchemas="cus:recipient" name="recipient" namespace="nms">
@@ -54,9 +54,9 @@ Esistono due metodi per estendere uno schema esistente:
    </schema>
    ```
 
-   Il **dependSchemas** l’attributo sull’elemento principale dello schema fa riferimento alle dipendenze dagli schemi di estensione.
+   L&#39;attributo **dependSchemas** dell&#39;elemento principale dello schema fa riferimento alle dipendenze dagli schemi di estensione.
 
-   Il **membersTo** attributo sul campo viene compilato nello schema in cui è dichiarato.
+   L&#39;attributo **membersTo** del campo viene compilato nello schema in cui è dichiarato.
 
 >[!IMPORTANT]
 >

@@ -21,26 +21,26 @@ Per creare una consegna basata su un modello esistente, seleziona il modello dal
 
 ![](assets/s_ncs_user_wizard_select_template.png)
 
-In caso contrario, fare clic su **[!UICONTROL Select link]** a destra del campo per sfogliare la struttura.
+In caso contrario, fare clic sulla cartella **[!UICONTROL Select link]** a destra del campo per sfogliare la struttura.
 
 ![](assets/s_ncs_user_wizard_choose_link.png)
 
-Seleziona la directory desiderata da **[!UICONTROL Folder]** o fai clic sul pulsante **[!UICONTROL Display sub-levels]** per visualizzare il contenuto delle directory nelle sottostrutture della directory corrente.
+Selezionare la directory desiderata dal campo **[!UICONTROL Folder]** oppure fare clic sull&#39;icona **[!UICONTROL Display sub-levels]** per visualizzare il contenuto delle directory nelle sottostrutture della directory corrente.
 
-Seleziona il modello di consegna da utilizzare e fai clic su **[!UICONTROL Ok]**.
+Selezionare il modello di consegna da utilizzare e fare clic su **[!UICONTROL Ok]**.
 
 ## Eseguire il modello {#executing-the-template}
 
 Puoi avviare l’esecuzione di un modello direttamente dall’elenco dei modelli senza prima creare una consegna. A questo scopo, seleziona il modello da eseguire e fai clic con il pulsante destro del mouse. Seleziona **[!UICONTROL Actions>Execute the delivery template...]**.
 
-Puoi anche utilizzare **[!UICONTROL File>Actions>Execute the delivery template...]**.
+È inoltre possibile utilizzare **[!UICONTROL File>Actions>Execute the delivery template...]**.
 
 ![](assets/s_ncs_user_template_execute_menu.png)
 
-Inserisci i parametri di consegna e fai clic su **[!UICONTROL Send]**.
+Immettere i parametri di consegna e fare clic su **[!UICONTROL Send]**.
 
 Questa azione genera una consegna nella cartella associata al modello. Il nome di questa consegna è il nome del modello di consegna da cui è stata creata.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla configurazione di una consegna, consulta [Definire il contenuto dell’e-mail](defining-the-email-content.md).
+>Per ulteriori informazioni sulla configurazione di una consegna, vedere [Definire il contenuto dell&#39;e-mail](defining-the-email-content.md).

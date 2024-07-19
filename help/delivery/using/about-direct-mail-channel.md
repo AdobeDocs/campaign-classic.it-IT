@@ -24,4 +24,4 @@ Adobe Campaign consente di produrre file per distribuire in massa lettere person
 >
 >Un indirizzo è considerato completo se il nome, il campo CAP e i campi città non sono vuoti. Tutti i destinatari con indirizzi incompleti saranno esclusi dalle consegne di direct mailing.
 
-Le sezioni seguenti forniscono informazioni specifiche per il canale di direct mailing. Per informazioni globali su come creare e inviare una consegna, consulta [questa sezione](steps-about-delivery-creation-steps.md).
+Le sezioni seguenti forniscono informazioni specifiche per il canale di direct mailing. Per informazioni globali su come creare e inviare una consegna, consulta [questa sezione](steps-about-delivery-creation-steps.md).

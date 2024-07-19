@@ -20,11 +20,11 @@ ht-degree: 1%
 
 Se si dispone dei diritti appropriati, è possibile salvare un report di analisi creato da un modello o esportarlo in formato Excel, PDF o OpenOffice.
 
-Per salvare il report, fai clic su **[!UICONTROL Save]** e assegna un’etichetta al rapporto.
+Per salvare il report, fare clic su **[!UICONTROL Save]** e assegnare un&#39;etichetta al report.
 
-Seleziona **[!UICONTROL Also save data]** se desideri creare una cronologia del rapporto e visualizzarne i valori al momento del salvataggio. Per ulteriori informazioni, consulta [Archiviare i rapporti di analisi](#archiving-analysis-reports).
+Selezionare **[!UICONTROL Also save data]** per creare una cronologia del report e visualizzare i valori del report al momento del salvataggio. Per ulteriori informazioni, consulta [Archiviare i report di analisi](#archiving-analysis-reports).
 
-Il **[!UICONTROL Share this report]** consente ad altri operatori di accedere al rapporto.
+L&#39;opzione **[!UICONTROL Share this report]** consente ad altri operatori di accedere al report.
 
 ![](assets/s_ncs_user_report_wizard_010.png)
 
@@ -32,7 +32,7 @@ Una volta salvato, il rapporto può essere riutilizzato per generare altri rappo
 
 ![](assets/s_ncs_user_report_wizard_08a.png)
 
-Per apportare modifiche a questo report, modifica il **[!UICONTROL Administration > Configuration > Adobe Campaign tree reports]** nodo della struttura Adobe Campaign (o la prima cartella di tipo &quot;Rapporti&quot; per la quale l’operatore dispone dei diritti di modifica). Per ulteriori informazioni, consulta [Configurare il layout di un rapporto di analisi descrittivo](#configuring-the-layout-of-a-descriptive-analysis-report).
+Per apportare modifiche a questo report, modificare il nodo **[!UICONTROL Administration > Configuration > Adobe Campaign tree reports]** della struttura Adobe Campaign (o la prima cartella di tipo &quot;Report&quot; per la quale l&#39;operatore dispone dei diritti di modifica). Per ulteriori informazioni, consulta [Configurare il layout di un rapporto di analisi descrittivo](#configuring-the-layout-of-a-descriptive-analysis-report).
 
 ## Impostazioni aggiuntive del rapporto di analisi {#analysis-report-additional-settings}
 
@@ -40,19 +40,19 @@ Una volta salvato il rapporto di analisi descrittivo, puoi modificarne le propri
 
 ![](assets/s_ncs_user_report_wizard_08b.png)
 
-Queste opzioni sono le stesse dei rapporti standard e sono descritte in [questa pagina](../../reporting/using/properties-of-the-report.md).
+Queste opzioni sono le stesse dei report standard e sono descritte in dettaglio in [questa pagina](../../reporting/using/properties-of-the-report.md).
 
 ## Configurare il layout di un rapporto di analisi descrittivo {#configuring-the-layout-of-a-descriptive-analysis-report}
 
-Puoi personalizzare la visualizzazione e il layout dei dati nei grafici e nelle tabelle dell’analisi descrittiva. Tutte le opzioni sono accessibili tramite la struttura Adobe Campaign, nel **[!UICONTROL Edit]** di ciascun rapporto.
+Puoi personalizzare la visualizzazione e il layout dei dati nei grafici e nelle tabelle dell’analisi descrittiva. Tutte le opzioni sono accessibili tramite la struttura Adobe Campaign, nella scheda **[!UICONTROL Edit]** di ogni rapporto.
 
 ### Modalità di visualizzazione dei rapporti di analisi {#analysis-report-display-mode}
 
-Quando crei un rapporto utilizzando **[!UICONTROL qualitative distribution]** le modalità di visualizzazione template, table e chart sono selezionate per impostazione predefinita. Se desideri una sola modalità di visualizzazione, deseleziona la casella appropriata. Ciò significa che sarà disponibile solo la scheda della modalità di visualizzazione selezionata.
+Quando si crea un report utilizzando il modello **[!UICONTROL qualitative distribution]**, le modalità di visualizzazione delle tabelle e dei grafici sono selezionate per impostazione predefinita. Se desideri una sola modalità di visualizzazione, deseleziona la casella appropriata. Ciò significa che sarà disponibile solo la scheda della modalità di visualizzazione selezionata.
 
 ![](assets/s_ncs_advuser_report_display_01.png)
 
-Per modificare lo schema del rapporto, fai clic su **[!UICONTROL Select the link]** e selezionare un&#39;altra tabella dal database.
+Per modificare lo schema del report, fare clic su **[!UICONTROL Select the link]** e selezionare un&#39;altra tabella dal database.
 
 ![](assets/s_ncs_advuser_report_display_02.png)
 
@@ -90,8 +90,8 @@ Puoi personalizzare il layout dei dati direttamente nelle tabelle di analisi des
 * **[!UICONTROL Up]** / **[!UICONTROL Down]** per scambiare le variabili in righe.
 * **[!UICONTROL Move to the right]** / **[!UICONTROL Move to the left]** per scambiare le variabili nelle colonne.
 * **[!UICONTROL Turn]** per invertire gli assi delle variabili.
-* **[!UICONTROL Sort from A to Z]** per ordinare i valori delle variabili da basso a alto.
-* **[!UICONTROL Sort from Z to A]** per ordinare i valori delle variabili da alto a basso.
+* **[!UICONTROL Sort from A to Z]** per ordinare i valori della variabile da basso a alto.
+* **[!UICONTROL Sort from Z to A]** per ordinare i valori della variabile da alto a basso.
 
   ![](assets/s_ncs_advuser_report_wizard_016.png)
 
@@ -99,20 +99,20 @@ Per tornare alla visualizzazione iniziale, aggiornare la visualizzazione.
 
 ### Opzioni del grafico del rapporto di analisi {#analysis-report-chart-options}
 
-È possibile personalizzare la visualizzazione dei dati nel grafico. A questo scopo, fai clic su **[!UICONTROL Variables...]** disponibile durante la fase di selezione del tipo di grafico.
+È possibile personalizzare la visualizzazione dei dati nel grafico. A tale scopo, fare clic sul collegamento **[!UICONTROL Variables...]** disponibile durante la fase di selezione del tipo di grafico.
 
 ![](assets/s_ncs_advuser_report_wizard_3c.png)
 
 Sono disponibili le seguenti opzioni:
 
 * La sezione superiore della finestra consente di modificare l&#39;area di visualizzazione del grafico.
-* Per impostazione predefinita, le etichette vengono visualizzate nel grafico. Puoi nasconderli deselezionando la casella di controllo **[!UICONTROL Show values]** opzione.
-* Il **[!UICONTROL Accumulate values]** consente di aggiungere valori da una serie all&#39;altra.
+* Per impostazione predefinita, le etichette vengono visualizzate nel grafico. È possibile nasconderli deselezionando l&#39;opzione **[!UICONTROL Show values]**.
+* L&#39;opzione **[!UICONTROL Accumulate values]** consente di aggiungere valori da una serie all&#39;altra.
 * È possibile decidere se visualizzare o meno la legenda del grafico: per nasconderla, deselezionare l&#39;opzione appropriata. Per impostazione predefinita, la legenda viene visualizzata all&#39;esterno del grafico nell&#39;angolo in alto a destra.
 
-  La legenda può essere visualizzata anche sopra il grafico per risparmiare spazio. A questo scopo, seleziona l’opzione **[!UICONTROL Include in the chart]**
+  La legenda può essere visualizzata anche sopra il grafico per risparmiare spazio. A tale scopo, selezionare l&#39;opzione **[!UICONTROL Include in the chart]**
 
-  Selezionare l&#39;allineamento verticale e orizzontale nella **[!UICONTROL Caption position]** elenco a discesa.
+  Selezionare l&#39;allineamento verticale e orizzontale nell&#39;elenco a discesa **[!UICONTROL Caption position]**.
 
   ![](assets/s_ncs_advuser_report_wizard_3d.png)
 
@@ -128,9 +128,9 @@ Per ulteriori informazioni, consulta [questa pagina](../../reporting/using/actio
 
 Puoi creare rapporti di analisi descrittivi sui dati utilizzando rapporti esistenti già memorizzati in Adobe Campaign. Questa modalità è possibile quando le analisi sono state salvate o quando i rapporti sono stati creati e configurati per essere accessibili tramite la procedura guidata di analisi descrittiva.
 
-Per informazioni su come salvare le analisi descrittive, consulta [Salvataggio di un rapporto di analisi](#saving-an-analysis-report).
+Per informazioni su come salvare le analisi descrittive, vedere [Salvataggio di un report di analisi](#saving-an-analysis-report).
 
-Per creare rapporti di analisi descrittivi, la procedura guidata di analisi descrittiva deve essere eseguita tramite una transizione di flusso di lavoro o tramite **[!UICONTROL Tools > Descriptive analysis]** menu.
+Per creare report di analisi descrittivi, è necessario eseguire la procedura guidata di analisi descrittiva tramite una transizione del flusso di lavoro o tramite il menu **[!UICONTROL Tools > Descriptive analysis]**.
 
 1. Seleziona **[!UICONTROL Existing analyses and reports]** e fai clic su **[!UICONTROL Next]**.
 1. Questo ti consente di accedere all’elenco dei rapporti disponibili. Seleziona il rapporto da generare.

@@ -19,7 +19,7 @@ ht-degree: 26%
 
 Questa pagina mostra le principali differenze tra le distribuzioni in hosting (Managed Services) e quelle on-premise. Le specificità delle distribuzioni ibride dipendono dagli elementi ospitati da Adobe e ospitati nelle tue sedi.
 
-Vengono introdotti i diversi modelli di hosting [in questa sezione](../../installation/using/hosting-models.md).
+I diversi modelli di hosting sono introdotti [in questa sezione](../../installation/using/hosting-models.md).
 
 ## Disponibilità per modello di distribuzione {#capability-matrix}
 
@@ -41,11 +41,11 @@ Vengono introdotti i diversi modelli di hosting [in questa sezione](../../instal
 
 ## Federated Data Access{#fda}
 
-Adobe Campaign fornisce **Federated Data Access** (FDA) per elaborare le informazioni memorizzate in uno o più database esterni: puoi accedere ai dati esterni senza modificare la struttura dei dati di Adobe Campaign. [Ulteriori informazioni](../../installation/using/about-fda.md)
+Adobe Campaign fornisce l&#39;opzione **Federated Data Access** (FDA) per elaborare le informazioni archiviate in uno o più database esterni: è possibile accedere ai dati esterni senza modificare la struttura dei dati di Adobe Campaign. [Ulteriori informazioni](../../installation/using/about-fda.md)
 
 >[!CAUTION]
 >
->I sistemi di database esterni compatibili dipendono dal modello di hosting. Ulteriori informazioni in [Matrice di compatibilità di Campaign](../../rn/using/compatibility-matrix.md).
+>I sistemi di database esterni compatibili dipendono dal modello di hosting. Ulteriori informazioni nella [Matrice di compatibilità di Campaign](../../rn/using/compatibility-matrix.md).
 >
 
 **Vedi anche**

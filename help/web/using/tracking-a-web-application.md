@@ -37,7 +37,7 @@ I principali miglioramenti presenti in questa versione sono i seguenti:
    * **Percentuale non recapitate**: numero di persone che hanno visualizzato solo il primo passaggio
    * **Funnel di conversione**: tasso di perdita tra ciascun passaggio.
 
-  Inoltre, un **Settore** grafico tipo mostra la popolazione in base alla sua origine.
+  Inoltre, un grafico di tipo **Settore** mostra la popolazione in base alla sua origine.
 
 ## Identificazione dell’origine del traffico {#identifying-the-traffic-source}
 
@@ -60,7 +60,7 @@ Per identificare l’origine del traffico in un’applicazione web, Adobe Campai
 
 ## Applicazioni Web progettate con Digital Content Editor (DCE) {#web-applications-designed-with-digital-content-editor--dce-}
 
-Quando un’applicazione web viene creata utilizzando l’editor di contenuti HTML - **Editor di contenuti digitali (DCE)** - i tag di tracciamento vengono inseriti dal **[!UICONTROL Properties]** dell’editor. Per ulteriori informazioni su Digital Content Editor (DCE), consultare [questa sezione](about-campaign-html-editor.md).
+Quando un&#39;applicazione Web viene creata utilizzando l&#39;editor di contenuti HTML - **Digital Content Editor (DCE)** - i tag di tracciamento vengono inseriti dalla scheda **[!UICONTROL Properties]** dell&#39;editor. Per ulteriori informazioni su Digital Content Editor (DCE), consultare [questa sezione](about-campaign-html-editor.md).
 
 ![](assets/trackers_2.png)
 
@@ -68,6 +68,6 @@ Quando si utilizza l’interfaccia web, i tag di tracciamento devono essere inse
 
 ![](assets/trackers_3.png)
 
-Il **[!UICONTROL Display blocks]** consente di visualizzare il numero di tag di tracciamento definiti per la pagina.
+L&#39;icona **[!UICONTROL Display blocks]** ti consente di visualizzare il numero di tag di tracciamento definiti per la pagina.
 
 ![](assets/trackers_4.png)

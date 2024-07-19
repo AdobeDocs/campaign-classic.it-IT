@@ -32,7 +32,7 @@ A questo scopo, esegui i seguenti passaggi:
 
 1. Crea un nuovo schema di dati che integra i campi della tabella personalizzata che desideri utilizzare.
 
-   Per ulteriori informazioni, fare riferimento a [Riferimento schema (xtk:srcSchema)](../../configuration/using/about-schema-reference.md).
+   Per ulteriori informazioni, consultare [Riferimento schema (xtk:srcSchema)](../../configuration/using/about-schema-reference.md).
 
    Nel nostro esempio, creeremo uno schema cliente, una tabella molto semplice contenente i seguenti campi: ID, nome, cognome, indirizzo e-mail, numero di telefono cellulare. L’obiettivo è quello di poter inviare avvisi e-mail o SMS alle persone memorizzate in questa tabella.
 
@@ -53,7 +53,7 @@ A questo scopo, esegui i seguenti passaggi:
    </srcSchema>
    ```
 
-1. Dichiara lo schema come vista esterna utilizzando l’attributo =&quot;true&quot;. Fai riferimento a [Attributo view](../../configuration/using/schema-characteristics.md#the-view-attribute).
+1. Dichiara lo schema come vista esterna utilizzando l’attributo =&quot;true&quot;. Fare riferimento a [Attributo visualizzazione](../../configuration/using/schema-characteristics.md#the-view-attribute).
 
    ```
     <srcSchema desc="External recipient table" namespace="cus" view="true"....>
@@ -82,35 +82,35 @@ A questo scopo, esegui i seguenti passaggi:
       </element>
    ```
 
-1. Fai clic su **[!UICONTROL Administration > Campaign management > Target mappings]** nodo.
-1. Fai clic su **Nuovo** per aprire la procedura guidata di creazione della mappatura di destinazione.
-1. Inserisci il **Etichetta** e selezionare lo schema appena creato nel campo **Dimensione targeting** campo.
+1. Fare clic sul nodo **[!UICONTROL Administration > Campaign management > Target mappings]**.
+1. Fai clic sul pulsante **Nuovo** per aprire la procedura guidata di creazione della mappatura di destinazione.
+1. Immetti il campo **Label** e seleziona lo schema appena creato nel campo **Targeting dimension**.
 
    ![](assets/mapping_diffusion_wizard_1.png)
 
-1. In **Modifica moduli di indirizzi** , seleziona i campi dello schema che corrispondono ai vari indirizzi di consegna. Qui, siamo in grado di mappare il **@email** e **@mobile** campi.
+1. Nella finestra **Modifica moduli indirizzo**, seleziona i campi dello schema che corrispondono ai vari indirizzi di consegna. Qui è possibile mappare i campi **@email** e **@mobile**.
 
    ![](assets/mapping_diffusion_wizard_2.png)
 
-1. Nei seguenti casi **Storage** finestra, inserire **Suffisso degli schemi di estensione** per distinguere i nuovi schemi dagli schemi predefiniti forniti da Adobe Campaign.
+1. Nella seguente finestra di **Archiviazione**, immetti il campo **Suffisso degli schemi di estensione** per differenziare i nuovi schemi dagli schemi predefiniti forniti da Adobe Campaign.
 
-   Clic **[!UICONTROL Define new additional fields]** per selezionare la dimensione di destinazione nella consegna.
+   Fai clic su **[!UICONTROL Define new additional fields]** per selezionare la dimensione di destinazione nella consegna.
 
    Per impostazione predefinita, la gestione delle esclusioni viene memorizzata nella stessa tabella dei messaggi.
 
-   Controlla la **Genera uno schema di archiviazione per il tracciamento** se desideri configurare l’archiviazione per il tracciamento collegato alla mappatura di destinazione.
+   Se desideri configurare l&#39;archiviazione per il tracciamento collegato alla mappatura di destinazione, seleziona la casella **Genera uno schema di archiviazione per il tracciamento**.
 
    ![](assets/mapping_diffusion_wizard_3.png)
 
    >[!IMPORTANT]
    >
-   >Adobe Campaign non supporta più schemi di destinatari, noti come schemi di targeting, collegati agli stessi schemi broadlog e/o trackinglog. In caso contrario, potrebbero verificarsi anomalie nella riconciliazione dei dati in seguito. Per ulteriori informazioni, consulta [Raccomandazione e limitazioni](../../configuration/using/about-custom-recipient-table.md) pagina.
+   >Adobe Campaign non supporta più schemi di destinatari, noti come schemi di targeting, collegati agli stessi schemi broadlog e/o trackinglog. In caso contrario, potrebbero verificarsi anomalie nella riconciliazione dei dati in seguito. Per ulteriori informazioni, consulta la pagina [Consigli e limitazioni](../../configuration/using/about-custom-recipient-table.md).
 
-1. In **Estensioni** finestra, seleziona gli schemi facoltativi che desideri generare (l’elenco degli schemi disponibili dipende dai moduli installati sulla piattaforma Adobe Campaign).
+1. Nella finestra **Estensioni**, seleziona gli schemi facoltativi che desideri generare (l&#39;elenco degli schemi disponibili dipende dai moduli installati sulla piattaforma Adobe Campaign).
 
    ![](assets/mapping_diffusion_wizard_4.png)
 
-1. Fai clic su **Salva** per chiudere la procedura guidata.
+1. Fai clic sul pulsante **Salva** per chiudere la procedura guidata.
 
    La procedura guidata utilizza lo schema iniziale per creare tutti gli altri schemi necessari per il funzionamento della nuova mappatura di destinazione.
 

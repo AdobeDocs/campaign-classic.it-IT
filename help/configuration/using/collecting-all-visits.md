@@ -26,11 +26,11 @@ Un utente noto alla piattaforma è un destinatario che è già stato oggetto di 
 
 ## Configurazione del server {#server-configuration}
 
-I server vengono configurati sovraccaricando alcuni elementi della **serverConf.xml** file. Questi file vengono salvati in **conf** sottodirectory della directory di installazione di Adobe Campaign.
+I server vengono configurati sovraccaricando alcuni elementi del file **serverConf.xml**. Questi file vengono salvati nella sottodirectory **conf** della directory di installazione di Adobe Campaign.
 
 ### Server di reindirizzamento {#redirection-server}
 
-Per il server di reindirizzamento, impostare **trackWebVisitors** attributo del **reindirizzamento** elemento a **true**.
+Per il server di reindirizzamento, impostare l&#39;attributo **trackWebVisitors** dell&#39;elemento **redirection** su **true**.
 
 ```
 <redirection P3PCompactPolicy="CAO DSP COR CURa DEVa TAIa OUR BUS IND UNI COM NAV"
@@ -43,7 +43,7 @@ trackingPassword=""
 
 Per visualizzare le informazioni di tracciamento tramite la console client, è necessario:
 
-* Creare un **consegna fittizia** (la mappatura della consegna deve essere identica a quella dello schema di destinazione),
-* Inserisci il **nome interno** di questa consegna in **NmsTracking_WebTrackingDelivery** opzione.
+* Crea una **consegna fittizia** (la mappatura della consegna deve essere identica a quella dello schema di destinazione),
+* Immettere il **nome interno** della consegna nell&#39;opzione **NmsTracking_WebTrackingDelivery**.
 
 Tutte le informazioni di tracciamento del sito non direttamente successive a un clic in un’e-mail possono essere visualizzate nella consegna fittizia creata.

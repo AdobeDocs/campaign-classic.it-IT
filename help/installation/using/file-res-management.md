@@ -21,27 +21,27 @@ ht-degree: 1%
 
 ## Limita il formato del file di caricamento {#limiting-uploadable-files}
 
-Utilizza il **uploadWhiteList** per limitare i tipi di file disponibili per il caricamento sul server Adobe Campaign.
+Utilizza l&#39;attributo **uploadWhiteList** per limitare i tipi di file disponibili per il caricamento sul server Adobe Campaign.
 
-Questo attributo è disponibile all&#39;interno di **dataStore** elemento del **serverConf.xml** file. Tutti i parametri disponibili in **serverConf.xml** sono elencati in questo [sezione](../../installation/using/the-server-configuration-file.md).
+Questo attributo è disponibile nell&#39;elemento **dataStore** del file **serverConf.xml**. Tutti i parametri disponibili in **serverConf.xml** sono elencati in questa [sezione](../../installation/using/the-server-configuration-file.md).
 
 Il valore predefinito di questo attributo è **.+** e consente di caricare qualsiasi tipo di file.
 
 Per limitare i formati possibili, sostituisci il valore dell’attributo con un’espressione regolare Java valida. È possibile immettere più valori separandoli con una virgola.
 
-Ad esempio: **uploadWhiteList=&quot;.&#42;.png,.&#42;.jpg&quot;** consente di caricare i formati PNG e JPG sul server. Non verranno accettati altri formati.
+Ad esempio: **uploadWhiteList=&quot;.&#42;.png,.&#42;.jpg&quot;** ti consentirà di caricare i formati PNG e JPG sul server. Non verranno accettati altri formati.
 
 È inoltre possibile impedire il caricamento di file importanti configurando il server Web. [Ulteriori informazioni](web-server-configuration.md)
 
 >[!NOTE]
 >
->Il **uploadWhiteList** attribute limita i tipi di file disponibili per il caricamento sul server Adobe Campaign. Tuttavia, quando la modalità di pubblicazione è **Server di tracciamento** o **Altri server Adobe Campaign**, il **uploadWhitelist** deve essere aggiornato anche su tali server.
+>L&#39;attributo **uploadWhiteList** limita i tipi di file disponibili per il caricamento sul server Adobe Campaign. Tuttavia, quando la modalità di pubblicazione è **Server di tracciamento** o **Altri server Adobe Campaign**, anche l&#39;attributo **uploadWhitelist** deve essere aggiornato su tali server.
 
 ## Configurazione della connessione proxy {#proxy-connection-configuration}
 
-Puoi collegare il server Campaign a un sistema esterno tramite un proxy, utilizzando un’ **Trasferimento file** attività del flusso di lavoro, ad esempio. A questo scopo, devi configurare il **proxyConfig** sezione del **serverConf.xml** mediante un comando specifico. Tutti i parametri disponibili in **serverConf.xml** sono elencati in questo [sezione](../../installation/using/the-server-configuration-file.md).
+Puoi connettere il server Campaign a un sistema esterno tramite un proxy, utilizzando ad esempio un&#39;attività del flusso di lavoro **Trasferimento file**. Per ottenere questo risultato, è necessario configurare la sezione **proxyConfig** del file **serverConf.xml** tramite un comando specifico. Tutti i parametri disponibili in **serverConf.xml** sono elencati in questa [sezione](../../installation/using/the-server-configuration-file.md).
 
-Sono possibili le seguenti connessioni proxy: HTTP, HTTPS, FTP, SFTP. A partire dalla versione 20.2 di Campaign, i parametri del protocollo HTTP e HTTPS sono **non più disponibile**. Tali parametri vengono ancora menzionati di seguito in quanto rimangono disponibili nelle build precedenti, incluso 9032.
+Sono possibili le seguenti connessioni proxy: HTTP, HTTPS, FTP, SFTP. A partire dalla versione 20.2 di Campaign, i parametri del protocollo HTTP e HTTPS sono **non più disponibili**. Tali parametri vengono ancora menzionati di seguito in quanto rimangono disponibili nelle build precedenti, incluso 9032.
 
 >[!CAUTION]
 >
@@ -112,7 +112,7 @@ Se devi utilizzare il connettore iOS HTTP/2 tramite un proxy, sono supportate le
 * HTTP senza autenticazione
 * autenticazione HTTP di base
 
-Per attivare la modalità proxy, è necessario apportare la seguente modifica nel `serverconf.xml` file:
+Per attivare la modalità proxy, è necessario apportare la seguente modifica nel file `serverconf.xml`:
 
 ```
 <nmac useHTTPProxy="true">
@@ -124,11 +124,11 @@ Per ulteriori informazioni su questo connettore iOS HTTP/2, consulta questa [pag
 
 Per essere disponibili al pubblico, le immagini utilizzate nelle e-mail e nelle risorse pubbliche collegate alle campagne devono essere presenti su un server accessibile dall’esterno. Possono quindi essere disponibili per destinatari o operatori esterni. [Ulteriori informazioni](../../installation/using/deploying-an-instance.md#managing-public-resources).
 
-Le risorse pubbliche sono memorizzate in **/var/res/instance** directory della directory di installazione di Adobe Campaign.
+Le risorse pubbliche sono archiviate nella directory **/var/res/instance** della directory di installazione di Adobe Campaign.
 
-L’URL corrispondente è: **http://server/res/instance** dove **istanza** è il nome dell’istanza di tracciamento.
+L&#39;URL corrispondente è: **http://server/res/instance** dove **istanza** è il nome dell&#39;istanza di rilevamento.
 
-È possibile specificare un&#39;altra directory aggiungendo un nodo al **conf-`<instance>`.xml** per configurare l&#39;archiviazione sul server. Ciò significa aggiungere le seguenti righe:
+È possibile specificare un&#39;altra directory aggiungendo un nodo al file **conf-`<instance>`.xml** per configurare l&#39;archiviazione nel server. Ciò significa aggiungere le seguenti righe:
 
 ```
 <serverconf>

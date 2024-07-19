@@ -15,7 +15,7 @@ ht-degree: 3%
 
 
 
-I flussi di lavoro descritti di seguito vengono installati con **Motore di offerta (interazione)** componente aggiuntivo per impostazione predefinita.
+I flussi di lavoro descritti di seguito vengono installati con il componente aggiuntivo **Offer Engine (Interaction)** per impostazione predefinita.
 
 Per ulteriori informazioni, a seconda della versione di Campaign in uso, consulta le sezioni seguenti:
 
@@ -34,12 +34,12 @@ Per ulteriori informazioni, a seconda della versione di Campaign in uso, consult
   <tr> 
    <td> <span class="uicontrol">Calcolo aggregato completo (cubo propositionrcp)</span> <br /> </td> 
    <td> <span class="uicontrol">agg_nmspropositionrcp_full</span> <br /> </td> 
-   <td> Questo flusso di lavoro aggiorna <strong>Completo</strong> aggregato per <strong>Proposta di offerta</strong> cubo. Per impostazione predefinita viene attivato ogni giorno alle 6. Questo aggregato acquisisce le seguenti dimensioni: Canale, Consegna, Offerta di marketing e Data.<br /> Il <strong>Proposta di offerta</strong> Il cubo viene quindi utilizzato per generare rapporti basati sulle offerte. Ulteriori informazioni sui cubi sono disponibili in <a href="../../reporting/using/ac-cubes.md">questa sezione</a>.<br /> </td> 
+   <td> Questo flusso di lavoro aggiorna l'aggregazione <strong>Full</strong> per il cubo <strong>Proposta di offerte</strong>. Per impostazione predefinita viene attivato ogni giorno alle 6. Questo aggregato acquisisce le seguenti dimensioni: Canale, Consegna, Offerta di marketing e Data.<br /> Il cubo <strong>Proposta di offerte</strong> viene quindi utilizzato per generare rapporti basati sulle offerte. Ulteriori informazioni sui cubi sono disponibili in <a href="../../reporting/using/ac-cubes.md">questa sezione</a>.<br /> </td> 
   </tr> 
    <tr> 
-   <td> <span class="uicontrol">Calcolo dell'aggregazione completa MessageCenter</span> <br /> </td> 
+   <td> <span class="uicontrol">Calcolo aggregato completo MessageCenter</span> <br /> </td> 
    <td> <span class="uicontrol">agg_messageCenter_full</span> <br /> </td> 
-   <td> Questo flusso di lavoro aggiorna <strong>Completo</strong> aggregato per <strong>Centro messaggi</strong> cubo. Viene attivato ogni giorno alle 3 per impostazione predefinita. Questo aggregato acquisisce le seguenti dimensioni: Canale, Data, Stato e Tipo evento.<br /> Il <strong>Centro messaggi</strong> Il cubo viene quindi utilizzato per generare rapporti basati sugli eventi. Ulteriori informazioni sui cubi sono disponibili in <a href="../../reporting/using/ac-cubes.md">questa sezione</a>.<br /> </td> 
+   <td> Questo flusso di lavoro aggiorna l'aggregazione <strong>Full</strong> per il cubo <strong>Centro messaggi</strong>. Viene attivato ogni giorno alle 3 per impostazione predefinita. Questo aggregato acquisisce le seguenti dimensioni: Canale, Data, Stato e Tipo evento.<br /> Il cubo <strong>Centro messaggi</strong> viene quindi utilizzato per generare report basati sugli eventi. Ulteriori informazioni sui cubi sono disponibili in <a href="../../reporting/using/ac-cubes.md">questa sezione</a>.<br /> </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 

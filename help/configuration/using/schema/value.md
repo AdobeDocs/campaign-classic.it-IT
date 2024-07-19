@@ -46,13 +46,13 @@ Questo elemento ti consente di definire i valori memorizzati in un’enumerazion
 
 ## Descrizione attributo {#attribute-description-16}
 
-* **applyIf (stringa)**: questo attributo ti consente di rendere facoltativo un valore di enumerazione. Riceve un’espressione XTK.
+* **applicabileIf (stringa)**: questo attributo consente di rendere facoltativo un valore di enumerazione. Riceve un’espressione XTK.
 * **desc (stringa)**: descrizione del valore di enumerazione.
 * **enabledIf (stringa)**: condizione per attivare il valore di enumerazione.
-* **img (stringa)**: immagine collegata all’enumerazione nel modulo &quot;namespace:image_name&quot;. L&#39;immagine deve essere importata nel server applicazioni.
+* **img (stringa)**: immagine collegata all&#39;enumerazione nel modulo &quot;namespace:image_name&quot;. L&#39;immagine deve essere importata nel server applicazioni.
 * **etichetta (stringa)**: etichetta del valore di enumerazione.
 * **nome (stringa)**: nome interno del valore di enumerazione.
-* **valore (stringa)**: valore dell’enumerazione. Il tipo di valore è definito in base al tipo di enumerazione. Se l’enumerazione è di tipo stringa di caratteri, può contenere solo valori di tipo stringa di caratteri.
+* **valore (stringa)**: valore dell&#39;enumerazione. Il tipo di valore è definito in base al tipo di enumerazione. Se l’enumerazione è di tipo stringa di caratteri, può contenere solo valori di tipo stringa di caratteri.
 
 ## Esempi {#examples-13}
 

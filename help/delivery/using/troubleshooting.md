@@ -27,4 +27,4 @@ Connettore HTTP/2: è necessario consentire la comunicazione da e verso i seguen
 
 >[!NOTE]
 >
->Per ulteriori informazioni sui due connettori, fare riferimento a [Configurazione dell’app mobile in Adobe Campaign](configuring-the-mobile-application.md).
+>Per ulteriori informazioni sui due connettori, fare riferimento a [Configurazione dell&#39;app mobile in Adobe Campaign](configuring-the-mobile-application.md).

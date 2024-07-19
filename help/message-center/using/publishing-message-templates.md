@@ -20,9 +20,9 @@ ht-degree: 2%
 
 ## Pubblicazione di modelli {#template-publication}
 
-Quando [modello di messaggio](../../message-center/using/creating-the-message-template.md) creato sull&#39;istanza di controllo è completo e una volta [testato](../../message-center/using/testing-message-templates.md) puoi pubblicarlo. Questo processo lo pubblicherà anche su tutte le istanze di esecuzione.
+Quando il [modello di messaggio](../../message-center/using/creating-the-message-template.md) creato nell&#39;istanza di controllo è completo e dopo averlo [testato](../../message-center/using/testing-message-templates.md), puoi pubblicarlo. Questo processo lo pubblicherà anche su tutte le istanze di esecuzione.
 
-La pubblicazione consente di creare automaticamente **due modelli di messaggio** sulle istanze di esecuzione, che ti consentiranno di inviare messaggi collegati a **eventi in tempo reale** e **eventi batch**.
+La pubblicazione consente di creare automaticamente **due modelli di messaggio** nelle istanze di esecuzione, che ti consentiranno di inviare messaggi collegati a **eventi in tempo reale** e **eventi batch**.
 
 >[!NOTE]
 >
@@ -32,17 +32,17 @@ La pubblicazione consente di creare automaticamente **due modelli di messaggio**
 >
 >Ogni volta che apporti modifiche a un modello, assicurati di pubblicarle nuovamente affinché risultino efficaci durante la consegna dei messaggi transazionali.
 
-1. Nell’istanza di controllo, vai a **[!UICONTROL Message Center > Transactional message templates]** cartella della struttura.
+1. Nell&#39;istanza di controllo, passare alla cartella **[!UICONTROL Message Center > Transactional message templates]** della struttura.
 1. Seleziona il modello da pubblicare sulle istanze di esecuzione.
 1. Fai clic su **[!UICONTROL Publish]**.
 
    ![](assets/messagecenter_publish_model_008.png)
 
-Una volta completata la pubblicazione, entrambi i modelli di messaggio da applicare a eventi di tipo batch e in tempo reale vengono creati nella struttura dell’istanza di produzione in **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]** cartella.
+Una volta completata la pubblicazione, entrambi i modelli di messaggio da applicare agli eventi batch e di tipo in tempo reale vengono creati nella struttura dell&#39;istanza di produzione nella cartella **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]**.
 
 ![](assets/messagecenter_deployed_model_001.png)
 
-Dopo la pubblicazione di un modello, se l’evento corrispondente viene attivato, l’istanza di esecuzione riceverà l’evento, lo collegherà al modello transazionale e invierà il messaggio transazionale corrispondente a ciascun destinatario. Per ulteriori informazioni, consulta [Elaborazione di eventi](../../message-center/using/about-event-processing.md).
+Dopo la pubblicazione di un modello, se l’evento corrispondente viene attivato, l’istanza di esecuzione riceverà l’evento, lo collegherà al modello transazionale e invierà il messaggio transazionale corrispondente a ciascun destinatario. Per ulteriori informazioni, consulta [Elaborazione degli eventi](../../message-center/using/about-event-processing.md).
 
 >[!NOTE]
 >
@@ -52,13 +52,13 @@ Dopo la pubblicazione di un modello, se l’evento corrispondente viene attivato
 
 ## Annullamento della pubblicazione di modelli {#template-unpublication}
 
-Una volta pubblicato un modello di messaggio nelle istanze di esecuzione, è possibile annullarne la pubblicazione. Per ulteriori informazioni sul processo di pubblicazione dei modelli, consulta [questa sezione](#template-publication).
+Una volta pubblicato un modello di messaggio nelle istanze di esecuzione, è possibile annullarne la pubblicazione. Per ulteriori informazioni sul processo di pubblicazione del modello, vedere [questa sezione](#template-publication).
 
 * In effetti, un modello pubblicato può ancora essere chiamato se viene attivato l’evento corrispondente: se non utilizzi più un modello di messaggio, si consiglia di annullarne la pubblicazione. In questo modo si evita di inviare per errore un messaggio transazionale indesiderato.
 
   Ad esempio, hai pubblicato un modello di messaggio da utilizzare solo per le campagne natalizie. Puoi annullarne la pubblicazione al termine del periodo natalizio e pubblicarla nuovamente l’anno prossimo.
 
-* Inoltre, non puoi eliminare un modello di messaggio transazionale con **[!UICONTROL Published]** stato. Devi prima annullare la pubblicazione.
+* Inoltre, non è possibile eliminare un modello di messaggio transazionale con stato **[!UICONTROL Published]**. Devi prima annullare la pubblicazione.
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ Una volta pubblicato un modello di messaggio nelle istanze di esecuzione, è pos
 
 Per annullare la pubblicazione di un modello di messaggio sulle transazioni, effettua le seguenti operazioni.
 
-1. Nell’istanza di controllo, vai a **[!UICONTROL Message Center > Transactional message templates]** cartella della struttura.
+1. Nell&#39;istanza di controllo, passare alla cartella **[!UICONTROL Message Center > Transactional message templates]** della struttura.
 1. Seleziona il modello di cui vuoi annullare la pubblicazione.
 1. Fai clic su **[!UICONTROL Unpublish]**.
 
@@ -82,8 +82,8 @@ Una volta completata la pubblicazione:
 
 * Entrambi i modelli di messaggio (applicati a eventi di tipo batch e in tempo reale) vengono eliminati da ogni istanza di esecuzione.
 
-  Non vengono più visualizzati nel **[!UICONTROL Administration > Production > Message Center Execution > Default > Transactional message templates]** cartella (vedere [questa sezione](#template-publication)).
+  Non vengono più visualizzati nella cartella **[!UICONTROL Administration > Production > Message Center Execution > Default > Transactional message templates]** (vedere [questa sezione](#template-publication)).
 
 * Dopo aver annullato la pubblicazione di un modello, è possibile eliminarlo dall&#39;istanza di controllo.
 
-  A tale scopo, selezionalo dall’elenco e fai clic sul pulsante **[!UICONTROL Delete]** in alto a destra.
+  A tale scopo, selezionarlo dall&#39;elenco e fare clic sul pulsante **[!UICONTROL Delete]** in alto a destra dello schermo.

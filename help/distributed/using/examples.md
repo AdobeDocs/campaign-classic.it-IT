@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## Creare una campagna locale (tramite modulo) {#creating-a-local-campaign--by-form-}
 
-Il **Per modulo** l’interfaccia web di tipo prevede l’utilizzo di un **applicazione web**. A seconda della configurazione, questa applicazione web può contenere qualsiasi tipo di elementi personalizzati definiti. Ad esempio, puoi suggerire collegamenti per valutare il target, il budget, il contenuto e così via. tramite API dedicate.
+L&#39;interfaccia Web di tipo **Per modulo** prevede l&#39;utilizzo di una **applicazione Web**. A seconda della configurazione, questa applicazione web può contenere qualsiasi tipo di elementi personalizzati definiti. Ad esempio, puoi suggerire collegamenti per valutare il target, il budget, il contenuto e così via. tramite API dedicate.
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ Il **Per modulo** l’interfaccia web di tipo prevede l’utilizzo di un **appli
 >
 >L’applicazione web utilizzata in questo esempio non è un’app web pronta all’uso con Adobe Campaign. Per utilizzare un modulo in una campagna, devi creare l’applicazione web dedicata.
 
-Durante la creazione del modello della campagna, fai clic su **[!UICONTROL Zoom]** all&#39;interno del **[!UICONTROL Web interface]** opzione del **[!UICONTROL Advanced campaign settings...]** collegamento per accedere ai dettagli dell’applicazione web.
+Durante la creazione del modello della campagna, fare clic sull&#39;icona **[!UICONTROL Zoom]** nell&#39;opzione **[!UICONTROL Web interface]** del collegamento **[!UICONTROL Advanced campaign settings...]** per accedere ai dettagli dell&#39;applicazione Web.
 
 ![](assets/mkg_dist_local_op_form1.png)
 
@@ -33,11 +33,11 @@ Durante la creazione del modello della campagna, fai clic su **[!UICONTROL Zoom]
 >
 >I parametri dell’applicazione web sono disponibili solo nel modello della campagna.
 
-In **[!UICONTROL Edit]** , seleziona la scheda **Ordine delle campagne** e aprirlo per accedere al relativo contenuto.
+Nella scheda **[!UICONTROL Edit]**, seleziona l&#39;attività **Ordine campagna** e aprila per accedere al relativo contenuto.
 
 ![](assets/mkg_dist_web_app1.png)
 
-In questo esempio, la proprietà **Ordine delle campagne** l&#39;attività include:
+In questo esempio, l&#39;attività **Ordine campagna** include:
 
 * campi che l’ente locale deve inserire durante l’ordine,
 
@@ -87,16 +87,16 @@ La seconda parte di questo esempio spiega come creare la campagna.
 
 I passaggi sono i seguenti:
 
-**Per l’entità locale**
+**Per l&#39;entità locale**
 
 1. Utilizza la notifica di creazione della campagna per accedere all’elenco dei contatti selezionati dall’entità centrale.
 1. Seleziona i contatti e approva la partecipazione.
 
 **Per l&#39;entità centrale:**
 
-1. Creare un **[!UICONTROL Data distribution]** attività.
+1. Crea un&#39;attività **[!UICONTROL Data distribution]**.
 1. Crea la campagna collaborativa.
-1. Pubblica la campagna.
+1. Publish la campagna.
 
 ### Lato entità locale {#local-entity-side}
 
@@ -104,7 +104,7 @@ I passaggi sono i seguenti:
 
    ![](assets/mkg_dist_use_case_target_valid8.png)
 
-1. Facendo clic su **[!UICONTROL Access your contact list and approve targeting]** , l’entità locale ha accesso (tramite browser web) all’elenco dei client selezionati per la campagna.
+1. Facendo clic sul collegamento **[!UICONTROL Access your contact list and approve targeting]**, l&#39;entità locale ha accesso (tramite browser web) all&#39;elenco dei client selezionati per la campagna.
 
    ![](assets/mkg_dist_use_case_target_valid9.png)
 
@@ -118,23 +118,23 @@ Una volta approvati i controlli, la campagna può iniziare automaticamente.
 
 #### Creare un’attività di distribuzione dati {#creating-a-data-distribution-activity}
 
-1. Per impostare una campagna collaborativa (tramite approvazione target) devi prima creare una **[!UICONTROL Data distribution activity]**. Fai clic su **[!UICONTROL New]** icona in **[!UICONTROL Resources > Campaign management > Data distribution]** nodo.
+1. Per impostare una campagna collaborativa (per approvazione target) è necessario innanzitutto creare **[!UICONTROL Data distribution activity]**. Fare clic sull&#39;icona **[!UICONTROL New]** nel nodo **[!UICONTROL Resources > Campaign management > Data distribution]**.
 
    ![](assets/mkg_dist_use_case_target_valid3.png)
 
-1. In **[!UICONTROL General]** , è necessario specificare:
+1. Nella scheda **[!UICONTROL General]** è necessario specificare:
 
-   * il **[!UICONTROL Targeting dimension]**. Qui le **Distribuzione dei dati** viene eseguita il **Destinatari**.
-   * il **[!UICONTROL Distribution type]**. Puoi scegliere un **Dimensioni fisse** o un **Dimensioni in percentuale**.
-   * il **[!UICONTROL Assignment type]**. Seleziona la **Entità locale** opzione.
-   * il **[!UICONTROL Distribution type]**. Ecco, è il **[!UICONTROL Origin (@origin)]** campo presente nella tabella Destinatario che consente di identificare la relazione tra il contatto e l’entità locale.
-   * Il **[!UICONTROL Approval storage]** campo. Seleziona la **Approvazione locale del destinatario** opzione.
+   * **[!UICONTROL Targeting dimension]**. Qui la **distribuzione dei dati** viene eseguita sui **destinatari**.
+   * **[!UICONTROL Distribution type]**. Puoi scegliere una **dimensione fissa** o una **dimensione in percentuale**.
+   * **[!UICONTROL Assignment type]**. Selezionare l&#39;opzione **Entità locale**.
+   * **[!UICONTROL Distribution type]**. In questo caso, è il campo **[!UICONTROL Origin (@origin)]** presente nella tabella Destinatario che consente di identificare la relazione tra il contatto e l&#39;entità locale.
+   * Il campo **[!UICONTROL Approval storage]**. Selezionare l&#39;opzione **Approvazione locale del destinatario**.
 
-1. In **[!UICONTROL Breakdown]** , specificare:
+1. Nella scheda **[!UICONTROL Breakdown]**, specificare:
 
-   * il **[!UICONTROL Distribution field value]**, che corrisponde alle entità locali coinvolte nella prossima campagna.
-   * l’entità locale **[!UICONTROL label]**.
-   * il **[!UICONTROL Size]** (fisso o in percentuale). Il **0 valore predefinito** comporta la selezione di tutti i destinatari collegati all’entità locale.
+   * **[!UICONTROL Distribution field value]**, che corrisponde alle entità locali coinvolte nella prossima campagna.
+   * entità locale **[!UICONTROL label]**.
+   * **[!UICONTROL Size]** (fisso o in percentuale). Il valore predefinito **0** comporta la selezione di tutti i destinatari collegati all&#39;entità locale.
 
    ![](assets/mkg_dist_use_case_target_valid4.png)
 
@@ -142,12 +142,12 @@ Una volta approvati i controlli, la campagna può iniziare automaticamente.
 
 #### Creare una campagna collaborativa {#creating-a-collaborative-campaign}
 
-1. Dalla sezione **[!UICONTROL Campaign management > Campaign]** , crea un nuovo **[!UICONTROL collaborative campaign (by target approval)]**.
-1. In **[!UICONTROL Targeting and workflows]** , crea un flusso di lavoro per la campagna. Questo deve contenere **Dividi** attività in cui **[!UICONTROL Record count limitation]** è definito da **[!UICONTROL Data distribution]** attività.
+1. Creare un nuovo **[!UICONTROL collaborative campaign (by target approval)]** dal nodo **[!UICONTROL Campaign management > Campaign]**.
+1. Nella scheda **[!UICONTROL Targeting and workflows]**, crea un flusso di lavoro per la campagna. Deve contenere un&#39;attività **Split** in cui **[!UICONTROL Record count limitation]** è definito dall&#39;attività **[!UICONTROL Data distribution]**.
 
    ![](assets/mkg_dist_use_case_target_valid5.png)
 
-1. Aggiungi un **[!UICONTROL Local approval]** azione in cui è possibile specificare:
+1. Aggiungi un&#39;azione **[!UICONTROL Local approval]** in cui puoi specificare:
 
    * il contenuto del messaggio che sarà inviato alle entità locali nella notifica,
    * il promemoria dell’approvazione,
@@ -157,18 +157,18 @@ Una volta approvati i controlli, la campagna può iniziare automaticamente.
 
 1. Salvare il record.
 
-#### Pubblicare la campagna {#publishing-the-campaign}
+#### Publish la campagna {#publishing-the-campaign}
 
-Ora puoi aggiungere una **pacchetto della campagna** dal **[!UICONTROL Campaigns]** scheda.
+È ora possibile aggiungere un **pacchetto campagna** dalla scheda **[!UICONTROL Campaigns]**.
 
-1. Scegli il tuo **[!UICONTROL Reference campaign]**. In **[!UICONTROL Edit]** della confezione, è possibile selezionare la scheda **[!UICONTROL Approval mode]** da utilizzare per la campagna:
+1. Scegli **[!UICONTROL Reference campaign]**. Nella scheda **[!UICONTROL Edit]** del pacchetto, puoi selezionare **[!UICONTROL Approval mode]** da utilizzare per la campagna:
 
-   * in **Manuale** in modalità, le entità locali partecipano alla campagna se accettano l’invito dall’entità centrale. Se lo desiderano, possono eliminare i contatti preselezionati ed è necessaria l’approvazione del manager per confermare la loro partecipazione alla campagna.
-   * in **Automatico** , le entità locali devono partecipare alla campagna, a meno che non si annullino la registrazione. Possono eliminare i contatti senza bisogno di approvazione.
+   * in modalità **Manuale**, le entità locali partecipano alla campagna se accettano l&#39;invito dall&#39;entità centrale. Se lo desiderano, possono eliminare i contatti preselezionati ed è necessaria l’approvazione del manager per confermare la loro partecipazione alla campagna.
+   * in modalità **Automatico**, le entità locali devono partecipare alla campagna, a meno che non si annullino la registrazione. Possono eliminare i contatti senza bisogno di approvazione.
 
    ![](assets/mkg_dist_use_case_target_valid.png)
 
-1. In **[!UICONTROL Description]** , è possibile aggiungere una descrizione della campagna ed eventuali documenti da inviare alle entità locali.
+1. Nella scheda **[!UICONTROL Description]** puoi aggiungere una descrizione della campagna ed eventuali documenti da inviare alle entità locali.
 
    ![](assets/mkg_dist_use_case_target_valid1.png)
 
@@ -190,7 +190,7 @@ La seconda parte di questo esempio spiega come creare la campagna.
 
 I passaggi sono i seguenti:
 
-**Per l’entità locale**
+**Per l&#39;entità locale**
 
 1. Utilizza la notifica di creazione della campagna per accedere al modulo online.
 1. Personalizza la campagna (target, contenuto, volume di consegna).
@@ -201,7 +201,7 @@ I passaggi sono i seguenti:
 **Per l&#39;entità centrale:**
 
 1. Crea la campagna collaborativa.
-1. Configurare **[!UICONTROL Advanced campaign settings...]** come per una campagna locale.
+1. Configura **[!UICONTROL Advanced campaign settings...]** come faresti per una campagna locale.
 1. Configura il flusso di lavoro della campagna e la consegna come faresti per una campagna locale.
 1. Aggiornare il modulo web.
 1. Crea il pacchetto della campagna e pubblicalo.
@@ -226,24 +226,24 @@ I passaggi sono i seguenti:
 
 ### Lato entità centrale {#central-entity-side-1}
 
-1. Per implementare una campagna collaborativa (per modulo), devi creare una campagna utilizzando **Campagna collaborativa (per modulo)** modello.
+1. Per implementare una campagna collaborativa (per modulo), è necessario creare una campagna utilizzando il modello **Campagna collaborativa (per modulo)**.
 
    ![](assets/mkg_dist_use_case_form_1.png)
 
-1. Nel di **[!UICONTROL Edit]** , fare clic sulla scheda **[!UICONTROL Advanced campaign settings...]** per configurarlo come campagna locale. Fai riferimento a [Creazione di una campagna locale (per modulo)](#creating-a-local-campaign--by-form-).
+1. Nella scheda **[!UICONTROL Edit]** della campagna, fai clic sul collegamento **[!UICONTROL Advanced campaign settings...]** per configurarla come campagna locale. Consulta [Creazione di una campagna locale (per modulo)](#creating-a-local-campaign--by-form-).
 
    ![](assets/mkg_dist_use_case_form_2.png)
 
-1. Configura il flusso di lavoro della campagna e il modulo web. Fai riferimento a [Creazione di una campagna locale (per modulo)](#creating-a-local-campaign--by-form-).
+1. Configura il flusso di lavoro della campagna e il modulo web. Consulta [Creazione di una campagna locale (per modulo)](#creating-a-local-campaign--by-form-).
 1. Crea il pacchetto della campagna specificando la pianificazione di esecuzione e le entità locali coinvolte.
 
    ![](assets/mkg_dist_use_case_form_3.png)
 
-1. Completa la configurazione del pacchetto selezionando la modalità di approvazione in **[!UICONTROL Edit]** scheda.
+1. Completare la configurazione del pacchetto selezionando la modalità di approvazione nella scheda **[!UICONTROL Edit]**.
 
    ![](assets/mkg_dist_use_case_form_4.png)
 
-1. Dalla sezione **[!UICONTROL Description]** , è possibile immettere una descrizione del pacchetto della campagna, un messaggio di notifica da inviare alle entità locali quando il pacchetto viene pubblicato e allegare eventuali documenti informativi al pacchetto della campagna.
+1. Dalla scheda **[!UICONTROL Description]** è possibile immettere una descrizione del pacchetto della campagna, un messaggio di notifica da inviare alle entità locali quando il pacchetto viene pubblicato e allegare qualsiasi documento informativo al pacchetto della campagna.
 
    ![](assets/mkg_dist_use_case_form_5.png)
 

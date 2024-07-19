@@ -15,10 +15,10 @@ ht-degree: 14%
 
 # Test AB: creare i modelli di consegna {#step-3--creating-two-delivery-templates}
 
-Ora vogliamo creare due modelli di consegna. A ciascun modello verrà fatto riferimento in un **[!UICONTROL Email delivery]** attività collegata al **[!UICONTROL Split]** attività. Per ulteriori informazioni al riguardo, consulta [questa sezione](about-templates.md).
+Ora vogliamo creare due modelli di consegna. A ogni modello verrà fatto riferimento in un&#39;attività **[!UICONTROL Email delivery]** collegata all&#39;attività **[!UICONTROL Split]**. Per ulteriori informazioni al riguardo, consulta [questa sezione](about-templates.md).
 
-1. Accedi a **[!UICONTROL Resources > Delivery template]** cartella.
-1. Duplica il **[!UICONTROL Email]** modello di consegna.
+1. Selezionare la cartella **[!UICONTROL Resources > Delivery template]**.
+1. Duplica il modello di consegna **[!UICONTROL Email]**.
 
    ![](assets/use_case_abtesting_deliverymodel_001.png)
 

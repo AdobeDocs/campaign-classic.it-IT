@@ -57,15 +57,15 @@ Per ogni ambiente e account esterno viene creato un flusso di lavoro per la sinc
 
 ## Configurazione pacchetti {#packages-configuration}
 
-Qualsiasi estensione dello schema collegata direttamente a **Interazione** (offerte, proposte, destinatari, ecc.) deve essere distribuito sulle istanze di esecuzione.
+Qualsiasi estensione dello schema collegata direttamente a **Interaction** (offerte, proposte, destinatari, ecc.) deve essere distribuito sulle istanze di esecuzione.
 
 Il pacchetto di interazione deve essere installato su tutte le istanze (controllo ed esecuzione). Sono disponibili due pacchetti aggiuntivi: un pacchetto da installare sulle istanze di controllo e un altro da installare su ogni istanza di esecuzione.
 
 >[!NOTE]
 >
->Durante l’installazione del pacchetto, il **long** campi tipo di **nms:proposta** come l’ID proposta, diventa **int64** digita i campi. Questo tipo di dati è descritto nella sezione [questa sezione](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
+>Durante l&#39;installazione del pacchetto, i campi di tipo **long** della tabella **nms:proposition**, ad esempio l&#39;ID della proposta, diventano campi di tipo **int64**. Questo tipo di dati è descritto in [questa sezione](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
 
-La durata di conservazione dei dati deve essere configurata su ogni istanza (tramite **[!UICONTROL Data purge]** nella procedura guidata di distribuzione). Nelle istanze di esecuzione, questo periodo deve corrispondere alla profondità storica necessaria per le regole di tipologia (periodo scorrevole) e le regole di idoneità da calcolare.
+La durata di conservazione dei dati deve essere configurata in ogni istanza (tramite la finestra **[!UICONTROL Data purge]** nella procedura guidata di distribuzione). Nelle istanze di esecuzione, questo periodo deve corrispondere alla profondità storica necessaria per le regole di tipologia (periodo scorrevole) e le regole di idoneità da calcolare.
 
 Sulle istanze di controllo:
 
@@ -77,8 +77,8 @@ Sulle istanze di controllo:
    * Seleziona **[!UICONTROL Execution instance]**.
    * Seleziona l’opzione **[!UICONTROL Enabled]**.
    * Completa i parametri di connessione per l’istanza di esecuzione.
-   * Ogni istanza di esecuzione deve essere collegata a un ID. Questo ID viene assegnato quando fai clic su **[!UICONTROL Initialize connection]** pulsante.
-   * Controllare il tipo di applicazione utilizzata: **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]**, o entrambi.
+   * Ogni istanza di esecuzione deve essere collegata a un ID. Questo ID viene assegnato quando si fa clic sul pulsante **[!UICONTROL Initialize connection]**.
+   * Controllare il tipo di applicazione utilizzato: **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]** o entrambi.
    * Immettere l&#39;account FDA utilizzato. Un operatore deve essere creato nelle istanze di esecuzione e deve disporre dei seguenti diritti di lettura e scrittura sul database dell’istanza in questione:
 
      ```
@@ -101,7 +101,7 @@ Sulle istanze di controllo:
      >
      >Se riscontri un errore, puoi consultare i flussi di lavoro di sincronizzazione e le notifiche delle offerte. Questi si trovano nei flussi di lavoro tecnici dell’applicazione.
 
-Se, per motivi di ottimizzazione, nelle istanze di esecuzione viene duplicata solo una parte del database di marketing, puoi specificare uno schema con restrizioni collegato all’ambiente per consentire agli utenti di utilizzare solo i dati disponibili nelle istanze di esecuzione. Puoi creare un’offerta utilizzando dati non disponibili nelle istanze di esecuzione. A questo scopo, devi disattivare la regola sugli altri canali limitandola sul canale in uscita (**[!UICONTROL Taken into account if]** ).
+Se, per motivi di ottimizzazione, nelle istanze di esecuzione viene duplicata solo una parte del database di marketing, puoi specificare uno schema con restrizioni collegato all’ambiente per consentire agli utenti di utilizzare solo i dati disponibili nelle istanze di esecuzione. Puoi creare un’offerta utilizzando dati non disponibili nelle istanze di esecuzione. A tale scopo, è necessario disattivare la regola sugli altri canali limitandola sul canale in uscita (campo **[!UICONTROL Taken into account if]**).
 
 ![](assets/ita_filtering.png)
 
@@ -113,13 +113,13 @@ Elenco delle opzioni di manutenzione disponibili nell’istanza di controllo:
 >
 >Queste opzioni devono essere utilizzate solo per casi di manutenzione specifici.
 
-* **`NmsInteraction_LastOfferEnvSynch_<offerEnvId>_<executionInstanceId>`**: data dell’ultima sincronizzazione di un ambiente in una determinata istanza.
-* **`NmsInteraction_LastPropositionSynch_<propositionSchema>_<executionInstanceIdSource>_<executionInstanceIdTarget>`**: ultima data in cui le proposte da un dato schema sono state sincronizzate da un’istanza all’altra.
-* **`NmsInteraction_MapWorkflowId`**: opzione contenente l’elenco di tutti i flussi di lavoro di sincronizzazione generati.
+* **`NmsInteraction_LastOfferEnvSynch_<offerEnvId>_<executionInstanceId>`**: data dell&#39;ultima sincronizzazione di un ambiente in una determinata istanza.
+* **`NmsInteraction_LastPropositionSynch_<propositionSchema>_<executionInstanceIdSource>_<executionInstanceIdTarget>`**: ultima data in cui le proposte da un dato schema sono state sincronizzate da un&#39;istanza all&#39;altra.
+* **`NmsInteraction_MapWorkflowId`**: opzione contenente l&#39;elenco di tutti i flussi di lavoro di sincronizzazione generati.
 
 Nelle istanze di esecuzione è disponibile la seguente opzione:
 
-**NmsExecutionInstanceId**: opzione contenente l’ID istanza.
+**NmsExecutionInstanceId**: opzione contenente l&#39;ID istanza.
 
 ## Installazione dei pacchetti {#packages-installation}
 
@@ -166,9 +166,9 @@ ALTER TABLE nmspropositionrcp
   ALTER COLUMN iinteractionid TYPE bigint;
 ```
 
-###  Oracle {#oracle}
+### Oracle {#oracle}
 
-Modifica delle dimensioni di una **Numero** Il tipo non fa sì che i valori o l’indice vengano riscritti. È quindi immediato.
+La modifica della dimensione di un tipo **Number** non comporta la riscrittura di valori o indici. È quindi immediato.
 
 La query da eseguire è la seguente:
 

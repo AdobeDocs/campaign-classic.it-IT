@@ -29,16 +29,16 @@ Il ciclo del flusso di lavoro prevede tre passaggi principali.
 
   Un flusso di lavoro è &quot;Completato&quot; quando non sono più presenti attività in corso o quando un operatore ha esplicitamente interrotto l’istanza.
 
-Ad esempio, il **Inizio** e **Consegna** le attività sono descritte mentre il **Approvazione** l&#39;attività lampeggia nel flusso di lavoro seguente.
+Ad esempio, le attività **Inizio** e **Consegna** sono evidenziate mentre l&#39;attività **Approvazione** lampeggia nel flusso di lavoro seguente.
 
 ![](assets/new-workflow-6.png)
 
 Ciò significa che le prime due attività sono state eseguite correttamente e che l’approvazione è in corso, ovvero è stata creata ma non ancora completata.
 
-I caratteri **574 - Ok** visualizzato sopra la transizione successiva alla **Consegna** attività significa che la preparazione della consegna ha eseguito il targeting di 574 destinatari e che l’operazione è stata completata correttamente. Queste informazioni, che vengono aggiunte alle transizioni quando vengono eseguite, vengono calcolate dalle attività che elaborano i dati.
+I caratteri **574 -Ok** visualizzati sopra la transizione successiva all&#39;attività **Delivery** indicano che la preparazione della consegna ha come destinazione 574 destinatari e che l&#39;operazione è stata completata correttamente. Queste informazioni, che vengono aggiunte alle transizioni quando vengono eseguite, vengono calcolate dalle attività che elaborano i dati.
 
-Il flusso di lavoro viene avviato ed è in attesa di un operatore appartenente al gruppo specificato in **Approvazione** per prendere una decisione. Gli operatori appartenenti al gruppo e che dispongono di un indirizzo e-mail o di un numero di telefono cellulare ricevono una notifica.
+Il flusso di lavoro è stato avviato ed è in attesa di una decisione da parte di un operatore appartenente al gruppo specificato nell&#39;attività **Approval**. Gli operatori appartenenti al gruppo e che dispongono di un indirizzo e-mail o di un numero di telefono cellulare ricevono una notifica.
 
-La gestione degli operatori è descritta in questo [sezione](../../platform/using/access-management.md).
+La gestione degli operatori è descritta in questa [sezione](../../platform/using/access-management.md).
 
 Per ulteriori informazioni su come monitorare i flussi di lavoro, consulta [questa sezione](monitoring-workflow-execution.md).

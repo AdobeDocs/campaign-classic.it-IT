@@ -20,40 +20,40 @@ Di seguito trovi i dettagli sui diversi strumenti di monitoraggio forniti da Ado
 ## Informazioni sul monitoraggio del recapito messaggi {#about-deliverability-monitoring}
 
 Questa funzione è disponibile tramite un pacchetto dedicato in Adobe Campaign. Per utilizzarlo, è necessario installare questo pacchetto. Al termine, riavvia il server affinché il pacchetto venga preso in considerazione.
-* Per client in hosting e ibridi, **Monitoraggio della consegna** è configurato nell’istanza dal supporto tecnico e dai consulenti Adobe. Per ulteriori informazioni, contatta il tuo Account Executive Adobe.
+* Per i client in hosting e ibridi, **Monitoraggio del recapito messaggi** è configurato nell&#39;istanza dal supporto tecnico e dai consulenti Adobe. Per ulteriori informazioni, contatta il tuo Account Executive Adobe.
 
-* Per le installazioni on-premise, è necessario installare **[!UICONTROL Deliverability monitoring (Email Deliverability)]** tramite il **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** menu. Per ulteriori informazioni, consulta [Installare i pacchetti standard di Campaign Classic](../../installation/using/installing-campaign-standard-packages.md).
+* Per le installazioni locali, è necessario installare il pacchetto **[!UICONTROL Deliverability monitoring (Email Deliverability)]** tramite il menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**. Per ulteriori informazioni, consulta [Installare i pacchetti standard di Campaign Classic](../../installation/using/installing-campaign-standard-packages.md).
 
-In Adobe Campaign Classic, **Monitoraggio della consegna** è gestito da **[!UICONTROL Refresh for deliverability]** flusso di lavoro. È installato per impostazione predefinita su tutte le istanze e consente di inizializzare l’elenco delle regole di qualifica della posta non recapitata, l’elenco dei domini e l’elenco dei MX. Una volta **[!UICONTROL Deliverability monitoring (Email Deliverability)]** viene installato, questo flusso di lavoro viene eseguito ogni notte per aggiornare regolarmente l’elenco delle regole e consente di gestire attivamente il recapito messaggi della piattaforma.
+In Adobe Campaign Classic, **Monitoraggio del recapito messaggi** è gestito dal flusso di lavoro **[!UICONTROL Refresh for deliverability]**. È installato per impostazione predefinita su tutte le istanze e consente di inizializzare l’elenco delle regole di qualifica della posta non recapitata, l’elenco dei domini e l’elenco dei MX. Una volta installato il pacchetto **[!UICONTROL Deliverability monitoring (Email Deliverability)]**, questo flusso di lavoro viene eseguito ogni notte per aggiornare regolarmente l&#39;elenco delle regole e consentire di gestire attivamente il recapito messaggi della piattaforma.
 
 Il pacchetto di recapito messaggi consente di accedere a:
 
-* Il [Rapporto di rendering della casella in entrata](inbox-rendering.md) che consente di visualizzare in anteprima i messaggi sui principali client e-mail per esaminare il contenuto e la reputazione.
+* Il report di rendering della [Posta in arrivo](inbox-rendering.md) che consente di visualizzare l&#39;anteprima dei messaggi sui principali client di posta elettronica per analizzare il contenuto e la reputazione.
 * Panoramica sulla qualità dei messaggi (posta in arrivo, spam).
 
 ## Strumenti di monitoraggio {#monitoring-tools}
 
 È inoltre possibile utilizzare i seguenti strumenti:
 
-* Il **[!UICONTROL Delivery throughput]** Questo rapporto offre una panoramica dell&#39;intera velocità effettiva della piattaforma in un determinato periodo. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/global-reports.md#delivery-throughput).
+* Il report **[!UICONTROL Delivery throughput]** offre una panoramica della velocità effettiva dell&#39;intera piattaforma per un determinato periodo. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/global-reports.md#delivery-throughput).
 * Ogni consegna genera un rapporto sulle statistiche di trasmissione per i diversi provider di servizi Internet (ISP). Mostra alcune metriche relative alla qualità dei dati e alla reputazione che possono influire sul recapito messaggi, tra cui i seguenti numeri:
-   * **[!UICONTROL Hard bounces]** indicare la qualità dei dati. Questo numero deve essere inferiore al 2%.
+   * **[!UICONTROL Hard bounces]** indica la qualità dei dati. Questo numero deve essere inferiore al 2%.
    * **[!UICONTROL Soft bounces]** indicare la reputazione. Questo numero non deve essere superiore al 10% per un dato ISP.
 
-  Per ulteriori informazioni, consulta [Statistiche consegna](../../reporting/using/global-reports.md#delivery-statistics) sezione.
-* Più in generale, [dashboard di consegna](about-delivery-monitoring.md) consente di accedere a:
-   * il [riepilogo della consegna](delivery-dashboard.md#delivery-summary), che mostra i dettagli dell&#39;invio e il numero di messaggi da inviare, elaborare e inviare con esito positivo;
-   * il [registri e cronologia di consegna](delivery-dashboard.md#delivery-logs-and-history), che indicano quale obiettivo è stato escluso e perché;
-   * il [registri di tracciamento](delivery-dashboard.md#tracking-logs), che mostrano informazioni di tracciamento come aperture e clic.
+  Per ulteriori informazioni, consulta la sezione [Statistiche di consegna](../../reporting/using/global-reports.md#delivery-statistics).
+* Più in generale, il [dashboard di consegna](about-delivery-monitoring.md) ti consente di accedere a:
+   * il [riepilogo di consegna](delivery-dashboard.md#delivery-summary), che mostra i dettagli dell&#39;invio e il numero di messaggi da inviare, elaborare e inviare con successo;
+   * i [registri di consegna e cronologia](delivery-dashboard.md#delivery-logs-and-history), che mostrano quale destinazione è stata esclusa e perché;
+   * i [registri di tracciamento](delivery-dashboard.md#tracking-logs), che mostrano informazioni di tracciamento come aperture e clic.
 
 ## Linee guida per il monitoraggio {#monitoring-guidelines}
 
 Di seguito sono riportate alcune linee guida aggiuntive sul monitoraggio della consegna dei messaggi:
 
 * Controlla regolarmente la [velocità effettiva di consegna](../../reporting/using/global-reports.md#delivery-throughput) per l&#39;intera piattaforma per verificare se è coerente con la configurazione originale.
-* Controlla che [nuovi tentativi](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) sono configurate correttamente (30 minuti per il periodo di esecuzione dei nuovi tentativi e più di 20 tentativi) nei modelli di consegna.
-* Verifica regolarmente che [rimbalzo](understanding-delivery-failures.md#bounce-mail-management) la cassetta postale è accessibile e l&#39;account non sta per scadere.
-* Controlla ogni velocità effettiva di consegna, accessibile dalla [dashboard di consegna](delivery-dashboard.md), per assicurarsi che sia coerente con la validità del contenuto della consegna (ad esempio, &quot;vendite flash&quot; deve essere consegnato in minuti, non in giorni).
-* Quando si utilizza [ondate](steps-sending-the-delivery.md#sending-using-multiple-waves), verifica che ogni scaglione abbia abbastanza tempo per terminare prima che venga attivato il successivo.
-* Verifica che il numero di errori e le nuove [quarantena](understanding-quarantine-management.md) sono coerenti con le altre consegne.
-* Consulta attentamente il [registri di consegna](delivery-dashboard.md#delivery-logs-and-history) in dettaglio per verificare il tipo di errori evidenziati (inserisce nell&#39;elenco Bloccati, problemi DNS, regole anti-spam, ecc.).
+* Verifica che [nuovi tentativi](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) siano configurati correttamente (30 minuti per il periodo di esecuzione dei nuovi tentativi e più di 20 tentativi) nei modelli di consegna.
+* Verificare regolarmente che la cassetta postale [bounce](understanding-delivery-failures.md#bounce-mail-management) sia accessibile e che l&#39;account non stia per scadere.
+* Controlla ogni velocità effettiva di consegna, accessibile dal [dashboard di consegna](delivery-dashboard.md), per assicurarti che sia coerente con la validità del contenuto della consegna (ad esempio, le &quot;vendite flash&quot; devono essere consegnate in minuti, non in giorni).
+* Quando utilizzi [scaglioni](steps-sending-the-delivery.md#sending-using-multiple-waves), verifica che ogni scaglione abbia tempo sufficiente per terminare prima che venga attivato il successivo.
+* Verifica che il numero di errori e le nuove [quarantene](understanding-quarantine-management.md) siano coerenti con le altre consegne.
+* Consulta attentamente i [registri di consegna](delivery-dashboard.md#delivery-logs-and-history) per verificare il tipo di errori evidenziati (inserisce nell&#39;elenco Bloccati di, problemi DNS, regole anti-spam, ecc.).

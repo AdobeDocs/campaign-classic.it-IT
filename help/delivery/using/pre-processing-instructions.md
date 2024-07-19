@@ -22,8 +22,8 @@ Si applicano solo nel contesto del contenuto della consegna. È l’unico modo p
 Esistono tre tipi di istruzioni:
 
 * **[!DNL include]**: principalmente per fattorizzare parte del codice in opzioni, blocchi di personalizzazione, file esterni o pagine. [Ulteriori informazioni](#include)
-* **[!DNL value]**: per consentire l’accesso ai campi della consegna, alle variabili di consegna e agli oggetti personalizzati caricati nella consegna. [Ulteriori informazioni](#value)
-* **[!DNL foreach]**: per eseguire il loop di un array caricato come oggetto personalizzato. [Ulteriori informazioni](#foreach)
+* **[!DNL value]**: per concedere l&#39;accesso ai campi della consegna, alle variabili di consegna e agli oggetti personalizzati caricati nella consegna. [Ulteriori informazioni](#value)
+* **[!DNL foreach]**: per eseguire il ciclo di un array caricato come oggetto personalizzato. [Ulteriori informazioni](#foreach)
 
 Possono essere testati direttamente dalla procedura guidata di consegna. Vengono applicati nell’anteprima del contenuto e quando fai clic sul pulsante di tracciamento per visualizzare l’elenco degli URL.
 
@@ -71,14 +71,14 @@ Sintassi:
 
 Dove:
 
-* **[!DNL object]**: nome dell’oggetto (ad esempio: consegna, provider e così via).
+* **[!DNL object]**: nome dell&#39;oggetto (ad esempio: delivery, provider e così via).
 L’oggetto può essere:
-   * **[!DNL delivery]**: per la consegna corrente (consulta dettagli e restrizioni nella sottosezione seguente).
-   * **[!DNL provider]**: per il provider/ciclo di consegna corrente (nms:externalAccount).
-   * Un oggetto script aggiuntivo: se un oggetto viene caricato nel contesto tramite: **Proprietà** > **Personalizzazione** > **Aggiungere oggetti nel contesto di esecuzione**.
-   * Elemento del ciclo foreach: vedere [Foreach](#foreach) sezione successiva.
+   * **[!DNL delivery]**: per la consegna corrente (vedi dettagli e restrizioni nella sottosezione seguente).
+   * **[!DNL provider]**: per il provider/routing di consegna corrente (nms:externalAccount).
+   * Un oggetto script aggiuntivo: se un oggetto viene caricato nel contesto tramite: **Proprietà** > **Personalization** > **Aggiungi oggetti nel contesto di esecuzione**.
+   * Elemento del ciclo foreach: vedi la sezione [Foreach](#foreach) di seguito.
 * **[!DNL xpath]**: xpath del campo.
-* **[!DNL index]** (facoltativo): se **[!DNL object]** è un array (per oggetti script aggiuntivi), indice dell’elemento nell’array (inizia da 0).
+* **[!DNL index]** (facoltativo): se **[!DNL object]** è un array (per oggetti script aggiuntivi), indice dell&#39;elemento nell&#39;array (inizia da 0).
 
 ### [!DNL delivery] oggetto {#delivery-object}
 
@@ -90,7 +90,7 @@ Per la personalizzazione delle e-mail, l’oggetto di consegna è accessibile in
   <%= delivery.myField %>`.
   ```
 
-  I campi personalizzati di consegna degli oggetti JavaScript non sono supportati. Funzionano nell’anteprima, ma non nell’MTA perché l’MTA può accedere solo allo schema di consegna predefinito.
+  I campi personalizzati per la consegna degli oggetti di JavaScript non sono supportati. Funzionano nell’anteprima, ma non nell’MTA perché l’MTA può accedere solo allo schema di consegna predefinito.
 
 * Utilizzo di una pre-elaborazione:
 
@@ -141,7 +141,7 @@ Sintassi:
 
 Dove:
 
-* **[!DNL object]**: nome dell’oggetto da cui iniziare, in genere un oggetto script aggiuntivo, ma può essere una consegna.
+* **[!DNL object]**: nome dell&#39;oggetto da cui iniziare, in genere un oggetto script aggiuntivo, ma può essere una consegna.
 * **[!DNL xpath]** (facoltativo): xpath della raccolta su cui eseguire il ciclo. Il valore predefinito è &quot;.&quot;, ovvero l&#39;oggetto corrisponde all&#39;array su cui eseguire il ciclo.
 * **[!DNL index]** (facoltativo): se xpath non è &quot;.&quot; e l’oggetto è un array stesso, indice dell’oggetto (inizia da 0).
 * **[!DNL item]** (facoltativo): nome di un nuovo oggetto accessibile con il valore &lt;%@ all&#39;interno del ciclo foreach. Predefinito con il nome del collegamento nello schema.
@@ -165,8 +165,8 @@ Con questa soluzione, i collegamenti a tutti gli articoli sono tracciati senza d
 
 La soluzione consiste nel:
 
-1. Precarica tutti i possibili articoli in un array di script aggiuntivo della consegna - articleList[] - il che significa che deve esistere un numero finito di articoli possibili.
-1. Scrivi una funzione JavaScript all’inizio del contenuto.
+1. Precaricare tutti gli articoli possibili in un array di script aggiuntivo della consegna - articleList[] - il che significa che deve esserci un numero finito di articoli possibili.
+1. Scrivere una funzione JavaScript all&#39;inizio del contenuto.
 
    ```
    <%@ value object='startScript' %>

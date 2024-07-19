@@ -15,7 +15,7 @@ ht-degree: 8%
 
 
 
-Il flusso di lavoro descritto di seguito viene installato con **Marketing distribuito** per impostazione predefinita. Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../distributed/using/about-distributed-marketing.md).
+Per impostazione predefinita, il flusso di lavoro descritto di seguito viene installato con il modulo **Marketing distribuito**. Per ulteriori informazioni su questo modulo, consulta questa [sezione](../../distributed/using/about-distributed-marketing.md).
 
 <table> 
  <tbody> 
@@ -26,8 +26,8 @@ Il flusso di lavoro descritto di seguito viene installato con **Marketing distri
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Processi di marketing distribuito</span> <br /> </td> 
-   <td> <span class="uicontrol">centralLocalManagement</span> <br /> </td> 
-   <td> Questo flusso di lavoro avvia l’elaborazione correlata all’utilizzo del modulo di marketing distribuito. Avvia la creazione di campagne locali e gestisce le notifiche relative agli ordini e alla disponibilità dei pacchetti delle campagne.<br /> </td> 
+   <td> <span class="uicontrol">centralLocalMgt</span> <br /> </td> 
+   <td> Questo flusso di lavoro avvia l’elaborazione correlata all’utilizzo del modulo di marketing distribuito. Avvia la creazione di campagne locali e gestisce le notifiche relative agli ordini e alla disponibilità del pacchetto della campagna.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

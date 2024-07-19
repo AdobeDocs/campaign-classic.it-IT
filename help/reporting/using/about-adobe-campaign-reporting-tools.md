@@ -16,7 +16,7 @@ ht-degree: 18%
 
 
 
-Oltre a [rapporti incorporati](../../reporting/using/about-campaign-built-in-reports.md), Adobe Campaign consente di generare rapporti in vari contesti e per soddisfare esigenze diverse. I principi relativi alle modalità di utilizzo e di implementazione sono descritti nel presente documento.
+Oltre a [rapporti incorporati](../../reporting/using/about-campaign-built-in-reports.md), Adobe Campaign consente di generare rapporti in vari contesti e di soddisfare esigenze diverse. I principi relativi alle modalità di utilizzo e di implementazione sono descritti nel presente documento.
 
 Adobe Campaign non è uno strumento di reporting specializzato: i rapporti creati in Adobe Campaign consentono principalmente di visualizzare i dati aggregati. I rapporti di Adobe Campaign, dedicati all’analisi e alla rappresentazione dei dati, non sono progettati per le esportazioni di database.
 
@@ -28,7 +28,7 @@ Adobe Campaign fornisce diversi strumenti di reporting:
 
    Per ulteriori informazioni al riguardo, consulta [questa sezione](../../reporting/using/about-campaign-built-in-reports.md).
 
-1. **Analisi dei dati descrittivi**: Adobe Campaign fornisce uno strumento visivo per la produzione di statistiche sui dati nel database. Puoi creare rapporti di analisi descrittivi utilizzando una procedura guidata dedicata e adattarne il contenuto e il layout in base alle tue esigenze.
+1. **Analisi descrittiva dei dati**: Adobe Campaign fornisce uno strumento visivo per la produzione di statistiche sui dati nel database. Puoi creare rapporti di analisi descrittivi utilizzando una procedura guidata dedicata e adattarne il contenuto e il layout in base alle tue esigenze.
 
    Per ulteriori informazioni al riguardo, consulta [questa sezione](../../reporting/using/about-descriptive-analysis.md).
 
@@ -38,7 +38,7 @@ Adobe Campaign fornisce diversi strumenti di reporting:
 
    Per ulteriori informazioni al riguardo, consulta [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md).
 
-1. **Rapporti di analisi**: Marketing Analytics consente l’esplorazione intuitiva dei dati.
+1. **Rapporti di analisi**: Marketing Analytics consente l&#39;esplorazione intuitiva dei dati.
 
    Per ulteriori informazioni al riguardo, consulta [questa sezione](../../reporting/using/ac-cubes.md).
 

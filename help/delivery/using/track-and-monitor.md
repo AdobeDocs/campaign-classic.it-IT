@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # Tracciamento e monitoraggio {#track-and-monitor}
 
-Hai fatto clic su **Invia** pulsante? Vediamo cosa succede. Una volta inviata la consegna, Adobe Campaign ti consente di tenere traccia dei messaggi inviati e scoprire come i destinatari reagiscono alla consegna. Questo ti aiuterà a migliorare l’invio futuro e a ottimizzare le campagne successive.
+Hai fatto clic sul pulsante **Invia**? Vediamo cosa succede. Una volta inviata la consegna, Adobe Campaign ti consente di tenere traccia dei messaggi inviati e scoprire come i destinatari reagiscono alla consegna. Questo ti aiuterà a migliorare l’invio futuro e a ottimizzare le campagne successive.
 
 ## Monitorare le consegne {#monitoring-deliveries}
 
@@ -40,15 +40,15 @@ Suggerimento: controlla la configurazione della gestione del traffico (affinità
 
 Per conoscere meglio il comportamento dei destinatari, puoi tenere traccia della loro reazione a una consegna: ricezione, apertura, clic su collegamenti, annullamenti di abbonamenti, ecc. In Campaign Classic, queste informazioni vengono visualizzate nella scheda Tracciamento dei destinatari interessati dalla consegna e nella scheda Tracciamento della consegna.
 
-**Suggerimento**: il tracciamento dei messaggi è abilitato per impostazione predefinita. Per configurare gli URL, seleziona l’opzione Visualizza URL nella sezione inferiore della procedura guidata di consegna. Per ogni URL del messaggio, puoi scegliere se attivare il tracciamento.
+**Suggerimento**: il monitoraggio dei messaggi è abilitato per impostazione predefinita. Per configurare gli URL, seleziona l’opzione Visualizza URL nella sezione inferiore della procedura guidata di consegna. Per ogni URL del messaggio, puoi scegliere se attivare il tracciamento.
 
-Per ulteriori informazioni, consulta [Configurare il tracciamento](how-to-configure-tracked-links.md) sezione e [Indicatori di tracciamento](../../reporting/using/delivery-reports.md#tracking-indicators) descrizione.
+Per ulteriori informazioni, consulta la sezione [Configurare il tracciamento](how-to-configure-tracked-links.md) e la descrizione degli [indicatori di tracciamento](../../reporting/using/delivery-reports.md#tracking-indicators).
 
 ## Prestazioni di consegna {#delivery-performances}
 
 Per misurare la velocità alla quale vengono consegnati i messaggi, puoi controllare la velocità effettiva di consegna. I criteri sono il numero di messaggi inviati all’ora e le dimensioni dei messaggi (in bit al secondo). Per ulteriori informazioni, consulta [Velocità effettiva di consegna](../../reporting/using/global-reports.md#delivery-throughput).
 
-**Suggerimenti**:
+**suggerimenti**:
 
 * Non mantenere le consegne in stato di errore nell’istanza, in quanto questa operazione mantiene le tabelle temporanee e influisce sulle prestazioni.
 

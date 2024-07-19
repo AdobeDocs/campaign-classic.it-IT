@@ -17,15 +17,15 @@ ht-degree: 6%
 
 
 
-Se la tabella dei destinatari è personalizzata, sono necessarie configurazioni aggiuntive. Il **[!UICONTROL nms:seedMember]** deve essere esteso. Viene aggiunta una scheda aggiuntiva agli indirizzi di seed per definire i campi appropriati, come illustrato di seguito:
+Se la tabella dei destinatari è personalizzata, sono necessarie configurazioni aggiuntive. Lo schema **[!UICONTROL nms:seedMember]** deve essere esteso. Viene aggiunta una scheda aggiuntiva agli indirizzi di seed per definire i campi appropriati, come illustrato di seguito:
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
-Per ulteriori informazioni sull’utilizzo degli indirizzi di seed, consulta [questa sezione](../../delivery/using/about-seed-addresses.md).
+Per ulteriori informazioni sull&#39;utilizzo degli indirizzi di seed, fare riferimento a [questa sezione](../../delivery/using/about-seed-addresses.md).
 
 ## Implementazione {#implementation}
 
-Il **nms:seedingMember** Lo schema e il modulo collegato fornito con il prodotto devono essere estesi per la configurazione del cliente in modo che faccia riferimento a tutti i campi necessari. La definizione dello schema contiene commenti che ne descrivono la modalità di configurazione.
+Lo schema **nms:seedMember** e il modulo collegato pronto all&#39;uso devono essere estesi per la configurazione del cliente, in modo che faccia riferimento a tutti i campi necessari. La definizione dello schema contiene commenti che ne descrivono la modalità di configurazione.
 
 Definizione dello schema esteso della tabella dei destinatari:
 
@@ -44,14 +44,14 @@ Definizione dello schema esteso della tabella dei destinatari:
 
 Applica i seguenti passaggi:
 
-1. Crea un&#39;estensione del **nms:seedingMember** schema. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../configuration/using/extending-a-schema.md).
-1. In questa nuova estensione, aggiungi un nuovo elemento nella directory principale di **[!UICONTROL seedMember]** con i seguenti parametri:
+1. Crea un&#39;estensione dello schema **nms:seedMember**. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../configuration/using/extending-a-schema.md).
+1. In questa nuova estensione, aggiungere un nuovo elemento nella radice di **[!UICONTROL seedMember]** con i seguenti parametri:
 
    ```
    name="custom_customNamespace_customSchema"
    ```
 
-   Questo elemento deve contenere i campi necessari per esportare le campagne. Questi campi devono avere lo stesso nome dei campi corrispondenti nello schema esterno. Ad esempio, se lo schema è **[!UICONTROL cus:person]** , il **[!UICONTROL nms:seedMember]** lo schema deve essere esteso come segue:
+   Questo elemento deve contenere i campi necessari per esportare le campagne. Questi campi devono avere lo stesso nome dei campi corrispondenti nello schema esterno. Ad esempio, se lo schema è **[!UICONTROL cus:person]** , lo schema **[!UICONTROL nms:seedMember]** deve essere esteso come segue:
 
    ```
      <srcSchema extendedSchema="nms:seedMember" label="Seed addresses" labelSingular="Seed address" name="seedMember" namespace="cus">
@@ -70,20 +70,20 @@ Applica i seguenti passaggi:
 
    >[!NOTE]
    >
-   >L&#39;estensione del **nms:seedingMember** lo schema deve essere conforme alle strutture di una campagna e di una consegna in Adobe Campaign.
+   >L&#39;estensione dello schema **nms:seedMember** deve essere conforme alle strutture di una campagna e di una consegna in Adobe Campaign.
 
    >[!IMPORTANT]
    >
    >
    >    
    >    
-   >    * Durante l’estensione, devi specificare un’ **Nome SQL (@sqlname)** per il campo &quot;email&quot;. Il nome SQL deve essere diverso da &#39;sEmail&#39; riservato allo schema del destinatario.
-   >    * È necessario aggiornare la struttura del database con lo schema creato durante l’estensione **nms:seedingMember**.
-   >    * In **nms:seedingMember** , il campo contenente l&#39;indirizzo e-mail deve avere **name=&quot;email&quot;** come attributo. Il nome SQL deve essere diverso da &#39;sEmail&#39; che è già in uso per lo schema del destinatario. Questo attributo deve essere dichiarato immediatamente in **`<element name="custom_cus_person" />`** elemento.
+   >    * Durante l&#39;estensione, è necessario specificare un **nome SQL (@sqlname)** per il campo &#39;email&#39;. Il nome SQL deve essere diverso da &#39;sEmail&#39; riservato allo schema del destinatario.
+   >    * È necessario aggiornare la struttura del database con lo schema creato durante l&#39;estensione di **nms:seedMember**.
+   >    * Nell&#39;estensione **nms:seedMember**, il campo contenente l&#39;indirizzo e-mail deve avere **name=&quot;email&quot;** come attributo. Il nome SQL deve essere diverso da &#39;sEmail&#39; che è già in uso per lo schema del destinatario. Questo attributo deve essere dichiarato immediatamente nell&#39;elemento **`<element name="custom_cus_person" />`**.
    >    
    >
 
-1. Modifica il **[!UICONTROL seedMember]** per definire una nuova scheda &quot;Destinatario interno&quot; nel **[!UICONTROL Seed addresses]** finestra. Per ulteriori informazioni, consulta [questa pagina](../../configuration/using/form-structure.md).
+1. Modificare di conseguenza il modulo **[!UICONTROL seedMember]** per definire una nuova scheda &quot;Destinatario interno&quot; nella finestra **[!UICONTROL Seed addresses]**. Per ulteriori informazioni, consulta [questa pagina](../../configuration/using/form-structure.md).
 
    ```
    <container colcount="2" label="Internal recipient" name="internal"

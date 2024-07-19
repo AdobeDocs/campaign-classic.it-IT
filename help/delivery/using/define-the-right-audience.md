@@ -17,7 +17,7 @@ ht-degree: 6%
 
 La popolazione target è fondamentale: crea i tuoi elenchi con attenzione, testa le e-mail sui client e-mail e sui dispositivi mobili più diffusi e assicurati che i tuoi elenchi e-mail siano aggiornati (senza indirizzi sconosciuti o obsoleti). Puoi anche inviare bozze utili per impostare un ciclo di convalida completo.
 
-Ulteriori informazioni sulle popolazioni target [in questa sezione](steps-defining-the-target-population.md)
+Ulteriori informazioni sulle popolazioni di destinazione [in questa sezione](steps-defining-the-target-population.md)
 
 ## Rivolgersi al pubblico giusto {#target-the-right-audience}
 
@@ -27,11 +27,11 @@ Per garantire la corretta consegna, desideri inviare i contenuti personalizzati 
 
 ## Mappature di destinazione {#target-mappings}
 
-In Campaign Classic, per impostazione predefinita, i modelli di consegna sono destinati a **Destinatari**. Adobe Campaign offre altre mappature di destinazione per le consegne, che puoi modificare in base alle tue esigenze.
+In Campaign Classic, per impostazione predefinita, i modelli di consegna sono destinati a **destinatari**. Adobe Campaign offre altre mappature di destinazione per le consegne, che puoi modificare in base alle tue esigenze.
 
 Ad esempio, puoi distribuire ai visitatori i cui profili sono stati raccolti tramite social network o ai visitatori abbonati a un servizio di informazioni.
 
-Vengono presentate queste mappature [in questa sezione](selecting-a-target-mapping.md).
+Queste mappature sono presentate [in questa sezione](selecting-a-target-mapping.md).
 
 Puoi anche creare e utilizzare una mappatura di destinazione personalizzata. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../configuration/using/target-mapping.md).
 
@@ -48,9 +48,9 @@ Per inviare messaggi agli abbonati di una newsletter, puoi indirizzare direttame
 
 Per verificare la consegna, utilizza le bozze prima di inviare al target principale.
 
-Accertati di selezionare i destinatari della bozza appropriati, in quanto convalidano il modulo e il contenuto del messaggio. Vengono presentati i passaggi per definire i destinatari della bozza [in questa sezione](steps-defining-the-target-population.md#selecting-the-proof-target).
+Accertati di selezionare i destinatari della bozza appropriati, in quanto convalidano il modulo e il contenuto del messaggio. I passaggi per definire i destinatari della bozza sono descritti in [questa sezione](steps-defining-the-target-population.md#selecting-the-proof-target).
 
-Gli indirizzi di seed vengono utilizzati per eseguire il targeting dei destinatari che non corrispondono ai criteri di target definiti per testare una consegna prima di inviarla al target principale. Vengono presentati [in questa sezione](about-seed-addresses.md).
+Gli indirizzi di seed vengono utilizzati per eseguire il targeting dei destinatari che non corrispondono ai criteri di target definiti per testare una consegna prima di inviarla al target principale. Sono presentati [in questa sezione](about-seed-addresses.md).
 
 ## Deduplica indirizzi {#deduplicate-addresses}
 
@@ -71,4 +71,4 @@ La deduplicazione degli indirizzi protegge la reputazione del mittente e garanti
 
 Per ottimizzare le prestazioni delle query SQL utilizzate nell’applicazione, è possibile dichiarare un indice dall’elemento principale dello schema di dati.
 
-Vengono descritti i passaggi per aggiungere un indice all’indirizzo e-mail [in questa sezione](../../configuration/using/database-mapping.md#indexed-fields).
+I passaggi per aggiungere un indice all&#39;indirizzo e-mail sono descritti in [questa sezione](../../configuration/using/database-mapping.md#indexed-fields).

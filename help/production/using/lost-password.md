@@ -25,7 +25,7 @@ ht-degree: 3%
 Esistono due possibili scenari:
 
 * [Password persa da un operatore Adobe Campaign](#password-lost-by-campaign-operator)
-* [Password interna persa](#internal-password-lost) (solo clienti on-premise)
+* [Password interna persa](#internal-password-lost) (solo clienti locali)
 
 ## Password persa da un operatore Campaign {#password-lost-by-campaign-operator}
 
@@ -33,13 +33,13 @@ Se un operatore Adobe Campaign perde la propria password, puoi modificarla.
 
 >[!NOTE]
 >
->Questa procedura si applica solo agli operatori che si connettono a Campaign con autenticazione nativa. Per l’autenticazione Adobe IMS, consulta [questa documentazione](https://helpx.adobe.com/ie/manage-account/using/change-or-reset-password.html){target="_blank"}.
+>Questa procedura si applica solo agli operatori che si connettono a Campaign con autenticazione nativa. Per l&#39;autenticazione Adobe IMS, consulta [questa documentazione](https://helpx.adobe.com/ie/manage-account/using/change-or-reset-password.html){target="_blank"}.
 
 Per reimpostare la password di una campagna, effettua le seguenti operazioni:
 
 1. Connetti tramite un operatore con diritti di amministratore.
 1. Fare clic con il pulsante destro del mouse su un operatore.
-1. Seleziona **[!UICONTROL Actions]** > **[!UICONTROL Reset password]**.
+1. Selezionare **[!UICONTROL Actions]** > **[!UICONTROL Reset password]**.
 
    ![](assets/operator-passwd.png)
 
@@ -55,16 +55,16 @@ Se la password interna viene persa, è necessario reinizializzarla.
 
 A tale scopo, attenersi alla procedura descritta di seguito.
 
-1. Modifica il **/usr/local/neolane/nl6/conf/serverConf.xml** file.
+1. Modifica il file **/usr/local/neolane/nl6/conf/serverConf.xml**.
 
-1. Vai a **internalPassword** linea.
+1. Vai alla riga **internalPassword**.
 
    ```xml
    <!-- XTK authentication mode internalPassword : Password of internal account -->
    <xtk internalPassword="myPassword"/>
    ```
 
-1. Elimina la stringa tra virgolette, in questo caso: `myPassword`. Viene visualizzata la seguente riga:
+1. Eliminare la stringa tra virgolette, in questo caso: `myPassword`. Viene visualizzata la seguente riga:
 
    ```xml
    <!-- XTK authentication mode internalPassword : Password of internal account -->
@@ -73,7 +73,7 @@ A tale scopo, attenersi alla procedura descritta di seguito.
 
 1. Salva le modifiche e chiudi il file.
 
-1. Interrompi `nlserver` processo.
+1. Arresta il processo `nlserver`.
 
 1. Configura la nuova password. A tale scopo, immetti i seguenti comandi:
 
@@ -87,6 +87,6 @@ A tale scopo, attenersi alla procedura descritta di seguito.
    Confirmation 
    ```
 
-1. Avvia il `nlserver` processo.
+1. Avvia il processo `nlserver`.
 
-1. Ora puoi usare la nuova password per connetterti a **Interno** modalità.
+1. È ora possibile utilizzare la nuova password per connettersi in modalità **Interna**.

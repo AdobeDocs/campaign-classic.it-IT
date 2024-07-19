@@ -17,13 +17,13 @@ ht-degree: 0%
 
 # Individua versione Tomcat{#locate-tomcat-version}
 
-Adobe Campaign utilizza un **servlet web incorporato denominato Apache Tomcat** per elaborare le richieste HTTP/HTTPS tra l’applicazione e qualsiasi interfaccia esterna (inclusa la console client, i collegamenti URL tracciati, le chiamate SOAP e altre). Di fronte a questo server spesso è presente un server web esterno (in genere IIS o Apache) per tutte le istanze Adobe Campaign rivolte all’esterno.
+Adobe Campaign utilizza un **servlet Web incorporato denominato Apache Tomcat** per elaborare le richieste HTTP/HTTPS tra l&#39;applicazione e qualsiasi interfaccia esterna (inclusa la console client, i collegamenti URL tracciati, le chiamate SOAP e altri). Di fronte a questo server spesso è presente un server web esterno (in genere IIS o Apache) per tutte le istanze Adobe Campaign rivolte all’esterno.
 
-Seguire la procedura riportata di seguito per individuare la versione esatta di Tomcat utilizzata in un **Istanza on-premise di Campaign Classic** per facilitare la risoluzione dei problemi.
+Segui la procedura seguente per individuare la versione esatta di Tomcat utilizzata in un&#39;istanza on-premise **Campaign Classic** per facilitare la risoluzione dei problemi.
 
 ## Tomcat utilizzato in Adobe Campaign
 
-Tomcat viene eseguito su Java e richiede l’installazione di JDK. Per ulteriori informazioni, consulta Java Development Kit (JDK) in [Matrice di compatibilità di Campaign](../../rn/using/compatibility-matrix.md) sezione.
+Tomcat viene eseguito su Java e richiede l’installazione di JDK. Per ulteriori informazioni, consulta Java Development Kit (JDK) nella sezione [Matrice di compatibilità di Campaign](../../rn/using/compatibility-matrix.md).
 
 Il Tomcat utilizzato in Adobe Campaign è una versione incorporata personalizzata che non utilizza tutte le funzioni della versione completa generalmente disponibile di Tomcat e potrebbe non soffrire di tutte le vulnerabilità della versione completa. Inoltre, Tomcat non deve essere esposto a Internet esterno e tutte le istanze Adobe Campaign esposte devono avere un server web esterno (IIS, Apache, ecc.) di fronte al Tomcat per proteggerlo.
 
@@ -43,17 +43,17 @@ Per individuare la versione di Tomcat incorporata in un’istanza di Adobe Campa
 >
 >Devi avere accesso ai file sul server Adobe Campaign che devi controllare. La procedura descritta di seguito si applica solo a **modelli di hosting on-premise**.
 
-1. Accedi a *\tomcat-11\lib* sottocartella nella cartella di installazione di Adobe Campaign (ad esempio, *File C:\Program\ [Installation_folder]* in Windows, oppure */usr/local/neolane/nl6* in Linux).
+1. Passa alla sottocartella *\tomcat-11\lib* all&#39;interno della cartella di installazione di Adobe Campaign (ad esempio, *C:\Program Files\ [Installation_folder]* in Windows o */usr/local/neolane/nl6* in Linux).
 
-1. Copiare il file *catalina.jar* in una cartella temporanea esterna (ad esempio sul desktop) e rinomina l’estensione da .jar a .zip.
+1. Copiare il file *catalina.jar* in una cartella temporanea esterna, ad esempio il desktop, e rinominare l&#39;estensione da .jar a .zip.
 
 1. Decomprimi il file copiato. Ne risulteranno molte sottocartelle e file.
 
-1. All’interno dei file/cartelle decompressi, apri o leggi il seguente file contenuto utilizzando un editor di testo: *org/apache/catalina/util/ServerInfo.properties*. Potrebbe essere necessario aggiungere un’estensione .txt per facilitare l’apertura con un editor di testo.
+1. Nei file/cartelle decompressi, aprire o leggere il seguente file contenuto utilizzando un editor di testo: *org/apache/catalina/util/ServerInfo.properties*. Potrebbe essere necessario aggiungere un’estensione .txt per facilitare l’apertura con un editor di testo.
 
 1. Al termine, se si trova su un server, eliminare i file temporanei creati.
 
-Ad esempio, *ServerInfo.properties* Il file per Adobe Campaign contiene le seguenti informazioni, che indicano Tomcat v11.X:
+Ad esempio, il file *ServerInfo.properties* per Adobe Campaign contiene le seguenti informazioni, che indicano Tomcat v11.X:
 
 *`server.info=Apache Tomcat/11.X`*
 

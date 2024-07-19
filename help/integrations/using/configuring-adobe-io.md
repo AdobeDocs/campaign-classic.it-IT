@@ -37,8 +37,8 @@ This integration only applies starting **Campaign Classic 20.2.4 and above, 19.1
 
 Prima di iniziare questa implementazione, verifica di disporre di:
 
-* un valore valido **Identificatore organizzazione**: l’ID organizzazione è l’identificatore univoco all’interno di Adobe Experience Cloud, utilizzato ad esempio per il servizio VisitorID e l’accesso Single Sign-On (SSO) di IMS. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=it)
-* a **Accesso per sviluppatori** alla tua organizzazione. L’amministratore di sistema dell’organizzazione deve seguire la procedura **Aggiungere sviluppatori a un singolo profilo di prodotto** procedura dettagliata [in questa pagina](https://helpx.adobe.com/enterprise/using/manage-developers.html) per fornire agli sviluppatori l&#39;accesso per `Analytics - {tenantID}` Profilo prodotto del prodotto Adobe Analytics associato a Triggers.
+* un **identificatore organizzazione** valido: l&#39;ID organizzazione è l&#39;identificatore univoco all&#39;interno di Adobe Experience Cloud, utilizzato ad esempio per il servizio VisitorID e l&#39;SSO (Single Sign On) IMS. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=it)
+* **Accesso per sviluppatori** all&#39;organizzazione. L&#39;amministratore di sistema dell&#39;organizzazione deve seguire la procedura **Aggiungi sviluppatori a un singolo profilo di prodotto** dettagliata [in questa pagina](https://helpx.adobe.com/enterprise/using/manage-developers.html) per fornire agli sviluppatori l&#39;accesso al profilo di prodotto `Analytics - {tenantID}` del prodotto Adobe Analytics associato a Triggers.
 
 ## Passaggio 1: creare/aggiornare il progetto OAuth {#creating-adobe-io-project}
 
@@ -46,13 +46,13 @@ Prima di iniziare questa implementazione, verifica di disporre di:
 >
 > Le credenziali dell’account di servizio (JWT) sono state dichiarate obsolete da Adobe. Le integrazioni di Campaign con le soluzioni e le app Adobe ora devono basarsi sulle credenziali server-to-server OAuth. </br>
 >
-> * Se hai implementato le integrazioni in entrata con Campaign, devi migrare l’account tecnico come descritto in [questa documentazione](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). Le credenziali dell’account di servizio (JWT) esistenti continueranno a funzionare fino al 27 gennaio 2025.</br>
+> * Se hai implementato integrazioni in entrata con Campaign, devi migrare l&#39;account tecnico come descritto in [questa documentazione](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). Le credenziali dell&#39;account di servizio (JWT) esistenti continueranno a funzionare fino al 27 gennaio 2025.</br>
 >
 > * Se hai implementato integrazioni in uscita, ad esempio l’integrazione Campaign-Analytics o l’integrazione Experience Cloud Triggers, queste continueranno a funzionare fino al 27 gennaio 2025. Tuttavia, prima di tale data, devi aggiornare l’ambiente Campaign alla versione v7.4.1 e migrare l’account tecnico a oAuth.
 
 Per procedere con la configurazione del connettore Adobe Analytics, accedi alla console Adobe Developer e crea il progetto server-to-server OAuth.
 
-Fai riferimento a [questa pagina](oauth-technical-account.md#oauth-service) per la documentazione dettagliata.
+Per la documentazione dettagliata, consulta [questa pagina](oauth-technical-account.md#oauth-service).
 
 ## Passaggio 2: aggiungere le credenziali del progetto in Adobe Campaign {#add-credentials-campaign}
 
@@ -60,10 +60,10 @@ Segui i passaggi descritti in [questa pagina](oauth-technical-account.md#add-cre
 
 ## Passaggio 3: aggiornare il tag pipeline {#update-pipelined-tag}
 
-Da aggiornare [!DNL pipelined] , è necessario aggiornare il tipo di autenticazione al progetto Console sviluppatori nel file di configurazione **config-&lt; nome-istanza >.xml** come segue:
+Per aggiornare il tag [!DNL pipelined], è necessario aggiornare il tipo di autenticazione al progetto Console sviluppatori nel file di configurazione **config-&lt; nome-istanza >.xml** come segue:
 
 ```
 <pipelined ... authType="imsJwtToken"  ... />
 ```
 
-Quindi, esegui una `config -reload` e il riavvio del [!DNL pipelined] affinché le modifiche siano prese in considerazione.
+Eseguire quindi `config -reload` e riavviare [!DNL pipelined] per tenere conto delle modifiche.

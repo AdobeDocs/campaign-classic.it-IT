@@ -22,13 +22,13 @@ ht-degree: 2%
 
 Questo documento descrive i prerequisiti per una migrazione e i passaggi per una migrazione a Adobe Campaign Classic v7. I passaggi e le impostazioni facoltative dipendono dalla configurazione.
 
-Il processo di migrazione deve essere eseguito con cautela, i suoi effetti devono essere considerati in anticipo e la procedura deve essere eseguita con rigore. Deve essere eseguito solo da un utente esperto. Ti consigliamo vivamente di contattare [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) prima di avviare qualsiasi procedura di migrazione.
+Il processo di migrazione deve essere eseguito con cautela, i suoi effetti devono essere considerati in anticipo e la procedura deve essere eseguita con rigore. Deve essere eseguito solo da un utente esperto. Ti consigliamo vivamente di contattare [l&#39;Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) prima di avviare qualsiasi procedura di migrazione.
 
 La migrazione deve essere testata preventivamente nell’ambiente di test/staging per garantire che funzioni senza problemi e senza errori. La migrazione dell’ambiente di produzione deve essere eseguita solo dopo che l’ambiente di test migrato è stato completamente convalidato.
 
 >[!NOTE]
 >
->Le nuove funzioni e i miglioramenti apportati ad Adobe Campaign v7 sono descritti in dettaglio nella [Note sulla versione](../../rn/using/latest-release.md).
+>Le nuove funzionalità e i miglioramenti apportati ad Adobe Campaign v7 sono descritti in dettaglio nelle [Note sulla versione](../../rn/using/latest-release.md).
 
 
 ## Prerequisiti
@@ -36,7 +36,7 @@ La migrazione deve essere testata preventivamente nell’ambiente di test/stagin
 * Il processo di migrazione deve essere eseguito da utenti esperti. È necessario essere assistiti almeno da un esperto di database, un amministratore di sistema e uno sviluppatore di applicazioni di Adobe Campaign.
 * Prima di avviare la migrazione, verifica che i sistemi e i componenti di sistema utilizzati siano compatibili con v7. [Ulteriori informazioni](../../rn/using/compatibility-matrix.md).
 * Se utilizzi Adobe Campaign Cloud Messaging (implementazione mid-sourcing), contatta l’Assistenza clienti Adobe prima di iniziare.
-* Prima di avviare un processo di migrazione, **deve** eseguire il backup dei dati.
+* Prima di avviare un processo di migrazione, è **necessario** eseguire il backup dei dati.
 * Il completamento del processo di migrazione potrebbe richiedere diversi giorni.
 * Adobe Campaign v7 è una versione più sicura rispetto alle precedenti: questo influisce sulle linee guida di configurazione per evitare problemi come il danneggiamento dei dati e per preservare l’integrità dei dati nel database. In qualità di cliente, sei responsabile del test di tutte le configurazioni, inclusi i flussi di lavoro.
 
@@ -49,7 +49,7 @@ L’esecuzione di una migrazione può rappresentare un’opportunità per aggior
 
 >[!CAUTION]
 >
->Per ulteriori informazioni sulle versioni supportate da Adobe Campaign v7, consulta [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
+>Per ulteriori informazioni sulle versioni supportate da Adobe Campaign v7, fare riferimento alla [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
 ## Passaggi chiave della migrazione {#key-migration-steps}
 

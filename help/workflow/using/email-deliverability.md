@@ -15,7 +15,7 @@ ht-degree: 2%
 
 
 
-Il flusso di lavoro descritto di seguito viene installato per impostazione predefinita in tutte le istanze e consente di inizializzare l’elenco delle regole di qualifica della posta non recapitata, l’elenco dei domini e l’elenco dei MX. Una volta **Monitoraggio del recapito messaggi (recapito messaggi e-mail)** è installato, il flusso di lavoro viene eseguito ogni notte. Per ulteriori informazioni sul monitoraggio della consegna dei messaggi, consulta [sezione](../../delivery/using/about-deliverability.md).
+Il flusso di lavoro descritto di seguito viene installato per impostazione predefinita in tutte le istanze e consente di inizializzare l’elenco delle regole di qualifica della posta non recapitata, l’elenco dei domini e l’elenco dei MX. Una volta installato il pacchetto di monitoraggio del recapito messaggi **(recapito messaggi e-mail)**, il flusso di lavoro viene eseguito ogni notte. Per ulteriori informazioni sul monitoraggio della consegna, consulta questa [sezione](../../delivery/using/about-deliverability.md).
 
 <table> 
  <tbody> 
@@ -27,7 +27,7 @@ Il flusso di lavoro descritto di seguito viene installato per impostazione prede
   <tr> 
    <td> <strong>Aggiorna per il recapito messaggi</strong><br /> </td> 
    <td> <span class="uicontrol">deliverabilityUpdate</span> <br /> </td> 
-   <td>  Una volta <strong>Monitoraggio del recapito messaggi (recapito messaggi e-mail)</strong> viene installato, questo flusso di lavoro viene eseguito ogni notte per aggiornare regolarmente l’elenco delle regole e consente di gestire attivamente il recapito messaggi della piattaforma.<br /> </td> 
+   <td>  Una volta installato il pacchetto <strong>Monitoraggio del recapito messaggi (recapito messaggi e-mail)</strong>, questo flusso di lavoro viene eseguito ogni notte per aggiornare regolarmente l'elenco delle regole e consentire di gestire attivamente il recapito messaggi della piattaforma.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

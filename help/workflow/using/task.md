@@ -19,12 +19,12 @@ ht-degree: 3%
 >
 >`:warning:` Questa funzionalità è disponibile solo in Campaign Classic v7. [Ulteriori informazioni](../../mrm/using/creating-and-managing-tasks.md)
 
-In un flusso di lavoro della campagna, il **[!UICONTROL Task]** attività consente di specificare due scenari: il primo se l’attività è completata e il secondo se l’attività non è completata (se è contrassegnata manualmente come incompleta o se scade).
+In un flusso di lavoro della campagna, l&#39;attività **[!UICONTROL Task]** consente di specificare due scenari: il primo se l&#39;attività è completata e il secondo se l&#39;attività non è completata (se è contrassegnata manualmente come incompleta o se scade).
 
 ![](assets/mrm_task_in_workflow.png)
 
-Per informazioni su come configurare e gestire un’attività, consulta [Documentazione di Campaign Classic v7](../../mrm/using/creating-and-managing-tasks.md).
+Per informazioni su come configurare e gestire un&#39;attività, consulta la [documentazione di Campaign Classic v7](../../mrm/using/creating-and-managing-tasks.md).
 
 ![](assets/wkf_task_activity.png)
 
-Il **[!UICONTROL Resources]** consente di definire più operatori e una pianificazione di approvazione per l’attività. Se la persona che approva rifiuta, ciò non comporta il rifiuto dell’attività stessa.
+L&#39;opzione **[!UICONTROL Resources]** consente di definire più operatori e una pianificazione di approvazione per l&#39;attività. Se la persona che approva rifiuta, ciò non comporta il rifiuto dell’attività stessa.

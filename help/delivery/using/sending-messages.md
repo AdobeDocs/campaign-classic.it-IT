@@ -20,15 +20,15 @@ Una volta creata e configurata l’e-mail, puoi inviarla al target principale. Q
 1. Assicurati di aver configurato tutte le impostazioni specifiche per la consegna e-mail. Per ulteriori informazioni, consulta [Parametri e-mail](email-parameters.md).
 1. Quando l’e-mail è pronta, prima di inviarla al target principale, si consiglia di rilevare eventuali errori inviando delle bozze. Per ulteriori informazioni, consulta [Inviare una bozza](steps-validating-the-delivery.md#sending-a-proof).
 
-1. Al termine, devi convalidare l’e-mail avviando l’analisi. A questo scopo, fai clic su **[!UICONTROL Send]**, seleziona un’azione e fai clic su **[!UICONTROL Analyze]**. Per ulteriori informazioni, consulta [Avviare l’analisi](steps-validating-the-delivery.md#analyzing-the-delivery).
+1. Al termine, devi convalidare l’e-mail avviando l’analisi. A tale scopo, fare clic su **[!UICONTROL Send]**, selezionare un&#39;azione e fare clic su **[!UICONTROL Analyze]**. Per ulteriori informazioni, consulta [Avviare l&#39;analisi](steps-validating-the-delivery.md#analyzing-the-delivery).
 
-1. Al termine dell’analisi, fai clic su **[!UICONTROL Confirm delivery]** per avviare la consegna dei messaggi ai destinatari desiderati. Per ulteriori informazioni, consulta [Conferma consegna](steps-sending-the-delivery.md#confirming-delivery).
+1. Al termine dell&#39;analisi, fare clic su **[!UICONTROL Confirm delivery]** per avviare la consegna dei messaggi ai destinatari desiderati. Per ulteriori informazioni, consulta [Conferma consegna](steps-sending-the-delivery.md#confirming-delivery).
 
    <!--Add screenshot with analysis done and Confirm delivery button activated.-->
 
 >[!NOTE]
 >
->L’intero processo di convalida di una consegna è descritto in [questa sezione](steps-validating-the-delivery.md). I passaggi dettagliati e completi per configurare e inviare una consegna sono descritti in [questa sezione](steps-sending-the-delivery.md).
+>L&#39;intero processo di convalida di una consegna è descritto in [questa sezione](steps-validating-the-delivery.md). I passaggi dettagliati completi per configurare e inviare una consegna sono descritti in [questa sezione](steps-sending-the-delivery.md).
 
 Le sezioni seguenti descrivono le impostazioni e le configurazioni specifiche per la consegna delle e-mail:
 <!--* [Generating the mirror page](generating-mirror-page.md)

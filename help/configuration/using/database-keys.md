@@ -26,12 +26,12 @@ Una chiave viene dichiarata dall’elemento principale dello schema di dati.
 </key>
 ```
 
-Una chiave è nota come &quot;chiave primaria&quot; quando è la prima dello schema a essere compilata, o se contiene `internal` attributo impostato su &quot;true&quot;.
+Una chiave è nota come &quot;chiave primaria&quot; quando è la prima dello schema a essere compilata o se contiene l&#39;attributo `internal` impostato su &quot;true&quot;.
 
 Le seguenti regole si applicano alle chiavi:
 
 * Una chiave può fare riferimento a uno o più campi della tabella
-* Un indice univoco viene dichiarato in modo implicito per ogni definizione di chiave. La creazione di un indice sulla chiave può essere impedita impostando `noDbIndex` su &quot;true&quot;.
+* Un indice univoco viene dichiarato in modo implicito per ogni definizione di chiave. È possibile impedire la creazione di un indice sulla chiave impostando l&#39;attributo `noDbIndex` su &quot;true&quot;.
 
 >[!NOTE]
 >
@@ -126,21 +126,21 @@ Le seguenti regole si applicano alle chiavi:
 
 ## Tasto incrementale automatico {#auto-incremental-key}
 
-La chiave primaria della maggior parte delle tabelle di Adobe Campaign è un numero intero a 32 bit generato automaticamente dal motore di database. Il calcolo del valore chiave dipende da una sequenza (per impostazione predefinita, il **XtkNewId** funzione SQL) che genera un numero univoco nell&#39;intero database. Il contenuto della chiave viene immesso automaticamente all’inserimento del record.
+La chiave primaria della maggior parte delle tabelle di Adobe Campaign è un numero intero a 32 bit generato automaticamente dal motore di database. Il calcolo del valore chiave dipende da una sequenza (per impostazione predefinita, la funzione SQL **XtkNewId**) che genera un numero univoco nell&#39;intero database. Il contenuto della chiave viene immesso automaticamente all’inserimento del record.
 
 Il vantaggio di una chiave incrementale è che fornisce una chiave tecnica non modificabile per i join tra tabelle. Inoltre, questa chiave non occupa molta memoria perché utilizza un numero intero a doppio byte.
 
-È possibile specificare nello schema di origine il nome della sequenza da utilizzare con **pkSequence** attributo. Se questo attributo non è specificato nello schema di origine, **XtkNewId** verrà utilizzata la sequenza predefinita. L&#39;applicazione utilizza sequenze dedicate per **nms:broadLog** e **nms:trackingLog** schemi (**NmsBroadLogId** e **NmsTrackingLogId** rispettivamente) perché queste sono le tabelle che contengono il maggior numero di record.
+È possibile specificare nello schema di origine il nome della sequenza da utilizzare con l&#39;attributo **pkSequence**. Se questo attributo non è specificato nello schema di origine, verrà utilizzata la sequenza predefinita **XtkNewId**. L&#39;applicazione utilizza sequenze dedicate per gli schemi **nms:broadLog** e **nms:trackingLog** (**NmsBroadLogId** e **NmsTrackingLogId** rispettivamente) perché si tratta delle tabelle che contengono il maggior numero di record.
 
-ACC 18.10, **XtkNewId** non è più il valore predefinito per la sequenza negli schemi predefiniti. Ora puoi creare uno schema o estendere uno schema esistente con una sequenza dedicata.
+Da ACC 18.10, **XtkNewId** non è più il valore predefinito per la sequenza negli schemi predefiniti. Ora puoi creare uno schema o estendere uno schema esistente con una sequenza dedicata.
 
 >[!IMPORTANT]
 >
 >Quando crei un nuovo schema o durante un’estensione dello schema, devi mantenere lo stesso valore di sequenza di chiave primaria (@pkSequence) per l’intero schema.
 
-Una sequenza a cui si fa riferimento in uno schema di Adobe Campaign (**NmsTrackingLogId** ad esempio) deve essere associata a una funzione SQL che restituisce il numero di ID nei parametri, separati da virgole. Questa funzione deve essere chiamata **GetNew** XXX **Id**, dove **XXX** è il nome della sequenza (**GetNewNmsTrackingLogIds** ad esempio). Visualizza **postgres-nms.sql**, **mssql-nms.sql** o **oracle-nms.sql** file forniti con l&#39;applicazione in **datakit/nms/eng/sql/** per recuperare l&#39;esempio di creazione di una sequenza &#39;NmsTrackingLogId&#39; per ciascun motore di database.
+Una sequenza a cui si fa riferimento in uno schema di Adobe Campaign (**NmsTrackingLogId**, ad esempio) deve essere associata a una funzione SQL che restituisce il numero di ID nei parametri, separati da virgole. Questa funzione deve essere chiamata **GetNew** XXX **Ids**, dove **XXX** è il nome della sequenza (**GetNewNmsTrackingLogIds**, ad esempio). Visualizzare i file **postgres-nms.sql**, **mssql-nms.sql** o **oracle-nms.sql** forniti con l&#39;applicazione nella directory **datakit/nms/eng/sql/** per recuperare l&#39;esempio di creazione di una sequenza &#39;NmsTrackingLogId&#39; per ogni motore di database.
 
-Per dichiarare una chiave univoca, compila il **autopk** (con valore &quot;true&quot;) sull’elemento principale dello schema di dati.
+Per dichiarare una chiave univoca, compilare l&#39;attributo **autopk** (con il valore &quot;true&quot;) nell&#39;elemento principale dello schema dati.
 
 **Esempio**:
 

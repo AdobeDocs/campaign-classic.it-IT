@@ -7,7 +7,7 @@ exl-id: d8960a2e-6900-4346-9f06-e7dd9d7b5139
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
@@ -41,16 +41,16 @@ parametro:==guida
 
 ## Descrizione {#description-12}
 
-Questo elemento consente di definire un parametro per la chiamata di un metodo SOAP.
+Questo elemento ti consente di definire un parametro per la chiamata di un metodo SOAP.
 
 ## Descrizione attributo {#attribute-description-12}
 
-* **desc (stringa)**: descrizione che riguarda `<param>` elemento.
-* **inout (stringa)**: questo attributo definisce se il parametro si trova o meno all’input (in) o all’output (out) della chiamata SOAP. Se questo attributo non è specificato, il parametro predefinito è input (&quot;@inout=in&quot;).
+* **desc (stringa)**: descrizione relativa all&#39;elemento `<param>`.
+* **inout (stringa)**: questo attributo definisce se il parametro si trova o meno nell&#39;input (in) o nell&#39;output (out) della chiamata SOAP. Se questo attributo non è specificato, il parametro predefinito è input (&quot;@inout=in&quot;).
 * **etichetta (stringa)**: `<param>` etichetta
-* **localizzabile (stringa)**: se è attivato, questo attributo indica allo strumento di raccolta di recuperare il valore dell’attributo &quot;@label&quot; per la traduzione (uso interno).
-* **nome (MNTOKEN)**: nome interno del `<param>`
-* **tipo (stringa)**: questo attributo definisce il tipo `<param>` elemento
+* **localizzabile (stringa)**: se attivato, questo attributo indica allo strumento di raccolta di recuperare il valore dell&#39;attributo &quot;@label&quot; per la traduzione (uso interno).
+* **nome (MNTOKEN)**: nome interno di `<param>`
+* **tipo (stringa)**: questo attributo definisce il tipo dell&#39;elemento `<param>`
 
   Elenco dei tipi disponibili:
 

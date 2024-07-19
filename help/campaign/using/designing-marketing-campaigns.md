@@ -15,13 +15,13 @@ ht-degree: 20%
 # Progettare ed eseguire campagne di marketing{#designing-marketing-campaigns}
 
 
-Adobe Campaign ti consente di definire, ottimizzare, eseguire e analizzare campagne di comunicazione e marketing. Adobe Campaign funziona come un centro unificato di esecuzione e ordini per strategie di marketing. Per ulteriori informazioni, consulta [Accedere alle campagne](../../distributed/using/accessing-campaigns.md) e [Creare campagne di marketing](../../campaign/using/setting-up-marketing-campaigns.md).
+Adobe Campaign ti consente di definire, ottimizzare, eseguire e analizzare campagne di comunicazione e marketing. Adobe Campaign funziona come un centro unificato di esecuzione e ordini per strategie di marketing. Per ulteriori informazioni, consulta [Campagne di accesso](../../distributed/using/accessing-campaigns.md) e [Creare campagne di marketing](../../campaign/using/setting-up-marketing-campaigns.md).
 
-Inoltre, la **Gestione delle risorse marketing (MRM)** Il modulo consente di controllare le azioni di marketing in modalità collaborativa fornendo una gestione completa e il tracciamento in tempo reale delle attività, dei budget e delle risorse di marketing coinvolte. Marketing Resource Management consente di ottimizzare e regolare la gestione di processi interni ed esterni, risorse e campagne di marketing, nonché le relazioni con terze parti (agenzie, stampanti, ecc.). Per ulteriori informazioni al riguardo, consulta [questa sezione](../../mrm/using/about-marketing-resource-management.md).
+Inoltre, il modulo **Gestione risorse di marketing (MRM)** consente di controllare le azioni di marketing in modalità collaborativa fornendo una gestione completa e il monitoraggio in tempo reale delle attività, dei budget e delle risorse di marketing coinvolte. Marketing Resource Management consente di ottimizzare e regolare la gestione di processi interni ed esterni, risorse e campagne di marketing, nonché le relazioni con terze parti (agenzie, stampanti, ecc.). Per ulteriori informazioni al riguardo, consulta [questa sezione](../../mrm/using/about-marketing-resource-management.md).
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle funzionalità di base di Adobe Campaign, consulta [questa sezione](../../platform/using/about-adobe-campaign-classic.md) sezione.\
+>Per ulteriori informazioni sulle funzionalità di base di Adobe Campaign, consulta [questa sezione](../../platform/using/about-adobe-campaign-classic.md).\
 >Le funzionalità relative al targeting della popolazione, alla personalizzazione dei messaggi e alla consegna dei messaggi sui vari canali sono descritte in [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ![](assets/do-not-localize/how-to-video.png) [Scopri i concetti chiave delle campagne di marketing nel video](#video)
@@ -68,4 +68,4 @@ Questo video illustra i concetti chiave delle campagne di marketing.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
-Sono disponibili altri video dimostrativi sui Campaign Classic [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
+Sono disponibili altri video dimostrativi di Campaign Classic [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

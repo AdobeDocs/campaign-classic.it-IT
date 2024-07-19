@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Modifica struttura di navigazione di Campaign Explorer{#edition}
 
-La schermata per la creazione e la configurazione dei documenti di configurazione della gerarchia di navigazione è accessibile tramite **[!UICONTROL Administration > Configuration > Navigation hierarchies]** nodo:
+La schermata per la creazione e la configurazione dei documenti di configurazione della gerarchia di navigazione è accessibile tramite il nodo **[!UICONTROL Administration > Configuration > Navigation hierarchies]**:
 
 ![](assets/d_ncs_integration_navigation_arbo.png)
 
@@ -27,7 +27,7 @@ Il campo di modifica fornisce il contenuto del documento XML:
 
 >[!NOTE]
 >
->Il controllo di modifica &quot;Nome&quot; consente di immettere la chiave del documento costituita dal nome e dallo spazio dei nomi. Gli attributi &quot;name&quot; e &quot;namespace&quot; del **`<navtree>`** vengono aggiornati automaticamente nel campo di modifica XML dello schema.
+>Il controllo di modifica &quot;Nome&quot; consente di immettere la chiave del documento costituita dal nome e dallo spazio dei nomi. Gli attributi &quot;name&quot; e &quot;namespace&quot; dell&#39;elemento **`<navtree>`** vengono aggiornati automaticamente nel campo di modifica XML dello schema.
 
 L&#39;anteprima genera automaticamente il documento unito contenente la configurazione completa:
 

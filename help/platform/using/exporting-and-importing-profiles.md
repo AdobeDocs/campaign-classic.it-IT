@@ -18,7 +18,7 @@ ht-degree: 25%
 
 
 
-È possibile [utilizzare i flussi di lavoro](#use-workflows) per importare o esportare i profili dei destinatari nel database di Adobe Campaign o impostare [processi di importazione o esportazione generici](#create-jobs).
+Puoi [utilizzare i flussi di lavoro](#use-workflows) per importare o esportare i profili dei destinatari nel database di Adobe Campaign oppure impostare [processi generici di importazione o esportazione](#create-jobs).
 
 ![](assets/do-not-localize/how-to-video.png) [Guarda il video su questa funzione](#import-profiles-video)
 
@@ -26,11 +26,11 @@ ht-degree: 25%
 
 Le esportazioni e le importazioni sono configurate in modelli dedicati eseguiti tramite flussi di lavoro tramite attività di importazione ed esportazione. Possono essere ripetuti automaticamente in base a una pianificazione, ad esempio per automatizzare lo scambio di dati tra diversi sistemi di informazione. [Ulteriori informazioni](../../platform/using/import-export-workflows.md#best-practices-when-importing-data)
 
-Se necessario, puoi creare un processo occasionale di importazione o esportazione tramite **[!UICONTROL Generic imports and exports]** funzionalità descritta di seguito.
+Se necessario, è possibile creare un processo di importazione o esportazione occasionale tramite la funzionalità **[!UICONTROL Generic imports and exports]** descritta di seguito.
 
 ## Crea processi{#create-jobs}
 
-Per configurare ed eseguire i processi di importazione ed esportazione dei dati, passare alla **[!UICONTROL Profiles and targets]** e fai clic sul pulsante **[!UICONTROL Jobs]** collegamento. [Ulteriori informazioni](../../platform/using/about-generic-imports-exports.md)
+Per configurare ed eseguire i processi di importazione ed esportazione dei dati, passare alla scheda **[!UICONTROL Profiles and targets]** e fare clic sul collegamento **[!UICONTROL Jobs]**. [Ulteriori informazioni](../../platform/using/about-generic-imports-exports.md)
 
 ![](assets/s_ncs_user_interface_import_link.png)
 
@@ -41,4 +41,4 @@ Questo video spiega come importare i profili in Adobe Campaign, per un’importa
 
 >[!VIDEO](https://video.tv.adobe.com/v/25608?quality=12)
 
-Sono disponibili altri video dimostrativi sui Campaign Classic [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
+Sono disponibili altri video dimostrativi di Campaign Classic [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

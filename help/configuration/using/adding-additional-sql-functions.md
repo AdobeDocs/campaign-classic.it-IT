@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Definire ulteriori funzioni SQL{#adding-additional-sql-functions}
 
-Adobe Campaign consente all’utente di definire **le proprie funzioni** che possono accedere alle funzioni SQL, sia quelle offerte dal database che quelle non già disponibili nella console. Questo è utile per le funzioni di aggregazione (media, massima, somma), ad esempio, che possono essere calcolate solo sul server o quando il database fornisce un modo più semplice per implementare determinate funzioni, anziché scrivere &quot;manualmente&quot; l’espressione nella console (ad esempio, gestione delle date).
+Adobe Campaign consente all&#39;utente di definire **le proprie funzioni** che possono accedere alle funzioni SQL, sia quelle offerte dal database che quelle non già disponibili nella console. Questo è utile per le funzioni di aggregazione (media, massima, somma), ad esempio, che possono essere calcolate solo sul server o quando il database fornisce un modo più semplice per implementare determinate funzioni, anziché scrivere &quot;manualmente&quot; l’espressione nella console (ad esempio, gestione delle date).
 
 Questo meccanismo può essere utilizzato anche se desideri utilizzare una funzione SQL recente o non comune del motore di database, non ancora disponibile nella console Adobe Campaign.
 
@@ -26,9 +26,9 @@ Una volta aggiunte, queste funzioni verranno visualizzate nell’editor espressi
 
 ## Installazione {#installation}
 
-Le funzioni da aggiungere si trovano in una **file &quot;package&quot; in formato XML**, la cui struttura è illustrata nel paragrafo seguente.
+Le funzioni da aggiungere si trovano in un file **&quot;package&quot; in formato XML**, la cui struttura è descritta nel paragrafo seguente.
 
-Per installarlo dalla console, seleziona la **Strumenti/Avanzate/Importa pacchetto** dal menu, quindi dal menu **[!UICONTROL Install from file]** e seguire le istruzioni della procedura guidata di importazione.
+Per installarlo dalla console, selezionare le opzioni **Strumenti/Avanzate/Importa pacchetto** dal menu, quindi **[!UICONTROL Install from file]** e seguire le istruzioni dell&#39;importazione guidata.
 
 >[!IMPORTANT]
 >
@@ -36,7 +36,7 @@ Per installarlo dalla console, seleziona la **Strumenti/Avanzate/Importa pacchet
 
 ## Struttura generale del pacchetto da importare {#general-structure-of-package-to-import}
 
-Le funzioni da aggiungere si trovano nella sezione **file &quot;package&quot;** in formato XML. Ecco un esempio:
+Le funzioni da aggiungere si trovano nel file **&quot;package&quot;** in formato XML. Ecco un esempio:
 
 ```
 <?xml version="1.0" encoding='ISO-8859-1' ?>
@@ -63,14 +63,14 @@ Le funzioni da aggiungere si trovano nella sezione **file &quot;package&quot;** 
 </package>
 ```
 
-* Il **nome**, **namespace** e **etichetta** sono solo a scopo informativo. Consentono di visualizzare un riepilogo del pacchetto nell&#39;elenco dei pacchetti installati (Explorer/Administration/Package management/Installed packages).
-* Il **buildVersion** e **buildNumber** I campi sono obbligatori. Devono corrispondere al numero del server a cui è connessa la console. Queste informazioni sono disponibili nella casella &quot;Help/About&quot; (Guida/Informazioni).
-* I seguenti blocchi: **entità** e **funclist** sono obbligatori. In funcList, i campi &quot;name&quot; e &quot;namespace&quot; sono obbligatori, ma il loro nome è lasciato alla scelta dell’utente e designano in modo univoco l’elenco delle funzioni.
+* **name**, **namespace** e **label** sono solo a scopo informativo. Consentono di visualizzare un riepilogo del pacchetto nell&#39;elenco dei pacchetti installati (Explorer/Administration/Package management/Installed packages).
+* I campi **buildVersion** e **buildNumber** sono obbligatori. Devono corrispondere al numero del server a cui è connessa la console. Queste informazioni sono disponibili nella casella &quot;Help/About&quot; (Guida/Informazioni).
+* I seguenti blocchi, **entities** e **funclist** sono obbligatori. In funcList, i campi &quot;name&quot; e &quot;namespace&quot; sono obbligatori, ma il loro nome è lasciato alla scelta dell’utente e designano in modo univoco l’elenco delle funzioni.
 
   Ciò significa che se viene importato un altro elenco di funzioni con la stessa coppia spazio dei nomi/nome (in questo caso &quot;cus::myList&quot;), le funzioni precedentemente importate verranno eliminate. Viceversa, se si modifica questa coppia spazio dei nomi/nome, la nuova serie di funzioni importate verrà aggiunta a quella precedente.
 
-* Il **gruppo** consente di specificare il gruppo di funzioni in cui le funzioni importate verranno visualizzate nell&#39;editor di funzioni. L’attributo @name può essere un nome già esistente (nel qual caso le funzioni verranno aggiunte al gruppo considerato) o un nuovo nome (nel qual caso verrà visualizzato in un nuovo gruppo).
-* Promemoria: valori possibili per l’attributo @name nel `<group>` gli elementi sono:
+* L&#39;elemento **group** consente di specificare il gruppo di funzioni in cui le funzioni importate verranno visualizzate nell&#39;editor di funzioni. L’attributo @name può essere un nome già esistente (nel qual caso le funzioni verranno aggiunte al gruppo considerato) o un nuovo nome (nel qual caso verrà visualizzato in un nuovo gruppo).
+* Promemoria: i valori possibili per l&#39;attributo @name nell&#39;elemento `<group>` sono:
 
   ```
     name="aggregate"      ( label="Aggregates"         )
@@ -86,13 +86,13 @@ Le funzioni da aggiungere si trovano nella sezione **file &quot;package&quot;** 
 >
 >Assicurati di completare l’attributo @label: questo è il nome che verrà visualizzato nell’elenco delle funzioni disponibili. Se non si immette nulla, il gruppo non avrà un nome. Tuttavia, se si immette un nome diverso da quello esistente, il nome dell&#39;intero gruppo verrà modificato.
 
-Se desideri aggiungere funzioni a diversi gruppi, puoi creare diversi `<group>`  vengono tracciati nello stesso elenco.
+Se si desidera aggiungere funzioni a diversi gruppi, è possibile tenere traccia di diversi elementi `<group>` nello stesso elenco.
 
-Infine, un’ `<group>` può contenere la definizione di una o più funzioni, ovvero lo scopo del file del pacchetto. Il  `<function>`   è descritto nel paragrafo seguente.
+Infine, un elemento `<group>` può contenere la definizione di una o più funzioni, ovvero lo scopo del file del pacchetto. `<function>`   è descritto nel paragrafo seguente.
 
 ## Descrittore di funzione &lt;function>&lt;/function> {#function-descriptor--function-}
 
-Il caso in esame è un caso generale in cui si intende fornire **implementazione di funzione**.
+Il caso presentato qui è un caso generale in cui si desidera fornire l&#39;implementazione della **funzione**.
 
 Di seguito è riportato un esempio di funzione di &quot;maturità relativa&quot; che, utilizzando un’età, indica per quanti anni la persona è stata considerata matura.
 
@@ -104,9 +104,9 @@ Di seguito è riportato un esempio di funzione di &quot;maturità relativa&quot;
     </function>
 ```
 
-Il **@name** Il campo fa riferimento al nome della funzione e &quot;args&quot; è l’elenco dei parametri che verranno visualizzati nella descrizione. In questo caso, la funzione verrà visualizzata come &quot;relativeMaturity ( `<age>` )&quot; nella finestra di selezione della funzione.
+Il campo **@name** fa riferimento al nome della funzione e &quot;args&quot; è l&#39;elenco dei parametri che verranno visualizzati nella descrizione. In questo caso, la funzione verrà visualizzata come &quot;relativeMaturity ( `<age>` )&quot; nella finestra di selezione della funzione.
 
-* **aiuto** è il campo visualizzato nella parte inferiore della finestra dell’editor di espressioni.
+* **help** è il campo visualizzato nella parte inferiore della finestra dell&#39;editor espressioni.
 * **@display** è un messaggio informativo.
 
   >[!NOTE]
@@ -117,12 +117,12 @@ Il **@name** Il campo fa riferimento al nome della funzione e &quot;args&quot; �
   >
   >La descrizione deve essere una stringa di caratteri XML validi: nota l’utilizzo di &quot;&lt;&quot; e &quot;>&quot; invece di &lt; e >.
 
-* **@type** è il tipo restituito della funzione ed è un valore standard (long, string, byte, datetime...). Se viene omesso, il server determina il tipo migliore tra i tipi disponibili all’interno dell’espressione che implementa la funzione.
-* **@minArgs** e **maxArgs** indica il numero di parametri (minimo e massimo) di un parametro. Ad esempio, per una funzione con 2 parametri, minArgs e maxArgs saranno 2 e 2. Per 3 parametri, più 1 facoltativo, saranno rispettivamente 3 e 4.
-* Infine, la **providerPart** fornisce l&#39;implementazione della funzione.
+* **@type** è il tipo restituito dalla funzione ed è un valore standard (long, string, byte, datetime...). Se viene omesso, il server determina il tipo migliore tra i tipi disponibili all’interno dell’espressione che implementa la funzione.
+* **@minArgs** e **maxArgs** indicano il numero di parametri (minimo e massimo) per un parametro. Ad esempio, per una funzione con 2 parametri, minArgs e maxArgs saranno 2 e 2. Per 3 parametri, più 1 facoltativo, saranno rispettivamente 3 e 4.
+* Infine, l&#39;elemento **providerPart** fornisce l&#39;implementazione della funzione.
 
-   * Il **provider** è obbligatorio, specifica i sistemi di database per i quali viene fornita l’implementazione. Come mostrato nell’esempio, quando le sintassi delle espressioni o le funzioni sottostanti differiscono, è possibile fornire implementazioni alternative in base al database.
-   * Il **@body** contiene l&#39;implementazione della funzione. Nota: questa implementazione deve essere un&#39;espressione nel linguaggio del database (non un blocco di codice). A seconda dei database, le espressioni possono essere sottoquery (&quot;(seleziona una colonna dalla tabella dove...)&quot;) che restituiscono un solo valore. Questo è il caso, ad esempio, dell’Oracle (la query deve essere scritta tra parentesi).
+   * L&#39;attributo **provider** è obbligatorio e specifica i sistemi di database per i quali viene fornita l&#39;implementazione. Come mostrato nell’esempio, quando le sintassi delle espressioni o le funzioni sottostanti differiscono, è possibile fornire implementazioni alternative in base al database.
+   * L&#39;attributo **@body** contiene l&#39;implementazione della funzione. Nota: questa implementazione deve essere un&#39;espressione nel linguaggio del database (non un blocco di codice). A seconda dei database, le espressioni possono essere sottoquery (&quot;(seleziona una colonna dalla tabella dove...)&quot;) che restituiscono un solo valore. Questo è il caso, ad esempio, dell’Oracle (la query deve essere scritta tra parentesi).
 
   >[!NOTE]
   >
@@ -130,7 +130,7 @@ Il **@name** Il campo fa riferimento al nome della funzione e &quot;args&quot; �
 
 ## Descrittore di funzione &quot;Pass-through&quot; {#pass-through--function-descriptor}
 
-Un descrittore di funzione speciale è **&quot;pass-through&quot;** con un sistema di database &quot;provider&quot; non specificato. In questo caso, l’implementazione &quot;body&quot; può contenere solo una singola chiamata di funzione con una sintassi che non dipende dal database utilizzato. Nel frattempo, il blocco &quot;ProviderPart&quot; è univoco.
+Un descrittore di funzione speciale è il blocco **&quot;pass-through&quot;**, con un sistema di database &quot;provider&quot; non specificato. In questo caso, l’implementazione &quot;body&quot; può contenere solo una singola chiamata di funzione con una sintassi che non dipende dal database utilizzato. Nel frattempo, il blocco &quot;ProviderPart&quot; è univoco.
 
 ```
     <function name="CountAll" args="()" help="Counts the values returned (all fields together)"

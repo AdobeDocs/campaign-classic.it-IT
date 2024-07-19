@@ -21,7 +21,7 @@ ht-degree: 2%
 
 ## Definizione del campo di applicazione {#definition-of-the-scope}
 
-Apri **[!UICONTROL Scope]** per scegliere le impostazioni.
+Apri la scheda **[!UICONTROL Scope]** per scegliere le impostazioni.
 
 I seguenti elementi sono obbligatori:
 
@@ -48,8 +48,8 @@ Puoi anche scegliere di eseguire la simulazione su tutte le offerte o solo su qu
 
 ## Aggiunta di assi di reporting {#adding-reporting-axes}
 
-Puoi migliorare l’analisi della simulazione aggiungendo assi di reporting sul target o sulle offerte stesse tramite **[!UICONTROL Calculations]** scheda.
+È possibile migliorare l&#39;analisi di simulazione aggiungendo assi di reporting sul target o sulle offerte stesse tramite la scheda **[!UICONTROL Calculations]**.
 
-A questo scopo, fai clic su **[!UICONTROL Add]** e scegliere i campi appropriati. Gli assi vengono utilizzati per il calcolo della simulazione e vengono visualizzati nel rapporto di analisi. Per ulteriori informazioni, consulta [Tracciamento della simulazione](../../interaction/using/simulation-tracking.md).
+A tale scopo, fare clic sul pulsante **[!UICONTROL Add]** e scegliere i campi appropriati. Gli assi vengono utilizzati per il calcolo della simulazione e vengono visualizzati nel rapporto di analisi. Per ulteriori informazioni, consulta [Tracciamento della simulazione](../../interaction/using/simulation-tracking.md).
 
 ![](assets/offer_simulation_011.png)

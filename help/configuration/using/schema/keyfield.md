@@ -26,7 +26,7 @@ keyfield:==VUOTO
 
 ## Padri {#parents-9}
 
-`<key>`  ,  `<dbindex />`
+`<key>` , `<dbindex />`
 
 ## Elementi figli {#children-9}
 
@@ -38,8 +38,8 @@ Questo elemento definisce i campi da integrare in un indice o in una chiave.
 
 ## Descrizione attributo {#attribute-description-9}
 
-* **xlink (MNTOKEN)**: consente di fare riferimento automaticamente alle chiavi esterne definite nel join per una tabella di relazione (collegamento N-N).
-* **xpath (MNTOKEN)**: definizione di un indice o di una chiave su un `<attribute>`  elemento. Questo attributo riceve un Xpath che definisce il percorso dell’attributo dello schema che definisce la chiave o l’indice.
+* **xlink (MNTOKEN)**: consente di fare riferimento automaticamente alle chiavi esterne definite nel join per una tabella di relazioni (collegamento N-N).
+* **xpath (MNTOKEN)**: definizione di un indice o di una chiave in un elemento `<attribute>`. Questo attributo riceve un Xpath che definisce il percorso dell’attributo dello schema che definisce la chiave o l’indice.
 
 ## Esempi {#examples-}
 

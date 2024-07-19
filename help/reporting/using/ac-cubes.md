@@ -15,7 +15,7 @@ ht-degree: 25%
 
 
 
-L&#39;esplorazione dei dati nel database è offerta tramite **Marketing Analytics** modulo. Consente di analizzare e misurare i dati, calcolare le statistiche, semplificare e ottimizzare la creazione e il calcolo dei rapporti. Inoltre, Marketing Analytics consente di creare rapporti e creare popolazioni target. Una volta identificati, questi vengono memorizzati in elenchi che possono essere utilizzati in Adobe Campaign (targeting, segmentazione, ecc.).
+L&#39;esplorazione dei dati nel database è offerta tramite il modulo **Marketing Analytics**. Consente di analizzare e misurare i dati, calcolare le statistiche, semplificare e ottimizzare la creazione e il calcolo dei rapporti. Inoltre, Marketing Analytics consente di creare rapporti e creare popolazioni target. Una volta identificati, questi vengono memorizzati in elenchi che possono essere utilizzati in Adobe Campaign (targeting, segmentazione, ecc.).
 
 I cubi vengono utilizzati per generare alcuni rapporti incorporati, inclusi i rapporti di consegna (tracciamento della consegna, clic, aperture, ecc.). I rapporti basati su cubi possono essere utilizzati solo come standard per volumi di dati inferiori a 5 milioni di righe di dati.
 
@@ -45,4 +45,4 @@ Utilizza il modulo Marketing Analytics di Campaign per:
 1. Creare una query utilizzando i dati calcolati e aggregati in un cubo.
 1. Identificare le popolazioni e farvi riferimento negli elenchi.
 
-Scopri come creare e utilizzare i cubi in [Documentazione di Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html?lang=it){target="_blank"}.
+Scopri come creare e utilizzare i cubi nella [documentazione di Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html?lang=it){target="_blank"}.

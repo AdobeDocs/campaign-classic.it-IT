@@ -29,7 +29,7 @@ Adobe Campaign consente di memorizzare date/ore in formato UTC (Coordinated Univ
 
 Le principali funzionalità della piattaforma relative alla gestione del fuso orario sono: importazione/esportazione di dati e gestione degli operatori e dei flussi di lavoro. Il **concetto di ereditarietà** è disponibile per importazioni/esportazioni o flussi di lavoro. Per impostazione predefinita, sono configurati per il fuso orario del server di database, tuttavia è possibile ridefinire nuovi fusi orari per un flusso di lavoro e anche per una singola attività.
 
-**Operatori** può modificare i fusi orari durante **configurazione della consegna** e può specificare il particolare fuso orario in cui verrà eseguita la consegna.
+**Gli operatori** possono modificare i fusi orari durante **la configurazione del recapito** e specificare il fuso orario specifico in cui verrà eseguita la consegna.
 
 >[!IMPORTANT]
 >
@@ -43,18 +43,18 @@ Quando la piattaforma Adobe Campaign non richiede la gestione del fuso orario, p
 
 I fusi orari combinano diverse realtà: l’espressione può descrivere un’attesa costante con la data UTC, oppure le ore di una regione che possono cambiare le ore due volte all’anno (ora legale).
 
-Ad esempio, in postgreSQL, il **SET TIME ZONE &#39;Europa/Parigi&#39;;** Il comando terrà conto dell&#39;ora legale e invernale: la data sarà espressa in UTC+1 o UTC+2 a seconda dell&#39;ora dell&#39;anno.
+Ad esempio, in postgreSQL, il comando **IMPOSTA FUSO ORARIO &#39;Europa/Parigi&#39;;** terrà conto degli orari estivi e invernali: la data verrà espressa in UTC+1 o UTC+2 a seconda dell&#39;ora dell&#39;anno.
 
-Tuttavia, se utilizzi il **IMPOSTARE IL FUSO ORARIO 0200;** , l&#39;intervallo di tempo sarà sempre UTC+2.
+Tuttavia, se si utilizza il comando **SET TIME ZONE 0200;**, l&#39;intervallo di tempo sarà sempre UTC+2.
 
 ## Configurazione {#configuration}
 
-La modalità di archiviazione per date e ore viene selezionata durante la creazione del database (fare riferimento a [Creazione di una nuova istanza](#creating-a-new-instance)). In caso di migrazione, le ore collegate alle date vengono convertite in date e ore locali (fare riferimento a [Migrazione](#migration)).
+La modalità di archiviazione per date e ore è selezionata durante la creazione del database (fare riferimento a [Creazione di una nuova istanza](#creating-a-new-instance)). In caso di migrazione, le ore collegate alle date vengono convertite in date e ore locali (fare riferimento a [Migrazione](#migration)).
 
-Da un punto di vista tecnico, esistono due modi per archiviare **Data e ora** informazioni sul tipo nel database:
+Da un punto di vista tecnico, esistono due modi per memorizzare le informazioni di tipo **Data+ora** nel database:
 
 1. TIMESTAMP WITH TIMEZONE format (MARCA TEMPORALE CON FORMATO FUSO ORARIO): il motore di database memorizza le date in UTC. Ogni sessione aperta avrà un fuso orario e le date verranno convertite in base a esso.
-1. Formato locale + fuso orario locale: tutte le date vengono memorizzate nel formato locale (nessuna gestione degli intervalli di tempo) e a esse viene assegnato un singolo fuso orario. Il fuso orario viene memorizzato in **WdbcTimeZone** dell&#39;istanza di Adobe Campaign e possono essere modificate tramite il **[!UICONTROL Administration > Platform > Options]** menu dell&#39;albero.
+1. Formato locale + fuso orario locale: tutte le date vengono memorizzate nel formato locale (nessuna gestione degli intervalli di tempo) e a esse viene assegnato un singolo fuso orario. Il fuso orario è memorizzato nell&#39;opzione **WdbcTimeZone** dell&#39;istanza di Adobe Campaign e può essere modificato tramite il menu **[!UICONTROL Administration > Platform > Options]** della struttura.
 
 >[!IMPORTANT]
 >
@@ -62,21 +62,21 @@ Da un punto di vista tecnico, esistono due modi per archiviare **Data e ora** in
 
 ### Creazione di una nuova istanza {#creating-a-new-instance}
 
-Affinché diversi utenti internazionali possano lavorare sulla stessa istanza, è necessario configurare i fusi orari durante la creazione dell’istanza per gestire gli intervalli tra i paesi. Durante la creazione dell’istanza, seleziona la modalità di gestione data e ora in **[!UICONTROL Time zone]** sezione della fase di configurazione del database.
+Affinché diversi utenti internazionali possano lavorare sulla stessa istanza, è necessario configurare i fusi orari durante la creazione dell’istanza per gestire gli intervalli tra i paesi. Durante la creazione dell&#39;istanza, selezionare la modalità di gestione data e ora nella sezione **[!UICONTROL Time zone]** della fase di configurazione del database.
 
-Controlla la **[!UICONTROL UTC database (date fields with time zone)]** opzione per memorizzare tutti i dati con data e ora in formato UTC (campi SQL e campi XML).
+Selezionare l&#39;opzione **[!UICONTROL UTC database (date fields with time zone)]** per memorizzare tutti i dati con data e ora in formato UTC (campi SQL e campi XML).
 
 ![](assets/install_wz_select_utc_option.png)
 
 >[!IMPORTANT]
 >
->Se sta usando **Oracle**, i file del fuso orario (dat) dei livelli client Oracle devono essere compatibili con i file dei fusi orari installati sul server.
+>Se si utilizza **Oracle**, i file del fuso orario (dat) dei livelli client Oracle devono essere compatibili con i file dei fusi orari installati nel server.
 
 Se il database non è UTC, è possibile selezionare uno dei fusi orari disponibili nell&#39;elenco a discesa. È inoltre possibile utilizzare il fuso orario del server o selezionare l&#39;opzione UTC (Coordinated Universal Time).
 
 ![](assets/install_wz_unselect_utc_option.png)
 
-Quando **[!UICONTROL UTC Database (date fields with time zone)]** Se l&#39;opzione è selezionata, i campi SQL vengono memorizzati in formato TIMESTAMP WITH TIMEZONE.
+Quando l&#39;opzione **[!UICONTROL UTC Database (date fields with time zone)]** è selezionata, i campi SQL vengono memorizzati in formato TIMESTAMP WITH TIMEZONE.
 
 In caso contrario, vengono archiviati nel formato locale e sarà necessario selezionare il fuso orario da applicare al database.
 
@@ -84,11 +84,11 @@ In caso contrario, vengono archiviati nel formato locale e sarà necessario sele
 
 Durante la migrazione a una versione precedente (senza la gestione del fuso orario), è necessario definire la modalità di archiviazione della data nel database.
 
-Per garantire la compatibilità con gli strumenti esterni che accedono al database di Adobe Campaign, il **Data e ora** i campi SQL di tipo rimangono memorizzati nel formato locale per impostazione predefinita.
+Per garantire la compatibilità con gli strumenti esterni che accedono al database di Adobe Campaign, i campi SQL di tipo **Data+ora** rimangono memorizzati nel formato locale per impostazione predefinita.
 
 I campi XML contenenti date ora sono memorizzati in formato UTC. Durante il caricamento, i campi non in formato UTC vengono convertiti automaticamente utilizzando il fuso orario dei server. Ciò significa che tutti i campi XML verranno progressivamente convertiti in formato UTC.
 
-Per utilizzare un’istanza esistente, aggiungi **WdbcTimeZone** e immettere il fuso orario dell&#39;istanza.
+Per utilizzare un&#39;istanza esistente, aggiungere l&#39;opzione **WdbcTimeZone** e immettere il fuso orario dell&#39;istanza.
 
 >[!IMPORTANT]
 >
@@ -100,7 +100,7 @@ Esempio di valori possibili:
 * Europa/Londra,
 * America/New_York, ecc.
 
-  Questi valori vengono ricavati dal database tz (Olson). Per ulteriori informazioni, consulta [https://en.wikipedia.org/wiki/List_of_tz_database_time_zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+  Questi valori vengono ricavati dal database tz (Olson). Per ulteriori informazioni, consultare [https://en.wikipedia.org/wiki/List_of_tz_database_time_zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
 
 ## Fuso orario del database e del server Oracle
 

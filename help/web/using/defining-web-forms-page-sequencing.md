@@ -20,23 +20,23 @@ Il modulo può contenere una o più pagine. Viene creato tramite un diagramma ch
 
 ## Informazioni sulla pagina precedente e su quella successiva {#about-previous-page-and-next-page}
 
-Per ogni pagina, puoi eliminare **[!UICONTROL Next]** o **[!UICONTROL Previous]** pulsanti. A questo scopo, seleziona la pagina interessata e l’opzione **[!UICONTROL Disable next page]** o **[!UICONTROL Disallow returning to the previous page]** .
+Per ogni pagina è possibile eliminare i pulsanti **[!UICONTROL Next]** o **[!UICONTROL Previous]**. A tale scopo, selezionare la pagina interessata e selezionare l&#39;opzione **[!UICONTROL Disable next page]** o **[!UICONTROL Disallow returning to the previous page]**.
 
 ![](assets/s_ncs_admin_survey_no_next_page.png)
 
-È possibile sostituire questi pulsanti con collegamenti. Consulta [Inserimento di contenuto HTML](static-elements-in-a-web-form.md#inserting-html-content).
+È possibile sostituire questi pulsanti con collegamenti. Vedere [Inserimento di contenuto HTML](static-elements-in-a-web-form.md#inserting-html-content).
 
 ## Inserimento di un salto {#inserting-a-jump}
 
-Il **[!UICONTROL Jump]** L&#39;oggetto consente di accedere a un&#39;altra pagina o a un altro modulo quando l&#39;utente fa clic su **[!UICONTROL Next]**.
+L&#39;oggetto **[!UICONTROL Jump]** consente l&#39;accesso a un&#39;altra pagina o a un altro modulo quando l&#39;utente fa clic su **[!UICONTROL Next]**.
 
 La destinazione può essere:
 
-* Un&#39;altra pagina del modulo. A questo scopo, seleziona **[!UICONTROL Internal activity]** quindi specifica la pagina desiderata, come indicato di seguito:
+* Un&#39;altra pagina del modulo. A tale scopo, selezionare **[!UICONTROL Internal activity]** e quindi specificare la pagina desiderata, come indicato di seguito:
 
   ![](assets/s_ncs_admin_jump_param1.png)
 
-* Un altro modulo. A questo scopo, seleziona la **[!UICONTROL Explicit]** e specificare il modulo di destinazione.
+* Un altro modulo. A tale scopo, selezionare l&#39;opzione **[!UICONTROL Explicit]** e specificare il modulo di destinazione.
 
   ![](assets/s_ncs_admin_jump_param2.png)
 
@@ -44,7 +44,7 @@ La destinazione può essere:
 
   ![](assets/s_ncs_admin_jump_param3.png)
 
-* Il **[!UICONTROL Comment]** scheda consente di immettere informazioni che saranno visibili dall&#39;operatore quando farà clic sull&#39;oggetto nel diagramma.
+* La scheda **[!UICONTROL Comment]** consente di immettere informazioni che saranno visibili dall&#39;operatore quando farà clic sull&#39;oggetto nel diagramma.
 
   ![](assets/s_ncs_admin_survey_jump_comment.png)
 
@@ -52,15 +52,15 @@ La destinazione può essere:
 
 Nell’esempio seguente, vogliamo configurare un modulo web che, se approvato, visualizzerà un altro modulo designato da un parametro dell’URL. A questo scopo, esegui i seguenti passaggi:
 
-1. Inserisce un salto alla fine di un modulo: questo sostituisce il **[!UICONTROL End]** casella.
+1. Inserisce un salto alla fine di un modulo: sostituisce la casella **[!UICONTROL End]**.
 
    ![](assets/s_ncs_admin_survey_jump_sample1.png)
 
-1. Nelle proprietà del modulo, aggiungi un parametro (**avanti**) memorizzato in una variabile locale (**avanti**). Le variabili locali sono descritte in dettaglio [Memorizzazione dei dati in una variabile locale](web-forms-answers.md#storing-data-in-a-local-variable).
+1. Nelle proprietà del modulo, aggiungi un parametro (**next**) memorizzato in una variabile locale (**next**). Le variabili locali sono descritte in dettaglio in [Memorizzazione dei dati in una variabile locale](web-forms-answers.md#storing-data-in-a-local-variable).
 
    ![](assets/s_ncs_admin_survey_jump_sample2.png)
 
-1. Modifica il **[!UICONTROL Jump]** oggetto, selezionare il **[!UICONTROL Stored in a variable]** e selezionare il **avanti** dalla casella a discesa.
+1. Modifica l&#39;oggetto **[!UICONTROL Jump]**, seleziona l&#39;opzione **[!UICONTROL Stored in a variable]** e seleziona la variabile **next** dalla casella a discesa.
 
    ![](assets/s_ncs_admin_survey_jump_sample3.png)
 
@@ -70,19 +70,19 @@ Nell’esempio seguente, vogliamo configurare un modulo web che, se approvato, v
    https://[myserver]/webForm/APP62?&next=APP22
    ```
 
-   Quando l’utente fa clic su **[!UICONTROL Approve]** pulsante, modulo **APP22** viene visualizzato.
+   Quando l&#39;utente fa clic sul pulsante **[!UICONTROL Approve]**, viene visualizzato il modulo **APP22**.
 
 ## Inserimento di un collegamento a un&#39;altra pagina del modulo {#inserting-a-link-to-another-page-of-the-form}
 
-È possibile inserire collegamenti ad altre pagine del modulo. Per eseguire questa operazione, aggiungi un **[!UICONTROL Link]** digita elemento statico nella pagina. Per ulteriori informazioni, consulta [Inserimento di un collegamento](static-elements-in-a-web-form.md#inserting-a-link).
+È possibile inserire collegamenti ad altre pagine del modulo. Per eseguire questa operazione, aggiungere alla pagina un elemento statico di tipo **[!UICONTROL Link]**. Per ulteriori informazioni, consulta [Inserimento di un collegamento](static-elements-in-a-web-form.md#inserting-a-link).
 
 ## Visualizzazione pagina condizionale {#conditional-page-display}
 
 ### Visualizza in base alle risposte {#display-based-on-responses}
 
-Il **[!UICONTROL Test]** consente di condizionare la sequenza delle pagine in un modulo. Consente di definire varie linee di diramazione in base ai risultati del test. Questo consente di visualizzare pagine diverse a seconda delle risposte fornite dagli utenti.
+La casella **[!UICONTROL Test]** consente di condizionare la sequenza delle pagine in un modulo. Consente di definire varie linee di diramazione in base ai risultati del test. Questo consente di visualizzare pagine diverse a seconda delle risposte fornite dagli utenti.
 
-Ad esempio, puoi visualizzare una pagina diversa per i clienti che hanno già effettuato un ordine online e un’altra per quelli che hanno effettuato più di dieci ordini. A tale scopo, nella prima pagina del modulo inserire un **[!UICONTROL Number]** digita un campo di immissione per l’utente per indicare quanti ordini ha effettuato.
+Ad esempio, puoi visualizzare una pagina diversa per i clienti che hanno già effettuato un ordine online e un’altra per quelli che hanno effettuato più di dieci ordini. A tale scopo, nella prima pagina del modulo inserire un campo di input di tipo **[!UICONTROL Number]** in modo che l&#39;utente possa indicare il numero di ordini che ha effettuato.
 
 ![](assets/s_ncs_admin_survey_test_ex0.png)
 
@@ -90,7 +90,7 @@ Ad esempio, puoi visualizzare una pagina diversa per i clienti che hanno già ef
 
 >[!NOTE]
 >
->Le modalità di archiviazione sono descritte in dettaglio in [Campi di archiviazione delle risposte](web-forms-answers.md#response-storage-fields).
+>Le modalità di archiviazione sono descritte in dettaglio nei [campi di archiviazione delle risposte](web-forms-answers.md#response-storage-fields).
 
 Nel nostro esempio, vogliamo utilizzare una variabile:
 
@@ -100,7 +100,7 @@ Nel diagramma del modulo inserire una casella di prova per definire le condizion
 
 ![](assets/s_ncs_admin_survey_test_ex2.png)
 
-Seleziona la **[!UICONTROL Activate the default branching]** per aggiungere una transizione nei casi in cui nessuna delle condizioni sia vera. Questa opzione non è necessaria se le condizioni definite riguardano tutti i casi possibili.
+Selezionare l&#39;opzione **[!UICONTROL Activate the default branching]** per aggiungere una transizione per i casi in cui nessuna delle condizioni è vera. Questa opzione non è necessaria se le condizioni definite riguardano tutti i casi possibili.
 
 Quindi, definisci la sequenza di pagine quando una delle due condizioni è vera, ad esempio:
 
@@ -108,19 +108,19 @@ Quindi, definisci la sequenza di pagine quando una delle due condizioni è vera,
 
 ### Visualizza in base ai parametri {#display-based-on-parameters}
 
-È inoltre possibile personalizzare la sequenza di pagine in base ai parametri di inizializzazione del modulo Web o ai valori memorizzati nel database. Consulta [Parametri URL modulo](defining-web-forms-properties.md#form-url-parameters).
+È inoltre possibile personalizzare la sequenza di pagine in base ai parametri di inizializzazione del modulo Web o ai valori memorizzati nel database. Vedi [Parametri URL modulo](defining-web-forms-properties.md#form-url-parameters).
 
 ## Aggiunta di script {#adding-scripts}
 
-Il **[!UICONTROL Script]** object consente di immettere direttamente uno script JavaScript, ad esempio per modificare il valore di un campo, recuperare dati dal database o richiamare un’API Adobe Campaign.
+L&#39;oggetto **[!UICONTROL Script]** consente di immettere direttamente uno script JavaScript, ad esempio per modificare il valore di un campo, recuperare dati dal database o chiamare un&#39;API Adobe Campaign.
 
 ## Personalizzazione della pagina finale {#personalizing-the-end-page}
 
-Inserire una pagina finale alla fine del diagramma. La pagina finale viene visualizzata quando l’utente fa clic su **[!UICONTROL Approve]** nel modulo Web.
+Inserire una pagina finale alla fine del diagramma. La pagina finale viene visualizzata quando l&#39;utente fa clic sul pulsante **[!UICONTROL Approve]** nel modulo Web.
 
-Per personalizzare questa pagina, fare doppio clic su **[!UICONTROL End]** e inserisci il contenuto della pagina nell’editor centrale.
+Per personalizzare la pagina, fare doppio clic su **[!UICONTROL End]** e immettere il contenuto della pagina nell&#39;editor centrale.
 
 ![](assets/s_ncs_admin_survey_end_page_edit.png)
 
-* Puoi copiare e incollare il contenuto HTML esistente. A questo scopo, fai clic su **[!UICONTROL Display source code]** e inserire il codice HTML.
+* Puoi copiare e incollare il contenuto HTML esistente. A tale scopo, fare clic su **[!UICONTROL Display source code]** e inserire il codice HTML.
 * Puoi utilizzare un URL esterno; a questo scopo, seleziona l’opzione corrispondente e immetti l’URL della pagina da visualizzare.

@@ -15,22 +15,22 @@ ht-degree: 4%
 
 L’infrastruttura di Campaign si basa su sistemi di terze parti che devono essere regolarmente aggiornati con le versioni e le correzioni più recenti. Questi aggiornamenti sono obbligatori per garantire la continuità del servizio e la protezione degli ambienti Campaign dai rischi di sicurezza. Inoltre, è necessario un aggiornamento di Campaign per garantire la compatibilità con modifiche al sistema di terze parti.
 
-As a **Cliente di Cloud Service in hosting o gestiti**, Adobe fornisce informazioni su questi aggiornamenti quando sono necessari. Sarà necessario aggiornare gli ambienti in conformità con le raccomandazioni per garantire la conformità.
+In qualità di cliente di **Cloud Service in hosting o gestiti**, Adobe ti informa su questi aggiornamenti quando sono necessari. Sarà necessario aggiornare gli ambienti in conformità con le raccomandazioni per garantire la conformità.
 
-Come un **Cliente on-premise o ibrido**, Adobe consiglia vivamente di aggiornare le versioni di sistema e Campaign in base allo stesso calendario.
+In qualità di **cliente on-premise o ibrido**, Adobe consiglia vivamente di aggiornare le versioni di sistema e Campaign in base allo stesso calendario.
 
-Per motivi di sicurezza, è necessario [installare la build Campaign più recente](#ac-upgrade), quindi aggiornare il [sistema operativo](#os-upgrade) e/o [Sistema di gestione del database relazionale (RDBMS)](#pg-upgrade).
+Per motivi di sicurezza, è necessario [installare la build Campaign più recente](#ac-upgrade), quindi aggiornare il [sistema operativo](#os-upgrade) e/o il [sistema di gestione del database relazionale (RDBMS)](#pg-upgrade).
 
 >[!NOTE]
 >
->Per qualsiasi domanda su queste modifiche, contatta [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Consulta anche [Domande frequenti sull’aggiornamento della build](../../platform/using/faq-build-upgrade.md).
+>Per qualsiasi domanda su queste modifiche, contatta [l&#39;Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Consulta anche le [Domande frequenti sull&#39;aggiornamento della build](../../platform/using/faq-build-upgrade.md).
 >
 
 ## Aggiornamento della build di Campaign {#ac-upgrade}
 
 **Sei interessato da questo problema?**
 
-Se è interessato da [aggiornamento del sistema operativo](#os-upgrade) e/o [aggiornamento del sistema del database](#pg-upgrade) descritto di seguito, devi aggiornare gli ambienti Campaign a [ultima versione 7.3.2](../../rn/using/latest-release.md#release-7-3-2), compatibile con questi sistemi.
+Se sei interessato dall&#39;[aggiornamento del sistema operativo](#os-upgrade) e/o dall&#39;[aggiornamento del sistema di database](#pg-upgrade) descritto di seguito, devi aggiornare gli ambienti Campaign alla [versione 7.3.2 più recente](../../rn/using/latest-release.md#release-7-3-2), compatibile con questi sistemi.
 
 **Come si esegue l’aggiornamento?**
 
@@ -43,7 +43,7 @@ Se è interessato da [aggiornamento del sistema operativo](#os-upgrade) e/o [agg
 
 **Sei interessato da questo problema?**
 
-Se esegui Campaign su un sistema operativo Debian, per beneficiare degli ultimi aggiornamenti di sicurezza Debian, devi spostare l’infrastruttura Campaign in **Debian 11**. Tieni presente che il supporto per la sicurezza di Debian 9 sarà disponibile fino al 30 giugno 2023.
+Se esegui Campaign su un sistema operativo Debian, per beneficiare degli ultimi aggiornamenti di sicurezza Debian, devi spostare l’infrastruttura Campaign su **Debian 11**. Tieni presente che il supporto per la sicurezza di Debian 9 sarà disponibile fino al 30 giugno 2023.
 
 **Come si esegue l’aggiornamento?**
 
@@ -55,7 +55,7 @@ Se esegui Campaign su un sistema operativo Debian, per beneficiare degli ultimi 
 
 **Sei interessato da questo problema?**
 
-Se il sistema di database per Campaign è PostgreSQL, per beneficiare delle ultime innovazioni PostgreSQL e degli aggiornamenti di sicurezza, è necessario eseguire l’aggiornamento a **PostgreSQL 14**. Il 9 novembre 2023 PostgreSQL 11 raggiungerà la fine del ciclo di vita.
+Se il sistema di database per Campaign è PostgreSQL, per usufruire delle ultime innovazioni PostgreSQL e degli aggiornamenti di sicurezza, è necessario eseguire l&#39;aggiornamento a **PostgreSQL 14**. Il 9 novembre 2023 PostgreSQL 11 raggiungerà la fine del ciclo di vita.
 
 **Come si esegue l’aggiornamento?**
 

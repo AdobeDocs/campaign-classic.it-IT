@@ -42,7 +42,7 @@ In qualità di utente esperto, puoi configurare le funzionalità di tracking nel
 
 ## Come configurare il recapito messaggi e-mail? {#how-to-configure-email-deliverability-}
 
-Oltre al [Guida alle procedure consigliate per la consegna dei messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it), consulta le raccomandazioni tecniche per il recapito dei messaggi per scoprire come configurare la tua istanza per massimizzare le funzionalità di consegna di Campaign.
+Adobe Oltre alla [Guida alle best practice per il recapito messaggi](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it), consulta le raccomandazioni tecniche per il recapito messaggi per scoprire come configurare la tua istanza per massimizzare le funzionalità di consegna di Campaign.
 
 [Fai clic qui per ulteriori informazioni](../../delivery/using/about-deliverability.md).
 
@@ -74,9 +74,9 @@ Adobe Campaign fornisce diversi connettori di gestione delle relazioni con i cli
 
 Questi connettori consentono un’integrazione rapida e semplice dei dati: Adobe Campaign offre una procedura guidata dedicata per la raccolta e la selezione dalle tabelle disponibili nella gestione delle relazioni con i clienti. Ciò garantisce la sincronizzazione bidirezionale per far sì che i dati siano sempre aggiornati in tutti i sistemi.
 
-Leggete [Configurare i connettori CRM](../../platform/using/crm-connectors.md) per scoprire come sincronizzare il tuo strumento CRM con Adobe Campaign.
+Consulta [Configurare i connettori di gestione delle relazioni con i clienti](../../platform/using/crm-connectors.md) per scoprire come sincronizzare il tuo strumento di gestione delle relazioni con i clienti con Adobe Campaign.
 
-![](assets/do-not-localize/how-to-video.png) Guarda questo video relativo al caso d’uso su [Integrazione tra Adobe Campaign e Microsoft Dynamics 365](https://helpx.adobe.com/it/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
+![](assets/do-not-localize/how-to-video.png) Guarda questo video relativo al caso d&#39;uso sull&#39;[integrazione di Adobe Campaign e Microsoft Dynamics 365](https://helpx.adobe.com/it/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
 
 ## Come si esegue la cancellazione della Soft Cache quando i problemi riguardano nello specifico il computer o l’utente? {#perform-soft-cache-clear}
 

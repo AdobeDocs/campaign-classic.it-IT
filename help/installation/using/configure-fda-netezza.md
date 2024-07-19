@@ -18,10 +18,10 @@ ht-degree: 0%
 
 
 
-Utilizzare Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) per elaborare le informazioni memorizzate in un database esterno. Segui i passaggi seguenti per configurare l’accesso a Netezza.
+Utilizza l&#39;opzione [Federated Data Access](../../installation/using/about-fda.md) (FDA) di Campaign per elaborare le informazioni archiviate in un database esterno. Segui i passaggi seguenti per configurare l’accesso a Netezza.
 
-1. Installare e configurare [Netezza driver](#netezza-config)
-1. Configurare la Netezza [account esterno](#netezza-external) in Campaign
+1. Installa e configura [driver di Netezza](#netezza-config)
+1. Configura l&#39;[account esterno](#netezza-external) di Netezza in Campaign
 
 ## Netezza configurazione {#netezza-config}
 
@@ -32,7 +32,7 @@ La connessione a un database esterno Netezza in FDA richiede configurazioni aggi
    * **nz-linuxclient-v7.2.0.0.tar.gz** per Linux. Seleziona la cartella corrispondente al sistema operativo in uso (linux o linux64) e avvia il comando unpack. È possibile lasciare che l’installazione venga eseguita nell’archivio suggerito per impostazione predefinita: &quot;/usr/local/nz&quot;.
    * **nz-winclient-v7.2.0.0.zip** per Windows. Decomprimere il file e avviare lo script eseguibile corrispondente al sistema operativo: nzodbcsetup.exe o nzodbcsetup64.exe. Seguire le istruzioni della procedura guidata per completare l&#39;installazione dei driver.
 
-1. Configurare il driver ODBC. La configurazione può essere eseguita nei file standard: **/etc/odbc.ini** per i parametri generali e **/etc/odbcinst.ini** per la dichiarazione dei driver.
+1. Configurare il driver ODBC. La configurazione può essere eseguita nei file standard: **/etc/odbc.ini** per i parametri generali e **/etc/odbcinst.ini** per i driver dichiaranti.
 
    * **/etc/odbc.ini**
 
@@ -67,26 +67,26 @@ La connessione a un database esterno Netezza in FDA richiede configurazioni aggi
 1. Specifica le variabili di ambiente del server Adobe Campaign:
 
    * **LD_LIBRARY_PATH**: /usr/local/nz/lib e /usr/local/nz/lib64. &quot;/usr/local/nz&quot; corrisponde all&#39;archivio di installazione offerto per impostazione predefinita durante l&#39;installazione dei driver. Qui è necessario specificare l’archivio selezionato per l’installazione.
-   * **ODBCINI**: posizione del file odbc.ini (ad esempio /etc/odbc.ini).
-   * **NZ_ODBC_INI_PATH**: posizione del file odbc.ini. Netezza richiede anche questa seconda variabile per utilizzare il file odbc.ini.
+   * **ODBCINI**: percorso del file odbc.ini (ad esempio /etc/odbc.ini).
+   * **NZ_ODBC_INI_PATH**: percorso del file odbc.ini. Netezza richiede anche questa seconda variabile per utilizzare il file odbc.ini.
 
 ## Netezza account esterno {#netezza-external}
 
 L’account esterno Netezza ti consente di collegare l’istanza Campaign al database esterno Netezza.
 
-1. Da campagna **[!UICONTROL Explorer]**, fai clic su **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. Dalla campagna **[!UICONTROL Explorer]**, fare clic su **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
-1. Clic **[!UICONTROL New]** e seleziona **[!UICONTROL External database]** as **[!UICONTROL Type]**.
+1. Fare clic su **[!UICONTROL New]** e selezionare **[!UICONTROL External database]** come **[!UICONTROL Type]**.
 
-1. Per configurare **[!UICONTROL Netezza]** account esterno, è necessario specificare:
+1. Per configurare l&#39;account esterno **[!UICONTROL Netezza]**, è necessario specificare:
 
-   * **[!UICONTROL Type]**: NETEZZA
+   * **[!UICONTROL Type]**: Netezza
 
-   * **[!UICONTROL Server]**: URL del server di Netezza
+   * **[!UICONTROL Server]**: URL del server Netezza
 
-   * **[!UICONTROL Account]**: nome dell’utente
+   * **[!UICONTROL Account]**: nome dell&#39;utente
 
-   * **[!UICONTROL Password]**: password dell’account utente
+   * **[!UICONTROL Password]**: password dell&#39;account utente
 
    * **[!UICONTROL Database]**: nome del database
 
@@ -94,4 +94,4 @@ L’account esterno Netezza ti consente di collegare l’istanza Campaign al dat
 >
 >Le operazioni sugli schemi contenenti chiavi primarie generate automaticamente non vengono prese in considerazione.
 >
->La tabella utilizzerà **Organizza su** clausola sul primo indice definito nello schema. Poiché questa clausola è limitata a 1-4 colonne con Netezza, l&#39;indice non può contenere più di 4 colonne.
+>La tabella utilizzerà la clausola **Organizza su** sul primo indice definito nello schema. Poiché questa clausola è limitata a 1-4 colonne con Netezza, l&#39;indice non può contenere più di 4 colonne.

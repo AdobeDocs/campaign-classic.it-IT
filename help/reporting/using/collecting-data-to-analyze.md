@@ -16,7 +16,7 @@ ht-degree: 5%
 
 
 
-I dati da utilizzare per la creazione del rapporto possono essere selezionati direttamente nella pagina del rapporto (per ulteriori informazioni, consulta [Utilizzo del contesto](../../reporting/using/using-the-context.md)) o raccolti tramite una o più query.
+I dati da utilizzare per la creazione del report possono essere selezionati direttamente nella pagina del report (per ulteriori informazioni, consulta [Utilizzo del contesto](../../reporting/using/using-the-context.md)) o raccolti tramite una o più query.
 
 Questa attività offre tre metodi diversi:
 
@@ -26,7 +26,7 @@ Questa attività offre tre metodi diversi:
 
 La scelta del metodo dipende dal tipo di calcolo, dal volume dei dati e dalla loro durata, ecc. Tutti questi parametri devono essere esaminati attentamente per evitare un sovraccarico del database di Adobe Campaign e per ottimizzare la generazione e la manipolazione dei rapporti creati. Per ulteriori informazioni, consulta [questa pagina](../../reporting/using/best-practices.md#optimizing-report-creation).
 
-In tutti i casi, i dati vengono raccolti tramite un **[!UICONTROL Query]** attività di tipo.
+In tutti i casi, i dati vengono raccolti tramite un&#39;attività di tipo **[!UICONTROL Query]**.
 
 ![](assets/reporting_query_edit.png)
 
@@ -44,11 +44,11 @@ L’esempio seguente ti consente di raccogliere il numero di destinatari per ogn
 
 Per creare un rapporto, puoi utilizzare i dati di un elenco di dati importati.
 
-A questo scopo, seleziona la **[!UICONTROL Use an imported list]** nella casella query e selezionare l&#39;elenco corrispondente.
+A tale scopo, selezionare l&#39;opzione **[!UICONTROL Use an imported list]** nella casella query e selezionare l&#39;elenco corrispondente.
 
 ![](assets/reporting_query_from_list.png)
 
-Fai clic su **[!UICONTROL Edit query...]** per definire i dati da raccogliere tra gli elementi di questo elenco per la creazione del rapporto.
+Fare clic sul collegamento **[!UICONTROL Edit query...]** per definire i dati da raccogliere tra gli elementi dell&#39;elenco per la creazione del report.
 
 ## Usa un cubo {#using-a-cube}
 
@@ -58,7 +58,7 @@ Fai clic su **[!UICONTROL Edit query...]** per definire i dati da raccogliere tr
 
 I cubi consentono di estendere le capacità di esplorazione e analisi del database e di semplificare la configurazione di report e tabelle per gli utenti finali: è sufficiente selezionare un cubo esistente completamente configurato e utilizzarne calcoli, misure e statistiche. Per ulteriori informazioni sulla creazione di cubi, consulta [questa sezione](../../reporting/using/ac-cubes.md).
 
-Fai clic su **[!UICONTROL Edit query...]** e selezionare gli indicatori che si desidera visualizzare o utilizzare nel rapporto.
+Fare clic sul collegamento **[!UICONTROL Edit query...]** e selezionare gli indicatori che si desidera visualizzare o utilizzare nel report.
 
 ![](assets/reporting_query_from_cube_edit_query.png)
 
@@ -68,9 +68,9 @@ Per evitare di eseguire query sull’intero database, i dati devono essere filtr
 
 ### Filtro semplificato {#simplified-filter}
 
-È possibile selezionare **[!UICONTROL Filter automatically with the context]** per rendere il rapporto accessibile tramite un nodo specifico della struttura, ad esempio un elenco, un destinatario o una consegna.
+È possibile selezionare l&#39;opzione **[!UICONTROL Filter automatically with the context]** per rendere accessibile il report tramite un nodo specifico della struttura, ad esempio un elenco, un destinatario o una consegna.
 
-Il **[!UICONTROL Filter with the folder]** consente di specificare una cartella e di tenerne conto solo il contenuto. Questo consente di filtrare i dati del rapporto in modo da visualizzare solo i dati di una delle cartelle della struttura, come illustrato di seguito:
+L&#39;opzione **[!UICONTROL Filter with the folder]** consente di specificare una cartella e di tenerne conto solo il contenuto. Questo consente di filtrare i dati del rapporto in modo da visualizzare solo i dati di una delle cartelle della struttura, come illustrato di seguito:
 
 ![](assets/reporting_control_folder.png)
 

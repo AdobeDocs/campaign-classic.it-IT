@@ -30,15 +30,15 @@ Prima di iniziare questo caso d’uso, devi avere accesso a un sondaggio e a una
 
 >[!NOTE]
 >
->Questo caso d’uso può essere implementato solo se hai acquisito **Gestione sondaggi** opzione. Controlla il contratto di licenza.
+>Questo caso d&#39;uso può essere implementato solo se hai acquisito l&#39;opzione **Gestione sondaggi**. Controlla il contratto di licenza.
 
 ## Passaggio 1: creazione del flusso di lavoro di raccolta e archiviazione dei dati {#step-1---creating-the-data-collection-and-storage-workflow}
 
 Per raccogliere le risposte al sondaggio, attieniti alla seguente procedura:
 
-1. Creare un flusso di lavoro e inserire un’ **[!UICONTROL Answers to a survey]** attività. Per ulteriori informazioni sull&#39;utilizzo di questa attività, consulta [questa sezione](../../surveys/using/publish-track-and-use-collected-data.md#using-the-collected-data).
+1. Crea un flusso di lavoro e inserisci un&#39;attività **[!UICONTROL Answers to a survey]**. Per ulteriori informazioni sull&#39;utilizzo di questa attività, consulta [questa sezione](../../surveys/using/publish-track-and-use-collected-data.md#using-the-collected-data).
 1. Modifica l’attività e seleziona il sondaggio di cui desideri analizzare le risposte.
-1. Abilita **[!UICONTROL Select all the answer data]** per raccogliere tutte le informazioni.
+1. Abilita l&#39;opzione **[!UICONTROL Select all the answer data]** per raccogliere tutte le informazioni.
 
    ![](../../surveys/using/assets/reporting_usecase_1_01.png)
 
@@ -46,11 +46,11 @@ Per raccogliere le risposte al sondaggio, attieniti alla seguente procedura:
 
    ![](../../surveys/using/assets/reporting_usecase_1_02.png)
 
-1. Una volta configurata la casella di raccolta delle risposte, posizionare un **[!UICONTROL List update]** digita attività per salvare i dati.
+1. Una volta configurata la casella raccolta risposte, posizionare un&#39;attività di tipo **[!UICONTROL List update]** per salvare i dati.
 
    ![](../../surveys/using/assets/reporting_usecase_1_04.png)
 
-   In questa attività, specifica l’elenco da aggiornare e deseleziona la **[!UICONTROL Purge and re-use the list if it exists (otherwise add to the list)]** opzione: le risposte vengono aggiunte alla tabella esistente. Questa opzione consente di fare riferimento all&#39;elenco in un cubo. Lo schema collegato all’elenco non verrà rigenerato per ogni aggiornamento, il che garantisce l’integrità del cubo che utilizza questo elenco.
+   In questa attività, specificare l&#39;elenco da aggiornare e deselezionare l&#39;opzione **[!UICONTROL Purge and re-use the list if it exists (otherwise add to the list)]**: le risposte vengono aggiunte alla tabella esistente. Questa opzione consente di fare riferimento all&#39;elenco in un cubo. Lo schema collegato all’elenco non verrà rigenerato per ogni aggiornamento, il che garantisce l’integrità del cubo che utilizza questo elenco.
 
    ![](../../surveys/using/assets/reporting_usecase_1_03.png)
 
@@ -62,7 +62,7 @@ Per raccogliere le risposte al sondaggio, attieniti alla seguente procedura:
 
 1. Aggiungi una pianificazione per automatizzare la raccolta giornaliera di risposte e l’aggiornamento dell’elenco.
 
-   Il **[!UICONTROL List update]** e **[!UICONTROL Scheduler]** le attività sono descritte in dettaglio in .
+   Le attività **[!UICONTROL List update]** e **[!UICONTROL Scheduler]** sono descritte in dettaglio in .
 
 ## Passaggio 2 - Creazione del cubo, delle relative misure e dei relativi indicatori {#step-2---creating-the-cube--its-measures-and-its-indicators}
 
@@ -76,7 +76,7 @@ Definire le dimensioni e le misure da visualizzare nel rapporto. In questo caso,
 
 ![](../../surveys/using/assets/reporting_usecase_2_02.png)
 
-Il **[!UICONTROL Preview]** Questa scheda ti consente di controllare il rendering del rapporto.
+La scheda **[!UICONTROL Preview]** consente di controllare il rendering del report.
 
 ## Passaggio 3: creazione del rapporto e configurazione del layout dei dati all’interno della tabella {#step-3---creating-the-report-and-configuring-the-data-layout-within-the-table}
 

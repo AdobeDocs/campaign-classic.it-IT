@@ -40,12 +40,12 @@ It also contains information on important features to manage Privacy ([Consent, 
 
  Le funzionalità di Adobe Campaign consentono di rispettare le seguenti normative:
 
-* **RGPD** (Regolamento generale sulla protezione dei dati) è la normativa sulla privacy dell&#39;Unione europea che armonizza e modernizza i requisiti in materia di protezione dei dati per i paesi dell&#39;UE.
+* **Il GDPR** (Regolamento generale sulla protezione dei dati) è la normativa sulla privacy dell&#39;Unione europea che armonizza e modernizza i requisiti di protezione dei dati per i paesi dell&#39;UE.
 * **CCPA** (California Consumer Privacy Act) fornisce ai residenti della California nuovi diritti in merito alle loro informazioni personali e impone responsabilità in materia di protezione dei dati a determinate entità che conducono attività commerciali in California.
-* **PDPA** La legge sulla protezione dei dati personali (Personal Data Protection Act) è la legge sulla privacy che armonizza e modernizza i requisiti di protezione dei dati in Thailandia.
-* **LGPD** (Lei Geral de Proteção de Dados) si applica a tutte le aziende che raccolgono o elaborano dati personali in Brasile.
-* **CASL** (Legge canadese anti-spam) copre tutti i messaggi inviati in o dal Canada, ma non include i messaggi inoltrati attraverso il Canada,
-* **VCDPA** (Virginia Consumer Data Protection Act) e **CPA** Il Colorado Privacy Act (legge sulla privacy del Colorado) si applica a tutte le aziende che conducono attività commerciali o prendono di mira residenti all&#39;interno di tali stati.
+* **PDPA** (Personal Data Protection Act) è la legge sulla privacy che armonizza e modernizza i requisiti di protezione dei dati in Thailandia.
+* La **LGPD** (Lei Geral de Proteção de Dados) si applica a tutte le aziende che raccolgono o elaborano dati personali in Brasile.
+* **CASL** (legge canadese anti-spam) copre tutti i messaggi inviati in o dal Canada, ma non include i messaggi inoltrati attraverso il Canada,
+* Le normative **VCDPA** (Virginia Consumer Data Protection Act) e **CPA** (Colorado Privacy Act) si applicano a tutte le aziende che conducono attività commerciali o prendono di mira residenti in tali stati.
 
 Tutte queste normative si applicano ai clienti di Adobe Campaign che detengono dati per gli interessati residenti nelle rispettive aree geografiche o nei rispettivi paesi di cui sopra.
 

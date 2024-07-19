@@ -27,7 +27,7 @@ Nelle operazioni, tutte le fasi che richiedono l’approvazione si basano sullo 
 
 ![](assets/validation-1-in-op.png)
 
-Alcuni esempi di approvazione sono disponibili in [questa sezione](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
+Esempi di approvazione sono disponibili in [questa sezione](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
 
 Un operatore può rispondere in uno dei due modi seguenti: tramite la convalida tramite la pagina web collegata nel messaggio e-mail o tramite la console.
 
@@ -39,17 +39,17 @@ Un operatore può rispondere in uno dei due modi seguenti: tramite la convalida 
 
 È possibile ricevere un messaggio di approvazione contenente un collegamento a una pagina web tramite il quale è possibile rispondere. Affinché l’operatore di destinazione riceva un’e-mail di approvazione, l’indirizzo e-mail dell’operatore deve essere completo. In caso contrario, l’operatore deve utilizzare la console per rispondere
 
-La gestione degli operatori è descritta in questo [sezione](../../platform/using/access-management.md).
+La gestione degli operatori è descritta in questa [sezione](../../platform/using/access-management.md).
 
-Le e-mail di approvazione vengono inviate in modo continuo. Il modello di consegna predefinito è **[!UICONTROL notifyAssignee]**: viene salvato in **[!UICONTROL Administration > Campaign management > Technical delivery templates]** cartella. Questo scenario può essere personalizzato e si consiglia inoltre di crearne una copia e di modificare i modelli per ogni attività.
+Le e-mail di approvazione vengono inviate in modo continuo. Il modello di consegna predefinito è **[!UICONTROL notifyAssignee]**: è salvato nella cartella **[!UICONTROL Administration > Campaign management > Technical delivery templates]**. Questo scenario può essere personalizzato e si consiglia inoltre di crearne una copia e di modificare i modelli per ogni attività.
 
-Le consegne create tramite questo modello vengono memorizzate in **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** cartella.
+Le consegne create tramite questo modello vengono archiviate nella cartella **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**.
 
 ## Approvazioni tramite la console {#approval-via-the-console}
 
 Nelle operazioni, gli elementi da approvare vengono visualizzati nel dashboard della campagna.
 
-Per i flussi di lavoro tecnici, è possibile accedere alle attività che l’utente può approvare dalla struttura ad albero in **[!UICONTROL Administration > Production > Objects created automatically > Pending approvals]** cartella.
+Per i flussi di lavoro tecnici, è possibile accedere alle attività che l&#39;utente può approvare dalla struttura ad albero nella cartella **[!UICONTROL Administration > Production > Objects created automatically > Pending approvals]**.
 
 ![](assets/validation-node.png)
 
@@ -58,7 +58,7 @@ Per i flussi di lavoro tecnici, è possibile accedere alle attività che l’ute
 Un’approvazione viene assegnata a un gruppo di operatori, a un singolo operatore o a un insieme di operatori selezionati tramite una condizione di filtro.
 
 1. Per una forma di approvazione più semplice, l’attività viene completata non appena un operatore risponde. Qualsiasi altro operatore che tenti di rispondere riceverà una notifica di qualcuno che l&#39;ha già fatto.
-1. Per più approvazioni, consulta [Approvazione multipla](#multiple-approval).
+1. Per più approvazioni, fare riferimento a [Approvazioni multiple](#multiple-approval).
 
 I gruppi di operatori per le approvazioni devono essere designati come ruoli o funzioni anziché come individui con nome. Ad esempio, un gruppo &quot;Budget campagna&quot; è preferibile a &quot;Gruppo di Harry&quot;. È consigliabile avere almeno due persone in un gruppo che possano approvare un&#39;attività. In questo modo, se uno è assente, l&#39;altro può rispondere.
 
@@ -70,25 +70,25 @@ La seconda scheda nelle proprietà di approvazione dell’attività ti consente 
 
 ![](assets/expiration.png)
 
-Per aggiungere una nuova scadenza, fai clic su **[!UICONTROL Add]**. A ciascuna delle scadenze create viene aggiunta una transizione. Puoi eseguire le seguenti azioni:
+Per aggiungere una nuova scadenza, fare clic su **[!UICONTROL Add]**. A ciascuna delle scadenze create viene aggiunta una transizione. Puoi eseguire le seguenti azioni:
 
 * modificare direttamente i parametri tipici facendo clic su una cella dell&#39;elenco (o premendo F2),
-* o modificare l’espressione facendo clic sul pulsante **[!UICONTROL Detail...]** pulsante.
+* oppure modificare l&#39;espressione facendo clic sul pulsante **[!UICONTROL Detail...]**.
 
 >[!NOTE]
 >
 >Non è necessario specificare un ordine per le scadenze in quanto vengono elaborate in ordine cronologico.
 
-Il **[!UICONTROL Do not terminate the task]** lascia l’approvazione attiva quando il ritardo viene superato. Questa modalità consente di gestire i promemoria lasciando attiva l’approvazione: gli operatori possono ancora rispondere. Questa opzione è disabilitata per impostazione predefinita, il che significa che l’attività è considerata completata alla scadenza e che gli operatori potrebbero non rispondere più.
+L&#39;opzione **[!UICONTROL Do not terminate the task]** lascia l&#39;approvazione attiva quando il ritardo viene superato. Questa modalità consente di gestire i promemoria lasciando attiva l’approvazione: gli operatori possono ancora rispondere. Questa opzione è disabilitata per impostazione predefinita, il che significa che l’attività è considerata completata alla scadenza e che gli operatori potrebbero non rispondere più.
 
 Puoi creare quattro tipi di scadenza:
 
-* **Ritardo dopo l&#39;inizio dell&#39;attività**: la scadenza viene calcolata aggiungendo un periodo di tempo specificato alla data in cui è attivata l’approvazione.
-* **Ritarda dopo una data specificata**: la scadenza viene calcolata aggiungendo un periodo di tempo a una data specificata.
-* **Ritarda prima di una data specificata**: la scadenza viene calcolata sottraendo un periodo di tempo da una data specificata.
+* **Ritardo dopo l&#39;inizio dell&#39;attività**: la scadenza viene calcolata aggiungendo un periodo di tempo specificato alla data di attivazione dell&#39;approvazione.
+* **Ritardo dopo una data specificata**: la scadenza viene calcolata aggiungendo un periodo di tempo a una data specificata.
+* **Ritardo prima di una data specificata**: la scadenza viene calcolata sottraendo un periodo di tempo da una data specificata.
 * **Scadenza calcolata dallo script**: la scadenza viene calcolata utilizzando JavaScript.
 
-  L’esempio seguente calcola una scadenza 24 ore prima della data di inizio di una consegna (identificata da **vars.deliveryId**):
+  L&#39;esempio seguente calcola una scadenza 24 ore prima della data di inizio di una consegna (identificata da **vars.deliveryId**):
 
   ```
   var delivery = nms.delivery.get(vars.deliveryId)

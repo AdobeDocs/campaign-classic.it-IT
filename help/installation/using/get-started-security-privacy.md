@@ -51,11 +51,11 @@ La gestione degli accessi è una parte importante della protezione avanzata. Di 
 
 Durante lo sviluppo in Adobe Campaign (flussi di lavoro, JavaScript, JSSP, ecc.), segui sempre le seguenti linee guida:
 
-* **Scripting**: prova a evitare le istruzioni SQL, utilizza funzioni con parametri invece della concatenazione di stringhe, evita l’iniezione di SQL aggiungendo le funzioni SQL da utilizzare per il inserisco nell&#39;elenco Consentiti di.
+* **Scripting**: tentare di evitare istruzioni SQL, utilizzare funzioni con parametri anziché concatenare stringhe, evitare l&#39;inserimento di istruzioni SQL aggiungendo le funzioni SQL da utilizzare al inserisco nell&#39;elenco Consentiti di.
 
-* **Proteggere il modello dati**: utilizzare diritti denominati per limitare le azioni dell’operatore, aggiungere filtri di sistema (sysFilter)
+* **Proteggere il modello dati**: utilizzare diritti denominati per limitare le azioni dell&#39;operatore, aggiungere filtri di sistema (sysFilter)
 
-* **Aggiungere captchas nelle applicazioni web**: scopri come aggiungere i captcha nelle pagine di destinazione e nelle pagine di abbonamento pubbliche.
+* **Aggiungi captchas nelle applicazioni Web**: scopri come aggiungere captchas nelle pagine di destinazione pubbliche e nelle pagine di abbonamento.
 
 [Maggiori informazioni](../../installation/using/scripting-coding-guidelines.md)
 
@@ -76,15 +76,15 @@ Una cosa molto importante da controllare quando si distribuisce un tipo di archi
 
 La configurazione deve essere eseguita su tutti i server. I file di configurazione sono di tipo **serverConf.xml** e **`config-<instance>.xml`**. Di seguito sono riportati gli elementi chiave da verificare:
 
-* **Aree di protezione**: configura le aree di sicurezza in modo che tengano direttamente conto degli indirizzi IP dei client di un proxy.
+* **Aree di protezione**: configurare le aree di protezione in modo che tengano conto direttamente degli indirizzi IP dei client di un proxy.
 
-* **Protezione caricamento file**: limita i tipi di file che possono essere caricati sul server Adobe Campaign utilizzando un nuovo attributo uploadAllowList. Può essere utilizzato nel file di configurazione del server.
+* **Protezione caricamento file**: limita i tipi di file che possono essere caricati nel server Adobe Campaign utilizzando un nuovo attributo uploadAllowList. Può essere utilizzato nel file di configurazione del server.
 
-* **Inoltro**: regola accuratamente la configurazione dell’inoltro disattivando le regole di inoltro per moduli/applicazioni non utilizzati.
+* **Inoltro**: ottimizzare la configurazione dell&#39;inoltro disattivando le regole di inoltro per moduli/applicazioni non utilizzati.
 
-* **Protezione delle connessioni in uscita** e **Restrizione comando** (lato server)
+* **Protezione connessione in uscita** e **Restrizione comando** (lato server)
 
-* Puoi anche aggiungere altre intestazioni HTTP, attivare checkIPConsistent, enableTLS, sessionTimeOutSec, ecc. Consulta la sezione [Documentazione sulla configurazione del server Campaign](../../installation/using/configuring-campaign-server.md) e [Descrizione del file di configurazione del server](../../installation/using/the-server-configuration-file.md) per ulteriori informazioni.
+* Puoi anche aggiungere altre intestazioni HTTP, attivare checkIPConsistent, enableTLS, sessionTimeOutSec, ecc. Per ulteriori informazioni, consultare la [documentazione sulla configurazione del server Campaign](../../installation/using/configuring-campaign-server.md) e la [descrizione del file di configurazione del server](../../installation/using/the-server-configuration-file.md).
 
 [Maggiori informazioni](../../installation/using/server-configuration.md)
 

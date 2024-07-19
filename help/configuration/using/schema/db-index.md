@@ -43,7 +43,7 @@ Questo elemento ti consente di definire un indice collegato a una tabella.
 
 È possibile definire diversi indici. Un indice può fare riferimento a uno o più campi della tabella. La dichiarazione dell’indice segue in genere la definizione dell’elemento dello schema principale.
 
-L’ordine del `<keyfield>` elementi definiti in un `<dbindex>` è molto importante. Il primo `<keyfield>` deve essere il criterio di indicizzazione su cui si basano principalmente le query.
+L&#39;ordine degli elementi `<keyfield>` definiti in un `<dbindex>` è molto importante. Il primo `<keyfield>` deve essere il criterio di indicizzazione su cui si basano principalmente le query.
 
 Il nome dell&#39;indice nel database viene calcolato concatenando il nome della tabella e il nome dell&#39;indice. Ad esempio: nome della tabella &quot;Sample&quot;, spazio dei nomi &quot;Cus&quot;, nome dell’indice &quot;MyIndex&quot;-> nome del campo dell’indice durante la creazione dell’indice query: &quot;CusSample_myIndex&quot;.
 
@@ -61,14 +61,14 @@ Il nome dell&#39;indice nel database viene calcolato concatenando il nome della 
    * &quot;update&quot; (aggiorna): aggiornamento. Ciò significa che Adobe Campaign aggiornerà l’elemento o genererà un errore se non esiste.
    * &quot;delete&quot;: eliminazione. Ciò significa che Adobe Campaign recupererà ed eliminerà gli elementi.
 
-* **applyIf (stringa)**: condizione per tenere conto dell’indice - riceve un’espressione XTK.
-* **etichetta (stringa)**: etichetta di indice.
+* **applyIf (stringa)**: condizione per prendere in considerazione l&#39;indice - riceve un&#39;espressione XTK.
+* **etichetta (stringa)**: etichetta indice.
 * **nome (MNTOKEN)**: nome di indice univoco.
-* **univoco (booleano)**: se questa opzione è attivata (@unique=&quot;true&quot;), l’attributo garantisce l’univocità dell’indice in tutti i suoi campi.
+* **univoco (booleano)**: se questa opzione è attivata (@unique=&quot;true&quot;), l&#39;attributo garantisce l&#39;univocità dell&#39;indice in tutti i relativi campi.
 
 ## Esempi {#examples-3}
 
-Creazione di un indice sul campo &quot;id&quot;. (l’attributo &quot;@unique&quot; sul `<dbindex>` L&#39;elemento attiva l&#39;aggiunta della parola chiave SQL &quot;UNIQUE&quot; quando l&#39;indice viene creato nel database (query).
+Creazione di un indice sul campo &quot;id&quot;. L&#39;attributo &quot;@unique&quot; dell&#39;elemento `<dbindex>` attiva l&#39;aggiunta della parola chiave SQL &quot;UNIQUE&quot; quando l&#39;indice viene creato nel database (query).
 
 ```
 <element label="Sample" name="Sample">

@@ -17,16 +17,16 @@ ht-degree: 5%
 
 Le seguenti attività sono attività di database: il loro compito principale è quello di coordinare le altre attività.
 
-* **Inizio e Fine**: ti consente di visualizzare i punti iniziale e finale di un flusso di lavoro. Fai riferimento a [Inizio e fine](start-and-end.md).
-* **Fork**: ti consente di attivare tutte le transizioni in uscita. Consulta la sezione [Fork](fork.md) sezione.
-* **Appuntamento**: ti consente di attendere il completamento di diverse attività avviate contemporaneamente prima di procedere. Consulta la sezione [Fork](fork.md) sezione.
-* **Scheduler**: ti consente di definire una pianificazione di esecuzione del flusso di lavoro. Fai riferimento a [Scheduler](scheduler.md).
-* **Test**: abilita una transizione basata su un risultato del test. Fai riferimento a [Test](test.md).
-* **Wait**: abilita la transizione in uscita dopo un determinato limite di tempo. Fai riferimento a [Wait](wait.md).
-* **Vincolo di tempo**: consente di mettere in pausa un’attività per un periodo impostato. Fai riferimento a [Vincolo di tempo](time-constraint.md).
-* **Flusso di lavoro secondario**: consente di eseguire un altro flusso di lavoro. Fai riferimento a [Flusso di lavoro secondario](sub-workflow.md).
-* **Salti**: consente di implementare le transizioni senza collegamenti. Fai riferimento a [Salto (punto iniziale e punto finale)](jump-start-point-and-end-point.md).
-* **Segnale esterno**: consente di abilitare la transizione in uscita dopo la ricezione di un segnale esterno. Consulta la sezione [External signal](external-signal.md).
-* **Approvazione**: ti consente di inviare un’e-mail a un operatore o a un gruppo di operatori e di attendere che l’approvazione continui con l’esecuzione. Consulta la sezione [Approvazione](approval.md) sezione.
-* **Avviso**: ti consente di inviare un avviso a un operatore o a un gruppo di operatori. Consulta la sezione [Avviso](alert.md) sezione.
-* **Attività**: consente di configurare l’esecuzione dell’attività. Consulta la sezione [Attività](task.md) sezione.
+* **Inizio ed Fine**: consente di visualizzare i punti iniziale e finale di un flusso di lavoro. Consulta [Inizio e fine](start-and-end.md).
+* **Fork**: ti consente di attivare tutte le transizioni in uscita. Consulta la sezione [Fork](fork.md).
+* **Appuntamento**: consente di attendere il completamento di più attività avviate contemporaneamente prima di continuare. Consulta la sezione [Fork](fork.md).
+* **Pianificazione**: consente di definire una pianificazione di esecuzione del flusso di lavoro. Consulta [Scheduler](scheduler.md).
+* **Test**: abilita una transizione basata su un risultato del test. Consulta [Test](test.md).
+* **Attendi**: abilita la transizione in uscita dopo un determinato limite di tempo. Consulta [Attendi](wait.md).
+* **Vincolo di tempo**: consente di sospendere un&#39;attività per un periodo impostato. Consulta [Vincolo di tempo](time-constraint.md).
+* **Flusso di lavoro secondario**: consente di eseguire un altro flusso di lavoro. Consulta [Flusso di lavoro secondario](sub-workflow.md).
+* **Salti**: consente di implementare transizioni senza collegamenti. Fare riferimento a [Salto (punto iniziale e punto finale)](jump-start-point-and-end-point.md).
+* **Segnale esterno**: consente di abilitare la transizione in uscita dopo aver ricevuto un segnale esterno. Consulta la sezione [External signal](external-signal.md).
+* **Approvazione**: consente di inviare un messaggio e-mail a un operatore o a un gruppo di operatori e di attendere che l&#39;approvazione continui con l&#39;esecuzione. Consulta la sezione [Approvazione](approval.md).
+* **Avviso**: consente di inviare un avviso a un operatore o a un gruppo di operatori. Consulta la sezione [Avviso](alert.md).
+* **Attività**: consente di configurare l&#39;esecuzione dell&#39;attività. Consulta la sezione [Attività](task.md).

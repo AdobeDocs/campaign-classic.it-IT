@@ -17,7 +17,7 @@ ht-degree: 5%
 
 
 
-1. Clic **[!UICONTROL Start]** il flusso di lavoro.
+1. Fare clic su **[!UICONTROL Start]** per il flusso di lavoro.
 
    ![](assets/use_case_abtesting_startwkfl_001.png)
 

@@ -16,11 +16,11 @@ ht-degree: 4%
 
 
 
-Le applicazioni web vengono create e gestite in base allo stesso principio di [moduli web](about-web-forms.md).
+Le applicazioni Web vengono create e gestite in base allo stesso principio dei [moduli Web](about-web-forms.md).
 
 >[!CAUTION]
 >
->Utilizza il **[!UICONTROL Preview]** scheda secondaria per controllare gli errori durante la progettazione dell’applicazione web. Il test del profilo utilizzato per visualizzare in anteprima l’applicazione web deve trovarsi in una cartella con **[!UICONTROL Access rights]** per **[!UICONTROL Web application agent]** operatore. </br>Fino alla pubblicazione dell&#39;applicazione Web, le modifiche non vengono esposte agli utenti finali.
+>Utilizzare la scheda secondaria **[!UICONTROL Preview]** per verificare gli errori durante la progettazione dell&#39;applicazione Web. Il test del profilo utilizzato per visualizzare in anteprima l&#39;applicazione Web deve trovarsi in una cartella con **[!UICONTROL Access rights]** per l&#39;operatore **[!UICONTROL Web application agent]**. </br>Fino alla pubblicazione dell&#39;applicazione Web, le modifiche non vengono esposte agli utenti finali.
 
 ## Inserimento di grafici in un&#39;applicazione Web {#inserting-charts-in-a-web-application}
 
@@ -28,7 +28,7 @@ Le applicazioni web vengono create e gestite in base allo stesso principio di [m
 
 ![](assets/s_ncs_admin_webapps_bar_graph.png)
 
-È inoltre possibile selezionare **[!UICONTROL Add a chart]** menu.
+È inoltre possibile selezionare il menu **[!UICONTROL Add a chart]**.
 
 ![](assets/s_ncs_admin_webapps_graph.png)
 
@@ -48,7 +48,7 @@ L’interfaccia di Adobe Campaign utilizza molte applicazioni web per accedere, 
 
 Vengono visualizzati nell’interfaccia sotto forma di dashboard con una sola pagina.
 
-Le applicazioni Web predefinite sono memorizzate in **[!UICONTROL Administration > Configuration > Web applications]** nodo.
+Le applicazioni Web predefinite sono archiviate nel nodo **[!UICONTROL Administration > Configuration > Web applications]**.
 
 ## Modificare le applicazioni Web di tipo form {#edit-forms-type-web-applications}
 

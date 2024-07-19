@@ -29,7 +29,7 @@ Comporta il rilancio dei processi con un livello più elevato di registri.
 
 Adobe Campaign può funzionare con due livelli di registro:
 
-1. Il **Dettagliato** mode è il primo livello dopo il livello standard. Il comando seguente lo attiva:
+1. La modalità **Dettagliata** è il primo livello dopo il livello standard. Il comando seguente lo attiva:
 
    ```
    nlserver restart <MODULE_NAME> -verbose 
@@ -41,7 +41,7 @@ Adobe Campaign può funzionare con due livelli di registro:
    nlserver restart <MODULE_NAME> -noconsole
    ```
 
-1. Il **TraceFilter** che consente di salvare il maggior numero di registri. Viene attivato dal comando seguente:
+1. La modalità **TraceFilter**, che consente di salvare il maggior numero di registri. Viene attivato dal comando seguente:
 
    ```
    nlserver stop <MODULE_NAME>; nlserver <MODULE_NAME> -verbose -tracefilter:*
@@ -49,9 +49,9 @@ Adobe Campaign può funzionare con due livelli di registro:
 
    >[!NOTE]
    >
-   >Se usa **tracefilter:&#42;**, vengono attivati tutti i tipi di registro: ncm, rdr, nms, jst, timing, wdbc, ldap, soap, xtk, xtkquery, session, xtkwriter, network, pop3, inmail\
-   I tipi di registro più utili sono: **wdbc** (visualizza tutte le query SQL), **sapone** (visualizza tutte le chiamate SOAP), **ldap** (visualizza tutte le query LDAP dopo l’autenticazione), **xtkquery** (visualizza l&#39;elenco di tutti i querydef).\
-   Puoi utilizzarli singolarmente (**tracefilter:soap,wdbc** ad esempio). Puoi anche attivarli tutti e scegliere di escluderne altri: **-tracefilter:&#42;,!soap**
+   >Se si utilizza **tracefilter:&#42;**, vengono attivati tutti i tipi di log: ncm, rdr, nms, jst, timing, wdbc, ldap, soap, xtk, xtkquery, session, xtkwriter, network, pop3, inmail\
+   I tipi di registro più utili sono: **wdbc** (visualizza tutte le query SQL), **soap** (visualizza tutte le chiamate SOAP), **ldap** (visualizza tutte le query LDAP dopo l&#39;autenticazione), **xtkquery** (visualizza l&#39;elenco di tutte le query).\
+   È possibile utilizzarli singolarmente (**tracefilter:soap,wdbc**, ad esempio). È inoltre possibile attivarli tutti e scegliere di escludere alcuni altri: **-tracefilter:&#42;,!soap**
 
    Verificare che l&#39;errore si sia verificato, quindi riavviare il processo nel modo normale:
 
@@ -71,7 +71,7 @@ Prima di inviare questo comando, verificare che non vi siano problemi per i proc
 nlserver pdump -who
 ```
 
-Chiudere e riavviare il modulo in **TraceFilter** modalità:
+Chiudere e riavviare il modulo in modalità **TraceFilter**:
 
 ```
 nlserver stop web; LD_PRELOAD=libjsig.so nlserver web -tomcat -verbose -tracefilter:* -tracefile:web_debug@default
@@ -85,7 +85,7 @@ nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -trace
 
 >[!NOTE]
 >
-Il **File di traccia** consente di salvare i registri. Negli esempi precedenti, i registri vengono salvati in **var/`<instance-name>`/mta_debug.log** e **var/default/web_debug.log** file.
+La modalità **Tracefile** consente di salvare i registri. Negli esempi precedenti, i registri vengono salvati nei file **var/`<instance-name>`/mta_debug.log** e **var/default/web_debug.log**.
 
 >[!IMPORTANT]
 >

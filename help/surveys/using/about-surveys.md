@@ -18,24 +18,24 @@ Adobe Campaign include un modulo grafico per definire e pubblicare le applicazio
 
 >[!AVAILABILITY]
 >
->La gestione dei sondaggi non è disponibile in Campaign v8 nel contesto di una distribuzione Enterprise (FFDA). Ulteriori informazioni in [Documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
+>La gestione dei sondaggi non è disponibile in Campaign v8 nel contesto di una distribuzione Enterprise (FFDA). Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
 
 
-L&#39;opzione **Sondaggio** il componente aggiuntivo consente di creare un nuovo tipo di applicazione Web per creare e gestire questionari online, ad esempio moduli per aggiungere o modificare informazioni sul profilo, per sottoscrivere o annullare l&#39;abbonamento a un servizio di informazioni o un modulo per l&#39;iscrizione a un concorso. Una volta raccolte, le risposte vengono memorizzate nel database o in variabili locali. Il modello di dati può essere esteso dinamicamente tramite le risposte date ai questionari. Puoi visualizzare i risultati in tempo reale, filtrare le risposte e analizzarle utilizzando grafici dedicati.
+Il componente aggiuntivo opzionale **Sondaggio** consente di creare un nuovo tipo di applicazione Web per creare e gestire questionari online, ad esempio moduli per aggiungere o modificare le informazioni del profilo, per sottoscrivere o annullare l&#39;abbonamento a un servizio di informazioni o un modulo per l&#39;iscrizione a un concorso. Una volta raccolte, le risposte vengono memorizzate nel database o in variabili locali. Il modello di dati può essere esteso dinamicamente tramite le risposte date ai questionari. Puoi visualizzare i risultati in tempo reale, filtrare le risposte e analizzarle utilizzando grafici dedicati.
 
-Questo capitolo descrive come creare e gestire **Sondaggi**, gestione di campi e pagine, modalità di archiviazione e record.
+Questo capitolo descrive come creare e gestire **sondaggi**, la gestione di campi e pagine, le modalità di archiviazione e i record.
 
 Scopri come creare il tuo primo sondaggio in [questa pagina](getting-started-with-surveys.md).
 
 >[!NOTE]
 >
->* I passaggi dettagliati per la creazione di un modulo web standard sono disponibili in [questo documento](../../web/using/about-web-forms.md).
+>* I passaggi dettagliati per la creazione di un modulo Web standard sono disponibili in [questo documento](../../web/using/about-web-forms.md).
 >
->* La gestione delle applicazioni web è descritta in [questo documento](../../web/using/about-web-applications.md). Fare riferimento a questo capitolo per ulteriori informazioni.
+>* La gestione delle applicazioni Web è descritta in [questo documento](../../web/using/about-web-applications.md). Fare riferimento a questo capitolo per ulteriori informazioni.
 
 ## Ambito della funzione {#campaign-surveys-scope}
 
-In Adobe Campaign, utilizza [Applicazioni web](../../web/using/about-web-forms.md) a:
+In Adobe Campaign, utilizza [applicazioni Web](../../web/using/about-web-forms.md) per:
 
 * Creare moduli a più pagine
 * Gestire i moduli multilingue con uno strumento di traduzione integrato
@@ -63,7 +63,7 @@ Applica i seguenti passaggi per creare e consegnare un sondaggio ed elaborarne i
 
 1. Crea le pagine del sondaggio e il relativo contenuto (campi di input, elenchi a discesa, domande, ecc.).
 1. Definisci come salvare le risposte. È possibile inserire un passaggio di precaricamento dei dati per precaricare il modulo con i dati già presenti nel database. È inoltre possibile aggiungere una casella di test.
-1. Pubblica, quindi distribuisci il sondaggio ai destinatari (ad esempio, includi il collegamento in una consegna o in un sito web).
+1. Publish, quindi consegna il sondaggio ai destinatari (ad esempio, includi un collegamento in una consegna o in un sito web).
 1. Monitora le risposte e visualizza i rapporti.
 
 Per ulteriori informazioni sulla configurazione e la sequenza di questi passaggi, consulta [questo documento](../../web/using/about-web-forms.md). In questo capitolo sono descritte solo le configurazioni specifiche dei sondaggi.
@@ -74,11 +74,11 @@ Per ulteriori informazioni sulla configurazione e la sequenza di questi passaggi
 
 ## Impostazioni {#settings}
 
-Per impostazione predefinita, i sondaggi sono disponibili nel **[!UICONTROL Resources > Online > Web Applications]** della struttura Adobe Campaign.
+Per impostazione predefinita, i sondaggi sono disponibili nel nodo **[!UICONTROL Resources > Online > Web Applications]** della struttura Adobe Campaign.
 
 Le impostazioni vengono memorizzate nelle seguenti cartelle:
 
-* **[!UICONTROL Administration > Configuration > Form rendering]**: contiene i modelli di rendering per la presentazione dei moduli web (applicazioni e sondaggi).
+* **[!UICONTROL Administration > Configuration > Form rendering]**: contiene i modelli di rendering per la presentazione dei moduli Web (applicazioni e sondaggi).
 * **[!UICONTROL Resources > Templates > Web application templates]**: contiene i modelli di modulo. Per creare un modulo, è necessario iniziare con un modello.
 
 >[!NOTE]

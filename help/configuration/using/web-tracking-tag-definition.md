@@ -20,7 +20,7 @@ Un tag di tracciamento web è semplicemente un URL costruito con i parametri app
 
 ## Formato dei dati da inviare {#format-of-the-data-to-be-sent}
 
-Il formato di un URL di tracciamento web è il seguente: **https://`<name_of_redirection_server>`:`<port>`/r/`<random_number>`?`<parameters>`**
+Il formato di un URL di tracciamento Web è il seguente: **https://`<name_of_redirection_server>`:`<port>`/r/`<random_number>`?`<parameters>`**
 
 >[!NOTE]
 >
@@ -78,7 +78,8 @@ Nella tabella seguente viene fornito un elenco di parametri speciali supportati 
                               <p>Parametro URL</p> 
                            </td>
                            <td>
-                              <p>Identificatore di consegna da utilizzare se non è presente alcun cookie di sessione. Questo valore deve essere espresso in caratteri esadecimali.
+                              <p>Identificatore di consegna da utilizzare se non è presente alcun cookie di sessione. Questo valore deve essere
+                                 espresso in caratteri esadecimali.
                               </p> 
                            </td> 
                         </tr>
@@ -90,14 +91,16 @@ Nella tabella seguente viene fornito un elenco di parametri speciali supportati 
                               <p>Parametro URL</p> 
                            </td>
                            <td>
-                              <p>Parametro utilizzato per identificare l’utente Internet. Il formato di questo parametro è "name=value", dove il nome è un campo dello schema del destinatario. Questo parametro ha priorità sull’identificatore contenuto nel cookie di sessione.
+                              <p>Parametro utilizzato per identificare l’utente Internet. Il formato di questo parametro è "name=value",
+                                 dove il nome è un campo dello schema del destinatario. Questo parametro ha la priorità rispetto a
+                                 l’identificatore contenuto nel cookie di sessione.
                               </p> 
                            </td> 
                         </tr> 
                      </tbody>  
                   </table>
 
-**Alcuni URL di tracciamento web**
+**Alcuni URL di tracciamento Web**
 
 * Visita a una pagina di identificazione &quot;home&quot;
 
@@ -127,5 +130,5 @@ Nella tabella seguente viene fornito un elenco di parametri speciali supportati 
 
 Sono possibili i seguenti metodi:
 
-* Inserimento dell’URL nel **&quot;src&quot;** attributo di un HTML **`<img>`** tag incorporato nella pagina web che desideri tracciare.
+* Inserimento dell&#39;URL nell&#39;attributo **&quot;src&quot;** di un tag HTML **`<img>`** incorporato nella pagina Web che si desidera monitorare.
 * Chiamata diretta al server di reindirizzamento quando viene generata la pagina web che desideri monitorare.

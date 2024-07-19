@@ -20,7 +20,7 @@ ht-degree: 2%
 
 
 
-In questa pagina sono elencati i passaggi specifici da eseguire prima di avviare il processo di migrazione. Devi inoltre fare riferimento a [questa pagina](about-migration.md) per maggiori informazioni.
+In questa pagina sono elencati i passaggi specifici da eseguire prima di avviare il processo di migrazione. Per ulteriori informazioni, consulta anche [questa pagina](about-migration.md).
 
 >[!NOTE]
 >
@@ -32,17 +32,17 @@ In questa pagina sono elencati i passaggi specifici da eseguire prima di avviare
 
 ## Passaggi di migrazione {#migration-steps}
 
-La procedura di migrazione deve essere effettuata il **tutto** e in un ordine particolare.
+La procedura di migrazione deve essere eseguita su **tutti** i server e in un ordine particolare.
 
-* Nel caso di un **piattaforma indipendente** (modalità a computer singolo), l&#39;applicazione viene migrata nella sua interezza.
-* Nel caso di un **piattaforma standard** (enterprise), i passaggi di migrazione sono i seguenti:
+* Nel caso di una **piattaforma autonoma** (modalità a computer singolo), l&#39;applicazione viene migrata nella sua interezza.
+* Nel caso di una **piattaforma standard** (enterprise), i passaggi di migrazione sono i seguenti:
 
    1. Esegui la migrazione del server di marketing.
    1. Esegui la migrazione del server di posta (mta).
    1. Esegui la migrazione dei server di reindirizzamento e tracciamento (Apache/IIS).
 
-* Nel caso di un **Piattaforma di messaggistica cloud**, i server di esecuzione sono ospitati in Adobe Campaign. Contatta Adobe Campaign per coordinare la migrazione tra server diversi.
-* Nel caso di un **piattaforma Power Booster o Power Cluster**, i passaggi di migrazione sono i seguenti:
+* Nel caso di una **piattaforma di messaggistica cloud**, i server di esecuzione sono ospitati in Adobe Campaign. Contatta Adobe Campaign per coordinare la migrazione tra server diversi.
+* Nel caso di una **piattaforma Power Booster o Power Cluster**, i passaggi di migrazione sono i seguenti:
 
    1. Esegui la migrazione dei server di reindirizzamento e tracciamento (Apache/IIS).
    1. Eseguire la migrazione dei server Power Booster/Cluster.
@@ -50,7 +50,7 @@ La procedura di migrazione deve essere effettuata il **tutto** e in un ordine pa
 
 ## Password utente {#user-passwords}
 
-Nella versione 7, **interno** e **admin** la connessione dell&#39;operatore deve essere protetta da una password. Si consiglia vivamente di assegnare password a questi account e a tutti gli account operatore, **prima della migrazione**. Se non è stata specificata una password per **interno**, non sarà possibile connettersi. Per assegnare una password a **interno**, immetti il comando seguente:
+Nella versione 7, la connessione dell&#39;operatore **internal** e **admin** deve essere protetta da una password. È consigliabile assegnare password a questi account e a tutti gli account operatore, **prima della migrazione**. Se non hai specificato una password per **internal**, non potrai connetterti. Per assegnare una password a **internal**, immettere il comando seguente:
 
 ```
 nlserver config -internalpassword
@@ -58,4 +58,4 @@ nlserver config -internalpassword
 
 >[!CAUTION]
 >
->Il **interno** la password deve essere identica per tutti i server di tracciamento. Per ulteriori informazioni, consulta [Identificatore interno](../../installation/using/configuring-campaign-server.md#internal-identifier) e [Autorizzazioni](../../platform/using/access-management.md) sezioni.
+>La password **internal** deve essere identica per tutti i server di tracciamento. Per ulteriori informazioni, fare riferimento alle sezioni [Identificatore interno](../../installation/using/configuring-campaign-server.md#internal-identifier) e [Autorizzazioni](../../platform/using/access-management.md).

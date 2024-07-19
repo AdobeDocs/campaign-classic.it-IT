@@ -20,16 +20,16 @@ ht-degree: 0%
 
 L’integrazione tra Adobe Campaign e Adobe Experience Manager consente di gestire il contenuto delle consegne e-mail e dei moduli direttamente in Adobe Experience Manager.
 
-Puoi anche inserire direttamente le risorse dalla libreria di AEM Assets durante la modifica di un’e-mail o di una pagina di destinazione in Adobe Campaign. Questa funzionalità è descritta in [Risorse](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md) capitolo.
+Puoi anche inserire direttamente le risorse dalla libreria di AEM Assets durante la modifica di un’e-mail o di una pagina di destinazione in Adobe Campaign. Questa funzionalità è descritta nel capitolo [Assets](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md).
 
-Ciò significa che puoi sfruttare al massimo sia le funzionalità di modifica dei contenuti AEM che le capacità di Adobe Campaign.
+Ciò significa che puoi sfruttare al massimo sia le funzionalità di modifica dei contenuti dell’AEM che le capacità di distribuzione di Adobe Campaign.
 
 **Prerequisiti**
 
 È necessario disporre dei seguenti elementi:
 
-* Un Adobe Experience Manager **authoring** dell&#39;istanza.
-* Un Adobe Experience Manager **pubblicazione** dell&#39;istanza.
+* Un&#39;istanza di **authoring** di Adobe Experience Manager.
+* Un&#39;istanza **publishing** di Adobe Experience Manager.
 * Un’istanza di Adobe Campaign.
 
-Per ulteriori informazioni, consulta [Documentazione di Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/classic-ui/campaign/classic-personalization-ac-campaign.html)
+Per ulteriori dettagli, consulta [Documentazione di Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/classic-ui/campaign/classic-personalization-ac-campaign.html)

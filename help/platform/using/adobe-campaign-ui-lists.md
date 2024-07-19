@@ -21,15 +21,15 @@ Puoi accedere agli elenchi dei record nel database di Campaign utilizzando Explo
 
 Per impostazione predefinita, Adobe Campaign carica i primi 200 record di un elenco. Ciò significa che la visualizzazione non mostra necessariamente tutti i record della tabella visualizzata. È possibile eseguire un conteggio del numero di record nell&#39;elenco e caricare altri record.
 
-Nella parte in basso a destra della schermata dell’elenco, **[!UICONTROL counter]** mostra quanti record sono stati caricati e il numero totale di record nel database (dopo l’applicazione di eventuali filtri):
+Nella parte in basso a destra della schermata dell&#39;elenco, un **[!UICONTROL counter]** mostra il numero di record caricati e il numero totale di record nel database (dopo l&#39;applicazione di filtri):
 
 ![](assets/s_ncs_user_nb_200_0.png)
 
-Se &quot;**?**&quot; al posto del numero a destra, fare clic sul contatore per avviare il calcolo.
+Se un &quot;**?Viene visualizzato**&quot; invece del numero a destra, fare clic sul contatore per avviare il calcolo.
 
 ### Carica altri record {#loading-more-records}
 
-Per caricare (e quindi visualizzare) record aggiuntivi (200 righe per impostazione predefinita) fai clic su **[!UICONTROL Continue loading]**.
+Per caricare (e quindi visualizzare) record aggiuntivi (200 righe per impostazione predefinita) fare clic su **[!UICONTROL Continue loading]**.
 
 ![](assets/s_ncs_user_load_list.png)
 
@@ -41,11 +41,11 @@ Per caricare tutti i record, fare clic con il pulsante destro del mouse sull&#39
 
 ### Modifica il numero predefinito di record {#change-default-number-of-records}
 
-Per modificare il numero predefinito di record caricati, fare clic su **[!UICONTROL Configure list]** nell’angolo in basso a destra dell’elenco.
+Per modificare il numero predefinito di record caricati, fare clic su **[!UICONTROL Configure list]** nell&#39;angolo inferiore destro dell&#39;elenco.
 
 ![](assets/s_ncs_user_configure_list.png)
 
-Nella finestra di configurazione dell’elenco, fai clic su **[!UICONTROL Advanced parameters]** (in basso a sinistra) e cambia il numero di righe da recuperare.
+Nella finestra di configurazione dell&#39;elenco, fare clic su **[!UICONTROL Advanced parameters]** (in basso a sinistra) e modificare il numero di righe da recuperare.
 
 ![](assets/s_ncs_user_configurelist_advancedparam.png)
 
@@ -66,55 +66,55 @@ Esistono due modi per aggiungere una colonna in un elenco.
 
 Un altro modo per aggiungere colonne, ad esempio per visualizzare dati non visualizzati nella schermata di dettaglio, consiste nell&#39;utilizzare la finestra di configurazione dell&#39;elenco. Per eseguire questa operazione:
 
-1. Clic **[!UICONTROL Configure list]** in basso e a destra dell&#39;elenco.
+1. Fai clic su **[!UICONTROL Configure list]** qui sotto e a destra dell&#39;elenco.
 
    ![](assets/s_ncs_user_configure_list.png)
 
-1. Nella finestra di configurazione dell’elenco, fai doppio clic sul campo da aggiungere nel **[!UICONTROL Available fields]** per aggiungerlo al **[!UICONTROL Output columns]**.
+1. Nella finestra di configurazione dell&#39;elenco, fare doppio clic sul campo da aggiungere all&#39;elenco **[!UICONTROL Available fields]** per aggiungerlo a **[!UICONTROL Output columns]**.
 
    ![](assets/s_ncs_user_configurelist.png)
 
    >[!NOTE]
    >
-   >Per impostazione predefinita, i campi avanzati non vengono visualizzati. Per visualizzarli, fai clic su **Visualizza campi avanzati** di seguito e a destra dell’elenco dei campi disponibili.
+   >Per impostazione predefinita, i campi avanzati non vengono visualizzati. Per visualizzarli, fare clic su **Visualizza campi avanzati** di seguito e a destra dell&#39;elenco dei campi disponibili.
    >
    >Le etichette vengono visualizzate in ordine alfabetico per tabella.
    >
-   >Utilizza il **Ricerca** per eseguire una ricerca nei campi disponibili. Per ulteriori informazioni, fare riferimento a [questa sezione](#sorting-a-list).
+   >Utilizza il campo **Ricerca** per eseguire una ricerca nei campi disponibili. Per ulteriori informazioni, consultare [questa sezione](#sorting-a-list).
    >
    >I campi sono identificati da icone specifiche: campi SQL, tabelle collegate, campi calcolati e così via. Per ogni campo selezionato, la descrizione viene visualizzata nell’elenco dei campi disponibili. [Ulteriori informazioni](#configuring-lists).
    >
    >Puoi anche ordinare e filtrare i dati. Consulta [questa sezione](../../platform/using/filtering-options.md).
 
 1. Ripetere l&#39;operazione per ogni colonna da visualizzare.
-1. Utilizza le frecce per modificare **ordine di visualizzazione**. La colonna più alta si troverà a sinistra nell&#39;elenco dei record.
+1. Utilizza le frecce per modificare l&#39;**ordine di visualizzazione**. La colonna più alta si troverà a sinistra nell&#39;elenco dei record.
 
    ![](assets/s_ncs_user_columns_order_down.png)
 
-1. Se necessario, puoi fare clic su **[!UICONTROL Distribution of values]** per visualizzare la partizione dei valori per il campo selezionato nella cartella corrente.
+1. Se necessario, è possibile fare clic su **[!UICONTROL Distribution of values]** per visualizzare la partizione dei valori per il campo selezionato nella cartella corrente.
 
    ![](assets/s_ncs_user_configurelist_values.png)
 
-1. Clic **[!UICONTROL OK]** per confermare la configurazione e visualizzare il risultato.
+1. Fare clic su **[!UICONTROL OK]** per confermare la configurazione e visualizzare il risultato.
 
 ### Crea una nuova colonna {#create-a-new-column}
 
 È possibile creare nuove colonne per visualizzare ulteriori campi nell&#39;elenco. Per eseguire questa operazione:
 
-1. Clic **[!UICONTROL Configure the list]** in basso e a destra dell&#39;elenco.
-1. Clic **[!UICONTROL Add]** per visualizzare un nuovo campo nell&#39;elenco.
+1. Fai clic su **[!UICONTROL Configure the list]** in basso a destra dell&#39;elenco.
+1. Fare clic su **[!UICONTROL Add]** per visualizzare un nuovo campo nell&#39;elenco.
 
 ### Rimuovere una colonna {#remove-a-column}
 
-È possibile mascherare una o più colonne di un elenco di record utilizzando **[!UICONTROL Configure list]** si trova sotto e a destra dell’elenco.
+È possibile mascherare una o più colonne di un elenco di record utilizzando **[!UICONTROL Configure list]** situato sotto e a destra dell&#39;elenco.
 
 ![](assets/s_ncs_user_configure_list.png)
 
-Nella finestra di configurazione dell’elenco, seleziona la colonna da mascherare dal menu **[!UICONTROL Output columns]** e fare clic sul pulsante elimina.
+Nella finestra di configurazione dell&#39;elenco selezionare la colonna da mascherare dalla zona **[!UICONTROL Output columns]** e fare clic sul pulsante Elimina.
 
 ![](assets/s_ncs_user_removecolumn_icon.png)
 
-Ripetere l&#39;operazione per ogni colonna da mascherare. Clic **[!UICONTROL OK]** per confermare la configurazione e visualizzare il risultato.
+Ripetere l&#39;operazione per ogni colonna da mascherare. Fare clic su **[!UICONTROL OK]** per confermare la configurazione e visualizzare il risultato.
 
 ### Regola larghezza colonna {#adjust-column-width}
 
@@ -147,25 +147,25 @@ Per salvare la configurazione dell’elenco in modo che possa essere riutilizzat
 
 1. Fare clic con il pulsante destro del mouse sulla cartella contenente i dati visualizzati.
 1. Seleziona **[!UICONTROL Properties]**.
-1. Clic **[!UICONTROL Advanced settings]** e quindi specifica un nome nel **[!UICONTROL Configuration]** campo.
+1. Fare clic su **[!UICONTROL Advanced settings]** e quindi specificare un nome nel campo **[!UICONTROL Configuration]**.
 
    ![](assets/s_ncs_user_folder_save_config_2.png)
 
-1. Clic **[!UICONTROL OK]** e quindi fare clic su **[!UICONTROL Save]**.
+1. Fare clic su **[!UICONTROL OK]** e quindi su **[!UICONTROL Save]**.
 
-Puoi quindi applicare questa configurazione a un’altra **Consegna** cartella:
+Puoi quindi applicare questa configurazione a un&#39;altra cartella **Delivery**:
 
 ![](assets/s_ncs_user_folder_save_config_3.png)
 
-Clic **[!UICONTROL Save]** nella finestra proprietà cartella. La visualizzazione dell’elenco viene modificata in modo che corrisponda alla configurazione specificata:
+Fare clic su **[!UICONTROL Save]** nella finestra proprietà cartella. La visualizzazione dell’elenco viene modificata in modo che corrisponda alla configurazione specificata:
 
 ![](assets/s_ncs_user_folder_save_config_5.png)
 
 ## Esportare un elenco {#exporting-a-list}
 
-Per esportare dati da un elenco, è necessario utilizzare una procedura guidata di esportazione. Per accedervi, seleziona gli elementi da esportare dall’elenco, fai clic con il pulsante destro del mouse e seleziona **[!UICONTROL Export...]**.
+Per esportare dati da un elenco, è necessario utilizzare una procedura guidata di esportazione. Per accedervi, selezionare gli elementi da esportare dall&#39;elenco, fare clic con il pulsante destro del mouse e selezionare **[!UICONTROL Export...]**.
 
-L&#39;utilizzo delle funzioni di importazione ed esportazione è illustrato nella [Importazioni ed esportazioni generiche](../../platform/using/about-generic-imports-exports.md).
+L&#39;utilizzo delle funzioni di importazione ed esportazione è illustrato in [Importazioni ed esportazioni generiche](../../platform/using/about-generic-imports-exports.md).
 
 >[!CAUTION]
 >
@@ -179,11 +179,11 @@ Fai clic sull’intestazione della colonna per applicare un ordinamento crescent
 
 È inoltre possibile configurare criteri di ordinamento o combinare criteri di ordinamento. A questo scopo, segui la procedura indicata di seguito:
 
-1. **[!UICONTROL Configure list]** in basso e a destra dell&#39;elenco.
+1. **[!UICONTROL Configure list]** di seguito e a destra dell&#39;elenco.
 
    ![](assets/s_ncs_user_configure_list.png)
 
-1. Nella finestra di configurazione dell’elenco, fai clic su **[!UICONTROL Sorting]** scheda.
+1. Nella finestra di configurazione dell&#39;elenco fare clic sulla scheda **[!UICONTROL Sorting]**.
 1. Selezionare i campi da ordinare e la direzione di ordinamento (crescente o decrescente).
 
    ![](assets/s_ncs_user_configurelist_sort.png)
@@ -194,11 +194,11 @@ Fai clic sull’intestazione della colonna per applicare un ordinamento crescent
 
    La priorità di ordinamento non influisce sulla visualizzazione delle colonne nell’elenco.
 
-1. Clic **[!UICONTROL Ok]** per confermare questa configurazione e visualizzare il risultato nell’elenco.
+1. Fare clic su **[!UICONTROL Ok]** per confermare questa configurazione e visualizzare il risultato nell&#39;elenco.
 
 ### Ricerca di elementi {#running-a-search}
 
-Puoi eseguire una ricerca dei campi disponibili in un editor utilizzando **[!UICONTROL Search]** si trova sopra l’elenco dei campi. Premi **Invio** sulla tastiera o sfoglia l’elenco. I campi corrispondenti alla ricerca avranno etichette in grassetto.
+È possibile eseguire una ricerca dei campi disponibili in un editor utilizzando il campo **[!UICONTROL Search]** situato sopra l&#39;elenco dei campi. Premi **Invio** sulla tastiera o sfoglia l&#39;elenco. I campi corrispondenti alla ricerca avranno etichette in grassetto.
 
 >[!NOTE]
 >

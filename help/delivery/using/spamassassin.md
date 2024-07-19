@@ -15,7 +15,7 @@ ht-degree: 4%
 
 # SpamAssassin{#spamassassin}
 
-Adobe Campaign può essere configurato per funzionare con [SpamAssassin](https://spamassassin.apache.org), servizio di terze parti utilizzato per il filtro dello spam nelle e-mail. Ciò ti consente di valutare le e-mail per determinare se un messaggio corre il rischio di essere considerato come spam dagli strumenti anti-spam utilizzati al momento della ricezione.
+Adobe Campaign può essere configurato per funzionare con [SpamAssassin](https://spamassassin.apache.org), un servizio di terze parti utilizzato per il filtro della posta indesiderata. Ciò ti consente di valutare le e-mail per determinare se un messaggio corre il rischio di essere considerato come spam dagli strumenti anti-spam utilizzati al momento della ricezione.
 
 SpamAssassin sfrutta una varietà di tecniche di rilevamento spam, tra cui:
 
@@ -37,7 +37,7 @@ Dopo aver creato la consegna e-mail e averne definito il contenuto, segui i pass
 
 Per ulteriori informazioni sulla creazione e la progettazione di una consegna, consulta [questa sezione](about-email-channel.md).
 
-1. Vai a **[!UICONTROL Preview]** scheda.
+1. Passa alla scheda **[!UICONTROL Preview]**.
 1. Seleziona un destinatario per visualizzare l’anteprima della consegna.
 
    ![](assets/s_tn_del_preview_spamassassin_recipient.png)
@@ -50,12 +50,12 @@ Per ulteriori informazioni sulla creazione e la progettazione di una consegna, c
 
    ![](assets/s_tn_del_preview_spamassassin_ko.png)
 
-1. Fai clic su **[!UICONTROL More...]** accanto all’avviso.
+1. Fare clic sul collegamento **[!UICONTROL More...]** accanto all&#39;avviso.
 1. Seleziona la scheda **[!UICONTROL Anti-spam checking]**.
-1. Vai a **[!UICONTROL Points / Rule / Description]** per visualizzare i motivi di questo rischio.
+1. Andare alla sezione **[!UICONTROL Points / Rule / Description]** per visualizzare i motivi di questo rischio.
 
    ![](assets/s_tn_del_msg_spamassassin_ko.png)
 
 >[!NOTE]
 >
->Ogni volta che fai clic su **[!UICONTROL Anti-spam checking]**, viene chiamato il servizio SpamAssassin e il messaggio viene nuovamente analizzato per rilevare la presenza di posta indesiderata. Assicurati di aver modificato il contenuto prima di eseguire di nuovo l’analisi anti-spam.
+>Ogni volta che si fa clic su **[!UICONTROL Anti-spam checking]**, viene chiamato il servizio SpamAssassin e il messaggio viene nuovamente analizzato per rilevare la posta indesiderata. Assicurati di aver modificato il contenuto prima di eseguire di nuovo l’analisi anti-spam.

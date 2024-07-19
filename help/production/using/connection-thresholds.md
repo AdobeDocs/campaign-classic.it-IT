@@ -23,15 +23,15 @@ Per i server con carichi elevati, la soglia di connessione potrebbe essere super
 
 Sono disponibili tre diverse soglie:
 
-* Il **Soglia di connessione web**, configurato nel server web. Per modificarlo, contatta l’amministratore di sistema.
+* La **soglia di connessione Web**, configurata nel server Web. Per modificarlo, contatta l’amministratore di sistema.
 
-* Il **soglia di connessione al database**. Per modificarlo, contattare l&#39;amministratore del database.
+* Soglia di connessione al database ****. Per modificarlo, contattare l&#39;amministratore del database.
 
-* Il **Soglia di connessione Adobe Campaign**, disponibile in due posizioni:
+* La **soglia di connessione Adobe Campaign**, disponibile in due posizioni:
 
-   * **Tomcat** side: tutte le query in arrivo sul client Adobe Campaign Tomcat.
+   * Lato **Tomcat**: tutte le query in arrivo sul client Adobe Campaign Tomcat.
 
-     Questa soglia è configurata in **nl6/tomcat-X/conf/server.xml** file. Il **maxThreads** attribute consente di aumentare la soglia del numero di query elaborate alla volta. Ad esempio, può essere modificato in 250.
+     Questa soglia è configurata nel file **nl6/tomcat-X/conf/server.xml**. L&#39;attributo **maxThreads** consente di aumentare la soglia del numero di query elaborate alla volta. Ad esempio, può essere modificato in 250.
 
      ```
      <Connector protocol="HTTP/1.1" port="8080"
@@ -47,7 +47,7 @@ Sono disponibili tre diverse soglie:
 
    * **Database**: set di tutte le connessioni aperte contemporaneamente nel database da un processo.
 
-     Questa soglia è configurata nel file **nl6/conf/serverConf.xml**. Il **maxCnx** attributo situato in **pool di origini dati** consente di aumentare la soglia di query elaborate simultaneamente.
+     Questa soglia è configurata nel file **nl6/conf/serverConf.xml**. L&#39;attributo **maxCnx** che si trova nel **pool di origini dati** consente di aumentare la soglia delle query elaborate contemporaneamente.
 
      ```
          <!-- Data source

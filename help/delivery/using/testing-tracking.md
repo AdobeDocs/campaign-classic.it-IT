@@ -22,18 +22,18 @@ Puoi verificare il tracciamento su pagine mirror, registri e collegamenti e-mail
 1. Aggiungi un blocco di personalizzazione pagina speculare (MirrorPage) nel contenuto dell’e-mail.
 1. Invia la consegna contenente un collegamento alla pagina speculare.
 1. Una volta ricevuta l’e-mail, aprila e fai clic sul collegamento della pagina speculare.
-1. Dopo essere stato correttamente reindirizzato alla pagina speculare, accedi al **Amministrazione > Flussi di lavoro tecnici** e aprire la **Tracciamento** flusso di lavoro.
-1. Avvia il flusso di lavoro, fai clic con il pulsante destro del mouse su **Scheduler** attività e selezione **Esegui attività in sospeso**.
-1. Attendere circa 30 secondi, quindi selezionare **Audit** scheda. Verifica che sia stato trovato almeno un record del registro di tracciamento.
+1. Dopo essere stato reindirizzato correttamente alla pagina mirror, accedere alla cartella **Amministrazione > Flussi di lavoro tecnici** e aprire il flusso di lavoro **Tracciamento**.
+1. Avvia il flusso di lavoro, fai clic con il pulsante destro del mouse sull&#39;attività **Scheduler** e seleziona **Esegui attività in sospeso ora**.
+1. Attendi circa 30 secondi, quindi seleziona la scheda **Audit**. Verifica che sia stato trovato almeno un record del registro di tracciamento.
 
-   Clic **Aggiorna** se non vengono visualizzati nuovi registri.
+   Fare clic su **Aggiorna** se non vengono visualizzati nuovi registri.
 
-1. Vai alla pagina del profilo del destinatario utilizzato per il test e seleziona la **Tracciamento** scheda. Alcuni record devono essere visualizzati con **Pagina mirror** valore in **Tipo** colonna.
+1. Vai alla pagina del profilo del destinatario utilizzato per il test e seleziona la scheda **Verifica**. Alcuni record devono essere visualizzati con il valore **Pagina mirror** nella colonna **Tipo**.
 
    >[!NOTE]
    >
-   >La pagina del profilo del destinatario si trova in **Profili e destinazioni > Destinatari** cartella per impostazione predefinita.
+   >Per impostazione predefinita, la pagina del profilo del destinatario si trova nella cartella **Profili e destinazioni > Destinatari**.
 
-   Per verificare il tracciamento del registro e-mail, cerca i valori **Apri** e **[!UICONTROL Email click]** nel **Tipo** colonna.
+   Per controllare il tracciamento del registro e-mail, cerca i valori **Apri** e **[!UICONTROL Email click]** nella colonna **Tipo**.
 
-   Se i registri aperti non vengono visualizzati, vai alla consegna e accedi ai relativi **Proprietà** per assicurarsi che entrambi **Attiva tracciamento** e **[!UICONTROL Opens tracking]** sono selezionate.
+   Se i registri aperti non vengono visualizzati, vai alla consegna e accedi alle relative **Proprietà** per assicurarti che siano verificate sia le opzioni **Attiva tracciamento** che le opzioni **[!UICONTROL Opens tracking]**.

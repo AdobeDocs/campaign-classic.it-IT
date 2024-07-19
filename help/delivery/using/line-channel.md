@@ -17,13 +17,13 @@ ht-degree: 2%
 
 
 
-[!DNL LINE] è un’applicazione per la messaggistica istantanea gratuita, chiamate vocali e video, disponibile su ogni sistema operativo mobile e su PC.
+[!DNL LINE] è un&#39;applicazione per la messaggistica istantanea gratuita, chiamate vocali e video, disponibile su tutti i sistemi operativi mobili e su PC.
 
-[!DNL LINE] può essere combinato anche con il modulo dei messaggi transazionali per inviare messaggi in tempo reale sul [!DNL LINE] app installata in dispositivi mobili di consumo. Per ulteriori informazioni, consulta questa [pagina](../../message-center/using/transactional-messaging-architecture.md#transactional-messaging-and-line).
+È inoltre possibile combinare [!DNL LINE] con il modulo dei messaggi transazionali per inviare messaggi in tempo reale sull&#39;app [!DNL LINE] installata nei dispositivi mobili di consumo. Per ulteriori informazioni, consulta questa [pagina](../../message-center/using/transactional-messaging-architecture.md#transactional-messaging-and-line).
 
 ![](assets/line_message.png)
 
-I passaggi per utilizzare [!DNL LINE] i canali sono:
+I passaggi per l&#39;utilizzo del canale [!DNL LINE] sono i seguenti:
 
 1. [Configura canale LINE](#setting-up-line-channel)
 1. [Creare una consegna](#creating-the-delivery)
@@ -32,112 +32,112 @@ I passaggi per utilizzare [!DNL LINE] i canali sono:
 
 ## Configura canale LINE {#setting-up-line-channel}
 
-Prima di creare un [!DNL LINE] account e account esterno, è innanzitutto necessario installare il pacchetto LINE nell’istanza. Per ulteriori informazioni, consulta [questa sezione](../../installation/using/installing-campaign-standard-packages.md#line-package).
+Prima di creare un account [!DNL LINE] e un account esterno, è necessario installare il pacchetto LINE nell&#39;istanza. Per ulteriori informazioni, consulta [questa sezione](../../installation/using/installing-campaign-standard-packages.md#line-package).
 
-Devi innanzitutto creare un [!DNL LINE] in modo da poterlo collegare ad Adobe Campaign. Quindi puoi inviare [!DNL LINE] messaggi agli utenti che hanno aggiunto il tuo [!DNL LINE] nella loro app mobile. Account esterni e [!DNL LINE] l’account può essere gestito solo dall’amministratore funzionale della piattaforma.
+È innanzitutto necessario creare un account [!DNL LINE], in modo da poterlo quindi collegare ad Adobe Campaign. Quindi, puoi inviare [!DNL LINE] messaggi agli utenti che hanno aggiunto il tuo account [!DNL LINE] nella loro app mobile. Gli account esterni e [!DNL LINE] possono essere gestiti solo dall&#39;amministratore funzionale della piattaforma.
 
-Per creare e configurare un [!DNL LINE] account, consulta [Documentazione per gli sviluppatori LINE](https://developers.line.me/).
+Per creare e configurare un account [!DNL LINE], vedere la [documentazione per gli sviluppatori LINE](https://developers.line.me/).
 
 ### Creare e configurare il servizio LINE {#configure-line-service}
 
-Per creare [!DNL LINE] servizio:
+Per creare il servizio [!DNL LINE]:
 
-1. Dalla home page di Adobe Campaign Classic, seleziona la **[!UICONTROL Profiles and Targets]** scheda.
+1. Dalla home page di Adobe Campaign Classic, selezionare la scheda **[!UICONTROL Profiles and Targets]**.
 
-1. Nel menu a sinistra, seleziona **[!UICONTROL Services and Subscriptions]** e fai clic su **[!UICONTROL Create]**.
+1. Nel menu a sinistra, selezionare **[!UICONTROL Services and Subscriptions]** e fare clic su **[!UICONTROL Create]**.
 
    ![](assets/line_service_1.png)
 
-1. Aggiungi un **[!UICONTROL Label]** e **[!UICONTROL Internal name]** al nuovo servizio.
+1. Aggiungi **[!UICONTROL Label]** e **[!UICONTROL Internal name]** al nuovo servizio.
 
-1. Seleziona **[!UICONTROL LINE]** dal **[!UICONTROL Type]** a discesa.
+1. Selezionare **[!UICONTROL LINE]** dal menu a discesa **[!UICONTROL Type]**.
 
    ![](assets/line_service_2.png)
 
 1. Fai clic su **[!UICONTROL Save]**.
 
-Per ulteriori informazioni sugli abbonamenti e i servizi, consulta [Gestione delle sottoscrizioni](managing-subscriptions.md).
+Per ulteriori informazioni sugli abbonamenti e i servizi, vedere [Gestione degli abbonamenti](managing-subscriptions.md).
 
 ### Configurare l’account esterno LINE {#configure-line-external}
 
-Dopo aver creato [!DNL LINE] servizio, è necessario configurare il [!DNL LINE] account esterno su Adobe Campaign:
+Dopo aver creato il servizio [!DNL LINE], devi configurare l&#39;account esterno [!DNL LINE] su Adobe Campaign:
 
-1. In **[!UICONTROL Administration]** > **[!UICONTROL Platform]** struttura ad albero, fare clic su **[!UICONTROL External Accounts]** scheda.
+1. Nella struttura ad albero **[!UICONTROL Administration]** > **[!UICONTROL Platform]**, fare clic sulla scheda **[!UICONTROL External Accounts]**.
 
-1. Seleziona il predefinito **[!UICONTROL LINE V2 routing]** account esterno.
+1. Selezionare l&#39;account esterno predefinito **[!UICONTROL LINE V2 routing]**.
 
    ![](assets/line_config.png)
 
-1. Fai clic su **[!UICONTROL LINE]** dall’account esterno per iniziare a configurare l’account esterno. Compila i campi seguenti:
+1. Fai clic sulla scheda **[!UICONTROL LINE]** dall&#39;account esterno per iniziare a configurare l&#39;account esterno. Compila i campi seguenti:
 
    ![](assets/line_config_2.png)
 
-   * **[!UICONTROL Channel Alias]**: viene fornito tramite il [!DNL LINE] account in **[!UICONTROL Channels]** > **[!UICONTROL Technical configuration]** scheda.
-   * **[!UICONTROL Channel ID]**: viene fornito tramite il [!DNL LINE] account in **[!UICONTROL Channels]** > **[!UICONTROL Basic Information panel]** scheda.
-   * **[!UICONTROL Channel secret key]**: viene fornito tramite il [!DNL LINE] account in **[!UICONTROL Channels]** > **[!UICONTROL Basic Information panel]** scheda.
-   * **[!UICONTROL Access token]**: viene fornito tramite il [!DNL LINE] account nel portale per sviluppatori o facendo clic sul pulsante **[!UICONTROL Get access token]** pulsante.
+   * **[!UICONTROL Channel Alias]**: viene fornito tramite l&#39;account [!DNL LINE] nella scheda **[!UICONTROL Channels]** > **[!UICONTROL Technical configuration]**.
+   * **[!UICONTROL Channel ID]**: viene fornito tramite l&#39;account [!DNL LINE] nella scheda **[!UICONTROL Channels]** > **[!UICONTROL Basic Information panel]**.
+   * **[!UICONTROL Channel secret key]**: viene fornito tramite l&#39;account [!DNL LINE] nella scheda **[!UICONTROL Channels]** > **[!UICONTROL Basic Information panel]**.
+   * **[!UICONTROL Access token]**: viene fornito tramite l&#39;account [!DNL LINE] nel portale per sviluppatori o facendo clic sul pulsante **[!UICONTROL Get access token]**.
    * **[!UICONTROL Access token expiration date]**: consente di specificare la data di scadenza del token di accesso.
-   * **[!UICONTROL LINE subscription service]**: ti consente di specificare i servizi a cui gli utenti saranno abbonati.
+   * **[!UICONTROL LINE subscription service]**: consente di specificare i servizi a cui gli utenti saranno abbonati.
 
 1. Al termine della configurazione, fai clic su **[!UICONTROL Save]**.
 
-1. Dalla sezione **[!UICONTROL Explorer]**, seleziona **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** > **[!UICONTROL LINE workflows]** per verificare se **[!UICONTROL LINE V2 access token update (updateLineAccessToken)]** e **[!UICONTROL Delete blocked LINE users (deleteBlockedLineUsers)]** dei flussi di lavoro.
+1. Da **[!UICONTROL Explorer]**, selezionare **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** > **[!UICONTROL LINE workflows]** per verificare se i flussi di lavoro **[!UICONTROL LINE V2 access token update (updateLineAccessToken)]** e **[!UICONTROL Delete blocked LINE users (deleteBlockedLineUsers)]** sono stati avviati.
 
-Il [!DNL LINE] è ora configurato in Adobe Campaign, puoi iniziare a creare e inviare consegne LINE agli abbonati.
+[!DNL LINE] è ora configurato in Adobe Campaign. È possibile iniziare a creare e inviare consegne LINE agli abbonati.
 
 ## Creare una consegna LINE {#creating-the-delivery}
 
 >[!NOTE]
 >
->Quando si invia una [!DNL LINE] consegna a un nuovo destinatario per la prima volta, devi aggiungere alla consegna il messaggio LINE ufficiale relativo ai termini di utilizzo e di consenso. Il messaggio ufficiale è disponibile all&#39;indirizzo [collegamento seguente](https://terms.line.me/OA_privacy/).
+>Quando invii una consegna [!DNL LINE] a un nuovo destinatario per la prima volta, devi aggiungere alla consegna il messaggio LINE ufficiale relativo ai termini di utilizzo e di consenso. Il messaggio ufficiale è disponibile al [collegamento seguente](https://terms.line.me/OA_privacy/).
 
-Per creare un [!DNL LINE] consegna devi seguire questi passaggi:
+Per creare una consegna [!DNL LINE], è necessario seguire questi passaggi:
 
-1. Dalla sezione **[!UICONTROL Campaigns]** , seleziona **[!UICONTROL Deliveries]** quindi fai clic su **[!UICONTROL Create]** pulsante.
+1. Dalla scheda **[!UICONTROL Campaigns]**, selezionare **[!UICONTROL Deliveries]**, quindi fare clic sul pulsante **[!UICONTROL Create]**.
 
    ![](assets/line_message_07.png)
 
-1. Seleziona **[!UICONTROL LINE V2 delivery]** modello di consegna.
+1. Seleziona il modello di consegna **[!UICONTROL LINE V2 delivery]**.
 
    ![](assets/line_message_01.png)
 
-1. Identifica la consegna con un **[!UICONTROL Label]**, **[!UICONTROL Delivery code]**, e  **[!UICONTROL Description]**. Per ulteriori informazioni al riguardo, consulta [questa sezione](steps-create-and-identify-the-delivery.md#identifying-the-delivery).
+1. Identifica la consegna con **[!UICONTROL Label]**, **[!UICONTROL Delivery code]** e **[!UICONTROL Description]**. Per ulteriori informazioni al riguardo, consulta [questa sezione](steps-create-and-identify-the-delivery.md#identifying-the-delivery).
 
-1. Clic **[!UICONTROL Continue]** per creare la consegna.
+1. Fai clic su **[!UICONTROL Continue]** per creare la consegna.
 
-1. Nell’editor di consegna, seleziona **[!UICONTROL To]** per eseguire il targeting dei destinatari del [!DNL LINE] consegna. Il targeting viene eseguito il **[!UICONTROL Visitor subscriptions (nms:visitorSub)]**.
+1. Nell&#39;editor di consegna, selezionare **[!UICONTROL To]** per eseguire il targeting dei destinatari della consegna [!DNL LINE]. Il targeting viene eseguito il **[!UICONTROL Visitor subscriptions (nms:visitorSub)]**.
 
-   Per ulteriori informazioni, consulta [Identificazione delle popolazioni target](steps-defining-the-target-population.md).
+   Per ulteriori informazioni, vedere [Identificazione delle popolazioni target](steps-defining-the-target-population.md).
 
    ![](assets/line_message_08.png)
 
-1. Clic **[!UICONTROL Add]** per selezionare **[!UICONTROL Delivery target population]**.
+1. Fai clic su **[!UICONTROL Add]** per selezionare **[!UICONTROL Delivery target population]**.
 
    ![](assets/line_message_09.png)
 
-1. Scegli se desideri eseguire il targeting [!DNL LINE] direttamente dagli abbonati o se desideri indirizzare l’attività agli utenti in base alla loro [!DNL LINE] abbonamento e fai clic su **[!UICONTROL Next]**. In questo esempio abbiamo selezionato **[!UICONTROL By LINE V2 subscription]**.
+1. Scegliere se si desidera eseguire il targeting diretto di [!DNL LINE] sottoscrittori o se si desidera eseguire il targeting degli utenti in base alla sottoscrizione di [!DNL LINE] e fare clic su **[!UICONTROL Next]**. In questo esempio abbiamo selezionato **[!UICONTROL By LINE V2 subscription]**.
 
-1. Seleziona **[!UICONTROL Line-V2]** nel **[!UICONTROL Folder]** a discesa, quindi [!DNL LINE] servizio. Clic **[!UICONTROL Finish]** allora **[!UICONTROL Ok]** per iniziare a personalizzare la consegna.
+1. Seleziona **[!UICONTROL Line-V2]** nel menu a discesa **[!UICONTROL Folder]** e quindi il tuo servizio [!DNL LINE]. Fai clic su **[!UICONTROL Finish]** e quindi su **[!UICONTROL Ok]** per iniziare a personalizzare la consegna.
 
    ![](assets/line_message_10.png)
 
-1. Dall’editor di consegna, fai clic su **[!UICONTROL Add]** per aggiungere uno o più messaggi e selezionare **[!UICONTROL Content type]**.
+1. Dall&#39;editor di consegna, fare clic su **[!UICONTROL Add]** per aggiungere uno o più messaggi e selezionare **[!UICONTROL Content type]**.
 
-   Per ulteriori informazioni sulle diverse **[!UICONTROL Content type]** disponibile, fare riferimento a [Definire il tipo di contenuto](#defining-the-content).
+   Per ulteriori informazioni sui diversi **[!UICONTROL Content type]** disponibili, vedere [Definire il tipo di contenuto](#defining-the-content).
 
    ![](assets/line_message_11.png)
 
 1. Una volta creata e configurata correttamente la consegna, puoi inviarla al target definito in precedenza.
 
-   Per ulteriori informazioni sull’invio di una consegna, consulta [Inviare messaggi](sending-messages.md).
+   Per ulteriori informazioni sull&#39;invio di una consegna, fare riferimento a [Invia messaggi](sending-messages.md).
 
 1. Dopo aver inviato il messaggio, accedi al rapporto per misurare l’efficacia della consegna.
 
-   Per ulteriori informazioni su [!DNL LINE] rapporti, fare riferimento a [Accedere ai rapporti](#accessing-reports).
+   Per ulteriori informazioni su [!DNL LINE] report, fare riferimento a [Report di accesso](#accessing-reports).
 
 ## Definire il tipo di contenuto {#defining-the-content}
 
-Per definire il contenuto di un [!DNL LINE] consegna, devi innanzitutto aggiungere il tipo di messaggio alla consegna. Ogni [!DNL LINE] la consegna può contenere fino a 5 messaggi.
+Per definire il contenuto di una consegna [!DNL LINE], devi innanzitutto aggiungere il tipo di messaggio alla consegna. Ogni consegna [!DNL LINE] può contenere fino a 5 messaggi.
 
 Puoi scegliere tra tre tipi di messaggi:
 
@@ -149,33 +149,33 @@ Puoi scegliere tra tre tipi di messaggi:
 
 >[!NOTE]
 >
->Il `<%@ include option='NmsServer_URL' %>/webApp/APP3?id=<%=escapeUrl(cryptString(visitor.id))%>` La sintassi consente di includere un collegamento a un’app web in un messaggio LINE.
+>La sintassi `<%@ include option='NmsServer_URL' %>/webApp/APP3?id=<%=escapeUrl(cryptString(visitor.id))%>` consente di includere un collegamento a un&#39;app Web in un messaggio LINE.
 
-A **[!UICONTROL Text message]** [!DNL LINE] la consegna è un messaggio inviato ai destinatari sotto forma di testo.
+Una consegna **[!UICONTROL Text message]** [!DNL LINE] è un messaggio inviato ai destinatari in formato testo.
 
 ![](assets/line_message_02.png)
 
-La configurazione di questo tipo di messaggio è simile a quella del **[!UICONTROL Text]** in un messaggio e-mail. Per ulteriori informazioni, consulta questa [pagina](defining-the-email-content.md#message-content).
+La configurazione per questo tipo di messaggio è simile a quella di **[!UICONTROL Text]** in un messaggio e-mail. Per ulteriori informazioni, consulta questa [pagina](defining-the-email-content.md#message-content).
 
 ### Configurazione di una consegna di immagini e collegamenti {#configuring-an-image-and-link-delivery}
 
-Un **[!UICONTROL Image and link]** [!DNL LINE] la consegna è un messaggio inviato ai destinatari sotto forma di un’immagine che può contenere uno o più URL.
+Una consegna **[!UICONTROL Image and link]** [!DNL LINE] è un messaggio inviato ai destinatari sotto forma di un&#39;immagine che può contenere uno o più URL.
 
 Puoi utilizzare:
 
-* a **[!UICONTROL Personalized image]**,
+* un **[!UICONTROL Personalized image]**,
 
   >[!NOTE]
   >
-  >È possibile utilizzare **%SIZE%** per ottimizzare la visualizzazione dell’immagine in base alle dimensioni dello schermo del dispositivo mobile del destinatario.
+  >È possibile utilizzare la variabile **%SIZE%** per ottimizzare la visualizzazione dell&#39;immagine in base alle dimensioni dello schermo del dispositivo mobile del destinatario.
 
   ![](assets/line_message_04.png)
 
-* un **[!UICONTROL Image URL]** dimensioni dello schermo per dispositivo,
+* una dimensione di **[!UICONTROL Image URL]** per schermo dispositivo,
 
   ![](assets/line_message_03.png)
 
-  Il **[!UICONTROL Define images per device screen size]** consente di utilizzare risoluzioni di immagine diverse per ottimizzare la visibilità della consegna sui dispositivi mobili. Sono supportate solo le immagini con la stessa altezza e larghezza.
+  L&#39;opzione **[!UICONTROL Define images per device screen size]** consente di utilizzare risoluzioni immagine diverse per ottimizzare la visibilità della consegna su dispositivi mobili. Sono supportate solo le immagini con la stessa altezza e larghezza.
 
   Le immagini possono essere definite in base alle dimensioni dello schermo:
 
@@ -193,17 +193,17 @@ Puoi utilizzare:
 
 * e **[!UICONTROL Links]**.
 
-  Il **[!UICONTROL Links]** consente di scegliere tra diversi layout che divideranno l&#39;immagine in più aree selezionabili. È quindi possibile assegnare a ciascuno di essi un **[!UICONTROL Link URL]**.
+  La sezione **[!UICONTROL Links]** consente di scegliere tra diversi layout che divideranno l&#39;immagine in più aree selezionabili. È quindi possibile assegnare a ciascuno di essi un **[!UICONTROL Link URL]** dedicato.
 
   ![](assets/line_message_05.png)
 
 ### Configurazione della consegna di un messaggio video {#configuring-a-video-message-delivery}
 
-A **[!UICONTROL Video message]** [!DNL LINE] la consegna è un messaggio inviato ai destinatari sotto forma di video che può contenere un URL.
+Una consegna **[!UICONTROL Video message]** [!DNL LINE] è un messaggio inviato ai destinatari sotto forma di video che può contenere un URL.
 
-Il **[!UICONTROL Preview Image URL]** consente di aggiungere l’URL di un’immagine di anteprima con un limite di caratteri di 1000. JPEG e PNG sono supportati con un limite di dimensione file di 1 MB.
+Il campo **[!UICONTROL Preview Image URL]** consente di aggiungere l&#39;URL di un&#39;immagine di anteprima con un limite di caratteri di 1000. JPEG e PNG sono supportati con un limite di dimensione file di 1 MB.
 
-Il **[!UICONTROL Video Image URL]** consente di aggiungere l’URL del file video con un limite di caratteri di 1000. È supportato solo il formato mp4 con un limite di dimensione file di 200 MB.
+Il campo **[!UICONTROL Video Image URL]** consente di aggiungere l&#39;URL del file video con un limite di caratteri di 1000. È supportato solo il formato mp4 con un limite di dimensione file di 200 MB.
 
 Tieni presente che i video larghi o alti possono essere ritagliati quando vengono riprodotti su alcuni dispositivi.
 
@@ -211,7 +211,7 @@ Tieni presente che i video larghi o alti possono essere ritagliati quando vengon
 
 ## Accesso ai rapporti {#accessing-reports}
 
-Dopo aver inviato la consegna, puoi visualizzare [!DNL LINE] rapporti tramite il menu **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** dal **[!UICONTROL Explorer]**.
+Dopo aver inviato la consegna, puoi visualizzare i tuoi report [!DNL LINE] tramite il menu **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** da **[!UICONTROL Explorer]**.
 
 >[!NOTE]
 >
@@ -219,7 +219,7 @@ Dopo aver inviato la consegna, puoi visualizzare [!DNL LINE] rapporti tramite il
 
 ![](assets/line_reports_01.png)
 
-Per [!DNL LINE] report di servizio, accedere al menu **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Services and Subscriptions]** > **[!UICONTROL LINE-V2]** dal **[!UICONTROL Explorer]** scheda. Quindi fai clic su **[!UICONTROL Reports]** icona in [!DNL LINE] servizio.
+Per i report del servizio [!DNL LINE], accedere al menu **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Services and Subscriptions]** > **[!UICONTROL LINE-V2]** dalla scheda **[!UICONTROL Explorer]**. Quindi fare clic sull&#39;icona **[!UICONTROL Reports]** nel servizio [!DNL LINE].
 
 ![](assets/line_reports.png)
 
@@ -227,43 +227,43 @@ Per [!DNL LINE] report di servizio, accedere al menu **[!UICONTROL Profiles and 
 
 In questo esempio creeremo e configureremo un messaggio di testo e un’immagine contenenti dati che verranno personalizzati in base al destinatario.
 
-1. Crea [!DNL LINE] consegna facendo clic sul pulsante **[!UICONTROL Create]** dal pulsante **[!UICONTROL Campaign]** scheda.
+1. Crea la consegna [!DNL LINE] facendo clic sul pulsante **[!UICONTROL Create]** nella scheda **[!UICONTROL Campaign]**.
 
    ![](assets/line_usecase.png)
 
-1. Seleziona la **[!UICONTROL LINE V2 delivery]** modello di consegna e assegna un nome alla consegna.
+1. Seleziona il modello di consegna **[!UICONTROL LINE V2 delivery]** e assegna un nome alla consegna.
 
    ![](assets/line_usecase_01.png)
 
 1. Nella finestra di configurazione della consegna, seleziona la popolazione target.
 
-   Per ulteriori informazioni, consulta [Identificazione delle popolazioni target](steps-defining-the-target-population.md).
+   Per ulteriori informazioni, vedere [Identificazione delle popolazioni target](steps-defining-the-target-population.md).
 
    ![](assets/line_usecase_02.png)
 
-1. Clic **[!UICONTROL Add]** per creare il messaggio e selezionare **[!UICONTROL Content type]**.
+1. Fare clic su **[!UICONTROL Add]** per creare il messaggio e selezionare **[!UICONTROL Content type]**.
 
-   In questo caso, prima di tutto si desidera creare un’ **[!UICONTROL Text message]**.
+   In questo caso, si desidera innanzitutto creare **[!UICONTROL Text message]**.
 
    ![](assets/line_usecase_03.png)
 
-1. Posiziona il cursore nel punto in cui desideri inserire il testo personalizzato, fai clic sull’icona a discesa e seleziona **[!UICONTROL Visitor]** > **[!UICONTROL First name]**.
+1. Posizionare il cursore nel punto in cui si desidera inserire il testo personalizzato e fare clic sull&#39;icona a discesa, quindi selezionare **[!UICONTROL Visitor]** > **[!UICONTROL First name]**.
 
    ![](assets/line_usecase_05.png)
 
-1. Per aggiungere un’immagine, seleziona la stessa procedura **[!UICONTROL Image and links]** nel **[!UICONTROL Message type]** a discesa.
+1. Seguire la stessa procedura per aggiungere un&#39;immagine, selezionando **[!UICONTROL Image and links]** nel menu a discesa **[!UICONTROL Message type]**.
 
-   Aggiungi il **[!UICONTROL Image URL]**.
+   Aggiungi **[!UICONTROL Image URL]**.
 
    ![](assets/line_usecase_07.png)
 
-1. In **[!UICONTROL Links]** , selezionare il layout che dividerà l&#39;immagine in più aree selezionabili.
+1. Nella sezione **[!UICONTROL Links]**, seleziona il layout che dividerà l&#39;immagine in più aree selezionabili.
 
 1. Assegna un URL a ogni area dell&#39;immagine.
 
    ![](assets/line_usecase_08.png)
 
-1. Salva la consegna e fai clic su **[!UICONTROL Send]** per analizzarlo e inviarlo al target.
+1. Salva la consegna, quindi fai clic su **[!UICONTROL Send]** per analizzarla e inviarla alla destinazione.
 
    La consegna viene inviata al target.
 

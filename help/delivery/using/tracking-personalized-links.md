@@ -17,16 +17,16 @@ ht-degree: 7%
 
 I collegamenti nel contenuto delle e-mail che contengono la personalizzazione devono essere tracciati con una sintassi specifica.
 
-L’utilizzo di JavaScript nel contenuto delle e-mail (HTML o Text) consente di generare e inviare contenuto dinamico ai destinatari, con due limitazioni:
+L’utilizzo di JavaScript nel contenuto delle e-mail (HTML o Testo) consente di generare e inviare contenuto dinamico ai destinatari, con due limitazioni:
 
 * Lo script non può accedere direttamente al database (funzioni SQL e API non disponibili),
 * Adobe Campaign deve essere in grado di rilevare gli URL in modo da poter tenere traccia dei collegamenti. [Ulteriori informazioni](detecting-tracking-urls.md)
 
 Puoi aggiungere istruzioni di pre-elaborazione specifiche per scrivere lo script dell’URL e tracciarlo. [Ulteriori informazioni](pre-processing-instructions.md)
 
-Per il rilevamento del tracciamento, Adobe Campaign incorpora [Ordinato](https://www.html-tidy.org/) per analizzare la sorgente HTML e rilevare il pattern. Elenca tutti gli URL del contenuto in modo che possano essere tracciati singolarmente. Adobe Campaign utilizza nuovamente l’opzione Riordina per sostituire l’URL (`http://myurl.com`) con un URL che punta al server di reindirizzamento di Adobe Campaign.
+Per il rilevamento del tracciamento, Adobe Campaign incorpora [Tidy](https://www.html-tidy.org/) per analizzare l&#39;origine HTML e rilevare il modello. Elenca tutti gli URL del contenuto in modo che possano essere tracciati singolarmente. Adobe Campaign utilizza nuovamente Tidy per sostituire l&#39;URL (`http://myurl.com`) con un URL che punta al server di reindirizzamento di Adobe Campaign.
 
-Ad esempio, nel contenuto iniziale: `http://myurl.com/a.php?name=<%=escapeUrl(recipient.lastName)%>` è sostituito, per un destinatario specifico, da: `http://emailing.customer.com/r/?id=h617791,71ffa3,71ffa8&p1=CustomerName`
+Ad esempio, nel contenuto iniziale: `http://myurl.com/a.php?name=<%=escapeUrl(recipient.lastName)%>` è sostituito per un destinatario particolare con: `http://emailing.customer.com/r/?id=h617791,71ffa3,71ffa8&p1=CustomerName`
 
 Dove:
 

@@ -17,13 +17,13 @@ ht-degree: 10%
 
 ## File di estrazione {#extraction-file}
 
-Il nome del file che contiene i dati estratti è definito nel **[!UICONTROL File]** campo. Il pulsante a destra del campo consente di utilizzare i campi di personalizzazione per creare il nome del file.
+Il nome del file che contiene i dati estratti è definito nel campo **[!UICONTROL File]**. Il pulsante a destra del campo consente di utilizzare i campi di personalizzazione per creare il nome del file.
 
-Per impostazione predefinita, il file di estrazione viene creato e memorizzato sul server. È possibile salvarlo nel computer. A questo scopo, seleziona la **[!UICONTROL Download the generated file after the analysis of the delivery]**. In questo caso, è necessario indicare il percorso di accesso alla directory di archiviazione locale e il nome del file.
+Per impostazione predefinita, il file di estrazione viene creato e memorizzato sul server. È possibile salvarlo nel computer. Per eseguire questa operazione, controllare **[!UICONTROL Download the generated file after the analysis of the delivery]**. In questo caso, è necessario indicare il percorso di accesso alla directory di archiviazione locale e il nome del file.
 
 ![](assets/s_ncs_user_mail_delivery_local_file.png)
 
-Per una consegna direct mailing, il contenuto dell’estrazione è definito in **[!UICONTROL Edit the extraction file format...]** collegamento.
+Per una consegna direct mailing, il contenuto dell&#39;estrazione è definito nel collegamento **[!UICONTROL Edit the extraction file format...]**.
 
 ![](assets/s_ncs_user_mail_delivery_format_link.png)
 
@@ -35,4 +35,4 @@ Questo collegamento consente di accedere alla procedura guidata di estrazione e 
 
 >[!NOTE]
 >
->Questa procedura guidata include i passaggi della procedura guidata di esportazione descritti in [Guida introduttiva](../../platform/using/executing-export-jobs.md) sezione.
+>Questa procedura guidata include i passaggi della procedura guidata di esportazione descritti nella sezione [Guida introduttiva](../../platform/using/executing-export-jobs.md).

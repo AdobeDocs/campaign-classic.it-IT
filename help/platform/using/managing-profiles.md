@@ -20,9 +20,9 @@ ht-degree: 0%
 
 ## Struttura destinatari {#recipient-tree}
 
-Per accedere alle funzionalità avanzate di gestione dei destinatari, devi modificare la struttura di Adobe Campaign. A questo scopo, fai clic su **[!UICONTROL Explorer]** nella barra degli strumenti.
+Per accedere alle funzionalità avanzate di gestione dei destinatari, devi modificare la struttura di Adobe Campaign. A tale scopo, fare clic sul pulsante **[!UICONTROL Explorer]** nella barra degli strumenti.
 
-Per impostazione predefinita, i destinatari sono memorizzati in **[!UICONTROL Profiles and targets]** della struttura Adobe Campaign. Dallo stesso nodo, puoi creare una o più cartelle e sottocartelle per archiviare i profili dei destinatari.
+Per impostazione predefinita, i destinatari sono memorizzati nel nodo **[!UICONTROL Profiles and targets]** della struttura Adobe Campaign. Dallo stesso nodo, puoi creare una o più cartelle e sottocartelle per archiviare i profili dei destinatari.
 
 Ogni nodo coincide con una cartella. I dati di ciascuna cartella devono essere considerati partizionati l’uno dall’altro. Ciò significa che la gestione dei duplicati sarà più difficile per più cartelle di destinatari.
 
@@ -40,12 +40,12 @@ Puoi selezionare uno o più destinatari, trascinarli dall’elenco dei destinata
 
 ## Elimina destinatari {#deleting-recipients}
 
-Per eliminare i destinatari, spostali in una cartella specifica e quindi elimina il contenuto di questa cartella. È **si consiglia vivamente di non utilizzare** il **[!UICONTROL Delete]** in questo caso.
+Per eliminare i destinatari, spostali in una cartella specifica e quindi elimina il contenuto di questa cartella. Si consiglia di **non utilizzare** l&#39;opzione **[!UICONTROL Delete]** in questo caso.
 
-Per eliminare una cartella, utilizza **[!UICONTROL Actions > Purge folder]** , accessibile facendo clic con il pulsante destro del mouse sulla cartella desiderata.
+Per eliminare una cartella, utilizzare il menu **[!UICONTROL Actions > Purge folder]**, a cui si accede facendo clic con il pulsante destro del mouse sulla cartella desiderata.
 
 ![](assets/s_ncs_user_purge_folder.png)
 
-Clic **[!UICONTROL Start]** per avviare l&#39;operazione. Nella sezione centrale della finestra viene visualizzato lo stato di avanzamento, come illustrato di seguito:
+Fare clic su **[!UICONTROL Start]** per avviare l&#39;operazione. Nella sezione centrale della finestra viene visualizzato lo stato di avanzamento, come illustrato di seguito:
 
 ![](assets/s_ncs_user_purge_folder_start.png)

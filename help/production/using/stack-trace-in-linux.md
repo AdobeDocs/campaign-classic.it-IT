@@ -19,15 +19,15 @@ ht-degree: 11%
 
 
 
-A **analisi dello stack** rappresenta una traccia contenuta in una **core** digita il file. Questo file viene generato in caso di errore del computer. Può identificare l’origine dell’errore.
+Una **traccia dello stack** rappresenta una traccia contenuta in un file di tipo **core**. Questo file viene generato in caso di errore del computer. Può identificare l’origine dell’errore.
 
 >[!NOTE]
 >
->* A **core** il file è denominato **core.`<num>`**.
+>* Un file **core** è denominato **core.`<num>`**.
 >* **gdb - Il debugger GNU** deve essere installato nel computer.
 >
 
-L’assistenza tecnica Adobe Campaign può richiederti questo **analisi dello stack**. Per ottenerlo, immettete i seguenti comandi in Linux:
+Il supporto tecnico Adobe Campaign può richiedere questa **traccia dello stack**. Per ottenerlo, immettete i seguenti comandi in Linux:
 
 ```
 su - neolane
@@ -56,7 +56,7 @@ gdb nlserver <coreFile>
 
 Il supporto tecnico Adobe Campaign potrebbe richiedere di eseguire questo comando utilizzando un eseguibile specifico (che verrà fornito da noi).
 
-In questo caso, è sufficiente eseguire il comando seguente sostituendo **nlserver** con l’eseguibile fornito da Adobe Campaign:
+In questo caso, è sufficiente eseguire il comando seguente sostituendo **nlserver** con l&#39;eseguibile fornito da Adobe Campaign:
 
 ```
 gdb nlserver <coreFile>

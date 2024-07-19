@@ -32,18 +32,18 @@ La query viene definita nello stesso modo delle query standard, ma la sua esecuz
 
 Per eseguire questa operazione:
 
-1. In **[!UICONTROL Scheduling & History]** , seleziona la scheda **[!UICONTROL Schedule execution]** opzione. L&#39;attività rimane attiva dopo la creazione e verrà attivata solo nei momenti specificati dalla pianificazione per l&#39;esecuzione della query. Tuttavia, se l’opzione è disabilitata, la query viene eseguita immediatamente **e in un colpo solo**.
+1. Nella scheda **[!UICONTROL Scheduling & History]**, selezionare l&#39;opzione **[!UICONTROL Schedule execution]**. L&#39;attività rimane attiva dopo la creazione e verrà attivata solo nei momenti specificati dalla pianificazione per l&#39;esecuzione della query. Tuttavia, se l&#39;opzione è disabilitata, la query viene eseguita immediatamente **e in un unico tentativo**.
 1. Fai clic sul pulsante **[!UICONTROL Change]**.
 
-   In **[!UICONTROL Schedule editing wizard]** è possibile configurare il tipo di frequenza, la ricorrenza degli eventi e il periodo di validità degli eventi.
+   Nella finestra **[!UICONTROL Schedule editing wizard]** è possibile configurare il tipo di frequenza, la ricorrenza degli eventi e il periodo di validità degli eventi.
 
    ![](assets/s_user_segmentation_wizard_11.png)
 
-1. Clic **[!UICONTROL Finish]** per salvare la pianificazione.
+1. Fare clic su **[!UICONTROL Finish]** per salvare la pianificazione.
 
    ![](assets/s_user_segmentation_wizard_valid.png)
 
-1. La sezione inferiore della sezione **[!UICONTROL Scheduling & History]** Questa scheda ti consente di selezionare il numero di giorni da considerare nella cronologia.
+1. La sezione inferiore della scheda **[!UICONTROL Scheduling & History]** consente di selezionare il numero di giorni da considerare nella cronologia.
 
    ![](assets/edit_request_inc.png)
 
@@ -65,4 +65,4 @@ Per eseguire questa operazione:
 * schema
 * recCount
 
-Questo set di tre valori identifica la popolazione target della query. **[!UICONTROL tableName]** è il nome della tabella che registra gli identificativi target, **[!UICONTROL schema]** è lo schema della popolazione (in genere nms:recipient) e **[!UICONTROL recCount]** è il numero di elementi nella tabella.
+Questo set di tre valori identifica la popolazione target della query. **[!UICONTROL tableName]** è il nome della tabella che registra gli identificatori di destinazione, **[!UICONTROL schema]** è lo schema della popolazione (in genere nms:recipient) e **[!UICONTROL recCount]** è il numero di elementi nella tabella.

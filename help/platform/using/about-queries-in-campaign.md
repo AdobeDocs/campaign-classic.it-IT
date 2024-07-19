@@ -20,7 +20,7 @@ ht-degree: 66%
 
 Lo strumento di query di Adobe Campaign si trova su più livelli del software: per creare una popolazione target, segmentare i clienti, estrarre e filtrare i log di tracking, creare filtri, ecc.
 
-Lo strumento di query Adobe Campaign consente di eseguire query in un database utilizzando una procedura guidata dedicata: l’editor di query generico. È accessibile tramite **[!UICONTROL Tools > Generic query editor...]** menu. Ti consente di estrarre le informazioni archiviate in un database e organizzarle, raggrupparle, ordinarle, eccetera. Ad esempio, l’utente può recuperare i destinatari che hanno fatto clic più di “n” volte sul collegamento di una newsletter in un determinato periodo di tempo. Questo strumento ti consente di raccogliere, ordinare e visualizzare i risultati in base alle tue esigenze.
+Lo strumento di query Adobe Campaign consente di eseguire query in un database utilizzando una procedura guidata dedicata: l’editor di query generico. È accessibile tramite il menu **[!UICONTROL Tools > Generic query editor...]**. Ti consente di estrarre le informazioni archiviate in un database e organizzarle, raggrupparle, ordinarle, eccetera. Ad esempio, l’utente può recuperare i destinatari che hanno fatto clic più di “n” volte sul collegamento di una newsletter in un determinato periodo di tempo. Questo strumento ti consente di raccogliere, ordinare e visualizzare i risultati in base alle tue esigenze.
 
 Questo strumento combina tutte possibilità di query di Adobe Campaign. Ad esempio, ti consente di creare e salvare filtri con restrizioni. Ciò significa che un filtro utente creato nell’editor di query generico può essere utilizzato nella casella di query di un flusso di lavoro di targeting, ecc.
 

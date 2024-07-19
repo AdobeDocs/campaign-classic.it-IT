@@ -25,13 +25,13 @@ Prima di inviare una consegna, è necessario assicurarsi che i destinatari ricev
 
 Questo passaggio ti consente di rilevare eventuali errori e correggerli prima di consegnarli al target principale.
 
-Vengono presentati i passaggi per la convalida di una consegna [in questa sezione](steps-validating-the-delivery.md).
+I passaggi per la convalida di una consegna sono descritti [in questa sezione](steps-validating-the-delivery.md).
 
 ## Rendering della casella in entrata {#inbox-and-email-rendering}
 
 Il rendering della casella in entrata consente di visualizzare in anteprima i messaggi sui principali client e-mail, esaminare il contenuto e la reputazione e scoprire come i destinatari leggono i messaggi.
 
-**Suggerimenti**:
+**suggerimenti**:
 
 * Puoi visualizzare il messaggio inviato nei diversi contesti in cui può essere ricevuto: posta sul web, servizio messaggi, dispositivi mobili, ecc.
 
@@ -49,7 +49,7 @@ Per ulteriori informazioni, consulta [questa sezione](steps-validating-the-deliv
 
 Se disponi di diversi contenuti per una consegna e-mail, puoi utilizzare il test A/B per individuare la versione che avrà l’impatto maggiore sulla popolazione target.
 
-**Suggerimenti**:
+**suggerimenti**:
 
 * Inviare le diverse versioni ad alcuni destinatari
 
@@ -73,7 +73,7 @@ Puoi definire un processo di convalida completo, che coinvolga operatori e grupp
 
 Puoi impostare l’ordine di invio per le consegne indicando il livello di priorità. Per eseguire questa operazione:
 
-1. Modifica le proprietà di consegna e seleziona la **[!UICONTROL Delivery]** scheda.
+1. Modificare le proprietà di consegna e selezionare la scheda **[!UICONTROL Delivery]**.
 
 1. Definisci il livello di priorità per la consegna su una scala da **[!UICONTROL Very low]** a **[!UICONTROL Very high]**.
 
@@ -91,11 +91,11 @@ Puoi eseguire le seguenti azioni:
 
 * Per ogni elemento IPAfinity, dichiarare gli indirizzi IP che è possibile utilizzare. [Ulteriori informazioni](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* In [tipologia](../../campaign-opt/using/about-campaign-typologies.md) a tua scelta, utilizza **[!UICONTROL Managing affinities with IP addresses]** campo per collegare le consegne al server di consegna (MTA) che gestisce tale affinità. [Ulteriori informazioni](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic).
+* Nella [tipologia](../../campaign-opt/using/about-campaign-typologies.md) scelta, utilizza il campo **[!UICONTROL Managing affinities with IP addresses]** per collegare le consegne al server di consegna (MTA) che gestisce tale affinità. [Ulteriori informazioni](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic).
 
 * Una volta inviata l’e-mail, controlla l’intestazione per verificare da quale indirizzo IP è stata inviata la consegna. L’amministratore della posta elettronica dovrebbe aiutarti a ottenere le informazioni sull’intestazione.
 
-* Per le consegne SMS, assicurati che il canale SMS abbia un’affinità dedicata limitata a **uno** contenitore server applicazioni. [Ulteriori informazioni](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
+* Per le consegne SMS, assicurati che il canale SMS abbia un&#39;affinità dedicata limitata al contenitore del server applicazioni **one**. [Ulteriori informazioni](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 
 >[!NOTE]
 >

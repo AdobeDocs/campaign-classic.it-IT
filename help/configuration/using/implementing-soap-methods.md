@@ -20,13 +20,13 @@ ht-degree: 3%
 
 È possibile creare metodi SOAP in JavaScript. Questa funzione abilita semplicemente i processi applicativi, evitando di sviluppare JSP e le relative chiamate nei moduli.
 
-Questi metodi SOAP si comportano nello stesso modo di quelli definiti in modo nativo nell’applicazione. Sono supportati gli stessi attributi: static, key only e const.
+Questi metodi SOAP si comportano nello stesso modo di quelli definiti in modo nativo nella domanda. Sono supportati gli stessi attributi: static, key only e const.
 
 ## Definire una libreria di metodi {#defining-a-method-library}
 
 La creazione di una libreria di metodi prevede due fasi:
 
-* Dichiarazione del metodo SOAP,
+* la dichiarazione relativa al metodo SOAP,
 * Definizione (o implementazione) in JavaScript.
 
 ### Dichiarazione {#declaration}
@@ -35,7 +35,7 @@ Inizia dichiarando i metodi negli schemi (per ulteriori informazioni su come cre
 
 La loro dichiarazione è simile a quella dei metodi nativi, con la differenza che è necessario aggiungere l&#39;attributo &quot;library&quot; che specifica il nome della libreria dei metodi in cui si trova la definizione.
 
-Questo nome coincide con il nome (con lo spazio dei nomi) dell’entità di tipo &quot;Codice JavaScript&quot;.
+Questo nome coincide con il nome (con lo spazio dei nomi) dell&#39;entità di tipo &quot;Codice JavaScript&quot;.
 
 Esempio:
 
@@ -73,7 +73,7 @@ Il nome della funzione deve rispettare il seguente formato:
 
 Esempio:
 
-La seguente funzione JavaScript è l’implementazione del metodo descritto sopra. È definita nell&#39;entità di tipo &quot;Codice JavaScript&quot; utilizzando il nome &quot;cus:test&quot;.
+La seguente funzione di JavaScript è l’implementazione del metodo descritto sopra. È definita nell&#39;entità di tipo &quot;codice JavaScript&quot; utilizzando il nome &quot;cus:test&quot;.
 
 ```
 function nms_recipient_testLog(message)
@@ -88,8 +88,8 @@ La firma della funzione deve includere un argomento per ogni parametro &#39;in&#
 
 Casi specifici:
 
-* **metodi non statici**: la funzione deve innanzitutto includere un argomento aggiuntivo, che coincida con l’entità XML passata sotto forma di oggetto di tipo &quot;xml&quot; (E4X).
-* **metodi di tipo &quot;solo chiave&quot;**: la funzione deve includere prima un argomento aggiuntivo, che coincide con la chiave passata sotto forma di stringhe di caratteri.
+* **metodi non statici**: la funzione deve includere prima un argomento aggiuntivo che coincida con l&#39;entità XML passata sotto forma di oggetto di tipo &#39;xml&#39; (E4X).
+* **metodi di tipo &quot;solo chiave&quot;**: la funzione deve includere prima un argomento aggiuntivo che coincida con la chiave passata sotto forma di stringhe di caratteri.
 
 **3. Valori restituiti**
 

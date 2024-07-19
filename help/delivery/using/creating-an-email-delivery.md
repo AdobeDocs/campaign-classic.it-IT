@@ -27,4 +27,4 @@ Per creare una nuova consegna e-mail, effettua le seguenti operazioni:
    ![](assets/s_ncs_user_wizard_email01_1.png)
 
 1. Identifica la consegna con un’etichetta, un codice e una descrizione. Per ulteriori informazioni al riguardo, consulta [questa sezione](steps-create-and-identify-the-delivery.md#identifying-the-delivery).
-1. Clic **Continua** per confermare queste informazioni e visualizzare la finestra configurazione messaggio.
+1. Fai clic su **Continua** per confermare queste informazioni e visualizzare la finestra di configurazione del messaggio.

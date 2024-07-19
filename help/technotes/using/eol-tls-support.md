@@ -24,9 +24,9 @@ Adobe non supporta più sistemi utente e client non conformi al protocollo TLS (
 
 ## Perché viene visualizzata questa pagina?
 
-Se viene visualizzato il seguente messaggio: **Questa pagina non può essere visualizzata**, ciò significa che le app, la pagina web o il servizio di Adobe a cui stai tentando di accedere richiedono una connessione di rete più sicura con il browser web, il sistema operativo o l’app. È obbligatorio utilizzare **TLS 1.2** per la comunicazione di rete sicura e lo scambio di dati tra i sistemi degli utenti e le app e i servizi web di Adobe.
+Se viene visualizzato il seguente messaggio: **Impossibile visualizzare la pagina**, significa che le app, la pagina Web o il servizio di Adobe a cui si sta tentando di accedere richiedono una connessione di rete più sicura con il browser Web, il sistema operativo o l&#39;app. È obbligatorio utilizzare **TLS 1.2** per la comunicazione di rete sicura e lo scambio di dati tra i sistemi degli utenti e le app e i servizi Web di Adobe.
 
-Adobe ha dichiarato obsoleto il supporto per le versioni inferiori di TLS (incluse TLS 1.0 e 1.1). Per informazioni tecniche sul protocollo TLS 1.2, vedi [Domande frequenti](#faq).
+Adobe ha dichiarato obsoleto il supporto per le versioni inferiori di TLS (incluse TLS 1.0 e 1.1). Per informazioni tecniche sul protocollo TLS 1.2, consulta [Domande frequenti](#faq).
 
 ## Cosa posso fare per riprendere il servizio?
 
@@ -41,11 +41,11 @@ Puoi scaricare e installare uno dei seguenti browser più diffusi:
 
 Se utilizzi un altro browser, accertati che supporti TLS 1.2.
 
-Anche il sistema operativo e i framework dell’applicazione devono supportare TLS 1.2. Se l&#39;aggiornamento del browser non risolve il problema, verificare che il computer soddisfi i requisiti di sistema elencati in [Matrice di compatibilità di Campaign](../../rn/using/compatibility-matrix.md).
+Anche il sistema operativo e i framework dell’applicazione devono supportare TLS 1.2. Se l&#39;aggiornamento del browser non risolve il problema, verificare che il computer soddisfi i requisiti di sistema elencati nella [Matrice di compatibilità di Campaign](../../rn/using/compatibility-matrix.md).
 
 ## Domande frequenti{#faq}
 
-* **Che cos’è Transport Layer Security (TLS)?**
+* **Che cos&#39;è TLS (Transport Layer Security)?**
 
   [Transport Layer Security](https://en.wikipedia.org/wiki/Transport_Layer_Security) (TLS) è un protocollo di sicurezza che fornisce privacy e integrità dei dati tra due applicazioni comunicanti. È ampiamente implementato per i browser web e altre applicazioni che richiedono lo scambio sicuro dei dati all’interno di una rete.
 
@@ -55,7 +55,7 @@ Anche il sistema operativo e i framework dell’applicazione devono supportare T
 
   Gli standard di sicurezza e conformità di Adobe richiedono che i protocolli più vecchi vengano resi obsoleti a maggio 2018 e richiedono l’utilizzo di TLS 1.2 come versione aggiornata. Se il sistema non è conforme a TLS 1.2, l’accesso ad alcuni servizi e app di Adobe è limitato.
 
-* **Quali sono gli effetti di TLS su di te?**
+* **Effetti di TLS**
 
   Puoi interagire con alcune app e servizi di Adobe solo tramite una connessione di rete sicura. TLS garantisce che la connessione tra il browser e queste app e servizi web sia sicura e affidabile.
 
@@ -75,19 +75,19 @@ Anche il sistema operativo e i framework dell’applicazione devono supportare T
 
   La conformità PCI impone l’utilizzo di TLS 1.1 o versione successiva a maggio 2018.
 
-* **Perché gli Adobi impongono l’utilizzo di TLS 1.2 invece di consentire TLS 1.1 o TLS 1.0?**
+* **Perché l&#39;Adobe impone l&#39;utilizzo di TLS 1.2 invece di consentire TLS 1.1 o TLS 1.0?**
 
   La maggior parte delle richieste per app e servizi web di Adobe proviene da sistemi utente conformi a TLS 1.2, con traffico ridotto dai sistemi TLS 1.1.
 
   Adobe è migrato a TLS 1.2, pertanto l’accesso alle app e ai servizi web è più sicuro.
 
-* **Qual è l’ultima data utile per utilizzare una versione precedente di TLS?**
+* **Qual è l&#39;ultima data in cui è possibile utilizzare una versione precedente di TLS?**
 
   L’Adobe incoraggia gli utenti ad abbandonare rapidamente le versioni precedenti per evitare l’esposizione a vulnerabilità di sicurezza. Per ulteriori informazioni, contatta l’Assistenza clienti Adobe o il tuo Customer Success Manager.
 
 * **Quale messaggio di errore viene visualizzato se si utilizza un browser non configurato per TLS 1.2?**
 
-  Dipende dal browser in uso. Tutti i browser menzionati in [Matrice di compatibilità di Campaign](../../rn/using/compatibility-matrix.md) sono configurati per utilizzare TLS 1.2. Se utilizzi un browser o una versione che non figura nell’elenco, aggiorna il browser.
+  Dipende dal browser in uso. Tutti i browser menzionati in [Matrice di compatibilità di Campaign](../../rn/using/compatibility-matrix.md) sono configurati per l&#39;utilizzo di TLS 1.2. Se utilizzi un browser o una versione che non figura nell’elenco, aggiorna il browser.
 
   L’Adobe non controlla i messaggi di errore generati dal livello di comunicazione SSL. Il browser genera questi messaggi prima di connettersi alle app e ai servizi di Adobe. Di seguito è riportato un esempio di errore che può verificarsi con Internet Explorer 11 in Windows 7:
 

@@ -17,9 +17,9 @@ ht-degree: 2%
 
 ## Estendere una tabella {#extending-a-table}
 
-Per estendere **nms:destinatario** tabella dei destinatari dello schema, attenersi alla procedura descritta di seguito.
+Per estendere la tabella dei destinatari dello schema **nms:recipient**, attenersi alla seguente procedura:
 
-1. Creare lo schema dell’estensione (**cus:estensione**) utilizzando i seguenti dati:
+1. Crea lo schema dell&#39;estensione (**cus:extension**) utilizzando i dati seguenti:
 
    ```
    <srcSchema mappingType="sql" name="extension" namespace="cus" xtkschema="xtk:srcSchema" extendedSchema="nms:recipient">  
@@ -40,13 +40,13 @@ Per estendere **nms:destinatario** tabella dei destinatari dello schema, attener
    </srcSchema>
    ```
 
-   In questo esempio, un campo indicizzato (**fedeltà**) e **posizione** (già esistente nel **nms:destinatario** schema) è integrato con un campo enumerato (**area**).
+   In questo esempio viene aggiunto un campo indicizzato (**fidelity**) e l&#39;elemento **location** (già esistente nello schema **nms:recipient**) viene integrato con un campo enumerato (**area**).
 
    >[!IMPORTANT]
    >
-   >Ricordati di aggiungere **extendedSchema** per fare riferimento allo schema di estensione.
+   >Ricordarsi di aggiungere l&#39;attributo **extendedSchema** per fare riferimento allo schema di estensione.
 
-1. Verifica che lo schema esteso sia **nms:destinatario** e che sono presenti i dati aggiuntivi:
+1. Verificare che lo schema esteso sia lo schema **nms:recipient** e che siano presenti i dati aggiuntivi:
 
    ```
    <schema dependingSchemas="cus:extension" mappingType="sql" name="recipient" namespace="nms" xtkschema="xtk:schema">
@@ -101,7 +101,7 @@ Schema origine tabella ordine:
 </srcSchema>
 ```
 
-Il tipo di tabella è **autopk** per creare una chiave primaria generata automaticamente da utilizzare per il join del collegamento alla tabella dei destinatari.
+Il tipo di tabella è **autopk** per creare una chiave primaria generata automaticamente da utilizzare dal join del collegamento alla tabella dei destinatari.
 
 Schema generato:
 
@@ -235,9 +235,9 @@ CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);
 
 Una tabella di relazione consente di collegare due tabelle con cardinalità N-N. Questa tabella contiene solo le chiavi esterne delle tabelle da collegare.
 
-Esempio di tabella di relazioni tra gruppi (**nms:gruppo**) e destinatari (**nms:destinatario**).
+Esempio di tabella di relazione tra gruppi (**nms:group**) e destinatari (**nms:recipient**).
 
-Schema di origine della tabella delle relazioni:
+Schema Source della tabella delle relazioni:
 
 ```
 <srcSchema name="rcpGrpRel" namespace="cus">
@@ -319,7 +319,7 @@ xtkschema="xtk:srcSchema">
 </srcSchema>
 ```
 
-In qualsiasi tabella che utilizza questa tabella di riferimento, definisci un collegamento e aggiungi **displayAsField=&quot;true&quot;** attributo.
+In qualsiasi tabella che utilizza questa tabella di riferimento, definire un collegamento e aggiungere l&#39;attributo **displayAsField=&quot;true&quot;**.
 
 ```
 <element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
@@ -331,7 +331,7 @@ Nell’interfaccia utente non viene visualizzato un collegamento, ma un campo. Q
 
 * Per il completamento automatico, è necessario definire una stringa di calcolo nella tabella di riferimento.
 
-* Aggiungi il **noDbIndex=&quot;true&quot;** nella definizione del collegamento per impedire ad Adobe Campaign di creare un indice sui valori memorizzati nella tabella sorgente del collegamento.
+* Aggiungi l&#39;attributo **noDbIndex=&quot;true&quot;** nella definizione del collegamento per impedire ad Adobe Campaign di creare un indice sui valori memorizzati nella tabella di origine del collegamento.
 
 ## Argomenti correlati
 

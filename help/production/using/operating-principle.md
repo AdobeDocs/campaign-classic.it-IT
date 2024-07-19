@@ -25,17 +25,17 @@ Esistono molti moduli Adobe Campaign. Alcuni operano continuamente, mentre altri
 
 Esistono tre tipi di moduli Adobe Campaign:
 
-* Moduli a più istanze: viene eseguito un unico processo per tutte le istanze. Questo vale per i seguenti moduli: **web**, **syslogd**, **trackinglogd** e **watchdog** (attività da **config-default.xml** file).
-* Moduli a istanza singola: viene eseguito un processo per istanza. Questo vale per i seguenti moduli: **mta**, **wfserver**, **inMail**, **sms** e **stat** (attività da **config-`<instance>`.xml** file).
-* Moduli di utilità: si tratta di moduli eseguiti occasionalmente per eseguire operazioni occasionali o ricorrenti (**cleanup**, **config**, download dei registri di tracciamento, ecc.).
+* Moduli a più istanze: viene eseguito un unico processo per tutte le istanze. Questo vale per i seguenti moduli: **web**, **syslogd**, **trackinglogd** e **watchdog** (attività dal file **config-default.xml**).
+* Moduli a istanza singola: viene eseguito un processo per istanza. Questo vale per i seguenti moduli: **mta**, **wfserver**, **inMail**, **sms** e **stat** (attività dal file **config-`<instance>`.xml**).
+* Moduli di utilità: si tratta di moduli eseguiti occasionalmente per eseguire operazioni occasionali o ricorrenti (**cleanup**, **config**, download dei registri di tracciamento e così via).
 
-L&#39;amministrazione del modulo viene eseguita utilizzando lo strumento della riga di comando **nlserver** installato in **raccoglitore** della cartella di installazione.
+L&#39;amministrazione del modulo viene eseguita utilizzando lo strumento della riga di comando **nlserver** installato nella directory **bin** della cartella di installazione.
 
-La sintassi generale del **nlserver** è il seguente:
+Sintassi generale dello strumento **nlserver**:
 
 **nlserver `<command>``<command arguments>`**
 
-Per l’elenco dei moduli disponibili, utilizza **nlserver** comando.
+Per visualizzare l&#39;elenco dei moduli disponibili, utilizzare il comando **nlserver**.
 
 I moduli disponibili sono descritti nella tabella seguente:
 
@@ -79,11 +79,11 @@ I moduli disponibili sono descritti nella tabella seguente:
 >
 >Esiste un ultimo modulo: il modulo di tracciamento e inoltro collegato al server applicazioni che, per motivi di prestazioni, viene integrato tramite meccanismi nativi in un server web Apache o IIS tramite una libreria dinamica. Non esiste alcun comando di Adobe Campaign che consenta di avviare o amministrare questo modulo. È quindi necessario utilizzare i comandi del server Web stesso.
 
-L’utilizzo del modulo e la sintassi dei relativi parametri vengono visualizzati utilizzando il seguente comando: **nlserver `[module]` -?**
+L&#39;utilizzo del modulo e la sintassi dei relativi parametri vengono visualizzati utilizzando il comando seguente: **nlserver `[module]` -?**
 
 Esempio:
 
-**Configurazione nlserver -?**
+**nlserver config -?**
 
 ```
 Usage: nlserver [-verbose:<verbose mode>] [-?|h|H] [-version] [-noconsole]

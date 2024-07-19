@@ -37,13 +37,13 @@ A questo scopo, esegui i seguenti passaggi:
 
 1. Creare una copia dei database in tutte le istanze dell&#39;ambiente di origine.
 1. Ripristinare queste copie in tutte le istanze dell&#39;ambiente di destinazione.
-1. Esegui il **nms:freezeInstance.js** script di cauterizzazione nell’ambiente di destinazione prima di avviarlo.
+1. Eseguire lo script di cauterizzazione **nms:freezeInstance.js** nell&#39;ambiente di destinazione prima di avviarlo.
 
    Questo processo non influisce sui server e sulla loro configurazione.
 
    >[!NOTE]
    >
-   >Nel contesto di Adobe Campaign, un’ **cauterizzazione** combina azioni che consentono di arrestare tutti i processi che interagiscono con l’esterno: registri, tracciamento, consegne, flussi di lavoro delle campagne, ecc.\
+   >Nel contesto di Adobe Campaign, una **cauterizzazione** combina azioni che ti consentono di interrompere tutti i processi che interagiscono con l&#39;esterno: registri, tracciamento, consegne, flussi di lavoro delle campagne, ecc.\
    >Questo passaggio è necessario per evitare di inviare messaggi più volte (una volta dall’ambiente nominale e una dall’ambiente duplicato).
 
    >[!IMPORTANT]
@@ -63,14 +63,14 @@ Affinché questo processo funzioni, gli ambienti di origine e di destinazione de
 
 ### Procedura di trasferimento {#transfer-procedure}
 
-Questa sezione ti aiuta a capire i passaggi necessari per trasferire un ambiente sorgente a un ambiente di destinazione tramite un caso di studio: il nostro obiettivo è quello di ripristinare un ambiente di produzione (**prod** a un ambiente di sviluppo (**dev** per lavorare in un contesto il più vicino possibile alla piattaforma &quot;live&quot;.
+Questa sezione ti aiuta a capire i passaggi necessari per trasferire un ambiente di origine a un ambiente di destinazione tramite un caso di studio: il nostro obiettivo è quello di ripristinare un ambiente di produzione (**prod** istanza) in un ambiente di sviluppo (**dev** istanza) per lavorare in un contesto che sia il più simile possibile alla piattaforma &quot;live&quot;.
 
 È necessario eseguire con molta attenzione i seguenti passaggi: alcuni processi potrebbero essere ancora in corso quando vengono copiati i database dell’ambiente di origine. La cauterizzazione (passaggio 3 di seguito) impedisce l’invio doppio dei messaggi e mantiene la coerenza dei dati.
 
 >[!IMPORTANT]
 >
 >* La procedura seguente è valida nel linguaggio PostgreSQL. Se il linguaggio SQL è diverso (ad Oracle), è necessario adattare le query SQL.
->* I comandi riportati di seguito si applicano nel contesto di un **prod** e un **dev** in PostgreSQL.
+>* I comandi riportati di seguito vengono applicati nel contesto di un&#39;istanza **prod** e di un&#39;istanza **dev** in PostgreSQL.
 >
 
 ### Passaggio 1: eseguire un backup dei dati dell’ambiente di origine (prod) {#step-1---make-a-backup-of-the-source-environment--prod--data}
@@ -89,14 +89,14 @@ pg_dump mydatabase > mydatabase.sql
 
 La maggior parte degli elementi di configurazione sono diversi per ciascun ambiente: account esterni (mid-sourcing, routing, ecc.), opzioni tecniche (nome piattaforma, DatabaseId, indirizzi e-mail e URL predefiniti, ecc.).
 
-Prima di salvare il database di origine nel database di destinazione, è necessario esportare la configurazione dell&#39;ambiente di destinazione (dev). A questo scopo, esporta il contenuto di queste due tabelle: **xtkoption** e **nmsextaccount**.
+Prima di salvare il database di origine nel database di destinazione, è necessario esportare la configurazione dell&#39;ambiente di destinazione (dev). A tale scopo, esportare il contenuto delle due tabelle seguenti: **xtkoption** e **nmsextaccount**.
 
 Questa esportazione consente di mantenere la configurazione di sviluppo e di aggiornare solo i dati di sviluppo (flussi di lavoro, modelli, applicazioni web, destinatari, ecc.).
 
 A questo scopo, esegui un’esportazione del pacchetto per i due elementi seguenti:
 
-* Esporta il **xtk:opzione** tabella in un file &#39;options_dev.xml&#39;, senza i record con i seguenti nomi interni: &#39;WdbcTimeZone&#39;, &#39;NmsServer_LastPostUpgrade&#39; e &#39;NmsBroadcast_RegexRules&#39;.
-* In un file &#39;extaccount_dev.xml&#39;, esportare il file **nms:extAccount** tabella per tutti i record il cui ID non è 0 (@id &lt;> 0).
+* Esportare la tabella **xtk:option** in un file &#39;options_dev.xml&#39;, senza i record con i seguenti nomi interni: &#39;WdbcTimeZone&#39;, &#39;NmsServer_LastPostUpgrade&#39; e &#39;NmsBroadcast_RegexRules&#39;.
+* In un file &#39;extaccount_dev.xml&#39;, esportare la tabella **nms:extAccount** per tutti i record con ID diverso da 0 (@id &lt;> 0).
 
 Verifica che il numero di opzioni/conti esportati sia uguale al numero di righe da esportare in ciascun file.
 
@@ -138,14 +138,14 @@ nlserver pdump
 
 >[!NOTE]
 >
->In Windows, il **webmdl** Il processo può essere ancora attivo senza influire su altre operazioni.
+>In Windows, il processo **webmdl** può essere ancora attivo senza influire su altre operazioni.
 
 È inoltre possibile verificare che non siano ancora in esecuzione processi di sistema.
 
 A questo scopo, utilizza il seguente processo:
 
-* In Windows: apri **Gestione attività** e verifica che non siano presenti **nlserver.exe** processi.
-* In Linux: esegui **ps aux | grep nlserver** e verificare che non siano presenti **nlserver** processi.
+* In Windows: aprire **Gestione attività** e verificare che non siano presenti processi **nlserver.exe**.
+* In Linux: esegui **ps aux | comando grep nlserver** e verifica che non siano presenti processi **nlserver**.
 
 ### Passaggio 4: ripristinare i database nell&#39;ambiente di destinazione (dev) {#step-4---restore-the-databases-in-the-target-environment--dev-}
 
@@ -192,7 +192,7 @@ Nell’ambiente di destinazione, riavvia i processi di Adobe Campaign per tutti 
 
 >[!NOTE]
 >
->Prima di riavviare Adobe Campaign su **dev** è possibile applicare una procedura di sicurezza aggiuntiva: avviare il **web** solo modulo.
+>Prima di riavviare Adobe Campaign nell&#39;ambiente **dev**, è possibile applicare una procedura di sicurezza aggiuntiva: avviare solo il modulo **web**.
 >  
 >A questo scopo, modifica il file di configurazione dell’istanza (**config-dev.xml**), quindi aggiungi il carattere &quot;_&quot; prima delle opzioni autoStart=&quot;true&quot; per ciascun modulo (mta, stat, ecc.).
 
@@ -223,11 +223,11 @@ Per importare la configurazione dal database dell’ambiente di destinazione (de
 1. Apri Admin Console del database ed elimina gli account esterni (tabella nms:extAccount) il cui ID non è 0 (@id &lt;> 0).
 1. Nella console Adobe Campaign, importa il pacchetto options_dev.xml creato in precedenza tramite la funzionalità di importazione del pacchetto.
 
-   Verifica che le opzioni siano state effettivamente aggiornate in **[!UICONTROL Administration > Platform > Options]** nodo.
+   Verificare che le opzioni siano state effettivamente aggiornate nel nodo **[!UICONTROL Administration > Platform > Options]**.
 
 1. Nella console Adobe Campaign, importa il file extaccount_dev.xml creato in precedenza tramite la funzionalità di importazione dei pacchetti
 
-   Verificare che le banche dati esterne siano state effettivamente importate nel **[!UICONTROL Administration > Platform > External accounts]** .
+   Verificare che i database esterni siano stati effettivamente importati in **[!UICONTROL Administration > Platform > External accounts]**.
 
 ### Passaggio 9: riavviare tutti i processi e modificare gli utenti (dev) {#step-9---restart-all-processes-and-change-users--dev-}
 

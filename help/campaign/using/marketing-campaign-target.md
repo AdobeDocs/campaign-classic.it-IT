@@ -17,10 +17,10 @@ ht-degree: 1%
 In una campagna di marketing, per ogni consegna, puoi definire:
 
 * Il pubblico - Ulteriori informazioni in [Creazione del pubblico in un flusso di lavoro](#building-the-main-target-in-a-workflow) e [Selezione della popolazione target](#selecting-the-target-population).
-* Un gruppo di controllo - Ulteriori informazioni [questa sezione](#defining-a-control-group).
+* Un gruppo di controllo. Ulteriori informazioni in [questa sezione](#defining-a-control-group).
 * Indirizzi seed - Ulteriori informazioni in [questa sezione](../../delivery/using/about-seed-addresses.md).
 
-Alcune di queste informazioni possono essere ereditate da [modello di campagna](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+Alcune di queste informazioni possono essere ereditate dal [modello di campagna](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
 Per creare il target della consegna, puoi definire i criteri di filtro per i destinatari nel database. Questa modalità di selezione dei destinatari è presentata in [questa sezione](../../delivery/using/steps-defining-the-target-population.md).
 
@@ -28,13 +28,13 @@ Per creare il target della consegna, puoi definire i criteri di filtro per i des
 
 Puoi importare una popolazione in un elenco, quindi eseguire il targeting di questo elenco nelle consegne. A questo scopo, segui la procedura indicata di seguito:
 
-1. Modifica la consegna interessata e fai clic su **[!UICONTROL To]** collegamento per modificare la popolazione target.
+1. Modifica la consegna interessata e fai clic sul collegamento **[!UICONTROL To]** per modificare la popolazione target.
 
-1. In **[!UICONTROL Main target]** , seleziona la scheda **[!UICONTROL Defined via the database]** e fai clic su **[!UICONTROL Add]** per selezionare i destinatari.
+1. Nella scheda **[!UICONTROL Main target]**, selezionare l&#39;opzione **[!UICONTROL Defined via the database]** e fare clic su **[!UICONTROL Add]** per selezionare i destinatari.
 
 ![](assets/s_user_target_group_add.png)
 
-1. Scegli **[!UICONTROL A list of recipients]** e fai clic su **[!UICONTROL Next]** per selezionarlo.
+1. Scegliere **[!UICONTROL A list of recipients]** e fare clic su **[!UICONTROL Next]** per selezionarlo.
 
 ![](assets/s_user_target_group_next.png)
 
@@ -48,7 +48,7 @@ Il target principale di una consegna può essere definito anche nel flusso di la
 
 ### Creare il flusso di lavoro {#creating-a-targeting-workflow}
 
-Il targeting può essere creato tramite una combinazione di condizioni di filtro in una sequenza grafica in un flusso di lavoro. Puoi creare popolazioni e sottopopolazioni che saranno oggetto di targeting in base alle tue esigenze. Per visualizzare l’editor del flusso di lavoro, fai clic su **[!UICONTROL Targeting and workflows]** nel dashboard della campagna.
+Il targeting può essere creato tramite una combinazione di condizioni di filtro in una sequenza grafica in un flusso di lavoro. Puoi creare popolazioni e sottopopolazioni che saranno oggetto di targeting in base alle tue esigenze. Per visualizzare l&#39;editor del workflow, fare clic sulla scheda **[!UICONTROL Targeting and workflows]** nel dashboard della campagna.
 
 ![](assets/s_ncs_user_edit_op_wf_link.png)
 
@@ -74,30 +74,30 @@ Le funzioni di esecuzione del flusso di lavoro di targeting e formattazione sono
 
 >[!NOTE]
 >
->Le attività disponibili per la creazione del diagramma, nonché tutte le funzioni di visualizzazione e layout, sono descritte nel [Automazione con i flussi di lavoro](../../workflow/using/architecture.md) guida.
+>Le attività disponibili per la creazione del diagramma e tutte le funzionalità di visualizzazione e layout sono descritte in dettaglio nella guida [Automazione con flussi di lavoro](../../workflow/using/architecture.md).
 
 Puoi creare diversi flussi di lavoro di targeting per una singola campagna. Per aggiungere un flusso di lavoro:
 
-1. Vai alla sezione in alto a sinistra dell’area di creazione del flusso di lavoro, fai clic con il pulsante destro del mouse e seleziona **[!UICONTROL Add]**. È inoltre possibile utilizzare **[!UICONTROL New]** posizionato sopra questa zona.
+1. Andare alla sezione superiore sinistra dell&#39;area di creazione del flusso di lavoro, fare clic con il pulsante destro del mouse e selezionare **[!UICONTROL Add]**. È inoltre possibile utilizzare il pulsante **[!UICONTROL New]** situato sopra l&#39;area.
 
    ![](assets/s_ncs_user_add_a_wf.png)
 
-1. Seleziona la **[!UICONTROL New workflow]** modello e nome del flusso di lavoro.
-1. Clic **[!UICONTROL OK]** per confermare la creazione del flusso di lavoro, quindi creare il diagramma per il flusso di lavoro.
+1. Selezionare il modello **[!UICONTROL New workflow]** e denominare il flusso di lavoro.
+1. Fare clic su **[!UICONTROL OK]** per confermare la creazione del flusso di lavoro, quindi creare il diagramma per il flusso di lavoro.
 
 ### Eseguire il flusso di lavoro {#executing-a-workflow}
 
-I flussi di lavoro di targeting possono essere avviati manualmente tramite **[!UICONTROL Start]** nella barra degli strumenti, purché si disponga dei diritti appropriati.
+I flussi di lavoro di targeting possono essere avviati manualmente tramite il pulsante **[!UICONTROL Start]** nella barra degli strumenti, purché si disponga dei diritti appropriati.
 
 Il targeting può essere programmato per l’esecuzione automatica in base a una pianificazione (scheduler) o a un evento (segnale esterno, importazione file, ecc.).
 
-Le azioni relative all’esecuzione del flusso di lavoro di targeting (avvio, arresto, pausa, ecc.) sono **asincrono** processi: il comando viene salvato e avrà effetto non appena il server sarà disponibile per applicarlo.
+Le azioni relative all’esecuzione del flusso di lavoro di targeting (avvio, arresto, pausa, ecc.) sono **processi asincroni**: il comando viene salvato e avrà effetto non appena il server sarà disponibile per applicarlo.
 
 Le icone della barra degli strumenti consentono di intervenire sull’esecuzione del flusso di lavoro di targeting.
 
 * Avvia o riavvia
 
-   * Il **[!UICONTROL Start]** consente di avviare il flusso di lavoro di targeting. Quando fai clic su questa icona, vengono attivate tutte le attività senza una transizione di input (tranne i salti al punto finale).
+   * L&#39;icona **[!UICONTROL Start]** consente di avviare il flusso di lavoro di targeting. Quando fai clic su questa icona, vengono attivate tutte le attività senza una transizione di input (tranne i salti al punto finale).
 
      ![](assets/s_user_segmentation_start.png)
 
@@ -107,17 +107,17 @@ Le icone della barra degli strumenti consentono di intervenire sull’esecuzione
 
      Lo stato del processo cambia in **[!UICONTROL Started]**.
 
-   * Puoi riavviare il flusso di lavoro di targeting tramite l’icona appropriata della barra degli strumenti. Questo comando può essere utile se **[!UICONTROL Start]** non è disponibile, ad esempio quando è in corso l’interruzione del flusso di lavoro di targeting. In questo caso, fai clic su **[!UICONTROL Restart]** per anticipare il riavvio. Il server prende in considerazione la richiesta, come mostra il suo stato:
+   * Puoi riavviare il flusso di lavoro di targeting tramite l’icona appropriata della barra degli strumenti. Questo comando può essere utile se l&#39;icona **[!UICONTROL Start]** non è disponibile, ad esempio quando è in corso l&#39;arresto del flusso di lavoro di targeting. In questo caso, fare clic sull&#39;icona **[!UICONTROL Restart]** per anticipare il riavvio. Il server prende in considerazione la richiesta, come mostra il suo stato:
 
      ![](assets/s_user_segmentation_restart_status.png)
 
-     Il processo quindi entra **[!UICONTROL Started]** stato.
+     Il processo immette quindi lo stato **[!UICONTROL Started]**.
 
 * Interrompi o sospendi
 
    * Le icone della barra degli strumenti consentono di interrompere o mettere in pausa un flusso di lavoro di targeting in corso.
 
-     Quando fai clic su **[!UICONTROL Pause]**, operazioni in corso **[!UICONTROL are not]** in pausa, ma non viene avviata alcuna altra attività fino al successivo riavvio.
+     Quando si fa clic su **[!UICONTROL Pause]**, le operazioni in corso **[!UICONTROL are not]** sono state sospese, ma nessun&#39;altra attività viene avviata fino al successivo riavvio.
 
      ![](assets/s_user_segmentation_pause.png)
 
@@ -125,7 +125,7 @@ Le icone della barra degli strumenti consentono di intervenire sull’esecuzione
 
      ![](assets/s_user_segmentation_pause_status.png)
 
-     Puoi anche mettere in pausa automaticamente un flusso di lavoro di targeting quando l’esecuzione raggiunge una particolare attività. A questo scopo, fai clic con il pulsante destro del mouse sull’attività da cui il flusso di lavoro di targeting deve essere sospeso e seleziona **[!UICONTROL Enable but do not execute]**.
+     Puoi anche mettere in pausa automaticamente un flusso di lavoro di targeting quando l’esecuzione raggiunge una particolare attività. A questo scopo, fai clic con il pulsante destro del mouse sull&#39;attività da cui sospendere il flusso di lavoro di targeting e seleziona **[!UICONTROL Enable but do not execute]**.
 
      ![](assets/s_user_segmentation_donotexecute.png)
 
@@ -137,9 +137,9 @@ Le icone della barra degli strumenti consentono di intervenire sull’esecuzione
      >
      >Questa opzione è utile durante le fasi avanzate di progettazione e test delle campagne di targeting.
 
-     Clic **[!UICONTROL Start]** per riprendere l&#39;esecuzione.
+     Fare clic su **[!UICONTROL Start]** per riprendere l&#39;esecuzione.
 
-   * Fai clic su **[!UICONTROL Stop]** per interrompere l’esecuzione in corso.
+   * Fare clic sull&#39;icona **[!UICONTROL Stop]** per interrompere l&#39;esecuzione in corso.
 
      ![](assets/s_user_segmentation_stop.png)
 
@@ -147,7 +147,7 @@ Le icone della barra degli strumenti consentono di intervenire sull’esecuzione
 
      ![](assets/s_user_segmentation_stop_status.png)
 
-  Puoi anche interrompere automaticamente un flusso di lavoro di targeting quando l’esecuzione raggiunge un’attività. A questo scopo, fai clic con il pulsante destro del mouse sull’attività da cui verrà interrotto il flusso di lavoro di targeting e seleziona **[!UICONTROL Do not activate]**.
+  Puoi anche interrompere automaticamente un flusso di lavoro di targeting quando l’esecuzione raggiunge un’attività. A tale scopo, fare clic con il pulsante destro del mouse sull&#39;attività da cui verrà interrotto il flusso di lavoro di targeting e selezionare **[!UICONTROL Do not activate]**.
 
   ![](assets/s_user_segmentation_donotactivate.png)
 
@@ -161,9 +161,9 @@ Le icone della barra degli strumenti consentono di intervenire sull’esecuzione
 
 * Arresto incondizionato
 
-  In Esplora, seleziona **[!UICONTROL Administration > Production > Object created automatically > Campaign workflows]** per accedere e intervenire su ogni flusso di lavoro di campaign.
+  In Esplora, seleziona **[!UICONTROL Administration > Production > Object created automatically > Campaign workflows]** per accedere e agire su ogni flusso di lavoro della campagna.
 
-  Puoi interrompere incondizionatamente il flusso di lavoro facendo clic sul pulsante **[!UICONTROL Actions]** icona e selezione **[!UICONTROL Unconditional]** fermati. Questa azione interrompe il flusso di lavoro della campagna.
+  È possibile interrompere incondizionatamente il flusso di lavoro facendo clic sull&#39;icona **[!UICONTROL Actions]** e selezionando **[!UICONTROL Unconditional]** Interrompi. Questa azione interrompe il flusso di lavoro della campagna.
 
   ![](assets/s_user_segmentation_stop_unconditional.png)
 
@@ -177,17 +177,17 @@ Il gruppo di controllo può essere estratto dal target principale e/o provenire 
 
 Puoi definire un gruppo di controllo a livello di campagna, nel qual caso verrà applicato a ogni consegna della campagna interessata.
 
-1. Modifica la campagna in questione e fai clic su **[!UICONTROL Edit]** scheda.
+1. Modificare la campagna in questione e fare clic sulla scheda **[!UICONTROL Edit]**.
 1. Fai clic su **[!UICONTROL Advanced campaign settings]**.
 
    ![](assets/s_ncs_user_edit_op_target.png)
 
-1. Seleziona la **[!UICONTROL Enable and edit control group configuration]** opzione.
-1. Clic **[!UICONTROL Edit...]** per configurare il gruppo di controllo.
+1. Selezionare l&#39;opzione **[!UICONTROL Enable and edit control group configuration]**.
+1. Fare clic su **[!UICONTROL Edit...]** per configurare il gruppo di controllo.
 
    ![](assets/s_ncs_user_edit_op_general_tab_exe_target.png)
 
-La procedura di configurazione è descritta in [Estrazione del gruppo di controllo dal target principale](#extracting-the-control-group-from-the-main-target) e [Aggiunta di un gruppo di controllo](#adding-a-population).
+La procedura di configurazione è presentata in [Estrazione del gruppo di controllo dalla destinazione principale](#extracting-the-control-group-from-the-main-target) e [Aggiunta di un gruppo di controllo](#adding-a-population).
 
 ### Attivare il gruppo di controllo per una consegna {#activating-the-control-group-for-a-delivery}
 
@@ -199,14 +199,14 @@ Per impostazione predefinita, la configurazione del gruppo di controllo definita
 >
 >Se hai definito un gruppo di controllo per una campagna e lo configuri anche per una consegna collegata a questa campagna, verrà applicato solo il gruppo di controllo definito per la consegna.
 
-1. Modifica la consegna interessata, quindi fai clic su **[!UICONTROL To]** collegamento in **[!UICONTROL Email parameters]** sezione.
+1. Modificare la consegna interessata, quindi fare clic sul collegamento **[!UICONTROL To]** nella sezione **[!UICONTROL Email parameters]**.
 
    ![](assets/s_ncs_user_edit_op_target_del.png)
 
-1. Fai clic su **[!UICONTROL Control group]** , quindi seleziona **[!UICONTROL Enable and edit control group configuration]**.
-1. Clic **[!UICONTROL Edit...]** per configurare il gruppo di controllo.
+1. Fare clic sulla scheda **[!UICONTROL Control group]** e quindi selezionare **[!UICONTROL Enable and edit control group configuration]**.
+1. Fare clic su **[!UICONTROL Edit...]** per configurare il gruppo di controllo.
 
-La procedura di configurazione è descritta in [Estrazione del gruppo di controllo dal target principale](#extracting-the-control-group-from-the-main-target) e [Aggiunta di un gruppo di controllo](#adding-a-population).
+La procedura di configurazione è presentata in [Estrazione del gruppo di controllo dalla destinazione principale](#extracting-the-control-group-from-the-main-target) e [Aggiunta di un gruppo di controllo](#adding-a-population).
 
 ### Estrarre il gruppo di controllo dal target principale {#extracting-the-control-group-from-the-main-target}
 
@@ -214,16 +214,16 @@ Puoi estrarre i destinatari dal target principale della consegna. In questo caso
 
 ![](assets/s_ncs_user_extract_from_target_population.png)
 
-Per estrarre un gruppo di controllo, abilita il gruppo di controllo per la campagna o la consegna e seleziona una delle opzioni seguenti: **[!UICONTROL Activate random sampling]** o **[!UICONTROL Keep only the first records after sorting]**.
+Per estrarre un gruppo di controllo, abilitare il gruppo di controllo per la campagna o la consegna e selezionare una delle opzioni seguenti: **[!UICONTROL Activate random sampling]** o **[!UICONTROL Keep only the first records after sorting]**.
 
 * **[!UICONTROL Activate random sampling]** : questa opzione applica il campionamento casuale ai destinatari nella popolazione target. Se in seguito imposti su 100 la soglia, il gruppo di controllo sarà composto da 100 destinatari selezionati in modo casuale dalla popolazione target. Il campionamento casuale dipende dal motore del database.
-* **[!UICONTROL Keep only the first records after sorting]** : questa opzione consente di definire un limite basato su uno o più ordini di ordinamento. Se si seleziona la **[!UICONTROL Age]** come criterio di ordinamento e quindi definire 100 come soglia, il gruppo di controllo sarà composto dai 100 destinatari più giovani. Ad esempio, potrebbe essere interessante definire un gruppo di controllo che includa destinatari che effettuano pochi acquisti, o destinatari che effettuano acquisti frequenti, e confrontare il loro comportamento con quello dei destinatari contattati.
+* **[!UICONTROL Keep only the first records after sorting]** : questa opzione consente di definire un limite basato su uno o più ordini di ordinamento. Se si seleziona il campo **[!UICONTROL Age]** come criterio di ordinamento e quindi si definisce 100 come soglia, il gruppo di controllo sarà composto dai 100 destinatari più giovani. Ad esempio, potrebbe essere interessante definire un gruppo di controllo che includa destinatari che effettuano pochi acquisti, o destinatari che effettuano acquisti frequenti, e confrontare il loro comportamento con quello dei destinatari contattati.
 
-Clic **[!UICONTROL Next]** per definire l’ordinamento (se necessario) e selezionare la modalità di limitazione del destinatario.
+Fare clic su **[!UICONTROL Next]** per definire l&#39;ordinamento (se necessario) e selezionare la modalità di limitazione del destinatario.
 
 ![](assets/s_ncs_user_edit_op_target_param.png)
 
-Questa configurazione equivale a un’attività di condivisione nel flusso di lavoro, che consente di suddividere la destinazione in sottoinsiemi. Il gruppo di controllo è uno di questi sottoinsiemi. Consulta la sezione [questa sezione](../../workflow/using/architecture.md) per ulteriori informazioni.
+Questa configurazione equivale a un’attività di condivisione nel flusso di lavoro, che consente di suddividere la destinazione in sottoinsiemi. Il gruppo di controllo è uno di questi sottoinsiemi. Per ulteriori informazioni, consultare la [sezione](../../workflow/using/architecture.md).
 
 ### Utilizzare una nuova popolazione come gruppo di controllo {#adding-a-population}
 
@@ -233,7 +233,7 @@ Questa configurazione equivale a un’attività di condivisione nel flusso di la
 
 >[!NOTE]
 >
->L’editor delle query di Adobe Campaign è presentato in [questa sezione](../../workflow/using/query.md).
+>L&#39;editor di query di Adobe Campaign è presentato in [questa sezione](../../workflow/using/query.md).
 
 
 #### Video tutorial {#create-email-video}
@@ -242,4 +242,4 @@ Questo video spiega come creare una campagna e un messaggio e-mail in Adobe Camp
 
 >[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
-Sono disponibili altri video dimostrativi di Campaign [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
+Ulteriori video dimostrativi di Campaign sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

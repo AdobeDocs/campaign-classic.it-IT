@@ -9,13 +9,13 @@ exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
 source-git-commit: 81b47231b027a189bc8b9029b7d48939734d08ed
 workflow-type: tm+mt
 source-wordcount: '772'
-ht-degree: 7%
+ht-degree: 10%
 
 ---
 
 # Guida introduttiva al canale app mobile{#about-mobile-app-channel}
 
-Il **Canale app mobile** consente di utilizzare la piattaforma Adobe Campaign per inviare notifiche push personalizzate ai terminali iOS e Android tramite app.
+**Canale app mobile** consente di utilizzare la piattaforma Adobe Campaign per inviare notifiche push personalizzate ai terminali iOS e Android tramite app.
 
 Sono disponibili due canali di consegna:
 
@@ -29,7 +29,7 @@ Sono disponibili due canali di consegna:
 
   >[!IMPORTANT]
   >
-  >Alcune importanti modifiche al servizio Android Firebase Cloud Messaging (FCM) verranno rilasciate nel 2024 e potranno influenzare la tua implementazione di Adobe Campaign. Per supportare questa modifica, potrebbe essere necessario aggiornare la configurazione dei servizi di abbonamento per i messaggi push Android. Puoi già verificare ed eseguire azioni. Ulteriori informazioni [Nota tecnica su Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=it){target="_blank"}.
+  >Alcune importanti modifiche al servizio Android Firebase Cloud Messaging (FCM) verranno rilasciate nel 2024 e potranno influenzare la tua implementazione di Adobe Campaign. Per supportare questa modifica, potrebbe essere necessario aggiornare la configurazione dei servizi di abbonamento per i messaggi push Android. Puoi già verificare ed eseguire azioni. Per ulteriori informazioni, consulta questa [nota tecnica su Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=it){target="_blank"}.
 
 Corrispondente a questi due canali, nei flussi di lavoro delle campagne sono presenti due attività di consegna. Per la messaggistica transazionale sono disponibili anche due modelli di messaggi transazionali.
 
@@ -46,16 +46,16 @@ Corrispondente a questi due canali, nei flussi di lavoro delle campagne sono pre
 >* È necessario assicurarsi che le notifiche inviate a un’app mobile siano conformi ai prerequisiti e alle condizioni specificati da Apple (Apple Push Notification Service) e Google (Firebase Cloud Messaging).
 >* Avvertenza: in alcuni paesi, la legge richiede che tu informi gli utenti del tipo di dati raccolto dalle app mobili e dello scopo del loro trattamento. Dovete controllare la legislazione.
 
-Il **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) il flusso di lavoro aggiorna gli annullamenti degli abbonamenti alle notifiche sui dispositivi mobili. Per ulteriori informazioni su questo flusso di lavoro, consulta [elenco dei flussi di lavoro tecnici](../../workflow/using/about-technical-workflows.md).
+Il flusso di lavoro **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) aggiorna gli annullamenti degli abbonamenti alle notifiche sui dispositivi mobili. Per ulteriori informazioni su questo flusso di lavoro, consulta [elenco dei flussi di lavoro tecnici](../../workflow/using/about-technical-workflows.md).
 
-Adobe Campaign è compatibile con i numeri APN HTTP/2. Per ulteriori dettagli sui passaggi di configurazione, consulta [questa sezione](configuring-the-mobile-application.md) sezione.
+Adobe Campaign è compatibile con i numeri APN HTTP/2. Per ulteriori dettagli sui passaggi di configurazione, consulta la sezione [questa sezione](configuring-the-mobile-application.md).
 
-Per informazioni globali su come creare una consegna, consulta [questa sezione](steps-about-delivery-creation-steps.md).
+Per informazioni globali su come creare una consegna, consulta [questa sezione](steps-about-delivery-creation-steps.md).
 
 
 ## Configurare il canale di notifica push {#push-notification-configuration}
 
-Per inviare notifiche push con Adobe Campaign, devi prima configurare l’ambiente e l’app. Prima di iniziare a inviare notifiche push con Adobe Campaign, è necessario assicurarsi che le configurazioni e le integrazioni siano attive nell’app mobile e per i tag in Adobe Experience Platform. L’SDK di Adobe Experience Platform Mobile fornisce API di integrazione lato client per i dispositivi mobili tramite SDK compatibili con Android e iOS. La configurazione degli SDK viene gestita tramite l’interfaccia utente di Data Collection per una configurazione flessibile e integrazioni estensibili basate su regole. Ulteriori informazioni in [Documentazione di Adobe Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/push-settings).
+Per inviare notifiche push con Adobe Campaign, devi prima configurare l’ambiente e l’app. Prima di iniziare a inviare notifiche push con Adobe Campaign, è necessario assicurarsi che le configurazioni e le integrazioni siano attive nell’app mobile e per i tag in Adobe Experience Platform. L’SDK di Adobe Experience Platform Mobile fornisce API di integrazione lato client per i dispositivi mobili tramite SDK compatibili con Android e iOS. La configurazione degli SDK viene gestita tramite l’interfaccia utente di raccolta dati, per un’impostazione flessibile e integrazioni estensibili basate su regole. Ulteriori informazioni sono disponibili nella [documentazione di Adobe Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/push/push-settings).
 
 
 ## Percorso dati {#data-path}
@@ -80,7 +80,7 @@ Gli addetti al marketing eseguono il targeting degli abbonati all’applicazione
 
 In Adobe Campaign sono disponibili le seguenti informazioni:
 
-* Solo Android: numero di dispositivi che hanno visualizzato la notifica (impression)
+* Solo per Android: numero di dispositivi che hanno visualizzato la notifica (impression)
 * Android e iOS: numero di clic sulla notifica
 
 ![](assets/nmac_delivery_view.png)
@@ -103,4 +103,4 @@ Per verificare che funzioni correttamente, utilizza i seguenti comandi:
 
 Con il connettore iOS HTTP/2, l’MTA e il server web devono essere in grado di contattare gli APN sulla porta 443.
 
-Se devi utilizzare il connettore iOS HTTP/2 tramite un proxy, consulta questa sezione [pagina](../../installation/using/file-res-management.md#proxy-connection-configuration).
+Se devi utilizzare il connettore iOS HTTP/2 tramite un proxy, fai riferimento a questa [pagina](../../installation/using/file-res-management.md#proxy-connection-configuration).

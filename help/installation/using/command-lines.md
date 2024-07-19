@@ -28,9 +28,9 @@ La creazione di un’istanza può essere eseguita utilizzando le righe di comand
 nlserver config -addinstance:instance/masques DNS[/lang]
 ```
 
-(dove **eng** e **fra** sono valori possibili per `[lang]` parameter)
+(dove **eng** e **fra** sono valori possibili per il parametro `[lang]`)
 
-Il comando **configurazione nlserver -addinstance:instance1/demo&#42;/eng** consente di creare un’istanza denominata **instance1** in inglese con la demo della maschera DNS&#42;.
+Il comando **nlserver config -addinstance:instance1/demo&#42;/eng** consente di creare un&#39;istanza denominata **instance1** in inglese con la demo della maschera DNS&#42;.
 
 ## Dichiarare un database {#declaring-a-database}
 
@@ -40,13 +40,13 @@ Il comando **configurazione nlserver -addinstance:instance1/demo&#42;/eng** cons
 nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
 ```
 
-I seguenti valori sono possibili per **`[rdbms]`** parametro:
+Per il parametro **`[rdbms]`** sono possibili i seguenti valori:
 
-* **postgresql**: per PostgreSQL
+* **postgresql**: per PostgreSQL,
 * **oracle**: ad Oracle,
 * **mssql**: per Microsoft SQL Server,
 
-Il comando seguente configura **demo** istanza con il tipo di server SQL noto come **base6**, collegato al **campagna** account e relativi **password** il **dbsrv** server:
+Il comando seguente configura l&#39;istanza **demo** con il server dei tipi SQL noto come **base6**, collegato all&#39;account **campaign** e alla relativa **password** nel server **dbsrv**:
 
 ```sql
  nlserver config -setdblogin:db:campaign:myBase/password@dbServer -instance:demo

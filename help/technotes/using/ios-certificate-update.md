@@ -15,7 +15,7 @@ ht-degree: 0%
 
 
 
-Il 29 marzo 2021, un aggiornamento dell’infrastruttura del servizio di notifica push di Apple (APNs) ha interessato il canale Adobe Campaign Classic iOS. Una modifica alla configurazione del sistema operativo è **obbligatorio** per evitare interruzioni del canale push di iOS.
+Il 29 marzo 2021, un aggiornamento dell’infrastruttura del servizio di notifica push di Apple (APNs) ha interessato il canale Adobe Campaign Classic iOS. Una modifica alla configurazione del sistema operativo è **obbligatoria** per evitare l&#39;interruzione del canale push di iOS.
 
 Ulteriori informazioni sulle modifiche APN [in questa pagina](https://developer.apple.com/news/?id=7gx0a2lp).
 
@@ -25,7 +25,7 @@ In qualità di cliente on-premise/ibrido, devi aggiornare la configurazione per 
 
 Per incorporare il nuovo certificato, effettua le seguenti operazioni:
 
-1. Scarica il file **AAACertificateServices 5/12/2020** certificato radice [da questa pagina](https://support.sectigo.com/Com_KnowledgeDetailPage?Id=kA03l00000117cL).
+1. Scarica il certificato radice [AAACertificateServices 5/12/2020 **da questa pagina](https://support.sectigo.com/Com_KnowledgeDetailPage?Id=kA03l00000117cL).**
 
 1. Verifica che il certificato AAA sia presente sia nel sistema operativo che nei trustores JAVA. In caso contrario, aggiungilo.
 

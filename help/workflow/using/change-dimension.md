@@ -25,7 +25,7 @@ Puoi anche utilizzare questa attività per definire le colonne aggiuntive della 
 
 Per configurare l’attività di modifica della dimensione, effettua le seguenti operazioni:
 
-1. Seleziona la nuova dimensione di targeting tramite **[!UICONTROL Change dimension]** campo.
+1. Selezionare la nuova dimensione di targeting tramite il campo **[!UICONTROL Change dimension]**.
 
    ![](assets/s_user_change_dimension_param1.png)
 
@@ -35,7 +35,7 @@ Per configurare l’attività di modifica della dimensione, effettua le seguenti
 
    Quando si sceglie di mantenere un solo record, nello schema di lavoro viene visualizzata una raccolta: questa raccolta rappresenta tutti i record che non verranno inclusi nel risultato finale (poiché viene mantenuto un solo record). Come tutte le altre raccolte, questo consente di calcolare aggregati o recuperare informazioni nelle colonne.
 
-   Ad esempio, se modifichi il **[!UICONTROL Customers]** dimensione al **[!UICONTROL Recipients]** sarà possibile rivolgersi ai clienti di un negozio specifico, aggiungendo il numero di acquisti effettuati.
+   Ad esempio, se modifichi la dimensione **[!UICONTROL Customers]** in **[!UICONTROL Recipients]**, sarà possibile eseguire il targeting dei clienti di uno specifico store, aggiungendo il numero di acquisti effettuati.
 
 1. Se scegli di non conservare tutte queste informazioni, puoi configurare la modalità di gestione dei duplicati.
 
@@ -45,23 +45,23 @@ Per configurare l’attività di modifica della dimensione, effettua le seguenti
 
    Nell’esempio precedente, i destinatari verranno deduplicati prima sul loro indirizzo e-mail e, se necessario, poi sul loro numero di account.
 
-1. Il **[!UICONTROL Result]** consente di aggiungere ulteriori informazioni.
+1. La scheda **[!UICONTROL Result]** consente di aggiungere ulteriori informazioni.
 
-   Ad esempio, puoi recuperare la provincia in base al codice postale utilizzando una **Sottostringa** funzione di testo. Per eseguire questa operazione:
+   Ad esempio, puoi ripristinare la provincia in base al codice postale utilizzando una funzione di tipo **Substring**. Per eseguire questa operazione:
 
-   * Fai clic su **[!UICONTROL Add data...]** collega e seleziona **[!UICONTROL Data linked to the filtering dimension]**.
+   * Fare clic sul collegamento **[!UICONTROL Add data...]** e selezionare **[!UICONTROL Data linked to the filtering dimension]**.
 
      ![](assets/wf_change-dimension_sample_01.png)
 
      >[!NOTE]
      >
-     >Per informazioni sulla creazione e la gestione di colonne aggiuntive, fare riferimento a [Aggiunta di dati](query.md#adding-data).
+     >Per informazioni sulla creazione e la gestione di colonne aggiuntive, consultare [Aggiunta di dati](query.md#adding-data).
 
-   * Selezionare la dimensione di targeting precedente (prima del cambio asse) e selezionare **[!UICONTROL Zip Code]** nel campo del destinatario **[!UICONTROL Location]** sottostruttura, quindi fai clic su **[!UICONTROL Edit expression]**.
+   * Selezionare la dimensione di targeting precedente (prima del cambio asse) e selezionare **[!UICONTROL Zip Code]** nella sottostruttura **[!UICONTROL Location]** del destinatario, quindi fare clic su **[!UICONTROL Edit expression]**.
 
      ![](assets/wf_change-dimension_sample_02.png)
 
-   * Clic **[!UICONTROL Advanced selection]** e scegli **[!UICONTROL Edit the formula using an expression]**.
+   * Fare clic su **[!UICONTROL Advanced selection]** e scegliere **[!UICONTROL Edit the formula using an expression]**.
 
      ![](assets/wf_change-dimension_sample_03.png)
 

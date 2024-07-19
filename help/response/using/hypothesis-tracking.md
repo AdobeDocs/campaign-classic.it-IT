@@ -25,25 +25,25 @@ Il risultato dei calcoli delle ipotesi è disponibile a vari livelli della piatt
 
 ### Indicatori {#indicators}
 
-Una volta calcolata l’ipotesi, diversi indicatori di misurazione vengono aggiornati automaticamente. Questi sono disponibili nel **[!UICONTROL General]** dell’ipotesi.
+Una volta calcolata l’ipotesi, diversi indicatori di misurazione vengono aggiornati automaticamente. Sono disponibili nella scheda **[!UICONTROL General]** dell’ipotesi.
 
 ![](assets/response_hypothesis_delivery_example_010.png)
 
 Tali indicatori sono:
 
-* **Numero di contatti dei partecipanti**: numero di individui contattati che corrispondono all’ipotesi.
-* **Percentuale di risposte contattate**: numero di contatti dei partecipanti/totale delle persone contattate durante la consegna.
-* **Numero di contatti del gruppo di controllo dei partecipanti**: numero di gruppi di controllo che corrispondono all’ipotesi.
-* **Tasso di risposta del gruppo di controllo**: numero di gruppi di controllo dei partecipanti/numero totale di gruppi di controllo della consegna.
-* **Numero di reazioni**: numero di record nella tabella che contiene la relazione tra i singoli utenti, l’ipotesi e la tabella delle transazioni.
+* **Numero di contatti dei partecipanti**: numero di persone contattate che corrispondono all&#39;ipotesi.
+* **Percentuale di risposte contattate**: numero di contatti dei partecipanti/numero totale di persone contattate durante la consegna.
+* **Numero di contatti del gruppo di controllo dei partecipanti**: numero di gruppi di controllo corrispondenti all&#39;ipotesi.
+* **Percentuale di risposte del gruppo di controllo**: numero di gruppi di controllo partecipanti/numero totale di gruppi di controllo di consegna.
+* **Numero di reazioni**: numero di record nella tabella che contiene la relazione tra i singoli utenti, l&#39;ipotesi e la tabella delle transazioni.
 
-Per l’elenco completo degli indicatori, fai clic su **[!UICONTROL Display the list]** collegamento:
+Per l&#39;elenco completo degli indicatori, fare clic sul collegamento **[!UICONTROL Display the list]**:
 
 ![](assets/response_hypothesis_indicators_002.png)
 
 Gli indicatori forniscono le seguenti informazioni:
 
-* **Ricavi totali della popolazione contattata**: importi totali superiori al numero di persone contattate.
+* **Ricavi totali della popolazione contattata**: importi totali superiori al numero di individui contattati.
 * **Ricavi totali del gruppo di controllo**: importi totali rispetto al numero di gruppi di controllo.
 * **Ricavi medi per contatto**: importi totali / contattati.
 * **Ricavi medi del gruppo di controllo**: importi totali/gruppo di controllo.
@@ -51,30 +51,30 @@ Gli indicatori forniscono le seguenti informazioni:
 * **Margine totale del gruppo di controllo**: margine totale sul gruppo di controllo.
 * **Margine medio per contatto**: margine totale / contattato.
 * **Margine medio dei gruppi di controllo**: margini totali/gruppo di controllo.
-* **Ricavi aggiuntivi**: (Ricavi medi dei contatti - Ricavi medi del gruppo di controllo)&#42;Numero di contatti
-* **Margine aggiuntivo**: (Margine medio di contattato-Margine medio del gruppo di controllo) / numero di contattati
-* **Costo medio per contatto**: costo di consegna calcolato / numero di contatti.
+* **Ricavi aggiuntivi**: (Ricavi medi dei contatti-Ricavi medi del gruppo di controllo)&#42;Numero di contatti
+* **Margine aggiuntivo**: (Margine medio dei contatti-Margine medio del gruppo di controllo) / numero di contatti
+* **Costo medio per contatto**: costo di consegna calcolato / Numero di contatti.
 * **ROI**: costo calcolato della consegna / Margine totale per contatto
 * **ROI effettivo**: costo di consegna calcolato/margine aggiuntivo.
-* **Significatività**: contiene i valori da 0 a 3 a seconda del significato della campagna.
+* **Significatività**: contiene i valori da 0 a 3 a seconda della significatività della campagna.
 
 ### Reazioni {#reactions}
 
-Puoi visualizzare le reazioni dei destinatari alle ipotesi tramite **[!UICONTROL Reactions]** scheda.
+Puoi visualizzare le reazioni dei destinatari alle ipotesi tramite la scheda **[!UICONTROL Reactions]**.
 
-1. Una volta completato il calcolo dell’ipotesi, vai al **[!UICONTROL Campaign management > Measurement hypotheses]** della struttura Adobe Campaign.
-1. Seleziona l’ipotesi desiderata e fai clic su **[!UICONTROL Reactions]** per visualizzare l’elenco dei destinatari che potrebbero acquistare qualcosa dopo la campagna di marketing.
+1. Una volta completato il calcolo dell’ipotesi, passa al nodo **[!UICONTROL Campaign management > Measurement hypotheses]** della struttura Adobe Campaign.
+1. Selezionare l&#39;ipotesi desiderata e fare clic sulla scheda **[!UICONTROL Reactions]** per visualizzare l&#39;elenco dei destinatari che probabilmente acquisteranno qualcosa dopo la campagna di marketing.
 
    ![](assets/response_hypothesis_reactions_001.png)
 
 ## Rapporti {#reports}
 
-Il **[!UICONTROL Hypothesis report]** consente di visualizzare i risultati delle ipotesi eseguite sulle campagne e sulle consegne. Questo rapporto contiene gli indicatori calcolati dall’ipotesi (per ulteriori informazioni, consulta [Indicatori](#indicators)).
+**[!UICONTROL Hypothesis report]** consente di visualizzare i risultati delle ipotesi eseguite sulle campagne e sulle consegne. Questo report contiene gli indicatori calcolati dall&#39;ipotesi (per ulteriori informazioni, consulta [Indicatori](#indicators)).
 
-* **A livello di campagna**: fai clic su **[!UICONTROL Reports]** collegamento della campagna in questione e seleziona la **[!UICONTROL Hypothesis report]**. Questo rapporto contiene l’elenco delle consegne delle campagne e le ipotesi calcolate per ciascuna consegna.
+* **A livello di campagna**: fai clic sul collegamento **[!UICONTROL Reports]** della campagna pertinente e seleziona **[!UICONTROL Hypothesis report]**. Questo rapporto contiene l’elenco delle consegne delle campagne e le ipotesi calcolate per ciascuna consegna.
 
   ![](assets/response_hypothesis_campaign_report_001.png)
 
-* **A livello di consegna**: per accedere al rapporto, apri la consegna interessata, fai clic su **[!UICONTROL Reports]** nel **[!UICONTROL Summary]** e seleziona la scheda **[!UICONTROL Hypothesis report]**. Se sono state calcolate più ipotesi per la stessa consegna, il rapporto conterrà tutte le ipotesi.
+* **Al livello di consegna**: per accedere al report, aprire la consegna interessata, fare clic su **[!UICONTROL Reports]** nella scheda **[!UICONTROL Summary]** e selezionare **[!UICONTROL Hypothesis report]**. Se sono state calcolate più ipotesi per la stessa consegna, il rapporto conterrà tutte le ipotesi.
 
   ![](assets/response_hypothesis_delivery_report_001.png)

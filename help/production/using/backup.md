@@ -30,11 +30,11 @@ La maggior parte dei dati si trova nel database. Ciò rappresenta il 99% delle i
 
 I file sono suddivisi in diverse categorie:
 
-* File di configurazione, archiviati in **nl6/conf**, consente di riconfigurare Adobe Campaign molto rapidamente.
+* I file di configurazione, archiviati in **nl6/conf**, consentono di riconfigurare Adobe Campaign molto rapidamente.
 
-* File di reindirizzamento, archiviati in  **nl6/var/`<instance-name>`/redir**, si trovano sui server di tracciamento (spesso denominati &quot;frontali&quot;) e includono tutti i reindirizzamenti precedenti delle campagne. Vengono ancora utilizzati nelle campagne precedenti.
+* I file di reindirizzamento, archiviati in **nl6/var/`<instance-name>`/redir**, si trovano sui server di tracciamento (spesso denominati &quot;frontali&quot;) e includono tutti i reindirizzamenti di campagne precedenti. Vengono ancora utilizzati nelle campagne precedenti.
 
-* File di registro, archiviati in **nl6/var/`<instance-name>`/log**, può essere utilizzato per tracciare i problemi.
+* I file di registro, archiviati in **nl6/var/`<instance-name>`/log**, possono essere utilizzati per tracciare i problemi.
 
 Le directory di cui eseguire il backup sono pertanto le seguenti:
 

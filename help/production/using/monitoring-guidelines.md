@@ -17,7 +17,7 @@ ht-degree: 18%
 
 ## Dashboard di monitoraggio delle istanze {#instance-monitoring-dashboard}
 
-Il **[!UICONTROL Monitoring]** , accessibile dalla home page di Campaign Classic, è il punto di ingresso principale per facilitare il monitoraggio dell’istanza.
+La scheda **[!UICONTROL Monitoring]**, accessibile dalla home page di Campaign Classic, è il punto di ingresso principale per il monitoraggio dell&#39;istanza.
 
 Fornisce un dashboard di ciò che accade nell’istanza: il suo stato (versione della build, pacchetti installati, ecc.), gli indicatori di sistema, i registri, i flussi di lavoro attualmente in esecuzione, lo stato delle ultime consegne inviate, ecc.
 
@@ -56,7 +56,7 @@ Il Pannello di controllo Campaign ti consente di gestire diverse impostazioni de
 >
 >Il Pannello di controllo è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente l’accesso come amministratore sono descritti in[questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel).
 >
->La tua istanza deve essere ospitata su AWS e aggiornata con [build GA più recente](../../rn/using/rn-overview.md). Scopri come controllare la versione in [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=it).
+>Tieni presente che l&#39;istanza deve essere ospitata su AWS e aggiornata con la [build GA più recente](../../rn/using/rn-overview.md). Scopri come controllare la versione in [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=it).
 
 ### Monitoraggio dei flussi di lavoro {#monitoring-workflows}
 
@@ -68,11 +68,11 @@ Workflow HeatMap fornisce una rappresentazione visiva di tutti i flussi di lavor
 
 **Audit trail**
 
-Audit trail consente di visualizzare tutte le modifiche apportate nei flussi di lavoro, nonché i relativi stati correnti. [Fai clic qui](../../production/using/audit-trail.md).
+Audit trail consente di visualizzare tutte le modifiche apportate nei flussi di lavoro, nonché i relativi stati correnti. [Fare clic qui](../../production/using/audit-trail.md).
 
 **Risoluzione dei problemi dei flussi di lavoro**
 
-È possibile eseguire azioni specifiche quando si verificano problemi con l’esecuzione di un flusso di lavoro. [Fai clic qui](../../production/using/workflow-execution.md) per ulteriori informazioni
+È possibile eseguire azioni specifiche quando si verificano problemi con l’esecuzione di un flusso di lavoro. [Fare clic qui](../../production/using/workflow-execution.md) per ulteriori informazioni
 
 **Monitoraggio dello stato del flusso di lavoro**
 
@@ -94,14 +94,14 @@ I rapporti SMTP visualizzano le statistiche di consegna e gli errori SMTP per do
 
 **Best practice**
 
-[Best practice per l’invio e la progettazione della consegna](../../delivery/using/delivery-best-practices.md) può aiutarti a migliorare le loro prestazioni.
+[Best practice per l&#39;invio e la progettazione della consegna](../../delivery/using/delivery-best-practices.md) possono aiutarti a migliorarne le prestazioni.
 
 **Risoluzione dei problemi di consegna**
 Quando si verificano problemi con le consegne, è possibile eseguire azioni specifiche:
 * [Problemi di recapito messaggi](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Problemi relativi alla visualizzazione delle immagini](../../production/using/image-display-issues.md)
 * [Problemi di prestazioni della consegna](../../delivery/using/delivery-performances.md)
-* [Problemi relativi ai file temporanei](../../production/using/temporary-files.md) - *solo modelli di hosting locale*
+* [Problemi relativi ai file temporanei](../../production/using/temporary-files.md) - *solo modelli di hosting locali*
 
 ### Monitoraggio del database {#monitoring-database}
 
@@ -111,7 +111,7 @@ Quando si verificano problemi con le consegne, è possibile eseguire azioni spec
 
 Il flusso di lavoro di pulizia del database consente di eliminare i dati obsoleti dal database. Si consiglia di evitare la crescita esponenziale del database. Per ulteriori informazioni, [fai clic qui](../../production/using/database-cleanup-workflow.md).
 
-**Risoluzione dei problemi di prestazioni del database**
+**Risoluzione dei problemi relativi alle prestazioni del database**
 
 È possibile eseguire azioni specifiche quando si verificano problemi con le prestazioni del database. Per ulteriori informazioni, [fai clic qui](../../production/using/database-performances.md).
 
@@ -125,7 +125,7 @@ Il flusso di lavoro di pulizia del database consente di eliminare i dati obsolet
 
 *solo modelli di hosting on-premise e ibridi*
 
-Il backup è essenziale per evitare la perdita di dati in caso di problemi (fisici o di sistema) su una macchina. [Fai clic qui](../../production/using/backup.md) per ulteriori informazioni. La procedura di ripristino è descritta in [questa sezione](../../production/using/restoration.md).
+Il backup è essenziale per evitare la perdita di dati in caso di problemi (fisici o di sistema) su una macchina. [Fare clic qui](../../production/using/backup.md) per ulteriori informazioni. Procedura di ripristino descritta in [questa sezione](../../production/using/restoration.md).
 
 ## Principi tecnici Campaign Classic {#campaign-classic-technical-principles}
 
@@ -136,7 +136,7 @@ Le risorse tecniche sono disponibili nella documentazione di Campaign Classic. �
 * [Modelli di hosting Campaign Classic](../../installation/using/hosting-models.md)
 * [Funzionalità del modello di hosting](../../installation/using/capability-matrix.md)
 
-**Configurazione del server**
+**Configurazione server**
 
 *Solo modelli di hosting on-premise e ibridi*
 

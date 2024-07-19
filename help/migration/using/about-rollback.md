@@ -27,7 +27,7 @@ La procedura di ripristino dipende dalla versione iniziale di Campaign.
 Di seguito è illustrata la procedura per ripristinare una versione v6.1 da una v7.
 
 1. Ripristinare il backup del database e ripristinarlo.
-1. Recupera **Adobe Campaign v6.back** cartella (**nl6.indietro** in Linux), rinominarlo **Adobe Campaign v6** (**nl6** in Linux) e ripristinarla nella posizione originale.
+1. Recupera la cartella **Adobe Campaign v6.back** (**nl6.back** in Linux), rinominala in **Adobe Campaign v6** (**nl6** in Linux) e ripristina il percorso originale.
 1. Riconfigura IIS riassegnando le porte di ascolto per ristabilire l’integrazione di Adobe Campaign v6.1 a livello di sito web IIS.
 1. Arresta il servizio Adobe Campaign v7.
 1. Riavvia IIS.

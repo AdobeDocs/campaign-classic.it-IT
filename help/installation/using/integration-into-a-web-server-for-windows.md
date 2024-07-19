@@ -52,17 +52,17 @@ Per integrare Adobe Campaign con il server web IIS di Microsoft, effettua le seg
 
    ![](assets/s_ncs_install_iis7_parameters_step1.png)
 
-1. A **VBS** script consente di configurare automaticamente le risorse utilizzate dal server Adobe Campaign nella directory virtuale appena creata. Per avviarlo, fai doppio clic sul pulsante **iis_neolane_setup.vbs** file che si trova in `[INSTALL]\conf` cartella, dove `[INSTALL]` è il percorso per accedere alla cartella di installazione di Adobe Campaign.
+1. Uno script di **VBS** consente di configurare automaticamente le risorse utilizzate dal server Adobe Campaign nella directory virtuale appena creata. Per avviarlo, fai doppio clic sul file **iis_neolane_setup.vbs** che si trova nella cartella `[INSTALL]\conf`, dove `[INSTALL]` è il percorso per accedere alla cartella di installazione di Adobe Campaign.
 
    >[!NOTE]
    >
    >Per eseguire lo script VBS o eseguire lo script come amministratore, è necessario aver effettuato l&#39;accesso come amministratore.
 
-   Clic **[!UICONTROL OK]** se il server Web viene utilizzato come server di reindirizzamento di tracciamento, altrimenti fai clic su **[!UICONTROL Cancel]**.
+   Fare clic su **[!UICONTROL OK]** se il server Web viene utilizzato come server di reindirizzamento di tracciamento, altrimenti fare clic su **[!UICONTROL Cancel]**.
 
-   Quando nel server Web sono già configurati più siti, viene visualizzata una pagina intermedia per specificare a quale sito Web si applica l&#39;installazione: immettere il numero collegato al sito e fare clic su **[!UICONTROL OK]**.
+   Quando nel server Web sono già configurati più siti, viene visualizzata una pagina intermedia per specificare il sito Web a cui si applica l&#39;installazione: immettere il numero collegato al sito e fare clic su **[!UICONTROL OK]**.
 
-1. In **[!UICONTROL Content View]** , accertarsi che il sito Web sia configurato correttamente con le risorse Adobe Campaign:
+1. Nella scheda **[!UICONTROL Content View]**, verificare che il sito Web sia configurato correttamente con le risorse Adobe Campaign:
 
    Se la struttura non è visualizzata, riavviare Microsoft IIS.
 
@@ -72,11 +72,11 @@ Per integrare Adobe Campaign con il server web IIS di Microsoft, effettua le seg
 
 A questo scopo, esegui i seguenti passaggi:
 
-1. Seleziona la **[!UICONTROL Features View]** e fare doppio clic sul pulsante **Autenticazione** collegamento.
+1. Selezionare la scheda **[!UICONTROL Features View]** e fare doppio clic sul collegamento **Autenticazione**.
 
    ![](assets/s_ncs_install_iis7_parameters_step8.png)
 
-1. In **Sicurezza directory** del sito Web, verificare che l&#39;accesso anonimo sia abilitato. Se necessario, fai clic su **[!UICONTROL Edit]** per modificare le impostazioni.
+1. Nella scheda **Protezione directory** del sito Web verificare che l&#39;accesso anonimo sia abilitato. Se necessario, fare clic sul collegamento **[!UICONTROL Edit]** per modificare le impostazioni.
 
    ![](assets/s_ncs_install_iis7_parameters_step9.png)
 
@@ -86,7 +86,7 @@ Ora devi verificare se la configurazione è corretta.
 
 A tale scopo, attenersi alla procedura descritta di seguito.
 
-1. Riavviare il server IIS di Microsoft utilizzando **iisreset** riga di comando.
+1. Riavviare il server IIS di Microsoft utilizzando la riga di comando **iisreset**.
 
 1. Avvia il servizio Adobe Campaign, quindi assicurati che sia in esecuzione.
 
@@ -119,7 +119,7 @@ webmdl@default (1644) - 18.2 Mo
 
 A questo scopo, esegui i seguenti passaggi:
 
-1. Modifica i filtri ISAPI per il sito Adobe Campaign facendo clic sul pulsante **[!UICONTROL Driver mapping]** icona.
+1. Modificare i filtri ISAPI per il sito Adobe Campaign facendo clic sull&#39;icona **[!UICONTROL Driver mapping]**.
 1. La sezione controlla il contenuto del filtro ISAPI.
 
 
@@ -129,9 +129,9 @@ Durante la configurazione del server Web IIS, viene automaticamente impostato un
 
 Questo può avere un impatto su Adobe Campaign, in particolare se desideri caricare file di dimensioni superiori a questo limite.
 
-Ad esempio, se utilizzi un’ **Caricamento dati (file)** digita l’attività in un flusso di lavoro per importare un file da 50 MB; se si verifica un errore, il flusso di lavoro non viene eseguito correttamente.
+Se ad esempio si utilizza un&#39;attività di tipo **Caricamento dati (file)** in un flusso di lavoro per importare un file da 50 MB, un errore impedirà la corretta esecuzione del flusso di lavoro.
 
 In questo caso, devi aumentare questo limite.
 
-Per ulteriori informazioni su questa opzione di Microsoft IIS, fare riferimento alla sezione &quot;HowTo&quot; della [Documentazione di Microsoft](https://learn.microsoft.com/en-us/iis/configuration/system.webServer/security/requestFiltering/requestLimits/){target="_blank"}.
+Per ulteriori informazioni su questa opzione di Microsoft IIS, consulta la sezione &quot;HowTo&quot; della [documentazione di Microsoft](https://learn.microsoft.com/en-us/iis/configuration/system.webServer/security/requestFiltering/requestLimits/){target="_blank"}.
 

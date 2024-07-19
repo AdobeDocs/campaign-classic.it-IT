@@ -27,7 +27,7 @@ Utilizza la porta Apache Tomcat incorporata come priorità (8080 per impostazion
 
 ### Server di consegna {#delivery-server}
 
-Per il server di consegna (**mta nlserver**), è necessario aprire le seguenti porte:
+Per il server di consegna (**nlserver mta**), è necessario aprire le porte seguenti:
 
 <table> 
  <tbody> 
@@ -39,7 +39,7 @@ Per il server di consegna (**mta nlserver**), è necessario aprire le seguenti p
   <tr> 
    <td> 25/tcp (smtp)<br /> </td> 
    <td> Ovunque<br /> </td> 
-   <td> Traffico SMTP per la trasmissione e-mail.<br /> </td> 
+   <td> Traffico SMTP per trasmissione e-mail.<br /> </td> 
   </tr> 
   <tr> 
    <td> 53/udp (dominio)<br /> </td> 
@@ -61,7 +61,7 @@ Per il server di consegna (**mta nlserver**), è necessario aprire le seguenti p
 
 ### Posta in entrata {#inbound-mail}
 
-Per il processo di ripristino della posta in entrata (**nlserver inMail**), è necessario aprire le seguenti porte:
+Per il processo di ripristino della posta in entrata (**nlserver inMail**), è necessario aprire le porte seguenti:
 
 <table> 
  <tbody> 
@@ -72,12 +72,12 @@ Per il processo di ripristino della posta in entrata (**nlserver inMail**), è n
   </tr> 
   <tr> 
    <td> 110/tcp (pop3)<br /> </td> 
-   <td> Server di posta interno<br /> </td> 
-   <td> Traffico POP3 per raccogliere i messaggi di mancato recapito.<br /> </td> 
+   <td> Server di posta interna<br /> </td> 
+   <td> Traffico POP3 per raccogliere i messaggi non recapitati.<br /> </td> 
   </tr> 
   <tr> 
    <td> 25/tcp (smtp)<br /> </td> 
-   <td> Server di posta interno<br /> </td> 
+   <td> Server di posta interna<br /> </td> 
    <td> Traffico SMTP per inviare i messaggi non recapitati rimanenti che non vengono elaborati automaticamente dalle regole predefinite.<br /> </td> 
   </tr> 
  </tbody> 
@@ -85,7 +85,7 @@ Per il processo di ripristino della posta in entrata (**nlserver inMail**), è n
 
 ### Server dell’applicazione {#application-server}
 
-Per il server applicazioni (**nlserver web**), è necessario aprire le seguenti porte:
+Per il server applicazioni (**nlserver web**), è necessario aprire le porte seguenti:
 
 <table> 
  <tbody> 
@@ -97,7 +97,7 @@ Per il server applicazioni (**nlserver web**), è necessario aprire le seguenti 
   <tr> 
    <td> 80/tcp (http)<br /> 443/tcp (https)<br /> </td> 
    <td> Ovunque<br /> </td> 
-   <td> Traffico HTTP o HTTPS (incluso per l’offerta di recapito messaggi).<br /> </td> 
+   <td> Traffico HTTP o HTTPS (incluso per l'offerta di recapito messaggi).<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -106,7 +106,7 @@ Quando diversi server applicazioni di una piattaforma Adobe Campaign devono comu
 
 ### Stato della consegna SMS {#sms-delivery-status}
 
-Per tenere traccia delle consegne SMS (**nlserver sms**), è necessario aprire la seguente porta:
+Per tenere traccia delle consegne SMS (**nlserver sms**), è necessario aprire la porta seguente:
 
 <table> 
  <tbody> 
@@ -118,14 +118,14 @@ Per tenere traccia delle consegne SMS (**nlserver sms**), è necessario aprire l
   <tr> 
    <td> 38000/tcp (porta predefinita)<br /> </td> 
    <td> Gateway SMS<br /> </td> 
-   <td> Interroga lo stato della coda di consegna gestita dal gateway SMS NetSize [option].<br /> </td> 
+   <td> Esegue una query sullo stato della coda di recapito gestito dal gateway SMS NetSize [opzione].<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Client avanzato {#rich-client}
 
-Per il rich client di Adobe Campaign (**nlclient**), è necessario aprire le seguenti porte:
+Per il client avanzato Adobe Campaign (**nlclient**), è necessario aprire le porte seguenti:
 
 <table> 
  <tbody> 
@@ -137,7 +137,7 @@ Per il rich client di Adobe Campaign (**nlclient**), è necessario aprire le seg
   <tr> 
    <td><p> 80/tcp (http)</p><p>443/tcp (https)</p><br /> </td> 
    <td> Server applicazioni<br /> </td> 
-   <td> traffico SOAP (HTTP).<br /> </td> 
+   <td> Traffico SOAP (HTTP).<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -157,8 +157,8 @@ Le porte predefinite sono le seguenti:
   </tr> 
   <tr> 
    <td> <strong>Oracle</strong><br /> </td> 
-   <td> 1521/cp<br /> </td> 
-   <td> Server di database<br /> </td> 
+   <td> 1521/tcp<br /> </td> 
+   <td> Server database<br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>PostgreSQL</strong><br /> </td> 
@@ -166,7 +166,7 @@ Le porte predefinite sono le seguenti:
   </tr> 
   <tr> 
    <td> <strong>Microsoft SQL Server</strong><br /> </td> 
-   <td> 1433/cp<br /> </td> 
+   <td> 1433/tcp<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -202,7 +202,7 @@ Questo server ospita moduli web, pagine mirror e così via. Le seguenti porte de
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
-   <td> Ovunque. Necessario quando i moduli web vengono gestiti direttamente dalla piattaforma Adobe Campaign o quando vengono utilizzate pagine mirror.<br /> </td> 
+   <td> Ovunque. Necessario quando i moduli Web vengono gestiti direttamente dalla piattaforma Adobe Campaign o quando vengono utilizzate pagine mirror.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -224,7 +224,7 @@ Questo server ospita moduli web, pagine mirror e così via. Le seguenti porte de
 
 ## Integrazione con Adobe Experience Manager {#integration-with-adobe-experience-manager}
 
-L’integrazione tra Adobe Campaign e Adobe Experience Manager richiede l’apertura di più porte se l’installazione è &quot;on-premise&quot;. Per ulteriori informazioni sulla configurazione di questa integrazione, consulta [documentazione dettagliata](../../integrations/using/about-adobe-experience-manager.md).
+L’integrazione tra Adobe Campaign e Adobe Experience Manager richiede l’apertura di più porte se l’installazione è &quot;on-premise&quot;. Per ulteriori informazioni sulla configurazione di questa integrazione, consulta la [documentazione dettagliata](../../integrations/using/about-adobe-experience-manager.md).
 
 <table> 
  <tbody> 
@@ -238,7 +238,7 @@ L’integrazione tra Adobe Campaign e Adobe Experience Manager richiede l’aper
   </tr> 
   <tr> 
    <td><p> 4502</p><p> 4503</p><br /> </td> 
-   <td> Connessione Adobe Campaign alle istanze "authoring" e "pubblicazione" dell’AEM. Le porte da aprire possono essere diverse dalle porte predefinite, a seconda della configurazione AEM.<br /> </td> 
+   <td> Connessione Adobe Campaign alle istanze "authoring" e "pubblicazione" dell’AEM. Le porte da aprire potrebbero essere diverse dalle porte predefinite, a seconda della configurazione AEM.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

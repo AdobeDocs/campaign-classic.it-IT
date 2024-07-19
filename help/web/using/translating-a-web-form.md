@@ -18,9 +18,9 @@ ht-degree: 1%
 
 È possibile localizzare un&#39;applicazione Web in diverse lingue.
 
-Puoi eseguire le traduzioni direttamente nella console Adobe Campaign (consulta [Gestione delle traduzioni nell’editor](#managing-translations-in-the-editor)) o esportare e importare stringhe per esternalizzare la traduzione (fare riferimento a [Esternalizzazione della traduzione](#externalizing-translation)).
+Puoi eseguire traduzioni direttamente nella console Adobe Campaign (consulta [Gestione delle traduzioni nell&#39;editor](#managing-translations-in-the-editor)) oppure esportare e importare stringhe per esternalizzare la traduzione (consulta [Esternalizzazione della traduzione](#externalizing-translation)).
 
-L’elenco delle lingue di traduzione disponibili per impostazione predefinita è descritto in [Modifica della lingua di visualizzazione dei moduli](#changing-forms-display-language).
+L&#39;elenco delle lingue di traduzione disponibili per impostazione predefinita è descritto in [Modifica della lingua di visualizzazione dei moduli](#changing-forms-display-language).
 
 L&#39;applicazione Web è progettata in un linguaggio di modifica, ovvero il linguaggio di riferimento utilizzato per immettere etichette e altri contenuti da tradurre.
 
@@ -32,7 +32,7 @@ La lingua predefinita è la lingua in cui verrà visualizzata l&#39;applicazione
 
 ## Scelta lingue {#choosing-languages}
 
-Per definire una o più lingue di traduzione, fai clic sul pulsante **[!UICONTROL Properties]** dell&#39;applicazione Web, quindi il pulsante **[!UICONTROL Localization]** scheda. Fai clic su **[!UICONTROL Add]** per definire una nuova lingua di traduzione per l&#39;applicazione Web.
+Per definire una o più lingue di traduzione, fare clic sul pulsante **[!UICONTROL Properties]** dell&#39;applicazione Web, quindi sulla scheda **[!UICONTROL Localization]**. Fare clic sul pulsante **[!UICONTROL Add]** per definire una nuova lingua di traduzione per l&#39;applicazione Web.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Per definire una o più lingue di traduzione, fai clic sul pulsante **[!UICONTRO
 
 ![](assets/s_ncs_admin_survey_add_lang.png)
 
-Quando si aggiungono lingue di traduzione per un&#39;applicazione Web (o quando la lingua predefinita e la lingua di modifica sono diverse), **[!UICONTROL Translation]** scheda secondaria aggiunta al **[!UICONTROL Edit]** per gestire le traduzioni.
+Quando si aggiungono lingue di traduzione per un&#39;applicazione Web o quando la lingua predefinita e la lingua di modifica sono diverse, viene aggiunta una scheda secondaria **[!UICONTROL Translation]** alla scheda **[!UICONTROL Edit]** per gestire le traduzioni.
 
 Adobe Campaign include uno strumento per la traduzione e la gestione di traduzioni multilingue. Questo editor consente di visualizzare le stringhe da tradurre o approvare, inserire le traduzioni direttamente nell’interfaccia o importare/esportare le stringhe di caratteri per esternalizzare le traduzioni.
 
@@ -48,11 +48,11 @@ Adobe Campaign include uno strumento per la traduzione e la gestione di traduzio
 
 ### Raccolta di stringhe {#collecting-strings}
 
-Il **[!UICONTROL Translations]** Questa scheda consente di immettere le traduzioni per le stringhe di caratteri che compongono l&#39;applicazione Web.
+La scheda **[!UICONTROL Translations]** consente di immettere le traduzioni per le stringhe di caratteri che compongono l&#39;applicazione Web.
 
-La prima volta che apri questa scheda non conterrà alcun dato. Fai clic su **[!UICONTROL Collect the strings to translate]** per aggiornare le stringhe nell&#39;applicazione Web.
+La prima volta che apri questa scheda non conterrà alcun dato. Fare clic sul collegamento **[!UICONTROL Collect the strings to translate]** per aggiornare le stringhe nell&#39;applicazione Web.
 
-Adobe Campaign raccoglie etichette di campi e stringhe definiti nella sezione **[!UICONTROL Texts]** schede di tutti gli elementi statici: blocchi di HTML, JavaScript, ecc. Gli elementi statici sono descritti in [Elementi statici in un modulo web](static-elements-in-a-web-form.md).
+Adobe Campaign raccoglie etichette di campi e stringhe definiti nelle schede **[!UICONTROL Texts]** di tutti gli elementi statici: blocchi di HTML, JavaScript, ecc. Gli elementi statici sono descritti in dettaglio in [Elementi statici in un modulo Web](static-elements-in-a-web-form.md).
 
 ![](assets/s_ncs_admin_survey_trad_tab.png)
 
@@ -64,19 +64,19 @@ Adobe Campaign raccoglie etichette di campi e stringhe definiti nella sezione **
 
 Ogni volta che una stringa viene tradotta, la sua traduzione viene aggiunta al dizionario di traduzione.
 
-Quando il processo di raccolta rileva che esiste già una traduzione, questa viene visualizzata in **[!UICONTROL Text]** della stringa. Lo stato della stringa è impostato su **[!UICONTROL Translated]**.
+Quando il processo di raccolta rileva che esiste già una traduzione, questa viene visualizzata nella colonna **[!UICONTROL Text]** della stringa. Lo stato della stringa è **[!UICONTROL Translated]**.
 
-Per le stringhe di caratteri che non sono mai state tradotte, il **[!UICONTROL Text]** è vuoto e lo stato è **[!UICONTROL To translate]**.
+Per le stringhe di caratteri che non sono mai state tradotte, il campo **[!UICONTROL Text]** è vuoto e lo stato è **[!UICONTROL To translate]**.
 
 ### Filtrare le stringhe {#filtering-strings}
 
-Per impostazione predefinita, viene visualizzata ogni lingua di traduzione dell’applicazione web. Sono disponibili due filtri predefiniti: lingua e stato. Fai clic su **[!UICONTROL Filters]** , quindi fare clic su **[!UICONTROL By language or status]** per visualizzare le caselle di riepilogo corrispondenti. Puoi anche creare un filtro avanzato. Per ulteriori informazioni, consulta [questa pagina](../../platform/using/creating-filters.md#creating-an-advanced-filter).
+Per impostazione predefinita, viene visualizzata ogni lingua di traduzione dell’applicazione web. Sono disponibili due filtri predefiniti: lingua e stato. Fare clic sul pulsante **[!UICONTROL Filters]**, quindi su **[!UICONTROL By language or status]** per visualizzare le caselle di riepilogo corrispondenti. Puoi anche creare un filtro avanzato. Per ulteriori informazioni, consulta [questa pagina](../../platform/using/creating-filters.md#creating-an-advanced-filter).
 
 ![](assets/s_ncs_admin_survey_trad_tab_en.png)
 
-Vai a **[!UICONTROL Language]** per selezionare la lingua di traduzione.
+Passare alla casella a discesa **[!UICONTROL Language]** per selezionare la lingua di traduzione.
 
-Per visualizzare solo le stringhe non tradotte, seleziona **[!UICONTROL To translate]** nel **[!UICONTROL Status]** a discesa. È inoltre possibile visualizzare solo le stringhe tradotte o approvate.
+Per visualizzare solo le stringhe non tradotte, selezionare **[!UICONTROL To translate]** nella casella a discesa **[!UICONTROL Status]**. È inoltre possibile visualizzare solo le stringhe tradotte o approvate.
 
 ### Traduzione delle stringhe {#translating-strings}
 
@@ -86,7 +86,7 @@ Per visualizzare solo le stringhe non tradotte, seleziona **[!UICONTROL To trans
 
    La stringa di origine viene visualizzata nella sezione superiore della finestra.
 
-1. Immettete la traslazione nella sezione inferiore. Per approvarlo, seleziona la **[!UICONTROL Translation approved]** opzione.
+1. Immettete la traslazione nella sezione inferiore. Per approvarla, selezionare l&#39;opzione **[!UICONTROL Translation approved]**.
 
    >[!NOTE]
    >
@@ -108,32 +108,32 @@ Per visualizzare solo le stringhe non tradotte, seleziona **[!UICONTROL To trans
 
    ![](assets/s_ncs_admin_survey_trad_export.png)
 
-1. Seleziona un **[!UICONTROL Export strategy]** :
+1. Selezionare un **[!UICONTROL Export strategy]**:
 
-   * **[!UICONTROL One file per language]**: l’esportazione genera un file per lingua di traduzione. Ogni file sarà comune a tutte le applicazioni Web selezionate.
-   * **[!UICONTROL One file per Web application]**: l’esportazione genera un file per ogni applicazione web selezionata. Ogni file conterrà tutte le lingue di traduzione.
-
-     >[!NOTE]
-     >
-     >Questo tipo di esportazione non è disponibile per le esportazioni XLIFF.
-
-   * **[!UICONTROL One file per language and per Web application]**: l’esportazione genera diversi file. Ogni file conterrà una lingua di traduzione per ogni applicazione web.
-   * **[!UICONTROL One file for all]**: l’esportazione genera un singolo file multilingue per tutte le applicazioni web. Conterrà tutte le lingue di traduzione per tutte le applicazioni Web selezionate.
+   * **[!UICONTROL One file per language]**: l&#39;esportazione genererà un file per lingua di traduzione. Ogni file sarà comune a tutte le applicazioni Web selezionate.
+   * **[!UICONTROL One file per Web application]**: l&#39;esportazione genererà un file per ogni applicazione Web selezionata. Ogni file conterrà tutte le lingue di traduzione.
 
      >[!NOTE]
      >
      >Questo tipo di esportazione non è disponibile per le esportazioni XLIFF.
 
-1. Quindi scegli il **[!UICONTROL Target folder]** dove verranno registrati i file.
-1. Seleziona il formato del file ( **[!UICONTROL CSV]** o **[!UICONTROL XLIFF]** ) e fai clic su **[!UICONTROL Start]**.
+   * **[!UICONTROL One file per language and per Web application]**: l&#39;esportazione genererà diversi file. Ogni file conterrà una lingua di traduzione per ogni applicazione web.
+   * **[!UICONTROL One file for all]**: l&#39;esportazione genererà un singolo file multilingue per tutte le applicazioni Web. Conterrà tutte le lingue di traduzione per tutte le applicazioni Web selezionate.
+
+     >[!NOTE]
+     >
+     >Questo tipo di esportazione non è disponibile per le esportazioni XLIFF.
+
+1. Quindi scegliere **[!UICONTROL Target folder]** in cui registrare i file.
+1. Selezionare il formato del file ( **[!UICONTROL CSV]** o **[!UICONTROL XLIFF]** ) e fare clic su **[!UICONTROL Start]**.
 
 ![](assets/s_ncs_admin_survey_trad_export_start.png)
 
 >[!NOTE]
 >
->I nomi dei file di esportazione vengono generati automaticamente. Se esegui più volte la stessa esportazione, sostituirai i file esistenti con quelli nuovi. Se è necessario conservare i file precedenti, modificare **[!UICONTROL Target folder]** , quindi fai clic su **[!UICONTROL Start]** per eseguire l&#39;esportazione.
+>I nomi dei file di esportazione vengono generati automaticamente. Se esegui più volte la stessa esportazione, sostituirai i file esistenti con quelli nuovi. Se devi mantenere i file precedenti, modifica **[!UICONTROL Target folder]** , quindi fai di nuovo clic su **[!UICONTROL Start]** per eseguire l&#39;esportazione.
 
-Quando si esportano file in **Formato CSV**, ogni lingua è collegata a uno stato e a uno stato di approvazione. Il **Approvare?** consente di approvare una traduzione. Questa colonna può contenere i valori **Sì** o **No**. Per quanto riguarda l’editor integrato (consulta [Gestione delle traduzioni nell’editor](#managing-translations-in-the-editor)), l&#39;approvazione delle traduzioni è facoltativa e non blocca il processo.
+Quando si esportano file in **formato CSV**, ogni lingua è collegata a uno stato e a uno stato di approvazione. **Approvare?La colonna** ti consente di approvare una traduzione. Questa colonna può contenere i valori **Yes** o **No**. Per quanto riguarda l&#39;editor integrato (fare riferimento a [Gestione delle traduzioni nell&#39;editor](#managing-translations-in-the-editor)), l&#39;approvazione delle traduzioni è facoltativa e non blocca il processo.
 
 ### Importazione di file {#importing-files}
 
@@ -147,7 +147,7 @@ Una volta completata la traduzione esterna, puoi importare i file tradotti.
 
    ![](assets/s_ncs_admin_survey_trad_import.png)
 
-1. Seleziona il file da importare, quindi fai clic su **[!UICONTROL Upload]**.
+1. Selezionare il file da importare, quindi fare clic su **[!UICONTROL Upload]**.
 
    ![](assets/s_ncs_admin_survey_trad_import_start.png)
 
@@ -157,32 +157,32 @@ Una volta completata la traduzione esterna, puoi importare i file tradotti.
 
 ## Modifica della lingua di visualizzazione dei moduli {#changing-forms-display-language}
 
-I moduli Web vengono visualizzati nella lingua predefinita specificata nel **[!UICONTROL Localization]** delle proprietà dell&#39;applicazione Web. Per modificare le lingue, devi aggiungere i seguenti caratteri alla fine dell’URL (dove **xx** è il simbolo della lingua):
+I moduli Web vengono visualizzati nella lingua predefinita specificata nella scheda **[!UICONTROL Localization]** delle proprietà dell&#39;applicazione Web. Per cambiare lingua, devi aggiungere i seguenti caratteri alla fine dell&#39;URL (dove **xx** è il simbolo della lingua):
 
 ```
 ?lang=xx
 ```
 
-se il linguaggio è il primo o l’unico parametro dell’URL. Ad esempio: **https://myserver/webApp/APP34**
+se il linguaggio è il primo o l’unico parametro dell’URL. Esempio: **https://myserver/webApp/APP34**
 
 ```
 &lang=xx
 ```
 
-se nell’URL sono presenti altri parametri prima del linguaggio. Ad esempio: **https://myserver/webApp/APP34?status=1&amp;lang=en**
+se nell’URL sono presenti altri parametri prima del linguaggio. Esempio: **https://myserver/webApp/APP34?status=1&amp;lang=en**
 
 Di seguito sono elencate le lingue e i dizionari di traduzione disponibili per impostazione predefinita.
 
 **Dizionario di sistema predefinito**: alcune lingue includono un dizionario predefinito contenente la traduzione delle stringhe di sistema. Per ulteriori informazioni, consulta [Traduzione delle stringhe di sistema](#translating-the-system-strings).
 
-**Gestione del calendario**: le pagine di un’applicazione web possono includere un calendario per l’immissione di date. Per impostazione predefinita, questo calendario è disponibile in diverse lingue (traduzione di giorni, formato data).
+**Gestione del calendario**: le pagine di un&#39;applicazione Web possono includere un calendario per l&#39;immissione di date. Per impostazione predefinita, questo calendario è disponibile in diverse lingue (traduzione di giorni, formato data).
 
 <table> 
  <tbody> 
   <tr> 
    <td> <strong>Lingua (simboli)</strong><br /> </td> 
    <td> <strong>Dizionario di sistema predefinito</strong><br /> </td> 
-   <td> <strong>Gestione del calendario</strong><br /> </td> 
+   <td> <strong>Gestione calendario</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> Tedesco (de)<br /> </td> 
@@ -400,7 +400,7 @@ Di seguito sono elencate le lingue e i dizionari di traduzione disponibili per i
    <td> </td> 
   </tr> 
   <tr> 
-   <td> Vallone (wa)<br /> </td> 
+   <td> Waloon (wa)<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
@@ -413,24 +413,24 @@ Di seguito sono elencate le lingue e i dizionari di traduzione disponibili per i
 
 ## Esempio: visualizzazione di un&#39;applicazione Web in più lingue {#example--displaying-a-web-application-in-several-languages}
 
-Il seguente modulo web è disponibile in quattro lingue: inglese, francese, tedesco e spagnolo. Le stringhe di caratteri sono state tutte tradotte tramite **[!UICONTROL Translation]** del modulo Web. Poiché la lingua predefinita è l’inglese, quando il sondaggio viene pubblicato, utilizza l’URL standard per visualizzarlo in inglese.
+Il seguente modulo web è disponibile in quattro lingue: inglese, francese, tedesco e spagnolo. Le stringhe di caratteri sono state tradotte tramite la scheda **[!UICONTROL Translation]** del modulo Web. Poiché la lingua predefinita è l’inglese, quando il sondaggio viene pubblicato, utilizza l’URL standard per visualizzarlo in inglese.
 
 ![](assets/s_ncs_admin_survey_trad_sample_fr.png)
 
-Aggiungi **?lang=fr** alla fine dell’URL per visualizzarlo in francese:
+Aggiungere **?lang=fr** alla fine dell&#39;URL per visualizzarlo in francese:
 
 >[!NOTE]
 >
->L’elenco dei simboli per ogni lingua è descritto in [Modifica della lingua di visualizzazione dei moduli](#changing-forms-display-language).
+>L&#39;elenco dei simboli per ogni lingua è descritto in [Modifica della lingua di visualizzazione dei moduli](#changing-forms-display-language).
 
 ![](assets/s_ncs_admin_survey_trad_sample_en.png)
 
-Puoi aggiungere **?lang=es** o **?lang=de** per visualizzarlo in spagnolo o tedesco.
+È possibile aggiungere **?lang=es** o **?lang=de** per visualizzarlo in spagnolo o tedesco.
 
 >[!NOTE]
 >
 >Se altri parametri sono già utilizzati per questa applicazione Web, aggiungere **&amp;lang=**.\
->Ad esempio: **https://myserver/webApp/APP34?status=1&amp;lang=en**
+>Esempio: **https://myserver/webApp/APP34?status=1&amp;lang=en**
 
 ## Configurazione traduzione avanzata {#advanced-translation-configuration}
 
@@ -440,7 +440,7 @@ Puoi aggiungere **?lang=es** o **?lang=de** per visualizzarlo in spagnolo o tede
 
 ### Traduzione delle stringhe di sistema {#translating-the-system-strings}
 
-Le stringhe di sistema sono stringhe di caratteri predefinite utilizzate da tutte le applicazioni Web. Ad esempio: **[!UICONTROL Next]** , **[!UICONTROL Previous]**, **[!UICONTROL Approve]** pulsanti, **[!UICONTROL Loading]** messaggi, ecc. Per impostazione predefinita, alcune lingue contengono un dizionario con le traduzioni per queste stringhe. L’elenco delle lingue è descritto in [Modifica della lingua di visualizzazione dei moduli](#changing-forms-display-language).
+Le stringhe di sistema sono stringhe di caratteri predefinite utilizzate da tutte le applicazioni Web. Ad esempio: **[!UICONTROL Next]** , **[!UICONTROL Previous]**, **[!UICONTROL Approve]** pulsanti, **[!UICONTROL Loading]** messaggi, ecc. Per impostazione predefinita, alcune lingue contengono un dizionario con le traduzioni per queste stringhe. L&#39;elenco delle lingue è descritto in [Modifica della lingua di visualizzazione dei moduli](#changing-forms-display-language).
 
 Se si traduce l&#39;applicazione Web in una lingua per la quale il dizionario di sistema non è tradotto, verrà visualizzato un messaggio di avviso che informa che mancano alcune traduzioni.
 
@@ -448,12 +448,12 @@ Se si traduce l&#39;applicazione Web in una lingua per la quale il dizionario di
 
 Per aggiungere una lingua, attieniti alla seguente procedura:
 
-1. Vai alla struttura Adobe Campaign e fai clic su **[!UICONTROL Administration > Configuration > Global dictionary > System dictionary]** .
+1. Passare alla struttura Adobe Campaign e fare clic su **[!UICONTROL Administration > Configuration > Global dictionary > System dictionary]**.
 1. Nella sezione superiore della finestra, seleziona la stringa di sistema da tradurre, quindi fai clic su **[!UICONTROL Add]** nella sezione inferiore.
 
    ![](assets/s_ncs_admin_survey_trad_system_translation.png)
 
-1. Seleziona la lingua di traduzione e immetti una traduzione per la stringa. Puoi approvare la traduzione controllando **[!UICONTROL Translation approved]** opzione.
+1. Seleziona la lingua di traduzione e immetti una traduzione per la stringa. È possibile approvare la traduzione selezionando l&#39;opzione **[!UICONTROL Translation approved]**.
 
    ![](assets/s_ncs_admin_survey_trad_system_translation2.png)
 
@@ -469,10 +469,10 @@ Per aggiungere una lingua, attieniti alla seguente procedura:
 
 Per tradurre le applicazioni Web in lingue diverse da quelle predefinite (fare riferimento a [Modifica della lingua di visualizzazione dei moduli](#changing-forms-display-language)), sarà necessario aggiungere una nuova lingua di traduzione.
 
-1. Fai clic su **[!UICONTROL Administration > Platform > Enumerations]** della struttura Adobe Campaign e seleziona **[!UICONTROL Languages available for translation]** dall&#39;elenco. L&#39;elenco delle traduzioni disponibili viene visualizzato nella sezione inferiore della finestra.
+1. Fare clic sul nodo **[!UICONTROL Administration > Platform > Enumerations]** della struttura Adobe Campaign e selezionare **[!UICONTROL Languages available for translation]** dall&#39;elenco. L&#39;elenco delle traduzioni disponibili viene visualizzato nella sezione inferiore della finestra.
 
    ![](assets/s_ncs_admin_survey_trad_new_itemized_list_1.png)
 
-1. Fai clic su **[!UICONTROL Add]** , quindi immettere il **[!UICONTROL Internal name]**, **[!UICONTROL Label]** e identificatore dell’immagine (flag). Per aggiungere una nuova immagine, contatta l’amministratore.
+1. Fai clic sul pulsante **[!UICONTROL Add]**, quindi immetti **[!UICONTROL Internal name]**, **[!UICONTROL Label]** e l&#39;identificatore dell&#39;immagine (flag). Per aggiungere una nuova immagine, contatta l’amministratore.
 
    ![](assets/s_ncs_admin_survey_trad_new_itemized_list_2.png)

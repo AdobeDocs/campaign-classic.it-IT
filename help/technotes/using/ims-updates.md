@@ -15,19 +15,19 @@ ht-degree: 5%
 
 
 
-Il 30 giugno 2021 sono state apportate modifiche a [Adobe di sistema Identity Management](https://helpx.adobe.com/it/enterprise/using/users.html) Funzionalità di accesso (IMS) che potrebbero influire sulla capacità di continuare a utilizzare Adobe Campaign. Scopri come continuare a utilizzare Adobe Campaign Classic v7 senza interruzioni.
+Il 30 giugno 2021 sono state apportate modifiche alle funzionalità di accesso di [Adobe Identity Management System](https://helpx.adobe.com/it/enterprise/using/users.html) (IMS) che potrebbero influire sulla possibilità di continuare a utilizzare Adobe Campaign. Scopri come continuare a utilizzare Adobe Campaign Classic v7 senza interruzioni.
 
 ## Cosa è cambiato?
 
-Adobe Il servizio Identity Management (IMS) non supporta più le versioni precedenti di Internet Explorer in **30 giugno 2021**. [Ulteriori informazioni](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
+Adobe Il servizio Identity Management (IMS) ha interrotto il supporto delle versioni precedenti di Internet Explorer il **30 giugno 2021**. [Ulteriori informazioni](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
 
 Adobe vuole preservare la funzionalità IMS per tutti i clienti oltre il 30 giugno 2021. IMS fa parte del framework di sicurezza che consente agli utenti di accedere alla console client, e quindi ad Adobe Campaign.
 
-Per mantenere questa funzionalità, i clienti devono aggiornare la console client sul computer di ogni utente e garantire l’ultimo aggiornamento della [Versione di Windows](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems), con **Internet Explorer 11** incorporato, è installato sul computer di ogni utente.
+Per mantenere questa funzionalità, i clienti devono aggiornare Client Console nel computer di ogni utente e assicurarsi che l&#39;aggiornamento più recente della [versione di Windows](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems), con **Internet Explorer 11** incorporato, sia installato nel computer di ogni utente.
 
 ## Sei interessato?
 
-Se ti connetti a Campaign [tramite un Adobe ID](../../integrations/using/about-adobe-id.md), tramite Identity Management Service (IMS) di Adobe ed eseguendo una versione di Campaign precedente a quelle elencate di seguito, sei interessato.
+Se ti connetti a Campaign [tramite un Adobe ID](../../integrations/using/about-adobe-id.md), tramite Adobe Identity Management Service (IMS) ed esegui una versione di Campaign precedente a quelle elencate di seguito, sei interessato.
 
 Se è già stato eseguito l&#39;aggiornamento ma si utilizza una versione precedente di Microsoft Internet Explorer, è necessario eseguire l&#39;aggiornamento a Internet Explorer 11.
 
@@ -35,7 +35,7 @@ Se è già stato eseguito l&#39;aggiornamento ma si utilizza una versione preced
 
 * In qualità di cliente in hosting, Adobe ha già aggiornato le istanze alla versione più recente.
 
-* In qualità di cliente on-premise/ibrido, devi effettuare l’aggiornamento a una delle versioni più recenti elencate in precedenza per beneficiare della nuova Client Console e garantire una transizione fluida **prima del 30 giugno 2021**.
+* In qualità di cliente on-premise/ibrido, devi effettuare l’aggiornamento a una delle versioni più recenti elencate in precedenza per beneficiare della nuova Client Console e garantire una transizione senza soluzione di continuità **prima del 30 giugno 2021**.
 
   L’aggiornamento a una delle nuove versioni elencate di seguito è obbligatorio:
 
@@ -45,9 +45,9 @@ Se è già stato eseguito l&#39;aggiornamento ma si utilizza una versione preced
    * Campaign versione 20.1.4.
    * Campaign versione 19.2.4.
 
-  Queste versioni sono dotate di un nuovo protocollo di connessione. L’aggiornamento è obbligatorio sia per il server Campaign che per la console client: una volta aggiornate tutte le istanze, anche la console client deve essere aggiornata a questa versione per poter connettersi a Campaign dopo **30 giugno 2021**.
+  Queste versioni sono dotate di un nuovo protocollo di connessione. L’aggiornamento è obbligatorio sia per il server Campaign che per la console client: una volta aggiornate tutte le istanze, la console client deve essere aggiornata a questa versione e deve essere in grado di connettersi a Campaign dopo il **30 giugno 2021**.
 
-Inoltre, assicurati di aver aggiornato [Versione di Windows](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems), con **Internet Explorer 11** incorporato, è installato sul computer di ogni utente.
+Inoltre, assicurati che nel computer di ogni utente sia installato l&#39;aggiornamento più recente della [versione di Windows](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems), con **Internet Explorer 11** integrato.
 
 ## Domande frequenti
 
@@ -60,7 +60,7 @@ Scopri come controllare la versione [in questa sezione](../../platform/using/lau
 
 Per controllare la modalità di connessione, è possibile:
 
-* Avvia la console client di Campaign e accedi alle impostazioni di connessione dell’istanza. Se il **Connettersi con un Adobe ID** è selezionata, stai utilizzando Adobe IMS.
+* Avvia la console client di Campaign e accedi alle impostazioni di connessione dell’istanza. Se l&#39;opzione **Connetti con Adobe ID** è selezionata, si utilizza Adobe IMS.
 
   ![](../../integrations/using/assets/ims_1.png)
 
@@ -70,9 +70,9 @@ o
 
   ![](../../integrations/using/assets/adobeID.png)
 
-**Messaggio di avviso di connessione**
+**Messaggio di avviso connessione**
 
-Il seguente messaggio di avviso è visibile agli utenti che devono aggiornare la console client o utilizzare una versione precedente di Microsoft Internet Explorer: **Devi installare la versione più recente aggiornata a Windows e/o alle tue app di Adobe.**
+Il seguente messaggio di avviso è visibile agli utenti se devono aggiornare la console client o utilizzare una vecchia versione di Microsoft Internet Explorer: **È necessario installare l&#39;ultima versione aggiornata a Windows e/o alle tue app di Adobe.**
 
 ![](../../integrations/using/assets/do-not-localize/errorMsg.png)
 
@@ -93,5 +93,5 @@ Se la versione di Internet Explorer non è stata aggiornata, viene visualizzato 
 * [Domande frequenti sull’aggiornamento della build](../../platform/using/faq-build-upgrade.md)
 * [Rendi la nuova Client Console disponibile agli utenti](../../installation/using/client-console-availability-for-windows.md)
 * [Installare la console client di Campaign](../../installation/using/installing-the-client-console.md)
-* [Accedere a Distribuzione di software Adobe](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it)
+* [Accedi a Distribuzione software di Adobe](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it)
 * [Scarica build Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/it/campaign.html)

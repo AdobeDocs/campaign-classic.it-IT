@@ -34,7 +34,7 @@ Per ottimizzare la creazione, l’utilizzo e la durata di un rapporto, è necess
    * Aggiungere indicatori a un rapporto esistente. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md)
    * Visualizzare i dati nel database. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/about-descriptive-analysis.md)
    * Crea un nuovo rapporto di consegna. Ulteriori informazioni [in questa sezione](../../reporting/using/about-reports-creation-in-campaign.md)),
-   * Esportare dati dal database di Adobe Campaign (tramite un flusso di lavoro, fare riferimento a [questa sezione](../../workflow/using/about-workflows.md)
+   * Esporta dati dal database di Adobe Campaign (tramite un flusso di lavoro, fai riferimento a [questa sezione](../../workflow/using/about-workflows.md)
    * Creare una tabella pivot. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
    * Esplora i dati aggregati. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/ac-cubes.md)
    * Utilizza una procedura guidata per analizzare i dati. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/about-descriptive-analysis.md)
@@ -81,7 +81,7 @@ Consigliamo inoltre di calcolare gli aggregati di notte e di utilizzarli diretta
 
 ### Query {#queries}
 
-È consigliabile utilizzare le query SQL quando possibile ed evitare la post-elaborazione JavaScript. Se necessario, utilizza un’attività Script in un flusso di lavoro ed elimina i dati utilizzati per il calcolo. Puoi anche utilizzare i dati archiviati per accelerare i tempi di elaborazione.
+È consigliabile utilizzare le query SQL quando possibile ed evitare la post-elaborazione da parte di JavaScript. Se necessario, utilizza un’attività Script in un flusso di lavoro ed elimina i dati utilizzati per il calcolo. Puoi anche utilizzare i dati archiviati per accelerare i tempi di elaborazione.
 
 In questo caso, è necessario utilizzare la sintassi seguente:
 
@@ -113,4 +113,4 @@ Inoltre, Adobe Campaign consiglia di apportare i seguenti miglioramenti:
 
 ### Esportazione dei rapporti {#exporting-reports}
 
-Recommendations specifico per l’esportazione dei rapporti è descritto in [questa sezione](../../reporting/using/actions-on-reports.md#exporting-a-report).
+Recommendations specifico per l&#39;esportazione dei report è descritto in [questa sezione](../../reporting/using/actions-on-reports.md#exporting-a-report).

@@ -17,11 +17,11 @@ ht-degree: 5%
 
 >[!CAUTION]
 >
->A partire da Campaign Classic v7.3.1, tutti gli operatori devono utilizzare [Sistema Adobe Identity Management (IMS)](https://helpx.adobe.com/it/enterprise/using/users.html){target="_blank"} per connettersi a Campaign.
+>A partire da Campaign Classic v7.3.1, tutti gli operatori devono utilizzare [Adobe Identity Management System (IMS)](https://helpx.adobe.com/it/enterprise/using/users.html){target="_blank"} per connettersi a Campaign.
 >
 >Come parte degli sforzi per rafforzare la sicurezza e il processo di autenticazione, Adobe Campaign consiglia vivamente di migrare tutte le modalità di autenticazione degli operatori esistenti dall’autenticazione nativa di login/password ad Adobe Identity Management System (IMS). Scopri come eseguire la migrazione degli operatori in [questa pagina](../../technotes/using/migrate-users-to-ims.md).
 > 
->Dopo questa migrazione, la sezione seguente non è più applicabile.  Scopri come impostare le autorizzazioni con Adobe IMS in [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=it){target="_blank"}.
+>Dopo questa migrazione, la sezione seguente non è più applicabile.  Scopri come impostare le autorizzazioni con Adobe IMS nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=it){target="_blank"}.
 
 
 Adobe Campaign ti consente di definire e gestire i diritti assegnati ai vari operatori. Si tratta di una serie di diritti e restrizioni che autorizzano o negano:
@@ -42,7 +42,7 @@ Esistono due tipi di autorizzazioni che è possibile concedere a un utente:
 
 >[!NOTE]
 >
->Prima di iniziare a definire le autorizzazioni, l’Adobe consiglia di leggere [Elenco di controllo per la configurazione della sicurezza](https://helpx.adobe.com/it/campaign/kb/acc-security.html).
+>Prima di iniziare a definire le autorizzazioni, l&#39;Adobe consiglia di leggere l&#39;[elenco di controllo per la configurazione della protezione](https://helpx.adobe.com/it/campaign/kb/acc-security.html).
 
 Scopri come concedere l’accesso e impostare le autorizzazioni in queste sezioni:
 

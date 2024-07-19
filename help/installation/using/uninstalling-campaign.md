@@ -24,7 +24,7 @@ ht-degree: 2%
 >
 >Queste procedure disinstalleranno definitivamente Adobe Campaign. Tutti i dati andranno persi.
 
-**RHEL**
+**RHEL:**
 
 ```
 rpm -e nlserver6-v7
@@ -44,4 +44,4 @@ rm -rf /user/local/neolane
 
 **Windows:**
 
-Fai riferimento a questo [pagina](../../migration/using/migrating-in-windows-for-adobe-campaign-7.md#deleting-and-cleansing-adobe-campaign-previous-version). Non dimenticare di rimuovere la cartella di installazione di Campaign.
+Fai riferimento a questa [pagina](../../migration/using/migrating-in-windows-for-adobe-campaign-7.md#deleting-and-cleansing-adobe-campaign-previous-version). Non dimenticare di rimuovere la cartella di installazione di Campaign.

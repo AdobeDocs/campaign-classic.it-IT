@@ -21,10 +21,10 @@ ht-degree: 5%
 
 Una volta completata l’installazione di Adobe Campaign, devi configurarla per assicurarti che funzioni in modo efficiente in base ai vincoli e all’architettura tecnica. I passaggi per configurare un’istanza di Adobe Campaign sono descritti in questo capitolo, nella sequenza seguente:
 
-1. Crea l’istanza e la connessione correlata; consulta [Creazione di un’istanza e accesso](../../installation/using/creating-an-instance-and-logging-on.md).
-1. Creare e configurare il database, fare riferimento a [Creazione e configurazione del database](../../installation/using/creating-and-configuring-the-database.md).
-1. Configurare il server Adobe Campaign, fare riferimento a [Configurazione del server Campaign](../../installation/using/configuring-campaign-server.md).
-1. Distribuire l’istanza, fare riferimento a [Distribuzione di un’istanza](../../installation/using/deploying-an-instance.md).
+1. Creare l&#39;istanza e la connessione correlata. Fare riferimento a [Creazione di un&#39;istanza e accesso](../../installation/using/creating-an-instance-and-logging-on.md).
+1. Creare e configurare il database. Fare riferimento a [Creazione e configurazione del database](../../installation/using/creating-and-configuring-the-database.md).
+1. Configura il server Adobe Campaign. Fai riferimento a [Configurazione del server Campaign](../../installation/using/configuring-campaign-server.md).
+1. Distribuire l&#39;istanza, fare riferimento a [Distribuzione di un&#39;istanza](../../installation/using/deploying-an-instance.md).
 
 La configurazione dell’istanza implica l’abilitazione di processi (web, mta, wfserver, ecc.) da avviare sul server e configurare moduli per l’invio di e-mail, per il tracciamento, ecc. Per ogni istanza, i processi di Adobe Campaign vengono attivati sul server. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#enabling-processes).
 

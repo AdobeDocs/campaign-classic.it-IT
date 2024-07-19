@@ -26,7 +26,7 @@ Scopri le best practice relative alla progettazione della consegna e all’invio
     </a>
     <div>
       <a href="optimize-delivery.md">
-    <strong>Ottimizzare la consegna</strong>
+    <strong>Ottimizza consegna</strong>
     </a>
     </div>
     <p>
@@ -39,11 +39,11 @@ Scopri le best practice relative alla progettazione della consegna e all’invio
     </a>
     <div>
       <a href="use-templates.md">
-    <strong>Utilizzare i modelli</strong>
+    <strong>Usa modelli</strong>
     </a>
     </div>
     <p>
-    <em>Facilitare e fissare nuove consegne</em>
+    <em>Facilitare e velocizzare le nuove consegne</em>
     <p>
   </td>
   <td>
@@ -52,11 +52,11 @@ Scopri le best practice relative alla progettazione della consegna e all’invio
     </a>
     <div>
       <a href="design-and-personalize.md">
-    <strong>Personalizzare il contenuto</strong>
+    <strong>Personalizza contenuto</strong>
     </a>
     </div>
     <p>
-    <em>Applicare le impostazioni corrette</em>
+    <em>Applica impostazioni corrette</em>
     <p>
   </td>
 </tr>
@@ -67,7 +67,7 @@ Scopri le best practice relative alla progettazione della consegna e all’invio
     </a>
     <div>
       <a href="define-the-right-audience.md">
-    <strong>Definire il pubblico adatto</strong>
+    <strong>Definisci il pubblico giusto</strong>
     </a>
     </div>
     <p>
@@ -80,7 +80,7 @@ Scopri le best practice relative alla progettazione della consegna e all’invio
     </a>
     <div>
       <a href="check-before-sending.md">
-    <strong>Controlla prima dell’invio</strong>
+    <strong>Controllare prima dell'invio</strong>
     </a>
     </div>
     <p>
@@ -93,11 +93,11 @@ Scopri le best practice relative alla progettazione della consegna e all’invio
     </a>
     <div>
       <a href="track-and-monitor.md">
-    <strong>Tracciamento e monitoraggio</strong>
+    <strong>Traccia e monitora</strong>
     </a>
     </div>
     <p>
-    <em>Controllare l’invio e la risoluzione dei problemi</em>
+    <em>Controlla l'invio e la risoluzione dei problemi</em>
     <p>
   </td>
 </tr>
@@ -109,4 +109,4 @@ Vedi anche:
 
 * [Passaggi per la creazione della consegna](steps-about-delivery-creation-steps.md)
 
-* [Lista di controllo per sicurezza e privacy](https://helpx.adobe.com/it/campaign/kb/acc-security.html)
+* [Lista di controllo protezione e privacy](https://helpx.adobe.com/it/campaign/kb/acc-security.html)

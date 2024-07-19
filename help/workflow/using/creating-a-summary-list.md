@@ -53,25 +53,25 @@ Phone;500;London 5
 
 Questi dati sono contenuti in un file di testo &quot;Purchases.txt&quot;.
 
-1. Aggiungi il **Raccoglitore file** e **Caricamento dati (file)** attività al flusso di lavoro.
+1. Aggiungi le attività **Raccolta file** e **Caricamento dati (file)** al flusso di lavoro.
 
-   Il **Raccoglitore file** attività consente di raccogliere e inviare file da e al server Adobe Campaign.
+   L&#39;attività dell&#39;**Agente di raccolta file** consente di raccogliere e inviare file da e al server Adobe Campaign.
 
-   Il **Caricamento dati (file)** attività ti consente di arricchire la tabella di lavoro del flusso di lavoro con i dati raccolti.
+   L&#39;attività **Caricamento dati(file)** ti consente di arricchire la tabella di lavoro del flusso di lavoro con i dati raccolti.
 
    Per ulteriori informazioni su questa attività, consulta [Caricare dati da un file](../../platform/using/import-export-workflows.md#loading-data-from-a-file).
 
-1. Configurare **Raccoglitore file** attività per raccogliere testo (&#42;.txt) dalla directory selezionata.
+1. Configurare l&#39;attività **Raccoglitore file** per raccogliere i file di tipo testo (&#42;.txt) dalla directory selezionata.
 
    ![](assets/uc2_enrich_collecteur.png)
 
-   Il **Raccoglitore file** attività consente di gestire l’assenza di un file nella directory di origine. A questo scopo, seleziona la **[!UICONTROL Process file nonexistence]** opzione. In questo flusso di lavoro, una **Wait** è stata aggiunta un&#39;attività per provare un&#39;altra raccolta di file, se questa non è presente nella directory al momento della raccolta.
+   L&#39;attività **Raccoglitore file** consente di gestire l&#39;assenza di un file nella directory di origine. Per eseguire questa operazione, selezionare l&#39;opzione **[!UICONTROL Process file nonexistence]**. In questo flusso di lavoro, è stata aggiunta un&#39;attività **Attendi** per provare un&#39;altra raccolta di file, se non è presente nella directory al momento della raccolta.
 
-1. Configurare **Caricamento dati (file)** utilizzando un file di esempio con lo stesso formato dei dati da importare.
+1. Configurare l&#39;attività **Caricamento dati (file)** utilizzando un file di esempio con lo stesso formato dei dati da importare.
 
    ![](assets/uc2_enrich_chargement1.png)
 
-   Fai clic su **[!UICONTROL Click here to change the file format...]** per rinominare le colonne utilizzando i nomi e le etichette interni della tabella &quot;Purchases&quot;.
+   Fare clic sul collegamento **[!UICONTROL Click here to change the file format...]** per rinominare le colonne utilizzando i nomi e le etichette interni della tabella &quot;Purchases&quot;.
 
    ![](assets/uc2_enrich_chargement2.png)
 
@@ -79,20 +79,20 @@ Una volta importati i dati, l’arricchimento viene eseguito creando un collegam
 
 Aggiungi l’attività Enrichment e configurala come segue:
 
-1. Seleziona l’impostazione principale composta dai dati del **Caricamento dati (file)** attività.
+1. Selezionare il set principale costituito dai dati dell&#39;attività **Caricamento dati (file)**.
 
    ![](assets/uc2_enrich_enrich1.png)
 
-1. Clic **[!UICONTROL Add data]**, quindi seleziona la **[!UICONTROL A link]** opzione.
+1. Fare clic su **[!UICONTROL Add data]**, quindi selezionare l&#39;opzione **[!UICONTROL A link]**.
 
    ![](assets/uc2_enrich_enrich2.png)
 
-1. Seleziona la **[!UICONTROL Define a collection]** opzione.
+1. Selezionare l&#39;opzione **[!UICONTROL Define a collection]**.
 1. Seleziona lo schema &quot;Archivi&quot; come destinazione.
 
    ![](assets/uc2_enrich_enrich3.png)
 
-Per ulteriori informazioni sui vari tipi di collegamenti, consulta [Arricchimento e modifica dei dati](targeting-data.md#enriching-and-modifying-data).
+Per ulteriori informazioni sui vari tipi di collegamenti, vedere [Arricchimento e modifica dei dati](targeting-data.md#enriching-and-modifying-data).
 
 Nella finestra seguente, è necessario creare una condizione di join selezionando il campo di origine (nel set principale) e il campo di destinazione (appartenente allo schema &quot;Archivi&quot;) per configurare la riconciliazione dei dati.
 
@@ -102,7 +102,7 @@ Ora che il collegamento è stato creato, aggiungeremo una colonna alla tabella d
 
 1. Apri l’attività di arricchimento.
 1. Fai clic su **[!UICONTROL Edit additional data]**.
-1. Aggiungi il campo &quot;Riferimento Codice postale&quot; al **[!UICONTROL Output columns]**.
+1. Aggiungere il campo &quot;Riferimento Codice postale&quot; a **[!UICONTROL Output columns]**.
 
 ![](assets/uc2_enrich_enrich5.png)
 
@@ -112,25 +112,25 @@ I dati nella tabella di lavoro del flusso di lavoro dopo questo arricchimento sa
 
 ## Passaggio 2: scrittura di dati arricchiti nella tabella &#39;Acquisti&#39; {#step-2--writing-enriched-data-to-the--purchases--table}
 
-Questo passaggio descrive come scrivere i dati importati e arricchiti nella tabella &quot;Purchases&quot;. A questo scopo, è necessario utilizzare un’ **Aggiorna dati** attività.
+Questo passaggio descrive come scrivere i dati importati e arricchiti nella tabella &quot;Purchases&quot;. A tale scopo, è necessario utilizzare un&#39;attività **Aggiorna dati**.
 
-Una riconciliazione tra i dati nella tabella di lavoro del flusso di lavoro e **Acquisti** la dimensione di targeting deve essere eseguita prima dei dati nella sezione **Acquisti** la tabella è aggiornata.
+È necessario eseguire una riconciliazione tra i dati nella tabella di lavoro del flusso di lavoro e la dimensione di targeting **Purchases** prima di aggiornare i dati nella tabella **Purchases**.
 
-1. Fai clic su **[!UICONTROL Reconciliation]** dell’attività di arricchimento.
+1. Fare clic sulla scheda **[!UICONTROL Reconciliation]** dell&#39;attività di arricchimento.
 1. In questo caso, seleziona la dimensione di targeting, lo schema &quot;Purchases&quot;.
-1. Selezionare un&#39;&quot;Espressione di origine&quot; per i dati nella tabella del flusso di lavoro (in questo caso il campo &quot;storeName&quot;).
+1. Selezionare un&#39;&quot;espressione Source&quot; per i dati nella tabella del flusso di lavoro (in questo caso il campo &quot;storeName&quot;).
 1. Selezionare un&#39;&quot;Espressione di destinazione&quot; per i dati nella tabella &quot;Acquisti&quot; (in questo caso il campo &quot;nome dello storename&quot;).
 1. Seleziona l’opzione **[!UICONTROL Keep unreconciled data coming from the work table]**.
 
 ![](assets/uc2_enrich_reconciliation.png)
 
-In **Aggiorna dati** attività, è necessaria la seguente configurazione:
+Nell&#39;attività **Aggiorna dati** è necessaria la seguente configurazione:
 
-1. Seleziona la **[!UICONTROL Insert or update]** opzione in **[!UICONTROL Operation type]** per evitare di creare nuovi record ogni volta che il file viene raccolto.
-1. Seleziona la **[!UICONTROL By directly using the targeting dimension]** valore per **[!UICONTROL Record identification]** opzione.
-1. Seleziona lo schema &quot;Acquisti&quot; come **[!UICONTROL Document type]**.
-1. Specifica l’elenco dei campi da aggiornare. Il **[!UICONTROL Destination]** consente di definire i campi dello schema &quot;Purchases&quot;. Il **[!UICONTROL Expression]** consente di selezionare i campi nella tabella di lavoro per eseguire una mappatura.
-1. Fai clic su **[!UICONTROL Generate an outbound transition]** opzione.
+1. Selezionare l&#39;opzione **[!UICONTROL Insert or update]** nel campo **[!UICONTROL Operation type]** per evitare la creazione di nuovi record ogni volta che il file viene raccolto.
+1. Selezionare il valore **[!UICONTROL By directly using the targeting dimension]** per l&#39;opzione **[!UICONTROL Record identification]**.
+1. Selezionare lo schema &quot;Acquisti&quot; come **[!UICONTROL Document type]**.
+1. Specifica l’elenco dei campi da aggiornare. La colonna **[!UICONTROL Destination]** consente di definire i campi dello schema &quot;Purchases&quot;. La colonna **[!UICONTROL Expression]** consente di selezionare i campi nella tabella di lavoro per eseguire una mappatura.
+1. Fare clic sull&#39;opzione **[!UICONTROL Generate an outbound transition]**.
 
 ![](assets/uc2_enrich_miseajour.png)
 
@@ -140,16 +140,16 @@ Lo schema &quot;Contatti&quot; è fisicamente collegato allo schema &quot;Acquis
 
 Lo scopo di questo secondo arricchimento è quello di creare un aggregato sullo schema di acquisto per calcolare la quantità totale di acquisti per ciascun contatto identificato.
 
-1. Aggiungi un **query** tipo di attività che consente di recuperare tutti **Contatti** archiviato.
-1. Aggiungi un **Arricchimento** attività, quindi seleziona il set principale risultante dalla query precedente.
-1. Fai clic su Aggiungi **[!UICONTROL Data]**.
-1. Fai clic su **[!UICONTROL Data linked to the targeting dimension]** opzione.
-1. Fai clic su **[!UICONTROL Data linked to the filtering dimension]** opzione in **[!UICONTROL Select fields to add]** finestra.
-1. Seleziona la **[!UICONTROL Purchases]** quindi fai clic su **[!UICONTROL Next]**.
+1. Aggiungi un&#39;attività di tipo **query** che consente di recuperare tutti i **contatti** archiviati.
+1. Aggiungi un&#39;attività **Enrichment**, quindi seleziona il set principale risultante dalla query precedente.
+1. Fare clic su Aggiungi **[!UICONTROL Data]**.
+1. Fare clic sull&#39;opzione **[!UICONTROL Data linked to the targeting dimension]**.
+1. Fare clic sull&#39;opzione **[!UICONTROL Data linked to the filtering dimension]** nella finestra **[!UICONTROL Select fields to add]**.
+1. Selezionare il nodo **[!UICONTROL Purchases]** e fare clic su **[!UICONTROL Next]**.
 
    ![](assets/uc2_enrich_enrich9.png)
 
-1. Modificare il **[!UICONTROL Collected data]** selezionando il campo **[!UICONTROL Aggregates]** opzione.
+1. Modificare il campo **[!UICONTROL Collected data]** selezionando l&#39;opzione **[!UICONTROL Aggregates]**.
 
    ![](assets/uc2_enrich_enrich10.png)
 
@@ -160,12 +160,12 @@ Lo scopo di questo secondo arricchimento è quello di creare un aggregato sullo 
 
 Per preparare l&#39;elenco di riepilogo, è necessario aggiungere campi dai campi &quot;Purchases&quot; e dal primo arricchimento: il campo &quot;ZipCode Reference&quot;.
 
-1. Fai clic su **[!UICONTROL Edit additional data...]** nell’attività di arricchimento.
+1. Fare clic sul collegamento **[!UICONTROL Edit additional data...]** nell&#39;attività di arricchimento.
 1. Aggiungi i campi &quot;Nome store&quot; e &quot;Purchases / Zip Code Reference&quot;.
 
    ![](assets/uc2_enrich_enrich7.png)
 
-1. Fai clic su **[!UICONTROL Properties]** scheda.
+1. Fare clic sulla scheda **[!UICONTROL Properties]**.
 1. Modifica il secondo collegamento per creare una sola riga.
 
    ![](assets/uc2_enrich_enrich8.png)
@@ -174,8 +174,8 @@ Per preparare l&#39;elenco di riepilogo, è necessario aggiungere campi dai camp
 
 L’ultimo passaggio prevede la scrittura di tutti i dati arricchiti in un elenco.
 
-1. Aggiungi un **Aggiornamento elenco** al flusso di lavoro. Questa attività deve essere collegata alla transizione in uscita della seconda attività di arricchimento.
-1. Seleziona la **[!UICONTROL Create the list if necessary (Calculated name)]** opzione.
+1. Aggiungi un&#39;attività **Aggiornamento elenco** al flusso di lavoro. Questa attività deve essere collegata alla transizione in uscita della seconda attività di arricchimento.
+1. Selezionare l&#39;opzione **[!UICONTROL Create the list if necessary (Calculated name)]**.
 1. Selezionare un valore per il nome calcolato. L&#39;etichetta scelta per l&#39;elenco è la data corrente: &lt;%= formatDate(new Date(), &quot;%2D/%2M/%2Y&quot;) %>.
 
 Una volta eseguito il flusso di lavoro, l’elenco include:

@@ -21,7 +21,7 @@ Per ulteriori informazioni sulla creazione e la configurazione di schemi di dati
 
 ## Struttura dello schema {#schema-structure}
 
-Il documento XML di uno schema dati deve contenere **`<srcschema>`** elemento principale con **nome** e **namespace** attributi per popolare il nome dello schema e il relativo spazio dei nomi.
+Il documento XML di uno schema dati deve contenere l&#39;elemento principale **`<srcschema>`** con gli attributi **name** e **namespace** per popolare il nome dello schema e il relativo spazio dei nomi.
 
 ```
 <srcSchema name="schema_name" namespace="namespace">
@@ -37,13 +37,13 @@ In uno schema di gestione dei contenuti, l’elemento principale è rappresentat
 <element name="book" template="ncm:content" xmlChildren="true">
 ```
 
-Il **modello** l’attributo immesso nell’elemento principale ti consente di estendere lo schema con proprietà generiche a tutte le definizioni di contenuto come nome, data di creazione, autore, stringa associata e così via.
+L&#39;attributo **template** immesso nell&#39;elemento principale consente di estendere lo schema con proprietà generiche a tutte le definizioni di contenuto, ad esempio nome, data di creazione, autore, stringa associata e così via.
 
-Queste proprietà sono descritte nella **ncm:contenuto** schema.
+Queste proprietà sono descritte nello schema **ncm:content**.
 
 >[!NOTE]
 >
->La presenza del **xmlChildren** L&#39;attributo indica che la struttura dati immessa tramite l&#39;elemento principale viene memorizzata in un documento XML dell&#39;istanza di contenuto.
+>La presenza dell&#39;attributo **xmlChildren** indica che la struttura dati immessa tramite l&#39;elemento principale viene memorizzata in un documento XML dell&#39;istanza di contenuto.
 
 >[!CAUTION]
 >
@@ -71,15 +71,15 @@ Di seguito è riportato un esempio di schema di gestione dei contenuti con i tip
 
 ## Properties {#properties}
 
-È possibile utilizzare diverse proprietà per arricchire **`<element>`** e **`<attribute>`** elementi dello schema dati.
+È possibile utilizzare diverse proprietà per arricchire gli elementi **`<element>`** e **`<attribute>`** dello schema dati.
 
 Le proprietà principali utilizzate nella gestione dei contenuti sono le seguenti:
 
-* **etichetta**: breve descrizione,
+* **label**: breve descrizione,
 * **desc**: descrizione lunga,
-* **predefinito**: espressione che restituisce un valore predefinito al momento della creazione del contenuto,
-* **userEnum**: enumerazione gratuita per memorizzare e visualizzare i valori immessi tramite questo campo,
-* **enum**: enumerazione fissa utilizzata quando l’elenco dei valori possibili è noto in anticipo.
+* **default**: l&#39;espressione restituisce un valore predefinito durante la creazione del contenuto,
+* **userEnum**: enumerazione gratuita per archiviare e visualizzare i valori immessi tramite questo campo,
+* **enum**: enumerazione fissa utilizzata quando l&#39;elenco dei valori possibili è noto in anticipo.
 
 Di seguito è riportato uno schema di esempio con le proprietà compilate:
 
@@ -108,7 +108,7 @@ Di seguito è riportato uno schema di esempio con le proprietà compilate:
 
 Una raccolta è un elenco di elementi con lo stesso nome e lo stesso livello gerarchico.
 
-Nel nostro esempio, il **`<chapter>`** e **`<page>`** Gli elementi sono elementi di raccolta. Il **non associato** deve pertanto essere aggiunto alla definizione di questi elementi:
+Nel nostro esempio, gli elementi **`<chapter>`** e **`<page>`** sono elementi di raccolta. L&#39;attributo **unbound** deve quindi essere aggiunto alla definizione di questi elementi:
 
 ```
 <element name="chapter" label="Chapter" unbound="true" ordered="true">
@@ -120,15 +120,15 @@ Nel nostro esempio, il **`<chapter>`** e **`<page>`** Gli elementi sono elementi
 
 >[!NOTE]
 >
->La presenza del **ordered=&quot;true&quot;** Questo attributo consente di ordinare gli elementi di raccolta inseriti.
+>La presenza dell&#39;attributo **ordered=&quot;true&quot;** consente di ordinare gli elementi della raccolta inseriti.
 
 ## Elemento con riferimento a {#element-referencing}
 
-Il riferimento agli elementi viene utilizzato in larga misura negli schemi di contenuto. Consente di raggruppare la definizione di un **`<element>`** in modo che sia possibile farvi riferimento su altri elementi con la stessa struttura.
+Il riferimento agli elementi viene utilizzato in larga misura negli schemi di contenuto. Consente di fattorizzare la definizione di un elemento **`<element>`** in modo che sia possibile farvi riferimento in altri elementi con la stessa struttura.
 
-Il **ref** L&#39;attributo dell&#39;elemento a cui fare riferimento deve essere completato con il percorso (XPath) dell&#39;elemento di riferimento.
+L&#39;attributo **ref** dell&#39;elemento a cui fare riferimento deve essere completato con il percorso (XPath) dell&#39;elemento di riferimento.
 
-**Esempio**: aggiunta di un **Appendice** sezione con la stessa struttura della sezione **`<chapter>`** del nostro schema di esempio.
+**Esempio**: aggiunta di una sezione **Appendix** con la stessa struttura dell&#39;elemento **`<chapter>`** dello schema di esempio.
 
 ```
 <srcSchema name="book" namespace="cus">
@@ -152,9 +152,9 @@ La struttura del capitolo viene spostata nell’elemento con il nome &quot;secti
 
 ## Elemento “compute-string” {#compute-string}
 
-A **Stringa di calcolo** è un&#39;espressione XPath utilizzata per creare una stringa che rappresenta un&#39;istanza di contenuto.
+Una **stringa di calcolo** è un&#39;espressione XPath utilizzata per creare una stringa che rappresenta un&#39;istanza di contenuto.
 
-Di seguito è riportato uno schema di esempio con i relativi **Stringa di calcolo**:
+Ecco il nostro schema di esempio con la sua **stringa di calcolo**:
 
 ```
 <srcSchema name="book" namespace="cus">
@@ -175,4 +175,4 @@ Quando lo schema di origine viene salvato, la generazione estesa dello schema vi
 
 >[!NOTE]
 >
->Il **Nome** edit control consente di immettere la chiave dello schema, costituita dal nome e dallo spazio dei nomi. Il **nome** e **namespace** gli attributi dell&#39;elemento principale dello schema vengono aggiornati automaticamente nel campo di modifica XML dello schema.
+>Il controllo di modifica **Name** consente di immettere la chiave dello schema, costituita dal nome e dallo spazio dei nomi. Gli attributi **name** e **namespace** dell&#39;elemento radice dello schema vengono aggiornati automaticamente nel campo di modifica XML dello schema.

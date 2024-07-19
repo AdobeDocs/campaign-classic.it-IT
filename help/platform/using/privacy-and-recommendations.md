@@ -68,7 +68,7 @@ Nella gestione della privacy è importante definire quali dati devono essere ges
 * **I dati personali** sono informazioni che possono identificare direttamente o indirettamente un individuo.
 * **I dati personali riservati** sono informazioni relative a etnia, opinioni politiche, credenze religiose, precedenti penali, informazioni genetiche, dati sanitari, orientamento sessuale e informazioni biometriche di un individuo, nonché ad appartenenze a sindacati.
 
-Durante l’integrazione di Campaign con altre soluzioni Experience Cloud in cui i tipi di pubblico possono essere trasferiti da un sistema all’altro, ad esempio [Adobe Analytics](../../integrations/using/gs-aa.md), [Tipi di pubblico di Experience Cloud](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md), o con altre soluzioni tramite [Connettori CRM](../../platform/using/crm-connectors.md), devi prestare maggiore attenzione alla protezione dei dati personali.
+Durante l’integrazione di Campaign con altre soluzioni Experience Cloud in cui i tipi di pubblico possono essere trasferiti da un sistema all’altro, ad esempio [Adobe Analytics](../../integrations/using/gs-aa.md), [Tipi di pubblico di Experience Cloud](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md) o con altre soluzioni tramite [Connettori CRM](../../platform/using/crm-connectors.md), è necessario prestare maggiore attenzione alla protezione dei dati personali.
 
 Le [normative principali](#privacy-regulations) si riferiscono alle diverse entità che gestiscono i dati come segue:
 

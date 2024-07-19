@@ -21,7 +21,7 @@ ht-degree: 5%
 
 ## Implementazione {#implementation}
 
-1. Aggiungi un&#39;estensione al `nms:inSMS` schema nell’istanza Marketing. L&#39;estensione aggiungerà un nuovo attributo al `nms:inSMS` e tieni traccia della chiave primaria del record inSMS proveniente dall’istanza di mid-sourcing.
+1. Aggiungi un&#39;estensione allo schema `nms:inSMS` nell&#39;istanza Marketing. L&#39;estensione aggiungerà un nuovo attributo allo schema `nms:inSMS` e terrà traccia della chiave primaria del record inSMS proveniente dall&#39;istanza di mid-sourcing.
 
    ```xml
    <element img="nms:miniatures/mini-sms.png" label="Incoming SMS"
@@ -35,23 +35,23 @@ ht-degree: 5%
    </element>
    ```
 
-1. Per applicare le modifiche apportate agli schemi, avviare la procedura guidata di aggiornamento del database. Questa procedura guidata è accessibile tramite **Strumenti** > **Avanzate** > **Aggiornare la struttura del database**. Controlla se la struttura fisica del database corrisponde alla relativa descrizione logica ed esegue gli script di aggiornamento SQL. [Ulteriori informazioni](../../configuration/using/updating-the-database-structure.md)
+1. Per applicare le modifiche apportate agli schemi, avviare la procedura guidata di aggiornamento del database. Questa procedura guidata è accessibile tramite **Strumenti** > **Avanzate** > **Aggiorna struttura database**. Controlla se la struttura fisica del database corrisponde alla relativa descrizione logica ed esegue gli script di aggiornamento SQL. [Ulteriori informazioni](../../configuration/using/updating-the-database-structure.md)
 
-1. Interrompi ed esegui il backup del flusso di lavoro contenente **Attività SMS in entrata**.
+1. Arresta ed esegui il backup del flusso di lavoro contenente l&#39;**attività SMS in entrata**.
 
-   Esegue il backup del puntatore di opzione corrispondente con il seguente formato `SMS_MO_INDEX_{internal name of the workflow}_{name of the insms workflow activity}_{internal name of the external account to access the mid}`.
+   Eseguire il backup del puntatore di opzione corrispondente con il seguente formato `SMS_MO_INDEX_{internal name of the workflow}_{name of the insms workflow activity}_{internal name of the external account to access the mid}`.
 
 [Ulteriori informazioni sul backup](../../production/using/backup.md)
 
-1. (**FACOLTATIVO**) se utilizzi già un’attività Scheduler, apri il flusso di lavoro e riconfiguralo come segue:
+1. (**FACOLTATIVO**) se si sta già utilizzando un&#39;attività Scheduler, aprire il flusso di lavoro e riconfigurarlo nel modo seguente:
 
-   1. Replica le impostazioni correnti da **Pianificazione** scheda del **SMS in entrata** attività nell’esterno **Scheduler** attività.
+   1. Replica le impostazioni correnti dalla scheda **Pianifica** dell&#39;attività **SMS in entrata** nell&#39;attività **Pianificazione** esterna.
 
-   1. Disattiva l&#39;impostazione corrente in **Pianificazione** scheda di **SMS in entrata** attività.
+   1. Disattiva l&#39;impostazione corrente nella scheda **Pianificazione** dell&#39;attività **SMS in entrata**.
 
       ![](assets/inbound_sms_1.png)
 
-1. Aggiornare il **SMS in entrata** script personalizzato.
+1. Aggiorna lo script personalizzato **Inbound SMS**.
 
    Sostituisci il blocco seguente. Tieni presente che questo script può variare se in precedenza hai personalizzato questo codice.
 
@@ -73,7 +73,7 @@ ht-degree: 5%
 
    Segui i prerequisiti seguenti:
 
-   * Immetti il valore reale per `<EXTERNAL_ACCOUNT_ID>`, ad esempio, `var iExtAccountId=72733155`.
+   * Immettere il valore reale per `<EXTERNAL_ACCOUNT_ID>`, ad esempio `var iExtAccountId=72733155`.
    * Assicurati di mantenere i seguenti elementi nello script personalizzato:
       * `_operation="insertOrUpdate"`
       * `_key="@midInSMSId,@extAccount-id"`

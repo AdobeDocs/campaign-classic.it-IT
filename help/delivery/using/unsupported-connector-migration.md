@@ -26,40 +26,40 @@ A partire dalla versione 20.2, i connettori legacy sono diventati obsoleti. Ques
 
 I seguenti connettori sono obsoleti a partire dalla versione 20.2:
 
-* **[!UICONTROL Generic SMPP]** (SMPP versione 3.4 supporta la modalità binaria)
+* **[!UICONTROL Generic SMPP]** (SMPP versione 3.4 che supporta la modalità binaria)
 * **[!UICONTROL Sybase365]** (SAP SMS 365)
 * **[!UICONTROL CLX Communications]**
 * **[!UICONTROL Tele2]**
 * **[!UICONTROL O2]**
 * **[!UICONTROL iOS]**
 
-Le funzionalità obsolete sono ancora disponibili e supportate, ma non verranno ulteriormente migliorate. È consigliabile utilizzare **[!UICONTROL Extended generic SMPP]** connettore.
+Le funzionalità obsolete sono ancora disponibili e supportate, ma non verranno ulteriormente migliorate. È consigliabile utilizzare il connettore **[!UICONTROL Extended generic SMPP]**.
 
-Per ulteriori informazioni sulle funzioni obsolete e rimosse, consulta questa [pagina](../../rn/using/deprecated-features.md).
+Per ulteriori informazioni sulle funzionalità obsolete e rimosse, consulta questa [pagina](../../rn/using/deprecated-features.md).
 
-I vecchi connettori SMS utilizzano il connettore Java SMS che sovraccarica il processo web. Migrazione al nuovo **[!UICONTROL Extended Generic SMPP]** Il connettore sposterà questo carico nell’MTA che potrà supportarlo.
+I vecchi connettori SMS utilizzano il connettore Java SMS che sovraccarica il processo web. La migrazione al nuovo connettore **[!UICONTROL Extended Generic SMPP]** sposterà questo carico nell&#39;MTA che potrà supportarlo.
 
 ## Migrazione al connettore SMPP generico esteso {#migrating-extended-generic-smpp}
 
 >[!CAUTION]
 >
->Anche se è possibile trasporre i parametri, la configurazione **[!UICONTROL Extended Generic SMPP]** il connettore richiede di parlare con il provider che ti fornirà le informazioni necessarie per compilare il resto dei parametri. Per ulteriori informazioni, consulta questa [pagina](sms-protocol.md).
+>Anche se è possibile trasporre i parametri, la configurazione del connettore **[!UICONTROL Extended Generic SMPP]** richiede di parlare con il provider che fornirà le informazioni necessarie per compilare il resto dei parametri. Per ulteriori informazioni, consulta questa [pagina](sms-protocol.md).
 
-Innanzitutto, devi creare un nuovo **[!UICONTROL Extended Generic SMPP]** account esterno e potresti essere in grado di recepire alcuni parametri. Puoi trovare i passaggi dettagliati in questo [pagina](sms-set-up.md#creating-an-smpp-external-account).
+Innanzitutto, sarà necessario creare un nuovo account esterno **[!UICONTROL Extended Generic SMPP]** e quindi potrebbe essere possibile trasporre alcuni parametri. Puoi trovare i passaggi dettagliati in questa [pagina](sms-set-up.md#creating-an-smpp-external-account).
 
-Ora devi compilare i parametri della **[!UICONTROL Mobile]** della nuova scheda **[!UICONTROL Extended Generic SMPP]** account esterno a seconda del connettore precedente.
+È ora necessario compilare i parametri dalla scheda **[!UICONTROL Mobile]** dell&#39;account esterno **[!UICONTROL Extended Generic SMPP]** appena creato a seconda del connettore precedente.
 
 ### Dal connettore generico {#from-generic-connector}
 
-Quando si sceglie **[!UICONTROL Generic]** connettore, è necessario disporre di un connettore JavaScript personalizzato che si adatterà a ogni situazione.
+Quando si sceglie il connettore **[!UICONTROL Generic]**, è necessario disporre di un connettore JavaScript personalizzato che si adatterà a ogni situazione.
 
-Se sai che il connettore sta già utilizzando il protocollo SMPP, puoi migrare al **[!UICONTROL Extended Generic SMPP]** connettore. In caso contrario, verifica con il provider se supporta il protocollo SMPP e configura un nuovo connettore con l’aiuto di un consulente.
+Se si è certi che il connettore sta già utilizzando il protocollo SMPP, è possibile eseguire la migrazione al connettore **[!UICONTROL Extended Generic SMPP]**. In caso contrario, verifica con il provider se supporta il protocollo SMPP e configura un nuovo connettore con l’aiuto di un consulente.
 
-Dal tuo **[!UICONTROL Generic]** connettore, è possibile trasporre nel nuovo **[!UICONTROL Extended SMPP]** account:
+Dal connettore **[!UICONTROL Generic]**, puoi trasporre nel tuo account **[!UICONTROL Extended SMPP]** appena creato:
 
 ![](assets/smpp_generic.png)
 
-In **[!UICONTROL Connection Settings]** scheda:
+Nella scheda **[!UICONTROL Connection Settings]**:
 
 * **[!UICONTROL Account]**
 * **[!UICONTROL Password]**
@@ -68,11 +68,11 @@ In **[!UICONTROL Connection Settings]** scheda:
 
 ### Dal connettore SMPP generico {#from-generic-smpp-connector}
 
-Dal tuo **[!UICONTROL Generic SMPP]** connettore, è possibile trasporre nel nuovo **[!UICONTROL Extended SMPP]** account:
+Dal connettore **[!UICONTROL Generic SMPP]**, puoi trasporre nel tuo account **[!UICONTROL Extended SMPP]** appena creato:
 
 ![](assets/smpp_generic_2.png)
 
-In **[!UICONTROL Connection Settings]** scheda:
+Nella scheda **[!UICONTROL Connection Settings]**:
 
 * **[!UICONTROL Account]**
 * **[!UICONTROL Password]**
@@ -80,7 +80,7 @@ In **[!UICONTROL Connection Settings]** scheda:
 * **[!UICONTROL Port]**
 * **[!UICONTROL System Type]**
 
-In **[!UICONTROL SMPP Channel Settings]** scheda:
+Nella scheda **[!UICONTROL SMPP Channel Settings]**:
 
 * **[!UICONTROL Source number]**
 * **[!UICONTROL Source NPI]**
@@ -88,22 +88,22 @@ In **[!UICONTROL SMPP Channel Settings]** scheda:
 * **[!UICONTROL Source TON]**
 * **[!UICONTROL Destination TON]**
 
-In **[!UICONTROL Mapping of Encoding]** scheda:
+Nella scheda **[!UICONTROL Mapping of Encoding]**:
 
 * **[!UICONTROL Outbound SMS coding]**
 
-In **[!UICONTROL SMSC specificities]** scheda:
+Nella scheda **[!UICONTROL SMSC specificities]**:
 
 * **[!UICONTROL Coding when sending]** corrisponde a **[!UICONTROL ID Format in MT acknowledgement]**
 * **[!UICONTROL Coding when receiving]** corrisponde a **[!UICONTROL ID Format in the SR]**
 
 ### Dal connettore Sybase365 {#from-sybase}
 
-Dal tuo **[!UICONTROL Sybase365]** connettore, è possibile trasporre nel nuovo **[!UICONTROL Extended SMPP]** account:
+Dal connettore **[!UICONTROL Sybase365]**, puoi trasporre nel tuo account **[!UICONTROL Extended SMPP]** appena creato:
 
 ![](assets/smpp_3.png)
 
-In **[!UICONTROL Connection Settings]** scheda:
+Nella scheda **[!UICONTROL Connection Settings]**:
 
 * **[!UICONTROL Account]**
 * **[!UICONTROL Password]**
@@ -113,11 +113,11 @@ In **[!UICONTROL Connection Settings]** scheda:
 
 ### Da connettore CLX {#from-clx}
 
-Dal tuo **[!UICONTROL CLX]** connettore, è possibile trasporre nel nuovo **[!UICONTROL Extended SMPP]** account:
+Dal connettore **[!UICONTROL CLX]**, puoi trasporre nel tuo account **[!UICONTROL Extended SMPP]** appena creato:
 
 ![](assets/smpp_4.png)
 
-In **[!UICONTROL Connection Settings]** scheda:
+Nella scheda **[!UICONTROL Connection Settings]**:
 
 * **[!UICONTROL Account]**
 * **[!UICONTROL Password]**
@@ -125,22 +125,22 @@ In **[!UICONTROL Connection Settings]** scheda:
 * **[!UICONTROL Port]**
 * **[!UICONTROL System Type]**
 
-In **[!UICONTROL SMPP Channel Settings]** scheda:
+Nella scheda **[!UICONTROL SMPP Channel Settings]**:
 
 * **[!UICONTROL Source number]**
 
-In **[!UICONTROL SMSC specificities]** scheda:
+Nella scheda **[!UICONTROL SMSC specificities]**:
 
 * **[!UICONTROL Coding when sending]** corrisponde a **[!UICONTROL ID Format in MT acknowledgement]**
 * **[!UICONTROL Coding when receiving]** corrisponde a **[!UICONTROL ID Format in the SR]**
 
 ### Dal connettore Tele2 {#from-tele2}
 
-Dal tuo **[!UICONTROL Tele2]** connettore, è possibile trasporre nel nuovo **[!UICONTROL Extended SMPP]** account:
+Dal connettore **[!UICONTROL Tele2]**, puoi trasporre nel tuo account **[!UICONTROL Extended SMPP]** appena creato:
 
 ![](assets/smpp_6.png)
 
-In **[!UICONTROL Connection Settings]** scheda:
+Nella scheda **[!UICONTROL Connection Settings]**:
 
 * **[!UICONTROL Account]**
 * **[!UICONTROL Password]**
@@ -148,24 +148,24 @@ In **[!UICONTROL Connection Settings]** scheda:
 * **[!UICONTROL Port]**
 * **[!UICONTROL System Type]**
 
-In **[!UICONTROL SMPP Channel Settings]** scheda:
+Nella scheda **[!UICONTROL SMPP Channel Settings]**:
 
 * **[!UICONTROL Source number]**
 * **[!UICONTROL Source NPI]**
 * **[!UICONTROL Destination NPI]**
 * **[!UICONTROL Source TON]**
 
-In **[!UICONTROL Mapping of Encoding]** scheda:
+Nella scheda **[!UICONTROL Mapping of Encoding]**:
 
 * **[!UICONTROL Outbound SMS coding]**
 
 ### Dal connettore O2 {#from-O2}
 
-Dal tuo **[!UICONTROL O2]** connettore, è possibile trasporre nel nuovo **[!UICONTROL Extended SMPP]** account:
+Dal connettore **[!UICONTROL O2]**, puoi trasporre nel tuo account **[!UICONTROL Extended SMPP]** appena creato:
 
 ![](assets/smpp_5.png)
 
-In **[!UICONTROL Connection Settings]** scheda:
+Nella scheda **[!UICONTROL Connection Settings]**:
 
 * **[!UICONTROL Account]**
 * **[!UICONTROL Password]**
@@ -173,7 +173,7 @@ In **[!UICONTROL Connection Settings]** scheda:
 * **[!UICONTROL Port]**
 * **[!UICONTROL System Type]**
 
-In **[!UICONTROL SMPP Channel Settings]** scheda:
+Nella scheda **[!UICONTROL SMPP Channel Settings]**:
 
 * **[!UICONTROL Source number]**
 * **[!UICONTROL Source NPI]**

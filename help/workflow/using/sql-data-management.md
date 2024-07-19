@@ -15,13 +15,13 @@ ht-degree: 4%
 
 
 
-Il **Gestione dati SQL** Activity consente di scrivere script SQL personalizzati per creare e popolare tabelle di lavoro.
+L&#39;attività **Gestione dati SQL** consente di scrivere script SQL personalizzati per creare e popolare tabelle di lavoro.
 
 ## Prerequisiti {#prerequisites}
 
 Prima di configurare l’attività, assicurati di soddisfare i seguenti prerequisiti:
 
-* L’attività è disponibile solo per le origini dati remote. Il **[!UICONTROL FDA]** Il pacchetto (Federated Data Access) deve pertanto essere installato nell’istanza. [Ulteriori informazioni](../../installation/using/about-fda.md).
+* L’attività è disponibile solo per le origini dati remote. Il pacchetto **[!UICONTROL FDA]** (Federated Data Access) deve pertanto essere installato nell&#39;istanza. [Ulteriori informazioni](../../installation/using/about-fda.md).
 
   Per ulteriori informazioni, a seconda della versione di Campaign in uso, consulta le sezioni seguenti:
 
@@ -30,12 +30,12 @@ Prima di configurare l’attività, assicurati di soddisfare i seguenti prerequi
   ![](assets/do-not-localize/v8.png)[Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=it)
 
 * Lo schema in uscita deve esistere nel database ed essere collegato a un database FDA.
-* L’operatore che esegue il flusso di lavoro deve disporre del **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** denominato right. [Ulteriori informazioni](../../platform/using/access-management-named-rights.md).
+* L&#39;operatore che esegue il flusso di lavoro deve disporre dell&#39;autorizzazione denominata **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]**. [Ulteriori informazioni](../../platform/using/access-management-named-rights.md).
 
 ## Configurazione dell&#39;attività di gestione dati SQL {#configuring-the-sql-data-management-activity}
 
-1. Specificare l’attività **[!UICONTROL Label]**.
-1. Seleziona la **[!UICONTROL External account]** da utilizzare, quindi selezionare **[!UICONTROL Outbound schema]** collegato a questo account esterno.
+1. Specificare l&#39;attività **[!UICONTROL Label]**.
+1. Seleziona **[!UICONTROL External account]** da utilizzare, quindi seleziona **[!UICONTROL Outbound schema]** collegato a questo account esterno.
 
    >[!CAUTION]
    >
@@ -47,7 +47,7 @@ Prima di configurare l’attività, assicurati di soddisfare i seguenti prerequi
    >
    >È responsabilità dell&#39;autore dello script SQL verificare che lo script SQL sia funzionale e che i relativi riferimenti (nomi dei campi, ecc.) sono conformi allo schema In uscita.
 
-   Per caricare un codice SQL esistente, selezionare **[!UICONTROL The SQL script is contained in an entity stored in the database]** opzione. Gli script SQL devono essere creati e memorizzati nel **[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]** menu.
+   Per caricare un codice SQL esistente, selezionare l&#39;opzione **[!UICONTROL The SQL script is contained in an entity stored in the database]**. Gli script SQL devono essere creati e memorizzati nel menu **[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]**.
 
    In caso contrario, digitare o copiare e incollare lo script SQL nell&#39;area dedicata.
 
@@ -56,14 +56,14 @@ Prima di configurare l’attività, assicurati di soddisfare i seguenti prerequi
    L’attività ti consente di utilizzare le seguenti variabili nello script:
 
    * **activity.tableName**: nome SQL della tabella di lavoro in uscita.
-   * **task.incomingTransitionByName(&quot;name&quot;).tableName**: nome SQL della tabella di lavoro trasportata dalla transizione in ingresso da utilizzare (la transizione è identificata dal relativo nome).
+   * **task.incomingTransitionByName(‘name’).tableName**: Nome SQL della tabella di lavoro della transizione in ingresso da utilizzare (la transizione è identificata dal relativo nome).
 
      >[!NOTE]
      >
-     >Il valore (&#39;name&#39;) corrisponde al **[!UICONTROL Name]** dalle proprietà della transizione.
+     >Il valore (&#39;name&#39;) corrisponde al campo **[!UICONTROL Name]** delle proprietà di transizione.
 
-1. Se lo script SQL contiene già comandi per creare una tabella di lavoro in uscita, deselezionare **[!UICONTROL Automatically create work table]** opzione. In caso contrario, una tabella di lavoro viene creata automaticamente una volta eseguito il flusso di lavoro.
-1. Clic **[!UICONTROL Ok]** per confermare la configurazione dell’attività.
+1. Se lo script SQL contiene già comandi per la creazione di una tabella di lavoro in uscita, deselezionare l&#39;opzione **[!UICONTROL Automatically create work table]**. In caso contrario, una tabella di lavoro viene creata automaticamente una volta eseguito il flusso di lavoro.
+1. Fare clic su **[!UICONTROL Ok]** per confermare la configurazione dell&#39;attività.
 
 L’attività adesso è configurata. È pronto per essere eseguito nel flusso di lavoro.
 

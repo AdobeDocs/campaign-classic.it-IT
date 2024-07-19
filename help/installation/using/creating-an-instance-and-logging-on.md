@@ -32,17 +32,17 @@ Quando si avvia la console Adobe Campaign, viene accesso una pagina login.
 
 Per creare una nuova istanza, seguire i passaggi riportati di seguito:
 
-1. Fare clic sul collegare nell&#39;angolo in alto a destra dei campi delle credenziali per accesso la finestra di configurazione della connessione. Questo collegamento può essere **[!UICONTROL New...]** o un nome di istanza esistente.
+1. Fare clic sul collegare nell&#39;angolo in alto a destra dei campi delle credenziali per accesso la finestra di configurazione della connessione. Il collegamento può essere **[!UICONTROL New...]** o un nome di istanza esistente.
 
    ![](assets/s_ncs_install_define_connection_01.png)
 
-1. Clic **[!UICONTROL Add > Connection]** e immetti l’etichetta e l’URL del server applicazioni Adobe Campaign.
+1. Fare clic su **[!UICONTROL Add > Connection]** e immettere l&#39;etichetta e l&#39;URL del server applicazioni Adobe Campaign.
 
    ![](assets/s_ncs_install_define_connection_02.png)
 
 1. Specifica una connessione al server applicazioni Adobe Campaign tramite un URL. Utilizza un DNS o un alias del computer oppure il tuo indirizzo IP.
 
-   Ad esempio, puoi utilizzare `https://<machine>.<domain>.com` digita URL.
+   È possibile, ad esempio, utilizzare l&#39;URL di tipo `https://<machine>.<domain>.com`.
 
    >[!CAUTION]
    >
@@ -78,7 +78,7 @@ Per creare una nuova istanza, seguire i passaggi riportati di seguito:
    >
    >Impossibile modificare la lingua dell&#39;istanza dopo questo passaggio. Le istanze di Adobe Campaign non sono multilingue: non è possibile passare da una lingua all’altra.
 
-1. Clic **[!UICONTROL Ok]** per confermare la dichiarazione dell’istanza. Disconnettersi e rieseguire l&#39;accesso per dichiarare il database.
+1. Fare clic su **[!UICONTROL Ok]** per confermare la dichiarazione dell&#39;istanza. Disconnettersi e rieseguire l&#39;accesso per dichiarare il database.
 
    >[!NOTE]
    >

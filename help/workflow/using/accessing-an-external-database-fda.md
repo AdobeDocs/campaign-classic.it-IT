@@ -24,4 +24,4 @@ Più attività consentono di interagire con i dati di un database esterno:
 * Arricchimento
 * Caricamento dati
 
-L’utilizzo dell’opzione FDA dipende dalla licenza Adobe Campaign. La configurazione di questa opzione, nonché le best practice e le limitazioni correlate all’utilizzo, sono descritte in questo [sezione](../../installation/using/about-fda.md).
+L’utilizzo dell’opzione FDA dipende dalla licenza Adobe Campaign. La configurazione di questa opzione, le best practice e le limitazioni correlate all&#39;utilizzo sono descritte in questa [sezione](../../installation/using/about-fda.md).

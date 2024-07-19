@@ -25,7 +25,7 @@ Gli addetti al marketing e gli operatori utilizzano i moduli di input per creare
 * È possibile modificare i moduli di input forniti per impostazione predefinita. I moduli di input di fabbrica si basano sugli schemi di dati di fabbrica.
 * Puoi creare moduli di input personalizzati, in base agli schemi di dati definiti.
 
-Forms sono entità di `xtk:form` tipo. È possibile visualizzare la struttura del modulo di input in `xtk:form` schema. Per visualizzare questo schema, scegli **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** dal menu. Ulteriori informazioni su [struttura del modulo](form-structure.md).
+Forms sono entità di tipo `xtk:form`. È possibile visualizzare la struttura del modulo di input nello schema `xtk:form`. Per visualizzare questo schema, scegli **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** dal menu. Ulteriori informazioni sulla [struttura modulo](form-structure.md).
 
 Per accedere ai moduli di input, scegliere **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** dal menu:
 
@@ -37,7 +37,7 @@ Per progettare moduli, modificare il contenuto XML nell&#39;editor XML:
 
 [Ulteriori informazioni](form-structure.md#formatting).
 
-Per visualizzare l&#39;anteprima di un modulo, fare clic su **[!UICONTROL Preview]** scheda:
+Per visualizzare l&#39;anteprima di un modulo, fare clic sulla scheda **[!UICONTROL Preview]**:
 
 ![](assets/d_ncs_integration_form_preview.png)
 
@@ -53,7 +53,7 @@ Per visualizzare l&#39;anteprima di un modulo, fare clic su **[!UICONTROL Previe
 
 * Gestione dei contenuti
 
-  Utilizza questo tipo di modulo per la gestione dei contenuti. Vedi questo [caso d’uso](../../delivery/using/use-case-creating-content-management.md).
+  Utilizza questo tipo di modulo per la gestione dei contenuti. Vedi questo [caso d&#39;uso](../../delivery/using/use-case-creating-content-management.md).
 
   ![](../../delivery/using/assets/d_ncs_content_form13.png)
 
@@ -98,17 +98,17 @@ Utilizzare i contenitori per organizzare il contenuto nei moduli:
 * Puoi raggruppare i campi in sezioni.
 * È possibile aggiungere pagine a moduli multipagina.
 
-Per inserire un contenitore, utilizza `<container>` elemento. [Ulteriori informazioni](form-structure.md#containers).
+Per inserire un contenitore, utilizzare l&#39;elemento `<container>`. [Ulteriori informazioni](form-structure.md#containers).
 
 #### Raggruppa campi
 
 Utilizza i contenitori per raggruppare i campi di input in sezioni organizzate.
 
-Per inserire una sezione in un modulo, utilizzare questo elemento: `<container type="frame">`. Facoltativamente, per aggiungere un titolo di sezione, utilizza `label` attributo.
+Per inserire una sezione in un modulo, utilizzare questo elemento: `<container type="frame">`. Per aggiungere un titolo di sezione, utilizzare l&#39;attributo `label`.
 
 Sintassi: `<container type="frame" label="`*section_title*`"> […] </container>`
 
-In questo esempio, un contenitore definisce **Creazione** sezione, che comprende **[!UICONTROL Created by]** e **[!UICONTROL Name]** campi di input:
+In questo esempio, un contenitore definisce la sezione **Creazione**, che comprende i campi di input **[!UICONTROL Created by]** e **[!UICONTROL Name]**:
 
 ```xml
 <form _cs="Coupons (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Coupons"
@@ -128,7 +128,7 @@ In questo esempio, un contenitore definisce **Creazione** sezione, che comprende
 
 Per i moduli multipagina, utilizza un contenitore per creare una pagina modulo.
 
-Questo esempio mostra i contenitori per **Generale** e **Dettagli** pagine di un modulo:
+In questo esempio vengono visualizzati i contenitori per le pagine **Generale** e **Dettagli** di un modulo:
 
 ```xml
 <container img="ncm:book.png" label="General">
@@ -151,11 +151,11 @@ Utilizzare i contenitori per nidificare i moduli all&#39;interno di altri moduli
 
 Per trovare le immagini, scegliere **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Images]** dal menu.
 
-Per associare un&#39;immagine a un elemento del modulo, ad esempio un&#39;icona, è possibile aggiungere un riferimento a un&#39;immagine. Utilizza il `img` , ad esempio, nel `<container>` elemento.
+Per associare un&#39;immagine a un elemento del modulo, ad esempio un&#39;icona, è possibile aggiungere un riferimento a un&#39;immagine. Utilizzare l&#39;attributo `img`, ad esempio, nell&#39;elemento `<container>`.
 
 Sintassi: `img="`*`namespace`*`:`*`filename`*`.`*`extension`*`"`
 
-Questo esempio mostra i riferimenti al `book.png` e `detail.png` immagini da `ncm` namespace:
+Questo esempio mostra i riferimenti alle immagini `book.png` e `detail.png` dallo spazio dei nomi `ncm`:
 
 ```xml
 <container img="ncm:book.png" label="General">
@@ -175,8 +175,8 @@ Queste immagini sono utilizzate per le icone su cui gli utenti fanno clic per sp
 
 Per creare un modulo, eseguire la procedura seguente:
 
-1. Dal menu, scegli **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**.
-1. Fai clic su **[!UICONTROL New]** in alto a destra nell’elenco.
+1. Scegliere **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]** dal menu.
+1. Fare clic sul pulsante **[!UICONTROL New]** in alto a destra nell&#39;elenco.
 
    ![](assets/input-form-create-1.png)
 
@@ -184,7 +184,7 @@ Per creare un modulo, eseguire la procedura seguente:
 
    * Specifica il nome del modulo e lo spazio dei nomi.
 
-     Il nome del modulo e lo spazio dei nomi possono corrispondere allo schema di dati correlato.  Questo esempio mostra un modulo per `cus:order` schema dati:
+     Il nome del modulo e lo spazio dei nomi possono corrispondere allo schema di dati correlato.  Questo esempio mostra un modulo per lo schema dati `cus:order`:
 
      ```xml
      <form entitySchema="xtk:form" img="xtk:form.png" label="Order" name="order" namespace="cus" type="iconbox" xtkschema="xtk:form">
@@ -192,7 +192,7 @@ Per creare un modulo, eseguire la procedura seguente:
      </form>
      ```
 
-     In alternativa, è possibile specificare esplicitamente lo schema dati nel `entity-schema` attributo.
+     In alternativa, è possibile specificare esplicitamente lo schema dati nell&#39;attributo `entity-schema`.
 
      ```xml
      <form entity-schema="cus:stockLine" entitySchema="xtk:form" img="xtk:form.png" label="Stock order" name="stockOrder" namespace="cus" xtkschema="xtk:form">
@@ -205,15 +205,15 @@ Per creare un modulo, eseguire la procedura seguente:
 
      ![](assets/input-form-create-2.png)
 
-     Se si progetta un modulo multipagina, è possibile omettere il tipo di modulo nel `<form>` e specificare il tipo in un contenitore.
+     Se si progetta un modulo multipagina, è possibile omettere il tipo di modulo nell&#39;elemento `<form>` e specificare il tipo in un contenitore.
 
 1. Fai clic su **[!UICONTROL Save]**.
 
 1. Inserire gli elementi del modulo.
 
-   Ad esempio, per inserire un campo di input, utilizza `<input>` elemento. Imposta il `xpath` attributo al riferimento di campo come espressione XPath. [Ulteriori informazioni](schema-structure.md#referencing-with-xpath).
+   Ad esempio, per inserire un campo di input, utilizzare l&#39;elemento `<input>`. Impostare l&#39;attributo `xpath` sul riferimento di campo come espressione XPath. [Ulteriori informazioni](schema-structure.md#referencing-with-xpath).
 
-   Questo esempio mostra i campi di input basati su `nms:recipient` schema.
+   Questo esempio mostra i campi di input basati sullo schema `nms:recipient`.
 
    ```xml
    <input xpath="@firstName"/>
@@ -222,11 +222,11 @@ Per creare un modulo, eseguire la procedura seguente:
 
 1. Se il modulo è basato su un tipo di schema specifico, è possibile cercare i campi per questo schema:
 
-   1. Clic **[!UICONTROL Insert]** > **[!UICONTROL Document fields]**.
+   1. Fare clic su **[!UICONTROL Insert]** > **[!UICONTROL Document fields]**.
 
       ![](assets/input-form-create-4.png)
 
-   1. Seleziona il campo e fai clic su **[!UICONTROL OK]**.
+   1. Selezionare il campo e fare clic su **[!UICONTROL OK]**.
 
       ![](assets/input-form-create-5.png)
 
@@ -244,15 +244,15 @@ Per creare un modulo, eseguire la procedura seguente:
    | Casella di controllo | `type="checkbox"` |
    | Modifica struttura | `type="tree"` |
 
-   Ulteriori informazioni su [controlli elenco memoria](form-structure.md#memory-list-controls).
+   Ulteriori informazioni sui [controlli elenco memoria](form-structure.md#memory-list-controls).
 
 1. Facoltativamente, definisci l’accesso ai campi:
 
    | Elemento “element” | Attributo | Descrizione |
    | --- | --- | --- |
    | `<input>` | `read-only="true"` | Fornisce accesso in sola lettura a un campo |
-   | `<container>` | `type="visibleGroup" visibleIf="`*edit-expr*`"` | Visualizza un gruppo di campi in modo condizionale |
-   | `<container>` | `type="enabledGroup" enabledIf="`*edit-expr*`"` | Abilita un gruppo di campi in modo condizionale |
+   | `<container>` | `type="visibleGroup" visibleIf="`*modifica-espr*`"` | Visualizza un gruppo di campi in modo condizionale |
+   | `<container>` | `type="enabledGroup" enabledIf="`*modifica-espr*`"` | Abilita un gruppo di campi in modo condizionale |
 
    Esempio:
 
@@ -284,15 +284,15 @@ Per creare un modulo, eseguire la procedura seguente:
 
 Puoi creare moduli multipagina. È inoltre possibile nidificare i moduli all&#39;interno di altri moduli.
 
-### Creare un `iconbox` modulo
+### Crea un modulo `iconbox`
 
-Utilizza il `iconbox` tipo di modulo per visualizzare le icone a sinistra del modulo, che portano gli utenti a pagine diverse del modulo.
+Utilizzare il tipo di modulo `iconbox` per visualizzare le icone a sinistra del modulo, che portano gli utenti a pagine diverse del modulo.
 
 ![](assets/iconbox_form_preview.png)
 
-Per modificare il tipo di un modulo esistente in `iconbox`, effettua le seguenti operazioni:
+Per modificare il tipo di un modulo esistente in `iconbox`, eseguire la procedura seguente:
 
-1. Modificare il `type` attributo del `<form>` elemento a `iconbox`:
+1. Modificare l&#39;attributo `type` dell&#39;elemento `<form>` in `iconbox`:
 
    ```xml
    <form […] type="iconbox">
@@ -300,8 +300,8 @@ Per modificare il tipo di un modulo esistente in `iconbox`, effettua le seguenti
 
 1. Impostare un contenitore per ogni pagina del modulo:
 
-   1. Aggiungi un `<container>` elemento come elemento figlio di `<form>` elemento.
-   1. Per definire un’etichetta e un’immagine per l’icona, utilizza `label` e `img` attributi.
+   1. Aggiungere un elemento `<container>` come elemento figlio dell&#39;elemento `<form>`.
+   1. Per definire un&#39;etichetta e un&#39;immagine per l&#39;icona, utilizzare gli attributi `label` e `img`.
 
       ```xml
       <form entitySchema="xtk:form" name="Service provider" namespace="nms" type="iconbox" xtkschema="xtk:form">
@@ -320,17 +320,17 @@ Per modificare il tipo di un modulo esistente in `iconbox`, effettua le seguenti
       </form>
       ```
 
-   In alternativa, rimuovi il `type="frame"` attributo esistente `<container>` elementi.
+   In alternativa, rimuovere l&#39;attributo `type="frame"` dagli elementi `<container>` esistenti.
 
 ### Creare un modulo per blocchi appunti
 
-Utilizza il `notebook` tipo di modulo per visualizzare le schede nella parte superiore del modulo, che portano gli utenti a pagine diverse.
+Utilizza il tipo di modulo `notebook` per visualizzare le schede nella parte superiore del modulo, che portano gli utenti a pagine diverse.
 
 ![](assets/notebook_form_preview.png)
 
-Per modificare il tipo di un modulo esistente in `notebook`, effettua le seguenti operazioni:
+Per modificare il tipo di un modulo esistente in `notebook`, eseguire la procedura seguente:
 
-1. Modificare il `type` attributo del `<form>` elemento a `notebook`:
+1. Modificare l&#39;attributo `type` dell&#39;elemento `<form>` in `notebook`:
 
    ```xml
    <form […] type="notebook">
@@ -338,8 +338,8 @@ Per modificare il tipo di un modulo esistente in `notebook`, effettua le seguent
 
 1. Aggiungi un contenitore per ogni pagina modulo:
 
-   1. Aggiungi un `<container>` elemento come elemento figlio di `<form>` elemento.
-   1. Per definire l’etichetta e l’immagine dell’icona, utilizza la `label` e `img` attributi.
+   1. Aggiungere un elemento `<container>` come elemento figlio dell&#39;elemento `<form>`.
+   1. Per definire l&#39;etichetta e l&#39;immagine per l&#39;icona, utilizzare gli attributi `label` e `img`.
 
    ```xml
      <form entitySchema="xtk:form" name="Service provider" namespace="nms" type="notebook" xtkschema="xtk:form">
@@ -358,7 +358,7 @@ Per modificare il tipo di un modulo esistente in `notebook`, effettua le seguent
      </form>
    ```
 
-   In alternativa, rimuovi il `type="frame"` attributo esistente `<container>` elementi.
+   In alternativa, rimuovere l&#39;attributo `type="frame"` dagli elementi `<container>` esistenti.
 
 ### Nidificare i moduli
 
@@ -366,17 +366,17 @@ Per modificare il tipo di un modulo esistente in `notebook`, effettua le seguent
 
 Il livello di nidificazione controlla la navigazione. Gli utenti possono eseguire il drill-down alle sottomaschere.
 
-Per nidificare un modulo all&#39;interno di un altro modulo, inserire un `<container>` e impostare `type` al tipo di modulo. Per il modulo di primo livello, è possibile impostare il tipo di modulo in un contenitore esterno o nel `<form>` elemento.
+Per nidificare un modulo all&#39;interno di un altro modulo, inserire un elemento `<container>` e impostare l&#39;attributo `type` sul tipo di modulo. Per il modulo di primo livello, è possibile impostare il tipo di modulo in un contenitore esterno o nell&#39;elemento `<form>`.
 
 ### Esempio
 
 Questo esempio mostra un modulo complesso:
 
-* Il modulo di primo livello è un modulo iconbox. Questo modulo comprende due contenitori etichettati **Generale** e **Dettagli**.
+* Il modulo di primo livello è un modulo iconbox. Questo modulo comprende due contenitori con etichetta **Generale** e **Dettagli**.
 
-  Di conseguenza, nella maschera esterna viene visualizzato **Generale** e **Dettagli** pagine al livello superiore. Per accedere a queste pagine, gli utenti possono fare clic sulle icone a sinistra del modulo.
+  Di conseguenza, il modulo esterno mostra le pagine **Generale** e **Dettagli** al livello superiore. Per accedere a queste pagine, gli utenti possono fare clic sulle icone a sinistra del modulo.
 
-* La sottomaschera è una maschera del blocco appunti nidificata all&#39;interno del **Generale** contenitore. La sottomaschera comprende due contenitori etichettati **Nome** e **Contatto**.
+* Il sottomodulo è un modulo del blocco appunti nidificato nel contenitore **Generale**. Il sottomodulo comprende due contenitori con etichetta **Nome** e **Contatto**.
 
 ```xml
 <form _cs="Profile (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Profile" name="profile" namespace="nms" xtkschema="xtk:form">
@@ -399,21 +399,21 @@ Questo esempio mostra un modulo complesso:
 </form>
 ```
 
-Di conseguenza, il **Generale** nella pagina del modulo esterno viene visualizzata la **Nome** e **Contatto** schede.
+Di conseguenza, nella pagina **Generale** del modulo esterno sono visualizzate le schede **Nome** e **Contatto**.
 
 ![](assets/nested_forms_preview.png)
 
-Per nidificare un modulo all&#39;interno di un altro modulo, inserire un `<container>` e impostare `type` al tipo di modulo. Per il modulo di primo livello, è possibile impostare il tipo di modulo in un contenitore esterno o nel `<form>` elemento.
+Per nidificare un modulo all&#39;interno di un altro modulo, inserire un elemento `<container>` e impostare l&#39;attributo `type` sul tipo di modulo. Per il modulo di primo livello, è possibile impostare il tipo di modulo in un contenitore esterno o nell&#39;elemento `<form>`.
 
 ### Esempio
 
 Questo esempio mostra un modulo complesso:
 
-* Il modulo di primo livello è un modulo iconbox. Questo modulo comprende due contenitori etichettati **Generale** e **Dettagli**.
+* Il modulo di primo livello è un modulo iconbox. Questo modulo comprende due contenitori con etichetta **Generale** e **Dettagli**.
 
-  Di conseguenza, nella maschera esterna viene visualizzato **Generale** e **Dettagli** pagine al livello superiore. Per accedere a queste pagine, gli utenti possono fare clic sulle icone a sinistra del modulo.
+  Di conseguenza, il modulo esterno mostra le pagine **Generale** e **Dettagli** al livello superiore. Per accedere a queste pagine, gli utenti possono fare clic sulle icone a sinistra del modulo.
 
-* La sottomaschera è una maschera del blocco appunti nidificata all&#39;interno del **Generale** contenitore. La sottomaschera comprende due contenitori etichettati **Nome** e **Contatto**.
+* Il sottomodulo è un modulo del blocco appunti nidificato nel contenitore **Generale**. Il sottomodulo comprende due contenitori con etichetta **Nome** e **Contatto**.
 
 ```xml
 <form _cs="Profile (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Profile" name="profile" namespace="nms" xtkschema="xtk:form">
@@ -436,7 +436,7 @@ Questo esempio mostra un modulo complesso:
 </form>
 ```
 
-Di conseguenza, il **Generale** nella pagina del modulo esterno viene visualizzata la **Nome** e **Contatto** schede.
+Di conseguenza, nella pagina **Generale** del modulo esterno sono visualizzate le schede **Nome** e **Contatto**.
 
 ![](assets/nested_forms_preview.png)
 
@@ -448,7 +448,7 @@ Per modificare un modulo di fabbrica, effettuare le seguenti operazioni:
 
 1. Modificare il modulo di input di fabbrica:
 
-   1. Dal menu, scegli **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]**.
+   1. Scegliere **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]** dal menu.
    1. Selezionare un modulo di input e modificarlo.
 
    È possibile estendere gli schemi di dati di fabbrica, ma non i moduli di input di fabbrica. È consigliabile modificare direttamente i moduli di input di fabbrica senza ricrearli. Durante gli aggiornamenti del software, le modifiche nei moduli di input di fabbrica vengono unite agli aggiornamenti. Se l&#39;unione automatica non riesce, è possibile risolvere i conflitti. [Ulteriori informazioni](../../production/using/upgrading.md#resolving-conflicts).
@@ -461,9 +461,9 @@ Per modificare un modulo di fabbrica, effettuare le seguenti operazioni:
 
 ### Concedere l’accesso in sola lettura ai campi
 
-Per concedere l’accesso in sola lettura a un campo, utilizza `readOnly="true"` attributo. È ad esempio possibile visualizzare la chiave primaria di un record, ma con accesso in sola lettura. [Ulteriori informazioni](form-structure.md#non-editable-fields).
+Per concedere l&#39;accesso in sola lettura a un campo, utilizzare l&#39;attributo `readOnly="true"`. È ad esempio possibile visualizzare la chiave primaria di un record, ma con accesso in sola lettura. [Ulteriori informazioni](form-structure.md#non-editable-fields).
 
-In questo esempio, la chiave primaria (`iRecipientId`) del `nms:recipient` lo schema viene visualizzato in accesso in sola lettura:
+In questo esempio, la chiave primaria (`iRecipientId`) dello schema `nms:recipient` viene visualizzata in accesso in sola lettura:
 
 ```xml
 <value xpath="@iRecipientId" readOnly="true"/>
@@ -473,8 +473,8 @@ In questo esempio, la chiave primaria (`iRecipientId`) del `nms:recipient` lo sc
 
 Puoi controllare le informazioni obbligatorie:
 
-* Utilizza il `required="true"` per i campi obbligatori.
-* Utilizza il `<leave>` per controllare questi campi e visualizzare i messaggi di errore.
+* Utilizzare l&#39;attributo `required="true"` per i campi obbligatori.
+* Utilizza il nodo `<leave>` per controllare questi campi e visualizzare i messaggi di errore.
 
 In questo esempio, l’indirizzo e-mail è obbligatorio e viene visualizzato un messaggio di errore se l’utente non ha fornito queste informazioni:
 
@@ -487,11 +487,11 @@ In questo esempio, l’indirizzo e-mail è obbligatorio e viene visualizzato un 
 </leave>
 ```
 
-Ulteriori informazioni su [campi espressione](form-structure.md#expression-field) e [contesto modulo](form-structure.md#context-of-forms).
+Ulteriori informazioni sui [campi espressione](form-structure.md#expression-field) e sul [contesto modulo](form-structure.md#context-of-forms).
 
 ### Convalida valori
 
-Puoi utilizzare le chiamate SOAP JavaScript per convalidare i dati del modulo dalla console. Utilizza queste chiamate per la convalida complessa, ad esempio, per confrontare un valore con un elenco di valori autorizzati. [Ulteriori informazioni](form-structure.md#soap-methods).
+Puoi utilizzare le chiamate SOAP di JavaScript per convalidare i dati del modulo dalla console. Utilizza queste chiamate per la convalida complessa, ad esempio, per confrontare un valore con un elenco di valori autorizzati. [Ulteriori informazioni](form-structure.md#soap-methods).
 
 1. Crea una funzione di convalida in un file JS.
 
@@ -509,13 +509,13 @@ Puoi utilizzare le chiamate SOAP JavaScript per convalidare i dati del modulo da
    }
    ```
 
-   In questo esempio, la funzione è denominata `checkValue`. Questa funzione viene utilizzata per controllare `recipient` tipo di dati in `nms` spazio dei nomi. Il valore che viene controllato viene registrato. Se il valore non è valido, viene registrato un messaggio di errore. Se il valore è valido, viene restituito il valore 1.
+   In questo esempio, la funzione è denominata `checkValue`. Questa funzione viene utilizzata per controllare il tipo di dati `recipient` nello spazio dei nomi `nms`. Il valore che viene controllato viene registrato. Se il valore non è valido, viene registrato un messaggio di errore. Se il valore è valido, viene restituito il valore 1.
 
    È possibile utilizzare il valore restituito per modificare il modulo.
 
-1. Nel modulo, aggiungi `<soapCall>` elemento al `<leave>` elemento.
+1. Nel modulo, aggiungi l&#39;elemento `<soapCall>` all&#39;elemento `<leave>`.
 
-   In questo esempio, viene utilizzata una chiamata SOAP per convalidare `@valueToCheck` stringa:
+   In questo esempio, viene utilizzata una chiamata SOAP per convalidare la stringa `@valueToCheck`:
 
    ```xml
    <form name="recipient" (…)>
@@ -528,14 +528,14 @@ Puoi utilizzare le chiamate SOAP JavaScript per convalidare i dati del modulo da
    </form>
    ```
 
-   In questo esempio, la proprietà `checkValue` e il `nms:recipient` servizio utilizzato:
+   In questo esempio vengono utilizzati il metodo `checkValue` e il servizio `nms:recipient`:
 
    * Il servizio è lo spazio dei nomi e il tipo di dati.
    * Il metodo è il nome della funzione. Il nome distingue tra maiuscole e minuscole.
 
    La chiamata viene eseguita in modo sincrono.
 
-   Vengono visualizzate tutte le eccezioni. Se si utilizza `<leave>` , gli utenti non potranno salvare il modulo finché le informazioni immesse non saranno convalidate.
+   Vengono visualizzate tutte le eccezioni. Se si utilizza l&#39;elemento `<leave>`, gli utenti non potranno salvare il modulo finché le informazioni immesse non saranno convalidate.
 
 In questo esempio viene illustrato come effettuare chiamate di servizio all&#39;interno dei moduli:
 
@@ -548,4 +548,4 @@ In questo esempio viene illustrato come effettuare chiamate di servizio all&#39;
 </enter>
 ```
 
-In questo esempio, l’input è un ID, che è una chiave primaria. Quando gli utenti compilano il modulo per questo ID, viene effettuata una chiamata SOAP con questo ID come parametro di input. L’output è un valore booleano scritto in questo campo: `/tmp/@count`. Puoi utilizzare questo valore booleano all’interno del modulo. Ulteriori informazioni su [contesto modulo](form-structure.md#context-of-forms).
+In questo esempio, l’input è un ID, che è una chiave primaria. Quando gli utenti compilano il modulo per questo ID, viene effettuata una chiamata SOAP con questo ID come parametro di input. L&#39;output è un valore booleano scritto in questo campo: `/tmp/@count`. Puoi utilizzare questo valore booleano all’interno del modulo. Ulteriori informazioni sul [contesto modulo](form-structure.md#context-of-forms).

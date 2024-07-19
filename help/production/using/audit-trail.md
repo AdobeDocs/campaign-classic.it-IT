@@ -15,9 +15,9 @@ ht-degree: 2%
 
 
 
-In Adobe Campaign, il **[!UICONTROL Audit trail]** consente di accedere alla cronologia completa delle modifiche apportate all’interno dell’istanza.
+In Adobe Campaign, **[!UICONTROL Audit trail]** consente di accedere alla cronologia completa delle modifiche apportate all&#39;interno dell&#39;istanza.
 
-**[!UICONTROL Audit trail]** acquisisce in tempo reale un elenco completo delle azioni e degli eventi che si verificano all’interno dell’istanza di Adobe Campaign. Include una modalità autonoma di accedere alla cronologia dei dati per poter rispondere a domande quali: cosa è successo ai flussi di lavoro e chi li ha aggiornati per ultimo o cosa hanno fatto gli utenti nell’istanza.
+**[!UICONTROL Audit trail]** acquisisce in tempo reale un elenco completo delle azioni e degli eventi che si verificano nell&#39;istanza Adobe Campaign. Include una modalità autonoma di accedere alla cronologia dei dati per poter rispondere a domande quali: cosa è successo ai flussi di lavoro e chi li ha aggiornati per ultimo o cosa hanno fatto gli utenti nell’istanza.
 
 >[!NOTE]
 >
@@ -43,34 +43,34 @@ Audit Trail è costituito da tre componenti:
 
   Per ulteriori informazioni sui flussi di lavoro, consulta questa [pagina](../../workflow/using/about-workflows.md).
 
-  Per ulteriori informazioni su come monitorare i flussi di lavoro, consulta [sezione dedicata](../../workflow/using/monitoring-workflow-execution.md).
+  Per ulteriori informazioni su come monitorare i flussi di lavoro, consulta la [sezione dedicata](../../workflow/using/monitoring-workflow-execution.md).
 
-* **Opzione audit trail**: controlla le attività e le ultime modifiche apportate alle opzioni.
+* **Option audit trail**: controlla le attività e le ultime modifiche apportate alle opzioni.
 
   Per ulteriori informazioni sulle opzioni, consulta questa [pagina](../../installation/using/configuring-campaign-options.md).
 
 ## Accesso a Audit trail {#accessing-audit-trail}
 
-Per accedere al di **[!UICONTROL Audit trail]** :
+Per accedere a **[!UICONTROL Audit trail]** dell&#39;istanza:
 
-1. Accedere a **[!UICONTROL Explorer]** della tua istanza.
-1. Sotto **[!UICONTROL Administration]** menu, seleziona **[!UICONTROL Audit]** .
+1. Accedi al menu **[!UICONTROL Explorer]** della tua istanza.
+1. Nel menu **[!UICONTROL Administration]**, selezionare **[!UICONTROL Audit]**.
 
    ![](assets/audit_trail_1.png)
 
-1. Il **[!UICONTROL Audit trail]** viene visualizzata la finestra con l&#39;elenco delle entità. Adobe Campaign controllerà le azioni di creazione, modifica ed eliminazione per flussi di lavoro, opzioni e schemi.
+1. Viene visualizzata la finestra **[!UICONTROL Audit trail]** con l&#39;elenco delle entità. Adobe Campaign controllerà le azioni di creazione, modifica ed eliminazione per flussi di lavoro, opzioni e schemi.
 
    Selezionate una delle entità per ulteriori informazioni sulle ultime modifiche.
 
    ![](assets/audit_trail_2.png)
 
-1. Il **[!UICONTROL Audit entity]** La finestra fornisce informazioni più dettagliate sull’entità scelta, ad esempio:
+1. La finestra **[!UICONTROL Audit entity]** fornisce informazioni più dettagliate sull&#39;entità scelta, ad esempio:
 
-   * **[!UICONTROL Type]** : flusso di lavoro, opzioni o schemi.
-   * **[!UICONTROL Entity]** : nome interno delle attività.
-   * **[!UICONTROL Modified by]** : nome utente dell’ultima persona che ha modificato questa entità.
-   * **[!UICONTROL Action]** : ultima azione eseguita sull’entità, Creata, Modificata o Eliminata.
-   * **[!UICONTROL Modification date]** : data dell’ultima azione eseguita su questa entità.
+   * **[!UICONTROL Type]**: flusso di lavoro, opzioni o schemi.
+   * **[!UICONTROL Entity]**: nome interno delle attività.
+   * **[!UICONTROL Modified by]**: nome utente dell&#39;ultima persona che ha modificato l&#39;entità.
+   * **[!UICONTROL Action]** : ultima azione eseguita sull&#39;entità, Creata, Modificata o Eliminata.
+   * **[!UICONTROL Modification date]** : data dell&#39;ultima azione eseguita su questa entità.
 
    Il blocco di codice fornisce ulteriori informazioni su ciò che è stato modificato esattamente nell’entità.
 
@@ -78,7 +78,7 @@ Per accedere al di **[!UICONTROL Audit trail]** :
 
 >[!NOTE]
 >
->Per impostazione predefinita, il periodo di conservazione è impostato su 180 giorni per **[!UICONTROL Audit logs]** . Per ulteriori informazioni su come modificare il periodo di conservazione, consulta [pagina](../../production/using/database-cleanup-workflow.md#deployment-wizard).
+>Per impostazione predefinita, il periodo di conservazione è impostato su 180 giorni per **[!UICONTROL Audit logs]**. Per ulteriori informazioni su come modificare il periodo di conservazione, consulta questa [pagina](../../production/using/database-cleanup-workflow.md#deployment-wizard).
 
 ## Attiva/disattiva Audit trail {#enable-disable-audit-trail}
 
@@ -86,8 +86,8 @@ L’audit trail può essere facilmente attivato o disattivato per un’attività
 
 Per eseguire questa operazione:
 
-1. Accedere a **[!UICONTROL Explorer]** della tua istanza.
-1. Sotto **[!UICONTROL Administration]** menu, seleziona **[!UICONTROL Platform]** allora **[!UICONTROL Options]** .
+1. Accedi al menu **[!UICONTROL Explorer]** della tua istanza.
+1. Nel menu **[!UICONTROL Administration]**, selezionare **[!UICONTROL Platform]** e quindi **[!UICONTROL Options]**.
 
    ![](assets/audit_trail_4.png)
 
@@ -100,8 +100,8 @@ Per eseguire questa operazione:
 
    ![](assets/audit_trail_5.png)
 
-1. Modificare il **[!UICONTROL Value]** a 1 se si desidera abilitare l’entità o a 0 se si desidera disabilitarla.
+1. Modificare **[!UICONTROL Value]** in 1 se si desidera abilitare l&#39;entità o in 0 se si desidera disabilitarla.
 
    ![](assets/audit_trail_6.png)
 
-1. Clic **[!UICONTROL Save]** .
+1. Fare clic su **[!UICONTROL Save]**.

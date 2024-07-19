@@ -15,7 +15,7 @@ ht-degree: 41%
 
 # Selezionare una mappatura di destinazione{#selecting-a-target-mapping}
 
-Per impostazione predefinita, i modelli di consegna sono target **[!UICONTROL Recipients]**. La loro mappatura target utilizza quindi i campi del **nms:destinatario** tabella. Adobe Campaign offre altre mappature di destinazione per le consegne, da utilizzare in base alle tue esigenze.
+Per impostazione predefinita, i modelli di consegna sono destinati a **[!UICONTROL Recipients]**. La mappatura di destinazione utilizza pertanto i campi della tabella **nms:recipient**. Adobe Campaign offre altre mappature di destinazione per le consegne, da utilizzare in base alle tue esigenze.
 
 ![](assets/delivery_select_mapping.png)
 
@@ -27,7 +27,7 @@ Queste mappature sono le seguenti:
 | Visitatori | Distribuisci ai visitatori i cui profili sono stati raccolti tramite riferimento (marketing virale) o tramite social network (Facebook, X, precedentemente noto come Twitter), ad esempio. | mns:visitor |
 | Abbonamenti | Consegnare ai destinatari abbonati o iscritti a un servizio informativo, ad esempio una newsletter | nms:subscription |
 | Abbonamenti visitatore | Consegnare ai visitatori abbonati o iscritti a un servizio informativo | nms:visitorSub |
-| Servizio | Pubblicare su un account X o su una pagina Facebook | nms:service |
+| Servizio | Publish a un account X o a una pagina Facebook | nms:service |
 | Operatori | Consegnare agli operatori Adobe Campaign | nms:operator |
 | File esterno | Consegnare tramite un file contenente tutte le informazioni necessarie per la consegna | Nessuno schema collegato, nessuna destinazione immessa |
 

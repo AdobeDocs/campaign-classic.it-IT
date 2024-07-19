@@ -18,33 +18,33 @@ ht-degree: 1%
 # Risoluzione dei problemi di IMS{#ims-troubleshooting}
 
 
-Di seguito sono riportati alcuni suggerimenti utili per la risoluzione dei problemi **on-premise** e **ibrido** I clienti di risolvono i problemi più comuni che si verificano durante l’utilizzo dell’integrazione IMS. Per **in hosting** clienti, contatta l’Adobe.
+I seguenti suggerimenti per la risoluzione dei problemi aiuteranno i clienti **on-premise** e **hybrid** a risolvere i problemi più comuni che si verificano quando si utilizza l&#39;integrazione IMS. Per i clienti **hosted**, contatta l&#39;Adobe.
 
 **Account esterno**
 
-Ci dovrebbe essere solo **uno** account esterno con le seguenti impostazioni:
+Deve essere presente solo **un** account esterno con le seguenti impostazioni:
 
-* **Nome interno**: Adobe_Marketing_Cloud
-* **Tipo**: ADOBE MARKETING CLOUD
+* **Nome Interno**: Adobe_Marketing_Cloud
+* **Tipo**: Adobe Marketing Cloud
 
 Elimina eventuali account esterni duplicati con le stesse impostazioni.
 
-**Contesto del prodotto**
+**Contesto prodotto**
 
-Se l’account esterno ha **Contesto del prodotto** , verifica che il relativo valore sia impostato su: **dma_campaign_classic**
+Se l&#39;account esterno dispone di un campo **Contesto prodotto**, verificare che il relativo valore sia impostato su: **dma_campaign_classic**
 
 Assicurati che il contesto del prodotto sia lo stesso per Campaign e Experience Cloud.
 
-Ad esempio, se **Contesto del prodotto** non viene visualizzato, il contesto di prodotto predefinito deve essere **dma_campaign** sia in Campaign che in Experience Cloud. Se il **Contesto del prodotto** viene visualizzato, il contesto di prodotto predefinito deve essere **dma_campaign_classic** sia in Campaign che in Experience Cloud.
+Se ad esempio il **contesto di prodotto** non viene visualizzato, il contesto di prodotto predefinito deve essere **dma_campaign** sia in Campaign che in Experience Cloud. Se viene visualizzato il campo **Contesto prodotto**, il contesto di prodotto predefinito deve essere **dma_campaign_classic** sia in Campaign che in Experience Cloud.
 
 **[!UICONTROL IMS Server URL]**
 
-Nella campagna **Adobe Marketing Cloud** account esterno, verifica che **[!UICONTROL IMS Server URL]** è `adobeid-na1.services.adobe.com` o `ims-na1.adobelogin.com`. Assicurati che le istanze di stage e produzione puntino allo stesso endpoint di produzione IMS.
+Nell&#39;account esterno **Adobe Marketing Cloud** della campagna, verificare che **[!UICONTROL IMS Server URL]** sia `adobeid-na1.services.adobe.com` o `ims-na1.adobelogin.com`. Assicurati che le istanze di stage e produzione puntino allo stesso endpoint di produzione IMS.
 
 **Maschera di associazione**
 
 * Verifica che l’utente che tenta di accedere faccia parte di un gruppo di operatori nel dashboard di Enterprise.
-* Verifica che la **[!UICONTROL Association Mask]** è un prefisso del nome del gruppo di operatori dell&#39;utente nel dashboard di Enterprise.
+* Verificare che **[!UICONTROL Association Mask]** sia un prefisso del nome del gruppo di operatori dell&#39;utente nel dashboard di Enterprise.
 * Verificare che non siano presenti spazi bianchi e errori di ortografia.
 * Verifica che i nomi dei gruppi di operatori in Campaign non siano stati modificati e rispetta la seguente sintassi:
 
@@ -56,9 +56,9 @@ Nella campagna **Adobe Marketing Cloud** account esterno, verifica che **[!UICON
 
 Gli ambiti definiti nell’account esterno Campaign devono essere un sottoinsieme di quelli per i quali è stato eseguito il provisioning da IMS.
 
-**URL callback**
+**URL richiamata**
 
-Il **URL callback** devono essere aggiunte al inserisco nell&#39;elenco Consentiti di e iniziare con &quot;https://&quot;. Verifica che la **URL callback** è collegato all’istanza corrispondente. Ad esempio, l’istanza di produzione deve reindirizzare all’URL di produzione.
+L&#39;**URL callback** deve essere aggiunto al inserisco nell&#39;elenco Consentiti di e iniziare con &quot;https://&quot;. Verificare che l&#39;**URL callback** sia collegato all&#39;istanza corrispondente. Ad esempio, l’istanza di produzione deve reindirizzare all’URL di produzione.
 
 **ID client e segreto**
 
@@ -74,11 +74,11 @@ Riavvia il server se vengono apportate modifiche alle impostazioni precedenti ne
 
 * L&#39;utente viene reindirizzato alla pagina adobe.com:
 
-  Si è verificato un problema con **[!UICONTROL Callback URL]**. Consulta i passaggi precedenti per verificare **[!UICONTROL Callback URL]** configurazione.
+  Problema con **[!UICONTROL Callback URL]**. Fare riferimento ai passaggi precedenti per verificare la configurazione di **[!UICONTROL Callback URL]**.
 
 * Messaggio &quot;L’accesso non dispone di diritti corrispondenti all’espressione&quot;:
 
-  Consulta i passaggi precedenti per verificare **[!UICONTROL Association Mask]** e la configurazione dei gruppi di operatori.
+  Fare riferimento ai passaggi precedenti per verificare la configurazione di **[!UICONTROL Association Mask]** e gruppi di operatori.
 
 * L’utente non è in grado di accedere alla pagina di accesso di Adobe ID:
 

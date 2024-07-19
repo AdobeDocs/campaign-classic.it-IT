@@ -25,16 +25,16 @@ La configurazione del modello di ipotesi ti consente di definire il contesto per
 
 Per creare un modello di ipotesi, effettua le seguenti operazioni:
 
-1. In Adobe Campaign Explorer, fai clic su **[!UICONTROL Resources>Templates>Hypothesis templates]**.
+1. In Adobe Campaign Explorer, fare clic su **[!UICONTROL Resources>Templates>Hypothesis templates]**.
 
    ![](assets/response_hypothesis_model_creation_001.png)
 
-1. Clic **[!UICONTROL New]** o fai clic con il pulsante destro del mouse nell’elenco dei modelli e scegli **[!UICONTROL New]** nell’elenco a discesa.
+1. Fare clic su **[!UICONTROL New]** o fare clic con il pulsante destro del mouse nell&#39;elenco dei modelli e scegliere **[!UICONTROL New]** nell&#39;elenco a discesa.
 1. Inserisci l’etichetta dell’ipotesi.
 1. Specifica se il modello è destinato a ipotesi su offerte o consegne tramite **[!UICONTROL Hypothesis type]**.
-1. Per **[!UICONTROL Delivery]** modelli di tipo, specificare se le misurazioni devono essere eseguite con o senza un gruppo di controllo. [Ulteriori informazioni](#properties-of-a-hypothesis-template)
-1. Per **[!UICONTROL Delivery]** digitare modelli, puoi scegliere un canale specifico o decidere di applicarlo a tutti i canali disponibili in Adobe Campaign utilizzando **[!UICONTROL Channel]** elenco a discesa. [Ulteriori informazioni](#properties-of-a-hypothesis-template)
-1. Seleziona la **[!UICONTROL Execution folder]** in cui desideri creare ed eseguire automaticamente le ipotesi che verranno create da questo modello.
+1. Per i modelli di tipo **[!UICONTROL Delivery]**, specificare se le misurazioni devono essere eseguite con o senza un gruppo di controllo. [Ulteriori informazioni](#properties-of-a-hypothesis-template)
+1. Per i modelli di tipo **[!UICONTROL Delivery]**, è possibile scegliere un canale specifico o decidere di applicare il modello a tutti i canali disponibili in Adobe Campaign utilizzando l&#39;elenco a discesa **[!UICONTROL Channel]**. [Ulteriori informazioni](#properties-of-a-hypothesis-template)
+1. Selezionare **[!UICONTROL Execution folder]** in cui si desidera creare ed eseguire automaticamente le ipotesi create da questo modello.
 1. Scegli le impostazioni di esecuzione. [Ulteriori informazioni](#hypothesis-template-execution-settings)
 1. Specifica il periodo di calcolo dell’ipotesi. [Ulteriori informazioni](#hypothesis-template-execution-settings)
 
@@ -42,14 +42,14 @@ Per creare un modello di ipotesi, effettua le seguenti operazioni:
    >
    >Questo periodo è determinato dalla data di contatto.
 
-1. In **[!UICONTROL Transactions]** , specifica le tabelle e i campi necessari per il calcolo dell’ipotesi. [Ulteriori informazioni](#transactions)
-1. Se il modello è configurato per **[!UICONTROL Offer]** tipo di ipotesi, puoi abilitare il **[!UICONTROL Update offer proposition status]** opzione: in questo caso, seleziona lo stato della proposta di offerta da modificare.
+1. Nella scheda **[!UICONTROL Transactions]**, specifica le tabelle e i campi necessari per il calcolo dell’ipotesi. [Ulteriori informazioni](#transactions)
+1. Se il modello è configurato per le ipotesi di tipo **[!UICONTROL Offer]**, è possibile abilitare l&#39;opzione **[!UICONTROL Update offer proposition status]**: in questo caso, selezionare lo stato della proposta di offerta da modificare.
 1. Specifica l’ambito dell’applicazione dell’ipotesi. [Ulteriori informazioni](#hypothesis-perimeter)
 1. Se necessario, utilizza uno script per completare il filtro. [Ulteriori informazioni](#hypothesis-perimeter)
 
 ### Proprietà di un modello di ipotesi {#properties-of-a-hypothesis-template}
 
-Il modello **[!UICONTROL General]** Questa scheda consente di specificare le opzioni generali del modello. I campi disponibili sono:
+La scheda **[!UICONTROL General]** del modello consente di specificare le opzioni generali del modello. I campi disponibili sono:
 
 * **[!UICONTROL Hypothesis type]**: consente di determinare se il modello deve essere destinato a ipotesi su consegne o offerte.
 
@@ -57,7 +57,7 @@ Il modello **[!UICONTROL General]** Questa scheda consente di specificare le opz
 
   >[!NOTE]
   >
-  >Se il modello si applica alle offerte, il **[!UICONTROL Update offer proposition status]** è disponibile nella **[!UICONTROL Transactions]** scheda.
+  >Se il modello è applicabile alle offerte, l&#39;opzione **[!UICONTROL Update offer proposition status]** è disponibile nella scheda **[!UICONTROL Transactions]**.
 
 * **[!UICONTROL Measurement with control group]**: consente di specificare se è stato definito un gruppo di controllo per la consegna o la campagna e di includerlo negli indicatori di misurazione. Il gruppo di controllo, che non riceve consegne, ti consente di misurare l’impatto della campagna dopo la consegna, confrontandola con la popolazione target che ha ricevuto la consegna.
 
@@ -65,34 +65,34 @@ Il modello **[!UICONTROL General]** Questa scheda consente di specificare le opz
   >
   >Se il modello è configurato per tenere conto di un gruppo di controllo, ma non è definito alcun gruppo nella consegna che le ipotesi riguardano, i risultati saranno basati solo sui destinatari target.
 
-  Per ulteriori informazioni sulla definizione e la configurazione di un gruppo di controllo, consulta [questa sezione](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
+  Per ulteriori informazioni sulla definizione e la configurazione di un gruppo di controllo, consultare [questa sezione](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 
-* **[!UICONTROL Channel]**: puoi scegliere un canale specifico o rendere il modello di ipotesi disponibile per tutti i canali nella console Adobe Campaign selezionando **[!UICONTROL All channels]** nell’elenco a discesa. Se configuri il modello per un canale specifico, questo ti consente di filtrare automaticamente le consegne per canale durante la creazione dell’ipotesi. [Ulteriori informazioni](creating-hypotheses.md)
+* **[!UICONTROL Channel]**: è possibile scegliere un canale specifico o rendere disponibile il modello di ipotesi per tutti i canali nella console Adobe Campaign selezionando **[!UICONTROL All channels]** nell&#39;elenco a discesa. Se configuri il modello per un canale specifico, questo ti consente di filtrare automaticamente le consegne per canale durante la creazione dell’ipotesi. [Ulteriori informazioni](creating-hypotheses.md)
 
   ![](assets/response_properties_001.png)
 
-* **[!UICONTROL Execution folder]**: consente di specificare la cartella di esecuzione per l’ipotesi.
-* **[!UICONTROL Taken into account in campaign ROI calculation]**: prende in considerazione il risultato dell’ipotesi nel calcolo del ROI per la campagna correlata.
+* **[!UICONTROL Execution folder]**: consente di specificare la cartella di esecuzione per l&#39;ipotesi.
+* **[!UICONTROL Taken into account in campaign ROI calculation]**: prende in considerazione il risultato dell&#39;ipotesi nel calcolo del ROI per la campagna correlata.
 
 ### Impostazioni di esecuzione del modello ipotesi {#hypothesis-template-execution-settings}
 
-Il modello **[!UICONTROL General]** La scheda ti consente inoltre di specificare i parametri di esecuzione dell’ipotesi. Le opzioni disponibili sono le seguenti:
+La scheda **[!UICONTROL General]** del modello consente inoltre di specificare i parametri di esecuzione dell&#39;ipotesi. Le opzioni disponibili sono le seguenti:
 
-* **[!UICONTROL Schedule execution for a time of low activity]**: consente di pianificare il lancio dell’ipotesi per ottimizzare le prestazioni di Adobe Campaign. Quando questa opzione è selezionata, il flusso di lavoro di elaborazione nelle campagne esegue il calcolo dell’ipotesi durante il tempo di inattività.
+* **[!UICONTROL Schedule execution for a time of low activity]**: consente di pianificare il lancio dell&#39;ipotesi per ottimizzare le prestazioni di Adobe Campaign. Quando questa opzione è selezionata, il flusso di lavoro di elaborazione nelle campagne esegue il calcolo dell’ipotesi durante il tempo di inattività.
 
   ![](assets/response_exec_settings_002.png)
 
-* **[!UICONTROL Priority]**: livello applicato all’ipotesi per intervallare gli ordini di calcolo dell’ipotesi in presenza di esecuzioni simultanee.
+* **[!UICONTROL Priority]**: livello applicato all&#39;ipotesi per intervallare gli ordini di calcolo dell&#39;ipotesi in presenza di esecuzioni simultanee.
 
   ![](assets/response_exec_settings_003.png)
 
-* **[!UICONTROL Automatic execution]**: se necessario, ti consente di pianificare il ricalcolo delle ipotesi (ad esempio, se desideri aggiornare gli indicatori regolarmente fino alla fine della consegna).
+* **[!UICONTROL Automatic execution]**: se necessario, ti consente di pianificare il ricalcolo dell&#39;ipotesi (ad esempio, se desideri aggiornare gli indicatori regolarmente fino alla fine della consegna).
 
   ![](assets/response_exec_settings_001.png)
 
   Per specificare una pianificazione, attenersi alla procedura descritta di seguito.
 
-   1. Fai clic su **[!UICONTROL Frequency of execution...]** , quindi il **[!UICONTROL Change...]** pulsante.
+   1. Fare clic sul collegamento **[!UICONTROL Frequency of execution...]**, quindi sul pulsante **[!UICONTROL Change...]**.
 
       ![](assets/response_frequency_execution_001.png)
 
@@ -100,12 +100,12 @@ Il modello **[!UICONTROL General]** La scheda ti consente inoltre di specificare
 
       ![](assets/response_frequency_execution_002.png)
 
-   1. Clic **[!UICONTROL Finish]** per salvare la pianificazione.
+   1. Fare clic su **[!UICONTROL Finish]** per salvare la pianificazione.
 
       ![](assets/response_frequency_execution_003.png)
 
 * **[!UICONTROL Log SQL queries in journal]**: questa funzione è riservata agli utenti esperti. Consente di aggiungere una scheda al controllo dell’ipotesi di misurazione per visualizzare le query SQL. Ciò consente di rilevare eventuali malfunzionamenti se una simulazione termina con errori.
-* **[!UICONTROL Keep execution workflow]**: consente di mantenere il flusso di lavoro generato automaticamente all’inizio del calcolo dell’ipotesi. Nelle ipotesi create da un modello in cui questa opzione è selezionata, il flusso di lavoro generato è disponibile per seguire il processo.
+* **[!UICONTROL Keep execution workflow]**: consente di mantenere il flusso di lavoro generato automaticamente all&#39;inizio del calcolo dell&#39;ipotesi. Nelle ipotesi create da un modello in cui questa opzione è selezionata, il flusso di lavoro generato è disponibile per seguire il processo.
 
   >[!CAUTION]
   >
@@ -115,14 +115,14 @@ Il modello **[!UICONTROL General]** La scheda ti consente inoltre di specificare
 
 ### Transazioni {#transactions}
 
-Questa scheda contiene i vari campi e tabelle che consentono di salvare la cronologia delle reazioni dei destinatari in termini di transazioni. Fai riferimento a questo [sezione](../../configuration/using/about-schema-reference.md) per ulteriori informazioni, consulta le tabelle dedicate alla gestione delle risposte.
+Questa scheda contiene i vari campi e tabelle che consentono di salvare la cronologia delle reazioni dei destinatari in termini di transazioni. Per ulteriori informazioni sulle tabelle dedicate alla gestione delle risposte, consulta questa [sezione](../../configuration/using/about-schema-reference.md).
 
-* **[!UICONTROL Schema (reaction log storage)]**: seleziona la tabella di reazione del destinatario. La tabella predefinita in Adobe Campaign è **NmsRemaMatchRcp**.
-* **[!UICONTROL Transaction schema]**: scegli la tabella che le ipotesi riguardano, ovvero la transazione o la tabella di acquisto.
-* **[!UICONTROL Querying schema]**: scegli i criteri per filtrare l’ipotesi.
-* **[!UICONTROL Link to individuals]**: scegli il collegamento tra i singoli utenti e la tabella utilizzata come schema di transazione.
-* **[!UICONTROL Link to the household]**: seleziona il collegamento alla famiglia nello schema delle transazioni se desideri includere in un’ipotesi tutti i membri di una famiglia. Questo campo è facoltativo.
-* **[!UICONTROL Transaction date]**: questo campo è facoltativo ma consigliato poiché consente di definire l’ambito del calcolo delle ipotesi.
+* **[!UICONTROL Schema (reaction log storage)]**: selezionare la tabella di reazione del destinatario. La tabella predefinita in Adobe Campaign è **NmsRemaMatchRcp**.
+* **[!UICONTROL Transaction schema]**: scegliere la tabella che le ipotesi riguarderanno, ovvero la transazione o la tabella acquisti.
+* **[!UICONTROL Querying schema]**: scegliere i criteri per filtrare l&#39;ipotesi.
+* **[!UICONTROL Link to individuals]**: scegliere il collegamento tra singoli utenti e la tabella utilizzata come schema di transazione.
+* **[!UICONTROL Link to the household]**: selezionare il collegamento alla famiglia nello schema delle transazioni se si desidera includere in un&#39;ipotesi tutti i membri di una famiglia. Questo campo è facoltativo.
+* **[!UICONTROL Transaction date]**: questo campo è facoltativo ma consigliato in quanto consente di definire un ambito per il calcolo dell&#39;ipotesi.
 * **[!UICONTROL Measurement period]**: consente di configurare le date di inizio e fine durante le quali vengono eseguite le ipotesi e vengono recuperate le righe di acquisto.
 
   Quando l’ipotesi è collegata a una consegna, la misurazione viene attivata automaticamente alcuni giorni dopo la data di contatto per le consegne di direct mailing o dopo la data di consegna per le consegne e-mail o SMS.
@@ -131,21 +131,21 @@ Questa scheda contiene i vari campi e tabelle che consentono di salvare la crono
 
   Se l’ipotesi viene lanciata al volo, può essere forzata se vuole attivarla immediatamente. In caso contrario, viene attivato automaticamente in base alla data di fine del calcolo configurata, che si basa sulla data di creazione dell’ipotesi. [Ulteriori informazioni](creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery)).
 
-* **[!UICONTROL Transaction/Margin amount]**: questi campi sono facoltativi e ti consentono di calcolare automaticamente gli indicatori di fatturato. [Ulteriori informazioni](hypothesis-tracking.md#indicators)
-* **[!UICONTROL Unit amount]**: ti consente di impostare un importo per il calcolo delle entrate. [Ulteriori informazioni](hypothesis-tracking.md#indicators)
+* **[!UICONTROL Transaction/Margin amount]**: questi campi sono facoltativi e consentono di calcolare automaticamente gli indicatori di fatturato. [Ulteriori informazioni](hypothesis-tracking.md#indicators)
+* **[!UICONTROL Unit amount]**: consente di impostare un importo per il calcolo delle entrate. [Ulteriori informazioni](hypothesis-tracking.md#indicators)
 
   ![](assets/response_transactions_001.png)
 
-* **[!UICONTROL Additional measures and data]**: consente di specificare misure o assi di reporting aggiuntivi dai campi delle diverse tabelle.
-* **[!UICONTROL Update offer proposition status]**: consente di modificare lo stato della proposta di offerta se un destinatario dell’offerta è identificato dall’ipotesi.
+* **[!UICONTROL Additional measures and data]**: consente di specificare misure o assi di reporting aggiuntivi da campi di tabelle diverse.
+* **[!UICONTROL Update offer proposition status]**: consente di modificare lo stato della proposta di offerta se un destinatario dell&#39;offerta è identificato dall&#39;ipotesi.
 
   ![](assets/response_offer_status_001.png)
 
 ### Perimetro ipotesi {#hypothesis-perimeter}
 
-Dopo aver definito la tabella delle transazioni e i campi che l’ipotesi riguarderà, puoi definire l’ambito delle ipotesi specificando le transazioni e le consegne mirate utilizzando i filtri. Puoi anche utilizzare uno script JavaScript per puntare esplicitamente a un prodotto a cui si fa riferimento nella tabella delle transazioni.
+Dopo aver definito la tabella delle transazioni e i campi che l’ipotesi riguarderà, puoi definire l’ambito delle ipotesi specificando le transazioni e le consegne mirate utilizzando i filtri. È inoltre possibile utilizzare uno script di JavaScript per puntare in modo esplicito a un prodotto a cui si fa riferimento nella tabella delle transazioni.
 
-* **Filtra in base alle transazioni**: nel **[!UICONTROL Scope]** , puoi configurare un filtro in base all’ipotesi. Per eseguire questa operazione:
+* **Filtro sulle transazioni**: nella scheda **[!UICONTROL Scope]** puoi configurare un filtro in base all&#39;ipotesi. Per eseguire questa operazione:
 
    1. Fai clic sul collegamento **[!UICONTROL Edit query]**.
 
@@ -159,9 +159,9 @@ Dopo aver definito la tabella delle transazioni e i campi che l’ipotesi riguar
 
       ![](assets/response_scope_filtering_003.png)
 
-* **Filtra per destinatari**: nel **[!UICONTROL Scope]** , puoi limitare l’ipotesi a qualsiasi informazione collegata a un messaggio (consegna, destinatario, indirizzo e-mail, servizio, ecc.):
+* **Filtro sui destinatari**: nella scheda **[!UICONTROL Scope]** puoi limitare l&#39;ipotesi a qualsiasi informazione collegata a un messaggio (consegna, destinatario, indirizzo e-mail, servizio, ecc.):
 
-   1. Fai clic su **[!UICONTROL Add a filter]** collegamento, quindi **[!UICONTROL Edit query]**.
+   1. Fare clic sul collegamento **[!UICONTROL Add a filter]**, quindi su **[!UICONTROL Edit query]**.
 
       ![](assets/response_scope_filtering_004.png)
 
@@ -169,13 +169,13 @@ Dopo aver definito la tabella delle transazioni e i campi che l’ipotesi riguar
 
       ![](assets/response_scope_filtering_005.png)
 
-   1. Clic **[!UICONTROL Finish]** per salvare la query.
+   1. Fai clic su **[!UICONTROL Finish]** per salvare la query.
 
       ![](assets/response_scope_filtering_006.png)
 
-* **Script**: puoi utilizzare uno script JavaScript per sovraccaricare dinamicamente le impostazioni delle ipotesi durante la relativa esecuzione.
+* **Script**: è possibile utilizzare uno script di JavaScript per sovraccaricare dinamicamente le impostazioni delle ipotesi durante la relativa esecuzione.
 
-  A questo scopo, fai clic su **[!UICONTROL Advanced settings]** , quindi inserisci lo script desiderato.
+  A tale scopo, fare clic sul collegamento **[!UICONTROL Advanced settings]**, quindi immettere lo script desiderato.
 
   >[!NOTE]
   >
@@ -185,10 +185,10 @@ Dopo aver definito la tabella delle transazioni e i campi che l’ipotesi riguar
 
 ## Esempio: creare un modello di ipotesi su una consegna {#example--creating-a-hypothesis-template-on-a-delivery}
 
-In questo esempio, creeremo un modello di ipotesi su una consegna di tipo direct mailing. Tabella delle transazioni (**Acquisti** nel nostro esempio) le cui ipotesi si baseranno su contengono righe di acquisto collegate ad articoli o prodotti. Vogliamo configurare il nostro modello per creare ipotesi su articoli o prodotti nella tabella degli acquisti.
+In questo esempio, creeremo un modello di ipotesi su una consegna di tipo direct mailing. La tabella delle transazioni (**Acquisti** nel nostro esempio) su cui si baseranno le ipotesi contiene righe di acquisto collegate ad articoli o prodotti. Vogliamo configurare il nostro modello per creare ipotesi su articoli o prodotti nella tabella degli acquisti.
 
-1. In Adobe Campaign Explorer, vai al **[!UICONTROL Resources > Templates > Hypothesis templates]** nodo.
-1. Clic **[!UICONTROL New]** per creare un modello.
+1. In Adobe Campaign Explorer, passa al nodo **[!UICONTROL Resources > Templates > Hypothesis templates]**.
+1. Fare clic su **[!UICONTROL New]** per creare un modello.
 
    ![](assets/response_hypothesis_model_example_001.png)
 
@@ -196,23 +196,23 @@ In questo esempio, creeremo un modello di ipotesi su una consegna di tipo direct
 
    ![](assets/response_hypothesis_model_example_002.png)
 
-1. Seleziona **[!UICONTROL Deliveries]** come tipo di ipotesi.
+1. Selezionare **[!UICONTROL Deliveries]** come tipo di ipotesi.
 1. Specifica che la consegna può contenere un gruppo di controllo selezionando la casella pertinente.
-1. Scegli la **[!UICONTROL Direct mail]** canale.
+1. Scegli il canale **[!UICONTROL Direct mail]**.
 
    >[!NOTE]
    >
    >Poiché il modello è specifico per le consegne di direct mailing, le ipotesi create utilizzando questo modello potrebbero non essere collegate ad altri tipi di consegna.
 
-1. In **[!UICONTROL Transactions]** , seleziona la tabella delle reazioni dei destinatari.
+1. Nella scheda **[!UICONTROL Transactions]** selezionare la tabella delle reazioni dei destinatari.
 
    ![](assets/response_hypothesis_model_example_006.png)
 
-1. In **[!UICONTROL Transactions schema]** scegliere la tabella degli acquisti.
+1. Nel campo **[!UICONTROL Transactions schema]**, scegli la tabella acquisti.
 
    ![](assets/response_hypothesis_model_example_007.png)
 
-1. Selezionare le righe di acquisto in **[!UICONTROL Querying schema]** campo.
+1. Selezionare le righe acquisto nel campo **[!UICONTROL Querying schema]**.
 
    ![](assets/response_hypothesis_model_example_008.png)
 
@@ -230,10 +230,10 @@ In questo esempio, creeremo un modello di ipotesi su una consegna di tipo direct
 
    ![](assets/response_hypothesis_model_example_005.png)
 
-1. In **[!UICONTROL Scope]** , fare clic su **[!UICONTROL Edit query]** per creare un filtro in base alle ipotesi.
+1. Nella scheda **[!UICONTROL Scope]**, fare clic su **[!UICONTROL Edit query]** per creare un filtro in base alle ipotesi.
 
    ![](assets/response_hypothesis_model_example_011.png)
 
    Il modello creato consente di eseguire ipotesi sui prodotti o sugli articoli nella tabella di acquisto.
 
-1. Clic **[!UICONTROL Save]** per registrare il modello.
+1. Fai clic su **[!UICONTROL Save]** per registrare il modello.

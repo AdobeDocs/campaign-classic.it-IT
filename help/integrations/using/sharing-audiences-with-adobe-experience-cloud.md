@@ -26,7 +26,7 @@ Con Adobe Campaign puoi condividere audience e segmenti con i servizi Adobe Expe
 
 1. Invia i dati dei segmenti di Adobe Experience Platform ad Adobe Campaign. Per implementare questa integrazione, devi collegare il tuo Real-time Customer Data Platform a Campaign (RTCDP). [Ulteriori informazioni](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html){target="_blank"}.
 
-1. Integrare **Adobe Campaign** con  **Tipi di pubblico di Experience Cloud** o **Adobe Audience Manager**. Potrai quindi:
+1. Integra **Adobe Campaign** con **Tipi di pubblico Experience Cloud** o **Adobe Audience Manager**. Potrai quindi:
 
    * Importare tipi di pubblico/segmenti condivisi da diverse soluzioni Adobe Experience Cloud in Adobe Campaign. I tipi di pubblico possono essere importati tramite elenchi in Adobe Campaign.
 

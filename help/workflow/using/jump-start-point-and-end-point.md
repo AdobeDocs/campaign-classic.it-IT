@@ -15,7 +15,7 @@ ht-degree: 15%
 
 
 
-**[!UICONTROL Jump]** Gli oggetti grafici di tipo -type vengono utilizzati per migliorare la leggibilità di un diagramma complesso, in particolare quello con transizioni incrociate.
+Gli oggetti grafici di tipo **[!UICONTROL Jump]** vengono utilizzati per migliorare la leggibilità di un diagramma complesso, in particolare quello con transizioni incrociate.
 
 I salti sono transizioni senza frecce.
 
@@ -29,4 +29,4 @@ Nello stesso flusso di lavoro è possibile inserire più salti di punti iniziali
 
 ![](assets/s_user_segmentation_jump_in.png)
 
-Per migliorare la leggibilità del diagramma, è possibile modificare l&#39;immagine associata ai salti per visualizzare il numero correlato. Consulta [Modificare le immagini dell’attività](managing-activity-images.md).
+Per migliorare la leggibilità del diagramma, è possibile modificare l&#39;immagine associata ai salti per visualizzare il numero correlato. Vedi [Cambia immagini attività](managing-activity-images.md).

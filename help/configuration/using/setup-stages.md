@@ -19,15 +19,15 @@ Il principio di base è l’inserimento di tag di tracciamento web in determinat
 Esistono due tipi di tag:
 
 * **WEB**: questo tag indica se la pagina è stata visitata,
-* **TRANSAZIONE**: funziona come un tag web, ma con la possibilità di aggiungere informazioni sul volume di business generato, ad esempio (importo della transazione, numero di articoli acquistati, ecc.).
+* **TRANSAZIONE**: funziona come un tag Web, ma con la possibilità di aggiungere informazioni sul volume di business generato, ad esempio (importo della transazione, numero di elementi acquistati, ecc.).
 
 Per impostare questi tag, effettua le seguenti operazioni:
 
 1. Identifica le pagine da tracciare e determinane il tipo (WEB o TRANSACTION).
-1. Determinare quali informazioni aggiuntive si desidera raccogliere ed estendere **nms:webTrackingLog** con la descrizione di tali informazioni. Per impostazione predefinita, questo schema può memorizzare gli importi delle transazioni e il numero di elementi per transazione.
+1. Determinare le informazioni aggiuntive da raccogliere ed estendere lo schema **nms:webTrackingLog** con la descrizione di tali informazioni. Per impostazione predefinita, questo schema può memorizzare gli importi delle transazioni e il numero di elementi per transazione.
 1. Creazione dei tag di tracciamento web. Esistono due modi per farlo:
 
-   * Inserisci gli URL corrispondenti a queste pagine nella piattaforma Adobe Campaign, quindi genera ed estrai i tag di tracciamento web associati (dalla **[!UICONTROL Campaign execution>Resources>Web tracking tags]** della console client).
+   * Inserisci gli URL corrispondenti a queste pagine nella piattaforma Adobe Campaign, quindi genera ed estrai i tag di tracciamento web associati (dal nodo **[!UICONTROL Campaign execution>Resources>Web tracking tags]** della console client).
    * Crea tu stesso i tag di web-tracking in modalità &quot;creazione immediata&quot;: gli URL corrispondenti a queste pagine verranno inseriti automaticamente nella tua piattaforma Adobe Campaign.
 
 1. Aggiungi questi tag in modo statico o dinamico nelle pagine che desideri tracciare.

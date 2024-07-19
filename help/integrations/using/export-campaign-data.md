@@ -19,7 +19,7 @@ ht-degree: 3%
 
 Per esportare i dati di Campaign Classic in Adobe Real-time Customer Data Platform (RTCDP), devi innanzitutto creare un flusso di lavoro in Campaign Classic per esportare nel percorso di archiviazione BLOB di S3 o Azure i dati da condividere.
 
-Una volta configurato il flusso di lavoro e inviati i dati al percorso di archiviazione, è necessario collegare il percorso di archiviazione BLOB di S3 o Azure come **Sorgente** in Adobe experience Platform.
+Dopo aver configurato il flusso di lavoro e aver inviato i dati al percorso di archiviazione, è necessario connettere il percorso di archiviazione BLOB S3 o Azure come **Source** in Adobe Experience Platform.
 
 >[!NOTE]
 >
@@ -31,11 +31,11 @@ Per esportare i dati da Campaign Classic nel percorso di archiviazione S3 o BLOB
 
 A questo scopo, aggiungi e configura:
 
-* Un **[!UICONTROL Data extraction (file)]** per estrarre i dati di destinazione in un file CSV. Per ulteriori informazioni su come configurare questa attività, consulta [questa sezione](../../workflow/using/extraction-file.md).
+* Attività **[!UICONTROL Data extraction (file)]** per estrarre i dati di destinazione in un file CSV. Per ulteriori informazioni su come configurare questa attività, consulta [questa sezione](../../workflow/using/extraction-file.md).
 
   ![](assets/rtcdp-extract-file.png)
 
-* A **[!UICONTROL File transfer]** per trasferire il file CSV nel percorso di archiviazione. Per ulteriori informazioni su come configurare questa attività, consulta [questa sezione](../../workflow/using/file-transfer.md).
+* Un&#39;attività **[!UICONTROL File transfer]** per trasferire il file CSV nel percorso di archiviazione. Per ulteriori informazioni su come configurare questa attività, consulta [questa sezione](../../workflow/using/file-transfer.md).
 
   ![](assets/rtcdp-file-transfer.png)
 
@@ -43,13 +43,13 @@ Ad esempio, il flusso di lavoro seguente estrae i registri regolarmente in un fi
 
 ![](assets/aep-export.png)
 
-## Collegare la posizione di archiviazione come origine
+## Collegare la posizione di archiviazione come Source
 
-I passaggi principali per connettere il percorso di archiviazione BLOB di S3 o Azure come **Sorgente** in Adobe experience Platform sono elencati di seguito. Informazioni dettagliate su ciascuna di queste fasi sono disponibili nella [Documentazione dei connettori di origine](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=it).
+Di seguito sono elencati i passaggi principali per connettere il percorso di archiviazione BLOB di S3 o Azure come **Source** in Adobe Experience Platform. Informazioni dettagliate su ciascuno di questi passaggi sono disponibili nella [documentazione dei connettori Source](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=it).
 
-1. In Adobe Experience Platform **[!UICONTROL Sources]** creare una connessione alla posizione di archiviazione:
+1. Nel menu di Adobe di Experience Platform **[!UICONTROL Sources]**, crea una connessione al percorso di archiviazione:
 
-   * [Creare una connessione sorgente Amazon S3](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html)
+   * [Creare una connessione di origine Amazon S3](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html)
    * [Connettore BLOB di Azure](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/blob.html)
 
    >[!NOTE]
@@ -60,10 +60,10 @@ I passaggi principali per connettere il percorso di archiviazione BLOB di S3 o A
 
 1. Configurare un flusso di dati per una connessione batch di archiviazione cloud. Un flusso di dati è un’attività pianificata che recupera e acquisisce i dati dal percorso di archiviazione a un set di dati Adobe Experience Platform. Questi passaggi ti consentono di configurare l’acquisizione dei dati dalla posizione di archiviazione, inclusa la selezione dei dati e la mappatura dei campi CSV su uno schema XDM.
 
-   Informazioni dettagliate sono disponibili su [questa pagina](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html).
+   Informazioni dettagliate sono disponibili in [questa pagina](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html).
 
    ![](assets/rtcdp-map-xdm.png)
 
-1. Dopo aver configurato l&#39;origine, Adobe Experience Platform importa il file dal percorso di archiviazione fornito.
+1. Dopo aver configurato Source, Adobe Experience Platform importa il file dal percorso di archiviazione fornito.
 
    Questa operazione può essere pianificata in base alle tue esigenze. È consigliabile eseguire l’esportazione fino a 6 volte al giorno, a seconda del carico già presente nell’istanza.

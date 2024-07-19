@@ -18,9 +18,9 @@ ht-degree: 3%
 
 
 
-Per garantire che ogni evento possa essere trasformato in un messaggio personalizzato, devi innanzitutto creare **tipi di evento**.
+Per assicurarsi che ogni evento possa essere modificato in un messaggio personalizzato, devi innanzitutto creare **tipi di evento**.
 
-Quando [creazione di un modello di messaggio](../../message-center/using/creating-the-message-template.md), selezioni il tipo di evento che corrisponde al messaggio che desideri inviare.
+Quando [si crea un modello di messaggio](../../message-center/using/creating-the-message-template.md), verrà selezionato il tipo di evento corrispondente al messaggio che si desidera inviare.
 
 >[!IMPORTANT]
 >
@@ -28,19 +28,19 @@ Quando [creazione di un modello di messaggio](../../message-center/using/creatin
 
 Per creare tipi di evento che verranno elaborati da Adobe Campaign, segui questi passaggi:
 
-1. Accedere a **istanza di controllo**.
+1. Accedere all&#39;**istanza di controllo**.
 
-1. Vai a **[!UICONTROL Administration > Platform > Enumerations]** cartella della struttura.
+1. Passare alla cartella **[!UICONTROL Administration > Platform > Enumerations]** della struttura.
 
-1. Seleziona **[!UICONTROL Event type]** dall&#39;elenco.
+1. Selezionare **[!UICONTROL Event type]** dall&#39;elenco.
 
-1. Clic **[!UICONTROL Add]** per creare un valore di enumerazione. Può trattarsi di una conferma d’ordine, di una modifica della password, di una modifica della consegna dell’ordine, ecc.
+1. Fare clic su **[!UICONTROL Add]** per creare un valore di enumerazione. Può trattarsi di una conferma d’ordine, di una modifica della password, di una modifica della consegna dell’ordine, ecc.
 
    ![](assets/messagecenter_eventtype_enum_001.png)
 
    >[!IMPORTANT]
    >
-   >Ogni tipo di evento deve corrispondere a un valore in **[!UICONTROL Event type]** enumerazione.
+   >Ogni tipo di evento deve corrispondere a un valore nell&#39;enumerazione **[!UICONTROL Event type]**.
 
 1. Una volta creati i valori dell’elenco dettagliati, disconnettiti e accedi di nuovo all’istanza per rendere effettiva la creazione.
 

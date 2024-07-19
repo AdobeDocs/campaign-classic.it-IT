@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Condivisione di risorse con Adobe Experience Cloud{#sharing-assets-with-adobe-experience-cloud}
 
-[Experience Cloud Assets](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"} fornisce un archivio unico e centralizzato di risorse pronte per le attività di marketing da condividere tra le diverse soluzioni. Una risorsa è un documento digitale, un’immagine, un video o un file audio.
+[L&#39;Experience Cloud Assets](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"} fornisce un archivio unico e centralizzato di risorse pronte per le attività di marketing da condividere tra le diverse soluzioni. Una risorsa è un documento digitale, un’immagine, un video o un file audio.
 
 I servizi per le risorse includono:
 
@@ -26,9 +26,9 @@ I servizi per le risorse includono:
 
 Quando modifichi una consegna e-mail o una pagina di destinazione in Adobe Campaign, puoi inserire risorse dalle librerie Adobe Experience Cloud. A seconda delle soluzioni che utilizzi, queste risorse possono essere memorizzate in Assets o Adobe Experience Manager Assets.
 
-Le diverse librerie disponibili sono descritte in [questo documento](https://experienceleague.adobe.com/en/docs/core-services/interface/services/assets/experience-cloud-assets){target="_blank"}.
+Le diverse librerie disponibili sono descritte in dettaglio in [questo documento](https://experienceleague.adobe.com/en/docs/core-services/interface/services/assets/experience-cloud-assets){target="_blank"}.
 
-Consulta la [Configurazione dell’accesso alle risorse](../../integrations/using/configuring-access-to-assets.md) per ulteriori informazioni sulle specifiche collegate a ciascuna libreria.
+Consulta la sezione [Configurazione dell&#39;accesso ad Assets](../../integrations/using/configuring-access-to-assets.md) per ulteriori informazioni sulle specifiche collegate a ciascuna libreria.
 
 >[!NOTE]
 >

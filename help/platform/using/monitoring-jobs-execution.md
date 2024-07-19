@@ -23,10 +23,10 @@ ht-degree: 3%
 
 ![](assets/s_ncs_user_export_list_and_details.png)
 
-* Il **[!UICONTROL Journal]** Questa scheda ti consente di esaminare i messaggi di registro relativi all’esecuzione.
-* Il **[!UICONTROL Rejects]** contiene i record rifiutati. Consulta [questa sezione](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error).
+* La scheda **[!UICONTROL Journal]** consente di esaminare i messaggi di registro relativi all&#39;esecuzione.
+* La scheda **[!UICONTROL Rejects]** contiene i record rifiutati. Consulta [questa sezione](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error).
 
-In **[!UICONTROL General]** , la scheda **[!UICONTROL Status]** indica lo stato corrente di un processo.
+Nella scheda **[!UICONTROL General]**, il campo **[!UICONTROL Status]** indica lo stato corrente di un processo.
 
 Ogni stato è rappresentato da un’icona e un’etichetta speciali. Gli stati e le relative icone sono elencati di seguito:
 
@@ -42,7 +42,7 @@ Ogni stato è rappresentato da un’icona e un’etichetta speciali. Gli stati e
 
 * **Annulla**
 
-  Fai clic su **[!UICONTROL Cancel]** pulsante: processo in corso annullato.
+  Fare clic sul pulsante **[!UICONTROL Cancel]**: il processo in corso viene annullato.
 
 * **Annullamento in corso**
 
@@ -50,11 +50,11 @@ Ogni stato è rappresentato da un’icona e un’etichetta speciali. Gli stati e
 
 * **Pausa in corso**
 
-  Clic **[!UICONTROL Pause]**: processo in fase di sospensione.
+  Fare clic su **[!UICONTROL Pause]**: processo sospeso.
 
 * **In pausa**
 
-  Clic **[!UICONTROL Pause]**: processo sospeso. Per riavviarlo, fai clic su **[!UICONTROL Start]**.
+  Fare clic su **[!UICONTROL Pause]**: il processo è sospeso. È possibile riavviarlo facendo clic su **[!UICONTROL Start]**.
 
 * **Completato**
 

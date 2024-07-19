@@ -18,10 +18,10 @@ ht-degree: 0%
 
 
 
-Utilizzare Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) per elaborare le informazioni memorizzate in un database esterno. Segui i passaggi seguenti per configurare l’accesso a SAP HANA.
+Utilizza l&#39;opzione [Federated Data Access](../../installation/using/about-fda.md) (FDA) di Campaign per elaborare le informazioni archiviate in un database esterno. Segui i passaggi seguenti per configurare l’accesso a SAP HANA.
 
 1. Configura [database SAP HANA](#sap-config)
-1. Configurare il SAP HANA [account esterno](#sap-external) in Campaign
+1. Configura l&#39;[account esterno](#sap-external) di SAP HANA in Campaign
 
 ## SAP HANA {#sap-config}
 
@@ -46,7 +46,7 @@ La connessione a un database esterno SAP HANA in FDA richiede alcune configurazi
      User:SYSTEM
      ```
 
-     &quot;InstallDir&quot; corrisponde alla posizione del **odbcinst.ini** file.
+     &quot;InstallDir&quot; corrisponde alla posizione del file **odbcinst.ini**.
 
    * **/etc/odbcinst.ini**
 
@@ -59,22 +59,22 @@ La connessione a un database esterno SAP HANA in FDA richiede alcune configurazi
 1. Specifica le variabili di ambiente del server Adobe Campaign:
 
    * **LD_LIBRARY_PATH**: per impostazione predefinita, deve includere il collegamento al client SAP Hana (/usr/sap/hdbclient/libodbcHDB.so).
-   * **ODBCINI**: posizione del file odbc.ini (ad esempio /etc/odbc.ini).
+   * **ODBCINI**: percorso del file odbc.ini (ad esempio /etc/odbc.ini).
 
 ## Account esterno SAP HANA{#sap-external}
 
 L’account esterno SAP HANA ti consente di collegare l’istanza Campaign al database esterno SAP HANA.
 
-1. Da campagna **[!UICONTROL Explorer]**, fai clic su **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. Dalla campagna **[!UICONTROL Explorer]**, fare clic su **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
-1. Clic **[!UICONTROL New]** e seleziona **[!UICONTROL External database]** as **[!UICONTROL Type]**.
+1. Fare clic su **[!UICONTROL New]** e selezionare **[!UICONTROL External database]** come **[!UICONTROL Type]**.
 
-1. Per configurare **[!UICONTROL SAP Hana]** account esterno, è necessario specificare:
+1. Per configurare l&#39;account esterno **[!UICONTROL SAP Hana]**, è necessario specificare:
 
    * **[!UICONTROL Type]**: SAP Hana
 
    * **[!UICONTROL Server]**: URL del server SAP Hana
 
-   * **[!UICONTROL Account]**: nome dell’utente
+   * **[!UICONTROL Account]**: nome dell&#39;utente
 
-   * **[!UICONTROL Password]**: password dell’account utente
+   * **[!UICONTROL Password]**: password dell&#39;account utente

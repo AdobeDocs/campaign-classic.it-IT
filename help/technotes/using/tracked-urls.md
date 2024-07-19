@@ -25,7 +25,7 @@ Tieni presente che anche i collegamenti di annullamento di abbonamento, come tut
 
 **Sei interessato da questo problema?**
 
-Per migliorare la sicurezza, il meccanismo di firma per il tracciamento dei collegamenti nelle e-mail è stato introdotto in [Campaign Gold Standard 8](../../rn/using/gold-standard.md#gs8) - Aprile 2020 - ed è abilitato per impostazione predefinita per tutti i clienti che iniziano con Build 19.1.4 (9032@3a9dc9c) e Campaign 20.2.
+Per migliorare la sicurezza, il meccanismo di firma per i collegamenti nelle e-mail è stato introdotto in [Campaign Gold Standard 8](../../rn/using/gold-standard.md#gs8) - aprile 2020 - ed è abilitato per impostazione predefinita per tutti i clienti che iniziano la build 19.1.4 (9032@3a9dc9c) e Campaign 20.2.
 
 Se l’ambiente è in esecuzione su una delle versioni elencate di seguito, il problema può interessarti:
 
@@ -42,14 +42,14 @@ Scopri come controllare la versione [in questa sezione](../../platform/using/lau
 
 **Come si esegue l’aggiornamento?**
 
-As a **cliente in hosting**, Adobe collaborerà con te per aggiornare la tua configurazione a breve.
+In qualità di **cliente ospitato**, Adobe collaborerà con te per aggiornare la tua configurazione a breve.
 
-Come un **cliente on-premise/ibrido**, è necessario aggiornare la configurazione.
+In qualità di **cliente on-premise/ibrido**, devi aggiornare la configurazione.
 
 Effettua le seguenti operazioni:
 
-1. In [file di configurazione del server](../../installation/using/the-server-configuration-file.md) (serverConf.xml), modifica **signEmailLinks** a **false**.
-1. Riavvia il **nlserver** servizio.
+1. Nel [file di configurazione del server](../../installation/using/the-server-configuration-file.md) (serverConf.xml), modificare **signEmailLinks** in **false**.
+1. Riavviare il servizio **nlserver**.
 1. Sul server di tracciamento, riavvia il server web (apache2 su Debian, httpd su CentOS/RedHat, IIS su Windows).
 
    ```
@@ -58,7 +58,7 @@ Effettua le seguenti operazioni:
 
 >[!NOTE]
 >
->Il **config-`<instance>`.xml** il file sostituisce **serverConf.xml** impostazioni. Se il **signEmailLinks** è presente in  **config-`<instance>`.xml** (dove **istanza** è il nome dell’istanza), deve anche essere convertito in **false**.
+>Il file **config-`<instance>`.xml** sostituisce le impostazioni **serverConf.xml**. Se **signEmailLinks** è presente in **config-`<instance>`.xml** (dove **istanza** è il nome dell&#39;istanza), deve essere convertito anche in **false**.
 >
 
 **Quale sarà l’impatto dell&#39;aggiornamento?**

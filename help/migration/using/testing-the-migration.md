@@ -30,7 +30,7 @@ A seconda della configurazione, esistono diversi modi per eseguire i test di mig
 1. Eseguire un backup del database dell’ambiente di sviluppo.
 1. Arresta tutti i processi Adobe Campaign nell’istanza di sviluppo.
 1. Eseguire un backup del database dell’ambiente di produzione e ripristinarlo come ambiente di sviluppo.
-1. Prima di avviare i servizi di Adobe Campaign, esegui **freezeInstance.js** script di cauterizzazione che consente di cancellare il database di tutti gli oggetti in esecuzione all&#39;avvio del backup.
+1. Prima di avviare i servizi Adobe Campaign, eseguire lo script di cauterizzazione **freezeInstance.js** che consente di cancellare il database di tutti gli oggetti in esecuzione all&#39;avvio del backup.
 
    ```
    nlserver javascript nms:freezeInstance.js -instance:<instance> -arg:<run|dry>
@@ -38,7 +38,7 @@ A seconda della configurazione, esistono diversi modi per eseguire i test di mig
 
    >[!NOTE]
    >
-   >Il comando viene avviato per impostazione predefinita in **asciutto** ed elenca tutte le richieste eseguite da tale comando, senza avviarle. Per eseguire le richieste di cauterizzazione, utilizzare **eseguire** nel comando.
+   >Il comando viene avviato per impostazione predefinita in modalità **dry** e vengono elencate tutte le richieste eseguite dal comando senza avviarle. Per eseguire le richieste di cauterizzazione, utilizzare **run** nel comando.
 
 1. Per verificare che i backup siano corretti, provare a ripristinarli. Assicurati di poter accedere al database, alle tabelle, ai dati e così via.
 1. Verifica la procedura di migrazione nell’ambiente di sviluppo.
@@ -53,7 +53,7 @@ A seconda della configurazione, esistono diversi modi per eseguire i test di mig
 
 Varie opzioni consentono di misurare l’impatto di una migrazione e identificare i potenziali problemi. Devono essere eseguite le seguenti opzioni:
 
-* nel **config** comando:
+* nel comando **config**:
 
   ```
   nlserver.exe config <option> -instance:<instance-name>
@@ -67,12 +67,12 @@ Varie opzioni consentono di misurare l’impatto di una migrazione e identificar
 
 >[!NOTE]
 >
->* È necessario utilizzare il **-instance:`<instanceame>`** opzione. Si sconsiglia di utilizzare **-allinstances** opzione.
->* Il comando di aggiornamento di Adobe Campaign (**post-aggiornamento**) consente di sincronizzare le risorse e aggiornare gli schemi e il database. Questa operazione può essere eseguita solo una volta e solo sul server applicazioni. Dopo aver sincronizzato le risorse, il **post-aggiornamento** consente di rilevare se la sincronizzazione genera errori o avvisi.
+>* Utilizzare l&#39;opzione **-instance:`<instanceame>`**. Si sconsiglia di utilizzare l&#39;opzione **-allinstances**.
+>* Il comando di aggiornamento di Adobe Campaign (**postupgrade**) consente di sincronizzare le risorse e di aggiornare gli schemi e il database. Questa operazione può essere eseguita solo una volta e solo sul server applicazioni. Dopo aver sincronizzato le risorse, il comando **postupgrade** consente di rilevare se la sincronizzazione genera errori o avvisi.
 
 ### Oggetti mancanti o non standard
 
-* Il **-showCustomEntities** viene visualizzato l&#39;elenco di tutti gli oggetti non standard:
+* L&#39;opzione **-showCustomEntities** visualizza l&#39;elenco di tutti gli oggetti non standard:
 
   ```
   nlserver.exe config -showCustomEntities -instance:<instance-name>
@@ -84,7 +84,7 @@ Varie opzioni consentono di misurare l’impatto di una migrazione e identificar
   xtk_migration:opsecurity2 xtk:entity
   ```
 
-* Il **-showDeletedEntities** viene visualizzato l&#39;elenco di tutti gli oggetti standard mancanti nel database o nel file system. Per ogni oggetto mancante, viene specificato il percorso.
+* L&#39;opzione **-showDeletedEntities** visualizza l&#39;elenco di tutti gli oggetti standard mancanti nel database o nel file system. Per ogni oggetto mancante, viene specificato il percorso.
 
   ```
   nlserver.exe config -showDeletedEntities -instance:<instance-name>
@@ -98,7 +98,7 @@ Varie opzioni consentono di misurare l’impatto di una migrazione e identificar
 
 ### Processo di verifica {#verification-process}
 
-Integrato come standard nel comando post-aggiornamento, questo processo consente di visualizzare avvisi ed errori che potrebbero impedire il corretto completamento della migrazione. **Se vengono visualizzati degli errori, la migrazione non è stata eseguita.** In questo caso, correggi tutti gli errori e riavvia il post-aggiornamento.
+Integrato come standard nel comando post-aggiornamento, questo processo consente di visualizzare avvisi ed errori che potrebbero impedire il corretto completamento della migrazione. **Se vengono visualizzati errori, la migrazione non è stata eseguita.** In questo caso, correggere tutti gli errori e riavviare il post-aggiornamento.
 
 Puoi avviare il processo di verifica da solo (senza migrazione) utilizzando il comando:
 
@@ -116,7 +116,7 @@ Vengono cercate le seguenti espressioni (distinzione maiuscole/minuscole):
  <thead> 
   <tr> 
    <th> Espressione<br /> </th> 
-   <th> Codice di errore<br /> </th> 
+   <th> Codice errore<br /> </th> 
    <th> Tipo di registro<br /> </th> 
    <th> Commenti<br /> </th> 
   </tr> 
@@ -125,26 +125,26 @@ Vengono cercate le seguenti espressioni (distinzione maiuscole/minuscole):
   <tr> 
    <td> .@<br /> </td> 
    <td> PU-0001<br /> </td> 
-   <td> Avvertenza<br /> </td> 
+   <td> Avviso<br /> </td> 
    <td> Questo tipo di sintassi non è più supportato nella personalizzazione della consegna. <br /> </td> 
   </tr> 
   <tr> 
    <td> common.js<br /> </td> 
    <td> PU-0002<br /> </td> 
-   <td> Avvertenza<br /> </td> 
+   <td> Avviso<br /> </td> 
    <td> Questa libreria non deve essere utilizzata.<br /> </td> 
   </tr> 
   <tr> 
-   <td> logon(<br /> </td> 
+   <td> accesso(<br /> </td> 
    <td> PU-0003<br /> </td> 
-   <td> Avvertenza<br /> </td> 
+   <td> Avviso<br /> </td> 
    <td> Questo metodo di connessione non deve più essere utilizzato.<br /> </td> 
   </tr> 
   <tr> 
-   <td> new SoapMethodCall(<br /> </td> 
+   <td> nuovo SoapMethodCall(<br /> </td> 
    <td> PU-0004<br /> </td> 
-   <td> Avvertenza<br /> </td> 
-   <td> Questa funzione è supportata solo quando viene utilizzata nel codice JavaScript eseguito da un’area di sicurezza in <strong>sessionTokenOnly</strong> modalità.<br /> </td> 
+   <td> Avviso<br /> </td> 
+   <td> Questa funzione è supportata solo quando viene utilizzata nel codice JavaScript eseguito da un'area di sicurezza in modalità <strong>sessionTokenOnly</strong>.<br /> </td> 
   </tr> 
   <tr> 
    <td> sql=<br /> </td> 
@@ -157,14 +157,14 @@ Vengono cercate le seguenti espressioni (distinzione maiuscole/minuscole):
    <td> PU-0007<br /> </td> 
    <td> Errore<br /> </td> 
    <td> Questo tipo di distribuzione non è più supportato. Il tipo di distribuzione del connettore Microsoft CRM per Office 365 e on-premise è ora obsoleto. 
-   </br>Se utilizzi uno di questi tipi di distribuzione obsoleti in un account esterno, devi eliminarlo ed eseguire il comando <b>post-aggiornamento</b> comando. 
-   </br>Per modificare la distribuzione API web, consulta <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Applicazioni web</a>.<br /> </td>
+   </br>Se si utilizza uno di questi tipi di distribuzione obsoleti in un account esterno, è necessario eliminare questo account esterno ed eseguire il comando <b>postupgrade</b>. 
+   </br>Per modificare la distribuzione API Web, consultare <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Applicazioni Web</a>.<br /> </td>
   </tr> 
   <tr> 
    <td> CRM v1(mscrmWorkflow/sfdcWorkflow)<br /> </td> 
    <td> PU-0008<br /> </td> 
    <td> Errore<br /> </td> 
-   <td> Le attività di azione Microsoft CRM, Salesforce, Oracle CRM On Demand non sono più disponibili. Per configurare la sincronizzazione dei dati tra Adobe Campaign e un sistema CRM, è necessario utilizzare <a href="../../workflow/using/crm-connector.md" target="_blank">Connettore CRM</a> attività di targeting.<br /> </td>
+   <td> Le attività di azione Microsoft CRM, Salesforce, Oracle CRM On Demand non sono più disponibili. Per configurare la sincronizzazione dei dati tra Adobe Campaign e un sistema CRM, è necessario utilizzare l'attività di targeting <a href="../../workflow/using/crm-connector.md" target="_blank">Connettore CRM</a>.<br /> </td>
   </tr> 
  </tbody> 
 </table>

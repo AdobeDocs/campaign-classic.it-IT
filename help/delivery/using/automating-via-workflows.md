@@ -19,14 +19,14 @@ ht-degree: 0%
 
 La creazione, la modifica e la pubblicazione dei contenuti possono essere automatizzate mediante un flusso di lavoro configurato tramite l’interfaccia client di Adobe Campaign.
 
-Il **Gestione dei contenuti** l&#39;attività è accessibile tramite **[!UICONTROL Tools]** del diagramma del flusso di lavoro.
+L&#39;attività **Gestione contenuto** è accessibile tramite la barra degli strumenti **[!UICONTROL Tools]** del diagramma del flusso di lavoro.
 
 Le proprietà delle attività sono suddivise in quattro passaggi:
 
-* **[!UICONTROL Content]** : consente di inserire contenuto esistente o crearne uno,
-* **[!UICONTROL Update content]** : consente di modificare l’oggetto del contenuto o di aggiornare il contenuto tramite un flusso di dati XML,
+* **[!UICONTROL Content]** : consente di immettere contenuto esistente o crearne uno,
+* **[!UICONTROL Update content]** : consente di modificare l&#39;oggetto del contenuto o di aggiornare il contenuto tramite un flusso di dati XML,
 * **[!UICONTROL Action to execute]** : consente di salvare o generare contenuto,
-* **[!UICONTROL Transition]** : consente di scegliere se generare o meno una transizione di output e di assegnarle un nome.
+* **[!UICONTROL Transition]** : consente di scegliere se generare o meno una transizione di output e assegnargli un nome.
 
 ![](assets/d_ncs_content_wf.png)
 
@@ -42,7 +42,7 @@ Le proprietà delle attività sono suddivise in quattro passaggi:
 
 * **Calcolato da uno script**
 
-  Seleziona un&#39;istanza di contenuto basata su un modello JavaScript. Il codice da valutare ti consente di recuperare l’identificatore del contenuto.
+  Seleziona un&#39;istanza di contenuto basata su un modello di JavaScript. Il codice da valutare ti consente di recuperare l’identificatore del contenuto.
 
 * **Nuovo, creato tramite un modello di pubblicazione**
 
@@ -72,7 +72,7 @@ Le proprietà delle attività sono suddivise in quattro passaggi:
 
 ### Transition {#transition}
 
-Il **Generare una transizione di output** consente di aggiungere una transizione di output al **[!UICONTROL Content management]** per collegare una nuova attività all’esecuzione del flusso di lavoro. Dopo aver selezionato questa opzione, immetti un’etichetta per la transizione.
+L&#39;opzione **Genera una transizione di output** consente di aggiungere una transizione di output all&#39;attività **[!UICONTROL Content management]** per collegare una nuova attività all&#39;esecuzione del flusso di lavoro. Dopo aver selezionato questa opzione, immetti un’etichetta per la transizione.
 
 ## Esempi {#examples}
 
@@ -88,7 +88,7 @@ Il contenuto viene configurato tramite l’attività &quot;Gestione contenuto&qu
 
 Una nuova istanza di contenuto viene creata tramite il modello di pubblicazione e la cartella della stringa di contenuto.
 
-Nel nostro esempio, abbiamo sovraccaricato l’oggetto della consegna. Verrà preso in considerazione al posto di quello immesso nel **[!UICONTROL Delivery]** modello.
+Nel nostro esempio, abbiamo sovraccaricato l’oggetto della consegna. Verrà preso in considerazione al posto di quello immesso nel modello **[!UICONTROL Delivery]**.
 
 Il contenuto viene compilato automaticamente da un feed XML proveniente dall’URL inserito:
 
@@ -101,9 +101,9 @@ Il contenuto viene compilato automaticamente da un feed XML proveniente dall’U
 </book>
 ```
 
-Il formato dati non corrisponde allo schema dati immesso nel modello di pubblicazione (**cus:libro** nel nostro esempio); il **`<section>`** deve essere sostituito con **`<chapter>`** elemento. È necessario applicare il foglio di stile &quot;cus:book-workflow.xsl&quot; per apportare le modifiche necessarie.
+Il formato dati non corrisponde allo schema dati immesso nel modello di pubblicazione (**cus:book** nel nostro esempio). L&#39;elemento **`<section>`** deve essere sostituito con l&#39;elemento **`<chapter>`**. È necessario applicare il foglio di stile &quot;cus:book-workflow.xsl&quot; per apportare le modifiche necessarie.
 
-Codice sorgente del foglio di stile XSLT utilizzato:
+Codice Source del foglio di stile XSLT utilizzato:
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -140,11 +140,11 @@ Codice sorgente del foglio di stile XSLT utilizzato:
 
 L’azione finale dell’attività consiste nel salvare l’istanza di contenuto e procedere all’attività successiva.
 
-Il targeting viene effettuato tramite **Query** attività.
+Il targeting viene eseguito tramite l&#39;attività **Query**.
 
-Un **Unione AND** l’attività è stata aggiunta per garantire che la consegna venga avviata solo una volta completati l’esecuzione di query su target e gli aggiornamenti dei contenuti.
+È stata aggiunta un&#39;attività **AND-join** per assicurarsi che la consegna venga avviata solo una volta completate le query di destinazione e gli aggiornamenti del contenuto.
 
-L’azione di consegna viene configurata tramite **Consegna** attività:
+L&#39;azione di consegna è configurata tramite l&#39;attività **Delivery**:
 
 ![](assets/d_ncs_content_workflow4.png)
 
@@ -164,13 +164,13 @@ In questo esempio viene creato un blocco di contenuto e viene avviata la pubblic
 
 ![](assets/d_ncs_content_workflow5.png)
 
-Il primo **Gestione dei contenuti** attività crea un&#39;istanza di contenuto.
+La prima attività di **Gestione contenuto** crea un&#39;istanza di contenuto.
 
 ![](assets/d_ncs_content_workflow6.png)
 
 >[!NOTE]
 >
->Il **[!UICONTROL Publication]** La scheda della finestra modelli di trasformazione deve essere compilata con la posizione della destinazione da generare.
+>La scheda **[!UICONTROL Publication]** della finestra dei modelli di trasformazione deve essere compilata con la posizione della destinazione da generare.
 
 Viene aggiunta un’attività in attesa per sospendere la transizione successiva per una settimana.
 
@@ -186,7 +186,7 @@ Il contenuto da pubblicare viene immesso tramite la transizione in ingresso.
 
 L’azione finale consiste nel generare questo contenuto forzando la directory di pubblicazione.
 
-Il **Codice JavaScript** l’attività recupera il nome completo di ciascun file generato.
+L&#39;attività **JavaScript Code** recupera il nome completo di ciascun file generato.
 
 ![](assets/d_ncs_content_workflow9.png)
 
@@ -196,11 +196,11 @@ Questo esempio utilizza lo stesso concetto del primo esempio, ma crea solo l’a
 
 ![](assets/d_ncs_content_workflow10.png)
 
-Il primo **Creare una consegna** attività crea l’azione di consegna.
+La prima attività **Crea consegna** crea l&#39;azione di consegna.
 
 L’attività fork consente di avviare in parallelo il calcolo del target e la creazione dell’istanza di contenuto.
 
-Una volta eseguite le attività, la casella AND-join attiva **Consegna** attività per avviare la consegna creata in precedenza per contenuto e targeting.
+Una volta eseguite le attività, la casella AND-join attiva l&#39;attività **Delivery** per avviare la consegna creata in precedenza per contenuto e targeting.
 
 ![](assets/d_ncs_content_workflow11.png)
 
@@ -214,11 +214,11 @@ L’azione finale dell’attività consiste nel preparare e avviare la consegna.
 
 ### Importa contenuto da FTP {#importing-content-from-ftp}
 
-Se il contenuto della consegna è disponibile in un file HTML che si trova su server FTP o SFTP, puoi facilmente caricarlo nelle consegne Adobe Campaign. Fai riferimento a [questo esempio](../../workflow/using/loading-delivery-content.md).
+Se il contenuto della consegna è disponibile in un file HTML che si trova su server FTP o SFTP, puoi facilmente caricarlo nelle consegne Adobe Campaign. Consulta [questo esempio](../../workflow/using/loading-delivery-content.md).
 
 ### Importa contenuto dal connettore Amazon Simple Storage Service (S3) {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
-Se il contenuto della consegna si trova nei bucket Amazon Simple Storage Service (S3), puoi caricarlo facilmente nelle consegne Adobe Campaign. Fai riferimento a [questo esempio](../../workflow/using/loading-delivery-content.md).
+Se il contenuto della consegna si trova nei bucket Amazon Simple Storage Service (S3), puoi caricarlo facilmente nelle consegne Adobe Campaign. Consulta [questo esempio](../../workflow/using/loading-delivery-content.md).
 
 ## Aggiornamento semi-automatico {#semi-automatic-update}
 
@@ -226,11 +226,11 @@ I dati dei contenuti possono essere aggiornati in modalità &quot;semi-automatic
 
 L’attivazione del recupero dei dati viene eseguita manualmente tramite il modulo di input.
 
-L&#39;obiettivo è dichiarare un **editBt** tipo **`<input>`** nel modulo. Questo controllo comprende una zona di modifica e un pulsante per avviare l’elaborazione.
+L&#39;obiettivo è quello di dichiarare un campo **editBtn** di tipo **`<input>`** nel modulo. Questo controllo comprende una zona di modifica e un pulsante per avviare l’elaborazione.
 
 L&#39;area di modifica consente di popolare i dati delle variabili utilizzati per creare l&#39;URL del feed XML dei dati da recuperare.
 
-Il pulsante esegue **GetAndTransform** Metodo SOAP popolato in **`<input>`** tag.
+Il pulsante esegue il metodo SOAP **GetAndTransform** popolato sotto il tag **`<input>`**.
 
 La dichiarazione di controllo nella forma è la seguente:
 
@@ -246,7 +246,7 @@ La dichiarazione di controllo nella forma è la seguente:
 </input>
 ```
 
-Il **GetAndTransform** il metodo deve essere dichiarato sotto **`<enter>`** elemento del **`<input>`** tag. Questo tag considera come parametri l’URL di recupero dei dati XML da un’espressione creata in modo dinamico. Il secondo parametro della funzione è facoltativo e fa riferimento a un foglio di stile utilizzato per una trasformazione intermedia quando i dati XML in ingresso non sono nello stesso formato del contenuto.
+Il metodo **GetAndTransform** deve essere dichiarato nell&#39;elemento **`<enter>`** del tag **`<input>`**. Questo tag considera come parametri l’URL di recupero dei dati XML da un’espressione creata in modo dinamico. Il secondo parametro della funzione è facoltativo e fa riferimento a un foglio di stile utilizzato per una trasformazione intermedia quando i dati XML in ingresso non sono nello stesso formato del contenuto.
 
 L’output aggiorna il contenuto in base al percorso immesso nell’ultimo parametro.
 

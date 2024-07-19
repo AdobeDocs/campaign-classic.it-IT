@@ -13,9 +13,9 @@ ht-degree: 2%
 
 # Personalizzazione e privacy {#privacy}
 
-## Personalizzazione URL {#url-personalization}
+## URL PERSONALIZATION {#url-personalization}
 
-Quando aggiungi collegamenti personalizzati al contenuto, evita sempre di includere alcuna personalizzazione nella parte nome host dell’URL per evitare potenziali lacune di sicurezza. Gli esempi seguenti non devono mai essere utilizzati in tutti gli attributi URL &lt;`a href="">` o `<img src="">`:
+Quando aggiungi collegamenti personalizzati al contenuto, evita sempre di includere alcuna personalizzazione nella parte nome host dell’URL per evitare potenziali lacune di sicurezza. I seguenti esempi non devono mai essere utilizzati in tutti gli attributi URL &lt;`a href="">` o `<img src="">`:
 
 * `<%= url >`
 * `https://<%= url >`
@@ -25,13 +25,13 @@ Quando aggiungi collegamenti personalizzati al contenuto, evita sempre di includ
 
 ### Consiglio
 
-Per convalidare la tabella URL di tracciamento e assicurarti di non utilizzarla, esegui una query tramite [Editor query generico di Campaign](../../platform/using/steps-to-create-a-query.md) oppure crea un flusso di lavoro con i criteri del filtro in [attività query](../../workflow/using/query.md).
+Per convalidare e assicurarsi di non utilizzare quanto sopra, eseguire una query sulla tabella degli URL di tracciamento tramite [Editor query generico di Campaign](../../platform/using/steps-to-create-a-query.md) oppure creare un flusso di lavoro con criteri di filtro nell&#39;attività [query](../../workflow/using/query.md).
 
 Esempio:
 
-1. Creare un flusso di lavoro e aggiungere una **Query** attività. [Ulteriori informazioni](../../workflow/using/query.md).
+1. Crea un flusso di lavoro e aggiungi un&#39;attività **Query**. [Ulteriori informazioni](../../workflow/using/query.md).
 
-1. Apri **Query** e crea un filtro per `nmsTrackingUrl` tabella come segue:
+1. Aprire l&#39;attività **Query** e creare un filtro per la tabella `nmsTrackingUrl` nel modo seguente:
 
    `source URL starts with http://<% or source URL starts with https://<%`
 
@@ -50,11 +50,11 @@ Per migliorare la sicurezza, è stato introdotto un meccanismo di firma per il t
 >
 >Quando si fa clic su un URL firmato non valido, viene restituito questo errore: `Requested URL '…' was not found.`
 
-Inoltre, puoi utilizzare un miglioramento per disabilitare gli URL generati nelle build precedenti. Questa funzione è disabilitata per impostazione predefinita. Puoi contattare [Assistenza clienti](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per attivare questa funzione.
+Inoltre, puoi utilizzare un miglioramento per disabilitare gli URL generati nelle build precedenti. Questa funzione è disabilitata per impostazione predefinita. Puoi contattare [l&#39;Assistenza clienti](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per abilitare questa funzione.
 
 Se esegui la build 19.1.4, potrebbero verificarsi problemi con le consegne di notifiche push tramite collegamenti di tracciamento o le consegne con tag di ancoraggio. In tal caso, si consiglia di disabilitare la firma URL.
 
-In qualità di cliente ibrido, con hosting campagna o Cloud Service gestiti, devi contattare [Assistenza clienti](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) per disabilitare la firma URL.
+In qualità di cliente ibrido, Cloud Service gestiti o in hosting per Campaign, devi contattare l&#39;[Assistenza clienti](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) per disabilitare la firma URL.
 
 Se esegui Campaign in un’architettura ibrida, prima di abilitare la firma URL, assicurati che l’istanza mid-sourcing ospitata sia stata aggiornata come segue:
 
@@ -68,15 +68,15 @@ In caso contrario, potrebbero verificarsi alcuni dei seguenti problemi:
 
 Per disabilitare gli URL generati nelle build precedenti, effettua le seguenti operazioni su tutti i server Campaign contemporaneamente:
 
-1. Nel file di configurazione del server (`serverConf.xml`), modifica il **blockRedirectForUnsignedTrackingLink** opzione per **true**.
-1. Riavvia il `nlserver` servizio.
-1. Il giorno `tracking` server, riavviare il `web` server (apache2 su Debian, httpd su CentOS/RedHat, IIS su Windows).
+1. Nel file di configurazione del server (`serverConf.xml`), modificare l&#39;opzione **blockRedirectForUnsignedTrackingLink** in **true**.
+1. Riavviare il servizio `nlserver`.
+1. Sul server `tracking`, riavviare il server `web` (apache2 su Debian, httpd su CentOS/RedHat, IIS su Windows).
 
 Per abilitare la firma URL, effettua le seguenti operazioni su tutti i server Campaign contemporaneamente:
 
-1. Nel file di configurazione del server (`serverConf.xml`), modifica **signEmailLinks** opzione, per **true**.
-1. Riavvia il **nlserver** servizio.
-1. Il giorno `tracking` server, riavviare il `web` server (apache2 su Debian, httpd su CentOS/RedHat, IIS su Windows).
+1. Nel file di configurazione del server (`serverConf.xml`), modifica l&#39;opzione **signEmailLinks** in **true**.
+1. Riavviare il servizio **nlserver**.
+1. Sul server `tracking`, riavviare il server `web` (apache2 su Debian, httpd su CentOS/RedHat, IIS su Windows).
 
 ## Limitazione dei dati
 
@@ -86,17 +86,17 @@ Questa restrizione ti consente di rimuovere i campi delle password, ma di consen
 
 A tale scopo, segui i passaggi indicati di seguito:
 
-1. Accedi a **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** cartella di Campaign explorer.
+1. Selezionare la cartella **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** di Esplora campagne.
 
-1. Creare uno schema di dati, come **[!UICONTROL Extension of a schema]**.
+1. Creare uno schema di dati come **[!UICONTROL Extension of a schema]**.
 
    ![](assets/privacy-data-restriction.png)
 
-1. Scegli **[!UICONTROL External Account]** (extAccount).
+1. Scegliere **[!UICONTROL External Account]** (extAccount).
 
 1. Nell’ultima schermata della procedura guidata, modifica il nuovo &quot;srcSchema&quot; per limitare l’accesso a tutti i campi della password:
 
-   È possibile sostituire l&#39;elemento principale (`<element name="extAccount" ... >`) da:
+   È possibile sostituire l&#39;elemento principale (`<element name="extAccount" ... >`) con:
 
    ```sql
    <element name="extAccount">
@@ -162,7 +162,7 @@ L’obiettivo di questa procedura è quello di evitare che queste pagine vengano
 
 Per proteggere le pagine, effettua le seguenti operazioni:
 
-1. Aggiungi un `robots.txt` nella directory principale del server web (Apache o IIS). Di seguito è riportato il contenuto del file:
+1. Aggiungi un file `robots.txt` nella directory principale del server Web (Apache o IIS). Di seguito è riportato il contenuto del file:
 
    ```sql
    # Make changes for all web spiders
@@ -170,17 +170,17 @@ Per proteggere le pagine, effettua le seguenti operazioni:
    *Disallow: /
    ```
 
-   Per IIS, consulta [questa pagina](https://docs.microsoft.com/en-us/iis/extensions/iis-search-engine-optimization-toolkit/managing-robotstxt-and-sitemap-files).
+   Per IIS, fare riferimento a [questa pagina](https://docs.microsoft.com/en-us/iis/extensions/iis-search-engine-optimization-toolkit/managing-robotstxt-and-sitemap-files).
 
-   Per Apache, puoi inserire il file in **/var/www/robots.txt** (Debian)
+   Per Apache, puoi inserire il file in **/var/www/robots.txt** (Debian).
 
-1. A volte l’aggiunta di un **robots.txt** non è sufficiente in termini di sicurezza. Ad esempio, se un altro sito Web contiene un collegamento alla pagina, potrebbe essere visualizzato in un risultato di ricerca.
+1. A volte l&#39;aggiunta di un file **robots.txt** non è sufficiente in termini di sicurezza. Ad esempio, se un altro sito Web contiene un collegamento alla pagina, potrebbe essere visualizzato in un risultato di ricerca.
 
-   Oltre al **robots.txt** , è consigliabile aggiungere un **X-Robots-Tag** intestazione. Puoi eseguire questa operazione in Apache o IIS e nella **serverConf.xml** file di configurazione.
+   Oltre al file **robots.txt**, si consiglia di aggiungere un&#39;intestazione **X-Robots-Tag**. Puoi eseguire questa operazione in Apache o IIS e nel file di configurazione **serverConf.xml**.
 
-   Per ulteriori informazioni, consulta [questo articolo](https://developers.google.com/search/reference/robots_meta_tag).
+   Per ulteriori informazioni, consultare [questo articolo](https://developers.google.com/search/reference/robots_meta_tag).
 
 
 ## Richieste di privacy
 
-Fai riferimento a [questa pagina](../../platform/using/privacy-management.md) per informazioni generali sulla gestione della privacy e sui passaggi di implementazione in Adobe Campaign. Troverai anche best practice e una panoramica del processo utente e degli utenti tipo.
+Consulta [questa pagina](../../platform/using/privacy-management.md) per informazioni generali sulla gestione della privacy e sui passaggi di implementazione in Adobe Campaign. Troverai anche best practice e una panoramica del processo utente e degli utenti tipo.

@@ -21,7 +21,7 @@ ht-degree: 2%
 >
 >In qualità di utente v7, per procedere, assicurati che Adobe Identity Management System (IMS) sia abilitato sul tuo sistema. [Ulteriori informazioni](../../integrations/using/about-adobe-id.md).
 
-Una volta che Adobe Identity Management Service (IMS) è abilitato per la tua organizzazione, puoi richiedere il provisioning di [Pubblico Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"} integrazione con Campaign. Per farlo, invia un’e-mail a [Digital-Request@adobe.com](mailto:Digital-Request@adobe.com) con le seguenti informazioni:
+Una volta che Identity Management Service (IMS) di Adobe è abilitato per la tua organizzazione, puoi richiedere il provisioning dell&#39;integrazione [Experience Cloud Audience](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"} con Campaign. A tale scopo, inviare un&#39;e-mail a [Digital-Request@adobe.com](mailto:Digital-Request@adobe.com) con le seguenti informazioni:
 
 <table> 
  <tbody> 
@@ -35,7 +35,7 @@ Una volta che Adobe Identity Management Service (IMS) è abilitato per la tua or
   </tr> 
   <tr> 
    <td> <strong>ID organizzazione</strong><br /> </td> 
-   <td> Il tuo Organization ID. <br> Per trovare l’ID organizzazione, consulta <a href="https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=it">questa pagina</a></td> 
+   <td> Il tuo Organization ID. <br> Per trovare il tuo ID organizzazione, fai riferimento a <a href="https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=it">questa pagina</a></td> 
   </tr> 
   <tr> 
    <td> <strong>Ambiente</strong><br /> </td> 

@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ## Inviare messaggi SMS {#sending-sms-messages}
 
-Per approvare il messaggio e inviarlo ai destinatari della consegna creata, fai clic su **[!UICONTROL Send]**.
+Per approvare il messaggio e inviarlo ai destinatari della consegna creata, fare clic su **[!UICONTROL Send]**.
 
 Il processo dettagliato di convalida e invio di una consegna è presentato nelle sezioni seguenti:
 
@@ -26,7 +26,7 @@ Il processo dettagliato di convalida e invio di una consegna è presentato nelle
 
 ## Parametri avanzati {#advanced-parameters}
 
-Il **[!UICONTROL Properties]** consente di accedere al parametro di consegna avanzata. I parametri specifici per le consegne SMS si trovano in **[!UICONTROL SMS parameters]** sezione del **[!UICONTROL Delivery]** scheda.
+Il pulsante **[!UICONTROL Properties]** consente di accedere al parametro di consegna avanzata. I parametri specifici per le consegne SMS si trovano nella sezione **[!UICONTROL SMS parameters]** della scheda **[!UICONTROL Delivery]**.
 
 Sono disponibili le seguenti opzioni:
 
@@ -41,20 +41,20 @@ Sono disponibili le seguenti opzioni:
   >Controlla la legge del tuo paese relativa alla modifica dei nomi dei mittenti. Dovresti anche verificare con l’operatore se offre questa funzionalità.
 
 * **Modalità di trasmissione**: trasmissione di messaggi tramite SMS.
-* **Priorità**: livello di importanza assegnato a un messaggio. **[!UICONTROL Normal]** priorità è selezionata per impostazione predefinita. Chiedi al tuo provider di servizi informazioni sul costo degli SMS inviati con **[!UICONTROL High]** priorità.
-* **Tipo di applicazione**: scegli l’applicazione da assegnare alla consegna SMS. Il **[!UICONTROL Direct Marketing]** è selezionata per impostazione predefinita ed è la più comune.
+* **Priorità**: livello di importanza assegnato a un messaggio. Priorità **[!UICONTROL Normal]** selezionata per impostazione predefinita. Chiedere al provider di servizi informazioni sul costo degli SMS inviati con priorità **[!UICONTROL High]**.
+* **Tipo di applicazione**: scegli l&#39;applicazione da assegnare alla consegna SMS. L&#39;opzione **[!UICONTROL Direct Marketing]** è selezionata per impostazione predefinita ed è la più comune utilizzata.
 
 **Parametri specifici del connettore NetSize**
 
 ![](assets/s_user_mobile_sms_adv_netsize.png)
 
-* **Utilizzare più SMS per un singolo messaggio**: questo ti consente di inviare un messaggio lungo più di 160 caratteri tramite diversi messaggi SMS.
+* **Utilizza diversi SMS per un singolo messaggio**: questo ti consente di inviare un messaggio lungo più di 160 caratteri tramite diversi messaggi SMS.
 
 **Parametri specifici di un connettore SMPP**
 
 ![](assets/s_user_mobile_sms_adv_smpp.png)
 
-* **Numero massimo di SMS per messaggio**: questa opzione ti consente di impostare il numero di SMS da utilizzare per inviare un messaggio. Se il numero è impostato su 0, puoi utilizzare un SMS per recapitare il messaggio. Se ad esempio il numero di SMS è impostato su 1 o 2 e il messaggio supera questa soglia, non verrà inviato.
+* **Numero massimo di SMS per messaggio**: questa opzione consente di impostare il numero di SMS da utilizzare per inviare un messaggio. Se il numero è impostato su 0, puoi utilizzare un SMS per recapitare il messaggio. Se ad esempio il numero di SMS è impostato su 1 o 2 e il messaggio supera questa soglia, non verrà inviato.
 
 ## Monitorare e tenere traccia degli SMS {#monitoring-and-tracking-sms-deliveries}
 
@@ -66,7 +66,7 @@ Dopo aver inviato i messaggi, puoi monitorare e tenere traccia delle consegne. P
 
 ## Elabora messaggi in entrata {#processing-inbound-messages}
 
-Il **nlserver sms** Il modulo esegue query sul router SMS a intervalli regolari. Questo consente ad Adobe Campaign di tenere traccia dell’avanzamento delle consegne e di gestire le relazioni sullo stato e le richieste di annullamento dell’abbonamento dei destinatari.
+Il modulo **nlserver sms** esegue query sul router SMS a intervalli regolari. Questo consente ad Adobe Campaign di tenere traccia dell’avanzamento delle consegne e di gestire le relazioni sullo stato e le richieste di annullamento dell’abbonamento dei destinatari.
 
 * **Relazioni sullo stato**: visualizza i registri di consegna per controllare lo stato dei messaggi.
 
@@ -77,19 +77,19 @@ Il **nlserver sms** Il modulo esegue query sul router SMS a intervalli regolari.
   > * Le relazioni sullo stato da un account SMS esterno eliminato non vengono elaborate correttamente.
   > * Un account SMS può essere collegato solo a un singolo account esterno per garantire che le relazioni sullo stato siano attribuite all’account corretto
 
-* **Annullamento iscrizione**: i destinatari che desiderano interrompere la ricezione delle consegne SMS possono restituire un messaggio contenente la parola STOP. Se il tuo provider lo consente in base ai termini del contratto, puoi recuperare i messaggi tramite il **SMS in entrata** attività del flusso di lavoro e quindi creare una query per abilitare **Non contattare più questo destinatario** per i destinatari interessati.
+* **Annullamento dell&#39;abbonamento**: i destinatari che desiderano interrompere la ricezione delle consegne SMS possono restituire un messaggio contenente la parola STOP. Se il provider lo consente in base ai termini del contratto, è possibile recuperare messaggi tramite l&#39;attività del flusso di lavoro **SMS in entrata** e quindi creare una query per abilitare l&#39;opzione **Non contattare più questo destinatario** per i destinatari interessati.
 
-  Consulta la sezione [Flussi di lavoro](../../workflow/using/architecture.md) guida.
+  Consulta la guida [Flussi di lavoro](../../workflow/using/architecture.md).
 
 ## Schema InSMS {#insms-schema}
 
 Lo schema InSMS contiene informazioni relative agli SMS in arrivo. Una descrizione di questi campi è disponibile tramite l&#39;attributo desc.
 
-* **messaggio**: contenuto dell’SMS ricevuto.
-* **origine**: numero di cellulare all’origine del messaggio.
+* **messaggio**: contenuto dell&#39;SMS ricevuto.
+* **origine**: numero di cellulare all&#39;origine del messaggio.
 * **providerId**: identificatore del messaggio restituito da SMSC (centro messaggi).
-* **creato**: data in cui il messaggio in arrivo è stato inserito in Adobe Campaign.
-* **extAccount**: account esterno di Adobe Campaign.
+* **created**: data di inserimento del messaggio in arrivo in Adobe Campaign.
+* **extAccount**: account esterno Adobe Campaign.
 
   >[!IMPORTANT]
   >
@@ -98,14 +98,14 @@ Lo schema InSMS contiene informazioni relative agli SMS in arrivo. Una descrizio
   >Se l&#39;operatore in uso non è NetSize, questi campi vengono considerati vuoti.
 
 * **alias**: alias del messaggio in arrivo.
-* **separatore**: separatore tra l’alias e il corpo del messaggio.
-* **messageDate**: data del messaggio fornita dall’operatore.
-* **receivalDate**: il messaggio della data dall’operatore è stato ricevuto da SMSC (centro messaggi).
-* **deliveryDate**: messaggio sulla data inviato da SMSC (centro messaggi).
-* **largeAccount**: codice dell’account cliente collegato agli SMS in entrata.
-* **countryCode**: codice del paese dell’operatore.
-* **operatorCode**: codice di rete dell’operatore.
-* **linkedSmsId**: identificatore Adobe Campaign (broadlogId) collegato all’SMS in uscita, dove questo SMS è la risposta.
+* **separatore**: separatore tra l&#39;alias e il corpo del messaggio.
+* **messageDate**: data del messaggio fornita dall&#39;operatore.
+* **receivalDate**: il messaggio della data dall&#39;operatore è stato ricevuto da SMSC (centro messaggi).
+* **deliveryDate**: messaggio di data inviato da SMSC (centro messaggi).
+* **largeAccount**: codice account cliente collegato agli SMS in arrivo.
+* **countryCode**: codice paese operatore.
+* **operatorCode**: codice di rete operatore.
+* **linkedSmsId**: identificatore Adobe Campaign (broadlogId) collegato all&#39;SMS in uscita, dove questo SMS è la risposta.
 
 ## Gestisci risposte automatiche (regolamento americano) {#managing-automatic-replies--american-regulation-}
 
@@ -117,7 +117,7 @@ Il nome del mittente per questo tipo di messaggio è un codice breve utilizzato 
 
 >[!IMPORTANT]
 >
->La procedura dettagliata seguente è valida solo per i connettori SMPP, ad eccezione del connettore SMPP generico esteso. Per ulteriori informazioni, consulta [Creare un account esterno SMPP](sms-set-up.md#creating-an-smpp-external-account) sezione.
+>La procedura dettagliata seguente è valida solo per i connettori SMPP, ad eccezione del connettore SMPP generico esteso. Per ulteriori informazioni, consulta la sezione [Creare un account esterno SMPP](sms-set-up.md#creating-an-smpp-external-account).
 >
 >Esso fa parte del processo di certificazione svolto dagli operatori americani per campagne di marketing negli Stati Uniti. Queste risposte ai messaggi SMS dell’abbonato contenenti la parola chiave devono essere rimandate all’abbonato immediatamente dopo aver ricevuto un messaggio da parte loro.
 
@@ -139,9 +139,9 @@ Il nome del mittente per questo tipo di messaggio è un codice breve utilizzato 
    </autoreply>
    ```
 
-1. Per **nome** attributo del **`<shortcode>`** , specifica il codice breve che verrà visualizzato al posto del nome del mittente del messaggio.
+1. Per l&#39;attributo **name** del tag **`<shortcode>`**, specificare il codice breve che verrà visualizzato al posto del nome del mittente del messaggio.
 
-   In ogni **`<reply>`** , immetti il **parola chiave** con una parola chiave e **text** con il messaggio da inviare per questa parola chiave.
+   In ogni tag **`<reply>`** immettere l&#39;attributo **keyword** con una parola chiave e l&#39;attributo **text** con il messaggio che si desidera inviare per questa parola chiave.
 
    >[!NOTE]
    >
@@ -156,11 +156,11 @@ Il nome del mittente per questo tipo di messaggio è un codice breve utilizzato 
    <reply keyword="QUIT" text="You will not receive SMS anymore" />
    ```
 
-1. Al termine, salva il file con il nome **smsAutoReply.xml**.
+1. Al termine, salvare il file con il nome **smsAutoReply.xml**.
 
    In Linux, il nome del file distingue tra maiuscole e minuscole.
 
-1. Copia il file in **conf** in Adobe Campaign, nella stessa posizione del server Web.
+1. Copiare il file nella directory **conf** di Adobe Campaign, nello stesso punto del server Web.
 
 >[!IMPORTANT]
 >

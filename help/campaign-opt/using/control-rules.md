@@ -20,18 +20,18 @@ Le regole di controllo ti consentono di garantire la validità e la qualità dei
 
 Una serie di regole pronte all’uso consente di eseguire i controlli standard. Questi controlli (visualizzati in grassetto nell’interfaccia) sono:
 
-* **[!UICONTROL Object approval]** (e-mail): verifica che l’oggetto e l’indirizzo del mittente non contengano caratteri speciali che potrebbero causare problemi a determinati agenti di posta.
-* **[!UICONTROL URL label approval]** (e-mail): controlla che ogni URL di tracciamento sia associato a un’etichetta.
-* **[!UICONTROL URL approval]** (e-mail): controlla gli URL di tracciamento (presenza del carattere &quot;&amp;&quot;).
-* **[!UICONTROL Message size approval]** (mobile): controlla la dimensione dei messaggi SMS.
-* **[!UICONTROL Validity period check]** (e-mail): controlla che il periodo di validità della consegna sia sufficientemente lungo da consentire l’invio di tutti i messaggi.
+* **[!UICONTROL Object approval]** (e-mail): verifica che l&#39;oggetto e l&#39;indirizzo del mittente non contengano caratteri speciali che potrebbero causare problemi a determinati agenti di posta.
+* **[!UICONTROL URL label approval]** (e-mail): verifica che ogni URL di tracciamento presenti un&#39;etichetta.
+* **[!UICONTROL URL approval]** (e-mail): verifica gli URL di tracciamento (presenza del carattere &quot;&amp;&quot;).
+* **[!UICONTROL Message size approval]** (cellulare): verifica la dimensione dei messaggi SMS.
+* **[!UICONTROL Validity period check]** (e-mail): verifica che il periodo di validità della consegna sia sufficientemente lungo da consentire l&#39;invio di tutti i messaggi.
 * **[!UICONTROL Proof size check]** (tutti i canali): genera un messaggio di errore se la popolazione target della bozza supera i 100 destinatari.
-* **[!UICONTROL Wave scheduling check]** (e-mail): controlla che l’ultimo ciclo di consegne inizi prima della fine del periodo di validità, se la consegna è suddivisa in più cicli.
-* **[!UICONTROL Unsubscription link approval]** (e-mail): controlla la presenza di almeno un URL di annullamento dell’abbonamento (rinuncia) in ogni contenuto (HTML e Testo).
+* **[!UICONTROL Wave scheduling check]** (e-mail): verifica che l&#39;ultimo numero di consegne sia programmato per iniziare prima della fine del periodo di validità, se la consegna è suddivisa in più scaglioni.
+* **[!UICONTROL Unsubscription link approval]** (e-mail): verifica la presenza di almeno un URL di annullamento dell&#39;abbonamento (rinuncia) in ogni contenuto (HTML e testo).
 
 ## Creazione di una regola di controllo {#creating-a-control-rule}
 
-È possibile creare nuove regole di controllo in base alle tue esigenze. A questo scopo, crea un’ **[!UICONTROL Control]** regola di tipologia e immettere la formula di controllo in SQL nel **[!UICONTROL Code]** scheda.
+È possibile creare nuove regole di controllo in base alle tue esigenze. A tale scopo, creare una regola di tipologia **[!UICONTROL Control]** e immettere la formula di controllo in SQL nella scheda **[!UICONTROL Code]**.
 
 **Esempio:**
 
@@ -39,11 +39,11 @@ Nell’esempio seguente verrà creata una regola per impedire l’invio di un’
 
 Applica i seguenti passaggi:
 
-1. Creare un **[!UICONTROL Control]** regola di tipologia. Seleziona un **[!UICONTROL Warning]** livello di avviso.
+1. Creare una regola di tipologia **[!UICONTROL Control]**. Selezionare un livello di avviso **[!UICONTROL Warning]**.
 
    ![](assets/campaign_opt_create_control_01.png)
 
-1. In **[!UICONTROL Code]** , immetti lo script per applicare la soglia desiderata, come illustrato di seguito:
+1. Nella scheda **[!UICONTROL Code]**, immettere lo script per applicare la soglia desiderata, come illustrato di seguito:
 
    ![](assets/campaign_opt_create_control_02.png)
 
@@ -67,6 +67,6 @@ Applica i seguenti passaggi:
 
    ![](assets/campaign_opt_create_control_05.png)
 
-   Al termine dell&#39;analisi, la **[!UICONTROL Confirm delivery]** non sarà disponibile.
+   Al termine dell&#39;analisi, il pulsante **[!UICONTROL Confirm delivery]** non sarà disponibile.
 
    ![](assets/campaign_opt_create_control_06.png)

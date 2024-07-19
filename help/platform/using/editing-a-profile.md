@@ -30,9 +30,9 @@ Le schede e il loro contenuto dipendono dalla configurazione e dai pacchetti ins
 
 >[!CAUTION]
 >
->Lo schema XML e il modulo relativo ai campi della tabella dei profili sono accessibili tramite **[!UICONTROL Administration > Configuration > Data schemas]** della struttura Adobe Campaign. Solo gli utenti esperti possono apportare modifiche a questi schemi.
+>Lo schema XML e il modulo relativo ai campi nella tabella dei profili sono accessibili tramite il nodo **[!UICONTROL Administration > Configuration > Data schemas]** della struttura Adobe Campaign. Solo gli utenti esperti possono apportare modifiche a questi schemi.
 >
->Per ulteriori informazioni, fare riferimento a [questa pagina](../../configuration/using/about-schema-edition.md).
+>Per ulteriori informazioni, consultare [questa pagina](../../configuration/using/about-schema-edition.md).
 
 ## Scheda Generale {#general-tab}
 
@@ -42,7 +42,7 @@ Questa schermata contiene tutti i dati generali sul profilo selezionato. In part
 
 >[!NOTE]
 >
->Quando **[!UICONTROL No longer contact (by any channel)]** se è selezionata l’opzione, significa che il profilo è in fase di inserisco nell&#39;elenco Bloccati, ovvero ha espresso il desiderio di non essere contattato (ad esempio, facendo clic su un collegamento di annullamento dell’abbonamento in una newsletter). Non saranno più oggetto di consegne su alcun canale (e-mail, direct mailing, ecc.). Per ulteriori informazioni, consulta [questa pagina](../../delivery/using/understanding-quarantine-management.md).
+>Quando l&#39;opzione **[!UICONTROL No longer contact (by any channel)]** è selezionata, significa che il profilo è in fase di inserisco nell&#39;elenco Bloccati di annullamento dell&#39;iscrizione, ovvero il profilo ha espresso il desiderio di non essere contattato (ad esempio, facendo clic su un collegamento di annullamento dell&#39;iscrizione in una newsletter). Non saranno più oggetto di consegne su alcun canale (e-mail, direct mailing, ecc.). Per ulteriori informazioni, consulta [questa pagina](../../delivery/using/understanding-quarantine-management.md).
 
 ## Scheda Informazioni di contatto {#contact-information-tab}
 
@@ -54,17 +54,17 @@ Questa schermata mostra l’indice di qualità dell’indirizzo e quanti errori 
 
 ## Altra scheda {#other-tab}
 
-Questa schermata contiene campi definiti dall’utente che possono essere personalizzati in base ai requisiti. Puoi anche modificare i nomi dei campi e definirne il formato tramite **[!UICONTROL Field properties...]**, come illustrato di seguito:
+Questa schermata contiene campi definiti dall’utente che possono essere personalizzati in base ai requisiti. È inoltre possibile modificare i nomi dei campi e definirne il formato tramite **[!UICONTROL Field properties...]**, come illustrato di seguito:
 
 ![](assets/s_ncs_user_profile_others_tab.png)
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle proprietà dei campi e sull’aggiunta di campi, consulta [questa pagina](../../configuration/using/new-field-wizard.md).
+>Per ulteriori informazioni sulle proprietà dei campi e sull&#39;aggiunta di campi, consulta [questa pagina](../../configuration/using/new-field-wizard.md).
 
 ## Scheda Elenchi {#lists-tab}
 
-Questa schermata visualizza i gruppi a cui appartiene il profilo selezionato. Clic **[!UICONTROL Add]** per sottoscrivere il profilo a un elenco. Clic **[!UICONTROL Detail]** per visualizzare la descrizione e l’elenco dei profili nell’elenco selezionato.
+Questa schermata visualizza i gruppi a cui appartiene il profilo selezionato. Fare clic su **[!UICONTROL Add]** per sottoscrivere il profilo a un elenco. Fare clic su **[!UICONTROL Detail]** per visualizzare la descrizione e l&#39;elenco dei profili nell&#39;elenco selezionato.
 
 ![](assets/s_ncs_user_profile_groups_tab_details.png)
 
@@ -76,7 +76,7 @@ Questa schermata contiene i servizi di informazioni a cui il profilo si è abbon
 
 ![](assets/s_ncs_user_profile_subscript_tab_details.png)
 
-Il **[!UICONTROL Detail]** visualizza le proprietà della sottoscrizione selezionata. Il **[!UICONTROL Add]** per aggiungere manualmente un nuovo abbonamento.
+Il pulsante **[!UICONTROL Detail]** visualizza le proprietà della sottoscrizione selezionata. Il pulsante **[!UICONTROL Add]** viene utilizzato per aggiungere manualmente una nuova sottoscrizione.
 
 Per ulteriori informazioni, consulta [questa pagina](../../delivery/using/managing-subscriptions.md).
 

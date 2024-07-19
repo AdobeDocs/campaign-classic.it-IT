@@ -33,7 +33,7 @@ Per impostare questa interazione:
 
 ### Creazione di un ambiente anonimo {#creating-an-anonymous-environment}
 
-Segui la procedura descritta in [Creazione di un ambiente di offerta](../../interaction/using/live-design-environments.md#creating-an-offer-environment) per creare un ambiente anonimo basato su **Visitor**&#39; dimensioni.
+Segui la procedura descritta in [Creazione di un ambiente di offerta](../../interaction/using/live-design-environments.md#creating-an-offer-environment) per creare il tuo ambiente anonimo in base alle dimensioni di **Visitatori**&#39;.
 
 Otterrai una struttura ad albero contenente il nuovo ambiente:
 
@@ -41,8 +41,8 @@ Otterrai una struttura ad albero contenente il nuovo ambiente:
 
 ### Creazione di spazi di offerta anonimi {#creating-anonymous-offer-spaces}
 
-1. Nell’ambiente anonimo (**Visitor**) passare al **[!UICONTROL Administration]** > **[!UICONTROL Spaces]** nodo.
-1. Clic **[!UICONTROL New]** per creare canali di chiamata.
+1. Nell&#39;ambiente anonimo (**Visitatori**) passare al nodo **[!UICONTROL Administration]** > **[!UICONTROL Spaces]**.
+1. Fare clic su **[!UICONTROL New]** per creare i canali di chiamata.
 
    ![](assets/offer_inbound_anonymous_example_010.png)
 
@@ -50,7 +50,7 @@ Otterrai una struttura ad albero contenente il nuovo ambiente:
    >
    >Lo spazio viene collegato automaticamente all’ambiente anonimo.
 
-1. Modifica l’etichetta e seleziona la **[!UICONTROL Inbound Web]** canale. È inoltre necessario controllare il **[!UICONTROL Enable unitary mode]** casella.
+1. Cambia l&#39;etichetta e seleziona il canale **[!UICONTROL Inbound Web]**. Selezionare anche la casella **[!UICONTROL Enable unitary mode]**.
 
    ![](assets/offer_inbound_anonymous_example_006.png)
 
@@ -86,12 +86,12 @@ Otterrai una struttura ad albero contenente il nuovo ambiente:
 
 ### Creazione di una categoria di offerta e di un tema {#creating-an-offer-category-and-a-theme}
 
-1. Vai a **[!UICONTROL Offer catalog]** nell’ambiente appena creato.
-1. Fare clic con il pulsante destro del mouse **[!UICONTROL Offer catalog]** e seleziona **[!UICONTROL Create a new 'Offer category' folder]**.
+1. Passa al nodo **[!UICONTROL Offer catalog]** all&#39;interno dell&#39;ambiente appena creato.
+1. Fare clic con il pulsante destro del mouse sul nodo **[!UICONTROL Offer catalog]** e selezionare **[!UICONTROL Create a new 'Offer category' folder]**.
 
    Denomina la nuova categoria, **Prodotti finanziari** ad esempio.
 
-1. Passa a **[!UICONTROL Eligibility]** e immetti **finanziamento** come tema, quindi salva le modifiche.
+1. Vai alla scheda **[!UICONTROL Eligibility]** della categoria e immetti **finanziamento** come tema, quindi salva le modifiche.
 
    ![](assets/offer_inbound_anonymous_example_023.png)
 
@@ -110,17 +110,17 @@ Otterrai una struttura ad albero contenente il nuovo ambiente:
 
    ![](assets/offer_inbound_anonymous_example_015.png)
 
-1. Vai a **[!UICONTROL Eligibility]** e specificare il peso delle offerte in base ai relativi contesti applicativi.
+1. Passa alla scheda **[!UICONTROL Eligibility]** e specifica il peso delle offerte in base ai relativi contesti di applicazione.
 
    In questo esempio, l’offerta è configurata per essere visualizzata nella home page del sito come priorità fino alla fine dell’anno.
 
    ![](assets/offer_inbound_anonymous_example_016.png)
 
-1. Vai a **[!UICONTROL Content]** e definiscono il contenuto dell’offerta.
+1. Passa alla scheda **[!UICONTROL Content]** e definisci il contenuto dell&#39;offerta.
 
    >[!NOTE]
    >
-   >Puoi selezionare **[!UICONTROL Content definitions]** per visualizzare l&#39;elenco degli elementi necessari per lo spazio web.
+   >È possibile selezionare **[!UICONTROL Content definitions]** per visualizzare l&#39;elenco degli elementi necessari per lo spazio Web.
 
    ![](assets/offer_inbound_anonymous_example_017.png)
 
@@ -128,14 +128,14 @@ Otterrai una struttura ad albero contenente il nuovo ambiente:
 
    ![](assets/offer_inbound_anonymous_example_018.png)
 
-1. Vai a **[!UICONTROL Eligibility]** e applica lo stesso peso della prima offerta.
+1. Passa alla scheda **[!UICONTROL Eligibility]** e applica lo stesso peso della prima offerta.
 1. Esegui il ciclo di approvazione per ogni offerta per renderla disponibile nell’ambiente online, insieme ai relativi spazi dell’offerta approvati.
 
 ### Configurare lo spazio dell’offerta web sul sito web {#configure-the-web-offer-space-on-the-website}
 
-Per rendere visibili sul sito web le offerte appena configurate, inserisci un codice JavaScript nella pagina HTML del sito per richiamare il motore di interazione (per ulteriori informazioni, consulta [Informazioni sui canali in entrata](../../interaction/using/about-inbound-channels.md)).
+Per rendere visibili sul sito Web le offerte appena configurate, inserisci un codice JavaScript nella pagina HTML del sito per richiamare il motore di interazione (per ulteriori informazioni, consulta [Informazioni sui canali in entrata](../../interaction/using/about-inbound-channels.md)).
 
-1. Vai alla pagina HTML e inserisci un attributo @id con un valore corrispondente al nome interno dello spazio dell’offerta anonimo creato in precedenza (fai riferimento a [Creazione di spazi di offerta anonimi](#creating-anonymous-offer-spaces)), preceduto da **i_**.
+1. Vai alla pagina HTML e inserisci un attributo @id con un valore corrispondente al nome interno dello spazio delle offerte anonimo creato in precedenza (fai riferimento a [Creazione di spazi delle offerte anonimi](#creating-anonymous-offer-spaces)), preceduto da **i_**.
 
    ![](assets/offer_inbound_anonymous_example_019.png)
 
@@ -143,9 +143,9 @@ Per rendere visibili sul sito web le offerte appena configurate, inserisci un co
 
    ![](assets/offer_inbound_anonymous_example_020.png)
 
-   Le caselle URL blu sopra corrispondono al nome dell’istanza, al nome interno dell’ambiente (fai riferimento a [Creazione di un ambiente anonimo](#creating-an-anonymous-environment)) e il tema collegato alla categoria ([Creazione di una categoria di offerta e di un tema](#creating-an-offer-category-and-a-theme)). Quest&#39;ultimo è facoltativo.
+   Le caselle URL blu sopra corrispondono al nome dell&#39;istanza, al nome interno dell&#39;ambiente (fare riferimento a [Creazione di un ambiente anonimo](#creating-an-anonymous-environment)) e al tema collegato alla categoria ([Creazione di una categoria di offerta e di un tema](#creating-an-offer-category-and-a-theme)). Quest&#39;ultimo è facoltativo.
 
-Quando un visitatore accede alla home page del sito web, le offerte con **finanziamento** Il tema viene visualizzato come configurato nella pagina HTML.
+Quando un visitatore accede alla home page del sito Web, le offerte con il tema **finanziamento** vengono visualizzate come configurate nella pagina di HTML.
 
 ![](assets/offer_inbound_anonymous_example_022.png)
 
@@ -161,7 +161,7 @@ Questo caso di studio si basa sullo scenario seguente:
 
    ![](assets/offer_inbound_fallback_example_050.png)
 
-   Sulla pagina vengono visualizzate tre offerte anonime: due **Proposta d&#39;acquisto** offerte per i prodotti Neobank e un’offerta da un partner Neobank.
+   Nella pagina vengono visualizzate tre offerte anonime: due **offerte migliori** per i prodotti Neobank e un&#39;offerta da un partner Neobank.
 
    ![](assets/offer_inbound_fallback_example_051.png)
 
@@ -197,25 +197,25 @@ Applica i seguenti passaggi:
 
 ### Creazione di un ambiente per i contatti anonimi {#creating-an-environment-for-anonymous-contacts}
 
-1. Creare un ambiente di offerta per le interazioni in entrata anonime tramite la procedura guidata di mappatura della consegna (**Visitatore** mapping). Per ulteriori informazioni, consulta [Creazione di un ambiente di offerta](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+1. Crea un ambiente di offerta per le interazioni in entrata anonime tramite la procedura guidata di mappatura della consegna (**Mappatura visitatore**). Per ulteriori informazioni, consulta [Creazione di un ambiente di offerta](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
    ![](assets/offer_env_anonymous_003.png)
 
 ### Configurazione degli spazi di offerta per l’ambiente anonimo {#configuring-offer-spaces-for-the-anonymous-environment}
 
-Le offerte che devono essere presentate sul sito web appartengono a due diverse categorie: **Proposta d&#39;acquisto** e **Partner**. In questo esempio, creeremo uno spazio di offerta specifico per ogni categoria.
+Le offerte che devono essere presentate sul sito Web appartengono a due diverse categorie: **Proposta d&#39;acquisto** e **Partner**. In questo esempio, creeremo uno spazio di offerta specifico per ogni categoria.
 
-Per creare lo spazio dell’offerta in modo che corrisponda al **Proposta d&#39;acquisto** categoria, applica il seguente processo:
+Per creare lo spazio dell&#39;offerta in modo che corrisponda alla categoria **Offerta migliore**, applica il seguente processo:
 
 1. Nella struttura Adobe Campaign, vai all’ambiente anonimo appena creato e aggiungi uno spazio di offerta.
 
    ![](assets/offer_inbound_fallback_example_023.png)
 
-1. Crea un nuovo **[!UICONTROL Inbound web]** digitare spazio.
+1. Crea un nuovo spazio di tipo **[!UICONTROL Inbound web]**.
 
    ![](assets/offer_inbound_fallback_example_024.png)
 
-1. Immetti un’etichetta per esso: **Migliore offerta anonima per il Web** ad esempio.
+1. Immetti un&#39;etichetta per l&#39;offerta: **Migliore offerta anonima per il Web** per esempio.
 1. Aggiungi i campi di contenuto dell’offerta utilizzati per questo spazio dell’offerta e configura le funzioni di rendering.
 
    ![](assets/offer_inbound_fallback_example_025.png)
@@ -224,20 +224,20 @@ Per creare lo spazio dell’offerta in modo che corrisponda al **Proposta d&#39;
    >
    >La funzione di rendering deve denominare i campi utilizzati per lo spazio nell’ordine in cui erano stati precedentemente selezionati in modo che le offerte vengano visualizzate correttamente.
 
-1. Utilizza lo stesso processo per creare uno spazio dell’offerta in entrata per il canale web, in modo che corrisponda al **Partner** categoria.
+1. Utilizza lo stesso processo per creare uno spazio dell&#39;offerta del canale web in entrata corrispondente alla categoria **Partner**.
 
    ![](assets/offer_inbound_fallback_example_026.png)
 
 ### Creazione di categorie di offerta in un ambiente anonimo {#creating-offer-categories-in-an-anonymous-environment}
 
-Per iniziare, crea due categorie di offerta: **Proposta d&#39;acquisto** categoria e **Partner** categoria. Ogni categoria conterrà due offerte per i contatti anonimi.
+Inizia creando due categorie di offerta: la categoria **Proposta d&#39;acquisto** e la categoria **Partner**. Ogni categoria conterrà due offerte per i contatti anonimi.
 
-1. Vai a **[!UICONTROL Offer catalog]** nell’ambiente anonimo appena creato.
-1. Aggiungi un **[!UICONTROL Offer category]** cartella con **Proposta d&#39;acquisto** come etichetta.
+1. Vai a **[!UICONTROL Offer catalog]** nell&#39;ambiente anonimo appena creato.
+1. Aggiungi una cartella **[!UICONTROL Offer category]** con **Proposta d&#39;acquisto** come etichetta.
 
    ![](assets/offer_inbound_fallback_example_027.png)
 
-1. Creare una seconda categoria con **Partner** come etichetta.
+1. Crea una seconda categoria con **Partner** come etichetta.
 
    ![](assets/offer_inbound_fallback_example_028.png)
 
@@ -245,57 +245,57 @@ Per iniziare, crea due categorie di offerta: **Proposta d&#39;acquisto** categor
 
 Ora creeremo due offerte in ciascuna delle categorie create in precedenza.
 
-1. Vai a **Proposta d&#39;acquisto** e creare un’offerta anonima.
+1. Vai alla categoria **Offerta migliore** e crea un&#39;offerta anonima.
 
    ![](assets/offer_inbound_fallback_example_029.png)
 
-1. Vai a **[!UICONTROL Eligibility]** e specificare il peso delle offerte in base ai relativi contesti applicativi.
+1. Passa alla scheda **[!UICONTROL Eligibility]** e specifica il peso delle offerte in base ai relativi contesti di applicazione.
 
    ![](assets/offer_inbound_fallback_example_030.png)
 
-1. Vai a **[!UICONTROL Content]** e definiscono il contenuto dell’offerta.
+1. Passa alla scheda **[!UICONTROL Content]** e definisci il contenuto dell&#39;offerta.
 
    ![](assets/offer_inbound_fallback_example_032.png)
 
-1. Creare una seconda offerta in **Proposta d&#39;acquisto** categoria.
+1. Crea una seconda offerta nella categoria **Proposta d&#39;acquisto**.
 
    ![](assets/offer_inbound_fallback_example_031.png)
 
-1. Vai a **Partner** e creare un’offerta anonima.
-1. Vai a **[!UICONTROL Content]** e definiscono il contenuto dell’offerta.
+1. Vai alla categoria **Partner** e crea un&#39;offerta anonima.
+1. Passa alla scheda **[!UICONTROL Content]** e definisci il contenuto dell&#39;offerta.
 
    ![](assets/offer_inbound_fallback_example_033.png)
 
-1. Vai a **[!UICONTROL Eligibility]** e specificare il peso delle offerte in base ai relativi contesti applicativi.
+1. Passa alla scheda **[!UICONTROL Eligibility]** e specifica il peso delle offerte in base ai relativi contesti di applicazione.
 
    ![](assets/offer_inbound_fallback_example_034.png)
 
-1. Crea una seconda offerta per **Partner** categoria.
+1. Crea una seconda offerta per la categoria **Partner**.
 
    ![](assets/offer_inbound_fallback_example_035.png)
 
-1. Vai a **[!UICONTROL Eligibility]** e applica lo stesso peso applicato alla prima offerta di questa categoria in modo che le offerte vengano visualizzate in successione sul sito web.
+1. Passa alla scheda **[!UICONTROL Eligibility]** e applica lo stesso peso applicato alla prima offerta di questa categoria in modo che le offerte vengano visualizzate in successione sul sito Web.
 
    ![](assets/offer_inbound_fallback_example_036.png)
 
-1. Esegui il ciclo di approvazione per ogni offerta per iniziare a renderla live. Durante l&#39;approvazione del contenuto, attiva **Partner** o **Proposta d&#39;acquisto** spazio dell’offerta, in base all’offerta.
+1. Esegui il ciclo di approvazione per ogni offerta per iniziare a renderla live. Quando approvi il contenuto, attiva lo spazio dell&#39;offerta **Partner** o **Proposta d&#39;acquisto**, in base all&#39;offerta.
 
 ### Configurare gli spazi dell’offerta nell’ambiente identificato {#configure-the-offer-spaces-in-the-identified-environment}
 
-Le offerte che state per presentare sul sito sono prese da due diverse categorie: **Proposta d&#39;acquisto** e **Partner**. In questo esempio, vogliamo creare uno spazio specifico per ogni categoria.
+Le offerte che presenterai sul sito Web provengono da due diverse categorie: **Proposta d&#39;acquisto** e **Partner**. In questo esempio, vogliamo creare uno spazio specifico per ogni categoria.
 
-Per creare i due spazi dell’offerta, applica la stessa procedura applicata agli spazi dell’offerta anonimi. Fai riferimento a [Configurazione degli spazi di offerta per l’ambiente anonimo](#configuring-offer-spaces-for-the-anonymous-environment).
+Per creare i due spazi dell’offerta, applica la stessa procedura applicata agli spazi dell’offerta anonimi. Consulta [Configurazione degli spazi dell&#39;offerta per l&#39;ambiente anonimo](#configuring-offer-spaces-for-the-anonymous-environment).
 
-1. Nella struttura Adobe Campaign, vai all’ambiente appena creato e aggiungi **Proposta d&#39;acquisto** e **Partner** spazi dell’offerta.
-1. Applicare il processo descritto in [Configurazione degli spazi di offerta per l’ambiente anonimo](#configuring-offer-spaces-for-the-anonymous-environment).
+1. Nella struttura Adobe Campaign, vai all&#39;ambiente appena creato e aggiungi **spazi di offerta migliore** e **spazi di offerta partner**.
+1. Applica il processo descritto in [Configurazione degli spazi di offerta per l&#39;ambiente anonimo](#configuring-offer-spaces-for-the-anonymous-environment).
 
    ![](assets/offer_inbound_fallback_example_005.png)
 
-1. Seleziona la **[!UICONTROL Fall back on an anonymous environment if no individuals were identified]** opzione.
+1. Selezionare l&#39;opzione **[!UICONTROL Fall back on an anonymous environment if no individuals were identified]**.
 
    ![](assets/offer_inbound_fallback_example_006.png)
 
-1. Dall’elenco a discesa, seleziona lo spazio anonimo dell’offerta Web creato in precedenza (consulta [Configurazione degli spazi di offerta per l’ambiente anonimo](#configuring-offer-spaces-for-the-anonymous-environment)).
+1. Utilizzando l&#39;elenco a discesa, selezionare lo spazio delle offerte Web anonimo creato in precedenza (fare riferimento a [Configurazione degli spazi delle offerte per l&#39;ambiente anonimo](#configuring-offer-spaces-for-the-anonymous-environment)).
 
    ![](assets/offer_inbound_fallback_example_007.png)
 
@@ -304,7 +304,7 @@ Per creare i due spazi dell’offerta, applica la stessa procedura applicata agl
 In questo esempio, l’identificazione dei contatti avviene tramite l’indirizzo e-mail nel database di Adobe Campaign. Per aggiungere l’e-mail del destinatario allo spazio, applica il seguente processo:
 
 1. Nell’ambiente identificato, passa alla cartella dello spazio delle offerte.
-1. Seleziona la **Proposta d&#39;acquisto** spazio dell’offerta e clic **[!UICONTROL Advanced parameters]**.
+1. Seleziona lo spazio dell&#39;offerta **Proposta d&#39;acquisto** e fai clic su **[!UICONTROL Advanced parameters]**.
 
    ![](assets/offer_inbound_fallback_example_044.png)
 
@@ -312,21 +312,21 @@ In questo esempio, l’identificazione dei contatti avviene tramite l’indirizz
 
    ![](assets/offer_inbound_fallback_example_046.png)
 
-1. Clic **[!UICONTROL Edit expression]**, vai alla tabella dei destinatari e seleziona la **[!UICONTROL Email]** campo.
+1. Fare clic su **[!UICONTROL Edit expression]**, passare alla tabella dei destinatari e selezionare il campo **[!UICONTROL Email]**.
 
    ![](assets/offer_inbound_fallback_example_047.png)
 
-1. Clic **[!UICONTROL OK]** per chiudere **[!UICONTROL Advanced parameters]** e terminare la configurazione della **Proposta d&#39;acquisto** spazio dell’offerta.
-1. Applica lo stesso processo per **Partner** spazio dell’offerta.
+1. Fai clic su **[!UICONTROL OK]** per chiudere la finestra **[!UICONTROL Advanced parameters]** e completare la configurazione dello spazio dell&#39;offerta **Proposta d&#39;acquisto**.
+1. Applica lo stesso processo per lo spazio dell&#39;offerta **Partner**.
 
    ![](assets/offer_inbound_fallback_example_048.png)
 
 ### Creazione di categorie di offerta in un ambiente identificato {#creating-offer-categories-in-an-identified-environment}
 
-Verranno create due categorie separate: **Proposta d&#39;acquisto** categoria e **Partner** categoria, ciascuna con due offerte personalizzate.
+Stiamo per creare due categorie separate: la categoria **Proposta d&#39;acquisto** e la categoria **Partner**, ciascuna con due offerte personalizzate.
 
-1. Vai a **[!UICONTROL Offer catalogs]** nell&#39;ambiente identificato.
-1. Come nell’ambiente anonimo, aggiungi due **[!UICONTROL Offer category]** cartelle con **Proposta d&#39;acquisto** e **Partner** come etichette.
+1. Passare al nodo **[!UICONTROL Offer catalogs]** nell&#39;ambiente identificato.
+1. Come nell&#39;ambiente anonimo, aggiungi due cartelle **[!UICONTROL Offer category]** con **Proposta d&#39;acquisto** e **Partner** come etichette.
 
    ![](assets/offer_inbound_fallback_example_009.png)
 
@@ -334,40 +334,40 @@ Verranno create due categorie separate: **Proposta d&#39;acquisto** categoria e 
 
 Vogliamo creare due offerte personalizzate per ogni categoria, ovvero quattro offerte.
 
-1. Vai a **Proposta d&#39;acquisto** e creare una prima offerta personalizzata.
+1. Vai alla categoria **Offerta migliore** e crea una prima offerta personalizzata.
 
    ![](assets/offer_inbound_fallback_example_011.png)
 
-1. Vai a **[!UICONTROL Eligibility]** e specificare il peso delle offerte in base ai relativi contesti applicativi.
+1. Passa alla scheda **[!UICONTROL Eligibility]** e specifica il peso delle offerte in base ai relativi contesti di applicazione.
 
    ![](assets/offer_inbound_fallback_example_012.png)
 
-1. Vai a **[!UICONTROL Content]** e definiscono il contenuto dell’offerta.
+1. Passa alla scheda **[!UICONTROL Content]** e definisci il contenuto dell&#39;offerta.
 
    ![](assets/offer_inbound_fallback_example_013.png)
 
-1. Creare una seconda offerta in **Proposta d&#39;acquisto** categoria.
+1. Crea una seconda offerta nella categoria **Proposta d&#39;acquisto**.
 
    ![](assets/offer_inbound_fallback_example_014.png)
 
-1. Vai a **Partner** e creare un’offerta personalizzata.
+1. Vai alla categoria **Partner** e crea un&#39;offerta personalizzata.
 
    ![](assets/offer_inbound_fallback_example_015.png)
 
-1. Vai a **[!UICONTROL Eligibility]** e specificare il peso delle offerte in base ai relativi contesti applicativi.
+1. Passa alla scheda **[!UICONTROL Eligibility]** e specifica il peso delle offerte in base ai relativi contesti di applicazione.
 
    ![](assets/offer_inbound_fallback_example_016.png)
 
-1. Crea una seconda offerta per **Partner** categoria.
+1. Crea una seconda offerta per la categoria **Partner**.
 
    ![](assets/offer_inbound_fallback_example_017.png)
 
-1. Vai a **[!UICONTROL Eligibility]** e applica lo stesso peso applicato alla prima offerta di questa categoria in modo che le offerte vengano visualizzate in successione sul sito web.
-1. Esegui il ciclo di approvazione per ogni offerta per iniziare ad aggiornarla. Durante l&#39;approvazione del contenuto, attiva **Partner** o **Proposta d&#39;acquisto** spazi dell’offerta.
+1. Passa alla scheda **[!UICONTROL Eligibility]** e applica lo stesso peso applicato alla prima offerta di questa categoria in modo che le offerte vengano visualizzate in successione sul sito Web.
+1. Esegui il ciclo di approvazione per ogni offerta per iniziare ad aggiornarla. Durante l&#39;approvazione del contenuto, attiva gli spazi dell&#39;offerta **Partner** o **Proposta d&#39;acquisto**.
 
 ### Configurazione degli spazi dell’offerta sulla pagina web {#configuring-offer-spaces-on-the-web-page}
 
-Il sito della società Neobank dispone di tre spazi per le offerte: due per le offerte relative alle banche provenienti dalla **Proposta d&#39;acquisto** e uno per le offerte della **Partner** categoria.
+Il sito Web della società Neobank dispone di tre spazi per le offerte: due per le offerte relative alla banca della categoria **Proposta d&#39;acquisto** e uno per le offerte della categoria **Partner**.
 
 ![](assets/offer_inbound_fallback_example_038.png)
 
@@ -383,28 +383,28 @@ Per configurare questi spazi di offerta sulla pagina HTML del sito web, procedi 
 
    ![](assets/offer_inbound_fallback_example_040.png)
 
-   In questo esempio, **ContBO1** e **ContBO2** ricevere il valore **OsWebBestOfferIdentified**, ovvero il nome interno del **Proposta d&#39;acquisto** spazio dell’offerta creato in precedenza nell’ambiente identificato. Il **CatBestOffer** e **CatBestOfferAnonym** i valori corrispondono al nome interno del **Proposta d&#39;acquisto** categorie per ambienti anonimi e identificati.
+   In questo esempio, **ContBO1** e **ContBO2** ricevono il valore **OsWebBestOfferIdentified**, ovvero il nome interno dello spazio dell&#39;offerta **Migliore offerta** creato in precedenza nell&#39;ambiente identificato. I valori **CatBestOffer** e **CatBestOfferAnonym** corrispondono al nome interno delle categorie **Best Offer** per gli ambienti anonimi e identificati.
 
    ![](assets/offer_inbound_fallback_example_041.png)
 
-   Analogamente, **PtnCont** riceve il **OSWebPartnerIdentified** , che corrisponde al nome interno del **Partner** spazio dell’offerta creato nell’ambiente identificato. **CatPartner** e **CatPartnerAnonym** corrisponde al nome interno del **Partner** categorie per ambienti anonimi e identificati.
+   Analogamente, **ContPtn** riceve il valore **OSWebPartnerIdentified**, che corrisponde al nome interno dello spazio dell&#39;offerta **Partner** creato nell&#39;ambiente identificato. **CatPartner** e **CatPartnerAnonym** corrispondono al nome interno delle categorie **Partner** per gli ambienti anonimi e identificati.
 
    ![](assets/offer_inbound_fallback_example_042.png)
 
-1. Assegna le informazioni che ti consentiranno di identificare la persona che accede al sito Neobank a **interfaceTarget** variabile.
+1. Assegna le informazioni che ti consentiranno di identificare la persona che accede al sito Neobank nella variabile **interfaceTarget**.
 
    ![](assets/offer_inbound_fallback_example_043.png)
 
-   L’identificazione della persona può essere basata su un cookie del browser, un parametro di lettura nell’URL, nell’e-mail o nell’identificatore della persona. Se viene utilizzato un campo della tabella dei destinatari diverso dalla chiave primaria, questo deve essere definito nei parametri avanzati dello spazio (fare riferimento a [Specifica delle impostazioni avanzate degli spazi dell’offerta identificati](#specifying-the-advanced-settings-of-the-identified-offer-spaces)).
+   L’identificazione della persona può essere basata su un cookie del browser, un parametro di lettura nell’URL, nell’e-mail o nell’identificatore della persona. Se viene utilizzato un campo della tabella dei destinatari diverso dalla chiave primaria, deve essere definito nei parametri avanzati dello spazio (fare riferimento a [Specifica delle impostazioni avanzate degli spazi dell&#39;offerta identificati](#specifying-the-advanced-settings-of-the-identified-offer-spaces)).
 
 1. Inserisci l’URL della chiamata.
 
    ![](assets/offer_inbound_fallback_example_049.png)
 
-   L’URL contiene **EnvNeobankRecip**, il nome interno dell’ambiente identificato.
+   L&#39;URL contiene **EnvNeobankRecip**, il nome interno dell&#39;ambiente identificato.
 
 Quando apri la pagina web, lo script ti consente di richiamare il motore di interazione per visualizzare il contenuto delle offerte negli spazi pertinenti della pagina web. In una singola chiamata al server Adobe Campaign, il motore determina l’ambiente, lo spazio dell’offerta e le categorie da selezionare.
 
-In questo esempio, il motore riconosce l’ambiente identificato (**EnvNeobankIdnRecip**). Identifica lo spazio dell’offerta (**OSWebBestOfferIdentified**) e **Proposta d&#39;acquisto** categoria (**CatBestOffer**) per il primo e il secondo spazio dell’offerta sulla pagina web, nonché (**OSWebPartnerIdentified** a) spazio dell&#39;offerta e **Partner** categoria (**CatPartner**) per il terzo spazio di offerta sul sito.
+In questo esempio, il motore riconosce l&#39;ambiente identificato (**EnvNeobankIdnRecip**). Identifica lo spazio dell&#39;offerta (**OSWebBestOfferIdentified**) e la categoria **Proposta d&#39;acquisto** (**CatBestOffer**) per la prima e la seconda offerta sulla pagina Web, nonché lo spazio dell&#39;offerta (**OSWebPartnerIdentified**) e la categoria **Partner** (**CatPartner**) per la terza offerta sul sito.
 
-Se il motore non è in grado di identificare il destinatario, passa agli spazi di offerta anonimi a cui si fa riferimento negli spazi di offerta identificati e verso le categorie anonime (**CatPartner** e **CatPartnerAnonym**) come specificato nello script.
+Se il motore non è in grado di identificare il destinatario, passa agli spazi di offerta anonimi a cui si fa riferimento negli spazi di offerta identificati e alle categorie anonime (**CatPartner** e **CatPartnerAnonym**) come specificato nello script.

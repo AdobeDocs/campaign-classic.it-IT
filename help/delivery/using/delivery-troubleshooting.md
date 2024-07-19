@@ -17,7 +17,7 @@ ht-degree: 1%
 
 In questa sezione sono elencati i problemi comuni che possono verificarsi durante l’invio delle consegne e come risolverli.
 
-Inoltre, assicurati di seguire le best practice e gli elenchi di controllo descritti in [questa pagina](delivery-performances.md) per garantire il buon funzionamento delle consegne.
+Inoltre, assicurati di seguire le best practice e l&#39;elenco di controllo descritti in [questa pagina](delivery-performances.md) per garantire il buon funzionamento delle consegne.
 
 **Argomenti correlati:**
 
@@ -27,17 +27,17 @@ Inoltre, assicurati di seguire le best practice e gli elenchi di controllo descr
 
 ## Consegne lente {#slow-deliveries}
 
-Dopo aver fatto clic su **[!UICONTROL Send]** pulsante, la consegna sembra richiedere più tempo del solito. Ciò può essere dovuto a diversi elementi:
+Dopo aver fatto clic sul pulsante **[!UICONTROL Send]**, la consegna sembra richiedere più tempo del solito. Ciò può essere dovuto a diversi elementi:
 
-* Alcuni provider di posta elettronica potrebbero aver aggiunto i tuoi indirizzi IP a un inserisco nell&#39;elenco Bloccati di. In questo caso, controlla i registri e consulta [questa sezione](about-deliverability.md).
+* Alcuni provider di posta elettronica potrebbero aver aggiunto i tuoi indirizzi IP a un inserisco nell&#39;elenco Bloccati di. In questo caso, controlla i registri di trasmissione e consulta [questa sezione](about-deliverability.md).
 
-* La consegna potrebbe essere troppo grande per essere elaborata rapidamente. Ciò può verificarsi con una personalizzazione JavaScript elevata o se la consegna pesa più di 60 kbyte. Fai riferimento a Adobe Campaign [Best practice per la consegna](delivery-best-practices.md) per informazioni sulle linee guida per i contenuti.
+* La consegna potrebbe essere troppo grande per essere elaborata rapidamente. Ciò può verificarsi con una personalizzazione JavaScript elevata o se la consegna pesa più di 60 kbyte. Per informazioni sulle linee guida per i contenuti, consulta le [best practice per la consegna](delivery-best-practices.md) di Adobe Campaign.
 
 * La limitazione potrebbe essersi verificata all’interno dell’MTA di Adobe Campaign. Ciò è causato da:
 
-   * Messaggi sospesi (**[!UICONTROL quotas met]** message): sono state soddisfatte le quote dichiarate dalle regole MX dichiarative definite in Campaign. Per ulteriori informazioni su questo messaggio, consulta [questa pagina](deliverability-faq.md). Per ulteriori informazioni sulle regole MX, consulta [questa sezione](../../installation/using/email-deliverability.md#about-mx-rules).
+   * Messaggi sospesi (**[!UICONTROL quotas met]** messaggio): sono state soddisfatte le quote dichiarate dalle regole MX dichiarative definite in Campaign. Per ulteriori informazioni su questo messaggio, fare riferimento a [questa pagina](deliverability-faq.md). Per ulteriori informazioni sulle regole MX, consulta [questa sezione](../../installation/using/email-deliverability.md#about-mx-rules).
 
-   * Messaggi sospesi (**[!UICONTROL dynamic flow control]** message): l’MTA della campagna ha riscontrato errori durante il tentativo di recapitare messaggi per un determinato ISP, il che provoca un rallentamento per evitare una densità di errori troppo elevata e quindi il rischio di potenziali elenchi Bloccati da parte dell’.
+   * Messaggi sospesi (**[!UICONTROL dynamic flow control]** messaggio): l&#39;MTA della campagna ha riscontrato errori durante il tentativo di recapitare messaggi per un ISP specifico, il che provoca un rallentamento per evitare una densità di errore troppo elevata e quindi il rischio di potenziali elenchi Bloccati da parte dell&#39;.
 
 * Un problema di sistema può impedire l’interazione tra i server, rallentando l’intero processo di invio. Controlla i server per assicurarti che non vi siano problemi di memoria o risorse che possano influire su Campaign nel processo di recupero dei dati di personalizzazione, ad esempio.
 
@@ -49,7 +49,7 @@ Ad esempio, se l’istanza di mid-sourcing si trova nel fuso orario di Brisbane 
 
 ## Stato non riuscito {#failed-status}
 
-Se lo stato di una consegna e-mail è **[!UICONTROL Failed]**, può essere collegata a un problema con blocchi di personalizzazione. I blocchi di personalizzazione in una consegna possono generare errori quando, ad esempio, gli schemi non corrispondono alla mappatura della consegna.
+Se lo stato di una consegna e-mail è **[!UICONTROL Failed]**, può essere collegato a un problema con blocchi di personalizzazione. I blocchi di personalizzazione in una consegna possono generare errori quando, ad esempio, gli schemi non corrispondono alla mappatura della consegna.
 
 I registri di consegna sono fondamentali per comprendere il motivo per cui una consegna non è riuscita. Di seguito sono riportati possibili errori che puoi rilevare dai registri di consegna:
 
@@ -71,7 +71,7 @@ I registri di consegna sono fondamentali per comprendere il motivo per cui una c
 
   La causa è collegata a problemi di prestazioni. Significa che l’istanza di marketing impiega troppo tempo a creare i dati prima di inviarli al server di mid-sourcing.
 
-  Per risolvere questo problema, si consiglia di effettuare una prova di vuoto e reindicizzare il database. Per ulteriori informazioni sulla manutenzione del database, fare riferimento a [questa sezione](../../production/using/recommendations.md).
+  Per risolvere questo problema, si consiglia di effettuare una prova di vuoto e reindicizzare il database. Per ulteriori informazioni sulla manutenzione del database, consultare [questa sezione](../../production/using/recommendations.md).
 
   È inoltre necessario riavviare tutti i flussi di lavoro con un&#39;attività pianificata e tutti i flussi di lavoro con stato non riuscito. Fai riferimento a [questa sezione](../../workflow/using/scheduler.md).
 
@@ -83,7 +83,7 @@ I registri di consegna sono fondamentali per comprendere il motivo per cui una c
 
   In genere, questo errore indica che esiste un campo o un blocco di personalizzazione all’interno dell’e-mail con più valori per il destinatario. Un blocco di personalizzazione è in uso e sta recuperando più di un record per un destinatario specifico.
 
-  Per risolvere questo problema, controlla i dati di personalizzazione utilizzati, quindi controlla il target per i destinatari che hanno più di una voce per uno qualsiasi di questi campi. È inoltre possibile utilizzare un’ **[!UICONTROL Deduplication]** attività nel flusso di lavoro di targeting prima dell’attività di consegna per verificare che sia presente un solo campo di personalizzazione alla volta. Per ulteriori informazioni sulla deduplicazione, consulta [questa pagina](../../workflow/using/deduplication.md).
+  Per risolvere questo problema, controlla i dati di personalizzazione utilizzati, quindi controlla il target per i destinatari che hanno più di una voce per uno qualsiasi di questi campi. È inoltre possibile utilizzare un&#39;attività **[!UICONTROL Deduplication]** nel flusso di lavoro di targeting prima dell&#39;attività di consegna per verificare che esista un solo campo di personalizzazione alla volta. Per ulteriori informazioni sulla deduplicazione, consulta [questa pagina](../../workflow/using/deduplication.md).
 
 * Alcune consegne possono non riuscire e viene visualizzato un errore &quot;Non raggiungibile&quot; che indica:
 

@@ -23,7 +23,7 @@ Può accadere che un destinatario non sia considerato idoneo per tutte le offert
 Per includere sempre una categoria nei consigli, effettua le seguenti operazioni:
 
 1. Apri l’Explorer e fai clic su un catalogo di offerte dalla struttura ad albero.
-1. Fai clic su **[!UICONTROL Eligibility]** e spuntare la **[!UICONTROL Always include this category in the recommendations]** casella.
-1. Termina e approva facendo clic su **[!UICONTROL Save]**.
+1. Fare clic sulla scheda **[!UICONTROL Eligibility]** e selezionare la casella **[!UICONTROL Always include this category in the recommendations]**.
+1. Terminare e approvare facendo clic su **[!UICONTROL Save]**.
 
    ![](assets/offer_cat_default_001.png)

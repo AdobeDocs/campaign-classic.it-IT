@@ -19,17 +19,17 @@ ht-degree: 3%
 
 
 
-I modelli di importazione ed esportazione sono memorizzati nel **[!UICONTROL Resources > Templates > Job templates]** della struttura Adobe Campaign.
+I modelli di importazione ed esportazione sono archiviati nella directory **[!UICONTROL Resources > Templates > Job templates]** della struttura Adobe Campaign.
 
 Per impostazione predefinita, in questa directory sono presenti tre modelli di importazione e un modello di esportazione. Non devono essere modificati.
 
-* Il modello nativo **[!UICONTROL Import denylist]** è già configurato per importare un elenco di indirizzi e-mail aggiunti al inserisco nell&#39;elenco Bloccati di.
+* Il modello nativo **[!UICONTROL Import denylist]** è già configurato per importare un elenco di indirizzi di posta elettronica aggiunti al inserisco nell&#39;elenco Bloccati di.
 
-* Il **[!UICONTROL New text import]** e **[!UICONTROL New text export]** I modelli ti consentono di configurare un’importazione o un’esportazione da zero.
+* I modelli **[!UICONTROL New text import]** e **[!UICONTROL New text export]** consentono di configurare un&#39;importazione o un&#39;esportazione da zero.
 
 ![](assets/s_ncs_user_export_wizard_template_create.png)
 
-Puoi duplicare i modelli esistenti per crearne di nuovi o crearne di nuovi tramite **[!UICONTROL New > Import template]** / **[!UICONTROL Export template]** menu.
+È possibile duplicare i modelli esistenti per creare modelli personalizzati o creare un nuovo modello tramite il menu **[!UICONTROL New > Import template]** / **[!UICONTROL Export template]**.
 
 Il processo di configurazione di un modello è quindi lo stesso di quello presentato in queste sezioni:
 

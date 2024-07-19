@@ -16,7 +16,7 @@ ht-degree: 3%
 
 
 
-Il flusso di lavoro descritto di seguito viene installato con **Controllo del motore di offerta con istanza di esecuzione** per impostazione predefinita.
+Il flusso di lavoro descritto di seguito viene installato con il modulo **Controllo del motore di offerta con istanza di esecuzione** per impostazione predefinita.
 
 <table> 
  <tbody> 
@@ -26,9 +26,9 @@ Il flusso di lavoro descritto di seguito viene installato con **Controllo del mo
    <td> <strong>Descrizione</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Sincronizzazione delle proposte</span> <br /> </td> 
+   <td> <span class="uicontrol">Sincronizzazione proposta</span> <br /> </td> 
    <td> <span class="uicontrol">propositionSynch</span> <br /> </td> 
-   <td> Questo flusso di lavoro sincronizza le proposte tra l’istanza di marketing e l’istanza di esecuzione utilizzate per le interazioni.<br /> </td> 
+   <td> Questo flusso di lavoro sincronizza le proposte tra l'istanza di marketing e l'istanza di esecuzione utilizzate per le interazioni.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

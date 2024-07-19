@@ -46,7 +46,7 @@ L’elenco seguente contiene solo le tabelle più soggette a frammentazione. Gli
   </tr> 
   <tr> 
    <td> NmsDeliveryPart<br /> </td> 
-   <td> Medio<br /> </td> 
+   <td> Medium<br /> </td> 
    <td> Inserimenti, aggiornamenti, eliminazioni<br /> </td> 
    <td> Tabella di lavoro in cui vengono inseriti i record durante la preparazione della consegna. Vengono quindi aggiornati durante la consegna e infine eliminati una volta completata la consegna.<br /> Questa tabella tende a frammentarsi rapidamente anche se la sua dimensione media è piuttosto limitata.<br /> </td> 
   </tr> 
@@ -58,13 +58,13 @@ L’elenco seguente contiene solo le tabelle più soggette a frammentazione. Gli
   </tr> 
   <tr> 
    <td> NmsDeliveryStat<br /> </td> 
-   <td> Medio<br /> </td> 
+   <td> Medium<br /> </td> 
    <td> Inserimenti, aggiornamenti, eliminazioni<br /> </td> 
    <td> Questa tabella contiene statistiche sul processo di consegna. I suoi registri sono regolarmente aggiornati. <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsAddress<br /> </td> 
-   <td> Medio<br /> </td> 
+   <td> Medium<br /> </td> 
    <td> Aggiornamenti, inserimenti<br /> </td> 
    <td> Questa tabella contiene informazioni sugli indirizzi e-mail. Viene spesso aggiornato come parte del processo di quarantena (i record vengono creati al primo errore di consegna, aggiornati quando i contatori cambiano ed eliminati una volta che la consegna è andata a buon fine). <br /> </td> 
   </tr> 
@@ -72,7 +72,7 @@ L’elenco seguente contiene solo le tabelle più soggette a frammentazione. Gli
    <td> XtkWorkflow<br /> </td> 
    <td> Piccolo<br /> </td> 
    <td> Aggiornamenti<br /> </td> 
-   <td> Esiste un record per istanza di flusso di lavoro, quindi sono presenti pochissimi record. Tuttavia, la tabella viene regolarmente aggiornata per rispecchiare lo stato di avanzamento e i progressi compiuti.<br /> </td> 
+   <td> Esiste un record per istanza di flusso di lavoro, quindi sono presenti pochissimi record. Tuttavia, la tabella viene regolarmente aggiornata per riflettere lo stato e l'avanzamento.<br /> </td> 
   </tr> 
   <tr> 
    <td> XtkWorkflowTask<br /> </td> 
@@ -88,9 +88,9 @@ L’elenco seguente contiene solo le tabelle più soggette a frammentazione. Gli
   </tr> 
   <tr> 
    <td> XtkWorkflowJob<br /> </td> 
-   <td> Molto piccolo <br /> </td> 
+   <td> <br /> molto piccolo </td> 
    <td> Inserimenti, aggiornamenti, eliminazioni<br /> </td> 
-   <td> Questa tabella è specifica per il motore del flusso di lavoro. Consente l’invio di comandi ai flussi di lavoro (ad esempio Avvia, Arresta, Pausa). Anche se piccola, questa tabella viene presa in considerazione durante l’eliminazione delle tabelle transazionali collegate ai flussi di lavoro.<br /> </td> 
+   <td> Questa tabella è specifica per il motore del flusso di lavoro. Consente l’invio di comandi ai flussi di lavoro (ad esempio Avvia, Arresta, Pausa). Anche se piccola, questa tabella viene presa in considerazione durante l'eliminazione delle tabelle transazionali collegate ai flussi di lavoro.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsBroadLog<br /> </td> 
@@ -112,18 +112,18 @@ L’elenco seguente contiene solo le tabelle più soggette a frammentazione. Gli
   </tr> 
   <tr> 
    <td> NmsEmailErrorStat<br /> </td> 
-   <td> Medio<br /> </td> 
+   <td> Medium<br /> </td> 
    <td> Inserimenti, aggiornamenti, eliminazioni<br /> </td> 
    <td> Questa tabella contiene gli aggregati sugli errori SMTP ordinati per dominio. Inizialmente contiene informazioni dettagliate che vengono aggregate dall’attività di pulizia una volta che diventa obsoleta. <br /> </td> 
   </tr> 
   <tr> 
-   <td> NmsBroadLogMid (in un’istanza mid-sourcing)<br /> </td> 
+   <td> NmsBroadLogMid (in un'istanza mid-sourcing)<br /> </td> 
    <td> Grande<br /> </td> 
    <td> Inserimenti, aggiornamenti, eliminazioni<br /> </td> 
    <td> Solo quando l’istanza 5.10 (o successiva) viene utilizzata come istanza di mid-sourcing. Questa è una delle tabelle più grandi del database. Esiste un record per messaggio inviato e questi record vengono inseriti, aggiornati per tenere traccia dello stato di consegna ed eliminati quando la cronologia viene eliminata. Quando si utilizza il mid-sourcing, si consiglia di limitare la cronologia (in genere meno di due mesi), in modo che questa tabella rimanga ragionevole in termini di dimensioni (meno di 30 Go per 60 milioni di righe, dati+indice), ma è molto importante ricrearla di tanto in tanto. <br /> </td> 
   </tr> 
   <tr> 
-   <td> NmsBroadLogRcp (quando si utilizza la tabella NmsRecipient) <br /> </td> 
+   <td> NmsBroadLogRcp (quando viene utilizzata la tabella NmsRecipient) <br /> </td> 
    <td> Grande<br /> </td> 
    <td> Inserimenti, aggiornamenti, eliminazioni<br /> </td> 
    <td> Questa è la tabella più grande del sistema. Esiste un record per messaggio inviato e questi record vengono inseriti, aggiornati per tenere traccia dello stato di consegna ed eliminati quando la cronologia viene eliminata. Si noti che nella versione 5.10 questa tabella è più piccola dell'equivalente nella versione 4.05 (NmsBroadLog) poiché il testo del messaggio SMTP viene fattorizzato nella tabella NmsBroadLogMsg nella versione 5.10. Tuttavia, rimane essenziale reindicizzare questa tabella regolarmente (a settimane alterne, per iniziare) e ricrearla completamente di tanto in tanto (una volta al mese o quando le prestazioni sono interessate). <br /> </td> 
@@ -135,7 +135,7 @@ L’elenco seguente contiene solo le tabelle più soggette a frammentazione. Gli
    <td> Come NmsBroadLogRcp ma con una tabella dei destinatari esterna. Adatta Yyy e Xxx ai valori presenti nella mappatura della consegna. <br /> </td> 
   </tr> 
   <tr> 
-   <td> NmsTrackingLogRcp (quando si utilizza la tabella NmsRecipient) <br /> </td> 
+   <td> NmsTrackingLogRcp (quando viene utilizzata la tabella NmsRecipient) <br /> </td> 
    <td> Grande<br /> </td> 
    <td> Inserimenti, eliminazioni<br /> </td> 
    <td> I registri di tracciamento vengono inseriti ed eliminati quando la cronologia viene eliminata, ma non vengono aggiornati. Il volume dipende dalla durata della conservazione dei dati. <br /> </td> 
@@ -153,7 +153,7 @@ L’elenco seguente contiene solo le tabelle più soggette a frammentazione. Gli
    <td> Simile alle altre tabelle broadlog, ma con NmsRtEvent anziché NmsRecipient.<br /> </td> 
   </tr> 
   <tr> 
-   <td> NmsTrackingLogRtEvent( Istanza di esecuzione del Centro messaggi)<br /> </td> 
+   <td> NmsTrackingLogRtEvent( istanza di esecuzione del Centro messaggi)<br /> </td> 
    <td> Grande<br /> </td> 
    <td> Inserimenti, eliminazioni<br /> </td> 
    <td> Simile alle altre tabelle trackingLog, ma con la tabella NmsRtEvent anziché NmsRecipient.<br /> </td> 
@@ -162,19 +162,19 @@ L’elenco seguente contiene solo le tabelle più soggette a frammentazione. Gli
    <td> NmsRtEvent (istanza di esecuzione del Centro messaggi)<br /> </td> 
    <td> Grande<br /> </td> 
    <td> Inserimenti, aggiornamenti, eliminazioni<br /> </td> 
-   <td> Tabella contenente la coda eventi del Centro messaggi. Lo stato di questi eventi viene aggiornato dal Centro messaggi durante l’elaborazione. Le eliminazioni vengono eseguite durante la rimozione. Ti consigliamo di ricreare regolarmente l’indice di questa tabella e di ricrearlo.<br /> </td> 
+   <td> Tabella contenente la coda eventi del Centro messaggi. Lo stato di questi eventi viene aggiornato dal Centro messaggi durante l’elaborazione. Le eliminazioni vengono eseguite durante la rimozione. È consigliabile ricreare regolarmente l'indice di questa tabella e ricrearlo.<br /> </td> 
   </tr> 
   <tr> 
-   <td> NmsEventHisto (istanza di controllo Centro messaggi)<br /> </td> 
+   <td> NmsEventHisto (istanza di controllo del Centro messaggi)<br /> </td> 
    <td> Grande<br /> </td> 
    <td> Inserimenti, aggiornamenti, eliminazioni<br /> </td> 
-   <td> Simile a NmsRtEvent. Questa tabella archivia ogni evento da tutte le istanze di esecuzione. Viene utilizzato da nessun processo in tempo reale, solo dai rapporti.<br /> </td> 
+   <td> Simile a NmsRtEvent. Questa tabella archivia ogni evento da tutte le istanze di esecuzione. Non viene utilizzato da alcun processo in tempo reale, solo dai report.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsMobileApp<br /> </td> 
    <td> Molto piccolo<br /> </td> 
    <td> Inserimenti, aggiornamenti, eliminazioni<br /> </td> 
-   <td> Tabelle che includono le app mobili e la relativa configurazione.<br /> </td> 
+   <td> Tabelle che includono le applicazioni mobili e la relativa configurazione.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsAppSubscriptionRcp<br /> </td> 
@@ -186,13 +186,13 @@ L’elenco seguente contiene solo le tabelle più soggette a frammentazione. Gli
    <td> NmsBroadLogAppSubRcp<br /> </td> 
    <td> Grande<br /> </td> 
    <td> Inserimenti, aggiornamenti, eliminazioni<br /> </td> 
-   <td> Simile alle altre tabelle broadlog, ma con NmsappSubscriptionRcp invece di NmsRecipient.<br /> </td> 
+   <td> Simile alle altre tabelle broadlog, ma con NmsappSubscriptionRcp anziché NmsRecipient.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsTrackingLogAppSubRcp<br /> </td> 
    <td> Grande<br /> </td> 
    <td> Inserimenti, eliminazioni<br /> </td> 
-   <td> Simile alle altre tabelle trackingLog, ma con la tabella NmsappSubscriptionRcp invece di NmsRecipient.<br /> </td> 
+   <td> Simile alle altre tabelle trackingLog, ma con la tabella NmsappSubscriptionRcp anziché NmsRecipient.<br /> </td> 
   </tr> 
   <tr> 
    <td> XtkSessionInfo<br /> </td> 

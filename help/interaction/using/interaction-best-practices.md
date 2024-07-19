@@ -67,7 +67,7 @@ Quando si includono le offerte nelle consegne, queste vengono generalmente selez
 
 Quando selezioni le offerte in un’attività di arricchimento, puoi scegliere quale spazio di offerta utilizzare. Tuttavia, indipendentemente dallo spazio dell’offerta selezionato, il menu di personalizzazione della consegna dipende dallo spazio dell’offerta configurato nella consegna.
 
-Nell’esempio seguente, lo spazio dell’offerta selezionato nella consegna è **[!UICONTROL Email (Environment - Recipient)]**:
+Nell&#39;esempio seguente, lo spazio dell&#39;offerta selezionato nella consegna è **[!UICONTROL Email (Environment - Recipient)]**:
 
 ![](assets/Interaction-best-practices-offer-space-selected.png)
 
@@ -77,9 +77,9 @@ Nell’esempio seguente, la funzione di rendering HTML è disponibile nell’ele
 
 ![](assets/Interaction-best-practices-HTML-rendering.png)
 
-Questa funzione inserisce un codice come: `<%@ include proposition="targetData.proposition" view="rendering/html" %>`.
+Questa funzione inserisce il codice seguente: `<%@ include proposition="targetData.proposition" view="rendering/html" %>`.
 
-Quando selezioni la proposta, il valore della **[!UICONTROL view]** è il seguente:
+Quando si seleziona la proposta, il valore dell&#39;attributo **[!UICONTROL view]** è il seguente:
 * &quot;rendering/html&quot;: rendering html. Utilizza la funzione di rendering HTML.
 * &quot;offer/view/html&quot;: contenuto html. Non utilizza la funzione di rendering HTML. Include solo il campo HTML.
 
@@ -109,7 +109,7 @@ Ad esempio, quando selezioni manualmente un’offerta (senza interazione) in un 
 
 Poiché nella tabella della proposta è presente un campo denominato @rank, il valore nella tabella temporanea del flusso di lavoro verrà copiato.
 
-Per ulteriori informazioni sulla memorizzazione di campi aggiuntivi nella tabella della proposta, consulta [Integrazione di un’offerta tramite un flusso di lavoro](../../interaction/using/integrating-an-offer-via-a-workflow.md#storing-offer-rankings-and-weights).
+Per ulteriori informazioni sulla memorizzazione di campi aggiuntivi nella tabella delle proposte, consulta [Integrazione di un&#39;offerta tramite un flusso di lavoro](../../interaction/using/integrating-an-offer-via-a-workflow.md#storing-offer-rankings-and-weights).
 
 Per le offerte in uscita con interazione, questo è utile quando sono selezionate più offerte e vuoi registrare in quale ordine verranno visualizzate in un’e-mail.
 
@@ -124,7 +124,7 @@ Quando si utilizza l’interazione e si selezionano manualmente le offerte, l’
 ### Estensione dello schema nms:offer {#extending-nms-offer-schema}
 
 Quando estendi lo schema nms:offer, accertati di seguire la struttura preconfigurata già impostata:
-* Definisci un nuovo campo per l’archiviazione dei contenuti in `<element name="view">`.
+* Definire un nuovo campo per l&#39;archiviazione del contenuto in `<element name="view">`.
 * Ogni nuovo campo deve essere definito due volte. Una volta come campo XML normale e una volta come campo XML CDATA con &quot;_jst&quot; aggiunto al nome. Ad esempio:
 
   ```
@@ -132,4 +132,4 @@ Quando estendi lo schema nms:offer, accertati di seguire la struttura preconfigu
   <element advanced="true" label="Script price" name="price_jst" type="CDATA" xml="true"/>
   ```
 
-* Tutti i campi che contengono URL da tracciare devono essere posizionati in `<element name="trackedUrls">` che si trova in `<element name="view" >`.
+* Tutti i campi che contengono URL da tracciare devono essere posizionati in `<element name="trackedUrls">`, che si trova in `<element name="view" >`.

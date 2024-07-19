@@ -23,25 +23,25 @@ La piattaforma Adobe Campaign si basa sul concetto di istanze, simile a quella d
 
 Per un determinato server, esistono due elementi comuni a tutte le istanze di Adobe Campaign:
 
-* Il **interno** password: password dell&#39;amministratore generale. È comune a tutte le istanze di un determinato server applicazioni.
+* La password **internal**: è la password dell&#39;amministratore generale. È comune a tutte le istanze di un determinato server applicazioni.
 
   >[!IMPORTANT]
   >
-  >Per accedere con **Interno** identificatore, è necessario aver già definito una password. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#internal-identifier).
+  >Per accedere con l&#39;identificatore **Internal**, è necessario aver già definito una password. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
 * Più configurazioni tecniche del server: queste configurazioni possono essere tutte sovraccariche nella configurazione specifica di un’istanza.
 
-I file di configurazione vengono salvati in **conf** directory della directory di installazione. La configurazione è suddivisa in tre file:
+I file di configurazione vengono salvati nella directory **conf** della directory di installazione. La configurazione è suddivisa in tre file:
 
-* **serverConf.xml**: configurazione generale per tutte le istanze.
-* **config-**`<instance>`**.xml** (dove **`<instance>`** è il nome dell’istanza): configurazione specifica di un’istanza.
+* **serverConf.xml**: configurazione globale per tutte le istanze.
+* **config-**`<instance>`**.xml** (dove **`<instance>`** è il nome dell&#39;istanza): configurazione specifica di un&#39;istanza.
 * **serverConf.xml.diff**: delta tra la configurazione iniziale e la configurazione corrente. Questo file viene generato automaticamente dall&#39;applicazione e non deve essere modificato manualmente. Viene utilizzato per propagare automaticamente le modifiche utente quando si aggiorna una versione di build.
 
 Viene caricata una configurazione di istanza come segue:
 
-* Il modulo carica **serverConf.xml** per ottenere i parametri condivisi da tutte le istanze.
-* Quindi carica il **config-**`<instance>`**.xml** file. I valori trovati in questo file hanno priorità rispetto ai valori contenuti in **serverConf.xml**.
+* Il modulo carica il file **serverConf.xml** per ottenere i parametri condivisi da tutte le istanze.
+* Quindi carica il file **config-**`<instance>`**.xml**. I valori trovati in questo file hanno priorità rispetto ai valori contenuti in **serverConf.xml**.
 
-  Questi due file hanno lo stesso formato. Qualsiasi valore in **serverConf.xml** può essere sovraccaricato per una determinata istanza in **config-`<instance>`.xml** file.
+  Questi due file hanno lo stesso formato. Qualsiasi valore in **serverConf.xml** può essere sovraccaricato per una determinata istanza nel file **config-`<instance>`.xml**.
 
 Questa modalità operativa offre grande flessibilità per le configurazioni.

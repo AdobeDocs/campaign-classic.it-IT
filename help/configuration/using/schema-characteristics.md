@@ -29,7 +29,7 @@ Le caratteristiche di uno schema che fa riferimento a una tabella esistente sono
 
 ## Attributo view {#the-view-attribute}
 
-Gli schemi di origine accettano **visualizza** attributo per **srcSchema** elemento principale. Deve essere utilizzato quando Adobe Campaign viene manipolato in tabelle personalizzate. Il **view=&quot;true&quot;** questo attributo indica alla procedura guidata di aggiornamento della struttura del database di ignorare questo schema. L’applicazione non può quindi sincronizzare la tabella, le sue colonne e i suoi indici con lo schema corrispondente.
+Gli schemi di Source accettano l&#39;attributo **view** per l&#39;elemento radice **srcSchema**. Deve essere utilizzato quando Adobe Campaign viene manipolato in tabelle personalizzate. L&#39;attributo **view=&quot;true&quot;** indica alla procedura guidata di aggiornamento della struttura del database di ignorare questo schema. L’applicazione non può quindi sincronizzare la tabella, le sue colonne e i suoi indici con lo schema corrispondente.
 
 Quando questo attributo è impostato su **true**, lo schema viene utilizzato solo per generare query SQL per accedere ai dati di questa tabella.
 
@@ -37,8 +37,8 @@ Quando questo attributo è impostato su **true**, lo schema viene utilizzato sol
 
 Quando le tabelle vengono create tramite la procedura guidata di aggiornamento, i nomi delle tabelle e delle colonne vengono generati automaticamente in base ai nomi dei rispettivi schemi e attributi. È tuttavia possibile forzare l&#39;utilizzo dei nomi SQL immettendo i seguenti attributi:
 
-* **sqltable** all’interno dell’elemento principale dello schema, per specificare la tabella,
-* **sqlname** all’interno di ciascun attributo, per specificare le colonne.
+* **sqltable** nell&#39;elemento principale dello schema, per specificare la tabella,
+* **sqlname** all&#39;interno di ogni attributo, per specificare le colonne.
 
 **Esempio**:
 
@@ -77,7 +77,7 @@ In uno schema, un indice è definito come segue:
 
 Per questo motivo è importante dichiarare gli indici esistenti della tabella personalizzata nello schema corrispondente.
 
-Un indice viene dichiarato in modo implicito per ogni chiave e dichiarazione di collegamento dello schema di origine. È possibile impedire la dichiarazione dell’indice specificando **noDbIndex=&quot;true&quot;** attributo:
+Un indice viene dichiarato in modo implicito per ogni chiave e dichiarazione di collegamento dello schema di origine. È possibile impedire la dichiarazione dell&#39;indice specificando l&#39;attributo **noDbIndex=&quot;true&quot;**:
 
 **Esempio**:
 

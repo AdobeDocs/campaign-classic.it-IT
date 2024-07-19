@@ -21,17 +21,17 @@ I filtri disponibili in Adobe Campaign vengono definiti tramite condizioni di fi
 >
 >Per ulteriori informazioni sulla creazione di filtri, consulta [questa sezione](../../platform/using/filtering-options.md).
 
-Il **[!UICONTROL Administration > Configuration > Predefined filters]** Questo nodo contiene tutti i filtri utilizzati negli elenchi e nelle panoramiche.
+Il nodo **[!UICONTROL Administration > Configuration > Predefined filters]** contiene tutti i filtri utilizzati negli elenchi e nelle panoramiche.
 
-Ad esempio, l’elenco degli operatori può essere filtrato per **[!UICONTROL Active accounts]**:
+Ad esempio, l&#39;elenco degli operatori può essere filtrato per **[!UICONTROL Active accounts]**:
 
 ![](assets/query_editor_filter_sample_1.png)
 
-Il filtro corrispondente contiene la query sul **[!UICONTROL Account disabled]** valore del **[!UICONTROL Operators]** schema:
+Il filtro corrispondente contiene la query sul valore **[!UICONTROL Account disabled]** dello schema **[!UICONTROL Operators]**:
 
 ![](assets/query_editor_filter_sample_2.png)
 
-Per lo stesso elenco, il **[!UICONTROL By login or label]** filtro consente di filtrare i dati nell’elenco in base al valore immesso nel campo del filtro:
+Per lo stesso elenco, il filtro **[!UICONTROL By login or label]** consente di filtrare i dati nell&#39;elenco in base al valore immesso nel campo del filtro:
 
 ![](assets/query_editor_filter_sample_3.png)
 
@@ -47,12 +47,12 @@ Per soddisfare le condizioni di filtro, l’account operatore deve controllare u
 
 >[!NOTE]
 >
->Il **[!UICONTROL Upper]** consente di disattivare la funzione con distinzione tra maiuscole e minuscole.
+>La funzione **[!UICONTROL Upper]** consente di disattivare la funzione con distinzione tra maiuscole e minuscole.
 
-Il **[!UICONTROL Taken into account if]** consente di definire i criteri di applicazione per queste condizioni di filtro. Ecco, il **$(/tmp/@text)** i caratteri rappresentano il contenuto del campo di input collegato al filtro:
+La colonna **[!UICONTROL Taken into account if]** consente di definire i criteri di applicazione per queste condizioni di filtro. Qui i caratteri **$(/tmp/@text)** rappresentano il contenuto del campo di input collegato al filtro:
 
 ![](assets/query_editor_filter_sample_5.png)
 
-Qui, **$(/tmp/@text)=&#39;agenzia&#39;**
+In questo caso, **$(/tmp/@text)=&#39;agency&#39;**
 
-Il **$(/tmp/@text)!=&#39;&#39;** l’espressione applica ogni condizione quando il campo di input non è vuoto.
+**$(/tmp/@text).L&#39;espressione =&#39;** applica ogni condizione quando il campo di input non è vuoto.

@@ -20,12 +20,12 @@ ht-degree: 1%
 
 
 Per utilizzare le funzionalità di messaggistica transazionale, devi configurare le istanze di controllo ed esecuzione. Puoi utilizzare:
-* [Un’istanza di controllo](#control-instance) associata a una o più istanze di esecuzione
-* [Diverse istanze di controllo](#using-several-control-instances) associata a più istanze di esecuzione
+* [Un&#39;istanza di controllo](#control-instance) associata a una o più istanze di esecuzione
+* [Diverse istanze di controllo](#using-several-control-instances) associate a diverse istanze di esecuzione
 
 >[!IMPORTANT]
 >
->Le estensioni dello schema hanno interessato le risorse utilizzate da [Flussi di lavoro tecnici del Centro messaggi](../../message-center/using/additional-configurations.md#technical-workflows) sulle istanze di controllo o di esecuzione devono essere duplicate sulle altre istanze utilizzate dal modulo di messaggistica transazionale.
+>Le estensioni dello schema hanno interessato le risorse utilizzate da [Flussi di lavoro tecnici del Centro messaggi](../../message-center/using/additional-configurations.md#technical-workflows) su istanze di controllo o di esecuzione devono essere duplicati sulle altre istanze utilizzate dal modulo di messaggistica transazionale.
 
 È inoltre necessario specificare e connettere le istanze di esecuzione alle istanze di controllo.
 
@@ -37,24 +37,24 @@ In questa sezione sono descritti tutti i passaggi necessari per configurare e co
 
 ## Configurare l’istanza di controllo {#control-instance}
 
-Per connettere l’istanza di controllo e le istanze di esecuzione, devi innanzitutto creare e configurare un’ **[!UICONTROL Execution instance]** digita account esterno **sull’istanza di controllo**. Pertanto, una volta [pubblicato](../../message-center/using/publishing-message-templates.md#template-publication), i modelli di messaggi transazionali possono essere distribuiti nelle istanze di esecuzione.
+Per connettere l&#39;istanza di controllo e le istanze di esecuzione, è innanzitutto necessario creare e configurare un account esterno di tipo **[!UICONTROL Execution instance]** **nell&#39;istanza di controllo**. Pertanto, una volta [pubblicati](../../message-center/using/publishing-message-templates.md#template-publication), i modelli di messaggi transazionali possono essere distribuiti nelle istanze di esecuzione.
 
 Se utilizzi più istanze di esecuzione, devi creare tanti account esterni quanti sono le istanze di esecuzione.
 
 >[!NOTE]
 >
->Quando le istanze di esecuzione vengono utilizzate da più istanze di controllo, i dati possono essere suddivisi per cartella e per operatore. Per ulteriori informazioni, consulta [Utilizzare più istanze di controllo](#using-several-control-instances).
+>Quando le istanze di esecuzione vengono utilizzate da più istanze di controllo, i dati possono essere suddivisi per cartella e per operatore. Per ulteriori informazioni, vedere [Utilizzare più istanze di controllo](#using-several-control-instances).
 
 ### Creare un account esterno
 
 >[!NOTE]
 >
->Devono essere eseguiti i passaggi seguenti **sull’istanza di controllo**.
+>I passaggi seguenti devono essere eseguiti **sull&#39;istanza di controllo**.
 
-Per creare un **[!UICONTROL Execution instance]** digita account esterno, applica quanto segue:
+Per creare un account esterno di tipo **[!UICONTROL Execution instance]**, applicare quanto segue:
 
-1. Vai a **[!UICONTROL Administration > Platform > External accounts]** cartella.
-1. Seleziona uno degli account esterni di tipo istanza di esecuzione forniti con Adobe Campaign, fai clic con il pulsante destro del mouse e scegli **[!UICONTROL Duplicate]** .
+1. Passare alla cartella **[!UICONTROL Administration > Platform > External accounts]**.
+1. Selezionare uno degli account esterni di tipo istanza di esecuzione forniti con Adobe Campaign, fare clic con il pulsante destro del mouse e scegliere **[!UICONTROL Duplicate]**.
 
    ![](assets/messagecenter_create_extaccount_001.png)
 
@@ -62,7 +62,7 @@ Per creare un **[!UICONTROL Execution instance]** digita account esterno, applic
 
    ![](assets/messagecenter_create_extaccount_002.png)
 
-1. Seleziona la **[!UICONTROL Enabled]** per rendere operativo l’account esterno.
+1. Selezionare l&#39;opzione **[!UICONTROL Enabled]** per rendere operativo l&#39;account esterno.
 
    ![](assets/messagecenter_create_extaccount_003.png)
 
@@ -70,7 +70,7 @@ Per creare un **[!UICONTROL Execution instance]** digita account esterno, applic
 
    ![](assets/messagecenter_create_extaccount_004.png)
 
-1. L&#39;account deve corrispondere all&#39;agente del Centro messaggi definito nella cartella dell&#39;operatore. Per impostazione predefinita, l’account predefinito fornito da Adobe Campaign è **[!UICONTROL mc]** .
+1. L&#39;account deve corrispondere all&#39;agente del Centro messaggi definito nella cartella dell&#39;operatore. Per impostazione predefinita, l&#39;account predefinito fornito da Adobe Campaign è **[!UICONTROL mc]**.
 
    ![](assets/messagecenter_create_extaccount_005.png)
 
@@ -94,9 +94,9 @@ Per creare un **[!UICONTROL Execution instance]** digita account esterno, applic
 
    ![](assets/messagecenter_create_extaccount_008.png)
 
-   Per ulteriori informazioni su Federated Data Access (FDA), consulta [questa sezione](../../installation/using/about-fda.md).
+   Per ulteriori informazioni su Federated Data Access (FDA), fare riferimento a [questa sezione](../../installation/using/about-fda.md).
 
-1. Clic **[!UICONTROL Test the connection]** per assicurarsi che l’istanza di controllo e l’istanza di esecuzione siano collegate.
+1. Fare clic su **[!UICONTROL Test the connection]** per verificare che l&#39;istanza di controllo e l&#39;istanza di esecuzione siano collegate.
 
    ![](assets/messagecenter_create_extaccount_006.png)
 
@@ -106,17 +106,17 @@ Quando utilizzi più istanze di esecuzione, ripeti questi passaggi per creare ta
 
 Ogni istanza di esecuzione deve essere associata a un identificatore univoco per differenziare la cronologia di ogni istanza di esecuzione durante la visualizzazione nell’istanza di controllo.
 
-Questo identificatore può essere attribuito a ogni istanza di esecuzione **manualmente**. In questo caso, è necessario eseguire questo passaggio **su ogni istanza di esecuzione**. A questo scopo, utilizza la procedura guidata di distribuzione come descritto di seguito:
+Questo identificatore può essere attribuito manualmente a ogni istanza di esecuzione ****. In questo caso, il passaggio deve essere eseguito **su ogni istanza di esecuzione**. A questo scopo, utilizza la procedura guidata di distribuzione come descritto di seguito:
 
 1. Aprire la procedura guidata di distribuzione in un&#39;istanza di esecuzione.
-1. Vai a **[!UICONTROL Message Center]** finestra.
+1. Passare alla finestra **[!UICONTROL Message Center]**.
 1. Assegna l’identificatore scelto all’istanza.
 
    ![](assets/messagecenter_id_execinstance_001.png)
 
 1. Ripeti i passaggi precedenti per ogni istanza di esecuzione.
 
-L’identificatore può anche essere **automaticamente** attribuiti. Per eseguire questa operazione, passare al **istanza di controllo**, quindi fare clic su **[!UICONTROL Initialize connection]** pulsante.
+L&#39;identificatore può anche essere **automaticamente** attribuito. A tale scopo, passare all&#39;**istanza di controllo** e fare clic sul pulsante **[!UICONTROL Initialize connection]**.
 
 ![](assets/messagecenter_create_extaccount_006bis.png)
 
@@ -124,28 +124,28 @@ L’identificatore può anche essere **automaticamente** attribuiti. Per eseguir
 
 >[!NOTE]
 >
->Devono essere eseguiti i passaggi seguenti **sulle istanze di esecuzione**.
+>I passaggi seguenti devono essere eseguiti **sulle istanze di esecuzione**.
 
 Per collegare le istanze di esecuzione all’istanza di controllo, segui i passaggi seguenti.
 
-Affinché l’istanza di controllo possa connettersi all’istanza di esecuzione senza dover fornire una password, è sufficiente immettere l’indirizzo IP dell’istanza di controllo in **Centro messaggi** sezione diritti di accesso. Le password vuote non sono tuttavia consentite per impostazione predefinita.
+Affinché l&#39;istanza di controllo possa connettersi all&#39;istanza di esecuzione senza dover fornire una password, è sufficiente immettere l&#39;indirizzo IP dell&#39;istanza di controllo nella sezione dei diritti di accesso del **Centro messaggi**. Le password vuote non sono tuttavia consentite per impostazione predefinita.
 
-Per utilizzare una password vuota, vai alle istanze di esecuzione e definisci un’area di sicurezza limitata all’indirizzo IP del sistema informativo che distribuisce gli eventi. Questa area di sicurezza deve consentire password vuote e accettare `<identifier> / <password>` digitare le connessioni. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/security-zones.md).
+Per utilizzare una password vuota, vai alle istanze di esecuzione e definisci un’area di sicurezza limitata all’indirizzo IP del sistema informativo che distribuisce gli eventi. Questa area di sicurezza deve consentire password vuote e accettare connessioni di tipo `<identifier> / <password>`. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/security-zones.md).
 
 >[!NOTE]
 >
->Quando le istanze di esecuzione vengono utilizzate da più istanze di controllo, i dati possono essere suddivisi per cartella e per operatore. Per ulteriori informazioni, consulta [Utilizzare più istanze di controllo](#using-several-control-instances).
+>Quando le istanze di esecuzione vengono utilizzate da più istanze di controllo, i dati possono essere suddivisi per cartella e per operatore. Per ulteriori informazioni, vedere [Utilizzare più istanze di controllo](#using-several-control-instances).
 
-1. In un’istanza di esecuzione, passa alla cartella dell’operatore ( **[!UICONTROL Administration > Access management > Operators]** ).
-1. Seleziona la **Centro messaggi** agente.
+1. In un&#39;istanza di esecuzione, passare alla cartella dell&#39;operatore ( **[!UICONTROL Administration > Access management > Operators]** ).
+1. Selezionare l&#39;agente **Centro messaggi**.
 
    ![](assets/messagecenter_operator_001.png)
 
-1. Seleziona la **[!UICONTROL Edit]** , fare clic su **[!UICONTROL Access rights]** , quindi fare clic su **[!UICONTROL Edit the access parameters...]** collegamento.
+1. Selezionare la scheda **[!UICONTROL Edit]**, fare clic su **[!UICONTROL Access rights]** e quindi fare clic sul collegamento **[!UICONTROL Edit the access parameters...]**.
 
    ![](assets/messagecenter_operator_002.png)
 
-1. In **[!UICONTROL Access settings]** , fare clic sul pulsante **[!UICONTROL Add a trusted IP mask]** e aggiungi l’indirizzo IP dell’istanza di controllo.
+1. Nella finestra **[!UICONTROL Access settings]**, fare clic sul collegamento **[!UICONTROL Add a trusted IP mask]** e aggiungere l&#39;indirizzo IP dell&#39;istanza di controllo.
 
    ![](assets/messagecenter_operator_003.png)
 
@@ -155,52 +155,52 @@ Quando utilizzi più istanze di esecuzione, ripeti questi passaggi per ogni ista
 
 È possibile condividere un cluster di esecuzione con varie istanze di controllo. Questo tipo di architettura richiede la seguente configurazione.
 
-Ad esempio, immagina che la tua azienda gestisca due marchi, ciascuno con la propria istanza di controllo: **Controllo 1** e **Controllo 2**. Vengono utilizzate anche due istanze di esecuzione. È necessario immettere un operatore del Centro messaggi diverso per ogni istanza di controllo: **mc1** operatore per **Controllo 1** e un **mc2** operatore per **Controllo 2** dell&#39;istanza.
+Si supponga, ad esempio, che la società gestisca due marchi, ciascuno con la propria istanza di controllo: **Controllo 1** e **Controllo 2**. Vengono utilizzate anche due istanze di esecuzione. È necessario immettere un operatore Centro messaggi diverso per ogni istanza di controllo: un operatore **mc1** per l&#39;istanza **Control 1** e un operatore **mc2** per l&#39;istanza **Control 2**.
 
-Nella struttura di tutte le istanze di esecuzione, crea una cartella per operatore (**Cartella 1** e **Cartella 2**) e limitare l’accesso ai dati di ogni operatore alla propria cartella.
+Nella struttura di tutte le istanze di esecuzione, creare una cartella per operatore (**Cartella 1** e **Cartella 2**) e limitare l&#39;accesso ai dati di ogni operatore alla propria cartella.
 
 ### Configurare le istanze di controllo {#configuring-control-instances}
 
 >[!NOTE]
 >
->Devono essere eseguiti i passaggi seguenti **sulle istanze di controllo**.
+>I passaggi seguenti devono essere eseguiti **sulle istanze di controllo**.
 
-1. Il giorno **Controllo 1** istanza di controllo, crea un account esterno per ogni istanza di esecuzione e immetti **mc1** in ciascun account esterno. Il **mc1** verrà quindi creato su tutte le istanze di esecuzione (vedi [Configurare le istanze di esecuzione](#configuring-execution-instances)).
+1. Nell&#39;istanza di controllo **Control 1** creare un account esterno per ogni istanza di esecuzione e immettere l&#39;operatore **mc1** in ogni account esterno. L&#39;operatore **mc1** verrà quindi creato in tutte le istanze di esecuzione (vedere [Configurare le istanze di esecuzione](#configuring-execution-instances)).
 
    ![](assets/messagecenter_multi_control_1.png)
 
-1. Il giorno **Controllo 2** istanza di controllo, crea un account esterno per ogni istanza di esecuzione e immetti **mc2** in ciascun account esterno. Il **mc2** verrà quindi creato su tutte le istanze di esecuzione (vedi [Configurare le istanze di esecuzione](#configuring-execution-instances)).
+1. Nell&#39;istanza di controllo **Control 2** creare un account esterno per ogni istanza di esecuzione e immettere l&#39;operatore **mc2** in ogni account esterno. L&#39;operatore **mc2** verrà quindi creato in tutte le istanze di esecuzione (vedere [Configurare le istanze di esecuzione](#configuring-execution-instances)).
 
    ![](assets/messagecenter_multi_control_2.png)
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sulla configurazione di un’istanza di controllo, consulta [questa sezione](#control-instance).
+   >Per ulteriori informazioni sulla configurazione di un&#39;istanza di controllo, vedere [questa sezione](#control-instance).
 
 ### Configurare le istanze di esecuzione {#configuring-execution-instances}
 
 >[!NOTE]
 >
->Devono essere eseguiti i passaggi seguenti **sulle istanze di esecuzione**.
+>I passaggi seguenti devono essere eseguiti **sulle istanze di esecuzione**.
 
 Per utilizzare più istanze di controllo, questa configurazione deve essere eseguita su TUTTE le istanze di esecuzione.
 
-1. Crea una cartella per operatore nel **[!UICONTROL Administration > Production > Message Center]** nodo: **Cartella 1** e **Cartella 2**. Per ulteriori informazioni sulla creazione di cartelle e visualizzazioni, consulta [questa pagina](../../platform/using/access-management-folders.md).
+1. Creare una cartella per operatore nel nodo **[!UICONTROL Administration > Production > Message Center]**: **Cartella 1** e **Cartella 2**. Per ulteriori informazioni sulla creazione di cartelle e visualizzazioni, consulta [questa pagina](../../platform/using/access-management-folders.md).
 
    ![](assets/messagecenter_multi_control_3.png)
 
-1. Creare **mc1** e **mc2** duplicando l&#39;operatore del Centro messaggi fornito per impostazione predefinita (**mc**). Per ulteriori informazioni sulla creazione di operatori, consulta [questa sezione](../../platform/using/access-management-operators.md).
+1. Creare gli operatori **mc1** e **mc2** duplicando l&#39;operatore del Centro messaggi fornito per impostazione predefinita (**mc**). Per ulteriori informazioni sulla creazione degli operatori, consulta [questa sezione](../../platform/using/access-management-operators.md).
 
    ![](assets/messagecenter_multi_control_4.png)
 
    >[!NOTE]
    >
-   >**mc1** e **mc2** gli operatori devono avere **[!UICONTROL Message Center execution]** e non possono avere accesso alla console client di Adobe Campaign. Un operatore deve sempre essere collegato a un’area di sicurezza. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/security-zones.md).
+   >Gli operatori **mc1** e **mc2** devono disporre di diritti **[!UICONTROL Message Center execution]** e non possono accedere alla console client di Adobe Campaign. Un operatore deve sempre essere collegato a un’area di sicurezza. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../installation/using/security-zones.md).
 
-1. Per ogni operatore, controlla **[!UICONTROL Restrict to information found in sub-folders of]** e selezionare la cartella pertinente (**Cartella 1** per **mc1** operatore e **Cartella 2** per **mc2** operatore).
+1. Per ogni operatore, selezionare la casella **[!UICONTROL Restrict to information found in sub-folders of]** e selezionare la cartella pertinente (**Cartella 1** per l&#39;operatore **mc1** e **Cartella 2** per l&#39;operatore **mc2**).
 
    ![](assets/messagecenter_multi_control_5.png)
 
-1. Assegna a ogni operatore autorizzazioni di lettura e scrittura per la propria cartella. A tale scopo, fai clic con il pulsante destro del mouse sulla cartella e seleziona (Copia negli Appunti) **[!UICONTROL Properties]** . Quindi seleziona la **[!UICONTROL Security]** e aggiungi l’operatore pertinente (**mc1** per **Cartella 1** e **mc2** per **Cartella 2**). Assicurati che il **[!UICONTROL Read/Write data]** le caselle sono selezionate.
+1. Assegna a ogni operatore autorizzazioni di lettura e scrittura per la propria cartella. A tale scopo, fare clic con il pulsante destro del mouse sulla cartella e selezionare **[!UICONTROL Properties]**. Selezionare quindi la scheda **[!UICONTROL Security]** e aggiungere l&#39;operatore pertinente (**mc1** per **Folder 1** e **mc2** per **Folder 2**). Verificare che le caselle **[!UICONTROL Read/Write data]** siano selezionate.
 
    ![](assets/messagecenter_multi_control_6.png)

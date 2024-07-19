@@ -32,16 +32,16 @@ Tieni presente che se si verificano dei mancati recapiti differiti con il messag
 
 >[!NOTE]
 >
->Puoi controllare il dashboard di stato del sistema di Apple su [questa pagina](https://www.apple.com/support/systemstatus/){_blank}.
+>Puoi controllare il dashboard di stato del sistema di Apple in [questa pagina](https://www.apple.com/support/systemstatus/){_blank}.
 >
->Puoi controllare il dashboard di stato dell’area di lavoro di Google su [questa pagina](https://www.google.com/appsstatus#hl=en&amp;v=status){_blank}.
+>Puoi controllare il dashboard di stato di Google Workspace in [questa pagina](https://www.google.com/appsstatus#hl=en&amp;v=status){_blank}.
 >
 
 ## Impatto{#update-bounce-impact}
 
 In caso di interruzione di un ISP, le e-mail inviate tramite Campaign non possono essere consegnate correttamente al destinatario: verranno contrassegnate erroneamente come mancate consegne.
 
-In base alla logica standard di gestione dei mancati recapiti, Adobe Campaign ha aggiunto automaticamente questi destinatari all’elenco di quarantena con una **[!UICONTROL Status]** impostazione di **[!UICONTROL Quarantine]**. Per risolvere questo problema, aggiorna la tabella di quarantena in Campaign trovando e rimuovendo questi destinatari o modificando i **[!UICONTROL Status]** a **[!UICONTROL Valid]** in modo che il flusso di lavoro di pulizia notturna li rimuova.
+In base alla logica standard di gestione dei mancati recapiti, Adobe Campaign ha aggiunto automaticamente questi destinatari all&#39;elenco di quarantena con un&#39;impostazione **[!UICONTROL Status]** di **[!UICONTROL Quarantine]**. Per risolvere questo problema, devi aggiornare la tabella di quarantena in Campaign trovando e rimuovendo questi destinatari o modificando i loro **[!UICONTROL Status]** in **[!UICONTROL Valid]** in modo che il flusso di lavoro di pulizia notturna li rimuova.
 
 Per trovare i destinatari interessati da questo problema, consulta le istruzioni di seguito.
 
@@ -51,24 +51,24 @@ Per trovare i destinatari interessati da questo problema, consulta le istruzioni
 
 Di seguito sono riportate le linee guida consigliate per questa query in base alla tempistica dell’incidente e all’ISP.
 
-* Per gli ambienti Campaign con informazioni sulle regole e-mail in entrata in **[!UICONTROL Error text]** campo dell’elenco di quarantena:
+* Per gli ambienti Campaign con informazioni sulle regole e-mail in entrata nel campo **[!UICONTROL Error text]** dell’elenco di quarantena:
 
    * **Testo di errore (testo di quarantena)** contiene &quot;Momen_Code10_InvalidRecipient&quot;
-   * **Dominio e-mail (@domain)** uguale a domain1.com OR **Dominio e-mail (@domain)** uguale a domain2.com OR **Dominio e-mail (@domain)** uguale a domain3.com
-   * **Stato aggiornamento (@lastModified)** il o dopo il `MM/DD/YYYY HH:MM:SS AM`
-   * **Stato aggiornamento (@lastModified)** il o prima del `MM/DD/YYYY HH:MM:SS PM`
+   * **Dominio e-mail (@domain)** uguale a domain1.com OPPURE **Dominio e-mail (@domain)** uguale a domain2.com OPPURE **Dominio e-mail (@domain)** uguale a domain3.com
+   * **Aggiorna stato (@lastModified)** in data o dopo `MM/DD/YYYY HH:MM:SS AM`
+   * **Aggiorna stato (@lastModified)** in data `MM/DD/YYYY HH:MM:SS PM` o prima
 
-* Per gli ambienti Campaign con informazioni sulla risposta SMTP non recapitate nella **[!UICONTROL Error text]** campo dell’elenco di quarantena:
+* Per gli ambienti Campaign con informazioni di risposta SMTP non recapitate nel campo **[!UICONTROL Error text]** dell’elenco di quarantena:
 
-   * **Testo di errore (testo di quarantena)** contiene &quot;550-5.1.1&quot; E **Testo di errore (testo di quarantena)** contiene &quot;support.ISP.com&quot;
+   * **Testo di errore (testo quarantena)** contiene &quot;550-5.1.1&quot; E **Testo di errore (testo quarantena)** contiene &quot;support.ISP.com&quot;
 
      dove &quot;support.ISP.com&quot; può essere: &quot;support.apple.com&quot; o &quot;support.google.com&quot;, ad esempio
 
-   * **Stato aggiornamento (@lastModified)** il o dopo il `MM/DD/YYYY HH:MM:SS AM`
-   * **Stato aggiornamento (@lastModified)** il o prima del  `MM/DD/YYYY HH:MM:SS PM`
+   * **Aggiorna stato (@lastModified)** in data o dopo `MM/DD/YYYY HH:MM:SS AM`
+   * **Aggiorna stato (@lastModified)** in data `MM/DD/YYYY HH:MM:SS PM` o prima
 
 
-Dopo aver visualizzato l’elenco dei destinatari interessati, puoi impostarli sullo stato **[!UICONTROL Valid]** in modo che vengano rimossi dall’elenco di quarantena dal **[!UICONTROL Database cleanup]** oppure eliminarli dalla tabella.
+Una volta ottenuto l&#39;elenco dei destinatari interessati, è possibile impostarli sullo stato **[!UICONTROL Valid]** in modo che vengano rimossi dall&#39;elenco di quarantena dal flusso di lavoro **[!UICONTROL Database cleanup]** oppure eliminarli dalla tabella.
 
 **Argomenti correlati:**
 * [Errori di consegna](understanding-delivery-failures.md)

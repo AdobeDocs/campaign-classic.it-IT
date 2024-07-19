@@ -26,7 +26,7 @@ Adobe Campaign utilizza una sequenza ID che deve essere utilizzata di conseguenz
 
 Quando la sequenza raggiunge più di 2 miliardi (2.147.483.648 è il numero esatto), torna a zero. Deve essere evitato e crea problemi, ed è per questo che questa sequenza deve essere monitorata.
 
-Per evitare questo problema con tabelle di grandi dimensioni, è consigliabile utilizzare una sequenza specifica. Questa operazione può essere eseguita con **pkSequence** nello schema.
+Per evitare questo problema con tabelle di grandi dimensioni, è consigliabile utilizzare una sequenza specifica. Questa operazione può essere eseguita con l&#39;attributo **pkSequence** nello schema.
 
 I flussi di lavoro ad alta frequenza che creano molti registri richiederanno molti ID. Pertanto, si consiglia vivamente di evitare troppi registri e alte frequenze nei flussi di lavoro.
 
@@ -48,13 +48,13 @@ Le consegne più vecchie di due anni devono essere eliminate dall’istanza.
 
 Il numero di file sul disco del server applicazioni non deve aumentare indefinitamente.
 
-I flussi di lavoro di importazione creano file e quindi causano l’espansione del disco. Questo può essere impedito utilizzando lo standard [Raccoglitore file](../../workflow/using/file-collector.md) attività. L&#39;agente di raccolta file sposta i file in una cartella temporanea e li elimina automaticamente.
+I flussi di lavoro di importazione creano file e quindi causano l’espansione del disco. È possibile evitare questo problema utilizzando l&#39;attività standard [Raccoglitore file](../../workflow/using/file-collector.md). L&#39;agente di raccolta file sposta i file in una cartella temporanea e li elimina automaticamente.
 
 Se un flusso di lavoro importa file e non utilizza le funzioni standard, deve essere eliminato per ridurre al minimo lo spazio su disco.
 
 ## Dati e registri transazionali {#transactional-data-and-logs}
 
-Ogni [workflow](../../workflow/using/data-life-cycle.md#work-table) che importa i dati in Adobe Campaign fa crescere le dimensioni del database.
+Ogni [flusso di lavoro](../../workflow/using/data-life-cycle.md#work-table) che importa dati in Adobe Campaign causa l&#39;aumento delle dimensioni del database.
 
 Verifica che i flussi di lavoro di pulizia o rimozione siano in esecuzione e che i record vengano eliminati in modo efficace. Tutti i dati e i registri transazionali devono essere eliminati. L’attività di pulizia elimina solo le tabelle standard: i registri di tracciamento e i registri generali. Tabelle specifiche devono essere eliminate da flussi di lavoro specifici. Fai riferimento a [questa sezione](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
 

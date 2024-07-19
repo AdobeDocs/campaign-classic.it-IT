@@ -43,16 +43,16 @@ L’utilizzo di una tabella dei destinatari personalizzata presenta le seguenti 
 
   Si consiglia di:
 
-   * Dedicando il **[!UICONTROL nms:BroadLogRcp]** e **[!UICONTROL nms:TrackingLogRcp]** schemi predefiniti **[!UICONTROL nms:Recipientschema]**. Queste due tabelle di registro non devono essere collegate ad alcuna tabella dei destinatari personalizzata aggiuntiva.
-   * Definizione di schemi broadlog e trackinglog personalizzati dedicati per ogni nuovo schema destinatario personalizzato. Questa operazione può essere eseguita automaticamente durante la configurazione della mappatura di destinazione, vedi [Mappatura target](../../configuration/using/target-mapping.md).
+   * Dedicando gli schemi **[!UICONTROL nms:BroadLogRcp]** e **[!UICONTROL nms:TrackingLogRcp]** a **[!UICONTROL nms:Recipientschema]** predefiniti. Queste due tabelle di registro non devono essere collegate ad alcuna tabella dei destinatari personalizzata aggiuntiva.
+   * Definizione di schemi broadlog e trackinglog personalizzati dedicati per ogni nuovo schema destinatario personalizzato. Questa operazione può essere eseguita automaticamente durante la configurazione del mapping di destinazione. Vedere [Mapping di destinazione](../../configuration/using/target-mapping.md).
 
-* Impossibile utilizzare lo standard **[!UICONTROL Services and Subscriptions]** nel prodotto.
+* Impossibile utilizzare il **[!UICONTROL Services and Subscriptions]** standard offerto nel prodotto.
 
-  Ciò significa che il funzionamento complessivo descritto in [questa sezione](../../delivery/using/managing-subscriptions.md) non è applicabile.
+  Ciò significa che l&#39;operazione complessiva descritta in [questa sezione](../../delivery/using/managing-subscriptions.md) non è applicabile.
 
-* Il collegamento con **[!UICONTROL visitor]** la tabella non funziona.
+* Il collegamento con la tabella **[!UICONTROL visitor]** non funziona.
 
-  Pertanto, per utilizzare **[!UICONTROL Social Marketing]** è necessario configurare il passaggio di archiviazione in modo che faccia riferimento alla tabella corretta.
+  Pertanto, per utilizzare il modulo **[!UICONTROL Social Marketing]** è necessario configurare il passaggio di archiviazione in modo che faccia riferimento alla tabella corretta.
 
   Analogamente, quando si utilizzano funzioni di riferimento, è necessario adattare il modello standard di trasferimento iniziale dei messaggi.
 
@@ -68,8 +68,8 @@ Consigliamo inoltre di controllare i valori predefiniti utilizzati nelle diverse
 
 Ad esempio:
 
-* Alcune relazioni standard, in particolare quelle **Interazione** e **Applicazioni mobili** deve essere rielaborato. Consulta la sezione [Gestione dei rapporti](../../configuration/using/managing-reports.md) sezione.
-* Le configurazioni predefinite per alcune attività del flusso di lavoro fanno riferimento alla tabella dei destinatari standard (**[!UICONTROL nms:recipient]**): queste configurazioni devono essere modificate quando vengono utilizzate per una tabella di destinatari esterna. Consulta la sezione [Gestione dei flussi di lavoro](../../configuration/using/managing-workflows.md) sezione.
-* Lo standard **[!UICONTROL Unsubscription link]** il blocco di personalizzazione deve essere adattato.
+* Alcuni rapporti standard, in particolare quelli offerti da **Interaction** e **Mobile Applications**, devono essere risviluppati. Consulta la sezione [Gestione dei report](../../configuration/using/managing-reports.md).
+* Le configurazioni predefinite per alcune attività del flusso di lavoro fanno riferimento alla tabella dei destinatari standard (**[!UICONTROL nms:recipient]**): queste configurazioni devono essere modificate quando vengono utilizzate per una tabella dei destinatari esterna. Consulta la sezione [Gestione dei flussi di lavoro](../../configuration/using/managing-workflows.md).
+* È necessario adattare il blocco di personalizzazione **[!UICONTROL Unsubscription link]** standard.
 * È necessario modificare la mappatura di destinazione dei modelli di consegna standard.
 * I moduli V4 non sono compatibili per l’utilizzo con una tabella di destinatari esterna: è necessario utilizzare le applicazioni web.

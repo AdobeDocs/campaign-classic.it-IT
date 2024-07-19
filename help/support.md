@@ -32,7 +32,7 @@ Ottieni supporto tramite domande frequenti, best practice, risorse online e port
 
 ### Domande frequenti
 
-Come effettuare l’aggiornamento a una nuova build? Come monitorare l’esecuzione di un flusso di lavoro? qual è il flusso di lavoro di pulizia del database?... [Leggi le 10 domande principali](platform/using/common-questions.md).
+Come effettuare l’aggiornamento a una nuova build? Come monitorare l’esecuzione di un flusso di lavoro? cos&#39;è il flusso di lavoro di pulizia del database?... [Consulta le prime 10 domande](platform/using/common-questions.md).
 
 <table>
     <tr><td><strong>Argomenti per domande e risposte</strong></td><td><strong>Problemi comuni</strong></td><td><strong>Best practice</strong></td><td><strong>Procedure</strong></td></tr>
@@ -100,7 +100,7 @@ Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/do
 >
 >Il Pannello di controllo è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente i diritti da amministratore sono descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel).
 >
->Tieni presente che l’istanza deve essere ospitata su AWS e aggiornata con il [Build GA](rn/using/rn-overview.md). Scopri come controllare la versione in [questa sezione](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=it).
+>Tieni presente che l&#39;istanza deve essere ospitata su AWS e aggiornata con la build [GA più recente](rn/using/rn-overview.md). Scopri come controllare la versione in [questa sezione](platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=it).
 
 ### Come accedere al Pannello di controllo?
 
@@ -112,7 +112,7 @@ Il Pannello di controllo è disponibile direttamente da Adobe Experience Cloud. 
 
 ### Gestione SFTP
 
-Nel Pannello di controllo, puoi interagire con tutti i server SFTP collegati alle istanze di Campaign a cui hai accesso. Puoi monitorare la loro capacità di archiviazione, gestire gli indirizzi IP sul inserisco nell&#39;elenco Consentiti di e le chiavi SSH pubbliche. Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
+Nel Pannello di controllo, puoi interagire con tutti i server SFTP collegati alle istanze di Campaign a cui hai accesso. Puoi monitorarne la capacità di archiviazione, gestire gli indirizzi IP sul inserisco nell&#39;elenco Consentiti di storage e le chiavi SSH pubbliche. Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
 
 ### Sottodomini e certificati
 
@@ -124,16 +124,16 @@ Puoi monitorare i sottodomini e i relativi certificati. Per ulteriori informazio
 ### Impostazioni delle istanze
 
 Scopri come gestire le impostazioni delle istanze Campaign Classic nel Pannello di controllo Campaign. Per ulteriori informazioni, consulta queste pagine:
-* [Aggiungere IP nel inserisco nell&#39;elenco Consentiti di](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=it) per accedere alle istanze Campaign
-* [Gestire le autorizzazioni URL](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=it)
-* [Accedi ai dettagli dell’istanza](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=it)
-* [Gestire le chiavi GPG per la crittografia dei dati](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=it)
+* [Aggiungi gli IP nel inserisco nell&#39;elenco Consentiti di accesso di](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=it) alle istanze Campaign
+* [Gestione autorizzazioni URL](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=it)
+* [Accedi ai dettagli dell&#39;istanza](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=it)
+* [Gestione chiavi GPG per la crittografia dei dati](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=it)
 
 ## Richiesta di aiuto {#support}
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-Il nuovo sistema di ticket è stato lanciato tramite [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Il nuovo sistema richiede nuovi account individuali per ogni utente, con le autorizzazioni corrette. Se non riesci ad accedere con il tuo Adobe ID, richiedi l’accesso tramite Experience League e il team di assistenza clienti completerà le tue impostazioni il prima possibile. [Ulteriori informazioni](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html)
+Il nuovo sistema di ticket è stato avviato tramite [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Il nuovo sistema richiede nuovi account individuali per ogni utente, con le autorizzazioni corrette. Se non riesci ad accedere con il tuo Adobe ID, richiedi l’accesso tramite Experience League e il team di assistenza clienti completerà le tue impostazioni il prima possibile. [Ulteriori informazioni](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html)
 
 ### Chiedi agli esperti
 
@@ -147,4 +147,4 @@ In qualità di amministratore di Campaign, passa a [questa pagina](https://exper
 
 La creazione di un caso consente di contattare il team Assistenza clienti di Adobe per eventuali problemi riscontrati con i prodotti Adobe. Per aiutarti a risolvere un problema, Adobe Admin Console consente di chattare con l’Assistenza clienti di Adobe.
 
-Per segnalare un problema o avviare una sessione di chat nel nuovo sistema, connettiti a [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Seguire la procedura dettagliata descritta in [questa pagina](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html){_blank}.
+Per segnalare un problema o avviare una sessione di chat nel nuovo sistema, connettersi a [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Segui la procedura dettagliata descritta in [questa pagina](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html){_blank}.

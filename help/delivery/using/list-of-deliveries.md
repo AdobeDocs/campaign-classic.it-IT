@@ -17,19 +17,19 @@ ht-degree: 3%
 
 
 
-Puoi accedere alle consegne dall’elenco delle consegne tramite **[!UICONTROL Campaign Management > Deliveries]** dell&#39;albero.
+Puoi accedere alle consegne dall’elenco di consegna tramite il nodo **[!UICONTROL Campaign Management > Deliveries]** della struttura.
 
 ![](assets/deliveries-list.png)
 
 Per impostazione predefinita, l’elenco delle consegne contiene i nomi e gli stati delle consegne create nel nodo selezionato. Mostra anche il numero di messaggi da inviare, elaborati e inviati con successo.
 
-* Il numero di **[!UICONTROL Messages to send]** corrisponde al numero di destinatari target dopo l’analisi e prima della consegna.
-* Il numero di messaggi nel **[!UICONTROL Success]** corrisponde al numero di messaggi inviati dal server e ricevuti dai destinatari.
+* Il numero di **[!UICONTROL Messages to send]** corrisponde al numero di destinatari interessati dopo l&#39;analisi e prima della consegna.
+* Il numero di messaggi nella colonna **[!UICONTROL Success]** corrisponde al numero di messaggi inviati dal server e ricevuti dai destinatari.
 * Il numero di **[!UICONTROL Processed]** messaggi corrisponde al numero di messaggi ricevuti più il numero di messaggi con errori.
 
 >[!NOTE]
 >
->Per consegne di grandi dimensioni, potrebbe essere utile aggiornare questi valori. A questo scopo, seleziona la consegna in questione e fai clic con il pulsante destro del mouse su di essa. Seleziona **[!UICONTROL Action > Recompute delivery and tracking indicators...]** e quindi utilizzare la procedura guidata per aggiornare queste informazioni.
+>Per consegne di grandi dimensioni, potrebbe essere utile aggiornare questi valori. A questo scopo, seleziona la consegna in questione e fai clic con il pulsante destro del mouse su di essa. Selezionare **[!UICONTROL Action > Recompute delivery and tracking indicators...]**, quindi utilizzare la procedura guidata per aggiornare queste informazioni.
 
 **Argomenti correlati:**
 

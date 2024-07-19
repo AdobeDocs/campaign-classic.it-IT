@@ -10,7 +10,7 @@ exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '1558'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -36,13 +36,13 @@ _operation (stringa), advanced (booleano), apply (stringa), autoIncrement (boole
 
 ## Descrizione {#description}
 
-`<attribute>` Gli elementi ti consentono di definire un campo nel database.
+Gli elementi `<attribute>` consentono di definire un campo nel database.
 
 ## Uso e contesto di utilizzo {#use-and-context-of-use}
 
-`<attribute>` gli elementi devono essere dichiarati in un `<element>` elemento.
+`<attribute>` elementi devono essere dichiarati in un elemento `<element>`.
 
-La sequenza in cui `<attribute>` gli elementi sono definiti in un `<srcschema>` non influisce sulla sequenza di creazione dei campi nel database. La sequenza di creazione sarà in ordine alfabetico.
+La sequenza in cui sono definiti `<attribute>` elementi in un `<srcschema>` non influisce sulla sequenza di creazione dei campi nel database. La sequenza di creazione sarà in ordine alfabetico.
 
 ## Descrizione attributo {#attribute-description}
 
@@ -58,11 +58,11 @@ La sequenza in cui `<attribute>` gli elementi sono definiti in un `<srcschema>` 
    * &quot;update&quot; (aggiorna): aggiornamento. Ciò significa che Adobe Campaign aggiornerà l’elemento o genererà un errore se non esiste.
    * &quot;delete&quot;: eliminazione. Ciò significa che Adobe Campaign recupererà ed eliminerà gli elementi.
 
-* **avanzato (booleano)**: quando questa opzione è attivata (@advanced=&quot;true&quot;), consente di nascondere l’attributo nell’elenco dei campi disponibili accessibili per la configurazione di un elenco in un modulo.
-* **applyIf (stringa)**: questo attributo ti consente di rendere facoltativi i campi. Il `<attribute>` verrà preso in considerazione quando si aggiorna il database quando il vincolo viene rispettato. &quot;applyIf&quot; riceve un’espressione XTK.
+* **avanzato (booleano)**: quando questa opzione è attivata (@advanced=&quot;true&quot;), consente di nascondere l&#39;attributo nell&#39;elenco dei campi disponibili accessibili per la configurazione di un elenco in un modulo.
+* **applicabileIf (stringa)**: questo attributo consente di rendere facoltativi i campi. L&#39;elemento `<attribute>` verrà preso in considerazione durante l&#39;aggiornamento del database quando il vincolo verrà rispettato. &quot;applyIf&quot; riceve un’espressione XTK.
 * **autoIncrement (booleano)**: se questa opzione è attivata, il campo diventa un contatore. Questo consente di incrementare un valore (per lo più ID). (uso esterno)
-* **membersTo (stringa)**: prende il nome e lo spazio dei nomi della tabella che condivide il campo e popola lo schema in cui è dichiarato l’attributo. (utilizzato solo in un `<schema>`).
-* **dataPolicy (stringa)**: consente di specificare i vincoli di approvazione per i valori consentiti nel campo SQL o XML. I valori per questo attributo sono:
+* **AppartieneA (stringa)**: prende il nome e lo spazio dei nomi della tabella che condivide il campo e popola lo schema in cui è dichiarato l&#39;attributo. (utilizzato solo in un `<schema>`).
+* **criteri dati (stringa)**: consente di specificare vincoli di approvazione per i valori consentiti nel campo SQL o XML. I valori per questo attributo sono:
 
    * &quot;none&quot;: nessun valore
    * &quot;smartCase&quot;: prime lettere maiuscole
@@ -73,14 +73,14 @@ La sequenza in cui `<attribute>` gli elementi sono definiti in un `<srcschema>` 
    * &quot;identifier&quot;: nome dell’identificatore
    * &quot;resIdentifier&quot;: nome file
 
-* **dbEnum (stringa)**: riceve il nome interno di un’enumerazione &quot;chiusa&quot;. I valori di enumerazione devono essere definiti nella `<srcschema>`.
-* **defOnDuplicate (booleano)**: se questo attributo è attivato, quando un record viene duplicato il valore predefinito (definito in @default) viene riapplicato automaticamente al record.
-* **impostazione predefinita (stringa)**: ti consente di definire il valore del campo predefinito (chiamata a una funzione, valore predefinito). Questo attributo riceve un&#39;espressione XTK.
-* **desc (stringa)**: consente di inserire una descrizione dell’attributo. Questa descrizione viene visualizzata nella barra di stato dell’interfaccia.
+* **dbEnum (stringa)**: riceve il nome interno di un&#39;enumerazione &quot;chiusa&quot;. I valori di enumerazione devono essere definiti in `<srcschema>`.
+* **defOnDuplicate (booleano)**: se questo attributo è attivato, quando un record viene duplicato il valore predefinito (definito in @default) viene automaticamente riapplicato al record.
+* **default (stringa)**: consente di definire il valore del campo predefinito (chiamata a una funzione, valore predefinito). Questo attributo riceve un&#39;espressione XTK.
+* **desc (stringa)**: consente di inserire una descrizione dell&#39;attributo. Questa descrizione viene visualizzata nella barra di stato dell’interfaccia.
 * **modifica (stringa)**: questo attributo specifica il tipo di input che verrà utilizzato nel modulo collegato allo schema.
-* **enum (stringa)**: riceve il nome dell’enumerazione collegata al campo. L’enumerazione può essere inserita nello stesso schema o in uno schema remoto.
-* **expr (stringa)**: definisce un’espressione di precalcolo del campo. Questo attributo riceve un&#39;espressione Xpath o XTK.
-* **feature (stringa)**: definisce un campo delle caratteristiche: questi campi vengono utilizzati per estendere i dati in una tabella esistente, ma con la memorizzazione in una tabella allegata. I valori accettati sono:
+* **enum (stringa)**: riceve il nome dell&#39;enumerazione collegata al campo. L’enumerazione può essere inserita nello stesso schema o in uno schema remoto.
+* **expr (stringa)**: definisce un&#39;espressione di precalcolo del campo. Questo attributo riceve un&#39;espressione Xpath o XTK.
+* **funzione (stringa)**: definisce un campo delle caratteristiche. Questi campi vengono utilizzati per estendere i dati in una tabella esistente, ma con l&#39;archiviazione in una tabella allegata. I valori accettati sono:
 
    * &quot;shared&quot; (condiviso): il contenuto viene memorizzato in una tabella condivisa per tipo di dati
    * &quot;dedicato&quot;: il contenuto viene memorizzato in una tabella dedicata
@@ -94,12 +94,12 @@ La sequenza in cui `<attribute>` gli elementi sono definiti in un `<srcschema>` 
 
   Quando una caratteristica è definita in uno schema, questo schema deve avere una chiave principale basata su un singolo campo (le chiavi composite non sono autorizzate).
 
-* **featureDate (booleano)**: attributo collegato al campo @feature delle caratteristiche. Se il suo valore è &quot;true&quot;, ti consente di scoprire quando è stato aggiornato l’ultima volta il valore.
-* **img (stringa)**: consente di definire un percorso per un’immagine collegata a un campo (spazio dei nomi + nome immagine) (ad esempio: img=&quot;cus:mypicture.jpg&quot;). A livello fisico, l&#39;immagine deve essere importata nel server applicazioni.
-* **etichetta (stringa)**: etichetta collegata al campo, destinata principalmente all’utente nell’interfaccia. Consente di evitare vincoli di denominazione.
-* **length (stringa)**: max numero di caratteri per un valore del campo SQL di tipo &quot;stringa&quot;. Se l’attributo &quot;@length&quot; non è specificato, Adobe Campaign crea automaticamente un campo di 255 caratteri.
-* **localizzabile (booleano)**: se è attivato, questo attributo indica allo strumento di raccolta di recuperare il valore dell’attributo &quot;@label&quot; per la traduzione (uso interno).
-* **nome (MNTOKEN)**: nome dell’attributo che corrisponderà al nome del campo nella tabella. Il valore dell&#39;attributo &quot;@name&quot; deve essere breve, preferibilmente in inglese, e deve essere conforme ai vincoli di denominazione XML.
+* **featureDate (booleano)**: attributo collegato al campo delle caratteristiche &quot;@feature&quot;. Se il suo valore è &quot;true&quot;, ti consente di scoprire quando è stato aggiornato l’ultima volta il valore.
+* **img (stringa)**: consente di definire un percorso per un&#39;immagine collegata a un campo (spazio dei nomi + nome immagine) (esempio: img=&quot;cus:mypicture.jpg&quot;). A livello fisico, l&#39;immagine deve essere importata nel server applicazioni.
+* **etichetta (stringa)**: etichetta collegata al campo, per lo più destinata all&#39;utente nell&#39;interfaccia. Consente di evitare vincoli di denominazione.
+* **lunghezza (stringa)**: max. numero di caratteri per un valore del campo SQL di tipo &quot;stringa&quot;. Se l’attributo &quot;@length&quot; non è specificato, Adobe Campaign crea automaticamente un campo di 255 caratteri.
+* **localizzabile (booleano)**: se attivato, questo attributo indica allo strumento di raccolta di recuperare il valore dell&#39;attributo &quot;@label&quot; per la traduzione (uso interno).
+* **nome (MNTOKEN)**: nome dell&#39;attributo che corrisponderà al nome del campo nella tabella. Il valore dell&#39;attributo &quot;@name&quot; deve essere breve, preferibilmente in inglese, e deve essere conforme ai vincoli di denominazione XML.
 
   Quando lo schema viene scritto nel database, Adobe Campaign aggiunge automaticamente i prefissi al nome del campo:
 
@@ -110,21 +110,21 @@ La sequenza in cui `<attribute>` gli elementi sono definiti in un `<srcschema>` 
 
   Per definire completamente il nome del campo nella tabella, utilizzare l&#39;opzione &quot;@sqlname&quot; durante la definizione di un attributo.
 
-* **notNull (booleano)**: consente di ridefinire il comportamento di Adobe Campaign per quanto riguarda la gestione dei record NULL nel database. Per impostazione predefinita, i campi numerici non sono nulli e i campi di tipo stringa e data possono essere nulli.
-* **pkgStatus (stringa)**: durante le esportazioni dei pacchetti, i valori vengono presi in considerazione a seconda del valore del &quot;@pkgStatus&quot;:
+* **notNull (booleano)**: consente di ridefinire il comportamento di Adobe Campaign relativo alla gestione dei record NULL nel database. Per impostazione predefinita, i campi numerici non sono nulli e i campi di tipo stringa e data possono essere nulli.
+* **pkgStatus (stringa)**: durante le esportazioni del pacchetto, i valori vengono presi in considerazione a seconda del valore del &quot;@pkgStatus&quot;:
 
    * &quot;always&quot;: sempre presente
    * &quot;mai&quot;: mai presente
    * &quot;default (or Nothing)&quot;: il valore viene esportato tranne se si tratta del valore predefinito o se non è un campo interno che non sarebbe compatibile con altre istanze.
 
-* **ref (stringa)**: questo attributo definisce un riferimento a un `<attribute>` condiviso da più schemi (factoring di definizione). La definizione non viene copiata nello schema corrente.
-* **obbligatorio (booleano)**: se questo attributo è attivato (@required=&quot;true&quot;), il campo viene evidenziato nell’interfaccia. L’etichetta del campo sarà rossa nei moduli.
-* **sql (booleano)**: se questo attributo è attivato (@sql=&quot;true&quot;), forza l’archiviazione dell’attributo SQL anche quando l’elemento che contiene l’attributo ha la proprietà xml=&quot;true&quot;.
-* **sqlDefault (stringa)**: questo attributo consente di definire il valore predefinito preso in considerazione per l’aggiornamento del database, se l’attributo @notNull è attivato. Se questo attributo viene aggiunto dopo la creazione dell’attributo, il comportamento dello schema non cambia nemmeno per i nuovi record. Per modificare lo schema e aggiornare il valore per i nuovi record, è necessario eliminare e creare nuovamente l’attributo.
+* **ref (stringa)**: questo attributo definisce un riferimento a un elemento `<attribute>` condiviso da più schemi (factoring delle definizioni). La definizione non viene copiata nello schema corrente.
+* **obbligatorio (booleano)**: se questo attributo è attivato (@required=&quot;true&quot;), il campo viene evidenziato nell&#39;interfaccia. L’etichetta del campo sarà rossa nei moduli.
+* **sql (booleano)**: se questo attributo è attivato (@sql=&quot;true&quot;), forza l&#39;archiviazione dell&#39;attributo SQL, anche quando l&#39;elemento che contiene l&#39;attributo ha la proprietà xml=&quot;true&quot;.
+* **sqlDefault (stringa)**: questo attributo consente di definire il valore predefinito preso in considerazione per l&#39;aggiornamento del database se l&#39;attributo @notNull è attivato. Se questo attributo viene aggiunto dopo la creazione dell’attributo, il comportamento dello schema non cambia nemmeno per i nuovi record. Per modificare lo schema e aggiornare il valore per i nuovi record, è necessario eliminare e creare nuovamente l’attributo.
 * **sqlname (stringa)**: del campo durante la creazione della tabella. Se non @sqlname specificato, per impostazione predefinita viene utilizzato il valore dell&#39;attributo &quot;@name&quot;. Quando lo schema viene scritto nel database, i prefissi vengono aggiunti automaticamente a seconda del tipo di campo.
-* **modello (stringa)**: questo attributo definisce un riferimento a un `<attribute>` condiviso da più schemi. La definizione viene copiata automaticamente nello schema corrente.
-* **translDefault (stringa)**: se viene trovato un attributo &quot;@default&quot;, il &quot;@translatedDefault&quot; ti consente di ridefinire un’espressione che corrisponda a quella definita in @default, e che deve essere raccolta dallo strumento di traduzione (uso interno).
-* **translExpr (stringa)**: se è presente un attributo &quot;@expr&quot;, l’attributo &quot;@translatedExpr&quot; ti consente di ridefinire un’espressione in modo che corrisponda a quella definita in @expr, che deve essere raccolta dallo strumento di traduzione (uso interno).
+* **modello (stringa)**: questo attributo definisce un riferimento a un elemento `<attribute>` condiviso da più schemi. La definizione viene copiata automaticamente nello schema corrente.
+* **translDefault (stringa)**: se viene trovato un attributo &quot;@default&quot;, &quot;@translatedDefault&quot; ti consentirà di ridefinire un&#39;espressione in modo che corrisponda a quella definita in @default, che deve essere raccolta dallo strumento di traduzione (uso interno).
+* **TranslatedExpr (stringa)**: se è presente un attributo &quot;@expr&quot;, l&#39;attributo &quot;@translatedExpr&quot; consente di ridefinire un&#39;espressione che corrisponda a quella definita in @expr, che deve essere raccolta dallo strumento di traduzione (uso interno).
 * **tipo (MNTOKEN)**: tipo di campo.
 
   I tipi di campo sono generici. A seconda del tipo di database installato, Adobe Campaign modifica il tipo definito in un valore specifico per il database installato durante l’aggiornamento della struttura.
@@ -162,8 +162,8 @@ La sequenza in cui `<attribute>` gli elementi sono definiti in un `<srcschema>` 
 
   Se il campo è di tipo STRING e il nome del campo non è specificato dalla presenza dell’attributo &quot;@sqlname&quot;, il nome del campo nel database sarà automaticamente preceduto da una &quot;s&quot;. Questa modalità operativa sarà simile ai campi di tipo INTEGER (i), DOUBLE (d) e DATE (ts).
 
-* **userEnum (stringa)**: riceve il nome interno di un’enumerazione &quot;open&quot;. I valori dell’enumerazione possono essere definiti dall’utente nell’interfaccia.
-* **visibleIf (stringa)**: definisce una condizione sotto forma di espressione XTK per mostrare o nascondere l’attributo.
+* **userEnum (stringa)**: riceve il nome interno di un&#39;enumerazione &quot;open&quot;. I valori dell’enumerazione possono essere definiti dall’utente nell’interfaccia.
+* **visibleIf (stringa)**: definisce una condizione sotto forma di espressione XTK per mostrare o nascondere l&#39;attributo.
 
   >[!IMPORTANT]
   >

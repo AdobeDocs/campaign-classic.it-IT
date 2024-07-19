@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Metodo semplice {#simple-method}
 
-Questo metodo consiste nell’inviare una chiamata HTTP al server di reindirizzamento inserendo un **`<img>`** HTML nel codice sorgente HTML della pagina web che desideri monitorare.
+Questo metodo consiste nell&#39;inviare una chiamata HTTP al server di reindirizzamento inserendo un tag HTML **`<img>`** nel codice sorgente HTML della pagina Web che si desidera tracciare.
 
 >[!IMPORTANT]
 >
@@ -40,7 +40,7 @@ Quando si utilizzano i tag di tipo TRANSACTION, tuttavia, è necessario modifica
 
 Per eseguire l’inserimento di tag statici, è sufficiente copiare e incollare i tag generati dalla console o costruiti manualmente nell’origine della pagina web.
 
-**Esempio**: inserimento di un tag di tracciamento web in una pagina che visualizza un modulo.
+**Esempio**: inserimento di un tag di tracciamento Web in una pagina che visualizza un modulo.
 
 ```
 <html>
@@ -88,7 +88,7 @@ Inserimento di un tag di tracciamento web di tipo TRANSACTION nella pagina di co
 
 Quando le pagine web vengono generate dinamicamente, puoi aggiungere il tag di tracciamento web al momento della generazione della pagina.
 
-**Esempio**: tracciamento web aggiunto alle JSP.
+**Esempio**: il tracciamento web è stato aggiunto ai JSP.
 
 ```
 <%@page import="java.util.Random" %>
@@ -125,7 +125,7 @@ Quando le pagine web vengono generate dinamicamente, puoi aggiungere il tag di t
 
 Se desideri controllare le informazioni inviate al server di reindirizzamento, il modo più affidabile è quello di eseguire la query HTTP in modo sincrono utilizzando un linguaggio per la generazione delle pagine.
 
-L’URL creato deve rispettare le regole di sintassi definite in [Tag di tracciamento web: definizione](../../configuration/using/web-tracking-tag-definition.md).
+L&#39;URL creato deve rispettare le regole di sintassi definite in [Tag di tracciamento Web: definition](../../configuration/using/web-tracking-tag-definition.md).
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 
@@ -133,7 +133,7 @@ L’URL creato deve rispettare le regole di sintassi definite in [Tag di traccia
 >
 >Il reindirizzamento e il tracciamento web utilizzano i cookie ed è importante che il server web che esegue la chiamata HTTP sincrona si trovi nello stesso dominio del server di reindirizzamento. I vari scambi HTTP devono trasmettere i cookie &quot;id&quot;, &quot;uuid&quot; e &quot;uuid230&quot;.
 
-**Esempio**: generazione dinamica in Java, con autenticazione del destinatario tramite il relativo numero di account.
+**Esempio**: generazione dinamica in Java, con autenticazione del destinatario utilizzando il numero di account.
 
 ```
 [...]

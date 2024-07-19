@@ -19,26 +19,26 @@ Gli operatori di entità centrali possono tenere traccia degli ordini delle camp
 
 Ciò consente loro di:
 
-* [Filtrare i pacchetti](#filter-packages),
+* [Filtra pacchetti](#filter-packages),
 * [Modifica pacchetti](#edit-packages),
-* [Annullare un pacchetto](#cancel-a-package),
+* [Annulla pacchetto](#cancel-a-package),
 * [Reinizializzare un pacchetto](#reinitializing-a-package).
 
 ## Filtrare i pacchetti {#filter-packages}
 
-Dalla sezione **[!UICONTROL Campaigns]** , è possibile visualizzare l&#39;elenco di **[!UICONTROL Campaign packages]** che raggruppa tutte le campagne Distributed Marketing esistenti. Puoi filtrare questo elenco in modo da visualizzare solo le campagne pubblicate, in ritardo, in attesa di approvazione, ecc. A tale scopo, fare clic sui collegamenti nella sezione superiore della visualizzazione oppure utilizzare **[!UICONTROL Filter list]** collega e seleziona lo stato del pacchetto della campagna da visualizzare.
+Dalla scheda **[!UICONTROL Campaigns]**, puoi visualizzare l&#39;elenco di **[!UICONTROL Campaign packages]** che raggruppa tutte le campagne Distributed Marketing esistenti. Puoi filtrare questo elenco in modo da visualizzare solo le campagne pubblicate, in ritardo, in attesa di approvazione, ecc. A questo scopo, fai clic sui collegamenti nella sezione superiore di questa visualizzazione, oppure utilizza il collegamento **[!UICONTROL Filter list]** e seleziona lo stato del pacchetto della campagna da visualizzare.
 
 ![](assets/mkg_dist_catalog_filter.png)
 
 ## Modifica pacchetti {#edit-packages}
 
-Il **[!UICONTROL Campaign packages]** pagina consente di visualizzare il riepilogo di ciascun pacchetto.
+La pagina **[!UICONTROL Campaign packages]** consente di visualizzare il riepilogo di ciascun pacchetto.
 
 Questo riepilogo mostra le seguenti informazioni: etichetta, tipo di campagna, nonché il nome della campagna da cui è stata creata e la cartella.
 
 Fai clic sul nome del pacchetto per modificarlo. È inoltre possibile visualizzare gli ordini in base alle entità locali e allo stato.
 
-Queste informazioni sono disponibili anche nel **[!UICONTROL Campaign orders]** visualizza l’elenco di tutti gli ordini.
+Queste informazioni sono disponibili anche nella visualizzazione **[!UICONTROL Campaign orders]** che elenca tutti gli ordini.
 
 ![](assets/mkg_dist_catalog_op_command_details.png)
 
@@ -48,7 +48,7 @@ L’operatore centrale può modificare l’ordine. Esistono due modi per farlo:
 
    ![](assets/mkg_dist_catalog_op_command_edit1.png)
 
-   Il **[!UICONTROL Edit > General]** Questa scheda ti consente di visualizzare le informazioni inserite dall’entità locale al momento dell’ordine della campagna.
+   La scheda **[!UICONTROL Edit > General]** consente di visualizzare le informazioni immesse dall&#39;entità locale quando ha ordinato la campagna.
 
    ![](assets/mkg_dist_catalog_op_command_edit1a.png)
 
@@ -60,15 +60,15 @@ L’operatore centrale può modificare l’ordine. Esistono due modi per farlo:
 
 L’entità centrale può annullare un pacchetto della campagna in qualsiasi momento.
 
-Clic **[!UICONTROL Cancel]** nel pacchetto della campagna **[!UICONTROL Dashboard]**.
+Fare clic su **[!UICONTROL Cancel]** nel pacchetto della campagna **[!UICONTROL Dashboard]**.
 
 ![](assets/mkg_dist_cancel_op_from_dashboard.png)
 
-Il **[!UICONTROL Comment]** consente di giustificare l’annullamento.
+Il campo **[!UICONTROL Comment]** consente di giustificare l&#39;annullamento.
 
-Per **campagne locali**, l’annullamento di un pacchetto ne comporta la rimozione dall’elenco delle campagne di marketing disponibili.
+Per **campagne locali**, l&#39;annullamento di un pacchetto ne comporta la rimozione dall&#39;elenco delle campagne di marketing disponibili.
 
-Per **campagne collaborative**, l’annullamento di un pacchetto attiva numerose azioni:
+Per **campagne collaborative**, l&#39;annullamento di un pacchetto attiva numerose azioni:
 
 1. Tutti gli ordini relativi a questo pacchetto vengono annullati,
 
@@ -89,11 +89,11 @@ Se necessario, i pacchetti annullati possono essere comunque accessibili e reini
 I pacchetti di campagne già pubblicati possono essere reinizializzati, modificati e resi disponibili alle entità locali.
 
 1. Seleziona il pacchetto interessato.
-1. Fai clic su **[!UICONTROL Reinitialize the package to reuse it]** link e click **[!UICONTROL OK]**.
+1. Fare clic sul collegamento **[!UICONTROL Reinitialize the package to reuse it]** e quindi su **[!UICONTROL OK]**.
 
    ![](assets/mkg_dist_mutual_op_reinit.png)
 
-1. Fai clic su **[!UICONTROL Save]** per approvare la reinizializzazione del pacchetto.
+1. Fare clic sul pulsante **[!UICONTROL Save]** per approvare la reinizializzazione del pacchetto.
 
    ![](assets/mkg_dist_mutual_op_reinit2.png)
 

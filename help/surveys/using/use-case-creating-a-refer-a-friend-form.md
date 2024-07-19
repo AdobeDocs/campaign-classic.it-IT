@@ -28,13 +28,13 @@ Per configurare e creare il blocco di riferimento, attieniti alla seguente proce
 
    ![](assets/s_ncs_admin_survey_viral_sample_2.png)
 
-   Il **Il tuo messaggio** consente di immettere un messaggio per l&#39;arbitro. Il referente deve inoltre immettere i propri **Cognome**, **Nome** e **E-mail**.
+   Il campo **Messaggio** consente di immettere un messaggio per l&#39;arbitro. Il referente deve inoltre immettere **Cognome**, **Nome** e **E-mail**.
 
    Le informazioni immesse nei campi vengono memorizzate in una tabella specifica nota come tabella dei visitatori.
 
    >[!NOTE]
    >
-   >Se il destinatario non ha dato il proprio consenso, non è possibile memorizzarlo con i destinatari nel database. Saranno conservati temporaneamente nel **visitatore** tabella (**nms:visitatore**) progettato per campagne di marketing virale. Questa tabella viene eliminata regolarmente grazie a **pulizia** operazioni.
+   >Se il destinatario non ha dato il proprio consenso, non è possibile memorizzarlo con i destinatari nel database. Verranno archiviati temporaneamente nella tabella **visitor** (**nms:visitor**) progettata per le campagne di marketing virale. Questa tabella viene eliminata regolarmente grazie alle **operazioni di pulizia**.
    >
    >In questo esempio, vogliamo indirizzare i destinatari affinché suggeriscano di partecipare al concorso raccomandato dal loro referrer. Tuttavia, in questo messaggio vogliamo offrire loro anche un abbonamento a uno dei nostri servizi informativi. Se si iscrivono, possono essere memorizzati nel database.
 
@@ -64,7 +64,7 @@ Per configurare e creare il blocco di riferimento, attieniti alla seguente proce
 
    ![](assets/s_ncs_admin_survey_viral_sample_4b.png)
 
-1. Quindi crea il modello di consegna collegato al servizio informazioni creato durante il passaggio 1. Sarà selezionato nel **[!UICONTROL Choose scenario]** del servizio di informazione.
+1. Quindi crea il modello di consegna collegato al servizio informazioni creato durante il passaggio 1. Verrà selezionato nel campo **[!UICONTROL Choose scenario]** del servizio informazioni.
 
    Il modello di consegna utilizzato per creare il messaggio di offerta di riferimento contiene le seguenti informazioni:
 
@@ -82,7 +82,7 @@ Per configurare e creare il blocco di riferimento, attieniti alla seguente proce
 
    * Questo modello contiene un collegamento al modulo del concorso e il collegamento di abbonamento per l&#39;abbonamento alla newsletter da parte dell&#39;arbitro.
 
-     Il collegamento di abbonamento viene inserito tramite un blocco di personalizzazione. Per impostazione predefinita, ti consente di abbonare i profili a **newsletter** servizio. Questo blocco di personalizzazione può essere modificato in base alle tue esigenze, ad esempio per abbonare il destinatario a un servizio diverso.
+     Il collegamento di abbonamento viene inserito tramite un blocco di personalizzazione. Per impostazione predefinita, ti consente di abbonare i profili al servizio **newsletter**. Questo blocco di personalizzazione può essere modificato in base alle tue esigenze, ad esempio per abbonare il destinatario a un servizio diverso.
 
    * Il nome interno (&quot;referrer&quot; qui) verrà utilizzato nello script di consegna del messaggio come mostrato di seguito.
 
@@ -117,11 +117,11 @@ Per configurare e creare il blocco di riferimento, attieniti alla seguente proce
     </delivery>)
    ```
 
-1. Pubblica il modulo di concorso e invia un invito ai destinatari del target iniziale. Quando uno di loro invita un amico, una consegna basata sul **Offerta di riferimento** viene creato il modello.
+1. Publish il modulo per il concorso e invia un invito ai destinatari del target iniziale. Quando uno di loro invita un amico, viene creata una consegna basata sul modello **Offerta di riferimento**.
 
    ![](assets/s_ncs_admin_survey_viral_sample_8.png)
 
-   L&#39;arbitro viene aggiunto alla cartella visitatore nel **[!UICONTROL Administration > Visitors node]**:
+   L&#39;arbitro viene aggiunto alla cartella dei visitatori in **[!UICONTROL Administration > Visitors node]**:
 
    ![](assets/s_ncs_admin_survey_viral_sample_9.png)
 

@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # Mappatura del database{#database-mapping}
 
-Mapping SQL dello schema di esempio descritto [in questa pagina](schema-structure.md) genera il seguente documento XML:
+Il mapping SQL dello schema di esempio descritto [in questa pagina](schema-structure.md) genera il seguente documento XML:
 
 ```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">
@@ -35,7 +35,7 @@ Mapping SQL dello schema di esempio descritto [in questa pagina](schema-structur
 </schema>
 ```
 
-Elemento principale dello schema modificato in **`<srcschema>`** a **`<schema>`**.
+Elemento radice dello schema modificato in **`<srcschema>`** in **`<schema>`**.
 
 Questo altro tipo di documento viene generato automaticamente dallo schema di origine e viene semplicemente indicato come schema.
 
@@ -45,15 +45,15 @@ Le regole di denominazione SQL sono le seguenti:
 
 * **tabella**: concatenazione dello spazio dei nomi e del nome dello schema
 
-  Nel nostro esempio, il nome della tabella viene immesso tramite l’elemento principale dello schema nel **sqltable** attributo:
+  Nel nostro esempio, il nome della tabella viene immesso tramite l&#39;elemento principale dello schema nell&#39;attributo **sqltable**:
 
   ```sql
   <element name="recipient" sqltable="CusRecipient">
   ```
 
-* **campo**: nome dell’elemento preceduto da un prefisso definito secondo il tipo: &quot;i&quot; per il numero intero, &quot;d&quot; per il numero doppio, &quot;s&quot; per la stringa, &quot;ts&quot; per le date, ecc.
+* **campo**: nome dell&#39;elemento preceduto da un prefisso definito in base al tipo: &#39;i&#39; per numero intero, &#39;d&#39; per doppio, &#39;s&#39; per stringa, &#39;ts&#39; per date e così via.
 
-  Il nome del campo viene immesso tramite **sqlname** attributo per ogni tipo **`<attribute>`** e **`<element>`**:
+  Il nome del campo viene immesso tramite l&#39;attributo **sqlname** per ogni tipo di **`<attribute>`** e **`<element>`**:
 
   ```sql
   <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
@@ -80,11 +80,11 @@ I vincoli del campo SQL sono i seguenti:
 
 ## Campi XML {#xml-fields}
 
-Per impostazione predefinita, qualsiasi  **`<attribute>`** e **`<element>`** L&#39;elemento tipizzato da è mappato su un campo SQL della tabella dello schema di dati. È tuttavia possibile fare riferimento a questo campo in formato XML anziché in formato SQL, il che significa che i dati vengono memorizzati in un campo Memo (&quot;mData&quot;) della tabella contenente i valori di tutti i campi XML. La memorizzazione di questi dati è un documento XML che osserva la struttura dello schema.
+Per impostazione predefinita, qualsiasi elemento digitato **`<attribute>`** e **`<element>`** è mappato su un campo SQL della tabella dello schema di dati. È tuttavia possibile fare riferimento a questo campo in formato XML anziché in formato SQL, il che significa che i dati vengono memorizzati in un campo Memo (&quot;mData&quot;) della tabella contenente i valori di tutti i campi XML. La memorizzazione di questi dati è un documento XML che osserva la struttura dello schema.
 
-Per compilare un campo in XML, è necessario aggiungere **xml** con il valore &quot;true&quot; all&#39;elemento interessato.
+Per compilare un campo in XML, è necessario aggiungere l&#39;attributo **xml** con il valore &quot;true&quot; all&#39;elemento interessato.
 
-**Esempio**: ecco due esempi di utilizzo dei campi XML.
+**Esempio**: di seguito sono riportati due esempi di utilizzo di campi XML.
 
 * Campo commento su più righe:
 
@@ -119,7 +119,7 @@ Un indice viene dichiarato dall’elemento principale dello schema di dati.
 Gli indici rispettano le regole seguenti:
 
 * Un indice può fare riferimento a uno o più campi nella tabella
-* Un indice può essere univoco (per evitare duplicati) in tutti i campi se **univoco** contiene il valore &quot;true&quot;
+* Un indice può essere univoco (per evitare duplicati) in tutti i campi se l&#39;attributo **unique** contiene il valore &quot;true&quot;
 * Il nome SQL dell&#39;indice è determinato dal nome SQL della tabella e dal nome dell&#39;indice
 
 >[!NOTE]

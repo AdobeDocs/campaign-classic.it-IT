@@ -16,17 +16,17 @@ ht-degree: 0%
 
 
 
-Quando si desidera rappresentare i dati sotto forma di **[!UICONTROL tables]** o **[!UICONTROL charts]**, può essere presa da due origini: una nuova query (consulta [Definire un filtro diretto per i dati](#defining-a-direct-filter-on-data)) o il contesto del rapporto (consultare [Utilizzare i dati contestuali](#using-context-data)).
+Quando si desidera rappresentare dati in formato **[!UICONTROL tables]** o **[!UICONTROL charts]**, è possibile ricavarli da due origini: una nuova query (fare riferimento a [Definire un filtro diretto sui dati](#defining-a-direct-filter-on-data)) o il contesto del report (fare riferimento a [Utilizzare dati contestuali](#using-context-data)).
 
 ## Definire un filtro diretto per i dati {#defining-a-direct-filter-on-data}
 
 ### Filtrare i dati {#filtering-data}
 
-Utilizzo di un **[!UICONTROL Query]** l’attività di tipo non è obbligatoria durante la creazione di un rapporto. I dati possono essere filtrati direttamente nelle tabelle e nei grafici che compongono il rapporto.
+L&#39;utilizzo di un&#39;attività di tipo **[!UICONTROL Query]** non è obbligatorio durante la creazione di un report. I dati possono essere filtrati direttamente nelle tabelle e nei grafici che compongono il rapporto.
 
-Questo consente di selezionare i dati da visualizzare nel rapporto direttamente tramite **[!UICONTROL Page]** attività del rapporto.
+Questo consente di selezionare i dati da visualizzare nel report direttamente tramite l&#39;attività **[!UICONTROL Page]** del report.
 
-A questo scopo, fai clic su **[!UICONTROL Filter data...]** collegamento in **[!UICONTROL Data]** scheda: questo collegamento ti consente di accedere all’editor delle espressioni per definire una query sui dati da analizzare.
+A tale scopo, fare clic sul collegamento **[!UICONTROL Filter data...]** nella scheda **[!UICONTROL Data]**: questo collegamento consente di accedere all&#39;editor espressioni per definire una query sui dati da analizzare.
 
 ![](assets/reporting_filter_data_from_page.png)
 
@@ -34,7 +34,7 @@ A questo scopo, fai clic su **[!UICONTROL Filter data...]** collegamento in **[!
 
 Nell’esempio seguente, vogliamo che il grafico mostri solo i profili dei destinatari che vivono in Francia e che hanno effettuato un acquisto durante l’anno.
 
-Per definire questo filtro, inserisci una pagina nel grafico e modificala. Fai clic su **[!UICONTROL Filter data]** e creare il filtro corrispondente ai dati che desideri visualizzare. Per ulteriori informazioni sulla creazione di query in Adobe Campaign, consulta [questa sezione](../../platform/using/about-queries-in-campaign.md).
+Per definire questo filtro, inserisci una pagina nel grafico e modificala. Fare clic sul collegamento **[!UICONTROL Filter data]** e creare il filtro corrispondente ai dati che si desidera visualizzare. Per ulteriori informazioni sulla creazione di query in Adobe Campaign, consulta [questa sezione](../../platform/using/about-queries-in-campaign.md).
 
 ![](assets/s_ncs_advuser_report_wizard_029.png)
 
@@ -54,8 +54,8 @@ Applica i seguenti passaggi:
 
 1. Posizionare una pagina nel grafico e modificarla.
 1. Creare una tabella pivot.
-1. Vai a **[!UICONTROL Data]** e selezionare il cubo da utilizzare.
-1. Fai clic su **[!UICONTROL Filter data...]** collega e definisci la seguente query per rimuovere l’Adobe dall’elenco delle aziende.
+1. Passare alla scheda **[!UICONTROL Data]** e selezionare il cubo da utilizzare.
+1. Fare clic sul collegamento **[!UICONTROL Filter data...]** e definire la query seguente per rimuovere l&#39;Adobe dall&#39;elenco delle società.
 
    ![](assets/s_ncs_advuser_report_display_03.png)
 
@@ -65,20 +65,20 @@ Solo i destinatari che soddisfano i criteri di filtro verranno visualizzati nel 
 
 ## Utilizzare i dati contestuali {#using-context-data}
 
-Per rappresentare i dati sotto forma di **[!UICONTROL table]** o un **[!UICONTROL chart]**, i dati possono provenire dal contesto del rapporto.
+Per rappresentare i dati sotto forma di **[!UICONTROL table]** o **[!UICONTROL chart]**, i dati possono provenire dal contesto del report.
 
-Nella pagina che contiene la tabella o il grafico, il **[!UICONTROL Data]** consente di selezionare l’origine dati.
+Nella pagina che contiene la tabella o il grafico, la scheda **[!UICONTROL Data]** consente di selezionare l&#39;origine dati.
 
 ![](assets/s_ncs_advuser_report_datasource_3.png)
 
-* Il **[!UICONTROL New query]** consente di creare una query per la raccolta di dati. Per ulteriori informazioni, consulta [Definire un filtro diretto per i dati](#defining-a-direct-filter-on-data).
-* Il **[!UICONTROL Context data]** consente di utilizzare i dati di input: il contesto del rapporto coincide con le informazioni contenute nella transizione in entrata della pagina che contiene il grafico o la tabella. Questo contesto può, ad esempio, contenere dati raccolti tramite un **[!UICONTROL Query]** attività effettuata prima del **[!UICONTROL Page]** e per i quali è necessario specificare la tabella e i campi interessati dal rapporto.
+* L&#39;opzione **[!UICONTROL New query]** consente di creare una query per la raccolta dei dati. Per ulteriori informazioni, consulta [Definire un filtro diretto per i dati](#defining-a-direct-filter-on-data).
+* L&#39;opzione **[!UICONTROL Context data]** consente di utilizzare i dati di input: il contesto del report coincide con le informazioni contenute nella transizione in entrata della pagina che contiene il grafico o la tabella. Questo contesto può, ad esempio, contenere dati raccolti tramite un&#39;attività **[!UICONTROL Query]** inserita prima dell&#39;attività **[!UICONTROL Page]** e per la quale è necessario specificare la tabella e i campi interessati dal report.
 
 Ad esempio, in una casella di query, genera la seguente query per i destinatari:
 
 ![](assets/s_ncs_advuser_report_datasource_2.png)
 
-Quindi indica l’origine dei dati nel rapporto, in questo caso: **[!UICONTROL Data from the context]**.
+Indicare quindi l&#39;origine dei dati nel report, in questo caso: **[!UICONTROL Data from the context]**.
 
 La posizione dei dati viene dedotta automaticamente. Se necessario, puoi forzare il percorso dati.
 

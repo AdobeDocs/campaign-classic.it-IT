@@ -7,7 +7,7 @@ exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -47,7 +47,7 @@ Le enumerazioni vengono definite all’inizio di uno schema (prima che sia defin
 
 ## Descrizione attributo {#attribute-description-5}
 
-* **basetype (string)**: tipo di valori memorizzati nell’enumerazione.
+* **basetype (stringa)**: tipo dei valori memorizzati nell&#39;enumerazione.
 
   Elenco dei tipi disponibili:
 
@@ -80,11 +80,11 @@ Le enumerazioni vengono definite all’inizio di uno schema (prima che sia defin
    * intervallo di tempo
    * uuid
 
-* **impostazione predefinita (stringa)**: valore predefinito. Il valore predefinito può anche essere uno dei valori definiti nell’enumerazione.
+* **default (stringa)**: valore predefinito. Il valore predefinito può anche essere uno dei valori definiti nell’enumerazione.
 * **desc (stringa)**: descrizione enumerazione.
 * **etichetta (stringa)**: etichetta di enumerazione.
-* **nome (stringa)**: nome interno dell’enumerazione.
-* **modello (stringa)**: questo attributo definisce un riferimento a un `<enumeration>` condiviso da più schemi. La definizione viene copiata automaticamente nello schema corrente.
+* **nome (stringa)**: nome interno dell&#39;enumerazione.
+* **modello (stringa)**: questo attributo definisce un riferimento a un elemento `<enumeration>` condiviso da più schemi. La definizione viene copiata automaticamente nello schema corrente.
 
 ## Esempi {#examples-4}
 

@@ -18,7 +18,7 @@ Le API aziendali sono specifiche per ciascun tipo di oggetto. Hanno un effetto s
 
 * Consegne:
 
-   * Creazione di un’azione di consegna, consulta [SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-),
+   * Creazione di un&#39;azione di consegna, fare riferimento a [SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-),
    * invio di una campagna (avvio, pausa, arresto, invio di una bozza),
    * recupero dei registri di consegna.
 
@@ -27,17 +27,17 @@ Le API aziendali sono specifiche per ciascun tipo di oggetto. Hanno un effetto s
    * avvio di un flusso di lavoro,
    * verifica dei processi, ecc.
 
-     Fai riferimento a [Metodi SOAP in JavaScript](../../configuration/using/soap-methods-in-javascript.md).
+     Consulta [Metodi SOAP in JavaScript](../../configuration/using/soap-methods-in-javascript.md).
 
 * Gestione dei contenuti
-* Gestione degli abbonamenti, consulta [Sottoscrivi (nms:subscription)](#subscribe--nms-subscription-) e [Annulla iscrizione (nms:subscription)](#unsubscribe--nms-subscription-).
+* Gestione degli abbonamenti, fare riferimento a [Abbonamento (nms:subscription)](#subscribe--nms-subscription-) e [Annullamento dell&#39;abbonamento (nms:subscription)](#unsubscribe--nms-subscription-).
 * Processi dati: importazioni, esportazioni.
 
 Questa sezione descrive l’utilizzo dei servizi &quot;Subscribe&quot;, &quot;Unsubscribe&quot; e &quot;SubmitDelivery&quot;.
 
 >[!IMPORTANT]
 >
->[Documentazione JSAPI per Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=it) contiene informazioni aggiuntive sulle chiamate SOAP e sull’utilizzo di JavaScript in Adobe Campaign, nonché un riferimento completo a tutti i metodi e le funzioni utilizzati nell’applicazione.
+>[La documentazione JSAPI per Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=it) contiene informazioni aggiuntive sulle chiamate SOAP e sull&#39;utilizzo di JavaScript in Adobe Campaign, nonché un riferimento completo a tutti i metodi e le funzioni utilizzati nell&#39;applicazione.
 
 ## Sottoscrivi (nms:subscription) {#subscribe--nms-subscription-}
 
@@ -62,7 +62,7 @@ Descrizione del metodo &quot;subscribe&quot; nello schema &quot;nms:subscription
 </method>
 ```
 
-La definizione della chiave di riconciliazione deve essere immessa tramite il _**chiave** attributo su `<recipient>` del documento XML. Il contenuto di questo attributo è un elenco XPath separato da virgole.
+La definizione della chiave di riconciliazione deve essere immessa tramite l&#39;attributo _**key** nell&#39;elemento `<recipient>` del documento XML. Il contenuto di questo attributo è un elenco XPath separato da virgole.
 
 Questa chiamata non restituisce alcun dato, ad eccezione degli errori.
 
@@ -133,13 +133,13 @@ Descrizione del metodo &quot;Unsubscribe&quot; nello schema &quot;nms:subscripti
 </method>
 ```
 
-La definizione della chiave di riconciliazione deve essere immessa tramite l’attributo _key sul `<recipient>` del documento XML. Il contenuto di questo attributo è un elenco XPath separato da virgole.
+La definizione della chiave di riconciliazione deve essere immessa tramite l&#39;attributo _key sull&#39;elemento `<recipient>` del documento XML. Il contenuto di questo attributo è un elenco XPath separato da virgole.
 
 Se il destinatario non è presente nella banca dati o non è abbonato al servizio di informazione in questione, il servizio non esegue alcuna azione e non genera un errore.
 
 >[!NOTE]
 >
->Se il nome del servizio non è specificato come parametro, il destinatario si trova automaticamente in corrispondenza del inserisco nell&#39;elenco Bloccati di (@blackList=&quot;1&quot;).
+>Se il nome del servizio non viene specificato come parametro, il destinatario viene automaticamente in fase di inserisco nell&#39;elenco Bloccati del servizio (@blackList=&quot;1&quot;).
 
 Questa chiamata non restituisce alcun dato, ad eccezione degli errori.
 
@@ -204,7 +204,7 @@ Questa chiamata non restituisce alcun dato, ad eccezione degli errori.
 
 ### Esempio di documento XML {#xml-document-example}
 
-Questo esempio si basa su un modello di consegna personalizzato proveniente da un’origine dati esterna (in questo caso un file ). La configurazione è completamente descritta nel modello di consegna, pertanto tutto ciò che resta da inviare quando si verifica la chiamata è il contenuto del file da `<externalsource>` elemento.
+Questo esempio si basa su un modello di consegna personalizzato proveniente da un’origine dati esterna (in questo caso un file ). La configurazione è completamente descritta nel modello di consegna, quindi tutto ciò che rimane da inviare quando si verifica la chiamata è il contenuto del file dall&#39;elemento `<externalsource>`.
 
 ```
 <delivery>

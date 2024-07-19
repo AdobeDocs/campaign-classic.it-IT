@@ -23,7 +23,7 @@ Di seguito è riportata la definizione dei termini e dei concetti chiave in Adob
 
 Il test A/B è una funzionalità che consente all’utente di definire due o tre varianti di e-mail: ogni variante viene inviata ai campioni di popolazione per determinare quale ha il risultato migliore. Una volta determinata, la variante vincente viene quindi inviata alla popolazione rimanente.
 
-Ulteriori informazioni su [Test A/B](../../delivery/using/get-started-a-b-testing.md).
+Ulteriori informazioni sui [test A/B](../../delivery/using/get-started-a-b-testing.md).
 +++
 
 +++**Gestione degli accessi**
@@ -46,7 +46,7 @@ Learn more about [ACS Connector](../../integrations/using/acs-connector-principl
 
 Un’attività è un elemento della palette che viene aggiunto a un flusso di lavoro per definire una funzionalità di esecuzione. L’attività è un contenitore che esegue un’attività. In un flusso di lavoro, una determinata attività può produrre più attività, in particolare quando vi è un ciclo continuo o azioni ricorrenti (periodiche).
 
-Ulteriori informazioni su [Attività del flusso di lavoro](../../workflow/using/about-activities.md).
+Ulteriori informazioni sulle [attività del flusso di lavoro](../../workflow/using/about-activities.md).
 +++
 
 +++**Profilo attivo**
@@ -56,13 +56,13 @@ I profili sono considerati attivi se sono stati targetizzati o se è avvenuta un
 Ulteriori informazioni su [Profili attivi](../../platform/using/about-profiles.md#active-profiles).
 +++
 
-+++**Attività del flusso di lavoro di approvazione**
++++**Attività flusso di lavoro di approvazione**
 
-*Contesto: marketing distribuito di Campaign*
+*Contesto: marketing distribuito della campagna*
 
 L’attività Approvazione locale è un’attività del flusso di lavoro utilizzata per impostare un processo di approvazione della consegna prima che i messaggi vengano inviati.
 
-Ulteriori informazioni su [Attività di approvazione locale](../../workflow/using/local-approval.md).
+Ulteriori informazioni sull&#39;[attività Approvazione locale](../../workflow/using/local-approval.md).
 +++
 
 +++**Pubblico**
@@ -95,7 +95,7 @@ Learn more about [Campaigns](../../campaign/using/designing-marketing-campaigns.
 
 Nel contesto dell’interazione con Campaign, la modalità batch consente al motore di offerta di selezionare l’offerta o le offerte migliori per un set di contatti. Le regole di idoneità/definizione delle priorità vengono applicate a tutti i contatti del set.
 
-Ulteriori informazioni su [Interazione](../../interaction/using/interaction-and-offer-management.md).
+Ulteriori informazioni sull&#39;[interazione](../../interaction/using/interaction-and-offer-management.md).
 +++
 
 +++**Campagna**
@@ -135,7 +135,7 @@ Ulteriori informazioni su [Console client](../../platform/using/adobe-campaign-w
 
 L’approvazione del contenuto è il processo in base al quale un operatore o un gruppo di operatori separato approva il contenuto di una consegna prima che possa essere inviata.
 
-Ulteriori informazioni su [Approvazione dei contenuti](../../campaign/using/marketing-campaign-approval.md).
+Ulteriori informazioni su [Approvazione contenuto](../../campaign/using/marketing-campaign-approval.md).
 +++
 
 +++**Gruppi di controllo**
@@ -165,7 +165,7 @@ Ulteriori informazioni su [Cubi](../../reporting/using/ac-cubes.md).
 
 Adobe Campaign viene fornito con un modello dati predefinito, in cui i tipi di dati vengono definiti tramite l’installazione di vari pacchetti. Gli operatori possono arricchire il modello dati fornito estendendo le risorse per aggiungere campi personalizzati o tabelle personalizzate, ad esempio tabelle di transazioni o di prodotti.
 
-Ulteriori informazioni su [Risorse personalizzate](../../configuration/using/about-schema-edition.md).
+Ulteriori informazioni sulle [risorse personalizzate](../../configuration/using/about-schema-edition.md).
 +++
 
 +++**Modello dati**
@@ -179,7 +179,7 @@ Ulteriori informazioni su [Modello dati](../../configuration/using/about-data-mo
 
 Il flusso di lavoro di pulizia del database elimina i dati obsoleti per evitare la crescita esponenziale del database. Il flusso di lavoro viene attivato automaticamente senza l’intervento dell’utente.
 
-Ulteriori informazioni su [Flusso di lavoro di pulizia database](../../production/using/database-cleanup-workflow.md).
+Ulteriori informazioni sul [flusso di lavoro di pulizia del database](../../production/using/database-cleanup-workflow.md).
 +++
 
 <!--
@@ -196,7 +196,7 @@ Learn more about [Transactional Messaging](../../message-center/using/about-tran
 
 +++**Deliverability**
 
-*Contesto: recapito messaggi e-mail*
+*Contesto: recapito e-mail*
 
 Il recapito messaggi consente di misurare il successo delle campagne che raggiungono la casella in entrata dei destinatari senza che vengano saltati o contrassegnati come spam. Più precisamente, il recapito messaggi e-mail si riferisce all’insieme di caratteristiche che determinano la capacità di un messaggio di raggiungere la sua destinazione, tramite un indirizzo e-mail personale, in un breve lasso di tempo e con la qualità prevista in termini di contenuto e formato.
 
@@ -221,7 +221,7 @@ Ulteriori informazioni su [Analisi della consegna](../../delivery/using/steps-va
 
 I registri di consegna contengono informazioni generate durante l’invio di un messaggio. Questi registri mostrano i dettagli dell’invio, il messaggio preparato, ignorato, inviato o non riuscito. Sono accessibili direttamente dal dashboard di consegna.
 
-Ulteriori informazioni su [Registri di consegna](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
+Ulteriori informazioni sui [registri di consegna](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
 +++
 
 <!--
@@ -238,7 +238,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 
 +++**Profilo di consegna**
 
-*Contesto: direct mailing*
+*Contesto: Direct Mail*
 
 Una struttura di consegna è un set strutturato di elementi (documenti, negozi, coupon promozionali, ecc.) create dall’azienda e per una determinata campagna. Viene utilizzato nel contesto delle consegne di direct mailing.
 
@@ -249,7 +249,7 @@ Ulteriori informazioni su [Direct mailing](../../delivery/using/about-direct-mai
 
 La procedura guidata di distribuzione definisce i parametri dell’istanza Campaign, ad esempio lo spazio dei nomi predefinito, la pianificazione della pulizia del database, i periodi di conservazione dei dati e altre impostazioni tecniche.
 
-Ulteriori informazioni su [Distribuzione guidata](../../installation/using/deploying-an-instance.md#deployment-wizard).
+Ulteriori informazioni sulla [Distribuzione guidata](../../installation/using/deploying-an-instance.md#deployment-wizard).
 +++
 
 +++**Analisi descrittiva**
@@ -263,7 +263,7 @@ Ulteriori informazioni su [Analisi descrittiva](../../reporting/using/about-desc
 
 *Contesto: Marketing distribuito*
 
-Il componente aggiuntivo Marketing distribuito offre agli operatori di campagne uno spazio di lavoro collaborativo per l’implementazione di campagne tra entità centrali (sedi centrali, dipartimenti di marketing, ecc.) e gli enti locali (punti vendita, agenzie regionali, ecc.). Questa cooperazione si basa su un’area di lavoro condivisa nota come **elenco dei pacchetti di Campaign**: i modelli e le istanze di campagna creati a livello centrale sono offerti alle entità locali.
+Il componente aggiuntivo Marketing distribuito offre agli operatori di campagne uno spazio di lavoro collaborativo per l’implementazione di campagne tra entità centrali (sedi centrali, dipartimenti di marketing, ecc.) e gli enti locali (punti vendita, agenzie regionali, ecc.). Questa cooperazione si basa su un&#39;area di lavoro condivisa nota come **elenco di pacchetti Campaign**, in cui i modelli e le istanze di campagna creati centralmente vengono offerti alle entità locali.
 
 Ulteriori informazioni su [Marketing distribuito](../../distributed/using/about-distributed-marketing.md)
 +++
@@ -280,7 +280,7 @@ Ulteriori informazioni su [Distribuzione dei valori](../../platform/using/defini
 La configurazione del sottodominio ti consente di configurare una sottosezione del dominio (tecnicamente una &quot;zona DNS&quot;) per l’utilizzo con Adobe Campaign.
 La delega del dominio consente agli Adobi di controllare e mantenere tutti gli aspetti del DNS necessari per la distribuzione, il rendering e il tracciamento delle campagne e-mail.
 
-Ulteriori informazioni su [Delega del dominio](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=it)
+Ulteriori informazioni sulla [delega del dominio](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=it)
 +++
 
 ## E - H {#sec-2}
@@ -299,7 +299,7 @@ E4X è la versione di JavaScript utilizzata in Adobe Campaign Classic. A volte c
 
 Le regole di idoneità sono vincoli applicati a un ambiente, una categoria o un’offerta per quanto riguarda il periodo di validità, l’obiettivo e il peso. Consentono agli operatori di garantire che un’offerta sia in linea con il contatto mirato. Nell’ambiente dell’offerta, le regole di idoneità includono le regole di presentazione applicate alle offerte e ai destinatari a cui eseguire il targeting. Nella categoria, le regole di idoneità consentono agli operatori di limitare la validità della categoria nel tempo, definire i temi dell’applicazione e determinare i destinatari da targetizzare. Possono inoltre definire un peso moltiplicatore per un determinato periodo di tempo. Questo consente agli operatori di condividere le regole per le offerte in altre categorie, semplificandone così la gestione. In un’offerta, le regole di idoneità consentono agli operatori di limitare la validità delle offerte in tempo utile e di determinare i destinatari a cui rivolgersi.
 
-Ulteriori informazioni su [Regole di idoneità](../../interaction/using/interaction-and-offer-management.md).
+Ulteriori informazioni sulle [regole di idoneità](../../interaction/using/interaction-and-offer-management.md).
 +++
 
 +++**Offerta idonea**
@@ -308,10 +308,10 @@ Ulteriori informazioni su [Regole di idoneità](../../interaction/using/interact
 
 Un’offerta idonea è un’offerta che soddisfa i vincoli definiti a monte e che può essere offerta in modo coerente a un target.
 
-Ulteriori informazioni su [Interazione](../../interaction/using/interaction-and-offer-management.md).
+Ulteriori informazioni sull&#39;[interazione](../../interaction/using/interaction-and-offer-management.md).
 +++
 
-+++**CCN e-mail**
++++**Invia e-mail a Ccn**
 
 La funzionalità Ccn e-mail invia una copia esatta in formato EML di un’e-mail consegnata corrispondente, che viene salvata in un indirizzo e-mail Ccn dedicato in cui le e-mail possono essere elaborate e archiviate dal mittente in un sistema esterno.
 
@@ -334,25 +334,25 @@ An engine call is a server call that starts real-time processing on server side 
 +++
 -->
 
-+++**Attività Enrichment**
++++**Attività di arricchimento**
 
 L’attività Enrichment è un’attività avanzata del flusso di lavoro che consente agli operatori di arricchire i dati della tabella di lavoro generati che verranno elaborati nel flusso di lavoro. Questa attività viene generalmente utilizzata dopo attività di targeting o dopo l’importazione di un file e prima di attività che utilizzano dati oggetto di targeting. Gli arricchimenti possono trasformare i dati di transizione in entrata e configurare l’attività in modo da completare la transizione in uscita con dati migliorati. Consente all’operatore di combinare dati da più set di dati o di creare collegamenti a una risorsa temporanea.
 
-Ulteriori informazioni su [Attività Enrichment](../../workflow/using/enrichment.md).
+Ulteriori informazioni sull&#39;[attività di arricchimento](../../workflow/using/enrichment.md).
 +++
 
 +++**Enumerazioni**
 
 Un’enumerazione è un tipo di dati definito negli schemi o a livello di Platform che definisce i valori di input validi per un campo. Le enumerazioni vengono visualizzate nell’interfaccia utente e nei generatori di query come elenco a discesa.
 
-Ulteriori informazioni su [Enumerazioni](../../platform/using/managing-enumerations.md).
+Ulteriori informazioni sulle [enumerazioni](../../platform/using/managing-enumerations.md).
 +++
 
-+++**Vista Explorer**
++++**Visualizzazione Esplora risorse**
 
 La visualizzazione Esplora risorse è una visualizzazione gerarchica delle cartelle che contengono gli artefatti e i dati di Adobe Campaign. Tieni presente che il sistema di cartelle in Adobe Campaign non funziona come una visualizzazione ad albero tipica, in quanto ogni cartella contiene dati di un tipo specifico, ad esempio Consegne, Flussi di lavoro o Offerte.
 
-Ulteriori informazioni su [Vista Explorer](../../platform/using/adobe-campaign-explorer.md).
+Ulteriori informazioni sulla [visualizzazione Explorer](../../platform/using/adobe-campaign-explorer.md).
 +++
 
 +++**Account esterni**
@@ -362,13 +362,13 @@ Gli account esterni sono punti di ingresso e di uscita del prodotto per la conne
 Ulteriori informazioni su [Account esterni](../../installation/using/external-accounts.md).
 +++
 
-+++**Gestione dell’eccesso**
++++**Gestione dell&#39;affaticamento**
 
 *Contesto: ottimizzazione campagna*
 
 La gestione dell’eccesso consente di controllare la frequenza e la quantità di messaggi per evitare un’eccessiva sollecitazione dei destinatari e viene spesso applicata utilizzando una regola di tipologia.
 
-Ulteriori informazioni su [Gestione dell’eccesso](../../campaign-opt/using/pressure-rules.md).
+Ulteriori informazioni sulla [Gestione dell&#39;affaticamento](../../campaign-opt/using/pressure-rules.md).
 +++
 
 +++**Federated Data Access (FDA)**
@@ -380,18 +380,18 @@ Ulteriori informazioni su [Federated Data Access](../../installation/using/about
 
 +++**Approvazione estrazione file**
 
-*Contesto: direct mailing*
+*Contesto: Direct Mail*
 
 L’approvazione dell’estrazione del file è il processo in base al quale un operatore o un gruppo di operatori separato approva il contenuto e la configurazione di un file estratto prima che venga inviato a un fornitore esterno, ad esempio per una consegna direct mailing.
 
-Ulteriori informazioni su [Approvazione estrazione file](../../delivery/using/validating.md).
+Ulteriori informazioni sull&#39;[approvazione estrazione file](../../delivery/using/validating.md).
 +++
 
 +++**Dimensione filtro**
 
 La dimensione di filtro è lo schema che contiene i dati o gli attributi utilizzati da una query per filtrare le righe desiderate. Lo schema della dimensione di filtro deve essere collegato direttamente alla dimensione di targeting definita per consentire ad Adobe Campaign di attraversare il database join e restituire le righe dei partecipanti.
 
-Ulteriori informazioni su [Dimensione filtro](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions).
+Ulteriori informazioni sulla [dimensione filtro](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions).
 +++
 
 +++**Cartella**
@@ -405,7 +405,7 @@ Ulteriori informazioni su [Cartelle](../../platform/using/adobe-campaign-explore
 
 La visualizzazione Cartella è uno speciale tipo di cartella di Explorer utilizzato per visualizzare tutti i record di un tipo di dati selezionato, indipendentemente dalla cartella a cui appartiene. Le visualizzazioni cartelle vengono utilizzate come strumento amministrativo per gestire i dati partizionati o i dati distribuiti tra più cartelle.
 
-Ulteriori informazioni su [Visualizzazione cartella](../../platform/using/adobe-campaign-explorer.md).
+Ulteriori informazioni su [Visualizzazione cartelle](../../platform/using/adobe-campaign-explorer.md).
 +++
 
 +++**Forms**
@@ -425,7 +425,7 @@ Learn more about [Generated SQL queries](../../platform/using/steps-to-create-a-
 +++
 -->
 
-+++**Heatmap**
++++**Mappa di calore**
 
 Campaign Heatmap è una tabella che mostra le informazioni sull’esecuzione del flusso di lavoro per un periodo di 24 ore. Visualizza la distribuzione dei flussi di lavoro nel periodo per ora e per intervalli di 5 minuti. La mappa di calore viene utilizzata per valutare il carico del server e determinare le attività del flusso di lavoro che consumano più risorse.
 
@@ -436,7 +436,7 @@ Ulteriori informazioni su [Heatmap](../../workflow/using/heatmap.md).
 
 La distribuzione ibrida è una combinazione di servizi on-demand e software on-premise distribuiti per funzionare insieme.
 
-Ulteriori informazioni su [Distribuzione ibrida](../../installation/using/hosting-models.md#hybrid).
+Ulteriori informazioni sulla [distribuzione ibrida](../../installation/using/hosting-models.md#hybrid).
 
 +++
 
@@ -449,11 +449,11 @@ Ulteriori informazioni su [Distribuzione ibrida](../../installation/using/hostin
 
 La modalità di identificazione si riferisce allo stato di un contatto. Può essere esplicito, implicito o anonimo.
 
-* **esplicito**: il contatto viene identificato dopo il suo accesso all’interfaccia del canale.
-* **implicito**: il contatto è stato identificato da un cookie (permanente o sessione). Può essere elaborato come contatto anonimo o identificato.
+* **explicit**: il contatto è identificato dopo il suo accesso all&#39;interfaccia di canale.
+* **implicit**: il contatto è stato identificato da un cookie (permanente o sessione). Può essere elaborato come contatto anonimo o identificato.
 * **anonimo**: impossibile identificare il contatto.
 
-Ulteriori informazioni su [Interazione](../../interaction/using/interaction-and-offer-management.md).
+Ulteriori informazioni sull&#39;[interazione](../../interaction/using/interaction-and-offer-management.md).
 +++
 
 <!--
@@ -472,21 +472,21 @@ Learn more about [Image serving](../../delivery/using/defining-the-email-content
 
 Un’interazione in entrata è un’interazione successiva a una chiamata in entrata generata dall’azione di un contatto in un canale, ad esempio web, call center o mobile. Questo tipo di interazione viene generalmente elaborato in modalità unitaria (ovvero per destinatario).
 
-Ulteriori informazioni su [Interazione in entrata](../../interaction/using/about-inbound-channels.md).
+Ulteriori informazioni sull&#39;[interazione in entrata](../../interaction/using/about-inbound-channels.md).
 +++
 
 +++**Rendering della casella in entrata**
 
 Il rendering della casella in entrata è la generazione di anteprime e-mail che garantisce che il messaggio venga visualizzato ai destinatari in modo ottimale su diversi client web, web mail e dispositivi. Adobe Campaign sfrutta Litmus, che consente ai creatori di contenuti e-mail di visualizzare in anteprima il contenuto dei messaggi in oltre 70 renderer e-mail, come la casella in entrata Gmail o il client Apple Mail.
 
-Ulteriori informazioni su [Rendering casella in entrata](../../delivery/using/delivery-dashboard.md#delivery-rendering).
+Ulteriori informazioni sul rendering di [Posta in arrivo](../../delivery/using/delivery-dashboard.md#delivery-rendering).
 +++
 
-+++**Impostazioni delle istanze**
++++**Impostazioni istanza**
 
 Le impostazioni delle istanze sono dettagli di configurazione di un’istanza Adobe Campaign. Queste impostazioni sono definite nella Distribuzione guidata (Strumenti>Avanzate>Distribuzione guidata) o nei file di configurazione del server e/o dell&#39;istanza.
 
-Ulteriori informazioni su [Impostazioni delle istanze](../../installation/using/about-initial-configuration.md).
+Ulteriori informazioni sulle [Impostazioni istanza](../../installation/using/about-initial-configuration.md).
 
 +++
 
@@ -494,7 +494,7 @@ Ulteriori informazioni su [Impostazioni delle istanze](../../installation/using/
 
 I processi sono gestiti tramite una procedura guidata che semplifica l’importazione e l’esportazione di dati da e verso il prodotto. I processi utilizzano il sistema di modelli per semplicità e coerenza e possono essere definiti per l’esecuzione in base a una pianificazione.
 
-Ulteriori informazioni su [processi di importazione ed esportazione](../../platform/using/get-started-data-import-export.md).
+Ulteriori informazioni sui [processi di importazione ed esportazione](../../platform/using/get-started-data-import-export.md).
 +++
 
 +++**Elenchi**
@@ -513,11 +513,11 @@ Ulteriori informazioni su [Cache locale](../../platform/using/faq-campaign-confi
 
 ## M - P {#sec-4}
 
-+++**Gestione delle risorse marketing (MRM)**
++++**Gestione risorse marketing (MRM)**
 
-*Contesto: Marketing Resource Management (MRM)*
+*Contesto: Gestione risorse marketing (MRM)*
 
-Il **Gestione delle risorse marketing (MRM)** in Adobe Campaign consente di controllare le azioni di marketing in modalità collaborativa fornendo una gestione completa e il tracciamento in tempo reale delle attività, dei budget e delle risorse di marketing coinvolte. Gli operatori Adobe Campaign possono coordinare le loro azioni e approvare l’avanzamento in tutte le fasi tramite processi di convalida completi e strumenti di tracciamento appropriati: reporting, tracciamento delle approvazioni, notifiche, forum di discussione, ecc.
+Il modulo **Gestione risorse di marketing (MRM)** in Adobe Campaign consente di controllare le azioni di marketing in modalità collaborativa fornendo una gestione completa e il tracciamento in tempo reale delle attività, dei budget e delle risorse di marketing coinvolte. Gli operatori Adobe Campaign possono coordinare le loro azioni e approvare l’avanzamento in tutte le fasi tramite processi di convalida completi e strumenti di tracciamento appropriati: reporting, tracciamento delle approvazioni, notifiche, forum di discussione, ecc.
 
 Ulteriori informazioni su [MRM](../../mrm/using/about-marketing-resource-management.md).
 +++
@@ -537,11 +537,11 @@ I diritti di accesso granulari al database utilizzati per definire l&#39;accesso
 Ulteriori informazioni su [Diritti denominati](../../platform/using/access-management-named-rights.md).
 +++
 
-+++**Namespace**
++++**Spazio dei nomi**
 
 Lo spazio dei nomi è una partizione che separa i tipi di dati del cliente dai tipi di dati nativi di Adobe Campaign nel modello di dati. Utilizzato anche per facilitare la migrazione delle definizioni da un’istanza all’altra, ad esempio per spostare uno schema o un modello dall’istanza Sviluppo all’istanza Produzione.
 
-Ulteriori informazioni su [Namespace](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
+Ulteriori informazioni su [Spazio dei nomi](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 +++
 
 <!--
@@ -558,25 +558,25 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 La struttura di navigazione è la navigazione principale nella vista Esplora di Adobe Campaign. La struttura di spostamento funziona come un browser di file, ad esempio Esplora risorse. Le cartelle possono contenere sottocartelle. Selezionando un nodo viene visualizzata la vista corrispondente al nodo. La vista visualizzata è un elenco associato a uno schema e un modulo di input per modificare la riga selezionata. È possibile personalizzare la struttura di navigazione e impostare le autorizzazioni per le cartelle.
 
-Ulteriori informazioni su [Struttura di navigazione](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarch).
+Ulteriori informazioni su [Struttura di spostamento](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarch).
 +++
 
 +++**Obiettivi**
 
-*Contesto: Marketing Resource Management (MRM)*
+*Contesto: Gestione risorse marketing (MRM)*
 
 All’interno della campagna, del programma o del piano, gli operatori possono indicare un elenco di obiettivi. Si tratta di valori quantificati da raggiungere. Al termine della campagna, del programma o del piano, il modulo MRM consente agli operatori di confrontare gli obiettivi e i risultati in report dedicati.
 
 Ulteriori informazioni su [Obiettivi](../../mrm/using/creating-and-managing-tasks.md#expenses-and-revenues).
 +++
 
-+++**Catalogo delle offerte**
++++**Catalogo offerte**
 
 *Contesto: interazione campagna*
 
 Un catalogo di offerte è un set di offerte definite in Adobe Campaign che possono essere selezionate durante un’interazione. Il catalogo è organizzato gerarchicamente e ogni nodo corrisponde a una categoria.
 
-Ulteriori informazioni su [Catalogo delle offerte](../../interaction/using/offer-catalog-overview.md).
+Ulteriori informazioni su [Catalogo offerte](../../interaction/using/offer-catalog-overview.md).
 +++
 
 +++**Contatto offerta**
@@ -585,19 +585,19 @@ Ulteriori informazioni su [Catalogo delle offerte](../../interaction/using/offer
 
 Un contatto dell’offerta è un contatto di un’interazione in entrata. Durante l’elaborazione delle chiamate al motore, il contatto è associato a una dimensione di targeting. I contatti anonimi non identificati vengono attribuiti alla dimensione di targeting dei visitatori. Esistono due tipi di contatti, identificati e anonimi:
 
-* **Contatto identificato**: contatto che è stato identificato volontariamente sul canale. Nelle interazioni in uscita, il contatto viene identificato automaticamente.
-* **Contatto anonimo**: un contatto che non si è abbonato volontariamente tramite il canale, ma che può essere identificato implicitamente tramite un cookie. Questa terminologia viene utilizzata solo per le interazioni in ingresso.
+* **Contatto identificato**: un contatto che è stato identificato volontariamente sul canale. Nelle interazioni in uscita, il contatto viene identificato automaticamente.
+* **Contatto anonimo**: un contatto che non si è abbonato volontariamente tramite il canale ma che può essere identificato implicitamente tramite un cookie. Questa terminologia viene utilizzata solo per le interazioni in ingresso.
 
-Ulteriori informazioni su [Interazione](../../interaction/using/interaction-and-offer-management.md).
+Ulteriori informazioni sull&#39;[interazione](../../interaction/using/interaction-and-offer-management.md).
 +++
 
-+++**Ambiente di progettazione dell’offerta**
++++**Ambiente di progettazione dell&#39;offerta**
 
 *Contesto: interazione campagna*
 
-L&#39;offerta **Ambiente di progettazione** è l’ambiente in cui gli operatori creano le offerte, definiscono le regole di tipologia e selezionano lo schema di destinazione delle offerte. Anche la tabella per l’archiviazione delle proposte di offerta generate è definita dall’ambiente. Per impostazione predefinita, il componente aggiuntivo Interazione è dotato di un **Progettazione** ambiente e **Live** ambiente ad esso collegato. Entrambi gli ambienti sono preconfigurati per la destinazione della tabella dei destinatari incorporata.
+L&#39;ambiente di progettazione **dell&#39;offerta** è l&#39;ambiente in cui gli operatori creano le offerte, definiscono le regole di tipologia e selezionano lo schema di destinazione delle offerte. Anche la tabella per l’archiviazione delle proposte di offerta generate è definita dall’ambiente. Per impostazione predefinita, il componente aggiuntivo Interaction è fornito con un ambiente **Design** e un ambiente **Live** collegati. Entrambi gli ambienti sono preconfigurati per la destinazione della tabella dei destinatari incorporata.
 
-Ulteriori informazioni su [Ambienti di progettazione delle offerte](../../interaction/using/fundamental-principles.md).
+Ulteriori informazioni su [Ambienti di Offer Design](../../interaction/using/fundamental-principles.md).
 +++
 
 +++**Arbitraggio del motore di offerta**
@@ -606,19 +606,19 @@ Ulteriori informazioni su [Ambienti di progettazione delle offerte](../../intera
 
 Il motore di offerta seleziona le offerte che verranno visualizzate in un ambiente (offerte idonee). Il principio di arbitraggio classifica le offerte per priorità in base ai criteri definiti nelle categorie e nelle offerte.
 
-Ulteriori informazioni su [Interazione](../../interaction/using/interaction-and-offer-management.md).
+Ulteriori informazioni sull&#39;[interazione](../../interaction/using/interaction-and-offer-management.md).
 +++
 
-+++**Potatura del motore di offerta**
++++**Eliminazione del motore di offerta**
 
 *Contesto: interazione campagna*
 
 L’eliminazione del motore di offerta è il processo di eliminazione delle offerte non idonee alla selezione. Eseguito prima del passaggio di arbitraggio del motore di offerta.
 
-Ulteriori informazioni su [Interazione](../../interaction/using/interaction-and-offer-management.md).
+Ulteriori informazioni sull&#39;[interazione](../../interaction/using/interaction-and-offer-management.md).
 +++
 
-+++**Ambiente dell’offerta**
++++**Ambiente offerta**
 
 *Contesto: interazione campagna*
 
@@ -627,13 +627,13 @@ L’ambiente dell’offerta è la cartella principale che definisce il catalogo 
 Ulteriori informazioni su [Ambienti di offerta](../../interaction/using/fundamental-principles.md).
 +++
 
-+++**Ambiente live delle offerte**
++++**Ambiente live dell&#39;offerta**
 
 *Contesto: interazione campagna*
 
-L’ambiente Offer Live è collegato a una campagna **Ambiente di progettazione**. Contiene offerte di sola lettura il cui contenuto e la cui idoneità sono stati approvati tramite **Ambiente di progettazione**. Possono essere selezionati per la presentazione su un sito web o per essere inseriti in un messaggio in uscita.
+L&#39;ambiente di Offer Live è collegato a un **ambiente di progettazione** di Campaign. Contiene offerte di sola lettura il cui contenuto e idoneità sono stati approvati tramite l&#39;**ambiente di progettazione**. Possono essere selezionati per la presentazione su un sito web o per essere inseriti in un messaggio in uscita.
 
-Ulteriori informazioni su [Ambienti di offerta live](../../interaction/using/fundamental-principles.md).
+Ulteriori informazioni su [Ambienti Offer Live](../../interaction/using/fundamental-principles.md).
 +++
 
 +++**Regole di presentazione delle offerte**
@@ -642,7 +642,7 @@ Ulteriori informazioni su [Ambienti di offerta live](../../interaction/using/fun
 
 Le regole di presentazione delle offerte sono regole di tipologia a cui si fa riferimento nell’ambiente dell’offerta, che consentono agli operatori di escludere offerte specifiche tenendo conto della cronologia delle proposte del destinatario.
 
-Ulteriori informazioni su [Regole di presentazione delle offerte](../../interaction/using/managing-offer-presentation.md#presentation-rules-overview).
+Ulteriori informazioni sulle [Regole di presentazione delle offerte](../../interaction/using/managing-offer-presentation.md#presentation-rules-overview).
 +++
 
 +++**Anteprima offerta**
@@ -660,34 +660,34 @@ Ulteriori informazioni su [Anteprima offerta](../../interaction/using/creating-a
 
 Una proposta di offerta è il risultato dell’azione che consiste nel presentare un’offerta a un contatto in un determinato spazio di offerta, ad esempio il banner su un sito web, un contenuto e-mail o SMS. Questo risultato viene memorizzato nella tabella delle proposte di offerta, che definisce l’offerta, il destinatario e la marca temporale, fornendo una registrazione di tutte le offerte che un destinatario ha ricevuto.
 
-Ulteriori informazioni su [Proposte di offerte](../../interaction/using/creating-offer-spaces.md#offer-proposition-statuses).
+Ulteriori informazioni sulle [proposte di offerte](../../interaction/using/creating-offer-spaces.md#offer-proposition-statuses).
 +++
 
-+++**Rappresentazione dell’offerta**
++++**Rappresentazione offerta**
 
 *Contesto: interazione campagna*
 
 Per rappresentazione di un’offerta si intendono le informazioni utilizzate dal canale per visualizzare l’offerta. La rappresentazione dell’offerta può essere realizzata a partire dalla funzione di rendering dello spazio in cui l’offerta viene rappresentata o immessa direttamente nell’interfaccia (ad esempio, nel blocco HTML). Un’offerta può essere rappresentata da uno spazio.
 
-Ulteriori informazioni su [Interazione](../../interaction/using/interaction-and-offer-management.md).
+Ulteriori informazioni sull&#39;[interazione](../../interaction/using/interaction-and-offer-management.md).
 +++
 
-+++**Simulazione di offerta**
++++**Simulazione offerte**
 
 *Contesto: interazione campagna*
 
 Una simulazione di offerta consente agli operatori di testare la distribuzione delle offerte in un ambito definito (data di consegna, segmento di destinazione, numero di offerte, tema, ecc.) prima di inviare effettivamente le offerte. Può essere utilizzato per adeguare le priorità dell’offerta e le regole di idoneità al fine di massimizzare l’efficacia dell’offerta.
 
-Ulteriori informazioni su [Simulazioni delle offerte](../../interaction/using/about-offers-simulation.md).
+Ulteriori informazioni sulle [Simulazioni offerte](../../interaction/using/about-offers-simulation.md).
 +++
 
-+++**Spazio dell’offerta**
++++**Spazio dell&#39;offerta**
 
 *Contesto: interazione campagna*
 
 Uno spazio dell’offerta è una cartella che definisce la posizione in cui l’offerta è esposta. La definizione di uno spazio consente di specificare il canale utilizzato, creare il contenuto dell’offerta e specificare le offerte presentate. Lo spazio dell’offerta è l’interfaccia tra il canale e il motore dell’offerta.
 
-Ulteriori informazioni su [Spazio dell’offerta](../../interaction/using/creating-offer-spaces.md).
+Ulteriori informazioni su [Spazio offerte](../../interaction/using/creating-offer-spaces.md).
 +++
 
 +++**Temi offerta**
@@ -735,7 +735,7 @@ Ulteriori informazioni su [Opzioni](../../installation/using/configuring-campaig
 
 Un’interazione in uscita è una chiamata al motore di interazione da un elenco di contatti (utilizzato per la consegna di e-mail, direct mailing, ecc.). A ogni contatto vengono applicate le stesse regole e le stesse procedure. Questo tipo di interazione viene generalmente elaborato in modalità batch.
 
-Ulteriori informazioni su [Interazione in uscita](../../interaction/using/about-outbound-channels.md).
+Ulteriori informazioni sull&#39;[interazione in uscita](../../interaction/using/about-outbound-channels.md).
 +++
 
 +++**Esportazione/importazione pacchetto**
@@ -756,28 +756,28 @@ Ulteriori informazioni su [Palette](../../workflow/using/building-a-workflow.md#
 
 Le informazioni di monitoraggio delle prestazioni vengono visualizzate nella scheda Monitoraggio. Mostra le metriche per il sistema sottostante, ad esempio l’utilizzo della memoria e della CPU, le statistiche del server SMTP, i processi del server e altre informazioni rilevanti.
 
-Ulteriori informazioni su [Monitoraggio delle prestazioni](../../production/using/monitoring-processes.md).
+Ulteriori informazioni sul [Monitoraggio delle prestazioni](../../production/using/monitoring-processes.md).
 +++
 
 +++**Blocchi di personalizzazione**
 
 Adobe Campaign offre blocchi di personalizzazione incorporati che puoi inserire nelle consegne. Sono dinamici, personalizzati e contengono un rendering specifico. Ad esempio, puoi aggiungere un logo, un messaggio di saluto o un collegamento a una pagina speculare. Per impostazione predefinita, sono disponibili diversi blocchi di personalizzazione. Puoi anche definire blocchi di personalizzazione personalizzati che ti consentiranno di ottimizzare la personalizzazione della consegna. I dati effettivi vengono inseriti in ogni messaggio generato durante la fase di analisi della consegna.
 
-Ulteriori informazioni su [Blocchi di personalizzazione](../../delivery/using/personalization-blocks.md).
+Ulteriori informazioni sui [blocchi di personalizzazione](../../delivery/using/personalization-blocks.md).
 +++
 
-+++**Campo di personalizzazione**
++++**Campo Personalization**
 
 Un campo di personalizzazione è un singolo riferimento a un campo dati utilizzato per personalizzare una consegna per un destinatario specifico. Il valore effettivo dei dati viene inserito durante la fase di analisi della consegna.
 
-Ulteriori informazioni su [Campi di personalizzazione](../../delivery/using/personalization-fields.md).
+Ulteriori informazioni sui [campi di personalizzazione](../../delivery/using/personalization-fields.md).
 +++
 
-+++**Variabili di personalizzazione**
++++**Variabili Personalization**
 
-Le variabili di personalizzazione sono parti di codice in una consegna che possono visualizzare testo diverso a destinatari diversi in base alle informazioni del destinatario. Questi campi possono essere implementati come campo o blocco di personalizzazione.
+Le variabili Personalization sono parti di codice in una consegna che possono visualizzare testo diverso a destinatari diversi in base alle informazioni del destinatario. Questi campi possono essere implementati come campo o blocco di personalizzazione.
 
-Ulteriori informazioni su [Variabili di personalizzazione](../../delivery/using/about-personalization.md).
+Ulteriori informazioni sulle [variabili Personalization](../../delivery/using/about-personalization.md).
 +++
 
 +++**Piano**
@@ -791,7 +791,7 @@ Ulteriori informazioni su [Piani](../../campaign/using/setting-up-marketing-camp
 
 I filtri predefiniti sono query salvate per il riutilizzo. L’utilizzo di filtri predefiniti aumenta la produttività (perché vengono creati una sola volta), aiuta a creare coerenza (perché tutti gli addetti al marketing possono utilizzarli) e riduce le competenze richieste dall’addetto al marketing perché può utilizzare codice o logica che potrebbe non essere in grado di creare.
 
-Ulteriori informazioni su [Filtri predefiniti](../../platform/using/creating-filters.md#filtering-recipients).
+Ulteriori informazioni sui [filtri predefiniti](../../platform/using/creating-filters.md#filtering-recipients).
 +++
 
 <!--
@@ -808,7 +808,7 @@ Learn more about [Predictive Engagement Scoring](../../platform/using/creating-f
 
 La chiave primaria è l&#39;identificatore univoco di ogni record di una tabella di database. Una tabella deve avere almeno una chiave. Di regola, le chiavi vengono dichiarate dopo l’elemento principale dello schema e gli indici. Le chiavi primarie non possono essere composite (includere diversi campi).
 
-Ulteriori informazioni su [Chiave primaria](../../configuration/using/schema/key.md).
+Ulteriori informazioni sulla [chiave primaria](../../configuration/using/schema/key.md).
 +++
 
 +++**Profilo**
@@ -829,14 +829,14 @@ Ulteriori informazioni su [Programmi](../../campaign/using/setting-up-marketing-
 
 La cartella Risorse pubbliche, in Adobe Campaign, contiene le immagini ospitate dal server applicazioni. Le immagini nelle consegne devono essere pubblicate nel server applicazioni (o in un server di hosting di immagini, se Campaign è configurato in questo modo) per essere visualizzate nelle consegne, ad esempio nelle e-mail.
 
-Ulteriori informazioni su [Risorse pubbliche](../../installation/using/deploying-an-instance.md#managing-public-resources).
+Ulteriori informazioni sulle [risorse pubbliche](../../installation/using/deploying-an-instance.md#managing-public-resources).
 +++
 
-+++**Push**
++++**Invia**
 
 *Contesto: canale app mobile*
 
-Le notifiche push sono messaggi ricevuti dalle app mobili. Le notifiche push sono configurate per funzionare con Adobe Campaign includendo il codice SDK di Experienci Platform nell’app mobile. Per il push, sono disponibili due canali di consegna: iOS e Android.
+Le notifiche push sono messaggi ricevuti dalle app mobili. Le notifiche push sono configurate per funzionare con Adobe Campaign includendo il codice SDK di Experience Platform nell’app mobile. Per il push, sono disponibili due canali di consegna: iOS e Android.
 
 Ulteriori informazioni su [Push](../../delivery/using/about-mobile-app-channel.md).
 +++
@@ -856,7 +856,7 @@ Ulteriori informazioni su [Destinatario](../../configuration/using/about-data-mo
 
 La funzione di rendering è definita in uno spazio dell’offerta. Viene utilizzato per creare la rappresentazione dell’offerta in base agli attributi definiti nell’offerta. Esistono tre diverse modalità di funzione di rendering: HTML, XML e testo.
 
-Ulteriori informazioni su [Funzione di rendering](../../interaction/using/creating-offer-spaces.md).
+Ulteriori informazioni sulla [Funzione di rendering](../../interaction/using/creating-offer-spaces.md).
 +++
 
 <!--
@@ -878,7 +878,7 @@ Ulteriori informazioni su [Schemi](../../configuration/using/about-schema-refere
 
 L’estensione dello schema consente di personalizzare gli schemi predefiniti in base ai casi d’uso aziendali. Ad esempio, puoi aggiungere il campo &quot;Fedeltà&quot; alla tabella Destinatario.
 
-Ulteriori informazioni su [Estensione schema](../../configuration/using/extending-a-schema.md).
+Ulteriori informazioni sull&#39;[estensione schema](../../configuration/using/extending-a-schema.md).
 +++
 
 +++**Indirizzi di seed**
@@ -909,23 +909,23 @@ Ulteriori informazioni su [Servizi](../../delivery/using/about-services-and-subs
 
 Nel Pannello di controllo, puoi interagire con tutti i server SFTP collegati alle istanze di Campaign a cui hai accesso. Il Pannello di controllo Campaign ti consente di eseguire azioni sui server SFTP, ad esempio monitorare la capacità di archiviazione, gestire gli indirizzi IP per l’inserimento nell’elenco Consentiti e gestire le chiavi SSH pubbliche.
 
-Ulteriori informazioni su [Gestione SFTP](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
+Ulteriori informazioni sulla [gestione SFTP](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
 +++
 
 +++**Attività dei servizi di abbonamento**
 
 L’attività del flusso di lavoro Subscription services ti consente di creare o eliminare un abbonamento a un servizio di informazioni per il gruppo specificato nella transizione.
 
-Ulteriori informazioni su [Attività dei servizi di abbonamento](../../workflow/using/subscription-services.md).
+Ulteriori informazioni sull&#39;[attività Subscription services](../../workflow/using/subscription-services.md).
 +++
 
 +++**Approvazione target**
 
-*Contesto: marketing distribuito di Campaign*
+*Contesto: marketing distribuito della campagna*
 
 L’approvazione del target è il processo in base al quale un operatore o un gruppo di operatori separato approva il target finale di una consegna (dopo che la fase di analisi ha generato il target) prima che la consegna possa essere inviata.
 
-Ulteriori informazioni su [Approvazione target](../../workflow/using/local-approval.md).
+Ulteriori informazioni sull&#39;[approvazione target](../../workflow/using/local-approval.md).
 +++
 
 +++**Targeting dei dati**
@@ -939,30 +939,30 @@ Ulteriori informazioni su [Dati di destinazione](../../workflow/using/data-life-
 
 La mappatura di destinazione è la mappatura dei canali di consegna su un tipo di dati specifico. Le mappature di Target definiscono il modo in cui i diversi canali di consegna si collegano ai campi di dati di uno schema. Definisce il modo in cui Campaign invia a quel tipo di dati utilizzando un campo o un’espressione specifica.
 
-Ulteriori informazioni su [Mappatura target](../../delivery/using/selecting-a-target-mapping.md).
+Ulteriori informazioni sulla [mappatura di destinazione](../../delivery/using/selecting-a-target-mapping.md).
 +++
 
 +++**Attività di targeting**
 
 Le attività di targeting sono attività del flusso di lavoro specifiche per il targeting, la manipolazione dei dati della popolazione e le attività di filtro. Consentono agli operatori di creare uno o più target definendo i set e suddividendoli o combinandoli mediante operazioni di intersezione, unione o esclusione.
 
-Ulteriori informazioni su [Attività di targeting](../../workflow/using/about-targeting-activities.md).
+Ulteriori informazioni sulle [attività di targeting](../../workflow/using/about-targeting-activities.md).
 +++
 
 +++**Dimensione targeting**
 
 La dimensione di targeting è il tipo di dati prodotto (restituito) da una query o da altre attività del flusso di lavoro. Adobe Campaign restituisce solo la chiave primaria delle righe del database dei partecipanti, indipendentemente dalla query utilizzata per ottenerle.
 
-Ulteriori informazioni su [Dimensione targeting](../../workflow/using/targeting-data.md).
+Ulteriori informazioni sulla [dimensione di targeting](../../workflow/using/targeting-data.md).
 +++
 
 +++**Attività attività**
 
-*Contesto: Marketing Resource Management (MRM)*
+*Contesto: Gestione risorse marketing (MRM)*
 
 L’attività del flusso di lavoro Attività incorpora l’azione umana nella logica di un flusso di lavoro. È possibile specificare due scenari: il primo se l&#39;attività è completata e il secondo se l&#39;attività non è completata. I casi d’uso tipici consistono nell’incorporare azioni offline in una campagna o in azioni personalizzate come le approvazioni.
 
-Ulteriori informazioni su [Attività attività](../../workflow/using/task.md).
+Ulteriori informazioni sull&#39;[attività](../../workflow/using/task.md).
 +++
 
 <!--
@@ -1011,7 +1011,7 @@ Ulteriori informazioni su [Registri di tracciamento](../../delivery/using/access
 
 La messaggistica transazionale è un modulo di Campaign progettato per gestire le notifiche di attivazione personalizzate generate da eventi inviati da un sistema di informazioni esterno. Un messaggio transazionale è una comunicazione singola e univoca, inviata in tempo reale da un provider, ad esempio un sito web. È particolarmente atteso, perché contiene informazioni importanti che il destinatario desidera controllare o confermare.
 
-Ulteriori informazioni su [Messaggistica transazionale](../../message-center/using/about-transactional-messaging.md).
+Ulteriori informazioni sulla [messaggistica transazionale](../../message-center/using/about-transactional-messaging.md).
 +++
 
 &lt;!------- UTILE QUI??----->
@@ -1038,7 +1038,7 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 
 Una tipologia è un raggruppamento di regole di tipologia applicate alla fase di analisi di una consegna. Una tipologia di campagna può contenere diverse regole di tipologia, ma una consegna può fare riferimento a una sola tipologia.
 
-Ulteriori informazioni su [Tipologie](../../campaign-opt/using/about-campaign-typologies.md#typologies).
+Ulteriori informazioni sulle [tipologie](../../campaign-opt/using/about-campaign-typologies.md#typologies).
 +++
 
 +++**Regola di tipologia**
@@ -1047,7 +1047,7 @@ Ulteriori informazioni su [Tipologie](../../campaign-opt/using/about-campaign-ty
 
 Le regole di tipologia sono regole aziendali implementate come parte della fase di analisi della consegna. Le regole di tipologia sono controlli sul contenuto della consegna (regole di controllo) o sul target della consegna (regole di filtro) o su altra logica (regole di pressione) che applicano i requisiti aziendali. Le regole sono elementi granulari che possono essere inclusi in una o più tipologie.
 
-Ulteriori informazioni su [Regole di tipologia](../../campaign-opt/using/about-campaign-typologies.md#typology-rules).
+Ulteriori informazioni sulle [Regole di tipologia](../../campaign-opt/using/about-campaign-typologies.md#typology-rules).
 +++
 
 ## U - Z {#sec-6}
@@ -1058,14 +1058,14 @@ Ulteriori informazioni su [Regole di tipologia](../../campaign-opt/using/about-c
 
 In modalità unitaria, un singolo contatto viene elaborato dal motore di offerta in fase di runtime. Questa modalità viene generalmente utilizzata per le interazioni in entrata e i messaggi transazionali.
 
-Ulteriori informazioni su [Modalità unitaria](../../interaction/using/about-inbound-channels.md).
+Ulteriori informazioni sulla [modalità unitaria](../../interaction/using/about-inbound-channels.md).
 +++
 
-+++**Applicazioni web**
++++**Applicazioni Web**
 
 Le applicazioni web sono pagine di applicazioni dinamiche e interattive ospitate dall’istanza Campaign. Contengono dati provenienti dal database e contenuti adattati ai diritti dell’utente connesso. È ad esempio possibile creare un modulo di modifica in una extranet o moduli di notifica che includono dati provenienti dal database con tabelle, grafici, moduli di input e così via. Questa funzionalità consente di progettare e pubblicare pagine Web in cui gli utenti possono cercare o immettere informazioni.
 
-Ulteriori informazioni su [Applicazioni web](../../web/using/about-web-applications.md).
+Ulteriori informazioni sulle [applicazioni Web](../../web/using/about-web-applications.md).
 +++
 
 +++**Flusso di lavoro**
@@ -1086,5 +1086,5 @@ Ulteriori informazioni su [Diario flusso di lavoro](../../workflow/using/monitor
 
 La tabella di lavoro contiene tutte le informazioni contenute nelle transizioni del flusso di lavoro. Ogni flusso di lavoro utilizza diverse tabelle di lavoro. La tabella di lavoro contiene i risultati dell&#39;attività di origine e il relativo contenuto viene utilizzato come input per l&#39;attività successiva (connessa) nel flusso di lavoro.  La manipolazione (estensione, personalizzazione) della tabella di lavoro è una delle principali competenze di un operatore Adobe Campaign.
 
-Ulteriori informazioni su [Tabelle di lavoro](../../workflow/using/about-workflows.md).
+Ulteriori informazioni sulle [tabelle di lavoro](../../workflow/using/about-workflows.md).
 +++

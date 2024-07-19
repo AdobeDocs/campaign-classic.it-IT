@@ -18,13 +18,13 @@ ht-degree: 10%
 
 
 
-Se hai selezionato **[!UICONTROL Do not request console update]** e si desidera riattivare la richiesta di aggiornamento, attenersi alla seguente procedura:
+Se è stata selezionata l&#39;opzione **[!UICONTROL Do not request console update]** e si desidera riattivare la richiesta di aggiornamento, attenersi alla procedura seguente:
 
-1. Aprire l&#39;editor del database del Registro di sistema utilizzando **regedit** comando in Windows **[!UICONTROL Start > Execute]** menu.
+1. Aprire l&#39;editor del database del Registro di sistema utilizzando il comando **regedit** nel menu di Windows **[!UICONTROL Start > Execute]**.
 
    ![](assets/ncs_console_update_1.png)
 
-1. Nella struttura, visualizza le opzioni della **[!UICONTROL HKEY_CURRENT_USERSoftwareneolaneNL_6nlclient]** nodo.
-1. Elimina **[!UICONTROL confAdvisedUpgrade]** e chiudi l’editor del Registro di sistema.
+1. Nella struttura, visualizzare le opzioni del nodo **[!UICONTROL HKEY_CURRENT_USERSoftwareneolaneNL_6nlclient]**.
+1. Eliminare la voce **[!UICONTROL confAdvisedUpgrade]** e chiudere l&#39;editor del Registro di sistema.
 
    ![](assets/ncs_console_update_2.png)

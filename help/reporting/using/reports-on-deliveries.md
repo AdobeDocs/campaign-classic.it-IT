@@ -20,11 +20,11 @@ Adobe Campaign offre diversi tipi di rapporti, accessibili tramite la console de
 
 Sono disponibili i seguenti tipi di rapporto:
 
-* Rapporti sull’intera piattaforma, consulta [Rapporti globali](../../reporting/using/global-reports.md).
+* Report sull&#39;intera piattaforma. Vedere [Report globali](../../reporting/using/global-reports.md).
 * Rapporti di consegna, vedi [Rapporti di consegna](../../reporting/using/delivery-reports.md).
 * Rapporti cumulativi, vedi [Rapporti cumulativi](../../reporting/using/cumulative-reports.md).
 
-Puoi accedere ai rapporti dalla home page della console client, dal dashboard dei rapporti o dall’elenco di consegna. La modalità di visualizzazione di un report dipende dal relativo contesto. L’elenco dei rapporti principali è disponibile nella pagina Home e consente di accedere rapidamente ai dati di consegna. Questo elenco può essere modificato in base alle tue esigenze. Fai riferimento a [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md) per ulteriori informazioni.
+Puoi accedere ai rapporti dalla home page della console client, dal dashboard dei rapporti o dall’elenco di consegna. La modalità di visualizzazione di un report dipende dal relativo contesto. L’elenco dei rapporti principali è disponibile nella pagina Home e consente di accedere rapidamente ai dati di consegna. Questo elenco può essere modificato in base alle tue esigenze. Per ulteriori informazioni, consultare [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md).
 
 
 Un campo di ricerca è disponibile tramite il dashboard dei rapporti per accedere rapidamente a uno dei rapporti nell’elenco.
@@ -47,4 +47,4 @@ Puoi eseguire le seguenti azioni:
 >
 >Alcuni rapporti presentano grafici delle funzioni (curve, barre, funnel, ecc.). Spostare il cursore su un grafico per visualizzarne i valori.
 
-Per ulteriori informazioni su queste opzioni, consulta [questa sezione](../../reporting/using/about-adobe-campaign-reporting-tools.md).
+Per ulteriori informazioni su queste opzioni, consultare [questa sezione](../../reporting/using/about-adobe-campaign-reporting-tools.md).

@@ -22,9 +22,9 @@ La finestra di modifica DCE è suddivisa in tre diverse sezioni. Consentono di v
 
 ![](assets/dce_decoupe_window_nb.png)
 
-1. Il **top** sezione è un’area di visualizzazione dei messaggi destinati all’utente. Questi messaggi indicano lo stato dell’applicazione web o della consegna in fase di creazione, nonché avvisi e messaggi di errore relativi al contenuto. Per ulteriori informazioni, consulta [Stati dei contenuti HTML](content-editing-best-practices.md#html-content-statuses).
-1. La sezione al **left** della finestra è l&#39;area per la modifica del contenuto. Da quest’area, l’utente può interagire direttamente con il contenuto utilizzando la barra degli strumenti pop-up: inserire un collegamento in un’immagine, modificare il font, eliminare un campo e così via. Per ulteriori informazioni, consulta [Modifica dei moduli](editing-content.md#editing-forms).
-1. La sezione al **destra** della finestra è l&#39;area del pannello di controllo. In quest’area sono raggruppate le diverse opzioni per l’editor, in particolare quelle relative alla configurazione dell’intestazione della pagina e le opzioni generali per un blocco: aggiungi un bordo, collega un campo del database con un’area di input, accedi alle proprietà della pagina web e così via. Per ulteriori informazioni, consulta [Opzioni globali](#global-options) e [Modifica del contenuto](editing-content.md) sezioni.
+1. La sezione **top** è un&#39;area di visualizzazione per i messaggi inviati all&#39;utente. Questi messaggi indicano lo stato dell’applicazione web o della consegna in fase di creazione, nonché avvisi e messaggi di errore relativi al contenuto. Per ulteriori informazioni, consulta [Stati del contenuto di HTML](content-editing-best-practices.md#html-content-statuses).
+1. La sezione a **sinistra** della finestra è l&#39;area per la modifica del contenuto. Da quest’area, l’utente può interagire direttamente con il contenuto utilizzando la barra degli strumenti pop-up: inserire un collegamento in un’immagine, modificare il font, eliminare un campo e così via. Per ulteriori informazioni, consulta [Modifica dei moduli](editing-content.md#editing-forms).
+1. La sezione a **destra** della finestra è l&#39;area del Pannello di controllo. In quest’area sono raggruppate le diverse opzioni per l’editor, in particolare quelle relative alla configurazione dell’intestazione della pagina e le opzioni generali per un blocco: aggiungi un bordo, collega un campo del database con un’area di input, accedi alle proprietà della pagina web e così via. Per ulteriori informazioni, consulta le sezioni [Opzioni globali](#global-options) e [Modifica del contenuto](editing-content.md).
 
 ## Opzioni globali {#global-options}
 
@@ -36,9 +36,9 @@ Sono disponibili quattro icone:
 
 ![](assets/dce_icons_sidebar.png)
 
-* Il **Visualizzare/nascondere i blocchi** consente di visualizzare fotogrammi blu intorno ai blocchi di contenuto (corrispondenti al `<div>` HTML).
+* L&#39;icona **Visualizza/Nascondi blocchi** consente di visualizzare frame blu intorno ai blocchi di contenuto (corrispondenti al tag HTML `<div>`).
 
-* Il **Scegli un altro contenuto** consente all’utente di caricare nuovo contenuto da un modello (modello esistente o modello preconfigurato).
+* L&#39;icona **Scegli un altro contenuto** consente all&#39;utente di caricare nuovo contenuto da un modello (modello esistente o predefinito).
 
   ![](assets/dce_popup_templatechoice.png)
 
@@ -46,7 +46,7 @@ Sono disponibili quattro icone:
   >
   >Il contenuto selezionato sostituisce il contenuto corrente.
 
-* Il **Salva come modello** consente di salvare il contenuto corrente come modello. Immettere l&#39;etichetta e il nome interno per il modello. I modelli sono memorizzati nel **[!UICONTROL Resources > Templates > Content templates]** nodo.
+* L&#39;icona **Salva come modello** consente di salvare il contenuto corrente come modello. Immettere l&#39;etichetta e il nome interno per il modello. I modelli sono archiviati nel nodo **[!UICONTROL Resources > Templates > Content templates]**.
 
   ![](assets/dce_popup_savetemplate.png)
 
@@ -54,13 +54,13 @@ Sono disponibili quattro icone:
 
   ![](assets/dce_create_fromtemplate.png)
 
-* Il **Proprietà pagina** consente di selezionare le informazioni sul contenuto nella parte superiore della pagina di HTML.
+* L&#39;icona **Proprietà pagina** consente di selezionare le informazioni sul contenuto nella parte superiore della pagina di HTML.
 
   ![](assets/dce_popup_headerhtml.png)
 
   >[!NOTE]
   >
-  >Queste informazioni corrispondono a **`<title>`** e **`<meta>`** HTML nella pagina.
+  >Queste informazioni corrispondono ai tag HTML **`<title>`** e **`<meta>`** sulla pagina.
   >
   >Le parole chiave devono essere separate da virgole.
 
@@ -72,17 +72,17 @@ La sezione a destra dell’editor raggruppa le opzioni principali che ti consent
 
 Puoi eseguire le seguenti azioni:
 
-* Determinare la visualizzazione per uno o più blocchi, fare riferimento a [Definizione di una condizione di visibilità](editing-content.md#defining-a-visibility-condition),
-* Definire i bordi e le cornici, fare riferimento a [Aggiunta di un bordo e uno sfondo](editing-content.md#adding-a-border-and-background),
-* Definire gli attributi dell&#39;immagine (dimensioni, didascalia); fare riferimento a [Modifica delle proprietà dell’immagine](editing-content.md#editing-image-properties),
-* Collegare il database a un elemento modulo (zona di input, casella di controllo), fare riferimento a [Modifica delle proprietà dei dati per un modulo](editing-content.md#changing-the-data-properties-for-a-form),
+* Determinare la visualizzazione per uno o più blocchi. Fare riferimento a [Definizione di una condizione di visibilità](editing-content.md#defining-a-visibility-condition),
+* Definire i bordi e le cornici. Fare riferimento a [Aggiunta di un bordo e di uno sfondo](editing-content.md#adding-a-border-and-background),
+* Definisci gli attributi dell&#39;immagine (dimensioni, didascalia). Fai riferimento a [Modifica delle proprietà dell&#39;immagine](editing-content.md#editing-image-properties),
+* Collegare il database a un elemento modulo (zona di input, casella di controllo). Fare riferimento a [Modifica delle proprietà dei dati per un modulo](editing-content.md#changing-the-data-properties-for-a-form),
 * Rendere obbligatoria una parte di un modulo, fare riferimento a [Modifica delle proprietà dei dati per un modulo](editing-content.md#changing-the-data-properties-for-a-form),
-* Definire un&#39;azione per un pulsante; fare riferimento a [Aggiunta di un&#39;azione a un pulsante](editing-content.md#adding-an-action-to-a-button).
+* Definire un&#39;azione per un pulsante. Vedere [Aggiunta di un&#39;azione a un pulsante](editing-content.md#adding-an-action-to-a-button).
 
 ## Barra degli strumenti Contenuto {#content-toolbar}
 
-La barra degli strumenti è **elemento a comparsa** dell&#39;interfaccia DCE che presenta funzioni diverse in base al blocco selezionato.
+La barra degli strumenti è un **elemento popup** dell&#39;interfaccia DCE che presenta funzioni diverse in base al blocco selezionato.
 
 >[!CAUTION]
 >
->Alcune funzioni della barra degli strumenti ti consentono di formattare il contenuto HTML. Tuttavia, se la pagina contiene un foglio di stile CSS, il **istruzioni** dal foglio di stile potrebbe risultare necessario **priorità** nelle istruzioni specificate nella barra degli strumenti.
+>Alcune funzioni della barra degli strumenti ti consentono di formattare il contenuto HTML. Tuttavia, se la pagina contiene un foglio di stile CSS, le **istruzioni** del foglio di stile potrebbero avere **priorità** rispetto alle istruzioni specificate con la barra degli strumenti.

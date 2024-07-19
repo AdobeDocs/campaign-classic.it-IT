@@ -15,15 +15,15 @@ ht-degree: 8%
 
 
 
-Il **[!UICONTROL Cells]** activity fornisce una vista dei vari sottoinsiemi sotto forma di colonne di dati. Agevola la manipolazione dei sottoinsiemi ed è progettata anche per incoraggiare le possibilità di personalizzazione.
+L&#39;attività **[!UICONTROL Cells]** fornisce una visualizzazione dei vari sottoinsiemi sotto forma di colonne di dati. Agevola la manipolazione dei sottoinsiemi ed è progettata anche per incoraggiare le possibilità di personalizzazione.
 
 ![](assets/wf_split_cells.png)
 
-Questa attività può essere configurata per immettere parametri specifici in base alle esigenze dell’utente. Per impostazione predefinita, i dettagli di ciascun sottoinsieme vengono descritti in una finestra dedicata tramite **[!UICONTROL Selection]** e **[!UICONTROL Advanced]** schede. Nell’esempio seguente, il modulo è stato modificato: a **[!UICONTROL Data]** è stata aggiunta una scheda per abilitare l’associazione di un’offerta e un livello di priorità per ogni sottoinsieme.
+Questa attività può essere configurata per immettere parametri specifici in base alle esigenze dell’utente. Per impostazione predefinita, i dettagli di ciascun sottoinsieme sono descritti in una finestra dedicata tramite le schede **[!UICONTROL Selection]** e **[!UICONTROL Advanced]**. Nell&#39;esempio seguente, il modulo è stato modificato: è stata aggiunta una scheda **[!UICONTROL Data]** per abilitare l&#39;associazione di un&#39;offerta e un livello di priorità per ogni sottoinsieme.
 
 ![](assets/wf_split_cells_with_customization.png)
 
-Per questa configurazione, le seguenti informazioni sono state aggiunte al modulo del flusso di lavoro (nel **[!UICONTROL Administration > Configurations > Input forms]** della struttura Adobe Campaign):
+Per questa configurazione, le seguenti informazioni sono state aggiunte al modulo del flusso di lavoro (nel nodo **[!UICONTROL Administration > Configurations > Input forms]** della struttura Adobe Campaign):
 
 ```
 <container img="nms:miniatures/mini-enrich.png" label="Data">

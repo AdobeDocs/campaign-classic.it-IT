@@ -32,13 +32,13 @@ Poiché la modifica del codice JavaScript richiede competenze tecniche, non tent
 
 La pipeline utilizza una funzione JavaScript per elaborare ogni messaggio. Questa funzione è definita dall’utente.
 
-È configurato in **[!UICONTROL NmsPipeline_Config]** nell&#39;attributo &quot;JSConnector&quot;. Questo JavaScript viene chiamato ogni volta che viene ricevuto un evento. È gestito da [!DNL pipelined] processo.
+È configurato nell&#39;opzione **[!UICONTROL NmsPipeline_Config]** nell&#39;attributo &quot;JSConnector&quot;. Questo JavaScript viene chiamato ogni volta che viene ricevuto un evento. Viene eseguito dal processo [!DNL pipelined].
 
 Il file JavaScript di esempio è cus:triggers.js.
 
 ### Funzione JavaScript {#function-js}
 
-Il [!DNL pipelined] JavaScript deve iniziare con una funzione specifica.
+Il codice JavaScript [!DNL pipelined] deve iniziare con una funzione specifica.
 
 Questa funzione viene chiamata una volta per ogni evento:
 
@@ -52,16 +52,16 @@ Deve restituire come
 <undefined/>
 ```
 
-È necessario riavviare [!DNL pipelined] dopo aver modificato JavaScript.
+Riavviare [!DNL pipelined] dopo aver modificato JavaScript.
 
 ### Attiva formato dati {#trigger-format}
 
-Il [!DNL trigger] I dati vengono passati alla funzione JS in formato XML.
+I dati [!DNL trigger] vengono passati alla funzione JS in formato XML.
 
-* Il **[!UICONTROL @triggerId]** contiene il nome del [!DNL trigger].
-* Il **arricchimenti** L&#39;elemento in formato JSON contiene i dati generati da Adobe Analytics e viene associato al trigger.
+* L&#39;attributo **[!UICONTROL @triggerId]** contiene il nome di [!DNL trigger].
+* L&#39;elemento **arricchimenti** in formato JSON contiene i dati generati da Adobe Analytics ed è associato al trigger.
 * **[!UICONTROL @offset]** è il &quot;puntatore&quot; al messaggio. Indica l’ordine del messaggio all’interno della coda.
-* **[!UICONTROL @partition]** è un contenitore di messaggi all’interno della coda. L&#39;offset è relativo a una partizione. <br>Nella coda sono presenti circa 15 partizioni.
+* **[!UICONTROL @partition]** è un contenitore di messaggi all&#39;interno della coda. L&#39;offset è relativo a una partizione. <br>Nella coda sono presenti circa 15 partizioni.
 
 Esempio:
 
@@ -81,9 +81,9 @@ Esempio:
 Il contenuto è definito in formato JSON in Adobe Analytics per ogni trigger.
 Ad esempio, in un trigger LogoUpload_uploading_Visits:
 
-* **[!UICONTROL eVar01]** può contenere l’ID acquirente in formato stringa, utilizzato per effettuare la riconciliazione con i destinatari di Adobe Campaign. <br>Deve essere riconciliato per trovare l’ID acquirente, che è la chiave primaria.
+* **[!UICONTROL eVar01]** può contenere l&#39;ID acquirente in formato stringa utilizzato per eseguire la riconciliazione con i destinatari di Adobe Campaign. <br>È necessario riconciliarlo per trovare l&#39;ID acquirente, che è la chiave primaria.
 
-* **[!UICONTROL timeGMT]** può contenere l’ora del trigger sul lato Adobe Analytics in formato epoca UTC (secondi dall’01/01/1970 UTC).
+* **[!UICONTROL timeGMT]** può contenere l&#39;ora del trigger sul lato Adobe Analytics in formato epoca UTC (secondi dal 01/01/1970 UTC).
 
 Esempio:
 
@@ -111,20 +111,20 @@ Esempio:
 
 ### Ordine di elaborazione degli eventi{#order-events}
 
-Gli eventi vengono elaborati uno alla volta, in ordine di offset. Ogni thread del [!DNL pipelined] elabora una partizione diversa.
+Gli eventi vengono elaborati uno alla volta, in ordine di offset. Ogni thread di [!DNL pipelined] elabora una partizione diversa.
 
 L’&quot;offset&quot; dell’ultimo evento recuperato viene memorizzato nel database. Pertanto, se il processo viene interrotto, viene riavviato dall’ultimo messaggio. Questi dati vengono memorizzati nello schema predefinito xtk:pipelineOffset.
 
 Questo puntatore è specifico per ogni istanza e per ogni consumer. Pertanto, quando molte istanze accedono alla stessa pipeline con consumer diversi, ognuna riceve tutti i messaggi e nello stesso ordine.
 
-Il **consumer** Il parametro dell’opzione pipeline identifica l’istanza chiamante.
+Il parametro **consumer** dell&#39;opzione pipeline identifica l&#39;istanza chiamante.
 
 Attualmente, non è possibile avere code diverse per ambienti separati, ad esempio &quot;staging&quot; o &quot;dev&quot;.
 
 ### Registrazione e gestione degli errori {#logging-error-handling}
 
-I registri come logInfo() vengono indirizzati al [!DNL pipelined] log. Errori come logError() vengono scritti nel [!DNL pipelined] registra e fa sì che l’evento venga inserito in una coda di nuovi tentativi. In questo caso, controlla il registro pipeline.
-I messaggi in errore vengono ritentati più volte nella durata impostata in [!DNL pipelined] opzioni.
+I registri come logInfo() vengono indirizzati al registro [!DNL pipelined]. Errori quali logError() vengono scritti nel registro [!DNL pipelined] e causano l&#39;inserimento dell&#39;evento in una coda di nuovi tentativi. In questo caso, controlla il registro pipeline.
+I messaggi in errore vengono ritentati più volte nel periodo impostato nelle opzioni [!DNL pipelined].
 
 A scopo di debug e monitoraggio, i dati a trigger completi vengono scritti nella tabella dei trigger nel campo &quot;data&quot; in formato XML. In alternativa, un logInfo() contenente i dati del trigger ha lo stesso scopo.
 
@@ -219,7 +219,7 @@ Gli eventi possono essere visualizzati con un semplice modulo basato sullo schem
 
 >[!NOTE]
 >
->Il nodo Evento pipeline non è incorporato e deve essere aggiunto, così come il modulo correlato deve essere creato in Campaign. Queste operazioni sono riservate esclusivamente agli utenti esperti. Per ulteriori informazioni, consulta le sezioni seguenti: [Gerarchia di navigazione](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy). e [Modifica dei moduli](../../configuration/using/editing-forms.md).
+>Il nodo Evento pipeline non è incorporato e deve essere aggiunto, così come il modulo correlato deve essere creato in Campaign. Queste operazioni sono riservate esclusivamente agli utenti esperti. Per ulteriori informazioni, consulta le seguenti sezioni: [Gerarchia di navigazione](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy). e [Modifica moduli](../../configuration/using/editing-forms.md).
 
 ![](assets/triggers_7.png)
 

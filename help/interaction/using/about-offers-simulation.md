@@ -15,9 +15,9 @@ ht-degree: 3%
 
 
 
-Il **Simulazione** Il modulo ti consente di testare la distribuzione delle offerte appartenenti a una categoria o a un ambiente prima di inviare la proposta ai destinatari.
+Il modulo **Simulazione** ti consente di verificare la distribuzione delle offerte appartenenti a una categoria o a un ambiente prima di inviare la proposta ai destinatari.
 
-La simulazione tiene conto dei contesti e delle regole di idoneità applicati in precedenza alle offerte (consulta [Panoramica del catalogo delle offerte](../../interaction/using/offer-catalog-overview.md)), nonché le relative regole di presentazione (fare riferimento a [Gestione della presentazione delle offerte](../../interaction/using/managing-offer-presentation.md)). Questo consente di testare e perfezionare varie versioni della proposta di offerta senza utilizzare effettivamente un’offerta o sollecitare in eccesso o in difetto un target, poiché la simulazione non ha alcun impatto sui destinatari target.
+La simulazione tiene conto dei contesti e delle regole di idoneità applicati in precedenza alle offerte (consulta [Panoramica del catalogo delle offerte](../../interaction/using/offer-catalog-overview.md)), nonché delle relative regole di presentazione (consulta [Gestione della presentazione delle offerte](../../interaction/using/managing-offer-presentation.md)). Questo consente di testare e perfezionare varie versioni della proposta di offerta senza utilizzare effettivamente un’offerta o sollecitare in eccesso o in difetto un target, poiché la simulazione non ha alcun impatto sui destinatari target.
 
 Per scoprire come simulare un’offerta, leggi i passaggi seguenti.
 
@@ -27,12 +27,12 @@ Per scoprire come simulare un’offerta, leggi i passaggi seguenti.
 
 Per eseguire una simulazione delle offerte, effettua le seguenti operazioni:
 
-1. In **[!UICONTROL Profiles and Targets]** , fare clic sulla scheda **[!UICONTROL Simulations]** , quindi fare clic sul pulsante **[!UICONTROL Create]** pulsante.
+1. Nella scheda **[!UICONTROL Profiles and Targets]**, fai clic sul collegamento **[!UICONTROL Simulations]**, quindi sul pulsante **[!UICONTROL Create]**.
 
    ![](assets/offer_simulation_001.png)
 
 1. Salva e modifica la simulazione appena creata.
-1. Vai a **[!UICONTROL Edit]** e specificare le impostazioni di esecuzione.
+1. Passare alla scheda **[!UICONTROL Edit]** e specificare le impostazioni di esecuzione.
 
    Per ulteriori informazioni, consulta [Impostazioni di esecuzione](../../interaction/using/execution-settings.md).
 
@@ -44,17 +44,17 @@ Per eseguire una simulazione delle offerte, effettua le seguenti operazioni:
 
 1. Specifica l’ambito della simulazione.
 
-   Per ulteriori informazioni, consulta [Definizione del campo di applicazione](../../interaction/using/simulation-scope.md#definition-of-the-scope).
+   Per ulteriori informazioni, fare riferimento a [Definizione dell&#39;ambito](../../interaction/using/simulation-scope.md#definition-of-the-scope).
 
    ![](assets/offer_simulation_004.png)
 
-1. Aggiungere assi di reporting per migliorare **[!UICONTROL Offer distribution by rank]** rapporto (facoltativo).
+1. Aggiungere assi di reporting per migliorare il report **[!UICONTROL Offer distribution by rank]** (facoltativo).
 
    Per ulteriori informazioni, consulta [Aggiunta di assi di reporting](../../interaction/using/simulation-scope.md#adding-reporting-axes).
 
    ![](assets/offer_simulation_005.png)
 
-1. Clic **[!UICONTROL Save]** per registrare le impostazioni di simulazione.
+1. Fare clic su **[!UICONTROL Save]** per registrare le impostazioni di simulazione.
 1. Avvia la simulazione tramite la dashboard.
 
    ![](assets/offer_simulation_006.png)

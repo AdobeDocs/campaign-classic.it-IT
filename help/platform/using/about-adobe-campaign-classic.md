@@ -21,9 +21,9 @@ Per offrire un elevato grado di coinvolgimento dei clienti e ottime esperienze, 
 
 >[!AVAILABILITY]
 >
->* I materiali della Guida di questa raccolta sono applicabili a Campaign Classic v7 nei suoi [build più recente](../../rn/using/latest-release.md). Un badge specifico è disponibile quando una sezione si applica anche a Campaign v8.
+>* I materiali della Guida di questa raccolta sono applicabili a Campaign Classic v7 nella [build più recente](../../rn/using/latest-release.md). Un badge specifico è disponibile quando una sezione si applica anche a Campaign v8.
 >
->* È disponibile la documentazione di Adobe Campaign v8 [qui](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=it).
+>* La documentazione di Adobe Campaign v8 è disponibile [qui](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=it).
 
 ![](assets/do-not-localize/how-to-video.png) [Scopri le funzionalità principali nel video](#video)
 
@@ -53,7 +53,7 @@ La funzionalità avanzata di gestione dei dati estende le funzionalità di elabo
 
  Adobe Campaign ti consente di progettare e orchestrare campagne mirate e personalizzate su più canali: e-mail, direct mail, SMS, notifica push. Un’unica interfaccia ti offre tutte le funzioni necessarie per pianificare, orchestrare, configurare, personalizzare, automatizzare, eseguire e misurare tutte le tue campagne e comunicazioni. Per ulteriori informazioni sulla programmazione e sull’esecuzione di campagne, consulta [questa pagina](../../campaign/using/setting-up-marketing-campaigns.md).
 
-### Personalizzazione e interazione in tempo reale {#personalization-and-real-time-interaction}
+### Personalization e interazione in tempo reale {#personalization-and-real-time-interaction}
 
 Attira l’attenzione dei clienti e migliora i tassi di risposta grazie alla personalizzazione avanzata dei contenuti dei messaggi e delle intestazioni in base ai profili e alle preferenze dei clienti. Per ulteriori informazioni sulla gestione e la personalizzazione del contenuto dei messaggi, consulta [questa pagina](../../delivery/using/about-personalization.md). La gestione collaborativa dei contenuti, le notifiche e i circuiti di approvazione sono descritti in [questa sezione](../../mrm/using/about-marketing-resource-management.md).
 
@@ -67,7 +67,7 @@ Puoi combinare le funzionalità di consegna e le funzionalità avanzate di gesti
 
 ## Funzionalità di base e componenti aggiuntivi {#core-capabilities-and-add-ons}
 
- Adobe Campaign offre una serie di funzionalità per aiutarti a implementare e ottimizzare le funzionalità di marketing conversazionale in base alle tue esigenze e alla tua architettura. Alcune di queste sono funzionalità di base e altre dipendono dall’installazione di un pacchetto e dalla configurazione. Una descrizione dettagliata del prodotto è disponibile qui: [Descrizione del prodotto Adobe Campaign](https://helpx.adobe.com/it/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+ Adobe Campaign offre una serie di funzionalità per aiutarti a implementare e ottimizzare le funzionalità di marketing conversazionale in base alle tue esigenze e alla tua architettura. Alcune di queste sono funzionalità di base e altre dipendono dall’installazione di un pacchetto e dalla configurazione. Una descrizione dettagliata del prodotto è disponibile qui: [descrizione del prodotto Adobe Campaign](https://helpx.adobe.com/it/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 Sono disponibili le seguenti funzionalità. A seconda del tuo contratto di licenza, alcune di queste funzionalità possono essere disponibili o meno nella tua istanza.
 
@@ -76,7 +76,7 @@ Sono disponibili le seguenti funzionalità. A seconda del tuo contratto di licen
 * [MRM](../../mrm/using/about-marketing-resource-management.md): gestire risorse di marketing e budget,
 * [Interazione](../../interaction/using/interaction-and-offer-management.md): gestione delle offerte con Campaign,
 * [Centro messaggi](../../message-center/using/about-transactional-messaging.md): inviare messaggi transazionali tramite e-mail, SMS o su app mobili,
-* [Social marketing](../../social/using/about-social-marketing.md) - comunicare sui social media: Facebook, X (precedentemente noto come Twitter),
+* [Social Marketing](../../social/using/about-social-marketing.md) - comunicare sui social media: Facebook, X (precedentemente noto come Twitter),
 * [Flusso di lavoro](../../workflow/using/about-workflows.md) / Gestione dati: automatizzare i processi e gestire i dati con i flussi di lavoro,
 * [Applicazioni web](../../web/using/about-web-applications.md): creare pagine e moduli web,
 * [Gestione dei sondaggi](../../surveys/using/about-surveys.md): creare sondaggi e votazioni online,
@@ -93,4 +93,4 @@ Questo video illustra le funzionalità e le caratteristiche principali di Campai
 
 >[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
 
-Sono disponibili altri video dimostrativi sui Campaign Classic [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
+Sono disponibili altri video dimostrativi di Campaign Classic [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

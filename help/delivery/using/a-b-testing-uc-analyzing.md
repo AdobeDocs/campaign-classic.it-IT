@@ -17,11 +17,11 @@ ht-degree: 2%
 
 Una volta inviate le consegne di test, puoi verificare a quali destinatari sono state inviate e se sono state aperte o meno.
 
-* Per individuare i destinatari target, apri una consegna tramite il dashboard della campagna e fai clic su **[!UICONTROL Delivery]** scheda.
+* Per individuare i destinatari target, aprire una consegna tramite il dashboard della campagna e fare clic sulla scheda **[!UICONTROL Delivery]**.
 
   ![](assets/use_case_abtesting_analysis_001.png)
 
-* Per scoprire se la consegna è stata aperta, vai al **[!UICONTROL Tracking]** scheda.
+* Per scoprire se la consegna è stata aperta, passa alla scheda **[!UICONTROL Tracking]**.
 
   ![](assets/use_case_abtesting_analysis_002.png)
 

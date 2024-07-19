@@ -23,7 +23,7 @@ Per una piattaforma Windows a 32 bit, installare Adobe Campaign a 32 bit. Per un
 
 I passaggi per l’installazione del server Adobe Campaign sono i seguenti:
 
-1. Esegui il file **setup.exe**.
+1. Eseguire il file **setup.exe**.
 
    ![](assets/s_ncs_install_installer_01.png)
 
@@ -34,11 +34,11 @@ I passaggi per l’installazione del server Adobe Campaign sono i seguenti:
    Sono disponibili diversi tipi di installazione:
 
    * **[!UICONTROL Installation of an application server]** : installa il server applicazioni Adobe Campaign e la console client.
-   * **[!UICONTROL Minimal installation (Network)]** : installazione del computer client dalla rete. Nel computer verrà installato solo un numero limitato di DLL, se necessario, e tutti gli altri componenti verranno utilizzati da un&#39;unità di rete.
+   * **[!UICONTROL Minimal installation (Network)]**: installazione del computer client dalla rete. Nel computer verrà installato solo un numero limitato di DLL, se necessario, e tutti gli altri componenti verranno utilizzati da un&#39;unità di rete.
    * **[!UICONTROL Installation of a client]** : installazione dei componenti richiesti per il client Adobe Campaign.
-   * **[!UICONTROL Custom installation]** : l’utente sceglie gli elementi da installare.
+   * **[!UICONTROL Custom installation]** : l&#39;utente sceglie gli elementi da installare.
 
-   Seleziona **Installazione di un server applicazioni** e seguire i diversi passaggi descritti di seguito:
+   Selezionare **Installazione di un server applicazioni** ed eseguire i diversi passaggi descritti di seguito:
 
    ![](assets/s_ncs_install_installer_02.png)
 
@@ -46,7 +46,7 @@ I passaggi per l’installazione del server Adobe Campaign sono i seguenti:
 
    ![](assets/s_ncs_install_installer_03.png)
 
-1. Clic **[!UICONTROL Finish]** per avviare l&#39;installazione:
+1. Fare clic su **[!UICONTROL Finish]** per avviare l&#39;installazione:
 
    ![](assets/s_ncs_install_installer_04.png)
 
@@ -62,7 +62,7 @@ I passaggi per l’installazione del server Adobe Campaign sono i seguenti:
    >
    >Una volta completata l&#39;installazione del server, è necessario riavviare il server per evitare possibili problemi di rete.
 
-   Al termine dell’installazione, avvia Adobe Campaign per creare i file di configurazione. Fai riferimento a [Primo avvio del server](#first-start-up-of-the-server).
+   Al termine dell’installazione, avvia Adobe Campaign per creare i file di configurazione. Fare riferimento a [Primo avvio del server](#first-start-up-of-the-server).
 
 ## Riepilogo test di installazione {#summary-installation-testing}
 
@@ -80,7 +80,7 @@ No task
 
 ## Primo avvio del server {#first-start-up-of-the-server}
 
-Al termine del test di installazione, aprire un prompt dei comandi tramite **[!UICONTROL Start > Programs > Adobe Campaign]** e immettere il comando seguente:
+Una volta completato il test di installazione, aprire un prompt dei comandi tramite il menu **[!UICONTROL Start > Programs > Adobe Campaign]** e immettere il comando seguente:
 
 ```sql
 nlserver web
@@ -100,7 +100,7 @@ Vengono visualizzate le seguenti informazioni:
 15:30:12 >   Web server stop (pid=664, tid=4188)...
 ```
 
-Premi **CTRL+C** per arrestare il processo, immettere il comando seguente:
+Premere **Ctrl+C** per arrestare il processo, quindi immettere il comando seguente:
 
 ```sql
 nlserver start web
@@ -135,7 +135,7 @@ Vengono visualizzate le seguenti informazioni:
 
 ## Password per l’identificatore interno {#password-for-the-internal-identifier}
 
-Il server Adobe Campaign definisce un accesso tecnico denominato **interno** dispone di tutti i diritti su tutte le istanze. Subito dopo l&#39;installazione, l&#39;account di accesso non dispone di una password. È obbligatorio definirne uno.
+Il server Adobe Campaign definisce un account di accesso tecnico denominato **internal** che dispone di tutti i diritti su tutte le istanze. Subito dopo l&#39;installazione, l&#39;account di accesso non dispone di una password. È obbligatorio definirne uno.
 
 Per ulteriori informazioni, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#internal-identifier).
 

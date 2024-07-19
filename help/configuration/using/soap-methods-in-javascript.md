@@ -14,11 +14,11 @@ ht-degree: 9%
 
 # Metodi SOAP in JavaScript{#soap-methods-in-javascript}
 
-Questo è il JavaScript eseguito sul server Adobe Campaign.
+Si tratta del JavaScript eseguito sul server Adobe Campaign.
 
 ## Metodi statici {#static-methods}
 
-I metodi SOAP statici sono accessibili richiamando un metodo sull&#39;oggetto che rappresenta lo schema. Gli schemi sono proprietà degli oggetti &#39;namespace&#39;. Questi spazi dei nomi sono variabili globali, pertanto, ad esempio, le variabili xtk o nms rappresentano gli spazi dei nomi corrispondenti
+I metodi SOAP statici sono accessibili richiamando un metodo sull’oggetto che rappresenta lo schema. Gli schemi sono proprietà degli oggetti &#39;namespace&#39;. Questi spazi dei nomi sono variabili globali, pertanto, ad esempio, le variabili xtk o nms rappresentano gli spazi dei nomi corrispondenti
 
 Nell&#39;esempio seguente viene richiamato il metodo PostEvent statico dello schema xtk:workflow:
 

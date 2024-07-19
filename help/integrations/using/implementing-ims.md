@@ -17,13 +17,13 @@ ht-degree: 1%
 
 # Implementazione di IMS{#implementing-ims}
 
-Una volta [Configurazione IMS](configuring-ims.md) al termine, puoi abilitare la connessione.
+Al termine della [configurazione IMS](configuring-ims.md), puoi abilitare la connessione.
 
 Per abilitare la modalità di autenticazione IMS in Adobe Campaign, effettua le seguenti operazioni:
 
 1. Apri la schermata di connessione alla console client.
 1. Seleziona l’ambiente di cui hai bisogno per abilitare la connessione.
-1. Controlla la **[!UICONTROL Connect with an Adobe ID]** e salvare le modifiche.
+1. Seleziona l&#39;opzione **[!UICONTROL Connect with an Adobe ID]** e salva le modifiche.
 
    ![](assets/ims_1.png)
 

@@ -28,4 +28,4 @@ In un server pulito, la procedura di ripristino è la seguente:
 * creare e ricreare il database,
 * avvia Adobe Campaign.
 
-Per ulteriori informazioni, consulta **Guida all’installazione**.
+Per ulteriori informazioni, consultare la **Guida all&#39;installazione**.

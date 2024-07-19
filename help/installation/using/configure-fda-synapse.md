@@ -18,10 +18,10 @@ ht-degree: 2%
 
 
 
-Utilizzare Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) per elaborare le informazioni memorizzate in un database esterno. Segui i passaggi seguenti per configurare l’accesso a **Analisi Azure synapse Microsoft**.
+Utilizza l&#39;opzione [Federated Data Access](../../installation/using/about-fda.md) (FDA) di Campaign per elaborare le informazioni archiviate in un database esterno. Segui i passaggi seguenti per configurare l&#39;accesso a **Microsoft Azure synapse Analytics**.
 
-1. Configura Azure synapse su [CentOS](#azure-centos), [Windows](#azure-windows) o [Debian](#azure-debian)
-1. Configurare l’Azure synapse [account esterno](#azure-external) in Campaign
+1. Configura Azure synapse in [CentOS](#azure-centos), [Windows](#azure-windows) o [Debian](#azure-debian)
+1. Configura l&#39;Azure synapse [account esterno](#azure-external) in Campaign
 
 ## Azure synapse su CentOS {#azure-centos}
 
@@ -33,7 +33,7 @@ Utilizzare Campaign [Federated Data Access](../../installation/using/about-fda.m
 
 Per configurare l’Azure synapse su CentOS, effettua le seguenti operazioni:
 
-1. Installare innanzitutto il driver ODBC. Puoi trovarlo in questo [pagina](https://www.microsoft.com/en-us/download/details.aspx?id=50420).
+1. Installare innanzitutto il driver ODBC. Puoi trovarlo in questa [pagina](https://www.microsoft.com/en-us/download/details.aspx?id=50420).
 
    >[!NOTE]
    >
@@ -87,7 +87,7 @@ Per configurare l’Azure synapse su CentOS, effettua le seguenti operazioni:
    /opt/mssql-tools/bin/sqlcmd -S yourServer -U yourUserName -P yourPassword -q "your query" # for example -q "select 1"
    ```
 
-1. In Campaign, puoi quindi configurare i [!DNL Azure Synapse] account esterno. Per ulteriori informazioni su come configurare l’account esterno, consulta [questa sezione](#azure-external).
+1. In Campaign, puoi quindi configurare l&#39;account esterno [!DNL Azure Synapse]. Per ulteriori informazioni su come configurare l&#39;account esterno, consulta [questa sezione](#azure-external).
 
 1. Poiché Azure synapse Analytics comunica tramite la porta TCP 1433, è necessario aprire questa porta sul firewall. Usa il comando seguente:
 
@@ -98,7 +98,7 @@ Per configurare l’Azure synapse su CentOS, effettua le seguenti operazioni:
 
    >[!NOTE]
    >
-   >Per consentire la comunicazione dal lato di Analytics per l’Azure synapse inserii nell&#39;elenco Consentiti, potrebbe essere necessario aggiungere l’IP pubblico all’. A tale scopo, consulta [Documentazione di Azure](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
+   >Per consentire la comunicazione dal lato di Analytics per l’Azure synapse, potrebbe essere necessario aggiungere l’IP pubblico al inserisco nell&#39;elenco Consentiti di. A tale scopo, fare riferimento alla [documentazione di Azure](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
 1. Nel caso di iptables, esegui il seguente comando:
 
@@ -124,7 +124,7 @@ Per configurare l&#39;Azure synapse su Windows:
 
 1. Una volta installato il driver ODBC, è possibile eseguirne il test, se necessario. Per ulteriori informazioni, consulta questa [pagina](https://docs.microsoft.com/en-us/sql/connect/odbc/windows/system-requirements-installation-and-driver-files?view=sql-server-ver15#installing-microsoft-odbc-driver-for-sql-server).
 
-1. In Campaign Classic, puoi quindi configurare i [!DNL Azure Synapse] account esterno. Per ulteriori informazioni su come configurare l’account esterno, consulta [questa sezione](#azure-external).
+1. In Campaign Classic, puoi quindi configurare l&#39;account esterno [!DNL Azure Synapse]. Per ulteriori informazioni su come configurare l&#39;account esterno, consulta [questa sezione](#azure-external).
 
 1. Poiché Analytics di Azure synapse comunica tramite la porta TCP 1433, è necessario aprire questa porta in Windows Defender Firewall. Per ulteriori informazioni, consulta [Documentazione di Windows](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
 
@@ -152,7 +152,7 @@ Per configurare l’Azure synapse su Debian:
    sudo ACCEPT_EULA=Y apt-get install msodbcsql
    ```
 
-1. Se si verifica un errore **&quot;Impossibile trovare il driver del metodo /usr/lib/apt/methods/https&quot;** durante la chiamata **aggiornamento di sudo apt-get**, è necessario eseguire il comando:
+1. Se si verifica l&#39;errore seguente **&quot;Impossibile trovare il driver di metodo /usr/lib/apt/methods/https&quot;** durante la chiamata all&#39;aggiornamento **sudo apt-get**, eseguire il comando:
 
    ```
    sudo apt-get install apt-transport-https ca-certificates
@@ -179,7 +179,7 @@ Per configurare l’Azure synapse su Debian:
    /opt/mssql-tools/bin/sqlcmd -S yourServer -U yourUserName -P yourPassword -q "your query" # for example -q "select 1"
    ```
 
-1. In Campaign Classic, ora puoi configurare i [!DNL Azure Synapse] account esterno. Per ulteriori informazioni su come configurare l’account esterno, consulta [questa sezione](#azure-external).
+1. In Campaign Classic è ora possibile configurare l&#39;account esterno [!DNL Azure Synapse]. Per ulteriori informazioni su come configurare l&#39;account esterno, consulta [questa sezione](#azure-external).
 
 1. Per configurare iptables su Debian in modo da garantire la connessione con Analytics di Azure synapse, abilita la porta TCP 1433 in uscita per il tuo nome host con il seguente comando:
 
@@ -189,35 +189,35 @@ Per configurare l’Azure synapse su Debian:
 
    >[!NOTE]
    >
-   >Per consentire la comunicazione dal lato di Analytics per l’Azure synapse inserii nell&#39;elenco Consentiti, potrebbe essere necessario aggiungere l’IP pubblico all’. A tale scopo, consulta [Documentazione di Azure](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
+   >Per consentire la comunicazione dal lato di Analytics per l’Azure synapse, potrebbe essere necessario aggiungere l’IP pubblico al inserisco nell&#39;elenco Consentiti di. A tale scopo, fare riferimento alla [documentazione di Azure](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
 ## Azure synapse account esterno {#azure-external}
 
-Il [!DNL Azure Synapse] l’account esterno ti consente di collegare l’istanza Campaign al database esterno dell’Azure synapse.
+L&#39;account esterno [!DNL Azure Synapse] ti consente di collegare l&#39;istanza Campaign al database esterno dell&#39;Azure synapse.
 
-Per creare [!DNL Azure Synapse] l’account esterno effettua le seguenti operazioni:
+Per creare il tuo account esterno [!DNL Azure Synapse], segui la procedura seguente:
 
-1. Da campagna **[!UICONTROL Explorer]**, fai clic su **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. Dalla campagna **[!UICONTROL Explorer]**, fare clic su **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
 1. Fai clic su **[!UICONTROL New]**.
 
-1. Seleziona **[!UICONTROL External database]** come dell’account esterno **[!UICONTROL Type]**.
+1. Seleziona **[!UICONTROL External database]** come **[!UICONTROL Type]** del tuo account esterno.
 
    ![](assets/azure_1.png)
 
-1. Sotto **[!UICONTROL Configuration]**, seleziona **[!UICONTROL Azure Synapse Analytics]** dal **[!UICONTROL Type]** a discesa.
+1. In **[!UICONTROL Configuration]**, selezionare **[!UICONTROL Azure Synapse Analytics]** dal menu a discesa **[!UICONTROL Type]**.
 
    ![](assets/azure_2.png)
 
-1. Configurare [!DNL Azure Synapse] account esterno:
+1. Configurare l&#39;account esterno [!DNL Azure Synapse]:
 
    * Per l’autenticazione standard, devi specificare:
 
       * **[!UICONTROL Server]**: URL del server di Azure synapse
 
-      * **[!UICONTROL Account]**: nome dell’utente
+      * **[!UICONTROL Account]**: nome dell&#39;utente
 
-      * **[!UICONTROL Password]**: password dell’account utente
+      * **[!UICONTROL Password]**: password dell&#39;account utente
 
       * **[!UICONTROL Database]**: nome del database
 
@@ -229,7 +229,7 @@ Per creare [!DNL Azure Synapse] l’account esterno effettua le seguenti operazi
 
       * **[!UICONTROL Database]**: nome del database
 
-      * **[!UICONTROL Options]**: aggiungi la seguente sintassi `Authentication=ActiveDirectoryMsi`
+      * **[!UICONTROL Options]**: aggiungere la seguente sintassi `Authentication=ActiveDirectoryMsi`
 
      ![](assets/azure_4.png)
 
@@ -239,4 +239,4 @@ Il connettore supporta le seguenti opzioni:
 
 | Opzione | Descrizione |
 |---|---|
-| Autenticazione | Tipo di autenticazione supportato dal connettore. Valore attualmente supportato: ActiveDirectoryMSI. </br>Per ulteriori informazioni, consulta [Documento SQL](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings) (Esempio di stringhe di connessione n° 8). |
+| Autenticazione | Tipo di autenticazione supportato dal connettore. Valore attualmente supportato: ActiveDirectoryMSI. </br>Per ulteriori informazioni, fare riferimento al documento [SQL](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings) (esempio di stringhe di connessione n°8). |

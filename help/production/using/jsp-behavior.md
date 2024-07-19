@@ -19,7 +19,7 @@ ht-degree: 14%
 
 
 
-Se certi **jsp** i processi non vengono eseguiti correttamente, è necessario forzarne la ricompilazione.
+Se alcuni processi di **jsp** non vengono eseguiti correttamente, è necessario forzarne la ricompilazione.
 
 A questo scopo, immetti i seguenti comandi:
 
@@ -30,4 +30,4 @@ rm -r work/
 nlserver start web
 ```
 
-Il **jsp** i processi vengono rigenerati alla successiva connessione.
+I processi **jsp** vengono rigenerati alla successiva connessione.

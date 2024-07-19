@@ -39,11 +39,11 @@ In questo scenario, gli allegati non vengono precreati, ma aggiunti al volo alle
 
 ## Recommendations e guardrail {#important-notes}
 
-Per evitare problemi di prestazioni, le immagini incluse nelle e-mail non possono superare i 100 KB. Questo limite, impostato per impostazione predefinita, può essere modificato dal `NmsDelivery_MaxDownloadedImageSize` opzione. Tuttavia, Adobe consiglia vivamente di evitare le immagini di grandi dimensioni nelle consegne e-mail.
+Per evitare problemi di prestazioni, le immagini incluse nelle e-mail non possono superare i 100 KB. Questo limite, impostato per impostazione predefinita, può essere modificato dall&#39;opzione `NmsDelivery_MaxDownloadedImageSize`. Tuttavia, Adobe consiglia vivamente di evitare le immagini di grandi dimensioni nelle consegne e-mail.
 
-L&#39;Adobe consiglia inoltre di limitare le dimensioni e il numero di file allegati. Per impostazione predefinita, è possibile aggiungere un solo file come allegato a un messaggio e-mail. Questa soglia può essere configurata dal `NmsDelivery_MaxRecommendedAttachments` opzione.
+L&#39;Adobe consiglia inoltre di limitare le dimensioni e il numero di file allegati. Per impostazione predefinita, è possibile aggiungere un solo file come allegato a un messaggio e-mail. Questa soglia può essere configurata dall&#39;opzione `NmsDelivery_MaxRecommendedAttachments`.
 
-Ulteriori informazioni in [elenco delle opzioni di Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+Ulteriori informazioni sono disponibili in [elenco delle opzioni di Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 Prima di implementare questo scenario, leggi attentamente le linee guida seguenti:
 
@@ -54,7 +54,7 @@ Prima di implementare questo scenario, leggi attentamente le linee guida seguent
 
 >[!NOTE]
 >
->Per evitare problemi di prestazioni, si consiglia di non includere più di un allegato per e-mail. La soglia consigliata può essere configurata da [elenco delle opzioni di Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+>Per evitare problemi di prestazioni, si consiglia di non includere più di un allegato per e-mail. La soglia consigliata può essere configurata da [l&#39;elenco delle opzioni di Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Implementazione {#implementation}
 
@@ -70,11 +70,11 @@ Per aggiungere al volo un allegato e-mail a un messaggio sulle transazioni, effe
 
 1. Puoi inviare e-mail tramite un attivatore di messaggi SOAP. Nella chiamata SOAP è presente un parametro URL (attachmentURL).
 
-   Per ulteriori informazioni sulle richieste SOAP, consulta [Descrizione evento](../../message-center/using/event-description.md).
+   Per ulteriori informazioni sulle richieste SOAP, vedere [Descrizione evento](../../message-center/using/event-description.md).
 
-1. Durante la progettazione dell’e-mail, fai clic su **[!UICONTROL Attachment]**.
+1. Durante la progettazione dell&#39;e-mail, fare clic su **[!UICONTROL Attachment]**.
 
-1. In **[!UICONTROL Attachment definition]** immettere il parametro SOAP attach:
+1. Nella schermata **[!UICONTROL Attachment definition]**, immettere il parametro allegato SOAP:
 
    ```
    <%= rtEvent.ctx.attachmentUrl %>

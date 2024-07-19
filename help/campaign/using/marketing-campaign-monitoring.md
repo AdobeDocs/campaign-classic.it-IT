@@ -16,27 +16,27 @@ ht-degree: 2%
 
 ## Tracciare una campagna {#tracking-a-campaign}
 
-Per ogni campagna, il **[!UICONTROL Tracking]** Questa scheda consente di visualizzare tutti i job e i relativi stati. Le seguenti informazioni sono accessibili tramite questa scheda secondaria:
+Per ogni campagna, la scheda **[!UICONTROL Tracking]** ti consente di visualizzare tutti i processi e i relativi stati. Le seguenti informazioni sono accessibili tramite questa scheda secondaria:
 
 * Il giornale di registrazione attività mostra i processi eseguiti sulla campagna in generale: creazione o avvio del flusso di lavoro, approvazione, estrazione, ecc.
 
   ![](assets/s_ncs_user_op_edit_exe_tab_a.png)
 
-* Il **[!UICONTROL Deliveries]** scheda secondaria contiene tutte le consegne della campagna che possono essere modificate da questa vista. A questo scopo, seleziona la consegna e fai clic sul pulsante **[!UICONTROL Detail]** icona.
+* La scheda secondaria **[!UICONTROL Deliveries]** contiene tutte le consegne della campagna che possono essere modificate da questa visualizzazione. A tale scopo, selezionare la consegna e fare clic sull&#39;icona **[!UICONTROL Detail]**.
 
   ![](assets/s_ncs_user_op_edit_exe_tab_b.png)
 
-* Il **[!UICONTROL Tasks]** scheda secondaria raggruppa tutte le attività collegate alla campagna. Questa visualizzazione consente di modificarli o eliminarli. Le attività sono disponibili con l&#39;applicazione MRM. Sono descritte in dettaglio [questa sezione](../../mrm/using/creating-and-managing-tasks.md).
+* La scheda secondaria **[!UICONTROL Tasks]** raggruppa tutte le attività collegate alla campagna. Questa visualizzazione consente di modificarli o eliminarli. Le attività sono disponibili con l&#39;applicazione MRM. Sono descritti in [questa sezione](../../mrm/using/creating-and-managing-tasks.md).
 
   ![](assets/s_ncs_user_op_edit_exe_tab_e.png)
 
-* I flussi di lavoro creati per generare messaggi per i provider di servizi vengono visualizzati nella sezione **[!UICONTROL Jobs on service providers]** scheda secondaria. Fai clic su **[!UICONTROL Detail]** per visualizzare il workflow selezionato.
+* I flussi di lavoro creati per generare messaggi per i provider di servizi vengono visualizzati nella scheda secondaria **[!UICONTROL Jobs on service providers]**. Fare clic sull&#39;icona **[!UICONTROL Detail]** per visualizzare il flusso di lavoro selezionato.
 
   ![](assets/s_ncs_user_op_edit_exe_tab_d.png)
 
 ## Tracciamento della consegna {#delivery-tracking}
 
-L’elenco delle consegne è disponibile tramite **[!UICONTROL Deliveries]** collegamento del nodo Campaign.
+L’elenco delle consegne è disponibile tramite il collegamento **[!UICONTROL Deliveries]** del nodo Campaign.
 
 ![](assets/s_ncs_user_op_del_state_from_homepage.png)
 
@@ -46,10 +46,10 @@ Per controllare lo stato di una consegna, modificala e visualizzarne il dashboar
 
 >[!NOTE]
 >
->Le informazioni sulle modalità di consegna sono disponibili all’indirizzo [questa sezione](../../delivery/using/about-message-tracking.md) sezione.
+>Le informazioni relative ai dettagli di consegna sono disponibili nella sezione [questa sezione](../../delivery/using/about-message-tracking.md).
 
 ## Tracciamento dell’esecuzione {#execution-tracking}
 
-Per cercare lo stato delle consegne, fai clic sul pulsante **[!UICONTROL Deliveries]**, accessibile tramite la home page di Adobe Campaign. Consulta [Tracciamento della consegna](#delivery-tracking).
+Per cercare lo stato delle consegne, fai clic su **[!UICONTROL Deliveries]**, accessibile tramite la home page di Adobe Campaign. Vedi [Tracciamento consegna](#delivery-tracking).
 
-Le informazioni relative ai processi eseguiti in una campagna sono raccolte nel **[!UICONTROL Edit > Audit]** della campagna. Da qui puoi visualizzare l’elenco delle consegne nella campagna. [Ulteriori informazioni](#tracking-a-campaign).
+Le informazioni relative ai processi eseguiti in una campagna vengono raccolte nella scheda **[!UICONTROL Edit > Audit]** della campagna. Da qui puoi visualizzare l’elenco delle consegne nella campagna. [Ulteriori informazioni](#tracking-a-campaign).

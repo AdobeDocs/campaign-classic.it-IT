@@ -27,7 +27,7 @@ I trigger vengono utilizzati per il targeting da un flusso di lavoro della campa
 Prima di avviare questa configurazione, verifica di disporre di:
 
 * Un progetto Adobe Developer
-* Un ID organizzazione valido: per trovare l’ID organizzazione, fai riferimento a [questa pagina](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
+* Un ID organizzazione valido. Per trovare l&#39;ID organizzazione, fare riferimento a [questa pagina](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
 * Accesso per sviluppatori all’organizzazione
 * Una configurazione dei trigger valida in Adobe Analytics
 
@@ -37,7 +37,7 @@ Prima di avviare questa configurazione, verifica di disporre di:
 
 Abilita la tua organizzazione con i token di account Adobe Developer per l’integrazione Triggers.
 
-Scopri come creare l’account tecnico Adobe in [questa pagina](../../integrations/using/oauth-technical-account.md). Tieni presente che devi selezionare **[!UICONTROL Adobe Analytics]** durante l’aggiunta dell’API alle credenziali di Adobe Developer.
+Scopri come creare il tuo account tecnico Adobe in [questa pagina](../../integrations/using/oauth-technical-account.md). È necessario selezionare **[!UICONTROL Adobe Analytics]** durante l&#39;aggiunta dell&#39;API alle credenziali di Adobe Developer.
 
 ## Passaggio 2: configurare l’opzione pipeline {#configuring-nmspipeline}
 
@@ -45,11 +45,11 @@ Una volta impostata l’autenticazione, la pipeline recupererà gli eventi. Elab
 
 L’opzione può anche essere configurata con un carattere jolly per acquisire tutti i trigger, indipendentemente dal nome.
 
-1. In Adobe Campaign, accedi al menu delle opzioni in **[!UICONTROL Administration]** > **[!UICONTROL Platform]**  > **[!UICONTROL Options]** nel **[!UICONTROL Explorer]**.
+1. In Adobe Campaign, accedere al menu delle opzioni in **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** in **[!UICONTROL Explorer]**.
 
-1. Seleziona la **[!UICONTROL NmsPipeline_Config]** opzione.
+1. Selezionare l&#39;opzione **[!UICONTROL NmsPipeline_Config]**.
 
-1. In **[!UICONTROL Value (long text)]** , puoi incollare il seguente codice JSON, che specifica due trigger. Assicurati di rimuovere i commenti.
+1. Nel campo **[!UICONTROL Value (long text)]**, puoi incollare il seguente codice JSON, che specifica due trigger. Assicurati di rimuovere i commenti.
 
    ```json
    {
@@ -94,7 +94,7 @@ L’opzione può anche essere configurata con un carattere jolly per acquisire t
 
 La pipeline funziona come un modello di fornitore e di consumatore. I messaggi vengono utilizzati solo per un singolo consumatore: ogni consumatore riceve la propria copia dei messaggi.
 
-Il **Consumatore** Il parametro identifica l’istanza come uno di questi consumer. L’identità dell’istanza chiamerà la pipeline. È possibile compilarlo con il nome dell’istanza che si trova nella pagina Monitoraggio della console client.
+Il parametro **Consumer** identifica l&#39;istanza come uno di questi consumer. L’identità dell’istanza chiamerà la pipeline. È possibile compilarlo con il nome dell’istanza che si trova nella pagina Monitoraggio della console client.
 
 Il servizio pipeline tiene traccia dei messaggi recuperati da ciascun consumatore. L’utilizzo di consumer diversi per istanze diverse consente di assicurarsi che ogni messaggio venga inviato a ogni istanza.
 
@@ -104,10 +104,10 @@ Per configurare l’opzione Pipeline, segui queste raccomandazioni:
 
 * Aggiungi o modifica trigger in **[!UICONTROL Triggers]**.
 * Verifica che il JSON sia valido.
-* Il **Nome** Il parametro corrisponde all&#39;ID del trigger. Un carattere jolly &quot;*&quot; acquisirà tutti i trigger.
-* Il **Consumatore** Il parametro corrisponde al nome dell&#39;istanza o dell&#39;applicazione chiamante.
-* il `pipelined`Il processo supporta anche l&#39;argomento &quot;alias&quot;.
-* È sempre necessario riavviare `pipelined`dopo aver apportato modifiche.
+* Il parametro **Name** corrisponde all&#39;ID del trigger. Un carattere jolly &quot;*&quot; acquisirà tutti i trigger.
+* Il parametro **Consumer** corrisponde al nome dell&#39;istanza o dell&#39;applicazione chiamante.
+* il processo `pipelined` supporta anche l&#39;argomento &quot;alias&quot;.
+* È sempre necessario riavviare `pipelined` processo dopo aver apportato modifiche.
 
 ## (facoltativo) Passaggio 3: configurazione aggiuntiva {#step-optional}
 
@@ -119,24 +119,24 @@ L’elenco dei parametri facoltativi è:
 |:-:|:-:|
 | appName(Legacy) | AppID dell’applicazione OAuth registrata nell’applicazione Oath legacy in cui è stata caricata la chiave pubblica. Per ulteriori informazioni, consulta questa [pagina](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) |
 | authGatewayEndpoint(Legacy) | URL per ottenere i token del gateway. Predefinito: ```https://api.omniture.com``` |
-| authPrivateKey(Legacy) | La chiave privata, parte pubblica caricata nell’applicazione Oath legacy, AES è crittografata con l’opzione XtkKey: ```cryptString("PRIVATE_KEY")``` |
+| authPrivateKey(Legacy) | Chiave privata, parte pubblica caricata nell&#39;applicazione Oath legacy, AES crittografata con l&#39;opzione XtkKey: ```cryptString("PRIVATE_KEY")``` |
 | disableAuth(Legacy) | Disabilita l’autenticazione: la connessione senza token gateway verrà accettata solo da alcuni endpoint della pipeline di sviluppo. |
 | findPipelineEndpoint | URL per trovare l’endpoint dei servizi di pipeline da utilizzare per questo tenant. Predefinito: ```https://producer-pipeline-pnw.adobe.net``` |
-| dumpStatePeriodSec | Periodo tra due immagini del processo di stato interno in ```var/INSTANCE/pipelined.json.``` <br> Lo stato interno è accessibile anche on-demand qui: ```http://INSTANCE:7781/pipelined/status``` |
+| dumpStatePeriodSec | Periodo tra due immagini del processo dello stato interno in ```var/INSTANCE/pipelined.json.``` <br> Lo stato interno è accessibile anche on-demand qui: ```http://INSTANCE:7781/pipelined/status``` |
 | forcedPipelineEndpoint | Disattiva il rilevamento di PipelineServicesEndpoint per forzarlo |
-| monitorServerPort | Il processo pipeline ascolterà su questa porta per fornire il processo di stato interno qui: ```http://INSTANCE:PORT/pipelined/status```. <br>Il valore predefinito è 7781 |
-| pointerFlushMessageCount | Quando questo numero di messaggi viene elaborato, gli offset vengono salvati nel database. <br> Il valore predefinito è 1000 |
+| monitorServerPort | Il processo pipeline ascolterà su questa porta per fornire il processo dello stato interno qui: ```http://INSTANCE:PORT/pipelined/status```. <br>Il valore predefinito è 7781 |
+| pointerFlushMessageCount | Quando questo numero di messaggi viene elaborato, gli offset vengono salvati nel database. Il valore predefinito di <br> è 1000 |
 | pointerFlushPeriodSec | Trascorso questo periodo, gli offset verranno salvati nel database. <br>Il valore predefinito è 5 (sec) |
-| processingJSThreads | Numero di thread dedicati che elaborano i messaggi con connettori JS personalizzati. <br> Il valore predefinito è 4 |
+| processingJSThreads | Numero di thread dedicati che elaborano i messaggi con connettori JS personalizzati. Il valore predefinito di <br> è 4 |
 | processingThreads | Numero di thread dedicati che elaborano i messaggi con codice incorporato. <br>Il valore predefinito è 4 |
 | retryPeriodSec | Ritardo tra nuovi tentativi in caso di errori di elaborazione. <br>Il valore predefinito è 30 (sec) |
 | retryValiditySec | Ignora il messaggio se non viene elaborato correttamente dopo questo periodo (troppi tentativi). <br>Il valore predefinito è 300 (sec) |
 
 ### Avvio automatico del processo pipeline {#pipelined-process-autostart}
 
-Il `pipelined` Il processo deve essere avviato automaticamente.
+Il processo `pipelined` deve essere avviato automaticamente.
 
-Per questo, imposta `<`pipeline`>` nel file di configurazione a autostart=&quot;true&quot;:
+Per questo, imposta l&#39;elemento `<`pipeline`>` nel file di configurazione su autostart=&quot;true&quot;:
 
 ```sql
  <pipelined autoStart="true" ... "/>
@@ -154,6 +154,6 @@ nlserver restart pipelined@instance
 
 Per convalidare la configurazione della pipeline per il provisioning, effettua le seguenti operazioni:
 
-* Assicurati che le `pipelined` processo in esecuzione.
-* Controlla la `pipelined.log` per i registri di connessione della pipeline.
+* Verificare che il processo `pipelined` sia in esecuzione.
+* Controllare `pipelined.log` per i registri di connessione della pipeline.
 * Verifica la connessione e se vengono ricevuti ping. I clienti in hosting possono utilizzare il monitoraggio dalla console client.

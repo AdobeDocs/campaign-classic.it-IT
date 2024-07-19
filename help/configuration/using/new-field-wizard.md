@@ -15,7 +15,7 @@ ht-degree: 4%
 # Procedura guidata per l’aggiunta di nuovi campi{#new-field-wizard}
 
 
-Una procedura guidata accessibile tramite **[!UICONTROL Tools > Advanced > Add new fields]** consente di aggiungere uno o più campi a una tabella del database.
+Una procedura guidata accessibile tramite **[!UICONTROL Tools > Advanced > Add new fields]** consente di aggiungere uno o più campi a una tabella nel database.
 
 La convalida della procedura guidata aggiorna lo schema di estensione della tabella da estendere e avvia lo script SQL per modificare la struttura fisica del database.
 
@@ -33,7 +33,7 @@ Le schermate della procedura guidata contengono i seguenti passaggi:
 
    ![](assets/d_ncs_integration_schema_addfield2.png)
 
-1. Per confermare le modifiche, fai clic su **[!UICONTROL Finish]** pulsante.
+1. Per confermare le modifiche, fare clic sul pulsante **[!UICONTROL Finish]**.
 
 Nel nostro esempio, viene creato automaticamente un file di estensione denominato &quot;cus:recipient&quot; e viene eseguito lo script SQL corrispondente:
 
@@ -47,4 +47,4 @@ Nel nostro esempio, viene creato automaticamente un file di estensione denominat
 
 >[!NOTE]
 >
->Per impostazione predefinita, i campi aggiunti vengono dichiarati con la proprietà **utente** con il valore &quot;true&quot;. Questo consente di visualizzare e modificare il campo nel modulo di input dello schema esteso utilizzando un controllo di tipo &quot;treeEdit&quot; (fare riferimento a Modulo di input).
+>Per impostazione predefinita, i campi aggiunti sono dichiarati con la proprietà **user** (con il valore &quot;true&quot;). Questo consente di visualizzare e modificare il campo nel modulo di input dello schema esteso utilizzando un controllo di tipo &quot;treeEdit&quot; (fare riferimento a Modulo di input).

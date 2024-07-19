@@ -23,11 +23,11 @@ Adobe Campaign consente di importare nel database dati da uno o più file in for
 
 >[!NOTE]
 >
->È possibile importare i dati senza eseguirne il mapping con i dati del database utilizzando **[!UICONTROL Import a list]** funzione. I dati possono quindi essere utilizzati esclusivamente nei flussi di lavoro tramite **[!UICONTROL Read list]** oggetto. Per ulteriori informazioni, consulta [questa pagina](../../workflow/using/read-list.md).
+>È possibile importare dati senza eseguirne il mapping con i dati del database utilizzando la funzione **[!UICONTROL Import a list]**. I dati possono quindi essere utilizzati esclusivamente nei flussi di lavoro tramite l&#39;oggetto **[!UICONTROL Read list]**. Per ulteriori informazioni, consulta [questa pagina](../../workflow/using/read-list.md).
 
 L’importazione guidata consente di configurare un’importazione, definirne le opzioni (ad esempio, la trasformazione dei dati) e avviarne l’esecuzione. Si tratta di una serie di schermate il cui contenuto dipende dal tipo di importazione (semplice o multipla) e dai diritti dell’operatore.
 
-L’Importazione guidata viene visualizzata dopo la creazione di un nuovo processo di importazione (consulta [Creare processi di importazione ed esportazione](../../platform/using/creating-import-export-jobs.md).
+L&#39;Importazione guidata viene visualizzata dopo la creazione di un nuovo processo di importazione (vedere [Creare processi di importazione ed esportazione](../../platform/using/creating-import-export-jobs.md).
 
 >[!NOTE]
 >
@@ -41,19 +41,19 @@ Nel file di origine, ogni riga coincide con un record. I dati nei record sono se
 
 Quando si avvia l&#39;importazione guidata, è necessario selezionare un modello. Ad esempio, per configurare l’importazione dei destinatari che hanno ricevuto una newsletter, effettua le seguenti operazioni:
 
-1. Seleziona la **[!UICONTROL Profiles and Targets > Job > Generic imports and exports]** cartella.
-1. Clic **Nuovo** e quindi fare clic su **Importa** per creare il modello di importazione.
+1. Selezionare la cartella **[!UICONTROL Profiles and Targets > Job > Generic imports and exports]**.
+1. Fai clic su **Nuovo**, quindi su **Importa** per creare il modello di importazione.
 
    ![](assets/s_ncs_user_import_wizard01_1.png)
 
-1. Fare clic sulla freccia a destra della **[!UICONTROL Import template]** per selezionare il modello, oppure fare clic su **[!UICONTROL Select link]** per sfogliare l&#39;albero.
+1. Fare clic sulla freccia a destra del campo **[!UICONTROL Import template]** per selezionare il modello oppure fare clic su **[!UICONTROL Select link]** per sfogliare la struttura.
 
-   Il modello nativo è **[!UICONTROL New text import]**. Questo modello non deve essere modificato, ma puoi duplicarlo per configurarne uno nuovo a seconda delle tue esigenze. Per impostazione predefinita, i modelli di importazione vengono salvati in **[!UICONTROL Profiles and targets > Templates > Job templates]** nodo.
+   Il modello nativo è **[!UICONTROL New text import]**. Questo modello non deve essere modificato, ma puoi duplicarlo per configurarne uno nuovo a seconda delle tue esigenze. Per impostazione predefinita, i modelli di importazione vengono salvati nel nodo **[!UICONTROL Profiles and targets > Templates > Job templates]**.
 
-1. Immetti un nome per questa importazione in **[!UICONTROL Label]** campo. Puoi aggiungere una descrizione.
-1. Seleziona il tipo di importazione nel campo appropriato. Esistono due possibili tipi di importazione: **[!UICONTROL Simple import]** per importare un solo file e **[!UICONTROL Multiple import]** per importare più file in una singola esecuzione.
+1. Immettere un nome per l&#39;importazione nel campo **[!UICONTROL Label]**. Puoi aggiungere una descrizione.
+1. Seleziona il tipo di importazione nel campo appropriato. Esistono due tipi di importazione possibili: **[!UICONTROL Simple import]** per importare un solo file e **[!UICONTROL Multiple import]** per importare più file in una singola esecuzione.
 
-   Per un’importazione multipla, seleziona **[!UICONTROL Multiple import]** dal **[!UICONTROL Import type]** nella prima schermata dell&#39;importazione guidata.
+   Per un&#39;importazione multipla, selezionare **[!UICONTROL Multiple import]** dall&#39;elenco a discesa **[!UICONTROL Import type]** nella prima schermata dell&#39;importazione guidata.
 
    ![](assets/s_ncs_user_import_wizard01_2.png)
 
@@ -61,7 +61,7 @@ Quando si avvia l&#39;importazione guidata, è necessario selezionare un modello
 
    ![](assets/s_ncs_user_import_wizard01_3.png)
 
-   Ogni volta che viene aggiunto un file, la schermata **[!UICONTROL File to import]** viene visualizzata la procedura guidata. Vedere la sezione [Passaggio 2: selezione del file di origine](#step-2---source-file-selection) e segui i passaggi della procedura guidata per definire le opzioni di importazione come per un’importazione semplice.
+   Ogni volta che si aggiunge un file, viene visualizzata la schermata della procedura guidata **[!UICONTROL File to import]**. Consulta la sezione [Passaggio 2 - Selezione file Source](#step-2---source-file-selection) e segui i passaggi della procedura guidata per definire le opzioni di importazione come per una semplice importazione.
 
    >[!NOTE]
    >
@@ -69,9 +69,9 @@ Quando si avvia l&#39;importazione guidata, è necessario selezionare un modello
 
 ### Parametri avanzati {#advanced-parameters}
 
-Il **[!UICONTROL Advanced parameters]** Il collegamento ti consente di accedere alle seguenti opzioni:
+Il collegamento **[!UICONTROL Advanced parameters]** consente di accedere alle opzioni seguenti:
 
-* **[!UICONTROL General]** scheda
+* Scheda **[!UICONTROL General]**
 
    * **[!UICONTROL Stop execution if there are too many rejects]**
 
@@ -87,21 +87,21 @@ Il **[!UICONTROL Advanced parameters]** Il collegamento ti consente di accedere 
 
    * **[!UICONTROL Do not update enumerations]**
 
-     Selezionare questa opzione per evitare di arricchire l&#39;elenco dei valori enumerati nel database. Consulta [Gestire le enumerazioni](../../platform/using/managing-enumerations.md).
+     Selezionare questa opzione per evitare di arricchire l&#39;elenco dei valori enumerati nel database. Vedi [Gestione enumerazioni](../../platform/using/managing-enumerations.md).
 
-* **[!UICONTROL Variables]** scheda
+* Scheda **[!UICONTROL Variables]**
 
-  Puoi definire le variabili associate al processo che saranno accessibili negli editor delle query e nei campi calcolati. Per creare una variabile, fai clic su **[!UICONTROL Add]** e utilizza l’editor delle variabili.
+  Puoi definire le variabili associate al processo che saranno accessibili negli editor delle query e nei campi calcolati. Per creare una variabile, fare clic su **[!UICONTROL Add]** e utilizzare l&#39;editor di variabili.
 
   >[!IMPORTANT]
   >
-  >Il **[!UICONTROL Variables]** La scheda è solo per l’utilizzo di programmazione di tipo Flusso di lavoro e deve essere configurata solo da utenti esperti.
+  >La scheda **[!UICONTROL Variables]** è solo per uso di programmazione di tipo flusso di lavoro e deve essere configurata solo da utenti esperti.
 
-## Passaggio 2: selezione del file di origine {#step-2---source-file-selection}
+## Passaggio 2: selezione del file Source {#step-2---source-file-selection}
 
 Il file di origine può essere in formato testo (txt, csv, tab, colonne fisse) o xml.
 
-Per impostazione predefinita, **[!UICONTROL Upload file on the server]** è selezionato. Fai clic sulla cartella a destra della **[!UICONTROL Local file]** per sfogliare il disco locale e selezionare il file da importare. È possibile deselezionare questa opzione per immettere il percorso di accesso e il nome del file da importare se si trova sul server.
+Per impostazione predefinita, è selezionato **[!UICONTROL Upload file on the server]**. Fare clic sulla cartella a destra del campo **[!UICONTROL Local file]** per sfogliare il disco locale e selezionare il file da importare. È possibile deselezionare questa opzione per immettere il percorso di accesso e il nome del file da importare se si trova sul server.
 
 ![](assets/s_ncs_user_import_wizard02_1.png)
 
@@ -111,15 +111,15 @@ Una volta specificato il file, è possibile visualizzarne i dati nella sezione i
 
 Utilizza le opzioni offerte sopra questa vista per configurare l’importazione. I parametri definiti tramite queste opzioni vengono trasferiti nell’anteprima. Sono disponibili le seguenti opzioni:
 
-* **[!UICONTROL Click here to change the file format...]** consente di controllare il formato del file e perfezionare la configurazione.
-* **[!UICONTROL Update on server...]** consente di trasferire il file locale al server. Questa opzione è disponibile solo se **[!UICONTROL Upload file on the server]** è selezionato.
+* **[!UICONTROL Click here to change the file format...]** consente di controllare il formato del file e di perfezionare la configurazione.
+* **[!UICONTROL Update on server...]** consente di trasferire il file locale al server. Questa opzione è disponibile solo se è selezionato **[!UICONTROL Upload file on the server]**.
 * **[!UICONTROL Download]** è disponibile solo se il file è stato caricato sul server.
-* **[!UICONTROL Auto-detect format]** viene utilizzato per reinizializzare il formato dell&#39;origine dati. Questa opzione consente di riapplicare i formati originali ai dati formattati tramite il **[!UICONTROL Click here to change the file format...]** opzione.
-* Il **[!UICONTROL Advanced parameters]** consente di filtrare i dati di origine e di accedere alle opzioni avanzate. Da questa schermata, puoi scegliere di importare solo una parte del file. Puoi anche definire un filtro, ad esempio per importare solo gli utenti di tipo &quot;Potenziale cliente&quot; o &quot;Cliente&quot;, in base al valore della riga corrispondente. Queste opzioni devono essere utilizzate solo da utenti JavaScript esperti.
+* **[!UICONTROL Auto-detect format]** viene utilizzato per reinizializzare il formato dell&#39;origine dati. Questa opzione consente di riapplicare i formati originali ai dati formattati tramite l&#39;opzione **[!UICONTROL Click here to change the file format...]**.
+* Il collegamento **[!UICONTROL Advanced parameters]** consente di filtrare i dati di origine e di accedere alle opzioni avanzate. Da questa schermata, puoi scegliere di importare solo una parte del file. Puoi anche definire un filtro, ad esempio per importare solo gli utenti di tipo &quot;Potenziale cliente&quot; o &quot;Cliente&quot;, in base al valore della riga corrispondente. Queste opzioni devono essere utilizzate solo da utenti esperti di JavaScript.
 
 ### Modificare il formato del file {#changing-the-file-format}
 
-Il **[!UICONTROL Click here to change the file format...]** consente di formattare i dati del file di origine, in particolare per specificare il separatore di colonna e il tipo di dati per ciascun campo. Questa configurazione viene eseguita tramite la seguente finestra:
+L&#39;opzione **[!UICONTROL Click here to change the file format...]** consente di formattare i dati del file di origine e in particolare di specificare il separatore di colonna e il tipo di dati per ogni campo. Questa configurazione viene eseguita tramite la seguente finestra:
 
 ![](assets/s_ncs_user_import_wizard02_3.png)
 
@@ -127,7 +127,7 @@ Questo passaggio ti consente di descrivere come leggere i valori dei campi del f
 
 È possibile visualizzare il risultato della configurazione nella zona di anteprima nella parte inferiore della finestra.
 
-Clic **[!UICONTROL OK]** per salvare la formattazione, fai clic su **[!UICONTROL Next]** per visualizzare il passaggio successivo.
+Fai clic su **[!UICONTROL OK]** per salvare la formattazione, quindi fai clic su **[!UICONTROL Next]** per visualizzare il passaggio successivo.
 
 ## Passaggio 3: mappatura dei campi {#step-3---field-mapping}
 
@@ -135,18 +135,18 @@ Clic **[!UICONTROL OK]** per salvare la formattazione, fai clic su **[!UICONTROL
 
 ![](assets/s_ncs_user_import_wizard03_1.png)
 
-* Il **[!UICONTROL Destination schema]** consente di selezionare lo schema in cui importare i dati. Queste informazioni sono obbligatorie. Fai clic su **[!UICONTROL Select link]** per selezionare uno degli schemi esistenti. Clic **[!UICONTROL Edit link]** per visualizzare il contenuto della tabella selezionata.
+* Il campo **[!UICONTROL Destination schema]** consente di selezionare lo schema in cui verranno importati i dati. Queste informazioni sono obbligatorie. Fare clic sull&#39;icona **[!UICONTROL Select link]** per selezionare uno degli schemi esistenti. Fare clic su **[!UICONTROL Edit link]** per visualizzare il contenuto della tabella selezionata.
 * La tabella centrale mostra tutti i campi definiti nel file di origine. Selezionare i campi da importare per associare ad essi un file di destinazione. Questi campi possono essere mappati manualmente o automaticamente.
 
-  Per mappare manualmente un campo, fare clic sulla casella di controllo per selezionare il campo di origine, quindi fare clic sulla seconda colonna per attivare la cella corrispondente al campo selezionato. Quindi, fai clic su **[!UICONTROL Edit expression]** per visualizzare tutti i campi della tabella corrente. Seleziona il campo di destinazione e fai clic su **[!UICONTROL OK]** per convalidare la mappatura.
+  Per mappare manualmente un campo, fare clic sulla casella di controllo per selezionare il campo di origine, quindi fare clic sulla seconda colonna per attivare la cella corrispondente al campo selezionato. Fare quindi clic sull&#39;icona **[!UICONTROL Edit expression]** per visualizzare tutti i campi della tabella corrente. Selezionare il campo di destinazione e fare clic su **[!UICONTROL OK]** per convalidare la mappatura.
 
-  Per associare automaticamente i campi di origine e di destinazione, fare clic sul pulsante **[!UICONTROL Guess the destination fields]** a destra dell’elenco dei campi. Se necessario, i campi proposti possono essere modificati.
+  Per associare automaticamente i campi di origine e di destinazione, fare clic sull&#39;icona **[!UICONTROL Guess the destination fields]** a destra dell&#39;elenco dei campi. Se necessario, i campi proposti possono essere modificati.
 
   >[!IMPORTANT]
   >
   >Il risultato di questa operazione deve sempre essere convalidato prima di procedere al passaggio successivo.
 
-* È possibile applicare una trasformazione ai campi importati. A questo scopo, fai clic su nella cella del **[!UICONTROL Transformation]** che si riferisce al campo in questione e selezionare la trasformazione da applicare.
+* È possibile applicare una trasformazione ai campi importati. A tale scopo, fare clic nella cella della colonna **[!UICONTROL Transformation]** relativa al campo in questione e selezionare la trasformazione da applicare.
 
   ![](assets/s_ncs_user_import_wizard03_2.png)
 
@@ -163,13 +163,13 @@ I campi calcolati sono nuove colonne aggiunte al file di origine e calcolate da 
 Esistono quattro tipi di campi calcolati:
 
 * **[!UICONTROL Fixed string]**: il valore del campo calcolato è lo stesso per tutte le righe del file di origine. Consente di impostare il valore di un campo dei record inseriti o aggiornati. Ad esempio, potete impostare un marcatore su &quot;yes&quot; per tutti i record importati.
-* **[!UICONTROL String with JavaScript tags]**: il valore del campo calcolato è una stringa di caratteri contenente comandi JavaScript.
+* **[!UICONTROL String with JavaScript tags]**: il valore del campo calcolato è una stringa di caratteri contenente i comandi di JavaScript.
 * **[!UICONTROL JavaScript expression]**: il valore del campo calcolato è il risultato della valutazione di una funzione JavaScript. Il valore restituito può essere un numero, una data e così via.
 * **[!UICONTROL Enumeration]**: il valore del campo viene attribuito in base a un valore contenuto nel file di origine. L’editor consente di specificare la colonna di origine e di immettere l’elenco dei valori di enumerazione, come nell’esempio seguente:
 
   ![](assets/s_ncs_user_import_wizard03_3.png)
 
-  Il **[!UICONTROL Preview]** Questa scheda ti consente di visualizzare il risultato della configurazione definita. Ecco, il **[!UICONTROL Subscription]** è stata aggiunta la colonna. Il valore viene calcolato dalla **Stato** campo.
+  La scheda **[!UICONTROL Preview]** consente di visualizzare il risultato della configurazione definita. In questo caso, è stata aggiunta la colonna **[!UICONTROL Subscription]**. Il valore viene calcolato dal campo **Stato**.
 
   ![](assets/s_ncs_user_import_wizard03_4.png)
 
@@ -181,7 +181,7 @@ Il passaggio di riconciliazione dell’importazione guidata consente di definire
 
 La sezione centrale della schermata contiene una struttura con i campi e le tabelle del database Adobe Campaign in cui verranno importati i dati.
 
-Sono disponibili opzioni speciali per ciascun nodo (tabella o campo). Quando fai clic sul nodo interessato nell’elenco, di seguito vengono visualizzati i relativi parametri e una breve descrizione. Il comportamento definito per ciascun elemento viene visualizzato nel **[!UICONTROL Behavior]** colonna.
+Sono disponibili opzioni speciali per ciascun nodo (tabella o campo). Quando fai clic sul nodo interessato nell’elenco, di seguito vengono visualizzati i relativi parametri e una breve descrizione. Il comportamento definito per ogni elemento viene visualizzato nella colonna **[!UICONTROL Behavior]** corrispondente.
 
 ![](assets/s_ncs_user_import_wizard04_2.png)
 
@@ -197,13 +197,13 @@ Per ogni tabella interessata dall’importazione, è necessario definire il tipo
 
 Per ogni campo della tabella interessata dall’importazione sono disponibili le seguenti opzioni:
 
-* **[!UICONTROL Update (empty) if source value is empty]**: in caso di aggiornamento, il valore nel campo rimuove il valore del database se il campo è vuoto nel file di origine. In caso contrario, viene mantenuto il campo del database.
-* **[!UICONTROL Update only if destination is empty]**: il valore del file di origine non sovrascrive il valore del campo del database a meno che il campo del database non sia vuoto. In tal caso, assume il valore del file di origine.
-* **[!UICONTROL Update the field only when the record is inserted]**: durante un’operazione di aggiornamento o inserimento, verranno importati solo i record dei file di origine nuovi.
+* **[!UICONTROL Update (empty) if source value is empty]**: in caso di aggiornamento, il valore nel campo rimuoverà il valore del database se il campo è vuoto nel file di origine. In caso contrario, viene mantenuto il campo del database.
+* **[!UICONTROL Update only if destination is empty]**: il valore del file di origine non sovrascrive il valore nel campo del database a meno che il campo del database non sia vuoto. In tal caso, assume il valore del file di origine.
+* **[!UICONTROL Update the field only when the record is inserted]**: durante un&#39;operazione di aggiornamento o inserimento verranno importati solo i record del file di origine nuovi.
 
 >[!NOTE]
 >
->La definizione di una chiave di riconciliazione è sempre **obbligatorio**, tranne in caso di inserimento senza deduplicazione.
+>La definizione di una chiave di riconciliazione è sempre **obbligatoria**, tranne nel caso di inserimento senza deduplicazione.
 
 ### Chiavi riconciliazione {#reconciliation-keys}
 
@@ -231,20 +231,20 @@ Evita di scegliere un campo che potrebbe essere modificato durante l’importazi
 >
 >Un duplicato è un elemento presente sia nel file da importare che nel database.
 
-Il **[!UICONTROL Management of doubles]** consente di configurare la deduplicazione dei dati. La deduplicazione riguarda i record visualizzati più volte **nel file di origine** (o file di origine in caso di importazione di più file), ovvero righe per le quali i campi della chiave di riconciliazione sono identici.
+Il campo **[!UICONTROL Management of doubles]** consente di configurare la deduplicazione dei dati. La deduplicazione riguarda i record che vengono visualizzati più volte **nel file di origine** (o nei file di origine in caso di importazione di più file), ovvero le righe per le quali i campi della chiave di riconciliazione sono identici.
 
-* Gestione duplicata in **[!UICONTROL Update]** (modalità predefinita) non esegue la deduplicazione. L&#39;ultimo record ha quindi la priorità (in quanto aggiorna i dati dei record precedenti). Il conteggio dei duplicati non viene eseguito in questa modalità.
-* Gestione duplicata in **[!UICONTROL Ignore]** modalità o **[!UICONTROL Reject entity]** esclude i duplicati dall’importazione. In questo caso, non viene importato alcun record.
-* In entrata **[!UICONTROL Reject entity]** , l’elemento non viene importato e nei registri di importazione viene generato un errore.
-* In entrata **[!UICONTROL Ignore]** , l’elemento non viene importato, ma non viene mantenuta alcuna traccia dell’errore. Questa modalità ti consente di ottimizzare le prestazioni.
+* La gestione duplicata in modalità **[!UICONTROL Update]** (la modalità predefinita) non esegue la deduplicazione. L&#39;ultimo record ha quindi la priorità (in quanto aggiorna i dati dei record precedenti). Il conteggio dei duplicati non viene eseguito in questa modalità.
+* La gestione dei duplicati in modalità **[!UICONTROL Ignore]** o **[!UICONTROL Reject entity]** esclude i duplicati dall&#39;importazione. In questo caso, non viene importato alcun record.
+* In modalità **[!UICONTROL Reject entity]**, l&#39;elemento non viene importato e nei registri di importazione viene generato un errore.
+* In modalità **[!UICONTROL Ignore]**, l&#39;elemento non viene importato, ma non viene mantenuta alcuna traccia dell&#39;errore. Questa modalità ti consente di ottimizzare le prestazioni.
 
 >[!IMPORTANT]
 >
 >La deduplicazione viene eseguita solo in memoria. Le dimensioni di un’importazione con deduplicazione sono pertanto limitate. Il limite dipende da diversi parametri (capacità del server applicazioni, attività, numero di campi nella chiave, ecc.). La dimensione massima per una deduplicazione è dell&#39;ordine di 1.000.000 righe.
 
-La deduplicazione riguarda un record presente sia nel file di origine che nel database. Riguarda solo le operazioni con aggiornamento (ovvero **[!UICONTROL Update and insertion]** o **[!UICONTROL Update]**). Il **[!UICONTROL Duplicate management]** consente di aggiornare o ignorare il record se si trova sia nel file di origine che nel database. Il **[!UICONTROL Update or insert based on origin]** L&#39;opzione appartiene al modulo opzionale e non può essere utilizzata in un contesto standard.
+La deduplicazione riguarda un record presente sia nel file di origine che nel database. Riguarda solo le operazioni con aggiornamento (ovvero **[!UICONTROL Update and insertion]** o **[!UICONTROL Update]**). L&#39;opzione **[!UICONTROL Duplicate management]** consente di aggiornare o ignorare il record se si trova sia nel file di origine che nel database. L&#39;opzione **[!UICONTROL Update or insert based on origin]** appartiene al modulo facoltativo e non può essere utilizzata in un contesto standard.
 
-Le opzioni **[!UICONTROL Reject]** e **[!UICONTROL Ignore]** operare come indicato sopra.
+Le opzioni **[!UICONTROL Reject]** e **[!UICONTROL Ignore]** funzionano come indicato sopra.
 
 ### In caso di errore {#behavior-in-the-event-of-an-error}
 
@@ -252,26 +252,26 @@ La maggior parte delle operazioni di trasferimento dei dati genera vari tipi di 
 
 ![](assets/s_ncs_user_import_general_tab.png)
 
-I dettagli di questi rifiuti possono essere visualizzati tramite **[!UICONTROL Rejects]** scheda.
+I dettagli di questi rifiuti possono essere visualizzati tramite la scheda **[!UICONTROL Rejects]**.
 
 ![](assets/s_ncs_user_import_rejets_tab.png)
 
-Esistono due tipi di rifiuto (il tipo viene visualizzato nel **[!UICONTROL Connector]** colonna):
+Esistono due tipi di rifiuto (il tipo viene visualizzato nella colonna **[!UICONTROL Connector]**):
 
 * I rifiuti del connettore di testo riguardano errori che si verificano durante l’elaborazione della riga di file (campo calcolato, analisi dei dati, ecc.). In questo caso, in caso di errore, l’intera riga viene sempre rifiutata.
 * I rifiuti del connettore del database riguardano errori che si verificano durante la riconciliazione dei dati o la scrittura nel database. In caso di importazione in più tabelle, il rifiuto può riguardare solo una parte del record (ad esempio, per un’importazione di destinatari ed eventi associati, un errore può impedire l’aggiornamento di un evento senza rifiutare il destinatario).
 
 Nella pagina di riconciliazione dei dati, puoi definire il tipo di gestione degli errori desiderato, campo per campo e tabella per tabella.
 
-* **[!UICONTROL Ignore and log a warning]**: tutti i campi vengono importati nel database, tranne quello che ha generato un errore.
-* **[!UICONTROL Reject parent element]**: viene rifiutata l’intera riga del record, non solo il campo che ha causato l’errore.
-* **[!UICONTROL Reject all elements]**: l’importazione viene interrotta e tutti gli elementi del record vengono rifiutati.
+* **[!UICONTROL Ignore and log a warning]**: tutti i campi vengono importati nel database tranne quello che ha generato un errore.
+* **[!UICONTROL Reject parent element]**: l&#39;intera riga del record viene rifiutata, non solo il campo che ha causato un errore.
+* **[!UICONTROL Reject all elements]**: l&#39;importazione viene interrotta e tutti gli elementi del record vengono rifiutati.
 
   ![](assets/s_ncs_user_import_wizard04_4.png)
 
 La struttura nella schermata di rifiuto di un’istanza di importazione indica quali campi sono stati rifiutati e dove si sono verificati gli errori.
 
-Puoi generare un file contenente questi record tramite **[!UICONTROL Export rejects]** icona:
+È possibile generare un file contenente questi record tramite l&#39;icona **[!UICONTROL Export rejects]**:
 
 ![](assets/s_ncs_user_import_errors_export.png)
 
@@ -283,19 +283,19 @@ Il passaggio successivo dell’importazione guidata consente di selezionare o cr
 
 >[!NOTE]
 >
->Questo passaggio viene visualizzato quando si importano solo i destinatari e quando si utilizza la tabella dei destinatari di Adobe Campaign predefinita (**nms:destinatario**).
+>Questo passaggio viene visualizzato quando si importano solo i destinatari e quando si utilizza la tabella dei destinatari predefinita di Adobe Campaign (**nms:recipient**).
 
-* Fai clic su **[!UICONTROL Edit]** collegamenti per selezionare la cartella, l&#39;elenco o il servizio a cui si desidera associare o sottoscrivere i destinatari.
+* Fare clic sui collegamenti **[!UICONTROL Edit]** per selezionare la cartella, l&#39;elenco o il servizio a cui si desidera associare o sottoscrivere i destinatari.
 
    1. Importazione in una cartella
 
-      Il **[!UICONTROL Edit...]** collegamento del **[!UICONTROL Import into a folder]** consente di selezionare o creare la cartella in cui verranno importati i destinatari. Per impostazione predefinita, se non è definita alcuna partizione, i dati vengono importati nella cartella predefinita dell’operatore.
+      Il collegamento **[!UICONTROL Edit...]** della sezione **[!UICONTROL Import into a folder]** consente di selezionare o creare la cartella in cui verranno importati i destinatari. Per impostazione predefinita, se non è definita alcuna partizione, i dati vengono importati nella cartella predefinita dell’operatore.
 
       >[!NOTE]
       >
-      >La cartella predefinita di un operatore è la prima cartella per la quale l&#39;operatore dispone dell&#39;accesso in scrittura. Ulteriori informazioni in [Gestione dell’accesso alle cartelle](../../platform/using/access-management-folders.md).
+      >La cartella predefinita di un operatore è la prima cartella per la quale l&#39;operatore dispone dell&#39;accesso in scrittura. Ulteriori informazioni in [Gestione accesso alle cartelle](../../platform/using/access-management-folders.md).
 
-      Per selezionare la cartella di importazione, fare clic sulla freccia a destra della **[!UICONTROL Folder]** e selezionare la cartella interessata. È inoltre possibile utilizzare **[!UICONTROL Select link]** per visualizzare la struttura in una nuova finestra o creare una nuova cartella.
+      Per selezionare la cartella di importazione, fare clic sulla freccia a destra del campo **[!UICONTROL Folder]** e selezionare la cartella interessata. È inoltre possibile utilizzare l&#39;icona **[!UICONTROL Select link]** per visualizzare la struttura in una nuova finestra o creare una nuova cartella.
 
       ![](assets/s_ncs_user_import_wizard05_2.png)
 
@@ -303,17 +303,17 @@ Il passaggio successivo dell’importazione guidata consente di selezionare o cr
 
       ![](assets/s_ncs_user_import_wizard05_3.png)
 
-      La cartella viene aggiunta sotto il nodo corrente. Inserisci il nome della nuova cartella, premi Invio per confermare, quindi fai clic su **[!UICONTROL OK]**.
+      La cartella viene aggiunta sotto il nodo corrente. Immettere il nome della nuova cartella, premere Invio per confermare, quindi fare clic su **[!UICONTROL OK]**.
 
       ![](assets/s_ncs_user_import_wizard05_4.png)
 
    1. Associazione a un elenco
 
-      Il **[!UICONTROL Edit...]** collegamento in **[!UICONTROL Add recipients to a list]** consente di selezionare o creare un elenco in cui verranno importati i destinatari.
+      Il collegamento **[!UICONTROL Edit...]** nella sezione **[!UICONTROL Add recipients to a list]** consente di selezionare o creare un elenco in cui verranno importati i destinatari.
 
       ![](assets/s_ncs_user_import_wizard05_5.png)
 
-      Per creare un nuovo elenco per questi destinatari, fai clic su **[!UICONTROL Select link]**, quindi **[!UICONTROL Create]**. La creazione e la gestione degli elenchi sono presentate in [questa sezione](../../platform/using/creating-and-managing-lists.md).
+      Per creare un nuovo elenco per questi destinatari, fare clic su **[!UICONTROL Select link]** e quindi su **[!UICONTROL Create]**. La creazione e la gestione degli elenchi sono presentate in [questa sezione](../../platform/using/creating-and-managing-lists.md).
 
       ![](assets/s_ncs_user_import_wizard05_6.png)
 
@@ -321,20 +321,20 @@ Il passaggio successivo dell’importazione guidata consente di selezionare o cr
 
    1. Iscrizione a un servizio
 
-      Per abbonare tutti i destinatari importati a un servizio di informazioni, fai clic sul pulsante **[!UICONTROL Edit...]** collegamento del **[!UICONTROL Subscribe recipients to a service]** per selezionare o creare il servizio di informazioni a cui i destinatari saranno abbonati. È possibile selezionare **[!UICONTROL Send a confirmation message]** opzione: il contenuto di questo messaggio è definito nel modello di consegna associato al servizio di abbonamento.
+      Per sottoscrivere tutti i destinatari importati a un servizio informazioni, fare clic sul collegamento **[!UICONTROL Edit...]** della sezione **[!UICONTROL Subscribe recipients to a service]** per selezionare o creare il servizio informazioni a cui i destinatari verranno abbonati. È possibile selezionare l&#39;opzione **[!UICONTROL Send a confirmation message]**: il contenuto del messaggio è definito nel modello di consegna associato al servizio di abbonamento.
 
       ![](assets/s_ncs_user_import_wizard05_7.png)
 
-      Per creare un nuovo servizio per questi destinatari, fai clic su **[!UICONTROL Select link]** e quindi il **[!UICONTROL Create]** icona. La gestione dei servizi di informazione è presentata in [questa sezione](../../delivery/using/managing-subscriptions.md).
+      Per creare un nuovo servizio per questi destinatari, fare clic su **[!UICONTROL Select link]** e quindi sull&#39;icona **[!UICONTROL Create]**. La gestione dei servizi informativi è illustrata in [questa sezione](../../delivery/using/managing-subscriptions.md).
 
-* Utilizza il **[!UICONTROL Origin]** per aggiungere informazioni sull’origine dei destinatari ai loro profili. Queste informazioni sono particolarmente utili nel quadro di un’importazione multipla.
+* Utilizza il campo **[!UICONTROL Origin]** per aggiungere informazioni sull&#39;origine dei destinatari ai loro profili. Queste informazioni sono particolarmente utili nel quadro di un’importazione multipla.
 
-Clic **[!UICONTROL Next]** per convalidare questo passaggio e visualizzare il passaggio seguente.
+Fare clic su **[!UICONTROL Next]** per convalidare questo passaggio e visualizzare il passaggio seguente.
 
 ## Passaggio 6: avviare l’importazione {#step-6---launching-the-import}
 
-L’ultimo passaggio della procedura guidata consente di avviare l’importazione dei dati. A questo scopo, fai clic su **[!UICONTROL Start]** pulsante.
+L’ultimo passaggio della procedura guidata consente di avviare l’importazione dei dati. A tale scopo, fare clic sul pulsante **[!UICONTROL Start]**.
 
 ![](assets/s_ncs_user_import_wizard06_1.png)
 
-Puoi quindi monitorare l’esecuzione del processo di importazione (consulta [Monitorare l’esecuzione dei processi](../../platform/using/monitoring-jobs-execution.md).
+È quindi possibile monitorare l&#39;esecuzione del processo di importazione (vedere [Monitorare l&#39;esecuzione dei processi](../../platform/using/monitoring-jobs-execution.md).

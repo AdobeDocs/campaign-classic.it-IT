@@ -44,24 +44,24 @@ Nessuno
 
 ## Descrizione {#description-14}
 
-Il `<srcschema>` è l’elemento principale di uno schema. È il punto di input per la definizione dello schema.
+`<srcschema>` è l&#39;elemento principale di uno schema. È il punto di input per la definizione dello schema.
 
 ## Uso e contesto di utilizzo {#use-and-context-of-use-9}
 
-La presentazione dello schema è disponibile in [Informazioni sul riferimento di schema](../../../configuration/using/about-schema-reference.md) e [Struttura dello schema](../../../configuration/using/schema-structure.md).
+La presentazione dello schema è disponibile in [Informazioni sul riferimento dello schema](../../../configuration/using/about-schema-reference.md) e [Struttura dello schema](../../../configuration/using/schema-structure.md).
 
 ## Descrizione attributo {#attribute-description-14}
 
-* **creato (datetime)**: questo attributo fornisce informazioni sulla data e l’ora di creazione dello schema. Ha un modulo &quot;Date Time&quot; (Data e ora). I valori visualizzati vengono ricavati dal server. L’ora viene visualizzata in formato UTC.
-* **createdBy-id (lungo)**: è l’identificatore dell’operatore che ha creato lo schema.
-* **desc (stringa)**: descrizione dello schema
-* **entitySchema (stringa)**: schema di base su cui si basano sintassi e approvazione (per impostazione predefinita per Adobe Campaign: xtk:srcSchema). Quando salvi lo schema corrente, Adobe Campaign ne approverà la grammatica con lo schema dichiarato nell’attributo @xtkschema.
-* **extendedSchema (stringa)**: riceve il nome dello schema predefinito su cui si basa l’estensione dello schema corrente. Il modulo è &quot;namespace:name&quot;.
+* **creato (datetime)**: questo attributo fornisce informazioni sulla data e l&#39;ora di creazione dello schema. Ha un modulo &quot;Date Time&quot; (Data e ora). I valori visualizzati vengono ricavati dal server. L’ora viene visualizzata in formato UTC.
+* **createdBy-id (long)**: è l&#39;identificatore dell&#39;operatore che ha creato lo schema.
+* **desc (stringa)**: descrizione schema
+* **entitySchema (stringa)**: schema di base su cui si basano la sintassi e l&#39;approvazione (per impostazione predefinita per Adobe Campaign: xtk:srcSchema). Quando salvi lo schema corrente, Adobe Campaign ne approverà la grammatica con lo schema dichiarato nell’attributo @xtkschema.
+* **extendedSchema (stringa)**: riceve il nome dello schema predefinito su cui si basa l&#39;estensione dello schema corrente. Il modulo è &quot;namespace:name&quot;.
 * **img (stringa)**: icona collegata allo schema (può essere definita nella procedura guidata di creazione dello schema).
 * **etichetta (stringa)**: etichetta dello schema.
-* **labelSingular (stringa)**: etichetta (singolare) da visualizzare nell’interfaccia.
-* **lastModified (datetime)**: questo attributo fornisce informazioni sulla data e l’ora dell’ultima modifica. Ha un modulo &quot;Date Time&quot; (Data e ora). I valori visualizzati vengono ricavati dal server. L’ora viene visualizzata in formato UTC.
-* **library (booleano)**: utilizzo dello schema come libreria e non come entità. Altri schemi possono quindi fare riferimento a questo schema tramite gli attributi &quot;@ref&quot; e &quot;@template&quot;.
+* **labelSingular (stringa)**: label (singular) per la visualizzazione nell&#39;interfaccia.
+* **lastModified (datetime)**: questo attributo fornisce informazioni sulla data e l&#39;ora dell&#39;ultima modifica. Ha un modulo &quot;Date Time&quot; (Data e ora). I valori visualizzati vengono ricavati dal server. L’ora viene visualizzata in formato UTC.
+* **libreria (booleana)**: utilizzo dello schema come libreria e non come entità. Altri schemi possono quindi fare riferimento a questo schema tramite gli attributi &quot;@ref&quot; e &quot;@template&quot;.
 * **mappingType (stringa)**:
 
    * &quot;sql&quot;: mapping del database
@@ -69,11 +69,11 @@ La presentazione dello schema è disponibile in [Informazioni sul riferimento di
    * &quot;xmlFile&quot;: mapping di file di testo in formato XML
    * &quot;binaryFile&quot;: mappatura file binario
 
-* **modifiedBy-id (lungo)**: corrisponde all’identificatore dell’operatore che ha modificato lo schema.
-* **nome (stringa)**: nome schema univoco.
-* **spazio dei nomi (stringa)**: namespace dello schema (impostazione predefinita: nms, xtk, nl). Quando crei un nuovo schema per un progetto, ti consigliamo di utilizzare uno spazio dei nomi dedicato.
-* **useRecycleBin (booleano)**: attiva la funzione di eliminazione nell’applicazione. I record eliminati verranno inseriti nel cestino prima dell&#39;eliminazione finale. Questa funzione è disponibile solo in modalità &quot;Delivery&quot;.
-* **view (booleano)**: se è attivato (@view=&quot;true&quot;), lo schema verrà utilizzato come visualizzazione. La procedura guidata di aggiornamento della struttura del database non terrà conto dello schema. Questa opzione viene utilizzata principalmente per fare riferimento a tabelle esterne.
+* **modifiedBy-id (long)**: corrisponde all&#39;identificatore dell&#39;operatore che ha modificato lo schema.
+* **nome (stringa)**: nome di schema univoco.
+* **spazio dei nomi (stringa)**: spazio dei nomi dello schema (impostazione predefinita: nms, xtk, nl). Quando crei un nuovo schema per un progetto, ti consigliamo di utilizzare uno spazio dei nomi dedicato.
+* **useRecycleBin (booleano)**: attiva la funzionalità di eliminazione nell&#39;applicazione. I record eliminati verranno inseriti nel cestino prima dell&#39;eliminazione finale. Questa funzione è disponibile solo in modalità &quot;Delivery&quot;.
+* **visualizzazione (booleana)**: se attivata (@view=&quot;true&quot;), lo schema verrà utilizzato come visualizzazione. La procedura guidata di aggiornamento della struttura del database non terrà conto dello schema. Questa opzione viene utilizzata principalmente per fare riferimento a tabelle esterne.
 * **xtkschema (stringa)**: nome dello schema che definisce la grammatica dello schema (xtk:srcSchema per impostazione predefinita).
 
 ## Esempi {#examples-11}

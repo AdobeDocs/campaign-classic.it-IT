@@ -32,15 +32,15 @@ La conferma di invio avvia l’estrazione dei dati nel file specificato.
 
 ![](assets/s_ncs_user_postal_del_send_confirm_postal.png)
 
-Puoi quindi chiudere la procedura guidata e visualizzare i registri di consegna tramite **[!UICONTROL Delivery]** accessibile tramite i dettagli di consegna.
+È quindi possibile chiudere la procedura guidata e visualizzare i registri di consegna tramite la scheda **[!UICONTROL Delivery]**, accessibile tramite i dettagli di consegna.
 
-Puoi configurare la modalità di recupero dei registri di consegna dall’icona **[!UICONTROL Analysis]** delle proprietà di consegna.
+Puoi configurare la modalità di recupero dei registri di consegna dalla scheda **[!UICONTROL Analysis]** delle proprietà di consegna.
 
 Esistono due modalità:
 
-* **[!UICONTROL Messages are considered sent after validation]** (modalità predefinita): in questa modalità funzione, tutti i broadLog vengono aggiornati quando l’operatore conferma l’invio (il loro stato passa da &quot;Consegna in sospeso&quot; a &quot;Inviato&quot;) e la consegna viene impostata automaticamente su **[!UICONTROL Finished]**.
-* **[!UICONTROL A file of results determines the messages that are sent and those that have failed]** : con questa modalità è possibile aggiornare i broadLog tramite un file esterno inviato dal provider di servizi. In questo caso, è necessario utilizzare un flusso di lavoro per elaborare queste informazioni al fine di aggiornare lo stato del registro di trasmissione.
+* **[!UICONTROL Messages are considered sent after validation]** (modalità predefinita): in questa modalità funzione, tutti i broadLog vengono aggiornati quando l&#39;operatore conferma l&#39;invio (il loro stato passa da &quot;Consegna in sospeso&quot; a &quot;Inviato&quot;) e la consegna viene impostata automaticamente su **[!UICONTROL Finished]**.
+* **[!UICONTROL A file of results determines the messages that are sent and those that have failed]** : questa modalità consente di aggiornare i broadLog tramite un file esterno inviato dal provider di servizi. In questo caso, è necessario utilizzare un flusso di lavoro per elaborare queste informazioni al fine di aggiornare lo stato del registro di trasmissione.
 
   >[!NOTE]
   >
-  >In questo caso, anche lo stato della consegna deve essere modificato in **[!UICONTROL Finished]** dall’utente non appena vengono aggiornati i broadLog.
+  >In questo caso, non appena i broadLog vengono aggiornati, anche lo stato della consegna deve essere modificato in **[!UICONTROL Finished]** dall&#39;utente.

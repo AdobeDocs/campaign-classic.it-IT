@@ -18,10 +18,10 @@ ht-degree: 0%
 
 
 
-Quando l’autenticazione funziona, [!DNL pipelined] può recuperare gli eventi ed elaborarli. Elabora solo i trigger configurati in Adobe Campaign, ignorando gli altri. Il trigger deve essere stato generato da Analytics e inviato in precedenza alla pipeline.
+Una volta completata l&#39;autenticazione, [!DNL pipelined] può recuperare gli eventi ed elaborarli. Elabora solo i trigger configurati in Adobe Campaign, ignorando gli altri. Il trigger deve essere stato generato da Analytics e inviato in precedenza alla pipeline.
 È inoltre possibile configurare l’opzione con un carattere jolly per acquisire tutti i trigger, indipendentemente dal nome.
 
-La configurazione dei trigger viene eseguita in un’opzione, in **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. Il nome dell’opzione è **[!UICONTROL NmsPipeline_Config]**. Il tipo di dati è &quot;testo lungo&quot; in formato JSON.
+La configurazione dei trigger viene eseguita in un&#39;opzione, in **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. Nome opzione: **[!UICONTROL NmsPipeline_Config]**. Il tipo di dati è &quot;testo lungo&quot; in formato JSON.
 
 Questo esempio specifica due trigger.
 
@@ -68,7 +68,7 @@ Questo secondo esempio rileva tutti i trigger.
 
 >[!NOTE]
 >
->Il [!DNL Trigger] Il valore UID di un nome trigger specifico nell’interfaccia di Analytics si trova come parte dei parametri querystring dell’URL nell’interfaccia Triggers. L’UID triggerType viene passato nel flusso di dati della pipeline e il codice può essere scritto nel file pipeline.JS per mappare l’UID del trigger a un’etichetta intuitiva che può essere memorizzata in una colonna Nome trigger nello schema pipelineEvents.
+>Il valore UID [!DNL Trigger] per un nome trigger specifico nell&#39;interfaccia di Analytics può essere trovato come parte dei parametri querystring dell&#39;URL nell&#39;interfaccia Triggers. L’UID triggerType viene passato nel flusso di dati della pipeline e il codice può essere scritto nel file pipeline.JS per mappare l’UID del trigger a un’etichetta intuitiva che può essere memorizzata in una colonna Nome trigger nello schema pipelineEvents.
 
 ## Il parametro consumer {#consumer-parameter}
 
@@ -79,10 +79,10 @@ Il parametro &quot;consumer&quot; identifica l’istanza come uno di questi cons
 ## Come configurare l’opzione Pipeline {#configure-pipeline-option}
 
 Aggiungi o modifica i trigger di Experience Cloud sotto l’array &quot;triggers&quot;; non modificare gli altri.
-Assicurati che il JSON sia valido con l’aiuto di questo [sito web](https://jsonlint.com/).
+Verifica che il JSON sia valido con l&#39;aiuto di questo [sito Web](https://jsonlint.com/).
 
 * &quot;name&quot; è l&#39;ID del trigger. Un carattere jolly &quot;*&quot; acquisisce tutti i trigger.
 * &quot;Consumer&quot; è una stringa univoca che identifica in modo univoco l’istanza nlserver. In genere può essere il nome dell’istanza stessa. Per più ambienti (dev/stage/prod), assicurati che sia univoco per ciascuno di essi, in modo che ogni istanza riceva una copia del messaggio.
-* [!DNL Pipelined] supporta anche l’argomento &quot;alias&quot;.
+* [!DNL Pipelined] supporta anche l&#39;argomento &quot;alias&quot;.
 
 Riavvia [!DNL pipelined] dopo aver apportato modifiche.

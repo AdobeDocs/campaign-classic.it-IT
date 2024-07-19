@@ -14,9 +14,9 @@ ht-degree: 0%
 
 # Test AB: configurare le consegne nel flusso di lavoro {#step-4--configuring-the-deliveries-in-the-workflow}
 
-Una volta [le popolazioni vengono create](a-b-testing-uc-population-samples.md), puoi configurare le consegne. In questo caso d’uso, le prime due consegne ti consentono di inviare contenuti diversi alla popolazione A e B. La terza consegna è la consegna di riserva: verrà inviata ai destinatari che non appartengono ad A né a B. Il suo contenuto verrà calcolato da uno script e sarà identico ad A o B, a seconda di quale ha ottenuto il punteggio più alto per il tasso di apertura. È necessario configurare un periodo di attesa per la terza consegna, per scoprire il risultato delle consegne A e B. Ecco perché la terza consegna include una **[!UICONTROL Wait]** attività.
+Una volta create [le popolazioni](a-b-testing-uc-population-samples.md), puoi configurare le consegne. In questo caso d’uso, le prime due consegne ti consentono di inviare contenuti diversi alla popolazione A e B. La terza consegna è la consegna di riserva: verrà inviata ai destinatari che non appartengono ad A né a B. Il suo contenuto verrà calcolato da uno script e sarà identico ad A o B, a seconda di quale ha ottenuto il punteggio più alto per il tasso di apertura. È necessario configurare un periodo di attesa per la terza consegna, per scoprire il risultato delle consegne A e B. Per questo motivo la terza consegna include un&#39;attività **[!UICONTROL Wait]**.
 
-1. Vai a **[!UICONTROL Split]** e collegare la transizione destinata alla popolazione A a una delle consegne e-mail già nel flusso di lavoro.
+1. Vai all&#39;attività **[!UICONTROL Split]** e collega la transizione destinata alla popolazione A a una delle consegne e-mail già nel flusso di lavoro.
 
    ![](assets/use_case_abtesting_createdeliveries_001.png)
 
@@ -25,11 +25,11 @@ Una volta [le popolazioni vengono create](a-b-testing-uc-population-samples.md),
 
    ![](assets/use_case_abtesting_createdeliveries_003.png)
 
-1. Clic **[!UICONTROL Continue]** per visualizzare la consegna, quindi salvarla.
+1. Fai clic su **[!UICONTROL Continue]** per visualizzare la consegna, quindi salvala.
 
    ![](assets/use_case_abtesting_createdeliveries_002.png)
 
-1. Collega la transizione del **[!UICONTROL Split]** attività destinata alla popolazione B alla seconda consegna e-mail.
+1. Collega la transizione dell&#39;attività **[!UICONTROL Split]** destinata alla popolazione B alla seconda consegna e-mail.
 
    ![](assets/use_case_abtesting_createdeliveries_004.png)
 
@@ -37,15 +37,15 @@ Una volta [le popolazioni vengono create](a-b-testing-uc-population-samples.md),
 
    ![](assets/use_case_abtesting_createdeliveries_005.png)
 
-1. Collega la transizione destinata alla popolazione rimanente al **[!UICONTROL Wait]** attività.
+1. Collega all&#39;attività **[!UICONTROL Wait]** la transizione destinata al gruppo rimanente.
 
    ![](assets/use_case_abtesting_createdeliveries_006.png)
 
-1. Apri **[!UICONTROL Wait]** e configurare un periodo di attesa di 5 giorni.
+1. Apri l&#39;attività **[!UICONTROL Wait]** e configura un periodo di attesa di 5 giorni.
 
    ![](assets/use_case_abtesting_createdeliveries_007.png)
 
-1. Collega **[!UICONTROL Wait]** attività al **[!UICONTROL JavaScript code]** attività.
+1. Collega l&#39;attività **[!UICONTROL Wait]** all&#39;attività **[!UICONTROL JavaScript code]**.
 
    ![](assets/use_case_abtesting_createdeliveries_008.png)
 

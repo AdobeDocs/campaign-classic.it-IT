@@ -33,7 +33,7 @@ A questo scopo, esegui i seguenti passaggi:
 
    ![](assets/wf_new_mapping_define_names.png)
 
-   Puoi scegliere se memorizzare le esclusioni (**excludelog**), con messaggi (**broadlog**) o in una tabella separata.
+   Puoi scegliere se memorizzare le esclusioni (**excludelog**), con i messaggi (**broadlog**) o in una tabella separata.
 
    Puoi anche scegliere se gestire il tracciamento per questa mappatura di consegna (**trackinglog**).
 
@@ -41,4 +41,4 @@ A questo scopo, esegui i seguenti passaggi:
 
    ![](assets/wf_new_mapping_define_extensions.png)
 
-   Fai clic su **[!UICONTROL Save]** pulsante per avviare la creazione della mappatura di consegna: tutte le tabelle collegate vengono create automaticamente in base ai parametri selezionati.
+   Fai clic sul pulsante **[!UICONTROL Save]** per avviare la creazione della mappatura di consegna: tutte le tabelle collegate vengono create automaticamente in base ai parametri selezionati.

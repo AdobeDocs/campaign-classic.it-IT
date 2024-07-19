@@ -21,9 +21,9 @@ Adobe Campaign consente di generare documenti PDF variabili per gli allegati e-m
 
 Sono supportate le seguenti estensioni: &quot;.docx&quot;, &quot;.doc&quot; e &quot;.odt&quot;.
 
-Per personalizzare i documenti, sono disponibili le stesse funzionalità JavaScript disponibili per la personalizzazione e-mail.
+Per personalizzare i documenti, sono disponibili le stesse funzionalità di JavaScript disponibili per la personalizzazione delle e-mail.
 
-È necessario attivare **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]** opzione. Questa opzione è accessibile quando alleghi il file all’e-mail di consegna. Per ulteriori informazioni su come allegare un file calcolato, consulta [Allega file](attaching-files.md) sezione.
+È necessario attivare l&#39;opzione **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**. Questa opzione è accessibile quando alleghi il file all’e-mail di consegna. Per ulteriori informazioni su come allegare un file calcolato, consulta la sezione [Allega file](attaching-files.md).
 
 Esempio di personalizzazione dell&#39;intestazione di una fattura:
 
@@ -36,7 +36,7 @@ Per generare tabelle dinamiche o includere immagini tramite un URL, devi seguire
 La procedura per la generazione di tabelle dinamiche è la seguente:
 
 * Crea una tabella con tre righe e tutte le colonne necessarie, quindi configurane il layout (bordi, ecc.).
-* Posizionare il cursore sulla tabella e fare clic su **[!UICONTROL Table > Table properties]** menu. Vai a **[!UICONTROL Table]** e inserisci un nome che inizi con **NlJsTable**.
+* Posizionare il cursore sulla tabella e fare clic sul menu **[!UICONTROL Table > Table properties]**. Vai alla scheda **[!UICONTROL Table]** e immetti un nome che inizia con **NlJsTable**.
 * Nella prima cella della prima riga, definisci un loop (&quot;for&quot;, ad esempio) che consenta l’iterazione dei valori che desideri visualizzare nella tabella.
 * In ogni cella della seconda riga della tabella, inserire gli script che restituiscono i valori da visualizzare.
 * Chiudete il loop nella terza e ultima riga della tabella.
@@ -55,22 +55,22 @@ A questo scopo, devi configurare un blocco di personalizzazione, quindi includer
 
 **Passaggio 1: creare l&#39;allegato:**
 
-* Inserisci la chiamata al blocco di personalizzazione: **&lt;%@ include view=&quot;blockname&quot; %>**.
+* Inserire la chiamata al blocco di personalizzazione: **&lt;%@ include view=&quot;blockname&quot; %>**.
 * Inserisci il contenuto (personalizzato o meno) nel corpo del file.
 
 ![](assets/s_ncs_open_office_blocdeperso.png)
 
 **Passaggio 2: creare il blocco di personalizzazione:**
 
-* Vai a **[!UICONTROL Resources > Campaign management > Personalization blocks]** della console Adobe Campaign.
+* Passa al menu **[!UICONTROL Resources > Campaign management > Personalization blocks]** della console Adobe Campaign.
 * Crea un nuovo blocco di personalizzazione &quot;Il mio logo&quot; con &quot;Il mio_logo&quot; come nome interno.
-* Fai clic sul pulsante **[!UICONTROL Advanced parameters...]** quindi controlla il **[!UICONTROL "The content of the block is included in an attachment"]** opzione. Questo consente di copiare la definizione del blocco di personalizzazione direttamente nel contenuto del file OpenOffice.
+* Fai clic sul collegamento **[!UICONTROL Advanced parameters...]**, quindi seleziona l&#39;opzione **[!UICONTROL "The content of the block is included in an attachment"]**. Questo consente di copiare la definizione del blocco di personalizzazione direttamente nel contenuto del file OpenOffice.
 
   ![](assets/s_ncs_pdf_bloc_option.png)
 
   Devi distinguere due tipi di dichiarazioni all’interno del blocco di personalizzazione:
 
-   * Il codice Adobe Campaign dei campi di personalizzazione per i quali le virgolette &quot;aperta&quot; e &quot;chiusa&quot; devono essere sostituite da caratteri di escape (rispettivamente `&lt;` e `&gt;`).
+   * Il codice Adobe Campaign dei campi di personalizzazione per i quali le virgolette &quot;aperta&quot; e &quot;chiusa&quot; devono essere sostituite con caratteri di escape (rispettivamente `&lt;` e `&gt;`).
    * L&#39;intero codice XML OpenOffice verrà copiato nel documento OpenOffice.
 
 Nell’esempio, il blocco di personalizzazione si presenta così:

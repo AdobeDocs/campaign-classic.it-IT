@@ -17,9 +17,9 @@ ht-degree: 7%
 
 ## Informazioni sul rendering della casella in entrata {#about-inbox-rendering}
 
-Prima di premere **Invia** , assicurati che il messaggio venga visualizzato ai destinatari in modo ottimale su diversi client web, servizi di posta sul web e dispositivi.
+Prima di premere il pulsante **Invia**, assicurati che il messaggio venga visualizzato ai destinatari in modo ottimale in diversi client Web, servizi di posta sul Web e dispositivi.
 
-Per ottenere questo risultato, Adobe Campaign sfrutta [Litmus](https://litmus.com/email-testing) soluzione di test e-mail basata su web per acquisire i rendering e renderli disponibili in un rapporto dedicato. Ciò consente di visualizzare in anteprima il messaggio inviato nei diversi contesti in cui può essere ricevuto e di verificare la compatibilità nei desktop e nelle applicazioni principali.
+Per consentire questa operazione, Adobe Campaign sfrutta la soluzione di test e-mail basata sul Web [Litmus](https://litmus.com/email-testing) per acquisire i rendering e renderli disponibili in un report dedicato. Ciò consente di visualizzare in anteprima il messaggio inviato nei diversi contesti in cui può essere ricevuto e di verificare la compatibilità nei desktop e nelle applicazioni principali.
 
 >[!CAUTION]
 >Il rendering della casella in entrata non è compatibile con [consegne ricorrenti](communication-channels.md#recurring-delivery).
@@ -27,22 +27,22 @@ Per ottenere questo risultato, Adobe Campaign sfrutta [Litmus](https://litmus.co
 
 Litmus è un’applicazione di convalida e anteprima delle e-mail ricca di funzioni. Consente ai creatori di contenuti e-mail di visualizzare in anteprima il contenuto dei messaggi in oltre 70 renderer e-mail, ad esempio la casella in entrata Gmail o il client Apple Mail.
 
-I client per dispositivi mobili, di messaggistica e di posta sul Web disponibili per **Rendering casella in entrata** in Adobe Campaign sono elencati nella [Sito web Litmus](https://litmus.com/email-testing) (fare clic **Visualizza tutti i client e-mail**).
+I client per dispositivi mobili, di messaggistica e di posta sul Web disponibili per il **rendering Posta in arrivo** in Adobe Campaign sono elencati nel [sito Web Litmus](https://litmus.com/email-testing) (fare clic su **Visualizza tutti i client di posta elettronica**).
 
 >[!NOTE]
 >
->Il rendering della casella in entrata non è necessario per testare la personalizzazione nelle consegne. La personalizzazione può essere controllata con strumenti di Adobe Campaign come **[!UICONTROL Preview]** e [Bozze](steps-validating-the-delivery.md#sending-a-proof).
+>Il rendering della casella in entrata non è necessario per testare la personalizzazione nelle consegne. Personalization può essere controllato con gli strumenti di Adobe Campaign come **[!UICONTROL Preview]** e [Bozze](steps-validating-the-delivery.md#sending-a-proof).
 
 ## Attivazione del rendering della casella in entrata {#activating-inbox-rendering}
 
-[!BADGE On-premise e ibrido]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"}
+[!BADGE On-Premise e ibrido]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"}
 
 Per i client in hosting e ibridi, il rendering della casella in entrata è configurato nell’istanza da consulenti e supporto tecnico Adobe. Per ulteriori informazioni, contatta il tuo Account Executive Adobe.
 
 Per le installazioni on-premise, segui i passaggi seguenti per configurare il rendering della casella in entrata.
 
-1. Installare **[!UICONTROL Inbox rendering (IR)]** tramite il **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** menu. Per ulteriori informazioni, consulta [Installazione dei pacchetti standard di Campaign Classic](../../installation/using/installing-campaign-standard-packages.md).
-1. Configurare un account esterno di tipo HTTP tramite **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]** nodo. Per ulteriori informazioni, consulta [Creazione di un account esterno](../../installation/using/external-accounts.md#creating-an-external-account).
+1. Installa il pacchetto **[!UICONTROL Inbox rendering (IR)]** tramite il menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**. Per ulteriori informazioni, consulta [Installazione dei pacchetti standard di Campaign Classic](../../installation/using/installing-campaign-standard-packages.md).
+1. Configurare un account esterno del tipo HTTP tramite il nodo **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]**. Per ulteriori informazioni, consulta [Creazione di un account esterno](../../installation/using/external-accounts.md#creating-an-external-account).
 1. Imposta i parametri dell’account esterno come segue:
    * **[!UICONTROL Label]**: informazioni sul server di recapito messaggi
    * **[!UICONTROL Internal name]**: deliverabilityInstance
@@ -53,8 +53,8 @@ Per le installazioni on-premise, segui i passaggi seguenti per configurare il re
 
    ![](assets/s_tn_inbox_rendering_external-account.png)
 
-1. Vai a **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** nodo. Cerca **[!UICONTROL DmRendering_cuid]** per ottenere l’identificatore dei rapporti di consegna che deve essere copiato nell’elemento **[!UICONTROL Value (text)]** campo.
-1. Modifica il **serverConf.xml** per consentire una chiamata al server Litmus. Aggiungi la seguente riga al `<urlPermission>` sezione:
+1. Vai al nodo **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. Cerca l&#39;opzione **[!UICONTROL DmRendering_cuid]** e contatta l&#39;assistenza per ottenere l&#39;identificatore dei report di consegna che deve essere copiato nel campo **[!UICONTROL Value (text)]**.
+1. Modificare il file **serverConf.xml** per consentire una chiamata al server Litmus. Aggiungere la riga seguente alla sezione `<urlPermission>`:
 
    ```
    <url dnsSuffix="deliverability-app.neolane.net" urlRegEx="https://.*"/>
@@ -80,7 +80,7 @@ In Adobe Campaign, il merito corrisponde al numero di rendering disponibili (not
 >
 >Il numero di token Litmus disponibili dipende dalla licenza Campaign acquistata. Controllare il contratto di licenza.
 
-Ogni volta che utilizza **[!UICONTROL Inbox rendering]** in una consegna, ogni rendering generato diminuisce di un’unità i token disponibili.
+Ogni volta che utilizzi la funzione **[!UICONTROL Inbox rendering]** in una consegna, ogni rendering generato diminuisce di uno i token disponibili.
 
 >[!IMPORTANT]
 >
@@ -90,7 +90,7 @@ Ogni volta che utilizza **[!UICONTROL Inbox rendering]** in una consegna, ogni r
 >* Per la stessa consegna, se generi nuovamente il rendering della casella in entrata, il numero di token disponibili viene nuovamente diminuito del numero di rendering generati.
 >
 
-Il numero di token rimanenti disponibili viene visualizzato in **[!UICONTROL General summary]** del [Rapporto di rendering della casella in entrata](#inbox-rendering-report).
+Il numero di token disponibili rimanenti viene visualizzato nel **[!UICONTROL General summary]** del [report di rendering della casella in entrata](#inbox-rendering-report).
 
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
@@ -100,20 +100,20 @@ In genere, la funzione di rendering della casella in entrata viene utilizzata pe
 
 Dopo aver creato la consegna e-mail e averne definito il contenuto e la popolazione target, effettua le seguenti operazioni.
 
-Per ulteriori informazioni sulla creazione, la progettazione e il targeting di una consegna, consulta [questa sezione](about-email-channel.md).
+Per ulteriori informazioni sulla creazione, progettazione e targeting di una consegna, consulta [questa sezione](about-email-channel.md).
 
-1. Nella barra superiore della consegna, fai clic sul pulsante **[!UICONTROL Inbox rendering]** pulsante.
-1. Seleziona **[!UICONTROL Analyze]** per avviare il processo di acquisizione.
+1. Nella barra superiore della consegna, fai clic sul pulsante **[!UICONTROL Inbox rendering]**.
+1. Selezionare **[!UICONTROL Analyze]** per avviare il processo di acquisizione.
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
-   Viene inviata una bozza. È possibile accedere alle miniature di rendering nella bozza pochi minuti dopo l’invio delle e-mail. Per ulteriori informazioni sull’invio delle bozze, consulta [questa sezione](steps-validating-the-delivery.md#sending-a-proof).
+   Viene inviata una bozza. È possibile accedere alle miniature di rendering nella bozza pochi minuti dopo l’invio delle e-mail. Per ulteriori informazioni sull&#39;invio di bozze, consulta [questa sezione](steps-validating-the-delivery.md#sending-a-proof).
 
 1. Dopo l’invio, la bozza viene visualizzata nell’elenco delle consegne. Fare doppio clic su di esso.
 
    ![](assets/s_tn_inbox_rendering_delivery_list.png)
 
-1. Vai a **Rendering casella in entrata** della bozza.
+1. Passa alla scheda **Rendering casella in entrata** della bozza.
 
    ![](assets/s_tn_inbox_rendering_tab.png)
 
@@ -123,13 +123,13 @@ Per ulteriori informazioni sulla creazione, la progettazione e il targeting di u
 
 Questo report visualizza i rendering della casella in entrata così come vengono visualizzati al destinatario. I rendering possono variare a seconda di come il destinatario apre la consegna e-mail: in un browser, su un dispositivo mobile o tramite un’applicazione e-mail.
 
-Il **[!UICONTROL General summary]** presenta il numero di messaggi ricevuti, indesiderati (spam), non ricevuti o in attesa di ricezione, sotto forma di elenco e tramite una rappresentazione grafica con codice colore.
+**[!UICONTROL General summary]** presenta il numero di messaggi ricevuti, indesiderati (spam), non ricevuti o in attesa di ricezione, come elenco e tramite una rappresentazione grafica con codice colore.
 
 ![](assets/s_tn_inbox_rendering_summary.png)
 
 Passa il puntatore del mouse sul grafico per visualizzare i dettagli di ciascun colore.
 
-Il corpo della relazione si articola in tre parti: **[!UICONTROL Mobile]**, **[!UICONTROL Messaging clients]**, e **[!UICONTROL Webmails]**. Per visualizzare tutti i rendering raggruppati in queste tre categorie, scorri il report verso il basso.
+Il corpo del report è diviso in tre parti: **[!UICONTROL Mobile]**, **[!UICONTROL Messaging clients]** e **[!UICONTROL Webmails]**. Per visualizzare tutti i rendering raggruppati in queste tre categorie, scorri il report verso il basso.
 
 ![](assets/s_tn_inbox_rendering_report.png)
 

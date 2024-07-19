@@ -29,24 +29,24 @@ La nuova funzione di Apple è la forma delle novità del settore in termini di p
 
 ### Valuta l’impatto sui trigger della campagna
 
-Valuta in che modo queste modifiche influiscono sui trigger della campagna corrente. Identifica i flussi di lavoro in cui le e-mail aperte vengono utilizzate come criterio per la segmentazione, il targeting o il retargeting. Leggi le [suggerimenti](#find-email-open-tracking).
+Valuta in che modo queste modifiche influiscono sui trigger della campagna corrente. Identifica i flussi di lavoro in cui le e-mail aperte vengono utilizzate come criterio per la segmentazione, il targeting o il retargeting. Leggi i [suggerimenti e trucchi](#find-email-open-tracking).
 
 ### Conservare i dati
 
-Conserva i tuoi dati e consolida le tue conoscenze attuali sui dispositivi. Puoi basare gli indicatori di prestazioni chiave (KPI, Key Performance Indicators) sull’agente utente. Ad esempio, puoi creare KPI (Key Performance Indicator) sulla base dei profili delle persone che utilizzano l’app Mail di iOS e Apple. Leggi le [suggerimenti](#preserve-tracking-data).
+Conserva i tuoi dati e consolida le tue conoscenze attuali sui dispositivi. Puoi basare gli indicatori di prestazioni chiave (KPI, Key Performance Indicators) sull’agente utente. Ad esempio, puoi creare KPI (Key Performance Indicator) sulla base dei profili delle persone che utilizzano l’app Mail di iOS e Apple. Leggi i [suggerimenti e trucchi](#preserve-tracking-data).
 
 ### Archiviare i registri di tracciamento oltre il periodo di conservazione
 
 Archivia i registri di tracciamento oltre il periodo di conservazione di Adobe Campaign:
 
 1. Controlla la durata del periodo di conservazione nell’istanza della campagna.
-1. Controlla nuovamente le mappature di destinazione attive. Determinare se utilizzare tabelle di profili personalizzate in aggiunta alla tabella di profili preconfigurata (`nmsRecipient`).
+1. Controlla nuovamente le mappature di destinazione attive. Determinare se utilizzare tabelle di profili personalizzate in aggiunta alla tabella dei profili predefinita (`nmsRecipient`).
 1. Esporta i registri di tracciamento da Adobe Campaign. Includi i registri che contengono dati sull’agente utente e sul sistema operativo.
 
 ### Valuta la tendenza corrente dei tassi aperti
 
 Determina quale proporzione del pubblico utilizza l’app di posta di Apple su un dispositivo iOS.
-Utilizzando questa valutazione, è possibile identificare potenziali lacune anomale e la loro causa. Puoi determinare se un gap è dovuto a problemi di prestazioni della campagna o alla funzionalità di protezione della privacy di Apple. Leggi le [suggerimenti](#measure-ios-footprint).
+Utilizzando questa valutazione, è possibile identificare potenziali lacune anomale e la loro causa. Puoi determinare se un gap è dovuto a problemi di prestazioni della campagna o alla funzionalità di protezione della privacy di Apple. Leggi i [suggerimenti e trucchi](#measure-ios-footprint).
 
 ### Valuta nuovamente la strategia della campagna e le metriche delle prestazioni
 
@@ -60,7 +60,7 @@ Soprattutto, ti consigliamo vivamente di rivalutare in modo proattivo la strateg
 
 Per raccogliere informazioni dai dati di Adobe Campaign, puoi utilizzare rapporti predefiniti:
 
-* **[!UICONTROL Operating Systems]** rapporto
+* Report **[!UICONTROL Operating Systems]**
 
   Per identificare la proporzione di visitatori per sistema operativo e per versione, utilizza questo rapporto. [Ulteriori informazioni](../../reporting/using/global-reports.md#operating-systems).
 
@@ -72,7 +72,7 @@ Per raccogliere informazioni dai dati di Adobe Campaign, puoi utilizzare rapport
 
   ![](../../reporting/using/assets/s_ncs_user_os_report2.png)
 
-* **[!UICONTROL Breakdown of opens]** rapporto
+* Report **[!UICONTROL Breakdown of opens]**
 
   Per identificare la proporzione di aperture di e-mail per sistema operativo, utilizza questo rapporto. [Ulteriori informazioni](../../reporting/using/global-reports.md#breakdown-of-opens).
 
@@ -82,7 +82,7 @@ Per raccogliere informazioni dai dati di Adobe Campaign, puoi utilizzare rapport
 
 Puoi identificare i flussi di lavoro in cui le e-mail aperte vengono utilizzate come criterio per la segmentazione, il targeting e il retargeting.
 
-A questo scopo, puoi utilizzare **[!UICONTROL type]** attributo dell&#39;URL del collegamento tracciato (**[!UICONTROL url/@type]**). Per le aperture e-mail, questo attributo è impostato su **[!UICONTROL Open]**. Questo attributo è disponibile dall’editor delle query, il **[!UICONTROL Query]** attività in un flusso di lavoro e filtri predefiniti. Puoi utilizzare questo attributo come criterio di targeting per le campagne di marketing.
+A tale scopo, è possibile utilizzare l&#39;attributo **[!UICONTROL type]** dell&#39;URL del collegamento tracciato (**[!UICONTROL url/@type]**). Per le aperture e-mail, questo attributo è impostato su **[!UICONTROL Open]**. Questo attributo è disponibile dall&#39;editor delle query, dall&#39;attività **[!UICONTROL Query]** in un flusso di lavoro e dai filtri predefiniti. Puoi utilizzare questo attributo come criterio di targeting per le campagne di marketing.
 
 ![](assets/identify-email-open-tracking-1.png)
 
@@ -90,7 +90,7 @@ In questo esempio, un addetto al marketing desidera inviare un’offerta di rico
 
 * Puoi utilizzare le aperture e-mail come criterio di targeting in una query.
 
-  Puoi specificare, come condizione di filtro, che il tipo di URL dei registri di tracciamento di una consegna specifica deve essere impostato su **[!UICONTROL Open]**.
+  È possibile specificare, come condizione di filtro, che il tipo di URL dei registri di tracciamento di una consegna specifica deve essere impostato su **[!UICONTROL Open]**.
 
   ![](assets/identify-email-open-tracking-2.png)
 
@@ -106,7 +106,7 @@ In questo esempio, un addetto al marketing desidera inviare un’offerta di rico
   >
   >Da un flusso di lavoro non è possibile visualizzare i criteri di targeting di un filtro predefinito.
 
-Per recuperare l’elenco dei flussi di lavoro in cui le e-mail aperte vengono utilizzate come criterio di targeting, è necessario eseguire una query sul `xtk:workflow` schema. Il contenuto del flusso di lavoro viene memorizzato in **[!UICONTROL XML memo (data)]** in formato XML.
+Per recuperare l&#39;elenco dei flussi di lavoro in cui le e-mail aperte vengono utilizzate come criterio di targeting, è necessario eseguire una query sullo schema `xtk:workflow`. Il contenuto del flusso di lavoro è memorizzato nel campo **[!UICONTROL XML memo (data)]** in formato XML.
 
 ![](assets/identify-email-open-tracking-5.png)
 
@@ -139,13 +139,13 @@ Questo esempio mostra un’implementazione personalizzata in un singolo flusso d
 >
 >Si consiglia vivamente di testare e convalidare questo pacchetto in un ambiente non di produzione.
 
-Scarica il file [pacchetto di esempio](assets/PKG_Search_workflows_using_Opens_in_queries_V1.xml) e installarlo. [Ulteriori informazioni](../../platform/using/working-with-data-packages.md#importing-packages).
+Scarica il [pacchetto di esempio](assets/PKG_Search_workflows_using_Opens_in_queries_V1.xml) e installalo. [Ulteriori informazioni](../../platform/using/working-with-data-packages.md#importing-packages).
 
 Dopo aver installato il pacchetto, puoi accedere al flusso di lavoro dalla cartella che contiene i flussi di lavoro tecnici predefiniti nella tua istanza:
 
 `/Administration/Production/Technical workflows/nmsTechnicalWorkflow`
 
-Dall’interfaccia utente, scegli **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
+Dall&#39;interfaccia utente, scegliere **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
 
 ![](assets/identify-email-open-tracking-8.png)
 
@@ -159,7 +159,7 @@ Il flusso di lavoro comprende i seguenti passaggi principali:
 
 Il flusso di lavoro comprende i seguenti passaggi dettagliati:
 
-1. L’attività iniziale è un’attività Query in `xtk:workflow` schema. Questa attività viene utilizzata per trovare, nell’istanza corrispondente, le query di flusso di lavoro esplicite che includono le e-mail aperte come criterio di targeting.
+1. L&#39;attività iniziale è un&#39;attività query nello schema `xtk:workflow`. Questa attività viene utilizzata per trovare, nell’istanza corrispondente, le query di flusso di lavoro esplicite che includono le e-mail aperte come criterio di targeting.
 
    ![](assets/identify-email-open-tracking-9.png)
 
@@ -340,11 +340,11 @@ Per conservare i dati di tracciamento, devi esportarli da Adobe Campaign al tuo 
 
 >[!IMPORTANT]
 >
->L’esempio seguente si concentra sulla `nms:Recipient` schema, lo schema di profilo predefinito. Se utilizzi mappature di destinazione personalizzate aggiuntive associate a profili personalizzati, ti consigliamo di estendere questa strategia di esportazione a tutte le tabelle di registri personalizzate. [Ulteriori informazioni](../../configuration/using/target-mapping.md).
+>L&#39;esempio seguente si concentra sullo schema predefinito `nms:Recipient`, che è lo schema di profilo predefinito. Se utilizzi mappature di destinazione personalizzate aggiuntive associate a profili personalizzati, ti consigliamo di estendere questa strategia di esportazione a tutte le tabelle di registri personalizzate. [Ulteriori informazioni](../../configuration/using/target-mapping.md).
 
 ##### Principio
 
-Per impostazione predefinita, il `nms:Recipient` Lo schema è collegato a tre schemi che è necessario esportare:
+Per impostazione predefinita, lo schema `nms:Recipient` è collegato a tre schemi da esportare:
 
 | Schema | Contenuto |
 | --- | --- |
@@ -382,11 +382,11 @@ Questo esempio mostra come esportare i dati di tracciamento da Adobe Campaign.
    La query iniziale viene utilizzata per recuperare i registri di tracciamento degli ultimi tre mesi.
 È possibile utilizzare una query incrementale per estrarre solo i record non ancora esportati.
 
-   Aggiungi tutte le informazioni richieste da **[!UICONTROL Additional data]** nodo.
+   Aggiungi tutte le informazioni richieste dal nodo **[!UICONTROL Additional data]**.
 
    ![](assets/export-tracking-data-2.png)
 
-1. Aggiungi un **[!UICONTROL Data extraction (file)]** attività. Mappa tutti i dati della query in un formato di file di estrazione.
+1. Aggiungi un&#39;attività **[!UICONTROL Data extraction (file)]**. Mappa tutti i dati della query in un formato di file di estrazione.
 
    ![](assets/export-tracking-data-3.png)
 
@@ -425,14 +425,14 @@ Questi esempi mostrano come utilizzare i flussi di lavoro per suddividere i reco
 
 * Il primo esempio di flusso di lavoro include le seguenti attività:
 
-   1. La **[!UICONTROL Query]** l’attività viene utilizzata per selezionare tutte le aperture delle e-mail degli ultimi tre mesi.
-   1. A **[!UICONTROL Split]** L’attività viene utilizzata per suddividere la selezione per applicazione e-mail, browser, sistema operativo e dispositivo.
+   1. L&#39;attività **[!UICONTROL Query]** iniziale viene utilizzata per selezionare tutte le aperture dei messaggi e-mail negli ultimi tre mesi.
+   1. Un&#39;attività **[!UICONTROL Split]** viene utilizzata per suddividere la selezione per applicazione di posta elettronica, browser, sistema operativo e dispositivo.
 
-   1. A **[!UICONTROL Deduplication]** l&#39;attività segue ogni **[!UICONTROL Split]** attività. Il **[!UICONTROL Deduplication]** L’attività viene utilizzata per rimuovere gli indirizzi e-mail duplicati.
+   1. Un&#39;attività **[!UICONTROL Deduplication]** segue ogni attività **[!UICONTROL Split]**. L&#39;attività **[!UICONTROL Deduplication]** viene utilizzata per rimuovere gli indirizzi e-mail duplicati.
 
-      Il **[!UICONTROL Deduplication]** l&#39;attività è posizionata dopo il **[!UICONTROL Split]** per evitare la perdita di informazioni sui destinatari che utilizzano vari dispositivi.
+      L&#39;attività **[!UICONTROL Deduplication]** è posizionata dopo l&#39;attività **[!UICONTROL Split]** per evitare di perdere informazioni sui destinatari che utilizzano vari dispositivi.
 
-   1. Un **[!UICONTROL End]** l&#39;attività segue ogni **[!UICONTROL Deduplication]** attività.
+   1. Un&#39;attività **[!UICONTROL End]** segue ogni attività **[!UICONTROL Deduplication]**.
 
   Questo tipo di flusso di lavoro è utile se memorizzi i destinatari solo nella tabella dei destinatari predefinita per il targeting.
 
@@ -440,14 +440,14 @@ Questi esempi mostrano come utilizzare i flussi di lavoro per suddividere i reco
 
 * Il secondo esempio di flusso di lavoro comprende le seguenti attività:
 
-   1. La **[!UICONTROL Query]** l’attività viene utilizzata per selezionare tutte le aperture delle e-mail degli ultimi tre mesi.
-   1. A **[!UICONTROL Deduplication]** L’attività viene utilizzata per rimuovere gli indirizzi e-mail duplicati.
-   1. A **[!UICONTROL Fork]** l’attività viene utilizzata:
+   1. L&#39;attività **[!UICONTROL Query]** iniziale viene utilizzata per selezionare tutte le aperture dei messaggi e-mail negli ultimi tre mesi.
+   1. Un&#39;attività **[!UICONTROL Deduplication]** viene utilizzata per rimuovere gli indirizzi e-mail duplicati.
+   1. Viene utilizzata un&#39;attività **[!UICONTROL Fork]**:
 
-      * In una transizione, il **[!UICONTROL Change dimension]** L’attività viene utilizzata per trovare i destinatari a cui si riferisce il registro di tracciamento.
-      * Nell&#39;altra transizione, il **[!UICONTROL Split]** L’attività viene utilizzata per suddividere la selezione per applicazione e-mail, browser, sistema operativo e dispositivo.
+      * In una transizione, l&#39;attività **[!UICONTROL Change dimension]** viene utilizzata per trovare i destinatari a cui si riferisce il registro di tracciamento.
+      * Nell&#39;altra transizione, l&#39;attività **[!UICONTROL Split]** viene utilizzata per suddividere la selezione per applicazione e-mail, browser, sistema operativo e dispositivo.
 
-   1. Un **[!UICONTROL End]** l&#39;attività segue ogni transizione dopo il **[!UICONTROL Split]** attività.
+   1. Un&#39;attività **[!UICONTROL End]** segue ogni transizione dopo l&#39;attività **[!UICONTROL Split]**.
 
   Questo tipo di flusso di lavoro è utile se i destinatari vengono memorizzati in una tabella diversa da quella predefinita.
 

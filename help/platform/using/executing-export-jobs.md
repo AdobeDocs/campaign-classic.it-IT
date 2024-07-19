@@ -25,33 +25,33 @@ Ad esempio, può essere utile utilizzare i dati di tracciamento delle campagne (
 
 L’esportazione guidata consente di configurare un’esportazione, definirne le opzioni e avviarne l’esecuzione. Si tratta di una serie di schermate il cui contenuto dipende dal tipo di esportazione (semplice o multipla) e dai diritti dell’operatore.
 
-L’esportazione guidata viene visualizzata dopo la creazione di un nuovo processo di esportazione (vedi [Creare processi di importazione ed esportazione](../../platform/using/creating-import-export-jobs.md).
+L&#39;esportazione guidata viene visualizzata dopo la creazione di un nuovo processo di esportazione (vedere [Creare processi di importazione ed esportazione](../../platform/using/creating-import-export-jobs.md).
 
 ## Passaggio 1: scegliere il modello di esportazione {#step-1---choosing-the-export-template}
 
 Quando si avvia l&#39;esportazione guidata, è necessario selezionare un modello. Ad esempio, per configurare l’esportazione dei destinatari che si sono registrati di recente, effettua le seguenti operazioni:
 
-1. Seleziona la **[!UICONTROL Profiles and Targets > Job > Generic imports and exports]** cartella.
-1. Clic **Nuovo** e quindi fare clic su **Esporta** per creare il modello di esportazione.
+1. Selezionare la cartella **[!UICONTROL Profiles and Targets > Job > Generic imports and exports]**.
+1. Fai clic su **Nuovo**, quindi su **Esporta** per creare il modello di esportazione.
 
    ![](assets/s_ncs_user_export_wizard01.png)
 
-1. Fare clic sulla freccia a destra della **[!UICONTROL Export template]** per selezionare il modello, oppure fare clic su **[!UICONTROL Select link]** per sfogliare l&#39;albero.
+1. Fare clic sulla freccia a destra del campo **[!UICONTROL Export template]** per selezionare il modello oppure fare clic su **[!UICONTROL Select link]** per sfogliare la struttura.
 
-   Il modello nativo è **[!UICONTROL New text export]**. Questo modello non deve essere modificato, ma puoi duplicarlo per configurarne uno nuovo. Per impostazione predefinita, i modelli di esportazione vengono salvati in **[!UICONTROL Resources > Templates > Job templates]** nodo.
+   Il modello nativo è **[!UICONTROL New text export]**. Questo modello non deve essere modificato, ma puoi duplicarlo per configurarne uno nuovo. Per impostazione predefinita, i modelli di esportazione vengono salvati nel nodo **[!UICONTROL Resources > Templates > Job templates]**.
 
-1. Immetti un nome per l&#39;esportazione nel **[!UICONTROL Label]** campo. Puoi aggiungere una descrizione.
-1. Seleziona il tipo di esportazione. Esistono due possibili tipi di esportazione: **[!UICONTROL Simple export]** per esportare un solo file, e **[!UICONTROL Multiple export]** per esportare più file in una singola esecuzione da uno o più tipi di documenti di origine.
+1. Immettere un nome da esportare nel campo **[!UICONTROL Label]**. Puoi aggiungere una descrizione.
+1. Seleziona il tipo di esportazione. Esistono due possibili tipi di esportazione: **[!UICONTROL Simple export]** per esportare un solo file e **[!UICONTROL Multiple export]** per esportare più file in una singola esecuzione da uno o più tipi di documenti di origine.
 
 ## Passaggio 2: tipo di file da esportare {#step-2---type-of-file-to-export}
 
 Selezionare il tipo di documento da esportare, ovvero lo schema dei dati da esportare.
 
-Per impostazione predefinita, quando l’esportazione viene avviata da **[!UICONTROL Jobs]** nodo i dati provengono dalla tabella dei destinatari. Quando l’esportazione viene avviata da un elenco di dati (dal **[!UICONTROL right click > Export]** ), la tabella a cui appartengono i dati viene automaticamente compilata nel **[!UICONTROL Document type]** campo.
+Per impostazione predefinita, quando l&#39;esportazione viene avviata dal nodo **[!UICONTROL Jobs]** i dati provengono dalla tabella dei destinatari. Quando l&#39;esportazione viene avviata da un elenco di dati (dal menu **[!UICONTROL right click > Export]**), la tabella a cui appartengono i dati viene automaticamente compilata nel campo **[!UICONTROL Document type]**.
 
 ![](assets/s_ncs_user_export_wizard02.png)
 
-* Per impostazione predefinita, il **[!UICONTROL Download the file generated on the server after the export]** è selezionata. In **[!UICONTROL Local file]** inserire il nome e il percorso del file da creare oppure sfogliare il disco locale facendo clic sulla cartella a destra del campo. È possibile deselezionare questa opzione per immettere il percorso di accesso e il nome del file di output del server.
+* Per impostazione predefinita, l&#39;opzione **[!UICONTROL Download the file generated on the server after the export]** è selezionata. Nel campo **[!UICONTROL Local file]**, inserire il nome e il percorso del file da creare oppure sfogliare il disco locale facendo clic sulla cartella a destra del campo. È possibile deselezionare questa opzione per immettere il percorso di accesso e il nome del file di output del server.
 
   >[!NOTE]
   >
@@ -59,7 +59,7 @@ Per impostazione predefinita, quando l’esportazione viene avviata da **[!UICON
   >
   >Per esportare solo alcuni dati, fare clic su **[!UICONTROL Advanced parameters]** e immettere il numero di righe da esportare nel campo appropriato.
 
-* È possibile creare un&#39;esportazione differenziale per esportare solo i record modificati dopo l&#39;ultima esecuzione. A questo scopo, fai clic su **[!UICONTROL Advanced parameters]** , quindi fare clic sul pulsante **[!UICONTROL Differential export]** , quindi seleziona **[!UICONTROL Activate differential export]**.
+* È possibile creare un&#39;esportazione differenziale per esportare solo i record modificati dopo l&#39;ultima esecuzione. A tale scopo, fare clic sul collegamento **[!UICONTROL Advanced parameters]**, quindi sulla scheda **[!UICONTROL Differential export]** e selezionare **[!UICONTROL Activate differential export]**.
 
   ![](assets/s_ncs_user_export_wizard02_b.png)
 
@@ -71,21 +71,21 @@ Selezionate un formato di output per il file di esportazione. È possibile utili
 
 ![](assets/s_ncs_user_export_wizard03.png)
 
-* Per **[!UICONTROL Text]** , selezionare i delimitatori per separare le colonne (tabulazioni, virgole, punti e virgola o personalizzate) e le stringhe (virgolette singole o doppie o nessuna).
-* Per **[!UICONTROL text]** e **[!UICONTROL CSV]**, è possibile selezionare l’opzione **[!UICONTROL Use first lines as column titles]**.
-* Indicare il formato della data e del numero. A questo scopo, fai clic su **[!UICONTROL Edit]** per il campo interessato e utilizza l’editor.
-* Per i campi contenenti valori enumerati, puoi selezionare **[!UICONTROL Export labels instead of internal values of enumerations]**. Ad esempio, il titolo può essere memorizzato nel modulo **1=Sig.**, **2=Non risposta**, **3=Sig.ra**. Se questa opzione è selezionata, **Sig.**, **Signorina** e **Sig.ra** verrà esportato.
+* Per il formato **[!UICONTROL Text]**, selezionare i delimitatori per separare le colonne (tabulazioni, virgole, punti e virgola o personalizzati) e le stringhe (virgolette singole o doppie o nessuna).
+* Per **[!UICONTROL text]** e **[!UICONTROL CSV]**, è possibile selezionare l&#39;opzione **[!UICONTROL Use first lines as column titles]**.
+* Indicare il formato della data e del numero. A tale scopo, fare clic sul pulsante **[!UICONTROL Edit]** per il campo interessato e utilizzare l&#39;editor.
+* Per i campi contenenti valori enumerati, è possibile selezionare **[!UICONTROL Export labels instead of internal values of enumerations]**. Ad esempio, il titolo può essere memorizzato nel formato **1=Sig.**, **2=Miss**, **3=Signora**. Se questa opzione è selezionata, verranno esportati **Mr**, **Miss** e **Mrs**.
 
 ## Passaggio 4: selezione dei dati {#step-4---data-selection}
 
 Selezionare i campi da esportare. Per eseguire questa operazione:
 
-1. Fare doppio clic sui campi desiderati nella **[!UICONTROL Available fields]** per aggiungerli al **[!UICONTROL Output columns]** sezione.
+1. Fare doppio clic sui campi desiderati nell&#39;elenco **[!UICONTROL Available fields]** per aggiungerli alla sezione **[!UICONTROL Output columns]**.
 1. Utilizzare le frecce a destra dell&#39;elenco per definire l&#39;ordine dei campi nel file di output.
 
    ![](assets/s_ncs_user_export_wizard04.png)
 
-1. Fai clic su **[!UICONTROL Add]** per attivare le funzioni. Per ulteriori informazioni, consulta [Elenco delle funzioni](../../platform/using/defining-filter-conditions.md#list-of-functions).
+1. Fare clic sul pulsante **[!UICONTROL Add]** per richiamare le funzioni. Per ulteriori informazioni, consulta [Elenco delle funzioni](../../platform/using/defining-filter-conditions.md#list-of-functions).
 
 ## Passaggio 5: ordinare le colonne {#step-5---sorting-columns}
 
@@ -104,16 +104,16 @@ Puoi aggiungere condizioni di filtro per evitare di esportare tutti i dati. La c
 È possibile modificare l&#39;ordine e l&#39;etichetta dei campi per il file di output e applicare le trasformazioni ai dati di origine.
 
 * Per modificare l’ordine delle colonne da esportare, seleziona la colonna interessata e utilizza le frecce blu a destra della tabella.
-* Per modificare l’etichetta di un campo, fai clic su nella cella del **[!UICONTROL Label]** che corrisponde al campo da modificare e immettere la nuova etichetta. Premere Invio sulla tastiera per confermare.
-* Per applicare una trasformazione del caso al contenuto di un campo, selezionarlo dal **[!UICONTROL Transformation]** colonna. Puoi selezionare:
+* Per modificare l&#39;etichetta di un campo, fare clic nella cella della colonna **[!UICONTROL Label]** che corrisponde al campo da modificare e immettere la nuova etichetta. Premere Invio sulla tastiera per confermare.
+* Per applicare una trasformazione di maiuscole e minuscole al contenuto di un campo, selezionarlo dalla colonna **[!UICONTROL Transformation]**. Puoi selezionare:
 
-   * Passa al carattere minuscolo
-   * Passa al carattere maiuscolo
-   * Prima lettera in carattere maiuscolo
+   * Cambia in minuscolo
+   * Cambia in maiuscolo
+   * Prma lettera in maiuscolo
 
   ![](assets/s_ncs_user_export_wizard06.png)
 
-* Clic **[!UICONTROL Add a calculated field]** se si desidera creare un nuovo campo calcolato, ad esempio una colonna contenente cognome + nome. Per ulteriori informazioni, consulta [Campi calcolati](../../platform/using/executing-import-jobs.md#calculated-fields).
+* Fare clic su **[!UICONTROL Add a calculated field]** per creare un nuovo campo calcolato, ad esempio una colonna contenente cognome + nome. Per ulteriori informazioni, consulta [Campi calcolati](../../platform/using/executing-import-jobs.md#calculated-fields).
 
 Se esporti una raccolta di elementi (ad esempio le sottoscrizioni dei destinatari, gli elenchi a cui appartengono e così via), devi specificare il numero di elementi della raccolta da esportare.
 
@@ -121,7 +121,7 @@ Se esporti una raccolta di elementi (ad esempio le sottoscrizioni dei destinatar
 
 ## Passaggio 8: anteprima dei dati {#step-8---data-preview}
 
-Clic **[!UICONTROL Start the preview of the data]** per un&#39;anteprima del risultato dell&#39;esportazione. Per impostazione predefinita, vengono visualizzate le prime 200 righe. Per modificare questo valore, fare clic sulle frecce a destra del **[!UICONTROL Lines to display]** campo.
+Fare clic su **[!UICONTROL Start the preview of the data]** per visualizzare un&#39;anteprima del risultato dell&#39;esportazione. Per impostazione predefinita, vengono visualizzate le prime 200 righe. Per modificare questo valore, fare clic sulle frecce a destra del campo **[!UICONTROL Lines to display]**.
 
 ![](assets/s_ncs_user_export_wizard07.png)
 
@@ -129,8 +129,8 @@ Fare clic sulle schede nella parte inferiore della procedura guidata per passare
 
 ## Passaggio 9: avviare l’esportazione {#step-9---launching-the-export}
 
-Clic **[!UICONTROL Start]** per avviare l&#39;esportazione dei dati.
+Fare clic su **[!UICONTROL Start]** per avviare l&#39;esportazione dei dati.
 
 ![](assets/s_ncs_user_export_wizard08.png)
 
-Puoi quindi monitorare l’esecuzione del processo di importazione (consulta [Monitorare l’esecuzione dei processi](../../platform/using/monitoring-jobs-execution.md).
+È quindi possibile monitorare l&#39;esecuzione del processo di importazione (vedere [Monitorare l&#39;esecuzione dei processi](../../platform/using/monitoring-jobs-execution.md).

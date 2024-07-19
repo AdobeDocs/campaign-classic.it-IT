@@ -23,27 +23,27 @@ Tutti i dati raccolti possono essere utilizzati per aggiornare il database o nel
 
 I dati del database di Adobe Campaign e gli elenchi esistenti possono essere aggiornati utilizzando due attività dedicate:
 
-* Il **[!UICONTROL List update]** attività consente di memorizzare le tabelle di lavoro in un datalist.
+* L&#39;attività **[!UICONTROL List update]** consente di archiviare le tabelle di lavoro in un datalist.
 
   È possibile selezionare un elenco esistente o crearlo. In questo caso, vengono calcolati il nome e, se possibile, la cartella dei record.
 
   ![](assets/s_user_create_list.png)
 
-  Fai riferimento a [Aggiornamento elenco](list-update.md).
+  Consulta [Aggiornamento elenco](list-update.md).
 
-* Il **[!UICONTROL Update data]** l’attività esegue un aggiornamento di massa dei campi nel database.
+* L&#39;attività **[!UICONTROL Update data]** esegue un aggiornamento di massa dei campi nel database.
 
   Per ulteriori informazioni, consulta [Aggiorna dati](update-data.md).
 
 ### Gestione abbonamento/annullamento abbonamento {#subscription-unsubscription-management}
 
-Per informazioni sull’abbonamento e sull’annullamento dell’abbonamento dei destinatari a un servizio di informazioni tramite un flusso di lavoro, consulta [Subscription Services](subscription-services.md).
+Per informazioni sull&#39;abbonamento e l&#39;annullamento dell&#39;abbonamento dei destinatari a un servizio di informazioni tramite un flusso di lavoro, fare riferimento a [Servizi di abbonamento](subscription-services.md).
 
 ## Invio tramite un flusso di lavoro {#sending-via-a-workflow}
 
 ### Attività di consegna {#delivery-activity}
 
-L’attività di consegna è descritta in [Consegna](delivery.md).
+L&#39;attività di consegna è descritta in [Consegna](delivery.md).
 
 ### Arricchimento e targeting delle consegne {#enriching-and-targeting-deliveries}
 
@@ -57,12 +57,12 @@ Oltre ai consueti campi di personalizzazione, puoi aggiungere campi di personali
 
 ![](assets/s_advuser_using_additional_data.png)
 
-I dati contenuti nella tabella del flusso di lavoro sono identificati dal nome: sono sempre costituiti dai **targetData** collegamento. Per ulteriori informazioni, consulta [Dati di destinazione](data-life-cycle.md#target-data).
+I dati contenuti nella tabella del flusso di lavoro sono identificati dal nome: sono sempre costituiti dal collegamento **targetData**. Per ulteriori informazioni, consulta [Dati di destinazione](data-life-cycle.md#target-data).
 
 Nel framework della consegna e-mail, i campi di personalizzazione possono anche utilizzare dati dell’estensione target eseguita nelle fasi del flusso di lavoro di targeting, come mostrato nell’esempio di seguito:
 
 ![](assets/s_advuser_add_data_email.png)
 
-Se un codice di segmento è specificato in un’attività di targeting, viene aggiunto a una colonna specifica della tabella del flusso di lavoro e viene offerto insieme ai campi di personalizzazione. Per visualizzare tutti i campi di personalizzazione, fai clic su **[!UICONTROL Target extension > Other...]** accessibile tramite il pulsante di personalizzazione.
+Se un codice di segmento è specificato in un’attività di targeting, viene aggiunto a una colonna specifica della tabella del flusso di lavoro e viene offerto insieme ai campi di personalizzazione. Per visualizzare tutti i campi di personalizzazione, fare clic sul collegamento **[!UICONTROL Target extension > Other...]** accessibile tramite il pulsante di personalizzazione.
 
 ![](assets/s_advuser_segment_code_select.png)

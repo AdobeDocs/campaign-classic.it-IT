@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Google e Mozilla stanno avvertendo che Chrome e Firefox potrebbero interrompere alcuni siti web a causa delle loro versioni a 3 cifre imminenti.
 
-Chrome v100 è impostato per il rilascio il **29 marzo 2022**, e Firefox v100 su **3 maggio 2022**.
+Chrome v100 è impostato per il rilascio il **29 marzo 2022** e Firefox v100 il **3 maggio 2022**.
 
 Microsoft ha rilasciato Edge v100 in precedenza a marzo 2022.
 
@@ -43,7 +43,7 @@ Con queste impostazioni, il browser invia la nuova stringa dell’agente utente 
 
 Per testare le pagine web con Mozilla Firefox 100, puoi simulare la prossima modifica dell’agente utente nelle app web modificando manualmente la stringa dell’agente utente.
 
-1. Apri Firefox, immetti `about:config` nella barra degli indirizzi e premere invio.
+1. Apri Firefox, immetti `about:config` nella barra degli indirizzi e premi Invio.
 1. Cerca `general.useragent.override`.
 1. Selezionare Stringa e fare clic sul segno più (+).
 
@@ -58,33 +58,33 @@ Per testare le pagine web con Mozilla Firefox 100, puoi simulare la prossima mod
 1. Fai clic sul pulsante con il segno di spunta blu per salvare l’impostazione.
 1. Chiudi e riavvia il browser.
 
-Per ripristinare l’impostazione predefinita dell’agente utente, è sufficiente tornare a `about:config` e cerca `general.useragent.override` di nuovo.  Quando viene visualizzato, fai clic sull’icona del cestino per eliminare l’impostazione e riavvia il browser.
+Per ripristinare l&#39;impostazione predefinita dell&#39;agente utente, tornare a `about:config` e cercare di nuovo l&#39;impostazione `general.useragent.override`.  Quando viene visualizzato, fai clic sull’icona del cestino per eliminare l’impostazione e riavvia il browser.
 
 ### Test con Chrome 100{#test-chrome-100}
 
-Per testare l’agente utente di Google Chrome 100 sulle tue app web, puoi abilitare questo test come segue:
+Per testare l’agente utente di Google Chrome 100 sulle tue app web, puoi abilitare questo test seguendo la procedura seguente:
 
-1. Apri Chrome, immetti `chrome://flags` nella barra degli indirizzi e premere invio.
-1. Ricerca `Force major version to 100 in User-Agent` nel campo di ricerca e abilitalo come mostrato di seguito.
+1. Aprire Chrome, immettere `chrome://flags` nella barra degli indirizzi e premere Invio.
+1. Cerca `Force major version to 100 in User-Agent` nel campo di ricerca e attivalo come mostrato di seguito.
 
    ![](assets/force-user-agent-chrome.png)
 
 1. Riavvia il browser.
-1. Chiudi `chrome://flags` scheda.
+1. Chiudere la scheda `chrome://flags`.
 
-Per ripristinare l’agente utente predefinito, segui questa procedura e modifica l’impostazione del flag su `Default` e riavvia il browser.
+Per ripristinare l&#39;agente utente predefinito, è sufficiente seguire questa procedura e modificare l&#39;impostazione del flag su `Default` e riavviare il browser.
 
 
 ### Test con Microsoft Edge 100{#test-ms-edge-100}
 
-A partire da v97, i proprietari del sito possono emulare questa versione abilitando il flag di esperimento  `#force-major-version-to-100` in `edge://flags`.
+A partire da v97, i proprietari del sito possono emulare questa versione abilitando il flag di esperimento `#force-major-version-to-100` in `edge://flags`.
 
-1. Apri Microsoft Edge, immetti `edge://flags` nella barra degli indirizzi e premere invio.
-1. Cerca `force-major-version-to-100` e abilitarlo come illustrato di seguito.
+1. Aprire Microsoft Edge, immettere `edge://flags` nella barra degli indirizzi e premere Invio.
+1. Cercare il campo `force-major-version-to-100` e abilitarlo come illustrato di seguito.
 
    ![](assets/force-user-agent-edge.png)
 
 1. Riavvia il browser.
-1. Chiudi `edge://flags` scheda.
+1. Chiudere la scheda `edge://flags`.
 
-Per ripristinare l’agente utente predefinito, segui questa procedura e modifica l’impostazione del flag su `Default` e riavvia il browser.
+Per ripristinare l&#39;agente utente predefinito, è sufficiente seguire questa procedura e modificare l&#39;impostazione del flag su `Default` e riavviare il browser.

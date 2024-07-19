@@ -35,8 +35,8 @@ In questo esempio, vogliamo recuperare i nomi e le e-mail dei destinatari il cui
 
 Per creare questo esempio, attieniti alla seguente procedura:
 
-1. Clic **[!UICONTROL Tools > Generic query editor...]** e scegli la **Destinatari** (**nms:destinatario**). Quindi fai clic su **[!UICONTROL Next]**.
-1. Scegli: **[!UICONTROL Last name]**, **[!UICONTROL First name]**, **[!UICONTROL Email]**, **[!UICONTROL City]** e **[!UICONTROL Account number]**. Questi campi vengono aggiunti a **[!UICONTROL Output columns]**. Quindi fai clic su **[!UICONTROL Next]**.
+1. Fare clic su **[!UICONTROL Tools > Generic query editor...]** e scegliere la tabella **Destinatari** (**nms:recipient**). Quindi fai clic su **[!UICONTROL Next]**.
+1. Scegliere: **[!UICONTROL Last name]**, **[!UICONTROL First name]**, **[!UICONTROL Email]**, **[!UICONTROL City]** e **[!UICONTROL Account number]**. Questi campi vengono aggiunti a **[!UICONTROL Output columns]**. Quindi fai clic su **[!UICONTROL Next]**.
 
    ![](assets/query_editor_03.png)
 
@@ -44,45 +44,45 @@ Per creare questo esempio, attieniti alla seguente procedura:
 
    ![](assets/query_editor_04.png)
 
-1. In **[!UICONTROL Data filtering]** finestra, perfeziona la ricerca: scegli **[!UICONTROL Filtering conditions]** e fai clic su **[!UICONTROL Next]**.
-1. Il **[!UICONTROL Target element]** consente di immettere le impostazioni del filtro.
+1. Nella finestra **[!UICONTROL Data filtering]**, perfeziona la ricerca: scegli **[!UICONTROL Filtering conditions]** e fai clic su **[!UICONTROL Next]**.
+1. La finestra **[!UICONTROL Target element]** consente di immettere le impostazioni del filtro.
 
-   Definisci la seguente condizione di filtro: destinatari con un dominio e-mail uguale a &quot;orange.co.uk&quot;. A questo scopo, scegli **Dominio e-mail (@email)** nel **[!UICONTROL Expression]** , scegli **uguale a** nel **[!UICONTROL Operator]** e immetti &quot;orange.co.uk&quot; nella **[!UICONTROL Value]** colonna.
+   Definisci la seguente condizione di filtro: destinatari con un dominio e-mail uguale a &quot;orange.co.uk&quot;. A tale scopo, scegliere **Dominio e-mail (@email)** nella colonna **[!UICONTROL Expression]**, scegliere **uguale a** nella colonna **[!UICONTROL Operator]** e immettere &quot;orange.co.uk&quot; nella colonna **[!UICONTROL Value]**.
 
    ![](assets/query_editor_05.png)
 
-1. Se necessario, fai clic su **[!UICONTROL Distribution of values]** per visualizzare una distribuzione basata sul dominio e-mail dei potenziali clienti. È disponibile una percentuale per ogni dominio e-mail nel database. I domini diversi da &quot;orange.co.uk&quot; vengono visualizzati finché non viene applicato il filtro.
+1. Se necessario, fare clic sul pulsante **[!UICONTROL Distribution of values]** per visualizzare una distribuzione basata sul dominio e-mail dei potenziali clienti. È disponibile una percentuale per ogni dominio e-mail nel database. I domini diversi da &quot;orange.co.uk&quot; vengono visualizzati finché non viene applicato il filtro.
 
-   Nella parte inferiore della finestra viene visualizzato un riepilogo della query: **Dominio e-mail uguale a &quot;orange.co.uk&quot;**.
+   Nella parte inferiore della finestra viene visualizzato un riepilogo della query: **Dominio e-mail uguale a &#39;orange.co.uk&#39;**.
 
-1. Fai clic su **[!UICONTROL Preview]** per avere un’idea del risultato della query: vengono visualizzati solo i domini e-mail orange.co.uk.
+1. Fare clic su **[!UICONTROL Preview]** per avere un&#39;idea del risultato della query: vengono visualizzati solo i domini e-mail &quot;orange.co.uk&quot;.
 
    ![](assets/query_editor_nveau_17.png)
 
 1. Ora modificheremo la query per trovare i contatti che non vivono a Londra.
 
-   Seleziona **[!UICONTROL City (location/@city)]** nel **[!UICONTROL Expression]** colonna, **[!UICONTROL different from]** come operatore e immetti **[!UICONTROL London]** nel **[!UICONTROL Value]** colonna.
+   Selezionare **[!UICONTROL City (location/@city)]** nella colonna **[!UICONTROL Expression]**, **[!UICONTROL different from]** come operatore e immettere **[!UICONTROL London]** nella colonna **[!UICONTROL Value]**.
 
    ![](assets/query_editor_08.png)
 
-1. Verrà visualizzato il **[!UICONTROL Data formatting]** finestra. Controlla l’ordine delle colonne. Sposta la colonna &quot;Città&quot; verso l’alto sotto la colonna &quot;Numero account&quot;.
+1. Verrà visualizzata la finestra **[!UICONTROL Data formatting]**. Controlla l’ordine delle colonne. Sposta la colonna &quot;Città&quot; verso l’alto sotto la colonna &quot;Numero account&quot;.
 
    Deselezionare la colonna &quot;Nome&quot; per rimuoverla dall&#39;elenco.
 
    ![](assets/query_editor_nveau_15.png)
 
-1. In **[!UICONTROL Data preview]** finestra, fai clic su **[!UICONTROL Start the preview of the data]**. Questa funzione calcola il risultato della query.
+1. Nella finestra **[!UICONTROL Data preview]**, fare clic su **[!UICONTROL Start the preview of the data]**. Questa funzione calcola il risultato della query.
 
-   Il **[!UICONTROL Column results]** mostra il risultato della query in colonne.
+   La scheda **[!UICONTROL Column results]** mostra il risultato della query in colonne.
 
    Il risultato mostra tutti i destinatari con un dominio e-mail &quot;orange.co.uk&quot; che non vivono a Londra. La colonna &quot;Nome&quot; non viene visualizzata perché è stata deselezionata durante la fase precedente. I numeri di conto sono ordinati in ordine decrescente.
 
    ![](assets/query_editor_nveau_12.png)
 
-   Il **[!UICONTROL XML result]** mostra il risultato in formato XML.
+   La scheda **[!UICONTROL XML result]** mostra il risultato in formato XML.
 
    ![](assets/query_editor_nveau_13.png)
 
-   Il **[!UICONTROL Generated QSL queries]** La scheda mostra il risultato della query in formato SQL.
+   La scheda **[!UICONTROL Generated QSL queries]** mostra il risultato della query in formato SQL.
 
    ![](assets/query_editor_nveau_14.png)

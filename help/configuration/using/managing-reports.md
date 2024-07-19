@@ -17,18 +17,18 @@ ht-degree: 3%
 
 
 
-I rapporti basati su uno schema specifico per i destinatari predefiniti di Adobe Campaign (nm:recipient o schema linked) devono essere risviluppati per tenere conto dei dati della tabella personalizzata e delle sue tabelle collegate tramite la mappatura di destinazione (vedi [Mappatura target](../../configuration/using/target-mapping.md) sezione ).
+I rapporti basati su uno schema specifico per i destinatari predefiniti di Adobe Campaign (nm:recipient o schema linked) devono essere risviluppati per tenere conto dei dati della tabella personalizzata e delle relative tabelle collegate tramite la mappatura di destinazione (vedi la sezione [Mappatura di destinazione](../../configuration/using/target-mapping.md)).
 
-Per creare nuovi rapporti, consulta [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md).
+Per creare nuovi report, consultare [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md).
 
 In alcuni casi, è inoltre necessario inserire nuovi cubi specifici per queste tabelle. I cubi sono descritti in [questa sezione](../../reporting/using/ac-cubes.md).
 
 Sono interessate le seguenti relazioni:
 
 * **[!UICONTROL Recent proposition tracking]** (recentiPropositions): tracciamento delle proposte in tempo reale.
-* **[!UICONTROL Breakdown of opens]** (opensByUserAgent): apre suddivisi in base al software dell’utente.
+* **[!UICONTROL Breakdown of opens]** (opensByUserAgent): viene aperto suddiviso in base al software utente.
 * **[!UICONTROL Statistics of the sharing activities]** (forwardActivities): analisi delle attività di condivisione, aperture e abbonamenti per periodo di tempo.
-* **[!UICONTROL Tracking indicators]** (mobileAppDeliveryFeedback): indicatori di tracciamento per una consegna su un’app mobile.
+* **[!UICONTROL Tracking indicators]** (mobileAppDeliveryFeedback): indicatori di tracciamento per una consegna su un&#39;app mobile.
 * **[!UICONTROL Offer analysis]** (offerAnalysis): analisi delle offerte per data e canale.
 * **[!UICONTROL Reactivity rate]** (mobileAppDistribution): tasso di reattività per le consegne più recenti.
 * **[!UICONTROL Breakdown of subscriptions]** (mobileAppDistribution): suddivisione degli abbonamenti attivi per app mobile.

@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Una configurazione di consegna può essere salvata in un modello di consegna per essere riutilizzata. Il modello può contenere una configurazione completa o parziale della consegna.
 
-Il modello di consegna può essere eseguito manualmente, come descritto in questo capitolo, o in base a un evento (avviato a un orario impostato, all’arrivo di un file su un server, ecc.). I modelli di consegna possono essere configurati tramite **[!UICONTROL Resources > Templates > Delivery templates]** nella struttura.
+Il modello di consegna può essere eseguito manualmente, come descritto in questo capitolo, o in base a un evento (avviato a un orario impostato, all’arrivo di un file su un server, ecc.). I modelli di consegna possono essere configurati tramite il nodo **[!UICONTROL Resources > Templates > Delivery templates]** nella struttura.
 
 ![](assets/s_user_template_list.png)
 
@@ -33,4 +33,4 @@ Esistono due tipi di modello:
 
 >[!NOTE]
 >
->I modelli disponibili dipendono dai diritti di accesso, dalla configurazione dell’istanza e dal contesto. Ad esempio, quando crei un servizio di informazioni, puoi collegare un modello di consegna per i messaggi di conferma: puoi quindi accedere solo ai modelli il cui mapping di destinazione è il mapping di abbonamento. Per ulteriori informazioni, consulta [Seleziona una mappatura di destinazione](selecting-a-target-mapping.md) e [Servizi e abbonamenti](about-services-and-subscriptions.md).
+>I modelli disponibili dipendono dai diritti di accesso, dalla configurazione dell’istanza e dal contesto. Ad esempio, quando crei un servizio di informazioni, puoi collegare un modello di consegna per i messaggi di conferma: puoi quindi accedere solo ai modelli il cui mapping di destinazione è il mapping di abbonamento. Per ulteriori informazioni, consulta [Selezionare un mapping di destinazione](selecting-a-target-mapping.md) e [Servizi e sottoscrizioni](about-services-and-subscriptions.md).

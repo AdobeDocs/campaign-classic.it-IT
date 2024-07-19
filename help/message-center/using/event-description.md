@@ -20,25 +20,25 @@ ht-degree: 0%
 
 ## Modello dati di messaggistica transazionale {#about-transactional-messaging-datamodel}
 
-La messaggistica transazionale si basa sul modello dati di Adobe Campaign e utilizza due tabelle separate aggiuntive. Questi [tabelle](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** e **NmsBatchEvent**, contengono gli stessi campi e consentono di gestire gli eventi in tempo reale da un lato e gli eventi batch dall’altro.
+La messaggistica transazionale si basa sul modello dati di Adobe Campaign e utilizza due tabelle separate aggiuntive. Queste [tabelle](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** e **NmsBatchEvent** contengono gli stessi campi e consentono di gestire eventi in tempo reale da un lato e eventi batch dall&#39;altro.
 
 ## Metodi SOAP {#soap-methods}
 
 Questa sezione descrive i metodi SOAP associati agli schemi del modulo dei messaggi transazionali.
 
-Due **PushEvent** o **PushEvents** I metodi SOAP sono collegati ai due **nms:rtEvent** e **nms:BatchEvent** dataschemi. È il sistema informativo che determina se un evento è di tipo &quot;batch&quot; o &quot;tempo reale&quot;.
+Due metodi SOAP **PushEvent** o **PushEvents** sono collegati ai due dataschemi **nms:rtEvent** e **nms:BatchEvent**. È il sistema informativo che determina se un evento è di tipo &quot;batch&quot; o &quot;tempo reale&quot;.
 
 * **PushEvent** consente di inserire un singolo evento nel messaggio,
 * **PushEvents** consente di inserire una serie di eventi nel messaggio.
 
 Il percorso WSDL per l&#39;accesso a entrambi i metodi è:
 
-* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent** per accedere allo schema del tipo in tempo reale.
+* **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent** per accedere allo schema dei tipi in tempo reale.
 * **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent** per accedere allo schema del tipo di batch.
 
 Per ulteriori informazioni sulla generazione di un file WSDL, vedere [questa sezione](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
 
-Entrambi i metodi contengono un **`<urn:sessiontoken>`** per accedere al modulo di messaggistica transazionale. È consigliabile utilizzare un metodo di identificazione tramite indirizzi IP attendibili. Per recuperare il token di sessione, esegui una chiamata SOAP di accesso, quindi un token GET seguito da una disconnessione. Utilizza lo stesso token per diverse chiamate RT. Gli esempi inclusi in questa sezione utilizzano il metodo del token di sessione consigliato.
+Entrambi i metodi contengono un elemento **`<urn:sessiontoken>`** per l&#39;accesso al modulo di messaggistica transazionale. È consigliabile utilizzare un metodo di identificazione tramite indirizzi IP attendibili. Per recuperare il token di sessione, esegui una chiamata SOAP di accesso, quindi un token GET seguito da una disconnessione. Utilizza lo stesso token per diverse chiamate RT. Gli esempi inclusi in questa sezione utilizzano il metodo del token di sessione consigliato.
 
 Se utilizzi un server con bilanciamento del carico, puoi utilizzare l’autenticazione Utente/Password (a livello del messaggio RT). Esempio:
 
@@ -54,9 +54,9 @@ Se utilizzi un server con bilanciamento del carico, puoi utilizzare l’autentic
 </PushEvent>
 ```
 
-Il **PushEvent** è costituito da un **`<urn:domevent>`** parametro che contiene l’evento.
+Il metodo **PushEvent** è costituito da un parametro **`<urn:domevent>`** che contiene l&#39;evento.
 
-Il **PushEvents** è costituito da un **`<urn:domeventcollection>`** parametro che contiene eventi.
+Il metodo **PushEvents** è costituito da un parametro **`<urn:domeventcollection>`** contenente eventi.
 
 Esempio di utilizzo di PushEvent:
 
@@ -80,7 +80,7 @@ Esempio di utilizzo di PushEvent:
 
 >[!NOTE]
 >
->In caso di chiamata al **PushEvents** , è necessario aggiungere un elemento XML padre per garantire la conformità con XML standard. Questo elemento XML incornicierà i vari **`<rtevent>`** elementi contenuti nell’evento.
+>In caso di chiamata al metodo **PushEvents**, è necessario aggiungere un elemento XML padre per garantire la conformità con l&#39;XML standard. Questo elemento XML inquadrerà i vari elementi **`<rtevent>`** contenuti nell&#39;evento.
 
 Esempio di utilizzo di PushEvents:
 
@@ -106,13 +106,13 @@ Esempio di utilizzo di PushEvents:
 </urn:PushEvents>
 ```
 
-Il **`<rtevent>`** e **`<batchevent>`** Gli elementi dispongono di un set di attributi e di un elemento figlio obbligatorio: **`<ctx>`** per l’integrazione dei dati dei messaggi.
+Gli elementi **`<rtevent>`** e **`<batchevent>`** hanno un set di attributi e un elemento figlio obbligatorio: **`<ctx>`** per l&#39;integrazione dei dati del messaggio.
 
 >[!NOTE]
 >
->Il **`<batchevent>`** consente di aggiungere l’evento alla coda &quot;batch&quot;. Il **`<rtevent>`** aggiunge l’evento alla coda &quot;in tempo reale&quot;.
+>L&#39;elemento **`<batchevent>`** consente di aggiungere l&#39;evento alla coda &quot;batch&quot;. **`<rtevent>`** aggiunge l&#39;evento alla coda in tempo reale.
 
-Gli attributi obbligatori del **`<rtevent>`** e **`<batchevent>`** Gli elementi sono @type e @email. Il valore di @type deve essere uguale al valore dell’elenco dettagliato definito durante la configurazione dell’istanza di esecuzione. Questo valore ti consente di definire il modello da collegare al contenuto dell’evento durante la consegna.
+Gli attributi obbligatori degli elementi **`<rtevent>`** e **`<batchevent>`** sono @type e @email. Il valore di @type deve essere uguale al valore dell’elenco dettagliato definito durante la configurazione dell’istanza di esecuzione. Questo valore ti consente di definire il modello da collegare al contenuto dell’evento durante la consegna.
 
 `<rtevent> configuration example:`
 
@@ -120,17 +120,17 @@ Gli attributi obbligatori del **`<rtevent>`** e **`<batchevent>`** Gli elementi 
 <rtEvent type="order_confirmation" email="john.doe@domain.com" origin="eCommerce" wishedChannel="0" externalId="1242" mobilePhone="+33620202020"> 
 ```
 
-In questo esempio, vengono forniti due canali: l’indirizzo e-mail e il numero di telefono cellulare. Il **wwishChannel** consente di selezionare il canale da utilizzare per trasformare l’evento in un messaggio. Il valore &quot;0&quot; corrisponde al canale e-mail, il valore &quot;1&quot; al canale mobile e così via.
+In questo esempio, vengono forniti due canali: l’indirizzo e-mail e il numero di telefono cellulare. **wwishChannel** consente di selezionare il canale da utilizzare per trasformare l&#39;evento in un messaggio. Il valore &quot;0&quot; corrisponde al canale e-mail, il valore &quot;1&quot; al canale mobile e così via.
 
-Se desideri rimandare la consegna di un evento, aggiungi **[!UICONTROL scheduled]** seguito dalla data preferita. L’evento verrà trasformato in un messaggio in questa data.
+Se desideri posticipare la consegna di un evento, aggiungi il campo **[!UICONTROL scheduled]** seguito dalla data preferita. L’evento verrà trasformato in un messaggio in questa data.
 
 È consigliabile compilare gli attributi @wishedChannel e @emailFormat con valori numerici. La tabella delle funzioni che collega i valori numerici e le etichette si trova nella descrizione dello schema di dati.
 
 >[!NOTE]
 >
->Una descrizione dettagliata di tutti gli attributi autorizzati e dei loro valori è disponibile nella descrizione del **nms:rtEvent** e **nms:BatchEvent** schema dati.
+>Una descrizione dettagliata di tutti gli attributi autorizzati e dei relativi valori è disponibile nella descrizione dello schema dati **nms:rtEvent** e **nms:BatchEvent**.
 
-Il **`<ctx>`** contiene i dati del messaggio. Il contenuto XML è aperto, il che significa che può essere configurato a seconda del contenuto da distribuire.
+L&#39;elemento **`<ctx>`** contiene i dati del messaggio. Il contenuto XML è aperto, il che significa che può essere configurato a seconda del contenuto da distribuire.
 
 >[!NOTE]
 >
@@ -163,7 +163,7 @@ Quando riceve un evento, Adobe Campaign genera un ID restituito univoco. Questo 
 
 >[!IMPORTANT]
 >
->Quando si ricevono chiamate SOAP, Adobe Campaign verifica il formato dell’indirizzo e-mail. Se un indirizzo e-mail non è formattato correttamente, viene restituito un errore.
+>Quando ricevi chiamate SOAP, Adobe Campaign verifica il formato dell’indirizzo e-mail. Se un indirizzo e-mail non è formattato correttamente, viene restituito un errore.
 
 * Esempio di un identificatore restituito dal metodo quando l’elaborazione dell’evento ha esito positivo:
 

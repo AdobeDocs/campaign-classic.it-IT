@@ -37,7 +37,7 @@ ht-degree: 5%
 
 * Le consegne di grandi dimensioni, come le consegne a più di un milione di destinatari, richiedono spazio nelle code di invio. Questo da solo non è un problema per il server, ma se combinato con decine di altre consegne di grandi dimensioni che escono tutte nello stesso momento, può introdurre un ritardo di invio.
 
-* La personalizzazione nelle e-mail estrae dati dal database per ogni destinatario. Se sono presenti molti elementi di personalizzazione, aumenta la quantità di dati necessari per preparare la consegna.
+* Personalization nelle e-mail estrae i dati dal database per ogni destinatario. Se sono presenti molti elementi di personalizzazione, aumenta la quantità di dati necessari per preparare la consegna.
 
 * Indirizzi di indice. Per ottimizzare le prestazioni delle query SQL utilizzate nell’applicazione, è possibile dichiarare un indice dall’elemento principale dello schema di dati.
 
@@ -50,7 +50,7 @@ ht-degree: 5%
 Se le prestazioni di consegna non sono soddisfacenti, puoi controllare:
 
 * **Dimensione della consegna**: il completamento delle consegne di grandi dimensioni può richiedere più tempo. Gli elementi secondari MTA sono configurati per gestire una dimensione batch predefinita, che funziona per la maggior parte delle istanze, ma devono essere controllati quando le consegne sono costantemente lente.
-* **Il target della consegna**: le prestazioni della consegna non possono essere influenzate da errori di mancati recapiti non permanenti, che vengono gestiti in base alla configurazione dei nuovi tentativi. Maggiore è il numero di errori, maggiore è il numero di tentativi necessari.
-* **Carico complessivo della piattaforma**: quando vengono inviate diverse consegne di grandi dimensioni, può esserne interessato l’intera piattaforma. Puoi anche controllare la reputazione IP e i problemi di consegna. Per ulteriori informazioni, consulta [questa sezione](about-deliverability.md) e al [Guida alle procedure consigliate per la consegna dei messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it).
+* **Destinazione della consegna**: le prestazioni della consegna non sono interessate da errori di mancati recapiti non permanenti, che vengono gestiti in base alla configurazione dei nuovi tentativi. Maggiore è il numero di errori, maggiore è il numero di tentativi necessari.
+* **Caricamento complessivo della piattaforma**: l&#39;invio di diverse consegne di grandi dimensioni può influire sulla piattaforma complessiva. Puoi anche controllare la reputazione IP e i problemi di consegna. Per ulteriori informazioni, consulta [questa sezione](about-deliverability.md) e la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it).
 
 La manutenzione della piattaforma e del database può influire anche sulle prestazioni di invio della consegna. Per ulteriori informazioni, consulta [questa pagina](../../production/using/database-performances.md).

@@ -20,7 +20,7 @@ ht-degree: 2%
 
 I contenitori consentono di combinare i campi di una pagina e configurarne il layout, per organizzare gli elementi nella pagina.
 
-Per ogni pagina del modulo, i contenitori vengono creati tramite **[!UICONTROL Containers]** sulla barra degli strumenti.
+Per ogni pagina del modulo, i contenitori vengono creati tramite il pulsante **[!UICONTROL Containers]** della barra degli strumenti.
 
 ![](assets/s_ncs_admin_survey_containers_add.png)
 
@@ -30,7 +30,7 @@ Ad esempio:
 
 ![](assets/s_ncs_admin_survey_containers_std_arbo.png)
 
-La posizione delle etichette viene applicata agli elementi posizionati sotto il contenitore nella gerarchia. Se necessario, può essere sovraccaricato per ogni elemento. Aggiungere o rimuovere colonne per modificare il layout. Consulta [Posizionamento dei campi nella pagina](#positioning-the-fields-on-the-page).
+La posizione delle etichette viene applicata agli elementi posizionati sotto il contenitore nella gerarchia. Se necessario, può essere sovraccaricato per ogni elemento. Aggiungere o rimuovere colonne per modificare il layout. Vedi [Posizionamento dei campi nella pagina](#positioning-the-fields-on-the-page).
 
 Nell’esempio precedente, il rendering sarà il seguente:
 
@@ -68,7 +68,7 @@ Puoi modificare la formattazione in ogni contenitore. Nel nostro esempio, puoi d
 
 ![](assets/s_ncs_admin_survey_container_ex2_rend.png)
 
-Il titolo e l’elenco occupano una cella ciascuno (e quindi un’intera riga del contenitore) e la casella di controllo si estende su due celle. Il numero di celle attribuito al campo di input è definito nel **[!UICONTROL General]** scheda o **[!UICONTROL Advanced]** in base al tipo di campo:
+Il titolo e l’elenco occupano una cella ciascuno (e quindi un’intera riga del contenitore) e la casella di controllo si estende su due celle. Il numero di celle attribuite al campo di input è definito nella scheda **[!UICONTROL General]** o nella scheda **[!UICONTROL Advanced]**, in base al tipo di campo:
 
 ![](assets/s_ncs_admin_survey_container_ex2.png)
 
@@ -78,11 +78,11 @@ Il titolo e l’elenco occupano una cella ciascuno (e quindi un’intera riga de
 
 Per impostazione predefinita, i parametri di visualizzazione per i campi e altro contenuto della pagina vengono ereditati dalla configurazione generale del modulo, dalla configurazione della pagina o dalla configurazione del contenitore principale, se presente.
 
-I parametri di visualizzazione globali per l&#39;intero modulo sono specificati nella casella delle proprietà del modulo. Il **[!UICONTROL Rendering]** consente di selezionare la posizione delle etichette.
+I parametri di visualizzazione globali per l&#39;intero modulo sono specificati nella casella delle proprietà del modulo. La scheda **[!UICONTROL Rendering]** consente di selezionare la posizione delle etichette.
 
 ![](assets/s_ncs_admin_survey_label_position.png)
 
-Questa posizione può essere sovraccaricata per ogni pagina, contenitore e campo tramite **[!UICONTROL Advanced]** scheda.
+Questa posizione può essere sovraccaricata per ogni pagina, contenitore e campo tramite la scheda **[!UICONTROL Advanced]**.
 
 Sono supportati i seguenti allineamenti:
 

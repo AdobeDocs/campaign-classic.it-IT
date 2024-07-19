@@ -21,11 +21,11 @@ ht-degree: 4%
 
 Messaggi di errore come i seguenti possono essere visualizzati (in particolare nei registri di consegna) quando il sistema viene messo in produzione:
 
-*Impossibile rinominare il file /tmp/tmp0000.tmp in /usr/local/neolane/nl6/bin/..//var/XXX/mta/86510470.xml ;(errno=18, collegamento tra dispositivi non valido) (iRc=-52)*
+*Impossibile rinominare il file &#39;/tmp/tmp0000.tmp&#39; in /usr/local/neolane/nl6/bin/..//var/XXX/mta/86510470.xml ;(errno=18, collegamento tra dispositivi non valido) (iRc=-52)*
 
 La causa è la seguente:
 
-Adobe Campaign genera file temporanei in **/tmp**, quindi li rinomina per spostarli in **/usr/local/neolane/nl6/var**. Questo errore si verifica quando entrambe le cartelle (**/tmp** e **/usr/local/neolane/nl6/var**, che è in realtà un collegamento simbolico a **/var/nl6**) corrispondono a dispositivi diversi. Il **df** per la verifica.
+Adobe Campaign genera file temporanei in **/tmp** e li rinomina per spostarli in **/usr/local/neolane/nl6/var**. Questo errore si verifica quando entrambe le cartelle (**/tmp** e **/usr/local/neolane/nl6/var**, che è in realtà un collegamento simbolico a **/var/nl6**) corrispondono a dispositivi diversi. Comando **df** utilizzato per la verifica.
 
 Per risolvere il problema, i file temporanei devono essere generati nello stesso dispositivo della destinazione.
 

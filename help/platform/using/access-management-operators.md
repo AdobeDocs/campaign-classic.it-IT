@@ -18,22 +18,22 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->A partire da Campaign Classic v7.3.1, tutti gli operatori devono utilizzare [Sistema Adobe Identity Management (IMS)](https://helpx.adobe.com/it/enterprise/using/users.html){target="_blank"} per connettersi a Campaign.
+>A partire da Campaign Classic v7.3.1, tutti gli operatori devono utilizzare [Adobe Identity Management System (IMS)](https://helpx.adobe.com/it/enterprise/using/users.html){target="_blank"} per connettersi a Campaign.
 >
 >Come parte degli sforzi per rafforzare la sicurezza e il processo di autenticazione, Adobe Campaign consiglia vivamente di migrare tutte le modalità di autenticazione degli operatori esistenti dall’autenticazione nativa di login/password ad Adobe Identity Management System (IMS). Scopri come eseguire la migrazione degli operatori in [questa pagina](../../technotes/using/migrate-users-to-ims.md).
 > 
->Dopo questa migrazione, la sezione seguente non è più applicabile.  Scopri come impostare le autorizzazioni con Adobe IMS in [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=it){target="_blank"}.
+>Dopo questa migrazione, la sezione seguente non è più applicabile.  Scopri come impostare le autorizzazioni con Adobe IMS nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=it){target="_blank"}.
 
 
 ## Introduzione agli operatori di Campaign {#about-operators}
 
 >[!NOTE]
 >
->Queste procedure si applicano solo agli operatori che si connettono a Campaign con autenticazione nativa. Per l’autenticazione Adobe IMS, consulta [questa documentazione](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#_blank).
+>Queste procedure si applicano solo agli operatori che si connettono a Campaign con autenticazione nativa. Per l&#39;autenticazione Adobe IMS, consulta [questa documentazione](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#_blank).
 
 Un operatore è un utente di Adobe Campaign che dispone delle autorizzazioni per accedere ed eseguire azioni.
 
-Per impostazione predefinita, gli operatori vengono memorizzati nella **[!UICONTROL Administration > Access management > Operators]** nodo.
+Per impostazione predefinita, gli operatori sono archiviati nel nodo **[!UICONTROL Administration > Access management > Operators]**.
 
 ![](assets/s_ncs_user_list_operators.png)
 
@@ -41,7 +41,7 @@ Gli operatori possono essere creati manualmente o mappati su una directory LDAP 
 
 La procedura completa per la creazione di un operatore è descritta in [questa pagina](#creating-an-operator).
 
-Per ulteriori informazioni sull’integrazione di Adobe Campaign e LDAP, consulta [questa pagina](../../installation/using/connecting-through-ldap.md).
+Per ulteriori informazioni sull&#39;integrazione Adobe Campaign e LDAP, consulta [questa pagina](../../installation/using/connecting-through-ldap.md).
 
 >[!IMPORTANT]
 >
@@ -53,45 +53,45 @@ Gli utenti possono anche connettersi direttamente ad Adobe Campaign utilizzando 
 
 Per creare un nuovo operatore e concedere le autorizzazioni, effettua le seguenti operazioni:
 
-1. Fai clic su **[!UICONTROL New]** sopra l&#39;elenco degli operatori e immettere i dettagli del nuovo operatore.
+1. Fare clic sul pulsante **[!UICONTROL New]** situato sopra l&#39;elenco degli operatori e immettere i dettagli del nuovo operatore.
 
    ![](assets/s_ncs_user_operator_new.png)
 
-1. Specifica la **[!UICONTROL Identification parameters]** dell’utente: login, password e nome. L’operatore utilizzerà le credenziali di accesso e la password per accedere ad Adobe Campaign. Una volta effettuato l&#39;accesso, l&#39;utente può modificare la password tramite **[!UICONTROL Tools > Change password]** menu. L’e-mail dell’operatore è essenziale in quanto consente all’operatore di ricevere notifiche, ad esempio durante l’elaborazione delle approvazioni.
+1. Specificare **[!UICONTROL Identification parameters]** dell&#39;utente: nome di accesso, password e nome. L’operatore utilizzerà le credenziali di accesso e la password per accedere ad Adobe Campaign. Una volta effettuato l&#39;accesso, l&#39;utente può modificare la password tramite il menu **[!UICONTROL Tools > Change password]**. L’e-mail dell’operatore è essenziale in quanto consente all’operatore di ricevere notifiche, ad esempio durante l’elaborazione delle approvazioni.
 
    Questa sezione ti consente anche di collegare un operatore a un’entità organizzativa. Per ulteriori informazioni, consulta [questa pagina](../../distributed/using/about-distributed-marketing.md).
 
-1. Seleziona le autorizzazioni concesse all’operatore in **[!UICONTROL Operator access rights]** sezione.
+1. Selezionare le autorizzazioni concesse all&#39;operatore nella sezione **[!UICONTROL Operator access rights]**.
 
-   Per assegnare i diritti all&#39;operatore, fare clic su **[!UICONTROL Add]** posizionato sopra l&#39;elenco dei diritti, quindi selezionare un gruppo di operatori dall&#39;elenco dei gruppi disponibili:
+   Per assegnare i diritti all&#39;operatore, fare clic sul pulsante **[!UICONTROL Add]** situato sopra l&#39;elenco dei diritti, quindi selezionare un gruppo di operatori dall&#39;elenco dei gruppi disponibili:
 
    ![](assets/s_ncs_user_permissions_operators.png)
 
-   Puoi anche selezionare uno o più diritti denominati (fai riferimento a [Diritti denominati](#named-rights)). A tale scopo, fare clic sulla freccia a destra della **[!UICONTROL Folder]** e seleziona **[!UICONTROL Named rights]**:
+   È inoltre possibile selezionare uno o più diritti denominati (fare riferimento a [Diritti denominati](#named-rights)). A tale scopo, fare clic sulla freccia a destra del campo **[!UICONTROL Folder]** e selezionare **[!UICONTROL Named rights]**:
 
    ![](assets/s_ncs_user_rights_operators.png)
 
-   Seleziona i gruppi e/o i diritti denominati da assegnare e fai clic su **[!UICONTROL OK]** da convalidare.
+   Selezionare i gruppi e/o i diritti denominati da assegnare e fare clic su **[!UICONTROL OK]** per confermare.
 
-1. Clic **[!UICONTROL Ok]** per creare l’operatore: il profilo viene aggiunto all’elenco degli operatori esistenti.
+1. Fare clic su **[!UICONTROL Ok]** per creare l&#39;operatore: il profilo viene aggiunto all&#39;elenco degli operatori esistenti.
 
    ![](assets/operator_profile_new.png)
 
 >[!NOTE]
 >
->Puoi organizzare gli operatori in base alle tue esigenze creando nuove cartelle di operatori. A questo scopo, fai clic con il pulsante destro del mouse sulla cartella dell’operatore e seleziona **[!UICONTROL Add an 'Operators' folder]**.
+>Puoi organizzare gli operatori in base alle tue esigenze creando nuove cartelle di operatori. A tale scopo, fare clic con il pulsante destro del mouse sulla cartella dell&#39;operatore e selezionare **[!UICONTROL Add an 'Operators' folder]**.
 
-Una volta creato il profilo dell’operatore, puoi aggiungerne o aggiornarne le informazioni. A questo scopo, fai clic su **[!UICONTROL Edit]** scheda.
+Una volta creato il profilo dell’operatore, puoi aggiungerne o aggiornarne le informazioni. A tale scopo, fare clic sulla scheda **[!UICONTROL Edit]**.
 
 ![](assets/operator_edit_profile.png)
 
 >[!NOTE]
 >
->Il **[!UICONTROL Session timeout]** consente di regolare il ritardo prima del timeout della sessione FDA. Per ulteriori informazioni, consulta [Informazioni su Federated Data Access](../../installation/using/about-fda.md).
+>Il campo **[!UICONTROL Session timeout]** consente di regolare il ritardo prima del timeout della sessione FDA. Per ulteriori informazioni, consulta [Informazioni su Federated Data Access](../../installation/using/about-fda.md).
 
 ## Definire il fuso orario dell’operatore {#time-zone-of-the-operator}
 
-In **[!UICONTROL General]** , è possibile selezionare il fuso orario dell’operatore. Per impostazione predefinita, gli operatori funzionano nel fuso orario del server. Tuttavia, è possibile selezionare un altro fuso orario utilizzando l’elenco a discesa.
+Nella scheda **[!UICONTROL General]** è possibile selezionare il fuso orario dell&#39;operatore. Per impostazione predefinita, gli operatori funzionano nel fuso orario del server. Tuttavia, è possibile selezionare un altro fuso orario utilizzando l’elenco a discesa.
 
 La configurazione dei fusi orari è descritta in [questa pagina](../../installation/using/time-zone-management.md).
 
@@ -101,23 +101,23 @@ La configurazione dei fusi orari è descritta in [questa pagina](../../installat
 >
 >I vincoli e i consigli collegati a questi contesti sono descritti nelle sezioni correlate della documentazione di Adobe Campaign.
 
-Inoltre, la **[!UICONTROL Regional settings]** L&#39;elenco a discesa consente di selezionare il formato di visualizzazione delle date e dei numeri.
+Inoltre, l&#39;elenco a discesa **[!UICONTROL Regional settings]** consente di selezionare il formato per visualizzare date e numeri.
 
 ## Aggiungere autorizzazioni {#access-rights-options}
 
-Utilizza il **[!UICONTROL Access rights]** per aggiornare i gruppi e i diritti denominati collegati all’operatore.
+Utilizzare la scheda **[!UICONTROL Access rights]** per aggiornare i gruppi e i diritti denominati collegati all&#39;operatore.
 
 ![](assets/operator_profile_security_options.png)
 
-Il **[!UICONTROL Edit the access parameters...]** Il collegamento ti consente di accedere alle seguenti opzioni:
+Il collegamento **[!UICONTROL Edit the access parameters...]** consente di accedere alle opzioni seguenti:
 
-* Il **[!UICONTROL Disable account]** consente di disabilitare l’account dell’operatore: questo utente non accederà più ad Adobe Campaign.
+* L&#39;opzione **[!UICONTROL Disable account]** consente di disabilitare l&#39;account dell&#39;operatore: questo utente non accederà più ad Adobe Campaign.
 
   >[!NOTE]
   >
   >Anche se il loro account è disabilitato, l’operatore può comunque ricevere avvisi o notifiche da Campaign. Per interrompere l’invio delle notifiche di Campaign a questo operatore, l’Adobe consiglia di rimuovere l’indirizzo e-mail dal proprio profilo.
 
-* Il **[!UICONTROL Forbid access from the rich client]** consente di limitare l’utilizzo di Adobe Campaign a [Accesso web](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) o tramite API: l’accesso alla console client di Adobe Campaign non è più disponibile.
+* L&#39;opzione **[!UICONTROL Forbid access from the rich client]** consente di limitare l&#39;utilizzo di Adobe Campaign all&#39;[accesso Web](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) o tramite API: l&#39;accesso alla console client di Adobe Campaign non è più disponibile.
 * È possibile collegare una zona di sicurezza all&#39;operatore. Per ulteriori informazioni, consulta [questa pagina](../../installation/using/security-zones.md).
 * Puoi anche definire una maschera IP attendibile utilizzando il collegamento appropriato.
 
@@ -131,7 +131,7 @@ Il **[!UICONTROL Edit the access parameters...]** Il collegamento ti consente di
   >
   >Per proteggere l’accesso alla piattaforma, utilizza questa opzione con cautela.
 
-* Il **[!UICONTROL Restrict to information found in sub-folders of:]** consente di limitare i diritti attribuiti all’operatore di una cartella. Solo le sottocartelle del nodo specificato in questa opzione saranno visibili all’utente:
+* L&#39;opzione **[!UICONTROL Restrict to information found in sub-folders of:]** consente di limitare i diritti attribuiti all&#39;operatore di una cartella. Solo le sottocartelle del nodo specificato in questa opzione saranno visibili all’utente:
 
   ![](assets/s_ncs_user_restrictions_operators.png)
 
@@ -141,7 +141,7 @@ Il **[!UICONTROL Edit the access parameters...]** Il collegamento ti consente di
 
 ### Verifica impostazioni {#check-settings}
 
-Il **[!UICONTROL Audit]** Questa scheda ti consente di visualizzare le informazioni relative all’operatore. Le varie schede vengono aggiunte a automaticamente in base alle impostazioni definite nell’area di intervento dell’operatore.
+La scheda **[!UICONTROL Audit]** consente di visualizzare le informazioni relative all&#39;operatore. Le varie schede vengono aggiunte a automaticamente in base alle impostazioni definite nell’area di intervento dell’operatore.
 
 Puoi accedere a:
 
@@ -151,7 +151,7 @@ Puoi accedere a:
 
   >[!NOTE]
   >
-  >Per ulteriori informazioni, consulta [Gestione dell’accesso alle cartelle](#folder-access-management).
+  >Per ulteriori informazioni, consulta [Gestione dell&#39;accesso alle cartelle](#folder-access-management).
 
 * Registro delle approvazioni dell&#39;operatore.
 
@@ -173,19 +173,19 @@ Adobe Campaign utilizza operatori tecnici con profili configurati per impostazio
 
 Per impostazione predefinita, l’operatore tecnico &quot;webapp&quot; dispone del diritto DENOMINATO ADMINISTRATION (AMMINISTRAZIONE), che può comportare rischi per la sicurezza. Per risolvere il problema, è consigliabile rimuovere questo diritto. Per eseguire questa operazione:
 
-1. Dalla sezione **[!UICONTROL Administration > Access management > Named rights]** , fare clic su **[!UICONTROL New]** per creare un diritto e denominarlo WEBAPP.
+1. Dal nodo **[!UICONTROL Administration > Access management > Named rights]**, fare clic su **[!UICONTROL New]** per creare un diritto e denominarlo WEBAPP.
 
    ![](assets/s_ncs_default_operators_webapp_right.png)
 
-   I diritti denominati sono descritti in [Diritti denominati](#named-rights) sezione.
+   I diritti denominati sono descritti nella sezione [Diritti denominati](#named-rights).
 
-1. Dalla sezione **[!UICONTROL Administration > Access management > Operators]** , selezionare l&#39;operatore dell&#39;agente delle applicazioni Web (&#39;webapp&#39;).
+1. Dal nodo **[!UICONTROL Administration > Access management > Operators]**, selezionare l&#39;operatore dell&#39;agente delle applicazioni Web (&#39;webapp&#39;).
 
-   Seleziona la **[!UICONTROL Edit]** , quindi la scheda **[!UICONTROL Access rights]** ed eliminare dall&#39;elenco il componente ADMINISTRATION denominato right.
+   Selezionare la scheda **[!UICONTROL Edit]**, quindi la scheda **[!UICONTROL Access rights]** ed eliminare dall&#39;elenco la voce ADMINISTRATION denominata right.
 
    ![](assets/s_ncs_default_operators_webapp_admin_right.png)
 
-   Clic **[!UICONTROL Add]** e seleziona l’autorizzazione WEBAPP appena creata, quindi salva le modifiche.
+   Fai clic su **[!UICONTROL Add]** e seleziona l&#39;autorizzazione WEBAPP appena creata, quindi salva le modifiche.
 
    ![](assets/s_ncs_default_operators_webapp_webapp_right.png)
 
@@ -193,8 +193,8 @@ Per impostazione predefinita, l’operatore tecnico &quot;webapp&quot; dispone d
 
    ![](assets/s_ncs_default_operators_webapp_folder_access.png)
 
-   La modifica dei diritti sulle cartelle della struttura è descritta in [Gestione dell’accesso alle cartelle](#folder-access-management) sezione.
+   La modifica dei diritti nelle cartelle della struttura è descritta nella sezione [Gestione dell&#39;accesso alle cartelle](#folder-access-management).
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle linee guida sulla sicurezza, fare riferimento a [Elenco di controllo per la configurazione della sicurezza di Adobe Campaign](https://helpx.adobe.com/it/campaign/kb/acc-security.html).
+>Per ulteriori informazioni sulle linee guida per la sicurezza, fare riferimento a [Elenco di controllo per la configurazione della sicurezza di Adobe Campaign](https://helpx.adobe.com/it/campaign/kb/acc-security.html).

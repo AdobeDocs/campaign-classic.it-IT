@@ -21,16 +21,16 @@ ht-degree: 0%
 
 Questa sezione descrive i passaggi di configurazione preliminari necessari prima di installare Adobe Campaign.
 
-La configurazione tecnica e software necessaria per l’installazione di Adobe Campaign è descritta nella [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
+La configurazione tecnica e software necessaria per l&#39;installazione di Adobe Campaign è descritta nella [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
 Come promemoria, è necessario installare e configurare correttamente i seguenti componenti:
 
 * Apache, fare riferimento a [Matrice di compatibilità](../../rn/using/compatibility-matrix.md),
-* Java JDK e OpenJDK, consultare [Java Development Kit - JDK](../../installation/using/application-server.md#jdk),
-* Librerie, consultare [Librerie](#libraries),
+* Java JDK e OpenJDK, fare riferimento a [Java Development Kit - JDK](../../installation/using/application-server.md#jdk),
+* Librerie, fai riferimento a [Librerie](#libraries),
 * Livelli di accesso al database, fare riferimento a [Livelli di accesso al database](#database-access-layers),
 * LibreOffice, fare riferimento a [Installazione di LibreOffice per Debian](#installing-libreoffice-for-debian) e [Installazione di LibreOffice per CentOS](#installing-libreoffice-for-centos),
-* Font, fare riferimento a [Font per le statistiche MTA](#fonts-for-mta-statistics) e [Font per istanze giapponesi](#fonts-for-japanese-instances).
+* Font, fai riferimento a [Font per statistiche MTA](#fonts-for-mta-statistics) e [Font per istanze giapponesi](#fonts-for-japanese-instances).
 
 
 ### Biblioteche {#libraries}
@@ -43,11 +43,11 @@ Per installare Adobe Campaign in Linux, assicurati di avere il librerie richiest
 
   Se il comando non restituisce una riga vuota, significa che la configurazione è corretta.
 
-* È necessaria la versione OpenSSL **1.0.2.** o superiore.
+* È necessario disporre della versione **1.0.2** di OpenSSL o successiva.
 
   Per le distribuzioni RHEL, è richiesta la versione 1.0 di OpenSSL.
 
-* Per utilizzare Adobe Campaign, è necessario disporre del **libicu** libreria installata.
+* Per utilizzare Adobe Campaign, è necessario che sia installata la libreria **libicu**.
 
 ### SELinux {#selinux}
 
@@ -59,7 +59,7 @@ Per eseguire questa operazione, accedere come radice e immettere il comando segu
 echo 0 >/selinux/enforce
 ```
 
-Inoltre, nella sezione **/etc/sysconfig/httpd** file, è stata aggiunta la seguente riga per fare riferimento allo script di configurazione dell’ambiente Adobe Campaign:
+Inoltre, nel file **/etc/sysconfig/httpd** è stata aggiunta la seguente riga per fare riferimento allo script di configurazione dell&#39;ambiente Adobe Campaign:
 
 ```
 . ~neolane/nl6/env.sh
@@ -138,17 +138,17 @@ yum install libreoffice-headless libreoffice-writer libreoffice-calc
 
 I layer accesso per il motore di database in uso devono essere installati nel server ed essere accessibili tramite il Adobe Campaign account. Le versioni e le modalità di installazione possono variare a seconda del motore di database utilizzato.
 
-La versione pilota supportata è descritta nel [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
+La versione pilota supportata è descritta nella [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
-Controlla anche il [Database](../../installation/using/database.md) sezione.
+Controlla anche la sezione generale [Database](../../installation/using/database.md).
 
 ### PostgreSQL {#postgresql}
 
 Adobe Campaign supporta tutte le versioni delle librerie client PostgreSQL dalla versione 9.6: **libpq.so.5**.
 
-L’utilizzo di PostgreSQL con Adobe Campaign richiede anche l’installazione della **pgcrypto** librerie.
+L&#39;utilizzo di PostgreSQL con Adobe Campaign richiede anche l&#39;installazione delle librerie **pgcrypto** corrispondenti.
 
-###  Oracle {#oracle}
+### Oracle {#oracle}
 
 Recupera la versione libreria per Debian a 64 bit, cioè: libclntsh.so, libclntsh.so.19.1 **,** libclntsh.so.18.1 **,** libclntsh.so.12.1 **,** libclntsh.so.11.1 **o** libclntsh.so.10.1 **.******
 
@@ -164,7 +164,7 @@ I problemi possono comparire dopo un aggiornamento di un client o di un server O
 
 Se noti nella console client che nei registri sono presenti ritardi imprevisti (una o più ore), nell’ultima elaborazione del flusso di lavoro, nell’elaborazione successiva e così via, potrebbe esserci un problema tra la libreria del client Oracle e il server Oracle. Per evitare tali problemi
 
-1. Assicurati di utilizzare il **client completo**.
+1. Assicurarsi di utilizzare il **client completo**.
 
    Sono stati identificati vari problemi durante l&#39;utilizzo della versione Oracle Instant Client. Inoltre, è impossibile modificare il file Timezone su Instant Client.
 
@@ -182,7 +182,7 @@ Le installazioni di Adobe Campaign per Linux devono essere eseguite nella seguen
 
 Il processo di installazione è descritto in questo capitolo. I passaggi di installazione sono i seguenti:
 
-* Passaggio 1: installazione del server applicazioni, fare riferimento a [Installazione di pacchetti con Linux](../../installation/using/installing-packages-with-linux.md).
+* Passaggio 1: installazione del server applicazioni, consultare [Installazione di pacchetti con Linux](../../installation/using/installing-packages-with-linux.md).
 * Passaggio 2: integrazione con un server web (facoltativo, a seconda dei componenti distribuiti).
 
 Una volta completati i passaggi di installazione, è necessario configurare le istanze, il database e il server. Per ulteriori informazioni, consulta [Informazioni sulla configurazione iniziale](../../installation/using/about-initial-configuration.md).

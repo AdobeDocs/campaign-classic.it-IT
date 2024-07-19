@@ -17,11 +17,11 @@ ht-degree: 5%
 
 I flussi di lavoro tecnici devono essere monitorati e, in caso di errore, è necessario intervenire.
 
-Ulteriori modalità di monitoraggio dei diversi processi di Campaign sono presentate in [questa pagina](../../production/using/monitoring-guidelines.md).
+Ulteriori metodi di monitoraggio dei diversi processi di Campaign sono presentati in [questa pagina](../../production/using/monitoring-guidelines.md).
 
 ## Dashboard di monitoraggio delle istanze {#instance-monitoring-dashboard}
 
-È possibile accedere al dashboard di monitoraggio delle istanze tramite **[!UICONTROL Monitoring]** scheda.
+È possibile accedere al dashboard di monitoraggio delle istanze tramite la scheda **[!UICONTROL Monitoring]**.
 
 ![](assets/monitoring_technical_workflows1.png)
 
@@ -33,7 +33,7 @@ In Indicatori di sistema e file di base, verificare che nessun indicatore sia ev
 
 ## Flussi di lavoro tecnici {#technical-workflows}
 
-I flussi di lavoro tecnici sono disponibili all’indirizzo **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
+I flussi di lavoro tecnici sono disponibili da **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
 
 A seconda del flusso di lavoro tecnico, segui i passaggi descritti di seguito per assicurarti che tutto funzioni come previsto.
 
@@ -41,7 +41,7 @@ Per comprendere meglio le funzioni di ogni flusso di lavoro tecnico, consulta qu
 
 Per **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
 
-1. Verifica che la **[!UICONTROL Database Cleanup]** il flusso di lavoro viene eseguito e terminato correttamente ogni giorno. Per ulteriori informazioni, consulta questa [pagina](../../production/using/database-cleanup-workflow.md)..
+1. Verificare che il flusso di lavoro **[!UICONTROL Database Cleanup]** venga eseguito e completato correttamente ogni giorno. Per ulteriori informazioni, consulta questa [pagina](../../production/using/database-cleanup-workflow.md).
 1. Osserva il giornale di registrazione per verificare che il tempo trascorso sia relativamente costante nel tempo e non interferisca con altri flussi di lavoro.
 
 Per **[!UICONTROL Tracking workflow (‘tracking’)]**:
@@ -50,17 +50,17 @@ Verificare che il flusso di lavoro di tracciamento venga eseguito come pianifica
 
 Per **[!UICONTROL Refresh for Deliverability (deliverabilityUpdate)]**:
 
-1. Verifica che la **[!UICONTROL Refresh for Deliverability]** il flusso di lavoro viene eseguito e terminato correttamente ogni giorno.
+1. Verificare che il flusso di lavoro **[!UICONTROL Refresh for Deliverability]** venga eseguito e completato correttamente ogni giorno.
 1. Verifica nel giornale di registrazione che le regole vengano aggiornate regolarmente.
 
 Per **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
 
-1. Osserva tutti i flussi di lavoro che si trovano sotto **[!UICONTROL Campaign process]** cartella. Per ulteriori informazioni, consulta questa [pagina](about-technical-workflows.md).
+1. Esaminare tutti i flussi di lavoro presenti nella cartella **[!UICONTROL Campaign process]**. Per ulteriori informazioni, consulta questa [pagina](about-technical-workflows.md).
 1. Verificare che i flussi di lavoro vengano eseguiti come pianificato e che il giornale di registrazione non evidenzi gli errori ricorrenti.
 
 ## Supervisione del flusso di lavoro {#workflow-supervision}
 
-Il **[!UICONTROL Workflow supervisors]** dovrebbe contenere operatori che devono essere tenuti informati dei guasti e che possono intervenire in tempo.
+Il gruppo **[!UICONTROL Workflow supervisors]** deve contenere operatori che devono essere tenuti informati degli errori e che possono intervenire in tempo.
 
 ![](assets/monitoring_technical_workflows3.png)
 

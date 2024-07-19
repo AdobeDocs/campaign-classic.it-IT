@@ -22,7 +22,7 @@ Questi esempi mostrano come utilizzare il codice JavaScript in un flusso di lavo
 * [Attivare un flusso di lavoro utilizzando un metodo SOAP statico](#trigger-example)
 * [Interagire con il database utilizzando un metodo SOAP non statico](#interact-example)
 
-[Ulteriori informazioni](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html) informazioni sui metodi SOAP statici e non statici.
+[Ulteriori informazioni](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html) sui metodi SOAP statici e non statici.
 
 In questi esempi viene utilizzata l&#39;estensione ECMAScript for XML (E4X). Con questa estensione, puoi combinare le chiamate JavaScript e le primitive XML nello stesso script.
 
@@ -33,7 +33,7 @@ Per provare questi esempi, segui questi passaggi:
    1. Attività codice JavaScript
    1. Attività Fine
 
-   [Ulteriori informazioni](building-a-workflow.md) informazioni sulla creazione di flussi di lavoro.
+   [Ulteriori informazioni](building-a-workflow.md) sulla creazione dei flussi di lavoro.
 
 1. Aggiungi il codice JavaScript a un’attività. [Ulteriori informazioni](advanced-parameters.md).
 1. Salva il flusso di lavoro.
@@ -43,16 +43,16 @@ Per provare questi esempi, segui questi passaggi:
 
 ## Esempio 1: scrivere nel database{#write-example}
 
-Per scrivere nel database, è possibile utilizzare il `Write` metodo su `xtk:session` schema:
+Per scrivere nel database, è possibile utilizzare il metodo statico `Write` nello schema `xtk:session`:
 
 1. Comporre una richiesta di scrittura in XML.
 
 1. Scrivi il record:
 
-   1. Chiama il `Write` metodo su `xtk:session` schema.
+   1. Chiama il metodo `Write` nello schema `xtk:session`.
 
       >[!IMPORTANT]
-      > Se utilizzi Adobe Campaign v8, ti consigliamo di utilizzare il meccanismo di staging con **Acquisizione** e **Aggiornamento/eliminazione dati** API per `Write` in una tabella di Snowflake. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
+      > Se utilizzi Adobe Campaign v8, ti consigliamo di utilizzare il meccanismo di gestione temporanea con le API **Ingestion** e **Data update/delete** per il metodo `Write` in una tabella di Snowflake. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
 
    1. Passa il codice XML come argomento per la richiesta di scrittura.
 
@@ -62,7 +62,7 @@ Per scrivere nel database, è possibile utilizzare il `Write` metodo su `xtk:ses
 
 #### Inserire un record
 
-Perché il `insert` è l&#39;operazione predefinita, non è necessario specificarla.
+Poiché l&#39;operazione `insert` è l&#39;operazione predefinita, non è necessario specificarla.
 
 Specificare queste informazioni come attributi XML:
 
@@ -80,7 +80,7 @@ var myXML = <recipient xtkschema="nms:recipient"
 
 #### Aggiornare un record
 
-Utilizza il `_update` operazione. [Ulteriori informazioni](../../configuration/using/data-oriented-apis.md).
+Utilizzare l&#39;operazione `_update`. [Ulteriori informazioni](../../configuration/using/data-oriented-apis.md).
 
 Specificare queste informazioni come attributi XML:
 
@@ -100,12 +100,12 @@ var myXML = <recipient xtkschema="nms:recipient"
 
 #### Eliminare un record
 
-Utilizza il `DeleteCollection` metodo. [Ulteriori informazioni](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html).
+Utilizzare il metodo `DeleteCollection`. [Ulteriori informazioni](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html).
 
 Specifica queste informazioni:
 
 * Schema della tabella da modificare
-* Il `where` clausola necessaria per identificare il record da aggiornare, sotto forma di un elemento XML
+* Clausola `where` necessaria per identificare il record da aggiornare, sotto forma di un elemento XML
 
 Esempio:
 
@@ -121,7 +121,7 @@ xtk.session.DeleteCollection(
 
 ### Passaggio 2: scrivere il record
 
-Chiama il file non statico `Write` metodo su `xtk:session` schema:
+Chiama il metodo `Write` non statico nello schema `xtk:session`:
 
 ```javascript
 xtk.session.Write(myXML)
@@ -145,7 +145,7 @@ Questo video mostra come scrivere nel database:
 
 ## Esempio 2: eseguire una query sul database{#read-example}
 
-Per eseguire una query sul database, è possibile utilizzare la proprietà non statica `xtk:queryDef` metodo di istanza:
+Per eseguire una query sul database, è possibile utilizzare il metodo di istanza `xtk:queryDef` non statico:
 
 1. Componi una query in XML.
 1. Creare un oggetto query.
@@ -153,7 +153,7 @@ Per eseguire una query sul database, è possibile utilizzare la proprietà non s
 
 ### Passaggio 1: comporre una query
 
-Specifica il codice XML per un `queryDef` entità.
+Specificare il codice XML per un&#39;entità `queryDef`.
 
 Sintassi:
 
@@ -167,9 +167,9 @@ Specifica queste informazioni:
 
 * Schema della tabella da leggere
 * L&#39;operazione
-* Le colonne da restituire, in un `select` clausola
-* Le condizioni, in un `where` clausola
-* I criteri di filtraggio, in un `orderBy` clausola
+* Colonne da restituire, in una clausola `select`
+* Condizioni in una clausola `where`
+* Criteri di filtro in una clausola `orderBy`
 
 Puoi utilizzare le seguenti operazioni:
 
@@ -178,11 +178,11 @@ Puoi utilizzare le seguenti operazioni:
 | `select` | Zero o più elementi vengono restituiti come raccolta. |
 | `getIfExists` | Viene restituito un elemento. Se non esiste alcun elemento di corrispondenza, viene restituito un elemento vuoto. |
 | `get` | Viene restituito un elemento. Se non esiste alcun elemento di corrispondenza, viene restituito un errore. |
-| `count` | Il numero di record corrispondenti viene restituito sotto forma di un elemento con un `count` attributo. |
+| `count` | Il numero di record corrispondenti viene restituito sotto forma di un elemento con un attributo `count`. |
 
-Scrivi il `select`, `where`, e `orderBy` clausole come elementi XML:
+Scrivere le clausole `select`, `where` e `orderBy` come elementi XML:
 
-* `select` clausola
+* clausola `select`
 
   Specificare le colonne da restituire. Ad esempio, per selezionare il nome e il cognome della persona, scrivere il codice seguente:
 
@@ -193,15 +193,15 @@ Scrivi il `select`, `where`, e `orderBy` clausole come elementi XML:
   </select>
   ```
 
-  Con il `nms:recipient` schema, gli elementi vengono restituiti nel seguente formato:
+  Con lo schema `nms:recipient`, gli elementi vengono restituiti in questo modulo:
 
   ```xml
   <recipient firstName="Bo" lastName="Didley"/>
   ```
 
-* `where` clausola
+* clausola `where`
 
-  Per specificare le condizioni, utilizza una `where` clausola. Ad esempio, per selezionare i record che si trovano nel **Formazione** cartella, puoi scrivere questo codice:
+  Per specificare le condizioni, utilizzare una clausola `where`. Ad esempio, per selezionare i record che si trovano nella cartella **Training**, è possibile scrivere il codice seguente:
 
   ```xml
   <where>
@@ -216,9 +216,9 @@ Scrivi il `select`, `where`, e `orderBy` clausole come elementi XML:
   <condition expr="@lastName='Garcia'"/>
   ```
 
-* `orderBy` clausola
+* clausola `orderBy`
 
-  Per ordinare il set di risultati, specificare `orderBy` come elemento XML con `sortDesc` attributo. Ad esempio, per ordinare i cognomi in ordine crescente, è possibile scrivere il codice seguente:
+  Per ordinare il set di risultati, specificare la clausola `orderBy` come elemento XML con attributo `sortDesc`. Ad esempio, per ordinare i cognomi in ordine crescente, è possibile scrivere il codice seguente:
 
   ```xml
   <orderBy>
@@ -228,7 +228,7 @@ Scrivi il `select`, `where`, e `orderBy` clausole come elementi XML:
 
 ### Passaggio 2: creare un oggetto query
 
-Per creare un’entità dal codice XML, utilizza `create(`*`content`*`)` metodo:
+Per creare un&#39;entità dal codice XML, utilizzare il metodo `create(`*`content`*`)`:
 
 ```javascript
 var query = xtk.queryDef.create(
@@ -237,26 +237,26 @@ var query = xtk.queryDef.create(
     </queryDef>)
 ```
 
-Aggiungi il prefisso `create(`*`content`*`)` con lo schema dell’entità da creare.
+Aggiungi al metodo `create(`*`content`*`)` il prefisso dello schema dell&#39;entità da creare.
 
-Il *`content`* l&#39;argomento è un argomento stringa ed è facoltativo. Questo argomento contiene il codice XML che descrive l&#39;entità.
+L&#39;argomento *`content`* è un argomento stringa ed è facoltativo. Questo argomento contiene il codice XML che descrive l&#39;entità.
 
 ### Passaggio 3: eseguire la query
 
 Segui questi passaggi:
 
-1. Chiama il `ExecuteQuery` metodo su `queryDef` entità:
+1. Chiama il metodo `ExecuteQuery` sull&#39;entità `queryDef`:
 
    ```javascript
    var res = query.ExecuteQuery()
    ```
 
 1. Elabora i risultati:
-   1. Eseguire iterazioni sui risultati del `select` mediante un costrutto di loop.
-   1. Testare i risultati utilizzando `getIfExists` operazione.
-   1. Contare i risultati, utilizzando `count` operazione.
+   1. Eseguire un&#39;iterazione sui risultati dell&#39;operazione `select` utilizzando un costrutto loop.
+   1. Verificare i risultati utilizzando l&#39;operazione `getIfExists`.
+   1. Contare i risultati utilizzando l&#39;operazione `count`.
 
-#### Risultati di una `select` operazione
+#### Risultati di un&#39;operazione `select`
 
 Tutte le corrispondenze vengono restituite come una raccolta:
 
@@ -267,16 +267,16 @@ Tutte le corrispondenze vengono restituite come una raccolta:
 </recipient-collection>
 ```
 
-Per scorrere i risultati, utilizzare `for each` loop:
+Per scorrere i risultati, utilizzare il ciclo `for each`:
 
 ```javascript
 for each (var rcp in res:recipient)
     logInfo(rcp.@email)
 ```
 
-Il ciclo include una variabile di destinatario locale. Per ogni destinatario restituito nella raccolta di destinatari, viene stampata l’e-mail del destinatario. [Ulteriori informazioni](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html) informazioni su `logInfo` funzione.
+Il ciclo include una variabile di destinatario locale. Per ogni destinatario restituito nella raccolta di destinatari, viene stampata l’e-mail del destinatario. [Ulteriori informazioni](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html) sulla funzione `logInfo`.
 
-#### Risultati di una `getIfExists` operazione
+#### Risultati di un&#39;operazione `getIfExists`
 
 Ogni corrispondenza viene restituita come elemento:
 
@@ -290,7 +290,7 @@ Se non viene trovata alcuna corrispondenza, viene restituito un elemento vuoto:
 <recipient/>
 ```
 
-È possibile fare riferimento al nodo della chiave primaria, ad esempio `@id` attributo:
+È possibile fare riferimento al nodo della chiave primaria, ad esempio l&#39;attributo `@id`:
 
 ```javascript
 if (res.@id !=undefined)
@@ -299,7 +299,7 @@ if (res.@id !=undefined)
     }
 ```
 
-#### Risultato di un `get` operazione
+#### Risultato di un&#39;operazione `get`
 
 Viene restituita una corrispondenza come elemento:
 
@@ -311,17 +311,17 @@ Se non viene trovata alcuna corrispondenza, viene restituito un errore.
 
 >[!TIP]
 >
->Se sai che esiste una corrispondenza, utilizza `get` operazione. In caso contrario, utilizza `getIfExists` operazione. Se utilizzi questa best practice, gli errori rivelano problemi imprevisti. Se si utilizza `get` , non utilizzare il `try…catch` dichiarazione. Il problema viene gestito dal processo di gestione degli errori del flusso di lavoro.
+>Se si sa che esiste una corrispondenza, utilizzare l&#39;operazione `get`. In caso contrario, utilizzare l&#39;operazione `getIfExists`. Se utilizzi questa best practice, gli errori rivelano problemi imprevisti. Se si utilizza l&#39;operazione `get`, non utilizzare l&#39;istruzione `try…catch`. Il problema viene gestito dal processo di gestione degli errori del flusso di lavoro.
 
-#### Risultato di un `count` operazione
+#### Risultato di un&#39;operazione `count`
 
-Un elemento con `count` viene restituito l&#39;attributo:
+Viene restituito un elemento con l&#39;attributo `count`:
 
 ```xml
 <recipient count="200">
 ```
 
-Per utilizzare il risultato, fare riferimento a `@count` attributo:
+Per utilizzare il risultato, fare riferimento all&#39;attributo `@count`:
 
 ```javascript
 if (res.@count > 0)
@@ -330,7 +330,7 @@ if (res.@count > 0)
     }
 ```
 
-Per `select` , aggiungi questo codice a un&#39;attività di codice JavaScript nel flusso di lavoro:
+Per l&#39;operazione `select`, aggiungere questo codice a un&#39;attività codice JavaScript nel flusso di lavoro:
 
 ```javascript
 var myXML =
@@ -349,7 +349,7 @@ for each (var rcp in res.recipient)
     logInfo(rcp.@firstName + " " + rcp.@lastName)
 ```
 
-Perché il `select` è l&#39;operazione predefinita, non è necessario specificarla.
+Poiché l&#39;operazione `select` è l&#39;operazione predefinita, non è necessario specificarla.
 
 Questo video illustra come leggere dal database:
 >[!VIDEO](https://video.tv.adobe.com/v/18475/?learn=on)
@@ -360,23 +360,23 @@ Puoi attivare i flussi di lavoro a livello di programmazione, ad esempio nei flu
 
 L’attivazione dei flussi di lavoro avviene tramite l’utilizzo di eventi. Puoi utilizzare queste funzioni per gli eventi:
 
-* Per pubblicare un evento, puoi utilizzare l’ `PostEvent` metodo. [Ulteriori informazioni](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html).
-* Per ricevere un evento, puoi utilizzare **[!UICONTROL External signal]** attività. [Ulteriori informazioni](external-signal.md).
+* Per pubblicare un evento, è possibile utilizzare il metodo statico `PostEvent`. [Ulteriori informazioni](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html).
+* Per ricevere un evento, è possibile utilizzare l&#39;attività **[!UICONTROL External signal]**. [Ulteriori informazioni](external-signal.md).
 
 Puoi attivare i flussi di lavoro in diversi modi:
 
-* Puoi attivare un flusso di lavoro in linea, ovvero dallo script principale di una **[!UICONTROL JavaScript code]** attività.
+* È possibile attivare un workflow in linea, ovvero dallo script principale di un&#39;attività **[!UICONTROL JavaScript code]**.
 * Puoi attivare un flusso di lavoro al completamento di un altro:
-   * Aggiungere uno script di inizializzazione al **[!UICONTROL End]** attività del flusso di lavoro iniziale.
-   * Aggiungi il **[!UICONTROL External signal]** attività all’inizio del flusso di lavoro di target.
+   * Aggiungere uno script di inizializzazione all&#39;attività **[!UICONTROL End]** del flusso di lavoro iniziale.
+   * Aggiungi l&#39;attività **[!UICONTROL External signal]** all&#39;inizio del flusso di lavoro di destinazione.
 
      Al completamento del flusso di lavoro iniziale, viene registrato un evento. La transizione in uscita viene attivata e le variabili dell’evento vengono compilate. Quindi, l’evento viene ricevuto dal flusso di lavoro di destinazione.
 
      >[!TIP]
      >
-     >Come best practice, quando aggiungi uno script a un’attività, racchiudi il nome dell’attività in trattini doppi, ad esempio: `-- end --`. [Ulteriori informazioni](workflow-best-practices.md) informazioni sulle best practice per i flussi di lavoro.
+     >Come procedura ottimale, quando si aggiunge uno script a un&#39;attività, racchiudere il nome dell&#39;attività in trattini doppi, ad esempio `-- end --`. [Ulteriori informazioni](workflow-best-practices.md) sulle best practice per i flussi di lavoro.
 
-Sintassi del `PostEvent` metodo:
+Sintassi del metodo `PostEvent`:
 
 ```javascript
 PostEvent(
@@ -388,7 +388,7 @@ PostEvent(
 )
 ```
 
-In questo esempio, al completamento del flusso di lavoro, viene passato un breve testo a **segnale** attività del **wkfExampleReceiver** workflow:
+In questo esempio, al completamento del flusso di lavoro, viene passato un breve testo all&#39;attività **signal** del flusso di lavoro **wkfExampleReceiver**:
 
 ```javascript
 var strLabel = "Adobe Campaign, Marketing that delivers"
@@ -400,13 +400,13 @@ xtk.workflow.PostEvent(
     false)
 ```
 
-Perché l&#39;ultimo parametro è impostato su `false`, il **wkfExampleReceiver** Il flusso di lavoro viene attivato ogni volta che viene completato il flusso di lavoro iniziale.
+Poiché l&#39;ultimo parametro è impostato su `false`, il flusso di lavoro **wkfExampleReceiver** viene attivato ogni volta che il flusso di lavoro iniziale viene completato.
 
 Quando attivi i flussi di lavoro, tieni presente i seguenti principi:
 
-* Il `PostEvent` viene eseguito in modo asincrono. Il comando viene inserito nella coda del server. Il metodo restituisce dopo la registrazione dell’evento.
+* Il comando `PostEvent` viene eseguito in modo asincrono. Il comando viene inserito nella coda del server. Il metodo restituisce dopo la registrazione dell’evento.
 * È necessario avviare il flusso di lavoro di destinazione. In caso contrario, viene scritto un errore nel file di registro.
-* Se il flusso di lavoro di destinazione è sospeso, il `PostEvent` viene inserito nella coda fino alla ripresa del flusso di lavoro.
+* Se il flusso di lavoro di destinazione è sospeso, il comando `PostEvent` viene accodato fino alla ripresa del flusso di lavoro.
 * L’attività attivata non richiede che sia in corso un’attività.
 
 Questo video illustra come utilizzare i metodi API statici:
@@ -419,22 +419,22 @@ Questo video mostra come attivare i flussi di lavoro:
 
 Questi esempi mostrano come eseguire queste azioni:
 
-* Utilizza il `get` e `create` metodi sugli schemi per utilizzare metodi SOAP non statici
+* Utilizzare i metodi `get` e `create` negli schemi per utilizzare metodi SOAP non statici
 * Creare metodi che eseguono query SQL
-* Utilizza il `write` metodo per inserire, aggiornare ed eliminare record
+* Utilizzare il metodo `write` per inserire, aggiornare ed eliminare record
 
 Segui questi passaggi:
 
 1. Definisci la query:
 
-   * Recuperare un&#39;entità utilizzando `create` nello schema corrispondente, ad esempio il metodo `xtk:workflow` schema. [Ulteriori informazioni](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html).
-   * Utilizza il `queryDef` per eseguire una query SQL.
+   * Recuperare un&#39;entità utilizzando il metodo `create` nello schema corrispondente, ad esempio lo schema `xtk:workflow`. [Ulteriori informazioni](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html).
+   * Utilizzare il metodo `queryDef` per eseguire una query SQL.
 
-1. Eseguire la query utilizzando `ExecuteQuery` metodo. [Ulteriori informazioni](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html).
+1. Eseguire la query utilizzando il metodo `ExecuteQuery`. [Ulteriori informazioni](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html).
 
-   Utilizza il `for each` per recuperare i risultati.
+   Utilizzare il ciclo `for each` per recuperare i risultati.
 
-### Sintassi del `queryDef` metodo con un `select` clausola
+### Sintassi del metodo `queryDef` con una clausola `select`
 
 ```xml
 <queryDef schema="schema_key" operation="operation_type">
@@ -461,11 +461,11 @@ Segui questi passaggi:
 </queryDef>
 ```
 
-### `Create` metodo
+### metodo `Create`
 
 #### Esempio 1: selezionare i record e scrivere nel giornale di registrazione
 
-I nomi interni dei flussi di lavoro che si trovano in **wfExamples** cartella selezionata. I risultati vengono ordinati in base al nome interno, in ordine crescente, e scritti nel giornale di registrazione.
+I nomi interni dei flussi di lavoro che si trovano nella cartella **wfExamples** sono selezionati. I risultati vengono ordinati in base al nome interno, in ordine crescente, e scritti nel giornale di registrazione.
 
 ```javascript
 var query = xtk.queryDef.create(
@@ -489,7 +489,7 @@ for each (var w in res.workflow)
 
 #### Esempio 2: eliminare record
 
-Vengono selezionati il nome, il cognome, l’e-mail e l’ID di tutti i destinatari di nome Chris Smith. I risultati vengono ordinati per e-mail, in ordine crescente e scritti nel giornale di registrazione. A `delete` per eliminare i record selezionati viene utilizzata l&#39;operazione.
+Vengono selezionati il nome, il cognome, l’e-mail e l’ID di tutti i destinatari di nome Chris Smith. I risultati vengono ordinati per e-mail, in ordine crescente e scritti nel giornale di registrazione. È stata utilizzata un&#39;operazione `delete` per eliminare i record selezionati.
 
 ```javascript
 // Build the query, create a query object and hold the object in a variable
@@ -525,7 +525,7 @@ for each (var rec in res.recipient)
 
 #### Esempio 3: selezionare i record e scrivere nel giornale di registrazione
 
-In questo esempio viene utilizzato un metodo non statico. L’anno e-mail e l’anno di nascita di tutti i destinatari le cui informazioni sono memorizzate in **1234** e il cui nome di dominio e-mail inizia con &quot;adobe&quot; vengono selezionati. I risultati sono ordinati in ordine decrescente per data di nascita. L&#39;e-mail dei destinatari viene scritta nel giornale di registrazione.
+In questo esempio viene utilizzato un metodo non statico. Vengono selezionati l&#39;anno e-mail e l&#39;anno di nascita di tutti i destinatari le cui informazioni sono memorizzate nella cartella **1234** e il cui nome di dominio e-mail inizia con &quot;adobe&quot;. I risultati sono ordinati in ordine decrescente per data di nascita. L&#39;e-mail dei destinatari viene scritta nel giornale di registrazione.
 
 ```javascript
 var query = xtk.queryDef.create(
@@ -550,19 +550,19 @@ for each (var w in res.recipient)
     logInfo(w.@email)
 ```
 
-### `Write` metodo
+### metodo `Write`
 
-È possibile inserire, aggiornare ed eliminare record. È possibile utilizzare `Write` su qualsiasi schema in Adobe Campaign. Poiché questo metodo è statico, non è necessario creare un oggetto. Puoi utilizzare le seguenti operazioni:
+È possibile inserire, aggiornare ed eliminare record. È possibile utilizzare il metodo `Write` su qualsiasi schema in Adobe Campaign. Poiché questo metodo è statico, non è necessario creare un oggetto. Puoi utilizzare le seguenti operazioni:
 
-* Il `update` operazione
-* Il `insertOrUpdate` con il `_key` per identificare il record da aggiornare
+* Operazione `update`
+* Operazione `insertOrUpdate`, con l&#39;argomento `_key` per identificare il record da aggiornare
 
-  Se non si specifica **Destinatari** cartella, se esiste una corrispondenza, il record viene aggiornato in qualsiasi sottocartella. In caso contrario, il record viene creato nella radice **Destinatari** cartella.
+  Se non si specifica la cartella **Destinatari**, se esiste una corrispondenza, il record verrà aggiornato in una sottocartella. In caso contrario, il record viene creato nella cartella principale **Destinatari**.
 
-* Il `delete` operazione
+* Operazione `delete`
 
 >[!IMPORTANT]
-> Se utilizzi Adobe Campaign v8, ti consigliamo di utilizzare il meccanismo di staging con **Acquisizione** e **Aggiornamento/eliminazione dati** API per `Write` in una tabella di Snowflake. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
+> Se utilizzi Adobe Campaign v8, ti consigliamo di utilizzare il meccanismo di gestione temporanea con le API **Ingestion** e **Data update/delete** per il metodo `Write` in una tabella di Snowflake. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
 
 #### Esempio 1: inserire o aggiornare un record
 
@@ -619,7 +619,7 @@ Questo video mostra un esempio di utilizzo di un metodo API non statico in un fl
 * [Esempi di chiamate SOAP](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html)
 * Metodi:
    * [Crea](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html)
-   * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html)
+   * [EliminaRaccolta](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html)
    * [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html)
    * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html)
    * [Scrittura](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html)

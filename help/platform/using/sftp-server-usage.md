@@ -43,11 +43,11 @@ Per evitare tali problemi, l’Adobe consiglia di seguire le best practice ripor
 
 >[!NOTE]
 >
->* Puoi monitorare l’archiviazione del server SFTP con Campaign Classic [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}.
+>* Puoi monitorare l&#39;archiviazione del server SFTP con il Campaign Classic [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}.
 >
->* Il Pannello di controllo è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente i diritti da amministratore sono descritti in [questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel){target="_blank"}.
+>* Il Pannello di controllo è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente l&#39;accesso come amministratore sono descritti in [questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel){target="_blank"}.
 >
->* La tua istanza deve essere aggiornata con [build GA più recente](../../rn/using/rn-overview.md). Scopri come controllare la versione in [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version){target="_blank"}.
+>* Tieni presente che l&#39;istanza deve essere aggiornata con la [build GA più recente](../../rn/using/rn-overview.md). Scopri come controllare la versione in [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version){target="_blank"}.
 
 * Le dimensioni del server variano a seconda della licenza. In ogni caso, mantieni i dati minimi possibili e conservali solo per il tempo necessario (15 giorni è il limite di tempo massimo).
 
@@ -63,14 +63,14 @@ Se utilizzi un server SFTP personalizzato, assicurati di seguire il più possibi
 
 Inoltre, quando si specifica in Campaign Classic un percorso per un server SFTP esterno, la sintassi del percorso varia a seconda del sistema operativo del server SFTP:
 
-* Se il server SFTP è attivo **Windows**, utilizza sempre un percorso relativo.
-* Se il server STP è attivo **Linux**, utilizza sempre un percorso relativo alla home (che inizia con &quot;~/&quot;) o un percorso assoluto (che inizia con &quot;/&quot;).
+* Se il server SFTP si trova in **Windows**, utilizza sempre un percorso relativo.
+* Se il server STP si trova su **Linux**, utilizzare sempre un percorso relativo alla home (che inizia con &quot;~/&quot;) o un percorso assoluto (che inizia con &quot;/&quot;).
 
 ## Problemi di connessione con il server SFTP ospitato da Adobe {#sftp-server-troubleshooting}
 
-La sezione seguente elenca le informazioni da verificare e fornire al team di supporto Adobe tramite [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"} quando si verificano problemi di connessione con i server SFTP ospitati da Adobe.
+Nella sezione seguente sono elencate le informazioni da verificare e fornire al team di supporto Adobe tramite [l&#39;Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"} quando si verificano problemi di connessione con i server SFTP ospitati da Adobe.
 
-1. Verifica che l’istanza sia in esecuzione. Per farlo, apri il browser, quindi fai una **[!UICONTROL GET]** chiama sull’istanza **[!UICONTROL /r/test]** endpoint:
+1. Verifica che l’istanza sia in esecuzione. A questo scopo, apri il browser, quindi effettua una chiamata **[!UICONTROL GET]** sull&#39;endpoint **[!UICONTROL /r/test]** dell&#39;istanza:
 
    ```xml
    https://instanceUrl/r/test
@@ -96,11 +96,11 @@ La sezione seguente elenca le informazioni da verificare e fornire al team di su
    myCompany-stage-sftp.neolane.net [AAA.BBB.CCC.D] 22 (ssh) open
    ```
 
-   Se la porta non è aperta, assicurarsi di aprire le connessioni in uscita sul lato, quindi riprovare. Se riscontri ancora problemi di connessione, condividi l’output del comando con [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team.
+   Se la porta non è aperta, assicurarsi di aprire le connessioni in uscita sul lato, quindi riprovare. Se riscontri ancora problemi di connessione, condividi l&#39;output del comando con il team [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 1. Verifica che l’IP pubblico da cui stai tentando di avviare la connessione SFTP sia quello fornito all’Adobe di supporto per il inserisco nell&#39;elenco Consentiti di.
-1. Se si utilizza un&#39;autenticazione basata su password, la password potrebbe essere scaduta (le password hanno un periodo di validità di 90 giorni). Pertanto, consigliamo vivamente di utilizzare un’autenticazione basata su chiave (consulta [Best practice per il server SFTP](#sftp-server-best-practices)).
-1. Se utilizzi un’autenticazione basata su chiave, verifica che la chiave utilizzata sia la stessa fornita a [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) team per la configurazione dell’istanza.
+1. Se si utilizza un&#39;autenticazione basata su password, la password potrebbe essere scaduta (le password hanno un periodo di validità di 90 giorni). È pertanto consigliabile utilizzare un&#39;autenticazione basata su chiave (consulta [Best practice per il server SFTP](#sftp-server-best-practices)).
+1. Se utilizzi un&#39;autenticazione basata su chiave, verifica che la chiave utilizzata sia la stessa fornita al team [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per la configurazione dell&#39;istanza.
 1. Se utilizzi FileZilla o uno strumento FTP equivalente, fornisci i dettagli dei registri di connessione nel ticket di supporto.
 
 ## Errore &quot;Impossibile risolvere il nome host&quot;
@@ -121,7 +121,7 @@ Questo errore si verifica quando si tenta di connettere il server FTP da un flus
 
 Questo errore indica che il nome di dominio del server FTP non è stato risolto correttamente. Per risolvere i problemi, effettuare le seguenti operazioni:
 
-1. Risoluzione dei problemi **Configurazione server DNS**:
+1. Risolvere i problemi relativi alla **configurazione del server DNS**:
 
    1. Verificare se il nome del server è stato aggiunto al server DNS locale.
    1. In caso affermativo, esegui il seguente comando sul server Adobe Campaign per ottenere l’indirizzo IP:
@@ -130,10 +130,10 @@ Questo errore indica che il nome di dominio del server FTP non è stato risolto 
 
       Questo conferma che il server FTP funziona e che è raggiungibile dal server applicazioni Adobe Campaign.
 
-1. Risoluzione dei problemi **registri di sessione**:
+1. Risolvere i problemi relativi ai **registri di sessione**:
 
-   1. Nel flusso di lavoro, fai doppio clic sul pulsante [Trasferimento file](../../workflow/using/file-transfer.md) attività.
-   1. Vai a **[!UICONTROL File Transfer]** , quindi fai clic su **[!UICONTROL Advanced Parameters]**.
+   1. Nel flusso di lavoro fare doppio clic sull&#39;attività [Trasferimento file](../../workflow/using/file-transfer.md).
+   1. Vai alla scheda **[!UICONTROL File Transfer]**, quindi fai clic su **[!UICONTROL Advanced Parameters]**.
    1. Seleziona l’opzione **[!UICONTROL Display the session logs]**.
 
       ![](assets/sftp-error-display-logs.png)
@@ -144,7 +144,7 @@ Questo errore indica che il nome di dominio del server FTP non è stato risolto 
 
    In caso contrario, convalida:
 
-   * La password non contiene `@` carattere. La connessione non riesce se è presente un `@` nella password.
+   * La password non contiene il carattere `@`. La connessione non riesce se la password contiene un carattere `@`.
    * Non vi sono problemi di firewall che possono ostacolare la comunicazione tra il server applicazioni Adobe Campaign e il server SFTP.
    * Esegui i comandi tracert e telnet dal server della campagna all’sftp per verificare se sono presenti problemi di connessione.
    * Nessun problema relativo al protocollo di comunicazione.
