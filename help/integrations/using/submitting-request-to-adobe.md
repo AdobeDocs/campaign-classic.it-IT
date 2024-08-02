@@ -8,7 +8,7 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: f3c19fcd-12cb-4ca3-b4b7-7dc4be57f4ea
-source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
+source-git-commit: 7b4fbefe0f6bd26ee9260d15e8303f716af7ac96
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 >
 >In qualità di utente v7, per procedere, assicurati che Adobe Identity Management System (IMS) sia abilitato sul tuo sistema. [Ulteriori informazioni](../../integrations/using/about-adobe-id.md).
 
-Una volta che Identity Management Service (IMS) di Adobe è abilitato per la tua organizzazione, puoi richiedere il provisioning dell&#39;integrazione [Experience Cloud Audience](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"} con Campaign. A tale scopo, inviare un&#39;e-mail a [Digital-Request@adobe.com](mailto:Digital-Request@adobe.com) con le seguenti informazioni:
+Una volta che Identity Management Service (IMS) di Adobe è abilitato per la tua organizzazione, puoi richiedere il provisioning dell&#39;integrazione [Experience Cloud Audience](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"} con Campaign. Per farlo, contatta il rappresentante del tuo Adobe e fornisci le seguenti informazioni:
 
 <table> 
  <tbody> 
