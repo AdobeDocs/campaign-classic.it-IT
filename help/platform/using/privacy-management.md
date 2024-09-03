@@ -8,15 +8,14 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
-source-git-commit: 5d237d42adabe42a07bc759913dd9453df650671
+source-git-commit: 122d69d3d7474480f7799248413ac89338469ebc
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 80%
+source-wordcount: '909'
+ht-degree: 79%
 
 ---
 
 # Gestione della privacy {#privacy-management}
-
 
 Adobe Campaign offre una serie di strumenti per aiutarti a rispettare le [normative sulla privacy](#privacy-management-regulations) (inclusi GDPR, CCPA, PDPA, LGPD).
 
@@ -105,6 +104,7 @@ Di seguito sono riportati i valori di conservazione predefiniti per le tabelle i
 * **Statistiche sull’elaborazione degli eventi**: 1 anno
 * **Eventi archiviati**: 1 anno
 * **Eventi di pipeline ignorati**: 1 mese
+* **Reporting dinamico**: 13 mesi
 
 Analogamente all’eliminazione, quando utilizzi la funzionalità standard del flusso di lavoro puoi impostare periodi di conservazione per qualsiasi tabella personalizzata.
 
