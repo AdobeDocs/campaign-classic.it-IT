@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 33d06c00ca9c7cd0ff077341df2b5b52ddf747a4
-workflow-type: ht
-source-wordcount: '1636'
-ht-degree: 100%
+source-git-commit: ef89551952cfbfd525a4dff716fe4676c1252d05
+workflow-type: tm+mt
+source-wordcount: '1653'
+ht-degree: 98%
 
 ---
 
@@ -172,6 +172,7 @@ The following systems are deprecated for Campaign Classic. Please refer to the [
 
 ### Sistemi operativi {#o-s-eol}
 
+* A partire dalla versione 7.3.1, Adobe Campaign non è più compatibile con Windows 8 e Windows Server 2012.
 
 * A partire dalla versione 22.1, Adobe Campaign non è più compatibile con CentOs 8.x (64 bit). CentOS Linux 8 ha raggiunto la fine del ciclo di vita (EOL) il 31 dicembre 2021. [Ulteriori informazioni](https://www.centos.org/centos-linux-eol/).
 
