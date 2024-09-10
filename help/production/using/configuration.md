@@ -5,7 +5,7 @@ description: Configurazione
 feature: Monitoring, Configuration
 badge-v7-prem: label="Solo on-premise/ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
 exl-id: 80d388fd-873c-4a08-b8b6-697988f2a18c
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 7906e9fee164d731659bbb9f96394faca5961240
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 1%
@@ -26,7 +26,7 @@ Una volta configurata, questa variabile viene presa in considerazione da tutti i
 
 Modifica il file **customer.sh** e aggiungi la seguente riga:
 
-```
+```sql
 export TRACE_ADDR=localhost:<listening port>
 ```
 
