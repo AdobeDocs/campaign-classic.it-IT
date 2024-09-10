@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 6c85ca9d50dd970915b7c46939f88f4d7fdf07d8
 workflow-type: tm+mt
 source-wordcount: '2827'
 ht-degree: 0%
@@ -47,9 +47,9 @@ Per impostazione predefinita, il flusso di lavoro **[!UICONTROL Database cleanup
 >
 >Affinché il flusso di lavoro **[!UICONTROL Database cleanup]** possa iniziare alla data e all&#39;ora definite nella pianificazione, è necessario avviare il motore del flusso di lavoro (wfserver).
 
-### Distribuzione guidata {#deployment-wizard}
+### procedura guidata di distribuzione {#deployment-assistant}
 
-Il **[!UICONTROL Deployment wizard]**, accessibile tramite il menu **[!UICONTROL Tools > Advanced]**, consente di configurare la durata del salvataggio dei dati. I valori sono espressi in giorni. Se questi valori non vengono modificati, il flusso di lavoro utilizzerà i valori predefiniti.
+Il **[!UICONTROL deployment wizard]**, accessibile tramite il menu **[!UICONTROL Tools > Advanced]**, consente di configurare la durata del salvataggio dei dati. I valori sono espressi in giorni. Se questi valori non vengono modificati, il flusso di lavoro utilizzerà i valori predefiniti.
 
 ![](assets/ncs_cleanup_deployment-wizard.png)
 
@@ -125,7 +125,7 @@ La prima attività eseguita dal flusso di lavoro **[!UICONTROL Database cleanup]
 
 Questa attività elimina tutte le consegne da eliminare o riciclare.
 
-1. Il flusso di lavoro **[!UICONTROL Database cleanup]** seleziona tutte le consegne per le quali il campo **deleteStatus** ha il valore **[!UICONTROL Yes]** o **[!UICONTROL Recycled]** e la cui data di eliminazione è precedente al periodo definito nel campo **[!UICONTROL Deleted deliveries]** (**NmsCleanup_RecycledDeliveryPurgeDelay**) della procedura guidata di distribuzione. Per ulteriori informazioni, consulta [Distribuzione guidata](#deployment-wizard). Questo periodo viene calcolato in relazione alla data del server corrente.
+1. Il flusso di lavoro **[!UICONTROL Database cleanup]** seleziona tutte le consegne per le quali il campo **deleteStatus** ha il valore **[!UICONTROL Yes]** o **[!UICONTROL Recycled]** e la cui data di eliminazione è precedente al periodo definito nel campo **[!UICONTROL Deleted deliveries]** (**NmsCleanup_RecycledDeliveryPurgeDelay**) della procedura guidata di distribuzione. Per ulteriori informazioni, vedere [distribuzione guidata](#deployment-assistant). Questo periodo viene calcolato in relazione alla data del server corrente.
 1. Per ogni server di mid-sourcing, l’attività seleziona l’elenco delle consegne da eliminare.
 1. Il flusso di lavoro **[!UICONTROL Database cleanup]** elimina i registri di consegna, gli allegati, le informazioni della pagina mirror e tutti gli altri dati correlati.
 1. Prima di eliminare definitivamente la consegna, il flusso di lavoro elimina le informazioni collegate dalle tabelle seguenti:
@@ -308,7 +308,7 @@ Questo passaggio consente di eliminare i record per i quali non sono stati elabo
    DELETE FROM XtkReject WHERE iRejectId IN (SELECT iRejectId FROM XtkReject WHERE tsLog < $(curDate)) LIMIT $(l)
    ```
 
-   dove `$(curDate)` è la data del server corrente da cui si sottrae il periodo definito per l&#39;opzione **NmsCleanup_RejectsPurgeDelay** (fare riferimento a [Distribuzione guidata](#deployment-wizard)) e `$(l)` è il numero massimo di record da eliminare in massa.
+   dove `$(curDate)` è la data del server corrente da cui si sottrae il periodo definito per l&#39;opzione **NmsCleanup_RejectsPurgeDelay** (fare riferimento a [procedura guidata di distribuzione](#deployment-assistant)) e `$(l)` è il numero massimo di record da eliminare in massa.
 
 1. Tutti i rifiuti orfani vengono quindi eliminati utilizzando la seguente query:
 
@@ -395,7 +395,7 @@ SELECT iGroupId FROM NmsGroup WHERE iType>0"
 
 ### Pulizia dei visitatori {#cleanup-of-visitors}
 
-Questa attività elimina i record obsoleti dalla tabella dei visitatori mediante l’eliminazione di massa. I record obsoleti sono quelli per i quali l&#39;ultima modifica è precedente al periodo di conservazione definito nella procedura guidata di distribuzione (fare riferimento a [Distribuzione guidata](#deployment-wizard)). Viene utilizzata la seguente query:
+Questa attività elimina i record obsoleti dalla tabella dei visitatori mediante l’eliminazione di massa. I record obsoleti sono quelli per i quali l&#39;ultima modifica è precedente al periodo di conservazione definito nella procedura guidata di distribuzione (fare riferimento a [procedura guidata di distribuzione](#deployment-assistant)). Viene utilizzata la seguente query:
 
 ```sql
 DELETE FROM NmsVisitor WHERE iVisitorId IN (SELECT iVisitorId FROM NmsVisitor WHERE iRecipientId = 0 AND tsLastModified < AddDays(GetDate(), -30) AND iOrigin = 0 LIMIT 20000)
@@ -423,7 +423,7 @@ DELETE FROM NmsSubscription WHERE iDeleteStatus <>0
 
 ### Pulizia dei registri di tracciamento {#cleanup-of-tracking-logs}
 
-Questa attività elimina i record obsoleti dalle tabelle di registro di tracciamento e di tracciamento web. I record obsoleti sono precedenti al periodo di conservazione definito nella procedura guidata di distribuzione (fare riferimento a [Distribuzione guidata](#deployment-wizard)).
+Questa attività elimina i record obsoleti dalle tabelle di registro di tracciamento e di tracciamento web. I record obsoleti sono quelli precedenti al periodo di conservazione definito nella procedura guidata di distribuzione (fare riferimento a [procedura guidata di distribuzione](#deployment-assistant)).
 
 1. Innanzitutto, l’elenco delle tabelle dei registri di tracciamento viene recuperato utilizzando la seguente query:
 
@@ -464,7 +464,7 @@ Questa attività ti consente di eliminare i registri di consegna memorizzati in 
    DELETE FROM $(tableName) WHERE iBroadLogId IN (SELECT iBroadLogId FROM $(tableName) WHERE tsLastModified < $(option) LIMIT 5000) 
    ```
 
-   dove `$(tableName)` è il nome di ogni tabella nell&#39;elenco degli schemi e `$(option)` è la data definita per l&#39;opzione **NmsCleanup_BroadLogPurgeDelay** (fare riferimento a [Distribuzione guidata](#deployment-wizard)).
+   dove `$(tableName)` è il nome di ogni tabella nell&#39;elenco degli schemi e `$(option)` è la data definita per l&#39;opzione **NmsCleanup_BroadLogPurgeDelay** (fare riferimento alla [procedura guidata di distribuzione](#deployment-assistant)).
 
 1. Infine, il flusso di lavoro controlla se la tabella **NmsProviderMsgId** esiste. In tal caso, tutti i dati obsoleti vengono eliminati utilizzando la seguente query:
 
@@ -472,7 +472,7 @@ Questa attività ti consente di eliminare i registri di consegna memorizzati in 
    DELETE FROM NmsProviderMsgId WHERE iBroadLogId IN (SELECT iBroadLogId FROM NmsProviderMsgId WHERE tsCreated < $(option) LIMIT 5000)
    ```
 
-   dove `$(option)` corrisponde alla data definita per l&#39;opzione **NmsCleanup_BroadLogPurgeDelay** (fare riferimento a [Distribuzione guidata](#deployment-wizard)).
+   dove `$(option)` corrisponde alla data definita per l&#39;opzione **NmsCleanup_BroadLogPurgeDelay** (fare riferimento alla [procedura guidata di distribuzione](#deployment-assistant)).
 
 ### Pulizia della tabella NmsEmailErrorStat {#cleanup-of-the-nmsemailerrorstat-table-}
 
@@ -552,7 +552,7 @@ L’elenco delle tabelle delle proposte viene recuperato e l’eliminazione di m
 DELETE FROM NmsPropositionXxx WHERE iPropositionId IN (SELECT iPropositionId FROM NmsPropositionXxx WHERE tsLastModified < $(option) LIMIT 5000) 
 ```
 
-dove `$(option)` è la data definita per l&#39;opzione **NmsCleanup_PropositionPurgeDelay** (fare riferimento a [Distribuzione guidata](#deployment-wizard)).
+dove `$(option)` è la data definita per l&#39;opzione **NmsCleanup_PropositionPurgeDelay** (fare riferimento alla [procedura guidata di distribuzione](#deployment-assistant)).
 
 ### Pulizia delle tabelle di simulazione {#cleanup-of-simulation-tables}
 
