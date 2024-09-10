@@ -7,7 +7,7 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 4%
@@ -34,11 +34,11 @@ A questo scopo, segui la procedura indicata di seguito:
 
 >[!NOTE]
 >
->Il numero di eventi in attesa nella coda viene visualizzato nella sezione [Indicatori di sistema](../../production/using/monitoring-processes.md#system-indicators) della pagina di monitoraggio dei processi di Adobe Campaign. Per ulteriori informazioni sulla procedura guidata di distribuzione, consultare [questa sezione](../../installation/using/deploying-an-instance.md#deployment-wizard).
+>Il numero di eventi in attesa nella coda viene visualizzato nella sezione [Indicatori di sistema](../../production/using/monitoring-processes.md#system-indicators) della pagina di monitoraggio dei processi di Adobe Campaign. Per ulteriori informazioni sulla procedura guidata di distribuzione, consultare [questa sezione](../../installation/using/deploying-an-instance.md#deployment-assistant).
 
 ## Eliminare gli eventi {#purging-events}
 
-È possibile utilizzare la [procedura guidata di distribuzione](../../production/using/database-cleanup-workflow.md#deployment-wizard) per configurare la durata della memorizzazione dei dati nel database.
+È possibile utilizzare la [procedura guidata di distribuzione](../../production/using/database-cleanup-workflow.md#deployment-assistant) per configurare la durata della memorizzazione dei dati nel database.
 
 La rimozione degli eventi viene eseguita automaticamente dal [flusso di lavoro di pulizia del database](../../production/using/database-cleanup-workflow.md). Questo flusso di lavoro elimina gli eventi ricevuti e memorizzati nelle istanze di esecuzione e gli eventi archiviati in un&#39;istanza di controllo.
 

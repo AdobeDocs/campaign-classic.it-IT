@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
-source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '1306'
 ht-degree: 1%
@@ -133,13 +133,13 @@ La finestra **[!UICONTROL Creation steps]** consente di visualizzare e modificar
 
 ### Passaggio 6: creazione del database {#step-6---creating-the-database}
 
-La fase finale della procedura guidata consente di creare il database. Fai clic su **[!UICONTROL Start]** per confermare.
+La fase finale dell&#39;assistente consente di creare il database. Fai clic su **[!UICONTROL Start]** per confermare.
 
 ![](assets/s_ncs_install_db_oracle_creation06.png)
 
 Una volta creato il database, è possibile riconnettersi per finalizzare la configurazione dell’istanza.
 
-Per completare la configurazione dell’istanza, è ora necessario avviare la procedura guidata di distribuzione. Fare riferimento a [Distribuzione guidata](../../installation/using/deploying-an-instance.md#deployment-wizard).
+Per completare la configurazione dell’istanza, è ora necessario avviare la procedura guidata di distribuzione. Fare riferimento alla [procedura guidata di distribuzione](../../installation/using/deploying-an-instance.md#deployment-assistant).
 
 Le impostazioni di connessione per il database collegato all&#39;istanza sono memorizzate nel file **`/conf/config-<instance>.xml`** presente nella directory di installazione di Adobe Campaign.
 
@@ -224,13 +224,13 @@ La finestra **[!UICONTROL Creation steps]** consente di visualizzare e modificar
 
 ### Passaggio 5: creazione del database {#step-5---creating-the-database}
 
-La fase finale della procedura guidata consente di creare il database. Fai clic su **[!UICONTROL Start]** per confermare.
+La fase finale dell&#39;assistente consente di creare il database. Fai clic su **[!UICONTROL Start]** per confermare.
 
 ![](assets/s_ncs_install_db_oracle_creation06.png)
 
 Una volta completata la creazione del database, puoi riconnetterti per finalizzare la configurazione dell’istanza.
 
-Per completare la configurazione dell’istanza, è ora necessario avviare la procedura guidata di distribuzione. Fare riferimento a [Distribuzione guidata](../../installation/using/deploying-an-instance.md#deployment-wizard).
+Per completare la configurazione dell’istanza, è ora necessario avviare la procedura guidata di distribuzione. Fare riferimento alla [procedura guidata di distribuzione](../../installation/using/deploying-an-instance.md#deployment-assistant).
 
 Le impostazioni di connessione per il database collegato all&#39;istanza sono memorizzate nel file **`/conf/config-<instance>.xml`** presente nella directory di installazione di Adobe Campaign.
 

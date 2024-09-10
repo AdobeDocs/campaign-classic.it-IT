@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '3389'
 ht-degree: 1%
@@ -21,11 +21,11 @@ ht-degree: 1%
 >
 >Le configurazioni lato server possono essere eseguite solo da Adobe per le distribuzioni in hosting da Adobe. Per ulteriori informazioni sulle diverse distribuzioni, consulta la sezione [Modelli di hosting](../../installation/using/hosting-models.md) o [questa pagina](../../installation/using/capability-matrix.md).
 
-## Distribuzione guidata {#deployment-wizard}
+## procedura guidata di distribuzione {#deployment-assistant}
 
 Adobe Campaign fornisce un assistente grafico, disponibile nella console client di Adobe Campaign, per definire i parametri dell’istanza a cui stai per connetterti.
 
-Per avviare la distribuzione guidata, selezionare **Strumenti > Avanzate > Distribuzione guidata**.
+Per avviare la procedura guidata di distribuzione, selezionare **Strumenti > Avanzate > procedura guidata di distribuzione**.
 
 ![](assets/s_ncs_install_deployment_wiz_01.png)
 
@@ -396,11 +396,11 @@ Il campo **Maschere URL** consente di specificare l&#39;elenco delle maschere UR
 Puoi specificare più maschere URL utilizzando una virgola per separarle.
 
 * Per informazioni sull&#39;utilizzo e la gestione delle immagini nelle e-mail, consulta [questa sezione](../../delivery/using/defining-the-email-content.md#adding-images).
-* Nella procedura guidata di consegna, le immagini chiamate da questi URL avranno lo stato &quot;Ignorato&quot;.
+* Nell’assistente alla consegna, le immagini chiamate da questi URL avranno lo stato &quot;Ignorato&quot;.
 
 ### Modalità di pubblicazione {#publication-modes}
 
-La sezione inferiore della procedura guidata consente di selezionare le opzioni di pubblicazione delle risorse pubbliche e delle immagini.
+La sezione inferiore dell’assistente consente di selezionare le opzioni di pubblicazione delle risorse pubbliche e delle immagini.
 
 Sono disponibili le seguenti modalità di pubblicazione:
 

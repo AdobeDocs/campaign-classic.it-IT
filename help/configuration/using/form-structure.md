@@ -6,7 +6,7 @@ feature: Application Settings
 role: Data Engineer, Developer
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '2398'
 ht-degree: 0%
@@ -613,12 +613,12 @@ Il tag **`<check expr="<condition>" />`** combinato con il tag **`<error>`** imp
 
 ## Procedure guidate {#wizards}
 
-Una procedura guidata consente di eseguire una serie di passaggi di immissione dati sotto forma di pagine. I dati immessi vengono salvati al momento della convalida del modulo.
+Un assistente ti guida attraverso un set di passaggi di immissione dati sotto forma di pagine. I dati immessi vengono salvati al momento della convalida del modulo.
 
-Una procedura guidata ha la seguente struttura:
+Un assistente ha la seguente struttura:
 
 ```xml
-<form type="wizard" name="example" namespace="cus" img="nms:rcpgroup32.png" label="Wizard example" entity-schema="nms:recipient">
+<form type="wizard" name="example" namespace="cus" img="nms:rcpgroup32.png" label="Assistant example" entity-schema="nms:recipient">
   <container title="Title of page 1" desc="Long description of page 1">
     <input xpath="@lastName"/>
     <input xpath="comment"/>
@@ -632,7 +632,7 @@ Una procedura guidata ha la seguente struttura:
 
 ![](assets/d_ncs_integration_form_exemple19.png)
 
-La presenza dell&#39;attributo **type=&quot;wizard&quot;** nell&#39;elemento `<form>` consente di definire la modalità della procedura guidata nella costruzione del modulo. Le pagine sono completate da `<container>` elementi, che sono elementi figlio dell&#39;elemento `<form>`. L&#39;elemento `<container>` di una pagina viene compilato con gli attributi del titolo e desc per visualizzare la descrizione sotto il titolo della pagina. I pulsanti **[!UICONTROL Previous]** e **[!UICONTROL Next]** vengono aggiunti automaticamente per consentire la navigazione tra le pagine.
+La presenza dell&#39;attributo **type=&quot;wizard&quot;** nell&#39;elemento `<form>` consente di definire la modalità assistente nella costruzione del modulo. Le pagine sono completate da `<container>` elementi, che sono elementi figlio dell&#39;elemento `<form>`. L&#39;elemento `<container>` di una pagina viene compilato con gli attributi del titolo e desc per visualizzare la descrizione sotto il titolo della pagina. I pulsanti **[!UICONTROL Previous]** e **[!UICONTROL Next]** vengono aggiunti automaticamente per consentire la navigazione tra le pagine.
 
 Il pulsante **[!UICONTROL Finish]** consente di salvare i dati immessi e di chiudere il modulo.
 

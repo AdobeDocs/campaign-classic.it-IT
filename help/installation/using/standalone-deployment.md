@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
-source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '1077'
 ht-degree: 2%
@@ -216,11 +216,11 @@ Applica i seguenti passaggi:
 
    Consulta [questa pagina](../../installation/using/creating-an-instance-and-logging-on.md) e [questa sezione](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
-   La procedura guidata di creazione del database viene visualizzata quando si esegue il primo accesso:
+   L&#39;Assistente alla creazione del database viene visualizzato quando si esegue il primo accesso:
 
    ![](assets/s_ncs_install_db_oracle_creation01.png)
 
-   Segui i passaggi della procedura guidata e crea il database associato all’istanza di connessione.
+   Segui i passaggi descritti nell’assistente e crea il database associato all’istanza di connessione.
 
    Per ulteriori informazioni, vedere [Creazione e configurazione del database](../../installation/using/creating-and-configuring-the-database.md).
 

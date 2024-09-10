@@ -6,7 +6,7 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Email Design
 role: User
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '1958'
 ht-degree: 1%
@@ -117,7 +117,7 @@ Per ulteriori informazioni, consulta [questa sezione](defining-interactive-conte
 
 ## Utilizza gestione contenuti {#using-content-management}
 
-Puoi definire il contenuto della consegna utilizzando i moduli di gestione del contenuto, direttamente nella procedura guidata di consegna. A questo scopo, nella scheda **[!UICONTROL Advanced]** delle proprietà di consegna è necessario fare riferimento al modello di pubblicazione del content management da utilizzare.
+Puoi definire il contenuto della consegna utilizzando i moduli di gestione del contenuto, direttamente nell’assistente alla consegna. A questo scopo, nella scheda **[!UICONTROL Advanced]** delle proprietà di consegna è necessario fare riferimento al modello di pubblicazione del content management da utilizzare.
 
 ![](assets/s_ncs_content_in_delivery.png)
 
@@ -144,7 +144,7 @@ Per personalizzare l&#39;elenco degli emoticon, fare riferimento a questa [pagin
 
 ## Aggiungi immagini {#adding-images}
 
-Le consegne e-mail in formato HTML possono contenere immagini. Dalla procedura guidata di consegna, puoi importare una pagina HTML contenente immagini o inserirle direttamente utilizzando l’editor HTML tramite l’icona **[!UICONTROL Image]**.
+Le consegne e-mail in formato HTML possono contenere immagini. Dall&#39;assistente alla consegna, puoi importare una pagina di HTML contenente immagini o inserire immagini direttamente utilizzando l&#39;editor di HTML tramite l&#39;icona **[!UICONTROL Image]**.
 
 
 ### Guardrail {#img-guardrails}
@@ -166,7 +166,7 @@ Le immagini possono essere:
 
 ### Inserire e gestire le immagini {#manage-images}
 
-La consegna guidata consente di aggiungere al contenuto dei messaggi immagini locali, o immagini memorizzate nella libreria. A tale scopo, fare clic sul pulsante **[!UICONTROL Image]** nella barra degli strumenti del contenuto di HTML.
+L’assistente alla consegna ti consente di aggiungere al contenuto dei messaggi immagini locali, o immagini memorizzate nella libreria. A tale scopo, fare clic sul pulsante **[!UICONTROL Image]** nella barra degli strumenti del contenuto di HTML.
 
 ![](assets/s_ncs_user_image_from_library.png)
 
@@ -174,7 +174,7 @@ La consegna guidata consente di aggiungere al contenuto dei messaggi immagini lo
 >
 >Affinché i destinatari possano visualizzare le immagini incluse nei messaggi ricevuti, questi messaggi devono essere disponibili su un server accessibile dall’esterno.
 
-Per gestire le immagini tramite la consegna guidata:
+Per gestire le immagini tramite l’assistente alla consegna:
 
 1. Fare clic sull&#39;icona **[!UICONTROL Tracking & Images]** nella barra degli strumenti.
    ![](assets/s_ncs_user_email_del_img_param.png)
@@ -184,9 +184,9 @@ Per gestire le immagini tramite la consegna guidata:
    ![](assets/s_ncs_user_email_del_img_upload.png)
 
 * Puoi caricare le immagini manualmente senza attendere la fase di analisi della consegna. A tale scopo, fare clic sul collegamento **[!UICONTROL Upload the images straightaway...]**.
-* Puoi specificare un altro percorso per accedere alle immagini sul server di tracciamento. A tale scopo, immetterlo nel campo **[!UICONTROL Images URL]**. Questo valore sostituisce il valore definito nei parametri della procedura guidata di installazione.
+* Puoi specificare un altro percorso per accedere alle immagini sul server di tracciamento. A tale scopo, immetterlo nel campo **[!UICONTROL Images URL]**. Questo valore sostituisce il valore definito nei parametri dell&#39;assistente all&#39;installazione.
 
-Quando apri contenuti HTML con immagini incluse nella procedura guidata di consegna, un messaggio ti consente di caricare immediatamente le immagini, in base ai parametri di consegna.
+Quando apri contenuti HTML con le immagini incluse nell’assistente alla consegna, un messaggio ti offre la possibilità di caricare le immagini immediatamente, in base ai parametri di consegna.
 
 ![](assets/s_ncs_user_email_del_img_local.png)
 
