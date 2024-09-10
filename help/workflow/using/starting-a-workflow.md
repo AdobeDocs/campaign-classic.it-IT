@@ -4,9 +4,9 @@ title: Avviare un flusso di lavoro
 description: Scopri come avviare un flusso di lavoro e scoprire i flussi di lavoro, la barra degli strumenti delle azioni e il menu di scelta rapida
 feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: 98815fe0417f9126826e0273caa80888164793ec
+source-git-commit: 7453db63a0ed2c617e9f7e4cbfa3480b3ed5020d
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1179'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ I pulsanti della barra degli strumenti sono descritti in questa [sezione](../../
 
   >[!CAUTION]
   >
-  >Questa opzione è riservata agli utenti esperti.
+  >L’arresto incondizionato è limitato agli utenti amministratori.
 
 * **[!UICONTROL Restart]**
 
@@ -108,7 +108,7 @@ Per evitare che i flussi di lavoro si trovino in stato di pausa:
 
 **Interrompere i flussi di lavoro inutilizzati**. I flussi di lavoro in esecuzione gestiscono le connessioni al database.
 
-**Utilizzare l&#39;interruzione incondizionata solo nei casi più rari**. Non utilizzi questa azione regolarmente. La mancata esecuzione di una chiusura pulita delle connessioni generate dai flussi di lavoro al database influisce sulle prestazioni.
+**Utilizzare l&#39;interruzione incondizionata solo nei casi più rari**. Questa opzione è riservata agli utenti amministratori. Non utilizzi questa azione regolarmente. La mancata esecuzione di una chiusura pulita delle connessioni generate dai flussi di lavoro al database influisce sulle prestazioni.
 
 **Non eseguire più richieste di arresto nello stesso flusso di lavoro**. L’arresto di un flusso di lavoro è un processo asincrono: la richiesta viene registrata, quindi il server o i server del flusso di lavoro annullano le operazioni in corso. L&#39;arresto di un&#39;istanza del flusso di lavoro può quindi richiedere tempo, soprattutto se il flusso di lavoro è in esecuzione su più server, ognuno dei quali deve assumere il controllo per annullare le attività in corso. Per evitare problemi, attendi il completamento dell’operazione di arresto ed evita di arrestare più volte un flusso di lavoro.
 
