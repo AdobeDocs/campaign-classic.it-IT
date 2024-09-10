@@ -6,7 +6,7 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Email
 role: User
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 1%
@@ -54,7 +54,7 @@ Per allegare un file locale a una consegna, segui i passaggi seguenti.
 
    ![](assets/s_ncs_user_wizard_email_attachement.png)
 
-È inoltre possibile trascinare e rilasciare direttamente il file nel campo di consegna **[!UICONTROL Attachments]** oppure utilizzare l&#39;icona **[!UICONTROL Attach]** dalla barra degli strumenti della consegna guidata.
+Puoi anche trascinare e rilasciare direttamente il file nel campo **[!UICONTROL Attachments]** della consegna oppure utilizzare l&#39;icona **[!UICONTROL Attach]** dalla barra degli strumenti dell&#39;assistente alla consegna,
 
 ![](assets/s_ncs_user_wizard_add_file_ico.png)
 

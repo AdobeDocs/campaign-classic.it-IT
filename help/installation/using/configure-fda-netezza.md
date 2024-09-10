@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: b148d34b-4060-4c54-9cb2-9e712a7c17d7
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%
@@ -30,7 +30,7 @@ La connessione a un database esterno Netezza in FDA richiede configurazioni aggi
 1. Installare i driver ODBC per Netezza, in base al sistema operativo utilizzato:
 
    * **nz-linuxclient-v7.2.0.0.tar.gz** per Linux. Seleziona la cartella corrispondente al sistema operativo in uso (linux o linux64) e avvia il comando unpack. È possibile lasciare che l’installazione venga eseguita nell’archivio suggerito per impostazione predefinita: &quot;/usr/local/nz&quot;.
-   * **nz-winclient-v7.2.0.0.zip** per Windows. Decomprimere il file e avviare lo script eseguibile corrispondente al sistema operativo: nzodbcsetup.exe o nzodbcsetup64.exe. Seguire le istruzioni della procedura guidata per completare l&#39;installazione dei driver.
+   * **nz-winclient-v7.2.0.0.zip** per Windows. Decomprimere il file e avviare lo script eseguibile corrispondente al sistema operativo: nzodbcsetup.exe o nzodbcsetup64.exe. Seguire le istruzioni dell&#39;assistente per completare l&#39;installazione dei driver.
 
 1. Configurare il driver ODBC. La configurazione può essere eseguita nei file standard: **/etc/odbc.ini** per i parametri generali e **/etc/odbcinst.ini** per i driver dichiaranti.
 

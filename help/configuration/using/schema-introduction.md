@@ -5,7 +5,7 @@ description: Elenco di riferimenti dello schema
 feature: Custom Resources
 role: Data Engineer, Developer
 exl-id: 5745fc60-9df3-4ad0-bbeb-f6ae8c86a5aa
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 21%
@@ -14,7 +14,7 @@ ht-degree: 21%
 
 # Riferimento schema {#schema-reference}
 
-Quando si modifica uno schema, è disponibile un sistema di approvazione basato sullo schema di origine (xtk:srcSchema). È inoltre possibile individuare alcuni errori durante l&#39;aggiornamento del database mediante la procedura guidata &quot;Aggiornamento della struttura del database...&quot;.
+Quando si modifica uno schema, è disponibile un sistema di approvazione basato sullo schema di origine (xtk:srcSchema). Alcuni errori possono essere individuati anche quando si aggiorna il database utilizzando l&#39;assistente &quot;Database structure update...&quot;.
 
 Per impostazione predefinita, negli schemi di Adobe Campaign, tutti gli attributi del tipo booleano sono &quot;false&quot;. Per attivarli, devi specificare l’attributo nello schema e impostarne il valore su &quot;true&quot;.
 

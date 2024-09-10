@@ -6,7 +6,7 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Personalization
 role: User
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '870'
 ht-degree: 2%
@@ -31,7 +31,7 @@ Puoi definire nuovi blocchi per ottimizzare la personalizzazione delle consegne.
 
 Per inserire un blocco di personalizzazione in un messaggio, effettua le seguenti operazioni:
 
-1. Nell&#39;editor dei contenuti della consegna guidata, fai clic sull&#39;icona del campo personalizzato e seleziona il menu **[!UICONTROL Include]**.
+1. Nell&#39;editor dei contenuti dell&#39;assistente alla consegna, fai clic sull&#39;icona del campo personalizzato e seleziona il menu **[!UICONTROL Include]**.
 1. Selezionare un blocco di personalizzazione dall&#39;elenco (nell&#39;elenco vengono visualizzati gli ultimi 10 blocchi utilizzati) oppure fare clic sul menu **[!UICONTROL Other...]** per accedere all&#39;elenco completo.
 
    ![](assets/s_ncs_user_personalized_block01.png)
@@ -71,7 +71,7 @@ A questo scopo, è necessario inserire i seguenti blocchi di personalizzazione:
 >Per ulteriori informazioni sulla generazione della pagina mirror, fare riferimento a [Generare la pagina mirror](sending-messages.md#generating-the-mirror-page).
 
 1. Crea una nuova consegna o apri una consegna di tipo e-mail esistente.
-1. Nella procedura guidata di consegna, fare clic su **[!UICONTROL Subject]** per modificare l&#39;oggetto del messaggio e immettere un oggetto.
+1. Nell&#39;assistente alla consegna, fare clic su **[!UICONTROL Subject]** per modificare l&#39;oggetto del messaggio e immettere un oggetto.
 1. Inserisci i blocchi di personalizzazione nel corpo del messaggio. A questo scopo, fai clic sul contenuto del messaggio, fai clic sull&#39;icona del campo personalizzato e seleziona il menu **[!UICONTROL Include]**.
 1. Selezionare il primo blocco da inserire. Rinnovare la procedura per includere gli altri due blocchi.
 

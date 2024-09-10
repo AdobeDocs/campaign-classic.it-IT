@@ -4,7 +4,7 @@ title: Personalizzazione e privacy
 description: Scopri le best practice sulla sicurezza per la privacy e la personalizzazione
 feature: Installation, Privacy, Privacy Tools, URL Personalization
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 2%
@@ -94,7 +94,7 @@ A tale scopo, segui i passaggi indicati di seguito:
 
 1. Scegliere **[!UICONTROL External Account]** (extAccount).
 
-1. Nell’ultima schermata della procedura guidata, modifica il nuovo &quot;srcSchema&quot; per limitare l’accesso a tutti i campi della password:
+1. Nell’ultima schermata dell’assistente, modifica il nuovo &quot;srcSchema&quot; per limitare l’accesso a tutti i campi della password:
 
    È possibile sostituire l&#39;elemento principale (`<element name="extAccount" ... >`) con:
 

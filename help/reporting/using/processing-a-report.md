@@ -5,7 +5,7 @@ description: Utilizzare un rapporto di analisi
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Reporting, Monitoring
 exl-id: d133efec-33e1-4711-a90f-e40385059386
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '825'
 ht-degree: 1%
@@ -126,11 +126,11 @@ Per ulteriori informazioni, consulta [questa pagina](../../reporting/using/actio
 
 ## Riutilizzare i report e le analisi esistenti {#re-using-existing-reports-and-analyses}
 
-Puoi creare rapporti di analisi descrittivi sui dati utilizzando rapporti esistenti già memorizzati in Adobe Campaign. Questa modalità è possibile quando le analisi sono state salvate o quando i rapporti sono stati creati e configurati per essere accessibili tramite la procedura guidata di analisi descrittiva.
+Puoi creare rapporti di analisi descrittivi sui dati utilizzando rapporti esistenti già memorizzati in Adobe Campaign. Questa modalità è possibile quando le analisi sono state salvate o quando i rapporti sono stati creati e configurati per essere accessibili tramite l’assistente di analisi descrittivo.
 
 Per informazioni su come salvare le analisi descrittive, vedere [Salvataggio di un report di analisi](#saving-an-analysis-report).
 
-Per creare report di analisi descrittivi, è necessario eseguire la procedura guidata di analisi descrittiva tramite una transizione del flusso di lavoro o tramite il menu **[!UICONTROL Tools > Descriptive analysis]**.
+Per creare rapporti di analisi descrittivi, l&#39;Assistente all&#39;analisi descrittiva deve essere eseguito tramite una transizione del flusso di lavoro o tramite il menu **[!UICONTROL Tools > Descriptive analysis]**.
 
 1. Seleziona **[!UICONTROL Existing analyses and reports]** e fai clic su **[!UICONTROL Next]**.
 1. Questo ti consente di accedere all’elenco dei rapporti disponibili. Seleziona il rapporto da generare.
@@ -143,7 +143,7 @@ Quando crei un’analisi descrittiva basata su un’analisi esistente, puoi crea
 
 Per creare una cronologia, attieniti alla seguente procedura:
 
-1. Apri un’analisi esistente o crea una nuova procedura guidata di analisi descrittiva.
+1. Apri un’analisi esistente o crea un nuovo assistente di analisi descrittivo.
 1. Nella pagina di visualizzazione del rapporto, fai clic sul pulsante per creare una cronologia nella barra degli strumenti, quindi conferma come mostrato di seguito:
 
    ![](assets/reporting_descriptive_historize_icon.png)

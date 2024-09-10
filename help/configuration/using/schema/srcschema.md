@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: bc4329b4-d272-4d32-bdaa-290cb9912af4
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 1%
@@ -57,7 +57,7 @@ La presentazione dello schema è disponibile in [Informazioni sul riferimento de
 * **desc (stringa)**: descrizione schema
 * **entitySchema (stringa)**: schema di base su cui si basano la sintassi e l&#39;approvazione (per impostazione predefinita per Adobe Campaign: xtk:srcSchema). Quando salvi lo schema corrente, Adobe Campaign ne approverà la grammatica con lo schema dichiarato nell’attributo @xtkschema.
 * **extendedSchema (stringa)**: riceve il nome dello schema predefinito su cui si basa l&#39;estensione dello schema corrente. Il modulo è &quot;namespace:name&quot;.
-* **img (stringa)**: icona collegata allo schema (può essere definita nella procedura guidata di creazione dello schema).
+* **img (stringa)**: icona collegata allo schema (può essere definita nell&#39;assistente alla creazione dello schema).
 * **etichetta (stringa)**: etichetta dello schema.
 * **labelSingular (stringa)**: label (singular) per la visualizzazione nell&#39;interfaccia.
 * **lastModified (datetime)**: questo attributo fornisce informazioni sulla data e l&#39;ora dell&#39;ultima modifica. Ha un modulo &quot;Date Time&quot; (Data e ora). I valori visualizzati vengono ricavati dal server. L’ora viene visualizzata in formato UTC.
@@ -73,7 +73,7 @@ La presentazione dello schema è disponibile in [Informazioni sul riferimento de
 * **nome (stringa)**: nome di schema univoco.
 * **spazio dei nomi (stringa)**: spazio dei nomi dello schema (impostazione predefinita: nms, xtk, nl). Quando crei un nuovo schema per un progetto, ti consigliamo di utilizzare uno spazio dei nomi dedicato.
 * **useRecycleBin (booleano)**: attiva la funzionalità di eliminazione nell&#39;applicazione. I record eliminati verranno inseriti nel cestino prima dell&#39;eliminazione finale. Questa funzione è disponibile solo in modalità &quot;Delivery&quot;.
-* **visualizzazione (booleana)**: se attivata (@view=&quot;true&quot;), lo schema verrà utilizzato come visualizzazione. La procedura guidata di aggiornamento della struttura del database non terrà conto dello schema. Questa opzione viene utilizzata principalmente per fare riferimento a tabelle esterne.
+* **visualizzazione (booleana)**: se attivata (@view=&quot;true&quot;), lo schema verrà utilizzato come visualizzazione. L&#39;Assistente all&#39;aggiornamento della struttura del database non terrà conto dello schema. Questa opzione viene utilizzata principalmente per fare riferimento a tabelle esterne.
 * **xtkschema (stringa)**: nome dello schema che definisce la grammatica dello schema (xtk:srcSchema per impostazione predefinita).
 
 ## Esempi {#examples-11}

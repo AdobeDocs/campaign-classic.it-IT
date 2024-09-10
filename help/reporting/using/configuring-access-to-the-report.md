@@ -5,7 +5,7 @@ description: Configurare l’accesso al rapporto
 feature: Reporting, Monitoring
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '769'
 ht-degree: 2%
@@ -82,7 +82,7 @@ Per definire la categoria di un report, selezionarlo tramite la scheda **[!UICON
 
 Ad esempio, creeremo un collegamento a un rapporto per renderlo accessibile tramite un elenco di destinatari.
 
-1. Fare clic su **[!UICONTROL New]** e selezionare **[!UICONTROL Create a link to an existing report]** nella procedura guidata di creazione report.
+1. Fare clic su **[!UICONTROL New]** e selezionare **[!UICONTROL Create a link to an existing report]** nell&#39;Assistente alla creazione report.
 
    ![](assets/s_ncs_advuser_report_wizard_link_01.png)
 
@@ -126,7 +126,7 @@ Per ulteriori informazioni su queste impostazioni, fare riferimento alla sezione
 
 La pubblicazione del report è obbligatoria per condividerlo con altri operatori e visualizzarlo nell&#39;elenco dei report disponibili (fare riferimento anche a [Contesto di visualizzazione report](#report-display-context)). Questa operazione deve essere ripetuta ogni volta che il rapporto viene modificato.
 
-1. Aprire la pubblicazione guidata facendo clic su **[!UICONTROL Publish]** nella barra degli strumenti.
+1. Aprire l&#39;Assistente alla pubblicazione facendo clic su **[!UICONTROL Publish]** nella barra degli strumenti.
 
    ![](assets/s_ncs_advuser_report_publish_01.png)
 

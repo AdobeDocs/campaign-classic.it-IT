@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 2%
@@ -23,13 +23,13 @@ I processi di esportazione ti consentono di accedere ed estrarre dati dal databa
 
 Ad esempio, può essere utile utilizzare i dati di tracciamento delle campagne (cronologia di tracciamento, ecc.) in un foglio di calcolo. I dati di output possono essere in formato TXT, CSV, TAB o XML.
 
-L’esportazione guidata consente di configurare un’esportazione, definirne le opzioni e avviarne l’esecuzione. Si tratta di una serie di schermate il cui contenuto dipende dal tipo di esportazione (semplice o multipla) e dai diritti dell’operatore.
+L’assistente per l’esportazione ti consente di configurare un’esportazione, definirne le opzioni e avviarne l’esecuzione. Si tratta di una serie di schermate il cui contenuto dipende dal tipo di esportazione (semplice o multipla) e dai diritti dell’operatore.
 
-L&#39;esportazione guidata viene visualizzata dopo la creazione di un nuovo processo di esportazione (vedere [Creare processi di importazione ed esportazione](../../platform/using/creating-import-export-jobs.md).
+L&#39;Assistente all&#39;esportazione viene visualizzato dopo la creazione di un nuovo processo di esportazione (vedere [Creare processi di importazione ed esportazione](../../platform/using/creating-import-export-jobs.md).
 
 ## Passaggio 1: scegliere il modello di esportazione {#step-1---choosing-the-export-template}
 
-Quando si avvia l&#39;esportazione guidata, è necessario selezionare un modello. Ad esempio, per configurare l’esportazione dei destinatari che si sono registrati di recente, effettua le seguenti operazioni:
+Quando avvii l’assistente all’esportazione, devi innanzitutto selezionare un modello. Ad esempio, per configurare l’esportazione dei destinatari che si sono registrati di recente, effettua le seguenti operazioni:
 
 1. Selezionare la cartella **[!UICONTROL Profiles and Targets > Job > Generic imports and exports]**.
 1. Fai clic su **Nuovo**, quindi su **Esporta** per creare il modello di esportazione.
@@ -95,7 +95,7 @@ Selezionare l&#39;ordinamento delle colonne.
 
 ## Passaggio 6 - Condizioni del filtro {#step-6---filter-conditions-}
 
-Puoi aggiungere condizioni di filtro per evitare di esportare tutti i dati. La configurazione di questo filtro è la stessa del targeting dei destinatari nella procedura guidata di consegna. Consulta [questa pagina](../../delivery/using/steps-defining-the-target-population.md).
+Puoi aggiungere condizioni di filtro per evitare di esportare tutti i dati. La configurazione di questo filtro è la stessa del targeting dei destinatari nell’assistente alla consegna. Consulta [questa pagina](../../delivery/using/steps-defining-the-target-population.md).
 
 ![](assets/s_ncs_user_export_wizard05_b.png)
 
@@ -125,7 +125,7 @@ Fare clic su **[!UICONTROL Start the preview of the data]** per visualizzare un&
 
 ![](assets/s_ncs_user_export_wizard07.png)
 
-Fare clic sulle schede nella parte inferiore della procedura guidata per passare dall&#39;anteprima dei risultati nelle colonne ai risultati in XML. È inoltre possibile visualizzare le query SQL generate.
+Fai clic sulle schede nella parte inferiore dell’assistente per passare dall’anteprima dei risultati nelle colonne ai risultati in XML. È inoltre possibile visualizzare le query SQL generate.
 
 ## Passaggio 9: avviare l’esportazione {#step-9---launching-the-export}
 

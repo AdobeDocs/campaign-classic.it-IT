@@ -4,7 +4,7 @@ title: Come utilizzare i dati del flusso di lavoro
 description: Scopri come utilizzare i dati dei flussi di lavoro
 feature: Workflows, Data Management
 exl-id: 5354d608-2fea-45f9-a0aa-11c7e965ab04
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Ad esempio, nel quadro di una consegna direct mailing, puoi includere nel file d
 
 ![](assets/s_advuser_add_data_postal_mail.png)
 
-Oltre ai consueti campi di personalizzazione, puoi aggiungere campi di personalizzazione dalle fasi del flusso di lavoro al contenuto della consegna. I dati aggiuntivi definiti nelle attività del flusso di lavoro possono essere conservati e resi accessibili nella procedura guidata di consegna, come mostrato nell’esempio seguente, per definire il nome del file di output nel quadro della consegna di direct mailing:
+Oltre ai consueti campi di personalizzazione, puoi aggiungere campi di personalizzazione dalle fasi del flusso di lavoro al contenuto della consegna. I dati aggiuntivi definiti nelle attività del flusso di lavoro possono essere conservati e resi accessibili nell’assistente alla consegna, come mostrato nell’esempio seguente, per definire il nome del file di output nel quadro della consegna di direct mailing:
 
 ![](assets/s_advuser_using_additional_data.png)
 

@@ -4,7 +4,7 @@ title: Dati di targeting
 description: Ulteriori informazioni sul targeting dei dati in un flusso di lavoro
 feature: Query Editor, Data Management, Workflows
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1919'
 ht-degree: 5%
@@ -47,7 +47,7 @@ L&#39;opzione **[!UICONTROL Add a sub-item]** consente di allegare i dati calcol
 
 I sottoelementi verranno rappresentati nella sottostruttura della raccolta a cui sono mappati.
 
-Le raccolte sono visualizzate nella scheda secondaria **[!UICONTROL Collections]**. È possibile filtrare gli elementi raccolti facendo clic sull&#39;icona **[!UICONTROL Detail]** della raccolta selezionata. La procedura guidata di filtro consente di selezionare i dati raccolti e specificare le condizioni di filtro da applicare ai dati della raccolta.
+Le raccolte sono visualizzate nella scheda secondaria **[!UICONTROL Collections]**. È possibile filtrare gli elementi raccolti facendo clic sull&#39;icona **[!UICONTROL Detail]** della raccolta selezionata. L’assistente filtro consente di selezionare i dati raccolti e specificare le condizioni di filtro da applicare ai dati nella raccolta.
 
 ![](assets/query_add_columns_collection.png)
 

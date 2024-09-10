@@ -5,7 +5,7 @@ description: "Caso d’uso: selezionare gli indirizzi seed in base ai criteri"
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 2%
@@ -83,15 +83,15 @@ Per ulteriori dettagli sulle estensioni dello schema, consulta [questa sezione](
 
    ![](assets/dlv_seeds_usecase_12.png)
 
-1. Quando viene visualizzata la procedura guidata di aggiornamento, fare clic sul pulsante **[!UICONTROL Next]** per accedere alla finestra Modifica tabelle: le modifiche eseguite nello schema dei dati dell&#39;indirizzo di seed richiedono un aggiornamento della struttura.
+1. Quando viene visualizzato l&#39;Assistente all&#39;aggiornamento, fare clic sul pulsante **[!UICONTROL Next]** per accedere alla finestra Modifica tabelle: le modifiche eseguite nello schema dei dati dell&#39;indirizzo di seed richiedono un aggiornamento della struttura.
 
    ![](assets/dlv_seeds_usecase_13.png)
 
-1. Segui la procedura guidata fino a visualizzare la pagina per eseguire l’aggiornamento. Fai clic sul pulsante **[!UICONTROL Start]**.
+1. Segui l’assistente fino a quando non arrivi alla pagina per eseguire l’aggiornamento. Fai clic sul pulsante **[!UICONTROL Start]**.
 
    ![](assets/dlv_seeds_usecase_14.png)
 
-   Al termine dell’aggiornamento, puoi chiudere la procedura guidata.
+   Al termine dell’aggiornamento, puoi chiudere l’assistente.
 
 1. Disconnettiti e riconnettiti ad Adobe Campaign. Le modifiche apportate nello schema dei dati dell’indirizzo di seed ora vengono applicate. Affinché siano visibili dalla schermata dell&#39;indirizzo di seed, è necessario aggiornare **[!UICONTROL Input form]** associato. Consulta la sezione [Aggiornare il modulo di input](#updating-the-input-form).
 

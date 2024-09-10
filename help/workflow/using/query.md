@@ -4,7 +4,7 @@ title: Query
 description: Ulteriori informazioni sull’attività del flusso di lavoro Query
 feature: Workflows, Targeting Activity, Query Editor
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1631'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Il collegamento **[!UICONTROL Edit query...]** consente di definire il tipo di t
 
    ![](assets/query_temporary_table.png)
 
-1. Definisci le popolazioni utilizzando la procedura guidata. I campi da immettere possono variare a seconda del tipo di destinazione. È possibile visualizzare in anteprima la popolazione di destinazione con i criteri correnti utilizzando la scheda **[!UICONTROL Preview]**.
+1. Definisci le popolazioni utilizzando l’assistente. I campi da immettere possono variare a seconda del tipo di destinazione. È possibile visualizzare in anteprima la popolazione di destinazione con i criteri correnti utilizzando la scheda **[!UICONTROL Preview]**.
 
    Per ulteriori informazioni sulla creazione e l&#39;utilizzo di filtri o query, consulta questa [sezione](../../platform/using/filtering-options.md).
 
@@ -97,7 +97,7 @@ Per aggiungere dati dal database di Adobe Campaign:
 
 Per aggiungere una raccolta di informazioni collegate a una popolazione target:
 
-1. Al primo passaggio della procedura guidata, selezionare l&#39;opzione **[!UICONTROL Data linked to the filtering dimension]**:
+1. Al primo passaggio dell&#39;assistente, selezionare l&#39;opzione **[!UICONTROL Data linked to the filtering dimension]**:
 1. Selezionare la tabella contenente le informazioni da raccogliere e fare clic su **[!UICONTROL Next]**.
 
    ![](assets/wf_add_data_linked_table.png)

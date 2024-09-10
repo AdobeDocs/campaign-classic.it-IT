@@ -5,7 +5,7 @@ description: Scopri come iniziare con la configurazione dell’app mobile
 feature: Push
 role: User, Developer
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 5%
@@ -46,7 +46,7 @@ In qualità di cliente on-premise, devi installare un pacchetto integrato.
 
 I passaggi di installazione sono i seguenti:
 
-1. Accedere alla procedura guidata di importazione del pacchetto da **[!UICONTROL Tools > Advanced > Import package]** nella console client di Adobe Campaign.
+1. Accedere all&#39;Assistente all&#39;importazione del pacchetto da **[!UICONTROL Tools > Advanced > Import package]** nella console client di Adobe Campaign.
 
    ![](assets/package_ios.png)
 

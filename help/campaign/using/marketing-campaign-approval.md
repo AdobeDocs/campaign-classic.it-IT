@@ -5,7 +5,7 @@ description: Scopri come gestire le approvazioni delle campagne di marketing
 role: User
 feature: Approvals, Campaigns
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '2437'
 ht-degree: 1%
@@ -321,7 +321,7 @@ Questa opzione consente di definire un utente responsabile della modifica del co
 
    ![](assets/s_ncs_user_validation_submit_content_notif.png)
 
-1. Possono quindi accedere alla console, aprire la consegna e modificarla utilizzando una procedura guidata semplificata per modificare l’oggetto, il contenuto HTML e testuale e inviare le bozze.
+1. Possono quindi accedere alla console, aprire la consegna e modificarla utilizzando un assistente semplificato per modificare l’oggetto, il HTML e il contenuto di testo e inviare le bozze.
 
    ![](assets/s_user_validation_content_edition.png)
 

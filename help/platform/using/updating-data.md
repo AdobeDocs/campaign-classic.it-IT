@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
-source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 1%
@@ -32,17 +32,17 @@ Per eseguire gli aggiornamenti manuali, fare clic con il pulsante destro del mou
 
 ![](assets/s_ncs_user_action_icon.png)
 
-Esistono due tipi di aggiornamenti: aggiornamento di massa per un set di destinatari e unione di dati tra due profili. Per ogni azione, una procedura guidata consente di configurare l’aggiornamento.
+Esistono due tipi di aggiornamenti: aggiornamento di massa per un set di destinatari e unione di dati tra due profili. Per ogni azione, un assistente ti consente di configurare l’aggiornamento.
 
 ### Aggiornamento di massa {#mass-update}
 
-Per l&#39;aggiornamento di massa, utilizzare **[!UICONTROL Action > Mass update of selected lines...]**. La procedura guidata consente di configurare ed eseguire l’aggiornamento.
+Per l&#39;aggiornamento di massa, utilizzare **[!UICONTROL Action > Mass update of selected lines...]**. L’assistente ti aiuta a configurare ed eseguire l’aggiornamento.
 
-Il primo passaggio della procedura guidata consiste nel specificare i campi da aggiornare.
+Il primo passaggio dell’assistente consiste nel specificare i campi da aggiornare.
 
-Nella sezione a sinistra della procedura guidata viene visualizzato l&#39;elenco dei campi disponibili. Utilizza il campo **[!UICONTROL Find]** per eseguire una ricerca di questi campi. Premere il tasto **Invio** per sfogliare l&#39;elenco. I nomi dei campi corrispondenti alla voce vengono visualizzati in grassetto, come illustrato di seguito.
+Nella sezione a sinistra dell&#39;assistente viene visualizzato l&#39;elenco dei campi disponibili. Utilizza il campo **[!UICONTROL Find]** per eseguire una ricerca di questi campi. Premere il tasto **Invio** per sfogliare l&#39;elenco. I nomi dei campi corrispondenti alla voce vengono visualizzati in grassetto, come illustrato di seguito.
 
-Fare doppio clic sui campi da aggiornare per visualizzarli nella sezione a destra della procedura guidata.
+Fare doppio clic sui campi da aggiornare per visualizzarli nella sezione destra dell&#39;assistente.
 
 ![](assets/s_ncs_user_update_wizard01_1.png)
 
@@ -60,19 +60,19 @@ Seleziona o immetti i valori da applicare ai profili da aggiornare.
 
 ![](assets/s_ncs_user_update_wizard01_3.png)
 
-Chiudere la finestra e fare clic su **[!UICONTROL Next]** per visualizzare il secondo passaggio della procedura guidata di aggiornamento. In questo passaggio è possibile avviare l&#39;aggiornamento facendo clic su **[!UICONTROL Start]**.
+Chiudere la finestra e fare clic su **[!UICONTROL Next]** per visualizzare il secondo passaggio dell&#39;Assistente all&#39;aggiornamento. In questo passaggio è possibile avviare l&#39;aggiornamento facendo clic su **[!UICONTROL Start]**.
 
 ![](assets/s_ncs_user_update_wizard01_4.png)
 
-Le informazioni relative all’esecuzione degli aggiornamenti vengono visualizzate nella sezione superiore della procedura guidata.
+Le informazioni relative all’esecuzione degli aggiornamenti vengono visualizzate nella sezione superiore dell’assistente.
 
 **[!UICONTROL Stop]** consente di annullare l&#39;aggiornamento, ma alcuni record potrebbero essere stati aggiornati e l&#39;arresto del processo non annullerà questi aggiornamenti. La barra di avanzamento mostra lo stato di avanzamento dell’operazione.
 
 ### Unisci dati {#merge-data}
 
-Selezionare **[!UICONTROL Merge selected lines...]** per avviare l&#39;unione di due profili di destinatari. Prima di selezionare l’opzione, è necessario selezionare i profili da unire. L’unione viene configurata e avviata tramite una procedura guidata.
+Selezionare **[!UICONTROL Merge selected lines...]** per avviare l&#39;unione di due profili di destinatari. Prima di selezionare l’opzione, è necessario selezionare i profili da unire. L’unione viene configurata e avviata tramite un assistente.
 
-La procedura guidata visualizza i valori da recuperare per ogni campo completato in uno dei profili sorgente. Se uno o più campi nei profili da unire hanno valori diversi, vengono visualizzati nella sezione **[!UICONTROL List of conflicts]**. È quindi possibile selezionare il profilo predefinito utilizzando i pulsanti di scelta sotto l&#39;elenco, come nell&#39;esempio seguente:
+L’assistente visualizza i valori da recuperare per ogni campo completato in uno dei profili sorgente. Se uno o più campi nei profili da unire hanno valori diversi, vengono visualizzati nella sezione **[!UICONTROL List of conflicts]**. È quindi possibile selezionare il profilo predefinito utilizzando i pulsanti di scelta sotto l&#39;elenco, come nell&#39;esempio seguente:
 
 ![](assets/s_ncs_user_merge_wizard01_1.png)
 
@@ -95,7 +95,7 @@ Controllare le colonne **[!UICONTROL Result]** di entrambe le sezioni della fine
 
    ![](assets/s_ncs_user_export_list_start.png)
 
-   Per ulteriori informazioni su come configurare l&#39;esportazione guidata, consultare [questa sezione](../../platform/using/executing-export-jobs.md).
+   Per ulteriori informazioni su come configurare l&#39;Assistente all&#39;esportazione, consultare [questa sezione](../../platform/using/executing-export-jobs.md).
 
 ## Abbonati a un servizio {#subscribing-to-a-service}
 

@@ -4,7 +4,7 @@ title: Modulo di pianificazione
 description: Ulteriori informazioni sull’attività del flusso di lavoro Scheduler
 feature: Workflows
 exl-id: 30a9bd2a-afb1-481c-ab5f-5acebd9cbb5a
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 18%
@@ -37,7 +37,7 @@ Il modulo di pianificazione definisce la pianificazione di attivazione della tra
 
 ![](assets/s_user_segmentation_scheduler.png)
 
-Una procedura guidata consente di definire la frequenza e il periodo di validità dell’attività. I passaggi di configurazione sono i seguenti:
+Un assistente ti consente di definire la frequenza e il periodo di validità dell’attività. I passaggi di configurazione sono i seguenti:
 
 1. Selezionare la frequenza di attivazione e fare clic su **[!UICONTROL Next]**.
 

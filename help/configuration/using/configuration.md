@@ -5,7 +5,7 @@ feature: Application Settings
 description: Scopri come configurare la struttura di navigazione di Campaign Explorer
 role: Data Engineer, Developer
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1186'
 ht-degree: 0%
@@ -101,7 +101,7 @@ Il contesto del modulo può essere aggiornato all&#39;inizializzazione dal tag *
 * Dichiarazione di un comando globale per avviare il modulo &quot;xtk:import&quot;:
 
   ```
-  <command desc="Start the data import wizard" form="xtk:import" label="&amp;Data import..." name="import" rights="import,recipientImport"/>
+  <command desc="Start the data import assistant" form="xtk:import" label="&amp;Data import..." name="import" rights="import,recipientImport"/>
   ```
 
   Una scelta rapida da tastiera è dichiarata nel carattere &#39;I&#39; dalla presenza di **&amp;** nell&#39;etichetta del comando.

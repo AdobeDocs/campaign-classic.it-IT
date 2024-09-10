@@ -5,7 +5,7 @@ description: Aggiungere campi a un modulo web
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Web Forms, Landing Pages
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '2373'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 In un modulo Web, i campi consentono agli utenti di immettere informazioni e selezionare opzioni. I moduli web possono offrire campi di input, campi di selezione e contenuto statico e avanzato (captcha, abbonamenti, ecc.).
 
-Quando si utilizza la procedura guidata per aggiungere campi, il tipo di campo viene rilevato automaticamente in base al campo o alla variabile di archiviazione selezionata. È possibile modificarlo utilizzando la casella a discesa **[!UICONTROL Type]** nella scheda **[!UICONTROL General]**.
+Quando si utilizza l’assistente per aggiungere campi, il tipo di campo viene rilevato automaticamente in base al campo o alla variabile di archiviazione selezionati. È possibile modificarlo utilizzando la casella a discesa **[!UICONTROL Type]** nella scheda **[!UICONTROL General]**.
 
 ![](assets/s_ncs_admin_webform_change_type.png)
 
@@ -43,9 +43,9 @@ Specifica la modalità di archiviazione della risposta: aggiorna un campo nel da
 >
 >Per impostazione predefinita, il campo viene inserito nella parte inferiore della struttura corrente. Utilizza le frecce nella barra degli strumenti per spostarla verso l’alto o verso il basso.
 
-## Creazione guidata campi {#field-creation-wizard}
+## Assistente alla creazione dei campi {#field-creation-assistant}
 
-Per ogni pagina del modulo è possibile aggiungere un campo tramite il primo pulsante nella barra degli strumenti. A tale scopo, passare al menu **[!UICONTROL Add using the wizard]**.
+Per ogni pagina del modulo è possibile aggiungere un campo tramite il primo pulsante nella barra degli strumenti. A tale scopo, passare al menu **[!UICONTROL Add using the assistant]**.
 
 ![](assets/s_ncs_admin_survey_add_field_menu.png)
 

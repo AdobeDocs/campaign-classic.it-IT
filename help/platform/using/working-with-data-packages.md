@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 2%
@@ -91,7 +91,7 @@ Un pacchetto di dati può essere costruito manualmente da qualsiasi editor di te
 
 I pacchetti possono essere esportati in tre modi diversi:
 
-* **[!UICONTROL Package Export Wizard]** consente di esportare un set di oggetti in un singolo pacchetto. Per ulteriori informazioni, consulta [Esportare un set di oggetti in un pacchetto](#exporting-a-set-of-objects-in-a-package)
+* **[!UICONTROL Package Export Assistant]** consente di esportare un set di oggetti in un singolo pacchetto. Per ulteriori informazioni, consulta [Esportare un set di oggetti in un pacchetto](#exporting-a-set-of-objects-in-a-package)
 * È possibile esportare un **oggetto singolo** in un pacchetto facendo clic con il pulsante destro del mouse su di esso e selezionando **[!UICONTROL Actions > Export in a package]**.
 * **Le definizioni dei pacchetti** ti consentono di creare una struttura di pacchetti in cui aggiungere oggetti che verranno esportati successivamente in un pacchetto. Per ulteriori informazioni, consulta [Gestire le definizioni dei pacchetti](#managing-package-definitions)
 
@@ -99,11 +99,11 @@ Una volta esportato un pacchetto, potrai importarlo e tutte le entità aggiunte 
 
 ### Esportare un set di oggetti in un pacchetto {#exporting-a-set-of-objects-in-a-package}
 
-La procedura guidata di esportazione del pacchetto è accessibile tramite il menu **[!UICONTROL Tools > Advanced > Export package...]** della console client di Adobe Campaign.
+L&#39;Assistente all&#39;esportazione del pacchetto è accessibile tramite il menu **[!UICONTROL Tools > Advanced > Export package...]** della console client di Adobe Campaign.
 
 ![](assets/ncs_datapackage_typepackage.png)
 
-Per i tre tipi di pacchetti, la procedura guidata offre i passaggi seguenti:
+Per i tre tipi di pacchetti, l’assistente offre i seguenti passaggi:
 
 1. Elencare le entità da esportare per tipo di documento:
 
@@ -139,7 +139,7 @@ Per i tre tipi di pacchetti, la procedura guidata offre i passaggi seguenti:
 
    ![](assets/ncs_datapackage_export6.png)
 
-1. L’ultima pagina della procedura guidata di esportazione del pacchetto ti consente di avviare l’esportazione. I dati verranno memorizzati nel file indicato nel campo **[!UICONTROL File]**.
+1. L’ultima pagina dell’assistente all’esportazione del pacchetto ti consente di avviare l’esportazione. I dati verranno memorizzati nel file indicato nel campo **[!UICONTROL File]**.
 
    ![](assets/ncs_datapackage_export7.png)
 
@@ -303,7 +303,7 @@ Per esportare un pacchetto da una definizione di pacchetto, effettua le seguenti
 
 ## Importazione dei pacchetti {#importing-packages}
 
-L&#39;Importazione guidata pacchetti è accessibile tramite il menu principale **[!UICONTROL Tools > Advanced > Import package]** della console client di Adobe Campaign.
+L&#39;Assistente all&#39;importazione del pacchetto è accessibile tramite il menu principale **[!UICONTROL Tools > Advanced > Import package]** della console client di Adobe Campaign.
 
 Puoi importare un pacchetto da un&#39;esportazione eseguita in precedenza, ad esempio da un&#39;altra istanza di Adobe Campaign, o da un [pacchetto incorporato](../../installation/using/installing-campaign-standard-packages.md), a seconda dei termini della licenza.
 

@@ -5,7 +5,7 @@ description: "Caso d’uso: creare gestione dei contenuti"
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Delivery Templates
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
@@ -382,7 +382,7 @@ In questo esempio, i passaggi sono i seguenti:
 >
 >Per ulteriori informazioni sulla creazione dei contenuti, fare riferimento a [Utilizzare un modello di contenuto](using-a-content-template.md).
 
-### Creare contenuti nella consegna guidata {#creating-content-in-the-delivery-wizard}
+### Creare contenuti nell’assistente alla consegna {#creating-content-in-the-delivery-assistant}
 
 Per creare il contenuto direttamente nelle consegne, effettua le seguenti operazioni:
 
@@ -390,7 +390,7 @@ Per creare il contenuto direttamente nelle consegne, effettua le seguenti operaz
 
    ![](assets/s_ncs_content_in_delivery.png)
 
-   Alla procedura guidata di consegna viene aggiunta una scheda aggiuntiva per definire il contenuto tramite il modulo di gestione dei contenuti.
+   All’assistente alla consegna viene aggiunta una scheda aggiuntiva per definire il contenuto tramite il modulo di gestione dei contenuti.
 
 1. Inserisci le informazioni sulla variabile della newsletter.
 

@@ -6,7 +6,7 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Direct Mail
 role: User
 exl-id: 585b2017-9408-4953-8505-2f6d9db8032f
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 10%
@@ -27,7 +27,7 @@ Per una consegna direct mailing, il contenuto dell&#39;estrazione è definito ne
 
 ![](assets/s_ncs_user_mail_delivery_format_link.png)
 
-Questo collegamento consente di accedere alla procedura guidata di estrazione e definire le informazioni (colonne) da esportare nel file di output.
+Questo collegamento ti consente di accedere all’assistente per l’estrazione e definire le informazioni (colonne) da esportare nel file di output.
 
 ![](assets/s_ncs_user_mail_delivery_format_wz.png)
 
@@ -35,4 +35,4 @@ Questo collegamento consente di accedere alla procedura guidata di estrazione e 
 
 >[!NOTE]
 >
->Questa procedura guidata include i passaggi della procedura guidata di esportazione descritti nella sezione [Guida introduttiva](../../platform/using/executing-export-jobs.md).
+>L&#39;assistente include i passaggi dell&#39;assistente all&#39;esportazione descritti nella sezione [Guida introduttiva](../../platform/using/executing-export-jobs.md).

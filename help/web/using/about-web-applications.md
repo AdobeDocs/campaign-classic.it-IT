@@ -5,7 +5,7 @@ description: Creazione e condivisione di applicazioni Web, pagine di destinazion
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Landing Pages, Web Apps
 exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 20%
@@ -94,7 +94,7 @@ Per impostazione predefinita, Adobe Campaign fornisce un modello per ogni applic
 
 È possibile creare nuovi modelli tramite il nodo **[!UICONTROL Resources > Templates > Web Application templates]** della struttura Adobe Campaign.
 
-La procedura guidata di creazione consente di selezionare le opzioni che si desidera attivare, come illustrato di seguito.
+L’assistente alla creazione ti consente di selezionare le opzioni che desideri abilitare, come mostrato di seguito.
 
 ![](assets/webapp_create_template.png)
 

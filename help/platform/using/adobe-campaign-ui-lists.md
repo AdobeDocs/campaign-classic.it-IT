@@ -4,7 +4,7 @@ title: Gestire e personalizzare gli elenchi
 description: Scopri come sfogliare e configurare gli elenchi
 feature: Audiences, Data Management
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1153'
 ht-degree: 1%
@@ -163,7 +163,7 @@ Fare clic su **[!UICONTROL Save]** nella finestra proprietà cartella. La visual
 
 ## Esportare un elenco {#exporting-a-list}
 
-Per esportare dati da un elenco, è necessario utilizzare una procedura guidata di esportazione. Per accedervi, selezionare gli elementi da esportare dall&#39;elenco, fare clic con il pulsante destro del mouse e selezionare **[!UICONTROL Export...]**.
+Per esportare dati da un elenco, è necessario utilizzare un assistente per l&#39;esportazione. Per accedervi, selezionare gli elementi da esportare dall&#39;elenco, fare clic con il pulsante destro del mouse e selezionare **[!UICONTROL Export...]**.
 
 L&#39;utilizzo delle funzioni di importazione ed esportazione è illustrato in [Importazioni ed esportazioni generiche](../../platform/using/about-generic-imports-exports.md).
 

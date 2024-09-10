@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a025026e-688e-4ec1-abc4-40ee040d2b3b
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 1%
@@ -49,7 +49,7 @@ Per creare una nuova istanza, seguire i passaggi riportati di seguito:
    >Per il URL di connessione, utilizzare solo i seguenti caratteri: `[a-z]`, `[A-Z]`, e `[0-9]` trattini (-) o punti.
 
 1. Fai clic **[!UICONTROL Ok]** per confermare le impostazioni: ora puoi iniziare con il processo di creazione istanza.
-1. Nella finestra, inserisci il **login interno** e il **[!UICONTROL Connection settings]** suo password per connetterti al server Adobe Campaign applicazione. Una volta connessi, è accesso il procedura guidata di creazione del istanza per dichiarare un nuovo istanza
+1. Nella finestra, inserisci il **login interno** e il **[!UICONTROL Connection settings]** suo password per connetterti al server Adobe Campaign applicazione. Una volta connessi, accesso l&#39;assistente per la creazione del istanza dichiarare un nuovo istanza
 1. **[!UICONTROL Name]** Nel campo, immettere il nome **del** istanza. Poiché questo nome viene utilizzato per generare un file **di configurazione .xml`<instance>`** e viene utilizzato nei parametri della riga di comando per identificare il istanza, assicurarsi di scegliere un nome breve senza caratteri speciali. Ad esempio: **eMarketing**.
 
    ![](assets/s_ncs_install_create_instance.png)

@@ -4,7 +4,7 @@ title: Script e modelli JavaScript
 description: Script e modelli JavaScript
 feature: Workflows
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 2%
@@ -59,7 +59,7 @@ logInfo("Start date: " + task.creationDate)
 
 La funzione **[!UICONTROL logInfo(message)]** inserisce un messaggio nel registro.
 
-Fai clic su **[!UICONTROL OK]** per chiudere la procedura guidata di creazione, quindi avvia il flusso di lavoro utilizzando i pulsanti di azione in alto a destra nell&#39;elenco dei flussi di lavoro. Al termine dell’esecuzione, consulta il registro. Dovresti visualizzare due messaggi corrispondenti allo script: uno visualizza l’etichetta del flusso di lavoro, l’altro visualizza la data in cui lo script è stato attivato.
+Fai clic su **[!UICONTROL OK]** per chiudere l&#39;assistente alla creazione, quindi avvia il flusso di lavoro utilizzando i pulsanti di azione in alto a destra nell&#39;elenco dei flussi di lavoro. Al termine dell’esecuzione, consulta il registro. Dovresti visualizzare due messaggi corrispondenti allo script: uno visualizza l’etichetta del flusso di lavoro, l’altro visualizza la data in cui lo script è stato attivato.
 
 ## Variabili {#variables}
 

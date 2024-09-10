@@ -6,7 +6,7 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Monitoring, Email Design, Personalization
 role: User
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 9%
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 # Configurare le opzioni di tracciamento URL{#personalizing-url-tracking}
 
-Le impostazioni avanzate di verifica dei messaggi sono accessibili tramite l&#39;icona **[!UICONTROL Tracking & Images]** nella barra degli strumenti della consegna guidata.
+Le impostazioni avanzate di verifica dei messaggi sono accessibili tramite l&#39;icona **[!UICONTROL Tracking & Images]** nella barra degli strumenti dell&#39;assistente alla consegna.
 
 >[!NOTE]
 >

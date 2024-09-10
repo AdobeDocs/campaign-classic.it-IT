@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1979'
 ht-degree: 0%
@@ -204,7 +204,7 @@ I filtri sono specifici di ciascun operatore e vengono reinizializzati ogni volt
 
 È possibile creare un **filtro applicazioni** salvando un filtro avanzato: è possibile riutilizzarlo facendo clic con il pulsante destro del mouse in qualsiasi elenco o tramite il pulsante **[!UICONTROL Filters]** situato sopra gli elenchi.
 
-È inoltre possibile accedere direttamente a questi filtri tramite la procedura guidata di consegna, nella fase di selezione del target (fare riferimento a [questa sezione](../../delivery/using/creating-an-email-delivery.md) per ulteriori informazioni sulla creazione di consegne). Per creare il filtro dell&#39;applicazione, è possibile:
+È inoltre possibile accedere direttamente a questi filtri tramite l&#39;assistente alla consegna, nella fase di selezione del target (per ulteriori informazioni sulla creazione di consegne, consulta [questa sezione](../../delivery/using/creating-an-email-delivery.md)). Per creare il filtro dell&#39;applicazione, è possibile:
 
 * Convertire un filtro avanzato in un filtro applicazione. A tale scopo, fare clic su **[!UICONTROL Save]** prima di chiudere l&#39;editor di filtri avanzato.
 
@@ -376,6 +376,6 @@ Fare clic sulla scheda **[!UICONTROL Settings]** per accedere alle opzioni segue
 
   Selezionare l&#39;opzione **[!UICONTROL Do not restrict the filter]** se si desidera impedire all&#39;utente di ignorare questo filtro.
 
-  Questa opzione è abilitata per i filtri &quot;Destinatari di una consegna&quot; e &quot;Destinatari di consegne appartenenti a una cartella&quot; offerti nella consegna guidata che non possono essere sovraccaricati.
+  Questa opzione è abilitata per i filtri &quot;Destinatari di una consegna&quot; e &quot;Destinatari delle consegne appartenenti a una cartella&quot; offerti nell’assistente alla consegna che non possono essere sovraccaricati.
 
   ![](assets/s_ncs_user_filter_advanced_param.png)

@@ -4,7 +4,7 @@ title: Architettura della messaggistica transazionale
 description: Questa sezione descrive l’architettura di messaggistica transazionale di Adobe Campaign Classic e i canali disponibili per la distribuzione dei messaggi transazionali
 feature: Transactional Messaging, Message Center, Architecture
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 1%
@@ -85,7 +85,7 @@ Tuttavia, se hai avviato un progetto di messaggistica transazionale sul canale e
 >
 >Questa procedura è valida solo per i clienti che utilizzano un Windows NLServer installato sullo stesso computer su cui stanno lavorando.
 
-1. Installa il canale necessario, ad esempio il **canale mobile**, utilizzando l&#39;importazione guidata pacchetti (**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**).
+1. Installa il canale necessario, ad esempio il **canale mobile**, utilizzando l&#39;Assistente all&#39;importazione del pacchetto (**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**).
 1. Eseguire un&#39;importazione di file (**[!UICONTROL Tools > Advanced > Import package... > File]**) e selezionare il file **datakitnms **`[Your language]`**packagemessageCenter.xml**.
 1. In **[!UICONTROL XML content of the data to import]**, mantieni solo il modello di consegna che corrisponde al canale aggiunto. Ad esempio, se hai aggiunto il **canale mobile**, mantieni solo l&#39;elemento **entità** che corrisponde a **[!UICONTROL Mobile transactional message]** (smsTriggerMessage). Se hai aggiunto il **canale app mobile**, mantieni solo il **messaggio transazionale di iOS** (iosTriggerMessage) e il **messaggio transazionale di Android** (androidTriggerMessage).
 

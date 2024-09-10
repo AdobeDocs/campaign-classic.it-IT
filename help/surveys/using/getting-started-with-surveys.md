@@ -5,7 +5,7 @@ description: Creare il primo sondaggio con Campaign
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Surveys
 exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 1%
@@ -67,7 +67,7 @@ Nell&#39;esempio seguente viene utilizzata una pagina di tipo **[!UICONTROL Page
 
 * **Aggiungi campi di input**
 
-  Per creare il contenuto della pagina, è necessario modificarlo: a tale scopo, fare doppio clic sull&#39;oggetto **[!UICONTROL Page]**. Fai clic sulla prima icona nella barra degli strumenti per aprire la procedura guidata di creazione dei campi. Per creare un campo di immissione per il nome utente da archiviare nel campo corrispondente del profilo del destinatario, selezionare **[!UICONTROL Edit a recipient]**.
+  Per creare il contenuto della pagina, è necessario modificarlo: a tale scopo, fare doppio clic sull&#39;oggetto **[!UICONTROL Page]**. Fai clic sulla prima icona nella barra degli strumenti per aprire l’assistente per la creazione dei campi. Per creare un campo di immissione per il nome utente da archiviare nel campo corrispondente del profilo del destinatario, selezionare **[!UICONTROL Edit a recipient]**.
 
   ![](assets/s_ncs_admin_survey_add_field_menu.png)
 
@@ -130,7 +130,7 @@ Fai clic su **[!UICONTROL OK]** per confermare, quindi su **[!UICONTROL Save]** 
 Affinché gli utenti possano accedere alle pagine HTML, l’applicazione deve essere resa disponibile. Non deve essere più in fase di editing, ma in produzione. Per avviare la produzione di un sondaggio, è necessario pubblicarlo. Per eseguire questa operazione:
 
 * Fai clic sul pulsante **[!UICONTROL Publish]** situato sopra il dashboard del sondaggio.
-* Fare clic su **[!UICONTROL Start]** per avviare la pubblicazione e chiudere la procedura guidata.
+* Fare clic su **[!UICONTROL Start]** per avviare la pubblicazione e chiudere l&#39;assistente.
 
   ![](assets/s_ncs_admin_survey_start_publ.png)
 

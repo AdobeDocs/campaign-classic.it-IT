@@ -5,7 +5,7 @@ description: Utilizzare un modello di contenuto
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Templates
 exl-id: e43dd68e-2e95-4367-9029-4622fbcb1759
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 2%
@@ -24,7 +24,7 @@ Possono inoltre essere utilizzati per creare istanze di contenuto. Una volta cre
 
 ## Creazione di una consegna tramite la gestione dei contenuti {#creating-a-delivery-via-content-management}
 
-È possibile fare riferimento a un modello di contenuto in una consegna in modo da utilizzare i campi di input per immettere il contenuto. Alla procedura guidata di consegna viene aggiunta una scheda aggiuntiva per la definizione del contenuto della consegna.
+È possibile fare riferimento a un modello di contenuto in una consegna in modo da utilizzare i campi di input per immettere il contenuto. All’assistente alla consegna viene aggiunta una scheda aggiuntiva per la definizione del contenuto della consegna.
 
 ![](assets/s_ncs_content_deliver_a_content.png)
 
@@ -32,7 +32,7 @@ Il layout viene applicato automaticamente in base alle impostazioni selezionate.
 
 ![](assets/s_ncs_content_deliver_a_content_html.png)
 
-Per ulteriori informazioni, consulta l&#39;esempio di implementazione completa: [Creazione di contenuto nella consegna guidata](use-case-creating-content-management.md#creating-content-in-the-delivery-wizard).
+Per ulteriori informazioni, consulta l&#39;esempio di implementazione completa: [Creazione di contenuto nell&#39;assistente alla consegna](use-case-creating-content-management.md#creating-content-in-the-delivery-assistant).
 
 ## Creazione di un’istanza di contenuto {#creating-a-content-instance}
 

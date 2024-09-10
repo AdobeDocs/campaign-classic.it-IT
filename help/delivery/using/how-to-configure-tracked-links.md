@@ -6,7 +6,7 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Monitoring
 role: User, Developer
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 10%
@@ -37,7 +37,7 @@ In questo esempio, l&#39;URL https://www.adobe.com è seguito da un punto e virg
 
 Il tracciamento dei messaggi è abilitato per impostazione predefinita. Per personalizzare il tracciamento degli URL, effettua le seguenti operazioni:
 
-1. Seleziona l’opzione **[!UICONTROL Display URLs]** nella sezione inferiore della procedura guidata di consegna, sotto il contenuto del messaggio.
+1. Seleziona l’opzione **[!UICONTROL Display URLs]** nella sezione inferiore dell’assistente alla consegna, sotto il contenuto del messaggio.
 
    ![](assets/s_ncs_user_email_del_display_urls.png)
 

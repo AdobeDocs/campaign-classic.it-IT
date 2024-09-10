@@ -6,7 +6,7 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Monitoring
 role: User
 exl-id: 6c0fd76f-3d79-4b69-b911-f8d99dd18c4b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 3%
@@ -29,7 +29,7 @@ Per impostazione predefinita, l’elenco delle consegne contiene i nomi e gli st
 
 >[!NOTE]
 >
->Per consegne di grandi dimensioni, potrebbe essere utile aggiornare questi valori. A questo scopo, seleziona la consegna in questione e fai clic con il pulsante destro del mouse su di essa. Selezionare **[!UICONTROL Action > Recompute delivery and tracking indicators...]**, quindi utilizzare la procedura guidata per aggiornare queste informazioni.
+>Per consegne di grandi dimensioni, potrebbe essere utile aggiornare questi valori. A questo scopo, seleziona la consegna in questione e fai clic con il pulsante destro del mouse su di essa. Selezionare **[!UICONTROL Action > Recompute delivery and tracking indicators...]**, quindi utilizzare l&#39;assistente per aggiornare queste informazioni.
 
 **Argomenti correlati:**
 

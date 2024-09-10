@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '2973'
 ht-degree: 1%
@@ -25,9 +25,9 @@ Adobe Campaign consente di importare nel database dati da uno o più file in for
 >
 >È possibile importare dati senza eseguirne il mapping con i dati del database utilizzando la funzione **[!UICONTROL Import a list]**. I dati possono quindi essere utilizzati esclusivamente nei flussi di lavoro tramite l&#39;oggetto **[!UICONTROL Read list]**. Per ulteriori informazioni, consulta [questa pagina](../../workflow/using/read-list.md).
 
-L’importazione guidata consente di configurare un’importazione, definirne le opzioni (ad esempio, la trasformazione dei dati) e avviarne l’esecuzione. Si tratta di una serie di schermate il cui contenuto dipende dal tipo di importazione (semplice o multipla) e dai diritti dell’operatore.
+L’assistente all’importazione ti consente di configurare un’importazione, definirne le opzioni (ad esempio, la trasformazione dei dati) e avviarne l’esecuzione. Si tratta di una serie di schermate il cui contenuto dipende dal tipo di importazione (semplice o multipla) e dai diritti dell’operatore.
 
-L&#39;Importazione guidata viene visualizzata dopo la creazione di un nuovo processo di importazione (vedere [Creare processi di importazione ed esportazione](../../platform/using/creating-import-export-jobs.md).
+L&#39;Assistente all&#39;importazione viene visualizzato dopo la creazione di un nuovo processo di importazione (vedere [Creare processi di importazione ed esportazione](../../platform/using/creating-import-export-jobs.md).
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Nel file di origine, ogni riga coincide con un record. I dati nei record sono se
 
 ## Passaggio 1: scegliere il modello di importazione {#step-1---choosing-the-import-template}
 
-Quando si avvia l&#39;importazione guidata, è necessario selezionare un modello. Ad esempio, per configurare l’importazione dei destinatari che hanno ricevuto una newsletter, effettua le seguenti operazioni:
+Quando avvii l’assistente all’importazione, devi innanzitutto selezionare un modello. Ad esempio, per configurare l’importazione dei destinatari che hanno ricevuto una newsletter, effettua le seguenti operazioni:
 
 1. Selezionare la cartella **[!UICONTROL Profiles and Targets > Job > Generic imports and exports]**.
 1. Fai clic su **Nuovo**, quindi su **Importa** per creare il modello di importazione.
@@ -53,7 +53,7 @@ Quando si avvia l&#39;importazione guidata, è necessario selezionare un modello
 1. Immettere un nome per l&#39;importazione nel campo **[!UICONTROL Label]**. Puoi aggiungere una descrizione.
 1. Seleziona il tipo di importazione nel campo appropriato. Esistono due tipi di importazione possibili: **[!UICONTROL Simple import]** per importare un solo file e **[!UICONTROL Multiple import]** per importare più file in una singola esecuzione.
 
-   Per un&#39;importazione multipla, selezionare **[!UICONTROL Multiple import]** dall&#39;elenco a discesa **[!UICONTROL Import type]** nella prima schermata dell&#39;importazione guidata.
+   Per un&#39;importazione multipla, selezionare **[!UICONTROL Multiple import]** dall&#39;elenco a discesa **[!UICONTROL Import type]** nella prima schermata dell&#39;Assistente all&#39;importazione.
 
    ![](assets/s_ncs_user_import_wizard01_2.png)
 
@@ -61,7 +61,7 @@ Quando si avvia l&#39;importazione guidata, è necessario selezionare un modello
 
    ![](assets/s_ncs_user_import_wizard01_3.png)
 
-   Ogni volta che si aggiunge un file, viene visualizzata la schermata della procedura guidata **[!UICONTROL File to import]**. Consulta la sezione [Passaggio 2 - Selezione file Source](#step-2---source-file-selection) e segui i passaggi della procedura guidata per definire le opzioni di importazione come per una semplice importazione.
+   Ogni volta che si aggiunge un file, viene visualizzata la schermata dell&#39;assistente **[!UICONTROL File to import]**. Consulta la sezione [Passaggio 2 - Selezione file Source](#step-2---source-file-selection) e segui i passaggi descritti nell&#39;assistente per definire le opzioni di importazione come per una semplice importazione.
 
    >[!NOTE]
    >
@@ -175,7 +175,7 @@ Esistono quattro tipi di campi calcolati:
 
 ## Passaggio 4 - Riconciliazione {#step-4---reconciliation}
 
-Il passaggio di riconciliazione dell’importazione guidata consente di definire la modalità di riconciliazione dei dati del file con i dati esistenti nel database e di impostare le regole di priorità tra i dati del file e i dati del database. La finestra di configurazione si presenta così:
+Il passaggio di riconciliazione dell’assistente all’importazione ti consente di definire la modalità di riconciliazione dei dati del file con i dati esistenti nel database e di impostare le regole di priorità tra i dati del file e i dati del database. La finestra di configurazione si presenta così:
 
 ![](assets/s_ncs_user_import_wizard04_1.png)
 
@@ -277,7 +277,7 @@ La struttura nella schermata di rifiuto di un’istanza di importazione indica q
 
 ## Passaggio 5: passaggio aggiuntivo durante l’importazione dei destinatari {#step-5---additional-step-when-importing-recipients}
 
-Il passaggio successivo dell’importazione guidata consente di selezionare o creare la cartella in cui verranno importati i dati, mappare automaticamente i destinatari importati con un elenco (nuovo o esistente) e abbonare i destinatari a un servizio.
+Il passaggio successivo dell’assistente all’importazione consente di selezionare o creare la cartella in cui verranno importati i dati, mappare automaticamente i destinatari importati con un elenco (nuovo o esistente) e abbonare i destinatari a un servizio.
 
 ![](assets/s_ncs_user_import_wizard05_1.png)
 
@@ -333,7 +333,7 @@ Fare clic su **[!UICONTROL Next]** per convalidare questo passaggio e visualizza
 
 ## Passaggio 6: avviare l’importazione {#step-6---launching-the-import}
 
-L’ultimo passaggio della procedura guidata consente di avviare l’importazione dei dati. A tale scopo, fare clic sul pulsante **[!UICONTROL Start]**.
+L’ultimo passaggio dell’assistente consente di avviare l’importazione dei dati. A tale scopo, fare clic sul pulsante **[!UICONTROL Start]**.
 
 ![](assets/s_ncs_user_import_wizard06_1.png)
 

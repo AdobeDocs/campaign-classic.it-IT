@@ -5,7 +5,7 @@ description: Rapporti sulle consegne
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1461'
 ht-degree: 10%
@@ -67,7 +67,7 @@ Questo rapporto combina gli indicatori chiave per monitorare il comportamento de
 * **[!UICONTROL Distinct opens for the population reached]**: stima del numero di destinatari di destinazione che hanno aperto un messaggio almeno una volta. I clic sugli URL tracciati vengono presi in considerazione, in quanto è necessario aprire le e-mail per fare clic su un collegamento.
 * **[!UICONTROL Sum of opens for the population reached]**: stima del numero totale di aperture da parte dei destinatari di destinazione.
 * **[!UICONTROL Clicks on opt-out link]** : numero di clic sul collegamento di annullamento dell&#39;abbonamento.
-* **[!UICONTROL Clicks on the mirror page link]** : numero di clic sul collegamento alla pagina mirror. Per poter essere preso in considerazione, il collegamento deve essere definito come tale nella procedura guidata di consegna (URL tracciati). Fai riferimento a questa [pagina](../../delivery/using/about-delivery-monitoring.md).
+* **[!UICONTROL Clicks on the mirror page link]** : numero di clic sul collegamento alla pagina mirror. Per essere preso in considerazione, il collegamento deve essere definito come tale nell’assistente alla consegna (URL tracciati). Fai riferimento a questa [pagina](../../delivery/using/about-delivery-monitoring.md).
 * **[!UICONTROL Estimation of forwards]**: stima del numero di e-mail inoltrate dai destinatari interessati. Questo valore viene calcolato sottraendo il numero di persone distinte e il numero di destinatari distinti che hanno fatto clic nell’e-mail.
 
   >[!NOTE]

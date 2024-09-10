@@ -6,7 +6,7 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Data Management
 role: User, Developer, Data Engineer
 exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 0%
@@ -39,7 +39,7 @@ L&#39;elemento **`<collection-recipient>`** rappresenta l&#39;elemento di input 
 
 ### Aggiunta di una query {#adding-a-query}
 
-I parametri di query vengono modificati tramite una procedura guidata.
+I parametri di query vengono modificati utilizzando un assistente.
 
 1. Nella prima pagina, specifica l’etichetta e lo schema contenenti i dati da recuperare.
 

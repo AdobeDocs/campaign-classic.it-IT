@@ -5,7 +5,7 @@ description: Scopri come definire una funzione SQL aggiuntiva
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Una volta aggiunte, queste funzioni verranno visualizzate nell’editor espressi
 
 Le funzioni da aggiungere si trovano in un file **&quot;package&quot; in formato XML**, la cui struttura è descritta nel paragrafo seguente.
 
-Per installarlo dalla console, selezionare le opzioni **Strumenti/Avanzate/Importa pacchetto** dal menu, quindi **[!UICONTROL Install from file]** e seguire le istruzioni dell&#39;importazione guidata.
+Per installarlo dalla console, selezionare le opzioni **Strumenti/Avanzate/Importa pacchetto** dal menu, quindi **[!UICONTROL Install from file]** e seguire le istruzioni dell&#39;Assistente all&#39;importazione.
 
 >[!IMPORTANT]
 >

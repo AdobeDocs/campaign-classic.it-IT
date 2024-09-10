@@ -1,10 +1,10 @@
 ---
 product: campaign
-title: Campaign - Connettore CRM Salesforce
+title: Campaign - Connettore Salesforce CRM
 description: Scopri come collegare Campaign e Salesforce
 feature: Salesforce Integration
 exl-id: 94a1f00d-e952-4edd-9012-f71c87b897ca
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
@@ -20,7 +20,7 @@ In questa pagina verrà illustrato come connettere Campaign Classic a **Salesfor
 La sincronizzazione dei dati viene eseguita tramite un’attività del flusso di lavoro dedicata. [Ulteriori informazioni](../../platform/using/crm-data-sync.md).
 
 
-L’account esterno ti consente di importare ed esportare i dati di Salesforce in Adobe Campaign.
+L’account esterno ti consente di importare ed esportare dati Salesforce in Adobe Campaign.
 Per configurare il connettore di gestione delle relazioni con i clienti per Salesforce, effettua le seguenti operazioni:
 
 1. Crea un nuovo account esterno tramite il nodo **[!UICONTROL Administration > Platform > External accounts]** della struttura Adobe Campaign.
@@ -29,7 +29,7 @@ Per configurare il connettore di gestione delle relazioni con i clienti per Sale
 
    ![](assets/ext_account_17.png)
 
-   Per configurare l’account esterno del sistema di gestione delle relazioni con i clienti di Salesforce affinché funzioni con Adobe Campaign, è necessario fornire i seguenti dettagli:
+   Per configurare l’account esterno di Salesforce CRM per l’utilizzo con Adobe Campaign, è necessario fornire i seguenti dettagli:
 
    * **[!UICONTROL Account]**
 Account utilizzato per accedere a Salesforce CRM.
@@ -45,7 +45,7 @@ Per sapere dove trovare il token di sicurezza, consulta questa [pagina](https://
 
    * **[!UICONTROL API version]**
 Seleziona la versione dell’API.
-1. Esegui la procedura guidata di configurazione per generare la tabella CRM disponibile: la procedura guidata di configurazione ti consente di raccogliere tabelle e creare lo schema corrispondente.
+1. Esegui l’assistente alla configurazione per generare la tabella di gestione delle relazioni con i clienti disponibile: l’assistente alla configurazione ti consente di raccogliere tabelle e creare lo schema corrispondente.
 
    ![](assets/crm_connectors_sfdc_launch.png)
 
@@ -84,7 +84,7 @@ Seleziona la versione dell’API.
 
 Campaign e Salesforce.com sono ora connessi. È possibile impostare la sincronizzazione dei dati tra i due sistemi.
 
-Per sincronizzare i dati tra i dati di Adobe Campaign e SFDC, è necessario creare un flusso di lavoro e utilizzare l&#39;attività **[!UICONTROL CRM connector]**.
+Per sincronizzare i dati tra Adobe Campaign e SFDC, è necessario creare un flusso di lavoro e utilizzare l&#39;attività **[!UICONTROL CRM connector]**.
 
 ![](assets/crm_connectors_sfdc_wf.png)
 

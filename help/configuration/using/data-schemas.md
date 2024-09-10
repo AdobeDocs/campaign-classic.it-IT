@@ -5,7 +5,7 @@ description: Introduzione agli schemi dati di Campaign
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: d4446035-3988-4d89-b7df-7b8528c2e371
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 1%
@@ -61,7 +61,7 @@ A questo scopo, devi creare lo schema della tabella e aggiornare la struttura de
    >
    >Per impostazione predefinita, gli schemi creati dagli utenti vengono memorizzati nello spazio dei nomi &quot;cus&quot;. Per ulteriori informazioni, consulta [Identificazione di uno schema](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 
-1. Crea il contenuto della tabella. È consigliabile utilizzare la procedura guidata di immissione per verificare che non manchino impostazioni. A tale scopo, fare clic sul pulsante **[!UICONTROL Insert]** e scegliere il tipo di impostazione da aggiungere.
+1. Crea il contenuto della tabella. È consigliabile utilizzare l&#39;assistente di immissione per verificare che non manchino impostazioni. A tale scopo, fare clic sul pulsante **[!UICONTROL Insert]** e scegliere il tipo di impostazione da aggiungere.
 
    ![](assets/s_ncs_configuration_create_new_content.png)
 

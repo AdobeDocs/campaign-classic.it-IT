@@ -6,7 +6,7 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Monitoring
 role: User, Data Engineer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1186'
 ht-degree: 4%
@@ -76,7 +76,7 @@ La scheda **[!UICONTROL Tracking]** elenca la cronologia di tracciamento per que
 >
 >Se il tracciamento non è abilitato per una consegna, questa scheda non viene visualizzata.
 
-La configurazione del tracciamento viene eseguita nella fase appropriata della procedura guidata di consegna. Consulta [Come configurare i collegamenti tracciati](how-to-configure-tracked-links.md).
+La configurazione del tracciamento viene eseguita nella fase appropriata nell’assistente alla consegna. Consulta [Come configurare i collegamenti tracciati](how-to-configure-tracked-links.md).
 
 I dati di **[!UICONTROL Tracking]** vengono interpretati nei report di consegna. Consulta [questa sezione](../../reporting/using/delivery-reports.md).
 

@@ -6,7 +6,7 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Personalization
 role: User
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: 0cf7f249f366a6ef0e9bd0326ec14131fcf7dc18
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 8%
@@ -49,7 +49,7 @@ Dopo la selezione di un’origine dati (campi destinatario o campo file), questo
 Creiamo un’e-mail in cui inseriremo prima il nome del destinatario e quindi aggiungeremo la data di creazione del profilo nel corpo del messaggio. Per eseguire questa operazione:
 
 1. Crea una nuova consegna o apri una consegna di tipo e-mail esistente.
-1. Nella procedura guidata di consegna, fare clic su **[!UICONTROL Subject]** per modificare l&#39;oggetto del messaggio e immettere un oggetto.
+1. Nell&#39;assistente alla consegna, fare clic su **[!UICONTROL Subject]** per modificare l&#39;oggetto del messaggio e immettere un oggetto.
 1. Immetti &quot; **[!UICONTROL Special offer for]**&quot; e utilizza il pulsante nella barra degli strumenti per inserire un campo di personalizzazione. Seleziona **[!UICONTROL Recipients>Title]**.
 
    ![](assets/s_ncs_user_insert_custom_field.png)

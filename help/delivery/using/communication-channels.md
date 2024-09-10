@@ -6,10 +6,10 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: 8fbfc211c4e791b324c34d3d180daa7597c00c7f
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 62%
+ht-degree: 63%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 62%
 
 Con Adobe Campaign, puoi inviare campagne cross-channel tra cui e-mail, SMS, messaggi LINE, notifiche push e direct mail; inoltre, puoi misurarne l’efficacia utilizzando vari [report](../../reporting/using/delivery-reports.md) dedicati. Questi messaggi sono progettati e inviati tramite consegna e possono essere personalizzati per ogni destinatario.
 
-Le funzionalità di base includono il targeting, la definizione e la personalizzazione dei messaggi, l’esecuzione delle comunicazioni e i relativi rapporti operativi. Il punto di accesso funzionale principale è la consegna guidata. Permette di sfruttare diverse funzionalità incluse in Adobe Campaign.
+Le funzionalità di base includono il targeting, la definizione e la personalizzazione dei messaggi, l’esecuzione delle comunicazioni e i relativi rapporti operativi. Il punto di accesso funzionale principale è l’assistente alla consegna. Permette di sfruttare diverse funzionalità incluse in Adobe Campaign.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Le consegne possono essere eseguite **online** (tramite e-mail, uno dei canali m
 A seconda del canale, le modalità di consegna possono essere:
 
 * Consegna diretta di massa tramite Adobe Campaign (modalità predefinita per il canale e-mail).
-* Consegna esterna tramite un operatore specializzato a cui viene fornito il file di output generato dalla procedura guidata di consegna (modalità predefinita per il canale direct mailing).
+* Consegna esterna tramite un operatore specializzato a cui viene fornito il file di output generato dall’assistente alla consegna (modalità predefinita per il canale direct mailing).
 
 Gli account esterni sono configurati tramite il nodo **[!UICONTROL Administration > Platform > External accounts]**. Questa configurazione deve essere eseguita solo da utenti esperti.
 

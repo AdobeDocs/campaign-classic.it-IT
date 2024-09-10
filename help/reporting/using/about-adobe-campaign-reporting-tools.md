@@ -5,7 +5,7 @@ description: Analizza il successo delle campagne con rapporti integrati o person
 feature: Reporting, Monitoring
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 exl-id: 1ef30004-e1b0-4dde-8104-0ee9e8aa9d8b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 18%
@@ -28,7 +28,7 @@ Adobe Campaign fornisce diversi strumenti di reporting:
 
    Per ulteriori informazioni al riguardo, consulta [questa sezione](../../reporting/using/about-campaign-built-in-reports.md).
 
-1. **Analisi descrittiva dei dati**: Adobe Campaign fornisce uno strumento visivo per la produzione di statistiche sui dati nel database. Puoi creare rapporti di analisi descrittivi utilizzando una procedura guidata dedicata e adattarne il contenuto e il layout in base alle tue esigenze.
+1. **Analisi descrittiva dei dati**: Adobe Campaign fornisce uno strumento visivo per la produzione di statistiche sui dati nel database. Puoi creare rapporti di analisi descrittivi utilizzando un assistente dedicato e adattarne il contenuto e il layout in base alle tue esigenze.
 
    Per ulteriori informazioni al riguardo, consulta [questa sezione](../../reporting/using/about-descriptive-analysis.md).
 

@@ -5,7 +5,7 @@ description: Scopri come pubblicare, tracciare e utilizzare i dati raccolti in u
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 2%
@@ -94,7 +94,7 @@ Le risposte a un sondaggio possono essere esportate in un file esterno per esser
 
    Immettere quindi le informazioni che si desidera esportare e il file di archiviazione.
 
-   È possibile configurare il contenuto e il formato del file di output nella procedura guidata di esportazione.
+   È possibile configurare il contenuto e il formato del file di output nell&#39;Assistente all&#39;esportazione.
 
    Questo consente di:
 

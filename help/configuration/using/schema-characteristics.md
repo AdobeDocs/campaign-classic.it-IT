@@ -6,7 +6,7 @@ feature: Custom Resources
 role: Data Engineer, Developer
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 exl-id: 099161b4-b4cb-433c-aed6-71157269a536
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 1%
@@ -29,13 +29,13 @@ Le caratteristiche di uno schema che fa riferimento a una tabella esistente sono
 
 ## Attributo view {#the-view-attribute}
 
-Gli schemi di Source accettano l&#39;attributo **view** per l&#39;elemento radice **srcSchema**. Deve essere utilizzato quando Adobe Campaign viene manipolato in tabelle personalizzate. L&#39;attributo **view=&quot;true&quot;** indica alla procedura guidata di aggiornamento della struttura del database di ignorare questo schema. L’applicazione non può quindi sincronizzare la tabella, le sue colonne e i suoi indici con lo schema corrispondente.
+Gli schemi di Source accettano l&#39;attributo **view** per l&#39;elemento radice **srcSchema**. Deve essere utilizzato quando Adobe Campaign viene manipolato in tabelle personalizzate. L&#39;attributo **view=&quot;true&quot;** indica all&#39;assistente di aggiornamento della struttura del database di ignorare questo schema. L’applicazione non può quindi sincronizzare la tabella, le sue colonne e i suoi indici con lo schema corrispondente.
 
 Quando questo attributo è impostato su **true**, lo schema viene utilizzato solo per generare query SQL per accedere ai dati di questa tabella.
 
 ## Nomi di tabelle e colonne {#names-of-tables-and-columns}
 
-Quando le tabelle vengono create tramite la procedura guidata di aggiornamento, i nomi delle tabelle e delle colonne vengono generati automaticamente in base ai nomi dei rispettivi schemi e attributi. È tuttavia possibile forzare l&#39;utilizzo dei nomi SQL immettendo i seguenti attributi:
+Quando le tabelle vengono create dall&#39;Assistente all&#39;aggiornamento delle tabelle, i nomi delle tabelle e delle colonne vengono generati automaticamente in base ai nomi dei rispettivi schemi e attributi. È tuttavia possibile forzare l&#39;utilizzo dei nomi SQL immettendo i seguenti attributi:
 
 * **sqltable** nell&#39;elemento principale dello schema, per specificare la tabella,
 * **sqlname** all&#39;interno di ogni attributo, per specificare le colonne.

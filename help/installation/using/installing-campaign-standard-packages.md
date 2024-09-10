@@ -5,7 +5,7 @@ description: Scopri come installare i pacchetti incorporati di Campaign
 feature: Installation, Application Settings
 badge-v7-prem: label="Solo on-premise/ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 3%
@@ -32,7 +32,7 @@ I pacchetti incorporati contengono una serie di funzioni che possono essere inst
 
 Per installare un pacchetto integrato:
 
-1. Accedere alla procedura guidata di importazione del pacchetto da **[!UICONTROL Tools > Advanced > Import package]** nella console client di Adobe Campaign.
+1. Accedere all&#39;Assistente all&#39;importazione del pacchetto da **[!UICONTROL Tools > Advanced > Import package]** nella console client di Adobe Campaign.
 1. Seleziona **[!UICONTROL Install a standard package]**.
 1. Nell&#39;elenco dei pacchetti, selezionare i pacchetti da installare.
    >[!NOTE]
@@ -242,7 +242,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
 
 Devi installare i canali di consegna (e-mail, canale mobile, canale app mobile, LINE, ecc.) prima di installare la messaggistica transazionale (pacchetto del centro messaggi). Se hai avviato un progetto di Centro messaggi di sola posta elettronica e in seguito devi aggiungere un nuovo canale, devi seguire questi passaggi:
 
-1. Installa il nuovo canale, ad esempio il **canale mobile**, utilizzando l&#39;importazione guidata del pacchetto ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
+1. Installa il nuovo canale, ad esempio il **canale mobile**, utilizzando l&#39;Assistente all&#39;importazione del pacchetto ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
 1. Importare il file ( **[!UICONTROL Tools > Advanced > Import package > File]**) e selezionare:
 
    ```

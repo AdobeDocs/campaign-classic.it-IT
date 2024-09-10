@@ -5,7 +5,7 @@ description: "Casi d’uso: creare panoramiche"
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Web Apps
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 0%
@@ -94,7 +94,7 @@ In una panoramica, puoi scegliere di accedere ai dati a seconda della loro posiz
    >
    >**nms:webApp** coincide con lo schema dell&#39;applicazione Web.
    >
-   >**nms:newWebApp** coincide con la creazione guidata nuova applicazione Web.
+   >**nms:newWebApp** coincide con il nuovo assistente per la creazione di applicazioni Web.
 
 1. Scegli di visualizzare l’URL nella stessa finestra.
 1. Aggiungere l&#39;icona dell&#39;applicazione Web nel campo immagine: **/nms/img/webApp.png**.

@@ -5,7 +5,7 @@ description: Scopri i passaggi chiave per progettare un sondaggio
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Surveys
 exl-id: 8d83dfd5-70ec-4656-965b-f6b5e6f9eec1
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '793'
 ht-degree: 2%
@@ -34,7 +34,7 @@ Le pagine del modulo vengono create utilizzando un editor speciale che consente 
 
 ## Aggiungi campi {#adding-fields}
 
-I campi di un modulo consentono agli utenti di immettere informazioni e selezionare opzioni. Per ogni pagina del modulo vengono create tramite il primo pulsante della barra degli strumenti tramite il menu **[!UICONTROL Add using the wizard]**.
+I campi di un modulo consentono agli utenti di immettere informazioni e selezionare opzioni. Per ogni pagina del modulo vengono create tramite il primo pulsante della barra degli strumenti tramite il menu **[!UICONTROL Add using the assistant]**.
 
 ![](assets/s_ncs_admin_survey_add_field_menu.png)
 

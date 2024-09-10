@@ -1,20 +1,20 @@
 ---
 product: campaign
-title: Integrazione di un’offerta tramite la procedura guidata
-description: Integrazione di un’offerta tramite la procedura guidata
+title: Integrazione di un’offerta tramite l’assistente
+description: Integrazione di un’offerta tramite l’assistente
 feature: Interaction, Offers
 audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 64aea8b9-7f06-4db0-a3e6-6a0e17c3ddcb
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 2%
 
 ---
 
-# Integrazione di un’offerta tramite la procedura guidata{#integrating-an-offer-via-the-wizard}
+# Integrazione di un’offerta tramite l’assistente{#integrating-an-offer-via-the-assistant}
 
 
 

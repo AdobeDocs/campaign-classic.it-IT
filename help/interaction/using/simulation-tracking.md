@@ -8,7 +8,7 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 exl-id: 490ebbea-9bdc-453e-8a02-c02b095e55e9
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 9%
@@ -25,7 +25,7 @@ I risultati della simulazione contengono una suddivisione delle proposte per cla
 
 Puoi salvare questi risultati ed esportarli, se necessario, creando un’analisi descrittiva dei risultati. A tale scopo, fare clic sul collegamento appropriato nella finestra dei risultati.
 
-Fare riferimento a [questa sezione](../../reporting/using/about-descriptive-analysis.md) per ulteriori informazioni sulla procedura guidata di analisi descrittiva.
+Fai riferimento a [questa sezione](../../reporting/using/about-descriptive-analysis.md) per ulteriori informazioni sull&#39;Assistente all&#39;analisi descrittiva.
 
 ![](assets/offer_simulation_012.png)
 

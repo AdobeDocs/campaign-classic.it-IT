@@ -6,7 +6,7 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Monitoring
 role: User, Data Engineer, Developer
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Esistono tre tipi di istruzioni:
 * **[!DNL value]**: per concedere l&#39;accesso ai campi della consegna, alle variabili di consegna e agli oggetti personalizzati caricati nella consegna. [Ulteriori informazioni](#value)
 * **[!DNL foreach]**: per eseguire il ciclo di un array caricato come oggetto personalizzato. [Ulteriori informazioni](#foreach)
 
-Possono essere testati direttamente dalla procedura guidata di consegna. Vengono applicati nell’anteprima del contenuto e quando fai clic sul pulsante di tracciamento per visualizzare l’elenco degli URL.
+Possono essere testati direttamente dall’assistente alla consegna. Vengono applicati nell’anteprima del contenuto e quando fai clic sul pulsante di tracciamento per visualizzare l’elenco degli URL.
 
 ## [!DNL include] {#include}
 
@@ -57,7 +57,7 @@ I seguenti esempi sono tra i più comunemente utilizzati:
   <%@ include option='NmsServer_URL' %>
   ```
 
-  Utilizza il pulsante di personalizzazione nella consegna guidata per ottenere la sintassi corretta.
+  Utilizza il pulsante di personalizzazione nell’assistente alla consegna per ottenere la sintassi corretta.
 
 ## [!DNL value] {#value}
 

@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: a1dbef3e1feca1e3347de013db8bd7809d315016
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1757'
 ht-degree: 8%
@@ -45,7 +45,7 @@ L’account esterno viene creato e aggiunto all’elenco degli account esterni.
 
 ## Account esterni specifici per la campagna
 
-### Messaggi non recapitati {#bounce-mails-external-account}
+### E-mail non recapitate {#bounce-mails-external-account}
 
 L&#39;account esterno **Messaggi non recapitati** specifica l&#39;account POP3 esterno da utilizzare per connettersi al servizio e-mail. Per ulteriori informazioni su questo account esterno, consulta questa [pagina](../../workflow/using/inbound-emails.md).
 
@@ -322,7 +322,7 @@ Per ulteriori informazioni, consulta questa [sezione](../../integrations/using/a
 >
 > I tipi di distribuzione **[!UICONTROL On-premise]** e **[!UICONTROL Office 365]** sono ora obsoleti. [Ulteriori informazioni](../../rn/using/deprecated-features.md).
 
-L&#39;account esterno **[!UICONTROL Microsoft Dynamics CRM]** consente di importare ed esportare dati di Microsoft Dynamics in Adobe Campaign.
+L&#39;account esterno **[!UICONTROL Microsoft Dynamics CRM]** consente di importare ed esportare dati Microsoft Dynamics in Adobe Campaign.
 
 Ulteriori informazioni su Campaign - Connettore Microsoft Dynamics CRM in questa [pagina](../../platform/using/crm-ms-dynamics.md).
 
@@ -384,7 +384,7 @@ L&#39;account esterno **[!UICONTROL Salesforce CRM]** consente di importare ed e
 
 ![](assets/ext_account_17.png)
 
-Per configurare l’account esterno del sistema di gestione delle relazioni con i clienti di Salesforce affinché funzioni con Adobe Campaign, è necessario fornire i seguenti dettagli:
+Per configurare l’account esterno di Salesforce CRM per l’utilizzo con Adobe Campaign, è necessario fornire i seguenti dettagli:
 
 * **[!UICONTROL Account]**
 
@@ -406,7 +406,7 @@ Per configurare l’account esterno del sistema di gestione delle relazioni con 
 
   Seleziona la versione dell’API.
 
-Per questo account esterno, devi configurare Salesforce CRM con la configurazione guidata.
+Per questo account esterno, devi configurare Salesforce CRM con l’assistente alla configurazione.
 
 Per ulteriori informazioni su questa configurazione, consulta questa [pagina](../../platform/using/crm-connectors.md).
 

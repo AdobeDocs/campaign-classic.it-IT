@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 8b2a9c73-807a-4936-9fd6-9d26c805a31f
-source-git-commit: fcc42e84817277ad46218165b5acef370747c1ca
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 1%
@@ -81,7 +81,7 @@ Per configurare [!DNL Vertica Analytics] su CentOS, eseguire la procedura seguen
 
 ## [!DNL Vertica Analytics] su Windows {#vertica-windows}
 
-1. Scarica il driver [ODBC per Windows](https://www.vertica.com/download/vertica/client-drivers/). Per installare il driver per Windows, è necessario attivare .NET Framework 3.5 oppure l&#39;installazione guidata tenterà di attivarlo e scaricarlo automaticamente.
+1. Scarica il driver [ODBC per Windows](https://www.vertica.com/download/vertica/client-drivers/). Per installare il driver per Windows, è necessario attivare .NET Framework 3.5 oppure l&#39;Assistente all&#39;installazione tenterà di attivarlo e scaricarlo automaticamente.
 
 1. Configurare il driver ODBC in Windows. Per ulteriori informazioni, consulta [questa pagina](https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ConnectingToVertica/ClientODBC/SettingUpADSN.htm)
 

@@ -5,7 +5,7 @@ description: Introduzione alla modifica degli schemi
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1006'
 ht-degree: 6%
@@ -213,7 +213,7 @@ Utilizza l’esempio seguente per includere nella tabella campi relativi alla da
 
 ## Aggiornamento della struttura del database {#updating-the-database-structure}
 
-Una volta completate e salvate le modifiche, è necessario applicare al database tutte le modifiche che possono influire sulla struttura SQL. A tale scopo, utilizzare la procedura guidata di aggiornamento del database.
+Una volta completate e salvate le modifiche, è necessario applicare al database tutte le modifiche che possono influire sulla struttura SQL. A tale scopo, utilizzare l&#39;Assistente all&#39;aggiornamento del database.
 
 ![](assets/schemaextension_getting_started_3.png)
 

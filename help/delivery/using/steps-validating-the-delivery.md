@@ -6,7 +6,7 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Deliverability, Email Rendering, Proofs
 role: User
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1662'
 ht-degree: 8%
@@ -138,7 +138,7 @@ Per inviare una bozza, effettua le seguenti operazioni:
 
 1. Assicurarsi che la destinazione della bozza sia stata configurata come descritto in [Definire una destinazione specifica per la bozza](steps-defining-the-target-population.md#defining-a-specific-proof-target).
 
-1. Fai clic su **[!UICONTROL Send a proof]** nella barra superiore della consegna guidata.
+1. Fai clic su **[!UICONTROL Send a proof]** nella barra superiore dell’assistente alla consegna.
 
    ![](assets/s_ncs_user_email_del_send_proof.png)
 
@@ -171,7 +171,7 @@ Sono disponibili le seguenti opzioni:
 
 * La prima opzione ti consente di mantenere la bozza doppia.
 * Entrambe le opzioni seguenti consentono di mantenere in quarantena i destinatari che si trovano in fase di elenco Bloccati e gli indirizzi. Vedere la descrizione di queste opzioni per la destinazione principale in [Personalizzare le impostazioni di esclusione](steps-defining-the-target-population.md#customizing-exclusion-settings). A differenza del target di una consegna, in cui questi indirizzi sono esclusi per impostazione predefinita, vengono conservati per impostazione predefinita per il target di una bozza.
-* L&#39;opzione **[!UICONTROL Keep the delivery code for the proof]** consente di assegnare alla bozza lo stesso codice di consegna definito per la consegna a cui si riferisce. Questo codice è specificato nel primo passaggio della consegna guidata.
+* L&#39;opzione **[!UICONTROL Keep the delivery code for the proof]** consente di assegnare alla bozza lo stesso codice di consegna definito per la consegna a cui si riferisce. Questo codice è specificato nel primo passaggio dell’assistente alla consegna.
 * Per impostazione predefinita, l’oggetto della bozza è preceduto dal prefisso &quot;N. bozza&quot;, dove # è il numero della bozza. È possibile modificare questo prefisso nel campo **[!UICONTROL Label prefix]**.
 
 ## Processo di convalida con tipologie {#validation-process-with-typologies}

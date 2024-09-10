@@ -6,7 +6,7 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Email Design, Personalization
 role: User
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1293'
 ht-degree: 4%
@@ -149,7 +149,7 @@ Per essere accessibili dall’esterno, le immagini utilizzate nelle e-mail e nel
 
 * Puoi verificare se la configurazione dell’istanza abilita la gestione delle risorse pubbliche. [Ulteriori informazioni](../../installation/using/deploying-an-instance.md#managing-public-resources)
 
-* Dalla procedura guidata di consegna, puoi importare una pagina HTML contenente immagini o inserirle direttamente utilizzando l’editor HTML tramite l’icona **[!UICONTROL Image]**. [Ulteriori informazioni](defining-the-email-content.md#adding-images)
+* Dall&#39;assistente alla consegna, puoi importare una pagina di HTML contenente immagini o inserire immagini direttamente utilizzando l&#39;editor di HTML tramite l&#39;icona **[!UICONTROL Image]**. [Ulteriori informazioni](defining-the-email-content.md#adding-images)
 
 * Se le immagini non vengono visualizzate, verificare che siano disponibili sul server. A questo scopo, fai clic sulla scheda Source della consegna. Trova le tue immagini e copia-incolla l’URL di ogni immagine in un browser web. Se le immagini non vengono visualizzate, contatta l’amministratore IT o il fornitore di terze parti che fornisce i contenuti di consegna.
 
@@ -157,6 +157,6 @@ Per essere accessibili dall’esterno, le immagini utilizzate nelle e-mail e nel
 
 L’Adobe consiglia di visualizzare l’anteprima del messaggio per controllarne la personalizzazione e per vedere come i destinatari visualizzeranno la consegna.
 
-* Nella procedura guidata di consegna, la scheda secondaria **[!UICONTROL Preview]** ti consente di visualizzare il rendering di ciascun contenuto per un destinatario. I campi di personalizzazione e gli elementi condizionali del contenuto vengono sostituiti con le informazioni corrispondenti per il profilo selezionato. [Ulteriori informazioni](defining-the-email-content.md#message-content)
+* Nell&#39;assistente alla consegna, la scheda secondaria **[!UICONTROL Preview]** ti consente di visualizzare il rendering di ciascun contenuto per un destinatario. I campi di personalizzazione e gli elementi condizionali del contenuto vengono sostituiti con le informazioni corrispondenti per il profilo selezionato. [Ulteriori informazioni](defining-the-email-content.md#message-content)
 
 * Durante ogni anteprima viene eseguito un controllo automatico anti-spam. Nella scheda secondaria **[!UICONTROL Preview]**, seleziona [SpamAssassin](spamassassin.md) spam scoring.  Fare clic su **[!UICONTROL More...]** per ulteriori informazioni sull&#39;avviso.  Prima di eseguire questa operazione, verificare che SpamAssassin sia installato e configurato correttamente nel server applicazioni Adobe Campaign. [Ulteriori informazioni](../../installation/using/configuring-spamassassin.md)

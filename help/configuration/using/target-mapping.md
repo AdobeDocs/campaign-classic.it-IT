@@ -6,7 +6,7 @@ feature: Application Settings
 role: Data Engineer, Developer
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 exl-id: 38333669-5598-4811-a121-b677c1413f56
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '499'
 ht-degree: 2%
@@ -22,7 +22,7 @@ La creazione della mappatura target è necessaria in due casi:
 * se utilizzi una tabella dei destinatari diversa da quella fornita da Adobe Campaign,
 * se configuri una dimensione di filtro diversa dalla dimensione di targeting standard nella schermata mappatura target.
 
-La procedura guidata per la creazione della mappatura di destinazione consente di creare tutti gli schemi necessari per utilizzare la tabella personalizzata.
+L’assistente alla creazione della mappatura di destinazione ti aiuterà a creare tutti gli schemi necessari per utilizzare la tabella personalizzata.
 
 ## Creazione e configurazione di schemi collegati alla tabella personalizzata {#creating-and-configuring-schemas-linked-to-the-custom-table}
 
@@ -83,7 +83,7 @@ A questo scopo, esegui i seguenti passaggi:
    ```
 
 1. Fare clic sul nodo **[!UICONTROL Administration > Campaign management > Target mappings]**.
-1. Fai clic sul pulsante **Nuovo** per aprire la procedura guidata di creazione della mappatura di destinazione.
+1. Fai clic sul pulsante **Nuovo** per aprire l&#39;assistente alla creazione della mappatura di destinazione.
 1. Immetti il campo **Label** e seleziona lo schema appena creato nel campo **Targeting dimension**.
 
    ![](assets/mapping_diffusion_wizard_1.png)
@@ -110,9 +110,9 @@ A questo scopo, esegui i seguenti passaggi:
 
    ![](assets/mapping_diffusion_wizard_4.png)
 
-1. Fai clic sul pulsante **Salva** per chiudere la procedura guidata.
+1. Fai clic sul pulsante **Salva** per chiudere l&#39;assistente.
 
-   La procedura guidata utilizza lo schema iniziale per creare tutti gli altri schemi necessari per il funzionamento della nuova mappatura di destinazione.
+   L’assistente utilizza lo schema di inizio per creare tutti gli altri schemi necessari per il funzionamento della nuova mappatura di destinazione.
 
    ![](assets/mapping_schema_list.png)
 

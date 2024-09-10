@@ -4,7 +4,7 @@ title: Best practice per i modelli di dati
 description: Scopri come utilizzare il modello dati di Campaign Classic
 feature: Data Model
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '4013'
 ht-degree: 1%
@@ -90,7 +90,7 @@ Per il database SQLServer, è consigliabile utilizzare &quot;indice cluster&quot
 
 L&#39;attributo tablespace nello schema consente di specificare una tablespace dedicata per una tabella.
 
-L&#39;installazione guidata consente di memorizzare gli oggetti per tipo (dati, temporaneo e indice).
+L&#39;assistente all&#39;installazione consente di memorizzare gli oggetti per tipo (dati, temporaneo e indice).
 
 Le tablespace dedicate sono migliori per il partizionamento, le regole di sicurezza e consentono un&#39;amministrazione fluida e flessibile, una migliore ottimizzazione e prestazioni.
 

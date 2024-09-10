@@ -4,7 +4,7 @@ title: Attività del flusso di lavoro SMS in entrata per l’infrastruttura mid-
 description: Attività del flusso di lavoro SMS in entrata per l’infrastruttura mid-sourcing
 feature: Technote, SMS
 exl-id: 756039b2-5f57-4dc5-8166-a421206b886b
-source-git-commit: 5c42ff45b4d0bc4d61f4fccdba4518801ea4c9da
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 5%
@@ -35,7 +35,7 @@ ht-degree: 5%
    </element>
    ```
 
-1. Per applicare le modifiche apportate agli schemi, avviare la procedura guidata di aggiornamento del database. Questa procedura guidata è accessibile tramite **Strumenti** > **Avanzate** > **Aggiorna struttura database**. Controlla se la struttura fisica del database corrisponde alla relativa descrizione logica ed esegue gli script di aggiornamento SQL. [Ulteriori informazioni](../../configuration/using/updating-the-database-structure.md)
+1. Per applicare le modifiche apportate agli schemi, avviare l&#39;Assistente all&#39;aggiornamento del database. L&#39;Assistente è accessibile tramite **Strumenti** > **Avanzate** > **Aggiorna struttura database**. Controlla se la struttura fisica del database corrisponde alla relativa descrizione logica ed esegue gli script di aggiornamento SQL. [Ulteriori informazioni](../../configuration/using/updating-the-database-structure.md)
 
 1. Arresta ed esegui il backup del flusso di lavoro contenente l&#39;**attività SMS in entrata**.
 

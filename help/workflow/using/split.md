@@ -4,7 +4,7 @@ title: Dividi
 description: Ulteriori informazioni sull’attività Dividi flusso di lavoro
 feature: Workflows, Targeting Activity
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: 13eb777e96602ddd3463f721c6b2a3e6b67cb329
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1971'
 ht-degree: 3%
@@ -44,7 +44,7 @@ Per creare un sottoinsieme:
 
 1. È possibile specificare il numero massimo di record da estrarre dalla destinazione per creare il sottoinsieme. A tale scopo, selezionare l&#39;opzione **[!UICONTROL Limit the selected records]** e fare clic sul collegamento **[!UICONTROL Edit...]**.
 
-   Una procedura guidata consente di scegliere la modalità di selezione per i record di questo sottoinsieme. I passaggi sono disponibili in [Limitazione del numero di record del sottoinsieme](#limiting-the-number-of-subset-records).
+   Un assistente consente di scegliere la modalità di selezione per i record di questo sottoinsieme. I passaggi sono disponibili in [Limitazione del numero di record del sottoinsieme](#limiting-the-number-of-subset-records).
 
    ![](assets/s_user_segmentation_partage4.png)
 
@@ -218,8 +218,8 @@ Per evitare questo problema, è possibile trascinare un&#39;attività **[!UICONT
 
 L&#39;opzione **[!UICONTROL Enable overlapping of output populations]** consente di gestire le popolazioni appartenenti a diversi sottoinsiemi:
 
-* Quando la casella non è selezionata, l’attività di suddivisione si assicura che un destinatario non possa essere presente in diverse transizioni di output, anche se soddisfa i criteri di diversi sottoinsiemi. Saranno nel target della prima scheda con criteri corrispondenti.
-* Quando la casella è selezionata, i destinatari possono essere trovati in diversi sottoinsiemi se soddisfano i propri criteri di filtro. Adobe Campaign consiglia di utilizzare criteri esclusivi.
+* Quando questa opzione non è selezionata, l’attività Dividi si assicura che un destinatario non possa essere presente in diverse transizioni di output, anche se soddisfa i criteri di diversi sottoinsiemi. Saranno nel target della prima scheda con criteri corrispondenti.
+* Quando questa opzione è selezionata, i destinatari possono essere in più sottoinsiemi se soddisfano i rispettivi criteri di filtro. Adobe Campaign consiglia di usare criteri esclusivi.
 
 ## Parametri di input {#input-parameters}
 

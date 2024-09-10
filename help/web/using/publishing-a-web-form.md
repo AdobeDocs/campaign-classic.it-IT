@@ -5,7 +5,7 @@ description: Pubblicare un modulo web
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Web Forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1284'
 ht-degree: 1%
@@ -140,7 +140,7 @@ Per essere accessibile agli utenti, il modulo deve essere in produzione e deve e
 
 ### Consegna di un modulo tramite e-mail {#delivering-a-form-via-email}
 
-Quando si invia un invito tramite e-mail, è possibile utilizzare l&#39;opzione **[!UICONTROL Adobe Campaign Encryption]** per la riconciliazione dei dati. A questo scopo, vai alla consegna guidata e adatta il collegamento al modulo aggiungendo il seguente parametro:
+Quando si invia un invito tramite e-mail, è possibile utilizzare l&#39;opzione **[!UICONTROL Adobe Campaign Encryption]** per la riconciliazione dei dati. A questo scopo, passa all’assistente alla consegna e adatta il collegamento al modulo aggiungendo il seguente parametro:
 
 ```
 <a href="https://server/webApp/APP264?&id=<%=escapeUrl(recipient.cryptedId) %>">

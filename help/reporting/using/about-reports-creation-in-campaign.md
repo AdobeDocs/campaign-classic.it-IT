@@ -5,7 +5,7 @@ description: Scopri i passaggi chiave per creare un rapporto
 feature: Reporting, Monitoring
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 exl-id: 262c1469-94b4-4f81-9f6f-5c7f481765da
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -28,5 +28,5 @@ Per creare, pubblicare e consegnare un rapporto di analisi sui dati, effettua le
 1. Raccogliere i dati da analizzare: fare riferimento a [Raccogliere dati da analizzare](../../reporting/using/collecting-data-to-analyze.md) e [Utilizzare il contesto](../../reporting/using/using-the-context.md),
 1. Definisci il contenuto del report con le attività e i relativi contenitori: fai riferimento a [Creare una tabella](../../reporting/using/creating-a-table.md), [Creare un grafico](../../reporting/using/creating-a-chart.md) e [Layout elemento](../../reporting/using/element-layout.md),
 1. Configura le opzioni di visualizzazione: tipo di visualizzazione, report condivisi: fai riferimento a [Contesto di visualizzazione del report](../../reporting/using/configuring-access-to-the-report.md#report-display-context), [Definisci un contenuto condizionale](../../reporting/using/defining-a-conditional-content.md) e [Configura l&#39;accesso al report](../../reporting/using/configuring-access-to-the-report.md),
-1. Publish il report (procedura guidata di pubblicazione): fare riferimento a [Publish il report](../../reporting/using/configuring-access-to-the-report.md#publishing-the-report),
+1. Publish il report (assistente alla pubblicazione): fai riferimento a [Publish il report](../../reporting/using/configuring-access-to-the-report.md#publishing-the-report),
 1. Converti il report: esporta, cronologia, visualizza in un browser: fai riferimento a [Azioni nei report](../../reporting/using/actions-on-reports.md).

@@ -6,7 +6,7 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: SMS
 role: User
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 2%
@@ -35,7 +35,7 @@ Per creare una nuova consegna SMS, segui i passaggi seguenti:
 
 Per creare il contenuto dell’SMS, segui i passaggi seguenti:
 
-1. Immettere il contenuto del messaggio nella sezione **[!UICONTROL Text content]** della procedura guidata. I pulsanti della barra degli strumenti consentono di importare, salvare o eseguire ricerche nel contenuto. L’ultimo pulsante viene utilizzato per inserire campi di personalizzazione.
+1. Immettere il contenuto del messaggio nella sezione **[!UICONTROL Text content]** dell&#39;assistente. I pulsanti della barra degli strumenti consentono di importare, salvare o eseguire ricerche nel contenuto. L’ultimo pulsante viene utilizzato per inserire campi di personalizzazione.
 
    ![](assets/s_ncs_user_wizard_sms01_138.png)
 

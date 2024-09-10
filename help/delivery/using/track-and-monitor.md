@@ -6,7 +6,7 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Monitoring, Reporting
 role: User
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 2%
@@ -40,7 +40,7 @@ Suggerimento: controlla la configurazione della gestione del traffico (affinità
 
 Per conoscere meglio il comportamento dei destinatari, puoi tenere traccia della loro reazione a una consegna: ricezione, apertura, clic su collegamenti, annullamenti di abbonamenti, ecc. In Campaign Classic, queste informazioni vengono visualizzate nella scheda Tracciamento dei destinatari interessati dalla consegna e nella scheda Tracciamento della consegna.
 
-**Suggerimento**: il monitoraggio dei messaggi è abilitato per impostazione predefinita. Per configurare gli URL, seleziona l’opzione Visualizza URL nella sezione inferiore della procedura guidata di consegna. Per ogni URL del messaggio, puoi scegliere se attivare il tracciamento.
+**Suggerimento**: il monitoraggio dei messaggi è abilitato per impostazione predefinita. Per configurare gli URL, seleziona l’opzione Visualizza URL nella sezione inferiore dell’assistente alla consegna. Per ogni URL del messaggio, puoi scegliere se attivare il tracciamento.
 
 Per ulteriori informazioni, consulta la sezione [Configurare il tracciamento](how-to-configure-tracked-links.md) e la descrizione degli [indicatori di tracciamento](../../reporting/using/delivery-reports.md#tracking-indicators).
 
