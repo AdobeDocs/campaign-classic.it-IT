@@ -6,7 +6,7 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
 workflow-type: tm+mt
 source-wordcount: '5959'
 ht-degree: 2%
@@ -245,11 +245,11 @@ Una struttura di consegna è un set strutturato di elementi (documenti, negozi, 
 Ulteriori informazioni su [Direct mailing](../../delivery/using/about-direct-mail-channel.md).
 +++
 
-+++**Distribuzione guidata**
++++**distribuzione guidata**
 
 La procedura guidata di distribuzione definisce i parametri dell’istanza Campaign, ad esempio lo spazio dei nomi predefinito, la pianificazione della pulizia del database, i periodi di conservazione dei dati e altre impostazioni tecniche.
 
-Ulteriori informazioni sulla [Distribuzione guidata](../../installation/using/deploying-an-instance.md#deployment-wizard).
+Ulteriori informazioni sulla [distribuzione guidata](../../installation/using/deploying-an-instance.md#deployment-assistant).
 +++
 
 +++**Analisi descrittiva**
@@ -484,7 +484,7 @@ Ulteriori informazioni sul rendering di [Posta in arrivo](../../delivery/using/d
 
 +++**Impostazioni istanza**
 
-Le impostazioni delle istanze sono dettagli di configurazione di un’istanza Adobe Campaign. Queste impostazioni sono definite nella Distribuzione guidata (Strumenti>Avanzate>Distribuzione guidata) o nei file di configurazione del server e/o dell&#39;istanza.
+Le impostazioni delle istanze sono dettagli di configurazione di un’istanza Adobe Campaign. Queste impostazioni sono definite nella procedura guidata di distribuzione (Strumenti>Avanzate>procedura guidata di distribuzione) o nei file di configurazione del server e/o dell&#39;istanza.
 
 Ulteriori informazioni sulle [Impostazioni istanza](../../installation/using/about-initial-configuration.md).
 
@@ -492,7 +492,7 @@ Ulteriori informazioni sulle [Impostazioni istanza](../../installation/using/abo
 
 +++**Processi (importazione ed esportazione)**
 
-I processi sono gestiti tramite una procedura guidata che semplifica l’importazione e l’esportazione di dati da e verso il prodotto. I processi utilizzano il sistema di modelli per semplicità e coerenza e possono essere definiti per l’esecuzione in base a una pianificazione.
+I processi sono gestiti da un sistema di assistenza che semplifica l’importazione e l’esportazione di dati da e verso il prodotto. I processi utilizzano il sistema di modelli per semplicità e coerenza e possono essere definiti per l’esecuzione in base a una pianificazione.
 
 Ulteriori informazioni sui [processi di importazione ed esportazione](../../platform/using/get-started-data-import-export.md).
 +++

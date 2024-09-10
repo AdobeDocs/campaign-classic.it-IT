@@ -6,10 +6,10 @@ title: Guida di Campaign Classic v7
 user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 3307c75ed7df0fcd357dd7c684481c62e0457e04
+source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
 workflow-type: tm+mt
 source-wordcount: '2552'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -294,7 +294,7 @@ ht-degree: 100%
       + [Persone e destinatari](reporting/using/person-people-recipients.md)
    + Analizzare le popolazioni {#analyzing-populations}
       + [Informazioni sull’analisi descrittiva](reporting/using/about-descriptive-analysis.md)
-      + [Usare la procedura guidata di analisi descrittiva](reporting/using/using-the-descriptive-analysis-wizard.md)
+      + [Utilizzare l’assistente all’analisi descrittiva](reporting/using/using-the-descriptive-analysis-wizard.md)
       + [Impostazioni dei rapporti](reporting/using/processing-a-report.md)
       + [Casi d’uso](reporting/using/use-cases.md)
    + Creare nuovi rapporti {#creating-new-reports}
@@ -538,7 +538,7 @@ ht-degree: 100%
       + [Tracciamento della simulazione](interaction/using/simulation-tracking.md)
    + Consegnare un’offerta {#delivering-an-offer}
       + [Informazioni sui canali in uscita](interaction/using/about-outbound-channels.md)
-      + [Integrare un’offerta tramite la procedura guidata](interaction/using/integrating-an-offer-via-the-wizard.md)
+      + [Integrare un’offerta tramite l’assistente](interaction/using/integrating-an-offer-via-the-wizard.md)
       + [Integrare un’offerta tramite un flusso di lavoro](interaction/using/integrating-an-offer-via-a-workflow.md)
    + Interazioni unitarie {#unitary-interactions}
       + [Informazioni sui canali in entrata](interaction/using/about-inbound-channels.md)
@@ -772,7 +772,7 @@ ht-degree: 100%
       + [Filtraggio degli schemi](configuration/using/filtering-schemas.md)
       + [Limitare la visualizzazione dei dati personali](configuration/using/restricting-pii-view.md)
       + [Aggiornamento della struttura del database](configuration/using/updating-the-database-structure.md)
-      + [Procedura guidata per l’aggiunta di nuovi campi](configuration/using/new-field-wizard.md)
+      + [Nuovo assistente campo](configuration/using/new-field-wizard.md)
       + [Struttura di uno schema di dati](configuration/using/structure-of-a-data-schema.md)
       + [Rigenerazione degli schemi](configuration/using/regenerating-schemas.md)
       + [Esempi di modifica degli schemi](configuration/using/examples-of-schemas-edition.md)
