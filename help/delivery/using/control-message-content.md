@@ -6,7 +6,7 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Deliverability
 role: User
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: de6e86eb2304a88e836c5759b87d7f38446ed357
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 6%
@@ -14,7 +14,6 @@ ht-degree: 6%
 ---
 
 # Controllare il contenuto del messaggio{#control-message-content}
-
 
 Per fare in modo che le e-mail raggiungano i destinatari e migliorare il tasso di recapito dei messaggi e-mail, devono rispettare una serie di regole. In caso contrario, il contenuto di alcuni messaggi potrebbe essere rilevato come spam. Adobe Campaign fornisce diversi strumenti per rendere i contenuti conformi a queste regole.
 
@@ -36,7 +35,7 @@ Per ulteriori suggerimenti su come ottimizzare il recapito messaggi durante la p
 
 Alcuni ISP verificano la validità dell&#39;indirizzo del mittente (**[!UICONTROL From]**) prima di accettare i messaggi. Un indirizzo con formato non corretto può comportare il rifiuto da parte del server ricevente.
 
-È necessario assicurarsi che sia fornito un indirizzo corretto a livello di istanza (menu **[!UICONTROL Tools > Advanced > Deployment wizard...]**) o negli scenari utilizzati più di frequente.
+È necessario assicurarsi che sia fornito un indirizzo corretto a livello di istanza (menu **[!UICONTROL Tools > Advanced > deployment wizard...]**) o negli scenari utilizzati più di frequente.
 
 Per ulteriori informazioni, consulta [questa pagina](defining-the-email-content.md).
 
