@@ -1,30 +1,30 @@
 ---
 product: campaign
-title: Usare la procedura guidata di analisi descrittiva
-description: Usare la procedura guidata di analisi descrittiva
+title: Utilizzare l’assistente all’analisi descrittiva
+description: Utilizzare l’assistente all’analisi descrittiva
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
 workflow-type: tm+mt
 source-wordcount: '1570'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
-# Usare la procedura guidata di analisi descrittiva{#using-the-descriptive-analysis-wizard}
+# Utilizzare l’assistente all’analisi descrittiva{#using-the-descriptive-analysis-wizard}
 
 
 
-Per creare un rapporto di analisi descrittivo, utilizza la procedura guidata dedicata. La configurazione dipende dai dati da analizzare e dal rendering desiderato.
+Per creare un rapporto di analisi descrittivo, utilizza l’assistente dedicato. La configurazione dipende dai dati da analizzare e dal rendering desiderato.
 
 ## Analizzare i dati nel database {#analyzing-data-in-the-database}
 
-La procedura guidata di analisi descrittiva può essere avviata tramite il menu **[!UICONTROL Tools > Descriptive analysis]**: in questo caso, l&#39;analisi riguarda i destinatari per impostazione predefinita (**nms:recipient**). Si applica a tutti i dati nel database di Adobe Campaign.
+L&#39;Assistente analisi descrittivo può essere avviato tramite il menu **[!UICONTROL Tools > Descriptive analysis]**: in questo caso, l&#39;analisi riguarda i destinatari per impostazione predefinita (**nms:recipient**). Si applica a tutti i dati nel database di Adobe Campaign.
 
 ![](assets/reporting_descriptive_wz_launch.png)
 
-Per analizzare una tabella diversa da quella dei destinatari standard (**nms:recipient**), fare clic sul collegamento **[!UICONTROL Advanced settings...]** nell&#39;ultima fase della procedura guidata e selezionare la tabella corrispondente alle impostazioni, in questo caso **cus:individual**:
+Per analizzare una tabella diversa da quella dei destinatari standard (**nms:recipient**), fare clic sul collegamento **[!UICONTROL Advanced settings...]** nell&#39;ultima fase dell&#39;assistente e selezionare la tabella corrispondente alle impostazioni, in questo caso **cus:individual**:
 
 ![](assets/reporting_descriptive_other_schema.png)
 
@@ -36,11 +36,11 @@ L&#39;analisi riguarderà soltanto i destinatari di banche dati di età pari o s
 
 ## Analizzare un set di dati {#analyzing-a-set-of-data}
 
-Puoi utilizzare la procedura guidata di analisi descrittiva in un contesto diverso: un elenco, una transizione di flusso di lavoro, una o più consegne, una selezione di destinatari e così via.
+Puoi utilizzare l’assistente all’analisi descrittiva in un contesto diverso: un elenco, una transizione di flusso di lavoro, una o più consegne, una selezione di destinatari e così via.
 
 È accessibile tramite diversi nodi della struttura Adobe Campaign che puntano alla tabella dei destinatari.
 
-Apri la procedura guidata di analisi descrittiva selezionando gli elementi e facendo clic con il pulsante destro del mouse. Verranno analizzati solo i dati selezionati.
+Apri l’Assistente all’analisi descrittiva selezionando gli elementi e facendo clic con il pulsante destro del mouse. Verranno analizzati solo i dati selezionati.
 
 ![](assets/reporting_descriptive_from_recipients.png)
 
@@ -64,7 +64,7 @@ Il modello **[!UICONTROL Qualitative distribution]** consente di creare statisti
 
 Le opzioni di configurazione disponibili per un report creato tramite il modello **[!UICONTROL Qualitative distribution]** sono descritte in dettaglio in [Visualizza dati nella tabella](#displaying-data-in-the-table). Un esempio completo è descritto in [Analizzare una popolazione](../../reporting/using/use-cases.md#analyzing-a-population).
 
-Quando si utilizza la procedura guidata di analisi descrittiva per analizzare i dati, le opzioni disponibili dipendono dalle impostazioni scelte. Tali informazioni sono descritte di seguito.
+Quando si utilizza l’assistente all’analisi descrittiva per analizzare i dati, le opzioni disponibili dipendono dalle impostazioni scelte. Tali informazioni sono descritte di seguito.
 
 ### Binning dati {#data-binning}
 
@@ -119,7 +119,7 @@ La sezione superiore della finestra consente di selezionare le impostazioni di v
 
 ### Visualizza dati nel grafico {#displaying-data-in-the-chart}
 
-Nel primo passaggio della procedura guidata di analisi descrittiva, è possibile scegliere di visualizzare i dati solo in formato grafico, senza una tabella. In questo caso, la selezione delle variabili deve essere eseguita durante la configurazione dell&#39;immagine. Devi innanzitutto selezionare il numero di variabili da visualizzare e selezionare i campi dal database pertinente.
+Nel primo passaggio dell&#39;Assistente all&#39;analisi descrittiva, è possibile scegliere di visualizzare i dati solo in formato grafico, senza una tabella. In questo caso, la selezione delle variabili deve essere eseguita durante la configurazione dell&#39;immagine. Devi innanzitutto selezionare il numero di variabili da visualizzare e selezionare i campi dal database pertinente.
 
 ![](assets/s_ncs_user_report_wizard_023.png)
 
@@ -139,7 +139,7 @@ Le opzioni disponibili dipendono dal tipo di grafico selezionato. Per ulteriori 
 
 ### Calcolo delle statistiche {#statistics-calculation}
 
-La procedura guidata di analisi descrittiva consente di calcolare diversi tipi di statistiche sui dati. Per impostazione predefinita, è configurato un solo conteggio semplice.
+L’assistente all’analisi descrittiva consente di calcolare diversi tipi di statistiche sui dati. Per impostazione predefinita, è configurato un solo conteggio semplice.
 
 Fare clic su **[!UICONTROL Add]** per creare una nuova statistica.
 
@@ -183,7 +183,7 @@ Sono possibili le seguenti operazioni:
 
 ### Visualizzare il rapporto {#displaying-the-report}
 
-L’ultimo passaggio della procedura guidata consente di visualizzare il rapporto, ovvero la tabella o il grafico configurato.
+L’ultimo passaggio dell’assistente ti consente di visualizzare il rapporto, ovvero la tabella o il grafico configurato.
 
 Quando il report contiene una tabella, la cella dei risultati del calcolo è colorata. Più alto è il risultato, più intenso sarà il colore.
 
@@ -205,7 +205,7 @@ Il modello **[!UICONTROL Quantitative distribution]** che consente di generare s
 
 La modalità di configurazione di un report di analisi creato tramite il modello **[!UICONTROL Quantitative distribution]** è descritta in un esempio di implementazione [Analisi dati quantitativi](../../reporting/using/use-cases.md#quantitative-data-analysis).
 
-Le opzioni disponibili quando si utilizza la procedura guidata di analisi descrittiva per creare un rapporto quantitativo sono descritte di seguito.
+Le opzioni disponibili quando si utilizza l’assistente all’analisi descrittiva per creare un rapporto quantitativo sono descritte di seguito.
 
 Per iniziare, seleziona la variabile oggetto dei calcoli:
 
@@ -229,7 +229,7 @@ Sono possibili le seguenti operazioni:
 
   ![](assets/s_ncs_user_report_wizard_030.png)
 
-  L&#39;ultimo passaggio della procedura guidata mostra il rapporto di analisi quantitativa.
+  L’ultimo passaggio dell’assistente mostra il rapporto di analisi quantitativa.
 
   ![](assets/reporting_descriptive_view_report.png)
 

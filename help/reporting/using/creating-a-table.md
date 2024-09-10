@@ -5,7 +5,7 @@ description: Creare una tabella
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
 workflow-type: tm+mt
 source-wordcount: '2512'
 ht-degree: 1%
@@ -461,6 +461,6 @@ Se fai clic sul collegamento di una di queste consegne, viene visualizzato il gr
 
 Questo tipo di tabella consente di visualizzare le statistiche calcolate sui dati nel database.
 
-La configurazione di questi tipi di rapporti è simile a quella utilizzata per l’analisi guidata descrittiva. Per ulteriori informazioni, consulta [questa pagina](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template).
+La configurazione di questi tipi di rapporti è simile a quella utilizzata per l’assistente all’analisi descrittiva. Per ulteriori informazioni, consulta [questa pagina](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template).
 
 Per ulteriori informazioni sulla creazione di una tabella pivot, consulta [questa sezione](../../reporting/using/ac-cubes.md).

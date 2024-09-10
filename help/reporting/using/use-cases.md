@@ -5,7 +5,7 @@ description: Casi di utilizzo della generazione rapporti
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Reporting, Monitoring
 exl-id: e326e32e-7bb0-46ff-9ba5-94ccd1169af2
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
 workflow-type: tm+mt
 source-wordcount: '1326'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## Analisi di una popolazione {#analyzing-a-population}
 
-L’esempio seguente consente di esplorare la popolazione target di un set di newsletter utilizzando la procedura guidata di analisi descrittiva.
+L’esempio seguente ti consente di esplorare la popolazione target di un set di newsletter utilizzando l’assistente all’analisi descrittiva.
 
 I passaggi di implementazione sono descritti di seguito, mentre un elenco completo delle opzioni e delle descrizioni è disponibile nelle altre sezioni di questo capitolo.
 
@@ -60,7 +60,7 @@ Una volta definite le linee e le colonne, potete modificarle, spostarle o elimin
 
 ### Definizione del formato di visualizzazione {#defining-the-display-format}
 
-Il passaggio successivo della procedura guidata consente di selezionare il tipo di grafico che si desidera generare.
+Il passaggio successivo dell’assistente consente di selezionare il tipo di grafico da generare.
 
 In questo caso, scegli l’istogramma.
 
@@ -70,7 +70,7 @@ Le possibili configurazioni delle diverse immagini sono descritte in dettaglio n
 
 ### Configurazione della statistica per il calcolo {#configuring-the-statistic-to-calculate}
 
-Specificare quindi i calcoli da applicare ai dati raccolti. Per impostazione predefinita, la procedura guidata di analisi descrittiva esegue un conteggio semplice dei valori.
+Specificare quindi i calcoli da applicare ai dati raccolti. Per impostazione predefinita, l’assistente all’analisi descrittiva esegue un conteggio semplice dei valori.
 
 Questa finestra consente di definire l’elenco delle statistiche da calcolare.
 
@@ -80,7 +80,7 @@ Per creare una nuova statistica, fare clic sul pulsante **[!UICONTROL Add]**. Pe
 
 ### Visualizzazione e utilizzo del report {#viewing-and-using-the-report}
 
-Nell&#39;ultimo passaggio della procedura guidata vengono visualizzati la tabella e il grafico.
+Nell&#39;ultimo passaggio dell&#39;assistente vengono visualizzati la tabella e il grafico.
 
 È possibile archiviare, esportare o stampare dati utilizzando la barra degli strumenti sopra la tabella. Per ulteriori informazioni, consulta [Elaborazione di un report](../../reporting/using/processing-a-report.md).
 
@@ -92,7 +92,7 @@ Nell&#39;ultimo passaggio della procedura guidata vengono visualizzati la tabell
 
 **Target**: genera un report di analisi sulla posizione dei potenziali clienti o dei clienti.
 
-1. Aprire la procedura guidata di analisi descrittiva e selezionare solo **[!UICONTROL Chart]**.
+1. Aprire l&#39;Assistente analisi descrittiva e selezionare solo **[!UICONTROL Chart]**.
 
    ![](assets/s_ncs_user_report_wizard_05a.png)
 
@@ -118,7 +118,7 @@ Nell&#39;ultimo passaggio della procedura guidata vengono visualizzati la tabell
 
 **Target**: analisi dei domini e-mail aziendali.
 
-1. Aprire la procedura guidata di analisi descrittiva e selezionare solo la modalità di visualizzazione **[!UICONTROL Array]**.
+1. Aprire l&#39;Assistente analisi descrittiva e selezionare solo la modalità di visualizzazione **[!UICONTROL Array]**.
 
    ![](assets/s_ncs_user_report_wizard_03a.png)
 
@@ -155,7 +155,7 @@ Nell&#39;ultimo passaggio della procedura guidata vengono visualizzati la tabell
 
 **Destinazione**: per generare un rapporto di analisi quantitativa sull&#39;età del destinatario
 
-1. Aprire la procedura guidata di analisi descrittiva e selezionare **[!UICONTROL Quantitative distribution]** dall&#39;elenco a discesa.
+1. Aprire l&#39;Assistente analisi descrittiva e selezionare **[!UICONTROL Quantitative distribution]** dall&#39;elenco a discesa.
 
    ![](assets/s_ncs_user_report_wizard_011a.png)
 
@@ -191,7 +191,7 @@ Nell&#39;ultimo passaggio della procedura guidata vengono visualizzati la tabell
 
 L’analisi di una popolazione in un flusso di lavoro richiede che la popolazione sia ancora presente nella transizione. Se il flusso di lavoro viene avviato, il risultato relativo alla popolazione potrebbe essere eliminato dalla transizione. Per eseguire un&#39;analisi, potete effettuare le seguenti operazioni:
 
-* Stacca la transizione dalla sua attività di destinazione e avvia il flusso di lavoro per renderla attiva. Una volta che la transizione inizia a lampeggiare, avvia la procedura guidata nel modo consueto.
+* Stacca la transizione dalla sua attività di destinazione e avvia il flusso di lavoro per renderla attiva. Una volta che la transizione inizia a lampeggiare, avvia l’assistente nel modo consueto.
 
   ![](assets/s_ncs_user_report_wizard_018.png)
 
@@ -199,7 +199,7 @@ L’analisi di una popolazione in un flusso di lavoro richiede che la popolazion
 
   ![](assets/s_ncs_user_report_wizard_020.png)
 
-  Se la popolazione è stata eliminata dalla transizione, un messaggio di errore richiede di selezionare l’opzione interessata prima di avviare la procedura guidata di analisi descrittiva.
+  Se la popolazione è stata eliminata dalla transizione, un messaggio di errore richiede di selezionare l’opzione interessata prima di avviare l’assistente di analisi descrittiva.
 
   ![](assets/s_ncs_user_report_wizard_019.png)
 
@@ -210,13 +210,13 @@ L’analisi di una popolazione in un flusso di lavoro richiede che la popolazion
 
 ## Analisi dei registri di tracciamento dei destinatari {#analyzing-recipient-tracking-logs}
 
-La procedura guidata di analisi descrittiva può generare rapporti su altre tabelle di lavoro. Ciò significa che puoi analizzare i registri di consegna creando un rapporto dedicato.
+L&#39;Assistente all&#39;analisi descrittiva può generare rapporti su altre tabelle di lavoro. Ciò significa che puoi analizzare i registri di consegna creando un rapporto dedicato.
 
 In questo esempio, vogliamo analizzare il tasso di reattività dei destinatari di una newsletter.
 
 A questo scopo, esegui i seguenti passaggi:
 
-1. Aprire la procedura guidata di analisi descrittiva tramite il menu **[!UICONTROL Tools > Descriptive analysis]** e modificare la tabella di lavoro predefinita. Selezionare **[!UICONTROL Recipient tracking log]** e aggiungere un filtro per escludere Proofs e includere newsletter.
+1. Aprire l&#39;Assistente analisi descrittiva tramite il menu **[!UICONTROL Tools > Descriptive analysis]** e modificare la tabella di lavoro predefinita. Selezionare **[!UICONTROL Recipient tracking log]** e aggiungere un filtro per escludere Proofs e includere newsletter.
 
    ![](assets/reporting_descriptive_sample_tracking_1.png)
 
@@ -276,7 +276,7 @@ Se l’analisi riguarda una consegna, puoi analizzare la popolazione esclusa. A 
 
 ![](assets/reporting_descriptive_exclusion_menu.png)
 
-Verrà visualizzata la procedura guidata di analisi descrittiva e l’analisi riguarderà i registri di esclusione dei destinatari.
+Verrà visualizzato l’assistente di analisi descrittivo e l’analisi riguarderà i registri di esclusione dei destinatari.
 
 Ad esempio, puoi visualizzare i domini di tutti gli indirizzi esclusi e ordinarli per data di esclusione.
 

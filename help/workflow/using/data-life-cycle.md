@@ -4,7 +4,7 @@ title: Ciclo di vita dei dati
 description: Ulteriori informazioni sul ciclo di vita dei dati nei flussi di lavoro
 feature: Workflows, Data Management
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 5%
@@ -35,7 +35,7 @@ A questo scopo, seleziona il menu pertinente:
 
 * Analisi del target
 
-  Questo menu consente di accedere alla procedura guidata di analisi descrittiva che consente di produrre statistiche e rapporti sui dati di transizione.
+  Questo menu consente di accedere all’assistente di analisi descrittiva che consente di produrre statistiche e rapporti sui dati di transizione.
 
   Per ulteriori informazioni, consulta questa [sezione](../../reporting/using/using-the-descriptive-analysis-wizard.md).
 

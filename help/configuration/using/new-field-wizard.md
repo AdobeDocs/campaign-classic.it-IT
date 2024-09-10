@@ -1,29 +1,29 @@
 ---
 product: campaign
-title: Procedura guidata per l’aggiunta di nuovi campi
-description: Procedura guidata per l’aggiunta di nuovi campi
+title: Nuovo assistente campo
+description: Nuovo assistente campo
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: 2350a531-7a26-4f26-90fe-8dac0cc26605
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ec774cc10a69a694b3c2bf5a6f662afd12a1435a
 workflow-type: tm+mt
 source-wordcount: '200'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
-# Procedura guidata per l’aggiunta di nuovi campi{#new-field-wizard}
+# Nuovo assistente campo{#new-field-wizard}
 
 
-Una procedura guidata accessibile tramite **[!UICONTROL Tools > Advanced > Add new fields]** consente di aggiungere uno o più campi a una tabella nel database.
+Un assistente accessibile tramite **[!UICONTROL Tools > Advanced > Add new fields]** consente di aggiungere uno o più campi a una tabella nel database.
 
-La convalida della procedura guidata aggiorna lo schema di estensione della tabella da estendere e avvia lo script SQL per modificare la struttura fisica del database.
+La convalida dell&#39;assistente aggiorna lo schema di estensione della tabella da estendere e avvia lo script SQL per modificare la struttura fisica del database.
 
 Questo assistente ha il vantaggio di aggiungere rapidamente un campo senza dover conoscere la struttura di uno schema di dati.
 
 Lo svantaggio principale è la limitazione dei dati e delle proprietà da estendere.
 
-Le schermate della procedura guidata contengono i seguenti passaggi:
+Le schermate dell’assistente contengono i seguenti passaggi:
 
 1. La prima pagina consente di immettere il nome dello schema da estendere e lo spazio dei nomi dello schema di estensione in cui verranno salvate le modifiche:
 
