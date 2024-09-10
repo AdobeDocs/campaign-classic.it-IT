@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 586456f27dbc039ecb39cc8bd1f6dbdf8af823be
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '456'
 ht-degree: 7%
 
 ---
@@ -38,11 +38,13 @@ In più attività del flusso di lavoro di Adobe Campaign, puoi utilizzare i dati
 
 * **Aggiunta di informazioni e collegamenti** - L&#39;attività [Arricchimento](../../workflow/using/enrichment.md) consente di aggiungere dati aggiuntivi alla tabella di lavoro del flusso di lavoro e collegamenti a una tabella esterna. In questo contesto, può utilizzare dati provenienti da un database esterno. Per ulteriori informazioni, consulta [questa pagina](../../workflow/using/enrichment.md).
 
-## Limitazioni di FDA {#limitations}
+## Guardrail e limitazioni {#fda-limitations}
 
-L’opzione FDA consente di manipolare i dati in database esterni in modalità batch nei flussi di lavoro. Per evitare problemi di prestazioni, si sconsiglia di utilizzare il modulo FDA nel contesto di operazioni unitarie, come: personalizzazione, interazione, messaggistica in tempo reale, ecc.
+L’opzione FDA è progettata per manipolare i dati nei database esterni in modalità batch nei flussi di lavoro. Per evitare problemi di prestazioni, si sconsiglia di utilizzare il modulo FDA nel contesto di operazioni unitarie, come: personalizzazione, interazione, messaggistica in tempo reale, ecc.
 
-Evita le operazioni che devono utilizzare il più possibile sia Adobe Campaign che il database esterno. A questo scopo, puoi:
+Il targeting dei dati da un database e il filtraggio dei risultati tramite una dimensione di filtro che appartiene a un altro database non è supportato. Non è possibile eseguire il join di tabelle che si trovano su origini dati diverse in una query. Puoi superare questo limite utilizzando altre attività del flusso di lavoro, ad esempio Modifica dimensione.
+
+Evita le operazioni che devono utilizzare il più possibile sia Adobe Campaign che il database esterno. Si consiglia di:
 
 * Esporta il database di Adobe Campaign nel database esterno ed esegui le operazioni solo dal database esterno prima di reimportare i risultati in Adobe Campaign.
 
