@@ -5,9 +5,9 @@ description: Informazioni sui servizi web
 feature: API
 role: Data Engineer, Developer
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '645'
 ht-degree: 3%
 
 ---
@@ -37,10 +37,10 @@ Prima di utilizzare le API di Adobe Campaign, è necessario avere familiarità c
 
 Adobe Campaign utilizza due tipi di API:
 
-* API di accesso ai dati generiche per l’esecuzione di query sui dati del modello dati. Consulta [API orientate ai dati](../../configuration/using/data-oriented-apis.md).
+* API di accesso ai dati generiche per l’esecuzione di query sui dati del modello di dati. Consulta [API orientate ai dati](../../configuration/using/data-oriented-apis.md).
 * API specifiche per l’azienda che consentono di agire su ciascun oggetto: consegne, flussi di lavoro, abbonamenti, ecc. Consulta [API orientate alle aziende](../../configuration/using/business-oriented-apis.md).
 
-Per sviluppare API e interagire con Adobe Campaign, è necessario avere familiarità con il modello dati. Adobe Campaign consente di generare una descrizione completa della base. Fare riferimento a [Descrizione del modello](../../configuration/using/data-oriented-apis.md#description-of-the-model).
+Per sviluppare API e interagire con Adobe Campaign, devi acquisire familiarità con il modello dati. Adobe Campaign consente di generare una descrizione completa della base. Fare riferimento a [Descrizione del modello](../../configuration/using/data-oriented-apis.md#description-of-the-model).
 
 ## Chiamate SOAP {#soap-calls}
 

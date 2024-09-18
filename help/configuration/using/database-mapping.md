@@ -5,9 +5,9 @@ description: Mappatura del database
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '526'
 ht-degree: 3%
 
 ---
@@ -175,4 +175,4 @@ Per ulteriori informazioni, consulta i seguenti collegamenti:
 * [Struttura dello schema](schema-structure.md)
 * [Gestione delle chiavi](database-keys.md)
 * [Gestione collegamenti](database-links.md)
-* [Modello dati di Campaign](about-data-model.md)
+* [Modello dati della campagna](about-data-model.md)

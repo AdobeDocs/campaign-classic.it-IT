@@ -5,10 +5,10 @@ description: Gestione delle chiavi negli schemi di dati
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 exl-id: faf63c8f-9d10-43c1-a990-91361594af9f
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 2%
+source-wordcount: '619'
+ht-degree: 1%
 
 ---
 
@@ -187,4 +187,4 @@ Per ulteriori informazioni, consulta i seguenti collegamenti:
 * [Struttura dello schema](schema-structure.md)
 * [Mappatura del database](database-mapping.md)
 * [Gestione collegamenti](database-links.md)
-* [Modello dati di Campaign](about-data-model.md)
+* [Modello dati della campagna](about-data-model.md)
