@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a2126458-2ae5-47c6-ad13-925f0e067ecf
-source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
+source-git-commit: fd4a815bca23b94590012c4883cfaa9c29b6f118
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '325'
 ht-degree: 1%
 
 ---
@@ -23,8 +23,12 @@ Ulteriori informazioni su Tomcat in Campaign e su come individuare la versione d
 
 >[!AVAILABILITY]
 >
-> A partire dalla versione v7.4.1, Tomcat 10.1 è la versione predefinita.
 >
+>* A partire da Campaign v7.4.1, Tomcat 10.1 è la versione predefinita.
+>
+>* Adobe Campaign Classic non utilizza protocolli WebSocket e HTTP2.
+>
+
 
 
 ## Porta predefinita per Apache Tomcat {#default-port-for-tomcat}
