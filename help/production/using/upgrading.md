@@ -8,10 +8,10 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: 1ab08a89b17fca20e9497696417ecba580e26802
+source-git-commit: fee880f4b200b322c2b2a0034f17975993c862b3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1136'
+ht-degree: 1%
 
 ---
 
@@ -125,7 +125,7 @@ Il file è **nlserver6-v7-XXX.rpm**
 
 >[!AVAILABILITY]
 >
->A partire dalla versione 7.4.1, le librerie per i pacchetti RPM Linux non sono più incluse in Campaign. È necessario installare queste librerie.
+>A partire dalla versione 7.4.1, le librerie XML per i pacchetti RPM Linux non sono più incluse in Campaign. È necessario installare queste librerie.
 > 
 
 
