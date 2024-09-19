@@ -7,9 +7,9 @@ user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2552'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -294,7 +294,7 @@ ht-degree: 99%
       + [Persone e destinatari](reporting/using/person-people-recipients.md)
    + Analizzare le popolazioni {#analyzing-populations}
       + [Informazioni sull’analisi descrittiva](reporting/using/about-descriptive-analysis.md)
-      + [Utilizzare l’assistente all’analisi descrittiva](reporting/using/using-the-descriptive-analysis-wizard.md)
+      + [Usare l’assistente di analisi descrittiva](reporting/using/using-the-descriptive-analysis-wizard.md)
       + [Impostazioni dei rapporti](reporting/using/processing-a-report.md)
       + [Casi d’uso](reporting/using/use-cases.md)
    + Creare nuovi rapporti {#creating-new-reports}
@@ -772,7 +772,7 @@ ht-degree: 99%
       + [Filtraggio degli schemi](configuration/using/filtering-schemas.md)
       + [Limitare la visualizzazione dei dati personali](configuration/using/restricting-pii-view.md)
       + [Aggiornamento della struttura del database](configuration/using/updating-the-database-structure.md)
-      + [Nuovo assistente campo](configuration/using/new-field-wizard.md)
+      + [Nuovo assistente ai campi](configuration/using/new-field-wizard.md)
       + [Struttura di uno schema di dati](configuration/using/structure-of-a-data-schema.md)
       + [Rigenerazione degli schemi](configuration/using/regenerating-schemas.md)
       + [Esempi di modifica degli schemi](configuration/using/examples-of-schemas-edition.md)
