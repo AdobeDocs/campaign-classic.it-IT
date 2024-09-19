@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: d31aa28da06e65664da655b6b082563767b35f7a
+source-git-commit: 4be5bf54362240aac1b77298b08b14d3e5542f52
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 100%
+source-wordcount: '385'
+ht-degree: 93%
 
 ---
 
@@ -30,7 +30,6 @@ _18 giugno 2024_
 * Dopo aver [migrato gli operatori tecnici di Campaign a Developer Console](../../technotes/using/ims-migration.md) e aver effettuato la [transizione a IMS per l’autenticazione dell’utente finale](../../technotes/using/migrate-users-to-ims.md), puoi abilitare l’interfaccia utente e le restrizioni API per rimuovere le opzioni e le funzionalità specifiche dell’autenticazione nativa. [Ulteriori informazioni](../../technotes/using/impact-ims-migration.md)
 
 
-
 ### Aggiornamenti della compatibilità {#release-7-4-1-compat}
 
 La [matrice di compatibilità di Adobe Campaign](compatibility-matrix.md) è stata aggiornata con le modifiche in arrivo con questa nuova versione ed elencate di seguito.
@@ -48,6 +47,9 @@ La [matrice di compatibilità di Adobe Campaign](compatibility-matrix.md) è sta
    * un nuovo Campaign SDK 1.0.27 per iOS, compatibile con iOS 16 e 17 e i più recenti [requisiti della richiesta di accesso a dati personali per Apple iOS](https://developer.apple.com/news/?id=r1henawx){target="_blank"}.
    * un nuovo SDK Campaign per Android 14.
 
+### Altre modifiche {#release-7-4-1-other}
+
+A partire dalla versione 7.4.1, le librerie XML per i pacchetti RPM Linux non sono più incluse in Campaign. In qualità di cliente on-premise o ibrido, l’amministratore deve installare queste librerie.
 
 ### Patch {#release-7-4-1-patches}
 
