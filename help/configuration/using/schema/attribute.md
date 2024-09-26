@@ -7,9 +7,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: '1573'
 ht-degree: 1%
 
 ---
@@ -76,7 +76,7 @@ La sequenza in cui sono definiti `<attribute>` elementi in un `<srcschema>` non 
 * **dbEnum (stringa)**: riceve il nome interno di un&#39;enumerazione &quot;chiusa&quot;. I valori di enumerazione devono essere definiti in `<srcschema>`.
 * **defOnDuplicate (booleano)**: se questo attributo è attivato, quando un record viene duplicato il valore predefinito (definito in @default) viene automaticamente riapplicato al record.
 * **default (stringa)**: consente di definire il valore del campo predefinito (chiamata a una funzione, valore predefinito). Questo attributo riceve un&#39;espressione XTK.
-* **desc (stringa)**: consente di inserire una descrizione dell&#39;attributo. Questa descrizione viene visualizzata nella barra di stato dell’interfaccia.
+* **desc (stringa)**: consente di inserire una descrizione dell&#39;attributo. Questa descrizione viene utilizzata per capire cos’è l’elemento e a cosa serve. È possibile visualizzarlo nel modulo.
 * **modifica (stringa)**: questo attributo specifica il tipo di input che verrà utilizzato nel modulo collegato allo schema.
 * **enum (stringa)**: riceve il nome dell&#39;enumerazione collegata al campo. L’enumerazione può essere inserita nello stesso schema o in uno schema remoto.
 * **expr (stringa)**: definisce un&#39;espressione di precalcolo del campo. Questo attributo riceve un&#39;espressione Xpath o XTK.
@@ -90,7 +90,7 @@ La sequenza in cui sono definiti `<attribute>` elementi in un `<srcschema>` non 
    * dedicato: `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
    * condiviso: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
 
-  Esistono due tipi di campi delle caratteristiche: campi à¹ semplici in cui è autorizzato un singolo valore sulla caratteristica e campi oà¹ a scelta multipla in cui la caratteristica è collegata a un elemento di raccolta che può contenere più valori.
+  Esistono due tipi di campi delle caratteristiche: campi oà<sup>1</sup> semplici in cui è autorizzato un singolo valore per la caratteristica e campi a scelta multipla oà<sup>1</sup> in cui la caratteristica è collegata a un elemento di raccolta che può contenere diversi valori.
 
   Quando una caratteristica è definita in uno schema, questo schema deve avere una chiave principale basata su un singolo campo (le chiavi composite non sono autorizzate).
 

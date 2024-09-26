@@ -4,9 +4,9 @@ title: 'Elementi e attributi dello schema: elemento'
 description: elemento
 feature: Schema Extension
 exl-id: 60f15ae5-b2bd-48f9-aa45-8f795a3071aa
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
 workflow-type: tm+mt
-source-wordcount: '2016'
+source-wordcount: '2029'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ In Adobe Campaign sono disponibili quattro tipi di elementi `<element>`:
 * **dbEnum (stringa)**: riceve il nome interno di un&#39;enumerazione &quot;chiusa&quot;. I valori di enumerazione devono essere definiti in `<srcschema>`.
 * **defOnDuplicate (booleano)**: se questo attributo è attivato, quando un record viene duplicato il valore predefinito (definito in @default) viene automaticamente riapplicato al record.
 * **default (stringa)**: consente di definire il comportamento dell&#39;elemento (chiamata a una funzione, valore predefinito). Questo attributo riceve un&#39;espressione XTK.
-* **desc (stringa)**: consente di inserire una descrizione dell&#39;elemento. Questa descrizione viene visualizzata nella barra di stato dell’interfaccia.
+* **desc (stringa)**: consente di inserire una descrizione dell&#39;elemento. Questa descrizione viene utilizzata per capire cos’è l’elemento e a cosa serve. È possibile visualizzarlo nel modulo.
 * **displayAsField (booleano)**: se questo attributo è attivato, un tipo di &quot;collegamento&quot; `<element>` verrà visualizzato come campo nella visualizzazione struttura degli schemi (scheda &quot;Struttura&quot;). In questo modo, è possibile visualizzare un collegamento come campo locale e modificarne il comportamento durante una query. Quando l’elemento viene trovato nella SELECT di una query, verrà utilizzato il valore della destinazione del collegamento. Quando l’elemento viene trovato nel WHERE di una query, viene utilizzata la chiave sottostante del collegamento.
 * **modifica (stringa)**: questo attributo specifica il tipo di input che verrà utilizzato nel modulo collegato allo schema.
 * **enum (stringa)**: riceve il nome dell&#39;enumerazione collegata al campo. L’enumerazione può essere inserita nello stesso schema o in uno schema remoto.
