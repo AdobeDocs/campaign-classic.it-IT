@@ -8,14 +8,14 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
-source-git-commit: b4ab1fe5e98211c2b1bcdb319f10777c032831c7
+source-git-commit: 9526d466dc4613410905d9d7265c6471cd1df599
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1065'
 ht-degree: 0%
 
 ---
 
-# Installazione di pacchetti con Linux{#installing-packages-with-linux}
+# Installazione di pacchetti con Linux {#installing-packages-with-linux}
 
 Adobe Campaign viene fornito con il pacchetto **nlserver** che contiene i file binari e di configurazione per una determinata versione.
 
@@ -60,6 +60,8 @@ Per installare Adobe Campaign su un sistema operativo RPM (RHEL, CentOS), effett
    rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
    ```
 
+Si noti che la maggior parte delle dipendenze elencate è obbligatoria e `nlserver` non può essere avviata se non è installata (l&#39;eccezione è aperta; è possibile installare un altro JDK).
+
 Il comando `bc`, obbligatorio per l&#39;esecuzione di [netreport](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts), non è disponibile per impostazione predefinita in tutte le distribuzioni Linux. Per verificare se il comando è disponibile, eseguire il comando `which bc`. In caso contrario, devi installarlo.
 
 Con CentOS è necessario installare il pacchetto bc.x86_64: connettiti come **root** ed esegui il comando seguente:
@@ -81,32 +83,9 @@ Per installare Adobe Campaign su un sistema operativo Debian a 64 bit, attieniti
 1. Per installarlo, connettiti come **root** ed esegui il seguente comando, dove **XXXX** è il numero di build di Adobe Campaign:
 
    ```
-   dpkg -i nlserver6-v7-XXXX-linux-2.6-amd64.deb
+   apt install ./nlserver6-v7-XXXX-linux-2.6-amd64.deb
    ```
 
-   In caso di dipendenze mancanti, eseguire il comando seguente:
-
-   ```
-   apt-get install -f
-   ```
-
-
-1. Quando installi Adobe Campaign su un sistema operativo Debian, considera quanto segue:
-
-* OpenSSL deve essere installato in anticipo.
-* Installa libicu e libc-aresYY, dove XX è la versione, con i seguenti comandi:
-
-  ```
-  apt install libicuXX
-  ```
-
-  ```
-  apt install libc-aresXX
-  ```
-
-  ```
-  apt install openjdk-XX-jdk
-  ```
 
 ## Personalizzazione dei parametri {#personalizing-parameters}
 
