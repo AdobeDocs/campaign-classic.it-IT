@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 349c3dfd936527e50d7d3e03aa3408b395502da0
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 2%
@@ -169,10 +169,10 @@ Contenuto pacchetto:
 <package author="Administrator (admin)" buildNumber="7974" buildVersion="7.1" img=""
 label="" name="" namespace="" vendor="">
  <desc></desc>
- <version buildDate="2013-01-09 10:30:18.954Z"/>
+ <version buildDate="AAAA-MM-DD HH:MM:SS.954Z"/>
  <entities schema="nms:operation">
-  <operation duration="432000" end="2013-01-14" internalName="OP1" label="MyCampaign"
-  modelName="opEmpty" start="2013-01-09">
+  <operation duration="432000" end="AAAA-MM-DD" internalName="OP1" label="MyCampaign"
+  modelName="opEmpty" start="AAAA-MM-DD">
    <controlGroup>
     <where filteringSchema=""/>
    </controlGroup>
@@ -188,7 +188,7 @@ label="" name="" namespace="" vendor="">
    </fcpSeed>
    <owner _operation="none" name="admin" type="0"/>
    <program _operation="none" name="nmsOperations"/>
-   <task end="2013-01-17 10:07:51.000Z" label="MyTask" name="TSK2" start="2013-01-16 10:07:51.000Z"
+   <task end="2023-01-17 10:07:51.000Z" label="MyTask" name="TSK2" start="2023-01-16 10:07:51.000Z"
    status="1">
     <owner _operation="none" name="admin" type="0"/>
     <operation _operation="none" internalName="OP1"/>
@@ -354,7 +354,7 @@ Importa sempre all’interno della stessa versione della piattaforma. Devi verif
 >[!IMPORTANT]
 >
 >L’importazione tra versioni diverse non è supportata da Adobe.
-<!--This is not allowed. Importing from 6.02 to 6.1, for example, is prohibited. If you do so, R&D won’t be able to help you resolve any issues you encounter.-->
+<!--This is not allowed. Importing from 6.02 to 6.1, for example, is prohibited. If you do so, R&D won't be able to help you resolve any issues you encounter.-->
 
 Presta attenzione allo schema e alla struttura del database. L’importazione del pacchetto con schema deve essere seguita dalla generazione dello schema.
 
@@ -369,7 +369,7 @@ Per iniziare, definisci diversi tipi di pacchetti. Verranno utilizzati solo quat
 * Puoi considerare un’entità sia come elemento &quot;admin&quot; che come elemento &quot;platform&quot;.
 * Non includere più di un’entità in un pacchetto durante il caricamento in un’istanza Campaign.
 
-<!--Nothing “works” alone. An entity package does not have a specific role or objective.-->
+<!--Nothing "works" alone. An entity package does not have a specific role or objective.-->
 
 Se devi distribuire la configurazione su una nuova istanza, puoi importare tutti i pacchetti di entità.
 
@@ -390,7 +390,7 @@ Una volta configurata, una funzione può essere esportata in un altro ambiente. 
 
 La prima soluzione consiste nell&#39;esportare di nuovo l&#39;intera funzionalità. Tuttavia, per evitare qualsiasi rischio (aggiornamento di elementi indesiderati), è più sicuro disporre di un pacchetto contenente solo la correzione.
 
-Per questo motivo consigliamo di creare un pacchetto di &quot;aggiornamento&quot; contenente un solo tipo di entità della funzione.
+Ecco perché consigliamo di creare un pacchetto di &quot;aggiornamento&quot; contenente un solo tipo di entità della funzione.
 
 Un aggiornamento potrebbe non essere solo una correzione, ma anche un nuovo elemento del pacchetto entità/funzione/campagna. Per evitare di distribuire l’intero pacchetto, puoi esportare un pacchetto di aggiornamento.
 
