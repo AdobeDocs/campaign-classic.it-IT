@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '843'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Salvo diversa indicazione, sono supportate tutte le versioni minori.
 
 >[!CAUTION]
 >
->Questa matrice viene regolarmente aggiornata con l’aggiunta di nuovi sistemi e strumenti supportati e la rimozione di quelli obsoleti.
+>Questa matrice viene regolarmente aggiornata con l’aggiunta dei nuovi sistemi e strumenti supportati e la rimozione di quelli obsoleti.
 
 ## Sistemi operativi {#OperatingSystems}
 
@@ -83,7 +83,7 @@ In qualità di cliente on-premise/ibrido, devi installare Adobe Campaign in uno 
 
 >[!IMPORTANT]
 >
->Con RHEL, disattiva [SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux) o fai in modo che gli architetti scrivano regole SELinux personalizzate per evitare che il SELinux abilitato causi problemi alle operazioni di Campaign.
+>Se utilizzi RHEL, è necessario disabilitare [SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux) o a fare in modo che gli architetti scrivano regole SELinux personalizzate per evitare che il SELinux abilitato causi problemi alle attività di Campaign.
 
 ## Server web {#WebServers}
 
@@ -96,7 +96,7 @@ In qualità di cliente on-premise/ibrido, a seconda del sistema operativo in uso
 <tr>
 <td>Microsoft IIS</td>
 <td>
-<p>10,0</p>
+<p>10.0</p>
 </td>
 </tr>
 <tr>

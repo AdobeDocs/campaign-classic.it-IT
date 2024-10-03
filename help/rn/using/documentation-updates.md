@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 3f6bbf2766a61580c4f232d3919fe955d82a7881
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3782'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,11 +25,11 @@ Per gli aggiornamenti relativi alla versione, consulta le [Note sulla versione d
 
 Gli stati di rilascio sono stati ridotti e semplificati. [Ulteriori informazioni](rn-overview.md)
 
-L&#39;installazione dei pacchetti Linux è stata aggiornata per la versione v7.4.1. [Ulteriori informazioni](../../installation/using/installing-packages-with-linux.md)
+L’installazione dei pacchetti Linux è stata aggiornata per la versione v7.4.1. [Ulteriori informazioni](../../installation/using/installing-packages-with-linux.md)
 
 ### Giugno 2024 {#june-2024}
 
-È stata aggiornata la sezione Note sulla versione 7.4.1 con miglioramenti, aggiornamenti di compatibilità e patch. [Ulteriori informazioni](latest-release.md)
+È stata aggiornata la sezione Note sulla versione con miglioramenti, aggiornamenti di compatibilità e patch della versione 7.4.1. [Ulteriori informazioni](latest-release.md)
 
 È stata aggiunta una nota per specificare come cancellare le variabili di istanza al riavvio dei flussi di lavoro. [Ulteriori informazioni](../../workflow/using/starting-a-workflow.md)
 
