@@ -6,14 +6,14 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
+source-git-commit: 7b71cac6f4c2fc2e8d30683130adb27eff757b73
 workflow-type: ht
 source-wordcount: '903'
 ht-degree: 100%
 
 ---
 
-# Aggiornamenti della versione{#rn-overview}
+# Aggiornamenti della versione {#rn-overview}
 
 Per Adobe Campaign Classic vengono rilasciati periodicamente aggiornamenti di prodotto con nuove funzionalità, correzioni di bug e miglioramenti delle a livello di prestazioni, sicurezza e usabilità. Questi aggiornamenti vengono rilasciati come **build del prodotto**. Informazioni dettagliate su ogni nuova build sono disponibili nella sezione [Note sulla versione](latest-release.md).
 
@@ -34,10 +34,9 @@ Aligned with this naming, Campaign has 3 types of upgrades:
 1. Patch Upgrades - A patch upgrade includes fixes only (ex: 8.5.1 to 8.5.2)
 -->
 
-## Stato delle versioni{#rn-statuses}
+## Stato delle versioni {#rn-statuses}
 
 A ogni nuova versione è associato uno stato identificato da un colore nelle [Note sulla versione](latest-release.md).
-
 
 | Stato | Descrizione |
 |---|---|
@@ -45,7 +44,7 @@ A ogni nuova versione è associato uno stato identificato da un colore nelle [No
 | [!BADGE Disponibilità limitata]{type=Informative} | Solo per implementazione su richiesta. |
 | [!BADGE Obsoleto]{type=negative} | Nessuna distribuzione. Nessun bug fix. Le implementazioni esistenti devono essere aggiornate. |
 
-## Ciclo di rilascio{#rn-cycle}
+## Ciclo di rilascio {#rn-cycle}
 
 Adobe Campaign viene aggiornato regolarmente. La frequenza regolare degli aggiornamenti è volta a far ottenere agli utenti il prodotto migliore e più recente, mantenendo l’ambiente sicuro e migliorando l’esperienza di utilizzo.
 
@@ -53,7 +52,7 @@ Per questo motivo è fondamentale **eseguire la build stabile più recente** di 
 
 In qualità di cliente in hosting, puoi beneficiare automaticamente, senza alcun intervento da parte tua, dell’aggiornamento alla build stabile più recente. Ulteriori informazioni nella [sezione Aggiornamento annuale](#yearly-upgrade). Se effettui la migrazione da una build precedente, Adobe consiglia di eseguire prima l’aggiornamento a questa build.
 
-## Raccomandazioni{#recommendations}
+## Raccomandazioni {#rn-recommendations}
 
 Per garantire una configurazione stabile, si consiglia di installare **la stessa build** su tutti i server in esecuzione sulla stessa configurazione client.
 
