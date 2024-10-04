@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: cc614ed608f1e8229c0ef1ccf35dbac6cb9dddd3
+source-git-commit: e5468f2aa5dc18c2b24c3e80e416e423ad0e13c9
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1233'
 ht-degree: 2%
 
 ---
@@ -132,22 +132,6 @@ Quindi puoi installare i pacchetti richiesti, come descritto di seguito:
 
 * Distribuzione basata su RPM (RedHat, SuSe)
 
-  Per installarli, esegui come root:
-
-  ```
-  yum install ./nlserver6-v7-XXXX.rpm
-  ```
-
-  Dove XXX è la versione del file.
-
-  Il file rpm dipende dai pacchetti che si trovano nelle distribuzioni CentOS/Red Hat. Se non si desidera utilizzare alcune di queste dipendenze, potrebbe essere necessario utilizzare l&#39;opzione &quot;nodeps&quot; di rpm:
-
-  ```
-  rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
-  ```
-
-  Si noti che la maggior parte delle dipendenze è obbligatoria e `nlserver` non può essere avviata se non è installata. L&#39;unica eccezione è openjdk; se necessario, è possibile installare un altro JDK.
-
   Se il pacchetto `epel-release` non è installato, installarlo. Per eseguire questa operazione, immetti il seguente comando, come root:
 
   ```
@@ -173,6 +157,14 @@ Quindi puoi installare i pacchetti richiesti, come descritto di seguito:
   >[!IMPORTANT]
   >
   >Se leggi `Removing:` invece di `Upgrading:`, annulla il comando. Probabilmente ci sono alcuni errori (elencati sopra) che spiegano la rimozione. In tal caso, correggere tali errori aggiornando/installando le dipendenze mancanti elencate e quindi provare a eseguire di nuovo il comando.
+
+  Il file rpm dipende dai pacchetti che si trovano nelle distribuzioni CentOS/Red Hat. Se non si desidera utilizzare alcune di queste dipendenze, potrebbe essere necessario utilizzare l&#39;opzione &quot;nodeps&quot; di rpm:
+
+  ```
+  rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
+  ```
+
+  Si noti che la maggior parte delle dipendenze è obbligatoria e `nlserver` non può essere avviata se non è installata. L&#39;unica eccezione è openjdk; se necessario, è possibile installare un altro JDK.
 
 * Distribuzione basata su DEB (Debian)
 
