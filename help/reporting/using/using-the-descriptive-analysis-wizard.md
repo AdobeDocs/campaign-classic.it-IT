@@ -1,20 +1,18 @@
 ---
 product: campaign
-title: Utilizzare l’assistente all’analisi descrittiva
-description: Utilizzare l’assistente all’analisi descrittiva
+title: Creare il primo rapporto di analisi descrittivo
+description: Scopri come utilizzare l’assistente per creare il tuo primo rapporto di analisi descrittivo
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
-source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
+source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
 workflow-type: tm+mt
-source-wordcount: '1570'
+source-wordcount: '1580'
 ht-degree: 0%
 
 ---
 
-# Utilizzare l’assistente all’analisi descrittiva{#using-the-descriptive-analysis-wizard}
-
-
+# Creare il primo rapporto di analisi descrittivo {#using-the-descriptive-analysis-wizard}
 
 Per creare un rapporto di analisi descrittivo, utilizza l’assistente dedicato. La configurazione dipende dai dati da analizzare e dal rendering desiderato.
 

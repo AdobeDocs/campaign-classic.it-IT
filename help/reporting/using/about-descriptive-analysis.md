@@ -1,20 +1,18 @@
 ---
 product: campaign
-title: Introduzione all’analisi descrittiva
-description: Introduzione all’analisi descrittiva
+title: Cos’è l’analisi descrittiva
+description: Analizzare le popolazioni con rapporti di analisi descrittivi
 feature: Reporting, Monitoring
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---
 
-# Introduzione all’analisi descrittiva{#about-descriptive-analysis}
-
-
+# Cos’è l’analisi descrittiva {#about-descriptive-analysis}
 
 Per produrre statistiche sui dati nel database, crea rapporti di analisi descrittivi utilizzando l’assistente dedicato e adattane il contenuto e la presentazione alle tue esigenze.
 
