@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 87103c31-1530-4f8d-ab3a-6ff73093b80c
-source-git-commit: 7906e9fee164d731659bbb9f96394faca5961240
+source-git-commit: 387bcf39c13cc1f9544433b9441769f4b16b52ca
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '649'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Le versioni supportate sono descritte in dettaglio nella [Matrice di compatibili
 
 >[!AVAILABILITY]
 >
->* A partire dalla versione 7.4.1, Campaign richiede almeno Java JDK 11. Se il server Campaign è installato in un ambiente Windows, devi generare un JRE in quanto non è più fornito per impostazione predefinita. La variabile di ambiente JRE_HOME è necessaria per individuare la DLL di runtime Java (jvm.dll).
+>* A partire dalla versione 7.4.1, Campaign richiede almeno **Java JDK 11**. Se il server Campaign è installato in un ambiente Windows, Java Runtime (JRE) non viene più rilevato automaticamente. La variabile di ambiente JRE_HOME deve essere impostata sulla cartella in cui Campaign può individuare il file `bin/server/jvm.dll`. Ad esempio, se JDK 11 è installato nella cartella `C:\Program Files\Java\jdk-11`, JRE_HOME deve essere `C:\Program Files\Java\jdk-11`.
 >
 >* A partire dalla versione v7.4.1, Tomcat 10.1 è la versione predefinita.
 >
@@ -65,7 +65,7 @@ Per scaricare JDK, connettiti al [sito Web Oracle](https://www.oracle.com/techne
 > Assicurati di scaricare Java Development Kit (JDK) e non un ambiente Java Runtime (JRE).
 
 
-Per installare JDSL in un ambiente Linux, l’Adobe consiglia di utilizzare un gestore di pacchetti.
+Per installare JDSL in un ambiente Linux, Adobe consiglia di utilizzare un gestore di pacchetti.
 
 Per Debian, usa il seguente comando:
 
