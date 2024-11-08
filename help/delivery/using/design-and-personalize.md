@@ -6,9 +6,9 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Email Design, Personalization
 role: User
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: d34f75fadb02b4c03acc0c2d7be52df65320ec2d
 workflow-type: tm+mt
-source-wordcount: '1293'
+source-wordcount: '1287'
 ht-degree: 4%
 
 ---
@@ -68,7 +68,7 @@ Lavora sulla [riga dell&#39;oggetto](defining-the-email-content.md#message-conte
 
 Includi sempre un collegamento a una pagina speculare. La posizione preferita è nella parte superiore dell’e-mail. [Ulteriori informazioni](sending-messages.md#generating-the-mirror-page)
 
-### Collegamento annullamento abbonamento
+### Collegamento annullamento dell’abbonamento
 
 Il collegamento di annullamento dell’abbonamento è essenziale. Deve essere visibile e valido e il modulo deve essere funzionale. Per impostazione predefinita, quando il messaggio viene analizzato, una [regola di tipologia](steps-validating-the-delivery.md#validation-process-with-typologies) controlla se è stato incluso un collegamento di rinuncia e, in caso contrario, genera un avviso.
 
@@ -123,7 +123,7 @@ Il design reattivo assicura che un’e-mail venga riprodotta in modo ottimale pe
 
 * Utilizza la modalità anteprima e invia bozze per testare il rendering su quanti più dispositivi possibili
 
-* Il modulo Adobe Campaign Classic Digital Content Editor (DCE) include alcuni modelli di progettazione adattabili per dispositivi mobili disponibili tramite **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Content templates]**. Ulteriori informazioni [in questo articolo](https://theblog.adobe.com/responsive-email-design-101/)
+* Il modulo Adobe Campaign Classic Digital Content Editor (DCE) include alcuni modelli di progettazione adattabili per dispositivi mobili disponibili tramite **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Content templates]**.
 
 ## Gestione immagini {#manage-images}
 
@@ -155,7 +155,7 @@ Per essere accessibili dall’esterno, le immagini utilizzate nelle e-mail e nel
 
 ## Anteprima del messaggio {#preview-msg}
 
-L’Adobe consiglia di visualizzare l’anteprima del messaggio per controllarne la personalizzazione e per vedere come i destinatari visualizzeranno la consegna.
+Adobe consiglia di visualizzare l’anteprima del messaggio per controllarne la personalizzazione e per vedere come i destinatari visualizzeranno la consegna.
 
 * Nell&#39;assistente alla consegna, la scheda secondaria **[!UICONTROL Preview]** ti consente di visualizzare il rendering di ciascun contenuto per un destinatario. I campi di personalizzazione e gli elementi condizionali del contenuto vengono sostituiti con le informazioni corrispondenti per il profilo selezionato. [Ulteriori informazioni](defining-the-email-content.md#message-content)
 
