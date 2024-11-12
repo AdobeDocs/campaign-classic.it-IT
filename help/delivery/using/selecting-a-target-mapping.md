@@ -2,14 +2,15 @@
 product: campaign
 title: Selezionare una mappatura di destinazione
 description: Scopri come eseguire il targeting della mappatura
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Delivery Templates
+hide: true
+hidefromtoc: true
 role: User
 exl-id: b5514fa3-1e65-45dc-8e40-d1ba3b673e7a
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 446062946b64c9a4d065b6a56d263914cbe628f8
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 41%
+source-wordcount: '184'
+ht-degree: 44%
 
 ---
 

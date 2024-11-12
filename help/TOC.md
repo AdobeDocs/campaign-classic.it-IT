@@ -6,9 +6,9 @@ title: Guida di Campaign Classic v7
 user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+source-git-commit: 446062946b64c9a4d065b6a56d263914cbe628f8
 workflow-type: tm+mt
-source-wordcount: '2560'
+source-wordcount: '2562'
 ht-degree: 100%
 
 ---
@@ -163,7 +163,7 @@ ht-degree: 100%
       + [Definire il contenuto delle direct mail](delivery/using/defining-the-direct-mail-content.md)
       + [Convalidare](delivery/using/validating.md)
    + Utilizzare i modelli di consegna {#using-delivery-templates}
-      + [Informazioni sui modelli](delivery/using/about-templates.md)
+      + [Utilizzare i modelli di consegna](delivery/using/about-templates.md)
       + [Creare un modello di consegna](delivery/using/creating-a-delivery-template.md)
       + [Selezionare una mappatura di destinazione](delivery/using/selecting-a-target-mapping.md)
       + [Creare una consegna da un modello](delivery/using/creating-a-delivery-from-a-template.md)
