@@ -4,8 +4,10 @@ title: Utilizzare i modelli di consegna
 description: Utilizzare i modelli di consegna
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Delivery Templates
+hide: true
+hidefromtoc: true
 exl-id: a5da3f29-5eab-428c-b7c3-d9e4243fe628
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 6%
@@ -38,7 +40,7 @@ Quando gestisci più marchi in Adobe Campaign, Adobe consiglia di avere un sotto
 
 * L’indirizzo deve identificare esplicitamente il mittente. Il dominio deve essere di proprietà del mittente e deve essere registrato nel mittente.
 
-* L’Adobe consiglia di creare account e-mail corrispondenti agli indirizzi specificati per le consegne e le risposte. Rivolgiti all’amministratore del sistema di messaggistica.
+* Adobe consiglia di creare account e-mail corrispondenti agli indirizzi specificati per le consegne e le risposte. Rivolgiti all’amministratore del sistema di messaggistica.
 
 Per configurare gli indirizzi nell’interfaccia di Campaign, effettua le seguenti operazioni:
 

@@ -6,9 +6,9 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Deliverability
 role: User
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: de6e86eb2304a88e836c5759b87d7f38446ed357
+source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '748'
 ht-degree: 6%
 
 ---
@@ -25,11 +25,11 @@ Durante la progettazione del contenuto del messaggio, segui i principi elencati 
 * [Collegamento per l&#39;annullamento dell&#39;abbonamento](#opt-out) e pagina di destinazione: il collegamento per l&#39;annullamento dell&#39;abbonamento è essenziale. Deve essere visibile e valido e il modulo deve essere funzionale.
 * Anteprima: utilizza gli strumenti offerti da Adobe Campaign per verificare e ottimizzare il contenuto dell&#39;e-mail ([Rendering della casella in entrata](#message-responsiveness), [SpamAssassin](#spamassassin)).
 
-Per ulteriori suggerimenti su come ottimizzare il recapito messaggi durante la progettazione del contenuto, consulta la [Guida alle best practice per il recapito messaggi](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html) di Adobe.
+Per ulteriori suggerimenti per ottimizzare il recapito messaggi durante la progettazione del contenuto, consulta la [Guida alle best practice per il recapito messaggi](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html) di Adobe.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla modifica del contenuto delle e-mail, vedere [Definire il contenuto delle e-mail](defining-the-email-content.md) e [Creare contenuto personalizzato](design-and-personalize.md).
+>Per ulteriori informazioni sulla modifica del contenuto di posta elettronica, vedere [Definire il contenuto di posta elettronica](defining-the-email-content.md).
 
 ## Indirizzo mittente {#sender-address}
 
@@ -44,8 +44,6 @@ Per ulteriori informazioni, consulta [questa pagina](defining-the-email-content.
 Per migliorare l’esperienza dei destinatari e farli aprire l’e-mail, Adobe Campaign ti consente di personalizzare i messaggi.
 
 Per ulteriori informazioni sull&#39;utilizzo dei campi di personalizzazione in Adobe Campaign, consulta [questa sezione](personalization-fields.md).
-
-Alcuni suggerimenti per ottimizzare la personalizzazione durante la creazione dei contenuti sono presentati in [questa sezione](design-and-personalize.md#optimize-personalization).
 
 ## Collegamento e modulo per la rinuncia {#opt-out}
 

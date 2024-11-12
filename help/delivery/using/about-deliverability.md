@@ -6,9 +6,9 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Deliverability
 role: User
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '654'
 ht-degree: 7%
 
 ---
@@ -19,7 +19,7 @@ Il recapito messaggi consente di misurare il successo delle campagne che raggiun
 
 Più precisamente, il recapito messaggi e-mail si riferisce all’insieme di caratteristiche che determinano la capacità di un messaggio di raggiungere la sua destinazione, tramite un indirizzo e-mail personale, in un breve periodo di tempo e con la qualità prevista in termini di contenuto e formato.
 
-Per informazioni più approfondite sulla consegna dei messaggi e per ulteriori informazioni sui termini, i concetti e gli approcci chiave per la consegna dei messaggi, consulta l&#39;[Adobe di Guida alle best practice per la consegna dei messaggi](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it).
+Adobe Per informazioni più approfondite sulla consegna dei messaggi e per ulteriori informazioni su termini, concetti e approcci chiave, consulta la [Guida alle best practice per la consegna dei messaggi](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it).
 
 ## Come migliorare il recapito messaggi {#deliverability-key-points}
 
@@ -27,7 +27,7 @@ I problemi di recapito dei messaggi sono solitamente legati a misure di protezio
 
 * Per raccomandazioni generali su come progettare campagne di e-mail marketing di successo, consulta [Strategia e definizione di recapito messaggi](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html).
 
-* Per raccomandazioni più specifiche su come ottimizzare il recapito dei messaggi e-mail di Adobe Campaign, l’Adobe consiglia di utilizzare le best practice elencate in questa sezione.
+* Per raccomandazioni più specifiche su come ottimizzare il recapito dei messaggi e-mail di Adobe Campaign, Adobe consiglia di utilizzare le best practice elencate in questa sezione.
 
 >[!NOTE]
 >
@@ -40,9 +40,8 @@ Il tasso di recapito messaggi è il numero di messaggi che raggiungono le casell
 Con Adobe Campaign, il tasso di consegna dipende da numerosi fattori, in particolare:
 
 * Corretta configurazione delle istanze: contatta il rappresentante dell’Adobe per assistenza.
-* Configurazione di rete legittima: vedi [questa sezione](optimize-delivery.md#network-config) e [Configurazione e strategia del dominio](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#domain-setup-and-strategy).
+* Configurazione di rete legittima: vedere [Impostazione e strategia del dominio](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#domain-setup-and-strategy).
 * La reputazione dell&#39;indirizzo IP: vedi [Strategia IP](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#ip-strategy).
-* Qualità degli indirizzi di destinazione: vedi [Gestione quarantena](optimize-delivery.md#quarantine-management).
 * Bassi [reclami](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html) e [tassi di mancato recapito](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html#hard-bounces).
 * Contenuto del messaggio: vedi [Controlla il contenuto dell&#39;e-mail](control-message-content.md).
 * Autenticazione messaggi (SPF, DKIM, DMARC): vedere [questa sezione](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
@@ -64,11 +63,11 @@ Durante la configurazione, la progettazione e il test del messaggio, assicurati 
 
 ### Verificare il consenso tramite il doppio consenso {#double-opt-in}
 
-Per evitare l’invio di messaggi a indirizzi non validi, limitare le comunicazioni improprie e migliorare la reputazione del mittente, l’Adobe consiglia di implementare un doppio meccanismo di consenso. Questo metodo ti consente di garantire che i destinatari si siano abbonati intenzionalmente.
+Per evitare l’invio di messaggi a indirizzi non validi, limitare le comunicazioni improprie e migliorare la reputazione del mittente, Adobe consiglia di implementare un doppio meccanismo di consenso. Questo metodo ti consente di garantire che i destinatari si siano abbonati intenzionalmente.
 
 Per ulteriori informazioni, consulta [Creare un abbonamento con doppio consenso](../../web/using/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in).
 
-Adobe Per ulteriori informazioni sulle best practice per la raccolta di dati dai clienti, consulta la [Guida alle best practice per il recapito di messaggi](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/first-impressions/address-collection-and-list-growth.html#data-quality-and-hygiene).
+Per ulteriori informazioni sulle best practice per la raccolta di dati dai clienti, consulta la [Guida alle best practice per il recapito messaggi](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/first-impressions/address-collection-and-list-growth.html#data-quality-and-hygiene) di Adobe.
 
 ### Gestione della quarantena
 

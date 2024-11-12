@@ -5,8 +5,10 @@ description: Scopri come ottimizzare la consegna dei messaggi
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Deliverability
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 4%
@@ -74,6 +76,6 @@ Quando inizi a inviare e-mail su una nuova piattaforma, puoi utilizzare un elenc
 
 ## Doppio meccanismo di consenso {#double-opt-in}
 
-Per evitare l’invio di messaggi a indirizzi non validi, limitare le comunicazioni improprie e migliorare la reputazione del mittente, l’Adobe consiglia di implementare un doppio meccanismo di consenso per la conferma dopo l’abbonamento. Questo aiuta a garantire che un destinatario si sia iscritto intenzionalmente.
+Per evitare l’invio di messaggi a indirizzi non validi, limitare le comunicazioni improprie e migliorare la reputazione del mittente, Adobe consiglia di implementare un doppio meccanismo di consenso per la conferma dopo l’abbonamento. Questo aiuta a garantire che un destinatario si sia iscritto intenzionalmente.
 
 I dettagli relativi all&#39;implementazione di questo meccanismo sono descritti in [questa sezione](../../web/using/use-cases-web-forms.md).
