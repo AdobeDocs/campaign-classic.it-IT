@@ -2,14 +2,13 @@
 product: campaign
 title: Canali di comunicazione
 description: Crea consegne per inviare messaggi personalizzati su canali diversi
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 63%
+source-wordcount: '1205'
+ht-degree: 61%
 
 ---
 
@@ -82,7 +81,7 @@ Adobe Campaign ti consente di inviare [notifiche push](about-mobile-app-channel.
 
 [Direct mail](about-direct-mail-channel.md) è un canale offline che consente di personalizzare e generare il file richiesto dai provider di direct mailing. Offre la possibilità di combinare i canali online e offline all’interno dei percorsi dei clienti.
 
-I canali online ti consentono di creare i messaggi (e-mail, SMS, consegna su app mobili e così via) e di inviarli al tuo pubblico direttamente da Adobe Campaign. Con i canali offline, la situazione è diversa. Quando prepari una consegna di direct mailing, Adobe Campaign genera un file contenente tutti i profili target e le informazioni del contatto selezionato, ad esempio l’indirizzo postale. Potrai quindi inviare questo file al provider di direct mailing, che si occuperà dell’invio effettivo.
+I canali online ti consentono di creare i messaggi (e-mail, SMS, consegna tramite app mobile, ecc.) e inviarli al pubblico direttamente da Adobe Campaign. Con i canali offline, la situazione è diversa. Quando prepari una consegna di direct mailing, Adobe Campaign genera un file contenente tutti i profili target e le informazioni del contatto selezionato, ad esempio l’indirizzo postale. Potrai quindi inviare questo file al provider di direct mailing, che si occuperà dell’invio effettivo.
 
 ## Altri canali {#other-channels}
 

@@ -2,13 +2,12 @@
 product: campaign
 title: Protocollo e impostazioni del connettore SMS
 description: Ulteriori informazioni sul connettore SMS e su come configurarlo
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: SMS
 role: Developer, Data Engineer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: 6803b6628313db9108a191fd143dac68ee799149
+source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
 workflow-type: tm+mt
-source-wordcount: '8466'
+source-wordcount: '8457'
 ht-degree: 1%
 
 ---
@@ -130,7 +129,7 @@ Questa PDU viene utilizzata per avviare una connessione a SMSC. Le modalità **T
 |:-:|:-:|
 | Trasmettitore | MT |
 | Ricevitore | MO + SR |
-| Ricevitore | MT + MO + SR |
+| Ricetrasmettitore | MT + MO + SR |
 
 Campi rilevanti in un `BIND_* PDU`:
 
@@ -385,7 +384,7 @@ Imposta il nome dell’implementazione SMSC. Deve essere impostato sul nome del 
 
 >[!NOTE]
 >
->Il team di recapito messaggi si basa sul contratto e i clienti devono contattare il proprio rappresentante di Adobe per informazioni relative al progetto di recapito messaggi.
+>Il team di recapito messaggi si basa sul contratto e i clienti devono contattare il proprio rappresentante Adobe per informazioni relative al recapito messaggi.
 
 #### Server {#server}
 
@@ -844,7 +843,7 @@ L’SMS deve essere contrassegnato come ricevuto nel registro di consegna. Il re
 Verifica di aver modificato il nome del provider di consegna. Il registro di consegna non deve mai contenere **SR Generic** negli ambienti di produzione.
 
 * **Verifica che MO siano elaborati**
-Se devi elaborare messaggi MO (risposte automatiche, memorizzazione di messaggi MO nel database, ecc.) prova a fare alcuni test. Invia alcuni SMS per tutte le parole chiave di risposta automatica e controlla se la risposta è abbastanza veloce, non più di qualche secondo.
+Se hai bisogno di elaborare il MO (risposte automatiche, memorizzazione del MO nel database, ecc.) prova a fare alcuni test. Invia alcuni SMS per tutte le parole chiave di risposta automatica e controlla se la risposta è abbastanza veloce, non più di qualche secondo.
 Archivia il registro che Adobe Campaign risponde con un `DELIVER_SM_RESP` (command_status=0) riuscito.
 
 ### Controllare le PDU {#check-pdus}

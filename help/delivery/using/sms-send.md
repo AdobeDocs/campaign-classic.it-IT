@@ -2,13 +2,12 @@
 product: campaign
 title: Inviare, monitorare e tenere traccia degli SMS
 description: Scopri come inviare, monitorare e tenere traccia degli SMS in Campaign
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: SMS
 role: User
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '962'
 ht-degree: 3%
 
 ---
