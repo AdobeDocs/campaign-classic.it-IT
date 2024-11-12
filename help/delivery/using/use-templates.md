@@ -7,7 +7,7 @@ feature: Delivery Templates
 hide: true
 hidefromtoc: true
 exl-id: a5da3f29-5eab-428c-b7c3-d9e4243fe628
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 6%
@@ -20,11 +20,11 @@ ht-degree: 6%
 
 I modelli di consegna consentono una maggiore efficienza, fornendo scenari pronti per i tipi più comuni di attività. Con i modelli, gli esperti di marketing possono distribuire nuove campagne con una personalizzazione minima in un periodo di tempo più breve.
 
-Ulteriori informazioni sui modelli di consegna in [questa sezione](creating-a-delivery-template.md).
+Ulteriori informazioni sui modelli di consegna in [questa sezione](about-templates.md).
 
 ## Introduzione ai modelli di consegna {#gs-templates}
 
-Un [modello di consegna](creating-a-delivery-template.md) ti consente di definire una volta una serie di proprietà tecniche e funzionali che soddisfano le tue esigenze e che possono essere riutilizzate per le consegne future. Potrai quindi risparmiare tempo e standardizzare le consegne quando necessario.
+Un [modello di consegna](about-templates.md) ti consente di definire una volta una serie di proprietà tecniche e funzionali che soddisfano le tue esigenze e che possono essere riutilizzate per le consegne future. Potrai quindi risparmiare tempo e standardizzare le consegne quando necessario.
 
 Quando gestisci più marchi in Adobe Campaign, Adobe consiglia di avere un sottodominio per marchio. Ad esempio, una banca può avere diversi sottodomini corrispondenti a ciascuna delle sue agenzie regionali. Se una banca è proprietaria del dominio bluebank.com, i sottodomini possono essere @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com, ecc. Disporre di un modello di consegna per sottodominio consente di utilizzare sempre i giusti parametri preconfigurati per ciascun marchio, evitando errori e risparmiando tempo.
 
@@ -44,7 +44,7 @@ Quando gestisci più marchi in Adobe Campaign, Adobe consiglia di avere un sotto
 
 Per configurare gli indirizzi nell’interfaccia di Campaign, effettua le seguenti operazioni:
 
-1. Nel [modello di consegna](creating-a-delivery-template.md), fai clic sul collegamento **[!UICONTROL From]**. Nella finestra **[!UICONTROL Email header parameters]**, compila i campi seguenti:
+1. Nel [modello di consegna](about-templates.md), fai clic sul collegamento **[!UICONTROL From]**. Nella finestra **[!UICONTROL Email header parameters]**, compila i campi seguenti:
 
    ![](assets/d_best_practices_email_header.png)
 

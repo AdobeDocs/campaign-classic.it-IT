@@ -5,10 +5,10 @@ description: Scopri come definire la popolazione target
 feature: Audiences, Proofs
 role: User
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
 workflow-type: tm+mt
-source-wordcount: '1593'
-ht-degree: 2%
+source-wordcount: '1729'
+ht-degree: 6%
 
 ---
 
@@ -34,7 +34,7 @@ Per selezionare i destinatari di una consegna, segui i passaggi seguenti:
 
 1. Selezionare la mappatura di destinazione nell&#39;elenco a discesa **[!UICONTROL Target mapping]**. Il mapping di destinazione predefinito di Adobe Campaign è **[!UICONTROL Recipients]**, basato sullo schema **nms:recipient**.
 
-   Sono disponibili altre mappature di destinazione, alcune delle quali possono essere correlate alla configurazione specifica. Per ulteriori informazioni sui mapping di destinazione, fare riferimento a [Selezionare un mapping di destinazione](selecting-a-target-mapping.md).
+   Sono disponibili altre mappature di destinazione, alcune delle quali possono essere correlate alla configurazione specifica.[Ulteriori informazioni](#select-a-target-mapping).
 
 1. Fare clic sul pulsante **[!UICONTROL Add]** per definire i filtri di restrizione.
 
@@ -93,7 +93,7 @@ Per eseguire questa operazione:
 
    ![](assets/s_ncs_user_wizard_external_recipients.png)
 
-1. Per impostazione predefinita, i destinatari vengono importati nel database. Selezionare **[!UICONTROL Target mapping]**. Per ulteriori informazioni sui mapping di destinazione, fare riferimento a [Selezionare un mapping di destinazione](selecting-a-target-mapping.md)
+1. Per impostazione predefinita, i destinatari vengono importati nel database. Selezionare **[!UICONTROL Target mapping]**. [Ulteriori informazioni](#select-a-target-mapping)
 
    Puoi anche scegliere **[!UICONTROL Do not import the recipients into the database]**.
 
@@ -225,6 +225,25 @@ Vedi anche:
 * [Seleziona la destinazione della bozza](#selecting-the-proof-target)
 * [Informazioni sugli indirizzi seed](about-seed-addresses.md)
 * [Caso d’uso: selezionare gli indirizzi seed in base ai criteri](use-case-selecting-seed-addresses-on-criteria.md)
+
+## Selezionare una mappatura di destinazione {#select-a-target-mapping}
+
+Per impostazione predefinita, i modelli di consegna sono destinati a **[!UICONTROL Recipients]**. La mappatura di destinazione utilizza pertanto i campi della tabella **nms:recipient**. Adobe Campaign offre altre mappature di destinazione per le consegne, da utilizzare in base alle tue esigenze.
+
+![](assets/delivery_select_mapping.png)
+
+Queste mappature sono le seguenti:
+
+| Nome | Utilizzare | Schema standard |
+|---|---|---|
+| Destinatari | Consegna ai destinatari del database di Adobe Campaign | nms:recipient |
+| Visitatori | Distribuisci ai visitatori i cui profili sono stati raccolti tramite riferimento (marketing virale) o tramite social network (Facebook, X, precedentemente noto come Twitter), ad esempio. | mns:visitor |
+| Abbonamenti | Consegnare ai destinatari abbonati o iscritti a un servizio informativo, ad esempio una newsletter | nms:subscription |
+| Abbonamenti visitatore | Consegnare ai visitatori abbonati o iscritti a un servizio informativo | nms:visitorSub |
+| Servizio | Publish a un account X o a una pagina Facebook | nms:service |
+| Operatori | Consegnare agli operatori Adobe Campaign | nms:operator |
+| File esterno | Consegnare tramite un file contenente tutte le informazioni necessarie per la consegna | Nessuno schema collegato, nessuna destinazione immessa |
+
 
 ## Video tutorial {#seeds-and-proofs-video}
 

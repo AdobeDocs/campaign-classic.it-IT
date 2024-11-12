@@ -6,7 +6,7 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
 workflow-type: tm+mt
 source-wordcount: '5959'
 ht-degree: 2%
@@ -188,7 +188,7 @@ Ulteriori informazioni sul [flusso di lavoro di pulizia del database](../../prod
 
 *Context: Transactional Messaging*
 
-Dedicated execution server(s) to leverage Transactional Messaging. A server can typically process up to 50,000 Engine Calls per hour. The “Per-Dedicated Server” designation does not necessarily have a 1:1 correlation with a physical server as Adobe may utilize virtualization technologies to achieve the equivalent effect.
+Dedicated execution server(s) to leverage Transactional Messaging. A server can typically process up to 50,000 Engine Calls per hour. The "Per-Dedicated Server" designation does not necessarily have a 1:1 correlation with a physical server as Adobe may utilize virtualization technologies to achieve the equivalent effect.
 
 Learn more about [Transactional Messaging](../../message-center/using/about-transactional-messaging.md).
 +++
@@ -198,7 +198,7 @@ Learn more about [Transactional Messaging](../../message-center/using/about-tran
 
 *Contesto: recapito e-mail*
 
-Il recapito messaggi consente di misurare il successo delle campagne che raggiungono la casella in entrata dei destinatari senza che vengano saltati o contrassegnati come spam. Più precisamente, il recapito messaggi e-mail si riferisce all’insieme di caratteristiche che determinano la capacità di un messaggio di raggiungere la sua destinazione, tramite un indirizzo e-mail personale, in un breve lasso di tempo e con la qualità prevista in termini di contenuto e formato.
+Il recapito messaggi consente di misurare il successo delle campagne che raggiungono la casella in entrata dei destinatari senza che vengano saltati o contrassegnati come spam. Più precisamente, il recapito messaggi e-mail si riferisce all’insieme di caratteristiche che determinano la capacità di un messaggio di raggiungere la sua destinazione, tramite un indirizzo e-mail personale, in un breve periodo di tempo e con la qualità prevista in termini di contenuto e formato.
 
 Ulteriori informazioni su [Recapito messaggi](../../delivery/using/about-deliverability.md).
 +++
@@ -240,7 +240,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 
 *Contesto: Direct Mail*
 
-Una struttura di consegna è un set strutturato di elementi (documenti, negozi, coupon promozionali, ecc.) create dall’azienda e per una determinata campagna. Viene utilizzato nel contesto delle consegne di direct mailing.
+Una struttura di consegna è un set strutturato di elementi (documenti, negozi, coupon promozionali, ecc.) creati dall’azienda e per una particolare campagna. Viene utilizzato nel contesto delle consegne di direct mailing.
 
 Ulteriori informazioni su [Direct mailing](../../delivery/using/about-direct-mail-channel.md).
 +++
@@ -263,7 +263,7 @@ Ulteriori informazioni su [Analisi descrittiva](../../reporting/using/about-desc
 
 *Contesto: Marketing distribuito*
 
-Il componente aggiuntivo Marketing distribuito offre agli operatori di campagne uno spazio di lavoro collaborativo per l’implementazione di campagne tra entità centrali (sedi centrali, dipartimenti di marketing, ecc.) e gli enti locali (punti vendita, agenzie regionali, ecc.). Questa cooperazione si basa su un&#39;area di lavoro condivisa nota come **elenco di pacchetti Campaign**, in cui i modelli e le istanze di campagna creati centralmente vengono offerti alle entità locali.
+Il componente aggiuntivo Marketing distribuito offre agli operatori di campagne uno spazio di lavoro collaborativo per l’implementazione di campagne tra entità centrali (sedi centrali, dipartimenti di marketing, ecc.) ed entità locali (punti vendita, agenzie regionali, ecc.). Questa cooperazione si basa su un&#39;area di lavoro condivisa nota come **elenco di pacchetti Campaign**, in cui i modelli e le istanze di campagna creati centralmente vengono offerti alle entità locali.
 
 Ulteriori informazioni su [Marketing distribuito](../../distributed/using/about-distributed-marketing.md)
 +++
@@ -278,7 +278,7 @@ Ulteriori informazioni su [Distribuzione dei valori](../../platform/using/defini
 +++**Delega del dominio**
 
 La configurazione del sottodominio ti consente di configurare una sottosezione del dominio (tecnicamente una &quot;zona DNS&quot;) per l’utilizzo con Adobe Campaign.
-La delega del dominio consente agli Adobi di controllare e mantenere tutti gli aspetti del DNS necessari per la distribuzione, il rendering e il tracciamento delle campagne e-mail.
+La delega del dominio consente ad Adobe di controllare e mantenere tutti gli aspetti del DNS necessari per la distribuzione, il rendering e il tracciamento delle campagne e-mail.
 
 Ulteriori informazioni sulla [delega del dominio](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=it)
 +++
@@ -447,7 +447,7 @@ Ulteriori informazioni sulla [distribuzione ibrida](../../installation/using/hos
 
 *Contesto: interazione campagna*
 
-La modalità di identificazione si riferisce allo stato di un contatto. Può essere esplicito, implicito o anonimo.
+La modalità di identificazione Si riferisce allo stato di un contatto. Può essere esplicito, implicito o anonimo.
 
 * **explicit**: il contatto è identificato dopo il suo accesso all&#39;interfaccia di canale.
 * **implicit**: il contatto è stato identificato da un cookie (permanente o sessione). Può essere elaborato come contatto anonimo o identificato.
@@ -460,7 +460,7 @@ Ulteriori informazioni sull&#39;[interazione](../../interaction/using/interactio
 ----NOT USEFUL HERE?----
 +++**Image serving**
 
-The functionality that supplies the images embedded in emails to the delivery’s recipients. The insertion of the images based on an emails system’s “download images” functionality is what generates an “open” entry in Campaign’s tracking logs.
+The functionality that supplies the images embedded in emails to the delivery's recipients. The insertion of the images based on an emails system's "download images" functionality is what generates an "open" entry in Campaign's tracking logs.
 
 Learn more about [Image serving](../../delivery/using/defining-the-email-content.md#adding-images).
 +++
@@ -506,7 +506,7 @@ Ulteriori informazioni su [Elenchi](../../platform/using/creating-and-managing-l
 
 +++**Cache locale**
 
-La cache locale è l’informazione memorizzata localmente sul computer dell’operatore. Le informazioni memorizzate nella cache vengono utilizzate dalla console per ridurre il traffico necessario verso il server e migliorare le prestazioni. La cancellazione periodica della cache locale (nel menu File) aggiorna le informazioni memorizzate e migliora le prestazioni e la stabilità.
+La cache locale è l&#39;informazione memorizzata localmente nel computer dell&#39;operatore. Le informazioni memorizzate nella cache vengono utilizzate dalla console per ridurre il traffico necessario verso il server e migliorare le prestazioni. La cancellazione periodica della cache locale (nel menu File) aggiorna le informazioni memorizzate e migliora le prestazioni e la stabilità.
 
 Ulteriori informazioni su [Cache locale](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear).
 +++
@@ -775,7 +775,7 @@ Ulteriori informazioni sui [campi di personalizzazione](../../delivery/using/per
 
 +++**Variabili Personalization**
 
-Le variabili Personalization sono parti di codice in una consegna che possono visualizzare testo diverso a destinatari diversi in base alle informazioni del destinatario. Questi campi possono essere implementati come campo o blocco di personalizzazione.
+Le variabili di Personalization sono parti di codice in una consegna che possono visualizzare testo diverso a destinatari diversi in base alle informazioni del destinatario. Questi campi possono essere implementati come campo o blocco di personalizzazione.
 
 Ulteriori informazioni sulle [variabili Personalization](../../delivery/using/about-personalization.md).
 +++
@@ -845,7 +845,7 @@ Ulteriori informazioni su [Push](../../delivery/using/about-mobile-app-channel.m
 
 +++**Destinatario**
 
-In Adobe Campaign, i destinatari sono i profili predefiniti target per l’invio di consegne (e-mail, SMS, ecc.) ai tuoi clienti. I dati dei destinatari memorizzati nel database consentono di filtrare il target e aggiungere dati di personalizzazione. In genere si tratta di informazioni personali, di contatto, demografiche e transazionali, ma potrebbe trattarsi di qualsiasi tipo di informazione che supporta il marketing e l’analisi.
+In Adobe Campaign, i destinatari sono i profili predefiniti target per l’invio di consegne (e-mail, SMS, ecc.) ai clienti. I dati dei destinatari memorizzati nel database consentono di filtrare il target e aggiungere dati di personalizzazione. In genere si tratta di informazioni personali, di contatto, demografiche e transazionali, ma potrebbe trattarsi di qualsiasi tipo di informazione che supporta il marketing e l’analisi.
 
 Ulteriori informazioni su [Destinatario](../../configuration/using/about-data-model.md).
 +++
@@ -939,7 +939,7 @@ Ulteriori informazioni su [Dati di destinazione](../../workflow/using/data-life-
 
 La mappatura di destinazione è la mappatura dei canali di consegna su un tipo di dati specifico. Le mappature di Target definiscono il modo in cui i diversi canali di consegna si collegano ai campi di dati di uno schema. Definisce il modo in cui Campaign invia a quel tipo di dati utilizzando un campo o un’espressione specifica.
 
-Ulteriori informazioni sulla [mappatura di destinazione](../../delivery/using/selecting-a-target-mapping.md).
+Ulteriori informazioni sulla [mappatura di destinazione](../../delivery/using/steps-defining-the-target-population.md#select-a-target-mapping).
 +++
 
 +++**Attività di targeting**
@@ -984,7 +984,7 @@ Un modello è un elemento di progettazione utilizzato per creare un oggetto. Con
 -----ACS -> SEEDS IN ACC-----
 +++**Test profiles**
 
-Allows targeting of additional recipients who do not match the defined targeting criteria. They are added to a message’s audience to detect any fraudulent use of your recipient database or to ensure delivery. Seen as the Seed type in the Campaign interface.
+Allows targeting of additional recipients who do not match the defined targeting criteria. They are added to a message's audience to detect any fraudulent use of your recipient database or to ensure delivery. Seen as the Seed type in the Campaign interface.
 
 Learn more about [Test profiles](../../workflow/using/about-workflows.md).
 +++
