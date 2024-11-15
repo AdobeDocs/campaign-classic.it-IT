@@ -5,9 +5,9 @@ description: Scopri come risolvere i problemi del canale SMS
 feature: SMS, Troubleshooting
 role: User
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: f660dcbb111e73f12737d96ebf9be2aeccbca8ee
 workflow-type: tm+mt
-source-wordcount: '2755'
+source-wordcount: '3044'
 ht-degree: 0%
 
 ---
@@ -310,3 +310,30 @@ Il risultato dovrebbe essere il seguente:
 ```
 
 4 connessioni aperte per il processo sms e 2 per elemento secondario mta con 5 elementi secondari.
+
+## Differenza tra gli stati di consegna SMS
+
+Per chiarire le differenze tra gli stati **Inviato**, **Inviato al provider** e **Ricevuto su dispositivi mobili**, fare riferimento alle definizioni dettagliate di seguito:
+
+* **Ricevuto su dispositivo mobile**:
+Il messaggio è stato recapitato correttamente al dispositivo dell’utente, con la conferma fornita sia dalla consegna Mobile Terminated (MT) che da un Rapporto di stato (SR).
+
+* **Inviato**:
+Il messaggio è stato elaborato correttamente tramite il passaggio Mobile Terminated (MT), ma non è ancora stato ricevuto un Rapporto di stato (SR) che conferma la consegna al dispositivo mobile.
+
+* **Inviato al provider**:
+Il messaggio è stato inviato al provider utilizzando `SUBMIT_SM command`, ma non è stato ricevuto alcun riconoscimento `SUBMIT_SM_RESP` dal provider.
+
+I messaggi possono rimanere nello stato **Inviati** perché la transizione a **Ricevuti** dipende da un rapporto di stato (SR) del dispositivo dell&#39;utente. Se l’utente ha una ricezione cellulare scadente o altri problemi di connettività, potrebbe non ricevere immediatamente il messaggio. In questi casi, è responsabilità del fornitore ritentare la consegna o spiegare perché non è stato generato alcun messaggio SR. Se il fornitore identifica delle discrepanze, deve assicurarsi che il comportamento di Campaign sia coerente con le aspettative.
+
+Di seguito sono riportati gli stati di consegna SMS standard:
+
+* **In sospeso**: messaggio non ancora inviato all&#39;aggregatore.
+
+* **Preso in considerazione dal provider**: il messaggio è stato inviato all&#39;aggregatore e l&#39;aggregatore ha confermato la ricezione.
+
+* **Inviato**: l&#39;aggregatore ha confermato che il messaggio è stato inviato correttamente alla rete mobile dell&#39;utente senza alcun errore immediato.
+
+* **Ricevuto su dispositivo mobile**: il dispositivo mobile dell&#39;utente ha confermato la ricezione, che è stata verificata dall&#39;aggregatore.
+
+* **Non riuscito**: il messaggio è stato inviato all&#39;aggregatore, che ha tentato la consegna al dispositivo mobile dell&#39;utente per un periodo definito (ad esempio, diverse ore). La consegna non è riuscita a causa di problemi di rete, indisponibilità del dispositivo utente o altri motivi.
