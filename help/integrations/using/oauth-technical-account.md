@@ -5,9 +5,9 @@ description: Ulteriori informazioni su come creare l’account API Adobe
 role: User, Admin
 level: Beginner
 exl-id: 5d830ea0-a0a3-4b35-8dc4-e955380431fb
-source-git-commit: 2ce7a91aaddb0df412fc0002ff1463d48b2b7c3c
+source-git-commit: 5352426fc68cbcb6519127e5c89c1e9f8619ca6b
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '334'
 ht-degree: 6%
 
 ---
@@ -18,7 +18,7 @@ Le credenziali di autenticazione server-to-server consentono al server dell&#39;
 
 ## Migrare le integrazioni esistenti {#migrate-jwt}
 
-Le credenziali dell’account di servizio (JWT) sono diventate obsolete da Adobe. Le integrazioni di Campaign con le soluzioni e le app Adobe ora devono basarsi sulle credenziali server-to-server di OAuth.
+Le credenziali dell’account di servizio (JWT) sono diventate obsolete da Adobe. Le integrazioni di Campaign con le soluzioni e le app Adobe ora devono basarsi sulle credenziali server-to-server OAuth.
 
 Se hai implementato integrazioni in entrata o in uscita con Campaign prima di giugno 2024, devi aggiornare l’ambiente Campaign alla versione v7.4.1 e migrare l’account tecnico in OAuth come descritto [in questa documentazione](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration){target="_blank"}. Le credenziali dell’account di servizio (JWT) esistenti continueranno a funzionare fino al **27 gennaio 2025**.
 
@@ -79,3 +79,9 @@ In qualità di cliente on-premise o ibrido, segui questi passaggi:
    ```
    nlserver config -instance:<instance_name> -setimsoauth:ims-org-id/client-id/technical-account-id/client-secret
    ```
+
+   >[!NOTE]
+   >
+   > Per le versioni precedenti alla versione 7.4.1, utilizzare `setimsauth` o `setimsjwtauth` anziché `setimsoauth`.
+
+
