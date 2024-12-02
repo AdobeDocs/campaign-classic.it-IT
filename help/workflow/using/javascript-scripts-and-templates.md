@@ -4,7 +4,7 @@ title: Script e modelli JavaScript
 description: Script e modelli JavaScript
 feature: Workflows
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: d4a2138e03a33092403d5ca00a41a3d7f9aea33e
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 2%
@@ -159,7 +159,7 @@ Questo esempio mostra che l&#39;attività che segue **JavaScript Code** accede a
 
 Dopo aver specificato una variabile di istanza in un’attività, puoi riutilizzarla in una query del flusso di lavoro.
 
-Per chiamare una variabile **instance.vars.xxx = &quot;yyyy&quot;** in un filtro, immettere **$(instance/vars/xxx)**.
+Per chiamare una variabile **instance.vars.xxx = &quot;yyyy&quot;** in un filtro, immettere **$(instance/vars/@xxx)**.
 
 Ad esempio:
 
