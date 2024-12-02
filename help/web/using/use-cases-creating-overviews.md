@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: "Casi d’uso: creare panoramiche"
-description: "Casi d’uso: creare panoramiche"
+title: 'Casi d’uso: creare panoramiche'
+description: 'Casi d’uso: creare panoramiche'
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Web Apps
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88

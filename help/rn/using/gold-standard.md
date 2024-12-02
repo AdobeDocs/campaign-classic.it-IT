@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: “Versioni [!DNL Gold Standard]”
+title: Versioni [!DNL Gold Standard]
 description: Note sulla versione e Matrice di compatibilità per Campaign Classic [!DNL Gold Standard]
 feature: Release Notes
 role: User
@@ -9,9 +9,9 @@ hidefromtoc: true
 hide: true
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1774'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -38,7 +38,7 @@ _27 agosto 2021_
 
 La build 9032@99a3894 include le seguenti correzioni:
 
-* La funzione di firma di tracciamento è stata migliorata per evitare errori collegati al modo in cui strumenti di terze parti (client e-mail, browser Internet, ecc.) gestiscono i caratteri speciali. I parametri URL sono ora codificati.
+* La funzione di firma di tracciamento è stata migliorata per evitare errori collegati al modo in cui gli strumenti di terze parti (client e-mail, browser Internet, ecc.) gestiscono i caratteri speciali. I parametri URL sono ora codificati.
 * È stato risolto un problema relativo ai selettori di date che poteva causare la visualizzazione di un messaggio di errore di blocco nella console. (NEO-36345)
 
 ### [!DNL Gold Standard] versione 11{#gs-11}

@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: "Caso d’uso: configurare la sostituzione del campo"
-description: "Caso d’uso: configurare la sostituzione del campo"
+title: 'Caso d’uso: configurare la sostituzione del campo'
+description: 'Caso d’uso: configurare la sostituzione del campo'
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Seed Address
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 

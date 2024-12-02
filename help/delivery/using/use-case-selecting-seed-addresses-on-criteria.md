@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: "Caso d’uso: selezionare gli indirizzi seed in base ai criteri"
-description: "Caso d’uso: selezionare gli indirizzi seed in base ai criteri"
+title: 'Caso d’uso: selezionare gli indirizzi seed in base ai criteri'
+description: 'Caso d’uso: selezionare gli indirizzi seed in base ai criteri'
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '851'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 

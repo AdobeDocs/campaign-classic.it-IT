@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: "Casi di utilizzo: moduli web"
-description: "Casi di utilizzo: moduli web"
+title: 'Casi d’uso: moduli web'
+description: 'Casi d’uso: moduli web'
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Web Forms
 exl-id: 7aa4646d-1325-47c2-b553-6fe375c48973
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
 source-wordcount: '970'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 

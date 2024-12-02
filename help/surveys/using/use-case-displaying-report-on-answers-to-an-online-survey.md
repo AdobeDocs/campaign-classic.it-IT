@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: "Caso di utilizzo: visualizzazione di un report sulle risposte a un sondaggio online"
-description: "Caso di utilizzo: visualizzazione di un report sulle risposte a un sondaggio online"
+title: 'Caso di utilizzo: visualizzazione di un report sulle risposte a un sondaggio online'
+description: 'Caso di utilizzo: visualizzazione di un report sulle risposte a un sondaggio online'
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
