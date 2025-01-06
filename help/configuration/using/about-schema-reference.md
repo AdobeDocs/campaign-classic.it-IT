@@ -5,7 +5,7 @@ description: Scopri come utilizzare gli schemi ed estendere il modello dati conc
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 44c40bbd8bff16cbe220d3af3a7bb2847762f58b
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 1%
@@ -77,9 +77,9 @@ La chiave di identificazione di uno schema è una stringa creata utilizzando lo 
 
 >[!IMPORTANT]
 >
->Il nome dello spazio dei nomi deve essere conciso e deve contenere solo caratteri autorizzati in conformità alle regole di denominazione XML.
+>* Il nome dello spazio dei nomi deve essere conciso e deve contenere solo caratteri autorizzati in conformità alle regole di denominazione XML.
 >
->Gli identificatori non devono iniziare con caratteri numerici.
+>* Gli identificatori non devono iniziare con caratteri numerici.
 >
->I seguenti spazi dei nomi sono riservati per le descrizioni delle entità di sistema necessarie per il funzionamento dell&#39;applicazione Adobe Campaign e non devono essere utilizzati: **xtk**, **nl**, **nms**, **ncm**, **temp**, **ncl**, **crm**, **xxl**.
-
+>* I seguenti spazi dei nomi sono riservati per le descrizioni delle entità di sistema necessarie per il funzionamento dell&#39;applicazione Adobe Campaign e non devono essere utilizzati: **xtk**, **nl**, **nms**, **ncm**, **temp**, **ncl**, **crm**, **xxl**.
+>
