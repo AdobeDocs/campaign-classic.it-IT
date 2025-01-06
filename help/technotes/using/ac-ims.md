@@ -2,7 +2,7 @@
 title: Migrazione ad Adobe Identity Management System (IMS)
 description: Scopri come migrare il processo di autenticazione ad Adobe Identity Management System (IMS)
 exl-id: 84853dbe-8b6f-4875-b29a-c1b755423a3c
-source-git-commit: 8eadea9f9cc0a44522726024bfbc825e3b4cad98
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 1%
@@ -17,7 +17,7 @@ Inoltre, l’applicazione client Adobe Campaign ora chiama le API di Campaign di
 
 >[!CAUTION]
 >
->Questa modifica è già applicabile in Campaign Classic v7 e sarà **obbligatoria** per passare a Campaign v8. L’autenticazione nativa utente/password non è consentita in Campaign v8. **L&#39;Adobe consiglia di eseguire questa migrazione a partire da Campaign v7.3.5 per eseguire senza problemi la migrazione a Campaign v8.**
+>Questa modifica è già applicabile in Campaign Classic v7 e sarà **obbligatoria** per passare a Campaign v8. L’autenticazione nativa utente/password non è consentita in Campaign v8. **Adobe consiglia di eseguire questa migrazione a partire da Campaign v7.3.5 per eseguire senza problemi la migrazione a Campaign v8.**
 >
 
 ## Passaggi di migrazione {#ims-steps}
@@ -52,7 +52,7 @@ Si consiglia di eseguire la migrazione a [Adobe Identity Management System (IMS)
 
 ### Cosa succede dopo l’aggiornamento della build a Campaign Classic v7.4.1? {#ims-migration-after-upgrade}
 
-Dopo aver aggiornato gli ambienti a Campaign Classic v7.4.1 (o a una versione [compatibile con la migrazione IMS](#ims-versions)), puoi avviare la transizione a [Adobe Identity Management System (IMS)](https://helpx.adobe.com/it/enterprise/using/users.html){target="_blank"}.
+Dopo aver aggiornato gli ambienti a Campaign Classic v7.4.1 (o a una versione [compatibile con la migrazione IMS](#ims-versions)), puoi avviare la transizione a [Identity Management System (IMS)](https://helpx.adobe.com/it/enterprise/using/users.html){target="_blank"} di Adobe.
 
 ### Quando è stata completata la migrazione? {#ims-migration-end}
 

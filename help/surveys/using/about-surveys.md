@@ -5,7 +5,7 @@ description: Introduzione ai sondaggi di Campaign
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
-source-git-commit: 8e5a328bee7701adfedec6a533cc21b4ce548187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 3%
@@ -43,7 +43,7 @@ In Adobe Campaign, utilizza [applicazioni Web](../../web/using/about-web-forms.m
 * Aggiungere personalizzazione e definire la posizione del campo
 * Visualizzazione delle condizioni dei campi dell’indagine in base alle risposte,
 * Visualizzazione pagina condizione,
-* Controllare le informazioni prima dell’approvazione, a seconda del tipo di dati previsti (numero, indirizzo e-mail, date, ecc.) e campi obbligatori,
+* Controllare le informazioni prima dell’approvazione, a seconda del tipo di dati previsti (numero, indirizzo e-mail, date, ecc.) e dei campi obbligatori,
 * Inviare inviti/notifiche via e-mail,
 * Personalizzare le pagine di errore e finali
 * Aggiungere immagini, video, collegamenti ipertestuali, captcha, ecc., nei moduli

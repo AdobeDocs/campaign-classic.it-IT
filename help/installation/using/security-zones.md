@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '1452'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Gli operatori sono collegati a un&#39;area di sicurezza dal relativo profilo nel
 >
 >In qualità di cliente **hosted**, se puoi accedere a [Pannello di controllo Campaign Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it), puoi utilizzare l&#39;interfaccia self-service dell&#39;area di sicurezza. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=it)
 >
->Altri clienti **ibridi/ospitati** devono contattare il team di supporto Adobe per aggiungere l&#39;IP al inserisco nell&#39;elenco Consentiti di.
+>Altri clienti **ibridi/in hosting** devono contattare il team di supporto Adobe per aggiungere un IP al inserisco nell&#39;elenco Consentiti di.
 >
 
 ## Creare aree di protezione {#creating-security-zones}

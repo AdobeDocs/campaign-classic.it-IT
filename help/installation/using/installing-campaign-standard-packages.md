@@ -5,10 +5,10 @@ description: Scopri come installare i pacchetti incorporati di Campaign
 feature: Installation, Application Settings
 badge-v7-prem: label="Solo on-premise/ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '1264'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ I pacchetti incorporati contengono una serie di funzioni che possono essere inst
 >
 >Una volta installato un pacchetto, non è possibile disinstallarlo.
 >
->In qualità di cliente in hosting o ibrido, contatta l’Adobe per far distribuire un nuovo pacchetto integrato.
+>In qualità di cliente in hosting o ibrido, contatta l’Adobe per distribuire un nuovo pacchetto integrato.
 
 Per installare un pacchetto integrato:
 
@@ -182,7 +182,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
   </tr> 
   <tr> 
    <td> Marketing centrale/locale (Marketing distribuito)<br /> </td> 
-   <td> Implementa campagne di cooperazione tra entità centrali (sedi centrali, dipartimenti di marketing, ecc.) e gli enti locali (punti vendita, agenzie regionali, ecc.). Facoltativo. <a href="../../distributed/using/about-distributed-marketing.md">Ulteriori informazioni</a><br /> </td> 
+   <td> Implementa campagne di cooperazione tra enti centrali (sedi centrali, dipartimenti di marketing, ecc.) ed enti locali (punti vendita, agenzie regionali, ecc.). Facoltativo. <a href="../../distributed/using/about-distributed-marketing.md">Ulteriori informazioni</a><br /> </td> 
    <td> Marketing </td> 
   </tr> 
   <tr> 
@@ -240,7 +240,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
 
 ### Pacchetto Centro messaggi {#message-center-package}
 
-Devi installare i canali di consegna (e-mail, canale mobile, canale app mobile, LINE, ecc.) prima di installare la messaggistica transazionale (pacchetto del centro messaggi). Se hai avviato un progetto di Centro messaggi di sola posta elettronica e in seguito devi aggiungere un nuovo canale, devi seguire questi passaggi:
+È necessario installare i canali di consegna (e-mail, canale mobile, canale app mobile, LINE, ecc.) prima di installare la messaggistica transazionale (pacchetto del centro messaggi). Se hai avviato un progetto di Centro messaggi di sola posta elettronica e in seguito devi aggiungere un nuovo canale, devi seguire questi passaggi:
 
 1. Installa il nuovo canale, ad esempio il **canale mobile**, utilizzando l&#39;Assistente all&#39;importazione del pacchetto ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
 1. Importare il file ( **[!UICONTROL Tools > Advanced > Import package > File]**) e selezionare:

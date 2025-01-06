@@ -5,7 +5,7 @@ description: Scopri come configurare l’app mobile per Android
 feature: Push
 role: User, Developer
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 10%
@@ -51,7 +51,7 @@ Per scegliere il connettore da utilizzare, eseguire la procedura seguente:
 
    ![](assets/nmac_connectors3.png)
 
-1. Per Android V2, nel file di configurazione del server Adobe (serverConf.xml) è disponibile un parametro aggiuntivo:
+1. Per Android V2, nel file di configurazione di Adobe Server (serverConf.xml) è disponibile un parametro aggiuntivo:
 
    * **maxGCMConnectPerChild**: limite massimo di richieste HTTP parallele a FCM avviate da ogni server secondario (8 per impostazione predefinita).
 
@@ -90,11 +90,11 @@ Dopo aver creato il servizio, ora è necessario creare l’applicazione Android:
 
    ![](assets/nmac_android.png)
 
-1. Assicurati che lo stesso **[!UICONTROL Integration key]** sia definito in Adobe Campaign e nel codice dell&#39;applicazione tramite l&#39;SDK. <!--For more on this, refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->
+1. Assicurarsi che lo stesso **[!UICONTROL Integration key]** sia definito in Adobe Campaign e nel codice dell&#39;applicazione tramite SDK. <!--For more on this, refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->
 
    >[!NOTE]
    >
-   > **[!UICONTROL Integration key]** è completamente personalizzabile con valore stringa, ma deve essere esattamente lo stesso specificato nell&#39;SDK.
+   > **[!UICONTROL Integration key]** è completamente personalizzabile con valore stringa, ma deve essere esattamente lo stesso specificato in SDK.
 
 1. Selezionare **[!UICONTROL API version]**: HTTP v1 o HTTP (legacy). Queste configurazioni sono descritte in [questa sezione](#select-api-version)
 

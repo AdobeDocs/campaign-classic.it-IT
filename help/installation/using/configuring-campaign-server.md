@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Questo capitolo descrive le configurazioni lato server che possono essere esegui
 
 Queste procedure sono limitate alle **distribuzioni on-premise**/**ibride** e richiedono le autorizzazioni di amministrazione.
 
-Per le distribuzioni di **hosted**, le impostazioni lato server possono essere configurate solo per Adobe. Tuttavia, alcune impostazioni possono essere configurate all&#39;interno di [Pannello di controllo Campaign Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=it), ad esempio la gestione del elenco Consentiti IP o le autorizzazioni URL. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=it).
+Per le distribuzioni di **hosted**, le impostazioni lato server possono essere configurate solo da Adobe. Tuttavia, alcune impostazioni possono essere configurate all&#39;interno di [Pannello di controllo Campaign Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=it), ad esempio la gestione del elenco Consentiti IP o le autorizzazioni URL. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=it).
 
 Per ulteriori informazioni, consulta le sezioni seguenti:
 

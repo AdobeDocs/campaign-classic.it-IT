@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '3094'
 ht-degree: 0%
@@ -29,7 +29,7 @@ La sezione seguente fornisce una panoramica della configurazione necessaria per 
 
 Per ulteriori informazioni sui concetti e sulle best practice relativi al recapito messaggi con Adobe Campaign, consulta questa [sezione](../../delivery/using/about-deliverability.md).
 
-Per informazioni più approfondite sulla consegna dei messaggi, comprese tutte le raccomandazioni tecniche relative all&#39;invio e alla ricezione efficienti di e-mail da parte di una piattaforma di Adobe, consulta la [Guida alle best practice per la consegna dei messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it).
+Per informazioni più approfondite sulla consegna dei messaggi, comprese tutte le raccomandazioni tecniche relative all&#39;invio e alla ricezione efficienti di e-mail da parte di una piattaforma Adobe, consulta la [Guida alle best practice per la consegna dei messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it).
 
 ## Principio di funzionamento {#operating-principle}
 
@@ -51,7 +51,7 @@ Il modulo **mta** distribuisce i messaggi ai relativi **mtachild** moduli second
 I passaggi sono i seguenti:
 
 1. **mta** seleziona i messaggi idonei e assegna loro un **mtachild** disponibile.
-1. **mtachild** carica tutte le informazioni necessarie per la creazione del messaggio (contenuto, elementi di personalizzazione, allegati, immagini, ecc.) e inoltra il messaggio a **Email Traffic Shaper**.
+1. **mtachild** carica tutte le informazioni necessarie per la creazione del messaggio (contenuto, elementi di personalizzazione, allegati, immagini e così via) e inoltra il messaggio a **Email Traffic Shaper**.
 1. Non appena lo shaper del traffico e-mail riceve l&#39;autorizzazione del server delle statistiche (**smtp stat**), il messaggio viene inviato al destinatario.
 
 ![](assets/s_ncs_install_email_traffic_shaper.png)
@@ -105,7 +105,7 @@ Quando viene inviato un messaggio, i possibili risultati sono 3:
 
 I messaggi abbandonati vengono restituiti a **mta** e non sono più gestiti da **mtachild**.
 
-**mta** decide la procedura per questo messaggio (ripristino, abbandono, quarantena, ecc.) a seconda del codice di risposta e delle regole.
+**mta** decide la procedura per questo messaggio (ripristino, abbandono, quarantena, ecc.) in base al codice di risposta e alle regole.
 
 ### Messaggio in attesa {#message-pending}
 

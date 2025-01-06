@@ -4,7 +4,7 @@ title: Nota tecnica - Aggiornamenti dei sistemi Adobe Campaign
 description: Aggiornamento del sistema Adobe Campaign
 feature: Technote, Upgrade
 exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 4%
@@ -35,7 +35,7 @@ Se sei interessato dall&#39;[aggiornamento del sistema operativo](#os-upgrade) e
 **Come si esegue l’aggiornamento?**
 
 * In qualità di cliente di Cloud Service in hosting o gestiti, Adobe ti contatterà e aggiornerà la tua versione di Campaign.
-* In qualità di cliente ibrido, Adobe ti informerà sulle date pianificate per l’aggiornamento della build per l’ambiente di mid-sourcing. Devi anche aggiornare l’ambiente di marketing alla stessa versione.
+* In qualità di cliente ibrido, Adobe ti informerà sulle date pianificate per l’aggiornamento della build nell’ambiente di mid-sourcing. Devi anche aggiornare l’ambiente di marketing alla stessa versione.
 * In qualità di cliente on-premise, ti viene richiesto di aggiornare gli ambienti Campaign alla build 7.3.2 più recente.
 
 
@@ -47,7 +47,7 @@ Se esegui Campaign su un sistema operativo Debian, per beneficiare degli ultimi 
 
 **Come si esegue l’aggiornamento?**
 
-* In qualità di cliente di Cloud Service in hosting o gestiti, Adobe ti contatterà e aggiornerà il tuo ambiente.
+* In qualità di cliente di Cloud Service in hosting o gestiti, Adobe ti contatterà per aggiornare il tuo ambiente.
 * In qualità di cliente ibrido, Adobe ti informerà sulle date di aggiornamento pianificate per l’ambiente di mid-sourcing. Se il tuo ambiente di marketing è in esecuzione anche su Debian, devi aggiornarlo a Debian 11 troppo.
 * In qualità di cliente on-premise, ti viene richiesto di aggiornare i tuoi ambienti a Debian 11.
 
@@ -59,7 +59,7 @@ Se il sistema di database per Campaign è PostgreSQL, per usufruire delle ultime
 
 **Come si esegue l’aggiornamento?**
 
-* In qualità di cliente di Cloud Service in hosting o gestiti, Adobe contatterà l&#39;utente e aggiornerà il sistema di database da PostgreSQL 11 a PostgreSQL 14.
+* In qualità di cliente di Cloud Service in hosting o gestiti, Adobe ti contatterà e aggiornerà il tuo database system da PostgreSQL 11 a PostgreSQL 14.
 * In qualità di cliente ibrido, se il sistema del database di marketing è PostgreSQL, è necessario aggiornarlo a PostgreSQL 14.
 * In qualità di cliente on-premise, ti viene richiesto di aggiornare il sistema di database a PostgreSQL 14.
 

@@ -6,7 +6,7 @@ feature: Technote, Upgrade
 role: User
 level: Beginner
 exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '1533'
 ht-degree: 2%
@@ -86,13 +86,13 @@ Questa migrazione al cloud è **il primo passaggio al [programma di aggiornament
 
 Il cloud Managed Services di Adobe è ospitato su Amazon Web Services (AWS), un ambiente moderno, sicuro e ottimizzato. [Ulteriori informazioni su AWS](https://aws.amazon.com/application-hosting/benefits/).
 
-Adobe pianifica di smantellare il centro dati legacy; le istanze Adobe Campaign in esecuzione in tale centro devono essere trasferite al nuovo centro dati di riferimento, AWS.
+Adobe prevede di rimuovere il centro dati legacy, le istanze Adobe Campaign in esecuzione in tale centro devono essere trasferite al nuovo centro dati di riferimento, AWS.
 
 Si tratta di un percorso critico in avanti in quanto la posizione corrente potrebbe essere esposta a **vulnerabilità di sicurezza e prestazioni**.
 
 Inoltre, questa migrazione è ora un **prerequisito per qualsiasi aggiornamento della build** futuro del tuo Adobe Campaign. L&#39;aggiornamento della build non è più possibile sui datacenter legacy.
 
-Adobe si impegna a proteggere i dati e a camminare sulla strada giusta per il futuro di Adobe Campaign. Abbiamo bisogno della vostra collaborazione per farne un successo comune!
+Adobe si impegna a proteggere i dati e a metterti sulla buona strada per il futuro di Adobe Campaign. Abbiamo bisogno della vostra collaborazione per farne un successo comune!
 
 
 **Abbiamo organizzato un team** di responsabili dell&#39;Assistenza clienti, Customer Success Manager, Product Manager, ingegneri, specialisti TechOps e consulenti di prodotto per assistere e garantire un&#39;esperienza fluida e fluida. Facciamo tutto il possibile affinché tu possa disporre sempre delle informazioni di progetto e di contatto di cui puoi avere bisogno.
@@ -124,7 +124,7 @@ Il database verrà scaricato dal data center legacy e ripristinato in Public Clo
 
 **Invio di indirizzi IP tramite posta elettronica**
 
-Al termine della migrazione, l’istanza Campaign avrà IP di invio completamente diversi. Al fine di garantire una transizione senza intoppi, Adobe implementerà un aumento graduale delle nuove IP di invio cambiando in modo progressivo il traffico dalle vecchie alle nuove IP.
+Al termine della migrazione, l’istanza Campaign avrà IP di invio completamente diversi. Al fine di garantire una transizione senza intoppi, Adobe implementerà un aumento graduale dei nuovi IP di invio cambiando in modo progressivo il traffico dai vecchi IP a quelli nuovi.
 
 **IP di integrazione dei dati**
 
@@ -145,8 +145,8 @@ I server Campaign esistenti (contenitori in realtà) verranno spostati in Cloud 
 
 Nel/i sottodominio/i utilizzato/i per le comunicazioni di marketing: rimarrà lo stesso. Tuttavia, a seconda dell’implementazione, potrebbero essere necessarie azioni sul lato client:
 
-* In caso di delega di sottodominio (caso normale), Adobe si occuperà di tutte le modifiche e garantirà una transizione senza soluzione di continuità
-* In caso di configurazione CNAME (eccezione), al client verrà richiesto di implementare le modifiche. Sarà necessario il coordinamento con gli Adobi.
+* In caso di delega dei sottodomini (caso normale), Adobe si occuperà di tutte le modifiche e garantirà una transizione senza soluzione di continuità
+* In caso di configurazione CNAME (eccezione), al client verrà richiesto di implementare le modifiche. Sarà necessario il coordinamento con l&#39;Adobe.
 
 Per l’accesso degli utenti e l’integrazione dei dati, i nomi in neolane.net rimarranno invariati.
 
@@ -158,7 +158,7 @@ Ciò significa che la modifica sarà trasparente per gli utenti e le implementaz
 
 Innanzitutto, Adobe Deliverability valuta lo stato di recapito della piattaforma e consiglia un piano per il passaggio ai nuovi IP.
 
-Adobe esegue il provisioning dello stesso numero di IP sul nuovo centro dati.
+Adobe eseguirà il provisioning dello stesso numero di IP sul nuovo centro dati.
 
 L’incremento dei nuovi IP può iniziare non appena viene effettuato il provisioning dei nuovi IP.
 
@@ -202,7 +202,7 @@ Una volta completata la migrazione dell&#39;applicazione, non è prevista l&#39;
 
 **Delega DNS**
 
-Normalmente, il dominio utilizzato per l’invio di e-mail (parte a destra del simbolo @ nell’indirizzo di errore) da Campaign è stato delegato ad Adobe. La delega può essere modificata e implementata nei confronti dei server DNS di AWS.
+Normalmente, il dominio utilizzato per inviare e-mail (parte a destra del simbolo @ nell’indirizzo di errore) da Campaign è stato delegato ad Adobe. La delega può essere modificata e implementata nei confronti dei server DNS di AWS.
 
 
 ## Supporto e altri collegamenti utili{#support}

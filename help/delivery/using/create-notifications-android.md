@@ -5,7 +5,7 @@ description: Scopri come creare notifiche push per Android
 feature: Push
 role: User, Developer, Data Engineer
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 12%
@@ -25,7 +25,7 @@ Con Firebase Cloud Messaging puoi scegliere tra due tipi di messaggi:
 * **[!UICONTROL Data message]**, gestito dall&#39;app client.
   <br>I messaggi vengono inviati direttamente all&#39;app mobile che genererà e visualizzerà la notifica Android al dispositivo. I messaggi di dati contengono solo variabili dell’applicazione personalizzate.
 
-* **[!UICONTROL Notification message]**, gestito automaticamente dall&#39;SDK FCM.
+* **[!UICONTROL Notification message]**, gestito automaticamente da FCM SDK.
   <br> FCM visualizza automaticamente il messaggio sui dispositivi degli utenti per conto dell&#39;app client. I messaggi di notifica contengono un set preimpostato di parametri e opzioni, ma possono ancora essere personalizzati con variabili personalizzate dell’applicazione.
 
 Per ulteriori informazioni sui tipi di messaggi Firebase Cloud Messaging, consulta la [documentazione FCM](https://firebase.google.com/docs/cloud-messaging/concept-options#notifications_and_data_messages){target="_blank"}.

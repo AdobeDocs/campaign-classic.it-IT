@@ -4,7 +4,7 @@ title: Consigli per il dimensionamento hardware per Campaign Classic v7
 description: Consigli per il dimensionamento hardware per Campaign Classic v7
 feature: Technote
 exl-id: c47e73a0-dbd8-43f5-a363-7e6783dc7685
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '2569'
 ht-degree: 1%
@@ -21,13 +21,13 @@ ht-degree: 1%
 >
 >Questo articolo viene fornito solo come guida di esempio generale. Prima di avviare il progetto Campaign, rivolgiti al tuo Customer Success Manager Adobe Campaign per misurare esattamente le dimensioni della tua implementazione. **Non** acquisire o distribuire alcuna infrastruttura o hardware fino al termine dell&#39;operazione.
 
-Questo documento fornisce consigli generali per l’implementazione di Adobe Campaign Classic v7 nel data center on-premise o nell’ambiente cloud virtualizzato. Questo tipo di distribuzione, definita **ibrida** o **mid-sourcing**, pone l&#39;istanza di marketing Campaign e il database di marketing sotto il tuo controllo operativo, mentre utilizzi i servizi Adobe Cloud Messaging per inviare e-mail, SMS o messaggi SMPP e raccogliere e-mail aperte, non recapitate e dati di tracciamento dei clic.
+Questo documento fornisce consigli generali per l’implementazione di Adobe Campaign Classic v7 nel data center on-premise o nell’ambiente cloud virtualizzato. Questo tipo di distribuzione, definita **ibrida** o **mid-sourcing**, pone l&#39;istanza di marketing Campaign e il database di marketing sotto il tuo controllo operativo, mentre utilizzi i servizi di messaggistica Adobe Cloud per inviare e-mail, SMS o SMPP e raccogliere e-mail aperte, non recapitate e dati di tracciamento dei clic.
 
 L’istanza marketing è la parte dell’architettura di Adobe Campaign che gestisce tutte le attività di marketing e memorizza tutti i dati dei destinatari e i dati analitici restituiti dalle campagne. L’istanza marketing è un set di server locali che eseguono servizi Adobe Campaign e un database relazionale.
 
 >[!CAUTION]
 >
->Le informazioni contenute in questo documento non si applicano se utilizzi un’istanza Adobe Campaign completamente in hosting (distribuita in Cloud Service di Adobi).
+>Le informazioni contenute in questo documento non si applicano se utilizzi un’istanza Adobe Campaign Adobe completamente in hosting (distribuita negli Cloud Service).
 
 La compatibilità software è descritta nella [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
@@ -55,27 +55,27 @@ In questo documento vengono inoltre utilizzati i seguenti tipi di utilizzo per t
 
 Campaign è un’applicazione incentrata sul database e le prestazioni del server di database sono fondamentali. Flussi di lavoro in esecuzione, segmentazione, tracciamento dei caricamenti di dati, interazioni in entrata, analisi e altre attività generano tutte attività di database. In generale, le dimensioni e la frequenza di queste operazioni determinano le dimensioni dei server di database.
 
-I server applicazioni nell’istanza di marketing richiedono CPU e memoria sufficienti per eseguire flussi di lavoro e rispondere alle chiamate API SOAP, incluse le richieste degli utenti della console Campaign. I requisiti della CPU possono essere significativi per i flussi di lavoro che utilizzano interazioni in uscita con regole di offerta complesse, flussi di lavoro che eseguono JavaScript personalizzato e applicazioni web con livelli di traffico elevati.
+I server applicazioni nell’istanza di marketing richiedono CPU e memoria sufficienti per eseguire flussi di lavoro e rispondere alle chiamate API dell’SOAP, incluse le richieste degli utenti della console Campaign. I requisiti di CPU possono essere significativi per i flussi di lavoro che utilizzano interazioni in uscita con regole di offerta complesse, flussi di lavoro che eseguono JavaScript personalizzato e applicazioni web con livelli di traffico elevati.
 
 Le applicazioni web di Campaign possono essere distribuite anche sui server app dell’istanza di marketing o su sistemi server web separati. Poiché i carichi di lavoro delle applicazioni web entrano in conflitto con i flussi di lavoro critici e gli utenti della console Campaign, le applicazioni web e le interazioni in entrata possono essere distribuite su server separati, per garantire che le funzionalità principali di Campaign vengano eseguite in modo affidabile e con buone prestazioni.
 
-Per sicurezza e disponibilità, l’Adobe consiglia di separare il traffico di Internet dal traffico generato dagli utenti aziendali. Per questo motivo, i diagrammi contengono due gruppi di server: il server Web (Internet, Web1 e Web2) e i server app (processi aziendali, App1 e App2).
+Per sicurezza e disponibilità, Adobe consiglia di separare il traffico di Internet dal traffico generato dagli utenti aziendali. Per questo motivo, i diagrammi contengono due gruppi di server: il server Web (Internet, Web1 e Web2) e i server app (processi aziendali, App1 e App2).
 
-Per i mittenti di e-mail commerciali è un requisito legale disporre di una pagina web di rinuncia funzionale. L&#39;Adobe consiglia di disporre di un computer ridondante in ciascun server di gruppo per scenari di failover. È particolarmente vero se Adobe Campaign ospita le pagine di rinuncia.
+Per i mittenti di e-mail commerciali è un requisito legale disporre di una pagina web di rinuncia funzionale. Adobe consiglia di disporre di un computer ridondante in ciascun server di gruppo per scenari di failover. È particolarmente vero se Adobe Campaign ospita le pagine di rinuncia.
 
 ### Inverti proxy
 
-L’architettura di Campaign applica un livello di sicurezza elevato utilizzando SSL su HTTP (HTTPS) per comunicare tra l’istanza di marketing e Adobe Cloud Messaging. Sicurezza, affidabilità e disponibilità vengono applicate utilizzando proxy inversi in una subnet &quot;zona demilitarizzata&quot; (DMZ) per isolare e proteggere i server e il database delle istanze di marketing.
+L’architettura di Campaign applica un livello di sicurezza elevato utilizzando SSL su HTTP (HTTPS) per comunicare tra l’istanza di marketing e la messaggistica Adobe Cloud. Sicurezza, affidabilità e disponibilità vengono applicate utilizzando proxy inversi in una subnet &quot;zona demilitarizzata&quot; (DMZ) per isolare e proteggere i server e il database delle istanze di marketing.
 
 ### Load balancer
 
 Il load balancer per i server app è configurato in una configurazione attiva/passiva, con HTTPS terminato sul proxy. Il load balancer per i server Web è configurato in una configurazione attiva/attiva, con HTTPS terminato nel proxy.
 
-L’Adobe fornisce un elenco esclusivo dei percorsi URL che possono essere inoltrati al server Adobe Campaign nell’ambiente di distribuzione.
+Adobe fornisce un elenco esclusivo dei percorsi URL che possono essere inoltrati al server Adobe Campaign nell’ambiente di distribuzione.
 
 ### Architettura
 
-L&#39;architettura generale è quasi identica indipendentemente dai volumi. I requisiti di sicurezza e di elevata disponibilità richiedono almeno quattro server, due dei quali se non si utilizzano applicazioni Web. La differenza nella configurazione varia principalmente nella configurazione hardware, come il core della CPU e la memoria.
+L&#39;architettura generale è quasi identica indipendentemente dai volumi. I requisiti di sicurezza e di elevata disponibilità richiedono almeno quattro server, due dei quali se non si utilizzano applicazioni Web. La differenza nella configurazione varia principalmente nella configurazione hardware, come CPU Core e la memoria.
 
 ## Scenario 1: distribuzione di dimensioni medie{#scenario-1}
 
@@ -113,7 +113,7 @@ Il consumo di spazio su disco nei server applicazioni dipende dal periodo di con
 
 Di seguito sono riportate le raccomandazioni hardware per il server di database.
 
-CPU a 4 core da **3 Ghz+, 16 GB di RAM, RAID 1 o 10, SSD da 128 GB come minimo**
+**CPU a 4 core da 3 Ghz+, 16 GB di RAM, RAID 1 o 10, SSD da 128 GB come minimo**
 
 La stima della memoria presuppone il caching completo di circa 500.000 destinatari per un lancio di una campagna di grandi dimensioni, più spazio buffer RDBMS per l’esecuzione di flussi di lavoro, l’importazione di dati di tracciamento e altre attività simultanee.
 
@@ -123,7 +123,7 @@ Si stima che lo spazio su disco necessario nel database per memorizzare tutti i 
 >
 >Questa stima non include dati aggiuntivi sul cliente. Se si prevede di replicare colonne o tabelle aggiuntive di dati dei clienti nel database di Adobe Campaign, è necessario stimare il fabbisogno di spazio su disco aggiuntivo per tale database. Anche i segmenti o gli elenchi caricati richiedono più spazio di archiviazione, a seconda delle dimensioni, della frequenza e del periodo di conservazione.
 
-Considera inoltre che, a causa del volume di informazioni elaborate ogni giorno, le operazioni di I/O al secondo del server di database sono fondamentali. Ad esempio, in un giorno di picco, puoi distribuire campagne indirizzate a un totale di 500.000 destinatari. Per eseguire ogni campagna, Adobe Campaign inserisce 500.000 record in una tabella contenente circa 12 milioni di record (la tabella del registro di consegna). Per fornire prestazioni accettabili durante la distribuzione della campagna, l’Adobe consiglia un minimo di 60.000 IOPS casuali di lettura/scrittura da 4 KB per questo scenario.
+Considera inoltre che, a causa del volume di informazioni elaborate ogni giorno, le operazioni di I/O al secondo del server di database sono fondamentali. Ad esempio, in un giorno di picco, puoi distribuire campagne indirizzate a un totale di 500.000 destinatari. Per eseguire ogni campagna, Adobe Campaign inserisce 500.000 record in una tabella contenente circa 12 milioni di record (la tabella del registro di consegna). Per fornire prestazioni accettabili durante la distribuzione della campagna, Adobe consiglia un minimo di 60.000 IOPS casuali di lettura/scrittura da 4 KB per questo scenario.
 
 
 ## Scenario 2: distribuzione di grandi dimensioni{#scenario-2}
@@ -156,7 +156,7 @@ Fare riferimento a [Scenario 1: distribuzione di dimensioni moderate](#scenario-
 
 Di seguito sono riportate le raccomandazioni hardware per il server di database.
 
-**CPU da 3 GHz+ a 8 core, 64 GB di RAM, RAID 1 o 10, 2 x 320 GB SSD o RAID 10, 640 GB SSD minimo**
+CPU a 8 core da **3 Ghz+, 64 GB di RAM, RAID 1 o 10, 2 unità a stato solido da 320 GB o RAID 10, minimo unità a stato solido da 640 GB**
 
 La stima della memoria presuppone il caching completo di circa 5.000.000 di destinatari per un lancio di una campagna di grandi dimensioni, più spazio buffer RDBMS per l’esecuzione di flussi di lavoro, l’importazione di dati di tracciamento e altre attività simultanee.
 
@@ -204,7 +204,7 @@ Fare riferimento a [Scenario 1: distribuzione di dimensioni moderate](#scenario-
 
 Di seguito sono riportate le raccomandazioni hardware per il server di database.
 
-**CPU da 3 GHz+ 8 core, 96 GB di RAM, RAID 1 o 10, minimo 1,5 TB SSD**
+**CPU a 8 core da 3 GHz, 96 GB di RAM, RAID 1 o 10, SSD da 1,5 TB come minimo**
 
 La stima della memoria presuppone il caching completo di circa 12.500.000 destinatari per un lancio di una campagna di grandi dimensioni, più spazio buffer RDBMS per l’esecuzione di flussi di lavoro, l’importazione di dati di tracciamento e altre attività simultanee.
 
@@ -215,27 +215,27 @@ Si stima che lo spazio su disco necessario nel database per memorizzare tutti i 
 Le ipotesi formulate per questi scenari hanno tutti un impatto significativo sui suggerimenti hardware e sull&#39;architettura di distribuzione. In questa sezione vengono illustrate le linee guida basate su presupposti diversi. Contatta il team di consulenza Adobe Campaign per consigli specifici per soddisfare le tue esigenze.
 
 * **Numero di destinatari**
-I destinatari attivi richiedono sia spazio di archiviazione che spazio buffer del database, pertanto più destinatari in genere richiedono più memoria e capacità della CPU sul server del database. Gli aumenti di archiviazione sono relativamente piccoli per i destinatari stessi, ma possono essere significativi per i dati di tracciamento degli eventi conservati per le campagne e-mail.
+I destinatari attivi richiedono sia spazio di archiviazione che spazio buffer del database, pertanto più destinatari in genere richiedono più memoria e capacità CPU sul server di database. Gli aumenti di archiviazione sono relativamente piccoli per i destinatari stessi, ma possono essere significativi per i dati di tracciamento degli eventi conservati per le campagne e-mail.
 
 * **Dimensione campagna e-mail**
-La frequenza dei lanci delle campagne ha un impatto sui requisiti della CPU del server di database. In combinazione con direct mailing, interazioni in entrata e altri flussi di lavoro, le operazioni di segmentazione per le campagne e-mail hanno messo un carico significativo sul server del database.
+La frequenza dei lanci di campagne ha un impatto sui requisiti di CPU del server di database. In combinazione con direct mailing, interazioni in entrata e altri flussi di lavoro, le operazioni di segmentazione per le campagne e-mail hanno messo un carico significativo sul server del database.
 
 * **Frequenza direct mailing**
-La frequenza delle direct mailing può influire sui requisiti della CPU del server di database. In combinazione con i lanci di campagne e altri flussi di lavoro, le operazioni di segmentazione per la posta diretta hanno comportato un carico significativo sul server del database.
+La frequenza delle direct mailing può influire sui requisiti di CPU del server di database. In combinazione con i lanci di campagne e altri flussi di lavoro, le operazioni di segmentazione per la posta diretta hanno comportato un carico significativo sul server del database.
 
 * **Volume messaggi SMS**
-Come per la dimensione della campagna e-mail, il volume dei messaggi SMS non carica grandi quantità sui server Campaign situati on-premise; il carico si trova principalmente sui server Adobe Cloud Messaging sul cloud. La segmentazione per le campagne SMS, come e-mail e direct mail, può comportare un carico significativo sul database di marketing. Pertanto, la frequenza dei lanci di campagne SMS e la complessità della segmentazione sono più rilevanti del volume di messaggi SMS.
+Come per la dimensione della campagna e-mail, il volume dei messaggi SMS non carica grandi quantità sui server Campaign situati on-premise; il carico si trova principalmente sui server di messaggistica Adobe Cloud sul cloud. La segmentazione per le campagne SMS, come e-mail e direct mail, può comportare un carico significativo sul database di marketing. Pertanto, la frequenza dei lanci di campagne SMS e la complessità della segmentazione sono più rilevanti del volume di messaggi SMS.
 
 * **Complessità schema database**
-La quantità di dati per ogni destinatario attivo richiede sia spazio di archiviazione che spazio buffer del database, pertanto più destinatari in genere richiedono più memoria e CPU sul server del database. Gli schemi complessi richiedono inoltre l’unione di più tabelle per la segmentazione, in modo che le operazioni di segmentazione possano essere eseguite molto più lentamente e richiedano più CPU e memoria del database quando i dati vengono distribuiti su più tabelle.
+La quantità di dati per ogni destinatario attivo richiede sia spazio di archiviazione che spazio buffer del database, pertanto più destinatari in genere richiedono più memoria e CPU sul server del database. Gli schemi complessi richiedono anche l’unione di più tabelle per la segmentazione, pertanto le operazioni di segmentazione possono essere eseguite molto più lentamente e richiedono più CPU di database e più memoria quando i dati vengono distribuiti su più tabelle.
 
   La memoria del server di database viene stimata assicurandosi che il pool di buffer del database possa essere sufficientemente grande da contenere tutti i dati dei destinatari, più tabelle temporanee per l&#39;esecuzione dei flussi di lavoro e un margine per altre operazioni del database.
 
 * **Utilizzo interazione in uscita**
-Le regole di interazione in modalità batch vengono valutate nei flussi di lavoro che trasferiscono tutta la complessità di calcolo al database. Il fattore principale di impegno nel database è il numero totale di offerte idonee calcolate durante una chiamata al motore (dimensione target X numero medio di offerte per destinatario prima di mantenere le N migliori offerte). La velocità della CPU del server di database è il primo fattore di prestazioni.
+Le regole di interazione in modalità batch vengono valutate nei flussi di lavoro che trasferiscono tutta la complessità di calcolo al database. Il fattore principale di impegno nel database è il numero totale di offerte idonee calcolate durante una chiamata al motore (dimensione target X numero medio di offerte per destinatario prima di mantenere le N migliori offerte). La velocità del CPU del server di database è il primo fattore di prestazioni.
 
 * **Interazioni in entrata o Utilizzo API SOAP**
-Le regole e le offerte di interazione in entrata vengono valutate nel database di marketing, e richiedono notevoli risorse del server di database, in particolare la CPU. L’utilizzo intensivo delle interazioni in entrata o delle API SOAP richiede server web separati per separare il carico di lavoro dall’esecuzione dei flussi di lavoro di Campaign.
+Le regole di interazione in entrata e le offerte vengono valutate nel database di marketing, richiedendo risorse significative del server di database, in particolare CPU. L’utilizzo intensivo delle interazioni in entrata o delle API SOAP richiede server web separati per separare il carico di lavoro dall’esecuzione dei flussi di lavoro di Campaign.
 
 * **Periodo di conservazione dei dati di tracciamento**
 Un aumento della conservazione dei dati di tracciamento oltre i 90 giorni richiede una maggiore capacità di archiviazione del database e può rallentare il sistema perché l’inserimento di nuovi dati di tracciamento va a beneficio di tabelle di grandi dimensioni. Il tracciamento dei dati non è utile per la segmentazione della campagna dopo 90 giorni, pertanto si consiglia di ridurre il periodo di conservazione.

@@ -4,7 +4,7 @@ title: Best practice per i flussi di lavoro
 description: Scopri le best practice per i flussi di lavoro di Campaign
 feature: Workflows
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '1381'
 ht-degree: 11%
@@ -63,7 +63,7 @@ Nella finestra **[!UICONTROL Workflow properties]**, non selezionare mai l&#39;o
 
 ### Cartelle del flusso di lavoro {#workflow-folders}
 
-L’Adobe consiglia di creare i flussi di lavoro in una cartella dedicata.
+Adobe consiglia di creare i flussi di lavoro in una cartella dedicata.
 
 Se il flusso di lavoro influisce sull&#39;intera piattaforma (ad esempio sui processi di pulizia), è possibile aggiungere una sottocartella nella cartella incorporata **[!UICONTROL Technical Workflows]**.
 

@@ -5,10 +5,10 @@ description: Scopri come definire la popolazione target
 feature: Audiences, Proofs
 role: User
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '1729'
-ht-degree: 6%
+ht-degree: 26%
 
 ---
 
@@ -25,10 +25,10 @@ Per ogni consegna, puoi definire diversi tipi di popolazioni target:
 
 Nella maggior parte dei casi, il target principale viene estratto dal database di Adobe Campaign (modalità predefinita). Tuttavia, i destinatari possono anche essere memorizzati in un file esterno. Per ulteriori informazioni, consulta [questa sezione](steps-defining-the-target-population.md#selecting-external-recipients).
 
-Per selezionare i destinatari di una consegna, segui i passaggi seguenti:
+Per selezionare i destinatari di una consegna, segui i passaggi indicati di seguito:
 
-1. Nell&#39;editor di consegna, selezionare **[!UICONTROL To]**.
-1. Se i destinatari sono memorizzati nel database, scegliere la prima opzione.
+1. Nell’editor di consegna, seleziona **[!UICONTROL To]**.
+1. Se i destinatari sono memorizzati nel database, scegli la prima opzione.
 
    ![](assets/s_ncs_user_wizard_email02a.png)
 
@@ -36,7 +36,7 @@ Per selezionare i destinatari di una consegna, segui i passaggi seguenti:
 
    Sono disponibili altre mappature di destinazione, alcune delle quali possono essere correlate alla configurazione specifica.[Ulteriori informazioni](#select-a-target-mapping).
 
-1. Fare clic sul pulsante **[!UICONTROL Add]** per definire i filtri di restrizione.
+1. Fai clic sul pulsante **[!UICONTROL Add]** per definire i filtri di restrizione.
 
    Puoi quindi selezionare il tipo di filtro da applicare:
 
@@ -47,11 +47,11 @@ Per selezionare i destinatari di una consegna, segui i passaggi seguenti:
    I seguenti tipi di target sono offerti per impostazione predefinita:
 
    * **[!UICONTROL Filtering conditions]** : questa opzione consente di definire una query e di visualizzare il risultato. Il metodo per la definizione delle query è presentato in [questa sezione](../../platform/using/creating-filters.md#creating-an-advanced-filter).
-   * **[!UICONTROL Subscribers of an information service]** : questa opzione ti consente di selezionare una newsletter a cui i destinatari devono iscriversi per essere destinatari della consegna creata.
+   * **[!UICONTROL Subscribers of an information service]**: questa opzione consente di selezionare una newsletter a cui i destinatari devono essere iscritti per rientrare nel target della consegna creata.
 
      ![](assets/s_ncs_user_wizard_email02c.png)
 
-   * **[!UICONTROL Recipients of a delivery]** : questa opzione consente di definire i destinatari di una consegna esistente come criterio di targeting. Seleziona quindi la consegna nell’elenco:
+   * **[!UICONTROL Recipients of a delivery]** : questa opzione consente di definire i destinatari di una consegna esistente come criterio di targeting. Quindi, seleziona la consegna nell’elenco:
 
      ![](assets/s_ncs_user_wizard_email02d.png)
 
@@ -59,37 +59,37 @@ Per selezionare i destinatari di una consegna, segui i passaggi seguenti:
 
      ![](assets/s_ncs_user_wizard_email02e.png)
 
-     Puoi filtrare il comportamento dei destinatari selezionando dall’elenco a discesa:
+     È possibile filtrare il comportamento dei destinatari selezionandolo dall’elenco a discesa:
 
      ![](assets/s_ncs_user_wizard_email02f.png)
 
      >[!NOTE]
      >
-     >L&#39;opzione **[!UICONTROL Include sub-folders]** consente inoltre di eseguire il targeting delle consegne contenute nelle cartelle presenti nella struttura ad albero sotto il nodo selezionato.
+     >L’opzione **[!UICONTROL Include sub-folders]** consente inoltre di eseguire il targeting delle consegne contenute nelle cartelle presenti nella struttura ad albero sotto il nodo selezionato.
 
    * **[!UICONTROL Recipients included in a folder]** : questa opzione consente di eseguire il targeting dei profili contenuti in una cartella specifica della struttura.
    * **[!UICONTROL A recipient]** : questa opzione consente di selezionare un destinatario specifico dai profili nel database.
    * **[!UICONTROL A list of recipients]** : questa opzione consente di eseguire il targeting di un elenco di destinatari. Gli elenchi sono presentati in [questa sezione](../../platform/using/creating-and-managing-lists.md).
    * **[!UICONTROL User filters]** : questa opzione consente di accedere ai filtri preconfigurati per utilizzarli come criteri di filtro per i profili nel database. I filtri preconfigurati sono presentati in [questa sezione](../../platform/using/creating-filters.md#saving-a-filter).
-   * L&#39;opzione **[!UICONTROL Exclude recipients corresponding to this segment]** consente di eseguire il targeting di destinatari che non soddisfano i criteri di destinazione definiti. Per utilizzare questa opzione, seleziona la casella appropriata e quindi applica il targeting, come definito in precedenza, per escludere i profili risultanti.
+   * L&#39;opzione **[!UICONTROL Exclude recipients corresponding to this segment]** consente di eseguire il targeting di destinatari che non soddisfano i criteri di destinazione definiti. Per utilizzare questa opzione, seleziona la casella appropriata, quindi applica il targeting, come definito in precedenza, per escludere i profili risultanti.
 
      ![](assets/s_ncs_user_wizard_email02g.png)
 
-1. Immettere un nome per il targeting nel campo **[!UICONTROL Label]**. Per impostazione predefinita, l’etichetta corrisponde al primo criterio di targeting. Per una combinazione, è meglio utilizzare un nome esplicito.
+1. Immetti un nome per questo targeting nel campo **[!UICONTROL Label]**. Per impostazione predefinita, l’etichetta corrisponde al primo criterio di targeting. Per una combinazione, è meglio utilizzare un nome esplicito.
 1. Fare clic su **[!UICONTROL Finish]** per convalidare la destinazione configurata.
 
-   I criteri di targeting definiti sono riepilogati nella sezione centrale della scheda di configurazione principale del target. Fai clic su un criterio per visualizzarne il contenuto (configurazione e anteprima). Per eliminare un criterio, fare clic sulla croce che si trova dopo l&#39;etichetta.
+   I criteri di targeting definiti sono riepilogati nella sezione centrale della scheda di configurazione principale del target. Fai clic su un criterio per visualizzarne il contenuto (configurazione e anteprima). Per eliminare un criterio, fai clic sulla crocetta che segue la sua etichetta.
 
    ![](assets/s_ncs_user_wizard_email02h.png)
 
-### Seleziona destinatari esterni {#selecting-external-recipients}
+### Selezionare destinatari esterni {#selecting-external-recipients}
 
 Puoi avviare una consegna per i destinatari che non sono stati salvati nel database, ma che sono stati memorizzati in un file esterno. Ad esempio, invieremo qui una consegna a destinatari importati da un file di testo.
 
 Per eseguire questa operazione:
 
 1. Fai clic sul collegamento **[!UICONTROL To]** per selezionare i destinatari della consegna.
-1. Selezionare l&#39;opzione **[!UICONTROL Defined in an external file]**.
+1. Seleziona l’opzione **[!UICONTROL Defined in an external file]**.
 
    ![](assets/s_ncs_user_wizard_external_recipients.png)
 
@@ -97,7 +97,7 @@ Per eseguire questa operazione:
 
    Puoi anche scegliere **[!UICONTROL Do not import the recipients into the database]**.
 
-1. Durante l&#39;importazione dei destinatari, fare clic sul collegamento **[!UICONTROL File format definition...]** per selezionare e configurare il file esterno.
+1. Durante l’importazione dei destinatari, fai clic sul collegamento **[!UICONTROL File format definition...]** per selezionare e configurare il file esterno.
 
    Per ulteriori informazioni sull&#39;importazione dei dati, consultare [questa sezione](../../platform/using/executing-import-jobs.md#step-2---source-file-selection).
 
@@ -121,7 +121,7 @@ La scheda **[!UICONTROL Exclusions]** viene utilizzata per limitare il numero di
 
 >[!NOTE]
 >
->I parametri predefiniti sono consigliati, ma puoi adattare le impostazioni in base alle tue esigenze. Tuttavia, queste opzioni devono essere modificate solo da un utente esperto per evitare abusi ed errori.
+>I parametri predefiniti sono consigliati, ma puoi adattare le impostazioni in base alle esigenze. Tuttavia, queste opzioni devono essere modificate solo da un utente esperto, in modo da evitare uso improprio ed errori.
 
 Fare clic sul collegamento **[!UICONTROL Edit...]** per modificare la configurazione predefinita.
 
@@ -142,7 +142,7 @@ Sono disponibili le seguenti opzioni:
 
      ![](assets/s_ncs_user_wizard_email02j.png)
 
-* **[!UICONTROL Exclude recipients who no longer want to be contacted]** , ovvero i destinatari i cui indirizzi e-mail si trovano in fase di inserisce nell&#39;elenco Bloccati (opt out) di. Questa opzione deve rimanere selezionata al fine di rispettare l&#39;etica professionale dell&#39;e-marketing e le leggi che disciplinano l&#39;e-commerce.
+* **[!UICONTROL Exclude recipients who no longer want to be contacted]**, ad esempio i destinatari i cui indirizzi e-mail fanno parte dell’elenco Bloccati (“rinuncia”). Questa opzione deve rimanere selezionata al fine di rispettare l&#39;etica professionale dell&#39;e-marketing e le leggi che disciplinano l&#39;e-commerce.
 * **[!UICONTROL Exclude quarantined recipients]**. Questa opzione ti consente di escludere dal target tutti i profili con un indirizzo che non risponde. Si consiglia vivamente di mantenere selezionata questa opzione.
 
   >[!NOTE]
@@ -247,8 +247,8 @@ Queste mappature sono le seguenti:
 
 ## Video tutorial {#seeds-and-proofs-video}
 
-Questo video illustra come aggiungere seed e bozze a un’e-mail esistente e come inviarla.
+In questo video scoprirai come aggiungere seed e bozze a un’e-mail esistente e come inviarla.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
-Sono disponibili altri video dimostrativi di Campaign Classic [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
+Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

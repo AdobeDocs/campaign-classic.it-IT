@@ -6,7 +6,7 @@ feature: Technote, Upgrade
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: 6803b6628313db9108a191fd143dac68ee799149
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '2225'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 
 
-L’Adobe disattiva il centro dati legacy: le istanze Campaign Classic devono essere trasferite a Public Cloud Amazon Web Services (AWS). [Ulteriori informazioni su questa iniziativa](dc-migration.md).
+Adobe rimuove dal centro dati legacy: le istanze di Campaign Classic devono essere trasferite a Public Cloud Amazon Web Services (AWS). [Ulteriori informazioni su questa iniziativa](dc-migration.md).
 
 Di seguito è riportata una serie di domande comuni su questo progetto, sull’impatto sugli ambienti Campaign e su altre risorse utili.
 
@@ -61,7 +61,7 @@ Gli impatti globali su IP, elenchi Bloccati, sottodomini e URL sono elencati di 
 
 * **Come verrà gestito l&#39;IP sul inserisco nell&#39;elenco Consentiti di? I clienti dovranno aggiungere nuovi indirizzi IP al elenco Consentiti di per il traffico in ingresso da Campaign?**
 
-  L’indirizzo IP dei server di Adobe cambierà. Pertanto, i clienti potrebbero dover aggiungere questi nuovi indirizzi IP nel inserisco nell&#39;elenco Consentiti di nel proprio sistema.
+  L’indirizzo IP degli Adobe cambierà. Pertanto, i clienti potrebbero dover aggiungere questi nuovi indirizzi IP nel inserisco nell&#39;elenco Consentiti di nel proprio sistema.
 
   [Ulteriori informazioni](#config) sull&#39;IP nel inserisco nell&#39;elenco Consentiti di.
 
@@ -71,17 +71,17 @@ Gli impatti globali su IP, elenchi Bloccati, sottodomini e URL sono elencati di 
 
 * **Modifica degli IP in corso?**
 
-  L’indirizzo IP dei server di Adobe cambierà. Pertanto, i clienti potrebbero dover aggiungere questi nuovi indirizzi IP al inserisco nell&#39;elenco Consentiti di nel proprio sistema.
+  L’indirizzo IP degli Adobe cambierà. Pertanto, i clienti potrebbero dover aggiungere questi nuovi indirizzi IP al inserisco nell&#39;elenco Consentiti di nel proprio sistema.
 
   [Ulteriori informazioni](#config) sull&#39;IP nel inserisco nell&#39;elenco Consentiti di.
 
 * **Come verrà gestita la delega del sottodominio?**
 
-  I sottodomini esistenti verranno spostati dal datacenter legacy al cloud pubblico (AWS). Questa parte verrà gestita dal team di recapito messaggi Adobe come parte del processo di migrazione.
+  I sottodomini esistenti verranno spostati dal datacenter legacy al cloud pubblico (AWS). Questa parte verrà gestita dal team di recapito messaggi di Adobe come parte del processo di migrazione.
 
   >[!NOTE]
   >
-  >Il team di recapito messaggi si basa sul contratto e i clienti devono contattare il proprio rappresentante di Adobe per informazioni relative al progetto di recapito messaggi.
+  >Il team di recapito messaggi si basa sul contratto e i clienti devono contattare il proprio rappresentante Adobe per informazioni relative al recapito messaggi.
 
   Adobe guiderà il cliente attraverso i test richiesti per garantire che la configurazione sia attiva e in esecuzione sui nuovi server Public Cloud (AWS) dopo la migrazione.
 
@@ -97,7 +97,7 @@ Gli impatti globali su IP, elenchi Bloccati, sottodomini e URL sono elencati di 
 
   Innanzitutto, Adobe Deliverability valuta lo stato di recapito della piattaforma e consiglia un piano per il passaggio ai nuovi IP
 
-  Non è necessario alcun riscaldamento dopo la migrazione. Potrebbe trattarsi di un&#39;eccezione e, in questo caso, [l&#39;Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) contatterà i clienti.
+  Non è necessario alcun riscaldamento dopo la migrazione. Potrebbe trattarsi di un&#39;eccezione e, in questo caso, [l&#39;Assistenza clienti di Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) contatterà i clienti.
 
   Tuttavia, il piano è quello di rendere trasparente questa operazione per l&#39;azienda, a differenza dell&#39;incremento iniziale che viene fatto durante il go-live.
 
@@ -110,7 +110,7 @@ Gli impatti globali su IP, elenchi Bloccati, sottodomini e URL sono elencati di 
 * **Quale dovrebbe essere l&#39;impatto del sottodominio delegato che utilizziamo per contrassegnare le comunicazioni?**
 
   I sottodomini utilizzati per le comunicazioni di marketing rimangono gli stessi. Tuttavia, a seconda dell’implementazione, sono necessarie azioni sul lato client:
-   * In caso di delega del sottodominio ad Adobe (impostazione predefinita), Adobe si occupa di tutte le modifiche e garantisce una transizione senza soluzione di continuità.
+   * In caso di delega di sottodominio ad Adobe (impostazione predefinita), Adobe si occupa di tutte le modifiche e garantisce una transizione senza soluzione di continuità.
    * In caso di configurazione di CNAME (eccezione), al client viene richiesto di implementare le modifiche, in coordinamento con Adobe.
 
 ## Impatto su configurazione e connettività
@@ -139,11 +139,11 @@ Di seguito sono elencati gli impatti globali su configurazione, connettività co
 
 * **La migrazione influirà sulla connettività ad Adobe Analytics utilizzando il connettore di Genesis? E l&#39;aggiunta di indirizzi IP di Campaign al inserisco nell&#39;elenco Consentiti di sul lato Adobe Analytics?**
 
-  Gli indirizzi IP dei server applicazioni Adobe Campaign cambieranno. Questo passaggio sarà gestito da Adobe Customer Care dopo la migrazione.
+  Gli indirizzi IP dei server applicazioni Adobe Campaign cambieranno. Questo passaggio verrà gestito dall’Assistenza clienti di Adobe dopo la migrazione.
 
 * **La migrazione influirà sulla connettività con altre soluzioni Adobe (AEM, Target, ecc.)?**
 
-  Le integrazioni sono una combinazione di indirizzi IP dichiarati nel inserisco nell&#39;elenco Consentiti di gestione dei rapporti con i clienti e nella configurazione dell’account del servizio web. Questo sarà registrato e di proprietà dell’Assistenza clienti Adobe.
+  Le integrazioni sono una combinazione di indirizzi IP dichiarati nel inserisco nell&#39;elenco Consentiti di gestione dei rapporti con i clienti e nella configurazione dell’account del servizio web. Questo sarà registrato e di proprietà dell’Assistenza clienti di Adobe.
 
   Nel inserisco nell&#39;elenco Consentiti di saranno presenti indirizzi IP che saranno necessari nella soluzione esterna man mano che l&#39;IP degli Application Server cambierà. Queste informazioni verranno fornite. Altre parti dell’integrazione sono basate su IMS e dovrebbero funzionare così come sono.
 
@@ -157,7 +157,7 @@ Di seguito sono elencati gli impatti globali su configurazione, connettività co
 
 * **La connettività API è interessata dalla migrazione?**
 
-  L’indirizzo IP dei server di Adobe cambierà. Pertanto, i clienti potrebbero dover aggiungere questi nuovi indirizzi IP al inserisco nell&#39;elenco Consentiti di nel proprio sistema.
+  L’indirizzo IP degli Adobe cambierà. Pertanto, i clienti potrebbero dover aggiungere questi nuovi indirizzi IP al inserisco nell&#39;elenco Consentiti di nel proprio sistema.
 
   [Ulteriori informazioni](#config) sull&#39;IP durante la inserisce nell&#39;elenco Consentiti di.
 
@@ -194,7 +194,7 @@ Gli impatti su autorizzazioni, certificati e accesso SFTP sono elencati di segui
 
 * **È necessario richiedere al cliente nuove chiavi di accesso STP?**
 
-  No, Adobe copia le chiavi di accesso SFTP così come sono sul nuovo server.
+  No, Adobe copierà le chiavi di accesso SFTP così come sono sul nuovo server.
 
 * **Come vengono gestite le autorizzazioni SFTP?**
 
@@ -227,7 +227,7 @@ Gli impatti globali durante la migrazione sono elencati di seguito.
 
 * **Pianificare l&#39;interruzione dell&#39;attività di marketing durante la migrazione?**
 
-  L’Adobe consiglia di rallentare e sospendere idealmente tutte le esecuzioni immediatamente prima che l’applicazione venga chiusa nel datacenter legacy: consegne e flussi di lavoro. Questo semplifica il riavvio su Cloud Server (AWS), in quanto ai processi è stato dato il tempo di sospendere &quot;agevolmente&quot; e salvare qualsiasi stato di esecuzione in corso.
+  Adobe consiglia di rallentare e sospendere idealmente tutte le esecuzioni immediatamente prima che l’applicazione venga chiusa nel datacenter legacy: consegne e flussi di lavoro. Questo semplifica il riavvio su Cloud Server (AWS), in quanto ai processi è stato dato il tempo di sospendere &quot;agevolmente&quot; e salvare qualsiasi stato di esecuzione in corso.
 
 * **Prevediamo tempi di inattività per il servizio Adobe Campaign?**
 
@@ -279,7 +279,7 @@ Gli impatti globali durante la migrazione sono elencati di seguito.
 
 * **Chi gestirà l&#39;aggiunta di nuovi IP al inserisco nell&#39;elenco Consentiti di?**
 
-  Il team di assistenza clienti di Adobe provvederà a garantire che il cliente e tutte le terze parti possano accedere al nuovo elenco Consentiti aggiungendo i nuovi IP al sistema di.
+  Il team di assistenza clienti di Adobe si occuperà di garantire che il cliente e tutte le terze parti possano accedere al nuovo sistema aggiungendo i nuovi IP al inserisco nell&#39;elenco Consentiti di.
 
 ## Supporto e altri collegamenti utili{#support}
 

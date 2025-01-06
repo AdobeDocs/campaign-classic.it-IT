@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 59364cfc-9917-4057-ad5f-fbca7e261b07
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 6%
@@ -28,7 +28,7 @@ Adobe Campaign offre due set di opzioni architetturali preconfigurate per la quo
 
 * **Power Cluster**
 
-  Questa opzione fornisce il supporto per 2 a N istanze di esecuzione in cluster disaccoppiate dall’istanza dell’applicazione Adobe Campaign principale in relazione a una determinata applicazione. I cluster possono essere ospitati in remoto, in implementazioni distribuite e da terze parti. Oltre ai vantaggi dell&#39;isolamento dei processi, l&#39;opzione Adobe Campaign Power Cluster consente la ridondanza e l&#39;espansione delle strategie utilizzando hardware di base per una più semplice evoluzione degli SLA o delle prestazioni.
+  Questa opzione fornisce il supporto per 2 a N istanze di esecuzione in cluster disaccoppiate dall’istanza dell’applicazione Adobe Campaign principale in relazione a una determinata applicazione. I cluster possono essere ospitati in remoto, in implementazioni distribuite e da terze parti. Oltre ai vantaggi dell&#39;isolamento dei processi, l&#39;opzione Adobe Campaign Power Cluster consente la ridondanza e l&#39;espansione delle strategie utilizzando componenti hardware di base per semplificare l&#39;evoluzione di SLA o delle prestazioni.
 
 ![](assets/architectural_options_diagram.png)
 

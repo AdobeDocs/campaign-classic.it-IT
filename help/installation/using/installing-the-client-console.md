@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: a38d53f4b37aadbc53446b5e399af2eae56c12af
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 1%
@@ -32,7 +32,7 @@ Rivedi i dettagli riportati di seguito per capire cosa è necessario per l’imp
 
 >[!CAUTION]
 >
->* La console del client di Campaign e il server applicazioni di Campaign devono eseguire **sulla stessa versione del prodotto**. L&#39;Adobe consiglia inoltre di utilizzare la **stessa build del prodotto**. Scopri come controllare le versioni client e server di Campaign in [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+>* La console del client di Campaign e il server applicazioni di Campaign devono eseguire **sulla stessa versione del prodotto**. Adobe consiglia inoltre vivamente di utilizzare la **stessa build del prodotto**. Scopri come controllare le versioni client e server di Campaign in [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 >
 >* L&#39;accesso alla cartella di installazione in cui è installata la console deve essere limitato solo all&#39;utente desiderato, assicurandosi che le autorizzazioni di scrittura siano limitate di conseguenza.
 
@@ -44,7 +44,7 @@ A partire dalla versione della build Campaign Classic 7.3, l’installazione di 
 
 La visualizzazione Web è installata per impostazione predefinita come parte del sistema operativo Windows 11. Se non è già presente nel sistema, Campaign Classic Console Installer ti chiederà di scaricarlo dal [sito Web Microsoft Developer](https://www.adobe.com/go/acc-ms-webview2-runtime-download). Il collegamento di download non funziona nel browser Internet Explorer 11 in quanto Microsoft ne ha dichiarato obsoleto il supporto. Utilizza un browser diverso per accedere al collegamento.
 
-## Adobe di implementazioni in hosting {#hosted-customers}
+## Implementazioni in hosting di Adobe {#hosted-customers}
 
 In qualità di cliente in hosting, hai a disposizione due opzioni per installare o aggiornare le console client:
 
@@ -75,7 +75,7 @@ A questo scopo, devi:
 
 ### Non chiedere più questa opzione
 
-L&#39;Adobe consiglia di lasciare deselezionata l&#39;opzione **[!UICONTROL No longer ask this question]** per assicurarsi che tutti gli utenti ricevano un avviso quando è disponibile una nuova versione della console.  Se questa opzione è selezionata, l’utente non verrà informato delle nuove versioni disponibili.
+Adobe consiglia di lasciare deselezionata l&#39;opzione **[!UICONTROL No longer ask this question]** per assicurarsi che tutti gli utenti ricevano un avviso quando è disponibile una nuova versione della console.  Se questa opzione è selezionata, l’utente non verrà informato delle nuove versioni disponibili.
 
 Se è stato selezionato **[!UICONTROL No longer ask this question]**, è possibile reimpostare la richiesta. Solo gli amministratori di sistema che hanno familiarità con la modifica del Registro di sistema di Windows possono apportare le seguenti modifiche:
 
@@ -175,4 +175,4 @@ Questo video mostra come installare e configurare il client Adobe Campaign.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35124?quality=12)
 
-Sono disponibili altri video dimostrativi di Campaign Classic [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
+Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

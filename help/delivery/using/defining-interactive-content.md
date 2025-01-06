@@ -6,7 +6,7 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Email Design
 role: User
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 3%
@@ -23,7 +23,7 @@ Con AMP per e-mail, puoi:
 
 Per ulteriori informazioni sul test e l&#39;invio di e-mail AMP, consulta [questa sezione](#targeting-amp-email).
 
-Questa funzione è disponibile tramite un pacchetto dedicato in Adobe Campaign. A seconda delle autorizzazioni e del modello di distribuzione, puoi installare questo pacchetto o rivolgerti ad Adobe per installarlo al posto tuo.
+Questa funzione è disponibile tramite un pacchetto dedicato in Adobe Campaign. A seconda delle autorizzazioni e del modello di distribuzione in uso, è possibile installare questo pacchetto o contattare Adobe per installarlo autonomamente.
 
 >[!NOTE]
 >

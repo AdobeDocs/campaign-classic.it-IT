@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '3389'
 ht-degree: 1%
@@ -176,7 +176,7 @@ I mancati recapiti non elaborati non vengono visualizzati nell’interfaccia di 
 
 >[!IMPORTANT]
 >
->Per inoltrare e-mail non recapitate non elaborate, l&#39;Adobe consiglia di compilare solo il campo **[!UICONTROL Address for errors]**. Tuttavia, assicurati che l’indirizzo utilizzato sia controllato regolarmente, in quanto ciò potrebbe comportare un carico pesante sul server di posta. Per ulteriori informazioni, contatta il responsabile del tuo account.
+>Per inoltrare e-mail non recapitate non elaborate, Adobe consiglia di compilare solo il campo **[!UICONTROL Address for errors]**. Tuttavia, assicurati che l’indirizzo utilizzato sia controllato regolarmente, in quanto ciò potrebbe comportare un carico pesante sul server di posta. Per ulteriori informazioni, contatta il responsabile del tuo account.
 
 ## Configurazione del tracciamento {#tracking-configuration}
 
@@ -237,7 +237,7 @@ Esistono tre possibili tipi di architettura per l’implementazione del tracciam
 
 1. **Aggiungi supporto per il tracciamento in un&#39;istanza esistente**
 
-   Questa scelta si applica se l’istanza è già stata creata per altre esigenze (server MTA, ecc.) su server che verranno utilizzati come server di tracciamento.
+   Questa scelta si applica se l’istanza è già stata creata per altre esigenze (server MTA, ecc.) in server che verranno utilizzati come server di tracciamento.
 
    ![](assets/s_ncs_install_deployment_wiz_11.png)
 
@@ -277,7 +277,7 @@ Nella finestra precedente, un messaggio conferma la registrazione a livello del 
 
 ![](assets/s_ncs_install_deployment_wiz_tracking_ok.png)
 
-I parametri collegati alle ricerche URL **non devono essere modificati** per un&#39;installazione standard. Per tutti gli altri parametri, contatta l’Adobe.
+I parametri collegati alle ricerche URL **non devono essere modificati** per un&#39;installazione standard. Per tutti gli altri parametri, contatta Adobe.
 
 ## Parametri del canale mobile {#mobile-channel-parameters}
 
