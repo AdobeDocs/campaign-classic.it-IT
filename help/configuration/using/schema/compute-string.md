@@ -4,7 +4,7 @@ title: 'Elementi e attributi: elemento stringa di calcolo'
 description: elemento stringa di calcolo
 feature: Schema Extension
 exl-id: 8a079bb8-3f53-4144-a065-5bd402649cc7
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 5%
@@ -13,7 +13,6 @@ ht-degree: 5%
 
 # elemento stringa di calcolo {#compute-string--element}
 
-![](../../../assets/v7-only.svg)
 
 ## Modello di contenuto {#content-model-1}
 
@@ -27,7 +26,7 @@ stringa di calcolo:==EMPTY
 
 `<element>`
 
-## Elementi figli {#children-1}
+## Elementi secondari {#children-1}
 
 Nessuno
 

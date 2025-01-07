@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
-source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
+source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
 source-wordcount: '1573'
 ht-degree: 1%
@@ -16,7 +16,6 @@ ht-degree: 1%
 
 # elemento attribute {#attribute--element}
 
-![](../../../assets/v7-only.svg)
 
 ## Modello di contenuto {#content-model}
 
@@ -24,13 +23,13 @@ attributo:==guida
 
 ## Attributi {#attributes}
 
-_operation (stringa), advanced (booleano), apply (stringa), autoIncrement (booleano), membersTo (stringa), dataPolicy (stringa), dbEnum (stringa), defOnDuplicate (booleano), default (stringa), desc (stringa), edit (stringa), enum (stringa), expr (stringa), feature (stringa), featureDate (booleano), img (stringa), inout (stringa), label (stringa), length (stringa), localizable (booleano), name (MNTOKEN), notNull (booleano) , pkgStatus (stringa), ref (stringa), required (booleano), sql (booleano), sqlDefault (stringa), sqlname (stringa), sqltable (stringa), target (MNTOKEN), template (stringa), translationDefault (stringa), transledExpr (stringa), type (MNTOKEN), user (booleano), userEnum (stringa), visibleIf (stringa), xml (booleano)
+_operation (stringa), advanced (booleano), apply (stringa), autoIncrement (booleano), membersTo (stringa), dataPolicy (stringa), dbEnum (stringa), defOnDuplicate (booleano), default (stringa), desc (stringa), edit (stringa), enum (stringa), expr (stringa), feature (stringa), featureDate (booleano), img (stringa), inout (stringa), label (stringa), length (stringa), localizzabile (booleano), name (MNTOKEN), notNull (booleano), pkgStatus (stringa), ref (stringa), required (booleano), sql (booleano), sqlDefault (stringa), sqlname (stringa), sqltable (stringa), target (MNTOKEN), template (stringa), translationDefault (stringa), transledExpr (stringa), type (MNTOKEN), user (booleano), userEnum (stringa), visibleIf (stringa), xml (booleano)
 
 ## Padri {#parents}
 
 `<element>`
 
-## Elementi figli {#children}
+## Elementi secondari {#children}
 
 `<help>`
 

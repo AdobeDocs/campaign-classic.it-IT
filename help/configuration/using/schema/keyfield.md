@@ -4,7 +4,7 @@ title: 'Elementi e attributi dello schema: elemento del campo chiave'
 description: elemento keyfield
 feature: Schema Extension
 exl-id: fb0862f9-5dcc-49f2-b99b-9822aaf3a680
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 4%
@@ -13,7 +13,6 @@ ht-degree: 4%
 
 # elemento keyfield {#keyfield--element}
 
-![](../../../assets/v7-only.svg)
 
 ## Modello di contenuto {#content-model-9}
 
@@ -28,7 +27,7 @@ keyfield:==VUOTO
 
 `<key>` , `<dbindex />`
 
-## Elementi figli {#children-9}
+## Elementi secondari {#children-9}
 
 Nessuno
 

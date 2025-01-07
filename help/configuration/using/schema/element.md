@@ -4,7 +4,7 @@ title: 'Elementi e attributi dello schema: elemento'
 description: elemento
 feature: Schema Extension
 exl-id: 60f15ae5-b2bd-48f9-aa45-8f795a3071aa
-source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
+source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
 source-wordcount: '2029'
 ht-degree: 0%
@@ -13,7 +13,6 @@ ht-degree: 0%
 
 # elemento {#element--element}
 
-![](../../../assets/v7-only.svg)
 
 ## Modello di contenuto {#content-model-4}
 
@@ -21,7 +20,7 @@ element:==(attribute) | stringa di calcolo | dbindex | predefinito | elemento | 
 
 ## Attributi {#attributes-4}
 
-_operation (stringa), advanced (booleano), aggregate (stringa), applyIf (stringa), autopk (booleano), membersTo (stringa), convDate (stringa), dataPolicy (stringa), dataSource (stringa), dbEnum (stringa), defOnDuplicate (booleano), default (stringa), desc (stringa), displayAsField (booleano), doesNotSupportDiff (booleano), edit (stringa), emptyKeyValue (stringa), enum (stringa), enumImage (stringa), expandTargetSchema string), expr (string), externalJoin (booleano), feature (string), featureDate (booleano), filterPath (string), folderLink (string), folderModel (string), folderProcess (string), fullLoad (booleano), hierarchical (booleano), hierarchicalPath (string), img (string), inout (string), integrity (string), label (string), labelSingular (string), length (string), localizable (booleano), name (MNTOKEN), noDbIndex (booleano), no (booleano), ordered (booleano), overflowtable (booleano), pkSequence (stringa), pkgStatus (stringa), ref (stringa), required (booleano), revAdvanced (booleano), revCardinality (stringa), revDesc (stringa), revExternalJoin (booleano), revIntegrity (stringa), revLabel (stringa), revLink (stringa), revTarget (stringa), revVisibleIf (stringa), sql (booleano), sqlname (stringa) (stringa), tableSpace (stringa), tableSpaceIndex (stringa), target (MNTOKEN), template (stringa), temporaryTable (booleano), translDefault (stringa), translExpr (stringa), type (MNTOKEN), unbound (booleano), user (booleano), userEnum (stringa), visibleIf (stringa), xml (booleano), xmlChildren (booleano)
+_operation (stringa), advanced (booleano), aggregate (stringa), applyIf (stringa), autopk (booleano), membersTo (stringa), convDate (stringa), dataPolicy (stringa), dataSource (stringa), dbEnum (stringa), defOnDuplicate (booleano), default (stringa), desc (stringa), displayAsField (booleano), doesNotSupportDiff (booleano), edit (stringa), emptyKeyValue (stringa), enum (stringa), enumImage (stringa), expandTargetSchema (stringa), expr (stringa), externalJoin (booleano), feature (stringa), featureDate (booleano), filterPath (stringa), folderLink (stringa), folderModel (stringa), folderProcess (stringa), fullLoad (booleano), hierarchical (booleano), hierarchicalPath (stringa), img (stringa), inout (stringa), integrità (stringa), label (stringa), labelSingular (stringa), lunghezza (stringa), localizzabile (booleano), nome (MNTOKEN), noDbIndex (booleano), (booleano), ordered (booleano), overflowtable (booleano), pkSequence (stringa), pkgStatus (stringa), ref (stringa), required (booleano), revAdvanced (booleano), revCardinality (stringa), revDesc (stringa), revExternalJoin (booleano), revIntegrity (stringa), revLabel (stringa), revLink (stringa), revTarget (stringa), revVisibleIf (stringa), sql (booleano), sqlname (stringa) (stringa), tableSpace (stringa), tableSpaceIndex (stringa), target (MNTOKEN), template (stringa), temporaryTable (booleano), translDefault (stringa), translExpr (stringa), type (MNTOKEN), unbound (booleano), user (booleano), userEnum (stringa), visibleIf (stringa), xml (booleano), xmlChildren (booleano)
 
 ## Padri {#parents-4}
 
@@ -29,7 +28,7 @@ _operation (stringa), advanced (booleano), aggregate (stringa), applyIf (stringa
 
 `<element>`
 
-## Elementi figli {#children-4}
+## Elementi secondari {#children-4}
 
 * `<attribute>`
 * `<compute-string>`

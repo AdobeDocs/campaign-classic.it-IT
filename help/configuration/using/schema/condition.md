@@ -4,7 +4,7 @@ title: 'Elementi e attributi dello schema: elemento condizione'
 description: elemento condizione
 feature: Schema Extension
 exl-id: 71e98d45-3660-4d86-a5ca-8e55ae5896eb
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 5%
@@ -13,7 +13,6 @@ ht-degree: 5%
 
 # elemento condizione {#condition--element}
 
-![](../../../assets/v7-only.svg)
 
 ## Modello di contenuto {#content-model-2}
 
@@ -29,7 +28,7 @@ condizione:==VUOTO
 
 `<sysfilter>`
 
-## Elementi figli {#children-2}
+## Elementi secondari {#children-2}
 
 Nessuno
 

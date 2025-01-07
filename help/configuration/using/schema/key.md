@@ -4,7 +4,7 @@ title: 'Elementi e attributi dello schema: elemento chiave'
 description: elemento chiave
 feature: Schema Extension
 exl-id: 3d0ef574-27a3-40f2-91a0-70e9583d9980
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 1%
@@ -13,7 +13,6 @@ ht-degree: 1%
 
 # elemento chiave {#key--element}
 
-![](../../../assets/v7-only.svg)
 
 ## Modello di contenuto {#content-model-8}
 
@@ -32,7 +31,7 @@ chiave:==campo chiave
 
 `<element>`
 
-## Elementi figli {#children-8}
+## Elementi secondari {#children-8}
 
 `<keyfield>`
 
