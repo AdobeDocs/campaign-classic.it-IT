@@ -7,7 +7,7 @@ user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 446062946b64c9a4d065b6a56d263914cbe628f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2562'
 ht-degree: 100%
 
@@ -117,7 +117,7 @@ ht-degree: 100%
       + [Convalidare la consegna](delivery/using/steps-validating-the-delivery.md)
       + [Inviare la consegna](delivery/using/steps-sending-the-delivery.md)
       + [Best practice per la consegna](delivery/using/delivery-best-practices.md)
-      + Best practice di consegna {#delivery-bestpractices}
+      + Best practice per la consegna {#delivery-bestpractices}
          + [Ottimizzare la consegna](delivery/using/optimize-delivery.md)
          + [Utilizzare i modelli](delivery/using/use-templates.md)
          + [Creare contenuti personalizzati](delivery/using/design-and-personalize.md)
