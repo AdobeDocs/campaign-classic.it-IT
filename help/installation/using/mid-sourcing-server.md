@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: b500b2cbf68fd46bd84ddbfa71cf9431c6b60060
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1005'
 ht-degree: 1%
 
 ---
@@ -125,7 +125,7 @@ Dalla console del client, individua l&#39;indirizzamento di **e-mail utilizzando
 
    ![](assets/mid_recette_user_restrictions.png)
 
-1. Riavviare il modulo Web utilizzando il comando seguente: **nlserver restart web**.
+1. Riavviare il modulo Web utilizzando il comando seguente: ** web**.
 
 È necessario modificare l&#39;impostazione del server di mid-sourcing nel file serverConf.xml. La riga seguente deve essere aggiunta alla sezione &quot;Gestione delle affinità con gli indirizzi IP&quot;, nella riga esistente:
 
