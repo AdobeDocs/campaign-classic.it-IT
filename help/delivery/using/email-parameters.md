@@ -6,7 +6,7 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Email
 role: User, Developer, Data Engineer
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: f7da066d32391341e449397d64853fcbae639a59
+source-git-commit: 09b79849fa9db15dd53d1ed56630a34915aa32ad
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 10%
@@ -33,7 +33,7 @@ Per impostazione predefinita, quando si crea un nuovo modello di consegna o cons
 
 >[!NOTE]
 >
->Se utilizzi Ccn e-mail con [MTA avanzato](ending-with-enhanced-mta.md), questa opzione viene abilitata automaticamente per tutte le consegne.
+>Se utilizzi Ccn e-mail con [MTA avanzato](sending-with-enhanced-mta.md), questa opzione viene abilitata automaticamente per tutte le consegne.
 
 Per abilitare Ccn e-mail per un modello di consegna e-mail, effettua le seguenti operazioni:
 
