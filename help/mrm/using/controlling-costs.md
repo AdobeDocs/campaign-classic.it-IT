@@ -5,9 +5,11 @@ description: Scopri come controllare i costi
 feature: Resource Management
 audience: campaign
 content-type: reference
+hide: true
+hidefromtoc: true
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 942edcf028207eab2ea583949ebc99ab61539ea0
 workflow-type: tm+mt
 source-wordcount: '2488'
 ht-degree: 0%
@@ -191,7 +193,7 @@ I costi sono suddivisi in tre categorie:
 
 1. Costo calcolato
 
-   Il costo calcolato dipende dall’elemento interessato (campagna, consegna, attività, ecc.) e il relativo stato (in corso di modifica, in corso, terminato). In ogni caso, se si specifica il costo reale, il costo calcolato utilizzerà tale importo.
+   Il costo calcolato dipende dall’elemento interessato (campagna, consegna, attività, ecc.) e dal suo stato (in corso di modifica, in corso, finito). In ogni caso, se si specifica il costo reale, il costo calcolato utilizzerà tale importo.
 
    Se non viene fornito il costo effettivo, si applicano le seguenti regole:
 
