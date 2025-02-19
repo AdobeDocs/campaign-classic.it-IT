@@ -3,8 +3,10 @@ product: campaign
 title: Esempi di marketing distribuito
 description: Esempi di marketing distribuito
 feature: Distributed Marketing
+hide: true
+hidefromtoc: true
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 0%
@@ -96,7 +98,7 @@ I passaggi sono i seguenti:
 
 1. Crea un&#39;attività **[!UICONTROL Data distribution]**.
 1. Crea la campagna collaborativa.
-1. Publish la campagna.
+1. Pubblica la campagna.
 
 ### Lato entità locale {#local-entity-side}
 
@@ -157,7 +159,7 @@ Una volta approvati i controlli, la campagna può iniziare automaticamente.
 
 1. Salvare il record.
 
-#### Publish la campagna {#publishing-the-campaign}
+#### Pubblicare la campagna {#publishing-the-campaign}
 
 È ora possibile aggiungere un **pacchetto campagna** dalla scheda **[!UICONTROL Campaigns]**.
 
