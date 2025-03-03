@@ -5,7 +5,7 @@ description: Scopri come concedere l’accesso alle funzionalità di Campaign
 badge: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Access Management, Permissions
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
-source-git-commit: e1a085384fb27ec165c487c112fbc70fe9738d9e
+source-git-commit: 2759d65150299e4fa679ea986df8136cd9525370
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 5%
@@ -17,11 +17,11 @@ ht-degree: 5%
 
 >[!CAUTION]
 >
->A partire da Campaign Classic v7.3.1, tutti gli operatori devono utilizzare [Adobe Identity Management System (IMS)](https://helpx.adobe.com/it/enterprise/using/users.html){target="_blank"} per connettersi a Campaign.
+>A partire da Campaign Classic v7.3.1, tutti gli operatori devono utilizzare [Adobe Identity Management System (IMS)](https://helpx.adobe.com/it/enterprise/using/identity.html){target="_blank"} per connettersi a Campaign.
 >
->Come parte degli sforzi per rafforzare la sicurezza e il processo di autenticazione, Adobe Campaign consiglia vivamente di migrare tutte le modalità di autenticazione degli operatori esistenti dall’autenticazione nativa di login/password ad Adobe Identity Management System (IMS). Scopri come eseguire la migrazione degli operatori in [questa pagina](../../technotes/using/migrate-users-to-ims.md).
+>Per rafforzare la sicurezza e il processo di autenticazione, Adobe Campaign consiglia vivamente di migrare tutte le modalità di autenticazione degli operatori esistenti dall’autenticazione nativa di login/password ad Adobe Identity Management System (IMS). Scopri come eseguire la migrazione degli operatori in [questa pagina](../../technotes/using/migrate-users-to-ims.md).
 > 
->Dopo questa migrazione, la sezione seguente non è più applicabile.  Scopri come impostare le autorizzazioni con Adobe IMS nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=it){target="_blank"}.
+>Dopo questa migrazione, tieni presente che la sezione seguente non è più applicabile.  Scopri come impostare le autorizzazioni con Adobe IMS nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=it){target="_blank"}.
 
 
 Adobe Campaign ti consente di definire e gestire i diritti assegnati ai vari operatori. Si tratta di una serie di diritti e restrizioni che autorizzano o negano:
@@ -42,7 +42,7 @@ Esistono due tipi di autorizzazioni che è possibile concedere a un utente:
 
 >[!NOTE]
 >
->Prima di iniziare a definire le autorizzazioni, l&#39;Adobe consiglia di leggere l&#39;[elenco di controllo per la configurazione della protezione](https://helpx.adobe.com/it/campaign/kb/acc-security.html).
+>Prima di iniziare a definire le autorizzazioni, Adobe consiglia di leggere l&#39;[elenco di controllo per la configurazione della sicurezza](https://helpx.adobe.com/it/campaign/kb/acc-security.html).
 
 Scopri come concedere l’accesso e impostare le autorizzazioni in queste sezioni:
 
