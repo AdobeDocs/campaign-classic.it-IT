@@ -4,8 +4,10 @@ title: Accedere alle campagne di marketing
 description: Accedere alle campagne di marketing
 role: User
 feature: Campaigns, Cross Channel Orchestration
+hide: true
+hidefromtoc: true
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '1199'
 ht-degree: 2%
@@ -174,7 +176,7 @@ Questa tabella fornisce un riepilogo delle azioni che è possibile eseguire sull
 | Elenco di campagne, consegne, offerte, ecc. | Eliminare una voce di elenco |
 | Campaign | Annullare una campagna |
 | Consegna | Approva il contenuto e la destinazione della consegna<br/>Invia il contenuto della consegna<br/>Conferma una consegna<br/>Sospendi e interrompi una consegna |
-| Applicazione web | Crea un&#39;applicazione Web<br/>Modifica il contenuto e le proprietà dell&#39;applicazione<br/>Salva il contenuto dell&#39;applicazione come modello<br/>Publish l&#39;applicazione |
+| Applicazione web | Crea un&#39;applicazione Web<br/>Modifica il contenuto e le proprietà dell&#39;applicazione<br/>Salva il contenuto dell&#39;applicazione come modello<br/>Pubblica l&#39;applicazione |
 | Offerta | Approva il contenuto e l&#39;idoneità dell&#39;offerta<br/>Disattiva un&#39;offerta online |
 | Attività Task | Termina un&#39;attività<br/>Annulla un&#39;attività |
 | Risorse di marketing | Approva una risorsa<br/>Blocca e sblocca una risorsa |

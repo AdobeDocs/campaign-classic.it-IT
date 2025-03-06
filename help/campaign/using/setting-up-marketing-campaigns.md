@@ -4,8 +4,10 @@ title: Creare campagne di marketing
 description: Scopri come creare ed eseguire campagne di marketing
 role: User
 feature: Campaigns, Cross Channel Orchestration, Programs
+hide: true
+hidefromtoc: true
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '1248'
 ht-degree: 5%
@@ -40,7 +42,7 @@ Per configurare la gerarchia di cartelle per i piani e i programmi di marketing:
 
 1. Fai clic sull&#39;icona **Explorer** nella home page.
 1. Fare clic con il pulsante destro del mouse sulla cartella in cui si desidera creare il piano.
-1. Selezionare **Aggiungi nuova cartella > Campaign Management > Piano**.
+1. Selezionare **Aggiungi nuova cartella > Gestione campagne > Piano**.
 
    ![](assets/create_plan_1.png)
 

@@ -4,8 +4,10 @@ title: Pubblico di destinazione della campagna di marketing
 description: Scopri come definire il pubblico delle campagne di marketing
 role: User
 feature: Campaigns, Audiences
+hide: true
+hidefromtoc: true
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
-source-git-commit: 7453db63a0ed2c617e9f7e4cbfa3480b3ed5020d
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '1492'
 ht-degree: 1%
@@ -91,7 +93,7 @@ I flussi di lavoro di targeting possono essere avviati manualmente tramite il pu
 
 Il targeting può essere programmato per l’esecuzione automatica in base a una pianificazione (scheduler) o a un evento (segnale esterno, importazione file, ecc.).
 
-Le azioni relative all’esecuzione del flusso di lavoro di targeting (avvio, arresto, pausa, ecc.) sono **processi asincroni**: il comando viene salvato e avrà effetto non appena il server sarà disponibile per applicarlo.
+Le azioni correlate all&#39;esecuzione del flusso di lavoro di targeting (avvio, arresto, pausa, ecc.) sono **processi asincroni**: il comando viene salvato e avrà effetto non appena il server sarà disponibile per applicarlo.
 
 Le icone della barra degli strumenti consentono di intervenire sull’esecuzione del flusso di lavoro di targeting.
 
@@ -186,7 +188,7 @@ Puoi definire un gruppo di controllo a livello di campagna, nel qual caso verrà
 
    ![](assets/s_ncs_user_edit_op_target.png)
 
-1. Selezionare l&#39;opzione **[!UICONTROL Enable and edit control group configuration]**.
+1. Seleziona l’opzione **[!UICONTROL Enable and edit control group configuration]**.
 1. Fare clic su **[!UICONTROL Edit...]** per configurare il gruppo di controllo.
 
    ![](assets/s_ncs_user_edit_op_general_tab_exe_target.png)

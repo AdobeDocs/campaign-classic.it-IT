@@ -4,8 +4,10 @@ title: Fornitori, scorte e budget
 description: Fornitori, scorte e budget
 role: User
 feature: Budget Management, Campaigns
+hide: true
+hidefromtoc: true
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '1918'
 ht-degree: 0%
@@ -61,7 +63,7 @@ Puoi creare tutti i provider di servizi necessari per le consegne. La procedura 
 >
 >Per ulteriori informazioni, consulta [Definizione della struttura dei costi](#defining-the-cost-structure).
 
-Una categoria di costi è un’entità contenente una serie di costi ammissibili per un tipo di consegna (e-mail, direct mailing, ecc.) o per un&#39;attività. Le categorie di costo sono raggruppate nei modelli dei servizi associati ai fornitori di servizi. Ogni provider di servizi può fare riferimento a uno o più modelli di servizio.
+Una categoria di costi è un&#39;entità contenente una serie di costi ammissibili per un tipo di consegna (e-mail, direct mailing, ecc.) o per un&#39;attività. Le categorie di costo sono raggruppate nei modelli dei servizi associati ai fornitori di servizi. Ogni provider di servizi può fare riferimento a uno o più modelli di servizio.
 
 Per creare un modello di servizio e definirne il contenuto, attenersi alla procedura descritta di seguito.
 

@@ -4,8 +4,10 @@ title: Modelli di campagna di marketing
 description: Modelli di campagna di marketing
 role: User
 feature: Campaigns, Templates
+hide: true
+hidefromtoc: true
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 4%
@@ -66,7 +68,7 @@ Il collegamento **[!UICONTROL Advanced campaign settings...]** consente di abili
 
 ![](assets/s_ncs_user_op_template_tab1.3.png)
 
-Se non è selezionata una funzionalità, gli elementi relativi al processo (menu, icone, opzioni, schede secondarie, ecc.) non verrà visualizzato nell’interfaccia del modello o nelle campagne basate su questo modello. Le schede a sinistra dei dettagli della campagna solitamente coincidono con i processi selezionati nel modello. Ad esempio, se **Spese e obiettivi** non è selezionato, la scheda **[!UICONTROL Budget]** corrispondente non verrà visualizzata nelle campagne basate su questo modello.
+Se non è selezionata una funzionalità, gli elementi relativi al processo (menu, icone, opzioni, schede, schede secondarie e così via) non verranno visualizzati nell’interfaccia del modello o nelle campagne basate su questo modello. Le schede a sinistra dei dettagli della campagna solitamente coincidono con i processi selezionati nel modello. Ad esempio, se **Spese e obiettivi** non è selezionato, la scheda **[!UICONTROL Budget]** corrispondente non verrà visualizzata nelle campagne basate su questo modello.
 
 Inoltre, al dashboard della campagna vengono aggiunte scelte rapide per le finestre di configurazione. Quando una funzionalità è abilitata, un collegamento diretto consente di accedervi dal dashboard della campagna.
 
@@ -166,7 +168,7 @@ Quando crei un modello di campagna, devi immettere le seguenti informazioni:
 
 ### Parametri di esecuzione del modello {#template-execution-parameters}
 
-Il collegamento **[!UICONTROL Advanced campaign settings...]** consente di configurare le opzioni avanzate del modello per l&#39;elaborazione del target di consegna (gruppo di controllo, indirizzi seed, ecc.) e la configurazione della misurazione della campagna e dell’esecuzione del flusso di lavoro.
+Il collegamento **[!UICONTROL Advanced campaign settings...]** consente di configurare le opzioni avanzate del modello per l&#39;elaborazione del target di consegna (gruppo di controllo, indirizzi seed, ecc.) e la configurazione della misurazione della campagna e dell&#39;esecuzione del flusso di lavoro.
 
 ![](assets/s_ncs_user_op_template_tab1.2.png)
 

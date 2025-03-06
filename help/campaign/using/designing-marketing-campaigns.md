@@ -4,11 +4,13 @@ title: Progettare ed eseguire campagne di marketing
 description: Definisci, ottimizza, esegui e analizza campagne di marketing
 role: User
 feature: Campaigns
+hide: true
+hidefromtoc: true
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 20%
+ht-degree: 22%
 
 ---
 
@@ -68,4 +70,4 @@ Questo video illustra i concetti chiave delle campagne di marketing.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
-Sono disponibili altri video dimostrativi di Campaign Classic [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
+Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
