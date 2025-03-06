@@ -3,8 +3,10 @@ product: campaign
 title: Arricchimento delle e-mail con campi data personalizzati
 description: Scopri come arricchire le e-mail con campi data personalizzati
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: 85e0ec2a-b7cb-4d0b-a281-9ad72594403a
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 3%

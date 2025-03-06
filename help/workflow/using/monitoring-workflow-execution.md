@@ -3,8 +3,10 @@ product: campaign
 title: Monitorare l’esecuzione di un flusso di lavoro
 description: Monitorare l’esecuzione di un flusso di lavoro
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '2018'
 ht-degree: 2%
@@ -19,7 +21,7 @@ Questa sezione contiene informazioni su come monitorare l’esecuzione dei fluss
 
 Un caso d&#39;uso su come creare un flusso di lavoro che consenta di monitorare lo stato di un set di flussi di lavoro &quot;in pausa&quot;, &quot;interrotti&quot; o &quot;con errori&quot; è disponibile anche in [questa sezione](supervising-workflows.md#supervising-workflows).
 
-Inoltre, gli amministratori dell&#39;istanza possono utilizzare **Audit trail** per controllare le attività e le ultime modifiche apportate ai flussi di lavoro, lo stato dei flussi di lavoro. Per ulteriori informazioni, consulta la [Guida alla produzione di Campaign Classic v7](../../production/using/audit-trail.md).
+Inoltre, gli amministratori dell&#39;istanza possono utilizzare **Audit trail** per controllare le attività e le ultime modifiche apportate ai flussi di lavoro, lo stato dei flussi di lavoro. Per ulteriori informazioni, consulta [Guida alla produzione di Campaign Classic v7](../../production/using/audit-trail.md).
 
 Ulteriori metodi di monitoraggio dei diversi processi di Campaign sono descritti nella [Guida alla produzione di Campaign Classic v7](../../production/using/monitoring-guidelines.md).
 
@@ -141,7 +143,7 @@ In questo caso, l’attività di errore viene interrotta. Questa modalità è pa
 >
 >Puoi applicare questa configurazione singolarmente per ogni attività. A tale scopo, modificare le proprietà dell&#39;attività e selezionare la modalità di gestione degli errori nella scheda **[!UICONTROL Advanced]**.
 
-Per ulteriori informazioni sulla risoluzione dei problemi di esecuzione dei flussi di lavoro, consulta [Campaign Classic v7 Production Guide](../../production/using/workflow-execution.md).
+Per ulteriori informazioni sulla risoluzione dei problemi di esecuzione dei flussi di lavoro, consulta la [Guida alla produzione di Campaign Classic v7](../../production/using/workflow-execution.md).
 
 ## Errori di elaborazione {#processing-errors}
 
@@ -234,9 +236,9 @@ Un caso d&#39;uso è presentato in questa sezione: [Coordinamento degli aggiorna
 
 I flussi di lavoro utilizzano molte tabelle di lavoro che occupano spazio e finiscono per rallentare l’intera piattaforma se non vengono mantenuti. Per ulteriori informazioni sulla manutenzione del database, consulta questa [sezione](../../production/using/tables-to-maintain.md) .
 
-Il flusso di lavoro **Database cleanup** accessibile tramite il nodo **Amministrazione > Produzione > Flussi di lavoro tecnici** consente di eliminare i dati obsoleti per evitare una crescita esponenziale del database. Il flusso di lavoro viene attivato automaticamente senza l’intervento dell’utente. Consulta la [Guida di produzione di Campaign Classic v7](../../production/using/database-cleanup-workflow.md).
+Il flusso di lavoro **Database cleanup** accessibile tramite il nodo **Amministrazione > Produzione > Flussi di lavoro tecnici** consente di eliminare i dati obsoleti per evitare una crescita esponenziale del database. Il flusso di lavoro viene attivato automaticamente senza l’intervento dell’utente. Consulta la [Guida alla produzione di Campaign Classic v7](../../production/using/database-cleanup-workflow.md).
 
-Puoi anche creare flussi di lavoro tecnici specifici per eliminare i dati non necessari che occupano spazio. Consulta la [Guida di produzione di Campaign Classic v7](../../production/using/application-objects.md) e questa [sezione](#purging-the-logs).
+Puoi anche creare flussi di lavoro tecnici specifici per eliminare i dati non necessari che occupano spazio. Consulta la [Guida alla produzione di Campaign Classic v7](../../production/using/application-objects.md) e questa [sezione](#purging-the-logs).
 
 ## Gestione dei flussi di lavoro in pausa {#handling-of-paused-workflows}
 

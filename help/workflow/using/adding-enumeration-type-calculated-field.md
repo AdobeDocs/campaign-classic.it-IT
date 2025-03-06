@@ -6,8 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 feature: Workflows, Data Management
+hide: true
+hidefromtoc: true
 exl-id: 3f606d3a-0af5-4315-bb08-1b21a71f1721
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -83,6 +85,6 @@ Applica i seguenti passaggi:
 
    ![](assets/query_editor_nveau_79.png)
 
-   Prendiamo un altro esempio e diciamo che il valore di enumerazione &quot;2&quot; non è inserito. Selezionare la funzione **[!UICONTROL Generate an error and reject the line]**: tutti i destinatari di genere &quot;2&quot; genereranno anomalie e le altre informazioni nella riga (nome e cognome, ecc.) non verrà esportato. Un log degli errori viene visualizzato nel campo **[!UICONTROL Logs generated during export]** della finestra di anteprima dati. Questo registro indica che non è stato immesso il valore di enumerazione &quot;2&quot;.
+   Prendiamo un altro esempio e diciamo che il valore di enumerazione &quot;2&quot; non è inserito. Selezionare la funzione **[!UICONTROL Generate an error and reject the line]**: tutti i destinatari di genere &quot;2&quot; genereranno anomalie e le altre informazioni nella riga (nome e cognome, ecc.) non verranno esportati. Un log degli errori viene visualizzato nel campo **[!UICONTROL Logs generated during export]** della finestra di anteprima dati. Questo registro indica che non è stato immesso il valore di enumerazione &quot;2&quot;.
 
    ![](assets/query_editor_nveau_80.png)

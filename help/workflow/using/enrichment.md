@@ -3,8 +3,10 @@ product: campaign
 title: Arricchimento
 description: Ulteriori informazioni sull’attività del flusso di lavoro Arricchimento
 feature: Workflows, Enrichment Activity, Targeting Activity
+hide: true
+hidefromtoc: true
 exl-id: 4c7bc0f3-5877-47dc-bd72-dc94fb7bd479
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 1%
@@ -40,7 +42,7 @@ Esistono quattro tipi di collegamenti:
 
 * **[!UICONTROL Define a collection]**: consente di definire un collegamento con cardinalità 1-N tra le tabelle.
 * **[!UICONTROL Define a link whose target is still available]**: consente di definire un collegamento con cardinalità 1-1 tra le tabelle. Le condizioni di join devono essere definite da un singolo record nella tabella di destinazione.
-* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**: consente di definire un collegamento con cardinalità 0-1 tra le tabelle. La condizione di unione deve essere definita da 0 o 1 (max) nella tabella di destinazione.
+* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**: consente di definire un collegamento con cardinalità 0-1 tra le tabelle. La condizione di join deve essere definita da un record 0 o 1 (max.) nella tabella di destinazione.
 
   Questa opzione è configurata nella scheda **[!UICONTROL Simple Join]** a cui è possibile accedere tramite il collegamento **[!UICONTROL Edit additional data]** dell&#39;attività **[!UICONTROL Enrichment]**.
 

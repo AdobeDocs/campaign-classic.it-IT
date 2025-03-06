@@ -3,8 +3,10 @@ product: campaign
 title: Dividi
 description: Ulteriori informazioni sull’attività Dividi flusso di lavoro
 feature: Workflows, Targeting Activity
+hide: true
+hidefromtoc: true
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '1971'
 ht-degree: 3%
@@ -212,7 +214,7 @@ Selezionare l&#39;opzione **[!UICONTROL Generate complement]** se si desidera sf
 
 Affinché questa opzione funzioni correttamente, i dati in entrata devono avere una chiave primaria.
 
-Se, ad esempio, i dati vengono letti direttamente da un database esterno come Netezza (che non supporta la nozione di indice) tramite un&#39;attività **[!UICONTROL Data loading (RDBMS)]**, il complemento generato dall&#39;attività **[!UICONTROL Split]** non sarà corretto.
+Se ad esempio i dati vengono letti direttamente da un database esterno come Netezza (che non supporta la nozione di indice) tramite un&#39;attività **[!UICONTROL Data loading (RDBMS)]**, il complemento generato dall&#39;attività **[!UICONTROL Split]** non sarà corretto.
 
 Per evitare questo problema, è possibile trascinare un&#39;attività **[!UICONTROL Enrichment]** immediatamente prima dell&#39;attività **[!UICONTROL Split]**. Nell&#39;attività **[!UICONTROL Enrichment]**, controllare **[!UICONTROL Keep all additional data from the main set]** e specificare nei dati aggiuntivi le colonne che si desidera utilizzare per configurare i filtri dell&#39;attività **[!UICONTROL Split]**. I dati della transizione in entrata dell&#39;attività **[!UICONTROL Split]** vengono quindi memorizzati localmente in una tabella temporanea sul server Adobe Campaign e il complemento può essere generato correttamente.
 

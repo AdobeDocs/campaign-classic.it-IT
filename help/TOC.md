@@ -6,10 +6,10 @@ title: Guida di Campaign Classic v7
 user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 446062946b64c9a4d065b6a56d263914cbe628f8
-workflow-type: ht
-source-wordcount: '2562'
-ht-degree: 100%
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+workflow-type: tm+mt
+source-wordcount: '2571'
+ht-degree: 99%
 
 ---
 
@@ -238,8 +238,10 @@ ht-degree: 100%
       + [Arricchire il contenuto](delivery/using/enriching-content.md)
       + [Automatizzare tramite flussi di lavoro](delivery/using/automating-via-workflows.md)
 + Orchestrare campagne di marketing {#orchestrating-campaigns}
+   + [Informazioni sulle campagne di marketing](campaign/using/about-marketing-campaigns.md)
+   + [Informazioni sull’ottimizzazione di Campaign](campaign-opt/using/about-campaign-optimization.md)
    + Informazioni sulle campagne di marketing {#about-marketing-campaigns}
-      + [Progettare campagne di marketing](campaign/using/designing-marketing-campaigns.md)
+      + [Progettazione di campagne di marketing](campaign/using/designing-marketing-campaigns.md)
       + [Accedere alle campagne di marketing](campaign/using/accessing-marketing-campaigns.md)
    + Orchestrare le campagne {#orchestrate-campaigns}
       + [Introduzione alle campagne di marketing](campaign/using/setting-up-marketing-campaigns.md)
@@ -250,14 +252,14 @@ ht-degree: 100%
       + [Impostare e gestire le approvazioni](campaign/using/marketing-campaign-approval.md)
       + [Monitorare le campagne](campaign/using/marketing-campaign-monitoring.md)
       + [Fornitori, scorte e budget](campaign/using/providers-stocks-and-budgets.md)
-   + Ottimizzazione di Campaign{#campaign-optimization}
-      + [Informazioni sulle tipologie di campagne](campaign-opt/using/about-campaign-typologies.md)
-      + [Regole di pressione](campaign-opt/using/pressure-rules.md)
-      + [Regole di coerenza](campaign-opt/using/consistency-rules.md)
-      + [Regole di controllo](campaign-opt/using/control-rules.md)
-      + [Regole di filtro](campaign-opt/using/filtering-rules.md)
-      + [Applicare le regole](campaign-opt/using/applying-rules.md)
-      + [Simulazioni delle campagne](campaign-opt/using/campaign-simulations.md)
+      + Ottimizzazione di Campaign{#campaign-optimization}
+         + [Informazioni sulle tipologie di campagne](campaign-opt/using/about-campaign-typologies.md)
+         + [Regole di pressione](campaign-opt/using/pressure-rules.md)
+         + [Regole di coerenza](campaign-opt/using/consistency-rules.md)
+         + [Regole di controllo](campaign-opt/using/control-rules.md)
+         + [Regole di filtro](campaign-opt/using/filtering-rules.md)
+         + [Applicare le regole](campaign-opt/using/applying-rules.md)
+         + [Simulazioni delle campagne](campaign-opt/using/campaign-simulations.md)
 + Gestione delle risorse marketing {#mrm}
    + [Informazioni sulla gestione delle risorse di marketing](mrm/using/about-marketing-resource-management.md)
    + [Creare e gestire le attività](mrm/using/creating-and-managing-tasks.md)
@@ -391,6 +393,7 @@ ht-degree: 100%
       + [Sincronizzare le applicazioni web](integrations/using/synchronizing-web-applications.md)
       + [Risolvere i problemi in [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
 + Automatizzare con i flussi di lavoro {#automating-with-workflows}
+   + [Informazioni sull’automazione dei flussi di lavoro](workflow/using/about-workflow-automation.md)
    + Introduzione ai flussi di lavoro {#introduction}
       + [Informazioni sui flussi di lavoro](workflow/using/about-workflows.md)
       + [Informazioni sulle attività](workflow/using/about-activities.md)

@@ -3,8 +3,10 @@ product: campaign
 title: Inviare un rapporto a un elenco
 description: Scopri come inviare un rapporto a un elenco con un flusso di lavoro
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 1%
@@ -23,7 +25,7 @@ I passaggi principali di implementazione per questo caso d’uso sono:
 
 * Creazione di un elenco di destinatari che riceveranno la consegna (vedere: [Passaggio 1: Creazione dell&#39;elenco dei destinatari](#step-1--creating-the-recipient-list)).
 * Creazione di un modello di consegna che ti consentirà di generare una nuova consegna ogni volta che viene eseguito il flusso di lavoro (consulta: [Passaggio 2: Creazione del modello di consegna](#step-2--creating-the-delivery-template)).
-* Creazione di un flusso di lavoro che ti consentirà di generare il rapporto in formato PDF e di inviarlo all&#39;elenco dei destinatari (consulta: [Passaggio 3: Creazione del flusso di lavoro](#step-3--creating-the-workflow)).
+* Creazione di un flusso di lavoro che ti consentirà di generare il report in formato PDF e di inviarlo all&#39;elenco dei destinatari (consulta: [Passaggio 3: Creazione del flusso di lavoro](#step-3--creating-the-workflow)).
 
 ## Passaggio 1: creazione dell’elenco dei destinatari {#step-1--creating-the-recipient-list}
 

@@ -3,8 +3,10 @@ product: campaign
 title: Raccolta file
 description: Ulteriori informazioni sull'attività del flusso di lavoro dell'agente di raccolta file
 feature: Workflows, Data Management
+hide: true
+hidefromtoc: true
 exl-id: bbec389e-c2ba-4b23-847f-b01dca6b8d5a
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%
@@ -21,7 +23,7 @@ Per impostazione predefinita, l&#39;agente di raccolta file è un&#39;attività 
 
 I file devono trovarsi nel server in cui viene eseguito il modulo wfserver responsabile del flusso di lavoro. Se in una singola istanza vengono distribuiti più moduli wfserver, è necessario specificare l&#39;affinità delle attività che utilizzano questi file o l&#39;affinità complessiva del flusso di lavoro.
 
-## Properties {#properties}
+## Proprietà {#properties}
 
 La prima scheda dell&#39;attività **[!UICONTROL File collector]** consente di selezionare la directory di origine e, se necessario, di filtrare i file raccolti. Le altre schede sono dettagliate in [E-mail in entrata](inbound-emails.md) (**[!UICONTROL Schedule]** e **[!UICONTROL Expiry]** schede).
 

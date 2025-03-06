@@ -3,8 +3,10 @@ product: campaign
 title: Best practice per i flussi di lavoro
 description: Scopri le best practice per i flussi di lavoro di Campaign
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '1381'
 ht-degree: 11%
@@ -19,7 +21,7 @@ ht-degree: 11%
 
 Di seguito sono elencate le linee guida generali sull’ottimizzazione delle prestazioni di Campaign, incluse le best practice da applicare ai flussi di lavoro.
 
-Le linee guida per la risoluzione dei problemi relativi all&#39;esecuzione dei flussi di lavoro sono disponibili anche nella [Campaign Classic v7 Production Guide](../../production/using/workflow-execution.md).
+Le linee guida per la risoluzione dei problemi relativi all&#39;esecuzione dei flussi di lavoro sono disponibili anche nella [Guida alla produzione di Campaign Classic v7](../../production/using/workflow-execution.md).
 
 ### Registri {#logs}
 

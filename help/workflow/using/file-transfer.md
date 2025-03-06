@@ -3,8 +3,10 @@ product: campaign
 title: Trasferimento file
 description: Ulteriori informazioni sull’attività del flusso di lavoro Trasferimento file
 feature: Workflows, Data Management
+hide: true
+hidefromtoc: true
 exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 1%
@@ -22,7 +24,7 @@ Con la connessione S3, Azure Blob Storage o SFTP, puoi anche importare i dati de
 >
 >Le best practice e la risoluzione dei problemi relativi all&#39;utilizzo del server SFTP sono descritte in dettaglio [in questa pagina](../../platform/using/sftp-server-usage.md).
 
-## Properties {#properties}
+## Proprietà {#properties}
 
 Utilizzare l&#39;elenco a discesa del campo **[!UICONTROL Action]** per selezionare l&#39;azione dell&#39;attività.
 
