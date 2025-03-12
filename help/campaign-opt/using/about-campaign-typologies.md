@@ -7,10 +7,10 @@ feature: Typology Rules, Campaigns
 hide: true
 hidefromtoc: true
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: dd6bcb16fe41b6a3f1e3f5aaf2f753b29ad4bc1d
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 16%
+source-wordcount: '104'
+ht-degree: 50%
 
 ---
 
@@ -20,66 +20,71 @@ Ottimizzazione delle campagne è il modulo di Adobe Campaign che consente di con
 
 ![](assets/do-not-localize/how-to-video.png) [Guarda il video su questa funzione](#typologies-video)
 
+A seconda dell’offerta, è possibile includere l’ottimizzazione di Campaign o un componente aggiuntivo. Controlla il contratto di licenza.
+
 >[!NOTE]
 >
->A seconda dell’offerta, è possibile includere l’ottimizzazione di Campaign o un componente aggiuntivo. Controlla il contratto di licenza.
+>Per ulteriori informazioni sull&#39;ottimizzazione di Campaign per Adobe Campaign e su come utilizzarla, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/campaign-typologies){target=_blank}.
 
-## Regole di tipologia {#typology-rules}
+<!--
 
-Con Adobe Campaign puoi progettare e applicare quattro tipi di regole di tipologia:
+## Typology rules {#typology-rules}
 
-* **Regole di filtro** che ti consentono di escludere parte della destinazione in base a criteri. Per ulteriori informazioni, consulta [Regole di filtro](filtering-rules.md).
-* **Regole di pressione** che consentono di controllare l&#39;eccesso di marketing. Per ulteriori informazioni, consulta [Regole di pressione](pressure-rules.md).
-* **Regole di capacità** che consentono di limitare i carichi per garantire condizioni di elaborazione ottimali. Per ulteriori informazioni, consulta [Controllo della capacità](consistency-rules.md#controlling-capacity).
-* **Regole di controllo** che consentono di verificare la validità dei messaggi prima che vengano inviati. Per ulteriori informazioni, consulta [Regole di controllo](control-rules.md).
+With Adobe Campaign you can design and apply four types of typology rules:
 
-Una volta create, le regole di tipologia sono raggruppate in tipologie di campagne a cui si fa riferimento nelle consegne. Vedi [Applicazione delle tipologie](#applying-typologies).
+* **Filtering** rules which let you exclude part of the target based on criteria. For more on this, refer to [Filtering rules](filtering-rules.md).
+* **Pressure** rules which let you control marketing fatigue. For more on this, refer to [Pressure rules](pressure-rules.md).
+* **Capacity** rules which let you limit loads to guarantee optimal processing conditions. For more on this, refer to [Controlling capacity](consistency-rules.md#controlling-capacity).
+* **Control** rules which let you check the validity of messages before they are sent. For more on this, refer to [Control rules](control-rules.md).
 
-## Tipologie {#typologies}
+Once they have been created, typology rules are grouped in campaign typologies which are referenced in deliveries. See [Applying typologies](#applying-typologies).
 
-Una tipologia di campagna può contenere diverse [regole di tipologia](#typology-rules), ma una consegna può fare riferimento a una sola tipologia.
+## Typologies {#typologies}
 
-La scheda **[!UICONTROL Rules]** consente di aggiungere, eliminare o visualizzare le regole di tipologia da applicare.
+A campaign typology can contain several [typology rules](#typology-rules), but a delivery can only reference one typology.
+
+The **[!UICONTROL Rules]** tab lets you add, delete or view the typology rules to apply.
 
 ![](assets/campaign_opt_rules_tab.png)
 
-## Applicazione delle tipologie {#applying-typologies}
+## Applying typologies {#applying-typologies}
 
-Di seguito sono elencati i passaggi per creare e applicare una tipologia alle consegne:
+Steps to create and apply a typology to your deliveries are listed below:
 
-1. Creare regole di tipologia.
+1. Create typology rules.
 
-   Regole di tipologia trovate nel nodo **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]**.
+   Typology rules are found in the **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]** node.
 
-   Nelle sezioni seguenti sono descritte le diverse regole disponibili in Campaign: [regole di pressione di vendita](pressure-rules.md), [regole di capacità](consistency-rules.md#controlling-capacity), [regole di controllo](control-rules.md) e [regole di filtro](filtering-rules.md).
+   Different rules available in Campaign are described in the following sections: [sales pressure rules](pressure-rules.md), [capacity rules](consistency-rules.md#controlling-capacity), [control rules](control-rules.md) and [filtering rules](filtering-rules.md).
 
-1. Crea una tipologia e fai riferimento alle regole create al suo interno.
+1. Create a typology and reference the rules you created into it.
 
-   Le tipologie sono accessibili tramite il nodo **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]**.
+   Typologies are accessed via the **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]** node. 
 
-1. Configura la consegna in modo da utilizzare la tipologia creata. Per ulteriori informazioni al riguardo, consulta [questa sezione](applying-rules.md#applying-a-typology-to-a-delivery).
-1. Puoi testare e controllare il comportamento tramite simulazioni di campagne. Per ulteriori informazioni sulle simulazioni delle campagne, consulta [questa sezione](campaign-simulations.md).
+1. Configure your delivery to use the typology you created. For more on this, refer to [this section](applying-rules.md#applying-a-typology-to-a-delivery).
+1. Test and control the behavior through campaign simulations. For more on campaign simulations, refer to [this section](campaign-simulations.md).
 
-Durante la preparazione della consegna, i destinatari vengono esclusi quando viene soddisfatto il criterio. Puoi controllare i registri per monitorare le esclusioni. Casi d&#39;uso di esempio sulle regole di tipologia della pressione sono disponibili in [questa pagina](pressure-rules.md#use-cases-on-pressure-rules).
+During delivery preparation, recipients are excluded when criterion is met. You can check logs to monitor exclusions. Sample use cases on pressure typology rules are available in [this page](pressure-rules.md#use-cases-on-pressure-rules).
 
-## Video tutorial {#typologies-video}
+## Tutorial videos {#typologies-video}
 
-### Come impostare la gestione dell’eccesso utilizzando le regole di tipologia
+### How to set up fatigue management using typology rules
 
-Questo video spiega come implementare la gestione dell’eccesso in Adobe Campaign sfruttando le regole di tipologia.
+This video explains how to implement fatigue management in Adobe Campaign by leveraging typology rules.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25090?quality=12)
 
-### Come impostare la gestione dell’affaticamento utilizzando filtri predefiniti
+### How to set up fatigue management using predefined filters
 
-La gestione dell’eccesso controlla la frequenza e la quantità di messaggi per evitare un’eccessiva sollecitazione dei destinatari. Se nell’istanza della campagna non è presente il modulo di ottimizzazione, puoi configurare un filtro predefinito che filtrerà la popolazione target in base al numero di messaggi ricevuti
-Questo video spiega come implementare la gestione dell’eccesso in Adobe Campaign Classic utilizzando i filtri.
+Fatigue management controls frequency and quantity of messaging to avoid over-solicitation of recipients. If you do not have the campaign optimization module in your campaign instance, you may configure a predefined filter that will filter the target population by the number of messages received
+This video explains how to implement fatigue management in Adobe Campaign Classic by using filters.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
 
-Ulteriori video dimostrativi di Campaign sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
+Additional Campaign how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 
-**Argomento correlato**
+**Related topic**
 
-* [Introduzione alle tipologie e alla gestione dell’eccesso](pressure-rules.md)
+* [Get started with typologies and fatigue management](pressure-rules.md)
 
+-->

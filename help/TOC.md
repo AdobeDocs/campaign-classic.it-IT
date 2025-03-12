@@ -6,7 +6,7 @@ title: Guida di Campaign Classic v7
 user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: dd6bcb16fe41b6a3f1e3f5aaf2f753b29ad4bc1d
 workflow-type: tm+mt
 source-wordcount: '2571'
 ht-degree: 99%
@@ -237,8 +237,8 @@ ht-degree: 99%
       + [Utilizzare un modello di contenuto](delivery/using/using-a-content-template.md)
       + [Arricchire il contenuto](delivery/using/enriching-content.md)
       + [Automatizzare tramite flussi di lavoro](delivery/using/automating-via-workflows.md)
++ [Organizzazione di campagne di marketing](campaign/using/about-marketing-campaigns.md)
 + Orchestrare campagne di marketing {#orchestrating-campaigns}
-   + [Informazioni sulle campagne di marketing](campaign/using/about-marketing-campaigns.md)
    + [Informazioni sull’ottimizzazione di Campaign](campaign-opt/using/about-campaign-optimization.md)
    + Informazioni sulle campagne di marketing {#about-marketing-campaigns}
       + [Progettazione di campagne di marketing](campaign/using/designing-marketing-campaigns.md)
@@ -392,8 +392,8 @@ ht-degree: 99%
       + [Sincronizzare i tipi di pubblico](integrations/using/synchronizing-audiences.md)
       + [Sincronizzare le applicazioni web](integrations/using/synchronizing-web-applications.md)
       + [Risolvere i problemi in [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
++ [Automatizzare con i flussi di lavoro](workflow/using/about-workflow-automation.md)
 + Automatizzare con i flussi di lavoro {#automating-with-workflows}
-   + [Informazioni sull’automazione dei flussi di lavoro](workflow/using/about-workflow-automation.md)
    + Introduzione ai flussi di lavoro {#introduction}
       + [Informazioni sui flussi di lavoro](workflow/using/about-workflows.md)
       + [Informazioni sulle attività](workflow/using/about-activities.md)
