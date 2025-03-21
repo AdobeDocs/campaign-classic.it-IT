@@ -6,60 +6,52 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: ab38c7fd45513c6f7a8ecf7ef8601f0b5a4b5757
-workflow-type: ht
-source-wordcount: '424'
-ht-degree: 100%
+source-git-commit: bf45c8bcdd41e614f9be09bc0fd6385707159841
+workflow-type: tm+mt
+source-wordcount: '194'
+ht-degree: 35%
 
 ---
 
 # Ultima versione {#latest-release}
 
-In questa pagina sono elencate nuove funzionalità, miglioramenti e correzioni introdotti con l’**ultima versione di Campaign v7**. Ogni nuova build viene fornita con uno stato che viene materializzato da un colore. Ulteriori informazioni sugli stati della build di Campaign Classic v7 in [questa pagina](rn-overview.md).
+In questa pagina sono elencate nuove funzionalità, miglioramenti e correzioni introdotti con l’**ultima versione di Campaign Classic v7**. Ogni nuova build viene fornita con uno stato che viene materializzato da un colore. Ulteriori informazioni sugli stati della build di Campaign Classic v7 in [questa pagina](rn-overview.md).
 
-## Versione 7.4.1 - Build 9383 {#release-7-4-1}
+## Versione 7.4.2 - Build 9390 {#release-7-4-2}
 
-[!BADGE Disponibilità generale]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Disponibilità generale"}
+[!BADGE Disponibilità limitata]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Disponibilità limitata"}
 
-_18 giugno 2024_
+_sabato 21 marzo 2025_
 
-### Modifiche e miglioramenti {#release-7-4-1-changes}
+>[!AVAILABILITY]
+>
+>Questa versione è in **Disponibilità limitata** (LA). È limitato solo agli utenti di Hosted/Managed Services. Questa versione sarà presto disponibile per i clienti ibridi e on-premise.
 
-* Poiché le credenziali dell’account di servizio (JWT) sono state dichiarate obsolete da Adobe, le integrazioni in uscita di Campaign con le soluzioni e le app Adobe ora si basano sulle credenziali OAuth server-to-server. Se hai implementato integrazioni in uscita, ad esempio l’integrazione Campaign-Analytics o l’integrazione Experience Cloud Triggers, devi aggiornare l’ambiente Campaign alla versione v7.4.1 e migrare l’account tecnico a OAuth prima del 27 gennaio 2025. [Ulteriori informazioni](../../integrations/using/oauth-technical-account.md)
+<!--
+### Compatibility updates {#comp-7-4-2}
 
-* Dopo aver [migrato gli operatori tecnici di Campaign a Developer Console](../../technotes/using/ims-migration.md) e aver effettuato la [transizione a IMS per l’autenticazione dell’utente finale](../../technotes/using/migrate-users-to-ims.md), puoi abilitare l’interfaccia utente e le restrizioni API per rimuovere le opzioni e le funzionalità specifiche dell’autenticazione nativa. [Ulteriori informazioni](../../technotes/using/impact-ims-migration.md)
+This release comes with the following compatibility updates:
 
+* JQuery library update: fixes multiple UI issues (reports, web apps)
+* PostgreSQL 15 and 16
 
-### Aggiornamenti della compatibilità {#release-7-4-1-compat}
+-->
 
-La [matrice di compatibilità di Adobe Campaign](compatibility-matrix.md) è stata aggiornata con le modifiche in arrivo con questa nuova versione ed elencate di seguito.
+### Miglioramenti di sicurezza {#security-7-4-2}
 
-* Adobe Campaign è ora compatibile con **Microsoft Server 2022** come sistema operativo.
-* Adobe Campaign è ora compatibile con **RHEL 9** come sistema operativo.
+Questa versione include diverse correzioni di sicurezza.
 
-  >[!CAUTION]
-  >
-  >In qualità di cliente on-premise che utilizza RHEL 9, se desideri utilizzare l’autenticazione DKIM (Domain Keys Identified Mail) devi aggiornare le impostazioni di sistema come descritto in [questa sezione](../../installation/using/installing-packages-with-linux.md#rhel-9-update).
+La connessione con le soluzioni e le app Adobe tramite l&#39;account esterno **[!UICONTROL Adobe Experience Cloud]** è stata aggiornata per rafforzare la sicurezza.
 
+### Correzioni {#release-7-4-2-fixes}
 
-* Adobe Campaign è ora compatibile con **Microsoft SQL Server 2022** e **Oracle 23c** come sistemi di gestione del database relazionale e in Federated Data Access (FDA).
+Questa versione include le seguenti correzioni principali:
 
-* Adobe Campaign ora richiede almeno un Java Development Kit (JDK) 11. In Windows, JRE deve essere disponibile come descritto in [questa sezione](../../installation/using/application-server.md#jdk).
+* Correzioni di connessioni TLS/SMPP
+* Correzioni di BigQuery Google
+* Correzioni di MTA
 
-* L’SDK Campaign (Neolane) per applicazioni mobili è ora obsoleto. Ora devi passare ad Adobe Experience Platform SDK. [Ulteriori informazioni](deprecated-features.md).
+In questa versione sono stati risolti anche i seguenti problemi:
 
-  Nel frattempo, per garantire la continuità del servizio, Campaign v7.4 include:
-
-   * un nuovo Campaign SDK 1.0.27 per iOS, compatibile con iOS 16 e 17 e i più recenti [requisiti della richiesta di accesso a dati personali per Apple iOS](https://developer.apple.com/news/?id=r1henawx){target="_blank"}.
-   * un nuovo SDK Campaign per Android 14.
-
-### Altre modifiche {#release-7-4-1-other}
-
-A partire dalla versione 7.4.1, le librerie XML per i pacchetti RPM Linux non sono più incluse in Campaign. In qualità di cliente on-premise o ibrido, l’amministratore deve installare queste librerie. [Ulteriori informazioni](../../installation/using/installing-packages-with-linux.md)
-
-### Patch {#release-7-4-1-patches}
-
-Questa versione include le seguenti correzioni:
-
-NEO-74754, NEO-73174, NEO-72504, NEO-71534, NEO-71473, NEO-70195, NEO-69663, NEO-69651, NEO-67620, NEO-67235, NEO-66797, NEO-64680, NEO-63706, NEO-63657, NEO-62964, NEO-62575, NEO-58734, NEO-40531, NEO-36189, NEO-29592
+NEO-47269, NEO-59059, NEO-62455, NEO-65774, NEO-66462, NEO-66989, NEO-77898, NEO-78843, NEO-79373, NEO-79598, NEO-80145, NEO-80245, NEO-80434, NEO-80683, NEO-81222, NEO-81433, NEO-81864, NEO-82351, NEO-82781, NEO-82838 82923 83252 83809 83826 84024 84553 85150, NEO-, NEO-, NEO-, NEO-, NEO-, NEO-, NEO-, NEO-
 
