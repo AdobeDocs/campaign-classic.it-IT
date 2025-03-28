@@ -7,9 +7,9 @@ user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: dd6bcb16fe41b6a3f1e3f5aaf2f753b29ad4bc1d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2571'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -237,7 +237,7 @@ ht-degree: 99%
       + [Utilizzare un modello di contenuto](delivery/using/using-a-content-template.md)
       + [Arricchire il contenuto](delivery/using/enriching-content.md)
       + [Automatizzare tramite flussi di lavoro](delivery/using/automating-via-workflows.md)
-+ [Organizzazione di campagne di marketing](campaign/using/about-marketing-campaigns.md)
++ [Orchestrare campagne di marketing](campaign/using/about-marketing-campaigns.md)
 + Orchestrare campagne di marketing {#orchestrating-campaigns}
    + [Informazioni sull’ottimizzazione di Campaign](campaign-opt/using/about-campaign-optimization.md)
    + Informazioni sulle campagne di marketing {#about-marketing-campaigns}
@@ -285,7 +285,7 @@ ht-degree: 99%
       + [Strumenti di reporting](reporting/using/about-adobe-campaign-reporting-tools.md)
       + [Best practice per il reporting](reporting/using/best-practices.md)
    + Accedere ai rapporti incorporati {#accessing-built-in-reports}
-      + [Informazioni sui rapporti incorporati ](reporting/using/about-campaign-built-in-reports.md)
+      + [Informazioni sui rapporti incorporati](reporting/using/about-campaign-built-in-reports.md)
       + [Elenco dei rapporti](reporting/using/list-of-reports.md)
    + Report sulle consegne{#reports-on-deliveries}
       + [Informazioni sui report sulle consegne](reporting/using/reports-on-deliveries.md)
