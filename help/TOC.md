@@ -6,9 +6,9 @@ title: Guida di Campaign Classic v7
 user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: dd6bcb16fe41b6a3f1e3f5aaf2f753b29ad4bc1d
-workflow-type: ht
-source-wordcount: '2571'
+source-git-commit: 3daf88e14792bfc675cd4cbec6571377c9aa9392
+workflow-type: tm+mt
+source-wordcount: '2568'
 ht-degree: 100%
 
 ---
@@ -238,20 +238,19 @@ ht-degree: 100%
       + [Arricchire il contenuto](delivery/using/enriching-content.md)
       + [Automatizzare tramite flussi di lavoro](delivery/using/automating-via-workflows.md)
 + [Orchestrare campagne di marketing](campaign/using/about-marketing-campaigns.md)
-+ Orchestrare campagne di marketing {#orchestrating-campaigns}
    + [Informazioni sull’ottimizzazione di Campaign](campaign-opt/using/about-campaign-optimization.md)
-   + Informazioni sulle campagne di marketing {#about-marketing-campaigns}
-      + [Progettazione di campagne di marketing](campaign/using/designing-marketing-campaigns.md)
-      + [Accedere alle campagne di marketing](campaign/using/accessing-marketing-campaigns.md)
-   + Orchestrare le campagne {#orchestrate-campaigns}
-      + [Introduzione alle campagne di marketing](campaign/using/setting-up-marketing-campaigns.md)
-      + [Creare e configurare i modelli](campaign/using/marketing-campaign-templates.md)
-      + [Aggiungere consegne](campaign/using/marketing-campaign-deliveries.md)
-      + [Selezionare il pubblico](campaign/using/marketing-campaign-target.md)
-      + [Gestire documenti e risorse](campaign/using/marketing-campaign-assets.md)
-      + [Impostare e gestire le approvazioni](campaign/using/marketing-campaign-approval.md)
-      + [Monitorare le campagne](campaign/using/marketing-campaign-monitoring.md)
-      + [Fornitori, scorte e budget](campaign/using/providers-stocks-and-budgets.md)
+      + Informazioni sulle campagne di marketing {#about-marketing-campaigns}
+         + [Progettazione di campagne di marketing](campaign/using/designing-marketing-campaigns.md)
+         + [Accedere alle campagne di marketing](campaign/using/accessing-marketing-campaigns.md)
+      + Orchestrare le campagne {#orchestrate-campaigns}
+         + [Introduzione alle campagne di marketing](campaign/using/setting-up-marketing-campaigns.md)
+         + [Creare e configurare i modelli](campaign/using/marketing-campaign-templates.md)
+         + [Aggiungere consegne](campaign/using/marketing-campaign-deliveries.md)
+         + [Selezionare il pubblico](campaign/using/marketing-campaign-target.md)
+         + [Gestire documenti e risorse](campaign/using/marketing-campaign-assets.md)
+         + [Impostare e gestire le approvazioni](campaign/using/marketing-campaign-approval.md)
+         + [Monitorare le campagne](campaign/using/marketing-campaign-monitoring.md)
+         + [Fornitori, scorte e budget](campaign/using/providers-stocks-and-budgets.md)
       + Ottimizzazione di Campaign{#campaign-optimization}
          + [Informazioni sulle tipologie di campagne](campaign-opt/using/about-campaign-typologies.md)
          + [Regole di pressione](campaign-opt/using/pressure-rules.md)
