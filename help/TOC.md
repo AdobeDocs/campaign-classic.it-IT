@@ -6,9 +6,9 @@ title: Guida di Campaign Classic v7
 user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 1a23e55190ae26edd7193838600a803137f13201
+source-git-commit: 98bc76dce83abcd3ce39648d554ee92841fd7327
 workflow-type: tm+mt
-source-wordcount: '2571'
+source-wordcount: '2574'
 ht-degree: 100%
 
 ---
@@ -237,6 +237,7 @@ ht-degree: 100%
       + [Utilizzare un modello di contenuto](delivery/using/using-a-content-template.md)
       + [Arricchire il contenuto](delivery/using/enriching-content.md)
       + [Automatizzare tramite flussi di lavoro](delivery/using/automating-via-workflows.md)
++ [Orchestrare campagne di marketing](campaign/using/about-marketing-campaigns.md)
 + Orchestrare campagne di marketing {#orchestrating-campaigns}
    + [Orchestrare campagne di marketing](campaign/using/about-marketing-campaigns.md)
    + [Informazioni sull’ottimizzazione di Campaign](campaign-opt/using/about-campaign-optimization.md)
