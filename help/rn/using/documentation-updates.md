@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
-source-wordcount: '3782'
-ht-degree: 100%
+source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
+workflow-type: tm+mt
+source-wordcount: '3864'
+ht-degree: 97%
 
 ---
 
@@ -18,6 +18,17 @@ ht-degree: 100%
 In questa pagina sono elencate tutte le nuove funzioni e gli aggiornamenti alla documentazione in base al mese e alla versione di Campaign.
 
 Per gli aggiornamenti relativi alla versione, consulta le [Note sulla versione di Adobe Campaign Classic](../../rn/using/latest-release.md).
+
+## 2025
+
+### Marzo 2025 {#march-2025}
+
+Nell’ambito di un’iniziativa di promozione di Campaign v8, abbiamo iniziato a riorganizzare il set di documentazione di Campaign Classic. Nella versione 7.4.2, verrà pubblicata la prima tappa. Le seguenti guide sono state sostituite da pagine di destinazione con collegamenti alla documentazione di v8:
+
+* Orchestrare campagne di marketing: questa guida è stata sostituita con una [pagina di destinazione](../../campaign/using/about-marketing-campaigns.md).
+* Gestione delle risorse marketing: questa guida è stata rimossa.
+* Marketing distribuito: questa guida è stata rimossa.
+* Automatizza con flussi di lavoro: questa guida è stata sostituita con una [pagina di destinazione](../../workflow/using/about-workflow-automation.md)
 
 ## 2024
 
@@ -238,7 +249,7 @@ La procedura di installazione della console client di Campaign è stata migliora
 
 La [sezione Introduzione agli SMS](../../delivery/using/sms-channel.md) è stata riorganizzata e migliorata. Ora puoi imparare a [configurare il canale SMS](../../delivery/using/sms-set-up.md), [creare un SMS](../../delivery/using/sms-create.md), [inviare e tracciare gli SMS](../../delivery/using/sms-send.md) nelle sezioni dedicate.
 
-La pagina “Opzioni di aiuto e supporto” per Campaign Standard è stata integrata nella documentazione di base. [Leggi tutto](../../support.md)
+La pagina “Opzioni di aiuto e supporto” per Campaign Classic è stata integrata nella documentazione di base. [Leggi tutto](../../support.md)
 
 È stata aggiunta una nuova sezione con best practice e controlli da eseguire in materia di sicurezza e privacy. [Leggi tutto](../../installation/using/get-started-security-privacy.md)
 
@@ -501,7 +512,7 @@ Le domande frequenti sono state aggiornate con suggerimenti su come eseguire la 
 
 Le best practice relative ai modelli dati sono state migliorate, con informazioni aggiuntive sugli indici. [Leggi tutto](../../configuration/using/data-model-best-practices.md#indexes)
 
-La sezione che descrive il modello dati integrato di Adobe Campaign è stata aggiornata con ulteriori dettagli su ogni tabella. [Leggi tutto](../../configuration/using/data-model-description.md)
+La sezione che descrive il modello dati incorporato di Adobe Campaign è stata aggiornata con ulteriori dettagli su ogni tabella. [Leggi tutto](../../configuration/using/data-model-description.md)
 
 I casi di utilizzo dei flussi di lavoro sono stati aggiornati e riorganizzati in sezioni tematiche. [Leggi tutto](../../workflow/using/about-workflow-use-cases.md)
 
@@ -513,7 +524,7 @@ L’articolo sull’MTA avanzato di Adobe Campaign è stato aggiornato. Ora si a
 
 Le best practice relative ai modelli dati sono state aggiornate con nuove sezioni, tra cui [Sequenze](../../configuration/using/data-model-best-practices.md#sequences), [Prestazioni](../../configuration/using/data-model-best-practices.md#performance) e [Tabelle di grandi dimensioni](../../configuration/using/data-model-best-practices.md#large-tables). [Leggi tutto](../../configuration/using/data-model-best-practices.md)
 
-È ora disponibile una nuova sezione che descrive il modello dati integrato di Adobe Campaign e l’interazione tra le tabelle. [Leggi tutto](../../configuration/using/data-model-description.md)
+È ora disponibile una nuova sezione che descrive il modello dati incorporato di Adobe Campaign e l’interazione tra le tabelle. [Leggi tutto](../../configuration/using/data-model-description.md)
 
 Nella home page della documentazione sono stati aggiunti altri collegamenti chiave. [Leggi tutto](../../campaign-classic-home.md)
 

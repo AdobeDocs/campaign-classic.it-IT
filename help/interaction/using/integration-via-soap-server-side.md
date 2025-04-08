@@ -7,9 +7,9 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: 3eaef689-44fa-41b3-ade8-9fe447e165ec
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '325'
 ht-degree: 3%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 3%
 
 
 
-I servizi web dell’SOAP forniti per la gestione delle offerte sono diversi da quelli solitamente utilizzati in Adobe Campaign. È possibile accedervi tramite l’URL di interazione descritto nella sezione precedente e presentare o aggiornare le offerte per un determinato contatto.
+I servizi web di SOAP forniti per la gestione delle offerte sono diversi da quelli solitamente utilizzati in Adobe Campaign. È possibile accedervi tramite l’URL di interazione descritto nella sezione precedente e presentare o aggiornare le offerte per un determinato contatto.
 
-## Proposta di offerte {#offer-proposition}
+## Proposta di offerta {#offer-proposition}
 
 Per una proposta di offerta tramite SOAP, aggiungi il comando **nms:proposition#Propose** seguito dai seguenti parametri:
 
@@ -37,7 +37,7 @@ Per una proposta di offerta tramite SOAP, aggiungi il comando **nms:proposition#
 >
 >Le impostazioni **targetId** e **maxCount** sono obbligatorie. Le altre sono facoltative.
 
-In risposta alla richiesta, il servizio SOAP restituirà i seguenti parametri:
+In risposta alla query, il servizio SOAP restituirà i seguenti parametri:
 
 * **interfaceId**: ID dell&#39;interazione.
 * **propositions**: elemento XML, contiene l&#39;elenco delle proposte, ciascuna con il proprio ID e la propria rappresentazione HTML.
@@ -52,10 +52,17 @@ Aggiungi il comando **nms:interface#UpdateStatus** all&#39;URL, seguito dai segu
 
 ## Esempio di utilizzo di una chiamata SOAP {#example-using-a-soap-call}
 
-Ecco un esempio di codice per una chiamata SOAP:
+Di seguito è riportato un esempio di codice per una chiamata SOAP.
+
+Ecco un esempio di URL:
+
+```
+http://<urlOfYourJSSP>?env=liveRcp&sp=<nameSpaceOfferSpace>&t=<targetID>
+```
 
 ```
 <%
+  var env = request.getUTF8Parameter("env");
   var space = request.parameters.sp
   var cnx = new HttpSoapConnection(
     "https://" + request.serverName + ":" + request.serverPort + "/interaction/" + env + "/" + space,
@@ -104,7 +111,7 @@ Ecco un esempio di codice per una chiamata SOAP:
       var result = session.Propose(target, count, category, theme, <empty/>)
       var props = result[1]
   %><table><tr><%
-      for each( var propHtml in props.proposition.*.mdSource )
+      for each( var propHtml in props.proposition.*.htmlSource )
       {
         %><td><%=propHtml%></td><%
       }

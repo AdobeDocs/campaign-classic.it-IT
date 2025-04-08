@@ -8,9 +8,9 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: e40331266f34e2d6aa7b7720948d0cf26d4c6009
+source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
 workflow-type: tm+mt
-source-wordcount: '1066'
+source-wordcount: '1075'
 ht-degree: 8%
 
 ---
@@ -37,13 +37,13 @@ Quando gestisci file e dati per un processo di ETL, questi file vengono memorizz
 
 I server SFTP sono progettati per essere spazi di archiviazione temporanei su cui puoi controllare la conservazione e l’eliminazione dei file.
 
-Se non utilizzati o monitorati correttamente, questi spazi possono riempire rapidamente lo spazio fisico disponibile sul server e causare il troncamento dei file nei caricamenti successivi. Una volta saturato lo spazio, l’eliminazione automatica può attivare e cancellare i file meno recenti dall’archiviazione SFTP.
+Se non utilizzati o monitorati correttamente, questi spazi possono riempire rapidamente lo spazio fisico disponibile sul server e causare il troncamento dei file nei caricamenti successivi. Nei server SFTP ospitati da Adobe, i file vengono compressi se l’archiviazione SFTP raggiunge una soglia dell’80%. Il processo è automatico e viene attivato dal sistema di monitoraggio di Adobe.
 
-Per evitare tali problemi, l’Adobe consiglia di seguire le best practice riportate di seguito.
+Per evitare tali problemi, Adobe consiglia di seguire le best practice riportate di seguito.
 
 >[!NOTE]
 >
->* Puoi monitorare l&#39;archiviazione del server SFTP con il Campaign Classic [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}.
+>* Puoi monitorare l&#39;archiviazione del server SFTP con il [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"} di Campaign Classic.
 >
 >* Il Pannello di controllo è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente l&#39;accesso come amministratore sono descritti in [questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel){target="_blank"}.
 >
@@ -66,9 +66,9 @@ Inoltre, quando si specifica in Campaign Classic un percorso per un server SFTP 
 * Se il server SFTP si trova in **Windows**, utilizza sempre un percorso relativo.
 * Se il server STP si trova su **Linux**, utilizzare sempre un percorso relativo alla home (che inizia con &quot;~/&quot;) o un percorso assoluto (che inizia con &quot;/&quot;).
 
-## Problemi di connessione con il server SFTP ospitato da Adobe {#sftp-server-troubleshooting}
+## Problemi di connessione con il server SFTP in hosting su Adobe {#sftp-server-troubleshooting}
 
-Nella sezione seguente sono elencate le informazioni da verificare e fornire al team di supporto Adobe tramite [l&#39;Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"} quando si verificano problemi di connessione con i server SFTP ospitati da Adobe.
+Nella sezione seguente sono elencate le informazioni da verificare e fornire al team di supporto Adobe tramite [l&#39;Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"} in caso di problemi di connessione con server SFTP ospitati da Adobe.
 
 1. Verifica che l’istanza sia in esecuzione. A questo scopo, apri il browser, quindi effettua una chiamata **[!UICONTROL GET]** sull&#39;endpoint **[!UICONTROL /r/test]** dell&#39;istanza:
 
@@ -96,11 +96,11 @@ Nella sezione seguente sono elencate le informazioni da verificare e fornire al 
    myCompany-stage-sftp.neolane.net [AAA.BBB.CCC.D] 22 (ssh) open
    ```
 
-   Se la porta non è aperta, assicurarsi di aprire le connessioni in uscita sul lato, quindi riprovare. Se riscontri ancora problemi di connessione, condividi l&#39;output del comando con il team [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+   Se la porta non è aperta, assicurarsi di aprire le connessioni in uscita sul lato, quindi riprovare. Se riscontri ancora problemi di connessione, condividi l&#39;output del comando con il team [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
-1. Verifica che l’IP pubblico da cui stai tentando di avviare la connessione SFTP sia quello fornito all’Adobe di supporto per il inserisco nell&#39;elenco Consentiti di.
+1. Verifica che l’IP pubblico da cui stai tentando di avviare la connessione SFTP sia quello fornito al supporto Adobe per il inserisco nell&#39;elenco Consentiti di.
 1. Se si utilizza un&#39;autenticazione basata su password, la password potrebbe essere scaduta (le password hanno un periodo di validità di 90 giorni). È pertanto consigliabile utilizzare un&#39;autenticazione basata su chiave (consulta [Best practice per il server SFTP](#sftp-server-best-practices)).
-1. Se utilizzi un&#39;autenticazione basata su chiave, verifica che la chiave utilizzata sia la stessa fornita al team [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per la configurazione dell&#39;istanza.
+1. Se utilizzi un&#39;autenticazione basata su chiave, verifica che la chiave utilizzata sia la stessa fornita al team [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per la configurazione dell&#39;istanza.
 1. Se utilizzi FileZilla o uno strumento FTP equivalente, fornisci i dettagli dei registri di connessione nel ticket di supporto.
 
 ## Errore &quot;Impossibile risolvere il nome host&quot;
@@ -140,7 +140,7 @@ Questo errore indica che il nome di dominio del server FTP non è stato risolto 
 
    1. Vai a Audit del flusso di lavoro e controlla se i registri mostrano l’errore &quot;Impossibile risolvere il nome host&quot;.
 
-1. Se il server SFTP è ospitato da Adobe, verifica se l’IP viene aggiunto al inserisco nell&#39;elenco Consentiti di contattando l’Assistenza clienti.
+1. Se il server SFTP è ospitato da Adobe, verifica se l’IP viene aggiunto al inserisco nell&#39;elenco Consentiti contattando l’Assistenza clienti.
 
    In caso contrario, convalida:
 
