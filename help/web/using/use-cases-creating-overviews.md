@@ -4,8 +4,9 @@ title: 'Casi d’uso: creare panoramiche'
 description: 'Casi d’uso: creare panoramiche'
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Web Apps
+level: Intermediate, Experienced
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 0%
@@ -32,9 +33,9 @@ Nell&#39;esempio seguente verranno create applicazioni Web di tipo panoramica pe
 
    ![](assets/s_ncs_configuration_webapp_create.png)
 
-1. Modifica del titolo della pagina.
+1. Changing the page title.
 
-   Questo titolo verrà visualizzato nell’intestazione della panoramica e nella panoramica dell’applicazione web.
+   This title will appear in the overview header and in the Web application overview.
 
 1. Nelle proprietà dell&#39;applicazione Web, modificare il rendering dell&#39;applicazione selezionando il modello **[!UICONTROL Single-page Web application]**.
 
@@ -81,10 +82,10 @@ In una panoramica, puoi scegliere di accedere ai dati a seconda della loro posiz
    >
    >In questa fase, l’applicazione web non rientra nel suo contesto applicativo, pertanto il filtro non può essere testato sulla cartella.
 
-## Aggiunta di un pulsante per configurare una nuova applicazione Web {#adding-a-button-to-configure-a-new-web-application}
+## Adding a button to configure a new Web application {#adding-a-button-to-configure-a-new-web-application}
 
-1. Posizionare il cursore sull&#39;elemento **[!UICONTROL Page]** e aggiungere un collegamento (**[!UICONTROL Static elements > Link]**).
-1. Modifica l’etichetta del collegamento poiché verrà visualizzata sul pulsante nella panoramica.
+1. Place your cursor on the **[!UICONTROL Page]** element and add a link (**[!UICONTROL Static elements > Link]**).
+1. Modify the link label since it will appear on the button in the overview.
 
    Nel nostro esempio, l&#39;etichetta è **New**.
 
@@ -116,13 +117,13 @@ Quando configuri un elenco nella panoramica, puoi scegliere di visualizzare ulte
 
    ![](assets/s_ncs_configuration_webapp_detail.png)
 
-1. Nella scheda **[!UICONTROL Data]**, aggiungere le colonne **[!UICONTROL Primary key]** , **[!UICONTROL Internal name]** e **[!UICONTROL Description]** e selezionare l&#39;opzione **[!UICONTROL Hidden field]** per ciascuna colonna.
+1. In the **[!UICONTROL Data]** tab, add the **[!UICONTROL Primary key]** , **[!UICONTROL Internal name]** and **[!UICONTROL Description]** column and select the **[!UICONTROL Hidden field]** option for each one.
 
    ![](assets/s_ncs_configuration_webapp_detail002.png)
 
-   In questo modo, queste informazioni saranno visibili solo nei dettagli di ciascuna voce.
+   This way, this information will only be visible in the detail of each entry.
 
-1. Nella scheda **[!UICONTROL Additional detail]**, aggiungi il seguente codice:
+1. In the **[!UICONTROL Additional detail]** tab, add the following code:
 
    ```
    <div class="detailBox">
@@ -157,7 +158,7 @@ Quando configuri un elenco nella panoramica, puoi scegliere di visualizzare ulte
 
 >[!NOTE]
 >
->L&#39;aggiornamento delle librerie JavaScript sul server richiede cinque minuti. È possibile riavviare il server per evitare di attendere questo ritardo.
+>JavaScript libraries take five minutes to refresh on the server. È possibile riavviare il server per evitare di attendere questo ritardo.
 
 ## Filtraggio e aggiornamento dell’elenco {#filtering-and-updating-the-list}
 
@@ -198,13 +199,13 @@ Questi due elementi saranno raggruppati nello stesso contenitore per essere ragg
    * **Espressione:** Chiave esterna del collegamento &#39;Creato da&#39;
    * **Operatore:** è uguale a
    * **Valore:** Variabili (variabili)
-   * **Preso in considerazione se:** &#39;$(var2/@id)&#39;!=&#39;
+   * **Taken into account if:** &#39;$(var2/@id)&#39;!=&#39;&#39;
 
    ![](assets/s_ncs_configuration_webapp_filter002.png)
 
 >[!CAUTION]
 >
->L&#39;utente dell&#39;applicazione Web deve essere un operatore identificato con i diritti Adobe Campaign appropriati per accedere alle informazioni. Questo tipo di configurazione non funzionerà per le applicazioni Web anonime.
+>The Web application user must be an identified operator with the appropriate Adobe Campaign rights to access the information. This type of configuration will not work for anonymous Web applications.
 
 ### Creazione di un collegamento di aggiornamento {#creating-a-refresh-link}
 

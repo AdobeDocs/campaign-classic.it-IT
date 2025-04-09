@@ -4,8 +4,9 @@ title: Configurare l’app mobile iOS in Adobe Campaign
 description: Scopri come configurare l’app mobile per iOS
 feature: Push
 role: User, Developer
+level: Intermediate, Experienced
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 81b47231b027a189bc8b9029b7d48939734d08ed
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 3%
@@ -44,7 +45,7 @@ Il connettore iOS è ora configurato. Puoi iniziare a creare il servizio.
 
 >[!CAUTION]
 >
->L’applicazione deve essere stata configurata per le azioni push PRIMA di qualsiasi integrazione con l’SDK Adobe.
+>L’applicazione deve essere stata configurata per le azioni push PRIMA di qualsiasi integrazione con Adobe SDK.
 >
 >In caso contrario, consultare [questa pagina](https://developer.apple.com/documentation/usernotifications).
 
@@ -84,7 +85,7 @@ Nell&#39;esempio seguente vengono aggiunti **mediaURl** e **mediaExt** per crear
 
    ![](assets/nmac_ios_3.png)
 
-1. La scheda **[!UICONTROL Subscription parameters]** consente di definire il mapping con un&#39;estensione dello schema **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]**.
+1. The **[!UICONTROL Subscription parameters]** tab allows you to define the mapping with an extension of the **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** schema.
 
    >[!NOTE]
    >
@@ -94,11 +95,11 @@ Nell&#39;esempio seguente vengono aggiunti **mediaURl** e **mediaExt** per crear
 
 1. Fare clic su **[!UICONTROL Next]** per avviare la configurazione dell&#39;applicazione di sviluppo.
 
-1. Assicurati che lo stesso **[!UICONTROL Integration key]** sia definito in Adobe Campaign e nel codice dell&#39;applicazione tramite l&#39;SDK. <!--For more on this, refer to [this page](integrating-campaign-sdk-into-the-mobile-application.md).--> Questa chiave di integrazione, specifica per ogni applicazione, consente di collegare l&#39;applicazione mobile alla piattaforma Adobe Campaign.
+1. Assicurati che lo stesso **[!UICONTROL Integration key]** sia definito in Adobe Campaign e nel codice dell&#39;applicazione tramite SDK. <!--For more on this, refer to [this page](integrating-campaign-sdk-into-the-mobile-application.md).--> Questa chiave di integrazione, specifica per ogni applicazione, consente di collegare l&#39;applicazione mobile alla piattaforma Adobe Campaign.
 
    >[!NOTE]
    >
-   > **[!UICONTROL Integration key]** è completamente personalizzabile con valore stringa, ma deve essere esattamente lo stesso specificato nell&#39;SDK.
+   > **[!UICONTROL Integration key]** è completamente personalizzabile con valore stringa, ma deve essere esattamente lo stesso specificato in SDK.
 
 1. Seleziona una delle icone predefinite nel campo **[!UICONTROL Application icon]** per personalizzare l&#39;app mobile nel servizio.
 
@@ -108,13 +109,13 @@ Nell&#39;esempio seguente vengono aggiunti **mediaURl** e **mediaExt** per crear
 
    Sono disponibili due modalità:
 
-   * (Consigliato) **[!UICONTROL Token-based authentication]**: inserisci le impostazioni di connessione APNs **[!UICONTROL Key Id]**, **[!UICONTROL Team Id]** e **[!UICONTROL Bundle Id]**, quindi seleziona il certificato p8 facendo clic su **[!UICONTROL Enter the private key...]**. Per ulteriori informazioni su **[!UICONTROL Token-based authentication]**, consulta la [documentazione di Apple](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
+   * (Consigliato) **[!UICONTROL Token-based authentication]**: inserisci le impostazioni di connessione APNs **[!UICONTROL Key Id]**, **[!UICONTROL Team Id]** e **[!UICONTROL Bundle Id]**, quindi seleziona il certificato p8 facendo clic su **[!UICONTROL Enter the private key...]**. Per ulteriori informazioni su **[!UICONTROL Token-based authentication]**, consulta [Documentazione di Apple](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns).
 
    * **[!UICONTROL Certificate-based authentication]**: fare clic su **[!UICONTROL Enter the certificate...]**, quindi selezionare la chiave p12 e immettere la password fornita dallo sviluppatore dell&#39;app mobile.
 
    >[!NOTE]
    >
-   > L&#39;Adobe consiglia di utilizzare **[!UICONTROL Token-based authentication]** per la configurazione di iOS, in quanto le chiavi di autenticazione P8 sono più recenti e più sicure.
+   > Adobe consiglia di utilizzare **[!UICONTROL Token-based authentication]** per la configurazione di iOS, in quanto le chiavi di autenticazione P8 sono più recenti e più sicure.
 
 1. Utilizza il pulsante **[!UICONTROL Test the connection]** per convalidare la configurazione.
 

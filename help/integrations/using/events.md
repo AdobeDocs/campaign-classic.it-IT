@@ -6,8 +6,9 @@ feature: Triggers
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 audience: integrations
 content-type: reference
+level: Intermediate, Experienced
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '1206'
 ht-degree: 1%
@@ -113,7 +114,7 @@ Esempio:
 
 Gli eventi vengono elaborati uno alla volta, in ordine di offset. Ogni thread di [!DNL pipelined] elabora una partizione diversa.
 
-L’&quot;offset&quot; dell’ultimo evento recuperato viene memorizzato nel database. Pertanto, se il processo viene interrotto, viene riavviato dall’ultimo messaggio. Questi dati vengono memorizzati nello schema predefinito xtk:pipelineOffset.
+L&#39;offset dell&#39;ultimo evento recuperato viene memorizzato nel database. Pertanto, se il processo viene interrotto, viene riavviato dall’ultimo messaggio. Questi dati vengono memorizzati nello schema predefinito xtk:pipelineOffset.
 
 Questo puntatore è specifico per ogni istanza e per ogni consumer. Pertanto, quando molte istanze accedono alla stessa pipeline con consumer diversi, ognuna riceve tutti i messaggi e nello stesso ordine.
 
@@ -130,7 +131,7 @@ A scopo di debug e monitoraggio, i dati a trigger completi vengono scritti nella
 
 ### Analisi dei dati {#data-parsing}
 
-In questo esempio di codice JavaScript viene analizzato eVar01 negli arricchimenti.
+Questo esempio di codice JavaScript analizza l’eVar01 negli arricchimenti.
 
 ```
 function processPipelineMessage(xmlTrigger)
@@ -204,7 +205,7 @@ Di seguito è riportato un codice schema di esempio per questa tabella:
 
 | Attributo | Tipo | Etichetta | Descrizione |
 |:-:|:-:|:-:|:-:|
-| pipelineEventId | Lungo | Chiave principale | Chiave primaria interna del trigger. |
+| pipelineEventId | Lungo | Chiave primaria | Chiave primaria interna del trigger. |
 | dati | Per memoria | Dati trigger | Contenuto completo dei dati del trigger in formato XML. A scopo di debug e audit. |
 | triggerType | Stringa 50 | TriggerType | Nome del trigger. Identifica il comportamento del cliente sul sito web. |
 | shopper_id | Stringa 32 | shopper_id | L’identificatore interno dell’acquirente. Impostato dal flusso di lavoro di riconciliazione. Se è zero, significa che il cliente è sconosciuto in Campaign. |

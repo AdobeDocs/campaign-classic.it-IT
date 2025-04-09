@@ -5,9 +5,10 @@ description: Domande frequenti sugli sviluppatori
 feature: Troubleshooting, Configuration
 audience: platform
 content-type: reference
+level: Intermediate, Experienced
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 84%
@@ -22,7 +23,7 @@ In quanto soluzione aperta, Adobe Campaign è pronto alla personalizzazione e al
 
 ## Qual è il modello dati di Campaign? {#what-is-the-campaign-data-model}
 
-Il modello dati concettuale del database di Adobe Campaign è costituito da una serie di tabelle integrate e dalla loro interazione. La struttura fisica e logica dei dati trasferiti nell’applicazione è descritta in XML. Essa obbedisce a una grammatica specifica ad Adobe Campaign, denominata schema. Per ulteriori informazioni sugli schemi di Adobe Campaign, [consulta questa sezione](../../configuration/using/about-schema-edition.md).
+Il modello dati concettuale del database di Adobe Campaign è costituito da una serie di tabelle incorporate e dalla loro interazione. La struttura fisica e logica dei dati trasferiti nell’applicazione è descritta in XML. Essa obbedisce a una grammatica specifica ad Adobe Campaign, denominata schema. Per ulteriori informazioni sugli schemi di Adobe Campaign, [consulta questa sezione](../../configuration/using/about-schema-edition.md).
 
 [Fai clic qui per ulteriori informazioni sul modello dati di Campaign](https://helpx.adobe.com/it/campaign/kb/acc-datamodel.html).
 

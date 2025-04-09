@@ -5,9 +5,10 @@ description: Scopri come installare e configurare Campaign Classic
 feature: Installation, Architecture
 audience: installation
 content-type: reference
+level: Intermediate, Experienced
 topic-tags: architecture-and-hosting-models
 exl-id: 04e6dc17-427b-4745-84cc-bf45c03dbf81
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '1342'
 ht-degree: 0%
@@ -36,7 +37,7 @@ Adobe Campaign si basa su un’architettura orientata ai servizi (SOA, Service-O
 
 >[!NOTE]
 >
->In qualità di fornitore di software, EMC specifica l&#39;infrastruttura hardware e software compatibile. I suggerimenti sull&#39;hardware qui riportati sono solo a scopo informativo e si basano sulla nostra esperienza. L&#39;Adobe non è responsabile delle decisioni prese in base ad esso. Dipende anche dalle regole e dalle pratiche aziendali, nonché dalla criticità e dai livelli di prestazioni richiesti del progetto.
+>In qualità di fornitore di software, EMC specifica l&#39;infrastruttura hardware e software compatibile. I suggerimenti sull&#39;hardware qui riportati sono solo a scopo informativo e si basano sulla nostra esperienza. Adobe non è responsabile per le decisioni prese in base ad esse. Dipende anche dalle regole e dalle pratiche aziendali, nonché dalla criticità e dai livelli di prestazioni richiesti del progetto.
 
 ![](assets/s_ncs_install_architecture.png)
 
@@ -50,7 +51,7 @@ Adobe Campaign si basa su un’architettura orientata ai servizi (SOA, Service-O
 
 * **Client avanzato**: l&#39;interfaccia utente principale dell&#39;applicazione è un client avanzato, ovvero un&#39;applicazione nativa (Windows) che comunica con il server applicazioni Adobe Campaign esclusivamente con protocolli Internet standard (SOAP, HTTP, ecc.). Questa console offre una produttività semplice e intuitiva, utilizza una larghezza di banda molto ridotta (tramite l&#39;utilizzo di una cache locale) ed è progettata per una facile distribuzione. Questa console può essere distribuita da un browser Internet, può essere aggiornata automaticamente e non richiede alcuna configurazione di rete specifica perché genera solo traffico HTTP(S).
 * **Thin client**: è possibile accedere a determinate parti dell&#39;applicazione tramite un semplice browser Web utilizzando un&#39;interfaccia utente di HTML, inclusi il modulo di reporting, le fasi di approvazione della consegna, le funzionalità del modulo Marketing distribuito (centrale/locale), il monitoraggio delle istanze, ecc. Questa modalità consente di includere le funzionalità di Adobe Campaign in una Intranet o in una Extranet.
-* **Integrazione tramite API**: in alcuni casi, il sistema può essere chiamato da un&#39;applicazione esterna utilizzando le API dei servizi Web esposte tramite il protocollo SOAP.
+* **Integrazione tramite API**: in alcuni casi è possibile chiamare il sistema da un&#39;applicazione esterna utilizzando le API dei servizi Web esposte tramite il protocollo SOAP.
 
 ## Livello applicazione logico {#logical-application-layer}
 
@@ -62,7 +63,7 @@ I processi principali sono i seguenti:
 
 **Server applicazioni** (nlserver web)
 
-Questo processo espone l’intera gamma di funzionalità di Adobe Campaign tramite API di servizi web (SOAP - HTTP + XML). Inoltre, può generare in modo dinamico le pagine web utilizzate per l’accesso basato su HTML (report, moduli web, ecc.). Per ottenere questo risultato, questo processo include un server Apache Tomcat JSP. Processo a cui si connette la console.
+Questo processo espone l’intera gamma di funzionalità di Adobe Campaign tramite le API dei servizi web (SOAP - HTTP + XML). Inoltre, può generare in modo dinamico le pagine web utilizzate per l’accesso basato su HTML (report, moduli web, ecc.). Per ottenere questo risultato, questo processo include un server Apache Tomcat JSP. Processo a cui si connette la console.
 
 **Motore flusso di lavoro** (nlserver wfserver)
 
@@ -84,7 +85,7 @@ Questo processo può gestire la personalizzazione e l’invio automatico a un ro
 
 Per le e-mail, Adobe Campaign gestisce automaticamente il tracciamento dei clic e delle aperture (un’altra possibilità è il tracciamento transazionale a livello di sito web). A questo scopo, gli URL incorporati nei messaggi e-mail vengono riscritti in modo da puntare a questo modulo, che registra il passaggio dell’utente Internet prima di reindirizzarlo all’URL richiesto.
 
-Per garantire la massima disponibilità, questo processo è completamente indipendente dal database: gli altri processi server comunicano con esso utilizzando esclusivamente chiamate SOAP (HTTP, HTTP(S) e XML). Tecnicamente, questa funzionalità viene implementata in un modulo di estensione di un server HTTP (estensione ISAPI in IIS, o un modulo Apache DSO, ecc.) ed è disponibile solo in Windows.
+Per garantire la massima disponibilità, questo processo è completamente indipendente dal database: gli altri processi server comunicano con esso utilizzando solo chiamate SOAP (HTTP, HTTP(S) e XML). Tecnicamente, questa funzionalità è implementata in un modulo di estensione di un server HTTP (estensione ISAPI in IIS, o un modulo DSO Apache, ecc.) ed è disponibile solo in Windows.
 
 Sono disponibili anche altri processi più tecnici:
 
@@ -124,7 +125,7 @@ Questo processo mantiene statistiche sul numero di connessioni, sui messaggi inv
 
 ## Livello di persistenza {#persistence-layer}
 
-Il database viene utilizzato come livello di persistenza e contiene quasi tutte le informazioni gestite da Adobe Campaign. Ciò include sia dati funzionali (profili, abbonamenti, contenuti, ecc.) che tecnici (processi e registri di consegna, registri di tracciamento, ecc.) e dati di lavoro (acquisti, lead).
+Il database viene utilizzato come livello di persistenza e contiene quasi tutte le informazioni gestite da Adobe Campaign. Ciò include sia dati funzionali (profili, abbonamenti, contenuti, ecc.), sia dati tecnici (processi e registri di consegna, registri di tracciamento, ecc.) e dati di lavoro (acquisti, lead).
 
 L’affidabilità del database è della massima importanza, in quanto la maggior parte dei componenti di Adobe Campaign richiede l’accesso al database per eseguire le proprie attività (con l’eccezione, in particolare, del modulo di reindirizzamento).
 

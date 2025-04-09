@@ -4,8 +4,9 @@ title: Configurare il canale SMS di Campaign
 description: Scopri come configurare il canale SMS in Campaign
 feature: SMS
 role: User, Developer, Admin
+level: Experienced
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 26%
@@ -211,9 +212,9 @@ La tabella seguente presenta i caratteri presi in considerazione dallo standard 
    <td> <img height="21px" src="assets/theta.png" /> </td> 
    <td> ) </td> 
    <td> 9 </td> 
-   <td> I </td> 
+   <td> Io </td> 
    <td> Y </td> 
-   <td> i </td> 
+   <td> io </td> 
    <td> y </td> 
   </tr> 
   <tr> 
@@ -231,7 +232,7 @@ La tabella seguente presenta i caratteri presi in considerazione dallo standard 
    <td> ESC </td> 
    <td> + </td> 
    <td> ; </td> 
-   <td> K </td> 
+   <td> Okay </td> 
    <td> Ä </td> 
    <td> k </td> 
    <td> ä </td> 

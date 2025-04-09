@@ -5,12 +5,13 @@ description: Domande frequenti su Campaign Classic
 feature: Troubleshooting, Application Settings
 audience: platform
 content-type: reference
+level: Beginner, Intermediate, Experienced
 topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '752'
-ht-degree: 72%
+ht-degree: 70%
 
 ---
 
@@ -42,7 +43,7 @@ In qualità di utente esperto, puoi configurare le funzionalità di tracking nel
 
 ## Come configurare il recapito messaggi e-mail? {#how-to-configure-email-deliverability-}
 
-Adobe Oltre alla [Guida alle best practice per il recapito messaggi](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it), consulta le raccomandazioni tecniche per il recapito messaggi per scoprire come configurare la tua istanza per massimizzare le funzionalità di consegna di Campaign.
+Oltre alla [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it), consulta le raccomandazioni tecniche per il recapito messaggi per scoprire come configurare la tua istanza per massimizzare le funzionalità di consegna di Campaign.
 
 [Fai clic qui per ulteriori informazioni](../../delivery/using/about-deliverability.md).
 
@@ -86,7 +87,7 @@ Dopo aver effettuato l’accesso, passa a **[!UICONTROL File]** > **[!UICONTROL 
 
 ![](assets/faq_soft_cache.png)
 
-Se questo non risolve il problema, prova a cancellare la Hard Cache eseguendo i passaggi indicati di seguito.
+Se questo non risolve il problema, prova a cancellare la Hard Cache eseguendo i passaggi seguenti.
 
 ## Come si esegue la cancellazione della Hard Cache quando i problemi riguardano nello specifico il computer o l’utente? {#perform-hard-cache-clear}
 

@@ -4,8 +4,9 @@ title: Configurare l’app mobile Android in Adobe Campaign
 description: Scopri come configurare l’app mobile per Android
 feature: Push
 role: User, Developer
+level: Intermediate, Experienced
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 10%
@@ -68,11 +69,11 @@ Per scegliere il connettore da utilizzare, eseguire la procedura seguente:
 
    >[!NOTE]
    >
-   >Il mapping di destinazione predefinito **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** è collegato alla tabella dei destinatari. Se si desidera utilizzare una mappatura di destinazione diversa, è necessario creare una nuova mappatura di destinazione e immetterla nel campo **[!UICONTROL Target mapping]** del servizio. Per ulteriori informazioni sulla creazione della mappatura di destinazione, consulta [questa sezione](../../configuration/using/about-custom-recipient-table.md).
+   >Il mapping di destinazione predefinito **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** è collegato alla tabella dei destinatari. Se si desidera utilizzare una mappatura di destinazione diversa, è necessario creare una nuova mappatura di destinazione e immetterla nel campo **[!UICONTROL Target mapping]** del servizio. Per ulteriori informazioni sulla creazione di destinazione mappatura, consulta questa [sezione](../../configuration/using/about-custom-recipient-table.md).
 
    ![](assets/nmac_ios.png)
 
-1. Quindi fare clic sul pulsante **[!UICONTROL Add]** per selezionare il tipo di applicazione.
+1. Quindi fare clic sull&#39;pulsante **[!UICONTROL Add]** per selezionare il tipo di applicazione.
 
    ![](assets/nmac_service_2.png)
 

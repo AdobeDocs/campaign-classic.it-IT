@@ -4,8 +4,9 @@ title: Configurare l’app mobile in Adobe Campaign
 description: Scopri come iniziare con la configurazione dell’app mobile
 feature: Push
 role: User, Developer
+level: Intermediate, Experienced
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 5%
@@ -36,7 +37,7 @@ Per inviare notifiche push in Adobe Campaign, devi:
 
 ![](assets/do-not-localize/how-to-video.png) [Scopri come installare il pacchetto per app mobile nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html#sending-messages)
 
-In qualità di cliente ibrido/in hosting, contatta il team [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per accedere al canale di notifica push in Campaign.
+In qualità di cliente ibrido/in hosting, contatta il team [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per accedere al canale di notifica push in Campaign.
 
 In qualità di cliente on-premise, devi installare un pacchetto integrato.
 
