@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3864'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -23,12 +23,12 @@ Per gli aggiornamenti relativi alla versione, consulta le [Note sulla versione d
 
 ### Marzo 2025 {#march-2025}
 
-Nell’ambito di un’iniziativa di promozione di Campaign v8, abbiamo iniziato a riorganizzare il set di documentazione di Campaign Classic. Nella versione 7.4.2, verrà pubblicata la prima tappa. Le seguenti guide sono state sostituite da pagine di destinazione con collegamenti alla documentazione di v8:
+Nell’ambito di un’iniziativa di promozione di Campaign v8, abbiamo iniziato a riorganizzare il set della documentazione di Campaign Classic. Nella versione 7.4.2, ne verrà pubblicata una prima parte. Le seguenti guide sono state sostituite da pagine di destinazione con collegamenti alla documentazione v8:
 
-* Orchestrare campagne di marketing: questa guida è stata sostituita con una [pagina di destinazione](../../campaign/using/about-marketing-campaigns.md).
+* Orchestrare campagne di marketing: questa guida è stata sostituita da una [pagina di destinazione](../../campaign/using/about-marketing-campaigns.md).
 * Gestione delle risorse marketing: questa guida è stata rimossa.
 * Marketing distribuito: questa guida è stata rimossa.
-* Automatizza con flussi di lavoro: questa guida è stata sostituita con una [pagina di destinazione](../../workflow/using/about-workflow-automation.md)
+* Automatizzare con i flussi di lavoro: questa guida è stata sostituita da una [pagina di destinazione](../../workflow/using/about-workflow-automation.md)
 
 ## 2024
 
