@@ -7,9 +7,9 @@ feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 8d15a5666b5768bc0f17a4391061c4fcb9f76811
+source-git-commit: 84e6b2fad97f0ca5d6621cff4648e0be0bef7521
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '630'
 ht-degree: 1%
 
 ---
@@ -18,13 +18,13 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
-> Questi passaggi devono essere eseguiti solo da implementazioni ibride e on-premise.
+> Questi passaggi devono essere eseguiti solo da implementazioni ibride e locali.
 >
->Per le implementazioni Managed Services in hosting e Campaign, contatta il team [Adobe Customer Care](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Per le implementazioni in hosting e Campaign Managed Services, contatta [Adobe Systems team dell&#39;Assistenza](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) clienti.
 
-L’integrazione tra l’autenticazione di Adobe Campaign Classic e Adobe Analytics supporta Adobe Identity Management Service (IMS):
+L&#39;integrazione tra autenticazione Adobe Campaign Classic e Adobe Analytics supporta Adobe Systems servizio Identity Management (IMS):
 
-* Se gestisci un account esterno migrato, devi implementare Adobe IMS e connetterti ad Adobe Campaign tramite un Adobe ID.
+* Se gestisci un account esterno migrato, devi implementare Adobe Systems IMS e connetterti a Adobe Campaign tramite un Adobe ID.
 
   L&#39;utente che ha eseguito l&#39;accesso tramite Adobe ID IMS deve essere il proprietario dell&#39;account **Data Connector** in Adobe Analytics e disporre delle autorizzazioni per il **profilo di prodotto** menzionato [di seguito](#analytics-product-profile).
 
@@ -38,13 +38,13 @@ Affinché questa integrazione funzioni, devi creare un profilo di prodotto Adobe
 >
 > Le credenziali dell’account di servizio (JWT) sono state dichiarate obsolete da Adobe. Le integrazioni di Campaign con le soluzioni e le app Adobe ora devono basarsi sulle credenziali server-to-server OAuth. </br>
 >
-> * Se hai implementato integrazioni in entrata con Campaign, devi migrare l&#39;account tecnico come descritto in [questa documentazione](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). Le credenziali [dell&#39;account di servizio (JWT) esistenti](oauth-technical-account.md) continueranno a funzionare fino al 27 gennaio 2025.</br>
+> * Se hai implementato integrazioni in entrata con Campaign, devi eseguire la migrazione del tuo account tecnico come descritto in [questa documentazione](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). Le credenziali [dell&#39;account di servizio (JWT) esistenti](oauth-technical-account.md) continueranno a funzionare fino al 30 giugno 2025.</br>
 >
-> * Se hai implementato integrazioni in uscita, ad esempio l’integrazione Campaign-Analytics o l’integrazione Experience Cloud Triggers, queste continueranno a funzionare fino al 27 gennaio 2025. Tuttavia, prima di tale data, devi aggiornare l’ambiente Campaign alla versione v7.4.1 e migrare l’account tecnico a OAuth.
+> * Se hai implementato integrazioni in uscita, come l&#39;integrazione Campaign-Analytics o l&#39;integrazione Experience Cloud Triggers, continueranno a funzionare fino al 30 giugno 2025. Tuttavia, prima di tale data, è necessario aggiornare l&#39;ambiente Campaign alla versione 7.4.1 ed eseguire la migrazione dell&#39;account tecnico a OAuth.
 
-## Creare un profilo di prodotto Adobe Analytics {#analytics-product-profile}
+## Crea un profilo di prodotto Adobe Analytics {#analytics-product-profile}
 
-Il profilo prodotto determina il livello di accesso di un utente ai diversi componenti di Analytics.
+Il Profilo di prodotto determina il livello di accesso di un utente sui diversi componenti Analytics.
 
 Se disponi già di un profilo di prodotto Analytics, devi comunque creare un nuovo profilo di prodotto Adobe Analytics utilizzato esclusivamente per il connettore Analytics. In questo modo il tuo profilo di prodotto sarà impostato con le autorizzazioni corrette per questa integrazione.
 
@@ -60,17 +60,17 @@ Per ulteriori informazioni sui profili di prodotto, consulta la [documentazione 
 
 1. Aggiungere un **[!UICONTROL Product profile name]**. Si consiglia di utilizzare la sintassi seguente: `reserved_campaign_classic_<Company Name>`. Quindi fare clic su **[!UICONTROL Next]**.
 
-   **[!UICONTROL Product profile]** deve essere utilizzato esclusivamente per il connettore Analytics per evitare errori di configurazione.
+   Deve **[!UICONTROL Product profile]** essere utilizzato esclusivamente per il connettore Analytics per evitare errori di configurazione.
 
-1. Apri **[!UICONTROL Product profile]** appena creato e seleziona la scheda **[!UICONTROL Permissions]**.
+1. Apri il nuovo creato **[!UICONTROL Product profile]** e seleziona il **[!UICONTROL Permissions]** scheda.
 
    ![](assets/do-not-localize/triggers_3.png)
 
-1. Configurare le diverse funzionalità facendo clic su **[!UICONTROL Edit]** e selezionare le autorizzazioni da assegnare a **[!UICONTROL Product profile]** facendo clic sull&#39;icona più (+).
+1. Configura le diverse funzionalità cliccando **[!UICONTROL Edit]** e seleziona le autorizzazioni da assegnare cliccando **[!UICONTROL Product profile]** sull&#39;icona più (+).
 
-   Per ulteriori informazioni su come gestire le autorizzazioni, consulta la [documentazione di Admin Console](https://helpx.adobe.com/mt/enterprise/using/manage-permissions-and-roles.html).
+   Per ulteriori informazioni su come gestire le autorizzazioni, consulta la documentazione](https://helpx.adobe.com/mt/enterprise/using/manage-permissions-and-roles.html) di [Admin Console.
 
-1. Per la funzionalità **[!UICONTROL Report Suites]**, aggiungi **[!UICONTROL Report Suites]** da utilizzare in seguito.
+1. Per la **[!UICONTROL Report Suites]** funzionalità, aggiungi la **[!UICONTROL Report Suites]** funzionalità che devi usare in seguito.
 
    Se non disponi di suite di rapporti, puoi crearle seguendo [questi passaggi](../../integrations/using/gs-aa.md).
 
@@ -84,7 +84,7 @@ Per ulteriori informazioni sui profili di prodotto, consulta la [documentazione 
 
 1. Per la funzionalità **[!UICONTROL Dimensions]**, aggiungi **[!UICONTROL Dimensions]** necessario per la configurazione futura.
 
-   Assicurati che i Dimension scelti corrispondano a quelli da configurare nell’account esterno e allinearli al numero eVar corrispondente di Adobe Analytics.
+   Assicurati che le dimensioni scelte corrispondano a quelle da configurare nell’account esterno e siano allineate al numero eVar corrispondente di Adobe Analytics.
 
 1. Per la funzionalità **[!UICONTROL Report Suite Tools]**, aggiungere le seguenti autorizzazioni:
 
@@ -95,7 +95,7 @@ Per ulteriori informazioni sui profili di prodotto, consulta la [documentazione 
    * **[!UICONTROL Data sources manager]**
    * **[!UICONTROL Classifications]**
 
-1. Per la funzionalità **[!UICONTROL Analytics Tools]**, aggiungere le seguenti autorizzazioni:
+1. Per la **[!UICONTROL Analytics Tools]** funzionalità, aggiungi le seguenti autorizzazioni:
 
    * **[!UICONTROL Code Manager - Web services]**
    * **[!UICONTROL Logs - Web services]**
@@ -104,14 +104,14 @@ Per ulteriori informazioni sui profili di prodotto, consulta la [documentazione 
    * **[!UICONTROL Calculated metric creation]**
    * **[!UICONTROL Segment creation]**
 
-Il tuo profilo di prodotto è ora configurato. Quindi devi creare il progetto OAuth.
+Il profilo di prodotto è ora configurato. Devi quindi creare il progetto OAuth.
 
 ## Crea progetto OAuth {#create-adobe-io}
 
-Per procedere con la configurazione del connettore Adobe Analytics, accedi alla console Adobe Developer e crea il progetto server-to-server OAuth.
+Per procedere con la configurazione del connettore Adobe Analytics, accesso la console Adobe Systems Developer e creare il progetto da server a server OAuth.
 
 Per la documentazione dettagliata, consulta [questa pagina](oauth-technical-account.md#oauth-service).
 
 ## Configurazione e utilizzo {#adobe-analytics-connector-usage}
 
-Scopri come utilizzare Adobe Campaign e Adobe Analytics nella [documentazione di Adobe Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}.
+Scopri come utilizzare Adobe Campaign e Adobe Analytics nella [documentazione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"} di Adobe Campaign v8.
