@@ -6,9 +6,9 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Inbox Rendering, Monitoring, Email Rendering
 role: User
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9b93603a076b007d66aad52b05e560e17e316eeb
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '854'
 ht-degree: 7%
 
 ---
@@ -37,11 +37,11 @@ I client per dispositivi mobili, di messaggistica e di posta sul Web disponibili
 
 [!BADGE On-Premise e ibrido]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"}
 
-Per i client in hosting e ibridi, il rendering della casella in entrata è configurato nell’istanza da consulenti e supporto tecnico Adobe. Per ulteriori informazioni, contatta il tuo Account Executive Adobe.
+Per i client in hosting e ibridi, il rendering della casella in entrata è configurato nell’istanza dal supporto tecnico e dai consulenti Adobe. Per ulteriori informazioni, contatta il tuo account executive di Adobe.
 
 Per le installazioni on-premise, segui i passaggi seguenti per configurare il rendering della casella in entrata.
 
-1. Installa il pacchetto **[!UICONTROL Inbox rendering (IR)]** tramite il menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**. Per ulteriori informazioni, consulta [Installazione dei pacchetti standard di Campaign Classic](../../installation/using/installing-campaign-standard-packages.md).
+1. Installa il pacchetto **[!UICONTROL Inbox rendering (IR)]** tramite il menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**. Per ulteriori informazioni, vedere [Installazione dei pacchetti standard di Campaign Classic](../../installation/using/installing-campaign-standard-packages.md).
 1. Configurare un account esterno del tipo HTTP tramite il nodo **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]**. Per ulteriori informazioni, consulta [Creazione di un account esterno](../../installation/using/external-accounts.md#creating-an-external-account).
 1. Imposta i parametri dell’account esterno come segue:
    * **[!UICONTROL Label]**: informazioni sul server di recapito messaggi
@@ -90,7 +90,7 @@ Ogni volta che utilizzi la funzione **[!UICONTROL Inbox rendering]** in una cons
 >* Per la stessa consegna, se generi nuovamente il rendering della casella in entrata, il numero di token disponibili viene nuovamente diminuito del numero di rendering generati.
 >
 
-Il numero di token disponibili rimanenti viene visualizzato nel **[!UICONTROL General summary]** del [report di rendering della casella in entrata](#inbox-rendering-report).
+Il numero di token disponibili rimanenti viene visualizzato nel report di rendering della [casella in entrata](#inbox-rendering-report).
 
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
@@ -123,13 +123,13 @@ Per ulteriori informazioni sulla creazione, progettazione e targeting di una con
 
 Questo report visualizza i rendering della casella in entrata così come vengono visualizzati al destinatario. I rendering possono variare a seconda di come il destinatario apre la consegna e-mail: in un browser, su un dispositivo mobile o tramite un’applicazione e-mail.
 
-**[!UICONTROL General summary]** presenta il numero di messaggi ricevuti, indesiderati (spam), non ricevuti o in attesa di ricezione, come elenco e tramite una rappresentazione grafica con codice colore.
+La sezione superiore presenta la ripartizione del numero di messaggi ricevuti, indesiderati (spam), non ricevuti o in attesa di ricezione tramite una rappresentazione grafica con codice colore.
 
-![](assets/s_tn_inbox_rendering_summary.png)
+![](assets/s_tn_inbox_rendering_summary.png){width="40%" align="left"}
 
-Passa il puntatore del mouse sul grafico per visualizzare i dettagli di ciascun colore.
+Passa il puntatore del mouse sul grafico per visualizzare i dettagli di ciascun colore. Fare clic su un elemento dell&#39;elenco per nascondere o visualizzare la categoria corrispondente nel grafico.
 
-Il corpo del report è diviso in tre parti: **[!UICONTROL Mobile]**, **[!UICONTROL Messaging clients]** e **[!UICONTROL Webmails]**. Per visualizzare tutti i rendering raggruppati in queste tre categorie, scorri il report verso il basso.
+Il corpo del report è diviso in tre parti: **[!UICONTROL Mobile]**, **[!UICONTROL Desktop]** e **[!UICONTROL Webmails]**. Per visualizzare tutti i rendering raggruppati in queste tre categorie, scorri il report verso il basso.
 
 ![](assets/s_tn_inbox_rendering_report.png)
 
