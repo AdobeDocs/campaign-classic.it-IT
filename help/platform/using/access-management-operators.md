@@ -29,7 +29,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Queste procedure si applicano solo agli operatori che si connettono a Campaign con autenticazione nativa. Per l&#39;autenticazione Adobe IMS, consulta [questa documentazione](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#_blank).
+>Queste procedure si applicano solo agli operatori che si connettono a Campaign con autenticazione nativa. Per l&#39;autenticazione Adobe IMS, consulta [questa documentazione](https://helpx.adobe.com/it/enterprise/using/manage-users-individually.html#_blank).
 
 Un operatore è un utente di Adobe Campaign che dispone delle autorizzazioni per accedere ed eseguire azioni.
 

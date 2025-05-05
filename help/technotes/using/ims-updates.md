@@ -19,7 +19,7 @@ Il 30 giugno 2021 sono state apportate modifiche alle funzionalità di accesso d
 
 ## Cosa è cambiato?
 
-Adobe Il servizio Identity Management (IMS) ha interrotto il supporto delle versioni precedenti di Internet Explorer il **30 giugno 2021**. [Ulteriori informazioni](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
+Adobe Il servizio Identity Management (IMS) ha interrotto il supporto delle versioni precedenti di Internet Explorer il **30 giugno 2021**. [Ulteriori informazioni](https://helpx.adobe.com/it/x-productkb/global/update-operating-system-and-browser.html).
 
 Adobe vuole preservare la funzionalità IMS per tutti i clienti oltre il 30 giugno 2021. IMS fa parte del framework di sicurezza che consente agli utenti di accedere alla console client, e quindi ad Adobe Campaign.
 
@@ -76,7 +76,7 @@ Il seguente messaggio di avviso è visibile agli utenti se devono aggiornare la 
 
 ![](../../integrations/using/assets/do-not-localize/errorMsg.png)
 
-Se viene visualizzato questo avviso, assicurarsi di installare gli aggiornamenti più recenti del sistema operativo in uso. [Ulteriori informazioni](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)
+Se viene visualizzato questo avviso, assicurarsi di installare gli aggiornamenti più recenti del sistema operativo in uso. [Ulteriori informazioni](https://helpx.adobe.com/it/x-productkb/global/update-operating-system-and-browser.html)
 
 Se la versione di Internet Explorer non è stata aggiornata, viene visualizzato il seguente messaggio e non è più possibile connettersi a Adobe Campaign:
 

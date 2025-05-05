@@ -64,7 +64,7 @@ Per aiutarti a garantire l’idoneità alle normative sulla privacy, Adobe Campa
 
 Per informazioni su come creare richieste di **accesso** ed **eliminazione** e su come queste vengono elaborate da Adobe Campaign, fai riferimento ai [passaggi di implementazione](../../platform/using/privacy-requests.md).
 
-<!--Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html).
+<!--Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=it).
 https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html-->
 
 ## Consenso, conservazione e ruoli {#consent-retention-roles}

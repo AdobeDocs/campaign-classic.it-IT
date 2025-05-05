@@ -35,4 +35,4 @@ Prima di iniziare a utilizzare il connettore Adobe Campaign-Adobe Analytics, con
 
 Per abilitare questa integrazione, devi creare il tuo account tecnico Adobe come descritto in [questa pagina](oauth-technical-account.md).
 
-Scopri come utilizzare Adobe Campaign e Adobe Analytics nella [documentazione di Adobe Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}.
+Scopri come utilizzare Adobe Campaign e Adobe Analytics nella [documentazione di Adobe Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}.

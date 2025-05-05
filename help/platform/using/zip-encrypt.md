@@ -21,7 +21,7 @@ Adobe Campaign consente di esportare file compressi o crittografati. Quando defi
 
 Per poterlo fare:
 
-1. Installa una coppia di chiavi GPG per l&#39;istanza utilizzando [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data).
+1. Installa una coppia di chiavi GPG per l&#39;istanza utilizzando [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=it#encrypting-data).
 
    >[!NOTE]
    >
@@ -46,7 +46,7 @@ In questo caso d’uso, creeremo un flusso di lavoro per crittografare ed esport
 
 I passaggi per eseguire questo caso d’uso sono i seguenti:
 
-1. Genera una coppia di chiavi GPG (pubblica/privata) utilizzando un’utility GPG, quindi installa la chiave pubblica sul Pannello di controllo Campaign. I passaggi dettagliati sono disponibili nella [documentazione del Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data).
+1. Genera una coppia di chiavi GPG (pubblica/privata) utilizzando un’utility GPG, quindi installa la chiave pubblica sul Pannello di controllo Campaign. I passaggi dettagliati sono disponibili nella [documentazione del Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=it#encrypting-data).
 
 1. In Campaign Classic, crea un flusso di lavoro per esportare i dati e crittografarli utilizzando la chiave privata installata tramite il Pannello di controllo Campaign. A tal fine, verrà creato un flusso di lavoro come segue:
 

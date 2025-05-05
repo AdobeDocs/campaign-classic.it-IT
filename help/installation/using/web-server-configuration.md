@@ -81,5 +81,5 @@ Di seguito sono riportate alcune delle best practice principali relative alla co
 
 Argomenti correlati:
 
-* [Panoramica sulla conformità di Adobe Marketing Cloud](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
-* [Panoramica sulla sicurezza di Adobe Campaign](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#security)
+* [Panoramica sulla conformità di Adobe Marketing Cloud](https://experienceleague.adobe.com/it/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
+* [Panoramica sulla sicurezza di Adobe Campaign](https://experienceleague.adobe.com/it/docs/experience-platform/landing/governance-privacy-security/overview#security)

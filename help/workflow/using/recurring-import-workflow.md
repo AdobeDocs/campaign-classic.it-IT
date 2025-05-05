@@ -43,7 +43,7 @@ Questo esempio mostra come preimpostare un flusso di lavoro che può essere riut
 
    * Nella sezione **[!UICONTROL Name of the file to load]**, selezionare **[!UICONTROL Upload a file from the local machine]** e lasciare vuoto il campo. Ogni volta che viene creato un nuovo flusso di lavoro da questo modello, è possibile specificare il file desiderato, purché corrisponda alla struttura definita.
 
-     Puoi utilizzare una qualsiasi delle opzioni, ma devi modificare il modello di conseguenza. Ad esempio, se selezioni **[!UICONTROL Specified in the transition]**, puoi aggiungere un&#39;attività **[!UICONTROL File Transfer]** prima di recuperare il file da importare da un server FTP/SFTP. Con la connessione S3 o SFTP, puoi anche importare i dati dei segmenti in Adobe Campaign con Adobe Real-time Customer Data Platform. Per ulteriori informazioni, consulta questa [documentazione](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
+     Puoi utilizzare una qualsiasi delle opzioni, ma devi modificare il modello di conseguenza. Ad esempio, se selezioni **[!UICONTROL Specified in the transition]**, puoi aggiungere un&#39;attività **[!UICONTROL File Transfer]** prima di recuperare il file da importare da un server FTP/SFTP. Con la connessione S3 o SFTP, puoi anche importare i dati dei segmenti in Adobe Campaign con Adobe Real-time Customer Data Platform. Per ulteriori informazioni, consulta questa [documentazione](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=it).
 
      ![](assets/import_template_example1.png)
 

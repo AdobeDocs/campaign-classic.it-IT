@@ -94,7 +94,7 @@ Non è più possibile creare, modificare, aggiornare o eliminare operatori con a
 
 Di conseguenza, queste azioni sono state disabilitate nella console client.
 
-L’amministrazione degli operatori è centralizzata in Adobe Admin Console e le seguenti attività ora sono gestite esclusivamente tramite questa console. Scopri come creare utenti e assegnare autorizzazioni nella [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}.
+L’amministrazione degli operatori è centralizzata in Adobe Admin Console e le seguenti attività ora sono gestite esclusivamente tramite questa console. Scopri come creare utenti e assegnare autorizzazioni nella [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}.
 
 ### Opzioni non disponibili {#unavailable-migration}
 

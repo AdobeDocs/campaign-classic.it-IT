@@ -27,7 +27,7 @@ L’entità centrale fornisce campagne che le entità locali possono utilizzare.
 
 >[!NOTE]
 >
->Per ulteriori informazioni su Marketing distribuito per Adobe Campaign e su come utilizzarlo, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/automation/distributed-marketing/about-distributed-marketing){target=_blank}.
+>Per ulteriori informazioni su Marketing distribuito per Adobe Campaign e su come utilizzarlo, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/automation/distributed-marketing/about-distributed-marketing){target=_blank}.
 
 <!--
 ## Terminology {#terminology}

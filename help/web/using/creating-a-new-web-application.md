@@ -24,7 +24,7 @@ Vai alla scheda **Campagne** e seleziona il menu **[!UICONTROL Web Applications]
 
 >[!NOTE]
 >
->Proteggi sempre le pagine che potrebbero contenere informazioni personali. Consulta la [Lista di controllo protezione e privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy).
+>Proteggi sempre le pagine che potrebbero contenere informazioni personali. Consulta la [Lista di controllo protezione e privacy](https://helpx.adobe.com/it/campaign/kb/acc-security.html#privacy).
 
 Questo modello determina il tipo di applicazione Web. Puoi creare:
 

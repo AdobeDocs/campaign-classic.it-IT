@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!INFO]
 >
->Ulteriori informazioni sulla funzionalità Audit trail sono disponibili nella [documentazione di Adobe Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail).
+>Ulteriori informazioni sulla funzionalità Audit trail sono disponibili nella [documentazione di Adobe Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/audit-trail).
 
 In Adobe Campaign, **[!UICONTROL Audit trail]** consente di accedere alla cronologia completa delle modifiche apportate all&#39;interno dell&#39;istanza.
 

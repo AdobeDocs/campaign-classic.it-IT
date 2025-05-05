@@ -24,7 +24,7 @@ ht-degree: 2%
 Inizia a usare Adobe Campaign consultando le nostre guide intuitive.
 
 * [Gestione della privacy](https://helpx.adobe.com/it/campaign/kb/acc-privacy.html): scopri cosa offre Adobe Campaign Classic per aiutarti con la conformità in materia di privacy quando utilizzi il nostro servizio.
-* [Integrazione di contenuto dinamico in un&#39;e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html): scopri le nozioni di base per iniziare a utilizzare l&#39;integrazione tra Campaign Classic e Target Standard.
+* [Integrazione di contenuto dinamico in un&#39;e-mail](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html?lang=it): scopri le nozioni di base per iniziare a utilizzare l&#39;integrazione tra Campaign Classic e Target Standard.
 * [Gestione del recapito messaggi](../../delivery/using/about-deliverability.md): scopri i concetti e le best practice relativi al recapito messaggi, nonché gli strumenti offerti da Adobe Campaign Classic per ottimizzare l&#39;invio dei messaggi.
 * [Best practice per la consegna](../../delivery/using/delivery-best-practices.md): scopri le best practice relative alla progettazione della consegna e all’invio con Adobe Campaign Classic.
 * [Esecuzione di un aggiornamento della build](https://helpx.adobe.com/it/campaign/kb/acc-build-upgrade.html): questa guida illustra i passaggi chiave e le best practice per eseguire un aggiornamento della build con Campaign Classic.
@@ -52,4 +52,4 @@ Oltre a questi video brevi e dettagliati, puoi trovare [corsi di formazione](htt
 
 ### Experience League corsi
 
-Puoi anche visitare i [corsi consigliati](https://experienceleague.adobe.com/#dashboard/learning) per Adobe Campaign Classic: i corsi sono raccolte di lezioni curate da esperti che ti aiutano a ottenere rapidamente competenze e conoscenze.
+Puoi anche visitare i [corsi consigliati](https://experienceleague.adobe.com/it#dashboard/learning) per Adobe Campaign Classic: i corsi sono raccolte di lezioni curate da esperti che ti aiutano a ottenere rapidamente competenze e conoscenze.

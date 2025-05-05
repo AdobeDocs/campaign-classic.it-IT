@@ -22,7 +22,7 @@ Adobe Campaign Explorer è accessibile tramite l’icona della barra degli strum
 
 >[!NOTE]
 >
->Per ulteriori informazioni su Adobe Campaign Explorer, consulta queste pagine nella documentazione di Campaign v8: per ulteriori informazioni [sull&#39;interfaccia utente](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target=_blank}, sulle relative [impostazioni](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank} o [su come gestire cartelle e visualizzazioni in Esplora](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
+>Per ulteriori informazioni su Adobe Campaign Explorer, consulta queste pagine nella documentazione di Campaign v8: per ulteriori informazioni [sull&#39;interfaccia utente](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target=_blank}, sulle relative [impostazioni](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank} o [su come gestire cartelle e visualizzazioni in Esplora](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
 
 <!--

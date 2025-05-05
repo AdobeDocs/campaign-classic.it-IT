@@ -18,7 +18,7 @@ ht-degree: 1%
 
 
 L&#39;attività **Trasferimento file** consente di ricevere o inviare file, verificare la presenza di file o elencare file in un server. Il protocollo utilizzato è Azure Blob Storage, Amazon Simple Storage Service (S3), FTP o SFTP.
-Con la connessione S3, Azure Blob Storage o SFTP, puoi anche importare i dati dei segmenti in Adobe Campaign con Adobe Real-time Customer Data Platform. Per ulteriori informazioni, consulta questa [documentazione](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
+Con la connessione S3, Azure Blob Storage o SFTP, puoi anche importare i dati dei segmenti in Adobe Campaign con Adobe Real-time Customer Data Platform. Per ulteriori informazioni, consulta questa [documentazione](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=it).
 
 >[!NOTE]
 >

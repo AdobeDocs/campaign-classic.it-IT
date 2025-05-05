@@ -18,7 +18,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->Questa pagina si applica solo agli operatori che si connettono a Campaign con autenticazione nativa. Per l&#39;autenticazione Adobe IMS, consulta [questa documentazione](https://helpx.adobe.com/enterprise/using/manage-permissions-and-roles.html).
+>Questa pagina si applica solo agli operatori che si connettono a Campaign con autenticazione nativa. Per l&#39;autenticazione Adobe IMS, consulta [questa documentazione](https://helpx.adobe.com/it/enterprise/using/manage-permissions-and-roles.html).
 
 Per impostazione predefinita, Adobe Campaign propone una serie di diritti denominati che ti consentono di definire le autorizzazioni assegnate agli operatori e ai gruppi di operatori. Questi diritti possono essere modificati dal nodo **[!UICONTROL Administration > Access management > Named rights]** della struttura.
 
@@ -76,4 +76,4 @@ I gruppi predefiniti e i diritti denominati consentono agli operatori di acceder
 
 La matrice dei diritti di accesso di Adobe Campaign è disponibile [qui](/help/platform/using/assets/access-rights-matrix.pdf).
 
-[![immagine](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf)
+[![immagine](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=it)

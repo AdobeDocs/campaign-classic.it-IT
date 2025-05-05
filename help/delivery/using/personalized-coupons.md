@@ -19,7 +19,7 @@ L’aggiunta di coupon alle consegne può fornire ai destinatari un valore aggiu
 
 >[!AVAILABILITY]
 >
->La gestione dei coupon non è disponibile in Campaign v8 nel contesto di una distribuzione Enterprise (FFDA). Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
+>La gestione dei coupon non è disponibile in Campaign v8 nel contesto di una distribuzione Enterprise (FFDA). Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
 
 La gestione dei coupon si basa su un pacchetto che deve essere installato. Per confermare che hai la gestione del coupon, seleziona **[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
 

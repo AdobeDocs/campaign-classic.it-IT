@@ -25,7 +25,7 @@ ht-degree: 1%
 ## Prerequisiti {#prerequisites}
 
 * È necessario disporre di un nome e di un ID organizzazione Adobe Experience Cloud. Per trovare il tuo ID organizzazione, fai riferimento a [questa pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=it){_blank}.
-* Devi aggiungere degli utenti all’Experience Cloud. Per ulteriori informazioni, consulta [questa pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html){_blank}.
+* Devi aggiungere degli utenti all’Experience Cloud. Per ulteriori informazioni, consulta [questa pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=it){_blank}.
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Configura l&#39;account esterno **Adobe Experience Cloud** in **[!UICONTROL Admi
 
 Immettere le seguenti informazioni:
 
-* Informazioni di connessione per il server IMS utilizzato (ID e segreto). Queste informazioni sono fornite dal team di assistenza clienti Adobe. Per ulteriori informazioni, consultare le [Domande frequenti per gli amministratori di Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html).
+* Informazioni di connessione per il server IMS utilizzato (ID e segreto). Queste informazioni sono fornite dal team di assistenza clienti Adobe. Per ulteriori informazioni, consultare le [Domande frequenti per gli amministratori di Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html?lang=it).
 
   L&#39;indirizzo **[!UICONTROL Callback server]** deve essere specificato in **https**. Questo campo corrisponde all’URL di accesso dell’istanza di Adobe Campaign.
 

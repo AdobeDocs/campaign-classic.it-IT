@@ -18,7 +18,7 @@ Adobe Campaign include un modulo grafico per definire e pubblicare le applicazio
 
 >[!AVAILABILITY]
 >
->La gestione dei sondaggi non è disponibile in Campaign v8 nel contesto di una distribuzione Enterprise (FFDA). Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
+>La gestione dei sondaggi non è disponibile in Campaign v8 nel contesto di una distribuzione Enterprise (FFDA). Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
 
 
 Il componente aggiuntivo opzionale **Sondaggio** consente di creare un nuovo tipo di applicazione Web per creare e gestire questionari online, ad esempio moduli per aggiungere o modificare le informazioni del profilo, per sottoscrivere o annullare l&#39;abbonamento a un servizio di informazioni o un modulo per l&#39;iscrizione a un concorso. Una volta raccolte, le risposte vengono memorizzate nel database o in variabili locali. Il modello di dati può essere esteso dinamicamente tramite le risposte date ai questionari. Puoi visualizzare i risultati in tempo reale, filtrare le risposte e analizzarle utilizzando grafici dedicati.

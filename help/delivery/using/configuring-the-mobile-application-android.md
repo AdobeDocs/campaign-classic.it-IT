@@ -58,7 +58,7 @@ Per scegliere il connettore da utilizzare, eseguire la procedura seguente:
 
 ## Configurare un servizio Android {#configuring-android-service}
 
-![](assets/do-not-localize/how-to-video.png) [Scopri come configurare un servizio Android nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"}.
+![](assets/do-not-localize/how-to-video.png) [Scopri come configurare un servizio Android nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=it#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"}.
 
 1. Passare al nodo **[!UICONTROL Profiles and Targets > Services and subscriptions]** e fare clic su **[!UICONTROL New]**.
 
@@ -147,7 +147,7 @@ Di seguito sono riportati i nomi del payload FCM per personalizzare ulteriorment
 
 ## Estendere lo schema appsubscriptionRcp {#extend-subscription-schema}
 
-![](assets/do-not-localize/how-to-video.png) [Scopri come estendere lo schema appsubscriptionRcp nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html#extending-the-app-subscription-schema-to-personalize-push-notifications)
+![](assets/do-not-localize/how-to-video.png) [Scopri come estendere lo schema appsubscriptionRcp nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html?lang=it#extending-the-app-subscription-schema-to-personalize-push-notifications)
 
 È necessario estendere **appsubscriptionRcp** per definire nuovi campi aggiuntivi per archiviare i parametri dell&#39;app nel database di Campaign. Questi campi vengono utilizzati per la personalizzazione, ad esempio. Per eseguire questa operazione:
 

@@ -65,7 +65,7 @@ I passaggi chiave per questa migrazione sono elencati di seguito:
 1. Dopo l’aggiornamento, è comunque possibile creare nuovi utenti con entrambi i metodi, come utente nativo o con IMS.
 1. L&#39;amministratore interno di Campaign deve configurare Adobe IMS come descritto in [questa sezione](../../integrations/using/configuring-ims.md).
 1. Quindi aggiungi e-mail univoche a tutti gli utenti nativi nella console client di Campaign. Questo passaggio è descritto in [questa sezione](#ims-migration-id).
-1. Crea utenti e profili di prodotto in Adobe Admin Console come descritto nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/manage-permissions.html){target="_blank"}.
+1. Crea utenti e profili di prodotto in Adobe Admin Console come descritto nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/manage-permissions.html?lang=it){target="_blank"}.
 1. Abilita l&#39;opzione **Connetti con Adobe ID** per tutti gli operatori.
 1. Implementa Adobe IMS per la tua connessione come descritto in [questa pagina](../../integrations/using/implementing-ims.md).
 

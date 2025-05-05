@@ -190,7 +190,7 @@ La sezione seguente fornisce le best practice per ottimizzare le query in esecuz
 
   ![](assets/do-not-localize/v7.jpeg) [Documentazione di Campaign v7](../../configuration/using/database-mapping.md)
 
-  ![](assets/do-not-localize/v8.png) [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
+  ![](assets/do-not-localize/v8.png) [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html?lang=it)
 
 ### Funzioni {#functions}
 

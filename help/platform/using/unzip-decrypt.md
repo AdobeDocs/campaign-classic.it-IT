@@ -26,7 +26,7 @@ Adobe Campaign consente di importare file compressi o crittografati. Prima di po
 
 Per poterlo fare:
 
-1. Utilizza il [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) per generare una coppia di chiavi pubblica/privata per consentire la decrittografia del file.
+1. Utilizza il [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=it#decrypting-data) per generare una coppia di chiavi pubblica/privata per consentire la decrittografia del file.
 
    >[!NOTE]
    >
@@ -62,7 +62,7 @@ In questo caso d’uso, creeremo un flusso di lavoro per importare dati che sono
 
 I passaggi per eseguire questo caso d’uso sono i seguenti:
 
-1. Utilizza il Pannello di controllo Campaign per generare una coppia di chiavi (pubblica/privata). I passaggi dettagliati sono disponibili nella [documentazione del Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
+1. Utilizza il Pannello di controllo Campaign per generare una coppia di chiavi (pubblica/privata). I passaggi dettagliati sono disponibili nella [documentazione del Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=it#decrypting-data).
 
    * La chiave pubblica verrà condivisa con il sistema esterno, che la utilizzerà per crittografare i dati da inviare a Campaign.
    * La chiave privata verrà utilizzata da Campaign Classic per decrittografare i dati crittografati in arrivo.

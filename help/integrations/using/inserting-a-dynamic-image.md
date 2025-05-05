@@ -62,7 +62,7 @@ In Adobe Campaign, esistono due modi per inserire un’immagine dinamica da Targ
 * **[!UICONTROL Landing Page]**: se desideri che l&#39;immagine predefinita venga reindirizzata a una pagina di destinazione predefinita. Questo URL si riferisce solo ai casi in cui l’immagine predefinita viene visualizzata nell’e-mail finale ed è facoltativa.
 * **[!UICONTROL Additional decision parameters]**: specifica il mapping tra i campi definiti nei segmenti Adobe Target e i campi Adobe Campaign. I campi Adobe Campaign utilizzati devono essere stati specificati nella rawbox. Nel nostro esempio, abbiamo aggiunto il campo Paese.
 
-Se utilizzi le autorizzazioni Enterprise nelle impostazioni di Adobe Target, aggiungi la proprietà corrispondente in questo campo. Ulteriori informazioni sulle autorizzazioni di Target Enterprise in [questa pagina](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html).
+Se utilizzi le autorizzazioni Enterprise nelle impostazioni di Adobe Target, aggiungi la proprietà corrispondente in questo campo. Ulteriori informazioni sulle autorizzazioni di Target Enterprise in [questa pagina](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=it).
 
 ![](assets/target_13.png)
 
@@ -82,7 +82,7 @@ Nel nostro caso, abbiamo bisogno di due offerte di reindirizzamento, la terza (q
 
    ![](assets/target_6.png)
 
-1. Segui la stessa procedura per l’offerta di reindirizzamento rimanente. Per ulteriori informazioni, consulta questa [pagina](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html).
+1. Segui la stessa procedura per l’offerta di reindirizzamento rimanente. Per ulteriori informazioni, consulta questa [pagina](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=it).
 
 ## Creare tipi di pubblico {#audiences-target}
 

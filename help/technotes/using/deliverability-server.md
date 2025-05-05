@@ -75,7 +75,7 @@ In qualità di cliente on-premise, devi anche verificare che una campagna **[!UI
 1. Accedi alla sezione **Prodotti e servizi** e verifica che **Adobe Campaign** sia elencato.
 Se non riesci a visualizzare **Adobe Campaign**, contatta l&#39;[Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} per aggiungerlo.
 1. Fai clic su **Adobe Campaign** e seleziona la tua organizzazione.
-   **Attenzione**: se hai più di un&#39;organizzazione, assicurati di selezionare quella corretta. Ulteriori informazioni sulle organizzazioni [in questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
+   **Attenzione**: se hai più di un&#39;organizzazione, assicurati di selezionare quella corretta. Ulteriori informazioni sulle organizzazioni [in questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=it#ims-org-id){_blank}.
 
 1. Verificare che esista un **[!UICONTROL Product profile]**. In caso contrario, creala. Nessuna autorizzazione richiesta per **[!UICONTROL Product profile]**.
 

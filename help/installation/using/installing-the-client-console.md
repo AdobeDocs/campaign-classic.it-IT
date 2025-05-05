@@ -42,7 +42,7 @@ Rivedi i dettagli riportati di seguito per capire cosa è necessario per l’imp
 
 A partire dalla versione della build Campaign Classic 7.3, l’installazione di Microsoft Edge Webview 2 Runtime è necessaria per qualsiasi installazione della console.
 
-La visualizzazione Web è installata per impostazione predefinita come parte del sistema operativo Windows 11. Se non è già presente nel sistema, Campaign Classic Console Installer ti chiederà di scaricarlo dal [sito Web Microsoft Developer](https://www.adobe.com/go/acc-ms-webview2-runtime-download). Il collegamento di download non funziona nel browser Internet Explorer 11 in quanto Microsoft ne ha dichiarato obsoleto il supporto. Utilizza un browser diverso per accedere al collegamento.
+La visualizzazione Web è installata per impostazione predefinita come parte del sistema operativo Windows 11. Se non è già presente nel sistema, Campaign Classic Console Installer ti chiederà di scaricarlo dal [sito Web Microsoft Developer](https://www.adobe.com/go/acc-ms-webview2-runtime-download_it). Il collegamento di download non funziona nel browser Internet Explorer 11 in quanto Microsoft ne ha dichiarato obsoleto il supporto. Utilizza un browser diverso per accedere al collegamento.
 
 ## Implementazioni in hosting di Adobe {#hosted-customers}
 

@@ -22,7 +22,7 @@ Se un utente finale rinuncia al tracciamento comportamentale tramite cookie o we
 
 >[!NOTE]
 >
->Durante la creazione degli script, seguire sempre le linee guida descritte nell&#39;[Elenco di controllo protezione e privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
+>Durante la creazione degli script, seguire sempre le linee guida descritte nell&#39;[Elenco di controllo protezione e privacy](https://helpx.adobe.com/it/campaign/kb/acc-security.html#dev).
 
 ## Configurazione del banner {#configuring-the-banner-}
 

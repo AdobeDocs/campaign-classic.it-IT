@@ -73,7 +73,7 @@ Per risolvere una regressione identificata di recente, è necessario installare 
 
 ## Aggiornamento Adobe Identity Management System (IMS)
 
-Adobe Identity Service (IMS) non supporterà più le versioni precedenti di Internet Explorer a partire dal **30 giugno 2021**. [Ulteriori informazioni](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
+Adobe Identity Service (IMS) non supporterà più le versioni precedenti di Internet Explorer a partire dal **30 giugno 2021**. [Ulteriori informazioni](https://helpx.adobe.com/it/x-productkb/global/update-operating-system-and-browser.html).
 
 Per garantire la compatibilità con Adobe IMS è necessario aggiornare la console client di Campaign.
 

@@ -21,7 +21,7 @@ Adobe rimuove dal centro dati legacy: le istanze di Campaign Classic devono esse
 
 Di seguito è riportata una serie di domande comuni su questo progetto, sull’impatto sugli ambienti Campaign e su altre risorse utili.
 
-Per qualsiasi altra domanda, puoi contattare [l&#39;Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+Per qualsiasi altra domanda, puoi contattare [l&#39;Assistenza clienti Adobe](https://experienceleague.adobe.com/it?support-solution=Campaign#support).
 
 ## Impatto sull&#39;infrastruttura
 
@@ -51,7 +51,7 @@ Gli impatti globali su database e infrastruttura sono elencati di seguito.
 
 * **Qual è il piano per risolvere eventuali problemi successivi alla migrazione?**
 
-  Prima della migrazione dei sistemi di produzione vengono eseguiti test approfonditi. Tuttavia, in caso di problemi, [l&#39;Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) rimarrà il punto di contatto principale. Adobe ha istituito un team di esperti per fornire supporto avanzato, se necessario.
+  Prima della migrazione dei sistemi di produzione vengono eseguiti test approfonditi. Tuttavia, in caso di problemi, [l&#39;Assistenza clienti Adobe](https://experienceleague.adobe.com/it?support-solution=Campaign#support) rimarrà il punto di contatto principale. Adobe ha istituito un team di esperti per fornire supporto avanzato, se necessario.
 
 ## Impatto sul recapito messaggi
 
@@ -97,7 +97,7 @@ Gli impatti globali su IP, elenchi Bloccati, sottodomini e URL sono elencati di 
 
   Innanzitutto, Adobe Deliverability valuta lo stato di recapito della piattaforma e consiglia un piano per il passaggio ai nuovi IP
 
-  Non è necessario alcun riscaldamento dopo la migrazione. Potrebbe trattarsi di un&#39;eccezione e, in questo caso, [l&#39;Assistenza clienti di Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) contatterà i clienti.
+  Non è necessario alcun riscaldamento dopo la migrazione. Potrebbe trattarsi di un&#39;eccezione e, in questo caso, [l&#39;Assistenza clienti di Adobe](https://experienceleague.adobe.com/it?support-solution=Campaign#support) contatterà i clienti.
 
   Tuttavia, il piano è quello di rendere trasparente questa operazione per l&#39;azienda, a differenza dell&#39;incremento iniziale che viene fatto durante il go-live.
 

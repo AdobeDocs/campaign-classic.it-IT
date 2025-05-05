@@ -68,7 +68,7 @@ L’immagine e la pagina web devono essere visualizzate nella notifica push quan
 
 ## Creare un messaggio di notifica {#creating-notification-message}
 
-![](assets/do-not-localize/how-to-video.png) [Scopri come creare una notifica push di Android nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html#additional-resources){target="_blank"}.
+![](assets/do-not-localize/how-to-video.png) [Scopri come creare una notifica push di Android nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=it#additional-resources){target="_blank"}.
 
 1. Vai a **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 

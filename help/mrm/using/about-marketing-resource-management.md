@@ -32,4 +32,4 @@ Infine, la funzionalità di gestione del budget viene estesa agli obiettivi, all
 
 >[!NOTE]
 >
->Per ulteriori informazioni su MRM per Adobe Campaign e su come utilizzarlo, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/automation/mrm/about-marketing-resource-management){target=_blank}.
+>Per ulteriori informazioni su MRM per Adobe Campaign e su come utilizzarlo, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/automation/mrm/about-marketing-resource-management){target=_blank}.

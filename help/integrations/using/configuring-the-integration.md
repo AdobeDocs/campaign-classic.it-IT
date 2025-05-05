@@ -28,7 +28,7 @@ Per avviare la configurazione in Adobe Campaign, effettua le seguenti operazioni
 1. [Configurare l’account esterno](#configure-the-external-account)
 1. [Configurare il filtro delle risorse AEM](#configure-aem-resources-filtering)
 
-Per configurazioni avanzate, ad esempio per gestire campi e blocchi di personalizzazione. Consulta la [documentazione](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html) di Adobe Experience Manager.
+Per configurazioni avanzate, ad esempio per gestire campi e blocchi di personalizzazione. Consulta la [documentazione](https://helpx.adobe.com/it/experience-manager/6-5/sites/administering/using/campaignonpremise.html) di Adobe Experience Manager.
 
 ### Installare il pacchetto di integrazione dell’AEM in Adobe Campaign {#install-the-aem-integration-package-in-adobe-campaign}
 
@@ -119,12 +119,12 @@ Per avviare la configurazione in Adobe Experience Manager, effettua le seguenti 
 
 1. Configura la **replica** per eseguire la replica dall&#39;istanza di authoring AEM all&#39;istanza di pubblicazione AEM.
 
-   Per informazioni su come configurare la replica, consulta la [documentazione](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/replication.html) di Adobe Experience Manager.
+   Per informazioni su come configurare la replica, consulta la [documentazione](https://helpx.adobe.com/it/experience-manager/6-5/sites/deploying/using/replication.html) di Adobe Experience Manager.
 
 1. Connetti Adobe Experience Manager ad Adobe Campaign configurando un **Cloud Service** dedicato.
 
-   Per informazioni su come connettere entrambe le soluzioni tramite Cloud Service, consulta la [documentazione](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) di Adobe Experience Manager.
+   Per informazioni su come connettere entrambe le soluzioni tramite Cloud Service, consulta la [documentazione](https://helpx.adobe.com/it/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) di Adobe Experience Manager.
 
 1. Configura il servizio **Externalizer**.
 
-   Per informazioni su come configurarlo, consulta la [documentazione](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html) di Adobe Experience Manager.
+   Per informazioni su come configurarlo, consulta la [documentazione](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/externalizer.html) di Adobe Experience Manager.

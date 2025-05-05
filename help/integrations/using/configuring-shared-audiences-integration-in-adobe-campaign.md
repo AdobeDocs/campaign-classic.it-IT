@@ -97,7 +97,7 @@ Per consentire ai tipi di pubblico condivisi di funzionare con l’ID visitatore
 
 ## Passaggio 4: configurare il servizio ID visitatori {#step-4--configure-the-visitor-id-service}
 
-Nel caso in cui il servizio ID visitatore non sia mai stato configurato nelle proprietà o nei siti Web, consulta il seguente [documento](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html) per scoprire come configurare il servizio o il seguente [video](https://helpx.adobe.com/it/marketing-cloud/how-to/email-marketing.html#step-two).
+Nel caso in cui il servizio ID visitatore non sia mai stato configurato nelle proprietà o nei siti Web, consulta il seguente [documento](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html?lang=it) per scoprire come configurare il servizio o il seguente [video](https://helpx.adobe.com/it/marketing-cloud/how-to/email-marketing.html#step-two).
 
 Sincronizza gli identificatori cliente con ID dichiarato utilizzando la funzione `setCustomerID` nel servizio ID Experience Cloud con il codice di integrazione: `AdobeCampaignID`. `AdobeCampaignID` deve corrispondere al valore della chiave di riconciliazione impostata nel Source dati del destinatario configurato in [Passaggio 2: configurare le origini dati](#step-2--configure-the-data-sources).
 

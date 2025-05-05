@@ -437,7 +437,7 @@ Per utilizzare la [console client di Campaign](../../installation/using/installi
 
 Per la console client di Campaign è obbligatoria la versione più recente di Microsoft Edge WebView2.
 
-Scarica Microsoft Edge WebView2 dal [sito web per sviluppatori Microsoft](https://www.adobe.com/go/acc-ms-webview2-runtime-download).
+Scarica Microsoft Edge WebView2 dal [sito web per sviluppatori Microsoft](https://www.adobe.com/go/acc-ms-webview2-runtime-download_it).
 
 
 ## Mobile SDK {#MobileSDK}

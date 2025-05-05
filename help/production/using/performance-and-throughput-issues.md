@@ -57,7 +57,7 @@ Di seguito è riportato un elenco di articoli relativi alle best practice per la
   >
   >Il team di recapito messaggi si basa sul contratto e i clienti devono contattare il proprio rappresentante di Adobe per informazioni relative al progetto di recapito messaggi.
 
-* DKIM: per garantire il livello di sicurezza di DKIM, 1024b è la dimensione di crittografia consigliata come best practice. Le chiavi DKIM inferiori non saranno considerate valide dalla maggior parte dei fornitori di accesso. Consulta [questa pagina](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
+* DKIM: per garantire il livello di sicurezza di DKIM, 1024b è la dimensione di crittografia consigliata come best practice. Le chiavi DKIM inferiori non saranno considerate valide dalla maggior parte dei fornitori di accesso. Consulta [questa pagina](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=it#authentication).
 
 ## Problemi di recapito messaggi {#deliverability-issues}
 
@@ -71,7 +71,7 @@ Di seguito è riportato un elenco di best practice e articoli relativi al recapi
   >Il team di recapito messaggi si basa sul contratto e i clienti devono contattare il proprio rappresentante di Adobe per informazioni relative al progetto di recapito messaggi.
 
 * Impostazione affinità IP: una configurazione di affinità IP errata può interrompere completamente le e-mail (nome di operatore/affinità non corretto nella configurazione) o ridurre la velocità effettiva (numero ridotto di IP nell’affinità). Fai riferimento a questa [pagina](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
-* Dimensione dell’e-mail: la dimensione dell’e-mail svolge un ruolo importante nella velocità effettiva. La dimensione massima consigliata per l’e-mail è 60 KB. Fai riferimento a questa [pagina](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Nel report [Velocità effettiva di consegna](../../reporting/using/global-reports.md#delivery-throughput), controllare il numero di byte trasferiti per ora.
+* Dimensione dell’e-mail: la dimensione dell’e-mail svolge un ruolo importante nella velocità effettiva. La dimensione massima consigliata per l’e-mail è 60 KB. Fai riferimento a questa [pagina](https://helpx.adobe.com/it/legal/product-descriptions/campaign.html). Nel report [Velocità effettiva di consegna](../../reporting/using/global-reports.md#delivery-throughput), controllare il numero di byte trasferiti per ora.
 * Numero elevato di destinatari non validi: quando il numero di destinatari non validi è elevato, può influire sulla velocità effettiva. L’MTA continua a tentare di inviare e-mail a destinatari non validi. Assicurarsi che il database sia in buono stato di manutenzione.
 * Quantità di personalizzazione: se una consegna rimane in &quot;Personalization in progress&quot;, controlla il JavaScript utilizzato nei blocchi di personalizzazione.
 

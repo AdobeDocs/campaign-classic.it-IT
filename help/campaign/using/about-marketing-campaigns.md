@@ -18,7 +18,7 @@ Adobe Campaign offre un serie di soluzioni che consentono di personalizzare e di
 
 Le campagne includono azioni (consegne), processi (importazione o estrazione file) e risorse (documenti di marketing, descrizioni della consegna). Vengono utilizzati nelle campagne di marketing. Le campagne fanno parte di un programma e i programmi sono inclusi in un piano di campagna.
 
-Per ulteriori informazioni sulla gestione delle campagne, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
+Per ulteriori informazioni sulla gestione delle campagne, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=it){target=_blank}.
 
 ![](assets/do-not-localize/campaign.jpg){width="40%"}
 
@@ -95,6 +95,6 @@ This video presents the key concepts of marketing campaigns.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
-Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
 
 -->

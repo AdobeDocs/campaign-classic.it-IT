@@ -19,7 +19,7 @@ Nella console client di Campaign, i dati vengono visualizzati in elenchi. È pos
 
 >[!NOTE]
 >
->Per informazioni su come gestire e personalizzare gli elenchi in Adobe Campaign, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
+>Per informazioni su come gestire e personalizzare gli elenchi in Adobe Campaign, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
 
 <!--
 ## Count records {#counting-records}

@@ -27,7 +27,7 @@ Per impostare questo caso d’uso, abbiamo creato il seguente flusso di lavoro d
 
 Questo flusso di lavoro (eseguito quotidianamente) seleziona tutti i destinatari il cui compleanno cade nella data corrente.
 
-![](assets/do-not-localize/how-to-video.png) Questo caso d&#39;uso si trova anche sotto forma di video. Per ulteriori informazioni, consulta il video [Creazione di un flusso di lavoro](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html).
+![](assets/do-not-localize/how-to-video.png) Questo caso d&#39;uso si trova anche sotto forma di video. Per ulteriori informazioni, consulta il video [Creazione di un flusso di lavoro](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html?lang=it).
 
 A tale scopo, creare una campagna e fare clic sulla scheda **[!UICONTROL Targeting and workflows]**. Per ulteriori informazioni, consulta la sezione [Creazione della destinazione principale in un flusso di lavoro](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 

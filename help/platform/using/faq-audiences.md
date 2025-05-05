@@ -28,7 +28,7 @@ Puoi importare i destinatari o crearli manualmente utilizzando la console del cl
 
 Scopri dei facili casi d’uso per [importare profili](../../platform/using/import-operations-samples.md) nel tuo database.
 
-![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/importing-profiles.html)
+![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/importing-profiles.html?lang=it)
 
 ## Come posso definire la popolazione target per una campagna di marketing? {#how-can-i-define-the-target-population-of-a-marketing-campaign-}
 
@@ -41,7 +41,7 @@ Un elenco è un set statico di destinatari che possono essere oggetto di targeti
 
 [Fai clic qui per ulteriori informazioni](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group).
 
-![](assets/do-not-localize/how-to-video.png) Scopri questa funzione [in questo video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html) e [in quest’altro video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html)
+![](assets/do-not-localize/how-to-video.png) Scopri questa funzione [in questo video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html?lang=it) e [in quest’altro video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html?lang=it)
 
 ## Come posso deduplicare una popolazione prima di inviare un messaggio? {#how-can-i-deduplicate-a-population-before-sending-a-message-}
 

@@ -909,7 +909,7 @@ Ulteriori informazioni su [Servizi](../../delivery/using/about-services-and-subs
 
 Nel Pannello di controllo, puoi interagire con tutti i server SFTP collegati alle istanze di Campaign a cui hai accesso. Il Pannello di controllo Campaign ti consente di eseguire azioni sui server SFTP, ad esempio monitorare la capacità di archiviazione, gestire gli indirizzi IP per l’inserimento nell’elenco Consentiti e gestire le chiavi SSH pubbliche.
 
-Ulteriori informazioni sulla [gestione SFTP](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
+Ulteriori informazioni sulla [gestione SFTP](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=it).
 +++
 
 +++**Attività dei servizi di abbonamento**
