@@ -19,7 +19,7 @@ ht-degree: 13%
 >id="ac_workflow_intersection"
 >title="Attività Intersezione"
 >abstract="Un’attività di tipo Intersezione crea un target dall’intersezione dei target ricevuti. L’intersezione consente di estrarre solo la popolazione comune a tutti i risultati delle attività in entrata."
->additional-url="https://video.tv.adobe.com/v/341371?captions=ita" text="Guarda il video dimostrativo"
+>additional-url="https://video.tv.adobe.com/v/329373?captions=ita" text="Guarda il video dimostrativo"
 
 
 
