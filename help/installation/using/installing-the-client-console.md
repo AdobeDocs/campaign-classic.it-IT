@@ -173,6 +173,6 @@ Per accedere a un&#39;istanza esistente, effettuare le seguenti operazioni:
 
 Questo video mostra come installare e configurare il client Adobe Campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/35124?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/38269?quality=12&captions=ita)
 
 Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

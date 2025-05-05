@@ -109,7 +109,7 @@ Scopri come accedere ai dati, ordinare e filtrare i profili e come crearli e ges
 
 Questo video illustra inoltre la conformità di Adobe Campaign Classic con le normative generali sulla protezione dei dati.
 
->[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/326756?quality=12&captions=ita)
 
 Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
 
