@@ -442,6 +442,7 @@ Il pacchetto di aggiornamento deve contenere solo un’entità specifica, per es
    * Account esterno creato.
    * Il nuovo pacchetto è: 5101 - 2 - Account esterno dell’applicazione social (socialApplication_extAccount).
    * Parallelamente, il pacchetto 101 viene aggiornato per essere aggiunto all’account esterno, ma non viene distribuito.
+
      ![](assets/ncs_datapackage_best-practices-1.png)
 
 #### Documentazione del pacchetto {#package-documentation}

@@ -25,7 +25,7 @@ Sono disponibili tre diverse soglie:
 
 * La **soglia di connessione Web**, configurata nel server Web. Per modificarlo, contatta l’amministratore di sistema.
 
-* Soglia di connessione al database ****. Per modificarlo, contattare l&#39;amministratore del database.
+* Soglia di connessione al database **&#x200B;**. Per modificarlo, contattare l&#39;amministratore del database.
 
 * La **soglia di connessione Adobe Campaign**, disponibile in due posizioni:
 

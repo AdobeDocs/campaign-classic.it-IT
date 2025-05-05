@@ -68,7 +68,7 @@ Per ulteriori informazioni sui profili di prodotto, consulta la [documentazione 
 
 1. Configura le diverse funzionalità cliccando **[!UICONTROL Edit]** e seleziona le autorizzazioni da assegnare cliccando **[!UICONTROL Product profile]** sull&#39;icona più (+).
 
-   Per ulteriori informazioni su come gestire le autorizzazioni, consulta la documentazione](https://helpx.adobe.com/mt/enterprise/using/manage-permissions-and-roles.html) di [Admin Console.
+   Per ulteriori informazioni su come gestire le autorizzazioni, consulta la documentazione[&#128279;](https://helpx.adobe.com/mt/enterprise/using/manage-permissions-and-roles.html) di Admin Console.
 
 1. Per la **[!UICONTROL Report Suites]** funzionalità, aggiungi la **[!UICONTROL Report Suites]** funzionalità che devi usare in seguito.
 

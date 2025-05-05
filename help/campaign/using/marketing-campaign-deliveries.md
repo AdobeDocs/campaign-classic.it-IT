@@ -20,7 +20,7 @@ Le consegne possono essere create tramite il dashboard della campagna, un flusso
 
 Quando vengono create da una campagna, le consegne verranno collegate a questa campagna e consolidate a livello di campagna.
 
-![](assets/do-not-localize/how-to-video.png)[Scopri questa funzione nel video](#create-email-video)
+![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#create-email-video)
 
 ## Creare consegne {#creating-deliveries}
 

@@ -73,7 +73,7 @@ Per ogni indirizzo sono disponibili le seguenti informazioni:
 >
 >Fine anno 1: (1&#42;0,33)/(1+0,5)=22%.
 >
-Fine anno 2: ((1,22&#42;0,33)+0,33)/(1,5+0,75)=32,5%.
+>Fine anno 2: ((1,22&#42;0,33)+0,33)/(1,5+0,75)=32,5%.
 
 ### Identificare gli indirizzi messi in quarantena nei rapporti di consegna {#identifying-quarantined-addresses-in-delivery-reports}
 
@@ -108,7 +108,7 @@ Se un utente qualifica un&#39;e-mail come spam ([ciclo di feedback](https://expe
 
 >[!NOTE]
 >
-In Adobe Campaign la quarantena distingue tra maiuscole e minuscole. Accertati di importare gli indirizzi e-mail in lettere minuscole, in modo che non vengano reindirizzate in un secondo momento.
+>In Adobe Campaign la quarantena distingue tra maiuscole e minuscole. Accertati di importare gli indirizzi e-mail in lettere minuscole, in modo che non vengano reindirizzate in un secondo momento.
 
 Nell&#39;elenco degli indirizzi messi in quarantena (vedere [Identificazione degli indirizzi messi in quarantena per l&#39;intera piattaforma](#identifying-quarantined-addresses-for-the-entire-platform)), il campo **[!UICONTROL Error reason]** indica il motivo per cui l&#39;indirizzo selezionato è stato messo in quarantena.
 
@@ -144,7 +144,7 @@ Il loro stato diventa quindi **[!UICONTROL Valid]**.
 
 >[!IMPORTANT]
 >
-I destinatari con un indirizzo nello stato **[!UICONTROL Quarantine]** o **[!UICONTROL Denylisted]** non vengono mai rimossi, anche se ricevono un&#39;e-mail.
+>I destinatari con un indirizzo nello stato **[!UICONTROL Quarantine]** o **[!UICONTROL Denylisted]** non vengono mai rimossi, anche se ricevono un&#39;e-mail.
 
 ### Aggiornamenti manuali {#unquarantine-manual}
 
@@ -291,13 +291,13 @@ Durante l&#39;analisi della consegna, tutti i dispositivi esclusi dalla destinaz
 
 >[!NOTE]
 >
-Per i clienti che utilizzano il connettore Baidu, di seguito sono riportati i diversi tipi di errori:
+>Per i clienti che utilizzano il connettore Baidu, di seguito sono riportati i diversi tipi di errori:
 >
-* Problema di connessione all&#39;inizio della consegna: tipo di errore **[!UICONTROL Undefined]**, motivo dell&#39;errore **[!UICONTROL Unreachable]**, nuovo tentativo eseguito.
-* Connessione persa durante una consegna: errore morbido, motivo errore **[!UICONTROL Refused]**, nuovo tentativo eseguito.
-* Errore sincrono restituito da Baidu durante l&#39;invio: errore rigido, motivo dell&#39;errore **[!UICONTROL Refused]**, nessun nuovo tentativo eseguito.
+>* Problema di connessione all&#39;inizio della consegna: tipo di errore **[!UICONTROL Undefined]**, motivo dell&#39;errore **[!UICONTROL Unreachable]**, nuovo tentativo eseguito.
+>* Connessione persa durante una consegna: errore morbido, motivo errore **[!UICONTROL Refused]**, nuovo tentativo eseguito.
+>* Errore sincrono restituito da Baidu durante l&#39;invio: errore rigido, motivo dell&#39;errore **[!UICONTROL Refused]**, nessun nuovo tentativo eseguito.
 >
-Adobe Campaign contatta il server Baidu ogni 10 minuti per recuperare lo stato del messaggio inviato e aggiorna i broadLog. Se un messaggio viene dichiarato come inviato, lo stato del messaggio nei broadLog è impostato su **[!UICONTROL Received]**. Se Baidu dichiara un errore, lo stato viene impostato su **[!UICONTROL Failed]**.
+>Adobe Campaign contatta il server Baidu ogni 10 minuti per recuperare lo stato del messaggio inviato e aggiorna i broadLog. Se un messaggio viene dichiarato come inviato, lo stato del messaggio nei broadLog è impostato su **[!UICONTROL Received]**. Se Baidu dichiara un errore, lo stato viene impostato su **[!UICONTROL Failed]**.
 
 **Per Android V2**
 
@@ -516,7 +516,7 @@ Il meccanismo di quarantena per i messaggi SMS è globalmente lo stesso del proc
 
 >[!NOTE]
 >
-La tabella **[!UICONTROL Delivery log qualification]** non si applica al connettore **SMPP** generico esteso.
+>La tabella **[!UICONTROL Delivery log qualification]** non si applica al connettore **SMPP** generico esteso.
 
 <table> 
  <tbody> 
@@ -575,9 +575,9 @@ Prima che venga qualificato un nuovo tipo di errore, il motivo dell&#39;errore �
 
 >[!NOTE]
 >
-I tipi di errore e i motivi dell’errore sono gli stessi delle e-mail. Vedi [Tipi e motivi di errori di consegna](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>I tipi di errore e i motivi dell’errore sono gli stessi delle e-mail. Vedi [Tipi e motivi di errori di consegna](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 >
-Chiedi al provider un elenco di stati e codici di errore per impostare i tipi di errore e i motivi dell’errore nella tabella Qualificazione del registro di consegna.
+>Chiedi al provider un elenco di stati e codici di errore per impostare i tipi di errore e i motivi dell’errore nella tabella Qualificazione del registro di consegna.
 
 Esempio di messaggio generato:
 

@@ -82,5 +82,5 @@ La chiave di identificazione di uno schema è una stringa creata utilizzando lo 
 >
 >* Gli identificatori non devono iniziare con caratteri numerici.
 >
->* I seguenti namespace sono riservati alle descrizioni delle entità di sistema necessarie per il funzionamento del applicazione Adobe Campaign e non devono essere utilizzati: xtk, nl **,** nms **, ncm**, **** temp **,** ncl **,** crm **,** xxl **.******
+>* I seguenti namespace sono riservati alle descrizioni delle entità di sistema necessarie per il funzionamento del applicazione Adobe Campaign e non devono essere utilizzati: xtk, nl **,** nms **, ncm**, **&#x200B;**&#x200B;temp **,** ncl **,** crm **,** xxl **.**&#x200B;**&#x200B;**
 >

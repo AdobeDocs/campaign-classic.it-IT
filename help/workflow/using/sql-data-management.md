@@ -27,9 +27,9 @@ Prima di configurare l’attività, assicurati di soddisfare i seguenti prerequi
 
   Per ulteriori informazioni, a seconda della versione di Campaign in uso, consulta le sezioni seguenti:
 
-  ![](assets/do-not-localize/v7.jpeg)[Documentazione di Campaign v7](../../installation/using/about-fda.md)
+  ![](assets/do-not-localize/v7.jpeg) [Documentazione di Campaign v7](../../installation/using/about-fda.md)
 
-  ![](assets/do-not-localize/v8.png)[Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=it)
+  ![](assets/do-not-localize/v8.png) [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=it)
 
 * Lo schema in uscita deve esistere nel database ed essere collegato a un database FDA.
 * L&#39;operatore che esegue il flusso di lavoro deve disporre dell&#39;autorizzazione denominata **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]**. [Ulteriori informazioni](../../platform/using/access-management-named-rights.md).

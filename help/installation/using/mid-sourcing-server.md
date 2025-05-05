@@ -125,7 +125,7 @@ Dalla console del client, individua l&#39;indirizzamento di **e-mail utilizzando
 
    ![](assets/mid_recette_user_restrictions.png)
 
-1. Riavviare il modulo Web utilizzando il comando seguente: ** web**.
+1. Riavviare il modulo Web utilizzando il comando seguente: **&#x200B; web**.
 
 È necessario modificare l&#39;impostazione del server di mid-sourcing nel file serverConf.xml. La riga seguente deve essere aggiunta alla sezione &quot;Gestione delle affinità con gli indirizzi IP&quot;, nella riga esistente:
 
@@ -139,9 +139,9 @@ L’attributo &quot;@name&quot; deve rispettare le regole seguenti:
 
 &quot;marketing_account_operator_name&quot; si riferisce al nome interno dell’account di mid-sourcing dichiarato nell’istanza di mid-sourcing.
 
-&#39;affinity_name&#39; fa riferimento al nome arbitrario assegnato all&#39;affinità. Questo nome deve essere univoco. I caratteri autorizzati sono `[a-z]``[A-Z]``[0-9]`. L&#39;obiettivo è dichiarare un gruppo di indirizzi IP pubblici.
+&#39;affinity_name&#39; fa riferimento al nome arbitrario assegnato all&#39;affinità. Questo nome deve essere univoco. I caratteri autorizzati sono `[a-z]` `[A-Z]` `[0-9]`. L&#39;obiettivo è dichiarare un gruppo di indirizzi IP pubblici.
 
-&#39;affinity_group&#39; mette in relazione la sub-affinità dichiarata nella mappatura di destinazione utilizzata in ciascuna consegna. L’ultima parte include &quot;.&quot; viene ignorato se non è presente alcuna sub-affinità. I caratteri autorizzati sono `[a-z]``[A-Z]``[0-9]`.
+&#39;affinity_group&#39; mette in relazione la sub-affinità dichiarata nella mappatura di destinazione utilizzata in ciascuna consegna. L’ultima parte include &quot;.&quot; viene ignorato se non è presente alcuna sub-affinità. I caratteri autorizzati sono `[a-z]` `[A-Z]` `[0-9]`.
 
 È necessario arrestare e quindi riavviare il server affinché la modifica possa essere presa in considerazione.
 

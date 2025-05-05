@@ -94,7 +94,7 @@ Nelle istanze di esecuzione, è possibile accedere ai flussi di lavoro tecnici p
 
 ### Pianificazione del flusso di lavoro di archiviazione
 
-Evitare di modificare la pianificazione del flusso di lavoro di archiviazione **** eseguita sull&#39;istanza di controllo. In caso contrario, alcuni dati di tracciamento estratti dall’istanza di esecuzione potrebbero andare persi.
+Evitare di modificare la pianificazione del flusso di lavoro di archiviazione **&#x200B;**&#x200B;eseguita sull&#39;istanza di controllo. In caso contrario, alcuni dati di tracciamento estratti dall’istanza di esecuzione potrebbero andare persi.
 
 Se si modifica la pianificazione del flusso di lavoro di archiviazione, è necessario modificare anche la pianificazione del flusso di lavoro di **tracciamento** nell&#39;istanza di esecuzione in modo che corrisponda alla pianificazione del flusso di lavoro di archiviazione nell&#39;istanza di controllo.
 
