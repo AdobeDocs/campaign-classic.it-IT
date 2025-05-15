@@ -3,10 +3,11 @@ product: campaign
 title: Nuove funzioni basate su GCM
 description: Nuove funzioni basate su GCM
 feature: Technote
-source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
+exl-id: 154dee7a-a1e9-40a2-bfa5-3641382d0574
+source-git-commit: b6d64f66d287dba79be5eddec48ee852c2c7740c
 workflow-type: tm+mt
 source-wordcount: '578'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -37,7 +38,7 @@ Crittografa la stringa di caratteri con la chiave dell’istanza utilizzando l�
 
 ```
             String 
-            encrypted = Encrypt (
+            encrypted = EncryptString (
             String       
             decrypted
             
@@ -85,7 +86,7 @@ Crittografa la stringa di caratteri con la chiave del server utilizzando l’alg
 Crittografa una stringa di caratteri con la chiave dell’istanza o di qualsiasi altra chiave.
 
 ```
-            cryptString (str [, key
+            encryptString (str [, key
       ] [, useSalt ])
          
 ```
@@ -126,7 +127,7 @@ Disponibile in:
 
 ### decryptString() {#decryptString-javascript}
 
-Crittografa una stringa di caratteri con la chiave dell’istanza o di qualsiasi altra chiave. Questa funzione legacy può essere utilizzata con GCM. È obsoleto per la decrittografia del testo crittografato crittografato utilizzando la modalità AES-CBC.
+Decritta una stringa di caratteri con la chiave dell’istanza o di qualsiasi altra chiave. Questa funzione legacy può essere utilizzata con GCM. È obsoleto per la decrittografia del testo crittografato crittografato utilizzando la modalità AES-CBC.
 
 ```
             decryptString (str [, key
