@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 266ecd49-7101-4ff1-941f-1f9b39b44955
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 4fb262c616276f785f97b42bec22c150afc6e5c8
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 2%
+source-wordcount: '87'
+ht-degree: 0%
 
 ---
 
@@ -23,21 +23,27 @@ ht-degree: 2%
 
 I flussi di lavoro possono essere utili per automatizzare alcuni dei processi di importazione. Che tu importi dati da un file locale o da un SFTP, puoi utilizzare i flussi di lavoro per standardizzare le procedure di gestione dei dati.
 
-### Utilizza dati da un elenco: Leggi elenco {#using-data-from-a-list--read-list}
+>[!NOTE]
+>
+>Per ulteriori informazioni sull&#39;importazione e l&#39;esportazione di dati tramite flussi di lavoro, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/add-profiles/import-profiles){target=_blank}.
 
-I dati inviati in un flusso di lavoro possono provenire da elenchi in cui i dati sono stati preparati e strutturati in precedenza.
 
-L&#39;elenco potrebbe essere stato creato direttamente in Adobe Campaign o importato dall&#39;opzione **[!UICONTROL Import a list]**. Per ulteriori informazioni su questa opzione, consulta questa [pagina](../../platform/using/about-generic-imports-exports.md).
+<!--
+### Use data from a list: Read list {#using-data-from-a-list--read-list}
 
-Per ulteriori informazioni sull&#39;utilizzo dell&#39;attività di lettura elenco in un flusso di lavoro, fare riferimento a [questa pagina](../../workflow/using/read-list.md).
+The data sent in a workflow can come from lists whereby the data has been prepared and structured beforehand.
 
-### Caricare dati da un file {#loading-data-from-a-file}
+This list may have been directly created in Adobe Campaign or imported by the **[!UICONTROL Import a list]** option. For more on this option, refer to this [page](../../platform/using/about-generic-imports-exports.md).
 
-I dati elaborati in un flusso di lavoro possono essere estratti da un file strutturato in modo che possa essere importato in Adobe Campaign.
+For more on using the read list activity in a workflow, refer to [this page](../../workflow/using/read-list.md).
 
-Una descrizione dell&#39;attività di caricamento dati è disponibile nella sezione [Caricamento dati (file)](../../workflow/using/data-loading-file.md).
+### Load data from a file {#loading-data-from-a-file}
 
-Esempio di file strutturato da importare:
+The data processed in a workflow can be extracted from a structured file so that it can be imported into Adobe Campaign.
+
+A description of the loading data activity can be found in the [Data loading (file)](../../workflow/using/data-loading-file.md) section.
+
+Example of structured file to import:
 
 ```
 lastname;firstname;birthdate;email;crmID
@@ -47,10 +53,11 @@ Smith;Clara;08/02/1989;hayden.smith@example.com;124567
 Durance;Allison;15/12/1978;allison.durance@example.com;120987
 ```
 
-Una volta raccolti i dati, puoi utilizzarli nei flussi di lavoro, ad esempio per arricchire una consegna o aggiornare il database. Per ulteriori informazioni, consulta [questa pagina](../../workflow/using/how-to-use-workflow-data.md).
+Once data has been collected you can use it in your workflows, for example to enrich a delivery or update the database. For more on this, refer to [this page](../../workflow/using/how-to-use-workflow-data.md).
 
-## Esporta dati {#exporting-data-via-a-workflow}
+## Export data {#exporting-data-via-a-workflow}
 
-I flussi di lavoro possono essere utili per automatizzare alcuni dei processi di esportazione o per esportare set di dati precisi dopo aver utilizzato alcune delle attività di gestione dati disponibili per trasformare i dati.
+Workflows can be a useful way to automate some of your export processes or to export precise sets of data after using some of the available data management activities available to transform your data.
 
-Le operazioni di esportazione vengono eseguite utilizzando **[!UICONTROL Data extraction (file) activity]**. Per ulteriori informazioni su come configurare e utilizzare l&#39;attività, fare riferimento a [questa pagina](../../workflow/using/extraction-file.md).
+Export operations are performed using a **[!UICONTROL Data extraction (file) activity]**. For more on how to configure and use the activity, refer to [this page](../../workflow/using/extraction-file.md).
+-->
