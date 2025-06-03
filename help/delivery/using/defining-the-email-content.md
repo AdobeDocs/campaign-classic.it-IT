@@ -5,8 +5,10 @@ description: Scopri come definire il contenuto delle e-mail quando utilizzi Adob
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Email Design
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '1958'
 ht-degree: 1%
@@ -72,11 +74,11 @@ Per impostazione predefinita, i messaggi vengono inviati in formato HTML o testo
 
   >[!IMPORTANT]
   >
-  >Il contenuto HTML deve essere creato in precedenza, quindi importato in Adobe Campaign. L’editor di HTML non è progettato per la creazione di contenuti.
+  >Il contenuto HTML deve essere creato in anticipo e quindi importato in Adobe Campaign. L’editor di HTML non è progettato per la creazione di contenuti.
 
   La scheda secondaria **[!UICONTROL Preview]** consente di visualizzare il rendering di ogni contenuto per un destinatario. I campi di personalizzazione e gli elementi condizionali del contenuto vengono sostituiti con le informazioni corrispondenti per il profilo selezionato.
 
-  I pulsanti della barra degli strumenti consentono di accedere alle azioni standard e ai parametri di formattazione per la pagina HTML.
+  I pulsanti della barra degli strumenti consentono di accedere alle azioni e ai parametri di formattazione standard per la pagina HTML.
 
   ![](assets/s_ncs_user_wizard_email01_138.png)
 
@@ -104,7 +106,7 @@ Per impostazione predefinita, i messaggi vengono inviati in formato HTML o testo
 
   ![](assets/s_ncs_user_wizard_email01_141.png)
 
-  Per quanto riguarda il formato HTML, fare clic sulla scheda **[!UICONTROL Preview]** nella parte inferiore della pagina per visualizzare il rendering del messaggio con la relativa personalizzazione.
+  Per il formato HTML, fare clic sulla scheda **[!UICONTROL Preview]** nella parte inferiore della pagina per visualizzare il rendering del messaggio con la relativa personalizzazione.
 
   ![](assets/s_ncs_user_wizard_email01_142.png)
 
@@ -144,7 +146,7 @@ Per personalizzare l&#39;elenco degli emoticon, fare riferimento a questa [pagin
 
 ## Aggiungi immagini {#adding-images}
 
-Le consegne e-mail in formato HTML possono contenere immagini. Dall&#39;assistente alla consegna, puoi importare una pagina di HTML contenente immagini o inserire immagini direttamente utilizzando l&#39;editor di HTML tramite l&#39;icona **[!UICONTROL Image]**.
+Le consegne e-mail in formato HTML possono contenere immagini. Dall&#39;assistente alla consegna, puoi importare una pagina HTML contenente immagini o inserire immagini direttamente utilizzando l&#39;editor HTML tramite l&#39;icona **[!UICONTROL Image]**.
 
 
 ### Guardrail {#img-guardrails}
@@ -186,7 +188,7 @@ Per gestire le immagini tramite l’assistente alla consegna:
 * Puoi caricare le immagini manualmente senza attendere la fase di analisi della consegna. A tale scopo, fare clic sul collegamento **[!UICONTROL Upload the images straightaway...]**.
 * Puoi specificare un altro percorso per accedere alle immagini sul server di tracciamento. A tale scopo, immetterlo nel campo **[!UICONTROL Images URL]**. Questo valore sostituisce il valore definito nei parametri dell&#39;assistente all&#39;installazione.
 
-Quando apri contenuti HTML con le immagini incluse nell’assistente alla consegna, un messaggio ti offre la possibilità di caricare le immagini immediatamente, in base ai parametri di consegna.
+Quando apri contenuti HTML con immagini incluse nell’assistente alla consegna, un messaggio ti offre la possibilità di caricare le immagini immediatamente, in base ai parametri di consegna.
 
 ![](assets/s_ncs_user_email_del_img_local.png)
 

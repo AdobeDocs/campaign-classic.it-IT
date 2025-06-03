@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: creating-queries
 exl-id: cf914366-8bac-4d68-a0cc-2a43d102eef2
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 2%
+source-wordcount: '147'
+ht-degree: 10%
 
 ---
 
@@ -30,113 +30,117 @@ I passaggi per la creazione di una query in Adobe Campaign sono i seguenti:
 
 >[!NOTE]
 >
->Tutti questi passaggi sono disponibili nell’editor di query generico. Quando una query viene creata in un altro contesto, alcuni passaggi possono essere esclusi.\
+>* Tutti questi passaggi sono disponibili nell’editor di query generico. Quando una query viene creata in un altro contesto, alcuni passaggi possono essere esclusi.\
 >L&#39;attività Query viene presentata in [questa sezione](../../workflow/using/query.md).
+>* Per ulteriori informazioni sulle query e su come crearle, consulta la [documentazione di Campaign v8](../../workflow/using/query.md).
 
-## Passaggio 1: scegliere una tabella {#step-1---choose-a-table}
+<!--
+## Step 1 - Choose a table {#step-1---choose-a-table}
 
-Selezionare la tabella contenente i dati da interrogare nella finestra **[!UICONTROL Document type]**. Se necessario, filtrare i dati utilizzando il campo filtro o il pulsante **[!UICONTROL Filters]**.
+Select the table containing the data you want to query in the **[!UICONTROL Document type]** window. If necessary, filter the data using the filter field or the **[!UICONTROL Filters]** button.
 
 ![](assets/query_editor_nveau_21.png)
 
-## Passaggio 2: scegliere i dati da estrarre {#step-2---choose-data-to-extract}
+## Step 2 - Choose data to extract {#step-2---choose-data-to-extract}
 
-Nella finestra **[!UICONTROL Data to extract]**, selezionare i dati da visualizzare: questi campi costituiranno le colonne di output.
+In the **[!UICONTROL Data to extract]** window, select the data to display: these fields will make up the output columns.
 
-Selezionare ad esempio **[!UICONTROL Age]**, **[!UICONTROL Primary key]**, **[!UICONTROL Email domain]** e **[!UICONTROL City]**. I risultati saranno organizzati in base a questa selezione. Utilizzare le frecce blu a destra della finestra per modificare l&#39;ordine delle colonne.
+For example, select **[!UICONTROL Age]**, **[!UICONTROL Primary key]**, **[!UICONTROL Email domain]** and **[!UICONTROL City]**. The results will be organized based on this selection. Use the blue arrows to the right of the window to change the column order.
 
 ![](assets/query_editor_nveau_01.png)
 
-È possibile modificare un&#39;espressione inserendovi una formula o eseguendo un processo su una funzione di aggregazione. A tale scopo, fare clic sul campo colonna **[!UICONTROL Expression]**, quindi selezionare **[!UICONTROL Edit expression]**.
+You can edit an expression by inserting a formula into it or running a process on an aggregate function. To do this, click the **[!UICONTROL Expression]** column field, then select **[!UICONTROL Edit expression]**.
 
 ![](assets/query_editor_nveau_97.png)
 
-È possibile raggruppare i dati della colonna di output: a questo scopo, selezionare **[!UICONTROL Yes]** nella colonna **[!UICONTROL Group]** della finestra **[!UICONTROL Data to extract]**. Questa funzione genera un risultato attorno all’asse di raggruppamento selezionato. Un esempio di query con raggruppamento è disponibile in [questa sezione](../../workflow/using/querying-delivery-information.md).
+It is possible to group output column data: to do this, check **[!UICONTROL Yes]** in the **[!UICONTROL Group]** column of the **[!UICONTROL Data to extract]** window. This function generates a result around the checked grouping axis. An example of a query with grouping is available in [this section](../../workflow/using/querying-delivery-information.md).
 
 ![](assets/query_editor_nveau_56.png)
 
-* La funzione **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** consente di &quot;raggruppare&quot; e selezionare ciò che è stato raggruppato (&quot;avere&quot;). Questa funzione si applica a tutti i campi nella colonna di output. Ad esempio, questa opzione consente di raggruppare tutte le scelte di una colonna di output e di recuperare un tipo specifico di informazioni, ad esempio i destinatari compresi tra 35 e 50.
+* The **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** function lets you "group by" and select what has been grouped ("having"). This function applies to all fields in the output column. For example, this option lets you group all choices of an output column and recover a specific type of information, such as recipients between 35 and 50.
 
-  Per ulteriori informazioni al riguardo, consulta [questa sezione](../../workflow/using/querying-using-grouping-management.md).
+  For more on this, refer to [this section](../../workflow/using/querying-using-grouping-management.md).
 
-* La funzione **[!UICONTROL Remove duplicate rows (DISTINCT)]** consente di deduplicare risultati identici ottenuti nella colonna di output. Ad esempio, se esegui un censimento selezionando i campi Cognome, Nome ed E-mail nella colonna di output, quelli con dati identici verranno eliminati, in quanto significa che lo stesso contatto è stato immesso più volte nel database: verrà preso in considerazione un solo risultato.
+* The **[!UICONTROL Remove duplicate rows (DISTINCT)]** function lets you deduplicate identical results obtained in the output column. For example, if you take a census by selecting the Last name, First name and Email fields in the output column, those with identical data will be eliminated, since it means the same contact has been entered several times in the database: only one result will be taken into account.
 
-## Passaggio 3: ordinare i dati {#step-3---sort-data}
+## Step 3 - Sort data {#step-3---sort-data}
 
-La finestra **[!UICONTROL Sorting]** consente di ordinare il contenuto delle colonne. Utilizza le frecce per modificare l’ordine delle colonne:
+The **[!UICONTROL Sorting]** window lets you sort column content. Use the arrows to change the column order:
 
-* La colonna **[!UICONTROL Sorting]** consente un ordinamento semplice e dispone il contenuto delle colonne da A a Z o in ordine crescente.
-* **[!UICONTROL Descending sort]** dispone il contenuto da Z ad A e in ordine decrescente. Ciò è utile, ad esempio, per visualizzare le vendite dei record: le cifre più alte vengono visualizzate nella parte superiore dell’elenco.
+* The **[!UICONTROL Sorting]** column enables a simple sort and arranges column content from A to Z or in ascending order.
+* The **[!UICONTROL Descending sort]** arranges the content from Z to A and in descending order. This is useful for viewing record sales for example: the highest figures are shown at the top of the list.
 
-In questo esempio, i dati vengono ordinati in ordine crescente in base all’età del destinatario.
+In this example, the data is sorted in ascending order based on recipient age.
 
 ![](assets/query_editor_nveau_57.png)
 
-## Passaggio 4: filtrare i dati {#step-4---filter-data}
+## Step 4 - Filter data {#step-4---filter-data}
 
-L’editor delle query ti consente di filtrare i dati per perfezionare la ricerca.
+The query editor lets you filter data to refine your search.
 
-I filtri offerti dipendono dalla tabella interessata dalla query.
+The filters offered depend on the table which the query concerns.
 
 ![](assets/query_editor_nveau_09.png)
 
-Dopo aver selezionato **[!UICONTROL Filtering conditions]**, potrai accedere alla sezione **[!UICONTROL Target elements]**: questo ti consente di definire come filtrare i dati da raccogliere.
+Once you select the **[!UICONTROL Filtering conditions]** you will access the **[!UICONTROL Target elements]** section: this lets you define how to filter the data to collect.
 
-* Per creare un nuovo filtro, selezionare i campi, gli operatori e i valori necessari per la creazione della formula da verificare per la selezione dei dati. È possibile combinare diverse condizioni (per ulteriori informazioni, consulta [Definizione delle condizioni del filtro](../../platform/using/defining-filter-conditions.md)).
-* Per utilizzare i filtri salvati in precedenza, aprire l&#39;elenco a discesa facendo clic sul pulsante **[!UICONTROL Add]**, fare clic su **[!UICONTROL Predefined filter]** e selezionare quello desiderato.
+* To create a new filter, select the fields, operators and values required for creating the formula to be verified in order for data to be selected. It's possible to combine several conditions (for more on this, refer to [Defining filter conditions](../../platform/using/defining-filter-conditions.md)).
+* To use previously saved filters, open the drop-down list by clicking the **[!UICONTROL Add]** button, click **[!UICONTROL Predefined filter]** and select the one you want.
 
   ![](assets/query_editor_15.png)
 
-* I filtri creati in **[!UICONTROL Generic query editor]** sono disponibili in altre applicazioni di query e viceversa. Per salvare un filtro, fare clic sull&#39;icona **[!UICONTROL Save]**.
+* The filters created in the **[!UICONTROL Generic query editor]** are available in other query applications and vice versa. To save a filter, click the **[!UICONTROL Save]** icon.
 
   >[!NOTE]
   >
-  >Per ulteriori informazioni sulla creazione e l&#39;utilizzo dei filtri, consulta [Opzioni di filtro](../../platform/using/filtering-options.md).
+  >For more on creating and using filters, refer to [Filtering options](../../platform/using/filtering-options.md).
 
-Come mostrato nell&#39;esempio seguente, per recuperare tutti i destinatari di lingua inglese, selezionare: &quot;recipient language **equal to** EN&quot;.
+As shown in the following example, to recover all English-speaking recipients, select: "recipient language **equal to** EN".
 
 ![](assets/query_editor_nveau_89.png)
 
 >[!NOTE]
 >
->È possibile accedere direttamente a un&#39;opzione digitando la formula seguente nel campo **Valore**: **$(opzioni:NOME_OPZIONE)**.
+>You can directly access an option by typing the following formula in the **Value** field: **$(options:OPTION_NAME)**.
 
-Fare clic sulla scheda **[!UICONTROL Preview]** per visualizzare il risultato della condizione di filtro. In questo caso, tutti i destinatari di lingua inglese vengono visualizzati con il loro nome, nome e indirizzo e-mail.
+Click the **[!UICONTROL Preview]** tab to view the result of the filtering condition. In this case, all English-speaking recipients are displayed with their name, first name and email address.
 
 ![](assets/query_editor_nveau_98.png)
 
-Gli utenti che hanno familiarità con il linguaggio SQL possono fare clic su **[!UICONTROL Generate SQL query]** per visualizzare la query in SQL.
+Users familiar with SQL language can click **[!UICONTROL Generate SQL query]** to view the query in SQL.
 
 ![](assets/query_editor_nveau_99.png)
 
-## Passaggio 5: formattare i dati {#step-5---format-data}
+## Step 5 - Format data {#step-5---format-data}
 
-Dopo aver configurato i filtri di restrizione, si accede alla finestra **[!UICONTROL Data formatting]**. Questa finestra consente di ridisporre le colonne di output, trasformare i dati e modificare le lettere maiuscole e minuscole delle etichette di colonna. Consente inoltre di applicare una formula al risultato finale utilizzando un campo calcolato.
+Once you have configured the restriction filters, you will access the **[!UICONTROL Data formatting]** window. This window lets you re-arrange output columns, transform data, and change the upper/lower case of the column labels. It also lets you apply a formula to the final result using a calculated field.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sui tipi di campi calcolati, vedere [Creazione di campi calcolati](../../platform/using/defining-filter-conditions.md#creating-calculated-fields).
+>For more information on the types of calculated fields, refer to [Creating calculated fields](../../platform/using/defining-filter-conditions.md#creating-calculated-fields).
 
-Le colonne non selezionate non vengono visualizzate nella finestra di anteprima dati.
+Unchecked columns will not be shown in the data preview window.
 
 ![](assets/query_editor_nveau_10.png)
 
-La colonna **[!UICONTROL Transformation]** consente di modificare l&#39;etichetta di una colonna in maiuscolo o minuscolo. Selezionare la colonna e fare clic nella colonna **[!UICONTROL Transformation]**. Puoi scegliere:
+The **[!UICONTROL Transformation]** column lets you change a column label to upper or lower case. Select the column and click in the **[!UICONTROL Transformation]** column. You can choose:
 
 * **[!UICONTROL Switch to lower case]**,
-* **[!UICONTROL Switch to upper case]**,
+* **[!UICONTROL Switch to upper case]**, 
 * **[!UICONTROL First letter in upper case]**.
 
 ![](assets/query_editor_nveau_42.png)
 
-## Passaggio 6: visualizzare l’anteprima dei dati {#step-6---preview-data}
+## Step 6 - Preview data {#step-6---preview-data}
 
-La finestra **[!UICONTROL Data preview]** è l&#39;ultima fase. Fai clic su **[!UICONTROL Start the preview of the data]** per ottenere i risultati della query. È disponibile in colonne o in formato XML. Fare clic sulla scheda **[!UICONTROL Generated SQL queries]** per visualizzare la query in formato SQL.
+The **[!UICONTROL Data preview]** window is the last stage. Click **[!UICONTROL Start the preview of the data]** to get your query result. It is available in columns or in XML format. Click the **[!UICONTROL Generated SQL queries]** tab to view the query in SQL format.
 
-In questo esempio, i dati vengono ordinati in ordine crescente in base all’età del destinatario.
+In this example, data is sorted in ascending order based on recipient age.
 
 ![](assets/query_editor_nveau_11.png)
 
 >[!NOTE]
 >
->Per impostazione predefinita, nella finestra **[!UICONTROL Data preview]** vengono visualizzate solo le prime 200 righe. Per modificare il valore, immettere un numero nella casella **[!UICONTROL Lines to display]** e fare clic su **[!UICONTROL Start the preview of the data]**.
+>By default, only the first 200 lines are displayed in the **[!UICONTROL Data preview]** window. To change this, enter a number in the **[!UICONTROL Lines to display]** box and click **[!UICONTROL Start the preview of the data]**.
+
+-->

@@ -6,29 +6,50 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Email
 role: User
 exl-id: dbdfc04a-691b-470d-b96d-4c8a9531327d
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 8%
+source-wordcount: '224'
+ht-degree: 1%
 
 ---
 
 # Informazioni sul canale e-mail{#about-email-channel}
 
-Adobe Campaign consente di inviare in massa messaggi elettronici personalizzati a una popolazione target.
+Con Adobe Campaign, crea consegne e-mail per inviare e-mail personalizzate alla popolazione target.
 
-Prima di iniziare a inviare e-mail:
+Scopri i passaggi chiave relativi alla creazione di consegne e-mail nella documentazione di Campaign v8:
 
-* Assicurati che i profili dei destinatari contengano almeno un indirizzo e-mail.
-* Ulteriori informazioni sulle [best practice per la consegna](delivery-best-practices.md) di Adobe Campaign.
-* Consulta queste sezioni per ulteriori informazioni sul recapito messaggi: [Gestione del recapito messaggi in Campaign](about-deliverability.md) e [Guida alle best practice per il recapito messaggi](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it).
+* [Creare una consegna e-mail](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}: scopri i diversi passaggi necessari per creare una consegna e-mail.
+* [Definisci il contenuto dell&#39;e-mail](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}: definisci ciò che l&#39;e-mail includerà: mittente, oggetto, contenuto, immagini.
+* [Definisci contenuto interattivo](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html){target="_blank"}: utilizza il formato AMP interattivo per e-mail per inviare e-mail dinamiche.
+* [Invia e-mail su dispositivi mobili giapponesi](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}: utilizza uno dei tre formati giapponesi specifici per l&#39;e-mail su dispositivi mobili.
+* [Allega file a un&#39;e-mail](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html){target="_blank"}: scopri i diversi modi in cui allegare uno o più file a un&#39;e-mail.
 
-I passaggi chiave per inviare un’e-mail sono i seguenti:
+Per informazioni sui parametri delle e-mail nella documentazione di Campaign v8, consulta queste pagine:
 
-* [Creare una consegna e-mail](creating-an-email-delivery.md)
-* [Definire la popolazione target](steps-defining-the-target-population.md)
-* [Definire il contenuto dell’e-mail](defining-the-email-content.md)
-* [Inviare l’e-mail](sending-messages.md)
-* [Monitorare la consegna](about-delivery-monitoring.md)
+* [Collegamento alla pagina mirror](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html){target="_blank"}: configura la pagina mirror per garantire ai client la migliore esperienza di rendering.
+* [Aggiungi un indirizzo Ccn](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-bcc.html){target="_blank"}: configura Adobe Campaign per conservare una copia delle e-mail inviate dalla tua piattaforma.
+* [Definisci parametri e-mail aggiuntivi](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html){target="_blank"}: ulteriori informazioni sulle opzioni e i parametri disponibili nelle proprietà di consegna.
 
-Le sezioni seguenti forniscono informazioni specifiche per il canale e-mail. Per informazioni globali su come creare una consegna, consulta [questa sezione](steps-about-delivery-creation-steps.md).
+Fai riferimento anche a questa [pagina](sending-with-enhanced-mta.md) per informazioni sull&#39;MTA avanzato.
+
+
+<!--
+Adobe Campaign lets you mass deliver personalized electronic messages to a target population.
+
+Before starting sending emails:
+
+* Make sure recipient profiles contain at least an email address.
+* Learn more about the Adobe Campaign [Delivery best practices](delivery-best-practices.md).
+* Read out these sections to learn more about Deliverability: [Deliverability management in Campaign](about-deliverability.md) and [Deliverability best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
+
+The key steps to send an email are as follows:
+
+* [Create an email delivery](creating-an-email-delivery.md)
+* [Define the target population](steps-defining-the-target-population.md)
+* [Define the email content](defining-the-email-content.md)
+* [Send the email](sending-messages.md)
+* [Monitor the delivery](about-delivery-monitoring.md)
+
+The sections below provide information that is specific to the email channel. For global information on how to create a delivery, refer to [this section](steps-about-delivery-creation-steps.md).
+-->

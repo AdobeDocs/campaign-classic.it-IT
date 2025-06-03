@@ -4,7 +4,9 @@ title: Campaign - Connettore Microsoft Dynamics CRM
 description: Scopri come collegare Campaign e Microsoft Dynamics
 feature: Microsoft CRM Integration
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+hide: true
+hidefromtoc: true
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '1104'
 ht-degree: 2%
@@ -201,7 +203,7 @@ Campaign e Microsoft Dynamics sono ora connessi. È possibile impostare la sincr
 
 ## Tipi di dati dei campi supportati {#ms-dyn-supported-types}
 
-Di seguito sono elencati i tipi di attributo supportati/non supportati per Microsoft Dynamics 365:
+Di seguito sono elencati i tipi di attributo supportati/non supportati da Microsoft Dynamics 365:
 
 
 | Tipo di attributo | Supportato |

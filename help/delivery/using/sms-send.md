@@ -5,23 +5,25 @@ description: Scopri come inviare, monitorare e tenere traccia degli SMS in Campa
 feature: SMS
 role: User
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 3%
+source-wordcount: '887'
+ht-degree: 0%
 
 ---
 
-# Inviare, monitorare e tenere traccia delle consegne SMS{#sms-properties}
+# Configurazione aggiuntiva{#sms-properties}
 
-## Inviare messaggi SMS {#sending-sms-messages}
+<!--
+## Send SMS messages {#sending-sms-messages}
 
-Per approvare il messaggio e inviarlo ai destinatari della consegna creata, fare clic su **[!UICONTROL Send]**.
+To approve your message and send it to the recipients of the delivery being created, click **[!UICONTROL Send]**.
 
-Il processo dettagliato di convalida e invio di una consegna è presentato nelle sezioni seguenti:
+The detailed process when validating and sending a delivery is presented in the sections below:
 
-* [Convalidare la consegna](steps-validating-the-delivery.md)
-* [Inviare la consegna](steps-sending-the-delivery.md)
+* [Validate the delivery](steps-validating-the-delivery.md)
+* [Send the delivery](steps-sending-the-delivery.md)
+-->
 
 ## Parametri avanzati {#advanced-parameters}
 
@@ -55,13 +57,15 @@ Sono disponibili le seguenti opzioni:
 
 * **Numero massimo di SMS per messaggio**: questa opzione consente di impostare il numero di SMS da utilizzare per inviare un messaggio. Se il numero è impostato su 0, puoi utilizzare un SMS per recapitare il messaggio. Se ad esempio il numero di SMS è impostato su 1 o 2 e il messaggio supera questa soglia, non verrà inviato.
 
-## Monitorare e tenere traccia degli SMS {#monitoring-and-tracking-sms-deliveries}
+<!--
+## Monitor and track SMS {#monitoring-and-tracking-sms-deliveries}
 
-Dopo aver inviato i messaggi, puoi monitorare e tenere traccia delle consegne. Per ulteriori informazioni, consulta queste sezioni:
+After sending messages, you can monitor and track your deliveries. For more on this, refer to these sections:
 
-* [Monitorare una consegna](about-delivery-monitoring.md)
-* [Errori di consegna](understanding-delivery-failures.md)
-* [Informazioni sul tracciamento dei messaggi](about-message-tracking.md)
+* [Monitor a delivery](about-delivery-monitoring.md)
+* [Understand delivery failures](understanding-delivery-failures.md)
+* [About message tracking](about-message-tracking.md)
+-->
 
 ## Elabora messaggi in entrata {#processing-inbound-messages}
 

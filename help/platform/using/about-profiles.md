@@ -6,10 +6,10 @@ feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 17%
+source-wordcount: '234'
+ht-degree: 37%
 
 ---
 
@@ -23,100 +23,107 @@ I profili sono centralizzati nel database di Adobe Campaign. Esistono molti poss
 
 In Adobe Campaign, i destinatari sono i profili target predefiniti per l’invio di consegne (e-mail, SMS, ecc). I dati dei destinatari memorizzati nel database consentono di filtrare il target che riceverà una determinata consegna e di aggiungere dati di personalizzazione al contenuto della consegna. Nel database sono presenti altri tipi di profili. Essi sono progettati per diversi utilizzi. Ad esempio, i profili di seed vengono creati per testare le consegne prima che vengano inviate al target finale.
 
-![](assets/do-not-localize/how-to-video.png) [Comprendere il concetto di profili nel video](#create-profiles-video)
-
-## Tipi di profilo {#profile-types}
-
-Adobe Campaign consente di gestire i profili durante l’intero ciclo di vita: creazione, importazione, targeting, tracciamento delle azioni, aggiornamenti, ecc.
-
-Ogni profilo corrisponde a una voce del database. Contengono tutte le informazioni necessarie per il targeting, la qualifica e il tracciamento dei singoli utenti.
-
-I profili possono essere identificati in base allo spazio di archiviazione. Ciò significa che un profilo può corrispondere a: un destinatario, un visitatore, un operatore, un abbonato, un potenziale cliente, ecc.
-
-## Profili dei destinatari {#recipient-profiles}
-
-I destinatari della consegna vengono memorizzati nel database come profili contenenti le informazioni ad essi collegate: cognome, nome, indirizzo, abbonamenti, consegne, ecc. Quando crei delle campagne, puoi definire il target delle consegne per una selezione di profili nella base in base a criteri semplici o avanzati.
-
-Puoi anche creare campagne destinate a destinatari i cui profili sono memorizzati non nel database, ma in file. Queste sono note come consegne &quot;esterne&quot;. Per ulteriori informazioni su questo tipo di consegna, consulta [questa pagina](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
-
-I metodi principali per la creazione dei profili dei destinatari sono i seguenti:
-
-* ingresso diretto nelle schermate dell’interfaccia grafica,
-* importazione di elenchi di destinatari,
-* raccolta in linea tramite moduli web.
+![Video che mostra quali sono i profili e come funzionano](assets/do-not-localize/how-to-video.png) [Comprendere il concetto di profili nel video](#create-profiles-video)
 
 >[!NOTE]
 >
->Per informazioni sull&#39;importazione di file e moduli Web, vedere [Importazioni ed esportazioni generiche](../../platform/using/get-started-data-import-export.md).
+>Per ulteriori informazioni sul profilo, su come crearlo e modificarlo, consulta la documentazione dettagliata nella [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}.
 
-## Profili e destinazioni {#profiles-and-targets}
+<!--
+## Profile types {#profile-types}
 
-Il collegamento **[!UICONTROL Profiles and targets]** consente di visualizzare i destinatari memorizzati nel database di Adobe Campaign. Puoi creare un nuovo destinatario, modificarne uno esistente e accedere al suo profilo. Per ulteriori informazioni, consulta [questa pagina](../../platform/using/editing-a-profile.md).
+Adobe Campaign lets you manage profiles throughout their entire lifecycle: creation, import, targeting, action tracking, updates, etc.
+
+Each profile matches a database entry. They contain all the information required for targeting, qualifying and tracking individuals.
+
+Profiles can be identified based on storage space. This means that a profile can match: a recipient, a visitor, an operator, a subscriber, a prospect, etc.
+
+## Recipient profiles {#recipient-profiles}
+
+Delivery recipients are stored in the database as profiles containing the information linked to them: last name, first name, address, subscriptions, deliveries, etc. When you create campaigns, you can define the target of the deliveries to a selection of the profiles in the base according to simple or advanced criteria.
+
+You can also create campaigns aimed at recipients whose profiles are stored not in the database, but in files. These are known as "external" deliveries. For more information about this type of delivery, refer to [this page](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
+
+The main methods for creating recipient profiles are as follows:
+
+* direct input in the graphical interface screens,
+* importing recipient lists,
+* on-line collection via web forms.
+
+>[!NOTE]
+>
+>To find out how files and web forms are imported, refer to [Generic imports and exports](../../platform/using/get-started-data-import-export.md).
+
+## Profiles and targets {#profiles-and-targets}
+
+The **[!UICONTROL Profiles and targets]** link lets you display recipients stored in Adobe Campaign database. You can create new recipient, edit an existing recipient and access its profile. For more on this, refer to [this page](../../platform/using/editing-a-profile.md).
 
 ![](assets/d_ncs_user_interface_target_link.png)
 
-Consente inoltre di accedere a:
+It also gives you access to:
 
-* elenchi - [Ulteriori informazioni](../../platform/using/creating-and-managing-lists.md)
-* servizi di abbonamento - [Ulteriori informazioni](../../delivery/using/managing-subscriptions.md)
-* applicazioni Web - [Ulteriori informazioni](../../web/using/about-web-applications.md)
-* importazioni ed esportazioni (processi) - [Ulteriori informazioni](../../platform/using/about-generic-imports-exports.md)
-* flussi di lavoro di targeting - [Ulteriori informazioni](../../workflow/using/building-a-workflow.md#implementation-steps-)
+* lists - [Learn more](../../platform/using/creating-and-managing-lists.md)
+* subscription services - [Learn more](../../delivery/using/managing-subscriptions.md)
+* web applications - [Learn more](../../web/using/about-web-applications.md)
+* imports and exports (jobs) - [Learn more](../../platform/using/about-generic-imports-exports.md)
+* targeting workflows - [Learn more](../../workflow/using/building-a-workflow.md#implementation-steps-)
 
-La pagina dei destinatari consente di eseguire operazioni frequenti sui profili: modifiche, aggiornamenti, aggiunte, eliminazioni, ordinamenti.
+The recipients page lets you perform frequent operations on profiles: edits, updates, adds, deletions, sorts.
 
-Per manipolazioni di profilo più avanzate, devi modificare la struttura di Adobe Campaign. A tale scopo, fare clic sul collegamento **[!UICONTROL Explorer]** nella home page di Adobe Campaign.
+For more advanced profile manipulations, you need to edit the Adobe Campaign tree. To do this, click the **[!UICONTROL Explorer]** link on the Adobe Campaign home page.
 
-Per impostazione predefinita, i destinatari sono archiviati nel nodo **[!UICONTROL Profiles and Targets > Recipients]** della struttura. Puoi creare i destinatari da questa vista, nonché:
+By default, recipients are stored in the **[!UICONTROL Profiles and Targets > Recipients]** node of the tree. You can create recipients from this view, as well as:
 
-* ordinare e filtrare i profili del database - [Ulteriori informazioni](../../platform/using/filtering-options.md)
-* sposta, copia o elimina profili dal database - [Ulteriori informazioni](../../platform/using/managing-profiles.md),
-* aggiorna profili - [Ulteriori informazioni](../../platform/using/updating-data.md)
-* esporta destinatari - [Ulteriori informazioni](../../platform/using/exporting-and-importing-profiles.md)
-* crea gruppi di destinatari - [Ulteriori informazioni](../../platform/using/creating-and-managing-lists.md)
+* sort and filter the profiles of the database - [Learn more](../../platform/using/filtering-options.md)
+* move, copy or delete profiles from the database - [Learn more](../../platform/using/managing-profiles.md),
+* update profiles - [Learn more](../../platform/using/updating-data.md)
+* export recipients - [Learn more](../../platform/using/exporting-and-importing-profiles.md)
+* create recipient groups - [Learn more](../../platform/using/creating-and-managing-lists.md)
 
-Per accedere a configurazioni e funzionalità avanzate, è necessario fare clic sull&#39;icona **[!UICONTROL Explorer]**.
+To access advanced functionalities and configurations, you need to click the **[!UICONTROL Explorer]** icon. 
 
 ![](assets/d_ncs_user_interface01.png)
 
-Il layout generale di Adobe Campaign Explorer è presentato in [questa pagina](../../platform/using/adobe-campaign-explorer.md).
+The general layout of the Adobe Campaign explorer is presented in [this page](../../platform/using/adobe-campaign-explorer.md).
 
 >[!NOTE]
 >
->È inoltre possibile visualizzare una visualizzazione avanzata dell&#39;elenco dalla struttura Adobe Campaign facendo clic sul collegamento **[!UICONTROL Profiles and targets > Recipients]**. È possibile configurare la visualizzazione dell&#39;elenco in base alle proprie esigenze. Puoi aggiungere o eliminare colonne, definire l’ordine delle colonne, ordinare i dati e così via. La configurazione della visualizzazione dell&#39;elenco è descritta in [questa pagina](../../platform/using/adobe-campaign-ui-lists.md).
+>You can also display an advanced view of this list from the Adobe Campaign tree by clicking the **[!UICONTROL Profiles and targets > Recipients]** link. The list display can be configured to suit your needs. You can add or delete columns, define column order, sort data, etc. List display configuration is described in [this page](../../platform/using/adobe-campaign-ui-lists.md).  
 >
->Puoi anche definire le visualizzazioni dei destinatari. Per ulteriori informazioni su questa funzionalità, consultare [questa sezione](../../platform/using/access-management-folders.md).
+>You can also define recipient views. For further information about this functionality, refer to [this section](../../platform/using/access-management-folders.md).
 
-## Profili attivi {#active-profiles}
+## Active profiles {#active-profiles}
 
-Un profilo attivo è un profilo con cui il cliente ha tentato di comunicare negli ultimi 12 mesi tramite qualsiasi canale.
+An active profile is a profile that customer has attempted to communicate with during the past 12 months via any channel.
 
-In base al contratto, a ciascuna istanza di Campaign viene fornito un numero specifico di profili attivi conteggiati a scopo di fatturazione. Fai riferimento al contratto più recente per informazioni sul numero di profili attivi acquistati. Ulteriori informazioni sono disponibili nella [descrizione del prodotto Adobe Campaign](https://helpx.adobe.com/it/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+According to your contract, each of your Campaign instances is provisioned with a specific amount of active profiles that are counted for billing purposes. Please refer to your latest contract for reference on number of purchased active profiles. Learn more in [Adobe Campaign product description](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-Puoi monitorare il numero di profili attivi nell’istanza direttamente dal Pannello di controllo Campaign Campaign. Per ulteriori informazioni, consulta la [documentazione del Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=it){target="_blank"}.
+You can monitor the number of active profiles on your instance directly from Campaign Control Panel. For more on this, refer to the [Control Panel documentation](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}.
 
-Si applicano le seguenti protezioni e limitazioni:
+The following guardrails and limitations apply:
 
-* Un profilo che è stato oggetto di targeting per diverse consegne viene conteggiato una sola volta.
-* I profili target nel contesto di Social marketing su X (Twitter) o Facebook non vengono considerati come profili attivi.
-* Il numero di profili attivi è disponibile solo per **istanze Marketing**. Non è disponibile per le istanze di esecuzione, ovvero per le istanze MID (mid sourcing) e RT (Message Center / Real-time messaging [Centro messaggi/Messaggistica in tempo reale]).
-* Il conteggio si basa sulla chiave primaria del destinatario. Di conseguenza, se un profilo è presente in due diverse tabelle dei destinatari, può essere conteggiato due volte come profilo attivo.
+* A profile that has been targeted by several deliveries is counted only once. 
+* Profiles targeted in the context of Social marketing on X (Twitter) or Facebook are not taken into account as active profiles.
+* The count of active profiles is available for **Marketing instances** only. It is not available for Execution instances, meaning MID (mid sourcing) and RT (Message Center / Real-time messaging) instances.
+* The count is based on the recipient primary key. As a consequence, if a profile is present in two different recipient tables, it can be counted twice as an active profile.
 
 
-## Video tutorial {#create-profiles-video}
+## Tutorial video {#create-profiles-video}
 
-Scopri come accedere ai dati, ordinare e filtrare i profili e come crearli e gestirli manualmente.
+Learn how to access profile data, sort and filter profiles and manually create and manage profiles.
 
-Questo video illustra inoltre la conformità di Adobe Campaign Classic con le normative generali sulla protezione dei dati.
+This video also explains the compliance of Adobe Campaign Classic with General Data Protection Regulations. 
 
->[!VIDEO](https://video.tv.adobe.com/v/326756?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
 
-Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 
-**Vedi anche**
+**See also**
 
-* [Gestione della privacy in Campaign](https://helpx.adobe.com/it/campaign/kb/acc-privacy.html)
+* [Privacy management in Campaign](https://helpx.adobe.com/campaign/kb/acc-privacy.html)
 
-* [Creare query e dati dei segmenti nei flussi di lavoro](../../workflow/using/targeting-data.md)
+* [Create queries and segment data in workflows](../../workflow/using/targeting-data.md)
 
-* [Seleziona mappatura target](../../delivery/using/steps-defining-the-target-population.md#select-a-target-mapping)
+* [Select target mapping](../../delivery/using/steps-defining-the-target-population.md#select-a-target-mapping)
+
+-->

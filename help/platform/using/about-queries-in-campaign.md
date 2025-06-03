@@ -7,10 +7,10 @@ feature: Query Editor
 role: User, Data Architect
 level: Beginner
 exl-id: 2db1034d-cad6-4fb0-8646-dd9099080ab0
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 66%
+source-wordcount: '203'
+ht-degree: 57%
 
 ---
 
@@ -26,6 +26,8 @@ Questo strumento combina tutte possibilità di query di Adobe Campaign. Ad esemp
 
 Le query vengono create utilizzando i campi della tabella selezionata o utilizzando una formula.
 
-[Fai clic qui](../../workflow/using/query.md) per scoprire l’editor di query di Campaign.
+>[!NOTE]
+>
+>Per ulteriori informazioni sulle query e su come crearle, consulta la [documentazione di Campaign v8](../../workflow/using/query.md).
 
-![](assets/query_recipients_4.png)
+![Schermata che mostra un esempio di query.](assets/query_recipients_4.png)

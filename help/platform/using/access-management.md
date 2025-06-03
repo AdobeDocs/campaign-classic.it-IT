@@ -5,10 +5,10 @@ description: Scopri come concedere l’accesso alle funzionalità di Campaign
 badge: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Access Management, Permissions
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
-source-git-commit: 2759d65150299e4fa679ea986df8136cd9525370
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 5%
+source-wordcount: '309'
+ht-degree: 6%
 
 ---
 
@@ -42,25 +42,29 @@ Esistono due tipi di autorizzazioni che è possibile concedere a un utente:
 
 >[!NOTE]
 >
->Prima di iniziare a definire le autorizzazioni, Adobe consiglia di leggere l&#39;[elenco di controllo per la configurazione della sicurezza](https://helpx.adobe.com/it/campaign/kb/acc-security.html).
+> * Prima di iniziare a definire le autorizzazioni, Adobe consiglia di leggere l&#39;[elenco di controllo per la configurazione della sicurezza](https://helpx.adobe.com/it/campaign/kb/acc-security.html).
+> * Per ulteriori informazioni sulle autorizzazioni, consulta la spiegazione dettagliata nella [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/admin/permissions/gs-permissions){target=_blank}.
 
-Scopri come concedere l’accesso e impostare le autorizzazioni in queste sezioni:
+<!--
 
-* [Creare operatori](access-management-operators.md)
+Learn how to grant access and set up permissions in these sections:
 
-* [Definire i gruppi](access-management-groups.md)
+* [Create operators](access-management-operators.md)
 
-* [Aggiungi diritti denominati](access-management-named-rights.md)
+* [Define groups](access-management-groups.md)
 
-* [Gestire l’accesso alla cartella Campaign](access-management-folders.md)
+* [Add Named rights](access-management-named-rights.md)
 
-* [Matrice dei diritti di accesso](access-management-named-rights.md#access-rights-matrix)
+* [Manage Campaign folder access](access-management-folders.md)
+
+* [Access rights matrix](access-management-named-rights.md#access-rights-matrix)
 
 
-Vedi anche:
+See also:
 
-* [Gestire le autorizzazioni per i flussi di lavoro](../../workflow/using/managing-rights.md)
-* [Gestire le autorizzazioni per il marketing distribuito](../../distributed/using/about-distributed-marketing.md#operators-and-entities)
-* [Gestire le autorizzazioni per il modulo di interazione](../../interaction/using/operator-profiles.md)
-* [Filtrare l’accesso agli schemi](../../configuration/using/filtering-schemas.md)
-* [Limitazione della visualizzazione delle informazioni personali](../../configuration/using/restricting-pii-view.md)
+* [Manage permissions for workflows](../../workflow/using/managing-rights.md)
+* [Manage permissions for distributed marketing](../../distributed/using/about-distributed-marketing.md#operators-and-entities)
+* [Manage permissions for the interaction module](../../interaction/using/operator-profiles.md)
+* [Filter access to schemas](../../configuration/using/filtering-schemas.md)
+* [Restricting PI view](../../configuration/using/restricting-pii-view.md)
+-->

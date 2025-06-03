@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '1907'
-ht-degree: 95%
+source-wordcount: '143'
+ht-degree: 80%
 
 ---
 
@@ -28,153 +28,160 @@ Adobe Campaign è uno strumento utile per la raccolta e l’elaborazione di gran
 
 Prenditi del tempo per esaminare la [Lista di controllo sicurezza e privacy](../../installation/using/get-started-security-privacy.md) e scopri gli elementi principali da verificare in materia di sicurezza e privacy.
 
-### Normative sulla privacy {#privacy-regulations}
+>[!NOTE]
+>
+>Per ulteriori informazioni sulle normative su privacy e sicurezza per Adobe Campaign, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/security){target=_blank}.
 
-Per gestire correttamente la privacy e i dati personali, attieniti alle normative applicabili alle regioni in cui operi. Le funzionalità di Adobe Campaign consentono di rispettare le normative elencate in [questa pagina](../../platform/using/privacy-management.md#privacy-management-regulations).
 
-### Privacy di Adobe Experience Cloud {#experience-cloud-privacy}
+<!--
+### Privacy regulations {#privacy-regulations}
 
-Adobe Campaign fa parte delle soluzioni Adobe Experience Cloud. Il modo in cui viene gestita la privacy in Campaign rispetta i principi generali di Experience Cloud, come ad esempio quanto segue:
+To correctly handle privacy and manage personal data, work within the legislations applicable to the region(s) where you operate. Adobe Campaign's capabilities help you comply with the regulations listed in [this page](../../platform/using/privacy-management.md#privacy-management-regulations).
 
-* **Quali informazioni vengono raccolte durante l’utilizzo di Adobe Experience Cloud**
+### Adobe Experience Cloud privacy {#experience-cloud-privacy}
 
-  In qualità di azienda che utilizza le soluzioni Adobe Experience Cloud, puoi scegliere quali informazioni raccogliere e inviare all’account Adobe Experience Cloud. Alcuni esempi dei tipi di informazioni che possono essere raccolti includono attività di navigazione web, indirizzi IP, informazioni sulla posizione inviate dai dispositivi mobili, tassi di successo delle campagne, articoli acquistati o inseriti nel carrello, ecc.
+Adobe Campaign is part of the Adobe Experience Cloud solutions. The way privacy is handled in Campaign obeys the Experience Cloud general principles, such as the following:
 
-  >[!NOTE]
-  >
-  >Come tutti i prodotti Adobe, Campaign raccoglie informazioni sugli utenti dell’app e del sito web. Per ulteriori informazioni, consulta l’[Informativa sulla privacy di Adobe](https://www.adobe.com/it/privacy/policy.html).
+* **What information is collected when using Adobe Experience Cloud**
 
-* **Utilizzare Adobe Experience Cloud per raccogliere informazioni**
+    As a company using Adobe Experience Cloud solutions, you choose what information to collect and send to your Adobe Experience Cloud account. Examples of the types of information that may be collected include web browsing activity, IP addresses, location information from mobile devices, campaign success rates, items purchased or placed in shopping cart, etc.
 
-   * Le soluzioni Adobe Experience Cloud utilizzano cookie e tecnologie simili, come web beacon (noti anche come tag o pixel), per consentirti di raccogliere informazioni. Per ulteriori informazioni sui cookie e sulle funzionalità di tracciamento con Adobe Campaign, consulta [questa sezione](#tracking-capabilities).
-   * Puoi anche utilizzare le tecnologie Adobe Experience Cloud nelle tue app mobili. Per ulteriori informazioni sull’invio di consegne per dispositivi mobili con Campaign, consulta [Canale SMS](../../delivery/using/sms-channel.md) e [Canale app mobile](../../delivery/using/about-mobile-app-channel.md).
+    >[!NOTE]
+    >
+    >As for all Adobe products, Campaign collects information about app and website users. For more on this, see the [Adobe Privacy Policy](https://www.adobe.com/privacy/policy.html).
 
-* **Scelte degli utenti in materia di privacy relative all’utilizzo di Adobe Experience Cloud**
+* **How Adobe Experience Cloud is used to collect information**
 
-   Adobe richiede che tu fornisca ai clienti le informative sulla privacy che descrivono:
+    * Adobe Experience Cloud solutions use cookies and similar technologies, such as web beacons (also known as tags or pixels), to enable you to collect information. For more on cookies and tracking capabilities with Adobe Campaign, see [this section](#tracking-capabilities).
+    * You may also use Adobe Experience Cloud technologies within your mobile apps. For more on sending mobile deliveries with Campaign, see [SMS channel](../../delivery/using/sms-channel.md) and [Mobile app channel](../../delivery/using/about-mobile-app-channel.md).
 
-   * Le tue prassi in materia di privacy in relazione ad Adobe Experience Cloud
-   * In che modo gli utenti possono impostare le proprie preferenze per la raccolta o l’utilizzo delle proprie informazioni in relazione ad Adobe Experience Cloud
+* **You users' privacy choices about your use of Adobe Experience Cloud**
 
-  >[!NOTE]
-  >
-  >Come per tutti i prodotti di Adobe, gli utenti di Campaign possono scegliere di rinunciare alla condivisione di informazioni raccolte su di loro tramite app e siti web. Per ulteriori informazioni, consulta le [domande frequenti relative all’utilizzo di Adobe Experience Cloud](https://www.adobe.com/it/privacy/experience-cloud-usage-info-faq.html).
+    Adobe asks you to provide your customers privacy policies describing:
 
-Per ulteriori dettagli sulla privacy di Adobe Experience Cloud, consulta [questa pagina](https://www.adobe.com/it/privacy/experience-cloud.html).
+    * Your privacy practices in connection with Adobe Experience Cloud
+    * How users can set their preferences for the collection or use of their information in connection with Adobe Experience Cloud
 
-## Dati personali e utenti tipo {#personal-data}
+    >[!NOTE]
+    >
+    >As for all Adobe products, Campaign users can opt-out sharing information collected about them through apps and websites. For more on this, see the [Adobe Experience Cloud Usage Information FAQ](https://www.adobe.com/privacy/experience-cloud-usage-info-faq.html).
 
-Nella gestione della privacy è importante definire quali dati devono essere gestiti con cura e chi si occupa della gestione.
-* **I dati personali** sono informazioni che possono identificare direttamente o indirettamente un individuo.
-* **I dati personali riservati** sono informazioni relative a etnia, opinioni politiche, credenze religiose, precedenti penali, informazioni genetiche, dati sanitari, orientamento sessuale e informazioni biometriche di un individuo, nonché ad appartenenze a sindacati.
+For further details on the Adobe Experience Cloud privacy, see [this page](https://www.adobe.com/privacy/marketing-cloud.html).
 
-Durante l’integrazione di Campaign con altre soluzioni Experience Cloud in cui i tipi di pubblico possono essere trasferiti da un sistema all’altro, ad esempio [Adobe Analytics](../../integrations/using/gs-aa.md), [Tipi di pubblico di Experience Cloud](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md) o con altre soluzioni tramite [Connettori CRM](../../platform/using/crm-connectors.md), è necessario prestare maggiore attenzione alla protezione dei dati personali.
+## Personal Data and Personas {#personal-data}
 
-Le [normative principali](#privacy-regulations) si riferiscono alle diverse entità che gestiscono i dati come segue:
+When managing Privacy, it is important to define what data should be handled with care and by whom.
+* **Personal Data** is information that can directly or indirectly identify a living individual.
+* **Sensitive Personal Data** is information related to an individual's race, political views, religious beliefs, criminal background, genetic information, health data, sexual preference, biometric information, as well as trade union membership.
 
-* Il **titolare del trattamento** è l’autorità che determina i mezzi e lo scopo della raccolta, dell’utilizzo e della condivisione dei dati personali.
+When integrating Campaign with other Experience Cloud solutions where audiences can be transferred from one system to another, such as [Adobe Analytics](../../integrations/using/gs-aa.md), [Experience Cloud Audiences](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md), or with other solutions through [CRM Connectors](../../platform/using/crm-connectors.md), you need to pay extra care to personal data protection.
 
-* Il **responsabile del trattamento** è qualsiasi individuo o parte che raccoglie, utilizza o condivide dati personali come indicato dal titolare del trattamento.
+The [main regulations](#privacy-regulations) refer to the different entities that manage data as follows:
 
-* L’**interessato** è qualsiasi individuo i cui dati personali vengono raccolti, utilizzati o condivisi e che può essere identificato direttamente o indirettamente in base a tali dati personali.
+* A **Data Controller** is the authority that determines the means and purpose of collecting, using, and sharing personal data.
 
-Pertanto, in quanto azienda che raccoglie e condivide dati personali, ricopri il ruolo di titolare del trattamento, i tuoi clienti costituiscono gli interessati e Adobe Campaign agisce come responsabile del trattamento quando tratta i loro dati personali secondo le istruzioni da te fornite. In quanto titolare del trattamento, sei responsabile della gestione del rapporto con gli interessati, ad esempio durante la gestione delle [richieste di accesso a dati personali](#privacy-requests).
+* A **Data Processor** is any individual or party that collects, uses, or shares personal data as directed by the Data Controller.
 
-### Scenario del caso d’uso {#use-case-scenario}
+* A **Data Subject** is any living individual whose personal data is being collected, used or shared, and who can be identified, directly or indirectly, by reference to that personal data.
 
-Per illustrare il modo in cui interagiscono i diversi utenti tipo, ecco un esempio di un caso d’uso dettagliato di customer experience relativo al GDPR.
+Therefore, as a company collecting and sharing personal data, you are the Data Controller, your clients are the Data Subjects and Adobe Campaign acts as a Data Processor when handling their personal data as directed by you. Note that it is your responsibility as a Data Controller to handle the relationship with the Data Subjects such as when managing [privacy requests](#privacy-requests).
 
-In questo esempio, il cliente Adobe Campaign è una compagnia aerea. La compagnia aerea è il **titolare del trattamento** e tutti i suoi clienti sono gli **interessati**. Laura in questo caso particolare è una cliente della compagnia aerea.
+### Use case scenario {#use-case-scenario}
 
-Di seguito sono elencati i diversi utenti tipo utilizzati in questo esempio:
+To illustrate how the different personas are interacting, here is an example of a high-level GDPR customer experience use case.
 
-* **Laura** è l’**interessato**. È il destinatario che riceve messaggi dalla compagnia aerea. Ammettiamo che Laura sia una viaggiatrice frequente e che a un certo punto decida di non voler ricevere messaggi pubblicitari o di marketing personalizzati da parte della compagnia aerea. Laura chiederà alla compagnia aerea (sulla base del loro processo) di cancellare il suo numero di viaggiatrice frequente.
+In this example, an airline company is the Adobe Campaign customer. This company is the **Data Controller** and all the clients of the airline company are **Data Subjects**. Laura in this particular case is a client of the airline company.
 
-* **Anne** è il **titolare del trattamento** presso la compagnia aerea. Riceve la richiesta di Laura, recupera gli ID utili richiesti per identificare l’interessato e invia la richiesta in Adobe Campaign.
+Here are the different personas used in this example:
 
-* **Adobe Campaign** è il **responsabile del trattamento**.
+* **Laura** is the **Data subject**. She is the recipient who receives messages from the airline company. Laura may be a frequent flyer, but may decide at some point that she does not want any personalized advertising or marketing messages from the airline company. She will ask the airline company (based on their process) to delete her frequent flier number.
+
+* **Anne** is the **Data Controller** at the airline company. She receives Laura's request, retrieves useful IDs requested to identify the Data Subject and submits the request in Adobe Campaign.
+
+* **Adobe Campaign** is the **Data Processor**.
 
 ![](assets/privacy-gdpr-flow.png)
 
-Di seguito è riportato il flusso generale relativo a questo caso d’uso:
+Here is the general flow for this use case:
 
-1. L’**interessato** (Laura) invia una richiesta GDPR al **titolare del trattamento** tramite e-mail, assistenza clienti o un portale web.
+1. The **Data Subject** (Laura) sends a GDPR request to the **Data Controller**, via email, customer care or a web portal.
 
-1. Il **titolare del trattamento** (Anne) invia la richiesta GDPR a Campaign tramite l’interfaccia o utilizzando un’API.
+1. The **Data Controller** (Anne) pushes the GDPR request to Campaign via the interface or using an API.
 
-1. Una volta che il **responsabile del trattamento** (Adobe Campaign) riceve le informazioni, interviene sulla richiesta GDPR e invia una risposta o una conferma al **titolare del trattamento** (Anne).
+1. Once the **Data Processor** (Adobe Campaign) receives the information, it takes action on the GDPR request and sends a response or acknowledgement to the **Data Controller** (Anne).
 
-1. Il **titolare del trattamento** (Anne) esamina le informazioni e le invia nuovamente all’**interessato** (Laura).
+1. The **Data Controller** (Anne) then reviews the information and sends it back to the **Data Subject** (Laura).
 
-## Acquisizione dei dati {#data-acquisition}
+## Data acquisition {#data-acquisition}
 
- Adobe Campaign ti consente di raccogliere dati, incluse informazioni personali e riservate. È pertanto essenziale ricevere e monitorare il consenso dei destinatari.
+Adobe Campaign enables you to collect data, including personal and sensitive information. It is therefore essential that you receive and monitor consent from your recipients.
 
-* Assicurati che i destinatari ricevano le comunicazioni solo se lo desiderano. Per farlo, accetta al più presto le richieste di rifiuto e verifica il consenso mediante un processo di doppio consenso. Per ulteriori informazioni, consulta [Creare un abbonamento con doppio consenso](../../web/using/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in).
-* Non importare elenchi fraudolenti e utilizza indirizzi di seed per verificare che il file client non venga utilizzato in modo fraudolento. Per ulteriori informazioni, consulta [Informazioni sugli indirizzi di seed](../../delivery/using/about-seed-addresses.md).
-* Tramite la gestione del consenso e dei diritti puoi tenere traccia delle preferenze dei destinatari e gestire chi all’interno dell’organizzazione può accedere ai dati. Per ulteriori informazioni, consulta [questa sezione](#consent).
-* Facilita e gestisci le richieste di accesso a dati personali dei destinatari. Per ulteriori informazioni, consulta [questa sezione](#privacy-requests).
+* Always have recipients agree to receive communications. To do this, keep honoring opt-out requests as quickly as possible and verify consent through a double opt-in process. For more on this, see [Create a subscription form with double opt-in](../../web/using/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in).
+* Do not import fraudulent lists and use seed addresses to check that your client file is not being used fraudulently. For more on this, see [About seed addresses](../../delivery/using/about-seed-addresses.md).
+* Through consent and rights management, you can track your recipients' preferences as well as manage who within your organization can access which data. For more on this, see [this section](#consent).
+* Facilitate and manage Privacy requests from your recipients. For more on this, see [this section](#privacy-requests).
 
-## Gestione della privacy {#privacy-management}
+## Privacy management {#privacy-management}
 
-La gestione della privacy si riferisce a tutti i processi e agli strumenti che possono aiutarti a rispettare le normative sulla privacy (GDPR, CCPA, ecc.). Per una panoramica sulla gestione della privacy, visita [questa pagina](privacy-and-recommendations.md).
+Privacy management refer to all the processes and tools that can help you comply with Privacy regulations (GDPR, CCPA, etc.). Get an overview of what privacy management is on [this page](privacy-and-recommendations.md).
 
- Adobe Campaign offre varie serie di funzioni dedicate alla gestione della privacy:
-* Gestione del consenso, conservazione dei dati e ruoli degli utenti. Vedi [questa sezione](#consent).
-* Richieste di accesso a dati personali (diritto di accesso e diritto all’oblio). Vedi [questa sezione](#privacy-requests).
-* Rinuncia alla vendita di informazioni personali (relativa al CCPA). Vedi [questa sezione](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa).
+Adobe Campaign provides you with various sets of features dedicated to privacy management:
+* Consent management, data Retention and user Roles. See [this section](#consent).
+* Privacy requests (Right to Access and Right to be Forgotten). See [this section](#privacy-requests).
+* Opt-out for the Sale of Personal Information (CCPA-specific). See [this section](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa).
 
-In [questa sezione](https://helpx.adobe.com/it/campaign/kb/campaign-privacy-more.html#gdprpersonasandflow) sono illustrate le principali funzionalità di Campaign relative alla privacy e un esempio degli utenti tipo coinvolti.
+The main Privacy capabilities in Campaign and an example of the personas involved are presented in [this section](https://helpx.adobe.com/campaign/kb/campaign-privacy-more.html#gdprpersonasandflow).
 
-### Consenso, conservazione e ruoli {#consent}
+### Consent, Retention and Roles {#consent}
 
-Adobe Campaign offre da sempre funzioni importanti necessarie per la privacy:
+Originally, Adobe Campaign offers important features that are essential to Privacy:
 
-* **Gestione del consenso**: attraverso il processo di gestione degli abbonamenti, puoi gestire le preferenze dei destinatari e tenere traccia dei destinatari che hanno acconsentito all’abbonamento e di che tipo di abbonamento si tratta. Per ulteriori informazioni, consulta [Informazioni sugli abbonamenti](../../delivery/using/about-services-and-subscriptions.md).
-* **Conservazione dei dati**: tutte le tabelle di registro standard integrate dispongono di periodi di conservazione preimpostati, che in genere limitano l’archiviazione dei dati a un massimo di 6 mesi. Puoi impostare ulteriori periodi di conservazione con i flussi di lavoro. Per maggiori informazioni, rivolgiti ai consulenti o agli amministratori tecnici di Adobe.
-* **Gestione dei diritti**: Adobe Campaign consente di gestire i diritti assegnati ai vari operatori Campaign tramite diversi ruoli predefiniti o personalizzati. Questo consente di gestire chi può modificare, esportare o accedere a diversi tipi di dati all’interno dell’azienda. Per ulteriori informazioni, consulta [Informazioni sulla gestione degli accessi](../../platform/using/access-management.md).
+* **Consent management**: Through the subscription management process, you can manage your recipients' preferences and track which recipients have opted-in to which type of subscriptions. For more on this, see [About subscriptions](../../delivery/using/about-services-and-subscriptions.md).
+* **Data retention**: All built-in standard log tables have pre-set retention periods, generally limiting their data storage to 6 months or less. Additional retention periods can be set up with workflows. For more on this, reach out to the Adobe consultants or technical administrators.
+* **Rights management**: Adobe Campaign provides you with the ability to manage the rights assigned to the various Campaign operators via different pre-built or custom roles. This allows you to manage who within your company can access, modify or export different types of data. For more on this, see [About access management](../../platform/using/access-management.md).
 
-Per ulteriori informazioni su queste funzioni e sulla loro gestione in Adobe Campaign, consulta [questa sezione](../../platform/using/privacy-management.md#consent-retention-roles).
+For more on these features and how to manage them in Adobe Campaign, see [this section](../../platform/using/privacy-management.md#consent-retention-roles).
 
-### Richieste di accesso a dati personali {#privacy-requests}
+### Privacy requests {#privacy-requests}
 
- Adobe Campaign offre funzionalità aggiuntive per consentirti di attenerti a determinate richieste di accesso a dati personali in qualità di titolare del trattamento:
+Adobe Campaign provides additional capabilities to help you facilitate your readiness as a Data Controller for certain Privacy requests:
 
-* Il **diritto di accesso** è il diritto dell’interessato di ottenere conferma da parte del titolare del trattamento sul fatto che i dati personali che lo riguardano siano trattati o meno, su dove avvenga il trattamento e sullo scopo del trattamento.
+* The **Right to Access** is the right for the Data Subject to obtain from the Data Controller confirmation as to whether or not personal data concerning them is being processed, where and why.
 
-* Il **diritto all’oblio** (richiesta di cancellazione) autorizza l’interessato a richiedere che il titolare del trattamento cancelli i suoi dati personali.
+* The **Right to be Forgotten** (delete request) entitles the Data Subject to have the Data Controller erase their personal data.
 
-Le richieste di **accesso** ed **eliminazione** vengono presentate in [questa sezione](../../platform/using/privacy-management.md#right-access-forgotten).
+The **Access** and **Delete** requests are presented in [this section](../../platform/using/privacy-management.md#right-access-forgotten).
 
-I passaggi di implementazione per creare queste richieste sono illustrati in [questa sezione](../../platform/using/privacy-requests.md).
+The implementation steps to create these requests are detailed in [this section](../../platform/using/privacy-requests.md).
 
-## Funzionalità di tracciamento {#tracking-capabilities}
+## Tracking capabilities {#tracking-capabilities}
 
-### Cookie {#cookies}
+### Cookies {#cookies}
 
-Grazie alle sue funzionalità di tracciamento, Adobe Campaign consente di monitorare la navigazione dei destinatari della consegna utilizzando tre tipi di cookie: un cookie di sessione e due cookie permanenti.
+Thanks to its tracking functionalities, Adobe Campaign enables you to track the browsing of your delivery recipients using three types of cookies: a session cookie and two permanent cookies.
 
-* Un cookie di **sessione**: il cookie **nlid** contiene l’identificatore dell’e-mail inviata al contatto (**broadlogId**) e l’identificatore del modello del messaggio (**deliveryId**). Viene aggiunto quando il contatto fa clic su un URL incluso in un’e-mail inviata da Adobe Campaign e ti consente di tracciarne il comportamento sul web. Questo cookie di sessione viene cancellato automaticamente alla chiusura del browser. Il contatto può configurare il browser per rifiutare i cookie.
+* A **session** cookie: the **nlid** cookie contains the identifier of the email sent to the contact (**broadlogId**) and the identifier of the message template (**deliveryId**). It is added when the contact clicks a URL included in an email sent by Adobe Campaign and enables you to track their behavior on the web. This session cookie is erased automatically when the browser is closed. The contact can configure their browser to refuse cookies.
 
-* Due cookie **permanenti**:
-   * Il cookie **UUID** (Universal Unique IDentifier) è condiviso tra le diverse soluzioni Adobe Experience Cloud. Viene impostato una volta fino a quando non scompare dal browser client quando viene generato un nuovo valore. Questo cookie ti consente di identificare gli utenti che interagiscono con le soluzioni Experience Cloud quando visitano un sito web. Può essere depositato da una pagina di destinazione (per associare a un destinatario le attività cliente sconosciute) o da una consegna. La descrizione di questo cookie è disponibile in [questa pagina](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html?lang=it#ec-cookies).
-   * Il cookie **nllastdelid** (introdotto in Campaign Classic 20.3) è un cookie permanente che contiene il **deliveryId** dell’ultima consegna da cui l’utente ha fatto clic sul collegamento. Questo cookie viene utilizzato quando manca il cookie di sessione, per identificare la tabella di tracciamento che verrà utilizzata.
+* Two **permanent** cookies: 
+    * The **UUID** (Universal Unique IDentifier) cookie is shared between Adobe Experience Cloud solutions. It is set once until it disappears from the client browser when a new value is generated. This cookie enables you to identify the users who interact with the Experience Cloud solutions when they visit a website. It can be deposited by a landing page (to associate unknown customer activities to a recipient) or by a delivery. The description of this cookie is available on [this page](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html#ec-cookies).
+    * The **nllastdelid** cookie (introduced in Campaign Classic 20.3) is a permanent cookie which contains the **deliveryId** of the last delivery that user clicked the link from. This cookie is used - when the session cookie is missing - to identify the tracking table that will be used.
 
-Normative quali il Regolamento generale sulla protezione dei dati (GDPR) affermano che le aziende necessitano del consenso degli utenti del sito web per installare i cookie.
+Regulations such as the General Data Protection Regulation (GDPR) state that companies require the agreement of website users before installing any cookies.
 
-* Devi informare gli utenti che i tuoi siti sono dotati di strumenti di tracciamento web tramite una richiesta di autorizzazione (che viene visualizzata sopra la pagina, ad esempio) con una casella di controllo per autorizzare l’installazione dei cookie, oppure puoi aggiungere un banner nella parte superiore della prima pagina a cui accedono, ecc.
-* Le finestre pop-up dovrebbero essere evitate in quanto spesso sono bloccate dai browser.
+* You must inform users that your sites are equipped with web tracking tools via an authorization request (that comes up over the page, for example) with a checkbox to authorize the use of cookies, or add a banner at the top of the first page they land on, etc.
+* Pop-up windows should be avoided as they are often blocked by browsers.
 
-### Tracciamento dei messaggi {#message-tracking}
+### Message tracking {#message-tracking}
 
-Adobe Campaign ti consente di tenere traccia delle e-mail inviate e del comportamento dei destinatari della consegna: apertura, clic su collegamenti, annullamenti di abbonamenti, ecc. Per ulteriori informazioni, consulta [Informazioni sul tracciamento dei messaggi](../../delivery/using/about-message-tracking.md).
+Adobe Campaign lets you track the emails sent and the behavior of your delivery recipients: opening, clicks on links, unsubscriptions, etc. For more on this, see [About message tracking](../../delivery/using/about-message-tracking.md).
 
-A questo scopo, aggiungi [collegamenti tracciati](../../delivery/using/how-to-configure-tracked-links.md) ai messaggi, in modo da poter misurare l’impatto della consegna e il comportamento del destinatario nella scheda [Tracking](../../delivery/using/delivery-dashboard.md#tracking-logs) (Tracciamento) del dashboard di consegna. I dati di tracciamento vengono interpretati nel rapporto [Tracking indicators](../../reporting/using/delivery-reports.md#tracking-indicators) (Indicatori di tracciamento).
+To do this, add [tracked links](../../delivery/using/how-to-configure-tracked-links.md) to your messages in order to measure the impact of your delivery and recipient behavior in the [Tracking](../../delivery/using/delivery-dashboard.md#tracking-logs) tab of the delivery dashboard. Tracking data is interpreted in the [Tracking indicators](../../reporting/using/delivery-reports.md#tracking-indicators) report.
 
-### Tracciamento web {#web-tracking}
+### Web tracking {#web-tracking}
 
-Adobe Campaign consente inoltre di monitorare il modo in cui i destinatari navigano nel sito web: inserisci tag di tracciamento per raccogliere informazioni e misurare le visite sulle pagine delle applicazioni web. Per ulteriori informazioni, consulta [Tracciamento di un’applicazione web](../../web/using/tracking-a-web-application.md).
+Adobe Campaign also lets you monitor how recipients browse your website: insert tracking tags to collect information and measure visits on web application pages. For more on this, see [Tracking a web application](../../web/using/tracking-a-web-application.md).
 
-La configurazione del tracciamento web è descritta in [questa sezione](../../configuration/using/about-web-tracking.md).
+The configuration of web tracking is presented in [this section](../../configuration/using/about-web-tracking.md).
 
-Per gestire ulteriormente il tracciamento, Adobe Campaign consente di visualizzare un banner di rinuncia per interrompere il tracciamento dei comportamenti web degli utenti finali che rinunciano al tracciamento dei comportamenti. Per ulteriori informazioni, consulta [Rinuncia al tracciamento delle applicazioni web](../../web/using/web-application-tracking-opt-out.md).
+To further manage tracking, Adobe Campaign enables you to display an opt-out banner to stop tracking web behaviors of end users who opt-out of behavioral tracking. For more on this, see [Web application tracking opt-out](../../web/using/web-application-tracking-opt-out.md).
+-->

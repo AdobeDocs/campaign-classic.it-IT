@@ -5,37 +5,59 @@ description: Introduzione al canale SMS
 feature: SMS
 role: User
 exl-id: 6fc2ab09-8ea7-4865-88ad-bd45eee68958
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '154'
-ht-degree: 4%
+source-wordcount: '256'
+ht-degree: 0%
 
 ---
 
 # Introduzione al canale SMS{#sms-channel}
 
-Utilizza Adobe Campaign per inviare messaggi SMS personalizzati.
+Utilizza Adobe Campaign per inviare messaggi di testo ai clienti sui loro dispositivi mobili. Dall’editor SMS puoi creare, personalizzare e visualizzare in anteprima i messaggi in formato testo.
 
-Prima di iniziare a inviare SMS:
+Scopri i passaggi chiave relativi alla creazione di consegne SMS nella documentazione di Campaign v8:
 
-* Assicurati che nel profilo dei destinatari sia presente almeno un telefono cellulare.
-* Ulteriori informazioni sulle [best practice per la consegna](delivery-best-practices.md) di Adobe Campaign.
+* [Panoramica del canale SMS](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html){target="_blank"}: scopri come inviare messaggi di testo ai clienti sui loro dispositivi mobili.
+* [Creare una consegna SMS](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/create-sms.html){target="_blank"}: scopri i diversi passaggi necessari per creare una nuova consegna SMS.
+* [Definisci il contenuto](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/sms-content.html){target="_blank"}: scopri come personalizzare il contenuto dei messaggi SMS.
+* [Seleziona il pubblico](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/sms-audience.html){target="_blank"}: la destinazione principale viene estratta dal database di Adobe Campaign o può anche essere archiviata in un file esterno.
+* [Invia bozze SMS](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/validate-sms/sms-proofs.html): l&#39;impostazione di un ciclo di convalida della consegna è essenziale. Assicurati che il contenuto sia approvato prima di inviarlo al pubblico.
+* [Invia al pubblico](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/validate-sms/sms-send.html?lang=it): quando il tuo SMS viene convalidato, ora puoi inviarlo al relativo pubblico.
+* [Monitora e tieni traccia di un SMS](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms-monitor.html): monitora la consegna SMS per assicurarti che le campagne di marketing siano efficienti.
 
-I passaggi chiave per inviare un SMS sono i seguenti:
+Per informazioni sulla configurazione, consulta queste pagine:
 
-* [Configurare il canale SMS](sms-set-up.md)
-* [Creare una consegna SMS](sms-create.md)
-* [Definire il pubblico](sms-create.md#selecting-the-target-population)
-* [Definire il contenuto dell’SMS](sms-create.md#defining-the-sms-content)
-* [Inviare, monitorare e tenere traccia degli SMS](sms-send.md)
-* [Risoluzione dei problemi](troubleshooting-sms.md)
+* [Configurazione autonoma](sms-set-up.md): scopri come configurare il canale SMS in un&#39;istanza autonoma.
+* [Configurazione mid-sourcing](sms-set-up-mid.md): scopri come inviare a un telefono cellulare con mid-server.
+* [Connettore SMS](sms-protocol.md): informazioni sul protocollo e sulle impostazioni del connettore SMS.
+* [Configurazione aggiuntiva](sms-send.md): informazioni sui parametri avanzati e altre configurazioni aggiuntive.
+* [Risoluzione dei problemi](troubleshooting-sms.md): è stata elencata una serie di potenziali problemi e relative soluzioni.
 
-Inoltre, è necessario avere familiarità con il protocollo e le impostazioni SMS. Scopri la connessione impostata tra Adobe Campaign e un provider SMPP in [questo documento](sms-protocol.md)
+<!--
+Use Adobe Campaign to send personalized SMS messages.
 
-Per informazioni globali su come creare una consegna, consulta [questa sezione](steps-about-delivery-creation-steps.md).
+Before starting sending SMS:
+
+* Make sure recipient profiles contain at least a mobile phone in their profile.
+* Learn more about the Adobe Campaign [Delivery best practices](delivery-best-practices.md).
+
+The key steps to send a SMS are as follows:
+
+* [Configure the SMS channel](sms-set-up.md)
+* [Create a SMS delivery](sms-create.md)
+* [Define the audience](sms-create.md#selecting-the-target-population)
+* [Define the SMS content](sms-create.md#defining-the-sms-content)
+* [Send, monitor and track SMS](sms-send.md)
+* [Troubleshoot](troubleshooting-sms.md)
+
+In addition, you need to be familiar with SMS protocol and settings. Walk through the connection set up between Adobe Campaign and a SMPP provider in [this document](sms-protocol.md)
+
+For global information on how to create a delivery, refer to [this section](steps-about-delivery-creation-steps.md).
 
 >[!NOTE]
 >
->Adobe Campaign consente inoltre di inviare notifiche sui terminali mobili tramite l&#39;opzione **Canale app mobile Adobe Campaign (NMAC)**.
+>Adobe Campaign also lets you submit notifications on mobile terminals, via its **Adobe Campaign Mobile App Channel (NMAC)** option. 
 > 
->Per ulteriori informazioni, consulta la sezione [Introduzione al canale dell&#39;app mobile](about-mobile-app-channel.md).
+>For more on this, refer to the [Get started with mobile app channel](about-mobile-app-channel.md) section.
+-->

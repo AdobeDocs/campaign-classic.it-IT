@@ -5,8 +5,10 @@ description: Scopri come definire contenuti e-mail interattivi e dinamici con AM
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Email Design
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 3%
@@ -23,7 +25,7 @@ Con AMP per e-mail, puoi:
 
 Per ulteriori informazioni sul test e l&#39;invio di e-mail AMP, consulta [questa sezione](#targeting-amp-email).
 
-Questa funzione è disponibile tramite un pacchetto dedicato in Adobe Campaign. A seconda delle autorizzazioni e del modello di distribuzione in uso, è possibile installare questo pacchetto o contattare Adobe per installarlo autonomamente.
+Questa funzione è disponibile tramite un pacchetto dedicato in Adobe Campaign. A seconda delle autorizzazioni e del modello di distribuzione, puoi installare questo pacchetto o rivolgerti ad Adobe per installarlo autonomamente.
 
 >[!NOTE]
 >
@@ -39,7 +41,7 @@ Ad esempio:
 * Il contenuto del messaggio rimane aggiornato.
 * I destinatari possono rispondere a un modulo senza uscire dalla casella in entrata.
 
-AMP for Email è compatibile con le e-mail esistenti. La versione AMP del messaggio è incorporata nell’e-mail come nuova parte MIME, oltre al HTML e/o al testo normale, garantendo la compatibilità tra tutti i client e-mail.
+AMP for Email è compatibile con le e-mail esistenti. La versione AMP del messaggio è incorporata nell’e-mail come nuova parte MIME, oltre a HTML e/o testo normale, garantendo la compatibilità tra tutti i client e-mail.
 
 Per ulteriori informazioni su AMP per il formato, le specifiche e i requisiti delle e-mail, consulta la [documentazione per gli sviluppatori AMP](https://amp.dev/documentation/guides-and-tutorials/learn/email-spec/amp-email-format/?format=email).
 
@@ -186,7 +188,7 @@ Per inviare e-mail AMP agli indirizzi Mail.ru, segui i requisiti e i passaggi el
 
 Una volta che il contenuto AMP e il fallback sono pronti e una volta definita una destinazione compatibile, puoi inviare l’e-mail come faresti normalmente.
 
-Attualmente solo Gmail e Mail.ru supportano il formato AMP, a determinate condizioni. Puoi eseguire il targeting degli indirizzi di altri provider di posta elettronica, che però riceveranno la versione HTML o in testo normale dell’e-mail.
+Attualmente solo Gmail e Mail.ru supportano il formato AMP, a determinate condizioni. Puoi eseguire il targeting degli indirizzi di altri provider di posta elettronica, che però riceveranno la versione HTML o testo normale dell’e-mail.
 
 >[!IMPORTANT]
 >
@@ -206,6 +208,6 @@ Ad esempio, se hai incluso un elenco di prodotti nell’e-mail, quando modifichi
 
 Il video seguente spiega come attivare AMP in Adobe Campaign e ne illustra l’utilizzo.
 
->[!VIDEO](https://video.tv.adobe.com/v/39583?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
 
 Ulteriori video dimostrativi di Campaign sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

@@ -5,8 +5,10 @@ description: Scopri come configurare, progettare e inviare e-mail che verranno l
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Email, Email Design
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 44634227-2340-49c4-b330-740c739ea551
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 0%
@@ -54,7 +56,7 @@ Dopo aver definito il contenuto e inserito l’oggetto dell’e-mail, puoi contr
 
 Nella scheda **[!UICONTROL Preview]** della finestra di modifica del contenuto, facendo clic su **[!UICONTROL More... > Deco-mail diagnostic]** è possibile:
 
-* Verifica che i tag di contenuto HTML siano conformi alle restrizioni del formato giapponese
+* Verifica che i tag di contenuto di HTML siano conformi alle restrizioni del formato giapponese
 * Verifica che il numero di immagini nel messaggio non superi il limite imposto dal formato (20 immagini)
 * Verifica la dimensione totale del messaggio (inferiore a 100 KB)
 
@@ -68,7 +70,7 @@ Oltre alla diagnosi di anteprima, viene eseguito un secondo controllo durante l&
 >
 >Questa regola di tipologia viene eseguita solo se almeno uno dei destinatari è configurato per ricevere e-mail in formato **[!UICONTROL Deco-mail (DoCoMo)]**, **[!UICONTROL Decore Mail (Softbank)]** o **[!UICONTROL Decoration Mail (KDDI AU)]**.
 
-Questa regola di tipologia ti consente di verificare che la consegna rispetti i [vincoli di formato](#limitations-and-recommendations) definiti dagli operatori giapponesi, in particolare in relazione alle dimensioni totali dell&#39;e-mail, alle dimensioni delle sezioni HTML e testo, al numero di immagini nei messaggi e ai tag nel contenuto di HTML.
+Questa regola di tipologia ti consente di verificare che la consegna rispetti i [vincoli di formato](#limitations-and-recommendations) definiti dagli operatori giapponesi, in particolare in relazione alle dimensioni totali dell&#39;e-mail, alle dimensioni delle sezioni HTML e text, al numero di immagini nei messaggi e ai tag nel contenuto di HTML.
 
 ### Inviare bozze {#sending-proofs}
 

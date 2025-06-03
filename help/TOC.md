@@ -6,10 +6,10 @@ title: Guida di Campaign Classic v7
 user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
-workflow-type: ht
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+workflow-type: tm+mt
 source-wordcount: '2574'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 100%
          + [Creare e gestire richieste di accesso a dati personali](platform/using/privacy-requests-ui.md)
          + [Processo automatico di richiesta di accesso a dati personali](platform/using/privacy-requests-api.md)
          + [Rinuncia alla vendita di informazioni personali](platform/using/privacy-requests-ccpa.md)
-   + Gestione dei profili {#profile-management}
+   + Gestione profilo {#profile-management}
       + [Informazioni sui profili](platform/using/about-profiles.md)
       + [Modificare un profilo](platform/using/editing-a-profile.md)
       + [Aggiungere profili](platform/using/adding-profiles.md)
@@ -68,7 +68,7 @@ ht-degree: 100%
       + [Aggiornare i dati](platform/using/updating-data.md)
       + [Importare ed esportare i profili](platform/using/exporting-and-importing-profiles.md)
       + [Creare e gestire gli elenchi](platform/using/creating-and-managing-lists.md)
-   + Importare ed esportare i dati {#importing-and-exporting-data}
+   + Importare ed esportare dati {#importing-and-exporting-data}
       + [Introduzione all’importazione e l’esportazione dei dati](platform/using/get-started-data-import-export.md)
       + [Utilizzare i flussi di lavoro per importare ed esportare i dati](platform/using/import-export-workflows.md)
       + Creare importazioni ed esportazioni generiche {#generic-imports-exports}
@@ -110,6 +110,7 @@ ht-degree: 100%
    + [Opzioni di assistenza e supporto](support.md)
 + Creare e inviare messaggi {#sending-messages}
    + [Introduzione ai messaggi](delivery/using/communication-channels.md)
+   + [Impostazioni consegna](delivery/using/delivery-settings.md)
    + Passaggi chiave durante la creazione di una consegna {#key-steps-when-creating-a-delivery}
       + [Introduzione alle consegne](delivery/using/steps-about-delivery-creation-steps.md)
       + [Creare e identificare una consegna](delivery/using/steps-create-and-identify-the-delivery.md)
@@ -129,10 +130,10 @@ ht-degree: 100%
       + [Creare una consegna e-mail](delivery/using/creating-an-email-delivery.md)
       + [Definire il contenuto dell’e-mail](delivery/using/defining-the-email-content.md)
       + [Definire il contenuto interattivo](delivery/using/defining-interactive-content.md)
+      + [Inviare con MTA avanzato](delivery/using/sending-with-enhanced-mta.md)
       + Inviare la consegna e-mail {#sending-an-email}
          + [Passaggi principali per l’invio di un’e-mail](delivery/using/sending-messages.md)
          + [Parametri e-mail](delivery/using/email-parameters.md)
-         + [Inviare con MTA avanzato](delivery/using/sending-with-enhanced-mta.md)
          + [Inviare su cellulari giapponesi](delivery/using/sending-emails-on-japanese-mobiles.md)
       + [Allegare file](delivery/using/attaching-files.md)
    + Inviare SMS {#sending-messages-on-mobiles}
@@ -140,10 +141,10 @@ ht-degree: 100%
       + Configurare il canale SMS {#sms-set-up}
          + [Configurare gli SMS in un’istanza autonoma](delivery/using/sms-set-up.md)
          + [Configurare gli SMS in un’infrastruttura mid-sourcing](delivery/using/sms-set-up-mid.md)
+         + [Protocollo e impostazioni del connettore SMS](delivery/using/sms-protocol.md)
+         + [Configurazione aggiuntiva](delivery/using/sms-send.md)
+         + [Risoluzione dei problemi relativi agli SMS](delivery/using/troubleshooting-sms.md)
       + [Creare un SMS](delivery/using/sms-create.md)
-      + [Inviare e tenere traccia degli SMS](delivery/using/sms-send.md)
-      + [Protocollo e impostazioni del connettore SMS](delivery/using/sms-protocol.md)
-      + [Risoluzione dei problemi relativi agli SMS](delivery/using/troubleshooting-sms.md)
       + [Migrare al connettore SMPP generico esteso](delivery/using/unsupported-connector-migration.md)
    + [Inviare messaggi LINE](delivery/using/line-channel.md)
    + Inviare notifiche push {#sending-push-notifications}
@@ -175,7 +176,7 @@ ht-degree: 100%
       + [Coupon personalizzati](delivery/using/personalized-coupons.md)
       + [Generare documenti PDF personalizzati](delivery/using/generating-personalized-pdf-documents.md)
       + [Personalizzare l’elenco delle emoticon](delivery/using/customizing-emoticon-list.md)
-   + Usare indirizzi seed {#using-seed-addresses}
+   + Usa indirizzi seed {#using-seed-addresses}
       + [Informazioni sugli indirizzi seed](delivery/using/about-seed-addresses.md)
       + [Creare indirizzi seed](delivery/using/creating-seed-addresses.md)
       + [Aggiungere indirizzi seed](delivery/using/adding-seed-addresses.md)
@@ -207,7 +208,7 @@ ht-degree: 100%
       + [Risoluzione dei problemi nelle consegne](delivery/using/delivery-troubleshooting.md)
       + [Stati di consegna](delivery/using/delivery-statuses.md)
       + [Errori di consegna](delivery/using/understanding-delivery-failures.md)
-      + [Gestione della quarantena](delivery/using/understanding-quarantine-management.md)
+      + [Informazioni sulla gestione della quarantena](delivery/using/understanding-quarantine-management.md)
    + Tracciare i messaggi {#tracking-messages}
       + [Informazioni sul tracciamento dei messaggi](delivery/using/about-message-tracking.md)
       + [Come configurare i collegamenti tracciati](delivery/using/how-to-configure-tracked-links.md)
@@ -226,7 +227,7 @@ ht-degree: 100%
       + [Rendering della casella in entrata](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Risoluzione dei problemi](delivery/using/deliverability-faq.md)
-   + Modulo di gestione dei contenuti {#content-management}
+   + Modulo gestione contenuti {#content-management}
       + [Informazioni sulla gestione dei contenuti](delivery/using/about-content-management.md)
       + [Risorse e principi di gestione dei contenuti](delivery/using/content-manager-resources-and-principles.md)
       + [Caso d’uso: creazione di gestione dei contenuti](delivery/using/use-case-creating-content-management.md)
@@ -243,7 +244,7 @@ ht-degree: 100%
    + Informazioni sulle campagne di marketing {#about-marketing-campaigns}
       + [Progettazione di campagne di marketing](campaign/using/designing-marketing-campaigns.md)
       + [Accedere alle campagne di marketing](campaign/using/accessing-marketing-campaigns.md)
-   + Orchestrare le campagne {#orchestrate-campaigns}
+   + Orchestrare campagne {#orchestrate-campaigns}
       + [Introduzione alle campagne di marketing](campaign/using/setting-up-marketing-campaigns.md)
       + [Creare e configurare i modelli](campaign/using/marketing-campaign-templates.md)
       + [Aggiungere consegne](campaign/using/marketing-campaign-deliveries.md)
@@ -252,7 +253,7 @@ ht-degree: 100%
       + [Impostare e gestire le approvazioni](campaign/using/marketing-campaign-approval.md)
       + [Monitorare le campagne](campaign/using/marketing-campaign-monitoring.md)
       + [Fornitori, scorte e budget](campaign/using/providers-stocks-and-budgets.md)
-   + Ottimizzazione di Campaign{#campaign-optimization}
+   + Ottimizzazione di Campaign {#campaign-optimization}
       + [Informazioni sulle tipologie di campagne](campaign-opt/using/about-campaign-typologies.md)
       + [Regole di pressione](campaign-opt/using/pressure-rules.md)
       + [Regole di coerenza](campaign-opt/using/consistency-rules.md)
@@ -281,13 +282,13 @@ ht-degree: 100%
    + [Creare ipotesi](response/using/creating-hypotheses.md)
    + [Tracciamento delle ipotesi](response/using/hypothesis-tracking.md)
 + Progettare e condividere i rapporti {#reporting}
-   + Introduzione alla generazione di rapporti {#reporting-in-adobe-campaign}
+   + Introduzione al reporting {#reporting-in-adobe-campaign}
       + [Strumenti di reporting](reporting/using/about-adobe-campaign-reporting-tools.md)
       + [Best practice per il reporting](reporting/using/best-practices.md)
    + Accedere ai rapporti incorporati {#accessing-built-in-reports}
       + [Informazioni sui rapporti incorporati](reporting/using/about-campaign-built-in-reports.md)
       + [Elenco dei rapporti](reporting/using/list-of-reports.md)
-   + Report sulle consegne{#reports-on-deliveries}
+   + Rapporti sulle consegne{#reports-on-deliveries}
       + [Informazioni sui report sulle consegne](reporting/using/reports-on-deliveries.md)
       + [Rapporti globali](reporting/using/global-reports.md)
       + [Rapporti di consegna](reporting/using/delivery-reports.md)
@@ -322,7 +323,7 @@ ht-degree: 100%
       + [Progettare un’applicazione web](web/using/translating-a-web-application.md)
       + [Tracciare le visite in un’applicazione web](web/using/tracking-a-web-application.md)
       + [Rinuncia al tracciamento delle applicazioni web](web/using/web-application-tracking-opt-out.md)
-   + Modificare i contenuti HTML {#editing-html-content}
+   + Modifica contenuto HTML {#editing-html-content}
       + [Introduzione all’editor HTML](web/using/about-campaign-html-editor.md)
       + [Gestione dei modelli](web/using/template-management.md)
       + [Interfaccia dell’editor di contenuti](web/using/content-editor-interface.md)
@@ -355,7 +356,7 @@ ht-degree: 100%
 + Integrare con Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [Introduzione alle integrazioni con Campaign](integrations/using/about-campaign-integrations.md)
    + [Creare un account tecnico Adobe personale](integrations/using/oauth-technical-account.md)
-   + Adobe Experience Cloud Triggers {#experience-triggers}
+   + Trigger di Adobe Experience Cloud {#experience-triggers}
       + [Utilizzare  [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Configurare la pipeline](integrations/using/configuring-pipeline.md)
       + [Configurare gli eventi per l’implementazione personalizzata](integrations/using/events.md)
@@ -386,7 +387,7 @@ ht-degree: 100%
       + [Utilizzare  [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Configurare l’integrazione con [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Inserire un’immagine dinamica](integrations/using/inserting-a-dynamic-image.md)
-   + ACS Connector {#acs-connector}
+   + Connettore ACS {#acs-connector}
       + [Introduzione a  [!DNL ACS Connector]](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [Sincronizzare i profili](integrations/using/synchronizing-profiles.md)
       + [Sincronizzare i tipi di pubblico](integrations/using/synchronizing-audiences.md)
@@ -444,7 +445,7 @@ ht-degree: 100%
       + [Attività Approval](workflow/using/approval.md)
       + [Attività Alert](workflow/using/alert.md)
       + [Attività Task](workflow/using/task.md)
-   + Attività di azione {#action-activities}
+   + Attività azione {#action-activities}
       + [Informazioni sulle attività di azione](workflow/using/about-action-activities.md)
       + [Consegna](workflow/using/delivery.md)
       + [Controllo della consegna](workflow/using/delivery-control.md)
@@ -480,7 +481,7 @@ ht-degree: 100%
          + [Inviare un rapporto a un elenco](workflow/using/sending-a-report-to-a-list.md)
          + [Supervisionare i flussi di lavoro](workflow/using/supervising-workflows.md)
          + [Inviare avvisi personalizzati agli operatori](workflow/using/sending-personalized-alerts-to-operators.md)
-      + Gestione dei dati {#data-management}
+      + Gestione dati {#data-management}
          + [Coordinare gli aggiornamenti dei dati](workflow/using/coordinating-data-updates.md)
          + [Creare un elenco di riepilogo](workflow/using/creating-a-summary-list.md)
          + [Arricchire i dati](workflow/using/enriching-data.md)
@@ -587,12 +588,12 @@ ht-degree: 100%
 + Integrare con i social media {#integrating-with-social-media}
    + [Informazioni sul social marketing](social/using/about-social-marketing.md)
 + Guida all’installazione e alla configurazione {#installing-campaign-classic}
-   + Principi di architettura {#architecture-and-hosting-models}
+   + Principi dell’architettura {#architecture-and-hosting-models}
       + [Architettura generale](installation/using/general-architecture.md)
       + Modelli di hosting{#hosting-models-lp}
          + [Modelli di hosting per campagne](installation/using/hosting-models.md)
          + [Matrice di capacità](installation/using/capability-matrix.md)
-   + Tipi di implementazione {#deployment-types}
+   + Tipi di distribuzione {#deployment-types}
       + [Informazioni sui tipi di implementazione](installation/using/about-deployment-types.md)
       + [Implementazione autonoma](installation/using/standalone-deployment.md)
       + [Implementazione standard](installation/using/standard-deployment.md)
@@ -624,7 +625,7 @@ ht-degree: 100%
          + [Integrare in un server web](installation/using/integration-into-a-web-server-for-linux.md)
       + [Gestione del fuso orario](installation/using/time-zone-management.md)
       + [Installare un server di mid-sourcing](installation/using/mid-sourcing-server.md)
-   + Implementare Campaign (on-premise) {#initial-configuration}
+   + Distribuire Campaign (on-premise) {#initial-configuration}
       + [Passaggi chiave](installation/using/about-initial-configuration.md)
       + [Creare un’istanza e accedere](installation/using/creating-an-instance-and-logging-on.md)
       + [Creare e configurare il database](installation/using/creating-and-configuring-the-database.md)
@@ -641,7 +642,7 @@ ht-degree: 100%
       + [Utilizzo dei server MX con Campaign](installation/using/using-mx-servers.md)
       + [Configurare CCN e-mail](installation/using/email-archiving.md)
       + [Configurare SpamAssassin](installation/using/configuring-spamassassin.md)
-   + Connettersi a Campaign{#connect-to-campaign}
+   + Connessione a Campaign{#connect-to-campaign}
       + [Installare la console client](installation/using/installing-the-client-console.md)
       + Connettersi tramite un Adobe ID {#connecting-via-an-adobe-id}
          + [Informazioni su [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
@@ -719,7 +720,7 @@ ht-degree: 100%
          + [Esecuzione di un flusso di lavoro](production/using/workflow-execution.md)
          + [Password persa](production/using/lost-password.md)
          + [Aggiornamento della console](production/using/console-update.md)
-      + Risoluzione dei problemi relativi alle consegne {#delivery-troubleshooting-toc}
+      + Risoluzione dei problemi nelle consegne {#delivery-troubleshooting-toc}
          + [Problemi relativi a prestazioni e velocità effettiva](production/using/performance-and-throughput-issues.md)
          + [Problemi relativi alla visualizzazione delle immagini](production/using/image-display-issues.md)
          + [Immagini mancanti](production/using/images-missing.md)
@@ -820,7 +821,7 @@ ht-degree: 100%
       + [Prerequisiti](migration/using/before-starting-migration.md)
       + [Informazioni sui test di migrazione](migration/using/testing-the-migration.md)
       + [Adattare la configurazione](migration/using/configuring-your-platform.md)
-   + Iniziare la migrazione {#migrating-to-adobe-campaign-7}
+   + Avviare la migrazione {#migrating-to-adobe-campaign-7}
       + [Migrare una piattaforma Microsoft Windows](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
       + [Migrare una piattaforma Linux](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
    + [Procedura di ripristino](migration/using/about-rollback.md)

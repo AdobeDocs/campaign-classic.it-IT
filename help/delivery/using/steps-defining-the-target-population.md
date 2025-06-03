@@ -4,8 +4,10 @@ title: Definire la popolazione target
 description: Scopri come definire la popolazione target
 feature: Audiences, Proofs
 role: User
+hide: true
+hidefromtoc: true
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '1729'
 ht-degree: 26%
@@ -234,13 +236,13 @@ Per impostazione predefinita, i modelli di consegna sono destinati a **[!UICONTR
 
 Queste mappature sono le seguenti:
 
-| Nome | Utilizzare | Schema standard |
+| Nome | Utilizzo | Schema standard |
 |---|---|---|
 | Destinatari | Consegna ai destinatari del database di Adobe Campaign | nms:recipient |
 | Visitatori | Distribuisci ai visitatori i cui profili sono stati raccolti tramite riferimento (marketing virale) o tramite social network (Facebook, X, precedentemente noto come Twitter), ad esempio. | mns:visitor |
 | Abbonamenti | Consegnare ai destinatari abbonati o iscritti a un servizio informativo, ad esempio una newsletter | nms:subscription |
 | Abbonamenti visitatore | Consegnare ai visitatori abbonati o iscritti a un servizio informativo | nms:visitorSub |
-| Servizio | Publish a un account X o a una pagina Facebook | nms:service |
+| Servizio | Pubblicare su un account X o su una pagina Facebook | nms:service |
 | Operatori | Consegnare agli operatori Adobe Campaign | nms:operator |
 | File esterno | Consegnare tramite un file contenente tutte le informazioni necessarie per la consegna | Nessuno schema collegato, nessuna destinazione immessa |
 
@@ -249,6 +251,6 @@ Queste mappature sono le seguenti:
 
 In questo video scoprirai come aggiungere seed e bozze a un’e-mail esistente e come inviarla.
 
->[!VIDEO](https://video.tv.adobe.com/v/328513?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
 Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

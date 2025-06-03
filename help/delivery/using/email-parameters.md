@@ -5,8 +5,10 @@ description: Scopri le opzioni e le impostazioni specifiche per la consegna e-ma
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Email
 role: User, Developer, Data Engineer
+hide: true
+hidefromtoc: true
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: 09b79849fa9db15dd53d1ed56630a34915aa32ad
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 10%
@@ -71,7 +73,7 @@ Seleziona il formato dell’e-mail nella sezione inferiore della finestra:
 
 * **[!UICONTROL Send all messages in text format]**
 
-  Il messaggio viene inviato in formato testo. Il formato HTML non verrà inviato, ma verrà utilizzato per la pagina speculare solo quando il destinatario farà clic sul messaggio.
+  Il messaggio viene inviato in formato testo. Il formato HTML non verrà inviato, ma utilizzato per la pagina speculare solo quando il destinatario fa clic sul messaggio.
 
 >[!NOTE]
 >
@@ -89,7 +91,7 @@ Nelle proprietà di consegna, il campo **[!UICONTROL Mode]** della scheda **[!UI
 
 >[!IMPORTANT]
 >
->Per poter creare la pagina speculare, è necessario che sia stato definito un contenuto HTML per la consegna.
+>Per poter creare la pagina speculare, la consegna deve aver definito un contenuto HTML.
 
 Oltre alla modalità predefinita, sono disponibili anche le seguenti opzioni:
 

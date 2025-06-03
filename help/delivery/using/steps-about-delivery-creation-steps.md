@@ -4,11 +4,13 @@ title: Informazioni sui passaggi di creazione delle consegne in Adobe Campaign
 description: Scopri i passaggi principali per la creazione della consegna in Adobe Campaign
 feature: Channel Configuration
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 0188c3fe-8176-4904-8505-c47a72c20fcc
-source-git-commit: 446062946b64c9a4d065b6a56d263914cbe628f8
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 12%
+ht-degree: 22%
 
 ---
 
@@ -23,7 +25,7 @@ I passaggi chiave durante la creazione di una consegna sono i seguenti:
    * [Canale e-mail](defining-the-email-content.md)
    * [Canale SMS](sms-create.md#defining-the-sms-content)
    * [Canale direct mail](defining-the-direct-mail-content.md)
-   * [Canale applicazione mobile](about-mobile-app-channel.md)
+   * [Canale app mobile](about-mobile-app-channel.md)
 
 1. **Definire la popolazione target**. [Ulteriori informazioni](steps-defining-the-target-population.md)
 

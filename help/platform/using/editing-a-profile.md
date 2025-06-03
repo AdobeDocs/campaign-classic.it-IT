@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: 0f3a5582-5c90-4393-bee8-d9e2f07e5982
-source-git-commit: ec774cc10a69a694b3c2bf5a6f662afd12a1435a
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 4%
+source-wordcount: '115'
+ht-degree: 2%
 
 ---
 
@@ -34,68 +34,77 @@ Le schede e il loro contenuto dipendono dalla configurazione e dai pacchetti ins
 >
 >Per ulteriori informazioni, consultare [questa pagina](../../configuration/using/about-schema-edition.md).
 
-## Scheda Generale {#general-tab}
+>[!NOTE]
+>
+>Per ulteriori informazioni su come modificare i profili e accedervi, consulta la documentazione dettagliata nella [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}.
 
-Questa schermata contiene tutti i dati generali sul profilo selezionato. In particolare, contiene il cognome, il nome, l’indirizzo e-mail, il formato di ricezione e-mail, ecc. Ecco come si presenta:
+
+
+<!--
+## General tab {#general-tab}
+
+This screen contains all general data about the selected profile. In particular, it contains the last name, first name, email address, email reception format, etc. It looks like this:
 
 ![](assets/s_ncs_user_profile_general_tab.png)
 
 >[!NOTE]
 >
->Quando l&#39;opzione **[!UICONTROL No longer contact (by any channel)]** è selezionata, significa che il profilo è in fase di inserisco nell&#39;elenco Bloccati di annullamento dell&#39;iscrizione, ovvero il profilo ha espresso il desiderio di non essere contattato (ad esempio, facendo clic su un collegamento di annullamento dell&#39;iscrizione in una newsletter). Non saranno più oggetto di consegne su alcun canale (e-mail, direct mailing, ecc.). Per ulteriori informazioni, consulta [questa pagina](../../delivery/using/understanding-quarantine-management.md).
+>When the **[!UICONTROL No longer contact (by any channel)]** option is selected, this means that the profile is on denylist, i.e. the profile has expressed a wish not to be contacted (for example, by clicking an unsubscription link in a newsletter). They will no longer be targeted by deliveries on any channel (email, direct mail, etc.). For more on this, refer to [this page](../../delivery/using/understanding-quarantine-management.md).
 
-## Scheda Informazioni di contatto {#contact-information-tab}
+## Contact information tab {#contact-information-tab}
 
-Questa schermata contiene l’indirizzo di direct mailing del profilo selezionato. Ecco come si presenta:
+This screen contains the direct mail address of the selected profile. It looks like this:
 
 ![](assets/s_ncs_user_profile_details_tab.png)
 
-Questa schermata mostra l’indice di qualità dell’indirizzo e quanti errori contiene l’indirizzo. Queste informazioni vengono utilizzate direttamente dal gestore della posta in base al numero di errori rilevati durante le consegne precedenti e non possono essere modificate manualmente.
+This screen shows the quality index of the address, as well as how many errors the address contains. This information is used directly by the mail carrier based on the number of errors found during previous deliveries, and is not modifiable manually.
 
-## Altra scheda {#other-tab}
+## Other tab {#other-tab}
 
-Questa schermata contiene campi definiti dall’utente che possono essere personalizzati in base ai requisiti. È inoltre possibile modificare i nomi dei campi e definirne il formato tramite **[!UICONTROL Field properties...]**, come illustrato di seguito:
+This screen contains user-defined fields that can be personalized based on requirements. You can also change the names of the fields and define their format, via **[!UICONTROL Field properties...]**, as shown below:
 
 ![](assets/s_ncs_user_profile_others_tab.png)
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle proprietà dei campi e sull&#39;aggiunta di campi, consulta [questa pagina](../../configuration/using/new-field-wizard.md).
+>For more on field properties and on adding fields, refer to [this page](../../configuration/using/new-field-wizard.md).
 
-## Scheda Elenchi {#lists-tab}
+## Lists tab {#lists-tab}
 
-Questa schermata visualizza i gruppi a cui appartiene il profilo selezionato. Fare clic su **[!UICONTROL Add]** per sottoscrivere il profilo a un elenco. Fare clic su **[!UICONTROL Detail]** per visualizzare la descrizione e l&#39;elenco dei profili nell&#39;elenco selezionato.
+This screen displays the group(s) to which the selected profile belongs. Click **[!UICONTROL Add]** to subscribe the profile to a list. Click **[!UICONTROL Detail]** to display the description and the list of profiles in the selected list.
 
 ![](assets/s_ncs_user_profile_groups_tab_details.png)
 
-Per ulteriori informazioni, consulta [Creare e gestire gli elenchi](../../platform/using/creating-and-managing-lists.md).
+For more on this, refer to [Create and manage lists](../../platform/using/creating-and-managing-lists.md).
 
-## Scheda Iscrizioni {#subscriptions-tab}
+## Subscriptions tab {#subscriptions-tab}
 
-Questa schermata contiene i servizi di informazioni a cui il profilo si è abbonato.
+This screen contains the information services to which the profile has subscribed.
 
 ![](assets/s_ncs_user_profile_subscript_tab_details.png)
 
-Il pulsante **[!UICONTROL Detail]** visualizza le proprietà della sottoscrizione selezionata. Il pulsante **[!UICONTROL Add]** viene utilizzato per aggiungere manualmente una nuova sottoscrizione.
+The **[!UICONTROL Detail]** button displays the properties of the selected subscription. The **[!UICONTROL Add]** button is used to add a new subscription manually.
 
-Per ulteriori informazioni, consulta [questa pagina](../../delivery/using/managing-subscriptions.md).
+For more on this, refer to [this page](../../delivery/using/managing-subscriptions.md).
 
-## Scheda Consegne {#deliveries-tab}
+## Deliveries tab {#deliveries-tab}
 
-In questa schermata vengono visualizzati i registri di consegna per il profilo selezionato. Puoi anche visualizzare le etichette, le date e lo stato delle azioni di consegna indirizzate al profilo tramite tutti i canali.
+This screen displays the delivery logs for the selected profile. You can also display the labels, dates, and status of the delivery actions addressed to the profile via all channels.
 
 ![](assets/s_ncs_user_profile_delivery_tab.png)
 
-## Scheda Tracciamento {#tracking-tab}
+## Tracking tab {#tracking-tab}
 
-Questa schermata ti consente di visualizzare i registri di tracciamento per il profilo selezionato. Queste informazioni vengono utilizzate per tenere traccia del comportamento del profilo dopo le consegne.
+This screen lets you view the tracking logs for the selected profile. This information is used to track profile behavior following deliveries.
 
 ![](assets/s_ncs_user_profile_tracking_tab.png)
 
-Questa scheda mostra il totale cumulativo di tutti gli URL tracciati nelle consegne.
+This tab shows the cumulative total of all URLs tracked in deliveries.
 
-L’elenco è configurabile e in genere contiene: l’URL su cui è stato fatto clic, la data e l’ora del clic e il documento che conteneva l’URL.
+The list is configurable, and usually contains: the URL clicked, date and time of click, and the document that contained the URL.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla funzionalità di tracciamento, consulta [questa pagina](../../delivery/using/delivery-dashboard.md).
+>For more on tracking functionality, please refer to [this page](../../delivery/using/delivery-dashboard.md).
+
+-->
