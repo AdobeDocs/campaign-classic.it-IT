@@ -19,7 +19,7 @@ Con Adobe Campaign, crea consegne e-mail per inviare e-mail personalizzate alla 
 
 Scopri i passaggi chiave relativi alla creazione di consegne e-mail nella documentazione di Campaign v8:
 
-* [Creare una consegna e-mail](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}: scopri i diversi passaggi necessari per creare una consegna e-mail.
+* [Creare una consegna e-mail](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html?lang=it){target="_blank"}: scopri i diversi passaggi necessari per creare una consegna e-mail.
 * [Definisci il contenuto dell&#39;e-mail](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}: definisci ciò che l&#39;e-mail includerà: mittente, oggetto, contenuto, immagini.
 * [Definisci contenuto interattivo](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html){target="_blank"}: utilizza il formato AMP interattivo per e-mail per inviare e-mail dinamiche.
 * [Invia e-mail su dispositivi mobili giapponesi](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}: utilizza uno dei tre formati giapponesi specifici per l&#39;e-mail su dispositivi mobili.
@@ -27,9 +27,9 @@ Scopri i passaggi chiave relativi alla creazione di consegne e-mail nella docume
 
 Per informazioni sui parametri delle e-mail nella documentazione di Campaign v8, consulta queste pagine:
 
-* [Collegamento alla pagina mirror](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html){target="_blank"}: configura la pagina mirror per garantire ai client la migliore esperienza di rendering.
-* [Aggiungi un indirizzo Ccn](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-bcc.html){target="_blank"}: configura Adobe Campaign per conservare una copia delle e-mail inviate dalla tua piattaforma.
-* [Definisci parametri e-mail aggiuntivi](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html){target="_blank"}: ulteriori informazioni sulle opzioni e i parametri disponibili nelle proprietà di consegna.
+* [Collegamento alla pagina mirror](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html?lang=it){target="_blank"}: configura la pagina mirror per garantire ai client la migliore esperienza di rendering.
+* [Aggiungi un indirizzo Ccn](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-bcc.html?lang=it){target="_blank"}: configura Adobe Campaign per conservare una copia delle e-mail inviate dalla tua piattaforma.
+* [Definisci parametri e-mail aggiuntivi](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html?lang=it){target="_blank"}: ulteriori informazioni sulle opzioni e i parametri disponibili nelle proprietà di consegna.
 
 Fai riferimento anche a questa [pagina](sending-with-enhanced-mta.md) per informazioni sull&#39;MTA avanzato.
 
@@ -41,7 +41,7 @@ Before starting sending emails:
 
 * Make sure recipient profiles contain at least an email address.
 * Learn more about the Adobe Campaign [Delivery best practices](delivery-best-practices.md).
-* Read out these sections to learn more about Deliverability: [Deliverability management in Campaign](about-deliverability.md) and [Deliverability best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
+* Read out these sections to learn more about Deliverability: [Deliverability management in Campaign](about-deliverability.md) and [Deliverability best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it).
 
 The key steps to send an email are as follows:
 

@@ -38,7 +38,7 @@ Adobe Campaign offre ai titolari del trattamento dei dati due possibilità per e
 >[!NOTE]
 >
 >* Per ulteriori informazioni sui dati personali e sulle diverse entità che gestiscono i dati (titolare del trattamento, responsabile del trattamento e interessato), consulta [Dati personali e utenti tipo](privacy-and-recommendations.md#personal-data).
->* Per ulteriori informazioni sulle richieste di accesso a dati personali, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/privacy){target=_blank}.
+>* Per ulteriori informazioni sulle richieste di accesso a dati personali, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/privacy/privacy){target=_blank}.
 
 <!--
 ## Prerequisites {#prerequesites}

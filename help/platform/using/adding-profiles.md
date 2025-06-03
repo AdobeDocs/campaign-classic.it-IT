@@ -23,7 +23,7 @@ Nella maggior parte dei casi, i profili sono [importati in Campaign tramite un f
 
 >[!NOTE]
 >
->Per ulteriori informazioni su come creare profili nella console Adobe Campaign, consulta la [documentazione di Campaign v8.](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank}
+>Per ulteriori informazioni su come creare profili nella console Adobe Campaign, consulta la [documentazione di Campaign v8.](https://experienceleague.adobe.com/it/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank}
 
 
 <!--
