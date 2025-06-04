@@ -35,11 +35,11 @@ Scopri i passaggi chiave relativi alla gestione dei flussi di lavoro nella docum
 
 * [Crea un flusso di lavoro](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=it){target=_blank}: scopri come creare ed eseguire flussi di lavoro di targeting, campagne e tecnici.
 
-* [Best practice](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target=_blank}: scopri le linee guida per ottimizzare le prestazioni del flusso di lavoro di Campaign, migliorare la progettazione del flusso di lavoro e selezionare le impostazioni corrette.
+* [Best practice](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=it){target=_blank}: scopri le linee guida per ottimizzare le prestazioni del flusso di lavoro di Campaign, migliorare la progettazione del flusso di lavoro e selezionare le impostazioni corrette.
 
-* [Monitorare i flussi di lavoro](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target=_blank}: scopri come monitorare l&#39;esecuzione dei flussi di lavoro per verificare che tutto funzioni correttamente.
+* [Monitorare i flussi di lavoro](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=it){target=_blank}: scopri come monitorare l&#39;esecuzione dei flussi di lavoro per verificare che tutto funzioni correttamente.
 
-* [Casi di utilizzo del flusso di lavoro](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html){target=_blank}: scopri diversi contesti in cui è possibile utilizzare i flussi di lavoro e come implementarli tramite casi di utilizzo end-to-end.
+* [Casi di utilizzo del flusso di lavoro](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html?lang=it){target=_blank}: scopri diversi contesti in cui è possibile utilizzare i flussi di lavoro e come implementarli tramite casi di utilizzo end-to-end.
 
 
 >[!ENDTABS]
