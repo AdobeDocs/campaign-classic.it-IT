@@ -2,13 +2,12 @@
 product: campaign
 title: Inviare con MTA avanzato in Adobe Campaign Classic
 description: Scopri l’ambito e le specificità dell’invio di e-mail con MTA avanzato di Adobe Campaign
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1368'
 ht-degree: 1%
 
 ---
@@ -23,7 +22,7 @@ L&#39;**MTA avanzato di Adobe Campaign** (Mail Transfer Agent) fornisce un&#39;i
 >
 >L’MTA avanzato di Adobe Campaign è disponibile solo per i clienti Campaign Classic in hosting o ibridi. Le installazioni on-premise di Campaign Classic non possono essere aggiornate per utilizzare l’MTA avanzato.
 
-Se dopo settembre 2018 hai effettuato il provisioning di un’istanza di Campaign Classic, stai utilizzando l’MTA avanzato. Per tutti gli altri clienti Campaign Classic, consulta le [Domande frequenti](#enhanced-mta-faq) di seguito.
+Se dopo settembre 2018 hai effettuato il provisioning di un’istanza di Campaign Classic, stai utilizzando l’MTA avanzato. Per tutti gli altri clienti Campaign Classic, vedi le [Domande frequenti](#enhanced-mta-faq) di seguito.
 
 L’implementazione dell’MTA avanzato potrebbe influire su alcune delle funzionalità di Campaign esistenti. Per ulteriori informazioni, consulta le [Specificità MTA avanzate](#enhanced-mta-impacts).
 
@@ -137,7 +136,7 @@ Per ulteriori informazioni sul periodo di validità, consulta [questa sezione](s
 ### Firma DKIM
 
 La firma di autenticazione dell’e-mail DKIM (DomainKeys Identified Mail) viene eseguita dall’MTA avanzato. La firma DKIM da parte dell’MTA nativo di Campaign verrà disattivata all’interno della tabella di gestione dei domini come parte dell’aggiornamento dell’MTA avanzato.
-Per ulteriori informazioni su DKIM, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=it#authentication).
+Per ulteriori informazioni su DKIM, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ### Reporting sul successo della consegna
 

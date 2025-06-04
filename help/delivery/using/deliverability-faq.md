@@ -2,13 +2,12 @@
 product: campaign
 title: Punti chiave durante la gestione del recapito messaggi in Adobe Campaign Classic
 description: Scopri i punti chiave da verificare durante la gestione del recapito messaggi in Adobe Campaign
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Deliverability, Troubleshooting
 role: User
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '648'
 ht-degree: 1%
 
 ---
@@ -40,7 +39,7 @@ Se ricevi sempre lo stesso messaggio di errore per un ISP, l’e-mail o l’IP p
 * Aggiorna i moduli di abbonamento per rilevare eventuali errori nei nomi di dominio immessi (ad esempio: gmaul.com o yaho.com).
 * Se noti errori che indicano che i tuoi messaggi sono dichiarati come spam o che i tuoi messaggi sono costantemente bloccati, prova ad escludere dal target i destinatari che non hanno aperto o cliccato in uno dei tuoi messaggi negli ultimi 12 mesi.
 
-Se il problema persiste, contattare il servizio commerciale o il servizio di recapito messaggi, [Adobe dell&#39;Assistenza clienti](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+Se il problema persiste, contatta il servizio commerciale o di recapito messaggi, [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## di Inserisco nell&#39;elenco Bloccati rispetto alla quarantena {#denylist-versus-quarantine}
 
