@@ -6,9 +6,9 @@ title: Guida di Campaign Classic v7
 user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 67e5a52666b7a57d1fc17d308a124948bf81f432
+source-git-commit: d2292711cf67332eda3fe9bed78248ab62ca1818
 workflow-type: tm+mt
-source-wordcount: '2572'
+source-wordcount: '2575'
 ht-degree: 86%
 
 ---
@@ -125,7 +125,9 @@ ht-degree: 86%
          + [Definire il pubblico adatto](delivery/using/define-the-right-audience.md)
          + [Controllare prima dell’invio](delivery/using/check-before-sending.md)
          + [Tracciare e monitorare](delivery/using/track-and-monitor.md)
-+ E-mail {#sending-emails}
++ Inviare e-mail {#sending-emails}
++ [Introduzione alle e-mail](delivery/using/about-email-channel.md)
++ [Invia con MTA avanzato](delivery/using/sending-with-enhanced-mta.md)
 + [Creare una consegna e-mail](delivery/using/creating-an-email-delivery.md)
 + [Definisci il contenuto dell&#39;e-mail](delivery/using/defining-the-email-content.md)
 + [Definisci il contenuto interattivo](delivery/using/defining-interactive-content.md)
@@ -134,7 +136,6 @@ ht-degree: 86%
 + [Parametri e-mail](delivery/using/email-parameters.md)
 + [Invia su cellulari giapponesi](delivery/using/sending-emails-on-japanese-mobiles.md)
 + [Allega file](delivery/using/attaching-files.md)
-+ [Inviare e-mail](delivery/using/about-email-channel.md)
 + Inviare SMS {#sending-messages-on-mobiles}
 + [Introduzione agli SMS](delivery/using/sms-channel.md)
 + Configura il canale SMS {#sms-set-up}
@@ -840,7 +841,6 @@ ht-degree: 86%
       + [Aggiornamenti del sistema 2023](technotes/using/tech-stack-upgrade.md)
       + [Aggiornamenti IMS](technotes/using/ims-updates.md)
       + [Fine del supporto per TLS 1.0 e 1.1](technotes/using/eol-tls-support.md)
-      + [Inviare con MTA avanzato](delivery/using/sending-with-enhanced-mta.md)
    + E-mail e notifiche push{#technotes-email}
       + [Protezione della privacy della posta su Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
       + [Come aggiornare i mancati recapiti permanenti errati](delivery/using/update-bounce-qualification.md)
