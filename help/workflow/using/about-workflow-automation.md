@@ -4,21 +4,18 @@ title: Informazioni sui flussi di lavoro
 description: Automatizza i processi con i flussi di lavoro, gestisci dati e tipi di pubblico, invia messaggi e altro ancora
 feature: Workflows, Data Management
 exl-id: 024a7344-9376-4ff3-926a-003148229f9f
-source-git-commit: 83874a31321c7d06411b393e46ce2ef43d43d6ed
+source-git-commit: fd082d5427314fbc91966f89048da5f193658f87
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 45%
+source-wordcount: '236'
+ht-degree: 9%
 
 ---
 
 # Automatizzare con i flussi di lavoro {#gs-workflows}
 
-Adobe Campaign include un modulo per flussi di lavoro con cui puoi migliorare l’orchestrazione dell’intera gamma di processi e attività tra i diversi moduli del server dell’applicazione. Questo ambiente grafico completo ti consente di progettare processi inclusi segmentazione, esecuzione di campagne, elaborazione di file, partecipazione di utenti, ecc. Il motore del flusso di lavoro esegue e traccia tali processi.
+Il modulo Flusso di lavoro di Adobe Campaign consente al team di semplificare e automatizzare i processi aziendali end-to-end su tutta la piattaforma. Grazie a un’interfaccia grafica intuitiva, puoi progettare e gestire flussi di lavoro che coordinano in un’unica posizione attività quali segmentazione dei dati, esecuzione di campagne, gestione di file e persino approvazioni degli utenti.
 
-Ad esempio, puoi utilizzare un flusso di lavoro per scaricare un file da un server, decomprimerlo e quindi importare i record contenuti all’interno nel database di Adobe Campaign.
-
-![](assets/do-not-localize/workflow.jpg){width="40%" align="center"}
-
+Ad esempio, è possibile automatizzare un processo per recuperare un file da un server remoto, estrarne il contenuto e caricare facilmente i dati nel server Adobe Campaign, riducendo il lavoro manuale e aumentando l&#39;efficienza operativa. Il motore del flusso di lavoro garantisce l&#39;esecuzione affidabile di ogni passaggio e la sua tracciabilità ai fini della visibilità e del controllo.
 
 >[!BEGINTABS]
 
@@ -38,11 +35,11 @@ Scopri i passaggi chiave relativi alla gestione dei flussi di lavoro nella docum
 
 * [Crea un flusso di lavoro](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=it){target=_blank}: scopri come creare ed eseguire flussi di lavoro di targeting, campagne e tecnici.
 
-* [Best practice](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=it){target=_blank}: scopri le linee guida per ottimizzare le prestazioni del flusso di lavoro di Campaign, migliorare la progettazione del flusso di lavoro e selezionare le impostazioni corrette.
+* [Best practice](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target=_blank}: scopri le linee guida per ottimizzare le prestazioni del flusso di lavoro di Campaign, migliorare la progettazione del flusso di lavoro e selezionare le impostazioni corrette.
 
-* [Monitorare i flussi di lavoro](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=it){target=_blank}: scopri come monitorare l&#39;esecuzione dei flussi di lavoro per verificare che tutto funzioni correttamente.
+* [Monitorare i flussi di lavoro](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target=_blank}: scopri come monitorare l&#39;esecuzione dei flussi di lavoro per verificare che tutto funzioni correttamente.
 
-* [Casi di utilizzo del flusso di lavoro](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html?lang=it){target=_blank}: scopri diversi contesti in cui è possibile utilizzare i flussi di lavoro e come implementarli tramite casi di utilizzo end-to-end.
+* [Casi di utilizzo del flusso di lavoro](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html){target=_blank}: scopri diversi contesti in cui è possibile utilizzare i flussi di lavoro e come implementarli tramite casi di utilizzo end-to-end.
 
 
 >[!ENDTABS]
