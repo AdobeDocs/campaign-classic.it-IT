@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: cdbcfc5aa0614e41ce76cb777fec58fbd01797d2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '903'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,11 +23,11 @@ In questa pagina sono elencate nuove funzionalità, miglioramenti e correzioni i
 
 [!BADGE Disponibilità limitata]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Disponibilità limitata"}
 
-_martedì 12 maggio 2025_
+_12 maggio 2025_
 
 Questa build include le seguenti correzioni:
 
-* È stato risolto un problema di post-aggiornamento riscontrato nelle impostazioni non Oracle. (NEO-87012)
+* È stato risolto un problema di post-aggiornamento riscontrato nelle configurazioni diverse da Oracle. (NEO-87012)
 * È stato risolto un problema di back-end TLS/HTTPS che interessava sia la console client che il server. (NEO-87432)
 
 ### Build 9390 {#build-9390}
