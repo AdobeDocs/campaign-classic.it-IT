@@ -7,10 +7,10 @@ feature: Application Settings, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 6e83067cef2b08b5bee37610bfef515714756ada
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 1%
+source-wordcount: '517'
+ht-degree: 2%
 
 ---
 
@@ -55,16 +55,21 @@ Per distinguere le viste dalle cartelle, il nome di ogni vista viene visualizzat
 
 ### Aggiungere cartelle e creare visualizzazioni {#adding-folders-and-creating-views}
 
+>[!IMPORTANT]
+>
+>Le cartelle pronte all’uso non devono essere contrassegnate come viste.
+
+
 Nell’esempio seguente, creeremo nuove cartelle per visualizzare dati specifici:
 
 1. Creare una nuova cartella di tipo **[!UICONTROL Deliveries]** e denominarla **Consegne Francia**.
 1. Fare clic con il pulsante destro del mouse su questa cartella e selezionare **[!UICONTROL Properties...]**.
 
-   ![](assets/s_ncs_user_add_folder_exple.png)
+   ![Schermata che mostra un clic con il pulsante destro del mouse nelle proprietà](assets/s_ncs_user_add_folder_exple.png)
 
 1. Nella scheda **[!UICONTROL Restriction]**, selezionare **[!UICONTROL This folder is a view]**. Verranno quindi visualizzate tutte le consegne nel database.
 
-   ![](assets/s_ncs_user_add_folder_exple01.png)
+   ![Schermata che mostra la casella di visualizzazione selezionata](assets/s_ncs_user_add_folder_exple01.png)
 
 1. Definisci i criteri del filtro di consegna dall’editor delle query nella sezione centrale della finestra: vengono quindi visualizzate le campagne corrispondenti al filtro definito.
 
@@ -74,7 +79,7 @@ Nell’esempio seguente, creeremo nuove cartelle per visualizzare dati specifici
 
    Con le seguenti condizioni di filtro:
 
-![](assets/s_ncs_user_add_folder_exple00.png)
+![Schermata che mostra le diverse condizioni del filtro](assets/s_ncs_user_add_folder_exple00.png)
 
 Nella vista vengono visualizzate le seguenti consegne:
 
@@ -84,46 +89,48 @@ Nella vista vengono visualizzate le seguenti consegne:
 >
 >Durante la gestione di [eventi di messaggistica transazionale](../../message-center/using/about-transactional-messaging.md), le cartelle **[!UICONTROL Real time events]** o **[!UICONTROL Batch events]** non devono essere impostate come viste nelle istanze di esecuzione, in quanto ciò potrebbe causare problemi di diritti di accesso. Per ulteriori informazioni sulla raccolta eventi, vedere [questa sezione](../../message-center/using/about-event-processing.md#event-collection).
 
-## Autorizzazioni per una cartella
+<!--
+## Permissions on a folder
 
-### Modificare le autorizzazioni per una cartella {#edit-permissions-on-a-folder}
+### Edit permissions on a folder {#edit-permissions-on-a-folder}
 
-Per modificare le autorizzazioni per una cartella specifica della struttura, attieniti alla seguente procedura:
+To edit permissions on a specific folder of the tree, follow the steps below:
 
-1. Fare clic con il pulsante destro del mouse sulla cartella e selezionare **[!UICONTROL Properties...]**.
+1. Right-click on the folder and select **[!UICONTROL Properties...]**.
 
    ![](assets/s_ncs_user_folder_properties.png)
 
-1. Fare clic sulla scheda **[!UICONTROL Security]** per visualizzare le autorizzazioni per questa cartella.
+1. Click the **[!UICONTROL Security]** tab to view authorizations on this folder.
 
    ![](assets/s_ncs_user_folder_properties_security.png)
 
-### Modifica autorizzazioni {#modify-permissions}
+### Modify permissions {#modify-permissions}
 
-Per modificare le autorizzazioni, è possibile:
+To modify permissions, you can:
 
-* **Sostituisci un gruppo o un operatore**. A questo scopo, fai clic su uno dei gruppi (o degli operatori) con diritti per la cartella e seleziona un nuovo gruppo (o un nuovo operatore) dall’elenco a discesa:
+* **Replace a group or an operator**. To do this, click one of the groups (or operators) with rights to the folder, and select a new group (or a new operator) from the drop-down list:
 
   ![](assets/s_ncs_user_folder_properties_security02.png)
 
-* **Autorizzare un gruppo o un operatore**. A tale scopo, fare clic sul pulsante **[!UICONTROL Add]** e selezionare il gruppo o l&#39;operatore a cui si desidera assegnare le autorizzazioni per la cartella.
-* **Non consentire a un gruppo o a un operatore**. A tale scopo, fare clic su **[!UICONTROL Delete]** e selezionare il gruppo o l&#39;operatore da cui si desidera rimuovere l&#39;autorizzazione per la cartella.
-* **Selezionare i diritti assegnati a un gruppo o a un operatore**. A questo scopo, fai clic sul gruppo o sull’operatore interessato, quindi seleziona i diritti di accesso che desideri concedere e deseleziona gli altri.
+* **Authorize a group or an operator**. To do this, click the **[!UICONTROL Add]** button and select the group or operator to which you want to assign authorizations for this folder.
+* **Forbid a group or an operator**. To do this, click **[!UICONTROL Delete]** and select the group or operator from which you want to remove authorization for this folder.
+* **Select the rights assigned to a group or an operator**. To do this, click the group or operator concerned, then select the access rights you want to grant and deselect the others.
 
   ![](assets/s_ncs_user_folder_properties_security03.png)
 
-### Propagare le autorizzazioni {#propagate-permissions}
+### Propagate permissions {#propagate-permissions}
 
-Puoi propagare autorizzazioni e diritti di accesso. A tale scopo, selezionare l&#39;opzione **[!UICONTROL Propagate]** nelle proprietà della cartella.
+You can propagate authorizations and access rights. To do this, select the **[!UICONTROL Propagate]** option in the folder properties.
 
-Le autorizzazioni definite in questa finestra verranno quindi applicate a tutte le sottocartelle del nodo corrente. Puoi quindi sovraccaricare queste autorizzazioni per ciascuna sottocartella.
+The authorizations defined in this window will then be applied to all the sub-folders of the current node. You can then overload these authorizations for each of the sub-folders.
 
 >[!NOTE]
 >
->Se si cancella questa opzione per una cartella, questa non viene cancellata automaticamente per le sottocartelle. È necessario cancellarlo esplicitamente per ciascuna sottocartella.
+>Clearing this option for a folder does not automatically clear it for the sub-folders. You must clear it explicitly for each of the sub-folders.
 
-### Concedi l’accesso a tutti gli operatori {#grant-access-to-all-operators}
+### Grant access to all operators {#grant-access-to-all-operators}
 
-Nella scheda **[!UICONTROL Security]**, se è selezionata l&#39;opzione **[!UICONTROL System folder]**, tutti gli operatori avranno accesso a questi dati, indipendentemente dai loro diritti. Se questa opzione è deselezionata, è necessario aggiungere esplicitamente l’operatore (o il relativo gruppo) all’elenco di autorizzazioni affinché possano accedervi.
+In the **[!UICONTROL Security]** tab, if the **[!UICONTROL System folder]** option is selected, all operators will have access to this data, regardless of their rights. If this option is cleared, you must explicitly add the operator (or their group) to the list of authorizations in order for them to have access.
 
 ![](assets/s_ncs_user_folder_properties_security03b.png)
+-->
