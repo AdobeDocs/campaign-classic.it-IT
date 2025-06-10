@@ -9,7 +9,7 @@ type: Documentation
 source-git-commit: 1e88021c9209bd23c3c949380f553473e890a9ce
 workflow-type: tm+mt
 source-wordcount: '2571'
-ht-degree: 89%
+ht-degree: 99%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 89%
             + [Creare e gestire richieste di accesso a dati personali](platform/using/privacy-requests-ui.md)
             + [Processo automatico di richiesta di accesso a dati personali](platform/using/privacy-requests-api.md)
          + [Rinuncia alla vendita di informazioni personali](platform/using/privacy-requests-ccpa.md)
-   + Gestione profilo {#profile-management}
+   + Gestione dei profili {#profile-management}
       + [Informazioni sui profili](platform/using/about-profiles.md)
       + [Modificare un profilo](platform/using/editing-a-profile.md)
       + [Aggiungere profili](platform/using/adding-profiles.md)
@@ -89,7 +89,7 @@ ht-degree: 89%
       + [Opzioni di filtro](platform/using/filtering-options.md)
       + [Creare i filtri](platform/using/creating-filters.md)
       + [Caso d’uso](platform/using/use-case.md)
-   + Creare le query {#creating-queries}
+   + Creare query {#creating-queries}
       + [Informazioni sulle query in Campaign](platform/using/about-queries-in-campaign.md)
       + [Passaggi per creare una query](platform/using/steps-to-create-a-query.md)
       + [Definire le condizioni del filtro](platform/using/defining-filter-conditions.md)
@@ -107,7 +107,7 @@ ht-degree: 89%
       + [Connessione con Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
       + [Connessione con Salesforce.com](platform/using/crm-sfdc.md)
       + [Sincronizzare i dati con il sistema CRM](platform/using/crm-data-sync.md)
-   + [Opzioni di assistenza e supporto](support.md)
+   + [Guida e opzioni di supporto](support.md)
 + Creare e inviare messaggi {#sending-messages}
    + [Introduzione ai messaggi](delivery/using/communication-channels.md)
    + [Impostazioni consegna](delivery/using/delivery-settings.md)
@@ -176,7 +176,7 @@ ht-degree: 89%
       + [Coupon personalizzati](delivery/using/personalized-coupons.md)
       + [Generare documenti PDF personalizzati](delivery/using/generating-personalized-pdf-documents.md)
       + [Personalizzare l’elenco delle emoticon](delivery/using/customizing-emoticon-list.md)
-   + Usa indirizzi seed {#using-seed-addresses}
+   + Utilizzare indirizzi seed {#using-seed-addresses}
       + [Informazioni sugli indirizzi seed](delivery/using/about-seed-addresses.md)
       + [Creare indirizzi seed](delivery/using/creating-seed-addresses.md)
       + [Aggiungere indirizzi seed](delivery/using/adding-seed-addresses.md)
@@ -220,14 +220,14 @@ ht-degree: 89%
       + [Accedere ai registri di tracciamento](delivery/using/accessing-the-tracking-logs.md)
       + [Tracciamento dei test](delivery/using/testing-tracking.md)
       + [Risoluzione dei problemi di tracciamento](delivery/using/tracking-troubleshooting.md)
-   + Gestione del recapito messaggi {#deliverability-management}
+   + Gestione della recapitabilità {#deliverability-management}
       + [Che cos’è il recapito messaggi](delivery/using/about-deliverability.md)
       + [Controllare il contenuto dei messaggi](delivery/using/control-message-content.md)
       + [Monitoraggio del recapito messaggi](delivery/using/monitoring-deliverability.md)
       + [Rendering della casella in entrata](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Risoluzione dei problemi](delivery/using/deliverability-faq.md)
-   + Modulo gestione contenuti {#content-management}
+   + Modulo di gestione dei contenuti {#content-management}
       + [Informazioni sulla gestione dei contenuti](delivery/using/about-content-management.md)
       + [Risorse e principi di gestione dei contenuti](delivery/using/content-manager-resources-and-principles.md)
       + [Caso d’uso: creazione di gestione dei contenuti](delivery/using/use-case-creating-content-management.md)
@@ -240,11 +240,11 @@ ht-degree: 89%
       + [Automatizzare tramite flussi di lavoro](delivery/using/automating-via-workflows.md)
 + [Orchestrare campagne di marketing](campaign/using/about-marketing-campaigns.md)
 + Orchestrare campagne di marketing {#orchestrating-campaigns}
-   + [Informazioni sull’ottimizzazione di Campaign](campaign-opt/using/about-campaign-optimization.md)
+   + [Informazioni sull’ottimizzazione delle campagne](campaign-opt/using/about-campaign-optimization.md)
    + Informazioni sulle campagne di marketing {#about-marketing-campaigns}
       + [Progettazione di campagne di marketing](campaign/using/designing-marketing-campaigns.md)
       + [Accedere alle campagne di marketing](campaign/using/accessing-marketing-campaigns.md)
-   + Orchestrare campagne {#orchestrate-campaigns}
+   + Orchestrare le campagne {#orchestrate-campaigns}
       + [Introduzione alle campagne di marketing](campaign/using/setting-up-marketing-campaigns.md)
       + [Creare e configurare i modelli](campaign/using/marketing-campaign-templates.md)
       + [Aggiungere consegne](campaign/using/marketing-campaign-deliveries.md)
@@ -253,7 +253,7 @@ ht-degree: 89%
       + [Impostare e gestire le approvazioni](campaign/using/marketing-campaign-approval.md)
       + [Monitorare le campagne](campaign/using/marketing-campaign-monitoring.md)
       + [Fornitori, scorte e budget](campaign/using/providers-stocks-and-budgets.md)
-   + Ottimizzazione di Campaign {#campaign-optimization}
+   + Ottimizzazione delle campagne {#campaign-optimization}
       + [Informazioni sulle tipologie di campagne](campaign-opt/using/about-campaign-typologies.md)
       + [Regole di pressione](campaign-opt/using/pressure-rules.md)
       + [Regole di coerenza](campaign-opt/using/consistency-rules.md)
@@ -275,7 +275,7 @@ ht-degree: 89%
    + [Accedere alle campagne](distributed/using/accessing-campaigns.md)
    + [Tracciare una campagna](distributed/using/tracking-a-campaign.md)
    + [Casi d’uso](distributed/using/examples.md)
-+ Gestione risposte {#response-manager}
++ Response Manager {#response-manager}
    + [Introduzione a Gestione risposte](response/using/about-response-manager.md)
    + [Configurazione](response/using/configuration.md)
    + [Modelli di ipotesi](response/using/hypothesis-templates.md)
@@ -289,7 +289,7 @@ ht-degree: 89%
       + [Informazioni sui rapporti incorporati](reporting/using/about-campaign-built-in-reports.md)
       + [Elenco dei rapporti](reporting/using/list-of-reports.md)
    + Rapporti sulle consegne{#reports-on-deliveries}
-      + [Informazioni sui report sulle consegne](reporting/using/reports-on-deliveries.md)
+      + [Informazioni sui rapporti sulle consegne](reporting/using/reports-on-deliveries.md)
       + [Rapporti globali](reporting/using/global-reports.md)
       + [Rapporti di consegna](reporting/using/delivery-reports.md)
       + [Rapporti cumulativi](reporting/using/cumulative-reports.md)
@@ -323,7 +323,7 @@ ht-degree: 89%
       + [Progettare un’applicazione web](web/using/translating-a-web-application.md)
       + [Tracciare le visite in un’applicazione web](web/using/tracking-a-web-application.md)
       + [Rinuncia al tracciamento delle applicazioni web](web/using/web-application-tracking-opt-out.md)
-   + Modifica contenuto HTML {#editing-html-content}
+   + Modificare i contenuti HTML {#editing-html-content}
       + [Introduzione all’editor HTML](web/using/about-campaign-html-editor.md)
       + [Gestione dei modelli](web/using/template-management.md)
       + [Interfaccia dell’editor di contenuti](web/using/content-editor-interface.md)
@@ -445,7 +445,7 @@ ht-degree: 89%
       + [Attività Approval](workflow/using/approval.md)
       + [Attività Alert](workflow/using/alert.md)
       + [Attività Task](workflow/using/task.md)
-   + Attività azione {#action-activities}
+   + Attività di azione {#action-activities}
       + [Informazioni sulle attività di azione](workflow/using/about-action-activities.md)
       + [Consegna](workflow/using/delivery.md)
       + [Controllo della consegna](workflow/using/delivery-control.md)
@@ -570,7 +570,7 @@ ht-degree: 89%
       + [Architettura della messaggistica transazionale](message-center/using/transactional-messaging-architecture.md)
       + [Configurare le istanze](message-center/using/configuring-instances.md)
       + [Configurazioni aggiuntive](message-center/using/additional-configurations.md)
-   + Modelli di messaggio {#message-templates}
+   + Modelli di messaggi {#message-templates}
       + [Creare tipi di evento](message-center/using/creating-event-types.md)
       + [Progettare modelli di messaggio](message-center/using/creating-the-message-template.md)
       + [Testare modelli di messaggio](message-center/using/testing-message-templates.md)
@@ -588,7 +588,7 @@ ht-degree: 89%
 + Integrare con i social media {#integrating-with-social-media}
    + [Informazioni sul social marketing](social/using/about-social-marketing.md)
 + Guida all’installazione e alla configurazione {#installing-campaign-classic}
-   + Principi dell’architettura {#architecture-and-hosting-models}
+   + Principi di architettura {#architecture-and-hosting-models}
       + [Architettura generale](installation/using/general-architecture.md)
       + Modelli di hosting{#hosting-models-lp}
          + [Modelli di hosting per campagne](installation/using/hosting-models.md)
@@ -609,7 +609,7 @@ ht-degree: 89%
       + [Impostazioni di sicurezza del server](installation/using/server-configuration.md)
       + [Impostazioni di sicurezza del server web](installation/using/web-server-configuration.md)
    + Installare Campaign (on-premise){#install-campaign-on-prem}
-      + Linee guida per l’implementazione {#deployment-guidelines}
+      + Linee guida per la distribuzione {#deployment-guidelines}
          + [Server del database](installation/using/database.md)
          + [Server dell’applicazione](installation/using/application-server.md)
          + [Server di messaggistica](installation/using/messaging-server.md)
@@ -619,13 +619,13 @@ ht-degree: 89%
          + [Installare il server](installation/using/installing-the-server.md)
          + [Integrare in un server web (Windows)](installation/using/integration-into-a-web-server-for-windows.md)
          + [Disponibilità della console client per Windows](installation/using/client-console-availability-for-windows.md)
-      + Campaign su Linux {#installing-campaign-in-linux}
+      + Campaign su Linux  {#installing-campaign-in-linux}
          + [Prerequisiti](installation/using/prerequisites-of-campaign-installation-in-linux.md)
          + [Installare i pacchetti](installation/using/installing-packages-with-linux.md)
          + [Integrare in un server web](installation/using/integration-into-a-web-server-for-linux.md)
       + [Gestione del fuso orario](installation/using/time-zone-management.md)
       + [Installare un server di mid-sourcing](installation/using/mid-sourcing-server.md)
-      + Distribuire Campaign (on-premise) {#initial-configuration}
+      + Implementare Campaign (on-premise) {#initial-configuration}
          + [Passaggi chiave](installation/using/about-initial-configuration.md)
          + [Creare un’istanza e accedere](installation/using/creating-an-instance-and-logging-on.md)
          + [Creare e configurare il database](installation/using/creating-and-configuring-the-database.md)
@@ -738,7 +738,7 @@ ht-degree: 89%
          + [Traccia dello stack in Linux](production/using/stack-trace-in-linux.md)
          + [Comportamento JSP](production/using/jsp-behavior.md)
          + [Individuazione della versione Tomcat](production/using/locate-tomcat-version.md)
-+ Guida per gli sviluppatori {#configuring-campaign-classic}
++ Guida per sviluppatori {#configuring-campaign-classic}
    + Modello dati {#data-model}
       + [Informazioni sul modello dati](configuration/using/about-data-model.md)
       + [Descrizione del modello dati](configuration/using/data-model-description.md)
@@ -805,7 +805,7 @@ ht-degree: 89%
       + [Creazione di un elenco di profili con un flusso di lavoro](configuration/using/creating-a-profile-list-with-a-workflow.md)
       + [Gestione dei flussi di lavoro](configuration/using/managing-workflows.md)
       + [Gestione dei rapporti](configuration/using/managing-reports.md)
-   + Impostazione del tracciamento web {#setting-up-web-tracking}
+   + Configurazione del tracciamento web {#setting-up-web-tracking}
       + [Informazioni sul tracciamento web](configuration/using/about-web-tracking.md)
       + [Modalità di tracciamento web](configuration/using/web-tracking-mode.md)
       + [Tag di tracciamento web: definizione](configuration/using/web-tracking-tag-definition.md)
@@ -821,7 +821,7 @@ ht-degree: 89%
       + [Prerequisiti](migration/using/before-starting-migration.md)
       + [Informazioni sui test di migrazione](migration/using/testing-the-migration.md)
       + [Adattare la configurazione](migration/using/configuring-your-platform.md)
-   + Avviare la migrazione {#migrating-to-adobe-campaign-7}
+   + Iniziare la migrazione {#migrating-to-adobe-campaign-7}
       + [Migrare una piattaforma Microsoft Windows](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
       + [Migrare una piattaforma Linux](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
    + [Procedura di ripristino](migration/using/about-rollback.md)
