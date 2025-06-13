@@ -7,10 +7,10 @@ feature: Query Editor
 role: User, Data Architect
 level: Beginner
 exl-id: 2db1034d-cad6-4fb0-8646-dd9099080ab0
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 471018f09e5a14635fcce07aeca1e2cf48d9144f
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 57%
+source-wordcount: '222'
+ht-degree: 53%
 
 ---
 
@@ -26,8 +26,22 @@ Questo strumento combina tutte possibilità di query di Adobe Campaign. Ad esemp
 
 Le query vengono create utilizzando i campi della tabella selezionata o utilizzando una formula.
 
->[!NOTE]
->
->Per ulteriori informazioni sulle query e su come crearle, consulta la [documentazione di Campaign v8](../../workflow/using/query.md).
+>[!BEGINTABS]
+
+>[!TAB Documentazione sulle query]
+
+Per ulteriori informazioni sulle query, consulta la [documentazione di Campaign v8.](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
+
+
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
+
+
+>[!TAB Creare una query]
+
+Scopri i passaggi chiave relativi alla creazione di query nella [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}.
+
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
+
+>[!ENDTABS]
 
 ![Schermata che mostra un esempio di query.](assets/query_recipients_4.png)

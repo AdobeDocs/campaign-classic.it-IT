@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 471018f09e5a14635fcce07aeca1e2cf48d9144f
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 57%
+source-wordcount: '160'
+ht-degree: 54%
 
 ---
 
@@ -19,13 +19,23 @@ Per offrire un elevato grado di coinvolgimento dei clienti e ottime esperienze, 
 
  Adobe Campaign ti consente di coordinare la creazione di campagne di marketing conversazionali.  Adobe Campaign dispone di funzioni innovative per modellare, semplificare e automatizzare i processi di marketing e di comunicazione con i clienti.
 
->[!AVAILABILITY]
->
->* I materiali della Guida di questa raccolta sono applicabili a Campaign Classic v7 nella sua [build più recente](../../rn/using/latest-release.md). Un badge specifico è disponibile quando una sezione si applica anche a Campaign v8.
->
->* Per ulteriori informazioni su Adobe Campaign e su come avviarlo, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/get-started){target=_blank}.
-
 ![](assets/do-not-localize/how-to-video.png) [Scopri le funzionalità principali nel video](#video)
+
+>[!BEGINTABS]
+
+>[!TAB Guida introduttiva a Campaign]
+
+Per ulteriori informazioni su Adobe Campaign e su come avviarlo, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/get-started){target=_blank}.
+
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/get-started){target=_blank}
+
+>[!TAB Avvia campagna]
+
+* Verifica la compatibilità del sistema e degli strumenti con Adobe Campaign Client Console nella [Matrice di compatibilità](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
+
+* Per informazioni su come installare e accedere ad Adobe Campaign, consulta la procedura dettagliata nella [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect){target=_blank}.
+
+>[!ENDTABS]
 
 <!--
 
@@ -69,7 +79,7 @@ You can combine the delivery functionalities and advanced campaign management fu
 
 ## Core capabilities and add-ons {#core-capabilities-and-add-ons}
 
-Adobe Campaign offers a set of capabilities to help you implementing and optimizing the conversational marketing functionalities depending on your needs and your architecture. Some of them are core capabilities and some depend on the installation of a package and on your configuration. A detailed product description is available here: [Adobe Campaign product description](https://helpx.adobe.com/it/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+Adobe Campaign offers a set of capabilities to help you implementing and optimizing the conversational marketing functionalities depending on your needs and your architecture. Some of them are core capabilities and some depend on the installation of a package and on your configuration. A detailed product description is available here: [Adobe Campaign product description](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 The following capabilities are available. Depending on your license agreement, some of these capabilities can be available or not in your instance.
 
@@ -93,8 +103,8 @@ The following capabilities are available. Depending on your license agreement, s
 
 This video presents Campaign Classic main features and capabilities.
 
->[!VIDEO](https://video.tv.adobe.com/v/39521?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
 
-Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 
 -->
