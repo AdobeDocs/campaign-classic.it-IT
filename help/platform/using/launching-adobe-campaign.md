@@ -28,7 +28,7 @@ La console client di Campaign è un client avanzato che consente di connettersi 
 
 >[!NOTE]
 >
-> Per informazioni su come installare e accedere ad Adobe Campaign, consulta la procedura dettagliata nella [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect){target=_blank}.
+> Per informazioni su come installare e accedere ad Adobe Campaign, consulta la procedura dettagliata nella [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/connect){target=_blank}.
 
 <!--
 ## Start Adobe Campaign {#starting-adobe-campaign}
@@ -113,6 +113,6 @@ Whenever you reach out to Adobe Customer Care team, you need to provide the vers
 
 * [Adobe Campaign Help and Support options](../../support.md)
 * [Adobe Campaign Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
-* [Adobe Experience Cloud Support and Expert sessions](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+* [Adobe Experience Cloud Support and Expert sessions](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
 
 -->

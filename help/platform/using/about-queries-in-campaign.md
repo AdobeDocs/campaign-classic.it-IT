@@ -30,17 +30,17 @@ Le query vengono create utilizzando i campi della tabella selezionata o utilizza
 
 >[!TAB Documentazione sulle query]
 
-Per ulteriori informazioni sulle query, consulta la [documentazione di Campaign v8.](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
+Per ulteriori informazioni sulle query, consulta la [documentazione di Campaign v8.](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
 
 
-[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
 
 
 >[!TAB Creare una query]
 
-Scopri i passaggi chiave relativi alla creazione di query nella [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}.
+Scopri i passaggi chiave relativi alla creazione di query nella [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}.
 
-[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
 
 >[!ENDTABS]
 
