@@ -5,11 +5,13 @@ description: Ulteriori informazioni sulle versioni di Campaign Classic 2022
 feature: Release Notes
 role: User
 level: Beginner
+hide: true
+hidefromtoc: true
 exl-id: 28490323-41d0-4d61-b309-6892fb826d21
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: 62fc46e45078fce56eadda3518251e61244bf5d0
 workflow-type: tm+mt
-source-wordcount: '2100'
-ht-degree: 100%
+source-wordcount: '2099'
+ht-degree: 99%
 
 ---
 
@@ -63,7 +65,7 @@ Consulta la [Matrice di compatibilità di Campaign](../../rn/using/compatibility
 * È stato corretto un errore che si verificava durante l’installazione del pacchetto content manager su un’istanza esistente. (NEO-32349)
 * È stato risolto un problema nel menu di **Campaigns** a causa del quale veniva visualizzato continuamente un messaggio di “operazione in corso”. (NEO-44904)
 * Con Adobe Analytics abilitato, è stato risolto un problema a causa del quale BID (Broadlog ID) e CID (Campaign ID) venivano rimossi dall’URL se si inviava un’e-mail con un URL senza salvare la consegna. (NEO-38678)
-* È stato risolto un problema che si verificava durante il caricamento di un’immagine nella cartella delle risorse pubbliche in un’istanza con configurazione specifica del Centro messaggi. Veniva visualizzato un messaggio di tipo: “Impossibile caricare le immagini sui server di tracciamento”. (NEO-38546, NEO-45572)
+* È stato risolto un problema che si verificava durante il caricamento di un’immagine nella cartella delle risorse pubbliche in un’istanza con configurazione specifica del Centro messaggi. Viene visualizzato un messaggio di errore di tipo: “Impossibile caricare le immagini sui server di tracciamento”. (NEO-38546, NEO-45572)
 * È stato risolto un problema che causava l’arresto anomalo del sistema durante la rigenerazione della configurazione in caso di file di configurazione non validi. (NEO-38752)
 * È stato risolto un problema che poteva causare un aggiornamento errato degli indicatori di consegna. (NEO-44827)
 * È stato risolto un problema che poteva causare un errore post-aggiornamento durante l’utilizzo di query complesse. (NEO-43648)
@@ -171,7 +173,7 @@ Adobe Campaign è ora compatibile con Windows Server 2019. Consulta la [Matrice 
 * È stato risolto un problema che poteva impedire agli utenti di accedere alla console a causa di un problema di configurazione proxy. (NEO-38388)
 * È stato risolto un problema di regressione che impediva il funzionamento corretto della funzionalità **Purge folder** (Svuota cartella). (NEO-37459)
 * È stato risolto un problema che causava un errore di richiesta non valida quando si utilizzavano campi di dati xml con l’account Microsoft Dynamics CRM se il codice xml di riferimento conteneva virgolette doppie.
-* È stato risolto un problema che causava la registrazione errata dei problemi di timeout della rete, che venivano invece registrati come problemi di interruzione dello script. Questo problema si verificava nel caso di richieste HTTP incluse nelle attività JavaScript. (NEO-38079)
+* È stato risolto un problema che causava la registrazione errata dei problemi di timeout della rete: invece di essere registrati come errori di rete, venivano registrati come problemi di interruzione dello script. Questo problema si verificava nel caso di richieste HTTP incluse nelle attività JavaScript. (NEO-38079)
 * È stato risolto un problema a causa del quale venivano restituiti risultati errati nell’esecuzione delle funzioni Amazon Redshift HoursDiff e MinutesDiff durante il tentativo di estrarre il componente “time”.(NEO-31673)
 * È stato risolto un problema che impediva il caricamento del rapporto **Hot click** per le consegne a partire dalla build 9182. (NEO-28900)
 * È stato corretto un errore che sostituiva il simbolo &amp; in un URL con il riferimento all’entità carattere (`&amp;`) impedendo agli utenti di accedere all’URL collegato a un codice QR. (NEO-28621)
