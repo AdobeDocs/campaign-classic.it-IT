@@ -7,9 +7,9 @@ user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: d3d731c64cb5a430de6adac3aeb326f74134c436
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2569'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 99%
       + [[!DNL Gold Standard]](rn/using/gold-standard.md)
    + [Funzioni obsolete](rn/using/deprecated-features.md)
    + [Matrice di compatibilità](rn/using/compatibility-matrix.md)
-   + [Aggiornamenti della documentazione](rn/using/documentation-updates.md)
+   + [Aggiornamenti alla documentazione](rn/using/documentation-updates.md)
 + Introduzione {#getting-started}
    + Iniziare a usare Adobe Campaign {#starting-with-adobe-campaign}
       + [Introduzione ad Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
@@ -111,7 +111,7 @@ ht-degree: 99%
 + Creare e inviare messaggi {#sending-messages}
    + [Introduzione ai messaggi](delivery/using/communication-channels.md)
    + [Impostazioni consegna](delivery/using/delivery-settings.md)
-   + Guida rapida {#key-steps-when-creating-a-delivery}
+   + Avvio rapido {#key-steps-when-creating-a-delivery}
       + [Introduzione alle consegne](delivery/using/steps-about-delivery-creation-steps.md)
       + [Creare e identificare una consegna](delivery/using/steps-create-and-identify-the-delivery.md)
       + [Definire il pubblico](delivery/using/steps-defining-the-target-population.md)
@@ -332,7 +332,7 @@ ht-degree: 99%
       + [Caso d’uso: creare una consegna e-mail](web/using/use-case-creating-an-email-delivery.md)
    + Moduli web {#web-forms}
       + [Introduzione ai moduli web](web/using/about-web-forms.md)
-      + [Usare un modello di modulo web](web/using/using-a-web-form-template.md)
+      + [Usare un modello per moduli web](web/using/using-a-web-form-template.md)
       + [Aggiungere campi a un modulo web](web/using/adding-fields-to-a-web-form.md)
       + [Elementi statici in un modulo web](web/using/static-elements-in-a-web-form.md)
       + [Definire il layout dei moduli web](web/using/defining-web-forms-layout.md)
@@ -474,7 +474,7 @@ ht-degree: 99%
          + [Utilizzare l’attività di approvazione locale](workflow/using/using-the-local-approval-activity.md)
          + [Inviare un’e-mail di compleanno](workflow/using/sending-a-birthday-email.md)
          + [Caricare i contenuti della consegna](workflow/using/loading-delivery-content.md)
-         + [Flusso di lavoro di consegna cross-channel](workflow/using/cross-channel-delivery-workflow.md)
+         + [Flusso di lavoro per consegna cross-channel](workflow/using/cross-channel-delivery-workflow.md)
          + [Arricchimento delle e-mail con campi data personalizzati](workflow/using/email-enrichment-with-custom-date-fields.md)
    + Monitoraggio {#monitoring}
       + [Inviare un rapporto a un elenco](workflow/using/sending-a-report-to-a-list.md)
@@ -823,7 +823,7 @@ ht-degree: 99%
    + Iniziare la migrazione {#migrating-to-adobe-campaign-7}
       + [Migrare una piattaforma Microsoft Windows](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
       + [Migrare una piattaforma Linux](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
-   + [Procedura di ripristino](migration/using/about-rollback.md)
+   + [Procedura di rollback](migration/using/about-rollback.md)
 + Note tecniche {#technotes}
    + [Consigli sui requisiti hardware in base alle dimensioni](technotes/using/hardware-sizing.md)
    + [Inviare con MTA avanzato](delivery/using/sending-with-enhanced-mta.md)
