@@ -5,8 +5,10 @@ description: Scopri come aggiungere contenuti condizionali
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Personalization, Multilingual Messages
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 7%
@@ -80,7 +82,7 @@ Fare clic su **[!UICONTROL Preview]** e selezionare un destinatario per visualiz
 Nell’esempio seguente, scoprirai come creare un’e-mail multilingue. Il contenuto verrà visualizzato in una lingua o nell’altra, a seconda della lingua preferita del destinatario.
 
 1. Crea un messaggio e-mail e seleziona la popolazione target. In questo esempio, la condizione per visualizzare una versione o l&#39;altra sarà basata sul valore **Lingua** del profilo del destinatario. In questo esempio, questi valori sono impostati su **EN**, **FR**, **ES**.
-1. Nel contenuto di e-mail HTML, fare clic sulla scheda **[!UICONTROL Source]** e incollare il seguente codice:
+1. Nel contenuto del HTML e-mail, fare clic sulla scheda **[!UICONTROL Source]** e incollare il seguente codice:
 
    ```
    <% if (language == "EN" ) { %>
@@ -111,6 +113,6 @@ Nell’esempio seguente, scoprirai come creare un’e-mail multilingue. Il conte
 
 Scopri come aggiungere contenuti condizionali a una consegna sull’esempio di una newsletter multilingue.
 
->[!VIDEO](https://video.tv.adobe.com/v/329895?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
 
 Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

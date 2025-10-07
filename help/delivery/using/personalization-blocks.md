@@ -5,11 +5,13 @@ description: Scopri come utilizzare i blocchi di personalizzazione
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Personalization
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
 workflow-type: tm+mt
 source-wordcount: '870'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -115,7 +117,7 @@ Per impostazione predefinita, è disponibile un elenco di blocchi di personalizz
 
 * **[!UICONTROL Registration confirmation]** : inserisce un collegamento che consente di confermare la sottoscrizione.
 * **[!UICONTROL Social network sharing links]** : inserisce pulsanti che consentono al destinatario di condividere un collegamento al contenuto della pagina speculare con il client di posta elettronica, Facebook, X (precedentemente noto come Twitter) e LinkedIn (vedere [Marketing virale: inoltro a un amico](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
-* **[!UICONTROL Style of content emails]** e **[!UICONTROL Notification style]** : genera codice che formatta un messaggio e-mail con stili di HTML predefiniti. Questi blocchi devono essere inseriti nel codice sorgente della consegna, nella sezione **[!UICONTROL ...]**, in **`<style>...</style>`** tag.
+* **[!UICONTROL Style of content emails]** e **[!UICONTROL Notification style]** : genera codice che formatta un messaggio e-mail con stili HTML predefiniti. Questi blocchi devono essere inseriti nel codice sorgente della consegna, nella sezione **[!UICONTROL ...]**, in **`<style>...</style>`** tag.
 * **[!UICONTROL Offer acceptance URL in unitary mode]** : inserisce un URL che consente di impostare un&#39;offerta di interazione su **[!UICONTROL Accepted]** (vedere [questa sezione](../../interaction/using/offer-analysis-report.md)).
 
 ## Definire i blocchi di personalizzazione personalizzati {#defining-custom-personalization-blocks}
@@ -132,18 +134,18 @@ Per creare un blocco di personalizzazione, passa a Esplora e applica i seguenti 
 
    * Inserisci l’etichetta del blocco. Questa etichetta verrà visualizzata nella finestra di inserimento del campo di personalizzazione.
    * Seleziona **[!UICONTROL Visible in the customization menus]** per rendere accessibile questo blocco dall&#39;icona di inserimento del campo di personalizzazione.
-   * Se necessario, seleziona **[!UICONTROL The content of the personalization block depends upon the format]** per definire due blocchi separati per le e-mail in formato HTML e quelli in formato testo.
+   * Se necessario, selezionare **[!UICONTROL The content of the personalization block depends upon the format]** per definire due blocchi separati per le e-mail in formato HTML e quelli in formato testo.
 
      Nella sezione inferiore di questo editor (Contenuto HTML e Contenuto testo) vengono quindi visualizzate due schede per definire il contenuto corrispondente.
 
      ![](assets/s_ncs_user_personalized_block_b.png)
 
-   * Inserisci il contenuto (in HTML, testo, JavaScript, ecc.) dei blocchi di personalizzazione e fare clic su **[!UICONTROL Save]**.
+   * Immetti il contenuto (in HTML, testo, JavaScript, ecc.) dei blocchi di personalizzazione e fai clic su **[!UICONTROL Save]**.
 
 ## Video tutorial {#personalization-blocks-video}
 
 Scopri come creare blocchi di contenuto dinamici e come utilizzarli per personalizzare il contenuto della consegna e-mail.
 
->[!VIDEO](https://video.tv.adobe.com/v/340471?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
 
-Sono disponibili altri video dimostrativi di Campaign Classic [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
+Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

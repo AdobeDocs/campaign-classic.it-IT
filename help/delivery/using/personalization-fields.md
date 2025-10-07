@@ -5,11 +5,13 @@ description: Scopri come utilizzare i campi di personalizzazione
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Personalization
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
 workflow-type: tm+mt
 source-wordcount: '1024'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -29,7 +31,7 @@ Ad esempio, il campo di personalizzazione con sintassi **&lt;%= recipient.LastNa
 
 I campi di personalizzazione possono provenire da due tipi di origine dati, a seconda della modalità di consegna selezionata:
 
-* Il database di Adobe Campaign è l’origine dei dati. Questo è il caso più comune, ad esempio con &quot;campi di personalizzazione dei destinatari&quot;. Questi sono tutti i campi definiti nella tabella dei destinatari, che siano campi standard (in genere: cognome, nome, indirizzo, città, data di nascita, ecc.) o campi definiti dall&#39;utente.
+* Il database di Adobe Campaign è l’origine dei dati. Questo è il caso più comune, ad esempio con &quot;campi di personalizzazione dei destinatari&quot;. Questi sono tutti i campi definiti nella tabella dei destinatari, siano essi campi standard (in genere: cognome, nome, indirizzo, città, data di nascita, ecc.) o campi definiti dall’utente.
 * L&#39;origine dati è un file esterno. Questi sono tutti i campi definiti nelle colonne del file presentato come input durante una consegna utilizzando i dati trovati in un file esterno.
 
 >[!NOTE]
@@ -140,6 +142,6 @@ Aggiungendo lo schema di oggetti, è possibile selezionare i campi che si deside
 
 Scopri come aggiungere un campo di personalizzazione alla riga dell’oggetto e il contenuto di una consegna e-mail.
 
->[!VIDEO](https://video.tv.adobe.com/v/329894?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
 
-Sono disponibili altri video dimostrativi di Campaign Classic [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
+Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
