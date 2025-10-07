@@ -5,8 +5,10 @@ description: Scopri come configurare l’app mobile per iOS
 feature: Push
 role: User, Developer
 level: Intermediate, Experienced
+hide: true
+hidefromtoc: true
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 3%
@@ -85,7 +87,7 @@ Nell&#39;esempio seguente vengono aggiunti **mediaURl** e **mediaExt** per crear
 
    ![](assets/nmac_ios_3.png)
 
-1. The **[!UICONTROL Subscription parameters]** tab allows you to define the mapping with an extension of the **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** schema.
+1. La scheda **[!UICONTROL Subscription parameters]** consente di definire il mapping con un&#39;estensione dello schema **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]**.
 
    >[!NOTE]
    >
@@ -109,7 +111,7 @@ Nell&#39;esempio seguente vengono aggiunti **mediaURl** e **mediaExt** per crear
 
    Sono disponibili due modalità:
 
-   * (Consigliato) **[!UICONTROL Token-based authentication]**: inserisci le impostazioni di connessione APNs **[!UICONTROL Key Id]**, **[!UICONTROL Team Id]** e **[!UICONTROL Bundle Id]**, quindi seleziona il certificato p8 facendo clic su **[!UICONTROL Enter the private key...]**. Per ulteriori informazioni su **[!UICONTROL Token-based authentication]**, consulta [Documentazione di Apple](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns).
+   * (Consigliato) **[!UICONTROL Token-based authentication]**: inserisci le impostazioni di connessione APNs **[!UICONTROL Key Id]**, **[!UICONTROL Team Id]** e **[!UICONTROL Bundle Id]**, quindi seleziona il certificato p8 facendo clic su **[!UICONTROL Enter the private key...]**. Per ulteriori informazioni su **[!UICONTROL Token-based authentication]**, consulta [Documentazione di Apple](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
 
    * **[!UICONTROL Certificate-based authentication]**: fare clic su **[!UICONTROL Enter the certificate...]**, quindi selezionare la chiave p12 e immettere la password fornita dallo sviluppatore dell&#39;app mobile.
 

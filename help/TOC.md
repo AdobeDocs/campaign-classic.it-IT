@@ -6,10 +6,10 @@ title: Guida di Campaign Classic v7
 user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: faed7f54dc72937b24ee1ece80d17150a513fa39
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
 workflow-type: tm+mt
-source-wordcount: '2565'
-ht-degree: 100%
+source-wordcount: '2561'
+ht-degree: 99%
 
 ---
 
@@ -144,8 +144,8 @@ ht-degree: 100%
       + [Creare un SMS](delivery/using/sms-create.md)
       + [Migrare al connettore SMPP generico esteso](delivery/using/unsupported-connector-migration.md)
    + [Inviare messaggi LINE](delivery/using/line-channel.md)
+   + [Inviare notifiche push](delivery/using/about-mobile-app-channel.md)
    + Inviare notifiche push {#sending-push-notifications}
-      + [Guida introduttiva al canale app mobile](delivery/using/about-mobile-app-channel.md)
       + [Integrare l’SDK Campaign nell’app mobile](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
       + Configurare l’app mobile{#configure-the-mobile-app}
          + [Introduzione alla configurazione dell’app](delivery/using/get-started-app-config.md)
@@ -155,9 +155,9 @@ ht-degree: 100%
          + [Creare un messaggio push per iOS](delivery/using/create-notifications-ios.md)
          + [Creare un messaggio push per Android](delivery/using/create-notifications-android.md)
       + [Risoluzione dei problemi](delivery/using/troubleshooting.md)
+   + [Inviare direct mailing](delivery/using/about-direct-mail-channel.md)
    + Inviare direct mail {#sending-direct-mail}
-      + [Informazioni sul canale direct mail](delivery/using/about-direct-mail-channel.md)
-      + [Creare una consegna direct mailing](delivery/using/creating-a-direct-mail-delivery.md)
+      + [Creare una consegna direct mail](delivery/using/creating-a-direct-mail-delivery.md)
       + [Definire il contenuto delle direct mail](delivery/using/defining-the-direct-mail-content.md)
       + [Convalidare](delivery/using/validating.md)
    + Utilizzare i modelli di consegna {#using-delivery-templates}

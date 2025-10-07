@@ -6,101 +6,105 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Push
 role: User
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 10%
+source-wordcount: '576'
+ht-degree: 2%
 
 ---
 
 # Guida introduttiva al canale app mobile{#about-mobile-app-channel}
 
-**Canale app mobile** consente di utilizzare la piattaforma Adobe Campaign per inviare notifiche push personalizzate ai terminali iOS e Android tramite app.
+Con Adobe Campaign, crea consegne di notifiche push per inviare messaggi personalizzati agli utenti della tua app mobile.
 
-Sono disponibili due canali di consegna:
+Le notifiche push consentono di coinvolgere gli utenti su iOS e Android in tempo reale. Che tu invii aggiornamenti, annunci o promozioni, puoi controllare contenuti, tempistiche e targeting. Scopri come impostare e utilizzare il canale push, gestire gli abbonamenti, integrarsi con APN e FCM e personalizzare i messaggi nella [documentazione di Adobe Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email){target=_blank}.
 
-* Canale iOS che consente di inviare notifiche ai dispositivi mobili Apple.
+Nell’ambito dell’iniziativa di promozione di Campaign v8, è stata riorganizzata la documentazione di Campaign Classic. Le funzioni comuni sono ora disponibili solo nel set di documentazione di Campaign v8.
 
-  ![](assets/nmac_intro_2.png)
+>[!BEGINTABS]
 
-* Canale Android che consente di inviare messaggi di dati a dispositivi mobili Android.
+>[!TAB Documentazione del canale push]
 
-  ![](assets/nmac_intro_1.png)
+Per ulteriori informazioni sul canale di notifica push, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target=_blank}.
 
-  >[!IMPORTANT]
-  >
-  >Alcune importanti modifiche al servizio Android Firebase Cloud Messaging (FCM) verranno rilasciate nel 2024 e potranno influenzare la tua implementazione di Adobe Campaign. Per supportare questa modifica, potrebbe essere necessario aggiornare la configurazione dei servizi di abbonamento per i messaggi push Android. Puoi già verificare ed eseguire azioni. Per ulteriori informazioni, consulta questa [nota tecnica su Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=it){target="_blank"}.
-
-Corrispondente a questi due canali, nei flussi di lavoro delle campagne sono presenti due attività di consegna. Per la messaggistica transazionale sono disponibili anche due modelli di messaggi transazionali.
-
-![](assets/nmac_intro_3.png)
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target=_blank}
 
 
-È possibile definire il comportamento dell’applicazione per quando l’utente attiva la notifica per visualizzare la schermata che corrisponde al contesto dell’applicazione. Ad esempio:
+>[!TAB Creazione consegna push]
 
-* Al cliente viene inviata una notifica per comunicare che il pacco è uscito dal magazzino. L’attivazione della notifica apre una pagina contenente informazioni relative alla consegna.
-* L’utente ha aggiunto degli articoli al carrello, ma ha lasciato l’applicazione senza completare l’acquisto. Viene inviata una notifica per informarli che il carrello è stato abbandonato. Quando viene attivata la notifica, l’elemento viene visualizzato sullo schermo.
+Scopri i passaggi chiave relativi alla creazione di consegne push nella documentazione di Campaign v8:
+
+* [Creare una notifica push](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html#push-create){target="_blank"}: scopri i diversi passaggi necessari per creare una consegna push.
+* [Inviare e monitorare la notifica push](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html#push-test){target="_blank"}: scopri come convalidare, inviare e tenere traccia delle consegne.
+* [Progetta una consegna push potenziata da Android](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/rich-push/rich-push-android.html){target="_blank"}: scopri come creare e configurare notifiche push potenziate per dispositivi Android.
+* [Progetta una distribuzione push potenziata da iOS](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios.html){target="_blank"}: scopri come progettare e configurare notifiche push potenziate per dispositivi iOS in Adobe Campaign v8.
+
+
+>[!TAB Parametri push]
+
+Per informazioni sui parametri push nella documentazione di Campaign v8, consulta queste pagine:
+
+* [Prerequisiti per la configurazione](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html#before-starting){target="_blank"}: scopri come impostare le autorizzazioni e configurare l&#39;app.
+* [Configurare la proprietà launch](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html#launch-property){target="_blank"}: scopri come impostare una proprietà di tag mobile in Raccolta dati di Adobe Experience Platform per abilitare le notifiche push.
+* [Configura i servizi push per dispositivi mobili](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html#push-service){target="_blank"}: configura i servizi push di iOS e Android in Adobe per abilitare le notifiche push mirate per gli utenti delle app mobili.
+* [Configura l&#39;estensione nella proprietà mobile](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html#configure-extension){target="_blank"}: integra l&#39;estensione Campaign nella proprietà mobile per abilitare le notifiche push e gestire in modo efficace le interazioni utente.
+
+>[!ENDTABS]
+
+
+Le seguenti informazioni sono specifiche per Campaign Classic.
+
++++ **Installazione del pacchetto**
+
+![](assets/do-not-localize/how-to-video.png) [Scopri come installare il pacchetto per app mobile nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html#sending-messages)
+
+In qualità di cliente ibrido/in hosting, contatta il team [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per accedere al canale di notifica push in Campaign.
+
+In qualità di cliente on-premise, devi installare un pacchetto integrato.
 
 >[!CAUTION]
 >
->* È necessario assicurarsi che le notifiche inviate a un’app mobile siano conformi ai prerequisiti e alle condizioni specificati da Apple (Apple Push Notification Service) e Google (Firebase Cloud Messaging).
->* Avvertenza: in alcuni paesi, la legge richiede che tu informi gli utenti del tipo di dati raccolto dalle app mobili e dello scopo del loro trattamento. Dovete controllare la legislazione.
+>Ulteriori informazioni sui pacchetti incorporati, sulle best practice e sui consigli di Campaign in [questa pagina](../../installation/using/installing-campaign-standard-packages.md).
 
-Il flusso di lavoro **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) aggiorna gli annullamenti degli abbonamenti alle notifiche sui dispositivi mobili. Per ulteriori informazioni su questo flusso di lavoro, consulta [elenco dei flussi di lavoro tecnici](../../workflow/using/about-technical-workflows.md).
+I passaggi di installazione sono i seguenti:
 
-Adobe Campaign è compatibile con i numeri APN HTTP/2. Per ulteriori dettagli sui passaggi di configurazione, consulta la sezione [questa sezione](configuring-the-mobile-application.md).
+1. Accedere all&#39;Assistente all&#39;importazione del pacchetto da **[!UICONTROL Tools > Advanced > Import package]** nella console client di Adobe Campaign.
 
-Per informazioni globali su come creare una consegna, consulta [questa sezione](steps-about-delivery-creation-steps.md).
+   ![](assets/package_ios.png)
 
+1. Seleziona **[!UICONTROL Install a standard package]**.
 
-## Configurare il canale di notifica push {#push-notification-configuration}
+1. Nell&#39;elenco visualizzato, selezionare **[!UICONTROL Mobile App Channel]**.
 
-Per inviare notifiche push con Adobe Campaign, devi prima configurare l’ambiente e l’app. Prima di iniziare a inviare notifiche push con Adobe Campaign, è necessario assicurarsi che le configurazioni e le integrazioni siano attive nell’app mobile e per i tag in Adobe Experience Platform. Adobe Experience Platform Mobile SDK fornisce API di integrazione lato client per i dispositivi mobili tramite SDK compatibili con Android e iOS. La configurazione degli SDK viene gestita tramite l’interfaccia utente di raccolta dati, per un’impostazione flessibile e integrazioni estensibili basate su regole. Ulteriori informazioni sono disponibili nella [documentazione di Adobe Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/push/push-settings).
+   ![](assets/package_ios_2.png)
 
+1. Fare clic su **[!UICONTROL Next]**, quindi su **[!UICONTROL Start]** per avviare l&#39;installazione del pacchetto.
 
-## Percorso dati {#data-path}
+   Una volta installati i pacchetti, la barra di avanzamento mostra **100%** ed è possibile visualizzare il seguente messaggio nei registri di installazione: **[!UICONTROL Installation of packages successful]**.
 
-Gli schemi seguenti descrivono i passaggi che consentono a un’app mobile di scambiare dati con Adobe Campaign. Questo processo coinvolge tre entità:
+   ![](assets/package_ios_3.png)
 
-* l&#39;app mobile
-* il servizio di notifica: APN (Apple Push Notification Service) per Apple e FCM (Firebase Cloud Messaging) per Android
-* Adobe Campaign
+1. **[!UICONTROL Close]** la finestra di installazione.
 
-I tre passaggi principali del processo di notifica sono: registrazione dell’applicazione in Adobe Campaign (raccolta degli abbonamenti), consegne e tracciamento.
+Al termine di questo passaggio, puoi configurare le app Android e iOS. Consulta la [documentazione](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target="_blank"} di Campaign v8.
 
-### Passaggio 1: raccolta di abbonamenti {#step-1--subscription-collection}
++++
 
-L’app mobile viene scaricata dall’utente da App Store o da Google Play. Questa applicazione contiene le impostazioni di connessione (certificato iOS e chiave di progetto per Android) e la chiave di integrazione. La prima volta che l’applicazione viene aperta (a seconda della configurazione), all’utente può essere richiesto di inserire le informazioni di registrazione (ad @userKey: e-mail o numero di account). Allo stesso tempo, l’applicazione richiede al servizio di notifica di raccogliere un ID di notifica (ID push). Tutte queste informazioni (impostazioni di connessione, chiave di integrazione, identificatore di notifica, userKey) vengono inviate ad Adobe Campaign.
++++ **Risoluzione dei problemi**
 
-![](assets/nmac_register_view.png)
+Se il dispositivo mobile è connesso a Wi-Fi e non si ricevono notifiche, verificare che le porte FCM/APN non siano bloccate dal firewall.
 
-### Passaggio 2: consegna {#step-2--delivery}
+**Android**: il dispositivo mobile si connette ai server FCM sulle porte da 5228 a 5230. Devi quindi configurare il firewall in modo che autorizzi la connessione con FCM. Le porte da aprire sono: 5228 (le più utilizzate), 5229 e 5230.
 
-Gli addetti al marketing eseguono il targeting degli abbonati all’applicazione. Il processo di consegna invia le impostazioni di connessione al servizio di notifica (certificato iOS e chiave di progetto per Android), all’ID notifica (ID push) e al contenuto della notifica. Il servizio di notifica invia notifiche ai terminali di destinazione.
+**iOS**:
 
-In Adobe Campaign sono disponibili le seguenti informazioni:
+Connettore HTTP/2: è necessario consentire la comunicazione da e verso i seguenti server:
 
-* Solo per Android: numero di dispositivi che hanno visualizzato la notifica (impression)
-* Android e iOS: numero di clic sulla notifica
+* api.push.apple.com: porta 443
+* api.development.push.apple.com: porta 443
 
-![](assets/nmac_delivery_view.png)
+>[!NOTE]
+>
+>Per ulteriori informazioni sui due connettori, consulta la [documentazione](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"} di Campaign v8.
 
-Il server Adobe Campaign deve essere in grado di contattare il server APNs sulla porta 443 per il connettore iOS HTTP/2.
-
-Per verificare che funzioni correttamente, utilizza i seguenti comandi:
-
-* Per i test:
-
-  ```
-  api.development.push.apple.com:443
-  ```
-
-* In produzione:
-
-  ```
-  api.push.apple.com:443
-  ```
-
-Con il connettore iOS HTTP/2, l’MTA e il server web devono essere in grado di contattare gli APN sulla porta 443.
-
-Se devi utilizzare il connettore iOS HTTP/2 tramite un proxy, fai riferimento a questa [pagina](../../installation/using/file-res-management.md#proxy-connection-configuration).
++++

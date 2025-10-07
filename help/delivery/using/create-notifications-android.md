@@ -4,8 +4,10 @@ title: Creare una notifica push per dispositivi Android
 description: Scopri come creare notifiche push per Android
 feature: Push
 role: User, Developer, Data Engineer
+hide: true
+hidefromtoc: true
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 12%
@@ -68,7 +70,7 @@ L’immagine e la pagina web devono essere visualizzate nella notifica push quan
 
 ## Creare un messaggio di notifica {#creating-notification-message}
 
-![](assets/do-not-localize/how-to-video.png) [Scopri come creare una notifica push di Android nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=it#additional-resources){target="_blank"}.
+![](assets/do-not-localize/how-to-video.png) [Scopri come creare una notifica push di Android in un video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html#additional-resources){target="_blank"}.
 
 1. Vai a **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 
