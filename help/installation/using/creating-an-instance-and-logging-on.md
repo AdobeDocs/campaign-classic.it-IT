@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a025026e-688e-4ec1-abc4-40ee040d2b3b
-source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
+source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 9%
@@ -72,7 +72,7 @@ Per creare una nuova istanza, effettua le seguenti operazioni:
 
 1. Nell&#39;elenco a discesa **[!UICONTROL Language]**, selezionare la **lingua dell&#39;istanza**: inglese (Stati Uniti), inglese (Regno Unito), francese o giapponese.
 
-   Le differenze tra l&#39;inglese americano e l&#39;inglese britannico sono descritte nella [documentazione di Campaign v8 (console)](.https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui#formats).
+   Le differenze tra l&#39;inglese americano e l&#39;inglese britannico sono descritte nella [documentazione di Campaign v8 (console)](.https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui).
 
    >[!CAUTION]
    >

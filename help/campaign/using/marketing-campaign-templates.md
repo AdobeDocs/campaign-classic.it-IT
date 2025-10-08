@@ -7,9 +7,9 @@ feature: Campaigns, Templates
 hide: true
 hidefromtoc: true
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1131'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ Tutte le campagne di marketing si basano su un modello, che memorizza le caratte
 >
 >La struttura viene visualizzata quando si fa clic sull&#39;icona **[!UICONTROL Explorer]** nella home page.
 
-Viene fornito un modello integrato al fine di creare una campagna per la quale non è stata definita alcuna configurazione specifica. Puoi creare e configurare i modelli della campagna e quindi creare campagne a partire da questi modelli.
+Viene fornito un modello incorporato al fine di creare una campagna per la quale non è stata definita alcuna configurazione specifica. Puoi creare e configurare i modelli della campagna e quindi creare campagne a partire da questi modelli.
 
 ![](assets/do-not-localize/how-to-video.png) Per ulteriori informazioni sulla creazione della campagna, consulta [questo video](../../campaign/using/marketing-campaign-deliveries.md#create-email-video).
 
@@ -114,7 +114,7 @@ Verranno visualizzati i collegamenti e le schede seguenti:
 
 * **Struttura**
 
-  Quando questo modulo è selezionato, alla scheda **[!UICONTROL Documents]** viene aggiunta una scheda secondaria **[!UICONTROL Delivery outlines]** per definire i profili di consegna per la campagna. Ulteriori informazioni sui profili di consegna in [questa sezione](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+  Quando questo modulo è selezionato, alla scheda **[!UICONTROL Delivery outlines]** viene aggiunta una scheda secondaria **[!UICONTROL Documents]** per definire i profili di consegna per la campagna. Ulteriori informazioni sui profili di consegna in [questa sezione](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
   ![](assets/s_ncs_user_op_template_activate_4.png)
 
@@ -157,7 +157,7 @@ Quando crei un modello di campagna, devi immettere le seguenti informazioni:
 
   >[!NOTE]
   >
-  >Per ulteriori informazioni sulle enumerazioni, consulta la sezione [Guida introduttiva](../../platform/using/managing-enumerations.md).
+  >Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 * Selezionare il tipo **di campagna**: univoco, ricorrente o periodico. Per impostazione predefinita, i modelli di campagna si applicano a campagne univoche. Le campagne ricorrenti e periodiche sono descritte in dettaglio in [questa sezione](../../campaign/using/setting-up-marketing-campaigns.md#recurring-and-periodic-campaigns).
 * Specifica la durata della campagna, ovvero il numero di giorni durante i quali la campagna avrà luogo. Quando crei una campagna basata su questo modello, le date di inizio e di fine della campagna verranno compilate automaticamente.

@@ -5,9 +5,9 @@ description: Esempi di modifica degli schemi
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: b7ee70e0-89c6-4cd3-8116-2f073d4a2f2f
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '671'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 Per estendere la tabella dei destinatari dello schema **nms:recipient**, attenersi alla seguente procedura:
 
-1. Crea lo schema dell&#39;estensione (**cus:extension**) utilizzando i dati seguenti:
+1. Crea lo schema di estensione (**cus:extension**) utilizzando i seguenti dati:
 
    ```
    <srcSchema mappingType="sql" name="extension" namespace="cus" xtkschema="xtk:srcSchema" extendedSchema="nms:recipient">  
@@ -46,7 +46,7 @@ Per estendere la tabella dei destinatari dello schema **nms:recipient**, attener
    >
    >Ricordarsi di aggiungere l&#39;attributo **extendedSchema** per fare riferimento allo schema di estensione.
 
-1. Verificare che lo schema esteso sia lo schema **nms:recipient** e che siano presenti i dati aggiuntivi:
+1. Verifica che lo schema esteso sia lo schema **nms:recipient** e che siano presenti i dati aggiuntivi:
 
    ```
    <schema dependingSchemas="cus:extension" mappingType="sql" name="recipient" namespace="nms" xtkschema="xtk:schema">
@@ -147,7 +147,7 @@ INSERT INTO CusOrder (iOrderId) VALUES (0);
 >
 >Il comando SQL INSERT INTO alla fine dello script consente di inserire un record di identificatore impostato su 0 per simulare outer join.
 
-## Tabella delle estensioni {#extension-table}
+## Tabella di estensione {#extension-table}
 
 Una tabella delle estensioni consente di estendere il contenuto di una tabella esistente in una tabella collegata con cardinalità 1-1.
 
@@ -335,8 +335,9 @@ Nell’interfaccia utente non viene visualizzato un collegamento, ma un campo. Q
 
 ## Argomenti correlati
 
-* [Utilizzo delle enumerazioni](../../platform/using/managing-enumerations.md)
+* Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 * [Introduzione agli schemi di Campaign](../../configuration/using/about-schema-edition.md)
 
 * [Aggiornamento della struttura del database](../../configuration/using/updating-the-database-structure.md)
+
