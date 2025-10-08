@@ -59,7 +59,7 @@ Puoi scegliere tra le seguenti lingue:
 * Tedesco
 * Giapponese
 
-La lingua scelta per l’istanza di Adobe Campaign Classic potrebbe influire sui formati di data e ora. Per ulteriori informazioni, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+La lingua scelta per l’istanza di Adobe Campaign Classic potrebbe influire sui formati di data e ora. Per ulteriori informazioni, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 Per ulteriori informazioni su come creare un&#39;istanza, consulta questa [pagina](../../installation/using/creating-an-instance-and-logging-on.md).
 
@@ -110,7 +110,7 @@ Adobe Campaign Explorer è accessibile tramite l’icona della barra degli strum
 
 Per ulteriori informazioni su Adobe Campaign Explorer, consulta queste pagine nella documentazione di Campaign v8 (console):
 
-* [Panoramica dell&#39;interfaccia utente di Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
+* [Panoramica dell&#39;interfaccia utente di Campaign](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
 * [Impostazioni interfaccia utente di Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
@@ -142,7 +142,7 @@ Un’enumerazione (detta anche elenco dettagliato) è un elenco predefinito di v
 
 Una volta definiti, i valori vengono visualizzati in un elenco a discesa. Un valore può essere selezionato direttamente o immesso utilizzando l’input predittivo, che suggerisce e completa le voci corrispondenti. Alcuni campi includono enumerazioni predefinite; se necessario, è possibile creare enumerazioni aggiuntive.
 
-Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 ## Video tutorial {#video}
 
