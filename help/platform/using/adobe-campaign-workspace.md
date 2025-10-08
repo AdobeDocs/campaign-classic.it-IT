@@ -6,16 +6,14 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '858'
 ht-degree: 5%
 
 ---
 
 # Area di lavoro di Adobe Campaign{#adobe-campaign-workspace}
-
-
 
 ## Esplora l’interfaccia di Adobe Campaign {#about-adobe-campaign-interface}
 
@@ -31,7 +29,7 @@ Dalla sezione centrale della home page, puoi utilizzare i collegamenti per acced
 >
 >Le funzionalità di Adobe Campaign disponibili nell’istanza dipendono dai moduli e dai componenti aggiuntivi installati. Alcuni di essi potrebbero anche non essere disponibili, a seconda delle autorizzazioni e delle configurazioni specifiche.
 >
->Prima di installare qualsiasi modulo o componente aggiuntivo, è necessario verificare il contratto di licenza o contattare il responsabile dell’account Adobe.
+>Prima di installare qualsiasi modulo o componente aggiuntivo, è necessario verificare il contratto di licenza o contattare il responsabile commerciale di Adobe.
 
 ### Console e accesso web {#console-and-web-access}
 
@@ -61,7 +59,7 @@ Puoi scegliere tra cinque lingue diverse:
 * Tedesco
 * Giapponese
 
-La lingua scelta per l’istanza di Adobe Campaign Classic potrebbe influire sui formati di data e ora. Per ulteriori informazioni, consulta questa [sezione](../../platform/using/adobe-campaign-workspace.md#date-and-time).
+La lingua scelta per l’istanza di Adobe Campaign Classic potrebbe influire sui formati di data e ora. Per ulteriori informazioni, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#formats){target=_blank}.
 
 Per ulteriori informazioni su come creare un&#39;istanza, consulta questa [pagina](../../installation/using/creating-an-instance-and-logging-on.md).
 
@@ -101,75 +99,42 @@ Ogni sezione sulle funzionalità di base ti consente di sfogliare tra gli elemen
 
 È possibile creare un nuovo elemento (consegna, applicazione Web, flusso di lavoro, ecc.) utilizzando i tasti di scelta rapida nella sezione **[!UICONTROL Create]** a sinistra dello schermo. Utilizza il pulsante **[!UICONTROL Create]** sopra l&#39;elenco per aggiungere nuovi elementi all&#39;elenco.
 
-Ad esempio, nella pagina di consegna, utilizza il pulsante **[!UICONTROL Create]** per creare una nuova consegna.
+Ad esempio, nella pagina della consegna, utilizza il pulsante **[!UICONTROL Create]** per creare una nuova consegna.
 
 ![](assets/d_ncs_user_interface_tab_add_del.png)
 
 
-## Formati e unità {#formats-and-units}
+## Utilizzare Adobe Campaign Explorer {#using-adobe-campaign-explorer}
 
-### Data e ora {#date-and-time}
+Adobe Campaign Explorer è accessibile tramite l’icona della barra degli strumenti. Consente di accedere ad Adobe Campaign per tutte le funzionalità di Adobe Campaign, le schermate di configurazione e una visualizzazione più dettagliata di alcuni elementi della piattaforma.
 
-La lingua dell’istanza Adobe Campaign Classic influisce sui formati di data e ora.
+Per ulteriori informazioni su Adobe Campaign Explorer, consulta queste pagine nella documentazione di Campaign v8 (console):
 
-La lingua viene selezionata durante l’installazione di Campaign e non può essere modificata in seguito. È possibile selezionare: Inglese (Stati Uniti), Inglese (Italia), Francese, Tedesco o Giapponese. Per ulteriori informazioni, consulta [questa pagina](../../installation/using/creating-an-instance-and-logging-on.md).
+* [Panoramica dell&#39;interfaccia utente di Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target=_blank}
 
-Le principali differenze tra l&#39;inglese americano e l&#39;inglese britannico sono:
+* [Impostazioni interfaccia utente di Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
-<table> 
- <thead> 
-  <tr> 
-   <th> Formati<br /> </th> 
-   <th> Inglese (Stati Uniti)<br /> </th> 
-   <th> Inglese (EN)<br /> </th> 
-  </tr> 
- </thead> 
- <tbody> 
-  <tr> 
-   <td> Data<br /> </td> 
-   <td> La settimana inizia di domenica<br /> </td> 
-   <td> La settimana inizia il lunedì<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> Data breve<br /> </td> 
-   <td> <p>%2M/%2D/%4Y</p><p><strong>es: 09/25/2018</strong></p> </td> 
-   <td> <p>%2D/%2M/%4Y</p><p><strong>es: 25/09/2018</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td> Data breve con ora<br /> </td> 
-   <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>es: 09/25/2018 10:47:25 PM</strong></p> </td> 
-   <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>es: 25/09/2018 22:47:25</strong></p> </td> 
-  </tr> 
- </tbody> 
-</table>
+* [Gestione di cartelle e visualizzazioni in Esplora risorse](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
-### Aggiungere valori in un’enumerazione {#add-values-in-an-enumeration}
 
-Utilizzando i campi di input con un elenco a discesa, puoi immettere un valore di enumerazione, che può essere memorizzato e quindi offerto come opzione nell’elenco a discesa. Ad esempio, nel campo **[!UICONTROL City]** della scheda **[!UICONTROL General]** di un profilo destinatario, puoi immettere Londra. Quando premi Invio per confermare questo valore, viene visualizzato un messaggio in cui viene richiesto se desideri salvare questo valore per l’enumerazione associata al campo.
+## Utilizzare gli elenchi {#manage-and-customize-lists}
 
-![](assets/s_ncs_user_wizard_email_bat_substitute_email.png)
-
-Se si fa clic su **[!UICONTROL Yes]**, questo valore sarà disponibile nella casella combinata del campo pertinente (in questo caso: **[!UICONTROL London]**).
+Nella console client di Campaign, i dati vengono visualizzati in elenchi. È possibile adattare questi elenchi alle proprie esigenze. Ad esempio, puoi aggiungere colonne, filtrare dati, contare record, salvare e condividere le impostazioni.
 
 >[!NOTE]
 >
->Le enumerazioni (note anche come &quot;elenchi dettagliati&quot;) sono gestite dall&#39;amministratore tramite la sezione **[!UICONTROL Administration > Platform > Enumerations]**. Per ulteriori informazioni, consulta [Gestione delle enumerazioni](../../platform/using/managing-enumerations.md).
+>Per informazioni su come gestire e personalizzare gli elenchi in Adobe Campaign, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
 
-### Unità predefinite {#default-units}
+## Gestire le enumerazioni{#managing-enumerations}
 
-Nei campi che esprimono una durata (ad esempio periodo di validità delle risorse di una consegna, scadenza dell&#39;approvazione per un&#39;attività, ecc.), il valore può essere espresso nelle seguenti **unità**:
+Un’enumerazione (detta anche elenco dettagliato) è un elenco predefinito di valori che è possibile utilizzare per compilare determinati campi. Le enumerazioni consentono di standardizzare i valori dei campi, rendendo più coerente l&#39;immissione dei dati e semplificando le query.
 
-* **[!UICONTROL s]** per secondi,
-* **[!UICONTROL mn]** per minuti,
-* **[!UICONTROL h]** per ore,
-* **[!UICONTROL d]** per giorni.
+Una volta definiti, i valori vengono visualizzati in un elenco a discesa. Un valore può essere selezionato direttamente o immesso utilizzando l’input predittivo, che suggerisce e completa le voci corrispondenti. Alcuni campi includono enumerazioni predefinite; se necessario, è possibile creare enumerazioni aggiuntive.
 
-![](assets/enter_unit_sample.png)
+Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 ## Video tutorial {#video}
 
 Questo video presenta l’area di lavoro di Campaign Classic.
 
->[!VIDEO](https://video.tv.adobe.com/v/39537?quality=12&captions=ita)
-
-Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
+>[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)

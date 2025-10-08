@@ -4,7 +4,9 @@ title: Gestire e personalizzare gli elenchi
 description: Scopri come sfogliare e configurare gli elenchi
 feature: Audiences, Data Management
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
-source-git-commit: f43b15e61fb286a612f057d8d3bf5a1ff6ecb253
+hide: true
+hidefromtoc: true
+source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
 workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 0%
@@ -19,7 +21,7 @@ Nella console client di Campaign, i dati vengono visualizzati in elenchi. È pos
 
 >[!NOTE]
 >
->Per informazioni su come gestire e personalizzare gli elenchi in Adobe Campaign, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
+>Per informazioni su come gestire e personalizzare gli elenchi in Adobe Campaign, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
 
 <!--
 ## Count records {#counting-records}

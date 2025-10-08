@@ -6,9 +6,9 @@ title: Guida di Campaign Classic v7
 user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
+source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
 workflow-type: tm+mt
-source-wordcount: '2561'
+source-wordcount: '2559'
 ht-degree: 99%
 
 ---
@@ -23,24 +23,22 @@ ht-degree: 99%
    + Versioni precedenti {#previous-releases}
       + [2024](rn/using/release-2024.md)
       + [2023](rn/using/release-2023.md)
-      + [2022](rn/using/release-2022.md)
-      + [2021](rn/using/release-2021.md)
-      + [[!DNL Gold Standard]](rn/using/gold-standard.md)
+      + [2022 - NASCOSTO](rn/using/release-2022.md)
+      + [2021 - NASCOSTO](rn/using/release-2021.md)
+      + [[!DNL Gold Standard - HIDDEN]](rn/using/gold-standard.md)
    + [Funzioni obsolete](rn/using/deprecated-features.md)
    + [Matrice di compatibilità](rn/using/compatibility-matrix.md)
-   + [Aggiornamenti alla documentazione](rn/using/documentation-updates.md)
+   + [Aggiornamenti alla documentazione - NASCOSTO](rn/using/documentation-updates.md)
 + Introduzione {#getting-started}
-   + Iniziare a usare Adobe Campaign {#starting-with-adobe-campaign}
-      + [Introduzione ad Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
-      + [Avviare Adobe Campaign](platform/using/launching-adobe-campaign.md)
-      + Area di lavoro di Adobe Campaign{#campaign-workspace}
-         + [Introduzione all’interfaccia utente di Campaign](platform/using/adobe-campaign-workspace.md)
-         + [Utilizzare Campaign Explorer](platform/using/adobe-campaign-explorer.md)
-         + [Sfogliare e personalizzare gli elenchi](platform/using/adobe-campaign-ui-lists.md)
-         + [Enumerazioni](platform/using/managing-enumerations.md)
-      + [Connettori di Campaign](platform/using/about-connectors.md)
-      + Domande frequenti {#faq}
-         + [Domande principali](platform/using/common-questions.md)
+   + [Introduzione ad Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
+   + [Avviare Adobe Campaign](platform/using/launching-adobe-campaign.md)
+   + [Introduzione all’interfaccia utente di Campaign](platform/using/adobe-campaign-workspace.md)
+   + [Utilizza Campaign Explorer - NASCOSTO](platform/using/adobe-campaign-explorer.md)
+   + [Sfogliare e personalizzare gli elenchi - NASCOSTO](platform/using/adobe-campaign-ui-lists.md)
+   + [Enumerazioni - NASCOSTO](platform/using/managing-enumerations.md)
+   + [Connettori di Campaign](platform/using/about-connectors.md)
+   + Domande frequenti {#faq}
+      + [Domande principali](platform/using/common-questions.md)
          + [Concetti globali](platform/using/faq-key-concepts.md)
          + [Aggiornamento della build](platform/using/faq-build-upgrade.md)
          + [Privacy](platform/using/privacy-faq.md)
@@ -51,16 +49,15 @@ ht-degree: 99%
          + [Configurazione](platform/using/faq-campaign-config.md)
          + [Rapporti](platform/using/faq-reporting.md)
          + [Sviluppo](platform/using/faq-developers.md)
-         + [Tutorial](platform/using/tutorials.md)
-      + [Glossario](platform/using/ac-glossary.md)
-      + Privacy {#privacy}
-         + [Privacy e consenso](platform/using/privacy-and-recommendations.md)
-         + [Gestione della privacy](platform/using/privacy-management.md)
-         + Richieste di accesso a dati personali {#privacy-requests}
-            + [Informazioni sulle richieste di accesso a dati personali](platform/using/privacy-requests.md)
-            + [Creare e gestire richieste di accesso a dati personali](platform/using/privacy-requests-ui.md)
-            + [Processo automatico di richiesta di accesso a dati personali](platform/using/privacy-requests-api.md)
-         + [Rinuncia alla vendita di informazioni personali](platform/using/privacy-requests-ccpa.md)
+   + [Glossario](platform/using/ac-glossary.md)
+   + Privacy {#privacy}
+      + [Privacy e consenso](platform/using/privacy-and-recommendations.md)
+      + [Gestione della privacy](platform/using/privacy-management.md)
+      + Richieste di accesso a dati personali {#privacy-requests}
+         + [Informazioni sulle richieste di accesso a dati personali](platform/using/privacy-requests.md)
+         + [Creare e gestire richieste di accesso a dati personali](platform/using/privacy-requests-ui.md)
+         + [Processo automatico di richiesta di accesso a dati personali](platform/using/privacy-requests-api.md)
+      + [Rinuncia alla vendita di informazioni personali](platform/using/privacy-requests-ccpa.md)
    + Gestione dei profili {#profile-management}
       + [Informazioni sui profili](platform/using/about-profiles.md)
       + [Modificare un profilo](platform/using/editing-a-profile.md)
@@ -379,7 +376,7 @@ ht-degree: 99%
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Utilizzare  [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Configurare l’integrazione](integrations/using/configuring-the-integration.md)
-      + [Creare una newsletter [!DNL Experience Manager] &#x200B;](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Creare una newsletter [!DNL Experience Manager] ](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Utilizzare  [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Configurare l’integrazione con [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)

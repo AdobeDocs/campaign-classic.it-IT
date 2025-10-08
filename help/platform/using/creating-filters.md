@@ -2,21 +2,15 @@
 product: campaign
 title: Creazione di filtri
 description: Creazione di filtri
-feature: Profiles
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
-audience: platform
-content-type: reference
-topic-tags: filtering-data
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
-source-git-commit: 813ef65ff45407a92c5f9d7f3d07189972a5742b
+source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '158'
 ht-degree: 3%
 
 ---
 
 # Creare i filtri{#creating-filters}
-
 
 Il filtro dei dati è il processo di selezione di una parte più piccola del set di dati, solo i record che corrispondono a determinati criteri e di utilizzo di tale sottoinsieme per azioni specifiche (aggiornamenti, creazione di tipi di pubblico) o analisi.
 
@@ -28,7 +22,7 @@ Quando ci si sposta nella struttura Adobe Campaign (dal menu **[!UICONTROL Explo
 
 >[!NOTE]
 >
->Per ulteriori informazioni sui filtri e su come utilizzarli, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}.
+>Per ulteriori informazioni sui filtri e su come utilizzarli, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}.
 
 
 <!--
