@@ -345,7 +345,7 @@ Ulteriori informazioni sull&#39;[attività di arricchimento](../../workflow/usin
 
 Un’enumerazione è un tipo di dati definito negli schemi o a livello di Platform che definisce i valori di input validi per un campo. Le enumerazioni vengono visualizzate nell’interfaccia utente e nei generatori di query come elenco a discesa.
 
-Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 +++
 
 +++**Visualizzazione Esplora risorse**
@@ -353,7 +353,7 @@ Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campai
 La visualizzazione Esplora risorse è una visualizzazione gerarchica delle cartelle che contengono gli artefatti e i dati di Adobe Campaign. Tieni presente che il sistema di cartelle in Adobe Campaign non funziona come una visualizzazione ad albero tipica, in quanto ogni cartella contiene dati di un tipo specifico, ad esempio Consegne, Flussi di lavoro o Offerte.
 
 
-Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 +++
 
@@ -400,7 +400,7 @@ Ulteriori informazioni sulla [dimensione filtro](../../workflow/using/building-a
 
 Una cartella è un elemento di visualizzazione di Esplora risorse che contiene record di database di un tipo di dati specifico. L&#39;eccezione è rappresentata dal tipo di cartella Generic utilizzato come elemento organizzativo e che non contiene dati, ma solo altre cartelle.
 
-Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 +++
 
@@ -408,7 +408,7 @@ Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentaz
 
 La visualizzazione Cartella è uno speciale tipo di cartella di Explorer utilizzato per visualizzare tutti i record di un tipo di dati selezionato, indipendentemente dalla cartella a cui appartiene. Le visualizzazioni cartelle vengono utilizzate come strumento amministrativo per gestire i dati partizionati o i dati distribuiti tra più cartelle.
 
-Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 +++
 
 +++**Forms**
@@ -561,7 +561,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 La struttura di navigazione è la navigazione principale nella vista Esplora di Adobe Campaign. La struttura di spostamento funziona come un browser di file, ad esempio Esplora risorse. Le cartelle possono contenere sottocartelle. Selezionando un nodo viene visualizzata la vista corrispondente al nodo. La vista visualizzata è un elenco associato a uno schema e un modulo di input per modificare la riga selezionata. È possibile personalizzare la struttura di navigazione e impostare le autorizzazioni per le cartelle.
 
-Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 +++
 
@@ -913,7 +913,7 @@ Ulteriori informazioni su [Servizi](../../delivery/using/about-services-and-subs
 
 Nel Pannello di controllo, puoi interagire con tutti i server SFTP collegati alle istanze di Campaign a cui hai accesso. Il Pannello di controllo Campaign ti consente di eseguire azioni sui server SFTP, ad esempio monitorare la capacità di archiviazione, gestire gli indirizzi IP per l’inserimento nell’elenco Consentiti e gestire le chiavi SSH pubbliche.
 
-Ulteriori informazioni sulla [gestione SFTP](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
+Ulteriori informazioni sulla [gestione SFTP](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=it).
 +++
 
 +++**Attività dei servizi di abbonamento**
