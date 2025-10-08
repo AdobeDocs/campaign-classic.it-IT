@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 2%
@@ -85,7 +85,7 @@ Selezionare i campi da esportare. Per eseguire questa operazione:
 
    ![](assets/s_ncs_user_export_wizard04.png)
 
-1. Fare clic sul pulsante **[!UICONTROL Add]** per richiamare le funzioni. Per ulteriori informazioni, consulta [Elenco delle funzioni](../../platform/using/defining-filter-conditions.md#list-of-functions).
+1. Fare clic sul pulsante **[!UICONTROL Add]** per richiamare le funzioni. Per ulteriori informazioni, consulta [Elenco delle funzioni](../../platform/using/about-queries-in-campaign.md).
 
 ## Passaggio 5: ordinare le colonne {#step-5---sorting-columns}
 

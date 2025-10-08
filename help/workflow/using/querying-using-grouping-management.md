@@ -6,9 +6,9 @@ feature: Query Editor, Workflows
 hide: true
 hidefromtoc: true
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '254'
 ht-degree: 3%
 
 ---
@@ -39,7 +39,7 @@ Per creare questo esempio, attieniti alla seguente procedura:
 
 1. Nella finestra **[!UICONTROL Data to extract]**, selezionare i campi **[!UICONTROL Email domain]** e **[!UICONTROL Primary key]**. Eseguire un conteggio nel campo **[!UICONTROL Primary key]**.
 
-   Per ulteriori informazioni sui conteggi delle chiavi primarie, consulta [questa sezione](../../platform/using/defining-filter-conditions.md#building-expressions).
+   Per ulteriori informazioni sui conteggi delle chiavi primarie, consulta [questa sezione](../../platform/using/about-queries-in-campaign.md).
 
 1. Selezionare la casella **[!UICONTROL Handle groupings (GROUP BY + HAVING)]**.
 
@@ -52,7 +52,7 @@ Per creare questo esempio, attieniti alla seguente procedura:
 1. In **[!UICONTROL Data filtering]**, selezionare **[!UICONTROL Filtering conditions]**. Passare alla finestra **[!UICONTROL Target elements]** e fare clic su **[!UICONTROL Next]**.
 1. Nella finestra **[!UICONTROL Data grouping]**, selezionare **[!UICONTROL Email domain]** facendo clic su **[!UICONTROL Add]**.
 
-   Questa finestra di raggruppamento dati viene visualizzata solo se è stata selezionata la casella **[!UICONTROL Handle groupings (GROUP BY + HAVING]**).
+   Questa finestra di raggruppamento dati viene visualizzata solo se è stata selezionata la casella **[!UICONTROL Handle groupings (GROUP BY + HAVING])**.
 
    ![](assets/query_editor_blocklist_04.png)
 

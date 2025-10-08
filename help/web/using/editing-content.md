@@ -5,9 +5,9 @@ description: Modificare i contenuti
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
-source-wordcount: '1227'
+source-wordcount: '1226'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Per aggiungere una condizione di visibilità, selezionare un blocco e immetterla
 
 >[!NOTE]
 >
->La modifica avanzata delle espressioni viene presentata in [questa pagina](../../platform/using/defining-filter-conditions.md#list-of-functions).
+>La modifica avanzata delle espressioni viene presentata in [questa pagina](../../platform/using/about-queries-in-campaign.md).
 
 ![](assets/dce_popup_visibilitycondition.png)
 
@@ -232,8 +232,8 @@ L&#39;icona **Duplica** duplica il tag e il relativo contenuto.
 
 Quando selezioni un blocco contenente un’immagine, puoi accedere alle seguenti proprietà:
 
-* **Didascalia** ti consente di definire la didascalia collegata all&#39;immagine (corrisponde all&#39;attributo HTML **alt**).
-* **Dimension** consente di specificare la dimensione dell&#39;immagine, in pixel.
+* **Didascalia** consente di definire la didascalia collegata all&#39;immagine (corrisponde all&#39;attributo HTML **alt**).
+* **Dimensioni** consente di specificare la dimensione dell&#39;immagine, in pixel.
 
   ![](assets/dce_popup_imgsize.png)
 

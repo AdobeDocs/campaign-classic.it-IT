@@ -6,10 +6,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: d78fe2e0fd85ba9c23e709a3f30a135cee411230
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
-source-wordcount: '858'
-ht-degree: 5%
+source-wordcount: '963'
+ht-degree: 4%
 
 ---
 
@@ -59,7 +59,7 @@ Puoi scegliere tra cinque lingue diverse:
 * Tedesco
 * Giapponese
 
-La lingua scelta per l’istanza di Adobe Campaign Classic potrebbe influire sui formati di data e ora. Per ulteriori informazioni, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+La lingua scelta per l’istanza di Adobe Campaign Classic potrebbe influire sui formati di data e ora. Per ulteriori informazioni, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 Per ulteriori informazioni su come creare un&#39;istanza, consulta questa [pagina](../../installation/using/creating-an-instance-and-logging-on.md).
 
@@ -110,11 +110,22 @@ Adobe Campaign Explorer è accessibile tramite l’icona della barra degli strum
 
 Per ulteriori informazioni su Adobe Campaign Explorer, consulta queste pagine nella documentazione di Campaign v8 (console):
 
-* [Panoramica dell&#39;interfaccia utente di Campaign](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
+* [Panoramica dell&#39;interfaccia utente di Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
 * [Impostazioni interfaccia utente di Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
 * [Gestione di cartelle e visualizzazioni in Esplora risorse](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
+
+
+## Filtrare i dati {#filters}
+
+Il filtro dei dati consiste nel restringere un set di dati solo ai record che corrispondono a criteri specifici. Questo sottoinsieme può quindi essere utilizzato per azioni mirate (come aggiornamenti o creazione di tipi di pubblico) o per l’analisi.
+
+Durante la navigazione in Campaign, i dati vengono visualizzati negli elenchi. Puoi applicare filtri incorporati per accedere rapidamente a un sottoinsieme definito, ad esempio indirizzi messi in quarantena, destinatari non mirati o record all’interno di un intervallo di età o di una data di creazione specifici. Inoltre, puoi creare filtri personalizzati, salvarli per utilizzi futuri e condividerli con altri utenti di Campaign.
+
+>[!NOTE]
+>
+>Per informazioni su come accedere, progettare e condividere i filtri, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
 
 
 ## Utilizzare gli elenchi {#manage-and-customize-lists}
@@ -123,7 +134,7 @@ Nella console client di Campaign, i dati vengono visualizzati in elenchi. È pos
 
 >[!NOTE]
 >
->Per informazioni su come gestire e personalizzare gli elenchi in Adobe Campaign, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
+>Per informazioni su come gestire e personalizzare gli elenchi, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
 
 ## Gestire le enumerazioni{#managing-enumerations}
 
@@ -131,10 +142,10 @@ Un’enumerazione (detta anche elenco dettagliato) è un elenco predefinito di v
 
 Una volta definiti, i valori vengono visualizzati in un elenco a discesa. Un valore può essere selezionato direttamente o immesso utilizzando l’input predittivo, che suggerisce e completa le voci corrispondenti. Alcuni campi includono enumerazioni predefinite; se necessario, è possibile creare enumerazioni aggiuntive.
 
-Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 ## Video tutorial {#video}
 
 Questo video presenta l’area di lavoro di Campaign Classic.
 
->[!VIDEO](https://video.tv.adobe.com/v/39537?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)

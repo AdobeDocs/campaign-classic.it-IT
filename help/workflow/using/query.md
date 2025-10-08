@@ -6,9 +6,9 @@ feature: Workflows, Targeting Activity, Query Editor
 hide: true
 hidefromtoc: true
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
-source-wordcount: '1631'
+source-wordcount: '1630'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Il collegamento **[!UICONTROL Edit query...]** consente di definire il tipo di t
 
    È inoltre possibile aggiungere condizioni di raggruppamento dei dati selezionando la casella corrispondente. A questo scopo, la dimensione di filtro deve essere diversa dalla dimensione di targeting della query. Per ulteriori informazioni sul raggruppamento, consulta questa [sezione](querying-using-grouping-management.md).
 
-   È inoltre possibile aggiungere altri criteri utilizzando il generatore di espressioni e combinarlo con le opzioni logiche AND, OR e EXCEPT. È quindi possibile visualizzare in anteprima **[!UICONTROL Corresponding SQL query...]** per la combinazione di criteri. Per ulteriori informazioni, consulta questa [sezione](../../platform/using/defining-filter-conditions.md#building-expressions).
+   È inoltre possibile aggiungere altri criteri utilizzando il generatore di espressioni e combinarlo con le opzioni logiche AND, OR e EXCEPT. È quindi possibile visualizzare in anteprima **[!UICONTROL Corresponding SQL query...]** per la combinazione di criteri. Per ulteriori informazioni, consulta questa [sezione](../../platform/using/about-queries-in-campaign.md).
 
    Salva il filtro se desideri riutilizzarlo in un secondo momento.
 
@@ -188,16 +188,16 @@ La sezione seguente fornisce le best practice per ottimizzare le query in esecuz
 
   Per ulteriori informazioni, a seconda della versione di Campaign in uso, consulta le sezioni seguenti:
 
-  ![](assets/do-not-localize/v7.jpeg) [Documentazione di Campaign v7](../../configuration/using/database-mapping.md)
+  ![](assets/do-not-localize/v7.jpeg)[Documentazione di Campaign v7](../../configuration/using/database-mapping.md)
 
-  ![](assets/do-not-localize/v8.png) [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html?lang=it)
+  ![](assets/do-not-localize/v8.png)[Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
 
 ### Funzioni {#functions}
 
 * Attenzione a funzioni come `Lower(...)`. Quando si utilizza la funzione Lower, non viene utilizzato Index.
 * Controlla attentamente le query utilizzando l’istruzione &quot;like&quot; o le istruzioni &quot;upper&quot; o &quot;lower&quot;. Applica &quot;Upper&quot; all&#39;input dell&#39;utente, non al campo del database.
 
-  Per ulteriori informazioni sulle funzioni, consulta [questa sezione](../../platform/using/defining-filter-conditions.md#list-of-functions).
+  Per ulteriori informazioni sulle funzioni, consulta [questa sezione](../../platform/using/about-queries-in-campaign.md).
 
 ### Filtrare le dimensioni {#filtering-dimensions}
 

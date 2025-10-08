@@ -6,7 +6,7 @@ feature: Workflows, Targeting Activity, Data Management
 hide: true
 hidefromtoc: true
 exl-id: 9f5735d2-73b8-469f-bc10-482c99cdd4a1
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
 source-wordcount: '852'
 ht-degree: 4%
@@ -102,7 +102,7 @@ L’aggiornamento dei dati e l’unione delle raccolte ti consentono di aggiorna
 
 1. Selezionare le raccolte da spostare nel record principale e i campi da aggiornare.
 
-   Immettere le regole applicabili a questi record una volta identificati uno o più record secondari. A questo scopo, puoi utilizzare il Generatore di espressioni. Per ulteriori informazioni, consulta questa [sezione](../../platform/using/defining-filter-conditions.md#building-expressions). Ad esempio, specificando che si tratta del valore aggiornato più di recente tra tutti i diversi record che devono essere conservati.
+   Immettere le regole applicabili a questi record una volta identificati uno o più record secondari. A questo scopo, puoi utilizzare il Generatore di espressioni. Per ulteriori informazioni, consulta questa [sezione](../../platform/using/about-queries-in-campaign.md). Ad esempio, specificando che si tratta del valore aggiornato più di recente tra tutti i diversi record che devono essere conservati.
 
    Quindi inserisci le condizioni da considerare per la regola.
 
