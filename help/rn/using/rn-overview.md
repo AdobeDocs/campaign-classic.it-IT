@@ -6,9 +6,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 7b71cac6f4c2fc2e8d30683130adb27eff757b73
+source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '894'
 ht-degree: 100%
 
 ---
@@ -34,7 +34,7 @@ Aligned with this naming, Campaign has 3 types of upgrades:
 1. Patch Upgrades - A patch upgrade includes fixes only (ex: 8.5.1 to 8.5.2)
 -->
 
-## Stato delle versioni {#rn-statuses}
+## Stati di rilascio {#rn-statuses}
 
 A ogni nuova versione è associato uno stato identificato da un colore nelle [Note sulla versione](latest-release.md).
 
@@ -42,7 +42,7 @@ A ogni nuova versione è associato uno stato identificato da un colore nelle [No
 |---|---|
 | [!BADGE Disponibilità generale]{type=Positive} | La più recente build stabile, convalidata in produzione e raccomandata da Adobe. |
 | [!BADGE Disponibilità limitata]{type=Informative} | Solo per implementazione su richiesta. |
-| [!BADGE Obsoleto]{type=negative} | Nessuna distribuzione. Nessun bug fix. Le implementazioni esistenti devono essere aggiornate. |
+| [!BADGE Obsoleta]{type=negative} | Nessuna distribuzione. Nessun bug fix. Le implementazioni esistenti devono essere aggiornate. |
 
 ## Ciclo di rilascio {#rn-cycle}
 
@@ -152,7 +152,6 @@ Abbiamo organizzato un team di responsabili dell’Assistenza clienti, Product M
 * [Trova la versione Campaign](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 * [Guida e supporto](../../support.md)
 * [Versioni del Pannello di controllo](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=it)
-* [Ultimi aggiornamenti della documentazione](../../rn/using/documentation-updates.md)
 * [Funzioni obsolete e rimosse](../../rn/using/deprecated-features.md)
 * [Domande frequenti sull’aggiornamento della build](../../platform/using/faq-build-upgrade.md)
 

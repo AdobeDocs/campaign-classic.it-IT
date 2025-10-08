@@ -6,9 +6,9 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
+source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
 workflow-type: tm+mt
-source-wordcount: '5959'
+source-wordcount: '6002'
 ht-degree: 2%
 
 ---
@@ -345,14 +345,16 @@ Ulteriori informazioni sull&#39;[attività di arricchimento](../../workflow/usin
 
 Un’enumerazione è un tipo di dati definito negli schemi o a livello di Platform che definisce i valori di input validi per un campo. Le enumerazioni vengono visualizzate nell’interfaccia utente e nei generatori di query come elenco a discesa.
 
-Ulteriori informazioni sulle [enumerazioni](../../platform/using/managing-enumerations.md).
+Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 +++
 
 +++**Visualizzazione Esplora risorse**
 
 La visualizzazione Esplora risorse è una visualizzazione gerarchica delle cartelle che contengono gli artefatti e i dati di Adobe Campaign. Tieni presente che il sistema di cartelle in Adobe Campaign non funziona come una visualizzazione ad albero tipica, in quanto ogni cartella contiene dati di un tipo specifico, ad esempio Consegne, Flussi di lavoro o Offerte.
 
-Ulteriori informazioni sulla [visualizzazione Explorer](../../platform/using/adobe-campaign-explorer.md).
+
+Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+
 +++
 
 +++**Account esterni**
@@ -398,14 +400,15 @@ Ulteriori informazioni sulla [dimensione filtro](../../workflow/using/building-a
 
 Una cartella è un elemento di visualizzazione di Esplora risorse che contiene record di database di un tipo di dati specifico. L&#39;eccezione è rappresentata dal tipo di cartella Generic utilizzato come elemento organizzativo e che non contiene dati, ma solo altre cartelle.
 
-Ulteriori informazioni su [Cartelle](../../platform/using/adobe-campaign-explorer.md).
+Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+
 +++
 
 +++**Visualizzazione cartella**
 
 La visualizzazione Cartella è uno speciale tipo di cartella di Explorer utilizzato per visualizzare tutti i record di un tipo di dati selezionato, indipendentemente dalla cartella a cui appartiene. Le visualizzazioni cartelle vengono utilizzate come strumento amministrativo per gestire i dati partizionati o i dati distribuiti tra più cartelle.
 
-Ulteriori informazioni su [Visualizzazione cartelle](../../platform/using/adobe-campaign-explorer.md).
+Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 +++
 
 +++**Forms**
@@ -558,7 +561,8 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 La struttura di navigazione è la navigazione principale nella vista Esplora di Adobe Campaign. La struttura di spostamento funziona come un browser di file, ad esempio Esplora risorse. Le cartelle possono contenere sottocartelle. Selezionando un nodo viene visualizzata la vista corrispondente al nodo. La vista visualizzata è un elenco associato a uno schema e un modulo di input per modificare la riga selezionata. È possibile personalizzare la struttura di navigazione e impostare le autorizzazioni per le cartelle.
 
-Ulteriori informazioni su [Struttura di spostamento](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarch).
+Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+
 +++
 
 +++**Obiettivi**
@@ -667,7 +671,7 @@ Ulteriori informazioni sulle [proposte di offerte](../../interaction/using/creat
 
 *Contesto: interazione campagna*
 
-Per rappresentazione di un’offerta si intendono le informazioni utilizzate dal canale per visualizzare l’offerta. La rappresentazione dell’offerta può essere realizzata a partire dalla funzione di rendering dello spazio in cui l’offerta viene rappresentata o immessa direttamente nell’interfaccia (ad esempio, nel blocco HTML). Un’offerta può essere rappresentata da uno spazio.
+Per rappresentazione di un’offerta si intendono le informazioni utilizzate dal canale per visualizzare l’offerta. La rappresentazione dell’offerta può essere costruita dalla funzione di rendering dello spazio in cui l’offerta viene rappresentata o immessa direttamente nell’interfaccia (ad esempio, nel blocco HTML). Un’offerta può essere rappresentata da uno spazio.
 
 Ulteriori informazioni sull&#39;[interazione](../../interaction/using/interaction-and-offer-management.md).
 +++
@@ -754,7 +758,7 @@ Ulteriori informazioni su [Palette](../../workflow/using/building-a-workflow.md#
 
 +++**Monitoraggio delle prestazioni**
 
-Le informazioni di monitoraggio delle prestazioni vengono visualizzate nella scheda Monitoraggio. Mostra le metriche per il sistema sottostante, ad esempio l’utilizzo della memoria e della CPU, le statistiche del server SMTP, i processi del server e altre informazioni rilevanti.
+Le informazioni di monitoraggio delle prestazioni vengono visualizzate nella scheda Monitoraggio. Mostra le metriche per il sistema sottostante, come memoria e utilizzo del CPU, statistiche del server SMTP, processi del server e altre informazioni rilevanti.
 
 Ulteriori informazioni sul [Monitoraggio delle prestazioni](../../production/using/monitoring-processes.md).
 +++
@@ -836,7 +840,7 @@ Ulteriori informazioni sulle [risorse pubbliche](../../installation/using/deploy
 
 *Contesto: canale app mobile*
 
-Le notifiche push sono messaggi ricevuti dalle app mobili. Le notifiche push sono configurate per funzionare con Adobe Campaign includendo il codice SDK di Experience Platform nell’app mobile. Per il push, sono disponibili due canali di consegna: iOS e Android.
+Le notifiche push sono messaggi ricevuti dalle app mobili. Le notifiche push sono configurate per funzionare con Adobe Campaign includendo il codice Experience Platform SDK nell’app mobile. Per il push, sono disponibili due canali di consegna: iOS e Android.
 
 Ulteriori informazioni su [Push](../../delivery/using/about-mobile-app-channel.md).
 +++
@@ -909,7 +913,7 @@ Ulteriori informazioni su [Servizi](../../delivery/using/about-services-and-subs
 
 Nel Pannello di controllo, puoi interagire con tutti i server SFTP collegati alle istanze di Campaign a cui hai accesso. Il Pannello di controllo Campaign ti consente di eseguire azioni sui server SFTP, ad esempio monitorare la capacità di archiviazione, gestire gli indirizzi IP per l’inserimento nell’elenco Consentiti e gestire le chiavi SSH pubbliche.
 
-Ulteriori informazioni sulla [gestione SFTP](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=it).
+Ulteriori informazioni sulla [gestione SFTP](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
 +++
 
 +++**Attività dei servizi di abbonamento**

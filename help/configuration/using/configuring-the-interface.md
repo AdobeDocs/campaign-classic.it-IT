@@ -6,9 +6,9 @@ feature: Application Settings
 role: Data Engineer, Developer
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Per visualizzare e dialogare con la nuova tabella dei destinatari nell’interfa
 Adobe Campaign utilizza una variabile globale &quot;Nms_DefaultRcpSchema&quot; per la finestra di dialogo con il database dei destinatari predefinito (nms:recipient). Occorre pertanto modificare tale variabile.
 
 1. Vai al nodo **[!UICONTROL Administration>Platform>Options]** dell&#39;Explorer.
-1. Modifica il valore della variabile **Nms_DefaultRcpSchema** con il nome dello schema che corrisponde alla tabella dei destinatari esterna (in questo caso: cus:individual).
+1. Modificare il valore della variabile **Nms_DefaultRcpSchema** con il nome dello schema corrispondente alla tabella dei destinatari esterna (in questo caso: cus:individual).
 1. Salva le modifiche.
 
 ## Creazione di un nuovo modulo {#creating-a-new-form-}
@@ -36,7 +36,7 @@ La creazione di un nuovo modulo consente di visualizzare e modificare i dati del
 >Il nome del modulo deve essere identico al nome dello schema a cui si riferisce.
 
 1. Vai al nodo **Amministrazione > Configurazione > Moduli di input** dell&#39;Explorer.
-1. Crea un nuovo file **form** di tipo **xtk:form**.
+1. Crea un nuovo file **form:form** di tipo **xtk**.
 1. Descrivere tutti i campi di monitoraggio e i campi necessari a seconda del modello di tabella.
 
    >[!NOTE]
@@ -63,12 +63,8 @@ La creazione di un nuovo modulo consente di visualizzare e modificare i dati del
 ## Creazione di un nuovo tipo di cartella nella gerarchia di navigazione {#creating-a-new-type-of-folder-in-the-navigation-hierarchy}
 
 1. Passare al nodo **[!UICONTROL Administration>Configuration>Navigation hierarchies]**.
-1. Crea un nuovo documento di tipo **navtree** di tipo **xtk:navtree**.
+1. Crea un nuovo documento di tipo **xtk:navtree** **navtree**.
 1. Descrivere tutti i campi di monitoraggio e i campi necessari a seconda del modello di tabella.
-
-   >[!NOTE]
-   >
-   >Per ulteriori informazioni sui file di tipo **navtree**, fare riferimento a [questa pagina](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
 
    Nell&#39;esempio corrente, il file **navtree** deve essere basato sullo schema **cus:individual** e quindi avere il seguente formato:
 

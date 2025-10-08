@@ -8,9 +8,9 @@ audience: integrations
 content-type: reference
 level: Intermediate, Experienced
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1200'
 ht-degree: 1%
 
 ---
@@ -114,7 +114,7 @@ Esempio:
 
 Gli eventi vengono elaborati uno alla volta, in ordine di offset. Ogni thread di [!DNL pipelined] elabora una partizione diversa.
 
-L&#39;offset dell&#39;ultimo evento recuperato viene memorizzato nel database. Pertanto, se il processo viene interrotto, viene riavviato dall’ultimo messaggio. Questi dati vengono memorizzati nello schema predefinito xtk:pipelineOffset.
+L&#39;offset dell&#39;ultimo evento recuperato viene memorizzato nel database. Pertanto, se il processo viene interrotto, viene riavviato dall’ultimo messaggio. Questi dati sono archiviati nello schema predefinito xtk:pipelineOffset.
 
 Questo puntatore è specifico per ogni istanza e per ogni consumer. Pertanto, quando molte istanze accedono alla stessa pipeline con consumer diversi, ognuna riceve tutti i messaggi e nello stesso ordine.
 
@@ -212,7 +212,7 @@ Di seguito è riportato un codice schema di esempio per questa tabella:
 | shopper_key | Lungo | shopper_key | L’identificatore esterno dell’acquirente acquisito da Analytics. |
 | creato | Data e ora | Creato | L’ora in cui l’evento è stato creato in Campaign. |
 | lastModified | Data e ora | Ultima modifica | L’ultima volta che l’evento è stato modificato in Adobe. |
-| timeGMT | Data e ora | Timestamp | L’ora in cui l’evento è stato generato in Analytics. |
+| timeGMT | Data e ora | Marca temporale | L’ora in cui l’evento è stato generato in Analytics. |
 
 ### Visualizzazione degli eventi {#display-events}
 
@@ -220,7 +220,7 @@ Gli eventi possono essere visualizzati con un semplice modulo basato sullo schem
 
 >[!NOTE]
 >
->Il nodo Evento pipeline non è incorporato e deve essere aggiunto, così come il modulo correlato deve essere creato in Campaign. Queste operazioni sono riservate esclusivamente agli utenti esperti. Per ulteriori informazioni, consulta le seguenti sezioni: [Gerarchia di navigazione](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy). e [Modifica moduli](../../configuration/using/editing-forms.md).
+>Il nodo Evento pipeline non è incorporato e deve essere aggiunto, così come il modulo correlato deve essere creato in Campaign. Queste operazioni sono riservate esclusivamente agli utenti esperti. Per ulteriori informazioni, consulta [Modifica dei moduli](../../configuration/using/editing-forms.md).
 
 ![](assets/triggers_7.png)
 
