@@ -6,7 +6,7 @@ feature: Troubleshooting
 hidefromtoc: true
 hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
+source-git-commit: 192505e1c4d387de55ca18b578b837d237cc0607
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 68%
@@ -80,7 +80,7 @@ Come effettuare l’aggiornamento a una nuova build? Come monitorare l’esecuzi
         <li><a href="delivery/using/understanding-quarantine-management.md">Gestione della quarantena</a></li>
         <li><a href="installation/using/get-started-security-privacy.md">Lista di controllo per sicurezza e privacy</a></li>
         <li><a href="platform/using/privacy-management.md">Privacy e gestione del consenso</a></li>
-        <li><a href="platform/using/steps-to-create-a-query.md">Progettare una query</a></li>
+        <li><a href="platform/using/about-queries-in-campaign.md">Progettare una query</a></li>
         <li><a href="workflow/using/querying-recipient-table.md">Esempi di query</a></li>
         <li><a href="workflow/using/building-a-workflow.md">Creare un flusso di lavoro</a></li>
         </ul>
@@ -109,11 +109,11 @@ Il Pannello di controllo è disponibile direttamente da Adobe Experience Cloud. 
 
 ### Domande frequenti sul Pannello di controllo
 
-[Fai clic qui &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=it) per accedere alle domande frequenti sul Pannello di controllo Campaign.
+[Fai clic qui ](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=it) per accedere alle domande frequenti sul Pannello di controllo Campaign.
 
 ### Gestione SFTP
 
-Nel Pannello di controllo, puoi interagire con tutti i server SFTP collegati alle istanze di Campaign a cui hai accesso. Puoi monitorarne la capacità di archiviazione, gestire gli indirizzi IP sul inserisco nell&#39;elenco Consentiti di storage e le chiavi SSH pubbliche. Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=it).
+Nel Pannello di controllo, puoi interagire con tutti i server SFTP collegati alle istanze di Campaign a cui hai accesso. Puoi monitorarne la capacità di archiviazione, gestire gli indirizzi IP sul inserisco nell&#39;elenco Consentiti di storage e le chiavi SSH pubbliche. Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
 
 ### Sottodomini e certificati
 

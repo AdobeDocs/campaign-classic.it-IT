@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: c6dd2709-06e3-4227-bbec-99f3d80144fe
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 192505e1c4d387de55ca18b578b837d237cc0607
 workflow-type: tm+mt
 source-wordcount: '807'
 ht-degree: 2%
@@ -58,7 +58,7 @@ Al di fuori di queste date, l’offerta non verrà selezionata dal motore di int
 
 Puoi applicare filtri al target dell’offerta.
 
-A tale scopo, fare clic sul collegamento **[!UICONTROL Edit query]** e selezionare il filtro che si desidera applicare. (Vedi [questa sezione](../../platform/using/steps-to-create-a-query.md#step-4---filter-data)).
+A tale scopo, fare clic sul collegamento **[!UICONTROL Edit query]** e selezionare il filtro che si desidera applicare. Fai riferimento a [questa sezione](../../platform/using/about-adobe-campaign-classic.md).
 
 ![](assets/offer_eligibility_create_003.png)
 
@@ -131,7 +131,7 @@ Per visualizzarlo, fare clic sul collegamento **[!UICONTROL Schedule and eligibi
    * **[!UICONTROL Title]** : specifica il titolo da visualizzare nell&#39;offerta. Avviso: non si tratta dell&#39;etichetta dell&#39;offerta, definita nella scheda **[!UICONTROL General]**.
    * **[!UICONTROL Destination URL]** : specifica l&#39;URL dell&#39;offerta. Per essere elaborato correttamente, deve iniziare con &quot;http://&quot; o &quot;https://&quot;.
    * **[!UICONTROL Image URL]** : specifica un URL o un percorso di accesso all&#39;immagine dell&#39;offerta.
-   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]**: inserisci il corpo dell&#39;offerta nella scheda desiderata. Per generare il tracciamento, **[!UICONTROL HTML content]** deve essere composto da elementi HTML che possono essere racchiusi in un elemento di tipo `<div>`. Il risultato di un elemento `<table>` nella pagina HTML, ad esempio, sarà il seguente:
+   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]**: inserisci il corpo dell&#39;offerta nella scheda desiderata. Per generare il tracciamento, **[!UICONTROL HTML content]** deve essere composto da elementi HTML che possono essere racchiusi in un elemento di tipo `<div>`. Ad esempio, il risultato di un elemento `<table>` nella pagina HTML sarà il seguente:
 
    ```
       <div> 

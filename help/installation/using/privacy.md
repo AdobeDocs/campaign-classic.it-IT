@@ -4,7 +4,7 @@ title: Personalizzazione e privacy
 description: Scopri le best practice sulla sicurezza per la privacy e la personalizzazione
 feature: Installation, Privacy, Privacy Tools, URL Personalization
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 192505e1c4d387de55ca18b578b837d237cc0607
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 2%
@@ -25,7 +25,7 @@ Quando aggiungi collegamenti personalizzati al contenuto, evita sempre di includ
 
 ### Consiglio
 
-Per convalidare e assicurarsi di non utilizzare quanto sopra, eseguire una query sulla tabella degli URL di tracciamento tramite [Editor query generico di Campaign](../../platform/using/steps-to-create-a-query.md) oppure creare un flusso di lavoro con criteri di filtro nell&#39;attività [query](../../workflow/using/query.md).
+Per convalidare e assicurarsi di non utilizzare quanto sopra, eseguire una query sulla tabella degli URL di tracciamento tramite [Editor query generico di Campaign](../../platform/using/about-queries-in-campaign.md) oppure creare un flusso di lavoro con criteri di filtro nell&#39;attività [query](../../workflow/using/query.md).
 
 Esempio:
 
@@ -54,7 +54,7 @@ Inoltre, puoi utilizzare un miglioramento per disabilitare gli URL generati nell
 
 Se esegui la build 19.1.4, potrebbero verificarsi problemi con le consegne di notifiche push tramite collegamenti di tracciamento o le consegne con tag di ancoraggio. In tal caso, si consiglia di disabilitare la firma URL.
 
-In qualità di cliente ibrido, Cloud Service gestiti o in hosting per Campaign, devi contattare l&#39;[Assistenza clienti](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) per disabilitare la firma URL.
+In qualità di cliente ibrido, Managed Cloud Services o in hosting per Campaign, devi contattare l&#39;[Assistenza clienti](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html) per disabilitare la firma URL.
 
 Se esegui Campaign in un’architettura ibrida, prima di abilitare la firma URL, assicurati che l’istanza mid-sourcing ospitata sia stata aggiornata come segue:
 
@@ -151,7 +151,7 @@ A tale scopo, segui i passaggi indicati di seguito:
    >
    >È possibile sostituire `$(loginId) = 0 or $(login) = 'admin'` con `hasNamedRight('admin')` per consentire a tutti gli utenti con diritti di amministratore di visualizzare queste password.
 
-## Pagine Protect con PI
+## Proteggi pagine con PI
 
 Consigliamo vivamente ai clienti on-premise di proteggere le pagine che potrebbero contenere informazioni personali (PI) come pagine mirror, applicazioni web, ecc.
 
