@@ -9,9 +9,9 @@ topic-tags: profile-management
 exl-id: e1d0556a-6f30-4863-9025-eb9c1b8b53d3
 hide: true
 hidefromtoc: true
-source-git-commit: 471018f09e5a14635fcce07aeca1e2cf48d9144f
+source-git-commit: d3a603bbb70dc63e72b6eed87a6503e155aff54e
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '137'
 ht-degree: 2%
 
 ---
@@ -30,8 +30,9 @@ Ogni nodo coincide con una cartella. I dati di ciascuna cartella devono essere c
 
 >[!NOTE]
 >
-> * Per visualizzare l&#39;elenco di tutti i destinatari nel database, è necessario creare una visualizzazione. Ulteriori informazioni in [Cartelle e visualizzazioni](../../platform/using/access-management-folders.md).
-> * Per ulteriori informazioni su come gestire i profili, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
+> * Per visualizzare l&#39;elenco di tutti i destinatari nel database, è necessario creare una visualizzazione. Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
+>
+> * Per ulteriori informazioni su come gestire i profili, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
 
 <!--
