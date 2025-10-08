@@ -5,10 +5,10 @@ description: Scopri come concedere l’accesso alle funzionalità di Campaign
 badge: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Access Management, Permissions
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
-source-git-commit: b27b85b126e002c0ea8b5d71da1ed60e1e817980
+source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 9%
+source-wordcount: '261'
+ht-degree: 8%
 
 ---
 
@@ -34,17 +34,28 @@ Adobe Campaign ti consente di definire e gestire i diritti assegnati ai vari ope
 
 >[!TAB Documentazione sulle autorizzazioni]
 
-Per ulteriori informazioni sulle autorizzazioni in Adobe Campaign, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}.
+Per ulteriori informazioni sulle **autorizzazioni in Adobe Campaign**, consulta la **[documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}**.
 
-[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}
 
->[!TAB Gestire l&#39;accesso alle cartelle]
 
-Per ulteriori informazioni sull&#39;accesso alle cartelle e sulla loro gestione, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/admin/permissions/folder-permissions?lang=en#_blank){target=_blank}.
+>[!TAB Gestione delle autorizzazioni per le cartelle]
 
-[![immagine](../../assets/do-not-localize/learn-more-button.svg)] ([![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}){target=_blank}
+Per informazioni su come definire le **autorizzazioni per le cartelle**, consulta la **[documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}**.
+
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}
+
+
+>[!TAB Autenticazione nativa]
+
+L’autenticazione nativa con login/password è ancora disponibile in Campaign v7. Tuttavia, per rafforzare la sicurezza e il processo di autenticazione, Adobe Campaign consiglia vivamente di [migrare la modalità di autenticazione dell’utente finale](../../technotes/using/ac-ims.md) dall’autenticazione nativa di login/password ad Adobe Identity Management System (IMS). In Campaign v8, la connessione con l’utente o la password (ovvero l’autenticazione nativa) non è consentita.
+
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](../../technotes/using/ac-ims.md)
+
 
 >[!ENDTABS]
+
+
 
 <!--
 The permissions apply to operator profiles or operator groups.
@@ -59,8 +70,8 @@ There are two types of permissions you can grant to a user:
 
 >[!NOTE]
 >
-> * Before starting defining permissions, Adobe recommends you to read the [Security configuration checklist](https://helpx.adobe.com/it/campaign/kb/acc-security.html).
-> * To learn more about permissions, please refer to the detailed explanation on the [Campaign v8 documentation](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/admin/permissions/gs-permissions){target=_blank}.
+> * Before starting defining permissions, Adobe recommends you to read the [Security configuration checklist](https://helpx.adobe.com/campaign/kb/acc-security.html).
+> * To learn more about permissions, please refer to the detailed explanation on the [Campaign v8 documentation](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions){target=_blank}.
 
 Learn how to grant access and set up permissions in these sections:
 

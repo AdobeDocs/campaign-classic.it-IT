@@ -6,9 +6,9 @@ title: Guida di Campaign Classic v7
 user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
+source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
 workflow-type: tm+mt
-source-wordcount: '2570'
+source-wordcount: '2574'
 ht-degree: 96%
 
 ---
@@ -92,10 +92,11 @@ ht-degree: 96%
    + [Definire le condizioni del filtro - NASCOSTO](platform/using/defining-filter-conditions.md)
    + Autorizzazioni {#permissions}
       + [Introduzione alle autorizzazioni](platform/using/access-management.md)
-      + [Creare e gestire gli operatori](platform/using/access-management-operators.md)
-      + [Creare e gestire i gruppi](platform/using/access-management-groups.md)
+      + Autenticazione nativa (legacy) {#native}
+         + [Creare e gestire gli operatori](platform/using/access-management-operators.md)
+         + [Creare e gestire i gruppi](platform/using/access-management-groups.md)
       + [Utilizzare i diritti denominati per impostare le autorizzazioni](platform/using/access-management-named-rights.md)
-      + [Gestire l’accesso alle cartelle](platform/using/access-management-folders.md)
+      + [Gestire l’accesso alle cartelle - NASCOSTO](platform/using/access-management-folders.md)
    + Connettori CRM {#connectors}
       + [Introduzione ai connettori CRM](platform/using/crm-connectors.md)
       + [Connessione con Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
@@ -375,7 +376,7 @@ ht-degree: 96%
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Utilizzare  [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Configurare l’integrazione](integrations/using/configuring-the-integration.md)
-      + [Creare una newsletter [!DNL Experience Manager] &#x200B;](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Creare una newsletter [!DNL Experience Manager] ](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Utilizzare  [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Configurare l’integrazione con [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)

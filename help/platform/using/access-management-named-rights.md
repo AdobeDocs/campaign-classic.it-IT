@@ -2,23 +2,18 @@
 product: campaign
 title: Utilizzare i diritti denominati per impostare le autorizzazioni
 description: Scopri come utilizzare i diritti denominati per impostare le autorizzazioni
-badge: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
-source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
+source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 5%
+source-wordcount: '492'
+ht-degree: 4%
 
 ---
 
 # Utilizzare i diritti denominati per impostare le autorizzazioni{#named-rights}
-
->[!NOTE]
->
->Questa pagina si applica solo agli operatori che si connettono a Campaign con autenticazione nativa. Per l&#39;autenticazione Adobe IMS, consulta [questa documentazione](https://helpx.adobe.com/it/enterprise/using/manage-permissions-and-roles.html).
 
 Per impostazione predefinita, Adobe Campaign propone una serie di diritti denominati che ti consentono di definire le autorizzazioni assegnate agli operatori e ai gruppi di operatori. Questi diritti possono essere modificati dal nodo **[!UICONTROL Administration > Access management > Named rights]** della struttura.
 
@@ -76,4 +71,4 @@ I gruppi predefiniti e i diritti denominati consentono agli operatori di acceder
 
 La matrice dei diritti di accesso di Adobe Campaign è disponibile [qui](/help/platform/using/assets/access-rights-matrix.pdf).
 
-[![immagine](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=it)
+[![immagine](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf)
