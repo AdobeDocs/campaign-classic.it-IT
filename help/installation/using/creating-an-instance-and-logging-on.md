@@ -72,7 +72,7 @@ Per creare una nuova istanza, effettua le seguenti operazioni:
 
 1. Nell&#39;elenco a discesa **[!UICONTROL Language]**, selezionare la **lingua dell&#39;istanza**: inglese (Stati Uniti), inglese (Regno Unito), francese o giapponese.
 
-   Le differenze tra l&#39;inglese americano e l&#39;inglese britannico sono descritte nella [documentazione di Campaign v8 (console)](.https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#formats).
+   Le differenze tra l&#39;inglese americano e l&#39;inglese britannico sono descritte nella [documentazione di Campaign v8 (console)](.https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui#formats).
 
    >[!CAUTION]
    >

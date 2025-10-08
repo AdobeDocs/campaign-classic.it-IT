@@ -22,7 +22,7 @@ Quando ci si sposta nella struttura Adobe Campaign (dal menu **[!UICONTROL Explo
 
 >[!NOTE]
 >
->Per ulteriori informazioni sui filtri e su come utilizzarli, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}.
+>Per ulteriori informazioni sui filtri e su come utilizzarli, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}.
 
 
 <!--
