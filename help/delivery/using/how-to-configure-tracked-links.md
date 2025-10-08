@@ -6,9 +6,9 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Monitoring
 role: User, Developer
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '594'
 ht-degree: 10%
 
 ---
@@ -72,4 +72,4 @@ Il tracciamento dei messaggi è abilitato per impostazione predefinita. Per pers
    * **[!UICONTROL Opt-out]** : considera questo URL come URL di rinuncia o di annullamento dell&#39;abbonamento.
    * **[!UICONTROL Mirror page]** : considera questo URL come un URL della pagina mirror.
 
-1. È inoltre possibile selezionare una categoria per ogni URL tracciato nell&#39;elenco a discesa della colonna **[!UICONTROL Category]**. Queste categorie possono essere visualizzate come report, ad esempio in **[!UICONTROL URLs and click streams]** (vedi [questa sezione](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). Le categorie sono definite in un&#39;enumerazione specifica: **[!UICONTROL urlCategory]** (vedere [Gestione delle enumerazioni](../../platform/using/managing-enumerations.md)).
+1. È inoltre possibile selezionare una categoria per ogni URL tracciato nell&#39;elenco a discesa della colonna **[!UICONTROL Category]**. Queste categorie possono essere visualizzate come report, ad esempio in **[!UICONTROL URLs and click streams]** (vedi [questa sezione](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). Le categorie sono definite in un’enumerazione specifica. Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.

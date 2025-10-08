@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2968d8db-2b4b-48e6-a22e-daba5ffe0576
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '484'
 ht-degree: 5%
 
 ---
@@ -51,7 +51,7 @@ In questo caso, questi parametri vengono impostati configurando il server SMTP n
 
 ## Processi secondari MTA {#mta-child-processes}
 
-È possibile controllare il numero di processi secondari (maxSpareServers per impostazione predefinita 2) per ottimizzare le prestazioni di trasmissione in base alla potenza della CPU dei server e alle risorse di rete disponibili. Questa configurazione deve essere effettuata nella sezione **`<master>`** della configurazione MTA in ogni singolo computer.
+È possibile controllare il numero di processi secondari (maxSpareServers per impostazione predefinita 2) per ottimizzare le prestazioni di trasmissione in base alla potenza CPU dei server e alle risorse di rete disponibili. Questa configurazione deve essere effettuata nella sezione **`<master>`** della configurazione MTA in ogni singolo computer.
 
 ```
 <master dataBasePoolPeriodSec="30" dataBaseRetryDelaySec="60" maxSpareServers="2" minSpareServers="0" startSpareServers="0">
@@ -63,7 +63,7 @@ Consulta anche [Ottimizzazione invio e-mail](../../installation/using/email-deli
 
 >[!IMPORTANT]
 >
->La configurazione dell’affinità deve essere coerente da un server all’altro. È consigliabile contattare l’Adobe per la configurazione dell’affinità, in quanto le modifiche alla configurazione devono essere replicate in tutti i server applicazioni che eseguono l’MTA.
+>La configurazione dell’affinità deve essere coerente da un server all’altro. È consigliabile contattare Adobe per la configurazione dell’affinità, in quanto le modifiche alla configurazione devono essere replicate in tutti i server applicazioni che eseguono l’MTA.
 
 Puoi migliorare il traffico SMTP in uscita attraverso le affinità con gli indirizzi IP.
 
@@ -88,7 +88,8 @@ A questo scopo, esegui i seguenti passaggi:
 
    >[!NOTE]
    >
-   >Le enumerazioni sono dettagliate in [questo documento](../../platform/using/managing-enumerations.md).
+   >Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+
 
    Puoi quindi selezionare l’affinità da utilizzare, come mostrato di seguito per le tipologie:
 

@@ -5,9 +5,9 @@ description: Rapporti sulle consegne
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
-source-wordcount: '1461'
+source-wordcount: '1467'
 ht-degree: 10%
 
 ---
@@ -67,7 +67,7 @@ Questo rapporto combina gli indicatori chiave per monitorare il comportamento de
 * **[!UICONTROL Distinct opens for the population reached]**: stima del numero di destinatari di destinazione che hanno aperto un messaggio almeno una volta. I clic sugli URL tracciati vengono presi in considerazione, in quanto è necessario aprire le e-mail per fare clic su un collegamento.
 * **[!UICONTROL Sum of opens for the population reached]**: stima del numero totale di aperture da parte dei destinatari di destinazione.
 * **[!UICONTROL Clicks on opt-out link]** : numero di clic sul collegamento di annullamento dell&#39;abbonamento.
-* **[!UICONTROL Clicks on the mirror page link]** : numero di clic sul collegamento alla pagina mirror. Per essere preso in considerazione, il collegamento deve essere definito come tale nell’assistente alla consegna (URL tracciati). Fai riferimento a questa [pagina](../../delivery/using/about-delivery-monitoring.md).
+* **[!UICONTROL Clicks on the mirror page link]** : numero di clic sul collegamento alla pagina mirror. Per essere preso in considerazione, il collegamento deve essere definito come tale nell’assistente alla consegna (URL tracciati). Consulta [questa pagina](../../delivery/using/about-delivery-monitoring.md).
 * **[!UICONTROL Estimation of forwards]**: stima del numero di e-mail inoltrate dai destinatari interessati. Questo valore viene calcolato sottraendo il numero di persone distinte e il numero di destinatari distinti che hanno fatto clic nell’e-mail.
 
   >[!NOTE]
@@ -86,7 +86,7 @@ Questa tabella di valori mostra il raggruppamento di consegne, aperture, clic e 
 
 >[!NOTE]
 >
->I nomi di dominio visualizzati in questo report sono definiti nell&#39;elenco dettagliato utilizzato a livello di cubo. Per modificare, aggiungere o rimuovere i domini predefiniti, modificare l&#39;elenco dettagliato **[!UICONTROL Domains]** e modificare i valori e gli alias. Per ulteriori informazioni, consulta [questa sezione](../../platform/using/managing-enumerations.md). La categoria **[!UICONTROL Others]** include nomi di dominio che non appartengono ad alcun valore dell&#39;elenco dettagliato.
+>I nomi di dominio visualizzati in questo report sono definiti nell&#39;elenco dettagliato utilizzato a livello di cubo. Per modificare, aggiungere o rimuovere i domini predefiniti, modificare l&#39;elenco dettagliato **[!UICONTROL Domains]** e modificare i valori e gli alias. Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}. La categoria **[!UICONTROL Others]** include nomi di dominio che non appartengono ad alcun valore dell&#39;elenco dettagliato.
 
 **[!UICONTROL 4. Generated click streams]**
 
@@ -123,7 +123,7 @@ Questo rapporto mostra l’elenco delle pagine visitate dopo una consegna.
 
 ![](assets/s_ncs_user_url_report.png)
 
-Puoi configurare il contenuto di questo rapporto selezionando: il grafico a punteggio da visualizzare, il filtro temporale (dal lancio dell’azione, nelle prime 6 ore successive al lancio, ecc.) e la modalità di visualizzazione dei dati (per etichetta, URL, categoria). Fai clic su **[!UICONTROL Refresh]** per confermare la selezione.
+Puoi configurare il contenuto di questo rapporto selezionando: il grafico di punteggio da visualizzare, il filtro temporale (dal lancio dell’azione, nelle prime 6 ore successive al lancio, ecc.) e la modalità di visualizzazione dei dati (per etichetta, per URL, per categoria. Fai clic su **[!UICONTROL Refresh]** per confermare la selezione.
 
 Nella sezione superiore del rapporto vengono visualizzate le seguenti percentuali:
 
