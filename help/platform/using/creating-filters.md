@@ -2,11 +2,13 @@
 product: campaign
 title: Creazione di filtri
 description: Creazione di filtri
+hide: true
+hidefromtoc: true
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
-source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 3%
+source-wordcount: '122'
+ht-degree: 4%
 
 ---
 
@@ -16,13 +18,7 @@ Il filtro dei dati è il processo di selezione di una parte più piccola del set
 
 Quando ci si sposta nella struttura Adobe Campaign (dal menu **[!UICONTROL Explorer]** nella home page), i dati contenuti nel database vengono visualizzati in elenchi. Questi elenchi possono essere configurati per visualizzare solo i dati richiesti dall’operatore. È quindi possibile avviare azioni sui dati filtrati. La configurazione del filtro consente di selezionare dati da un elenco **[!UICONTROL dynamically]**. Se i dati vengono modificati, i dati filtrati vengono aggiornati.
 
->[!NOTE]
->
->Le impostazioni di configurazione dell’interfaccia utente sono definite localmente a livello di dispositivo. A volte può essere necessario pulire questi dati, in particolare se si verificano problemi durante l’aggiornamento dei dati. A tale scopo, utilizzare il menu **[!UICONTROL File > Clear the local cache]**.
-
->[!NOTE]
->
->Per ulteriori informazioni sui filtri e su come utilizzarli, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}.
+Ulteriori informazioni sui **filtri e su come utilizzarli** nella [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}.
 
 
 <!--

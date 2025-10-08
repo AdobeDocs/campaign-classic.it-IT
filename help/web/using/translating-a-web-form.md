@@ -5,10 +5,10 @@ description: Pubblicare un modulo web
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Web Forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '1544'
-ht-degree: 1%
+source-wordcount: '1549'
+ht-degree: 0%
 
 ---
 
@@ -52,7 +52,7 @@ La scheda **[!UICONTROL Translations]** consente di immettere le traduzioni per 
 
 La prima volta che apri questa scheda non conterrà alcun dato. Fare clic sul collegamento **[!UICONTROL Collect the strings to translate]** per aggiornare le stringhe nell&#39;applicazione Web.
 
-Adobe Campaign raccoglie etichette di campi e stringhe definiti nelle schede **[!UICONTROL Texts]** di tutti gli elementi statici: blocchi di HTML, JavaScript, ecc. Gli elementi statici sono descritti in dettaglio in [Elementi statici in un modulo Web](static-elements-in-a-web-form.md).
+Adobe Campaign raccoglie etichette di campi e stringhe definiti nelle schede **[!UICONTROL Texts]** di tutti gli elementi statici: blocchi HTML, JavaScript, ecc. Gli elementi statici sono descritti in dettaglio in [Elementi statici in un modulo Web](static-elements-in-a-web-form.md).
 
 ![](assets/s_ncs_admin_survey_trad_tab.png)
 
@@ -70,7 +70,7 @@ Per le stringhe di caratteri che non sono mai state tradotte, il campo **[!UICON
 
 ### Filtrare le stringhe {#filtering-strings}
 
-Per impostazione predefinita, viene visualizzata ogni lingua di traduzione dell’applicazione web. Sono disponibili due filtri predefiniti: lingua e stato. Fare clic sul pulsante **[!UICONTROL Filters]**, quindi su **[!UICONTROL By language or status]** per visualizzare le caselle di riepilogo corrispondenti. Puoi anche creare un filtro avanzato. Per ulteriori informazioni, consulta [questa pagina](../../platform/using/creating-filters.md#creating-an-advanced-filter).
+Per impostazione predefinita, viene visualizzata ogni lingua di traduzione dell’applicazione web. Sono disponibili due filtri predefiniti: lingua e stato. Fare clic sul pulsante **[!UICONTROL Filters]**, quindi su **[!UICONTROL By language or status]** per visualizzare le caselle di riepilogo corrispondenti. Puoi anche creare un filtro avanzato. Per ulteriori informazioni sui filtri, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 ![](assets/s_ncs_admin_survey_trad_tab_en.png)
 

@@ -6,9 +6,9 @@ feature: Workflows
 hide: true
 hidefromtoc: true
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '2018'
+source-wordcount: '2019'
 ht-degree: 2%
 
 ---
@@ -281,7 +281,4 @@ Oltre a queste visualizzazioni, puoi impostare cartelle di filtri che ti consent
 
 ![](assets/workflow-monitoring-filter.png)
 
-Per ulteriori informazioni, consulta le sezioni seguenti:
-
-* [Creazione di filtri avanzati](../../platform/using/creating-filters.md#creating-an-advanced-filter)
-* [Salvataggio dei filtri](../../platform/using/creating-filters.md#saving-a-filter)
+Per ulteriori informazioni sui filtri, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.

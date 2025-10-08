@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 8e308a9f-14a4-4a25-9fd0-8d4bdbcf74ce
-source-git-commit: ec774cc10a69a694b3c2bf5a6f662afd12a1435a
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 98%
+source-wordcount: '569'
+ht-degree: 94%
 
 ---
 
@@ -35,7 +35,7 @@ Affinché ciò funzioni, devi estendere la tabella dei profili e aggiungere un c
 
 ## Prerequisito {#ccpa-prerequisite}
 
-Per sfruttare queste informazioni, è necessario creare tale campo in Adobe Campaign Standard. A questo scopo, aggiungi un campo booleano alla tabella **[!UICONTROL Recipient]**. Quando viene creato un nuovo campo, questo viene automaticamente supportato dall’API di Campaign.
+Per sfruttare queste informazioni, è necessario creare tale campo in Adobe Campaign Classic. A questo scopo, aggiungi un campo booleano alla tabella **[!UICONTROL Recipient]**. Quando viene creato un nuovo campo, questo viene automaticamente supportato dall’API di Campaign.
 
 Devi eseguire questa operazione anche se utilizzi una tabella dei destinatari personalizzata.
 
@@ -73,7 +73,7 @@ Compilare il valore del campo e seguire le linee guida e le regole del CCPA rela
 
 Sono disponibili diversi metodi per compilare i valori:
 
-* Mediante l’interfaccia di Campaign, modificando i dettagli del destinatario
+* Utilizzare l’interfaccia di Campaign modificando i dettagli del destinatario
 * Mediante l’API
 * Mediante un flusso di lavoro di importazione dati
 
@@ -87,6 +87,7 @@ Accertati di non vendere mai a terzi le informazioni personali dei profili che h
 
    ![](assets/privacy-ccpa-6.png)
 
-1. Fai clic sulla colonna per ordinare i destinatari in base alle informazioni di rinuncia. Puoi anche creare un filtro per visualizzare solo i destinatari che hanno rinunciato. Per ulteriori informazioni sulla creazione di filtri, consulta [questa sezione](../../platform/using/creating-filters.md).
+1. Fai clic sulla colonna per ordinare i destinatari in base alle informazioni di rinuncia. Puoi anche creare un filtro per visualizzare solo i destinatari che hanno rinunciato. Per ulteriori informazioni sui filtri, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+
 
    ![](assets/privacy-ccpa-7.png)
