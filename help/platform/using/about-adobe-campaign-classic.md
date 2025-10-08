@@ -110,6 +110,6 @@ The following capabilities are available. Depending on your license agreement, s
 
 Questo video illustra le funzioni e le funzionalità principali di Campaign Classic.
 
->[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/39521?quality=12&captions=ita)
 
 Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
