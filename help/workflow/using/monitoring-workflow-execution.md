@@ -6,9 +6,9 @@ feature: Workflows
 hide: true
 hidefromtoc: true
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
-source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
+source-git-commit: 221e2ccdaadf793212fcacdf5e13823f1505f4dc
 workflow-type: tm+mt
-source-wordcount: '2019'
+source-wordcount: '2020'
 ht-degree: 2%
 
 ---
@@ -271,7 +271,7 @@ Per eseguire questa operazione:
 
 1. Fare clic con il pulsante destro del mouse sulla cartella in cui si desidera aggiungere la visualizzazione.
 1. In **[!UICONTROL Add new folder]** / **[!UICONTROL Administration]**, selezionare la visualizzazione che si desidera aggiungere.
-1. Una volta aggiunta la cartella alla struttura, configurarla come visualizzazione in modo che vengano visualizzati tutti i flussi di lavoro, indipendentemente dalla cartella di origine.Per ulteriori informazioni su come configurare le visualizzazioni, vedere [questa sezione](../../platform/using/access-management-folders.md).
+1. Una volta aggiunta la cartella alla struttura, accertati di configurarla come vista, in modo che vengano visualizzati tutti i flussi di lavoro, indipendentemente dalla cartella di origine. Per ulteriori informazioni su come configurare le visualizzazioni, consulta [questa sezione](../../platform/using/about-adobe-campaign-classic.md).
 
 Oltre a queste visualizzazioni, puoi impostare cartelle di filtri che ti consentano di filtrare l’elenco dei flussi di lavoro in base al loro stato di esecuzione. Per eseguire questa operazione:
 

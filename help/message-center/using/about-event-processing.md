@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 221e2ccdaadf793212fcacdf5e13823f1505f4dc
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '697'
 ht-degree: 2%
 
 ---
@@ -47,7 +47,7 @@ Una volta eseguiti tutti i passaggi precedenti tramite l’istanza di esecuzione
 
 Gli eventi generati dal sistema di informazione possono essere raccolti utilizzando due modalità:
 
-* Le chiamate ai metodi SOAP consentono di inviare eventi in push in Adobe Campaign: il metodo PushEvent consente di inviare un evento alla volta, il metodo PushEvents consente di inviare diversi eventi alla volta. Per ulteriori informazioni, consulta [Descrizione evento](../../message-center/using/event-description.md).
+* Le chiamate ai metodi SOAP consentono di inviare eventi push in Adobe Campaign: il metodo PushEvent consente di inviare un evento alla volta, il metodo PushEvents consente di inviare diversi eventi alla volta. Per ulteriori informazioni, consulta [Descrizione evento](../../message-center/using/event-description.md).
 
 * La creazione di un flusso di lavoro consente di ripristinare gli eventi importando file o tramite un gateway SQL (con l&#39;opzione [Federated Data Access](../../installation/using/about-fda.md)).
 
@@ -57,7 +57,7 @@ Una volta raccolti, gli eventi vengono suddivisi per flussi di lavoro tecnici tr
 
 >[!NOTE]
 >
->Nelle istanze di esecuzione, le cartelle **[!UICONTROL Real time events]** o **[!UICONTROL Batch events]** non devono essere impostate come viste, in quanto ciò potrebbe causare problemi di diritti di accesso. Per ulteriori informazioni sull&#39;impostazione di una cartella come visualizzazione, consulta [questa sezione](../../platform/using/access-management-folders.md).
+>Nelle istanze di esecuzione, le cartelle **[!UICONTROL Real time events]** o **[!UICONTROL Batch events]** non devono essere impostate come viste, in quanto ciò potrebbe causare problemi di diritti di accesso. Per ulteriori informazioni sull&#39;impostazione di una cartella come visualizzazione, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
 ## Instradamento verso un modello {#routing-towards-a-template}
 
@@ -101,4 +101,4 @@ A questo scopo, devi configurare un flusso di lavoro che ricrea tutti gli eventi
 
 >[!CAUTION]
 >
->Questo passaggio può essere eseguito solo utilizzando un flusso di lavoro ed è quindi riservato agli utenti esperti. Per ulteriori informazioni, contatta il responsabile del tuo account Adobe.
+>Questo passaggio può essere eseguito solo utilizzando un flusso di lavoro ed è quindi riservato agli utenti esperti. Per ulteriori informazioni, contatta il tuo account executive di Adobe.

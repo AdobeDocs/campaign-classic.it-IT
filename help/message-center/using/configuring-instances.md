@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 221e2ccdaadf793212fcacdf5e13823f1505f4dc
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1237'
 ht-degree: 1%
 
 ---
@@ -88,7 +88,7 @@ Per creare un account esterno di tipo **[!UICONTROL Execution instance]**, appli
 
    >[!NOTE]
    >
-   >Tieni presente che quando utilizzi FDA su HTTP, sono supportate solo le istanze di esecuzione che utilizzano un database PostgreSQL. MSSQL o database Oracle non supportati.
+   >Tieni presente che quando utilizzi FDA su HTTP, sono supportate solo le istanze di esecuzione che utilizzano un database PostgreSQL. Database MSSQL o Oracle non supportati.
 
    Il secondo metodo (FDA) è consigliato se l’istanza di controllo ha accesso diretto al database delle istanze di esecuzione. In caso contrario, scegliere l&#39;accesso al servizio Web. L’account FDA da specificare coincide con la connessione ai database delle varie istanze di esecuzione create nell’istanza di controllo.
 
@@ -106,7 +106,7 @@ Quando utilizzi più istanze di esecuzione, ripeti questi passaggi per creare ta
 
 Ogni istanza di esecuzione deve essere associata a un identificatore univoco per differenziare la cronologia di ogni istanza di esecuzione durante la visualizzazione nell’istanza di controllo.
 
-Questo identificatore può essere attribuito manualmente a ogni istanza di esecuzione **&#x200B;**. In questo caso, il passaggio deve essere eseguito **su ogni istanza di esecuzione**. A questo scopo, utilizza la procedura guidata di distribuzione come descritto di seguito:
+Questo identificatore può essere attribuito manualmente a ogni istanza di esecuzione ****. In questo caso, il passaggio deve essere eseguito **su ogni istanza di esecuzione**. A questo scopo, utilizza la procedura guidata di distribuzione come descritto di seguito:
 
 1. Aprire la procedura guidata di distribuzione in un&#39;istanza di esecuzione.
 1. Passare alla finestra **[!UICONTROL Message Center]**.
@@ -185,7 +185,7 @@ Nella struttura di tutte le istanze di esecuzione, creare una cartella per opera
 
 Per utilizzare più istanze di controllo, questa configurazione deve essere eseguita su TUTTE le istanze di esecuzione.
 
-1. Creare una cartella per operatore nel nodo **[!UICONTROL Administration > Production > Message Center]**: **Cartella 1** e **Cartella 2**. Per ulteriori informazioni sulla creazione di cartelle e visualizzazioni, consulta [questa pagina](../../platform/using/access-management-folders.md).
+1. Creare una cartella per operatore nel nodo **[!UICONTROL Administration > Production > Message Center]**: **Cartella 1** e **Cartella 2**. Ulteriori informazioni sulle cartelle e sulle visualizzazioni sono disponibili nella [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
    ![](assets/messagecenter_multi_control_3.png)
 
