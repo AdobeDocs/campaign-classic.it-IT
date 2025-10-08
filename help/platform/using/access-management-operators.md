@@ -7,7 +7,7 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
+source-git-commit: a5bbd2e6c102a8afa4cd5931b77b0c83705a7bfa
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 2%
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->Queste procedure si applicano solo agli operatori che si connettono a Campaign con l’autenticazione nativa legacy. A partire da Campaign Classic v7.3.1, tutti gli operatori devono utilizzare [Adobe Identity Management System (IMS)](https://helpx.adobe.com/it/enterprise/using/identity.html){target="_blank"} per connettersi a Campaign. [Ulteriori informazioni](../../technotes/using/migrate-users-to-ims.md)
+>Queste procedure si applicano solo agli operatori che si connettono a Campaign con l&#39;**autenticazione nativa legacy**. A partire da Campaign Classic v7.3.1, tutti gli operatori devono utilizzare [Adobe Identity Management System (IMS)](https://helpx.adobe.com/it/enterprise/using/identity.html){target="_blank"} per connettersi a Campaign. [Ulteriori informazioni](../../technotes/using/migrate-users-to-ims.md)
 >
 >Quando ci si connette a Campaign con il tuo Adobe ID, la seguente sezione non è più applicabile. Scopri come impostare le autorizzazioni con Adobe IMS nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=it){target="_blank"}.
 
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Queste procedure si applicano solo agli operatori che si connettono a Campaign con autenticazione nativa. Per l&#39;autenticazione Adobe IMS, consulta [questa documentazione](https://helpx.adobe.com/it/enterprise/using/manage-users-individually.html#_blank).
+>Queste procedure si applicano solo agli operatori che si connettono a Campaign con autenticazione nativa. Per l&#39;autenticazione Adobe IMS, consulta [questa documentazione](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#_blank).
 
 Un operatore è un utente di Adobe Campaign che dispone delle autorizzazioni per accedere ed eseguire azioni.
 
