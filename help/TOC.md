@@ -6,9 +6,9 @@ title: Guida di Campaign Classic v7
 user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
+source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2567'
 ht-degree: 97%
 
 ---
@@ -87,10 +87,9 @@ ht-degree: 97%
       + [Opzioni di filtro](platform/using/filtering-options.md)
       + [Creare i filtri](platform/using/creating-filters.md)
       + [Caso d’uso](platform/using/use-case.md)
-   + Creare query {#creating-queries}
-      + [Informazioni sulle query in Campaign](platform/using/about-queries-in-campaign.md)
-      + [Passaggi per creare una query](platform/using/steps-to-create-a-query.md)
-      + [Definire le condizioni del filtro](platform/using/defining-filter-conditions.md)
+   + [Creare query in Campaign](platform/using/about-queries-in-campaign.md)
+   + [Passaggi per creare una query - NASCOSTO](platform/using/steps-to-create-a-query.md)
+   + [Definire le condizioni del filtro - NASCOSTO](platform/using/defining-filter-conditions.md)
    + Autorizzazioni {#permissions}
       + [Introduzione alle autorizzazioni](platform/using/access-management.md)
       + [Creare e gestire gli operatori](platform/using/access-management-operators.md)
@@ -102,7 +101,7 @@ ht-degree: 97%
       + [Connessione con Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
       + [Connessione con Salesforce.com](platform/using/crm-sfdc.md)
       + [Sincronizzare i dati con il sistema CRM](platform/using/crm-data-sync.md)
-   + [Guida e opzioni di supporto](support.md)
+   + [Opzioni di assistenza e supporto - NASCOSTO](support.md)
 + Creare e inviare messaggi {#sending-messages}
    + [Introduzione ai messaggi](delivery/using/communication-channels.md)
    + [Impostazioni consegna](delivery/using/delivery-settings.md)
@@ -376,7 +375,7 @@ ht-degree: 97%
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Utilizzare  [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Configurare l’integrazione](integrations/using/configuring-the-integration.md)
-      + [Creare una newsletter [!DNL Experience Manager] &#x200B;](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Creare una newsletter [!DNL Experience Manager] ](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Utilizzare  [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Configurare l’integrazione con [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)

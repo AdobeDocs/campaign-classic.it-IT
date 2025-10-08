@@ -4,11 +4,12 @@ title: Guida e opzioni di supporto per Campaign Classic
 description: Hai bisogno di supporto per Campaign Classic? Sei nel posto giusto!
 feature: Troubleshooting
 hidefromtoc: true
+hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 63%
+source-wordcount: '653'
+ht-degree: 68%
 
 ---
 
@@ -41,7 +42,7 @@ Come effettuare l’aggiornamento a una nuova build? Come monitorare l’esecuzi
         <ul>
         <li><a href="platform/using/faq-key-concepts.md">Concetti chiave</a></li>
         <li><a href="platform/using/faq-campaign-config.md">Impostazioni della campagna</a></li>
-        <li><a href="platform/using/faq-reporting.md">Reportistica</a></li>
+        <li><a href="platform/using/faq-reporting.md">Reporting</a></li>
         <li><a href="platform/using/faq-build-upgrade.md">Aggiornamento della build</a></li>
         <li><a href="platform/using/faq-messages.md">Verifica, invio e tracciamento dei messaggi</a></li>
         <li><a href="platform/using/faq-workflows.md">Flussi di lavoro</a></li>
@@ -93,7 +94,7 @@ Come effettuare l’aggiornamento a una nuova build? Come monitorare l’esecuzi
 
 ### Che cos’è il Pannello di controllo?
 
-Campaign Pannello di controllo Campaign ti aiuta a migliorare l’efficienza del tuo lavoro di amministratore di prodotto di Campaign Classic, consentendoti di gestire le impostazioni e tenere traccia dell’utilizzo di ciascuna istanza.
+Campaign Pannelli di controllo Campaign ti aiuta a migliorare l’efficienza del tuo lavoro di amministratore di prodotto di Campaign Classic, consentendoti di gestire le impostazioni e tenere traccia dell’utilizzo di ciascuna istanza.
 Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=it).
 
 >[!NOTE]
@@ -112,7 +113,7 @@ Il Pannello di controllo è disponibile direttamente da Adobe Experience Cloud. 
 
 ### Gestione SFTP
 
-Nel Pannello di controllo, puoi interagire con tutti i server SFTP collegati alle istanze di Campaign a cui hai accesso. Puoi monitorarne la capacità di archiviazione, gestire gli indirizzi IP sul inserisco nell&#39;elenco Consentiti di storage e le chiavi SSH pubbliche. Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=it).
+Nel Pannello di controllo, puoi interagire con tutti i server SFTP collegati alle istanze di Campaign a cui hai accesso. Puoi monitorarne la capacità di archiviazione, gestire gli indirizzi IP sul inserisco nell&#39;elenco Consentiti di storage e le chiavi SSH pubbliche. Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
 
 ### Sottodomini e certificati
 
@@ -123,7 +124,7 @@ Puoi monitorare i sottodomini e i relativi certificati. Per ulteriori informazio
 
 ### Impostazioni delle istanze
 
-Scopri come gestire le impostazioni delle istanze Campaign Classic nel Pannello di controllo Campaign. Per ulteriori informazioni, consulta queste pagine:
+Scopri come gestire le impostazioni delle istanze di Campaign Classic nel Pannello di controllo Campaign. Per ulteriori informazioni, consulta queste pagine:
 * [Aggiungi gli IP nel inserisco nell&#39;elenco Consentiti di accesso di](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=it) alle istanze Campaign
 * [Gestione autorizzazioni URL](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=it)
 * [Accedi ai dettagli dell&#39;istanza](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=it)
@@ -133,7 +134,7 @@ Scopri come gestire le impostazioni delle istanze Campaign Classic nel Pannello 
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-Il nuovo sistema di ticket è stato avviato tramite [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Il nuovo sistema richiede nuovi account individuali per ogni utente, con le autorizzazioni corrette. Se non riesci ad accedere con il tuo Adobe ID, richiedi l’accesso tramite Experience League e il team di assistenza clienti completerà le tue impostazioni il prima possibile. [Ulteriori informazioni](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html)
+Il nuovo sistema di ticket è stato avviato tramite [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Il nuovo sistema richiede nuovi account individuali per ogni utente, con le autorizzazioni corrette. Se non riesci ad accedere con il tuo Adobe ID, richiedi l’accesso tramite Experience League e il team di Assistenza clienti completerà la configurazione il prima possibile. [Ulteriori informazioni](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html)
 
 ### Chiedi agli esperti
 
@@ -141,10 +142,10 @@ Iscriviti alla community Campaign Classic: consulta le risposte già fornite all
 
 ### Accedi al Centro di download di Campaign
 
-In qualità di amministratore di Campaign, passa a [questa pagina](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) per accedere alla Distribuzione di software Experience Cloud.
+In qualità di amministratore di Campaign, passa a [questa pagina](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) per accedere alla pagina dedicata alla distribuzione di software di Experience Cloud.
 
 ### Crea un ticket o avvia una chat
 
 La creazione di un caso consente di contattare il team Assistenza clienti di Adobe per eventuali problemi riscontrati con i prodotti Adobe. Per aiutarti a risolvere un problema, Adobe Admin Console consente di chattare con l’Assistenza clienti di Adobe.
 
-Per segnalare un problema o avviare una sessione di chat nel nuovo sistema, connettersi a [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Segui la procedura dettagliata descritta in [questa pagina](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html){_blank}.
+Per segnalare un problema o avviare una sessione di chat nel nuovo sistema, connettiti ad [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Segui la procedura dettagliata descritta in [questa pagina](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html){_blank}.
