@@ -4,9 +4,9 @@ title: Best practice per i modelli di dati
 description: Scopri come utilizzare il modello dati di Campaign Classic
 feature: Data Model
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '4013'
+source-wordcount: '4005'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ Per garantire una buona architettura e prestazioni del sistema, segui le best pr
 * L&#39;attributo **expr** consente di definire un attributo di schema come campo calcolato anziché come valore fisico impostato in una tabella. Questo può consentire di accedere alle informazioni in un formato diverso (ad esempio per età e data di nascita) senza la necessità di memorizzare entrambi i valori. Questo è un buon modo per evitare la duplicazione dei campi. Ad esempio, la tabella Destinatario utilizza un’espressione per il dominio, che è già presente nel campo e-mail.
 * Tuttavia, quando il calcolo dell&#39;espressione è complesso, si sconsiglia di utilizzare l&#39;attributo **expr** in quanto il calcolo immediato potrebbe influire sulle prestazioni delle query.
 * Il tipo **XML** è adatto per evitare la creazione di troppi campi. ma occupa anche spazio su disco in quanto utilizza una colonna CLOB nel database. Può inoltre causare query SQL complesse e influire sulle prestazioni.
-* La lunghezza di un campo **stringa** deve sempre essere definita con la colonna. Per impostazione predefinita, la lunghezza massima in Adobe Campaign è 255, ma l’Adobe consiglia di mantenere il campo più corto se sai già che la dimensione non supererà una lunghezza più breve.
+* La lunghezza di un campo **stringa** deve sempre essere definita con la colonna. Per impostazione predefinita, la lunghezza massima in Adobe Campaign è 255, ma Adobe consiglia di mantenere il campo più breve se si è già certi che la dimensione non supererà una lunghezza più breve.
 * È accettabile avere un campo più breve in Adobe Campaign rispetto a quello presente nel sistema di origine se si è certi che la dimensione nel sistema di origine è stata sovrastimata e non sarebbe raggiunta. Questo potrebbe significare una stringa più breve o un numero intero più piccolo in Adobe Campaign.
 
 ### Scelta dei campi {#choice-of-fields}
@@ -84,7 +84,7 @@ Oltre a **autopk** definito per impostazione predefinita nella maggior parte del
 
 Chiavi efficienti sono essenziali per le prestazioni. I tipi di dati numerici devono sempre essere preferiti come chiavi per le tabelle.
 
-Per il database SQLServer, è consigliabile utilizzare &quot;indice cluster&quot; se sono necessarie le prestazioni. Poiché Adobe non gestisce questo elemento, è necessario crearlo in SQL.
+Per il database SQLServer, è consigliabile utilizzare &quot;indice cluster&quot; se sono necessarie le prestazioni. Poiché Adobe non lo gestisce, è necessario crearlo in SQL.
 
 ### Tablespace dedicate {#dedicated-tablespaces}
 
@@ -146,13 +146,13 @@ Quando si crea una tabella personalizzata in Adobe Campaign con una chiave prima
 
 Per impostazione predefinita, una sequenza personalizzata avrà valori compresi tra +1.000 e +2,1BB. Tecnicamente, è possibile ottenere una gamma completa di 4BB abilitando gli ID negativi. Questo deve essere utilizzato con cautela e un ID andrà perso quando si passa da numeri negativi a numeri positivi: il record 0 viene in genere ignorato da Adobe Campaign nelle query SQL generate.
 
-Per ulteriori informazioni sull&#39;esaurimento delle sequenze, guarda [questo video](https://helpx.adobe.com/it/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
+Per ulteriori informazioni sull&#39;esaurimento delle sequenze, guarda [questo video](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
 
 ## Indici {#indexes}
 
 Gli indici sono essenziali per le prestazioni. Quando dichiari una chiave nello schema, Adobe creerà automaticamente un indice sui campi della chiave. È inoltre possibile dichiarare più indici per le query che non utilizzano la chiave.
 
-L’Adobe consiglia di definire indici aggiuntivi in quanto possono migliorare le prestazioni.
+Adobe consiglia di definire indici aggiuntivi in quanto possono migliorare le prestazioni.
 
 Tuttavia, tieni presente quanto segue:
 
@@ -165,12 +165,13 @@ Tuttavia, tieni presente quanto segue:
 * Seleziona con attenzione gli indici da definire.
 * Non rimuovere gli indici nativi dalle tabelle predefinite.
 
-<!--When you are performing an initial import with very high volumes of data insert in Adobe Campaign database, it is recommended to run that import without custom indexes at first. It will allow to accelerate the insertion process. Once you’ve completed this important import, it is possible to enable the index(es).-->
+<!--When you are performing an initial import with very high volumes of data insert in Adobe Campaign database, it is recommended to run that import without custom indexes at first. It will allow to accelerate the insertion process. Once you've completed this important import, it is possible to enable the index(es).-->
 
 ### Esempio
 
 La gestione degli indici può diventare molto complessa, pertanto è importante comprenderne il funzionamento. Per illustrare questa complessità, prendiamo un esempio di base, ad esempio la ricerca dei destinatari filtrando il nome e il cognome. Per eseguire questa operazione:
-1. Passare alla cartella in cui sono elencati tutti i destinatari del database. Per ulteriori informazioni, consulta [Gestione dei profili](../../platform/using/managing-profiles.md).
+
+1. Selezionare la cartella in cui sono elencati tutti i destinatari del database.
 1. Fare clic con il pulsante destro del mouse sul campo **[!UICONTROL First name]**.
 1. Seleziona **[!UICONTROL Filter on this field]**.
 
@@ -210,7 +211,7 @@ Presta attenzione alla &quot;propria&quot; integrità sulle tabelle di grandi di
 
 Dichiarare un collegamento come join esterno non è un vantaggio in termini di prestazioni. Il record con ID zero emula la funzionalità di join esterno. Non è necessario dichiarare join esterni se il collegamento utilizza l&#39;autopk.
 
-Anche se è possibile unire qualsiasi tabella in un flusso di lavoro, l’Adobe consiglia di definire collegamenti comuni tra le risorse direttamente nella definizione della struttura dati.
+Anche se è possibile unire qualsiasi tabella in un flusso di lavoro, Adobe consiglia di definire collegamenti comuni tra le risorse direttamente nella definizione della struttura dati.
 
 Il collegamento deve essere definito in allineamento con i dati effettivi nelle tabelle. Una definizione errata potrebbe influire sui dati recuperati tramite collegamenti, ad esempio duplicando in modo imprevisto i record.
 

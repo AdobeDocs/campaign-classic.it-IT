@@ -6,10 +6,10 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Monitoring, Email
 role: User
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 9%
+source-wordcount: '684'
+ht-degree: 8%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 9%
 
 Grazie alle sue funzionalità di tracciamento, Adobe Campaign ti consente di tenere traccia dei messaggi inviati e di controllare il comportamento dei destinatari: apertura, clic sui collegamenti, annullamento dell’abbonamento, ecc.
 
-Queste informazioni vengono recuperate nella scheda **[!UICONTROL Tracking]** del profilo di ciascun destinatario della consegna. Questa scheda presenta tutti i collegamenti URL tracciati e cliccati dal destinatario selezionato dall’elenco. Si tratta dell’accumulo di tutti gli URL tracciati nelle consegne ancora presenti nella schermata di consegna. L’elenco può essere configurato e in genere contiene: l’URL su cui è stato fatto clic, la data e l’ora del clic e il documento in cui è stato trovato l’URL. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/editing-a-profile.md#tracking-tab).
+Queste informazioni vengono recuperate nella scheda **[!UICONTROL Tracking]** del profilo di ciascun destinatario della consegna. Questa scheda presenta tutti i collegamenti URL tracciati e cliccati dal destinatario selezionato dall’elenco. Si tratta dell’accumulo di tutti gli URL tracciati nelle consegne ancora presenti nella schermata di consegna. L’elenco può essere configurato e in genere contiene: l’URL su cui è stato fatto clic, la data e l’ora del clic e il documento in cui è stato trovato l’URL.
 
 Il **dashboard di consegna** è inoltre fondamentale per monitorare le consegne e gli eventuali problemi rilevati durante l&#39;invio dei messaggi. Per ulteriori informazioni, consulta [questa sezione](delivery-dashboard.md).
 

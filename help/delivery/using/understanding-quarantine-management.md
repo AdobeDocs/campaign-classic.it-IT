@@ -6,10 +6,10 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Monitoring, Deliverability
 role: User
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '2987'
-ht-degree: 8%
+source-wordcount: '2984'
+ht-degree: 7%
 
 ---
 
@@ -41,8 +41,7 @@ La quarantena e il elenco Bloccati di non si applicano allo stesso oggetto:
 
 * Se invece si trova nel **inserisco nell&#39;elenco Bloccati di**, il **profilo** non sarà più oggetto della consegna, ad esempio dopo l&#39;annullamento dell&#39;abbonamento (opt-out) per un determinato canale. Ad esempio, se un profilo nell’elenco Bloccati di per il canale e-mail ha due indirizzi e-mail, entrambi gli indirizzi verranno esclusi dalla consegna.
 
-  È possibile verificare se un profilo si trova nel elenco Bloccati di accesso a uno o più canali nella sezione **[!UICONTROL No longer contact]** della scheda **[!UICONTROL General]** del profilo. Consulta [questa sezione](../../platform/using/editing-a-profile.md#general-tab).
-
+  È possibile verificare se un profilo si trova nel elenco Bloccati di accesso a uno o più canali nella sezione **[!UICONTROL No longer contact]** della scheda **[!UICONTROL General]** del profilo.
 >[!NOTE]
 >
 >La quarantena include uno stato **[!UICONTROL Denylisted]** che si applica quando i destinatari segnalano il messaggio come spam o rispondono a un messaggio SMS con una parola chiave come &quot;STOP&quot;. In tal caso, l&#39;indirizzo o il numero di telefono del profilo viene messo in quarantena con lo stato **[!UICONTROL Denylisted]**. Per ulteriori informazioni sulla gestione dei messaggi STOP SMS, consulta [questa sezione](../../delivery/using/sms-send.md#processing-inbound-messages).
@@ -104,7 +103,7 @@ Adobe Campaign gestisce la quarantena in base al tipo di consegna non riuscita e
 * **Errore rigido**: l’indirizzo e-mail corrispondente viene messo immediatamente in quarantena.
 * **Errore morbido**: gli errori morbidi non mettono immediatamente un indirizzo in quarantena, ma incrementano un contatore di errori. Per ulteriori informazioni, consulta [Gestione degli errori software](#soft-error-management).
 
-Se un utente qualifica un&#39;e-mail come spam ([ciclo di feedback](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=it#feedback-loops)), il messaggio viene automaticamente reindirizzato a una cassetta postale tecnica gestita da Adobe. L’indirizzo e-mail dell’utente viene quindi messo automaticamente in quarantena con lo stato **[!UICONTROL Denylisted]**. Questo stato si riferisce solo all’indirizzo, il profilo non è nel inserisco nell&#39;elenco Bloccati di, in modo che l’utente continui a ricevere messaggi SMS e notifiche push.
+Se un utente qualifica un&#39;e-mail come spam ([ciclo di feedback](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops)), il messaggio viene automaticamente reindirizzato verso una casella di posta tecnica gestita da Adobe. L’indirizzo e-mail dell’utente viene quindi messo automaticamente in quarantena con lo stato **[!UICONTROL Denylisted]**. Questo stato si riferisce solo all’indirizzo, il profilo non è nel inserisco nell&#39;elenco Bloccati di, in modo che l’utente continui a ricevere messaggi SMS e notifiche push.
 
 >[!NOTE]
 >
@@ -160,7 +159,7 @@ Per eseguire questa operazione, crea un flusso di lavoro e aggiungi un&#39;attiv
 
 Di seguito sono riportate le linee guida consigliate per questa query:
 
-* Per gli ambienti Campaign Classic v7 con informazioni sulle regole e-mail in entrata nel campo **[!UICONTROL Error text]** dell&#39;elenco di quarantena:
+* Per gli ambienti Campaign Classic v7 con informazioni sulle regole e-mail in entrata nel campo **[!UICONTROL Error text]** dell’elenco di quarantena:
 
    * **Testo di errore (testo di quarantena)** contiene &quot;Momen_Code10_InvalidRecipient&quot;
    * **Dominio e-mail (@domain)** uguale a domain1.com OPPURE **Dominio e-mail (@domain)** uguale a domain2.com OPPURE **Dominio e-mail (@domain)** uguale a domain3.com

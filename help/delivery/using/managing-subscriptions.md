@@ -6,9 +6,9 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Subscriptions
 role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1103'
 ht-degree: 2%
 
 ---
@@ -54,7 +54,7 @@ Per modificare un servizio esistente, fare clic sul relativo nome. Per creare un
 
   >[!NOTE]
   >
-  >Gli abbonamenti facebook e X sono descritti in [questa sezione](../../social/using/about-social-marketing.md). Gli abbonamenti alle app mobili sono descritti in dettaglio in [Informazioni sul canale app mobile](about-mobile-app-channel.md).
+  >Gli abbonamenti Facebook e X sono descritti in [questa sezione](../../social/using/about-social-marketing.md). Gli abbonamenti alle app mobili sono descritti in dettaglio in [Informazioni sul canale app mobile](about-mobile-app-channel.md).
 
 * Per un servizio di tipo E-mail, seleziona la **Modalità di consegna**. Le modalità possibili sono: **[!UICONTROL Newsletter]** o **[!UICONTROL Viral]**.
 * Puoi inviare **messaggi di conferma** per un abbonamento o per l&#39;annullamento dell&#39;abbonamento. A questo scopo, seleziona i modelli di consegna da utilizzare per creare le consegne corrispondenti dai campi **[!UICONTROL Subscription]** e **[!UICONTROL Unsubscription]**. Questi modelli devono essere configurati con una mappatura di destinazione di tipo **[!UICONTROL Subscription]**, senza una destinazione definita. Vedere la sezione [Informazioni sul canale e-mail](about-email-channel.md).
@@ -122,8 +122,6 @@ Puoi impostare meccanismi di abbonamento e annullamento dell’abbonamento per a
 Per registrare i destinatari di un servizio informazioni, è possibile:
 
 * Aggiungi manualmente il servizio: a questo scopo, dalla scheda **[!UICONTROL Subscriptions]** del profilo, fai clic su **[!UICONTROL Add]** e seleziona il servizio informazioni interessato.
-
-  Per ulteriori informazioni, consulta la sezione sulla modifica del profilo in [questa sezione](../../platform/using/editing-a-profile.md).
 
 * Iscrivi automaticamente un set di destinatari a questo servizio. L’elenco dei destinatari può provenire da un’operazione di filtro, un gruppo, una cartella, un’importazione o una selezione diretta effettuata con il mouse. Per sottoscrivere questi destinatari, seleziona i profili e fai clic con il pulsante destro del mouse. Selezionare **[!UICONTROL Actions > Subscribe selection to a service...]**, selezionare il servizio interessato e avviare l&#39;operazione.
 * Importa i destinatari e abbonali automaticamente a un servizio di informazioni. A questo scopo, seleziona il servizio interessato nell’ultimo passaggio dell’assistente all’importazione.

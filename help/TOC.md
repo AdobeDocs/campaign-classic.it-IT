@@ -6,10 +6,10 @@ title: Guida di Campaign Classic v7
 user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: d78fe2e0fd85ba9c23e709a3f30a135cee411230
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '2557'
-ht-degree: 99%
+source-wordcount: '2566'
+ht-degree: 97%
 
 ---
 
@@ -60,12 +60,12 @@ ht-degree: 99%
       + [Rinuncia alla vendita di informazioni personali](platform/using/privacy-requests-ccpa.md)
    + Gestione dei profili {#profile-management}
       + [Informazioni sui profili](platform/using/about-profiles.md)
-      + [Modificare un profilo](platform/using/editing-a-profile.md)
-      + [Aggiungere profili](platform/using/adding-profiles.md)
-      + [Gestire i profili](platform/using/managing-profiles.md)
+      + [Modificare un profilo - NASCOSTO](platform/using/editing-a-profile.md)
+      + [Aggiungi profili - NASCOSTO](platform/using/adding-profiles.md)
+      + [Gestisci profili - NASCOSTO](platform/using/managing-profiles.md)
       + [Aggiornare i dati](platform/using/updating-data.md)
-      + [Importare ed esportare i profili](platform/using/exporting-and-importing-profiles.md)
-   + [Creare e gestire gli elenchi](platform/using/creating-and-managing-lists.md)
+      + [Importare ed esportare profili - NASCOSTO](platform/using/exporting-and-importing-profiles.md)
+      + [Creare e gestire gli elenchi](platform/using/creating-and-managing-lists.md)
    + Importare ed esportare dati {#importing-and-exporting-data}
       + [Introduzione all’importazione e l’esportazione dei dati](platform/using/get-started-data-import-export.md)
       + [Utilizzare i flussi di lavoro per importare ed esportare i dati](platform/using/import-export-workflows.md)
@@ -376,17 +376,17 @@ ht-degree: 99%
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Utilizzare  [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Configurare l’integrazione](integrations/using/configuring-the-integration.md)
-      + [Creare una newsletter [!DNL Experience Manager] &#x200B;](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Creare una newsletter [!DNL Experience Manager] ](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Utilizzare  [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Configurare l’integrazione con [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Inserire un’immagine dinamica](integrations/using/inserting-a-dynamic-image.md)
    + Connettore ACS {#acs-connector}
-      + [Introduzione a  [!DNL ACS Connector]](integrations/using/acs-connector-principles-and-data-cycle.md)
-      + [Sincronizzare i profili](integrations/using/synchronizing-profiles.md)
-      + [Sincronizzare i tipi di pubblico](integrations/using/synchronizing-audiences.md)
-      + [Sincronizzare le applicazioni web](integrations/using/synchronizing-web-applications.md)
-      + [Risolvere i problemi in [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
+      + [Introduzione a  [!DNL ACS Connector] - NASCOSTO](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [Sincronizza profili - NASCOSTO](integrations/using/synchronizing-profiles.md)
+      + [Sincronizzare i tipi di pubblico - NASCOSTO](integrations/using/synchronizing-audiences.md)
+      + [Sincronizza applicazioni web - NASCOSTO](integrations/using/synchronizing-web-applications.md)
+      + [Risolvere i problemi relativi a  [!DNL ACS Connector] - HIDDEN](integrations/using/troubleshooting-the-acs-connector.md)
 + [Automatizzare con i flussi di lavoro](workflow/using/about-workflow-automation.md)
 + Automatizzare con i flussi di lavoro {#automating-with-workflows}
    + Introduzione ai flussi di lavoro {#introduction}

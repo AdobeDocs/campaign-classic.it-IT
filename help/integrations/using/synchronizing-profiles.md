@@ -6,9 +6,9 @@ feature: ACS Connector
 hide: true
 hidefromtoc: true
 exl-id: 27970a6f-fb22-4418-b29c-c687fd62a78e
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1155'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Il connettore ACS replica i dati da Campaign v7 a Campaign Standard. I dati rice
 Le sezioni seguenti descrivono come il connettore ACS consente di aggiungere e modificare i destinatari in Campaign v7 e quindi utilizzarli in una consegna Campaign Standard. Il connettore ACS richiede quanto segue:
 
 * I destinatari di Campaign v7 sono stati replicati in Campaign Standard.
-* Diritti utente per eseguire flussi di lavoro sia in Campaign v7 che in Campaign Standard.
+* Diritti utente per eseguire flussi di lavoro in Campaign v7 e Campaign Standard.
 * Diritti utente per creare ed eseguire una consegna in Campaign Standard.
 
 ## Modificare il collegamento di annullamento dell’abbonamento {#changing-the-unsubscription-link}
@@ -43,11 +43,11 @@ Quando un destinatario fa clic sul collegamento di annullamento dell’abbonamen
 
 ## Crea un nuovo destinatario {#creating-a-new-recipient}
 
-1. Crea un nuovo destinatario in Campaign v7 per la replica in Campaign Standard. Inserisci quante più informazioni possibili, tra cui il cognome, il nome, l’indirizzo e-mail e l’indirizzo postale del destinatario. Tuttavia, non scegliere un **[!UICONTROL Salutation]** poiché verrà aggiunto nella sezione successiva, [Modifica un destinatario](#editing-a-recipient). Per ulteriori informazioni, vedere [Aggiungere destinatari](../../platform/using/adding-profiles.md).
+1. Crea un nuovo destinatario in Campaign v7 per la replica in Campaign Standard. Inserisci quante più informazioni possibili, tra cui il cognome, il nome, l’indirizzo e-mail e l’indirizzo postale del destinatario. Tuttavia, non scegliere un **[!UICONTROL Salutation]** poiché verrà aggiunto nella sezione successiva, [Modifica un destinatario](#editing-a-recipient).
 
    ![](assets/acs_connect_profile_sync_01.png)
 
-1. Conferma che il nuovo destinatario è stato aggiunto a Campaign Standard. Durante la revisione del profilo, accertati che i dati immessi in Campaign v7 siano disponibili anche in Campaign Standard. Per sapere dove trovare i profili in Campaign Standard, consulta [Nozioni di base sulla navigazione](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=it).
+1. Verifica che il nuovo destinatario sia stato aggiunto a Campaign Standard. Durante la revisione del profilo, accertati che i dati immessi in Campaign v7 siano disponibili anche in Campaign Standard. Per sapere dove trovare i profili in Campaign Standard, consulta [Nozioni di base sulla navigazione](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=it).
 
    ![](assets/acs_connect_profile_sync_02.png)
 
@@ -55,9 +55,9 @@ Quando un destinatario fa clic sul collegamento di annullamento dell’abbonamen
 
 ## Modificare un destinatario {#editing-a-recipient}
 
-I passaggi seguenti per modificare un singolo punto di dati offrono un semplice esempio di come Campaign v7 diventi il database principale per Campaign Standard quando si utilizza la replica dei dati. La modifica o l’eliminazione dei dati replicati in Campaign v7 ha lo stesso effetto sui dati corrispondenti in Campaign Standard.
+I passaggi seguenti per la modifica di un singolo punto di dati offrono un semplice esempio di come Campaign v7 diventi il database principale per Campaign Standard quando si utilizza la replica dei dati. La modifica o l’eliminazione dei dati replicati in Campaign v7 ha lo stesso effetto sui dati corrispondenti in Campaign Standard.
 
-1. Scegli il destinatario appena creato da [Crea un nuovo destinatario](#creating-a-new-recipient) e modifica il nome del destinatario. Scegliere ad esempio **[!UICONTROL Salutation]** per il destinatario (ad esempio Sig. o Sig.ra). Per ulteriori informazioni, vedere [Modificare un profilo](../../platform/using/editing-a-profile.md).
+1. Scegli il destinatario appena creato da [Crea un nuovo destinatario](#creating-a-new-recipient) e modifica il suo nome. Scegliere ad esempio **[!UICONTROL Salutation]** per il destinatario (ad esempio Sig. o Sig.ra).
 
    ![](assets/acs_connect_profile_sync_03.png)
 
@@ -69,9 +69,9 @@ I passaggi seguenti per modificare un singolo punto di dati offrono un semplice 
 
 ## Creare un flusso di lavoro {#creating-a-workflow}
 
-I profili e i servizi replicati da Campaign v7 sono disponibili per gli esperti di marketing digitale e consentono di sfruttare i dati avanzati di Campaign Standard. Le istruzioni seguenti illustrano come aggiungere una query a un flusso di lavoro Campaign Standard e quindi utilizzarla con il database replicato.
+I profili e i servizi replicati da Campaign v7 sono disponibili per gli esperti di marketing digitale e consentono di sfruttare i dati avanzati in Campaign Standard. Le istruzioni riportate di seguito illustrano come aggiungere una query a un flusso di lavoro di Campaign Standard e quindi utilizzarla con il database replicato.
 
-Per ulteriori informazioni e istruzioni complete sui flussi di lavoro Campaign Standard, vedi [Flussi di lavoro](../../workflow/using/about-workflows.md).
+Per ulteriori informazioni e istruzioni complete sui flussi di lavoro di Campaign Standard, vedi [Flussi di lavoro](../../workflow/using/about-workflows.md).
 
 1. Passare a Campaign Standard e fare clic su **[!UICONTROL Marketing Activities]**.
 1. Fai clic su **[!UICONTROL Create]** in alto a destra.
@@ -95,7 +95,7 @@ Per ulteriori informazioni e istruzioni complete sui flussi di lavoro Campaign S
 
 Gli esperti di marketing digitale possono sfruttare un’applicazione web Campaign v7 per assicurarsi che la scelta di un destinatario di annullare l’abbonamento a un servizio venga inviata al database Campaign v7. Dopo che il destinatario ha fatto clic sul collegamento di annullamento dell’abbonamento, l’opzione per interrompere la ricezione del servizio viene replicata da Campaign v7 a Campaign Standard. Per ulteriori dettagli, vedere [Modificare il collegamento di annullamento dell&#39;abbonamento](#changing-the-unsubscription-link).
 
-Segui i passaggi seguenti per aggiungere una consegna e-mail a un flusso di lavoro esistente con il servizio di annullamento dell’abbonamento creato in Campaign v7. Per ulteriori informazioni e istruzioni complete sui flussi di lavoro Campaign Standard, vedi questo [documento](../../workflow/using/about-workflows.md).
+Segui i passaggi seguenti per aggiungere una consegna e-mail a un flusso di lavoro esistente con il servizio di annullamento dell’abbonamento creato in Campaign v7. Per ulteriori informazioni e istruzioni complete sui flussi di lavoro di Campaign Standard, consulta questo [documento](../../workflow/using/about-workflows.md).
 
 >[!NOTE]
 >
@@ -170,7 +170,7 @@ Segui le istruzioni in [Creare un flusso di lavoro](#creating-a-workflow) e [Cre
 
    ![](assets/acs_connect_profile_sync_21.png)
 
-1. I dati dei destinatari in Campaign v7 vengono aggiornati per riflettere l’annullamento dell’abbonamento da parte dell’utente. Verificare che la casella **[!UICONTROL No longer contact (by any channel)]** sia selezionata per il destinatario. Per informazioni su come visualizzare un destinatario in Campaign v7, consulta [Modifica di un profilo](../../platform/using/editing-a-profile.md).
+1. I dati dei destinatari in Campaign v7 vengono aggiornati per riflettere l’annullamento dell’abbonamento da parte dell’utente. Verificare che la casella **[!UICONTROL No longer contact (by any channel)]** sia selezionata per il destinatario.
 
    ![](assets/acs_connect_profile_sync_22.png)
 
