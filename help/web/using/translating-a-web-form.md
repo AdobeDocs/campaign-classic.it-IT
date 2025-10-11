@@ -70,7 +70,7 @@ Per le stringhe di caratteri che non sono mai state tradotte, il campo **[!UICON
 
 ### Filtrare le stringhe {#filtering-strings}
 
-Per impostazione predefinita, viene visualizzata ogni lingua di traduzione dell’applicazione web. Sono disponibili due filtri predefiniti: lingua e stato. Fare clic sul pulsante **[!UICONTROL Filters]**, quindi su **[!UICONTROL By language or status]** per visualizzare le caselle di riepilogo corrispondenti. Puoi anche creare un filtro avanzato. Per ulteriori informazioni sui filtri, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Per impostazione predefinita, viene visualizzata ogni lingua di traduzione dell’applicazione web. Sono disponibili due filtri predefiniti: lingua e stato. Fare clic sul pulsante **[!UICONTROL Filters]**, quindi su **[!UICONTROL By language or status]** per visualizzare le caselle di riepilogo corrispondenti. Puoi anche creare un filtro avanzato. Per ulteriori informazioni sui filtri, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 ![](assets/s_ncs_admin_survey_trad_tab_en.png)
 

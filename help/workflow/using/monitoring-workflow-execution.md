@@ -281,4 +281,4 @@ Oltre a queste visualizzazioni, puoi impostare cartelle di filtri che ti consent
 
 ![](assets/workflow-monitoring-filter.png)
 
-Per ulteriori informazioni sui filtri, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Per ulteriori informazioni sui filtri, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
