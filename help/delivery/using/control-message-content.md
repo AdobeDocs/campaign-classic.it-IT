@@ -25,11 +25,11 @@ Durante la progettazione del contenuto del messaggio, segui i principi elencati 
 * [Collegamento per l&#39;annullamento dell&#39;abbonamento](#opt-out) e pagina di destinazione: il collegamento per l&#39;annullamento dell&#39;abbonamento è essenziale. Deve essere visibile e valido e il modulo deve essere funzionale.
 * Anteprima: utilizza gli strumenti offerti da Adobe Campaign per verificare e ottimizzare il contenuto dell&#39;e-mail ([Rendering della casella in entrata](#message-responsiveness), [SpamAssassin](#spamassassin)).
 
-Per ulteriori suggerimenti per ottimizzare il recapito messaggi durante la progettazione del contenuto, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html).
+Per ulteriori suggerimenti per ottimizzare il recapito messaggi durante la progettazione del contenuto, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html?lang=it).
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla modifica del contenuto delle e-mail, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}.
+>Per ulteriori informazioni sulla modifica del contenuto delle e-mail, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=it){target="_blank"}.
 
 ## Indirizzo mittente {#sender-address}
 
@@ -37,7 +37,7 @@ Alcuni ISP verificano la validità dell&#39;indirizzo del mittente (**[!UICONTRO
 
 È necessario assicurarsi che sia fornito un indirizzo corretto a livello di istanza (menu **[!UICONTROL Tools > Advanced > deployment wizard...]**) o negli scenari utilizzati più di frequente.
 
-Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}.
+Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=it){target="_blank"}.
 
 ## Personalizzazione {#personalization}
 
@@ -47,7 +47,7 @@ Per ulteriori informazioni sull&#39;utilizzo dei campi di personalizzazione in A
 
 ## Collegamento e modulo per la rinuncia {#opt-out}
 
-Per impostazione predefinita, quando il messaggio viene analizzato, una regola di tipologia controlla se è stato incluso un collegamento di rinuncia e, in caso contrario, genera un avviso. Puoi modificare questa regola in modo da generare un errore anziché un semplice avviso e interrompere una consegna senza questo collegamento. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
+Per impostazione predefinita, quando il messaggio viene analizzato, una regola di tipologia controlla se è stato incluso un collegamento di rinuncia e, in caso contrario, genera un avviso. Puoi modificare questa regola in modo da generare un errore anziché un semplice avviso e interrompere una consegna senza questo collegamento. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=it){target="_blank"}.
 
 Prima di ogni invio, verifica che il collegamento di rinuncia funzioni correttamente. Ad esempio, quando invii la bozza, accertati che il collegamento sia valido, che il modulo sia in linea e che la convalida di questo modifichi il valore del campo **[!UICONTROL No longer contact this recipient]** in **[!UICONTROL Yes]**. Dovresti effettuare questo controllo in modo sistematico perché è sempre possibile un errore umano durante l’immissione del collegamento o la modifica del modulo.
 

@@ -316,7 +316,7 @@ Puoi definire il formato dei messaggi inviati, in modo che il contenuto visualiz
 
 A tale scopo, passare al documento **[!UICONTROL Management of email formats]**, che si trova in **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Non deliverables management]** > **[!UICONTROL Mail rule sets]**.
 
-Questo documento contiene un elenco di tutti i domini predefiniti che corrispondono ai formati giapponesi gestiti da Adobe Campaign. Per ulteriori informazioni, consulta la [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}.
+Questo documento contiene un elenco di tutti i domini predefiniti che corrispondono ai formati giapponesi gestiti da Adobe Campaign. Per ulteriori informazioni, consulta la [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html?lang=it){target="_blank"}.
 
 ![](assets/mail_rule_sets.png)
 
@@ -331,7 +331,7 @@ Il parametro **MIME structure** (Multipurpose Internet Mail Extensions) consente
 
 Se l&#39;opzione **[!UICONTROL Image inclusion]** è abilitata, verranno visualizzate direttamente nel corpo dell&#39;e-mail. Le immagini vengono quindi caricate e i collegamenti URL sostituiti dal relativo contenuto.
 
-Questa opzione è particolarmente utilizzata dal mercato giapponese per **Deco-mail**, **Decore Mail** o **Decoration Mail**. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}.
+Questa opzione è particolarmente utilizzata dal mercato giapponese per **Deco-mail**, **Decore Mail** o **Decoration Mail**. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html?lang=it){target="_blank"}.
 
 >[!IMPORTANT]
 >

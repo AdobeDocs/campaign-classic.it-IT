@@ -21,7 +21,7 @@ Adobe disattiva il centro dati legacy: le istanze di Campaign Classic devono ess
 
 Di seguito è riportata una serie di domande comuni su questo progetto, sull’impatto sugli ambienti Campaign e su altre risorse utili.
 
-Per qualsiasi altra domanda, puoi contattare l&#39;[Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+Per qualsiasi altra domanda, puoi contattare l&#39;[Assistenza clienti Adobe](https://experienceleague.adobe.com/it?support-solution=Campaign#support).
 
 ## Impatto sull&#39;infrastruttura
 
@@ -51,7 +51,7 @@ Gli impatti globali su database e infrastruttura sono elencati di seguito.
 
 * **Qual è il piano per risolvere eventuali problemi successivi alla migrazione?**
 
-  Prima della migrazione dei sistemi di produzione vengono eseguiti test approfonditi. Tuttavia, in caso di problemi, [l&#39;Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) rimarrà il punto di contatto principale. Adobe ha istituito un team di esperti per fornire supporto avanzato, se necessario.
+  Prima della migrazione dei sistemi di produzione vengono eseguiti test approfonditi. Tuttavia, in caso di problemi, [l&#39;Assistenza clienti Adobe](https://experienceleague.adobe.com/it?support-solution=Campaign#support) rimarrà il punto di contatto principale. Adobe ha istituito un team di esperti per fornire supporto avanzato, se necessario.
 
 ## Impatto sul recapito messaggi
 
@@ -97,7 +97,7 @@ Gli impatti globali su IP, elenchi Bloccati, sottodomini e URL sono elencati di 
 
   Prima di tutto, il recapito messaggi di Adobe valuterà lo stato di recapito messaggi della piattaforma e raccomanderà un piano per passare ai nuovi IP
 
-  Non è necessario alcun riscaldamento dopo la migrazione. Potrebbe trattarsi di un&#39;eccezione e, in questo caso, [l&#39;Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) contatterà i clienti.
+  Non è necessario alcun riscaldamento dopo la migrazione. Potrebbe trattarsi di un&#39;eccezione e, in questo caso, [l&#39;Assistenza clienti Adobe](https://experienceleague.adobe.com/it?support-solution=Campaign#support) contatterà i clienti.
 
   Tuttavia, il piano è quello di rendere trasparente questa operazione per l&#39;azienda, a differenza dell&#39;incremento iniziale che viene fatto durante il go-live.
 
@@ -173,7 +173,7 @@ Di seguito sono elencati gli impatti globali su configurazione, connettività co
 
   Può variare in base alla nuova posizione dei server. Tuttavia, il cliente sarà in grado di mantenere il proprio fuso orario corrente.
 
-  Per ulteriori informazioni sulla gestione del fuso orario, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html){target="_blank"}.
+  Per ulteriori informazioni sulla gestione del fuso orario, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html?lang=it){target="_blank"}.
 
 
 ## Sicurezza e autorizzazioni

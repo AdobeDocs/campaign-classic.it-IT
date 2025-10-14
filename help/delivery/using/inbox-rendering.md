@@ -31,7 +31,7 @@ I client per dispositivi mobili, di messaggistica e di posta sul Web disponibili
 
 >[!NOTE]
 >
->Il rendering della casella in entrata non è necessario per testare la personalizzazione nelle consegne. Personalization può essere controllato con gli strumenti di Adobe Campaign come **[!UICONTROL Preview]** e le bozze. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
+>Il rendering della casella in entrata non è necessario per testare la personalizzazione nelle consegne. Personalization può essere controllato con gli strumenti di Adobe Campaign come **[!UICONTROL Preview]** e le bozze. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=it){target="_blank"}.
 
 ## Attivazione del rendering della casella in entrata {#activating-inbox-rendering}
 
@@ -107,7 +107,7 @@ Per ulteriori informazioni sulla creazione, progettazione e targeting di una con
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
-   Viene inviata una bozza. È possibile accedere alle miniature di rendering nella bozza pochi minuti dopo l’invio delle e-mail. Per ulteriori informazioni sull&#39;invio di bozze, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
+   Viene inviata una bozza. È possibile accedere alle miniature di rendering nella bozza pochi minuti dopo l’invio delle e-mail. Per ulteriori informazioni sull&#39;invio di bozze, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=it){target="_blank"}.
 
 1. Dopo l’invio, la bozza viene visualizzata nell’elenco delle consegne. Fare doppio clic su di esso.
 

@@ -16,7 +16,7 @@ ht-degree: 12%
 
 # Creare notifiche per Android{#create-notificaations-android}
 
-Utilizza Adobe Campaign per inviare notifiche push su dispositivi Android. I concetti globali sulla creazione della consegna sono descritti nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
+Utilizza Adobe Campaign per inviare notifiche push su dispositivi Android. I concetti globali sulla creazione della consegna sono descritti nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it){target="_blank"}.
 
 Inizia creando una nuova consegna.
 
@@ -70,7 +70,7 @@ L’immagine e la pagina web devono essere visualizzate nella notifica push quan
 
 ## Creare un messaggio di notifica {#creating-notification-message}
 
-![](assets/do-not-localize/how-to-video.png) [Scopri come creare una notifica push di Android in un video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html#additional-resources){target="_blank"}.
+![](assets/do-not-localize/how-to-video.png) [Scopri come creare una notifica push di Android in un video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=it#additional-resources){target="_blank"}.
 
 1. Vai a **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 

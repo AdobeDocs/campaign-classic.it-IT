@@ -55,7 +55,7 @@ Puoi eseguire query sul database di Campaign utilizzando l’editor di query gen
 
 Le query vengono create utilizzando i campi della tabella selezionata o utilizzando una formula. I principi fondamentali per creare una query nel database di Campaign sono descritti [in questa pagina](../../platform/using/about-queries-in-campaign.md).
 
-Scopri le query sulla [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
+Scopri le query sulla [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=it){target="_blank"}.
 
 ## Come posso importare un pacchetto di dati? {#how-can-i-import-a-data-package-}
 

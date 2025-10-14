@@ -15,7 +15,7 @@ ht-degree: 6%
 
 # Test AB: creare i modelli di consegna {#step-3--creating-two-delivery-templates}
 
-Ora vogliamo creare due modelli di consegna. A ogni modello verrà fatto riferimento in un&#39;attività **[!UICONTROL Email delivery]** collegata all&#39;attività **[!UICONTROL Split]**. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
+Ora vogliamo creare due modelli di consegna. A ogni modello verrà fatto riferimento in un&#39;attività **[!UICONTROL Email delivery]** collegata all&#39;attività **[!UICONTROL Split]**. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=it){target="_blank"}.
 
 1. Selezionare la cartella **[!UICONTROL Resources > Delivery template]**.
 1. Duplica il modello di consegna **[!UICONTROL Email]**.

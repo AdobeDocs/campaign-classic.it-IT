@@ -31,11 +31,11 @@ Per esportare i dati da Campaign Classic nel percorso di archiviazione S3 o BLOB
 
 A questo scopo, aggiungi e configura:
 
-* Attività **[!UICONTROL Data extraction (file)]** per estrarre i dati di destinazione in un file CSV. Per ulteriori informazioni su come configurare questa attività, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}.
+* Attività **[!UICONTROL Data extraction (file)]** per estrarre i dati di destinazione in un file CSV. Per ulteriori informazioni su come configurare questa attività, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=it){target="_blank"}.
 
   ![](assets/rtcdp-extract-file.png)
 
-* Un&#39;attività **[!UICONTROL File transfer]** per trasferire il file CSV nel percorso di archiviazione. Per ulteriori informazioni su come configurare questa attività, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
+* Un&#39;attività **[!UICONTROL File transfer]** per trasferire il file CSV nel percorso di archiviazione. Per ulteriori informazioni su come configurare questa attività, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=it){target="_blank"}.
 
   ![](assets/rtcdp-file-transfer.png)
 
@@ -49,8 +49,8 @@ Di seguito sono elencati i passaggi principali per connettere il percorso di arc
 
 1. Nel menu di Adobe Experience Platform **[!UICONTROL Sources]**, crea una connessione al percorso di archiviazione:
 
-   * [Creare una connessione di origine Amazon S3](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html)
-   * [Connettore BLOB di Azure](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/blob.html)
+   * [Creare una connessione di origine Amazon S3](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html?lang=it)
+   * [Connettore BLOB di Azure](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/blob.html?lang=it)
 
    >[!NOTE]
    >
@@ -60,7 +60,7 @@ Di seguito sono elencati i passaggi principali per connettere il percorso di arc
 
 1. Configurare un flusso di dati per una connessione batch di archiviazione cloud. Un flusso di dati è un’attività pianificata che recupera e acquisisce i dati dal percorso di archiviazione a un set di dati Adobe Experience Platform. Questi passaggi ti consentono di configurare l’acquisizione dei dati dalla posizione di archiviazione, inclusa la selezione dei dati e la mappatura dei campi CSV su uno schema XDM.
 
-   Informazioni dettagliate sono disponibili in [questa pagina](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html).
+   Informazioni dettagliate sono disponibili in [questa pagina](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html?lang=it).
 
    ![](assets/rtcdp-map-xdm.png)
 

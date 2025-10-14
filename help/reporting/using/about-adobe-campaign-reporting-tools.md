@@ -20,7 +20,7 @@ Oltre a [rapporti incorporati](../../reporting/using/about-campaign-built-in-rep
 
 Adobe Campaign non è uno strumento di reporting specializzato: i rapporti creati in Adobe Campaign consentono principalmente di visualizzare i dati aggregati. I rapporti di Adobe Campaign, dedicati all’analisi e alla rappresentazione dei dati, non sono progettati per le esportazioni di database.
 
-Per esportare dati dal database di Adobe Campaign, devi creare un flusso di lavoro e utilizzare un’attività di esportazione dati. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html){target="_blank"}.
+Per esportare dati dal database di Adobe Campaign, devi creare un flusso di lavoro e utilizzare un’attività di esportazione dati. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html?lang=it){target="_blank"}.
 
 Adobe Campaign fornisce diversi strumenti di reporting:
 

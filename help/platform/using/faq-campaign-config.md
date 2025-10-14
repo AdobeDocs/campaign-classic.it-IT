@@ -51,7 +51,7 @@ Oltre alla [Guida alle best practice per il recapito messaggi di Adobe](https://
 
 Campaign ti consente di impostare processi di approvazione per i passaggi principali della campagna di marketing, in modalità collaborativa. Per ogni campagna puoi approvare il target di consegna, i contenuti e i costi. Gli operatori Adobe Campaign incaricati dell’approvazione possono ricevere una notifica tramite e-mail e accettare o rifiutare l’approvazione dalla console o tramite una connessione web.
 
-Scopri come implementare l’approvazione dei contenuti della consegna nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html#review-and-approve-deliveries){target="_blank"}.
+Scopri come implementare l’approvazione dei contenuti della consegna nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=it#review-and-approve-deliveries){target="_blank"}.
 
 ## Come posso accedere ai dati memorizzati in un database esterno? {#how-can-i-access-data-stored-in-an-external-database-}
 

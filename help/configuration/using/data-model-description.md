@@ -113,7 +113,7 @@ Questo set di tabelle è collegato al modulo **Delivery**, che consente di monit
 
 ## Gestione delle campagne {#campaign-management}
 
-Questo set di tabelle è collegato al modulo **Campagne di marketing**, che consente di definire, ottimizzare, eseguire e analizzare le campagne di comunicazione e marketing. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
+Questo set di tabelle è collegato al modulo **Campagne di marketing**, che consente di definire, ottimizzare, eseguire e analizzare le campagne di comunicazione e marketing. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=it){target=_blank}.
 
 ![](assets/data-model_campaign.png)
 

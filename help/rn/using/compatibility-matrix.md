@@ -437,7 +437,7 @@ Per utilizzare la [console client di Campaign](../../installation/using/installi
 
 Per la console client di Campaign è obbligatoria la versione più recente di Microsoft Edge WebView2.
 
-Scarica Microsoft Edge WebView2 dal [sito web per sviluppatori Microsoft](https://www.adobe.com/go/acc-ms-webview2-runtime-download).
+Scarica Microsoft Edge WebView2 dal [sito web per sviluppatori Microsoft](https://www.adobe.com/go/acc-ms-webview2-runtime-download_it).
 
 
 ## Mobile SDK {#MobileSDK}
@@ -472,7 +472,7 @@ L’SDK di Campaign è [obsoleto](deprecated-features.md) a partire da Campaign 
 
 ## Browser {#Browsers}
 
-I seguenti browser, nella loro versione più recente, sono compatibili con Campaign per l’accesso web. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html#use-the-web-interface-){target=_blank}.
+I seguenti browser, nella loro versione più recente, sono compatibili con Campaign per l’accesso web. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=it#use-the-web-interface-){target=_blank}.
 
 * Google Chrome
 * Microsoft Edge

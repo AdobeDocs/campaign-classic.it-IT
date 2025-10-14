@@ -40,7 +40,7 @@ Questo metodo evidenzia anche gli utenti che creano troppi oggetti.
 
 ## Consegne {#deliveries}
 
-In qualsiasi momento nell’istanza dovrebbero essere presenti meno di 1000 consegne. La presenza di un numero elevato di consegne consuma spazio nel database e crea problemi. Un’istanza che crea più di 10 consegne al giorno deve essere verificata in base ai requisiti aziendali. Valuta l’utilizzo di consegne continue per creare meno consegne. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/continuous-delivery.html){target="_blank"}.
+In qualsiasi momento nell’istanza dovrebbero essere presenti meno di 1000 consegne. La presenza di un numero elevato di consegne consuma spazio nel database e crea problemi. Un’istanza che crea più di 10 consegne al giorno deve essere verificata in base ai requisiti aziendali. Valuta l’utilizzo di consegne continue per creare meno consegne. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/continuous-delivery.html?lang=it){target="_blank"}.
 
 Le consegne più vecchie di due anni devono essere eliminate dall’istanza.
 
@@ -48,14 +48,14 @@ Le consegne più vecchie di due anni devono essere eliminate dall’istanza.
 
 Il numero di file sul disco del server applicazioni non deve aumentare indefinitamente.
 
-I flussi di lavoro di importazione creano file e quindi causano l’espansione del disco. È possibile evitare questo problema utilizzando l&#39;attività standard [Raccoglitore file](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-collector.html){target="_blank"}. L&#39;agente di raccolta file sposta i file in una cartella temporanea e li elimina automaticamente.
+I flussi di lavoro di importazione creano file e quindi causano l’espansione del disco. È possibile evitare questo problema utilizzando l&#39;attività standard [Raccoglitore file](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-collector.html?lang=it){target="_blank"}. L&#39;agente di raccolta file sposta i file in una cartella temporanea e li elimina automaticamente.
 
 Se un flusso di lavoro importa file e non utilizza le funzioni standard, deve essere eliminato per ridurre al minimo lo spazio su disco.
 
 ## Dati e registri transazionali {#transactional-data-and-logs}
 
-Ogni flusso di lavoro che importa dati in Adobe Campaign causa l’aumento delle dimensioni del database. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html){target="_blank"}.
+Ogni flusso di lavoro che importa dati in Adobe Campaign causa l’aumento delle dimensioni del database. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html?lang=it){target="_blank"}.
 
-Verifica che i flussi di lavoro di pulizia o rimozione siano in esecuzione e che i record vengano eliminati in modo efficace. Tutti i dati e i registri transazionali devono essere eliminati. L’attività di pulizia elimina solo le tabelle standard: i registri di tracciamento e i registri generali. Tabelle specifiche devono essere eliminate da flussi di lavoro specifici. consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
+Verifica che i flussi di lavoro di pulizia o rimozione siano in esecuzione e che i record vengano eliminati in modo efficace. Tutti i dati e i registri transazionali devono essere eliminati. L’attività di pulizia elimina solo le tabelle standard: i registri di tracciamento e i registri generali. Tabelle specifiche devono essere eliminate da flussi di lavoro specifici. consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=it){target="_blank"}.
 
 Controlla la misurazione della durata dei dati transazionali controllando la data di creazione dei record meno recente.

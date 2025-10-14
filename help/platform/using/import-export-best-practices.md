@@ -60,8 +60,8 @@ Se possibile, utilizzate file compressi per le importazioni e le esportazioni. G
 
 **Argomenti correlati:**
 
-* [Attività caricamento dati (file)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}
-* [Attività di estrazione dati (file)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}.
+* [Attività caricamento dati (file)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=it){target="_blank"}
+* [Attività di estrazione dati (file)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=it){target="_blank"}.
 
 ## Importa in modalità Delta {#importing-in-delta-mode}
 

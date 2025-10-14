@@ -100,7 +100,7 @@ Utilizzando gli indirizzi seed, puoi anche visualizzare il rendering del messagg
 
 Puoi verificare la consegna dei messaggi inviando una bozza a un indirizzo seed creato in precedenza.
 
-L’invio di una bozza prevede lo stesso processo di una consegna regolare. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}. Tuttavia, con la messaggistica transazionale, devi eseguire in anticipo le seguenti operazioni:
+L’invio di una bozza prevede lo stesso processo di una consegna regolare. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=it){target="_blank"}. Tuttavia, con la messaggistica transazionale, devi eseguire in anticipo le seguenti operazioni:
 
 * Crea uno o più [indirizzi seed](#managing-seed-addresses-in-transactional-messages) con [dati di personalizzazione](#personalization-data).
 * [Crea il contenuto del messaggio](../../message-center/using/creating-the-message-template.md#creating-message-content).
@@ -117,7 +117,7 @@ Per inviare la bozza:
 
    ![](assets/messagecenter_send_proof_002.png)
 
-È possibile accedere alle bozze in ogni modello tramite la scheda **[!UICONTROL Audit]**. Per ulteriori dettagli, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
+È possibile accedere alle bozze in ogni modello tramite la scheda **[!UICONTROL Audit]**. Per ulteriori dettagli, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=it){target="_blank"}.
 
 ![](assets/messagecenter_send_proof_003.png)
 

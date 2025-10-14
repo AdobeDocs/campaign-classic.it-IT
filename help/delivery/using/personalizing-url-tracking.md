@@ -19,7 +19,7 @@ Le impostazioni avanzate di verifica dei messaggi sono accessibili tramite l&#39
 
 >[!NOTE]
 >
->In questa finestra è configurata anche la gestione delle immagini nelle e-mail. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}.
+>In questa finestra è configurata anche la gestione delle immagini nelle e-mail. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=it#adding-images){target="_blank"}.
 
 ![](assets/s_ncs_user_email_del_tracking_ico.png)
 

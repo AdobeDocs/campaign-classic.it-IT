@@ -24,7 +24,7 @@ Inoltre, il modulo **Gestione risorse di marketing (MRM)** consente di controlla
 >[!NOTE]
 >
 >Per ulteriori informazioni sulle funzionalità di base di Adobe Campaign, consulta [questa sezione](../../platform/using/about-adobe-campaign-classic.md).\
->Le funzionalità relative al targeting della popolazione, alla personalizzazione dei messaggi e alla consegna dei messaggi sui vari canali sono descritte in dettaglio nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
+>Le funzionalità relative al targeting della popolazione, alla personalizzazione dei messaggi e alla consegna dei messaggi sui vari canali sono descritte in dettaglio nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it){target="_blank"}.
 
 ![](assets/do-not-localize/how-to-video.png) [Scopri i concetti chiave delle campagne di marketing nel video](#video)
 

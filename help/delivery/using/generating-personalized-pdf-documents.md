@@ -23,7 +23,7 @@ Sono supportate le seguenti estensioni: &quot;.docx&quot;, &quot;.doc&quot; e &q
 
 Per personalizzare i documenti, sono disponibili le stesse funzionalità di JavaScript disponibili per la personalizzazione delle e-mail.
 
-È necessario attivare l&#39;opzione **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**. Questa opzione è accessibile quando alleghi il file all’e-mail di consegna. Per ulteriori informazioni su come allegare un file calcolato, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html){target="_blank"}.
+È necessario attivare l&#39;opzione **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**. Questa opzione è accessibile quando alleghi il file all’e-mail di consegna. Per ulteriori informazioni su come allegare un file calcolato, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=it){target="_blank"}.
 
 Esempio di personalizzazione dell&#39;intestazione di una fattura:
 

@@ -35,7 +35,7 @@ Di seguito sono riportate le informazioni che è possibile monitorare utilizzand
 
 * [Informazioni sugli errori di consegna](understanding-delivery-failures.md)
 * [Informazioni sulla gestione della quarantena](understanding-quarantine-management.md)
-* [Best practice per la consegna](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}
+* [Best practice per la consegna](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=it){target="_blank"}
 * [Gestione del recapito messaggi](about-deliverability.md)
 
 ## Riepilogo della consegna {#delivery-summary}
@@ -64,7 +64,7 @@ Per una consegna, puoi visualizzare (ad esempio) solo i destinatari con una cons
 
 Il collegamento **[!UICONTROL Display the mirror page for this message...]** ti consente di visualizzare in una nuova finestra la pagina speculare per il contenuto della consegna selezionata dall&#39;elenco.
 
-La pagina speculare è disponibile solo per le consegne per le quali è stato definito il contenuto di HTML. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html){target="_blank"}.
+La pagina speculare è disponibile solo per le consegne per le quali è stato definito il contenuto di HTML. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html?lang=it){target="_blank"}.
 
 ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
@@ -98,7 +98,7 @@ La scheda **[!UICONTROL Audit]** contiene il registro di consegna e tutti i mess
 
 Il pulsante **[!UICONTROL Refresh]** consente di aggiornare i dati. Utilizzare il pulsante **[!UICONTROL Filters]** per definire un filtro per i dati.
 
-Icone speciali consentono di identificare errori o avvisi. Consulta questa sezione nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
+Icone speciali consentono di identificare errori o avvisi. Consulta questa sezione nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=it){target="_blank"}.
 
 La scheda secondaria **[!UICONTROL Proofs]** ti consente di visualizzare l&#39;elenco delle bozze che sono state inviate.
 

@@ -28,7 +28,7 @@ Puoi importare i destinatari o crearli manualmente utilizzando la console del cl
 
 Scopri dei facili casi d’uso per [importare profili](../../platform/using/import-operations-samples.md) nel tuo database.
 
-![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/importing-profiles.html)
+![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/importing-profiles.html?lang=it)
 
 ## Come posso definire la popolazione target per una campagna di marketing? {#how-can-i-define-the-target-population-of-a-marketing-campaign-}
 
@@ -40,13 +40,13 @@ Un elenco è un set statico di destinatari che possono essere oggetto di targeti
 
 [Fai clic qui per ulteriori informazioni](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group).
 
-![](assets/do-not-localize/how-to-video.png) Scopri questa funzione [in questo video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html) e [in quest’altro video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html)
+![](assets/do-not-localize/how-to-video.png) Scopri questa funzione [in questo video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html?lang=it) e [in quest’altro video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html?lang=it)
 
 ## Come posso deduplicare una popolazione prima di inviare un messaggio? {#how-can-i-deduplicate-a-population-before-sending-a-message-}
 
 Puoi utilizzare un flusso di lavoro per escludere un duplicato dal target di una consegna, così da evitare di inviare più volte lo stesso messaggio a un destinatario.
 
-Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}.
+Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html?lang=it){target="_blank"}.
 
 ## Come identificare ed eseguire il targeting degli abbonati a una newsletter? {#how-to-identify-and-target-subscribers-to-a-newsletter-}
 
@@ -54,4 +54,4 @@ Scopri la gestione degli abbonamenti in Campaign e come [inviare un messaggio ag
 
 ## Qual è la best practice per escludere profili da una popolazione target? {#what-is-the-best-practice-to-exclude-profiles-from-a-target-population-}
 
-Scopri come escludere un elenco di profili dalla popolazione target nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html){target="_blank"}.
+Scopri come escludere un elenco di profili dalla popolazione target nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html?lang=it){target="_blank"}.

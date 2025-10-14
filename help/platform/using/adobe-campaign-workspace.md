@@ -43,7 +43,7 @@ Mentre con l’accesso web, le opzioni consentono principalmente la visualizzazi
 
 ![Da un browser, lo stesso operatore può solo visualizzare e annullare la campagna.](assets/operation_from_web.png)
 
-Ulteriori informazioni sull&#39;utilizzo dell&#39;interfaccia Web sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html#use-the-web-interface-){target=_blank}.
+Ulteriori informazioni sull&#39;utilizzo dell&#39;interfaccia Web sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=it#use-the-web-interface-){target=_blank}.
 
 ### Lingue {#languages}
 
@@ -59,7 +59,7 @@ Puoi scegliere tra le seguenti lingue:
 * Tedesco
 * Giapponese
 
-La lingua scelta per l’istanza di Adobe Campaign Classic potrebbe influire sui formati di data e ora. Per ulteriori informazioni, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+La lingua scelta per l’istanza di Adobe Campaign Classic potrebbe influire sui formati di data e ora. Per ulteriori informazioni, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 Per ulteriori informazioni su come creare un&#39;istanza, consulta questa [pagina](../../installation/using/creating-an-instance-and-logging-on.md).
 
@@ -110,7 +110,7 @@ Adobe Campaign Explorer è accessibile tramite l’icona della barra degli strum
 
 Per ulteriori informazioni su Adobe Campaign Explorer, consulta queste pagine nella **documentazione di Campaign v8 (console)**:
 
-* [Panoramica dell&#39;interfaccia utente di Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
+* [Panoramica dell&#39;interfaccia utente di Campaign](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
 * [Impostazioni interfaccia utente di Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
@@ -123,7 +123,7 @@ Il filtro dei dati consiste nel restringere un set di dati solo ai record che co
 
 Durante la navigazione in Campaign, i dati vengono visualizzati negli elenchi. Puoi applicare filtri incorporati per accedere rapidamente a un sottoinsieme definito, ad esempio indirizzi messi in quarantena, destinatari non mirati o record all’interno di un intervallo di età o di una data di creazione specifici. Inoltre, puoi creare filtri personalizzati, salvarli per utilizzi futuri e condividerli con altri utenti di Campaign.
 
-Scopri come **accedere, progettare e condividere filtri** nella [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Scopri come **accedere, progettare e condividere filtri** nella [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 
 ## Utilizzare gli elenchi {#manage-and-customize-lists}
@@ -138,7 +138,7 @@ Un’enumerazione (detta anche elenco dettagliato) è un elenco predefinito di v
 
 Una volta definiti, i valori vengono visualizzati in un elenco a discesa. Un valore può essere selezionato direttamente o immesso utilizzando l’input predittivo, che suggerisce e completa le voci corrispondenti. Alcuni campi includono enumerazioni predefinite; se necessario, è possibile creare enumerazioni aggiuntive.
 
-Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 ## Video tutorial {#video}
 

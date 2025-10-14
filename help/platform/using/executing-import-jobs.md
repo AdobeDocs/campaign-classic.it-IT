@@ -23,7 +23,7 @@ Adobe Campaign consente di importare nel database dati da uno o più file in for
 
 >[!NOTE]
 >
->È possibile importare dati senza eseguirne il mapping con i dati del database utilizzando la funzione **[!UICONTROL Import a list]**. I dati possono quindi essere utilizzati esclusivamente nei flussi di lavoro tramite l&#39;oggetto **[!UICONTROL Read list]**. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html){target="_blank"}.
+>È possibile importare dati senza eseguirne il mapping con i dati del database utilizzando la funzione **[!UICONTROL Import a list]**. I dati possono quindi essere utilizzati esclusivamente nei flussi di lavoro tramite l&#39;oggetto **[!UICONTROL Read list]**. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html?lang=it){target="_blank"}.
 
 L’assistente all’importazione ti consente di configurare un’importazione, definirne le opzioni (ad esempio, la trasformazione dei dati) e avviarne l’esecuzione. Si tratta di una serie di schermate il cui contenuto dipende dal tipo di importazione (semplice o multipla) e dai diritti dell’operatore.
 
@@ -87,7 +87,7 @@ Il collegamento **[!UICONTROL Advanced parameters]** consente di accedere alle o
 
    * **[!UICONTROL Do not update enumerations]**
 
-     Selezionare questa opzione per evitare di arricchire l&#39;elenco dei valori enumerati nel database. Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+     Selezionare questa opzione per evitare di arricchire l&#39;elenco dei valori enumerati nel database. Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 
 * Scheda **[!UICONTROL Variables]**

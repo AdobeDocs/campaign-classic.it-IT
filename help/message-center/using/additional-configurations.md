@@ -169,6 +169,6 @@ A questo scopo, segui la procedura indicata di seguito:
 
 1. Crea un account esterno per brand con lo stesso nome interno definito nell&#39;[istanza di esecuzione](#execution-instance) (passaggio 1).
 
-1. Crea un modello di consegna per marchio. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
+1. Crea un modello di consegna per marchio. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=it){target="_blank"}.
 
 1. In **[!UICONTROL Properties]** del modello di consegna, imposta il routing sull&#39;account esterno del brand.

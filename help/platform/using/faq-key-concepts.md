@@ -63,13 +63,13 @@ Consulta [questo documento](privacy-and-recommendations.md) per scoprire gli str
 
 Consulta [questa sezione](../../platform/using/adobe-campaign-workspace.md) per ulteriori informazioni sulle nozioni di base sull’area di lavoro di Adobe Campaign.
 
-![](assets/do-not-localize/how-to-video.png) [Scopri l’area di lavoro di Campaign nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
+![](assets/do-not-localize/how-to-video.png) [Scopri l’area di lavoro di Campaign nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html?lang=it)
 
 ## Come posso selezionare il pubblico dei miei messaggi? {#how-can-i-select-the-target-population-of-my-messages-}
 
 Con Adobe Campaign, puoi utilizzare strategie diverse per creare tipi di pubblico e selezionare i destinatari target.
 
-Fai clic qui per ulteriori informazioni nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}.
+Fai clic qui per ulteriori informazioni nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it#target-population){target="_blank"}.
 
 ## Che cos’è un flusso di lavoro? {#what-is-a-workflow-}
 
@@ -85,7 +85,7 @@ Un flusso di lavoro può inoltre coinvolgere uno o più operatori da avvisare o 
 
 [Fai clic qui per ulteriori informazioni](../../delivery/using/about-email-channel.md).
 
-![](assets/do-not-localize/how-to-video.png) [Scoprilo nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html)
+![](assets/do-not-localize/how-to-video.png) [Scoprilo nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html?lang=it)
 
 ## Come si inviano i messaggi SMS? {#how-to-send-sms-messages-}
 
@@ -93,7 +93,7 @@ Scopri come configurare la piattaforma e inviare messaggi SMS [in questa sezione
 
 ## Come si inviano le notifiche push? {#how-to-send-push-notifications-}
 
-Scopri come utilizzare Adobe Campaign per inviare una notifica push personalizzata nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target="_blank"}.
+Scopri come utilizzare Adobe Campaign per inviare una notifica push personalizzata nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html?lang=it){target="_blank"}.
 
 ## Come si progetta e si condivide un sondaggio online? {#how-to-design-and-share-an-online-survey-}
 
@@ -131,6 +131,6 @@ Adobe valuta costantemente le funzionalità del prodotto e nel tempo pianifica l
 
 ## Vengono rilasciati nuovi aggiornamenti della documentazione e materiali di supporto? {#are-there-new-documentation-updates-and-help-materials-released-}
 
-Gli aggiornamenti della documentazione più recenti di Campaign Classic sono elencati [in questa pagina](https://experienceleague.adobe.com/docs/campaign-classic/using/documentation-updates.html).
+Gli aggiornamenti della documentazione più recenti di Campaign Classic sono elencati [in questa pagina](https://experienceleague.adobe.com/docs/campaign-classic/using/documentation-updates.html?lang=it).
 
 Puoi inoltre consultare le note tecniche più recenti elencate [in questa pagina](https://helpx.adobe.com/it/campaign/kb/article-list.html).

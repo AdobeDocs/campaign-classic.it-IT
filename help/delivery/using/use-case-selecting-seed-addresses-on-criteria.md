@@ -30,7 +30,7 @@ Per utilizzare la condizione dinamica, è necessario disporre di:
 
 ## Passaggio 1: creare una consegna {#step-1---creating-a-delivery}
 
-I passaggi per la creazione di una consegna sono descritti nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}.
+I passaggi per la creazione di una consegna sono descritti nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html?lang=it){target="_blank"}.
 
 In questo esempio, il responsabile della consegna ha creato la newsletter e selezionato i destinatari.
 

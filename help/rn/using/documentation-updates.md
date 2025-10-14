@@ -419,7 +419,7 @@ Sono ora disponibili video di spiegazione sui seguenti argomenti:
 
 * [Come personalizzare le e-mail utilizzando i campi di personalizzazione](../../delivery/using/personalization-fields.md)
 
-* [Come gestire seed e bozze in un&#39;e-mail](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}.
+* [Come gestire seed e bozze in un&#39;e-mail](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it#target-population){target="_blank"}.
 
 * [Come impostare una consegna ricorrente](../../workflow/using/recurring-delivery.md)
 

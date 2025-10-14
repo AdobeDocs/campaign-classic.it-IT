@@ -47,7 +47,7 @@ L’account esterno viene creato e aggiunto all’elenco degli account esterni.
 
 ### E-mail non recapitate {#bounce-mails-external-account}
 
-L&#39;account esterno **Messaggi non recapitati** specifica l&#39;account POP3 esterno da utilizzare per connettersi al servizio e-mail. Per ulteriori informazioni su questo account esterno, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}.
+L&#39;account esterno **Messaggi non recapitati** specifica l&#39;account POP3 esterno da utilizzare per connettersi al servizio e-mail. Per ulteriori informazioni su questo account esterno, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=it){target="_blank"}.
 
 Tutti i server configurati per l&#39;accesso POP3 possono essere utilizzati per ricevere la posta di ritorno.
 
@@ -119,7 +119,7 @@ L&#39;account esterno **[!UICONTROL Routing]** consente di configurare ogni cana
 * [Direct mail](../../delivery/using/about-direct-mail-channel.md)
 * [Agenzia](../../delivery/using/communication-channels.md#other-channels)
 * [X (precedentemente noto come Twitter)](../../social/using/about-social-marketing.md)
-* [Canali iOS e Android](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}
+* [Canali iOS e Android](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=it){target="_blank"}
 
 ### Indirizzamento e-mail {#email-routing-external-account}
 
@@ -159,7 +159,7 @@ Per ulteriori informazioni su questa configurazione, consulta questa [pagina](..
 
 ### FTP {#ftp-external-account}
 
-L’account esterno FTP consente di configurare e testare l’accesso a un server esterno a Adobe Campaign. Per configurare le connessioni con i sistemi esterni, ad esempio i server FTP 898 utilizzati per i trasferimenti di file, puoi creare account esterni. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
+L’account esterno FTP consente di configurare e testare l’accesso a un server esterno a Adobe Campaign. Per configurare le connessioni con i sistemi esterni, ad esempio i server FTP 898 utilizzati per i trasferimenti di file, puoi creare account esterni. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=it){target="_blank"}.
 
 A questo scopo, specifica in questo account esterno l’indirizzo e le credenziali utilizzati per stabilire la connessione al server FTP
 
@@ -189,7 +189,7 @@ Per sapere dove individuare queste credenziali, consulta questa [pagina](https:/
 
 ### SFTP {#sftp-external-account}
 
-L’account esterno SFTP consente di configurare e testare l’accesso a un server esterno a Adobe Campaign. Per impostare connessioni con sistemi esterni, come SFTP utilizzato per i trasferimenti di file, puoi creare account esterni personalizzati. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
+L’account esterno SFTP consente di configurare e testare l’accesso a un server esterno a Adobe Campaign. Per impostare connessioni con sistemi esterni, come SFTP utilizzato per i trasferimenti di file, puoi creare account esterni personalizzati. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=it){target="_blank"}.
 
 ![](assets/ext_account_4.png)
 
@@ -415,7 +415,7 @@ Per ulteriori informazioni su questa configurazione, consulta questa [pagina](..
 
 ### Servizio Amazon Simple Storage (S3) {#amazon-simple-storage-service--s3--external-account}
 
-Il connettore Amazon Simple Storage Service (S3) può essere utilizzato per importare o esportare dati in Adobe Campaign. Può essere impostato in un’attività del flusso di lavoro. consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
+Il connettore Amazon Simple Storage Service (S3) può essere utilizzato per importare o esportare dati in Adobe Campaign. Può essere impostato in un’attività del flusso di lavoro. consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=it){target="_blank"}.
 
 ![](assets/ext_account_3.png)
 
@@ -447,7 +447,7 @@ Per informazioni su dove trovare l&#39;ID della chiave di accesso e la chiave di
 
 ### Archiviazione BLOB di Azure {#azure-blob-external-account}
 
-L&#39;account esterno **Archiviazione BLOB di Azure** può essere utilizzato per importare o esportare dati in Adobe Campaign utilizzando un&#39;attività del flusso di lavoro **[!UICONTROL Transfer file]**. consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
+L&#39;account esterno **Archiviazione BLOB di Azure** può essere utilizzato per importare o esportare dati in Adobe Campaign utilizzando un&#39;attività del flusso di lavoro **[!UICONTROL Transfer file]**. consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=it){target="_blank"}.
 
 ![](assets/ext_account_23.png)
 

@@ -95,7 +95,7 @@ Selezionare l&#39;ordinamento delle colonne.
 
 ## Passaggio 6 - Condizioni del filtro {#step-6---filter-conditions-}
 
-Puoi aggiungere condizioni di filtro per evitare di esportare tutti i dati. La configurazione di questo filtro è la stessa del targeting dei destinatari nell’assistente alla consegna. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}.
+Puoi aggiungere condizioni di filtro per evitare di esportare tutti i dati. La configurazione di questo filtro è la stessa del targeting dei destinatari nell’assistente alla consegna. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it#target-population){target="_blank"}.
 
 ![](assets/s_ncs_user_export_wizard05_b.png)
 

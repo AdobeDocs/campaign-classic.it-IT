@@ -31,7 +31,7 @@ Dopo aver fatto clic sul pulsante **[!UICONTROL Send]**, la consegna sembra rich
 
 * Alcuni provider di posta elettronica potrebbero aver aggiunto i tuoi indirizzi IP a un inserisco nell&#39;elenco Bloccati di. In questo caso, controlla i registri di trasmissione e consulta [questa sezione](about-deliverability.md).
 
-* La consegna potrebbe essere troppo grande per essere elaborata rapidamente. Ciò può verificarsi con una personalizzazione JavaScript elevata o se la consegna pesa più di 60 kbyte. Consulta le [Best practice per la consegna](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"} di Adobe Campaign v8.  per informazioni sulle linee guida per i contenuti.
+* La consegna potrebbe essere troppo grande per essere elaborata rapidamente. Ciò può verificarsi con una personalizzazione JavaScript elevata o se la consegna pesa più di 60 kbyte. Consulta le [Best practice per la consegna](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=it){target="_blank"} di Adobe Campaign v8.  per informazioni sulle linee guida per i contenuti.
 
 * La limitazione potrebbe essersi verificata all’interno dell’MTA di Adobe Campaign. Ciò è causato da:
 
@@ -73,7 +73,7 @@ I registri di consegna sono fondamentali per comprendere il motivo per cui una c
 
   Per risolvere questo problema, si consiglia di effettuare una prova di vuoto e reindicizzare il database. Per ulteriori informazioni sulla manutenzione del database, consultare [questa sezione](../../production/using/recommendations.md).
 
-  È inoltre necessario riavviare tutti i flussi di lavoro con un&#39;attività pianificata e tutti i flussi di lavoro con stato non riuscito. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}.
+  È inoltre necessario riavviare tutti i flussi di lavoro con un&#39;attività pianificata e tutti i flussi di lavoro con stato non riuscito. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=it){target="_blank"}.
 
 * Quando una consegna non riesce, nei registri di consegna può essere visualizzato il seguente errore:
 
@@ -83,7 +83,7 @@ I registri di consegna sono fondamentali per comprendere il motivo per cui una c
 
   In genere, questo errore indica che esiste un campo o un blocco di personalizzazione all’interno dell’e-mail con più valori per il destinatario. Un blocco di personalizzazione è in uso e sta recuperando più di un record per un destinatario specifico.
 
-  Per risolvere questo problema, controlla i dati di personalizzazione utilizzati, quindi controlla il target per i destinatari che hanno più di una voce per uno qualsiasi di questi campi. È inoltre possibile utilizzare un&#39;attività **[!UICONTROL Deduplication]** nel flusso di lavoro di targeting prima dell&#39;attività di consegna per verificare che esista un solo campo di personalizzazione alla volta. Per ulteriori informazioni sulla deduplicazione, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}.
+  Per risolvere questo problema, controlla i dati di personalizzazione utilizzati, quindi controlla il target per i destinatari che hanno più di una voce per uno qualsiasi di questi campi. È inoltre possibile utilizzare un&#39;attività **[!UICONTROL Deduplication]** nel flusso di lavoro di targeting prima dell&#39;attività di consegna per verificare che esista un solo campo di personalizzazione alla volta. Per ulteriori informazioni sulla deduplicazione, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html?lang=it){target="_blank"}.
 
 * Alcune consegne possono non riuscire e viene visualizzato un errore &quot;Non raggiungibile&quot; che indica:
 

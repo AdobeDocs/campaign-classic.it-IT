@@ -59,7 +59,7 @@ Questo consente di utilizzare i dati raccolti tramite un elenco o in base alle r
 
 Gli elementi di personalizzazione del tipo **[!UICONTROL Target extension]** (targetData) non sono disponibili per i flussi di lavoro di targeting. Il target della consegna deve essere integrato nel flusso di lavoro e specificato nella transizione in entrata della consegna.
 
-Se desideri creare bozze di consegna, la destinazione della bozza deve essere creata in base alla modalità **[!UICONTROL Address substitution]** in modo che sia possibile immettere i dati di personalizzazione. Per ulteriori informazioni, consulta questa sezione nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}.
+Se desideri creare bozze di consegna, la destinazione della bozza deve essere creata in base alla modalità **[!UICONTROL Address substitution]** in modo che sia possibile immettere i dati di personalizzazione. Per ulteriori informazioni, consulta questa sezione nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it#target-population){target="_blank"}.
 
 Nell’esempio seguente, raccoglieremo un elenco di informazioni sui clienti, da utilizzare in un’e-mail personalizzata.
 

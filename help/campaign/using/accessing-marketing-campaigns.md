@@ -41,7 +41,7 @@ Il blocco **[!UICONTROL Browsing]** della scheda **[!UICONTROL Campaigns]** offr
 >
 >Per ulteriori informazioni sull&#39;ergonomia generale di Adobe Campaign, sulle autorizzazioni e sulle funzionalità di gestione dei profili, consulta [questa sezione](../../platform/using/adobe-campaign-workspace.md).
 >
->Tutte le funzionalità relative a canali e consegne sono descritte in dettaglio nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
+>Tutte le funzionalità relative a canali e consegne sono descritte in dettaglio nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it){target="_blank"}.
 
 ### Calendario della campagna {#campaign-calendar}
 

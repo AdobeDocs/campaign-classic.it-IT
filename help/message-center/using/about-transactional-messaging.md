@@ -88,6 +88,6 @@ Dopo aver progettato e pubblicato il modello di messaggio transazionale, se vien
 ## Argomenti correlati {#related-topics}
 
 * [Introduzione ai canali di comunicazione](../../delivery/using/communication-channels.md)
-* [Passaggi chiave per la creazione della consegna](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}
+* [Passaggi chiave per la creazione della consegna](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it){target="_blank"}
 * [Architettura della messaggistica transazionale](../../message-center/using/transactional-messaging-architecture.md)
 * [Accedere ai rapporti di messaggistica transazionale](../../message-center/using/about-transactional-messaging-reports.md)
