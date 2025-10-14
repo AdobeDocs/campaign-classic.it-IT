@@ -5,9 +5,9 @@ description: Rapporti sulle consegne
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
-source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: '1470'
 ht-degree: 10%
 
 ---
@@ -86,7 +86,7 @@ Questa tabella di valori mostra il raggruppamento di consegne, aperture, clic e 
 
 >[!NOTE]
 >
->I nomi di dominio visualizzati in questo report sono definiti nell&#39;elenco dettagliato utilizzato a livello di cubo. Per modificare, aggiungere o rimuovere i domini predefiniti, modificare l&#39;elenco dettagliato **[!UICONTROL Domains]** e modificare i valori e gli alias. Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}. La categoria **[!UICONTROL Others]** include nomi di dominio che non appartengono ad alcun valore dell&#39;elenco dettagliato.
+>I nomi di dominio visualizzati in questo report sono definiti nell&#39;elenco dettagliato utilizzato a livello di cubo. Per modificare, aggiungere o rimuovere i domini predefiniti, modificare l&#39;elenco dettagliato **[!UICONTROL Domains]** e modificare i valori e gli alias. Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}. La categoria **[!UICONTROL Others]** include nomi di dominio che non appartengono ad alcun valore dell&#39;elenco dettagliato.
 
 **[!UICONTROL 4. Generated click streams]**
 
@@ -158,7 +158,7 @@ Questo rapporto fornisce tutte le informazioni principali sulla consegna.
 Questa sezione presenta due indicatori:
 
 * **[!UICONTROL Initial population]**: numero totale di destinatari interessati dalla consegna.
-* inserire nell&#39;elenco Bloccati **[!UICONTROL Messages rejected by the rule]** : numero di indirizzi ignorati durante l&#39;analisi durante l&#39;applicazione delle regole di tipologia: indirizzo mancante, messo in quarantena, in fase di, ecc. Per ulteriori informazioni sulle regole di tipologia, consulta questa [pagina](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
+* inserire nell&#39;elenco Bloccati **[!UICONTROL Messages rejected by the rule]** : numero di indirizzi ignorati durante l&#39;analisi durante l&#39;applicazione delle regole di tipologia: indirizzo mancante, messo in quarantena, in fase di, ecc. Per ulteriori informazioni sulle regole di tipologia, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
 
 **[!UICONTROL Causes of exclusion]**
 

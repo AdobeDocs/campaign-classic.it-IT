@@ -8,17 +8,17 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 9%
+source-wordcount: '709'
+ht-degree: 10%
 
 ---
 
 
 # Decomprimere o decrittografare un file {#unzipping-or-decrypting-a-file-before-processing}
 
-Adobe Campaign consente di importare file compressi o crittografati. Prima di poter essere letti in un&#39;attività [Caricamento dati (file)](../../workflow/using/data-loading-file.md), puoi definire una pre-elaborazione per decomprimere o decrittografare il file.
+Adobe Campaign consente di importare file compressi o crittografati. Prima di poter essere letti in un&#39;attività [Caricamento dati (file)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}), puoi definire una pre-elaborazione per decomprimere o decrittografare il file.
 
 >[!IMPORTANT]
 >
@@ -26,7 +26,7 @@ Adobe Campaign consente di importare file compressi o crittografati. Prima di po
 
 Per poterlo fare:
 
-1. Utilizza il [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=it#decrypting-data) per generare una coppia di chiavi pubblica/privata per consentire la decrittografia del file.
+1. Utilizza il [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) per generare una coppia di chiavi pubblica/privata per consentire la decrittografia del file.
 
    >[!NOTE]
    >
@@ -51,8 +51,8 @@ Un esempio è presentato nel caso d’uso seguente.
 
 **Argomenti correlati:**
 
-* [Attività caricamento dati (file)](../../workflow/using/data-loading-file.md).
-* [Comprimere o crittografare un file](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
+* [Attività caricamento dati (file)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}.
+* [Comprimere o crittografare un file](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}.
 
 ## Caso d’uso: importare dati crittografati utilizzando una chiave generata dal Pannello di controllo Campaign {#use-case-gpg-decrypt}
 
@@ -62,14 +62,14 @@ In questo caso d’uso, creeremo un flusso di lavoro per importare dati che sono
 
 I passaggi per eseguire questo caso d’uso sono i seguenti:
 
-1. Utilizza il Pannello di controllo Campaign per generare una coppia di chiavi (pubblica/privata). I passaggi dettagliati sono disponibili nella [documentazione del Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=it#decrypting-data).
+1. Utilizza il Pannello di controllo Campaign per generare una coppia di chiavi (pubblica/privata). I passaggi dettagliati sono disponibili nella [documentazione del Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
 
    * La chiave pubblica verrà condivisa con il sistema esterno, che la utilizzerà per crittografare i dati da inviare a Campaign.
    * La chiave privata verrà utilizzata da Campaign Classic per decrittografare i dati crittografati in arrivo.
 
    ![](assets/gpg_generate.png)
 
-1. Nel Pannello di controllo Campaign esterno, utilizza la chiave pubblica scaricata dal sistema per crittografare i dati da importare in Campaign Classic.
+1. Nel Pannello di controllo Campaign esterno, utilizzare la chiave pubblica scaricata dal sistema per crittografare i dati da importare in Campaign Classic.
 
 1. In Campaign Classic, crea un flusso di lavoro per importare i dati crittografati e decrittografarli utilizzando la chiave privata installata tramite il Pannello di controllo Campaign. A tal fine, verrà creato un flusso di lavoro come segue:
 
@@ -82,9 +82,10 @@ I passaggi per eseguire questo caso d’uso sono i seguenti:
 
    ![](assets/gpg_key_transfer.png)
 
-   I concetti globali su come configurare l&#39;attività sono disponibili in [questa sezione](../../workflow/using/file-transfer.md).
+   I concetti globali su come configurare l&#39;attività sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
-1. Apri l&#39;attività **[!UICONTROL Data loading (file)]**, quindi configurala in base alle tue esigenze. I concetti globali su come configurare l&#39;attività sono disponibili in [questa sezione](../../workflow/using/data-loading-file.md).
+
+1. Apri l&#39;attività **[!UICONTROL Data loading (file)]**, quindi configurala in base alle tue esigenze. I concetti globali su come configurare l&#39;attività sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}.
 
    Aggiungi una fase di pre-elaborazione all’attività per decrittografare i dati in arrivo. A tale scopo, selezionare l&#39;opzione **[!UICONTROL Pre-process the file]**, quindi selezionare **[!UICONTROL Decrypt]** dall&#39;elenco a discesa **[!UICONTROL Command]**:
 
@@ -92,7 +93,7 @@ I passaggi per eseguire questo caso d’uso sono i seguenti:
 
    >[!NOTE]
    >
-   >Se sono necessarie modifiche ai comandi disponibili, è possibile contattare [l&#39;Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per modificare le impostazioni di preProcessCommand.
+   >Se sono necessarie modifiche ai comandi disponibili, puoi contattare l&#39;[Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per modificare le impostazioni di preProcessCommand.
    >
    >Se si utilizza una distribuzione ibrida, è possibile configurare questi comandi direttamente dal file di configurazione del server (serverConf.xml). [Scopri come configurare i comandi di pre-elaborazione nel file di configurazione del server](../../installation/using/the-server-configuration-file.md#preprocesscommand)
 
@@ -106,6 +107,6 @@ I passaggi per eseguire questo caso d’uso sono i seguenti:
 
 Questo video mostra come utilizzare una chiave GPG per decrittografare i dati.
 
->[!VIDEO](https://video.tv.adobe.com/v/41166?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/36482?quality=12)
 
-Sono disponibili altri video dimostrativi di Campaign Classic [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
+Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

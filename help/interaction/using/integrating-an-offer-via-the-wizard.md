@@ -7,9 +7,9 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 64aea8b9-7f06-4db0-a3e6-6a0e17c3ddcb
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '807'
 ht-degree: 2%
 
 ---
@@ -29,7 +29,7 @@ Per presentare un’offerta durante una campagna di marketing, è sufficiente cr
 
 ![](assets/offer_delivery_009.png)
 
-Ulteriori informazioni sulle consegne di direct mailing [in questa sezione](../../delivery/using/about-direct-mail-channel.md). Ulteriori informazioni sulle campagne di marketing [in questa sezione](../../campaign/using/setting-up-marketing-campaigns.md).
+Ulteriori informazioni sulle consegne di direct mailing [in questa sezione](../../delivery/using/about-direct-mail-channel.md). Ulteriori informazioni sulle campagne di marketing sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=it){target=_blank}.
 
 ### Passaggi principali per l’inserimento di un’offerta in una consegna {#main-steps-for-inserting-an-offer-into-a-delivery}
 
@@ -90,7 +90,7 @@ La consegna può essere personalizzata utilizzando i campi dell’offerta o, nel
 
 Puoi anche presentare le offerte in una consegna utilizzando i profili di consegna.
 
-Per ulteriori informazioni sui profili di consegna, consulta la guida [Campaign - MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+Per ulteriori informazioni sui profili di consegna, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets#delivery-outlines.html){target="_blank"}.
 
 1. Crea una nuova campagna o accedi a una campagna esistente.
 1. Accedi ai profili di consegna tramite la scheda **[!UICONTROL Edit]** > **[!UICONTROL Documents]** della campagna.

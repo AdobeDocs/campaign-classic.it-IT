@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2827'
+source-wordcount: '2829'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ La pulizia del database è configurata su due livelli: nell’utilità di pianif
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla pianificazione, consulta [questa sezione](../../workflow/using/scheduler.md).
+>Per ulteriori informazioni sulla pianificazione, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}.
 
 Per impostazione predefinita, il flusso di lavoro **[!UICONTROL Database cleanup]** è configurato per iniziare ogni giorno alle 4. La pianificazione consente di modificare la frequenza di attivazione del flusso di lavoro. Sono disponibili le seguenti frequenze:
 

@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1784'
-ht-degree: 8%
+source-wordcount: '1791'
+ht-degree: 6%
 
 ---
 
@@ -47,7 +47,7 @@ L’account esterno viene creato e aggiunto all’elenco degli account esterni.
 
 ### E-mail non recapitate {#bounce-mails-external-account}
 
-L&#39;account esterno **Messaggi non recapitati** specifica l&#39;account POP3 esterno da utilizzare per connettersi al servizio e-mail. Per ulteriori informazioni su questo account esterno, consulta questa [pagina](../../workflow/using/inbound-emails.md).
+L&#39;account esterno **Messaggi non recapitati** specifica l&#39;account POP3 esterno da utilizzare per connettersi al servizio e-mail. Per ulteriori informazioni su questo account esterno, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}.
 
 Tutti i server configurati per l&#39;accesso POP3 possono essere utilizzati per ricevere la posta di ritorno.
 
@@ -119,8 +119,7 @@ L&#39;account esterno **[!UICONTROL Routing]** consente di configurare ogni cana
 * [Direct mail](../../delivery/using/about-direct-mail-channel.md)
 * [Agenzia](../../delivery/using/communication-channels.md#other-channels)
 * [X (precedentemente noto come Twitter)](../../social/using/about-social-marketing.md)
-* [Canale iOS](../../delivery/using/configuring-the-mobile-application.md)
-* [Canale Android](../../delivery/using/configuring-the-mobile-application-android.md)
+* [Canali iOS e Android](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}
 
 ### Indirizzamento e-mail {#email-routing-external-account}
 
@@ -160,7 +159,7 @@ Per ulteriori informazioni su questa configurazione, consulta questa [pagina](..
 
 ### FTP {#ftp-external-account}
 
-L’account esterno FTP consente di configurare e testare l’accesso a un server esterno a Adobe Campaign. Per configurare le connessioni con i sistemi esterni, ad esempio i server FTP 898 utilizzati per i trasferimenti di file, puoi creare account esterni. Per ulteriori informazioni, consulta questa [pagina](../../workflow/using/file-transfer.md).
+L’account esterno FTP consente di configurare e testare l’accesso a un server esterno a Adobe Campaign. Per configurare le connessioni con i sistemi esterni, ad esempio i server FTP 898 utilizzati per i trasferimenti di file, puoi creare account esterni. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
 A questo scopo, specifica in questo account esterno l’indirizzo e le credenziali utilizzati per stabilire la connessione al server FTP
 
@@ -190,7 +189,7 @@ Per sapere dove individuare queste credenziali, consulta questa [pagina](https:/
 
 ### SFTP {#sftp-external-account}
 
-L’account esterno SFTP consente di configurare e testare l’accesso a un server esterno a Adobe Campaign. Per impostare connessioni con sistemi esterni, come SFTP utilizzato per i trasferimenti di file, puoi creare account esterni personalizzati. Per ulteriori informazioni, consulta questa [pagina](../../workflow/using/file-transfer.md).
+L’account esterno SFTP consente di configurare e testare l’accesso a un server esterno a Adobe Campaign. Per impostare connessioni con sistemi esterni, come SFTP utilizzato per i trasferimenti di file, puoi creare account esterni personalizzati. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
 ![](assets/ext_account_4.png)
 
@@ -229,20 +228,20 @@ I database esterni compatibili con Campaign sono elencati nella [Matrice di comp
 
 Le impostazioni di configurazione dell&#39;account esterno dipendono dal motore del database. Per ulteriori informazioni, consulta le sezioni seguenti:
 
-* Configura l&#39;accesso a [Vertiche analytics](../../installation/using/configure-fda-vertica.md)
-* Configura l&#39;accesso a [Snowflake](../../installation/using/configure-fda-snowflake.md)
+* Configura accesso a [Vertica Analytics](../../installation/using/configure-fda-vertica.md)
+* Configura accesso a [Snowflake](../../installation/using/configure-fda-snowflake.md)
 * Configura l&#39;accesso a [Google BigQuery](../../installation/using/configure-fda-google-big-query.md)
-* Configura l&#39;accesso all&#39;[Azure synapse](../../installation/using/configure-fda-synapse.md)
-* Configura l&#39;accesso a [Hadoop](../../installation/using/configure-fda-hadoop.md)
+* Configura l&#39;accesso a [Azure Synapse](../../installation/using/configure-fda-synapse.md)
+* Configura accesso a [Hadoop](../../installation/using/configure-fda-hadoop.md)
 * Configura l&#39;accesso a [Oracle](../../installation/using/configure-fda-oracle.md)
-* Configura l&#39;accesso a [Netezza](../../installation/using/configure-fda-netezza.md)
+* Configura accesso a [Netezza](../../installation/using/configure-fda-netezza.md)
 * Configura accesso a [SAP HANA](../../installation/using/configure-fda-sap-hana.md)
-* Configura l&#39;accesso a [Snowflake](../../installation/using/configure-fda-snowflake.md)
+* Configura accesso a [Snowflake](../../installation/using/configure-fda-snowflake.md)
 * Configura accesso a [Sybase IQ](../../installation/using/configure-fda-sybase.md)
 * Configura accesso a [Teradata](../../installation/using/configure-fda-teradata.md)
 
 
-## Account esterni per l’integrazione di Adobe Solution
+## Account esterni di integrazione della soluzione Adobe
 
 ### Adobe Experience Cloud {#adobe-experience-cloud-external-account}
 
@@ -344,7 +343,7 @@ Con il tipo di distribuzione **[!UICONTROL Web API]** e l&#39;autenticazione **[
 
 * **[!UICONTROL Client identifier]**
 
-  ID client che è possibile trovare dal portale di gestione di Microsoft Azure nel campo **[!UICONTROL Client ID]** della categoria **[!UICONTROL Update your code]**.
+  ID client che è possibile trovare dal portale di gestione di Microsoft Azure nel campo **[!UICONTROL Update your code]** della categoria **[!UICONTROL Client ID]**.
 
 * **[!UICONTROL CRM version]**
 
@@ -372,7 +371,7 @@ Con il tipo di distribuzione **[!UICONTROL Web API]** e l&#39;autenticazione **[
 
 * **[!UICONTROL Client identifier]**
 
-  ID client che è possibile trovare dal portale di gestione di Microsoft Azure nel campo **[!UICONTROL Client ID]** della categoria **[!UICONTROL Update your code]**.
+  ID client che è possibile trovare dal portale di gestione di Microsoft Azure nel campo **[!UICONTROL Update your code]** della categoria **[!UICONTROL Client ID]**.
 
 * **[!UICONTROL CRM version]**
 
@@ -398,11 +397,11 @@ Per configurare l’account esterno di Salesforce CRM per l’utilizzo con Adobe
 
 * **[!UICONTROL Client identifier]**
 
-  Per sapere dove trovare l&#39;identificatore client, consulta questa [pagina](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+  Per sapere dove trovare l&#39;identificatore client, consulta questa [pagina](https://help.salesforce.com/articleView?id=000205876&type=1).
 
 * **[!UICONTROL Security token]**
 
-  Per sapere dove trovare il token di sicurezza, consulta questa [pagina](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+  Per sapere dove trovare il token di sicurezza, consulta questa [pagina](https://help.salesforce.com/articleView?id=000205876&type=1).
 
 * **[!UICONTROL API version]**
 
@@ -416,7 +415,7 @@ Per ulteriori informazioni su questa configurazione, consulta questa [pagina](..
 
 ### Servizio Amazon Simple Storage (S3) {#amazon-simple-storage-service--s3--external-account}
 
-Il connettore Amazon Simple Storage Service (S3) può essere utilizzato per importare o esportare dati in Adobe Campaign. Può essere impostato in un’attività del flusso di lavoro. Per ulteriori informazioni, consulta questa [pagina](../../workflow/using/file-transfer.md).
+Il connettore Amazon Simple Storage Service (S3) può essere utilizzato per importare o esportare dati in Adobe Campaign. Può essere impostato in un’attività del flusso di lavoro. consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
 ![](assets/ext_account_3.png)
 
@@ -448,7 +447,7 @@ Per informazioni su dove trovare l&#39;ID della chiave di accesso e la chiave di
 
 ### Archiviazione BLOB di Azure {#azure-blob-external-account}
 
-L&#39;account esterno **Archiviazione BLOB di Azure** può essere utilizzato per importare o esportare dati in Adobe Campaign utilizzando un&#39;attività del flusso di lavoro **[!UICONTROL Transfer file]**. Per ulteriori informazioni, consulta questa [sezione](../../workflow/using/file-transfer.md).
+L&#39;account esterno **Archiviazione BLOB di Azure** può essere utilizzato per importare o esportare dati in Adobe Campaign utilizzando un&#39;attività del flusso di lavoro **[!UICONTROL Transfer file]**. consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
 ![](assets/ext_account_23.png)
 

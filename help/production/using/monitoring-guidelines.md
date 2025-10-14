@@ -4,10 +4,10 @@ title: Linee guida per il monitoraggio
 description: Scopri le linee guida e le best practice per monitorare l’istanza e i processi di Campaign
 feature: Monitoring
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 18%
+source-wordcount: '758'
+ht-degree: 16%
 
 ---
 
@@ -64,7 +64,7 @@ Il Pannello di controllo Campaign ti consente di gestire diverse impostazioni de
 
 **Workflow HeatMap**
 
-Workflow HeatMap fornisce una rappresentazione visiva di tutti i flussi di lavoro in esecuzione sull’istanza. Consente di monitorare facilmente il carico sull’istanza e pianificare i flussi di lavoro di conseguenza. Per ulteriori informazioni, [fai clic qui](../../workflow/using/heatmap.md).
+Workflow HeatMap fornisce una rappresentazione visiva di tutti i flussi di lavoro in esecuzione sull’istanza. Consente di monitorare facilmente il carico sull’istanza e pianificare i flussi di lavoro di conseguenza. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/heatmap.html?lang=it){target="_blank"}.
 
 **Audit trail**
 
@@ -76,13 +76,13 @@ Audit trail consente di visualizzare tutte le modifiche apportate nei flussi di 
 
 **Monitoraggio dello stato del flusso di lavoro**
 
-Oltre alla mappa di calore, puoi creare un flusso di lavoro per monitorare lo stato di un set di flussi di lavoro e inviare messaggi ricorrenti ai supervisori. Per ulteriori informazioni, [fai clic qui](../../workflow/using/supervising-workflows.md).
+Oltre alla mappa di calore, puoi creare un flusso di lavoro per monitorare lo stato di un set di flussi di lavoro e inviare messaggi ricorrenti ai supervisori. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html){target="_blank"}.
 
 **Linee guida generali**
 
 Seguire le linee guida e le best practice durante l’utilizzo dei flussi di lavoro può contribuire a migliorare le prestazioni. Per ulteriori informazioni, consulta le sezioni seguenti:
-* [Best practice per l’utilizzo dei flussi di lavoro](../../workflow/using/workflow-best-practices.md)
-* [Monitoraggio dell’esecuzione dei flussi di lavoro](../../workflow/using/monitoring-workflow-execution.md)
+* [Best practice per l&#39;utilizzo dei flussi di lavoro](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}
+* [Monitoraggio dell’esecuzione dei flussi di lavoro](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
 
 ### Monitoraggio delle consegne {#monitoring-deliveries}
 
@@ -94,7 +94,7 @@ I rapporti SMTP visualizzano le statistiche di consegna e gli errori SMTP per do
 
 **Best practice**
 
-[Best practice per l&#39;invio e la progettazione della consegna](../../delivery/using/delivery-best-practices.md) possono aiutarti a migliorarne le prestazioni.
+Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"} per informazioni sulle best practice per l’invio e la progettazione delle consegne al fine di migliorare le prestazioni.
 
 **Risoluzione dei problemi di consegna**
 Quando si verificano problemi con le consegne, è possibile eseguire azioni specifiche:

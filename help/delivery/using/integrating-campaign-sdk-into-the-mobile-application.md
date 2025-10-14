@@ -1,32 +1,32 @@
 ---
 product: campaign
-title: Integrare l’SDK di Campaign
-description: Scopri come integrare l’SDK di Campaign nella tua app mobile
+title: Integrare Campaign SDK
+description: Scopri come integrare Campaign SDK nella tua app mobile
 feature: Mobile SDK Integration, Push
 role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: 81b47231b027a189bc8b9029b7d48939734d08ed
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '983'
 ht-degree: 3%
 
 ---
 
-# Integrare l’SDK Campaign con la tua app {#integrating-campaign-sdk-into-the-mobile-application}
+# Integrare Campaign SDK con la tua app {#integrating-campaign-sdk-into-the-mobile-application}
 
 >[!CAUTION]
 >
->L’Adobe consiglia vivamente di utilizzare l’SDK di Adobe Experience Platform Mobile configurando l’estensione Adobe Campaign nell’interfaccia utente di Data Collection. L’SDK di Adobe Experience Platform Mobile aiuta ad potenziare soluzioni e servizi di Experience Cloud di Adobe nelle app mobili. La configurazione degli SDK viene gestita tramite l’interfaccia utente di raccolta dati, per un’impostazione flessibile e integrazioni estensibili basate su regole. [Ulteriori informazioni nella documentazione di Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
+>Adobe consiglia vivamente di utilizzare Adobe Experience Platform Mobile SDK configurando l’estensione Adobe Campaign nell’interfaccia utente di Data Collection. L’SDK di Adobe Experience Platform Mobile aiuta ad potenziare soluzioni e servizi di Experience Cloud di Adobe nelle app mobili. La configurazione degli SDK viene gestita tramite l’interfaccia utente di raccolta dati, per un’impostazione flessibile e integrazioni estensibili basate su regole. [Ulteriori informazioni nella documentazione di Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 
-Per ottenere l&#39;SDK di Campaign (precedentemente noto come SDK Neolane), contatta l&#39;[Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
+Per ottenere Campaign SDK (precedentemente noto come Neolane SDK), contatta l&#39;[Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
 
 Per ulteriori informazioni sulle diverse versioni supportate di Android e iOS, consulta la [Matrice di compatibilità](../../rn/using/compatibility-matrix.md#MobileSDK).
 
-Di seguito sono riportati i passaggi di integrazione per l’SDK di Campaign.
+Di seguito sono riportati i passaggi di integrazione per Campaign SDK.
 
-+++**Caricamento dell&#39;SDK di Campaign**
++++**Caricamento di Campaign SDK**
 
 * **In Android**: il file **neolane_sdk-release.aar** deve essere collegato al progetto.
 
@@ -44,27 +44,27 @@ Di seguito sono riportati i passaggi di integrazione per l’SDK di Campaign.
   <uses-permission android:name="android.permission.READ_PHONE_STATE" /> 
   ```
 
-  Dalla versione 1.0.24 dell’SDK, questa autorizzazione viene utilizzata solo per le versioni precedenti a Android 6.0.
+  Dalla versione 1.0.24 di SDK, questa autorizzazione è utilizzata solo per le versioni precedenti a Android 6.0.
 
-  A partire dalla versione 1.0.26 dell’SDK, questa autorizzazione non viene più utilizzata.
+  A partire dalla versione 1.0.26 di SDK, questa autorizzazione non viene più utilizzata.
 
-* **In iOS**: i file **libNeolaneSDK.a** e **Neolane_SDK.h** devono essere collegati al progetto. A partire dalla versione 1.0.24 dell&#39;SDK, l&#39;opzione **ENABLE_BITCODE** è attivata.
+* **In iOS**: i file **libNeolaneSDK.a** e **Neolane_SDK.h** devono essere collegati al progetto. A partire dalla versione 1.0.24 di SDK, l&#39;opzione **ENABLE_BITCODE** è attivata.
 
   >[!NOTE]
   >
-  >Per la versione 1.0.25 dell&#39;SDK, le quattro architetture sono disponibili nel file **Neolane_SDK.h**.
+  >Per la versione 1.0.25 di SDK, le quattro architetture sono disponibili nel file **Neolane_SDK.h**.
 
 +++
 
 +++**Dichiarazione delle impostazioni di integrazione**
 
-Per integrare l’SDK di Campaign nell’app mobile, l’amministratore funzionale deve fornire le seguenti informazioni allo sviluppatore:
+Per integrare Campaign SDK nell’app mobile, l’amministratore funzionale deve fornire le seguenti informazioni allo sviluppatore:
 
 * **Chiave di integrazione**: per abilitare la piattaforma Adobe Campaign per identificare l&#39;applicazione mobile.
 
   >[!NOTE]
   >
-  >Questa chiave di integrazione viene immessa nella console Adobe Campaign, nella scheda **[!UICONTROL Information]** del servizio dedicato all&#39;app mobile. Consulta [Configurazione di un&#39;app mobile in Adobe Campaign](configuring-the-mobile-application.md).
+  >Questa chiave di integrazione viene immessa nella console Adobe Campaign, nella scheda **[!UICONTROL Information]** del servizio dedicato all&#39;app mobile. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}.
 
 * **URL di tracciamento**: corrispondente all&#39;indirizzo del server di tracciamento di Adobe Campaign.
 * **URL di marketing**: per abilitare la raccolta di sottoscrizioni.
@@ -152,7 +152,7 @@ La funzione di registrazione consente di:
 
   Le funzioni di tracciamento consentono di tenere traccia delle attivazioni delle notifiche (aperture) e delle visualizzazioni delle notifiche (schermata).
 
-  Per tenere traccia della visualizzazione delle notifiche (eseguita chiamando la funzione **notificationReceive** dell&#39;SDK), segui l&#39;implementazione riportata di seguito. Se utilizzi FCM (Firebase Cloud Messaging), ti consigliamo di utilizzare la funzione **notificationReceive** quando la funzione **onMessageReceived** viene chiamata dal sistema Android.
+  Per tenere traccia della visualizzazione delle notifiche (eseguita chiamando la funzione **notificationReceive** di SDK), seguire l&#39;implementazione riportata di seguito. Se utilizzi FCM (Firebase Cloud Messaging), ti consigliamo di utilizzare la funzione **notificationReceive** quando la funzione **onMessageReceived** viene chiamata dal sistema Android.
 
   ```
   package com.android.YourApplication;
@@ -248,7 +248,7 @@ La funzione di registrazione consente di:
   }
   ```
 
-  Di seguito è riportato un esempio di implementazione per il tracciamento di una notifica aperta (eseguita chiamando la funzione **notificationOpening** dell&#39;SDK). La classe **NotificationActivity** corrisponde a quella utilizzata per creare l&#39;oggetto **notifIntent** nell&#39;esempio precedente.
+  Di seguito è riportato un esempio di implementazione per il tracciamento di una notifica aperta (eseguita chiamando la funzione **notificationOpening** di SDK). La classe **NotificationActivity** corrisponde a quella utilizzata per creare l&#39;oggetto **notifIntent** nell&#39;esempio precedente.
 
   ```
   public class NotificationActivity extends Activity {
@@ -436,7 +436,7 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
 
 Per implementare il delegato **registerDeviceStatus**, eseguire la procedura seguente:
 
-1. Implementa **setDelegate** durante l&#39;inizializzazione dell&#39;SDK.
+1. Implementare **setDelegate** durante l&#39;inizializzazione di SDK.
 
    ```
    // AppDelegate.m
@@ -586,7 +586,7 @@ Le variabili ti consentono di definire il comportamento dell’app mobile dopo a
 
 >[!CAUTION]
 >
->L’Adobe consiglia di scegliere nomi di variabili brevi, perché la dimensione della notifica è limitata a 4 kB per iOS e Android.
+>Adobe consiglia di scegliere nomi di variabili brevi perché la dimensione della notifica è limitata a 4 kB per iOS e Android.
 
 +++
 

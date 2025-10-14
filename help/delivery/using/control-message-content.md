@@ -6,10 +6,10 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Deliverability
 role: User
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 6%
+source-wordcount: '760'
+ht-degree: 5%
 
 ---
 
@@ -25,11 +25,11 @@ Durante la progettazione del contenuto del messaggio, segui i principi elencati 
 * [Collegamento per l&#39;annullamento dell&#39;abbonamento](#opt-out) e pagina di destinazione: il collegamento per l&#39;annullamento dell&#39;abbonamento è essenziale. Deve essere visibile e valido e il modulo deve essere funzionale.
 * Anteprima: utilizza gli strumenti offerti da Adobe Campaign per verificare e ottimizzare il contenuto dell&#39;e-mail ([Rendering della casella in entrata](#message-responsiveness), [SpamAssassin](#spamassassin)).
 
-Per ulteriori suggerimenti per ottimizzare il recapito messaggi durante la progettazione del contenuto, consulta la [Guida alle best practice per il recapito messaggi](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html?lang=it) di Adobe.
+Per ulteriori suggerimenti per ottimizzare il recapito messaggi durante la progettazione del contenuto, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html).
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla modifica del contenuto di posta elettronica, vedere [Definire il contenuto di posta elettronica](defining-the-email-content.md).
+>Per ulteriori informazioni sulla modifica del contenuto delle e-mail, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}.
 
 ## Indirizzo mittente {#sender-address}
 
@@ -37,7 +37,7 @@ Alcuni ISP verificano la validità dell&#39;indirizzo del mittente (**[!UICONTRO
 
 È necessario assicurarsi che sia fornito un indirizzo corretto a livello di istanza (menu **[!UICONTROL Tools > Advanced > deployment wizard...]**) o negli scenari utilizzati più di frequente.
 
-Per ulteriori informazioni, consulta [questa pagina](defining-the-email-content.md).
+Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}.
 
 ## Personalizzazione {#personalization}
 
@@ -47,7 +47,7 @@ Per ulteriori informazioni sull&#39;utilizzo dei campi di personalizzazione in A
 
 ## Collegamento e modulo per la rinuncia {#opt-out}
 
-Per impostazione predefinita, quando il messaggio viene analizzato, una [regola di tipologia](steps-validating-the-delivery.md#validation-process-with-typologies) controlla se è stato incluso un collegamento di rinuncia e, in caso contrario, genera un avviso. Puoi modificare questa regola in modo da generare un errore anziché un semplice avviso e interrompere una consegna senza questo collegamento.
+Per impostazione predefinita, quando il messaggio viene analizzato, una regola di tipologia controlla se è stato incluso un collegamento di rinuncia e, in caso contrario, genera un avviso. Puoi modificare questa regola in modo da generare un errore anziché un semplice avviso e interrompere una consegna senza questo collegamento. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
 
 Prima di ogni invio, verifica che il collegamento di rinuncia funzioni correttamente. Ad esempio, quando invii la bozza, accertati che il collegamento sia valido, che il modulo sia in linea e che la convalida di questo modifichi il valore del campo **[!UICONTROL No longer contact this recipient]** in **[!UICONTROL Yes]**. Dovresti effettuare questo controllo in modo sistematico perché è sempre possibile un errore umano durante l’immissione del collegamento o la modifica del modulo.
 
@@ -63,7 +63,7 @@ La richiesta di conferma aggiuntiva non è affidabile: un utente può avere due 
 
 Prima di inviare il messaggio, puoi verificarne la reattività controllando come si presenterà su diversi dispositivi. In questo modo, si assicurerà che venga visualizzato in modo ottimale su diversi client web, servizi di posta sul web e dispositivi.
 
-Per ottenere questo risultato, Adobe Campaign acquisisce il rendering e lo rende disponibile in un report dedicato. Ciò ti permette di visualizzare in anteprima il messaggio inviato nei vari contesti in cui potrebbe essere ricevuto.
+Per ottenere questo risultato, Adobe Campaign acquisisce il rendering e lo rende disponibile in un report dedicato. Questo ti permette di visualizzare in anteprima il messaggio inviato nei vari contesti in cui potrebbe essere ricevuto.
 
 Per ulteriori informazioni, consulta [Rendering in entrata](inbox-rendering.md).
 

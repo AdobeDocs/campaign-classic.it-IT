@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3094'
+source-wordcount: '3096'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,11 @@ La sezione seguente fornisce una panoramica della configurazione necessaria per 
 
 >[!NOTE]
 >
->Alcune configurazioni possono essere eseguite solo da Adobe per le distribuzioni ospitate da Adobe, ad esempio per accedere ai file di configurazione del server e dell’istanza. Per ulteriori informazioni sulle diverse distribuzioni, consulta la sezione [Modelli di hosting](../../installation/using/hosting-models.md) o [questa pagina](../../installation/using/capability-matrix.md).
+>Alcune configurazioni possono essere eseguite solo da Adobe per le distribuzioni in hosting da Adobe, ad esempio per accedere ai file di configurazione del server e dell’istanza. Per ulteriori informazioni sulle diverse distribuzioni, consulta la sezione [Modelli di hosting](../../installation/using/hosting-models.md) o [questa pagina](../../installation/using/capability-matrix.md).
 
 Per ulteriori informazioni sui concetti e sulle best practice relativi al recapito messaggi con Adobe Campaign, consulta questa [sezione](../../delivery/using/about-deliverability.md).
 
-Per informazioni più approfondite sulla consegna dei messaggi, comprese tutte le raccomandazioni tecniche relative all&#39;invio e alla ricezione efficienti di e-mail da parte di una piattaforma Adobe, consulta la [Guida alle best practice per la consegna dei messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it).
+Per informazioni più approfondite sulla consegna dei messaggi, inclusi tutti i consigli tecnici relativi all&#39;invio e alla ricezione efficienti di e-mail da parte di una piattaforma Adobe, consulta la [Guida alle best practice per la consegna dei messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it).
 
 ## Principio di funzionamento {#operating-principle}
 
@@ -316,7 +316,7 @@ Puoi definire il formato dei messaggi inviati, in modo che il contenuto visualiz
 
 A tale scopo, passare al documento **[!UICONTROL Management of email formats]**, che si trova in **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Non deliverables management]** > **[!UICONTROL Mail rule sets]**.
 
-Questo documento contiene un elenco di tutti i domini predefiniti che corrispondono ai formati giapponesi gestiti da Adobe Campaign. Per ulteriori informazioni, consultare [questo documento](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles).
+Questo documento contiene un elenco di tutti i domini predefiniti che corrispondono ai formati giapponesi gestiti da Adobe Campaign. Per ulteriori informazioni, consulta la [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}.
 
 ![](assets/mail_rule_sets.png)
 
@@ -331,7 +331,7 @@ Il parametro **MIME structure** (Multipurpose Internet Mail Extensions) consente
 
 Se l&#39;opzione **[!UICONTROL Image inclusion]** è abilitata, verranno visualizzate direttamente nel corpo dell&#39;e-mail. Le immagini vengono quindi caricate e i collegamenti URL sostituiti dal relativo contenuto.
 
-Questa opzione è particolarmente utilizzata dal mercato giapponese per **Deco-mail**, **Decore Mail** o **Decoration Mail**. Per ulteriori informazioni, consultare [questo documento](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles).
+Questa opzione è particolarmente utilizzata dal mercato giapponese per **Deco-mail**, **Decore Mail** o **Decoration Mail**. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}.
 
 >[!IMPORTANT]
 >

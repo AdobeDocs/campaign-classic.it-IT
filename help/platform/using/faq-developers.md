@@ -8,10 +8,10 @@ content-type: reference
 level: Intermediate, Experienced
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 84%
+source-wordcount: '511'
+ht-degree: 82%
 
 ---
 
@@ -55,7 +55,7 @@ Puoi eseguire query sul database di Campaign utilizzando l’editor di query gen
 
 Le query vengono create utilizzando i campi della tabella selezionata o utilizzando una formula. I principi fondamentali per creare una query nel database di Campaign sono descritti [in questa pagina](../../platform/using/about-queries-in-campaign.md).
 
-[Fai clic qui](../../workflow/using/query.md) per scoprire l’editor di query di Campaign.
+Scopri le query sulla [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
 
 ## Come posso importare un pacchetto di dati? {#how-can-i-import-a-data-package-}
 
@@ -67,4 +67,4 @@ Il principio dei pacchetti di dati è di esportare una configurazione di dati e 
 
 ## Dove posso trovare l’elenco delle API di Campaign Classic? {#where-can-i-find-the-list-of-campaign-classic-apis}
 
-Tutte le API di Campaign, inclusa la loro descrizione completa, sono disponibili in questa [&#128279;](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=it)documentazione dedicata.
+Tutte le API di Campaign, inclusa la loro descrizione completa, sono disponibili in questa [](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=it)documentazione dedicata.

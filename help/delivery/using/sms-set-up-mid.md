@@ -6,9 +6,9 @@ feature: SMS
 role: User, Developer, Admin
 level: Experienced
 exl-id: 6987cb5e-8821-4619-b0e4-f0fad3355bfb
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '982'
 ht-degree: 8%
 
 ---
@@ -154,7 +154,7 @@ A questo scopo, segui la procedura indicata di seguito:
 
 ## Modificare il modello di consegna {#changing-the-delivery-template}
 
-Adobe Campaign offre un modello di consegna mobile che si trova nel nodo **[!UICONTROL Resources > Templates > Delivery templates]**. Per ulteriori informazioni, consulta la sezione [Informazioni sui modelli](about-templates.md).
+Adobe Campaign offre un modello di consegna mobile che si trova nel nodo **[!UICONTROL Resources > Templates > Delivery templates]**. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
 
 Per inviare messaggi tramite il canale SMS, devi creare un modello che includa un riferimento al connettore del canale.
 

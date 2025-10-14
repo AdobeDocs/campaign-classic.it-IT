@@ -6,10 +6,10 @@ feature: SMS
 role: User, Developer, Admin
 level: Experienced
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 26%
+source-wordcount: '1736'
+ht-degree: 27%
 
 ---
 
@@ -160,7 +160,7 @@ La tabella seguente presenta i caratteri presi in considerazione dallo standard 
   <tr> 
    <td> è </td> 
    <td> <img height="21px" src="assets/delta.png" /> </td> 
-   <td> &rbrace;Permesso </td> 
+   <td> }Permesso </td> 
    <td> 4 </td> 
    <td> D </td> 
    <td> M </td> 
@@ -212,9 +212,9 @@ La tabella seguente presenta i caratteri presi in considerazione dallo standard 
    <td> <img height="21px" src="assets/theta.png" /> </td> 
    <td> ) </td> 
    <td> 9 </td> 
-   <td> Io </td> 
+   <td> I </td> 
    <td> Y </td> 
-   <td> io </td> 
+   <td> i </td> 
    <td> y </td> 
   </tr> 
   <tr> 
@@ -232,7 +232,7 @@ La tabella seguente presenta i caratteri presi in considerazione dallo standard 
    <td> ESC </td> 
    <td> + </td> 
    <td> ; </td> 
-   <td> Okay </td> 
+   <td> K </td> 
    <td> Ä </td> 
    <td> k </td> 
    <td> ä </td> 
@@ -353,7 +353,7 @@ I passaggi per configurare un account esterno utilizzando il connettore SMPP gen
 
 ## Modificare il modello di consegna {#changing-the-delivery-template}
 
-Adobe Campaign fornisce un modello per la consegna a dispositivi mobili. Questo modello è disponibile nel nodo **[!UICONTROL Resources > Templates > Delivery templates]**. Per ulteriori informazioni, consulta la sezione [Informazioni sui modelli](about-templates.md).
+Adobe Campaign fornisce un modello per la consegna a dispositivi mobili. Questo modello è disponibile nel nodo **[!UICONTROL Resources > Templates > Delivery templates]**. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
 
 Per distribuire tramite un canale SMS, devi creare un modello in cui si fa riferimento al connettore del canale.
 

@@ -7,9 +7,9 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: 30a94bce-6d96-4a6d-a62f-7451c822f0e3
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '220'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Assets condiviso da Adobe Experience Cloud può essere utilizzato nelle e-mail e
 
 1. Nella finestra di modifica, seleziona l’opzione per aggiungere un’immagine:
 
-   * Se si utilizza la [modalità di modifica standard](../../delivery/using/defining-the-email-content.md#adding-images), selezionare **[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**.
+   * Se si utilizza la [modalità di modifica standard](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}, selezionare **[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**.
 
      ![](assets/dam_insert_image_standard.png)
 

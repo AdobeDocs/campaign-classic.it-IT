@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '798'
 ht-degree: 4%
 
 ---
@@ -94,7 +94,7 @@ Nelle istanze di esecuzione, è possibile accedere ai flussi di lavoro tecnici p
 
 ### Pianificazione del flusso di lavoro di archiviazione
 
-Evitare di modificare la pianificazione del flusso di lavoro di archiviazione **&#x200B;**&#x200B;eseguita sull&#39;istanza di controllo. In caso contrario, alcuni dati di tracciamento estratti dall’istanza di esecuzione potrebbero andare persi.
+Evitare di modificare la pianificazione del flusso di lavoro di archiviazione **** eseguita sull&#39;istanza di controllo. In caso contrario, alcuni dati di tracciamento estratti dall’istanza di esecuzione potrebbero andare persi.
 
 Se si modifica la pianificazione del flusso di lavoro di archiviazione, è necessario modificare anche la pianificazione del flusso di lavoro di **tracciamento** nell&#39;istanza di esecuzione in modo che corrisponda alla pianificazione del flusso di lavoro di archiviazione nell&#39;istanza di controllo.
 
@@ -169,6 +169,6 @@ A questo scopo, segui la procedura indicata di seguito:
 
 1. Crea un account esterno per brand con lo stesso nome interno definito nell&#39;[istanza di esecuzione](#execution-instance) (passaggio 1).
 
-1. Crea un [modello di consegna](../../delivery/using/about-templates.md) per marchio.
+1. Crea un modello di consegna per marchio. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
 
 1. In **[!UICONTROL Properties]** del modello di consegna, imposta il routing sull&#39;account esterno del brand.

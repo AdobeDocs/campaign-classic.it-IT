@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 7fc24ef2-b021-440b-b1f2-8c77e2425328
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 83%
+source-wordcount: '761'
+ht-degree: 72%
 
 ---
 
@@ -26,13 +26,13 @@ Scopri come eseguire i passaggi di test e convalida prima di inviare messaggi al
 
 L’analisi della consegna è la fase in cui viene calcolata la popolazione target e viene preparato il contenuto della consegna. Una volta completata, la consegna è pronta all’invio. Consulta i log per verificare che tutto sia corretto.
 
-[Fai clic qui per ulteriori informazioni](../../delivery/using/steps-validating-the-delivery.md).
+Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
 
 ### Perché dovrei creare delle prove? {#why-should-i-create-proofs-}
 
 Adobe consiglia vivamente di creare messaggi di prova per testare la consegna su un gruppo di approvazione prima di inviarla al target principale. Puoi quindi convalidare contenuto dei messaggi, personalizzazione e parametri di consegna.
 
-[Fai clic qui per ulteriori informazioni](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
 
 ### Come si utilizzano gli indirizzi di seed in Adobe Campaign? {#how-to-use-seed-addresses-in-adobe-campaign-}
 
@@ -49,13 +49,13 @@ Ciò offre i seguenti vantaggi:
 
 Per rilevare eventuali errori nella configurazione dei messaggi, Adobe consiglia vivamente di impostare un ciclo di convalida della consegna. Accertati che il contenuto sia approvato con la frequenza necessaria inviando delle prove a destinatari di test. Per approvare il contenuto, deve essere inviata una prova ogni volta che viene apportata una modifica.
 
-[Fai clic qui per ulteriori informazioni](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
 
 ### Cos’è una regola di tipologia? {#what-is-a-typology-rule-}
 
 Per evitare conflitti tra campagne, Adobe Campaign può sottoporre a test diverse combinazioni applicando regole di vincolo specifiche. Ciò garantisce che i messaggi inviati soddisfino al meglio le esigenze e le aspettative dei clienti, in linea con le politiche di comunicazione aziendali.
 
-[Fai clic qui per ulteriori informazioni](../../campaign-opt/using/about-campaign-typologies.md).
+Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=it){target="_blank"}.
 
 ## Inviare i messaggi {#send-your-messages}
 
@@ -63,25 +63,25 @@ Scopri come inviare messaggi in diversi canali con Adobe Campaign.
 
 ### Come posso inviare le e-mail in modo graduale? {#how-can-i-send-emails-in-waves-}
 
-Prima di inviare una consegna a una popolazione numerosa, puoi [configurare delle ondate](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves) per suddividere i messaggi in più batch e bilanciare il carico.
+Prima di inviare una consegna a una popolazione numerosa, puoi configurare delle ondate per suddividere i messaggi in più batch e bilanciare il carico. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html#sending-using-multiple-waves){target="_blank"}.
 
 ### Quali sono i passaggi chiave per creare un’e-mail in Campaign? {#which-are-the-key-steps-to-create-an-email-in-campaign-}
 
 Una volta creata e convalidata la consegna dell’e-mail, puoi inviarla. Puoi decidere di inviare l’e-mail al target principale immediatamente o pianificare una consegna per una data successiva. Se necessario, prima di questo passaggio, puoi anche effettuare una stima della popolazione target.
 
-[Fai clic qui per ulteriori informazioni](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
 
 ### Come si pianifica una consegna? {#how-to-schedule-a-delivery-}
 
 Puoi posticipare la consegna dei messaggi per pianificare la consegna o per gestire la pressione di vendita ed evitare di sollecitare eccessivamente una popolazione.
 
-[Fai clic qui per ulteriori informazioni](../../delivery/using/steps-sending-the-delivery.md#scheduling-the-delivery-sending).
+Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html#schedule-delivery-sending){target="_blank"}.
 
 ### Posso aggiungere un allegato alle e-mail? {#can-i-add-an-attachment-to-emails-}
 
 Con Campaign Classic, puoi aggiungere allegati personalizzati alle e-mail.
 
-[Fai clic qui per ulteriori informazioni sugli allegati e-mail](../../delivery/using/attaching-files.md).
+Ulteriori informazioni sugli allegati e-mail nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html){target="_blank"}.
 
 ## Tracciare i messaggi e misurarne l’impatto {#track-your-messages-and-measure-their-impact}
 
@@ -103,7 +103,7 @@ Scopri come tenere traccia delle consegne e comprendere il comportamento dei des
 
  Adobe Campaign dispone di una serie di report per monitorare le consegne e tracciare i messaggi.
 
-[Fai clic qui per ulteriori informazioni sui report integrati](../../reporting/using/delivery-reports.md).
+[Fai clic qui per ulteriori informazioni sui rapporti incorporati](../../reporting/using/delivery-reports.md).
 
 ### In che modo Adobe Campaign definisce e gestisce gli indirizzi in quarantena? {#how-does-adobe-campaign-qualify-and-manage-quarantine-addresses-}
 

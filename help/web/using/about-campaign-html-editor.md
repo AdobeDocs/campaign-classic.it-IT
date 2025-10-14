@@ -5,9 +5,9 @@ description: Introduzione a Campaign DCE
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 exl-id: f5d65e89-6b18-482b-97d8-11ab94f6775e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 **Digital Content Editor (DCE)** è un editor di contenuti HTML che consente di creare facilmente contenuti e modelli in formato HTML in Adobe Campaign.
 
-Con Digital Content Editor è possibile inserire e formattare elementi di pagina e mappare i campi del database con gli elementi di una pagina HTML. Questo editor è disponibile quando crei una pagina per un’applicazione web o quando crei consegne basate su un modello DCE.
+Con Digital Content Editor è possibile inserire e formattare elementi di pagina e mappare campi di database con elementi di una pagina HTML. Questo editor è disponibile quando crei una pagina per un’applicazione web o quando crei consegne basate su un modello DCE.
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ Per creare una **applicazione Web** semplice, è necessario:
 1. Crea un&#39;applicazione Web - [Ulteriori informazioni](creating-a-landing-page.md)
 1. Seleziona contenuto esistente o crea contenuto da un modello standard - [Ulteriori informazioni](template-management.md)
 1. Modifica e configura il contenuto - [Ulteriori informazioni](editing-content.md)
-1. Publish l&#39;applicazione Web - [Ulteriori informazioni](creating-a-landing-page.md#step-3---publishing-content)
+1. Pubblica applicazione Web - [Ulteriori informazioni](creating-a-landing-page.md#step-3---publishing-content)
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ Per creare una **consegna e-mail**, è necessario:
 1. Creare una consegna da un modello DCE - [Ulteriori informazioni](use-case-creating-an-email-delivery.md)
 1. Seleziona un contenuto esistente o crea contenuto da un [modello standard](template-management.md)
 1. Modificare e configurare i contenuti online
-1. Invia la consegna - [Ulteriori informazioni](../../delivery/using/steps-about-delivery-creation-steps.md)
+1. Invia la consegna - Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}
 
 >[!NOTE]
 >

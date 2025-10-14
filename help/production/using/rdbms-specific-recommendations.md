@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: '1235'
 ht-degree: 1%
 
 ---
@@ -84,7 +84,7 @@ Per aiutarti a impostare i piani di manutenzione, questa sezione elenca alcuni c
 
 >[!IMPORTANT]
 >
->Adobe consiglia vivamente di non eseguire VACUUM FULL sulle impostazioni del database ospitato dagli Adobi di Campaign. La manutenzione suggerita è una guida solo per le installazioni ON-PREMISE. Per gli schemi e le implementazioni di tabelle personalizzate, utilizza VACUUM FULL a proprio rischio in quanto VACUUM, senza monitoraggio, può bloccare esclusivamente le tabelle causando query bloccate e, in alcuni casi, bloccare l’intero database.
+>Adobe consiglia vivamente di non eseguire VACUUM FULL sulle impostazioni del database ospitato da Campaign Adobe. La manutenzione suggerita è una guida solo per le installazioni ON-PREMISE. Per gli schemi e le implementazioni di tabelle personalizzate, utilizza VACUUM FULL a proprio rischio in quanto VACUUM, senza monitoraggio, può bloccare esclusivamente le tabelle causando query bloccate e, in alcuni casi, bloccare l’intero database.
 
 In PostgreSQL è possibile utilizzare le seguenti parole chiave tipiche:
 
@@ -141,11 +141,11 @@ VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
 
 >[!NOTE]
 >
->* L’Adobe consiglia di iniziare con tabelle più piccole: in questo modo, se il processo non riesce su tabelle di grandi dimensioni (in cui il rischio di errore è maggiore), almeno parte della manutenzione è stata completata.
->* L’Adobe consiglia di aggiungere le tabelle specifiche del modello dati, che possono essere soggette ad aggiornamenti significativi. Questo può essere il caso di **NmsRecipient** se si dispone di flussi di replica dei dati giornalieri di grandi dimensioni.
+>* Adobe consiglia di iniziare con tabelle più piccole: in questo modo, se il processo non riesce su tabelle di grandi dimensioni (in cui il rischio di errore è maggiore), almeno parte della manutenzione è stata completata.
+>* Adobe consiglia di aggiungere le tabelle specifiche del modello dati, che possono essere soggette ad aggiornamenti significativi. Questo può essere il caso di **NmsRecipient** se si dispone di flussi di replica dei dati giornalieri di grandi dimensioni.
 >* L&#39;istruzione VACUUM blocca la tabella, che mette in pausa alcuni processi durante l&#39;esecuzione della manutenzione.
->* Per tabelle molto grandi (in genere superiori a 5 Gb), l&#39;istruzione VACUUM FULL può diventare piuttosto inefficiente e richiedere molto tempo. L&#39;Adobe non consiglia di utilizzarlo per la tabella **YyyNmsBroadLogXxx**.
->* Questa operazione di manutenzione può essere implementata da un flusso di lavoro Adobe Campaign, utilizzando un&#39;attività **[!UICONTROL SQL]**. Per ulteriori informazioni, consulta [questa sezione](../../workflow/using/architecture.md). Assicurati di pianificare la manutenzione per un tempo di attività basso che non si scontra con la finestra di backup.
+>* Per tabelle molto grandi (in genere superiori a 5 Gb), l&#39;istruzione VACUUM FULL può diventare piuttosto inefficiente e richiedere molto tempo. Adobe sconsiglia di utilizzarlo per la tabella **YyyNmsBroadLogXxx**.
+>* Questa operazione di manutenzione può essere implementata da un flusso di lavoro Adobe Campaign, utilizzando un&#39;attività **[!UICONTROL SQL]**. Assicurati di pianificare la manutenzione per un tempo di attività basso che non si scontra con la finestra di backup.
 >
 
 ### Ricostruzione di un database {#rebuilding-a-database}
@@ -157,7 +157,7 @@ PostgreSQL non fornisce un modo semplice per eseguire una ricostruzione della ta
 
 Di seguito è riportato un esempio di deframmentazione della tabella che utilizza funzioni specifiche per generare la DDL necessaria. L&#39;istruzione SQL seguente consente di creare due nuove funzioni: **GenRebuildTablePart1** e **GenRebuildTablePart2**, che possono essere utilizzate per generare la DDL necessaria per ricreare una tabella.
 
-* La prima funzione consente di creare una tabella di lavoro (**&#x200B; _tmp** qui) che è una copia della tabella originale.
+* La prima funzione consente di creare una tabella di lavoro (** _tmp** qui) che è una copia della tabella originale.
 * La seconda funzione elimina quindi la tabella originale e rinomina la tabella di lavoro e i relativi indici.
 * Se si utilizzano due funzioni invece di una, se la prima non riesce, non si corre il rischio di eliminare la tabella originale.
 

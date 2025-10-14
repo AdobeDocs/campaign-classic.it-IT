@@ -6,9 +6,9 @@ feature: Technote, Upgrade
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2225'
+source-wordcount: '2226'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 
 
-Adobe rimuove dal centro dati legacy: le istanze di Campaign Classic devono essere trasferite a Public Cloud Amazon Web Services (AWS). [Ulteriori informazioni su questa iniziativa](dc-migration.md).
+Adobe disattiva il centro dati legacy: le istanze di Campaign Classic devono essere trasferite a Public Cloud Amazon Web Services (AWS). [Ulteriori informazioni su questa iniziativa](dc-migration.md).
 
 Di seguito è riportata una serie di domande comuni su questo progetto, sull’impatto sugli ambienti Campaign e su altre risorse utili.
 
-Per qualsiasi altra domanda, puoi contattare [l&#39;Assistenza clienti Adobe](https://experienceleague.adobe.com/it?support-solution=Campaign#support).
+Per qualsiasi altra domanda, puoi contattare l&#39;[Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 ## Impatto sull&#39;infrastruttura
 
@@ -45,13 +45,13 @@ Gli impatti globali su database e infrastruttura sono elencati di seguito.
 
 * **Il numero di build o la versione di Campaign cambieranno?**
 
-  Come primo passo, manterremo la stessa build Campaign Classic con la migrazione.
+  Come primo passo, manterremo la stessa build di Campaign Classic con la migrazione.
 
-  In un passaggio successivo, effettueremo l’aggiornamento alla build Campaign Classic GA più recente. Per ulteriori informazioni, consulta [questa pagina](../../rn/using/rn-overview.md).
+  In un passaggio successivo, procederemo all’aggiornamento alla più recente build Campaign Classic GA. Per ulteriori informazioni, consulta [questa pagina](../../rn/using/rn-overview.md).
 
 * **Qual è il piano per risolvere eventuali problemi successivi alla migrazione?**
 
-  Prima della migrazione dei sistemi di produzione vengono eseguiti test approfonditi. Tuttavia, in caso di problemi, [l&#39;Assistenza clienti Adobe](https://experienceleague.adobe.com/it?support-solution=Campaign#support) rimarrà il punto di contatto principale. Adobe ha istituito un team di esperti per fornire supporto avanzato, se necessario.
+  Prima della migrazione dei sistemi di produzione vengono eseguiti test approfonditi. Tuttavia, in caso di problemi, [l&#39;Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) rimarrà il punto di contatto principale. Adobe ha istituito un team di esperti per fornire supporto avanzato, se necessario.
 
 ## Impatto sul recapito messaggi
 
@@ -61,7 +61,7 @@ Gli impatti globali su IP, elenchi Bloccati, sottodomini e URL sono elencati di 
 
 * **Come verrà gestito l&#39;IP sul inserisco nell&#39;elenco Consentiti di? I clienti dovranno aggiungere nuovi indirizzi IP al elenco Consentiti di per il traffico in ingresso da Campaign?**
 
-  L’indirizzo IP degli Adobe cambierà. Pertanto, i clienti potrebbero dover aggiungere questi nuovi indirizzi IP nel inserisco nell&#39;elenco Consentiti di nel proprio sistema.
+  L’indirizzo IP dei server Adobe cambierà. Pertanto, i clienti potrebbero dover aggiungere questi nuovi indirizzi IP nel inserisco nell&#39;elenco Consentiti di nel proprio sistema.
 
   [Ulteriori informazioni](#config) sull&#39;IP nel inserisco nell&#39;elenco Consentiti di.
 
@@ -71,7 +71,7 @@ Gli impatti globali su IP, elenchi Bloccati, sottodomini e URL sono elencati di 
 
 * **Modifica degli IP in corso?**
 
-  L’indirizzo IP degli Adobe cambierà. Pertanto, i clienti potrebbero dover aggiungere questi nuovi indirizzi IP al inserisco nell&#39;elenco Consentiti di nel proprio sistema.
+  L’indirizzo IP dei server Adobe cambierà. Pertanto, i clienti potrebbero dover aggiungere questi nuovi indirizzi IP al inserisco nell&#39;elenco Consentiti di nel proprio sistema.
 
   [Ulteriori informazioni](#config) sull&#39;IP nel inserisco nell&#39;elenco Consentiti di.
 
@@ -83,7 +83,7 @@ Gli impatti globali su IP, elenchi Bloccati, sottodomini e URL sono elencati di 
   >
   >Il team di recapito messaggi si basa sul contratto e i clienti devono contattare il proprio rappresentante Adobe per informazioni relative al recapito messaggi.
 
-  Adobe guiderà il cliente attraverso i test richiesti per garantire che la configurazione sia attiva e in esecuzione sui nuovi server Public Cloud (AWS) dopo la migrazione.
+  Adobe guiderà il cliente attraverso i test necessari per garantire che la configurazione sia attiva e in esecuzione sui nuovi server Public Cloud (AWS) dopo la migrazione.
 
 * **La migrazione produrrà nuovi URL per il tracciamento, le risorse e le applicazioni Web?**
 
@@ -95,13 +95,13 @@ Gli impatti globali su IP, elenchi Bloccati, sottodomini e URL sono elencati di 
 
 * **Qual è il piano per il riscaldamento dell&#39;IP?**
 
-  Innanzitutto, Adobe Deliverability valuta lo stato di recapito della piattaforma e consiglia un piano per il passaggio ai nuovi IP
+  Prima di tutto, il recapito messaggi di Adobe valuterà lo stato di recapito messaggi della piattaforma e raccomanderà un piano per passare ai nuovi IP
 
-  Non è necessario alcun riscaldamento dopo la migrazione. Potrebbe trattarsi di un&#39;eccezione e, in questo caso, [l&#39;Assistenza clienti di Adobe](https://experienceleague.adobe.com/it?support-solution=Campaign#support) contatterà i clienti.
+  Non è necessario alcun riscaldamento dopo la migrazione. Potrebbe trattarsi di un&#39;eccezione e, in questo caso, [l&#39;Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) contatterà i clienti.
 
   Tuttavia, il piano è quello di rendere trasparente questa operazione per l&#39;azienda, a differenza dell&#39;incremento iniziale che viene fatto durante il go-live.
 
-  Al termine della migrazione, l’istanza Campaign avrà IP di invio completamente diversi. Al fine di garantire una transizione senza intoppi, Adobe implementerà un incremento dei nuovi IP di invio passando progressivamente dal vecchio ai nuovi IP.
+  Al termine della migrazione, l’istanza Campaign avrà IP di invio completamente diversi. Al fine di garantire una transizione senza intoppi, Adobe implementerà un aumento graduale dei nuovi IP di invio passando progressivamente dal vecchio ai nuovi IP.
 
 * **Spostamento dell&#39;URL nel elenco Consentiti di in corso?**
 
@@ -110,7 +110,7 @@ Gli impatti globali su IP, elenchi Bloccati, sottodomini e URL sono elencati di 
 * **Quale dovrebbe essere l&#39;impatto del sottodominio delegato che utilizziamo per contrassegnare le comunicazioni?**
 
   I sottodomini utilizzati per le comunicazioni di marketing rimangono gli stessi. Tuttavia, a seconda dell’implementazione, sono necessarie azioni sul lato client:
-   * In caso di delega di sottodominio ad Adobe (impostazione predefinita), Adobe si occupa di tutte le modifiche e garantisce una transizione senza soluzione di continuità.
+   * In caso di delega del sottodominio ad Adobe (impostazione predefinita), Adobe si occupa di tutte le modifiche e garantisce una transizione senza soluzione di continuità.
    * In caso di configurazione di CNAME (eccezione), al client viene richiesto di implementare le modifiche, in coordinamento con Adobe.
 
 ## Impatto su configurazione e connettività
@@ -119,13 +119,13 @@ Gli impatti globali su IP, elenchi Bloccati, sottodomini e URL sono elencati di 
 
 ### Nota sull&#39;IP sul inserisco nell&#39;elenco Consentiti di{#config}
 
-La migrazione al cloud pubblico sarà accompagnata da nuovi IP per i server applicazioni Adobe Campaign, in modo che la modifica dell’IP possa avere un impatto sulla connettività tra i server Adobe e i sistemi informativi.
+La migrazione al cloud pubblico sarà accompagnata da nuovi IP per i server applicazioni Adobe Campaign, in modo che la modifica degli IP possa avere un impatto sulla connettività tra i server Adobe e i sistemi informativi.
 
 ![](assets/migration.png)
 
 Prendiamo in considerazione i due casi:
 
-* Traffico in entrata: tutte le attività di rete avviate dai sistemi o da terze parti ai server Adobe Campaign. La configurazione verrà gestita da Adobe e quindi copiata da legacy a cloud pubblico durante la migrazione. La connettività per il traffico in entrata verrà quindi mantenuta invariata dopo la migrazione e non è prevista alcuna azione da parte del cliente
+* Traffico in entrata: tutte le attività di rete avviate dai sistemi o da terze parti ai server Adobe Campaign. La configurazione verrà gestita da Adobe e quindi copiata da cloud legacy a cloud pubblico durante la migrazione. La connettività per il traffico in entrata verrà quindi mantenuta invariata dopo la migrazione e non è prevista alcuna azione da parte del cliente
 
 * Traffico in uscita: tutte le attività di rete avviate dai server Adobe Campaign al sistema informativo o a terze parti (ad esempio, il provider SMS). A seconda dei criteri di sicurezza in vigore nell&#39;organizzazione, la modifica degli IP potrebbe richiedere l&#39;operazione di inserisce nell&#39;elenco Consentiti del sistema informativo o di qualsiasi altra terza parte
 
@@ -137,13 +137,13 @@ Di seguito sono elencati gli impatti globali su configurazione, connettività co
 
   Sì. Le integrazioni di terze parti, ad esempio i provider di SMS, devono aggiungere al Adobe Campaign nuovi indirizzi IP dei server applicazioni di inserire nell&#39;elenco Consentiti.
 
-* **La migrazione influirà sulla connettività ad Adobe Analytics utilizzando il connettore di Genesis? E l&#39;aggiunta di indirizzi IP di Campaign al inserisco nell&#39;elenco Consentiti di sul lato Adobe Analytics?**
+* **La migrazione influirà sulla connettività ad Adobe Analytics utilizzando il connettore Genesis? E l&#39;aggiunta di indirizzi IP di Campaign al inserisco nell&#39;elenco Consentiti di sul lato Adobe Analytics?**
 
   Gli indirizzi IP dei server applicazioni Adobe Campaign cambieranno. Questo passaggio verrà gestito dall’Assistenza clienti di Adobe dopo la migrazione.
 
 * **La migrazione influirà sulla connettività con altre soluzioni Adobe (AEM, Target, ecc.)?**
 
-  Le integrazioni sono una combinazione di indirizzi IP dichiarati nel inserisco nell&#39;elenco Consentiti di gestione dei rapporti con i clienti e nella configurazione dell’account del servizio web. Questo sarà registrato e di proprietà dell’Assistenza clienti di Adobe.
+  Le integrazioni sono una combinazione di indirizzi IP dichiarati nel inserisco nell&#39;elenco Consentiti di gestione dei rapporti con i clienti e nella configurazione dell’account del servizio web. Questo sarà gestito e di proprietà dell’Assistenza clienti di Adobe.
 
   Nel inserisco nell&#39;elenco Consentiti di saranno presenti indirizzi IP che saranno necessari nella soluzione esterna man mano che l&#39;IP degli Application Server cambierà. Queste informazioni verranno fornite. Altre parti dell’integrazione sono basate su IMS e dovrebbero funzionare così come sono.
 
@@ -157,7 +157,7 @@ Di seguito sono elencati gli impatti globali su configurazione, connettività co
 
 * **La connettività API è interessata dalla migrazione?**
 
-  L’indirizzo IP degli Adobe cambierà. Pertanto, i clienti potrebbero dover aggiungere questi nuovi indirizzi IP al inserisco nell&#39;elenco Consentiti di nel proprio sistema.
+  L’indirizzo IP dei server Adobe cambierà. Pertanto, i clienti potrebbero dover aggiungere questi nuovi indirizzi IP al inserisco nell&#39;elenco Consentiti di nel proprio sistema.
 
   [Ulteriori informazioni](#config) sull&#39;IP durante la inserisce nell&#39;elenco Consentiti di.
 
@@ -173,7 +173,7 @@ Di seguito sono elencati gli impatti globali su configurazione, connettività co
 
   Può variare in base alla nuova posizione dei server. Tuttavia, il cliente sarà in grado di mantenere il proprio fuso orario corrente.
 
-  [Ulteriori informazioni](../../workflow/using/managing-time-zones.md) sulla gestione del fuso orario in Adobe Campaign Classic v7.
+  Per ulteriori informazioni sulla gestione del fuso orario, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html){target="_blank"}.
 
 
 ## Sicurezza e autorizzazioni
@@ -279,7 +279,7 @@ Gli impatti globali durante la migrazione sono elencati di seguito.
 
 * **Chi gestirà l&#39;aggiunta di nuovi IP al inserisco nell&#39;elenco Consentiti di?**
 
-  Il team di assistenza clienti di Adobe si occuperà di garantire che il cliente e tutte le terze parti possano accedere al nuovo sistema aggiungendo i nuovi IP al inserisco nell&#39;elenco Consentiti di.
+  Il team di Assistenza clienti di Adobe si occuperà di garantire che il cliente e tutte le terze parti possano accedere al nuovo sistema aggiungendo i nuovi IP al inserisco nell&#39;elenco Consentiti di.
 
 ## Supporto e altri collegamenti utili{#support}
 

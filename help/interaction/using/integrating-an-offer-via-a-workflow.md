@@ -7,9 +7,9 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
-source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1044'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ L’attività di struttura della consegna, disponibile nei flussi di lavoro dell
 1. In un flusso di lavoro, aggiungi un’attività di struttura della consegna prima di aggiungerla.
 1. Nell’attività di struttura della consegna, specifica la struttura da utilizzare.
 
-   Per ulteriori informazioni sulla specifica dei profili di consegna, consulta la guida [Campaign - MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+   Per ulteriori informazioni su come specificare i profili di consegna, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets#delivery-outlines.html){target="_blank"}.
 
 1. Completa i campi disponibili in base alla consegna.
 1. Esistono due casi possibili:
@@ -55,7 +55,7 @@ L’attività Enrichment ti consente di aggiungere offerte o collegamenti alle o
 
 >[!NOTE]
 >
->Per ulteriori informazioni sull&#39;attività di arricchimento, consulta la documentazione dedicata nella [guida dei flussi di lavoro](../../workflow/using/enrichment.md).
+>Per ulteriori informazioni sull&#39;attività di arricchimento, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}.
 
 Ad esempio, puoi arricchire i dati di una query del destinatario prima di una consegna.
 
@@ -68,7 +68,7 @@ Esistono due metodi per specificare le proposte di offerta.
 
 ### Specifica di un’offerta o di una chiamata al motore di offerta {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
-Dopo aver configurato la query (consulta la [guida dei flussi di lavoro](../../workflow/using/query.md)):
+Dopo aver configurato la query (consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}):
 
 1. Aggiungi e apri un’attività di arricchimento.
 1. Nella scheda **[!UICONTROL Enrichment]**, selezionare **[!UICONTROL Add data]**.

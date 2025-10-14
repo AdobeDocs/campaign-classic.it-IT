@@ -6,9 +6,9 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Monitoring, Deliverability
 role: User
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2567'
+source-wordcount: '2578'
 ht-degree: 12%
 
 ---
@@ -135,7 +135,7 @@ I possibili motivi di un errore di consegna sono:
    <td> Non definito </td> 
    <td> Non definito </td> 
    <td> 0 </td> 
-   <td> L’indirizzo è in qualificazione perché l’errore non è stato ancora incrementato. Questo tipo di errore si verifica quando un nuovo messaggio di errore viene inviato dal server: può essere un errore isolato, ma se si verifica di nuovo, il contatore degli errori aumenta, avvisando i team tecnici. Possono quindi eseguire l'analisi dei messaggi e qualificare questo errore tramite il nodo <span class="uicontrol">Amministrazione</span> / <span class="uicontrol">Campaign Management</span> / <span class="uicontrol">Gestione non deliverables</span> nella struttura ad albero.<br /> </td> 
+   <td> L’indirizzo è in qualificazione perché l’errore non è stato ancora incrementato. Questo tipo di errore si verifica quando un nuovo messaggio di errore viene inviato dal server: può essere un errore isolato, ma se si verifica di nuovo, il contatore degli errori aumenta, avvisando i team tecnici. Possono quindi eseguire l'analisi dei messaggi e qualificare questo errore tramite il nodo <span class="uicontrol">Amministrazione</span> / <span class="uicontrol">Gestione campagne</span> / <span class="uicontrol">Gestione non deliverables</span> nella struttura ad albero.<br /> </td> 
   </tr> 
   <tr> 
    <td> Non idoneo per le offerte </td> 
@@ -188,9 +188,9 @@ Se un messaggio non riesce a causa di un errore **Morbido** o **Ignorato** tempo
 >
 >Per le installazioni in hosting o ibride, se hai eseguito l&#39;aggiornamento all&#39;[MTA avanzato](sending-with-enhanced-mta.md), le impostazioni dei nuovi tentativi nella consegna non vengono più utilizzate da Campaign. I nuovi tentativi di mancato recapito non permanenti e il periodo di tempo che intercorre tra di essi sono determinati dall’MTA avanzato in base al tipo e alla gravità delle risposte di mancato recapito provenienti dal dominio e-mail del messaggio.
 
-Per le installazioni on-premise e le installazioni in hosting/ibride che utilizzano l’MTA di Campaign legacy, per modificare la durata di una consegna, passa ai parametri avanzati della consegna o del modello di consegna e specifica la durata desiderata nel campo corrispondente. Vedere [Definizione del periodo di validità](steps-sending-the-delivery.md#defining-validity-period).
+Per le installazioni on-premise e le installazioni in hosting/ibride che utilizzano l’MTA di Campaign legacy, per modificare la durata di una consegna, passa ai parametri avanzati della consegna o del modello di consegna e specifica la durata desiderata nel campo corrispondente. Consulta questa [pagina](communication-channels.md) in **Invio consegna** > **Definisci il periodo di validità**.
 
-La configurazione predefinita consente cinque tentativi a intervalli di un’ora, seguiti da un nuovo tentativo al giorno per quattro giorni. Il numero di tentativi può essere modificato a livello globale (contatta l’amministratore tecnico Adobe) o per ogni modello di consegna o consegna. Consulta [Configurare nuovi tentativi](steps-sending-the-delivery.md#configuring-retries).
+La configurazione predefinita consente cinque tentativi a intervalli di un’ora, seguiti da un nuovo tentativo al giorno per quattro giorni. Il numero di tentativi può essere modificato a livello globale (contatta l’amministratore tecnico di Adobe) o per ogni modello di consegna o consegna. Vedi questa [pagina](communication-channels.md) in **Invio consegna** > **Configura nuovi tentativi**.
 
 ## Errori sincroni e asincroni {#synchronous-and-asynchronous-errors}
 
@@ -203,7 +203,7 @@ Un messaggio può non riuscire immediatamente (errore sincrono) o in seguito, do
   >
   >La configurazione della cassetta postale di mancato recapito è descritta in [questa sezione](../../installation/using/deploying-an-instance.md#managing-bounced-emails).
 
-  Il [ciclo di feedback](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=it#feedback-loops) funziona come messaggi e-mail non recapitati. Quando un utente qualifica un’e-mail come spam, puoi configurare le regole e-mail in Adobe Campaign per bloccare tutte le consegne a questo utente. I messaggi inviati agli utenti che hanno qualificato un’e-mail come spam vengono automaticamente reindirizzati verso una casella e-mail creata appositamente a tale scopo. Gli indirizzi di questi utenti si trovano in modalità di inserisce nell&#39;elenco Bloccati di anche se non hanno fatto clic sul collegamento di annullamento dell’abbonamento. Gli indirizzi sono in elenco Bloccati di nella tabella di quarantena (**NmsAddress**) e non nella tabella dei destinatari (**NmsRecipient**).
+  Il [ciclo di feedback](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops) funziona come messaggi e-mail non recapitati. Quando un utente qualifica un’e-mail come spam, puoi configurare le regole e-mail in Adobe Campaign per bloccare tutte le consegne a questo utente. I messaggi inviati agli utenti che hanno qualificato un’e-mail come spam vengono automaticamente reindirizzati verso una casella e-mail creata appositamente a tale scopo. Gli indirizzi di questi utenti si trovano in modalità di inserisce nell&#39;elenco Bloccati di anche se non hanno fatto clic sul collegamento di annullamento dell’abbonamento. Gli indirizzi sono in elenco Bloccati di nella tabella di quarantena (**NmsAddress**) e non nella tabella dei destinatari (**NmsRecipient**).
 
   >[!NOTE]
   >
@@ -243,7 +243,7 @@ Il messaggio restituito dal server remoto alla prima occorrenza di questo tipo d
 
 ![](assets/tech_quarant_rules_qualif_text.png)
 
-Adobe Campaign filtra questo messaggio per eliminare il contenuto della variabile (ad esempio ID, date, indirizzi e-mail, numeri di telefono, ecc.) e visualizza il risultato filtrato nella colonna **[!UICONTROL Text]**. Le variabili vengono sostituite con **`#xxx#`**, ad eccezione degli indirizzi sostituiti con **`*`**.
+Adobe Campaign filtra questo messaggio per eliminare il contenuto della variabile (ad esempio ID, date, indirizzi e-mail, numeri di telefono e così via) e visualizza il risultato filtrato nella colonna **[!UICONTROL Text]**. Le variabili vengono sostituite con **`#xxx#`**, ad eccezione degli indirizzi sostituiti con **`*`**.
 
 Questo processo consente di riunire tutti gli errori dello stesso tipo ed evitare più voci per errori simili nella tabella Qualificazione del registro di consegna.
 
@@ -315,7 +315,7 @@ Per le installazioni on-premise e le installazioni in hosting/ibride che utilizz
 * Puoi scegliere se attivare o meno alcuni standard di identificazione e chiavi di crittografia per controllare il nome di dominio, ad esempio **ID mittente**, **Chiavi di dominio**, **DKIM** e **S/MIME**.
 * I parametri **Inoltro SMTP** consentono di configurare l&#39;indirizzo IP e la porta di un server di inoltro per un dominio specifico. Per ulteriori informazioni, consulta [questa sezione](../../installation/using/configuring-campaign-server.md#smtp-relay).
 
-Se i messaggi vengono visualizzati in Outlook con **[!UICONTROL on behalf of]** nell&#39;indirizzo del mittente, assicurati di non firmare le e-mail con **ID mittente**, che è lo standard obsoleto di autenticazione delle e-mail proprietarie di Microsoft. Se l&#39;opzione **[!UICONTROL Sender ID]** è abilitata, deseleziona la casella corrispondente e contatta [l&#39;Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Il recapito messaggi non sarà influenzato.
+Se i messaggi vengono visualizzati in Outlook con **[!UICONTROL on behalf of]** nell&#39;indirizzo del mittente, assicurati di non firmare le e-mail con **ID mittente**, che è lo standard obsoleto di autenticazione delle e-mail proprietarie di Microsoft. Se l&#39;opzione **[!UICONTROL Sender ID]** è abilitata, deseleziona la casella corrispondente e contatta l&#39;[Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Il recapito messaggi non sarà influenzato.
 
 #### Gestione MX {#mx-management}
 

@@ -6,9 +6,9 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
-source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '496'
 ht-degree: 4%
 
 ---
@@ -55,7 +55,7 @@ Tali diritti sono i seguenti:
 
 * **[!UICONTROL START DELIVERIES]**: diritto di approvare le consegne analizzate in precedenza. Dopo l’analisi della consegna, la consegna viene sospesa in vari passaggi di approvazione e deve essere approvata per riprendere. Gli utenti con il diritto **[!UICONTROL START DELIVERIES]** possono approvare le consegne.
 
-* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: diritto di scrivere script SQL personalizzati utilizzando l&#39;attività Gestione dati SQL per creare e popolare tabelle di lavoro (vedere [questa sezione](../../workflow/using/sql-data-management.md)).
+* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: diritto di scrivere script SQL personalizzati utilizzando l&#39;attività Gestione dati SQL per creare e popolare tabelle di lavoro. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-data-management.html){target="_blank"}.
 
 * **[!UICONTROL WORKFLOW]**: diritto di eseguire flussi di lavoro. Senza questo diritto, gli utenti non possono avviare, arrestare o riavviare i flussi di lavoro.
 
@@ -71,4 +71,4 @@ I gruppi predefiniti e i diritti denominati consentono agli operatori di acceder
 
 La matrice dei diritti di accesso di Adobe Campaign è disponibile [qui](/help/platform/using/assets/access-rights-matrix.pdf).
 
-[![immagine](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=it)
+[![immagine](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf)

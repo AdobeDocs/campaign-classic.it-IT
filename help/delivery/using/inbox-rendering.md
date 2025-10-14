@@ -6,9 +6,9 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Inbox Rendering, Monitoring, Email Rendering
 role: User
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: 9b93603a076b007d66aad52b05e560e17e316eeb
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '863'
 ht-degree: 7%
 
 ---
@@ -31,7 +31,7 @@ I client per dispositivi mobili, di messaggistica e di posta sul Web disponibili
 
 >[!NOTE]
 >
->Il rendering della casella in entrata non è necessario per testare la personalizzazione nelle consegne. Personalization può essere controllato con gli strumenti di Adobe Campaign come **[!UICONTROL Preview]** e [Bozze](steps-validating-the-delivery.md#sending-a-proof).
+>Il rendering della casella in entrata non è necessario per testare la personalizzazione nelle consegne. Personalization può essere controllato con gli strumenti di Adobe Campaign come **[!UICONTROL Preview]** e le bozze. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
 
 ## Attivazione del rendering della casella in entrata {#activating-inbox-rendering}
 
@@ -107,7 +107,7 @@ Per ulteriori informazioni sulla creazione, progettazione e targeting di una con
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
-   Viene inviata una bozza. È possibile accedere alle miniature di rendering nella bozza pochi minuti dopo l’invio delle e-mail. Per ulteriori informazioni sull&#39;invio di bozze, consulta [questa sezione](steps-validating-the-delivery.md#sending-a-proof).
+   Viene inviata una bozza. È possibile accedere alle miniature di rendering nella bozza pochi minuti dopo l’invio delle e-mail. Per ulteriori informazioni sull&#39;invio di bozze, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
 
 1. Dopo l’invio, la bozza viene visualizzata nell’elenco delle consegne. Fare doppio clic su di esso.
 

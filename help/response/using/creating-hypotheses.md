@@ -8,9 +8,9 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: e0b3bc9f-5e81-463f-a59e-cd972a47109b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1025'
 ht-degree: 3%
 
 ---
@@ -146,7 +146,7 @@ In questo esempio, vogliamo creare un’ipotesi collegata a una consegna. Questa
 
 La query ereditata dal modello verrà quindi perfezionata per formulare un’ipotesi su un articolo specifico della tabella di acquisto.
 
-1. Crea una campagna e una consegna. [Ulteriori informazioni](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)
+1. Crea una campagna e una consegna. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=it){target=_blank}.
 
    Nel nostro esempio, utilizzeremo una consegna di tipo direct mailing.
 
@@ -156,7 +156,7 @@ La query ereditata dal modello verrà quindi perfezionata per formulare un’ipo
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni, consulta [questa sezione](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
+   >Per ulteriori informazioni, consulta la [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target="_blank"}.
 
 1. Apri **[!UICONTROL Direct mail delivery]** e fai clic sull&#39;icona **[!UICONTROL Delivery measurement]**, quindi fai clic su **[!UICONTROL Add]**.
 
@@ -178,7 +178,7 @@ La query ereditata dal modello verrà quindi perfezionata per formulare un’ipo
 
    ![](assets/response_hypothesis_delivery_example_008.png)
 
-1. Avvia il flusso di lavoro di targeting ed esegui i controlli necessari fino al termine della campagna. [Ulteriori informazioni](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)
+1. Avvia il flusso di lavoro di targeting ed esegui i controlli necessari fino al termine della campagna. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html#start-a-delivery){target=_blank}.
 
    ![](assets/response_hypothesis_delivery_example_009.png)
 

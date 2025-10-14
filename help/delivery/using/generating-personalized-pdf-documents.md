@@ -6,7 +6,7 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Personalization
 role: User
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 1%
@@ -17,13 +17,13 @@ ht-degree: 1%
 
 ## Informazioni sui documenti PDF variabili {#about-variable-pdf-documents}
 
-Adobe Campaign consente di generare documenti PDF variabili per gli allegati e-mail da documenti LibreOffice o Microsoft Word.
+Adobe Campaign consente di generare documenti PDF variabili per allegati e-mail da documenti LibreOffice o Microsoft Word.
 
 Sono supportate le seguenti estensioni: &quot;.docx&quot;, &quot;.doc&quot; e &quot;.odt&quot;.
 
 Per personalizzare i documenti, sono disponibili le stesse funzionalità di JavaScript disponibili per la personalizzazione delle e-mail.
 
-È necessario attivare l&#39;opzione **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**. Questa opzione è accessibile quando alleghi il file all’e-mail di consegna. Per ulteriori informazioni su come allegare un file calcolato, consulta la sezione [Allega file](attaching-files.md).
+È necessario attivare l&#39;opzione **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**. Questa opzione è accessibile quando alleghi il file all’e-mail di consegna. Per ulteriori informazioni su come allegare un file calcolato, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html){target="_blank"}.
 
 Esempio di personalizzazione dell&#39;intestazione di una fattura:
 

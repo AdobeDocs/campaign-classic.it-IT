@@ -7,9 +7,9 @@ feature: Fatigue Management, Typology Rules, Campaigns
 hide: true
 hidefromtoc: true
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3336'
+source-wordcount: '3335'
 ht-degree: 6%
 
 ---
@@ -92,7 +92,7 @@ Per creare e configurare una regola di tipologia **[!UICONTROL Pressure]**, atti
 
    ![](assets/campaign_opt_create_a_rule_05.png)
 
-1. La scheda **[!UICONTROL Typologies]** ti consente di visualizzare le tipologie di campagne che applicano questa regola o di collegare la regola a una o più tipologie esistenti. Per ulteriori informazioni, consulta [Applicazione delle tipologie](about-campaign-typologies.md#applying-typologies).
+1. La scheda **[!UICONTROL Typologies]** ti consente di visualizzare le tipologie di campagne che applicano questa regola o di collegare la regola a una o più tipologie esistenti. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=it){target="_blank"}.
 
 ## Definizione di soglie e pesi {#defining-thresholds-and-weights}
 

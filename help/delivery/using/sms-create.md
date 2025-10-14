@@ -7,10 +7,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 3%
+source-wordcount: '446'
+ht-degree: 1%
 
 ---
 
@@ -22,14 +22,14 @@ Per creare una nuova consegna SMS, segui i passaggi seguenti:
 
 >[!NOTE]
 >
->I concetti globali sulla creazione della consegna sono presentati in [questa sezione](steps-about-delivery-creation-steps.md).
+>I concetti globali sulla creazione della consegna sono descritti nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
 
 1. Crea una nuova consegna, ad esempio dal dashboard Consegna.
 1. Seleziona il modello di consegna **Inviato a dispositivi mobili (SMPP)** creato in precedenza. Per ulteriori informazioni, consulta la sezione [Modificare il modello di consegna](sms-set-up.md#changing-the-delivery-template).
 
    ![](assets/s_user_mobile_wizard.png)
 
-1. Identifica la consegna con un’etichetta, un codice e una descrizione. Per ulteriori informazioni al riguardo, consulta [questa sezione](steps-create-and-identify-the-delivery.md#identifying-the-delivery).
+1. Identifica la consegna con un’etichetta, un codice e una descrizione. Per ulteriori informazioni, consulta questa sezione nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}.
 1. Fare clic su **[!UICONTROL Continue]** per confermare queste informazioni e visualizzare la finestra di configurazione del messaggio.
 
 ## Definire il contenuto dell’SMS {#defining-the-sms-content}

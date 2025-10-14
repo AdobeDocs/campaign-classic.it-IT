@@ -4,7 +4,7 @@ title: Protezione della privacy della posta nell’app Mail di Apple
 feature: Technote, Privacy, Privacy Tools
 description: Scopri in che modo le campagne possono essere influenzate dalla funzione di protezione della privacy della posta di Apple
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
 source-wordcount: '2064'
 ht-degree: 1%
@@ -94,7 +94,7 @@ In questo esempio, un addetto al marketing desidera inviare un’offerta di rico
 
   ![](assets/identify-email-open-tracking-2.png)
 
-* Puoi utilizzare un filtro predefinito. [Ulteriori informazioni](../../workflow/using/creating-a-filter.md).
+* Puoi utilizzare un filtro predefinito. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html){target="_blank"}.
 
   ![](assets/identify-email-open-tracking-3.png)
 
@@ -131,7 +131,7 @@ Questo esempio mostra un’implementazione personalizzata in un singolo flusso d
 
 >[!IMPORTANT]
 >
->Il pacchetto viene fornito solo a titolo di esempio e non è supportato da Adobe come funzionalità del prodotto.
+>Il pacchetto viene fornito solo come esempio e non è supportato da Adobe come funzione del prodotto.
 >
 >Potrebbe essere necessario adattare il codice di esempio all’implementazione della campagna.
 >
@@ -364,8 +364,8 @@ Puoi arricchire questi dati con informazioni utili provenienti da schemi collega
 
 | Schema | Contenuto |
 | --- | --- |
-| nms:Destinatario | Dettagli relativi ai profili |
-| nms:Consegna | Informazioni sul messaggio al quale l’utente ha reagito |
+| nms:Recipient | Dettagli relativi ai profili |
+| nms:Delivery | Informazioni sul messaggio al quale l’utente ha reagito |
 
 Puoi esportare i risultati in una soluzione di archiviazione esterna supportata da Adobe Campaign:
 
@@ -419,7 +419,7 @@ Puoi utilizzare queste regole per vari scopi:
 * Esportazione e archiviazione dei dati in una soluzione di storage esterna
 * Calcolare i KPI da associare ai profili
 * Creare elenchi di soppressione
-* Reportistica
+* Reporting
 
 Questi esempi mostrano come utilizzare i flussi di lavoro per suddividere i record per dispositivo iOS:
 

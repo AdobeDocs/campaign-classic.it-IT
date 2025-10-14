@@ -6,9 +6,9 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Workflows
 role: User
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1197'
+source-wordcount: '1201'
 ht-degree: 0%
 
 ---
@@ -150,7 +150,7 @@ L&#39;azione di consegna è configurata tramite l&#39;attività **Delivery**:
 
 Viene creata una nuova azione di consegna basata su un modello.
 
-Il modello di consegna dell’attività viene utilizzato per selezionare i modelli di trasformazione del modello di pubblicazione. La generazione del contenuto prenderà in considerazione tutti i modelli di HTML e di testo senza modelli di consegna o quelli a cui si fa riferimento con lo stesso modello dell’attività.
+Il modello di consegna dell’attività viene utilizzato per selezionare i modelli di trasformazione del modello di pubblicazione. La generazione del contenuto prenderà in considerazione tutti i modelli HTML e Text senza i modelli di consegna o quelli a cui si fa riferimento con lo stesso modello dell’attività.
 
 La destinazione da consegnare viene immessa tramite l’evento in ingresso.
 
@@ -214,11 +214,13 @@ L’azione finale dell’attività consiste nel preparare e avviare la consegna.
 
 ### Importa contenuto da FTP {#importing-content-from-ftp}
 
-Se il contenuto della consegna è disponibile in un file HTML che si trova su server FTP o SFTP, puoi facilmente caricarlo nelle consegne Adobe Campaign. Consulta [questo esempio](../../workflow/using/loading-delivery-content.md).
+Se il contenuto della consegna è disponibile in un file HTML che si trova su server FTP o SFTP, puoi facilmente caricarlo nelle consegne Adobe Campaign. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}.
+
 
 ### Importa contenuto dal connettore Amazon Simple Storage Service (S3) {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
-Se il contenuto della consegna si trova nei bucket Amazon Simple Storage Service (S3), puoi caricarlo facilmente nelle consegne Adobe Campaign. Consulta [questo esempio](../../workflow/using/loading-delivery-content.md).
+Se il contenuto della consegna si trova nei bucket Amazon Simple Storage Service (S3), puoi caricarlo facilmente nelle consegne Adobe Campaign. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}.
+
 
 ## Aggiornamento semi-automatico {#semi-automatic-update}
 
@@ -230,7 +232,7 @@ L&#39;obiettivo è quello di dichiarare un campo **editBtn** di tipo **`<input>`
 
 L&#39;area di modifica consente di popolare i dati delle variabili utilizzati per creare l&#39;URL del feed XML dei dati da recuperare.
 
-Il pulsante esegue il metodo SOAP **GetAndTransform** popolato sotto il tag **`<input>`**.
+Il pulsante esegue il metodo SOAP **GetAndTransform** popolato con il tag **`<input>`**.
 
 La dichiarazione di controllo nella forma è la seguente:
 

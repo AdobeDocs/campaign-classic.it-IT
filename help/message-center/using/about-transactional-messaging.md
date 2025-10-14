@@ -4,9 +4,9 @@ title: Introduzione alla messaggistica transazionale
 description: Ulteriori informazioni sul principio operativo della messaggistica transazionale di Adobe Campaign Classic e sui passaggi chiave
 feature: Transactional Messaging, Message Center
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '641'
 ht-degree: 4%
 
 ---
@@ -71,7 +71,7 @@ Nell&#39;**istanza di controllo** è necessario eseguire le azioni seguenti:
 1. [Crea un tipo di evento](../../message-center/using/creating-event-types.md).
 1. [Creare e progettare il modello di messaggio](../../message-center/using/creating-the-message-template.md). Collega un evento al messaggio durante questo passaggio.
 1. [Verifica il messaggio](../../message-center/using/testing-message-templates.md).
-1. [Publish il modello di messaggio](../../message-center/using/publishing-message-templates.md).
+1. [Pubblica il modello di messaggio](../../message-center/using/publishing-message-templates.md).
 
 >[!NOTE]
 >
@@ -88,6 +88,6 @@ Dopo aver progettato e pubblicato il modello di messaggio transazionale, se vien
 ## Argomenti correlati {#related-topics}
 
 * [Introduzione ai canali di comunicazione](../../delivery/using/communication-channels.md)
-* [Passaggi chiave per la creazione della consegna](../../delivery/using/steps-about-delivery-creation-steps.md)
+* [Passaggi chiave per la creazione della consegna](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}
 * [Architettura della messaggistica transazionale](../../message-center/using/transactional-messaging-architecture.md)
 * [Accedere ai rapporti di messaggistica transazionale](../../message-center/using/about-transactional-messaging-reports.md)

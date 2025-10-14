@@ -6,9 +6,9 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Email, Push
 role: User, Data Engineer
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
-source-git-commit: 287d1bf60b39e9e2b389701097995dbea962dec9
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '454'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,8 @@ ht-degree: 3%
 L&#39;elenco di emoticon visualizzato nel pop-up è governato da un&#39;enumerazione che consente di visualizzare i valori in un elenco per limitare le scelte dell&#39;utente per un determinato campo.
 L’ordine dell’elenco delle emoticon può essere personalizzato, puoi anche aggiungere altre emoticon all’elenco.
 
-Gli emoticon sono disponibili solo per e-mail e push. Per ulteriori informazioni, consulta questa [pagina](defining-the-email-content.md#inserting-emoticons).
+Gli emoticon sono disponibili solo per e-mail e push. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#inserting-emoticons){target="_blank"}.
+
 
 ## Aggiunta di una nuova emoticon {#add-new-emoticon}
 
@@ -62,7 +63,7 @@ La nuova emoticon verrà automaticamente inserita nel negozio.
 
 1. Affinché le modifiche vengano prese in considerazione, disconnettiti e riconnettiti da Adobe Campaign Classic. Se la nuova emoticon non viene ancora visualizzata nella finestra popup **[!UICONTROL Insert emoticon]**, potrebbe essere necessario cancellare la cache. Per ulteriori informazioni, consulta questa [sezione](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear).
 
-1. La nuova emoticon è ora disponibile nelle consegne nella finestra a comparsa **[!UICONTROL Insert emoticon]** nella 61esima posizione, come configurato nei passaggi precedenti. Per ulteriori informazioni su come utilizzare gli emoticon nelle consegne, consulta questa [pagina](defining-the-email-content.md#inserting-emoticons).
+1. La nuova emoticon è ora disponibile nelle consegne nella finestra a comparsa **[!UICONTROL Insert emoticon]** nella 61esima posizione, come configurato nei passaggi precedenti. Per ulteriori informazioni su come utilizzare gli emoticon nelle consegne, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#inserting-emoticons){target="_blank"}.
 
    ![](assets/emoticon_4.png)
 

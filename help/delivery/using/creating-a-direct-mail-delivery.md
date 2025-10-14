@@ -8,10 +8,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 964cc600-19b8-449e-bac6-dc9da2b5ea12
-source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 10%
+source-wordcount: '105'
+ht-degree: 9%
 
 ---
 
@@ -21,12 +21,12 @@ Per creare una nuova consegna di direct mailing, segui i passaggi seguenti:
 
 >[!NOTE]
 >
->I concetti globali sulla creazione della consegna sono presentati in [questa sezione](steps-about-delivery-creation-steps.md).
+>I concetti globali sulla creazione della consegna sono descritti nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
 
 1. Crea una nuova consegna, ad esempio dal dashboard Consegna.
 1. Selezionare il modello di consegna **Consegna tramite direct mailing (carta)**.
 
    ![](assets/direct_mail.png)
 
-1. Identifica la consegna con un’etichetta, un codice e una descrizione. Per ulteriori informazioni, consulta [questa sezione](steps-create-and-identify-the-delivery.md#identifying-the-delivery)
+1. Identifica la consegna con un’etichetta, un codice e una descrizione. Per ulteriori informazioni, consulta questa sezione nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}.
 1. Fai clic su **Continua** per confermare queste informazioni e visualizzare la finestra di configurazione del messaggio.

@@ -5,10 +5,10 @@ description: Scopri come inviare, monitorare e tenere traccia degli SMS in Campa
 feature: SMS
 role: User
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
 source-wordcount: '887'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -81,8 +81,6 @@ Il modulo **nlserver sms** esegue query sul router SMS a intervalli regolari. Qu
   > * Un account SMS può essere collegato solo a un singolo account esterno per garantire che le relazioni sullo stato siano attribuite all’account corretto
 
 * **Annullamento dell&#39;abbonamento**: i destinatari che desiderano interrompere la ricezione delle consegne SMS possono restituire un messaggio contenente la parola STOP. Se il provider lo consente in base ai termini del contratto, è possibile recuperare messaggi tramite l&#39;attività del flusso di lavoro **SMS in entrata** e quindi creare una query per abilitare l&#39;opzione **Non contattare più questo destinatario** per i destinatari interessati.
-
-  Consulta la guida [Flussi di lavoro](../../workflow/using/architecture.md).
 
 ## Schema InSMS {#insms-schema}
 
@@ -169,4 +167,4 @@ Il nome del mittente per questo tipo di messaggio è un codice breve utilizzato 
 >
 >Questi tipi di messaggi automatici non conservano una cronologia. Pertanto, non vengono visualizzati nel dashboard di consegna. [Ulteriori informazioni](delivery-dashboard.md).
 >
->Tali messaggi non sono presi in considerazione nelle norme sulla pressione commerciale. [Ulteriori informazioni](../../campaign-opt/using/pressure-rules.md).
+>Tali messaggi non sono presi in considerazione nelle norme sulla pressione commerciale. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html?lang=it){target="_blank"}.

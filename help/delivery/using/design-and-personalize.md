@@ -8,16 +8,16 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1307'
 ht-degree: 4%
 
 ---
 
 # Creare contenuti personalizzati {#build-personalized-content}
 
-Durante la progettazione del contenuto del messaggio, cerca di evitare problemi comuni che potrebbero impedirti di eseguire la consegna. Nella maggior parte dei casi, i possibili errori sono correlati a [personalization](about-personalization.md), [formattazione](defining-the-email-content.md#message-content) e [immagini](defining-the-email-content.md#adding-images).
+Durante la progettazione del contenuto del messaggio, cerca di evitare problemi comuni che potrebbero impedirti di eseguire la consegna. Nella maggior parte dei casi, i possibili errori sono correlati a [personalization](about-personalization.md), [formattazione](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#message-content){target="_blank"} e [immagini](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}.
 
 ## Ottimizzare la personalizzazione {#optimize-personalization}
 
@@ -28,7 +28,7 @@ Le nozioni di base su Personalization sono presentate in [questa sezione](person
 
 Assicurati che il contenuto del messaggio sia progettato correttamente per evitare errori, che sono generalmente correlati alla personalizzazione.
 
-**Suggerimenti**: nei campi di personalizzazione provenienti da file esterni forniti da fornitori di terze parti, il contenuto dei HTML esterni può essere errato. Per evitare questo problema, controlla la sintassi, l’utilizzo di tag, caratteri e così via. Ad esempio, un tag di personalizzazione Adobe Campaign ha sempre il seguente formato: &lt;%=table.field%>. Per ulteriori informazioni, consulta [questa sezione](about-personalization.md).
+**Suggerimenti**: nei campi di personalizzazione provenienti da file esterni forniti da fornitori terzi, il contenuto esterno di HTML può essere errato. Per evitare questo problema, controlla la sintassi, l’utilizzo di tag, caratteri e così via. Ad esempio, un tag di personalizzazione Adobe Campaign ha sempre il seguente formato: &lt;%=table.field%>. Per ulteriori informazioni, consulta [questa sezione](about-personalization.md).
 
 L’utilizzo errato dei parametri nei blocchi di personalizzazione può rappresentare un problema. Ad esempio, le variabili in JavaScript devono essere utilizzate come segue:
 
@@ -58,7 +58,7 @@ Durante la creazione delle e-mail, tieni presenti le best practice generali ripo
 
 ### Oggetto
 
-Lavora sulla [riga dell&#39;oggetto](defining-the-email-content.md#message-content) per migliorare i tassi di apertura:
+Scopri l’oggetto nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#sender){target="_blank"} per migliorare i tassi di apertura:
 
 * Evitare soggetti troppo lunghi. Usa massimo 50 caratteri
 
@@ -70,7 +70,7 @@ Lavora sulla [riga dell&#39;oggetto](defining-the-email-content.md#message-conte
 
 Includi sempre un collegamento a una pagina speculare. La posizione preferita è nella parte superiore dell’e-mail. [Ulteriori informazioni](sending-messages.md#generating-the-mirror-page)
 
-### Collegamento annullamento dell’abbonamento
+### Collegamento per annullamento iscrizione
 
 Il collegamento di annullamento dell’abbonamento è essenziale. Deve essere visibile e valido e il modulo deve essere funzionale. Per impostazione predefinita, quando il messaggio viene analizzato, una [regola di tipologia](steps-validating-the-delivery.md#validation-process-with-typologies) controlla se è stato incluso un collegamento di rinuncia e, in caso contrario, genera un avviso.
 
@@ -115,13 +115,13 @@ Per evitare errori di formattazione comuni, controlla i seguenti elementi:
 
 * Utilizzo di **caratteri autorizzati** nelle e-mail: l&#39;elenco di caratteri validi per gli indirizzi e-mail è definito nell&#39;opzione &quot;XtkEmail_Characters&quot;. Scopri come accedere alle opzioni di Campaign [in questa sezione](../../installation/using/configuring-campaign-options.md). Per gestire correttamente i caratteri speciali, è necessario installare Adobe Campaign in Unicode.
 
-* Configurazione di **Autenticazione e-mail**: assicurati che le intestazioni e-mail contengano la firma DKIM. L’autenticazione DKIM (Domain Keys Identified Mail) consente al server e-mail ricevente di verificare che un messaggio sia stato effettivamente inviato dalla persona o dall’entità da cui afferma di essere stato inviato e se il contenuto del messaggio sia stato modificato tra il momento dell’invio originale (e DKIM &quot;firmato&quot;) e il momento della ricezione. Questo standard utilizza in genere il dominio nell’intestazione Da o Mittente. Per ulteriori informazioni, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=it#authentication).
+* Configurazione di **Autenticazione e-mail**: assicurati che le intestazioni e-mail contengano la firma DKIM. L’autenticazione di DKIM (Domain Keys Identified Mail) consente al server e-mail ricevente di verificare che il messaggio sia stato effettivamente inviato dalla persona o dall’entità da cui afferma di essere stato inviato e se il contenuto del messaggio sia stato modificato tra il momento dell’invio originale (e DKIM &quot;firmato&quot;) e il momento della ricezione. Questo standard utilizza in genere il dominio nell’intestazione Da o Mittente. Per ulteriori informazioni, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ### Progettazione reattiva delle e-mail
 
 Il design reattivo assicura che un’e-mail venga riprodotta in modo ottimale per il dispositivo su cui viene aperta.
 
-* Utilizza e-mail HTML responsive anziché web HTML
+* Utilizza e-mail responsive HTML anziché web HTML
 
 * Utilizza la modalità anteprima e invia bozze per testare il rendering su quanti più dispositivi possibili
 
@@ -151,14 +151,14 @@ Per essere accessibili dall’esterno, le immagini utilizzate nelle e-mail e nel
 
 * Puoi verificare se la configurazione dell’istanza abilita la gestione delle risorse pubbliche. [Ulteriori informazioni](../../installation/using/deploying-an-instance.md#managing-public-resources)
 
-* Dall&#39;assistente alla consegna, puoi importare una pagina di HTML contenente immagini o inserire immagini direttamente utilizzando l&#39;editor di HTML tramite l&#39;icona **[!UICONTROL Image]**. [Ulteriori informazioni](defining-the-email-content.md#adding-images)
+* Dall&#39;assistente alla consegna, puoi importare una pagina HTML contenente immagini o inserire immagini direttamente utilizzando l&#39;editor HTML tramite l&#39;icona **[!UICONTROL Image]**. Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}.
 
 * Se le immagini non vengono visualizzate, verificare che siano disponibili sul server. A questo scopo, fai clic sulla scheda Source della consegna. Trova le tue immagini e copia-incolla l’URL di ogni immagine in un browser web. Se le immagini non vengono visualizzate, contatta l’amministratore IT o il fornitore di terze parti che fornisce i contenuti di consegna.
 
 ## Anteprima del messaggio {#preview-msg}
 
-Adobe consiglia di visualizzare l’anteprima del messaggio per controllarne la personalizzazione e per vedere come i destinatari visualizzeranno la consegna.
+Adobe consiglia di visualizzare l’anteprima del messaggio per controllarne la personalizzazione e vedere come i destinatari vedranno la consegna.
 
-* Nell&#39;assistente alla consegna, la scheda secondaria **[!UICONTROL Preview]** ti consente di visualizzare il rendering di ciascun contenuto per un destinatario. I campi di personalizzazione e gli elementi condizionali del contenuto vengono sostituiti con le informazioni corrispondenti per il profilo selezionato. [Ulteriori informazioni](defining-the-email-content.md#message-content)
+* Nell&#39;assistente alla consegna, la scheda secondaria **[!UICONTROL Preview]** ti consente di visualizzare il rendering di ciascun contenuto per un destinatario. I campi di personalizzazione e gli elementi condizionali del contenuto vengono sostituiti con le informazioni corrispondenti per il profilo selezionato. Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#message-content){target="_blank"}.
 
 * Durante ogni anteprima viene eseguito un controllo automatico anti-spam. Nella scheda secondaria **[!UICONTROL Preview]**, seleziona [SpamAssassin](spamassassin.md) spam scoring.  Fare clic su **[!UICONTROL More...]** per ulteriori informazioni sull&#39;avviso.  Prima di eseguire questa operazione, verificare che SpamAssassin sia installato e configurato correttamente nel server applicazioni Adobe Campaign. [Ulteriori informazioni](../../installation/using/configuring-spamassassin.md)

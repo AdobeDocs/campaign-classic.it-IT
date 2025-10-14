@@ -6,10 +6,10 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: A/B Testing
 role: User
 exl-id: aa21fa33-aef9-484a-b454-0cd5a6868a98
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 4%
+source-wordcount: '150'
+ht-degree: 5%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 4%
 
 È necessario creare il flusso di lavoro nella scheda **[!UICONTROL Targeting and Workflows]** di una campagna. È costituita da un&#39;attività **[!UICONTROL Query]**, un&#39;attività **[!UICONTROL Split]** collegata a due attività **[!UICONTROL Email delivery]**, un&#39;attività **[!UICONTROL Wait]**, un&#39;attività **[!UICONTROL JavaScript code]** e un&#39;attività **[!UICONTROL Delivery]**.
 
-1. Se non lo hai già fatto, crea una campagna (per ulteriori informazioni, consulta [questa sezione](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)).
+1. Se non lo hai già fatto, crea una campagna. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=it){target=_blank}.
 
    ![](assets/use_case_abtesting_targetwkfl_001.png)
 
@@ -25,7 +25,7 @@ ht-degree: 4%
 
    ![](assets/use_case_abtesting_targetwkfl_002.png)
 
-1. Modificare l&#39;etichetta del flusso di lavoro esistente o fare clic su **[!UICONTROL Add]** per crearne una nuova (per ulteriori informazioni, fare riferimento a [questa sezione](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)).
+1. Modifica l&#39;etichetta del flusso di lavoro esistente o fai clic su **[!UICONTROL Add]** per crearne una nuova (per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=it){target="_blank"}.
 
    ![](assets/use_case_abtesting_targetwkfl_003.png)
 

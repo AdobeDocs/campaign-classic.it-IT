@@ -6,10 +6,10 @@ feature: Troubleshooting
 hidefromtoc: true
 hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 192505e1c4d387de55ca18b578b837d237cc0607
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 68%
+source-wordcount: '656'
+ht-degree: 67%
 
 ---
 
@@ -54,7 +54,7 @@ Come effettuare l’aggiornamento a una nuova build? Come monitorare l’esecuzi
         <ul>
         <li><a href="production/using/performance-and-throughput-issues.md">Problemi relativi a prestazioni e velocità effettiva</a></li>
         <li><a href="delivery/using/delivery-performances.md">Prestazioni di consegna</a></li>
-        <li><a href="workflow/using/workflow-best-practices.md">Ottimizzare le prestazioni del flusso di lavoro</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html" target="_blank">Ottimizzare le prestazioni del flusso di lavoro</a></li>
         <li><a href="workflow/using/monitoring-workflow-execution.md">Risoluzione dei problemi di esecuzione dei flussi di lavoro</a></li>
         <li><a href="platform/using/sftp-server-usage.md">Utilizzo del server SFTP</a></li>
         <li><a href="delivery/using/understanding-delivery-failures.md">Errori di consegna</a></li>
@@ -62,14 +62,14 @@ Come effettuare l’aggiornamento a una nuova build? Come monitorare l’esecuzi
     </td>
    <td valign="top">
         <ul>
-        <li><a href="workflow/using/workflow-best-practices.md">Best practice per i flussi di lavoro</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html" target="_blank">Best practice per i flussi di lavoro</a></li>
         <li><a href="workflow/using/monitoring-technical-workflows.md">Monitoraggio tecnico dei flussi di lavoro</a></li>
         <li><a href="delivery/using/about-message-tracking.md">Gestione del tracciamento</a></li>
         <li><a href="production/using/monitoring-guidelines.md">Scopri gli strumenti di monitoraggio</a></li>
         <li><a href="platform/using/import-export-workflows.md">Importare dati con flussi di lavoro</a></li>
         <li><a href="delivery/using/steps-sending-the-delivery.md">Inviare messaggi in più ondate</a></li>
         <li><a href="delivery/using/defining-the-email-content.md">Progettare contenuti e-mail</a></li>
-        <li><a href="delivery/using/delivery-best-practices.md">Best practice per la consegna</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html" target="_blank">Best practice per la consegna</a></li>
         </ul>
     </td>
     <td valign="top">
@@ -109,11 +109,11 @@ Il Pannello di controllo è disponibile direttamente da Adobe Experience Cloud. 
 
 ### Domande frequenti sul Pannello di controllo
 
-[Fai clic qui &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=it) per accedere alle domande frequenti sul Pannello di controllo Campaign.
+[Fai clic qui ](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=it) per accedere alle domande frequenti sul Pannello di controllo Campaign.
 
 ### Gestione SFTP
 
-Nel Pannello di controllo, puoi interagire con tutti i server SFTP collegati alle istanze di Campaign a cui hai accesso. Puoi monitorarne la capacità di archiviazione, gestire gli indirizzi IP sul inserisco nell&#39;elenco Consentiti di storage e le chiavi SSH pubbliche. Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=it).
+Nel Pannello di controllo, puoi interagire con tutti i server SFTP collegati alle istanze di Campaign a cui hai accesso. Puoi monitorarne la capacità di archiviazione, gestire gli indirizzi IP sul inserisco nell&#39;elenco Consentiti di storage e le chiavi SSH pubbliche. Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
 
 ### Sottodomini e certificati
 

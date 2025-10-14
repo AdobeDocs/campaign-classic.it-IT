@@ -6,10 +6,10 @@ feature: Workflows, Data Management
 hide: true
 hidefromtoc: true
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 5%
+source-wordcount: '516'
+ht-degree: 3%
 
 ---
 
@@ -59,7 +59,7 @@ Questo consente di utilizzare i dati raccolti tramite un elenco o in base alle r
 
 Gli elementi di personalizzazione del tipo **[!UICONTROL Target extension]** (targetData) non sono disponibili per i flussi di lavoro di targeting. Il target della consegna deve essere integrato nel flusso di lavoro e specificato nella transizione in entrata della consegna.
 
-Se desideri creare bozze di consegna, la destinazione della bozza deve essere creata in base alla modalità **[!UICONTROL Address substitution]** in modo che sia possibile immettere i dati di personalizzazione. Per ulteriori informazioni, consulta questa [sezione](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof).
+Se desideri creare bozze di consegna, la destinazione della bozza deve essere creata in base alla modalità **[!UICONTROL Address substitution]** in modo che sia possibile immettere i dati di personalizzazione. Per ulteriori informazioni, consulta questa sezione nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}.
 
 Nell’esempio seguente, raccoglieremo un elenco di informazioni sui clienti, da utilizzare in un’e-mail personalizzata.
 

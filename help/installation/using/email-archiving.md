@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
 source-wordcount: '1211'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -24,13 +24,13 @@ Tuttavia, Adobe Campaign stessa non gestisce i file archiviati. Consente di invi
 
 A questo scopo, i file .eml corrispondenti alle e-mail inviate vengono trasferiti a un server remoto, ad esempio un server e-mail SMTP. La destinazione di archiviazione è un indirizzo e-mail in Ccn (invisibile ai destinatari della consegna) che devi specificare.
 
-## Recommendations e limitazioni {#recommendations-and-limitations}
+## Raccomandazioni e limitazioni {#recommendations-and-limitations}
 
 * La funzionalità CCN e-mail è facoltativa. Controlla il contratto di licenza.
-* Per **architetture in hosting e ibride**, contatta il tuo account executive per attivarle. L&#39;indirizzo e-mail Ccn scelto deve essere fornito al team di Adobi che lo configurerà per te.
+* Per **architetture in hosting e ibride**, contatta il tuo account executive per attivarle. L’indirizzo e-mail Ccn scelto deve essere fornito al team di Adobe che lo configurerà per te.
 * Per **installazioni on-premise**, attieniti alle istruzioni riportate di seguito per attivarlo. Consulta le sezioni [Attivazione del CCN e-mail (on-premise)](#activating-email-archiving--on-premise-) e [Configurazione dell&#39;indirizzo e-mail del CCN (on-premise)](#configuring-the-bcc-email-address--on-premise-).
 * È possibile utilizzare un solo indirizzo e-mail Ccn.
-* Dopo aver configurato il campo Ccn e-mail, assicurati che la funzione sia abilitata nel modello di consegna o nella consegna tramite l’opzione **[!UICONTROL Email BCC]**. Per ulteriori informazioni, consulta [questa sezione](../../delivery/using/sending-messages.md#archiving-emails).
+* Dopo aver configurato il campo Ccn e-mail, assicurati che la funzione sia abilitata nel modello di consegna o nella consegna tramite l’opzione **[!UICONTROL Email BCC]**. consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email-bcc.html){target="_blank"}.
 * Solo le e-mail inviate correttamente vengono prese in considerazione, i mancati recapiti non lo sono.
 * Il sistema di archiviazione delle e-mail è stato modificato con Adobe Campaign 17.2 (build 8795). Se utilizzavi già l’archiviazione delle e-mail, devi eseguire manualmente l’aggiornamento al nuovo sistema CCN e-mail. Per ulteriori informazioni, vedere la sezione [Spostamento alla nuova CCN e-mail](#updated-email-archiving-system--bcc-).
 
@@ -134,7 +134,7 @@ Nel file **config-`<instance name>.xml`**, utilizzare i seguenti parametri per d
 <!--
 ## Moving to the new Email BCC {#updated-email-archiving-system--bcc-}
 
-[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applies to on-premise and hybrid deployments only"}
+[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"}
 
 >[!IMPORTANT]
 >
@@ -157,7 +157,7 @@ Once email BCC is configured, make sure you select the **[!UICONTROL Email BCC]*
    * Se condividi un MTA con più client e uno di essi ha questa opzione attivata, questo client accederà a tutte le e-mail degli altri client che condividono lo stesso MTA. Per evitare tale situazione, utilizza un MTA diverso per ogni client.
    * Se utilizzi lo stesso MTA in più istanze (sviluppo, test, prod) per un singolo client, i messaggi inviati da tutte e tre le istanze verranno duplicati dall’opzione dataLogPath.
 
-* **E-mail per connessione**: l&#39;archiviazione di e-mail in Ccn funziona aprendo una connessione e tentando di inviare tutte le e-mail tramite tale connessione. L’Adobe consiglia di verificare con il contatto tecnico interno il numero di e-mail accettate su una determinata connessione. L&#39;aumento di questo numero può avere un grande impatto sulla velocità effettiva CCN.
+* **E-mail per connessione**: l&#39;archiviazione di e-mail in Ccn funziona aprendo una connessione e tentando di inviare tutte le e-mail tramite tale connessione. Adobe consiglia di verificare con il contatto tecnico interno il numero di e-mail accettate su una determinata connessione. L&#39;aumento di questo numero può avere un grande impatto sulla velocità effettiva CCN.
 * **IP di invio CCN**: al momento, le e-mail CCN non vengono inviate tramite i normali proxy MTA. Viene invece aperta una connessione diretta dal server MTA al server e-mail di destinazione. Ciò significa che potrebbe essere necessario aggiungere altri IP al inserisco nell&#39;elenco Consentiti di rete, a seconda della configurazione del server e-mail.
 
 <!--## Email BCC with Enhanced MTA {#email-bcc-with-enhanced-mta}

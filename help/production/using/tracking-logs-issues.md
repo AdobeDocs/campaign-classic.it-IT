@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 58656aa1-aa95-451f-80b8-9e2d28223056
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 13%
+source-wordcount: '71'
+ht-degree: 14%
 
 ---
 
@@ -22,9 +22,9 @@ Ci possono essere diversi motivi per cui i registri di tracciamento non vengono 
 
 * **Il flusso di lavoro** Rilevamento **contiene errori?**
 
-  Consulta [Monitoraggio dei flussi di lavoro tecnici](../../workflow/using/monitoring-technical-workflows.md).
+Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html?lang=it){target="_blank"}.
 
-  ![](assets/tracking_scheduled_task.png)
+![](assets/tracking_scheduled_task.png)
 
 * **Il modulo** trackinglogd **è in esecuzione sul server?**
 

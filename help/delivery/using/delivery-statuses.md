@@ -6,9 +6,9 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Monitoring, Deliverability
 role: User
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '638'
 ht-degree: 3%
 
 ---
@@ -87,13 +87,13 @@ Per ulteriori dettagli sui diversi errori di consegna riscontrabili e su come ri
  </tbody> 
 </table>
 
-Per informazioni su come ottimizzare il recapito dei messaggi di posta elettronica di Adobe Campaign, consulta [questa sezione](about-deliverability.md). Per informazioni più approfondite sul recapito messaggi, consulta l&#39;[Adobe di guida alle best practice per il recapito messaggi](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it).
+Per informazioni su come ottimizzare il recapito dei messaggi di posta elettronica di Adobe Campaign, consulta [questa sezione](about-deliverability.md). Per informazioni più approfondite sul recapito messaggi, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it).
 
 ## Stato in sospeso {#pending-status}
 
 Dopo aver confermato la consegna, puoi vedere che lo stato della consegna è **[!UICONTROL Pending]**. Questo stato indica che il processo di esecuzione è in attesa della disponibilità di alcune risorse.
 
-Lo stato **[!UICONTROL Pending]** può indicare che la consegna è stata pianificata ed è in sospeso fino alla data specificata. Per ulteriori informazioni, consulta la sezione [Pianificazione della consegna](steps-sending-the-delivery.md#scheduling-the-delivery-sending).
+Lo stato **[!UICONTROL Pending]** può indicare che la consegna è stata pianificata ed è in sospeso fino alla data specificata. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html#schedule-delivery-sending){target="_blank"}
 
 Se la consegna non viene inviata e il suo stato rimane **[!UICONTROL Pending]**, può essere il risultato di:
 

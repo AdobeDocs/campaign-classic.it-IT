@@ -5,10 +5,10 @@ description: Analizza il successo delle campagne con rapporti integrati o person
 feature: Reporting, Monitoring
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 exl-id: 1ef30004-e1b0-4dde-8104-0ee9e8aa9d8b
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 18%
+source-wordcount: '347'
+ht-degree: 16%
 
 ---
 
@@ -20,7 +20,7 @@ Oltre a [rapporti incorporati](../../reporting/using/about-campaign-built-in-rep
 
 Adobe Campaign non è uno strumento di reporting specializzato: i rapporti creati in Adobe Campaign consentono principalmente di visualizzare i dati aggregati. I rapporti di Adobe Campaign, dedicati all’analisi e alla rappresentazione dei dati, non sono progettati per le esportazioni di database.
 
-Per esportare dati dal database di Adobe Campaign, devi creare un flusso di lavoro e utilizzare un’attività di esportazione dati. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../workflow/using/about-action-activities.md).
+Per esportare dati dal database di Adobe Campaign, devi creare un flusso di lavoro e utilizzare un’attività di esportazione dati. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html){target="_blank"}.
 
 Adobe Campaign fornisce diversi strumenti di reporting:
 

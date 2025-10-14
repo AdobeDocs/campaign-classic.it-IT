@@ -7,16 +7,16 @@ role: User, Developer, Data Engineer
 hide: true
 hidefromtoc: true
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '650'
 ht-degree: 12%
 
 ---
 
 # Creare notifiche per Android{#create-notificaations-android}
 
-Utilizza Adobe Campaign per inviare notifiche push su dispositivi Android. I concetti globali sulla creazione della consegna sono presentati in [questa sezione](steps-about-delivery-creation-steps.md).
+Utilizza Adobe Campaign per inviare notifiche push su dispositivi Android. I concetti globali sulla creazione della consegna sono descritti nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
 
 Inizia creando una nuova consegna.
 
@@ -70,7 +70,7 @@ L’immagine e la pagina web devono essere visualizzate nella notifica push quan
 
 ## Creare un messaggio di notifica {#creating-notification-message}
 
-![](assets/do-not-localize/how-to-video.png) [Scopri come creare una notifica push di Android in un video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=it#additional-resources){target="_blank"}.
+![](assets/do-not-localize/how-to-video.png) [Scopri come creare una notifica push di Android in un video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html#additional-resources){target="_blank"}.
 
 1. Vai a **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 
@@ -111,8 +111,8 @@ L’immagine e la pagina web devono essere visualizzate nella notifica push quan
    * **[!UICONTROL Image]**: imposta l&#39;URL dell&#39;immagine da visualizzare nella notifica.
    * **[!UICONTROL Notification Count]**: impostare il numero di nuove informazioni non lette da visualizzare direttamente sull&#39;icona dell&#39;applicazione.
    * **[!UICONTROL Sticky]**: Impostare su true o false. Se impostato su false, la notifica viene automaticamente ignorata quando l’utente fa clic su di essa. Se impostato su true, la notifica viene comunque visualizzata anche quando l’utente fa clic su di essa.
-   * **[!UICONTROL Notification Priority]**: impostare i livelli di priorità della notifica su predefinito, minimo, minimo o massimo. Per ulteriori informazioni, consulta la [documentazione FCM &#x200B;](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#NotificationPriority).
-   * **[!UICONTROL Visibility]**: impostare i livelli di visibilità della notifica su public, private o secret. Per ulteriori informazioni, consulta la [documentazione FCM &#x200B;](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#visibility).
+   * **[!UICONTROL Notification Priority]**: impostare i livelli di priorità della notifica su predefinito, minimo, minimo o massimo. Per ulteriori informazioni, consulta la [documentazione FCM ](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#NotificationPriority).
+   * **[!UICONTROL Visibility]**: impostare i livelli di visibilità della notifica su public, private o secret. Per ulteriori informazioni, consulta la [documentazione FCM ](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#visibility).
 
    Per ulteriori informazioni su **[!UICONTROL HTTP v1 additional options]** e su come compilare questi campi, consulta la [documentazione FCM](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"}.
 

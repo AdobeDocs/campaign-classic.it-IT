@@ -6,10 +6,10 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Monitoring, Email Design, Personalization
 role: User
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 9%
+source-wordcount: '179'
+ht-degree: 8%
 
 ---
 
@@ -19,7 +19,7 @@ Le impostazioni avanzate di verifica dei messaggi sono accessibili tramite l&#39
 
 >[!NOTE]
 >
->In questa finestra è configurata anche la gestione delle immagini nelle e-mail. Vedi [Aggiungi immagini](defining-the-email-content.md#adding-images).
+>In questa finestra è configurata anche la gestione delle immagini nelle e-mail. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}.
 
 ![](assets/s_ncs_user_email_del_tracking_ico.png)
 

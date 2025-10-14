@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 83%
+source-wordcount: '839'
+ht-degree: 78%
 
 ---
 
@@ -63,29 +63,29 @@ Consulta [questo documento](privacy-and-recommendations.md) per scoprire gli str
 
 Consulta [questa sezione](../../platform/using/adobe-campaign-workspace.md) per ulteriori informazioni sulle nozioni di base sull’area di lavoro di Adobe Campaign.
 
-![](assets/do-not-localize/how-to-video.png) [Scopri l’area di lavoro di Campaign nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html?lang=it)
+![](assets/do-not-localize/how-to-video.png) [Scopri l’area di lavoro di Campaign nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
 ## Come posso selezionare il pubblico dei miei messaggi? {#how-can-i-select-the-target-population-of-my-messages-}
 
-Con Adobe Campaign, puoi utilizzare strategie diverse per creare pubblici e selezionare destinatari.
+Con Adobe Campaign, puoi utilizzare strategie diverse per creare tipi di pubblico e selezionare i destinatari target.
 
-[Fai clic qui per ulteriori informazioni](../../delivery/using/steps-defining-the-target-population.md).
+Fai clic qui per ulteriori informazioni nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}.
 
 ## Che cos’è un flusso di lavoro? {#what-is-a-workflow-}
 
- Adobe Campaign include flussi di lavoro per orchestrare l’intera gamma di processi e attività tra i diversi moduli del server dell’applicazione. Questo ambiente grafico completo ti consente di progettare processi inclusi segmentazione, esecuzione di campagne, elaborazione di file, partecipazione di utenti, ecc. Il motore del flusso di lavoro esegue e traccia tali processi.
+Adobe Campaign include flussi di lavoro per orchestrare l’intera gamma di processi e attività tra i diversi moduli del server dell’applicazione. Questo ambiente grafico completo ti consente di progettare processi inclusi segmentazione, esecuzione di campagne, elaborazione di file, partecipazione di utenti, ecc. Il motore del flusso di lavoro esegue e traccia tali processi.
 
 Ad esempio, puoi utilizzare un flusso di lavoro per scaricare un file da un server, decomprimerlo e quindi importare i record contenuti all’interno nel database di Adobe Campaign.
 
 Un flusso di lavoro può inoltre coinvolgere uno o più operatori da avvisare o che possono effettuare scelte e approvare processi. In questo modo, è possibile creare un’azione di consegna, assegnare un’attività a uno o più operatori per lavorare sul contenuto, specificare dei target e approvare le prove prima di avviare la consegna.
 
-[Fai clic qui per ulteriori informazioni](../../workflow/using/about-workflows.md) sui flussi di lavoro. Puoi inoltre consultare le [best practice per i flussi di lavoro](../../workflow/using/building-a-workflow.md).
+[Fai clic qui per ulteriori informazioni](../../workflow/using/about-workflows.md) sui flussi di lavoro. Puoi inoltre consultare le best practice per i flussi di lavoro nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=it){target="_blank"}.
 
 ## Come si crea e invia una prima e-mail? {#how-to-create-and-send-a-first-email-}
 
 [Fai clic qui per ulteriori informazioni](../../delivery/using/about-email-channel.md).
 
-![](assets/do-not-localize/how-to-video.png) [Scoprilo nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html?lang=it)
+![](assets/do-not-localize/how-to-video.png) [Scoprilo nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html)
 
 ## Come si inviano i messaggi SMS? {#how-to-send-sms-messages-}
 
@@ -93,7 +93,7 @@ Scopri come configurare la piattaforma e inviare messaggi SMS [in questa sezione
 
 ## Come si inviano le notifiche push? {#how-to-send-push-notifications-}
 
-Scopri come utilizzare Adobe Campaign per [inviare una notifica push personalizzata](../../delivery/using/create-notifications-ios.md) ai dispositivi iOS e Android tramite app.
+Scopri come utilizzare Adobe Campaign per inviare una notifica push personalizzata nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target="_blank"}.
 
 ## Come si progetta e si condivide un sondaggio online? {#how-to-design-and-share-an-online-survey-}
 
@@ -131,6 +131,6 @@ Adobe valuta costantemente le funzionalità del prodotto e nel tempo pianifica l
 
 ## Vengono rilasciati nuovi aggiornamenti della documentazione e materiali di supporto? {#are-there-new-documentation-updates-and-help-materials-released-}
 
-Gli aggiornamenti della documentazione più recenti di Campaign Classic sono elencati [in questa pagina](https://experienceleague.adobe.com/docs/campaign-classic/using/documentation-updates.html?lang=it).
+Gli aggiornamenti della documentazione più recenti di Campaign Classic sono elencati [in questa pagina](https://experienceleague.adobe.com/docs/campaign-classic/using/documentation-updates.html).
 
 Puoi inoltre consultare le note tecniche più recenti elencate [in questa pagina](https://helpx.adobe.com/it/campaign/kb/article-list.html).

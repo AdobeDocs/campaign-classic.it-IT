@@ -5,9 +5,9 @@ description: 'Caso d’uso: configurare la sostituzione del campo'
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Seed Address
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '456'
 ht-degree: 5%
 
 ---
@@ -33,7 +33,7 @@ Per utilizzare la sostituzione casuale dei campi, è necessario disporre di:
 
 ## Creare una consegna {#step-1---creating-a-delivery}
 
-I passaggi per creare una consegna sono descritti nella sezione [Creare una consegna e-mail](creating-an-email-delivery.md).
+I passaggi per la creazione di una consegna sono descritti nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}.
 
 In questo esempio, il responsabile della consegna ha creato la newsletter.
 
@@ -80,7 +80,7 @@ Affinché la modifica dello schema dati possa essere visualizzata negli indirizz
 
    ![](assets/dlv_seeds_usecase_28.png)
 
-   Puoi notare che uno dei campi di personalizzazione è vuoto. Poiché l’indirizzo di seed non dispone di dati per questo campo, l’anteprima del contenuto HTML non può visualizzare un valore.
+   Puoi notare che uno dei campi di personalizzazione è vuoto. Poiché l’indirizzo di seed non dispone di dati per questo campo, l’anteprima del contenuto di HTML non può visualizzare un valore.
 
    La sostituzione casuale dei campi viene eseguita **al momento della consegna**.
 

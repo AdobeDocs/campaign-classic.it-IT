@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: 417004c9-ed96-4b98-a518-a3aa6123ee7b
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '568'
 ht-degree: 2%
 
 ---
@@ -38,7 +38,7 @@ Per creare indirizzi di seed in un messaggio transazionale, segui i passaggi seg
 
    ![](assets/messagecenter_create_seedaddr_003.png)
 
-1. Immetti l’identificatore esterno: questo campo opzionale ti consente di immettere una chiave aziendale (ID univoco, nome + e-mail, ecc.) comune a tutte le applicazioni sul sito web, utilizzato per identificare i profili. Se questo campo è presente anche nel database di marketing di Adobe Campaign, puoi riconciliare un evento con un profilo nel database.
+1. Inserisci l’identificatore esterno: questo campo opzionale ti consente di inserire una chiave aziendale (ID univoco, nome + e-mail, ecc.) comune a tutte le applicazioni sul sito web, utilizzata per identificare i profili. Se questo campo è presente anche nel database di marketing di Adobe Campaign, puoi riconciliare un evento con un profilo nel database.
 
    ![](assets/messagecenter_create_seedaddr_003bis.png)
 
@@ -100,7 +100,7 @@ Utilizzando gli indirizzi seed, puoi anche visualizzare il rendering del messagg
 
 Puoi verificare la consegna dei messaggi inviando una bozza a un indirizzo seed creato in precedenza.
 
-L&#39;invio di una bozza comporta lo stesso processo di una [consegna regolare](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof). Tuttavia, con la messaggistica transazionale, devi eseguire in anticipo le seguenti operazioni:
+L’invio di una bozza prevede lo stesso processo di una consegna regolare. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}. Tuttavia, con la messaggistica transazionale, devi eseguire in anticipo le seguenti operazioni:
 
 * Crea uno o più [indirizzi seed](#managing-seed-addresses-in-transactional-messages) con [dati di personalizzazione](#personalization-data).
 * [Crea il contenuto del messaggio](../../message-center/using/creating-the-message-template.md#creating-message-content).
@@ -117,7 +117,7 @@ Per inviare la bozza:
 
    ![](assets/messagecenter_send_proof_002.png)
 
-È possibile accedere alle bozze in ogni modello tramite la scheda **[!UICONTROL Audit]**. Per ulteriori dettagli, vedere [Inviare una bozza](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+È possibile accedere alle bozze in ogni modello tramite la scheda **[!UICONTROL Audit]**. Per ulteriori dettagli, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
 
 ![](assets/messagecenter_send_proof_003.png)
 

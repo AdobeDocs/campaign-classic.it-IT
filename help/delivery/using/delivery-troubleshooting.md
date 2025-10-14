@@ -6,9 +6,9 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Monitoring, Deliverability, Troubleshooting
 role: User
 exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '809'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Dopo aver fatto clic sul pulsante **[!UICONTROL Send]**, la consegna sembra rich
 
 * Alcuni provider di posta elettronica potrebbero aver aggiunto i tuoi indirizzi IP a un inserisco nell&#39;elenco Bloccati di. In questo caso, controlla i registri di trasmissione e consulta [questa sezione](about-deliverability.md).
 
-* La consegna potrebbe essere troppo grande per essere elaborata rapidamente. Ciò può verificarsi con una personalizzazione JavaScript elevata o se la consegna pesa più di 60 kbyte. Per informazioni sulle linee guida per i contenuti, consulta le [best practice per la consegna](delivery-best-practices.md) di Adobe Campaign.
+* La consegna potrebbe essere troppo grande per essere elaborata rapidamente. Ciò può verificarsi con una personalizzazione JavaScript elevata o se la consegna pesa più di 60 kbyte. Consulta le [Best practice per la consegna](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"} di Adobe Campaign v8.  per informazioni sulle linee guida per i contenuti.
 
 * La limitazione potrebbe essersi verificata all’interno dell’MTA di Adobe Campaign. Ciò è causato da:
 
@@ -45,7 +45,7 @@ Dopo aver fatto clic sul pulsante **[!UICONTROL Send]**, la consegna sembra rich
 
 Se le consegne non vengono eseguite alla data pianificata esatta, possono essere correlate a una differenza tra i fusi orari dei server. L’istanza di mid-sourcing e l’istanza di produzione possono trovarsi in fusi orari diversi.
 
-Ad esempio, se l’istanza di mid-sourcing si trova nel fuso orario di Brisbane e l’istanza di produzione nel fuso orario di Darwin, entrambi i fusi orari sono a mezz’ora di distanza l’uno dall’altro, nel registro di audit risulterebbe chiaramente che se la consegna è pianificata per la produzione alle 11:56, la stessa consegna pianificata per il mid sarebbe alle 12:26, con una differenza di mezz’ora.
+Ad esempio, se l’istanza di mid-sourcing si trova nel fuso orario di Brisbane e l’istanza di produzione nel fuso orario di Darwin, entrambi i fusi orari sono a mezz’ora di distanza l’uno dall’altro, nel registro di audit risulterebbe chiaramente che se la consegna è pianificata per la produzione all’11:56, la stessa consegna pianificata per il mid sarebbe a 12:26 con una differenza di mezz’ora.
 
 ## Stato non riuscito {#failed-status}
 
@@ -59,9 +59,9 @@ I registri di consegna sono fondamentali per comprendere il motivo per cui una c
   Error while compiling script 'content htmlContent' line X: `[table]` is not defined. JavaScript: error while evaluating script 'content htmlContent
   ```
 
-  La causa di questo problema è quasi sempre una personalizzazione in HTML che tenta di invocare una tabella o un campo che non è stato definito o mappato nel targeting a monte o nella mappatura di destinazione della consegna.
+  La causa di questo problema è quasi sempre una personalizzazione all’interno di HTML che tenta di invocare una tabella o un campo che non è stato definito o mappato nel targeting a monte o nella mappatura di destinazione della consegna.
 
-  Per risolvere questo problema, è necessario rivedere il flusso di lavoro e il contenuto della consegna per determinare in modo specifico quale personalizzazione sta tentando di chiamare la tabella in questione e se è possibile mappare o meno la tabella. Da lì, il percorso per la risoluzione sarà la rimozione della chiamata a questa tabella nel HTML o la correzione della mappatura alla consegna.
+  Per risolvere questo problema, è necessario rivedere il flusso di lavoro e il contenuto della consegna per determinare in modo specifico quale personalizzazione sta tentando di chiamare la tabella in questione e se è possibile mappare o meno la tabella. Da lì, il percorso per la risoluzione sarà la rimozione della chiamata a questa tabella in HTML o la correzione della mappatura alla consegna.
 
 * Nel modello di distribuzione mid-sourcing, nei registri di consegna può essere visualizzato il seguente messaggio:
 
@@ -73,7 +73,7 @@ I registri di consegna sono fondamentali per comprendere il motivo per cui una c
 
   Per risolvere questo problema, si consiglia di effettuare una prova di vuoto e reindicizzare il database. Per ulteriori informazioni sulla manutenzione del database, consultare [questa sezione](../../production/using/recommendations.md).
 
-  È inoltre necessario riavviare tutti i flussi di lavoro con un&#39;attività pianificata e tutti i flussi di lavoro con stato non riuscito. Fai riferimento a [questa sezione](../../workflow/using/scheduler.md).
+  È inoltre necessario riavviare tutti i flussi di lavoro con un&#39;attività pianificata e tutti i flussi di lavoro con stato non riuscito. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}.
 
 * Quando una consegna non riesce, nei registri di consegna può essere visualizzato il seguente errore:
 
@@ -83,7 +83,7 @@ I registri di consegna sono fondamentali per comprendere il motivo per cui una c
 
   In genere, questo errore indica che esiste un campo o un blocco di personalizzazione all’interno dell’e-mail con più valori per il destinatario. Un blocco di personalizzazione è in uso e sta recuperando più di un record per un destinatario specifico.
 
-  Per risolvere questo problema, controlla i dati di personalizzazione utilizzati, quindi controlla il target per i destinatari che hanno più di una voce per uno qualsiasi di questi campi. È inoltre possibile utilizzare un&#39;attività **[!UICONTROL Deduplication]** nel flusso di lavoro di targeting prima dell&#39;attività di consegna per verificare che esista un solo campo di personalizzazione alla volta. Per ulteriori informazioni sulla deduplicazione, consulta [questa pagina](../../workflow/using/deduplication.md).
+  Per risolvere questo problema, controlla i dati di personalizzazione utilizzati, quindi controlla il target per i destinatari che hanno più di una voce per uno qualsiasi di questi campi. È inoltre possibile utilizzare un&#39;attività **[!UICONTROL Deduplication]** nel flusso di lavoro di targeting prima dell&#39;attività di consegna per verificare che esista un solo campo di personalizzazione alla volta. Per ulteriori informazioni sulla deduplicazione, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}.
 
 * Alcune consegne possono non riuscire e viene visualizzato un errore &quot;Non raggiungibile&quot; che indica:
 

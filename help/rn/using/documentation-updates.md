@@ -8,10 +8,10 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3864'
-ht-degree: 100%
+source-wordcount: '3865'
+ht-degree: 99%
 
 ---
 
@@ -30,7 +30,7 @@ Nell’ambito di un’iniziativa di promozione di Campaign v8, abbiamo iniziato
 * Orchestrare campagne di marketing: questa guida è stata sostituita da una [pagina di destinazione](../../campaign/using/about-marketing-campaigns.md).
 * Gestione delle risorse marketing: questa guida è stata rimossa.
 * Marketing distribuito: questa guida è stata rimossa.
-* Automatizzare con i flussi di lavoro: questa guida è stata sostituita da una [pagina di destinazione](../../workflow/using/about-workflow-automation.md)
+* Automatizzare con i flussi di lavoro: questa guida è stata sostituita da una [pagina di destinazione](../../workflow/using/about-workflows.md)
 
 ## 2024
 
@@ -419,7 +419,7 @@ Sono ora disponibili video di spiegazione sui seguenti argomenti:
 
 * [Come personalizzare le e-mail utilizzando i campi di personalizzazione](../../delivery/using/personalization-fields.md)
 
-* [Come gestire seed e bozze in un’e-mail](../../delivery/using/steps-defining-the-target-population.md)
+* [Come gestire seed e bozze in un&#39;e-mail](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}.
 
 * [Come impostare una consegna ricorrente](../../workflow/using/recurring-delivery.md)
 

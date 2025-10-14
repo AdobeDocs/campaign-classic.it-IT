@@ -7,9 +7,9 @@ feature: Campaigns, Resource Management, Cross Channel Orchestration
 hide: true
 hidefromtoc: true
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1485'
+source-wordcount: '1491'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Le consegne possono essere create tramite il dashboard della campagna, un flusso
 
 Quando vengono create da una campagna, le consegne verranno collegate a questa campagna e consolidate a livello di campagna.
 
-![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#create-email-video)
+![](assets/do-not-localize/how-to-video.png)[Scopri questa funzione nel video](#create-email-video)
 
 ## Creare consegne {#creating-deliveries}
 
@@ -28,7 +28,7 @@ Per creare una consegna collegata a una campagna, fai clic sul collegamento **[!
 
 ![](assets/campaign_op_add_delivery.png)
 
-Le configurazioni suggerite sono adatte ai diversi tipi di consegna: direct mailing, e-mail, canali mobili. [Ulteriori informazioni](../../delivery/using/steps-about-delivery-creation-steps.md).
+Le configurazioni suggerite sono adatte ai diversi tipi di consegna: direct mailing, e-mail, canali mobili. Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
 
 ## Avviare una consegna {#starting-a-delivery}
 
@@ -238,6 +238,6 @@ Il modello di esportazione deve essere associato al fornitore di servizi selezio
 
 Questo video spiega come creare una campagna e un messaggio e-mail in Adobe Campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/329889?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 Ulteriori video dimostrativi di Campaign sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

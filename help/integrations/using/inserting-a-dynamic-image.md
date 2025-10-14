@@ -8,9 +8,9 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: 6177f57b-534c-4d86-8f73-d96980c48a77
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '822'
 ht-degree: 3%
 
 ---
@@ -62,7 +62,7 @@ In Adobe Campaign, esistono due modi per inserire un’immagine dinamica da Targ
 * **[!UICONTROL Landing Page]**: se desideri che l&#39;immagine predefinita venga reindirizzata a una pagina di destinazione predefinita. Questo URL si riferisce solo ai casi in cui l’immagine predefinita viene visualizzata nell’e-mail finale ed è facoltativa.
 * **[!UICONTROL Additional decision parameters]**: specifica il mapping tra i campi definiti nei segmenti Adobe Target e i campi Adobe Campaign. I campi Adobe Campaign utilizzati devono essere stati specificati nella rawbox. Nel nostro esempio, abbiamo aggiunto il campo Paese.
 
-Se utilizzi le autorizzazioni Enterprise nelle impostazioni di Adobe Target, aggiungi la proprietà corrispondente in questo campo. Ulteriori informazioni sulle autorizzazioni di Target Enterprise in [questa pagina](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=it).
+Se utilizzi le autorizzazioni Enterprise nelle impostazioni di Adobe Target, aggiungi la proprietà corrispondente in questo campo. Ulteriori informazioni sulle autorizzazioni di Target Enterprise in [questa pagina](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html).
 
 ![](assets/target_13.png)
 
@@ -82,7 +82,7 @@ Nel nostro caso, abbiamo bisogno di due offerte di reindirizzamento, la terza (q
 
    ![](assets/target_6.png)
 
-1. Segui la stessa procedura per l’offerta di reindirizzamento rimanente. Per ulteriori informazioni, consulta questa [pagina](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=it).
+1. Segui la stessa procedura per l’offerta di reindirizzamento rimanente. Per ulteriori informazioni, consulta questa [pagina](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html).
 
 ## Creare tipi di pubblico {#audiences-target}
 
@@ -154,7 +154,7 @@ La sezione **[!UICONTROL Reporting Settings]** consente di selezionare un&#39;az
 
 ## Anteprima e invio dell’e-mail {#preview-send-email}
 
-In Adobe Campaign, ora puoi visualizzare in anteprima il messaggio e-mail e testarne il rendering su destinatari diversi. Noterai che l’immagine cambia in base alle diverse esperienze create. Per ulteriori informazioni sulla creazione di e-mail, consulta questa [pagina](../../delivery/using/defining-the-email-content.md).
+In Adobe Campaign, ora puoi visualizzare in anteprima il messaggio e-mail e testarne il rendering su destinatari diversi. Noterai che l’immagine cambia in base alle diverse esperienze create. Per ulteriori informazioni sulla creazione di e-mail, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}.
 
 Ora puoi inviare la tua e-mail contenente un’offerta dinamica di Target.
 

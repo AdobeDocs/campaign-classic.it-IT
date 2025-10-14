@@ -6,9 +6,9 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Monitoring, Deliverability
 role: User
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2984'
+source-wordcount: '3008'
 ht-degree: 7%
 
 ---
@@ -29,7 +29,7 @@ Alcuni provider di accesso a Internet considerano automaticamente le e-mail come
 
 Inoltre, le quarantene contribuiscono a ridurre i costi di invio degli SMS escludendo numeri di telefono errati dalle consegne.
 
-Per ulteriori informazioni sulle best practice per proteggere e ottimizzare le consegne, consulta [questa pagina](delivery-best-practices.md).
+Per ulteriori informazioni sulle best practice per proteggere e ottimizzare le consegne, consulta questa pagina nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}.
 
 ### Quarantena e inserisco nell&#39;elenco Bloccati di {#quarantine-vs-denylist}
 
@@ -103,7 +103,7 @@ Adobe Campaign gestisce la quarantena in base al tipo di consegna non riuscita e
 * **Errore rigido**: l’indirizzo e-mail corrispondente viene messo immediatamente in quarantena.
 * **Errore morbido**: gli errori morbidi non mettono immediatamente un indirizzo in quarantena, ma incrementano un contatore di errori. Per ulteriori informazioni, consulta [Gestione degli errori software](#soft-error-management).
 
-Se un utente qualifica un&#39;e-mail come spam ([ciclo di feedback](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=it#feedback-loops)), il messaggio viene automaticamente reindirizzato verso una casella di posta tecnica gestita da Adobe. L’indirizzo e-mail dell’utente viene quindi messo automaticamente in quarantena con lo stato **[!UICONTROL Denylisted]**. Questo stato si riferisce solo all’indirizzo, il profilo non è nel inserisco nell&#39;elenco Bloccati di, in modo che l’utente continui a ricevere messaggi SMS e notifiche push.
+Se un utente qualifica un&#39;e-mail come spam ([ciclo di feedback](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops)), il messaggio viene automaticamente reindirizzato verso una casella di posta tecnica gestita da Adobe. L’indirizzo e-mail dell’utente viene quindi messo automaticamente in quarantena con lo stato **[!UICONTROL Denylisted]**. Questo stato si riferisce solo all’indirizzo, il profilo non è nel inserisco nell&#39;elenco Bloccati di, in modo che l’utente continui a ricevere messaggi SMS e notifiche push.
 
 >[!NOTE]
 >
@@ -117,14 +117,14 @@ Nell&#39;elenco degli indirizzi messi in quarantena (vedere [Identificazione deg
 
 Al contrario degli errori rigidi, gli errori morbidi non mettono immediatamente un indirizzo in quarantena, ma incrementano un contatore di errori.
 
-I tentativi verranno eseguiti durante la [durata della consegna](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period). Quando il contatore di errori raggiunge la soglia limite, l’indirizzo viene messo in quarantena. Per ulteriori informazioni, consulta [Tentativi dopo un errore temporaneo di consegna](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
+I tentativi verranno eseguiti durante la durata della consegna. Consulta questa [pagina](communication-channels.md) in **Invio consegna** > **Definisci il periodo di validità**. Quando il contatore di errori raggiunge la soglia limite, l’indirizzo viene messo in quarantena. Per ulteriori informazioni, consulta [Tentativi dopo un errore temporaneo di consegna](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
 
 Il contatore degli errori viene reinizializzato se l&#39;ultimo errore significativo si è verificato più di 10 giorni fa. Lo stato dell&#39;indirizzo cambia quindi in **Valido** e viene eliminato dall&#39;elenco delle quarantene dal flusso di lavoro [Database cleanup](../../production/using/database-cleanup-workflow.md).
 
 
 Per le installazioni in hosting o ibride, se hai eseguito l&#39;aggiornamento all&#39;[MTA avanzato](sending-with-enhanced-mta.md), il numero massimo di tentativi da eseguire in caso di stato **[!UICONTROL Erroneous]** e il ritardo minimo tra i tentativi si basano ora sulle prestazioni sia cronologiche che attuali di un IP in un determinato dominio.
 
-Per le installazioni on-premise e le installazioni in hosting/ibride che utilizzano l’MTA di Campaign legacy, puoi modificare il numero di errori e il periodo tra due errori. A tale scopo, modificare le impostazioni corrispondenti nella [procedura guidata di distribuzione](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**) o [a livello di consegna](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
+Per le installazioni on-premise e le installazioni in hosting/ibride che utilizzano l’MTA di Campaign legacy, puoi modificare il numero di errori e il periodo tra due errori. A tale scopo, modificare le impostazioni corrispondenti nella [procedura guidata di distribuzione](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**) o a livello di consegna. Vedi questa [pagina](communication-channels.md) in **Invio consegna** > **Configura nuovi tentativi**.
 
 
 ## Rimuovere un indirizzo dalla quarantena {#removing-a-quarantined-address}

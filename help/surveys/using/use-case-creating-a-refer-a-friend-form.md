@@ -5,9 +5,9 @@ description: Scopri come creare un modulo per invitare un amico
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Surveys
 exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ Per configurare e creare il blocco di riferimento, attieniti alla seguente proce
 
    >[!NOTE]
    >
-   >Fai riferimento a [questa pagina](../../delivery/using/about-templates.md) per ulteriori informazioni sui modelli di consegna.
+   >Per ulteriori informazioni sui modelli di consegna, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
 
 1. Crea il secondo script per la consegna dei messaggi di abbonamento.
 
@@ -117,7 +117,7 @@ Per configurare e creare il blocco di riferimento, attieniti alla seguente proce
     </delivery>)
    ```
 
-1. Publish il modulo per il concorso e invia un invito ai destinatari del target iniziale. Quando uno di loro invita un amico, viene creata una consegna basata sul modello **Offerta di riferimento**.
+1. Pubblica il modulo di concorso e invia un invito ai destinatari del target iniziale. Quando uno di loro invita un amico, viene creata una consegna basata sul modello **Offerta di riferimento**.
 
    ![](assets/s_ncs_admin_survey_viral_sample_8.png)
 

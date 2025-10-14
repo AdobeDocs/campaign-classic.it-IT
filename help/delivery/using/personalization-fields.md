@@ -8,10 +8,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 9%
+source-wordcount: '1027'
+ht-degree: 8%
 
 ---
 
@@ -87,7 +87,7 @@ Ad esempio, se riscontri problemi di prestazioni durante la consegna a un numero
 
 Per utilizzare questa opzione, effettua le seguenti operazioni:
 
-1. Creare una campagna. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
+1. Creare una campagna. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=it){target=_blank}.
 1. Nella scheda **[!UICONTROL Targeting and workflows]** della campagna, aggiungi un&#39;attività **Query** al flusso di lavoro. Per ulteriori informazioni sull&#39;utilizzo di questa attività, consulta [questa sezione](../../workflow/using/query.md).
 1. Aggiungere un&#39;attività **[!UICONTROL Email delivery]** al flusso di lavoro e aprirla. Per ulteriori informazioni sull&#39;utilizzo di questa attività, consulta [questa sezione](../../workflow/using/delivery.md).
 1. Passare alla scheda **[!UICONTROL Analysis]** di **[!UICONTROL Delivery properties]** e selezionare l&#39;opzione **[!UICONTROL Prepare the personalization data with a workflow]**.
@@ -142,6 +142,6 @@ Aggiungendo lo schema di oggetti, è possibile selezionare i campi che si deside
 
 Scopri come aggiungere un campo di personalizzazione alla riga dell’oggetto e il contenuto di una consegna e-mail.
 
->[!VIDEO](https://video.tv.adobe.com/v/329894?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
 
 Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

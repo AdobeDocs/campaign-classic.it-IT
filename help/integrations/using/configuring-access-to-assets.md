@@ -8,10 +8,10 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
-source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 0%
+source-wordcount: '499'
+ht-degree: 1%
 
 ---
 
@@ -51,7 +51,7 @@ Per abilitare la connessione tra Adobe Campaign e Adobe Experience Cloud, config
 
 >[!CAUTION]
 >
->Questa funzionalità è stata disattivata a partire da Adobe Experience Manager 6.4. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=it#removed-features)
+>Questa funzionalità è stata disattivata a partire da Adobe Experience Manager 6.4. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html#removed-features)
 
 Per integrare AEM Assets con Adobe Campaign, devi prima configurare l’integrazione tra Adobe Experience Manager e Adobe Campaign. Questa configurazione richiede principalmente:
 
@@ -62,7 +62,7 @@ Scopri come integrare Adobe Campaign e Adobe Experience Manager nella [documenta
 
 Una volta impostata questa integrazione, puoi configurare un nuovo modello di consegna in Adobe Campaign per l’utilizzo della libreria AEM Assets. A questo scopo, segui la procedura indicata di seguito:
 
-1. Crea un nuovo modello di consegna o duplicane uno esistente. Per ulteriori informazioni sui modelli di consegna, consulta [questa pagina](../../delivery/using/about-templates.md).
+1. Crea un nuovo modello di consegna o duplicane uno esistente. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
 1. Modifica le **proprietà** di questo modello.
 1. Nella scheda **[!UICONTROL Advanced]**, impostare **[!UICONTROL Content editing mode]** su **DCE**.
 1. Seleziona **[!UICONTROL AEM account]** esterno da utilizzare per accedere alla libreria AEM Assets.

@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: ba8bf610-cbac-41e9-8b6e-130deb8b97e2
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 75%
+source-wordcount: '262'
+ht-degree: 59%
 
 ---
 
@@ -28,12 +28,11 @@ Puoi importare i destinatari o crearli manualmente utilizzando la console del cl
 
 Scopri dei facili casi d’uso per [importare profili](../../platform/using/import-operations-samples.md) nel tuo database.
 
-![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/importing-profiles.html?lang=it)
+![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/importing-profiles.html)
 
 ## Come posso definire la popolazione target per una campagna di marketing? {#how-can-i-define-the-target-population-of-a-marketing-campaign-}
 
-Puoi [utilizzare i flussi di lavoro per creare una popolazione target](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) per una campagna di marketing.
-
+Puoi utilizzare i flussi di lavoro per creare una popolazione target per una campagna di marketing. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target#build-the-main-target-in-a-workflow.html){target="_blank"}.
 
 ## Come posso creare un elenco di profili? {#how-can-i-create-a-list-of-profiles-}
 
@@ -41,13 +40,13 @@ Un elenco è un set statico di destinatari che possono essere oggetto di targeti
 
 [Fai clic qui per ulteriori informazioni](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group).
 
-![](assets/do-not-localize/how-to-video.png) Scopri questa funzione [in questo video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html?lang=it) e [in quest’altro video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html?lang=it)
+![](assets/do-not-localize/how-to-video.png) Scopri questa funzione [in questo video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html) e [in quest’altro video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html)
 
 ## Come posso deduplicare una popolazione prima di inviare un messaggio? {#how-can-i-deduplicate-a-population-before-sending-a-message-}
 
 Puoi utilizzare un flusso di lavoro per escludere un duplicato dal target di una consegna, così da evitare di inviare più volte lo stesso messaggio a un destinatario.
 
-[Fai clic qui per ulteriori informazioni](../../workflow/using/deduplication.md#example--identify-the-duplicates-before-a-delivery) con un esempio.
+Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}.
 
 ## Come identificare ed eseguire il targeting degli abbonati a una newsletter? {#how-to-identify-and-target-subscribers-to-a-newsletter-}
 
@@ -55,4 +54,4 @@ Scopri la gestione degli abbonamenti in Campaign e come [inviare un messaggio ag
 
 ## Qual è la best practice per escludere profili da una popolazione target? {#what-is-the-best-practice-to-exclude-profiles-from-a-target-population-}
 
-Consulta [questa pagina](../../workflow/using/read-list.md) per scoprire come escludere un elenco di profili dalla tua popolazione target.
+Scopri come escludere un elenco di profili dalla popolazione target nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html){target="_blank"}.

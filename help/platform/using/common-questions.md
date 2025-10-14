@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 9f1b0974-f8bd-430f-88fe-9c09b0074d3b
-source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 82%
+source-wordcount: '493'
+ht-degree: 79%
 
 ---
 
@@ -52,7 +52,8 @@ L’interfaccia autonoma delle aree di protezione può essere utilizzata per ges
 
 ## &#x200B;5. Posso monitorare l’esecuzione di un flusso di lavoro? {#can-i-monitor-workflow-execution}
 
-Scopri come monitorare l’esecuzione di un flusso di lavoro di Campaign [in questa pagina](../../workflow/using/starting-a-workflow.md).
+Scopri come monitorare l’esecuzione del flusso di lavoro di Campaign nella [documentazione di Campaign v8]&#x200B;(https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution
+.html){target="_blank"}.
 
 ## &#x200B;6. Come posso collegarmi a Campaign Classic? {#how-can-i-connect-to-campaign-classic-}
 

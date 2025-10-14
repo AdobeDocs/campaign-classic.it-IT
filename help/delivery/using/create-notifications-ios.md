@@ -7,16 +7,16 @@ role: User, Developer, Data Engineer
 hide: true
 hidefromtoc: true
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
-source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '980'
 ht-degree: 11%
 
 ---
 
 # Creare notifiche per iOS{#create-notifications-ios}
 
-Questa sezione descrive gli elementi specifici per la consegna delle notifiche iOS. I concetti globali sulla creazione della consegna sono presentati in [questa sezione](steps-about-delivery-creation-steps.md).
+Questa sezione descrive gli elementi specifici per la consegna delle notifiche iOS. I concetti globali sulla creazione della consegna sono descritti nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
 
 Inizia creando una nuova consegna.
 
@@ -34,7 +34,7 @@ Per creare una notifica push per dispositivi iOS, segui i passaggi seguenti:
 
    >[!NOTE]
    >
-   >Il processo dettagliato durante la selezione della popolazione target di una consegna è presentato in [questa sezione](steps-defining-the-target-population.md).
+   >Il processo dettagliato durante la selezione della popolazione target di una consegna è presentato in questa sezione nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population.){target="_blank"}.
    >
    >Per ulteriori informazioni sull&#39;utilizzo dei campi di personalizzazione, consulta [questa sezione](about-personalization.md).
    >

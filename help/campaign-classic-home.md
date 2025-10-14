@@ -3,9 +3,9 @@ keywords: Campaign Classic;home;argomenti principali
 product: campaign
 title: Documentazione del prodotto Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '341'
 ht-degree: 97%
 
 ---
@@ -60,7 +60,7 @@ Alcune importanti modifiche al servizio Android Firebase Cloud Messaging (FCM) v
     <div><strong>Automatizzare con i flussi di lavoro</strong><br/>Scopri come sfruttare il flusso di lavoro per progettare i processi come segmentazione, esecuzione di campagne, elaborazione di file, partecipazione di utenti, ecc.
     </div></td>
     <td>
-    <a href="delivery/using/steps-about-delivery-creation-steps.md"><img src="assets/do-not-localize/start-deliveries.jpeg"></a>
+    <a href="delivery/using/communication-channels.md"><img src="assets/do-not-localize/start-deliveries.jpeg"></a>
     <div><strong>Creare consegne</strong><br/>Scopri come inviare messaggi attraverso vari canali come ad esempio e-mail, SMS e notifiche push.</div>
     </td>
   </tr>
@@ -68,7 +68,7 @@ Alcune importanti modifiche al servizio Android Firebase Cloud Messaging (FCM) v
     <td align="center"><a href="platform/using/launching-adobe-campaign.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     <td align="center"><a href="platform/using/about-profiles.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     <td align="center"><a href="workflow/using/about-workflows.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
-    <td align="center"><a href="delivery/using/steps-about-delivery-creation-steps.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="delivery/using/communication-channels.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     </tr>
 </table>
 
@@ -84,7 +84,7 @@ Alcune importanti modifiche al servizio Android Firebase Cloud Messaging (FCM) v
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>Esperienza cliente</strong><br/><a href="workflow/using/about-workflows.md">Automatizza con i flussi di lavoro</a> - <a href="campaign/using/setting-up-marketing-campaigns.md">Campagna di marketing</a> - <a href="interaction/using/interaction-and-offer-management.md">Gestione dell’interazione e delle offerte</a> - <a href="delivery/using/about-personalization.md">Personalizzazione</a> - <a href="reporting/using/about-adobe-campaign-reporting-tools.md">Reporting</a>
+      <strong>Esperienza cliente</strong><br/><a href="workflow/using/about-workflows.md">Automatizza con i flussi di lavoro</a> - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=it" target="_blank">Campagna di marketing</a> - <a href="interaction/using/interaction-and-offer-management.md">Gestione dell’interazione e delle offerte</a> - <a href="delivery/using/about-personalization.md">Personalizzazione</a> - <a href="reporting/using/about-adobe-campaign-reporting-tools.md">Reporting</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">

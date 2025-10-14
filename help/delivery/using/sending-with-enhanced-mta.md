@@ -5,9 +5,9 @@ description: Scopri l’ambito e le specificità dell’invio di e-mail con MTA 
 feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1368'
+source-wordcount: '1380'
 ht-degree: 1%
 
 ---
@@ -121,7 +121,7 @@ Per ulteriori informazioni sulla velocità effettiva di consegna, consulta [ques
 
 Le impostazioni per i nuovi tentativi nella consegna non vengono più utilizzate da Campaign. I nuovi tentativi di mancato recapito non permanenti e il periodo di tempo che intercorre tra di essi sono determinati dall’MTA avanzato in base al tipo e alla gravità delle risposte di mancato recapito provenienti dal dominio e-mail del messaggio.
 
-Per ulteriori informazioni sui nuovi tentativi, vedere [questa sezione](steps-sending-the-delivery.md#configuring-retries).
+Per ulteriori informazioni sui nuovi tentativi, consulta questa [pagina](communication-channels.md) in **Invio consegna** > **Configurazione nuovi tentativi**.
 
 ### Periodo di validità
 
@@ -131,16 +131,16 @@ Ad esempio, se il periodo di validità è impostato sul valore predefinito di 5 
 
 Una volta che un messaggio è rimasto nella coda dell’MTA avanzato per 3,5 giorni e la consegna non è riuscita, si verificherà un timeout e il suo stato verrà aggiornato da **[!UICONTROL Sent]** a **[!UICONTROL Failed]** nei registri di consegna.
 
-Per ulteriori informazioni sul periodo di validità, consulta [questa sezione](steps-sending-the-delivery.md#defining-validity-period).
+Per ulteriori informazioni sul periodo di validità, consulta questa [pagina](communication-channels.md) in **Invio consegna** > **Definisci il periodo di validità**.
 
 ### Firma DKIM
 
 La firma di autenticazione dell’e-mail DKIM (DomainKeys Identified Mail) viene eseguita dall’MTA avanzato. La firma DKIM da parte dell’MTA nativo di Campaign verrà disattivata all’interno della tabella di gestione dei domini come parte dell’aggiornamento dell’MTA avanzato.
-Per ulteriori informazioni su DKIM, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=it#authentication).
+Per ulteriori informazioni su DKIM, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ### Reporting sul successo della consegna
 
-Nella visualizzazione **[!UICONTROL Summary]** di una consegna e-mail [dashboard](delivery-dashboard.md), la percentuale di **[!UICONTROL Success]** inizia al 100% e poi si abbassa progressivamente durante il [periodo di validità](steps-sending-the-delivery.md#defining-validity-period) della consegna, man mano che i mancati recapiti permanenti e permanenti vengono segnalati dall’MTA avanzato a Campaign.
+Nella visualizzazione **[!UICONTROL Summary]** di una consegna e-mail [dashboard](delivery-dashboard.md), la percentuale di **[!UICONTROL Success]** inizia al 100% e poi si abbassa progressivamente durante il [periodo di validità](communication-channels.md) della consegna, man mano che i mancati recapiti permanenti e permanenti vengono segnalati dall’MTA avanzato a Campaign.
 
 In effetti, tutti i messaggi vengono visualizzati come **[!UICONTROL Sent]** nei [registri di invio](delivery-dashboard.md#delivery-logs-and-history) non appena vengono inoltrati correttamente da Campaign all’MTA avanzato. Rimangono in tale stato a meno che o fino a quando un [mancato recapito](understanding-delivery-failures.md#delivery-failure-types-and-reasons) per quel messaggio non viene comunicato dall&#39;MTA avanzato a Campaign.
 

@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1075'
-ht-degree: 8%
+source-wordcount: '1076'
+ht-degree: 9%
 
 ---
 
@@ -23,7 +23,7 @@ Quando gestisci file e dati per un processo di ETL, questi file vengono memorizz
 
 * Utilizza l’autenticazione basata su chiave anziché su password, per evitare la scadenza della password (le password hanno un periodo di validità di 90 giorni). Inoltre, l’autenticazione basata su chiave consente di generare più chiavi, ad esempio quando si gestiscono più entità. Al contrario, l’autenticazione tramite password richiede che tu condivida la password con tutte le entità che stai gestendo.
 
-  Il formato di chiave supportato è SSH-2 RSA 2048. Lo strumento per generare le chiavi SSH per Windows è PuTTYgen e ssh-keygen per Linux. Puoi caricare le chiavi SSH pubbliche tramite il Pannello di controllo Campaign Campaign. [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/control-panel/using/sftp-management/key-management){target="_blank"}
+  Il formato di chiave supportato è SSH-2 RSA 2048. Lo strumento per generare le chiavi SSH per Windows è PuTTYgen e ssh-keygen per Linux. Puoi caricare le chiavi SSH pubbliche tramite il Pannello di controllo Campaign Campaign. [Ulteriori informazioni](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/key-management){target="_blank"}
 
 * Utilizza la suddivisione in batch nei caricamenti SFTP e nei flussi di lavoro.
 
@@ -31,7 +31,7 @@ Quando gestisci file e dati per un processo di ETL, questi file vengono memorizz
 
 * Per impostazione predefinita, tutte le cartelle create sono in modalità di lettura/scrittura solo per l&#39;identificatore. Durante la creazione delle cartelle a cui Campaign deve accedere, accertati di configurarle con diritti di lettura/scrittura per l’intero gruppo. In caso contrario, i flussi di lavoro potrebbero non essere in grado di creare/eliminare file in quanto vengono eseguiti con un identificatore diverso all’interno dello stesso gruppo per motivi di sicurezza.
 
-* Gli IP pubblici da cui stai tentando di avviare la connessione SFTP devono essere aggiunti al inserisco nell&#39;elenco Consentiti di nell’istanza Campaign. Gli IP pubblici possono essere aggiunti tramite il Pannello di controllo Campaign. [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/control-panel/using/sftp-management/ip-range-allow-listing){target="_blank"}
+* Gli IP pubblici da cui stai tentando di avviare la connessione SFTP devono essere aggiunti al inserisco nell&#39;elenco Consentiti di nell’istanza Campaign. Gli IP pubblici possono essere aggiunti tramite il Pannello di controllo Campaign. [Ulteriori informazioni](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/ip-range-allow-listing){target="_blank"}
 
 ## Best practice per l’utilizzo dell’archiviazione SFTP {#sftp-server-best-practices}
 
@@ -43,9 +43,9 @@ Per evitare tali problemi, Adobe consiglia di seguire le best practice riportate
 
 >[!NOTE]
 >
->* Puoi monitorare l&#39;archiviazione del server SFTP con il [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=it){target="_blank"} di Campaign Classic.
+>* Puoi monitorare l&#39;archiviazione del server SFTP con il [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"} Campaign Classic.
 >
->* Il Pannello di controllo è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente l&#39;accesso come amministratore sono descritti in [questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel){target="_blank"}.
+>* Il Pannello di controllo è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente l’accesso come amministratore sono descritti in[questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel){target="_blank"}.
 >
 >* Tieni presente che l&#39;istanza deve essere aggiornata con la [build GA più recente](../../rn/using/rn-overview.md). Scopri come controllare la versione in [questa sezione](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version){target="_blank"}.
 
@@ -68,7 +68,7 @@ Inoltre, quando si specifica in Campaign Classic un percorso per un server SFTP 
 
 ## Problemi di connessione con il server SFTP in hosting su Adobe {#sftp-server-troubleshooting}
 
-Nella sezione seguente sono elencate le informazioni da verificare e fornire al team di supporto Adobe tramite [l&#39;Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"} in caso di problemi di connessione con server SFTP ospitati da Adobe.
+Nella sezione seguente sono elencate le informazioni da verificare e fornire al team di supporto Adobe tramite [l&#39;Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"} quando si verificano problemi di connessione con server SFTP ospitati da Adobe.
 
 1. Verifica che l’istanza sia in esecuzione. A questo scopo, apri il browser, quindi effettua una chiamata **[!UICONTROL GET]** sull&#39;endpoint **[!UICONTROL /r/test]** dell&#39;istanza:
 
@@ -132,7 +132,7 @@ Questo errore indica che il nome di dominio del server FTP non è stato risolto 
 
 1. Risolvere i problemi relativi ai **registri di sessione**:
 
-   1. Nel flusso di lavoro fare doppio clic sull&#39;attività [Trasferimento file](../../workflow/using/file-transfer.md).
+   1. Nel flusso di lavoro fare doppio clic sull&#39;attività [Trasferimento file](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
    1. Vai alla scheda **[!UICONTROL File Transfer]**, quindi fai clic su **[!UICONTROL Advanced Parameters]**.
    1. Seleziona l’opzione **[!UICONTROL Display the session logs]**.
 

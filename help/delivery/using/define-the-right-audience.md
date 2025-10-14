@@ -8,10 +8,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 6%
+source-wordcount: '511'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 La popolazione target è fondamentale: crea i tuoi elenchi con attenzione, testa le e-mail sui client e-mail e sui dispositivi mobili più diffusi e assicurati che i tuoi elenchi e-mail siano aggiornati (senza indirizzi sconosciuti o obsoleti). Puoi anche inviare bozze utili per impostare un ciclo di convalida completo.
 
-Ulteriori informazioni sulle popolazioni di destinazione [in questa sezione](steps-defining-the-target-population.md)
+Per ulteriori informazioni sulle popolazioni target, consulta questa sezione nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
 
 ## Rivolgersi al pubblico giusto {#target-the-right-audience}
 
@@ -33,13 +33,13 @@ In Campaign Classic, per impostazione predefinita, i modelli di consegna sono de
 
 Ad esempio, puoi distribuire ai visitatori i cui profili sono stati raccolti tramite social network o ai visitatori abbonati a un servizio di informazioni.
 
-Queste mappature sono presentate [in questa sezione](steps-defining-the-target-population.md#select-a-target-mapping).
+Queste mappature sono presentate nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/audience/add-profiles/target-mappings.html?lang=it){target="_blank"}.
 
 Puoi anche creare e utilizzare una mappatura di destinazione personalizzata. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../configuration/using/target-mapping.md).
 
 ## Destinatari esterni {#external-recipients}
 
-Puoi consegnare a destinatari memorizzati in un file esterno anziché salvati nel database. Per ulteriori informazioni, consulta [questa sezione](steps-defining-the-target-population.md#selecting-external-recipients).
+Puoi consegnare a destinatari memorizzati in un file esterno anziché salvati nel database. Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"}.
 
 ## Invia ai tuoi abbonati {#send-to-subscribers}
 
@@ -50,7 +50,7 @@ Per inviare messaggi agli abbonati di una newsletter, puoi indirizzare direttame
 
 Per verificare la consegna, utilizza le bozze prima di inviare al target principale.
 
-Accertati di selezionare i destinatari della bozza appropriati, in quanto convalidano il modulo e il contenuto del messaggio. I passaggi per definire i destinatari della bozza sono descritti in [questa sezione](steps-defining-the-target-population.md#selecting-the-proof-target).
+Accertati di selezionare i destinatari della bozza appropriati, in quanto convalidano il modulo e il contenuto del messaggio. I passaggi per definire i destinatari della bozza sono descritti nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#select-the-proof-target){target="_blank"}.
 
 Gli indirizzi di seed vengono utilizzati per eseguire il targeting dei destinatari che non corrispondono ai criteri di target definiti per testare una consegna prima di inviarla al target principale. Sono presentati [in questa sezione](about-seed-addresses.md).
 

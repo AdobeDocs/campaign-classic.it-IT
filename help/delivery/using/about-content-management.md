@@ -6,20 +6,20 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Landing Pages, Email Design
 role: User
 exl-id: 87434cc2-1636-4558-ab60-255b7f873c0c
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '261'
 ht-degree: 2%
 
 ---
 
 # Informazioni sulla gestione dei contenuti{#about-content-management}
 
-Il modulo Adobe Campaign Content Manager è un pacchetto predefinito [Campaign Classic specifico](../../installation/using/installing-campaign-standard-packages.md) che è possibile installare per creare newsletter o siti Web ricorrenti. Può essere utile per creare, convalidare e pubblicare i messaggi.
+Il modulo Adobe Campaign Content Manager è un pacchetto predefinito di Campaign Classic [](../../installation/using/installing-campaign-standard-packages.md) che è possibile installare per creare newsletter o siti Web ricorrenti. Può essere utile per creare, convalidare e pubblicare i messaggi.
 
 >[!NOTE]
 >
->Questa sezione fa riferimento al modulo Gestione dei contenuti. Per ulteriori informazioni su come progettare il contenuto delle consegne e-mail, consulta [questa sezione](defining-the-email-content.md).
+>Questa sezione fa riferimento al modulo Gestione dei contenuti. Per ulteriori informazioni su come progettare il contenuto delle consegne e-mail, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}.
 
 Il modulo Content Management incorpora le funzionalità di gruppo di lavoro, flusso di lavoro e aggregazione dei contenuti. Questo consente di formattare automaticamente un messaggio: e-mail, e-mail, SMS, web, ecc.
 

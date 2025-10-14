@@ -6,9 +6,9 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Deliverability
 role: User, Admin
 exl-id: e4caa316-242f-46cd-a20b-a5eee5a0c456
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '550'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Di seguito trovi i dettagli sui diversi strumenti di monitoraggio forniti da Ado
 ## Informazioni sul monitoraggio del recapito messaggi {#about-deliverability-monitoring}
 
 Questa funzione è disponibile tramite un pacchetto dedicato in Adobe Campaign. Per utilizzarlo, è necessario installare questo pacchetto. Al termine, riavvia il server affinché il pacchetto venga preso in considerazione.
-* Per i client in hosting e ibridi, **Monitoraggio del recapito messaggi** è configurato nell&#39;istanza dal supporto tecnico e dai consulenti Adobe. Per ulteriori informazioni, contatta il tuo Account Executive Adobe.
+* Per i client in hosting e ibridi, **Monitoraggio del recapito messaggi** è configurato nella tua istanza dal supporto tecnico e dai consulenti di Adobe. Per ulteriori informazioni, contatta il tuo account executive di Adobe.
 
 * Per le installazioni locali, è necessario installare il pacchetto **[!UICONTROL Deliverability monitoring (Email Deliverability)]** tramite il menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**. Per ulteriori informazioni, consulta [Installare i pacchetti standard di Campaign Classic](../../installation/using/installing-campaign-standard-packages.md).
 
@@ -54,6 +54,6 @@ Di seguito sono riportate alcune linee guida aggiuntive sul monitoraggio della c
 * Verifica che [nuovi tentativi](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) siano configurati correttamente (30 minuti per il periodo di esecuzione dei nuovi tentativi e più di 20 tentativi) nei modelli di consegna.
 * Verificare regolarmente che la cassetta postale [bounce](understanding-delivery-failures.md#bounce-mail-management) sia accessibile e che l&#39;account non stia per scadere.
 * Controlla ogni velocità effettiva di consegna, accessibile dal [dashboard di consegna](delivery-dashboard.md), per assicurarti che sia coerente con la validità del contenuto della consegna (ad esempio, le &quot;vendite flash&quot; devono essere consegnate in minuti, non in giorni).
-* Quando utilizzi [scaglioni](steps-sending-the-delivery.md#sending-using-multiple-waves), verifica che ogni scaglione abbia tempo sufficiente per terminare prima che venga attivato il successivo.
+* Quando utilizzate le onde, verificate che ogni onda abbia tempo sufficiente per terminare prima che venga attivata quella successiva. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html#sending-using-multiple-waves){target="_blank"}.
 * Verifica che il numero di errori e le nuove [quarantene](understanding-quarantine-management.md) siano coerenti con le altre consegne.
 * Consulta attentamente i [registri di consegna](delivery-dashboard.md#delivery-logs-and-history) per verificare il tipo di errori evidenziati (inserisce nell&#39;elenco Bloccati di, problemi DNS, regole anti-spam, ecc.).

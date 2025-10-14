@@ -5,9 +5,9 @@ description: Questo documento descrive il modello dati di Adobe Campaign
 feature: Data Model
 role: Data Engineer, Developer
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2399'
+source-wordcount: '2354'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ Questa tabella corrisponde allo schema **nms:recipient**.
 
 Il campo iFolderId è la chiave esterna che collega il destinatario alla cartella di esecuzione. Per ulteriori informazioni, vedere [XtkFolder](#XtkFolder).
 
-Il campo sCountryCode è il codice ISO 3166-1 Alpha 2 (2 caratteri) del paese associato al destinatario. Questo campo è in realtà una chiave esterna nella tabella di riferimento del paese (NmsCountry), che contiene le etichette del paese e altri dati relativi al codice del paese. Se il paese non è popolato, viene memorizzato il valore &#39;XX&#39; (e viene utilizzato al posto di un record ID pari a zero).
+Il campo sCountryCode è il codice Alpha 2 ISO 3166-1 (2 caratteri) del paese associato al destinatario. Questo campo è in realtà una chiave esterna nella tabella di riferimento del paese (NmsCountry), che contiene le etichette del paese e altri dati relativi al codice del paese. Se il paese non è popolato, viene memorizzato il valore &#39;XX&#39; (e viene utilizzato al posto di un record ID pari a zero).
 
 Per ulteriori informazioni sulla tabella Destinatari, vedere [questa sezione](../../configuration/using/about-data-model.md#default-recipient-table).
 
@@ -113,7 +113,7 @@ Questo set di tabelle è collegato al modulo **Delivery**, che consente di monit
 
 ## Gestione delle campagne {#campaign-management}
 
-Questo set di tabelle è collegato al modulo **Campagne di marketing**, che consente di definire, ottimizzare, eseguire e analizzare le campagne di comunicazione e marketing. Per ulteriori informazioni, consulta [Informazioni sulle campagne di marketing](../../campaign/using/designing-marketing-campaigns.md).
+Questo set di tabelle è collegato al modulo **Campagne di marketing**, che consente di definire, ottimizzare, eseguire e analizzare le campagne di comunicazione e marketing. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
 
 ![](assets/data-model_campaign.png)
 
@@ -129,7 +129,8 @@ Questo set di tabelle è collegato al modulo **Campagne di marketing**, che cons
 
 ## Coerenza delle comunicazioni {#communication-consistency}
 
-Questo set di tabelle è collegato al modulo **Ottimizzazione campagna**, che consente di controllare, filtrare e monitorare l&#39;invio delle consegne. Per ulteriori informazioni, consulta [Informazioni sulle tipologie di campagne](../../campaign-opt/using/about-campaign-typologies.md).
+Questo set di tabelle è collegato al modulo **Ottimizzazione campagna**, che consente di controllare, filtrare e monitorare l&#39;invio delle consegne. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=it){target="_blank"}.
+
 
 ![](assets/data-model_typology.png)
 
@@ -154,7 +155,7 @@ Questa tabella contiene informazioni importanti memorizzate in XML, tra cui:
 **Contesto di esecuzione (informazioni archiviate in XML)**
 
 Il contesto di esecuzione popola le tabelle e i campi da considerare per il calcolo della misurazione, ovvero:
-* Schema di archiviazione del registro delle reazioni nms:remaMatchRcp.
+* Schema di archiviazione del log delle reazioni nms:remaMatchRcp.
 * Lo schema della tabella delle transazioni (ad esempio acquisti).
 * Lo schema di query, che consente di definire la tabella iniziale delle condizioni dell’ipotesi.
 * Collegamenti a singoli utenti, che consentono di identificare l&#39;utente in base allo schema di query.
@@ -260,7 +261,7 @@ Questo set di tabelle è collegato al **canale app mobile**, che consente di inv
 
 ## Modulo di social marketing {#social-marketing-module}
 
-Questo set di tabelle è collegato al modulo **Gestione dei social network**, che consente di interagire con clienti acquisiti e potenziali tramite Facebook e X (precedentemente noti come Twitter). Per ulteriori informazioni, consulta [Informazioni sul social marketing](../../social/using/about-social-marketing.md).
+Questo set di tabelle è collegato al modulo **Gestione dei social network**, che consente di interagire con clienti acquisiti e potenziali tramite Facebook e X (precedentemente noto come Twitter). Per ulteriori informazioni, consulta [Informazioni sul social marketing](../../social/using/about-social-marketing.md).
 
 ![](assets/data-model_social.png)
 

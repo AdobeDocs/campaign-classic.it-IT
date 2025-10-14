@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3831'
+source-wordcount: '3834'
 ht-degree: 1%
 
 ---
@@ -57,8 +57,9 @@ Il nodo **[!UICONTROL Administration / Platform / Options]** consente di configu
   </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> Consente all’operatore responsabile della consegna di confermare l’invio, se un operatore o un gruppo di operatori specifico è designato per avviare una consegna nelle proprietà della consegna.</p><p> A questo scopo, attiva l’opzione immettendo "1" come valore. Per disattivare questa opzione, immettere "0".</p><p> Il processo di conferma dell’invio funzionerà quindi come predefinito: solo l’operatore o il gruppo di operatori designati per l’invio nelle proprietà di consegna (o un amministratore) sarà in grado di confermare ed eseguire l’invio. Consulta <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">questa sezione</a>.</p> </td> 
-   <tr> 
+   <td><p> Consente all’operatore responsabile della consegna di confermare l’invio, se un operatore o un gruppo di operatori specifico è designato per avviare una consegna nelle proprietà della consegna.</p><p> A questo scopo, attiva l’opzione immettendo "1" come valore. Per disattivare questa opzione, immettere "0".</p><p> Il processo di conferma dell’invio funzionerà quindi come predefinito: solo l’operatore o il gruppo di operatori designati per l’invio nelle proprietà di consegna (o un amministratore) sarà in grado di confermare ed eseguire l’invio. Consulta <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html#start-a-delivery" target="_blank">questa sezione</a>.</p> </td>
+
+<tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
    <td> Adobe Campaign utilizza una variabile globale "Nms_DefaultRcpSchema" per la finestra di dialogo con il database dei destinatari predefinito (nms:recipient).<br /> Il valore dell'opzione deve corrispondere al nome dello schema che corrisponde alla tabella dei destinatari esterna.<br /> </td> 
   </tr> 
@@ -208,7 +209,7 @@ Il nodo **[!UICONTROL Administration / Platform / Options]** consente di configu
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
-   <td><p>Questa opzione viene utilizzata dal flusso di lavoro tecnico <span class="uicontrol"><a href="../../workflow/using/about-technical-workflows.md">operationMgt</a></span> durante il conteggio del numero di consegne in esecuzione.</p>Consente di definire il numero di giorni oltre i quali le consegne con stato incoerente verranno escluse dal conteggio delle consegne in esecuzione.</p><p>Per impostazione predefinita, il valore è impostato su "7", il che significa che verranno escluse le consegne incoerenti precedenti a 7 giorni.</p></td> 
+   <td><p>Questa opzione viene utilizzata dal flusso di lavoro tecnico <span class="uicontrol"><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html" target="_blank">operationMgt</a></span> durante il conteggio del numero di consegne in esecuzione.</p>Consente di definire il numero di giorni oltre i quali le consegne con stato incoerente verranno escluse dal conteggio delle consegne in esecuzione.</p><p>Per impostazione predefinita, il valore è impostato su "7", il che significa che verranno escluse le consegne incoerenti precedenti a 7 giorni.</p></td> 
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span> <br /> </td> 
@@ -364,7 +365,7 @@ Il nodo **[!UICONTROL Administration / Platform / Options]** consente di configu
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_OperationMgtDebug</span> <br /> </td> 
-   <td> Consente di monitorare l'esecuzione del flusso di lavoro tecnico <a href="../../workflow/using/about-technical-workflows.md">operationMgt</a>. Quando è attivata (valore "1"), le informazioni di esecuzione vengono registrate nei registri di controllo del flusso di lavoro.<br /> </td> 
+   <td> Consente di monitorare l'esecuzione del flusso di lavoro tecnico <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html" target="_blank">operationMgt</a>. Quando è attivata (valore "1"), le informazioni di esecuzione vengono registrate nei registri di controllo del flusso di lavoro.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_TimeRange</span> <br /> </td> 
@@ -756,7 +757,7 @@ Il nodo **[!UICONTROL Administration / Platform / Options]** consente di configu
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Teradata</span> <br /> </td> 
-   <td> Teradata opzioni connettore.<br /> </td> 
+   <td> Opzioni connettore Teradata.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Hive</span> <br /> </td> 

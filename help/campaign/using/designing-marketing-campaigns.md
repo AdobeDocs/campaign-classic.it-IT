@@ -7,9 +7,9 @@ feature: Campaigns
 hide: true
 hidefromtoc: true
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '441'
 ht-degree: 22%
 
 ---
@@ -24,7 +24,7 @@ Inoltre, il modulo **Gestione risorse di marketing (MRM)** consente di controlla
 >[!NOTE]
 >
 >Per ulteriori informazioni sulle funzionalità di base di Adobe Campaign, consulta [questa sezione](../../platform/using/about-adobe-campaign-classic.md).\
->Le funzionalità relative al targeting della popolazione, alla personalizzazione dei messaggi e alla consegna dei messaggi sui vari canali sono descritte in [questa sezione](../../delivery/using/steps-about-delivery-creation-steps.md).
+>Le funzionalità relative al targeting della popolazione, alla personalizzazione dei messaggi e alla consegna dei messaggi sui vari canali sono descritte in dettaglio nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
 
 ![](assets/do-not-localize/how-to-video.png) [Scopri i concetti chiave delle campagne di marketing nel video](#video)
 
@@ -68,6 +68,6 @@ Nel contesto di Campaign devono essere noti i seguenti concetti:
 
 Questo video illustra i concetti chiave delle campagne di marketing.
 
->[!VIDEO](https://video.tv.adobe.com/v/326578?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
 Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
