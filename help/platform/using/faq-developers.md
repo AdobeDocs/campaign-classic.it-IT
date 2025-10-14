@@ -67,4 +67,4 @@ Il principio dei pacchetti di dati è di esportare una configurazione di dati e 
 
 ## Dove posso trovare l’elenco delle API di Campaign Classic? {#where-can-i-find-the-list-of-campaign-classic-apis}
 
-Tutte le API di Campaign, inclusa la loro descrizione completa, sono disponibili in questa [](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=it)documentazione dedicata.
+Tutte le API di Campaign, inclusa la loro descrizione completa, sono disponibili in questa [&#128279;](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=it)documentazione dedicata.

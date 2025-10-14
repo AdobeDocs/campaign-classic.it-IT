@@ -382,7 +382,7 @@ In una consegna, puoi utilizzare le immagini memorizzate nella libreria di risor
 
   Questo valore può essere sovrascritto per ogni consegna.
 
-* Per le risorse pubbliche, l&#39;URL **https://** server **/res/** istanza ****dove **istanza**è il nome dell&#39;istanza di tracciamento.
+* Per le risorse pubbliche, l&#39;URL **https://** server **/res/** istanza **&#x200B;**&#x200B;dove **istanza**&#x200B;è il nome dell&#39;istanza di tracciamento.
 
 ### Rilevamento immagine della consegna {#delivery-image-detection}
 
