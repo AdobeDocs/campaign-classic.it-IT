@@ -21,7 +21,7 @@ La simulazione tiene conto dei contesti e delle regole di idoneità applicati in
 
 Per scoprire come simulare un’offerta, leggi i passaggi seguenti.
 
-![](assets/do-not-localize/how-to-video.png) Puoi anche guardare questo [video](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&amp;ref=helpx.adobe.com).
+![](assets/do-not-localize/how-to-video.png) Puoi anche guardare questo [video](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&ref=helpx.adobe.com).
 
 ## Passaggi principali per la creazione di una simulazione {#main-steps-for-creating-a-simulation}
 

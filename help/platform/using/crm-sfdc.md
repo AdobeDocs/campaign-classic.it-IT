@@ -40,10 +40,10 @@ Account utilizzato per accedere a Salesforce CRM.
 Password utilizzata per accedere a Salesforce CRM.
 
    * **[!UICONTROL Client identifier]**
-Per sapere dove trovare l&#39;identificatore client, fare riferimento a questa [pagina](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+Per sapere dove trovare l&#39;identificatore client, fare riferimento a questa [pagina](https://help.salesforce.com/articleView?id=000205876&type=1).
 
    * **[!UICONTROL Security token]**
-Per sapere dove trovare il token di sicurezza, consulta questa [pagina](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+Per sapere dove trovare il token di sicurezza, consulta questa [pagina](https://help.salesforce.com/articleView?id=000205876&type=1).
 
    * **[!UICONTROL API version]**
 Seleziona la versione dell’API.

@@ -18,7 +18,7 @@ ht-degree: 1%
 
 
 
-![](assets/do-not-localize/how-to-video.png) Guarda questo [video](https://helpx.adobe.com/campaign/classic/how-to/indetified-and-anonymous-interaction-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) per una panoramica sul modo in cui le offerte vengono distribuite a destinazioni identificate e anonime.
+![](assets/do-not-localize/how-to-video.png) Guarda questo [video](https://helpx.adobe.com/campaign/classic/how-to/indetified-and-anonymous-interaction-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&ref=helpx.adobe.com) per una panoramica sul modo in cui le offerte vengono distribuite a destinazioni identificate e anonime.
 
 ## Targeting e archiviazione di un ambiente per interazioni anonime {#targeting-and-storing-an-environment-for-anonymous-interactions}
 
