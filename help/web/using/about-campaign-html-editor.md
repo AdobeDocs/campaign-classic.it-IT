@@ -22,7 +22,7 @@ Con Digital Content Editor è possibile inserire e formattare elementi di pagina
 
 >[!NOTE]
 >
->Se devi aggiungere codice JavaScript lato server, utilizza i blocchi di personalizzazione. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
+>Se devi aggiungere codice JavaScript lato server, utilizza i blocchi di personalizzazione. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=it){target="_blank"}.
 
 >[!CAUTION]
 >
@@ -52,7 +52,7 @@ Per creare una **consegna e-mail**, è necessario:
 1. Creare una consegna da un modello DCE - [Ulteriori informazioni](use-case-creating-an-email-delivery.md)
 1. Seleziona un contenuto esistente o crea contenuto da un [modello standard](template-management.md)
 1. Modificare e configurare i contenuti online
-1. Invia la consegna - Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}
+1. Invia la consegna - Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it){target="_blank"}
 
 >[!NOTE]
 >
