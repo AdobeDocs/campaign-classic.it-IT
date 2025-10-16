@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '743'
 ht-degree: 4%
 
 ---
@@ -119,7 +119,7 @@ Il modo generale per aggiungere un captcha nel DCE consiste nel creare un blocco
 
 1. Utilizza il tipo di contenuto **[!UICONTROL Web application]** e seleziona **[!UICONTROL Visible in the customization menus]**.
 
-   Per ulteriori informazioni, consulta [questa pagina](../../delivery/using/personalization-blocks.md).
+   Per ulteriori informazioni, consulta la [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
 
    Ecco un esempio di **Captcha campagna**:
 
@@ -148,7 +148,7 @@ Il modo generale per aggiungere un captcha nel DCE consiste nel creare un blocco
 
      `<div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>`
 
-   Dovresti poter disabilitare il pulsante di convalida, ma poiché non disponiamo di pulsanti/collegamenti standard, è meglio farlo nel HTML stesso. Per informazioni su come eseguire questa operazione, fare riferimento a [questa pagina](https://developers.google.com/recaptcha/).
+   Dovresti essere in grado di disattivare il pulsante di convalida, ma poiché non disponiamo di pulsanti/collegamenti standard, è meglio farlo all’interno di HTML. Per informazioni su come eseguire questa operazione, fare riferimento a [questa pagina](https://developers.google.com/recaptcha/).
 
 ### Aggiornamento dell’applicazione web
 

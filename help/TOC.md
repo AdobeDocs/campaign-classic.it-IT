@@ -6,9 +6,9 @@ title: Guida di Campaign Classic v7
 user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '2739'
+source-wordcount: '2744'
 ht-degree: 72%
 
 ---
@@ -164,11 +164,11 @@ ht-degree: 72%
       + [Creare una consegna da un modello - NASCOSTO](delivery/using/creating-a-delivery-from-a-template.md)
    + Personalizzare le consegne {#personalizing-deliveries}
       + [Informazioni sulla personalizzazione](delivery/using/about-personalization.md)
-      + [Campi di personalizzazione](delivery/using/personalization-fields.md)
-      + [Blocchi di personalizzazione](delivery/using/personalization-blocks.md)
-      + [Contenuto condizionale](delivery/using/conditional-content.md)
-      + [Coupon personalizzati](delivery/using/personalized-coupons.md)
-      + [Generare documenti PDF personalizzati](delivery/using/generating-personalized-pdf-documents.md)
+      + [Campi di personalizzazione - NASCOSTI](delivery/using/personalization-fields.md)
+      + [Blocchi di personalizzazione - NASCOSTI](delivery/using/personalization-blocks.md)
+      + [Contenuto condizionale - NASCOSTO](delivery/using/conditional-content.md)
+      + [Coupon personalizzati - NASCOSTI](delivery/using/personalized-coupons.md)
+      + [Generare documenti PDF personalizzati - NASCOSTO](delivery/using/generating-personalized-pdf-documents.md)
       + [Personalizzare l’elenco delle emoticon](delivery/using/customizing-emoticon-list.md)
    + Utilizzare indirizzi seed {#using-seed-addresses}
       + [Informazioni sugli indirizzi seed](delivery/using/about-seed-addresses.md)
@@ -376,7 +376,7 @@ ht-degree: 72%
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Utilizzare  [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Configurare l’integrazione](integrations/using/configuring-the-integration.md)
-      + [Creare una newsletter [!DNL Experience Manager] &#x200B;](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Creare una newsletter [!DNL Experience Manager] ](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Utilizzare  [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Configurare l’integrazione con [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)

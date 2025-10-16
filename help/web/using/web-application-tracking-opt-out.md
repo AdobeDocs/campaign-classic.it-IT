@@ -5,7 +5,7 @@ description: Rinuncia al tracciamento delle applicazioni web
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Web Apps
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 2%
@@ -22,13 +22,13 @@ Se un utente finale rinuncia al tracciamento comportamentale tramite cookie o we
 
 >[!NOTE]
 >
->Durante la creazione degli script, seguire sempre le linee guida descritte nell&#39;[Elenco di controllo protezione e privacy](https://helpx.adobe.com/it/campaign/kb/acc-security.html#dev).
+>Durante la creazione degli script, seguire sempre le linee guida descritte nell&#39;[Elenco di controllo protezione e privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
 
 ## Configurazione del banner {#configuring-the-banner-}
 
 Per essere visualizzato nelle applicazioni web o nelle pagine di destinazione, è necessario configurare il banner.
 
-Adobe Campaign viene fornito con un banner di esempio da adattare in base alle tue esigenze. Questa versione del banner viene visualizzata come un blocco di personalizzazione che si trova nella cartella del modello di contenuto. Consulta [questa pagina](../../delivery/using/personalization-blocks.md).
+Adobe Campaign viene fornito con un banner di esempio da adattare in base alle tue esigenze. Questa versione del banner viene visualizzata come un blocco di personalizzazione che si trova nella cartella del modello di contenuto. consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
 
 >[!IMPORTANT]
 >
@@ -92,7 +92,7 @@ Se devi scrivere un JSSP, sono disponibili le API lato server:
 
 * **NL.ServerWebTracking.generateOptOutBanner(escapeJs)**: genera il markup per il banner di rinuncia da inserire nella pagina JSSP
 
-  **escapeJs {Boolean}**: true quando il markup generato deve essere preceduto da un escape per essere utilizzato in JavaScript.
+  **escapeJs{Boolean}**: true quando il markup generato deve essere escape per essere utilizzato in JavaScript.
 
   Restituisce il HTML del markup del banner di rinuncia da stampare nella pagina.
 
@@ -108,7 +108,7 @@ Se devi scrivere un JSSP, sono disponibili le API lato server:
 
   Esegue il rendering del markup per il banner di rinuncia inserendolo nella pagina JSSP. Viene chiamato così com&#39;è in Jssp tra &lt;% %>
 
-  **escapeJs {Boolean}**: true quando il markup generato deve essere escape per essere utilizzato in JavaScript
+  **escapeJs{Boolean}**: true quando il markup generato deve essere escape per essere utilizzato in JavaScript
 
 Esempio JSSP:
 

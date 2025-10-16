@@ -5,10 +5,12 @@ description: Scopri come creare e inserire coupon personalizzati
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Personalization
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 8e5a328bee7701adfedec6a533cc21b4ce548187
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '910'
 ht-degree: 1%
 
 ---
@@ -19,7 +21,7 @@ L’aggiunta di coupon alle consegne può fornire ai destinatari un valore aggiu
 
 >[!AVAILABILITY]
 >
->La gestione dei coupon non è disponibile in Campaign v8 nel contesto di una distribuzione Enterprise (FFDA). Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
+>La gestione dei coupon non è disponibile in Campaign v8 nel contesto di una distribuzione Enterprise (FFDA). Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
 
 La gestione dei coupon si basa su un pacchetto che deve essere installato. Per confermare che hai la gestione del coupon, seleziona **[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
 
@@ -48,7 +50,7 @@ Prima di seguire i passaggi seguenti, assicurati di conoscere il tipo di coupon 
 
    **[!UICONTROL Anonymous coupons]**: un coupon anonimo è identico per tutti i destinatari. Conferma che Anonimo è selezionato nel menu **Tipo coupon** e fai clic su **Salva** per generare il coupon.
 
-   **[!UICONTROL Individual coupons]** : un singolo coupon può essere ulteriormente personalizzato con codici coupon aggiuntivi. Ad esempio, viene creato un singolo coupon per la vendita in un negozio di attrezzatura sportiva. Tuttavia, la lista dei destinatari è lunga e non condividono lo stesso entusiasmo per un singolo sport. Puoi aggiungere nomi in codice per il singolo coupon in base a uno sport (ad esempio, calcio, calcio, baseball, ecc.) e invia ciascun codice ai destinatari applicabili.
+   **[!UICONTROL Individual coupons]** : un singolo coupon può essere ulteriormente personalizzato con codici coupon aggiuntivi. Ad esempio, viene creato un singolo coupon per la vendita in un negozio di attrezzatura sportiva. Tuttavia, la lista dei destinatari è lunga e non condividono lo stesso entusiasmo per un singolo sport. Puoi aggiungere nomi in codice per il singolo coupon in base a uno sport (ad esempio, calcio, calcio, baseball ecc.) e inviare ciascun codice ai destinatari applicabili.
 
    1. Quando si sceglie Individuale, in basso a sinistra viene visualizzata una nuova scheda, Coupon. Passare alla scheda **[!UICONTROL Coupons]** e fare clic su **[!UICONTROL Add]**.
    1. Inserire un codice univoco per il singolo coupon quando richiesto dalla finestra popup.
