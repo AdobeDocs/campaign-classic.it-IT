@@ -172,7 +172,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
   </tr> 
   <tr> 
    <td> Gestione coupon<br /> </td> 
-   <td> Crea un set di coupon da aggiungere alle prossime offerte di marketing. Facoltativo. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html" target="_blank">Ulteriori informazioni</a> <br /> </td> 
+   <td> Crea un set di coupon da aggiungere alle prossime offerte di marketing. Facoltativo. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html?lang=it" target="_blank">Ulteriori informazioni</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
