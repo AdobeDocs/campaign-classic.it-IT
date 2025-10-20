@@ -8,8 +8,8 @@ sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '2744'
-ht-degree: 72%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,8 +32,8 @@ ht-degree: 72%
 + Introduzione {#getting-started}
    + [Introduzione ad Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
    + [Avviare Adobe Campaign](platform/using/launching-adobe-campaign.md)
-   + [Scopri l’interfaccia utente di Campaign](platform/using/adobe-campaign-workspace.md)
-   + [Utilizza Campaign Explorer - NASCOSTO](platform/using/adobe-campaign-explorer.md)
+   + [Scoprire l’interfaccia utente di Campaign](platform/using/adobe-campaign-workspace.md)
+   + [Utilizzare Campaign Explorer - NASCOSTO](platform/using/adobe-campaign-explorer.md)
    + [Sfogliare e personalizzare gli elenchi - NASCOSTO](platform/using/adobe-campaign-ui-lists.md)
    + [Enumerazioni - NASCOSTO](platform/using/managing-enumerations.md)
    + [Connettori di Campaign](platform/using/about-connectors.md)
@@ -62,10 +62,10 @@ ht-degree: 72%
    + Gestione dei profili {#profile-management}
       + [Informazioni sui profili](platform/using/about-profiles.md)
       + [Modificare un profilo - NASCOSTO](platform/using/editing-a-profile.md)
-      + [Aggiungi profili - NASCOSTO](platform/using/adding-profiles.md)
-      + [Gestisci profili - NASCOSTO](platform/using/managing-profiles.md)
+      + [Aggiungere profili - NASCOSTO](platform/using/adding-profiles.md)
+      + [Gestione profili - NASCOSTO](platform/using/managing-profiles.md)
       + [Aggiornare i dati](platform/using/updating-data.md)
-      + [Importare ed esportare profili - NASCOSTO](platform/using/exporting-and-importing-profiles.md)
+      + [Importare ed esportare i profili - NASCOSTO](platform/using/exporting-and-importing-profiles.md)
       + [Creare e gestire gli elenchi](platform/using/creating-and-managing-lists.md)
    + Importare ed esportare dati {#importing-and-exporting-data}
       + [Introduzione all’importazione e l’esportazione dei dati](platform/using/get-started-data-import-export.md)
@@ -87,7 +87,7 @@ ht-degree: 72%
    + Filtrare i dati {#filtering-data}
       + [Opzioni di filtro - NASCOSTO](platform/using/filtering-options.md)
       + [Creare filtri - NASCOSTO](platform/using/creating-filters.md)
-      + [Caso d’uso: nascosto](platform/using/use-case.md)
+      + [Caso d’uso - NASCOSTO](platform/using/use-case.md)
    + [Passaggi per creare una query - NASCOSTO](platform/using/steps-to-create-a-query.md)
    + [Definire le condizioni del filtro - NASCOSTO](platform/using/defining-filter-conditions.md)
    + Autorizzazioni {#permissions}
@@ -102,7 +102,7 @@ ht-degree: 72%
       + [Connessione con Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
       + [Connessione con Salesforce.com](platform/using/crm-sfdc.md)
       + [Sincronizzare i dati con il sistema CRM](platform/using/crm-data-sync.md)
-   + [Opzioni di assistenza e supporto - NASCOSTO](support.md)
+   + [Guida e opzioni di supporto - NASCOSTO](support.md)
 + Creare e inviare messaggi {#sending-messages}
    + [Introduzione ai messaggi](delivery/using/communication-channels.md)
    + [Impostazioni di consegna - NASCOSTO](delivery/using/delivery-settings.md)
@@ -143,7 +143,7 @@ ht-degree: 72%
    + [Inviare messaggi LINE](delivery/using/line-channel.md)
    + [Inviare notifiche push](delivery/using/about-mobile-app-channel.md)
    + Inviare notifiche push {#sending-push-notifications}
-      + [Integrare l’SDK Campaign nell’app mobile](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
+      + [Integrare Campaign SDK nell’app mobile](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
       + Configurare l’app mobile{#configure-the-mobile-app}
          + [Introduzione alla configurazione dell’app - NASCOSTO](delivery/using/get-started-app-config.md)
          + [Passaggi di configurazione per iOS - HIDDEN](delivery/using/configuring-the-mobile-application.md)
@@ -152,7 +152,7 @@ ht-degree: 72%
          + [Creare un messaggio push per iOS - HIDDEN](delivery/using/create-notifications-ios.md)
          + [Creare un messaggio push per Android - HIDDEN](delivery/using/create-notifications-android.md)
       + [Risoluzione dei problemi - NASCOSTO](delivery/using/troubleshooting.md)
-   + [Inviare direct mailing](delivery/using/about-direct-mail-channel.md)
+   + [Inviare direct mail](delivery/using/about-direct-mail-channel.md)
    + Inviare direct mail {#sending-direct-mail}
       + [Creare una consegna direct mailing - HIDDEN](delivery/using/creating-a-direct-mail-delivery.md)
       + [Definire il contenuto della direct mailing - NASCOSTO](delivery/using/defining-the-direct-mail-content.md)
@@ -376,17 +376,17 @@ ht-degree: 72%
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Utilizzare  [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Configurare l’integrazione](integrations/using/configuring-the-integration.md)
-      + [Creare una newsletter [!DNL Experience Manager] &#x200B;](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Creare una newsletter [!DNL Experience Manager] ](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Utilizzare  [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Configurare l’integrazione con [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Inserire un’immagine dinamica](integrations/using/inserting-a-dynamic-image.md)
    + Connettore ACS {#acs-connector}
-      + [Introduzione a  [!DNL ACS Connector] - NASCOSTO](integrations/using/acs-connector-principles-and-data-cycle.md)
-      + [Sincronizza profili - NASCOSTO](integrations/using/synchronizing-profiles.md)
+      + [Introduzione a [!DNL ACS Connector] - NASCOSTO](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [Sincronizzare profili - NASCOSTO](integrations/using/synchronizing-profiles.md)
       + [Sincronizzare i tipi di pubblico - NASCOSTO](integrations/using/synchronizing-audiences.md)
-      + [Sincronizza applicazioni web - NASCOSTO](integrations/using/synchronizing-web-applications.md)
-      + [Risolvere i problemi relativi a  [!DNL ACS Connector] - HIDDEN](integrations/using/troubleshooting-the-acs-connector.md)
+      + [Sincronizzare le applicazioni web - NASCOSTO](integrations/using/synchronizing-web-applications.md)
+      + [Risolvere i problemi relativi a  [!DNL ACS Connector] - NASCOSTO](integrations/using/troubleshooting-the-acs-connector.md)
 + [Automatizzare con i flussi di lavoro](workflow/using/about-workflows.md)
 + Automatizzare con i flussi di lavoro {#automating-with-workflows}
    + Introduzione ai flussi di lavoro {#introduction}
