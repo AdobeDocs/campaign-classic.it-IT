@@ -104,7 +104,7 @@ Questa sezione descrive una soluzione per configurare il tracciamento e gli URL 
 
 ### Nota di compatibilità {#compatibility-note}
 
-Questa configurazione di branding legacy non è compatibile con il nuovo modello di [branding centralizzato](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html){target="_blank"} introdotto in Campaign v8.
+Questa configurazione di branding legacy non è compatibile con il nuovo modello di [branding centralizzato](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html?lang=it){target="_blank"} introdotto in Campaign v8.
 
 Se l&#39;ambiente esistente utilizza questa configurazione legacy, non è possibile migrare direttamente al nuovo modello di branding centralizzato. Per adottare il nuovo sistema è necessaria una reimplementazione completa delle impostazioni di branding.
 
@@ -175,6 +175,6 @@ A questo scopo, segui la procedura indicata di seguito:
 
 1. Crea un account esterno per brand con lo stesso nome interno definito nell&#39;[istanza di esecuzione](#execution-instance) (passaggio 1).
 
-1. Crea un modello di consegna per marchio. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
+1. Crea un modello di consegna per marchio. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=it){target="_blank"}.
 
 1. In **[!UICONTROL Properties]** del modello di consegna, imposta il routing sull&#39;account esterno del brand.
