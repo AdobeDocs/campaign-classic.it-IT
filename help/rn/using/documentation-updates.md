@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '3865'
+ht-degree: 100%
 
 ---
 
@@ -245,7 +245,7 @@ La procedura di installazione della console client di Campaign è stata migliora
 
 È stata aggiunta una nuova sezione su come lavorare con le origini e le destinazioni di Adobe Experience Platform per condividere i dati tra Campaign Classic e Adobe Real-time Customer Data Platform (RTCDP). [Leggi tutto](../../integrations/using/get-started-sources-destinations.md)
 
-È stata creata una nuova nota tecnica sull’aggiornamento della qualifica dei messaggi non recapitati dopo un’interruzione dell’ISP. [Leggi tutto](../../delivery/using/update-bounce-qualification.md)
+È stata creata una nuova nota tecnica sull’aggiornamento della qualificazione dei messaggi non recapitati dopo un’interruzione dell’ISP. [Leggi tutto](../../delivery/using/update-bounce-qualification.md)
 
 ## Marzo 2021 {#march-2021}
 
@@ -419,7 +419,7 @@ Sono ora disponibili video di spiegazione sui seguenti argomenti:
 
 * [Come personalizzare le e-mail utilizzando i campi di personalizzazione](../../delivery/using/personalization-fields.md)
 
-* [Come gestire seed e bozze in un&#39;e-mail](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it#target-population){target="_blank"}.
+* [Come gestire seed e bozze in un’e-mail](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it#target-population){target="_blank"}.
 
 * [Come impostare una consegna ricorrente](../../workflow/using/recurring-delivery.md)
 
@@ -440,7 +440,7 @@ La **[!UICONTROL AND-join]** sezione attività è stata arricchita con informazi
 
 Ai casi di utilizzo del flusso di lavoro è stato aggiunto un esempio che spiega come aggiornare in automatico un elenco mediante una query incrementale. [Leggi tutto](../../workflow/using/about-workflow-use-cases.md)
 
-Le [Note sulla versione](../../rn/using/latest-release.md) sono state riorganizzate: una nuova [pagina di panoramica](../../rn/using/latest-release.md) fornisce informazioni sugli stati della build, sul processo di aggiornamento, sulle raccomandazioni e sui collegamenti importanti. È stata aggiunta anche una pagina dedicata alle versioni [[!DNL Gold Standard] &#x200B;](../../rn/using/gold-standard.md)e è stata integrata la [matrice di compatibilità](../../rn/using/compatibility-matrix.md).
+Le [Note sulla versione](../../rn/using/latest-release.md) sono state riorganizzate: una nuova [pagina di panoramica](../../rn/using/latest-release.md) fornisce informazioni sugli stati della build, sul processo di aggiornamento, sulle raccomandazioni e sui collegamenti importanti. È stata aggiunta anche una pagina dedicata alle versioni [[!DNL Gold Standard] ](../../rn/using/gold-standard.md)e è stata integrata la [matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
 È stata aggiunta una nuova sezione con le linee guida relative al monitoraggio di Campaign Classic. [Leggi tutto](../../production/using/monitoring-guidelines.md)
 
