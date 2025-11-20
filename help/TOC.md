@@ -7,7 +7,7 @@ user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2744'
 ht-degree: 100%
 
@@ -832,7 +832,7 @@ ht-degree: 100%
       + [Note tecniche](technotes/using/technote.md)
       + [Abilitare Microsoft Edge basato su Chromium](technotes/using/edge-chromium.md)
       + [Nuovo server di recapito messaggi](technotes/using/deliverability-server.md)
-      + [Aggiornamento della sicurezza Apache](technotes/using/acc-apache-upgrade.md)
+      + [Aggiornamento di sicurezza Apache](technotes/using/acc-apache-upgrade.md)
       + [Aggiornamenti del sistema 2023](technotes/using/tech-stack-upgrade.md)
       + [Aggiornamenti IMS](technotes/using/ims-updates.md)
       + [Fine del supporto per TLS 1.0 e 1.1](technotes/using/eol-tls-support.md)
