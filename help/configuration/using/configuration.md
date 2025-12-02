@@ -16,7 +16,7 @@ ht-degree: 0%
 
 In qualità di utente esperto, puoi aggiungere cartelle nella struttura dell’Explorer e personalizzarla.
 
-Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 I tipi di cartelle utilizzati dall&#39;elenco di spostamento sono descritti in un documento XML conforme alla grammatica dello schema **xtk:navtree**.
 

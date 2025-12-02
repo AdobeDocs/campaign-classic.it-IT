@@ -82,7 +82,7 @@ Seleziona il formato dell’e-mail nella sezione inferiore della finestra:
 
 La pagina mirror è una pagina HTML accessibile online tramite un browser web. Il contenuto è identico a quello dell’e-mail.
 
-Per impostazione predefinita, la pagina speculare viene generata se il collegamento viene inserito nel contenuto dell’e-mail. Per ulteriori informazioni sull&#39;inserimento dei blocchi di personalizzazione, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
+Per impostazione predefinita, la pagina speculare viene generata se il collegamento viene inserito nel contenuto dell’e-mail. Per ulteriori informazioni sull&#39;inserimento dei blocchi di personalizzazione, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=it){target="_blank"}.
 
 Nelle proprietà di consegna, il campo **[!UICONTROL Mode]** della scheda **[!UICONTROL Validity]** ti consente di modificare la modalità di generazione per questa pagina.
 
