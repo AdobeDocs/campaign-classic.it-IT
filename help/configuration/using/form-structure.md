@@ -3,12 +3,12 @@ product: campaign
 title: Struttura di un modulo
 description: Struttura di un modulo
 feature: Application Settings
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '2398'
+source-wordcount: '2394'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Il documento XML del modulo di input deve contenere l&#39;elemento principale `<
 </form>
 ```
 
-Per impostazione predefinita, un modulo è associato allo schema dati con lo stesso nome e lo stesso spazio dei nomi. Per associare un modulo a un nome diverso, impostare l&#39;attributo **entity-schema** dell&#39;elemento `<form>` sul nome della chiave dello schema. Per illustrare la struttura di un modulo di input, descriviamo un’interfaccia utilizzando lo schema di esempio &quot;cus:recipient&quot;:
+Per impostazione predefinita, un modulo è associato allo schema dati con lo stesso nome e lo stesso spazio dei nomi. Per associare un modulo a un nome diverso, impostare l&#39;attributo **entity-schema** dell&#39;elemento `<form>` sul nome della chiave dello schema. Per illustrare la struttura di un modulo di input, descrivere un&#39;interfaccia utilizzando lo schema di esempio &quot;cus:recipient&quot;:
 
 ```xml
 <srcSchema name="recipient" namespace="cus">
@@ -70,7 +70,7 @@ Per impostazione predefinita, ogni campo viene visualizzato su una sola riga e o
 
 ## Formattazione {#formatting}
 
-Il layout dei controlli è simile al layout utilizzato nelle tabelle HTML, con la possibilità di dividere un controllo in più colonne, di interlacciare elementi o di specificare l&#39;occupazione dello spazio disponibile. Tenete presente, tuttavia, che la formattazione consente di dividere l&#39;area solo per le proporzioni; non è possibile specificare dimensioni fisse per un oggetto.
+Il layout dei controlli è simile al layout utilizzato nelle tabelle di HTML, con la possibilità di dividere un controllo in più colonne, di interlacciare elementi o di specificare l&#39;occupazione dello spazio disponibile. Tenete presente, tuttavia, che la formattazione consente di dividere l&#39;area solo per le proporzioni; non è possibile specificare dimensioni fisse per un oggetto.
 
 Per visualizzare i controlli dell&#39;esempio precedente in due colonne:
 
@@ -494,7 +494,7 @@ Esempio sul campo &quot;Genere&quot;:
 <input xpath="@gender" readOnly="true"/>
 ```
 
-## Pulsante di opzione {#radio-button}
+## Pulsante di scelta {#radio-button}
 
 Un pulsante di scelta consente di scegliere tra diverse opzioni. I tag **`<input>`** vengono utilizzati per elencare le opzioni possibili e l&#39;attributo **checkvalue** specifica il valore associato alla scelta.
 
@@ -636,9 +636,9 @@ La presenza dell&#39;attributo **type=&quot;wizard&quot;** nell&#39;elemento `<f
 
 Il pulsante **[!UICONTROL Finish]** consente di salvare i dati immessi e di chiudere il modulo.
 
-### Metodi SOAP {#soap-methods}
+### metodi SOAP {#soap-methods}
 
-L&#39;esecuzione del metodo SOAP può essere avviata da un tag **`<leave>`** popolato alla fine di una pagina.
+È possibile avviare l&#39;esecuzione del metodo SOAP da un tag **`<leave>`** popolato alla fine di una pagina.
 
 Il tag **`<soapcall>`** contiene la chiamata per il metodo con i seguenti parametri di input:
 

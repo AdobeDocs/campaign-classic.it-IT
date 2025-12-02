@@ -4,11 +4,11 @@ title: Formattazione
 description: Formattazione
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Email Design
-role: User, Developer, Data Engineer
+role: User, Developer
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1451'
+source-wordcount: '1446'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## Modelli JavaScript {#javascript-templates}
 
-Un modello JavaScript è un HTML o un documento di testo che include codice JavaScript. Viene costruito allo stesso modo del contenuto di un’e-mail in un’azione di consegna.
+Un modello JavaScript è un documento HTML o di testo che include codice JavaScript. Viene costruito allo stesso modo del contenuto di un’e-mail in un’azione di consegna.
 
 ### Identificazione di un modello JavaScript {#identification-of-a-javascript-template}
 
@@ -79,7 +79,7 @@ Gli attributi e gli elementi del contenuto vengono rappresentati come oggetti di
 >
 >Esempio: `content.@['offer-id']`.
 
-Tutta la potenza di un linguaggio di programmazione (variabili, cicli, test condizionali, funzioni, ecc.) ) è disponibile per creare il documento di output. Le API SOAP sono accessibili per arricchire il documento di output.
+Tutta la potenza di un linguaggio di programmazione (variabili, cicli, test condizionali, funzioni, ecc.) ) è disponibile per creare il documento di output. Le API di SOAP sono accessibili per arricchire il documento di output.
 
 Esempi:
 
@@ -262,7 +262,7 @@ Questo esempio prevede i seguenti passaggi:
    </form>
    ```
 
-1. Creare i modelli di JavaScript con il contenuto del messaggio per i formati HTML e Text.
+1. Creare i modelli di JavaScript con il contenuto dei messaggi per i formati HTML e Testo.
 
    * Nel nostro esempio, per HTML:
 
@@ -444,7 +444,7 @@ Le istruzioni seguenti descrivono la configurazione del foglio di stile per la f
 
 Per impostazione predefinita, il processore XSLT cerca il **modello** che si applica al nodo principale o principale del documento XML di input. La costruzione del documento di output inizia con questo **modello**.
 
-Nel nostro esempio, una pagina HTML viene generata dallo schema &quot;cus:book&quot; visualizzando il nome del libro e l’elenco dei capitoli.
+Nel nostro esempio, una pagina HTML viene generata dallo schema &quot;cus:book&quot; visualizzando il nome del libro e l&#39;elenco dei capitoli.
 
 >[!NOTE]
 >

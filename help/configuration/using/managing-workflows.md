@@ -3,12 +3,12 @@ product: campaign
 title: Gestione dei flussi di lavoro
 description: Gestione dei flussi di lavoro
 feature: Workflows, Configuration
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 exl-id: 617b0050-6b04-4c68-9f63-511baae99f41
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: '141'
 ht-degree: 4%
 
 ---

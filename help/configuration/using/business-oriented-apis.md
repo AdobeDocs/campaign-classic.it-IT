@@ -3,11 +3,11 @@ product: campaign
 title: API orientate alle aziende
 description: API orientate alle aziende
 feature: API
-role: Data Engineer, Developer
+role: Developer
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '618'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ Le API aziendali sono specifiche per ciascun tipo di oggetto. Hanno un effetto s
      Consulta [Metodi SOAP in JavaScript](../../configuration/using/soap-methods-in-javascript.md).
 
 * Gestione dei contenuti
-* Gestione degli abbonamenti, fare riferimento a [Abbonamento (nms:subscription)](#subscribe--nms-subscription-) e [Annullamento dell&#39;abbonamento (nms:subscription)](#unsubscribe--nms-subscription-).
+* Gestione sottoscrizioni, fare riferimento a [Sottoscrizione (nms:subscription)](#subscribe--nms-subscription-) e [Annulla sottoscrizione (nms:subscription)](#unsubscribe--nms-subscription-).
 * Processi dati: importazioni, esportazioni.
 
 Questa sezione descrive l’utilizzo dei servizi &quot;Subscribe&quot;, &quot;Unsubscribe&quot; e &quot;SubmitDelivery&quot;.
@@ -47,7 +47,7 @@ Per chiamare il servizio sono necessari i seguenti parametri:
 
 * un’autenticazione,
 * nome interno del servizio di abbonamento,
-* un documento XML contenente le informazioni sul destinatario (secondo lo schema &quot;nms:recipient&quot;),
+* un documento XML contenente le informazioni sul destinatario (dallo schema &quot;nms:recipient&quot;),
 * un valore booleano per la creazione del destinatario, se non esiste già.
 
 Descrizione del metodo &quot;subscribe&quot; nello schema &quot;nms:subscription&quot;:
@@ -62,7 +62,7 @@ Descrizione del metodo &quot;subscribe&quot; nello schema &quot;nms:subscription
 </method>
 ```
 
-La definizione della chiave di riconciliazione deve essere immessa tramite l&#39;attributo _&#x200B;**key** nell&#39;elemento `<recipient>` del documento XML. Il contenuto di questo attributo è un elenco XPath separato da virgole.
+La definizione della chiave di riconciliazione deve essere immessa tramite l&#39;attributo _**key** nell&#39;elemento `<recipient>` del documento XML. Il contenuto di questo attributo è un elenco XPath separato da virgole.
 
 Questa chiamata non restituisce alcun dato, ad eccezione degli errori.
 
@@ -112,7 +112,7 @@ Aggiornamento del destinatario e dell’abbonamento.
   </SOAP-ENV:Envelope>
   ```
 
-## Annulla iscrizione (nms:subscription) {#unsubscribe--nms-subscription-}
+## Annulla sottoscrizione (nms:subscription) {#unsubscribe--nms-subscription-}
 
 Questo servizio ti consente di annullare l’abbonamento di un destinatario a un servizio di informazioni e di aggiornare il profilo del destinatario.
 
@@ -120,7 +120,7 @@ Per chiamare il servizio sono necessari i seguenti parametri:
 
 * un’autenticazione,
 * Nome interno del servizio dal quale annullare l’abbonamento,
-* un documento XML contenente le informazioni sul destinatario (secondo lo schema &quot;nms:recipient&quot;),
+* un documento XML contenente le informazioni sul destinatario (dallo schema &quot;nms:recipient&quot;),
 
 Descrizione del metodo &quot;Unsubscribe&quot; nello schema &quot;nms:subscription&quot;:
 

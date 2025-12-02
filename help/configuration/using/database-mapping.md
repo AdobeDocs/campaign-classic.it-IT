@@ -3,9 +3,9 @@ product: campaign
 title: Mappatura del database
 description: Mappatura del database
 feature: Configuration, Instance Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 3%
@@ -98,7 +98,7 @@ Per compilare un campo in XML, è necessario aggiungere l&#39;attributo **xml** 
   <element name="description" xml="true" type="html" label="Description"/>
   ```
 
-  Il tipo &quot;html&quot; consente di memorizzare il contenuto HTML in un tag CDATA e di visualizzare uno speciale controllo di modifica HTML nell’interfaccia client di Adobe Campaign.
+  Il tipo &quot;html&quot; consente di memorizzare il contenuto HTML in un tag CDATA e di visualizzare uno speciale HTML edit check nell’interfaccia client di Adobe Campaign.
 
 Utilizzare i campi XML per aggiungere nuovi campi senza modificare la struttura fisica del database. Un altro vantaggio consiste nell&#39;utilizzo di meno risorse (dimensioni allocate ai campi SQL, limite al numero di campi per tabella, ecc.). Si noti tuttavia che non è possibile indicizzare o filtrare un campo XML.
 
@@ -175,4 +175,4 @@ Per ulteriori informazioni, consulta i seguenti collegamenti:
 * [Struttura dello schema](schema-structure.md)
 * [Gestione delle chiavi](database-keys.md)
 * [Gestione collegamenti](database-links.md)
-* [Modello dati della campagna](about-data-model.md)
+* [Modello dati di Campaign](about-data-model.md)

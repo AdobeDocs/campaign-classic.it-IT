@@ -3,11 +3,11 @@ product: campaign
 title: Filtraggio degli schemi
 description: Filtraggio degli schemi
 feature: Custom Resources
-role: Data Engineer, Developer
+role: Developer
 exl-id: 009bed25-cd35-437c-b789-5b58a6d2d7c6
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '382'
 ht-degree: 1%
 
 ---
@@ -60,15 +60,15 @@ Questi filtri vengono immessi al livello **elemento** principale degli schemi e,
 >
 >Se non viene specificato alcun filtro, tutti gli operatori disporranno di autorizzazioni di lettura e scrittura per lo schema.
 
-## Schemi incorporati di Protect {#protecting-built-in-schemas}
+## Proteggere gli schemi incorporati {#protecting-built-in-schemas}
 
 Per impostazione predefinita, gli schemi incorporati sono accessibili solo con autorizzazioni di SCRITTURA per gli operatori con diritti di AMMINISTRAZIONE:
 
-* ncm:pubblicazione
-* nl:monitoraggio
-* nms:calendario
+* ncm:publishing
+* nl:monitoring
+* nms:calendar
 * xtk:builder
-* xtk:connessioni
+* xtk:connections
 * xtk:dbInit
 * xtk:entityBackupNew
 * xtk:entityBackupOriginal
@@ -76,7 +76,7 @@ Per impostazione predefinita, gli schemi incorporati sono accessibili solo con a
 * xtk:form
 * xtk:funcList
 * xtk:fusion
-* xtk:immagine
+* xtk:image
 * xtk:javascript
 * xtk:jssp
 * xtk:jst
@@ -92,12 +92,12 @@ Per impostazione predefinita, gli schemi incorporati sono accessibili solo con a
 * xtk:sql
 * xtk:sqlSchema
 * xtk:srcSchema
-* xtk:stringhe
+* xtk:strings
 * xtk:xslt
 
 >[!IMPORTANT]
 >
->Le autorizzazioni di LETTURA e SCRITTURA per lo schema **xtk:sessionInfo** sono accessibili solo dall&#39;account interno di un&#39;istanza di Adobe Campaign.
+>Le autorizzazioni di LETTURA e SCRITTURA per lo schema **xtk:sessionInfo** sono accessibili solo dall&#39;account interno di un&#39;istanza Adobe Campaign.
 
 ## Modificare i filtri di sistema degli schemi incorporati {#modifying-system-filters-of-built-in-schemas}
 
@@ -105,7 +105,7 @@ Puoi comunque modificare i filtri di sistema degli schemi predefiniti, che per i
 
 >[!NOTE]
 >
->Tuttavia, l’Adobe consiglia di non modificare i parametri predefiniti per garantire una sicurezza ottimale.
+>Tuttavia, Adobe consiglia di non modificare i parametri predefiniti per garantire una sicurezza ottimale.
 
 1. Crea un&#39;estensione per lo schema interessato o apri un&#39;estensione esistente.
 1. Aggiungere un elemento figlio **`<sysfilter name="<filter name>" _operation="delete"/>`** nell&#39;elemento principale per eliminare l&#39;applicazione del filtro nello stesso schema di origine.

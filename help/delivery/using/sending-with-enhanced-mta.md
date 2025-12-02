@@ -5,9 +5,9 @@ description: Scopri l’ambito e le specificità dell’invio di e-mail con MTA 
 feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1379'
 ht-degree: 1%
 
 ---
@@ -136,7 +136,7 @@ Per ulteriori informazioni sul periodo di validità, consulta questa [pagina](co
 ### Firma DKIM
 
 La firma di autenticazione dell’e-mail DKIM (DomainKeys Identified Mail) viene eseguita dall’MTA avanzato. La firma DKIM da parte dell’MTA nativo di Campaign verrà disattivata all’interno della tabella di gestione dei domini come parte dell’aggiornamento dell’MTA avanzato.
-Per ulteriori informazioni su DKIM, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=it#authentication).
+Per ulteriori informazioni su DKIM, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ### Reporting sul successo della consegna
 
@@ -161,6 +161,5 @@ La tabella seguente mostra i diversi passaggi del processo di invio con i KPI co
 | Il messaggio è stato inoltrato correttamente da Campaign all’MTA avanzato | **[!UICONTROL Success]** percentuale inizia al 100% | Inviato |
 | I messaggi non recapitabili vengono segnalati dall’MTA avanzato | **[!UICONTROL Success]** percentuale diminuita di conseguenza | Non riuscito |
 | I messaggi in soft-bouncing vengono segnalati dall’MTA avanzato | Nessuna modifica nella percentuale **[!UICONTROL Success]** | Inviato |
-| Nuovi tentativi di messaggi con mancati recapiti non permanenti riusciti | Nessuna modifica nella percentuale **[!UICONTROL Success]** | Inviato | La percentuale di **[!UICONTROL Success]** viene aumentata di conseguenza | Inviato |
+| Nuovi tentativi di messaggi con mancati recapiti non permanenti riusciti | Nessuna modifica nella percentuale **[!UICONTROL Success]** \|  **[!UICONTROL Success]** percentuale aumentata di conseguenza | Inviato |
 | Nuovi tentativi di messaggi con mancati recapiti non riusciti | **[!UICONTROL Success]** percentuale diminuita di conseguenza | Non riuscito |
-

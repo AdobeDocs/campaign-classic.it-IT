@@ -3,11 +3,11 @@ product: campaign
 title: API orientate ai dati
 description: API orientate ai dati
 feature: API
-role: Data Engineer, Developer
+role: Developer
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1813'
+source-wordcount: '1796'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Per le colonne e le condizioni, è possibile utilizzare le query.
 
 In questo modo è possibile isolare l&#39;istruzione SQL sottostante. Il linguaggio di query non dipende dal motore sottostante: alcune funzioni verranno nuovamente mappate, il che potrebbe generare diversi ordini SELECT SQL.
 
-Per ulteriori informazioni, consultare [Esempio sul metodo &#39;ExecuteQuery&#39; dello schema &#39;xtk:queryDef&#39;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
+Per ulteriori informazioni, consulta [Esempio sul metodo &#39;ExecuteQuery&#39; dello schema &#39;xtk:queryDef&#39;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
 
 Il metodo **ExecuteQuery** è presentato in [ExecuteQuery (xtk:queryDef)](#executequery--xtk-querydef-).
 
@@ -141,7 +141,7 @@ La sintassi **XPath** viene utilizzata per individuare i dati in base allo schem
 
 #### Esempio con l’operazione &quot;get&quot; {#example-with-the--get--operation}
 
-Recupera il cognome e il nome di un destinatario (schema &quot;nms:recipient&quot;) con un filtro nell’e-mail.
+Recupera il cognome e il nome di un destinatario (schema &quot;nms:recipient&quot;) con un filtro nell&#39;e-mail.
 
 ```xml
 <queryDef schema="nms:recipient" operation="get">
@@ -391,7 +391,7 @@ Per evitare di associare un parametro, l&#39;attributo &quot;noSqlBind&quot; dev
 
 Il parametro restituito è un documento XML nel formato dello schema associato alla query.
 
-Esempio di ritorno dallo schema &quot;nms:recipient&quot; su un’operazione &quot;get&quot;:
+Esempio di ritorno dallo schema &quot;nms:recipient&quot; in un&#39;operazione &quot;get&quot;:
 
 ```
 <recipient email="john.doe@adobe.com" lastName"Doe" firstName="John"/>
@@ -605,7 +605,7 @@ Aggiunta di un destinatario a un gruppo con la tabella delle relazioni di gruppo
 
 >[!NOTE]
 >
->La definizione della chiave non viene immessa nell&#39;elemento `<rcpgroup>` perché nello schema &quot;nms:group&quot; è definita una chiave implicita basata sul nome del gruppo.
+>La definizione della chiave non è stata immessa nell&#39;elemento `<rcpgroup>` perché nello schema &quot;nms:group&quot; è definita una chiave implicita basata sul nome del gruppo.
 
 ### Elementi della raccolta XML {#xml-collection-elements}
 

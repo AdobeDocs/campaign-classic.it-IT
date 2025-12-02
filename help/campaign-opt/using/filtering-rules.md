@@ -2,14 +2,14 @@
 product: campaign
 title: Regole di filtro
 description: Scopri come utilizzare le regole di filtro in Adobe Campaign
-role: User, Data Engineer
+role: User, Developer
 feature: Typology Rules, Campaigns
 hide: true
 hidefromtoc: true
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '509'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ Per definire questo filtro, effettua le seguenti operazioni:
 
    ![](assets/campaign_opt_create_filter_01.png)
 
-1. Modificare la dimensione di targeting predefinita e selezionare le sottoscrizioni (**nms:subscription**).
+1. Modifica la dimensione di targeting predefinita e seleziona le sottoscrizioni (**nms:subscription**).
 
    ![](assets/campaign_opt_create_filter_02.png)
 

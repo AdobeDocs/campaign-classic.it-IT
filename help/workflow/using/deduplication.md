@@ -6,9 +6,9 @@ feature: Workflows, Targeting Activity
 hide: true
 hidefromtoc: true
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1114'
 ht-degree: 10%
 
 ---
@@ -22,7 +22,7 @@ La deduplicazione elimina i duplicati dai risultati delle attività in entrata. 
 L&#39;attività **[!UICONTROL Deduplication]** viene utilizzata per rimuovere righe duplicate da un set di dati. Ad esempio, i record seguenti potrebbero essere considerati duplicati in quanto hanno lo stesso indirizzo e-mail e lo stesso telefono cellulare e/o di casa.
 
 | Data ultima modifica | Nome | Cognome | E-mail | Telefono cellulare | Telefono |
------|------------|-----------|-------|--------------|------
+|-----|------------|-----------|-------|--------------|------|
 | 02/03/2020 | Bob | Tisner | bob@mycompany.com | 444 44 44 444 | 888 88 88 888 |
 | 05/19/2020 | Robert | Tisner | bob@mycompany.com | 444 44 44 444 | 777 77 77 777 |
 | 07/22/2020 | Bobby | Tisner | bob@mycompany.com | 444 44 44 444 | 777 77 77 777 |
@@ -30,7 +30,7 @@ L&#39;attività **[!UICONTROL Deduplication]** viene utilizzata per rimuovere ri
 L&#39;attività **[!UICONTROL Deduplication]** consente di mantenere un&#39;intera riga come record univoco dopo l&#39;identificazione di duplicati. Ad esempio, nel caso d&#39;uso precedente, se l&#39;attività è configurata per mantenere solo il record con il **[!UICONTROL Date]** più vecchio, il risultato sarebbe:
 
 | Data | Nome | Cognome | E-mail | Telefono cellulare | Telefono |
------|----------|------------|-------|--------------|------
+|-----|----------|------------|-------|--------------|------|
 | 02/03/2020 | Bob | Tisner | bob@mycompany.com | 444 44 44 444 | 888 88 88 888 |
 
 Il record principale selezionato riporterà i dati senza unire i dati dei campi con altri dati pertinenti nelle righe duplicate.
@@ -38,7 +38,7 @@ Il record principale selezionato riporterà i dati senza unire i dati dei campi 
 Complemento:
 
 | Data | Nome | Cognome | E-mail | Telefono cellulare | Telefono |
------|------------|-----------|-------|--------------|------
+|-----|------------|-----------|-------|--------------|------|
 | 05/19/2020 | Robert | Tisner | bob@mycompany.com | 444 44 44 444 | 777 77 77 777 |
 | 07/22/2020 | Bobby | Tisner | bob@mycompany.com | 444 44 44 444 | 777 77 77 777 |
 
@@ -156,7 +156,7 @@ Per farlo, segui questi passaggi:
 
    ![](assets/dedup2.png)
 
-1. Dopo l&#39;attivazione della funzionalità, all&#39;attività **[!UICONTROL Deduplication]** viene aggiunta una scheda **[!UICONTROL Merge]**. Consente di definire gruppi di campi da unire e le relative regole associate.
+1. Dopo l&#39;attivazione della funzionalità, all&#39;attività **[!UICONTROL Merge]** viene aggiunta una scheda **[!UICONTROL Deduplication]**. Consente di definire gruppi di campi da unire e le relative regole associate.
 
    Per ulteriori informazioni, consulta il caso d&#39;uso dedicato disponibile in [questa sezione](deduplication-merge.md).
 

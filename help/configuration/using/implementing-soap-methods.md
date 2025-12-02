@@ -3,16 +3,16 @@ product: campaign
 title: Implementazione dei metodi SOAP
 description: Implementazione dei metodi SOAP
 feature: Configuration
-role: Data Engineer, Developer
+role: Developer
 exl-id: 441a0e5c-fa7f-46c8-a65a-5cca4c846d43
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '417'
 ht-degree: 3%
 
 ---
 
-# Implementare metodi SOAP{#implementing-soap-methods}
+# Implementare i metodi di SOAP{#implementing-soap-methods}
 
 
 
@@ -20,13 +20,13 @@ ht-degree: 3%
 
 È possibile creare metodi SOAP in JavaScript. Questa funzione abilita semplicemente i processi applicativi, evitando di sviluppare JSP e le relative chiamate nei moduli.
 
-Questi metodi SOAP si comportano nello stesso modo di quelli definiti in modo nativo nella domanda. Sono supportati gli stessi attributi: static, key only e const.
+Questi metodi di SOAP si comportano nello stesso modo di quelli definiti in modo nativo nell’applicazione. Sono supportati gli stessi attributi: static, key only e const.
 
 ## Definire una libreria di metodi {#defining-a-method-library}
 
 La creazione di una libreria di metodi prevede due fasi:
 
-* la dichiarazione relativa al metodo SOAP,
+* la dichiarazione del metodo SOAP,
 * Definizione (o implementazione) in JavaScript.
 
 ### Dichiarazione {#declaration}
@@ -39,7 +39,7 @@ Questo nome coincide con il nome (con lo spazio dei nomi) dell&#39;entità di ti
 
 Esempio:
 
-Il metodo testLog(msg) è dichiarato in un&#39;estensione nms:recipient
+Metodo testLog(msg) dichiarato in un&#39;estensione nms:recipient
 
 ```
 <method name="testLog" static="true" library="cus:test">
@@ -55,7 +55,7 @@ Il metodo testLog(msg) è dichiarato in un&#39;estensione nms:recipient
 
 ### Definizione {#definition}
 
-I metodi SOAP sono implementati sotto forma di funzione JavaScript raggruppata in uno script che rappresenta una libreria.
+I metodi di SOAP sono implementati sotto forma di funzione di JavaScript raggruppata in uno script che rappresenta una libreria.
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ Il nome della funzione deve rispettare il seguente formato:
 
 Esempio:
 
-La seguente funzione di JavaScript è l’implementazione del metodo descritto sopra. È definita nell&#39;entità di tipo &quot;codice JavaScript&quot; utilizzando il nome &quot;cus:test&quot;.
+La seguente funzione di JavaScript è l’implementazione del metodo descritto sopra. Deve essere definito nell&#39;entità di tipo &quot;Codice JavaScript&quot; utilizzando il nome &quot;cus:test&quot;.
 
 ```
 function nms_recipient_testLog(message)

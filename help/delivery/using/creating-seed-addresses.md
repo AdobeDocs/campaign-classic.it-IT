@@ -4,11 +4,11 @@ title: Creare indirizzi seed
 description: Scopri come creare e utilizzare gli indirizzi di seed
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Seed Address
-role: User, Data Engineer
+role: User, Developer
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '421'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Adobe Campaign consente inoltre di creare modelli di indirizzi seed importati in
 Per creare indirizzi seed, effettua le seguenti operazioni:
 
 1. Fare clic sul pulsante **[!UICONTROL New]** sopra l&#39;elenco degli indirizzi di seed.
-1. Immettere i dati collegati all&#39;indirizzo nei campi corrispondenti della scheda **[!UICONTROL Recipient]**. I campi disponibili corrispondono ai campi standard nei profili dei destinatari della consegna (nms:tabella dei destinatari): nome, nome, e-mail, ecc.
+1. Immettere i dati collegati all&#39;indirizzo nei campi corrispondenti della scheda **[!UICONTROL Recipient]**. I campi disponibili corrispondono ai campi standard nei profili dei destinatari della consegna (tabella nms:recipient): nome, nome, e-mail, ecc.
 
    >[!NOTE]
    >

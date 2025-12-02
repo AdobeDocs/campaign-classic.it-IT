@@ -3,11 +3,11 @@ product: campaign
 title: Fasi di configurazione
 description: Fasi di configurazione
 feature: Configuration
-role: Data Engineer, Developer
+role: Developer
 exl-id: a5ae0b61-3377-46d9-a327-6c897eeda770
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '233'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ Esistono due tipi di tag:
 Per impostare questi tag, effettua le seguenti operazioni:
 
 1. Identifica le pagine da tracciare e determinane il tipo (WEB o TRANSACTION).
-1. Determinare le informazioni aggiuntive da raccogliere ed estendere lo schema **nms:webTrackingLog** con la descrizione di tali informazioni. Per impostazione predefinita, questo schema può memorizzare gli importi delle transazioni e il numero di elementi per transazione.
+1. Determina quali informazioni aggiuntive desideri raccogliere ed estendi lo schema **nms:webTrackingLog** con la descrizione di queste informazioni. Per impostazione predefinita, questo schema può memorizzare gli importi delle transazioni e il numero di elementi per transazione.
 1. Creazione dei tag di tracciamento web. Esistono due modi per farlo:
 
    * Inserisci gli URL corrispondenti a queste pagine nella piattaforma Adobe Campaign, quindi genera ed estrai i tag di tracciamento web associati (dal nodo **[!UICONTROL Campaign execution>Resources>Web tracking tags]** della console client).

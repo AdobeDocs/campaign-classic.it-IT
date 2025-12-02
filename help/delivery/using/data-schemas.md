@@ -4,11 +4,11 @@ title: Utilizzare gli schemi di dati in Campaign
 description: Scopri come utilizzare gli schemi di dati in Campaign
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Data Model
-role: User, Developer, Data Engineer
+role: User, Developer
 exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '566'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ Di seguito è riportato un esempio di schema di gestione dei contenuti con i tip
 </element>
 ```
 
-## Properties {#properties}
+## Proprietà {#properties}
 
 È possibile utilizzare diverse proprietà per arricchire gli elementi **`<element>`** e **`<attribute>`** dello schema dati.
 

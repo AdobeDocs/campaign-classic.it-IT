@@ -3,9 +3,9 @@ product: campaign
 title: Rilevamento degli URL di tracciamento
 description: Ulteriori informazioni sul pattern consigliato per il tracciamento degli URL
 feature: Monitoring
-role: User, Developer, Data Engineer
+role: User, Developer
 exl-id: 7611d6a1-6c55-4ba3-b905-58426c944991
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 2%
@@ -39,7 +39,7 @@ Quando aggiungi collegamenti personalizzati al contenuto, evita sempre di includ
 Ad esempio, la sintassi `<a href="http://<%=myURL%>">` è **non sicura** e deve essere evitata.
 
 * L’utilizzo di questa sintassi può causare problemi di sicurezza se il collegamento generato da Adobe Campaign contiene uno o più parametri.
-* Tidy può correggere in modo errato alcuni collegamenti, che possono verificarsi in modo casuale. Il sintomo tipico è un pezzo di HTML visibile nelle bozze e-mail ma non nell’anteprima.
+* Tidy può correggere in modo errato alcuni collegamenti, che possono verificarsi in modo casuale. Il sintomo tipico è un componente di HTML visibile nelle bozze e-mail ma non nell’anteprima.
 * L’escape dall’URL è problematico; alcuni caratteri nell’URL possono causare problemi.
 * Nell&#39;URL di reindirizzamento non può essere presente un parametro denominato ID in conflitto con il parametro.
 * L’interesse del tracciamento è quindi limitato alle statistiche sulla consegna, in quanto Adobe Campaign tiene traccia in modo indifferente di tutti i possibili valori di &quot;myURL&quot;.

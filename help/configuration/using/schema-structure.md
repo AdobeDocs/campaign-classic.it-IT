@@ -3,13 +3,13 @@ product: campaign
 title: Comprendere la struttura dello schema in Adobe Campaign
 description: Struttura dello schema
 feature: Custom Resources
-role: Data Engineer, Developer
+role: Developer
 audience: configuration
 content-type: reference
 level: Intermediate, Experienced
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '1511'
 ht-degree: 1%

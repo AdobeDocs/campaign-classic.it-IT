@@ -4,11 +4,11 @@ title: Arricchimento del contenuto
 description: Arricchimento del contenuto
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Data Management
-role: User, Developer, Data Engineer
+role: User, Developer
 exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '666'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Un collegamento di contenuto viene dichiarato nello schema dati come segue:
 <element expandSchemaTarget="cus:chapter" label="Main chapter" name="mainChapter" type="string"/>
 ```
 
-La definizione del collegamento è compilata su un **`<element>`** di tipo **string** e l&#39;attributo **expandSchemaTarget** fa riferimento allo schema di destinazione (&quot;cus:chapter&quot; nel nostro esempio). Lo schema a cui si fa riferimento deve essere uno schema di contenuto.
+La definizione del collegamento è compilata su un **di tipo** string **`<element>`** e l&#39;attributo **expandSchemaTarget** fa riferimento allo schema di destinazione (&quot;cus:chapter&quot; nel nostro esempio). Lo schema a cui si fa riferimento deve essere uno schema di contenuto.
 
 Il contenuto dell&#39;elemento di destinazione arricchisce l&#39;elemento link, ovvero l&#39;elemento **`<chapter>`** nello schema di esempio:
 
@@ -136,7 +136,7 @@ Un collegamento a una tabella esterna viene dichiarato nello schema dati come se
 <element label="Main contact" name="mainContact" target="nms:recipient" type="link"/>
 ```
 
-La definizione del collegamento viene compilata su un **`<element>`** di tipo **link** e l&#39;attributo **target** fa riferimento allo schema di destinazione (&quot;nms:recipient&quot; nel nostro esempio).
+La definizione del collegamento è compilata su un **di tipo** link **`<element>`** e l&#39;attributo **target** fa riferimento allo schema di destinazione (&quot;nms:recipient&quot; nel nostro esempio).
 
 Per convenzione, i collegamenti devono essere dichiarati dall’elemento principale dello schema di dati.
 

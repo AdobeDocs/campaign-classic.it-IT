@@ -4,7 +4,7 @@ title: Matrice di funzionalità on-premise, ibride e in hosting per Campaign
 description: Scopri le principali differenze tra le distribuzioni in hosting e quelle on-premise
 feature: Installation, Architecture
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 26%

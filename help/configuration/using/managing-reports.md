@@ -3,12 +3,12 @@ product: campaign
 title: Gestione dei rapporti
 description: Gestione dei rapporti
 feature: Reporting, Configuration
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 exl-id: 68908664-3cf6-4a6c-a327-c7f059c27aa3
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '152'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 
 
-I rapporti basati su uno schema specifico per i destinatari predefiniti di Adobe Campaign (nm:recipient o schema linked) devono essere risviluppati per tenere conto dei dati della tabella personalizzata e delle relative tabelle collegate tramite la mappatura di destinazione (vedi la sezione [Mappatura di destinazione](../../configuration/using/target-mapping.md)).
+I rapporti basati su uno schema specifico per i destinatari Adobe Campaign predefiniti (nm:recipient o collegati a schema) devono essere risviluppati per tenere conto dei dati della tabella personalizzata e delle relative tabelle collegate tramite la mappatura di destinazione (vedi la sezione [Mappatura di destinazione](../../configuration/using/target-mapping.md)).
 
 Per creare nuovi report, consultare [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md).
 

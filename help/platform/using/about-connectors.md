@@ -3,10 +3,10 @@ product: campaign
 title: Informazioni sui connettori
 description: Informazioni sui connettori
 feature: Overview
-role: User, Data Architect
+role: User, Developer
 level: Beginner
 exl-id: 05080d7f-f2d6-4ffe-b112-05b26a3a8a1d
-source-git-commit: efd09fd71069878a5096bfa3592e6ebbaa9dd4e4
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 9%
@@ -25,8 +25,8 @@ I connettori disponibili sono elencati di seguito:
 
 Puoi anche integrare Campaign con più altri sistemi, ad esempio:
 
-* Soluzioni Adobe Experience Cloud: Adobe Experience Manager, Adobe Target, Adobe Audience Manager, trigger Experience Cloud, ecc. [Ulteriori informazioni](../../integrations/using/about-campaign-integrations.md)
-* Adobe di Identity Management System (IMS) per Single Sign-On (SSO), per proteggere l’accesso all’istanza Campaign e connettersi ad Adobe Campaign con lo stesso Adobe ID utilizzato per le altre soluzioni Adobe Experience Cloud. [Ulteriori informazioni](../../integrations/using/about-adobe-id.md).
+* Soluzioni Adobe Experience Cloud: Adobe Experience Manager, Adobe Target, Adobe Audience Manager, trigger di Experience Cloud, ecc. [Ulteriori informazioni](../../integrations/using/about-campaign-integrations.md)
+* Adobe Identity Management System (IMS) per Single Sign-On (SSO), per proteggere l’accesso all’istanza Campaign e connettersi ad Adobe Campaign con lo stesso Adobe ID utilizzato per le altre soluzioni Adobe Experience Cloud. [Ulteriori informazioni](../../integrations/using/about-adobe-id.md).
 * Directory LDAP, per unificare la gestione degli accessi. [Ulteriori informazioni](../../installation/using/connecting-through-ldap.md).
 
 >[!NOTE]

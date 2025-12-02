@@ -3,9 +3,9 @@ product: campaign
 title: Protocollo e impostazioni del connettore SMS
 description: Ulteriori informazioni sul connettore SMS e su come configurarlo
 feature: SMS
-role: Developer, Data Engineer
+role: Developer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '8457'
 ht-degree: 1%
@@ -376,7 +376,7 @@ Se imposti un valore superiore al numero di MTA in esecuzione, tutti gli MTA ver
 
 Se devi controllare con precisione il numero di connessioni, ad esempio il requisito del provider, è consigliabile impostare sempre questa opzione anche se la distribuzione corrente dispone del numero corretto di MTA in esecuzione. Se in seguito vengono aggiunti altri MTA, il limite di connessione verrà comunque rispettato.
 
-### Impostazioni di connessione {#connection-settings}
+### Impostazioni della connessione {#connection-settings}
 
 #### Nome dell’implementazione SMSC {#smsc-implementation-name}
 
@@ -446,7 +446,7 @@ Quando la casella è selezionata, le impostazioni della sezione **Impostazioni d
 
 Queste impostazioni si applicano al ricevitore in modalità trasmettitore+ricevitore. Funzionano come la parte del trasmettitore, vedi sopra per maggiori dettagli.
 
-### Impostazioni del canale SMPP {#smpp-channel-settings}
+### Impostazioni canale SMPP {#smpp-channel-settings}
 
 #### Consenti traslitterazione caratteri {#allow-character-transliteration}
 
@@ -472,7 +472,7 @@ L&#39;inconveniente può essere rappresentato da prestazioni insufficienti a cau
 
 Adobe Campaign Classic dispone di un meccanismo completamente diverso per i KPI, pertanto questa opzione non è disponibile.
 
-#### Numero sorgente {#source-number}
+#### Numero di origine {#source-number}
 
 Definisce l&#39;indirizzo di origine predefinito per i messaggi. Questa impostazione si applica solo se il numero di origine è stato lasciato vuoto nella consegna.
 
@@ -542,7 +542,7 @@ Quando la connessione TCP viene persa, il connettore attenderà questo numero di
 
 Timeout tra `SUBMIT_SM` e `SUBMIT_SM_RESP` corrispondente. Se `RESP` non viene ricevuto in tempo, il messaggio verrà considerato come non riuscito e verranno applicati i criteri globali per i nuovi tentativi dell&#39;MTA.
 
-#### Associa timeout {#bind-timeout}
+#### Timeout di associazione {#bind-timeout}
 
 Timeout tra il tentativo di connessione TCP e la risposta `BIND_*_RESP`. Quando si verifica un timeout, la connessione viene chiusa dal connettore Adobe Campaign e si attende il tempo necessario per riconnettersi prima di riprovare.
 
@@ -830,7 +830,7 @@ Se sulla stessa istanza di Adobe Campaign sono presenti più account che si conn
 ### Abilita tracce SMPP dettagliate durante i controlli {#enable-verbose}
 
 Durante i controlli è sempre necessario abilitare tracce SMPP dettagliate.
-Anche se non riesci a controllare i registri da solo, [l&#39;Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) potrà aiutarti più facilmente.
+Anche se non riesci a controllare i registri da solo, [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) potrà aiutarti più facilmente.
 
 ### Verifica l’SMS {#test}
 

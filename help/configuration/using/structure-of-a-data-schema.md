@@ -3,9 +3,9 @@ product: campaign
 title: Struttura di uno schema di dati
 description: Struttura di uno schema di dati
 feature: Custom Resources
-role: Data Engineer, Developer
+role: Developer
 exl-id: 86036f2f-ec7c-413e-b1e1-10a71a06cd6d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 10%
@@ -22,4 +22,4 @@ Come standard, i campi vengono visualizzati per primi (Attivo, Attivato, ecc.) e
 
 Le chiavi primarie sono identificate da una chiave rossa e le chiavi esterne da una chiave gialla.
 
-I collegamenti sono distinti graficamente a seconda che appartengano o meno alla tabella. Vengono visualizzati per primi quelli che iniziano dalla tabella, ovvero quelli che hanno la chiave esterna nella tabella (Informazioni e-mail, Cartella, Paese). Collegamenti di raccolta &quot;Inverti&quot; (abbonamento, ordini, ecc.) vengono visualizzati alla fine.
+I collegamenti sono distinti graficamente a seconda che appartengano o meno alla tabella. Vengono visualizzati per primi quelli che iniziano dalla tabella, ovvero quelli che hanno la chiave esterna nella tabella (Informazioni e-mail, Cartella, Paese). Alla fine vengono visualizzati i collegamenti di raccolta &quot;Inverso&quot; (Abbonamento, Ordini, ecc.).

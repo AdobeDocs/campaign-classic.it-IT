@@ -3,11 +3,11 @@ product: campaign
 title: Metodi SOAP in JavaScript
 feature: Configuration, Instance Settings
 description: Metodi SOAP in JavaScript
-role: Data Engineer, Developer
+role: Developer
 exl-id: 62020447-fe59-4363-994d-de4d8032bbd7
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '134'
 ht-degree: 9%
 
 ---
@@ -18,7 +18,7 @@ Si tratta del JavaScript eseguito sul server Adobe Campaign.
 
 ## Metodi statici {#static-methods}
 
-I metodi SOAP statici sono accessibili richiamando un metodo sull’oggetto che rappresenta lo schema. Gli schemi sono proprietà degli oggetti &#39;namespace&#39;. Questi spazi dei nomi sono variabili globali, pertanto, ad esempio, le variabili xtk o nms rappresentano gli spazi dei nomi corrispondenti
+I metodi statici di SOAP sono accessibili richiamando un metodo sull’oggetto che rappresenta lo schema. Gli schemi sono proprietà degli oggetti &#39;namespace&#39;. Questi spazi dei nomi sono variabili globali, pertanto, ad esempio, le variabili xtk o nms rappresentano gli spazi dei nomi corrispondenti
 
 Nell&#39;esempio seguente viene richiamato il metodo PostEvent statico dello schema xtk:workflow:
 
@@ -28,7 +28,7 @@ xtk.workflow.PostEvent("WKF1", "signal", "", $recipient-id='123', false)
 
 ## Metodi non statici {#non-static-methods}
 
-Per utilizzare metodi SOAP non statici, è necessario innanzitutto recuperare un’entità utilizzando i metodi &quot;get&quot; o &quot;create&quot; negli schemi corrispondenti.
+Per utilizzare metodi di SOAP non statici, è necessario innanzitutto recuperare un’entità utilizzando i metodi &quot;get&quot; o &quot;create&quot; negli schemi corrispondenti.
 
 Nell&#39;esempio seguente viene richiamato il metodo ExecuteQuery dello schema &quot;xtk:queryDef&quot;:
 

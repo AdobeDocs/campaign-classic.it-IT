@@ -2,15 +2,15 @@
 product: campaign
 title: Indirizzi di seed
 description: Indirizzi di seed
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Seed Address
 level: Intermediate, Experienced
 exl-id: a16103bf-0498-4f59-ad96-8bfdeea26577
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 6%
+source-wordcount: '326'
+ht-degree: 7%
 
 ---
 
@@ -26,7 +26,7 @@ Per ulteriori informazioni sull&#39;utilizzo degli indirizzi di seed, fare rifer
 
 ## Implementazione {#implementation}
 
-Lo schema **nms:seedMember** e il modulo collegato pronto all&#39;uso devono essere estesi per la configurazione del cliente, in modo che faccia riferimento a tutti i campi necessari. La definizione dello schema contiene commenti che ne descrivono la modalità di configurazione.
+Lo schema **nms:seedMember** e il modulo collegato fornito con il prodotto devono essere estesi per la configurazione del cliente in modo che faccia riferimento a tutti i campi necessari. La definizione dello schema contiene commenti che ne descrivono la modalità di configurazione.
 
 Definizione dello schema esteso della tabella dei destinatari:
 

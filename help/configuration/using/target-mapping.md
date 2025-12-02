@@ -3,12 +3,12 @@ product: campaign
 title: Mappatura del target
 description: Scopri come creare una mappatura di destinazione
 feature: Application Settings
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 exl-id: 38333669-5598-4811-a121-b677c1413f56
-source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '497'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ A questo scopo, esegui i seguenti passaggi:
 
 1. Crea un nuovo schema di dati che integra i campi della tabella personalizzata che desideri utilizzare.
 
-   Per ulteriori informazioni, consultare [Riferimento schema (xtk:srcSchema)](../../configuration/using/about-schema-reference.md).
+   Per ulteriori informazioni, fare riferimento a [Riferimento schema (xtk:srcSchema)](../../configuration/using/about-schema-reference.md).
 
    Nel nostro esempio, creeremo uno schema cliente, una tabella molto semplice contenente i seguenti campi: ID, nome, cognome, indirizzo e-mail, numero di telefono cellulare. L’obiettivo è quello di poter inviare avvisi e-mail o SMS alle persone memorizzate in questa tabella.
 

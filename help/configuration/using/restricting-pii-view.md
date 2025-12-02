@@ -3,12 +3,12 @@ product: campaign
 title: Limitare la visualizzazione di dati personali
 description: Scopri come limitare la visualizzazione delle PI
 feature: PI
-role: Data Engineer, Developer
+role: Developer
 exl-id: 0f32d62d-a10a-4feb-99fe-4679b98957d4
-source-git-commit: e198defd60f4b12681025b04b12a1498df015047
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '439'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -57,7 +57,7 @@ Di seguito sono riportate le conseguenze dell’utilizzo di questo attributo in 
 >
 >L&#39;utilizzo dell&#39;attributo **accessibleIf** nei parametri critici (ad esempio quelli nelle chiavi composite) può causare errori per gli utenti che non sono autorizzati a leggere i dati a causa di dati nascosti. Questo può causare errori di query o comportamenti imprevisti. Assicurati che i parametri essenziali siano accessibili per evitare interruzioni.
 
-## Raccomandazioni {#recommendations}
+## Consigli {#recommendations}
 
 In ogni consegna, gli indirizzi e-mail vengono copiati nelle tabelle **[!UICONTROL broadLog]** e **[!UICONTROL forecastLog]**: di conseguenza, anche questi campi devono essere protetti.
 

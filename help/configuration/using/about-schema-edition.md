@@ -3,11 +3,11 @@ product: campaign
 title: Informazioni sulla modifica degli schemi
 description: Introduzione alla modifica degli schemi
 feature: Schema Extension
-role: Data Engineer, Developer
+role: Developer
 exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1005'
 ht-degree: 6%
 
 ---
@@ -24,7 +24,7 @@ Per informazioni sulle tabelle integrate di Campaign e sulla loro interazione, c
 
 ## Estensione o creazione di schemi {#extending-or-creating-schemas}
 
-Per aggiungere un campo, un indice o un altro elemento a uno degli schemi di dati di base in Campaign, ad esempio la tabella dei destinatari (nms:recipient), devi estendere tale schema. Per ulteriori informazioni, consulta la sezione [Estensione di uno schema](../../configuration/using/extending-a-schema.md).
+Per aggiungere un campo, un indice o un altro elemento a uno degli schemi di dati di base in Campaign, ad esempio la tabella dei destinatari (nms:recipient), è necessario estendere tale schema. Per ulteriori informazioni, consulta la sezione [Estensione di uno schema](../../configuration/using/extending-a-schema.md).
 
 Per aggiungere un tipo di dati completamente nuovo che non esiste come standard in Adobe Campaign (ad esempio, una tabella di contratti) puoi creare direttamente uno schema personalizzato. Per ulteriori informazioni, consulta la sezione [Schemi di dati](../../configuration/using/data-schemas.md).
 

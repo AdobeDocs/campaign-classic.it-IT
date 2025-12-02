@@ -3,11 +3,11 @@ product: campaign
 title: Chiamate per servizi web
 description: Chiamate per servizi web
 feature: API
-role: Data Engineer, Developer
+role: Developer
 exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '918'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ Esempio del metodo &quot;ExecuteQuery&quot; di tipo &quot;const&quot; dallo sche
 </method>
 ```
 
-Il parametro di input di questo metodo è un documento XML in formato &quot;xtk:queryDef&quot;.
+Il parametro di input di questo metodo è un documento XML nel formato dello schema &quot;xtk:queryDef&quot;.
 
 ## Descrizione servizio Web: WSDL {#web-service-description--wsdl}
 
@@ -79,7 +79,7 @@ https://`<server>`/nl/jsp/schemawsdl.jsp?schema=`<schema>`
 Con:
 
 * **`<server>`**: server applicazioni Adobe Campaign (nlserver web)
-* **`<schema>`**: chiave di identificazione dello schema (namespace:nome_schema)
+* **`<schema>`**: chiave di identificazione dello schema (spazio dei nomi:schema_name)
 
 ### Esempio sul metodo &#39;ExecuteQuery&#39; dello schema &#39;xtk:queryDef&#39; {#example-on-the--executequery--method-of-schema--xtk-querydef-}
 
@@ -154,7 +154,7 @@ Le definizioni dei tipi si basano su schemi XML. Nel nostro esempio, il metodo &
 
 #### Binding {#binding}
 
-La parte `<binding>` specifica il protocollo di comunicazione SOAP ( `<soap:binding>` ), il trasporto dati in HTTP (valore dell&#39;attributo &quot;transport&quot;) e il formato dati per l&#39;operazione &quot;ExecuteQuery&quot;. Il corpo della busta SOAP contiene i segmenti del messaggio direttamente senza trasformazione.
+La parte `<binding>` specifica il protocollo di comunicazione SOAP ( `<soap:binding>` ), il trasporto dei dati in HTTP (valore dell&#39;attributo &quot;transport&quot;) e il formato dei dati per l&#39;operazione &quot;ExecuteQuery&quot;. Il corpo della busta SOAP contiene i segmenti del messaggio direttamente senza trasformazione.
 
 ```
 <binding name="queryDefMethodsSoap" type="tns:queryDefMethodsSoap">
@@ -226,7 +226,7 @@ Se vi si accede tramite la console, si ottiene:
 * trasmesse nella risposta di accesso (nell’intestazione HTTP)
 * utilizzato in ogni query (nell’intestazione HTTP)
 
-Da un POST e GET HTTP:
+Da un HTTP POST e GET:
 
 * il server completa i collegamenti con il token
 * il server aggiunge un campo nascosto ai moduli

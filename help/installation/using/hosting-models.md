@@ -3,13 +3,13 @@ product: campaign
 title: Modelli di hosting
 description: Scopri i modelli di hosting di Campaign
 feature: Installation, Architecture, Deployment
-role: Architect
+role: Developer
 level: Beginner
 exl-id: a06b1365-d487-4df1-8f4a-7268b871a427
-source-git-commit: a38d53f4b37aadbc53446b5e399af2eae56c12af
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '615'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -21,11 +21,11 @@ Adobe Campaign offre una scelta di tre modelli di hosting, che offrono flessibil
 
 >[!NOTE]
 >
->Ad Adobe, negli ambienti in hosting, i passaggi principali di installazione e configurazione possono essere eseguiti solo per Adobe, come la configurazione del server e la personalizzazione dei file di configurazione delle istanze. Per ulteriori informazioni sulle principali differenze tra le modalità di distribuzione, consultare [questa pagina](../../installation/using/capability-matrix.md).
+>Per gli ambienti in hosting su Adobe, i passaggi principali di installazione e configurazione possono essere eseguiti solo da Adobe, ad esempio la configurazione del server e la personalizzazione dei file di configurazione delle istanze. Per ulteriori informazioni sulle principali differenze tra le modalità di distribuzione, consultare [questa pagina](../../installation/using/capability-matrix.md).
 
 ## Managed Services / In hosting
 
-Adobe Campaign può essere implementato in modo as a Managed Service: tutti i componenti di Adobe Campaign, inclusa l’interfaccia utente, il motore di gestione dell’esecuzione e il database Campaign del cliente, sono completamente ospitati in Adobe, tra cui l’esecuzione e-mail, le pagine mirror, il server di tracciamento e i componenti web rivolti verso l’esterno quali la pagina di annullamento dell’abbonamento/il centro preferenze e le pagine di destinazione.
+Adobe Campaign può essere implementato in as a Managed Service: tutti i componenti di Adobe Campaign, inclusa l’interfaccia utente, il motore di gestione dell’esecuzione e il database Campaign del cliente, sono completamente ospitati in Adobe, inclusi l’esecuzione e-mail, le pagine mirror, il server di tracciamento e i componenti web rivolti all’esterno quali la pagina di annullamento dell’abbonamento, il centro preferenze e le pagine di destinazione.
 
 ![](assets/deployment_hosted.png)
 
@@ -51,7 +51,7 @@ In qualità di cliente on-premise, prima di iniziare a distribuire Campaign Clas
 * Verificare che i livelli di accesso al database richiesti siano installati nel server e accessibili dall&#39;account Adobe Campaign. [Ulteriori informazioni](../../installation/using/application-server.md).
 * Configurare le reti in base alle esigenze di comunicazione di alcuni processi o di accesso alla rete LAN e a Internet. Ciò significa che alcune porte TCP devono essere aperte per questi processi. [Ulteriori informazioni](../../installation/using/network-configuration.md) sui requisiti di configurazione della rete.
 * Consulta la [lista di controllo per la sicurezza e la privacy di Campaign](https://helpx.adobe.com/it/campaign/kb/acc-security.html).
-* Consultare le linee guida generali per la stima dei requisiti hardware per la distribuzione locale [&#x200B; in questo articolo](https://helpx.adobe.com/it/campaign/kb/hardware-sizing-guide.html).
+* Consultare le linee guida generali per la stima dei requisiti hardware per la distribuzione locale [ in questo articolo](https://helpx.adobe.com/it/campaign/kb/hardware-sizing-guide.html).
 
 ## Ibrido
 
@@ -59,7 +59,7 @@ Quando viene distribuito come modello ibrido, il software della soluzione Adobe 
 
 ![](assets/deployment_hybrid.png)
 
-In qualità di cliente ibrido, la maggior parte dei passaggi di installazione e configurazione viene eseguita per Adobe. Per personalizzare l’implementazione, puoi accedere alle sezioni seguenti:
+In qualità di cliente ibrido, la maggior parte dei passaggi di installazione e configurazione viene eseguita da Adobe. Per personalizzare l’implementazione, puoi accedere alle sezioni seguenti:
 
 * Configurare i messaggi transazionali: fai riferimento a [questa sezione](../../message-center/using/transactional-messaging-architecture.md).
 * Configura il tracciamento e gli URL delle pagine mirror per marchio. Per i messaggi transazionali, fai riferimento a [questa sezione](../../message-center/using/additional-configurations.md#configuring-multibranding).

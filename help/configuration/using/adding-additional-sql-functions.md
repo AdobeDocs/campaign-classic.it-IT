@@ -3,9 +3,9 @@ product: campaign
 title: Aggiunta di ulteriori funzioni SQL
 description: Scopri come definire una funzione SQL aggiuntiva
 feature: Configuration, Instance Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 0%
@@ -122,7 +122,7 @@ Il campo **@name** fa riferimento al nome della funzione e &quot;args&quot; è l
 * Infine, l&#39;elemento **providerPart** fornisce l&#39;implementazione della funzione.
 
    * L&#39;attributo **provider** è obbligatorio e specifica i sistemi di database per i quali viene fornita l&#39;implementazione. Come mostrato nell’esempio, quando le sintassi delle espressioni o le funzioni sottostanti differiscono, è possibile fornire implementazioni alternative in base al database.
-   * L&#39;attributo **@body** contiene l&#39;implementazione della funzione. Nota: questa implementazione deve essere un&#39;espressione nel linguaggio del database (non un blocco di codice). A seconda dei database, le espressioni possono essere sottoquery (&quot;(seleziona una colonna dalla tabella dove...)&quot;) che restituiscono un solo valore. Questo è il caso, ad esempio, dell’Oracle (la query deve essere scritta tra parentesi).
+   * L&#39;attributo **@body** contiene l&#39;implementazione della funzione. Nota: questa implementazione deve essere un&#39;espressione nel linguaggio del database (non un blocco di codice). A seconda dei database, le espressioni possono essere sottoquery (&quot;(seleziona una colonna dalla tabella dove...)&quot;) che restituiscono un solo valore. Questo è il caso, ad esempio, di Oracle (la query deve essere scritta tra parentesi).
 
   >[!NOTE]
   >

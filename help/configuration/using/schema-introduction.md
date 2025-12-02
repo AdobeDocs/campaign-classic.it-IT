@@ -3,11 +3,11 @@ product: campaign
 title: Riferimento schema
 description: Elenco di riferimenti dello schema
 feature: Custom Resources
-role: Data Engineer, Developer
+role: Developer
 exl-id: 5745fc60-9df3-4ad0-bbeb-f6ae8c86a5aa
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '90'
+source-wordcount: '89'
 ht-degree: 21%
 
 ---

@@ -3,10 +3,10 @@ product: campaign
 title: Informazioni sulla tabella dei destinatari personalizzata
 description: Informazioni sulla tabella dei destinatari personalizzata
 feature: Configuration, Custom Resources
-role: User, Data Engineer, Developer
+role: User, Developer
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 exl-id: d8cea496-b3f3-420a-bf6e-b7cbb321b30d
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 2%
@@ -32,7 +32,7 @@ Questa funzionalità consente ad Adobe Campaign di elaborare i dati da un databa
 
 Questa sezione descrive i punti chiave che ti consentono di mappare le tabelle esistenti in Adobe Campaign e la configurazione da applicare per eseguire consegne basate su qualsiasi tabella. Infine, descrive come fornire agli utenti interfacce di query pratiche come quelle disponibili con la tabella dei destinatari incorporata. Per comprendere il materiale presentato in questa sezione, è necessaria una buona conoscenza dei principi di progettazione dello schermo e dello schema.
 
-## Recommendations e limitazioni {#recommendations-and-limitations}
+## Raccomandazioni e limitazioni {#recommendations-and-limitations}
 
 L’utilizzo di una tabella dei destinatari personalizzata presenta le seguenti limitazioni:
 

@@ -3,9 +3,9 @@ product: campaign
 title: Introduzione al modello dati di Campaign Classic
 description: Scopri come estendere il modello dati di Campaign, modificare gli schemi, utilizzare le API e altro ancora
 feature: Data Model, Configuration
-role: Data Engineer, Developer
+role: Developer
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 5%
@@ -14,7 +14,7 @@ ht-degree: 5%
 
 # Introduzione al modello dati di Campaign{#about-data-model}
 
-Il modello dati concettuale del database di Adobe Campaign è costituito da una serie di tabelle integrate e dalla loro interazione. Le tabelle e i concetti principali sono elencati in questa pagina.
+Il modello dati concettuale del database di Adobe Campaign è costituito da una serie di tabelle incorporate e dalla loro interazione. Le tabelle e i concetti principali sono elencati in questa pagina.
 
 ## Panoramica {#data-model-overview}
 
@@ -108,7 +108,7 @@ L’utilizzo di una tabella dei destinatari personalizzata offre i seguenti vant
 
 Ulteriori informazioni sul modello dati di Campaign sono disponibili nelle sezioni seguenti:
 
-* **Descrizione delle tabelle principali**. Per ulteriori informazioni sulla descrizione predefinita del modello dati di Campaign Classic, fare riferimento a [questa sezione](../../configuration/using/data-model-description.md).
+* **Descrizione delle tabelle principali**. Per ulteriori informazioni sulla descrizione predefinita del modello dati di Campaign Classic, vedere [questa sezione](../../configuration/using/data-model-description.md).
 
 * **Descrizione completa di ogni tabella**. Per accedere alla descrizione completa di ogni tabella, passare a **[!UICONTROL Admin > Configuration > Data schemas]**, selezionare una risorsa dall&#39;elenco e fare clic sulla scheda **[!UICONTROL Documentation]**.
 

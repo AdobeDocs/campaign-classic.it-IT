@@ -3,10 +3,10 @@ product: campaign
 title: Creare i filtri
 description: Scopri come creare filtri per una tabella personalizzata
 feature: Profiles, Custom Resources
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 exl-id: 6fad3dac-9af0-4796-adcf-d1de4b255aca
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 3%

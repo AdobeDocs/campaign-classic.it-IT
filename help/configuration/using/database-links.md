@@ -3,12 +3,12 @@ product: campaign
 title: Mappatura del database
 description: Mappatura del database
 feature: Configuration, Instance Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: e05dcd81-bbca-4767-8da3-ea064f7f6c8e
-source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 1%
+source-wordcount: '924'
+ht-degree: 2%
 
 ---
 
@@ -49,7 +49,7 @@ Per ulteriori informazioni sulle tabelle FDA, vedere [Accesso a un database este
 
 I collegamenti rispettano le seguenti regole:
 
-* La definizione di un collegamento viene immessa in un **`<element>`** di tipo **link** con i seguenti attributi:
+* La definizione di un collegamento viene immessa in un **di tipo** link **`<element>`** con i seguenti attributi:
 
    * **nome**: nome del collegamento dalla tabella di origine
    * **target**: nome dello schema di destinazione
@@ -80,7 +80,7 @@ I valori possibili sono:
 
 ## Esempio: collegamento inverso {#example-1}
 
-Nell’esempio seguente, dichiariamo una relazione 1-N alla tabella dello schema &quot;cus:company&quot;:
+Nell&#39;esempio seguente viene dichiarata una relazione 1-N alla tabella dello schema &quot;cus:company&quot;:
 
 ```sql
 <srcSchema name="recipient" namespace="cus">
@@ -112,7 +112,7 @@ La definizione del collegamento è completata dai campi che compongono il join, 
 
 La chiave esterna viene aggiunta automaticamente in un elemento che utilizza le stesse caratteristiche del campo associato nella tabella di destinazione, con la seguente convenzione di denominazione: nome dello schema di destinazione seguito dal nome del campo associato (&quot;company-id&quot; nel nostro esempio).
 
-Schema esteso del target (&quot;cus:company&quot;):
+Schema esteso della destinazione (&quot;cus:company&quot;):
 
 ```sql
 <schema mappingType="sql" name="company" namespace="cus" xtkschema="xtk:schema">  
@@ -143,7 +143,7 @@ Schema esteso del target (&quot;cus:company&quot;):
 
 ## Esempio: collegamento semplice {#example-2}
 
-In questo esempio viene dichiarato un collegamento alla tabella dello schema &quot;nms:address&quot;. Il join è un outer join e viene compilato esplicitamente con l&#39;indirizzo e-mail del destinatario e il campo &quot;@address&quot; della tabella collegata (&quot;nms:address&quot;).
+In questo esempio viene dichiarato un collegamento alla tabella dello schema &quot;nms:address&quot;. Il join è un outer join e viene compilato in modo esplicito con l&#39;indirizzo e-mail del destinatario e il campo &quot;@address&quot; della tabella collegata (&quot;nms:address&quot;).
 
 ```sql
 <srcSchema name="recipient" namespace="cus">
@@ -158,7 +158,7 @@ In questo esempio viene dichiarato un collegamento alla tabella dello schema &qu
 
 ## Esempio: cardinalità univoca {#example-3}
 
-In questo esempio, creiamo una relazione 1-1 alla tabella dello schema &quot;cus:extension&quot;:
+In questo esempio viene creata una relazione 1-1 alla tabella dello schema &quot;cus:extension&quot;:
 
 ```sql
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
@@ -176,7 +176,7 @@ Il valore predefinito restituisce l&#39;identificatore del primo file del tipo d
 
 ## Esempio: creare una chiave su un collegamento {#example-5}
 
-In questo esempio, creiamo una chiave su un collegamento (schema &quot;company&quot; to &quot;cus:company&quot;) con l&#39;attributo **xlink** e un campo della tabella (&quot;email&quot;):
+In questo esempio, creiamo una chiave su un collegamento (&quot;azienda&quot; a &quot;cus:company&quot; schema) con l&#39;attributo **xlink** e un campo della tabella (&quot;e-mail&quot;):
 
 ```sql
 <srcSchema name="recipient" namespace="cus">
@@ -230,4 +230,4 @@ Per ulteriori informazioni, consulta i seguenti collegamenti:
 * [Struttura dello schema](schema-structure.md)
 * [Mappatura del database](database-mapping.md)
 * [Gestione delle chiavi](database-keys.md)
-* [Modello dati della campagna](about-data-model.md)
+* [Modello dati di Campaign](about-data-model.md)

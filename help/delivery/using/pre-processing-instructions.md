@@ -4,11 +4,11 @@ title: Istruzioni di pre-elaborazione per gli URL tracciati
 description: Scopri di più sulle istruzioni di pre-elaborazione da utilizzare per creare uno script per l’URL di un’e-mail e tenerne traccia
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Monitoring
-role: User, Data Engineer, Developer
+role: User, Developer
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '651'
 ht-degree: 1%
 
 ---
@@ -101,7 +101,7 @@ Per la personalizzazione delle e-mail, l’oggetto di consegna è accessibile in
 
 **Attenzione**
 
-Se utilizzi quanto segue per le consegne inviate tramite mid-sourcing, il campo personalizzato **@myCustomField** deve essere aggiunto allo schema nms:delivery sia sulle piattaforme di marketing che su quelle di mid-sourcing:
+Se utilizzi la seguente istruzione per le consegne inviate tramite mid-sourcing, il campo personalizzato **@myCustomField** deve essere aggiunto allo schema nms:delivery sia sulle piattaforme di marketing che su quelle di mid-sourcing:
 
 ```
 <%@ value object="delivery" xpath="@myCustomField" %>

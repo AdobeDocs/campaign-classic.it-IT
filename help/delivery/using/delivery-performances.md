@@ -4,9 +4,9 @@ title: Best practice per le prestazioni di consegna
 description: Ulteriori informazioni sulle prestazioni di consegna e sulle best practice
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Deliverability
-role: User, Data Engineer
+role: User, Developer
 exl-id: cc793d7b-0a26-4a75-97ed-d79c87d9b3b8
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 5%

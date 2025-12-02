@@ -3,10 +3,10 @@ product: campaign
 title: Modificare i moduli
 description: Modificare i moduli
 feature: Configuration
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '1707'
 ht-degree: 2%
@@ -240,7 +240,7 @@ Per creare un modulo, eseguire la procedura seguente:
 
    | Editor campo | Attributo modulo |
    | --- | --- |
-   | Pulsante di opzione | `type="radiobutton"` |
+   | Pulsante di scelta | `type="radiobutton"` |
    | Casella di controllo | `type="checkbox"` |
    | Modifica struttura | `type="tree"` |
 
