@@ -1,132 +1,36 @@
 ---
 product: campaign
-title: Dashboard delle consegne
-description: Scopri come utilizzare il dashboard di consegna per monitorare le consegne
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+title: Monitorare le consegne nell’interfaccia utente di Campaign
+description: Scopri come accedere all’elenco delle consegne e utilizzare il dashboard di consegna per monitorare le consegne
 feature: Monitoring
 role: User, Developer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: eac670cd4e7371ca386cee5f1735dc201bf5410a
 workflow-type: tm+mt
-source-wordcount: '1193'
-ht-degree: 5%
+source-wordcount: '533'
+ht-degree: 0%
 
 ---
 
-# Dashboard delle consegne {#delivery-dashboard}
-
-
-Il **dashboard di consegna** è fondamentale per monitorare le consegne e gli eventuali problemi rilevati durante l&#39;invio dei messaggi.
-
-Ti consente di recuperare informazioni su una consegna e modificarle, se necessario. Tieni presente che il contenuto delle schede non può più essere modificato una volta inviata la consegna.
-
-Di seguito sono riportate le informazioni che è possibile monitorare utilizzando le diverse schede disponibili nel dashboard:
-
-* [Riepilogo della consegna](#delivery-summary)
-* [Rapporti sulle consegne](#delivery-reports)
-* [Registri di consegna, pagine mirror, esclusioni](#delivery-logs-and-history)
-* [Registri e cronologia di tracciamento delle consegne](#tracking-logs)
-* [Rendering consegna](#delivery-rendering)
-* [Audit della consegna](#delivery-audit-)
-
-![](assets/s_ncs_user_del_details.png)
-
-**Argomenti correlati:**
-
-* [Informazioni sugli errori di consegna](understanding-delivery-failures.md)
-* [Informazioni sulla gestione della quarantena](understanding-quarantine-management.md)
-* [Best practice per la consegna](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=it){target="_blank"}
-* [Gestione del recapito messaggi](about-deliverability.md)
-
-## Riepilogo della consegna {#delivery-summary}
-
-La scheda **[!UICONTROL Summary]** contiene le caratteristiche della consegna: stato della consegna, canale utilizzato, informazioni sul mittente, oggetto e informazioni sull&#39;esecuzione.
-
-## Rapporti sulle consegne {#delivery-reports}
-
-Il collegamento **[!UICONTROL Reports]**, accessibile dalla scheda **[!UICONTROL Summary]**, consente di esaminare una serie di rapporti relativi all&#39;azione di consegna: report di consegna generale, report dettagliato, report di consegna, distribuzione dei messaggi non riusciti, tasso di apertura, clic e transazioni, ecc.
-
-Il contenuto di questa scheda può essere configurato in base alle tue esigenze. Per ulteriori informazioni sui report di consegna, consulta [questa sezione](../../reporting/using/delivery-reports.md).
-
-![](assets/delivery-report.png)
-
-## Registri di consegna, cronologia ed esclusioni {#delivery-logs-and-history}
-
-La scheda **[!UICONTROL Delivery]** fornisce una cronologia delle occorrenze in questa consegna. Contiene i registri di consegna, ovvero l’elenco dei messaggi inviati e il loro stato e i messaggi associati.
-
-Per una consegna, puoi visualizzare (ad esempio) solo i destinatari con una consegna non riuscita o un indirizzo in quarantena. A tale scopo, fare clic sul pulsante **[!UICONTROL Filters]** e selezionare **[!UICONTROL By state]**. Quindi seleziona lo stato nell’elenco a discesa. Diversi stati sono elencati in [questa pagina](delivery-statuses.md).
+# Monitorare le consegne nell’interfaccia utente di Campaign {#delivery-dashboard}
 
 >[!NOTE]
 >
->L’elenco con i registri di consegna può essere personalizzato, come qualsiasi altro elenco in Campaign Classic. Ad esempio, puoi aggiungere una colonna per individuare l’indirizzo IP che ha inviato ogni e-mail di una consegna. Per ulteriori informazioni, consulta il caso d&#39;uso descritto in [questa sezione](#use-case).
+>La guida completa sull&#39;accesso all&#39;elenco di consegna e sull&#39;utilizzo del dashboard di consegna è documentata nella [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard). Questo contenuto si applica sia agli utenti di Campaign Classic v7 che a quelli di Campaign v8.
+>
+>In questa pagina sono documentate **personalizzazioni specifiche di Campaign Classic v7** per le distribuzioni ibride e on-premise.
 
-![](assets/s_ncs_user_delivery_delivery_tab.png)
+Il monitoraggio delle consegne è essenziale per garantire l’efficienza delle campagne e raggiungere i clienti.
 
-Il collegamento **[!UICONTROL Display the mirror page for this message...]** ti consente di visualizzare in una nuova finestra la pagina speculare per il contenuto della consegna selezionata dall&#39;elenco.
+Per informazioni complete sull&#39;accesso all&#39;elenco di consegna, l&#39;utilizzo delle schede del dashboard di consegna e il monitoraggio delle consegne, consulta [Monitorare le consegne di Campaign v8 nella documentazione dell&#39;interfaccia utente di Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
 
-La pagina speculare è disponibile solo per le consegne per le quali è stato definito il contenuto di HTML. Per ulteriori informazioni, fai riferimento alla [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html?lang=it){target="_blank"}.
+## Personalizzare i registri di consegna {#use-case}
 
-![](assets/s_ncs_user_wizard_miror_page_link.png)
-
-## Registri e cronologia di tracciamento delle consegne {#tracking-logs}
-
-La scheda **[!UICONTROL Tracking]** elenca la cronologia di tracciamento per questa consegna. In questa scheda vengono visualizzati i dati di tracciamento per i messaggi inviati, ovvero tutti gli URL soggetti a tracciamento da parte di Adobe Campaign. I dati di tracciamento vengono aggiornati ogni ora.
+Per **distribuzioni ibride/on-premise di Campaign Classic v7**, puoi personalizzare i registri di consegna estendendo gli schemi. Questa sezione mostra come aggiungere gli indirizzi IP dei mittenti ai registri di consegna.
 
 >[!NOTE]
 >
->Se il tracciamento non è abilitato per una consegna, questa scheda non viene visualizzata.
-
-La configurazione del tracciamento viene eseguita nella fase appropriata nell’assistente alla consegna. Consulta [Come configurare i collegamenti tracciati](how-to-configure-tracked-links.md).
-
-I dati di **[!UICONTROL Tracking]** vengono interpretati nei report di consegna. Consulta [questa sezione](../../reporting/using/delivery-reports.md).
-
-![](assets/s_ncs_user_delivery_tracking_tab.png)
-
-## Rendering della casella in entrata {#delivery-rendering}
-
-La scheda **[!UICONTROL Inbox rendering]** consente di visualizzare in anteprima il messaggio nei diversi contesti in cui può essere ricevuto e di verificare la compatibilità nei desktop e nelle applicazioni principali.
-
-In questo modo, puoi assicurarti che il messaggio venga visualizzato ai destinatari in modo ottimale su diversi client web, servizi di posta sul web e dispositivi.
-
-Per ulteriori informazioni sul rendering della casella in entrata, consulta [questa pagina](inbox-rendering.md)
-
-![](assets/s_tn_inbox_rendering_tokens.png)
-
-## Audit della consegna {#delivery-audit-}
-
-La scheda **[!UICONTROL Audit]** contiene il registro di consegna e tutti i messaggi relativi alle bozze.
-
-Il pulsante **[!UICONTROL Refresh]** consente di aggiornare i dati. Utilizzare il pulsante **[!UICONTROL Filters]** per definire un filtro per i dati.
-
-Icone speciali consentono di identificare errori o avvisi. Consulta questa sezione nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=it){target="_blank"}.
-
-La scheda secondaria **[!UICONTROL Proofs]** ti consente di visualizzare l&#39;elenco delle bozze che sono state inviate.
-
-![](assets/s_ncs_user_delivery_log_tab.png)
-
-È possibile modificare le informazioni visualizzate in questa finestra (e quelle delle schede **[!UICONTROL Delivery]** e **[!UICONTROL Tracking]**) selezionando le colonne da visualizzare. A tale scopo, fare clic sull&#39;icona **[!UICONTROL Configure list]** situata nell&#39;angolo inferiore destro. Per ulteriori informazioni sulla configurazione della visualizzazione degli elenchi, consulta [questa sezione](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
-
-## Sincronizzazione del dashboard di consegna {#delivery-dashboard-synchronization}
-
-Dal dashboard di consegna, controlla i messaggi elaborati e i registri di consegna per assicurarti che la consegna sia stata inviata correttamente.
-
-Alcuni indicatori o stato possono essere errati o non aggiornati, e questo problema può essere risolto con le seguenti soluzioni:
-
-* Se lo stato della consegna non è corretto, verificare che tutte le approvazioni necessarie siano state completate per la consegna o che i flussi di lavoro **[!UICONTROL operationMgt]** e **[!UICONTROL deliveryMgt]** siano in esecuzione senza errori. Questo può essere dovuto anche alla consegna che utilizza un’affinità non configurata sull’istanza di invio.
-
-* Se gli indicatori di consegna sono ancora pari a zero e ti trovi in una configurazione di mid-sourcing, controlla il flusso di lavoro tecnico **[!UICONTROL Mid-sourcing (delivery counters)]**. Avviarla se lo stato non è **[!UICONTROL Started]**. È quindi possibile tentare di ricalcolare gli indicatori facendo clic con il pulsante destro del mouse sulla consegna pertinente in Adobe Campaign Explorer e selezionando **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]**. Per ulteriori informazioni sugli indicatori di tracciamento, consulta questa [sezione](../../reporting/using/delivery-reports.md#tracking-indicators).
-
-* Se il contatore di consegna non corrisponde alla consegna, prova a ricalcolare gli indicatori facendo clic con il pulsante destro del mouse sulla consegna pertinente in Adobe Campaign Explorer e selezionando **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** per la risincronizzazione. Per ulteriori informazioni sugli indicatori di tracciamento, consulta questa [sezione](../../reporting/using/delivery-reports.md#tracking-indicators).
-
-* Se il contatore di consegna non è aggiornato per le distribuzioni mid-sourcing, verifica che il flusso di lavoro tecnico **[!UICONTROL Mid-Sourcing (Delivery counters)]** sia in esecuzione. Per ulteriori informazioni, consulta questa [pagina](../../installation/using/mid-sourcing-deployment.md).
-
-Puoi anche tenere traccia delle consegne con diversi rapporti tramite il dashboard di consegna. Per ulteriori informazioni, consulta questa [sezione](../../reporting/using/delivery-reports.md).
-
-## Caso di utilizzo: aggiunta degli indirizzi IP dei mittenti ai registri {#use-case}
-
-In questa sezione scoprirai come aggiungere ai registri di consegna informazioni relative all’indirizzo IP che ha inviato ogni e-mail di una consegna.
-
->[!NOTE]
+>Questa personalizzazione richiede le funzionalità di estensione dello schema disponibili nelle distribuzioni on-premise. Gli utenti di Campaign v8 Managed Cloud Services devono contattare l’Assistenza clienti di Adobe per i campi del registro di consegna personalizzati.
 >
 >Questa modifica è diversa se utilizzi una singola istanza o un’istanza mid-sourcing. Prima di apportare la modifica, assicurati di essere connesso all’istanza di invio dell’e-mail.
 
@@ -208,3 +112,12 @@ A questo scopo, accedi ai registri di consegna e aggiungi la colonna &quot;Ident
 Di seguito sono riportati gli elementi che dovrebbero essere visualizzati nella scheda **[!UICONTROL Delivery]** dopo le modifiche:
 
 ![](assets/logs-with-ip.png)
+
+## Argomenti correlati
+
+* [Monitorare le consegne nell&#39;interfaccia utente di Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (documentazione di Campaign v8)
+* [Stati di consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (documentazione di Campaign v8)
+* [Informazioni sugli errori di consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (documentazione di Campaign v8: guida completa sia per v7 che per v8)
+* [Gestione della quarantena](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (documentazione di Campaign v8: guida completa per v7 e v8)
+* [Configurazione mail non recapitate](understanding-delivery-failures.md) (v7 ibrido/on-premise)
+* [Configurazione quarantena](understanding-quarantine-management.md) (v7 ibrido/on-premise)

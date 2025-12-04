@@ -2,95 +2,70 @@
 product: campaign
 title: Risoluzione dei problemi di invio della consegna
 description: Ulteriori informazioni sulle prestazioni di consegna e su come risolvere i problemi relativi al monitoraggio della consegna
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Monitoring, Deliverability, Troubleshooting
 role: User
 exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: eac670cd4e7371ca386cee5f1735dc201bf5410a
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '330'
 ht-degree: 1%
 
 ---
 
 # Risoluzione dei problemi di invio della consegna {#delivery-troubleshooting}
 
-In questa sezione sono elencati i problemi comuni che possono verificarsi durante l’invio delle consegne e come risolverli.
+>[!NOTE]
+>
+>Una guida completa sulla risoluzione dei problemi di consegna è documentata nella documentazione di Campaign v8, applicabile sia agli utenti di Campaign Classic v7 che di Campaign v8:
+>
+>* Soluzioni e errori di consegna comuni: [Informazioni sugli errori di consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}
+>* Diagnosi di consegna lenta: [Monitorare le consegne nell&#39;interfaccia utente di Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}
+>* Best practice di consegna: [Best practice di consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}
+>
+>Questa pagina documenta la **risoluzione dei problemi specifica di Campaign Classic v7** per le distribuzioni ibride e on-premise.
 
-Inoltre, assicurati di seguire le best practice e l&#39;elenco di controllo descritti in [questa pagina](delivery-performances.md) per garantire il buon funzionamento delle consegne.
+## Risoluzione dei problemi {#v7-specific}
 
-**Argomenti correlati:**
+Per **distribuzioni ibride/on-premise di Campaign Classic v7**, i seguenti passaggi per la risoluzione dei problemi sono specifici per l&#39;infrastruttura gestita:
 
-* [Stati di consegna](delivery-statuses.md)
-* [Dashboard delle consegne](delivery-dashboard.md)
-* [Informazioni sugli errori di consegna](understanding-delivery-failures.md)
+### Configurazione regole MX
 
-## Consegne lente {#slow-deliveries}
+In caso di problemi di limitazione con ISP specifici, potrebbe essere necessario rivedere e modificare la configurazione delle regole MX. Per ulteriori informazioni sulle regole MX e sulle quote, consultare [questa sezione](../../installation/using/email-deliverability.md#about-mx-rules).
 
-Dopo aver fatto clic sul pulsante **[!UICONTROL Send]**, la consegna sembra richiedere più tempo del solito. Ciò può essere dovuto a diversi elementi:
+### Manutenzione del database per le prestazioni di consegna
 
-* Alcuni provider di posta elettronica potrebbero aver aggiunto i tuoi indirizzi IP a un inserisco nell&#39;elenco Bloccati di. In questo caso, controlla i registri di trasmissione e consulta [questa sezione](about-deliverability.md).
+Se riscontri il seguente errore nelle distribuzioni di mid-sourcing:
 
-* La consegna potrebbe essere troppo grande per essere elaborata rapidamente. Ciò può verificarsi con una personalizzazione JavaScript elevata o se la consegna pesa più di 60 kbyte. Consulta le [Best practice per la consegna](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=it){target="_blank"} di Adobe Campaign v8.  per informazioni sulle linee guida per i contenuti.
+```
+Error during the call of method 'AppendDeliveryPart' on the mid sourcing server: 'Communication error with the server: please check this one is correctly configured. Code HTTP 408 'Service temporarily unavailable'.
+```
 
-* La limitazione potrebbe essersi verificata all’interno dell’MTA di Adobe Campaign. Ciò è causato da:
+La causa è collegata a problemi di prestazioni in cui l’istanza di marketing trascorre troppo tempo a creare dati prima di inviarli al server di mid-sourcing.
 
-   * Messaggi sospesi (**[!UICONTROL quotas met]** messaggio): sono state soddisfatte le quote dichiarate dalle regole MX dichiarative definite in Campaign. Per ulteriori informazioni su questo messaggio, fare riferimento a [questa pagina](deliverability-faq.md). Per ulteriori informazioni sulle regole MX, consulta [questa sezione](../../installation/using/email-deliverability.md#about-mx-rules).
+**Per le installazioni on-premise**, eseguire un&#39;operazione di vuoto e reindicizzazione sul database. Per ulteriori informazioni sulla manutenzione del database, consultare [questa sezione](../../production/using/recommendations.md).
 
-   * Messaggi sospesi (**[!UICONTROL dynamic flow control]** messaggio): l&#39;MTA della campagna ha riscontrato errori durante il tentativo di recapitare messaggi per un ISP specifico, il che provoca un rallentamento per evitare una densità di errore troppo elevata e quindi il rischio di potenziali elenchi Bloccati da parte dell&#39;.
+È inoltre necessario riavviare tutti i flussi di lavoro con un&#39;attività pianificata e tutti i flussi di lavoro con stato non riuscito. Fai riferimento a [questa sezione](../../workflow/using/scheduler.md).
 
-* Un problema di sistema può impedire l’interazione tra i server, rallentando l’intero processo di invio. Controlla i server per assicurarti che non vi siano problemi di memoria o risorse che possano influire su Campaign nel processo di recupero dei dati di personalizzazione, ad esempio.
+### Monitoraggio tecnico dei flussi di lavoro
 
-## Consegne pianificate {#scheduled-deliveries-}
+Per le installazioni on-premise, assicurati che tutti i flussi di lavoro tecnici relativi al recapito messaggi siano in esecuzione senza errori:
 
-Se le consegne non vengono eseguite alla data pianificata esatta, possono essere correlate a una differenza tra i fusi orari dei server. L’istanza di mid-sourcing e l’istanza di produzione possono trovarsi in fusi orari diversi.
+**Flusso di lavoro di aggiornamento del recapito messaggi**: aggiornamenti regole di qualifica della posta non recapitata e indicatori di recapito messaggi.
 
-Ad esempio, se l’istanza di mid-sourcing si trova nel fuso orario di Brisbane e l’istanza di produzione nel fuso orario di Darwin, entrambi i fusi orari sono a mezz’ora di distanza l’uno dall’altro, nel registro di audit risulterebbe chiaramente che se la consegna è pianificata per la produzione all’11:56, la stessa consegna pianificata per il mid sarebbe a 12:26 con una differenza di mezz’ora.
+**Flusso di lavoro di tracciamento**: elabora i dati di tracciamento per le consegne inviate.
 
-## Stato non riuscito {#failed-status}
+**Flusso di lavoro di pulizia del database**: elimina regolarmente i registri di consegna precedenti e le tabelle temporanee per mantenere le prestazioni.
 
-Se lo stato di una consegna e-mail è **[!UICONTROL Failed]**, può essere collegato a un problema con blocchi di personalizzazione. I blocchi di personalizzazione in una consegna possono generare errori quando, ad esempio, gli schemi non corrispondono alla mappatura della consegna.
+Controllare lo stato del flusso di lavoro in **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
 
-I registri di consegna sono fondamentali per comprendere il motivo per cui una consegna non è riuscita. Di seguito sono riportati possibili errori che puoi rilevare dai registri di consegna:
+>[!NOTE]
+>
+>Per gli utenti di Campaign v8 Managed Cloud Services, i flussi di lavoro tecnici e il monitoraggio dell’infrastruttura sono gestiti da Adobe. Concentrati sul contenuto e sul targeting della consegna come descritto nella [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}.
 
-* I messaggi dei destinatari non riescono e viene visualizzato un errore &quot;Non raggiungibile&quot; che indica:
+## Argomenti correlati
 
-  ```
-  Error while compiling script 'content htmlContent' line X: `[table]` is not defined. JavaScript: error while evaluating script 'content htmlContent
-  ```
-
-  La causa di questo problema è quasi sempre una personalizzazione all’interno di HTML che tenta di invocare una tabella o un campo che non è stato definito o mappato nel targeting a monte o nella mappatura di destinazione della consegna.
-
-  Per risolvere questo problema, è necessario rivedere il flusso di lavoro e il contenuto della consegna per determinare in modo specifico quale personalizzazione sta tentando di chiamare la tabella in questione e se è possibile mappare o meno la tabella. Da lì, il percorso per la risoluzione sarà la rimozione della chiamata a questa tabella in HTML o la correzione della mappatura alla consegna.
-
-* Nel modello di distribuzione mid-sourcing, nei registri di consegna può essere visualizzato il seguente messaggio:
-
-  ```
-  Error during the call of method 'AppendDeliveryPart' on the mid sourcing server: 'Communication error with the server: please check this one is correctly configured. Code HTTP 408 'Service temporarily unavailable'.
-  ```
-
-  La causa è collegata a problemi di prestazioni. Significa che l’istanza di marketing impiega troppo tempo a creare i dati prima di inviarli al server di mid-sourcing.
-
-  Per risolvere questo problema, si consiglia di effettuare una prova di vuoto e reindicizzare il database. Per ulteriori informazioni sulla manutenzione del database, consultare [questa sezione](../../production/using/recommendations.md).
-
-  È inoltre necessario riavviare tutti i flussi di lavoro con un&#39;attività pianificata e tutti i flussi di lavoro con stato non riuscito. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=it){target="_blank"}.
-
-* Quando una consegna non riesce, nei registri di consegna può essere visualizzato il seguente errore:
-
-  ```
-  DLV-XXXX The count of message prepared (123) is greater than the number of messages to send (111). Please contact support.
-  ```
-
-  In genere, questo errore indica che esiste un campo o un blocco di personalizzazione all’interno dell’e-mail con più valori per il destinatario. Un blocco di personalizzazione è in uso e sta recuperando più di un record per un destinatario specifico.
-
-  Per risolvere questo problema, controlla i dati di personalizzazione utilizzati, quindi controlla il target per i destinatari che hanno più di una voce per uno qualsiasi di questi campi. È inoltre possibile utilizzare un&#39;attività **[!UICONTROL Deduplication]** nel flusso di lavoro di targeting prima dell&#39;attività di consegna per verificare che esista un solo campo di personalizzazione alla volta. Per ulteriori informazioni sulla deduplicazione, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html?lang=it){target="_blank"}.
-
-* Alcune consegne possono non riuscire e viene visualizzato un errore &quot;Non raggiungibile&quot; che indica:
-
-  ```
-  Inbound email bounce (rule 'Auto_replies' has matched this bounce).
-  ```
-
-  Ciò significa che la consegna è riuscita, ma Adobe Campaign ha ricevuto una risposta automatica dal destinatario (ad esempio, una risposta &quot;Fuori sede&quot;) corrispondente alle regole di e-mail in entrata &quot;Auto_reply&quot;.
-
-  L’e-mail di risposta automatica viene ignorata da Adobe Campaign e l’indirizzo del destinatario non verrà messo in quarantena.
+* [Informazioni sugli errori di consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (documentazione di Campaign v8)
+* [Best practice per la consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} (documentazione di Campaign v8)
+* [Monitorare le consegne nell&#39;interfaccia utente di Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (documentazione di Campaign v8)
+* [Manutenzione del database](../../production/using/recommendations.md) (v7 ibrido/on-premise)
+* [Recapito e-mail](../../installation/using/email-deliverability.md) (v7 ibrido/on-premise)

@@ -6,9 +6,9 @@ feature: Troubleshooting
 hidefromtoc: true
 hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 85bafbac26b5f127499f35f373e96ecfd12b1db8
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '631'
 ht-degree: 67%
 
 ---
@@ -33,28 +33,22 @@ Ottieni supporto tramite domande frequenti, best practice, risorse online e port
 
 ### Domande frequenti
 
-Come effettuare l’aggiornamento a una nuova build? Come monitorare l’esecuzione di un flusso di lavoro? cos&#39;è il flusso di lavoro di pulizia del database?... [Consulta le prime 10 domande](platform/using/common-questions.md).
-
 <table>
     <tr><td><strong>Argomenti per domande e risposte</strong></td><td><strong>Problemi comuni</strong></td><td><strong>Best practice</strong></td><td><strong>Procedure</strong></td></tr>
     <tr>
     <td valign="top">
         <ul>
-        <li><a href="platform/using/faq-key-concepts.md">Concetti chiave</a></li>
-        <li><a href="platform/using/faq-campaign-config.md">Impostazioni della campagna</a></li>
-        <li><a href="platform/using/faq-reporting.md">Reporting</a></li>
+        <li><a href="platform/using/faq-campaign-classic-v7.md">Domande frequenti su Campaign Classic v7</a></li>
         <li><a href="platform/using/faq-build-upgrade.md">Aggiornamento della build</a></li>
-        <li><a href="platform/using/faq-messages.md">Verifica, invio e tracciamento dei messaggi</a></li>
-        <li><a href="platform/using/faq-workflows.md">Flussi di lavoro</a></li>
-        <li><a href="platform/using/faq-developers.md">Sviluppatori</a></li>
-        <li><a href="delivery/using/monitoring-deliverability.md">Recapito messaggi</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html" target="_blank">Domande frequenti complete su Campaign v8</a></li>
+        <li><a href="delivery/using/about-delivery-monitoring.md">Monitoraggio della consegna</a></li>
         </ul>
     </td>
     <td valign="top">
         <ul>
         <li><a href="production/using/performance-and-throughput-issues.md">Problemi relativi a prestazioni e velocità effettiva</a></li>
         <li><a href="delivery/using/delivery-performances.md">Prestazioni di consegna</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=it" target="_blank">Ottimizzare le prestazioni del flusso di lavoro</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html" target="_blank">Ottimizzare le prestazioni del flusso di lavoro</a></li>
         <li><a href="workflow/using/monitoring-workflow-execution.md">Risoluzione dei problemi di esecuzione dei flussi di lavoro</a></li>
         <li><a href="platform/using/sftp-server-usage.md">Utilizzo del server SFTP</a></li>
         <li><a href="delivery/using/understanding-delivery-failures.md">Errori di consegna</a></li>
@@ -62,14 +56,14 @@ Come effettuare l’aggiornamento a una nuova build? Come monitorare l’esecuzi
     </td>
    <td valign="top">
         <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=it" target="_blank">Best practice per i flussi di lavoro</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html" target="_blank">Best practice per i flussi di lavoro</a></li>
         <li><a href="workflow/using/monitoring-technical-workflows.md">Monitoraggio tecnico dei flussi di lavoro</a></li>
         <li><a href="delivery/using/about-message-tracking.md">Gestione del tracciamento</a></li>
         <li><a href="production/using/monitoring-guidelines.md">Scopri gli strumenti di monitoraggio</a></li>
         <li><a href="platform/using/import-export-workflows.md">Importare dati con flussi di lavoro</a></li>
         <li><a href="delivery/using/steps-sending-the-delivery.md">Inviare messaggi in più ondate</a></li>
         <li><a href="delivery/using/defining-the-email-content.md">Progettare contenuti e-mail</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=it" target="_blank">Best practice per la consegna</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html" target="_blank">Best practice per la consegna</a></li>
         </ul>
     </td>
     <td valign="top">
@@ -109,11 +103,11 @@ Il Pannello di controllo è disponibile direttamente da Adobe Experience Cloud. 
 
 ### Domande frequenti sul Pannello di controllo
 
-[Fai clic qui &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=it) per accedere alle domande frequenti sul Pannello di controllo Campaign.
+[Fai clic qui ](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=it) per accedere alle domande frequenti sul Pannello di controllo Campaign.
 
 ### Gestione SFTP
 
-Nel Pannello di controllo, puoi interagire con tutti i server SFTP collegati alle istanze di Campaign a cui hai accesso. Puoi monitorarne la capacità di archiviazione, gestire gli indirizzi IP sul inserisco nell&#39;elenco Consentiti di storage e le chiavi SSH pubbliche. Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=it).
+Nel Pannello di controllo, puoi interagire con tutti i server SFTP collegati alle istanze di Campaign a cui hai accesso. Puoi monitorarne la capacità di archiviazione, gestire gli indirizzi IP sul inserisco nell&#39;elenco Consentiti di storage e le chiavi SSH pubbliche. Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
 
 ### Sottodomini e certificati
 

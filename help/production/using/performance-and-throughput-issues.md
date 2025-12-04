@@ -8,10 +8,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: fe69efda-a052-4f67-9c13-665f011d0a2b
-source-git-commit: 6803b6628313db9108a191fd143dac68ee799149
+source-git-commit: 8b38d825aa9b0595226a444e0e463362468d51b3
 workflow-type: tm+mt
 source-wordcount: '738'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -23,15 +23,15 @@ Per ulteriori informazioni sul contenuto di ciascuna versione, consulta le [Note
 
 ## Hardware e infrastruttura {#hardware-and-infrastructure}
 
-Le linee guida generali sui requisiti hardware per on-premise Campaign Classic sono descritte in dettaglio in questa [pagina](https://helpx.adobe.com/it/campaign/kb/hardware-sizing-guide.html).
+Le linee guida generali sui requisiti hardware per Campaign Classic on-premise sono descritte in dettaglio in questa [pagina](https://helpx.adobe.com/it/campaign/kb/hardware-sizing-guide.html).
 
-Il team di consulenza può fornire ai clienti in hosting uno strumento che consente di visualizzare facilmente la quantità di spazio utilizzato dai vari tipi di tabelle nel database e lo spazio utilizzato sul sito SFTP. Fornisce inoltre strumenti che consentono di eliminare i dati non necessari. Se hai bisogno che questo strumento sia implementato, contatta [l&#39;Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Di seguito sono riportati alcuni aspetti importanti da verificare con questo strumento:
+Il team di consulenza può fornire ai clienti in hosting uno strumento che consente di visualizzare facilmente la quantità di spazio utilizzato dai vari tipi di tabelle nel database e lo spazio utilizzato sul sito SFTP. Fornisce inoltre strumenti che consentono di eliminare i dati non necessari. Se hai bisogno che questo strumento sia implementato, contatta l&#39;[Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Di seguito sono riportati alcuni aspetti importanti da verificare con questo strumento:
 
 * Se la dimensione dell&#39;indice è maggiore della dimensione della tabella, è necessario un vuoto.
 * Controlla le tabelle che hanno il gonfiore massimo. Se queste tabelle vengono utilizzate frequentemente, è necessario aspirarle.
 * Il blocco del database può causare l’interruzione dell’invio delle e-mail.
 
-Adobe Campaign fornisce anche uno [strumento](../../production/using/monitoring-processes.md#manual-monitoring) per verificare l&#39;utilizzo della CPU e della RAM. Utilizzare questo strumento e controllare indicatori specifici quali: **Memoria**, **Scambia memoria**, **Disco**, **Processi attivi**. Se i valori sono troppo elevati, puoi provare a ridurre il numero di flussi di lavoro o pianificare i flussi di lavoro in modo che inizino in momenti diversi.
+Adobe Campaign fornisce anche uno [strumento](../../production/using/monitoring-processes.md#manual-monitoring) per verificare l&#39;utilizzo di CPU e RAM. Utilizzare questo strumento e controllare indicatori specifici quali: **Memoria**, **Scambia memoria**, **Disco**, **Processi attivi**. Se i valori sono troppo elevati, puoi provare a ridurre il numero di flussi di lavoro o pianificare i flussi di lavoro in modo che inizino in momenti diversi.
 
 ## Controllo del database {#database-performances}
 
@@ -55,26 +55,26 @@ Di seguito è riportato un elenco di articoli relativi alle best practice per la
 
   >[!NOTE]
   >
-  >Il team di recapito messaggi si basa sul contratto e i clienti devono contattare il proprio rappresentante di Adobe per informazioni relative al progetto di recapito messaggi.
+  >Il team di recapito messaggi si basa sul contratto e i clienti devono contattare il proprio rappresentante Adobe per informazioni relative al recapito messaggi.
 
-* DKIM: per garantire il livello di sicurezza di DKIM, 1024b è la dimensione di crittografia consigliata come best practice. Le chiavi DKIM inferiori non saranno considerate valide dalla maggior parte dei fornitori di accesso. Consulta [questa pagina](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=it#authentication).
+* DKIM: per garantire il livello di sicurezza del DKIM, 1024b è la dimensione di crittografia consigliata come best practice. Le chiavi DKIM inferiori non saranno considerate valide dalla maggior parte dei provider di accesso. Consulta [questa pagina](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ## Problemi di recapito messaggi {#deliverability-issues}
 
 Di seguito è riportato un elenco di best practice e articoli relativi al recapito messaggi:
 
-* Reputazione IP: se la reputazione IP non è sufficientemente buona, si verifica un impatto sulle prestazioni. Il modulo **Monitoraggio del recapito messaggi** offre diversi strumenti per monitorare le prestazioni del recapito messaggi della piattaforma. Fai riferimento a questa [pagina](../../delivery/using/monitoring-deliverability.md).
+* Reputazione IP: se la reputazione IP non è sufficientemente buona, si verifica un impatto sulle prestazioni. Il modulo **Monitoraggio del recapito messaggi** offre diversi strumenti per monitorare le prestazioni del recapito messaggi della piattaforma. Consulta [questa pagina](../../delivery/using/about-delivery-monitoring.md#deliverability-monitoring).
 * Riscaldamento IP: il riscaldamento IP viene eseguito dal team di recapito messaggi. Ciò comporta un graduale aumento del numero di e-mail tramite nuovi IP nell’arco di alcune settimane.
 
   >[!NOTE]
   >
-  >Il team di recapito messaggi si basa sul contratto e i clienti devono contattare il proprio rappresentante di Adobe per informazioni relative al progetto di recapito messaggi.
+  >Il team di recapito messaggi si basa sul contratto e i clienti devono contattare il proprio rappresentante Adobe per informazioni relative al recapito messaggi.
 
-* Impostazione affinità IP: una configurazione di affinità IP errata può interrompere completamente le e-mail (nome di operatore/affinità non corretto nella configurazione) o ridurre la velocità effettiva (numero ridotto di IP nell’affinità). Fai riferimento a questa [pagina](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
-* Dimensione dell’e-mail: la dimensione dell’e-mail svolge un ruolo importante nella velocità effettiva. La dimensione massima consigliata per l’e-mail è 60 KB. Fai riferimento a questa [pagina](https://helpx.adobe.com/it/legal/product-descriptions/campaign.html). Nel report [Velocità effettiva di consegna](../../reporting/using/global-reports.md#delivery-throughput), controllare il numero di byte trasferiti per ora.
+* Impostazione affinità IP: una configurazione di affinità IP errata può interrompere completamente le e-mail (nome di operatore/affinità non corretto nella configurazione) o ridurre la velocità effettiva (numero ridotto di IP nell’affinità). Consulta [questa pagina](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
+* Dimensione dell’e-mail: la dimensione dell’e-mail svolge un ruolo importante nella velocità effettiva. La dimensione massima consigliata per l’e-mail è 60 KB. Fai riferimento a questa [pagina](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Nel report [Velocità effettiva di consegna](../../reporting/using/global-reports.md#delivery-throughput), controllare il numero di byte trasferiti per ora.
 * Numero elevato di destinatari non validi: quando il numero di destinatari non validi è elevato, può influire sulla velocità effettiva. L’MTA continua a tentare di inviare e-mail a destinatari non validi. Assicurarsi che il database sia in buono stato di manutenzione.
 * Quantità di personalizzazione: se una consegna rimane in &quot;Personalization in progress&quot;, controlla il JavaScript utilizzato nei blocchi di personalizzazione.
 
 >[!NOTE]
 >
->Consulta anche la sezione [Recapito messaggi](../../delivery/using/about-deliverability.md). Per informazioni più approfondite sul recapito messaggi, consulta l&#39;[Adobe di guida alle best practice per il recapito messaggi](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it).
+>Consulta anche la sezione [Recapito messaggi](../../delivery/using/about-deliverability.md). Per informazioni più approfondite sul recapito messaggi, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it).

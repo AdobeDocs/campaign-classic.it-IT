@@ -2,55 +2,61 @@
 product: campaign
 title: Best practice per le prestazioni di consegna
 description: Ulteriori informazioni sulle prestazioni di consegna e sulle best practice
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Deliverability
 role: User, Developer
 exl-id: cc793d7b-0a26-4a75-97ed-d79c87d9b3b8
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: eac670cd4e7371ca386cee5f1735dc201bf5410a
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 5%
+source-wordcount: '362'
+ht-degree: 3%
 
 ---
 
 # Best practice per le prestazioni di consegna {#delivery-performances}
 
-È consigliabile seguire le linee guida riportate di seguito per garantire il corretto funzionamento delle consegne, nonché i controlli da eseguire in caso di problemi con le consegne.
+>[!NOTE]
+>
+>Una guida completa sulle prestazioni e sulle best practice per la consegna è documentata nella pagina [Best practice per la consegna in Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices). Questo contenuto si applica sia agli utenti di Campaign Classic v7 che a quelli di Campaign v8.
+>
+>In questa pagina sono documentate le **configurazioni delle prestazioni specifiche di Campaign Classic v7** per le distribuzioni ibride e on-premise.
 
-**Argomenti correlati:**
+Per informazioni complete sulle prestazioni di consegna, l&#39;ottimizzazione della piattaforma, la gestione della quarantena, la manutenzione del database e le raccomandazioni sulla pianificazione, consulta la [documentazione sulle best practice di consegna di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}.
 
-* [Dashboard delle consegne](delivery-dashboard.md)
-* [Risoluzione dei problemi nelle consegne](delivery-troubleshooting.md)
-* [Informazioni sul recapito messaggi](about-deliverability.md)
+## Ottimizzazione delle prestazioni {#best-practices-performance}
 
-## Best practice per le prestazioni {#best-practices-performance}
+Per **distribuzioni ibride/on-premise di Campaign Classic v7**, le seguenti ottimizzazioni del database e dell&#39;infrastruttura possono migliorare le prestazioni di consegna:
 
-* Non mantenere le consegne in stato di errore nell’istanza, in quanto questa operazione mantiene le tabelle temporanee e influisce sulle prestazioni.
+### Ottimizzazione del database
 
-* Rimuovi le consegne che non sono più necessarie.
+**Indirizzi indice** per ottimizzare le prestazioni delle query SQL utilizzate nell&#39;applicazione. Un indice può essere dichiarato dall’elemento principale dello schema di dati. Questa ottimizzazione richiede l’accesso diretto al database e la personalizzazione dello schema, disponibili nelle distribuzioni on-premise.
 
-* Destinatari inattivi negli ultimi 12 mesi da rimuovere dal database per mantenere la qualità degli indirizzi.
+### Ottimizzazione dell&#39;infrastruttura
 
-* Non provare a pianificare insieme consegne di grandi dimensioni. Vi è uno spazio di 5-10 minuti per distribuire uniformemente il carico sul sistema. Coordina la pianificazione delle consegne con gli altri membri del team per garantire le migliori prestazioni. Quando il server di marketing gestisce molte attività diverse allo stesso tempo, può rallentare le prestazioni.
-
-* Mantieni la dimensione delle e-mail il più bassa possibile. La dimensione massima consigliata per un’e-mail è di circa 35 KB. La dimensione di una consegna e-mail genera una certa quantità di volume nei server di invio.
-
-* Le consegne di grandi dimensioni, come le consegne a più di un milione di destinatari, richiedono spazio nelle code di invio. Questo da solo non è un problema per il server, ma se combinato con decine di altre consegne di grandi dimensioni che escono tutte nello stesso momento, può introdurre un ritardo di invio.
-
-* Personalization nelle e-mail estrae i dati dal database per ogni destinatario. Se sono presenti molti elementi di personalizzazione, aumenta la quantità di dati necessari per preparare la consegna.
-
-* Indirizzi di indice. Per ottimizzare le prestazioni delle query SQL utilizzate nell’applicazione, è possibile dichiarare un indice dall’elemento principale dello schema di dati.
+**Configurazione delle consegne di grandi dimensioni**: le consegne a più di un milione di destinatari richiedono spazio nelle code di invio. Per le installazioni on-premise, gli elementi secondari MTA possono essere configurati per gestire dimensioni batch personalizzate. Contatta l’amministratore di sistema per regolare queste impostazioni in base alla capacità dell’infrastruttura.
 
 >[!NOTE]
 >
->Gli ISP disattivano gli indirizzi dopo un periodo di inattività. I messaggi non recapitati vengono inviati ai mittenti per informarli di questo nuovo stato.
+>Per gli utenti di Campaign v8 Managed Cloud Services, l’ottimizzazione dell’infrastruttura e la configurazione MTA sono gestite da Adobe. Consulta le [Best practice per la consegna di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} per raccomandazioni sulle prestazioni applicabili alla distribuzione.
 
-## Elenco di controllo dei problemi di prestazioni {#performance-issues}
+## Manutenzione del database {#performance-issues}
 
-Se le prestazioni di consegna non sono soddisfacenti, puoi controllare:
+Per **distribuzioni ibride/on-premise di Campaign Classic v7**, la manutenzione della piattaforma e del database influisce direttamente sulle prestazioni di invio della consegna.
 
-* **Dimensione della consegna**: il completamento delle consegne di grandi dimensioni può richiedere più tempo. Gli elementi secondari MTA sono configurati per gestire una dimensione batch predefinita, che funziona per la maggior parte delle istanze, ma devono essere controllati quando le consegne sono costantemente lente.
-* **Destinazione della consegna**: le prestazioni della consegna non sono interessate da errori di mancati recapiti non permanenti, che vengono gestiti in base alla configurazione dei nuovi tentativi. Maggiore è il numero di errori, maggiore è il numero di tentativi necessari.
-* **Caricamento complessivo della piattaforma**: l&#39;invio di diverse consegne di grandi dimensioni può influire sulla piattaforma complessiva. Puoi anche controllare la reputazione IP e i problemi di consegna. Per ulteriori informazioni, consulta [questa sezione](about-deliverability.md) e la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it).
+Le attività di manutenzione regolari includono:
 
-La manutenzione della piattaforma e del database può influire anche sulle prestazioni di invio della consegna. Per ulteriori informazioni, consulta [questa pagina](../../production/using/database-performances.md).
+**Pulizia database**: utilizzare il flusso di lavoro di pulizia del database per rimuovere i registri di consegna precedenti, i dati di tracciamento e le tabelle temporanee. Una scarsa manutenzione del database può rallentare la preparazione e l’invio delle consegne.
+
+**Monitoraggio delle prestazioni del database**: monitorare le prestazioni delle query, la frammentazione dell&#39;indice e le statistiche delle tabelle. Per istruzioni dettagliate, consulta [questa pagina](../../production/using/database-performances.md).
+
+**Monitoraggio del flusso di lavoro tecnico**: assicurati che tutti i flussi di lavoro tecnici (in particolare i flussi di lavoro di pulizia, tracciamento e aggiornamento del recapito messaggi) vengano eseguiti correttamente senza errori.
+
+>[!NOTE]
+>
+>Per gli utenti di Campaign v8 Managed Cloud Services, la manutenzione del database e i flussi di lavoro tecnici sono monitorati e gestiti da Adobe. Concentrati sul monitoraggio specifico della consegna come descritto nella [Documentazione sulle consegne del monitoraggio di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitoring-deliverability){target="_blank"}.
+
+## Argomenti correlati
+
+* [Best practice per la consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} (documentazione di Campaign v8)
+* [Monitora il recapito messaggi](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitoring-deliverability){target="_blank"} (documentazione di Campaign v8)
+* [Risoluzione dei problemi nelle consegne](delivery-troubleshooting.md)
+* [Prestazioni del database](../../production/using/database-performances.md) (v7 ibrido/on-premise)

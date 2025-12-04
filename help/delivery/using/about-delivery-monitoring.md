@@ -1,56 +1,112 @@
 ---
 product: campaign
 title: Introduzione al monitoraggio della consegna
-description: Ulteriori informazioni sulle funzionalità di monitoraggio della consegna Campaign Classic
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+description: Ulteriori informazioni sulle funzionalità di monitoraggio della distribuzione di Campaign Classic
 feature: Monitoring, Deliverability
 role: User
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: eac670cd4e7371ca386cee5f1735dc201bf5410a
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 5%
+source-wordcount: '698'
+ht-degree: 2%
 
 ---
 
 # Introduzione al monitoraggio della consegna {#about-delivery-monitoring}
 
-Il monitoraggio delle consegne dopo l’invio è un passaggio chiave per garantire l’efficienza delle campagne di marketing e l’effettivo raggiungimento dei clienti.
+>[!IMPORTANT]
+>
+>In questa pagina sono documentate **le funzionalità di monitoraggio specifiche di Campaign Classic v7** per le distribuzioni ibride e on-premise.
 
-In questa sezione, scopri di più sulle informazioni che puoi monitorare dopo l’invio di una consegna, nonché come vengono gestiti gli errori di consegna e le quarantene.
+## Funzioni di monitoraggio
 
-<img src="assets/do-not-localize/icon_monitor.svg" width="60px">
+### Monitoraggio della consegna {#monitoring-deliveries}
 
-**Monitora le consegne**
+**Per le distribuzioni ibride/on-premise di Campaign Classic v7**, è necessario un monitoraggio aggiuntivo per le risorse del server e la configurazione dell&#39;MTA (Mail Transfer Agent).
 
-L’elenco delle consegne ti consente di visualizzare tutte le consegne create in un’unica posizione.
+#### Risolvere i problemi relativi alle consegne in sospeso {#pending-deliveries}
 
-Per ogni consegna è disponibile una dashboard dedicata. Consente di monitorare eventuali problemi riscontrati durante l’invio nonché vari tipi di informazioni relative alla consegna: rapporti, pagine mirror, esclusioni, registri di tracciamento, rendering, ecc.
+Cosa succede se le consegne non vengono inviate e il loro stato rimane **In sospeso**?
 
-* [Accesso all’elenco delle consegne](list-of-deliveries.md)
-* [Dashboard delle consegne](delivery-dashboard.md)
+* Il processo di esecuzione è in attesa della disponibilità di alcune risorse. L’MTA potrebbe non essere stato avviato.
+Verifica che i moduli mta@instance siano avviati sui server MTA e, se necessario, avvia il modulo MTA. [Ulteriori informazioni](../../production/using/administration.md).
 
-<img src="assets/do-not-localize/icon_guidelines.svg" width="60px">
+* La consegna potrebbe utilizzare un’affinità non configurata nell’istanza di invio.
+Suggerimento: controlla la configurazione della gestione del traffico (affinità IP). Per ulteriori informazioni, consulta Controllare il traffico SMTP in uscita.
 
-**Prestazioni di consegna sicure**
+>[!NOTE]
+>
+>Questi passaggi possono essere eseguiti solo da un utente esperto sulle installazioni on-premise.
 
-È necessario seguire diverse linee guida per garantire il corretto funzionamento delle consegne. Sono inoltre disponibili problemi comuni che possono verificarsi durante l’invio delle consegne per aiutarti a inviare le consegne in modo efficiente.
+### Monitoraggio della consegna {#deliverability-monitoring}
 
+#### Installazione del pacchetto di consegna {#deliverability-package}
+
+Questa funzione è disponibile tramite un pacchetto dedicato in Adobe Campaign. Per utilizzarlo, è necessario installare questo pacchetto. Al termine, riavvia il server affinché il pacchetto venga preso in considerazione.
+
+* Per i client in hosting e ibridi, **Monitoraggio del recapito messaggi** è configurato nella tua istanza dal supporto tecnico e dai consulenti di Adobe. Per ulteriori informazioni, contatta il tuo account executive di Adobe.
+
+* Per le installazioni locali, è necessario installare il pacchetto **[!UICONTROL Deliverability monitoring (Email Deliverability)]** tramite il menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**. Per ulteriori informazioni, consulta [Installare i pacchetti standard di Campaign Classic](../../installation/using/installing-campaign-standard-packages.md).
+
+#### Flusso di lavoro di consegna {#deliverability-workflow}
+
+In Adobe Campaign Classic, **Monitoraggio del recapito messaggi** è gestito dal flusso di lavoro **[!UICONTROL Refresh for deliverability]**. È installato per impostazione predefinita su tutte le istanze e consente di inizializzare l’elenco delle regole di qualifica della posta non recapitata, l’elenco dei domini e l’elenco dei MX. Una volta installato il pacchetto **[!UICONTROL Deliverability monitoring (Email Deliverability)]**, questo flusso di lavoro viene eseguito ogni notte per aggiornare regolarmente l&#39;elenco delle regole e consentire di gestire attivamente il recapito messaggi della piattaforma.
+
+**Il pacchetto di recapito messaggi consente di accedere a:**
+
+* Il report di rendering della [Posta in arrivo](inbox-rendering.md) che consente di visualizzare l&#39;anteprima dei messaggi sui principali client di posta elettronica per analizzare il contenuto e la reputazione.
+* Panoramica sulla qualità dei messaggi (posta in arrivo, spam).
+
+#### Strumenti di monitoraggio {#monitoring-tools}
+
+**Per le installazioni on-premise**, è possibile utilizzare i seguenti strumenti di monitoraggio:
+
+* Il report **[!UICONTROL Delivery throughput]** offre una panoramica della velocità effettiva dell&#39;intera piattaforma per un determinato periodo. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/global-reports.md#delivery-throughput).
+* Ogni consegna genera un rapporto sulle statistiche di trasmissione per i diversi provider di servizi Internet (ISP). Mostra alcune metriche relative alla qualità dei dati e alla reputazione che possono influire sul recapito messaggi, tra cui i seguenti numeri:
+   * **[!UICONTROL Hard bounces]** indica la qualità dei dati. Questo numero deve essere inferiore al 2%.
+   * **[!UICONTROL Soft bounces]** indicare la reputazione. Questo numero non deve essere superiore al 10% per un dato ISP.
+
+  Per ulteriori informazioni, consulta la sezione [Statistiche di consegna](../../reporting/using/global-reports.md#delivery-statistics).
+
+#### Linee guida per il monitoraggio {#monitoring-guidelines}
+
+**Per le installazioni on-premise**, ecco alcune linee guida aggiuntive sul monitoraggio del recapito messaggi:
+
+* Controlla regolarmente la [velocità effettiva di consegna](../../reporting/using/global-reports.md#delivery-throughput) per l&#39;intera piattaforma per verificare se è coerente con la configurazione originale.
+* Verifica che [nuovi tentativi](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) siano configurati correttamente (30 minuti per il periodo di esecuzione dei nuovi tentativi e più di 20 tentativi) nei modelli di consegna.
+* Verificare regolarmente che la cassetta postale [bounce](understanding-delivery-failures.md#bounce-mail-management) sia accessibile e che l&#39;account non stia per scadere.
+* Controlla ogni velocità effettiva di consegna, accessibile dal [dashboard di consegna](delivery-dashboard.md), per assicurarti che sia coerente con la validità del contenuto della consegna (ad esempio, le &quot;vendite flash&quot; devono essere consegnate in minuti, non in giorni).
+* Quando utilizzate le onde, verificate che ogni onda abbia tempo sufficiente per terminare prima che venga attivata quella successiva.
+* Verifica che il numero di errori e le nuove [quarantene](understanding-quarantine-management.md) siano coerenti con le altre consegne.
+* Consulta attentamente i [registri di consegna](delivery-dashboard.md#delivery-logs-and-history) per verificare il tipo di errori evidenziati (inserisce nell&#39;elenco Bloccati di, problemi DNS, regole anti-spam, ecc.).
+
+### Risoluzione dei problemi {#delivery-troubleshooting}
+
+È possibile eseguire azioni specifiche quando si verificano problemi con le consegne in **distribuzioni ibride/on-premise**:
+
+* [Problemi di recapito messaggi](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
+* [Problemi relativi alla visualizzazione delle immagini](../../production/using/image-display-issues.md)
+* [Problemi di prestazioni della consegna](delivery-performances.md)
+* [Problemi relativi ai file temporanei](../../production/using/temporary-files.md) - *solo clienti on-premise*
+
+## Argomenti generali sul monitoraggio
+
+**Monitora le consegne:**
+
+* [Monitora le consegne nell&#39;interfaccia utente di Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (documentazione di Campaign v8)
 * [Prestazioni di consegna e best practice](delivery-performances.md)
-* [Risoluzione dei problemi di invio della consegna](delivery-troubleshooting.md)
+* [Informazioni sugli errori di consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (documentazione di Campaign v8: guida completa sia per v7 che per v8)
 
-<img src="assets/do-not-localize/icon_failure.svg" width="60px">
+Configurazione specifica per **v7:**
 
-**Errori di consegna**
+* [Configurazione gestione posta non recapitata](understanding-delivery-failures.md) (v7 ibrido/on-premise)
+* [Gestione della quarantena](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (documentazione di Campaign v8: guida completa per v7 e v8)
+* [Configurazione quarantena](understanding-quarantine-management.md) (v7 ibrido/on-premise)
 
-Quando un messaggio non può essere inviato a un profilo, il server remoto invia automaticamente un messaggio di errore, raccolto dalla piattaforma Adobe Campaign e qualificato per determinare se l’indirizzo e-mail o il numero di telefono devono essere posti in quarantena o meno.
+**Rileva messaggi:**
 
-[Comprendere gli errori di consegna](understanding-delivery-failures.md) è un passaggio fondamentale per migliorare le campagne di marketing.
+* [Introduzione al tracciamento dei messaggi](about-message-tracking.md)
 
-<img src="assets/do-not-localize/icon_quarantine.svg" width="60px">
+## Argomenti correlati
 
-**Gestione della quarantena**
-
- Adobe Campaign gestisce un elenco di indirizzi in quarantena. I destinatari il cui indirizzo è stato messo in quarantena sono esclusi per impostazione predefinita durante l’analisi della consegna e non saranno oggetto di targeting.
-
-In [questa sezione](understanding-quarantine-management.md), troverai informazioni su come identificare e gestire gli indirizzi messi in quarantena e ulteriori informazioni sulle condizioni per l&#39;invio di un indirizzo in quarantena.
+* [Stati di consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (documentazione di Campaign v8)

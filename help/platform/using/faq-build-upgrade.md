@@ -1,21 +1,26 @@
 ---
 product: campaign
 title: Domande frequenti sull’aggiornamento della build
-description: Domande comuni relative agli aggiornamenti della build di Campaign
+description: Domande comuni relative agli aggiornamenti della build di Campaign Classic v7
 feature: Upgrade, Troubleshooting
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: f39dc6077a7ddc3fb9b53d4082c08e65e7683f10
+source-git-commit: 295e3596d9291cbcc55e2d264309141526c3806b
 workflow-type: tm+mt
-source-wordcount: '2026'
+source-wordcount: '2066'
 ht-degree: 1%
 
 ---
 
 # Domande frequenti sull’aggiornamento della build {#build-upgrade-faq}
 
+Queste domande frequenti riguardano gli aggiornamenti della build di Campaign Classic v7, in particolare per le distribuzioni on-premise e ibride.
+
+>[!NOTE]
+>
+>Per risposte complete alle domande comuni su Campaign relative a flussi di lavoro, consegne, tipi di pubblico e altro ancora, consulta le [Domande frequenti complete su Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}.
 
 Adobe Campaign viene aggiornato regolarmente. Se conosci le nostre [Note sulla versione](../../rn/using/rn-overview.md) pubblicate, probabilmente sai che ogni anno vengono rilasciate in media 2/3 versioni secondarie complete di nuove funzioni, miglioramenti e correzioni. Inoltre, rilasciamo periodicamente build contenenti solo correzioni cumulative. Questa frequenza regolare di aggiornamenti mira a ottenere il massimo e più recente nelle tue mani, mantenendo l’ambiente completamente sicuro e ovviamente migliorando la tua esperienza con il nostro prodotto.
 
@@ -41,7 +46,7 @@ Per ulteriori informazioni, consulta [questa sezione](../../platform/using/launc
 
 ## Cosa significa lo stato della build?
 
-A partire da Campaign Classic 19.2, a ogni build viene associato uno stato.
+A partire dalla versione 19.2 di Campaign Classic, a ogni build viene associato uno stato.
 
 Per ulteriori informazioni, consulta [questa sezione](../../rn/using/rn-overview.md).
 
@@ -59,7 +64,7 @@ Ad esempio, utilizzando le informazioni sul server tratte dalla schermata della 
 
 ## È necessario eseguire il backup dei dati prima di questi aggiornamenti?
 
-Adobe esegue un backup del sistema prima di qualsiasi modifica. Tuttavia, se nel sistema non di produzione (server di sviluppo o di staging) è presente un lavoro di personalizzazione critico, si CONSIGLIA VIVAMENTE di esportare il lavoro come pacchetto prima di qualsiasi aggiornamento.
+Adobe eseguirà un backup del sistema prima di qualsiasi modifica. Tuttavia, se nel sistema non di produzione (server di sviluppo o di staging) è presente un lavoro di personalizzazione critico, si CONSIGLIA VIVAMENTE di esportare il lavoro come pacchetto prima di qualsiasi aggiornamento.
 
 <!--
 ![](assets/do-not-localize/how-to-video.png) For more information, [watch this how to video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).-->
@@ -90,7 +95,7 @@ Per ulteriori informazioni, [fare riferimento a questo documento](https://helpx.
 
 Il processo di aggiornamento della build richiede le seguenti risorse:
 
-* Architetto di Adobe: per le architetture di messaggistica in hosting o cloud/ibride, l’architetto deve coordinarsi con l’Assistenza clienti.
+* Architetto Adobe: per le architetture di messaggistica in hosting o cloud/ibride, l’architetto deve coordinarsi con l’Assistenza clienti.
 * Project Manager - Hosted: il team di hosting collaborerà con il team dell’Assistenza clienti e con il cliente per coordinare la tempistica dell’aggiornamento per tutte le istanze.
 * Amministratore Adobe Campaign - Ospitato: il team di hosting esegue l’aggiornamento.
 * Operatore Adobe Campaign\utente marketing: l’operatore esegue test sulle istanze di sviluppo, test e produzione.
@@ -123,7 +128,7 @@ No. Il server viene arrestato durante un aggiornamento per garantire l&#39;integ
 
 ## Posso ancora utilizzare la mia istanza Campaign durante il processo di aggiornamento?
 
-No. L’Adobe consiglia di disabilitare tutte le operazioni nella campagna durante il periodo di manutenzione per evitare la perdita o l’assenza di dati. Non devi creare o distribuire campagne, query, flussi di lavoro o consegne durante l’aggiornamento.
+No. Adobe consiglia di disabilitare le operazioni nella campagna durante il periodo di manutenzione per evitare di perdere o perdere dati. Non devi creare o distribuire campagne, query, flussi di lavoro o consegne durante l’aggiornamento.
 
 ## Le e-mail continueranno a essere inviate dal Centro messaggi durante il processo di aggiornamento?
 
@@ -139,7 +144,7 @@ A partire da Campaign Classic v7.3.5, i collegamenti di tracciamento sulle e-mai
 
 ## Devo essere disponibile durante il processo di aggiornamento della build?
 
-Sì. I clienti devono fornire all’Adobe un punto di contatto disponibile durante o immediatamente dopo l’aggiornamento della loro istanza di produzione.  L’Adobe contatterà questa persona via e-mail, a meno che non vengano presi accordi diversi. Ciò garantirà una transizione agevole e la convalida immediata delle attività critiche. L’Adobe contatterà il Cliente una volta completato l’aggiornamento della build per la conferma.
+Sì. I clienti devono fornire ad Adobe un punto di contatto disponibile durante o immediatamente dopo l’aggiornamento della loro istanza di produzione.  Adobe contatterà questa persona via e-mail, a meno che non vengano presi accordi diversi. Ciò garantirà una transizione agevole e la convalida immediata delle attività critiche. Adobe contatterà il Cliente una volta completato l’aggiornamento della build per una conferma.
 
 ## Devo aggiornare la console client?
 
@@ -165,7 +170,7 @@ Vedi l&#39;elenco di controllo per l&#39;aggiornamento della build [di seguito](
 
 ## Con quale frequenza devo eseguire un aggiornamento della build?
 
-Per garantire prestazioni, disponibilità e sicurezza ottimali, Adobe collabora con i clienti per garantire che i sistemi vengano aggiornati almeno una volta all&#39;anno.
+Per garantire prestazioni, disponibilità e sicurezza ottimali del sistema, Adobe collaborerà con i clienti per garantire che i sistemi vengano aggiornati almeno una volta all&#39;anno.
 
 ## Si verificherà un arresto del sistema per con un aggiornamento della build?
 
@@ -173,7 +178,7 @@ Sì. Il server viene arrestato durante un aggiornamento per garantire l&#39;inte
 
 ## Chi devo contattare per aprire il ticket di aggiornamento della build?
 
-Se riscontri problemi dopo un aggiornamento della build, contatta [l&#39;Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). L’Assistenza clienti pianifica le date di build e apre i ticket relativi all’aggiornamento della build.
+Se riscontri problemi dopo un aggiornamento della build, contatta l&#39;[Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). L’Assistenza clienti pianifica le date di build e apre i ticket relativi all’aggiornamento della build.
 
 Ulteriori informazioni in [Opzioni di assistenza e supporto per Campaign Classic](../../support.md)
 
