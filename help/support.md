@@ -48,7 +48,7 @@ Ottieni supporto tramite domande frequenti, best practice, risorse online e port
         <ul>
         <li><a href="production/using/performance-and-throughput-issues.md">Problemi relativi a prestazioni e velocità effettiva</a></li>
         <li><a href="delivery/using/delivery-performances.md">Prestazioni di consegna</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html" target="_blank">Ottimizzare le prestazioni del flusso di lavoro</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=it" target="_blank">Ottimizzare le prestazioni del flusso di lavoro</a></li>
         <li><a href="workflow/using/monitoring-workflow-execution.md">Risoluzione dei problemi di esecuzione dei flussi di lavoro</a></li>
         <li><a href="platform/using/sftp-server-usage.md">Utilizzo del server SFTP</a></li>
         <li><a href="delivery/using/understanding-delivery-failures.md">Errori di consegna</a></li>
@@ -56,14 +56,14 @@ Ottieni supporto tramite domande frequenti, best practice, risorse online e port
     </td>
    <td valign="top">
         <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html" target="_blank">Best practice per i flussi di lavoro</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=it" target="_blank">Best practice per i flussi di lavoro</a></li>
         <li><a href="workflow/using/monitoring-technical-workflows.md">Monitoraggio tecnico dei flussi di lavoro</a></li>
         <li><a href="delivery/using/about-message-tracking.md">Gestione del tracciamento</a></li>
         <li><a href="production/using/monitoring-guidelines.md">Scopri gli strumenti di monitoraggio</a></li>
         <li><a href="platform/using/import-export-workflows.md">Importare dati con flussi di lavoro</a></li>
         <li><a href="delivery/using/steps-sending-the-delivery.md">Inviare messaggi in più ondate</a></li>
         <li><a href="delivery/using/defining-the-email-content.md">Progettare contenuti e-mail</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html" target="_blank">Best practice per la consegna</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=it" target="_blank">Best practice per la consegna</a></li>
         </ul>
     </td>
     <td valign="top">
@@ -107,7 +107,7 @@ Il Pannello di controllo è disponibile direttamente da Adobe Experience Cloud. 
 
 ### Gestione SFTP
 
-Nel Pannello di controllo, puoi interagire con tutti i server SFTP collegati alle istanze di Campaign a cui hai accesso. Puoi monitorarne la capacità di archiviazione, gestire gli indirizzi IP sul inserisco nell&#39;elenco Consentiti di storage e le chiavi SSH pubbliche. Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
+Nel Pannello di controllo, puoi interagire con tutti i server SFTP collegati alle istanze di Campaign a cui hai accesso. Puoi monitorarne la capacità di archiviazione, gestire gli indirizzi IP sul inserisco nell&#39;elenco Consentiti di storage e le chiavi SSH pubbliche. Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=it).
 
 ### Sottodomini e certificati
 
