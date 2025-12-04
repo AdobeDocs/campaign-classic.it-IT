@@ -18,7 +18,7 @@ ht-degree: 17%
 
 I passaggi chiave durante la creazione di una consegna sono i seguenti:
 
-1. **Crea e identifica la consegna**. Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}.
+1. **Crea e identifica la consegna**. Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it#create-the-delivery){target="_blank"}.
 
 1. **Definisci il contenuto della consegna**. La definizione del contenuto della consegna è specifica per ciascun canale. Per ulteriori informazioni, consulta la sezione dedicata:
 
@@ -35,4 +35,4 @@ I passaggi chiave durante la creazione di una consegna sono i seguenti:
 
 >[!NOTE]
 >
->I passaggi descritti in questo capitolo presuppongono che tutti i destinatari e i relativi profili siano memorizzati nel database, ad eccezione del caso di consegna esterna (vedi la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"}.
+>I passaggi descritti in questo capitolo presuppongono che tutti i destinatari e i relativi profili siano memorizzati nel database, ad eccezione del caso di consegna esterna (vedi la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it#selecting-external-recipients){target="_blank"}.
