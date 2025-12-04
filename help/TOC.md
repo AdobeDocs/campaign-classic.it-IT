@@ -7,9 +7,9 @@ user-guide-title: Guida di Campaign Classic v7
 user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 93f32cda33acc53fb0e497f619be35c1c76ff85e
+source-git-commit: 2ebae2b84741bf26dd44c872702dbf3b0ebfc453
 workflow-type: tm+mt
-source-wordcount: '2692'
+source-wordcount: '2685'
 ht-degree: 99%
 
 ---
@@ -187,12 +187,9 @@ ht-degree: 99%
       + [Marketing virale e social marketing](delivery/using/viral-and-social-marketing.md)
    + Monitorare le consegne {#monitoring-deliveries}
       + [Introduzione al monitoraggio della consegna](delivery/using/about-delivery-monitoring.md)
-      + [Monitorare le consegne nell’interfaccia utente di Campaign](delivery/using/delivery-dashboard.md)
-      + [Best practice per le prestazioni di consegna](delivery/using/delivery-performances.md)
-      + [Risoluzione dei problemi nelle consegne](delivery/using/delivery-troubleshooting.md)
-      + [Errori di consegna](delivery/using/understanding-delivery-failures.md)
-      + [Informazioni sulla gestione della quarantena](delivery/using/understanding-quarantine-management.md)
-      + [Tracciamento dei messaggi](delivery/using/about-message-tracking.md)
+      + [Prestazioni della consegna e risoluzione dei problemi](delivery/using/delivery-performance-troubleshooting.md)
+      + [Errori di consegna e gestione della quarantena](delivery/using/delivery-failures-quarantine.md)
+      + [Avanzato: personalizza i registri di consegna](delivery/using/customize-delivery-logs.md)
    + Gestione della recapitabilità {#deliverability-management}
       + [Che cos’è il recapito messaggi](delivery/using/about-deliverability.md)
       + [Controllare il contenuto dei messaggi](delivery/using/control-message-content.md)
@@ -354,7 +351,7 @@ ht-degree: 99%
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Utilizzare  [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Configurare l’integrazione](integrations/using/configuring-the-integration.md)
-      + [Creare una newsletter [!DNL Experience Manager] &#x200B;](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Creare una newsletter [!DNL Experience Manager] ](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Utilizzare  [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Configurare l’integrazione con [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
