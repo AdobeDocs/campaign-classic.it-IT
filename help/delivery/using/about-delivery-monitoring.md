@@ -5,9 +5,9 @@ description: Ulteriori informazioni sulle funzionalità di monitoraggio della di
 feature: Monitoring, Deliverability
 role: User
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
-source-git-commit: 2ebae2b84741bf26dd44c872702dbf3b0ebfc453
+source-git-commit: a85d94e8ff66e8468b4fe2f071df48437393bbce
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '814'
 ht-degree: 1%
 
 ---
@@ -75,10 +75,10 @@ In Adobe Campaign Classic, **Monitoraggio del recapito messaggi** è gestito dal
 * Controlla regolarmente la [velocità effettiva di consegna](../../reporting/using/global-reports.md#delivery-throughput) per l&#39;intera piattaforma per verificare se è coerente con la configurazione originale.
 * Verifica che [nuovi tentativi](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) siano configurati correttamente (30 minuti per il periodo di esecuzione dei nuovi tentativi e più di 20 tentativi) nei modelli di consegna.
 * Verificare regolarmente che la cassetta postale [bounce](understanding-delivery-failures.md#bounce-mail-management) sia accessibile e che l&#39;account non stia per scadere.
-* Controlla ogni velocità effettiva di consegna, accessibile dal [dashboard di consegna](delivery-dashboard.md), per assicurarti che sia coerente con la validità del contenuto della consegna (ad esempio, le &quot;vendite flash&quot; devono essere consegnate in minuti, non in giorni).
+* Controlla ogni velocità effettiva di consegna, accessibile dal [dashboard di consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}, per assicurarti che sia coerente con la validità del contenuto della consegna (ad esempio, le &quot;vendite flash&quot; devono essere consegnate in minuti, non in giorni).
 * Quando utilizzate le onde, verificate che ogni onda abbia tempo sufficiente per terminare prima che venga attivata quella successiva.
 * Verifica che il numero di errori e le nuove [quarantene](understanding-quarantine-management.md) siano coerenti con le altre consegne.
-* Consulta attentamente i [registri di consegna](delivery-dashboard.md#delivery-logs-and-history) per verificare il tipo di errori evidenziati (inserisce nell&#39;elenco Bloccati di, problemi DNS, regole anti-spam, ecc.).
+* Consulta attentamente i [registri di consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} per verificare il tipo di errori evidenziati (inserisce nell&#39;elenco Bloccati di, problemi DNS, regole anti-spam, ecc.).
 
 ### Risoluzione dei problemi {#delivery-troubleshooting}
 

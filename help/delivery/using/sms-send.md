@@ -5,9 +5,9 @@ description: Scopri come inviare, monitorare e tenere traccia degli SMS in Campa
 feature: SMS
 role: User
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: a85d94e8ff66e8468b4fe2f071df48437393bbce
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '888'
 ht-degree: 1%
 
 ---
@@ -165,6 +165,6 @@ Il nome del mittente per questo tipo di messaggio è un codice breve utilizzato 
 
 >[!IMPORTANT]
 >
->Questi tipi di messaggi automatici non conservano una cronologia. Pertanto, non vengono visualizzati nel dashboard di consegna. [Ulteriori informazioni](delivery-dashboard.md).
+>Questi tipi di messaggi automatici non conservano una cronologia. Pertanto, non vengono visualizzati nel dashboard di consegna. [Ulteriori informazioni](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
 >
 >Tali messaggi non sono presi in considerazione nelle norme sulla pressione commerciale. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html?lang=it){target="_blank"}.
