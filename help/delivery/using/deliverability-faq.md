@@ -5,7 +5,7 @@ description: Scopri i punti chiave da verificare durante la gestione del recapit
 feature: Deliverability, Troubleshooting
 role: User
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
+source-git-commit: 0c639cc8b9636c190c868980ab5182a0eccb5f74
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 1%
@@ -49,13 +49,13 @@ Se il problema persiste, contatta il servizio commerciale o di recapito messaggi
 
    * Lo stato **[!UICONTROL Quarantined]** è il risultato di un mancato recapito non permanente o permanente.
 
-  Per ulteriori informazioni, consulta [questa sezione](understanding-quarantine-management.md#quarantine-vs-denylist).
+  Per ulteriori informazioni, consulta [questa sezione](delivery-failures-quarantine.md#quarantine-vs-denylist).
 
 * **Che cosa significano i diversi motivi di errore di quarantena?**
 
   Ecco 10 possibili motivi: non definito, utente sconosciuto, dominio non valido, al inserisco nell&#39;elenco Bloccati di accesso di un utente, rifiutato, errore ignorato, non raggiungibile, account disabilitato, cassetta postale piena, non connesso.
 
-  Per ulteriori informazioni, consulta [Informazioni sulla gestione della quarantena](understanding-quarantine-management.md).
+  Per ulteriori informazioni, consulta [Informazioni sulla gestione della quarantena](delivery-failures-quarantine.md).
 
 ## Rimozione dal inserisco nell&#39;elenco Bloccati di {#remove-from-denylist}
 

@@ -8,7 +8,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+source-git-commit: 0c639cc8b9636c190c868980ab5182a0eccb5f74
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 4%
@@ -41,7 +41,7 @@ Per ottimizzare la consegna quando gestisci le e-mail in grandi volumi ed evitar
 
 **Suggerimento**: utilizza un indirizzo mittente trasparente corrispondente al sito Web del tuo marchio. Ad esempio, la società TravelAgency gestisce la catena alberghiera Valentino. È il proprietario del dominio valentino.com per il suo sito web. Per promuovere l&#39;hotel Valentino a Parigi, utilizza il sottodominio paris.valentino.com. Pertanto, un indirizzo del mittente pertinente può essere hotel@paris.valentino.com.
 
-## Gestione del recapito messaggi {#deliverability-management}
+## Gestione della recapitabilità {#deliverability-management}
 
 Per raggiungere la casella in entrata dei destinatari senza che vengano generati o contrassegnati come spam, devi migliorare il tasso di recapito dei messaggi.
 
@@ -51,9 +51,9 @@ Per raggiungere la casella in entrata dei destinatari senza che vengano generati
 
    * Durante il controllo della consegna delle e-mail, desideri concentrarti su quattro categorie principali: qualità dei dati, messaggio e contenuto, infrastruttura di invio e reputazione. Per ulteriori informazioni su questo argomento, consulta [questa sezione](about-deliverability.md).
 
-* Applica i consigli dettagliati [&#x200B; in questo documento](about-deliverability.md).
+* Applica i consigli dettagliati [ in questo documento](about-deliverability.md).
 
-* Contatta il rappresentante del tuo Adobe per assistenza.
+* Contatta il rappresentante Adobe per assistenza.
 
 ## Gestione della quarantena {#quarantine-management}
 
@@ -67,7 +67,7 @@ Quando inizi a inviare e-mail su una nuova piattaforma, puoi utilizzare un elenc
 
 * I destinatari i cui indirizzi sono in quarantena sono esclusi per impostazione predefinita durante l’analisi della consegna: non sono oggetto di targeting. In questo modo le consegne saranno più rapide, poiché il tasso di errore ha un effetto significativo sulla velocità di consegna. Un indirizzo e-mail può essere messo in quarantena, ad esempio quando la casella in entrata è piena o se l’indirizzo non esiste. [Ulteriori informazioni](#identifying-quarantined-addresses-for-a-delivery)
 
-* Adobe Campaign gestisce gli indirizzi errati in base al tipo di errore restituito. Per ulteriori informazioni al riguardo, consulta [questa sezione](understanding-quarantine-management.md).
+* Adobe Campaign gestisce gli indirizzi errati in base al tipo di errore restituito. Per ulteriori informazioni al riguardo, consulta [questa sezione](delivery-failures-quarantine.md).
 
 
 * Alcuni provider di accesso a Internet considerano automaticamente le e-mail come spam se il tasso di indirizzi non validi è troppo alto. La quarantena consente quindi di evitare che questi provider aggiungano altri elementi al elenco Bloccati del sistema di protezione.
