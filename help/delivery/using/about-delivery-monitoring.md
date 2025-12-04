@@ -5,7 +5,7 @@ description: Ulteriori informazioni sulle funzionalità di monitoraggio della di
 feature: Monitoring, Deliverability
 role: User
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
-source-git-commit: a85d94e8ff66e8468b4fe2f071df48437393bbce
+source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 1%
@@ -86,7 +86,7 @@ In Adobe Campaign Classic, **Monitoraggio del recapito messaggi** è gestito dal
 
 * [Problemi di recapito messaggi](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Problemi relativi alla visualizzazione delle immagini](../../production/using/image-display-issues.md)
-* [Problemi di prestazioni della consegna](delivery-performances.md)
+* [Problemi di prestazioni della consegna](delivery-performance-troubleshooting.md)
 * [Problemi relativi ai file temporanei](../../production/using/temporary-files.md) - *solo clienti on-premise*
 
 ## Monitorare le consegne
