@@ -5,14 +5,14 @@ description: Scopri come aggiornare la qualifica di mancato recapito dopo l’in
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%
 
 ---
 
-# Aggiornare mancati recapiti erronei dopo l&#39;interruzione di Apple {#update-bounce-qualification.md}
+# Aggiornamento in caso di mancati recapiti erronei dovuti a interruzioni del servizio Apple {#update-bounce-qualification.md}
 
 ## Contesto
 
@@ -56,5 +56,5 @@ In base alla tempistica dell’incidente, di seguito sono riportate le linee gui
 Una volta ottenuto l&#39;elenco dei destinatari interessati, è possibile impostarli sullo stato **[!UICONTROL Valid]** in modo che vengano rimossi dall&#39;elenco di quarantena dal flusso di lavoro **[!UICONTROL Database cleanup]** oppure eliminarli dalla tabella.
 
 **Argomenti correlati:**
-* [Errori di consegna](understanding-delivery-failures.md)
-* [Qualificazione di mail non recapitate](understanding-delivery-failures.md#bounce-mail-qualification)
+* [Errori di consegna](delivery-failures-quarantine.md)
+* [Qualificazione di mail non recapitate](delivery-failures-quarantine.md#bounce-mail-qualification)

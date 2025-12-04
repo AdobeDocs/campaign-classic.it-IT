@@ -7,7 +7,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 11%
@@ -34,7 +34,7 @@ Per creare una notifica push per dispositivi iOS, segui i passaggi seguenti:
 
    >[!NOTE]
    >
-   >Il processo dettagliato durante la selezione della popolazione target di una consegna è presentato in questa sezione nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it#target-population.){target="_blank"}.
+   >Il processo dettagliato durante la selezione della popolazione target di una consegna è presentato in questa sezione nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population.){target="_blank"}.
    >
    >Per ulteriori informazioni sull&#39;utilizzo dei campi di personalizzazione, consulta [questa sezione](about-personalization.md).
    >
@@ -130,9 +130,9 @@ Per inviare una bozza e la consegna finale, utilizza lo stesso processo delle co
 
 Dopo aver inviato i messaggi, puoi monitorare e tenere traccia delle consegne. Per ulteriori informazioni, consulta queste sezioni:
 
-* [Quarantene di notifica push](understanding-quarantine-management.md#push-notification-quarantines)
+* [Quarantene di notifica push](delivery-failures-quarantine.md#push-notification-quarantines)
 * [Monitoraggio di una consegna](about-delivery-monitoring.md)
-* [Informazioni sugli errori di consegna](understanding-delivery-failures.md)
+* [Informazioni sugli errori di consegna](delivery-failures-quarantine.md)
 
 ## Creare una notifica avanzata di iOS {#creating-ios-delivery}
 

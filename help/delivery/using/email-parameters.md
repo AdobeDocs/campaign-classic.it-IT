@@ -7,7 +7,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 10%
@@ -82,7 +82,7 @@ Seleziona il formato dell’e-mail nella sezione inferiore della finestra:
 
 La pagina mirror è una pagina HTML accessibile online tramite un browser web. Il contenuto è identico a quello dell’e-mail.
 
-Per impostazione predefinita, la pagina speculare viene generata se il collegamento viene inserito nel contenuto dell’e-mail. Per ulteriori informazioni sull&#39;inserimento dei blocchi di personalizzazione, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=it){target="_blank"}.
+Per impostazione predefinita, la pagina speculare viene generata se il collegamento viene inserito nel contenuto dell’e-mail. Per ulteriori informazioni sull&#39;inserimento dei blocchi di personalizzazione, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
 
 Nelle proprietà di consegna, il campo **[!UICONTROL Mode]** della scheda **[!UICONTROL Validity]** ti consente di modificare la modalità di generazione per questa pagina.
 
@@ -122,7 +122,7 @@ Puoi anche definire un indirizzo specifico da questa schermata per indagare i mo
 
 ![](assets/s_ncs_user_email_del_properties_smtp_tab.png)
 
-Per ulteriori informazioni sulla gestione della posta non recapitata, consulta [questa sezione](understanding-delivery-failures.md#bounce-mail-management).
+Per ulteriori informazioni sulla gestione della posta non recapitata, consulta [questa sezione](delivery-failures-quarantine.md#bounce-mail-management).
 
 ## Aggiunta di intestazioni SMTP {#adding-smtp-headers}
 

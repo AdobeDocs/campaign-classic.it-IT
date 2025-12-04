@@ -5,7 +5,7 @@ description: Canale app mobile
 hide: true
 hidefromtoc: true
 feature: Workflows
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 4%
@@ -29,7 +29,7 @@ Per impostazione predefinita, il flusso di lavoro descritto di seguito viene ins
   <tr> 
    <td> <span class="uicontrol">Gestione rinuncia NMAC</span> <br /> </td> 
    <td> <span class="uicontrol">mobileAppOptOutMgt</span> <br /> </td> 
-   <td> Questo flusso di lavoro aggiorna gli annullamenti degli abbonamenti alle notifiche sui dispositivi mobili. Viene attivato ogni 6 ore tra l’1 e mezzanotte. Per ulteriori dettagli, consulta questa <a href="../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines">sezione</a>.<br /> </td> 
+   <td> Questo flusso di lavoro aggiorna gli annullamenti degli abbonamenti alle notifiche sui dispositivi mobili. Viene attivato ogni 6 ore tra l’1 e mezzanotte. Per ulteriori dettagli, consulta questa <a href="../../delivery/using/delivery-failures-quarantine.md#push-notification-quarantines">sezione</a>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

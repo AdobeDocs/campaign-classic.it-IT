@@ -7,7 +7,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: a85d94e8ff66e8468b4fe2f071df48437393bbce
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '1518'
 ht-degree: 11%
@@ -61,7 +61,7 @@ Al termine, fai clic su **[!UICONTROL Confirm delivery]** per avviare la consegn
 Dopo aver inviato i messaggi, puoi monitorare e tenere traccia delle consegne. Per ulteriori informazioni, consulta queste sezioni:
 
 * [Monitorare una consegna](about-delivery-monitoring.md)
-* [Errori di consegna](understanding-delivery-failures.md)
+* [Errori di consegna](delivery-failures-quarantine.md)
 * [Informazioni sul tracciamento dei messaggi](about-message-tracking.md)
 
 ## Pianificare l’invio della consegna {#scheduling-the-delivery-sending}
@@ -171,7 +171,7 @@ I due esempi seguenti sono i casi d’uso più comuni per l’utilizzo di più s
 
 ## Configurare nuovi tentativi {#configuring-retries}
 
-I messaggi temporaneamente non recapitati a causa di un errore **Morbido** o **Ignorato** sono soggetti a un nuovo tentativo automatico. I tipi e i motivi degli errori di consegna sono presentati in questa [sezione](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+I messaggi temporaneamente non recapitati a causa di un errore **Morbido** o **Ignorato** sono soggetti a un nuovo tentativo automatico. I tipi e i motivi degli errori di consegna sono presentati in questa [sezione](delivery-failures-quarantine.md#delivery-failure-types-and-reasons).
 
 >[!IMPORTANT]
 >

@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: Aggiornare la qualifica di mancato recapito dopo un’interruzione del servizio ISP
+title: Aggiornare la qualificazione di mancato recapito dopo un’interruzione del servizio ISP
 description: Scopri come aggiornare la qualifica di mancato recapito dopo un’interruzione del servizio ISP
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Deliverability
 hide: true
 hidefromtoc: true
 exl-id: 7a9afe0a-0219-40f1-9fe2-6374db8d555c
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '490'
 ht-degree: 3%
 
 ---
@@ -34,7 +34,7 @@ Tieni presente che se si verificano dei mancati recapiti differiti con il messag
 >
 >Puoi controllare il dashboard di stato del sistema di Apple in [questa pagina](https://www.apple.com/support/systemstatus/){_blank}.
 >
->Puoi controllare il dashboard di stato di Google Workspace in [questa pagina](https://www.google.com/appsstatus#hl=en&amp;v=status){_blank}.
+>Puoi controllare il dashboard di stato di Google Workspace in [questa pagina](https://www.google.com/appsstatus#hl=en&v=status){_blank}.
 >
 
 ## Impatto{#update-bounce-impact}
@@ -71,5 +71,5 @@ Di seguito sono riportate le linee guida consigliate per questa query in base al
 Una volta ottenuto l&#39;elenco dei destinatari interessati, è possibile impostarli sullo stato **[!UICONTROL Valid]** in modo che vengano rimossi dall&#39;elenco di quarantena dal flusso di lavoro **[!UICONTROL Database cleanup]** oppure eliminarli dalla tabella.
 
 **Argomenti correlati:**
-* [Errori di consegna](understanding-delivery-failures.md)
-* [Qualificazione di mail non recapitate](understanding-delivery-failures.md#bounce-mail-qualification)
+* [Errori di consegna](delivery-failures-quarantine.md)
+* [Qualificazione di mail non recapitate](delivery-failures-quarantine.md#bounce-mail-qualification)
