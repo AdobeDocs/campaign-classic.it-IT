@@ -165,6 +165,6 @@ Il nome del mittente per questo tipo di messaggio è un codice breve utilizzato 
 
 >[!IMPORTANT]
 >
->Questi tipi di messaggi automatici non conservano una cronologia. Pertanto, non vengono visualizzati nel dashboard di consegna. [Ulteriori informazioni](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
+>Questi tipi di messaggi automatici non conservano una cronologia. Pertanto, non vengono visualizzati nel dashboard di consegna. [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
 >
 >Tali messaggi non sono presi in considerazione nelle norme sulla pressione commerciale. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html?lang=it){target="_blank"}.

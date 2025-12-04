@@ -91,4 +91,4 @@ La modalità personalizzata è per i client avanzati che desiderano impostare le
 * [Configurazione MX](../../installation/using/email-deliverability.md#mx-configuration)
 * [Configurazione tecnica delle e-mail](../../installation/using/email-deliverability.md)
 * [Errori di consegna](../../delivery/using/delivery-failures-quarantine.md)
-* [Campaign Classic - Consigli tecnici](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html)
+* [Campaign Classic - Consigli tecnici](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=it)

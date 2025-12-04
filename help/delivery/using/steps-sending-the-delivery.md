@@ -143,7 +143,7 @@ Per bilanciare il carico, puoi dividere le consegne in più batch. Configura il 
    >
    >È inoltre necessario concedere tempo sufficiente per i nuovi tentativi durante la configurazione degli ultimi scaglioni. Consulta [questa sezione](steps-sending-the-delivery.md#configuring-retries).
 
-1. Per monitorare gli invii, passa ai registri di consegna. Consulta [questa pagina](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
+1. Per monitorare gli invii, passa ai registri di consegna. Consulta [questa pagina](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
 
    È possibile visualizzare le consegne già inviate negli scaglioni elaborati (**[!UICONTROL Sent]** stato) e le consegne da inviare negli scaglioni rimanenti (**[!UICONTROL Pending]** stato).
 
