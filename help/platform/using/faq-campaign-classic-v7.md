@@ -33,7 +33,7 @@ Ogni modello di distribuzione ha funzionalità e responsabilità di gestione div
 
 [Fai clic qui per ulteriori informazioni](../../installation/using/hosting-models.md) sui modelli di hosting e sulle loro differenze.
 
-**Nota:** Campaign v8 è disponibile esclusivamente come Managed Cloud Services. [Scopri di più su Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=it){target="_blank"}.
+**Nota:** Campaign v8 è disponibile esclusivamente come Managed Cloud Services. [Scopri di più su Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}.
 
 ### Quali sono le differenze quando si lavora on-premise rispetto a un ambiente in hosting? {#what-are-the-differences-when-working-on-premise-vs-in-a-hosted-environment}
 
@@ -240,7 +240,7 @@ Campaign v8 è la piattaforma strategica di Adobe, ideale per le organizzazioni 
 
 Ulteriori informazioni:
 
-* [Panoramica di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=it){target="_blank"}
+* [Panoramica di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}
 * [Transizione da Campaign Classic v7 a v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html){target="_blank"}
 * [Domande frequenti complete su Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}
 
