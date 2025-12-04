@@ -7,7 +7,7 @@ user-guide-title: Guida di Campaign Classic v7
 user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 2ebae2b84741bf26dd44c872702dbf3b0ebfc453
+source-git-commit: a0b8f6adef371bad5342524aaf4ce30f3933f2da
 workflow-type: tm+mt
 source-wordcount: '2685'
 ht-degree: 99%
@@ -186,7 +186,8 @@ ht-degree: 99%
       + [Gestire gli abbonamenti](delivery/using/managing-subscriptions.md)
       + [Marketing virale e social marketing](delivery/using/viral-and-social-marketing.md)
    + Monitorare le consegne {#monitoring-deliveries}
-      + [Introduzione al monitoraggio della consegna](delivery/using/about-delivery-monitoring.md)
+      + [Monitorare le prestazioni di consegna](delivery/using/about-delivery-monitoring.md)
+      + [Tracciare i messaggi](delivery/using/about-message-tracking.md)
       + [Prestazioni della consegna e risoluzione dei problemi](delivery/using/delivery-performance-troubleshooting.md)
       + [Errori di consegna e gestione della quarantena](delivery/using/delivery-failures-quarantine.md)
       + [Avanzato: personalizza i registri di consegna](delivery/using/customize-delivery-logs.md)
@@ -351,7 +352,7 @@ ht-degree: 99%
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Utilizzare  [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Configurare l’integrazione](integrations/using/configuring-the-integration.md)
-      + [Creare una newsletter [!DNL Experience Manager] &#x200B;](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Creare una newsletter [!DNL Experience Manager] ](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Utilizzare  [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Configurare l’integrazione con [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
