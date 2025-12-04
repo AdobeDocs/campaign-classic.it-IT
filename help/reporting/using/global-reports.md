@@ -5,7 +5,7 @@ description: Rapporti globali
 badge: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classic v7"
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: 2186b8a30449cb023cb07305ba64d53f2c8adab1
 workflow-type: tm+mt
 source-wordcount: '2292'
 ht-degree: 8%
@@ -52,7 +52,7 @@ Puoi configurare i valori visualizzati modificando la scala cronologica: visuali
 
 >[!NOTE]
 >
->Se l&#39;istanza è ospitata su AWS, puoi anche monitorare il numero di consegne inviate all&#39;ora utilizzando il Campaign Classic [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=it). Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=it).
+>Se l&#39;istanza è ospitata su AWS, puoi anche monitorare il numero di consegne inviate all&#39;ora utilizzando il [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html) di Campaign Classic. Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=it).
 >
 >Il Pannello di controllo è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente l’accesso come amministratore sono descritti in[questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel).
 >
@@ -70,7 +70,7 @@ Sono disponibili le seguenti opzioni:
 * **[!UICONTROL Clicks]** : numero totale di clic sui collegamenti nelle consegne. I clic sui collegamenti di annullamento dell’abbonamento e sulle pagine mirror non vengono presi in considerazione.
 * **[!UICONTROL Transactions]**: numero totale di transazioni dopo la ricezione di un messaggio. Affinché una transazione possa essere presa in considerazione, è necessario inserire un tag di tracciamento web di tipo transazione nella pagina web corrispondente. La configurazione del tracciamento web è presentata in [questa sezione](../../configuration/using/about-web-tracking.md).
 
-## Messaggi non recapitabili e mancati recapiti {#non-deliverables-and-bounces}
+## Messaggi non recapitati e non consegnabili {#non-deliverables-and-bounces}
 
 Questo rapporto mostra il raggruppamento dei messaggi non recapitati e dei messaggi non recapitati per dominio Internet.
 
@@ -82,7 +82,7 @@ Questo rapporto mostra il raggruppamento dei messaggi non recapitati e dei messa
 
 >[!NOTE]
 >
->Gli errori inclusi in questo rapporto attivano il processo di quarantena. Per ulteriori informazioni sulla gestione della quarantena, consulta [Gestione della quarantena](../../delivery/using/understanding-quarantine-management.md).
+>Gli errori inclusi in questo rapporto attivano il processo di quarantena. Per ulteriori informazioni sulla gestione della quarantena, consulta [Gestione della quarantena](../../delivery/using/delivery-failures-quarantine.md).
 
 La prima sezione di questo rapporto mostra la suddivisione dei messaggi non recapitati sotto forma di tabella di valori e di grafico.
 
@@ -202,7 +202,7 @@ Questa sezione include due grafici che rappresentano il raggruppamento delle att
 
 ## Statistiche sulla condivisione delle attività {#statistics-on-sharing-activities}
 
-Questo rapporto mostra l’evoluzione delle condivisioni nei social network (Facebook, X - precedentemente noto come Twitter, e-mail, ecc.) nel tempo.
+Questo report mostra l&#39;evoluzione delle condivisioni verso i social network (Facebook, X - precedentemente noti come Twitter, e-mail, ecc.) nel tempo.
 
 Per ulteriori informazioni sul marketing virale, consulta [questa sezione](../../delivery/using/viral-and-social-marketing.md).
 
@@ -294,7 +294,7 @@ Sono utilizzati i seguenti indicatori:
 
   >[!NOTE]
   >
-  >Per ulteriori informazioni sui mancati recapiti permanenti e non permanenti, consulta [Gestione quarantena](../../delivery/using/understanding-quarantine-management.md).
+  >Per ulteriori informazioni sui mancati recapiti permanenti e non permanenti, consulta [Gestione quarantena](../../delivery/using/delivery-failures-quarantine.md).
 
 * **[!UICONTROL Opens]** : percentuale del numero di destinatari di destinazione che hanno aperto un messaggio almeno una volta rispetto al numero di messaggi elaborati correttamente.
 * **[!UICONTROL Clicks]** : percentuale di persone che hanno fatto clic su una consegna almeno una volta rispetto al numero di messaggi elaborati correttamente.

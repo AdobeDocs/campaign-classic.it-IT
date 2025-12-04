@@ -6,9 +6,9 @@ feature: ACS Connector
 hide: true
 hidefromtoc: true
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 2186b8a30449cb023cb07305ba64d53f2c8adab1
 workflow-type: tm+mt
-source-wordcount: '2036'
+source-wordcount: '2034'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Con il connettore ACS, Campaign Standard continua a essere utilizzato dagli espe
 
 >[!IMPORTANT]
 >
->Il connettore ACS è disponibile solo come parte dell’offerta Adobe Campaign Prime. Per ulteriori informazioni su come ottenere la licenza di Adobe Campaign Prime, contatta il tuo account manager.
+>Il connettore ACS è disponibile solo come parte dell’offerta Adobe Campaign Prime. Per ulteriori informazioni su come concedere in licenza Adobe Campaign Prime, contatta il tuo account manager.
 >
 >Il connettore ACS è disponibile solo per architetture in hosting e ibride. Non è disponibile per installazioni on-premise complete.
 >
@@ -83,28 +83,28 @@ La replica degli ID di consegna e dei registri e-mail consente di accedere alla 
 
 Il connettore ACS sincronizza le quarantene tra Campaign v7 e Campaign Standard.
 
-Un profilo replicato da Campaign v7 in Campaign Standard, ad esempio, include un indirizzo e-mail. Se l’indirizzo e-mail è messo in quarantena da Campaign Standard, i dati vengono passati a Campaign v7 durante la successiva sincronizzazione. Per ulteriori informazioni sulle quarantene, vedere [Gestione quarantena](../../delivery/using/understanding-quarantine-management.md) e [Quarantene Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=it).
+Ad esempio, un profilo replicato da Campaign v7 in Campaign Standard include un indirizzo e-mail. Se l’indirizzo e-mail è messo in quarantena da Campaign Standard, i dati vengono passati a Campaign v7 durante la successiva sincronizzazione. Per ulteriori informazioni sulle quarantene, vedere [Gestione quarantena](../../delivery/using/delivery-failures-quarantine.md) e [Quarantene Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html).
 
 ### Utilizzare i profili replicati {#using-replicated-profiles}
 
 I profili replicati possono essere utilizzati da Campaign Standard e Campaign v7 per il targeting dei flussi di lavoro nelle campagne di marketing.
 
-Per istruzioni su come inviare una consegna in Campaign Standard utilizzando profili replicati, vedere [Sincronizzazione dei profili](../../integrations/using/synchronizing-profiles.md). Sono fornite istruzioni aggiuntive per condividere i dati di annullamento dell’abbonamento tra Campaign v7 e Campaign Standard.
+Per istruzioni su come inviare una consegna in Campaign Standard utilizzando profili replicati, vedere [Sincronizzazione dei profili](../../integrations/using/synchronizing-profiles.md). Sono fornite istruzioni aggiuntive per la condivisione dei dati di annullamento dell’abbonamento tra Campaign v7 e Campaign Standard.
 
 ### Limitazioni {#limitations}
 
 I profili replicati sono facilmente disponibili per le consegne, ma presentano alcune limitazioni in Campaign Standard. Leggi gli elementi riportati di seguito per scoprire come gestirli al meglio.
 
-* **Profili di sola lettura per Campaign Standard**: i profili replicati sono di sola lettura in Campaign Standard. Tuttavia, puoi modificare i destinatari in Campaign v7 e le modifiche vengono aggiornate automaticamente in Campaign Standard da ACS Connector.
+* **Profili di sola lettura per Campaign Standard**: i profili replicati sono di sola lettura in Campaign Standard. Tuttavia, puoi modificare i destinatari in Campaign v7 e le modifiche vengono aggiornate automaticamente in Campaign Standard dal connettore ACS.
 * **Profili creati in Campaign Standard**: il connettore ACS replica i dati dei destinatari in un&#39;unica direzione, da Campaign v7 a Campaign Standard. Pertanto, i profili che hanno origine in Campaign Standard non vengono replicati in Campaign v7.
 * **Dati dei destinatari di base per Campaign Standard**: il connettore ACS replica i dati dei destinatari adatti a Campaign Standard. Include i nomi, gli indirizzi, gli indirizzi e-mail, i numeri di telefono cellulare, i numeri di telefono dell’abitazione e altre informazioni di contatto pertinenti. Se ulteriori campi dei destinatari e tabelle di targeting personalizzate disponibili in Campaign v7 sono fondamentali per il flusso di lavoro, contatta il tuo consulente.
-* **Importazione di profili messi in quarantena**: è possibile importare in Campaign v7 o Campaign Standard gli elenchi di profili che non desiderano essere contattati come profili messi in quarantena. Lo stato dei profili è incluso nella sincronizzazione della quarantena tra le applicazioni e non verranno utilizzati nelle consegne.
+* **Importazione di profili messi in quarantena**: è possibile importare in Campaign v7 o Campaign Standard gli elenchi di profili che non si desidera contattare come profili messi in quarantena. Lo stato dei profili è incluso nella sincronizzazione della quarantena tra le applicazioni e non verranno utilizzati nelle consegne.
 * **Annulla iscrizione a un servizio in Campaign Standard**: la scelta di annullare l&#39;iscrizione a una consegna non è sincronizzata da Campaign Standard a Campaign v7. Tuttavia, puoi configurare una consegna Campaign Standard per indirizzare il relativo collegamento di annullamento all’abbonamento a Campaign v7. Il profilo di un destinatario che fa clic sul collegamento di annullamento dell’abbonamento viene aggiornato in Campaign v7 e i dati vengono replicati in Campaign Standard. Consulta [Modifica il collegamento di annullamento dell&#39;abbonamento](../../integrations/using/synchronizing-profiles.md#changing-the-unsubscription-link).
 * Solo i registri di trasmissione e di tracciamento delle e-mail vengono replicati da Campaign Standard a Campaign v7.
 
 ### Fatturazione {#billing}
 
-La fatturazione non è influenzata dalla scelta dell’applicazione da utilizzare per l’invio di consegne, Campaign v7 o Campaign Standard. Le informazioni di fatturazione vengono riconciliate tra Campaign v7 e Campaign Standard. Pertanto, se invii consegne allo stesso destinatario utilizzando entrambe le applicazioni, viene comunque conteggiato come un unico profilo attivo.
+La fatturazione non è influenzata dalla scelta dell’applicazione per l’invio di consegne, Campaign v7 o Campaign Standard. Le informazioni di fatturazione vengono riconciliate tra Campaign v7 e Campaign Standard. Pertanto, se invii consegne allo stesso destinatario utilizzando entrambe le applicazioni, viene comunque conteggiato come un unico profilo attivo.
 
 ## Implementazione {#implementation}
 
@@ -122,7 +122,7 @@ L&#39;**implementazione avanzata** ti consentirà di eseguire casi d&#39;uso pi�
 
 ### Installare il pacchetto {#installing-the-package}
 
-Per utilizzare la funzionalità, è necessario installare il pacchetto **[!UICONTROL ACS Connector]**. Questa operazione viene sempre eseguita dall’amministratore tecnico o dal consulente Adobe.
+Per utilizzare la funzionalità, è necessario installare il pacchetto **[!UICONTROL ACS Connector]**. Questa operazione viene sempre eseguita dall’amministratore tecnico o dal consulente di Adobe.
 
 Tutti gli elementi tecnici relativi al connettore ACS sono disponibili nel nodo **[!UICONTROL Administration > ACS Connector]** dell&#39;Explorer.
 
@@ -144,15 +144,15 @@ I seguenti flussi di lavoro di replica sono disponibili come modelli &quot;pront
 ![](assets/acs_connect_implementation_2.png)
 
 * **[!UICONTROL `[ACS] Profile replication`]** (newProfileReplication): questo flusso di lavoro incrementale replica i destinatari in Campaign Standard. Per impostazione predefinita, replica tutti i campi dei destinatari predefiniti. Vedi [Campi destinatari predefiniti](#default-recipient-fields).
-* **[!UICONTROL `[ACS] Service replication`]** (newServiceReplication): questo flusso di lavoro incrementale replica i servizi scelti in Campaign Standard. Vedi il caso d&#39;uso [Sincronizzazione delle applicazioni web](../../integrations/using/synchronizing-web-applications.md).
+* **[!UICONTROL `[ACS] Service replication`]** (newServiceReplication): questo flusso di lavoro incrementale replica i servizi selezionati in Campaign Standard. Vedi il caso d&#39;uso [Sincronizzazione delle applicazioni web](../../integrations/using/synchronizing-web-applications.md).
 * **[!UICONTROL `[ACS] Landing pages replication`]** (newLandingPageReplication): questo flusso di lavoro incrementale replica le applicazioni Web selezionate in Campaign Standard. Le applicazioni web di Campaign v7 verranno visualizzate come pagine di destinazione in Campaign Standard. Vedi il caso d&#39;uso [Sincronizzazione delle applicazioni web](../../integrations/using/synchronizing-web-applications.md).
 * **[!UICONTROL `[ACS] New replication`]** (newReplication): questo flusso di lavoro incrementale è un esempio che può essere utilizzato per replicare una tabella personalizzata. Consulta [Implementazione avanzata](#advanced-implementation).
 * **[!UICONTROL `[ACS] Delivery-message replication`]** (newDlvMsgQualification): questo flusso di lavoro incrementale replica i messaggi di consegna da Campaign Standard a Campaign v7.
-* **[!UICONTROL `[ACS] Profile delivery log replication`]** (newRcpDeliveryLogReplication): questo flusso di lavoro incrementale replica gli ID di consegna, i registri di indirizzi e-mail generali e i registri di tracciamento e-mail da Campaign Standard a Campaign v7. Tiene conto solo delle consegne inviate da Campaign Standard ai profili che fanno parte della tabella nms:recipients di Campaign v7.
+* **[!UICONTROL `[ACS] Profile delivery log replication`]** (newRcpDeliveryLogReplication): questo flusso di lavoro incrementale replica gli ID di consegna, i registri di indirizzi e-mail generali e i registri di tracciamento e-mail da Campaign Standard a Campaign v7. Tiene conto solo delle consegne inviate da Campaign Standard a profili che fanno parte della tabella nms:recipients di Campaign v7.
 
   >[!NOTE]
   >
-  > Se per inviare e-mail con URL tracciati vengono utilizzate sia le istanze di Campaign Classic che di Campaign Standard, durante la sincronizzazione potrebbe verificarsi un problema relativo agli ID di tag URL duplicati. Per evitare che ciò si verifichi, aggiorna l&#39;attività **Aggiorna URL di tracciamento** (writerTrackingUrls) nel flusso di lavoro e aggiungi il prefisso &quot;ACS&quot; all&#39;espressione di origine @tagId.
+  > Se per inviare e-mail con URL tracciati vengono utilizzate sia istanze di Campaign Classic che di Campaign Standard, durante la sincronizzazione potrebbe verificarsi un problema relativo agli ID di tag URL duplicati. Per evitare che ciò si verifichi, aggiorna l&#39;attività **Aggiorna URL di tracciamento** (writerTrackingUrls) nel flusso di lavoro e aggiungi il prefisso &quot;ACS&quot; all&#39;espressione di origine @tagId.
 
 * **[!UICONTROL `[ACS] New delivery log replication`]** (newRcpDeliveryLogReplication): questo flusso di lavoro incrementale replica gli ID di consegna, i registri di indirizzi e-mail generali e i registri di tracciamento e-mail da Campaign Standard a Campaign v7. Tiene conto solo delle consegne inviate da Campaign Standard a profili che fanno parte di una tabella specifica (per definire, diversa da nms:recipients) di Campaign v7.
 
@@ -269,9 +269,9 @@ Di seguito è riportato l’elenco dei campi dei destinatari replicati con l’i
 
 ### Conversione dei diritti {#rights-conversion}
 
-I diritti vengono gestiti in modo diverso in Campaign v7 e Campaign Standard. In Campaign v7, la gestione dei diritti è basata su cartelle, mentre in Campaign Standard si basa sull’accesso alle unità (unità organizzative/geografiche). Un utente Campaign Standard appartiene a un gruppo di sicurezza che contiene il contesto di restrizione. Pertanto, il sistema di diritti di Campaign v7 deve essere convertito per corrispondere a quello Campaign Standard. Esistono diversi modi per eseguire la conversione dei diritti. Di seguito trovi un esempio di implementazione.
+I diritti vengono gestiti in modo diverso in Campaign v7 e Campaign Standard. In Campaign v7, la gestione dei diritti è basata su cartelle, mentre in Campaign Standard si basa sull’accesso alle unità (unità organizzative/geografiche). Un utente di Campaign Standard appartiene al gruppo di sicurezza che contiene il contesto di restrizione. Pertanto, il sistema di diritti di Campaign v7 deve essere convertito per corrispondere a quello di Campaign Standard. Esistono diversi modi per eseguire la conversione dei diritti. Di seguito trovi un esempio di implementazione.
 
-1. In **[!UICONTROL Administration > ACS Connector > Rights management > Security groups]**, utilizzare il pulsante **[!UICONTROL Synchronize]** per recuperare tutti i gruppi di sicurezza di Campaign Standard. I gruppi di Campaign Standard preconfigurati sono esclusi.
+1. In **[!UICONTROL Administration > ACS Connector > Rights management > Security groups]** utilizzare il pulsante **[!UICONTROL Synchronize]** per recuperare tutti i gruppi di sicurezza di Campaign Standard. I gruppi Campaign Standard predefiniti sono esclusi.
 
    ![](assets/acs_connect_implementation_4.png)
 

@@ -6,7 +6,7 @@ feature: Workflows
 hide: true
 hidefromtoc: true
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 2186b8a30449cb023cb07305ba64d53f2c8adab1
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 1%
@@ -63,7 +63,7 @@ Per ulteriori informazioni su come monitorare i flussi di lavoro tecnici, consul
 | **Calcolo aggregato completo MessageCenter** (agg_messageCenter_full) | Controllo dei messaggi transazionali (Centro messaggi - Controllo) | Questo flusso di lavoro aggiorna l’aggregato completo per il cubo del centro messaggi. Viene attivato ogni giorno alle 3 per impostazione predefinita. Questo aggregato acquisisce le seguenti dimensioni: Canale, Data, Stato e Tipo evento. Il cubo Centro messaggi viene quindi utilizzato per generare rapporti basati sugli eventi. Ulteriori informazioni sui cubi sono disponibili in [questa sezione](../../reporting/using/ac-cubes.md) |
 | **Mid-sourcing (contatori di consegna)** (defaultMidSourcingDlv) | Trasferisci a mid-sourcing | Questo flusso di lavoro raccoglie informazioni sul conteggio delle consegne sul server di mid-sourcing. Le informazioni sul conteggio includono indicatori generali di consegna come il numero di consegne inviate, ecc. Le informazioni di tracciamento come le aperture non sono incluse. Viene attivato ogni dieci minuti per impostazione predefinita. |
 | **Mid-sourcing (registri di consegna)** (defaultMidSourcingLog) | Trasferisci a mid-sourcing | Questo flusso di lavoro raccoglie i registri di consegna sul server di mid-sourcing. Viene attivato ogni ora per impostazione predefinita. |
-| **Gestione rinuncia NMAC** (mobileAppOptOutMgt) | Canale app mobile | Questo flusso di lavoro aggiorna gli annullamenti degli abbonamenti alle notifiche sui dispositivi mobili. Viene attivato ogni 6 ore tra l’1 e mezzanotte. Per ulteriori dettagli, fare riferimento a [questa sezione](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines). |
+| **Gestione rinuncia NMAC** (mobileAppOptOutMgt) | Canale app mobile | Questo flusso di lavoro aggiorna gli annullamenti degli abbonamenti alle notifiche sui dispositivi mobili. Viene attivato ogni 6 ore tra l’1 e mezzanotte. Per ulteriori dettagli, fare riferimento a [questa sezione](../../delivery/using/delivery-failures-quarantine.md#push-notification-quarantines). |
 | **Notifica offerta** (offerMgt) | Consegna | Questo flusso di lavoro distribuisce le offerte approvate nell’ambiente online, nonché in ogni categoria contenuta nel catalogo delle offerte. |
 | **Pulizia flussi di lavoro sospesi** (cleanupPausedWorkflows) | Consegna | Questo flusso di lavoro analizza i flussi di lavoro in pausa la cui gravità è impostata su Normal e attiva avvisi e notifiche se sono stati messi in pausa troppo a lungo. Dopo un mese, i flussi di lavoro tecnici in pausa vengono interrotti incondizionatamente. Per impostazione predefinita viene attivato ogni lunedì alle 5. Per ulteriori informazioni, consultare [Gestione dei flussi di lavoro in pausa](monitoring-workflow-execution.md#handling-of-paused-workflows). |
 | **Pulizia richieste privacy** (cleanupPrivacyRequests) | Regolamento sulla protezione dei dati personali | Questo flusso di lavoro cancella i file di richiesta di accesso che sono più vecchi di 90 giorni. |
