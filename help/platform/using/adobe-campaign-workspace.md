@@ -59,7 +59,7 @@ Puoi scegliere tra le seguenti lingue:
 * Tedesco
 * Giapponese
 
-La lingua scelta per l’istanza di Adobe Campaign Classic potrebbe influire sui formati di data e ora. Per ulteriori informazioni, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+La lingua scelta per l’istanza di Adobe Campaign Classic potrebbe influire sui formati di data e ora. Per ulteriori informazioni, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 Per ulteriori informazioni su come creare un&#39;istanza, consulta questa [pagina](../../installation/using/creating-an-instance-and-logging-on.md).
 
@@ -110,7 +110,7 @@ Adobe Campaign Explorer è accessibile tramite l’icona della barra degli strum
 
 Per ulteriori informazioni su Adobe Campaign Explorer, consulta queste pagine nella **documentazione di Campaign v8 (console)**:
 
-* [Panoramica dell&#39;interfaccia utente di Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
+* [Panoramica dell&#39;interfaccia utente di Campaign](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
 * [Impostazioni interfaccia utente di Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
@@ -125,7 +125,7 @@ Il filtro dei dati consiste nel restringere un set di dati solo ai record che co
 
 Durante la navigazione in Campaign, i dati vengono visualizzati negli elenchi. Puoi applicare filtri incorporati per accedere rapidamente a un sottoinsieme definito, ad esempio indirizzi messi in quarantena, destinatari non mirati o record all’interno di un intervallo di età o di una data di creazione specifici. Inoltre, puoi creare filtri personalizzati, salvarli per utilizzi futuri e condividerli con altri utenti di Campaign.
 
-Scopri come **accedere, progettare e condividere filtri** nella [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Scopri come **accedere, progettare e condividere filtri** nella [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 ### Eseguire query sul database{#about-queries-in-campaign}
 
@@ -145,23 +145,23 @@ L’editor di query generico centralizza tutte le funzionalità di query. Consen
 
 >[!TAB Eseguire una query sul database]
 
-I passaggi per creare una query sono descritti in dettaglio nella **[documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}**
+I passaggi per creare una query sono descritti in dettaglio nella **[documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}**
 
 
-[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}
 
 
 >[!TAB Aggiungere una query in un flusso di lavoro]
 
-Scopri i passaggi chiave relativi alla creazione di query nel contesto di un flusso di lavoro nella **[documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}**
+Scopri i passaggi chiave relativi alla creazione di query nel contesto di un flusso di lavoro nella **[documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}**
 
-[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
 
 >[!TAB Condizioni filtro]
 
-Per progettare la query, è necessario selezionare le condizioni di filtro nell’editor delle query. Le funzionalità disponibili e i casi di utilizzo sono descritti in dettaglio nella **[documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}**
+Per progettare la query, è necessario selezionare le condizioni di filtro nell’editor delle query. Le funzionalità disponibili e i casi di utilizzo sono descritti in dettaglio nella **[documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}**
 
-[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}
 
 >[!ENDTABS]
 
@@ -177,7 +177,7 @@ Un’enumerazione (detta anche elenco dettagliato) è un elenco predefinito di v
 
 Una volta definiti, i valori vengono visualizzati in un elenco a discesa. Un valore può essere selezionato direttamente o immesso utilizzando l’input predittivo, che suggerisce e completa le voci corrispondenti. Alcuni campi includono enumerazioni predefinite; se necessario, è possibile creare enumerazioni aggiuntive.
 
-Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 ## Video tutorial {#video}
 

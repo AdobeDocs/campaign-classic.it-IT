@@ -27,7 +27,7 @@ Gli elenchi vengono creati e gestiti tramite il collegamento **[!UICONTROL Lists
 
 >[!NOTE]
 >
->Per ulteriori informazioni sugli elenchi e su come crearli e gestirli, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-audiences){target=_blank}.
+>Per ulteriori informazioni sugli elenchi e su come crearli e gestirli, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/audience/create-audiences/create-audiences){target=_blank}.
 
 <!--
 Two types of lists are available in Adobe Campaign:
@@ -147,6 +147,6 @@ Learn how create a workflow in order to target recipients and how to make it rec
 
 >[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
 
-Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
 
 -->
