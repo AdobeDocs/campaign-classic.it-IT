@@ -5,7 +5,7 @@ description: Scopri come gestire le risposte ai sondaggi
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Surveys
 exl-id: 0b5dc602-e16f-4bf1-bd8f-352e0bc78996
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '848'
 ht-degree: 1%
@@ -96,7 +96,7 @@ Per ogni modulo è possibile utilizzare le risposte fornite nei campi o nelle et
 
 >[!NOTE]
 >
->Per altri tipi di campi, la sintassi è descritta in [questa sezione](../../platform/using/about-queries-in-campaign.md).
+>Per altri tipi di campi, la sintassi è descritta in [questa sezione](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
 ### Impostazioni di archiviazione {#storage-settings}
 

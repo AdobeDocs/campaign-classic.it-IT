@@ -9,7 +9,7 @@ level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
 hide: true
 hidefromtoc: true
-source-git-commit: b27b85b126e002c0ea8b5d71da1ed60e1e817980
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 2%
@@ -77,7 +77,7 @@ Nell’esempio seguente, creeremo nuove cartelle per visualizzare dati specifici
 
    >[!NOTE]
    >
-   >L&#39;editor delle query è presentato in [questa sezione](../../platform/using/about-queries-in-campaign.md).
+   >L&#39;editor delle query è presentato in [questa sezione](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
    Con le seguenti condizioni di filtro:
 

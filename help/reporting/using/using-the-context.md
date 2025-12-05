@@ -5,7 +5,7 @@ description: Scopri come utilizzare il contesto nei rapporti
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Reporting, Monitoring
 exl-id: a19e2843-d3f9-48c3-af72-cc1bc54f6360
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 0%
@@ -34,7 +34,7 @@ A tale scopo, fare clic sul collegamento **[!UICONTROL Filter data...]** nella s
 
 Nell’esempio seguente, vogliamo che il grafico mostri solo i profili dei destinatari che vivono in Francia e che hanno effettuato un acquisto durante l’anno.
 
-Per definire questo filtro, inserisci una pagina nel grafico e modificala. Fare clic sul collegamento **[!UICONTROL Filter data]** e creare il filtro corrispondente ai dati che si desidera visualizzare. Per ulteriori informazioni sulla creazione di query in Adobe Campaign, consulta [questa sezione](../../platform/using/about-queries-in-campaign.md).
+Per definire questo filtro, inserisci una pagina nel grafico e modificala. Fare clic sul collegamento **[!UICONTROL Filter data]** e creare il filtro corrispondente ai dati che si desidera visualizzare. Per ulteriori informazioni sulla creazione di query in Adobe Campaign, consulta [questa sezione](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
 ![](assets/s_ncs_advuser_report_wizard_029.png)
 
@@ -55,7 +55,7 @@ Applica i seguenti passaggi:
 1. Posizionare una pagina nel grafico e modificarla.
 1. Creare una tabella pivot.
 1. Passare alla scheda **[!UICONTROL Data]** e selezionare il cubo da utilizzare.
-1. Fare clic sul collegamento **[!UICONTROL Filter data...]** e definire la query seguente per rimuovere l&#39;Adobe dall&#39;elenco delle società.
+1. Fai clic sul collegamento **[!UICONTROL Filter data...]** e definisci la seguente query per rimuovere Adobe dall&#39;elenco delle aziende.
 
    ![](assets/s_ncs_advuser_report_display_03.png)
 
@@ -63,7 +63,7 @@ Solo i destinatari che soddisfano i criteri di filtro verranno visualizzati nel 
 
 ![](assets/s_ncs_advuser_report_display_04.png)
 
-## Utilizzare i dati contestuali {#using-context-data}
+## Utilizza i dati contestuali {#using-context-data}
 
 Per rappresentare i dati sotto forma di **[!UICONTROL table]** o **[!UICONTROL chart]**, i dati possono provenire dal contesto del report.
 

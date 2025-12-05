@@ -5,7 +5,7 @@ description: Modificare i contenuti
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '1229'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Per aggiungere una condizione di visibilità, selezionare un blocco e immetterla
 
 >[!NOTE]
 >
->La modifica avanzata delle espressioni viene presentata in [questa pagina](../../platform/using/about-queries-in-campaign.md).
+>La modifica avanzata delle espressioni viene presentata in [questa pagina](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
 ![](assets/dce_popup_visibilitycondition.png)
 
@@ -259,4 +259,4 @@ L&#39;opzione **Blocco Personalization** consente di inserire blocchi dinamici e
 
 Una volta inserito, il nome del blocco di personalizzazione viene visualizzato nell’editor ed evidenziato in giallo. Viene adattato automaticamente al profilo del destinatario quando viene generata la personalizzazione.
 
-Per ulteriori informazioni sui blocchi di personalizzazione incorporati e su come definire blocchi di personalizzazione personalizzati, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=it){target="_blank"}.
+Per ulteriori informazioni sui blocchi di personalizzazione incorporati e su come definire blocchi di personalizzazione personalizzati, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.

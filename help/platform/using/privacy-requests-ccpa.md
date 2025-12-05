@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 8e308a9f-14a4-4a25-9fd0-8d4bdbcf74ce
-source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 94%
@@ -83,11 +83,11 @@ Accertati di non vendere mai a terzi le informazioni personali dei profili che h
 
    ![](assets/privacy-ccpa-5.png)
 
-1. Configura l’elenco dei destinatari affinché venga visualizzata la colonna della rinuncia. Per informazioni su come configurare gli elenchi, consulta la [documentazione dettagliata](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
+1. Configura l’elenco dei destinatari affinché venga visualizzata la colonna della rinuncia. Per informazioni su come configurare gli elenchi, consulta la [documentazione dettagliata](../../platform/using/adobe-campaign-ui-lists.md#configuring-lists).
 
    ![](assets/privacy-ccpa-6.png)
 
-1. Fai clic sulla colonna per ordinare i destinatari in base alle informazioni di rinuncia. Puoi anche creare un filtro per visualizzare solo i destinatari che hanno rinunciato. Per ulteriori informazioni sui filtri, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+1. Fai clic sulla colonna per ordinare i destinatari in base alle informazioni di rinuncia. Puoi anche creare un filtro per visualizzare solo i destinatari che hanno rinunciato. Per ulteriori informazioni sui filtri, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 
    ![](assets/privacy-ccpa-7.png)

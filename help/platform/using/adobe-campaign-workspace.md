@@ -6,9 +6,9 @@ feature: Overview
 role: Developer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '1166'
 ht-degree: 4%
 
 ---
@@ -59,7 +59,7 @@ Puoi scegliere tra le seguenti lingue:
 * Tedesco
 * Giapponese
 
-La lingua scelta per l’istanza di Adobe Campaign Classic potrebbe influire sui formati di data e ora. Per ulteriori informazioni, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+La lingua scelta per l’istanza di Adobe Campaign Classic potrebbe influire sui formati di data e ora. Per ulteriori informazioni, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 Per ulteriori informazioni su come creare un&#39;istanza, consulta questa [pagina](../../installation/using/creating-an-instance-and-logging-on.md).
 
@@ -69,13 +69,13 @@ Per ulteriori informazioni su come creare un&#39;istanza, consulta questa [pagin
 
 ## Nozioni di base sulla navigazione {#navigation-basics}
 
-### Sfoglia pagine {#browsing-pages}
-
 Le varie funzionalità della piattaforma sono suddivise in funzionalità principali: utilizza i collegamenti riportati nella sezione superiore dell’interfaccia per accedervi.
 
 ![](assets/overview_home.png)
 
 L’elenco delle funzionalità di base a cui puoi accedere dipende dai pacchetti e dai componenti aggiuntivi installati e dai tuoi diritti di accesso.
+
+### Sfoglia pagine {#browsing-pages}
 
 Ogni funzionalità include una serie di funzionalità basate su esigenze correlate alle attività e sul contesto di utilizzo. Ad esempio, il collegamento **[!UICONTROL Profiles and targets]** ti consente di accedere agli elenchi dei destinatari, ai servizi di abbonamento, ai flussi di lavoro di targeting esistenti e alle scelte rapide per la creazione di questi elementi.
 
@@ -106,42 +106,81 @@ Ad esempio, nella pagina della consegna, utilizza il pulsante **[!UICONTROL Crea
 
 ## Utilizzare Adobe Campaign Explorer {#using-adobe-campaign-explorer}
 
-Adobe Campaign Explorer è accessibile tramite l’icona della barra degli strumenti. Consente di accedere ad Adobe Campaign per tutte le funzionalità di Adobe Campaign, le schermate di configurazione e una visualizzazione più dettagliata di alcuni elementi della piattaforma.
+Adobe Campaign Explorer è accessibile tramite l’icona della barra degli strumenti. Consente di accedere a tutte le funzionalità di Adobe Campaign, alle schermate di configurazione e a una visualizzazione più dettagliata di alcuni elementi della piattaforma.
 
 Per ulteriori informazioni su Adobe Campaign Explorer, consulta queste pagine nella **documentazione di Campaign v8 (console)**:
 
-* [Panoramica dell&#39;interfaccia utente di Campaign](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
+* [Panoramica dell&#39;interfaccia utente di Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
 * [Impostazioni interfaccia utente di Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
-* [Gestione di cartelle e visualizzazioni in Esplora risorse](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
+* [Gestione di cartelle e visualizzazioni in Esplora risorse](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}
 
 
-## Filtrare i dati {#filters}
+## Utilizzare i dati {#work-with-data}
+
+### Filtrare i dati {#filters}
 
 Il filtro dei dati consiste nel restringere un set di dati solo ai record che corrispondono a criteri specifici. Questo sottoinsieme può quindi essere utilizzato per azioni mirate (come aggiornamenti o creazione di tipi di pubblico) o per l’analisi.
 
 Durante la navigazione in Campaign, i dati vengono visualizzati negli elenchi. Puoi applicare filtri incorporati per accedere rapidamente a un sottoinsieme definito, ad esempio indirizzi messi in quarantena, destinatari non mirati o record all’interno di un intervallo di età o di una data di creazione specifici. Inoltre, puoi creare filtri personalizzati, salvarli per utilizzi futuri e condividerli con altri utenti di Campaign.
 
-Scopri come **accedere, progettare e condividere filtri** nella [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Scopri come **accedere, progettare e condividere filtri** nella [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+
+### Eseguire query sul database{#about-queries-in-campaign}
+
+Lo strumento di query è disponibile a vari livelli dell’applicazione e può essere utilizzato per definire popolazioni target, segmentare i clienti, estrarre e filtrare i registri di tracciamento, creare filtri e altro ancora.
+
++++Informazioni sull’editor di query generico
+
+Fornisce un assistente dedicato, l&#39;editor di query generico, accessibile dal menu **[!UICONTROL Tools > Generic query editor...]**. Questo editor consente alle query di database di estrarre, organizzare, raggruppare e ordinare le informazioni. Ad esempio, può recuperare i destinatari che hanno fatto clic più di n volte su un collegamento a una newsletter durante un determinato periodo di tempo.
+
+L’editor di query generico centralizza tutte le funzionalità di query. Consente la creazione e l’archiviazione di filtri di restrizione, che possono quindi essere riutilizzati in altri contesti, ad esempio la casella Query di un flusso di lavoro di targeting.
+
+![Accedere all&#39;editor delle query e selezionare una tabella](assets/query_editor_nveau_21.png)
+
++++
+
+>[!BEGINTABS]
+
+>[!TAB Eseguire una query sul database]
+
+I passaggi per creare una query sono descritti in dettaglio nella **[documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}**
 
 
-## Utilizzare gli elenchi {#manage-and-customize-lists}
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}
+
+
+>[!TAB Aggiungere una query in un flusso di lavoro]
+
+Scopri i passaggi chiave relativi alla creazione di query nel contesto di un flusso di lavoro nella **[documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}**
+
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
+
+>[!TAB Condizioni filtro]
+
+Per progettare la query, è necessario selezionare le condizioni di filtro nell’editor delle query. Le funzionalità disponibili e i casi di utilizzo sono descritti in dettaglio nella **[documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}**
+
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}
+
+>[!ENDTABS]
+
+### Gestisci elenchi {#manage-and-customize-lists}
 
 Nella console client di Campaign, i dati vengono visualizzati in elenchi. È possibile adattare questi elenchi alle proprie esigenze. Ad esempio, puoi aggiungere colonne, filtrare dati, contare record, salvare e condividere le impostazioni.
 
 Scopri come **gestire e personalizzare gli elenchi** nella [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
 
-## Gestire le enumerazioni{#managing-enumerations}
+### Gestire le enumerazioni{#managing-enumerations}
 
 Un’enumerazione (detta anche elenco dettagliato) è un elenco predefinito di valori che è possibile utilizzare per compilare determinati campi. Le enumerazioni consentono di standardizzare i valori dei campi, rendendo più coerente l&#39;immissione dei dati e semplificando le query.
 
 Una volta definiti, i valori vengono visualizzati in un elenco a discesa. Un valore può essere selezionato direttamente o immesso utilizzando l’input predittivo, che suggerisce e completa le voci corrispondenti. Alcuni campi includono enumerazioni predefinite; se necessario, è possibile creare enumerazioni aggiuntive.
 
-Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 ## Video tutorial {#video}
 
 Questo video presenta l’area di lavoro di Campaign Classic.
 
->[!VIDEO](https://video.tv.adobe.com/v/39537?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)

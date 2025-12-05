@@ -7,7 +7,7 @@ badge: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classi
 hide: true
 hidefromtoc: true
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '1506'
 ht-degree: 1%
@@ -52,7 +52,7 @@ Nell&#39;esempio seguente, le lingue sono raggruppate in tre categorie: inglese/
 
 È possibile utilizzare una maschera SQL per combinare più valori in un filtro. A tale scopo, selezionare **[!UICONTROL Yes]** nella colonna **[!UICONTROL Use an SQL mask]** e immettere il filtro SQL da applicare nella colonna **[!UICONTROL Value or expression]**.
 
-Nell&#39;esempio seguente, tutti i domini e-mail che iniziano con **yahoo** (yahoo.fr, yahoo.com, yahoo.be, ecc.) o con **ymail** (ymail.com, ymail.eu, ecc.) sarà raggruppato sotto l&#39;etichetta **YAHOO!**, nonché gli indirizzi con il dominio **rocketmail.com**.
+Nell&#39;esempio seguente, tutti i domini e-mail che iniziano con **yahoo** (yahoo.fr, yahoo.com, yahoo.be, ecc.) o con **ymail** (ymail.com, ymail.eu, ecc.) verranno raggruppati sotto l&#39;etichetta **YAHOO!**, nonché gli indirizzi con il dominio **rocketmail.com**.
 
 ![](assets/s_advuser_cube_class_03b.png)
 
@@ -115,7 +115,7 @@ Per creare un report utilizzando questa enumerazione, creare un cubo utilizzando
 
 Quindi, crea un report basato su questo cubo per visualizzare i valori.
 
-È sufficiente modificare l’enumerazione per aggiornare il rapporto correlato. Creare ad esempio il valore **Adobe** e aggiungere l&#39;alias **adobe.com**. Il report verrà aggiornato automaticamente con il valore Adobe a livello di enumerazione.
+È sufficiente modificare l’enumerazione per aggiornare il rapporto correlato. Ad esempio, crea il valore **Adobe** e aggiungi l&#39;alias **adobe.com**. Il report verrà aggiornato automaticamente con il valore Adobe a livello di enumerazione.
 
 ![](assets/nmx_add_alias.png)
 
@@ -171,7 +171,7 @@ Per definire una nuova misura, attenersi alla seguente procedura:
 
 1. Se necessario, e a seconda dell’operatore, scegli l’espressione interessata dall’operazione.
 
-   Il pulsante **[!UICONTROL Advanced selection]** consente di creare formule di calcolo complesse. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/about-queries-in-campaign.md).
+   Il pulsante **[!UICONTROL Advanced selection]** consente di creare formule di calcolo complesse. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
    ![](assets/s_advuser_cube_create_a_measure_01.png)
 

@@ -6,7 +6,7 @@ feature: Query Editor, Workflows
 hide: true
 hidefromtoc: true
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
-source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 3%
@@ -39,7 +39,7 @@ Per creare questo esempio, attieniti alla seguente procedura:
 
 1. Nella finestra **[!UICONTROL Data to extract]**, selezionare i campi **[!UICONTROL Email domain]** e **[!UICONTROL Primary key]**. Eseguire un conteggio nel campo **[!UICONTROL Primary key]**.
 
-   Per ulteriori informazioni sui conteggi delle chiavi primarie, consulta [questa sezione](../../platform/using/about-queries-in-campaign.md).
+   Per ulteriori informazioni sui conteggi delle chiavi primarie, consulta [questa sezione](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
 1. Selezionare la casella **[!UICONTROL Handle groupings (GROUP BY + HAVING)]**.
 

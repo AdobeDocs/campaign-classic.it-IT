@@ -6,7 +6,7 @@ feature: Troubleshooting
 hidefromtoc: true
 hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 66%
@@ -48,7 +48,7 @@ Ottieni supporto tramite domande frequenti, best practice, risorse online e port
         <ul>
         <li><a href="production/using/performance-and-throughput-issues.md">Problemi relativi a prestazioni e velocità effettiva</a></li>
         <li><a href="delivery/using/delivery-performance-troubleshooting.md">Prestazioni di consegna</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=it" target="_blank">Ottimizzare le prestazioni del flusso di lavoro</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html" target="_blank">Ottimizzare le prestazioni del flusso di lavoro</a></li>
         <li><a href="workflow/using/monitoring-workflow-execution.md">Risoluzione dei problemi di esecuzione dei flussi di lavoro</a></li>
         <li><a href="platform/using/sftp-server-usage.md">Utilizzo del server SFTP</a></li>
         <li><a href="delivery/using/delivery-failures-quarantine.md">Errori di consegna</a></li>
@@ -56,14 +56,14 @@ Ottieni supporto tramite domande frequenti, best practice, risorse online e port
     </td>
    <td valign="top">
         <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=it" target="_blank">Best practice per i flussi di lavoro</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html" target="_blank">Best practice per i flussi di lavoro</a></li>
         <li><a href="workflow/using/monitoring-technical-workflows.md">Monitoraggio tecnico dei flussi di lavoro</a></li>
-        <li><a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Gestione del tracciamento</a></li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Gestione del tracciamento</a></li>
         <li><a href="production/using/monitoring-guidelines.md">Scopri gli strumenti di monitoraggio</a></li>
         <li><a href="platform/using/import-export-workflows.md">Importare dati con flussi di lavoro</a></li>
         <li><a href="delivery/using/steps-sending-the-delivery.md">Inviare messaggi in più ondate</a></li>
         <li><a href="delivery/using/defining-the-email-content.md">Progettare contenuti e-mail</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=it" target="_blank">Best practice per la consegna</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html" target="_blank">Best practice per la consegna</a></li>
         </ul>
     </td>
     <td valign="top">
@@ -74,7 +74,7 @@ Ottieni supporto tramite domande frequenti, best practice, risorse online e port
         <li><a href="delivery/using/delivery-failures-quarantine.md">Gestione della quarantena</a></li>
         <li><a href="installation/using/get-started-security-privacy.md">Lista di controllo per sicurezza e privacy</a></li>
         <li><a href="platform/using/privacy-management.md">Privacy e gestione del consenso</a></li>
-        <li><a href="platform/using/about-queries-in-campaign.md">Progettare una query</a></li>
+        <li><a href="platform/using/adobe-campaign-workspace.md#about-queries-in-campaign">Progettare una query</a></li>
         <li><a href="workflow/using/querying-recipient-table.md">Esempi di query</a></li>
         <li><a href="workflow/using/building-a-workflow.md">Creare un flusso di lavoro</a></li>
         </ul>
@@ -103,11 +103,11 @@ Il Pannello di controllo è disponibile direttamente da Adobe Experience Cloud. 
 
 ### Domande frequenti sul Pannello di controllo
 
-[Fai clic qui &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=it) per accedere alle domande frequenti sul Pannello di controllo Campaign.
+[Fai clic qui ](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=it) per accedere alle domande frequenti sul Pannello di controllo Campaign.
 
 ### Gestione SFTP
 
-Nel Pannello di controllo, puoi interagire con tutti i server SFTP collegati alle istanze di Campaign a cui hai accesso. Puoi monitorarne la capacità di archiviazione, gestire gli indirizzi IP sul inserisco nell&#39;elenco Consentiti di storage e le chiavi SSH pubbliche. Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=it).
+Nel Pannello di controllo, puoi interagire con tutti i server SFTP collegati alle istanze di Campaign a cui hai accesso. Puoi monitorarne la capacità di archiviazione, gestire gli indirizzi IP sul inserisco nell&#39;elenco Consentiti di storage e le chiavi SSH pubbliche. Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
 
 ### Sottodomini e certificati
 
