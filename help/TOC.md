@@ -7,9 +7,9 @@ user-guide-title: Guida di Campaign Classic v7
 user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: a0b8f6adef371bad5342524aaf4ce30f3933f2da
+source-git-commit: 7b3d34ddde08f0bfc8d35f4e17e9eef4eb640483
 workflow-type: tm+mt
-source-wordcount: '2685'
+source-wordcount: '2686'
 ht-degree: 99%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 99%
    + Domande frequenti {#faq}
       + [Domande frequenti su Campaign Classic](platform/using/faq-campaign-classic-v7.md)
       + [Aggiornamento della build](platform/using/faq-build-upgrade.md)
-   + [Glossario](platform/using/ac-glossary.md)
+   + [Glossario - NASCOSTO](platform/using/ac-glossary.md)
    + Privacy {#privacy}
       + [Privacy e consenso](platform/using/privacy-and-recommendations.md)
       + [Gestione della privacy](platform/using/privacy-management.md)
@@ -352,7 +352,7 @@ ht-degree: 99%
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Utilizzare  [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Configurare l’integrazione](integrations/using/configuring-the-integration.md)
-      + [Creare una newsletter [!DNL Experience Manager] &#x200B;](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Creare una newsletter [!DNL Experience Manager] ](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
       + [Utilizzare  [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Configurare l’integrazione con [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
