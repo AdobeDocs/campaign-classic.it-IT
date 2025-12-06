@@ -31,7 +31,7 @@ I passaggi chiave durante la creazione di una consegna sono i seguenti:
 
 1. **Invia la consegna**. [Ulteriori informazioni](steps-sending-the-delivery.md)
 
-1. **Monitora la consegna** (monitoraggio, quarantena, report, ecc.). Per ulteriori informazioni, consulta le sezioni [Monitoraggio delle consegne](about-delivery-monitoring.md) e [Tracciamento dei messaggi](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"}.
+1. **Monitora la consegna** (monitoraggio, quarantena, report, ecc.). Per ulteriori informazioni, consulta le sezioni [Monitoraggio delle consegne](about-delivery-monitoring.md) e [Tracciamento dei messaggi](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"}.
 
 >[!NOTE]
 >

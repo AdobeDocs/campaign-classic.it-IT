@@ -79,8 +79,8 @@ Alcuni provider di accesso a Internet considerano automaticamente le e-mail come
 
 Per ulteriori informazioni, consulta le sezioni seguenti:
 
-* [Errori di consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (documentazione di Campaign v8: guida completa)
-* [Informazioni sulla gestione della quarantena](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (documentazione di Campaign v8: guida completa)
+* [Errori di consegna](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (documentazione di Campaign v8: guida completa)
+* [Informazioni sulla gestione della quarantena](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (documentazione di Campaign v8: guida completa)
 
 ### Utilizzare strumenti di monitoraggio e reporting
 
