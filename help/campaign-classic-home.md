@@ -84,7 +84,7 @@ Alcune importanti modifiche al servizio Android Firebase Cloud Messaging (FCM) v
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>Esperienza cliente</strong><br/><a href="workflow/using/about-workflows.md">Automatizza con i flussi di lavoro</a> - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=it" target="_blank">Campagna di marketing</a> - <a href="interaction/using/interaction-and-offer-management.md">Gestione dell’interazione e delle offerte</a> - <a href="delivery/using/about-personalization.md">Personalizzazione</a> - <a href="reporting/using/about-adobe-campaign-reporting-tools.md">Reporting</a>
+      <strong>Esperienza cliente</strong><br/><a href="workflow/using/about-workflows.md">Automatizzare con i flussi di lavoro</a> - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=it" target="_blank">Campagna di marketing</a> - <a href="interaction/using/interaction-and-offer-management.md">Gestione delle interazioni e delle offerte</a> - <a href="delivery/using/about-personalization.md">Personalizzazione</a> - <a href="reporting/using/about-adobe-campaign-reporting-tools.md">Reporting</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
