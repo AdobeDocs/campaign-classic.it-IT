@@ -79,7 +79,7 @@ Consulta la [Matrice di compatibilità di Campaign](../../rn/using/compatibility
 * È stato risolto un problema che poteva bloccare la console del client a causa di un carattere non valido in un blocco di personalizzazione. (NEO-45761)
 * È stato risolto un problema che poteva causare problemi di connessione durante la creazione di un account esterno per Snowflake come database esterno. (NEO-45744)
 * È stato risolto un problema a causa del quale le informazioni delle tabelle potevano risultare protette da un attributo visibleIf. (NEO-37865)
-* È stato risolto un problema a causa del quale poteva comparire il messaggio di errore “$ non è definito” durante la fase di analisi della consegna. (NEO-32940)
+* È stato risolto un problema a causa del quale il messaggio di errore “$ non è definito” poteva essere visualizzato durante la fase di analisi della consegna. (NEO-32940)
 * È stato risolto un problema che causava l’associazione delle consegne a un eventType errato. (NEO-45743)
 * È stato risolto un problema che poteva provocare arresti anomali a causa di core dump intermittenti. (NEO-30549)
 * È stato risolto un problema che poteva causare arresti anomali durante l’utilizzo di codice HTML errato in una consegna. (NEO-40385)
@@ -168,7 +168,7 @@ Adobe Campaign è ora compatibile con Windows Server 2019. Consulta la [Matrice 
 * È stato corretto un errore che si verificava utilizzando un modello di consegna creato in precedenza collegato a un account Web Analytics in una nuova consegna in cui la configurazione di Web Analytics era mancante. (NEO-28666)
 * È stato risolto un problema che poteva impedire la visualizzazione in anteprima delle consegne mobili collegate a un flusso di lavoro.
 * È stato corretto un errore che impediva il reindirizzamento degli URL di tracciamento personalizzati quando era abilitato il meccanismo di firma URL per i collegamenti di tracciamento.
-* È stato risolto un problema che poteva causare errori di post aggiornamento a causa di un problema di gestione dell’indice.
+* È stato risolto un problema che poteva causare errori di post-aggiornamento a causa di un problema di gestione dell’indice.
 * È stato corretto un errore che si verificava durante l’utilizzo dei tipi di dati dei campi di ricerca con Microsoft Dynamics CRM nelle attività del flusso di lavoro **Importa** o **Esporta**.
 * È stato risolto un problema che poteva impedire agli utenti di accedere alla console a causa di un problema di configurazione proxy. (NEO-38388)
 * È stato risolto un problema di regressione che impediva il funzionamento corretto della funzionalità **Purge folder** (Svuota cartella). (NEO-37459)

@@ -52,7 +52,7 @@ Per questo motivo è fondamentale **eseguire la build stabile più recente** di 
 
 In qualità di cliente in hosting, puoi beneficiare automaticamente, senza alcun intervento da parte tua, dell’aggiornamento alla build stabile più recente. Ulteriori informazioni nella [sezione Aggiornamento annuale](#yearly-upgrade). Se effettui la migrazione da una build precedente, Adobe consiglia di eseguire prima l’aggiornamento a questa build.
 
-## Raccomandazioni {#rn-recommendations}
+## Consigli {#rn-recommendations}
 
 Per garantire una configurazione stabile, si consiglia di installare **la stessa build** su tutti i server in esecuzione sulla stessa configurazione client.
 
@@ -84,7 +84,7 @@ In qualità di cliente on-premise o ibrido che utilizza una build precedente, Ad
 
 In questo modo il tuo account sarà protetto da eventuali vulnerabilità e potrà sfruttare le prestazioni fornite dalle tecnologie aggiornate. Questo aggiornamento consentirà anche al tuo account di usufruire di aggiornamenti più semplici, regolari e meno laboriosi.
 
-### Quali sono il processo e tempistica di questo aggiornamento?
+### Quali sono il processo e le tempistiche di questo aggiornamento?
 
 Il team Adobe guiderà la tua organizzazione attraverso questo percorso.
 
