@@ -9,7 +9,7 @@ ht-degree: 0%
 
 **2 richiede pour analyzer et réorganizer la doc v7 → v8**
 
----
+&#x200B;---
 
 ## 📁 Fichiers
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 | `PROMPT-1-OVERVIEW-ALL-FOLDERS.md` | Vue d&#39;ensemble de TOUS les folders v7 | `v7-reorganization-overview.md` |
 | `PROMPT-2-DETAILED-FOLDER.md` | Analizza corrispondenza % avec cartella détaillée d&#39;UN | `[folder]-detailed-analysis.md` |
 
----
+&#x200B;---
 
 ## Utilizzo di 🚀
 
@@ -45,7 +45,7 @@ open PROMPT-1-OVERVIEW-ALL-FOLDERS.md
 
 **Taille** : ~50-60 pagine Markdown
 
----
+&#x200B;---
 
 ### 2️⃣ Analizzare la cartella Détaillée d&#39;un
 
@@ -78,7 +78,7 @@ open PROMPT-2-DETAILED-FOLDER.md
 
 **Taille** : ~30-40 pagine Markdown
 
----
+&#x200B;---
 
 ## 📊 Esempio d&#39;Output
 
@@ -117,66 +117,35 @@ open PROMPT-2-DETAILED-FOLDER.md
 ...
 ```
 
----
+&#x200B;---
 
 ## 🎯 consigliato flusso di lavoro
 
-### Semaine 1 : Vue d&#39;ensemble
-1. Exécuter **Prompt 1** → Obtenir `v7-reorganization-overview.md`
-2. L’identificatore definisce le priorità delle cartelle
-3. Consulenza utenti finali
+### Semaine 1 : Vue d&#39;ensemble1. Exécuter **Prompt 1** → Obtenir `v7-reorganization-overview.md`2. L’identificatore definisce le priorità delle cartelle3. Consulenza utenti finali
 
-### Semaine 2-4 : Analizzare détaillée
-1. Priorità cartella di spostamento:
-   - Esperto **Prompt 2**
-   - Obtenir `[folder]-detailed-analysis.md`
-   - Valider les décisions
-   - Azioni del campo Inizio
+### Semaine 2-4 : Analizzare détaillée1. Priorità cartella di spostamento:   - Esperto **Prompt 2**   - Obtenir `[folder]-detailed-analysis.md`   - Valider les décisions   - Azioni del campo Inizio
 
-### Semaine 5+: Esecuzione
-1. Supprimer les fichiers identifiés (DELETE)
-2. Badger les fichiers v7-only (KEEP)
-3. Manichino Migrer le contenu (MOVE)
-4. Recensore les cas ambigus (RECENSIONE)
+### Semaine 5+: Esecuzione1. Supprimer les fichiers identifiés (DELETE)2. Badger les fichiers v7-only (KEEP)3. Manichino Migrer le contenu (MOVE)4. Recensore les cas ambigus (RECENSIONE)
 
----
+&#x200B;---
 
 ## 💡 suggerimenti
 
-### Versare i prompt
-- ✅ copia/coller l&#39;intégralité du prompt
-- ✅ Nuovo formato modificatore pas
-- ✅ seulement delle schede chemin du folder (Prompt 2)
+### Versare i prompt- ✅ copia/coller l&#39;intégralité du prompt- ✅ Nuovo formato modificatore pas- ✅ seulement delle schede chemin du folder (Prompt 2)
 
-### Pour les output
-- Output di 📝 in Markdown (pas HTML)
-- 🔗 tipi di client automatici
-- ✅ Caselle di controllo versano tracciamento
-- 📊 Statistiche et pourcentages
-- 🎨 Emojis e icônes
+### Pour les output- Output di 📝 in Markdown (pas HTML)- 🔗 tipi di client automatici- ✅ Caselle di controllo versano tracciamento- 📊 Statistiche et pourcentages- 🎨 Emojis e icônes
 
-### Pour l&#39;analyse
-- 🎯 Cartelle gros par les di Commencer (consegna, flusso di lavoro)
-- ⚡ Prioriser les quick wins (95-100% di corrispondenza)
-- 🔍 Manuale del revisore les cas ambigus (corrispondenza &lt;70%)
-- ✅ Valider avec SME avant soppressione massiccia
+### Pour l&#39;analyse- 🎯 Cartelle gros par les di Commencer (consegna, flusso di lavoro)- ⚡ Prioriser les quick wins (95-100% di corrispondenza)- 🔍 Manuale del revisore les cas ambigus (corrispondenza &lt;70%)- ✅ Valider avec SME avant soppressione massiccia
 
----
+&#x200B;---
 
 ## ⚠️ importante
 
-### Avant de supprimer
-1. ✅ Vérifier l&#39;équivalent v8
-2. ✅ Vérifier qu&#39;il n&#39;y a pas de contenu specifico per v7
-3. ✅ Metri à jour `redirects.csv`
-4. ✅ Valider avec un expert (pour les premiers)
+### Avant de supprimer1. ✅ Vérifier l&#39;équivalent v82. ✅ Vérifier qu&#39;il n&#39;y a pas de contenu specifico per v73. ✅ Metri à jour `redirects.csv`4. ✅ Valider avec un expert (pour les premiers)
 
-### Pour les fichiers v7-only
-1. ✅ Ajouter un badge au début du fichier
-2. ✅ Expliquer pourquoi c&#39;est v7-only
-3. ✅ Limitazioni di Lien vers les v8
+### Pour les fichiers v7-only1. ✅ Ajouter un badge au début du fichier2. ✅ Expliquer pourquoi c&#39;est v7-only3. ✅ Limitazioni di Lien vers les v8
 
----
+&#x200B;---
 
 ## Supporto 🆘
 
@@ -185,7 +154,7 @@ open PROMPT-2-DETAILED-FOLDER.md
 - Trop di produzione lungo → Demander un résumé
 - Besoin d&#39;aide → Ping l&#39;équipe doc
 
----
+&#x200B;---
 
 **Dernière mise à jour** : 13/01/2026
 

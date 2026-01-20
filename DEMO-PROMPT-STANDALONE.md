@@ -9,7 +9,7 @@ ht-degree: 0%
 
 **Copia e incolla l&#39;intero prompt in Cursor/ChatGPT per analizzare qualsiasi cartella v7**
 
----
+&#x200B;---
 
 ## 📋 IL PROMPT (COPIA DA QUI) ⬇️
 
@@ -187,57 +187,27 @@ Generate a complete Markdown report with this structure:
 Generate the complete Markdown report now.
 ```
 
----
+&#x200B;---
 
 ## 🎯 ISTRUZIONI DEMO
 
-### Passaggio 1: visualizzare la richiesta
-1. Apri il file (`DEMO-PROMPT-STANDALONE.md`)
-2. Scorri fino alla sezione &quot;IL PROMPT&quot;
-3. Dire: *&quot;Questo è il nostro prompt di analisi automatizzata&quot;*
+### Passaggio 1: visualizzare la richiesta1. Apri il file (`DEMO-PROMPT-STANDALONE.md`)2. Scorri fino alla sezione &quot;IL PROMPT&quot;3. Dire: *&quot;Questo è il nostro prompt di analisi automatizzata&quot;*
 
-### Passaggio 2: copia la richiesta
-1. Seleziona tutto, da &quot;# Analisi della documentazione di Campaign v7&quot; alla fine
-2. Copia negli Appunti
-3. Dire: *&quot;Copia l&#39;intero prompt...&quot;*
+### Passaggio 2: copia la richiesta1. Seleziona tutto, da &quot;# Analisi della documentazione di Campaign v7&quot; alla fine2. Copia negli Appunti3. Dire: *&quot;Copia l&#39;intero prompt...&quot;*
 
-### Passaggio 3: Incollare ed eseguire
-1. Apri cursore
-2. Incolla il prompt
-3. Dì: *&quot;...e incollalo nel cursore&quot;*
-4. Premi Invio
+### Passaggio 3: Incollare ed eseguire1. Apri cursore2. Incolla il prompt3. Dì: *&quot;...e incollalo nel cursore&quot;*4. Premi Invio
 
-### Passaggio 4: mostrare i risultati
-1. Attendere la generazione (~30-60 secondi)
-2. Scorri nel rapporto generato
-3. Evidenzia sezioni chiave:
-   - 📊 statistiche di riepilogo
-   - 📋 tabella file per file
-   - ✅ deve mantenere la sezione
-   - 🗑️ risultati positivi rapidi
-   - 🎯 piano di esecuzione
+### Passaggio 4: mostrare i risultati1. Attendere la generazione (~30-60 secondi)2. Scorri nel rapporto generato3. Evidenzia sezioni chiave:   - 📊 statistiche di riepilogo   - 📋 tabella file per file   - ✅ deve mantenere la sezione   - 🗑️ risultati positivi rapidi   - 🎯 piano di esecuzione
 
-### Passaggio 5: Momento di insuccesso
-1. Mostra l’anteprima markdown
-2. Osserva:
-   - *&quot;111 file analizzati automaticamente&quot;*
-   - *&quot;Eliminazione sicura di 67 file (riduzione del 60%)&quot;*
-   - *&quot;File specifici di v7 identificati&quot;*
-   - *&quot;Completare il piano di esecuzione con le tempistiche&quot;*
+### Passaggio 5: Momento di insuccesso1. Mostra l’anteprima markdown2. Osserva:   - *&quot;111 file analizzati automaticamente&quot;*   - *&quot;Eliminazione sicura di 67 file (riduzione del 60%)&quot;*   - *&quot;File specifici di v7 identificati&quot;*   - *&quot;Completare il piano di esecuzione con le tempistiche&quot;*
 
----
+&#x200B;---
 
 ## 💡 SUGGERIMENTI DEMO
 
-### Rendi interattivo
-**Chiedi al pubblico**: *&quot;Quale cartella analizzare?&quot;*
-- consegna ✅ (111 file - notevole)
-- flusso di lavoro ✅ (121 file, anche più grandi)
-- web ✅ (26 file - demo rapida)
-- generazione rapporti ✅ (32 file - fast)
+### Rendi interattivo&#x200B;**Chiedi al pubblico**: *&quot;Quale cartella analizzare?&quot;*- consegna ✅ (111 file - notevole)- flusso di lavoro ✅ (121 file, anche più grandi)- web ✅ (26 file - demo rapida)- generazione rapporti ✅ (32 file - fast)
 
-### Personalizza al volo
-**Mostra flessibilità**: cambia il percorso della cartella nel prompt:
+### Personalizza al volo&#x200B;**Mostra flessibilità**: cambia il percorso della cartella nel prompt:
 
 ```
 /help/workflow/using/  → Analyze workflows
@@ -245,19 +215,13 @@ Generate the complete Markdown report now.
 /help/platform/using/  → Analyze platform
 ```
 
-### Evidenzia caratteristiche principali
-1. **Automazione**: *&quot;Nessun lavoro manuale richiesto&quot;*
-2. **Precisione**: *&quot;Utilizza la documentazione v8 per il confronto&quot;*
-3. **Actionable**: *&quot;Piano pronto per l&#39;esecuzione con caselle di controllo&quot;*
-4. **Smart**: *&quot;Identifica automaticamente le funzionalità specifiche di v7&quot;*
+### Evidenzia caratteristiche principali1. **Automazione**: *&quot;Nessun lavoro manuale richiesto&quot;*2. **Precisione**: *&quot;Utilizza la documentazione v8 per il confronto&quot;*3. **Actionable**: *&quot;Piano pronto per l&#39;esecuzione con caselle di controllo&quot;*4. **Smart**: *&quot;Identifica automaticamente le funzionalità specifiche di v7&quot;*
 
-### Confronto dei tempi
-**Prima**: *&quot;Analisi manuale = 2-3 giorni per cartella&quot;*\
-**Dopo**: *&quot;Analisi automatizzata = 30 secondi per cartella&quot;*
+### Confronto dei tempi&#x200B;**Prima**: *&quot;Analisi manuale = 2-3 giorni per cartella&quot;*\**Dopo**: *&quot;Analisi automatizzata = 30 secondi per cartella&quot;*
 
 **ROI**: *&quot;21 cartelle × 2 giorni = 42 giorni → 15 minuti&quot;*
 
----
+&#x200B;---
 
 ## 📊 ANTEPRIMA DI OUTPUT PREVISTA
 
@@ -304,7 +268,7 @@ Week 2: Badge 18 files
 Week 3: Review 18 files
 ```
 
----
+&#x200B;---
 
 ## SCRIPT DEMO 🎬
 
@@ -336,7 +300,7 @@ Week 3: Review 18 files
 **Chiudi**:
 > &quot;Questo stesso processo funziona per tutte le 21 cartelle. Quello che prima richiedeva 6 settimane ora richiede 15 minuti.&quot;
 
----
+&#x200B;---
 
 ## 🚀 PRONTO PER LA DEMO.
 

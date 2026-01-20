@@ -11,7 +11,7 @@ ht-degree: 6%
 **Generato**: 13/01/2026\
 **File totali**: 111
 
----
+&#x200B;---
 
 ## Riepilogo 📈
 
@@ -25,7 +25,7 @@ ht-degree: 6%
 
 **🎯Impatto riorganizzazione**: 67 file da eliminare (riduzione del 60%)
 
----
+&#x200B;---
 
 ## 📋 analisi completa dei file
 
@@ -44,7 +44,7 @@ ht-degree: 6%
 
 **Riepilogo**: 7 DELETE, 0 KEEP, 0 MOVE, 1 REVIEW
 
----
+&#x200B;---
 
 ### E-mail 📧 (18 file)
 
@@ -64,7 +64,7 @@ ht-degree: 6%
 
 **Riepilogo**: 16 DELETE, 0 KEEP, 0 MOVE, 2 REVIEW
 
----
+&#x200B;---
 
 ### 📱 SMS (7 file)
 
@@ -80,7 +80,7 @@ ht-degree: 6%
 
 **Riepilogo**: 5 DELETE, 1 KEEP, 0 MOVE, 1 REVIEW
 
----
+&#x200B;---
 
 ### 🔔 notifiche push (9 file)
 
@@ -95,7 +95,7 @@ ht-degree: 6%
 
 **Riepilogo**: 8 DELETE, 0 KEEP, 0 MOVE, 1 REVIEW
 
----
+&#x200B;---
 
 ### 📮 direct mailing (4 file)
 
@@ -108,7 +108,7 @@ ht-degree: 6%
 
 **Riepilogo**: 4 DELETE, 0 KEEP, 0 MOVE, 0 REVIEW
 
----
+&#x200B;---
 
 ### 🎯 Personalization (8 file)
 
@@ -123,7 +123,7 @@ ht-degree: 6%
 
 **Riepilogo**: 6 DELETE, 1 KEEP, 0 MOVE, 1 REVIEW
 
----
+&#x200B;---
 
 ### 📋 modelli e seed (6 file)
 
@@ -136,7 +136,7 @@ ht-degree: 6%
 
 **Riepilogo**: 6 DELETE, 0 KEEP, 0 MOVE, 0 REVIEW
 
----
+&#x200B;---
 
 ### Monitoraggio di 📊 (14 file)
 
@@ -149,7 +149,7 @@ ht-degree: 6%
 
 **Riepilogo**: 12 DELETE, 0 KEEP, 1 MOVE, 1 REVIEW
 
----
+&#x200B;---
 
 ### 🔧 Risoluzione dei problemi (9 file)
 
@@ -163,7 +163,7 @@ ht-degree: 6%
 
 **Riepilogo**: 4 DELETE, 2 KEEP, 2 MOVE, 1 REVIEW
 
----
+&#x200B;---
 
 ### Recapito messaggi 📬 (8 file)
 
@@ -176,7 +176,7 @@ ht-degree: 6%
 
 **Riepilogo**: 4 DELETE, 3 KEEP, 0 MOVE, 1 REVIEW
 
----
+&#x200B;---
 
 ## ✅ deve mantenere - Caratteristiche specifiche per v7
 
@@ -190,7 +190,7 @@ ht-degree: 6%
 | `monitoring-deliverability.md` | Strumenti di monitoraggio on-premise | &quot;Gli strumenti di monitoraggio della consegna dei messaggi on-premise sono specifici di Campaign v7&quot; |
 | ... | *(altri 14 file specifici per v7)* | Vari badge solo v7 |
 
----
+&#x200B;---
 
 ## 🗑️ risultati positivi - Eliminazione sicura
 
@@ -223,7 +223,7 @@ ht-degree: 6%
 
 **Totale**: **67 file** da eliminare immediatamente
 
----
+&#x200B;---
 
 ## ➡️ contenuto da migrare
 
@@ -240,7 +240,7 @@ ht-degree: 6%
 
 **Processo**: esegui la migrazione del contenuto → Aggiorna v8 → Elimina da v7
 
----
+&#x200B;---
 
 ## 🔍 revisione manuale richiesta
 
@@ -253,36 +253,22 @@ ht-degree: 6%
 | `sending-emails-on-japanese-mobiles.md` | 0% | Specifico per il Giappone, verifica pertinenza | Verifica se è ancora necessario |
 | ... | *(altri 15)* | Varie corrispondenze parziali | Confronto manuale |
 
----
+&#x200B;---
 
 ## 🎯 piano di esecuzione
 
-### Settimana 1: eliminazioni rapide
-- [ ] Elimina file e-mail (16)
-- [ ] Eliminare i file SMS (5)
-- [ ] Elimina file push (8)
-- [ ] Eliminazione dei file di direct mailing (4)
-- [ ] Eliminazione dei file dei modelli (6)
-- [ ] Eliminazione dei file di monitoraggio (12)
-- **Totale**: 51 file eliminati
+### Settimana 1: eliminazioni rapide- [ ] Elimina file e-mail (16)- [ ] Eliminare i file SMS (5)- [ ] Elimina file push (8)- [ ] Eliminazione dei file di direct mailing (4)- [ ] Eliminazione dei file dei modelli (6)- [ ] Eliminazione dei file di monitoraggio (12)- **Totale**: 51 file eliminati
 
-### Settimana 2: migrazione dei contenuti
-- [ ] Suggerimenti per la risoluzione dei problemi relativi alla migrazione (2 file)
-- [ Best practice per la migrazione di ] (3 file)
-- [ ] Migrazione dei pattern avanzati (3 file)
-- [ ] Elimina dopo la migrazione (8 file in totale)
+### Settimana 2: migrazione dei contenuti- [ ] Suggerimenti per la risoluzione dei problemi relativi alla migrazione (2 file)- [ Best practice per la migrazione di ] (3 file)- [ ] Migrazione dei pattern avanzati (3 file)- [ ] Elimina dopo la migrazione (8 file in totale)
 
-### Settimana 3: Badging e revisione
-- [ ] file specifici per il badge v7 (18 file)
-- [ ] Verifica corrispondenze parziali (18 file)
-- [ ] prendere decisioni finali
+### Settimana 3: Badging e revisione- [ ] file specifici per il badge v7 (18 file)- [ ] Verifica corrispondenze parziali (18 file)- [ ] prendere decisioni finali
 
----
+&#x200B;---
 
 **Timeline stimata**: 3 settimane\
 **Risultato previsto**: 111 → 44 file (riduzione del 60%)
 
----
+&#x200B;---
 
 **Ultimo aggiornamento**: 13/01/2026\
 **Azione successiva**: esegui eliminazioni settimana 1
