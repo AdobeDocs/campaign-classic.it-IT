@@ -209,7 +209,7 @@ _13 agosto 2019_
 La build 19.1.4 iniziale include le seguenti correzioni:
 
 * È stato risolto un problema relativo all’attività del modulo di pianificazione che generava messaggi di errore indesiderati durante la configurazione dell’assistente. Ripristino dell’aggiornamento da NEO-11662. (NEO-17097)
-* È stata corretta una regressione causata dalla NEO-12727 che poteva causare l’arresto dei flussi di lavoro quando un’attività Test veniva eseguita due volte. (NEO-16835)
+* È stata corretta una regressione causata dal problema NEO-12727 che poteva causare l’interruzione dei flussi di lavoro quando un’attività Test veniva eseguita due volte. (NEO-16835)
 * È stato risolto un problema che causava la restituzione di un codice HTTP errato (HTTP 200 OK invece di HTTP 403 Non consentito) quando nelle chiamate API veniva utilizzato un token di sessione non valido o scaduto. (NEO-16826)
 * È stato risolto un problema con la chiave DKIM che, non essendo più incorporata nelle e-mail, causava problemi di recapito. (NEO-16804)
 * Sono stati risolti diversi problemi relativi alla pianificazione dei flussi di lavoro. I flussi di lavoro venivano programmati per un’unica esecuzione giornaliera, senza tenere conto della configurazione del pianificatore. (NEO-16619, NEO-16426)
