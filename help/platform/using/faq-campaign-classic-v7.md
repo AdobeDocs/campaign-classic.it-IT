@@ -60,7 +60,7 @@ La migrazione ad Adobe Managed Services offre maggiore scalabilità, sicurezza e
 
 **Guida introduttiva:** Contatta il tuo rappresentante Adobe per valutare il tuo ambiente e sviluppare un piano di migrazione dettagliato con Adobe Professional Services.
 
-Ulteriori informazioni sulla [migrazione a Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605){target="_blank"}.
+Ulteriori informazioni sulla [migrazione a Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605?profile.language=it){target="_blank"}.
 
 ## Aggiornamenti della build (Campaign Classic v7) {#build-upgrades-v7}
 
@@ -214,7 +214,7 @@ Consulta le [**Domande frequenti complete su Campaign v8**](https://experiencele
 
 **Community e supporto:**
 
-* [Forum della community di Campaign](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
+* [Forum della community di Campaign](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=it){target="_blank"}
 * [Supporto Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}
 * [Pannello di controllo Campaign (clienti in hosting)](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it){target="_blank"}
 
