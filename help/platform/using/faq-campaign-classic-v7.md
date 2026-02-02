@@ -19,7 +19,7 @@ ht-degree: 3%
 >
 >Queste domande frequenti riguardano questioni specifiche relative all’architettura di Adobe Campaign Classic v7, ai modelli di distribuzione e alle funzioni specifiche di v7.
 >
->**Per risposte complete alle domande comuni su Campaign** (flussi di lavoro, consegne, pubblico, creazione di rapporti, personalizzazione, ecc.), consulta le [**Domande frequenti complete su Campaign v8**](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-faq-comprehensive){target="_blank"}, che forniscono risposte dettagliate organizzate per argomento.
+>**Per risposte complete alle domande comuni su Campaign** (flussi di lavoro, consegne, pubblico, creazione di rapporti, personalizzazione, ecc.), consulta le [**Domande frequenti complete su Campaign v8**](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-faq-comprehensive){target="_blank"}, che forniscono risposte dettagliate organizzate per argomento.
 
 ## Architettura e implementazione di Campaign Classic v7 {#v7-architecture}
 
@@ -37,7 +37,7 @@ Ogni modello di distribuzione ha funzionalità e responsabilità di gestione div
 
 [Fai clic qui per ulteriori informazioni](../../installation/using/hosting-models.md) sui modelli di hosting e sulle loro differenze.
 
-**Nota:** Campaign v8 è disponibile esclusivamente come Managed Cloud Services. [Scopri di più su Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}.
+**Nota:** Campaign v8 è disponibile esclusivamente come Managed Cloud Services. [Scopri di più su Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=it){target="_blank"}.
 
 +++
 
@@ -68,7 +68,7 @@ La migrazione ad Adobe Managed Services offre maggiore scalabilità, sicurezza e
 
 **Guida introduttiva:** Contatta il tuo rappresentante Adobe per valutare il tuo ambiente e sviluppare un piano di migrazione dettagliato con Adobe Professional Services.
 
-Ulteriori informazioni sulla [migrazione a Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605){target="_blank"}.
+Ulteriori informazioni sulla [migrazione a Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605?profile.language=it){target="_blank"}.
 
 +++
 
@@ -94,7 +94,7 @@ Campaign v8 è la piattaforma strategica di Adobe, ideale per le organizzazioni 
 
 Ulteriori informazioni:
 
-* [Panoramica di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}
+* [Panoramica di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=it){target="_blank"}
 * [Transizione da Campaign Classic v7 a v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html){target="_blank"}
 * [Domande frequenti complete su Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}
 
@@ -252,7 +252,7 @@ Consulta le [**Domande frequenti complete su Campaign v8**](https://experiencele
 
 **Community e supporto:**
 
-* [Forum della community di Campaign](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
+* [Forum della community di Campaign](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=it){target="_blank"}
 * [Supporto Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}
 
 +++
