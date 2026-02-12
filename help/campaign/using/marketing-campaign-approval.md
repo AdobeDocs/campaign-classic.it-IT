@@ -1,22 +1,22 @@
 ---
-source-git-commit: 4a7ecd170bd27f43d515da71c212bbdaa306d602
+product: campaign
+title: Impostare e gestire il processo di approvazione
+description: Scopri come gestire le approvazioni delle campagne di marketing
+language: en
+role: User
+feature: Approvals, Campaigns
+hide: true
+hidefromtoc: true
+exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
+source-git-commit: df014d3f3029a61176e5117e27f3d2e8228fc407
 workflow-type: tm+mt
-source-wordcount: '2684'
+source-wordcount: '2665'
 ht-degree: 0%
 
 ---
-—product: campaign
-title: Impostare e gestire il processo di approvazione
-description: Scopri come gestire le approvazioni delle campagne di marketing
-lingua: it
-role: User
-funzione: Approvazioni, Campagne
-nascondi: sì
-hidefromtoc: sì
-exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
----
-# Impostare e gestire il processo di approvazione {#approving-marketing-campaigns}
 
+
+# Impostare e gestire il processo di approvazione {#approving-marketing-campaigns}
 
 Ogni fase di una consegna può essere soggetta ad approvazione per garantire il monitoraggio e il controllo completo dei processi della campagna. Ad esempio, targeting, contenuto, budget, estrazione e invio di una bozza.
 
