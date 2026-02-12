@@ -1,32 +1,32 @@
 ---
 product: campaign
 title: Progettare ed eseguire campagne di marketing
-description: Definisci, ottimizza, esegui e analizza campagne di marketing
+description: Definire, ottimizzare, eseguire e analizzare campagne di marketing
 role: User
 feature: Campaigns
 hide: true
 hidefromtoc: true
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 4a7ecd170bd27f43d515da71c212bbdaa306d602
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 22%
+source-wordcount: '431'
+ht-degree: 19%
 
 ---
 
 # Progettare ed eseguire campagne di marketing{#designing-marketing-campaigns}
 
 
-Adobe Campaign ti consente di definire, ottimizzare, eseguire e analizzare campagne di comunicazione e marketing. Adobe Campaign funziona come un centro unificato di esecuzione e ordini per strategie di marketing. Per ulteriori informazioni, consulta [Campagne di accesso](../../distributed/using/accessing-campaigns.md) e [Creare campagne di marketing](../../campaign/using/setting-up-marketing-campaigns.md).
+[!DNL Adobe Campaign] consente di definire, ottimizzare, eseguire e analizzare campagne di comunicazione e marketing. [!DNL Adobe Campaign] funge da centro di esecuzione e ordini unificato per le strategie di marketing. Per ulteriori informazioni, consulta [Campagne di accesso](../../distributed/using/accessing-campaigns.md) e [Creare campagne di marketing](../../campaign/using/setting-up-marketing-campaigns.md).
 
-Inoltre, il modulo **Gestione risorse di marketing (MRM)** consente di controllare le azioni di marketing in modalità collaborativa fornendo una gestione completa e il monitoraggio in tempo reale delle attività, dei budget e delle risorse di marketing coinvolte. Marketing Resource Management consente di ottimizzare e regolare la gestione di processi interni ed esterni, risorse e campagne di marketing, nonché le relazioni con terze parti (agenzie, stampanti, ecc.). Per ulteriori informazioni al riguardo, consulta [questa sezione](../../mrm/using/about-marketing-resource-management.md).
+Inoltre, il modulo **Gestione risorse di marketing (MRM)** consente di controllare le azioni di marketing in modalità collaborativa fornendo una gestione completa e il monitoraggio in tempo reale delle attività, dei budget e delle risorse di marketing coinvolte. Marketing Resource Management consente di ottimizzare e regolare la gestione di processi interni ed esterni, risorse e campagne di marketing. Supporta anche le relazioni di terze parti (agenzie, stampanti, ecc.). Per ulteriori informazioni al riguardo, consulta [questa sezione](../../mrm/using/about-marketing-resource-management.md).
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle funzionalità di base di Adobe Campaign, consulta [questa sezione](../../platform/using/about-adobe-campaign-classic.md).\
->Le funzionalità relative al targeting della popolazione, alla personalizzazione dei messaggi e alla consegna dei messaggi sui vari canali sono descritte in dettaglio nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it){target="_blank"}.
+>Per ulteriori informazioni sulle funzionalità di base [!DNL Adobe Campaign], consulta [questa sezione](../../platform/using/about-adobe-campaign-classic.md).\
+>Le funzionalità relative al targeting della popolazione, alla personalizzazione dei messaggi e alla consegna dei messaggi sui vari canali sono descritte in dettaglio in [!DNL Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it){target="_blank"}.
 
-![](assets/do-not-localize/how-to-video.png) [Scopri i concetti chiave delle campagne di marketing nel video](#video)
+![Miniatura video](assets/do-not-localize/how-to-video.png) [Scopri i concetti chiave delle campagne di marketing nel video](#video)
 
 ## Concetti principali {#core-concepts}
 
@@ -68,6 +68,6 @@ Nel contesto di Campaign devono essere noti i seguenti concetti:
 
 Questo video illustra i concetti chiave delle campagne di marketing.
 
->[!VIDEO](https://video.tv.adobe.com/v/326578?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
-Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
+Ulteriori [!DNL Campaign Classic] video dimostrativi sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
