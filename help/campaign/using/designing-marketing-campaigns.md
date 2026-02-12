@@ -68,6 +68,6 @@ Nel contesto di Campaign devono essere noti i seguenti concetti:
 
 Questo video illustra i concetti chiave delle campagne di marketing.
 
->[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/326578?captions=ita&quality=12)
 
 Ulteriori [!DNL Campaign Classic] video dimostrativi sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
