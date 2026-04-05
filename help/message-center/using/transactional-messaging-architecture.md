@@ -4,7 +4,7 @@ title: Architettura della messaggistica transazionale
 description: Questa sezione descrive l’architettura di messaggistica transazionale di Adobe Campaign Classic e i canali disponibili per la distribuzione dei messaggi transazionali
 feature: Transactional Messaging, Message Center, Architecture
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 1%
@@ -29,7 +29,7 @@ La messaggistica transazionale si basa su un’architettura specifica, costituit
 
 ## Installare le istanze {#installing-instances}
 
-Sono disponibili diverse precauzioni da prendere durante l’installazione dei pacchetti di messaggi transazionali. L’Adobe consiglia di lavorare in un ambiente di test prima di metterlo in produzione. È inoltre necessario disporre di una licenza Adobe Campaign compatibile. Per ulteriori informazioni, contatta il responsabile del tuo account Adobe.
+Sono disponibili diverse precauzioni da prendere durante l’installazione dei pacchetti di messaggi transazionali. Adobe consiglia di lavorare in un ambiente di test prima di eseguire l’implementazione in produzione. È inoltre necessario disporre di una licenza Adobe Campaign compatibile. Per ulteriori informazioni, contatta il tuo account executive di Adobe.
 
 >[!IMPORTANT]
 >
@@ -39,7 +39,7 @@ Se devi utilizzare diversi canali, installa e configura i pacchetti correlati pr
 
 ## Istanza di controllo {#control-instance}
 
-Per installare l&#39;istanza di controllo nel computer, selezionare il pacchetto **[!UICONTROL Transactional message control]** tramite il menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**. Per ulteriori informazioni, consulta [Installazione dei pacchetti standard di Campaign Classic](../../installation/using/installing-campaign-standard-packages.md).
+Per installare l&#39;istanza di controllo nel computer, selezionare il pacchetto **[!UICONTROL Transactional message control]** tramite il menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**. Per ulteriori informazioni, vedere [Installazione dei pacchetti standard di Campaign Classic](../../installation/using/installing-campaign-standard-packages.md).
 
 ![](assets/messagecenter_install_controlinstance_001.png)
 
@@ -61,7 +61,7 @@ I passaggi dettagliati per configurare l&#39;istanza di controllo sono descritti
 
 ## Istanza di esecuzione {#execution-instance}
 
-Per installare un&#39;istanza di esecuzione nel computer, selezionare il pacchetto **[!UICONTROL Transactional message execution]** tramite il menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**. Per ulteriori informazioni, consulta [Installazione dei pacchetti standard di Campaign Classic](../../installation/using/installing-campaign-standard-packages.md).
+Per installare un&#39;istanza di esecuzione nel computer, selezionare il pacchetto **[!UICONTROL Transactional message execution]** tramite il menu **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**. Per ulteriori informazioni, vedere [Installazione dei pacchetti standard di Campaign Classic](../../installation/using/installing-campaign-standard-packages.md).
 
 ![](assets/messagecenter_install_executioninstance_001.png)
 
@@ -73,11 +73,11 @@ Il canale e-mail è disponibile per impostazione predefinita. Per inviare messag
 
 >[!IMPORTANT]
 >
->Aggiunta di un canale di consegna (canale mobile, canale app mobile, ecc.) prima di installare il pacchetto dei messaggi transazionali.
+>Prima di installare il pacchetto dei messaggi transazionali, è necessario aggiungere un canale di consegna (canale mobile, canale app mobile, ecc.).
 
 ### Aggiungere un canale di consegna {#adding-a-delivery-channel}
 
-L&#39;Adobe consiglia di **aggiungere sempre il pacchetto del canale di consegna prima di installare il pacchetto dei messaggi transazionali**.
+Adobe consiglia di **aggiungere sempre il pacchetto del canale di consegna prima di installare il pacchetto dei messaggi transazionali**.
 
 Tuttavia, se hai avviato un progetto di messaggistica transazionale sul canale e-mail e poi decidi durante il progetto di aggiungere un nuovo canale, puoi seguire i passaggi seguenti.
 
@@ -86,12 +86,13 @@ Tuttavia, se hai avviato un progetto di messaggistica transazionale sul canale e
 >Questa procedura è valida solo per i clienti che utilizzano un Windows NLServer installato sullo stesso computer su cui stanno lavorando.
 
 1. Installa il canale necessario, ad esempio il **canale mobile**, utilizzando l&#39;Assistente all&#39;importazione del pacchetto (**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**).
-1. Eseguire un&#39;importazione di file (**[!UICONTROL Tools > Advanced > Import package... > File]**) e selezionare il file **datakitnms &#x200B;**`[Your language]`**packagemessageCenter.xml**.
+1. Eseguire un&#39;importazione di file (**[!UICONTROL Tools > Advanced > Import package... > File]**) e selezionare il file **datakitnms **`[Your language]`**packagemessageCenter.xml**.
 1. In **[!UICONTROL XML content of the data to import]**, mantieni solo il modello di consegna che corrisponde al canale aggiunto. Ad esempio, se hai aggiunto il **canale mobile**, mantieni solo l&#39;elemento **entità** che corrisponde a **[!UICONTROL Mobile transactional message]** (smsTriggerMessage). Se hai aggiunto il **canale app mobile**, mantieni solo il **messaggio transazionale di iOS** (iosTriggerMessage) e il **messaggio transazionale di Android** (androidTriggerMessage).
 
    ![](assets/messagecenter_install_channel.png)
 
-<!--## Transactional messages and inbound Interaction {#transactional-messages-and-inbound-interaction}
+<!--
+## Transactional messages and inbound Interaction {#transactional-messages-and-inbound-interaction}
 
 When combined with the Inbound Interaction module, transactional messaging enables you to insert a marketing offer dedicated to the recipient into the message.
 
@@ -124,7 +125,9 @@ Create your delivery templates the way you would for an email campaign:
 * Add the offer to your transactional message template.
 * Check the preview, send a proof and publish the template.
 
-You also have to enable the unitary mode on your offer spaces. For more on this, refer to [this section](../../interaction/using/creating-offer-spaces.md).-->
+You also have to enable the unitary mode on your offer spaces. For more on this, refer to [this section](../../interaction/using/creating-offer-spaces.md).
+
+-->
 
 ### Notifiche push transazionali {#transactional-messaging-and-push-notifications}
 
@@ -201,7 +204,7 @@ Quindi, da **[!UICONTROL Explorer]** , in **[!UICONTROL Platform]** > **[!UICONT
 
      >[!NOTE]
      >
-     >L&#39;utente del database deve disporre dei diritti di lettura per le tabelle seguenti per la connessione FDA: XtkOption, NmsVisitor, NmsVisitorSub, NmsService, NmsBroadLogRtEvent, NmsBroadLogBatchEvent, NmsTrackingLogRtEvent, NmsTrackingLogBatchEvent, NmsRtEvent, NmsBatchEvent, NmsBroadLogMsg, NmsTrackingUrl, NmsDelivery, NmsWebTrackingLogXtk Cartella.
+     >L&#39;utente del database deve disporre dei diritti di lettura per le tabelle seguenti per la connessione FDA: XtkOption, NmsVisitor, NmsVisitorSub, NmsService, NmsBroadLogRtEvent, NmsBroadLogBatchEvent, NmsTrackingLogRtEvent, NmsTrackingLogBatchEvent, NmsRtEvent, NmsBatchEvent, NmsBroadLogMsg, NmsTrackingUrl, NmsDelivery, NmsWebTrackingLogXtkFolder.
 
    * **[!UICONTROL Password]**: immettere la password per l&#39;account di database.
    * **[!UICONTROL Database]** : immettere il nome del database dell&#39;istanza di esecuzione.

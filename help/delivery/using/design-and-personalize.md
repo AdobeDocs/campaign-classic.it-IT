@@ -8,16 +8,16 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 0d8cef312371192ee97f88eb33276df9d7fb11f6
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1304'
 ht-degree: 4%
 
 ---
 
 # Creare contenuti personalizzati {#build-personalized-content}
 
-Durante la progettazione del contenuto del messaggio, cerca di evitare problemi comuni che potrebbero impedirti di eseguire la consegna. Nella maggior parte dei casi, i possibili errori sono correlati a [personalization](about-personalization.md), [formattazione](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=it#message-content){target="_blank"} e [immagini](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=it#adding-images){target="_blank"}.
+Durante la progettazione del contenuto del messaggio, cerca di evitare problemi comuni che potrebbero impedirti di eseguire la consegna. Nella maggior parte dei casi, i possibili errori sono correlati a [personalization](about-personalization.md), [formattazione](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#message-content){target="_blank"} e [immagini](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}.
 
 ## Ottimizzare la personalizzazione {#optimize-personalization}
 
@@ -32,11 +32,13 @@ Assicurati che il contenuto del messaggio sia progettato correttamente per evita
 
 L’utilizzo errato dei parametri nei blocchi di personalizzazione può rappresentare un problema. Ad esempio, le variabili in JavaScript devono essere utilizzate come segue:
 
-    &lt;%
-    
-    var marchio = &quot;xxx&quot;
-    
+```
+    <%
+
+    var brand = "xxx"
+
     %>
+```
 
 Per ulteriori informazioni sui blocchi di personalizzazione, consulta [questa sezione](personalization-blocks.md).
 
@@ -58,7 +60,7 @@ Durante la creazione delle e-mail, tieni presenti le best practice generali ripo
 
 ### Oggetto
 
-Scopri l’oggetto nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=it#sender){target="_blank"} per migliorare i tassi di apertura:
+Scopri l’oggetto nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#sender){target="_blank"} per migliorare i tassi di apertura:
 
 * Evitare soggetti troppo lunghi. Usa massimo 50 caratteri
 
@@ -115,7 +117,7 @@ Per evitare errori di formattazione comuni, controlla i seguenti elementi:
 
 * Utilizzo di **caratteri autorizzati** nelle e-mail: l&#39;elenco di caratteri validi per gli indirizzi e-mail è definito nell&#39;opzione &quot;XtkEmail_Characters&quot;. Scopri come accedere alle opzioni di Campaign [in questa sezione](../../installation/using/configuring-campaign-options.md). Per gestire correttamente i caratteri speciali, è necessario installare Adobe Campaign in Unicode.
 
-* Configurazione di **Autenticazione e-mail**: assicurati che le intestazioni e-mail contengano la firma DKIM. L’autenticazione di DKIM (Domain Keys Identified Mail) consente al server e-mail ricevente di verificare che il messaggio sia stato effettivamente inviato dalla persona o dall’entità da cui afferma di essere stato inviato e se il contenuto del messaggio sia stato modificato tra il momento dell’invio originale (e DKIM &quot;firmato&quot;) e il momento della ricezione. Questo standard utilizza in genere il dominio nell’intestazione Da o Mittente. Per ulteriori informazioni, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=it#authentication).
+* Configurazione di **Autenticazione e-mail**: assicurati che le intestazioni e-mail contengano la firma DKIM. L’autenticazione di DKIM (Domain Keys Identified Mail) consente al server e-mail ricevente di verificare che il messaggio sia stato effettivamente inviato dalla persona o dall’entità da cui afferma di essere stato inviato e se il contenuto del messaggio sia stato modificato tra il momento dell’invio originale (e DKIM &quot;firmato&quot;) e il momento della ricezione. Questo standard utilizza in genere il dominio nell’intestazione Da o Mittente. Per ulteriori informazioni, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ### Progettazione reattiva delle e-mail
 
@@ -151,7 +153,7 @@ Per essere accessibili dall’esterno, le immagini utilizzate nelle e-mail e nel
 
 * Puoi verificare se la configurazione dell’istanza abilita la gestione delle risorse pubbliche. [Ulteriori informazioni](../../installation/using/deploying-an-instance.md#managing-public-resources)
 
-* Dall&#39;assistente alla consegna, puoi importare una pagina HTML contenente immagini o inserire immagini direttamente utilizzando l&#39;editor HTML tramite l&#39;icona **[!UICONTROL Image]**. Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=it#adding-images){target="_blank"}.
+* Dall&#39;assistente alla consegna, puoi importare una pagina HTML contenente immagini o inserire immagini direttamente utilizzando l&#39;editor HTML tramite l&#39;icona **[!UICONTROL Image]**. Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}.
 
 * Se le immagini non vengono visualizzate, verificare che siano disponibili sul server. A questo scopo, fai clic sulla scheda Source della consegna. Trova le tue immagini e copia-incolla l’URL di ogni immagine in un browser web. Se le immagini non vengono visualizzate, contatta l’amministratore IT o il fornitore di terze parti che fornisce i contenuti di consegna.
 
@@ -159,6 +161,6 @@ Per essere accessibili dall’esterno, le immagini utilizzate nelle e-mail e nel
 
 Adobe consiglia di visualizzare l’anteprima del messaggio per controllarne la personalizzazione e vedere come i destinatari vedranno la consegna.
 
-* Nell&#39;assistente alla consegna, la scheda secondaria **[!UICONTROL Preview]** ti consente di visualizzare il rendering di ciascun contenuto per un destinatario. I campi di personalizzazione e gli elementi condizionali del contenuto vengono sostituiti con le informazioni corrispondenti per il profilo selezionato. Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=it#message-content){target="_blank"}.
+* Nell&#39;assistente alla consegna, la scheda secondaria **[!UICONTROL Preview]** ti consente di visualizzare il rendering di ciascun contenuto per un destinatario. I campi di personalizzazione e gli elementi condizionali del contenuto vengono sostituiti con le informazioni corrispondenti per il profilo selezionato. Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#message-content){target="_blank"}.
 
 * Durante ogni anteprima viene eseguito un controllo automatico anti-spam. Nella scheda secondaria **[!UICONTROL Preview]**, seleziona [SpamAssassin](spamassassin.md) spam scoring.  Fare clic su **[!UICONTROL More...]** per ulteriori informazioni sull&#39;avviso.  Prima di eseguire questa operazione, verificare che SpamAssassin sia installato e configurato correttamente nel server applicazioni Adobe Campaign. [Ulteriori informazioni](../../installation/using/configuring-spamassassin.md)

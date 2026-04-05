@@ -8,10 +8,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: c75a5ea2-8d62-4f98-bccd-7116a4d404fd
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '223'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -33,8 +33,10 @@ Una volta creata e configurata l’e-mail, puoi inviarla al target principale. Q
 >L&#39;intero processo di convalida di una consegna è descritto in [questa sezione](steps-validating-the-delivery.md). I passaggi dettagliati completi per configurare e inviare una consegna sono descritti in [questa sezione](steps-sending-the-delivery.md).
 
 Le sezioni seguenti descrivono le impostazioni e le configurazioni specifiche per la consegna delle e-mail:
-<!--* [Generating the mirror page](generating-mirror-page.md)
-* [Email BCC](email-bcc.md)-->
+<!--
+* [Generating the mirror page](generating-mirror-page.md)
+* [Email BCC](email-bcc.md)
+-->
 * [Parametri e-mail](email-parameters.md)
 * [Inviare e-mail con MTA avanzato](sending-with-enhanced-mta.md)
-* [Inviare e-mail su cellulari giapponesi](sending-emails-on-japanese-mobiles.md)
+* [Inviare e-mail su dispositivi mobili giapponesi](sending-emails-on-japanese-mobiles.md)

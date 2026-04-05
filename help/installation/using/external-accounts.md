@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '1791'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -47,7 +47,7 @@ L’account esterno viene creato e aggiunto all’elenco degli account esterni.
 
 ### E-mail non recapitate {#bounce-mails-external-account}
 
-L&#39;account esterno **Messaggi non recapitati** specifica l&#39;account POP3 esterno da utilizzare per connettersi al servizio e-mail. Per ulteriori informazioni su questo account esterno, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=it){target="_blank"}.
+L&#39;account esterno **Messaggi non recapitati** specifica l&#39;account POP3 esterno da utilizzare per connettersi al servizio e-mail. Per ulteriori informazioni su questo account esterno, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}.
 
 Tutti i server configurati per l&#39;accesso POP3 possono essere utilizzati per ricevere la posta di ritorno.
 
@@ -81,25 +81,25 @@ Per configurare l&#39;account esterno **[!UICONTROL Bounce mails (defaultPopAcco
 
 >[!IMPORTANT]
 >
->Prima di configurare l’account esterno POP3 utilizzando Microsoft OAuth 2.0, è necessario registrare l’applicazione nel portale di Azure. Per ulteriori informazioni, consulta [questa pagina](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app).
+>Prima di configurare l’account esterno POP3 utilizzando Microsoft OAuth 2.0, è necessario registrare l’applicazione nel portale Azure. Per ulteriori informazioni, consulta [questa pagina](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app).
 
 Per configurare un POP3 esterno utilizzando **Microsoft OAuth 2.0**, seleziona l&#39;opzione **[!UICONTROL Microsoft OAuth 2.0]** e compila i campi seguenti:
 
 * **[!UICONTROL Azure tenant]**
 
-  L&#39;ID Azure (o ID directory (tenant)) si trova nel menu a discesa **Essentials** della panoramica dell&#39;applicazione nel portale di Azure.
+  Azure ID (o ID directory (tenant)) si trova nel menu a discesa **Essentials** della panoramica dell&#39;applicazione nel portale Azure.
 
 * **[!UICONTROL Azure Client ID]**
 
-  L&#39;ID client (o ID applicazione (client)) si trova nel menu a discesa **Essentials** della panoramica dell&#39;applicazione nel portale di Azure.
+  L&#39;ID client (o ID applicazione (client)) si trova nel menu a discesa **Essentials** della panoramica dell&#39;applicazione nel portale Azure.
 
 * **[!UICONTROL Azure Client secret]**
 
-  L&#39;ID del segreto client si trova nella colonna **Segreti client** dal menu **Certificati e segreti** dell&#39;applicazione nel portale di Azure.
+  L&#39;ID segreto client si trova nella colonna **Segreti client** dal menu **Certificati e segreti** dell&#39;applicazione nel portale Azure.
 
 * **[!UICONTROL Azure Redirect URL]**
 
-  L&#39;URL di reindirizzamento si trova nel menu **Autenticazione** dell&#39;applicazione nel portale di Azure. Deve terminare con la seguente sintassi `nl/jsp/oauth.jsp`, ad esempio `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
+  L&#39;URL di reindirizzamento si trova nel menu **Autenticazione** dell&#39;applicazione nel portale Azure. Deve terminare con la seguente sintassi `nl/jsp/oauth.jsp`, ad esempio `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
 
 L&#39;accesso a Internet è necessario per l&#39;installazione e per utilizzare il pulsante **[!UICONTROL Test Connection]** nella console client. Dopo la configurazione, il processo inMail può comunicare con i server Microsoft senza Internet.
 
@@ -119,7 +119,7 @@ L&#39;account esterno **[!UICONTROL Routing]** consente di configurare ogni cana
 * [Direct mail](../../delivery/using/about-direct-mail-channel.md)
 * [Agenzia](../../delivery/using/communication-channels.md#other-channels)
 * [X (precedentemente noto come Twitter)](../../social/using/about-social-marketing.md)
-* [Canali iOS e Android](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=it){target="_blank"}
+* [Canali iOS e Android](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}
 
 ### Indirizzamento e-mail {#email-routing-external-account}
 
@@ -159,7 +159,7 @@ Per ulteriori informazioni su questa configurazione, consulta questa [pagina](..
 
 ### FTP {#ftp-external-account}
 
-L’account esterno FTP consente di configurare e testare l’accesso a un server esterno a Adobe Campaign. Per configurare le connessioni con i sistemi esterni, ad esempio i server FTP 898 utilizzati per i trasferimenti di file, puoi creare account esterni. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=it){target="_blank"}.
+L’account esterno FTP consente di configurare e testare l’accesso a un server esterno a Adobe Campaign. Per configurare le connessioni con i sistemi esterni, ad esempio i server FTP 898 utilizzati per i trasferimenti di file, puoi creare account esterni. Per ulteriori informazioni, fai riferimento alla [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
 A questo scopo, specifica in questo account esterno l’indirizzo e le credenziali utilizzati per stabilire la connessione al server FTP
 
@@ -189,7 +189,7 @@ Per sapere dove individuare queste credenziali, consulta questa [pagina](https:/
 
 ### SFTP {#sftp-external-account}
 
-L’account esterno SFTP consente di configurare e testare l’accesso a un server esterno a Adobe Campaign. Per impostare connessioni con sistemi esterni, come SFTP utilizzato per i trasferimenti di file, puoi creare account esterni personalizzati. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=it){target="_blank"}.
+L’account esterno SFTP consente di configurare e testare l’accesso a un server esterno a Adobe Campaign. Per impostare connessioni con sistemi esterni, come SFTP utilizzato per i trasferimenti di file, puoi creare account esterni personalizzati. Per ulteriori informazioni, fai riferimento alla [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
 ![](assets/ext_account_4.png)
 
@@ -209,7 +209,8 @@ L’account esterno SFTP consente di configurare e testare l’accesso a un serv
 
   Password utilizzata per la connessione al server SFTP.
 
-<!--To add SSH keys on Windows:
+<!--
+To add SSH keys on Windows:
 
 1. Create the **HOME** environment variable with value set as the installation directory.
 
@@ -343,7 +344,7 @@ Con il tipo di distribuzione **[!UICONTROL Web API]** e l&#39;autenticazione **[
 
 * **[!UICONTROL Client identifier]**
 
-  ID client che è possibile trovare dal portale di gestione di Microsoft Azure nel campo **[!UICONTROL Update your code]** della categoria **[!UICONTROL Client ID]**.
+  ID client disponibile nel portale di gestione di Microsoft Azure nella categoria **[!UICONTROL Update your code]**, campo **[!UICONTROL Client ID]**.
 
 * **[!UICONTROL CRM version]**
 
@@ -371,7 +372,7 @@ Con il tipo di distribuzione **[!UICONTROL Web API]** e l&#39;autenticazione **[
 
 * **[!UICONTROL Client identifier]**
 
-  ID client che è possibile trovare dal portale di gestione di Microsoft Azure nel campo **[!UICONTROL Update your code]** della categoria **[!UICONTROL Client ID]**.
+  ID client disponibile nel portale di gestione di Microsoft Azure nella categoria **[!UICONTROL Update your code]**, campo **[!UICONTROL Client ID]**.
 
 * **[!UICONTROL CRM version]**
 
@@ -415,7 +416,7 @@ Per ulteriori informazioni su questa configurazione, consulta questa [pagina](..
 
 ### Servizio Amazon Simple Storage (S3) {#amazon-simple-storage-service--s3--external-account}
 
-Il connettore Amazon Simple Storage Service (S3) può essere utilizzato per importare o esportare dati in Adobe Campaign. Può essere impostato in un’attività del flusso di lavoro. consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=it){target="_blank"}.
+Il connettore Amazon Simple Storage Service (S3) può essere utilizzato per importare o esportare dati in Adobe Campaign. Può essere impostato in un’attività del flusso di lavoro. consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
 ![](assets/ext_account_3.png)
 
@@ -447,7 +448,7 @@ Per informazioni su dove trovare l&#39;ID della chiave di accesso e la chiave di
 
 ### Archiviazione BLOB di Azure {#azure-blob-external-account}
 
-L&#39;account esterno **Archiviazione BLOB di Azure** può essere utilizzato per importare o esportare dati in Adobe Campaign utilizzando un&#39;attività del flusso di lavoro **[!UICONTROL Transfer file]**. consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=it){target="_blank"}.
+L&#39;account esterno **Archiviazione BLOB di Azure** può essere utilizzato per importare o esportare dati in Adobe Campaign utilizzando un&#39;attività del flusso di lavoro **[!UICONTROL Transfer file]**. consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
 ![](assets/ext_account_23.png)
 
@@ -455,7 +456,7 @@ Per configurare **[!UICONTROL Azure external account]** per l&#39;utilizzo con A
 
 * **[!UICONTROL Server]**
 
-  URL del server di archiviazione BLOB di Azure.
+  URL del server di archiviazione Azure Blob.
 
 * **[!UICONTROL Encryption]**
 

@@ -1,24 +1,24 @@
 ---
 product: campaign
-title: Configurazione di Developer Console per Adobe Experience Cloud Triggers
+title: Configurazione di Developer Console per i trigger di Adobe Experience Cloud
 description: Scopri come configurare Developer Console Adobe Experience Cloud Triggers
 feature: Triggers
 audience: integrations
 content-type: reference
-index: y
+index: true
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
 hide: true
 hidefromtoc: true
-source-git-commit: 8d15a5666b5768bc0f17a4391061c4fcb9f76811
+source-git-commit: d38e4e32bbbfc11d4cc6f985608b6bdf6ff53e92
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '312'
+ht-degree: 1%
 
 ---
 
-# Configurazione di Developer Console per Adobe Experience Cloud Triggers {#configuring-adobe-io}
+# Configurazione di Developer Console per i trigger di Adobe Experience Cloud {#configuring-adobe-io}
 
 <!--
 >[!CAUTION]
@@ -38,7 +38,7 @@ This integration only applies starting **Campaign Classic 20.2.4 and above, 19.1
 Prima di iniziare questa implementazione, verifica di disporre di:
 
 * un **identificatore organizzazione** valido: l&#39;ID organizzazione è l&#39;identificatore univoco all&#39;interno di Adobe Experience Cloud, utilizzato ad esempio per il servizio VisitorID e l&#39;SSO (Single Sign On) IMS. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=it)
-* **Accesso per sviluppatori** all&#39;organizzazione. L&#39;amministratore di sistema dell&#39;organizzazione deve seguire la procedura **Aggiungi sviluppatori a un singolo profilo di prodotto** dettagliata [in questa pagina](https://helpx.adobe.com/it/enterprise/using/manage-developers.html) per fornire agli sviluppatori l&#39;accesso al profilo di prodotto `Analytics - {tenantID}` del prodotto Adobe Analytics associato a Triggers.
+* **Accesso per sviluppatori** all&#39;organizzazione. L&#39;amministratore di sistema dell&#39;organizzazione deve seguire la procedura **Aggiungi sviluppatori a un singolo profilo di prodotto** dettagliata [in questa pagina](https://helpx.adobe.com/enterprise/using/manage-developers.html) per fornire agli sviluppatori l&#39;accesso al profilo di prodotto `Analytics - {tenantID}` del prodotto Adobe Analytics associato a Triggers.
 
 ## Passaggio 1: creare/aggiornare il progetto OAuth {#creating-adobe-io-project}
 

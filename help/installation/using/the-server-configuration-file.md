@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '8067'
-ht-degree: 3%
+source-wordcount: '8066'
+ht-degree: 5%
 
 ---
 
@@ -410,7 +410,7 @@ Nel nodo **dataStore > dataSource > pool**, configura i parametri del pool di co
   </tr> 
   <tr> 
    <td> maxCnx<br /> </td> 
-   <td> Numero massimo di connessioni consentite prima di rifiutare una nuova connessione. Vedi questa <a href="https://helpx.adobe.com/it/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">nota tecnica</a>.<br /> </td> 
+   <td> Numero massimo di connessioni consentite prima di rifiutare una nuova connessione. Vedi questa <a href="https://helpx.adobe.com/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">nota tecnica</a>.<br /> </td> 
    <td> Breve<br /> </td> 
   </tr> 
   <tr> 
@@ -582,7 +582,7 @@ Per ulteriori informazioni, vedere [Limitazione dei comandi esterni autorizzati]
 
 ## htmlToPdf {#htmltopdf}
 
-Parametri diversi del nodo **htmlToPdf**. Configurazione del servizio per la conversione di pagine web in documenti PDF.
+Parametri diversi del nodo **htmlToPdf**. Si tratta della configurazione del servizio per la conversione di pagine web in documenti PDF.
 
 <table> 
  <thead> 
@@ -1625,9 +1625,9 @@ Parametri diversi del nodo **mta**. Si tratta della configurazione degli agenti 
    <td> statServerAddress<br /> </td> 
    <td> Indirizzo del server delle statistiche di consegna, indicato come 
     &lt;dns o ip&gt; 
-      <code>&lbrack;</code>: 
+      <code>[</code>: 
      &lt;porta&gt; 
-       <code>&rbrack;</code>. Consulta 
+       <code>]</code>. Consulta 
       <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Coordinate del server delle statistiche</a>. 
       <br /> 
      </td> 
@@ -1640,12 +1640,14 @@ Parametri diversi del nodo **mta**. Si tratta della configurazione degli agenti 
    <td> Booleano<br /> </td> 
    <td> true <br /> </td> 
   </tr> 
-  <!--tr> 
+  <!--
+  tr> 
    <td> statServerVersion<br /> </td> 
    <td> Protocol version used: communication protocol version (1 for a v5.11 and 6.0.2 server, 2 for a v6.1 server).<br /> </td> 
    <td> String<br /> </td> 
    <td> If undefined, the latest version is used. <br /> </td> 
-  </tr--> 
+  </tr
+  --> 
   <tr> 
    <td> useMomentum<br /> </td> 
    <td> Se impostato su "true", l'istanza utilizza l'<a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">MTA avanzato</a>.<br /> </td> 

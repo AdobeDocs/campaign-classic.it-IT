@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 295e3596d9291cbcc55e2d264309141526c3806b
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '2066'
 ht-degree: 1%
@@ -67,7 +67,8 @@ Ad esempio, utilizzando le informazioni sul server tratte dalla schermata della 
 Adobe eseguirà un backup del sistema prima di qualsiasi modifica. Tuttavia, se nel sistema non di produzione (server di sviluppo o di staging) è presente un lavoro di personalizzazione critico, si CONSIGLIA VIVAMENTE di esportare il lavoro come pacchetto prima di qualsiasi aggiornamento.
 
 <!--
-![](assets/do-not-localize/how-to-video.png) For more information, [watch this how to video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).-->
+![](assets/do-not-localize/how-to-video.png) For more information, [watch this how to video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).
+-->
 
 ## Quando avverranno gli aggiornamenti?
 

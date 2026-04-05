@@ -5,7 +5,7 @@ description: Pubblicare un modulo web
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Web Forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '1284'
 ht-degree: 1%
@@ -196,6 +196,7 @@ Ulteriori informazioni sui diversi stati di un modulo Web sono disponibili in [q
   >
   >È possibile controllare la versione più recente del modulo Web utilizzando la scheda **[!UICONTROL Preview]**.
 
-<!--For RN:
+<!--
+For RN:
 * Now, when a web form has the **Pending publication** status, it must be published before it becomes **Online** and accessible through the web form URL in a web browser. [Read more](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
 -->

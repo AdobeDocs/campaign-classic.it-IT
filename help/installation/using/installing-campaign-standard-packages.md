@@ -5,7 +5,7 @@ description: Scopri come installare i pacchetti incorporati di Campaign
 feature: Installation, Application Settings
 badge-v7-prem: label="Solo on-premise/ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 3%
@@ -66,7 +66,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
   </tr> 
   <tr> 
    <td> Campagne di marketing (Campaign)<br /> </td> 
-   <td> Definisce, ottimizza, esegue e analizza campagne di comunicazione e marketing. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=it" target="_blank">Ulteriori informazioni</a><br /> </td> 
+   <td> Definisce, ottimizza, esegue e analizza campagne di comunicazione e marketing. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html" target="_blank">Ulteriori informazioni</a><br /> </td> 
    <td> Marketing</td>
   </tr> 
   <tr> 
@@ -89,12 +89,14 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
    <td> Pacchetto da installare sulle istanze di esecuzione per il motore di offerta (interazione). <a href="../../interaction/using/distributed-architectures.md">Ulteriori informazioni</a> </td> 
    <td> Mid, Esecuzione <br /> </td>  
   </tr> 
-  <!--tr> 
+  <!--
+  tr> 
    <td> Lead Management (Leads) (deprecated)<br /> </td> 
    <td> Simplifies the process of building and maintaining the entire leads management life cycle. <br /> </td> 
    <td> Yes<br /> </td> 
    <td> Optional, <a href="https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html">Learn More</a> </td> 
-  </tr--> 
+  </tr
+  --> 
   <tr> 
    <td> Social network (Social marketing) <br /> </td> 
    <td> Sincronizza Adobe Campaign con X (precedentemente noto come Twitter) e Facebook. <a href="../../social/using/about-social-marketing.md">Ulteriori informazioni</a> <br /> </td> 
@@ -157,7 +159,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
   </tr> 
   <tr> 
    <td> Accesso ai dati esterni (Federated Data Access)<br /> </td> 
-   <td> Fornisce l’opzione Federated Data Access (FDA) per elaborare le informazioni memorizzate in uno o più database esterni in modo da poter accedere ai dati esterni senza modificare la struttura dei dati di Adobe Campaign.  Facoltativo. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html?lang=it" target="_blank">Ulteriori informazioni</a> <br /> </td> 
+   <td> Fornisce l’opzione Federated Data Access (FDA) per elaborare le informazioni memorizzate in uno o più database esterni in modo da poter accedere ai dati esterni senza modificare la struttura dei dati di Adobe Campaign.  Facoltativo. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html" target="_blank">Ulteriori informazioni</a> <br /> </td> 
    <td> Tutto<br /> </td> 
   </tr> 
   <tr> 
@@ -172,7 +174,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
   </tr> 
   <tr> 
    <td> Gestione coupon<br /> </td> 
-   <td> Crea un set di coupon da aggiungere alle prossime offerte di marketing. Facoltativo. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html?lang=it" target="_blank">Ulteriori informazioni</a> <br /> </td> 
+   <td> Crea un set di coupon da aggiungere alle prossime offerte di marketing. Facoltativo. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html" target="_blank">Ulteriori informazioni</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
@@ -227,7 +229,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
   </tr> 
   <tr> 
    <td> Supporto AMP<br /> </td> 
-   <td> Consente di utilizzare il nuovo AMP interattivo per il formato e-mail e di inviare e-mail dinamiche. Facoltativo. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=it" target="_blank">Ulteriori informazioni</a> <br /> </td> 
+   <td> Consente di utilizzare il nuovo AMP interattivo per il formato e-mail e di inviare e-mail dinamiche. Facoltativo. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html" target="_blank">Ulteriori informazioni</a> <br /> </td> 
    <td> Tutti </td> 
   </tr> 
   <tr> 

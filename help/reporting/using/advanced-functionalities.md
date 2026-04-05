@@ -5,7 +5,7 @@ description: Ulteriori informazioni sulle funzionalità avanzate quando si lavor
 feature: Reporting, Monitoring
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 exl-id: 8b51d0fc-1692-41cd-9aa8-3bb8f4ee454e
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 4%
@@ -113,7 +113,8 @@ Per visualizzare la definizione di una variabile, selezionarla e fare clic sul p
 Nell’esempio video seguente, scoprirai come aggiungere un parametro &quot;_type&quot; per creare visualizzazioni diverse di un rapporto, in base al valore di questo attributo.
 
 <!--
-![](assets/do-not-localize/how-to-video.png) [Discover this feature in video](https://helpx.adobe.com/campaign/classic/how-to/add-url-parameter-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/business-practitioners/explevel/intermediate/applaunch/how-to-4/collection.ccx.js&ref=helpx.adobe.com)-->
+![](assets/do-not-localize/how-to-video.png) [Discover this feature in video](https://helpx.adobe.com/campaign/classic/how-to/add-url-parameter-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/business-practitioners/explevel/intermediate/applaunch/how-to-4/collection.ccx.js&ref=helpx.adobe.com)
+-->
 
 
 ## Richiamo di un altro report {#calling-up-another-report}

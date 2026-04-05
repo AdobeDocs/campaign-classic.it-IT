@@ -9,10 +9,10 @@ topic-tags: configuration
 hide: true
 hidefromtoc: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 349c3dfd936527e50d7d3e03aa3408b395502da0
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '2558'
-ht-degree: 0%
+source-wordcount: '2517'
+ht-degree: 1%
 
 ---
 
@@ -35,7 +35,7 @@ Per utilizzare la modalità TIMESTAMP WITH TIMEZONE, è inoltre necessario aggiu
 
 >[!IMPORTANT]
 >
->Se si utilizza il parametro **-usetimestamptz:1** con un motore di database non compatibile, il database sarà danneggiato e sarà necessario ripristinare un backup del database ed eseguire nuovamente il comando precedente.
+>Se il parametro **-usetimestamptz:1** viene utilizzato con un motore di database non compatibile, il database sarà danneggiato e sarà necessario ripristinare un backup del database ed eseguire nuovamente il comando precedente.
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Per utilizzare la modalità TIMESTAMP WITH TIMEZONE, è inoltre necessario aggiu
 
 ### Oracle {#oracle}
 
-Se durante il post-aggiornamento viene visualizzato un errore **ORA 01805**, significa che i file di fuso orario di Oracle tra il server applicazioni e il server database non sono sincronizzati. Per risincronizzarli, attieniti alla seguente procedura:
+Se si verifica un errore **ORA 01805** durante il post-aggiornamento, i file del fuso orario di Oracle tra il server applicazioni e il server database non sono sincronizzati. Per risincronizzarli, attieniti alla seguente procedura:
 
 1. Per identificare il file del fuso orario utilizzato, eseguire il comando seguente:
 
@@ -59,7 +59,7 @@ Se durante il post-aggiornamento viene visualizzato un errore **ORA 01805**, sig
 
 Per ulteriori informazioni, visitare: [https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004](https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004).
 
-Un disallineamento del fuso orario tra client e server può anche causare alcuni ritardi. Ecco perché consigliamo di utilizzare la stessa versione della libreria Oracle sul lato client e sul lato server; entrambi i fusi orari devono essere gli stessi.
+Un disallineamento del fuso orario tra client e server può anche causare alcuni ritardi. Per questo motivo consigliamo di utilizzare la stessa versione della libreria Oracle sul lato client e sul lato server; entrambi i fusi orari devono essere uguali.
 
 Per verificare se entrambi i lati si trovano sullo stesso fuso orario:
 
@@ -119,11 +119,11 @@ nlserver config -internalpassword
 
 Alcuni schemi predefiniti sono stati modificati e, per impostazione predefinita, sono accessibili solo con accesso in scrittura per gli operatori con l&#39;autorizzazione **admin**:
 
-* ncm:pubblicazione
-* nl:monitoraggio
-* nms:calendario
+* ncm:publishing
+* nl:monitoring
+* nms:calendar
 * xtk:builder
-* xtk:connessioni
+* xtk:connections
 * xtk:dbInit
 * xtk:entityBackupNew
 * xtk:entityBackupOriginal
@@ -131,7 +131,7 @@ Alcuni schemi predefiniti sono stati modificati e, per impostazione predefinita,
 * xtk:form
 * xtk:funcList
 * xtk:fusion
-* xtk:immagine
+* xtk:image
 * xtk:javascript
 * xtk:jssp
 * xtk:jst
@@ -147,12 +147,12 @@ Alcuni schemi predefiniti sono stati modificati e, per impostazione predefinita,
 * xtk:sql
 * xtk:sqlSchema
 * xtk:srcSchema
-* xtk:stringhe
+* xtk:strings
 * xtk:xslt
 
 ### Parametro Sessiontoken {#sessiontoken-parameter}
 
-Nella versione v5, il parametro **sessiontoken** funzionava sia sul lato client (elenco di schermate di tipo panoramica, editor di collegamenti, ecc.) e lato server (applicazioni web, report, jsp, jssp, ecc.). Nella versione 7 funziona solo sul lato server. Se desideri tornare alla funzionalità completa come in v5, devi modificare i collegamenti utilizzando questo parametro e passare tramite la pagina di connessione:
+Nella versione v5, il parametro **sessiontoken** funzionava sia sul lato client (elenco di schermate di tipo panoramica, editor collegamenti, ecc.) che sul lato server (applicazioni web, report, jsp, jssp, ecc.). Nella versione 7 funziona solo sul lato server. Se desideri tornare alla funzionalità completa come in v5, devi modificare i collegamenti utilizzando questo parametro e passare tramite la pagina di connessione:
 
 Esempio di collegamento:
 
@@ -503,7 +503,7 @@ $(XTK_INSTALL_DIR)/tomcat-X/lib/el-api.jar
 
 ### Contenuto offerta {#offer-content}
 
-Nella versione 7, il contenuto dell’offerta è stato spostato. Nella versione 6.02 il contenuto era in ogni schema di rappresentazione (**nms:emailOfferView**). Nella versione 7, il contenuto è ora nello schema dell’offerta. Dopo l’aggiornamento, il contenuto non sarà quindi visibile nell’interfaccia. Dopo l’aggiornamento, devi ricreare il contenuto dell’offerta o sviluppare uno script che sposta automaticamente il contenuto dallo schema di rappresentazione allo schema dell’offerta.
+Nella versione 7, il contenuto dell’offerta è stato spostato. Nella versione v6.02 il contenuto era in ogni schema di rappresentazione (**nms:emailOfferView**). Nella versione 7, il contenuto è ora nello schema dell’offerta. Dopo l’aggiornamento, il contenuto non sarà quindi visibile nell’interfaccia. Dopo l’aggiornamento, devi ricreare il contenuto dell’offerta o sviluppare uno script che sposta automaticamente il contenuto dallo schema di rappresentazione allo schema dell’offerta.
 
 >[!IMPORTANT]
 >
@@ -623,7 +623,8 @@ Tutti i rapporti standard utilizzano attualmente il motore di rendering v6.x. Se
 
 ### Rapporti personalizzati {#personalized-reports}
 
-<!--If you want to have the blue banner from v7 (allowing you access to the tabs), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
+<!--
+If you want to have the blue banner from v7 (allowing you access to the tabs), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
 
 ![](assets/migration_reports_1.png)
 -->

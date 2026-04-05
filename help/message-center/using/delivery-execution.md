@@ -7,7 +7,7 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 930c6395-0c00-40ee-a925-3e0cae67c55f
-source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 1%
@@ -40,7 +40,7 @@ Per impostazione predefinita, sono ordinate in sottocartelle per mese di consegn
 
 ## Monitoraggio dei messaggi transazionali {#transactional-message-monitoring}
 
-Per monitorare i messaggi transazionali, controlla i [registri di consegna](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
+Per monitorare i messaggi transazionali, controlla i [registri di consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
 
 Le consegne transazionali inviate dall&#39;istanza di esecuzione vengono sincronizzate con l&#39;istanza di controllo tramite un flusso di lavoro tecnico (**[!UICONTROL Message Center execution instance]**) che viene eseguito ogni ora.
 
@@ -48,7 +48,8 @@ Le consegne transazionali inviate dall&#39;istanza di esecuzione vengono sincron
 >
 >Le consegne settimanali accumulano gli eventi in base all’ultimo aggiornamento dell’evento e non alla data di creazione dell’evento. Pertanto, durante l’estrazione dei registri di consegna della messaggistica transazionale dall’istanza di controllo, l’ID di consegna associato a ciascun ID del registro di consegna può cambiare nel tempo man mano che il registro viene aggiornato (ad esempio, quando viene ricevuto un mancato recapito in entrata per l’evento).
 
-<!--The transactional deliveries sent from the execution instance are synchronized back to the control instance as follows.
+<!--
+The transactional deliveries sent from the execution instance are synchronized back to the control instance as follows.
 
 Let's take a [delivery template](../../message-center/using/introduction.md) labelled *Template_1*.
 
@@ -73,6 +74,8 @@ Let's take a [delivery template](../../message-center/using/introduction.md) lab
 
 To summarize, the deliveries weekly accumulate the events based on the latest event update, and not on the event creation date.
 
-Therefore, when extracting transactional messaging delivery logs from the control instance, the delivery ID associated with each delivery log ID changes every week.-->
+Therefore, when extracting transactional messaging delivery logs from the control instance, the delivery ID associated with each delivery log ID changes every week.
+
+-->
 
 Per monitorare l&#39;attività e l&#39;esecuzione delle istanze di esecuzione, vedere [Rapporti sulla messaggistica transazionale](../../message-center/using/about-transactional-messaging-reports.md).
