@@ -1625,9 +1625,9 @@ Parametri diversi del nodo **mta**. Si tratta della configurazione degli agenti 
    <td> statServerAddress<br /> </td> 
    <td> Indirizzo del server delle statistiche di consegna, indicato come 
     &lt;dns o ip&gt; 
-      <code>[</code>: 
+      <code>&lbrack;</code>: 
      &lt;porta&gt; 
-       <code>]</code>. Consulta 
+       <code>&rbrack;</code>. Consulta 
       <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Coordinate del server delle statistiche</a>. 
       <br /> 
      </td> 

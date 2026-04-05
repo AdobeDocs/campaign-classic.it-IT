@@ -86,7 +86,7 @@ Tuttavia, se hai avviato un progetto di messaggistica transazionale sul canale e
 >Questa procedura è valida solo per i clienti che utilizzano un Windows NLServer installato sullo stesso computer su cui stanno lavorando.
 
 1. Installa il canale necessario, ad esempio il **canale mobile**, utilizzando l&#39;Assistente all&#39;importazione del pacchetto (**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**).
-1. Eseguire un&#39;importazione di file (**[!UICONTROL Tools > Advanced > Import package... > File]**) e selezionare il file **datakitnms **`[Your language]`**packagemessageCenter.xml**.
+1. Eseguire un&#39;importazione di file (**[!UICONTROL Tools > Advanced > Import package... > File]**) e selezionare il file **datakitnms &#x200B;**`[Your language]`**packagemessageCenter.xml**.
 1. In **[!UICONTROL XML content of the data to import]**, mantieni solo il modello di consegna che corrisponde al canale aggiunto. Ad esempio, se hai aggiunto il **canale mobile**, mantieni solo l&#39;elemento **entità** che corrisponde a **[!UICONTROL Mobile transactional message]** (smsTriggerMessage). Se hai aggiunto il **canale app mobile**, mantieni solo il **messaggio transazionale di iOS** (iosTriggerMessage) e il **messaggio transazionale di Android** (androidTriggerMessage).
 
    ![](assets/messagecenter_install_channel.png)
