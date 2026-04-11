@@ -5,9 +5,8 @@ description: Informazioni sulle tipologie di campagne
 role: User, Developer
 feature: Typology Rules, Campaigns
 hide: true
-hidefromtoc: true
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 50%
@@ -18,13 +17,13 @@ ht-degree: 50%
 
 Ottimizzazione delle campagne è il modulo di Adobe Campaign che consente di controllare, filtrare e monitorare l’invio delle consegne. Per evitare conflitti tra campagne, Adobe Campaign può sottoporre a test diverse combinazioni applicando specifiche regole di vincolo. Ciò garantisce che i messaggi inviati soddisfino le esigenze e le aspettative dei clienti, in linea con le politiche di comunicazione aziendali.
 
-![](assets/do-not-localize/how-to-video.png) [Guarda il video su questa funzione](#typologies-video)
+![](assets/do-not-localize/how-to-video.png) [Guarda un video su questa funzione](#typologies-video)
 
 A seconda dell’offerta, è possibile includere l’ottimizzazione di Campaign o un componente aggiuntivo. Controlla il contratto di licenza.
 
 >[!NOTE]
 >
->Per ulteriori informazioni sull&#39;ottimizzazione di Campaign per Adobe Campaign e su come utilizzarla, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/automation/campaign-optimization/campaign-typologies){target=_blank}.
+>Per ulteriori informazioni sull&#39;ottimizzazione di Campaign per Adobe Campaign e su come utilizzarla, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/campaign-typologies){target=_blank}.
 
 <!--
 
@@ -72,7 +71,7 @@ During delivery preparation, recipients are excluded when criterion is met. You 
 
 This video explains how to implement fatigue management in Adobe Campaign by leveraging typology rules.
 
->[!VIDEO](https://video.tv.adobe.com/v/329939?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25090?quality=12)
 
 ### How to set up fatigue management using predefined filters
 
@@ -81,7 +80,7 @@ This video explains how to implement fatigue management in Adobe Campaign Classi
 
 >[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
 
-Additional Campaign how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
+Additional Campaign how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 
 **Related topic**
 

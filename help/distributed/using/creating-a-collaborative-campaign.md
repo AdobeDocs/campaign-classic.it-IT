@@ -4,9 +4,8 @@ title: Creare una campagna collaborativa
 description: Scopri come creare una campagna collaborativa
 feature: Distributed Marketing
 hide: true
-hidefromtoc: true
 exl-id: 17313fe5-ad42-45ca-a35a-1e7aa89380ef
-source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '915'
 ht-degree: 3%

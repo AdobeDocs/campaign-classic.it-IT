@@ -6,12 +6,11 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Deliverability
 role: User
 hide: true
-hidefromtoc: true
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '901'
-ht-degree: 4%
+ht-degree: 9%
 
 ---
 
@@ -43,7 +42,7 @@ Per ulteriori informazioni, consulta [questa sezione](inbox-rendering.md).
 
 ## Messaggi di bozza {#proof-messages}
 
-L’invio di bozze ti consente di controllare il collegamento di rinuncia, la pagina speculare e tutti gli altri collegamenti, convalidare il messaggio, verificare che siano visualizzate le immagini, rilevare eventuali errori, ecc. Puoi anche controllare la progettazione e il rendering su dispositivi diversi.
+L’invio di bozze consente di controllare il collegamento di rinuncia, la mirror page e tutti gli altri collegamenti, convalidare il messaggio, verificare che siano visualizzate le immagini, rilevare eventuali errori, ecc. È possibile anche controllare la progettazione e il rendering su dispositivi diversi.
 
 Per ulteriori informazioni, consulta [questa sezione](steps-validating-the-delivery.md#sending-a-proof).
 

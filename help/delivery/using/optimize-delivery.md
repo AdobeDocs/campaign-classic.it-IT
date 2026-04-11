@@ -6,9 +6,8 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Deliverability
 role: User
 hide: true
-hidefromtoc: true
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
-source-git-commit: 0c639cc8b9636c190c868980ab5182a0eccb5f74
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 4%
@@ -51,7 +50,7 @@ Per raggiungere la casella in entrata dei destinatari senza che vengano generati
 
    * Durante il controllo della consegna delle e-mail, desideri concentrarti su quattro categorie principali: qualità dei dati, messaggio e contenuto, infrastruttura di invio e reputazione. Per ulteriori informazioni su questo argomento, consulta [questa sezione](about-deliverability.md).
 
-* Applica i consigli dettagliati [&#x200B; in questo documento](about-deliverability.md).
+* Applica i consigli dettagliati [ in questo documento](about-deliverability.md).
 
 * Contatta il rappresentante Adobe per assistenza.
 

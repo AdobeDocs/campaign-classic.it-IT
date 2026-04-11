@@ -4,9 +4,8 @@ title: Creare indicatori
 description: Creare indicatori
 feature: Reporting, Monitoring
 hide: true
-hidefromtoc: true
 exl-id: e4806bb8-de9d-47e4-8b37-d6c0565b7f5a
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 2%
@@ -48,7 +47,7 @@ Fare clic sul collegamento **[!UICONTROL Filter the source data...]** per applic
 
 ## Definire le dimensioni {#defining-dimensions}
 
-I Dimension coincidono con gli assi di analisi definiti per ciascun cubo in base al relativo schema fact. Queste sono le dimensioni analizzate nell’analisi, ad esempio il tempo (anno, mese, data...), una classificazione di prodotti o contratti (famiglia, riferimento, ecc.), un segmento di popolazione (per città, fascia di età, stato, ecc.).
+Le dimensioni coincidono con gli assi di analisi definiti per ciascun cubo in base al relativo schema fact. Queste sono le dimensioni analizzate nell’analisi, ad esempio il tempo (anno, mese, data...), una classificazione di prodotti o contratti (famiglia, riferimento, ecc.), un segmento di popolazione (per città, fascia di età, stato, ecc.).
 
 Questi assi di analisi sono definiti nella scheda **[!UICONTROL Dimension]** del cubo.
 

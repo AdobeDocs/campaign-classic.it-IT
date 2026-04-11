@@ -4,9 +4,8 @@ title: Caricare i contenuti della consegna
 description: Caricamento del contenuto della consegna
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: a52baffd-402b-4b33-ab72-ac954e4dee85
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 2%

@@ -5,9 +5,8 @@ description: Scopri come definire il pubblico delle campagne di marketing
 role: User
 feature: Campaigns, Audiences
 hide: true
-hidefromtoc: true
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1492'
 ht-degree: 1%
@@ -161,7 +160,7 @@ Le icone della barra degli strumenti consentono di intervenire sull’esecuzione
   >
   >Questa opzione è utile durante le fasi avanzate di progettazione e test delle campagne di targeting.
 
-* Arresto incondizionato
+* Interruzione incondizionata
 
   In Esplora, seleziona **[!UICONTROL Administration > Production > Object created automatically > Campaign workflows]** per accedere e agire su ogni flusso di lavoro della campagna.
 
@@ -246,6 +245,6 @@ Questa configurazione equivale a un’attività di condivisione nel flusso di la
 
 Questo video spiega come creare una campagna e un messaggio e-mail in Adobe Campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/329889?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 Ulteriori video dimostrativi di Campaign sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

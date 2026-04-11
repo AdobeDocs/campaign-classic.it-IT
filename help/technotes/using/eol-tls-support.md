@@ -7,9 +7,8 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 hide: true
-hidefromtoc: true
 exl-id: e18d43b6-2a77-4881-85e7-ca36248d4634
-source-git-commit: 19b40f0b827c4b5b7b6484fe4953aebe61d00d1d
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 4%
@@ -20,11 +19,11 @@ ht-degree: 4%
 
 
 
-Adobe non supporta più sistemi utente e client non conformi al protocollo TLS (Transport Layer Security) 1.2. Se continui a utilizzare versioni precedenti di TLS, potresti perdere l’accesso a tutti i prodotti e servizi Adobe.
+Adobe non supporta più sistemi utente e client non conformi al protocollo TLS (Transport Layer Security) 1.2. Se continui a utilizzare versioni precedenti di TLS, potresti perdere l’accesso a tutti i prodotti e i servizi di Adobe.
 
 ## Perché viene visualizzata questa pagina?
 
-Se viene visualizzato il seguente messaggio: **Impossibile visualizzare la pagina**, significa che le app, la pagina Web o il servizio di Adobe a cui si sta tentando di accedere richiedono una connessione di rete più sicura con il browser Web, il sistema operativo o l&#39;app. È obbligatorio utilizzare **TLS 1.2** per la comunicazione di rete sicura e lo scambio di dati tra i sistemi degli utenti e le app e i servizi Web di Adobe.
+Se viene visualizzato il seguente messaggio: **Impossibile visualizzare la pagina**, significa che le app, la pagina Web o il servizio Adobe a cui si sta tentando di accedere richiedono una connessione di rete più sicura con il browser Web, il sistema operativo o l&#39;app. È obbligatorio utilizzare **TLS 1.2** per la comunicazione di rete sicura e lo scambio di dati tra i sistemi degli utenti e le app e i servizi Web di Adobe.
 
 Adobe ha dichiarato obsoleto il supporto per le versioni inferiori di TLS (incluse TLS 1.0 e 1.1). Per informazioni tecniche sul protocollo TLS 1.2, consulta [Domande frequenti](#faq).
 
@@ -53,11 +52,11 @@ Anche il sistema operativo e i framework dell’applicazione devono supportare T
 
 * **Quale sarà l’impatto dell&#39;aggiornamento?**
 
-  Gli standard di sicurezza e conformità di Adobe richiedono che i protocolli più vecchi vengano resi obsoleti a maggio 2018 e richiedono l’utilizzo di TLS 1.2 come versione aggiornata. Se il sistema non è conforme a TLS 1.2, l’accesso ad alcuni servizi e app di Adobe è limitato.
+  Gli standard di conformità per la sicurezza di Adobe richiedono che i protocolli più vecchi vengano resi obsoleti a maggio 2018 e richiedono l’utilizzo di TLS 1.2 come versione aggiornata. Se il sistema non è conforme a TLS 1.2, l’accesso ad alcune app e servizi di Adobe è limitato.
 
 * **Effetti di TLS**
 
-  Puoi interagire con alcune app e servizi di Adobe solo tramite una connessione di rete sicura. TLS garantisce che la connessione tra il browser e queste app e servizi web sia sicura e affidabile.
+  Puoi interagire con alcune app e servizi Adobe solo tramite una connessione di rete sicura. TLS garantisce che la connessione tra il browser e queste app e servizi web sia sicura e affidabile.
 
   Con il rilascio di nuovi browser e sistemi operativi, gli standard di sicurezza vengono aggiornati per garantire livelli più elevati di privacy e integrità dei dati. Tuttavia, le versioni precedenti di questi browser o sistemi operativi non vengono aggiornate per includere gli standard più recenti.
 
@@ -71,25 +70,25 @@ Anche il sistema operativo e i framework dell’applicazione devono supportare T
 
 * **Perché Adobe disabilita il supporto per TLS 1.0 e 1.1?**
 
-  Adobe dispone di standard di conformità per la sicurezza che richiedono la disattivazione del supporto per i protocolli meno recenti. Uno di questi standard garantisce la conformità con il settore delle carte di pagamento (Payment Card Industry, PCI). Il server di adattamento PCI è un insieme di standard di sicurezza che richiedono alle organizzazioni che accettano, elaborano, memorizzano o trasmettono le informazioni della carta di credito per mantenere un ambiente sicuro.
+  Adobe dispone di standard di sicurezza e conformità che richiedono la disattivazione del supporto per i protocolli meno recenti. Uno di questi standard garantisce la conformità con il settore delle carte di pagamento (Payment Card Industry, PCI). Il server di adattamento PCI è un insieme di standard di sicurezza che richiedono alle organizzazioni che accettano, elaborano, memorizzano o trasmettono le informazioni della carta di credito per mantenere un ambiente sicuro.
 
   La conformità PCI impone l’utilizzo di TLS 1.1 o versione successiva a maggio 2018.
 
-* **Perché l&#39;Adobe impone l&#39;utilizzo di TLS 1.2 invece di consentire TLS 1.1 o TLS 1.0?**
+* **Perché Adobe impone l&#39;utilizzo di TLS 1.2 anziché consentire TLS 1.1 o TLS 1.0?**
 
-  La maggior parte delle richieste per app e servizi web di Adobe proviene da sistemi utente conformi a TLS 1.2, con traffico ridotto dai sistemi TLS 1.1.
+  La maggior parte delle richieste per le app e i servizi web di Adobe proviene da sistemi utente conformi a TLS 1.2, con traffico ridotto dai sistemi TLS 1.1.
 
   Adobe è migrato a TLS 1.2, pertanto l’accesso alle app e ai servizi web è più sicuro.
 
 * **Qual è l&#39;ultima data in cui è possibile utilizzare una versione precedente di TLS?**
 
-  L’Adobe incoraggia gli utenti ad abbandonare rapidamente le versioni precedenti per evitare l’esposizione a vulnerabilità di sicurezza. Per ulteriori informazioni, contatta l’Assistenza clienti Adobe o il tuo Customer Success Manager.
+  Adobe incoraggia gli utenti ad abbandonare rapidamente le versioni precedenti per evitare l’esposizione a vulnerabilità di sicurezza. Per ulteriori informazioni, contatta l’Assistenza clienti di Adobe o il tuo Customer Success Manager.
 
 * **Quale messaggio di errore viene visualizzato se si utilizza un browser non configurato per TLS 1.2?**
 
   Dipende dal browser in uso. Tutti i browser menzionati in [Matrice di compatibilità di Campaign](../../rn/using/compatibility-matrix.md) sono configurati per l&#39;utilizzo di TLS 1.2. Se utilizzi un browser o una versione che non figura nell’elenco, aggiorna il browser.
 
-  L’Adobe non controlla i messaggi di errore generati dal livello di comunicazione SSL. Il browser genera questi messaggi prima di connettersi alle app e ai servizi di Adobe. Di seguito è riportato un esempio di errore che può verificarsi con Internet Explorer 11 in Windows 7:
+  Adobe non controlla i messaggi di errore generati dal livello di comunicazione SSL. Il browser genera questi messaggi prima di connettersi alle app e ai servizi di Adobe. Di seguito è riportato un esempio di errore che può verificarsi con Internet Explorer 11 in Windows 7:
 
   ![](assets/do-not-translate/page-not-displayed.png)
 

@@ -4,9 +4,8 @@ title: Dati di targeting
 description: Ulteriori informazioni sul targeting dei dati in un flusso di lavoro
 feature: Query Editor, Data Management, Workflows
 hide: true
-hidefromtoc: true
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1919'
 ht-degree: 5%
@@ -17,7 +16,7 @@ ht-degree: 5%
 
 
 
-## Creare le query {#creating-queries}
+## Creare query {#creating-queries}
 
 ### Selezionare i dati {#selecting-data}
 
@@ -179,9 +178,9 @@ Per configurarlo, devi innanzitutto selezionare i criteri:
 
    Per ulteriori informazioni, a seconda della versione di Campaign in uso, consulta le sezioni seguenti:
 
-   ![](assets/do-not-localize/v7.jpeg) [Documentazione di Campaign v7](../../installation/using/about-fda.md)
+   ![](assets/do-not-localize/v7.jpeg)[Documentazione di Campaign v7](../../installation/using/about-fda.md)
 
-   ![](assets/do-not-localize/v8.png) [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=it)
+   ![](assets/do-not-localize/v8.png)[Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=it)
 
 Quindi, è necessario aggiungere nuovi sottoinsiemi:
 

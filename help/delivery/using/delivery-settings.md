@@ -5,9 +5,8 @@ description: Scopri le impostazioni di consegna v7 specifiche
 feature: Channel Configuration
 role: User
 hide: true
-hidefromtoc: true
 exl-id: 66250817-f829-4b8b-92dd-2daa92a97fe0
-source-git-commit: 2e3a14c97706a873f0791ef83708d704d2eed6c3
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 12%
@@ -16,7 +15,7 @@ ht-degree: 12%
 
 # Impostazioni consegna {#about-delivery-settings}
 
-Le seguenti impostazioni sono specifiche di Campaign Classic. Per altre impostazioni di consegna, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=it){target="_blank"}.
+Le seguenti impostazioni sono specifiche di Campaign Classic. Per altre impostazioni di consegna, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target="_blank"}.
 
 ## Analisi della consegna {#delivery-analysis}
 

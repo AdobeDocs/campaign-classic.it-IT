@@ -4,9 +4,8 @@ title: Caricamento dati (file)
 description: Ulteriori informazioni sull’attività del flusso di lavoro Caricamento dati (file)
 feature: Workflows, Data Management Activity
 hide: true
-hidefromtoc: true
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1140'
 ht-degree: 14%
@@ -15,7 +14,7 @@ ht-degree: 14%
 
 # Caricamento dati (file){#data-loading-file}
 
-## Utilizzare {#use}
+## Utilizzo {#use}
 
 L&#39;attività **[!UICONTROL Data loading (File)]** ti consente di accedere direttamente a un&#39;origine di dati esterni e di utilizzarla in Adobe Campaign. Infatti, tutti i dati necessari per le operazioni di targeting non sempre si trovano nel database di Adobe Campaign: possono essere resi disponibili in file esterni.
 

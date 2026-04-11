@@ -4,11 +4,10 @@ title: Consegna continua
 description: Consegna continua
 feature: Workflows, Channels Activity
 hide: true
-hidefromtoc: true
 exl-id: 9c228cdb-331e-476e-a24c-3c7e23add3bf
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '358'
 ht-degree: 12%
 
 ---
@@ -19,7 +18,7 @@ ht-degree: 12%
 
 Un&#39;azione di tipo **Consegna continua** consente di aggiungere nuovi destinatari a una consegna esistente. Questo tipo di consegna evita di dover creare ogni volta una nuova consegna: questa modalità è spesso più efficiente, in particolare per gli avvisi o le notifiche di basso volume inviate come e quando necessario.
 
-![](assets/do-not-localize/how-to-video.png) [Guarda il video su questa funzione](#continuous-delivery-video)
+![](assets/do-not-localize/how-to-video.png) [Guarda un video su questa funzione](#continuous-delivery-video)
 
 A livello di modello di consegna, puoi specificare uno script per calcolare l’etichetta (e la cartella della campagna) della consegna associata. Se lo script calcola una consegna che non esiste ancora, viene creato al volo.
 
@@ -64,6 +63,6 @@ Una consegna continua creerà un SINGOLO registro di consegna e consegna (broadL
 
 Questo video mostra come configurare una consegna continua con una query incrementale.
 
->[!VIDEO](https://video.tv.adobe.com/v/329896?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
 
 Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

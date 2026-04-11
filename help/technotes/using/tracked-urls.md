@@ -4,9 +4,8 @@ title: Problema di firma degli URL tracciati
 description: Problema di firma degli URL tracciati
 feature: Technote
 hide: true
-hidefromtoc: true
 exl-id: e7d4331b-7149-4768-8e46-2e2911319074
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 30%
@@ -19,7 +18,7 @@ ht-degree: 30%
 
 In seguito alle modifiche recenti, gli URL tracciati possono non riuscire quando la firma URL è attiva in Campaign. Alcune caselle e-mail possono essere più interessate di altre, in particolare quelle di aziende che usano strumenti di sicurezza specifici che possono interessare i collegamenti e modificare il meccanismo di firma degli URL.
 
-Di conseguenza, l’Adobe consiglia di disabilitare il meccanismo di firma per il tracciamento dei collegamenti. Questa procedura corregge i vecchi collegamenti di tracciamento, ad eccezione di quelli ricevuti con un doppio escape.
+Di conseguenza, Adobe consiglia di disabilitare il meccanismo di firma per i collegamenti di tracciamento. Questa procedura corregge i vecchi collegamenti di tracciamento, ad eccezione di quelli ricevuti con un doppio escape.
 
 Tieni presente che anche i collegamenti di annullamento di abbonamento, come tutti gli altri collegamenti, possono non riuscire; la frequenza varia da host a host ma è comunque inferiore all’1%.
 

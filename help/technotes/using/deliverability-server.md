@@ -4,12 +4,11 @@ title: Aggiornamento al nuovo server di recapito messaggi
 description: Scopri come aggiornare al nuovo server di recapito messaggi di Campaign
 feature: Technote, Deliverability
 hide: true
-hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: c42d4022587846081442a39d03546c0ef335c7a0
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '986'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +16,7 @@ ht-degree: 0%
 
 A partire dalla versione [v7.2.2](../../rn/using/latest-release.md#release-7-2-2), Adobe Campaign si basa su un nuovo server di recapito messaggi che offre elevata disponibilità e risolve i problemi di conformità relativi alla sicurezza. Campaign Classic ora sincronizza le regole di recapito messaggi, i registri di trasmissione e l’indirizzo di eliminazione da e verso il nuovo server di recapito messaggi. Il vecchio server di recapito messaggi verrà disattivato il 31 agosto 2022.
 
-In qualità di cliente Campaign Classic, devi implementare il nuovo server di recapito messaggi **prima del 31 agosto 2022**.
+In qualità di cliente di Campaign Classic, devi implementare il nuovo server di recapito messaggi **prima del 31 agosto 2022**.
 
 >[!NOTE]
 >
@@ -26,7 +25,7 @@ In qualità di cliente Campaign Classic, devi implementare il nuovo server di re
 
 ## Cosa è cambiato?{#acc-deliverability-changes}
 
-Ad Adobe, è in corso la disattivazione dei datacenter meno recenti per motivi di conformità in materia di sicurezza. I client Adobe Campaign Classic devono migrare al nuovo servizio di recapito messaggi, in hosting su Amazon Web Service (AWS).
+Adobe sta smantellando i datacenter meno recenti per motivi di conformità in materia di sicurezza. I client Adobe Campaign Classic devono migrare al nuovo servizio di recapito messaggi, in hosting su Amazon Web Service (AWS).
 
 Questo nuovo server garantisce un’elevata disponibilità (99.9)&#x200B; e fornisce endpoint sicuri e autenticati per consentire ai server di Campaign di recuperare i dati richiesti: anziché connettersi al database per ogni richiesta, il nuovo server di recapito messaggi memorizza in cache i dati per soddisfare le richieste, ove possibile. Questo meccanismo migliora il tempo di risposta&#x200B;
 
@@ -38,7 +37,7 @@ Tutti i clienti sono interessati e devono effettuare l’aggiornamento a [Campai
 
 In qualità di **cliente in hosting**, Adobe collaborerà con te per aggiornare le tue istanze alla versione più recente e creare il progetto in Adobe Developer Console.
 
-In qualità di **cliente on-premise/ibrido**, devi eseguire l’aggiornamento a [Campaign v7.2.2](../../rn/using/latest-release.md#release-7-2-2) (o più) per beneficiare del nuovo server di recapito messaggi. Una volta aggiornate tutte le istanze, devi [implementare la nuova integrazione](#implementation-steps) per Adobe deliverability server e garantire una transizione senza soluzione di continuità.
+In qualità di **cliente on-premise/ibrido**, devi eseguire l’aggiornamento a [Campaign v7.2.2](../../rn/using/latest-release.md#release-7-2-2) (o più) per beneficiare del nuovo server di recapito messaggi. Una volta aggiornate tutte le istanze, devi [implementare la nuova integrazione](#implementation-steps) nel server di recapito messaggi di Adobe e garantire una transizione senza problemi.
 
 ## Passaggi di implementazione {#implementation-steps}
 
@@ -46,7 +45,7 @@ In qualità di **cliente on-premise/ibrido**, devi eseguire l’aggiornamento a 
 >
 >Questi passaggi devono essere eseguiti solo per le implementazioni ibride e on-premise.
 
-Come parte della nuova integrazione del server di recapito messaggi, Campaign deve comunicare con Adobe Shared Services tramite un’autenticazione basata su Identity Management Service (IMS). Il modo migliore è quello di utilizzare il token gateway basato su Adobe Developer (detto anche token account tecnico o Adobe di IO JWT).
+Come parte della nuova integrazione del server di recapito messaggi, Campaign deve comunicare con Adobe Shared Services tramite un’autenticazione basata su Identity Management Service (IMS). Il modo migliore è quello di utilizzare il token gateway basato su Adobe Developer (detto anche token account tecnico o Adobe IO JWT).
 
 >[!AVAILABILITY]
 >
@@ -67,15 +66,15 @@ Prima di avviare l’implementazione, controlla la configurazione dell’istanza
    * Se l’opzione è compilata, puoi avviare l’implementazione.
    * Se non viene compilato alcun valore, contatta l&#39;[Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} per ottenere il tuo CUID.
 
-   Questa opzione deve essere compilata su tutte le istanze Campaign (MKT, MID, RT, EXEC) con il valore corretto. In qualità di cliente ibrido, rivolgiti a Adobe per avere l’opzione impostata sulle istanze MID, RT ed EXEC.
+   Questa opzione deve essere compilata su tutte le istanze Campaign (MKT, MID, RT, EXEC) con il valore corretto. In qualità di cliente ibrido, contatta Adobe per avere l’opzione impostata sulle istanze MID, RT ed EXEC.
 
 In qualità di cliente on-premise, devi anche verificare che una campagna **[!UICONTROL Product profile]** sia disponibile per la tua organizzazione. A tale scopo, segui i passaggi indicati di seguito:
 
 1. Come amministratore, connettiti a [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}.
 1. Accedi alla sezione **Prodotti e servizi** e verifica che **Adobe Campaign** sia elencato.
-Se non riesci a visualizzare **Adobe Campaign**, contatta l&#39;[Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} per aggiungerlo.
+Se non riesci a visualizzare **Adobe Campaign**, contatta l&#39;[Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} per ottenerne l&#39;aggiunta.
 1. Fai clic su **Adobe Campaign** e seleziona la tua organizzazione.
-   **Attenzione**: se hai più di un&#39;organizzazione, assicurati di selezionare quella corretta. Ulteriori informazioni sulle organizzazioni [in questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=it#ims-org-id){_blank}.
+   **Attenzione**: se hai più di un&#39;organizzazione, assicurati di selezionare quella corretta. Ulteriori informazioni sulle organizzazioni [in questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
 
 1. Verificare che esista un **[!UICONTROL Product profile]**. In caso contrario, creala. Nessuna autorizzazione richiesta per **[!UICONTROL Product profile]**.
 
@@ -101,7 +100,7 @@ Per verificare il successo dell’integrazione, segui i passaggi seguenti:
 
 1. Apri la console client e accedi ad Adobe Campaign.
 1. Selezionare **Amministrazione > Produzione > Flussi di lavoro tecnici**.
-1. Riavvia il flusso di lavoro **Aggiorna per il recapito messaggi** (deliverabilityUpdate). Questa operazione deve essere eseguita su tutte le istanze di Campaign (MKT, MID, RT, EXEC). In qualità di cliente ibrido, rivolgiti a Adobe per riavviare il flusso di lavoro sulle istanze MID, RT ed EXEC.
+1. Riavvia il flusso di lavoro **Aggiorna per il recapito messaggi** (deliverabilityUpdate). Questa operazione deve essere eseguita su tutte le istanze di Campaign (MKT, MID, RT, EXEC). In qualità di cliente ibrido, contatta Adobe per riavviare il flusso di lavoro sulle istanze MID, RT ed EXEC.
 1. Check logs: il flusso di lavoro deve essere eseguito senza errori.
 
 >[!CAUTION]

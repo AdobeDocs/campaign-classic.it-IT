@@ -4,9 +4,8 @@ title: Avviare un flusso di lavoro
 description: Scopri come avviare un flusso di lavoro e scoprire i flussi di lavoro, la barra degli strumenti delle azioni e il menu di scelta rapida
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 1%

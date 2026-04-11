@@ -4,9 +4,8 @@ title: 'Nota tecnica: aggiorna l’ambiente per la connessione ad Adobe Campaign
 description: Campaign - Aggiornamenti IMS
 feature: Technote, Upgrade
 hide: true
-hidefromtoc: true
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
-source-git-commit: 62fc46e45078fce56eadda3518251e61244bf5d0
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 5%
@@ -21,7 +20,7 @@ Il 30 giugno 2021 sono state apportate modifiche alle funzionalità di accesso d
 
 ## Cosa è cambiato?
 
-Adobe Identity Management Service (IMS) ha interrotto il supporto delle versioni precedenti di Internet Explorer il **30 giugno 2021**. [Ulteriori informazioni](https://helpx.adobe.com/it/x-productkb/global/update-operating-system-and-browser.html).
+Adobe Identity Management Service (IMS) ha interrotto il supporto delle versioni precedenti di Internet Explorer il **30 giugno 2021**. [Ulteriori informazioni](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
 
 Adobe intende preservare la funzionalità IMS per tutti i clienti oltre il 30 giugno 2021. IMS fa parte del framework di sicurezza che consente agli utenti di accedere alla console client, e quindi ad Adobe Campaign.
 
@@ -78,7 +77,7 @@ Il seguente messaggio di avviso è visibile agli utenti se devono aggiornare la 
 
 ![](../../integrations/using/assets/do-not-localize/errorMsg.png)
 
-Se viene visualizzato questo avviso, assicurarsi di installare gli aggiornamenti più recenti del sistema operativo in uso. [Ulteriori informazioni](https://helpx.adobe.com/it/x-productkb/global/update-operating-system-and-browser.html)
+Se viene visualizzato questo avviso, assicurarsi di installare gli aggiornamenti più recenti del sistema operativo in uso. [Ulteriori informazioni](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)
 
 Se la versione di Internet Explorer non è stata aggiornata, viene visualizzato il seguente messaggio e non è più possibile connettersi a Adobe Campaign:
 

@@ -3,9 +3,8 @@ product: campaign
 title: Interazione
 description: Interazione
 hide: true
-hidefromtoc: true
 feature: Workflows, Interaction, Offers
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 3%
@@ -21,9 +20,9 @@ I flussi di lavoro descritti di seguito vengono installati con il componente agg
 
 Per ulteriori informazioni, a seconda della versione di Campaign in uso, consulta le sezioni seguenti:
 
-![](assets/do-not-localize/v7.jpeg) [Documentazione di Campaign v7](../../interaction/using/interaction-and-offer-management.md)
+![](assets/do-not-localize/v7.jpeg)[Documentazione di Campaign v7](../../interaction/using/interaction-and-offer-management.md)
 
-![](assets/do-not-localize/v8.png) [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/interaction/interaction.html)
+![](assets/do-not-localize/v8.png)[Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/interaction/interaction.html)
 
 
 <table> 

@@ -5,9 +5,8 @@ description: Utilizzare i modelli di consegna
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Delivery Templates
 hide: true
-hidefromtoc: true
 exl-id: a5da3f29-5eab-428c-b7c3-d9e4243fe628
-source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 6%
@@ -48,7 +47,7 @@ Per configurare gli indirizzi nell’interfaccia di Campaign, effettua le seguen
 
    ![](assets/d_best_practices_email_header.png)
 
-1. Nel campo **[!UICONTROL Sender address]**, assicurati che il dominio dell&#39;indirizzo sia lo stesso del sottodominio che hai delegato ad Adobe. È possibile modificare la parte che precede &#39;@&#39; ma non l&#39;indirizzo di dominio.
+1. Nel campo **[!UICONTROL Sender address]**, assicurati che il dominio dell&#39;indirizzo sia lo stesso del sottodominio delegato ad Adobe. È possibile modificare la parte che precede &#39;@&#39; ma non l&#39;indirizzo di dominio.
 
 1. Nel campo **[!UICONTROL From]**, utilizza un nome facilmente identificabile dai destinatari, ad esempio il nome del tuo marchio, per aumentare il tasso di apertura delle consegne. Per migliorare ulteriormente l’esperienza del destinatario, puoi aggiungere il nome di una persona, ad esempio &quot;Emma from Megastore&quot;.
 

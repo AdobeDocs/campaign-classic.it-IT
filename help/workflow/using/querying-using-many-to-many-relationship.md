@@ -4,11 +4,10 @@ title: Eseguire una query tramite una relazione molti-a-molti
 description: Scopri come eseguire query utilizzando una relazione molti-a-molti
 feature: Query Editor, Workflows
 hide: true
-hidefromtoc: true
 exl-id: e1d40ba1-2493-45c1-bd54-af9cb332028d
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
@@ -35,7 +34,7 @@ Questo esempio mostra anche come configurare un filtro correlato alla scelta di 
 
 Applica i seguenti passaggi:
 
-1. Aprire l&#39;editor delle query generiche e selezionare la tabella Destinatario **[!UICONTROL (nms:recipient)]**.
+1. Aprire l&#39;editor delle query generiche e selezionare la tabella dei destinatari **[!UICONTROL (nms:recipient)]**.
 1. Nella finestra **[!UICONTROL Data to extract]**, selezionare **[!UICONTROL Primary key]**, **[!UICONTROL First name]**, **[!UICONTROL Last name]** e **[!UICONTROL Email]**.
 
    ![](assets/query_editor_nveau_33.png)

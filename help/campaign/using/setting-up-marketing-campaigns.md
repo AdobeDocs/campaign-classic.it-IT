@@ -5,9 +5,8 @@ description: Scopri come creare ed eseguire campagne di marketing
 role: User
 feature: Campaigns, Cross Channel Orchestration, Programs
 hide: true
-hidefromtoc: true
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1248'
 ht-degree: 5%
@@ -224,6 +223,6 @@ Ogni campagna periodica contiene gli stessi elementi. Una volta creata, viene ge
 
 Questo video mostra come creare un piano di marketing, programmi e campagne.
 
->[!VIDEO](https://video.tv.adobe.com/v/326562?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/35132?quality=12)
 
 Ulteriori video dimostrativi di Campaign sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

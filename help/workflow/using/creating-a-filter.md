@@ -4,9 +4,8 @@ title: Creare un filtro
 description: Scopri come creare un filtro durante l’esecuzione delle query
 feature: Query Editor, Workflows
 hide: true
-hidefromtoc: true
 exl-id: 297ea1e1-39ef-4b99-aaaa-9e88611fb1bf
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 2%

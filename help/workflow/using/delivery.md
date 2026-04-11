@@ -4,11 +4,10 @@ title: Consegna
 description: Ulteriori informazioni sull’attività del flusso di lavoro di tipo Consegna
 feature: Workflows, Channels Activity
 hide: true
-hidefromtoc: true
 exl-id: 72fbdd1d-a105-4e9f-9e17-2e9d62d2bb80
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '916'
 ht-degree: 1%
 
 ---

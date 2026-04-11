@@ -4,9 +4,8 @@ title: Tracciare una campagna
 description: Scopri come tracciare una campagna con Campaign Distributed Marketing
 feature: Distributed Marketing
 hide: true
-hidefromtoc: true
 exl-id: 87d1909c-d2eb-47ce-a860-0e78a64d2914
-source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 1%

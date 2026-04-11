@@ -5,9 +5,8 @@ description: Accedere alle campagne di marketing
 role: User
 feature: Campaigns, Cross Channel Orchestration
 hide: true
-hidefromtoc: true
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 2%
@@ -185,7 +184,7 @@ Questa tabella fornisce un riepilogo delle azioni che è possibile eseguire sull
 | Magazzino | Eliminare una linea di magazzino |
 | Simulazione di offerta | Avviare e interrompere una simulazione |
 | Flusso di lavoro di destinazione | Avviare, mettere in pausa e interrompere un flusso di lavoro |
-| Report | Salva i dati correnti nella cronologia del rapporto |
+| Rapporti | Salva i dati correnti nella cronologia del rapporto |
 | Forum | Aggiungi una discussione<br/>Rispondi a un messaggio in una discussione<br/>Segui una discussione e annulla l&#39;iscrizione |
 
 ### Approvazioni
