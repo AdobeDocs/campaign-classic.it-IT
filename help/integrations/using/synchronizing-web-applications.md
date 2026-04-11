@@ -4,9 +4,8 @@ title: Sincronizzare le applicazioni web
 description: Scopri come sincronizzare le applicazioni web con il connettore ACS
 feature: ACS Connector
 hide: true
-hidefromtoc: true
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 1%
@@ -60,7 +59,7 @@ In Campaign v7, sono stati creati i seguenti oggetti:
 
 ## Replica dei dati {#replicating-the-data}
 
-Per replicare i dati necessari tra Campaign v7 e Campaign Standard, sono disponibili diversi modelli di flusso di lavoro di replica. Il flusso di lavoro **[!UICONTROL Profiles replication]** replica automaticamente in Campaign Standard tutti i destinatari di Campaign v7. Consulta [Flussi di lavoro tecnici e di replica](../../integrations/using/acs-connector-principles-and-data-cycle.md#technical-and-replication-workflows). Il flusso di lavoro **[!UICONTROL Landing pages replication]** abilita la replica delle applicazioni Web che si desidera utilizzare in Campaign Standard.
+Per replicare i dati necessari tra Campaign v7 e Campaign Standard, sono disponibili diversi modelli di flusso di lavoro di replica. Il flusso di lavoro **[!UICONTROL Profiles replication]** replica automaticamente tutti i destinatari di Campaign v7 in Campaign Standard. Consulta [Flussi di lavoro tecnici e di replica](../../integrations/using/acs-connector-principles-and-data-cycle.md#technical-and-replication-workflows). Il flusso di lavoro **[!UICONTROL Landing pages replication]** abilita la replica delle applicazioni Web che si desidera utilizzare in Campaign Standard.
 
 ![](assets/acs_connect_lp_1.png)
 

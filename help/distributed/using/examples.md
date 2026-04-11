@@ -4,9 +4,8 @@ title: Esempi di marketing distribuito
 description: Esempi di marketing distribuito
 feature: Distributed Marketing
 hide: true
-hidefromtoc: true
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
-source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 0%
@@ -144,7 +143,7 @@ Una volta approvati i controlli, la campagna può iniziare automaticamente.
 
 #### Creare una campagna collaborativa {#creating-a-collaborative-campaign}
 
-1. Creare un nuovo **[!UICONTROL collaborative campaign (by target approval)]** dal nodo **[!UICONTROL Campaign management > Campaign]**.
+1. Creare un nuovo **[!UICONTROL Campaign management > Campaign]** dal nodo **[!UICONTROL collaborative campaign (by target approval)]**.
 1. Nella scheda **[!UICONTROL Targeting and workflows]**, crea un flusso di lavoro per la campagna. Deve contenere un&#39;attività **Split** in cui **[!UICONTROL Record count limitation]** è definito dall&#39;attività **[!UICONTROL Data distribution]**.
 
    ![](assets/mkg_dist_use_case_target_valid5.png)

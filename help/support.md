@@ -3,13 +3,12 @@ product: campaign
 title: Guida e opzioni di supporto per Campaign Classic
 description: Hai bisogno di supporto per Campaign Classic? Sei nel posto giusto!
 feature: Troubleshooting
-hidefromtoc: true
 hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 66%
+ht-degree: 67%
 
 ---
 

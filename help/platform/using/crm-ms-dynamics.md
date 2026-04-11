@@ -5,8 +5,7 @@ description: Scopri come collegare Campaign e Microsoft Dynamics
 feature: Microsoft CRM Integration
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
 hide: true
-hidefromtoc: true
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1104'
 ht-degree: 2%
@@ -52,13 +51,13 @@ In Campaign Classic:
 
 ## Configurare Microsoft Dynamics CRM {#config-crm-microsoft}
 
-Per generare il token di accesso e le chiavi per configurare l&#39;account, è necessario accedere a [Microsoft Azure Directory](https://portal.azure.com) utilizzando le credenziali di **Global Administrator**. Quindi segui i passaggi descritti di seguito.
+Per generare il token e le chiavi di accesso per configurare l&#39;account, è necessario accedere a [Microsoft Azure Directory](https://portal.azure.com) utilizzando le credenziali di **Global administrator**. Quindi segui i passaggi descritti di seguito.
 
 ### Ottieni ID client Microsoft Dynamics {#get-client-id-microsoft}
 
 Per ottenere l&#39;ID client, è necessario registrare un&#39;app in Azure Active Directory. L’ID client è uguale all’ID applicazione.
 
-1. Passare a **Azure Active Directory > Registrazioni app** e fare clic su **Nuova registrazione applicazione**.
+1. Passa a **Azure Active Directory > Registrazioni app** e fai clic su **Nuova registrazione applicazione**.
 1. Assegna un nome univoco che possa aiutare a identificare un&#39;istanza, ad esempio **adobecampaign`<instance identifier>`**.
 1. Scegliere **Tipo di applicazione** come **App Web / API**.
 1. Utilizza `http://localhost` per **URL di accesso**.
@@ -106,7 +105,7 @@ L&#39;identificatore della chiave del certificato **(customKeyIdentifier)** e l&
 
 **Passaggio 2**: concedere il consenso dell&#39;amministratore
 
-1. Passare a **Azure Active Directory > Applicazioni aziendali**.
+1. Passa a **Azure Active Directory > Applicazioni aziendali**.
 
 1. Seleziona l’applicazione a cui desideri concedere il consenso dell’amministratore a livello di tenant.
 
@@ -114,7 +113,7 @@ L&#39;identificatore della chiave del certificato **(customKeyIdentifier)** e l&
 
 1. Fai clic su **Concedi il consenso dell&#39;amministratore**.
 
-Per ulteriori informazioni, consulta [Documentazione di Azure](https://docs.microsoft.com/azure/active-directory/manage-apps/grant-admin-consent#grant-admin-consent-from-the-azure-portal).
+Per ulteriori informazioni, consulta la [documentazione di Azure](https://docs.microsoft.com/azure/active-directory/manage-apps/grant-admin-consent#grant-admin-consent-from-the-azure-portal).
 
 ### Creare un utente dell’app {#create-app-user-microsoft}
 
@@ -132,14 +131,14 @@ L’utente dell’app è l’utente che verrà utilizzato dall’applicazione re
 
 **Passaggio 2**: assegna una licenza corretta all&#39;utente creato
 
-1. Da [Microsoft Azure](https://portal.azure.com), fare clic su **App amministratore**.
+1. Da [Microsoft Azure](https://portal.azure.com), fai clic su **Admin app**.
 1. Vai a **Utenti > Utenti attivi** e fai clic sull&#39;utente appena creato.
 1. Fai clic su **Modifica licenze prodotto** e seleziona il **Piano di coinvolgimento del cliente Dynamics 365**.
 1. Fai clic su **Chiudi**.
 
 **Passaggio 3**: creare un utente dell&#39;applicazione in Dynamics CRM
 
-1. Da [Microsoft Azure](https://portal.azure.com), passare a **Impostazioni > Protezione > Utenti**.
+1. Da [Microsoft Azure](https://portal.azure.com), passa a **Impostazioni > Protezione > Utenti**.
 1. Fai clic sull&#39;elenco a discesa, seleziona **Utenti applicazioni** e fai clic su **Nuovo**.
 1. Utilizza lo stesso nome utente creato in Active Directory in precedenza
 

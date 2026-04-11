@@ -4,9 +4,8 @@ title: Nota tecnica - Aggiornamenti alla configurazione di Adobe Campaign
 description: Aggiornamenti alla configurazione di Adobe Campaign
 feature: Technote, Upgrade
 hide: true
-hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 8%
@@ -19,11 +18,11 @@ ht-degree: 8%
 
 L’infrastruttura e le impostazioni devono essere aggiornate regolarmente con le build e le correzioni di prodotto più recenti. Tali correzioni sono necessarie per garantire la continuità del servizio e la sicurezza. Inoltre, saranno necessari aggiornamenti per allinearsi alle modifiche di terze parti.
 
-In qualità di **cliente in hosting o Managed Services**, Adobe ti informerà degli aggiornamenti di build a intervalli regolari. Per garantire la conformità, sarà necessario eseguire l&#39;aggiornamento in base alle raccomandazioni.
+In qualità di **cliente in hosting o Managed Services**, Adobe ti informerà degli aggiornamenti della build a intervalli regolari. Per garantire la conformità, sarà necessario eseguire l&#39;aggiornamento in base alle raccomandazioni.
 
 In qualità di **cliente on-premise o ibrido**, devi aggiornare l&#39;implementazione a intervalli regolari in linea con le build rilasciate più recenti.
 
-Per motivi di sicurezza, è ora necessario eseguire l’aggiornamento a una delle versioni elencate di seguito. Oltre ai passaggi di aggiornamento standard, è necessario eseguire alcune attività manuali per garantire che l’ambiente sia sicuro e pronto per le modifiche imminenti da Adobi o sistemi di terze parti.
+Per motivi di sicurezza, è ora necessario eseguire l’aggiornamento a una delle versioni elencate di seguito. Oltre ai passaggi di aggiornamento standard, è necessario eseguire alcune attività manuali per garantire che l’ambiente sia sicuro e pronto per le modifiche imminenti da parte di Adobe o di sistemi di terze parti.
 
 >[!NOTE]
 >
@@ -51,9 +50,9 @@ Scopri come controllare la versione [in questa sezione](../../platform/using/lau
 
 Devi effettuare l’aggiornamento a una delle build più recenti elencate sopra.
 
-* In qualità di cliente ibrido, Adobe ti informerà sulle date di aggiornamento pianificate per le istanze di mid-sourcing. L’Adobe consiglia vivamente di aggiornare anche la tua istanza di marketing.
+* In qualità di cliente ibrido, Adobe ti informerà sulle date di aggiornamento pianificate per le istanze di mid-sourcing. Adobe consiglia vivamente di aggiornare anche la tua istanza di marketing.
 
-  La nuova build è compatibile con le versioni precedenti di Campaign Classic 17.9, ma Adobe consiglia vivamente di eseguire un aggiornamento su tutte le istanze per risolvere le vulnerabilità di sicurezza
+  La nuova build è compatibile con le versioni precedenti di Campaign Classic 17.9, ma Adobe consiglia vivamente un aggiornamento su tutte le istanze per risolvere le vulnerabilità di sicurezza
 
 * In qualità di cliente on-premise, ti viene richiesto di aggiornare le istanze di marketing e mid-sourcing alla build più recente.
 
@@ -71,9 +70,9 @@ Per risolvere una regressione identificata di recente, è necessario installare 
 * Campaign versione 19.2.4.
 * Campaign versione 19.1.8.
 
-## Aggiornamento Adobe Identity Management System (IMS)
+## Aggiornamento del sistema Adobe Identity Management (IMS)
 
-Adobe Identity Service (IMS) non supporterà più le versioni precedenti di Internet Explorer a partire dal **30 giugno 2021**. [Ulteriori informazioni](https://helpx.adobe.com/it/x-productkb/global/update-operating-system-and-browser.html).
+Il servizio Adobe Identity (IMS) non supporterà più le versioni precedenti di Internet Explorer a partire dal **30 giugno 2021**. [Ulteriori informazioni](https://helpx.adobe.com/it/x-productkb/global/update-operating-system-and-browser.html).
 
 Per garantire la compatibilità con Adobe IMS è necessario aggiornare la console client di Campaign.
 
@@ -94,13 +93,13 @@ Scopri come controllare la versione [in questa sezione](../../platform/using/lau
 
 **Come si esegue l’aggiornamento?**
 
-In qualità di cliente in hosting, Adobe collaborerà con te per aggiornare a breve le istanze alla versione più recente.
+In qualità di cliente in hosting, Adobe collaborerà con te per aggiornare le tue istanze alla versione più recente a breve.
 
 In qualità di cliente on-premise/ibrido, devi effettuare l’aggiornamento a una delle versioni più recenti per beneficiare della nuova console client e garantire una transizione senza soluzione di continuità **prima del 30 giugno 2021**.
 
 Una volta aggiornate tutte le istanze, anche la console client deve essere aggiornata a questa versione.
 
-* Scopri come accedere a [Distribuzione di software Adobe](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it).
+* Scopri come accedere a [Distribuzione di software di Adobe](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it).
 
 * [Scopri come installare la console client di Campaign](../../installation/using/installing-the-client-console.md).
 
@@ -110,7 +109,7 @@ Il servizio di autenticazione OAuth legacy ha raggiunto la fine del ciclo di vit
 
 **Sei interessato da questo problema?**
 
-Se le istanze sono in esecuzione su una versione **precedente a Campaign 19.1.8, 20.2.4, Gold Standard 11**, si utilizza una versione precedente dell&#39;integrazione Triggers tramite autenticazione oAuth: **è necessario eseguire l&#39;aggiornamento a una versione più recente e passare a Adobe I/O**.
+Se le istanze sono in esecuzione su una versione **precedente a Campaign 19.1.8, 20.2.4, Gold Standard 11**, si utilizza una versione precedente dell&#39;integrazione Triggers tramite autenticazione oAuth: **è necessario eseguire l&#39;aggiornamento a una versione più recente e passare ad Adobe I/O**.
 
 L’aggiornamento a una delle nuove versioni elencate di seguito è obbligatorio:
 
@@ -123,7 +122,7 @@ Scopri come controllare la versione [in questa sezione](../../platform/using/lau
 
 **Come si esegue l’aggiornamento?**
 
-Dopo aver aggiornato le istanze a una versione più recente, tutti i clienti devono seguire la [procedura per passare alla nuova modalità di autenticazione](../../integrations/using/about-triggers.md#implement). Questo richiede di generare il nuovo token di Adobe I/O e utilizzarlo nell’implementazione.  
+Dopo aver aggiornato le istanze a una versione più recente, tutti i clienti devono seguire la [procedura per passare alla nuova modalità di autenticazione](../../integrations/using/about-triggers.md#implement). Questo richiede di generare il nuovo token Adobe I/O e utilizzarlo nell’implementazione.  
 
 Inoltre, per gli ambienti ibridi, i clienti devono assicurarsi che la pipeline sia configurata sull’istanza di mid-sourcing. [Ulteriori informazioni](../../integrations/using/configuring-pipeline.md).
 

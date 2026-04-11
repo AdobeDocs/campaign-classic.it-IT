@@ -6,9 +6,8 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Personalization
 role: User
 hide: true
-hidefromtoc: true
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '870'
 ht-degree: 3%
@@ -146,6 +145,6 @@ Per creare un blocco di personalizzazione, passa a Esplora e applica i seguenti 
 
 Scopri come creare blocchi di contenuto dinamici e come utilizzarli per personalizzare il contenuto della consegna e-mail.
 
->[!VIDEO](https://video.tv.adobe.com/v/340471?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/340471?captions=ita&quality=12)
 
 Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

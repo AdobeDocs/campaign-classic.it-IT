@@ -4,9 +4,8 @@ title: Flussi di lavoro tecnici
 description: Ulteriori informazioni sui flussi di lavoro tecnici disponibili con i pacchetti Campaign Classic
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 2186b8a30449cb023cb07305ba64d53f2c8adab1
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 1%

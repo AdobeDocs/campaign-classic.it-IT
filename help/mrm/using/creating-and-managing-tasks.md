@@ -6,12 +6,11 @@ feature: Resource Management
 audience: campaign
 content-type: reference
 hide: true
-hidefromtoc: true
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 942edcf028207eab2ea583949ebc99ab61539ea0
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '3743'
+source-wordcount: '3741'
 ht-degree: 0%
 
 ---
@@ -409,7 +408,7 @@ La dipendenza tra le attività è rappresentata da frecce nel dashboard della ca
 
 ![](assets/s_ncs_user_task_dependencies_from_board.png)
 
-In caso di attività raggruppate, Adobe Campaign assegna automaticamente la data di fine dell&#39;attività padre all&#39;attività figlio come data di inizio. Ad esempio, se un&#39;attività **Crea invito** termina il 15 ottobre alle 15:30, l&#39;attività secondaria **Invia e-mail invito** inizierà il 15 ottobre alle 15:30.
+In caso di attività raggruppate, Adobe Campaign assegna automaticamente la data di fine dell&#39;attività padre all&#39;attività figlio come data di inizio. Ad esempio, se un&#39;attività **Crea invito** termina il 15 ottobre alle ore 3:30PM, l&#39;attività secondaria **Invia e-mail invito** inizierà il 15 ottobre alle ore 3:30PM.
 
 Inoltre, se si posticipa la fine di un&#39;attività padre, alcune delle attività figlio potrebbero essere interessate: si tratta delle attività figlio il cui stato è **[!UICONTROL Scheduled]** e la cui data di inizio è precedente alla nuova data di fine dell&#39;attività padre. La durata dell&#39;attività rimane invariata. Se la data di inizio di un&#39;attività figlio è successiva alla nuova data di fine dell&#39;attività padre, l&#39;attività figlio non viene influenzata.
 

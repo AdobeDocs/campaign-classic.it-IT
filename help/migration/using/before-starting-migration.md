@@ -7,9 +7,8 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 hide: true
-hidefromtoc: true
 exl-id: d666bc0b-596a-4908-9364-7df5bb8d68d0
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 2%
@@ -28,7 +27,7 @@ In questa pagina sono elencati i passaggi specifici da eseguire prima di avviare
 
 1. Verifica la versione di Adobe Campaign: prima di eseguire la migrazione, installa la build più recente della versione corrente in uso.
 1. Eseguire il backup dei dati.
-1. Controllare l&#39;ambiente: non è possibile modificare il sistema del motore di database (DBMS). Non è possibile, ad esempio, passare da un motore PostgreSQL a un motore di Oracle. È tuttavia possibile passare alla versione più recente del modulo di gestione di database. Non è possibile passare da un database non Unicode a un database Unicode.
+1. Controllare l&#39;ambiente: non è possibile modificare il sistema del motore di database (DBMS). Ad esempio, non è possibile passare da un motore PostgreSQL a un motore Oracle. È tuttavia possibile passare alla versione più recente del modulo di gestione di database. Non è possibile passare da un database non Unicode a un database Unicode.
 
 ## Passaggi di migrazione {#migration-steps}
 

@@ -3,9 +3,8 @@ title: Connettore per sistema CRM
 description: Ulteriori informazioni sul connettore CRM e configurazione della sincronizzazione dati
 feature: Workflows, Data Management
 hide: true
-hidefromtoc: true
 exl-id: 41966f31-9f37-4ab7-919a-d4624f9d1178
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 10%

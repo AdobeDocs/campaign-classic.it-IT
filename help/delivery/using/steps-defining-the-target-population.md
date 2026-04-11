@@ -5,9 +5,8 @@ description: Scopri come definire la popolazione target
 feature: Audiences, Proofs
 role: User
 hide: true
-hidefromtoc: true
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1730'
 ht-degree: 25%
@@ -163,7 +162,7 @@ Puoi ridurre la dimensione della popolazione target. A questo scopo, specifica i
 
 La bozza è un messaggio speciale che consente di testare una consegna prima di inviarla al target principale. I destinatari della bozza sono responsabili dell’approvazione del modulo e del contenuto del messaggio.
 
-![](assets/do-not-localize/how-to-video.png) [Guarda il video su questa funzione](#seeds-and-proofs-video)
+![](assets/do-not-localize/how-to-video.png) [Guarda un video su questa funzione](#seeds-and-proofs-video)
 
 
 Per selezionare la destinazione delle bozze, segui i passaggi seguenti:

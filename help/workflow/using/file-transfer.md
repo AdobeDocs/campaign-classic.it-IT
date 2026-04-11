@@ -4,9 +4,8 @@ title: Trasferimento file
 description: Ulteriori informazioni sull’attività del flusso di lavoro Trasferimento file
 feature: Workflows, Data Management
 hide: true
-hidefromtoc: true
 exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 1%
@@ -38,7 +37,7 @@ La configurazione dipende dall’azione selezionata.
 
    ![](assets/file_transfert_edit.png)
 
-   Selezionare **[!UICONTROL Use an external account]** per selezionare un account dagli account di archiviazione BLOB di Azure, S3, FTP o SFTP configurati nel nodo **[!UICONTROL Administration > Platform > External accounts]** della struttura. Quindi specifica quale directory sul server contiene i file da scaricare.
+   Selezionare **[!UICONTROL Use an external account]** per selezionare un account dall&#39;archivio BLOB di Azure, dagli account S3, FTP o SFTP configurati nel nodo **[!UICONTROL Administration > Platform > External accounts]** della struttura. Quindi specifica quale directory sul server contiene i file da scaricare.
 
    ![](assets/file_transfert_edit_external.png)
 

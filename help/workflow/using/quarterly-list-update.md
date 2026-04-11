@@ -4,9 +4,8 @@ title: Aggiornamento dell’elenco trimestrale tramite una query incrementale
 description: In questo caso d’uso, viene utilizzata una query incrementale per aggiornare automaticamente un elenco di destinatari
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 0d3e7046-313a-42a6-9155-3365e8d60bac
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 5%

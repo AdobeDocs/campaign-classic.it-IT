@@ -6,12 +6,11 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Personalization
 role: User
 hide: true
-hidefromtoc: true
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1027'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -21,7 +20,7 @@ I campi di personalizzazione sono utilizzati per la personalizzazione di primo l
 
 Ad esempio, il campo di personalizzazione con sintassi **&lt;%= recipient.LastName %>** indica ad Adobe Campaign di inserire il nome del destinatario nel database (tabella dei destinatari).
 
-![](assets/do-not-localize/how-to-video.png) [Guarda il video su questa funzione](#personalization-fields-video)
+![](assets/do-not-localize/how-to-video.png) [Guarda un video su questa funzione](#personalization-fields-video)
 
 >[!CAUTION]
 >
@@ -87,7 +86,7 @@ Ad esempio, se riscontri problemi di prestazioni durante la consegna a un numero
 
 Per utilizzare questa opzione, effettua le seguenti operazioni:
 
-1. Creare una campagna. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=it){target=_blank}.
+1. Creare una campagna. Per ulteriori informazioni, fai riferimento alla [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=it){target=_blank}.
 1. Nella scheda **[!UICONTROL Targeting and workflows]** della campagna, aggiungi un&#39;attività **Query** al flusso di lavoro. Per ulteriori informazioni sull&#39;utilizzo di questa attività, consulta [questa sezione](../../workflow/using/query.md).
 1. Aggiungere un&#39;attività **[!UICONTROL Email delivery]** al flusso di lavoro e aprirla. Per ulteriori informazioni sull&#39;utilizzo di questa attività, consulta [questa sezione](../../workflow/using/delivery.md).
 1. Passare alla scheda **[!UICONTROL Analysis]** di **[!UICONTROL Delivery properties]** e selezionare l&#39;opzione **[!UICONTROL Prepare the personalization data with a workflow]**.
@@ -142,6 +141,6 @@ Aggiungendo lo schema di oggetti, è possibile selezionare i campi che si deside
 
 Scopri come aggiungere un campo di personalizzazione alla riga dell’oggetto e il contenuto di una consegna e-mail.
 
->[!VIDEO](https://video.tv.adobe.com/v/329894?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/329894?captions=ita&quality=12)
 
 Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

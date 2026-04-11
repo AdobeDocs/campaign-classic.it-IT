@@ -1,19 +1,18 @@
 ---
 product: campaign
-title: Attendi
+title: Attendere
 description: Ulteriori informazioni sull’attività del flusso di lavoro Attendi
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 4872f756-14d7-4e37-a9cf-b929c77e34ca
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 1%
 
 ---
 
-# Attendi{#wait}
+# Attendere{#wait}
 
 
 

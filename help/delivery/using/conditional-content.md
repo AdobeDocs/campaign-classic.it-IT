@@ -6,9 +6,8 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Personalization, Multilingual Messages
 role: User
 hide: true
-hidefromtoc: true
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
-source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 7%
@@ -19,7 +18,7 @@ ht-degree: 7%
 
 Configurando i campi di contenuto condizionale, puoi creare una personalizzazione dinamica basata, ad esempio, sul profilo del destinatario. I blocchi di testo e/o le immagini vengono sostituiti quando viene soddisfatta una particolare condizione.
 
-![](assets/do-not-localize/how-to-video.png) [Guarda il video su questa funzione](#conditionnal-content-video)
+![](assets/do-not-localize/how-to-video.png) [Guarda un video su questa funzione](#conditionnal-content-video)
 
 
 ## Condizioni di utilizzo in un messaggio e-mail {#using-conditions-in-an-email}
@@ -71,7 +70,7 @@ Puoi aggiungere altri casi e definire contenuti diversi in base ai valori di uno
 
 >[!CAUTION]
 >
->Per rispettare la sintassi di JavaScript, è necessario eliminare i caratteri **%> &lt;%** dopo aver aggiunto le condizioni **Else** e **Else if**.
+>Per rispettare la sintassi di JavaScript, è necessario eliminare i caratteri **%> &lt;%** dopo aver aggiunto **Else** e **Else if** condizioni.
 
 Fare clic su **[!UICONTROL Preview]** e selezionare un destinatario per visualizzare il contenuto condizionale.
 
@@ -113,6 +112,6 @@ Nell’esempio seguente, scoprirai come creare un’e-mail multilingue. Il conte
 
 Scopri come aggiungere contenuti condizionali a una consegna sull’esempio di una newsletter multilingue.
 
->[!VIDEO](https://video.tv.adobe.com/v/329895?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/329895?captions=ita&quality=12)
 
 Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

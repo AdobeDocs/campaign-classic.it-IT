@@ -4,9 +4,8 @@ title: Approvazione
 description: Approvazione
 feature: Workflows, Approvals
 hide: true
-hidefromtoc: true
 exl-id: 7ff5da71-ef82-48a2-a608-06a4ca188bb9
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%

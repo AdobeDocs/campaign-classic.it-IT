@@ -4,9 +4,8 @@ title: Informazioni sui casi d’uso dei flussi di lavoro
 description: Ulteriori informazioni sui casi d’uso che è possibile eseguire utilizzando i flussi di lavoro di Campaign Classic
 feature: Workflows, Data Management
 hide: true
-hidefromtoc: true
 exl-id: 7c093b34-6b0e-4403-9d9d-fba9ba39ea41
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 28%
@@ -29,7 +28,7 @@ Consentono di scoprire i diversi contesti in cui è possibile utilizzare i fluss
 * [Test A/B](../../delivery/using/a-b-testing-use-case.md)
 * [Invio di un’e-mail di compleanno](sending-a-birthday-email.md)
 * [Caricamento del contenuto della consegna](loading-delivery-content.md)
-* [Flusso di lavoro di consegna cross-channel](cross-channel-delivery-workflow.md)
+* [Flusso di lavoro per consegna cross-channel](cross-channel-delivery-workflow.md)
 * [Arricchimento delle e-mail con campi data personalizzati](email-enrichment-with-custom-date-fields.md)
 * [Automazione di creazione, edizione e pubblicazione di contenuti](../../delivery/using/automating-via-workflows.md#examples)
 

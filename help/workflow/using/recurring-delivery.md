@@ -4,9 +4,8 @@ title: Consegna ricorrente
 description: Ulteriori informazioni sull’attività del flusso di lavoro Consegna ricorrente
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 11%
@@ -17,7 +16,7 @@ ht-degree: 11%
 
 Un&#39;attività **[!UICONTROL Recurring delivery]** consente di configurare un&#39;occorrenza del modello di consegna specifica per una campagna.
 
-![](assets/do-not-localize/how-to-video.png) [Guarda il video su questa funzione](#recurring-delivery-video)
+![](assets/do-not-localize/how-to-video.png) [Guarda un video su questa funzione](#recurring-delivery-video)
 
 Questa attività è disponibile solo dalla scheda **[!UICONTROL Targeting and workflows]** trovata in una campagna.
 
@@ -55,6 +54,6 @@ Se desideri interrompere l’esecuzione di una consegna ricorrente, devi annulla
 
 Questo video spiega come configurare una consegna ricorrente e un’attività di pianificazione.
 
->[!VIDEO](https://video.tv.adobe.com/v/27506?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/27506?captions=ita&quality=12)
 
 Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

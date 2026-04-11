@@ -5,8 +5,7 @@ description: Gestire i dati tra Campaign e il CRM
 feature: Microsoft CRM Integration, Salesforce Integration
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
 hide: true
-hidefromtoc: true
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1529'
 ht-degree: 1%
@@ -88,7 +87,7 @@ Abilitare l&#39;opzione **[!UICONTROL Automatic index]** per raccogliere solo gl
 
 ![](assets/crm_task_import_option.png)
 
-Per impostazione predefinita, la data dell&#39;ultima sincronizzazione è memorizzata in un&#39;opzione specificata nella finestra di configurazione: **LASTIMPORT_&lt;%=instance.internalName%>_&lt;%=activityName%>**.
+Per impostazione predefinita, la data dell&#39;ultima sincronizzazione viene memorizzata in un&#39;opzione specificata nella finestra di configurazione: **LASTIMPORT_&lt;%=instance.internalName%>_&lt;%=activityName%>**.
 
 >[!NOTE]
 >

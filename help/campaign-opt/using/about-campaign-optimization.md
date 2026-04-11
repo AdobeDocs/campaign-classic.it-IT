@@ -5,9 +5,8 @@ description: Informazioni sulle tipologie di campagne
 role: User, Developer
 feature: Typology Rules, Campaigns
 hide: true
-hidefromtoc: true
 exl-id: b500bde4-6c81-4420-b1bf-e8eff1c53877
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 50%
@@ -18,7 +17,7 @@ ht-degree: 50%
 
 Ottimizzazione delle campagne è il modulo di Adobe Campaign che consente di controllare, filtrare e monitorare l’invio delle consegne. Per evitare conflitti tra campagne, Adobe Campaign può sottoporre a test diverse combinazioni applicando specifiche regole di vincolo. Ciò garantisce che i messaggi inviati soddisfino le esigenze e le aspettative dei clienti, in linea con le politiche di comunicazione aziendali.
 
-![](assets/do-not-localize/how-to-video.png) [Guarda il video su questa funzione](#typologies-video)
+![](assets/do-not-localize/how-to-video.png) [Guarda un video su questa funzione](#typologies-video)
 
 A seconda dell’offerta, è possibile includere l’ottimizzazione di Campaign o un componente aggiuntivo. Controlla il contratto di licenza.
 

@@ -4,9 +4,8 @@ title: Query delle informazioni di consegna
 description: Scopri come eseguire query sulle informazioni di consegna
 feature: Query Editor, Workflows
 hide: true
-hidefromtoc: true
 exl-id: b699b064-1287-41c9-8d94-1c1aa2c145ab
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 7%

@@ -4,9 +4,8 @@ title: Creare una campagna locale
 description: Creare una campagna locale
 feature: Distributed Marketing
 hide: true
-hidefromtoc: true
 exl-id: 17b5865a-5e04-4b3b-8b6a-12d5c1a9c1da
-source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1565'
 ht-degree: 1%

@@ -4,11 +4,10 @@ title: HeatMap del flusso di lavoro della campagna
 description: Monitorare i flussi di lavoro con Workflow HeatMap
 feature: Workflows, Heatmap
 hide: true
-hidefromtoc: true
 exl-id: f1016ddf-0c87-4611-a878-d01f3684935f
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '1138'
+source-wordcount: '1137'
 ht-degree: 3%
 
 ---
@@ -99,7 +98,7 @@ Ogni riga rappresenta un&#39;ora del giorno e ogni cella rappresenta 5 minuti de
 
 La griglia mostra tutti i flussi di lavoro in esecuzione contemporaneamente per ciascuno di questi periodi di 5 minuti.
 
-Nell’esempio seguente, tra le 8.00 e le 8.05 sono in esecuzione tre flussi di lavoro (indipendentemente dalla durata):
+Nell&#39;esempio seguente, tra le 8.00 e le 8.00 sono in esecuzione tre flussi di lavoro (indipendentemente dalla durata)::05am
 
 ![](assets/wkf_monitoring_ex_8am.png)
 

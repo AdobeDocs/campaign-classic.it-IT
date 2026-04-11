@@ -1,19 +1,18 @@
 ---
 product: campaign
-title: Flusso di lavoro di consegna cross-channel
+title: Flusso di lavoro per consegna cross-channel
 description: Ulteriori informazioni sui flussi di lavoro di consegna cross-channel
 feature: Workflows, Channels Activity
 hide: true
-hidefromtoc: true
 exl-id: dfd36d2c-44ff-49a9-80b4-09eaf3377072
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 3%
 
 ---
 
-# Flusso di lavoro di consegna cross-channel{#cross-channel-delivery-workflow}
+# Flusso di lavoro per consegna cross-channel{#cross-channel-delivery-workflow}
 
 
 

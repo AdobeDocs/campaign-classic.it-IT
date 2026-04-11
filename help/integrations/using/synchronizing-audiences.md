@@ -4,11 +4,10 @@ title: Sincronizzare i tipi di pubblico
 description: Scopri come sincronizzare i tipi di pubblico con il connettore ACS
 feature: ACS Connector
 hide: true
-hidefromtoc: true
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '1110'
+source-wordcount: '1109'
 ht-degree: 1%
 
 ---
@@ -17,7 +16,7 @@ ht-degree: 1%
 
 
 
-Puoi creare un elenco sofisticato utilizzando le funzioni avanzate di Campaign v7 e condividere questo elenco come pubblico direttamente e in tempo reale con Campaign Standard (inclusi i dati aggiuntivi) in modo semplice. L’utente Campaign Standard può quindi utilizzare il pubblico in Adobe Campaign Standard.
+Puoi creare un elenco sofisticato utilizzando le funzioni avanzate di Campaign v7 e condividere questo elenco come pubblico direttamente e in tempo reale con Campaign Standard (inclusi i dati aggiuntivi) in modo semplice. L’utente di Campaign Standard può quindi utilizzare il pubblico in Adobe Campaign Standard.
 
 Il targeting complesso che coinvolge dati aggiuntivi non replicati in Campaign Standard può essere ottenuto solo utilizzando Campaign v7.
 
@@ -34,7 +33,7 @@ Questo caso d’uso mostra come preparare il target della consegna in Campaign v
 Per ottenere questo risultato, è necessario:
 
 * Destinatari memorizzati nel database di Campaign v7 e sincronizzati con Campaign Standard. Consulta la sezione [Sincronizzazione dei profili](../../integrations/using/synchronizing-profiles.md).
-* Dati aggiuntivi come sottoscrizioni o transazioni memorizzate in tabelle correlate a nms:recipients nel database di Campaign v7. Questi dati possono provenire da schemi OOB o tabelle personalizzate di Campaign v7. Per impostazione predefinita, non sono disponibili in Campaign Standard in quanto non sono sincronizzati.
+* Dati aggiuntivi quali sottoscrizioni o transazioni archiviate in tabelle correlate a nms:recipients nel database di Campaign v7. Questi dati possono provenire da schemi OOB o tabelle personalizzate di Campaign v7. Per impostazione predefinita, non sono disponibili in Campaign Standard in quanto non sono sincronizzati.
 * Diritto di eseguire flussi di lavoro in Campaign v7 e Campaign Standard.
 * Diritto di creare ed eseguire una consegna in Campaign Standard.
 

@@ -5,9 +5,8 @@ description: Scopri come convalidare una consegna
 feature: Deliverability, Email Rendering, Proofs
 role: User
 hide: true
-hidefromtoc: true
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1653'
 ht-degree: 9%
@@ -96,7 +95,7 @@ Questa scheda consente di accedere alle seguenti opzioni:
 * **[!UICONTROL Prepare the personalization data with a workflow]** : questa opzione consente di preparare i dati di personalizzazione contenuti nella consegna in un flusso di lavoro automatico, che può farti raggiungere un aumento significativo delle prestazioni per l&#39;esecuzione della personalizzazione. Per ulteriori informazioni, consulta [Ottimizzare la personalizzazione](personalization-fields.md#optimizing-personalization).
 * **[!UICONTROL Start job in a detached process]** : questa opzione consente di avviare l&#39;analisi della consegna in un processo separato. Per impostazione predefinita, la funzione di analisi utilizza il processo del server applicazioni di Adobe Campaign (web nlserver). Selezionando questa opzione, l&#39;analisi verrà completata anche in caso di errore del server applicazioni.
 * **[!UICONTROL Log SQL queries generated during the analysis in the journal]** : questa opzione aggiunge i registri di query SQL al giornale di registrazione di consegna durante la fase di analisi.
-* **[!UICONTROL Ignore personalization scripts during sending]** : questa opzione consente di ignorare l&#39;interpretazione delle direttive di JavaScript presenti nel contenuto di HTML. Vengono visualizzati così come sono nel contenuto consegnato. Queste direttive sono state introdotte con il tag **&lt;%=**).
+* **[!UICONTROL Ignore personalization scripts during sending]** : questa opzione consente di ignorare l&#39;interpretazione delle direttive di JavaScript presenti nel contenuto di HTML. Vengono visualizzati così come sono nel contenuto consegnato. Queste direttive sono introdotte con il tag **&lt;%=**.
 
 ### Migliorare le prestazioni di analisi della consegna {#improving-delivery-analysis}
 

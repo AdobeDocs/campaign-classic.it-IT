@@ -6,9 +6,8 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Email Design
 role: User
 hide: true
-hidefromtoc: true
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 3%
@@ -45,7 +44,7 @@ AMP for Email è compatibile con le e-mail esistenti. La versione AMP del messag
 
 Per ulteriori informazioni su AMP per il formato, le specifiche e i requisiti delle e-mail, consulta la [documentazione per gli sviluppatori AMP](https://amp.dev/documentation/guides-and-tutorials/learn/email-spec/amp-email-format/?format=email).
 
-![](assets/do-not-localize/how-to-video.png) [Guarda il video su questa funzione](#amp-email-video)
+![](assets/do-not-localize/how-to-video.png) [Guarda un video su questa funzione](#amp-email-video)
 
 ## Passaggi chiave per utilizzare AMP per e-mail con Adobe Campaign {#key-steps-to-use-amp}
 
@@ -208,6 +207,6 @@ Ad esempio, se hai incluso un elenco di prodotti nell’e-mail, quando modifichi
 
 Il video seguente spiega come attivare AMP in Adobe Campaign e ne illustra l’utilizzo.
 
->[!VIDEO](https://video.tv.adobe.com/v/39583?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/39583?captions=ita&quality=12&learn=on)
 
 Ulteriori video dimostrativi di Campaign sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
