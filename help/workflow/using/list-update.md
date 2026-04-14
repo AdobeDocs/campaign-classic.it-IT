@@ -5,7 +5,7 @@ description: Aggiornare un elenco
 feature: Workflows, Targeting Activity
 hide: true
 exl-id: fcc51131-15d0-4d39-95cb-371d7044373b
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 3%
@@ -72,6 +72,6 @@ Identifica la popolazione da salvare nel gruppo.
 
 Questo video mostra come creare un elenco di destinatari da Explorer.
 
->[!VIDEO](https://video.tv.adobe.com/v/329669?captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
 Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

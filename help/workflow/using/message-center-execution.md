@@ -4,7 +4,7 @@ title: Centro messaggi (esecuzione)
 description: Centro messaggi (esecuzione)
 hide: true
 feature: Workflows
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 2%
@@ -20,9 +20,9 @@ Per impostazione predefinita, i flussi di lavoro descritti di seguito vengono in
 
 Per ulteriori informazioni, a seconda della versione di Campaign in uso, consulta le sezioni seguenti:
 
-![](assets/do-not-localize/v7.jpeg) [Documentazione di Campaign v7](../../message-center/using/about-transactional-messaging.md)
+![](assets/do-not-localize/v7.jpeg)[Documentazione di Campaign v7](../../message-center/using/about-transactional-messaging.md)
 
-![](assets/do-not-localize/v8.png) [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
+![](assets/do-not-localize/v8.png)[Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
 
 <table> 
  <tbody> 

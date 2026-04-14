@@ -5,7 +5,7 @@ description: Ulteriori informazioni sull'attività del flusso di lavoro di Gesti
 feature: Workflows
 hide: true
 exl-id: cada78cb-658f-4b9e-8136-31c17cb1d82f
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 4%
@@ -26,9 +26,9 @@ Prima di configurare l’attività, assicurati di soddisfare i seguenti prerequi
 
   Per ulteriori informazioni, a seconda della versione di Campaign in uso, consulta le sezioni seguenti:
 
-  ![](assets/do-not-localize/v7.jpeg) [Documentazione di Campaign v7](../../installation/using/about-fda.md)
+  ![](assets/do-not-localize/v7.jpeg)[Documentazione di Campaign v7](../../installation/using/about-fda.md)
 
-  ![](assets/do-not-localize/v8.png) [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=it)
+  ![](assets/do-not-localize/v8.png)[Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=it)
 
 * Lo schema in uscita deve esistere nel database ed essere collegato a un database FDA.
 * L&#39;operatore che esegue il flusso di lavoro deve disporre dell&#39;autorizzazione denominata **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]**. [Ulteriori informazioni](../../platform/using/access-management-named-rights.md).
