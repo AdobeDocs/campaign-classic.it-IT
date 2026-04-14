@@ -102,7 +102,7 @@ Il Pannello di controllo è disponibile direttamente da Adobe Experience Cloud. 
 
 ### Domande frequenti sul Pannello di controllo
 
-[Fai clic qui ](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=it) per accedere alle domande frequenti sul Pannello di controllo Campaign.
+[Fai clic qui &#x200B;](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=it) per accedere alle domande frequenti sul Pannello di controllo Campaign.
 
 ### Gestione SFTP
 
