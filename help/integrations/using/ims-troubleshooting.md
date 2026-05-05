@@ -8,23 +8,23 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 1ce89c3a-1fe6-4ed6-9547-2eb9713a0ec3
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: f7f88eac33921f60dfe72ce2200132c5ac6acf49
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 1%
+source-wordcount: '501'
+ht-degree: 5%
 
 ---
 
 # Risoluzione dei problemi di IMS{#ims-troubleshooting}
 
 
-I seguenti suggerimenti per la risoluzione dei problemi aiuteranno i clienti **on-premise** e **hybrid** a risolvere i problemi più comuni che si verificano quando si utilizza l&#39;integrazione IMS. Per i clienti **hosted**, contatta l&#39;Adobe.
+I seguenti suggerimenti per la risoluzione dei problemi aiuteranno i clienti **on-premise** e **hybrid** a risolvere i problemi più comuni che si verificano quando si utilizza l&#39;integrazione IMS. Per i clienti **hosted**, contatta Adobe.
 
 **Account esterno**
 
 Deve essere presente solo **un** account esterno con le seguenti impostazioni:
 
-* **Nome Interno**: Adobe_Marketing_Cloud
+* **Nome interno**: Adobe_Marketing_Cloud
 * **Tipo**: Adobe Marketing Cloud
 
 Elimina eventuali account esterni duplicati con le stesse impostazioni.
@@ -35,7 +35,7 @@ Se l&#39;account esterno dispone di un campo **Contesto prodotto**, verificare c
 
 Assicurati che il contesto del prodotto sia lo stesso per Campaign e Experience Cloud.
 
-Se ad esempio il **contesto di prodotto** non viene visualizzato, il contesto di prodotto predefinito deve essere **dma_campaign** sia in Campaign che in Experience Cloud. Se viene visualizzato il campo **Contesto prodotto**, il contesto di prodotto predefinito deve essere **dma_campaign_classic** sia in Campaign che in Experience Cloud.
+Ad esempio, se il **contesto di prodotto** non viene visualizzato, il contesto di prodotto predefinito deve essere **dma_campaign** sia in Campaign che in Experience Cloud. Se viene visualizzato il campo **Contesto prodotto**, il contesto di prodotto predefinito deve essere **dma_campaign_classic** in Campaign e Experience Cloud.
 
 **[!UICONTROL IMS Server URL]**
 
@@ -83,3 +83,16 @@ Riavvia il server se vengono apportate modifiche alle impostazioni precedenti ne
 * L’utente non è in grado di accedere alla pagina di accesso di Adobe ID:
 
   Per verificare la configurazione dell’ambito, consulta i passaggi precedenti.
+
+**Problemi relativi alla cache di WebView2**
+
+Se si verificano problemi durante l&#39;accesso a **[!UICONTROL Client Console]** con Adobe ID, provare a cancellare la cache WebView2 locale. Nella maggior parte dei casi, questo risolve il problema. Segui i passaggi seguenti:
+
+1. Chiudere **[!UICONTROL Client Console]** e interrompere qualsiasi processo `nlclient` in esecuzione.
+
+1. Elimina tutte le cartelle `webview2` e `webview2Cache` dai percorsi seguenti:
+
+   * `C:\ProgramData\Neolane\NL_5\nlclient\`
+   * `C:\Users\<username>\AppData\Roaming\Neolane\NL_5\nlclient\`
+
+1. Riavvia **[!UICONTROL Client Console]** e accedi con il tuo Adobe ID. Le cartelle della cache verranno ricreate automaticamente al prossimo avvio.
