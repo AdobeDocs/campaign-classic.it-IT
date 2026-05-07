@@ -52,7 +52,7 @@ Puoi configurare i valori visualizzati modificando la scala cronologica: visuali
 
 >[!NOTE]
 >
->Se l&#39;istanza è ospitata su AWS, puoi anche monitorare il numero di consegne inviate all&#39;ora utilizzando il [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html) di Campaign Classic. Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=it).
+>Se l&#39;istanza è ospitata su AWS, puoi anche monitorare il numero di consegne inviate all&#39;ora utilizzando il [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=it) di Campaign Classic. Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=it).
 >
 >Il Pannello di controllo è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente l’accesso come amministratore sono descritti in[questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel).
 >

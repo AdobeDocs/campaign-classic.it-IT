@@ -21,7 +21,7 @@ ht-degree: 6%
 >
 >In qualità di utente v7, per procedere, assicurati che Adobe Identity Management System (IMS) sia abilitato sul tuo sistema. [Ulteriori informazioni](../../integrations/using/about-adobe-id.md).
 
-Una volta abilitato Adobe Identity Management Service (IMS) per la tua organizzazione, puoi richiedere il provisioning dell&#39;integrazione di [Experience Cloud Audience](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"} con Campaign. Per farlo, contatta il rappresentante Adobe e fornisci le seguenti informazioni:
+Una volta abilitato Adobe Identity Management Service (IMS) per la tua organizzazione, puoi richiedere il provisioning dell&#39;integrazione di [Experience Cloud Audience](https://experienceleague.adobe.com/it/docs/core-services/interface/services/audiences/overview){target="_blank"} con Campaign. Per farlo, contatta il rappresentante Adobe e fornisci le seguenti informazioni:
 
 <table> 
  <tbody> 

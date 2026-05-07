@@ -156,7 +156,7 @@ La query ereditata dal modello verrà quindi perfezionata per formulare un’ipo
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni, consulta la [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target="_blank"}.
+   >Per ulteriori informazioni, consulta la [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=it#add-a-control-group){target="_blank"}.
 
 1. Apri **[!UICONTROL Direct mail delivery]** e fai clic sull&#39;icona **[!UICONTROL Delivery measurement]**, quindi fai clic su **[!UICONTROL Add]**.
 
@@ -178,7 +178,7 @@ La query ereditata dal modello verrà quindi perfezionata per formulare un’ipo
 
    ![](assets/response_hypothesis_delivery_example_008.png)
 
-1. Avvia il flusso di lavoro di targeting ed esegui i controlli necessari fino al termine della campagna. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html#start-a-delivery){target=_blank}.
+1. Avvia il flusso di lavoro di targeting ed esegui i controlli necessari fino al termine della campagna. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=it#start-a-delivery){target=_blank}.
 
    ![](assets/response_hypothesis_delivery_example_009.png)
 

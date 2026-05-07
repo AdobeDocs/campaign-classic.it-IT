@@ -32,4 +32,4 @@ Ciò significa che puoi sfruttare al massimo sia le funzionalità di modifica de
 * Un&#39;istanza **publishing** di Adobe Experience Manager.
 * Un’istanza di Adobe Campaign.
 
-Per ulteriori dettagli, consulta [Documentazione di Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/classic-ui/campaign/classic-personalization-ac-campaign.html)
+Per ulteriori dettagli, consulta [Documentazione di Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/classic-ui/campaign/classic-personalization-ac-campaign.html?lang=it)

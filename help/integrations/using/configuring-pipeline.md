@@ -28,7 +28,7 @@ I trigger vengono utilizzati per il targeting da un flusso di lavoro della campa
 Prima di avviare questa configurazione, verifica di disporre di:
 
 * Un progetto Adobe Developer
-* Un ID organizzazione valido. Per trovare l&#39;ID organizzazione, fare riferimento a [questa pagina](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
+* Un ID organizzazione valido. Per trovare l&#39;ID organizzazione, fare riferimento a [questa pagina](https://experienceleague.adobe.com/it/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
 * Accesso per sviluppatori all’organizzazione
 * Una configurazione dei trigger valida in Adobe Analytics
 

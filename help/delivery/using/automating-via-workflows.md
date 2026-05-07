@@ -214,12 +214,12 @@ L’azione finale dell’attività consiste nel preparare e avviare la consegna.
 
 ### Importa contenuto da FTP {#importing-content-from-ftp}
 
-Se il contenuto della consegna è disponibile in un file HTML che si trova su server FTP o SFTP, puoi facilmente caricarlo nelle consegne Adobe Campaign. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}.
+Se il contenuto della consegna è disponibile in un file HTML che si trova su server FTP o SFTP, puoi facilmente caricarlo nelle consegne Adobe Campaign. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=it){target="_blank"}.
 
 
 ### Importa contenuto dal connettore Amazon Simple Storage Service (S3) {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
-Se il contenuto della consegna si trova nei bucket Amazon Simple Storage Service (S3), puoi caricarlo facilmente nelle consegne Adobe Campaign. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}.
+Se il contenuto della consegna si trova nei bucket Amazon Simple Storage Service (S3), puoi caricarlo facilmente nelle consegne Adobe Campaign. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=it){target="_blank"}.
 
 
 ## Aggiornamento semi-automatico {#semi-automatic-update}

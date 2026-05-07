@@ -40,7 +40,7 @@ Scopri i passaggi chiave relativi alla creazione di consegne SMS **nella documen
 * [Seleziona il pubblico](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/sms-audience.html){target="_blank"}: la destinazione principale viene estratta dal database di Adobe Campaign o può anche essere archiviata in un file esterno.
 * [Invia bozze SMS](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/validate-sms/sms-proofs.html): l&#39;impostazione di un ciclo di convalida della consegna è essenziale. Assicurati che il contenuto sia approvato prima di inviarlo al pubblico.
 * [Invia al pubblico](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/validate-sms/sms-send.html?lang=it): quando il tuo SMS viene convalidato, ora puoi inviarlo al relativo pubblico.
-* [Monitora e tieni traccia di un SMS](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms-monitor.html): monitora la consegna SMS per assicurarti che le campagne di marketing siano efficienti.
+* [Monitora e tieni traccia di un SMS](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms-monitor.html?lang=it): monitora la consegna SMS per assicurarti che le campagne di marketing siano efficienti.
 
 
 >[!TAB Configurazione SMS]

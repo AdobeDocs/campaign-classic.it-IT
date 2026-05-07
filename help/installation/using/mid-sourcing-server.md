@@ -27,7 +27,7 @@ L’installazione di un server di mid-sourcing segue lo stesso processo che si s
 
 >[!CAUTION]
 >
->Dopo aver configurato il server di mid-sourcing e aver eseguito per la prima volta i [flussi di lavoro di sincronizzazione](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}, assicurati di non aggiornare il nome interno degli account esterni di mid-sourcing.
+>Dopo aver configurato il server di mid-sourcing e aver eseguito per la prima volta i [flussi di lavoro di sincronizzazione](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=it){target="_blank"}, assicurati di non aggiornare il nome interno degli account esterni di mid-sourcing.
 
 ## Passaggi per installare e configurare un’istanza {#steps-for-installing-and-configuring-an-instance}
 

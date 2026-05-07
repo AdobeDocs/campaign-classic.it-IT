@@ -25,7 +25,7 @@ I flussi di lavoro possono essere utili per automatizzare alcuni dei processi di
 
 >[!NOTE]
 >
->Per ulteriori informazioni sull&#39;importazione e l&#39;esportazione di dati tramite flussi di lavoro, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/add-profiles/import-profiles){target=_blank}.
+>Per ulteriori informazioni sull&#39;importazione e l&#39;esportazione di dati tramite flussi di lavoro, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/audience/add-profiles/import-profiles){target=_blank}.
 
 
 <!--

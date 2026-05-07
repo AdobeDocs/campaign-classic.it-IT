@@ -123,7 +123,7 @@ I report sulle campagne riguardano i dati nella tabella **nms:operation**.
 
 I rapporti incorporati forniti da Adobe Campaign sono disponibili nella tabella seguente.
 
-Per ulteriori informazioni sul contenuto di questi report, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
+Per ulteriori informazioni sul contenuto di questi report, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=it){target=_blank}.
 
 <table> 
  <tbody> 
@@ -219,7 +219,7 @@ Per ulteriori informazioni sul contenuto di questi rapporti, consulta le relativ
 
 I rapporti incorporati forniti da Adobe Campaign sono disponibili nella tabella seguente.
 
-Per ulteriori informazioni sul contenuto di questi report, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
+Per ulteriori informazioni sul contenuto di questi report, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=it){target=_blank}.
 
 <table> 
  <tbody> 

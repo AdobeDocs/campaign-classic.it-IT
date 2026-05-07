@@ -60,7 +60,7 @@ Se non ottieni questo risultato, verifica nella configurazione del server web ch
 </tr>
 <tr>
 <td>Controllare la configurazione generale delle aree di protezione.</td>
-<td>Per ulteriori informazioni sulla configurazione delle aree di protezione, consultare <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html#configuring-campaign-server"/>questa sezione.</a></td>
+<td>Per ulteriori informazioni sulla configurazione delle aree di protezione, consultare <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html?lang=it#configuring-campaign-server"/>questa sezione.</a></td>
 </tr>
 <tr>
 <td>Il comando nlserver pdump restituisce <b>Nessuna attività</b></td>

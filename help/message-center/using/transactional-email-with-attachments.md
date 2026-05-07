@@ -64,7 +64,7 @@ Il diagramma seguente mostra i diversi passaggi necessari per implementare quest
 
 Per aggiungere al volo un allegato e-mail a un messaggio sulle transazioni, effettua le seguenti operazioni:
 
-1. Iniziare progettando l&#39;allegato. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html#attach-a-personalized-file){target="_blank"}.
+1. Iniziare progettando l&#39;allegato. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=it#attach-a-personalized-file){target="_blank"}.
 
    Ciò ti consente di allegare i file a un messaggio e-mail, anche se non sono ospitati nell’istanza di esecuzione.
 

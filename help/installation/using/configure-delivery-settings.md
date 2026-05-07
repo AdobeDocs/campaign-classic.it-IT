@@ -88,7 +88,7 @@ A questo scopo, esegui i seguenti passaggi:
 
    >[!NOTE]
    >
-   >Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+   >Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 
    Puoi quindi selezionare l’affinità da utilizzare, come mostrato di seguito per le tipologie:

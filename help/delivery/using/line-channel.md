@@ -27,7 +27,7 @@ Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di
 Per ulteriori informazioni sul canale LINE, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/line.html){target=_blank}.
 
 
-[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email){target=_blank}
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/emails/email){target=_blank}
 
 
 >[!TAB Creazione consegna LINE]

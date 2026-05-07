@@ -50,7 +50,7 @@ La sincronizzazione del processo di importazione richiede 24-36 ore, quando i se
 >
 >Se importi tipi di pubblico da Adobe Analytics ad Adobe Campaign, questi devono essere prima condivisi in Audience Manager. Questo processo richiede 12-24 ore, che devono essere aggiunte alla sincronizzazione di 24-36 ore con Campaign.
 >
->In questo caso specifico, l’arco temporale di condivisione del pubblico può essere fino a 60 ore. Per ulteriori informazioni sulla condivisione del pubblico di Adobe Analytics in Audience Manager, consulta la [documentazione di Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html){target="_blank"}.
+>In questo caso specifico, l’arco temporale di condivisione del pubblico può essere fino a 60 ore. Per ulteriori informazioni sulla condivisione del pubblico di Adobe Analytics in Audience Manager, consulta la [documentazione di Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=it){target="_blank"}.
 
 I dati del pubblico vengono completamente sostituiti ogni volta che vengono sincronizzati. È possibile importare solo i segmenti. I dati granulari, comprese coppie chiave-valore, caratteristiche e regole, non sono supportati.
 
@@ -80,7 +80,7 @@ Puoi esportare un pubblico da Adobe Campaign ad Audience Manager utilizzando un 
 
 Il pubblico viene quindi esportato. L’attività Save audience dispone di due transizioni in uscita. La transizione principale contiene i destinatari esportati correttamente. La transizione aggiuntiva contiene i destinatari che non potevano essere mappati con un ID visitatore o un ID dichiarato.
 
-La sincronizzazione tra le soluzioni richiede 24-36 ore. Dopo questo periodo, potrai trovare il nuovo pubblico e riutilizzarlo in altre soluzioni Adobe Experience Cloud. Per ulteriori informazioni sull&#39;utilizzo di un pubblico condiviso di Adobe Campaign, consulta questa [documentazione](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/create){target="_blank"}.
+La sincronizzazione tra le soluzioni richiede 24-36 ore. Dopo questo periodo, potrai trovare il nuovo pubblico e riutilizzarlo in altre soluzioni Adobe Experience Cloud. Per ulteriori informazioni sull&#39;utilizzo di un pubblico condiviso di Adobe Campaign, consulta questa [documentazione](https://experienceleague.adobe.com/it/docs/core-services/interface/services/audiences/create){target="_blank"}.
 
 >[!NOTE]
 >
