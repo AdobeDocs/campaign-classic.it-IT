@@ -10,8 +10,8 @@ topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '2324'
-ht-degree: 0%
+source-wordcount: '2422'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Questa sezione fornisce una descrizione dettagliata del processo di aggiornamento e dei passaggi per identificare e risolvere i conflitti.
 
-L’aggiornamento della build deve essere eseguito con cautela, i suoi impatti devono essere considerati in anticipo e la procedura deve essere completata con un livello elevato di disciplina. Per garantire un aggiornamento corretto, accertati che solo gli utenti esperti eseguano i passaggi descritti di seguito. Inoltre, consigliamo vivamente di contattare [l&#39;Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) prima di avviare qualsiasi aggiornamento.
+L’aggiornamento della build deve essere eseguito con cautela, i suoi impatti devono essere considerati in anticipo e la procedura deve essere completata con un livello elevato di disciplina. Per garantire un aggiornamento corretto, accertati che solo gli utenti esperti eseguano i passaggi descritti di seguito. Inoltre, consigliamo vivamente di contattare l&#39;[Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) prima di avviare qualsiasi aggiornamento.
 
 Sono necessari i seguenti prerequisiti:
 
@@ -31,7 +31,7 @@ Sono necessari i seguenti prerequisiti:
 
 Puoi trovare ulteriori informazioni nelle seguenti sezioni: [Aggiornamento di Adobe Campaign](../../production/using/upgrading.md), [Migrazione a una nuova versione](../../migration/using/about-migration.md).
 
-Per le istanze in hosting e ibride, devi richiedere l’aggiornamento della build al team Operazioni tecniche Adobe. Per ulteriori informazioni, consulta la sezione Domande frequenti in basso, se questa pagina. Consulta anche le [domande frequenti sull&#39;aggiornamento della build](../../platform/using/faq-build-upgrade.md).
+Per le istanze in hosting e ibride, devi richiedere l’aggiornamento della build al team Operazioni tecniche di Adobe. Per ulteriori informazioni, consulta la sezione Domande frequenti in basso, se questa pagina. Consulta anche le [domande frequenti sull&#39;aggiornamento della build](../../platform/using/faq-build-upgrade.md).
 
 ## Preparare l’aggiornamento
 
@@ -52,8 +52,8 @@ Il processo di aggiornamento della build richiede le seguenti risorse:
 Di seguito sono riportati i punti chiave su come pianificare un aggiornamento della build:
 
 1. Riserva almeno 2 ore per l’aggiornamento.
-1. Distribuisci i dettagli di contatto per il personale Adobe e del cliente.
-1. Per le istanze in hosting: il personale di Adobe e del cliente coordinerà il tempo per l’aggiornamento e chi verrà eseguito.
+1. Distribuisci i dettagli di contatto per Adobe e il personale del cliente.
+1. Per le istanze in hosting: Adobe e il personale del cliente coordineranno il tempo per l’aggiornamento e chi verrà eseguito.
 1. Per le istanze on-premise: il personale del cliente gestisce l’intero processo; se è necessaria assistenza nella verifica di flussi di lavoro personalizzati e nella logica di consegna, è necessario inserire i servizi di consulenza.
 1. Determinare e confermare a quale versione di Adobe Campaign si desidera eseguire l&#39;aggiornamento. Consultare le [note sulla versione di Adobe Campaign Classic](../../rn/using/rn-overview.md).
 1. Confermare il possesso dei file eseguibili di aggiornamento.
@@ -62,7 +62,7 @@ Di seguito sono riportati i punti chiave su come pianificare un aggiornamento de
 
 Il processo di aggiornamento della build richiede il coinvolgimento delle seguenti persone:
 
-* Architetto di Adobe: per le architetture in hosting o ibride, l’architetto deve coordinarsi con l’Assistenza clienti di Adobe Campaign.
+* Adobe architect: per le architetture in hosting o ibride, l’architetto deve coordinarsi con Adobe Campaign Client Care.
 
 * Project manager:
    * per le installazioni on-premise: il responsabile di progetto interno del cliente guida l’aggiornamento e gestisce i test del ciclo di vita.
@@ -115,7 +115,7 @@ A questo scopo, segui la procedura indicata di seguito:
 
 1. Ripristina queste copie in tutte le istanze dell’ambiente di destinazione.
 
-1. Eseguire lo script di cauterizzazione **nms:freezeInstance.js** nell&#39;ambiente di destinazione prima di avviarlo. In questo modo tutti i processi interagiscono con l’esterno: registri, tracciamento, consegne, flussi di lavoro delle campagne, ecc.
+1. Esegui lo script di cauterizzazione **nms:freezeInstance.js** nell&#39;ambiente di destinazione prima di avviarlo. In questo modo tutti i processi interagiscono con l’esterno: registri, tracciamento, consegne, flussi di lavoro delle campagne, ecc.
 
    ```
    nlserverjavacsriptnms:freezeInstance.js–instance:<dev> -arg:run
@@ -242,7 +242,7 @@ Quando la messaggistica transazionale (Centro messaggi) è abilitata nell’ista
    * Disconnetti e riconnetti
    * Eseguire un rapido controllo di integrità dei flussi di lavoro
 
-1. Modelli di Centro messaggi di Publish per garantire il funzionamento dell&#39;interfaccia tra i server e l&#39;istanza del Centro messaggi.
+1. Pubblica i modelli del Centro messaggi per garantire il funzionamento dell’interfaccia tra i server e l’istanza del Centro messaggi.
 1. Esegui i test per garantire che le e-mail vengano ricevute correttamente tramite l’istanza di produzione del Centro messaggi.
 1. Esegui test del flusso di lavoro in produzione per garantire che le consegne siano ricevute.
 
@@ -250,7 +250,7 @@ Quando la messaggistica transazionale (Centro messaggi) è abilitata nell’ista
 
 Nel contesto di un ambiente di mid-sourcing, è necessario eseguire questi passaggi aggiuntivi per aggiornare:
 
-1. Contatta [l&#39;Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per coordinare l&#39;aggiornamento del server Mid-Sourcing.
+1. Contatta l&#39;[Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per coordinare l&#39;aggiornamento del server Mid-Sourcing.
 1. Verifica che la versione sia stata aggiornata eseguendo un collegamento di test. Ad esempio:
 
    ```
@@ -289,7 +289,7 @@ Il file **postupgrade_ServerVersionNumber_TimeOfPostupgrade.log** contiene il ri
 
 I conflitti si trovano all’interno del file postupgrade.log sul server in questione o all’interno dell’interfaccia client di Campaign (Amministrazione > Configurazione > Gestione pacchetti > Modifica conflitti).
 
-Il documento con identificatore &quot;stockOverview&quot; e tipo &quot;nms:webApp&quot; è in conflitto con la nuova versione.
+Il documento con identificatore ‘stockOverview’ e tipo ‘nms:webApp’ è in conflitto con la nuova versione.
 
 Se viene rilevato un conflitto, verifica se le seguenti condizioni corrispondono:
 

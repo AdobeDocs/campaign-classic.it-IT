@@ -10,7 +10,7 @@ hide: true
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '722'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Varie opzioni consentono di misurare l’impatto di una migrazione e identificar
 
 ### Processo di verifica {#verification-process}
 
-Integrato come standard nel comando post-aggiornamento, questo processo consente di visualizzare avvisi ed errori che potrebbero impedire il corretto completamento della migrazione. **Se vengono visualizzati errori, la migrazione non è stata eseguita.** In questo caso, correggere tutti gli errori e riavviare il post-aggiornamento.
+Integrato come standard nel comando post-aggiornamento, questo processo consente di visualizzare avvisi ed errori che potrebbero impedire il corretto completamento della migrazione. **Se vengono visualizzati errori, la migrazione non è stata eseguita.** In questo caso, correggi tutti gli errori e riavvia il post-aggiornamento.
 
 Puoi avviare il processo di verifica da solo (senza migrazione) utilizzando il comando:
 

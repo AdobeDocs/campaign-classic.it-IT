@@ -7,7 +7,7 @@ hide: true
 exl-id: 7213ea64-3dec-4b16-9d93-4ae941ddfaa7
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1695'
+source-wordcount: '1825'
 ht-degree: 3%
 
 ---
@@ -620,7 +620,7 @@ Questo video mostra un esempio di utilizzo di un metodo API non statico in un fl
 * [Esempi di chiamate SOAP](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=it)
 * Metodi:
    * [Crea](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=it)
-   * [EliminaRaccolta](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=it)
+   * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=it)
    * [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=it)
    * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=it)
    * [Scrittura](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html?lang=it)

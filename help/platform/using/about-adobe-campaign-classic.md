@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 54%
+source-wordcount: '208'
+ht-degree: 51%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 54%
 
 Per offrire un elevato grado di coinvolgimento dei clienti e ottime esperienze, i brand devono creare customer journey coerenti ad ogni punto di contatto. Gli esperti di marketing possono ora progettare, pianificare, eseguire, gestire e ottimizzare in modo efficiente campagne di marketing cross-channel, in modo tale da offrire un ritorno elevato sull’investimento marketing e promuovere la fidelizzazione.
 
- Adobe Campaign ti consente di coordinare la creazione di campagne di marketing conversazionali.  Adobe Campaign dispone di funzioni innovative per modellare, semplificare e automatizzare i processi di marketing e di comunicazione con i clienti.
+Adobe Campaign ti consente di coordinare la creazione di campagne di marketing conversazionali. Adobe Campaign dispone di funzioni innovative per modellare, semplificare e automatizzare i processi di marketing e di comunicazione con i clienti.
 
 
 >[!BEGINTABS]

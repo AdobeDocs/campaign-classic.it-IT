@@ -9,7 +9,7 @@ topic-tags: deployment-types-
 exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
 source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1094'
 ht-degree: 2%
 
 ---
@@ -71,7 +71,7 @@ Con la crescita del volume, una variante di questa architettura sposta il server
    * la prima esposizione al pubblico per il tracciamento e il puntamento verso il computer sulla sua IP pubblica;
    * il secondo alias esposto agli utenti interni per l&#39;accesso alla console e che punta allo stesso computer.
 
-* Firewall configurato per aprire SMTP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 ad Oracle, 5432 per PostgreSQL, ecc.) porte. Per ulteriori informazioni, vedere [Configurazione di rete](../../installation/using/network-configuration.md).
+* Firewall configurato per aprire SMTP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 per Oracle, 5432 per PostgreSQL, ecc.) porte. Per ulteriori informazioni, vedere [Configurazione di rete](../../installation/using/network-configuration.md).
 
 Negli esempi seguenti, i parametri della variante sono:
 
@@ -239,7 +239,7 @@ Applica i seguenti passaggi:
 
      ![](assets/s_ncs_install_deployment_wiz_09.png)
 
-     Poiché il server Adobe Campaign viene utilizzato sia come server applicazioni che come server di reindirizzamento, l’URL interno utilizzato per raccogliere i registri di tracciamento e trasferire gli URL è una connessione interna diretta a Tomcat (https://localhost:8080).
+     Poiché il server Adobe Campaign viene utilizzato sia come server applicazioni che come server di reindirizzamento, l&#39;URL interno utilizzato per raccogliere i registri di tracciamento e trasferire gli URL è una connessione interna diretta a Tomcat (https://localhost:8080).
 
    * Gestione dei messaggi non recapitati: immetti i parametri per gestire i messaggi non recapitati (non prendere in considerazione la sezione **Messaggi non recapitati non elaborati**).
    * Accesso da: fornisci i due URL per i rapporti, i moduli web e le pagine mirror.

@@ -8,7 +8,7 @@ hide: true
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1511'
 ht-degree: 1%
 
 ---
@@ -116,7 +116,7 @@ L&#39;estrazione del file avvia due operazioni: il calcolo del budget e il calco
 
 ## Gestire i documenti associati {#managing-associated-documents}
 
-È possibile associare vari documenti a una campagna: rapporti, foto, pagina web, diagramma, ecc. Questi documenti possono essere in qualsiasi formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, ecc.). Scopri come collegare i documenti a una campagna [in questa sezione](../../campaign/using/marketing-campaign-assets.md).
+È possibile associare vari documenti a una campagna: report, foto, pagina web, diagramma, ecc. Questi documenti possono essere in qualsiasi formato (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF, ecc.). Scopri come collegare i documenti a una campagna [in questa sezione](../../campaign/using/marketing-campaign-assets.md).
 
 >[!IMPORTANT]
 >
@@ -134,7 +134,7 @@ I documenti possono essere associati a livello di campagna (documenti contestual
 
 La scheda **[!UICONTROL Documents]** contiene:
 
-* L’elenco di tutti i documenti necessari per il contenuto (modello, immagini ecc.) che possono essere scaricati localmente dagli operatori Adobe Campaign con i diritti appropriati,
+* L’elenco di tutti i documenti necessari per il contenuto (modello, immagini, ecc.) che possono essere scaricati localmente dagli operatori Adobe Campaign con i diritti appropriati,
 * Documenti contenenti informazioni per il router, se presenti.
 
 I documenti sono collegati al programma o alla campagna tramite la scheda **[!UICONTROL Edit > Documents]**.
@@ -161,7 +161,7 @@ Da questa vista è possibile modificarli.
 >
 >I profili di consegna vengono utilizzati esclusivamente nel contesto delle campagne di direct mailing.
 
-Una struttura di consegna indica un set strutturato di elementi (documenti, filiali/negozi, coupon promozionali, ecc.) creati nell’azienda e per una particolare campagna.
+Una struttura di consegna denota un set strutturato di elementi (documenti, filiali/negozi, coupon promozionali, ecc.) create nell’azienda e per una determinata campagna.
 
 Questi elementi sono raggruppati nei profili di consegna e una particolare struttura di consegna verrà associata a una consegna; vi verrà fatto riferimento nel file di estrazione inviato al **service provider** per essere allegato alla consegna. Ad esempio, puoi creare una struttura di consegna che faccia riferimento a un ramo e alle brochure di marketing che utilizza.
 
@@ -221,7 +221,7 @@ Nella scheda **[!UICONTROL Summary]** della consegna vengono visualizzate anche 
 
 #### Risultato estrazione {#extraction-result}
 
-Nel file estratto e inviato al fornitore di servizi, il nome della struttura e, se del caso, le sue caratteristiche (costo, descrizione, ecc.) sono aggiunti al contenuto in base alle informazioni contenute nel modello di esportazione associato al fornitore di servizi.
+Nel fascicolo estratto e inviato al prestatore di servizi, il nome della struttura e, se del caso, le sue caratteristiche (costo, descrizione, ecc.) vengono aggiunti al contenuto in base alle informazioni contenute nel modello di esportazione associato al provider di servizi.
 
 Nell’esempio seguente, l’etichetta, il costo stimato e la descrizione della struttura associata alla consegna verranno aggiunti al file di estrazione.
 

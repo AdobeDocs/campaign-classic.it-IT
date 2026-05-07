@@ -24,7 +24,7 @@ Nessuno
 
 ## Padri {#parents-6}
 
-`<srcschema>` , `<element>`   ,   `<attribute>`    ,    `<enumeration>`     ,     `<value>`      ,     `<param />`      `<method />`
+`<srcschema>`  ,  `<element>`   ,   `<attribute>`    ,    `<enumeration>`     ,     `<value>`      ,     `<param />`,      `<method />`
 
 ## Elementi secondari {#children-6}
 
@@ -32,7 +32,7 @@ Nessuno
 
 ## Descrizione {#description-6}
 
-Questo elemento consente di descrivere un `<element>` o un `<attribute>`   elemento. Può contenere solo testo ed è memorizzato in XML nel database.
+Questo elemento consente di descrivere un elemento `<element>` o `<attribute>`. Può contenere solo testo ed è memorizzato in XML nel database.
 
 ## Descrizione attributo {#attribute-description-6}
 

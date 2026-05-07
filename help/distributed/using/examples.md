@@ -7,7 +7,7 @@ hide: true
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1300'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## Creare una campagna locale (tramite modulo) {#creating-a-local-campaign--by-form-}
 
-L&#39;interfaccia Web di tipo **Per modulo** prevede l&#39;utilizzo di una **applicazione Web**. A seconda della configurazione, questa applicazione web può contenere qualsiasi tipo di elementi personalizzati definiti. Ad esempio, puoi suggerire collegamenti per valutare il target, il budget, il contenuto e così via. tramite API dedicate.
+L&#39;interfaccia Web di tipo **Per modulo** prevede l&#39;utilizzo di una **applicazione Web**. A seconda della configurazione, questa applicazione web può contenere qualsiasi tipo di elementi personalizzati definiti. Ad esempio, puoi suggerire collegamenti per valutare il target, il budget, il contenuto e così via tramite API dedicate.
 
 >[!NOTE]
 >
@@ -143,7 +143,7 @@ Una volta approvati i controlli, la campagna può iniziare automaticamente.
 
 #### Creare una campagna collaborativa {#creating-a-collaborative-campaign}
 
-1. Creare un nuovo **[!UICONTROL Campaign management > Campaign]** dal nodo **[!UICONTROL collaborative campaign (by target approval)]**.
+1. Creare un nuovo **[!UICONTROL collaborative campaign (by target approval)]** dal nodo **[!UICONTROL Campaign management > Campaign]**.
 1. Nella scheda **[!UICONTROL Targeting and workflows]**, crea un flusso di lavoro per la campagna. Deve contenere un&#39;attività **Split** in cui **[!UICONTROL Record count limitation]** è definito dall&#39;attività **[!UICONTROL Data distribution]**.
 
    ![](assets/mkg_dist_use_case_target_valid5.png)

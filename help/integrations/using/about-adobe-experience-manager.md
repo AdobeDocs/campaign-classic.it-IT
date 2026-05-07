@@ -9,7 +9,7 @@ content-type: reference
 exl-id: e9756046-fc67-4afd-b7a9-c8d73614f02e
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '147'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ L’integrazione tra Adobe Campaign e Adobe Experience Manager consente di gesti
 
 Puoi anche inserire direttamente le risorse dalla libreria di AEM Assets durante la modifica di un’e-mail o di una pagina di destinazione in Adobe Campaign. Questa funzionalità è descritta nel capitolo [Assets](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md).
 
-Ciò significa che puoi sfruttare al massimo sia le funzionalità di modifica dei contenuti dell’AEM che le capacità di distribuzione di Adobe Campaign.
+Ciò significa che puoi sfruttare al massimo sia le funzionalità di modifica dei contenuti di AEM che le capacità di distribuzione di Adobe Campaign.
 
 **Prerequisiti**
 

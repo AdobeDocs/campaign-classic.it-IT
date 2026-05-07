@@ -10,7 +10,7 @@ topic-tags: workflow-general-operation
 exl-id: 03d35202-d221-4136-aad4-00704aabb356
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '543'
 ht-degree: 2%
 
 ---
@@ -60,7 +60,7 @@ Se possibile, utilizzate file compressi per le importazioni e le esportazioni. G
 
 **Argomenti correlati:**
 
-* [Attività caricamento dati (file)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=it){target="_blank"}
+* [Attività di caricamento dati (file)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=it){target="_blank"}
 * [Attività di estrazione dati (file)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=it){target="_blank"}.
 
 ## Importa in modalità Delta {#importing-in-delta-mode}

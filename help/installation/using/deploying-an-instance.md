@@ -10,7 +10,7 @@ topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
 source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
-source-wordcount: '3397'
+source-wordcount: '3479'
 ht-degree: 2%
 
 ---
@@ -118,7 +118,7 @@ Sono disponibili le seguenti opzioni:
 
 * **[!UICONTROL Delivery duration of messages]** : Oltre questo limite di tempo, la consegna viene interrotta (per impostazione predefinita, 5 giorni).
 * **[!UICONTROL Online resources validity duration]** : tempo per il quale vengono conservate le informazioni dal profilo del destinatario per generare pagine mirror.
-* inserire nell&#39;elenco Bloccati **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : quando questa opzione è selezionata, in caso di i destinatari non verranno contattati.
+* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : quando questa opzione è selezionata, in caso di i destinatari non verranno contattati.
 * **[!UICONTROL Automatically ignore doubles]** : Quando questa opzione è selezionata, la consegna non verrà eseguita su indirizzi duplicati.
 
 >[!NOTE]
@@ -236,7 +236,7 @@ Esistono tre possibili tipi di architettura per l’implementazione del tracciam
 
 1. **Aggiungi supporto per il tracciamento in un&#39;istanza esistente**
 
-   Questa scelta si applica se l’istanza è già stata creata per altre esigenze (server MTA, ecc.) in server che verranno utilizzati come server di tracciamento.
+   Questa scelta si applica se l’istanza è già stata creata per altre esigenze (server MTA, ecc.) su server che verranno utilizzati come server di tracciamento.
 
    ![](assets/s_ncs_install_deployment_wiz_11.png)
 

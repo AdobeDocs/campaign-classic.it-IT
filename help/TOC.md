@@ -9,7 +9,7 @@ sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 4cae5fdb2b78f446f84352046b523d8862e9060c
 workflow-type: tm+mt
-source-wordcount: '2684'
+source-wordcount: '2710'
 ht-degree: 68%
 
 ---
@@ -183,7 +183,7 @@ ht-degree: 68%
          + [Analizzare il risultato](delivery/using/a-b-testing-uc-analyzing.md)
    + Servizi e abbonamenti {#subscriptions-and-referrals}
       + [Informazioni su servizi e abbonamenti](delivery/using/about-services-and-subscriptions.md)
-      + [Gestire le iscrizioni](delivery/using/managing-subscriptions.md)
+      + [Gestire gli abbonamenti](delivery/using/managing-subscriptions.md)
       + [Marketing virale e social marketing](delivery/using/viral-and-social-marketing.md)
    + Monitorare le consegne {#monitoring-deliveries}
       + [Monitorare le prestazioni delle consegne](delivery/using/about-delivery-monitoring.md)
@@ -588,7 +588,7 @@ ht-degree: 68%
          + [Installare il server](installation/using/installing-the-server.md)
          + [Integrare in un server web (Windows)](installation/using/integration-into-a-web-server-for-windows.md)
          + [Disponibilità della console client per Windows](installation/using/client-console-availability-for-windows.md)
-      + Campaign su Linux  {#installing-campaign-in-linux}
+      + Campaign su Linux {#installing-campaign-in-linux}
          + [Prerequisiti](installation/using/prerequisites-of-campaign-installation-in-linux.md)
          + [Installare i pacchetti](installation/using/installing-packages-with-linux.md)
          + [Integrare in un server web](installation/using/integration-into-a-web-server-for-linux.md)

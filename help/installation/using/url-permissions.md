@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: 6fe8da3b-57b9-4a69-8602-a03993630b27
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 24%
+source-wordcount: '380'
+ht-degree: 26%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 24%
 
 
 
-L’elenco predefinito di URL che possono essere richiamati tramite codici JavaScript (flussi di lavoro, ecc.) dalle istanze Campaign Classic è limitato. Si tratta di URL che consentono il corretto funzionamento delle istanze.
+L’elenco predefinito di URL che possono essere richiamati dai codici JavaScript (flussi di lavoro, ecc.) dalle istanze Campaign Classic è limitato. Si tratta di URL che consentono il corretto funzionamento delle istanze.
 
 Per impostazione predefinita, le istanze non possono connettersi a URL esterni. Tuttavia, è possibile aggiungere URL esterni all’elenco degli URL autorizzati in modo che l’istanza possa connettersi ad essi. Questo consente di connettere le istanze Campaign a sistemi esterni, ad esempio server SFTP o siti Web, per abilitare il trasferimento di file e/o dati.
 
@@ -29,7 +29,7 @@ Per impostazione predefinita, le istanze non possono connettersi a URL esterni. 
 >
 >In qualità di cliente **hosted**, se puoi accedere a [Pannello di controllo Campaign Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it), puoi utilizzare l&#39;interfaccia self-service delle autorizzazioni URL. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=it)
 >
->Altri clienti **ibridi/ospitati** devono contattare il team di supporto Adobe per aggiungere l&#39;IP al inserisco nell&#39;elenco Consentiti di.
+>Altri clienti **ibridi/in hosting** devono contattare il team di supporto Adobe per aggiungere un IP al inserisco nell&#39;elenco Consentiti di.
 >
 
 Per le distribuzioni **Hybrid** e **On-Premise**, l&#39;amministratore deve fare riferimento a un nuovo **urlPermission** nel file **serverConf.xml**.
@@ -57,7 +57,7 @@ Sono disponibili tre modalità di protezione della connessione:
 
 Per ulteriori informazioni, consulta le sezioni seguenti:
 
-* [Documentazione del Pannello di controllo](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it)
+* [Documentazione del Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it)
 * [Modelli di hosting](hosting-models.md)
 * [Configurazione del server Campaign](configuring-campaign-server.md)
 * [Parametri del file di configurazione del server Campaign](the-server-configuration-file.md)

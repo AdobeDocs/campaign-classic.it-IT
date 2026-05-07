@@ -9,8 +9,8 @@ topic-tags: database-maintenance
 exl-id: fb4798d7-0a2c-455b-86b6-3dcb5fd25c82
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '480'
-ht-degree: 1%
+source-wordcount: '523'
+ht-degree: 3%
 
 ---
 
@@ -40,7 +40,7 @@ Questo metodo evidenzia anche gli utenti che creano troppi oggetti.
 
 ## Consegne {#deliveries}
 
-In qualsiasi momento nell’istanza dovrebbero essere presenti meno di 1000 consegne. La presenza di un numero elevato di consegne consuma spazio nel database e crea problemi. Un’istanza che crea più di 10 consegne al giorno deve essere verificata in base ai requisiti aziendali. Valuta l’utilizzo di consegne continue per creare meno consegne. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/continuous-delivery.html?lang=it){target="_blank"}.
+In qualsiasi momento nell’istanza dovrebbero essere presenti meno di 1000 consegne. La presenza di un numero elevato di consegne consuma spazio nel database e crea problemi. Un’istanza che crea più di 10 consegne al giorno deve essere verificata in base ai requisiti aziendali. Valuta l’utilizzo di consegne continue per creare meno consegne. Per ulteriori informazioni, fai riferimento alla [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/continuous-delivery.html?lang=it){target="_blank"}.
 
 Le consegne più vecchie di due anni devono essere eliminate dall’istanza.
 

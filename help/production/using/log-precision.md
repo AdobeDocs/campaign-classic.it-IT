@@ -10,8 +10,8 @@ topic-tags: troubleshooting
 exl-id: c2470098-62f3-4fee-b1c5-800ed0e91f75
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 2%
+source-wordcount: '346'
+ht-degree: 6%
 
 ---
 
@@ -51,7 +51,7 @@ Adobe Campaign può funzionare con due livelli di registro:
    >
    >Se si utilizza **tracefilter:&#42;**, vengono attivati tutti i tipi di log: ncm, rdr, nms, jst, timing, wdbc, ldap, soap, xtk, xtkquery, session, xtkwriter, network, pop3, inmail\
    >I tipi di registro più utili sono: **wdbc** (visualizza tutte le query SQL), **soap** (visualizza tutte le chiamate SOAP), **ldap** (visualizza tutte le query LDAP dopo l&#39;autenticazione), **xtkquery** (visualizza l&#39;elenco di tutte le query).\
-   >È possibile utilizzarli singolarmente (**tracefilter:soap,wdbc**, ad esempio). È inoltre possibile attivarli tutti e scegliere di escludere alcuni altri: **-tracefilter:&#42;,!soap**
+   >Puoi utilizzarli singolarmente (**tracefilter:soap,wdbc**, ad esempio). È inoltre possibile attivarli tutti e scegliere di escludere alcuni altri: **-tracefilter:&#42;,!soap**
 
    Verificare che l&#39;errore si sia verificato, quindi riavviare il processo nel modo normale:
 

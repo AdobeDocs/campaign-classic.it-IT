@@ -7,8 +7,8 @@ role: User
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
 source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 1%
+source-wordcount: '931'
+ht-degree: 2%
 
 ---
 
@@ -38,7 +38,7 @@ Suggerimento: controlla la configurazione della gestione del traffico (affinità
 >
 >Questi passaggi possono essere eseguiti solo da un utente esperto sulle installazioni on-premise.
 
-### Monitoraggio della consegna {#deliverability-monitoring}
+### Monitoraggio della recapitabilità {#deliverability-monitoring}
 
 #### Installazione del pacchetto di consegna {#deliverability-package}
 

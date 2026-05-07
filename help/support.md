@@ -7,8 +7,8 @@ hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 67%
+source-wordcount: '842'
+ht-degree: 69%
 
 ---
 
@@ -22,7 +22,7 @@ Ottieni supporto tramite domande frequenti, best practice, risorse online e port
     <tr>
         <td><img src="platform/using/assets/do-not-localize/icon-faq.svg" width="60px"><p><a href="#faq">Problemi comuni e best practice</a></p></td>
         <td><img src="platform/using/assets/do-not-localize/icon-control-panel.svg" width="60px"><p><a href="#control-panel">Pannello di controllo Campaign</a></p></td>
-        <td><img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px"><p><a href="#support">Richiesta di aiuto</a></p></td>
+        <td><img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px"><p><a href="#support">Richiesta di assistenza</a></p></td>
     </tr>
 </table>
 
@@ -119,11 +119,11 @@ Puoi monitorare i sottodomini e i relativi certificati. Per ulteriori informazio
 
 Scopri come gestire le impostazioni delle istanze di Campaign Classic nel Pannello di controllo Campaign. Per ulteriori informazioni, consulta queste pagine:
 * [Aggiungi gli IP nel inserisco nell&#39;elenco Consentiti di accesso di](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=it) alle istanze Campaign
-* [Gestione autorizzazioni URL](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=it)
-* [Accedi ai dettagli dell&#39;istanza](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=it)
-* [Gestione chiavi GPG per la crittografia dei dati](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=it)
+* [Gestire le autorizzazioni URL](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=it)
+* [Accedi ai dettagli dell’istanza](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=it)
+* [Gestire le chiavi GPG per la crittografia dei dati](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=it)
 
-## Richiesta di aiuto {#support}
+## Richiesta di assistenza {#support}
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 

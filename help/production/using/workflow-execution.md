@@ -10,8 +10,8 @@ topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 3%
+source-wordcount: '762'
+ht-degree: 11%
 
 ---
 
@@ -118,6 +118,6 @@ Per verificare e avviare il modulo, se necessario, attieniti alla seguente proce
 
 Se un flusso di lavoro non riesce, effettua le seguenti operazioni:
 
-1. Controlla il giornale di registrazione del flusso di lavoro. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=it){target="_blank"}.
+1. Controlla il giornale di registrazione del flusso di lavoro. Per ulteriori informazioni, fai riferimento alla [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=it){target="_blank"}.
 1. Monitorare i flussi di lavoro tecnici. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html?lang=it){target="_blank"}.
 1. Cerca gli errori nelle singole attività del flusso di lavoro.

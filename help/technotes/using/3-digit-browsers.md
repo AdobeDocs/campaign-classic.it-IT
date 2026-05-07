@@ -6,7 +6,7 @@ feature: Technote
 exl-id: 2016279a-7b02-4399-b2ed-9a15456de816
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '653'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ I potenziali problemi o la perdita di funzionalità sul sito web derivano dalla 
 
 ## Sei interessato?{#version-100-impact}
 
-L’Adobe consiglia di testare le applicazioni web di Campaign, inclusi moduli web e sondaggi, per assicurarsi che continuino a funzionare correttamente con queste nuove versioni del browser.
+Adobe consiglia di testare le applicazioni web di Campaign, inclusi moduli web e sondaggi, per assicurarsi che continuino a funzionare correttamente con queste nuove versioni del browser.
 
 Questo consiglio si applica a tutte le applicazioni web, in particolare se hai incluso il codice JavaScript.
 

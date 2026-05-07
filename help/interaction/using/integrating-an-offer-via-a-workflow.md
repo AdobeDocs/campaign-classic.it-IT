@@ -9,7 +9,7 @@ topic-tags: delivering-an-offer
 exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1077'
 ht-degree: 1%
 
 ---

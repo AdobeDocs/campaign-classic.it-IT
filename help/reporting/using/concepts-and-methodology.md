@@ -8,7 +8,7 @@ hide: true
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1510'
 ht-degree: 1%
 
 ---
@@ -186,7 +186,7 @@ Puoi configurare la visualizzazione delle misure nella tabella in base alle tue 
 
 * la sequenza di visualizzazione delle misure (fare riferimento a [Sequenza di visualizzazione](#display-sequence)),
 * le informazioni da mostrare/nascondere nel report (fare riferimento a [Configurare la visualizzazione](#configuring-the-display))
-* quali misure visualizzare: percentuale, totale, numero di decimali, ecc. (fare riferimento a [Modificare il tipo di misura visualizzato](#changing-the-type-of-measure-displayed)).
+* quali misure visualizzare: percentuale, totale, numero di decimali, ecc. (fare riferimento a [Modificare il tipo di misura visualizzata](#changing-the-type-of-measure-displayed)).
 
 ### Sequenza di visualizzazione {#display-sequence}
 

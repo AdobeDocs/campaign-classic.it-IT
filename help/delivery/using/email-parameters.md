@@ -8,8 +8,8 @@ hide: true
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 10%
+source-wordcount: '920'
+ht-degree: 12%
 
 ---
 
@@ -133,6 +133,6 @@ Se necessario, i valori vengono codificati automaticamente.
 
 >[!IMPORTANT]
 >
->L’aggiunta di uno script per l’inserimento di intestazioni SMTP aggiuntive è riservata agli utenti avanzati.
+>L’aggiunta di uno script per l’inserimento di intestazioni SMTP aggiuntive è un’operazione riservata agli utenti avanzati.
 >
 >La sintassi di questo script deve essere conforme ai requisiti di questo tipo di contenuto: nessuno spazio inutilizzato, nessuna linea vuota e così via.

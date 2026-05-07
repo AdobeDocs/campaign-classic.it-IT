@@ -6,8 +6,8 @@ hide: true
 exl-id: d7bf9d62-6f9e-415f-8160-446210f6392e
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 2%
+source-wordcount: '270'
+ht-degree: 3%
 
 ---
 
@@ -29,13 +29,13 @@ Quando si utilizza l&#39;attività **[!UICONTROL Change Data Source]**, è neces
 
 Per utilizzare l&#39;attività **[!UICONTROL Change Data Source]**:
 
-1. Crea un flusso di lavoro.
+1. Creazione di un flusso di lavoro.
 
 1. Eseguire una query sui destinatari con un&#39;attività **[!UICONTROL Query]**.
 
    Per ulteriori informazioni sull&#39;attività **[!UICONTROL Query]**, vedere questa [pagina](../../workflow/using/query.md#creating-a-query).
 
-1. Aggiungere un&#39;attività **[!UICONTROL Targeting]** dalla scheda **[!UICONTROL Change data source]**.
+1. Aggiungere un&#39;attività **[!UICONTROL Change data source]** dalla scheda **[!UICONTROL Targeting]**.
 
    ![](assets/change-data-source.png)
 

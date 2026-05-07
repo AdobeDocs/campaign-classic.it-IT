@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: e5ed96cc-3fc7-4af4-a29e-5a4c81f4fe39
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '951'
-ht-degree: 1%
+source-wordcount: '981'
+ht-degree: 3%
 
 ---
 
@@ -39,7 +39,7 @@ Ogni operatore Adobe Campaign è collegato a un fuso orario: queste informazioni
 
 Quando la piattaforma Adobe Campaign non richiede la gestione del fuso orario, puoi mantenere una modalità di archiviazione in formato locale con un fuso orario collegato specifico.
 
-## Raccomandazioni {#recommendations}
+## Consigli {#recommendations}
 
 I fusi orari combinano diverse realtà: l’espressione può descrivere un’attesa costante con la data UTC, oppure le ore di una regione che possono cambiare le ore due volte all’anno (ora legale).
 
@@ -70,7 +70,7 @@ Selezionare l&#39;opzione **[!UICONTROL UTC database (date fields with time zone
 
 >[!IMPORTANT]
 >
->Se si utilizza **Oracle**, i file del fuso orario (dat) dei livelli client Oracle devono essere compatibili con i file dei fusi orari installati nel server.
+>Se si utilizza **Oracle**, i file del fuso orario (.dat) dei livelli client di Oracle devono essere compatibili con i file dei fusi orari installati nel server.
 
 Se il database non è UTC, è possibile selezionare uno dei fusi orari disponibili nell&#39;elenco a discesa. È inoltre possibile utilizzare il fuso orario del server o selezionare l&#39;opzione UTC (Coordinated Universal Time).
 
@@ -102,6 +102,6 @@ Esempio di valori possibili:
 
   Questi valori vengono ricavati dal database tz (Olson). Per ulteriori informazioni, consultare [https://en.wikipedia.org/wiki/List_of_tz_database_time_zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
 
-## Fuso orario del database e del server Oracle
+## Fuso orario del database e del server di Oracle
 
 Per il database principale, Campaign utilizza il fuso orario del server per impostare il fuso orario della sessione nella connessione al database. L&#39;opzione &quot;WdbcTimeZone&quot; non ha alcun impatto. Pertanto, il fuso orario del server deve corrispondere a quello del database principale utilizzato da Campaign. Se non è possibile modificare il fuso orario del server, quello utilizzato da Campaign può essere sovrascritto impostando la variabile di ambiente TZ in customer.sh.

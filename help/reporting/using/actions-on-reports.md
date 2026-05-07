@@ -7,7 +7,7 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '554'
 ht-degree: 3%
 
 ---
@@ -54,7 +54,7 @@ Per i report di tipo **[!UICONTROL List with group]** destinati all&#39;esportaz
 
 * I rapporti non devono utilizzare una formattazione specifica definita a livello di cella. È preferibile utilizzare **[!UICONTROL Form rendering]** per definire il formato delle celle nella tabella. **[!UICONTROL Form rendering]** è accessibile tramite **[!UICONTROL Administration > Configuration > Form rendering]**.
 * Si sconsiglia di inserire contenuto HTML.
-* Se un rapporto contiene più tabelle, grafici, ecc. elementi di tipo, verranno esportati uno sotto l&#39;altro.
+* Se un report contiene diversi elementi di tipo tabella, grafico e così via, questi verranno esportati uno sotto l&#39;altro.
 * Puoi forzare il ritorno a capo nelle celle: questa configurazione verrà mantenuta in Excel. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../reporting/using/creating-a-table.md#defining-cell-format).
 
 ### Posticipa l&#39;esportazione {#postpone-the-export}
@@ -65,7 +65,7 @@ Puoi posticipare l’esportazione di un rapporto, ad esempio per attendere chiam
 document.nl_waitBeforeRender = true;
 ```
 
-Per attivare l&#39;esportazione e iniziare la conversione in un PDF, utilizzare la funzione **document.nl_renderToPdf()** senza alcun parametro.
+Per attivare l&#39;esportazione e avviare la conversione in un PDF, utilizzare la funzione **document.nl_renderToPdf()** senza alcun parametro.
 
 ### Allocazione di memoria {#memory-allocation}
 

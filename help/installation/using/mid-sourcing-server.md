@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1006'
-ht-degree: 1%
+source-wordcount: '1084'
+ht-degree: 2%
 
 ---
 
@@ -135,13 +135,13 @@ Dalla console del client, individua l&#39;indirizzamento di **e-mail utilizzando
 
 L’attributo &quot;@name&quot; deve rispettare le regole seguenti:
 
-**&#39;marketing_account_operator_name&#39;.&#39;affinity_name&#39;.&#39;gruppo affinità&#39;**
+**&#39;marketing_account_operator_name&#39;.&#39;affinity_name&#39;.&#39;affinity_group&#39;**
 
 &quot;marketing_account_operator_name&quot; si riferisce al nome interno dell’account di mid-sourcing dichiarato nell’istanza di mid-sourcing.
 
 &#39;affinity_name&#39; fa riferimento al nome arbitrario assegnato all&#39;affinità. Questo nome deve essere univoco. I caratteri autorizzati sono `[a-z]` `[A-Z]` `[0-9]`. L&#39;obiettivo è dichiarare un gruppo di indirizzi IP pubblici.
 
-&#39;affinity_group&#39; mette in relazione la sub-affinità dichiarata nella mappatura di destinazione utilizzata in ciascuna consegna. L’ultima parte include &quot;.&quot; viene ignorato se non è presente alcuna sub-affinità. I caratteri autorizzati sono `[a-z]` `[A-Z]` `[0-9]`.
+&#39;affinity_group&#39; mette in relazione la sub-affinità dichiarata nella mappatura di destinazione utilizzata in ciascuna consegna. L’ultima parte, incluso &quot;.&quot;, viene ignorata se non è presente alcuna sub-affinità. I caratteri autorizzati sono `[a-z]` `[A-Z]` `[0-9]`.
 
 È necessario arrestare e quindi riavviare il server affinché la modifica possa essere presa in considerazione.
 

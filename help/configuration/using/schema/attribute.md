@@ -145,13 +145,13 @@ La sequenza in cui sono definiti `<attribute>` elementi in un `<srcschema>` non 
    * mobile
    * html
    * int64
-   * link
-   * long
+   * collegamento
+   * lungo
    * promemoria
    * MNTOKEN
    * percentuale
    * chiave primaria
-   * corto
+   * breve
    * stringa
    * ora
    * intervallo di tempo

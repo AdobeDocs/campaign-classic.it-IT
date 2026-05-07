@@ -10,8 +10,8 @@ topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 5%
+source-wordcount: '617'
+ht-degree: 9%
 
 ---
 
@@ -42,7 +42,7 @@ Per poterlo fare:
 
 In questo caso d’uso, creeremo un flusso di lavoro per crittografare ed esportare i dati utilizzando una chiave installata sul Pannello di controllo Campaign.
 
-![](assets/do-not-localize/how-to-video.png) [Guarda il video su questa funzione](#video)
+![](assets/do-not-localize/how-to-video.png) [Guarda un video su questa funzione](#video)
 
 I passaggi per eseguire questo caso d’uso sono i seguenti:
 
@@ -91,6 +91,6 @@ I passaggi per eseguire questo caso d’uso sono i seguenti:
 
 Questo video mostra come utilizzare una chiave GPG per crittografare i dati è disponibile anche in
 
->[!VIDEO](https://video.tv.adobe.com/v/41162?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/41162?captions=ita&quality=12)
 
 Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

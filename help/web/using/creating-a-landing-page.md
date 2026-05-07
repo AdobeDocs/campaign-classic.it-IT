@@ -7,7 +7,7 @@ feature: Landing Pages
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '739'
 ht-degree: 2%
 
 ---
@@ -70,7 +70,7 @@ Per caricare il modello sulla prima pagina, effettua le seguenti operazioni:
 1. Selezionare il file HTML da utilizzare.
 1. Fai clic su **Apri** per avviare l&#39;importazione.
 
-   Durante il caricamento, viene visualizzato l’elenco dei file condivisi. Il sistema di importazione controlla che siano presenti tutti i file collegati al HTML selezionato (CSS, immagini e così via).
+   Durante il caricamento, viene visualizzato l’elenco dei file condivisi. Il sistema di importazione controlla che siano presenti tutti i file collegati al HTML selezionato (CSS, immagini, ecc.).
 
    Al termine dell&#39;importazione, fare clic sul pulsante **[!UICONTROL Close]**.
 
@@ -89,7 +89,7 @@ Applicare questi passaggi a ogni pagina inserita nell&#39;applicazione Web.
 
 >[!CAUTION]
 >
->**Il DCE esegue il codice JavaScript per la pagina HTML caricata.** errori JavaScript nel modello HTML che possono essere visualizzati nell&#39;interfaccia Adobe Campaign. Questi errori non sono correlati all’editor. Per verificare che non vi siano errori nei file importati, si consiglia di testarli in un browser web prima di importare i file nel DCE.
+>**Il DCE esegue il codice JavaScript per la pagina HTML caricata.** Errori JavaScript nel modello HTML che possono comparire nell’interfaccia di Adobe Campaign. Questi errori non sono correlati all’editor. Per verificare che non vi siano errori nei file importati, si consiglia di testarli in un browser web prima di importare i file nel DCE.
 
 ## Passaggio 2: configurazione del contenuto {#step-2---configuring-the-content}
 

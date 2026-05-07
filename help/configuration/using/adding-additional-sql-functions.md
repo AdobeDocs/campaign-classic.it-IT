@@ -7,7 +7,7 @@ role: Developer
 exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1037'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ Le funzioni da aggiungere si trovano nel file **&quot;package&quot;** in formato
 
 Se si desidera aggiungere funzioni a diversi gruppi, è possibile tenere traccia di diversi elementi `<group>` nello stesso elenco.
 
-Infine, un elemento `<group>` può contenere la definizione di una o più funzioni, ovvero lo scopo del file del pacchetto. `<function>`   è descritto nel paragrafo seguente.
+Infine, un elemento `<group>` può contenere la definizione di una o più funzioni, ovvero lo scopo del file del pacchetto. L&#39;elemento `<function>` è descritto nel paragrafo seguente.
 
 ## Descrittore di funzione &lt;function>&lt;/function> {#function-descriptor--function-}
 
@@ -122,7 +122,7 @@ Il campo **@name** fa riferimento al nome della funzione e &quot;args&quot; è l
 * Infine, l&#39;elemento **providerPart** fornisce l&#39;implementazione della funzione.
 
    * L&#39;attributo **provider** è obbligatorio e specifica i sistemi di database per i quali viene fornita l&#39;implementazione. Come mostrato nell’esempio, quando le sintassi delle espressioni o le funzioni sottostanti differiscono, è possibile fornire implementazioni alternative in base al database.
-   * L&#39;attributo **@body** contiene l&#39;implementazione della funzione. Nota: questa implementazione deve essere un&#39;espressione nel linguaggio del database (non un blocco di codice). A seconda dei database, le espressioni possono essere sottoquery (&quot;(seleziona una colonna dalla tabella dove...)&quot;) che restituiscono un solo valore. Questo è il caso, ad esempio, di Oracle (la query deve essere scritta tra parentesi).
+   * L&#39;attributo **@body** contiene l&#39;implementazione della funzione. Nota: questa implementazione deve essere un&#39;espressione nel linguaggio del database (non un blocco di codice). A seconda dei database, le espressioni possono essere sottoquery (&quot;(seleziona una colonna dalla tabella dove...)&quot;) restituisce un solo valore. Questo è il caso, ad esempio, di Oracle (la query deve essere scritta tra parentesi).
 
   >[!NOTE]
   >

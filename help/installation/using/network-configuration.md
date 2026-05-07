@@ -10,8 +10,8 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: b86236ae-95e9-4406-b60f-6d90ad0d4a01
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 1%
+source-wordcount: '725'
+ht-degree: 4%
 
 ---
 
@@ -238,7 +238,7 @@ L’integrazione tra Adobe Campaign e Adobe Experience Manager richiede l’aper
   </tr> 
   <tr> 
    <td><p> 4502</p><p> 4503</p><br /> </td> 
-   <td> Connessione Adobe Campaign alle istanze "authoring" e "pubblicazione" dell’AEM. Le porte da aprire potrebbero essere diverse dalle porte predefinite, a seconda della configurazione AEM.<br /> </td> 
+   <td> Connessione Adobe Campaign alle istanze "authoring" e "pubblicazione" di AEM. Le porte da aprire potrebbero essere diverse dalle porte predefinite, a seconda della configurazione di AEM.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

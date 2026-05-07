@@ -7,7 +7,7 @@ feature: Surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '572'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ Adobe Campaign include un modulo grafico per definire e pubblicare le applicazio
 
 >[!AVAILABILITY]
 >
->La gestione dei sondaggi non è disponibile in Campaign v8 nel contesto di una distribuzione Enterprise (FFDA). Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
+>La gestione dei sondaggi non è disponibile in Campaign v8 nel contesto di una distribuzione Enterprise (FFDA). Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
 
 
 Il componente aggiuntivo opzionale **Sondaggio** consente di creare un nuovo tipo di applicazione Web per creare e gestire questionari online, ad esempio moduli per aggiungere o modificare le informazioni del profilo, per sottoscrivere o annullare l&#39;abbonamento a un servizio di informazioni o un modulo per l&#39;iscrizione a un concorso. Una volta raccolte, le risposte vengono memorizzate nel database o in variabili locali. Il modello di dati può essere esteso dinamicamente tramite le risposte date ai questionari. Puoi visualizzare i risultati in tempo reale, filtrare le risposte e analizzarle utilizzando grafici dedicati.
@@ -43,7 +43,7 @@ In Adobe Campaign, utilizza [applicazioni Web](../../web/using/about-web-forms.m
 * Aggiungere personalizzazione e definire la posizione del campo
 * Visualizzazione delle condizioni dei campi dell’indagine in base alle risposte,
 * Visualizzazione pagina condizione,
-* Controllare le informazioni prima dell’approvazione, a seconda del tipo di dati previsti (numero, indirizzo e-mail, date, ecc.) e dei campi obbligatori,
+* Controllare le informazioni prima dell’approvazione, a seconda del tipo di dati previsti (numero, indirizzo e-mail, date, ecc.) e campi obbligatori,
 * Inviare inviti/notifiche via e-mail,
 * Personalizzare le pagine di errore e finali
 * Aggiungere immagini, video, collegamenti ipertestuali, captcha, ecc., nei moduli
@@ -63,7 +63,7 @@ Applica i seguenti passaggi per creare e consegnare un sondaggio ed elaborarne i
 
 1. Crea le pagine del sondaggio e il relativo contenuto (campi di input, elenchi a discesa, domande, ecc.).
 1. Definisci come salvare le risposte. È possibile inserire un passaggio di precaricamento dei dati per precaricare il modulo con i dati già presenti nel database. È inoltre possibile aggiungere una casella di test.
-1. Publish, quindi consegna il sondaggio ai destinatari (ad esempio, includi un collegamento in una consegna o in un sito web).
+1. Pubblica, quindi distribuisci il sondaggio ai destinatari (ad esempio, includi il collegamento in una consegna o in un sito web).
 1. Monitora le risposte e visualizza i rapporti.
 
 Per ulteriori informazioni sulla configurazione e la sequenza di questi passaggi, consulta [questo documento](../../web/using/about-web-forms.md). In questo capitolo sono descritte solo le configurazioni specifiche dei sondaggi.

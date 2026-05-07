@@ -8,8 +8,8 @@ role: User
 exl-id: 8be6836d-f7dc-4199-b2b2-b6a9cac9d162
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 4%
+source-wordcount: '273'
+ht-degree: 6%
 
 ---
 
@@ -37,7 +37,7 @@ Dopo aver creato la consegna e-mail e averne definito il contenuto, segui i pass
 
 Per ulteriori informazioni sulla creazione e la progettazione di una consegna, consulta [questa sezione](about-email-channel.md).
 
-1. Passa alla scheda **[!UICONTROL Preview]**.
+1. Vai alla scheda **[!UICONTROL Preview]**.
 1. Seleziona un destinatario per visualizzare l’anteprima della consegna.
 
    ![](assets/s_tn_del_preview_spamassassin_recipient.png)

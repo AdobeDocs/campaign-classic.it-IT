@@ -9,7 +9,7 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '450'
 ht-degree: 7%
 
 ---
@@ -26,10 +26,10 @@ Questa sezione ti presenterà gli elementi chiave da verificare in materia di si
 
 La configurazione e l’irrigidimento della privacy sono un elemento chiave dell’ottimizzazione della sicurezza. Di seguito sono riportate alcune best practice da seguire relative alla privacy:
 
-* Protect le informazioni personali dei clienti utilizzando HTTPS anziché HTTP
+* Proteggere i dati PII dei clienti utilizzando HTTPS anziché HTTP
 * Utilizza la restrizione della visualizzazione PII per proteggere la privacy e impedire l’utilizzo improprio dei dati.
 * Verificare che le password crittografate siano soggette a restrizioni.
-* Protect le pagine che potrebbero contenere informazioni personali come pagine mirror, applicazioni web, ecc.
+* Proteggi le pagine che potrebbero contenere informazioni personali, ad esempio pagine mirror, applicazioni web e così via.
 
 [Maggiori informazioni](../../installation/using/privacy.md)
 

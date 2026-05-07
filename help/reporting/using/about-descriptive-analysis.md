@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Cos’è l’analisi descrittiva
+title: Che cos’è l’analisi descrittiva
 description: Analizzare le popolazioni con rapporti di analisi descrittivi
 feature: Reporting, Monitoring
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
@@ -8,11 +8,11 @@ exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
 source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
 workflow-type: tm+mt
 source-wordcount: '209'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-# Cos’è l’analisi descrittiva {#about-descriptive-analysis}
+# Che cos’è l’analisi descrittiva {#about-descriptive-analysis}
 
 Per produrre statistiche sui dati nel database, crea rapporti di analisi descrittivi utilizzando l’assistente dedicato e adattane il contenuto e la presentazione alle tue esigenze.
 
@@ -36,7 +36,7 @@ Le analisi quantitative forniscono statistiche generali sui dati numerici della 
 
 ![](assets/reporting_descriptive_quantitative_sample.png)
 
-Questi rapporti vengono creati tramite l’assistente di analisi descrittivo, che, in base a vari passaggi, consente di scegliere il tipo di rapporto da creare, nonché i dati e il layout. Il rapporto viene visualizzato nell’ultimo passaggio. Se necessario, il report può essere pubblicato e condiviso con altri operatori, stampato ed esportato in formato Excel, PDF o OpenDocument.
+Questi rapporti vengono creati tramite l’assistente di analisi descrittivo, che, in base a vari passaggi, consente di scegliere il tipo di rapporto da creare, nonché i dati e il layout. Il rapporto viene visualizzato nell’ultimo passaggio. Se necessario, il report può essere pubblicato e condiviso con altri operatori, stampato, esportato in formato Excel, PDF o OpenDocument.
 
 Le procedure guidate di analisi descrittive non sono potenti quanto i rapporti di Adobe Campaign, ma forniscono una rapida panoramica del contenuto del database o una selezione di dati.
 

@@ -9,7 +9,7 @@ topic-tags: appendices
 exl-id: 5cd4abb0-2bd2-4b23-902c-41b08a1d2f7a
 source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '144'
 ht-degree: 4%
 
 ---
@@ -43,7 +43,7 @@ nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
 Per il parametro **`[rdbms]`** sono possibili i seguenti valori:
 
 * **postgresql**: per PostgreSQL,
-* **oracle**: ad Oracle,
+* **oracle**: per Oracle,
 * **mssql**: per Microsoft SQL Server,
 
 Il comando seguente configura l&#39;istanza **demo** con il server dei tipi SQL noto come **base6**, collegato all&#39;account **campaign** e alla relativa **password** nel server **dbsrv**:

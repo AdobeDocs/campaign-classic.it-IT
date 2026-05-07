@@ -10,7 +10,7 @@ topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '2488'
+source-wordcount: '2489'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ I budget vengono creati nella mappa tramite il nodo **[!UICONTROL Campaign manag
 
 * Spese
 
-  Crea le categorie di spesa a cui assegnare i costi di questo budget per campagne, attività e così via. possono essere collegati. Consulta [Categorie di spesa](#expense-categories).
+  Crea le categorie di spesa a cui collegare i costi assegnati a questo budget per campagne, attività e così via. Consulta [Categorie di spesa](#expense-categories).
 
   ![](assets/s_ncs_user_budget_create_and_save.png)
 
@@ -192,7 +192,7 @@ I costi sono suddivisi in tre categorie:
 
 1. Costo calcolato
 
-   Il costo calcolato dipende dall’elemento interessato (campagna, consegna, attività, ecc.) e dal suo stato (in corso di modifica, in corso, finito). In ogni caso, se si specifica il costo reale, il costo calcolato utilizzerà tale importo.
+   Il costo calcolato dipende dall’elemento interessato (campagna, consegna, attività, ecc.) e il relativo stato (in corso di modifica, in corso, terminato). In ogni caso, se si specifica il costo reale, il costo calcolato utilizzerà tale importo.
 
    Se non viene fornito il costo effettivo, si applicano le seguenti regole:
 

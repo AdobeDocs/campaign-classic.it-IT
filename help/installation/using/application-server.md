@@ -10,8 +10,8 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: 87103c31-1530-4f8d-ab3a-6ff73093b80c
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 1%
+source-wordcount: '677'
+ht-degree: 3%
 
 ---
 
@@ -39,7 +39,7 @@ Le versioni supportate sono descritte in dettaglio nella [Matrice di compatibili
 >* A partire dalla versione v7.4.1, Tomcat 10.1 è la versione predefinita.
 >
 
-### Raccomandazioni
+### Consigli
 
 Durante l’installazione e l’aggiornamento di Java Development Kit, applica i seguenti consigli:
 

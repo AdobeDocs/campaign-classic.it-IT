@@ -9,7 +9,7 @@ topic-tags: connectors
 exl-id: 8b2a9c73-807a-4936-9fd6-9d26c805a31f
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '380'
 ht-degree: 1%
 
 ---
@@ -169,5 +169,5 @@ Il connettore supporta le seguenti opzioni:
 
 | Opzione | Descrizione |
 |---|---|
-| TimeZoneName | Per impostazione predefinita, questo significa che viene utilizzato il fuso orario del server app di Campaign Classic. L’opzione può essere utilizzata per forzare il parametro di sessione TIMEZONE. |
+| TimeZoneName | Per impostazione predefinita è vuoto, il che significa che viene utilizzato il fuso orario del server dell’app Campaign Classic. L’opzione può essere utilizzata per forzare il parametro di sessione TIMEZONE. |
 

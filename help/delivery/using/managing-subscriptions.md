@@ -8,8 +8,8 @@ role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '1106'
-ht-degree: 2%
+source-wordcount: '1122'
+ht-degree: 3%
 
 ---
 
@@ -46,7 +46,7 @@ Per accedere alla mappa dei servizi informazioni, aprire la scheda **[!UICONTROL
 
 ![](assets/s_ncs_user_services_new.png)
 
-Per modificare un servizio esistente, fare clic sul relativo nome. Per creare un servizio, fare clic sul pulsante **[!UICONTROL Create]** situato sopra l&#39;elenco.
+Per modificare un servizio esistente, fai clic sul suo nome. Per creare un servizio, fare clic sul pulsante **[!UICONTROL Create]** situato sopra l&#39;elenco.
 
 ![](assets/s_ncs_user_services_add.png)
 

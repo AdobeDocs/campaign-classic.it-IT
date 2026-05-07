@@ -30,7 +30,7 @@ Per contrassegnare le stringhe da tradurre:
 
    ![](assets/dce_translation_3.png)
 
-1. Seleziona un blocco di HTML.
+1. Seleziona un blocco HTML.
 1. Nel blocco dei parametri a destra, l&#39;opzione **[!UICONTROL Localization]** consente di contrassegnare il contenuto del blocco selezionato. Per impostazione predefinita, deve essere tradotto solo il titolo della pagina.
 
    ![](assets/dce_translation_1.png)

@@ -1,17 +1,17 @@
 ---
 product: campaign
 title: Prerequisiti per l’installazione di Campaign in Linux
-description: Prerequisiti per l'installazione di Campaign in Linux
+description: Prerequisiti per l’installazione di Campaign in Linux
 feature: Installation, Instance Settings
-badge-v7-prem: label="Solo on-premise/ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo a distribuzioni on-premise e ibride"
+badge-v7-prem: label="Solo on-premise/ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
 source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 0%
+source-wordcount: '854'
+ht-degree: 2%
 
 ---
 
@@ -33,13 +33,13 @@ Come promemoria, è necessario installare e configurare correttamente i seguenti
 * Font, fai riferimento a [Font per statistiche MTA](#fonts-for-mta-statistics) e [Font per istanze giapponesi](#fonts-for-japanese-instances).
 
 
-### Biblioteche {#libraries}
+### Librerie {#libraries}
 
-Per installare Adobe Campaign in Linux, assicurati di avere il librerie richiesto.
+Per installare Adobe Campaign in Linux, assicurati di disporre delle librerie necessarie.
 
-* La libreria C deve essere in grado di supportare la modalità TLS (Thread Local Storage). Questa modalità è attiva nella maggior parte dei casi tranne che con alcuni kernel per i quali il supporto Xen è stato disabilitato.
+* La libreria C deve essere in grado di supportare la modalità TLS (Thread Local Storage). Questa modalità è attiva nella maggior parte dei casi, ad eccezione di alcuni kernel per i quali il supporto Xen è stato disattivato.
 
-  Per verificarlo, puoi usare il **comando uname -a | grep xen** per esempio.
+  Per verificare il problema, è possibile utilizzare **uname -a | comando grep xen**, ad esempio.
 
   Se il comando non restituisce una riga vuota, significa che la configurazione è corretta.
 
@@ -51,7 +51,7 @@ Per installare Adobe Campaign in Linux, assicurati di avere il librerie richiest
 
 ### SELinux {#selinux}
 
-Quando viene utilizzato, il modulo SELinux deve essere configurato correttamente.
+Se utilizzato, il modulo SELinux deve essere configurato correttamente.
 
 Per eseguire questa operazione, accedere come radice e immettere il comando seguente:
 
@@ -95,15 +95,15 @@ dnf install xorg-x11-fonts-misc xorg-x11-fonts-75dpi dejavu-lgc-sans-fonts  deja
 
 ### Font per istanze giapponesi {#fonts-for-japanese-instances}
 
-Font di caratteri specifici sono necessari per le istanze Giapponese per esportare i report in formato PDF.
+I font con caratteri specifici sono necessari per le istanze giapponesi per esportare i rapporti in formato PDF.
 
-In Debian, aggiungere il comando:
+In Debian, aggiungi il comando:
 
 ```
 apt install fonts-ipafont
 ```
 
-Per RHEL, aggiungere il seguente comando:
+Per RHEL, aggiungi il seguente comando:
 
 ```
 dnf install epel-release # if required
@@ -120,7 +120,7 @@ Per Debian, sono necessarie le seguenti configurazioni:
    apt-get install libreoffice-writer libreoffice-calc libreoffice-java-common
    ```
 
-1. Installa i seguenti font (facoltativo ma altamente consigliato per Giapponese istanze):
+1. Installa i seguenti font (facoltativo ma consigliato per le istanze giapponesi):
 
    ```
    apt-get install fonts-ipafont
@@ -128,15 +128,15 @@ Per Debian, sono necessarie le seguenti configurazioni:
 
 ### Installazione di LibreOffice per CentOS {#installing-libreoffice-for-centos}
 
-Le seguenti configurazioni sono necessarie con CentOS:
+Con CentOS sono necessarie le seguenti configurazioni:
 
 ```
 yum install libreoffice-headless libreoffice-writer libreoffice-calc
 ```
 
-## Livelli di accesso del database {#database-access-layers}
+## Livelli di accesso al database {#database-access-layers}
 
-I layer accesso per il motore di database in uso devono essere installati nel server ed essere accessibili tramite il Adobe Campaign account. Le versioni e le modalità di installazione possono variare a seconda del motore di database utilizzato.
+I livelli di accesso per il motore di database in uso devono essere installati nel server ed essere accessibili tramite l&#39;account Adobe Campaign. Le versioni e le modalità di installazione possono variare a seconda del motore di database utilizzato.
 
 La versione pilota supportata è descritta nella [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
@@ -150,25 +150,25 @@ L&#39;utilizzo di PostgreSQL con Adobe Campaign richiede anche l&#39;installazio
 
 ### Oracle {#oracle}
 
-Recupera la versione libreria per Debian a 64 bit, cioè: libclntsh.so, libclntsh.so.19.1 **,** libclntsh.so.18.1 **,** libclntsh.so.12.1 **,** libclntsh.so.11.1 **o** libclntsh.so.10.1 **.**&#x200B;**&#x200B;**
+Recupera la versione della libreria per Debian a 64 bit, ovvero: **libclntsh.so**, **libclntsh.so.19.1**, **libclntsh.so.18.1**, **libclntsh.so.12.1**, **libclntsh.so.11.1** o **libclntsh.so.10.1**.
 
-È possibile ottenere un pacchetto RPM Linux da Oracle Technology Network.
+È possibile ottenere un pacchetto Linux RPM da Oracle Technology Network.
 
 >[!NOTE]
 >
->Se hai già installato il client Oracle ma l&#39;ambiente globale (per istanza: /etc/profile) non è configurato correttamente, puoi aggiungere le **informazioni mancanti allo script nl6/customer.sh** Per ulteriori informazioni, fai riferimento a [Variabili](../../installation/using/installing-packages-with-linux.md#environment-variables) d&#39;ambiente.
+>Se il client Oracle è già stato installato ma l&#39;ambiente globale (ad esempio: /etc/profile) non è configurato correttamente, è possibile aggiungere informazioni mancanti allo script **nl6/customer.sh** Per ulteriori informazioni, vedere [Variabili di ambiente](../../installation/using/installing-packages-with-linux.md#environment-variables).
 
-**Risoluzione dei problemi e procedure consigliate**
+**Risoluzione dei problemi e best practice**
 
-I problemi possono comparire dopo un aggiornamento di un client o di un server Oracle, dopo una modifica della versione o alla prima installazione dell’istanza.
+I problemi possono comparire dopo un aggiornamento del client Oracle o del server, dopo un cambiamento di versione o al momento della prima installazione dell’istanza.
 
-Se noti nella console client che nei registri sono presenti ritardi imprevisti (una o più ore), nell’ultima elaborazione del flusso di lavoro, nell’elaborazione successiva e così via, potrebbe esserci un problema tra la libreria del client Oracle e il server Oracle. Per evitare tali problemi
+Se noti nella console client che nei registri sono presenti ritardi imprevisti (una o più ore), nell’ultima elaborazione del flusso di lavoro, nell’elaborazione successiva e così via, potrebbe esserci un problema tra la libreria del client Oracle e Oracle Server. Per evitare tali problemi
 
 1. Assicurarsi di utilizzare il **client completo**.
 
-   Sono stati identificati vari problemi durante l&#39;utilizzo della versione Oracle Instant Client. Inoltre, è impossibile modificare il file Timezone su Instant Client.
+   Sono stati identificati diversi problemi durante l’utilizzo della versione di Oracle Instant Client. Inoltre, è impossibile modificare il file del fuso orario sul client istantaneo.
 
-1. Assicurarsi che la **versione client e la versione** del **server database corrispondano a quella del server database**&#x200B;**.**
+1. Verificare che la **versione client** e la **versione server database** siano le **stesse**.
 
    È noto che la combinazione delle versioni nonostante la matrice di compatibilità di Oracle e i consigli per l’allineamento delle versioni client e server causano problemi.
 

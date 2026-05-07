@@ -7,7 +7,7 @@ feature: Reporting, Monitoring
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '440'
 ht-degree: 3%
 
 ---
@@ -65,7 +65,7 @@ La lingua di modifica è la lingua in cui si scrive. Quando aggiungi una lingua,
 >
 >Per ulteriori informazioni sulla localizzazione delle pagine Web in Campaign, consulta [questa sezione](../../web/using/translating-a-web-form.md).
 
-## Personalizzazione del rendering di HTML {#personalizing-html-rendering}
+## Personalizzare il rendering di HTML {#personalizing-html-rendering}
 
 Nella scheda **[!UICONTROL Rendering]** è possibile personalizzare la modalità di visualizzazione dei dati per la pagina. Puoi selezionare:
 

@@ -6,7 +6,7 @@ feature: Transactional Messaging, Message Center, Templates
 exl-id: a52bc140-072e-4f81-b6da-f1b38662bce5
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -53,14 +53,14 @@ I modelli per messaggi transazionali contengono le informazioni necessarie per p
 
 ## Creare il contenuto del messaggio {#creating-message-content}
 
-La definizione del contenuto dei messaggi transazionali è la stessa utilizzata per le consegne regolari in Adobe Campaign. Ad esempio, per una consegna e-mail, puoi creare contenuto in formato HTML o testo, aggiungere allegati o personalizzare l’oggetto di consegna. Per ulteriori informazioni, consulta il capitolo [Email delivery](../../delivery/using/about-email-channel.md).
+La definizione del contenuto dei messaggi transazionali è la stessa utilizzata per le consegne regolari in Adobe Campaign. Ad esempio, per una consegna e-mail, puoi creare contenuti in formato HTML o testo, aggiungere allegati o personalizzare l’oggetto di consegna. Per ulteriori informazioni, consulta il capitolo [Email delivery](../../delivery/using/about-email-channel.md).
 
 >[!IMPORTANT]
 >
 >Le immagini incluse nel messaggio devono essere accessibili al pubblico. Adobe Campaign non fornisce alcun meccanismo di caricamento di immagini per i messaggi transazionali.\
 >A differenza di JSSP o WebApp, `<%=` non ha alcun escape predefinito.
 >
->In questo caso, è necessario eseguire correttamente l’escape di ogni dato proveniente dall’evento. L’escape dipende da come viene utilizzato questo campo. Ad esempio, all’interno di un URL, utilizza encodeURIComponent. Per essere visualizzato in HTML, è possibile utilizzare escapeXMLString.
+>In questo caso, è necessario eseguire correttamente l’escape di ogni dato proveniente dall’evento. L’escape dipende da come viene utilizzato questo campo. Ad esempio, all’interno di un URL, utilizza encodeURIComponent. Per essere visualizzato in HTML, puoi utilizzare escapeXMLString.
 
 Dopo aver definito il contenuto del messaggio, puoi integrare le informazioni sull’evento nel corpo del messaggio e personalizzarlo. Le informazioni sull’evento vengono inserite nel corpo del testo grazie ai tag di personalizzazione.
 
@@ -71,7 +71,7 @@ Dopo aver definito il contenuto del messaggio, puoi integrare le informazioni su
 
 Per inserire i tag di personalizzazione nel corpo di un messaggio e-mail, effettua le seguenti operazioni:
 
-1. Nel modello del messaggio, fai clic sulla scheda corrispondente al formato e-mail (HTML o testo).
+1. Nel modello del messaggio, fai clic sulla scheda corrispondente al formato dell’e-mail (HTML o testo).
 
 1. Inserisci il corpo del messaggio.
 

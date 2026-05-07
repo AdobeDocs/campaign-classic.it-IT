@@ -10,7 +10,7 @@ topic-tags: importing-and-exporting-data
 exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1010'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ Per importare nel database di Adobe Campaign nuovi profili dei destinatari memor
 
 1. Riconciliazione
 
-   * Passare alla tabella **Destinatari (nms:recipient)**.
+   * Vai alla tabella **Destinatari (nms:recipient)**.
    * Selezionare l&#39;operazione **[!UICONTROL Insertion]** e lasciare i valori predefiniti negli altri campi.
 
      ![](assets/s_ncs_user_import_example04_01.png)

@@ -7,7 +7,7 @@ feature: Web Apps, Web Forms, Landing Pages, Delivery Templates
 exl-id: 69805e60-8fc6-45d1-9087-5f7d949cc76a
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '123'
+source-wordcount: '124'
 ht-degree: 4%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 Digital Content Editor offre **modelli standard** per applicazioni Web e consegne.
 
-Durante la creazione di un&#39;applicazione Web di tipo Pagina di destinazione, l&#39;utente può scegliere uno di questi modelli. Puoi anche importare un modello di HTML creato al di fuori di Adobe Campaign.
+Durante la creazione di un&#39;applicazione Web di tipo Pagina di destinazione, l&#39;utente può scegliere uno di questi modelli. Puoi anche importare un modello HTML creato al di fuori di Adobe Campaign.
 
 ![](assets/dce_popup_templatechoice.png)
 

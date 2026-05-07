@@ -9,8 +9,8 @@ topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '1124'
-ht-degree: 1%
+source-wordcount: '1159'
+ht-degree: 18%
 
 ---
 
@@ -20,8 +20,8 @@ La console client di Campaign è un client avanzato che consente di connettersi 
 
 Prima di iniziare l’installazione della console client, è necessario:
 
-* Verifica la compatibilità del sistema e degli strumenti con Adobe Campaign nella [Matrice di compatibilità](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
-* Ottenere l’URL del server Campaign
+* Verificare la compatibilità del sistema e degli strumenti con Adobe Campaign nella [Matrice di compatibilità](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
+* Ottenere l’URL del server di Campaign
 * Ottieni le credenziali utente
 * Installare Microsoft Edge Webview2 Runtime (dalla versione di Campaign Classic 7.3 Build). [Ulteriori informazioni](#webview)
 
@@ -40,15 +40,15 @@ Rivedi i dettagli riportati di seguito per capire cosa è necessario per l’imp
 
 ## Installazione runtime di Microsoft Edge Webview2 {#webview}
 
-A partire dalla versione della build Campaign Classic 7.3, l’installazione di Microsoft Edge Webview 2 Runtime è necessaria per qualsiasi installazione della console.
+A partire dalla versione della build di Campaign Classic 7.3, l&#39;installazione di Microsoft Edge Webview 2 Runtime è necessaria per qualsiasi installazione della console.
 
-La visualizzazione Web è installata per impostazione predefinita come parte del sistema operativo Windows 11. Se non è già presente nel sistema, Campaign Classic Console Installer ti chiederà di scaricarlo dal [sito Web Microsoft Developer](https://www.adobe.com/go/acc-ms-webview2-runtime-download_it). Il collegamento di download non funziona nel browser Internet Explorer 11 in quanto Microsoft ne ha dichiarato obsoleto il supporto. Utilizza un browser diverso per accedere al collegamento.
+WebView è installato per impostazione predefinita come parte del sistema operativo Windows 11. Se non è già presente nel sistema, Campaign Classic Console Installer richiederà di scaricarlo dal [sito Web Microsoft Developer](https://www.adobe.com/go/acc-ms-webview2-runtime-download_it). Il collegamento di download non funziona nel browser Internet Explorer 11 in quanto Microsoft ne ha dichiarato obsoleto il supporto. Accertati di utilizzare un browser diverso per accedere al collegamento.
 
 ## Implementazioni in hosting di Adobe {#hosted-customers}
 
 In qualità di cliente in hosting, hai a disposizione due opzioni per installare o aggiornare le console client:
 
-1. Adobe può distribuire direttamente. Una volta aggiornata la console, agli utenti verrà richiesto di scaricare l’ultima versione della console client in una finestra pop-up.
+1. Adobe può implementare direttamente. Una volta aggiornata la console, agli utenti verrà richiesto di scaricare l’ultima versione della console client in una finestra pop-up.
 
 1. Puoi scaricare nelle console client da [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/campaign.html)
 
@@ -128,19 +128,19 @@ Dopo aver installato la console client, attenersi alla procedura descritta di se
 
    ![](assets/s_ncs_install_define_connection_01.png)
 
-1. Fare clic su **[!UICONTROL Add > Connection]** e immettere l&#39;etichetta e l&#39;URL del server applicazioni Adobe Campaign.
+1. Fai clic su **[!UICONTROL Add > Connection]** e immetti l’etichetta e l’URL del server applicazioni di Adobe Campaign.
 
    ![](assets/s_ncs_install_define_connection_02.png)
 
-1. Specifica una connessione al server applicazioni Adobe Campaign tramite un URL. Utilizza un DNS o un alias del computer oppure il tuo indirizzo IP.
+1. Specifica una connessione al server applicazioni di Adobe Campaign tramite un URL. Utilizza un DNS o un alias del computer oppure il tuo indirizzo IP.
 
-   È possibile, ad esempio, utilizzare l&#39;URL di tipo `https://<machine>.<domain>.com`.
+   Ad esempio, puoi utilizzare l’URL di tipo `https://<machine>.<domain>.com`.
 
 1. Se Adobe IMS è configurato per la tua organizzazione, seleziona l&#39;opzione **[!UICONTROL Connect with an Adobe ID]**
 
 1. Fai clic su **[!UICONTROL Ok]** per salvare le impostazioni.
 
-Puoi aggiungere tutte le connessioni necessarie per connettersi, ad esempio, agli ambienti di test, stage e produzione.
+Puoi aggiungere tutte le connessioni necessarie per connetterti, ad esempio, agli ambienti di test, di staging e di produzione.
 
 >[!NOTE]
 >
@@ -173,6 +173,6 @@ Per accedere a un&#39;istanza esistente, effettuare le seguenti operazioni:
 
 Questo video mostra come installare e configurare il client Adobe Campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/38269?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/38269?captions=ita&quality=12)
 
 Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

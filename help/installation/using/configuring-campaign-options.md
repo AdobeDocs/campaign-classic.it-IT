@@ -9,7 +9,7 @@ topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '3834'
+source-wordcount: '3898'
 ht-degree: 1%
 
 ---
@@ -57,11 +57,11 @@ Il nodo **[!UICONTROL Administration / Platform / Options]** consente di configu
   </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> Consente all’operatore responsabile della consegna di confermare l’invio, se un operatore o un gruppo di operatori specifico è designato per avviare una consegna nelle proprietà della consegna.</p><p> A questo scopo, attiva l’opzione immettendo "1" come valore. Per disattivare questa opzione, immettere "0".</p><p> Il processo di conferma dell’invio funzionerà quindi come predefinito: solo l’operatore o il gruppo di operatori designati per l’invio nelle proprietà di consegna (o un amministratore) sarà in grado di confermare ed eseguire l’invio. Consulta <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=it#start-a-delivery" target="_blank">questa sezione</a>.</p> </td>
+   <td><p> Consente all’operatore responsabile della consegna di confermare l’invio, se un operatore o un gruppo di operatori specifico è designato per avviare una consegna nelle proprietà della consegna.</p><p> A questo scopo, attiva l’opzione immettendo "1" come valore. Per disattivare questa opzione, immettere "0".</p><p> Il processo di conferma dell’invio funzionerà quindi come predefinito: solo l’operatore o il gruppo di operatori designati per l’invio nelle proprietà di consegna (o un amministratore) sarà in grado di confermare ed eseguire l’invio. Vedi <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=it#start-a-delivery" target="_blank">questa sezione</a>.</p> </td>
 
 <tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
-   <td> Adobe Campaign utilizza una variabile globale "Nms_DefaultRcpSchema" per la finestra di dialogo con il database dei destinatari predefinito (nms:recipient).<br /> Il valore dell'opzione deve corrispondere al nome dello schema che corrisponde alla tabella dei destinatari esterna.<br /> </td> 
+   <td> Adobe Campaign utilizza una variabile globale "Nms_DefaultRcpSchema" per la finestra di dialogo con il database dei destinatari predefinito (nms:recipient).<br /> Il valore dell'opzione deve corrispondere al nome dello schema corrispondente alla tabella dei destinatari esterna.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBilling_MainActionThreshold</span> <br /> </td> 
@@ -149,7 +149,7 @@ Il nodo **[!UICONTROL Administration / Platform / Options]** consente di configu
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ExpOrganization</span> <br /> </td> 
-   <td> Nome comune del cliente. Utilizzato in alcuni messaggi di avviso visualizzati ai destinatari.<br /> "Stai ricevendo questo messaggio perché sei stato in contatto con "Organization" o un’azienda affiliata. Per non ricevere più messaggi da "Organization"<br /> </td> 
+   <td> Nome comune del cliente. Utilizzato in alcuni messaggi di avviso visualizzati ai destinatari.<br /> "Stai ricevendo questo messaggio perché sei stato in contatto con "Organizzazione" o un’azienda affiliata. Per non ricevere più messaggi da "Organization"<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_FromName</span> <br /> </td> 
@@ -173,7 +173,7 @@ Il nodo **[!UICONTROL Administration / Platform / Options]** consente di configu
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInmail_AllowlistEmails</span> <br /> </td> 
-   <td> Elenco di indirizzi e-mail di inoltro autorizzati (dal modulo di elaborazione della posta in entrata). Gli indirizzi devono essere separati da virgole (o * per consentire tutti). Esempio: xyz@abc.com,pqr@abc.com.<br /> </td> 
+   <td> Elenco di indirizzi e-mail di inoltro autorizzati (dal modulo di elaborazione della posta in entrata). Gli indirizzi devono essere separati da virgole (o * per consentire tutti). E.g. xyz@abc.com,pqr@abc.com.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLine_AESKey</span> <br /> </td> 
@@ -233,7 +233,7 @@ Il nodo **[!UICONTROL Administration / Platform / Options]** consente di configu
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsServer_MirrorPageUrl</span> <br /> </td> 
-   <td> L’URL del server della pagina speculare (per impostazione predefinita, deve essere identico a NmsTracking_ServerUrl).<br /> È il valore predefinito delle consegne e-mail quando l'URL non è specificato nella definizione di indirizzamento.<br /> </td> 
+   <td> URL del server della pagina mirror (per impostazione predefinita, deve essere identico a NmsTracking_ServerUrl).<br /> Si tratta del valore predefinito delle consegne e-mail quando l'URL non è specificato nella definizione di routing.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_Priority</span> <br /> </td> 
@@ -313,11 +313,11 @@ Il nodo **[!UICONTROL Administration / Platform / Options]** consente di configu
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NcmPublishingDir</span> <br /> </td> 
-   <td> Cartella principale per le pubblicazioni.<br /> Per ulteriori informazioni sulla generazione di contenuti HTML e Text, fare riferimento a <a href="../../delivery/using/using-a-content-template.md">questa sezione</a>.<br /> </td> 
+   <td> Cartella principale per le pubblicazioni.<br /> Per ulteriori informazioni sulla generazione di contenuti HTML e Text, consulta <a href="../../delivery/using/using-a-content-template.md">questa sezione</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkImageUrl</span> <br /> </td> 
-   <td> Consente di definire il server in cui vengono memorizzate le immagini utilizzate nelle consegne per consentire al browser di ottenerle.<br /> Per le versioni di build &lt;= 5098, viene utilizzato l'URL delle immagini caricate nell'istanza.<br /> Per le versioni di build &gt; 5098, viene utilizzato l'URL pubblico della consegna o l'URL dell'opzione <span class="uicontrol">XtkFileRes_Public_URL</span>.<br /> </td> 
+   <td> Consente di definire il server in cui vengono archiviate le immagini utilizzate nelle consegne per consentire al browser di ottenerle.<br /> Per le versioni di build &lt;= 5098, utilizziamo l’URL delle immagini caricate nell’istanza.<br /> Per le versioni di build &gt; 5098, viene utilizzato invece l'URL pubblico della consegna o l'URL dell'opzione <span class="uicontrol">XtkFileRes_Public_URL</span>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MediaInstance</span> <br /> </td> 
@@ -742,11 +742,11 @@ Il nodo **[!UICONTROL Administration / Platform / Options]** consente di configu
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_EdgeServer</span> <br /> </td> 
-   <td> Server Adobe Target utilizzato per l’integrazione. Questa opzione è già selezionata per impostazione predefinita. Questo valore corrisponde al server di dominio Adobe Target, seguito dal valore /m2. Ad esempio: tt.omtrdc.net/m2.<br /> Vedere <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">questa sezione</a>.<br /> </td> 
+   <td> Server Adobe Target utilizzato per l’integrazione. Questa opzione è già selezionata per impostazione predefinita. Questo valore corrisponde al server di dominio Adobe Target, seguito dal valore /m2. Esempio: tt.omtrdc.net/m2.<br /> Vedi <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">questa sezione</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TenantName</span> <br /> </td> 
-   <td> Nome dell’organizzazione Adobe Target. Questo valore corrisponde al nome del client Adobe Target.<br /> Vedere <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">questa sezione</a>.<br /> </td> 
+   <td> Nome dell’organizzazione Adobe Target. Questo valore corrisponde al nome del client Adobe Target.<br /> Vedi <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">questa sezione</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 
@@ -783,7 +783,7 @@ Il nodo **[!UICONTROL Administration / Platform / Options]** consente di configu
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInteraction_LastPropositionSynchControl_</span> <br /> </td> 
-   <td> '+ [schema della proposta] + "_" + extAccountSource.@executionInstanceId + [schema della proposta] + "_" + vars.executionInstanceIdFilter<br /> </td> 
+   <td> '+ [schema proposta] + "_" + extAccountSource.@executionInstanceId + [schema proposta] + "_" + vars.executionInstanceIdFilter<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInteraction_LastPropositionSynchExec_</span> <br /> </td> 

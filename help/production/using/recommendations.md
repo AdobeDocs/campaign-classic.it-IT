@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Raccomandazioni
-description: Raccomandazioni
+title: Consigli
+description: Consigli
 feature: Monitoring
 badge-v7-prem: label="Solo on-premise/ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
 audience: production
@@ -10,12 +10,12 @@ topic-tags: database-maintenance
 exl-id: e458f6cb-f6d1-4688-9f6d-2a27a2f90829
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 3%
+source-wordcount: '136'
+ht-degree: 15%
 
 ---
 
-# Raccomandazioni{#recommendations}
+# Consigli{#recommendations}
 
 
 

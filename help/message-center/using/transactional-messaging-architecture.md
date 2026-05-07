@@ -6,7 +6,7 @@ feature: Transactional Messaging, Message Center, Architecture
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1104'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ Il canale e-mail è disponibile per impostazione predefinita. Per inviare messag
 
 >[!IMPORTANT]
 >
->Prima di installare il pacchetto dei messaggi transazionali, è necessario aggiungere un canale di consegna (canale mobile, canale app mobile, ecc.).
+>Aggiunta di un canale di consegna (canale mobile, canale app mobile, ecc.) prima di installare il pacchetto dei messaggi transazionali.
 
 ### Aggiungere un canale di consegna {#adding-a-delivery-channel}
 

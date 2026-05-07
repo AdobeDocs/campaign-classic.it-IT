@@ -8,7 +8,7 @@ role: User
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
 source-git-commit: a94774daa4005fe95066b85f921d9baa981b2a7c
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '822'
 ht-degree: 1%
 
 ---
@@ -173,7 +173,7 @@ Il tag di partizionamento viene popolato all’inizio della pagina da includere 
 
 Il nome file è costruito con la variabile **$(path)** contenente il percorso di pubblicazione e **`<xsl:value-of select="@id" />`**, che corrisponde all&#39;identificatore del capitolo nel documento di input.
 
-Il modello di pubblicazione deve essere composto dai due fogli di stile &quot;cus:book.xsl&quot; e &quot;cus:chapter.xsl&quot;.
+Il modello di pubblicazione deve essere compilato con i due fogli di stile &quot;cus:book.xsl&quot; e &quot;cus:chapter.xsl&quot;.
 
 L&#39;opzione **[!UICONTROL Multi-file generation]** deve essere attiva nel modello di trasformazione del capitolo:
 

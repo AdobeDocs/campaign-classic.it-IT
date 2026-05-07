@@ -8,7 +8,7 @@ hide: true
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1924'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Puoi creare tutti i provider di servizi necessari per le consegne. La procedura 
 >
 >Per ulteriori informazioni, consulta [Definizione della struttura dei costi](#defining-the-cost-structure).
 
-Una categoria di costi è un&#39;entità contenente una serie di costi ammissibili per un tipo di consegna (e-mail, direct mailing, ecc.) o per un&#39;attività. Le categorie di costo sono raggruppate nei modelli dei servizi associati ai fornitori di servizi. Ogni provider di servizi può fare riferimento a uno o più modelli di servizio.
+Una categoria di costi è un’entità contenente una serie di costi ammissibili per un tipo di consegna (e-mail, direct mailing, ecc.) o per un&#39;attività. Le categorie di costo sono raggruppate nei modelli dei servizi associati ai fornitori di servizi. Ogni provider di servizi può fare riferimento a uno o più modelli di servizio.
 
 Per creare un modello di servizio e definirne il contenuto, attenersi alla procedura descritta di seguito.
 
@@ -70,7 +70,7 @@ Per creare un modello di servizio e definirne il contenuto, attenersi alla proce
 
    ![](assets/s_ncs_user_supplier_node_create_template.png)
 
-1. Crea le categorie di costo per ogni tipo di processo (consegna tramite direct mailing/e-mail/ecc.). o attività). A tale scopo, fare clic sulla scheda **[!UICONTROL Cost categories]**, quindi sul pulsante **[!UICONTROL Add]** e immettere i parametri di ciascuna categoria di costo.
+1. Crea le categorie di costo per ogni tipo di processo (consegna tramite direct mailing/e-mail/ecc. o attività). A tale scopo, fare clic sulla scheda **[!UICONTROL Cost categories]**, quindi sul pulsante **[!UICONTROL Add]** e immettere i parametri di ciascuna categoria di costo.
 
    ![](assets/s_ncs_user_supplier_node_03.png)
 

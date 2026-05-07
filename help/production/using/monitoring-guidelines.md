@@ -6,8 +6,8 @@ feature: Monitoring
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
 source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 16%
+source-wordcount: '835'
+ht-degree: 19%
 
 ---
 
@@ -42,7 +42,7 @@ Sono disponibili altri modi per monitorare i diversi processi di Campaign. Offro
 
 **Strumenti di monitoraggio automatico**
 
-Sono disponibili diversi metodi automatici. per aiutarti a monitorare l’istanza. Ad esempio, puoi impostare rapporti e-mail con anomalie rilevate, recuperare un elenco di indicatori in formato XML e così via. Per ulteriori informazioni, [fai clic qui](../../production/using/monitoring-processes.md#automatic-monitoring).
+Sono disponibili diversi metodi automatici. per aiutarti a monitorare l’istanza. Ad esempio, puoi impostare rapporti e-mail con anomalie rilevate, recuperare un elenco di indicatori in formato XML, ecc. [Fai clic qui](../../production/using/monitoring-processes.md#automatic-monitoring) per ulteriori informazioni.
 
 **Audit trail**
 
@@ -81,7 +81,7 @@ Oltre alla mappa di calore, puoi creare un flusso di lavoro per monitorare lo st
 **Linee guida generali**
 
 Seguire le linee guida e le best practice durante l’utilizzo dei flussi di lavoro può contribuire a migliorare le prestazioni. Per ulteriori informazioni, consulta le sezioni seguenti:
-* [Best practice per l&#39;utilizzo dei flussi di lavoro](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=it){target="_blank"}
+* [Best practice per l’utilizzo dei flussi di lavoro](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=it){target="_blank"}
 * [Monitoraggio dell’esecuzione dei flussi di lavoro](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=it){target="_blank"}
 
 ### Monitoraggio delle consegne {#monitoring-deliveries}
@@ -125,7 +125,7 @@ Il flusso di lavoro di pulizia del database consente di eliminare i dati obsolet
 
 *solo modelli di hosting on-premise e ibridi*
 
-Il backup è essenziale per evitare la perdita di dati in caso di problemi (fisici o di sistema) su una macchina. [Fare clic qui](../../production/using/backup.md) per ulteriori informazioni. Procedura di ripristino descritta in [questa sezione](../../production/using/restoration.md).
+Il backup è essenziale per evitare la perdita di dati in caso di problemi (fisici o di sistema) su una macchina. Per ulteriori informazioni, [fai clic qui](../../production/using/backup.md). Procedura di ripristino descritta in [questa sezione](../../production/using/restoration.md).
 
 ## Principi tecnici Campaign Classic {#campaign-classic-technical-principles}
 

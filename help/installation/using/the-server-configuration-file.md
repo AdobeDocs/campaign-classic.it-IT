@@ -9,8 +9,8 @@ topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '8066'
-ht-degree: 5%
+source-wordcount: '8103'
+ht-degree: 8%
 
 ---
 
@@ -540,11 +540,7 @@ Per ulteriori informazioni, fare riferimento a questa [sezione](../../installati
 
 >[!NOTE]
 >
->Nota su **nameSevers**: per impostazione predefinita, utilizza la rete
->parametri della prima interfaccia di rete dichiarata in Windows
->non definito in UNIX. Definisce i server dei nomi di dominio (DNS)
->utilizzato dall’MTA per ottenere la dichiarazione di Mail Exchanger per
->un dominio.
+>Nota su **nameSevers**: per impostazione predefinita, utilizza la rete>parametri della prima interfaccia di rete dichiarata in Windows>non definito in UNIX. Definisce i server dei nomi di dominio (DNS)>utilizzato dall’MTA per ottenere la dichiarazione di Mail Exchanger per>un dominio.
 >
 >Se questo valore non è definito, l’MTA cerca queste informazioni nella configurazione della rete host. Se sono possibili più DNS, i diversi indirizzi DNS devono essere separati da una virgola (ad esempio: 212.155.207.1,212.155.207.2). Se il server di consegna dispone di diverse interfacce di rete, l’elenco DNS utilizzato dall’MTA è il primo. In questo caso, è consigliabile specificare il parametro **nameServer** per evitare ambiguità.
 
@@ -1276,7 +1272,7 @@ Parametri diversi del nodo **inMail**. Si tratta della configurazione del modulo
   </tr> 
   <tr> 
    <td> ignoreSize<br /> </td> 
-   <td> Ignora dimensione messaggio: viene utilizzato per ignorare la dimensione di un messaggio restituito dai server POP3. In questo caso, il modulo richiede un "." alla fine dei messaggi. <br /> </td> 
+   <td> Ignora dimensione messaggio: viene utilizzato per ignorare la dimensione di un messaggio restituito dai server POP3. In questo caso, il modulo prevede un "." alla fine dei messaggi. <br /> </td> 
    <td> Booleano<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -1545,7 +1541,7 @@ Parametri diversi del nodo **mta**. Si tratta della configurazione degli agenti 
   </tr> 
   <tr> 
    <td> logLevel<br /> </td> 
-   <td> Visualizza il livello dei messaggi di registro. Livello di gravità dei registri scritti nel database. I messaggi di registro generati dall’MTA non sono sempre scritti nel database. Con questo parametro, puoi definire il livello in base al quale ritieni che un messaggio debba essere scritto nel database. Se si definisce il livello 2, vengono scritti anche i messaggi di livello 1 e 0, mentre se si definisce il livello 1, vengono scritti solo i messaggi di livello 1 e 0. I valori possibili sono: 0 (errori), 1 (avviso), 2 (informazioni)<br /> </td> 
+   <td> Mostra il livello dei messaggi di registro. Livello di gravità dei registri scritti nel database. I messaggi di registro generati dall’MTA non sono sempre scritti nel database. Con questo parametro, puoi definire il livello in base al quale ritieni che un messaggio debba essere scritto nel database. Se si definisce il livello 2, vengono scritti anche i messaggi di livello 1 e 0, mentre se si definisce il livello 1, vengono scritti solo i messaggi di livello 1 e 0. I valori possibili sono: 0 (errori), 1 (avviso), 2 (informazioni)<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
@@ -1822,7 +1818,7 @@ Per ulteriori informazioni, fare riferimento a [Ottimizzazione invio e-mail](../
   </tr> 
   <tr> 
    <td> idleChildTimeoutSec<br /> </td> 
-   <td> Timeout fino all’arresto dei server secondari inattivi. Se un server secondario ha un tempo di inattività maggiore di questo parametro, si interromperà automaticamente per liberare risorse host.<br /> </td> 
+   <td> Timeout fino all’interruzione dei server secondari inattivi. Se un server secondario ha un tempo di inattività maggiore di questo parametro, si interromperà automaticamente per liberare risorse host.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
@@ -1897,7 +1893,7 @@ Nel nodo **mta > secondario > smtp**, configura i seguenti parametri. Questa è 
   </tr> 
   <tr> 
    <td> idleSessionTimeoutSec<br /> </td> 
-   <td> Timeout della sessione di inattività. Questo parametro viene utilizzato solo se la sessione viene riutilizzata per trasmettere diversi messaggi a un determinato dominio. Quando l’MTA ha completato la trasmissione del messaggio, la sessione SMTP utilizzata non viene chiusa sistematicamente. Se un messaggio è pronto per essere inviato per lo stesso dominio, verrà riutilizzata la stessa sessione SMTP, e questo è il motivo per cui la sessione non viene chiusa automaticamente. Il parametro IdleSessionTimeout consente di definire il tempo durante il quale una sessione SMTP può rimanere attiva in attesa di un altro messaggio. Trascorsa la durata, la sessione viene automaticamente chiusa.<br /> </td> 
+   <td> Timeout della sessione inattiva. Questo parametro viene utilizzato solo se la sessione viene riutilizzata per trasmettere diversi messaggi a un determinato dominio. Quando l’MTA ha completato la trasmissione del messaggio, la sessione SMTP utilizzata non viene chiusa sistematicamente. Se un messaggio è pronto per essere inviato per lo stesso dominio, verrà riutilizzata la stessa sessione SMTP, e questo è il motivo per cui la sessione non viene chiusa automaticamente. Il parametro IdleSessionTimeout consente di definire il tempo durante il quale una sessione SMTP può rimanere attiva in attesa di un altro messaggio. Trascorsa la durata, la sessione viene automaticamente chiusa.<br /> </td> 
    <td> Lungo<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 

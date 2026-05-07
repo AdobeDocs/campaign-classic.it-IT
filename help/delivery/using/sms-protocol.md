@@ -7,7 +7,7 @@ role: Developer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '8457'
+source-wordcount: '8524'
 ht-degree: 1%
 
 ---
@@ -842,8 +842,8 @@ L’SMS deve essere contrassegnato come ricevuto nel registro di consegna. Il re
   `SR yourProvider stat=DELIVRD err=000|#MESSAGE`
 Verifica di aver modificato il nome del provider di consegna. Il registro di consegna non deve mai contenere **SR Generic** negli ambienti di produzione.
 
-* **Verifica che MO siano elaborati**
-Se hai bisogno di elaborare il MO (risposte automatiche, memorizzazione del MO nel database, ecc.) prova a fare alcuni test. Invia alcuni SMS per tutte le parole chiave di risposta automatica e controlla se la risposta è abbastanza veloce, non più di qualche secondo.
+* **Verifica che MO sia elaborato**
+Se devi elaborare messaggi MO (risposte automatiche, memorizzazione di messaggi MO nel database, ecc.) prova a fare alcuni test. Invia alcuni SMS per tutte le parole chiave di risposta automatica e controlla se la risposta è abbastanza veloce, non più di qualche secondo.
 Archivia il registro che Adobe Campaign risponde con un `DELIVER_SM_RESP` (command_status=0) riuscito.
 
 ### Controllare le PDU {#check-pdus}

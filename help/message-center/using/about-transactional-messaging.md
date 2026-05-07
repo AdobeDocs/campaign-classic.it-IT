@@ -6,8 +6,8 @@ feature: Transactional Messaging, Message Center
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 4%
+source-wordcount: '660'
+ht-degree: 7%
 
 ---
 
@@ -24,11 +24,11 @@ Un messaggio transazionale è una comunicazione singola e univoca, inviata in te
 
 Le funzionalità di messaggistica transazionale sono progettate per supportare la scalabilità e fornire un servizio 24 ore su 24, 7 giorni su 7.
 
-* **Quando scade?** Poiché questo messaggio contiene informazioni importanti, l&#39;utente si aspetta che vengano inviate in tempo reale. Di conseguenza, il ritardo tra l’attivazione dell’evento e l’arrivo del messaggio deve essere molto breve.
+* **Quando scade?** Poiché questo messaggio contiene informazioni importanti, l’utente si aspetta che vengano inviate in tempo reale. Di conseguenza, il ritardo tra l’attivazione dell’evento e l’arrivo del messaggio deve essere molto breve.
 
 * **Perché è importante?** In genere, un messaggio sulle transazioni ha tassi di apertura elevati. Dovrebbe quindi essere concepita con attenzione, in quanto può avere un forte impatto sul comportamento dei clienti in quanto definisce la relazione con essi.
 
-* **Ad esempio?** Potrebbe trattarsi di un messaggio di benvenuto dopo la creazione di un account, di una conferma della spedizione di un ordine, di una fattura, di un messaggio di conferma di una modifica della password, di una notifica dopo che un cliente ha visitato il tuo sito Web, di una comunicazione di indisponibilità del prodotto, di un estratto conto, ecc.
+* **Ad esempio?** Potrebbe essere un messaggio di benvenuto dopo la creazione di un account, una conferma della spedizione di un ordine, una fattura, un messaggio di conferma di una modifica della password, una notifica dopo che un cliente ha navigato sul tuo sito web, una comunicazione di indisponibilità del prodotto, un estratto conto, ecc.
 
 >[!IMPORTANT]
 >

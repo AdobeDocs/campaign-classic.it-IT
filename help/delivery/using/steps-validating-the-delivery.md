@@ -8,7 +8,7 @@ hide: true
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1653'
+source-wordcount: '1658'
 ht-degree: 9%
 
 ---
@@ -23,7 +23,7 @@ Per eseguire questa operazione:
 
    Le regole applicate durante l&#39;analisi sono presentate in [questa sezione](#validation-process-with-typologies). Le modalità di convalida disponibili sono descritte in dettaglio nella sezione [Modificare la modalità di approvazione](#changing-the-approval-mode).
 
-1. **Invia bozze**: questo passaggio consente di verificare i contenuti, l’URL, la personalizzazione ecc. Ulteriori informazioni in [Inviare una bozza](steps-validating-the-delivery.md#sending-a-proof) e [Definire una destinazione specifica per la bozza](steps-defining-the-target-population.md#defining-a-specific-proof-target).
+1. **Invia bozze**: questo passaggio ti consente di controllare contenuto, URL, personalizzazione e così via. Per ulteriori informazioni, consulta [Inviare una bozza](steps-validating-the-delivery.md#sending-a-proof) e [Definire una destinazione specifica per la bozza](steps-defining-the-target-population.md#defining-a-specific-proof-target).
 
 >[!IMPORTANT]
 >

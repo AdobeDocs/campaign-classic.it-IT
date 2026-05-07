@@ -9,7 +9,7 @@ topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2829'
+source-wordcount: '2862'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ Alla data e all&#39;ora definite nell&#39;utilità di pianificazione del flusso 
 
 ### Elenchi per eliminare la pulizia {#lists-to-delete-cleanup}
 
-La prima attività eseguita dal flusso di lavoro **[!UICONTROL Database cleanup]** elimina tutti i gruppi con **deleteStatus!= attributo 0** da **NmsGroup**. Vengono eliminati anche i record collegati a questi gruppi e presenti in altre tabelle.
+La prima attività eseguita dal flusso di lavoro **[!UICONTROL Database cleanup]** elimina tutti i gruppi con l&#39;attributo **deleteStatus != 0** dal **NmsGroup**. Vengono eliminati anche i record collegati a questi gruppi e presenti in altre tabelle.
 
 1. Gli elenchi da eliminare vengono recuperati utilizzando la seguente query SQL:
 

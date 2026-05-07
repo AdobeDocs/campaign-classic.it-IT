@@ -7,7 +7,7 @@ hide: true
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1630'
+source-wordcount: '1647'
 ht-degree: 0%
 
 ---
@@ -114,7 +114,7 @@ Per aggiungere una raccolta di informazioni collegate a una popolazione target:
      >Se la condizione iniziale non viene rispettata, il risultato potrebbe essere difettoso (linee mancanti o sovrapposte).
 
    * Se si sceglie di recuperare più righe (**[!UICONTROL Limit the line count]**), è possibile specificare il numero di righe da raccogliere.
-   * Se le colonne raccolte contengono aggregati, ad esempio il numero di errori dichiarati, la spesa media in un sito e così via. è possibile utilizzare il valore **[!UICONTROL Aggregates]**.
+   * Se le colonne raccolte contengono aggregati, ad esempio il numero di errori dichiarati, la spesa media in un sito e così via, è possibile utilizzare il valore **[!UICONTROL Aggregates]**.
 
    ![](assets/query_add_collection_param.png)
 

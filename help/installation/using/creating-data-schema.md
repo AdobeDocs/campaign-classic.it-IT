@@ -6,8 +6,8 @@ feature: Installation, Instance Settings, Federated Data Access
 exl-id: 8702499b-1700-4d1f-a0e0-f7a9dfb4b88f
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 0%
+source-wordcount: '189'
+ht-degree: 1%
 
 ---
 
@@ -27,7 +27,7 @@ Per creare uno schema su un database esterno:
 
 1. Dal campo **[!UICONTROL Table name]**, scegliere la tabella contenente i dati da raccogliere.
 
-   Con Snowflake, è possibile selezionare qui le viste se all&#39;utente del database sono stati concessi i privilegi corretti. Tieni presente che quando utilizzi le viste, Adobe Campaign non sarà in grado di generare automaticamente lo schema XML, dovrai crearlo tu stesso. Per ulteriori informazioni sulle visualizzazioni, consulta la [documentazione del Snowflake](https://docs.snowflake.com/en/user-guide/views-introduction.html).
+   Con Snowflake, è possibile selezionare qui le viste se all&#39;utente del database sono stati concessi i privilegi corretti. Tieni presente che quando utilizzi le viste, Adobe Campaign non sarà in grado di generare automaticamente lo schema XML, dovrai crearlo tu stesso. Per ulteriori informazioni sulle visualizzazioni, consulta [Documentazione di Snowflake](https://docs.snowflake.com/en/user-guide/views-introduction.html).
 
    ![](assets/wf_new_schema_select_table_fda.png)
 
@@ -37,7 +37,7 @@ Per creare uno schema su un database esterno:
 
    >[!CAUTION]
    >
-   >Con il Snowflake, una chiave primaria è obbligatoria.
+   >Con Snowflake, una chiave primaria è obbligatoria.
 
    ![](assets/wf_new_schema_generate_fda.png)
 

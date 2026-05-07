@@ -8,8 +8,8 @@ role: User
 exl-id: aa21fa33-aef9-484a-b454-0cd5a6868a98
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 5%
+source-wordcount: '168'
+ht-degree: 23%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 5%
 
 È necessario creare il flusso di lavoro nella scheda **[!UICONTROL Targeting and Workflows]** di una campagna. È costituita da un&#39;attività **[!UICONTROL Query]**, un&#39;attività **[!UICONTROL Split]** collegata a due attività **[!UICONTROL Email delivery]**, un&#39;attività **[!UICONTROL Wait]**, un&#39;attività **[!UICONTROL JavaScript code]** e un&#39;attività **[!UICONTROL Delivery]**.
 
-1. Se non lo hai già fatto, crea una campagna. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=it){target=_blank}.
+1. Se non lo hai già fatto, crea una campagna. Per ulteriori informazioni, fai riferimento alla [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=it){target=_blank}.
 
    ![](assets/use_case_abtesting_targetwkfl_001.png)
 
-1. Passa alla scheda **[!UICONTROL Targeting and Workflows]**.
+1. Vai alla scheda **[!UICONTROL Targeting and Workflows]**.
 
    ![](assets/use_case_abtesting_targetwkfl_002.png)
 

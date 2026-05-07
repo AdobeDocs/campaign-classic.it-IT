@@ -8,7 +8,7 @@ role: User
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
 source-git-commit: b2b188ee3f202c247ceac1f59a49b7ad1771d537
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '851'
 ht-degree: 6%
 
 ---
@@ -59,7 +59,7 @@ Durante la configurazione, la progettazione e il test del messaggio, assicurati 
 * [Best practice per la consegna](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=it){target="_blank"}.
 * [Controllare il contenuto dell’e-mail](control-message-content.md)
 * [Rendering della casella in entrata](inbox-rendering.md)
-* [Invio di una prova](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=it){target="_blank"}
+* [Invio di una bozza](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=it){target="_blank"}
 
 ### Verificare il consenso tramite il doppio consenso {#double-opt-in}
 

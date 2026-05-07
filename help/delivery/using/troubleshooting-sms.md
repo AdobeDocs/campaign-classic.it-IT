@@ -7,7 +7,7 @@ role: User
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
 source-git-commit: f660dcbb111e73f12737d96ebf9be2aeccbca8ee
 workflow-type: tm+mt
-source-wordcount: '3044'
+source-wordcount: '3072'
 ht-degree: 0%
 
 ---
@@ -41,9 +41,9 @@ Una volta verificato ogni singolo account, esistono due possibili scenari:
    * Stai utilizzando combinazioni di login/password diverse tra tutti i tuoi account.
 Contattare il provider per diagnosticare potenziali conflitti.
 
-   * Alcuni account esterni condividono la stessa combinazione login/password.
-Il provider non ha modo di dire da quale account esterno proviene il `BIND PDU` mittente, quindi tratta tutte le connessioni da più account come una sola. Potrebbero aver instradato MO e SR in modo casuale sui due account, causando problemi.
-Se il provider supporta più codici brevi per la stessa combinazione login/password, dovrai chiedere loro dove inserire quel `BIND PDU`codice breve in . Si noti che questa informazione deve essere inserita all&#39;interno `BIND PDU`di , e non in `SUBMIT_SM`, poiché è l&#39;unico `BIND PDU` posto che consentirà di instradare correttamente i MO.
+   * Alcuni degli account esterni condividono la stessa combinazione di login/password.
+Il provider non è in grado di individuare l&#39;account esterno da cui proviene `BIND PDU`, pertanto tutte le connessioni da più account vengono trattate come un unico account. Potrebbero aver indirizzato MO e SR in modo casuale sui due account, causando problemi.
+Se il provider supporta più codici brevi per la stessa combinazione di login/password, sarà necessario chiedere loro dove inserire il codice breve in `BIND PDU`. Tieni presente che questa informazione deve essere inserita in `BIND PDU` e non in `SUBMIT_SM`, poiché `BIND PDU` è l&#39;unico luogo che consentirà il routing corretto dei MO.
 Vedere la sezione [Informazioni in ogni tipo di PDU](sms-protocol.md#information-pdu) per sapere quale campo è disponibile in `BIND PDU`. In genere si aggiunge il codice breve in `address_range`, ma ciò richiede un supporto speciale da parte del provider. Contattali per sapere in che modo si aspettano di instradare più codici brevi in modo indipendente.
 Adobe Campaign supporta la gestione di più codici brevi sullo stesso account esterno.
 
@@ -64,11 +64,11 @@ Adobe Campaign supporta la gestione di più codici brevi sullo stesso account es
   ```
 
 * Verificare (nella directory /postupgrade) se il sistema è stato aggiornato e quando
-* Controlla se i pacchetti che interessano gli SMS potrebbero essere stati aggiornati di recente (/var/log/dpkg.log).
+* Verifica se eventuali pacchetti che influiscono sugli SMS potrebbero essere stati aggiornati di recente (/var/log/dpkg.log).
 
-## Problema con il mid-sourcing (ospitato){#issue-mid-sourcing}
+## Problema con il mid-sourcing (in hosting){#issue-mid-sourcing}
 
-* Se la problema si verifica in un ambiente di mid-sourcing, assicurarsi che i log di recapito e generali siano creati e aggiornati correttamente nel server mid-sourcing. In caso contrario, non si tratta di un problema di SMS.
+* Se il problema si verifica in un ambiente di mid-sourcing, accertati che i registri di consegna e generali siano creati e aggiornati correttamente sul server di mid-sourcing. In caso contrario, non si tratta di un problema SMS.
 
 * Se tutto funziona sul server mid e gli SMS vengono inviati correttamente, ma l’istanza di marketing non viene aggiornata correttamente, si potrebbe verificare un problema di sincronizzazione intermedia.
 
@@ -142,25 +142,25 @@ I duplicati sono spesso causati da nuovi tentativi. È normale disporre di dupli
 
 Riduzione della quantità di duplicati in caso di un nuovo tentativo:
 
-* Abbassare la finestra di invio. La finestra di invio deve essere sufficientemente grande da coprire la latenza `SUBMIT_SM_RESP`. Il suo valore rappresenta il numero massimo di messaggi che possono essere duplicati se si verifica un errore mentre la finestra è piena.
+* Abbassare la finestra di invio. La finestra di invio deve essere sufficientemente grande da coprire la latenza `SUBMIT_SM_RESP`. Il valore rappresenta il numero massimo di messaggi che è possibile duplicare se si verifica un errore mentre la finestra è piena.
 
-## Problema durante l&#39;elaborazione di SR (ricevute di consegna) {#issue-process-SR}
+## Problema durante l’elaborazione di SR (conferme di consegna) {#issue-process-SR}
 
-* Avrai bisogno di tracce SMPP abilitate per eseguire qualsiasi tipo di risoluzione dei problemi SR.
+* Per eseguire qualsiasi tipo di risoluzione dei problemi SR, è necessario abilitare le tracce SMPP.
 
 * Verificare che `DELIVER_SM PDU` provenga dal provider e che sia ben formato.
 
 * Controlla che Adobe Campaign risponda con `DELIVER_SM_RESP PDU` riuscito in modo tempestivo. In Adobe Campaign Classic, questo garantisce che l&#39;SR sia stato inserito nella tabella `providerMsgId` per l&#39;elaborazione differita dal processo SMS.
 
-Se il `DELIVER_SM PDU` riconoscimento non viene riconosciuto correttamente, è necessario verificare quanto segue:
+Se `DELIVER_SM PDU` non è riconosciuto correttamente, verificare quanto segue:
 
-* Controlla le regex relative all&#39;estrazione degli ID e all&#39;elaborazione degli **errori nel account** esterno. Potrebbe essere necessario convalidarli rispetto al contenuto di `DELIVER_SM PDU`.
+* Controlla il codice regex relativo all&#39;estrazione degli ID e all&#39;elaborazione degli errori in **Account esterno**. Potrebbe essere necessario convalidarli in base al contenuto di `DELIVER_SM PDU`.
 
-* Verifica che gli `broadLogMsg` errori siano correttamente forniti nella tabella.
+* Verificare che il provisioning degli errori sia stato eseguito correttamente nella tabella `broadLogMsg`.
 
-Se il connettore `DELIVER_SM PDU` SMPP esteso Adobe Campaign Classic è stato riconosciuto ma broadLog non è aggiornato correttamente, controllare il processo di riconciliazione degli ID descritto nella sezione [Voci MT, SR e broadlog corrispondenti](sms-protocol.md#matching-mt).
+Se `DELIVER_SM PDU` è stato riconosciuto dal connettore SMPP esteso di Adobe Campaign Classic ma broadLog non è aggiornato correttamente, controllare il processo di riconciliazione degli ID descritto nella sezione [Voci MT, SR e broadlog corrispondenti](sms-protocol.md#matching-mt).
 
-Se hai risolto il problema tranne alcuni non valido SR sono ancora nei buffer del provider, puoi ignorarli utilizzando l&#39;opzione &quot;Conteggio di riconoscimento ID non valido&quot;. Questo deve essere usato con cautela e reimpostato su 0 il più rapidamente possibile dopo che i buffer sono puliti.
+Se hai corretto tutto ma alcuni SR non validi si trovano ancora nei buffer del provider, puoi saltarli utilizzando l’opzione &quot;Conteggio conferme ID non valido&quot;. Questo deve essere usato con cautela e azzerato a 0 il più rapidamente possibile dopo la pulizia dei buffer.
 
 ## Problema durante l’elaborazione di MO (e blacklist/risposta automatica){#issue-process-MO}
 
@@ -200,7 +200,7 @@ Con esadecimale, puoi distinguere la differenza tra caratteri simili. Una L minu
 
 Per convertire Unicode in esadecimale, è possibile utilizzare strumenti online quali il sito Web [Unicode code converter](https://r12a.github.io/app-conversion/). Digita il testo, assicurati che non siano presenti dati PII come i numeri di telefono e fai clic su **Converti**. I valori esadecimali sono visualizzati nella parte inferiore (zona UTF-32).
 
-Quando apri ticket sui problemi di codifica, sia con il provider che con [l&#39;Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), includi sempre una versione esadecimale di ciò che digiti e di ciò che visualizzi.
+Quando apri ticket sui problemi di codifica, sia con il provider che con [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), includi sempre una versione esadecimale di ciò che digiti e di ciò che visualizzi.
 
 **Passaggio 3: sapere cosa inviare**
 
@@ -236,9 +236,9 @@ Ogni volta che chiedi assistenza su un problema relativo agli SMS, che si tratti
 
 * Includi eventuali modifiche apportate alla piattaforma. Inoltre, includi eventuali modifiche apportate dal provider al proprio lato.
 
-### Acquisizione della rete {#network-capture}
+### Acquisizione di rete {#network-capture}
 
-Un&#39;acquisizione di rete non è sempre necessaria, di solito i messaggi SMPP dettagliati sono sufficienti. Di seguito sono riportate alcune linee guida che consentono di determinare se è necessaria un&#39;acquisizione di rete:
+L’acquisizione di rete non è sempre necessaria, in genere è sufficiente disporre di messaggi SMPP dettagliati. Di seguito sono riportate alcune linee guida utili per determinare se è necessario acquisire una rete:
 
 * Problemi di connessione, ma i messaggi dettagliati non mostrano `BIND_RESP PDU`.
 

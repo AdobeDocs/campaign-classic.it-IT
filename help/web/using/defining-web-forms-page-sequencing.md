@@ -7,7 +7,7 @@ feature: Web Forms
 exl-id: c5b5c398-c13b-4ebe-88b2-8ff84741422e
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '714'
 ht-degree: 0%
 
 ---
@@ -122,5 +122,5 @@ Per personalizzare la pagina, fare doppio clic su **[!UICONTROL End]** e immette
 
 ![](assets/s_ncs_admin_survey_end_page_edit.png)
 
-* Puoi copiare e incollare il contenuto HTML esistente. A tale scopo, fare clic su **[!UICONTROL Display source code]** e inserire il codice HTML.
+* Puoi copiare e incollare contenuti HTML esistenti. A tale scopo, fare clic su **[!UICONTROL Display source code]** e inserire il codice HTML.
 * Puoi utilizzare un URL esterno; a questo scopo, seleziona l’opzione corrispondente e immetti l’URL della pagina da visualizzare.

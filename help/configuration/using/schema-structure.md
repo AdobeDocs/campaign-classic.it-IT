@@ -11,7 +11,7 @@ topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1519'
 ht-degree: 1%
 
 ---
@@ -310,7 +310,7 @@ Il valore deve essere un&#39;espressione compatibile con il linguaggio XPath. Pe
   >
   >Nella console del client Adobe Campaign, passare alla cartella **[!UICONTROL Administration > Counters]** di Esplora risorse per gestire i contatori.
 
-Per collegare un valore predefinito a un campo, è possibile utilizzare `<default>` o `<sqldefault>`   campo.
+Per collegare un valore predefinito a un campo, è possibile utilizzare il campo `<default>` o `<sqldefault>`.
 
 `<default>` : consente di precompilare il campo con un valore predefinito durante la creazione di entità. Il valore non sarà un valore SQL predefinito.
 

@@ -11,8 +11,8 @@ topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
 source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 4%
+source-wordcount: '740'
+ht-degree: 5%
 
 ---
 
@@ -31,7 +31,7 @@ L&#39;elenco completo delle soluzioni e dei servizi delle app Adobe che possono 
 
 ## Collegamento delle soluzioni {#working-with-experience-cloud-solutions}
 
-È possibile collegare più soluzioni a Adobe Experience Cloud. L&#39;**organizzazione** è l&#39;entità cliente che consente all&#39;amministratore di configurare gruppi e utenti e di controllare il Single Sign-On (SSO) in Adobe Experience Cloud. L’organizzazione agisce come un’azienda di accesso per tutti i prodotti e le soluzioni Experience Cloud. Nella maggior parte dei casi l’organizzazione corrisponde al nome aziendale, Tuttavia, un’azienda può avere molte organizzazioni.
+È possibile collegare più soluzioni a Adobe Experience Cloud. L&#39;**organizzazione** è l&#39;entità cliente che consente all&#39;amministratore di configurare gruppi e utenti e di controllare il Single Sign-On (SSO) in Adobe Experience Cloud. L’organizzazione agisce come un’azienda di accesso per tutti i prodotti e le soluzioni Experience Cloud. Nella maggior parte dei casi l’organizzazione corrisponde al nome aziendale, ma una stessa azienda può avere molte organizzazioni.
 
 La gestione dell&#39;organizzazione e il collegamento di account Adobe Experience Cloud sono descritti in dettaglio nel [portale della Guida di Adobe Experience Cloud](https://experienceleague.adobe.com/it/docs/core-services/interface/administration/organizations){_blank}.
 
@@ -63,7 +63,7 @@ La tabella seguente fornisce accesso alla documentazione disponibile sull’inte
   </tr> 
   <tr> 
    <td> <strong>Sistema Adobe Identity Management (IMS) - Adobe ID</strong><br /> </td> 
-   <td> Configura Adobe IMS per connettersi ad Adobe Campaign con lo stesso Adobe ID utilizzato per le altre soluzioni Adobe Experience Cloud.<br /> Per utilizzare alcune funzionalità collegate alle integrazioni Adobe Experience Cloud, è necessario utilizzare un Adobe ID per l'accesso.<br /> <p><a href="../../integrations/using/about-adobe-id.md">Ulteriori informazioni</a> sull'implementazione di Adobe ID con Adobe Campaign.</p><br /> </td> 
+   <td> Configurare Adobe IMS per la connessione ad Adobe Campaign con lo stesso Adobe ID delle altre soluzioni Adobe Experience Cloud.<br /> Per utilizzare alcune funzionalità collegate alle integrazioni Adobe Experience Cloud, è necessario utilizzare un Adobe ID per l'accesso.<br /> <p><a href="../../integrations/using/about-adobe-id.md">Ulteriori informazioni</a> sull'implementazione di Adobe ID con Adobe Campaign.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Experience Manager</strong><br /> </td> 

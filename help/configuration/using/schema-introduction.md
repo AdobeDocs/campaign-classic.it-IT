@@ -14,7 +14,7 @@ ht-degree: 21%
 
 # Riferimento schema {#schema-reference}
 
-Quando si modifica uno schema, è disponibile un sistema di approvazione basato sullo schema di origine (xtk:srcSchema). Alcuni errori possono essere individuati anche quando si aggiorna il database utilizzando l&#39;assistente &quot;Database structure update...&quot;.
+Quando si modifica uno schema, è disponibile un sistema di approvazione basato sullo schema di origine (xtk:srcSchema). Alcuni errori possono essere individuati anche quando si aggiorna il database utilizzando &quot;Aggiornamento della struttura del database...&quot; assistente.
 
 Per impostazione predefinita, negli schemi di Adobe Campaign, tutti gli attributi del tipo booleano sono &quot;false&quot;. Per attivarli, devi specificare l’attributo nello schema e impostarne il valore su &quot;true&quot;.
 

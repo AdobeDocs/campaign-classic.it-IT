@@ -6,8 +6,8 @@ feature: Installation, Architecture
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
 source-git-commit: 8b38d825aa9b0595226a444e0e463362468d51b3
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 26%
+source-wordcount: '323'
+ht-degree: 27%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 26%
 
 
 
- Adobe Campaign Classic include una serie di moduli e opzioni. La disponibilità di questi moduli e il loro utilizzo possono dipendere dal tipo di distribuzione dell’installazione. Questo articolo condivide alcuni dettagli sulle principali differenze per alcune funzioni tra le distribuzioni completamente in hosting (Managed Services) e quelle on-premise.
+Adobe Campaign Classic include una serie di moduli e opzioni. La disponibilità di questi moduli e il loro utilizzo possono dipendere dal tipo di distribuzione dell’installazione. Questo articolo condivide alcuni dettagli sulle principali differenze per alcune funzioni tra le distribuzioni completamente in hosting (Managed Services) e quelle on-premise.
 
 Questa pagina mostra le principali differenze tra le distribuzioni in hosting (Managed Services) e quelle on-premise. Le specificità delle distribuzioni ibride dipendono dagli elementi ospitati da Adobe e ospitati nelle tue sedi.
 

@@ -7,7 +7,7 @@ feature: Templates
 exl-id: e43dd68e-2e95-4367-9029-4622fbcb1759
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '438'
 ht-degree: 2%
 
 ---
@@ -72,7 +72,7 @@ Applica i seguenti passaggi:
    >
    >Puoi autorizzare la generazione di contenuti non approvati. A questo scopo, modifica l’opzione pertinente nel modello di pubblicazione. Per ulteriori informazioni, consulta [Creazione e configurazione del modello](publication-templates.md#creating-and-configuring-the-template).
 
-   Il contenuto di HTML e testo viene generato per impostazione predefinita nella cartella **publishing** dell&#39;istanza di Adobe Campaign. È possibile modificare la cartella della pubblicazione tramite l&#39;opzione **NcmPublishingDir**.
+   Il contenuto di HTML e Text viene generato per impostazione predefinita nella cartella **publishing** dell&#39;istanza di Adobe Campaign. È possibile modificare la cartella della pubblicazione tramite l&#39;opzione **NcmPublishingDir**.
 
 ## Distribuzione di un’istanza di contenuto {#delivering-a-content-instance}
 
@@ -84,4 +84,4 @@ Per creare la consegna automaticamente in base al contenuto selezionato, fare cl
 
 ![](assets/s_ncs_content_folder_create_the_delivery.png)
 
-Il testo e i contenuti di HTML vengono immessi automaticamente.
+Il testo e il contenuto del HTML vengono immessi automaticamente.

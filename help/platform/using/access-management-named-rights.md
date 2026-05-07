@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
 source-git-commit: 02ecc0e6bb3bd361f512baeefc9e0f2271063387
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 3%
+source-wordcount: '652'
+ht-degree: 4%
 
 ---
 
@@ -25,7 +25,7 @@ Tali diritti sono i seguenti:
 
   >[!IMPORTANT]
   >
-  >**Dopo la migrazione a IMS:** Dopo la migrazione ad Adobe Identity Management System (IMS), qualsiasi profilo di prodotto o diritto denominato contenente la parola &quot;admin&quot; nel nome (ad esempio &quot;Administrators&quot;, &quot;admin&quot;, &quot;admins&quot;, ecc.) concederà automaticamente l&#39;accesso a Campaign Pannelli di controllo Campaign. È consigliabile evitare l&#39;utilizzo di &quot;admin&quot; nei nomi con diritti denominati o nei nomi dei ruoli, a meno che non si intenda consentire a tali utenti di accedere al Pannello di controllo Campaign. Ulteriori informazioni su [Migrazione IMS](../../technotes/using/migrate-users-to-ims.md) e [gestione dell&#39;accesso al Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it){target="_blank"}.
+  >**Dopo la migrazione a IMS:** Dopo la migrazione ad Adobe Identity Management System (IMS), qualsiasi profilo di prodotto o diritto denominato contenente la parola &quot;admin&quot; nel nome (ad esempio &quot;Administrators&quot;, &quot;admin&quot;, &quot;admins&quot;, ecc.) concederà automaticamente l’accesso a Campaign Pannelli di controllo Campaign. È consigliabile evitare l&#39;utilizzo di &quot;admin&quot; nei nomi con diritti denominati o nei nomi dei ruoli, a meno che non si intenda consentire a tali utenti di accedere al Pannello di controllo Campaign. Ulteriori informazioni su [Migrazione IMS](../../technotes/using/migrate-users-to-ims.md) e [gestione dell&#39;accesso al Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it){target="_blank"}.
 
 * **[!UICONTROL APPROVAL ADMINISTRATION]**: è possibile impostare più passaggi di approvazione all&#39;interno dei flussi di lavoro e delle consegne per assicurarsi che lo stato corrente sia stato approvato da un operatore o un gruppo assegnato. Gli utenti con il diritto **[!UICONTROL APPROVAL ADMINISTRATION]** possono impostare i passaggi di approvazione e assegnare un operatore o un gruppo di operatori che deve approvare tali passaggi.
 

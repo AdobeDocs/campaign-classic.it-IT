@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '1569'
-ht-degree: 1%
+source-wordcount: '1630'
+ht-degree: 4%
 
 ---
 
@@ -29,7 +29,7 @@ Per le distribuzioni di **hosted**, le impostazioni lato server possono essere c
 
 Per ulteriori informazioni, consulta le sezioni seguenti:
 
-* [Documentazione del Pannello di controllo](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it)
+* [Documentazione del Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it)
 * [Modelli di hosting](../../installation/using/hosting-models.md)
 * [Matrice di funzionalità Campaign Classic on-premise e in hosting](../../installation/using/capability-matrix.md)
 

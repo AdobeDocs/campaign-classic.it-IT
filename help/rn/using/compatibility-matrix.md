@@ -8,8 +8,8 @@ level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 66387e2e008051901fe3385f571d7fe798829100
 workflow-type: tm+mt
-source-wordcount: '870'
-ht-degree: 99%
+source-wordcount: '912'
+ht-degree: 95%
 
 ---
 
@@ -42,8 +42,8 @@ In qualità di cliente on-premise/ibrido, devi installare Adobe Campaign in uno 
 <p>11</p>
 </td>
 <td>
-<p>7.4.3.</p>
-<p>7.4.3.</p>
+<p>7.4.3</p>
+<p>7.4.3</p>
 <p>v7.3</p>
 </td>
 </tr>
@@ -278,7 +278,7 @@ Dagli ambienti **Managed Services** (in hosting), **Ibrido** e **On-Premise** è
 <td><strong>Versione del database</strong></td>
 <td><strong>Versione minima di Campaign</strong></td>
 <tr>
-<td> Amazon Redshift</td>
+<td>Amazon Redshift</td>
 <td><p> </p>
 <td>v7.0 19.1.4</td>
 </td>
@@ -453,7 +453,7 @@ Scarica Microsoft Edge WebView2 dal [sito web per sviluppatori Microsoft](https:
 
 Puoi anche utilizzare Campaign per [inviare notifiche push](../../delivery/using/about-mobile-app-channel.md) tramite Adobe Experience Platform Mobile SDK configurando l’estensione Adobe Campaign nell’interfaccia utente di raccolta dati.
 
-L’SDK di Campaign è [obsoleto](deprecated-features.md) a partire da Campaign v7.4. Per garantire una transizione fluida delle implementazioni esistenti verso AEP Mobile SDK, puoi continuare a utilizzarlo sui sistemi operativi elencati di seguito<!--, using the associated [mobile SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)-->.
+Il SDK della campagna è [obsoleto](deprecated-features.md) a partire da Campaign v7.4. Per garantire una transizione senza problemi per l&#39;implementazione esistente ad AEP Mobile SDK, puoi continuare a utilizzarlo sui sistemi operativi elencati di seguito<!--, using the associated [mobile SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)-->.
 
 
 <table>

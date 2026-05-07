@@ -7,7 +7,7 @@ feature: Web Forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
 source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '1549'
+source-wordcount: '1592'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ La scheda **[!UICONTROL Translations]** consente di immettere le traduzioni per 
 
 La prima volta che apri questa scheda non conterrà alcun dato. Fare clic sul collegamento **[!UICONTROL Collect the strings to translate]** per aggiornare le stringhe nell&#39;applicazione Web.
 
-Adobe Campaign raccoglie etichette di campi e stringhe definiti nelle schede **[!UICONTROL Texts]** di tutti gli elementi statici: blocchi HTML, JavaScript, ecc. Gli elementi statici sono descritti in dettaglio in [Elementi statici in un modulo Web](static-elements-in-a-web-form.md).
+Adobe Campaign raccoglie etichette di campi e stringhe definiti nelle schede **[!UICONTROL Texts]** di tutti gli elementi statici: blocchi HTML, JavaScript, ecc. Gli elementi statici sono descritti in dettaglio in [Elementi statici in un modulo web](static-elements-in-a-web-form.md).
 
 ![](assets/s_ncs_admin_survey_trad_tab.png)
 
@@ -133,7 +133,7 @@ Per visualizzare solo le stringhe non tradotte, selezionare **[!UICONTROL To tra
 >
 >I nomi dei file di esportazione vengono generati automaticamente. Se esegui più volte la stessa esportazione, sostituirai i file esistenti con quelli nuovi. Se devi mantenere i file precedenti, modifica **[!UICONTROL Target folder]** , quindi fai di nuovo clic su **[!UICONTROL Start]** per eseguire l&#39;esportazione.
 
-Quando si esportano file in **formato CSV**, ogni lingua è collegata a uno stato e a uno stato di approvazione. **Approvare?La colonna** ti consente di approvare una traduzione. Questa colonna può contenere i valori **Yes** o **No**. Per quanto riguarda l&#39;editor integrato (fare riferimento a [Gestione delle traduzioni nell&#39;editor](#managing-translations-in-the-editor)), l&#39;approvazione delle traduzioni è facoltativa e non blocca il processo.
+Quando si esportano file in **formato CSV**, ogni lingua è collegata a uno stato e a uno stato di approvazione. **Approvare?** consente di approvare una traduzione. Questa colonna può contenere i valori **Yes** o **No**. Per quanto riguarda l&#39;editor integrato (fare riferimento a [Gestione delle traduzioni nell&#39;editor](#managing-translations-in-the-editor)), l&#39;approvazione delle traduzioni è facoltativa e non blocca il processo.
 
 ### Importazione di file {#importing-files}
 

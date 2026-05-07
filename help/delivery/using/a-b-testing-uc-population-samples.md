@@ -8,8 +8,8 @@ role: User
 exl-id: 1ca01cab-734a-4299-b112-04eec51222fb
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 4%
+source-wordcount: '185'
+ht-degree: 8%
 
 ---
 
@@ -43,7 +43,7 @@ Questa attività ti consente di creare diverse popolazioni: quella che riceve la
 
      ![](assets/use_case_abtesting_createrecipients_005.png)
 
-   * Selezionare l&#39;opzione **[!UICONTROL Limit the selected records]**.
+   * Seleziona l’opzione **[!UICONTROL Limit the selected records]**.
 
      ![](assets/use_case_abtesting_createrecipients_006.png)
 
@@ -67,7 +67,7 @@ Questa attività ti consente di creare diverse popolazioni: quella che riceve la
 
 1. Creazione della popolazione rimanente:
 
-   * Passa alla scheda **[!UICONTROL General]**.
+   * Vai alla scheda **[!UICONTROL General]**.
 
      ![](assets/use_case_abtesting_createrecipients_011.png)
 

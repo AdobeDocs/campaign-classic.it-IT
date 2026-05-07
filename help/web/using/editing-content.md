@@ -7,7 +7,7 @@ feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1250'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Per aggiungere una condizione di visibilità, selezionare un blocco e immetterla
 
 ![](assets/dce_popup_visibilitycondition.png)
 
-Queste condizioni adottano la sintassi dell&#39;espressione XTK (ad esempio **ctx.recipient.@email!= &quot;** o **ctx.recipient.@status==&quot;0&quot;**). Per impostazione predefinita, tutti i campi sono visibili.
+Queste condizioni adottano la sintassi dell&#39;espressione XTK (ad esempio **ctx.recipient.@email != &quot;&quot;** o **ctx.recipient.@status==&quot;0&quot;**). Per impostazione predefinita, tutti i campi sono visibili.
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ Per eseguire questa operazione:
 
 ### Modifica dei campi modulo {#modifying-form-fields}
 
-Campi modulo come pulsanti di scelta, aree di input, elenchi a discesa e così via. possono essere modificati dalle rispettive barre degli strumenti.
+I campi modulo, ad esempio i pulsanti di scelta, le zone di input, gli elenchi a discesa e così via, possono essere modificati dalle barre degli strumenti.
 
 Ciò significa che è possibile:
 

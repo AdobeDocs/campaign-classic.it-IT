@@ -7,7 +7,7 @@ feature: Reporting, Monitoring
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1470'
+source-wordcount: '1496'
 ht-degree: 10%
 
 ---
@@ -123,7 +123,7 @@ Questo rapporto mostra l’elenco delle pagine visitate dopo una consegna.
 
 ![](assets/s_ncs_user_url_report.png)
 
-Puoi configurare il contenuto di questo rapporto selezionando: il grafico di punteggio da visualizzare, il filtro temporale (dal lancio dell’azione, nelle prime 6 ore successive al lancio, ecc.) e la modalità di visualizzazione dei dati (per etichetta, per URL, per categoria. Fai clic su **[!UICONTROL Refresh]** per confermare la selezione.
+Puoi configurare il contenuto di questo rapporto selezionando: il grafico a punteggio da visualizzare, il filtro temporale (dal lancio dell’azione, nelle prime 6 ore successive al lancio, ecc.) e la modalità di visualizzazione dei dati (per etichetta, URL, categoria). Fai clic su **[!UICONTROL Refresh]** per confermare la selezione.
 
 Nella sezione superiore del rapporto vengono visualizzate le seguenti percentuali:
 
@@ -158,7 +158,7 @@ Questo rapporto fornisce tutte le informazioni principali sulla consegna.
 Questa sezione presenta due indicatori:
 
 * **[!UICONTROL Initial population]**: numero totale di destinatari interessati dalla consegna.
-* inserire nell&#39;elenco Bloccati **[!UICONTROL Messages rejected by the rule]** : numero di indirizzi ignorati durante l&#39;analisi durante l&#39;applicazione delle regole di tipologia: indirizzo mancante, messo in quarantena, in fase di, ecc. Per ulteriori informazioni sulle regole di tipologia, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=it){target="_blank"}.
+* **[!UICONTROL Messages rejected by the rule]** : numero di indirizzi ignorati durante l&#39;analisi durante l&#39;applicazione delle regole di tipologia: indirizzo mancante, messo in quarantena, in fase di, ecc. Per ulteriori informazioni sulle regole di tipologia, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=it){target="_blank"}.
 
 **[!UICONTROL Causes of exclusion]**
 

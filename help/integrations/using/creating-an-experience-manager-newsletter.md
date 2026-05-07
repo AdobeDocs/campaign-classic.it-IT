@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Creazione di una newsletter di Experience Manager
-description: Creazione di una newsletter di Experience Manager
+title: Creazione di una newsletter Experience Manager
+description: Creazione di una newsletter Experience Manager
 feature: Experience Manager Integration
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 audience: integrations
@@ -9,12 +9,12 @@ content-type: reference
 exl-id: 9fa3ce08-3007-4c65-9841-bad339428b7c
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '288'
 ht-degree: 1%
 
 ---
 
-# Creazione di una newsletter di Experience Manager{#creating-an-experience-manager-newsletter}
+# Creazione di una newsletter Experience Manager{#creating-an-experience-manager-newsletter}
 
 
 
@@ -22,7 +22,7 @@ Questa integrazione può essere utilizzata, ad esempio, per creare una newslette
 
 **Da Adobe Experience Manager:**
 
-1. Nell&#39;istanza dell&#39;autore AEM, fai clic sul logo **Adobe Experience** in alto a sinistra della pagina e seleziona **[!UICONTROL Sites]**.
+1. Nell&#39;istanza Autore AEM, fai clic sul logo **Adobe Experience** in alto a sinistra della pagina e seleziona **[!UICONTROL Sites]**.
 
    ![](assets/aem_uc_1.png)
 

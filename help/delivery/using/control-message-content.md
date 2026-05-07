@@ -8,7 +8,7 @@ role: User
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '842'
 ht-degree: 5%
 
 ---
@@ -37,7 +37,7 @@ Alcuni ISP verificano la validità dell&#39;indirizzo del mittente (**[!UICONTRO
 
 È necessario assicurarsi che sia fornito un indirizzo corretto a livello di istanza (menu **[!UICONTROL Tools > Advanced > deployment wizard...]**) o negli scenari utilizzati più di frequente.
 
-Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=it){target="_blank"}.
+Per ulteriori informazioni, fai riferimento alla [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=it){target="_blank"}.
 
 ## Personalizzazione {#personalization}
 

@@ -165,7 +165,7 @@ Lo schema conterrà le seguenti informazioni:
 
 Il modulo di input consente di modificare un’istanza di contenuto tramite un’interfaccia di input dalla console client di Adobe Campaign.
 
-La descrizione di un modulo è un documento XML strutturato che osserva la grammatica dello schema del modulo &quot;xtk:form&quot;.
+La descrizione di un modulo è un documento XML strutturato che osserva la grammatica dello schema di modulo &quot;xtk:form&quot;.
 
 >[!NOTE]
 >

@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: 0533cd50-3aa4-4160-9152-e916e149e77f
 source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 0%
+source-wordcount: '1070'
+ht-degree: 1%
 
 ---
 
@@ -182,4 +182,4 @@ Questa sezione fornisce alcuni semplici casi d’uso per aiutarti a ottenere le 
 
    I gruppi non vengono mai creati al volo, né da Adobe Campaign né da LDAP. Devono essere create singolarmente, sia in Adobe Campaign che nella directory LDAP.
 
-   I nomi dei gruppi nella directory LDAP devono coincidere con i nomi dei gruppi di Adobe Campaign. La relativa maschera di associazione è definita nell’ultimo passaggio di configurazione della procedura guidata di distribuzione: Adobe Campaign_(.&#42;), ad esempio.
+   I nomi dei gruppi nella directory LDAP devono coincidere con i nomi dei gruppi di Adobe Campaign. La relativa maschera di associazione è definita nell&#39;ultima fase della configurazione della procedura guidata di distribuzione: Adobe Campaign_(.&#42;), ad esempio.

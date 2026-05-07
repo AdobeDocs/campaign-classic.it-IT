@@ -10,8 +10,8 @@ topic-tags: production-procedures
 exl-id: 1c032ef9-af11-4947-90c6-76cb9434ae85
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 2%
+source-wordcount: '530'
+ht-degree: 7%
 
 ---
 
@@ -65,7 +65,7 @@ I moduli disponibili sono descritti nella tabella seguente:
 | sms | Elaborazione delle notifiche SMS |
 | sql | Esecuzione script SQL |
 | inizio | Ulteriori avvii |
-| stat | Gestisce le statistiche di connessione MTA |
+| stat | Mantiene le statistiche di connessione MTA |
 | stop | Arresto parziale del sistema |
 | submitda | Invio di un’azione di consegna |
 | syslogd | Server di scrittura log and trace |

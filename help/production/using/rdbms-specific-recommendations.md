@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Raccomandazioni specifiche per RDBMS
-description: Raccomandazioni specifiche per RDBMS
+title: Consigli specifici per RDBMS
+description: Consigli specifici per RDBMS
 feature: Monitoring
 badge-v7-prem: label="Solo on-premise/ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
 audience: production
@@ -10,12 +10,12 @@ topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1235'
-ht-degree: 1%
+source-wordcount: '1267'
+ht-degree: 2%
 
 ---
 
-# Raccomandazioni specifiche per RDBMS{#rdbms-specific-recommendations}
+# Consigli specifici per RDBMS{#rdbms-specific-recommendations}
 
 
 
@@ -84,7 +84,7 @@ Per aiutarti a impostare i piani di manutenzione, questa sezione elenca alcuni c
 
 >[!IMPORTANT]
 >
->Adobe consiglia vivamente di non eseguire VACUUM FULL sulle impostazioni del database ospitato da Campaign Adobe. La manutenzione suggerita è una guida solo per le installazioni ON-PREMISE. Per gli schemi e le implementazioni di tabelle personalizzate, utilizza VACUUM FULL a proprio rischio in quanto VACUUM, senza monitoraggio, può bloccare esclusivamente le tabelle causando query bloccate e, in alcuni casi, bloccare l’intero database.
+>Adobe consiglia vivamente di non eseguire VACUUM FULL sulle impostazioni del database ospitato da Campaign Adobe.La manutenzione suggerita è una guida per le installazioni ON-PREMISE. Per gli schemi e le implementazioni di tabelle personalizzate, utilizza VACUUM FULL a proprio rischio in quanto VACUUM, senza monitoraggio, può bloccare esclusivamente le tabelle causando query bloccate e, in alcuni casi, bloccare l’intero database.
 
 In PostgreSQL è possibile utilizzare le seguenti parole chiave tipiche:
 

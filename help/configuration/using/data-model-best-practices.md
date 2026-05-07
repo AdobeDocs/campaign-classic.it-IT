@@ -6,7 +6,7 @@ feature: Data Model
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
 source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '4005'
+source-wordcount: '4078'
 ht-degree: 1%
 
 ---
@@ -223,7 +223,7 @@ Per impostazione predefinita, Adobe Campaign crea un collegamento utilizzando la
 
 Un indice verrà aggiunto agli attributi utilizzati in un collegamento.
 
-Il   i collegamenti creato da e modificato da ultimo sono presenti in molte tabelle. È possibile disattivare l’indice utilizzando l’attributo noDbIndex sul collegamento, se queste informazioni non sono utilizzate dall’azienda.
+I collegamenti creato da e modificato da ultimo sono presenti in molte tabelle. È possibile disattivare l’indice utilizzando l’attributo noDbIndex sul collegamento, se queste informazioni non sono utilizzate dall’azienda.
 
 ### Cardinalità {#cardinality}
 
@@ -264,7 +264,7 @@ Esistono alcune soluzioni per ridurre al minimo la necessità di record in Adobe
 
 Per garantire prestazioni migliori in qualsiasi momento, segui le best practice riportate di seguito.
 
-### Raccomandazioni generali {#general-recommendations}
+### Consigli generali {#general-recommendations}
 
 * Evita di utilizzare operazioni come &quot;CONTAINS&quot; nelle query. Se sai cosa è previsto e desideri filtrare, applica la stessa condizione con un &quot;UGUALE A&quot; o altri operatori di filtro specifici.
 * Evita l’unione di con campi non indicizzati durante la creazione di dati nei flussi di lavoro.

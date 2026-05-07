@@ -9,7 +9,7 @@ topic-tags: additional-configurations
 exl-id: 7250b885-0606-466a-bfc2-6dd3cc5a012d
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '301'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ In Adobe Campaign è stata introdotta una **zona buffer dati** nel modulo di int
 
 Riguarda solo l’interazione in entrata, sia tramite chiamata (con o senza dati di chiamata), sia tramite aggiornamento dello stato (updateStatus).
 
-Per evitare una coda durante la scrittura di proposte correlate a un destinatario, un nuovo processo genera una **zona buffer dati** che consente la scrittura asincrona di **proposte**. Questa zona buffer dati viene letta e svuotata periodicamente. Il periodo predefinito è nello spazio di circa un secondo. La scrittura delle proposte è quindi raggruppata.
+Per evitare una coda durante la scrittura di proposte correlate a un destinatario, un nuovo processo genera una **zona buffer dati** che consente la scrittura asincrona di **proposte**. Questa zona buffer dati viene letta e svuotata periodicamente. Il periodo predefinito è nello spazio di circa un secondo.La redazione delle proposte è pertanto raggruppata.
 
 >[!NOTE]
 >

@@ -10,8 +10,8 @@ topic-tags: installing-campaign-in-windows-
 exl-id: 57845eae-1f1a-42f4-b2ba-46d454677ae0
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 4%
+source-wordcount: '359'
+ht-degree: 9%
 
 ---
 
@@ -23,7 +23,7 @@ Per poter accedere all’istanza creata e configurata, gli utenti di Adobe Campa
 
 ## Rendi disponibile la console client
 
-Quando il computer utilizzato per avviare un server applicazioni di Adobe Campaign (**nlserver web**) riceve connessioni utente dalla console client, è possibile configurarlo per rendere disponibile il programma di installazione per il client avanzato di Adobe Campaign tramite un&#39;interfaccia HTML. Ogni volta che è disponibile una nuova versione della console client, gli utenti vengono invitati a scaricarla all’avvio della console client.
+Quando il computer utilizzato per avviare un server applicazioni Adobe Campaign (**nlserver web**) riceve connessioni utente dalla console client, è possibile configurarlo per rendere disponibile il programma di installazione per il client avanzato Adobe Campaign tramite un&#39;interfaccia HTML. Ogni volta che è disponibile una nuova versione della console client, gli utenti vengono invitati a scaricarla all’avvio della console client.
 
 A questo scopo, devi:
 
@@ -46,7 +46,7 @@ Scopri come installare la console [in questa sezione](../../installation/using/i
 
 ## Proporre agli utenti finali di aggiornare la console client
 
-Una volta che la console è disponibile nella cartella del server Campaign, gli utenti sono invitati a scaricare l’ultima versione della console client in una finestra di prompt dedicata. L&#39;Adobe consiglia di lasciare deselezionata l&#39;opzione **[!UICONTROL No longer ask this question]** per assicurarsi che tutti gli utenti ricevano un avviso quando è disponibile una nuova versione della console.
+Una volta che la console è disponibile nella cartella del server Campaign, gli utenti sono invitati a scaricare l’ultima versione della console client in una finestra di prompt dedicata. Adobe consiglia di lasciare deselezionata l&#39;opzione **[!UICONTROL No longer ask this question]** per assicurarsi che tutti gli utenti ricevano un avviso quando è disponibile una nuova versione della console.
 
 Se selezioni questa opzione e scegli di non scaricare l’ultima versione, nessun altro utente verrà informato delle nuove versioni disponibili.
 

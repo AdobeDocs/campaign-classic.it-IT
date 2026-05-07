@@ -9,7 +9,7 @@ topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '1042'
 ht-degree: 2%
 
 ---
@@ -66,7 +66,7 @@ Utilizzare l&#39;opzione Federated Data Access **(FDA) di Adobe Campaign Classic
 >
 >Si consiglia di utilizzare Python3, vedere questa [pagina](https://www.python.org/downloads/).
 
-L’utility Bulk Load consente un trasferimento più rapido, grazie all’SDK di Google Cloud.
+L’utilità Bulk Load consente un trasferimento più rapido, grazie a Google Cloud SDK.
 
 1. Scarica l&#39;archivio di Windows a 64 bit (x86_64) da questa [pagina](https://cloud.google.com/sdk/docs/downloads-versioned-archives) ed estrailo nella directory corrispondente.
 
@@ -86,7 +86,7 @@ L’utility Bulk Load consente un trasferimento più rapido, grazie all’SDK di
 
 ### Configurazione del driver su Linux {#driver-linux}
 
-Prima di configurare il driver, si noti che gli script e i comandi devono essere eseguiti dall&#39;utente root. Durante l’esecuzione dello script, si consiglia inoltre di utilizzare il DNS Google 8.8.8.8.
+Prima di configurare il driver, si noti che gli script e i comandi devono essere eseguiti dall&#39;utente root. Si consiglia inoltre di utilizzare il DNS Google 8.8.8.8 durante l&#39;esecuzione dello script.
 
 Per configurare [!DNL Google BigQuery] su Linux, eseguire la procedura seguente:
 
@@ -146,7 +146,7 @@ Per configurare [!DNL Google BigQuery] su Linux, eseguire la procedura seguente:
 >
 >Si consiglia di utilizzare Python3, vedere questa [pagina](https://www.python.org/downloads/).
 
-L’utility Bulk Load consente un trasferimento più rapido, grazie all’SDK di Google Cloud.
+L’utilità Bulk Load consente un trasferimento più rapido, grazie a Google Cloud SDK.
 
 1. Prima dell&#39;installazione di ODBC, verificare che i seguenti pacchetti siano installati nella distribuzione Linux:
 
@@ -209,8 +209,8 @@ Il connettore supporta le seguenti opzioni:
 | ProxyPort | Numero di porta su cui è in esecuzione il proxy, ad esempio 8080 |
 | ProxyUid | Nome utente utilizzato per il proxy autenticato |
 | ProxyPwd | Password ProxyUid |
-| bqpath | Tieni presente che questo è applicabile solo per lo strumento di caricamento in blocco (SDK per cloud). </br> Per evitare di utilizzare la variabile PATH o se la directory google-cloud-sdk deve essere spostata in un&#39;altra posizione, è possibile specificare con questa opzione il percorso esatto della directory bin dell&#39;SDK cloud sul server. |
-| GCloudConfigName | Tieni presente che questo è applicabile a partire dalla versione 7.3.4 e solo per lo strumento di caricamento in massa (Cloud SDK).</br> L&#39;SDK di Google Cloud utilizza le configurazioni per caricare i dati nelle tabelle BigQuery. La configurazione denominata `accfda` memorizza i parametri per il caricamento dei dati. Tuttavia, questa opzione consente agli utenti di specificare un nome diverso per la configurazione. |
-| GCloudDefaultConfigName | Tieni presente che questo è applicabile a partire dalla versione 7.3.4 e solo per lo strumento di caricamento in massa (Cloud SDK).</br> Impossibile eliminare la configurazione SDK di Google Cloud attiva senza prima trasferire il tag attivo in una nuova configurazione. Questa configurazione temporanea è necessaria per ricreare la configurazione principale per il caricamento dei dati. Il nome predefinito per la configurazione temporanea è `default`, che può essere modificato se necessario. |
-| GCloudRecreateConfig | Tieni presente che questo è applicabile a partire dalla versione 7.3.4 e solo per lo strumento di caricamento in massa (Cloud SDK).</br> Se è impostato su `false`, il meccanismo di caricamento in blocco non tenta di ricreare, eliminare o modificare le configurazioni dell&#39;SDK di Google Cloud. Procede invece con il caricamento dei dati utilizzando la configurazione esistente sul computer. Questa funzione è utile quando altre operazioni dipendono dalle configurazioni dell’SDK di Google Cloud. </br> Se l&#39;utente abilita questa opzione del motore senza una configurazione corretta, il meccanismo di caricamento in massa invierà un messaggio di avviso: `No active configuration found. Please either create it manually or remove the GCloudRecreateConfig option`. Per evitare ulteriori errori, verrà utilizzato il meccanismo di caricamento bulk predefinito per Inserisci array ODBC. |
+| bqpath | Si noti che questo è applicabile solo per lo strumento di caricamento bulk (Cloud SDK). </br> Per evitare di utilizzare la variabile PATH o se la directory google-cloud-sdk deve essere spostata in un’altra posizione, con questa opzione puoi specificare il percorso esatto della directory bin dell’SDK cloud sul server. |
+| GCloudConfigName | Si noti che questo è applicabile a partire dalla versione 7.3.4 e solo per lo strumento di caricamento in massa (Cloud SDK).</br> Google Cloud SDK utilizza le configurazioni per caricare i dati nelle tabelle BigQuery. La configurazione denominata `accfda` memorizza i parametri per il caricamento dei dati. Tuttavia, questa opzione consente agli utenti di specificare un nome diverso per la configurazione. |
+| GCloudDefaultConfigName | Si noti che questo è applicabile a partire dalla versione 7.3.4 e solo per lo strumento di caricamento in massa (Cloud SDK).</br> Non è possibile eliminare la configurazione di Google Cloud SDK attiva senza prima trasferire il tag attivo in una nuova configurazione. Questa configurazione temporanea è necessaria per ricreare la configurazione principale per il caricamento dei dati. Il nome predefinito per la configurazione temporanea è `default`, che può essere modificato se necessario. |
+| GCloudRecreateConfig | Si noti che questo è applicabile a partire dalla versione 7.3.4 e solo per lo strumento di caricamento in massa (Cloud SDK).</br> Se è impostato su `false`, il meccanismo di caricamento in blocco non tenta di ricreare, eliminare o modificare le configurazioni di Google Cloud SDK. Procede invece con il caricamento dei dati utilizzando la configurazione esistente sul computer. Questa funzione è utile quando altre operazioni dipendono dalle configurazioni di Google Cloud SDK. </br> Se l&#39;utente abilita questa opzione del motore senza una configurazione corretta, il meccanismo di caricamento in blocco invierà un messaggio di avviso: `No active configuration found. Please either create it manually or remove the GCloudRecreateConfig option`. Per evitare ulteriori errori, verrà utilizzato il meccanismo di caricamento bulk predefinito per Inserisci array ODBC. |
 

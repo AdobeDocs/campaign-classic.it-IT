@@ -8,8 +8,8 @@ hide: true
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 29%
+source-wordcount: '277'
+ht-degree: 35%
 
 ---
 
@@ -30,7 +30,7 @@ Per ogni canale installato viene fornito un modello predefinito: direct mailing,
 >
 >I canali offerti nell’elenco dipendono dal contratto di licenza.
 
-Puoi creare nuovi modelli di consegna per preconfigurare parametri specifici in base alle tue esigenze. Per ulteriori informazioni sui modelli, consultare [questa sezione](about-templates.md).
+Puoi creare nuovi modelli di consegna per preconfigurare parametri specifici in base alle esigenze. Per ulteriori informazioni sui modelli, consultare [questa sezione](about-templates.md).
 
 ## Identificare la consegna {#identifying-the-delivery}
 

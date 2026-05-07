@@ -6,8 +6,8 @@ feature: Technote, SMS
 exl-id: 756039b2-5f57-4dc5-8166-a421206b886b
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 5%
+source-wordcount: '440'
+ht-degree: 6%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 5%
 
    Eseguire il backup del puntatore di opzione corrispondente con il seguente formato `SMS_MO_INDEX_{internal name of the workflow}_{name of the insms workflow activity}_{internal name of the external account to access the mid}`.
 
-[Ulteriori informazioni sul backup](../../production/using/backup.md)
+   [Ulteriori informazioni sul backup](../../production/using/backup.md)
 
 1. (**FACOLTATIVO**) se si sta già utilizzando un&#39;attività Scheduler, aprire il flusso di lavoro e riconfigurarlo nel modo seguente:
 

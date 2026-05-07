@@ -7,8 +7,8 @@ hide: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1103'
-ht-degree: 8%
+source-wordcount: '1178'
+ht-degree: 12%
 
 ---
 
@@ -168,5 +168,5 @@ In qualità di cliente on-premise/ibrido, devi aggiornare la configurazione per 
 
 * [Aggiornare l’ambiente](../../production/using/build-upgrade.md)
 * [Domande frequenti sull’aggiornamento della build](../../platform/using/faq-build-upgrade.md)
-* [Scarica build Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/it/campaign.html)
+* [Scarica build Campaign Classic](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)
 * [Rendi la nuova Client Console disponibile agli utenti](../../installation/using/client-console-availability-for-windows.md)

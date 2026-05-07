@@ -22,7 +22,7 @@ Per chiamare il motore di interazione in una pagina web, inserisci una chiamata 
 
 elemento.
 
-L’Adobe consiglia di utilizzare il metodo di integrazione di JavaScript.
+Adobe consiglia di utilizzare il metodo di integrazione di JavaScript.
 
 L’URL di chiamata dello script si presenta così:
 
@@ -32,7 +32,7 @@ L’URL di chiamata dello script si presenta così:
 
 Il parametro &quot;**env**&quot; riceve il nome interno dell&#39;ambiente live dedicato alle interazioni anonime.
 
-Per presentare un’offerta, è necessario creare un ambiente e uno spazio delle offerte in Adobe Campaign, quindi configurare la pagina HTML.
+Per presentare un’offerta, è necessario creare un ambiente e uno spazio dell’offerta in Adobe Campaign, quindi configurare la pagina HTML.
 
 I seguenti casi d’uso descrivono le opzioni possibili per l’integrazione delle offerte tramite JavaScript.
 
@@ -127,7 +127,7 @@ Per presentare un&#39;offerta a un contatto identificato, il processo è simile 
    </script>
    ```
 
-### Utilizzo di una funzione di rendering HTML {#using-an-html-rendering-function}
+### Utilizzo di una funzione di rendering di HTML {#using-an-html-rendering-function}
 
 Per generare automaticamente la rappresentazione dell’offerta HTML, puoi utilizzare una funzione di rendering.
 

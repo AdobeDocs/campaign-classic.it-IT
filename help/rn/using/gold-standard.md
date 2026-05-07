@@ -9,8 +9,8 @@ hide: true
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1774'
-ht-degree: 100%
+source-wordcount: '2018'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ _27 agosto 2021_
 
 La build 9032@99a3894 include le seguenti correzioni:
 
-* La funzione di tracciamento della firma è stata migliorata per evitare errori relativi al modo in cui strumenti di terze parti (client e-mail, browser Internet, ecc.) gestiscono caratteri speciali. I parametri URL sono ora codificati.
+* La funzione di firma di tracciamento è stata migliorata per evitare errori collegati al modo in cui strumenti di terze parti (client e-mail, browser Internet, ecc.) gestiscono i caratteri speciali. I parametri URL sono ora codificati.
 * È stato risolto un problema relativo ai selettori di date che poteva causare la visualizzazione di un messaggio di errore di blocco nella console. (NEO-36345)
 
 ### [!DNL Gold Standard] versione 11{#gs-11}
@@ -393,7 +393,7 @@ Questa sezione elenca tutti i sistemi e i componenti supportati per le build 19.
 <table>
 <tbody>
 <tr>
-<td> Amazon Redshift</td>
+<td>Amazon Redshift</td>
 <td><p> </p>
 </td>
 </tr>

@@ -9,8 +9,8 @@ hide: true
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '6200'
-ht-degree: 2%
+source-wordcount: '6654'
+ht-degree: 4%
 
 ---
 
@@ -242,7 +242,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 
 *Contesto: Direct Mail*
 
-Una struttura di consegna è un set strutturato di elementi (documenti, negozi, coupon promozionali, ecc.) creati dall’azienda e per una particolare campagna. Viene utilizzato nel contesto delle consegne di direct mailing.
+Una struttura di consegna è un set strutturato di elementi (documenti, negozi, coupon promozionali, ecc.) create dall’azienda e per una determinata campagna. Viene utilizzato nel contesto delle consegne di direct mailing.
 
 Ulteriori informazioni su [Direct mailing](../../delivery/using/about-direct-mail-channel.md).
 +++
@@ -265,7 +265,7 @@ Ulteriori informazioni su [Analisi descrittiva](../../reporting/using/about-desc
 
 *Contesto: Marketing distribuito*
 
-Il componente aggiuntivo Marketing distribuito offre agli operatori di campagne uno spazio di lavoro collaborativo per l’implementazione di campagne tra entità centrali (sedi centrali, dipartimenti di marketing, ecc.) ed entità locali (punti vendita, agenzie regionali, ecc.). Questa cooperazione si basa su un&#39;area di lavoro condivisa nota come **elenco di pacchetti Campaign**, in cui i modelli e le istanze di campagna creati centralmente vengono offerti alle entità locali.
+Il componente aggiuntivo Marketing distribuito offre agli operatori di campagne uno spazio di lavoro collaborativo per l’implementazione di campagne tra entità centrali (sedi centrali, dipartimenti di marketing, ecc.) ed enti locali (punti vendita, agenzie regionali, ecc.). Questa cooperazione si basa su un&#39;area di lavoro condivisa nota come **elenco di pacchetti Campaign**, in cui i modelli e le istanze di campagna creati centralmente vengono offerti alle entità locali.
 
 Ulteriori informazioni sul Marketing distribuito sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=it){target="_blank"}.
 +++
@@ -279,7 +279,7 @@ Ulteriori informazioni su [Distribuzione dei valori](../../platform/using/adobe-
 
 +++**Delega del dominio**
 
-La configurazione del sottodominio ti consente di configurare una sottosezione del dominio (tecnicamente una &quot;zona DNS&quot;) per l’utilizzo con Adobe Campaign.
+La configurazione dei sottodomini consente di configurare una sottosezione del dominio (tecnicamente una “zona DNS”) per l’utilizzo con Adobe Campaign.
 La delega del dominio consente ad Adobe di controllare e mantenere tutti gli aspetti del DNS necessari per la distribuzione, il rendering e il tracciamento delle campagne e-mail.
 
 Ulteriori informazioni sulla [delega del dominio](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=it)
@@ -768,7 +768,7 @@ Ulteriori informazioni sul [Monitoraggio delle prestazioni](../../production/usi
 
 +++**Blocchi di personalizzazione**
 
-Adobe Campaign offre blocchi di personalizzazione incorporati che puoi inserire nelle consegne. Sono dinamici, personalizzati e contengono un rendering specifico. Ad esempio, puoi aggiungere un logo, un messaggio di saluto o un collegamento a una pagina speculare. Per impostazione predefinita, sono disponibili diversi blocchi di personalizzazione. Puoi anche definire blocchi di personalizzazione personalizzati che ti consentiranno di ottimizzare la personalizzazione della consegna. I dati effettivi vengono inseriti in ogni messaggio generato durante la fase di analisi della consegna.
+Adobe Campaign offre blocchi di personalizzazione incorporati che puoi inserire nelle consegne. Sono dinamici, personalizzati e contengono un rendering specifico. Ad esempio, puoi aggiungere un logo, un messaggio di auguri o un collegamento alla pagina mirror. Per impostazione predefinita, sono disponibili diversi blocchi di personalizzazione. Puoi anche definire blocchi di personalizzazione personalizzati che ti consentiranno di ottimizzare la personalizzazione della consegna. I dati effettivi vengono inseriti in ogni messaggio generato durante la fase di analisi della consegna.
 
 Ulteriori informazioni sui blocchi di personalizzazione nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=it){target="_blank"}.
 +++
@@ -852,7 +852,7 @@ Ulteriori informazioni su [Push](../../delivery/using/about-mobile-app-channel.m
 
 +++**Destinatario**
 
-In Adobe Campaign, i destinatari sono i profili predefiniti target per l’invio di consegne (e-mail, SMS, ecc.) ai clienti. I dati dei destinatari memorizzati nel database consentono di filtrare il target e aggiungere dati di personalizzazione. In genere si tratta di informazioni personali, di contatto, demografiche e transazionali, ma potrebbe trattarsi di qualsiasi tipo di informazione che supporta il marketing e l’analisi.
+In Adobe Campaign, i destinatari sono i profili predefiniti target per l’invio di consegne (e-mail, SMS, ecc.) ai tuoi clienti. I dati dei destinatari memorizzati nel database consentono di filtrare il target e aggiungere dati di personalizzazione. In genere si tratta di informazioni personali, di contatto, demografiche e transazionali, ma potrebbe trattarsi di qualsiasi tipo di informazione che supporta il marketing e l’analisi.
 
 Ulteriori informazioni su [Destinatario](../../configuration/using/about-data-model.md).
 +++
@@ -1078,7 +1078,7 @@ Ulteriori informazioni sulle [applicazioni Web](../../web/using/about-web-applic
 
 +++**Flusso di lavoro**
 
-Un workflow è una rappresentazione visiva del flusso di esecuzione della campagna. Consente di orchestrare l&#39;intera gamma di processi e attività tra i diversi moduli del server applicazioni. Questo ambiente grafico completo ti consente di progettare processi inclusi segmentazione, esecuzione di campagne, elaborazione di file, partecipazione di utenti, ecc. Il motore del flusso di lavoro esegue e traccia tali processi.
+Un workflow è una rappresentazione visiva del flusso di esecuzione della campagna. Consente di orchestrare l&#39;intera gamma di processi e attività tra i diversi moduli del server applicazioni. Questo ambiente grafico completo consente di progettare processi quali segmentazione, esecuzione di campagne, elaborazione di file, partecipazione di utenti, ecc. Il motore del flusso di lavoro esegue e tiene traccia di questi processi.
 
 Ulteriori informazioni su [Flussi di lavoro](../../workflow/using/about-workflows.md).
 +++

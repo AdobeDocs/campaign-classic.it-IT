@@ -8,7 +8,7 @@ hide: true
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ I documenti possono essere associati a livello di campagna (documenti contestual
 
 La scheda **[!UICONTROL Documents]** contiene:
 
-* L’elenco di tutti i documenti necessari per il contenuto (modello, immagini ecc.) che possono essere scaricati localmente dagli operatori Adobe Campaign con i diritti appropriati,
+* L’elenco di tutti i documenti necessari per il contenuto (modello, immagini, ecc.) che possono essere scaricati localmente dagli operatori Adobe Campaign con i diritti appropriati,
 * Documenti contenenti informazioni per il router, se presenti.
 
 I documenti sono collegati al programma o alla campagna tramite la scheda **[!UICONTROL Edit > Documents]**.
@@ -60,7 +60,7 @@ Da questa vista è possibile modificarli.
 >
 >I profili di consegna vengono utilizzati esclusivamente nel contesto delle campagne di direct mailing.
 
-Una struttura di consegna indica un set strutturato di elementi (documenti, negozi, coupon promozionali, ecc.) creati dall’azienda e per una particolare campagna.
+Una struttura di consegna indica un set strutturato di elementi (documenti, negozi, coupon promozionali, ecc.) create dall’azienda e per una determinata campagna.
 
 Questi elementi sono raggruppati nei profili di consegna e ogni profilo di consegna sarà associato a una consegna; vi verrà fatto riferimento nel file di estrazione inviato al **service provider** per essere allegato alla consegna. Ad esempio, puoi creare una struttura di consegna che faccia riferimento a un ramo e alle brochure di marketing che utilizza.
 
@@ -120,7 +120,7 @@ Nella scheda **[!UICONTROL Summary]** della consegna vengono visualizzate anche 
 
 ### Risultato estrazione {#extraction-result}
 
-Nel file estratto e inviato al fornitore di servizi, il nome della struttura e, se del caso, le sue caratteristiche (costo, descrizione, ecc.) sono aggiunti al contenuto in base alle informazioni contenute nel modello di esportazione associato al fornitore di servizi.
+Nel fascicolo estratto e inviato al prestatore di servizi, il nome della struttura e, se del caso, le sue caratteristiche (costo, descrizione, ecc.) vengono aggiunti al contenuto in base alle informazioni contenute nel modello di esportazione associato al provider di servizi.
 
 Nell’esempio seguente, l’etichetta, il costo stimato e la descrizione della struttura associata alla consegna verranno aggiunti al file di estrazione.
 
