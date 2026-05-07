@@ -8,9 +8,9 @@ level: Beginner
 hide: true
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '415'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Nell’ambito di un’iniziativa di promozione di Campaign v8, abbiamo iniziato
 
 Gli stati di rilascio sono stati ridotti e semplificati. [Ulteriori informazioni](rn-overview.md)
 
-L’installazione dei pacchetti Linux è stata aggiornata per la versione v7.4.1. [Ulteriori informazioni](../../installation/using/installing-packages-with-linux.md)
+L’installazione dei pacchetti Linux è stata aggiornata per la versione v7.4.1.[Ulteriori informazioni](../../installation/using/installing-packages-with-linux.md)
 
 ### Giugno 2024 {#june-2024}
 

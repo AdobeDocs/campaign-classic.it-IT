@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
 source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2670'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ _7 settembre 2021_
 
 * Al termine del suo ciclo di vita, Flash è stato rimosso da tutte le funzioni e i componenti di Campaign correlati e sostituito con HTML5. Il tipo di grafico **Misuratore** è stato rimosso. (NEO-30330) [Ulteriori informazioni](../../reporting/using/creating-a-chart.md)
 * Durante l’installazione della console client su Windows, il programma di installazione ora controlla se è presente un nodo del registro principale e, se necessario, ne crea uno. Questo evita potenziali problemi durante l’avvio della console. (NEO-34854)
-* La funzione di firma di tracciamento è stata migliorata per evitare errori collegati al modo in cui strumenti di terze parti (client e-mail, browser Internet, ecc.) gestiscono i caratteri speciali. I parametri URL sono ora codificati.
+* La funzione di tracciamento della firma è stata migliorata per evitare errori relativi al modo in cui strumenti di terze parti (client e-mail, browser Internet, ecc.)gestiscono i caratteri speciali.I parametri URL sono ora codificati.
 
 **Altre modifiche**
 
@@ -57,7 +57,7 @@ _7 settembre 2021_
 * I connettori Microsoft CRM precedentemente dichiarati obsoleti (per implementazioni Office 365 e on-premise) sono stati rimossi dall’interfaccia. [Ulteriori informazioni](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
 * In seguito alla migrazione a Tomcat 8, lo script di installazione di IIS è stato aggiornato per risolvere i problemi di integrazione di IIS. (NEO-31019)
 * L’identificazione dell’origine dati è stata migliorata nelle schede dati e schema della finestra **Visualizza popolazione** delle transizioni del flusso di lavoro.
-* Indici di database mancanti aggiunti ai seguenti schemi per evitare problemi di aggiornamento del database: xtk:rights, nms:dlvExclusion, nms:seedMember, nms:trackingUrl
+* Sono stati aggiunti gli indici di database mancanti ai seguenti schemi, al fine di evitare problemi di aggiornamento del database: xtk:rights, nms:dlvExclusion, nms:seedMember, nms:trackingUrl
 
 **Patch**
 
@@ -122,11 +122,11 @@ _5 giugno 2021_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Sono stati aggiunti i seguenti miglioramenti al canale LINE:
+<td> <p>Al canale LINE sono stati apportati i seguenti miglioramenti:
 </p>
 <ul> 
 <li><p>Supporto per il tipo di messaggio video LINE</p></li>
-<li><p>Supporto per API di registrazione partner LINE</p></li>
+<li><p>Supporto per l’API di registrazione partner LINE</p></li>
 <li><p>Supporta un nuovo tentativo di invio del messaggio in caso di errore sul lato server LINE o di timeout della rete</p></li>
 </ul>
 <p>Per ulteriori informazioni consulta la <a href="../../delivery/using/line-channel.md">documentazione dettagliata</a>.</p>
@@ -168,7 +168,7 @@ _5 giugno 2021_
 
 **Miglioramenti della sicurezza**
 
-* L&#39;accesso al metodo API **xtk:session#GetCnxInfo** che restituisce i dettagli completi della connessione al database è ora limitato solo agli utenti amministratori. (NEO-27779)
+* L’accesso al metodo API **xtk:session#GetCnxInfo** che restituisce i dettagli completi della connessione al database è ora limitato solo agli utenti amministratori.(NEO-27779)
 * La funzione decryptString obsoleta è stata sostituita con decryptPassword nei file JavaScript relativi a alla gestione delle relazioni con i clienti.
 * La funzione di firma di tracciamento è stata migliorata per ridurre il rischio di errori di reindirizzamento quando strumenti di terze parti (client e-mail, browser Internet, strumenti di sicurezza dei collegamenti sicuri) modificano il collegamento tracciato.
 * È stato risolto un problema che poteva impedire il funzionamento degli URL tracciati quando contenevano caratteri maiuscoli. Il meccanismo di firma degli URL tracciati ora distingue tra maiuscole e minuscole. (NEO-28414)
@@ -218,7 +218,7 @@ Ulteriori informazioni sono disponibili nella pagina [Funzioni obsolete e rimoss
 * È stato risolto un problema che impediva la creazione dell’indice FDA di SAP HANA. (NEO-29664)
 * È stato risolto un problema che poteva mantenere i messaggi transazionali nello stato **In attesa** durante l’esecuzione di chiamate SOAP contenenti un’intestazione. (NEO-28737)
 * È stato risolto un problema che si verificava quando si utilizzava il connettore FDA Teradata: tutte le tabelle temporanee venivano create su un solo nodo del cluster, il che poteva finire per consumare l’intero spazio di spool e provocare l’arresto anomalo di Teradata. Le tabelle temporanee vengono ora generate su molti nodi. (NEO-28230)
-* È stato risolto un problema che si verificava durante l&#39;utilizzo di applicazioni web a causa del quale i tag di tracciamento generavano chiavi primarie non corrette nello schema **nms:trackingURL**. (NEO-27931)
+* È stato risolto un problema che si verificava durante l’utilizzo delle applicazioni web che causava generazione di chiavi primarie non corrette da parte dei tag di tracciamento nello schema **nms:trackingURL**.(NEO-27931)
 * La compatibilità con ODBC 3.x è stata migliorata per garantire la precisione dei messaggi di errore.
 * È stato risolto un problema che poteva causare arresti anomali della console in caso di utilizzo di modelli di contenuto personalizzati nelle consegne e-mail. (NEO-31547)
 * È stato risolto un problema che impediva a Tomcat di inviare risposte valide a causa di una connessione lenta o di dimensioni di risposta elevate. (NEO-30858)
