@@ -108,17 +108,17 @@ Nella tabella seguente viene fornito un elenco di parametri speciali supportati 
 
 * Raccolta dei dati del volume di business
 
-  **https://myserver.adobe.com/r/4567?tagid=command&amp;amount=100&amp;article=2l**
+  **https://myserver.adobe.com/r/4567?tagid=command&amount=100&article=2l**
 
 * Specifica di un campo per trovare il destinatario
 
-  **https://myserver.adobe.com/r/2353?tagid=home&amp;rcpid=saccount%3D10**
+  **https://myserver.adobe.com/r/2353?tagid=home&rcpid=saccount%3D10**
 
   Un destinatario il cui numero di conto è 10 viene inviato alla home page.
 
 * Utilizzo di una consegna predefinita
 
-  **https://myserver.adobe.com/r/2456?tagid=home&amp;jobid=e6**
+  **https://myserver.adobe.com/r/2456?tagid=home&jobid=e6**
 
   Un destinatario viene inviato alla home page. Queste informazioni verranno memorizzate nella consegna con l’identificatore 230 (e6 nel database 16) a meno che con questa query non venga inviato un cookie di sessione contenente un identificatore di consegna.
 

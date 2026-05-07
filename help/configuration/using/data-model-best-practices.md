@@ -248,7 +248,7 @@ Per impostazione predefinita, i registri di consegna e tracciamento di Adobe Cam
 
 Ulteriori informazioni sulla conservazione dei dati in [Linee guida per la privacy e la sicurezza di Campaign](../../platform/using/privacy-and-recommendations.md).
 
-Ulteriori informazioni sul flusso di lavoro di pulizia del database di Campaign [ in questa sezione](../../production/using/database-cleanup-workflow.md).
+Ulteriori informazioni sul flusso di lavoro di pulizia del database di Campaign [&#x200B; in questa sezione](../../production/using/database-cleanup-workflow.md).
 
 >[!IMPORTANT]
 >

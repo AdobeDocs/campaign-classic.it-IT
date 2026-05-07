@@ -34,7 +34,7 @@ Nella scheda **[!UICONTROL General]** delle proprietà del report, è possibile 
 
   ![](assets/s_ncs_advuser_report_properties_02.png)
 
-* Parametri del controllo di accesso ****. Queste impostazioni sono descritte di seguito.
+* Parametri del controllo di accesso **&#x200B;**. Queste impostazioni sono descritte di seguito.
 
 ## Controllare l’accesso al rapporto {#report-accessibility}
 

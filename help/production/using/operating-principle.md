@@ -33,7 +33,7 @@ L&#39;amministrazione del modulo viene eseguita utilizzando lo strumento della r
 
 Sintassi generale dello strumento **nlserver**:
 
-**nlserver `<command>``<command arguments>`**
+**nlserver `<command>` `<command arguments>`**
 
 Per visualizzare l&#39;elenco dei moduli disponibili, utilizzare il comando **nlserver**.
 

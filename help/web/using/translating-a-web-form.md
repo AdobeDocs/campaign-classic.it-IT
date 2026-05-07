@@ -169,7 +169,7 @@ se il linguaggio è il primo o l’unico parametro dell’URL. Esempio: **https:
 &lang=xx
 ```
 
-se nell’URL sono presenti altri parametri prima del linguaggio. Esempio: **https://myserver/webApp/APP34?status=1&amp;lang=en**
+se nell’URL sono presenti altri parametri prima del linguaggio. Esempio: **https://myserver/webApp/APP34?status=1&lang=en**
 
 Di seguito sono elencate le lingue e i dizionari di traduzione disponibili per impostazione predefinita.
 
@@ -430,7 +430,7 @@ Aggiungere **?lang=fr** alla fine dell&#39;URL per visualizzarlo in francese:
 >[!NOTE]
 >
 >Se altri parametri sono già utilizzati per questa applicazione Web, aggiungere **&amp;lang=**.\
->Esempio: **https://myserver/webApp/APP34?status=1&amp;lang=en**
+>Esempio: **https://myserver/webApp/APP34?status=1&lang=en**
 
 ## Configurazione traduzione avanzata {#advanced-translation-configuration}
 

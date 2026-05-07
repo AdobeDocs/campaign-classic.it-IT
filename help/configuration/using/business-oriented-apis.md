@@ -62,7 +62,7 @@ Descrizione del metodo &quot;subscribe&quot; nello schema &quot;nms:subscription
 </method>
 ```
 
-La definizione della chiave di riconciliazione deve essere immessa tramite l&#39;attributo _**key** nell&#39;elemento `<recipient>` del documento XML. Il contenuto di questo attributo è un elenco XPath separato da virgole.
+La definizione della chiave di riconciliazione deve essere immessa tramite l&#39;attributo _&#x200B;**key** nell&#39;elemento `<recipient>` del documento XML. Il contenuto di questo attributo è un elenco XPath separato da virgole.
 
 Questa chiamata non restituisce alcun dato, ad eccezione degli errori.
 

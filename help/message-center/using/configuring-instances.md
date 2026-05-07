@@ -106,7 +106,7 @@ Quando utilizzi più istanze di esecuzione, ripeti questi passaggi per creare ta
 
 Ogni istanza di esecuzione deve essere associata a un identificatore univoco per differenziare la cronologia di ogni istanza di esecuzione durante la visualizzazione nell’istanza di controllo.
 
-Questo identificatore può essere attribuito manualmente a ogni istanza di esecuzione ****. In questo caso, il passaggio deve essere eseguito **su ogni istanza di esecuzione**. A questo scopo, utilizza la procedura guidata di distribuzione come descritto di seguito:
+Questo identificatore può essere attribuito manualmente a ogni istanza di esecuzione **&#x200B;**. In questo caso, il passaggio deve essere eseguito **su ogni istanza di esecuzione**. A questo scopo, utilizza la procedura guidata di distribuzione come descritto di seguito:
 
 1. Aprire la procedura guidata di distribuzione in un&#39;istanza di esecuzione.
 1. Passare alla finestra **[!UICONTROL Message Center]**.
