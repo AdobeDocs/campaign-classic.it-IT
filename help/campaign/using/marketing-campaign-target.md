@@ -245,6 +245,6 @@ Questa configurazione equivale a un’attività di condivisione nel flusso di la
 
 Questo video spiega come creare una campagna e un messaggio e-mail in Adobe Campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/329889?captions=ita&quality=12)
 
 Ulteriori video dimostrativi di Campaign sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
