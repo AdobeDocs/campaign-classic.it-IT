@@ -9,14 +9,14 @@ hide: true
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '870'
-ht-degree: 3%
+source-wordcount: '894'
+ht-degree: 5%
 
 ---
 
 # Blocchi di personalizzazione{#personalization-blocks}
 
-I blocchi di personalizzazione sono dinamici, personalizzati e contengono un rendering specifico che puoi inserire nelle consegne. Ad esempio, puoi aggiungere un logo, un messaggio di saluto o un collegamento a una pagina speculare. Consulta [Inserire blocchi di personalizzazione](#inserting-personalization-blocks).
+I blocchi di personalizzazione sono dinamici, personalizzati e contengono un rendering specifico che puoi inserire nelle consegne. Ad esempio, puoi aggiungere un logo, un messaggio di auguri o un collegamento alla pagina mirror. Consulta [Inserire blocchi di personalizzazione](#inserting-personalization-blocks).
 
 ![](assets/do-not-localize/how-to-video.png) Scopri questa funzione [nel video](#personalization-blocks-video)
 
@@ -63,9 +63,9 @@ In questo esempio, creiamo un’e-mail in cui utilizziamo blocchi di personalizz
 
 A questo scopo, è necessario inserire i seguenti blocchi di personalizzazione:
 
-* **[!UICONTROL Link to mirror page]**.
-* **[!UICONTROL Social network sharing links]**.
-* **[!UICONTROL Unsubscription link]**.
+* **[!UICONTROL Link to mirror page]** .
+* **[!UICONTROL Social network sharing links]** .
+* **[!UICONTROL Unsubscription link]** .
 
 >[!NOTE]
 >
@@ -94,7 +94,7 @@ Per impostazione predefinita, è disponibile un elenco di blocchi di personalizz
 
 ![](assets/s_ncs_user_personalized_block_list.png)
 
-* **[!UICONTROL Greetings]** : inserisce i saluti con il nome del destinatario. Esempio: “Ciao John Doe,” 
+* **[!UICONTROL Greetings]** : inserisce i saluti con il nome del destinatario. Esempio: “Ciao John Doe,”
 * **[!UICONTROL Insert logo]** : inserisce un logo predefinito definito durante la configurazione dell&#39;istanza.
 * **[!UICONTROL Powered by Adobe Campaign]** : inserisce il logo &quot;Powered by Adobe Campaign&quot;.
 * **[!UICONTROL Mirror page URL]** : inserisce l&#39;URL della pagina speculare, consentendo ai designer della consegna di controllare il collegamento.
@@ -139,12 +139,12 @@ Per creare un blocco di personalizzazione, passa a Esplora e applica i seguenti 
 
      ![](assets/s_ncs_user_personalized_block_b.png)
 
-   * Immetti il contenuto (in HTML, testo, JavaScript, ecc.) dei blocchi di personalizzazione e fai clic su **[!UICONTROL Save]**.
+   * Inserisci il contenuto (in HTML, testo, JavaScript, ecc.) dei blocchi di personalizzazione e fare clic su **[!UICONTROL Save]**.
 
 ## Video tutorial {#personalization-blocks-video}
 
 Scopri come creare blocchi di contenuto dinamici e come utilizzarli per personalizzare il contenuto della consegna e-mail.
 
->[!VIDEO](https://video.tv.adobe.com/v/340471?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
 
 Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

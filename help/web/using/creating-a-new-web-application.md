@@ -7,8 +7,8 @@ feature: Web Apps
 exl-id: 5ccf5a21-48aa-4c0d-8cc8-457eb07d9f74
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 20%
+source-wordcount: '372'
+ht-degree: 19%
 
 ---
 
@@ -24,7 +24,7 @@ Vai alla scheda **Campagne** e seleziona il menu **[!UICONTROL Web Applications]
 
 >[!NOTE]
 >
->Proteggi sempre le pagine che potrebbero contenere informazioni personali. Consulta la [Lista di controllo protezione e privacy](https://helpx.adobe.com/it/campaign/kb/acc-security.html#privacy).
+>Proteggi sempre le pagine che potrebbero contenere informazioni personali. Consulta la [Lista di controllo protezione e privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy).
 
 Questo modello determina il tipo di applicazione Web. Puoi creare:
 
@@ -38,7 +38,7 @@ Questo modello determina il tipo di applicazione Web. Puoi creare:
 
 1. Pagine di destinazione
 
-   Una pagina di destinazione è una pagina HTML il cui contenuto è disponibile su un sito web e che consente agli utenti di immettere informazioni da memorizzare nel profilo del database di Adobe Campaign. Il contenuto di questo tipo di pagina viene in genere creato da un’agenzia Web specializzata prima di essere importato in Adobe Campaign per la pubblicazione, la gestione e il follow-up. Per ulteriori informazioni, consulta [questa pagina](creating-a-landing-page.md).
+   Una pagina di destinazione è una pagina di HTML il cui contenuto è disponibile su un sito web e che consente agli utenti di immettere informazioni da memorizzare nel profilo del database di Adobe Campaign. Il contenuto di questo tipo di pagina viene in genere creato da un’agenzia Web specializzata prima di essere importato in Adobe Campaign per la pubblicazione, la gestione e il follow-up. Per ulteriori informazioni, consulta [questa pagina](creating-a-landing-page.md).
 
 1. Indagini
 
@@ -48,7 +48,7 @@ Questo modello determina il tipo di applicazione Web. Puoi creare:
    >
    >**Gestione sondaggi** è un modulo Adobe Campaign facoltativo. Controlla il contratto di licenza.
 
-1. Applicazioni facebook
+1. Applicazioni Facebook
 
    Grazie all&#39;opzione **Social Marketing**, Adobe Campaign consente di pubblicare contenuti personalizzati in un&#39;applicazione Facebook. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../social/using/about-social-marketing.md).
 

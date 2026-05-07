@@ -10,7 +10,7 @@ topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
 source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
-source-wordcount: '3397'
+source-wordcount: '3479'
 ht-degree: 2%
 
 ---
@@ -79,12 +79,12 @@ Questi parametri possono essere sovraccaricati nei modelli di consegna e singola
 Indicare i seguenti parametri:
 
 * **[!UICONTROL Sender name]** : immetti il nome del mittente.
-* **[!UICONTROL Sender address]** : immetti l&#39;indirizzo e-mail del mittente. Quando si inviano e-mail da Adobe Campaign, la cassetta postale **Indirizzo mittente** non viene monitorata e gli utenti marketing non possono accedere a questa cassetta postale. Inoltre, Adobe Campaign non offre la possibilità di rispondere automaticamente o inoltrare automaticamente le e-mail ricevute in questa casella di posta. Ulteriori informazioni sulle best practice per il recapito messaggi [sono disponibili in questa documentazione](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html?lang=it){_blank}.
+* **[!UICONTROL Sender address]** : immetti l&#39;indirizzo e-mail del mittente. Quando si inviano e-mail da Adobe Campaign, la cassetta postale **Indirizzo mittente** non viene monitorata e gli utenti marketing non possono accedere a questa cassetta postale. Inoltre, Adobe Campaign non offre la possibilità di rispondere automaticamente o inoltrare automaticamente le e-mail ricevute in questa casella di posta. Ulteriori informazioni sulle best practice per il recapito messaggi [sono disponibili in questa documentazione](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html){_blank}.
 
 * **[!UICONTROL Reply address text]**: immettere il nome utilizzato quando il destinatario fa clic sul pulsante **[!UICONTROL Reply]**.
 * **[!UICONTROL Reply address]**: immettere l&#39;indirizzo di posta elettronica da utilizzare quando il destinatario fa clic sul pulsante **[!UICONTROL Reply]** nel software del client di posta elettronica. Il campo **Indirizzo di risposta** ha lo scopo di indicare che il destinatario deve rispondere a un indirizzo diverso da quello del **Indirizzo mittente**.  Questo indirizzo deve essere un indirizzo e-mail valido, collegato a una cassetta postale monitorata e ospitato dal cliente.  Potrebbe trattarsi di una cassetta postale di supporto, ad esempio `customer-care@customer.com`, in cui le e-mail vengono lette e a cui si risponde.
 
-* **[!UICONTROL Error address]** : immetti l&#39;indirizzo e-mail dei messaggi con errori. Si tratta dell’indirizzo tecnico utilizzato per gestire le e-mail non recapitate, incluse quelle ricevute dal server Adobe Campaign a causa di indirizzi di destinazione inesistenti. Questo indirizzo deve essere un indirizzo e-mail valido, collegato a una cassetta postale monitorata e ospitato dal cliente. Potrebbe essere una cassetta postale di mancato recapito, ad esempio `errors@customer.com`. Questo indirizzo può essere modificato per una consegna o nei modelli di consegna, dalla scheda **SMTP** delle proprietà del modello di consegna/consegna. Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html?lang=it#managing-bounce-emails){target="_blank"}.
+* **[!UICONTROL Error address]** : immetti l&#39;indirizzo e-mail dei messaggi con errori. Si tratta dell’indirizzo tecnico utilizzato per gestire le e-mail non recapitate, incluse quelle ricevute dal server Adobe Campaign a causa di indirizzi di destinazione inesistenti. Questo indirizzo deve essere un indirizzo e-mail valido, collegato a una cassetta postale monitorata e ospitato dal cliente. Potrebbe essere una cassetta postale di mancato recapito, ad esempio `errors@customer.com`. Questo indirizzo può essere modificato per una consegna o nei modelli di consegna, dalla scheda **SMTP** delle proprietà del modello di consegna/consegna. Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html#managing-bounce-emails){target="_blank"}.
 
 Inoltre, puoi specificare le **maschere** autorizzate per l&#39;indirizzo del mittente e l&#39;indirizzo di errore. Se necessario, queste maschere possono essere separate da virgole. Questa configurazione è facoltativa. Quando vengono immessi i campi, Adobe Campaign controlla al momento della consegna (durante l’analisi, se l’indirizzo non include alcuna variabile) che gli indirizzi siano validi. Questa modalità operativa assicura che non vengano utilizzati indirizzi che potrebbero attivare problemi di consegna. Gli indirizzi di consegna devono essere configurati sul server di consegna.
 
@@ -118,7 +118,7 @@ Sono disponibili le seguenti opzioni:
 
 * **[!UICONTROL Delivery duration of messages]** : Oltre questo limite di tempo, la consegna viene interrotta (per impostazione predefinita, 5 giorni).
 * **[!UICONTROL Online resources validity duration]** : tempo per il quale vengono conservate le informazioni dal profilo del destinatario per generare pagine mirror.
-* inserire nell&#39;elenco Bloccati **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : quando questa opzione è selezionata, in caso di i destinatari non verranno contattati.
+* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : quando questa opzione è selezionata, in caso di i destinatari non verranno contattati.
 * **[!UICONTROL Automatically ignore doubles]** : Quando questa opzione è selezionata, la consegna non verrà eseguita su indirizzi duplicati.
 
 >[!NOTE]
@@ -236,7 +236,7 @@ Esistono tre possibili tipi di architettura per l’implementazione del tracciam
 
 1. **Aggiungi supporto per il tracciamento in un&#39;istanza esistente**
 
-   Questa scelta si applica se l’istanza è già stata creata per altre esigenze (server MTA, ecc.) in server che verranno utilizzati come server di tracciamento.
+   Questa scelta si applica se l’istanza è già stata creata per altre esigenze (server MTA, ecc.) su server che verranno utilizzati come server di tracciamento.
 
    ![](assets/s_ncs_install_deployment_wiz_11.png)
 
@@ -382,7 +382,7 @@ In una consegna, puoi utilizzare le immagini memorizzate nella libreria di risor
 
   Questo valore può essere sovrascritto per ogni consegna.
 
-* Per le risorse pubbliche, l&#39;URL **https://** server **/res/** istanza **&#x200B;**&#x200B;dove **istanza**&#x200B;è il nome dell&#39;istanza di tracciamento.
+* Per le risorse pubbliche, l&#39;URL **https://** server **/res/** istanza ****dove **istanza**è il nome dell&#39;istanza di tracciamento.
 
 ### Rilevamento immagine della consegna {#delivery-image-detection}
 
@@ -394,7 +394,7 @@ Il campo **Maschere URL** consente di specificare l&#39;elenco delle maschere UR
 
 Puoi specificare più maschere URL utilizzando una virgola per separarle.
 
-* Per informazioni sull&#39;utilizzo e la gestione delle immagini nelle e-mail, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=it#adding-images){target="_blank"}.
+* Per informazioni sull&#39;utilizzo e la gestione delle immagini nelle e-mail, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}.
 * Nell’assistente alla consegna, le immagini chiamate da questi URL avranno lo stato &quot;Ignorato&quot;.
 
 ### Modalità di pubblicazione {#publication-modes}

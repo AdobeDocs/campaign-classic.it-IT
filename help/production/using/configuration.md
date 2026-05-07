@@ -7,8 +7,8 @@ badge-v7-prem: label="Solo on-premise/ibrido" type="Caution" url="https://experi
 exl-id: 80d388fd-873c-4a08-b8b6-697988f2a18c
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 1%
+source-wordcount: '194'
+ht-degree: 11%
 
 ---
 
@@ -32,7 +32,7 @@ export TRACE_ADDR=localhost:<listening port>
 
 ### In Windows {#in-windows}
 
-Creare la variabile di ambiente **TRACE_ADDR** con il valore **localhost**: **`<listening port="" />`**.
+È necessario creare la variabile di ambiente **TRACE_ADDR** con il valore **localhost**: **`<listening port="" />`**.
 
 >[!IMPORTANT]
 >

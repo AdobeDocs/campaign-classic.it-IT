@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ## Modello di contenuto {#content-model-10}
 
-metodo:==( guida | )
+metodo:==( guida | parametri)
 
 ## Attributi {#attributes-10}
 
@@ -32,7 +32,7 @@ metodo:==( guida | )
 
 ## Padri {#parents-10}
 
-`<methods>` , `<interface />`
+`<methods>`  ,  `<interface />`
 
 ## Elementi secondari {#children-10}
 
@@ -41,11 +41,11 @@ metodo:==( guida | )
 
 ## Descrizione {#description-10}
 
-Questo elemento ti consente di definire un metodo SOAP.
+Questo elemento consente di definire un metodo SOAP.
 
 ## Uso e contesto di utilizzo {#use-and-context-of-use-7}
 
-I metodi SOAP consentono l&#39;esecuzione di processi applicativi.
+I metodi di SOAP consentono di eseguire i processi dell&#39;applicazione.
 
 Il &quot;@library&quot; è necessario per dichiarare un nuovo metodo (non nativo): lo spazio dei nomi e il nome utilizzato per la libreria sono indipendenti dallo spazio dei nomi e dal nome dello schema in cui si trova la dichiarazione.
 

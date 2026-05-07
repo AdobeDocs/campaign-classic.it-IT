@@ -1,10 +1,10 @@
 ---
 title: Aggiornare l’interfaccia di Campaign dopo la migrazione IMS
-description: Scopri come attivare gli impatti dell’interfaccia di Adobe Identity Management System Migration
+description: Scopri come attivare gli impatti dell’interfaccia di migrazione di Adobe Identity Management System
 exl-id: 8b13fe4d-d8d3-43b3-bbe4-c8c5574f585a
 source-git-commit: 8eadea9f9cc0a44522726024bfbc825e3b4cad98
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '463'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Dopo che [hai eseguito la migrazione degli operatori tecnici di Campaign a Devel
 
 Per completare la migrazione ad Adobe Identify Management System (IMS), è necessario bloccare la creazione di nuovi utenti nativi, l’accesso degli utenti nativi e l’accesso API per gli operatori nativi. L’ambiente viene quindi protetto e standardizzato.
 
-In qualità di utente del Cloud Service gestito/in hosting, contatta l’Adobe per abilitare questa restrizione e i relativi aggiornamenti nell’interfaccia utente del prodotto.
+In qualità di utente Managed Cloud Service/Hosted, contatta Adobe per abilitare questa restrizione e i relativi aggiornamenti nell’interfaccia utente del prodotto.
 
 In qualità di utente on-premise/ibrido, segui questi passaggi:
 
@@ -94,7 +94,7 @@ Non è più possibile creare, modificare, aggiornare o eliminare operatori con a
 
 Di conseguenza, queste azioni sono state disabilitate nella console client.
 
-L’amministrazione degli operatori è centralizzata in Adobe Admin Console e le seguenti attività ora sono gestite esclusivamente tramite questa console. Scopri come creare utenti e assegnare autorizzazioni nella [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}.
+L’amministrazione degli operatori è centralizzata in Adobe Admin Console e le seguenti attività ora sono gestite esclusivamente tramite questa console. Scopri come creare utenti e assegnare autorizzazioni nella [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}.
 
 ### Opzioni non disponibili {#unavailable-migration}
 
@@ -120,4 +120,4 @@ Dopo la migrazione, le seguenti attività non sono più disponibili nella consol
 >* [Migrazione degli utenti finali a IMS](migrate-users-to-ims.md)
 >* [Migrazione degli operatori tecnici alla console Adobe Developer](ims-migration.md)
 >* [Note sulla versione più recente di Adobe Campaign Classic v7](../../rn/using/latest-release.md)
->* [Che cos&#39;è Adobe Identity Management System (IMS)](https://helpx.adobe.com/it/enterprise/using/users.html){target="_blank"}
+>* [Che cos&#39;è Adobe Identity Management System (IMS)](https://helpx.adobe.com/it/enterprise/using/identity.html){target="_blank"}

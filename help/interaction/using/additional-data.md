@@ -9,7 +9,7 @@ topic-tags: advanced-parameters
 exl-id: 01adb584-5308-4d41-a6f1-223a97efa10f
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '711'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ In un flusso di lavoro di targeting (canale in uscita), puoi utilizzare i dati d
 
 ## Configurazione dati aggiuntiva {#additional-data-configuration}
 
-È necessario estendere lo schema **nms:interface** collegato all&#39;ambiente e dichiarare l&#39;elenco dei campi aggiuntivi che verranno utilizzati durante una chiamata al motore di interazione. Durante la creazione della regola di idoneità o la personalizzazione di un&#39;offerta, questi campi diventeranno accessibili dal nodo **Interaction** (fare riferimento a [Using additional data](#using-additional-data)).
+È necessario estendere lo schema **nms:interaction** collegato all&#39;ambiente e dichiarare l&#39;elenco dei campi aggiuntivi che verranno utilizzati durante una chiamata al motore di interazione. Durante la creazione della regola di idoneità o la personalizzazione di un&#39;offerta, questi campi diventeranno accessibili dal nodo **Interaction** (fare riferimento a [Using additional data](#using-additional-data)).
 
 Per il canale in entrata, devi aggiungere i campi dati della chiamata nel nodo **Interaction**.
 
@@ -54,7 +54,7 @@ Per il canale in uscita, devi aggiungere un elemento **targetData** contenente i
 >
 >Le raccolte non sono supportate per il canale in uscita. Tuttavia, puoi creare collegamenti ad altri schemi.
 
-Se si desidera memorizzare questi dati nella tabella delle proposte, è necessario estendere anche lo schema **nms:propositionRcp** e dichiarare questi campi.
+Se desideri memorizzare questi dati nella tabella della proposta, devi anche estendere lo schema **nms:propositionRcp** e dichiarare questi campi.
 
 ```
 <element label="Recipient offer propositions" labelSingular="Recipient offer proposition" name="propositionRcp">
@@ -67,7 +67,7 @@ Se si desidera memorizzare questi dati nella tabella delle proposte, è necessar
 
 ### Canale di input (pagina Web) {#input-channel--web-page-}
 
-Per trasferire dati aggiuntivi quando si chiama il motore, è necessario aggiungere la variabile **interfaceGlobalCtx** nel codice JavaScript della pagina Web. Inserire il nodo **Interaction** contenente i dati della chiamata in questa variabile. È necessario rispettare la stessa struttura xml presente nello schema **nms:interface**. Consulta: [Configurazione dati aggiuntiva](#additional-data-configuration).
+Per trasferire dati aggiuntivi quando si chiama il motore, è necessario aggiungere la variabile **interfaceGlobalCtx** nel codice JavaScript della pagina Web. Inserire il nodo **Interaction** contenente i dati della chiamata in questa variabile. È necessario rispettare la stessa struttura xml presente nello schema **nms:interaction**. Consulta: [Configurazione dati aggiuntiva](#additional-data-configuration).
 
 ```
 interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
@@ -75,7 +75,7 @@ interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 
 ### Canale di uscita {#output-channel}
 
-È necessario creare un flusso di lavoro di targeting per caricare dati aggiuntivi nella tabella di lavoro rispettando la stessa struttura xml e gli stessi nomi interni dello schema **nms:interface**. Consulta: [Configurazione dati aggiuntiva](#additional-data-configuration).
+È necessario creare un flusso di lavoro di targeting per caricare dati aggiuntivi nella tabella di lavoro rispettando la stessa struttura xml e gli stessi nomi interni dello schema **nms:interaction**. Consulta: [Configurazione dati aggiuntiva](#additional-data-configuration).
 
 ## Utilizzo di dati aggiuntivi {#using-additional-data}
 
@@ -101,7 +101,7 @@ Puoi anche utilizzare questi dati aggiuntivi durante la personalizzazione di un�
 >
 >Devi limitare la personalizzazione ai canali per i quali sono definiti i dati. Nel nostro esempio, stiamo limitando la regola sul canale web in entrata.
 
-Se hai personalizzato un’offerta utilizzando dati aggiuntivi, per impostazione predefinita questi dati non vengono visualizzati nell’anteprima perché non sono disponibili nel database. Nella scheda **[!UICONTROL Example of call data]** dell&#39;ambiente è necessario aggiungere esempi di valori da utilizzare nell&#39;anteprima. Rispetta la stessa struttura xml presente nell&#39;estensione dello schema **nms:interface**. Per ulteriori informazioni, consulta [Configurazione dati aggiuntiva](#additional-data-configuration).
+Se hai personalizzato un’offerta utilizzando dati aggiuntivi, per impostazione predefinita questi dati non vengono visualizzati nell’anteprima perché non sono disponibili nel database. Nella scheda **[!UICONTROL Example of call data]** dell&#39;ambiente è necessario aggiungere esempi di valori da utilizzare nell&#39;anteprima. Rispetta la stessa struttura xml presente nell&#39;estensione dello schema **nms:interaction**. Per ulteriori informazioni, consulta [Configurazione dati aggiuntiva](#additional-data-configuration).
 
 ![](assets/ita_calldata_preview.png)
 

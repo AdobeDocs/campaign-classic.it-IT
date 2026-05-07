@@ -10,7 +10,7 @@ level: Intermediate, Experienced
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
 source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '854'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ I trigger vengono utilizzati per il targeting da un flusso di lavoro della campa
 Prima di avviare questa configurazione, verifica di disporre di:
 
 * Un progetto Adobe Developer
-* Un ID organizzazione valido. Per trovare l&#39;ID organizzazione, fare riferimento a [questa pagina](https://experienceleague.adobe.com/it/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
+* Un ID organizzazione valido. Per trovare l&#39;ID organizzazione, fare riferimento a [questa pagina](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
 * Accesso per sviluppatori all’organizzazione
 * Una configurazione dei trigger valida in Adobe Analytics
 
@@ -40,9 +40,9 @@ Abilita la tua organizzazione con i token di account Adobe Developer per l’int
 
 Scopri come creare il tuo account tecnico Adobe in [questa pagina](../../integrations/using/oauth-technical-account.md). È necessario selezionare **[!UICONTROL Adobe Analytics]** durante l&#39;aggiunta dell&#39;API alle credenziali di Adobe Developer.
 
-## Passaggio 2: configurare l&#39;opzione pipeline {#configuring-nmspipeline}
+## Passaggio 2: configurare l’opzione pipeline {#configuring-nmspipeline}
 
-Una volta impostata l&#39;autenticazione, la pipeline recupererà gli eventi. Elabora solo i trigger configurati in Adobe Campaign. Il trigger deve essere stato generato da Adobe Analytics e inviato alla pipeline, che elaborerà solo i trigger configurati in Adobe Campaign.
+Una volta impostata l’autenticazione, la pipeline recupererà gli eventi. Elabora solo i trigger configurati in Adobe Campaign. Il trigger deve essere stato generato da Adobe Analytics e inviato alla pipeline, che elaborerà solo i trigger configurati in Adobe Campaign.
 
 L’opzione può anche essere configurata con un carattere jolly per acquisire tutti i trigger, indipendentemente dal nome.
 
@@ -50,7 +50,7 @@ L’opzione può anche essere configurata con un carattere jolly per acquisire t
 
 1. Seleziona l’opzione **[!UICONTROL NmsPipeline_Config]**.
 
-1. **[!UICONTROL Value (long text)]** Nel campo è possibile incollare il seguente codice JSON, che specifica due attivatori. Assicurati di rimuovere commenti.
+1. Nel campo **[!UICONTROL Value (long text)]**, puoi incollare il seguente codice JSON, che specifica due trigger. Assicurati di rimuovere i commenti.
 
    ```json
    {
@@ -72,7 +72,7 @@ L’opzione può anche essere configurata con un carattere jolly per acquisire t
    }
    ```
 
-1. Puoi anche scegliere di incollare il seguente codice JSON che cattura tutti i trigger.
+1. Puoi anche scegliere di incollare il seguente codice JSON che rileva tutti i trigger.
 
    ```json
    {
@@ -91,9 +91,9 @@ L’opzione può anche essere configurata con un carattere jolly per acquisire t
    }
    ```
 
-### Impostare il parametro Consumer {#consumer-parameter}
+### Imposta il parametro Consumer {#consumer-parameter}
 
-La pipeline funziona like un modello di fornitore e consumatore. I messaggi vengono consumati solo per un singolo consumatore: ogni consumatore ottiene la propria copia dei messaggi.
+La pipeline funziona come un modello di fornitore e di consumatore. I messaggi vengono utilizzati solo per un singolo consumatore: ogni consumatore riceve la propria copia dei messaggi.
 
 Il parametro **Consumer** identifica l&#39;istanza come uno di questi consumer. L’identità dell’istanza chiamerà la pipeline. È possibile compilarlo con il nome dell’istanza che si trova nella pagina Monitoraggio della console client.
 
@@ -103,7 +103,7 @@ Il servizio pipeline tiene traccia dei messaggi recuperati da ciascun consumator
 
 Per configurare l’opzione Pipeline, segui queste raccomandazioni:
 
-* Aggiungi o modifica i trigger in **[!UICONTROL Triggers]**.
+* Aggiungi o modifica trigger in **[!UICONTROL Triggers]**.
 * Verifica che il JSON sia valido.
 * Il parametro **Name** corrisponde all&#39;ID del trigger. Un carattere jolly &quot;*&quot; acquisirà tutti i trigger.
 * Il parametro **Consumer** corrisponde al nome dell&#39;istanza o dell&#39;applicazione chiamante.
@@ -126,12 +126,12 @@ L’elenco dei parametri facoltativi è:
 | dumpStatePeriodSec | Periodo tra due immagini del processo dello stato interno in ```var/INSTANCE/pipelined.json.``` <br> Lo stato interno è accessibile anche on-demand qui: ```http://INSTANCE:7781/pipelined/status``` |
 | forcedPipelineEndpoint | Disattiva il rilevamento di PipelineServicesEndpoint per forzarlo |
 | monitorServerPort | Il processo pipeline ascolterà su questa porta per fornire il processo dello stato interno qui: ```http://INSTANCE:PORT/pipelined/status```. <br>Il valore predefinito è 7781 |
-| pointerFlushMessageCount | Quando questo numero di messaggi viene elaborato, gli offset vengono salvati nel database. Il valore predefinito di <br> è 1000 |
+| pointerFlushMessageCount | Quando questo numero di messaggi viene elaborato, gli offset vengono salvati nel database. <br> Il valore predefinito è 1000 |
 | pointerFlushPeriodSec | Trascorso questo periodo, gli offset verranno salvati nel database. <br>Il valore predefinito è 5 (sec) |
-| processingJSThreads | Numero di thread dedicati che elaborano i messaggi con connettori JS personalizzati. Il valore predefinito di <br> è 4 |
+| processingJSThreads | Numero di thread dedicati che elaborano i messaggi con connettori JS personalizzati. <br> Il valore predefinito è 4 |
 | processingThreads | Numero di thread dedicati che elaborano i messaggi con codice incorporato. <br>Il valore predefinito è 4 |
 | retryPeriodSec | Ritardo tra nuovi tentativi in caso di errori di elaborazione. <br>Il valore predefinito è 30 (sec) |
-| retryValiditySec | Ignora il messaggio se non viene elaborato correttamente dopo questo periodo (troppi tentativi). <br>Il valore predefinito è 300 (secondi) |
+| retryValiditySec | Ignora il messaggio se non viene elaborato correttamente dopo questo periodo (troppi tentativi). <br>Il valore predefinito è 300 (sec) |
 
 ### Avvio automatico del processo pipeline {#pipelined-process-autostart}
 
@@ -153,8 +153,8 @@ nlserver restart pipelined@instance
 
 ## Passaggio 4: convalida {#step-validation}
 
-Per convalidare la configurazione della pipeline per il provisioning, seguire i passaggi seguenti:
+Per convalidare la configurazione della pipeline per il provisioning, effettua le seguenti operazioni:
 
-* Assicurati che il `pipelined` processo sia in esecuzione.
-* Verificare la presenza di registri di `pipelined.log` connessione della pipeline.
-* Verificare la connessione e se vengono ricevuti i ping. I clienti ospitati possono utilizzare il monitoraggio dalla console client.
+* Verificare che il processo `pipelined` sia in esecuzione.
+* Controllare `pipelined.log` per i registri di connessione della pipeline.
+* Verifica la connessione e se vengono ricevuti ping. I clienti in hosting possono utilizzare il monitoraggio dalla console client.

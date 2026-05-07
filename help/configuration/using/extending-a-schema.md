@@ -7,7 +7,7 @@ feature: Schema Extension
 exl-id: 6e3e666d-6ab3-4346-93ca-fb0155a4660d
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '304'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 5%
 >
 >Alcuni schemi integrati non devono essere estesi: principalmente quelli per i quali sono definite le seguenti impostazioni:\
 >**dataSource=&quot;file&quot;** e **mappingType=&quot;xmlFile&quot;**.\
->Non estendere i seguenti schemi: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, **ncm:publishing**, **nl:monitoring**, **nms:calendar**, **nms:remoteTracking**, **nms:userAgentRules**, **xtk:builder**, **xtk:connections**, **xtk:dbInit**, **xtk:funcList**, **xtk:fusion**, **xtk: jst**, **xtk:navtree**, **xtk:queryDef**, **xtk:resourceMenu**, **xtk:schema**, **xtk:scriptContext**, **:session** xtk **,:sqlSchema** xtk **.:strings**
+>Non estendere i seguenti schemi: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, **ncm:publishing**, **nl:monitoring**, **nms:calendar**, **nms:remoteTracking**, **nms:userAgentRules**, **xtk:builder**, **xtk:connections**, **xtk:dbInit**, **xtk:funcList**, **xtk:fusion**, **xtk: jst**, **xtk:navtree**, **xtk:queryDef**, **xtk:resourceMenu**, **xtk:schema**, **xtk:scriptContext**, **** xtk :sqlSchema**,** xtk :strings**.:session**
 >Questo elenco non è esaustivo.
 
 Esistono due metodi per estendere uno schema esistente:

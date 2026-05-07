@@ -8,7 +8,7 @@ content-type: reference
 exl-id: 6db8a653-b649-402c-8814-24826edadba7
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '322'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Una volta configurata la destinazione, i dati verranno esportati nella posizione
 
 In Adobe Experience Platform, configura una connessione con Adobe Campaign selezionando una posizione di archiviazione per i segmenti esportati. Questi passaggi ti consentono anche di selezionare i segmenti da esportare e specificare campi XDM aggiuntivi da includere.
 
-Per ulteriori informazioni, consulta la [documentazione sulle destinazioni](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=it).
+Per ulteriori informazioni, consulta la [documentazione sulle destinazioni](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
 
 Dopo aver configurato la destinazione, Adobe Experience Platform crea un file .txt o .csv delimitato da tabulazioni nel percorso di archiviazione fornito. Questa operazione è pianificata ed eseguita una volta ogni 24 ore.
 
@@ -35,7 +35,7 @@ Ora puoi configurare un flusso di lavoro Campaign Classic per acquisire il segme
 
 Una volta che Campaign Classic è stato configurato come destinazione, devi creare un flusso di lavoro dedicato per importare il file esportato da Adobe Experience Platform.
 
-A tale scopo, è necessario aggiungere e configurare un&#39;attività **[!UICONTROL File transfer]**. Per ulteriori informazioni su come configurare questa attività, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=it){target="_blank"}.
+A tale scopo, è necessario aggiungere e configurare un&#39;attività **[!UICONTROL File transfer]**. Per ulteriori informazioni su come configurare questa attività, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
 ![](assets/rtcdp-file-transfer.png)
 

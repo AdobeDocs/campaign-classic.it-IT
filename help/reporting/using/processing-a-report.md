@@ -7,8 +7,8 @@ feature: Reporting, Monitoring
 exl-id: d133efec-33e1-4711-a90f-e40385059386
 source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 1%
+source-wordcount: '845'
+ht-degree: 3%
 
 ---
 

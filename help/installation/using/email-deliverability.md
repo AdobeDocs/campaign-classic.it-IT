@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '3096'
-ht-degree: 0%
+source-wordcount: '3163'
+ht-degree: 2%
 
 ---
 
@@ -51,7 +51,7 @@ Il modulo **mta** distribuisce i messaggi ai relativi **mtachild** moduli second
 I passaggi sono i seguenti:
 
 1. **mta** seleziona i messaggi idonei e assegna loro un **mtachild** disponibile.
-1. **mtachild** carica tutte le informazioni necessarie per la creazione del messaggio (contenuto, elementi di personalizzazione, allegati, immagini e così via) e inoltra il messaggio a **Email Traffic Shaper**.
+1. **mtachild** carica tutte le informazioni necessarie per la creazione del messaggio (contenuto, elementi di personalizzazione, allegati, immagini, ecc.) e inoltra il messaggio a **Email Traffic Shaper**.
 1. Non appena lo shaper del traffico e-mail riceve l&#39;autorizzazione del server delle statistiche (**smtp stat**), il messaggio viene inviato al destinatario.
 
 ![](assets/s_ncs_install_email_traffic_shaper.png)
@@ -105,7 +105,7 @@ Quando viene inviato un messaggio, i possibili risultati sono 3:
 
 I messaggi abbandonati vengono restituiti a **mta** e non sono più gestiti da **mtachild**.
 
-**mta** decide la procedura per questo messaggio (ripristino, abbandono, quarantena, ecc.) in base al codice di risposta e alle regole.
+**mta** decide la procedura per questo messaggio (ripristino, abbandono, quarantena, ecc.) a seconda del codice di risposta e delle regole.
 
 ### Messaggio in attesa {#message-pending}
 
@@ -316,7 +316,7 @@ Puoi definire il formato dei messaggi inviati, in modo che il contenuto visualiz
 
 A tale scopo, passare al documento **[!UICONTROL Management of email formats]**, che si trova in **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Non deliverables management]** > **[!UICONTROL Mail rule sets]**.
 
-Questo documento contiene un elenco di tutti i domini predefiniti che corrispondono ai formati giapponesi gestiti da Adobe Campaign. Per ulteriori informazioni, consulta la [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html?lang=it){target="_blank"}.
+Questo documento contiene un elenco di tutti i domini predefiniti che corrispondono ai formati giapponesi gestiti da Adobe Campaign. Per ulteriori informazioni, consulta la [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}.
 
 ![](assets/mail_rule_sets.png)
 
@@ -331,7 +331,7 @@ Il parametro **MIME structure** (Multipurpose Internet Mail Extensions) consente
 
 Se l&#39;opzione **[!UICONTROL Image inclusion]** è abilitata, verranno visualizzate direttamente nel corpo dell&#39;e-mail. Le immagini vengono quindi caricate e i collegamenti URL sostituiti dal relativo contenuto.
 
-Questa opzione è particolarmente utilizzata dal mercato giapponese per **Deco-mail**, **Decore Mail** o **Decoration Mail**. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html?lang=it){target="_blank"}.
+Questa opzione è particolarmente utilizzata dal mercato giapponese per **Deco-mail**, **Decore Mail** o **Decoration Mail**. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}.
 
 >[!IMPORTANT]
 >

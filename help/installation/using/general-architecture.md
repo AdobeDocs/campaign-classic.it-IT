@@ -10,7 +10,7 @@ topic-tags: architecture-and-hosting-models
 exl-id: 04e6dc17-427b-4745-84cc-bf45c03dbf81
 source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
-source-wordcount: '1342'
+source-wordcount: '1352'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Adobe Campaign si basa su un’architettura orientata ai servizi (SOA, Service-O
 * **Thin client**: è possibile accedere a determinate parti dell&#39;applicazione tramite un semplice browser Web utilizzando un&#39;interfaccia utente di HTML, inclusi il modulo di reporting, le fasi di approvazione della consegna, le funzionalità del modulo Marketing distribuito (centrale/locale), il monitoraggio delle istanze, ecc. Questa modalità consente di includere le funzionalità di Adobe Campaign in una Intranet o in una Extranet.
 * **Integrazione tramite API**: in alcuni casi è possibile chiamare il sistema da un&#39;applicazione esterna utilizzando le API dei servizi Web esposte tramite il protocollo SOAP.
 
-## Livello applicazione logico {#logical-application-layer}
+## Livello logico dell’applicazione {#logical-application-layer}
 
 Adobe Campaign è un&#39;unica piattaforma con diverse applicazioni che si combinano per creare un&#39;architettura aperta e scalabile. La piattaforma Adobe Campaign è scritta su un livello di applicazione flessibile ed è facilmente configurabile per soddisfare le esigenze aziendali. Ciò risponde alle crescenti esigenze dell&#39;azienda sia dal punto di vista funzionale che tecnico. L&#39;architettura distribuita garantisce scalabilità lineare del sistema, da migliaia di messaggi a milioni di messaggi.
 
@@ -85,7 +85,7 @@ Questo processo può gestire la personalizzazione e l’invio automatico a un ro
 
 Per le e-mail, Adobe Campaign gestisce automaticamente il tracciamento dei clic e delle aperture (un’altra possibilità è il tracciamento transazionale a livello di sito web). A questo scopo, gli URL incorporati nei messaggi e-mail vengono riscritti in modo da puntare a questo modulo, che registra il passaggio dell’utente Internet prima di reindirizzarlo all’URL richiesto.
 
-Per garantire la massima disponibilità, questo processo è completamente indipendente dal database: gli altri processi server comunicano con esso utilizzando solo chiamate SOAP (HTTP, HTTP(S) e XML). Tecnicamente, questa funzionalità è implementata in un modulo di estensione di un server HTTP (estensione ISAPI in IIS, o un modulo DSO Apache, ecc.) ed è disponibile solo in Windows.
+Per garantire la massima disponibilità, questo processo è completamente indipendente dal database: gli altri processi server comunicano con esso utilizzando solo chiamate SOAP (HTTP, HTTP(S) e XML). Tecnicamente, questa funzionalità viene implementata in un modulo di estensione di un server HTTP (estensione ISAPI in IIS, o un modulo Apache DSO, ecc.) ed è disponibile solo in Windows.
 
 Sono disponibili anche altri processi più tecnici:
 
@@ -125,7 +125,7 @@ Questo processo mantiene statistiche sul numero di connessioni, sui messaggi inv
 
 ## Livello di persistenza {#persistence-layer}
 
-Il database viene utilizzato come livello di persistenza e contiene quasi tutte le informazioni gestite da Adobe Campaign. Ciò include sia dati funzionali (profili, abbonamenti, contenuti, ecc.), sia dati tecnici (processi e registri di consegna, registri di tracciamento, ecc.) e dati di lavoro (acquisti, lead).
+Il database viene utilizzato come livello di persistenza e contiene quasi tutte le informazioni gestite da Adobe Campaign. Ciò include sia dati funzionali (profili, abbonamenti, contenuti, ecc.) che tecnici (processi e registri di consegna, registri di tracciamento, ecc.) e dati di lavoro (acquisti, lead).
 
 L’affidabilità del database è della massima importanza, in quanto la maggior parte dei componenti di Adobe Campaign richiede l’accesso al database per eseguire le proprie attività (con l’eccezione, in particolare, del modulo di reindirizzamento).
 

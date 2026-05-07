@@ -10,7 +10,7 @@ topic-tags: case-study
 exl-id: 77fee343-09d1-4d60-be43-efe02953a70c
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '458'
 ht-degree: 3%
 
 ---
@@ -47,7 +47,7 @@ Nel nostro database, c&#39;Ã¨ una categoria di offerte di viaggio in Africa. Lâ€
 
    ![](assets/offer_delivery_example_006.png)
 
-1. Utilizza i menu per inserire una prima proposta di offerta e scegliere la funzione di rendering HTML.
+1. Utilizza i menu per inserire una prima proposta di offerta e scegliere la funzione di rendering di HTML.
 
    ![](assets/offer_delivery_example_007.png)
 

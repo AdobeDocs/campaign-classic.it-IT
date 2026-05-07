@@ -21,7 +21,7 @@ Uno dei motivi principali per utilizzarli è **la protezione della tua mailing l
 
 Inoltre, gli indirizzi di seed ti consentono di **visualizzare in anteprima e testare la personalizzazione e il rendering delle consegne** prima del loro invio, inviando loro delle bozze (vedi [Utilizzare gli indirizzi di seed come bozza](steps-defining-the-target-population.md#using-seed-addresses-as-proof)).
 
-![](assets/do-not-localize/how-to-video.png) [Guarda il video su questa funzione](steps-defining-the-target-population.md#seeds-and-proofs-video)
+![](assets/do-not-localize/how-to-video.png) [Guarda un video su questa funzione](steps-defining-the-target-population.md#seeds-and-proofs-video)
 
 La funzione Indirizzi seed offre i seguenti vantaggi:
 

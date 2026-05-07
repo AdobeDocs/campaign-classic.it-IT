@@ -10,7 +10,7 @@ topic-tags: advanced-parameters
 exl-id: d4acf99b-cef4-48f7-b4cd-c032ec12592f
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '160'
 ht-degree: 3%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 3%
 
 
 
-Nel caso di un contatto in entrata (call center o sito web), le offerte più rilevanti sono suggerite a un determinato contatto utilizzando una serie di regole di idoneità. Per arricchire i criteri di idoneità delle offerte, estendere lo schema **nms:interface**.
+Nel caso di un contatto in entrata (call center o sito web), le offerte più rilevanti sono suggerite a un determinato contatto utilizzando una serie di regole di idoneità. Per arricchire i criteri di idoneità delle offerte, estendere lo schema **nms:interaction**.
 
-* Per aggiungere un nuovo contesto di interazione, estendere lo schema **nms:interface** e creare tutti gli elementi **attribute** necessari nello schema.
+* Per aggiungere un nuovo contesto di interazione, estendere lo schema **nms:interaction** e creare tutti gli elementi **attribute** necessari nello schema.
 
   Nell’esempio seguente, i criteri aggiunti sono il codice del paese e l’ultima pagina visitata.
 
@@ -33,4 +33,4 @@ Nel caso di un contatto in entrata (call center o sito web), le offerte più ril
 
   ![](assets/s_ncs_configuration_offer_context.png)
 
-* Durante la configurazione delle chiamate SOAP, inserisci l&#39;elemento XML **context** per fare riferimento alle informazioni di contesto aggiunte nello schema di interazione. Per ulteriori informazioni, consultare [Integrazione tramite SOAP (lato server)](../../interaction/using/integration-via-soap-server-side.md).
+* Durante la configurazione delle chiamate di SOAP, inserisci l&#39;elemento XML **context** per fare riferimento alle informazioni di contesto aggiunte nello schema di interazione. Per ulteriori informazioni, consultare [Integrazione tramite SOAP (lato server)](../../interaction/using/integration-via-soap-server-side.md).

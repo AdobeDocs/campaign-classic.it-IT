@@ -9,7 +9,7 @@ hide: true
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '1981'
 ht-degree: 1%
 
 ---
@@ -114,7 +114,7 @@ Per impostazione predefinita, i messaggi vengono inviati in formato HTML o testo
 
 Adobe Campaign consente di provare il nuovo formato interattivo [AMP per e-mail](https://amp.dev/about/email/), che consente di inviare e-mail dinamiche, in determinate condizioni.
 
-Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=it){target="_blank"}.
+Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html){target="_blank"}.
 
 ## Utilizza gestione contenuti {#using-content-management}
 

@@ -7,7 +7,7 @@ hide: true
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1638'
 ht-degree: 4%
 
 ---
@@ -46,7 +46,7 @@ Immettere un&#39;etichetta e fare clic su **[!UICONTROL Save]**.
 
 ## Aggiungere e collegare attività {#adding-and-linking-activities}
 
-Ora devi definire le varie attività e collegarle nel diagramma. In questa fase della configurazione, è possibile visualizzare l’etichetta del diagramma e lo stato del flusso di lavoro (Modifica in corso). La sezione inferiore della finestra viene utilizzata solo per modificare il diagramma. Contiene una barra degli strumenti, una palette di attività (a sinistra) e il diagramma stesso (a destra).
+Devi ora definire le varie attività e collegarle nel diagramma. In questa fase della configurazione, è possibile visualizzare l’etichetta del diagramma e lo stato del flusso di lavoro (Modifica in corso). La sezione inferiore della finestra viene utilizzata solo per modificare il diagramma. Contiene una barra degli strumenti, una palette di attività (a sinistra) e il diagramma stesso (a destra).
 
 ![](assets/new-workflow-2.png)
 
@@ -154,7 +154,7 @@ I risultati di tutti gli arricchimenti e di tutte le operazioni eseguite durante
 
 ### Dimensioni di targeting e filtro {#targeting-and-filtering-dimensions}
 
-Durante le operazioni di segmentazione dei dati, la chiave di targeting è mappata su una dimensione filtro. La dimensione targeting consente di definire la popolazione target dell’operazione: destinatari, beneficiari del contratto, operatore, abbonati, ecc. La dimensione filtro consente di selezionare la popolazione in base a determinati criteri: titolari di contratti, abbonati a newsletter, ecc.
+Durante le operazioni di segmentazione dei dati, la chiave di targeting è mappata su una dimensione filtro. La dimensione di targeting ti consente di definire la popolazione target dell’operazione: destinatari, beneficiari del contratto, operatore, abbonati, ecc. La dimensione di filtro consente di selezionare la popolazione in base a determinati criteri: titolari di contratti, abbonati a newsletter, ecc.
 
 Ad esempio, per selezionare i clienti che hanno una polizza di assicurazione sulla vita da più di 5 anni, selezionare la seguente dimensione di targeting: **Clienti** e la seguente dimensione di filtro: **Titolare del contratto**. Puoi quindi definire le condizioni di filtro all’interno dell’attività di query
 

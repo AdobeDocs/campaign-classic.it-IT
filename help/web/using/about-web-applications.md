@@ -7,8 +7,8 @@ feature: Landing Pages, Web Apps
 exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 20%
+source-wordcount: '702'
+ht-degree: 19%
 
 ---
 

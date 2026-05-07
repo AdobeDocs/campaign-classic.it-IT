@@ -7,7 +7,7 @@ feature: Surveys
 exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ Per configurare e creare il blocco di riferimento, attieniti alla seguente proce
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sui modelli di consegna, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=it){target="_blank"}.
+   >Per ulteriori informazioni sui modelli di consegna, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
 
 1. Crea il secondo script per la consegna dei messaggi di abbonamento.
 

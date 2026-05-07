@@ -7,7 +7,7 @@ hide: true
 exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '896'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ Per impostare questo caso d’uso, abbiamo creato il seguente flusso di lavoro d
 
 Questo flusso di lavoro (eseguito quotidianamente) seleziona tutti i destinatari il cui compleanno cade nella data corrente.
 
-![](assets/do-not-localize/how-to-video.png) Questo caso d&#39;uso si trova anche sotto forma di video. Per ulteriori informazioni, consulta il video [Creazione di un flusso di lavoro](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html?lang=it).
+![](assets/do-not-localize/how-to-video.png) Questo caso d&#39;uso si trova anche sotto forma di video. Per ulteriori informazioni, consulta il video [Creazione di un flusso di lavoro](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html).
 
 A tale scopo, creare una campagna e fare clic sulla scheda **[!UICONTROL Targeting and workflows]**. Per ulteriori informazioni, consulta la sezione [Creazione della destinazione principale in un flusso di lavoro](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
@@ -71,7 +71,7 @@ A questo scopo, esegui i seguenti passaggi:
 
    Fai clic su **[!UICONTROL Finish]** per confermare.
 
-1. Nell&#39;editor delle query selezionare **[!UICONTROL Operator]** nella prima cella della colonna **[!UICONTROL equal to]**.
+1. Nell&#39;editor delle query selezionare **[!UICONTROL equal to]** nella prima cella della colonna **[!UICONTROL Operator]**.
 
    ![](assets/s_ncs_user_create_exp_exple02.png)
 

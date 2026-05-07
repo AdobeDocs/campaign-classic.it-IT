@@ -8,8 +8,8 @@ hide: true
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 11%
+source-wordcount: '1000'
+ht-degree: 12%
 
 ---
 
@@ -33,7 +33,7 @@ Per creare una notifica push per dispositivi iOS, segui i passaggi seguenti:
 
    >[!NOTE]
    >
-   >Il processo dettagliato durante la selezione della popolazione target di una consegna è presentato in questa sezione nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it#target-population.){target="_blank"}.
+   >Il processo dettagliato durante la selezione della popolazione target di una consegna è presentato in questa sezione nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population.){target="_blank"}.
    >
    >Per ulteriori informazioni sull&#39;utilizzo dei campi di personalizzazione, consulta [questa sezione](about-personalization.md).
    >

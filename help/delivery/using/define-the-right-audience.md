@@ -9,8 +9,8 @@ hide: true
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 5%
+source-wordcount: '554'
+ht-degree: 8%
 
 ---
 
@@ -38,7 +38,7 @@ Puoi anche creare e utilizzare una mappatura di destinazione personalizzata. Per
 
 ## Destinatari esterni {#external-recipients}
 
-Puoi consegnare a destinatari memorizzati in un file esterno anziché salvati nel database. Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it#selecting-external-recipients){target="_blank"}.
+Puoi consegnare a destinatari memorizzati in un file esterno anziché salvati nel database. Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"}.
 
 ## Invia ai tuoi abbonati {#send-to-subscribers}
 
@@ -49,7 +49,7 @@ Per inviare messaggi agli abbonati di una newsletter, puoi indirizzare direttame
 
 Per verificare la consegna, utilizza le bozze prima di inviare al target principale.
 
-Accertati di selezionare i destinatari della bozza appropriati, in quanto convalidano il modulo e il contenuto del messaggio. I passaggi per definire i destinatari della bozza sono descritti nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it#select-the-proof-target){target="_blank"}.
+Accertati di selezionare i destinatari della bozza appropriati, in quanto convalidano il modulo e il contenuto del messaggio. I passaggi per definire i destinatari della bozza sono descritti nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#select-the-proof-target){target="_blank"}.
 
 Gli indirizzi di seed vengono utilizzati per eseguire il targeting dei destinatari che non corrispondono ai criteri di target definiti per testare una consegna prima di inviarla al target principale. Sono presentati [in questa sezione](about-seed-addresses.md).
 

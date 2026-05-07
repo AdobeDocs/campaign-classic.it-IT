@@ -10,8 +10,8 @@ topic-tags: production-procedures
 exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
 source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 3%
+source-wordcount: '458'
+ht-degree: 6%
 
 ---
 
@@ -23,7 +23,7 @@ In questa sezione sono elencati i normali comandi di Adobe Campaign.
 
 Il comando **nlserver** è il comando di input per l&#39;intera applicazione Adobe Campaign.
 
-Sintassi del comando: **nlserver &#x200B;**`<command>`**&#x200B;**`<arguments>`**&#x200B;**
+Sintassi del comando: **nlserver **`<command>`****`<arguments>`****
 
 Il parametro **`<command>`** corrisponde al modulo.
 
@@ -160,7 +160,7 @@ Per modificare la password **internal**: **nlserver config -internalpassword**
 >[!NOTE]
 >
 >* In generale, invece di modificare manualmente i file di configurazione, è possibile utilizzare il comando **config**
->* Per ottenere l&#39;elenco dei parametri, utilizzare **-?Parametro**: **nlserver config -?**
+>* Per ottenere l&#39;elenco dei parametri, utilizzare **-?** parametro: **nlserver config -?**
 >* Nel caso di un database Oracle, non è necessario specificare l’account. La sintassi sarà la seguente:
 >
 >  `nlserver config -setdblogin:Oracle:test6@dbserver`
@@ -172,6 +172,6 @@ Di seguito è riportato un esempio per MSSQL:
 nlserver config -setdblogin:mssql:<login>/"<password>"@<server> -instance:<instance_name> 
 ```
 
-* Il login (ad esempio account:utente) e il server si trovano nel nodo dataSource del file config-&lt;nome_istanza>.xml.
+* Il login (ad esempio account:user) e il server sono disponibili nel nodo dataSource del file config-&lt;nome_istanza>.xml.
 * La password deve essere racchiusa tra virgolette.
 

@@ -9,7 +9,7 @@ topic-tags: interaction-overview
 exl-id: 9e199b7c-9307-4797-bf86-7940388555bc
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1109'
 ht-degree: 0%
 
 ---
@@ -77,5 +77,5 @@ Di seguito è riportata la definizione dei principali elementi di interazione.
 * **Simulazione**: modulo che consente di testare la presentazione delle offerte sui destinatari desiderati prima di inviarle effettivamente.
 * **Anteprima**: anteprima dell&#39;offerta così come viene visualizzata nella cartella. È accessibile dalla finestra delle impostazioni dell’offerta o dal profilo di contatto.
 * **Filtri predefiniti**: le regole di filtro predefinite possono tenere conto dei parametri dell&#39;offerta (ad esempio, un codice offerta). Possono essere riutilizzati dopo la creazione delle offerte.
-* **Rappresentazione offerta**: informazioni utilizzate dal canale per visualizzare l&#39;offerta. La rappresentazione dell’offerta può essere realizzata a partire dalla funzione di rendering dello spazio in cui l’offerta viene rappresentata o immessa direttamente nell’interfaccia (ad esempio, nel blocco HTML). Un’offerta può essere rappresentata da uno spazio.
+* **Rappresentazione offerta**: informazioni utilizzate dal canale per visualizzare l&#39;offerta. La rappresentazione dell’offerta può essere costruita dalla funzione di rendering dello spazio in cui l’offerta viene rappresentata o immessa direttamente nell’interfaccia (ad esempio, nel blocco HTML). Un’offerta può essere rappresentata da uno spazio.
 * **Processo di sostituzione**: processo attivato in un ambiente identificato, responsabile della reindirizzamento della chiamata a un ambiente anonimo se il contatto non è stato identificato in modo esplicito e/o implicito.

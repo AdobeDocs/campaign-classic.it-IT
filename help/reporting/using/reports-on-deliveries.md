@@ -8,7 +8,7 @@ exl-id: dcbf280c-3040-4218-a453-1497662fef2e
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
 source-wordcount: '220'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -37,7 +37,7 @@ Quando viene generato il rapporto, è possibile eseguire varie azioni utilizzand
 
 Puoi eseguire le seguenti azioni:
 
-* Esportare il report in Excel, PDF o Apri documento
+* Esportare il report in Excel, PDF o Open Document,
 * Stampa il report,
 * Creare la cronologia del rapporto,
 * Visualizzare diverse cronologie dei rapporti

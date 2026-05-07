@@ -9,7 +9,7 @@ hide: true
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1422'
+source-wordcount: '1537'
 ht-degree: 3%
 
 ---
@@ -207,6 +207,6 @@ Ad esempio, se hai incluso un elenco di prodotti nell’e-mail, quando modifichi
 
 Il video seguente spiega come attivare AMP in Adobe Campaign e ne illustra l’utilizzo.
 
->[!VIDEO](https://video.tv.adobe.com/v/39583?captions=ita&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
 
 Ulteriori video dimostrativi di Campaign sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

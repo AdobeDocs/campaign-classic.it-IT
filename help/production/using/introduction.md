@@ -9,7 +9,7 @@ topic-tags: updating-adobe-campaign
 exl-id: 3e39a0d2-ff7e-4233-82bb-2b360f696a33
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '194'
 ht-degree: 1%
 
 ---
@@ -22,8 +22,8 @@ Questa sezione descrive la procedura da applicare per aggiornare Adobe Campaign,
 
 >[!NOTE]
 >
->Per le istanze di servizi ospitati/gestiti, è necessario coordinarsi con l&#39;amministratore Adobe.\
->Per le istanze on-premise, puoi ottenere assistenza da Consulenti Adobe.
+>Per le istanze di servizi ospitati/gestiti, è necessario coordinarsi con l’amministratore Adobe.\
+>Per le istanze on-premise, puoi ottenere assistenza dai consulenti Adobe.
 
 L’aggiornamento deve essere applicato a tutti i server in cui è installato Adobe Campaign.
 

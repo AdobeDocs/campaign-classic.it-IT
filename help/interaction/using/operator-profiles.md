@@ -10,7 +10,7 @@ exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
 source-wordcount: '384'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -23,7 +23,7 @@ Esistono due tipi di operatori che utilizzano l’interazione: gestori delle off
 * **[!UICONTROL Offer manager]** : crea e mantiene le offerte. Se le offerte vengono utilizzate nel flusso di lavoro, l&#39;operatore dovrà trovarsi nel gruppo di operatori **[!UICONTROL Administrator]** o **[!UICONTROL Offer managers]** per eseguire il flusso di lavoro.
 * **[!UICONTROL Delivery manager]** : approva e utilizza le offerte
 
-I passaggi per la creazione di operatori specifici per l’interazione sono identici a quelli utilizzati per creare tutti gli altri operatori sulla piattaforma. Per ulteriori informazioni, consulta [questa sezione](../../platform/using/access-management.md). I diritti vengono configurati durante la creazione dell’operatore.
+I passaggi per la creazione di operatori specifici per l’interazione sono identici a quelli utilizzati per creare tutti gli altri operatori sulla piattaforma. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/access-management.md). I diritti vengono configurati durante la creazione dell’operatore.
 
 ## Gestione offerte {#offer-manager}
 

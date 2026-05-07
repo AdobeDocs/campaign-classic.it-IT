@@ -8,8 +8,8 @@ level: Experienced
 exl-id: 6987cb5e-8821-4619-b0e4-f0fad3355bfb
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 8%
+source-wordcount: '1008'
+ht-degree: 10%
 
 ---
 
@@ -126,7 +126,7 @@ A questo scopo, segui la procedura indicata di seguito:
 
    >[!NOTE]
    >
-   >Alcuni caratteri contano come due (parentesi graffe, parentesi quadre, il simbolo dell’euro, ecc.).
+   >Alcuni caratteri contano come due (parentesi graffe e quadre, il simbolo dell’euro, ecc.).
    >
    >L&#39;elenco dei caratteri GSM disponibili è presentato in [questa sezione](sms-set-up.md#about-character-transliteration).
 
@@ -154,7 +154,7 @@ A questo scopo, segui la procedura indicata di seguito:
 
 ## Modificare il modello di consegna {#changing-the-delivery-template}
 
-Adobe Campaign offre un modello di consegna mobile che si trova nel nodo **[!UICONTROL Resources > Templates > Delivery templates]**. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=it){target="_blank"}.
+Adobe Campaign offre un modello di consegna mobile che si trova nel nodo **[!UICONTROL Resources > Templates > Delivery templates]**. Per ulteriori informazioni, fai riferimento alla [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
 
 Per inviare messaggi tramite il canale SMS, devi creare un modello che includa un riferimento al connettore del canale.
 

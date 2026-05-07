@@ -8,7 +8,7 @@ role: User, Developer
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1446'
+source-wordcount: '1460'
 ht-degree: 0%
 
 ---
@@ -66,8 +66,8 @@ Gli attributi e gli elementi del contenuto vengono rappresentati come oggetti di
 
 **Esempio**:
 
-* **contenuto.@name**: recupera il valore dell&#39;attributo &quot;name&quot; dell&#39;elemento principale
-* **contenuto.@`['name']`**: identico al contenuto **.Sintassi @name**
+* **content.@name**: recupera il valore dell&#39;attributo &quot;name&quot; dell&#39;elemento principale
+* **contenuto.@`['name']`**: identico alla sintassi **content.@name**
 * **content.chapter.length**: restituisce il numero di elementi nell&#39;elemento della raccolta `<chapter`
 * **content.chapter`[0]`.@name**: recupera il nome del primo elemento `<chapter>`
 * **chapter.name()**: restituisce il nome dell&#39;elemento `<chapter>`
@@ -79,7 +79,7 @@ Gli attributi e gli elementi del contenuto vengono rappresentati come oggetti di
 >
 >Esempio: `content.@['offer-id']`.
 
-Tutta la potenza di un linguaggio di programmazione (variabili, cicli, test condizionali, funzioni, ecc.) ) è disponibile per creare il documento di output. Le API di SOAP sono accessibili per arricchire il documento di output.
+Per creare il documento di output è disponibile tutta la potenza di un linguaggio di programmazione (variabili, cicli, test condizionali, funzioni, ecc.). Le API di SOAP sono accessibili per arricchire il documento di output.
 
 Esempi:
 

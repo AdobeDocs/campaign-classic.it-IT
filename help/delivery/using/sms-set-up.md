@@ -8,8 +8,8 @@ level: Experienced
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1736'
-ht-degree: 27%
+source-wordcount: '1740'
+ht-degree: 30%
 
 ---
 
@@ -66,7 +66,7 @@ A questo scopo, segui la procedura indicata di seguito:
 
    >[!NOTE]
    >
-   >Alcuni caratteri contano come due (parentesi graffe, parentesi quadre, il simbolo dell’euro, ecc.).
+   >Alcuni caratteri contano come due (parentesi graffe e quadre, il simbolo dell’euro, ecc.).
    >
    >L’elenco dei caratteri GSM disponibili è presentato di seguito.
 
@@ -150,7 +150,7 @@ La tabella seguente presenta i caratteri presi in considerazione dallo standard 
   <tr> 
    <td> ¥ </td> 
    <td> <img height="21px" src="assets/gamma.png" /> </td> 
-   <td> N. </td> 
+   <td> # </td> 
    <td> 3 </td> 
    <td> C </td> 
    <td> S </td> 
@@ -160,7 +160,7 @@ La tabella seguente presenta i caratteri presi in considerazione dallo standard 
   <tr> 
    <td> è </td> 
    <td> <img height="21px" src="assets/delta.png" /> </td> 
-   <td> &rbrace;Permesso </td> 
+   <td> }Permesso </td> 
    <td> 4 </td> 
    <td> D </td> 
    <td> M </td> 
@@ -180,7 +180,7 @@ La tabella seguente presenta i caratteri presi in considerazione dallo standard 
   <tr> 
    <td> ù </td> 
    <td> <img height="21px" src="assets/pi.png" /> </td> 
-   <td> E </td> 
+   <td> &amp; </td> 
    <td> 6 </td> 
    <td> V </td> 
    <td> V </td> 
@@ -290,7 +290,7 @@ CR: Carriage Return (ritorno a capo)
 
 **Caratteri avanzati (contati due volte)**
 
-^ { } `[ ~ ]` | €
+^ { } `[ ~ ]` | EUR
 
 ## Codifiche testo {#about-text-encodings}
 
@@ -353,7 +353,7 @@ I passaggi per configurare un account esterno utilizzando il connettore SMPP gen
 
 ## Modificare il modello di consegna {#changing-the-delivery-template}
 
-Adobe Campaign fornisce un modello per la consegna a dispositivi mobili. Questo modello è disponibile nel nodo **[!UICONTROL Resources > Templates > Delivery templates]**. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=it){target="_blank"}.
+Adobe Campaign fornisce un modello per la consegna a dispositivi mobili. Questo modello è disponibile nel nodo **[!UICONTROL Resources > Templates > Delivery templates]**. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
 
 Per distribuire tramite un canale SMS, devi creare un modello in cui si fa riferimento al connettore del canale.
 

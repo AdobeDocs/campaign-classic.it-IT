@@ -7,7 +7,7 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '770'
 ht-degree: 2%
 
 ---
@@ -101,7 +101,7 @@ Ad esempio, creeremo un collegamento a un rapporto per renderlo accessibile tram
 
    ![](assets/s_ncs_advuser_report_wizard_link_04.png)
 
-1. Publish il tuo rapporto.
+1. Pubblica il rapporto.
 1. Vai a uno degli elenchi dei destinatari e fai clic sul collegamento **[!UICONTROL Reports]**: il report appena creato è accessibile.
 
    ![](assets/s_ncs_advuser_report_wizard_link_05.png)
@@ -122,7 +122,7 @@ Impostazioni specifiche consentono di controllare gli errori. L&#39;impostazione
 
 Per ulteriori informazioni su queste impostazioni, fare riferimento alla sezione **Definizione delle proprietà del modulo Web** del capitolo [Moduli Web](../../web/using/about-web-forms.md).
 
-## Publish il rapporto {#publishing-the-report}
+## Pubblicare il rapporto {#publishing-the-report}
 
 La pubblicazione del report è obbligatoria per condividerlo con altri operatori e visualizzarlo nell&#39;elenco dei report disponibili (fare riferimento anche a [Contesto di visualizzazione report](#report-display-context)). Questa operazione deve essere ripetuta ogni volta che il rapporto viene modificato.
 

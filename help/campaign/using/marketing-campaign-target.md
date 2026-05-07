@@ -8,7 +8,7 @@ hide: true
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1492'
+source-wordcount: '1508'
 ht-degree: 1%
 
 ---
@@ -92,7 +92,7 @@ I flussi di lavoro di targeting possono essere avviati manualmente tramite il pu
 
 Il targeting può essere programmato per l’esecuzione automatica in base a una pianificazione (scheduler) o a un evento (segnale esterno, importazione file, ecc.).
 
-Le azioni correlate all&#39;esecuzione del flusso di lavoro di targeting (avvio, arresto, pausa, ecc.) sono **processi asincroni**: il comando viene salvato e avrà effetto non appena il server sarà disponibile per applicarlo.
+Le azioni relative all’esecuzione del flusso di lavoro di targeting (avvio, arresto, pausa, ecc.) sono **processi asincroni**: il comando viene salvato e avrà effetto non appena il server sarà disponibile per applicarlo.
 
 Le icone della barra degli strumenti consentono di intervenire sull’esecuzione del flusso di lavoro di targeting.
 
@@ -245,6 +245,6 @@ Questa configurazione equivale a un’attività di condivisione nel flusso di la
 
 Questo video spiega come creare una campagna e un messaggio e-mail in Adobe Campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/329889?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 Ulteriori video dimostrativi di Campaign sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

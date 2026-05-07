@@ -9,8 +9,8 @@ topic-tags: connectors
 exl-id: 240d7e11-da3a-4d64-8986-1f1c8ebcea3c
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 0%
+source-wordcount: '644'
+ht-degree: 1%
 
 ---
 
@@ -58,7 +58,7 @@ Per abilitare una connessione a un database esterno condiviso, finché la connes
 Ad esempio, nell’attività Query, i passaggi per creare una connessione periodica a un database esterno sono i seguenti:
 
 1. Fare clic su **[!UICONTROL Add data...]** e selezionare le opzioni **[!UICONTROL External data]**.
-1. Selezionare l&#39;opzione **[!UICONTROL Locally defining the data source]**.
+1. Seleziona l’opzione **[!UICONTROL Locally defining the data source]**.
 
    ![](assets/wf_add_data_local_external_data.png)
 
@@ -95,7 +95,7 @@ Ad esempio, nell’attività Query, i passaggi per creare una connessione period
 
 Puoi proteggere l’accesso a un database esterno durante la configurazione di un account FDA esterno.
 
-Per eseguire questa operazione, aggiungere &quot;**:ssl**&quot; dopo l&#39;indirizzo del server e l&#39;indirizzo della porta utilizzata. Ad esempio: **192.168.0.52:4501:ssl**.
+Per eseguire questa operazione, aggiungere &quot;**:ssl**&quot; dopo l&#39;indirizzo del server e l&#39;indirizzo della porta utilizzata. Esempio: **192.168.0.52:4501:ssl**.
 
 I dati verranno quindi inviati tramite il protocollo SSL protetto.
 

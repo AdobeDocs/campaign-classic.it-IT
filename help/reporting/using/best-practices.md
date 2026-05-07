@@ -7,8 +7,8 @@ badge: label="v7" type="Informative" tooltip="Applicabile solo a Campaign Classi
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
 source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 5%
+source-wordcount: '857'
+ht-degree: 6%
 
 ---
 
@@ -113,4 +113,4 @@ Inoltre, Adobe Campaign consiglia di apportare i seguenti miglioramenti:
 
 ### Esportazione dei rapporti {#exporting-reports}
 
-Recommendations specifico per l&#39;esportazione dei report è descritto in [questa sezione](../../reporting/using/actions-on-reports.md#exporting-a-report).
+I consigli specifici per l&#39;esportazione dei report sono descritti in [questa sezione](../../reporting/using/actions-on-reports.md#exporting-a-report).

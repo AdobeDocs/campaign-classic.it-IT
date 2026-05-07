@@ -7,8 +7,8 @@ role: Developer
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 2%
+source-wordcount: '625'
+ht-degree: 3%
 
 ---
 
@@ -62,7 +62,7 @@ Descrizione del metodo &quot;subscribe&quot; nello schema &quot;nms:subscription
 </method>
 ```
 
-La definizione della chiave di riconciliazione deve essere immessa tramite l&#39;attributo _&#x200B;**key** nell&#39;elemento `<recipient>` del documento XML. Il contenuto di questo attributo è un elenco XPath separato da virgole.
+La definizione della chiave di riconciliazione deve essere immessa tramite l&#39;attributo _**key** nell&#39;elemento `<recipient>` del documento XML. Il contenuto di questo attributo è un elenco XPath separato da virgole.
 
 Questa chiamata non restituisce alcun dato, ad eccezione degli errori.
 

@@ -10,8 +10,8 @@ topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 2%
+source-wordcount: '963'
+ht-degree: 3%
 
 ---
 
@@ -74,7 +74,7 @@ Selezionate un formato di output per il file di esportazione. È possibile utili
 * Per il formato **[!UICONTROL Text]**, selezionare i delimitatori per separare le colonne (tabulazioni, virgole, punti e virgola o personalizzati) e le stringhe (virgolette singole o doppie o nessuna).
 * Per **[!UICONTROL text]** e **[!UICONTROL CSV]**, è possibile selezionare l&#39;opzione **[!UICONTROL Use first lines as column titles]**.
 * Indicare il formato della data e del numero. A tale scopo, fare clic sul pulsante **[!UICONTROL Edit]** per il campo interessato e utilizzare l&#39;editor.
-* Per i campi contenenti valori enumerati, è possibile selezionare **[!UICONTROL Export labels instead of internal values of enumerations]**. Ad esempio, il titolo può essere memorizzato nel formato **1=Sig.**, **2=Miss**, **3=Signora**. Se questa opzione è selezionata, verranno esportati **Mr**, **Miss** e **Mrs**.
+* Per i campi contenenti valori enumerati, è possibile selezionare **[!UICONTROL Export labels instead of internal values of enumerations]**. Ad esempio, il titolo può essere archiviato nel formato **1=Sig.**, **2=Sig.ra**, **3=Sig.ra**. Se questa opzione è selezionata, verranno esportati **Mr**, **Miss** e **Mrs**.
 
 ## Passaggio 4: selezione dei dati {#step-4---data-selection}
 

@@ -7,7 +7,7 @@ feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: cb76f3dc-7f3a-49de-89cb-c106865ecb17
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '547'
 ht-degree: 3%
 
 ---
@@ -54,7 +54,7 @@ Sono disponibili quattro icone:
 
   ![](assets/dce_create_fromtemplate.png)
 
-* L&#39;icona **Proprietà pagina** consente di selezionare le informazioni sul contenuto nella parte superiore della pagina di HTML.
+* L&#39;icona **Proprietà pagina** consente di selezionare le informazioni sul contenuto nella parte superiore della pagina HTML.
 
   ![](assets/dce_popup_headerhtml.png)
 

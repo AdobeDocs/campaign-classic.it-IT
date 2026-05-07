@@ -9,7 +9,7 @@ topic-tags: event-processing
 exl-id: 930c6395-0c00-40ee-a925-3e0cae67c55f
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '249'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ Per impostazione predefinita, sono ordinate in sottocartelle per mese di consegn
 
 ## Monitoraggio dei messaggi transazionali {#transactional-message-monitoring}
 
-Per monitorare i messaggi transazionali, controlla i [registri di consegna](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
+Per monitorare i messaggi transazionali, controlla i [registri di consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
 
 Le consegne transazionali inviate dall&#39;istanza di esecuzione vengono sincronizzate con l&#39;istanza di controllo tramite un flusso di lavoro tecnico (**[!UICONTROL Message Center execution instance]**) che viene eseguito ogni ora.
 

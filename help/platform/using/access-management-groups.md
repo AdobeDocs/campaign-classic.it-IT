@@ -9,8 +9,8 @@ level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
 source-git-commit: a5bbd2e6c102a8afa4cd5931b77b0c83705a7bfa
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 1%
+source-wordcount: '589'
+ht-degree: 4%
 
 ---
 
@@ -67,7 +67,7 @@ I gruppi di operatori predefiniti sono:
 
 1. **[!UICONTROL Campaign managers]**
 
-   Gli operatori di questo gruppo possono gestire le campagne di marketing: ti consente di accedere agli oggetti collegati alle campagne (piani, programmi, flussi di lavoro, budget, ecc.) nel framework di **[!UICONTROL Campaign]** (modulo Adobe Campaign facoltativo).
+   Gli operatori di questo gruppo possono gestire le campagne di marketing: ti consente di accedere agli oggetti collegati alle campagne (piani, programmi, flussi di lavoro, budget, ecc.) nel framework di **[!UICONTROL Campaign]** (modulo Adobe Campaign opzionale).
 
    Questo gruppo contiene i seguenti diritti denominati:
 

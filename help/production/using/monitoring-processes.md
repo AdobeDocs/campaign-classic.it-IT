@@ -10,8 +10,8 @@ topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
 source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
 workflow-type: tm+mt
-source-wordcount: '3643'
-ht-degree: 0%
+source-wordcount: '3682'
+ht-degree: 1%
 
 ---
 
@@ -281,7 +281,7 @@ L’elenco degli indicatori per questo rapporto è riportato sotto il grafico.
 
    * Curva blu: coda di messaggi attivi. Questi messaggi saranno inviati il prima possibile.
 
-   * Curva di Kaki: la coda &#39;differita&#39;. Questi messaggi non possono essere restituiti per il momento a causa di limitazioni o perché non è disponibile alcuna connessione alla destinazione. I tentativi avranno luogo ogni 5, 10, 20, 40, 2 min, ecc. per il periodo di tempo definito **MaxAgeSec** prima di essere abbandonato.
+   * Curva di Kaki: la coda &#39;differita&#39;. Questi messaggi non possono essere restituiti per il momento a causa di limitazioni o perché non è disponibile alcuna connessione alla destinazione. I nuovi tentativi avranno luogo ogni 5, 10, 20, 40, 2 minuti e così via per il periodo di tempo **MaxAgeSec** definito prima di essere abbandonato.
 
 1. Questo grafico mostra un dettaglio dei messaggi abbandonati (curva rossa nel secondo grafico): mostra la proporzione di messaggi abbandonati senza nuovi tentativi (malva) rispetto ai messaggi con invio non riuscito (rossa). Questo consente di visualizzare la proporzione di messaggi non elaborati entro il periodo concesso a causa di limitazioni del server di statistiche (limitazione) o a causa dell’indisponibilità del server remoto.
 1. Le connessioni SMTP si aprono o vengono aperte.
@@ -553,7 +553,7 @@ Questo elemento viene utilizzato per popolare la configurazione delle e-mail, ad
 * **mailServer**: server SMTP utilizzato per inviare le e-mail (esempio: smtp.domain.net).
 * **mailFrom**: indirizzo e-mail del mittente del report (esempio: monitoring@domain.net).
 * **recipientList**: elenco di indirizzi e-mail dei destinatari del monitoraggio. Gli indirizzi devono essere separati da virgole (senza spazi).
-* La modalità &#39;**notte**&#39; (facoltativa) viene utilizzata per evitare l&#39;invio di e-mail tra il periodo di tempo specificato. Al contrario, i dati vengono consolidati e un’e-mail riguardante l’attività della notte viene inviata dopo l’ora di fine (7:00 per impostazione predefinita).
+* La modalità &#39;**notte**&#39; (facoltativa) viene utilizzata per evitare l&#39;invio di e-mail tra il periodo di tempo specificato. Piuttosto, i dati vengono consolidati e un’e-mail riguardante l’attività della notte viene inviata dopo l’ora di fine (7:00 per impostazione predefinita).
 * Il sottoelemento **buildRange** (facoltativo) consente di specificare un numero di build minimo e massimo. Verrà generato un errore per tutti i computer il cui numero di build non rientra in questo intervallo
 
   ```

@@ -8,7 +8,7 @@ audience: integrations
 content-type: reference
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Questo secondo esempio rileva tutti i trigger.
 
 >[!NOTE]
 >
->Il valore UID [!DNL Trigger] per un nome trigger specifico nell&#39;interfaccia di Analytics può essere trovato come parte dei parametri querystring dell&#39;URL nell&#39;interfaccia Triggers. L’UID triggerType viene passato nel flusso di dati della pipeline e il codice può essere scritto nel file pipeline.JS per mappare l’UID del trigger a un’etichetta intuitiva che può essere memorizzata in una colonna Nome trigger nello schema pipelineEvents.
+>Il valore UID [!DNL Trigger] per un nome trigger specifico nell&#39;interfaccia di Analytics può essere trovato come parte dei parametri querystring dell&#39;URL nell&#39;interfaccia Triggers. L’UID triggerType viene passato nel flusso di dati della pipeline e il codice può essere scritto nel file pipeline.JS per mappare l’UID trigger a un’etichetta intuitiva che può essere memorizzata in una colonna Nome trigger nello schema pipelineEvents.
 
 ## Il parametro consumer {#consumer-parameter}
 

@@ -10,7 +10,7 @@ hide: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '2517'
+source-wordcount: '2546'
 ht-degree: 1%
 
 ---
@@ -151,7 +151,7 @@ Alcuni schemi predefiniti sono stati modificati e, per impostazione predefinita,
 
 ### Parametro Sessiontoken {#sessiontoken-parameter}
 
-Nella versione v5, il parametro **sessiontoken** funzionava sia sul lato client (elenco di schermate di tipo panoramica, editor collegamenti, ecc.) che sul lato server (applicazioni web, report, jsp, jssp, ecc.). Nella versione 7 funziona solo sul lato server. Se desideri tornare alla funzionalità completa come in v5, devi modificare i collegamenti utilizzando questo parametro e passare tramite la pagina di connessione:
+Nella versione v5, il parametro **sessiontoken** funzionava sia sul lato client (elenco di schermate di tipo panoramica, editor di collegamenti, ecc.) e lato server (applicazioni web, report, jsp, jssp, ecc.). Nella versione 7 funziona solo sul lato server. Se desideri tornare alla funzionalità completa come in v5, devi modificare i collegamenti utilizzando questo parametro e passare tramite la pagina di connessione:
 
 Esempio di collegamento:
 
@@ -390,7 +390,7 @@ L&#39;alias è facoltativo
 
 **Suggerimenti**
 
-In un elemento `<subQuery>`, per fare riferimento a un campo &quot;field&quot; del `<queryDef>` principale   , utilizzare la sintassi seguente: `[../@field]`
+In un elemento `<subQuery>`, per fare riferimento a un campo &quot;field&quot; dell&#39;elemento `<queryDef>` principale, utilizzare la sintassi seguente: `[../@field]`
 
 Esempio:
 

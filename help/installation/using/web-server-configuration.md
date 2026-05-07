@@ -9,7 +9,7 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: fc0d3f16-5f62-473d-a1de-aab574eff734
 source-git-commit: dba90a154e08400ae6ab6478623a50d48d72207c
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
@@ -81,5 +81,5 @@ Di seguito sono riportate alcune delle best practice principali relative alla co
 
 Argomenti correlati:
 
-* [Panoramica sulla conformità di Adobe Marketing Cloud](https://experienceleague.adobe.com/it/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
-* [Panoramica sulla sicurezza di Adobe Campaign](https://experienceleague.adobe.com/it/docs/experience-platform/landing/governance-privacy-security/overview#security)
+* [Panoramica sulla conformità Adobe Marketing Cloud](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
+* [Panoramica sulla sicurezza di Adobe Campaign](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#security)

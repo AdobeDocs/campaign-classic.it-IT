@@ -6,7 +6,7 @@ feature: Data Model
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
 source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '4005'
+source-wordcount: '4078'
 ht-degree: 1%
 
 ---
@@ -146,7 +146,7 @@ Quando si crea una tabella personalizzata in Adobe Campaign con una chiave prima
 
 Per impostazione predefinita, una sequenza personalizzata avrà valori compresi tra +1.000 e +2,1BB. Tecnicamente, è possibile ottenere una gamma completa di 4BB abilitando gli ID negativi. Questo deve essere utilizzato con cautela e un ID andrà perso quando si passa da numeri negativi a numeri positivi: il record 0 viene in genere ignorato da Adobe Campaign nelle query SQL generate.
 
-Per ulteriori informazioni sull&#39;esaurimento delle sequenze, guarda [questo video](https://helpx.adobe.com/it/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
+Per ulteriori informazioni sull&#39;esaurimento delle sequenze, guarda [questo video](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
 
 ## Indici {#indexes}
 
@@ -223,7 +223,7 @@ Per impostazione predefinita, Adobe Campaign crea un collegamento utilizzando la
 
 Un indice verrà aggiunto agli attributi utilizzati in un collegamento.
 
-Il   i collegamenti creato da e modificato da ultimo sono presenti in molte tabelle. È possibile disattivare l’indice utilizzando l’attributo noDbIndex sul collegamento, se queste informazioni non sono utilizzate dall’azienda.
+I collegamenti creato da e modificato da ultimo sono presenti in molte tabelle. È possibile disattivare l’indice utilizzando l’attributo noDbIndex sul collegamento, se queste informazioni non sono utilizzate dall’azienda.
 
 ### Cardinalità {#cardinality}
 
@@ -248,7 +248,7 @@ Per impostazione predefinita, i registri di consegna e tracciamento di Adobe Cam
 
 Ulteriori informazioni sulla conservazione dei dati in [Linee guida per la privacy e la sicurezza di Campaign](../../platform/using/privacy-and-recommendations.md).
 
-Ulteriori informazioni sul flusso di lavoro di pulizia del database di Campaign [&#x200B; in questa sezione](../../production/using/database-cleanup-workflow.md).
+Ulteriori informazioni sul flusso di lavoro di pulizia del database di Campaign [ in questa sezione](../../production/using/database-cleanup-workflow.md).
 
 >[!IMPORTANT]
 >
@@ -264,7 +264,7 @@ Esistono alcune soluzioni per ridurre al minimo la necessità di record in Adobe
 
 Per garantire prestazioni migliori in qualsiasi momento, segui le best practice riportate di seguito.
 
-### Raccomandazioni generali {#general-recommendations}
+### Consigli generali {#general-recommendations}
 
 * Evita di utilizzare operazioni come &quot;CONTAINS&quot; nelle query. Se sai cosa è previsto e desideri filtrare, applica la stessa condizione con un &quot;UGUALE A&quot; o altri operatori di filtro specifici.
 * Evita l’unione di con campi non indicizzati durante la creazione di dati nei flussi di lavoro.

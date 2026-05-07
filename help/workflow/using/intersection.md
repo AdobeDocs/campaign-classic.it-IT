@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: 'Intersezione '
-description: 'Intersezione '
+title: Intersezione
+description: Intersezione
 feature: Workflows, Targeting Activity
 hide: true
 exl-id: f426bf02-9899-49eb-b699-728d51b57c64
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '432'
-ht-degree: 12%
+ht-degree: 15%
 
 ---
 
-# Intersezione {#intersection}
+# Intersezione{#intersection}
 
 >[!CONTEXTUALHELP]
 >id="ac_workflow_intersection"
@@ -21,7 +21,7 @@ ht-degree: 12%
 
 Un&#39;attività di tipo **Intersection** crea una destinazione dall&#39;intersezione delle destinazioni ricevute.
 
-Un’intersezione ti consente di estrarre solo la popolazione comune a tutti i risultati delle attività in entrata. Il target viene creato con tutti i risultati ricevuti: tutte le attività precedenti devono quindi essere completate prima che l’intersezione possa essere eseguita. Per configurare questa attività, devi immettere un’etichetta e le opzioni relative al risultato.
+L’intersezione consente di estrarre solo la popolazione comune a tutti i risultati delle attività in entrata. Il target viene creato con tutti i risultati ricevuti: tutte le attività precedenti devono quindi essere completate prima che l’intersezione possa essere eseguita. Per configurare questa attività, devi immettere un’etichetta e le opzioni relative al risultato.
 
 ![](assets/s_user_segmentation_inter.png)
 

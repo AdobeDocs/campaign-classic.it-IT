@@ -9,8 +9,8 @@ level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1237'
-ht-degree: 2%
+source-wordcount: '1274'
+ht-degree: 5%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Queste procedure si applicano solo agli operatori che si connettono a Campaign con autenticazione nativa. Per l&#39;autenticazione Adobe IMS, consulta [questa documentazione](https://helpx.adobe.com/it/enterprise/using/manage-users-individually.html#_blank).
+>Queste procedure si applicano solo agli operatori che si connettono a Campaign con autenticazione nativa. Per l&#39;autenticazione Adobe IMS, consulta [questa documentazione](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#_blank).
 
 Un operatore è un utente di Adobe Campaign che dispone delle autorizzazioni per accedere ed eseguire azioni.
 
@@ -56,7 +56,7 @@ Per creare un nuovo operatore e concedere le autorizzazioni, effettua le seguent
 
 1. Specificare **[!UICONTROL Identification parameters]** dell&#39;utente: nome di accesso, password e nome. L’operatore utilizzerà le credenziali di accesso e la password per accedere ad Adobe Campaign. Una volta effettuato l&#39;accesso, l&#39;utente può modificare la password tramite il menu **[!UICONTROL Tools > Change password]**. L’e-mail dell’operatore è essenziale in quanto consente all’operatore di ricevere notifiche, ad esempio durante l’elaborazione delle approvazioni.
 
-   Questa sezione ti consente anche di collegare un operatore a un’entità organizzativa. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=it){target="_blank"}.
+   Questa sezione ti consente anche di collegare un operatore a un’entità organizzativa. Per ulteriori informazioni, fai riferimento alla [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=it){target="_blank"}.
 
 1. Selezionare le autorizzazioni concesse all&#39;operatore nella sezione **[!UICONTROL Operator access rights]**.
 

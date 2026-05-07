@@ -7,8 +7,8 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 exl-id: f5d65e89-6b18-482b-97d8-11ab94f6775e
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 0%
+source-wordcount: '294'
+ht-degree: 3%
 
 ---
 
@@ -22,7 +22,7 @@ Con Digital Content Editor è possibile inserire e formattare elementi di pagina
 
 >[!NOTE]
 >
->Se devi aggiungere codice JavaScript lato server, utilizza i blocchi di personalizzazione. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=it){target="_blank"}.
+>Se devi aggiungere codice JavaScript lato server, utilizza i blocchi di personalizzazione. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
 
 >[!CAUTION]
 >

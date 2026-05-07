@@ -36,7 +36,7 @@ La creazione di un nuovo modulo consente di visualizzare e modificare i dati del
 >Il nome del modulo deve essere identico al nome dello schema a cui si riferisce.
 
 1. Vai al nodo **Amministrazione > Configurazione > Moduli di input** dell&#39;Explorer.
-1. Crea un nuovo file **form:form** di tipo **xtk**.
+1. Crea un nuovo file **form** di tipo **xtk:form**.
 1. Descrivere tutti i campi di monitoraggio e i campi necessari a seconda del modello di tabella.
 
    >[!NOTE]

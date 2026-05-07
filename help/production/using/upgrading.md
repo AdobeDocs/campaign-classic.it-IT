@@ -10,8 +10,8 @@ topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
 source-git-commit: 0da7fb912a909af222d796652efba4b30e39dc1c
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 2%
+source-wordcount: '1281'
+ht-degree: 6%
 
 ---
 
@@ -21,7 +21,7 @@ Prima di avviare il processo di aggiornamento, determinare e confermare a quale 
 
 >[!IMPORTANT]
 >
->* L’Adobe consiglia vivamente di eseguire un backup del database su ogni istanza prima di eseguire l’aggiornamento. Per ulteriori informazioni, consulta [questa sezione](../../production/using/backup.md).
+>* Adobe consiglia vivamente di eseguire un backup del database su ogni istanza prima di eseguire l’aggiornamento. Per ulteriori informazioni, consulta [questa sezione](../../production/using/backup.md).
 >* Per eseguire un aggiornamento, assicurati di disporre delle capacità e delle autorizzazioni necessarie per accedere alle istanze e ai registri.
 >* Prima di iniziare, leggi [questa sezione](../../installation/using/general-architecture.md) e il capitolo [aggiornamento build](https://helpx.adobe.com/it/campaign/kb/acc-build-upgrade.html).
 >

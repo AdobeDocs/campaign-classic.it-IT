@@ -6,7 +6,7 @@ description: Scopri in che modo le campagne possono essere influenzate dalla fun
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2064'
+source-wordcount: '2099'
 ht-degree: 1%
 
 ---
@@ -94,7 +94,7 @@ In questo esempio, un addetto al marketing desidera inviare un’offerta di rico
 
   ![](assets/identify-email-open-tracking-2.png)
 
-* Puoi utilizzare un filtro predefinito. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=it){target="_blank"}.
+* Puoi utilizzare un filtro predefinito. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html){target="_blank"}.
 
   ![](assets/identify-email-open-tracking-3.png)
 
@@ -371,7 +371,7 @@ Puoi esportare i risultati in una soluzione di archiviazione esterna supportata 
 
 * SFTP
 * S3
-* BLOB di Azure
+* Blob Azure
 
 ##### Implementazione
 

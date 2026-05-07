@@ -8,8 +8,8 @@ hide: true
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 3%
+source-wordcount: '1007'
+ht-degree: 4%
 
 ---
 
@@ -63,7 +63,7 @@ Per integrare Campaign SDK nell’app mobile, l’amministratore funzionale deve
 
   >[!NOTE]
   >
-  >Questa chiave di integrazione viene immessa nella console Adobe Campaign, nella scheda **[!UICONTROL Information]** del servizio dedicato all&#39;app mobile. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=it){target="_blank"}.
+  >Questa chiave di integrazione viene immessa nella console Adobe Campaign, nella scheda **[!UICONTROL Information]** del servizio dedicato all&#39;app mobile. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}.
 
 * **URL di tracciamento**: corrispondente all&#39;indirizzo del server di tracciamento di Adobe Campaign.
 * **URL di marketing**: per abilitare la raccolta di sottoscrizioni.

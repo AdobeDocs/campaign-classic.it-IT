@@ -7,7 +7,7 @@ hide: true
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1970'
+source-wordcount: '1974'
 ht-degree: 3%
 
 ---
@@ -219,7 +219,7 @@ Per evitare questo problema, è possibile trascinare un&#39;attività **[!UICONT
 
 L&#39;opzione **[!UICONTROL Enable overlapping of output populations]** consente di gestire le popolazioni appartenenti a diversi sottoinsiemi:
 
-* Quando questa opzione non è selezionata, l’attività Dividi si assicura che un destinatario non possa essere presente in diverse transizioni di output, anche se soddisfa i criteri di diversi sottoinsiemi. Saranno nel target della prima scheda con criteri corrispondenti.
+* Quando questa opzione non è selezionata, l’attività Dividi si assicura che un destinatario non possa essere presente in diverse transizioni di output, anche se soddisfa i criteri di diversi sottoinsiemi. Saranno nella destinazione della prima scheda con i criteri corrispondenti.
 * Quando questa opzione è selezionata, i destinatari possono essere in più sottoinsiemi se soddisfano i rispettivi criteri di filtro. Adobe Campaign consiglia di usare criteri esclusivi.
 
 ## Parametri di input {#input-parameters}

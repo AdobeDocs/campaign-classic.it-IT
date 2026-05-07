@@ -9,7 +9,7 @@ topic-tags: connectors
 exl-id: b148d34b-4060-4c54-9cb2-9e712a7c17d7
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
@@ -20,10 +20,10 @@ ht-degree: 0%
 
 Utilizza l&#39;opzione [Federated Data Access](../../installation/using/about-fda.md) (FDA) di Campaign per elaborare le informazioni archiviate in un database esterno. Segui i passaggi seguenti per configurare l’accesso a Netezza.
 
-1. Installa e configura [driver di Netezza](#netezza-config)
+1. Installa e configura [driver Netezza](#netezza-config)
 1. Configura l&#39;[account esterno](#netezza-external) di Netezza in Campaign
 
-## Netezza configurazione {#netezza-config}
+## Configurazione Netezza {#netezza-config}
 
 La connessione a un database esterno Netezza in FDA richiede configurazioni aggiuntive di seguito sul server Adobe Campaign:
 
@@ -70,7 +70,7 @@ La connessione a un database esterno Netezza in FDA richiede configurazioni aggi
    * **ODBCINI**: percorso del file odbc.ini (ad esempio /etc/odbc.ini).
    * **NZ_ODBC_INI_PATH**: percorso del file odbc.ini. Netezza richiede anche questa seconda variabile per utilizzare il file odbc.ini.
 
-## Netezza account esterno {#netezza-external}
+## Account esterno Netezza {#netezza-external}
 
 L’account esterno Netezza ti consente di collegare l’istanza Campaign al database esterno Netezza.
 

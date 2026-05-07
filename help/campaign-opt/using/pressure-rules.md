@@ -8,7 +8,7 @@ hide: true
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '3335'
+source-wordcount: '3362'
 ht-degree: 6%
 
 ---
@@ -24,7 +24,7 @@ L’implementazione della gestione della pressione di vendita consente di evitar
 Le campagne vengono selezionate in base a soglie e peso del messaggio definiti.
 
 * Una soglia è il numero più elevato di consegne autorizzate per un determinato destinatario in un determinato periodo. Può essere impostato o variabile. Viene impostata o calcolata nelle impostazioni delle regole di tipologia. Fai riferimento a [Numero massimo di messaggi](#maximum-number-of-messages).
-* Il peso delle consegne consente di individuare le consegne prioritarie nel quadro della gestione della pressione. I messaggi con il peso maggiore hanno la priorità. Consulta [Peso del messaggio](#message-weight).
+* Il peso delle consegne consente di individuare le consegne prioritarie nel quadro della gestione della pressione. I messaggi con il peso maggiore hanno priorità. Consulta [Peso del messaggio](#message-weight).
 
 L’arbitrato consiste nell’assicurarsi che le campagne pianificate il cui peso è maggiore della campagna in corso non comportino un’eccessiva sollecitazione del profilo: in questo caso, il profilo viene escluso dalla consegna.
 

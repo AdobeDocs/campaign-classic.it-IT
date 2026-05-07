@@ -7,7 +7,7 @@ role: Developer
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '2354'
+source-wordcount: '2376'
 ht-degree: 2%
 
 ---
@@ -113,7 +113,7 @@ Questo set di tabelle è collegato al modulo **Delivery**, che consente di monit
 
 ## Gestione delle campagne {#campaign-management}
 
-Questo set di tabelle è collegato al modulo **Campagne di marketing**, che consente di definire, ottimizzare, eseguire e analizzare le campagne di comunicazione e marketing. Per ulteriori informazioni, fai riferimento alla [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=it){target=_blank}.
+Questo set di tabelle è collegato al modulo **Campagne di marketing**, che consente di definire, ottimizzare, eseguire e analizzare le campagne di comunicazione e marketing. Per ulteriori informazioni, fai riferimento alla [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
 
 ![](assets/data-model_campaign.png)
 

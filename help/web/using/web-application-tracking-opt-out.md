@@ -7,7 +7,7 @@ feature: Web Apps
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '719'
 ht-degree: 2%
 
 ---
@@ -22,13 +22,13 @@ Se un utente finale rinuncia al tracciamento comportamentale tramite cookie o we
 
 >[!NOTE]
 >
->Durante la creazione degli script, seguire sempre le linee guida descritte nell&#39;[Elenco di controllo protezione e privacy](https://helpx.adobe.com/it/campaign/kb/acc-security.html#dev).
+>Durante la creazione degli script, seguire sempre le linee guida descritte nell&#39;[Elenco di controllo protezione e privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#dev).
 
 ## Configurazione del banner {#configuring-the-banner-}
 
 Per essere visualizzato nelle applicazioni web o nelle pagine di destinazione, è necessario configurare il banner.
 
-Adobe Campaign viene fornito con un banner di esempio da adattare in base alle tue esigenze. Questa versione del banner viene visualizzata come un blocco di personalizzazione che si trova nella cartella del modello di contenuto. consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=it){target="_blank"}.
+Adobe Campaign viene fornito con un banner di esempio da adattare in base alle tue esigenze. Questa versione del banner viene visualizzata come un blocco di personalizzazione che si trova nella cartella del modello di contenuto. consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
 
 >[!IMPORTANT]
 >

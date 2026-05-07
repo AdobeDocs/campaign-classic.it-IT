@@ -7,8 +7,8 @@ feature: Access Management, Permissions
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
 source-git-commit: a5bbd2e6c102a8afa4cd5931b77b0c83705a7bfa
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 8%
+source-wordcount: '315'
+ht-degree: 21%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 8%
 >Dopo questa migrazione, tieni presente che la sezione seguente non è più applicabile.  Scopri come impostare le autorizzazioni con Adobe IMS nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=it){target="_blank"}.
 
 
-Adobe Campaign ti consente di definire e gestire i diritti assegnati ai vari operatori. Si tratta di una serie di diritti e restrizioni che autorizzano o negano:
+Adobe Campaign consente di definire e gestire i diritti assegnati ai vari operatori. Si tratta di una serie di diritti e restrizioni che autorizzano o negano:
 
 * Accesso a determinate funzionalità (tramite i diritti denominati),
 * Accesso a determinati documenti,
@@ -34,9 +34,9 @@ Adobe Campaign ti consente di definire e gestire i diritti assegnati ai vari ope
 
 >[!TAB Documentazione sulle autorizzazioni]
 
-Per ulteriori informazioni sulle **autorizzazioni in Adobe Campaign**, consulta la **[documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}**.
+Per ulteriori informazioni sulle **autorizzazioni in Adobe Campaign**, consulta la **[documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}**.
 
-[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}
 
 
 >[!TAB Gestione delle autorizzazioni per le cartelle]
@@ -70,8 +70,8 @@ There are two types of permissions you can grant to a user:
 
 >[!NOTE]
 >
-> * Before starting defining permissions, Adobe recommends you to read the [Security configuration checklist](https://helpx.adobe.com/it/campaign/kb/acc-security.html).
-> * To learn more about permissions, please refer to the detailed explanation on the [Campaign v8 documentation](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/admin/permissions/gs-permissions){target=_blank}.
+> * Before starting defining permissions, Adobe recommends you to read the [Security configuration checklist](https://helpx.adobe.com/campaign/kb/acc-security.html).
+> * To learn more about permissions, please refer to the detailed explanation on the [Campaign v8 documentation](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions){target=_blank}.
 
 Learn how to grant access and set up permissions in these sections:
 

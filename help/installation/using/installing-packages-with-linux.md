@@ -10,8 +10,8 @@ topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
 source-git-commit: ab38c7fd45513c6f7a8ecf7ef8601f0b5a4b5757
 workflow-type: tm+mt
-source-wordcount: '1113'
-ht-degree: 1%
+source-wordcount: '1145'
+ht-degree: 3%
 
 ---
 
@@ -143,7 +143,7 @@ Alcune combinazioni richiedono modifiche all’ambiente utilizzato per eseguire 
 
 Se necessario, modificare il file **customer.sh** utilizzando il comando **vi customer.sh** e adattare la configurazione o aggiungere le righe mancanti:
 
-* Per il client di Oracle:
+* Per il client Oracle:
 
   ```sql
   export ORACLE_HOME=/usr/local/instantclient_10_2
@@ -206,7 +206,7 @@ systemctl start nlserver
 
 ### Client Oracle in Linux {#oracle-client-in-linux}
 
-Quando si utilizza Oracle con Adobe Campaign, è necessario configurare i livelli client Oracle in Linux.
+Quando si utilizza Oracle con Adobe Campaign, è necessario configurare i livelli client di Oracle in Linux.
 
 * Utilizza il client completo
 * Definizione TNS

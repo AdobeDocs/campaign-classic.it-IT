@@ -10,7 +10,7 @@ topic-tags: importing-and-exporting-data
 exl-id: 266ecd49-7101-4ff1-941f-1f9b39b44955
 source-git-commit: 4fb262c616276f785f97b42bec22c150afc6e5c8
 workflow-type: tm+mt
-source-wordcount: '87'
+source-wordcount: '98'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ I flussi di lavoro possono essere utili per automatizzare alcuni dei processi di
 
 >[!NOTE]
 >
->Per ulteriori informazioni sull&#39;importazione e l&#39;esportazione di dati tramite flussi di lavoro, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/audience/add-profiles/import-profiles){target=_blank}.
+>Per ulteriori informazioni sull&#39;importazione e l&#39;esportazione di dati tramite flussi di lavoro, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/add-profiles/import-profiles){target=_blank}.
 
 
 <!--

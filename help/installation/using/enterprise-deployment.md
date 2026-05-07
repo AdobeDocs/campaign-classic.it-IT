@@ -9,7 +9,7 @@ topic-tags: deployment-types-
 exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
 source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1251'
 ht-degree: 3%
 
 ---
@@ -59,10 +59,10 @@ Costi più elevati per l&#39;hardware e l&#39;amministrazione.
 * Cassetta postale di mancato recapito accessibile tramite POP3,
 * Creazione di due alias DNS nel load balancer:
 
-   * il primo esposto al pubblico per il tracciamento e il puntamento al load balancer su un indirizzo IP virtuale (VIP) e che viene quindi distribuito ai due server frontali,
+   * la prima esposta al pubblico per il tracciamento e il puntamento al load balancer su un indirizzo IP virtuale (VIP) e che viene quindi distribuita ai due server frontali,
    * il secondo esposto agli utenti interni per l’accesso tramite la console e che punta a un load balancer su un indirizzo IP virtuale (VIP) e che viene quindi distribuito ai due server applicazioni.
 
-* Firewall configurato per aprire STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 ad Oracle, 5432 per PostgreSQL, ecc.) porte. Per ulteriori informazioni, vedere la sezione [Accesso al database](../../installation/using/network-configuration.md#database-access).
+* Firewall configurato per aprire STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 per Oracle, 5432 per PostgreSQL, ecc.) porte. Per ulteriori informazioni, vedere la sezione [Accesso al database](../../installation/using/network-configuration.md#database-access).
 
 >[!CAUTION]
 >

@@ -10,8 +10,8 @@ topic-tags: data-processing
 exl-id: 2c933fc5-1c0a-4c2f-9ff2-90d09a79c55a
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 1%
+source-wordcount: '1333'
+ht-degree: 3%
 
 ---
 
@@ -37,7 +37,7 @@ A questo scopo, esegui i seguenti passaggi:
 
 1. Creare una copia dei database in tutte le istanze dell&#39;ambiente di origine.
 1. Ripristinare queste copie in tutte le istanze dell&#39;ambiente di destinazione.
-1. Eseguire lo script di cauterizzazione **nms:freezeInstance.js** nell&#39;ambiente di destinazione prima di avviarlo.
+1. Esegui lo script di cauterizzazione **nms:freezeInstance.js** nell&#39;ambiente di destinazione prima di avviarlo.
 
    Questo processo non influisce sui server e sulla loro configurazione.
 
@@ -69,7 +69,7 @@ Questa sezione ti aiuta a capire i passaggi necessari per trasferire un ambiente
 
 >[!IMPORTANT]
 >
->* La procedura seguente è valida nel linguaggio PostgreSQL. Se il linguaggio SQL è diverso (ad Oracle), è necessario adattare le query SQL.
+>* La procedura seguente è valida nel linguaggio PostgreSQL. Se il linguaggio SQL è diverso (ad esempio Oracle), è necessario adattare le query SQL.
 >* I comandi riportati di seguito vengono applicati nel contesto di un&#39;istanza **prod** e di un&#39;istanza **dev** in PostgreSQL.
 >
 
@@ -95,7 +95,7 @@ Questa esportazione consente di mantenere la configurazione di sviluppo e di agg
 
 A questo scopo, esegui un’esportazione del pacchetto per i due elementi seguenti:
 
-* Esportare la tabella **xtk:option** in un file &#39;options_dev.xml&#39;, senza i record con i seguenti nomi interni: &#39;WdbcTimeZone&#39;, &#39;NmsServer_LastPostUpgrade&#39; e &#39;NmsBroadcast_RegexRules&#39;.
+* Esporta la tabella **xtk:option** in un file &#39;options_dev.xml&#39;, senza i record con i seguenti nomi interni: &#39;WdbcTimeZone&#39;, &#39;NmsServer_LastPostUpgrade&#39; e &#39;NmsBroadcast_RegexRules&#39;.
 * In un file &#39;extaccount_dev.xml&#39;, esportare la tabella **nms:extAccount** per tutti i record con ID diverso da 0 (@id &lt;> 0).
 
 Verifica che il numero di opzioni/conti esportati sia uguale al numero di righe da esportare in ciascun file.
@@ -220,7 +220,7 @@ Soprattutto, controlla i valori di diverse righe dei file prima di importarli (a
 
 Per importare la configurazione dal database dell’ambiente di destinazione (dev):
 
-1. Apri Admin Console del database ed elimina gli account esterni (tabella nms:extAccount) il cui ID non è 0 (@id &lt;> 0).
+1. Aprire Admin Console del database ed eliminare gli account esterni (tabella nms:extAccount) il cui ID non è 0 (@id &lt;> 0).
 1. Nella console Adobe Campaign, importa il pacchetto options_dev.xml creato in precedenza tramite la funzionalità di importazione del pacchetto.
 
    Verificare che le opzioni siano state effettivamente aggiornate nel nodo **[!UICONTROL Administration > Platform > Options]**.

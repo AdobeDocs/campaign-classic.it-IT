@@ -8,7 +8,7 @@ role: User, Developer
 exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '843'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ Il documento XML di un modulo di input deve contenere l&#39;elemento principale 
 
 Per impostazione predefinita, un modulo è associato allo schema dati con lo stesso nome e lo stesso spazio dei nomi. Per associare un modulo a un nome diverso, immettere la chiave dello schema nell&#39;attributo **entity-schema** dell&#39;elemento **`<form>`**.
 
-Per illustrare la struttura di un modulo di input, descriviamo un’interfaccia basata sullo schema di esempio &quot;cus:book&quot;:
+Per illustrare la struttura di un modulo di input, viene descritta un&#39;interfaccia basata sullo schema di esempio &quot;cus:book&quot;:
 
 ![](assets/d_ncs_content_form1.png)
 
@@ -73,7 +73,7 @@ Per impostazione predefinita, ogni campo viene visualizzato su una riga e occupa
 
 ## Formattazione {#formatting}
 
-La disposizione dei controlli l&#39;uno rispetto all&#39;altro è simile alla disposizione utilizzata nelle tabelle HTML, con la possibilità di dividere un controllo in più colonne, di elementi interlacciati o di specificare l&#39;occupazione dello spazio disponibile. Tenete presente, tuttavia, che la formattazione autorizza solo la distribuzione delle proporzioni; non potete specificare dimensioni fisse per un oggetto.
+La disposizione dei controlli l&#39;uno rispetto all&#39;altro è simile alla disposizione utilizzata nelle tabelle di HTML, con la possibilità di dividere un controllo in più colonne, di elementi interlacciati o di specificare l&#39;occupazione dello spazio disponibile. Tenete presente, tuttavia, che la formattazione autorizza solo la distribuzione delle proporzioni; non potete specificare dimensioni fisse per un oggetto.
 
 Per ulteriori informazioni al riguardo, consulta [questa sezione](../../configuration/using/form-structure.md#formatting).
 

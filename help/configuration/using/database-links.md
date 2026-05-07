@@ -7,7 +7,7 @@ role: Developer
 exl-id: e05dcd81-bbca-4767-8da3-ea064f7f6c8e
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '935'
 ht-degree: 2%
 
 ---
@@ -49,7 +49,7 @@ Per ulteriori informazioni sulle tabelle FDA, vedere [Accesso a un database este
 
 I collegamenti rispettano le seguenti regole:
 
-* La definizione di un collegamento viene immessa in un **di tipo** link **`<element>`** con i seguenti attributi:
+* La definizione di un collegamento viene immessa in un **`<element>`** di tipo **link** con i seguenti attributi:
 
    * **nome**: nome del collegamento dalla tabella di origine
    * **target**: nome dello schema di destinazione

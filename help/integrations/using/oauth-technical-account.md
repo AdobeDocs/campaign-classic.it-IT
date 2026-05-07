@@ -7,7 +7,7 @@ level: Intermediate, Experienced
 exl-id: 5d830ea0-a0a3-4b35-8dc4-e955380431fb
 source-git-commit: 84e6b2fad97f0ca5d6621cff4648e0be0bef7521
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '366'
 ht-degree: 6%
 
 ---
@@ -30,7 +30,7 @@ Per creare l’account tecnico OAuth per le nuove integrazioni, segui questi pas
 
 1. Accedi alla console Adobe Developer e accedi come **Amministratore di sistema** della tua organizzazione.
 
-   Per ulteriori informazioni sui ruoli di amministratore, consulta questa [pagina](https://helpx.adobe.com/it/enterprise/using/admin-roles.html).
+   Per ulteriori informazioni sui ruoli di amministratore, consulta questa [pagina](https://helpx.adobe.com/enterprise/using/admin-roles.html).
 
 1. Fai clic su **[!UICONTROL Create a new project]**.
 
@@ -48,7 +48,7 @@ Per creare l’account tecnico OAuth per le nuove integrazioni, segui questi pas
 
 1. Seleziona il collegamento **[!UICONTROL Product profile]** al progetto.
 
-   Se necessario, puoi crearne una nuova. [Ulteriori informazioni](https://helpx.adobe.com/it/enterprise/using/manage-product-profiles.html)
+   Se necessario, puoi crearne una nuova. [Ulteriori informazioni](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)
 
 1. Quindi fare clic su **[!UICONTROL Save Configured API]**.
 

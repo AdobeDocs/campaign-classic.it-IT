@@ -10,14 +10,14 @@ topic-tags: troubleshooting
 exl-id: 76411b29-d300-4aaa-8d3b-d8ff74c3ce93
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 0%
+source-wordcount: '539'
+ht-degree: 3%
 
 ---
 
 # Individua versione Tomcat{#locate-tomcat-version}
 
-Adobe Campaign utilizza un **servlet Web incorporato denominato Apache Tomcat** per elaborare le richieste HTTP/HTTPS tra l&#39;applicazione e qualsiasi interfaccia esterna (inclusa la console client, i collegamenti URL tracciati, le chiamate SOAP e altri). Di fronte a questo server spesso è presente un server web esterno (in genere IIS o Apache) per tutte le istanze Adobe Campaign rivolte all’esterno.
+Adobe Campaign utilizza un servlet Web incorporato **denominato Apache Tomcat** per elaborare le richieste HTTP/HTTPS tra l&#39;applicazione e qualsiasi interfaccia esterna (inclusa la console client, i collegamenti URL tracciati, le chiamate SOAP e altri). Di fronte a questo server spesso è presente un server web esterno (in genere IIS o Apache) per tutte le istanze Adobe Campaign rivolte all’esterno.
 
 Segui la procedura seguente per individuare la versione esatta di Tomcat utilizzata in un&#39;istanza on-premise **Campaign Classic** per facilitare la risoluzione dei problemi.
 
@@ -25,7 +25,7 @@ Segui la procedura seguente per individuare la versione esatta di Tomcat utilizz
 
 Tomcat viene eseguito su Java e richiede l’installazione di JDK. Per ulteriori informazioni, consulta Java Development Kit (JDK) nella sezione [Matrice di compatibilità di Campaign](../../rn/using/compatibility-matrix.md).
 
-Il Tomcat utilizzato in Adobe Campaign è una versione incorporata personalizzata che non utilizza tutte le funzioni della versione completa generalmente disponibile di Tomcat e potrebbe non soffrire di tutte le vulnerabilità della versione completa. Il Tomcat non deve inoltre essere esposto a Internet esterno e tutte le istanze Adobe Campaign esposte devono avere un server web esterno (IIS, Apache, ecc.) davanti al Tomcat per proteggerlo.
+Il Tomcat utilizzato in Adobe Campaign è una versione incorporata personalizzata che non utilizza tutte le funzioni della versione completa generalmente disponibile di Tomcat e potrebbe non soffrire di tutte le vulnerabilità della versione completa. Inoltre, Tomcat non deve essere esposto a Internet esterno e tutte le istanze Adobe Campaign esposte devono avere un server web esterno (IIS, Apache, ecc.) di fronte al Tomcat per proteggerlo.
 
 Le versioni nuove o aggiornate delle versioni incorporate di Tomcat vengono rilasciate solo con nuove build di Adobe Campaign e non come patch separate al di fuori delle build di Adobe Campaign.
 

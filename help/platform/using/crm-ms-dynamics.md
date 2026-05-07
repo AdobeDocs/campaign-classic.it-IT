@@ -7,7 +7,7 @@ exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
 hide: true
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1157'
 ht-degree: 2%
 
 ---
@@ -170,7 +170,7 @@ Per collegare Microsoft Dynamics 365 e Campaign, devi creare e configurare un **
 
    ![](assets/crm-ms-dynamics-ext-account.png)
 
-1. Fare clic sul collegamento **[!UICONTROL Microsoft CRM configuration assistant...]**. Adobe Campaign rileva automaticamente le tabelle dal modello dati di Microsoft Dynamics.
+1. Fai clic sul collegamento **[!UICONTROL Microsoft CRM configuration assistant...]**. Adobe Campaign rileva automaticamente le tabelle dal modello dati di Microsoft Dynamics.
 
    ![](assets/crm_connectors_msdynamics_02.png)
 

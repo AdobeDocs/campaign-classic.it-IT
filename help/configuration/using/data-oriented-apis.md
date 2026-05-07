@@ -7,7 +7,7 @@ role: Developer
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1796'
+source-wordcount: '1803'
 ht-degree: 0%
 
 ---
@@ -110,7 +110,7 @@ La struttura del documento XML della query è descritta nello schema &quot;xtk:q
 </queryDef>
 ```
 
-È possibile definire una sottoquery ( `<subquery>` ) in un elemento `<condition> `. La sintassi per un   `<subquery> `   è basato sulla sintassi di un elemento    `<querydef>`.
+È possibile definire una sottoquery ( `<subquery>` ) in un elemento `<condition> `. La sintassi di un elemento `<subquery> ` è basata sulla sintassi di un elemento `<querydef>`.
 
 Esempio di `<subquery>  : </subquery>`
 

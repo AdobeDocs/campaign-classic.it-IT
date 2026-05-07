@@ -10,8 +10,8 @@ topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
 source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 1%
+source-wordcount: '1329'
+ht-degree: 2%
 
 ---
 
@@ -97,7 +97,7 @@ Il passaggio seguente consente di configurare le impostazioni per l&#39;accesso 
   >
   >Con un database Oracle, l&#39;opzione **[!UICONTROL Unicode storage]** consente di utilizzare i campi di tipo **NCLOB** e **NVARCHAR**.
   > 
-  >Se non si seleziona questa opzione, il set di caratteri (charset) del database Oracle deve abilitare la memorizzazione dei dati in tutte le lingue (si consiglia AL32UTF8).
+  >Se non si seleziona questa opzione, il set di caratteri (charset) del database di Oracle deve abilitare l’archiviazione dei dati in tutte le lingue (si consiglia AL32UTF8).
 
 * Scegliere un fuso orario per il database e specificare se si desidera che sia in formato UTC (se disponibile).
 
@@ -117,7 +117,7 @@ La finestra **[!UICONTROL Creation steps]** consente di visualizzare e modificar
 
 ![](assets/s_ncs_install_db_oracle_creation04.png)
 
-* Ad Oracle, un database Microsoft SQL Server o PostgreSQL, l&#39;amministratore può anche definire i **parametri di archiviazione** da utilizzare per la creazione di oggetti di database.
+* Per un database Oracle, Microsoft SQL Server o PostgreSQL, l&#39;amministratore può inoltre definire i **parametri di archiviazione** da utilizzare per la creazione di oggetti di database.
 
   Questi parametri ricevono i nomi esatti delle tablespace (avvertenza: distinzione maiuscole/minuscole). Vengono archiviati rispettivamente nel nodo **[!UICONTROL Administration > Platform > Options]** nelle seguenti opzioni (vedi [questa sezione](../../installation/using/configuring-campaign-options.md#database)):
 
@@ -126,7 +126,7 @@ La finestra **[!UICONTROL Creation steps]** consente di visualizzare e modificar
    * **WdbcOptions_TableSpaceWork**: tabelle di lavoro senza schema
    * **WdbcOptions_TableSpaceWorkIndex**: indice delle tabelle di lavoro senza schema
 
-* Per un database di Oracle, l&#39;utente di Adobe Campaign deve avere accesso alle librerie di Oracle, in genere come membro del gruppo **oinstall**.
+* Per un database Oracle, l&#39;utente Adobe Campaign deve avere accesso alle librerie Oracle, in genere come membro del gruppo **oinstall**.
 * L&#39;opzione **[!UICONTROL Set or change the administrator password]** consente di immettere la password collegata all&#39;operatore Adobe Campaign con diritti di amministratore.
 
   Per motivi di sicurezza, è consigliabile definire una password di amministratore dell’account Adobe Campaign.
@@ -153,7 +153,7 @@ Esempio di configurazione di Microsoft SQL Server nel database base61 collegato 
 
 Il database e l&#39;utente devono essere stati creati dall&#39;amministratore del database e i diritti di accesso devono essere configurati correttamente.
 
-Ad Oracle, per un database i diritti minimi richiesti sono: GRANT CONNECT, RESOURCE e UNLIMITED TABLESPACE.
+Per un database Oracle, ad esempio, i diritti minimi richiesti sono GRANT CONNECT, RESOURCE e UNLIMITED TABLESPACE.
 
 Per utilizzare un database esistente, effettuare le seguenti operazioni di configurazione:
 
@@ -198,7 +198,7 @@ Nella finestra **[!UICONTROL Database]**, definire le impostazioni di connession
   >[!NOTE]
   >
   >Assicurati che il nome dello schema e il nome utente corrispondano. La modalità consigliata per la creazione del database è tramite il client della console di Campaign.
-  >Per un database di Oracle, non è necessario immettere il nome dell&#39;account.
+  >Per un database Oracle non è necessario immettere il nome dell&#39;account.
 
 * Indicare se il database deve essere Unicode o meno.
 
@@ -216,8 +216,8 @@ La finestra **[!UICONTROL Creation steps]** consente di visualizzare e modificar
 
 ![](assets/s_ncs_install_db_oracle_creation04.png)
 
-* Ad Oracle, i database Microsoft SQL Server o PostgreSQL, l&#39;amministratore può definire i **parametri di archiviazione** da utilizzare per la creazione di oggetti di database.
-* Per un database di Oracle, l&#39;utente di Adobe Campaign deve avere accesso alle librerie di Oracle, in genere come membro del gruppo **oinstall**.
+* Per i database Oracle, Microsoft SQL Server o PostgreSQL, l&#39;amministratore può definire i **parametri di archiviazione** da utilizzare per la creazione di oggetti di database.
+* Per un database Oracle, l&#39;utente Adobe Campaign deve avere accesso alle librerie Oracle, in genere come membro del gruppo **oinstall**.
 * L&#39;opzione **[!UICONTROL Set or change the administrator password]** consente di immettere la password collegata all&#39;operatore Adobe Campaign con diritti di amministratore.
 
   Per motivi di sicurezza, è consigliabile definire una password di amministratore dell’account Adobe Campaign.

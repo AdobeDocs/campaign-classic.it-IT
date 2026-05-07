@@ -8,8 +8,8 @@ hide: true
 exl-id: 7f44e732-4257-4d2a-800c-bde847e20f52
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 8%
+source-wordcount: '126'
+ht-degree: 13%
 
 ---
 
@@ -26,5 +26,5 @@ Per creare una nuova consegna e-mail, effettua le seguenti operazioni:
 
    ![](assets/s_ncs_user_wizard_email01_1.png)
 
-1. Identifica la consegna con un’etichetta, un codice e una descrizione. Per ulteriori informazioni, consulta questa sezione nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it#create-the-delivery){target="_blank"}.
+1. Identifica la consegna con un’etichetta, un codice e una descrizione. Per ulteriori informazioni, consulta questa sezione nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}.
 1. Fai clic su **Continua** per confermare queste informazioni e visualizzare la finestra di configurazione del messaggio.

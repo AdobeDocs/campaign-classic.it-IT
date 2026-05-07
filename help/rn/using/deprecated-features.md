@@ -8,8 +8,8 @@ level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '1675'
-ht-degree: 98%
+source-wordcount: '1767'
+ht-degree: 93%
 
 ---
 
@@ -27,7 +27,7 @@ Per comunicare l’imminente rimozione/sostituzione delle funzionalità di Campa
 Questo processo offre ai clienti almeno un ciclo di pubblicazione per adattare la loro implementazione a una nuova versione o alla funzionalità che sostituirà quella obsoleta, prima della rimozione effettiva.
 
 >[!NOTE]
-> Le versioni e le nuove funzionalità di Adobe Campaign sono elencate nelle [Note sulla versione](../../rn/using/latest-release.md).
+>Le versioni e le nuove funzionalità di Adobe Campaign sono elencate nelle [Note sulla versione](../../rn/using/latest-release.md).
 
 ## Funzioni obsolete {#deprecated-features}
 
@@ -83,7 +83,7 @@ In questa sezione sono elencate le funzionalità rimosse da Campaign Classic.
     <tr>
   <td>Rapporto tecnico di monitoraggio del recapito<br></td>
    <td><p>Il rapporto tecnico di monitoraggio del recapito non è più disponibile. È stato dichiarato obsoleto con la versione 21.1.3 di Campaign.</p>
-   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
+   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
   </td>
  </tr>
   <tr>
@@ -108,7 +108,7 @@ In questa sezione sono elencate le funzionalità rimosse da Campaign Classic.
   </tr>
    <tr> 
    <td>Autenticazione Windows NT<br></td>
-   <td><p>A partire dalla versione 20.3 di Campaign, l’autenticazione con Windows NT è stata rimossa dai metodi di autenticazione disponibili per la configurazione di un nuovo database con Microsoft SQL Server. <a href="../../installation/using/creating-and-configuring-the-database.md#step-1---selecting-the-database-engine">Ulteriori informazioni</a></p></td>
+   <td><p>A partire dalla versione 20.3 di Campaign, l’autenticazione con Windows NT è stata rimossa dai metodi di autenticazione disponibili durante la configurazione di un nuovo database con Microsoft SQL Server. <a href="../../installation/using/creating-and-configuring-the-database.md#step-1---selecting-the-database-engine">Ulteriori informazioni</a></p></td>
   </tr>
    <tr> 
    <td>Archiviazione di e-mail basata su file<br></td>
@@ -137,7 +137,7 @@ In questa sezione sono elencate le funzionalità rimosse da Campaign Classic.
   <tr> 
    <td>API decryptString</td>
    <td><p>A partire dalla versione 18.6 di Campaign, per motivi di sicurezza, l’API <em>decryptString</em> non è più disponibile per impostazione predefinita per le nuove installazioni.</p> 
-   <p>Nel contesto di un aggiornamento successivo alla versione 18.6 (e versioni successive), questa API non viene più attivata ed è stata sostituita dalla funzione <em>decryptPassword</em>. <a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?lang=it&hl=decrypt">Ulteriori informazioni</a></p></td>
+   <p>Nel contesto di un aggiornamento successivo alla versione 18.6 (e versioni successive), questa API non viene più attivata ed è stata sostituita dalla funzione <em>decryptPassword</em>. <a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?hl=decrypt">Ulteriori informazioni</a></p></td>
   </tr> 
    <tr> 
    <td>Canale mobile - Messaggi push MMS e WAP</td>
@@ -164,7 +164,7 @@ The following systems are deprecated for Campaign Classic. Please refer to the [
 
 ### Console client {#client-console-eol}
 
- La console del client di Adobe Campaign Classic non può più essere eseguita sui seguenti sistemi in quanto sono stati dichiarati obsoleti dai rispettivi editor. I clienti che eseguono la console del client di Campaign in una di queste versioni devono effettuare l’aggiornamento alla versione più recente prima della data prevista di rimozione. Consulta la [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
+La console del client di Adobe Campaign Classic non può più essere eseguita sui seguenti sistemi in quanto sono stati dichiarati obsoleti dai rispettivi editor. I clienti che eseguono la console del client di Campaign in una di queste versioni devono effettuare l’aggiornamento alla versione più recente prima della data prevista di rimozione. Consulta la [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
 
 * Windows Server 2003, 2008, 2008 R2
 * Windows 7, XP, Vista
@@ -188,7 +188,7 @@ The following systems are deprecated for Campaign Classic. Please refer to the [
 
    * CentOs 6. [Ulteriori informazioni](https://wiki.centos.org/Download)
    * Debian 7. [Ulteriori informazioni](https://wiki.debian.org/DebianReleases)
-   * RHEL 6.x. [Ulteriori informazioni](https://access.redhat.com/support/policy/updates/errata)
+   * RHEL 6.x [Ulteriori informazioni](https://access.redhat.com/support/policy/updates/errata)
    * Windows Server 2008. [Ulteriori informazioni](https://support.microsoft.com/it-it/lifecycle/search/1163)
    * SLES 11. [Ulteriori informazioni](https://www.suse.com/lifecycle)
 
@@ -235,9 +235,9 @@ Campaign Classic non è compatibile con i seguenti server in Federated Data Acce
 * InfiniDB ha raggiunto la fine del ciclo di vita.
 * Teradata 13, 13.1.
 * Netezza 6.02, 7.0. Netezza ha raggiunto la fine del ciclo di vita.
-* AsterData 5.0. AsterData ha raggiunto la fine del ciclo di vita.
+* AsterData 5.0 AsterData ha raggiunto la fine del ciclo di vita.
 * Sybase IQ 15.2, 15.4, 15.5 e Sybase ASE 15.0.
-* Hadoop tramite HiveSQL: Hadoop 2.7.3, HiveSQL 1.2.1. Adobe Campaign Classic continuerà a supportare le versioni elencate di Hadoop tramite HiveSQL attraverso Federated Data Access (FDA), ma queste versioni vengono unite con: HortonWorks (HDP 2.4.X, 2.5.x, 2.6.x) e HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)
+* Hadoop tramite HiveSQL: Hadoop 2.7.3, HiveSQL 1.2.1. Adobe Campaign Classic supporta ancora le versioni elencate di Hadoop tramite HiveSQL tramite Federated Data Access (FDA), ma queste versioni vengono unite con: HortonWorks (HDP 2.4.X, 2.5.x, 2.6.x) e HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)
 
 **SERVER RDBMS**
 

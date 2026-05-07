@@ -7,8 +7,8 @@ feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
 source-git-commit: 2186b8a30449cb023cb07305ba64d53f2c8adab1
 workflow-type: tm+mt
-source-wordcount: '2292'
-ht-degree: 8%
+source-wordcount: '2330'
+ht-degree: 9%
 
 ---
 
@@ -52,7 +52,7 @@ Puoi configurare i valori visualizzati modificando la scala cronologica: visuali
 
 >[!NOTE]
 >
->Se l&#39;istanza è ospitata su AWS, puoi anche monitorare il numero di consegne inviate all&#39;ora utilizzando il [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=it) di Campaign Classic. Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=it).
+>Se l&#39;istanza è ospitata su AWS, puoi anche monitorare il numero di consegne inviate all&#39;ora utilizzando il [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html) di Campaign Classic. Per verificare se l’istanza è ospitata su AWS, segui i passaggi descritti in [questa sezione](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=it).
 >
 >Il Pannello di controllo è accessibile a tutti gli utenti amministratori. I passaggi per concedere a un utente l’accesso come amministratore sono descritti in[questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it#discover-control-panel).
 >
@@ -126,7 +126,7 @@ Per aprire ogni riga della tabella dei valori, fare clic sul simbolo [+]. Per og
 
 >[!NOTE]
 >
->I nomi di dominio visualizzati in questo report sono definiti a livello di cubo. Per modificare questi valori, modificare il cubo **[!UICONTROL Delivery logs (broadlogrcp)]**. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/ac-cubes.md). La categoria **[!UICONTROL Others]** include nomi di dominio che non appartengono a una classe specifica.
+>I nomi di dominio visualizzati in questo report sono definiti a livello di cubo. Per modificare questi valori, modificare il cubo **[!UICONTROL Delivery logs (broadlogrcp)]**. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../reporting/using/ac-cubes.md). La categoria **[!UICONTROL Others]** include nomi di dominio che non appartengono a una classe specifica.
 
 ## Browser {#browsers}
 
@@ -202,7 +202,7 @@ Questa sezione include due grafici che rappresentano il raggruppamento delle att
 
 ## Statistiche sulla condivisione delle attività {#statistics-on-sharing-activities}
 
-Questo report mostra l&#39;evoluzione delle condivisioni verso i social network (Facebook, X - precedentemente noti come Twitter, e-mail, ecc.) nel tempo.
+Questo rapporto mostra l&#39;evoluzione delle condivisioni verso i social network (Facebook, X - precedentemente noti come Twitter, e-mail, ecc.) nel tempo.
 
 Per ulteriori informazioni sul marketing virale, consulta [questa sezione](../../delivery/using/viral-and-social-marketing.md).
 

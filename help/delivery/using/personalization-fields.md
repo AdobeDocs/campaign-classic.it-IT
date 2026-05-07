@@ -9,8 +9,8 @@ hide: true
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1027'
-ht-degree: 9%
+source-wordcount: '1047'
+ht-degree: 10%
 
 ---
 
@@ -30,7 +30,7 @@ Ad esempio, il campo di personalizzazione con sintassi **&lt;%= recipient.LastNa
 
 I campi di personalizzazione possono provenire da due tipi di origine dati, a seconda della modalità di consegna selezionata:
 
-* Il database di Adobe Campaign è l’origine dei dati. Questo è il caso più comune, ad esempio con &quot;campi di personalizzazione dei destinatari&quot;. Questi sono tutti i campi definiti nella tabella dei destinatari, siano essi campi standard (in genere: cognome, nome, indirizzo, città, data di nascita, ecc.) o campi definiti dall’utente.
+* Il database di Adobe Campaign è l’origine dei dati. Questo è il caso più comune, ad esempio con &quot;campi di personalizzazione dei destinatari&quot;. Questi sono tutti i campi definiti nella tabella dei destinatari, che siano campi standard (in genere: cognome, nome, indirizzo, città, data di nascita, ecc.) o campi definiti dall&#39;utente.
 * L&#39;origine dati è un file esterno. Questi sono tutti i campi definiti nelle colonne del file presentato come input durante una consegna utilizzando i dati trovati in un file esterno.
 
 >[!NOTE]
@@ -141,6 +141,6 @@ Aggiungendo lo schema di oggetti, è possibile selezionare i campi che si deside
 
 Scopri come aggiungere un campo di personalizzazione alla riga dell’oggetto e il contenuto di una consegna e-mail.
 
->[!VIDEO](https://video.tv.adobe.com/v/329894?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
 
 Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

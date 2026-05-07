@@ -10,8 +10,8 @@ topic-tags: database-maintenance
 exl-id: 08e179aa-fd83-4c0a-879e-ab7aec168d92
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 2%
+source-wordcount: '528'
+ht-degree: 5%
 
 ---
 
@@ -69,7 +69,7 @@ Sono disponibili diverse strategie:
    <td> Deframmentazione in linea<br /> </td> 
    <td> La maggior parte dei motori di database fornisce metodi di deframmentazione.<br /> </td> 
    <td> È sufficiente utilizzare il metodo di deframmentazione del database. Questi metodi in genere gestiscono i problemi di integrità bloccando i dati durante la deframmentazione.<br /> </td> 
-   <td> A seconda del database, questi metodi di deframmentazione possono essere forniti come opzione RDBMS (Oracle) e non rappresentano sempre il modo più efficiente per gestire le tabelle di grandi dimensioni.<br /> </td> 
+   <td> A seconda del database, questi metodi di deframmentazione possono essere forniti come opzione RDBMS (Oracle) e non rappresentano sempre il modo più efficiente per gestire tabelle di grandi dimensioni.<br /> </td> 
   </tr> 
   <tr> 
    <td> Scarica e ripristina<br /> </td> 

@@ -9,7 +9,7 @@ topic-tags: deployment-types-
 exl-id: 4df126fa-4a6e-46a7-af6e-1e2e97f0072e
 source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '844'
 ht-degree: 3%
 
 ---
@@ -52,10 +52,10 @@ Questo tipo di configurazione è in grado di gestire un numero elevato di destin
 * Cassetta postale di mancato recapito accessibile tramite POP3,
 * Creazione di due alias DNS:
 
-   * il primo esposto al pubblico per il tracciamento e il puntamento al load balancer su un indirizzo IP virtuale (VIP) e che viene quindi distribuito ai due server frontali,
+   * la prima esposta al pubblico per il tracciamento e il puntamento al load balancer su un indirizzo IP virtuale (VIP) e che viene quindi distribuita ai due server frontali,
    * il secondo esposto agli utenti interni per l’accesso tramite la console e che punta allo stesso application server.
 
-* Firewall configurato per aprire STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 ad Oracle, 5432 per PostgreSQL, ecc.) porte. Per ulteriori informazioni, vedere la sezione [Accesso al database](../../installation/using/network-configuration.md#database-access).
+* Firewall configurato per aprire STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 per Oracle, 5432 per PostgreSQL, ecc.) porte. Per ulteriori informazioni, vedere la sezione [Accesso al database](../../installation/using/network-configuration.md#database-access).
 
 ### Installazione del server applicazioni {#installing-the-application-server}
 

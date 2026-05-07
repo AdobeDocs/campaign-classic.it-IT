@@ -7,7 +7,7 @@ feature: Web Forms
 exl-id: 5d48bb27-1884-47f1-acb7-dff5113565bc
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ Per ogni modulo, le risposte fornite possono essere riutilizzate nei campi o nel
 
   >[!NOTE]
   >
-  >A differenza degli altri campi per i quali `<%=` caratteri vengono sostituiti con caratteri di escape, il contenuto HTML viene salvato così com&#39;è utilizzando la sintassi `<%==`.
+  >A differenza degli altri campi per i quali `<%=` caratteri vengono sostituiti con caratteri di escape, il contenuto di HTML viene salvato così com&#39;è utilizzando la sintassi `<%==`.
 
 ## Salvataggio delle risposte ai moduli Web {#saving-web-forms-answers}
 

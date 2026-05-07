@@ -9,8 +9,8 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 4%
+source-wordcount: '630'
+ht-degree: 2%
 
 ---
 
@@ -43,7 +43,7 @@ Se utilizzi nomi host diversi (uno pubblico e uno per gli operatori), puoi anche
 
 ## Protezione delle connessioni in uscita
 
-L’elenco predefinito di URL che possono essere richiamati tramite codici JavaScript (flussi di lavoro, ecc.) è limitato. Per consentire un nuovo URL, l&#39;amministratore deve fare riferimento a esso nel [file serverConf.xml](../../installation/using/the-server-configuration-file.md).
+L’elenco predefinito di URL che possono essere richiamati dai codici JavaScript (flussi di lavoro, ecc.) è limitato. Per consentire un nuovo URL, l&#39;amministratore deve fare riferimento a esso nel [file serverConf.xml](../../installation/using/the-server-configuration-file.md).
 
 Sono disponibili tre modalità di protezione della connessione:
 

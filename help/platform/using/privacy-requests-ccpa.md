@@ -10,8 +10,8 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 8e308a9f-14a4-4a25-9fd0-8d4bdbcf74ce
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 94%
+source-wordcount: '591'
+ht-degree: 93%
 
 ---
 
@@ -87,7 +87,7 @@ Accertati di non vendere mai a terzi le informazioni personali dei profili che h
 
    ![](assets/privacy-ccpa-6.png)
 
-1. Fai clic sulla colonna per ordinare i destinatari in base alle informazioni di rinuncia. Puoi anche creare un filtro per visualizzare solo i destinatari che hanno rinunciato. Per ulteriori informazioni sui filtri, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+1. Fai clic sulla colonna per ordinare i destinatari in base alle informazioni di rinuncia. Puoi anche creare un filtro per visualizzare solo i destinatari che hanno rinunciato. Per ulteriori informazioni sui filtri, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 
    ![](assets/privacy-ccpa-7.png)

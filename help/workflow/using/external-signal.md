@@ -18,7 +18,7 @@ ht-degree: 2%
 
 L&#39;attività **External signal** consente di attivare l&#39;esecuzione di un set di attività in un flusso di lavoro a una pianificazione.
 
-Quando viene attivata, l&#39;attività &#39;External signal&#39; viene sospesa indefinitamente o fino alla fine del periodo di tempo specificato. La relativa transizione è attivata dalla chiamata SOAP **PostEvent(sessionToken, workflowId, activity, transition, parameters, complete).** Il parametro **[!UICONTROL complete]** consente il completamento dell&#39;attività, pertanto non reagirà alle chiamate successive.
+Quando viene attivata, l&#39;attività &#39;External signal&#39; viene sospesa indefinitamente o fino alla fine del periodo di tempo specificato. La relativa transizione è attivata dalla chiamata SOAP **PostEvent(sessionToken, workflowId, activity, transition, parameters, complete).** Il parametro **[!UICONTROL complete]** consente di completare l&#39;attività, pertanto non reagirà alle chiamate successive.
 
 Per ulteriori informazioni sulla funzione PostEvent, consulta la documentazione online relativa alle chiamate di SOAP.
 

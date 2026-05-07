@@ -9,7 +9,7 @@ topic-tags: schema-reference
 exl-id: bc4329b4-d272-4d32-bdaa-290cb9912af4
 source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '459'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## Modello di contenuto {#content-model-14}
 
-srcSchema:==(attribute | createdBy | dati | elemento | enumerazione | aiuto | Interfaccia | metodi | modifiedBy)
+srcSchema:==(attribute | creatoDa | dati | elemento | enumerazione | guida | interfaccia | metodi | ModificatoDa)
 
 ## Attributi {#attributes-14}
 
@@ -54,7 +54,7 @@ La presentazione dello schema è disponibile in [Informazioni sul riferimento de
 * **creato (datetime)**: questo attributo fornisce informazioni sulla data e l&#39;ora di creazione dello schema. Ha un modulo &quot;Date Time&quot; (Data e ora). I valori visualizzati vengono ricavati dal server. L’ora viene visualizzata in formato UTC.
 * **createdBy-id (long)**: è l&#39;identificatore dell&#39;operatore che ha creato lo schema.
 * **desc (stringa)**: descrizione schema
-* **entitySchema (stringa)**: schema di base su cui si basano la sintassi e l&#39;approvazione (per impostazione predefinita per Adobe Campaign: xtk:srcSchema). Quando salvi lo schema corrente, Adobe Campaign ne approverà la grammatica con lo schema dichiarato nell’attributo @xtkschema.
+* **entitySchema (stringa)**: schema di base su cui si basano sintassi e approvazione (per impostazione predefinita per Adobe Campaign: xtk:srcSchema). Quando salvi lo schema corrente, Adobe Campaign ne approverà la grammatica con lo schema dichiarato nell’attributo @xtkschema.
 * **extendedSchema (stringa)**: riceve il nome dello schema predefinito su cui si basa l&#39;estensione dello schema corrente. Il modulo è &quot;namespace:name&quot;.
 * **img (stringa)**: icona collegata allo schema (può essere definita nell&#39;assistente alla creazione dello schema).
 * **etichetta (stringa)**: etichetta dello schema.

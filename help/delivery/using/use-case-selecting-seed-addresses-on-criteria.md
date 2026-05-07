@@ -7,7 +7,7 @@ feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '860'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ Per utilizzare la condizione dinamica, è necessario disporre di:
 
 ## Passaggio 1: creare una consegna {#step-1---creating-a-delivery}
 
-I passaggi per la creazione di una consegna sono descritti nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html?lang=it){target="_blank"}.
+I passaggi per la creazione di una consegna sono descritti nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}.
 
 In questo esempio, il responsabile della consegna ha creato la newsletter e selezionato i destinatari.
 

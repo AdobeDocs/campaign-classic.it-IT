@@ -6,7 +6,7 @@ feature: Transactional Messaging, Message Center
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '684'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ Il diagramma seguente mostra i diversi passaggi necessari per implementare quest
 
 Per aggiungere al volo un allegato e-mail a un messaggio sulle transazioni, effettua le seguenti operazioni:
 
-1. Iniziare progettando l&#39;allegato. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=it#attach-a-personalized-file){target="_blank"}.
+1. Iniziare progettando l&#39;allegato. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html#attach-a-personalized-file){target="_blank"}.
 
    Ciò ti consente di allegare i file a un messaggio e-mail, anche se non sono ospitati nell’istanza di esecuzione.
 

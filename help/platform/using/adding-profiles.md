@@ -9,8 +9,8 @@ exl-id: befa8948-ef2e-4f4d-a002-3f26d8516a0d
 hide: true
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '61'
-ht-degree: 16%
+source-wordcount: '73'
+ht-degree: 13%
 
 ---
 
@@ -24,7 +24,7 @@ Nella maggior parte dei casi, i profili sono [importati in Campaign tramite un f
 
 >[!NOTE]
 >
->Per ulteriori informazioni su come creare profili nella console Adobe Campaign, consulta la [documentazione di Campaign v8.](https://experienceleague.adobe.com/it/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank}
+>Per ulteriori informazioni su come creare profili nella console Adobe Campaign, consulta la [documentazione di Campaign v8.](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank}
 
 
 <!--

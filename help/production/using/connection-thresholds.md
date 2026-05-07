@@ -10,8 +10,8 @@ topic-tags: troubleshooting
 exl-id: 4ee05559-e719-4e6e-b42c-1e82df428871
 source-git-commit: 757e3a5395f24e0bdd04737aba0458881e4ea780
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 4%
+source-wordcount: '188'
+ht-degree: 12%
 
 ---
 
@@ -25,7 +25,7 @@ Sono disponibili tre diverse soglie:
 
 * La **soglia di connessione Web**, configurata nel server Web. Per modificarlo, contatta l’amministratore di sistema.
 
-* Soglia di connessione al database **&#x200B;**. Per modificarlo, contattare l&#39;amministratore del database.
+* Soglia di connessione al database ****. Per modificarlo, contattare l&#39;amministratore del database.
 
 * La **soglia di connessione Adobe Campaign**, disponibile in due posizioni:
 

@@ -9,7 +9,7 @@ hide: true
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '922'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,7 @@ Prima di seguire i passaggi seguenti, assicurati di conoscere il tipo di coupon 
 
    **[!UICONTROL Anonymous coupons]**: un coupon anonimo è identico per tutti i destinatari. Conferma che Anonimo è selezionato nel menu **Tipo coupon** e fai clic su **Salva** per generare il coupon.
 
-   **[!UICONTROL Individual coupons]** : un singolo coupon può essere ulteriormente personalizzato con codici coupon aggiuntivi. Ad esempio, viene creato un singolo coupon per la vendita in un negozio di attrezzatura sportiva. Tuttavia, la lista dei destinatari è lunga e non condividono lo stesso entusiasmo per un singolo sport. Puoi aggiungere nomi in codice per il singolo coupon in base a uno sport (ad esempio, calcio, calcio, baseball ecc.) e inviare ciascun codice ai destinatari applicabili.
+   **[!UICONTROL Individual coupons]** : un singolo coupon può essere ulteriormente personalizzato con codici coupon aggiuntivi. Ad esempio, viene creato un singolo coupon per la vendita in un negozio di attrezzatura sportiva. Tuttavia, la lista dei destinatari è lunga e non condividono lo stesso entusiasmo per un singolo sport. Puoi aggiungere nomi in codice per il singolo coupon in base a uno sport (ad esempio, calcio, calcio, baseball, ecc.) e invia ciascun codice ai destinatari applicabili.
 
    1. Quando si sceglie Individuale, in basso a sinistra viene visualizzata una nuova scheda, Coupon. Passare alla scheda **[!UICONTROL Coupons]** e fare clic su **[!UICONTROL Add]**.
    1. Inserire un codice univoco per il singolo coupon quando richiesto dalla finestra popup.

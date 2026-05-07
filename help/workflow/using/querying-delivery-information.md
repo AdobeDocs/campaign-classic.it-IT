@@ -7,7 +7,7 @@ hide: true
 exl-id: b699b064-1287-41c9-8d94-1c1aa2c145ab
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1260'
 ht-degree: 7%
 
 ---
@@ -203,7 +203,7 @@ Nei passaggi seguenti viene illustrato come configurare la casella **[!UICONTROL
    ![](assets/query_editor_ex_04.png)
 
 1. Nella scheda **[!UICONTROL Subsets]**, definisci il primo ramo diviso. Ad esempio, immetti l&#39;etichetta **Clic** per questo ramo.
-1. Selezionare l&#39;opzione **[!UICONTROL Add a filtering condition on the incoming population]**. Fai clic su **[!UICONTROL Edit]**.
+1. Seleziona l’opzione **[!UICONTROL Add a filtering condition on the incoming population]**. Fai clic su **[!UICONTROL Edit]**.
 1. Nella finestra **[!UICONTROL Targeting and filtering dimension]** fare doppio clic sul filtro **[!UICONTROL Recipients of a delivery]**.
 
    ![](assets/query_editor_ex_05.png)

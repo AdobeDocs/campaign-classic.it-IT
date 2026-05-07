@@ -9,8 +9,8 @@ topic-tags: connectors
 exl-id: 7ccab3a4-f323-464a-9ec4-dd597279d0eb
 source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 46%
+source-wordcount: '149'
+ht-degree: 27%
 
 ---
 
@@ -20,14 +20,14 @@ ht-degree: 46%
 
 ## Introduzione ai connettori CRM {#about-crm-connectors}
 
-Adobe Campaign fornisce diversi connettori di gestione delle relazioni con i clienti per collegare la piattaforma Adobe Campaign ai sistemi di terze parti. Questi connettori di gestione delle relazioni con i clienti ti consentono di sincronizzare contatti, account, acquisti, ecc. Facilitano l’integrazione dell’applicazione con varie applicazioni di terze parti e aziendali.
+Adobe Campaign fornisce diversi connettori di gestione delle relazioni con i clienti per collegare la piattaforma Adobe Campaign ai sistemi di terze parti. Questi connettori di gestione delle relazioni con i clienti ti consentono di sincronizzare contatti, account, acquisti, ecc. Semplificano l’integrazione dell’applicazione con varie applicazioni di terze parti e aziendali.
 
 Questi connettori consentono un’integrazione rapida e semplice dei dati: Adobe Campaign fornisce un assistente dedicato per la raccolta e la selezione dalle tabelle disponibili nella gestione delle relazioni con i clienti. Ciò garantisce la sincronizzazione bidirezionale per far sì che i dati siano sempre aggiornati in tutti i sistemi.
 
 >[!NOTE]
 >
 >* Questa funzione è disponibile in Adobe Campaign tramite il pacchetto dedicato **Connettori CRM**.
->* Per ulteriori informazioni sui connettori CRM e su come connettersi a Microsoft Dynamics e Salesforce, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/connect/ac-crm/crm){target=_blank}.
+>* Per ulteriori informazioni sui connettori CRM e su come connettersi a Microsoft Dynamics e Salesforce, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-crm/crm){target=_blank}.
 
 <!--
 ### Compatible systems {#compatible-crm-systems-and-limitations}

@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: 47f50bf5-4d5b-4c07-af71-de4390177cf5
 source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '823'
-ht-degree: 1%
+source-wordcount: '855'
+ht-degree: 3%
 
 ---
 
@@ -90,4 +90,4 @@ La modalità personalizzata è per i client avanzati che desiderano impostare le
 * [Configurazione MX](../../installation/using/email-deliverability.md#mx-configuration)
 * [Configurazione tecnica delle e-mail](../../installation/using/email-deliverability.md)
 * [Errori di consegna](../../delivery/using/delivery-failures-quarantine.md)
-* [Campaign Classic - Consigli tecnici](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=it)
+* [Campaign Classic - Consigli tecnici](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html)

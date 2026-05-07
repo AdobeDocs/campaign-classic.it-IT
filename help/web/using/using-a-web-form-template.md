@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Usare un modello di modulo web
-description: Usare un modello di modulo web
+title: Usare un modello per moduli web
+description: Usare un modello per moduli web
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Web Forms
 exl-id: 0cbb8e4c-8cb4-4dd7-ad09-b8b3165c19a8
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '224'
 ht-degree: 6%
 
 ---
 
-# Usare un modello di modulo web{#using-a-web-form-template}
+# Usare un modello per moduli web{#using-a-web-form-template}
 
 
 

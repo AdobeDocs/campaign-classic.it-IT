@@ -10,7 +10,7 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '916'
 ht-degree: 79%
 
 ---
@@ -39,7 +39,7 @@ It also contains information on important features to manage Privacy ([Consent, 
 
 ## Normative sulla gestione della privacy {#privacy-management-regulations}
 
- Le funzionalità di Adobe Campaign consentono di rispettare le seguenti normative:
+Le funzionalità di Adobe Campaign consentono di rispettare le seguenti normative:
 
 * **Il GDPR** (Regolamento generale sulla protezione dei dati) è la normativa sulla privacy dell&#39;Unione europea che armonizza e modernizza i requisiti di protezione dei dati per i paesi dell&#39;UE.
 * **CCPA** (California Consumer Privacy Act) fornisce ai residenti della California nuovi diritti in merito alle loro informazioni personali e impone responsabilità in materia di protezione dei dati a determinate entità che conducono attività commerciali in California.
@@ -67,9 +67,9 @@ Per aiutarti a garantire l’idoneità alle normative sulla privacy, Adobe Campa
 Per informazioni su come creare richieste di **accesso** ed **eliminazione** e su come queste vengono elaborate da Adobe Campaign, fai riferimento ai [passaggi di implementazione](../../platform/using/privacy-requests.md).
 
 <!--
-Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=it).
+Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html).
 
-https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=it
+https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html
 -->
 
 ## Consenso, conservazione e ruoli {#consent-retention-roles}
@@ -117,7 +117,7 @@ Rivolgiti ai consulenti o agli amministratori tecnici di Adobe per ulteriori inf
 
 ### Rights Management {#rights-management}
 
- Adobe Campaign consente di gestire i diritti assegnati ai vari operatori di Campaign tramite diversi ruoli predefiniti o personalizzati.
+Adobe Campaign consente di gestire i diritti assegnati ai vari operatori di Campaign tramite diversi ruoli predefiniti o personalizzati.
 
 Uno dei vantaggi offerti è la possibilità di gestire chi può accedere a diversi tipi di dati all’interno dell’azienda. Ad esempio, puoi fare in modo che diversi esperti di marketing che coprono aree geografiche diverse accedano solo ai dati della propria area geografica.
 

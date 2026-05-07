@@ -9,7 +9,7 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 73b90d79-88b6-4aaf-8103-4564de5e06be
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '781'
 ht-degree: 100%
 
 ---
@@ -32,7 +32,7 @@ L’**interfaccia di Adobe Campaign** consente di creare le richieste di accesso
 
    ![](assets/privacy-request-new.png)
 
-1. Seleziona **[!UICONTROL Regulation]** (RGPD, CCPA, PDPA o LGPD), **[!UICONTROL Request type]** (accesso o eliminazione), seleziona un **[!UICONTROL Namespace]** e immetti il **[!UICONTROL Reconciliation value]**. Se utilizzi l’e-mail come namespace, digita l’e-mail dell’interessato.
+1. Seleziona **[!UICONTROL Regulation]** (GDPR, CCPA, PDPA o LGPD), **[!UICONTROL Request type]** (accesso o eliminazione), seleziona un **[!UICONTROL Namespace]** e immetti il **[!UICONTROL Reconciliation value]**. Se utilizzi lo spazio dei nomi per l’e-mail, digita l’e-mail dell’interessato.
 
    ![](assets/privacy-request-properties.png)
 

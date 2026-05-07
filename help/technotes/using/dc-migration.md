@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: Migrazione a cloud pubblico
-description: Ulteriori informazioni sulla migrazione di Campaign Classic a cloud pubblico
+description: Ulteriori informazioni sulla migrazione di Campaign Classic al cloud pubblico
 feature: Technote, Upgrade
 role: User
 level: Beginner
 exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1557'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## Contesto
 
-In qualità di cliente Adobe Campaign Classic, ci impegniamo a fornirti la migliore esperienza e il miglior valore. Nel corso degli anni, abbiamo realizzato il valore e l&#39;affidabilità di ospitare i nostri clienti nel cloud.  Nell&#39;ambito della [Iniziativa di aggiornamento annuale](../../rn/using/rn-overview.md#yearly-upgrade), stiamo spostando tutti i nostri clienti in Adobe Managed Services (Public Cloud su AWS) per fornire servizi migliori e più affidabili.
+In qualità di cliente Adobe Campaign Classic, ci impegniamo a fornirti la migliore esperienza e il miglior valore. Nel corso degli anni, abbiamo realizzato il valore e l&#39;affidabilità di ospitare i nostri clienti nel cloud.  Nell&#39;ambito della [Iniziativa di aggiornamento annuale](../../rn/using/rn-overview.md#yearly-upgrade), stiamo spostando tutti i nostri clienti ad Adobe Managed Services (Public Cloud on AWS) per fornire servizi migliori e più affidabili.
 
 Il programma ha tre obiettivi principali:
 
@@ -78,21 +78,21 @@ Il programma ha tre obiettivi principali:
 
 Per iniziare, gli account che richiedono questa migrazione riceveranno una comunicazione e-mail da Adobe, con una timeline e l’accesso alla documentazione. Questa sarà la notifica che avvisa che è pianificata la migrazione del tuo account.
 
-È possibile avviare una migrazione [aprendo un nuovo ticket di assistenza clienti](https://experienceleague.adobe.com/it?support-solution=Campaign#support). Utilizza la riga dell’oggetto &quot;Migrazione ad AWS&quot;.
+È possibile avviare una migrazione [aprendo un nuovo ticket di assistenza clienti](https://experienceleague.adobe.com/?support-solution=Campaign#support). Utilizza la riga dell’oggetto &quot;Migrazione ad AWS&quot;.
 
 ### Questa migrazione è obbligatoria?
 
 Questa migrazione al cloud è **il primo passaggio al [programma di aggiornamento annuale](../../rn/using/rn-overview.md#yearly-upgrade)** delle istanze Adobe Campaign. Questa migrazione è obbligatoria se sei ospitato in un centro dati che non è il cloud pubblico (AWS).
 
-Il cloud Managed Services di Adobe è ospitato su Amazon Web Services (AWS), un ambiente moderno, sicuro e ottimizzato. [Ulteriori informazioni su AWS](https://aws.amazon.com/application-hosting/benefits/).
+Il cloud Adobe Managed Services è ospitato su Amazon Web Services (AWS), un ambiente moderno, sicuro e ottimizzato. [Ulteriori informazioni su AWS](https://aws.amazon.com/application-hosting/benefits/).
 
-Adobe prevede di rimuovere il centro dati legacy, le istanze Adobe Campaign in esecuzione in tale centro devono essere trasferite al nuovo centro dati di riferimento, AWS.
+Adobe pianifica di smantellare il centro dati legacy; le istanze Adobe Campaign in esecuzione in tale centro devono essere trasferite al nuovo centro dati di riferimento, AWS.
 
 Si tratta di un percorso critico in avanti in quanto la posizione corrente potrebbe essere esposta a **vulnerabilità di sicurezza e prestazioni**.
 
 Inoltre, questa migrazione è ora un **prerequisito per qualsiasi aggiornamento della build** futuro del tuo Adobe Campaign. L&#39;aggiornamento della build non è più possibile sui datacenter legacy.
 
-Adobe si impegna a proteggere i dati e a metterti sulla buona strada per il futuro di Adobe Campaign. Abbiamo bisogno della vostra collaborazione per farne un successo comune!
+Adobe si impegna a proteggere i dati e a garantire la continuità per il futuro di Adobe Campaign. Abbiamo bisogno della vostra collaborazione per farne un successo comune!
 
 
 **Abbiamo organizzato un team** di responsabili dell&#39;Assistenza clienti, Customer Success Manager, Product Manager, ingegneri, specialisti TechOps e consulenti di prodotto per assistere e garantire un&#39;esperienza fluida e fluida. Facciamo tutto il possibile affinché tu possa disporre sempre delle informazioni di progetto e di contatto di cui puoi avere bisogno.
@@ -124,7 +124,7 @@ Il database verrà scaricato dal data center legacy e ripristinato in Public Clo
 
 **Invio di indirizzi IP tramite posta elettronica**
 
-Al termine della migrazione, l’istanza Campaign avrà IP di invio completamente diversi. Al fine di garantire una transizione senza intoppi, Adobe implementerà un aumento graduale dei nuovi IP di invio cambiando in modo progressivo il traffico dai vecchi IP a quelli nuovi.
+Al termine della migrazione, l’istanza Campaign avrà IP di invio completamente diversi. Al fine di garantire una transizione fluida, Adobe implementerà un incremento dei nuovi IP di invio passando in modo progressivo dal traffico precedente a quello nuovo.
 
 **IP di integrazione dei dati**
 
@@ -145,8 +145,8 @@ I server Campaign esistenti (contenitori in realtà) verranno spostati in Cloud 
 
 Nel/i sottodominio/i utilizzato/i per le comunicazioni di marketing: rimarrà lo stesso. Tuttavia, a seconda dell’implementazione, potrebbero essere necessarie azioni sul lato client:
 
-* In caso di delega dei sottodomini (caso normale), Adobe si occuperà di tutte le modifiche e garantirà una transizione senza soluzione di continuità
-* In caso di configurazione CNAME (eccezione), al client verrà richiesto di implementare le modifiche. Sarà necessario il coordinamento con l&#39;Adobe.
+* In caso di delega di sottodominio (caso normale), Adobe si occuperà di tutte le modifiche e garantirà una transizione senza soluzione di continuità
+* In caso di configurazione CNAME (eccezione), al client verrà richiesto di implementare le modifiche. Sarà necessario il coordinamento con Adobe.
 
 Per l’accesso degli utenti e l’integrazione dei dati, i nomi in neolane.net rimarranno invariati.
 
@@ -156,7 +156,7 @@ Ciò significa che la modifica sarà trasparente per gli utenti e le implementaz
 
 **Invio di indirizzi IP tramite posta elettronica**
 
-Innanzitutto, Adobe Deliverability valuta lo stato di recapito della piattaforma e consiglia un piano per il passaggio ai nuovi IP.
+In primo luogo, il recapito messaggi di Adobe valuterà lo stato di recapito messaggi della piattaforma e raccomanderà un piano per il passaggio ai nuovi IP.
 
 Adobe eseguirà il provisioning dello stesso numero di IP sul nuovo centro dati.
 

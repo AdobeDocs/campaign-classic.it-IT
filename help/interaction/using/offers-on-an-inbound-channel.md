@@ -10,7 +10,7 @@ topic-tags: case-study
 exl-id: 90afced3-465d-4370-8a33-51a7e4356135
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
-source-wordcount: '2097'
+source-wordcount: '2102'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ Otterrai una struttura ad albero contenente il nuovo ambiente:
 
    ![](assets/offer_inbound_anonymous_example_030.png)
 
-1. Modifica la funzione di rendering HTML, ad esempio come segue:
+1. Modifica la funzione di rendering di HTML, ad esempio come segue:
 
    ```
    function (imageUrl, targetUrl, shortContent, htmlSource){
@@ -145,7 +145,7 @@ Per rendere visibili sul sito Web le offerte appena configurate, inserisci un co
 
    Le caselle URL blu sopra corrispondono al nome dell&#39;istanza, al nome interno dell&#39;ambiente (fare riferimento a [Creazione di un ambiente anonimo](#creating-an-anonymous-environment)) e al tema collegato alla categoria ([Creazione di una categoria di offerta e di un tema](#creating-an-offer-category-and-a-theme)). Quest&#39;ultimo è facoltativo.
 
-Quando un visitatore accede alla home page del sito Web, le offerte con il tema **finanziamento** vengono visualizzate come configurate nella pagina di HTML.
+Quando un visitatore accede alla home page del sito Web, le offerte con il tema **finanziamento** vengono visualizzate come configurate nella pagina HTML.
 
 ![](assets/offer_inbound_anonymous_example_022.png)
 
@@ -291,7 +291,7 @@ Per creare i due spazi dell’offerta, applica la stessa procedura applicata agl
 
    ![](assets/offer_inbound_fallback_example_005.png)
 
-1. Selezionare l&#39;opzione **[!UICONTROL Fall back on an anonymous environment if no individuals were identified]**.
+1. Seleziona l’opzione **[!UICONTROL Fall back on an anonymous environment if no individuals were identified]**.
 
    ![](assets/offer_inbound_fallback_example_006.png)
 
@@ -371,7 +371,7 @@ Il sito Web della società Neobank dispone di tre spazi per le offerte: due per 
 
 ![](assets/offer_inbound_fallback_example_038.png)
 
-Per configurare questi spazi di offerta sulla pagina HTML del sito web, procedi come segue:
+Per configurare questi spazi dell’offerta sulla pagina HTML del sito web, applica la procedura seguente:
 
 1. Nel contenuto della pagina HTML, inserisci tre
 

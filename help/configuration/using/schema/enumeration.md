@@ -7,7 +7,7 @@ exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
 source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 8%
+ht-degree: 11%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 ## Modello di contenuto {#content-model-5}
 
-enumerazione:==(guida| value)
+enumerazione:==(valore help|)
 
 ## Attributi {#attributes-5}
 
@@ -67,13 +67,13 @@ Le enumerazioni vengono definite all’inizio di uno schema (prima che sia defin
    * mobile
    * html
    * int64
-   * link
-   * long
+   * collegamento
+   * lungo
    * promemoria
    * MNTOKEN
    * percentuale
    * chiave primaria
-   * corto
+   * breve
    * stringa
    * ora
    * intervallo di tempo

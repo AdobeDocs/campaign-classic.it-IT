@@ -9,8 +9,8 @@ content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
 source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 0%
+source-wordcount: '722'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 
 
-**L&#39;operazione pipeline non riesce e viene visualizzato l&#39;errore &quot;Nessuna attività corrisponde alla maschera pipeline@&lt; istanza >&quot;**
+**Il pipeline non riesce e viene visualizzato l&#39;errore &quot;Nessuna attività corrisponde alla maschera pipeline@&lt; istanza >&quot;**
 
 La versione di Adobe Campaign Classic in uso non supporta la pipeline.
 
@@ -69,7 +69,7 @@ I registri devono essere i seguenti:
 2021-05-31T08:43:09.160Z        66462   66501   1       error   log     Error while authenticating: '{"error":"This client: df73c224e5-triggers-test is no longer allowed to get access token."}' (iRc=16384)
 ```
 
-Questo messaggio di errore indica che l’autenticazione è configurata utilizzando la precedente OAuth di base di Omniture. Consulta la documentazione [Configurazione dell&#39;Adobe I/O per Adobe Experience Cloud Triggers](../../integrations/using/about-triggers.md#implement) per aggiornare l&#39;autenticazione.
+Questo messaggio di errore indica che l’autenticazione è configurata utilizzando la OAuth legacy di Omniture base. Consulta la documentazione [Configurazione di Adobe I/O per i trigger di Adobe Experience Cloud](../../integrations/using/about-triggers.md#implement) per aggiornare l&#39;autenticazione.
 
 **Nessun trigger recuperato**
 
@@ -102,8 +102,8 @@ In genere, un trigger può richiedere dai 15 ai 90 minuti per avviare una campag
 1. Controllare la pagina di stato [!DNL pipelined] per le dimensioni della coda. Se la coda è di grandi dimensioni, migliora le prestazioni di JS.
 1. Poiché un ritardo sembra aumentare con il volume, configura i trigger su Analytics utilizzando meno messaggi.
 
-**Aggiornamento delle istanze della fase dall&#39;autenticazione legacy all&#39;autenticazione I/O Adobe**
+**Aggiornamento delle istanze della fase dall&#39;autenticazione legacy all&#39;autenticazione IO Adobe**
 
-La modifica dell’autenticazione dell’integrazione nell’istanza di stage non influisce sulla configurazione dell’istanza di produzione. Puoi scegliere di aggiornare l’istanza Stage, quindi aggiornare l’autenticazione in Adobe IO e verificare i trigger nell’istanza Stage.
+La modifica dell’autenticazione dell’integrazione nell’istanza di stage non influisce sulla configurazione dell’istanza di produzione. Puoi scegliere di aggiornare l’istanza Stage, quindi aggiornare l’autenticazione a Adobe IO e testare i trigger sull’istanza Stage.
 
 L’istanza di produzione continuerà a utilizzare l’autenticazione legacy e non sarà interessata da questa modifica.

@@ -8,7 +8,7 @@ role: User
 exl-id: eb72f19a-7669-4596-bf9b-8c0ce22b67bf
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '168'
 ht-degree: 4%
 
 ---
@@ -21,4 +21,4 @@ Puoi anche consentire ai destinatari della consegna di condividerli con i membri
 
 >[!NOTE]
 >
->Questa funzionalità è fornita come standard con Adobe Campaign. L’applicazione opzionale Social Marketing consente di contattare clienti e potenziali clienti tramite Facebook e X (precedentemente noti come Twitter).
+>Questa funzionalità è fornita come standard con Adobe Campaign. L’applicazione opzionale Social Marketing consente di contattare clienti attuali e potenziali tramite Facebook e X (precedentemente noti come Twitter).

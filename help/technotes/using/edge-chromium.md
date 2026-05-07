@@ -6,8 +6,8 @@ feature: Technote, Upgrade
 exl-id: 22f4cbaf-ca37-47b9-b7dd-1ee73d5b348d
 source-git-commit: 8734e6ef26a7342042a5242d54854b7d3a5e6244
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 6%
+source-wordcount: '274'
+ht-degree: 10%
 
 ---
 
@@ -25,11 +25,11 @@ Oltre all&#39;installazione di Microsoft Edge Webview 2 Runtime, attualmente [ne
 
 ## Sei interessato?
 
-L’aggiornamento dell’ambiente a Campaign Classic v7.3 (o versione successiva) influisce su di esso.
+L’aggiornamento dell’ambiente a Campaign Classic v7.3 (o versione successiva) è stato modificato.
 
 ## Come si esegue l’aggiornamento?
 
-* In qualità di cliente **hosted**, Adobe ha già abilitato Microsoft Edge Chromium nelle tue istanze. Non è richiesta alcuna azione aggiuntiva.
+* In qualità di cliente **in hosting**, Adobe ha già abilitato Microsoft Edge Chromium nelle tue istanze. Non è richiesta alcuna azione aggiuntiva.
 
 * In qualità di cliente **on-premise/hybrid**, devi abilitare Microsoft Edge Chromium nelle tue istanze.
 

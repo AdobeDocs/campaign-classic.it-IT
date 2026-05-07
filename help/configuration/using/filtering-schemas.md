@@ -7,7 +7,7 @@ role: Developer
 exl-id: 009bed25-cd35-437c-b789-5b58a6d2d7c6
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '387'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Questi filtri vengono immessi al livello **elemento** principale degli schemi e,
 
 * Limita le autorizzazioni di LETTURA e SCRITTURA:
 
-  In questo caso, il filtro viene utilizzato per non consentire le autorizzazioni di LETTURA e SCRITTURA sullo schema per tutti gli operatori. Solo l&#39;account **internal**, rappresentato dall&#39;espressione &quot;$(loginId).=0&quot;, dispone delle seguenti autorizzazioni.
+  In questo caso, il filtro viene utilizzato per non consentire le autorizzazioni di LETTURA e SCRITTURA sullo schema per tutti gli operatori. Solo l&#39;account **internal**, rappresentato dall&#39;espressione &quot;$(loginId)!=0&quot;, dispone di queste autorizzazioni.
 
   ```
   <sysFilter name="readAccess"> 

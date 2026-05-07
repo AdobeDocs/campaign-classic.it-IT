@@ -6,8 +6,8 @@ feature: Schema Extension
 exl-id: 60f15ae5-b2bd-48f9-aa45-8f795a3071aa
 source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
-source-wordcount: '2029'
-ht-degree: 0%
+source-wordcount: '2035'
+ht-degree: 1%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Modello di contenuto {#content-model-4}
 
-element:==(attribute) | stringa di calcolo | dbindex | predefinito | elemento | aiuto | unire | chiave | sysFilter | translationDefault)
+element:==(attribute) | stringa di calcolo | dbindex | predefinito | elemento | guida | unire | chiave | sysFilter | translationDefault)
 
 ## Attributi {#attributes-4}
 
@@ -46,7 +46,7 @@ _operation (stringa), advanced (booleano), aggregate (stringa), applyIf (stringa
 In Adobe Campaign sono disponibili quattro tipi di elementi `<element>`:
 
 * Radice `<element>` : definisce il nome della tabella SQL corrispondente allo schema.
-* Struttura `<element>`: definisce un gruppo di `<element>`   o   `<attribute>`    elementi.
+* Struttura `<element>`: definisce un gruppo di `<element>` o `<attribute>` elementi.
 * Collegamento `<element>` : definisce un collegamento. Questi elementi devono includere l’attributo &quot;@type=link&quot;.
 * XML `<element>` : definisce un campo &quot;mData&quot; di tipo Testo. Questo elemento deve includere l’attributo &quot;@type=xml&quot;.
 
@@ -65,7 +65,7 @@ In Adobe Campaign sono disponibili quattro tipi di elementi `<element>`:
    * &quot;delete&quot;: eliminazione. Ciò significa che Adobe Campaign recupererà ed eliminerà gli elementi.
 
 * **avanzato (booleano)**: quando questa opzione è attivata (@advanced=&quot;true&quot;), consente di nascondere l&#39;attributo nell&#39;elenco dei campi disponibili accessibili per la configurazione di un elenco in un modulo.
-* **aggregato (stringa)**: consente di copiare la definizione di un `<element>` tramite un altro schema. Questo attributo riceve una dichiarazione dello schema sotto forma di &quot;namespace:name&quot;.
+* **aggregato (stringa)**: consente di copiare la definizione di un `<element>` tramite un altro schema. Questo attributo riceve una dichiarazione dello schema sotto forma di uno &quot;spazio dei nomi:name&quot;.
 * **applyIf (stringa)**: condizione per l&#39;applicazione dell&#39;indice. Questo attributo riceve un&#39;espressione XTK.
 * **autopk (booleano)**: se questa opzione è attivata (autopk=&quot;true&quot;), verrà automaticamente definita una chiave univoca. Questa opzione può essere utilizzata solo sull’elemento principale dello schema. Attenzione: Adobe Campaign garantisce solo che la chiave generata sia univoca. Non è garantito che i valori chiave siano consecutivi e incrementali.
 * **criteri dati (stringa)**: consente di specificare vincoli di approvazione per i valori consentiti nel campo SQL. I valori per questo attributo sono:
@@ -108,7 +108,7 @@ In Adobe Campaign sono disponibili quattro tipi di elementi `<element>`:
 * **folderModel (stringa)**: definisce il tipo di cartella che abilita l&#39;archiviazione delle entità. Questo attributo è definito solo se è presente &quot;@folderLink&quot;.
 * **folderProcess (stringa)**: definisce il collegamento in cui sono memorizzate le istanze del modello di entità. Questo attributo è definito solo se è presente &quot;@folderLink&quot;.
 * **fullLoad (booleano)**: questo attributo forza la visualizzazione di tutti i record di una tabella durante la selezione del campo in un modulo.
-* **img (stringa)**: riceve il percorso di un&#39;immagine collegata a un elemento. Il valore di questo attributo è del tipo &quot;namespace:image name&quot;. Ad esempio: img=&quot;cus:myImage.jpg&quot;. A livello fisico, l&#39;immagine deve essere importata nel server applicazioni.
+* **img (stringa)**: riceve il percorso di un&#39;immagine collegata a un elemento. Il valore di questo attributo è di tipo &quot;namespace:image name&quot;. Ad esempio: img=&quot;cus:myImage.jpg&quot;. A livello fisico, l&#39;immagine deve essere importata nel server applicazioni.
 * **integrità (stringa)**: integrità referenziale dell&#39;occorrenza della tabella di origine verso la tabella di destinazione.
 
   I valori accessibili sono:
@@ -189,13 +189,13 @@ In Adobe Campaign sono disponibili quattro tipi di elementi `<element>`:
    * mobile
    * html
    * int64
-   * link
-   * long
+   * collegamento
+   * lungo
    * promemoria
    * MNTOKEN
    * percentuale
    * chiave primaria
-   * corto
+   * breve
    * stringa
    * ora
    * intervallo di tempo

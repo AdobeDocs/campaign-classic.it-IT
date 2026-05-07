@@ -9,7 +9,7 @@ topic-tags: deployment-types-
 exl-id: 59364cfc-9917-4057-ad5f-fbca7e261b07
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '412'
 ht-degree: 6%
 
 ---
@@ -83,7 +83,7 @@ Le opzioni Power Booster e Power Cluster possono essere utilizzate dalle seguent
  </tbody> 
 </table>
 
-## Raccomandazioni {#recommendations}
+## Consigli {#recommendations}
 
 * Un’istanza di esecuzione deve essere dedicata a un servizio. Non puoi installare un pacchetto per un servizio al quale non ti sei iscritto. Ad esempio, se si sottoscrive l&#39;opzione **Power Booster** per il servizio **Message Center**, è possibile installare il pacchetto **[!UICONTROL Execution of transactional messages]** solo nell&#39;istanza di esecuzione dedicata. Controlla il contratto di licenza.
 * Poiché le istanze dedicate (o cluster) sono istanze di Adobe Campaign, i consigli sono gli stessi di un’istanza principale. Per ulteriori informazioni, consulta [questo documento](../../production/using/foreword.md).

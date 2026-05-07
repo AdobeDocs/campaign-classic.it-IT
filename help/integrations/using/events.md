@@ -10,7 +10,7 @@ level: Intermediate, Experienced
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
 source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1204'
 ht-degree: 1%
 
 ---
@@ -210,7 +210,7 @@ Di seguito è riportato un codice schema di esempio per questa tabella:
 | triggerType | Stringa 50 | TriggerType | Nome del trigger. Identifica il comportamento del cliente sul sito web. |
 | shopper_id | Stringa 32 | shopper_id | L’identificatore interno dell’acquirente. Impostato dal flusso di lavoro di riconciliazione. Se è zero, significa che il cliente è sconosciuto in Campaign. |
 | shopper_key | Lungo | shopper_key | L’identificatore esterno dell’acquirente acquisito da Analytics. |
-| creato | Data e ora | Creato | L’ora in cui l’evento è stato creato in Campaign. |
+| creata | Data e ora | Creato | L’ora in cui l’evento è stato creato in Campaign. |
 | lastModified | Data e ora | Ultima modifica | L’ultima volta che l’evento è stato modificato in Adobe. |
 | timeGMT | Data e ora | Marca temporale | L’ora in cui l’evento è stato generato in Analytics. |
 

@@ -7,7 +7,7 @@ feature: Seed Address
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '465'
 ht-degree: 5%
 
 ---
@@ -33,7 +33,7 @@ Per utilizzare la sostituzione casuale dei campi, è necessario disporre di:
 
 ## Creare una consegna {#step-1---creating-a-delivery}
 
-I passaggi per la creazione di una consegna sono descritti nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html?lang=it){target="_blank"}.
+I passaggi per la creazione di una consegna sono descritti nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}.
 
 In questo esempio, il responsabile della consegna ha creato la newsletter.
 

@@ -7,7 +7,7 @@ feature: Surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
 source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '869'
 ht-degree: 2%
 
 ---
@@ -162,4 +162,4 @@ Modifica la casella di divisione per configurarla:
 
 ## Standardizzazione dei dati {#standardizing-data}
 
-È possibile impostare processi di standardizzazione in Adobe Campaign per i dati raccolti utilizzando gli alias. Ciò ti consente di standardizzare i dati memorizzati nel database: a questo scopo, definisci gli alias negli elenchi dettagliati che contengono le informazioni pertinenti. Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+È possibile impostare processi di standardizzazione in Adobe Campaign per i dati raccolti utilizzando gli alias. Ciò ti consente di standardizzare i dati memorizzati nel database: a questo scopo, definisci gli alias negli elenchi dettagliati che contengono le informazioni pertinenti. Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.

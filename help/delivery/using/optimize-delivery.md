@@ -9,8 +9,8 @@ hide: true
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 4%
+source-wordcount: '758'
+ht-degree: 9%
 
 ---
 
@@ -50,7 +50,7 @@ Per raggiungere la casella in entrata dei destinatari senza che vengano generati
 
    * Durante il controllo della consegna delle e-mail, desideri concentrarti su quattro categorie principali: qualità dei dati, messaggio e contenuto, infrastruttura di invio e reputazione. Per ulteriori informazioni su questo argomento, consulta [questa sezione](about-deliverability.md).
 
-* Applica i consigli dettagliati [&#x200B; in questo documento](about-deliverability.md).
+* Applica i consigli dettagliati [ in questo documento](about-deliverability.md).
 
 * Contatta il rappresentante Adobe per assistenza.
 
@@ -64,7 +64,7 @@ Quando inizi a inviare e-mail su una nuova piattaforma, puoi utilizzare un elenc
 
 * Se disponi di un elenco di indirizzi non validi, Adobe consiglia di importarlo nella tabella di quarantena tramite **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Non deliverables and addresses]**.
 
-* I destinatari i cui indirizzi sono in quarantena sono esclusi per impostazione predefinita durante l’analisi della consegna: non sono oggetto di targeting. In questo modo le consegne saranno più rapide, poiché il tasso di errore ha un effetto significativo sulla velocità di consegna. Un indirizzo e-mail può essere messo in quarantena, ad esempio quando la casella in entrata è piena o se l’indirizzo non esiste. [Ulteriori informazioni](#identifying-quarantined-addresses-for-a-delivery)
+* I destinatari i cui indirizzi sono in quarantena sono esclusi per impostazione predefinita durante l’analisi della consegna: non sono oggetto di targeting. In questo modo le consegne sono più rapide, poiché il tasso di errore ha un effetto significativo sulla velocità di consegna. Un indirizzo e-mail può essere messo in quarantena, ad esempio quando la casella in entrata è piena o se l’indirizzo non esiste. [Ulteriori informazioni](#identifying-quarantined-addresses-for-a-delivery)
 
 * Adobe Campaign gestisce gli indirizzi errati in base al tipo di errore restituito. Per ulteriori informazioni al riguardo, consulta [questa sezione](delivery-failures-quarantine.md).
 

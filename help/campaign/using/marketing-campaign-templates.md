@@ -8,7 +8,7 @@ hide: true
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1131'
+source-wordcount: '1147'
 ht-degree: 4%
 
 ---
@@ -67,7 +67,7 @@ Il collegamento **[!UICONTROL Advanced campaign settings...]** consente di abili
 
 ![](assets/s_ncs_user_op_template_tab1.3.png)
 
-Se non è selezionata una funzionalità, gli elementi relativi al processo (menu, icone, opzioni, schede, schede secondarie e così via) non verranno visualizzati nell’interfaccia del modello o nelle campagne basate su questo modello. Le schede a sinistra dei dettagli della campagna solitamente coincidono con i processi selezionati nel modello. Ad esempio, se **Spese e obiettivi** non è selezionato, la scheda **[!UICONTROL Budget]** corrispondente non verrà visualizzata nelle campagne basate su questo modello.
+Se non è selezionata una funzionalità, gli elementi relativi al processo (menu, icone, opzioni, schede secondarie, ecc.) non verrà visualizzato nell’interfaccia del modello o nelle campagne basate su questo modello. Le schede a sinistra dei dettagli della campagna solitamente coincidono con i processi selezionati nel modello. Ad esempio, se **Spese e obiettivi** non è selezionato, la scheda **[!UICONTROL Budget]** corrispondente non verrà visualizzata nelle campagne basate su questo modello.
 
 Inoltre, al dashboard della campagna vengono aggiunte scelte rapide per le finestre di configurazione. Quando una funzionalità è abilitata, un collegamento diretto consente di accedervi dal dashboard della campagna.
 
@@ -113,13 +113,13 @@ Verranno visualizzati i collegamenti e le schede seguenti:
 
 * **Struttura**
 
-  Quando questo modulo è selezionato, alla scheda **[!UICONTROL Delivery outlines]** viene aggiunta una scheda secondaria **[!UICONTROL Documents]** per definire i profili di consegna per la campagna. Ulteriori informazioni sui profili di consegna in [questa sezione](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+  Quando questo modulo è selezionato, alla scheda **[!UICONTROL Documents]** viene aggiunta una scheda secondaria **[!UICONTROL Delivery outlines]** per definire i profili di consegna per la campagna. Ulteriori informazioni sui profili di consegna in [questa sezione](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
   ![](assets/s_ncs_user_op_template_activate_4.png)
 
 * **Impostazione destinazione e flussi di lavoro**
 
-  Quando selezioni il modulo **[!UICONTROL Targeting and workflows]**, viene aggiunta una scheda che consente di creare uno o più flussi di lavoro per le campagne basate su questo modello. I flussi di lavoro possono essere configurati singolarmente per ogni campagna basata su questo modello.Ulteriori informazioni sui flussi di lavoro delle campagne in [questa sezione](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
+  Quando selezioni il modulo **[!UICONTROL Targeting and workflows]**, viene aggiunta una scheda che consente di creare uno o più flussi di lavoro per le campagne basate su questo modello. I flussi di lavoro possono anche essere configurati singolarmente per ogni campagna basata su questo modello.Ulteriori informazioni sui flussi di lavoro delle campagne in [questa sezione](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
   ![](assets/s_ncs_user_op_template_activate_5.png)
 
@@ -156,7 +156,7 @@ Quando crei un modello di campagna, devi immettere le seguenti informazioni:
 
   >[!NOTE]
   >
-  >Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+  >Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 * Selezionare il tipo **di campagna**: univoco, ricorrente o periodico. Per impostazione predefinita, i modelli di campagna si applicano a campagne univoche. Le campagne ricorrenti e periodiche sono descritte in dettaglio in [questa sezione](../../campaign/using/setting-up-marketing-campaigns.md#recurring-and-periodic-campaigns).
 * Specifica la durata della campagna, ovvero il numero di giorni durante i quali la campagna avrà luogo. Quando crei una campagna basata su questo modello, le date di inizio e di fine della campagna verranno compilate automaticamente.
@@ -167,7 +167,7 @@ Quando crei un modello di campagna, devi immettere le seguenti informazioni:
 
 ### Parametri di esecuzione del modello {#template-execution-parameters}
 
-Il collegamento **[!UICONTROL Advanced campaign settings...]** consente di configurare le opzioni avanzate del modello per l&#39;elaborazione del target di consegna (gruppo di controllo, indirizzi seed, ecc.) e la configurazione della misurazione della campagna e dell&#39;esecuzione del flusso di lavoro.
+Il collegamento **[!UICONTROL Advanced campaign settings...]** consente di configurare le opzioni avanzate del modello per l&#39;elaborazione del target di consegna (gruppo di controllo, indirizzi seed, ecc.) e la configurazione della misurazione della campagna e dell’esecuzione del flusso di lavoro.
 
 ![](assets/s_ncs_user_op_template_tab1.2.png)
 

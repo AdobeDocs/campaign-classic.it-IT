@@ -9,8 +9,8 @@ hide: true
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 7%
+source-wordcount: '502'
+ht-degree: 9%
 
 ---
 
@@ -112,6 +112,6 @@ Nell’esempio seguente, scoprirai come creare un’e-mail multilingue. Il conte
 
 Scopri come aggiungere contenuti condizionali a una consegna sull’esempio di una newsletter multilingue.
 
->[!VIDEO](https://video.tv.adobe.com/v/329895?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
 
 Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

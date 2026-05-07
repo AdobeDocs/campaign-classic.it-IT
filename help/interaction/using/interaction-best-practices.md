@@ -9,7 +9,7 @@ topic-tags: interaction-overview
 exl-id: 98413cde-50c9-416c-8316-85837f724c27
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1206'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 
 
-## Raccomandazioni generali {#general-recommendations}
+## Consigli generali {#general-recommendations}
 
 Questa sezione descrive l’approccio best practice per gestire il modulo di interazione in Adobe Campaign Classic, con regole di idoneità, filtri predefiniti, attività del flusso di lavoro e opzioni del database.
 
@@ -71,21 +71,21 @@ Nell&#39;esempio seguente, lo spazio dell&#39;offerta selezionato nella consegna
 
 ![](assets/Interaction-best-practices-offer-space-selected.png)
 
-Se lo spazio dell’offerta selezionato nella consegna non dispone di una funzione di rendering HTML configurata, non verrà visualizzato nel menu della consegna e non sarà disponibile per la selezione. Anche in questo caso, è indipendente dallo spazio delle offerte selezionato nell’attività Enrichment.
+Se lo spazio dell’offerta selezionato nella consegna non dispone di una funzione di rendering di HTML configurata, non verrà visualizzato nel menu di consegna e non sarà disponibile per la selezione. Anche in questo caso, è indipendente dallo spazio delle offerte selezionato nell’attività Enrichment.
 
-Nell’esempio seguente, la funzione di rendering HTML è disponibile nell’elenco a discesa perché lo spazio dell’offerta selezionato nella consegna ha una funzione di rendering:
+Nell’esempio seguente, la funzione di rendering di HTML è disponibile nell’elenco a discesa perché lo spazio dell’offerta selezionato nella consegna ha una funzione di rendering:
 
 ![](assets/Interaction-best-practices-HTML-rendering.png)
 
 Questa funzione inserisce il codice seguente: `<%@ include proposition="targetData.proposition" view="rendering/html" %>`.
 
 Quando si seleziona la proposta, il valore dell&#39;attributo **[!UICONTROL view]** è il seguente:
-* &quot;rendering/html&quot;: rendering html. Utilizza la funzione di rendering HTML.
-* &quot;offer/view/html&quot;: contenuto html. Non utilizza la funzione di rendering HTML. Include solo il campo HTML.
+* &quot;rendering/html&quot;: rendering html. Utilizza la funzione di rendering di HTML.
+* &quot;offer/view/html&quot;: contenuto html. Non utilizza la funzione di rendering di HTML. Include solo il campo HTML.
 
 Se includi più spazi di offerta in una singola consegna e-mail e alcuni di essi dispongono di funzioni di rendering, è necessario ricordare quali offerte utilizzano quali spazi di offerta e quali spazi di offerta dispongono di funzioni di rendering.
 
-Di conseguenza, per evitare problemi, si consiglia di definire una funzione di rendering HTML per tutti gli spazi dell’offerta, anche se lo spazio dell’offerta richiede solo contenuto HTML.
+Di conseguenza, per evitare problemi, si consiglia di definire una funzione di rendering HTML per tutti gli spazi dell’offerta, anche se lo spazio dell’offerta richiede solo contenuti HTML.
 
 ### Impostazione della classificazione nella tabella del registro delle proposte {#rank-proposition-log-table}
 
@@ -123,7 +123,7 @@ Quando si utilizza l’interazione e si selezionano manualmente le offerte, l’
 
 ### Estensione dello schema nms:offer {#extending-nms-offer-schema}
 
-Quando estendi lo schema nms:offer, accertati di seguire la struttura preconfigurata già impostata:
+Quando si estende lo schema nms:offer, assicurarsi di seguire la struttura preconfigurata già configurata:
 * Definire un nuovo campo per l&#39;archiviazione del contenuto in `<element name="view">`.
 * Ogni nuovo campo deve essere definito due volte. Una volta come campo XML normale e una volta come campo XML CDATA con &quot;_jst&quot; aggiunto al nome. Ad esempio:
 

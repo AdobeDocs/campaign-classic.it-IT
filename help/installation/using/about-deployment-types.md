@@ -9,7 +9,7 @@ topic-tags: deployment-types-
 exl-id: 08628efb-9186-4b67-9431-310d4bc276b4
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '137'
 ht-degree: 6%
 
 ---
@@ -24,6 +24,6 @@ In caso di configurazione su più computer, non è necessario utilizzare lo stes
 
 >[!NOTE]
 >
->I passaggi di configurazione dell’installazione principale possono essere eseguiti solo da Adobe per le distribuzioni in hosting da Adobe, ad esempio per configurare i file di configurazione del server e dell’istanza.
+>I passaggi principali di configurazione dell’installazione possono essere eseguiti solo da Adobe per le distribuzioni in hosting da Adobe, ad esempio per configurare i file di configurazione del server e dell’istanza.
 >
 >Per ulteriori informazioni sulle principali differenze tra le distribuzioni, consulta la sezione [Modelli di hosting](../../installation/using/hosting-models.md) o le [Differenze di funzionalità per le distribuzioni in hosting e on-premise](../../installation/using/capability-matrix.md).

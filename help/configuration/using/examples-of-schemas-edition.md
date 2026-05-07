@@ -7,7 +7,7 @@ role: Developer
 exl-id: b7ee70e0-89c6-4cd3-8116-2f073d4a2f2f
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '688'
 ht-degree: 2%
 
 ---
@@ -335,7 +335,7 @@ Nell’interfaccia utente non viene visualizzato un collegamento, ma un campo. Q
 
 ## Argomenti correlati
 
-* Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+* Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 * [Introduzione agli schemi di Campaign](../../configuration/using/about-schema-edition.md)
 

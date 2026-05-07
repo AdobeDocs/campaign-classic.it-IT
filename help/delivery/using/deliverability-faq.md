@@ -7,8 +7,8 @@ role: User
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
 source-git-commit: 0c639cc8b9636c190c868980ab5182a0eccb5f74
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 1%
+source-wordcount: '660'
+ht-degree: 2%
 
 ---
 
@@ -69,7 +69,7 @@ Se il problema persiste, contatta il servizio commerciale o di recapito messaggi
 
   Per verificare se l’indirizzo IP si trova in un inserisco nell&#39;elenco Bloccati di, puoi utilizzare vari siti web per verificarlo, ad esempio:
    * [Casella degli strumenti MX](https://mxtoolbox.com/)
-   * [Indirizzo IP](https://whatismyipaddress.com)
+   * [Qual è il mio indirizzo IP](https://whatismyipaddress.com)
 
   In genere, il risultato della verifica dell’indirizzo IP restituirà un elenco contenente i dettagli del inserisco nell&#39;elenco Bloccati di e anche il nome del sito web che ha negato l’indirizzo IP.
 

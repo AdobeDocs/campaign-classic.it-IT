@@ -7,18 +7,18 @@ feature: Campaigns
 exl-id: 07cfa2b3-4e70-437a-ad5f-15fbfe717d5c
 source-git-commit: dd6bcb16fe41b6a3f1e3f5aaf2f753b29ad4bc1d
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 33%
+source-wordcount: '362'
+ht-degree: 46%
 
 ---
 
-# Organizzazione di campagne di marketing{#designing-marketing-campaigns}
+# Orchestrare campagne di marketing{#designing-marketing-campaigns}
 
 Adobe Campaign offre un serie di soluzioni che consentono di personalizzare e distribuire campagne su tutti i canali online e offline. Puoi creare, configurare, eseguire e analizzare campagne di marketing. Tutte le campagne di marketing possono essere gestite da un centro di controllo unificato.
 
 Le campagne includono azioni (consegne), processi (importazione o estrazione file) e risorse (documenti di marketing, descrizioni della consegna). Vengono utilizzati nelle campagne di marketing. Le campagne fanno parte di un programma e i programmi sono inclusi in un piano di campagna.
 
-Per ulteriori informazioni sulla gestione delle campagne, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=it){target=_blank}.
+Per ulteriori informazioni sulla gestione delle campagne, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
 
 ![](assets/do-not-localize/campaign.jpg){width="40%"}
 
@@ -26,7 +26,7 @@ Scopri i passaggi chiave relativi alla gestione delle campagne:
 
 * [Introduzione](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=it){target=_blank}: scopri, passo dopo passo, come creare ed eseguire una campagna di marketing in Adobe Campaign.
 
-* [Crea la tua prima campagna](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=it){target=_blank}: scopri come pianificare e impostare la logica per orchestrare le campagne. Una campagna centralizza tutti gli elementi relativi a una campagna di marketing: consegne, regole di targeting, costi, file di esportazione, documenti correlati, ecc.
+* [Crea la prima campagna](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=it){target=_blank}: scopri come pianificare e impostare la logica per orchestrare le campagne. Una campagna centralizza tutti gli elementi relativi a una campagna di marketing: consegne, regole di targeting, costi, file di esportazione, documenti correlati, ecc.
 
 * [Inviare messaggi in una campagna](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=it){target=_blank}: organizza le consegne cross-channel nelle campagne: semplifica le comunicazioni con Adobe Campaign tramite e-mail, SMS, notifiche push e messaggi in-app personalizzati.
 
@@ -93,8 +93,8 @@ The following concepts need to be known in the context of Campaign:
 
 This video presents the key concepts of marketing campaigns.
 
->[!VIDEO](https://video.tv.adobe.com/v/326578?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
-Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 
 -->

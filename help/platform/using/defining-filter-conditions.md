@@ -11,7 +11,7 @@ hide: true
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '3307'
+source-wordcount: '3342'
 ht-degree: 48%
 
 ---
@@ -291,7 +291,7 @@ Esistono quattro tipi di campi calcolati:
 
   È possibile utilizzare il valore di origine di una colonna e assegnargli un valore di destinazione. Questo valore di destinazione verrà visualizzato nella nuova colonna di output.
 
-  È disponibile un esempio di aggiunta del tipo di campo calcolato **[!UICONTROL Enumerations]**. Fare riferimento alla [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/adding-enumeration-type-calculated-field.html?lang=it){target="_blank"}.
+  È disponibile un esempio di aggiunta del tipo di campo calcolato **[!UICONTROL Enumerations]**. Fare riferimento alla [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/adding-enumeration-type-calculated-field.html){target="_blank"}.
 
   ![](assets/query_editor_nveau_63.png)
 

@@ -7,7 +7,7 @@ feature: Surveys
 exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '945'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ I passaggi seguenti sono:
 1. [Passaggio 3 - Generare il sondaggio](#step-3---building-the-survey),
 1. [Passaggio 4 - Creare il contenuto della pagina](#step-4---creating-the-page-content),
 1. [Passaggio 5 - Archivia i dati del sondaggio](#step-5---storing-the-survey-data-),
-1. [Passaggio 6 - Publish le pagine](#step-6---publishing-the-pages),
+1. [Passaggio 6 - Pubblica le pagine](#step-6---publishing-the-pages),
 1. [Passaggio 7 - Condividi il tuo sondaggio online](#step-7---sharing-your-online-survey).
 
 ## Passaggio 1: creare un sondaggio {#step-1---creating-a-survey}
@@ -81,7 +81,7 @@ Nell&#39;esempio seguente viene utilizzata una pagina di tipo **[!UICONTROL Page
 
   ![](assets/s_ncs_admin_survey_change_label.png)
 
-  Ora crea un campo di immissione per il numero di account utente. Ripetere l&#39;operazione e selezionare &#39;nr. account&#39;. campo.
+  Ora crea un campo di immissione per il numero di account utente. Ripetere l&#39;operazione e selezionare il campo &#39;nr. account&#39;.
 
   Applica la stessa procedura per aggiungere un campo in modo che l’utente inserisca un indirizzo e-mail.
 
@@ -125,9 +125,9 @@ Nell’esempio seguente, quando si esegue il salvataggio (conferma), se un profi
 
 Fai clic su **[!UICONTROL OK]** per confermare, quindi su **[!UICONTROL Save]** per salvare il sondaggio
 
-## Passaggio 6: Publish delle pagine {#step-6---publishing-the-pages}
+## Passaggio 6: pubblicare le pagine {#step-6---publishing-the-pages}
 
-Affinché gli utenti possano accedere alle pagine HTML, l’applicazione deve essere resa disponibile. Non deve essere più in fase di editing, ma in produzione. Per avviare la produzione di un sondaggio, è necessario pubblicarlo. Per eseguire questa operazione:
+Affinché gli utenti possano accedere alle pagine di HTML, l’applicazione deve essere resa disponibile. Non deve essere più in fase di editing, ma in produzione. Per avviare la produzione di un sondaggio, è necessario pubblicarlo. Per eseguire questa operazione:
 
 * Fai clic sul pulsante **[!UICONTROL Publish]** situato sopra il dashboard del sondaggio.
 * Fare clic su **[!UICONTROL Start]** per avviare la pubblicazione e chiudere l&#39;assistente.

@@ -7,8 +7,8 @@ feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 3%
+source-wordcount: '571'
+ht-degree: 4%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 Per garantire il funzionamento ottimale dell’editor, si consiglia di osservare le seguenti linee guida:
 
-* Prima di **importare un modello di pagina HTML** in Adobe Campaign, accertati che il modello si apra e venga visualizzato correttamente nei vari browser.
+* Prima di **importare un modello di pagina HTML** in Adobe Campaign, accertarsi che il modello si apra e venga visualizzato correttamente nei vari browser.
 * Se la pagina HTML contiene **script JavaScript**, è necessario eseguirli **senza errori** all&#39;esterno dell&#39;editor.
 * Durante la creazione di un modello, è consigliabile aggiungere un attributo &quot;type&quot;**di tipo** ai tag `<input>`. Queste informazioni verranno elaborate dall&#39;editor e consentiranno all&#39;utente di collegare un campo del database al campo del modulo durante la configurazione dell&#39;applicazione Web.
 
@@ -83,7 +83,7 @@ La sezione superiore dell’editor visualizza i messaggi relativi allo stato del
 * Il contenuto HTML funziona.
 * L&#39;applicazione Web non è stata pubblicata e non è possibile accedervi online.
 * L&#39;applicazione Web è online. Pubblicare di nuovo per applicare le modifiche.
-* Il contenuto della pagina non funziona. Deve includere un modulo HTML (`<form>`)
+* Il contenuto della pagina non funziona. Deve includere un modulo di HTML (`<form>`)
 * Nessuna zona o pulsante di input da configurare.
 * Per attivare la transizione alla pagina successiva, è necessario collegare l&#39;azione &#39;Pagina successiva&#39; a un pulsante o a un collegamento nella pagina corrente.
 

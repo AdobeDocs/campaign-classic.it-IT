@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '1452'
-ht-degree: 0%
+source-wordcount: '1511'
+ht-degree: 2%
 
 ---
 
@@ -161,7 +161,7 @@ Possono verificarsi vari casi:
 
   ![](assets/8101_proxy3.png)
 
-Gli indirizzi IP dei proxy che probabilmente accederanno al server Adobe Campaign devono essere immessi sia nella **`<subnetwork>`** interessata che nella sottorete di primo livello **`<subnetwork name="all"/>`**. Ad esempio, qui per un proxy il cui indirizzo IP è 10.131.146.102:
+Gli indirizzi IP dei proxy che probabilmente accederanno al server Adobe Campaign devono essere immessi sia nella **`<subnetwork>`** interessata che nella sottorete di primo livello **`<subnetwork name="all"/>`**. Ad esempio, qui per un proxy con indirizzo IP 10.131.146.102:
 
 ```
 <securityZone allowDebug="false" allowHTTP="false" label="Public Network" 
@@ -222,7 +222,7 @@ Una volta definite le zone e configurata l&#39;enumerazione **[!UICONTROL Securi
 
 
 
-## Raccomandazioni
+## Consigli
 
 * Verificare che il proxy inverso non sia consentito in subNetwork. In questo caso, **tutto** il traffico verrà rilevato come proveniente da questo IP locale, quindi sarà attendibile.
 
@@ -257,7 +257,7 @@ Una volta definite le zone e configurata l&#39;enumerazione **[!UICONTROL Securi
 
    * **allowUserPassword** consente agli operatori di inviare le credenziali come parametri, in modo che vengano registrati da Apache/IIS/proxy. Questa funzione è stata utilizzata in passato per semplificare l’utilizzo delle API. Puoi verificare nel tuo manuale (o nelle specifiche) se alcune applicazioni di terze parti lo utilizzano. In tal caso, devi avvisarli di modificare il modo in cui utilizzano la nostra API e, non appena possibile, rimuovere questa funzione.
 
-   * **allowSQLInjection** consente all&#39;utente di eseguire SQL injection utilizzando una sintassi precedente. Questo attributo deve essere impostato su false. È possibile utilizzare /nl/jsp/ping.jsp?zone=true per controllare la configurazione dell&#39;area di protezione. In questa pagina viene visualizzato lo stato attivo delle misure di protezione (calcolato con questi flag di protezione) per l&#39;IP corrente.
+   * **allowSQLInjection** consente all&#39;utente di eseguire SQL injection utilizzando una sintassi precedente. Questo attributo deve essere impostato su false. Puoi utilizzare /nl/jsp/ping.jsp?zones=true per controllare la configurazione dell’area di sicurezza. In questa pagina viene visualizzato lo stato attivo delle misure di protezione (calcolato con questi flag di protezione) per l&#39;IP corrente.
 
 * Cookie/useSecurityToken HttpOnly: fai riferimento al flag **sessionTokenOnly**.
 

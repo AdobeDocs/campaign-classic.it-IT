@@ -9,7 +9,7 @@ topic-tags: advanced-parameters
 exl-id: 083be073-aad4-4c81-aff2-77f5ef3e80db
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '1016'
 ht-degree: 1%
 
 ---
@@ -57,13 +57,13 @@ Per ogni ambiente e account esterno viene creato un flusso di lavoro per la sinc
 
 ## Configurazione pacchetti {#packages-configuration}
 
-Tutte le estensioni dello schema direttamente collegate all&#39;**interazione** (offerte, proposte, destinatari, ecc.) devono essere distribuite nelle istanze di esecuzione.
+Qualsiasi estensione dello schema collegata direttamente a **Interaction** (offerte, proposte, destinatari, ecc.) deve essere distribuito sulle istanze di esecuzione.
 
 Il pacchetto di interazione deve essere installato su tutte le istanze (controllo ed esecuzione). Sono disponibili due pacchetti aggiuntivi: un pacchetto da installare sulle istanze di controllo e un altro da installare su ogni istanza di esecuzione.
 
 >[!NOTE]
 >
->Durante l&#39;installazione del pacchetto, i campi di tipo **long** della tabella **nms:proposition**, ad esempio l&#39;ID della proposta, diventano campi di tipo **int64**. Questo tipo di dati è descritto in [questa sezione](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
+>Durante l&#39;installazione del pacchetto, i campi di tipo **long** della tabella **nms:proposition**, come l&#39;ID proposta, diventano campi di tipo **int64**. Questo tipo di dati è descritto in [questa sezione](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
 
 La durata di conservazione dei dati deve essere configurata in ogni istanza (tramite la finestra **[!UICONTROL Data purge]** nella procedura guidata di distribuzione). Nelle istanze di esecuzione, questo periodo deve corrispondere alla profondità storica necessaria per le regole di tipologia (periodo scorrevole) e le regole di idoneità da calcolare.
 

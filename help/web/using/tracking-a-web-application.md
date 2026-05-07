@@ -7,7 +7,7 @@ feature: Web Apps, Reporting, Monitoring
 exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
 source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '411'
 ht-degree: 4%
 
 ---
@@ -35,7 +35,7 @@ I principali miglioramenti presenti in questa versione sono i seguenti:
 
    * **Tasso di conversione**: numero di persone che hanno visualizzato tutti i passaggi di un percorso di navigazione.
    * **Percentuale non recapitate**: numero di persone che hanno visualizzato solo il primo passaggio
-   * **Funnel di conversione**: tasso di perdita tra ciascun passaggio.
+   * **funnel di conversione**: tasso di perdita tra ciascun passaggio.
 
   Inoltre, un grafico di tipo **Settore** mostra la popolazione in base alla sua origine.
 
@@ -60,7 +60,7 @@ Per identificare l’origine del traffico in un’applicazione web, Adobe Campai
 
 ## Applicazioni Web progettate con Digital Content Editor (DCE) {#web-applications-designed-with-digital-content-editor--dce-}
 
-Quando un&#39;applicazione Web viene creata utilizzando l&#39;editor di contenuti HTML - **Digital Content Editor (DCE)** - i tag di tracciamento vengono inseriti dalla scheda **[!UICONTROL Properties]** dell&#39;editor. Per ulteriori informazioni su Digital Content Editor (DCE), consultare [questa sezione](about-campaign-html-editor.md).
+Quando un&#39;applicazione Web viene creata utilizzando l&#39;editor di contenuti di HTML - **Digital Content Editor (DCE)** - i tag di tracciamento vengono inseriti dalla scheda **[!UICONTROL Properties]** dell&#39;editor. Per ulteriori informazioni su Digital Content Editor (DCE), consultare [questa sezione](about-campaign-html-editor.md).
 
 ![](assets/trackers_2.png)
 

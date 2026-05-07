@@ -9,7 +9,7 @@ topic-tags: unitary-interactions
 exl-id: 3eaef689-44fa-41b3-ade8-9fe447e165ec
 source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '326'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ Per una proposta di offerta tramite SOAP, aggiungi il comando **nms:proposition#
 
 * **targetId**: chiave primaria del destinatario (può essere una chiave composita).
 * **maxCount**: specifica il numero di proposte di offerta per il contatto.
-* **contesto**: consente di aggiungere informazioni di contesto nello schema dello spazio. Se lo schema utilizzato è **nms:interface**, aggiungere **`<empty>`**.
+* **contesto**: consente di aggiungere informazioni di contesto nello schema dello spazio. Se lo schema utilizzato è **nms:interaction**, aggiungere **`<empty>`**.
 * **categorie**: specifica le categorie a cui devono appartenere le offerte.
 * **temi**: specifica i temi a cui le offerte devono appartenere.
 * **uuid**: valore del cookie permanente di Adobe Campaign (&quot;uuid230&quot;).
@@ -44,11 +44,11 @@ In risposta alla query, il servizio SOAP restituirà i seguenti parametri:
 
 ## Aggiornamento offerta {#offer-update}
 
-Aggiungi il comando **nms:interface#UpdateStatus** all&#39;URL, seguito dai seguenti parametri:
+Aggiungi il comando **nms:interaction#UpdateStatus** all&#39;URL, seguito dai seguenti parametri:
 
 * **proposition**: stringa di caratteri, contiene l&#39;ID della proposta fornito come output durante una proposta di offerta. Consulta [Proposta di offerte](#offer-proposition).
-* **status**: tipo di stringa che specifica il nuovo stato dell&#39;offerta. I valori possibili sono elencati nell&#39;enumerazione **propositionStatus** nello schema **nms:common**. Ad esempio, il numero 3 corrisponde allo stato **Accettato**.
-* **contesto**: elemento XML, che consente di aggiungere informazioni di contesto nello schema dello spazio. Se lo schema utilizzato è **nms:interface**, aggiungere **`<empty>`**.
+* **status**: tipo di stringa che specifica il nuovo stato dell&#39;offerta. I valori possibili sono elencati nell&#39;enumerazione **propositionStatus**, nello schema **nms:common**. Ad esempio, il numero 3 corrisponde allo stato **Accettato**.
+* **contesto**: elemento XML, che consente di aggiungere informazioni di contesto nello schema dello spazio. Se lo schema utilizzato è **nms:interaction**, aggiungere **`<empty>`**.
 
 ## Esempio di utilizzo di una chiamata SOAP {#example-using-a-soap-call}
 

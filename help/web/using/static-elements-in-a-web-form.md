@@ -7,8 +7,8 @@ feature: Web Forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 1%
+source-wordcount: '1049'
+ht-degree: 2%
 
 ---
 
@@ -86,7 +86,7 @@ Puoi definire altre azioni per il collegamento, in modo che l’utente possa far
 
   ![](assets/s_ncs_admin_survey_link_next.png)
 
-  È possibile nascondere i pulsanti **[!UICONTROL Next]** e/o **[!UICONTROL Back]** se devono essere sostituiti da un collegamento. Fai riferimento a questa [pagina](defining-web-forms-page-sequencing.md).
+  È possibile nascondere i pulsanti **[!UICONTROL Next]** e/o **[!UICONTROL Back]** se devono essere sostituiti da un collegamento. Consulta [questa pagina](defining-web-forms-page-sequencing.md).
 
   Il collegamento sostituirà il pulsante **[!UICONTROL Next]** utilizzato per impostazione predefinita.
 
@@ -110,7 +110,7 @@ Puoi definire altre azioni per il collegamento, in modo che l’utente possa far
   >
   >Per ulteriori informazioni sulla sequenza di pagine in un modulo Web, consulta [Definizione della sequenza di pagine dei moduli Web](defining-web-forms-page-sequencing.md).
 
-### Personalizzare il contenuto di HTML {#personalizing-html-content}
+### Personalizzare i contenuti di HTML {#personalizing-html-content}
 
 È possibile personalizzare il contenuto HTML di una pagina del modulo con i dati registrati in una pagina precedente. Ad esempio, è possibile creare un modulo Web di assicurazione auto la cui prima pagina consente di fornire informazioni di contatto e il marchio dell&#39;auto.
 
@@ -141,7 +141,7 @@ La scheda **[!UICONTROL Text]** consente di creare campi variabili che possono e
 
 Utilizzare questo metodo per localizzare facilmente le stringhe. Vedi [Traduzione di un modulo web](translating-a-web-form.md)
 
-Ad esempio, puoi creare un campo **Contatto** che ti consentirà di visualizzare la stringa &quot;Data dell&#39;ultimo contatto:&quot; nel contenuto del HTML. A questo scopo, segui la procedura indicata di seguito:
+Ad esempio, puoi creare un campo **Contatto** che ti consentirà di visualizzare la stringa &quot;Data dell&#39;ultimo contatto:&quot; nel contenuto di HTML. A questo scopo, segui la procedura indicata di seguito:
 
 1. Fare clic sulla scheda **[!UICONTROL Text]** del testo HTML.
 1. Fare clic sull&#39;icona **[!UICONTROL Add]**.
@@ -150,7 +150,7 @@ Ad esempio, puoi creare un campo **Contatto** che ti consentirà di visualizzare
 
    ![](assets/s_ncs_admin_survey_html_text.png)
 
-1. Nel contenuto di HTML, inserire questa variabile di testo tramite la sintassi **&lt;%= $(Contact) %>**.
+1. Nel contenuto di HTML, inserisci questa variabile di testo tramite la sintassi **&lt;%= $(Contact) %>**.
 
    ![](assets/s_ncs_admin_survey_html_content.png)
 

@@ -23,7 +23,7 @@ Utilizza l&#39;opzione [Federated Data Access](../../installation/using/about-fd
 1. Configura [database SAP HANA](#sap-config)
 1. Configura l&#39;[account esterno](#sap-external) di SAP HANA in Campaign
 
-## SAP HANA {#sap-config}
+## Driver SAP HANA {#sap-config}
 
 La connessione a un database esterno SAP HANA in FDA richiede alcune configurazioni aggiuntive sul server Adobe Campaign:
 

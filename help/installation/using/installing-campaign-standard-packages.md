@@ -7,8 +7,8 @@ badge-v7-prem: label="Solo on-premise/ibrido" type="Caution" url="https://experi
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '1271'
-ht-degree: 3%
+source-wordcount: '1381'
+ht-degree: 6%
 
 ---
 
@@ -66,7 +66,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
   </tr> 
   <tr> 
    <td> Campagne di marketing (Campaign)<br /> </td> 
-   <td> Definisce, ottimizza, esegue e analizza campagne di comunicazione e marketing. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=it" target="_blank">Ulteriori informazioni</a><br /> </td> 
+   <td> Definisce, ottimizza, esegue e analizza campagne di comunicazione e marketing. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html" target="_blank">Ulteriori informazioni</a><br /> </td> 
    <td> Marketing</td>
   </tr> 
   <tr> 
@@ -159,7 +159,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
   </tr> 
   <tr> 
    <td> Accesso ai dati esterni (Federated Data Access)<br /> </td> 
-   <td> Fornisce l’opzione Federated Data Access (FDA) per elaborare le informazioni memorizzate in uno o più database esterni in modo da poter accedere ai dati esterni senza modificare la struttura dei dati di Adobe Campaign.  Facoltativo. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html?lang=it" target="_blank">Ulteriori informazioni</a> <br /> </td> 
+   <td> Fornisce l’opzione Federated Data Access (FDA) per elaborare le informazioni memorizzate in uno o più database esterni in modo da poter accedere ai dati esterni senza modificare la struttura dei dati di Adobe Campaign.  Facoltativo. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html" target="_blank">Ulteriori informazioni</a> <br /> </td> 
    <td> Tutto<br /> </td> 
   </tr> 
   <tr> 
@@ -174,7 +174,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
   </tr> 
   <tr> 
    <td> Gestione coupon<br /> </td> 
-   <td> Crea un set di coupon da aggiungere alle prossime offerte di marketing. Facoltativo. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html?lang=it" target="_blank">Ulteriori informazioni</a> <br /> </td> 
+   <td> Crea un set di coupon da aggiungere alle prossime offerte di marketing. Facoltativo. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html" target="_blank">Ulteriori informazioni</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
@@ -184,7 +184,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
   </tr> 
   <tr> 
    <td> Marketing centrale/locale (Marketing distribuito)<br /> </td> 
-   <td> Implementa campagne di cooperazione tra enti centrali (sedi centrali, dipartimenti di marketing, ecc.) ed enti locali (punti vendita, agenzie regionali, ecc.). Facoltativo. <a href="https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=it" target="_blank">Ulteriori informazioni</a><br /> </td> 
+   <td> Implementa campagne di cooperazione tra entità centrali (sedi centrali, dipartimenti di marketing, ecc.) ed enti locali (punti vendita, agenzie regionali, ecc.). Facoltativo. <a href="https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=it" target="_blank">Ulteriori informazioni</a><br /> </td> 
    <td> Marketing </td> 
   </tr> 
   <tr> 
@@ -229,7 +229,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
   </tr> 
   <tr> 
    <td> Supporto AMP<br /> </td> 
-   <td> Consente di utilizzare il nuovo AMP interattivo per il formato e-mail e di inviare e-mail dinamiche. Facoltativo. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=it" target="_blank">Ulteriori informazioni</a> <br /> </td> 
+   <td> Consente di utilizzare il nuovo AMP interattivo per il formato e-mail e di inviare e-mail dinamiche. Facoltativo. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html" target="_blank">Ulteriori informazioni</a> <br /> </td> 
    <td> Tutti </td> 
   </tr> 
   <tr> 
@@ -242,7 +242,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
 
 ### Pacchetto Centro messaggi {#message-center-package}
 
-È necessario installare i canali di consegna (e-mail, canale mobile, canale app mobile, LINE, ecc.) prima di installare la messaggistica transazionale (pacchetto del centro messaggi). Se hai avviato un progetto di Centro messaggi di sola posta elettronica e in seguito devi aggiungere un nuovo canale, devi seguire questi passaggi:
+Devi installare i canali di consegna (e-mail, canale mobile, canale app mobile, LINE, ecc.) prima di installare la messaggistica transazionale (pacchetto del centro messaggi). Se hai avviato un progetto di Centro messaggi di sola posta elettronica e in seguito devi aggiungere un nuovo canale, devi seguire questi passaggi:
 
 1. Installa il nuovo canale, ad esempio il **canale mobile**, utilizzando l&#39;Assistente all&#39;importazione del pacchetto ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
 1. Importare il file ( **[!UICONTROL Tools > Advanced > Import package > File]**) e selezionare:

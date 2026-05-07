@@ -7,7 +7,7 @@ feature: Reporting, Monitoring
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '1024'
 ht-degree: 2%
 
 ---
@@ -123,7 +123,7 @@ I report sulle campagne riguardano i dati nella tabella **nms:operation**.
 
 I rapporti incorporati forniti da Adobe Campaign sono disponibili nella tabella seguente.
 
-Per ulteriori informazioni sul contenuto di questi report, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=it){target=_blank}.
+Per ulteriori informazioni sul contenuto di questi report, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
 
 <table> 
  <tbody> 
@@ -219,7 +219,7 @@ Per ulteriori informazioni sul contenuto di questi rapporti, consulta le relativ
 
 I rapporti incorporati forniti da Adobe Campaign sono disponibili nella tabella seguente.
 
-Per ulteriori informazioni sul contenuto di questi report, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=it){target=_blank}.
+Per ulteriori informazioni sul contenuto di questi report, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
 
 <table> 
  <tbody> 

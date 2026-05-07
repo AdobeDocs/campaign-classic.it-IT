@@ -10,15 +10,15 @@ topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
 source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 0%
+source-wordcount: '617'
+ht-degree: 5%
 
 ---
 
 # Configurazione dell’integrazione dei tipi di pubblico condivisi in Adobe Campaign{#configuring-shared-audiences-integration-in-adobe-campaign}
 
 
-Dopo aver inviato questa richiesta, Adobe procederà al provisioning dell’integrazione per te e ti contatterà per fornire dettagli e informazioni necessari per finalizzare la configurazione:
+Dopo aver inviato questa richiesta, Adobe procederà al provisioning dell’integrazione e ti contatterà per fornire dettagli e informazioni necessari per finalizzare la configurazione:
 
 1. [Passaggio 1: configurare o controllare gli account esterni in Adobe Campaign](#step-1--configure-or-check-the-external-accounts-in-adobe-campaign)
 1. [Passaggio 2: configurare Data Source](#step-2--configure-the-data-source)
@@ -29,7 +29,7 @@ Dopo aver inviato questa richiesta, Adobe procederà al provisioning dell’inte
 >
 >Se utilizzi il dominio demdex e segui la sintassi **ftp-out.demdex.com** per l’account esterno di importazione e **ftp-in.demdex.com** per l’account esterno di esportazione, devi adattare di conseguenza l’implementazione e passare al connettore Amazon Simple Storage Service (S3) per importare o esportare i dati. Per ulteriori informazioni su come configurare gli account esterni con Amazon S3, consulta questa [sezione](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md#step-1--configure-or-check-the-external-accounts-in-adobe-campaign).
 
-Il diagramma seguente illustra il funzionamento di questa integrazione. Qui AAM sta per Adobe Audience Manager e AC per Adobe Campaign.
+Il diagramma seguente illustra il funzionamento di questa integrazione. In questo caso, AAM sta per Adobe Audience Manager e AC per Adobe Campaign.
 
 ![](assets/aam_diagram.png){align="center"}
 
@@ -38,7 +38,7 @@ Il diagramma seguente illustra il funzionamento di questa integrazione. Qui AAM 
 Innanzitutto, devi configurare o controllare gli account esterni in Adobe Campaign come segue:
 
 1. Fare clic sull&#39;icona **[!UICONTROL Explorer]**.
-1. Vai a **[!UICONTROL Administration > Platform > External accounts]**. Gli account SFTP menzionati avrebbero dovuto essere configurati da Adobe e le informazioni necessarie avrebbero dovuto essere comunicate all’utente.
+1. Vai a **[!UICONTROL Administration > Platform > External accounts]**. Gli account SFTP menzionati avrebbero dovuto essere configurati da Adobe e le informazioni necessarie dovevano essere comunicate all’utente.
 
    * **[!UICONTROL importSharedAudience]**: account dedicato all&#39;importazione di tipi di pubblico.
    * **[!UICONTROL exportSharedAudience]**: account dedicato all&#39;esportazione dei tipi di pubblico.
@@ -75,7 +75,7 @@ Gli account esterni sono ora configurati.
 
 ## Passaggio 2: configurare Data Source {#step-2--configure-the-data-source}
 
-**Destinatario - ID visitatore** è stato creato all&#39;interno di Audience Manager. Si tratta di un’origine dati predefinita configurata per impostazione predefinita per l’ID visitatore. I segmenti creati da Campaign faranno parte di questa origine dati.
+**Destinatario - ID visitatore** creato all&#39;interno di Audience Manager. Si tratta di un’origine dati predefinita configurata per impostazione predefinita per l’ID visitatore. I segmenti creati da Campaign faranno parte di questa origine dati.
 
 Per configurare l&#39;origine dati **[!UICONTROL Recipient - Visitor ID]**:
 
@@ -97,8 +97,8 @@ Per consentire ai tipi di pubblico condivisi di funzionare con l’ID visitatore
 
 ## Passaggio 4: configurare il servizio ID visitatori {#step-4--configure-the-visitor-id-service}
 
-Nel caso in cui il servizio ID visitatore non sia mai stato configurato nelle proprietà o nei siti Web, consulta il seguente [documento](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html?lang=it) per scoprire come configurare il servizio o il seguente [video](https://helpx.adobe.com/it/marketing-cloud/how-to/email-marketing.html#step-two).
+Nel caso in cui il servizio ID visitatore non sia mai stato configurato nelle proprietà o nei siti Web, consulta il seguente [documento](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html) per scoprire come configurare il servizio o il seguente [video](https://helpx.adobe.com/it/marketing-cloud/how-to/email-marketing.html#step-two).
 
-Sincronizza gli identificatori cliente con ID dichiarato utilizzando la funzione `setCustomerID` nel servizio ID Experience Cloud con il codice di integrazione: `AdobeCampaignID`. `AdobeCampaignID` deve corrispondere al valore della chiave di riconciliazione impostata nel Source dati del destinatario configurato in [Passaggio 2: configurare le origini dati](#step-2--configure-the-data-sources).
+Sincronizza gli identificatori cliente con ID dichiarato utilizzando la funzione `setCustomerID` nel servizio Experience Cloud ID con il codice di integrazione: `AdobeCampaignID`. `AdobeCampaignID` deve corrispondere al valore della chiave di riconciliazione impostata nel Source dati del destinatario configurato in [Passaggio 2: configurare le origini dati](#step-2--configure-the-data-sources).
 
 La configurazione e il provisioning sono finalizzati, l’integrazione ora può essere utilizzata per importare ed esportare tipi di pubblico o segmenti.

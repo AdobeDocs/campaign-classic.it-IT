@@ -7,7 +7,7 @@ hide: true
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1187'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 Un workflow viene sempre avviato manualmente. Quando viene avviato, può tuttavia rimanere inattivo a seconda delle informazioni specificate tramite una pianificazione (vedi [Pianificazione](scheduler.md)) o la pianificazione delle attività.
 
-Le azioni relative all&#39;esecuzione del flusso di lavoro di targeting (avvio, arresto, pausa, ecc.) sono **processi asincroni**: l&#39;ordine viene registrato e diventerà effettivo non appena il server sarà disponibile per applicarlo.
+Azioni relative all’esecuzione del flusso di lavoro di targeting (avvio, arresto, pausa, ecc.) sono **processi asincroni**: l&#39;ordine è registrato e diventerà effettivo non appena il server sarà disponibile per applicarlo.
 
 La barra degli strumenti consente di avviare e tenere traccia dell’esecuzione del flusso di lavoro.
 
@@ -82,7 +82,7 @@ I pulsanti della barra degli strumenti sono descritti in questa [sezione](../../
 
 * **[!UICONTROL Start in simulation mode]**
 
-  Questa opzione consente di avviare il flusso di lavoro in modalità simulazione anziché in modalità reale. Ciò significa che quando si attiva questa modalità, vengono eseguite solo le attività che non influiscono sul database o sul file system (ad esempio **[!UICONTROL Query]**, **[!UICONTROL Union]**, **[!UICONTROL Intersection]**, ecc.). Le attività che hanno un impatto (ad esempio **[!UICONTROL Export]**, **[!UICONTROL Import]** e così via) e quelle successive (nello stesso ramo) non vengono eseguite.
+  Questa opzione consente di avviare il flusso di lavoro in modalità simulazione anziché in modalità reale. Ciò significa che quando si attiva questa modalità, vengono eseguite solo le attività che non influiscono sul database o sul file system (ad esempio **[!UICONTROL Query]**, **[!UICONTROL Union]**, **[!UICONTROL Intersection]**, ecc.). Attività che hanno un impatto (ad esempio **[!UICONTROL Export]**, **[!UICONTROL Import]**, ecc.) così come quelli successivi (nello stesso ramo) non vengono eseguiti.
 
 * **[!UICONTROL Execute pending tasks now]**
 
