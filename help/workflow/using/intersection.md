@@ -5,7 +5,7 @@ description: Intersezione
 feature: Workflows, Targeting Activity
 hide: true
 exl-id: f426bf02-9899-49eb-b699-728d51b57c64
-source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
+source-git-commit: 036c937224135f7b372010736f2040a8a6c69b4c
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 15%
@@ -63,3 +63,4 @@ Ogni evento in entrata deve specificare una destinazione definita da questi para
 * recCount
 
 Questo insieme di tre valori identifica il target risultante dall&#39;intersezione. **[!UICONTROL tableName]** è il nome della tabella che registra gli identificatori di destinazione, **[!UICONTROL schema]** è lo schema della popolazione (in genere **[!UICONTROL nms:recipient]**) e **[!UICONTROL recCount]** è il numero di elementi nella tabella.
+
