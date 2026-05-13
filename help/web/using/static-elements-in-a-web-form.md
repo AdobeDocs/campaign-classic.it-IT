@@ -5,9 +5,12 @@ description: Elementi statici in un modulo web
 badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
 feature: Web Forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+TQID: https://experienceleague.adobe.com/X32IQAVVq68tRjHIXaHN99S-EbL3vqP0j7gTL0fvmNA
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: 1049
 ht-degree: 2%
 
 ---
@@ -150,7 +153,7 @@ Ad esempio, puoi creare un campo **Contatto** che ti consentirà di visualizzare
 
    ![](assets/s_ncs_admin_survey_html_text.png)
 
-1. Nel contenuto di HTML, inserisci questa variabile di testo tramite la sintassi **&lt;%= $(Contact) %>**.
+1. Nel contenuto di HTML, inserire questa variabile di testo tramite la sintassi **&lt;%= $(Contact) %>**.
 
    ![](assets/s_ncs_admin_survey_html_content.png)
 

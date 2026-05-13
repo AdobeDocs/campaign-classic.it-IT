@@ -8,16 +8,19 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: b28aa5a5-afba-458b-8a85-375493c6c836
-source-git-commit: a38d53f4b37aadbc53446b5e399af2eae56c12af
+TQID: https://experienceleague.adobe.com/VW9504KkK6NcdZ0MmF-9Cgh-14XciporDhUUBz3NyU0
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: d5ef99fa-df0c-4153-bf94-105ad0724167
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: 190
 ht-degree: 0%
 
 ---
 
 # Condivisione di risorse con Adobe Experience Cloud{#sharing-assets-with-adobe-experience-cloud}
 
-[Experience Cloud Assets](https://experienceleague.adobe.com/it/docs/core-services/interface/services/audiences/overview){target="_blank"} fornisce un archivio unico e centralizzato di risorse pronte per le attività di marketing da condividere tra le diverse soluzioni. Una risorsa è un documento digitale, un’immagine, un video o un file audio.
+[Experience Cloud Assets](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"} fornisce un archivio unico e centralizzato di risorse pronte per le attività di marketing da condividere tra le diverse soluzioni. Una risorsa è un documento digitale, un’immagine, un video o un file audio.
 
 I servizi per le risorse includono:
 
@@ -26,7 +29,7 @@ I servizi per le risorse includono:
 
 Quando modifichi una consegna e-mail o una pagina di destinazione in Adobe Campaign, puoi inserire risorse dalle librerie Adobe Experience Cloud. A seconda delle soluzioni che utilizzi, queste risorse possono essere memorizzate in Assets o Adobe Experience Manager Assets.
 
-Le diverse librerie disponibili sono descritte in dettaglio in [questo documento](https://experienceleague.adobe.com/it/docs/core-services/interface/services/assets/experience-cloud-assets){target="_blank"}.
+Le diverse librerie disponibili sono descritte in dettaglio in [questo documento](https://experienceleague.adobe.com/en/docs/core-services/interface/services/assets/experience-cloud-assets){target="_blank"}.
 
 Consulta la sezione [Configurazione dell&#39;accesso ad Assets](../../integrations/using/configuring-access-to-assets.md) per ulteriori informazioni sulle specifiche collegate a ciascuna libreria.
 

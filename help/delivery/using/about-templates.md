@@ -6,9 +6,12 @@ feature: Delivery Templates
 role: User
 hide: true
 exl-id: d943898c-06fe-451d-aa28-8a95665f4112
-source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
+TQID: https://experienceleague.adobe.com/Pk7P-N4pOwS9bP2HcL4Y6etV3tVK8-80FyZZQUNASwg
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: 200
 ht-degree: 4%
 
 ---
@@ -26,4 +29,4 @@ Esistono due tipi di modello:
 1. Modelli di consegna predefiniti: l’amministratore Adobe Campaign può creare nuovi modelli di consegna. Possono essere riutilizzati dagli operatori (che dispongono di diritti di accesso adeguati) o automaticamente dai processi server. Ad esempio, puoi configurare un modello di consegna e-mail e, quando gli utenti creano una consegna utilizzando questo modello, devono semplicemente inserire il testo o il contenuto di HTML e quindi consegnarlo; le altre scelte sono già state definite dall’amministratore.
 
 
-Scopri come creare e utilizzare i modelli di consegna nella [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/create-templates){target="_blank"}.
+Scopri come creare e utilizzare i modelli di consegna nella [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/create-templates){target="_blank"}.

@@ -6,9 +6,15 @@ feature: Technote, Upgrade
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+TQID: https://experienceleague.adobe.com/r3qtW9ZsCD85N9qAnN1EOje-VMhDoyPuqea2xZnBWLs
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2id: d5ef99fa-df0c-4153-bf94-105ad0724167
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '2269'
+source-wordcount: 2269
 ht-degree: 0%
 
 ---
@@ -21,7 +27,7 @@ Adobe disattiva il centro dati legacy: le istanze di Campaign Classic devono ess
 
 Di seguito è riportata una serie di domande comuni su questo progetto, sull’impatto sugli ambienti Campaign e su altre risorse utili.
 
-Per qualsiasi altra domanda, puoi contattare l&#39;[Assistenza clienti Adobe](https://experienceleague.adobe.com/it?support-solution=Campaign#support).
+Per qualsiasi altra domanda, puoi contattare l&#39;[Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 ## Impatto sull&#39;infrastruttura
 
@@ -51,7 +57,7 @@ Gli impatti globali su database e infrastruttura sono elencati di seguito.
 
 * **Qual è il piano per risolvere eventuali problemi successivi alla migrazione?**
 
-  Prima della migrazione dei sistemi di produzione vengono eseguiti test approfonditi. Tuttavia, in caso di problemi, [l&#39;Assistenza clienti Adobe](https://experienceleague.adobe.com/it?support-solution=Campaign#support) rimarrà il punto di contatto principale. Adobe ha istituito un team di esperti per fornire supporto avanzato, se necessario.
+  Prima della migrazione dei sistemi di produzione vengono eseguiti test approfonditi. Tuttavia, in caso di problemi, [l&#39;Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) rimarrà il punto di contatto principale. Adobe ha istituito un team di esperti per fornire supporto avanzato, se necessario.
 
 ## Impatto sul recapito messaggi
 
@@ -97,7 +103,7 @@ Gli impatti globali su IP, elenchi Bloccati, sottodomini e URL sono elencati di 
 
   Prima di tutto, il recapito messaggi di Adobe valuterà lo stato di recapito messaggi della piattaforma e raccomanderà un piano per passare ai nuovi IP
 
-  Non è necessario alcun riscaldamento dopo la migrazione. Potrebbe trattarsi di un&#39;eccezione e, in questo caso, [l&#39;Assistenza clienti Adobe](https://experienceleague.adobe.com/it?support-solution=Campaign#support) contatterà i clienti.
+  Non è necessario alcun riscaldamento dopo la migrazione. Potrebbe trattarsi di un&#39;eccezione e, in questo caso, [l&#39;Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) contatterà i clienti.
 
   Tuttavia, il piano è quello di rendere trasparente questa operazione per l&#39;azienda, a differenza dell&#39;incremento iniziale che viene fatto durante il go-live.
 
@@ -135,15 +141,15 @@ Di seguito sono elencati gli impatti globali su configurazione, connettività co
 
 * **La migrazione influirà sulla connettività ad account esterni?**
 
-  Sì. Le integrazioni di terze parti, ad esempio i provider di SMS, devono aggiungere al Adobe Campaign nuovi indirizzi IP dei server applicazioni di inserire nell&#39;elenco Consentiti.
+  Sì. Le integrazioni di terze parti, ad esempio i provider di SMS, devono aggiungere nuovi indirizzi IP dei server applicazioni Adobe Campaign al inserisco nell&#39;elenco Consentiti di.
 
-* **La migrazione influirà sulla connettività ad Adobe Analytics utilizzando il connettore Genesis? E l&#39;aggiunta di indirizzi IP di Campaign al inserisco nell&#39;elenco Consentiti di sul lato Adobe Analytics?**
+* **La migrazione influirà sulla connettività ad Adobe Analytics utilizzando il connettore Genesis? E l&#39;aggiunta degli indirizzi IP di Campaign al inserisco nell&#39;elenco Consentiti di sul lato Adobe Analytics?**
 
   Gli indirizzi IP dei server applicazioni Adobe Campaign cambieranno. Questo passaggio verrà gestito dall’Assistenza clienti di Adobe dopo la migrazione.
 
 * **La migrazione influirà sulla connettività con altre soluzioni Adobe (AEM, Target, ecc.)?**
 
-  Le integrazioni sono una combinazione di indirizzi IP dichiarati nel inserisco nell&#39;elenco Consentiti di gestione dei rapporti con i clienti e nella configurazione dell’account del servizio web. Questo sarà gestito e di proprietà dell’Assistenza clienti di Adobe.
+  Le integrazioni sono una combinazione di indirizzi IP dichiarati nel inserisco nell&#39;elenco Consentiti di e nella configurazione dell’account del servizio web. Questo sarà gestito e di proprietà dell’Assistenza clienti di Adobe.
 
   Nel inserisco nell&#39;elenco Consentiti di saranno presenti indirizzi IP che saranno necessari nella soluzione esterna man mano che l&#39;IP degli Application Server cambierà. Queste informazioni verranno fornite. Altre parti dell’integrazione sono basate su IMS e dovrebbero funzionare così come sono.
 
@@ -159,7 +165,7 @@ Di seguito sono elencati gli impatti globali su configurazione, connettività co
 
   L’indirizzo IP dei server Adobe cambierà. Pertanto, i clienti potrebbero dover aggiungere questi nuovi indirizzi IP al inserisco nell&#39;elenco Consentiti di nel proprio sistema.
 
-  [Ulteriori informazioni](#config) sull&#39;IP durante la inserisce nell&#39;elenco Consentiti di.
+  [Ulteriori informazioni](#config) sull&#39;IP in fase di inserisce nell&#39;elenco Consentiti di.
 
 * **Verificare che tutti i parametri di configurazione della memoria JavaScript siano impostati correttamente dopo la migrazione?**
 
@@ -173,7 +179,7 @@ Di seguito sono elencati gli impatti globali su configurazione, connettività co
 
   Può variare in base alla nuova posizione dei server. Tuttavia, il cliente sarà in grado di mantenere il proprio fuso orario corrente.
 
-  Per ulteriori informazioni sulla gestione del fuso orario, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html?lang=it){target="_blank"}.
+  Per ulteriori informazioni sulla gestione del fuso orario, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html){target="_blank"}.
 
 
 ## Sicurezza e autorizzazioni

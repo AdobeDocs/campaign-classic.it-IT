@@ -4,9 +4,12 @@ title: Inviare e-mail transazionali con allegati
 description: Scopri come inviare e-mail transazionali con allegati singoli e/o personalizzati utilizzando Adobe Campaign
 feature: Transactional Messaging, Message Center
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+TQID: https://experienceleague.adobe.com/xc89iwDzHmUWU4PfAZ-LWpO3ggN6ySCv-n0iVrdlEKc
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: 684
 ht-degree: 1%
 
 ---
@@ -64,7 +67,7 @@ Il diagramma seguente mostra i diversi passaggi necessari per implementare quest
 
 Per aggiungere al volo un allegato e-mail a un messaggio sulle transazioni, effettua le seguenti operazioni:
 
-1. Iniziare progettando l&#39;allegato. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=it#attach-a-personalized-file){target="_blank"}.
+1. Iniziare progettando l&#39;allegato. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html#attach-a-personalized-file){target="_blank"}.
 
    Ciò ti consente di allegare i file a un messaggio e-mail, anche se non sono ospitati nell’istanza di esecuzione.
 

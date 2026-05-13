@@ -6,9 +6,12 @@ feature: Channel Configuration
 role: User
 hide: true
 exl-id: 0188c3fe-8176-4904-8505-c47a72c20fcc
-source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
+TQID: https://experienceleague.adobe.com/r1Fnouqf-4hqCJ9jYqWI4pzNhqP0-XZBUHoZQr65DGI
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: 186
 ht-degree: 18%
 
 ---
@@ -17,7 +20,7 @@ ht-degree: 18%
 
 I passaggi chiave durante la creazione di una consegna sono i seguenti:
 
-1. **Crea e identifica la consegna**. Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it#create-the-delivery){target="_blank"}.
+1. **Crea e identifica la consegna**. Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}.
 
 1. **Definisci il contenuto della consegna**. La definizione del contenuto della consegna è specifica per ciascun canale. Per ulteriori informazioni, consulta la sezione dedicata:
 
@@ -34,4 +37,4 @@ I passaggi chiave durante la creazione di una consegna sono i seguenti:
 
 >[!NOTE]
 >
->I passaggi descritti in questo capitolo presuppongono che tutti i destinatari e i relativi profili siano memorizzati nel database, ad eccezione del caso di consegna esterna (vedi la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it#selecting-external-recipients){target="_blank"}.
+>I passaggi descritti in questo capitolo presuppongono che tutti i destinatari e i relativi profili siano memorizzati nel database, ad eccezione del caso di consegna esterna (vedi la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"}.

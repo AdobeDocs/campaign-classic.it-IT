@@ -5,9 +5,15 @@ description: Scopri le linee guida generali per il tracciamento in Adobe Campaig
 feature: Monitoring, Email
 role: User
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
-source-git-commit: ba53107ce06c0484070cbe0943ba439d33d5f710
+TQID: https://experienceleague.adobe.com/nuJsXyGxw2iGUoxFn03ui0DPPxoZ7qW7Ba26BZn7-eY
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+subfeature_v2: id: a39dbcf0-89cb-4765-9bcb-cf9dfbe2875fid: cfc95e9b-b035-4403-a6a9-b27a8a053a37id: e3988c18-3cfa-4f16-b812-ac2d2b1056faid: e656c701-3899-4db3-989c-de0980ddfffa
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '1364'
+source-wordcount: 1364
 ht-degree: 3%
 
 ---
@@ -18,10 +24,10 @@ ht-degree: 3%
 >
 >Per **informazioni generali sul tracciamento** valide sia per Campaign Classic v7 che per Campaign v8, consulta la [documentazione sul tracciamento dei messaggi per Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"}:
 >
->* [Configura collegamenti tracciati](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"}
->* [Configurare le opzioni di tracciamento URL](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/tracking/url-tracking){target="_blank"}
->* [Tracciamento collegamenti personalizzati](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/tracking/personalized-links){target="_blank"}
->* [Registri di tracciamento degli accessi](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"}
+>* [Configura collegamenti tracciati](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"}
+>* [Configurare le opzioni di tracciamento URL](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/url-tracking){target="_blank"}
+>* [Tracciamento collegamenti personalizzati](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/personalized-links){target="_blank"}
+>* [Registri di tracciamento degli accessi](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"}
 >* [Tracciamento dei test](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/testing-tracking){target="_blank"}
 >* [Rapporti di tracciamento](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/reporting/delivery-reports#tracking-indicators){target="_blank"}
 >
@@ -82,7 +88,7 @@ La rinuncia al tracciamento delle applicazioni web consente di interrompere il t
 
 I seguenti suggerimenti per la risoluzione dei problemi si applicano alle **distribuzioni ibride/on-premise di Campaign Classic v7**. Alcune informazioni possono essere applicate anche alle distribuzioni on-premise di Campaign v8. Per Campaign v8 Managed Cloud Services, contatta il rappresentante Adobe per assistenza.
 
-Per i passaggi di base per la risoluzione dei problemi di tracking in Campaign v8, consulta [Risoluzione dei problemi di tracking nella documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/tracking/tracking-logs#troubleshooting){target="_blank"}.
+Per i passaggi di base per la risoluzione dei problemi di tracking in Campaign v8, consulta [Risoluzione dei problemi di tracking nella documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking-logs#troubleshooting){target="_blank"}.
 
 ### Controlli di base {#basic-checks}
 

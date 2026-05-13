@@ -5,9 +5,12 @@ description: Ulteriori informazioni sull’attività del flusso di lavoro Conseg
 feature: Workflows
 hide: true
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
+TQID: https://experienceleague.adobe.com/a33apxZWE9H0Y3ukmFMQMrep1aY95iswu40y-ZjOd0U
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: 289
 ht-degree: 14%
 
 ---
@@ -54,6 +57,6 @@ Se desideri interrompere l’esecuzione di una consegna ricorrente, devi annulla
 
 Questo video spiega come configurare una consegna ricorrente e un’attività di pianificazione.
 
->[!VIDEO](https://video.tv.adobe.com/v/27506?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
 
 Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

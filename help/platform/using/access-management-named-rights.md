@@ -6,9 +6,16 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
-source-git-commit: 02ecc0e6bb3bd361f512baeefc9e0f2271063387
+TQID: https://experienceleague.adobe.com/GApH-ZtovMX--PzISD-Pvafo3pfcbG-OqHzp5kCvcNQ
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a658c786-869b-4194-a780-2594d663addaid: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+subfeature_v2: id: e3988c18-3cfa-4f16-b812-ac2d2b1056faid: efa38731-2723-4334-8d8b-a778af834835id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: 652
 ht-degree: 4%
 
 ---
@@ -25,13 +32,13 @@ Tali diritti sono i seguenti:
 
   >[!IMPORTANT]
   >
-  >**Dopo la migrazione a IMS:** Dopo la migrazione ad Adobe Identity Management System (IMS), qualsiasi profilo di prodotto o diritto denominato contenente la parola &quot;admin&quot; nel nome (ad esempio &quot;Administrators&quot;, &quot;admin&quot;, &quot;admins&quot;, ecc.) concederà automaticamente l’accesso a Campaign Pannelli di controllo Campaign. È consigliabile evitare l&#39;utilizzo di &quot;admin&quot; nei nomi con diritti denominati o nei nomi dei ruoli, a meno che non si intenda consentire a tali utenti di accedere al Pannello di controllo Campaign. Ulteriori informazioni su [Migrazione IMS](../../technotes/using/migrate-users-to-ims.md) e [gestione dell&#39;accesso al Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it){target="_blank"}.
+  >**Dopo la migrazione a IMS:** Dopo la migrazione ad Adobe Identity Management System (IMS), qualsiasi profilo di prodotto o diritto denominato contenente la parola &quot;admin&quot; nel nome (ad esempio &quot;Administrators&quot;, &quot;admin&quot;, &quot;admins&quot;, ecc.) concederà automaticamente l’accesso a Campaign Pannelli di controllo Campaign. È consigliabile evitare l&#39;utilizzo di &quot;admin&quot; nei nomi con diritti denominati o nei nomi dei ruoli, a meno che non si intenda consentire a tali utenti di accedere al Pannello di controllo Campaign. Ulteriori informazioni su [Migrazione IMS](../../technotes/using/migrate-users-to-ims.md) e [gestione dell&#39;accesso al Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
 
 * **[!UICONTROL APPROVAL ADMINISTRATION]**: è possibile impostare più passaggi di approvazione all&#39;interno dei flussi di lavoro e delle consegne per assicurarsi che lo stato corrente sia stato approvato da un operatore o un gruppo assegnato. Gli utenti con il diritto **[!UICONTROL APPROVAL ADMINISTRATION]** possono impostare i passaggi di approvazione e assegnare un operatore o un gruppo di operatori che deve approvare tali passaggi.
 
   >[!IMPORTANT]
   >
-  >**Dopo la migrazione a IMS:** i profili di prodotto o i diritti denominati contenenti la parola &quot;admin&quot; (ad esempio &quot;Approval Administrator&quot;) concederanno l&#39;accesso al Pannello di controllo Campaign Campaign. Ulteriori informazioni su [Migrazione IMS](../../technotes/using/migrate-users-to-ims.md) e [gestione dell&#39;accesso al Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it){target="_blank"}.
+  >**Dopo la migrazione a IMS:** i profili di prodotto o i diritti denominati contenenti la parola &quot;admin&quot; (ad esempio &quot;Approval Administrator&quot;) concederanno l&#39;accesso al Pannello di controllo Campaign Campaign. Ulteriori informazioni su [Migrazione IMS](../../technotes/using/migrate-users-to-ims.md) e [gestione dell&#39;accesso al Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
 
 * **[!UICONTROL CENTRAL]**: diritto per la gestione centrale (Marketing distribuito).
 
@@ -63,7 +70,7 @@ Tali diritti sono i seguenti:
 
 * **[!UICONTROL START DELIVERIES]**: diritto di approvare le consegne analizzate in precedenza. Dopo l’analisi della consegna, la consegna viene sospesa in vari passaggi di approvazione e deve essere approvata per riprendere. Gli utenti con il diritto **[!UICONTROL START DELIVERIES]** possono approvare le consegne.
 
-* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: diritto di scrivere script SQL personalizzati utilizzando l&#39;attività Gestione dati SQL per creare e popolare tabelle di lavoro. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-data-management.html?lang=it){target="_blank"}.
+* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: diritto di scrivere script SQL personalizzati utilizzando l&#39;attività Gestione dati SQL per creare e popolare tabelle di lavoro. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-data-management.html){target="_blank"}.
 
 * **[!UICONTROL WORKFLOW]**: diritto di eseguire flussi di lavoro. Senza questo diritto, gli utenti non possono avviare, arrestare o riavviare i flussi di lavoro.
 
@@ -79,4 +86,4 @@ I gruppi predefiniti e i diritti denominati consentono agli operatori di acceder
 
 La matrice dei diritti di accesso di Adobe Campaign è disponibile [qui](/help/platform/using/assets/access-rights-matrix.pdf).
 
-[![immagine](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=it)
+[![immagine](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf)

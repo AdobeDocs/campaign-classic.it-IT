@@ -7,9 +7,16 @@ role: User
 level: Beginner
 hide: true
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
-source-git-commit: 4cae5fdb2b78f446f84352046b523d8862e9060c
-workflow-type: ht
-source-wordcount: '2391'
+TQID: https://experienceleague.adobe.com/77yWdkBQIi4XnEr8ZqBuz-2Vm0vg07AQxgI2wh6B150
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: b12f6872-9271-4369-85e5-86969a0b99a2id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+subfeature_v2: id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+workflow-type: tm+mt
+source-wordcount: 2391
 ht-degree: 100%
 
 ---
@@ -42,7 +49,7 @@ A partire da questa versione, i collegamenti di tracciamento nelle e-mail già i
 * È stato risolto un problema che richiedeva all’utente di autenticarsi nuovamente facendo clic sul pulsante `Back` in un rapporto sulla campagna. (NEO-65087)
 * È stato corretto un errore nel flusso di lavoro di pulizia del database che si verificava quando una consegna veniva eliminata prima delle relative bozze di consegna. (NEO-48114)
 * È stato risolto un problema che si verificava durante la connessione alla console client: gli aggiornamenti recenti sulla verifica TLS causavano un errore di connessione. (NEO-50488)
-* È stato risolto un problema relativo all’autenticazione proxy HTTP dopo l’aggiornamento di Campaign alla versione 7.3.1.Le richieste HTTP nei flussi di lavoro di Campaign non riuscivano con `error 407 – proxy auth required is returned`.(NEO-49624)
+* È stato risolto un problema relativo all’autenticazione proxy HTTP dopo l’aggiornamento di Campaign alla versione 7.3.1. Le richieste HTTP nei flussi di lavoro di Campaign non riuscivano con `error 407 – proxy auth required is returned`. (NEO-49624)
 * È stato risolto un errore intermittente con la decrittografia GPG nelle attività del flusso di lavoro **Script**. Il messaggio di errore associato era: `gpg: decryption failed: No secret key`. (NEO-50257)
   <!--* Workflow temporary tables now have a primary index in Teradata with a Federated Data Access (FDA) connection. (NEO-62575)-->
 
