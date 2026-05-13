@@ -8,9 +8,15 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 3c793dc1-9654-4289-a3d2-30c3078fd848
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+TQID: https://experienceleague.adobe.com/zQXUUtLQveDPTu8blS48gCzTl8lv09vlJXAtjAjgtW4
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: 417
 ht-degree: 9%
 
 ---
@@ -47,15 +53,15 @@ Puoi provare i seguenti test e, se il problema persiste, contatta l&#39;[Assiste
 </tr>
 <tr> 
 <td>Adobe Campaign è stato integrato correttamente?</td> 
-<td>Accedi all'URL: <b>http(s)://&lt;urlserver&gt;/r/test</b>. Il server deve restituire il seguente tipo di messaggio: &lt;redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='&lt;hostname&gt;' localHost='&lt;server&gt;'/&gt;
+<td>Accedi all'URL <b>http(s)://&lt;urlserver&gt;/r/test</b>. Il server deve restituire il seguente tipo di messaggio: &lt;redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='&lt;hostname&gt;' localHost='&lt;server&gt;'/&gt;
 Se non ottieni questo risultato, verifica nella configurazione del server web che l’integrazione sia presa in considerazione.</td>
 </tr>
 <tr> 
-<td>Connettersi al seguente URL: <b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
+<td>Connetti al seguente URL: <b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
 <td>Se ricevi un errore Java Tomcat, verifica che l’integrazione JAVA sia eseguita correttamente. È integrato nel file [percorso dell’applicazione]/nl6/customer.sh</td>
 </tr>
 <tr> 
-<td>Connettersi al seguente URL: <b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
+<td>Connetti al seguente URL: <b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
 <td>Se ottieni una pagina vuota, controlla se il modulo Web Adobe Campaign è stato avviato. Il comando nlserver pdump deve restituire Application Server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) di GG/MM/AAAA. In caso contrario, riavviare il modulo con il comando nlserver start web</td>
 </tr>
 <tr>

@@ -6,9 +6,25 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
-workflow-type: ht
-source-wordcount: '2670'
+TQID: https://experienceleague.adobe.com/AmqYU4ywJ6B6sus7q6BAHsG7cPGLZRH4m12hoqw68as
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+subfeature_v2:
+  - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+workflow-type: tm+mt
+source-wordcount: 2670
 ht-degree: 100%
 
 ---
@@ -49,7 +65,7 @@ _7 settembre 2021_
 
 * Al termine del suo ciclo di vita, Flash è stato rimosso da tutte le funzioni e i componenti di Campaign correlati e sostituito con HTML5. Il tipo di grafico **Misuratore** è stato rimosso. (NEO-30330) [Ulteriori informazioni](../../reporting/using/creating-a-chart.md)
 * Durante l’installazione della console client su Windows, il programma di installazione ora controlla se è presente un nodo del registro principale e, se necessario, ne crea uno. Questo evita potenziali problemi durante l’avvio della console. (NEO-34854)
-* La funzione di tracciamento della firma è stata migliorata per evitare errori relativi al modo in cui strumenti di terze parti (client e-mail, browser Internet, ecc.)gestiscono i caratteri speciali.I parametri URL sono ora codificati.
+* La funzione di tracciamento della firma è stata migliorata per evitare errori relativi al modo in cui strumenti di terze parti (client e-mail, browser Internet, ecc.) gestiscono i caratteri speciali. I parametri URL sono ora codificati.
 
 **Altre modifiche**
 
@@ -168,7 +184,7 @@ _5 giugno 2021_
 
 **Miglioramenti della sicurezza**
 
-* L’accesso al metodo API **xtk:session#GetCnxInfo** che restituisce i dettagli completi della connessione al database è ora limitato solo agli utenti amministratori.(NEO-27779)
+* L’accesso al metodo API **xtk:session#GetCnxInfo** che restituisce i dettagli completi della connessione al database è ora limitato solo agli utenti amministratori. (NEO-27779)
 * La funzione decryptString obsoleta è stata sostituita con decryptPassword nei file JavaScript relativi a alla gestione delle relazioni con i clienti.
 * La funzione di firma di tracciamento è stata migliorata per ridurre il rischio di errori di reindirizzamento quando strumenti di terze parti (client e-mail, browser Internet, strumenti di sicurezza dei collegamenti sicuri) modificano il collegamento tracciato.
 * È stato risolto un problema che poteva impedire il funzionamento degli URL tracciati quando contenevano caratteri maiuscoli. Il meccanismo di firma degli URL tracciati ora distingue tra maiuscole e minuscole. (NEO-28414)
@@ -218,7 +234,7 @@ Ulteriori informazioni sono disponibili nella pagina [Funzioni obsolete e rimoss
 * È stato risolto un problema che impediva la creazione dell’indice FDA di SAP HANA. (NEO-29664)
 * È stato risolto un problema che poteva mantenere i messaggi transazionali nello stato **In attesa** durante l’esecuzione di chiamate SOAP contenenti un’intestazione. (NEO-28737)
 * È stato risolto un problema che si verificava quando si utilizzava il connettore FDA Teradata: tutte le tabelle temporanee venivano create su un solo nodo del cluster, il che poteva finire per consumare l’intero spazio di spool e provocare l’arresto anomalo di Teradata. Le tabelle temporanee vengono ora generate su molti nodi. (NEO-28230)
-* È stato risolto un problema che si verificava durante l’utilizzo delle applicazioni web che causava generazione di chiavi primarie non corrette da parte dei tag di tracciamento nello schema **nms:trackingURL**.(NEO-27931)
+* È stato risolto un problema che si verificava durante l’utilizzo delle applicazioni web che causava generazione di chiavi primarie non corrette da parte dei tag di tracciamento nello schema **nms:trackingURL**. (NEO-27931)
 * La compatibilità con ODBC 3.x è stata migliorata per garantire la precisione dei messaggi di errore.
 * È stato risolto un problema che poteva causare arresti anomali della console in caso di utilizzo di modelli di contenuto personalizzati nelle consegne e-mail. (NEO-31547)
 * È stato risolto un problema che impediva a Tomcat di inviare risposte valide a causa di una connessione lenta o di dimensioni di risposta elevate. (NEO-30858)
