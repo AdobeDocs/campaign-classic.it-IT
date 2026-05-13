@@ -9,8 +9,10 @@ content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
 TQID: https://experienceleague.adobe.com/WmadkiwNNUMeQSnm8O4NJjnv1GQHvO6hZ9kqtoGBySA
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 1267
@@ -160,7 +162,7 @@ PostgreSQL non fornisce un modo semplice per eseguire una ricostruzione della ta
 
 Di seguito è riportato un esempio di deframmentazione della tabella che utilizza funzioni specifiche per generare la DDL necessaria. L&#39;istruzione SQL seguente consente di creare due nuove funzioni: **GenRebuildTablePart1** e **GenRebuildTablePart2**, che possono essere utilizzate per generare la DDL necessaria per ricreare una tabella.
 
-* La prima funzione consente di creare una tabella di lavoro (** _tmp** qui) che è una copia della tabella originale.
+* La prima funzione consente di creare una tabella di lavoro (**&#x200B; _tmp** qui) che è una copia della tabella originale.
 * La seconda funzione elimina quindi la tabella originale e rinomina la tabella di lavoro e i relativi indici.
 * Se si utilizzano due funzioni invece di una, se la prima non riesce, non si corre il rischio di eliminare la tabella originale.
 

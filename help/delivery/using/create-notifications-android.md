@@ -7,8 +7,11 @@ role: User, Developer
 hide: true
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
 TQID: https://experienceleague.adobe.com/jH8qR4ch4MGigmPcBNa25SRnCpve-ati-HF1wQhRpcI
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 720
@@ -113,8 +116,8 @@ L’immagine e la pagina web devono essere visualizzate nella notifica push quan
    * **[!UICONTROL Image]**: imposta l&#39;URL dell&#39;immagine da visualizzare nella notifica.
    * **[!UICONTROL Notification Count]**: impostare il numero di nuove informazioni non lette da visualizzare direttamente sull&#39;icona dell&#39;applicazione.
    * **[!UICONTROL Sticky]**: Impostare su true o false. Se impostato su false, la notifica viene automaticamente ignorata quando l’utente fa clic su di essa. Se impostato su true, la notifica viene comunque visualizzata anche quando l’utente fa clic su di essa.
-   * **[!UICONTROL Notification Priority]**: impostare i livelli di priorità della notifica su predefinito, minimo, minimo o massimo. Per ulteriori informazioni, consulta la [documentazione FCM ](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#NotificationPriority).
-   * **[!UICONTROL Visibility]**: impostare i livelli di visibilità della notifica su public, private o secret. Per ulteriori informazioni, consulta la [documentazione FCM ](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#visibility).
+   * **[!UICONTROL Notification Priority]**: impostare i livelli di priorità della notifica su predefinito, minimo, minimo o massimo. Per ulteriori informazioni, consulta la [documentazione FCM &#x200B;](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#NotificationPriority).
+   * **[!UICONTROL Visibility]**: impostare i livelli di visibilità della notifica su public, private o secret. Per ulteriori informazioni, consulta la [documentazione FCM &#x200B;](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#visibility).
 
    Per ulteriori informazioni su **[!UICONTROL HTTP v1 additional options]** e su come compilare questi campi, consulta la [documentazione FCM](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"}.
 

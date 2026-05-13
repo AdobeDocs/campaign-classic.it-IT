@@ -6,9 +6,12 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Web Forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
 TQID: https://experienceleague.adobe.com/3oyhvCWX30kK7dtytjLYvO5Xnbu2-I7FGeJPcjcreho
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 1592
@@ -173,7 +176,7 @@ se il linguaggio è il primo o l’unico parametro dell’URL. Esempio: **https:
 &lang=xx
 ```
 
-se nell’URL sono presenti altri parametri prima del linguaggio. Esempio: **https://myserver/webApp/APP34?status=1&amp;lang=en**
+se nell’URL sono presenti altri parametri prima del linguaggio. Esempio: **https://myserver/webApp/APP34?status=1&lang=en**
 
 Di seguito sono elencate le lingue e i dizionari di traduzione disponibili per impostazione predefinita.
 
@@ -434,7 +437,7 @@ Aggiungere **?lang=fr** alla fine dell&#39;URL per visualizzarlo in francese:
 >[!NOTE]
 >
 >Se altri parametri sono già utilizzati per questa applicazione Web, aggiungere **&amp;lang=**.\
->Esempio: **https://myserver/webApp/APP34?status=1&amp;lang=en**
+>Esempio: **https://myserver/webApp/APP34?status=1&lang=en**
 
 ## Configurazione traduzione avanzata {#advanced-translation-configuration}
 

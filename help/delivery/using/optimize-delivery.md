@@ -8,9 +8,14 @@ role: User
 hide: true
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
 TQID: https://experienceleague.adobe.com/XiK0I9mZTlGWACRL-TTdDO5pByzBg-6oFdfcTNfhX44
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 758
@@ -54,7 +59,7 @@ Per raggiungere la casella in entrata dei destinatari senza che vengano generati
 
    * Durante il controllo della consegna delle e-mail, desideri concentrarti su quattro categorie principali: qualità dei dati, messaggio e contenuto, infrastruttura di invio e reputazione. Per ulteriori informazioni su questo argomento, consulta [questa sezione](about-deliverability.md).
 
-* Applica i consigli dettagliati [ in questo documento](about-deliverability.md).
+* Applica i consigli dettagliati [&#x200B; in questo documento](about-deliverability.md).
 
 * Contatta il rappresentante Adobe per assistenza.
 
