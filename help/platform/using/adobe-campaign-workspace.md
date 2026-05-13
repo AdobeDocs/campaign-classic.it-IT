@@ -192,4 +192,4 @@ Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campai
 
 Questo video presenta l’area di lavoro di Campaign Classic.
 
->[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/39537?captions=ita&quality=12)
