@@ -9,10 +9,15 @@ content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
 TQID: https://experienceleague.adobe.com/dCUzCZnR5K2T2EPtqmazqAS69Zg40MaltxCVtoDN48I
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-subfeature_v2: id: e656c701-3899-4db3-989c-de0980ddfffa
-topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+subfeature_v2:
+  - id: e656c701-3899-4db3-989c-de0980ddfffa
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 8f9e8344b77e50bd2823cc7fa3922466e515327f
 workflow-type: tm+mt
 source-wordcount: 753
@@ -29,7 +34,7 @@ Puoi utilizzare questo server Tomcat integrato per soddisfare le richieste HTTP.
 In questo caso:
 
 * la porta di ascolto predefinita è 8080. Per modificarlo, fare riferimento a [questa sezione](../../installation/using/configure-tomcat.md).
-* Le console client si connettono quindi utilizzando un URL come `https://``<computer>``:8080`.
+* Le console client si connettono quindi utilizzando un URL come `https://` `<computer>` `:8080`.
 
 Tuttavia, per motivi di sicurezza e amministrazione, si consiglia di utilizzare un server Web dedicato come punto di ingresso principale per il traffico HTTP quando il computer che esegue Adobe Campaign è esposto su Internet e si desidera aprire l&#39;accesso alla console al di fuori della rete.
 
