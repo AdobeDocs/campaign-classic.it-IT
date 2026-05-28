@@ -9,18 +9,12 @@ content-type: reference
 level: Intermediate, Experienced
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
 TQID: https://experienceleague.adobe.com/0Sv4efbYyu1kT-sDs4CYjDBP3RphjlqPTerDrNxN93I
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
-subfeature_v2:
-  - id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: d5ef99fa-df0c-4153-bf94-105ad0724167
+subfeature_v2: id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 8f9e8344b77e50bd2823cc7fa3922466e515327f
 workflow-type: tm+mt
 source-wordcount: 854
 ht-degree: 1%
@@ -40,7 +34,7 @@ I trigger vengono utilizzati per il targeting da un flusso di lavoro della campa
 Prima di avviare questa configurazione, verifica di disporre di:
 
 * Un progetto Adobe Developer
-* Un ID organizzazione valido. Per trovare l&#39;ID organizzazione, fare riferimento a [questa pagina](https://experienceleague.adobe.com/it/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
+* Un ID organizzazione valido. Per trovare l&#39;ID organizzazione, fare riferimento a [questa pagina](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
 * Accesso per sviluppatori all’organizzazione
 * Una configurazione dei trigger valida in Adobe Analytics
 
@@ -131,13 +125,13 @@ L’elenco dei parametri facoltativi è:
 | Opzione | Descrizione |
 |:-:|:-:|
 | appName(Legacy) | AppID dell’applicazione OAuth registrata nell’applicazione Oath legacy in cui è stata caricata la chiave pubblica. Per ulteriori informazioni, consulta questa [pagina](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) |
-| authGatewayEndpoint(Legacy) | URL per ottenere i token del gateway. Predefinito: ```https://api.omniture.com``` |
-| authPrivateKey(Legacy) | Chiave privata, parte pubblica caricata nell&#39;applicazione Oath legacy, AES crittografata con l&#39;opzione XtkKey: ```cryptString("PRIVATE_KEY")``` |
+| authGatewayEndpoint(Legacy) | URL per ottenere i token del gateway. Predefinito: `https://api.omniture.com` |
+| authPrivateKey(Legacy) | Chiave privata, parte pubblica caricata nell&#39;applicazione Oath legacy, AES crittografata con l&#39;opzione XtkKey: `cryptString("PRIVATE_KEY")` |
 | disableAuth(Legacy) | Disabilita l’autenticazione: la connessione senza token gateway verrà accettata solo da alcuni endpoint della pipeline di sviluppo. |
-| findPipelineEndpoint | URL per trovare l’endpoint dei servizi di pipeline da utilizzare per questo tenant. Predefinito: ```https://producer-pipeline-pnw.adobe.net``` |
-| dumpStatePeriodSec | Periodo tra due immagini del processo dello stato interno in ```var/INSTANCE/pipelined.json.``` <br> Lo stato interno è accessibile anche on-demand qui: ```http://INSTANCE:7781/pipelined/status``` |
+| findPipelineEndpoint | URL per trovare l’endpoint dei servizi di pipeline da utilizzare per questo tenant. Predefinito: `https://producer-pipeline-pnw.adobe.net` |
+| dumpStatePeriodSec | Periodo tra due immagini del processo dello stato interno in `var/INSTANCE/pipelined.json.` <br> Lo stato interno è accessibile anche on-demand qui: `http://INSTANCE:7781/pipelined/status` |
 | forcedPipelineEndpoint | Disattiva il rilevamento di PipelineServicesEndpoint per forzarlo |
-| monitorServerPort | Il processo pipeline ascolterà su questa porta per fornire il processo dello stato interno qui: ```http://INSTANCE:PORT/pipelined/status```. <br>Il valore predefinito è 7781 |
+| monitorServerPort | Il processo pipeline ascolterà su questa porta per fornire il processo dello stato interno qui: `http://INSTANCE:PORT/pipelined/status`. <br>Il valore predefinito è 7781 |
 | pointerFlushMessageCount | Quando questo numero di messaggi viene elaborato, gli offset vengono salvati nel database. <br> Il valore predefinito è 1000 |
 | pointerFlushPeriodSec | Trascorso questo periodo, gli offset verranno salvati nel database. <br>Il valore predefinito è 5 (sec) |
 | processingJSThreads | Numero di thread dedicati che elaborano i messaggi con connettori JS personalizzati. <br> Il valore predefinito è 4 |
