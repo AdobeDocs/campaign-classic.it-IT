@@ -20,7 +20,7 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+source-git-commit: 8f9e8344b77e50bd2823cc7fa3922466e515327f
 workflow-type: tm+mt
 source-wordcount: 854
 ht-degree: 1%
@@ -131,13 +131,13 @@ L’elenco dei parametri facoltativi è:
 | Opzione | Descrizione |
 |:-:|:-:|
 | appName(Legacy) | AppID dell’applicazione OAuth registrata nell’applicazione Oath legacy in cui è stata caricata la chiave pubblica. Per ulteriori informazioni, consulta questa [pagina](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) |
-| authGatewayEndpoint(Legacy) | URL per ottenere i token del gateway. Predefinito: ```https://api.omniture.com``` |
-| authPrivateKey(Legacy) | Chiave privata, parte pubblica caricata nell&#39;applicazione Oath legacy, AES crittografata con l&#39;opzione XtkKey: ```cryptString("PRIVATE_KEY")``` |
+| authGatewayEndpoint(Legacy) | URL per ottenere i token del gateway. Predefinito: `https://api.omniture.com` |
+| authPrivateKey(Legacy) | Chiave privata, parte pubblica caricata nell&#39;applicazione Oath legacy, AES crittografata con l&#39;opzione XtkKey: `cryptString("PRIVATE_KEY")` |
 | disableAuth(Legacy) | Disabilita l’autenticazione: la connessione senza token gateway verrà accettata solo da alcuni endpoint della pipeline di sviluppo. |
-| findPipelineEndpoint | URL per trovare l’endpoint dei servizi di pipeline da utilizzare per questo tenant. Predefinito: ```https://producer-pipeline-pnw.adobe.net``` |
-| dumpStatePeriodSec | Periodo tra due immagini del processo dello stato interno in ```var/INSTANCE/pipelined.json.``` <br> Lo stato interno è accessibile anche on-demand qui: ```http://INSTANCE:7781/pipelined/status``` |
+| findPipelineEndpoint | URL per trovare l’endpoint dei servizi di pipeline da utilizzare per questo tenant. Predefinito: `https://producer-pipeline-pnw.adobe.net` |
+| dumpStatePeriodSec | Periodo tra due immagini del processo dello stato interno in `var/INSTANCE/pipelined.json.` <br> Lo stato interno è accessibile anche on-demand qui: `http://INSTANCE:7781/pipelined/status` |
 | forcedPipelineEndpoint | Disattiva il rilevamento di PipelineServicesEndpoint per forzarlo |
-| monitorServerPort | Il processo pipeline ascolterà su questa porta per fornire il processo dello stato interno qui: ```http://INSTANCE:PORT/pipelined/status```. <br>Il valore predefinito è 7781 |
+| monitorServerPort | Il processo pipeline ascolterà su questa porta per fornire il processo dello stato interno qui: `http://INSTANCE:PORT/pipelined/status`. <br>Il valore predefinito è 7781 |
 | pointerFlushMessageCount | Quando questo numero di messaggi viene elaborato, gli offset vengono salvati nel database. <br> Il valore predefinito è 1000 |
 | pointerFlushPeriodSec | Trascorso questo periodo, gli offset verranno salvati nel database. <br>Il valore predefinito è 5 (sec) |
 | processingJSThreads | Numero di thread dedicati che elaborano i messaggi con connettori JS personalizzati. <br> Il valore predefinito è 4 |
