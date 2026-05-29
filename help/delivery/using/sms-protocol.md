@@ -15,9 +15,17 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+feature_v2:
+  - id: b631758a-142d-425f-b9aa-f756d85cb979
+  - id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2:
+  - id: e95a583b-fcfa-4524-8666-46a29c828119
+  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 8524
+source-wordcount: 8283
 ht-degree: 1%
 
 ---
@@ -852,8 +860,8 @@ L’SMS deve essere contrassegnato come ricevuto nel registro di consegna. Il re
   `SR yourProvider stat=DELIVRD err=000|#MESSAGE`
 Verifica di aver modificato il nome del provider di consegna. Il registro di consegna non deve mai contenere **SR Generic** negli ambienti di produzione.
 
-* **Verifica che MO sia elaborato**
-Se devi elaborare messaggi MO (risposte automatiche, memorizzazione di messaggi MO nel database, ecc.) prova a fare alcuni test. Invia alcuni SMS per tutte le parole chiave di risposta automatica e controlla se la risposta è abbastanza veloce, non più di qualche secondo.
+* **Verifica che MO siano elaborati**
+Se hai bisogno di elaborare il MO (risposte automatiche, memorizzazione del MO nel database, ecc.) prova a fare alcuni test. Invia alcuni SMS per tutte le parole chiave di risposta automatica e controlla se la risposta è abbastanza veloce, non più di qualche secondo.
 Archivia il registro che Adobe Campaign risponde con un `DELIVER_SM_RESP` (command_status=0) riuscito.
 
 ### Controllare le PDU {#check-pdus}

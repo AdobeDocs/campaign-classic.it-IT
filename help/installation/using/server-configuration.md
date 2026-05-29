@@ -13,7 +13,9 @@ product_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+feature_v2: []
+subfeature_v2: []
+source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
 source-wordcount: 630
 ht-degree: 2%
@@ -55,7 +57,7 @@ Sono disponibili tre modalità di protezione della connessione:
 
 * **Blocco**: tutti gli URL che non appartengono al inserisco nell&#39;elenco Consentiti di sono bloccati, con un messaggio di errore. Questa è la modalità predefinita dopo un post-aggiornamento.
 * **Permissivo**: sono consentiti tutti gli URL che non appartengono al inserisco nell&#39;elenco Consentiti di.
-* **Avviso**: sono consentiti tutti gli URL che non si trovano nel inserisco nell&#39;elenco Consentiti di, ma l&#39;interprete JS genera un avviso che consente all&#39;amministratore di raccoglierli. Questa modalità aggiunge messaggi di avviso JST-310027.
+* **Avviso**: tutti gli URL non nel inserisco nell&#39;elenco Consentiti di sono consentiti, ma l&#39;interprete JS genera un avviso che consente all&#39;amministratore di raccoglierli. Questa modalità aggiunge messaggi di avviso JST-310027.
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -65,7 +67,7 @@ Sono disponibili tre modalità di protezione della connessione:
 </urlPermission>
 ```
 
-I nuovi client utilizzeranno la modalità di blocco. Se desidera consentire un nuovo URL, deve contattare il proprio amministratore per aggiungerlo al elenco Consentiti di.
+I nuovi client utilizzeranno la modalità di blocco. Se desidera consentire un nuovo URL, deve contattare il proprio amministratore per aggiungerlo al inserisco nell&#39;elenco Consentiti di.
 
 I clienti esistenti provenienti da una migrazione possono utilizzare la modalità di avviso per un certo periodo di tempo. Nel frattempo devono analizzare il traffico in uscita prima di autorizzare gli URL.
 

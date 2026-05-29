@@ -16,9 +16,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+subfeature_v2: []
+source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 8103
+source-wordcount: 8061
 ht-degree: 8%
 
 ---
@@ -549,7 +550,7 @@ Per ulteriori informazioni, fare riferimento a questa [sezione](../../installati
 
 >[!NOTE]
 >
->Nota su **nameSevers**: per impostazione predefinita, utilizza la rete>parametri della prima interfaccia di rete dichiarata in Windows>non definito in UNIX. Definisce i server dei nomi di dominio (DNS)>utilizzato dall’MTA per ottenere la dichiarazione di Mail Exchanger per>un dominio.
+>Nota su **nameSevers**: per impostazione predefinita, utilizza i parametri di rete>della prima interfaccia di rete dichiarata in Windows>non definiti in UNIX. Definisce i server dei nomi di dominio (DNS)>utilizzati dall&#39;MTA per ottenere il Mail Exchanger dichiarato per>un dominio.
 >
 >Se questo valore non è definito, l’MTA cerca queste informazioni nella configurazione della rete host. Se sono possibili più DNS, i diversi indirizzi DNS devono essere separati da una virgola (ad esempio: 212.155.207.1,212.155.207.2). Se il server di consegna dispone di diverse interfacce di rete, l’elenco DNS utilizzato dall’MTA è il primo. In questo caso, è consigliabile specificare il parametro **nameServer** per evitare ambiguità.
 

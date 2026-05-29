@@ -15,6 +15,8 @@ feature_v2:
 subfeature_v2:
   - id: bea9e610-36b4-4df2-94bb-0fb6fe46cb50
   - id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0
+  - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
+  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 level_v2:
@@ -24,7 +26,7 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 1767
 ht-degree: 100%
@@ -106,7 +108,7 @@ In questa sezione sono elencate le funzionalità rimosse da Campaign Classic.
  </tr>
   <tr>
   <td>Autenticazione OAuth (OAuth e JWT)<br></td>
-  <td><p> L’autenticazione per l’integrazione dei trigger, originariamente basata sulla configurazione OAuth per l’accesso alla pipeline, è stata ora modificata e spostata su Adobe I/O. Questa modalità di autenticazione è stata dichiarata obsoleta con la versione di Campaign 20.3.<p>
+  <td><p> L’autenticazione dell’integrazione di Triggers per accedere alla pipeline, originariamente basata sulla configurazione di autenticazione OAuth, è ora stata cambiata e spostata in Adobe I/O. Questa modalità di autenticazione è stata dichiarata obsoleta con la versione 20.3 di Campaign.<p>
   <p>Se utilizzi l’integrazione Triggers, consulta <a href="../../integrations/using/about-triggers.md#implement">questa pagina</a> per informazioni su come adattare la tua implementazione.</p> 
   <p>Per ulteriori informazioni sulla obsolescenza dell’autenticazione OAuth, fare riferimento a questa <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">pagina</a></p> 
   <!--p><em>Target removal date: October 20, 2021. Hosted environments benefit from an extension until May 25, 2022. </em></p-->

@@ -14,7 +14,14 @@ product_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+feature_v2:
+  - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+subfeature_v2:
+  - id: f529d0bd-1401-4c88-9833-43228cc1d40f
+  - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
+  - id: f5293531-9312-4099-bfa3-9e67df6a8750
+  - id: efa38731-2723-4334-8d8b-a778af834835
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 1167
 ht-degree: 13%
@@ -37,7 +44,7 @@ Quando gestisci file e dati per un processo di ETL, questi file vengono memorizz
 
 * Per impostazione predefinita, tutte le cartelle create sono in modalità di lettura/scrittura solo per l&#39;identificatore. Durante la creazione delle cartelle a cui Campaign deve accedere, accertati di configurarle con diritti di lettura/scrittura per l’intero gruppo. In caso contrario, i flussi di lavoro potrebbero non essere in grado di creare/eliminare file in quanto vengono eseguiti con un identificatore diverso all’interno dello stesso gruppo per motivi di sicurezza.
 
-* Gli IP pubblici da cui stai tentando di avviare la connessione SFTP devono essere aggiunti al inserisco nell&#39;elenco Consentiti di nell’istanza Campaign. Gli IP pubblici possono essere aggiunti tramite il Pannello di controllo Campaign. [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/control-panel/using/sftp-management/ip-range-allow-listing){target="_blank"}
+* Gli IP pubblici da cui stai tentando di avviare la connessione SFTP devono essere aggiunti all’istanza di Campaign nel inserisco nell&#39;elenco Consentiti di. Gli IP pubblici possono essere aggiunti tramite il Pannello di controllo Campaign. [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/control-panel/using/sftp-management/ip-range-allow-listing){target="_blank"}
 
 ## Best practice per l’utilizzo dell’archiviazione SFTP {#sftp-server-best-practices}
 
@@ -146,7 +153,7 @@ Questo errore indica che il nome di dominio del server FTP non è stato risolto 
 
    1. Vai a Audit del flusso di lavoro e controlla se i registri mostrano l’errore &quot;Impossibile risolvere il nome host&quot;.
 
-1. Se il server SFTP è ospitato da Adobe, verifica se l’IP viene aggiunto al inserisco nell&#39;elenco Consentiti contattando l’Assistenza clienti.
+1. Se il server SFTP è ospitato da Adobe, verifica se l’IP viene aggiunto al inserisco nell&#39;elenco Consentiti di contattando l’Assistenza clienti.
 
    In caso contrario, convalida:
 

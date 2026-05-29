@@ -13,9 +13,17 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+feature_v2:
+  - id: b631758a-142d-425f-b9aa-f756d85cb979
+  - id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2:
+  - id: e95a583b-fcfa-4524-8666-46a29c828119
+  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 3072
+source-wordcount: 2904
 ht-degree: 0%
 
 ---
@@ -51,7 +59,7 @@ Contattare il provider per diagnosticare potenziali conflitti.
 
    * Alcuni degli account esterni condividono la stessa combinazione di login/password.
 Il provider non è in grado di individuare l&#39;account esterno da cui proviene `BIND PDU`, pertanto tutte le connessioni da più account vengono trattate come un unico account. Potrebbero aver indirizzato MO e SR in modo casuale sui due account, causando problemi.
-Se il provider supporta più codici brevi per la stessa combinazione di login/password, sarà necessario chiedere loro dove inserire il codice breve in `BIND PDU`. Tieni presente che questa informazione deve essere inserita in `BIND PDU` e non in `SUBMIT_SM`, poiché `BIND PDU` è l&#39;unico luogo che consentirà il routing corretto dei MO.
+Se il provider supporta più codici brevi per la stessa combinazione di login/password, sarà necessario chiedere loro dove inserire il codice breve in `BIND PDU`. Tieni presente che questa informazione deve essere inserita in `BIND PDU` e non in `SUBMIT_SM`, poiché `BIND PDU` è l&#39;unico luogo in cui sarà possibile instradare correttamente i MO.
 Vedere la sezione [Informazioni in ogni tipo di PDU](sms-protocol.md#information-pdu) per sapere quale campo è disponibile in `BIND PDU`. In genere si aggiunge il codice breve in `address_range`, ma ciò richiede un supporto speciale da parte del provider. Contattali per sapere in che modo si aspettano di instradare più codici brevi in modo indipendente.
 Adobe Campaign supporta la gestione di più codici brevi sullo stesso account esterno.
 
@@ -86,7 +94,7 @@ Adobe Campaign supporta la gestione di più codici brevi sullo stesso account es
 
 * Verificare che la rete sia configurata correttamente in modo da consentire la connessione TCP al provider.
 
-* Chiedi al provider di verificare che gli IP siano stati aggiunti correttamente al inserisco nell&#39;elenco Consentiti dell’istanza di Adobe Campaign.
+* Chiedi al provider di verificare che gli IP siano stati aggiunti correttamente al inserisco nell&#39;elenco Consentiti di dell’istanza di Adobe Campaign.
 
 * Controlla le impostazioni dell&#39;**account esterno**. Chiedi al provider il valore dei campi.
 
