@@ -28,4 +28,4 @@ ht-degree: 6%
 
 # Best practice per la consegna {#delivery-best-practices}
 
-Le best practice relative alla progettazione della consegna e all’invio con Adobe Campaign sono descritte in dettaglio nella [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/delivery-best-practices){target="_blank"}.
+Le best practice relative alla progettazione della consegna e all’invio con Adobe Campaign sono descritte in dettaglio nella [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/delivery-best-practices){target="_blank"}.
