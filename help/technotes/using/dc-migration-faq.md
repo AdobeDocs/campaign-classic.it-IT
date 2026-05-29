@@ -7,19 +7,13 @@ role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
 TQID: https://experienceleague.adobe.com/r3qtW9ZsCD85N9qAnN1EOje-VMhDoyPuqea2xZnBWLs
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: b12f6872-9271-4369-85e5-86969a0b99a2
-  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2id: d5ef99fa-df0c-4153-bf94-105ad0724167
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080b
+subfeature_v2: id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 2269
 ht-degree: 0%
@@ -34,7 +28,7 @@ Adobe disattiva il centro dati legacy: le istanze di Campaign Classic devono ess
 
 Di seguito è riportata una serie di domande comuni su questo progetto, sull’impatto sugli ambienti Campaign e su altre risorse utili.
 
-Per qualsiasi altra domanda, puoi contattare l&#39;[Assistenza clienti Adobe](https://experienceleague.adobe.com/it?support-solution=Campaign#support).
+Per qualsiasi altra domanda, puoi contattare l&#39;[Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 ## Impatto sull&#39;infrastruttura
 
@@ -64,7 +58,7 @@ Gli impatti globali su database e infrastruttura sono elencati di seguito.
 
 * **Qual è il piano per risolvere eventuali problemi successivi alla migrazione?**
 
-  Prima della migrazione dei sistemi di produzione vengono eseguiti test approfonditi. Tuttavia, in caso di problemi, [l&#39;Assistenza clienti Adobe](https://experienceleague.adobe.com/it?support-solution=Campaign#support) rimarrà il punto di contatto principale. Adobe ha istituito un team di esperti per fornire supporto avanzato, se necessario.
+  Prima della migrazione dei sistemi di produzione vengono eseguiti test approfonditi. Tuttavia, in caso di problemi, [l&#39;Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) rimarrà il punto di contatto principale. Adobe ha istituito un team di esperti per fornire supporto avanzato, se necessario.
 
 ## Impatto sul recapito messaggi
 
@@ -72,13 +66,13 @@ Gli impatti globali su database e infrastruttura sono elencati di seguito.
 
 Gli impatti globali su IP, elenchi Bloccati, sottodomini e URL sono elencati di seguito.
 
-* **Come verrà gestito l&#39;IP sul inserisco nell&#39;elenco Consentiti di? I clienti dovranno aggiungere nuovi indirizzi IP al elenco Consentiti di per il traffico in ingresso da Campaign?**
+* **Come verrà gestito l&#39;IP sul inserisco nell&#39;elenco Consentiti di? I clienti dovranno aggiungere nuovi indirizzi IP al inserisco nell&#39;elenco Consentiti di per il traffico in ingresso da Campaign?**
 
   L’indirizzo IP dei server Adobe cambierà. Pertanto, i clienti potrebbero dover aggiungere questi nuovi indirizzi IP nel inserisco nell&#39;elenco Consentiti di nel proprio sistema.
 
   [Ulteriori informazioni](#config) sull&#39;IP nel inserisco nell&#39;elenco Consentiti di.
 
-* **Come gestiremo la porta aggiunta al elenco Consentiti di accesso SFTP/FTP?**
+* **Come gestiremo la porta aggiunta al elenco Consentiti di per l&#39;accesso SFTP/FTP?**
 
   Anche la configurazione SFTP (chiavi pubbliche + IP sul inserisco nell&#39;elenco Consentiti di) verrà spostata dal datacenter legacy al cloud pubblico (AWS). Nessuna azione prevista dal cliente.
 
@@ -110,13 +104,13 @@ Gli impatti globali su IP, elenchi Bloccati, sottodomini e URL sono elencati di 
 
   Prima di tutto, il recapito messaggi di Adobe valuterà lo stato di recapito messaggi della piattaforma e raccomanderà un piano per passare ai nuovi IP
 
-  Non è necessario alcun riscaldamento dopo la migrazione. Potrebbe trattarsi di un&#39;eccezione e, in questo caso, [l&#39;Assistenza clienti Adobe](https://experienceleague.adobe.com/it?support-solution=Campaign#support) contatterà i clienti.
+  Non è necessario alcun riscaldamento dopo la migrazione. Potrebbe trattarsi di un&#39;eccezione e, in questo caso, [l&#39;Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) contatterà i clienti.
 
   Tuttavia, il piano è quello di rendere trasparente questa operazione per l&#39;azienda, a differenza dell&#39;incremento iniziale che viene fatto durante il go-live.
 
   Al termine della migrazione, l’istanza Campaign avrà IP di invio completamente diversi. Al fine di garantire una transizione senza intoppi, Adobe implementerà un aumento graduale dei nuovi IP di invio passando progressivamente dal vecchio ai nuovi IP.
 
-* **Spostamento dell&#39;URL nel elenco Consentiti di in corso?**
+* **Si sta spostando l&#39;URL sul elenco Consentiti di?**
 
   Sì, viene memorizzato nel file di configurazione del server che verrà copiato dall’origine alla nuova istanza.
 
@@ -130,7 +124,7 @@ Gli impatti globali su IP, elenchi Bloccati, sottodomini e URL sono elencati di 
 
 ![](assets/do-not-translate/maintenance.png)
 
-### Nota sull&#39;IP sul inserisco nell&#39;elenco Consentiti di{#config}
+### Nota sull&#39;IP nel inserisco nell&#39;elenco Consentiti di{#config}
 
 La migrazione al cloud pubblico sarà accompagnata da nuovi IP per i server applicazioni Adobe Campaign, in modo che la modifica degli IP possa avere un impatto sulla connettività tra i server Adobe e i sistemi informativi.
 
@@ -186,7 +180,7 @@ Di seguito sono elencati gli impatti globali su configurazione, connettività co
 
   Può variare in base alla nuova posizione dei server. Tuttavia, il cliente sarà in grado di mantenere il proprio fuso orario corrente.
 
-  Per ulteriori informazioni sulla gestione del fuso orario, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html?lang=it){target="_blank"}.
+  Per ulteriori informazioni sulla gestione del fuso orario, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html){target="_blank"}.
 
 
 ## Sicurezza e autorizzazioni
@@ -215,9 +209,9 @@ Gli impatti su autorizzazioni, certificati e accesso SFTP sono elencati di segui
 
 * **Se non è stato possibile stabilire la connessione SFTP, qual è la soluzione alternativa o il piano per mantenere operativo il cliente?**
 
-  L’unico problema di connettività che può sorgere è relativo al inserisco nell&#39;elenco Consentiti di sul lato cliente. Il cliente deve aggiungere questo test all’ambiente non di produzione per assicurarsi che funzioni prima di passare alla produzione.
+  L’unico problema di connettività che può verificarsi è relativo al inserisco nell&#39;elenco Consentiti di sul lato cliente. Il cliente deve aggiungere questo test all’ambiente non di produzione per assicurarsi che funzioni prima di passare alla produzione.
 
-* **Sono presenti configurazioni di inserisce nell&#39;elenco Consentiti di data center specifiche per il centro dati che devono essere spostate?**
+* **Sono presenti configurazioni di inserire nell&#39;elenco Consentiti specifiche per il centro dati che devono essere spostate?**
 
   No, non esiste una configurazione di inserisco nell&#39;elenco Consentiti specifica per il centro dati da gestire.
 

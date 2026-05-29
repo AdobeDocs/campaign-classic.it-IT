@@ -8,20 +8,11 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 89356b5a-d99c-43d1-892b-5a1d003e76cc
 TQID: https://experienceleague.adobe.com/FL-v5m07U-OzscVIiQONAa-RMu323ZpTuBrL29ukMc4
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
-subfeature_v2:
-  - id: eb007b6d-6e57-46ab-9485-3f24d6102304
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: d5ef99fa-df0c-4153-bf94-105ad0724167id: afa4204e-6d08-4e29-bc35-26aafb656d48
+subfeature_v2: id: f529d0bd-1401-4c88-9833-43228cc1d40fid: d6330382-c886-4f7a-a4f7-74e3f36c0d9cid: f5293531-9312-4099-bfa3-9e67df6a8750id: efa38731-2723-4334-8d8b-a778af834835
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 1517
 ht-degree: 6%
@@ -34,7 +25,7 @@ ht-degree: 6%
 >
 >Queste domande frequenti riguardano questioni specifiche relative all’architettura di Adobe Campaign Classic v7, ai modelli di distribuzione e alle funzioni specifiche di v7.
 >
->**Per risposte complete alle domande comuni su Campaign** (flussi di lavoro, consegne, pubblico, creazione di rapporti, personalizzazione, ecc.), consulta le [**Domande frequenti complete su Campaign v8**](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-faq-comprehensive){target="_blank"}, che forniscono risposte dettagliate organizzate per argomento.
+>**Per risposte complete alle domande comuni su Campaign** (flussi di lavoro, consegne, pubblico, creazione di rapporti, personalizzazione, ecc.), consulta le [**Domande frequenti complete su Campaign v8**](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-faq-comprehensive){target="_blank"}, che forniscono risposte dettagliate organizzate per argomento.
 
 ## Architettura e implementazione di Campaign Classic v7 {#v7-architecture}
 
@@ -52,7 +43,7 @@ Ogni modello di distribuzione ha funzionalità e responsabilità di gestione div
 
 [Fai clic qui per ulteriori informazioni](../../installation/using/hosting-models.md) sui modelli di hosting e sulle loro differenze.
 
-**Nota:** Campaign v8 è disponibile esclusivamente come Managed Cloud Services. [Scopri di più su Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=it){target="_blank"}.
+**Nota:** Campaign v8 è disponibile esclusivamente come Managed Cloud Services. [Scopri di più su Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}.
 
 +++
 
@@ -83,7 +74,7 @@ La migrazione ad Adobe Managed Services offre maggiore scalabilità, sicurezza e
 
 **Guida introduttiva:** Contatta il tuo rappresentante Adobe per valutare il tuo ambiente e sviluppare un piano di migrazione dettagliato con Adobe Professional Services.
 
-Ulteriori informazioni sulla [migrazione a Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605?profile.language=it){target="_blank"}.
+Ulteriori informazioni sulla [migrazione a Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605){target="_blank"}.
 
 +++
 
@@ -109,7 +100,7 @@ Campaign v8 è la piattaforma strategica di Adobe, ideale per le organizzazioni 
 
 Ulteriori informazioni:
 
-* [Panoramica di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=it){target="_blank"}
+* [Panoramica di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}
 * [Transizione da Campaign Classic v7 a v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html){target="_blank"}
 * [Domande frequenti complete su Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}
 
@@ -225,7 +216,7 @@ Ulteriori informazioni sono disponibili nella [documentazione della console clie
 
 +++ Dove possono gestire le impostazioni delle istanze i clienti in hosting? {#where-to-manage-instance-settings}
 
-Il [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it){target="_blank"} consente agli amministratori di prodotto per Adobe Campaign di gestire le impostazioni e tenere traccia dell&#39;utilizzo per ogni istanza. L’interfaccia intuitiva consente di monitorare le risorse chiave ed eseguire attività amministrative come aggiornamenti del inserisco nell&#39;elenco Consentiti di IP, monitoraggio dell’archiviazione SFTP, gestione delle chiavi e altro ancora.
+Il [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it){target="_blank"} consente agli amministratori di prodotto per Adobe Campaign di gestire le impostazioni e tenere traccia dell&#39;utilizzo per ogni istanza. L’interfaccia intuitiva consente di monitorare le risorse chiave ed eseguire attività amministrative come gli aggiornamenti del inserisco nell&#39;elenco Consentiti di IP, il monitoraggio dell’archiviazione SFTP, la gestione delle chiavi e altro ancora.
 
 **Vantaggi chiave:**
 
@@ -267,7 +258,7 @@ Consulta le [**Domande frequenti complete su Campaign v8**](https://experiencele
 
 **Community e supporto:**
 
-* [Forum della community di Campaign](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=it){target="_blank"}
+* [Forum della community di Campaign](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
 * [Aiuto di Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}
 
 +++

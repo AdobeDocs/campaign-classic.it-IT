@@ -7,13 +7,12 @@ feature: Personalization
 role: User
 exl-id: 555082a2-1b62-4aa4-b80c-77b1a1ef9491
 TQID: https://experienceleague.adobe.com/2hPiid3SAGMJcpSZmLtfNIZ08JSqOTnyDmsvzYarDG0
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+feature_v2: id: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 400
 ht-degree: 2%
@@ -24,7 +23,7 @@ ht-degree: 2%
 
 Con Adobe Campaign, personalizza le consegne per inviare messaggi che corrispondono al profilo e agli interessi di ogni destinatario.
 
-Personalization ti aiuta a rendere i tuoi messaggi più pertinenti e coinvolgenti. Puoi utilizzare i dati dei destinatari per adattare il contenuto, aggiungere campi dinamici o visualizzare informazioni diverse in base alle condizioni. Scopri come impostare e utilizzare le funzionalità di personalizzazione nelle consegne nella [documentazione di Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=it){target=_blank}.
+Personalization ti aiuta a rendere i tuoi messaggi più pertinenti e coinvolgenti. Puoi utilizzare i dati dei destinatari per adattare il contenuto, aggiungere campi dinamici o visualizzare informazioni diverse in base alle condizioni. Scopri come impostare e utilizzare le funzionalità di personalizzazione nelle consegne nella [documentazione di Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}.
 
 Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8.
 
@@ -32,28 +31,28 @@ Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di
 
 >[!TAB Documentazione sulla personalizzazione dei contenuti]
 
-Per ulteriori informazioni sulla personalizzazione dei contenuti, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=it){target=_blank}.
+Per ulteriori informazioni sulla personalizzazione dei contenuti, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}.
 
 
-[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=it){target=_blank}
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}
 
 
 >[!TAB Personalization e contenuto condizionale]
 
 Scopri i passaggi chiave relativi al contenuto condizionale e alla personalizzazione **nella documentazione di Campaign v8**:
 
-* [Dati Personalization](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-data.html?lang=it){target="_blank"}: scopri come utilizzare diverse origini dati per la personalizzazione per personalizzare le consegne.
-* [Campi di personalizzazione](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-fields.html?lang=it){target="_blank"}: scopri come inserire e utilizzare i campi di personalizzazione in modo che ogni destinatario possa visualizzare i propri dati nell&#39;oggetto o nel corpo del messaggio.
-* [Blocchi di personalizzazione](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=it){target="_blank"}: scopri come utilizzare i blocchi di personalizzazione per inserire contenuti dinamici e condizionali nei messaggi in base ai dati dei destinatari.
-* [Contenuto condizionale](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/conditions.html?lang=it){target="_blank"}: scopri come inserire contenuto condizionale in base ai valori dei campi dei destinatari.
+* [Dati Personalization](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-data.html){target="_blank"}: scopri come utilizzare diverse origini dati per la personalizzazione per personalizzare le consegne.
+* [Campi di personalizzazione](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-fields.html){target="_blank"}: scopri come inserire e utilizzare i campi di personalizzazione in modo che ogni destinatario possa visualizzare i propri dati nell&#39;oggetto o nel corpo del messaggio.
+* [Blocchi di personalizzazione](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}: scopri come utilizzare i blocchi di personalizzazione per inserire contenuti dinamici e condizionali nei messaggi in base ai dati dei destinatari.
+* [Contenuto condizionale](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/conditions.html){target="_blank"}: scopri come inserire contenuto condizionale in base ai valori dei campi dei destinatari.
 
 >[!TAB Coupon, documenti PDF ed emoticon]
 
 Consulta queste pagine per informazioni sui coupon personalizzati, i documenti PDF e la personalizzazione delle emoticon **nella documentazione di Campaign v8**:
 
 * [Coupon personalizzati](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/ppersonalized-coupons.html){target="_blank"}: scopri come creare e assegnare coupon personalizzati o anonimi nelle consegne di e-mail.
-* [Genera documenti PDF personalizzati](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/generating-personalized-pdf-documents.html?lang=it){target="_blank"}: scopri come generare allegati PDF con contenuti personalizzati per ogni destinatario.
-* [Personalizza l&#39;elenco degli emoticon](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/customizing-emoticon-list.html?lang=it){target="_blank"}: scopri come aggiungere e gestire gli emoticon per migliorare i messaggi e-mail.
+* [Genera documenti PDF personalizzati](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/generating-personalized-pdf-documents.html){target="_blank"}: scopri come generare allegati PDF con contenuti personalizzati per ogni destinatario.
+* [Personalizza l&#39;elenco degli emoticon](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/customizing-emoticon-list.html){target="_blank"}: scopri come aggiungere e gestire gli emoticon per migliorare i messaggi e-mail.
 
 >[!ENDTABS]
 
@@ -68,7 +67,7 @@ Before starting sending emails:
 
 * Make sure recipient profiles contain at least an email address.
 * Learn more about the Adobe Campaign [Delivery best practices](delivery-best-practices.md).
-* Read out these sections to learn more about Deliverability: [Deliverability management in Campaign](about-deliverability.md) and [Deliverability best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=it).
+* Read out these sections to learn more about Deliverability: [Deliverability management in Campaign](about-deliverability.md) and [Deliverability best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
 
 The key steps to send an email are as follows:
 

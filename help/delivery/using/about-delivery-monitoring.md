@@ -6,18 +6,14 @@ feature: Monitoring, Deliverability
 role: User
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
 TQID: https://experienceleague.adobe.com/IRAgAQvquHFcfGDRU9Sof8NpSn3khyRRPOdpIRKUOzg
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: c1579802-ddd4-4214-8a91-97b2066abe11id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+feature_v2: id: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 931
+source-wordcount: 885
 ht-degree: 2%
 
 ---
@@ -85,10 +81,10 @@ In Adobe Campaign Classic, **Monitoraggio del recapito messaggi** è gestito dal
 * Controlla regolarmente la [velocità effettiva di consegna](../../reporting/using/global-reports.md#delivery-throughput) per l&#39;intera piattaforma per verificare se è coerente con la configurazione originale.
 * Verifica che [nuovi tentativi](delivery-failures-quarantine.md#retries-after-a-delivery-temporary-failure) siano configurati correttamente (30 minuti per il periodo di esecuzione dei nuovi tentativi e più di 20 tentativi) nei modelli di consegna.
 * Verificare regolarmente che la cassetta postale [bounce](delivery-failures-quarantine.md#bounce-mail-management) sia accessibile e che l&#39;account non stia per scadere.
-* Controlla ogni velocità effettiva di consegna, accessibile dal [dashboard di consegna](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}, per assicurarti che sia coerente con la validità del contenuto della consegna (ad esempio, le &quot;vendite flash&quot; devono essere consegnate in minuti, non in giorni).
+* Controlla ogni velocità effettiva di consegna, accessibile dal [dashboard di consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}, per assicurarti che sia coerente con la validità del contenuto della consegna (ad esempio, le &quot;vendite flash&quot; devono essere consegnate in minuti, non in giorni).
 * Quando utilizzate le onde, verificate che ogni onda abbia tempo sufficiente per terminare prima che venga attivata quella successiva.
 * Verifica che il numero di errori e le nuove [quarantene](delivery-failures-quarantine.md) siano coerenti con le altre consegne.
-* Consulta attentamente i [registri di consegna](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} per verificare il tipo di errori evidenziati (inserisce nell&#39;elenco Bloccati di, problemi DNS, regole anti-spam, ecc.).
+* Consulta attentamente i [registri di consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} per verificare il tipo di errori evidenziati (inserisce nell&#39;elenco Bloccati di, problemi DNS, regole anti-spam, ecc.).
 
 ### Risoluzione dei problemi {#delivery-troubleshooting}
 
@@ -107,8 +103,8 @@ Le seguenti risorse ti aiuteranno a monitorare e tenere traccia delle prestazion
 
 Scopri come accedere agli elenchi di consegna e utilizzare il dashboard di consegna per monitorare l’attività di invio:
 
-* [Monitorare le consegne nell&#39;interfaccia utente di Campaign](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (documentazione di Campaign v8, applicabile sia a v7 che a v8)
-* [Stati di consegna](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (documentazione di Campaign v8)
+* [Monitorare le consegne nell&#39;interfaccia utente di Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (documentazione di Campaign v8, applicabile sia a v7 che a v8)
+* [Stati di consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (documentazione di Campaign v8)
 * [Avanzate: personalizza i registri di consegna](customize-delivery-logs.md) (solo v7 ibrida/on-premise - estensione schema)
 
 ### Tracciare le interazioni dei messaggi
@@ -116,8 +112,8 @@ Scopri come accedere agli elenchi di consegna e utilizzare il dashboard di conse
 Tieni traccia di aperture, clic e interazioni dei destinatari con le consegne:
 
 * [Documentazione di tracciamento dei messaggi](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"} (documentazione di Campaign v8, applicabile sia a v7 che a v8)
-* [Configurare i collegamenti tracciati](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"} (documentazione di Campaign v8)
-* [Accedi ai registri di tracciamento](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"} (documentazione di Campaign v8)
+* [Configurare i collegamenti tracciati](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"} (documentazione di Campaign v8)
+* [Accedi ai registri di tracciamento](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"} (documentazione di Campaign v8)
 
 ### Ottimizzare le prestazioni di consegna
 
@@ -130,6 +126,6 @@ Best practice e risoluzione dei problemi relativi alle prestazioni di consegna:
 
 Gestire gli errori di consegna, le e-mail non recapitate e gli indirizzi in quarantena:
 
-* [Informazioni sugli errori di consegna](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (documentazione di Campaign v8: guida completa sia per v7 che per v8)
-* [Gestione della quarantena](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (documentazione di Campaign v8: guida completa per v7 e v8)
+* [Informazioni sugli errori di consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (documentazione di Campaign v8: guida completa sia per v7 che per v8)
+* [Gestione della quarantena](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (documentazione di Campaign v8: guida completa per v7 e v8)
 * [Errori di consegna e configurazione della quarantena](delivery-failures-quarantine.md) (configurazioni specifiche per ibridi/on-premise v7)

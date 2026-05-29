@@ -6,26 +6,11 @@ feature: ACS Connector
 hide: true
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
 TQID: https://experienceleague.adobe.com/9gc7VAt25SZk-QEFwAKpmRJCtRQu1HpMXQYzaRZAJ2I
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: a658c786-869b-4194-a780-2594d663adda
-  - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
-  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
-subfeature_v2:
-  - id: bea9e610-36b4-4df2-94bb-0fb6fe46cb50
-  - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
-  - id: d1110311-2ca4-442b-be37-088a6db845ee
-  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a658c786-869b-4194-a780-2594d663addaid: b82389f8-9b5e-4083-8e3b-3cef299fb8b9id: d5ef99fa-df0c-4153-bf94-105ad0724167
+subfeature_v2: id: cbcf4d90-26be-46e2-b16a-aebc529dc41eid: df0d6518-6f49-46e2-b46e-3bcc513f553fid: eb007b6d-6e57-46ab-9485-3f24d6102304id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: e0eb8757-182f-49f3-94a4-1587d16f5094id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 1161
 ht-degree: 1%
@@ -142,7 +127,7 @@ Creando un flusso di lavoro di consegna in Campaign Standard, è quindi possibil
 
    Questa attività viene utilizzata per recuperare i dati del pubblico selezionato. Puoi anche applicare un **[!UICONTROL Source Filtering]** aggiuntivo, se necessario, utilizzando la scheda corrispondente di questa attività.
 
-1. Aggiungi un&#39;attività **[!UICONTROL Email delivery]** e configurala come qualsiasi altra [attività di consegna e-mail](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html?lang=it).
+1. Aggiungi un&#39;attività **[!UICONTROL Email delivery]** e configurala come qualsiasi altra [attività di consegna e-mail](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html).
 1. Apri il contenuto della consegna.
 1. Aggiungi un campo di personalizzazione. Individuare il nodo **[!UICONTROL Additional data (targetData)]** dalla finestra a comparsa. Questo nodo contiene i dati aggiuntivi del pubblico calcolati nel flusso di lavoro di targeting iniziale. Puoi utilizzarli come qualsiasi altro campo di personalizzazione.
 
@@ -164,9 +149,9 @@ Una volta che la consegna e il relativo contenuto sono pronti, invia la consegna
 1. Dal dashboard di consegna, conferma manualmente che la consegna può essere inviata.
 1. Monitora i rapporti e i registri della consegna:
 
-   * **In Campaign Standard**: accedere a [report](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html?lang=it) e [log](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=it) relativi alla consegna come per qualsiasi consegna.
+   * **In Campaign Standard**: accedere a [report](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html) e [log](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html) relativi alla consegna come per qualsiasi consegna.
    * **in Campaign v7 e Campaign Standard**: gli ID consegna, i registri di indirizzi e-mail generali e i registri di tracciamento e-mail sono sincronizzati con Campaign v7. Potrai quindi ottenere una visualizzazione a 360° delle campagne di marketing da Campaign v7.
 
      Le quarantene vengono sincronizzate automaticamente con Campaign v7. Ciò consente di tenere conto delle informazioni non consegnabili per il targeting successivo eseguito in Campaign v7.
 
-     Ulteriori informazioni sulla gestione della quarantena in Campaign Standard sono disponibili in [questa sezione](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=it).
+     Ulteriori informazioni sulla gestione della quarantena in Campaign Standard sono disponibili in [questa sezione](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html).

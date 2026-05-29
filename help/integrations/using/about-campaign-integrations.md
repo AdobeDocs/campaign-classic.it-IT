@@ -10,20 +10,12 @@ level: Intermediate, Experienced
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
 TQID: https://experienceleague.adobe.com/PUFoWjnwax8oHM3dH-FJDH7b26p4qNBMaJfm2qWGNz0
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
-subfeature_v2:
-  - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
-  - id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0
-  - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: d5ef99fa-df0c-4153-bf94-105ad0724167
+subfeature_v2: id: cbcf4d90-26be-46e2-b16a-aebc529dc41eid: df0d6518-6f49-46e2-b46e-3bcc513f553fid: eb007b6d-6e57-46ab-9485-3f24d6102304id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 740
 ht-degree: 5%
@@ -34,7 +26,7 @@ ht-degree: 5%
 
 Adobe Experience Cloud è un set completo di soluzioni integrate all’avanguardia, basate su una piattaforma di dati comune e con un set comune di potenti soluzioni e app.
 
-Ulteriori informazioni sulle integrazioni funzionali disponibili tra le soluzioni Adobe Campaign e Adobe Experience Cloud in [questa pagina](https://experienceleague.adobe.com/it/docs/core-services/interface/administration/integrations){_blank}.
+Ulteriori informazioni sulle integrazioni funzionali disponibili tra le soluzioni Adobe Campaign e Adobe Experience Cloud in [questa pagina](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/integrations){_blank}.
 
 L&#39;elenco completo delle soluzioni e dei servizi delle app Adobe che possono essere integrati con Adobe Campaign, insieme alla relativa documentazione, è disponibile in [questa sezione](#experience-cloud-integrations).
 
@@ -47,17 +39,17 @@ L&#39;elenco completo delle soluzioni e dei servizi delle app Adobe che possono 
 
 È possibile collegare più soluzioni a Adobe Experience Cloud. L&#39;**organizzazione** è l&#39;entità cliente che consente all&#39;amministratore di configurare gruppi e utenti e di controllare il Single Sign-On (SSO) in Adobe Experience Cloud. L’organizzazione agisce come un’azienda di accesso per tutti i prodotti e le soluzioni Experience Cloud. Nella maggior parte dei casi l’organizzazione corrisponde al nome aziendale, ma una stessa azienda può avere molte organizzazioni.
 
-La gestione dell&#39;organizzazione e il collegamento di account Adobe Experience Cloud sono descritti in dettaglio nel [portale della Guida di Adobe Experience Cloud](https://experienceleague.adobe.com/it/docs/core-services/interface/administration/organizations){_blank}.
+La gestione dell&#39;organizzazione e il collegamento di account Adobe Experience Cloud sono descritti in dettaglio nel [portale della Guida di Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations){_blank}.
 
 ## Gestione di identità e cookie {#id-and-cookies}
 
-Durante l&#39;installazione di Adobe Campaign o l&#39;integrazione di un&#39;installazione esistente con Adobe Experience Cloud, il servizio [Adobe Experience Cloud Identity](https://experienceleague.adobe.com/it/docs/id-service/using/home){_blank} è abilitato. Questo servizio sostituisce il cookie permanente utilizzato in primo luogo da Adobe Campaign per le sue funzionalità di tracciamento.
+Durante l&#39;installazione di Adobe Campaign o l&#39;integrazione di un&#39;installazione esistente con Adobe Experience Cloud, il servizio [Adobe Experience Cloud Identity](https://experienceleague.adobe.com/en/docs/id-service/using/home){_blank} è abilitato. Questo servizio sostituisce il cookie permanente utilizzato in primo luogo da Adobe Campaign per le sue funzionalità di tracciamento.
 
 Il servizio Adobe Experience Cloud Identity (servizio ID) fornisce un ID universale e costante che identifica i visitatori in tutte le soluzioni di Experience Cloud.
 
 Ai destinatari che generano i registri di tracciamento verrà assegnato un ID visitatore univoco. L&#39;ID verrà salvato nel campo **[!UICONTROL Requester UUID (@sourceID)]** della tabella **[!UICONTROL nms:trackingLogRcp]**. **I dati di tracciamento dei destinatari che esistevano prima dell&#39;implementazione del servizio ID visitatore non saranno più utilizzabili**.
 
-L’ID verrà quindi riconosciuto dalle altre soluzioni Adobe Experience Cloud con lo stesso CNAME. [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/id-service/using/reference/analytics-reference/cname){_blank}.
+L’ID verrà quindi riconosciuto dalle altre soluzioni Adobe Experience Cloud con lo stesso CNAME. [Ulteriori informazioni](https://experienceleague.adobe.com/en/docs/id-service/using/reference/analytics-reference/cname){_blank}.
 
 ## Integrazioni di Experience Cloud {#experience-cloud-integrations}
 

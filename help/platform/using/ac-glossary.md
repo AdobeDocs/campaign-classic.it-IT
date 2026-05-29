@@ -8,27 +8,15 @@ level: Beginner
 hide: true
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
 TQID: https://experienceleague.adobe.com/e9S6zCJjh4LKzlKKy-tqz8KOR1hScKbMuzuppbVUuGI
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
-subfeature_v2:
-  - id: a72a22e0-8c8d-4019-ba42-3f2644aa91a3
-  - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9id: afa4204e-6d08-4e29-bc35-26aafb656d48
+subfeature_v2: id: f529d0bd-1401-4c88-9833-43228cc1d40fid: d6330382-c886-4f7a-a4f7-74e3f36c0d9cid: f5293531-9312-4099-bfa3-9e67df6a8750id: efa38731-2723-4334-8d8b-a778af834835
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 6654
+source-wordcount: 6632
 ht-degree: 4%
 
 ---
@@ -122,7 +110,7 @@ Ulteriori informazioni sull&#39;[interazione](../../interaction/using/interactio
 
 Campaign è un’interfaccia per coordinare, definire ed eseguire campagne di marketing. Le campagne possono contenere uno o più flussi di lavoro, consegne, documenti e altri punti di dati correlati in un’unica interfaccia di facile utilizzo.
 
-Ulteriori informazioni sulle campagne nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=it){target=_blank}.
+Ulteriori informazioni sulle campagne nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
 +++
 
 <!--
@@ -163,7 +151,7 @@ Ulteriori informazioni sull&#39;approvazione dei contenuti nella [documentazione
 
 Utilizza i gruppi di controllo per misurare l’impatto delle campagne escludendo parte delle relative audience. Gli operatori possono confrontare il comportamento della popolazione target che ha ricevuto il messaggio con il comportamento dei contatti non mirati. In base ai registri di invio, gli operatori possono anche eseguire il targeting di un gruppo di controllo in campagne future.
 
-Ulteriori informazioni sui gruppi di controllo sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=it#add-a-control-group){target="_blank"}.
+Ulteriori informazioni sui gruppi di controllo sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target="_blank"}.
 +++
 
 +++**Pannello di controllo**
@@ -235,14 +223,14 @@ Ulteriori informazioni su [Consegne](../../delivery/using/communication-channels
 
 L’analisi della consegna è la preparazione della consegna. Questo processo combina il contenuto con i dati del profilo del destinatario per produrre l’e-mail personalizzata che il destinatario riceve. La logica di analisi della consegna può escludere i destinatari dal target o interrompere completamente la consegna, in base alla logica definita. Questo processo include anche la valutazione della logica del contenuto dinamico e l’inserimento di offerte specifiche per il singolo profilo del destinatario.
 
-Ulteriori informazioni sull&#39;analisi della consegna sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=it){target="_blank"}.
+Ulteriori informazioni sull&#39;analisi della consegna sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
 +++
 
 +++**Registri di consegna**
 
 I registri di consegna contengono informazioni generate durante l’invio di un messaggio. Questi registri mostrano i dettagli dell’invio, il messaggio preparato, ignorato, inviato o non riuscito. Sono accessibili direttamente dal dashboard di consegna.
 
-Ulteriori informazioni sui [registri di consegna](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
+Ulteriori informazioni sui [registri di consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
 +++
 
 <!--
@@ -298,7 +286,7 @@ Ulteriori informazioni su [Distribuzione dei valori](../../platform/using/adobe-
 
 +++**Delega del dominio**
 
-La configurazione dei sottodomini consente di configurare una sottosezione del dominio (tecnicamente una “zona DNS”) per l’utilizzo con Adobe Campaign.
+La configurazione del sottodominio ti consente di configurare una sottosezione del dominio (tecnicamente una &quot;zona DNS&quot;) per l’utilizzo con Adobe Campaign.
 La delega del dominio consente ad Adobe di controllare e mantenere tutti gli aspetti del DNS necessari per la distribuzione, il rendering e il tracciamento delle campagne e-mail.
 
 Ulteriori informazioni sulla [delega del dominio](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=it)
@@ -360,14 +348,14 @@ An engine call is a server call that starts real-time processing on server side 
 
 L’attività Enrichment è un’attività avanzata del flusso di lavoro che consente agli operatori di arricchire i dati della tabella di lavoro generati che verranno elaborati nel flusso di lavoro. Questa attività viene generalmente utilizzata dopo attività di targeting o dopo l’importazione di un file e prima di attività che utilizzano dati oggetto di targeting. Gli arricchimenti possono trasformare i dati di transizione in entrata e configurare l’attività in modo da completare la transizione in uscita con dati migliorati. Consente all’operatore di combinare dati da più set di dati o di creare collegamenti a una risorsa temporanea.
 
-Ulteriori informazioni sull&#39;attività Enrichment sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=it){target="_blank"}.
+Ulteriori informazioni sull&#39;attività Enrichment sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}.
 +++
 
 +++**Enumerazioni**
 
 Un’enumerazione è un tipo di dati definito negli schemi o a livello di Platform che definisce i valori di input validi per un campo. Le enumerazioni vengono visualizzate nell’interfaccia utente e nei generatori di query come elenco a discesa.
 
-Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 +++
 
 +++**Visualizzazione Esplora risorse**
@@ -375,7 +363,7 @@ Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campai
 La visualizzazione Esplora risorse è una visualizzazione gerarchica delle cartelle che contengono gli artefatti e i dati di Adobe Campaign. Tieni presente che il sistema di cartelle in Adobe Campaign non funziona come una visualizzazione ad albero tipica, in quanto ogni cartella contiene dati di un tipo specifico, ad esempio Consegne, Flussi di lavoro o Offerte.
 
 
-Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 +++
 
@@ -422,7 +410,7 @@ Ulteriori informazioni sul filtro delle dimensioni sono disponibili nella [docum
 
 Una cartella è un elemento di visualizzazione di Esplora risorse che contiene record di database di un tipo di dati specifico. L&#39;eccezione è rappresentata dal tipo di cartella Generic utilizzato come elemento organizzativo e che non contiene dati, ma solo altre cartelle.
 
-Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 +++
 
@@ -430,7 +418,7 @@ Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentaz
 
 La visualizzazione Cartella è uno speciale tipo di cartella di Explorer utilizzato per visualizzare tutti i record di un tipo di dati selezionato, indipendentemente dalla cartella a cui appartiene. Le visualizzazioni cartelle vengono utilizzate come strumento amministrativo per gestire i dati partizionati o i dati distribuiti tra più cartelle.
 
-Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 +++
 
 +++**Forms**
@@ -583,7 +571,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 La struttura di navigazione è la navigazione principale nella vista Esplora di Adobe Campaign. La struttura di spostamento funziona come un browser di file, ad esempio Esplora risorse. Le cartelle possono contenere sottocartelle. Selezionando un nodo viene visualizzata la vista corrispondente al nodo. La vista visualizzata è un elenco associato a uno schema e un modulo di input per modificare la riga selezionata. È possibile personalizzare la struttura di navigazione e impostare le autorizzazioni per le cartelle.
 
-Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 +++
 
@@ -593,7 +581,7 @@ Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentaz
 
 All’interno della campagna, del programma o del piano, gli operatori possono indicare un elenco di obiettivi. Si tratta di valori quantificati da raggiungere. Al termine della campagna, del programma o del piano, il modulo MRM consente agli operatori di confrontare gli obiettivi e i risultati in report dedicati.
 
-Ulteriori informazioni sugli obiettivi nella [documentazione di Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/mrm/creating-and-managing-tasks.html?lang=it#expenses-and-revenues){target=_blank}.
+Ulteriori informazioni sugli obiettivi nella [documentazione di Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/mrm/creating-and-managing-tasks.html#expenses-and-revenues){target=_blank}.
 +++
 
 +++**Catalogo offerte**
@@ -775,7 +763,7 @@ Ulteriori informazioni su [Esportazione/importazione pacchetto](../../platform/u
 
 Nella palette del flusso di lavoro vengono visualizzate le attività disponibili che possono essere aggiunte a un flusso di lavoro. Questo componente viene visualizzato in un formato a schede con le attività del flusso di lavoro raggruppate logicamente per il loro utilizzo. Le attività disponibili nella palette sono determinate dai componenti aggiuntivi installati nell’istanza Campaign e dal contesto di visualizzazione del flusso di lavoro.
 
-Ulteriori informazioni sulla palette sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=it#add-and-link-activities){target="_blank"}.
+Ulteriori informazioni sulla palette sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html#add-and-link-activities){target="_blank"}.
 +++
 
 +++**Monitoraggio delle prestazioni**
@@ -789,14 +777,14 @@ Ulteriori informazioni sul [Monitoraggio delle prestazioni](../../production/usi
 
 Adobe Campaign offre blocchi di personalizzazione incorporati che puoi inserire nelle consegne. Sono dinamici, personalizzati e contengono un rendering specifico. Ad esempio, puoi aggiungere un logo, un messaggio di auguri o un collegamento alla pagina mirror. Per impostazione predefinita, sono disponibili diversi blocchi di personalizzazione. Puoi anche definire blocchi di personalizzazione personalizzati che ti consentiranno di ottimizzare la personalizzazione della consegna. I dati effettivi vengono inseriti in ogni messaggio generato durante la fase di analisi della consegna.
 
-Ulteriori informazioni sui blocchi di personalizzazione nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=it){target="_blank"}.
+Ulteriori informazioni sui blocchi di personalizzazione nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
 +++
 
 +++**Campo Personalization**
 
 Un campo di personalizzazione è un singolo riferimento a un campo dati utilizzato per personalizzare una consegna per un destinatario specifico. Il valore effettivo dei dati viene inserito durante la fase di analisi della consegna.
 
-Ulteriori informazioni sui campi di personalizzazione sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-fields.html?lang=it){target="_blank"}.
+Ulteriori informazioni sui campi di personalizzazione sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-fields.html){target="_blank"}.
 +++
 
 +++**Variabili Personalization**
@@ -817,7 +805,7 @@ Ulteriori informazioni sui piani sono disponibili nella [documentazione di Campa
 
 I filtri predefiniti sono query salvate per il riutilizzo. L’utilizzo di filtri predefiniti aumenta la produttività (perché vengono creati una sola volta), aiuta a creare coerenza (perché tutti gli addetti al marketing possono utilizzarli) e riduce le competenze richieste dall’addetto al marketing perché può utilizzare codice o logica che potrebbe non essere in grado di creare.
 
-Per ulteriori informazioni sui filtri, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Per ulteriori informazioni sui filtri, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 +++
 
 <!--
@@ -935,14 +923,14 @@ Ulteriori informazioni su [Servizi](../../delivery/using/about-services-and-subs
 
 Nel Pannello di controllo, puoi interagire con tutti i server SFTP collegati alle istanze di Campaign a cui hai accesso. Il Pannello di controllo Campaign ti consente di eseguire azioni sui server SFTP, ad esempio monitorare la capacità di archiviazione, gestire gli indirizzi IP per l’inserimento nell’elenco Consentiti e gestire le chiavi SSH pubbliche.
 
-Ulteriori informazioni sulla [gestione SFTP](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=it).
+Ulteriori informazioni sulla [gestione SFTP](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
 +++
 
 +++**Attività dei servizi di abbonamento**
 
 L’attività del flusso di lavoro Subscription services ti consente di creare o eliminare un abbonamento a un servizio di informazioni per il gruppo specificato nella transizione.
 
-Ulteriori informazioni sull&#39;attività Subscription services sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html?lang=it){target="_blank"}.
+Ulteriori informazioni sull&#39;attività Subscription services sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html){target="_blank"}.
 +++
 
 +++**Approvazione target**
@@ -951,14 +939,14 @@ Ulteriori informazioni sull&#39;attività Subscription services sono disponibili
 
 L’approvazione del target è il processo in base al quale un operatore o un gruppo di operatori separato approva il target finale di una consegna (dopo che la fase di analisi ha generato il target) prima che la consegna possa essere inviata.
 
-Ulteriori informazioni sull&#39;attività di approvazione di Target sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/approval.html?lang=it){target="_blank"}.
+Ulteriori informazioni sull&#39;attività di approvazione di Target sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/approval.html){target="_blank"}.
 +++
 
 +++**Targeting dei dati**
 
 I dati di destinazione sono i dati memorizzati nella tabella di lavoro (transizione) di un flusso di lavoro. Questi dati sono disponibili all’interno della consegna per la personalizzazione del contenuto della consegna o per definire la logica degli elementi dinamici della consegna.
 
-Ulteriori informazioni sui dati di destinazione sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html?lang=it#target-data){target="_blank"}.
+Ulteriori informazioni sui dati di destinazione sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html#target-data){target="_blank"}.
 +++
 
 +++**Mappatura del target**
@@ -980,7 +968,7 @@ Ulteriori informazioni sulle attività di targeting sono disponibili nella [docu
 
 La dimensione di targeting è il tipo di dati prodotto (restituito) da una query o da altre attività del flusso di lavoro. Adobe Campaign restituisce solo la chiave primaria delle righe del database dei partecipanti, indipendentemente dalla query utilizzata per ottenerle.
 
-Per ulteriori informazioni sulla dimensione di targeting, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html?lang=it){target="_blank"}.
+Per ulteriori informazioni sulla dimensione di targeting, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html){target="_blank"}.
 +++
 
 +++**Attività attività**
@@ -1046,7 +1034,7 @@ Ulteriori informazioni sulla [messaggistica transazionale](../../message-center/
 
 Le campagne attivate sono campagne eseguite quando viene ricevuta una richiesta API in un flusso di lavoro. Le chiamate API vengono utilizzate da un’attività Signal nel flusso di lavoro che avvia l’esecuzione del flusso di lavoro.
 
-Ulteriori informazioni sulle campagne attivate sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/external-signal.html?lang=it){target="_blank"}.
+Ulteriori informazioni sulle campagne attivate sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/external-signal.html){target="_blank"}.
 +++
 
 <!--
@@ -1106,7 +1094,7 @@ Ulteriori informazioni su [Flussi di lavoro](../../workflow/using/about-workflow
 
 Il giornale di registrazione del flusso di lavoro è il registro di esecuzione passo passo di un flusso di lavoro. Contiene tutta la cronologia o l’audit trail del flusso di lavoro. Viene utilizzato a scopo di sviluppo, risoluzione dei problemi o debug.
 
-Ulteriori informazioni sul giornale di registrazione del flusso di lavoro sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=it){target="_blank"}.
+Ulteriori informazioni sul giornale di registrazione del flusso di lavoro sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
 +++
 
 +++**Tabella di lavoro**

@@ -8,9 +8,10 @@ content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
 TQID: https://experienceleague.adobe.com/mAyeOK618LvVCdtRqLykUECmgWZce8bKoMiT-WIOe1Q
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
+subfeature_v2: []
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 1077
 ht-degree: 1%
@@ -58,7 +59,7 @@ L’attività Enrichment ti consente di aggiungere offerte o collegamenti alle o
 
 >[!NOTE]
 >
->Per ulteriori informazioni sull&#39;attività di arricchimento, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=it){target="_blank"}.
+>Per ulteriori informazioni sull&#39;attività di arricchimento, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}.
 
 Ad esempio, puoi arricchire i dati di una query del destinatario prima di una consegna.
 
@@ -71,7 +72,7 @@ Esistono due metodi per specificare le proposte di offerta.
 
 ### Specifica di un’offerta o di una chiamata al motore di offerta {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
-Dopo aver configurato la query (consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=it){target="_blank"}):
+Dopo aver configurato la query (consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}):
 
 1. Aggiungi e apri un’attività di arricchimento.
 1. Nella scheda **[!UICONTROL Enrichment]**, selezionare **[!UICONTROL Add data]**.

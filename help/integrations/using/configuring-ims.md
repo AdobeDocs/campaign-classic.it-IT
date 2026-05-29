@@ -8,10 +8,12 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+feature_v2: []
+subfeature_v2: id: cbcf4d90-26be-46e2-b16a-aebc529dc41eid: df0d6518-6f49-46e2-b46e-3bcc513f553fid: eb007b6d-6e57-46ab-9485-3f24d6102304id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 11%
+source-wordcount: 349
+ht-degree: 12%
 
 ---
 
@@ -20,12 +22,12 @@ ht-degree: 11%
 >[!IMPORTANT]
 >
 >In qualità di utente di Campaign hosted o managed services, l’implementazione Adobe IMS è di proprietà di Adobe. I passaggi descritti di seguito si applicano solo ai clienti on-premise e ibridi.
-> L’implementazione di Adobe IMS deve essere eseguita solo da amministratori tecnici Adobe. Contatta il rappresentante Adobe per avviare il processo di implementazione.
+> L&#39;implementazione di Adobe IMS deve essere eseguita solo da amministratori tecnici Adobe. Contatta il rappresentante Adobe per avviare il processo di implementazione.
 
 ## Prerequisiti {#prerequisites}
 
 * È necessario disporre di un nome e di un ID organizzazione Adobe Experience Cloud. Per trovare il tuo ID organizzazione, fai riferimento a [questa pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=it){_blank}.
-* Devi aggiungere gli utenti in Experience Cloud. Per ulteriori informazioni, consulta [questa pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=it){_blank}.
+* Devi aggiungere gli utenti in Experience Cloud. Per ulteriori informazioni, consulta [questa pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html){_blank}.
 
 >[!NOTE]
 >
@@ -49,7 +51,7 @@ Configura l&#39;account esterno **Adobe Experience Cloud** in **[!UICONTROL Admi
 
 Immettere le seguenti informazioni:
 
-* Informazioni di connessione per il server IMS utilizzato (ID e segreto). Queste informazioni sono fornite dal team di Assistenza clienti di Adobe. Per ulteriori informazioni, consultare le [Domande frequenti per gli amministratori di Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html?lang=it).
+* Informazioni di connessione per il server IMS utilizzato (ID e segreto). Queste informazioni sono fornite dal team di Assistenza clienti di Adobe. Per ulteriori informazioni, consultare le [Domande frequenti per gli amministratori di Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html).
 
   L&#39;indirizzo **[!UICONTROL Callback server]** deve essere specificato in **https**. Questo campo corrisponde all’URL di accesso dell’istanza di Adobe Campaign.
 
