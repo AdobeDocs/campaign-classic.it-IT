@@ -7,24 +7,16 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 TQID: https://experienceleague.adobe.com/Xq9y8r6xU-hypq1Eeo9ijaiGng7qqkWVqiCXW5fYx2c
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
 feature_v2: []
-subfeature_v2:
-  - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
-  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+subfeature_v2: id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 376
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +42,7 @@ _31 marzo 2026_
 
 >[!NOTE]
 >
-> Le correzioni elencate di seguito sono state implementate progressivamente nelle build 7.4.3 successive. Passa al **[!UICONTROL Help > About...]** [menu](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) per verificare di disporre della build 9394@28aaec9 più recente. Per ulteriori informazioni, contatta il rappresentante Adobe.
+> Le correzioni elencate di seguito sono state implementate progressivamente nelle build 7.4.3 successive.Passa al [menu](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) **[!UICONTROL Help > About...]** per verificare di disporre della build più recente, 9394@28aaec9.Per ulteriori informazioni, contatta il rappresentante Adobe.
 
 * È stato risolto un problema a causa del quale il componente codice a barre consentiva un parametro di altezza non limitato, che poteva comportare una vulnerabilità di sicurezza. (NEO-89984)
 * È stato risolto un problema a causa del quale nei campi di enumerazione presenti negli elenchi creati tramite flussi di lavoro mancavano gli attributi dei nomi temporanei, comportando la visualizzazione nell’interfaccia di etichette di enumerazione errate o vuote. (NEO-91158)
@@ -63,8 +55,8 @@ _31 marzo 2026_
 <!-- BUILD 7.0.9394.28aaec9 -->
 
 * È stato risolto un problema a causa del quale le statistiche di consegna non venivano ricalcolate totalmente per alcune consegne, influendo in particolare sugli indicatori di completamento. (NEO-88106) <!-- moved from original 7.4.3 GA Fixes section -->
-* È stato risolto un problema che poteva causare l’arresto anomalo della console client all’apertura di alcuni flussi di lavoro che facevano riferimento a uno schema di targeting a monte mancante. (NEO-28727)
-* È stato risolto un problema che impediva l’identificazione della versione della console client dopo un avvio non riuscito, perché il file di versione mancava dal pacchetto di installazione. (NEO-94798)
+* È stato risolto un problema che poteva causare l’arresto anomalo della console client all’apertura di determinati flussi di lavoro che facevano riferimento a uno schema di targeting a monte mancante.(NEO-28727)
+* È stato risolto un problema che impediva l’identificazione della versione della console client dopo un avvio non riuscito, perché il file di versione non era presente nel pacchetto di installazione.(NEO-94798)
 
 <!--
 other fixes - ommitted from release notes
