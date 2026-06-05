@@ -26,9 +26,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 2384
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ A partire da questa versione, i collegamenti di tracciamento nelle e-mail già i
 * È stato corretto un errore nel flusso di lavoro di pulizia del database che si verificava quando una consegna veniva eliminata prima delle relative bozze di consegna. (NEO-48114)
 * È stato risolto un problema che si verificava durante la connessione alla console client: gli aggiornamenti recenti sulla verifica TLS causavano un errore di connessione. (NEO-50488)
 * È stato risolto un problema relativo all’autenticazione proxy HTTP dopo l’aggiornamento di Campaign alla versione 7.3.1. Le richieste HTTP nei flussi di lavoro di Campaign non riuscivano con `error 407 – proxy auth required is returned`. (NEO-49624)
-* È stato risolto un errore intermittente con la decrittografia GPG nelle attività del flusso di lavoro **Script**. Messaggio di errore associato: `gpg: decryption failed: No secret key`. (NEO-50257)
+* È stato risolto un errore sporadico che si verificava con la decrittografia GPG nelle attività **Script** del flusso di lavoro, con messaggio di errore: `gpg: decryption failed: No secret key`. (NEO-50257)
   <!--* Workflow temporary tables now have a primary index in Teradata with a Federated Data Access (FDA) connection. (NEO-62575)-->
 
 

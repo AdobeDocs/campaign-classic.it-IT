@@ -22,9 +22,9 @@ subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 376
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ _31 marzo 2026_
 
 >[!NOTE]
 >
-> Le correzioni elencate di seguito sono state implementate progressivamente nelle build 7.4.3 successive. Passa al **[!UICONTROL Help > About...]** [menu](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) per verificare di disporre della build 9394@28aaec9 più recente. Per ulteriori informazioni, contatta il rappresentante Adobe.
+> Le correzioni elencate di seguito sono state implementate progressivamente nelle build 7.4.3 successive.Passa al [menu](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) **[!UICONTROL Help > About...]** per verificare di disporre della build più recente, 9394@28aaec9.Per ulteriori informazioni, contatta il rappresentante Adobe.
 
 * È stato risolto un problema a causa del quale il componente codice a barre consentiva un parametro di altezza non limitato, che poteva comportare una vulnerabilità di sicurezza. (NEO-89984)
 * È stato risolto un problema a causa del quale nei campi di enumerazione presenti negli elenchi creati tramite flussi di lavoro mancavano gli attributi dei nomi temporanei, comportando la visualizzazione nell’interfaccia di etichette di enumerazione errate o vuote. (NEO-91158)
@@ -63,8 +63,8 @@ _31 marzo 2026_
 <!-- BUILD 7.0.9394.28aaec9 -->
 
 * È stato risolto un problema a causa del quale le statistiche di consegna non venivano ricalcolate totalmente per alcune consegne, influendo in particolare sugli indicatori di completamento. (NEO-88106) <!-- moved from original 7.4.3 GA Fixes section -->
-* È stato risolto un problema che poteva causare l’arresto anomalo della console client all’apertura di alcuni flussi di lavoro che facevano riferimento a uno schema di targeting a monte mancante. (NEO-28727)
-* È stato risolto un problema che impediva l’identificazione della versione della console client dopo un avvio non riuscito, perché il file di versione mancava dal pacchetto di installazione. (NEO-94798)
+* È stato risolto un problema che poteva causare l’arresto anomalo della console client all’apertura di determinati flussi di lavoro che facevano riferimento a uno schema di targeting a monte mancante.(NEO-28727)
+* È stato risolto un problema che impediva l’identificazione della versione della console client dopo un avvio non riuscito, perché il file di versione non era presente nel pacchetto di installazione.(NEO-94798)
 
 <!--
 other fixes - ommitted from release notes

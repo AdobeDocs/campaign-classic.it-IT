@@ -25,9 +25,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 2661
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -176,7 +176,7 @@ _5 giugno 2021_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Ora puoi collegare la tua istanza Adobe Campaign Classic al database esterno Google Big Query. Questa connessione viene gestita tramite un nuovo account esterno.
+<td> <p>Ora puoi connettere la tua istanza Adobe Campaign Classic al database esterno Google Big Query. Questa connessione è gestita tramite un nuovo account esterno.
 </p>
 <p>Per ulteriori informazioni consulta la <a href="../../installation/using/configure-fda-google-big-query.md">documentazione dettagliata</a>.</p>
 </td> 
