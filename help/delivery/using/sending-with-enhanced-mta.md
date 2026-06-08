@@ -6,28 +6,14 @@ feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
 TQID: https://experienceleague.adobe.com/d6tF02X7K9j9mDk90wyH-3iXm8iBZzMo1da2PPkYHGs
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: b631758a-142d-425f-b9aa-f756d85cb979
-  - id: c858a28b-ea19-49b0-8d48-828717fad89c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-subfeature_v2:
-  - id: e95a583b-fcfa-4524-8666-46a29c828119
-  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
-  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
-  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
+source-git-commit: c8d13469884744554fd504fed8842dd0c9ab5feb
 workflow-type: tm+mt
-source-wordcount: 1400
+source-wordcount: 1393
 ht-degree: 1%
 
 ---
@@ -56,9 +42,9 @@ L’implementazione dell’MTA avanzato potrebbe influire su alcune delle funzio
 
 **Cos&#39;è l&#39;MTA avanzato?**
 
-È ora possibile aggiornare Adobe Campaign per utilizzare un nuovo MTA (Mail Transfer Agent) che esegue l&#39;MTA dell&#39;e-mail commerciale di SparkPost denominato **Momentum**.
+È ora possibile aggiornare Adobe Campaign per utilizzare l&#39;**MTA avanzato** (Mail Transfer Agent), un motore di consegna e-mail ad alte prestazioni.
 
-Momentum rappresenta una tecnologia MTA innovativa e ad alte prestazioni che include una gestione dei messaggi non recapitati più intelligente e una funzionalità di ottimizzazione automatizzata della consegna dei messaggi che consente ai mittenti di raggiungere e mantenere tassi di consegna della casella in entrata ottimali. <!--More than 37% of the world's business email is sent using SparkPost's MTA technology.-->
+L’MTA avanzato include una gestione più intelligente dei messaggi non recapitati e una funzionalità di ottimizzazione automatizzata della consegna che consente ai mittenti di raggiungere e mantenere tassi di consegna della casella in entrata ottimali.
 
 **Quali sono i vantaggi?**
 
@@ -157,13 +143,13 @@ Per ulteriori informazioni sul periodo di validità, consulta questa [pagina](co
 ### Firma DKIM
 
 La firma di autenticazione dell’e-mail DKIM (DomainKeys Identified Mail) viene eseguita dall’MTA avanzato. La firma DKIM da parte dell’MTA nativo di Campaign verrà disattivata all’interno della tabella di gestione dei domini come parte dell’aggiornamento dell’MTA avanzato.
-Per ulteriori informazioni su DKIM, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=it#authentication).
+Per ulteriori informazioni su DKIM, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ### Reporting sul successo della consegna
 
-Nella visualizzazione **[!UICONTROL Summary]** di una consegna e-mail [dashboard](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}, la percentuale di **[!UICONTROL Success]** inizia al 100% e poi si abbassa progressivamente durante il [periodo di validità](communication-channels.md) della consegna, man mano che i mancati recapiti permanenti e permanenti vengono segnalati dall’MTA avanzato a Campaign.
+Nella visualizzazione **[!UICONTROL Summary]** di una consegna e-mail [dashboard](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}, la percentuale di **[!UICONTROL Success]** inizia al 100% e poi si abbassa progressivamente durante il [periodo di validità](communication-channels.md) della consegna, man mano che i mancati recapiti permanenti e permanenti vengono segnalati dall’MTA avanzato a Campaign.
 
-In effetti, tutti i messaggi vengono visualizzati come **[!UICONTROL Sent]** nei [registri di invio](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} non appena vengono inoltrati correttamente da Campaign all’MTA avanzato. Rimangono in tale stato a meno che o fino a quando un [mancato recapito](delivery-failures-quarantine.md#delivery-failure-types-and-reasons) per quel messaggio non viene comunicato dall&#39;MTA avanzato a Campaign.
+In effetti, tutti i messaggi vengono visualizzati come **[!UICONTROL Sent]** nei [registri di invio](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} non appena vengono inoltrati correttamente da Campaign all’MTA avanzato. Rimangono in tale stato a meno che o fino a quando un [mancato recapito](delivery-failures-quarantine.md#delivery-failure-types-and-reasons) per quel messaggio non viene comunicato dall&#39;MTA avanzato a Campaign.
 
 Quando i messaggi non recapitabili vengono segnalati dall&#39;MTA avanzato, il loro stato cambia da **[!UICONTROL Sent]** a **[!UICONTROL Failed]** e la percentuale di **[!UICONTROL Success]** viene diminuita di conseguenza.
 
