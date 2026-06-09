@@ -18,10 +18,10 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
-workflow-type: ht
-source-wordcount: 326
-ht-degree: 100%
+source-git-commit: a35dcdddded4483beefc126ee3d603bab36bf9c9
+workflow-type: tm+mt
+source-wordcount: 330
+ht-degree: 93%
 
 ---
 
@@ -36,9 +36,9 @@ Dai un’occhiata ai più recenti miglioramenti apportati al prodotto e alla doc
 >[!BEGINTABS]
 
 
->[!TAB La versione di aprile 2025 è ora disponibile.]
+>[!TAB La versione di giugno 2026 è live!]
 
-Scopri gli aggiornamenti, i miglioramenti e le correzioni in arrivo con Campaign Classic v7.4.2 - versione di aprile 2025.
+La build Campaign Classic v7.4.3 - giugno 2026 viene fornita con aggiornamenti di sicurezza in aggiunta alla versione precedente.
 
 [![immagine](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
