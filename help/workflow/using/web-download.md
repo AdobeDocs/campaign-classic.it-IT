@@ -17,7 +17,7 @@ subfeature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 491
 ht-degree: 1%
@@ -83,3 +83,4 @@ L&#39;attività **Download Web** avvia il download di un file su un URL esplicit
 ## Parametri di output {#output-parameters}
 
 * nome file: nome completo del file scaricato.
+

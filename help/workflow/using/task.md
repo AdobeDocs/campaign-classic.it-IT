@@ -13,7 +13,7 @@ subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 103
 ht-degree: 3%
@@ -37,3 +37,4 @@ Per informazioni su come configurare e gestire un&#39;attività, vedere la [docu
 ![](assets/wkf_task_activity.png)
 
 L&#39;opzione **[!UICONTROL Resources]** consente di definire più operatori e una pianificazione di approvazione per l&#39;attività. Se la persona che approva rifiuta, ciò non comporta il rifiuto dell’attività stessa.
+

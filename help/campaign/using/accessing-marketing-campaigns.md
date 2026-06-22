@@ -18,7 +18,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 subfeature_v2:
   - id: f863efa9-030c-4466-a2b8-a52aea6b722c
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 1198
 ht-degree: 4%
@@ -206,3 +206,4 @@ Le approvazioni (ad esempio di un target o di un contenuto di consegna) possono 
 ![](assets/campaign_web_interface_validation.png)
 
 Puoi anche utilizzare il collegamento contenuto nei messaggi di notifica. Per ulteriori informazioni, consulta [Verifica e approvazione delle consegne](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
+
