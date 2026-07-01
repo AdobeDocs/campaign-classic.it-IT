@@ -21,10 +21,10 @@ feature_v2: []
 subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-source-git-commit: a35dcdddded4483beefc126ee3d603bab36bf9c9
+source-git-commit: a9e48513ed4ceb2650d0eeff18563a010a148c80
 workflow-type: tm+mt
-source-wordcount: 415
-ht-degree: 93%
+source-wordcount: 498
+ht-degree: 81%
 
 ---
 
@@ -34,13 +34,37 @@ In questa pagina sono elencate nuove funzionalità, miglioramenti e correzioni i
 
 ## Versione 7.4.3 {#release-7-4-3}
 
-### Build 9396 {#build-9396}
+### Build 9397 {#build-9397}
 
 [!BADGE Disponibilità generale]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Disponibilità generale"}
 
-_9 giugno 2026_
+_30 giugno 2026_
+
+#### Miglioramenti di sicurezza {#security-7-4-3-9397}
 
 Questa build include correzioni di sicurezza. Si tratta della build General Availability consigliata che sostituisce le precedenti build di Campaign Classic v7.
+
+#### Altre modifiche {#changes-7-4-3-9397}
+
+Per impostazione predefinita, webForm.jsp ora ignora i parametri `ctx` forniti dal client. Questo è controllato dal parametro `disableCtxInWebForm` che è impostato su &quot;true&quot; per impostazione predefinita.
+
+Se le richieste webForm attualmente trasmettono un parametro `ctx` in, è possibile riabilitare temporaneamente questo comportamento aggiungendo quanto segue &lt;web> elemento della configurazione-&lt;instance>file .xml. Pianifica la graduale eliminazione di questo utilizzo.
+
+```
+<web>
+  ...
+  <jsp disableCtxInWebForm="false" />
+  ...
+</web>
+```
+
+### Build 9396 {#build-9396}
+
+[!BADGE Obsoleta]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Obsoleta"}
+
+_9 giugno 2026_
+
+Questa build include correzioni di sicurezza.
 
 ### Build 9394 {#build-9394}
 
