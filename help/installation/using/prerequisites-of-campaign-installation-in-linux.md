@@ -9,16 +9,13 @@ content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
 TQID: https://experienceleague.adobe.com/SFdh5L8-oHjpH7rIhDxOQZqw7AukXtkv3lJHZu2oTHQ
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11
 feature_v2: []
 subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: d711ea40185e9860ea20773ae1dfebfc7cc3e4d0
 workflow-type: tm+mt
-source-wordcount: 854
+source-wordcount: 906
 ht-degree: 2%
 
 ---
@@ -56,6 +53,34 @@ Per installare Adobe Campaign in Linux, assicurati di disporre delle librerie ne
   Per le distribuzioni RHEL, è richiesta la versione 1.0 di OpenSSL.
 
 * Per utilizzare Adobe Campaign, è necessario che sia installata la libreria **libicu**.
+
+* Nelle distribuzioni RHEL, **xalan-c** è obbligatorio. Installarlo tramite `epel-release`:
+
+  ```
+  dnf install epel-release
+  dnf install xalan-c
+  ```
+
+### Dipendenze di esportazione report PDF {#pdf-export-dependencies}
+
+Lo strumento **wkhtmltopdf** viene utilizzato per esportare i report in formato PDF. Richiede i seguenti pacchetti:
+
+* **libjpeg**
+* **xvfb**
+
+Se non si utilizza l’esportazione dei rapporti di PDF, non è necessario installare questi pacchetti.
+
+Per le distribuzioni RHEL:
+
+```
+dnf install libjpeg xvfb
+```
+
+Su Debian:
+
+```
+apt-get install libjpeg-dev xvfb
+```
 
 ### SELinux {#selinux}
 
