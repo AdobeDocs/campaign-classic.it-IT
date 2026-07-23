@@ -42,13 +42,13 @@ _30 giugno, 2026_
 
 #### Miglioramenti di sicurezza {#security-7-4-3-9397}
 
-Questa build include correzioni di sicurezza.È la build in disponibilità generale consigliata che sostituisce le precedenti build di Campaign Classic v7.
+Questa build include correzioni di sicurezza. È la build in disponibilità generale consigliata che sostituisce le precedenti build di Campaign Classic v7.
 
 #### Altre modifiche {#changes-7-4-3-9397}
 
-Per impostazione predefinita, webForm.jsp ora ignora i parametri `ctx` forniti dal client.Questo viene controllato dal parametro `disableCtxInWebForm`, che è impostato su “true” per impostazione predefinita.
+Per impostazione predefinita, webForm.jsp ora ignora i parametri `ctx` forniti dal client. Questo viene controllato dal parametro `disableCtxInWebForm`, che è impostato su “true” per impostazione predefinita.
 
-Se le richieste webForm attualmente trasmettono un parametro `ctx` in, è possibile riabilitare temporaneamente questo comportamento aggiungendo quanto segue<web>all’elemento del tuo file<instance>config.xmlPianifica la graduale eliminazione di questo utilizzo.
+Se le richieste webForm attualmente trasmettono un parametro `ctx` in, è possibile riabilitare temporaneamente questo comportamento aggiungendo quanto segue <web> all’elemento del tuo file <instance>config-.xml. Pianifica la graduale eliminazione di questo utilizzo.
 
 ```
 <web>
