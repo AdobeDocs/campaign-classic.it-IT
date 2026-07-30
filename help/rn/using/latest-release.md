@@ -21,10 +21,10 @@ feature_v2: []
 subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-source-git-commit: a9e48513ed4ceb2650d0eeff18563a010a148c80
-workflow-type: ht
-source-wordcount: 498
-ht-degree: 100%
+source-git-commit: 7aea93eee16cdcdae6c4bf2466ab12a0aaf6052e
+workflow-type: tm+mt
+source-wordcount: 631
+ht-degree: 78%
 
 ---
 
@@ -34,21 +34,33 @@ In questa pagina sono elencate nuove funzionalità, miglioramenti e correzioni i
 
 ## Versione 7.4.3 {#release-7-4-3}
 
+### Build 9398 {#build-9398}
+
+[!BADGE Disponibilità limitata]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Disponibilità limitata"}
+
+_29 luglio 2026_
+
+#### Miglioramenti di sicurezza {#security-7-4-3-9398}
+
+Adobe ha rilasciato aggiornamenti di sicurezza per Adobe Campaign Classic che affrontano vulnerabilità critiche. Invitiamo i clienti che utilizzano implementazioni on-premise e ibride a installare gli aggiornamenti il prima possibile. Le istanze ospitate da Adobe sono già state corrette e non richiedono alcuna azione da parte del cliente. Ulteriori informazioni sono disponibili nel [bollettino sulla sicurezza](https://helpx.adobe.com/security/products/campaign/apsb26-114.html){target="_blank"}.
+
+È necessario un [riavvio del server Adobe Campaign (nlserver)](../../production/using/usual-commands.md#restart-services) per caricare la build e completare la distribuzione. La correzione è attiva per impostazione predefinita dopo il riavvio.
+
 ### Build 9397 {#build-9397}
 
-[!BADGE Disponibilità generale]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Disponibilità generale"}
+[!BADGE Disponibilità limitata]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Disponibilità limitata"}
 
 _30 giugno, 2026_
 
 #### Miglioramenti di sicurezza {#security-7-4-3-9397}
 
-Questa build include correzioni di sicurezza. È la build in disponibilità generale consigliata che sostituisce le precedenti build di Campaign Classic v7.
+Questa build include correzioni di sicurezza e sostituisce le precedenti build di Campaign Classic v7. Questa build è ora obsoleta per le distribuzioni on-premise e ibride. I clienti in queste modalità di distribuzione sono invitati a installare gli aggiornamenti il prima possibile aggiornando la build a [Build 9398](#build-9398) o successiva.
 
 #### Altre modifiche {#changes-7-4-3-9397}
 
 Per impostazione predefinita, webForm.jsp ora ignora i parametri `ctx` forniti dal client. Questo viene controllato dal parametro `disableCtxInWebForm`, che è impostato su “true” per impostazione predefinita.
 
-Se le richieste webForm attualmente trasmettono un parametro `ctx` in, è possibile riabilitare temporaneamente questo comportamento aggiungendo quanto segue <web> all’elemento del tuo file <instance>config-.xml. Pianifica la graduale eliminazione di questo utilizzo.
+Se le richieste webForm attualmente trasmettono un parametro `ctx` in, è possibile riabilitare temporaneamente questo comportamento aggiungendo quanto segue <web> all’elemento del tuo file<instance>config-.xml. Pianifica la graduale eliminazione di questo utilizzo.
 
 ```
 <web>
