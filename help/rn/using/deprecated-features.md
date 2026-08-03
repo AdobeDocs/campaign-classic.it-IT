@@ -26,10 +26,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 1767
-ht-degree: 100%
+source-git-commit: c094a1fa9adf80708154b5532ae9fbeb18993b9f
+workflow-type: tm+mt
+source-wordcount: 1792
+ht-degree: 98%
 
 ---
 
@@ -64,9 +64,14 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
    <td><strong>Dettagli</strong></td>
   </tr>
   <tr>
+ <td>Connettore SMPP Netsize</td>
+ <td><p>Il connettore SMPP Netsize è ora obsoleto. È consigliabile eseguire la migrazione al connettore <strong>SMPP</strong> generico esteso. Per ulteriori informazioni, consulta <a href="../../delivery/using/unsupported-connector-migration.md">questa pagina</a>.</p>
+<p>Data prevista di rimozione: gennaio 2027</p>
+</td>
+</tr>
+<tr>
  <td>SDK precedente di Campaign (Neolane)</td>
  <td><p>L’SDK Campaign (Neolane) per applicazioni mobili è ora obsoleto. Al suo posto, puoi utilizzare l’SDK per Adobe Experience Platform Mobile configurando l’estensione Adobe Campaign nell’interfaccia utente di raccolta dati. L’SDK di Adobe Experience Platform Mobile aiuta ad potenziare soluzioni e servizi di Experience Cloud di Adobe nelle app mobili. La configurazione degli SDK viene gestita tramite l’interfaccia utente di raccolta dati, per un’impostazione flessibile e integrazioni estensibili basate su regole. Scopri come configurare il canale app mobile nella <a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/push/push-settings">Documentazione di Campaign v8</a>.</p>
-<p>Data prevista di rimozione: 31 luglio 2025 </p>
 </td>
 </tr>
 <tr>
@@ -206,11 +211,11 @@ La console del client di Adobe Campaign Classic non può più essere eseguita su
 
 * A partire dalla versione 19.1, Adobe Campaign non è più compatibile con i seguenti sistemi operativi.
 
-   * CentOs 6. [Ulteriori informazioni](https://wiki.centos.org/Download)
-   * Debian 7. [Ulteriori informazioni](https://wiki.debian.org/DebianReleases)
-   * RHEL 6.x [Ulteriori informazioni](https://access.redhat.com/support/policy/updates/errata)
-   * Windows Server 2008. [Ulteriori informazioni](https://support.microsoft.com/it-it/lifecycle/search/1163)
-   * SLES 11. [Ulteriori informazioni](https://www.suse.com/lifecycle)
+  * CentOs 6. [Ulteriori informazioni](https://wiki.centos.org/Download)
+  * Debian 7. [Ulteriori informazioni](https://wiki.debian.org/DebianReleases)
+  * RHEL 6.x [Ulteriori informazioni](https://access.redhat.com/support/policy/updates/errata)
+  * Windows Server 2008. [Ulteriori informazioni](https://support.microsoft.com/it-it/lifecycle/search/1163)
+  * SLES 11. [Ulteriori informazioni](https://www.suse.com/lifecycle)
 
 ### Server web {#web-server-eol}
 
