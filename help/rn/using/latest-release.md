@@ -21,10 +21,10 @@ feature_v2: []
 subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-source-git-commit: 7aea93eee16cdcdae6c4bf2466ab12a0aaf6052e
+source-git-commit: 5356cd82fdbec264ebbdebadc490bb6f6aa29f07
 workflow-type: tm+mt
-source-wordcount: 631
-ht-degree: 78%
+source-wordcount: 734
+ht-degree: 69%
 
 ---
 
@@ -34,9 +34,21 @@ In questa pagina sono elencate nuove funzionalità, miglioramenti e correzioni i
 
 ## Versione 7.4.3 {#release-7-4-3}
 
+### Build 9399 {#build-9399}
+
+[!BADGE Disponibilità generale]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Disponibilità generale"}
+
+_3 agosto 2026_
+
+#### Miglioramenti di sicurezza {#security-7-4-3-9399}
+
+Adobe ha rilasciato aggiornamenti di sicurezza per Adobe Campaign Classic che affrontano vulnerabilità critiche. Invitiamo i clienti che utilizzano implementazioni on-premise e ibride a installare gli aggiornamenti il prima possibile. Le istanze ospitate da Adobe sono già state corrette e non richiedono alcuna azione da parte del cliente. Ulteriori informazioni sono disponibili nel [bollettino sulla sicurezza](https://helpx.adobe.com/security/products/campaign/apsb26-120.html){target="_blank"}.
+
+È necessario un [riavvio del server Adobe Campaign (nlserver)](../../production/using/usual-commands.md#restart-services) per caricare la build e completare la distribuzione. La correzione è attiva per impostazione predefinita dopo il riavvio.
+
 ### Build 9398 {#build-9398}
 
-[!BADGE Disponibilità limitata]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Disponibilità limitata"}
+[!BADGE Obsoleta]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Obsoleta"}
 
 _29 luglio 2026_
 
@@ -48,7 +60,7 @@ Adobe ha rilasciato aggiornamenti di sicurezza per Adobe Campaign Classic che af
 
 ### Build 9397 {#build-9397}
 
-[!BADGE Disponibilità limitata]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Disponibilità limitata"}
+[!BADGE Obsoleta]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Obsoleta"}
 
 _30 giugno, 2026_
 
