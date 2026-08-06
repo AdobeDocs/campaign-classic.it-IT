@@ -7,24 +7,16 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 TQID: https://experienceleague.adobe.com/Xq9y8r6xU-hypq1Eeo9ijaiGng7qqkWVqiCXW5fYx2c
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
 feature_v2: []
-subfeature_v2:
-  - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
-  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+subfeature_v2: id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
 source-git-commit: 5356cd82fdbec264ebbdebadc490bb6f6aa29f07
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 734
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -42,9 +34,9 @@ _3 agosto 2026_
 
 #### Miglioramenti di sicurezza {#security-7-4-3-9399}
 
-Adobe ha rilasciato aggiornamenti di sicurezza per Adobe Campaign Classic che affrontano vulnerabilità critiche. Invitiamo i clienti che utilizzano implementazioni on-premise e ibride a installare gli aggiornamenti il prima possibile. Le istanze ospitate da Adobe sono già state corrette e non richiedono alcuna azione da parte del cliente. Ulteriori informazioni sono disponibili nel [bollettino sulla sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb26-120.html){target="_blank"}.
+Adobe ha rilasciato degli aggiornamenti di sicurezza per Adobe Campaign Classic che affrontano vulnerabilità critiche. Invitiamo i clienti che utilizzano implementazioni on-premise e ibride a installare gli aggiornamenti il prima possibile. Le istanze ospitate da Adobe sono già state corrette e non richiedono alcuna azione da parte del cliente. Ulteriori informazioni sono disponibili nel [bollettino sulla sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb26-120.html){target="_blank"}.
 
-È necessario un [riavvio del server Adobe Campaign (nlserver)](../../production/using/usual-commands.md#restart-services) per caricare la build e completare la distribuzione. La correzione è attiva per impostazione predefinita dopo il riavvio.
+È necessario un [riavvio del server Adobe Campaign (nlserver)](../../production/using/usual-commands.md#restart-services) per caricare la build e completare l’implementazione. Per impostazione predefinita la correzione è attiva dopo il riavvio.
 
 ### Build 9398 {#build-9398}
 
@@ -54,9 +46,9 @@ _29 luglio 2026_
 
 #### Miglioramenti di sicurezza {#security-7-4-3-9398}
 
-Adobe ha rilasciato aggiornamenti di sicurezza per Adobe Campaign Classic che affrontano vulnerabilità critiche. Invitiamo i clienti che utilizzano implementazioni on-premise e ibride a installare gli aggiornamenti il prima possibile. Le istanze ospitate da Adobe sono già state corrette e non richiedono alcuna azione da parte del cliente. Ulteriori informazioni sono disponibili nel [bollettino sulla sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb26-114.html){target="_blank"}.
+Adobe ha rilasciato degli aggiornamenti di sicurezza per Adobe Campaign Classic che affrontano vulnerabilità critiche. Invitiamo i clienti che utilizzano implementazioni on-premise e ibride a installare gli aggiornamenti il prima possibile. Le istanze ospitate da Adobe sono già state corrette e non richiedono alcuna azione da parte del cliente. Ulteriori informazioni sono disponibili nel [bollettino sulla sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb26-114.html){target="_blank"}.
 
-È necessario un [riavvio del server Adobe Campaign (nlserver)](../../production/using/usual-commands.md#restart-services) per caricare la build e completare la distribuzione. La correzione è attiva per impostazione predefinita dopo il riavvio.
+È necessario un [riavvio del server Adobe Campaign (nlserver)](../../production/using/usual-commands.md#restart-services) per caricare la build e completare l’implementazione. Per impostazione predefinita la correzione è attiva dopo il riavvio.
 
 ### Build 9397 {#build-9397}
 
@@ -66,7 +58,7 @@ _30 giugno, 2026_
 
 #### Miglioramenti di sicurezza {#security-7-4-3-9397}
 
-Questa build include correzioni di sicurezza e sostituisce le precedenti build di Campaign Classic v7. Questa build è ora obsoleta per le distribuzioni on-premise e ibride. I clienti in queste modalità di distribuzione sono invitati a installare gli aggiornamenti il prima possibile aggiornando la build a [Build 9398](#build-9398) o successiva.
+La build include correzioni di sicurezza e sostituisce le precedenti build di Campaign Classic v7. La build è ora obsoleta per le implementazioni on-premise e ibride. I clienti in queste modalità di implementazione sono invitati a installare gli aggiornamenti il prima possibile passando alla [Build 9398](#build-9398) o successiva.
 
 #### Altre modifiche {#changes-7-4-3-9397}
 

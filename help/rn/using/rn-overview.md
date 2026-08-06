@@ -7,23 +7,16 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 TQID: https://experienceleague.adobe.com/xs5sqsIqs9u-a9TrKo5EgFIpNTtxhy8y0-YIlDyUxp0
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080b
 feature_v2: []
-subfeature_v2:
-  - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
-  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+subfeature_v2: id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
 source-git-commit: e71b0658b2458b05799c28e79d871f025348962a
-workflow-type: tm+mt
-source-wordcount: 1045
-ht-degree: 88%
+workflow-type: ht
+source-wordcount: 1046
+ht-degree: 100%
 
 ---
 
@@ -70,9 +63,9 @@ Per questo motivo è fondamentale **eseguire la build stabile più recente** di 
 
 In qualità di cliente in hosting, puoi beneficiare automaticamente, senza alcun intervento da parte tua, dell’aggiornamento alla build stabile più recente. Ulteriori informazioni nella [sezione Aggiornamento annuale](#yearly-upgrade). Se effettui la migrazione da una build precedente, Adobe consiglia di eseguire prima l’aggiornamento a questa build.
 
-### Applicazione di patch di sicurezza per gli ambienti in hosting {#security-patching}
+### Applicazione di patch di sicurezza agli ambienti ospitati {#security-patching}
 
-Per proteggere l’integrità degli ambienti in hosting, Adobe si riserva il diritto di applicare patch di sicurezza critiche in qualsiasi momento e senza preavviso, al fine di correggere le vulnerabilità il più rapidamente possibile. Queste patch vengono distribuite senza alcuna interruzione del servizio. Questa pratica è coerente con gli standard di governance della sicurezza di Adobe, in base ai quali l’urgenza di correggere una vulnerabilità critica ha la precedenza sulla notifica preventiva.
+Per proteggere l’integrità degli ambienti ospitati, Adobe si riserva il diritto di applicare patch di sicurezza critiche in qualsiasi momento e senza preavviso, al fine di correggere le vulnerabilità il più rapidamente possibile. Queste patch vengono implementate senza alcuna interruzione del servizio. Tale pratica è coerente con gli standard di governance della sicurezza di Adobe, in base ai quali l’urgenza di correggere una vulnerabilità critica ha la precedenza sulla notifica preventiva.
 
 ## Consigli {#rn-recommendations}
 
