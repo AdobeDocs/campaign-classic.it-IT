@@ -8,10 +8,10 @@ user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: cc6c1969f230f3aac405b9169505a8bb39d41dfd
-workflow-type: ht
-source-wordcount: '2710'
-ht-degree: 100%
+source-git-commit: df5d87ca4fccb927f770957ec1c00157d14e95dc
+workflow-type: tm+mt
+source-wordcount: '2717'
+ht-degree: 99%
 
 ---
 
@@ -813,6 +813,7 @@ ht-degree: 100%
     + {hide-from-toc}[Aggiornamenti del sistema 2023](technotes/using/tech-stack-upgrade.md)
     + {hide-from-toc}[Aggiornamenti IMS](technotes/using/ims-updates.md)
     + {hide-from-toc}[Fine del ciclo di vita del supporto per TLS 1.0 e 1.1](technotes/using/eol-tls-support.md)
+    + {hide-from-toc}[Esegui la migrazione all&#39;API Adobe Analytics 2.0](technotes/using/analytics-2-migration.md)
   + E-mail e notifiche push{#technotes-email}
     + [Protezione della privacy della posta su Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
     + [Come aggiornare i mancati recapiti permanenti errati](delivery/using/update-bounce-qualification.md)
