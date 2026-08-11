@@ -53,8 +53,8 @@ Se ti trovi in una distribuzione **on-premise o ibrida**, completa i passaggi se
       ```
 
    1. Inserisci nell’elenco Consentiti Adobe Analytics sul server SFTP, poiché le esportazioni di remarketing vengono avviate solo da un set fisso di intervalli IP di Adobe:
-      * [Cerca gli indirizzi IP correnti della raccolta dati di Adobe Analytics](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses){target="_blank"} e aggiungili all&#39;elenco consentiti del tuo server SFTP. Le esportazioni di Analytics basate su FTP (inclusi i feed di dati) provengono solo da indirizzi IPv4 nelle aree di Londra, Oregon e Singapore.
-      * [Recupera la chiave pubblica di Adobe Analytics](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-18141){target="_blank"} e aggiungila al file `authorized_keys` sul tuo server SFTP in modo che Analytics possa eseguire l&#39;autenticazione.
+      * [Cerca gli indirizzi IP correnti della raccolta dati di Adobe Analytics](https://experienceleague.adobe.com/it/docs/core-services/interface/data-collection/ip-addresses){target="_blank"} e aggiungili all&#39;elenco consentiti del tuo server SFTP. Le esportazioni di Analytics basate su FTP (inclusi i feed di dati) provengono solo da indirizzi IPv4 nelle aree di Londra, Oregon e Singapore.
+      * [Recupera la chiave pubblica di Adobe Analytics](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-18141){target="_blank"} e aggiungila al file `authorized_keys` sul tuo server SFTP in modo che Analytics possa eseguire l&#39;autenticazione.
 1. Abilita il flag di funzione `FEATUREFLAG_USE_ANALYTICS_20_API` nell&#39;istanza creando o impostando `longvalue` dell&#39;opzione su `1` in [!UICONTROL xtkOption], in **[!UICONTROL Administration]> [!UICONTROL Platform] >[!UICONTROL Options]** nella struttura di Campaign Explorer. Questo passaggio è obbligatorio indipendentemente dal caso d’uso applicabile in precedenza.
 1. Convalida la migrazione esercitando ogni caso d’uso che si applica alla tua istanza (invia una campagna di test, verifica che gli indicatori arrivino in Analytics e conferma i dati di remarketing, se applicabile) prima di disattivare qualsiasi connettività precedente.
 
@@ -83,7 +83,7 @@ Per creare il set di classificazione:
 
 1. Fai clic su **[!UICONTROL Save]**.
 
-Questo set di classificazione verrà individuato automaticamente da Campaign al momento della configurazione dell’account esterno nel passaggio successivo. Per ulteriori informazioni sui set di classificazione, consulta la [documentazione di Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/create-set){target="_blank"}.
+Questo set di classificazione verrà individuato automaticamente da Campaign al momento della configurazione dell’account esterno nel passaggio successivo. Per ulteriori informazioni sui set di classificazione, consulta la [documentazione di Adobe Analytics](https://experienceleague.adobe.com/it/docs/analytics/components/classifications/sets/create-set){target="_blank"}.
 
 ## Hai bisogno di aiuto? {#need-help}
 
