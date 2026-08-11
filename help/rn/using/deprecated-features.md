@@ -27,9 +27,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: c094a1fa9adf80708154b5532ae9fbeb18993b9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1792
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -65,8 +65,8 @@ I clienti sono invitati a verificare se utilizzano la funzionalità nella distri
   </tr>
   <tr>
  <td>Connettore SMPP Netsize</td>
- <td><p>Il connettore SMPP Netsize è ora obsoleto. È consigliabile eseguire la migrazione al connettore <strong>SMPP</strong> generico esteso. Per ulteriori informazioni, consulta <a href="../../delivery/using/unsupported-connector-migration.md">questa pagina</a>.</p>
-<p>Data prevista di rimozione: gennaio 2027</p>
+ <td><p>Il connettore SMPP Netsize è ora obsoleto. Si consiglia di eseguire la migrazione al connettore <strong>SMPP generico esteso</strong>. Per ulteriori informazioni, consulta <a href="../../delivery/using/unsupported-connector-migration.md">questa pagina</a>.</p>
+<p>Data prevista di rimozione: luglio 2027</p>
 </td>
 </tr>
 <tr>

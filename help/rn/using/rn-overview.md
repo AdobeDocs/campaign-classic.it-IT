@@ -21,9 +21,9 @@ subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
 source-git-commit: e71b0658b2458b05799c28e79d871f025348962a
-workflow-type: tm+mt
-source-wordcount: 1045
-ht-degree: 88%
+workflow-type: ht
+source-wordcount: 1046
+ht-degree: 100%
 
 ---
 
@@ -70,9 +70,9 @@ Per questo motivo è fondamentale **eseguire la build stabile più recente** di 
 
 In qualità di cliente in hosting, puoi beneficiare automaticamente, senza alcun intervento da parte tua, dell’aggiornamento alla build stabile più recente. Ulteriori informazioni nella [sezione Aggiornamento annuale](#yearly-upgrade). Se effettui la migrazione da una build precedente, Adobe consiglia di eseguire prima l’aggiornamento a questa build.
 
-### Applicazione di patch di sicurezza per gli ambienti in hosting {#security-patching}
+### Applicazione di patch di sicurezza agli ambienti ospitati {#security-patching}
 
-Per proteggere l’integrità degli ambienti in hosting, Adobe si riserva il diritto di applicare patch di sicurezza critiche in qualsiasi momento e senza preavviso, al fine di correggere le vulnerabilità il più rapidamente possibile. Queste patch vengono distribuite senza alcuna interruzione del servizio. Questa pratica è coerente con gli standard di governance della sicurezza di Adobe, in base ai quali l’urgenza di correggere una vulnerabilità critica ha la precedenza sulla notifica preventiva.
+Per proteggere l’integrità degli ambienti ospitati, Adobe si riserva il diritto di applicare patch di sicurezza critiche in qualsiasi momento e senza preavviso, al fine di correggere le vulnerabilità il più rapidamente possibile. Queste patch vengono implementate senza alcuna interruzione del servizio. Tale pratica è coerente con gli standard di governance della sicurezza di Adobe, in base ai quali l’urgenza di correggere una vulnerabilità critica ha la precedenza sulla notifica preventiva.
 
 ## Consigli {#rn-recommendations}
 
