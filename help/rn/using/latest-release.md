@@ -44,7 +44,7 @@ Questa build include diversi miglioramenti del prodotto, correzioni di sicurezza
 
 #### Miglioramenti di sicurezza {#security-7-4-4-9400}
 
-Adobe ha rilasciato degli aggiornamenti di sicurezza per Adobe Campaign Classic che affrontano vulnerabilità critiche. Invitiamo i clienti che utilizzano implementazioni on-premise e ibride a installare gli aggiornamenti il prima possibile. Le istanze ospitate da Adobe sono già state corrette e non richiedono alcuna azione da parte del cliente. Ulteriori informazioni sono disponibili nel [bollettino sulla sicurezza](https://helpx.adobe.com/security/products/campaign/apsb26-123.html){target="_blank"}.
+Adobe ha rilasciato degli aggiornamenti di sicurezza per Adobe Campaign Classic che affrontano vulnerabilità critiche. Invitiamo i clienti che utilizzano implementazioni on-premise e ibride a installare gli aggiornamenti il prima possibile. Le istanze ospitate da Adobe sono già state corrette e non richiedono alcuna azione da parte del cliente. Ulteriori informazioni sono disponibili nel [bollettino sulla sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb26-123.html){target="_blank"}.
 
 Per caricare la build e completare la distribuzione è necessario riavviare il server Adobe Campaign (nlserver). Per impostazione predefinita la correzione è attiva dopo il riavvio.
 
