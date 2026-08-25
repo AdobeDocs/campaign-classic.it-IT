@@ -21,10 +21,10 @@ feature_v2: []
 subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-source-git-commit: 6d58d7b0af036eeae1297ef3162c8740be064402
+source-git-commit: 8717bd4451d64cbd7a2d760274a0bf1564c61d22
 workflow-type: tm+mt
-source-wordcount: 912
-ht-degree: 88%
+source-wordcount: 1017
+ht-degree: 86%
 
 ---
 
@@ -34,9 +34,21 @@ In questa pagina sono elencate nuove funzionalità, miglioramenti e correzioni i
 
 ## Versione 7.4.4 {#release-7-4-4}
 
-### Build 9400 {#build-9400}
+### Build 9401 {#build-9401}
 
 [!BADGE Disponibilità generale]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Disponibilità generale"}
+
+_25 agosto 2026_
+
+#### Miglioramenti di sicurezza {#security-7-4-4-9401}
+
+Adobe ha rilasciato degli aggiornamenti di sicurezza per Adobe Campaign Classic che affrontano vulnerabilità critiche. Invitiamo i clienti che utilizzano implementazioni on-premise e ibride a installare gli aggiornamenti il prima possibile. Le istanze ospitate da Adobe sono già state corrette e non richiedono alcuna azione da parte del cliente. Ulteriori informazioni sono disponibili nel [bollettino sulla sicurezza](https://helpx.adobe.com/security/products/campaign/apsb26-134.html){target="_blank"}.
+
+Per caricare la build e completare la distribuzione è necessario riavviare il server Adobe Campaign (nlserver). Per impostazione predefinita la correzione è attiva dopo il riavvio.
+
+### Build 9400 {#build-9400}
+
+[!BADGE Obsoleta]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Obsoleta"}
 
 _11 agosto 2026_
 
