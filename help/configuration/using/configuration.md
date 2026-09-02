@@ -28,7 +28,7 @@ ht-degree: 0%
 
 In qualità di utente esperto, puoi aggiungere cartelle nella struttura dell’Explorer e personalizzarla.
 
-Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 I tipi di cartelle utilizzati dall&#39;elenco di spostamento sono descritti in un documento XML conforme alla grammatica dello schema **xtk:navtree**.
 
@@ -104,7 +104,7 @@ I comandi vengono visualizzati nello stesso ordine in cui sono dichiarati nel do
 
 Un separatore di comandi consente di visualizzare una barra di separazione tra i comandi. È identificato dal valore **&#39;-&#39;** contenuto nell&#39;etichetta del comando.
 
-La presenza facoltativa del tag **`<soapcall>`** con i relativi parametri di input definisce la chiamata di un metodo SOAP da eseguire. Per ulteriori informazioni sull&#39;API di SOAP, consulta la [documentazione JSAPI di Campaign](https://experienceleague.adobe.com/en/tools/campaign-api).
+La presenza facoltativa del tag **`<soapcall>`** con i relativi parametri di input definisce la chiamata di un metodo SOAP da eseguire. Per ulteriori informazioni sull&#39;API di SOAP, consulta la [documentazione JSAPI di Campaign](https://experienceleague.adobe.com/it/tools/campaign-api).
 
 Il contesto del modulo può essere aggiornato all&#39;inizializzazione dal tag **`<enter>`**. Per ulteriori informazioni su questo tag, consulta la documentazione sui moduli di input.
 
@@ -277,7 +277,7 @@ I comandi vengono visualizzati nello stesso ordine in cui sono dichiarati nel do
 
 Un separatore di comandi consente di visualizzare una barra di separazione tra i comandi. È identificato dal valore **&#39;-&#39;** contenuto nell&#39;etichetta del comando.
 
-La presenza facoltativa del tag **`<soapcall>`** con i relativi parametri di input definisce la chiamata di un metodo SOAP da eseguire. Per ulteriori informazioni sulle API di SOAP, consulta la [documentazione JSAPI di Campaign](https://experienceleague.adobe.com/en/tools/campaign-api).
+La presenza facoltativa del tag **`<soapcall>`** con i relativi parametri di input definisce la chiamata di un metodo SOAP da eseguire. Per ulteriori informazioni sulle API di SOAP, consulta la [documentazione JSAPI di Campaign](https://experienceleague.adobe.com/it/tools/campaign-api).
 
 Il contesto del modulo può essere aggiornato all&#39;inizializzazione tramite il tag **`<enter>`**. Per ulteriori informazioni su questo tag, consulta la documentazione del modulo di input.
 

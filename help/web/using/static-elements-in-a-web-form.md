@@ -41,7 +41,7 @@ Sono disponibili i seguenti tipi di campo:
 
   >[!NOTE]
   >
-  >Sul lato server, lo script può utilizzare le funzioni definite nella [documentazione JSAPI di Campaign](https://experienceleague.adobe.com/en/tools/campaign-api).
+  >Sul lato server, lo script può utilizzare le funzioni definite nella [documentazione JSAPI di Campaign](https://experienceleague.adobe.com/it/tools/campaign-api).
 
 ## Inserisci contenuto HTML {#inserting-html-content}
 

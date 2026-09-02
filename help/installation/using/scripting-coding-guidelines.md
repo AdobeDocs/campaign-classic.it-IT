@@ -29,7 +29,7 @@ ht-degree: 4%
 
 ## Scripting
 
-Per ulteriori dettagli, consulta la [documentazione JSAPI per Campaign](https://experienceleague.adobe.com/en/tools/campaign-api).
+Per ulteriori dettagli, consulta la [documentazione JSAPI per Campaign](https://experienceleague.adobe.com/it/tools/campaign-api).
 
 Se esegui uno script utilizzando workflow, applicazioni web e jssp, segui le best practice:
 
@@ -66,7 +66,7 @@ Per evitare SQL injection, è necessario aggiungere le funzioni SQL al inserisco
 >
 >Se si utilizza una build precedente alla 8140, l&#39;opzione **XtkPassUnknownSQLFunctionsToRDBMS** potrebbe essere impostata su &#39;1&#39;. Se si desidera proteggere il database, eliminare questa opzione o impostarla su &#39;0&#39;.
 
-Se si utilizza l&#39;input dell&#39;utente per generare filtri nelle query o nelle istruzioni SQL, è sempre necessario eseguirne l&#39;escape (fare riferimento alla [documentazione JSAPI di Campaign](https://experienceleague.adobe.com/en/tools/campaign-api) - Protezione dei dati: funzioni di escape). Queste funzioni sono:
+Se si utilizza l&#39;input dell&#39;utente per generare filtri nelle query o nelle istruzioni SQL, è sempre necessario eseguirne l&#39;escape (fare riferimento alla [documentazione JSAPI di Campaign](https://experienceleague.adobe.com/it/tools/campaign-api) - Protezione dei dati: funzioni di escape). Queste funzioni sono:
 
 * NL.XML.escape(data)
 * NL.SQL.escape(data)
@@ -128,7 +128,7 @@ Il modo generale per aggiungere un captcha nel DCE consiste nel creare un blocco
 
 1. Utilizza il tipo di contenuto **[!UICONTROL Web application]** e seleziona **[!UICONTROL Visible in the customization menus]**.
 
-   Per ulteriori informazioni, consulta la [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
+   Per ulteriori informazioni, consulta la [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=it){target="_blank"}.
 
    Ecco un esempio di **Captcha campagna**:
 
