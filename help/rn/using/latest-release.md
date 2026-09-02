@@ -7,24 +7,16 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 TQID: https://experienceleague.adobe.com/Xq9y8r6xU-hypq1Eeo9ijaiGng7qqkWVqiCXW5fYx2c
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
 feature_v2: []
-subfeature_v2:
-  - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
-  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+subfeature_v2: id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
 source-git-commit: d1e083ac90731e9f55d64156fbd6038df3c4d432
 workflow-type: tm+mt
 source-wordcount: 1017
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +26,7 @@ In questa pagina sono elencate nuove funzionalità, miglioramenti e correzioni i
 
 ## Versione 7.4.4 {#release-7-4-4}
 
-### Build 9401 {#build-9401}
+### Versione 9401 {#build-9401}
 
 [!BADGE Disponibilità generale]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Disponibilità generale"}
 
@@ -44,25 +36,25 @@ _25 agosto 2026_
 
 Adobe ha rilasciato degli aggiornamenti di sicurezza per Adobe Campaign Classic che affrontano vulnerabilità critiche. Invitiamo i clienti che utilizzano implementazioni on-premise e ibride a installare gli aggiornamenti il prima possibile. Le istanze ospitate da Adobe sono già state corrette e non richiedono alcuna azione da parte del cliente. Ulteriori informazioni sono disponibili nel [bollettino sulla sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb26-134.html){target="_blank"}.
 
-Per caricare la build e completare la distribuzione è necessario riavviare il server Adobe Campaign (nlserver). Per impostazione predefinita la correzione è attiva dopo il riavvio.
+È necessario un riavvio del server di Adobe Campaign (nlserver) per caricare la build e completare l’implementazione. La correzione è attiva per impostazione predefinita dopo il riavvio.
 
-### Build 9400 {#build-9400}
+### Versione 9400 {#build-9400}
 
 [!BADGE Obsoleta]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Obsoleta"}
 
 _11 agosto 2026_
 
-Questa build include diversi miglioramenti del prodotto, correzioni di sicurezza e l’aggiornamento all’API Adobe Analytics 2.0 per il connettore Adobe Analytics.
+Questa versione include diversi miglioramenti di prodotto, correzioni di sicurezza e l’aggiornamento all’API Adobe Analytics 2.0 per il connettore Adobe Analytics.
 
 #### Miglioramenti di sicurezza {#security-7-4-4-9400}
 
 Adobe ha rilasciato degli aggiornamenti di sicurezza per Adobe Campaign Classic che affrontano vulnerabilità critiche. Invitiamo i clienti che utilizzano implementazioni on-premise e ibride a installare gli aggiornamenti il prima possibile. Le istanze ospitate da Adobe sono già state corrette e non richiedono alcuna azione da parte del cliente. Ulteriori informazioni sono disponibili nel [bollettino sulla sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb26-123.html){target="_blank"}.
 
-Per caricare la build e completare la distribuzione è necessario riavviare il server Adobe Campaign (nlserver). Per impostazione predefinita la correzione è attiva dopo il riavvio.
+È necessario un riavvio del server di Adobe Campaign (nlserver) per caricare la build e completare l’implementazione. La correzione è attiva per impostazione predefinita dopo il riavvio.
 
-#### Aggiornamento Adobe Analytics 2.0 {#analytics-2-0-7-4-4}
+#### Aggiornamento ad Adobe Analytics 2.0 {#analytics-2-0-7-4-4}
 
-Le API di Adobe Analytics 1.4 stanno raggiungendo la fine del ciclo di vita. Se utilizzi il connettore Adobe Analytics, devi eseguire l’aggiornamento a questa build e completare alcuni passaggi di migrazione a seconda della distribuzione e del caso d’uso. [Scopri come eseguire la migrazione all&#39;API di Adobe Analytics 2.0](../../technotes/using/analytics-2-migration.md).
+Le API di Adobe Analytics 1.4 stanno raggiungendo la fine del ciclo di vita. Se utilizzi il connettore Adobe Analytics, devi effettuare l’aggiornamento a questa versione e completare alcuni passaggi di migrazione a seconda dell’implementazione e del caso d’uso. [Scopri come eseguire la migrazione all’API di Adobe Analytics 2.0](../../technotes/using/analytics-2-migration.md).
 
 ## Versione 7.4.3 {#release-7-4-3}
 
@@ -76,7 +68,7 @@ _3 agosto 2026_
 
 Adobe ha rilasciato degli aggiornamenti di sicurezza per Adobe Campaign Classic che affrontano vulnerabilità critiche. Invitiamo i clienti che utilizzano implementazioni on-premise e ibride a installare gli aggiornamenti il prima possibile. Le istanze ospitate da Adobe sono già state corrette e non richiedono alcuna azione da parte del cliente. Ulteriori informazioni sono disponibili nel [bollettino sulla sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb26-120.html){target="_blank"}.
 
-È necessario un [riavvio del server Adobe Campaign (nlserver)](../../production/using/usual-commands.md#restart-services) per caricare la build e completare l’implementazione. Per impostazione predefinita la correzione è attiva dopo il riavvio.
+È necessario un [riavvio del server Adobe Campaign (nlserver)](../../production/using/usual-commands.md#restart-services) per caricare la build e completare l’implementazione. La correzione è attiva per impostazione predefinita dopo il riavvio.
 
 ### Build 9398 {#build-9398}
 
@@ -88,9 +80,9 @@ _29 luglio 2026_
 
 Adobe ha rilasciato degli aggiornamenti di sicurezza per Adobe Campaign Classic che affrontano vulnerabilità critiche. Invitiamo i clienti che utilizzano implementazioni on-premise e ibride a installare gli aggiornamenti il prima possibile. Le istanze ospitate da Adobe sono già state corrette e non richiedono alcuna azione da parte del cliente. Ulteriori informazioni sono disponibili nel [bollettino sulla sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb26-114.html){target="_blank"}.
 
-È necessario un [riavvio del server Adobe Campaign (nlserver)](../../production/using/usual-commands.md#restart-services) per caricare la build e completare l’implementazione. Per impostazione predefinita la correzione è attiva dopo il riavvio.
+È necessario un [riavvio del server Adobe Campaign (nlserver)](../../production/using/usual-commands.md#restart-services) per caricare la build e completare l’implementazione. La correzione è attiva per impostazione predefinita dopo il riavvio.
 
-### Build 9397 {#build-9397}
+### Versione 9397 {#build-9397}
 
 [!BADGE Obsoleta]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Obsoleta"}
 
