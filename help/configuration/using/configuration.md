@@ -6,21 +6,15 @@ description: Scopri come configurare la struttura di navigazione di Campaign Exp
 role: Developer
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
 TQID: https://experienceleague.adobe.com/K2bUgEoNSbVfc5hs1O-V36yNrjUFKQEO00-clOYc5u4
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: b12f6872-9271-4369-85e5-86969a0b99a2
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-subfeature_v2:
-  - id: efa38731-2723-4334-8d8b-a778af834835
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+subfeature_v2: id: efa38731-2723-4334-8d8b-a778af834835
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
 workflow-type: tm+mt
-source-wordcount: 1212
-ht-degree: 1%
+source-wordcount: 1210
+ht-degree: 0%
 
 ---
 
@@ -28,7 +22,7 @@ ht-degree: 1%
 
 In qualità di utente esperto, puoi aggiungere cartelle nella struttura dell’Explorer e personalizzarla.
 
-Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 I tipi di cartelle utilizzati dall&#39;elenco di spostamento sono descritti in un documento XML conforme alla grammatica dello schema **xtk:navtree**.
 
@@ -104,7 +98,7 @@ I comandi vengono visualizzati nello stesso ordine in cui sono dichiarati nel do
 
 Un separatore di comandi consente di visualizzare una barra di separazione tra i comandi. È identificato dal valore **&#39;-&#39;** contenuto nell&#39;etichetta del comando.
 
-La presenza facoltativa del tag **`<soapcall>`** con i relativi parametri di input definisce la chiamata di un metodo SOAP da eseguire. Per ulteriori informazioni sull&#39;API di SOAP, consulta la [documentazione JSAPI di Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=it).
+La presenza facoltativa del tag **`<soapcall>`** con i relativi parametri di input definisce la chiamata di un metodo SOAP da eseguire. Per ulteriori informazioni sull&#39;API di SOAP, consulta la [documentazione JSAPI di Campaign](https://experienceleague.adobe.com/en/tools/campaign-api).
 
 Il contesto del modulo può essere aggiornato all&#39;inizializzazione dal tag **`<enter>`**. Per ulteriori informazioni su questo tag, consulta la documentazione sui moduli di input.
 
@@ -277,7 +271,7 @@ I comandi vengono visualizzati nello stesso ordine in cui sono dichiarati nel do
 
 Un separatore di comandi consente di visualizzare una barra di separazione tra i comandi. È identificato dal valore **&#39;-&#39;** contenuto nell&#39;etichetta del comando.
 
-La presenza facoltativa del tag **`<soapcall>`** con i relativi parametri di input definisce la chiamata di un metodo SOAP da eseguire. Per ulteriori informazioni sulle API di SOAP, consulta la [documentazione JSAPI di Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=it).
+La presenza facoltativa del tag **`<soapcall>`** con i relativi parametri di input definisce la chiamata di un metodo SOAP da eseguire. Per ulteriori informazioni sulle API di SOAP, consulta la [documentazione JSAPI di Campaign](https://experienceleague.adobe.com/en/tools/campaign-api).
 
 Il contesto del modulo può essere aggiornato all&#39;inizializzazione tramite il tag **`<enter>`**. Per ulteriori informazioni su questo tag, consulta la documentazione del modulo di input.
 

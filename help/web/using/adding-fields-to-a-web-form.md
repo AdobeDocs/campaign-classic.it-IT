@@ -6,21 +6,14 @@ badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile an
 feature: Web Forms, Landing Pages
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
 TQID: https://experienceleague.adobe.com/uHsP-67EhxMoCun8GEh1CzbeU5FJaDc1cdlsSVyayU4
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-feature_v2:
-  - id: a4671286-a59f-47e3-b97b-90627a1977d5
-subfeature_v2:
-  - id: f391046b-0cf3-4e76-bd3b-97fe06654506
-  - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
-  - id: d7be2b01-dc9c-40f7-aace-a151707504ed
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080b
+feature_v2: id: a4671286-a59f-47e3-b97b-90627a1977d5
+subfeature_v2: id: f391046b-0cf3-4e76-bd3b-97fe06654506id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281id: d7be2b01-dc9c-40f7-aace-a151707504ed
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
 workflow-type: tm+mt
-source-wordcount: 2373
-ht-degree: 1%
+source-wordcount: 2399
+ht-degree: 0%
 
 ---
 
@@ -379,7 +372,7 @@ Puoi aggiungere un campo di caricamento a una pagina. Questa funzionalità può 
 
 Per inserire un campo di caricamento in una pagina del modulo, selezionare il menu **[!UICONTROL Advanced controls > File...]** nella barra degli strumenti dell&#39;editor pagina.
 
-Per impostazione predefinita, i file caricati vengono archiviati in file di risorse accessibili tramite il menu **[!UICONTROL Resources > Online > Public resources]**. Puoi utilizzare uno script per modificare questo comportamento. Questo script può utilizzare le funzioni definite nella [documentazione JSAPI di Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=it), incluse quelle relative alla manipolazione dei file.
+Per impostazione predefinita, i file caricati vengono archiviati in file di risorse accessibili tramite il menu **[!UICONTROL Resources > Online > Public resources]**. Puoi utilizzare uno script per modificare questo comportamento. Questo script può utilizzare le funzioni definite nella [documentazione JSAPI di Campaign](https://experienceleague.adobe.com/en/tools/campaign-api), incluse quelle relative alla manipolazione dei file.
 
 È possibile memorizzare il collegamento a questi file in una variabile locale o in un campo di database. Ad esempio, puoi estendere lo schema del destinatario per aggiungere un collegamento alle risorse basate su file.
 

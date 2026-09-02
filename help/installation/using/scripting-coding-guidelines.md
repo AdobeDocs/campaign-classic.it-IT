@@ -8,18 +8,14 @@ content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
 TQID: https://experienceleague.adobe.com/daz7TEa76-e6V3DbFHIzggxj07CKsh1pS-ShT6d-Tfo
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 feature_v2: []
 subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
 workflow-type: tm+mt
-source-wordcount: 773
-ht-degree: 6%
+source-wordcount: 771
+ht-degree: 4%
 
 ---
 
@@ -29,7 +25,7 @@ ht-degree: 6%
 
 ## Scripting
 
-Per ulteriori dettagli, consulta la [documentazione JSAPI per Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=it).
+Per ulteriori dettagli, consulta la [documentazione JSAPI per Campaign](https://experienceleague.adobe.com/en/tools/campaign-api).
 
 Se esegui uno script utilizzando workflow, applicazioni web e jssp, segui le best practice:
 
@@ -66,7 +62,7 @@ Per evitare SQL injection, è necessario aggiungere le funzioni SQL al inserisco
 >
 >Se si utilizza una build precedente alla 8140, l&#39;opzione **XtkPassUnknownSQLFunctionsToRDBMS** potrebbe essere impostata su &#39;1&#39;. Se si desidera proteggere il database, eliminare questa opzione o impostarla su &#39;0&#39;.
 
-Se si utilizza l&#39;input dell&#39;utente per generare filtri nelle query o nelle istruzioni SQL, è sempre necessario eseguirne l&#39;escape (fare riferimento alla [documentazione JSAPI di Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=it) - Protezione dei dati: funzioni di escape). Queste funzioni sono:
+Se si utilizza l&#39;input dell&#39;utente per generare filtri nelle query o nelle istruzioni SQL, è sempre necessario eseguirne l&#39;escape (fare riferimento alla [documentazione JSAPI di Campaign](https://experienceleague.adobe.com/en/tools/campaign-api) - Protezione dei dati: funzioni di escape). Queste funzioni sono:
 
 * NL.XML.escape(data)
 * NL.SQL.escape(data)
@@ -128,7 +124,7 @@ Il modo generale per aggiungere un captcha nel DCE consiste nel creare un blocco
 
 1. Utilizza il tipo di contenuto **[!UICONTROL Web application]** e seleziona **[!UICONTROL Visible in the customization menus]**.
 
-   Per ulteriori informazioni, consulta la [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=it){target="_blank"}.
+   Per ulteriori informazioni, consulta la [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
 
    Ecco un esempio di **Captcha campagna**:
 
