@@ -19,9 +19,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 7fd7a9e54183b456f06d8030c3d9425f275eabf5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 657
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -36,9 +36,9 @@ Dai un’occhiata ai più recenti miglioramenti apportati al prodotto e alla doc
 >[!BEGINTABS]
 
 
->[!TAB La versione di agosto 2026 è live!]
+>[!TAB La versione di agosto 2026 è ora disponibile.]
 
-La build Campaign Classic v7.4.4 - agosto 2026 fornisce aggiornamenti di sicurezza e aggiorna il connettore Adobe Analytics all’API Analytics 2.0.
+La versione di agosto 2026 di Campaign Classic v7.4.4 introduce aggiornamenti di sicurezza e aggiorna il connettore Adobe Analytics all&#39;API Analytics 2.0.
 
 [![immagine](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
@@ -128,4 +128,4 @@ Alcune importanti modifiche al servizio Android Firebase Cloud Messaging (FCM) v
 
 ## Risorse aggiuntive
 
-[Descrizione del prodotto Adobe Campaign](https://helpx.adobe.com/it/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Matrice di compatibilità](rn/using/compatibility-matrix.md) - [Tutorial](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it){target="_blank"} - [Pannello di controllo Campaign per Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=it){target="_blank"} - [Pixel di tracciamento e-mail e linee guida CNIL](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/cnil-pixel-tracking){target="_blank"}
+[Descrizione del prodotto Adobe Campaign](https://helpx.adobe.com/it/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Matrice di compatibilità](rn/using/compatibility-matrix.md) - [Tutorial](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it){target="_blank"} - [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=it){target="_blank"} - [Pixel di tracciamento nelle email e linee guida della CNIL](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/cnil-pixel-tracking){target="_blank"}

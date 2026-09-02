@@ -9,9 +9,9 @@ sub-product: adobe campaign classic
 type: Documentation
 nudge: false
 source-git-commit: df5d87ca4fccb927f770957ec1c00157d14e95dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2717'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -353,7 +353,7 @@ ht-degree: 99%
   + Adobe Experience Manager {#adobe-experience-manager}
     + [Utilizzare  [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
     + [Configurare l’integrazione](integrations/using/configuring-the-integration.md)
-    + [Creare una newsletter [!DNL Experience Manager] &#x200B;](integrations/using/creating-an-experience-manager-newsletter.md)
+    + [Creare una newsletter [!DNL Experience Manager] ](integrations/using/creating-an-experience-manager-newsletter.md)
   + Adobe Target {#adobe-target}
     + [Utilizzare  [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
     + [Configurare l’integrazione con [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
@@ -813,7 +813,7 @@ ht-degree: 99%
     + {hide-from-toc}[Aggiornamenti del sistema 2023](technotes/using/tech-stack-upgrade.md)
     + {hide-from-toc}[Aggiornamenti IMS](technotes/using/ims-updates.md)
     + {hide-from-toc}[Fine del ciclo di vita del supporto per TLS 1.0 e 1.1](technotes/using/eol-tls-support.md)
-    + {hide-from-toc}[Esegui la migrazione all&#39;API Adobe Analytics 2.0](technotes/using/analytics-2-migration.md)
+    + {hide-from-toc}[Eseguire la migrazione all’API di Adobe Analytics 2.0](technotes/using/analytics-2-migration.md)
   + E-mail e notifiche push{#technotes-email}
     + [Protezione della privacy della posta su Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
     + [Come aggiornare i mancati recapiti permanenti errati](delivery/using/update-bounce-qualification.md)
