@@ -13,10 +13,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
 workflow-type: tm+mt
-source-wordcount: 625
-ht-degree: 3%
+source-wordcount: 624
+ht-degree: 2%
 
 ---
 
@@ -26,16 +26,16 @@ Le API aziendali sono specifiche per ciascun tipo di oggetto. Hanno un effetto s
 
 * Consegne:
 
-   * Creazione di un&#39;azione di consegna, fare riferimento a [SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-),
-   * invio di una campagna (avvio, pausa, arresto, invio di una bozza),
-   * recupero dei registri di consegna.
+  * Creazione di un&#39;azione di consegna, fare riferimento a [SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-),
+  * invio di una campagna (avvio, pausa, arresto, invio di una bozza),
+  * recupero dei registri di consegna.
 
 * Flussi di lavoro
 
-   * avvio di un flusso di lavoro,
-   * verifica dei processi, ecc.
+  * avvio di un flusso di lavoro,
+  * verifica dei processi, ecc.
 
-     Consulta [Metodi SOAP in JavaScript](../../configuration/using/soap-methods-in-javascript.md).
+    Consulta [Metodi SOAP in JavaScript](../../configuration/using/soap-methods-in-javascript.md).
 
 * Gestione dei contenuti
 * Gestione sottoscrizioni, fare riferimento a [Sottoscrizione (nms:subscription)](#subscribe--nms-subscription-) e [Annulla sottoscrizione (nms:subscription)](#unsubscribe--nms-subscription-).
@@ -45,7 +45,7 @@ Questa sezione descrive l’utilizzo dei servizi &quot;Subscribe&quot;, &quot;Un
 
 >[!IMPORTANT]
 >
->[La documentazione JSAPI per Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=it) contiene informazioni aggiuntive sulle chiamate SOAP e sull&#39;utilizzo di JavaScript in Adobe Campaign, nonché un riferimento completo a tutti i metodi e le funzioni utilizzati nell&#39;applicazione.
+>[La documentazione JSAPI per Campaign](https://experienceleague.adobe.com/it/tools/campaign-api) contiene informazioni aggiuntive sulle chiamate SOAP e sull&#39;utilizzo di JavaScript in Adobe Campaign, nonché un riferimento completo a tutti i metodi e le funzioni utilizzati nell&#39;applicazione.
 
 ## Sottoscrivi (nms:subscription) {#subscribe--nms-subscription-}
 

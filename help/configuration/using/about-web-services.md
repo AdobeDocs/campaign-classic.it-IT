@@ -13,9 +13,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
 workflow-type: tm+mt
-source-wordcount: 665
+source-wordcount: 664
 ht-degree: 4%
 
 ---
@@ -31,7 +31,7 @@ Le API di Adobe Campaign vengono utilizzate in JavaScript all’interno dell’a
 >[!IMPORTANT]
 >
 >Il numero di chiamate al motore autorizzate al giorno varia in base al contratto di licenza. Per ulteriori informazioni, consulta [questa pagina](https://helpx.adobe.com/it/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
->Un elenco di tutte le API, inclusa la loro descrizione completa, è disponibile in [questa documentazione dedicata]&#x200B;(https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=it.
+>Un elenco di tutte le API, inclusa la loro descrizione completa, è disponibile in [questa documentazione dedicata]&#x200B;(https://experienceleague.adobe.com/it/tools/campaign-api
 
 ## Prerequisiti {#prerequisites}
 
@@ -144,10 +144,10 @@ L&#39;elemento `<soap-env:fault>` nel corpo del messaggio di SOAP viene utilizza
 
 * `<faultcode>` : indica il tipo di errore. I tipi di errore sono:
 
-   * &quot;VersionMismatch&quot; in caso di incompatibilità con la versione di SOAP utilizzata,
-   * &quot;MustUnderstand&quot; in caso di problema nell’intestazione del messaggio,
-   * &quot;Client&quot; nel caso in cui al client manchino alcune informazioni,
-   * &quot;Server&quot; nel caso in cui il server abbia un problema durante l’esecuzione dell’elaborazione.
+  * &quot;VersionMismatch&quot; in caso di incompatibilità con la versione di SOAP utilizzata,
+  * &quot;MustUnderstand&quot; in caso di problema nell’intestazione del messaggio,
+  * &quot;Client&quot; nel caso in cui al client manchino alcune informazioni,
+  * &quot;Server&quot; nel caso in cui il server abbia un problema durante l’esecuzione dell’elaborazione.
 
 * `<faultstring>`: messaggio che descrive l&#39;errore
 * `<detail>`: messaggio di errore lungo

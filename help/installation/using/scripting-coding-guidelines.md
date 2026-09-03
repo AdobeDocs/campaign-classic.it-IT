@@ -16,10 +16,10 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 feature_v2: []
 subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
 workflow-type: tm+mt
-source-wordcount: 773
-ht-degree: 6%
+source-wordcount: 771
+ht-degree: 4%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 6%
 
 ## Scripting
 
-Per ulteriori dettagli, consulta la [documentazione JSAPI per Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=it).
+Per ulteriori dettagli, consulta la [documentazione JSAPI per Campaign](https://experienceleague.adobe.com/it/tools/campaign-api).
 
 Se esegui uno script utilizzando workflow, applicazioni web e jssp, segui le best practice:
 
@@ -66,7 +66,7 @@ Per evitare SQL injection, è necessario aggiungere le funzioni SQL al inserisco
 >
 >Se si utilizza una build precedente alla 8140, l&#39;opzione **XtkPassUnknownSQLFunctionsToRDBMS** potrebbe essere impostata su &#39;1&#39;. Se si desidera proteggere il database, eliminare questa opzione o impostarla su &#39;0&#39;.
 
-Se si utilizza l&#39;input dell&#39;utente per generare filtri nelle query o nelle istruzioni SQL, è sempre necessario eseguirne l&#39;escape (fare riferimento alla [documentazione JSAPI di Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=it) - Protezione dei dati: funzioni di escape). Queste funzioni sono:
+Se si utilizza l&#39;input dell&#39;utente per generare filtri nelle query o nelle istruzioni SQL, è sempre necessario eseguirne l&#39;escape (fare riferimento alla [documentazione JSAPI di Campaign](https://experienceleague.adobe.com/it/tools/campaign-api) - Protezione dei dati: funzioni di escape). Queste funzioni sono:
 
 * NL.XML.escape(data)
 * NL.SQL.escape(data)
