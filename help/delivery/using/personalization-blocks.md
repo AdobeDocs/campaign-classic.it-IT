@@ -138,7 +138,7 @@ Per impostazione predefinita, è disponibile un elenco di blocchi di personalizz
 
 >[!IMPORTANT]
 >
->La versione 7.4.4 (build 9401) include un aggiornamento dell’elenco consentiti dell’URL esterno. Se un blocco di personalizzazione personalizzato fa riferimento a un URL esterno (ad esempio, un’immagine ospitata esternamente), assicurati che il dominio venga aggiunto all’elenco consentiti approvato della tua istanza in modo che la risorsa continui a caricarsi senza interruzioni. In qualità di amministratore di Campaign, utilizza il Pannello di controllo Campaign per aggiungere e gestire gli URL inseriti nell’elenco Consentiti. Consulta [Aggiungi autorizzazioni URL](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} per i passaggi.
+>La versione 7.4.4 (build 9401) include un aggiornamento dell’elenco consentiti dell’URL esterno. Se un blocco di personalizzazione personalizzato fa riferimento a un URL esterno (ad esempio, un’immagine ospitata esternamente), assicurati che il dominio venga aggiunto all’elenco consentiti approvato della tua istanza in modo che la risorsa continui a caricarsi senza interruzioni. In qualità di amministratore di Campaign, utilizza il Pannello di controllo Campaign per aggiungere e gestire gli URL inseriti nell’elenco Consentiti. Consulta [Aggiungi autorizzazioni URL](https://experienceleague.adobe.com/it/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} per i passaggi.
 
 Puoi definire nuovi campi di personalizzazione da inserire dall&#39;icona del campo personalizzato tramite il menu **[!UICONTROL Include...]**. Questi campi sono definiti in blocchi di personalizzazione.
 

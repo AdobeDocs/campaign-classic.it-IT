@@ -40,7 +40,7 @@ Sono supportate le seguenti estensioni: &quot;.docx&quot;, &quot;.doc&quot; e &q
 
 Per personalizzare i documenti, sono disponibili le stesse funzionalità di JavaScript disponibili per la personalizzazione delle e-mail.
 
-È necessario attivare l&#39;opzione **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**. Questa opzione è accessibile quando alleghi il file all’e-mail di consegna. Per ulteriori informazioni su come allegare un file calcolato, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html){target="_blank"}.
+È necessario attivare l&#39;opzione **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**. Questa opzione è accessibile quando alleghi il file all’e-mail di consegna. Per ulteriori informazioni su come allegare un file calcolato, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=it){target="_blank"}.
 
 Esempio di personalizzazione dell&#39;intestazione di una fattura:
 
@@ -66,7 +66,7 @@ La procedura per la generazione di tabelle dinamiche è la seguente:
 
 >[!IMPORTANT]
 >
->La versione 7.4.4 (build 9401) include un aggiornamento dell’elenco consentiti dell’URL esterno. Accertati che i domini utilizzati per le immagini esterne negli allegati vengano aggiunti all’elenco consentiti approvato dell’istanza in modo che le risorse continuino a caricarsi senza interruzioni. In qualità di amministratore di Campaign, utilizza il Pannello di controllo Campaign per aggiungere e gestire gli URL inseriti nell’elenco Consentiti. Consulta [Aggiungi autorizzazioni URL](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} per i passaggi.
+>La versione 7.4.4 (build 9401) include un aggiornamento dell’elenco consentiti dell’URL esterno. Accertati che i domini utilizzati per le immagini esterne negli allegati vengano aggiunti all’elenco consentiti approvato dell’istanza in modo che le risorse continuino a caricarsi senza interruzioni. In qualità di amministratore di Campaign, utilizza il Pannello di controllo Campaign per aggiungere e gestire gli URL inseriti nell’elenco Consentiti. Consulta [Aggiungi autorizzazioni URL](https://experienceleague.adobe.com/it/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} per i passaggi.
 
 L’inserimento di immagini esterne è utile, ad esempio, se desideri personalizzare un documento con un’immagine il cui URL viene inserito in un campo del destinatario.
 

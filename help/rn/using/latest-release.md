@@ -50,7 +50,7 @@ Adobe ha rilasciato degli aggiornamenti di sicurezza per Adobe Campaign Classic 
 
 Questa versione include un aggiornamento dell’elenco consentiti dell’URL esterno utilizzato per il contenuto e gli allegati della consegna. Accertati che tutti i domini a cui fai riferimento attualmente siano aggiunti all’elenco consentiti approvato della tua istanza.
 
-In qualità di amministratore di Campaign, utilizza il Pannello di controllo Campaign per aggiungere all’elenco consentiti gli URL esterni attualmente utilizzati nelle consegne e segui la stessa procedura per qualsiasi nuovo URL esterno in futuro. Completa questa attività entro il 5 settembre 2026 per evitare un impatto sulle consegne interessate. Consulta [Aggiungi autorizzazioni URL](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} per i passaggi.
+In qualità di amministratore di Campaign, utilizza il Pannello di controllo Campaign per aggiungere all’elenco consentiti gli URL esterni attualmente utilizzati nelle consegne e segui la stessa procedura per qualsiasi nuovo URL esterno in futuro. Completa questa attività entro il 5 settembre 2026 per evitare un impatto sulle consegne interessate. Consulta [Aggiungi autorizzazioni URL](https://experienceleague.adobe.com/it/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} per i passaggi.
 
 ### Versione 9400 {#build-9400}
 

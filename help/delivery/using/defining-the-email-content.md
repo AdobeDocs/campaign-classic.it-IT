@@ -82,7 +82,7 @@ Ad esempio, nel messaggio precedente, l’oggetto del messaggio è personalizzat
 
 >[!IMPORTANT]
 >
->La versione 7.4.4 (build 9401) include un aggiornamento dell’elenco consentiti dell’URL esterno. Assicurati che i domini utilizzati nel contenuto del messaggio siano aggiunti all’elenco consentiti approvato della tua istanza in modo che le risorse continuino a caricarsi senza interruzioni. In qualità di amministratore di Campaign, utilizza il Pannello di controllo Campaign per aggiungere e gestire gli URL inseriti nell’elenco Consentiti. Consulta [Aggiungi autorizzazioni URL](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} per i passaggi.
+>La versione 7.4.4 (build 9401) include un aggiornamento dell’elenco consentiti dell’URL esterno. Assicurati che i domini utilizzati nel contenuto del messaggio siano aggiunti all’elenco consentiti approvato della tua istanza in modo che le risorse continuino a caricarsi senza interruzioni. In qualità di amministratore di Campaign, utilizza il Pannello di controllo Campaign per aggiungere e gestire gli URL inseriti nell’elenco Consentiti. Consulta [Aggiungi autorizzazioni URL](https://experienceleague.adobe.com/it/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} per i passaggi.
 
 Il contenuto del messaggio è definito nella sezione inferiore della finestra di configurazione della consegna.
 
@@ -135,7 +135,7 @@ Per impostazione predefinita, i messaggi vengono inviati in formato HTML o testo
 
 Adobe Campaign consente di provare il nuovo formato interattivo [AMP per e-mail](https://amp.dev/about/email/), che consente di inviare e-mail dinamiche, in determinate condizioni.
 
-Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html){target="_blank"}.
+Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=it){target="_blank"}.
 
 ## Utilizza gestione contenuti {#using-content-management}
 
