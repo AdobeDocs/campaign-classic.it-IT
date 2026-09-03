@@ -8,24 +8,14 @@ role: User
 hide: true
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
 TQID: https://experienceleague.adobe.com/5hETJLlKZ9iWu2k1nW-RMeDlzpSm7wFwfe3QwSEZCa4
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-feature_v2:
-  - id: b631758a-142d-425f-b9aa-f756d85cb979
-  - id: c858a28b-ea19-49b0-8d48-828717fad89c
-subfeature_v2:
-  - id: e95a583b-fcfa-4524-8666-46a29c828119
-  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
-  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
-  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: e0eb8757-182f-49f3-94a4-1587d16f5094
+feature_v2: id: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
+source-git-commit: e615a6fdd6dc78b2c5e80d6aeb92cd9291ccf5e7
 workflow-type: tm+mt
-source-wordcount: 461
+source-wordcount: 533
 ht-degree: 1%
 
 ---
@@ -40,7 +30,7 @@ Sono supportate le seguenti estensioni: &quot;.docx&quot;, &quot;.doc&quot; e &q
 
 Per personalizzare i documenti, sono disponibili le stesse funzionalità di JavaScript disponibili per la personalizzazione delle e-mail.
 
-È necessario attivare l&#39;opzione **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**. Questa opzione è accessibile quando alleghi il file all’e-mail di consegna. Per ulteriori informazioni su come allegare un file calcolato, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=it){target="_blank"}.
+È necessario attivare l&#39;opzione **[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**. Questa opzione è accessibile quando alleghi il file all’e-mail di consegna. Per ulteriori informazioni su come allegare un file calcolato, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html){target="_blank"}.
 
 Esempio di personalizzazione dell&#39;intestazione di una fattura:
 
@@ -63,6 +53,10 @@ La procedura per la generazione di tabelle dinamiche è la seguente:
   ![](assets/s_ncs_pdf_table.png)
 
 ## Inserisci immagini esterne {#inserting-external-images}
+
+>[!IMPORTANT]
+>
+>La versione 7.4.4 (build 9401) include un aggiornamento dell’elenco consentiti dell’URL esterno. Accertati che i domini utilizzati per le immagini esterne negli allegati vengano aggiunti all’elenco consentiti approvato dell’istanza in modo che le risorse continuino a caricarsi senza interruzioni. In qualità di amministratore di Campaign, utilizza il Pannello di controllo Campaign per aggiungere e gestire gli URL inseriti nell’elenco Consentiti. Consulta [Aggiungi autorizzazioni URL](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} per i passaggi.
 
 L’inserimento di immagini esterne è utile, ad esempio, se desideri personalizzare un documento con un’immagine il cui URL viene inserito in un campo del destinatario.
 
@@ -87,8 +81,8 @@ A questo scopo, devi configurare un blocco di personalizzazione, quindi includer
 
   Devi distinguere due tipi di dichiarazioni all’interno del blocco di personalizzazione:
 
-   * Il codice Adobe Campaign dei campi di personalizzazione per i quali le virgolette &quot;aperta&quot; e &quot;chiusa&quot; devono essere sostituite con caratteri di escape (rispettivamente `&lt;` e `&gt;`).
-   * L&#39;intero codice XML OpenOffice verrà copiato nel documento OpenOffice.
+  * Il codice Adobe Campaign dei campi di personalizzazione per i quali le virgolette &quot;aperta&quot; e &quot;chiusa&quot; devono essere sostituite con caratteri di escape (rispettivamente `&lt;` e `&gt;`).
+  * L&#39;intero codice XML OpenOffice verrà copiato nel documento OpenOffice.
 
 Nell’esempio, il blocco di personalizzazione si presenta così:
 
