@@ -21,10 +21,10 @@ feature_v2: []
 subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-source-git-commit: d1e083ac90731e9f55d64156fbd6038df3c4d432
+source-git-commit: e615a6fdd6dc78b2c5e80d6aeb92cd9291ccf5e7
 workflow-type: tm+mt
-source-wordcount: 1017
-ht-degree: 100%
+source-wordcount: 1117
+ht-degree: 91%
 
 ---
 
@@ -45,6 +45,12 @@ _25 agosto 2026_
 Adobe ha rilasciato degli aggiornamenti di sicurezza per Adobe Campaign Classic che affrontano vulnerabilità critiche. Invitiamo i clienti che utilizzano implementazioni on-premise e ibride a installare gli aggiornamenti il prima possibile. Le istanze ospitate da Adobe sono già state corrette e non richiedono alcuna azione da parte del cliente. Ulteriori informazioni sono disponibili nel [bollettino sulla sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb26-134.html){target="_blank"}.
 
 È necessario un riavvio del server di Adobe Campaign (nlserver) per caricare la build e completare l’implementazione. La correzione è attiva per impostazione predefinita dopo il riavvio.
+
+#### Aggiornamento elenco consentiti URL esterno {#security-enhancement-url-validation-9401}
+
+Questa versione include un aggiornamento dell’elenco consentiti dell’URL esterno utilizzato per il contenuto e gli allegati della consegna. Accertati che tutti i domini a cui fai riferimento attualmente siano aggiunti all’elenco consentiti approvato della tua istanza.
+
+In qualità di amministratore di Campaign, utilizza il Pannello di controllo Campaign per aggiungere all’elenco consentiti gli URL esterni attualmente utilizzati nelle consegne e segui la stessa procedura per qualsiasi nuovo URL esterno in futuro. Completa questa attività entro il 5 settembre 2026 per evitare un impatto sulle consegne interessate. Consulta [Aggiungi autorizzazioni URL](https://experienceleague.adobe.com/it/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} per i passaggi.
 
 ### Versione 9400 {#build-9400}
 

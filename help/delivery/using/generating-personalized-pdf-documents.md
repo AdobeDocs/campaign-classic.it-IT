@@ -23,9 +23,9 @@ subfeature_v2:
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: e615a6fdd6dc78b2c5e80d6aeb92cd9291ccf5e7
 workflow-type: tm+mt
-source-wordcount: 461
+source-wordcount: 533
 ht-degree: 1%
 
 ---
@@ -64,6 +64,10 @@ La procedura per la generazione di tabelle dinamiche è la seguente:
 
 ## Inserisci immagini esterne {#inserting-external-images}
 
+>[!IMPORTANT]
+>
+>La versione 7.4.4 (build 9401) include un aggiornamento dell’elenco consentiti dell’URL esterno. Accertati che i domini utilizzati per le immagini esterne negli allegati vengano aggiunti all’elenco consentiti approvato dell’istanza in modo che le risorse continuino a caricarsi senza interruzioni. In qualità di amministratore di Campaign, utilizza il Pannello di controllo Campaign per aggiungere e gestire gli URL inseriti nell’elenco Consentiti. Consulta [Aggiungi autorizzazioni URL](https://experienceleague.adobe.com/it/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} per i passaggi.
+
 L’inserimento di immagini esterne è utile, ad esempio, se desideri personalizzare un documento con un’immagine il cui URL viene inserito in un campo del destinatario.
 
 A questo scopo, devi configurare un blocco di personalizzazione, quindi includere nell’allegato una chiamata al blocco di personalizzazione.
@@ -87,8 +91,8 @@ A questo scopo, devi configurare un blocco di personalizzazione, quindi includer
 
   Devi distinguere due tipi di dichiarazioni all’interno del blocco di personalizzazione:
 
-   * Il codice Adobe Campaign dei campi di personalizzazione per i quali le virgolette &quot;aperta&quot; e &quot;chiusa&quot; devono essere sostituite con caratteri di escape (rispettivamente `&lt;` e `&gt;`).
-   * L&#39;intero codice XML OpenOffice verrà copiato nel documento OpenOffice.
+  * Il codice Adobe Campaign dei campi di personalizzazione per i quali le virgolette &quot;aperta&quot; e &quot;chiusa&quot; devono essere sostituite con caratteri di escape (rispettivamente `&lt;` e `&gt;`).
+  * L&#39;intero codice XML OpenOffice verrà copiato nel documento OpenOffice.
 
 Nell’esempio, il blocco di personalizzazione si presenta così:
 

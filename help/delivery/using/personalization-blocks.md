@@ -22,10 +22,10 @@ subfeature_v2:
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: e615a6fdd6dc78b2c5e80d6aeb92cd9291ccf5e7
 workflow-type: tm+mt
-source-wordcount: 894
-ht-degree: 5%
+source-wordcount: 988
+ht-degree: 6%
 
 ---
 
@@ -135,6 +135,10 @@ Per impostazione predefinita, è disponibile un elenco di blocchi di personalizz
 * **[!UICONTROL Offer acceptance URL in unitary mode]** : inserisce un URL che consente di impostare un&#39;offerta di interazione su **[!UICONTROL Accepted]** (vedere [questa sezione](../../interaction/using/offer-analysis-report.md)).
 
 ## Definire i blocchi di personalizzazione personalizzati {#defining-custom-personalization-blocks}
+
+>[!IMPORTANT]
+>
+>La versione 7.4.4 (build 9401) include un aggiornamento dell’elenco consentiti dell’URL esterno. Se un blocco di personalizzazione personalizzato fa riferimento a un URL esterno (ad esempio, un’immagine ospitata esternamente), assicurati che il dominio venga aggiunto all’elenco consentiti approvato della tua istanza in modo che la risorsa continui a caricarsi senza interruzioni. In qualità di amministratore di Campaign, utilizza il Pannello di controllo Campaign per aggiungere e gestire gli URL inseriti nell’elenco Consentiti. Consulta [Aggiungi autorizzazioni URL](https://experienceleague.adobe.com/it/docs/control-panel/using/instances-settings/url-permissions){target="_blank"} per i passaggi.
 
 Puoi definire nuovi campi di personalizzazione da inserire dall&#39;icona del campo personalizzato tramite il menu **[!UICONTROL Include...]**. Questi campi sono definiti in blocchi di personalizzazione.
 
