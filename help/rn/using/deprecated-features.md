@@ -1,298 +1,697 @@
----
-product: campaign
-title: Funzioni obsolete e rimosse di Campaign Classic
-description: In questa pagina sono elencate le funzioni obsolete e rimosse di Adobe Campaign Classic
-feature: Release Notes
-role: User
-level: Beginner
-exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-TQID: https://experienceleague.adobe.com/g1JuaL9ijMzzZ-OjRY5RNEvMBiX1rGtwKdq-mdKNiHI
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: b12f6872-9271-4369-85e5-86969a0b99a2
-  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
-subfeature_v2:
-  - id: bea9e610-36b4-4df2-94bb-0fb6fe46cb50
-  - id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0
-  - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
-  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
-workflow-type: tm+mt
-source-wordcount: 1787
-ht-degree: 99%
-
----
-
-# Funzioni obsolete e rimosse {#deprecated-and-removed-features}
-
-
-
-Adobe valuta costantemente le funzionalità dei prodotti per identificare le funzioni meno recenti da sostituire con alternative più moderne, al fine di migliorare il valore complessivo per il cliente, sempre con un’attenta considerazione della compatibilità con le versioni precedenti. Poiché Adobe Campaign Classic funziona con strumenti di terze parti, la compatibilità viene aggiornata regolarmente, al fine di implementare solo le versioni supportate. Le versioni non più compatibili con Adobe Campaign Classic sono elencate di seguito e nella [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
-
-Per comunicare l’imminente rimozione/sostituzione delle funzionalità di Campaign Classic, si applicano le seguenti regole:
-
-* Per prima cosa viene annunciato che una data funzione diventerà obsoleta. Le funzionalità obsolete possono restare disponibili e supportate per gli utenti esistenti, ma non saranno ulteriormente migliorate né documentate.
-* La rimozione delle funzionalità obsolete viene effettuata non prima della versione successiva. La data prevista di rimozione viene annunciata su questa pagina.
-
-Questo processo offre ai clienti almeno un ciclo di pubblicazione per adattare la loro implementazione a una nuova versione o alla funzionalità che sostituirà quella obsoleta, prima della rimozione effettiva.
-
->[!NOTE]
->Le versioni e le nuove funzionalità di Adobe Campaign sono elencate nelle [Note sulla versione](../../rn/using/latest-release.md).
-
-## Funzioni obsolete {#deprecated-features}
-
-In questa sezione sono elencate le funzionalità contrassegnate come obsolete con le ultime versioni di Campaign Classic.
-
-In genere, le funzioni che si prevede di rimuovere in una versione futura vengono inizialmente catalogate come obsolete. Queste funzionalità non sono più disponibili per i nuovi clienti di Campaign Classic o non devono essere utilizzate per alcuna nuova implementazione. Vengono inoltre rimosse dalla documentazione del prodotto.
-
-I clienti sono invitati a verificare se utilizzano la funzionalità nella distribuzione corrente e a pianificare la modifica della loro implementazione. Fai riferimento alla data prevista di rimozione per pianificare di conseguenza gli aggiornamenti di ambiente e progetto.
-
-<table> 
- <tbody> 
-   <tr>
-   <td><strong>Funzionalità</strong></td>
-   <td><strong>Dettagli</strong></td>
-  </tr>
-  <tr>
- <td>Connettore SMPP Netsize</td>
- <td><p>Il connettore SMPP Netsize è ora obsoleto. Si consiglia di eseguire la migrazione al connettore <strong>SMPP generico esteso</strong>. Per ulteriori informazioni, consulta <a href="../../delivery/using/unsupported-connector-migration.md">questa pagina</a>.</p>
-<p>Data prevista di rimozione: luglio 2027</p>
-</td>
-</tr>
-<tr>
- <td>SDK precedente di Campaign (Neolane)</td>
- <td><p>L’SDK Campaign (Neolane) per applicazioni mobili è ora obsoleto. Al suo posto, puoi utilizzare l’SDK per Adobe Experience Platform Mobile configurando l’estensione Adobe Campaign nell’interfaccia utente di raccolta dati. L’SDK di Adobe Experience Platform Mobile aiuta ad potenziare soluzioni e servizi di Experience Cloud di Adobe nelle app mobili. La configurazione degli SDK viene gestita tramite l’interfaccia utente di raccolta dati, per un’impostazione flessibile e integrazioni estensibili basate su regole. Scopri come configurare il canale app mobile nella <a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/push/push-settings">Documentazione di Campaign v8</a>.</p>
-</td>
-</tr>
-<tr>
- <td>Social Marketing con Facebook</td>
- <td><p>Il Social Marketing con Facebook è ora obsoleto. Per pubblicare sui social media o lavorare con Adobe per creare un canale personalizzato, è possibile utilizzare l’integrazione con X (precedentemente noto come Twitter).</p>
-  <!--p>Target removal date: End of 2023</p-->
-  </td>
-</tr>
-<tr>
- <td>Connettore ACS</td>
- <td><p>Il connettore ACS (offerta Prime) è ora obsoleto. È possibile utilizzare le funzionalità di esportazione/importazione di Campaign per estrarre e inserire dati in entrambi i prodotti.</p>
-  <!--p>Target removal date: End of 2023</p-->
-  </td>
-</tr>
- </tbody> 
-</table>
-
-## Funzioni rimosse {#removed-features}
-
-In questa sezione sono elencate le funzionalità rimosse da Campaign Classic.
-
-<table> 
- <tbody>
-  <tr> 
-   <td><strong>Funzionalità</strong></td>
-   <td><strong>Dettagli</strong></td>
-  <tr>  
-      <tr>
-  <td>Connettore dati Adobe Analytics<br></td>
-   <td><p>Connettore dati Adobe Analytics è stato rimosso il 17 agosto 2022. È stato dichiarato obsoleto con la versione 21.1.3 di Campaign.</p>
-   <p>Se utilizzi questo connettore, devi adattare di conseguenza l’implementazione. <a href="../../integrations/using/gs-aa.md">Ulteriori informazioni</a></p>
-  </td>
- </tr>
-    <tr>
-  <td>Rapporto tecnico di monitoraggio del recapito<br></td>
-   <td><p>Il rapporto tecnico di monitoraggio del recapito non è più disponibile. È stato dichiarato obsoleto con la versione 21.1.3 di Campaign.</p>
-   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
-  </td>
- </tr>
-  <tr>
-  <td>Autenticazione OAuth (OAuth e JWT)<br></td>
-  <td><p> L’autenticazione dell’integrazione di Triggers per accedere alla pipeline, originariamente basata sulla configurazione di autenticazione OAuth, è ora stata cambiata e spostata in Adobe I/O. Questa modalità di autenticazione è stata dichiarata obsoleta con la versione 20.3 di Campaign.<p>
-  <p>Se utilizzi l’integrazione Triggers, consulta <a href="../../integrations/using/about-triggers.md#implement">questa pagina</a> per informazioni su come adattare la tua implementazione.</p> 
-  <p>Per ulteriori informazioni sulla obsolescenza dell’autenticazione OAuth, fare riferimento a questa <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">pagina</a></p> 
-  <!--p><em>Target removal date: October 20, 2021. Hosted environments benefit from an extension until May 25, 2022. </em></p-->
-  </td>
-  </tr>
-   <td>Generazione rapporti<br></td>
-   <td><p>In seguito alla fine del ciclo di vita di Adobe Flash Player, il rapporto si misurazione e il motore di rendering del grafico non sono più disponibili. <a href="../../reporting/using/creating-a-new-report.md">Ulteriori informazioni</a></p>
-  </tr>
-  <tr>  
-   <td>Canale fax<br></td>
-   <td><p>A partire dalla versione di Campaign 21.1.3, il canale fax non è più disponibile. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it" target="_blank">Ulteriori informazioni nella documentazione di Campaign v8</a></p>
-  </tr>
-  <tr>
-  <td>Dominio demdex<br></td>
-  <td><p> A partire dalla versione di Campaign 21.1.3, il dominio demdex utilizzato per importare ed esportare i tipi di pubblico in Adobe Experience Cloud è diventato obsoleto. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Ulteriori informazioni</a></p> 
-  </td>
-  </tr>
-   <tr> 
-   <td>Autenticazione Windows NT<br></td>
-   <td><p>A partire dalla versione 20.3 di Campaign, l’autenticazione con Windows NT è stata rimossa dai metodi di autenticazione disponibili durante la configurazione di un nuovo database con Microsoft SQL Server... <a href="../../installation/using/creating-and-configuring-the-database.md#step-1---selecting-the-database-engine">Ulteriori informazioni</a></p></td>
-  </tr>
-   <tr> 
-   <td>Archiviazione di e-mail basata su file<br></td>
-   <td><p>A partire dalla versione 20.2 di Campaign, l’archiviazione di e-mail basata su file non è più disponibile. L’archiviazione delle e-mail è ora disponibile tramite un indirizzo e-mail CCN dedicato. <a href="../../installation/using/email-archiving.md">Ulteriori informazioni</a></p></td>
-  </tr> 
-   <tr> 
-   <td>Gestione lead</td>
-   <td><p>A partire dalla versione 20.2 di Campaign, il pacchetto Gestione lead non è più disponibile. Funzionalità simili possono essere implementate tramite altre attività del flusso di lavoro native e modifiche apportate ai modelli di dati.</p></td>
-   </tr>
-   <tr>
-   <td>Documentazione sulle API di Campaign - file jsapi.chm</td>
-   <td>A partire dalla versione 19.1 di Campaign, le API Campaign Classic sono disponibili in una pagina dedicata. Se stavi utilizzando il file jsapi.chm legacy, ora devi fare riferimento alla <a href="https://experienceleague.adobe.com/it/tools/campaign-api">nuova versione online</a>.</td>
-  </tr> 
-  <tr> 
-   <td>Orchestrazione delle campagne - Marketing predittivo</td>
-   <td>A partire dalla versione 18.10 di Campaign, le funzionalità di marketing predittivo non sono più disponibili.</td>
-  </tr> 
-  <tr> 
-   <td>Applicazioni web - Micrositi</td>
-   <td>A partire dalla versione 18.10 di Campaign, i micrositi non sono più disponibili. Puoi migliorare la protezione limitando l’accesso solo ai domini dedicati nei file di configurazione di Adobe Campaign e utilizzando URL personalizzati in Campaign tramite gli alias DNS.</td>
-  </tr> 
-  <tr> 
-   <td>Notifiche push - Connettore binario iOS</td>
-   <td>Sulla base della raccomandazione di Apple, Adobe ha rimosso il connettore binario iOS legacy a partire dalla versione 18.10 di Campaign. Il connettore più efficiente e potente basato su HTTP/2 è già disponibile.</td>
-  </tr> 
-  <tr> 
-   <td>API decryptString</td>
-   <td><p>A partire dalla versione 18.6 di Campaign, per motivi di sicurezza, l’API <em>decryptString</em> non è più disponibile per impostazione predefinita per le nuove installazioni.</p> 
-   <p>Nel contesto di un aggiornamento successivo alla versione 18.6 (e versioni successive), questa API non viene più attivata ed è stata sostituita dalla funzione <em>decryptPassword</em>. <a href="https://experienceleague.adobe.com/it/tools/campaign-api">Ulteriori informazioni</a></p></td>
-  </tr> 
-   <tr> 
-   <td>Canale mobile - Messaggi push MMS e WAP</td>
-   <td>A partire dalla versione 18.4 di Campaign, i canali push MMS e Wap non sono più disponibili. In sostituzione, puoi utilizzare le consegne <a href="../../delivery/using/sms-channel.md">SMS</a> e <a href="../../delivery/using/about-mobile-app-channel.md">Push</a>.</td>
-  </tr> 
-   <tr> 
-   <td>Canale mobile - LINE v1</td>
-   <td>A partire dalla versione 18.4 di Campaign, il pacchetto LINE Connect non è più disponibile. Adobe consiglia di utilizzare il nuovo pacchetto LINE Channel come alternativa. <a href="../../delivery/using/line-channel.md">Ulteriori informazioni</a></td>
-  </tr>
- </tbody> 
-</table>
-
-<!--
-## Deprecated compatibility {#deprecated-compatibility}
-
-The following systems are deprecated for Campaign Classic. Please refer to the [Compatibility matrix](../../rn/using/compatibility-matrix.md) to upgrade to a newer version or move to a new system before the compatibility ends.
--->
-
-## Fine della compatibilità {#end-of-compatibility}
-
->[!CAUTION]
->
->Adobe Campaign Classic è compatibile con tutti i sistemi e gli strumenti elencati nella [Matrice di compatibilità](../../rn/using/compatibility-matrix.md). Quando versioni specifiche di questi sistemi e strumenti di terze parti raggiungono la fine del ciclo di vita (EOL) con i rispettivi creatori, Adobe Campaign non è più compatibile con tali versioni: vengono classificate come obsolete e quindi rimosse dalla matrice di compatibilità nella versione del prodotto successiva. Assicurati di disporre delle versioni supportate di tutti i sistemi elencati nella matrice di compatibilità per evitare problemi.
-
-### Console client {#client-console-eol}
-
-La console del client di Adobe Campaign Classic non può più essere eseguita sui seguenti sistemi in quanto sono stati dichiarati obsoleti dai rispettivi editor. I clienti che eseguono la console del client di Campaign in una di queste versioni devono effettuare l’aggiornamento alla versione più recente prima della data prevista di rimozione. Consulta la [Matrice di compatibilità](../../rn/using/compatibility-matrix.md).
-
-* Windows Server 2003, 2008, 2008 R2
-* Windows 7, XP, Vista
-
->[!NOTE]
->A partire dalla versione 20.1 di Campaign, la console del client a 32 bit di Campaign Classic non è più compatibile con le versioni più recenti di Campaign. È necessario utilizzare la console del client a 64 bit.
-
-### Sistemi operativi {#o-s-eol}
-
-* A partire dalla versione 7.3.4, Adobe Campaign non è più compatibile con Red Hat Enterprise Linux (RHEL) 7.
-
-* A partire dalla versione 7.3.1, Adobe Campaign non è più compatibile con Windows 8 e Windows Server 2012.
-
-* A partire dalla versione 22.1, Adobe Campaign non è più compatibile con CentOs 8.x (64 bit). CentOS Linux 8 ha raggiunto la fine del ciclo di vita (EOL) il 31 dicembre 2021. [Ulteriori informazioni](https://www.centos.org/centos-linux-eol/).
-
-  Se utilizzavi questo sistema operativo, adatta di conseguenza la tua implementazione. CentOS 7.x (64 bit) e RHEL 8.x/7.x (64 bit) sono ancora supportati.
-
-* A partire dalla versione 21.1.3, Adobe Campaign non è più compatibile con Debian 8.
-
-* A partire dalla versione 19.1, Adobe Campaign non è più compatibile con i seguenti sistemi operativi.
-
-  * CentOs 6. [Ulteriori informazioni](https://wiki.centos.org/Download)
-  * Debian 7. [Ulteriori informazioni](https://wiki.debian.org/DebianReleases)
-  * RHEL 6.x [Ulteriori informazioni](https://access.redhat.com/support/policy/updates/errata)
-  * Windows Server 2008. [Ulteriori informazioni](https://support.microsoft.com/it-it/lifecycle/search/1163)
-  * SLES 11. [Ulteriori informazioni](https://www.suse.com/lifecycle)
-
-### Server web {#web-server-eol}
-
-A partire dalla versione 19.1 di primavera, Adobe Campaign non è più compatibile con il seguente server web.
-
-* Apache 2.2. [Ulteriori informazioni](https://httpd.apache.org/)
-* Microsoft IIS 7. [Ulteriori informazioni](https://support.microsoft.com/it-it/lifecycle/search/810)
-
-### Strumenti {#tools-eol}
-
-A partire dalla versione 19.1 di primavera, Adobe Campaign non è più compatibile con i seguenti strumenti.
-
-* Java JDK 7. [Ulteriori informazioni](https://www.oracle.com/technetwork/java/javase/eol-135779.html)
-* Libre Office 3.5 / 4.3 / 5.x, tranne quando incorporato in un altro strumento. [Ulteriori informazioni](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
-
-### Motori di database {#dbe-eol}
-
-Adobe non supporta i seguenti motori di database in quanto sono stati dichiarati obsoleti dai rispettivi editor. I clienti che eseguono queste versioni devono effettuare l’aggiornamento alla versione più recente o passare a un’altra versione.
-
-Per accedere all’elenco delle versioni compatibili, consulta la [Matrice di compatibilità di Campaign](../../rn/using/compatibility-matrix.md).
-
-**FEDERATED DATA ACCESS (FDA)**
-
-A partire dalla versione 20.2, Adobe Campaign non è più compatibile con i seguenti server FDA:
-
-* DB2 UDB 10.5
-
-A partire dalla versione 19.1 di primavera, Adobe Campaign non è più compatibile con i seguenti server FDA:
-
-* PostgreSQL 9.3.
-* MySQL 5.5.
-* DB2 9.5.
-* Teradata 14 - 14.1.
-
-Campaign Classic non è compatibile con i seguenti server in Federated Data Access (FDA). Utilizza versioni o sistemi più recenti.
-
-* DB2 UDB 9.5, 9.7.
-* Oracle 9i, 10G R2.
-* Le versioni PostgreSQL fino a 9.6 hanno raggiunto la fine del ciclo di vita.
-* MSSQL 2000, 2005, 2008 R2.
-* MySQL 5.1.
-* InfiniDB ha raggiunto la fine del ciclo di vita.
-* Teradata 13, 13.1.
-* Netezza 6.02, 7.0. Netezza ha raggiunto la fine del ciclo di vita.
-* AsterData 5.0 AsterData ha raggiunto la fine del ciclo di vita.
-* Sybase IQ 15.2, 15.4, 15.5 e Sybase ASE 15.0.
-* Hadoop tramite HiveSQL: Hadoop 2.7.3, HiveSQL 1.2.1. Adobe Campaign Classic supporta ancora le versioni elencate di Hadoop tramite HiveSQL attraverso Federated Data Access (FDA), ma queste versioni vengono unite con: HortonWorks (HDP 2.4.X, 2.5.x, 2.6.x) and HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)
-
-**SERVER RDBMS**
-
-A partire dalla versione 19.1 di primavera, Adobe Campaign non è più compatibile con i seguenti server RDBMS:
-
-* Oracle 10GR2
-* PostgreSQL da 9.0 a 9.3
-* SQL Server 2005
-* MySQL 5.1
-* DB2 UDB 9.7
-
-Le versioni PostgreSQL fino a 9.6 hanno raggiunto la fine del ciclo di vita. Non sono pertanto supportate da Adobe Campaign.
-
-### Connettori SMS {#sms-eol}
-
-A partire dalla versione 20.2, i seguenti connettori legacy SMS sono diventati obsoleti. Adobe Campaign non è compatibile con:
-
-* SMPP generico (SMPP versione 3.4 che supporta la modalità binaria)
-* Sybase365 (SAP SMS 365)
-* Comunicazioni CLX
-* Tele2
-* O2
-* iOS
-
-### Connettori CRM {#crm-connectors}
-
-A partire da Campaign 21.1, i seguenti connettori CRM non sono più compatibili con Campaign:
-
-* API Soap - On-premise: 2007, 2015, 2016
-* API Soap - Online: 2015, 2016
-* API web: Microsoft Dynamics CRM 2016
-* API web: Microsoft Dynamics CRM 2016 aggiornamento 1
-* API Oracle On Demand
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" version="1.2" its:version="2.0">
+<file original="help/rn/using/deprecated-features.md.mdnouisc" source-language="en-US" target-language="en-XX" datatype="x-text/markdown">
+<body>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en-US">https://www.centos.org/centos-linux-eol/</source>
+<target xml:lang="en-XX">https://www.centos.org/centos-linux-eol/</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en-US">https://wiki.centos.org/Download</source>
+<target xml:lang="en-XX">https://wiki.centos.org/Download</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en-US">https://wiki.debian.org/DebianReleases</source>
+<target xml:lang="en-XX">https://wiki.debian.org/DebianReleases</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en-US">https://access.redhat.com/support/policy/updates/errata</source>
+<target xml:lang="en-XX">https://access.redhat.com/support/policy/updates/errata</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en-US">https://support.microsoft.com/en-us/lifecycle/search/1163</source>
+<target xml:lang="en-XX">https://support.microsoft.com/it-it/lifecycle/search/1163</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en-US">https://www.suse.com/lifecycle</source>
+<target xml:lang="en-XX">https://www.suse.com/lifecycle</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en-US">https://httpd.apache.org/</source>
+<target xml:lang="en-XX">https://httpd.apache.org/</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en-US">https://support.microsoft.com/en-us/lifecycle/search/810</source>
+<target xml:lang="en-XX">https://support.microsoft.com/it-it/lifecycle/search/810</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en-US">https://www.oracle.com/technetwork/java/javase/eol-135779.html</source>
+<target xml:lang="en-XX">https://www.oracle.com/technetwork/java/javase/eol-135779.html</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en-US">https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases</source>
+<target xml:lang="en-XX">https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases</target>
+</trans-unit>
+<trans-unit id="tu1" restype="x-YAML_METADATA_HEADER_VALUE" xml:space="preserve">
+<source xml:lang="en-US">Campaign Classic deprecated and removed features</source>
+<target xml:lang="en-XX">Funzioni obsolete e rimosse di Campaign Classic</target>
+</trans-unit>
+<trans-unit id="tu2" restype="x-YAML_METADATA_HEADER_VALUE" xml:space="preserve">
+<source xml:lang="en-US">This page lists deprecated and removed features in Adobe Campaign Classic</source>
+<target xml:lang="en-XX">In questa pagina sono elencate le funzioni obsolete e rimosse di Adobe Campaign Classic</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en-US">Deprecated and removed features</source>
+<target xml:lang="en-XX">Funzioni obsolete e rimosse</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en-US">Adobe constantly evaluates product capabilities to identify older features that should be replaced with more modern alternatives to improve overall customer value, always under careful consideration of backward compatibility. As Adobe Campaign Classic works with 3rd party tools, compatibility is updated on a regular basis, in order to implement supported versions only. Versions which are no longer compatible with Adobe Campaign Classic are listed below and in the <ph id="1" ctype="x-LINK">[</ph>Compatibility matrix<ph id="2" ctype="x-LINK">](../../rn/using/compatibility-matrix.md)</ph>.</source>
+<target xml:lang="en-XX">Adobe valuta costantemente le funzionalità dei prodotti per identificare le funzioni meno recenti da sostituire con alternative più moderne, al fine di migliorare il valore complessivo per il cliente, sempre con un’attenta considerazione della compatibilità con le versioni precedenti. Poiché Adobe Campaign Classic funziona con strumenti di terze parti, la compatibilità viene aggiornata regolarmente, al fine di implementare solo le versioni supportate. Le versioni non più compatibili con Adobe Campaign Classic sono elencate di seguito e nella <ph id="1" ctype="x-LINK">[</ph>Matrice di compatibilità<ph id="2" ctype="x-LINK">](../../rn/using/compatibility-matrix.md)</ph>.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en-US">To communicate the impending removal/replacement of Campaign Classic capabilities, the following rules apply:</source>
+<target xml:lang="en-XX">Per comunicare l’imminente rimozione/sostituzione delle funzionalità di Campaign Classic, si applicano le seguenti regole:</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en-US">Announcement of deprecation comes first. While deprecated capabilities can still be available and supported for existing users, they will not be further enhanced, nor documented.</source>
+<target xml:lang="en-XX">Per prima cosa viene annunciato che una data funzione diventerà obsoleta. Le funzionalità obsolete possono restare disponibili e supportate per gli utenti esistenti, ma non saranno ulteriormente migliorate né documentate.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en-US">Removal of deprecated capabilities will occur in the following release at the earliest. Actual target date for removal is announced in this page.</source>
+<target xml:lang="en-XX">La rimozione delle funzionalità obsolete viene effettuata non prima della versione successiva. La data prevista di rimozione viene annunciata su questa pagina.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en-US">This process gives customers at least one release cycle to adapt their implementation to a new version or successor of a deprecated capability, before actual removal.</source>
+<target xml:lang="en-XX">Questo processo offre ai clienti almeno un ciclo di pubblicazione per adattare la loro implementazione a una nuova versione o alla funzionalità che sostituirà quella obsoleta, prima della rimozione effettiva.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!NOTE">[!NOTE]</ph>
+</source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!NOTE">[!NOTE]</ph>
+</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en-US">Adobe Campaign releases and new capabilities are listed in the <ph id="1" ctype="x-LINK">[</ph>Release Notes<ph id="2" ctype="x-LINK">](../../rn/using/latest-release.md)</ph>.</source>
+<target xml:lang="en-XX">Le versioni e le nuove funzionalità di Adobe Campaign sono elencate nelle <ph id="1" ctype="x-LINK">[</ph>Note sulla versione<ph id="2" ctype="x-LINK">](../../rn/using/latest-release.md)</ph>.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en-US">Deprecated features</source>
+<target xml:lang="en-XX">Funzioni obsolete</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en-US">This section lists features and capabilities that have been marked as deprecated with latest Campaign Classic releases.</source>
+<target xml:lang="en-XX">In questa sezione sono elencate le funzionalità contrassegnate come obsolete con le ultime versioni di Campaign Classic.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en-US">Generally, features that are planned to be removed in a future release are set to deprecated first. These features and capabilities are either no longer available for new Campaign Classic customers, or should not be used for any new implementation. They are also removed from product documentation.</source>
+<target xml:lang="en-XX">In genere, le funzioni che si prevede di rimuovere in una versione futura vengono inizialmente catalogate come obsolete. Queste funzionalità non sono più disponibili per i nuovi clienti di Campaign Classic o non devono essere utilizzate per alcuna nuova implementazione. Vengono inoltre rimosse dalla documentazione del prodotto.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en-US">Customers are advised to review if they make use of the feature/capability in their current deployment, and make plans to change their implementation. Please refer to the target removal date to plan your environment and project updates accordingly.</source>
+<target xml:lang="en-XX">I clienti sono invitati a verificare se utilizzano la funzionalità nella distribuzione corrente e a pianificare la modifica della loro implementazione. Fai riferimento alla data prevista di rimozione per pianificare di conseguenza gli aggiornamenti di ambiente e progetto.</target>
+</trans-unit>
+<group id="sd1_ssf1" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf1_tu1" resname="sd1_2" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US">Feature</source>
+<target xml:lang="en-XX">Funzionalità</target>
+</trans-unit>
+<trans-unit id="sd1_sf1_tu2" resname="sd1_4" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US">Details</source>
+<target xml:lang="en-XX">Dettagli</target>
+</trans-unit>
+<trans-unit id="sd1_sf1_tu3" resname="sd1_6" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US">Netsize SMPP connector</source>
+<target xml:lang="en-XX">Connettore SMPP Netsize</target>
+</trans-unit>
+<trans-unit id="sd1_sf1_tu4" resname="sd1_8" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US"></source>
+<target xml:lang="en-XX"></target>
+</trans-unit>
+<trans-unit id="sd1_sf1_tu5" resname="sd1_9" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en-US">The Netsize SMPP connector is now deprecated. We recommend migrating to the <bpt id="1" ctype="x-strong">&lt;strong></bpt>Extended generic SMPP<ept id="1">&lt;/strong></ept> connector. For more information, refer to <bpt id="2" ctype="link">&lt;a href="../../delivery/using/unsupported-connector-migration.md"></bpt>this page<ept id="2">&lt;/a></ept>.</source>
+<target xml:lang="en-XX">Il connettore SMPP Netsize è ora obsoleto. Si consiglia di eseguire la migrazione al connettore <bpt id="1" ctype="x-strong">&lt;strong></bpt>SMPP generico esteso<ept id="1">&lt;/strong></ept>. Per ulteriori informazioni, consulta <bpt id="2" ctype="link">&lt;a href="../../delivery/using/unsupported-connector-migration.md"></bpt>questa pagina<ept id="2">&lt;/a></ept>.</target>
+</trans-unit>
+<trans-unit id="sd1_sf1_tu6" resname="sd1_11" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en-US">Target removal date: January 2027</source>
+<target xml:lang="en-XX">Data prevista di rimozione: luglio 2027</target>
+</trans-unit>
+<trans-unit id="sd1_sf1_tu7" resname="sd1_15" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US">Campaign (Neolane) legacy SDK</source>
+<target xml:lang="en-XX">SDK precedente di Campaign (Neolane)</target>
+</trans-unit>
+<trans-unit id="sd1_sf1_tu8" resname="sd1_17" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US"></source>
+<target xml:lang="en-XX"></target>
+</trans-unit>
+<trans-unit id="sd1_sf1_tu10" resname="sd1_18" restype="x-href" xml:space="preserve">
+<source xml:lang="en-US">https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/push-settings</source>
+<target xml:lang="en-XX">https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/push/push-settings</target>
+</trans-unit>
+<trans-unit id="sd1_sf1_tu9" resname="sd1_19" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en-US">The Campaign (Neolane) SDK for mobile applications is now deprecated. Instead, use the Adobe Experience Platform Mobile SDK by configuring the Adobe Campaign extension in the Data Collection UI. The Adobe Experience Platform Mobile SDK helps power Adobe's Experience Cloud solutions and services in your mobile apps. SDKs configuration is managed through the Data Collection UI for flexible configuration and extensible, rules-based integrations. Learn how to configure the Mobile App channel in <bpt id="1" ctype="link">&lt;a [#$sd1_sf1_tu10]&gt;</bpt>Campaign v8 documentation<ept id="1">&lt;/a></ept>.</source>
+<target xml:lang="en-XX">L’SDK Campaign (Neolane) per applicazioni mobili è ora obsoleto. Al suo posto, puoi utilizzare l’SDK per Adobe Experience Platform Mobile configurando l’estensione Adobe Campaign nell’interfaccia utente di raccolta dati. L’SDK di Adobe Experience Platform Mobile aiuta ad potenziare soluzioni e servizi di Experience Cloud di Adobe nelle app mobili. La configurazione degli SDK viene gestita tramite l’interfaccia utente di raccolta dati, per un’impostazione flessibile e integrazioni estensibili basate su regole. Scopri come configurare il canale app mobile nella <bpt id="1" ctype="link">&lt;a [#$sd1_sf1_tu10]&gt;</bpt>Documentazione di Campaign v8<ept id="1">&lt;/a></ept>.</target>
+</trans-unit>
+<trans-unit id="sd1_sf1_tu11" resname="sd1_23" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US">Social Marketing with Facebook</source>
+<target xml:lang="en-XX">Social Marketing con Facebook</target>
+</trans-unit>
+<trans-unit id="sd1_sf1_tu12" resname="sd1_25" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US"></source>
+<target xml:lang="en-XX"></target>
+</trans-unit>
+<trans-unit id="sd1_sf1_tu13" resname="sd1_26" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en-US">Social Marketing with Facebook is now deprecated. You can use X (formerly known as Twitter) integration to post on social media, or work with Adobe to create a custom channel.</source>
+<target xml:lang="en-XX">Il Social Marketing con Facebook è ora obsoleto. Per pubblicare sui social media o lavorare con Adobe per creare un canale personalizzato, è possibile utilizzare l’integrazione con X (precedentemente noto come Twitter).</target>
+</trans-unit>
+<trans-unit id="sd1_sf1_tu14" resname="sd1_30" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US">ACS Connector</source>
+<target xml:lang="en-XX">Connettore ACS</target>
+</trans-unit>
+<trans-unit id="sd1_sf1_tu15" resname="sd1_32" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US"></source>
+<target xml:lang="en-XX"></target>
+</trans-unit>
+<trans-unit id="sd1_sf1_tu16" resname="sd1_33" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en-US">ACS Connector (Prime offering) is now deprecated. You can use Campaign export/import capabilities to extract and inject data in both products.</source>
+<target xml:lang="en-XX">Il connettore ACS (offerta Prime) è ora obsoleto. È possibile utilizzare le funzionalità di esportazione/importazione di Campaign per estrarre e inserire dati in entrambi i prodotti.</target>
+</trans-unit>
+</group>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en-US">Removed features</source>
+<target xml:lang="en-XX">Funzioni rimosse</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en-US">This section lists features and capabilities that have been removed from Campaign Classic.</source>
+<target xml:lang="en-XX">In questa sezione sono elencate le funzionalità rimosse da Campaign Classic.</target>
+</trans-unit>
+<group id="sd1_ssf2" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf2_tu1" resname="sd1_2" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US">Feature</source>
+<target xml:lang="en-XX">Funzionalità</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu2" resname="sd1_4" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US">Details</source>
+<target xml:lang="en-XX">Dettagli</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu3" resname="sd1_6" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US">Adobe Analytics Data Connector</source>
+<target xml:lang="en-XX">Connettore dati Adobe Analytics</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu4" resname="sd1_8" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US"></source>
+<target xml:lang="en-XX"></target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu5" resname="sd1_9" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en-US">The Adobe Analytics Data Connector has been removed on August 17,2022. It had been deprecated with Campaign 21.1.3 release.</source>
+<target xml:lang="en-XX">Connettore dati Adobe Analytics è stato rimosso il 17 agosto 2022. È stato dichiarato obsoleto con la versione 21.1.3 di Campaign.</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu6" resname="sd1_11" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en-US">If you are using this connector, you need to adapt your implementation accordingly. <bpt id="1" ctype="link">&lt;a href="../../integrations/using/gs-aa.md"></bpt>Learn more<ept id="1">&lt;/a></ept></source>
+<target xml:lang="en-XX">Se utilizzi questo connettore, devi adattare di conseguenza l’implementazione. <bpt id="1" ctype="link">&lt;a href="../../integrations/using/gs-aa.md"></bpt>Ulteriori informazioni<ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu7" resname="sd1_15" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US">Technical Deliverability Monitoring Report</source>
+<target xml:lang="en-XX">Rapporto tecnico di monitoraggio del recapito</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu8" resname="sd1_17" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US"></source>
+<target xml:lang="en-XX"></target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu9" resname="sd1_18" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en-US">The Technical Deliverability Monitoring Report is no longer available. It had been deprecated with Campaign 21.1.3 release.</source>
+<target xml:lang="en-XX">Il rapporto tecnico di monitoraggio del recapito non è più disponibile. È stato dichiarato obsoleto con la versione 21.1.3 di Campaign.</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu10" resname="sd1_22" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US">OAuth Authentication (OAuth and JWT)</source>
+<target xml:lang="en-XX">Autenticazione OAuth (OAuth e JWT)</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu11" resname="sd1_24" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US"></source>
+<target xml:lang="en-XX"></target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu12" resname="sd1_25" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en-US"> Triggers integration authentication originally based on OAuth authentication setup to access pipeline has now been changed and moved to Adobe I/O. This authentication mode had been deprecated with Campaign 20.3 release.</source>
+<target xml:lang="en-XX"> L’autenticazione dell’integrazione di Triggers per accedere alla pipeline, originariamente basata sulla configurazione di autenticazione OAuth, è ora stata cambiata e spostata in Adobe I/O. Questa modalità di autenticazione è stata dichiarata obsoleta con la versione 20.3 di Campaign.</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu13" resname="sd1_26" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en-US">
+  </source>
+<target xml:lang="en-XX">
+  </target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu14" resname="sd1_27" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en-US">If you were using Triggers integration, learn how to adapt your implementation <bpt id="1" ctype="link">&lt;a href="../../integrations/using/about-triggers.md#implement"></bpt>in this page<ept id="1">&lt;/a></ept>.</source>
+<target xml:lang="en-XX">Se utilizzi l’integrazione Triggers, consulta <bpt id="1" ctype="link">&lt;a href="../../integrations/using/about-triggers.md#implement"></bpt>questa pagina<ept id="1">&lt;/a></ept> per informazioni su come adattare la tua implementazione.</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu16" resname="sd1_29" restype="x-href" xml:space="preserve">
+<source xml:lang="en-US">https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md</source>
+<target xml:lang="en-XX">https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu15" resname="sd1_30" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en-US">For more information on OAuth Authentication depreciation, refer to this <bpt id="1" ctype="link">&lt;a [#$sd1_sf2_tu16]&gt;</bpt>page<ept id="1">&lt;/a></ept></source>
+<target xml:lang="en-XX">Per ulteriori informazioni sulla obsolescenza dell’autenticazione OAuth, fare riferimento a questa <bpt id="1" ctype="link">&lt;a [#$sd1_sf2_tu16]&gt;</bpt>pagina<ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu17" resname="sd1_34" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US">Reporting</source>
+<target xml:lang="en-XX">Generazione rapporti</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu18" resname="sd1_36" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US"></source>
+<target xml:lang="en-XX"></target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu19" resname="sd1_37" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en-US">Following Adobe Flash Player EOL, the Gauge report and Chart rendering engine are no longer available. <bpt id="1" ctype="link">&lt;a href="../../reporting/using/creating-a-new-report.md"></bpt>Learn more<ept id="1">&lt;/a></ept></source>
+<target xml:lang="en-XX">In seguito alla fine del ciclo di vita di Adobe Flash Player, il rapporto si misurazione e il motore di rendering del grafico non sono più disponibili. <bpt id="1" ctype="link">&lt;a href="../../reporting/using/creating-a-new-report.md"></bpt>Ulteriori informazioni<ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu20" resname="sd1_39" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US">Fax channel</source>
+<target xml:lang="en-XX">Canale fax</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu21" resname="sd1_41" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US"></source>
+<target xml:lang="en-XX"></target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu23" resname="sd1_42" restype="x-href" xml:space="preserve">
+<source xml:lang="en-US">https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html</source>
+<target xml:lang="en-XX">https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu22" resname="sd1_43" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en-US">Starting Campaign 21.1.3 release, the Fax channel is no longer available. <bpt id="1" ctype="link">&lt;a [#$sd1_sf2_tu23] target="_blank"></bpt>Learn more in the Campaign v8 documentation<ept id="1">&lt;/a></ept></source>
+<target xml:lang="en-XX">A partire dalla versione di Campaign 21.1.3, il canale fax non è più disponibile. <bpt id="1" ctype="link">&lt;a [#$sd1_sf2_tu23] target="_blank"></bpt>Ulteriori informazioni nella documentazione di Campaign v8<ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu24" resname="sd1_45" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US">Demdex domain</source>
+<target xml:lang="en-XX">Dominio demdex</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu25" resname="sd1_47" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US"></source>
+<target xml:lang="en-XX"></target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu26" resname="sd1_48" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en-US"> Starting Campaign 21.1.3 release, the demdex domain used to import and export audiences to the Adobe Experience Cloud is no longer available. <bpt id="1" ctype="link">&lt;a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md"></bpt>Learn more<ept id="1">&lt;/a></ept></source>
+<target xml:lang="en-XX"> A partire dalla versione di Campaign 21.1.3, il dominio demdex utilizzato per importare ed esportare i tipi di pubblico in Adobe Experience Cloud è diventato obsoleto. <bpt id="1" ctype="link">&lt;a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md"></bpt>Ulteriori informazioni<ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu27" resname="sd1_52" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US">Windows NT authentication</source>
+<target xml:lang="en-XX">Autenticazione Windows NT</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu28" resname="sd1_54" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US"></source>
+<target xml:lang="en-XX"></target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu29" resname="sd1_55" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en-US">Starting Campaign 20.3 release, Windows NT authentication has been removed from the available authentication methods when configuring a new database with a Microsoft SQL Server.. <bpt id="1" ctype="link">&lt;a href="../../installation/using/creating-and-configuring-the-database.md#step-1---selecting-the-database-engine"></bpt>Learn more<ept id="1">&lt;/a></ept></source>
+<target xml:lang="en-XX">A partire dalla versione 20.3 di Campaign, l’autenticazione con Windows NT è stata rimossa dai metodi di autenticazione disponibili durante la configurazione di un nuovo database con Microsoft SQL Server... <bpt id="1" ctype="link">&lt;a href="../../installation/using/creating-and-configuring-the-database.md#step-1---selecting-the-database-engine"></bpt>Ulteriori informazioni<ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu30" resname="sd1_58" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US">File-based email archiving</source>
+<target xml:lang="en-XX">Archiviazione di e-mail basata su file</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu31" resname="sd1_60" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US"></source>
+<target xml:lang="en-XX"></target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu32" resname="sd1_61" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en-US">Starting Campaign 20.2 release, file-based email archiving is no longer available. Email archiving is now available through a dedicated BCC email address. <bpt id="1" ctype="link">&lt;a href="../../installation/using/email-archiving.md"></bpt>Learn more<ept id="1">&lt;/a></ept></source>
+<target xml:lang="en-XX">A partire dalla versione 20.2 di Campaign, l’archiviazione di e-mail basata su file non è più disponibile. L’archiviazione delle e-mail è ora disponibile tramite un indirizzo e-mail CCN dedicato. <bpt id="1" ctype="link">&lt;a href="../../installation/using/email-archiving.md"></bpt>Ulteriori informazioni<ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu33" resname="sd1_64" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US">Lead management</source>
+<target xml:lang="en-XX">Gestione lead</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu34" resname="sd1_66" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US"></source>
+<target xml:lang="en-XX"></target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu35" resname="sd1_67" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en-US">Starting Campaign 20.2 release, the Leads Management package is no longer available. Similar functionality can be implemented via other native workflow activities and data model modifications.</source>
+<target xml:lang="en-XX">A partire dalla versione 20.2 di Campaign, il pacchetto Gestione lead non è più disponibile. Funzionalità simili possono essere implementate tramite altre attività del flusso di lavoro native e modifiche apportate ai modelli di dati.</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu36" resname="sd1_70" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US">Campaign APIs documentation - jsapi.chm file</source>
+<target xml:lang="en-XX">Documentazione sulle API di Campaign - file jsapi.chm</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu38" resname="sd1_72" restype="x-href" xml:space="preserve">
+<source xml:lang="en-US">https://experienceleague.adobe.com/en/tools/campaign-api</source>
+<target xml:lang="en-XX">https://experienceleague.adobe.com/it/tools/campaign-api</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu37" resname="sd1_73" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US">Starting Campaign 19.1 release, Campaign Classic APIs are available in a dedicated page. If you were using the legacy jsapi.chm file, you should now refer to <bpt id="1" ctype="link">&lt;a [#$sd1_sf2_tu38]&gt;</bpt>the new online version<ept id="1">&lt;/a></ept>.</source>
+<target xml:lang="en-XX">A partire dalla versione 19.1 di Campaign, le API Campaign Classic sono disponibili in una pagina dedicata. Se stavi utilizzando il file jsapi.chm legacy, ora devi fare riferimento alla <bpt id="1" ctype="link">&lt;a [#$sd1_sf2_tu38]&gt;</bpt>nuova versione online<ept id="1">&lt;/a></ept>.</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu39" resname="sd1_75" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US">Campaign Orchestration - Predictive marketing</source>
+<target xml:lang="en-XX">Orchestrazione delle campagne - Marketing predittivo</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu40" resname="sd1_77" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US">Starting Campaign 18.10 release, the predictive marketing capabilities are no longer available.</source>
+<target xml:lang="en-XX">A partire dalla versione 18.10 di Campaign, le funzionalità di marketing predittivo non sono più disponibili.</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu41" resname="sd1_79" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US">Web applications - Microsites</source>
+<target xml:lang="en-XX">Applicazioni web - Micrositi</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu42" resname="sd1_81" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US">Starting Campaign 18.10 release, Microsites are no longer available. You can improve security by restricting access to only dedicated domains on Adobe Campaign configuration files, and use personalized URLs in Campaign by using DNS aliases.</source>
+<target xml:lang="en-XX">A partire dalla versione 18.10 di Campaign, i micrositi non sono più disponibili. Puoi migliorare la protezione limitando l’accesso solo ai domini dedicati nei file di configurazione di Adobe Campaign e utilizzando URL personalizzati in Campaign tramite gli alias DNS.</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu43" resname="sd1_83" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US">Push Notifications - iOS Binary Connector</source>
+<target xml:lang="en-XX">Notifiche push - Connettore binario iOS</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu44" resname="sd1_85" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US">Per Apple's recommendation, Adobe has removed the legacy iOS Binary Connector starting Campaign 18.10 release. The more capable and more efficient HTTP/2-based connector is already available.</source>
+<target xml:lang="en-XX">Sulla base della raccomandazione di Apple, Adobe ha rimosso il connettore binario iOS legacy a partire dalla versione 18.10 di Campaign. Il connettore più efficiente e potente basato su HTTP/2 è già disponibile.</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu45" resname="sd1_87" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US">decryptString API</source>
+<target xml:lang="en-XX">API decryptString</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu46" resname="sd1_89" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US"></source>
+<target xml:lang="en-XX"></target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu47" resname="sd1_90" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en-US">Starting Campaign 18.6 release, for security reasons, <bpt id="1" ctype="x-em">&lt;em></bpt>decryptString<ept id="1">&lt;/em></ept> API is no longer available by default for new installations.</source>
+<target xml:lang="en-XX">A partire dalla versione 18.6 di Campaign, per motivi di sicurezza, l’API <bpt id="1" ctype="x-em">&lt;em></bpt>decryptString<ept id="1">&lt;/em></ept> non è più disponibile per impostazione predefinita per le nuove installazioni.</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu49" resname="sd1_92" restype="x-href" xml:space="preserve">
+<source xml:lang="en-US">https://experienceleague.adobe.com/en/tools/campaign-api</source>
+<target xml:lang="en-XX">https://experienceleague.adobe.com/it/tools/campaign-api</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu48" resname="sd1_93" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en-US">In the context of a postupgrade to 18.6 (and later), this API is no longer activated, and has been replaced by the <bpt id="1" ctype="x-em">&lt;em></bpt>decryptPassword<ept id="1">&lt;/em></ept> function. <bpt id="2" ctype="link">&lt;a [#$sd1_sf2_tu49]&gt;</bpt>Learn more<ept id="2">&lt;/a></ept></source>
+<target xml:lang="en-XX">Nel contesto di un aggiornamento successivo alla versione 18.6 (e versioni successive), questa API non viene più attivata ed è stata sostituita dalla funzione <bpt id="1" ctype="x-em">&lt;em></bpt>decryptPassword<ept id="1">&lt;/em></ept>. <bpt id="2" ctype="link">&lt;a [#$sd1_sf2_tu49]&gt;</bpt>Ulteriori informazioni<ept id="2">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu50" resname="sd1_96" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US">Mobile channel - MMS and WAP Push messages</source>
+<target xml:lang="en-XX">Canale mobile - Messaggi push MMS e WAP</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu51" resname="sd1_98" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US">Starting Campaign 18.4 release, MMS and Wap Push channels are no longer available. As a replacement, you can leverage <bpt id="1" ctype="link">&lt;a href="../../delivery/using/sms-channel.md"></bpt>SMS<ept id="1">&lt;/a></ept> and <bpt id="2" ctype="link">&lt;a href="../../delivery/using/about-mobile-app-channel.md"></bpt>Push<ept id="2">&lt;/a></ept> deliveries.</source>
+<target xml:lang="en-XX">A partire dalla versione 18.4 di Campaign, i canali push MMS e Wap non sono più disponibili. In sostituzione, puoi utilizzare le consegne <bpt id="1" ctype="link">&lt;a href="../../delivery/using/sms-channel.md"></bpt>SMS<ept id="1">&lt;/a></ept> e <bpt id="2" ctype="link">&lt;a href="../../delivery/using/about-mobile-app-channel.md"></bpt>Push<ept id="2">&lt;/a></ept>.</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu52" resname="sd1_100" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US">Mobile channel - LINE v1</source>
+<target xml:lang="en-XX">Canale mobile - LINE v1</target>
+</trans-unit>
+<trans-unit id="sd1_sf2_tu53" resname="sd1_102" restype="x-td" xml:space="preserve">
+<source xml:lang="en-US">Starting Campaign 18.4 release, LINE Connect package is no longer available. Adobe recommends using the new LINE Channel package as a replacement. <bpt id="1" ctype="link">&lt;a href="../../delivery/using/line-channel.md"></bpt>Learn more<ept id="1">&lt;/a></ept></source>
+<target xml:lang="en-XX">A partire dalla versione 18.4 di Campaign, il pacchetto LINE Connect non è più disponibile. Adobe consiglia di utilizzare il nuovo pacchetto LINE Channel come alternativa. <bpt id="1" ctype="link">&lt;a href="../../delivery/using/line-channel.md"></bpt>Ulteriori informazioni<ept id="1">&lt;/a></ept></target>
+</trans-unit>
+</group>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en-US">End of compatibility</source>
+<target xml:lang="en-XX">Fine della compatibilità</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!CAUTION">[!CAUTION]</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!CAUTION">[!CAUTION]</ph></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en-US">Adobe Campaign Classic is compatible with all the systems and tools listed in the <ph id="1" ctype="x-LINK">[</ph>Compatibility matrix<ph id="2" ctype="x-LINK">](../../rn/using/compatibility-matrix.md)</ph>. When specific versions of these 3rd party systems and tools reach end-of-life (EOL) with their respective creators, Adobe Campaign is no longer compatible with those versions: they are announced as deprecated, and then are removed from our compatibility matrix in the subsequent product release. Please ensure you are on supported versions of any systems listed in the compatibility matrix to avoid any issues.</source>
+<target xml:lang="en-XX">Adobe Campaign Classic è compatibile con tutti i sistemi e gli strumenti elencati nella <ph id="1" ctype="x-LINK">[</ph>Matrice di compatibilità<ph id="2" ctype="x-LINK">](../../rn/using/compatibility-matrix.md)</ph>. Quando versioni specifiche di questi sistemi e strumenti di terze parti raggiungono la fine del ciclo di vita (EOL) con i rispettivi creatori, Adobe Campaign non è più compatibile con tali versioni: vengono classificate come obsolete e quindi rimosse dalla matrice di compatibilità nella versione del prodotto successiva. Assicurati di disporre delle versioni supportate di tutti i sistemi elencati nella matrice di compatibilità per evitare problemi.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en-US">Client console</source>
+<target xml:lang="en-XX">Console client</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en-US">Adobe Campaign Classic Client Console can no longer run on the following systems as they have been deprecated by their editor. Customers running Campaign Client Console on one of these versions need to upgrade to newest version before target removal date. Refer to the <ph id="1" ctype="x-LINK">[</ph>Compatibility matrix<ph id="2" ctype="x-LINK">](../../rn/using/compatibility-matrix.md)</ph>.</source>
+<target xml:lang="en-XX">La console del client di Adobe Campaign Classic non può più essere eseguita sui seguenti sistemi in quanto sono stati dichiarati obsoleti dai rispettivi editor. I clienti che eseguono la console del client di Campaign in una di queste versioni devono effettuare l’aggiornamento alla versione più recente prima della data prevista di rimozione. Consulta la <ph id="1" ctype="x-LINK">[</ph>Matrice di compatibilità<ph id="2" ctype="x-LINK">](../../rn/using/compatibility-matrix.md)</ph>.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en-US">Windows Server 2003, 2008, 2008 R2</source>
+<target xml:lang="en-XX">Windows Server 2003, 2008, 2008 R2</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en-US">Windows 7, XP, Vista</source>
+<target xml:lang="en-XX">Windows 7, XP, Vista</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en-US"><ph id="1" ctype="x-regxph" equiv-text="[!NOTE">[!NOTE]</ph>
+</source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-regxph" equiv-text="[!NOTE">[!NOTE]</ph>
+</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en-US">Starting Campaign 20.1 release, Campaign Classic Client Console 32 bits is no longer compatible with Campaign latest versions. You need to use 64 bits Client Console.</source>
+<target xml:lang="en-XX">A partire dalla versione 20.1 di Campaign, la console del client a 32 bit di Campaign Classic non è più compatibile con le versioni più recenti di Campaign. È necessario utilizzare la console del client a 64 bit.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en-US">Operating systems</source>
+<target xml:lang="en-XX">Sistemi operativi</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en-US">Starting 7.3.4 release, Adobe Campaign is no longer compatible with Red Hat Enterprise Linux (RHEL) 7.</source>
+<target xml:lang="en-XX">A partire dalla versione 7.3.4, Adobe Campaign non è più compatibile con Red Hat Enterprise Linux (RHEL) 7.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en-US">Starting 7.3.1 release, Adobe Campaign is no longer compatible with Windows 8 and Windows Server 2012.</source>
+<target xml:lang="en-XX">A partire dalla versione 7.3.1, Adobe Campaign non è più compatibile con Windows 8 e Windows Server 2012.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en-US">Starting 22.1 release, Adobe Campaign is no longer compatible with CentOs 8.x (64 bits). CentOS Linux 8 reached End Of Life (EOL) on December 31st, 2021. <ph id="1" ctype="x-LINK">[</ph>Learn more<ph id="2" ctype="x-LINK">[#$tu30]</ph>.</source>
+<target xml:lang="en-XX">A partire dalla versione 22.1, Adobe Campaign non è più compatibile con CentOs 8.x (64 bit). CentOS Linux 8 ha raggiunto la fine del ciclo di vita (EOL) il 31 dicembre 2021. <ph id="1" ctype="x-LINK">[</ph>Ulteriori informazioni<ph id="2" ctype="x-LINK">[#$tu30]</ph>.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en-US">If you were using this operating system, adapt your implementation accordingly. CentOS 7.x (64 bits) and RHEL 8.x/7.x (64 bits) are still supported.</source>
+<target xml:lang="en-XX">Se utilizzavi questo sistema operativo, adatta di conseguenza la tua implementazione. CentOS 7.x (64 bit) e RHEL 8.x/7.x (64 bit) sono ancora supportati.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en-US">Starting 21.1.3 release, Adobe Campaign is no longer compatible with Debian 8.</source>
+<target xml:lang="en-XX">A partire dalla versione 21.1.3, Adobe Campaign non è più compatibile con Debian 8.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en-US">Starting 19.1 release, Adobe Campaign is no longer compatible with the following operating systems.</source>
+<target xml:lang="en-XX">A partire dalla versione 19.1, Adobe Campaign non è più compatibile con i seguenti sistemi operativi.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en-US">CentOS 6. <ph id="1" ctype="x-LINK">[</ph>Learn more<ph id="2" ctype="x-LINK">[#$tu35]</ph></source>
+<target xml:lang="en-XX">CentOs 6. <ph id="1" ctype="x-LINK">[</ph>Ulteriori informazioni<ph id="2" ctype="x-LINK">[#$tu35]</ph></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en-US">Debian 7. <ph id="1" ctype="x-LINK">[</ph>Learn more<ph id="2" ctype="x-LINK">[#$tu37]</ph></source>
+<target xml:lang="en-XX">Debian 7. <ph id="1" ctype="x-LINK">[</ph>Ulteriori informazioni<ph id="2" ctype="x-LINK">[#$tu37]</ph></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en-US">RHEL 6.x. <ph id="1" ctype="x-LINK">[</ph>Learn more<ph id="2" ctype="x-LINK">[#$tu39]</ph></source>
+<target xml:lang="en-XX">RHEL 6.x <ph id="1" ctype="x-LINK">[</ph>Ulteriori informazioni<ph id="2" ctype="x-LINK">[#$tu39]</ph></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en-US">Windows Server 2008. <ph id="1" ctype="x-LINK">[</ph>Learn more<ph id="2" ctype="x-LINK">[#$tu41]</ph></source>
+<target xml:lang="en-XX">Windows Server 2008. <ph id="1" ctype="x-LINK">[</ph>Ulteriori informazioni<ph id="2" ctype="x-LINK">[#$tu41]</ph></target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en-US">SLES 11. <ph id="1" ctype="x-LINK">[</ph>Learn more<ph id="2" ctype="x-LINK">[#$tu43]</ph></source>
+<target xml:lang="en-XX">SLES 11. <ph id="1" ctype="x-LINK">[</ph>Ulteriori informazioni<ph id="2" ctype="x-LINK">[#$tu43]</ph></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en-US">Web servers</source>
+<target xml:lang="en-XX">Server web</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en-US">Starting 19.1 Spring Release, Adobe Campaign is no longer compatible with the following web server.</source>
+<target xml:lang="en-XX">A partire dalla versione 19.1 di primavera, Adobe Campaign non è più compatibile con il seguente server web.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en-US">Apache 2.2. <ph id="1" ctype="x-LINK">[</ph>Learn more<ph id="2" ctype="x-LINK">[#$tu47]</ph></source>
+<target xml:lang="en-XX">Apache 2.2. <ph id="1" ctype="x-LINK">[</ph>Ulteriori informazioni<ph id="2" ctype="x-LINK">[#$tu47]</ph></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en-US">Microsoft IIS 7. <ph id="1" ctype="x-LINK">[</ph>Learn more<ph id="2" ctype="x-LINK">[#$tu49]</ph></source>
+<target xml:lang="en-XX">Microsoft IIS 7. <ph id="1" ctype="x-LINK">[</ph>Ulteriori informazioni<ph id="2" ctype="x-LINK">[#$tu49]</ph></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en-US">Tools</source>
+<target xml:lang="en-XX">Strumenti</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en-US">Starting 19.1 Spring Release, Adobe Campaign is no longer compatible with the following tools.</source>
+<target xml:lang="en-XX">A partire dalla versione 19.1 di primavera, Adobe Campaign non è più compatibile con i seguenti strumenti.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en-US">Java JDK 7. <ph id="1" ctype="x-LINK">[</ph>Learn more<ph id="2" ctype="x-LINK">[#$tu53]</ph></source>
+<target xml:lang="en-XX">Java JDK 7. <ph id="1" ctype="x-LINK">[</ph>Ulteriori informazioni<ph id="2" ctype="x-LINK">[#$tu53]</ph></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en-US">Libre Office 3.5 / 4.3 / 5.x, except when embedded in another tool. <ph id="1" ctype="x-LINK">[</ph>Learn more<ph id="2" ctype="x-LINK">[#$tu55]</ph></source>
+<target xml:lang="en-XX">Libre Office 3.5 / 4.3 / 5.x, tranne quando incorporato in un altro strumento. <ph id="1" ctype="x-LINK">[</ph>Ulteriori informazioni<ph id="2" ctype="x-LINK">[#$tu55]</ph></target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en-US">Database engines</source>
+<target xml:lang="en-XX">Motori di database</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en-US">Adobe does not support the following database engines as they have been deprecated by their editor. Customers running in these versions need to upgrade to newest version or move to another one.</source>
+<target xml:lang="en-XX">Adobe non supporta i seguenti motori di database in quanto sono stati dichiarati obsoleti dai rispettivi editor. I clienti che eseguono queste versioni devono effettuare l’aggiornamento alla versione più recente o passare a un’altra versione.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en-US">Refer to <ph id="1" ctype="x-LINK">[</ph>Campaign Compatibility matrix<ph id="2" ctype="x-LINK">](../../rn/using/compatibility-matrix.md)</ph> to access the list of compatible versions.</source>
+<target xml:lang="en-XX">Per accedere all’elenco delle versioni compatibili, consulta la <ph id="1" ctype="x-LINK">[</ph>Matrice di compatibilità di Campaign<ph id="2" ctype="x-LINK">](../../rn/using/compatibility-matrix.md)</ph>.</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en-US"><ph id="1" ctype="x-STRONG_EMPHASIS">**</ph>FEDERATED DATA ACCESS (FDA)<ph id="2" ctype="x-STRONG_EMPHASIS">**</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-STRONG_EMPHASIS">**</ph>FEDERATED DATA ACCESS (FDA)<ph id="2" ctype="x-STRONG_EMPHASIS">**</ph></target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en-US">Starting 20.2 release, Adobe Campaign is no longer compatible with the following FDA Server:</source>
+<target xml:lang="en-XX">A partire dalla versione 20.2, Adobe Campaign non è più compatibile con i seguenti server FDA:</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en-US">DB2 UDB 10.5</source>
+<target xml:lang="en-XX">DB2 UDB 10.5</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en-US">Starting 19.1 Spring Release, Adobe Campaign is no longer compatible with the following FDA Servers:</source>
+<target xml:lang="en-XX">A partire dalla versione 19.1 di primavera, Adobe Campaign non è più compatibile con i seguenti server FDA:</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en-US">PostgreSQL 9.3.</source>
+<target xml:lang="en-XX">PostgreSQL 9.3.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en-US">MySQL 5.5.</source>
+<target xml:lang="en-XX">MySQL 5.5.</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en-US">DB2 9.5.</source>
+<target xml:lang="en-XX">DB2 9.5.</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en-US">Teradata 14 – 14.1.</source>
+<target xml:lang="en-XX">Teradata 14 - 14.1.</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en-US">Campaign Classic is not compatible with the following servers in Federated Data Access (FDA). Please use more recent versions, or systems.</source>
+<target xml:lang="en-XX">Campaign Classic non è compatibile con i seguenti server in Federated Data Access (FDA). Utilizza versioni o sistemi più recenti.</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en-US">DB2 UDB 9.5, 9.7.</source>
+<target xml:lang="en-XX">DB2 UDB 9.5, 9.7.</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en-US">Oracle 9i, 10G R2.</source>
+<target xml:lang="en-XX">Oracle 9i, 10G R2.</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en-US">PostgreSQL versions up to 9.6 reached end of life.</source>
+<target xml:lang="en-XX">Le versioni PostgreSQL fino a 9.6 hanno raggiunto la fine del ciclo di vita.</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en-US">MSSQL 2000, 2005, 2008 R2.</source>
+<target xml:lang="en-XX">MSSQL 2000, 2005, 2008 R2.</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en-US">MySQL 5.1.</source>
+<target xml:lang="en-XX">MySQL 5.1.</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en-US">InfiniDB reached end of life.</source>
+<target xml:lang="en-XX">InfiniDB ha raggiunto la fine del ciclo di vita.</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en-US">Teradata 13, 13.1.</source>
+<target xml:lang="en-XX">Teradata 13, 13.1.</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en-US">Netezza 6.02, 7.0. Netezza reached end of life.</source>
+<target xml:lang="en-XX">Netezza 6.02, 7.0. Netezza ha raggiunto la fine del ciclo di vita.</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en-US">AsterData 5.0. AsterData reached end of life.</source>
+<target xml:lang="en-XX">AsterData 5.0 AsterData ha raggiunto la fine del ciclo di vita.</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en-US">Sybase IQ 15.2, 15.4, 15.5 and Sybase ASE 15.0.</source>
+<target xml:lang="en-XX">Sybase IQ 15.2, 15.4, 15.5 e Sybase ASE 15.0.</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en-US">Hadoop via HiveSQL: Hadoop 2.7.3, HiveSQL 1.2.1. Adobe Campaign Classic still support the listed versions of Hadoop via HiveSQL through Federated Data Access (FDA), but these versions are merged with: HortonWorks (HDP 2.4.X, 2.5.x, 2.6.x) and HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)</source>
+<target xml:lang="en-XX">Hadoop tramite HiveSQL: Hadoop 2.7.3, HiveSQL 1.2.1. Adobe Campaign Classic supporta ancora le versioni elencate di Hadoop tramite HiveSQL attraverso Federated Data Access (FDA), ma queste versioni vengono unite con: HortonWorks (HDP 2.4.X, 2.5.x, 2.6.x) and HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en-US"><ph id="1" ctype="x-STRONG_EMPHASIS">**</ph>RDBMS SERVER<ph id="2" ctype="x-STRONG_EMPHASIS">**</ph></source>
+<target xml:lang="en-XX"><ph id="1" ctype="x-STRONG_EMPHASIS">**</ph>SERVER RDBMS<ph id="2" ctype="x-STRONG_EMPHASIS">**</ph></target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en-US">Starting 19.1 Spring Release, Adobe Campaign is no longer compatible with the following RDBMS Servers:</source>
+<target xml:lang="en-XX">A partire dalla versione 19.1 di primavera, Adobe Campaign non è più compatibile con i seguenti server RDBMS:</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en-US">Oracle 10GR2</source>
+<target xml:lang="en-XX">Oracle 10GR2</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en-US">PostgreSQL 9.0 to 9.3</source>
+<target xml:lang="en-XX">PostgreSQL da 9.0 a 9.3</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en-US">SQL Server 2005</source>
+<target xml:lang="en-XX">SQL Server 2005</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en-US">MySQL 5.1</source>
+<target xml:lang="en-XX">MySQL 5.1</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en-US">DB2 UDB 9.7</source>
+<target xml:lang="en-XX">DB2 UDB 9.7</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en-US">PostgreSQL versions up to 9.6 reached end of life. They are therefore not supported by Adobe Campaign.</source>
+<target xml:lang="en-XX">Le versioni PostgreSQL fino a 9.6 hanno raggiunto la fine del ciclo di vita. Non sono pertanto supportate da Adobe Campaign.</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en-US">SMS connectors</source>
+<target xml:lang="en-XX">Connettori SMS</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en-US">Starting 20.2 release, Legacy SMS connectors are deprecated. Adobe Campaign is not compatible with:</source>
+<target xml:lang="en-XX">A partire dalla versione 20.2, i seguenti connettori legacy SMS sono diventati obsoleti. Adobe Campaign non è compatibile con:</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en-US">Generic SMPP (SMPP version 3.4 supporting binary mode)</source>
+<target xml:lang="en-XX">SMPP generico (SMPP versione 3.4 che supporta la modalità binaria)</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en-US">Sybase365 (SAP SMS 365)</source>
+<target xml:lang="en-XX">Sybase365 (SAP SMS 365)</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en-US">CLX Communications</source>
+<target xml:lang="en-XX">Comunicazioni CLX</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en-US">Tele2</source>
+<target xml:lang="en-XX">Tele2</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en-US">O2</source>
+<target xml:lang="en-XX">O2</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en-US">iOS</source>
+<target xml:lang="en-XX">iOS</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en-US">CRM connectors</source>
+<target xml:lang="en-XX">Connettori CRM</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en-US">Starting Campaign 21.1 release, the following CRM connectors are no longer compatible with Campaign:</source>
+<target xml:lang="en-XX">A partire da Campaign 21.1, i seguenti connettori CRM non sono più compatibili con Campaign:</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en-US">Soap API - On-premise: 2007, 2015, 2016</source>
+<target xml:lang="en-XX">API Soap - On-premise: 2007, 2015, 2016</target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en-US">Soap API - Online: 2015, 2016</source>
+<target xml:lang="en-XX">API Soap - Online: 2015, 2016</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en-US">Web API – Microsoft Dynamics CRM  2016</source>
+<target xml:lang="en-XX">API web: Microsoft Dynamics CRM 2016</target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en-US">Web API – Microsoft Dynamics CRM 2016 Update 1</source>
+<target xml:lang="en-XX">API web: Microsoft Dynamics CRM 2016 aggiornamento 1</target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en-US">Oracle On Demand API</source>
+<target xml:lang="en-XX">API Oracle On Demand</target>
+</trans-unit>
+</body>
+</file>
+</xliff>
