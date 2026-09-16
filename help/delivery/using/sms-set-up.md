@@ -9,30 +9,42 @@ exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
 TQID: https://experienceleague.adobe.com/quIMssNONhvwEBVIEic9Dhe2x4-E0H5U8nIEruSUhtg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1699
-ht-degree: 31%
-
+source-wordcount: '1742'
+ht-degree: 30%
 ---
-
 # Configurare il canale SMS in un’istanza autonoma {#setting-up-sms-channel}
 
 Per inviare a un telefono cellulare, è necessario:
@@ -326,8 +338,8 @@ Puoi dichiarare **data_codings** e forzare la codifica, se necessario: a questo 
 
 * Quando non è definita alcuna mappatura delle codifiche, il connettore assume un comportamento generico:
 
-   * Prova a utilizzare la codifica GSM a cui assegna il valore **data_coding = 0**.
-   * Se non è possibile usare la codifica GSM, utilizza la codifica **UCS2** assegnandole il valore **data_coding = 8**.
+  * Prova a utilizzare la codifica GSM a cui assegna il valore **data_coding = 0**.
+  * Se non è possibile usare la codifica GSM, utilizza la codifica **UCS2** assegnandole il valore **data_coding = 8**.
 
 * Quando definisci le codifiche da utilizzare e i valori dei campi **[!UICONTROL data_coding]** collegati, Adobe Campaign tenterà di utilizzare la prima codifica nell&#39;elenco e quindi la seguente, se la prima codifica risulta impossibile.
 

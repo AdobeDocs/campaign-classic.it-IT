@@ -3,7 +3,7 @@ product: campaign
 title: Integrazione in un server web per Windows
 description: Integrazione in un server web per Windows
 feature: Installation, Instance Settings
-badge-v7-prem: label="Solo on-premise/ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
@@ -11,20 +11,23 @@ exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
 TQID: https://experienceleague.adobe.com/dCUzCZnR5K2T2EPtqmazqAS69Zg40MaltxCVtoDN48I
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 8f9e8344b77e50bd2823cc7fa3922466e515327f
 workflow-type: tm+mt
-source-wordcount: 753
+source-wordcount: '741'
 ht-degree: 4%
-
 ---
-
 # Integrazione in un server web per Windows {#integration-into-a-web-server-for-windows}
 
 Adobe Campaign include Apache Tomcat che funge da punto di ingresso nel server applicazioni tramite HTTP (e SOAP).
@@ -34,7 +37,7 @@ Puoi utilizzare questo server Tomcat integrato per soddisfare le richieste HTTP.
 In questo caso:
 
 * la porta di ascolto predefinita è 8080. Per modificarlo, fare riferimento a [questa sezione](../../installation/using/configure-tomcat.md).
-* Le console client si connettono quindi utilizzando un URL come `https://` `<computer>` `:8080`.
+* Le console client si connettono quindi utilizzando un URL come `https://`&#x200B;`<computer>`&#x200B;`:8080`.
 
 Tuttavia, per motivi di sicurezza e amministrazione, si consiglia di utilizzare un server Web dedicato come punto di ingresso principale per il traffico HTTP quando il computer che esegue Adobe Campaign è esposto su Internet e si desidera aprire l&#39;accesso alla console al di fuori della rete.
 

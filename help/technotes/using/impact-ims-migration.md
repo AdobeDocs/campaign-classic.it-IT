@@ -5,21 +5,25 @@ exl-id: 8b13fe4d-d8d3-43b3-bbe4-c8c5574f585a
 TQID: https://experienceleague.adobe.com/RkgX2M0BnO5pjgI7oAp7NlycXY551manwFHhcA1LMjw
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: a39dbcf0-89cb-4765-9bcb-cf9dfbe2875f
+    internal-label: Troubleshooting
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 463
+source-wordcount: '463'
 ht-degree: 1%
-
 ---
-
 # Aggiornare l’interfaccia di Campaign dopo la migrazione IMS {#impact-ims-migration}
 
 Dopo che [hai eseguito la migrazione degli operatori tecnici di Campaign a Developer Console](ims-migration.md) e che [hai eseguito la transizione a IMS per l&#39;autenticazione dell&#39;utente finale](migrate-users-to-ims.md), l&#39;ultimo passaggio consiste nell&#39;abilitare le restrizioni dell&#39;interfaccia utente e dell&#39;API per rimuovere le opzioni e le funzionalità specifiche dell&#39;autenticazione nativa. Questo aggiornamento è disponibile a partire da Campaign v7.4.1.
@@ -114,10 +118,10 @@ Dopo la migrazione, le seguenti attività non sono più disponibili nella consol
 * Utilizza l&#39;opzione [Unisci righe selezionate](../../platform/using/updating-data.md#merge-data) per unire gli operatori.
 
 * Aggiorna i seguenti campi per gli operatori:
-   * Nome
-   * Password
-   * Etichetta
-   * E-mail
+  * Nome
+  * Password
+  * Etichetta
+  * E-mail
 
 * [Reimpostare la password di Campaign](../../production/using/lost-password.md)
 

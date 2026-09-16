@@ -10,18 +10,19 @@ exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
 TQID: https://experienceleague.adobe.com/DkmZBc4Awifbwqo7zqniEu6RlHDc91788XKN2nNg-Pg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1264
+source-wordcount: '1264'
 ht-degree: 4%
-
 ---
-
 # Configurare CCN e-mail {#email-archiving}
 
 
@@ -163,8 +164,8 @@ Once email BCC is configured, make sure you select the **[!UICONTROL Email BCC]*
 * **Cassetta postale dell&#39;indirizzo Ccn**: assicurati che disponga di una capacità di ricezione sufficiente per archiviare tutte le e-mail inviate dall&#39;MTA.
 * **MTA pooling**: la funzione di archiviazione Ccn funziona a livello di MTA. Ti consente di duplicare ogni e-mail inviata dall’MTA. Poiché l’MTA può essere raggruppato in più istanze (ad esempio sviluppo, test o produzione) o anche tra più client (in un ambiente di mid-sourcing), la configurazione di questa funzione influisce sulla sicurezza:
 
-   * Se condividi un MTA con più client e uno di essi ha questa opzione attivata, questo client accederà a tutte le e-mail degli altri client che condividono lo stesso MTA. Per evitare tale situazione, utilizza un MTA diverso per ogni client.
-   * Se utilizzi lo stesso MTA in più istanze (sviluppo, test, prod) per un singolo client, i messaggi inviati da tutte e tre le istanze verranno duplicati dall’opzione dataLogPath.
+  * Se condividi un MTA con più client e uno di essi ha questa opzione attivata, questo client accederà a tutte le e-mail degli altri client che condividono lo stesso MTA. Per evitare tale situazione, utilizza un MTA diverso per ogni client.
+  * Se utilizzi lo stesso MTA in più istanze (sviluppo, test, prod) per un singolo client, i messaggi inviati da tutte e tre le istanze verranno duplicati dall’opzione dataLogPath.
 
 * **E-mail per connessione**: l&#39;archiviazione di e-mail in Ccn funziona aprendo una connessione e tentando di inviare tutte le e-mail tramite tale connessione. Adobe consiglia di verificare con il contatto tecnico interno il numero di e-mail accettate su una determinata connessione. L&#39;aumento di questo numero può avere un grande impatto sulla velocità effettiva CCN.
 * **IP di invio CCN**: al momento, le e-mail CCN non vengono inviate tramite i normali proxy MTA. Viene invece aperta una connessione diretta dal server MTA al server e-mail di destinazione. Ciò significa che potrebbe essere necessario aggiungere altri IP al inserisco nell&#39;elenco Consentiti di sulla rete, a seconda della configurazione del server e-mail.

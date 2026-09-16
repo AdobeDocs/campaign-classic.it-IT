@@ -3,24 +3,26 @@ product: campaign
 title: Installare i pacchetti incorporati di Campaign Classic
 description: Scopri come installare i pacchetti incorporati di Campaign
 feature: Installation, Application Settings
-badge-v7-prem: label="Solo on-premise/ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applies to on-premise and hybrid deployments only"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
 TQID: https://experienceleague.adobe.com/o-8uf081NQCy3ZB8mmLk0Gm8J9Pu--Zh4znqn3HUjr0
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2: []
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1381
+source-wordcount: '1369'
 ht-degree: 7%
-
 ---
-
 # Installare i pacchetti incorporati di Campaign Classic{#installing-campaign-standard-packages}
 
 
@@ -213,7 +215,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
   </tr> 
   <tr> 
    <td> Integrazione dei tipi di pubblico condivisi di Adobe Experience Cloud<br /> </td> 
-   <td> Consente di scambiare e condividere tipi di pubblico/segmenti con soluzioni e app Adobe Experience Cloud. Richiede IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Ulteriori informazioni</a> <br /> </td> 
+   <td> Consente di scambiare e condividere tipi di pubblico/segmenti con le soluzioni e le app di Adobe Experience Cloud. Richiede IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 

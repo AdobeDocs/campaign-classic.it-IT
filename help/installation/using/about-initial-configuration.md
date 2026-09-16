@@ -3,7 +3,7 @@ product: campaign
 title: Informazioni sulla configurazione iniziale
 description: Informazioni sulla configurazione iniziale
 feature: Installation, Configuration
-badge-v7-prem: label="Solo on-premise/ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
@@ -11,15 +11,14 @@ exl-id: f77ba178-0dfb-4a2e-b33b-971765d42298
 TQID: https://experienceleague.adobe.com/rQT-wcpjGzyYfEV3thGlY0WD7Po-A08yD0pGMr13p7s
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 197
-ht-degree: 13%
-
+source-wordcount: '185'
+ht-degree: 14%
 ---
-
 # Passaggi chiave per configurare e distribuire l’istanza{#about-initial-configuration}
 
 

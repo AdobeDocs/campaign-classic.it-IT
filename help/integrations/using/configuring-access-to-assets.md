@@ -3,7 +3,7 @@ product: campaign
 title: Configurazione dell’accesso a Assets
 description: Configurazione dell’accesso a Assets
 feature: Asset Sharing
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: asset-sharing
@@ -11,20 +11,24 @@ exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
 TQID: https://experienceleague.adobe.com/JU5h5wyP-DrlIlFFNClNinQYIcqvg13Z93bF4ykliB4
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
   - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+    internal-label: Adobe Experience Manager integration
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+    internal-label: Adobe Experience Platform integration
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+    internal-label: Adobe Target integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 522
+source-wordcount: '513'
 ht-degree: 1%
-
 ---
-
 # Configurazione dell’accesso a Assets {#configuring-access-to-assets}
 
 Questa sezione descrive i passaggi di configurazione necessari in Adobe Campaign per utilizzare le funzionalità di integrazione con Assets o la libreria Adobe Experience Manager Assets (AEM Assets).
@@ -33,16 +37,16 @@ Questa sezione descrive i passaggi di configurazione necessari in Adobe Campaign
 >
 >Queste integrazioni sono simultanee. Leggi attentamente le seguenti informazioni prima di effettuare qualsiasi configurazione.
 
-* Integrazione con **Experience Cloud Assets**: questa integrazione consente di inserire immagini dalla libreria Adobe Experience Cloud. Questa integrazione deve essere configurata installando il pacchetto integrato **[!UICONTROL Integration with the Adobe Experience Cloud]** in Adobe Campaign.
+* Integrazione con **Experience Cloud Assets**: questa integrazione ti consente di inserire immagini dalla libreria Adobe Experience Cloud. Questa integrazione deve essere configurata installando il pacchetto integrato **[!UICONTROL Integration with the Adobe Experience Cloud]** in Adobe Campaign.
 * Integrazione con **AEM Assets**: questa integrazione ti consente di inserire immagini dalla libreria Adobe Experience Manager Assets. Questa integrazione deve essere configurata installando il pacchetto integrato **[!UICONTROL AEM Integration]** in Adobe Campaign. Questa integrazione non è più disponibile a partire da Adobe Experience Manager 6.4.
 
 >[!NOTE]
 >
->Se i due pacchetti (**[!UICONTROL AEM Integration]** e **[!UICONTROL Integration with the Adobe Experience Cloud]** ) sono installati, è possibile utilizzare solo le risorse disponibili nella libreria Adobe Experience Cloud.
+>Se i due pacchetti (**[!UICONTROL AEM Integration]** e **[!UICONTROL Integration with the Adobe Experience Cloud]** ) sono installati, è possibile utilizzare solo le risorse disponibili nella libreria di Adobe Experience Cloud.
 
 ## Integrazione con Experience Cloud Assets {#integrating-with-experience-cloud-assets}
 
-Per utilizzare l’integrazione tra Adobe Campaign e Experience Cloud Assets, è necessario disporre di:
+Per utilizzare l’integrazione tra Adobe Campaign ed Experience Cloud Assets, è necessario disporre di:
 
 * Un’organizzazione Adobe Experience Cloud
 * Modalità di autenticazione Adobe IMS abilitata
@@ -50,7 +54,7 @@ Per utilizzare l’integrazione tra Adobe Campaign e Experience Cloud Assets, è
 Per abilitare la connessione tra Adobe Campaign e Adobe Experience Cloud, configura la connessione tramite IMS (Adobe ID connection service). Questa configurazione è descritta nel documento [Connessione tramite Adobe ID](../../integrations/using/about-adobe-id.md). Comporta:
 
 * Installazione del pacchetto **[!UICONTROL Integration with the Adobe Experience Cloud]**.
-* Configurazione di un account esterno di Adobe Experience Cloud.
+* Configurazione di un account esterno Adobe Experience Cloud.
 
 >[!NOTE]
 >
@@ -83,4 +87,4 @@ Quando si inseriscono immagini nel contenuto di una consegna basata su questo mo
 
 >[!NOTE]
 >
->Se il pacchetto **[!UICONTROL Integration with the Adobe Experience Cloud]** è installato anche nell&#39;istanza Adobe Campaign, sarà possibile utilizzare solo le risorse disponibili nella libreria Adobe Experience Cloud. Per accedere alle risorse anche nella libreria di AEM Assets, devi sincronizzare AEM Assets e Adobe Experience Cloud. Le risorse in AEM Assets saranno quindi disponibili anche nella libreria Adobe Experience Cloud. In questo caso, non è necessario creare un modello di consegna specifico.
+>Se il pacchetto **[!UICONTROL Integration with the Adobe Experience Cloud]** è installato anche nell&#39;istanza Adobe Campaign, sarà possibile utilizzare solo le risorse disponibili nella libreria Adobe Experience Cloud. Per accedere alle risorse anche nella libreria di AEM Assets, devi sincronizzare AEM Assets con Adobe Experience Cloud. Le risorse in AEM Assets saranno quindi disponibili anche nella libreria di Adobe Experience Cloud. In questo caso, non è necessario creare un modello di consegna specifico.

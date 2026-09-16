@@ -3,7 +3,7 @@ product: campaign
 title: Monitoraggio dei processi
 description: Scopri come monitorare i processi di Campaign
 feature: Monitoring
-badge-v7-prem: label="Solo on-premise/ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: production-procedures
@@ -11,21 +11,25 @@ exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
 TQID: https://experienceleague.adobe.com/rTFIt6bZHR9dwiUr2KTTsoFCPX48cItfbE7u8l8mEqA
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2:
   - id: c03a11ff-bdf9-4e5b-b279-f468b4293464
+    internal-label: Performance Monitoring
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 3682
+source-wordcount: '3671'
 ht-degree: 1%
-
 ---
-
 # Monitoraggio dei processi{#monitoring-processes}
 
 
@@ -564,7 +568,7 @@ Questo elemento viene utilizzato per popolare la configurazione delle e-mail, ad
 * **mailServer**: server SMTP utilizzato per inviare le e-mail (esempio: smtp.domain.net).
 * **mailFrom**: indirizzo e-mail del mittente del report (esempio: monitoring@domain.net).
 * **recipientList**: elenco di indirizzi e-mail dei destinatari del monitoraggio. Gli indirizzi devono essere separati da virgole (senza spazi).
-* La modalità &#39;**notte**&#39; (facoltativa) viene utilizzata per evitare l&#39;invio di e-mail tra il periodo di tempo specificato. Piuttosto, i dati vengono consolidati e un’e-mail riguardante l’attività della notte viene inviata dopo l’ora di fine (7:00 per impostazione predefinita).
+* La modalità &#39;**notte**&#39; (facoltativa) viene utilizzata per evitare l&#39;invio di e-mail tra il periodo di tempo specificato. Al contrario, i dati vengono consolidati e un’e-mail riguardante l’attività della notte viene inviata dopo l’ora di fine (7:00 per impostazione predefinita).
 * Il sottoelemento **buildRange** (facoltativo) consente di specificare un numero di build minimo e massimo. Verrà generato un errore per tutti i computer il cui numero di build non rientra in questo intervallo
 
   ```

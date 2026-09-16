@@ -8,20 +8,22 @@ exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
 TQID: https://experienceleague.adobe.com/HRym19p3YGAa3PEPgFBfU3ka39l5348CkdQaWcHZOJk
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1037
+source-wordcount: '1037'
 ht-degree: 0%
-
 ---
-
 # Definire ulteriori funzioni SQL{#adding-additional-sql-functions}
 
 Adobe Campaign consente all&#39;utente di definire **le proprie funzioni** che possono accedere alle funzioni SQL, sia quelle offerte dal database che quelle non già disponibili nella console. Questo è utile per le funzioni di aggregazione (media, massima, somma), ad esempio, che possono essere calcolate solo sul server o quando il database fornisce un modo più semplice per implementare determinate funzioni, anziché scrivere &quot;manualmente&quot; l’espressione nella console (ad esempio, gestione delle date).
@@ -131,8 +133,8 @@ Il campo **@name** fa riferimento al nome della funzione e &quot;args&quot; è l
 * **@minArgs** e **maxArgs** indicano il numero di parametri (minimo e massimo) per un parametro. Ad esempio, per una funzione con 2 parametri, minArgs e maxArgs saranno 2 e 2. Per 3 parametri, più 1 facoltativo, saranno rispettivamente 3 e 4.
 * Infine, l&#39;elemento **providerPart** fornisce l&#39;implementazione della funzione.
 
-   * L&#39;attributo **provider** è obbligatorio e specifica i sistemi di database per i quali viene fornita l&#39;implementazione. Come mostrato nell’esempio, quando le sintassi delle espressioni o le funzioni sottostanti differiscono, è possibile fornire implementazioni alternative in base al database.
-   * L&#39;attributo **@body** contiene l&#39;implementazione della funzione. Nota: questa implementazione deve essere un&#39;espressione nel linguaggio del database (non un blocco di codice). A seconda dei database, le espressioni possono essere sottoquery (&quot;(seleziona una colonna dalla tabella dove...)&quot;) restituisce un solo valore. Questo è il caso, ad esempio, di Oracle (la query deve essere scritta tra parentesi).
+  * L&#39;attributo **provider** è obbligatorio e specifica i sistemi di database per i quali viene fornita l&#39;implementazione. Come mostrato nell’esempio, quando le sintassi delle espressioni o le funzioni sottostanti differiscono, è possibile fornire implementazioni alternative in base al database.
+  * L&#39;attributo **@body** contiene l&#39;implementazione della funzione. Nota: questa implementazione deve essere un&#39;espressione nel linguaggio del database (non un blocco di codice). A seconda dei database, le espressioni possono essere sottoquery (&quot;(seleziona una colonna dalla tabella dove...)&quot;) restituisce un solo valore. Questo è il caso, ad esempio, di Oracle (la query deve essere scritta tra parentesi).
 
   >[!NOTE]
   >

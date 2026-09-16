@@ -10,18 +10,19 @@ exl-id: a9842e59-120c-4a35-abdf-6540a0bbdd6d
 TQID: https://experienceleague.adobe.com/o78NLFSbsXqQgJQEU5KSN5PkheQHtHlPh2KdB0RBINA
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 feature_v2:
   - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
+    internal-label: Offer Management
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1139
+source-wordcount: '1139'
 ht-degree: 2%
-
 ---
-
 # Integrazione tramite JavaScript (lato client){#integration-via-javascript-client-side}
 
 
@@ -61,7 +62,7 @@ I seguenti casi d’uso descrivono le opzioni possibili per l’integrazione del
    La pagina HTML deve includere
 
    con un attributo @id con il valore del nome interno dello spazio dell&#39;offerta creato (&quot;i_internal name space&quot;). L&#39;offerta verrà inserita in questo
-per interazione.
+   per interazione.
 
    Nel nostro esempio, l’attributo @id riceve il valore &quot;i_SPC12&quot;, dove &quot;SPC12&quot; è il nome interno dello spazio dell’offerta creato in precedenza:
 

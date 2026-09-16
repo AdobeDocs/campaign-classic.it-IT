@@ -10,17 +10,17 @@ exl-id: 4df126fa-4a6e-46a7-af6e-1e2e97f0072e
 TQID: https://experienceleague.adobe.com/qg59AtZmUGDO0bLwykBdMxL9pEUDwsyxn98faauXCdc
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 844
+source-wordcount: '844'
 ht-degree: 3%
-
 ---
-
 # Implementazione standard{#standard-deployment}
 
 
@@ -59,8 +59,8 @@ Questo tipo di configurazione è in grado di gestire un numero elevato di destin
 * Cassetta postale di mancato recapito accessibile tramite POP3,
 * Creazione di due alias DNS:
 
-   * la prima esposta al pubblico per il tracciamento e il puntamento al load balancer su un indirizzo IP virtuale (VIP) e che viene quindi distribuita ai due server frontali,
-   * il secondo esposto agli utenti interni per l’accesso tramite la console e che punta allo stesso application server.
+  * la prima esposta al pubblico per il tracciamento e il puntamento al load balancer su un indirizzo IP virtuale (VIP) e che viene quindi distribuita ai due server frontali,
+  * il secondo esposto agli utenti interni per l’accesso tramite la console e che punta allo stesso application server.
 
 * Firewall configurato per aprire STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 per Oracle, 5432 per PostgreSQL, ecc.) porte. Per ulteriori informazioni, vedere la sezione [Accesso al database](../../installation/using/network-configuration.md#database-access).
 

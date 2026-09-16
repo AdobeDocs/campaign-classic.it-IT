@@ -7,25 +7,33 @@ exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
 TQID: https://experienceleague.adobe.com/i3aMiL43o3Sj7aR1u2KJmlMVe3UiS6j-tLc5augCryk
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
 subfeature_v2:
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 2042
+source-wordcount: '2101'
 ht-degree: 1%
-
 ---
-
 # Protezione della privacy della posta nell’app Mail di Apple
 
 ## Cosa è cambiato?
@@ -393,7 +401,7 @@ Questo esempio mostra come esportare i dati di tracciamento da Adobe Campaign.
 1. Crea un flusso di lavoro che inizia con una query.
 
    La query iniziale viene utilizzata per recuperare i registri di tracciamento degli ultimi tre mesi.
-È possibile utilizzare una query incrementale per estrarre solo i record non ancora esportati.
+   È possibile utilizzare una query incrementale per estrarre solo i record non ancora esportati.
 
    Aggiungi tutte le informazioni richieste dal nodo **[!UICONTROL Additional data]**.
 
@@ -438,14 +446,14 @@ Questi esempi mostrano come utilizzare i flussi di lavoro per suddividere i reco
 
 * Il primo esempio di flusso di lavoro include le seguenti attività:
 
-   1. L&#39;attività **[!UICONTROL Query]** iniziale viene utilizzata per selezionare tutte le aperture dei messaggi e-mail negli ultimi tre mesi.
-   1. Un&#39;attività **[!UICONTROL Split]** viene utilizzata per suddividere la selezione per applicazione di posta elettronica, browser, sistema operativo e dispositivo.
+  1. L&#39;attività **[!UICONTROL Query]** iniziale viene utilizzata per selezionare tutte le aperture dei messaggi e-mail negli ultimi tre mesi.
+  1. Un&#39;attività **[!UICONTROL Split]** viene utilizzata per suddividere la selezione per applicazione di posta elettronica, browser, sistema operativo e dispositivo.
 
-   1. Un&#39;attività **[!UICONTROL Deduplication]** segue ogni attività **[!UICONTROL Split]**. L&#39;attività **[!UICONTROL Deduplication]** viene utilizzata per rimuovere gli indirizzi e-mail duplicati.
+  1. Un&#39;attività **[!UICONTROL Deduplication]** segue ogni attività **[!UICONTROL Split]**. L&#39;attività **[!UICONTROL Deduplication]** viene utilizzata per rimuovere gli indirizzi e-mail duplicati.
 
-      L&#39;attività **[!UICONTROL Deduplication]** è posizionata dopo l&#39;attività **[!UICONTROL Split]** per evitare di perdere informazioni sui destinatari che utilizzano vari dispositivi.
+     L&#39;attività **[!UICONTROL Deduplication]** è posizionata dopo l&#39;attività **[!UICONTROL Split]** per evitare di perdere informazioni sui destinatari che utilizzano vari dispositivi.
 
-   1. Un&#39;attività **[!UICONTROL End]** segue ogni attività **[!UICONTROL Deduplication]**.
+  1. Un&#39;attività **[!UICONTROL End]** segue ogni attività **[!UICONTROL Deduplication]**.
 
   Questo tipo di flusso di lavoro è utile se memorizzi i destinatari solo nella tabella dei destinatari predefinita per il targeting.
 
@@ -453,14 +461,14 @@ Questi esempi mostrano come utilizzare i flussi di lavoro per suddividere i reco
 
 * Il secondo esempio di flusso di lavoro comprende le seguenti attività:
 
-   1. L&#39;attività **[!UICONTROL Query]** iniziale viene utilizzata per selezionare tutte le aperture dei messaggi e-mail negli ultimi tre mesi.
-   1. Un&#39;attività **[!UICONTROL Deduplication]** viene utilizzata per rimuovere gli indirizzi e-mail duplicati.
-   1. Viene utilizzata un&#39;attività **[!UICONTROL Fork]**:
+  1. L&#39;attività **[!UICONTROL Query]** iniziale viene utilizzata per selezionare tutte le aperture dei messaggi e-mail negli ultimi tre mesi.
+  1. Un&#39;attività **[!UICONTROL Deduplication]** viene utilizzata per rimuovere gli indirizzi e-mail duplicati.
+  1. Viene utilizzata un&#39;attività **[!UICONTROL Fork]**:
 
-      * In una transizione, l&#39;attività **[!UICONTROL Change dimension]** viene utilizzata per trovare i destinatari a cui si riferisce il registro di tracciamento.
-      * Nell&#39;altra transizione, l&#39;attività **[!UICONTROL Split]** viene utilizzata per suddividere la selezione per applicazione e-mail, browser, sistema operativo e dispositivo.
+     * In una transizione, l&#39;attività **[!UICONTROL Change dimension]** viene utilizzata per trovare i destinatari a cui si riferisce il registro di tracciamento.
+     * Nell&#39;altra transizione, l&#39;attività **[!UICONTROL Split]** viene utilizzata per suddividere la selezione per applicazione e-mail, browser, sistema operativo e dispositivo.
 
-   1. Un&#39;attività **[!UICONTROL End]** segue ogni transizione dopo l&#39;attività **[!UICONTROL Split]**.
+  1. Un&#39;attività **[!UICONTROL End]** segue ogni transizione dopo l&#39;attività **[!UICONTROL Split]**.
 
   Questo tipo di flusso di lavoro è utile se i destinatari vengono memorizzati in una tabella diversa da quella predefinita.
 

@@ -8,18 +8,19 @@ exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
 TQID: https://experienceleague.adobe.com/JEGK7xRIWwipkqKnRGEByK7pCBCkgXzOrbMPHoXCDUU
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 feature_v2: []
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 617
+source-wordcount: '617'
 ht-degree: 9%
-
 ---
-
 # Aggiornare l’ambiente per connettersi ad Adobe Campaign con IMS {#acc-ims-faq}
 
 
@@ -48,11 +49,11 @@ Se è già stato eseguito l&#39;aggiornamento ma si utilizza una versione preced
 
   L’aggiornamento a una delle nuove versioni elencate di seguito è obbligatorio:
 
-   * Voce principale: Gold Standard 11. [Ulteriori informazioni](../../rn/using/gold-standard.md)
-   * Campaign versione 21.1.3. [Ulteriori informazioni](../../rn/using/latest-release.md)
-   * Campaign versione 20.2.5.
-   * Campaign versione 20.1.4.
-   * Campaign versione 19.2.4.
+  * Voce principale: Gold Standard 11. [Ulteriori informazioni](../../rn/using/gold-standard.md)
+  * Campaign versione 21.1.3. [Ulteriori informazioni](../../rn/using/latest-release.md)
+  * Campaign versione 20.2.5.
+  * Campaign versione 20.1.4.
+  * Campaign versione 19.2.4.
 
   Queste versioni sono dotate di un nuovo protocollo di connessione. L’aggiornamento è obbligatorio sia per il server Campaign che per la console client: una volta aggiornate tutte le istanze, la console client deve essere aggiornata a questa versione e deve essere in grado di connettersi a Campaign dopo il **30 giugno 2021**.
 

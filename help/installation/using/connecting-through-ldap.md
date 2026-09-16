@@ -3,7 +3,7 @@ product: campaign
 title: Connessione tramite LDAP
 description: Scopri come utilizzare LDAP per accedere a Campaign
 feature: Installation, Instance Settings
-badge-v7-prem: label="Solo on-premise/ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
@@ -11,17 +11,17 @@ exl-id: 0533cd50-3aa4-4160-9152-e916e149e77f
 TQID: https://experienceleague.adobe.com/GMKB83dj65iqnlu97uX-d672TWOysjd4gspRLEfz-y8
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1070
-ht-degree: 1%
-
+source-wordcount: '1077'
+ht-degree: 3%
 ---
-
 # Connessione tramite LDAP {#connecting-through-ldap}
 
 ## Configurazione di Campaign e LDAP {#configuring-campaign-and-ldap}
@@ -42,19 +42,19 @@ La finestra consente di configurare l’identificazione degli utenti di Adobe Ca
 * Specificare l&#39;indirizzo del server LDAP nel campo **[!UICONTROL LDAP server]**. È possibile aggiungere il numero di porta. Per impostazione predefinita, la porta utilizzata è 389.
 * Nell’elenco a discesa, seleziona il metodo di autenticazione per gli utenti:
 
-   * Password crittografata (**md5**) - Modalità predefinita.
+  * Password crittografata (**md5**) - Modalità predefinita.
 
-   * Password in testo normale + SSL (**TLS**) - L&#39;intera procedura di autenticazione (password inclusa) è crittografata. La porta sicura 636 non deve essere utilizzata in questa modalità: Adobe Campaign passa automaticamente alla modalità protetta.
+  * Password in testo normale + SSL (**TLS**) - L&#39;intera procedura di autenticazione (password inclusa) è crittografata. La porta sicura 636 non deve essere utilizzata in questa modalità: Adobe Campaign passa automaticamente alla modalità protetta.
 
-     Quando si utilizza questa modalità di autenticazione, in Linux il certificato viene verificato da una libreria client openLDAP. È consigliabile utilizzare un certificato SSL valido in modo che la procedura di autenticazione sia crittografata. In caso contrario, le informazioni saranno in testo normale.
+    Quando si utilizza questa modalità di autenticazione, in Linux il certificato viene verificato da una libreria client openLDAP. È consigliabile utilizzare un certificato SSL valido in modo che la procedura di autenticazione sia crittografata. In caso contrario, le informazioni saranno in testo normale.
 
-     Il certificato viene verificato anche in Windows.
+    Il certificato viene verificato anche in Windows.
 
-   * Windows NT LAN Manager (**NTLM**) - Autenticazione Windows proprietaria. **[!UICONTROL Unique identifier]** è utilizzato solo per il nome di dominio.
+  * Windows NT LAN Manager (**NTLM**) - Autenticazione Windows proprietaria. **[!UICONTROL Unique identifier]** è utilizzato solo per il nome di dominio.
 
-   * Autenticazione password distribuita (**DPA**) - Autenticazione Windows proprietaria. **[!UICONTROL Unique identifier]** viene utilizzato solo per il nome di dominio (domain.com).
+  * Autenticazione password distribuita (**DPA**) - Autenticazione Windows proprietaria. **[!UICONTROL Unique identifier]** viene utilizzato solo per il nome di dominio (domain.com).
 
-   * Password in testo normale - Nessuna crittografia (da utilizzare solo nelle fasi di test).
+  * Password in testo normale - Nessuna crittografia (da utilizzare solo nelle fasi di test).
 
 * Selezionare la modalità di autenticazione utente: **[!UICONTROL Automatically compute the unique user identifier]** (vedere il passaggio [Calcolo del nome distinto](#distinguished-name-calculation)) o **[!UICONTROL Search the unique user identifier in the directory]** (vedere il passaggio [Ricerca di identificatori](#searching-for-identifiers)).
 
@@ -125,17 +125,17 @@ Se si sceglie di cercare un identificatore, la procedura guidata di distribuzion
 
   ![](assets/s_ncs_install_deployment_wiz_ldap_03.png)
 
-   1. **[!UICONTROL Recursive (default mode)]**.
+  1. **[!UICONTROL Recursive (default mode)]**.
 
-      La ricerca nella directory LDAP viene eseguita completamente, a partire da un determinato livello.
+     La ricerca nella directory LDAP viene eseguita completamente, a partire da un determinato livello.
 
-   1. **[!UICONTROL Limited to the base]**.
+  1. **[!UICONTROL Limited to the base]**.
 
-      Tutti gli attributi sono inclusi nella ricerca.
+     Tutti gli attributi sono inclusi nella ricerca.
 
-   1. **[!UICONTROL Limited to the first sub-level of the base]**.
+  1. **[!UICONTROL Limited to the first sub-level of the base]**.
 
-      La ricerca viene eseguita su tutti gli attributi della directory a partire dal primo livello dell&#39;attributo.
+     La ricerca viene eseguita su tutti gli attributi della directory a partire dal primo livello dell&#39;attributo.
 
 * Il campo **[!UICONTROL Filter]** consente di specificare un elemento per perfezionare l&#39;ambito della ricerca.
 

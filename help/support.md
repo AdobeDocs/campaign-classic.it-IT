@@ -8,24 +8,31 @@ exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
 TQID: https://experienceleague.adobe.com/8NB9NaZqp0IQnnlyezjCt3dTDMvJsdszb8zIJsI9GRw
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a7760dfc-5c44-4d77-bb68-c50b1e265c93
+    internal-label: Security and privacy
 subfeature_v2:
   - id: ac9c0a9c-8a76-4419-bd64-9c34c5782666
+    internal-label: Privacy
   - id: d0dbac2b-cbd2-42b3-956e-60af02966728
+    internal-label: Encryption
   - id: f807e46f-d823-43a9-98be-82e0b2f3a05c
+    internal-label: Subdomains and certificates
   - id: fb2a841f-c522-491f-9901-a1b939d252df
+    internal-label: Security
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 842
+source-wordcount: '843'
 ht-degree: 69%
-
 ---
-
 # Guida e opzioni di supporto per Campaign Classic {#help-support-options}
 
 Hai bisogno di supporto per Campaign Classic? Sei nel posto giusto!
@@ -36,7 +43,7 @@ Ottieni supporto tramite domande frequenti, best practice, risorse online e port
     <tr>
         <td><img src="platform/using/assets/do-not-localize/icon-faq.svg" width="60px"><p><a href="#faq">Problemi comuni e best practice</a></p></td>
         <td><img src="platform/using/assets/do-not-localize/icon-control-panel.svg" width="60px"><p><a href="#control-panel">Pannello di controllo Campaign</a></p></td>
-        <td><img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px"><p><a href="#support">Richiesta di assistenza</a></p></td>
+        <td><img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px"><p><a href="#support">Richiesta di aiuto</a></p></td>
     </tr>
 </table>
 
@@ -132,7 +139,7 @@ Puoi monitorare i sottodomini e i relativi certificati. Per ulteriori informazio
 ### Impostazioni delle istanze
 
 Scopri come gestire le impostazioni delle istanze di Campaign Classic nel Pannello di controllo Campaign. Per ulteriori informazioni, consulta queste pagine:
-* [Aggiungi gli IP nel inserisco nell&#39;elenco Consentiti di accesso di](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=it) alle istanze Campaign
+* [Aggiungi gli IP nel inserisco nell&#39;elenco Consentiti di](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=it) per accedere alle istanze Campaign
 * [Gestire le autorizzazioni URL](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=it)
 * [Accedi ai dettagli dell’istanza](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=it)
 * [Gestire le chiavi GPG per la crittografia dei dati](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=it)
@@ -149,7 +156,7 @@ Iscriviti alla community Campaign Classic: consulta le risposte già fornite all
 
 ### Accedi al Centro di download di Campaign
 
-In qualità di amministratore di Campaign, passa a [questa pagina](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) per accedere alla pagina dedicata alla distribuzione di software di Experience Cloud.
+Come amministratore di Campaign, passa a [questa pagina](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) per accedere alla pagina dedicata alla distribuzione di software di Experience Cloud.
 
 ### Crea un ticket o avvia una chat
 

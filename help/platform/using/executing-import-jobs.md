@@ -3,7 +3,7 @@ product: campaign
 title: Configurazione dei processi di importazione
 description: Scopri come configurare ed eseguire i processi di importazione in Campaign
 feature: Overview
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
@@ -11,20 +11,24 @@ exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
 TQID: https://experienceleague.adobe.com/OeRVFm6L-3N6yoIAKyTImaQb6d411UE8-NZ2jHu5VCc
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
+    internal-label: Profiles
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
+    internal-label: Audiences
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
+    internal-label: Query Editor
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 3009
+source-wordcount: '3000'
 ht-degree: 0%
-
 ---
-
 # Configurare i processi di importazione {#executing-import-jobs}
 
 
@@ -83,21 +87,21 @@ Il collegamento **[!UICONTROL Advanced parameters]** consente di accedere alle o
 
 * Scheda **[!UICONTROL General]**
 
-   * **[!UICONTROL Stop execution if there are too many rejects]**
+  * **[!UICONTROL Stop execution if there are too many rejects]**
 
-     Questa opzione è selezionata per impostazione predefinita. Puoi deselezionarla se desideri continuare a eseguire l’importazione indipendentemente dal numero di rifiuti. Per impostazione predefinita, l’esecuzione viene interrotta se le prime 100 righe vengono rifiutate.
+    Questa opzione è selezionata per impostazione predefinita. Puoi deselezionarla se desideri continuare a eseguire l’importazione indipendentemente dal numero di rifiuti. Per impostazione predefinita, l’esecuzione viene interrotta se le prime 100 righe vengono rifiutate.
 
-   * **[!UICONTROL Trace mode]**
+  * **[!UICONTROL Trace mode]**
 
-     Selezionare questa opzione per tenere traccia dell&#39;esecuzione dell&#39;importazione per ogni riga.
+    Selezionare questa opzione per tenere traccia dell&#39;esecuzione dell&#39;importazione per ogni riga.
 
-   * **[!UICONTROL Start the job in a detached process]**
+  * **[!UICONTROL Start the job in a detached process]**
 
-     Questa opzione è selezionata per impostazione predefinita. Consente di scollegare l’esecuzione dell’importazione in modo che non influisca su altri processi in corso nel database.
+    Questa opzione è selezionata per impostazione predefinita. Consente di scollegare l’esecuzione dell’importazione in modo che non influisca su altri processi in corso nel database.
 
-   * **[!UICONTROL Do not update enumerations]**
+  * **[!UICONTROL Do not update enumerations]**
 
-     Selezionare questa opzione per evitare di arricchire l&#39;elenco dei valori enumerati nel database. Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+    Selezionare questa opzione per evitare di arricchire l&#39;elenco dei valori enumerati nel database. Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 
 * Scheda **[!UICONTROL Variables]**
@@ -298,45 +302,45 @@ Il passaggio successivo dell’assistente all’importazione consente di selezio
 
 * Fare clic sui collegamenti **[!UICONTROL Edit]** per selezionare la cartella, l&#39;elenco o il servizio a cui si desidera associare o sottoscrivere i destinatari.
 
-   1. Importazione in una cartella
+  1. Importazione in una cartella
 
-      Il collegamento **[!UICONTROL Edit...]** della sezione **[!UICONTROL Import into a folder]** consente di selezionare o creare la cartella in cui verranno importati i destinatari. Per impostazione predefinita, se non è definita alcuna partizione, i dati vengono importati nella cartella predefinita dell’operatore.
+     Il collegamento **[!UICONTROL Edit...]** della sezione **[!UICONTROL Import into a folder]** consente di selezionare o creare la cartella in cui verranno importati i destinatari. Per impostazione predefinita, se non è definita alcuna partizione, i dati vengono importati nella cartella predefinita dell’operatore.
 
-      >[!NOTE]
-      >
-      >La cartella predefinita di un operatore è la prima cartella per la quale l&#39;operatore dispone dell&#39;accesso in scrittura. Ulteriori informazioni in [Gestione accesso alle cartelle](../../platform/using/access-management-folders.md).
+     >[!NOTE]
+     >
+     >La cartella predefinita di un operatore è la prima cartella per la quale l&#39;operatore dispone dell&#39;accesso in scrittura. Ulteriori informazioni in [Gestione accesso alle cartelle](../../platform/using/access-management-folders.md).
 
-      Per selezionare la cartella di importazione, fare clic sulla freccia a destra del campo **[!UICONTROL Folder]** e selezionare la cartella interessata. È inoltre possibile utilizzare l&#39;icona **[!UICONTROL Select link]** per visualizzare la struttura in una nuova finestra o creare una nuova cartella.
+     Per selezionare la cartella di importazione, fare clic sulla freccia a destra del campo **[!UICONTROL Folder]** e selezionare la cartella interessata. È inoltre possibile utilizzare l&#39;icona **[!UICONTROL Select link]** per visualizzare la struttura in una nuova finestra o creare una nuova cartella.
 
-      ![](assets/s_ncs_user_import_wizard05_2.png)
+     ![](assets/s_ncs_user_import_wizard05_2.png)
 
-      Per creare una nuova cartella, seleziona il nodo da cui desideri aggiungere una cartella e fai clic con il pulsante destro del mouse. Seleziona **[!UICONTROL Create a new 'Recipients' folder]**.
+     Per creare una nuova cartella, seleziona il nodo da cui desideri aggiungere una cartella e fai clic con il pulsante destro del mouse. Seleziona **[!UICONTROL Create a new 'Recipients' folder]**.
 
-      ![](assets/s_ncs_user_import_wizard05_3.png)
+     ![](assets/s_ncs_user_import_wizard05_3.png)
 
-      La cartella viene aggiunta sotto il nodo corrente. Immettere il nome della nuova cartella, premere Invio per confermare, quindi fare clic su **[!UICONTROL OK]**.
+     La cartella viene aggiunta sotto il nodo corrente. Immettere il nome della nuova cartella, premere Invio per confermare, quindi fare clic su **[!UICONTROL OK]**.
 
-      ![](assets/s_ncs_user_import_wizard05_4.png)
+     ![](assets/s_ncs_user_import_wizard05_4.png)
 
-   1. Associazione a un elenco
+  1. Associazione a un elenco
 
-      Il collegamento **[!UICONTROL Edit...]** nella sezione **[!UICONTROL Add recipients to a list]** consente di selezionare o creare un elenco in cui verranno importati i destinatari.
+     Il collegamento **[!UICONTROL Edit...]** nella sezione **[!UICONTROL Add recipients to a list]** consente di selezionare o creare un elenco in cui verranno importati i destinatari.
 
-      ![](assets/s_ncs_user_import_wizard05_5.png)
+     ![](assets/s_ncs_user_import_wizard05_5.png)
 
-      Per creare un nuovo elenco per questi destinatari, fare clic su **[!UICONTROL Select link]** e quindi su **[!UICONTROL Create]**. La creazione e la gestione degli elenchi sono presentate in [questa sezione](../../platform/using/creating-and-managing-lists.md).
+     Per creare un nuovo elenco per questi destinatari, fare clic su **[!UICONTROL Select link]** e quindi su **[!UICONTROL Create]**. La creazione e la gestione degli elenchi sono presentate in [questa sezione](../../platform/using/creating-and-managing-lists.md).
 
-      ![](assets/s_ncs_user_import_wizard05_6.png)
+     ![](assets/s_ncs_user_import_wizard05_6.png)
 
-      Puoi decidere di aggiungere i destinatari a quelli già presenti in un elenco o di ricrearlo con i nuovi destinatari. In questo caso, se l’elenco conteneva già dei destinatari, questi verranno eliminati e sostituiti dai destinatari importati.
+     Puoi decidere di aggiungere i destinatari a quelli già presenti in un elenco o di ricrearlo con i nuovi destinatari. In questo caso, se l’elenco conteneva già dei destinatari, questi verranno eliminati e sostituiti dai destinatari importati.
 
-   1. Iscrizione a un servizio
+  1. Iscrizione a un servizio
 
-      Per sottoscrivere tutti i destinatari importati a un servizio informazioni, fare clic sul collegamento **[!UICONTROL Edit...]** della sezione **[!UICONTROL Subscribe recipients to a service]** per selezionare o creare il servizio informazioni a cui i destinatari verranno abbonati. È possibile selezionare l&#39;opzione **[!UICONTROL Send a confirmation message]**: il contenuto del messaggio è definito nel modello di consegna associato al servizio di abbonamento.
+     Per sottoscrivere tutti i destinatari importati a un servizio informazioni, fare clic sul collegamento **[!UICONTROL Edit...]** della sezione **[!UICONTROL Subscribe recipients to a service]** per selezionare o creare il servizio informazioni a cui i destinatari verranno abbonati. È possibile selezionare l&#39;opzione **[!UICONTROL Send a confirmation message]**: il contenuto del messaggio è definito nel modello di consegna associato al servizio di abbonamento.
 
-      ![](assets/s_ncs_user_import_wizard05_7.png)
+     ![](assets/s_ncs_user_import_wizard05_7.png)
 
-      Per creare un nuovo servizio per questi destinatari, fare clic su **[!UICONTROL Select link]** e quindi sull&#39;icona **[!UICONTROL Create]**. La gestione dei servizi informativi è illustrata in [questa sezione](../../delivery/using/managing-subscriptions.md).
+     Per creare un nuovo servizio per questi destinatari, fare clic su **[!UICONTROL Select link]** e quindi sull&#39;icona **[!UICONTROL Create]**. La gestione dei servizi informativi è illustrata in [questa sezione](../../delivery/using/managing-subscriptions.md).
 
 * Utilizza il campo **[!UICONTROL Origin]** per aggiungere informazioni sull&#39;origine dei destinatari ai loro profili. Queste informazioni sono particolarmente utili nel quadro di un’importazione multipla.
 

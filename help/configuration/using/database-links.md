@@ -8,17 +8,17 @@ exl-id: e05dcd81-bbca-4767-8da3-ea064f7f6c8e
 TQID: https://experienceleague.adobe.com/0kiRwyal2yxHRjRNkPCNY2zsulDvbC3FWcJZ49Ynmkw
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 932
+source-wordcount: '935'
 ht-degree: 2%
-
 ---
-
 # Gestione collegamenti {#links--relation-between-tables}
 
 Un collegamento descrive l’associazione tra una tabella e un’altra.
@@ -58,23 +58,23 @@ I collegamenti rispettano le seguenti regole:
 
 * La definizione di un collegamento viene immessa in un **`<element>`** di tipo **link** con i seguenti attributi:
 
-   * **nome**: nome del collegamento dalla tabella di origine
-   * **target**: nome dello schema di destinazione
-   * **etichetta**: etichetta del collegamento
-   * **revLink** (facoltativo): nome del collegamento inverso dallo schema di destinazione (dedotto automaticamente per impostazione predefinita)
-   * **integrità** (facoltativo): integrità referenziale dell&#39;occorrenza della tabella di origine rispetto all&#39;occorrenza della tabella di destinazione.
-I valori possibili sono:
+  * **nome**: nome del collegamento dalla tabella di origine
+  * **target**: nome dello schema di destinazione
+  * **etichetta**: etichetta del collegamento
+  * **revLink** (facoltativo): nome del collegamento inverso dallo schema di destinazione (dedotto automaticamente per impostazione predefinita)
+  * **integrità** (facoltativo): integrità referenziale dell&#39;occorrenza della tabella di origine rispetto all&#39;occorrenza della tabella di destinazione.
+    I valori possibili sono:
 
-      * **define**: è possibile eliminare l&#39;occorrenza di origine se un&#39;occorrenza di destinazione non vi fa più riferimento
-      * **normal**: l&#39;eliminazione dell&#39;occorrenza di origine inizializza le chiavi del collegamento all&#39;occorrenza di destinazione (modalità predefinita). Questo tipo di integrità inizializza tutte le chiavi esterne
-      * **own**: l&#39;eliminazione dell&#39;occorrenza di origine determina l&#39;eliminazione dell&#39;occorrenza di destinazione
-      * **owncopy**: uguale a **own** (in caso di eliminazione) o duplica le occorrenze (in caso di duplicazione)
-      * **neutro**: nessun comportamento specifico
+    * **define**: è possibile eliminare l&#39;occorrenza di origine se un&#39;occorrenza di destinazione non vi fa più riferimento
+    * **normal**: l&#39;eliminazione dell&#39;occorrenza di origine inizializza le chiavi del collegamento all&#39;occorrenza di destinazione (modalità predefinita). Questo tipo di integrità inizializza tutte le chiavi esterne
+    * **own**: l&#39;eliminazione dell&#39;occorrenza di origine determina l&#39;eliminazione dell&#39;occorrenza di destinazione
+    * **owncopy**: uguale a **own** (in caso di eliminazione) o duplica le occorrenze (in caso di duplicazione)
+    * **neutro**: nessun comportamento specifico
 
-   * **revIntegrity** (facoltativo): integrità nello schema di destinazione (facoltativo, &quot;normal&quot; per impostazione predefinita)
-   * **revCardinality** (facoltativo): con il valore &quot;single&quot; compila la cardinalità con il tipo 1-1 (1-N per impostazione predefinita)
-   * **externalJoin** (facoltativo): forza l&#39;outer join
-   * **revExternalJoin** (facoltativo): forza il join esterno sul collegamento inverso
+  * **revIntegrity** (facoltativo): integrità nello schema di destinazione (facoltativo, &quot;normal&quot; per impostazione predefinita)
+  * **revCardinality** (facoltativo): con il valore &quot;single&quot; compila la cardinalità con il tipo 1-1 (1-N per impostazione predefinita)
+  * **externalJoin** (facoltativo): forza l&#39;outer join
+  * **revExternalJoin** (facoltativo): forza il join esterno sul collegamento inverso
 
 * Un collegamento fa riferimento a uno o più campi dalla tabella di origine alla tabella di destinazione. Non è necessario compilare i campi che compongono il join (elemento `<join>`) perché vengono dedotti automaticamente per impostazione predefinita utilizzando la chiave interna dello schema di destinazione.
 * Un indice viene aggiunto automaticamente alla chiave esterna del collegamento nello schema esteso.

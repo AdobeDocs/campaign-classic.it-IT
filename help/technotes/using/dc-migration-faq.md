@@ -9,25 +9,31 @@ exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
 TQID: https://experienceleague.adobe.com/r3qtW9ZsCD85N9qAnN1EOje-VMhDoyPuqea2xZnBWLs
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 2269
+source-wordcount: '2269'
 ht-degree: 0%
-
 ---
-
 # Domande frequenti sulla migrazione al cloud pubblico{#dc-faq}
 
 
@@ -125,8 +131,8 @@ Gli impatti globali su IP, elenchi Bloccati, sottodomini e URL sono elencati di 
 * **Quale dovrebbe essere l&#39;impatto del sottodominio delegato che utilizziamo per contrassegnare le comunicazioni?**
 
   I sottodomini utilizzati per le comunicazioni di marketing rimangono gli stessi. Tuttavia, a seconda dell’implementazione, sono necessarie azioni sul lato client:
-   * In caso di delega del sottodominio ad Adobe (impostazione predefinita), Adobe si occupa di tutte le modifiche e garantisce una transizione senza soluzione di continuità.
-   * In caso di configurazione di CNAME (eccezione), al client viene richiesto di implementare le modifiche, in coordinamento con Adobe.
+  * In caso di delega del sottodominio ad Adobe (impostazione predefinita), Adobe si occupa di tutte le modifiche e garantisce una transizione senza soluzione di continuità.
+  * In caso di configurazione di CNAME (eccezione), al client viene richiesto di implementare le modifiche, in coordinamento con Adobe.
 
 ## Impatto su configurazione e connettività
 
@@ -250,13 +256,13 @@ Gli impatti globali durante la migrazione sono elencati di seguito.
 
   Il trasferimento dei dati tra centri dati si trova nel percorso critico dei tempi di inattività. I dati vengono memorizzati in due modi:
 
-   * Di gran lunga il più importante, il database
-   * File sul server applicazioni (importazioni ed esportazioni di dati)
+  * Di gran lunga il più importante, il database
+  * File sul server applicazioni (importazioni ed esportazioni di dati)
 
   Ridurre le dimensioni del database è della massima importanza per accelerare il trasferimento dei dati. Suggerimenti:
 
-   * Riduci i periodi di conservazione dei dati storici (registri di consegna, registri di tracciamento, ecc.)
-   * Elimina record inutili in altre tabelle (consegne, destinatari, tabelle personalizzate)
+  * Riduci i periodi di conservazione dei dati storici (registri di consegna, registri di tracciamento, ecc.)
+  * Elimina record inutili in altre tabelle (consegne, destinatari, tabelle personalizzate)
 
 * **Qual è il tempo di inattività stimato per la migrazione di un&#39;istanza?**
 
@@ -274,11 +280,11 @@ Gli impatti globali durante la migrazione sono elencati di seguito.
 
   La migrazione degli ambienti verrà eseguita nell’ordine seguente:
 
-   1. Ambienti di sviluppo
-   1. Ambienti stage
-   1. Ambienti di produzione
-   1. Ambienti RT
-   1. Ambienti di mid-sourcing
+  1. Ambienti di sviluppo
+  1. Ambienti stage
+  1. Ambienti di produzione
+  1. Ambienti RT
+  1. Ambienti di mid-sourcing
 
 * **Qual è il piano di rollback?**
 

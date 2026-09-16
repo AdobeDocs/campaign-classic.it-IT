@@ -10,11 +10,9 @@ hide: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '2546'
+source-wordcount: '2548'
 ht-degree: 1%
-
 ---
-
 # Configurazioni generali{#general-configurations}
 
 Questa sezione descrive la configurazione da eseguire in Adobe Campaign v7 durante la migrazione da una versione v5.11 o v6.02.
@@ -34,7 +32,7 @@ Per utilizzare la modalità TIMESTAMP WITH TIMEZONE, è inoltre necessario aggiu
 
 >[!IMPORTANT]
 >
->Se il parametro **-usetimestamptz:1** viene utilizzato con un motore di database non compatibile, il database sarà danneggiato e sarà necessario ripristinare un backup del database ed eseguire nuovamente il comando precedente.
+>Se si utilizza il parametro **-usetimestamptz:1** con un motore di database non compatibile, il database sarà danneggiato e sarà necessario ripristinare un backup del database ed eseguire nuovamente il comando precedente.
 
 >[!NOTE]
 >
@@ -500,7 +498,7 @@ $(XTK_INSTALL_DIR)/tomcat-X/lib/el-api.jar
 * nms:mobileOfferView
 * nms:paperOfferView
 
-### Contenuto offerta {#offer-content}
+### Contenuto dell’offerta {#offer-content}
 
 Nella versione 7, il contenuto dell’offerta è stato spostato. Nella versione v6.02 il contenuto era in ogni schema di rappresentazione (**nms:emailOfferView**). Nella versione 7, il contenuto è ora nello schema dell’offerta. Dopo l’aggiornamento, il contenuto non sarà quindi visibile nell’interfaccia. Dopo l’aggiornamento, devi ricreare il contenuto dell’offerta o sviluppare uno script che sposta automaticamente il contenuto dallo schema di rappresentazione allo schema dell’offerta.
 

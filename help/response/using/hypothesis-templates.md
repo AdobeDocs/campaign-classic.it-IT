@@ -3,7 +3,7 @@ product: campaign
 title: Modelli di ipotesi
 description: Scopri come creare modelli di ipotesi in Campaign Response Manager
 feature: Campaigns, Templates
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: campaign
 content-type: reference
 topic-tags: response-manager
@@ -11,20 +11,23 @@ exl-id: 428c7677-454b-4618-bae7-0be7df6dfcaa
 TQID: https://experienceleague.adobe.com/FKf9pDlOZI1NEhwmdSpcpvEbNsT28wEvgy81TBEQQgo
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
 subfeature_v2:
   - id: d72afaa0-c842-48c8-9a3c-51b7911edc1b
+    internal-label: Response Management
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1410
+source-wordcount: '1401'
 ht-degree: 2%
-
 ---
-
 # Modelli di ipotesi{#hypothesis-templates}
 
 
@@ -102,17 +105,17 @@ La scheda **[!UICONTROL General]** del modello consente inoltre di specificare i
 
   Per specificare una pianificazione, attenersi alla procedura descritta di seguito.
 
-   1. Fare clic sul collegamento **[!UICONTROL Frequency of execution...]**, quindi sul pulsante **[!UICONTROL Change...]**.
+  1. Fare clic sul collegamento **[!UICONTROL Frequency of execution...]**, quindi sul pulsante **[!UICONTROL Change...]**.
 
-      ![](assets/response_frequency_execution_001.png)
+     ![](assets/response_frequency_execution_001.png)
 
-   1. Configura la frequenza, gli eventi correlati e il periodo di validità.
+  1. Configura la frequenza, gli eventi correlati e il periodo di validità.
 
-      ![](assets/response_frequency_execution_002.png)
+     ![](assets/response_frequency_execution_002.png)
 
-   1. Fare clic su **[!UICONTROL Finish]** per salvare la pianificazione.
+  1. Fare clic su **[!UICONTROL Finish]** per salvare la pianificazione.
 
-      ![](assets/response_frequency_execution_003.png)
+     ![](assets/response_frequency_execution_003.png)
 
 * **[!UICONTROL Log SQL queries in journal]**: questa funzione è riservata agli utenti esperti. Consente di aggiungere una scheda al controllo dell’ipotesi di misurazione per visualizzare le query SQL. Ciò consente di rilevare eventuali malfunzionamenti se una simulazione termina con errori.
 * **[!UICONTROL Keep execution workflow]**: consente di mantenere il flusso di lavoro generato automaticamente all&#39;inizio del calcolo dell&#39;ipotesi. Nelle ipotesi create da un modello in cui questa opzione è selezionata, il flusso di lavoro generato è disponibile per seguire il processo.
@@ -157,31 +160,31 @@ Dopo aver definito la tabella delle transazioni e i campi che l’ipotesi riguar
 
 * **Filtro sulle transazioni**: nella scheda **[!UICONTROL Scope]** puoi configurare un filtro in base all&#39;ipotesi. Per eseguire questa operazione:
 
-   1. Fai clic sul collegamento **[!UICONTROL Edit query]**.
+  1. Fai clic sul collegamento **[!UICONTROL Edit query]**.
 
-      ![](assets/response_scope_filtering_001.png)
+     ![](assets/response_scope_filtering_001.png)
 
-   1. Specifica le condizioni di filtro.
+  1. Specifica le condizioni di filtro.
 
-      ![](assets/response_scope_filtering_002.png)
+     ![](assets/response_scope_filtering_002.png)
 
-   1. Seleziona la transazione interessata dall’ipotesi.
+  1. Seleziona la transazione interessata dall’ipotesi.
 
-      ![](assets/response_scope_filtering_003.png)
+     ![](assets/response_scope_filtering_003.png)
 
 * **Filtro sui destinatari**: nella scheda **[!UICONTROL Scope]** puoi limitare l&#39;ipotesi a qualsiasi informazione collegata a un messaggio (consegna, destinatario, indirizzo e-mail, servizio, ecc.):
 
-   1. Fare clic sul collegamento **[!UICONTROL Add a filter]**, quindi su **[!UICONTROL Edit query]**.
+  1. Fare clic sul collegamento **[!UICONTROL Add a filter]**, quindi su **[!UICONTROL Edit query]**.
 
-      ![](assets/response_scope_filtering_004.png)
+     ![](assets/response_scope_filtering_004.png)
 
-   1. Specifica le condizioni di filtro.
+  1. Specifica le condizioni di filtro.
 
-      ![](assets/response_scope_filtering_005.png)
+     ![](assets/response_scope_filtering_005.png)
 
-   1. Fai clic su **[!UICONTROL Finish]** per salvare la query.
+  1. Fai clic su **[!UICONTROL Finish]** per salvare la query.
 
-      ![](assets/response_scope_filtering_006.png)
+     ![](assets/response_scope_filtering_006.png)
 
 * **Script**: è possibile utilizzare uno script di JavaScript per sovraccaricare dinamicamente le impostazioni delle ipotesi durante la relativa esecuzione.
 

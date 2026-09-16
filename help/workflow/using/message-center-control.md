@@ -8,9 +8,7 @@ source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 1%
-
 ---
-
 
 # Centro messaggi (controllo){#message-center-control}
 
@@ -34,7 +32,7 @@ Per ulteriori informazioni, a seconda della versione di Campaign in uso, consult
    <td> <strong>Descrizione</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> Centro messaggi &lt;external_account_name&gt;<br /> </td> 
+   <td> Centro messaggi &lt;nome_account_esterno&gt;<br /> </td> 
    <td> mcSynch_&lt;nome_account_esterno&gt;<br /> </td> 
    <td> Questo flusso di lavoro:<br /> 
     <ul> 

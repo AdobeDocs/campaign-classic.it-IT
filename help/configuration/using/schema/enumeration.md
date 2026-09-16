@@ -7,15 +7,14 @@ exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
 TQID: https://experienceleague.adobe.com/w8b-2HEtYRMOd9yHFLtvS0vS2tdLDzuIakLfrqImsGo
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 198
+source-wordcount: '198'
 ht-degree: 11%
-
 ---
-
 # elemento enumerazione {#enumeration--element}
 
 
@@ -55,34 +54,34 @@ Le enumerazioni vengono definite all’inizio di uno schema (prima che sia defin
 
   Elenco dei tipi disponibili:
 
-   * QUALSIASI
-   * raccoglitore
-   * blob
-   * booleano
-   * byte
-   * CDATA
-   * Data e ora
-   * datetimetz
-   * datetimenotz
-   * data
-   * DOMDocument
-   * DOMElement
-   * doppio
-   * enum
-   * mobile
-   * html
-   * int64
-   * collegamento
-   * lungo
-   * promemoria
-   * MNTOKEN
-   * percentuale
-   * chiave primaria
-   * breve
-   * stringa
-   * ora
-   * intervallo di tempo
-   * uuid
+  * QUALSIASI
+  * raccoglitore
+  * blob
+  * booleano
+  * byte
+  * CDATA
+  * Data e ora
+  * datetimetz
+  * datetimenotz
+  * data
+  * DOMDocument
+  * DOMElement
+  * doppio
+  * enum
+  * mobile
+  * html
+  * int64
+  * collegamento
+  * lungo
+  * promemoria
+  * MNTOKEN
+  * percentuale
+  * chiave primaria
+  * breve
+  * stringa
+  * ora
+  * intervallo di tempo
+  * uuid
 
 * **default (stringa)**: valore predefinito. Il valore predefinito può anche essere uno dei valori definiti nell’enumerazione.
 * **desc (stringa)**: descrizione enumerazione.

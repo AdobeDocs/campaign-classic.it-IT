@@ -10,17 +10,18 @@ exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
 TQID: https://experienceleague.adobe.com/kd15Dm8jY6xE0RpGTImgoL27wDbYmvuuLs-jK4-BwVo
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
 subfeature_v2:
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 1573
+source-wordcount: '1573'
 ht-degree: 1%
-
 ---
-
 # elemento attribute {#attribute--element}
 
 
@@ -58,11 +59,11 @@ La sequenza in cui sono definiti `<attribute>` elementi in un `<srcschema>` non 
 
   I valori accessibili sono:
 
-   * &quot;Nessuno&quot;: la riconciliazione da sola. Ciò significa che Adobe Campaign recupererà l’elemento senza aggiornarlo o genererà un errore, se non esiste.
-   * &quot;insertOrUpdate&quot;: aggiornamento con inserimento. Ciò significa che Adobe Campaign aggiornerà l’elemento o lo creerà se non esiste.
-   * &quot;insert&quot;: insertion Ciò significa che Adobe Campaign inserirà l’elemento senza verificarne l’esistenza.
-   * &quot;update&quot; (aggiorna): aggiornamento. Ciò significa che Adobe Campaign aggiornerà l’elemento o genererà un errore se non esiste.
-   * &quot;delete&quot;: eliminazione. Ciò significa che Adobe Campaign recupererà ed eliminerà gli elementi.
+  * &quot;Nessuno&quot;: la riconciliazione da sola. Ciò significa che Adobe Campaign recupererà l’elemento senza aggiornarlo o genererà un errore, se non esiste.
+  * &quot;insertOrUpdate&quot;: aggiornamento con inserimento. Ciò significa che Adobe Campaign aggiornerà l’elemento o lo creerà se non esiste.
+  * &quot;insert&quot;: insertion Ciò significa che Adobe Campaign inserirà l’elemento senza verificarne l’esistenza.
+  * &quot;update&quot; (aggiorna): aggiornamento. Ciò significa che Adobe Campaign aggiornerà l’elemento o genererà un errore se non esiste.
+  * &quot;delete&quot;: eliminazione. Ciò significa che Adobe Campaign recupererà ed eliminerà gli elementi.
 
 * **avanzato (booleano)**: quando questa opzione è attivata (@advanced=&quot;true&quot;), consente di nascondere l&#39;attributo nell&#39;elenco dei campi disponibili accessibili per la configurazione di un elenco in un modulo.
 * **applicabileIf (stringa)**: questo attributo consente di rendere facoltativi i campi. L&#39;elemento `<attribute>` verrà preso in considerazione durante l&#39;aggiornamento del database quando il vincolo verrà rispettato. &quot;applyIf&quot; riceve un’espressione XTK.
@@ -70,14 +71,14 @@ La sequenza in cui sono definiti `<attribute>` elementi in un `<srcschema>` non 
 * **AppartieneA (stringa)**: prende il nome e lo spazio dei nomi della tabella che condivide il campo e popola lo schema in cui è dichiarato l&#39;attributo. (utilizzato solo in un `<schema>`).
 * **criteri dati (stringa)**: consente di specificare vincoli di approvazione per i valori consentiti nel campo SQL o XML. I valori per questo attributo sono:
 
-   * &quot;none&quot;: nessun valore
-   * &quot;smartCase&quot;: prime lettere maiuscole
-   * &quot;lowerCase&quot;: tutte minuscole
-   * &quot;upperCase&quot;: tutte maiuscole
-   * &quot;email&quot;: indirizzo e-mail
-   * &quot;phone&quot;: numero di telefono
-   * &quot;identifier&quot;: nome dell’identificatore
-   * &quot;resIdentifier&quot;: nome file
+  * &quot;none&quot;: nessun valore
+  * &quot;smartCase&quot;: prime lettere maiuscole
+  * &quot;lowerCase&quot;: tutte minuscole
+  * &quot;upperCase&quot;: tutte maiuscole
+  * &quot;email&quot;: indirizzo e-mail
+  * &quot;phone&quot;: numero di telefono
+  * &quot;identifier&quot;: nome dell’identificatore
+  * &quot;resIdentifier&quot;: nome file
 
 * **dbEnum (stringa)**: riceve il nome interno di un&#39;enumerazione &quot;chiusa&quot;. I valori di enumerazione devono essere definiti in `<srcschema>`.
 * **defOnDuplicate (booleano)**: se questo attributo è attivato, quando un record viene duplicato il valore predefinito (definito in @default) viene automaticamente riapplicato al record.
@@ -88,13 +89,13 @@ La sequenza in cui sono definiti `<attribute>` elementi in un `<srcschema>` non 
 * **expr (stringa)**: definisce un&#39;espressione di precalcolo del campo. Questo attributo riceve un&#39;espressione Xpath o XTK.
 * **funzione (stringa)**: definisce un campo delle caratteristiche. Questi campi vengono utilizzati per estendere i dati in una tabella esistente, ma con l&#39;archiviazione in una tabella allegata. I valori accettati sono:
 
-   * &quot;shared&quot; (condiviso): il contenuto viene memorizzato in una tabella condivisa per tipo di dati
-   * &quot;dedicato&quot;: il contenuto viene memorizzato in una tabella dedicata
+  * &quot;shared&quot; (condiviso): il contenuto viene memorizzato in una tabella condivisa per tipo di dati
+  * &quot;dedicato&quot;: il contenuto viene memorizzato in una tabella dedicata
 
   Le tabelle delle caratteristiche SQL vengono create automaticamente in base al tipo di caratteristica:
 
-   * dedicato: `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
-   * condiviso: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
+  * dedicato: `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
+  * condiviso: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
 
   Esistono due tipi di campi delle caratteristiche: campi oà<sup>1</sup> semplici in cui è autorizzato un singolo valore per la caratteristica e campi a scelta multipla oà<sup>1</sup> in cui la caratteristica è collegata a un elemento di raccolta che può contenere diversi valori.
 
@@ -109,19 +110,19 @@ La sequenza in cui sono definiti `<attribute>` elementi in un `<srcschema>` non 
 
   Quando lo schema viene scritto nel database, Adobe Campaign aggiunge automaticamente i prefissi al nome del campo:
 
-   * &quot;i&quot;: prefisso per il tipo &#39;integer&#39;.
-   * &quot;d&quot;: prefisso per il tipo &quot;double&quot;.
-   * &quot;s&quot;: prefisso per il tipo di stringa di caratteri.
-   * &quot;ts&quot;: prefisso per il tipo &quot;date&quot;.
+  * &quot;i&quot;: prefisso per il tipo &#39;integer&#39;.
+  * &quot;d&quot;: prefisso per il tipo &quot;double&quot;.
+  * &quot;s&quot;: prefisso per il tipo di stringa di caratteri.
+  * &quot;ts&quot;: prefisso per il tipo &quot;date&quot;.
 
   Per definire completamente il nome del campo nella tabella, utilizzare l&#39;opzione &quot;@sqlname&quot; durante la definizione di un attributo.
 
 * **notNull (booleano)**: consente di ridefinire il comportamento di Adobe Campaign relativo alla gestione dei record NULL nel database. Per impostazione predefinita, i campi numerici non sono nulli e i campi di tipo stringa e data possono essere nulli.
 * **pkgStatus (stringa)**: durante le esportazioni del pacchetto, i valori vengono presi in considerazione a seconda del valore del &quot;@pkgStatus&quot;:
 
-   * &quot;always&quot;: sempre presente
-   * &quot;mai&quot;: mai presente
-   * &quot;default (or Nothing)&quot;: il valore viene esportato tranne se si tratta del valore predefinito o se non è un campo interno che non sarebbe compatibile con altre istanze.
+  * &quot;always&quot;: sempre presente
+  * &quot;mai&quot;: mai presente
+  * &quot;default (or Nothing)&quot;: il valore viene esportato tranne se si tratta del valore predefinito o se non è un campo interno che non sarebbe compatibile con altre istanze.
 
 * **ref (stringa)**: questo attributo definisce un riferimento a un elemento `<attribute>` condiviso da più schemi (factoring delle definizioni). La definizione non viene copiata nello schema corrente.
 * **obbligatorio (booleano)**: se questo attributo è attivato (@required=&quot;true&quot;), il campo viene evidenziato nell&#39;interfaccia. L’etichetta del campo sarà rossa nei moduli.
@@ -137,32 +138,32 @@ La sequenza in cui sono definiti `<attribute>` elementi in un `<srcschema>` non 
 
   Elenco dei tipi disponibili:
 
-   * QUALSIASI
-   * raccoglitore
-   * blob
-   * booleano
-   * byte
-   * CDATA
-   * Data e ora
-   * datetimetz
-   * datetimenotz
-   * data
-   * doppio
-   * enum
-   * mobile
-   * html
-   * int64
-   * collegamento
-   * lungo
-   * promemoria
-   * MNTOKEN
-   * percentuale
-   * chiave primaria
-   * breve
-   * stringa
-   * ora
-   * intervallo di tempo
-   * uuid
+  * QUALSIASI
+  * raccoglitore
+  * blob
+  * booleano
+  * byte
+  * CDATA
+  * Data e ora
+  * datetimetz
+  * datetimenotz
+  * data
+  * doppio
+  * enum
+  * mobile
+  * html
+  * int64
+  * collegamento
+  * lungo
+  * promemoria
+  * MNTOKEN
+  * percentuale
+  * chiave primaria
+  * breve
+  * stringa
+  * ora
+  * intervallo di tempo
+  * uuid
 
   Se l’attributo &quot;@type&quot; viene lasciato vuoto, Adobe Campaign collega al campo per impostazione predefinita una stringa di caratteri (STRING) di lunghezza pari a 100.
 

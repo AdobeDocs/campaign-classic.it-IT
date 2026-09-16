@@ -3,7 +3,7 @@ product: campaign
 title: Offerte su un canale in entrata
 description: Offerte su un canale in entrata
 feature: Interaction, Offers
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: case-study
@@ -11,18 +11,19 @@ exl-id: 90afced3-465d-4370-8a33-51a7e4356135
 TQID: https://experienceleague.adobe.com/HkXtRV9hn2hZSZyxx86o2muGafhdhWuLp-uYBe4xTaU
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2:
   - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
+    internal-label: Offer Management
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 2102
+source-wordcount: '2093'
 ht-degree: 1%
-
 ---
-
 # Offerte su un canale in entrata{#offers-on-an-inbound-channel}
 
 
@@ -187,21 +188,21 @@ Applica i seguenti passaggi:
 
 * Crea un catalogo di offerte specifiche per le interazioni in entrata anonime seguendo i passaggi seguenti:
 
-   1. [Creazione di un ambiente per i contatti anonimi](#creating-an-environment-for-anonymous-contacts)
-   1. [Configurazione degli spazi di offerta per l’ambiente anonimo](#configuring-offer-spaces-for-the-anonymous-environment)
-   1. [Creazione di categorie di offerta in un ambiente anonimo](#creating-offer-categories-in-an-anonymous-environment)
-   1. [Creazione di offerte per visitatori anonimi](#creating-offers-for-anonymous-visitors)
+  1. [Creazione di un ambiente per i contatti anonimi](#creating-an-environment-for-anonymous-contacts)
+  1. [Configurazione degli spazi di offerta per l’ambiente anonimo](#configuring-offer-spaces-for-the-anonymous-environment)
+  1. [Creazione di categorie di offerta in un ambiente anonimo](#creating-offer-categories-in-an-anonymous-environment)
+  1. [Creazione di offerte per visitatori anonimi](#creating-offers-for-anonymous-visitors)
 
 * Crea un catalogo di offerte specifiche per le interazioni in entrata identificate seguendo la procedura riportata di seguito.
 
-   1. [Configurare gli spazi dell’offerta nell’ambiente identificato](#configure-the-offer-spaces-in-the-identified-environment)
-   1. [Creazione di categorie di offerta in un ambiente identificato](#creating-offer-categories-in-an-identified-environment)
-   1. [Creazione di offerte personalizzate](#creating-personalized-offers)
+  1. [Configurare gli spazi dell’offerta nell’ambiente identificato](#configure-the-offer-spaces-in-the-identified-environment)
+  1. [Creazione di categorie di offerta in un ambiente identificato](#creating-offer-categories-in-an-identified-environment)
+  1. [Creazione di offerte personalizzate](#creating-personalized-offers)
 
 * Configura la chiamata al motore di offerta:
 
-   1. [Configurazione degli spazi dell’offerta sulla pagina web](#configuring-offer-spaces-on-the-web-page)
-   1. [Specifica delle impostazioni avanzate degli spazi dell’offerta identificati](#specifying-the-advanced-settings-of-the-identified-offer-spaces)
+  1. [Configurazione degli spazi dell’offerta sulla pagina web](#configuring-offer-spaces-on-the-web-page)
+  1. [Specifica delle impostazioni avanzate degli spazi dell’offerta identificati](#specifying-the-advanced-settings-of-the-identified-offer-spaces)
 
 ### Creazione di un ambiente per i contatti anonimi {#creating-an-environment-for-anonymous-contacts}
 

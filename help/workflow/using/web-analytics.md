@@ -8,9 +8,7 @@ source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 3%
-
 ---
-
 
 # Analisi web{#web-analytics}
 
@@ -28,7 +26,7 @@ Per impostazione predefinita, i flussi di lavoro descritti di seguito vengono in
   <tr> 
    <td> <span class="uicontrol">Invio di indicatori e attributi della campagna</span> <br /> </td> 
    <td> <span class="uicontrol">WebAnalyticsSendMetrics</span> <br /> </td> 
-   <td> Questo flusso di lavoro consente di inviare gli indicatori della campagna e-mail da Adobe Campaign a Adobe Experience Cloud Suite tramite il connettore Adobe® Analytics. Gli indicatori interessati sono i seguenti: <strong>Inviato</strong> (iSent), <strong>Numero totale di aperture</strong> (iTotalRecipientOpen), <strong>Numero totale di destinatari che hanno fatto clic</strong> (iTotalRecipientClick), <strong>Errori</strong> (iError), <strong>Rinuncia</strong> (iOptOut).<br /> </td> 
+   <td> Questo flusso di lavoro consente di inviare gli indicatori della campagna e-mail da Adobe Campaign alla suite Adobe Experience Cloud tramite il connettore Adobe® Analytics. Gli indicatori interessati sono i seguenti: <strong>Inviato</strong> (iSent), <strong>Numero totale di aperture</strong> (iTotalRecipientOpen), <strong>Numero totale di destinatari che hanno fatto clic</strong> (iTotalRecipientClick), <strong>Errori</strong> (iError), <strong>Rinuncia</strong> (iOptOut).<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Identificazione dei contatti convertiti</span> <br /> </td> 

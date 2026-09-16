@@ -8,17 +8,17 @@ exl-id: 5745fc60-9df3-4ad0-bbeb-f6ae8c86a5aa
 TQID: https://experienceleague.adobe.com/M8NNQbT-Kt4wYQhIVeq0sceBctFGvHjrfT7qe-X-u0U
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 89
+source-wordcount: '89'
 ht-degree: 21%
-
 ---
-
 # Riferimento schema {#schema-reference}
 
 Quando si modifica uno schema, è disponibile un sistema di approvazione basato sullo schema di origine (xtk:srcSchema). Alcuni errori possono essere individuati anche quando si aggiorna il database utilizzando &quot;Aggiornamento della struttura del database...&quot; assistente.

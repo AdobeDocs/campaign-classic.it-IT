@@ -10,19 +10,21 @@ exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
 TQID: https://experienceleague.adobe.com/TJ5R6T1pu5JQU5SaGoWRgZLG2m29TWWPVB8nniorRUg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 868
+source-wordcount: '868'
 ht-degree: 4%
-
 ---
-
 # Configurazioni aggiuntive {#mc-additional-configurations}
 
 
@@ -96,12 +98,12 @@ Nelle istanze di esecuzione, è possibile accedere ai flussi di lavoro tecnici p
 
   Sono disponibili i seguenti stati dell’evento:
 
-   * **[!UICONTROL Pending]** : l&#39;evento è in coda. Non è ancora stato assegnato alcun modello di messaggio.
-   * **[!UICONTROL Pending delivery]** : l&#39;evento è in coda, gli è stato assegnato un modello di messaggio e viene elaborato dalla consegna.
-   * **[!UICONTROL Sent]** : questo stato viene copiato dai registri di consegna. Significa che la consegna è stata inviata.
-   * **[!UICONTROL Ignored by the delivery]** : questo stato viene copiato dai registri di consegna. Significa che la consegna è stata ignorata.
-   * **[!UICONTROL Delivery failed]** : questo stato viene copiato dai registri di consegna. Significa che la consegna è non è andata a buon fine.
-   * **[!UICONTROL Event not taken into account]** : impossibile collegare l&#39;evento a un modello di messaggio. L’evento non verrà elaborato.
+  * **[!UICONTROL Pending]** : l&#39;evento è in coda. Non è ancora stato assegnato alcun modello di messaggio.
+  * **[!UICONTROL Pending delivery]** : l&#39;evento è in coda, gli è stato assegnato un modello di messaggio e viene elaborato dalla consegna.
+  * **[!UICONTROL Sent]** : questo stato viene copiato dai registri di consegna. Significa che la consegna è stata inviata.
+  * **[!UICONTROL Ignored by the delivery]** : questo stato viene copiato dai registri di consegna. Significa che la consegna è stata ignorata.
+  * **[!UICONTROL Delivery failed]** : questo stato viene copiato dai registri di consegna. Significa che la consegna è non è andata a buon fine.
+  * **[!UICONTROL Event not taken into account]** : impossibile collegare l&#39;evento a un modello di messaggio. L’evento non verrà elaborato.
 
 ### Pianificazione del flusso di lavoro di archiviazione
 

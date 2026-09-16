@@ -2,7 +2,7 @@
 product: campaign
 title: Creare contenuti personalizzati
 description: Scopri come creare contenuti personalizzati nelle consegne di Adobe Campaign
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design, Personalization
 role: User
 hide: true
@@ -10,26 +10,34 @@ exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
 TQID: https://experienceleague.adobe.com/CYWaDn4S5zkM1QXQg08zHZW53nOqAv-aXDvo-Hw-v-E
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1341
-ht-degree: 5%
-
+source-wordcount: '1389'
+ht-degree: 7%
 ---
-
 # Creare contenuti personalizzati {#build-personalized-content}
 
 Durante la progettazione del contenuto del messaggio, cerca di evitare problemi comuni che potrebbero impedirti di eseguire la consegna. Nella maggior parte dei casi, i possibili errori sono correlati a [personalization](about-personalization.md), [formattazione](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=it#message-content){target="_blank"} e [immagini](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=it#adding-images){target="_blank"}.
@@ -113,8 +121,8 @@ Assicurati di verificare eventuali modifiche prima dell’invio finale
 
 Per impostazione predefinita, il numero di caratteri in un SMS soddisfa gli standard GSM (Global System for Mobile Communications). I messaggi SMS che utilizzano la codifica GSM sono limitati a 160 caratteri o 153 caratteri per SMS per messaggi inviati in più parti.
 
-La traslitterazione consiste nel sostituire un carattere di un SMS con un altro quando tale carattere non è preso in considerazione dallo standard GSM. L’inserimento di campi di personalizzazione nel contenuto del messaggio SMS potrebbe introdurre caratteri che non vengono presi in considerazione dalla codifica GSM. Puoi autorizzare la traslitterazione di caratteri selezionando la casella corrispondente nella scheda Impostazioni canale SMPP del **[!UICONTROL External account]** corrispondente.
-Ulteriori informazioni [in questa sezione](sms-set-up.md#creating-an-smpp-external-account).
+La traslitterazione consiste nel sostituire un carattere di un SMS con un altro quando quel carattere non è preso in considerazione dallo standard GSM. L’inserimento di campi di personalizzazione nel contenuto del messaggio SMS potrebbe introdurre caratteri che non vengono presi in considerazione dalla codifica GSM. Puoi autorizzare la traslitterazione di caratteri selezionando la casella corrispondente nella scheda Impostazioni canale SMPP del **[!UICONTROL External account]** corrispondente.
+Per ulteriori informazioni, consulta [questa sezione](sms-set-up.md#creating-an-smpp-external-account).
 
 **suggerimenti**:
 

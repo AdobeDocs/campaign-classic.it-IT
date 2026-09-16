@@ -8,9 +8,7 @@ source-git-commit: 64460d51b002a7821bba9c2998d9ccccab3046ad
 workflow-type: tm+mt
 source-wordcount: '874'
 ht-degree: 1%
-
 ---
-
 # Migrare all’API Adobe Analytics 2.0 {#analytics-2-migration}
 
 Le API di Adobe Analytics 1.4 stanno per [raggiungere la fine del ciclo di vita](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol){target="_blank"}. Il [connettore Web Analytics](../../integrations/using/gs-aa.md) che collega l&#39;istanza Campaign ad Adobe Analytics si basa su queste API, pertanto devi eseguire l&#39;aggiornamento a una build che utilizza le nuove API Analytics 2.0 per mantenere l&#39;integrazione in esecuzione.

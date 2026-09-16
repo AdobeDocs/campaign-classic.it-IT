@@ -2,28 +2,33 @@
 product: campaign
 title: Aggiornare la qualificazione di mancato recapito dopo un’interruzione del servizio ISP
 description: Scopri come aggiornare la qualifica di mancato recapito dopo un’interruzione del servizio ISP
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 hide: true
 exl-id: 7a9afe0a-0219-40f1-9fe2-6374db8d555c
 TQID: https://experienceleague.adobe.com/91YUAuxL17kfBm6-hryEpf-A8SPJzA-z-ss9f2maszY
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 501
+source-wordcount: '492'
 ht-degree: 3%
-
 ---
-
 # Aggiornare i mancati recapiti permanenti errati dopo un’interruzione del servizio ISP {#update-bounces}
 
 
@@ -63,19 +68,19 @@ Di seguito sono riportate le linee guida consigliate per questa query in base al
 
 * Per gli ambienti Campaign con informazioni sulle regole e-mail in entrata nel campo **[!UICONTROL Error text]** dell’elenco di quarantena:
 
-   * **Testo di errore (testo di quarantena)** contiene &quot;Momen_Code10_InvalidRecipient&quot;
-   * **Dominio e-mail (@domain)** uguale a domain1.com OPPURE **Dominio e-mail (@domain)** uguale a domain2.com OPPURE **Dominio e-mail (@domain)** uguale a domain3.com
-   * **Aggiorna stato (@lastModified)** in data o dopo `MM/DD/YYYY HH:MM:SS AM`
-   * **Aggiorna stato (@lastModified)** in data `MM/DD/YYYY HH:MM:SS PM` o prima
+  * **Testo di errore (testo di quarantena)** contiene &quot;Momen_Code10_InvalidRecipient&quot;
+  * **Dominio e-mail (@domain)** uguale a domain1.com OPPURE **Dominio e-mail (@domain)** uguale a domain2.com OPPURE **Dominio e-mail (@domain)** uguale a domain3.com
+  * **Aggiorna stato (@lastModified)** in data o dopo `MM/DD/YYYY HH:MM:SS AM`
+  * **Aggiorna stato (@lastModified)** in data `MM/DD/YYYY HH:MM:SS PM` o prima
 
 * Per gli ambienti Campaign con informazioni di risposta SMTP non recapitate nel campo **[!UICONTROL Error text]** dell’elenco di quarantena:
 
-   * **Testo di errore (testo quarantena)** contiene &quot;550-5.1.1&quot; E **Testo di errore (testo quarantena)** contiene &quot;support.ISP.com&quot;
+  * **Testo di errore (testo quarantena)** contiene &quot;550-5.1.1&quot; E **Testo di errore (testo quarantena)** contiene &quot;support.ISP.com&quot;
 
-     dove &quot;support.ISP.com&quot; può essere: &quot;support.apple.com&quot; o &quot;support.google.com&quot;, ad esempio
+    dove &quot;support.ISP.com&quot; può essere: &quot;support.apple.com&quot; o &quot;support.google.com&quot;, ad esempio
 
-   * **Aggiorna stato (@lastModified)** in data o dopo `MM/DD/YYYY HH:MM:SS AM`
-   * **Aggiorna stato (@lastModified)** in data `MM/DD/YYYY HH:MM:SS PM` o prima
+  * **Aggiorna stato (@lastModified)** in data o dopo `MM/DD/YYYY HH:MM:SS AM`
+  * **Aggiorna stato (@lastModified)** in data `MM/DD/YYYY HH:MM:SS PM` o prima
 
 
 Una volta ottenuto l&#39;elenco dei destinatari interessati, è possibile impostarli sullo stato **[!UICONTROL Valid]** in modo che vengano rimossi dall&#39;elenco di quarantena dal flusso di lavoro **[!UICONTROL Database cleanup]** oppure eliminarli dalla tabella.

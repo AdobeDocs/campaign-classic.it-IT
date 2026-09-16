@@ -3,7 +3,7 @@ product: campaign
 title: Installazione di un server di mid-sourcing in Campaign
 description: Questa sezione descrive l’installazione e la configurazione di un server di mid-sourcing in Campaign
 feature: Installation, Instance Settings
-badge-v7-prem: label="Solo on-premise/ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
@@ -12,11 +12,9 @@ feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1084
+source-wordcount: '1072'
 ht-degree: 2%
-
 ---
-
 # Server di mid-sourcing{#mid-sourcing-server}
 
 
@@ -141,9 +139,9 @@ L’attributo &quot;@name&quot; deve rispettare le regole seguenti:
 
 &quot;marketing_account_operator_name&quot; si riferisce al nome interno dell’account di mid-sourcing dichiarato nell’istanza di mid-sourcing.
 
-&#39;affinity_name&#39; fa riferimento al nome arbitrario assegnato all&#39;affinità. Questo nome deve essere univoco. I caratteri autorizzati sono `[a-z]` `[A-Z]` `[0-9]`. L&#39;obiettivo è dichiarare un gruppo di indirizzi IP pubblici.
+&#39;affinity_name&#39; fa riferimento al nome arbitrario assegnato all&#39;affinità. Questo nome deve essere univoco. I caratteri autorizzati sono `[a-z]`&#x200B;`[A-Z]`&#x200B;`[0-9]`. L&#39;obiettivo è dichiarare un gruppo di indirizzi IP pubblici.
 
-&#39;affinity_group&#39; mette in relazione la sub-affinità dichiarata nella mappatura di destinazione utilizzata in ciascuna consegna. L’ultima parte, incluso &quot;.&quot;, viene ignorata se non è presente alcuna sub-affinità. I caratteri autorizzati sono `[a-z]` `[A-Z]` `[0-9]`.
+&#39;affinity_group&#39; mette in relazione la sub-affinità dichiarata nella mappatura di destinazione utilizzata in ciascuna consegna. L’ultima parte, incluso &quot;.&quot;, viene ignorata se non è presente alcuna sub-affinità. I caratteri autorizzati sono `[a-z]`&#x200B;`[A-Z]`&#x200B;`[0-9]`.
 
 È necessario arrestare e quindi riavviare il server affinché la modifica possa essere presa in considerazione.
 
