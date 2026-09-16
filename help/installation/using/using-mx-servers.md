@@ -3,7 +3,7 @@ product: campaign
 title: Utilizzo dei server MX con Campaign
 description: Scopri come funzionano i server MX con Adobe Campaign Classic
 feature: Installation, Instance Settings
-badge-v7-prem: label="Solo on-premise/ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
@@ -11,15 +11,14 @@ exl-id: 47f50bf5-4d5b-4c07-af71-de4390177cf5
 TQID: https://experienceleague.adobe.com/iXiiqwE6-FqHpRFes1bzJ5mLc3-z-HQBUR7ASL5A1G8
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 855
+source-wordcount: '843'
 ht-degree: 3%
-
 ---
-
 # Utilizzo dei server MX con Campaign {#using-mx-servers}
 
 
@@ -95,4 +94,4 @@ La modalità personalizzata è per i client avanzati che desiderano impostare le
 * [Configurazione MX](../../installation/using/email-deliverability.md#mx-configuration)
 * [Configurazione tecnica delle e-mail](../../installation/using/email-deliverability.md)
 * [Errori di consegna](../../delivery/using/delivery-failures-quarantine.md)
-* [Campaign Classic - Consigli tecnici](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=it)
+* [Campaign Classic - Consigli tecnici](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html)

@@ -9,9 +9,7 @@ source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 8%
-
 ---
-
 
 # Integrazioni con le soluzioni Adobe Experience Cloud{#integrations-with-adobe-experience-cloud-solutions}
 
@@ -34,7 +32,7 @@ Per impostazione predefinita, i flussi di lavoro descritti di seguito vengono in
   <tr> 
    <td> <span class="uicontrol">Esporta tipi di pubblico in Adobe Experience Cloud</span> <br /> </td> 
    <td> <span class="uicontrol">esportaPubblicoCondiviso</span> <br /> </td> 
-   <td> Questo flusso di lavoro esporta i tipi di pubblico come tipi di pubblico/segmenti condivisi. Questi tipi di pubblico possono essere utilizzati nelle diverse soluzioni Adobe Experience Cloud utilizzate.<br /> </td> 
+   <td> Questo flusso di lavoro esporta i tipi di pubblico come tipi di pubblico/segmenti condivisi. Questi tipi di pubblico possono essere utilizzati nelle diverse soluzioni Adobe Experience Cloud che utilizzi.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

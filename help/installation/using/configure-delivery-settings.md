@@ -3,7 +3,7 @@ product: campaign
 title: Configurazione delle impostazioni di consegna di Campaign
 description: Scopri come configurare le impostazioni di consegna delle campagne
 feature: Installation, Channel Configuration
-badge-v7-prem: label="Solo on-premise/ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
@@ -11,18 +11,19 @@ exl-id: 2968d8db-2b4b-48e6-a22e-daba5ffe0576
 TQID: https://experienceleague.adobe.com/UqFS48Wvx9JP84bhLSDfMe1OYscrgzknFcjKT0CWvY8
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 514
+source-wordcount: '502'
 ht-degree: 8%
-
 ---
-
 # Configurare le impostazioni di consegna {#delivery-settings}
 
 
@@ -96,7 +97,7 @@ A questo scopo, esegui i seguenti passaggi:
 
    >[!NOTE]
    >
-   >Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+   >Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 
    Puoi quindi selezionare l’affinità da utilizzare, come mostrato di seguito per le tipologie:

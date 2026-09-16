@@ -11,19 +11,21 @@ exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
 TQID: https://experienceleague.adobe.com/Mv-2GGcnP%2D%2D%2D%2DL-D2h5DDz3StnT5rH4TlnQdxn9bdnY
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 subfeature_v2:
   - id: a6eada7c-dc79-4b66-a7d3-206cf47dc9d8
+    internal-label: Marketing Resource Management
 source-git-commit: 48d000a7ceada7e027f27f436ef643b321a7695c
 workflow-type: tm+mt
-source-wordcount: 3750
+source-wordcount: '3752'
 ht-degree: 0%
-
 ---
-
 # Creare e gestire le attività{#creating-and-managing-tasks}
 
 
@@ -320,8 +322,8 @@ L’attività di creazione delle risorse di marketing interagisce con la risorsa
 
   È possibile utilizzare una serie di attività collegate per definire un ciclo di approvazione completo. Seleziona l&#39;opzione **[!UICONTROL Publish the marketing resource]** solo per l&#39;ultima attività: per pubblicare la risorsa, è necessario che tutte le attività siano state completate. Inoltre, quando crei un’attività di risorsa di marketing figlio, la risorsa viene selezionata automaticamente nell’attività figlio.
 
-   * **Tramite la risorsa**: se invii la risorsa per l&#39;approvazione o la approvi, queste azioni non influiranno sull&#39;attività.
-   * **Tramite l&#39;attività**: se l&#39;opzione **[!UICONTROL Publish the marketing resource]** è selezionata nell&#39;attività, la risorsa viene approvata e pubblicata automaticamente al termine dell&#39;attività (vedi sopra). Se l&#39;opzione non è selezionata, l&#39;attività e la risorsa non interagiscono: agire su una delle due non influirà sull&#39;altra.
+  * **Tramite la risorsa**: se invii la risorsa per l&#39;approvazione o la approvi, queste azioni non influiranno sull&#39;attività.
+  * **Tramite l&#39;attività**: se l&#39;opzione **[!UICONTROL Publish the marketing resource]** è selezionata nell&#39;attività, la risorsa viene approvata e pubblicata automaticamente al termine dell&#39;attività (vedi sopra). Se l&#39;opzione non è selezionata, l&#39;attività e la risorsa non interagiscono: agire su una delle due non influirà sull&#39;altra.
 
 #### Configurare un’attività di creazione di risorse di marketing {#configuring-a-marketing-resource-creation-task}
 
@@ -417,7 +419,7 @@ La dipendenza tra le attività è rappresentata da frecce nel dashboard della ca
 
 ![](assets/s_ncs_user_task_dependencies_from_board.png)
 
-In caso di attività raggruppate, Adobe Campaign assegna automaticamente la data di fine dell&#39;attività padre all&#39;attività figlio come data di inizio. Ad esempio, se un&#39;attività **Crea invito** termina il 15 ottobre alle ore 3:30PM, l&#39;attività secondaria **Invia e-mail invito** inizierà il 15 ottobre alle ore 3:30PM.
+In caso di attività raggruppate, Adobe Campaign assegna automaticamente la data di fine dell&#39;attività padre all&#39;attività figlio come data di inizio. Ad esempio, se un&#39;attività **Crea invito** termina il 15 ottobre alle 15:30, l&#39;attività secondaria **Invia e-mail invito** inizierà il 15 ottobre alle 15:30.
 
 Inoltre, se si posticipa la fine di un&#39;attività padre, alcune delle attività figlio potrebbero essere interessate: si tratta delle attività figlio il cui stato è **[!UICONTROL Scheduled]** e la cui data di inizio è precedente alla nuova data di fine dell&#39;attività padre. La durata dell&#39;attività rimane invariata. Se la data di inizio di un&#39;attività figlio è successiva alla nuova data di fine dell&#39;attività padre, l&#39;attività figlio non viene influenzata.
 

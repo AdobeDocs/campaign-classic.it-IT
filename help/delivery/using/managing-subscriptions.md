@@ -2,32 +2,39 @@
 product: campaign
 title: Gestire le iscrizioni
 description: Scopri come gestire gli abbonamenti in Adobe Campaign
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Subscriptions
 role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
 TQID: https://experienceleague.adobe.com/BrXFZAa9EiCWFYN6DabgLk9pjw3rS5TXCgzV63e5xmE
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1122
+source-wordcount: '1113'
 ht-degree: 3%
-
 ---
-
 # Gestire le iscrizioni{#managing-subscriptions}
 
 ## Informazioni sui servizi di informazione {#about-information-services}
@@ -161,7 +168,7 @@ le consegne e-mail devono contenere per legge un collegamento che consenta di an
 
 Il collegamento predefinito per l&#39;annullamento dell&#39;iscrizione viene inserito tramite l&#39;ultimo pulsante nella barra degli strumenti dell&#39;editor di contenuti fornito nell&#39;assistente alla consegna (vedi [Informazioni sulla personalizzazione](about-personalization.md)). Quando il destinatario fa clic su questo collegamento, il profilo viene aggiunto al inserisco nell&#39;elenco Bloccati di consegna (opt-out), il che significa che il destinatario non sarà più interessato da alcuna azione di consegna.
 
-I destinatari possono tuttavia scegliere di annullare l’abbonamento a un servizio senza annullare l’abbonamento a tutti i servizi. Per consentire questa operazione, puoi utilizzare un modulo web (fai riferimento a [questa sezione](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) o inserire un collegamento di annullamento dell&#39;abbonamento personalizzato. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=it){target="_blank"}.
+I destinatari possono tuttavia scegliere di annullare l’abbonamento a un servizio senza annullare l’abbonamento a tutti i servizi. Per consentire questa operazione, puoi utilizzare un modulo web (fai riferimento a [questa sezione](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) o inserire un collegamento di annullamento dell&#39;abbonamento personalizzato. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
 
 Puoi anche annullare manualmente l’abbonamento di un destinatario dal profilo del destinatario. A tale scopo, fare clic sulla scheda **[!UICONTROL Subscriptions]** del destinatario interessato, selezionare i servizi di informazione interessati e fare clic su **[!UICONTROL Delete]**.
 

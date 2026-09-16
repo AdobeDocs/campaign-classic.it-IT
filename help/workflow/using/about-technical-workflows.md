@@ -8,24 +8,31 @@ exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
 TQID: https://experienceleague.adobe.com/XyvGCXDK-0pAX09kPyfGkZFTITlQRuMN0N-Yee-06EM
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: e3988c18-3cfa-4f16-b812-ac2d2b1056fa
+    internal-label: Permissions
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
+    internal-label: Workflow HeatMap
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
+    internal-label: Execution activities
   - id: d1110311-2ca4-442b-be37-088a6db845ee
+    internal-label: Data Management activities
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1723
+source-wordcount: '1723'
 ht-degree: 2%
-
 ---
-
 # Flussi di lavoro tecnici{#about-technical-workflows}
 
 
@@ -85,7 +92,7 @@ Per ulteriori informazioni su come monitorare i flussi di lavoro tecnici, consul
 | **Sincronizzazione proposta** (propositionSynch) | Controllo del motore di offerta con istanza di esecuzione | Questo flusso di lavoro sincronizza le proposte tra l’istanza di marketing e l’istanza di esecuzione utilizzate per le interazioni. |
 | **Ripristino di eventi Web** (webAnalyticsGetWebEvents) | Connettori di analisi web | Ogni ora, questo flusso di lavoro scarica segmenti sul comportamento degli utenti Internet su un determinato sito, li inserisce nel database di Adobe Campaign e avvia il flusso di lavoro di remarketing. |
 | **Reporting aggregates** (reportingAggregates) | Consegna | Questo flusso di lavoro aggiorna gli aggregati utilizzati nei rapporti. Viene attivato ogni giorno alle 2 per impostazione predefinita. |
-| **Invio di indicatori e attributi della campagna** (webAnalyticsSendMetrics) | Connettori di analisi web | Questo flusso di lavoro consente di inviare gli indicatori della campagna e-mail da Adobe Campaign a Adobe Experience Cloud Suite tramite il connettore Adobe® Analytics. Gli indicatori interessati sono i seguenti: Inviato (iSent), conteggio totale di aperture (iTotalRecipientOpen), numero totale di destinatari che hanno fatto clic (iTotalRecipientClick), errori (iError), rinuncia (opt-out) (iOptOut). |
+| **Invio di indicatori e attributi della campagna** (webAnalyticsSendMetrics) | Connettori di analisi web | Questo flusso di lavoro consente di inviare gli indicatori della campagna e-mail da Adobe Campaign alla suite Adobe Experience Cloud tramite il connettore Adobe® Analytics. Gli indicatori interessati sono i seguenti: Inviato (iSent), conteggio totale di aperture (iTotalRecipientOpen), numero totale di destinatari che hanno fatto clic (iTotalRecipientClick), errori (iError), rinuncia (opt-out) (iOptOut). |
 | **Magazzino: Ordini e avvisi** (stockMgt) | Campagne di marketing (Campaign) | Questo flusso di lavoro avvia il calcolo delle scorte nelle linee dell&#39;ordine e gestisce le soglie degli avvisi di avvertenza. |
 | **Sincronizzazione dei fan di Facebook** (syncFacebookFans) | Social network (Social marketing) - Solo Campaign v7 | Questo flusso di lavoro importa i fan di Facebook in Adobe Campaign ogni giorno alle 7. |
 | **Sincronizzazione pagine Facebook** (syncFacebook) | Social network (Social marketing) - Solo Campaign v7 | Questo flusso di lavoro sincronizza le pagine Facebook con Adobe Campaign ogni giorno alle 7. |

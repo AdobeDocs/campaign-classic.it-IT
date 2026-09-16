@@ -3,7 +3,7 @@ product: campaign
 title: Raccomandazioni per il database Campaign Classic
 description: Raccomandazioni per il database
 feature: Installation, Instance Settings
-badge-v7-prem: label="Solo on-premise/ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
@@ -11,18 +11,19 @@ exl-id: 8a0426c1-9e8d-4053-bc2b-6a550e2eed2f
 TQID: https://experienceleague.adobe.com/1rAC8pXCS8aKbzDrjv1HCa4W-Ieh3fx-nBzFbe8nMjg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 310
+source-wordcount: '298'
 ht-degree: 7%
-
 ---
-
 # Database{#database}
 
 

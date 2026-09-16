@@ -3,7 +3,7 @@ product: campaign
 title: Distribuzione di un’istanza
 description: Ulteriori informazioni sulla procedura guidata di implementazione di Campaign
 feature: Installation, Instance Settings, Deployment
-badge-v7-prem: label="Solo on-premise/ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
@@ -11,23 +11,29 @@ exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
 TQID: https://experienceleague.adobe.com/M1uqZA6cfopJkJ-pg3m-1R-eBbM55zv7R-FSxOfFUwI
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: b5852c32-876b-41ae-92a7-9f588865ae52
+    internal-label: Best practices
   - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
   - id: eff19c99-440a-4318-b319-444edc4d8d8f
+    internal-label: Upgrade
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 3479
+source-wordcount: '3471'
 ht-degree: 2%
-
 ---
-
 # Distribuzione di un’istanza{#deploying-an-instance}
 
 >[!NOTE]
@@ -92,12 +98,12 @@ Questi parametri possono essere sovraccaricati nei modelli di consegna e singola
 Indicare i seguenti parametri:
 
 * **[!UICONTROL Sender name]** : immetti il nome del mittente.
-* **[!UICONTROL Sender address]** : immetti l&#39;indirizzo e-mail del mittente. Quando si inviano e-mail da Adobe Campaign, la cassetta postale **Indirizzo mittente** non viene monitorata e gli utenti marketing non possono accedere a questa cassetta postale. Inoltre, Adobe Campaign non offre la possibilità di rispondere automaticamente o inoltrare automaticamente le e-mail ricevute in questa casella di posta. Ulteriori informazioni sulle best practice per il recapito messaggi [sono disponibili in questa documentazione](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html?lang=it){_blank}.
+* **[!UICONTROL Sender address]** : immetti l&#39;indirizzo e-mail del mittente. Quando si inviano e-mail da Adobe Campaign, la cassetta postale **Indirizzo mittente** non viene monitorata e gli utenti marketing non possono accedere a questa cassetta postale. Inoltre, Adobe Campaign non offre la possibilità di rispondere automaticamente o inoltrare automaticamente le e-mail ricevute in questa casella di posta. Ulteriori informazioni sulle best practice per il recapito messaggi [sono disponibili in questa documentazione](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html){_blank}.
 
 * **[!UICONTROL Reply address text]**: immettere il nome utilizzato quando il destinatario fa clic sul pulsante **[!UICONTROL Reply]**.
 * **[!UICONTROL Reply address]**: immettere l&#39;indirizzo di posta elettronica da utilizzare quando il destinatario fa clic sul pulsante **[!UICONTROL Reply]** nel software del client di posta elettronica. Il campo **Indirizzo di risposta** ha lo scopo di indicare che il destinatario deve rispondere a un indirizzo diverso da quello del **Indirizzo mittente**.  Questo indirizzo deve essere un indirizzo e-mail valido, collegato a una cassetta postale monitorata e ospitato dal cliente.  Potrebbe trattarsi di una cassetta postale di supporto, ad esempio `customer-care@customer.com`, in cui le e-mail vengono lette e a cui si risponde.
 
-* **[!UICONTROL Error address]** : immetti l&#39;indirizzo e-mail dei messaggi con errori. Si tratta dell’indirizzo tecnico utilizzato per gestire le e-mail non recapitate, incluse quelle ricevute dal server Adobe Campaign a causa di indirizzi di destinazione inesistenti. Questo indirizzo deve essere un indirizzo e-mail valido, collegato a una cassetta postale monitorata e ospitato dal cliente. Potrebbe essere una cassetta postale di mancato recapito, ad esempio `errors@customer.com`. Questo indirizzo può essere modificato per una consegna o nei modelli di consegna, dalla scheda **SMTP** delle proprietà del modello di consegna/consegna. Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html?lang=it#managing-bounce-emails){target="_blank"}.
+* **[!UICONTROL Error address]** : immetti l&#39;indirizzo e-mail dei messaggi con errori. Si tratta dell’indirizzo tecnico utilizzato per gestire le e-mail non recapitate, incluse quelle ricevute dal server Adobe Campaign a causa di indirizzi di destinazione inesistenti. Questo indirizzo deve essere un indirizzo e-mail valido, collegato a una cassetta postale monitorata e ospitato dal cliente. Potrebbe essere una cassetta postale di mancato recapito, ad esempio `errors@customer.com`. Questo indirizzo può essere modificato per una consegna o nei modelli di consegna, dalla scheda **SMTP** delle proprietà del modello di consegna/consegna. Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html#managing-bounce-emails){target="_blank"}.
 
 Inoltre, puoi specificare le **maschere** autorizzate per l&#39;indirizzo del mittente e l&#39;indirizzo di errore. Se necessario, queste maschere possono essere separate da virgole. Questa configurazione è facoltativa. Quando vengono immessi i campi, Adobe Campaign controlla al momento della consegna (durante l’analisi, se l’indirizzo non include alcuna variabile) che gli indirizzi siano validi. Questa modalità operativa assicura che non vengano utilizzati indirizzi che potrebbero attivare problemi di consegna. Gli indirizzi di consegna devono essere configurati sul server di consegna.
 
@@ -395,7 +401,7 @@ In una consegna, puoi utilizzare le immagini memorizzate nella libreria di risor
 
   Questo valore può essere sovrascritto per ogni consegna.
 
-* Per le risorse pubbliche, l&#39;URL **https://** server **/res/** istanza **&#x200B;**&#x200B;dove **istanza**&#x200B;è il nome dell&#39;istanza di tracciamento.
+* Per le risorse pubbliche, l&#39;URL **https://** server **/res/** istanza ****dove **istanza**è il nome dell&#39;istanza di tracciamento.
 
 ### Rilevamento immagine della consegna {#delivery-image-detection}
 
@@ -407,7 +413,7 @@ Il campo **Maschere URL** consente di specificare l&#39;elenco delle maschere UR
 
 Puoi specificare più maschere URL utilizzando una virgola per separarle.
 
-* Per informazioni sull&#39;utilizzo e la gestione delle immagini nelle e-mail, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=it#adding-images){target="_blank"}.
+* Per informazioni sull&#39;utilizzo e la gestione delle immagini nelle e-mail, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}.
 * Nell’assistente alla consegna, le immagini chiamate da questi URL avranno lo stato &quot;Ignorato&quot;.
 
 ### Modalità di pubblicazione {#publication-modes}
@@ -442,16 +448,16 @@ Sono disponibili le seguenti modalità di pubblicazione:
 
   Puoi pubblicare le immagini utilizzando uno script:
 
-   * Devi creare questo script: il suo contenuto dipende dalla configurazione.
-   * Lo script verrà richiamato dal comando seguente:
+  * Devi creare questo script: il suo contenuto dipende dalla configurazione.
+  * Lo script verrà richiamato dal comando seguente:
 
-     ```
-     [INSTALL]/copyToFrontal.vbs "$(XTK_INSTALL_DIR)\var\<instance>\upload\" "img1,img2,img3"
-     ```
+    ```
+    [INSTALL]/copyToFrontal.vbs "$(XTK_INSTALL_DIR)\var\<instance>\upload\" "img1,img2,img3"
+    ```
 
-     dove `[INSTALL]` è il percorso di accesso alla cartella di installazione di Adobe Campaign.
+    dove `[INSTALL]` è il percorso di accesso alla cartella di installazione di Adobe Campaign.
 
-   * In Unix, assicurati che lo script sia eseguibile.
+  * In Unix, assicurati che lo script sia eseguibile.
 
 Per le immagini, è necessario copiarle dalla cartella &quot;images&quot; specificata tramite l&#39;opzione **NmsDelivery_ImageSubDirectory** in uno o più server frontali. Questi server memorizzeranno le immagini per renderle accessibili tramite il nuovo URL configurato.
 

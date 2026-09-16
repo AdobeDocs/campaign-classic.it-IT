@@ -10,17 +10,17 @@ exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
 TQID: https://experienceleague.adobe.com/TSJbp95dm2tysQBxN7E7JktnHmMJndR1hXVvKkLzRIg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1146
-ht-degree: 18%
-
+source-wordcount: '1169'
+ht-degree: 19%
 ---
-
 # Installare e aggiornare la console client di Campaign{#installing-the-client-console}
 
 La console client di Campaign è un client avanzato che consente di connettersi ai server dell’applicazione Campaign.
@@ -180,6 +180,6 @@ Per accedere a un&#39;istanza esistente, effettuare le seguenti operazioni:
 
 Questo video mostra come installare e configurare il client Adobe Campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/38269?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35124?quality=12)
 
 Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

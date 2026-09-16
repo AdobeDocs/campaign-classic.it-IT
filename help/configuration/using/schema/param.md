@@ -7,15 +7,14 @@ exl-id: d8960a2e-6900-4346-9f06-e7dd9d7b5139
 TQID: https://experienceleague.adobe.com/fiMkJtGU90FP-G6BJhTnIrgBJ39uIJaakqKD49EhXS0
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 177
+source-wordcount: '177'
 ht-degree: 12%
-
 ---
-
 # elemento param {#param--element}
 
 
@@ -58,34 +57,34 @@ Questo elemento ti consente di definire un parametro per la chiamata a un metodo
 
   Elenco dei tipi disponibili:
 
-   * QUALSIASI
-   * raccoglitore
-   * blob
-   * booleano
-   * byte
-   * CDATA
-   * Data e ora
-   * datetimetz
-   * datetimenotz
-   * data
-   * DOMDocument
-   * DOMElement
-   * doppio
-   * enum
-   * mobile
-   * html
-   * int64
-   * collegamento
-   * lungo
-   * promemoria
-   * MNTOKEN
-   * percentuale
-   * chiave primaria
-   * breve
-   * stringa
-   * ora
-   * intervallo di tempo
-   * uuid
+  * QUALSIASI
+  * raccoglitore
+  * blob
+  * booleano
+  * byte
+  * CDATA
+  * Data e ora
+  * datetimetz
+  * datetimenotz
+  * data
+  * DOMDocument
+  * DOMElement
+  * doppio
+  * enum
+  * mobile
+  * html
+  * int64
+  * collegamento
+  * lungo
+  * promemoria
+  * MNTOKEN
+  * percentuale
+  * chiave primaria
+  * breve
+  * stringa
+  * ora
+  * intervallo di tempo
+  * uuid
 
 ## Esempi {#examples-9}
 

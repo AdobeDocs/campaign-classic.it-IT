@@ -2,25 +2,28 @@
 product: campaign
 title: Configurare le consegne
 description: Scopri come eseguire il test A/B tramite un caso d’uso dedicato
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
 exl-id: 809de30b-7d08-40de-bf3e-dc80d62eae80
 TQID: https://experienceleague.adobe.com/7fr4R6dly8-CJh9XYRpAwus1-AUJaz496LOPrWebt0k
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: e739ee2b-6228-412e-878f-45de0791417d
+    internal-label: Use cases
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 250
+source-wordcount: '241'
 ht-degree: 0%
-
 ---
-
 # Test AB: configurare le consegne nel flusso di lavoro {#step-4--configuring-the-deliveries-in-the-workflow}
 
 Una volta create [le popolazioni](a-b-testing-uc-population-samples.md), puoi configurare le consegne. In questo caso d’uso, le prime due consegne ti consentono di inviare contenuti diversi alla popolazione A e B. La terza consegna è la consegna di riserva: verrà inviata ai destinatari che non appartengono ad A né a B. Il suo contenuto verrà calcolato da uno script e sarà identico ad A o B, a seconda di quale ha ottenuto il punteggio più alto per il tasso di apertura. È necessario configurare un periodo di attesa per la terza consegna, per scoprire il risultato delle consegne A e B. Per questo motivo la terza consegna include un&#39;attività **[!UICONTROL Wait]**.

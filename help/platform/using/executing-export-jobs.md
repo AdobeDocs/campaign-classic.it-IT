@@ -3,7 +3,7 @@ product: campaign
 title: Configurazione dei processi di esportazione
 description: Scopri come configurare ed eseguire i processi di esportazione in Campaign
 feature: Overview
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
@@ -11,20 +11,24 @@ exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
 TQID: https://experienceleague.adobe.com/YkFgnO67JZr1NK1OuVeVSNT4343nji7QDwFh-B4Z5q0
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
+    internal-label: Profiles
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
+    internal-label: Audiences
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
+    internal-label: Query Editor
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 963
+source-wordcount: '954'
 ht-degree: 3%
-
 ---
-
 # Configurare i processi di esportazione {#executing-export-jobs}
 
 
@@ -117,9 +121,9 @@ Puoi aggiungere condizioni di filtro per evitare di esportare tutti i dati. La c
 * Per modificare l&#39;etichetta di un campo, fare clic nella cella della colonna **[!UICONTROL Label]** che corrisponde al campo da modificare e immettere la nuova etichetta. Premere Invio sulla tastiera per confermare.
 * Per applicare una trasformazione di maiuscole e minuscole al contenuto di un campo, selezionarlo dalla colonna **[!UICONTROL Transformation]**. Puoi selezionare:
 
-   * Cambia in minuscolo
-   * Cambia in maiuscolo
-   * Prma lettera in maiuscolo
+  * Cambia in minuscolo
+  * Cambia in maiuscolo
+  * Prma lettera in maiuscolo
 
   ![](assets/s_ncs_user_export_wizard06.png)
 

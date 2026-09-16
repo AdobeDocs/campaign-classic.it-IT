@@ -5,22 +5,27 @@ exl-id: f01948c7-b523-492d-a4e8-67f4adde5fc5
 TQID: https://experienceleague.adobe.com/drpNkA9cj7Prid--GixHMQ48CO7ZC9qqX4w5fnTiD88
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1244
+source-wordcount: '1266'
 ht-degree: 3%
-
 ---
-
 # Migrazione degli operatori di Campaign ad Adobe Identity Management System (IMS) {#migrate-users-to-ims}
 
 Per rafforzare la sicurezza e il processo di autenticazione, Adobe Campaign consiglia vivamente di migrare la modalità di autenticazione dell’utente finale dall’autenticazione nativa di login/password ad Adobe Identity Management System (IMS). Tutti gli operatori devono implementare [Adobe Identity Management System (IMS)](https://helpx.adobe.com/it/enterprise/using/identity.html){target="_blank"} per connettersi a Campaign.
@@ -53,7 +58,7 @@ Questa modifica è applicabile a partire da Campaign Classic v7.4.1 (e dalle ult
 >
 >Dopo aver trasferito gli utenti a IMS, tieni presente che qualsiasi profilo di prodotto nel Adobe Admin Console che contiene la parola &quot;admin&quot; nel nome (ad esempio &quot;Administrators&quot;, &quot;admin&quot;, &quot;admins&quot;, &quot;approval admin&quot;, ecc.) concederà automaticamente l’accesso al Pannello di controllo Campaign Campaign. Pannelli di controllo Campaign è uno strumento self-service che consente di apportare modifiche significative alle istanze di Campaign.
 >
->Esamina attentamente le convenzioni di denominazione del profilo di prodotto per assicurarti che solo gli utenti autorizzati abbiano accesso al Pannello di controllo Campaign. Per ulteriori informazioni sulla gestione delle autorizzazioni di Pannello di controllo Campaign, consulta la [documentazione del Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=it){target="_blank"}.
+>Esamina attentamente le convenzioni di denominazione del profilo di prodotto per assicurarti che solo gli utenti autorizzati abbiano accesso al Pannello di controllo Campaign. Per ulteriori informazioni sulla gestione delle autorizzazioni di Pannello di controllo Campaign, consulta la [documentazione del Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
 
 
 ## Come effettuare la migrazione degli ambienti in hosting e Managed Services? {#ims-migration-procedure}
@@ -85,7 +90,7 @@ I passaggi chiave per questa migrazione sono elencati di seguito:
 1. Dopo l’aggiornamento, è comunque possibile creare nuovi utenti con entrambi i metodi, come utente nativo o con IMS.
 1. L&#39;amministratore interno di Campaign deve configurare Adobe IMS come descritto in [questa sezione](../../integrations/using/configuring-ims.md).
 1. Quindi aggiungi e-mail univoche a tutti gli utenti nativi nella console client di Campaign. Questo passaggio è descritto in [questa sezione](#ims-migration-id).
-1. Crea utenti e profili di prodotto in Adobe Admin Console come descritto nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/manage-permissions.html?lang=it){target="_blank"}.
+1. Crea utenti e profili di prodotto in Adobe Admin Console come descritto nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/manage-permissions.html){target="_blank"}.
 1. Abilita l&#39;opzione **Connetti con Adobe ID** per tutti gli operatori.
 1. Implementa Adobe IMS per la tua connessione come descritto in [questa pagina](../../integrations/using/implementing-ims.md).
 

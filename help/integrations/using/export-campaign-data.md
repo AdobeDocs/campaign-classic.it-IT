@@ -9,20 +9,24 @@ exl-id: 8d1404c5-030b-47fe-a4c3-e72f15f09bbb
 TQID: https://experienceleague.adobe.com/K3aSUw9KkEbo4lUPYW4jxCmLul-ShLy-gwZ71VZBrcA
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
   - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+    internal-label: Adobe Experience Manager integration
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+    internal-label: Adobe Experience Platform integration
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+    internal-label: Adobe Target integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 536
+source-wordcount: '536'
 ht-degree: 4%
-
 ---
-
 # Esportare dati da Campaign ad Adobe Experience Platform {#sources}
 
 
@@ -41,11 +45,11 @@ Per esportare i dati da Campaign Classic al percorso di archiviazione S3 o Azure
 
 A questo scopo, aggiungi e configura:
 
-* Attività **[!UICONTROL Data extraction (file)]** per estrarre i dati di destinazione in un file CSV. Per ulteriori informazioni su come configurare questa attività, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=it){target="_blank"}.
+* Attività **[!UICONTROL Data extraction (file)]** per estrarre i dati di destinazione in un file CSV. Per ulteriori informazioni su come configurare questa attività, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}.
 
   ![](assets/rtcdp-extract-file.png)
 
-* Un&#39;attività **[!UICONTROL File transfer]** per trasferire il file CSV nel percorso di archiviazione. Per ulteriori informazioni su come configurare questa attività, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=it){target="_blank"}.
+* Un&#39;attività **[!UICONTROL File transfer]** per trasferire il file CSV nel percorso di archiviazione. Per ulteriori informazioni su come configurare questa attività, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
   ![](assets/rtcdp-file-transfer.png)
 
@@ -59,8 +63,8 @@ Di seguito sono elencati i passaggi principali per connettere il percorso di arc
 
 1. Nel menu di Adobe Experience Platform **[!UICONTROL Sources]**, crea una connessione al percorso di archiviazione:
 
-   * [Creare una connessione sorgente Amazon S3](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html?lang=it)
-   * [Connettore BLOB di Azure](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/blob.html?lang=it)
+   * [Creare una connessione sorgente Amazon S3](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html)
+   * [Connettore BLOB di Azure](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/blob.html)
 
    >[!NOTE]
    >
@@ -70,7 +74,7 @@ Di seguito sono elencati i passaggi principali per connettere il percorso di arc
 
 1. Configurare un flusso di dati per una connessione batch di archiviazione cloud. Un flusso di dati è un’attività pianificata che recupera e acquisisce i dati dal percorso di archiviazione a un set di dati Adobe Experience Platform. Questi passaggi ti consentono di configurare l’acquisizione dei dati dalla posizione di archiviazione, inclusa la selezione dei dati e la mappatura dei campi CSV su uno schema XDM.
 
-   Informazioni dettagliate sono disponibili in [questa pagina](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html?lang=it).
+   Informazioni dettagliate sono disponibili in [questa pagina](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html).
 
    ![](assets/rtcdp-map-xdm.png)
 

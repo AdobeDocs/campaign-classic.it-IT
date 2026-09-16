@@ -3,16 +3,14 @@ product: campaign
 title: Opzione pipeline NmsPipeline_Config
 description: Opzione pipeline NmsPipeline_Config
 feature: Triggers
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '373'
 ht-degree: 0%
-
 ---
-
 
 # Opzione pipeline NmsPipeline_Config {#nmspipeline_config}
 

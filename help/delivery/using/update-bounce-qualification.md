@@ -2,29 +2,35 @@
 product: campaign
 title: Aggiornare la qualifica di mancato recapito dopo l’interruzione di Apple 2021
 description: Scopri come aggiornare la qualifica di mancato recapito dopo l’interruzione di Apple 2021
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 TQID: https://experienceleague.adobe.com/kn5H0jxM7KKnLGQ3vYdvhQm4nixgSTVhFBO8CAh-1Lg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 457
+source-wordcount: '448'
 ht-degree: 0%
-
 ---
-
 # Aggiornamento in caso di mancati recapiti erronei dovuti a interruzioni del servizio Apple {#update-bounce-qualification.md}
 
 ## Contesto
@@ -55,16 +61,16 @@ In base alla tempistica dell’incidente, di seguito sono riportate le linee gui
 
 * Per le istanze di Campaign con informazioni di risposta SMTP non recapitate nel campo **[!UICONTROL Error text]** dell’elenco di quarantena:
 
-   * **Testo di errore (testo di quarantena)** contiene &quot;ricerca utente completata ma nessun record utente trovato&quot; E **Testo di errore (testo di quarantena)** contiene &quot;support.apple.com&quot;
-   * **Aggiorna stato (@lastModified)** il 4/26/2021 o dopo il 07:00:00 AM
-   * **Aggiorna stato (@lastModified)** entro il 4/26/2021 01:00:00 PM
+  * **Testo di errore (testo di quarantena)** contiene &quot;ricerca utente completata ma nessun record utente trovato&quot; E **Testo di errore (testo di quarantena)** contiene &quot;support.apple.com&quot;
+  * **Aggiorna stato (@lastModified)** il 4/26/2021 o dopo il 07:00:00 AM
+  * **Aggiorna stato (@lastModified)** entro il 4/26/2021 01:00:00 PM
 
 * Per le istanze di Campaign con informazioni sulle regole e-mail in entrata nel campo **[!UICONTROL Error text]** dell’elenco di quarantena:
 
-   * **Testo di errore (testo di quarantena)** contiene &quot;Momen_Code10_InvalidRecipient&quot;
-   * **Dominio e-mail (@domain)** uguale a icloud.com OPPURE **Dominio e-mail (@domain)** uguale a me.com OPPURE **Dominio e-mail (@domain)** uguale a mac.com
-   * **Aggiorna stato (@lastModified)** il 4/26/2021 o dopo il 07:00:00 AM
-   * **Aggiorna stato (@lastModified)** entro il 4/26/2021 01:00:00 PM
+  * **Testo di errore (testo di quarantena)** contiene &quot;Momen_Code10_InvalidRecipient&quot;
+  * **Dominio e-mail (@domain)** uguale a icloud.com OPPURE **Dominio e-mail (@domain)** uguale a me.com OPPURE **Dominio e-mail (@domain)** uguale a mac.com
+  * **Aggiorna stato (@lastModified)** il 4/26/2021 o dopo il 07:00:00 AM
+  * **Aggiorna stato (@lastModified)** entro il 4/26/2021 01:00:00 PM
 
 Una volta ottenuto l&#39;elenco dei destinatari interessati, è possibile impostarli sullo stato **[!UICONTROL Valid]** in modo che vengano rimossi dall&#39;elenco di quarantena dal flusso di lavoro **[!UICONTROL Database cleanup]** oppure eliminarli dalla tabella.
 

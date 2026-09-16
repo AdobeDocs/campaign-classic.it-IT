@@ -2,7 +2,7 @@
 product: campaign
 title: Contenuto condizionale
 description: Scopri come aggiungere contenuti condizionali
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Personalization, Multilingual Messages
 role: User
 hide: true
@@ -10,25 +10,32 @@ exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
 TQID: https://experienceleague.adobe.com/S8pQz1eOVkbkBKFzhPwzEfj50cPnBBOeYNGFg-R6EZ4
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 502
+source-wordcount: '493'
 ht-degree: 9%
-
 ---
-
 # Contenuto condizionale{#conditional-content}
 
 Configurando i campi di contenuto condizionale, puoi creare una personalizzazione dinamica basata, ad esempio, sul profilo del destinatario. I blocchi di testo e/o le immagini vengono sostituiti quando viene soddisfatta una particolare condizione.
@@ -43,10 +50,10 @@ Nell’esempio seguente, imparerai a creare un messaggio personalizzato dinamica
 * Display che mostra &quot;Mr&quot; o &quot;Ms.&quot; in base al valore del campo **[!UICONTROL Gender]** (M o F) nell&#39;origine dati,
 * Assemblaggio personalizzato di una newsletter o di offerte promozionali in base agli interessi indicati o rilevati:
 
-   * Interesse 1 — > Blocco 1
-   * Interesse 2 — > Blocco 2
-   * Interesse 3 — > Blocco 3
-   * Interesse 4 — > Blocco 4
+  * Interesse 1 — > Blocco 1
+  * Interesse 2 — > Blocco 2
+  * Interesse 3 — > Blocco 3
+  * Interesse 4 — > Blocco 4
 
 Per creare contenuto condizionale in base al valore di un campo, effettua le seguenti operazioni:
 
@@ -127,6 +134,6 @@ Nell’esempio seguente, scoprirai come creare un’e-mail multilingue. Il conte
 
 Scopri come aggiungere contenuti condizionali a una consegna sull’esempio di una newsletter multilingue.
 
->[!VIDEO](https://video.tv.adobe.com/v/329895?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
 
 Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

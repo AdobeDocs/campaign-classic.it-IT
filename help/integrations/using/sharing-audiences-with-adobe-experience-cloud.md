@@ -3,7 +3,7 @@ product: campaign
 title: Condivisione di tipi di pubblico con Adobe Experience Cloud
 description: Condivisione di tipi di pubblico con Adobe Experience Cloud
 feature: Audiences
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
@@ -11,20 +11,24 @@ exl-id: 1c90e913-3375-476c-ab60-89f20239eb0d
 TQID: https://experienceleague.adobe.com/MGzMyGtmzaVGZy6oWHcirPPdSSpu9YYcuR30KIVZ9bc
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
   - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+    internal-label: Adobe Experience Manager integration
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+    internal-label: Adobe Experience Platform integration
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+    internal-label: Adobe Target integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 253
-ht-degree: 49%
-
+source-wordcount: '244'
+ht-degree: 51%
 ---
-
 # Condivisione di tipi di pubblico con Adobe Experience Cloud {#sharing-audiences-with-adobe-experience-cloud}
 
 
@@ -32,9 +36,9 @@ ht-degree: 49%
 >
 >Per condividere i tipi di pubblico con le soluzioni Adobe Experience Cloud, devi implementare Adobe Identity Management System. [Ulteriori informazioni su IMS](../../integrations/using/about-adobe-id.md).
 
-Con Adobe Campaign puoi condividere audience e segmenti con i servizi Adobe Experience Cloud. Sono disponibili due opzioni:
+Con Adobe Campaign puoi condividere tipi di pubblico e segmenti con i servizi Adobe Experience Cloud. Sono disponibili due opzioni:
 
-1. Invia i dati dei segmenti di Adobe Experience Platform ad Adobe Campaign. Per implementare questa integrazione, devi collegare il tuo Real-Time Customer Data Platform a Campaign (RTCDP). [Per ulteriori informazioni, consulta questa sezione](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=it){target="_blank"}.
+1. Invia i dati dei segmenti di Adobe Experience Platform ad Adobe Campaign. Per implementare questa integrazione, devi collegare il tuo Real-Time Customer Data Platform a Campaign (RTCDP). [Per ulteriori informazioni, consulta questa sezione](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html){target="_blank"}.
 
 1. Integra **Adobe Campaign** con **Experience Cloud Audiences** o **Adobe Audience Manager**. Potrai quindi:
 
@@ -49,5 +53,5 @@ Questa integrazione supporta due tipi di ID Adobe Experience Cloud:
 
   >[!NOTE]
   >
-  > L’origine dati Declared ID (ID dichiarato) può ora essere utilizzata anche con l’integrazione Experience Cloud Assets.
+  > L’origine dati Declared ID (ID dichiarato) può ora essere utilizzata anche con l’integrazione di Experience Cloud Assets.
   >

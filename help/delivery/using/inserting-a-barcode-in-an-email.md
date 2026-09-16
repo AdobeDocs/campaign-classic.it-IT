@@ -2,16 +2,14 @@
 product: campaign
 title: Inserire un codice a barre in un messaggio e-mail
 description: Inserire un codice a barre in un messaggio e-mail
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design
 role: User
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '524'
 ht-degree: 0%
-
 ---
-
 # Inserire un codice a barre in un messaggio e-mail{#insert-a-barcode-in-an-email}
 
 Il modulo di generazione del codice a barre consente di creare diversi tipi di codici a barre conformi a molti standard comuni, inclusi i codici a barre 2D.

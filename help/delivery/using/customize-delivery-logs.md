@@ -8,36 +8,45 @@ exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
 TQID: https://experienceleague.adobe.com/OXsHpEx96bDHmINu-WR7MDcwn68ZxHjQ1MsxWhbtyG0
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 552
+source-wordcount: '552'
 ht-degree: 1%
-
 ---
-
 # Avanzato: personalizza i registri di consegna {#customize-delivery-logs}
 
 >[!NOTE]
 >
->La guida completa sull&#39;accesso all&#39;elenco di consegna e sull&#39;utilizzo del dashboard di consegna è documentata nella [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-dashboard). Questo contenuto si applica sia agli utenti di Campaign Classic v7 che a quelli di Campaign v8.
+>La guida completa sull&#39;accesso all&#39;elenco di consegna e sull&#39;utilizzo del dashboard di consegna è documentata nella [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard). Questo contenuto si applica sia agli utenti di Campaign Classic v7 che a quelli di Campaign v8.
 >
 >In questa pagina sono documentate **personalizzazioni avanzate specifiche di Campaign Classic v7** per le distribuzioni ibride e on-premise.
 
-Per il monitoraggio delle consegne nell&#39;interfaccia utente di Campaign, consulta [Campaign v8 Monitor deliveries in Campaign UI documentation](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
+Per il monitoraggio delle consegne nell&#39;interfaccia utente di Campaign, consulta [Campaign v8 Monitor deliveries in Campaign UI documentation](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
 
 ## Personalizzare i registri di consegna {#use-case}
 
@@ -130,9 +139,9 @@ Di seguito sono riportati gli elementi che dovrebbero essere visualizzati nella 
 
 ## Argomenti correlati
 
-* [Monitorare le consegne nell&#39;interfaccia utente di Campaign](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (documentazione di Campaign v8)
-* [Stati di consegna](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (documentazione di Campaign v8)
-* [Informazioni sugli errori di consegna](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (documentazione di Campaign v8)
-* [Gestione della quarantena](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (documentazione di Campaign v8)
+* [Monitorare le consegne nell&#39;interfaccia utente di Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (documentazione di Campaign v8)
+* [Stati di consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (documentazione di Campaign v8)
+* [Informazioni sugli errori di consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (documentazione di Campaign v8)
+* [Gestione della quarantena](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (documentazione di Campaign v8)
 * [Estensione di uno schema](../../configuration/using/extending-a-schema.md) (v7 ibrido/on-premise)
 

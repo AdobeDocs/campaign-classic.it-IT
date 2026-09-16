@@ -7,15 +7,16 @@ exl-id: 024a7344-9376-4ff3-926a-003148229f9f
 feature_v2: []
 subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
+    internal-label: Workflow HeatMap
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
+    internal-label: Execution activities
   - id: d1110311-2ca4-442b-be37-088a6db845ee
+    internal-label: Data Management activities
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 298
+source-wordcount: '298'
 ht-degree: 18%
-
 ---
-
 # Automatizzare con i flussi di lavoro {#gs-workflows}
 
 I flussi di lavoro di Adobe Campaign consentono al team di semplificare e automatizzare i processi aziendali end-to-end su tutta la piattaforma. Grazie a un’interfaccia grafica intuitiva, puoi progettare e gestire flussi di lavoro che coordinano in un’unica posizione attività quali segmentazione dei dati, esecuzione di campagne, gestione di file e persino approvazioni degli utenti.
@@ -40,11 +41,11 @@ Scopri i passaggi chiave relativi alla gestione dei flussi di lavoro nella docum
 
 * [Crea un flusso di lavoro](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=it){target=_blank}: scopri come creare ed eseguire flussi di lavoro di targeting, campagne e tecnici.
 
-* [Best practice](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=it){target=_blank}: scopri le linee guida per ottimizzare le prestazioni dei flussi di lavoro di Campaign, migliorare la progettazione dei flussi di lavoro e definire le impostazioni corrette.
+* [Best practice](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target=_blank}: scopri le linee guida per ottimizzare le prestazioni dei flussi di lavoro di Campaign, migliorare la progettazione dei flussi di lavoro e definire le impostazioni corrette.
 
-* [Monitorare i flussi di lavoro](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=it){target=_blank}: scopri come monitorare l&#39;esecuzione dei flussi di lavoro per verificare che tutto funzioni correttamente.
+* [Monitorare i flussi di lavoro](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target=_blank}: scopri come monitorare l&#39;esecuzione dei flussi di lavoro per verificare che tutto funzioni correttamente.
 
-* [Casi di utilizzo del flusso di lavoro](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html?lang=it){target=_blank}: scopri i contesti in cui è possibile utilizzare i flussi di lavoro e come implementarli tramite casi di utilizzo end-to-end.
+* [Casi di utilizzo del flusso di lavoro](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html){target=_blank}: scopri i contesti in cui è possibile utilizzare i flussi di lavoro e come implementarli tramite casi di utilizzo end-to-end.
 
 
 >[!ENDTABS]

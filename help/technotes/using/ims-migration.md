@@ -7,26 +7,34 @@ exl-id: 1a409daf-57be-43c9-a3d9-b8ab54c88068
 TQID: https://experienceleague.adobe.com/DmKIvFx2JKk1fwVKI90bhQ-CJyWF2NP7ICu9EdPm8VU
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 subfeature_v2:
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1838
+source-wordcount: '1838'
 ht-degree: 0%
-
 ---
-
 # Migrazione degli operatori tecnici di Campaign a Adobe Developer Console {#migrate-tech-users-to-ims}
 
 Come parte degli sforzi per rafforzare la sicurezza e il processo di autenticazione, a partire da Campaign Classic v7.3.5, il processo di autenticazione in Campaign Classic viene migliorato. Gli operatori tecnici ora devono utilizzare [Adobe Identity Management System (IMS)](https://helpx.adobe.com/it/enterprise/using/identity.html){target="_blank"} per connettersi a Campaign. Per ulteriori informazioni sul processo di autenticazione da server a server, consulta la [documentazione di Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}. **Adobe consiglia di eseguire questa migrazione in v7 per eseguire in modo fluido la migrazione a Campaign v8.**

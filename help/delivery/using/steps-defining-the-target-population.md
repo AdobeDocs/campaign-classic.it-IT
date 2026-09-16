@@ -9,24 +9,31 @@ exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
 TQID: https://experienceleague.adobe.com/0x1K997AEHhX-ozmIJH5I6NZPb388PKFkrXaK-EgoTY
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1763
+source-wordcount: '1773'
 ht-degree: 27%
-
 ---
-
 # Definire la popolazione target {#defining-the-target-population}
 
 Per ogni consegna, puoi definire diversi tipi di popolazioni target:
@@ -61,7 +68,7 @@ Per selezionare i destinatari di una consegna, segui i passaggi indicati di segu
 
    I seguenti tipi di target sono offerti per impostazione predefinita:
 
-   * **[!UICONTROL Filtering conditions]** : questa opzione consente di definire una query e di visualizzare il risultato. Per ulteriori informazioni sui filtri, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+   * **[!UICONTROL Filtering conditions]** : questa opzione consente di definire una query e di visualizzare il risultato. Per ulteriori informazioni sui filtri, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
    * **[!UICONTROL Subscribers of an information service]**: questa opzione consente di selezionare una newsletter a cui i destinatari devono essere iscritti per rientrare nel target della consegna creata.
 
      ![](assets/s_ncs_user_wizard_email02c.png)
@@ -85,7 +92,7 @@ Per selezionare i destinatari di una consegna, segui i passaggi indicati di segu
    * **[!UICONTROL Recipients included in a folder]** : questa opzione consente di eseguire il targeting dei profili contenuti in una cartella specifica della struttura.
    * **[!UICONTROL A recipient]** : questa opzione consente di selezionare un destinatario specifico dai profili nel database.
    * **[!UICONTROL A list of recipients]** : questa opzione consente di eseguire il targeting di un elenco di destinatari. Gli elenchi sono presentati in [questa sezione](../../platform/using/creating-and-managing-lists.md).
-   * **[!UICONTROL User filters]** : questa opzione consente di accedere ai filtri preconfigurati per utilizzarli come criteri di filtro per i profili nel database. Per ulteriori informazioni sui filtri, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+   * **[!UICONTROL User filters]** : questa opzione consente di accedere ai filtri preconfigurati per utilizzarli come criteri di filtro per i profili nel database. Per ulteriori informazioni sui filtri, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
    * L&#39;opzione **[!UICONTROL Exclude recipients corresponding to this segment]** consente di eseguire il targeting di destinatari che non soddisfano i criteri di destinazione definiti. Per utilizzare questa opzione, seleziona la casella appropriata, quindi applica il targeting, come definito in precedenza, per escludere i profili risultanti.
 
      ![](assets/s_ncs_user_wizard_email02g.png)
@@ -150,12 +157,12 @@ Sono disponibili le seguenti opzioni:
 
   Ad esempio:
 
-   * Consegna di una newsletter o di un documento elettronico. In alcuni casi non è prevista alcuna esclusione di duplicati se i dati non contengono duplicati nativi. Una coppia che si abbona con lo stesso indirizzo e-mail può aspettarsi di ricevere due specifici messaggi e-mail personalizzati: uno indirizzato a ogni individuo per nome. In questo caso, questa opzione può essere deselezionata.
-   * Consegna di una campagna di marketing: la duplicazione dell’esclusione è essenziale per evitare di inviare troppi messaggi allo stesso destinatario. In questo caso, è possibile selezionare questa opzione.
+  * Consegna di una newsletter o di un documento elettronico. In alcuni casi non è prevista alcuna esclusione di duplicati se i dati non contengono duplicati nativi. Una coppia che si abbona con lo stesso indirizzo e-mail può aspettarsi di ricevere due specifici messaggi e-mail personalizzati: uno indirizzato a ogni individuo per nome. In questo caso, questa opzione può essere deselezionata.
+  * Consegna di una campagna di marketing: la duplicazione dell’esclusione è essenziale per evitare di inviare troppi messaggi allo stesso destinatario. In questo caso, è possibile selezionare questa opzione.
 
-     Se si deseleziona questa opzione, è possibile accedere a un&#39;opzione aggiuntiva: **[!UICONTROL Keep duplicate records (same identifier)]**. Ti consente di autorizzare più consegne a destinatari che soddisfano diversi criteri di targeting.
+    Se si deseleziona questa opzione, è possibile accedere a un&#39;opzione aggiuntiva: **[!UICONTROL Keep duplicate records (same identifier)]**. Ti consente di autorizzare più consegne a destinatari che soddisfano diversi criteri di targeting.
 
-     ![](assets/s_ncs_user_wizard_email02j.png)
+    ![](assets/s_ncs_user_wizard_email02j.png)
 
 * **[!UICONTROL Exclude recipients who no longer want to be contacted]**, ad esempio i destinatari i cui indirizzi e-mail fanno parte dell’elenco Bloccati (“rinuncia”). Questa opzione deve rimanere selezionata al fine di rispettare l&#39;etica professionale dell&#39;e-marketing e le leggi che disciplinano l&#39;e-commerce.
 * **[!UICONTROL Exclude quarantined recipients]**. Questa opzione ti consente di escludere dal target tutti i profili con un indirizzo che non risponde. Si consiglia vivamente di mantenere selezionata questa opzione.
@@ -264,6 +271,6 @@ Queste mappature sono le seguenti:
 
 In questo video scoprirai come aggiungere seed e bozze a un’e-mail esistente e come inviarla.
 
->[!VIDEO](https://video.tv.adobe.com/v/328513?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
 Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

@@ -8,29 +8,33 @@ exl-id: 07cfa2b3-4e70-437a-ad5f-15fbfe717d5c
 TQID: https://experienceleague.adobe.com/rxyAXKDrxdMJWdXAwbbkleIoRHf03mvC5sHZbXZ1H5M
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
 subfeature_v2:
   - id: f863efa9-030c-4466-a2b8-a52aea6b722c
+    internal-label: Subscription services
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 362
+source-wordcount: '362'
 ht-degree: 46%
-
 ---
-
 # Orchestrare campagne di marketing{#designing-marketing-campaigns}
 
 Adobe Campaign offre un serie di soluzioni che consentono di personalizzare e distribuire campagne su tutti i canali online e offline. Puoi creare, configurare, eseguire e analizzare campagne di marketing. Tutte le campagne di marketing possono essere gestite da un centro di controllo unificato.
 
 Le campagne includono azioni (consegne), processi (importazione o estrazione file) e risorse (documenti di marketing, descrizioni della consegna). Vengono utilizzati nelle campagne di marketing. Le campagne fanno parte di un programma e i programmi sono inclusi in un piano di campagna.
 
-Per ulteriori informazioni sulla gestione delle campagne, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=it){target=_blank}.
+Per ulteriori informazioni sulla gestione delle campagne, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
 
 ![](assets/do-not-localize/campaign.jpg){width="40%"}
 
@@ -105,8 +109,8 @@ The following concepts need to be known in the context of Campaign:
 
 This video presents the key concepts of marketing campaigns.
 
->[!VIDEO](https://video.tv.adobe.com/v/326578?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
-Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 
 -->

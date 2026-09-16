@@ -3,7 +3,7 @@ product: campaign
 title: Esecuzione di un flusso di lavoro
 description: Esecuzione di un flusso di lavoro
 feature: Monitoring, Workflows
-badge-v7-prem: label="Solo on-premise/ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
@@ -11,21 +11,25 @@ exl-id: b5aa5663-1902-4f50-9202-783e73a28838
 TQID: https://experienceleague.adobe.com/rLTECFw79UslNFzXs7WArBoo0YmqHjAWojkXCgQOmuk
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2:
   - id: c03a11ff-bdf9-4e5b-b279-f468b4293464
+    internal-label: Performance Monitoring
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 744
+source-wordcount: '750'
 ht-degree: 11%
-
 ---
-
 # Esecuzione di un flusso di lavoro{#workflow-execution}
 
 
@@ -37,7 +41,7 @@ Per ulteriori informazioni sui flussi di lavoro, consulta le sezioni seguenti:
 * [Informazioni sui flussi di lavoro](../../workflow/using/about-workflows.md)
 * [Avvio di un flusso di lavoro](https://experienceleague.adobe.com/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow.html?lang=it){target="_blank"}.
 * [Ciclo di vita del flusso di lavoro](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=it){target="_blank"}.
-* [Best practice per l&#39;utilizzo dei flussi di lavoro](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=it){target="_blank"}.
+* [Best practice per l&#39;utilizzo dei flussi di lavoro](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}.
 
 ## Inizia il prima possibile nelle campagne {#start-as-soon-as-possible-in-campaigns}
 
@@ -45,7 +49,7 @@ In alcuni casi, i flussi di lavoro eseguiti da una campagna non vengono avviati 
 
 Le cause di questo problema possono essere diverse. Per risolverlo, segui i passaggi seguenti:
 
-1. Verificare lo stato del flusso di lavoro tecnico [**[!UICONTROL operationMgt]**](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=it){target="_blank"}. Questo flusso di lavoro gestisce processi o flussi di lavoro all’interno di una campagna. In caso di errore, i flussi di lavoro non si avviano né si arrestano. Riavviala per riprendere l’esecuzione dei flussi di lavoro della campagna.
+1. Verificare lo stato del flusso di lavoro tecnico [**[!UICONTROL operationMgt]**](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}. Questo flusso di lavoro gestisce processi o flussi di lavoro all’interno di una campagna. In caso di errore, i flussi di lavoro non si avviano né si arrestano. Riavviala per riprendere l’esecuzione dei flussi di lavoro della campagna.
 
    Per ulteriori informazioni sul monitoraggio dei flussi di lavoro tecnici, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html?lang=it){target="_blank"}.
 
@@ -84,13 +88,13 @@ Le cause di questo problema possono essere diverse. Per risolverlo, segui i pass
 
    Per risolvere questo problema, arresta i flussi di lavoro indesiderati ed elimina le consegne non riuscite. Se la soglia è stata raggiunta, sarà possibile eseguire nuovi processi.
 
-   Per verificare il numero di flussi di lavoro in esecuzione nell&#39;istanza, si consiglia di utilizzare le viste predefinite, accessibili per impostazione predefinita nella cartella **[!UICONTROL Administration]** / **[!UICONTROL Audit]**. Per ulteriori informazioni, consulta la [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=it){target="_blank"}.
+   Per verificare il numero di flussi di lavoro in esecuzione nell&#39;istanza, si consiglia di utilizzare le viste predefinite, accessibili per impostazione predefinita nella cartella **[!UICONTROL Administration]** / **[!UICONTROL Audit]**. Per ulteriori informazioni, consulta la [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
 
    >[!IMPORTANT]
    >
    >L&#39;aumento della soglia dell&#39;opzione **[!UICONTROL NmsOperation_LimitConcurrency]** può causare problemi di prestazioni nell&#39;istanza. In ogni caso, non eseguire questa operazione da solo e contatta il tuo contatto Adobe Campaign.
 
-Per ulteriori informazioni su come monitorare i flussi di lavoro, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=it){target="_blank"}.
+Per ulteriori informazioni su come monitorare i flussi di lavoro, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
 
 ## Avvio in corso {#start-in-progress}
 
@@ -129,6 +133,6 @@ Per verificare e avviare il modulo, se necessario, attieniti alla seguente proce
 
 Se un flusso di lavoro non riesce, effettua le seguenti operazioni:
 
-1. Controlla il giornale di registrazione del flusso di lavoro. Per ulteriori informazioni, fai riferimento alla [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=it){target="_blank"}.
+1. Controlla il giornale di registrazione del flusso di lavoro. Per ulteriori informazioni, fai riferimento alla [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
 1. Monitorare i flussi di lavoro tecnici. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html?lang=it){target="_blank"}.
 1. Cerca gli errori nelle singole attività del flusso di lavoro.

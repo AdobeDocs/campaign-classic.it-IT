@@ -9,24 +9,31 @@ exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
 TQID: https://experienceleague.adobe.com/jH8qR4ch4MGigmPcBNa25SRnCpve-ati-HF1wQhRpcI
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 707
+source-wordcount: '723'
 ht-degree: 13%
-
 ---
-
 # Creare notifiche per Android{#create-notificaations-android}
 
 Utilizza Adobe Campaign per inviare notifiche push su dispositivi Android. I concetti globali sulla creazione della consegna sono descritti nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it){target="_blank"}.
@@ -83,7 +90,7 @@ L’immagine e la pagina web devono essere visualizzate nella notifica push quan
 
 ## Creare un messaggio di notifica {#creating-notification-message}
 
-![](assets/do-not-localize/how-to-video.png) [Scopri come creare una notifica push di Android in un video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=it#additional-resources){target="_blank"}.
+![](assets/do-not-localize/how-to-video.png) [Scopri come creare una notifica push di Android in un video](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html#additional-resources){target="_blank"}.
 
 1. Vai a **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 
@@ -124,8 +131,8 @@ L’immagine e la pagina web devono essere visualizzate nella notifica push quan
    * **[!UICONTROL Image]**: imposta l&#39;URL dell&#39;immagine da visualizzare nella notifica.
    * **[!UICONTROL Notification Count]**: impostare il numero di nuove informazioni non lette da visualizzare direttamente sull&#39;icona dell&#39;applicazione.
    * **[!UICONTROL Sticky]**: Impostare su true o false. Se impostato su false, la notifica viene automaticamente ignorata quando l’utente fa clic su di essa. Se impostato su true, la notifica viene comunque visualizzata anche quando l’utente fa clic su di essa.
-   * **[!UICONTROL Notification Priority]**: impostare i livelli di priorità della notifica su predefinito, minimo, minimo o massimo. Per ulteriori informazioni, consulta la [documentazione FCM &#x200B;](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#NotificationPriority).
-   * **[!UICONTROL Visibility]**: impostare i livelli di visibilità della notifica su public, private o secret. Per ulteriori informazioni, consulta la [documentazione FCM &#x200B;](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#visibility).
+   * **[!UICONTROL Notification Priority]**: impostare i livelli di priorità della notifica su predefinito, minimo, minimo o massimo. Per ulteriori informazioni, consulta la [documentazione FCM ](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#NotificationPriority).
+   * **[!UICONTROL Visibility]**: impostare i livelli di visibilità della notifica su public, private o secret. Per ulteriori informazioni, consulta la [documentazione FCM ](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#visibility).
 
    Per ulteriori informazioni su **[!UICONTROL HTTP v1 additional options]** e su come compilare questi campi, consulta la [documentazione FCM](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"}.
 

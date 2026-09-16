@@ -8,9 +8,7 @@ source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 0%
-
 ---
-
 # La versione a 3 cifre del browser influisce sui componenti web di Campaign {#version-100}
 
 Google e Mozilla stanno avvertendo che Chrome e Firefox potrebbero interrompere alcuni siti web a causa delle loro versioni a 3 cifre imminenti.

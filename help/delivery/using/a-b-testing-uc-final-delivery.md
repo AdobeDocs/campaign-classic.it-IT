@@ -2,28 +2,32 @@
 product: campaign
 title: Definire la consegna finale
 description: Scopri come eseguire il test A/B tramite un caso d’uso dedicato
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
 role: User
 exl-id: bc23a444-a872-48fb-8bba-64b301541089
 TQID: https://experienceleague.adobe.com/P0oI4PhLZB-iBFDrEJ2Qy7eIOPYWSWYu5s6j3yCN6j0
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: e739ee2b-6228-412e-878f-45de0791417d
+    internal-label: Use cases
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 119
+source-wordcount: '110'
 ht-degree: 5%
-
 ---
-
 # Test AB: definire la consegna finale {#step-6--defining-the-final-delivery}
 
 Una volta creato lo script per selezionare il vincitore del test A/B, puoi definire i parametri della consegna finale.

@@ -10,17 +10,17 @@ exl-id: 3d85866a-6339-458c-807a-b267cce772b8
 TQID: https://experienceleague.adobe.com/pex7wiGCNMdY86-Ug7dyLxE3RRT-ejlgz8eH7zVmZc4
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 708
+source-wordcount: '708'
 ht-degree: 3%
-
 ---
-
 # Elaborazione di eventi {#about-event-processing}
 
 
@@ -92,8 +92,8 @@ La **cronologia eventi**, in **[!UICONTROL Message Center]** > **[!UICONTROL Eve
 
 * **In sospeso**: l&#39;evento può essere:
 
-   * Un evento che è stato appena raccolto e che non è ancora stato elaborato. La colonna **[!UICONTROL Number of errors]** mostra il valore 0. Il modello e-mail non è ancora stato collegato.
-   * Un evento elaborato ma la cui conferma è errata. La colonna **[!UICONTROL Number of errors]** mostra un valore diverso da 0. Per sapere quando verrà elaborato di nuovo questo evento, consulta la colonna **[!UICONTROL Process requested on]**.
+  * Un evento che è stato appena raccolto e che non è ancora stato elaborato. La colonna **[!UICONTROL Number of errors]** mostra il valore 0. Il modello e-mail non è ancora stato collegato.
+  * Un evento elaborato ma la cui conferma è errata. La colonna **[!UICONTROL Number of errors]** mostra un valore diverso da 0. Per sapere quando verrà elaborato di nuovo questo evento, consulta la colonna **[!UICONTROL Process requested on]**.
 
 * **Consegna in sospeso**: l&#39;evento è stato elaborato e il modello di consegna è collegato. L’e-mail è in attesa di consegna e viene applicato il processo di consegna classico. Per ulteriori informazioni, puoi aprire la consegna.
 * **Inviato**, **Ignorato** e **Errore di consegna**: questi stati di consegna vengono recuperati tramite il flusso di lavoro **updateEventsStatus**. Per ulteriori informazioni, puoi aprire la consegna pertinente.

@@ -2,28 +2,33 @@
 product: campaign
 title: Pubblicare un modulo web
 description: Pubblicare un modulo web
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
 TQID: https://experienceleague.adobe.com/2lsNN7oxSizIC1wsv5S5fwkgCcKd3so5qeq-pHr8odY
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2:
   - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
 subfeature_v2:
   - id: f391046b-0cf3-4e76-bd3b-97fe06654506
+    internal-label: Web Apps
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
+    internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
+    internal-label: Landing pages
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1289
+source-wordcount: '1280'
 ht-degree: 1%
-
 ---
-
 # Pubblicare un modulo web{#publishing-a-web-form}
 
 
@@ -192,17 +197,17 @@ Ulteriori informazioni sui diversi stati di un modulo Web sono disponibili in [q
 
 * Se lo stato del modulo Web era **[!UICONTROL Pending publication]** o **[!UICONTROL Online]** al momento dell&#39;esportazione dalla prima istanza:
 
-   * Il modulo web ottiene lo stato **[!UICONTROL Pending publication]** quando viene importato nella nuova istanza.
+  * Il modulo web ottiene lo stato **[!UICONTROL Pending publication]** quando viene importato nella nuova istanza.
 
-   * Se il modulo Web esiste già nella nuova istanza, viene sostituito con la nuova versione del modulo e assume lo stato **[!UICONTROL Pending publication]**, anche se la versione precedente del modulo era **[!UICONTROL Online]**.
+  * Se il modulo Web esiste già nella nuova istanza, viene sostituito con la nuova versione del modulo e assume lo stato **[!UICONTROL Pending publication]**, anche se la versione precedente del modulo era **[!UICONTROL Online]**.
 
-   * Indipendentemente dal fatto che il modulo esista o meno, il modulo deve essere [pubblicato](#publishing-a-form) per diventare **[!UICONTROL Online]** nella nuova istanza e accessibile tramite l&#39;URL del modulo Web in un browser.
+  * Indipendentemente dal fatto che il modulo esista o meno, il modulo deve essere [pubblicato](#publishing-a-form) per diventare **[!UICONTROL Online]** nella nuova istanza e accessibile tramite l&#39;URL del modulo Web in un browser.
 
 * Se lo stato del modulo Web era **[!UICONTROL Being edited]** al momento dell&#39;esportazione:
 
-   * Se il modulo Web è nuovo nell&#39;istanza in cui viene importato il pacchetto, il modulo Web ottiene lo stato **[!UICONTROL Being edited]**.
+  * Se il modulo Web è nuovo nell&#39;istanza in cui viene importato il pacchetto, il modulo Web ottiene lo stato **[!UICONTROL Being edited]**.
 
-   * Se il modulo web esiste già nella nuova istanza, si tratta di una modifica apportata a un modulo esistente. Se la vecchia versione del modulo era **[!UICONTROL Online]**, la vecchia versione rimane online fino a quando la nuova versione del modulo non viene [pubblicata](#publishing-a-form) di nuovo nella nuova istanza.
+  * Se il modulo web esiste già nella nuova istanza, si tratta di una modifica apportata a un modulo esistente. Se la vecchia versione del modulo era **[!UICONTROL Online]**, la vecchia versione rimane online fino a quando la nuova versione del modulo non viene [pubblicata](#publishing-a-form) di nuovo nella nuova istanza.
 
   >[!NOTE]
   >

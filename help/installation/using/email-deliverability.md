@@ -3,7 +3,7 @@ product: campaign
 title: Configurazione tecnica delle e-mail
 description: Scopri come configurare Campaign per controllare l’output delle istanze durante la consegna delle e-mail
 feature: Installation, Deliverability
-badge-v7-prem: label="Solo on-premise/ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
@@ -11,23 +11,29 @@ exl-id: 515adad2-6129-450a-bb9e-fc80127835af
 TQID: https://experienceleague.adobe.com/JRN8-kfrbG-UDAJz8wShf-0vi-LyqrUBxNBa3wn83cc
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: b5852c32-876b-41ae-92a7-9f588865ae52
+    internal-label: Best practices
   - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
   - id: eff19c99-440a-4318-b319-444edc4d8d8f
+    internal-label: Upgrade
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 3163
+source-wordcount: '3151'
 ht-degree: 2%
-
 ---
-
 # Configurazioni tecniche delle e-mail{#email-deliverability}
 
 
@@ -258,14 +264,14 @@ I seguenti parametri disponibili per ciascuna regola sono:
 
   Ad esempio, i seguenti indirizzi:
 
-   * a.mx.yahoo.com
-   * b.mx.yahoo.com
-   * c.mx.yahoo.com
+  * a.mx.yahoo.com
+  * b.mx.yahoo.com
+  * c.mx.yahoo.com
 
   sono compatibili con le seguenti maschere:
 
-   * &#42;.yahoo.com
-   * ?.mx.yahoo.com
+  * &#42;.yahoo.com
+  * ?.mx.yahoo.com
 
   Ad esempio, per l’indirizzo e-mail foobar@gmail.com, il dominio è gmail.com e il record MX è:
 
@@ -281,8 +287,8 @@ I seguenti parametri disponibili per ciascuna regola sono:
 
 * **[!UICONTROL Range of identifiers]**: questa opzione consente di indicare gli intervalli di identificatori (publicID) a cui si applica la regola. Puoi specificare:
 
-   * Un numero: la regola si applicherà solo a questo publicId,
-   * Intervallo di numeri (**number1-number2**): la regola verrà applicata a tutti gli publicId compresi tra questi due numeri.
+  * Un numero: la regola si applicherà solo a questo publicId,
+  * Intervallo di numeri (**number1-number2**): la regola verrà applicata a tutti gli publicId compresi tra questi due numeri.
 
   >[!NOTE]
   >
@@ -306,14 +312,14 @@ I seguenti parametri disponibili per ciascuna regola sono:
 * **[!UICONTROL Timeout]**: tempo di attesa massimo per altri scambi con il server SMTP.
 * **[!UICONTROL TLS]**: il protocollo TLS, che consente di crittografare le consegne e-mail, può essere abilitato in modo selettivo. Per ogni maschera MX sono disponibili le seguenti opzioni:
 
-   * **[!UICONTROL Default configuration]**: configurazione generale specificata nel file di configurazione serverConf.xml applicato.
+  * **[!UICONTROL Default configuration]**: configurazione generale specificata nel file di configurazione serverConf.xml applicato.
 
-     >[!IMPORTANT]
-     >
-     >Non è consigliabile modificare la configurazione predefinita.
+    >[!IMPORTANT]
+    >
+    >Non è consigliabile modificare la configurazione predefinita.
 
-   * **[!UICONTROL Disabled]**: i messaggi vengono inviati sistematicamente senza crittografia.
-   * **[!UICONTROL Opportunistic]**: la consegna dei messaggi è crittografata se il server di ricezione (SMTP) è in grado di generare il protocollo TLS.
+  * **[!UICONTROL Disabled]**: i messaggi vengono inviati sistematicamente senza crittografia.
+  * **[!UICONTROL Opportunistic]**: la consegna dei messaggi è crittografata se il server di ricezione (SMTP) è in grado di generare il protocollo TLS.
 
 Esempio di configurazione:
 
@@ -329,7 +335,7 @@ Puoi definire il formato dei messaggi inviati, in modo che il contenuto visualiz
 
 A tale scopo, passare al documento **[!UICONTROL Management of email formats]**, che si trova in **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Non deliverables management]** > **[!UICONTROL Mail rule sets]**.
 
-Questo documento contiene un elenco di tutti i domini predefiniti che corrispondono ai formati giapponesi gestiti da Adobe Campaign. Per ulteriori informazioni, consulta la [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html?lang=it){target="_blank"}.
+Questo documento contiene un elenco di tutti i domini predefiniti che corrispondono ai formati giapponesi gestiti da Adobe Campaign. Per ulteriori informazioni, consulta la [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}.
 
 ![](assets/mail_rule_sets.png)
 
@@ -344,7 +350,7 @@ Il parametro **MIME structure** (Multipurpose Internet Mail Extensions) consente
 
 Se l&#39;opzione **[!UICONTROL Image inclusion]** è abilitata, verranno visualizzate direttamente nel corpo dell&#39;e-mail. Le immagini vengono quindi caricate e i collegamenti URL sostituiti dal relativo contenuto.
 
-Questa opzione è particolarmente utilizzata dal mercato giapponese per **Deco-mail**, **Decore Mail** o **Decoration Mail**. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html?lang=it){target="_blank"}.
+Questa opzione è particolarmente utilizzata dal mercato giapponese per **Deco-mail**, **Decore Mail** o **Decoration Mail**. Per ulteriori informazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}.
 
 >[!IMPORTANT]
 >

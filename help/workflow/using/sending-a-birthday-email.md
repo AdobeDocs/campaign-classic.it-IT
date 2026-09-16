@@ -8,20 +8,23 @@ exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
 TQID: https://experienceleague.adobe.com/RxcAtCrK97YWE-UZuuxRkNN-spUvC0yRJZdY1WW-MBo
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
+    internal-label: Workflow HeatMap
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
+    internal-label: Execution activities
   - id: d1110311-2ca4-442b-be37-088a6db845ee
+    internal-label: Data Management activities
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 896
+source-wordcount: '896'
 ht-degree: 2%
-
 ---
-
 # Inviare un’e-mail di compleanno{#sending-a-birthday-email}
 
 
@@ -36,7 +39,7 @@ Per impostare questo caso d’uso, abbiamo creato il seguente flusso di lavoro d
 
 Questo flusso di lavoro (eseguito quotidianamente) seleziona tutti i destinatari il cui compleanno cade nella data corrente.
 
-![](assets/do-not-localize/how-to-video.png) Questo caso d&#39;uso si trova anche sotto forma di video. Per ulteriori informazioni, consulta il video [Creazione di un flusso di lavoro](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html?lang=it).
+![](assets/do-not-localize/how-to-video.png) Questo caso d&#39;uso si trova anche sotto forma di video. Per ulteriori informazioni, consulta il video [Creazione di un flusso di lavoro](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html).
 
 A tale scopo, creare una campagna e fare clic sulla scheda **[!UICONTROL Targeting and workflows]**. Per ulteriori informazioni, consulta la sezione [Creazione della destinazione principale in un flusso di lavoro](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 

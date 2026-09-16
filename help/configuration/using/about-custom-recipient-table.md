@@ -4,27 +4,31 @@ title: Informazioni sulla tabella dei destinatari personalizzata
 description: Informazioni sulla tabella dei destinatari personalizzata
 feature: Configuration, Custom Resources
 role: User, Developer
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 exl-id: d8cea496-b3f3-420a-bf6e-b7cbb321b30d
 TQID: https://experienceleague.adobe.com/Okjz7RRmzZCTCBNbBqR1nHDq7ML8WjrJrs1XR0aDZSE
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
 subfeature_v2:
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 692
+source-wordcount: '683'
 ht-degree: 2%
-
 ---
-
 # Utilizzare una tabella dei destinatari personalizzata{#about-custom-recipient-table}
 
 Questa sezione descrive i principi per l’utilizzo di una tabella dei destinatari personalizzata (o esterna).
@@ -55,8 +59,8 @@ L’utilizzo di una tabella dei destinatari personalizzata presenta le seguenti 
 
   Si consiglia di:
 
-   * Dedicando gli schemi **[!UICONTROL nms:BroadLogRcp]** e **[!UICONTROL nms:TrackingLogRcp]** a **[!UICONTROL nms:Recipientschema]** predefiniti. Queste due tabelle di registro non devono essere collegate ad alcuna tabella dei destinatari personalizzata aggiuntiva.
-   * Definizione di schemi broadlog e trackinglog personalizzati dedicati per ogni nuovo schema destinatario personalizzato. Questa operazione può essere eseguita automaticamente durante la configurazione del mapping di destinazione. Vedere [Mapping di destinazione](../../configuration/using/target-mapping.md).
+  * Dedicando gli schemi **[!UICONTROL nms:BroadLogRcp]** e **[!UICONTROL nms:TrackingLogRcp]** a **[!UICONTROL nms:Recipientschema]** predefiniti. Queste due tabelle di registro non devono essere collegate ad alcuna tabella dei destinatari personalizzata aggiuntiva.
+  * Definizione di schemi broadlog e trackinglog personalizzati dedicati per ogni nuovo schema destinatario personalizzato. Questa operazione può essere eseguita automaticamente durante la configurazione del mapping di destinazione. Vedere [Mapping di destinazione](../../configuration/using/target-mapping.md).
 
 * Impossibile utilizzare il **[!UICONTROL Services and Subscriptions]** standard offerto nel prodotto.
 

@@ -3,7 +3,7 @@ product: campaign
 title: Informazioni su Adobe Experience Cloud Triggers
 description: Introduzione all’implementazione dei trigger Adobe Experience Cloud
 feature: Triggers
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 level: Intermediate, Experienced
@@ -11,26 +11,33 @@ exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
 TQID: https://experienceleague.adobe.com/gWgUCcgsqeMw-mzVdhVodcp91lgTCCL7XGWp0f2ItKo
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
   - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+    internal-label: Adobe Experience Manager integration
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+    internal-label: Adobe Experience Platform integration
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+    internal-label: Adobe Target integration
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 392
-ht-degree: 9%
-
+source-wordcount: '411'
+ht-degree: 8%
 ---
-
-# Utilizzare Campaign e i trigger di Experience Cloud{#about-adobe-experience-triggers}
+# Utilizzare Campaign e Experience Cloud Triggers{#about-adobe-experience-triggers}
 
 [!DNL Triggers] è un&#39;integrazione tra Adobe Campaign e Adobe Analytics che utilizza la pipeline. La pipeline recupera le azioni o i trigger degli utenti dal sito web. L’abbandono del carrello è un esempio di trigger. Gli attivatori vengono elaborati in Adobe Campaign per inviare e-mail quasi in tempo reale.
 
@@ -43,7 +50,7 @@ ht-degree: 9%
 Consente integrazioni più agili, in quanto la configurazione è minima e non è coinvolta una terza parte.
 Supporta inoltre elevati volumi di traffico senza influire sulle prestazioni delle attività di marketing. Ad esempio, l’integrazione può elaborare un milione di trigger all’ora.
 
-![](assets/do-not-localize/book.png) Scopri come [creare un trigger di Experience Cloud](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html?lang=it) e identificare, definire e monitorare i comportamenti critici dei consumatori.
+![](assets/do-not-localize/book.png) Scopri come [creare un trigger di Experience Cloud](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html) e identificare, definire e monitorare i comportamenti critici dei consumatori.
 
 ## Architettura [!DNL Triggers] {#triggers-architecture}
 
@@ -51,14 +58,14 @@ Il processo [!DNL pipelined] è sempre in esecuzione sul server di marketing Ado
 
 ![](assets/triggers_2.png)
 
-Il processo [!DNL pipelined] accede ad Experience Cloud utilizzando un servizio di autenticazione e invia una chiave privata. Il servizio di autenticazione restituisce un token. Il token viene utilizzato per l’autenticazione durante il recupero degli eventi.
+Il processo [!DNL pipelined] accede a Experience Cloud utilizzando un servizio di autenticazione e invia una chiave privata. Il servizio di autenticazione restituisce un token. Il token viene utilizzato per l’autenticazione durante il recupero degli eventi.
 
 ## Prerequisiti {#adobe-io-prerequisites}
 
 Prima di iniziare questa implementazione, verifica di disporre di:
 
 * un **identificatore organizzazione** valido: l&#39;ID organizzazione è l&#39;identificatore univoco all&#39;interno di Adobe Experience Cloud, utilizzato ad esempio per il servizio VisitorID e l&#39;SSO (Single Sign On) IMS. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=it)
-* **Accesso per sviluppatori** all&#39;organizzazione. L&#39;amministratore di sistema dell&#39;organizzazione deve seguire la procedura **Aggiungi sviluppatori a un singolo profilo di prodotto** dettagliata [in questa pagina](https://helpx.adobe.com/it/enterprise/using/manage-developers.html) per fornire agli sviluppatori l&#39;accesso al profilo di prodotto `Analytics - {tenantID}` del prodotto Adobe Analytics associato a Triggers.
+* **Accesso per sviluppatori** all&#39;organizzazione. L&#39;amministratore di sistema dell&#39;organizzazione deve seguire la procedura **Aggiungi sviluppatori a un singolo profilo di prodotto** dettagliata [in questa pagina](https://helpx.adobe.com/enterprise/using/manage-developers.html) per fornire agli sviluppatori l&#39;accesso al profilo di prodotto `Analytics - {tenantID}` del prodotto Adobe Analytics associato a Triggers.
 
 ## Passaggi di implementazione {#implement}
 

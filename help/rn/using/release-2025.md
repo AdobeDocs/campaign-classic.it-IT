@@ -9,14 +9,14 @@ exl-id: 8fd7a66b-cdff-427d-b78f-4becaba51129
 feature_v2: []
 subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
+    internal-label: Release notes
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 source-git-commit: c372a3d67ec413fa8cf9fdbb4530762a8f2f5177
-workflow-type: ht
-source-wordcount: 890
+workflow-type: tm+mt
+source-wordcount: '890'
 ht-degree: 100%
-
 ---
-
 # Versioni 2025{#release-2025}
 
 ## Versione 7.4.2  {#release-7-4-2}
@@ -62,13 +62,13 @@ Questa versione include le seguenti correzioni principali:
 
 * Correzioni di Google BigQuery:
 
-   * Sono state corrette le regressioni sui tipi di dati BOOLEANI
-   * Sono stati risolti i problemi relativi alle impostazioni proxy
-   * Sono state corrette le regressioni sui tipi di dati DATAORA
-   * È stato risolto il problema relativo alla stabilità del caricamento in blocco
-   * Sono stati migliorati i test interni sulle versioni ODBC
-   * È stato risolto un problema relativo ai caratteri speciali nella stringa di connessione
-   * È stati rimosso il timeout predefinito (5 min) nelle query Google BigQuery
+  * Sono state corrette le regressioni sui tipi di dati BOOLEANI
+  * Sono stati risolti i problemi relativi alle impostazioni proxy
+  * Sono state corrette le regressioni sui tipi di dati DATAORA
+  * È stato risolto il problema relativo alla stabilità del caricamento in blocco
+  * Sono stati migliorati i test interni sulle versioni ODBC
+  * È stato risolto un problema relativo ai caratteri speciali nella stringa di connessione
+  * È stati rimosso il timeout predefinito (5 min) nelle query Google BigQuery
 
 * Mail Transfer Agent (MTA): è stato risolto elemento secondario MTA orfano bloccato nello stato **[!UICONTROL Start pending]**.
 

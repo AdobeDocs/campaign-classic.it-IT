@@ -14,9 +14,7 @@ source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 3%
-
 ---
-
 # Configurazione di Developer Console per i trigger di Adobe Experience Cloud {#configuring-adobe-io}
 
 <!--
@@ -37,7 +35,7 @@ This integration only applies starting **Campaign Classic 20.2.4 and above, 19.1
 Prima di iniziare questa implementazione, verifica di disporre di:
 
 * un **identificatore organizzazione** valido: l&#39;ID organizzazione è l&#39;identificatore univoco all&#39;interno di Adobe Experience Cloud, utilizzato ad esempio per il servizio VisitorID e l&#39;SSO (Single Sign On) IMS. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=it)
-* **Accesso per sviluppatori** all&#39;organizzazione. L&#39;amministratore di sistema dell&#39;organizzazione deve seguire la procedura **Aggiungi sviluppatori a un singolo profilo di prodotto** dettagliata [in questa pagina](https://helpx.adobe.com/it/enterprise/using/manage-developers.html) per fornire agli sviluppatori l&#39;accesso al profilo di prodotto `Analytics - {tenantID}` del prodotto Adobe Analytics associato a Triggers.
+* **Accesso per sviluppatori** all&#39;organizzazione. L&#39;amministratore di sistema dell&#39;organizzazione deve seguire la procedura **Aggiungi sviluppatori a un singolo profilo di prodotto** dettagliata [in questa pagina](https://helpx.adobe.com/enterprise/using/manage-developers.html) per fornire agli sviluppatori l&#39;accesso al profilo di prodotto `Analytics - {tenantID}` del prodotto Adobe Analytics associato a Triggers.
 
 ## Passaggio 1: creare/aggiornare il progetto OAuth {#creating-adobe-io-project}
 
@@ -47,7 +45,7 @@ Prima di iniziare questa implementazione, verifica di disporre di:
 >
 > * Se hai implementato integrazioni in entrata con Campaign, devi migrare l&#39;account tecnico come descritto in [questa documentazione](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). Le credenziali [dell&#39;account di servizio (JWT) esistenti](oauth-technical-account.md) continueranno a funzionare fino al 27 gennaio 2025.</br>
 >
-> * Se hai implementato integrazioni in uscita, ad esempio l’integrazione Campaign-Analytics o l’integrazione Experience Cloud Triggers, queste continueranno a funzionare fino al 27 gennaio 2025. Tuttavia, prima di tale data, devi aggiornare l’ambiente Campaign alla versione v7.4.1 e migrare l’account tecnico a oAuth.
+> * Se hai implementato integrazioni in uscita, come l’integrazione Campaign-Analytics o l’integrazione Experience Cloud Triggers, queste continueranno a funzionare fino al 27 gennaio 2025. Tuttavia, prima di tale data, devi aggiornare l’ambiente Campaign alla versione v7.4.1 e migrare l’account tecnico a oAuth.
 
 Per procedere con la configurazione del connettore Adobe Analytics, accedi alla console Adobe Developer e crea il progetto server-to-server OAuth.
 

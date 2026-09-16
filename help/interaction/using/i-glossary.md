@@ -10,16 +10,16 @@ exl-id: 9e199b7c-9307-4797-bf86-7940388555bc
 TQID: https://experienceleague.adobe.com/d6fevvmNur-4TC1KFM-09o68GnPFEM6S6SaFICwyCsw
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
+    internal-label: Offer Management
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1109
+source-wordcount: '1109'
 ht-degree: 0%
-
 ---
-
 # Glossario dell’integrazione di Campaign{#i-glossary}
 
 
@@ -28,8 +28,8 @@ Di seguito è riportata la definizione dei principali elementi di interazione.
 
 * **Ambiente**: set che include un catalogo delle offerte e hook (spazi delle offerte). Devi creare un ambiente eseguendo il targeting della dimensione. Esistono due tipi di ambienti:
 
-   * **Ambiente di progettazione**: ambiente in cui vengono create le offerte e/o vengono definite le regole di tipologia (regole che determinano le offerte da presentare o non presentare a una persona di destinazione). In questo documento sono anche definiti la tabella dei singoli utenti target delle offerte e la tabella per l’archiviazione di tutte le proposte di offerta. Il nodo **[!UICONTROL Design environment]** contiene sottocartelle dello spazio delle offerte, filtri predefiniti e categorie di offerta. Per ogni **[!UICONTROL Design environment]** esiste un **[!UICONTROL Live environment]** di sola lettura corrispondente, generato dallo stesso **[!UICONTROL Design environment]**.
-   * **Ambiente live**: ambiente collegato a un **[!UICONTROL Design environment]**. Contiene offerte di sola lettura il cui contenuto e idoneità sono stati approvati tramite **[!UICONTROL Design environment]**. Devono essere selezionati per essere presentati su un sito Web o inseriti in un messaggio.
+  * **Ambiente di progettazione**: ambiente in cui vengono create le offerte e/o vengono definite le regole di tipologia (regole che determinano le offerte da presentare o non presentare a una persona di destinazione). In questo documento sono anche definiti la tabella dei singoli utenti target delle offerte e la tabella per l’archiviazione di tutte le proposte di offerta. Il nodo **[!UICONTROL Design environment]** contiene sottocartelle dello spazio delle offerte, filtri predefiniti e categorie di offerta. Per ogni **[!UICONTROL Design environment]** esiste un **[!UICONTROL Live environment]** di sola lettura corrispondente, generato dallo stesso **[!UICONTROL Design environment]**.
+  * **Ambiente live**: ambiente collegato a un **[!UICONTROL Design environment]**. Contiene offerte di sola lettura il cui contenuto e idoneità sono stati approvati tramite **[!UICONTROL Design environment]**. Devono essere selezionati per essere presentati su un sito Web o inseriti in un messaggio.
 
 * **Spazio dell&#39;offerta**: cartella che definisce il percorso in cui è esposta l&#39;offerta. La definizione di uno spazio consente di specificare il canale utilizzato, specificare se può o meno essere utilizzato in modalità unitaria (per impostazione predefinita: solo in modalità batch), creare il contenuto dell’offerta utilizzando le funzioni di rendering e specificare l’offerta delle offerte presentate. Uno spazio è un’interfaccia tra il canale e il motore di offerta.
 
@@ -58,12 +58,12 @@ Di seguito è riportata la definizione dei principali elementi di interazione.
 * **Arbitraggio**: selezione delle offerte che verranno visualizzate in un ambiente (offerte idonee). Il principio di arbitraggio classifica le offerte per priorità in base ai criteri definiti nelle categorie, nelle offerte e nelle offerte contestuali.
 * **Contatto**: un contatto da un&#39;interazione in entrata. Durante l’elaborazione delle chiamate al motore, il contatto è associato a una dimensione di targeting. Esistono due tipi di contatti:
 
-   * **[!UICONTROL Identified contact]**: contatto identificato volontariamente sul canale. Nelle interazioni in uscita, il contatto viene identificato automaticamente.
-   * **[!UICONTROL Anonymous contact]** : contatto che non si è abbonato volontariamente tramite il canale ma che può essere identificato implicitamente tramite un cookie. Questa terminologia viene utilizzata solo per le interazioni in ingresso.
+  * **[!UICONTROL Identified contact]**: contatto identificato volontariamente sul canale. Nelle interazioni in uscita, il contatto viene identificato automaticamente.
+  * **[!UICONTROL Anonymous contact]** : contatto che non si è abbonato volontariamente tramite il canale ma che può essere identificato implicitamente tramite un cookie. Questa terminologia viene utilizzata solo per le interazioni in ingresso.
 
-     >[!NOTE]
-     >
-     >I contatti anonimi non identificati vengono attribuiti alla dimensione di targeting dei visitatori.
+    >[!NOTE]
+    >
+    >I contatti anonimi non identificati vengono attribuiti alla dimensione di targeting dei visitatori.
 
 * **Interazione in uscita**: chiamata al motore di interazione da un elenco di contatti (utilizzato per la consegna di e-mail, direct mailing, ecc.). A ogni contatto vengono applicate le stesse regole e le stesse procedure. Questo tipo di interazione viene generalmente elaborato in modalità batch.
 * **Interazione in entrata**: interazione successiva a una chiamata in entrata generata dall&#39;azione di un contatto sul canale. Questo tipo di interazione viene generalmente elaborato in modalità unitaria.
@@ -71,9 +71,9 @@ Di seguito è riportata la definizione dei principali elementi di interazione.
 * **Modalità unitaria**: viene elaborato un singolo contatto alla volta. Questa modalità viene generalmente utilizzata per le interazioni in entrata e i messaggi transazionali.
 * **Modalità di identificazione**: fa riferimento allo stato di un contatto.
 
-   * **[!UICONTROL explicit]** : il contatto viene identificato dopo il suo accesso all&#39;interfaccia del canale.
-   * **[!UICONTROL implicit]** : il contatto è stato identificato da un cookie (permanente o sessione). Può essere elaborato come contatto anonimo o identificato.
-   * **[!UICONTROL anonymous]** : impossibile identificare il contatto.
+  * **[!UICONTROL explicit]** : il contatto viene identificato dopo il suo accesso all&#39;interfaccia del canale.
+  * **[!UICONTROL implicit]** : il contatto è stato identificato da un cookie (permanente o sessione). Può essere elaborato come contatto anonimo o identificato.
+  * **[!UICONTROL anonymous]** : impossibile identificare il contatto.
 
 * **Offerta idonea**: offerta che soddisfa i vincoli definiti a monte e che può essere offerta in modo coerente a una destinazione.
 * **Regole di presentazione**: regole di tipologia a cui si fa riferimento nell&#39;ambiente delle offerte, che ti consentono di escludere alcune offerte tenendo conto della cronologia delle proposte.

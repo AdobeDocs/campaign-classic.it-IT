@@ -2,27 +2,31 @@
 product: campaign
 title: Tracciare le visite in un’applicazione web
 description: Tracciare le visite in un’applicazione web
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Apps, Reporting, Monitoring
 exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
 TQID: https://experienceleague.adobe.com/TtUrQKKVdMc4ZttsgFG9ly8hTCdqCnb3bMm2Tn3E6ww
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
 feature_v2:
   - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
 subfeature_v2:
   - id: f391046b-0cf3-4e76-bd3b-97fe06654506
+    internal-label: Web Apps
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
+    internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
+    internal-label: Landing pages
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 411
+source-wordcount: '402'
 ht-degree: 4%
-
 ---
-
 # Tracciare le visite in un’applicazione web{#tracking-a-web-application}
 
 
@@ -44,9 +48,9 @@ I principali miglioramenti presenti in questa versione sono i seguenti:
 
   I principali indicatori sono i seguenti:
 
-   * **Tasso di conversione**: numero di persone che hanno visualizzato tutti i passaggi di un percorso di navigazione.
-   * **Percentuale non recapitate**: numero di persone che hanno visualizzato solo il primo passaggio
-   * **funnel di conversione**: tasso di perdita tra ciascun passaggio.
+  * **Tasso di conversione**: numero di persone che hanno visualizzato tutti i passaggi di un percorso di navigazione.
+  * **Percentuale non recapitate**: numero di persone che hanno visualizzato solo il primo passaggio
+  * **funnel di conversione**: tasso di perdita tra ciascun passaggio.
 
   Inoltre, un grafico di tipo **Settore** mostra la popolazione in base alla sua origine.
 

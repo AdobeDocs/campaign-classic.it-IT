@@ -3,7 +3,7 @@ product: campaign
 title: Creazione e configurazione del database
 description: Creazione e configurazione del database
 feature: Installation, Instance Settings
-badge-v7-prem: label="Solo on-premise/ibrido" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
@@ -11,22 +11,27 @@ exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
 TQID: https://experienceleague.adobe.com/wu8xP0ls5jakl0XYtBV5Ktag7hCBFwl4o0EiqNrUMnc
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
   - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 1329
+source-wordcount: '1317'
 ht-degree: 2%
-
 ---
-
 # Creazione e configurazione del database{#creating-and-configuring-the-database}
 
 Quando si crea un database, Adobe Campaign offre due opzioni diverse:
@@ -133,10 +138,10 @@ La finestra **[!UICONTROL Creation steps]** consente di visualizzare e modificar
 
   Questi parametri ricevono i nomi esatti delle tablespace (avvertenza: distinzione maiuscole/minuscole). Vengono archiviati rispettivamente nel nodo **[!UICONTROL Administration > Platform > Options]** nelle seguenti opzioni (vedi [questa sezione](../../installation/using/configuring-campaign-options.md#database)):
 
-   * **WdbcOptions_TableSpaceUser**: tabelle utente basate su uno schema
-   * **WdbcOptions_TableSpaceIndex**: indice delle tabelle utente basato su uno schema
-   * **WdbcOptions_TableSpaceWork**: tabelle di lavoro senza schema
-   * **WdbcOptions_TableSpaceWorkIndex**: indice delle tabelle di lavoro senza schema
+  * **WdbcOptions_TableSpaceUser**: tabelle utente basate su uno schema
+  * **WdbcOptions_TableSpaceIndex**: indice delle tabelle utente basato su uno schema
+  * **WdbcOptions_TableSpaceWork**: tabelle di lavoro senza schema
+  * **WdbcOptions_TableSpaceWorkIndex**: indice delle tabelle di lavoro senza schema
 
 * Per un database Oracle, l&#39;utente Adobe Campaign deve avere accesso alle librerie Oracle, in genere come membro del gruppo **oinstall**.
 * L&#39;opzione **[!UICONTROL Set or change the administrator password]** consente di immettere la password collegata all&#39;operatore Adobe Campaign con diritti di amministratore.
@@ -191,10 +196,10 @@ A seconda del motore di database selezionato, le informazioni di identificazione
 * Per un motore **PostgreSQL**, è necessario specificare il nome DNS (o l&#39;indirizzo IP) definito nel server applicazioni per accedere al server database.
 * Per un motore **Microsoft SQL Server**, è necessario definire:
 
-   1. il nome DNS (o indirizzo IP) definito nel server applicazioni per accedere al server database,
-   1. metodo di protezione utilizzato per accedere a Microsoft SQL Server: **[!UICONTROL SQL Server authentication]** o **[!UICONTROL Windows NT authentication]**.
+  1. il nome DNS (o indirizzo IP) definito nel server applicazioni per accedere al server database,
+  1. metodo di protezione utilizzato per accedere a Microsoft SQL Server: **[!UICONTROL SQL Server authentication]** o **[!UICONTROL Windows NT authentication]**.
 
-      ![](assets/s_ncs_install_db_mssql_exists_01.png)
+     ![](assets/s_ncs_install_db_mssql_exists_01.png)
 
 ### Passaggio 2: impostazioni della connessione al database {#step-2---database-connection-settings}
 

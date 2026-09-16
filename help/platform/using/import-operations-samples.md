@@ -3,7 +3,7 @@ product: campaign
 title: Esempi di importazione generica
 description: Ulteriori informazioni sulle importazioni generiche eseguibili mediante processi di importazione
 feature: Data Management
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
@@ -11,21 +11,25 @@ exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
 TQID: https://experienceleague.adobe.com/NkKTg-a9jjxPxMawe-IUgd9V99qaoxUwWaM3-h4aUf0
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
+    internal-label: Profiles
   - id: e739ee2b-6228-412e-878f-45de0791417d
+    internal-label: Use cases
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1010
+source-wordcount: '1001'
 ht-degree: 1%
-
 ---
-
 # Esempi di importazione generica {#import-operations-samples}
 
 
@@ -105,13 +109,13 @@ Per importare nel database di Adobe Campaign nuovi profili dei destinatari memor
 
      La modalità **[!UICONTROL Tracking]** consente di tenere traccia dei dettagli dell&#39;importazione per ogni record nel file di origine. A tale scopo, dalla home page fare clic su **[!UICONTROL Profiles and Targets]** e quindi su **[!UICONTROL Processes]**, selezionare l&#39;importazione pertinente e cercare le schede **[!UICONTROL General]**, **[!UICONTROL Journal]** e **[!UICONTROL Rejects]**.
 
-      * Verifica dello stato di avanzamento dell’importazione
+     * Verifica dello stato di avanzamento dell’importazione
 
-        ![](assets/s_ncs_user_import_example07_01.png)
+       ![](assets/s_ncs_user_import_example07_01.png)
 
-      * Elabora visualizzazione per ogni record
+     * Elabora visualizzazione per ogni record
 
-        ![](assets/s_ncs_user_import_example07_02.png)
+       ![](assets/s_ncs_user_import_example07_02.png)
 
 ## Aggiornare e inserire destinatari {#example--update-and-insert-recipients}
 

@@ -8,18 +8,19 @@ exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
 TQID: https://experienceleague.adobe.com/fZRtM-J9LP9AqvrRMeyzErpCXsfBbC1UIUpskV4PEqU
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 subfeature_v2: []
 source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
 workflow-type: tm+mt
-source-wordcount: 664
+source-wordcount: '664'
 ht-degree: 4%
-
 ---
-
 # Informazioni sui servizi web{#about-web-services}
 
 ## Definizione delle API di Adobe Campaign {#definition-of-adobe-campaign-apis}
@@ -31,7 +32,7 @@ Le API di Adobe Campaign vengono utilizzate in JavaScript all’interno dell’a
 >[!IMPORTANT]
 >
 >Il numero di chiamate al motore autorizzate al giorno varia in base al contratto di licenza. Per ulteriori informazioni, consulta [questa pagina](https://helpx.adobe.com/it/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
->Un elenco di tutte le API, inclusa la loro descrizione completa, è disponibile in [questa documentazione dedicata]&#x200B;(https://experienceleague.adobe.com/it/tools/campaign-api
+>Un elenco di tutte le API, inclusa la loro descrizione completa, è disponibile in [questa documentazione dedicata]&#x200B;(https://experienceleague.adobe.com/en/tools/campaign-api
 
 ## Prerequisiti {#prerequisites}
 

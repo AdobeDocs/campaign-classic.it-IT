@@ -2,25 +2,27 @@
 product: campaign
 title: Istruzioni di pre-elaborazione per gli URL tracciati
 description: Scopri di più sulle istruzioni di pre-elaborazione da utilizzare per creare uno script per l’URL di un’e-mail e tenerne traccia
-badge-v8: label="Applicabile anche a v8" type="Positive" tooltip="Applicabile anche a Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring
 role: User, Developer
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
 TQID: https://experienceleague.adobe.com/cDB7CFuf6Gv0eyik3yEyJh4auo97LkazDSahUNPFtec
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 664
+source-wordcount: '655'
 ht-degree: 1%
-
 ---
-
 # Istruzioni di pre-elaborazione {#pre-processing-instructions}
 
 Puoi utilizzare una sintassi specifica nel contenuto della consegna per aggiungere istruzioni e creare uno script per l’URL dell’e-mail tracciata. Le istruzioni &lt;%@ non sono JavaScript: questa sintassi è specifica di Adobe Campaign.
@@ -81,10 +83,10 @@ Dove:
 
 * **[!DNL object]**: nome dell&#39;oggetto (ad esempio: delivery, provider e così via).
 L’oggetto può essere:
-   * **[!DNL delivery]**: per la consegna corrente (vedi dettagli e restrizioni nella sottosezione seguente).
-   * **[!DNL provider]**: per il provider/routing di consegna corrente (nms:externalAccount).
-   * Un oggetto script aggiuntivo: se un oggetto viene caricato nel contesto tramite: **Proprietà** > **Personalization** > **Aggiungi oggetti nel contesto di esecuzione**.
-   * Elemento del ciclo foreach: vedi la sezione [Foreach](#foreach) di seguito.
+  * **[!DNL delivery]**: per la consegna corrente (vedi dettagli e restrizioni nella sottosezione seguente).
+  * **[!DNL provider]**: per il provider/routing di consegna corrente (nms:externalAccount).
+  * Un oggetto script aggiuntivo: se un oggetto viene caricato nel contesto tramite: **Proprietà** > **Personalization** > **Aggiungi oggetti nel contesto di esecuzione**.
+  * Elemento del ciclo foreach: vedi la sezione [Foreach](#foreach) di seguito.
 * **[!DNL xpath]**: xpath del campo.
 * **[!DNL index]** (facoltativo): se **[!DNL object]** è un array (per oggetti script aggiuntivi), indice dell&#39;elemento nell&#39;array (inizia da 0).
 
