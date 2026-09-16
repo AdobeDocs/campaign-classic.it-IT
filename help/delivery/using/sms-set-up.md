@@ -192,7 +192,7 @@ La tabella seguente presenta i caratteri presi in considerazione dallo standard 
   <tr> 
    <td> è </td> 
    <td> <img height="21px" src="assets/delta.png" /> </td> 
-   <td> }Permesso </td> 
+   <td> &rbrace;Permesso </td> 
    <td> 4 </td> 
    <td> D </td> 
    <td> M </td> 
