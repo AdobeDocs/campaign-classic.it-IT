@@ -33,7 +33,7 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: 72ba334fe01dfcf701438e8550ae14abae7bd323
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 1%
@@ -42,11 +42,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->La guida completa sull&#39;accesso all&#39;elenco di consegna e sull&#39;utilizzo del dashboard di consegna è documentata nella [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-dashboard). Questo contenuto si applica sia agli utenti di Campaign Classic v7 che a quelli di Campaign v8.
+>La guida completa sull&#39;accesso all&#39;elenco di consegna e sull&#39;utilizzo del dashboard di consegna è documentata nella [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard). Questo contenuto si applica sia agli utenti di Campaign Classic v7 che a quelli di Campaign v8.
 >
 >In questa pagina sono documentate **personalizzazioni avanzate specifiche di Campaign Classic v7** per le distribuzioni ibride e on-premise.
 
-Per il monitoraggio delle consegne nell&#39;interfaccia utente di Campaign, consulta [Campaign v8 Monitor deliveries in Campaign UI documentation](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
+Per il monitoraggio delle consegne nell&#39;interfaccia utente di Campaign, consulta [Campaign v8 Monitor deliveries in Campaign UI documentation](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
 
 ## Personalizzare i registri di consegna {#use-case}
 
@@ -117,9 +117,9 @@ A questo scopo, segui la procedura indicata di seguito:
 
    ![](assets/start-database-update.png)
 
->[!NOTE]
->
->Una volta completato l’aggiornamento della struttura fisica del database, è necessario disconnettersi e riconnettersi in modo da tenere conto delle modifiche.
+   >[!NOTE]
+   >
+   >Una volta completato l’aggiornamento della struttura fisica del database, è necessario disconnettersi e riconnettersi in modo da tenere conto delle modifiche.
 
 ### Passaggio 3: Convalidare la modifica
 
@@ -139,9 +139,9 @@ Di seguito sono riportati gli elementi che dovrebbero essere visualizzati nella 
 
 ## Argomenti correlati
 
-* [Monitorare le consegne nell&#39;interfaccia utente di Campaign](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (documentazione di Campaign v8)
-* [Stati di consegna](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (documentazione di Campaign v8)
-* [Informazioni sugli errori di consegna](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (documentazione di Campaign v8)
-* [Gestione della quarantena](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (documentazione di Campaign v8)
+* [Monitorare le consegne nell&#39;interfaccia utente di Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (documentazione di Campaign v8)
+* [Stati di consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (documentazione di Campaign v8)
+* [Informazioni sugli errori di consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (documentazione di Campaign v8)
+* [Gestione della quarantena](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (documentazione di Campaign v8)
 * [Estensione di uno schema](../../configuration/using/extending-a-schema.md) (v7 ibrido/on-premise)
 
