@@ -24,7 +24,7 @@ topic_v2:
 subfeature_v2:
   - id: f863efa9-030c-4466-a2b8-a52aea6b722c
     internal-label: Subscription services
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: 72ba334fe01dfcf701438e8550ae14abae7bd323
 workflow-type: tm+mt
 source-wordcount: '1259'
 ht-degree: 5%
@@ -137,15 +137,15 @@ Le campagne ricorrenti vengono create da un modello specifico che definisce il m
 
 1. Per questo tipo di campagna, viene aggiunta una scheda **[!UICONTROL Schedule]** per creare la pianificazione di esecuzione del modello.
 
-In questa scheda, specifica le date di esecuzione pianificate delle campagne basate su questo modello.
+   In questa scheda, specifica le date di esecuzione pianificate delle campagne basate su questo modello.
 
-![](assets/s_ncs_user_op_template_recur_planning.png)
+   ![](assets/s_ncs_user_op_template_recur_planning.png)
 
-La modalità di configurazione della pianificazione di esecuzione coincide con l&#39;oggetto **[!UICONTROL Scheduler]** del flusso di lavoro. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../workflow/using/architecture.md).
+   La modalità di configurazione della pianificazione di esecuzione coincide con l&#39;oggetto **[!UICONTROL Scheduler]** del flusso di lavoro. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../workflow/using/architecture.md).
 
->[!IMPORTANT]
->
->La configurazione della pianificazione di esecuzione deve essere eseguita con attenzione per evitare un sovraccarico del database. Le campagne ricorrenti duplicano i flussi di lavoro del relativo modello a seconda della pianificazione specificata. L&#39;attuazione di una creazione di flussi di lavoro eccessivamente frequente può ostacolare il funzionamento della banca dati.
+   >[!IMPORTANT]
+   >
+   >La configurazione della pianificazione di esecuzione deve essere eseguita con attenzione per evitare un sovraccarico del database. Le campagne ricorrenti duplicano i flussi di lavoro del relativo modello a seconda della pianificazione specificata. L&#39;attuazione di una creazione di flussi di lavoro eccessivamente frequente può ostacolare il funzionamento della banca dati.
 
 1. Specificare un valore nel campo **[!UICONTROL Create in advance for]** per creare i flussi di lavoro corrispondenti per il periodo indicato.
 1. Crea il modello di flusso di lavoro da utilizzare nelle campagne basate su questo modello, con i parametri di targeting e una o più consegne generiche.

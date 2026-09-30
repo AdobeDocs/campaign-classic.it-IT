@@ -33,7 +33,7 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: 72ba334fe01dfcf701438e8550ae14abae7bd323
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 1%
@@ -117,9 +117,9 @@ A questo scopo, segui la procedura indicata di seguito:
 
    ![](assets/start-database-update.png)
 
->[!NOTE]
->
->Una volta completato l’aggiornamento della struttura fisica del database, è necessario disconnettersi e riconnettersi in modo da tenere conto delle modifiche.
+   >[!NOTE]
+   >
+   >Una volta completato l’aggiornamento della struttura fisica del database, è necessario disconnettersi e riconnettersi in modo da tenere conto delle modifiche.
 
 ### Passaggio 3: Convalidare la modifica
 
