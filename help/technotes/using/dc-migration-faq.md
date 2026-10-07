@@ -6,15 +6,26 @@ feature: Technote, Upgrade
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-TQID: https://experienceleague.adobe.com/r3qtW9ZsCD85N9qAnN1EOje-VMhDoyPuqea2xZnBWLs
+TQID: 'https://experienceleague.adobe.com/r3qtW9ZsCD85N9qAnN1EOje-VMhDoyPuqea2xZnBWLs'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
     internal-label: APIs
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
     internal-label: Integrations
+  - id: ab81f6c3-9317-564f-af92-6670a8784294
+    internal-label: Technote
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Analytics integration
+  - id: eff19c99-440a-4318-b319-444edc4d8d8f
+    internal-label: Upgrade
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -26,10 +37,7 @@ topic_v2:
     internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-subfeature_v2:
-  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-    internal-label: Adobe Analytics integration
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '2269'
 ht-degree: 0%
@@ -42,7 +50,7 @@ Adobe disattiva il centro dati legacy: le istanze di Campaign Classic devono ess
 
 Di seguito è riportata una serie di domande comuni su questo progetto, sull’impatto sugli ambienti Campaign e su altre risorse utili.
 
-Per qualsiasi altra domanda, puoi contattare l&#39;[Assistenza clienti Adobe](https://experienceleague.adobe.com/it?support-solution=Campaign#support).
+Per qualsiasi altra domanda, puoi contattare l&#39;[Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 ## Impatto sull&#39;infrastruttura
 
@@ -72,7 +80,7 @@ Gli impatti globali su database e infrastruttura sono elencati di seguito.
 
 * **Qual è il piano per risolvere eventuali problemi successivi alla migrazione?**
 
-  Prima della migrazione dei sistemi di produzione vengono eseguiti test approfonditi. Tuttavia, in caso di problemi, [l&#39;Assistenza clienti Adobe](https://experienceleague.adobe.com/it?support-solution=Campaign#support) rimarrà il punto di contatto principale. Adobe ha istituito un team di esperti per fornire supporto avanzato, se necessario.
+  Prima della migrazione dei sistemi di produzione vengono eseguiti test approfonditi. Tuttavia, in caso di problemi, [l&#39;Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) rimarrà il punto di contatto principale. Adobe ha istituito un team di esperti per fornire supporto avanzato, se necessario.
 
 ## Impatto sul recapito messaggi
 
@@ -118,7 +126,7 @@ Gli impatti globali su IP, elenchi Bloccati, sottodomini e URL sono elencati di 
 
   Prima di tutto, il recapito messaggi di Adobe valuterà lo stato di recapito messaggi della piattaforma e raccomanderà un piano per passare ai nuovi IP
 
-  Non è necessario alcun riscaldamento dopo la migrazione. Potrebbe trattarsi di un&#39;eccezione e, in questo caso, [l&#39;Assistenza clienti Adobe](https://experienceleague.adobe.com/it?support-solution=Campaign#support) contatterà i clienti.
+  Non è necessario alcun riscaldamento dopo la migrazione. Potrebbe trattarsi di un&#39;eccezione e, in questo caso, [l&#39;Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-solution=Campaign#support) contatterà i clienti.
 
   Tuttavia, il piano è quello di rendere trasparente questa operazione per l&#39;azienda, a differenza dell&#39;incremento iniziale che viene fatto durante il go-live.
 
@@ -194,7 +202,7 @@ Di seguito sono elencati gli impatti globali su configurazione, connettività co
 
   Può variare in base alla nuova posizione dei server. Tuttavia, il cliente sarà in grado di mantenere il proprio fuso orario corrente.
 
-  Per ulteriori informazioni sulla gestione del fuso orario, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html?lang=it){target="_blank"}.
+  Per ulteriori informazioni sulla gestione del fuso orario, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html){target="_blank"}.
 
 
 ## Sicurezza e autorizzazioni

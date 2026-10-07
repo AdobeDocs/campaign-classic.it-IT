@@ -8,9 +8,20 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
-feature_v2: []
-subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
+feature_v2:
+  - id: 7f0a1ee5-eeb8-5478-a9cd-b1896f033118
+    internal-label: Instance Settings
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '1072'
 ht-degree: 2%
@@ -27,7 +38,7 @@ L’installazione di un server di mid-sourcing segue lo stesso processo che si s
 
 >[!CAUTION]
 >
->Dopo aver configurato il server di mid-sourcing e aver eseguito per la prima volta i [flussi di lavoro di sincronizzazione](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=it){target="_blank"}, assicurati di non aggiornare il nome interno degli account esterni di mid-sourcing.
+>Dopo aver configurato il server di mid-sourcing e aver eseguito per la prima volta i [flussi di lavoro di sincronizzazione](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}, assicurati di non aggiornare il nome interno degli account esterni di mid-sourcing.
 
 ## Passaggi per installare e configurare un’istanza {#steps-for-installing-and-configuring-an-instance}
 
@@ -125,7 +136,7 @@ Dalla console del client, individua l&#39;indirizzamento di **e-mail utilizzando
 
    ![](assets/mid_recette_user_restrictions.png)
 
-1. Riavviare il modulo Web utilizzando il comando seguente: **&#x200B; web**.
+1. Riavviare il modulo Web utilizzando il comando seguente: ** web**.
 
 È necessario modificare l&#39;impostazione del server di mid-sourcing nel file serverConf.xml. La riga seguente deve essere aggiunta alla sezione &quot;Gestione delle affinità con gli indirizzi IP&quot;, nella riga esistente:
 
@@ -139,9 +150,9 @@ L’attributo &quot;@name&quot; deve rispettare le regole seguenti:
 
 &quot;marketing_account_operator_name&quot; si riferisce al nome interno dell’account di mid-sourcing dichiarato nell’istanza di mid-sourcing.
 
-&#39;affinity_name&#39; fa riferimento al nome arbitrario assegnato all&#39;affinità. Questo nome deve essere univoco. I caratteri autorizzati sono `[a-z]`&#x200B;`[A-Z]`&#x200B;`[0-9]`. L&#39;obiettivo è dichiarare un gruppo di indirizzi IP pubblici.
+&#39;affinity_name&#39; fa riferimento al nome arbitrario assegnato all&#39;affinità. Questo nome deve essere univoco. I caratteri autorizzati sono `[a-z]``[A-Z]``[0-9]`. L&#39;obiettivo è dichiarare un gruppo di indirizzi IP pubblici.
 
-&#39;affinity_group&#39; mette in relazione la sub-affinità dichiarata nella mappatura di destinazione utilizzata in ciascuna consegna. L’ultima parte, incluso &quot;.&quot;, viene ignorata se non è presente alcuna sub-affinità. I caratteri autorizzati sono `[a-z]`&#x200B;`[A-Z]`&#x200B;`[0-9]`.
+&#39;affinity_group&#39; mette in relazione la sub-affinità dichiarata nella mappatura di destinazione utilizzata in ciascuna consegna. L’ultima parte, incluso &quot;.&quot;, viene ignorata se non è presente alcuna sub-affinità. I caratteri autorizzati sono `[a-z]``[A-Z]``[0-9]`.
 
 È necessario arrestare e quindi riavviare il server affinché la modifica possa essere presa in considerazione.
 

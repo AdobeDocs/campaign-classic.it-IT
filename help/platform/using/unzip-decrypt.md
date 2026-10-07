@@ -8,13 +8,19 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-TQID: https://experienceleague.adobe.com/bKs1NqCHtMzrqdNZFCYQuj659V6GOHfD-LKClp3aacE
+TQID: 'https://experienceleague.adobe.com/bKs1NqCHtMzrqdNZFCYQuj659V6GOHfD-LKClp3aacE'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
     internal-label: Profiles and audiences
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+  - id: a7760dfc-5c44-4d77-bb68-c50b1e265c93
+    internal-label: Security and privacy
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
     internal-label: Profiles
@@ -24,14 +30,18 @@ subfeature_v2:
     internal-label: Query Editor
   - id: efa38731-2723-4334-8d8b-a778af834835
     internal-label: Access management
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+  - id: d0dbac2b-cbd2-42b3-956e-60af02966728
+    internal-label: Encryption
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 14%
 ---
 # Decomprimere o decrittografare un file {#unzipping-or-decrypting-a-file-before-processing}
 
-Adobe Campaign consente di importare file compressi o crittografati. Prima di poter essere letti in un&#39;attività [Caricamento dati (file)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=it){target="_blank"}), puoi definire una pre-elaborazione per decomprimere o decrittografare il file.
+Adobe Campaign consente di importare file compressi o crittografati. Prima di poter essere letti in un&#39;attività [Caricamento dati (file)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}), puoi definire una pre-elaborazione per decomprimere o decrittografare il file.
 
 >[!IMPORTANT]
 >
@@ -39,7 +49,7 @@ Adobe Campaign consente di importare file compressi o crittografati. Prima di po
 
 Per poterlo fare:
 
-1. Utilizza il [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=it#decrypting-data) per generare una coppia di chiavi pubblica/privata per consentire la decrittografia del file.
+1. Utilizza il [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) per generare una coppia di chiavi pubblica/privata per consentire la decrittografia del file.
 
    >[!NOTE]
    >
@@ -64,8 +74,8 @@ Un esempio è presentato nel caso d’uso seguente.
 
 **Argomenti correlati:**
 
-* [Attività caricamento dati (file)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=it){target="_blank"}.
-* [Comprimere o crittografare un file](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=it){target="_blank"}.
+* [Attività caricamento dati (file)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}.
+* [Comprimere o crittografare un file](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}.
 
 ## Caso d’uso: importare dati crittografati utilizzando una chiave generata dal Pannello di controllo Campaign {#use-case-gpg-decrypt}
 
@@ -75,7 +85,7 @@ In questo caso d’uso, creeremo un flusso di lavoro per importare dati che sono
 
 I passaggi per eseguire questo caso d’uso sono i seguenti:
 
-1. Utilizza il Pannello di controllo Campaign per generare una coppia di chiavi (pubblica/privata). I passaggi dettagliati sono disponibili nella [documentazione del Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=it#decrypting-data).
+1. Utilizza il Pannello di controllo Campaign per generare una coppia di chiavi (pubblica/privata). I passaggi dettagliati sono disponibili nella [documentazione del Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
 
    * La chiave pubblica verrà condivisa con il sistema esterno, che la utilizzerà per crittografare i dati da inviare a Campaign.
    * La chiave privata verrà utilizzata da Campaign Classic per decrittografare i dati crittografati in arrivo.
@@ -95,10 +105,10 @@ I passaggi per eseguire questo caso d’uso sono i seguenti:
 
    ![](assets/gpg_key_transfer.png)
 
-   I concetti globali su come configurare l&#39;attività sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=it){target="_blank"}.
+   I concetti globali su come configurare l&#39;attività sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
 
-1. Apri l&#39;attività **[!UICONTROL Data loading (file)]**, quindi configurala in base alle tue esigenze. I concetti globali su come configurare l&#39;attività sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=it){target="_blank"}.
+1. Apri l&#39;attività **[!UICONTROL Data loading (file)]**, quindi configurala in base alle tue esigenze. I concetti globali su come configurare l&#39;attività sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}.
 
    Aggiungi una fase di pre-elaborazione all’attività per decrittografare i dati in arrivo. A tale scopo, selezionare l&#39;opzione **[!UICONTROL Pre-process the file]**, quindi selezionare **[!UICONTROL Decrypt]** dall&#39;elenco a discesa **[!UICONTROL Command]**:
 
@@ -120,6 +130,6 @@ I passaggi per eseguire questo caso d’uso sono i seguenti:
 
 Questo video mostra come utilizzare una chiave GPG per decrittografare i dati.
 
->[!VIDEO](https://video.tv.adobe.com/v/41166?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/36482?quality=12)
 
 Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

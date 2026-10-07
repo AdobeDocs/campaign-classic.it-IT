@@ -5,7 +5,20 @@ description: Aggiornamenti alla configurazione di Adobe Campaign
 feature: Technote, Upgrade
 hide: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
+feature_v2:
+  - id: ab81f6c3-9317-564f-af92-6670a8784294
+    internal-label: Technote
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: eff19c99-440a-4318-b319-444edc4d8d8f
+    internal-label: Upgrade
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '1178'
 ht-degree: 12%
@@ -70,7 +83,7 @@ Per risolvere una regressione identificata di recente, è necessario installare 
 
 ## Aggiornamento del sistema Adobe Identity Management (IMS)
 
-Il servizio Adobe Identity (IMS) non supporterà più le versioni precedenti di Internet Explorer a partire dal **30 giugno 2021**. [Ulteriori informazioni](https://helpx.adobe.com/it/x-productkb/global/update-operating-system-and-browser.html).
+Il servizio Adobe Identity (IMS) non supporterà più le versioni precedenti di Internet Explorer a partire dal **30 giugno 2021**. [Ulteriori informazioni](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html).
 
 Per garantire la compatibilità con Adobe IMS è necessario aggiornare la console client di Campaign.
 
@@ -103,7 +116,7 @@ Una volta aggiornate tutte le istanze, anche la console client deve essere aggio
 
 ## Integrazione con Experience Cloud Triggers {#acc-triggers-updates}
 
-Il servizio di autenticazione OAuth legacy ha raggiunto la fine del ciclo di vita. L’autenticazione dell’integrazione dei trigger, originariamente basata sulla configurazione di autenticazione OAuth per accedere alla pipeline, è stata spostata in Adobe I/O. La modalità di autenticazione OAuth legacy con la campagna [&#x200B; è stata ritirata](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411?profile.language=it) il **settembre 2021**. Gli ambienti in hosting usufruiscono di una proroga fino al **23 febbraio 2022**. Se sei un cliente on-premise o ibrido, contatta l’Assistenza clienti Adobe per estendere il supporto fino a febbraio 2022. Devi fornire ad Adobe [l’AppID dell’applicazione OAuth](../../integrations/using/configuring-pipeline.md#step-optional).
+Il servizio di autenticazione OAuth legacy ha raggiunto la fine del ciclo di vita. L’autenticazione dell’integrazione dei trigger, originariamente basata sulla configurazione di autenticazione OAuth per accedere alla pipeline, è stata spostata in Adobe I/O. La modalità di autenticazione OAuth legacy con la campagna [ è stata ritirata](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) il **settembre 2021**. Gli ambienti in hosting usufruiscono di una proroga fino al **23 febbraio 2022**. Se sei un cliente on-premise o ibrido, contatta l’Assistenza clienti Adobe per estendere il supporto fino a febbraio 2022. Devi fornire ad Adobe [l’AppID dell’applicazione OAuth](../../integrations/using/configuring-pipeline.md#step-optional).
 
 **Sei interessato da questo problema?**
 

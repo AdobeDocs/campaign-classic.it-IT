@@ -8,10 +8,20 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: fe69efda-a052-4f67-9c13-665f011d0a2b
-TQID: https://experienceleague.adobe.com/THf7A2u5ktNphqdI8K8ePzLNqCdyCmcqWN0OpYJfVh0
+TQID: 'https://experienceleague.adobe.com/THf7A2u5ktNphqdI8K8ePzLNqCdyCmcqWN0OpYJfVh0'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
+feature_v2:
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: c03a11ff-bdf9-4e5b-b279-f468b4293464
+    internal-label: Performance Monitoring
+  - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
@@ -21,13 +31,7 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-feature_v2: []
-subfeature_v2:
-  - id: c03a11ff-bdf9-4e5b-b279-f468b4293464
-    internal-label: Performance Monitoring
-  - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
-    internal-label: Monitoring guidelines
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '793'
 ht-degree: 9%
@@ -74,7 +78,7 @@ Di seguito è riportato un elenco di articoli relativi alle best practice per la
   >
   >Il team di recapito messaggi si basa sul contratto e i clienti devono contattare il proprio rappresentante Adobe per informazioni relative al recapito messaggi.
 
-* DKIM: per garantire il livello di sicurezza del DKIM, 1024b è la dimensione di crittografia consigliata come best practice. Le chiavi DKIM inferiori non saranno considerate valide dalla maggior parte dei provider di accesso. Consulta [questa pagina](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=it#authentication).
+* DKIM: per garantire il livello di sicurezza del DKIM, 1024b è la dimensione di crittografia consigliata come best practice. Le chiavi DKIM inferiori non saranno considerate valide dalla maggior parte dei provider di accesso. Consulta [questa pagina](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ## Problemi di recapito messaggi {#deliverability-issues}
 
@@ -88,7 +92,7 @@ Di seguito è riportato un elenco di best practice e articoli relativi al recapi
   >Il team di recapito messaggi si basa sul contratto e i clienti devono contattare il proprio rappresentante Adobe per informazioni relative al recapito messaggi.
 
 * Impostazione affinità IP: una configurazione di affinità IP errata può interrompere completamente le e-mail (nome di operatore/affinità non corretto nella configurazione) o ridurre la velocità effettiva (numero ridotto di IP nell’affinità). Consulta [questa pagina](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
-* Dimensione dell’e-mail: la dimensione dell’e-mail svolge un ruolo importante nella velocità effettiva. La dimensione massima consigliata per l’e-mail è 60 KB. Consulta [questa pagina](https://helpx.adobe.com/it/legal/product-descriptions/campaign.html). Nel report [Velocità effettiva di consegna](../../reporting/using/global-reports.md#delivery-throughput), controllare il numero di byte trasferiti per ora.
+* Dimensione dell’e-mail: la dimensione dell’e-mail svolge un ruolo importante nella velocità effettiva. La dimensione massima consigliata per l’e-mail è 60 KB. Consulta [questa pagina](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Nel report [Velocità effettiva di consegna](../../reporting/using/global-reports.md#delivery-throughput), controllare il numero di byte trasferiti per ora.
 * Numero elevato di destinatari non validi: quando il numero di destinatari non validi è elevato, può influire sulla velocità effettiva. L’MTA continua a tentare di inviare e-mail a destinatari non validi. Assicurarsi che il database sia in buono stato di manutenzione.
 * Quantità di personalizzazione: se una consegna rimane in &quot;Personalization in progress&quot;, controlla il JavaScript utilizzato nei blocchi di personalizzazione.
 

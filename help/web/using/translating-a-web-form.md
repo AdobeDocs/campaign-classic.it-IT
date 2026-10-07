@@ -5,18 +5,17 @@ description: Pubblicare un modulo web
 badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
-TQID: https://experienceleague.adobe.com/3oyhvCWX30kK7dtytjLYvO5Xnbu2-I7FGeJPcjcreho
+TQID: 'https://experienceleague.adobe.com/3oyhvCWX30kK7dtytjLYvO5Xnbu2-I7FGeJPcjcreho'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
     internal-label: Administration
   - id: a4671286-a59f-47e3-b97b-90627a1977d5
     internal-label: Communication channels
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-    internal-label: Administration
 subfeature_v2:
   - id: f391046b-0cf3-4e76-bd3b-97fe06654506
     internal-label: Web Apps
@@ -24,7 +23,10 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '1583'
 ht-degree: 0%
@@ -87,7 +89,7 @@ Per le stringhe di caratteri che non sono mai state tradotte, il campo **[!UICON
 
 ### Filtrare le stringhe {#filtering-strings}
 
-Per impostazione predefinita, viene visualizzata ogni lingua di traduzione dell’applicazione web. Sono disponibili due filtri predefiniti: lingua e stato. Fare clic sul pulsante **[!UICONTROL Filters]**, quindi su **[!UICONTROL By language or status]** per visualizzare le caselle di riepilogo corrispondenti. Puoi anche creare un filtro avanzato. Per ulteriori informazioni sui filtri, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Per impostazione predefinita, viene visualizzata ogni lingua di traduzione dell’applicazione web. Sono disponibili due filtri predefiniti: lingua e stato. Fare clic sul pulsante **[!UICONTROL Filters]**, quindi su **[!UICONTROL By language or status]** per visualizzare le caselle di riepilogo corrispondenti. Puoi anche creare un filtro avanzato. Per ulteriori informazioni sui filtri, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 ![](assets/s_ncs_admin_survey_trad_tab_en.png)
 
@@ -186,7 +188,7 @@ se il linguaggio è il primo o l’unico parametro dell’URL. Esempio: **https:
 &lang=xx
 ```
 
-se nell’URL sono presenti altri parametri prima del linguaggio. Esempio: **https://myserver/webApp/APP34?status=1&lang=en**
+se nell’URL sono presenti altri parametri prima del linguaggio. Esempio: **https://myserver/webApp/APP34?status=1&amp;lang=en**
 
 Di seguito sono elencate le lingue e i dizionari di traduzione disponibili per impostazione predefinita.
 
@@ -447,7 +449,7 @@ Aggiungere **?lang=fr** alla fine dell&#39;URL per visualizzarlo in francese:
 >[!NOTE]
 >
 >Se altri parametri sono già utilizzati per questa applicazione Web, aggiungere **&amp;lang=**.\
->Esempio: **https://myserver/webApp/APP34?status=1&lang=en**
+>Esempio: **https://myserver/webApp/APP34?status=1&amp;lang=en**
 
 ## Configurazione traduzione avanzata {#advanced-translation-configuration}
 

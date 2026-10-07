@@ -5,10 +5,12 @@ description: Scopri l’ambito e le specificità dell’invio di e-mail con MTA 
 feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-TQID: https://experienceleague.adobe.com/d6tF02X7K9j9mDk90wyH-3iXm8iBZzMo1da2PPkYHGs
+TQID: 'https://experienceleague.adobe.com/d6tF02X7K9j9mDk90wyH-3iXm8iBZzMo1da2PPkYHGs'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
     internal-label: Campaigns
@@ -16,6 +18,17 @@ feature_v2:
     internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
     internal-label: Prepare and test messages
+  - id: 50d1fd2e-0fc9-5627-bbc9-02dbc9d15e08
+    internal-label: Email
+subfeature_v2:
+  - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
+  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
+  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
+  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -30,16 +43,7 @@ topic_v2:
     internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-subfeature_v2:
-  - id: e95a583b-fcfa-4524-8666-46a29c828119
-    internal-label: Email messaging
-  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
-    internal-label: Email design
-  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
-    internal-label: A/B testing
-  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
-    internal-label: Manage deliverability
-source-git-commit: c8d13469884744554fd504fed8842dd0c9ab5feb
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 1%
@@ -169,13 +173,13 @@ Per ulteriori informazioni sul periodo di validità, consulta questa [pagina](co
 ### Firma DKIM
 
 La firma di autenticazione dell’e-mail DKIM (DomainKeys Identified Mail) viene eseguita dall’MTA avanzato. La firma DKIM da parte dell’MTA nativo di Campaign verrà disattivata all’interno della tabella di gestione dei domini come parte dell’aggiornamento dell’MTA avanzato.
-Per ulteriori informazioni su DKIM, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=it#authentication).
+Per ulteriori informazioni su DKIM, consulta la [Guida alle best practice per il recapito messaggi di Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ### Reporting sul successo della consegna
 
-Nella visualizzazione **[!UICONTROL Summary]** di una consegna e-mail [dashboard](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}, la percentuale di **[!UICONTROL Success]** inizia al 100% e poi si abbassa progressivamente durante il [periodo di validità](communication-channels.md) della consegna, man mano che i mancati recapiti permanenti e permanenti vengono segnalati dall’MTA avanzato a Campaign.
+Nella visualizzazione **[!UICONTROL Summary]** di una consegna e-mail [dashboard](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}, la percentuale di **[!UICONTROL Success]** inizia al 100% e poi si abbassa progressivamente durante il [periodo di validità](communication-channels.md) della consegna, man mano che i mancati recapiti permanenti e permanenti vengono segnalati dall’MTA avanzato a Campaign.
 
-In effetti, tutti i messaggi vengono visualizzati come **[!UICONTROL Sent]** nei [registri di invio](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} non appena vengono inoltrati correttamente da Campaign all’MTA avanzato. Rimangono in tale stato a meno che o fino a quando un [mancato recapito](delivery-failures-quarantine.md#delivery-failure-types-and-reasons) per quel messaggio non viene comunicato dall&#39;MTA avanzato a Campaign.
+In effetti, tutti i messaggi vengono visualizzati come **[!UICONTROL Sent]** nei [registri di invio](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} non appena vengono inoltrati correttamente da Campaign all’MTA avanzato. Rimangono in tale stato a meno che o fino a quando un [mancato recapito](delivery-failures-quarantine.md#delivery-failure-types-and-reasons) per quel messaggio non viene comunicato dall&#39;MTA avanzato a Campaign.
 
 Quando i messaggi non recapitabili vengono segnalati dall&#39;MTA avanzato, il loro stato cambia da **[!UICONTROL Sent]** a **[!UICONTROL Failed]** e la percentuale di **[!UICONTROL Success]** viene diminuita di conseguenza.
 

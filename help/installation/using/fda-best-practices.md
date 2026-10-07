@@ -7,16 +7,26 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-TQID: https://experienceleague.adobe.com/o9F-VJpel6oYo-4N8nd25xW69ZAN-RpH9TaZ2jJeq-k
+TQID: 'https://experienceleague.adobe.com/o9F-VJpel6oYo-4N8nd25xW69ZAN-RpH9TaZ2jJeq-k'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
+feature_v2:
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
+  - id: ee3dfd63-9a21-4961-9f24-ea3385284a21
+    internal-label: Federated Data Access
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-feature_v2: []
-subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 1%
@@ -37,13 +47,13 @@ Questa opzione migliora notevolmente le prestazioni durante l’esecuzione del p
 
 In più attività del flusso di lavoro di Adobe Campaign, puoi utilizzare i dati memorizzati in un database esterno.
 
-* **Filtro su dati esterni** - L&#39;attività Query ti consente di aggiungere dati esterni e di utilizzarli nelle configurazioni di filtro definite. Per ulteriori informazioni, consulta la [documentazione di Campaign v8]https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html?lang=it){target="_blank"}.
+* **Filtro su dati esterni** - L&#39;attività Query ti consente di aggiungere dati esterni e di utilizzarli nelle configurazioni di filtro definite. Per ulteriori informazioni, consulta la [documentazione di Campaign v8]https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html){target="_blank"}.
 
-* **Crea sottoinsiemi** - L&#39;attività di suddivisione consente di creare sottoinsiemi. Puoi utilizzare dati esterni per definire i criteri di filtro da utilizzare. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=it){target="_blank"}.
+* **Crea sottoinsiemi** - L&#39;attività di suddivisione consente di creare sottoinsiemi. Puoi utilizzare dati esterni per definire i criteri di filtro da utilizzare. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}.
 
-* **Carica database esterno** - Puoi utilizzare i dati esterni nell&#39;attività di caricamento dati (RDBMS). Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-rdbms.html?lang=it){target="_blank"}.
+* **Carica database esterno** - Puoi utilizzare i dati esterni nell&#39;attività di caricamento dati (RDBMS). Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-rdbms.html){target="_blank"}.
 
-* **Aggiunta di informazioni e collegamenti** - L&#39;attività Enrichment consente di aggiungere dati aggiuntivi alla tabella di lavoro del flusso di lavoro e collegamenti a una tabella esterna. In questo contesto, può utilizzare dati provenienti da un database esterno. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=it){target="_blank"}.
+* **Aggiunta di informazioni e collegamenti** - L&#39;attività Enrichment consente di aggiungere dati aggiuntivi alla tabella di lavoro del flusso di lavoro e collegamenti a una tabella esterna. In questo contesto, può utilizzare dati provenienti da un database esterno. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}.
 
 ## Guardrail e limitazioni {#fda-limitations}
 

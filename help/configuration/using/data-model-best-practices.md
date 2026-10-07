@@ -4,10 +4,12 @@ title: Best practice per i modelli di dati
 description: Scopri come utilizzare il modello dati di Campaign Classic
 feature: Data Model
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-TQID: https://experienceleague.adobe.com/O5LgBFV-0Mw3nzVyD2mxCCPxjZ07Ss9sS4K5MrdYdns
+TQID: 'https://experienceleague.adobe.com/O5LgBFV-0Mw3nzVyD2mxCCPxjZ07Ss9sS4K5MrdYdns'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: a658c786-869b-4194-a780-2594d663adda
     internal-label: Data management
@@ -43,7 +45,7 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '4078'
 ht-degree: 1%
@@ -183,7 +185,7 @@ Quando si crea una tabella personalizzata in Adobe Campaign con una chiave prima
 
 Per impostazione predefinita, una sequenza personalizzata avrà valori compresi tra +1.000 e +2,1BB. Tecnicamente, è possibile ottenere una gamma completa di 4BB abilitando gli ID negativi. Questo deve essere utilizzato con cautela e un ID andrà perso quando si passa da numeri negativi a numeri positivi: il record 0 viene in genere ignorato da Adobe Campaign nelle query SQL generate.
 
-Per ulteriori informazioni sull&#39;esaurimento delle sequenze, guarda [questo video](https://helpx.adobe.com/it/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
+Per ulteriori informazioni sull&#39;esaurimento delle sequenze, guarda [questo video](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
 
 ## Indici {#indexes}
 
@@ -285,7 +287,7 @@ Per impostazione predefinita, i registri di consegna e tracciamento di Adobe Cam
 
 Ulteriori informazioni sulla conservazione dei dati in [Linee guida per la privacy e la sicurezza di Campaign](../../platform/using/privacy-and-recommendations.md).
 
-Ulteriori informazioni sul flusso di lavoro di pulizia del database di Campaign [&#x200B; in questa sezione](../../production/using/database-cleanup-workflow.md).
+Ulteriori informazioni sul flusso di lavoro di pulizia del database di Campaign [ in questa sezione](../../production/using/database-cleanup-workflow.md).
 
 >[!IMPORTANT]
 >

@@ -5,20 +5,19 @@ description: Rapporti sulle consegne
 badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
-TQID: https://experienceleague.adobe.com/LlIKnQMU8ktKheR-9hRizDIdAybiDJP-F2V0Y1GrEAs
+TQID: 'https://experienceleague.adobe.com/LlIKnQMU8ktKheR-9hRizDIdAybiDJP-F2V0Y1GrEAs'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
     internal-label: Campaigns
   - id: c309ee4e-82e4-4f7e-b608-ef345678c34e
-    internal-label: Dynamic Reporting
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-    internal-label: Reporting
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-    internal-label: Personalization
+    internal-label: Dynamic reporting
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47
     internal-label: Reporting interface
@@ -26,7 +25,14 @@ subfeature_v2:
     internal-label: Customize reports
   - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
     internal-label: Cubes and multidimensional analysis
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+  - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 11%
@@ -105,7 +111,7 @@ Questa tabella di valori mostra il raggruppamento di consegne, aperture, clic e 
 
 >[!NOTE]
 >
->I nomi di dominio visualizzati in questo report sono definiti nell&#39;elenco dettagliato utilizzato a livello di cubo. Per modificare, aggiungere o rimuovere i domini predefiniti, modificare l&#39;elenco dettagliato **[!UICONTROL Domains]** e modificare i valori e gli alias. Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}. La categoria **[!UICONTROL Others]** include nomi di dominio che non appartengono ad alcun valore dell&#39;elenco dettagliato.
+>I nomi di dominio visualizzati in questo report sono definiti nell&#39;elenco dettagliato utilizzato a livello di cubo. Per modificare, aggiungere o rimuovere i domini predefiniti, modificare l&#39;elenco dettagliato **[!UICONTROL Domains]** e modificare i valori e gli alias. Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}. La categoria **[!UICONTROL Others]** include nomi di dominio che non appartengono ad alcun valore dell&#39;elenco dettagliato.
 
 **[!UICONTROL 4. Generated click streams]**
 
@@ -177,7 +183,7 @@ Questo rapporto fornisce tutte le informazioni principali sulla consegna.
 Questa sezione presenta due indicatori:
 
 * **[!UICONTROL Initial population]**: numero totale di destinatari interessati dalla consegna.
-* **[!UICONTROL Messages rejected by the rule]** : numero di indirizzi ignorati durante l&#39;analisi durante l&#39;applicazione delle regole di tipologia: indirizzo mancante, messo in quarantena, in fase di, ecc. Per ulteriori informazioni sulle regole di tipologia, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=it){target="_blank"}.
+* **[!UICONTROL Messages rejected by the rule]** : numero di indirizzi ignorati durante l&#39;analisi durante l&#39;applicazione delle regole di tipologia: indirizzo mancante, messo in quarantena, in fase di, ecc. Per ulteriori informazioni sulle regole di tipologia, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
 
 **[!UICONTROL Causes of exclusion]**
 

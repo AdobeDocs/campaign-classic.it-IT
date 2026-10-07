@@ -4,13 +4,19 @@ title: Personalizzazione e privacy
 description: Scopri le best practice sulla sicurezza per la privacy e la personalizzazione
 feature: Installation, Privacy, Privacy Tools, URL Personalization
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-TQID: https://experienceleague.adobe.com/8u-ItsbouC0wIsamVYfyzQR1o-z-jY90Z3pKem-yarc
+TQID: 'https://experienceleague.adobe.com/8u-ItsbouC0wIsamVYfyzQR1o-z-jY90Z3pKem-yarc'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: a7760dfc-5c44-4d77-bb68-c50b1e265c93
     internal-label: Security and privacy
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: ac72e249-ebbf-4bb6-96c9-596af925419a
     internal-label: Privacy tools
@@ -18,6 +24,10 @@ subfeature_v2:
     internal-label: Privacy
   - id: fb2a841f-c522-491f-9901-a1b939d252df
     internal-label: Security
+  - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
+  - id: f55cfb22-471c-4161-8ea1-12868351e460
+    internal-label: URL personalization
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
@@ -31,7 +41,7 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 4%
@@ -50,11 +60,11 @@ Quando aggiungi collegamenti personalizzati al contenuto, evita sempre di includ
 
 ### Consiglio
 
-Per convalidare e assicurarsi di non utilizzare quanto sopra, esegui una query sulla tabella degli URL di tracciamento tramite [Editor query generico di Campaign](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign) oppure crea un flusso di lavoro con criteri di filtro nell&#39;attività di query. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=it){target="_blank"}.
+Per convalidare e assicurarsi di non utilizzare quanto sopra, esegui una query sulla tabella degli URL di tracciamento tramite [Editor query generico di Campaign](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign) oppure crea un flusso di lavoro con criteri di filtro nell&#39;attività di query. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
 
 Esempio:
 
-1. Crea un flusso di lavoro e aggiungi un&#39;attività **Query**. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=it){target="_blank"}.
+1. Crea un flusso di lavoro e aggiungi un&#39;attività **Query**. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
 
 1. Aprire l&#39;attività **Query** e creare un filtro per la tabella `nmsTrackingUrl` nel modo seguente:
 
