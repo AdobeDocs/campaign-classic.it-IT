@@ -201,7 +201,7 @@ La tabella seguente presenta i caratteri presi in considerazione dallo standard 
   <tr> 
    <td> è </td> 
    <td> <img height="21px" src="assets/delta.png" /> </td> 
-   <td> &rbrace;Permesso </td> 
+   <td> }Permesso </td> 
    <td> 4 </td> 
    <td> D </td> 
    <td> M </td> 
@@ -394,7 +394,7 @@ I passaggi per configurare un account esterno utilizzando il connettore SMPP gen
 
 ## Modificare il modello di consegna {#changing-the-delivery-template}
 
-Adobe Campaign fornisce un modello per la consegna a dispositivi mobili. Questo modello è disponibile nel nodo **[!UICONTROL Resources > Templates > Delivery templates]**. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=it){target="_blank"}.
+Adobe Campaign fornisce un modello per la consegna a dispositivi mobili. Questo modello è disponibile nel nodo **[!UICONTROL Resources > Templates > Delivery templates]**. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
 
 Per distribuire tramite un canale SMS, devi creare un modello in cui si fa riferimento al connettore del canale.
 

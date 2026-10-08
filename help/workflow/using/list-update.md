@@ -90,6 +90,6 @@ Identifica la popolazione da salvare nel gruppo.
 
 Questo video mostra come creare un elenco di destinatari da Explorer.
 
->[!VIDEO](https://video.tv.adobe.com/v/329669?captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
 Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).

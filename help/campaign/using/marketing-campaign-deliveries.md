@@ -45,7 +45,7 @@ Le consegne possono essere create tramite il dashboard della campagna, un flusso
 
 Quando vengono create da una campagna, le consegne verranno collegate a questa campagna e consolidate a livello di campagna.
 
-![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#create-email-video)
+![](assets/do-not-localize/how-to-video.png)[Scopri questa funzione nel video](#create-email-video)
 
 ## Creare consegne {#creating-deliveries}
 
@@ -263,7 +263,7 @@ Il modello di esportazione deve essere associato al fornitore di servizi selezio
 
 Questo video spiega come creare una campagna e un messaggio e-mail in Adobe Campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/329889?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 Ulteriori video dimostrativi di Campaign sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
 

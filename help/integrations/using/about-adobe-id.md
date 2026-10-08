@@ -75,6 +75,6 @@ Gli utenti di Campaign possono connettersi alla console di Adobe Campaign utiliz
 
 | Pagine utili | Risorse aggiuntive |
 |---|---|
-| [Configurazione di IMS](../../integrations/using/configuring-ims.md) | [Domande frequenti su Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html?lang=it) |
+| [Configurazione di IMS](../../integrations/using/configuring-ims.md) | [Domande frequenti su Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html) |
 | [Implementazione di IMS](../../integrations/using/implementing-ims.md) | [Gestione degli accessi](../../platform/using/access-management.md) |
 | [Risoluzione dei problemi IMS](../../integrations/using/ims-troubleshooting.md) | [Installazione dei pacchetti Campaign](../../installation/using/installing-campaign-standard-packages.md) |

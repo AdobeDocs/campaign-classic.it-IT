@@ -431,7 +431,7 @@ Nel nodo **dataStore > dataSource > pool**, configura i parametri del pool di co
   </tr> 
   <tr> 
    <td> maxCnx<br /> </td> 
-   <td> Numero massimo di connessioni consentite prima di rifiutare una nuova connessione. Vedi questa <a href="https://helpx.adobe.com/it/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">nota tecnica</a>.<br /> </td> 
+   <td> Numero massimo di connessioni consentite prima di rifiutare una nuova connessione. Vedi questa <a href="https://helpx.adobe.com/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">nota tecnica</a>.<br /> </td> 
    <td> Breve<br /> </td> 
   </tr> 
   <tr> 
@@ -1646,9 +1646,9 @@ Parametri diversi del nodo **mta**. Si tratta della configurazione degli agenti 
    <td> statServerAddress<br /> </td> 
    <td> Indirizzo del server delle statistiche di consegna, indicato come 
     &lt;dns o ip&gt; 
-      <code>&lbrack;</code>: 
+      <code>[</code>: 
      &lt;porta&gt; 
-       <code>&rbrack;</code>. Consulta 
+       <code>]</code>. Consulta 
       <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Coordinate del server delle statistiche</a>. 
       <br /> 
      </td> 

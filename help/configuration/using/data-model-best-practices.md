@@ -185,7 +185,7 @@ Quando si crea una tabella personalizzata in Adobe Campaign con una chiave prima
 
 Per impostazione predefinita, una sequenza personalizzata avrà valori compresi tra +1.000 e +2,1BB. Tecnicamente, è possibile ottenere una gamma completa di 4BB abilitando gli ID negativi. Questo deve essere utilizzato con cautela e un ID andrà perso quando si passa da numeri negativi a numeri positivi: il record 0 viene in genere ignorato da Adobe Campaign nelle query SQL generate.
 
-Per ulteriori informazioni sull&#39;esaurimento delle sequenze, guarda [questo video](https://helpx.adobe.com/it/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
+Per ulteriori informazioni sull&#39;esaurimento delle sequenze, guarda [questo video](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
 
 ## Indici {#indexes}
 
@@ -287,7 +287,7 @@ Per impostazione predefinita, i registri di consegna e tracciamento di Adobe Cam
 
 Ulteriori informazioni sulla conservazione dei dati in [Linee guida per la privacy e la sicurezza di Campaign](../../platform/using/privacy-and-recommendations.md).
 
-Ulteriori informazioni sul flusso di lavoro di pulizia del database di Campaign [&#x200B; in questa sezione](../../production/using/database-cleanup-workflow.md).
+Ulteriori informazioni sul flusso di lavoro di pulizia del database di Campaign [ in questa sezione](../../production/using/database-cleanup-workflow.md).
 
 >[!IMPORTANT]
 >
