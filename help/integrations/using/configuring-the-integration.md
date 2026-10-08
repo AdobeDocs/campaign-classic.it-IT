@@ -144,7 +144,7 @@ Per avviare la configurazione in Adobe Experience Manager, effettua le seguenti 
 
 1. Configura la **replica** per eseguire la replica dall&#39;istanza di authoring AEM all&#39;istanza di pubblicazione AEM.
 
-   Per informazioni su come configurare la replica, consulta la [documentazione](https://helpx.adobe.com/it/experience-manager/6-5/sites/deploying/using/replication.html) di Adobe Experience Manager.
+   Per informazioni su come configurare la replica, consulta la [documentazione](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/replication.html) di Adobe Experience Manager.
 
 1. Connetti Adobe Experience Manager ad Adobe Campaign configurando un **Cloud Service** dedicato.
 
