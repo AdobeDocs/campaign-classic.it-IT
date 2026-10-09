@@ -20,6 +20,8 @@ feature_v2:
     internal-label: Deliverability
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
     internal-label: Administration
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
     internal-label: Email messaging
@@ -45,7 +47,7 @@ topic_v2:
     internal-label: Optimization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 2%
@@ -98,8 +100,8 @@ Le attività di manutenzione regolari includono:
 >
 >Una guida completa sulla risoluzione dei problemi di consegna è documentata nella documentazione di Campaign v8, applicabile sia agli utenti di Campaign Classic v7 che di Campaign v8:
 >
->* Soluzioni e errori di consegna comuni: [Informazioni sugli errori di consegna](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}
->* Diagnosi di consegna lenta: [Monitorare le consegne nell&#39;interfaccia utente di Campaign](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}
+>* Soluzioni e errori di consegna comuni: [Informazioni sugli errori di consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}
+>* Diagnosi di consegna lenta: [Monitorare le consegne nell&#39;interfaccia utente di Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}
 >* Best practice di consegna: [Best practice di consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}
 >
 >In questa sezione viene documentata la risoluzione dei problemi specifici di **Campaign Classic v7** per le distribuzioni ibride e on-premise.
@@ -138,13 +140,13 @@ Controllare lo stato del flusso di lavoro in **[!UICONTROL Administration]** > *
 
 >[!NOTE]
 >
->Per gli utenti di Campaign v8 Managed Cloud Services, i flussi di lavoro tecnici e il monitoraggio dell’infrastruttura sono gestiti da Adobe. Concentrati sul contenuto e sul targeting della consegna come descritto nella [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}.
+>Per gli utenti di Campaign v8 Managed Cloud Services, i flussi di lavoro tecnici e il monitoraggio dell’infrastruttura sono gestiti da Adobe. Concentrati sul contenuto e sul targeting della consegna come descritto nella [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}.
 
 ## Argomenti correlati
 
-* [Informazioni sugli errori di consegna](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (documentazione di Campaign v8)
+* [Informazioni sugli errori di consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (documentazione di Campaign v8)
 * [Best practice per la consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} (documentazione di Campaign v8)
-* [Monitorare le consegne nell&#39;interfaccia utente di Campaign](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (documentazione di Campaign v8)
+* [Monitorare le consegne nell&#39;interfaccia utente di Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (documentazione di Campaign v8)
 * [Manutenzione del database](../../production/using/recommendations.md) (v7 ibrido/on-premise)
 * [Recapito e-mail](../../installation/using/email-deliverability.md) (v7 ibrido/on-premise)
 * [Prestazioni del database](../../production/using/database-performances.md) (v7 ibrido/on-premise)

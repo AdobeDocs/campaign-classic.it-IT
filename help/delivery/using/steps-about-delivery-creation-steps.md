@@ -19,6 +19,8 @@ feature_v2:
     internal-label: Prepare and test messages
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
     internal-label: Administration
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
     internal-label: Email messaging
@@ -33,7 +35,7 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 18%
@@ -42,7 +44,7 @@ ht-degree: 18%
 
 I passaggi chiave durante la creazione di una consegna sono i seguenti:
 
-1. **Crea e identifica la consegna**. Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it#create-the-delivery){target="_blank"}.
+1. **Crea e identifica la consegna**. Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}.
 
 1. **Definisci il contenuto della consegna**. La definizione del contenuto della consegna è specifica per ciascun canale. Per ulteriori informazioni, consulta la sezione dedicata:
 
@@ -59,4 +61,4 @@ I passaggi chiave durante la creazione di una consegna sono i seguenti:
 
 >[!NOTE]
 >
->I passaggi descritti in questo capitolo presuppongono che tutti i destinatari e i relativi profili siano memorizzati nel database, ad eccezione del caso di consegna esterna (vedi la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it#selecting-external-recipients){target="_blank"}.
+>I passaggi descritti in questo capitolo presuppongono che tutti i destinatari e i relativi profili siano memorizzati nel database, ad eccezione del caso di consegna esterna (vedi la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"}.

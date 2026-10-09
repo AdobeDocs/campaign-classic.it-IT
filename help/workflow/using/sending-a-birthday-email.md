@@ -14,6 +14,8 @@ product_v2:
 feature_v2:
   - id: a658c786-869b-4194-a780-2594d663adda
     internal-label: Data management
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
     internal-label: HeatMap
@@ -26,7 +28,7 @@ subfeature_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 2%
@@ -45,7 +47,7 @@ Per impostare questo caso d’uso, abbiamo creato il seguente flusso di lavoro d
 
 Questo flusso di lavoro (eseguito quotidianamente) seleziona tutti i destinatari il cui compleanno cade nella data corrente.
 
-![](assets/do-not-localize/how-to-video.png) Questo caso d&#39;uso si trova anche sotto forma di video. Per ulteriori informazioni, consulta il video [Creazione di un flusso di lavoro](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html?lang=it).
+![](assets/do-not-localize/how-to-video.png) Questo caso d&#39;uso si trova anche sotto forma di video. Per ulteriori informazioni, consulta il video [Creazione di un flusso di lavoro](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html).
 
 A tale scopo, creare una campagna e fare clic sulla scheda **[!UICONTROL Targeting and workflows]**. Per ulteriori informazioni, consulta la sezione [Creazione della destinazione principale in un flusso di lavoro](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
