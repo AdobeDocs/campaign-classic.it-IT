@@ -41,9 +41,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '766'
 ht-degree: 9%
 ---
 # Ottimizzare la consegna {#optimize-delivery}
@@ -62,7 +62,7 @@ Diversi fattori possono influire direttamente sulle prestazioni del server e ral
 
   **SUGGERIMENTO** - Per evitare questo problema, coordina la pianificazione delle consegne con gli altri membri del tuo team per garantire le migliori prestazioni.
 
-* Esecuzione del flusso di lavoro: il monitoraggio dei flussi di lavoro è essenziale per evitare problemi di prestazioni della piattaforma. Segui le linee guida elencate [in questo documento](../../workflow/using/workflow-best-practices.md#execution-and-performance).
+* Esecuzione del flusso di lavoro: il monitoraggio dei flussi di lavoro è essenziale per evitare problemi di prestazioni della piattaforma. Segui le linee guida elencate [in questo documento](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/workflow-best-practices#execution-and-performance){target="_blank"} (documentazione di Campaign v8).
 
 * Se sei idoneo, puoi sfruttare le [funzionalità di Pannello di controllo Campaign di Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=it) per monitorare la tua piattaforma utilizzando le [funzionalità di monitoraggio delle prestazioni](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=it).
 
@@ -82,7 +82,7 @@ Per raggiungere la casella in entrata dei destinatari senza che vengano generati
 
   * Durante il controllo della consegna delle e-mail, desideri concentrarti su quattro categorie principali: qualità dei dati, messaggio e contenuto, infrastruttura di invio e reputazione. Per ulteriori informazioni su questo argomento, consulta [questa sezione](about-deliverability.md).
 
-* Applica i consigli dettagliati [&#x200B; in questo documento](about-deliverability.md).
+* Applica i consigli dettagliati [ in questo documento](about-deliverability.md).
 
 * Contatta il rappresentante Adobe per assistenza.
 

@@ -42,9 +42,9 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1178'
 ht-degree: 1%
 ---
 # Sincronizzare i tipi di pubblico{#synchronizing-audiences}
@@ -89,7 +89,7 @@ Per ottenere il pubblico finale e i relativi dati aggiuntivi:
 
    ![](assets/acs_connect_query1.png)
 
-1. Aggiungi dati aggiuntivi dall’interno della query. Per ulteriori informazioni, consulta la sezione [Aggiunta di dati](../../workflow/using/query.md#adding-data).
+1. Aggiungi dati aggiuntivi dall’interno della query. Per ulteriori informazioni, consulta la sezione [Aggiunta di dati](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query#adding-data){target="_blank"} (documentazione di Campaign v8).
 
    Questo esempio mostra come aggiungere un aggregato per contare quante consegne ha ricevuto un destinatario in un anno.
 
@@ -157,7 +157,7 @@ Creando un flusso di lavoro di consegna in Campaign Standard, è quindi possibil
 
    Questa attività viene utilizzata per recuperare i dati del pubblico selezionato. Puoi anche applicare un **[!UICONTROL Source Filtering]** aggiuntivo, se necessario, utilizzando la scheda corrispondente di questa attività.
 
-1. Aggiungi un&#39;attività **[!UICONTROL Email delivery]** e configurala come qualsiasi altra [attività di consegna e-mail](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html?lang=it).
+1. Aggiungi un&#39;attività **[!UICONTROL Email delivery]** e configurala come qualsiasi altra [attività di consegna e-mail](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html).
 1. Apri il contenuto della consegna.
 1. Aggiungi un campo di personalizzazione. Individuare il nodo **[!UICONTROL Additional data (targetData)]** dalla finestra a comparsa. Questo nodo contiene i dati aggiuntivi del pubblico calcolati nel flusso di lavoro di targeting iniziale. Puoi utilizzarli come qualsiasi altro campo di personalizzazione.
 
@@ -179,9 +179,9 @@ Una volta che la consegna e il relativo contenuto sono pronti, invia la consegna
 1. Dal dashboard di consegna, conferma manualmente che la consegna può essere inviata.
 1. Monitora i rapporti e i registri della consegna:
 
-   * **In Campaign Standard**: accedere a [report](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html?lang=it) e [log](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=it) relativi alla consegna come per qualsiasi consegna.
+   * **In Campaign Standard**: accedere a [report](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html) e [log](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html) relativi alla consegna come per qualsiasi consegna.
    * **in Campaign v7 e Campaign Standard**: gli ID consegna, i registri di indirizzi e-mail generali e i registri di tracciamento e-mail sono sincronizzati con Campaign v7. Potrai quindi ottenere una visualizzazione a 360° delle campagne di marketing da Campaign v7.
 
      Le quarantene vengono sincronizzate automaticamente con Campaign v7. Ciò consente di tenere conto delle informazioni non consegnabili per il targeting successivo eseguito in Campaign v7.
 
-     Ulteriori informazioni sulla gestione della quarantena in Campaign Standard sono disponibili in [questa sezione](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=it).
+     Ulteriori informazioni sulla gestione della quarantena in Campaign Standard sono disponibili in [questa sezione](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html).

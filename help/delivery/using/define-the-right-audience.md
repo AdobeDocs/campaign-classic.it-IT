@@ -36,10 +36,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 8%
+source-wordcount: '576'
+ht-degree: 7%
 ---
 # Definire il pubblico adatto {#define-the-right-audience}
 
@@ -65,7 +65,7 @@ Puoi anche creare e utilizzare una mappatura di destinazione personalizzata. Per
 
 ## Destinatari esterni {#external-recipients}
 
-Puoi consegnare a destinatari memorizzati in un file esterno anziché salvati nel database. Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it#selecting-external-recipients){target="_blank"}.
+Puoi consegnare a destinatari memorizzati in un file esterno anziché salvati nel database. Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"}.
 
 ## Invia ai tuoi abbonati {#send-to-subscribers}
 
@@ -76,7 +76,7 @@ Per inviare messaggi agli abbonati di una newsletter, puoi indirizzare direttame
 
 Per verificare la consegna, utilizza le bozze prima di inviare al target principale.
 
-Accertati di selezionare i destinatari della bozza appropriati, in quanto convalidano il modulo e il contenuto del messaggio. I passaggi per definire i destinatari della bozza sono descritti nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it#select-the-proof-target){target="_blank"}.
+Accertati di selezionare i destinatari della bozza appropriati, in quanto convalidano il modulo e il contenuto del messaggio. I passaggi per definire i destinatari della bozza sono descritti nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#select-the-proof-target){target="_blank"}.
 
 Gli indirizzi di seed vengono utilizzati per eseguire il targeting dei destinatari che non corrispondono ai criteri di target definiti per testare una consegna prima di inviarla al target principale. Sono presentati [in questa sezione](about-seed-addresses.md).
 
@@ -92,8 +92,8 @@ La deduplicazione degli indirizzi protegge la reputazione del mittente e garanti
 
 **Argomenti correlati:**
 
-* [Attività di deduplicazione](../../workflow/using/deduplication.md).
-* [Caso d’uso: utilizzo della funzionalità di unione dell’attività Deduplicazione](../../workflow/using/deduplication-merge.md)
+* [Attività di deduplicazione](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication){target="_blank"} (documentazione di Campaign v8).
+* [Caso d&#39;uso: utilizzo della funzionalità di unione dell&#39;attività Deduplicazione](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/use-cases/data-management/deduplication-merge){target="_blank"} (documentazione di Campaign v8)
 
 ## Indicizzare gli indirizzi e-mail {#index-addresses}
 

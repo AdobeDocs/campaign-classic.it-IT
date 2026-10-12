@@ -31,20 +31,20 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '266'
 ht-degree: 3%
 ---
 # Configurare il test A/B {#configuring-a-b-testing}
 
 Questa sezione descrive come creare un flusso di lavoro per eseguire test A/B.
 
-1. Crea un nuovo flusso di lavoro, quindi configura un’attività Query per eseguire il targeting della popolazione desiderata. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=it){target="_blank"}.
+1. Crea un nuovo flusso di lavoro, quindi configura un’attività Query per eseguire il targeting della popolazione desiderata. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
 
-1. Aggiungi un’attività Split per suddividere la popolazione target in più sottoinsiemi. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=it){target="_blank"}.
+1. Aggiungi un’attività Split per suddividere la popolazione target in più sottoinsiemi. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}.
 
-1. Apri l’attività, quindi configura ogni sottoinsieme in base alle tue esigenze. Per ulteriori informazioni su come configurare un&#39;attività **[!UICONTROL Split]**, vedere [questa sezione](../../workflow/using/split.md).
+1. Apri l’attività, quindi configura ogni sottoinsieme in base alle tue esigenze. Per ulteriori informazioni su come configurare un&#39;attività **[!UICONTROL Split]**, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/split){target="_blank"} (documentazione di Campaign v8).
 
    In questo esempio, vogliamo testare 2 nuovi argomenti per una newsletter presentandoli a ciascuno di loro al 10% della popolazione target.
 

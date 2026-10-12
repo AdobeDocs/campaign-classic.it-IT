@@ -8,9 +8,9 @@ user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: df5d87ca4fccb927f770957ec1c00157d14e95dc
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '2717'
+source-wordcount: '2298'
 ht-degree: 100%
 ---
 
@@ -363,124 +363,6 @@ ht-degree: 100%
     + {hide-from-toc}[Sincronizzare le applicazioni web - NASCOSTO](integrations/using/synchronizing-web-applications.md)
     + {hide-from-toc}[Risolvere i problemi relativi a  [!DNL ACS Connector]  - NASCOSTO](integrations/using/troubleshooting-the-acs-connector.md)
 + [Automatizzare con i flussi di lavoro](workflow/using/about-workflows.md)
-+ Automatizzare con i flussi di lavoro {#automating-with-workflows}
-  + Introduzione ai flussi di lavoro {#introduction}
-    + {hide-from-toc}[Informazioni sulle attività - NASCOSTO](workflow/using/about-activities.md)
-    + {hide-from-toc}[Creare un flusso di lavoro - NASCOSTO](workflow/using/building-a-workflow.md)
-    + {hide-from-toc}[Targeting dei dati - NASCOSTO](workflow/using/targeting-data.md)
-    + {hide-from-toc}[Utilizzare i dati del flusso di lavoro - NASCOSTO](workflow/using/how-to-use-workflow-data.md)
-    + {hide-from-toc}[Best practice per flusso di lavoro - NASCOSTO](workflow/using/workflow-best-practices.md)
-  + Eseguire un flusso di lavoro {#executing-a-workflow}
-    + {hide-from-toc}[Avviare un flusso di lavoro - NASCOSTO](workflow/using/starting-a-workflow.md)
-    + {hide-from-toc}[Ciclo di vita di un flusso di lavoro - NASCOSTO](workflow/using/workflow-life-cycle.md)
-    + {hide-from-toc}[Ciclo di vita dei dati - NASCOSTO](workflow/using/data-life-cycle.md)
-    + {hide-from-toc}[Definire le approvazioni - NASCOSTO](workflow/using/defining-approvals.md)
-    + {hide-from-toc}[Architettura - NASCOSTO](workflow/using/architecture.md)
-  + Attività di targeting {#targeting-activities}
-    + {hide-from-toc}[Informazioni sulle attività di targeting - NASCOSTO](workflow/using/about-targeting-activities.md)
-    + {hide-from-toc}[Query - NASCOSTO](workflow/using/query.md)
-    + {hide-from-toc}[Query incrementale - NASCOSTO](workflow/using/incremental-query.md)
-    + {hide-from-toc}[Leggere un elenco - NASCOSTO](workflow/using/read-list.md)
-    + {hide-from-toc}[Unione - NASCOSTO](workflow/using/union.md)
-    + {hide-from-toc}[Intersezione - NASCOSTO](workflow/using/intersection.md)
-    + {hide-from-toc}[Esclusione - NASCOSTO](workflow/using/exclusion.md)
-    + {hide-from-toc}[Suddivisione - NASCOSTO](workflow/using/split.md)
-    + {hide-from-toc}[Celle - NASCOSTO](workflow/using/cells.md)
-    + {hide-from-toc}[Offerte per cella - NASCOSTO](workflow/using/offers-by-cell.md)
-    + {hide-from-toc}[Struttura della consegna - NASCOSTO](workflow/using/delivery-outline.md)
-    + {hide-from-toc}[Arricchimento - NASCOSTO](workflow/using/enrichment.md)
-    + {hide-from-toc}[Modificare schema - NASCOSTO](workflow/using/edit-schema.md)
-    + {hide-from-toc}[Motore di offerta - NASCOSTO](workflow/using/offer-engine.md)
-    + {hide-from-toc}[Deduplica - NASCOSTO](workflow/using/deduplication.md)
-    + {hide-from-toc}[Cambiare dimensione - NASCOSTO](workflow/using/change-dimension.md)
-    + {hide-from-toc}[Aggiornamento elenco - NASCOSTO](workflow/using/list-update.md)
-    + {hide-from-toc}[Servizi di abbonamento - NASCOSTO](workflow/using/subscription-services.md)
-    + {hide-from-toc}[Aggiornare dati - NASCOSTO](workflow/using/update-data.md)
-    + {hide-from-toc}[Connettore CRM - NASCOSTO](workflow/using/crm-connector.md)
-    + {hide-from-toc}[Cambiare origine dati - NASCOSTO](workflow/using/change-data-source.md)
-  + Attività di controllo del flusso {#flow-control-activities}
-    + {hide-from-toc}[Informazioni sulle attività di controllo del flusso - NASCOSTO](workflow/using/about-flow-control-activities.md)
-    + {hide-from-toc}[Inizio e fine - NASCOSTO](workflow/using/start-and-end.md)
-    + {hide-from-toc}[Fork - NASCOSTO](workflow/using/fork.md)
-    + {hide-from-toc}[AND-join - NASCOSTO](workflow/using/and-join.md)
-    + {hide-from-toc}[Modulo di pianificazione - NASCOSTO](workflow/using/scheduler.md)
-    + {hide-from-toc}[Test - NASCOSTO](workflow/using/test.md)
-    + {hide-from-toc}[Attesa - HIDDEN](workflow/using/wait.md)
-    + {hide-from-toc}[Vincolo di tempo - NASCOSTO](workflow/using/time-constraint.md)
-    + {hide-from-toc}[Flusso di lavoro secondario - NASCOSTO](workflow/using/sub-workflow.md)
-    + {hide-from-toc}[Salta (punto iniziale e punto finale) - NASCOSTO](workflow/using/jump-start-point-and-end-point.md)
-    + {hide-from-toc}[Segnale esterno - NASCOSTO](workflow/using/external-signal.md)
-    + {hide-from-toc}[Approvazione - NASCOSTO](workflow/using/approval.md)
-    + {hide-from-toc}[Avviso - NASCOSTO](workflow/using/alert.md)
-    + {hide-from-toc}[Attività - NASCOSTO](workflow/using/task.md)
-  + Attività di azione {#action-activities}
-    + {hide-from-toc}[Informazioni sulle attività di azione - NASCOSTO](workflow/using/about-action-activities.md)
-    + {hide-from-toc}[Consegna - NASCOSTO](workflow/using/delivery.md)
-    + {hide-from-toc}[Controllo della consegna - NASCOSTO](workflow/using/delivery-control.md)
-    + {hide-from-toc}[Consegna continua - NASCOSTO](workflow/using/continuous-delivery.md)
-    + {hide-from-toc}[Consegna ricorrente - NASCOSTO](workflow/using/recurring-delivery.md)
-    + {hide-from-toc}[Consegne cross-channel - NASCOSTO](workflow/using/cross-channel-deliveries.md)
-    + {hide-from-toc}[Approvazione locale - NASCOSTO](workflow/using/local-approval.md)
-    + {hide-from-toc}[Caricamento dati (RDBMS) - NASCOSTO](workflow/using/data-loading-rdbms.md)
-    + {hide-from-toc}[Caricamento (SOAP) - NASCOSTO](workflow/using/loading-soap.md)
-    + {hide-from-toc}[Caricamento dati (file) - NASCOSTO](workflow/using/data-loading-file.md)
-    + {hide-from-toc}[Gestione dei contenuti - NASCOSTO](workflow/using/content-management.md)
-    + {hide-from-toc}[Estrazione dati (file) - NASCOSTO](workflow/using/extraction-file.md)
-    + {hide-from-toc}[Codice SQL e codice JavaScript - NASCOSTO](workflow/using/sql-code-and-javascript-code.md)
-    + {hide-from-toc}[Gestione dati SQL - NASCOSTO](workflow/using/sql-data-management.md)
-    + {hide-from-toc}[Modulo Nlserver - NASCOSTO](workflow/using/nlserver-module.md)
-    + {hide-from-toc}[Aggiornare un aggregato - NASCOSTO](workflow/using/update-aggregate.md)
-  + Attività dell’evento {#event-activities}
-    + {hide-from-toc}[Informazioni sulle attività di eventi - NASCOSTO](workflow/using/about-event-activities.md)
-    + {hide-from-toc}[Raccolta file - NASCOSTO](workflow/using/file-collector.md)
-    + {hide-from-toc}[Trasferimento file - NASCOSTO](workflow/using/file-transfer.md)
-    + {hide-from-toc}[Download web - NASCOSTO](workflow/using/web-download.md)
-    + {hide-from-toc}[E-mail in entrata - NASCOSTO](workflow/using/inbound-emails.md)
-    + {hide-from-toc}[SMS in entrata - NASCOSTO](workflow/using/inbound-sms.md)
-  + Casi d’uso {#use-cases}
-    + {hide-from-toc}[Informazioni sui casi d’uso dei flussi di lavoro - NASCOSTO](workflow/using/about-workflow-use-cases.md)
-    + Consegne {#deliveries}
-      + {hide-from-toc}[Utilizzare l’attività di approvazione locale - NASCOSTO](workflow/using/using-the-local-approval-activity.md)
-      + {hide-from-toc}[Inviare un’e-mail di compleanno - NASCOSTO](workflow/using/sending-a-birthday-email.md)
-      + {hide-from-toc}[Caricare i contenuti della consegna - NASCOSTO](workflow/using/loading-delivery-content.md)
-      + {hide-from-toc}[Flusso di lavoro per consegna cross-channel - NASCOSTO](workflow/using/cross-channel-delivery-workflow.md)
-      + {hide-from-toc}[Arricchimento delle e-mail con campi data personalizzati - NASCOSTO](workflow/using/email-enrichment-with-custom-date-fields.md)
-  + Monitoraggio {#monitoring}
-    + {hide-from-toc}[Inviare un rapporto a un elenco - NASCOSTO](workflow/using/sending-a-report-to-a-list.md)
-    + {hide-from-toc}[Controllare i flussi di lavoro - NASCOSTO](workflow/using/supervising-workflows.md)
-    + {hide-from-toc}[Inviare avvisi personalizzati agli operatori - NASCOSTO](workflow/using/sending-personalized-alerts-to-operators.md)
-  + Gestione dati {#data-management}
-    + {hide-from-toc}[Coordinare gli aggiornamenti dei dati - NASCOSTO](workflow/using/coordinating-data-updates.md)
-    + {hide-from-toc}[Creare un elenco di riepilogo - NASCOSTO](workflow/using/creating-a-summary-list.md)
-    + {hide-from-toc}[Arricchire i dati - NASCOSTO](workflow/using/enriching-data.md)
-    + {hide-from-toc}[Utilizzare aggregati - NASCOSTO](workflow/using/using-aggregates.md)
-    + {hide-from-toc}[Utilizzare la funzionalità di unione dell’attività Deduplica - NASCOSTO](workflow/using/deduplication-merge.md)
-    + {hide-from-toc}[Impostare un flusso di lavoro di importazione ricorrente - NASCOSTO](workflow/using/recurring-import-workflow.md)
-  + Progettare le query {#designing-queries}
-    + {hide-from-toc}[Aggiornamento dell’elenco trimestrale tramite una query incrementale - NASCOSTO](workflow/using/quarterly-list-update.md)
-  + Query e filtro {#query-and-filter-hidden}
-    + {hide-from-toc}[Eseguire una query sulla tabella dei destinatari - NASCOSTO](workflow/using/querying-recipient-table.md)
-    + {hide-from-toc}[Eseguire una query sulle informazioni di consegna - NASCOSTO](workflow/using/querying-delivery-information.md)
-    + {hide-from-toc}[Eseguire il calcolo aggregato - NASCOSTO](workflow/using/performing-aggregate-computing.md)
-    + {hide-from-toc}[Eseguire una query tramite gestione dei raggruppamenti - NASCOSTO](workflow/using/querying-using-grouping-management.md)
-    + {hide-from-toc}[Eseguire una query tramite una relazione molti-a-molti - NASCOSTO](workflow/using/querying-using-many-to-many-relationship.md)
-    + {hide-from-toc}[Aggiungere un campo calcolato di tipo enumerazione - NASCOSTO](workflow/using/adding-enumeration-type-calculated-field.md)
-    + {hide-from-toc}[Creare un filtro - NASCOSTO](workflow/using/creating-a-filter.md)
-    + {hide-from-toc}[Filtrare i destinatari duplicati - NASCOSTO](workflow/using/filtering-duplicated-recipients.md)
-  + Monitorare i flussi di lavoro {#monitoring-workflows}
-    + {hide-from-toc}[Monitorare l’esecuzione di un flusso di lavoro - NASCOSTO](workflow/using/monitoring-workflow-execution.md)
-    + {hide-from-toc}[Monitorare i flussi di lavoro tecnici - NASCOSTO](workflow/using/monitoring-technical-workflows.md)
-    + {hide-from-toc}[HeatMap del flusso di lavoro - NASCOSTO](workflow/using/heatmap.md)
-  + Gestione avanzata {#advanced-management}
-    + {hide-from-toc}[Proprietà del flusso di lavoro - NASCOST](workflow/using/workflow-properties.md)
-    + {hide-from-toc}[Parametri avanzati - NASCOSTO](workflow/using/advanced-parameters.md)
-    + {hide-from-toc}[Script e modelli JavaScript - NASCOSTO](workflow/using/javascript-scripts-and-templates.md)
-    + {hide-from-toc}[Esempi di codice JavaScript nei flussi di lavoro - NASCOSTO](workflow/using/javascript-in-workflows.md)
-    + {hide-from-toc}[Accedere a un database esterno - NASCOSTO](workflow/using/accessing-an-external-database-fda.md)
-    + {hide-from-toc}[Gestire le autorizzazioni - NASCOSTO](workflow/using/managing-rights.md)
-    + {hide-from-toc}[Modificare le immagini dell’attività - NASCOSTO](workflow/using/managing-activity-images.md)
-    + {hide-from-toc}[Gestire i fusi orari - NASCOSTO](workflow/using/managing-time-zones.md)
-    + {hide-from-toc}[Flussi di lavoro tecnici - NASCOSTO](workflow/using/about-technical-workflows.md)
 + Gestire le offerte {#managing-offers}
   + Introduzione all’interazione {#interaction-overview}
     + [Gestione dell’interazione e delle offerte](interaction/using/interaction-and-offer-management.md)

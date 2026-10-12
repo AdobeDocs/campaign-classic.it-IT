@@ -36,9 +36,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '2862'
+source-wordcount: '2877'
 ht-degree: 0%
 ---
 # Flusso di lavoro di pulizia del database{#database-cleanup-workflow}
@@ -59,7 +59,7 @@ La pulizia del database è configurata su due livelli: nell’utilità di pianif
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla pianificazione, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=it){target="_blank"}.
+>Per ulteriori informazioni sulla pianificazione, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}.
 
 Per impostazione predefinita, il flusso di lavoro **[!UICONTROL Database cleanup]** è configurato per iniziare ogni giorno alle 4. La pianificazione consente di modificare la frequenza di attivazione del flusso di lavoro. Sono disponibili le seguenti frequenze:
 
@@ -349,7 +349,7 @@ Questa attività elimina ogni istanza del flusso di lavoro utilizzando il relati
 
 >[!NOTE]
 >
->La frequenza di eliminazione della cronologia è specificata per ogni flusso di lavoro nel campo **Cronologia in giorni** (valore predefinito: 30 giorni). Questo campo si trova nella scheda **Esecuzione** delle proprietà del flusso di lavoro. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../workflow/using/workflow-properties.md#execution).
+>La frequenza di eliminazione della cronologia è specificata per ogni flusso di lavoro nel campo **Cronologia in giorni** (valore predefinito: 30 giorni). Questo campo si trova nella scheda **Esecuzione** delle proprietà del flusso di lavoro. Per ulteriori informazioni, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/advanced-management/workflow-properties#execution){target="_blank"} (documentazione di Campaign v8).
 
 1. Per recuperare l’elenco dei flussi di lavoro da eliminare, viene utilizzata la seguente query:
 

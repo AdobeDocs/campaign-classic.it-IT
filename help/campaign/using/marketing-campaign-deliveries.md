@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1526'
 ht-degree: 1%
 ---
 # Consegne di campagne di marketing {#marketing-campaign-deliveries}
@@ -45,7 +45,7 @@ Le consegne possono essere create tramite il dashboard della campagna, un flusso
 
 Quando vengono create da una campagna, le consegne verranno collegate a questa campagna e consolidate a livello di campagna.
 
-![](assets/do-not-localize/how-to-video.png) [Scopri questa funzione nel video](#create-email-video)
+![](assets/do-not-localize/how-to-video.png)[Scopri questa funzione nel video](#create-email-video)
 
 ## Creare consegne {#creating-deliveries}
 
@@ -83,7 +83,7 @@ Dopo aver concesso tutte le approvazioni, lo stato di consegna cambia in **[!UIC
 
 >[!NOTE]
 >
->I flussi di lavoro tecnici relativi al pacchetto Campaign sono presentati in [Elenco dei flussi di lavoro tecnici](../../workflow/using/about-technical-workflows.md).
+>I flussi di lavoro tecnici relativi al pacchetto Campaign sono presentati in [Elenco dei flussi di lavoro tecnici](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"} (documentazione di Campaign v8).
 
 **Passaggio 1 - Approvazione file**
 
@@ -263,7 +263,7 @@ Il modello di esportazione deve essere associato al fornitore di servizi selezio
 
 Questo video spiega come creare una campagna e un messaggio e-mail in Adobe Campaign.
 
->[!VIDEO](https://video.tv.adobe.com/v/329889?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 Ulteriori video dimostrativi di Campaign sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
 
