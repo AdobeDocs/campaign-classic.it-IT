@@ -70,7 +70,7 @@ Per sfruttare queste informazioni, è necessario creare tale campo in Adobe Camp
 
 Devi eseguire questa operazione anche se utilizzi una tabella dei destinatari personalizzata.
 
-Per informazioni più dettagliate su come creare un nuovo campo, consulta la [documentazione sull&#39;edizione dello schema](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentazione di Campaign v8).
+Per informazioni più dettagliate su come creare un nuovo campo, consulta la [documentazione sull&#39;edizione dello schema](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentazione di Campaign v8).
 
 >[!IMPORTANT]
 >
@@ -88,7 +88,7 @@ Per informazioni più dettagliate su come creare un nuovo campo, consulta la [do
 
    ![](assets/privacy-ccpa-3.png)
 
-1. Fai clic sul nodo **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]** dell’Explorer. In **[!UICONTROL Recipient (nms)]**, in “General Package” (Pacchetto generale), aggiungi un elemento `<input>` e per il valore xpath utilizz, il percorso relativo definito nel passaggio 2. Per ulteriori informazioni sull&#39;identificazione di un modulo, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (documentazione di Campaign v8).
+1. Fai clic sul nodo **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]** dell’Explorer. In **[!UICONTROL Recipient (nms)]**, in “General Package” (Pacchetto generale), aggiungi un elemento `<input>` e per il valore xpath utilizz, il percorso relativo definito nel passaggio 2. Per ulteriori informazioni sull&#39;identificazione di un modulo, consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (documentazione di Campaign v8).
 
    ```
    <input  colspan="2" type="checkbox" xpath="@OPTOUTCCPA"/>
@@ -118,7 +118,7 @@ Accertati di non vendere mai a terzi le informazioni personali dei profili che h
 
    ![](assets/privacy-ccpa-6.png)
 
-1. Fai clic sulla colonna per ordinare i destinatari in base alle informazioni di rinuncia. Puoi anche creare un filtro per visualizzare solo i destinatari che hanno rinunciato. Per ulteriori informazioni sui filtri, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+1. Fai clic sulla colonna per ordinare i destinatari in base alle informazioni di rinuncia. Puoi anche creare un filtro per visualizzare solo i destinatari che hanno rinunciato. Per ulteriori informazioni sui filtri, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 
    ![](assets/privacy-ccpa-7.png)

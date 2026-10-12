@@ -61,7 +61,7 @@ In questa sezione sono descritti tutti i passaggi necessari per configurare e co
 
 ## Configurare l’istanza di controllo {#control-instance}
 
-Per connettere l&#39;istanza di controllo e le istanze di esecuzione, è innanzitutto necessario creare e configurare un account esterno di tipo **[!UICONTROL Execution instance]** **nell&#39;istanza di controllo**. Pertanto, una volta [pubblicati](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template#publish-message-template){target="_blank"} (documentazione di Campaign v8), i modelli di messaggi transazionali possono essere distribuiti nelle istanze di esecuzione.
+Per connettere l&#39;istanza di controllo e le istanze di esecuzione, è innanzitutto necessario creare e configurare un account esterno di tipo **[!UICONTROL Execution instance]** **nell&#39;istanza di controllo**. Pertanto, una volta [pubblicati](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/real-time/transactional-template#publish-message-template){target="_blank"} (documentazione di Campaign v8), i modelli di messaggi transazionali possono essere distribuiti nelle istanze di esecuzione.
 
 Se utilizzi più istanze di esecuzione, devi creare tanti account esterni quanti sono le istanze di esecuzione.
 

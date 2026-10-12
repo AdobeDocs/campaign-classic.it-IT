@@ -37,9 +37,9 @@ ht-degree: 1%
 
 Ogni tabella associata a uno schema di dati deve avere almeno una chiave per identificare un record in una tabella. Questa pagina descrive la chiave incrementale automatica utilizzata nelle tabelle di Campaign Classic v7.
 
-Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sulla gestione delle chiavi, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/database-keys){target=_blank}.
+Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sulla gestione delle chiavi, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/database-keys){target=_blank}.
 
-[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/database-keys){target=_blank}
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/database-keys){target=_blank}
 
 ## Tasto incrementale automatico {#auto-incremental-key}
 
@@ -103,5 +103,5 @@ Per ulteriori informazioni, consulta i seguenti collegamenti:
 * [Introduzione agli schemi](about-schema-reference.md)
 * [Struttura dello schema](schema-structure.md)
 * [Mappatura del database](database-mapping.md)
-* [Gestione dei collegamenti](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/database-links){target="_blank"} (documentazione di Campaign v8)
-* [Modello dati della campagna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel){target="_blank"} (documentazione di Campaign v8)
+* [Gestione dei collegamenti](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/database-links){target="_blank"} (documentazione di Campaign v8)
+* [Modello dati della campagna](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/datamodel){target="_blank"} (documentazione di Campaign v8)

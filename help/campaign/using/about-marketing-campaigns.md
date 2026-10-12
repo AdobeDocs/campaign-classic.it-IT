@@ -36,7 +36,7 @@ Adobe Campaign offre un serie di soluzioni che consentono di personalizzare e di
 
 Le campagne includono azioni (consegne), processi (importazione o estrazione file) e risorse (documenti di marketing, descrizioni della consegna). Vengono utilizzati nelle campagne di marketing. Le campagne fanno parte di un programma e i programmi sono inclusi in un piano di campagna.
 
-Per ulteriori informazioni sulla gestione delle campagne, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
+Per ulteriori informazioni sulla gestione delle campagne, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=it){target=_blank}.
 
 ![](assets/do-not-localize/campaign.jpg){width="40%"}
 
@@ -60,9 +60,9 @@ Sono disponibili tre componenti aggiuntivi per la gestione delle campagne:
 
 <!--
 
-Adobe Campaign lets you define, optimize, execute and analyze communications and marketing campaigns. Adobe Campaign acts like a unified order and execution center for marketing strategies. For more on this, refer to [Access campaigns](https://experienceleague.adobe.com/en/docs/campaign/automation/distributed-marketing/accessing-campaigns){target="_blank"} (Campaign v8 documentation) and [Create marketing campaigns](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/marketing-campaign-create){target="_blank"} (Campaign v8 documentation).
+Adobe Campaign lets you define, optimize, execute and analyze communications and marketing campaigns. Adobe Campaign acts like a unified order and execution center for marketing strategies. For more on this, refer to [Access campaigns](https://experienceleague.adobe.com/it/docs/campaign/automation/distributed-marketing/accessing-campaigns){target="_blank"} (Campaign v8 documentation) and [Create marketing campaigns](https://experienceleague.adobe.com/it/docs/campaign/automation/campaign-orchestration/marketing-campaign-create){target="_blank"} (Campaign v8 documentation).
 
-In addition, the **Marketing Resource Management (MRM)** module lets you control marketing actions in a collaborative mode by providing complete management and real-time tracking of the tasks, budgets and marketing resources involved. The Marketing Resource Management lets you optimize and regulate the management of internal and external processes, resources and marketing campaigns, as well as third party relations (agencies, printers, etc.). For more on this, refer to [this section](https://experienceleague.adobe.com/en/docs/campaign/automation/mrm/about-marketing-resource-management){target="_blank"} (Campaign v8 documentation).
+In addition, the **Marketing Resource Management (MRM)** module lets you control marketing actions in a collaborative mode by providing complete management and real-time tracking of the tasks, budgets and marketing resources involved. The Marketing Resource Management lets you optimize and regulate the management of internal and external processes, resources and marketing campaigns, as well as third party relations (agencies, printers, etc.). For more on this, refer to [this section](https://experienceleague.adobe.com/it/docs/campaign/automation/mrm/about-marketing-resource-management){target="_blank"} (Campaign v8 documentation).
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ The following concepts need to be known in the context of Campaign:
 
   A campaign centralizes all the elements related to a marketing campaign: deliveries, targeting rules, costs, export files, related documents, etc. Each campaign is attached to a program.
 
-  For more on this, refer to [Adding a campaign](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/marketing-campaign-create#create-a-campaign){target="_blank"} (Campaign v8 documentation).
+  For more on this, refer to [Adding a campaign](https://experienceleague.adobe.com/it/docs/campaign/automation/campaign-orchestration/marketing-campaign-create#create-a-campaign){target="_blank"} (Campaign v8 documentation).
 
 * **Program**
 
@@ -89,13 +89,13 @@ The following concepts need to be known in the context of Campaign:
 
   The marketing plan can contain multiple programs. It is linked to a calendar period, has an allocated budget and can also be linked up to documents and objectives.
 
-  For more on this, refer to [Campaign calendar](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/marketing-campaign-create#campaign-calendar){target="_blank"} (Campaign v8 documentation).
+  For more on this, refer to [Campaign calendar](https://experienceleague.adobe.com/it/docs/campaign/automation/campaign-orchestration/marketing-campaign-create#campaign-calendar){target="_blank"} (Campaign v8 documentation).
 
 * **Workflow**
 
   A campaign workflow contains the same activities as for all workflows but is specific to the campaign. It enables you to create and configure deliveries for all available channels.
 
-  For more on this, refer to [this section](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/marketing-campaign-target){target="_blank"} (Campaign v8 documentation).
+  For more on this, refer to [this section](https://experienceleague.adobe.com/it/docs/campaign/automation/campaign-orchestration/marketing-campaign-target){target="_blank"} (Campaign v8 documentation).
 
 * **Objectives**
 
@@ -105,7 +105,7 @@ The following concepts need to be known in the context of Campaign:
 
   A delivery outline is a structured description of a delivery. Every delivery can refer to a delivery outline which contains, for example, the related offers, documents to be attached, or a link to stores. An offer can be referenced in the delivery according to the delivery outline selected.
 
-  For more on this, refer to [this section](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries){target="_blank"} (Campaign v8 documentation).
+  For more on this, refer to [this section](https://experienceleague.adobe.com/it/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries){target="_blank"} (Campaign v8 documentation).
 
 ## Tutorial {#video}
 
@@ -113,6 +113,6 @@ This video presents the key concepts of marketing campaigns.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
-Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
 
 -->

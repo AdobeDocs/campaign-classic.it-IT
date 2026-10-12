@@ -57,7 +57,7 @@ La creazione di un nuovo modulo consente di visualizzare e modificare i dati del
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sui file di tipo **modulo**, consulta [questa pagina](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (documentazione di Campaign v8).
+   >Per ulteriori informazioni sui file di tipo **modulo**, consulta [questa pagina](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (documentazione di Campaign v8).
 
    Nell&#39;esempio corrente, il file **form** deve essere basato sullo schema **cus:individual** e quindi avere il seguente layout:
 

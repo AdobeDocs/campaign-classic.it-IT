@@ -53,7 +53,7 @@ La creazione di una libreria di metodi prevede due fasi:
 
 ### Dichiarazione {#declaration}
 
-Inizia dichiarando i metodi negli schemi (per ulteriori informazioni su come creare e modificare gli schemi, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentazione di Campaign v8).
+Inizia dichiarando i metodi negli schemi (per ulteriori informazioni su come creare e modificare gli schemi, consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentazione di Campaign v8).
 
 La loro dichiarazione è simile a quella dei metodi nativi, con la differenza che è necessario aggiungere l&#39;attributo &quot;library&quot; che specifica il nome della libreria dei metodi in cui si trova la definizione.
 

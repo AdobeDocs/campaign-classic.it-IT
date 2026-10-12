@@ -39,9 +39,9 @@ Puoi creare un catalogo di offerte da interfacciare con i canali in entrata e in
 
 L’interazione consente di creare e gestire un catalogo di offerte e configurare le regole di idoneità e i temi dell’applicazione ad esse collegati. A seconda del canale scelto, il contenuto dell’offerta può essere personalizzato grazie a varie funzioni di rendering. Infine, puoi utilizzare il modulo di simulazione per calcolare l’impatto di una presentazione di offerta.
 
-Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sull&#39;interazione, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction){target=_blank}.
+Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sull&#39;interazione, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction){target=_blank}.
 
-[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction){target=_blank}
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction){target=_blank}
 
 Questa sezione descrive solo le funzionalità di interazione non descritte nella documentazione di Campaign v8: [simulazione offerte](about-offers-simulation.md), [presentazione offerte](managing-offer-presentation.md), [approvazione offerte](approving-and-activating-an-offer.md), [modelli offerte](managing-offer-templates.md) e [impostazioni avanzate](using-advanced-parameters.md).
 
@@ -53,6 +53,6 @@ Questa sezione descrive solo le funzionalità di interazione non descritte nella
 
 | Pagine utili | Risorse aggiuntive |
 |---|---|
-| [Passaggi per l&#39;implementazione dell&#39;interazione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction){target="_blank"} (documentazione di Campaign v8) | [Verifica della distribuzione delle offerte](../../interaction/using/about-offers-simulation.md) |
-| [Ambienti di progettazione/in tempo reale](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env){target="_blank"} (documentazione di Campaign v8) | [Aggiunta di un&#39;offerta tramite e-mail](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"} (documentazione di Campaign v8) |
-| [Creazione di spazi dell&#39;offerta](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces){target="_blank"} (documentazione di Campaign v8) | [Caso d&#39;uso: aggiungere un&#39;offerta in un sito Web](../../interaction/using/offers-on-an-inbound-channel.md) |
+| [Passaggi per l&#39;implementazione dell&#39;interazione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction){target="_blank"} (documentazione di Campaign v8) | [Verifica della distribuzione delle offerte](../../interaction/using/about-offers-simulation.md) |
+| [Ambienti di progettazione/in tempo reale](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env){target="_blank"} (documentazione di Campaign v8) | [Aggiunta di un&#39;offerta tramite e-mail](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"} (documentazione di Campaign v8) |
+| [Creazione di spazi dell&#39;offerta](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces){target="_blank"} (documentazione di Campaign v8) | [Caso d&#39;uso: aggiungere un&#39;offerta in un sito Web](../../interaction/using/offers-on-an-inbound-channel.md) |

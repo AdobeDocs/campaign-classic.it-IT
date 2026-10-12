@@ -232,7 +232,7 @@ Puoi visualizzare e modificare le regole di approvazione, il loro contenuto, l&#
 
 Da questo nodo puoi creare nuove regole e definire nuove tipologie. Queste attività sono tuttavia riservate agli utenti esperti che conoscono JavaScript.
 
-Per ulteriori informazioni sulle regole di tipologia, consulta [questa pagina](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/campaign-typologies){target="_blank"} (documentazione di Campaign v8).
+Per ulteriori informazioni sulle regole di tipologia, consulta [questa pagina](https://experienceleague.adobe.com/it/docs/campaign/automation/campaign-optimization/campaign-typologies){target="_blank"} (documentazione di Campaign v8).
 
 Per modificare la tipologia corrente, fare clic sull&#39;icona **[!UICONTROL Edit link]** a destra del campo **[!UICONTROL Typology]**.
 
@@ -244,7 +244,7 @@ La scheda **[!UICONTROL Rule]** fornisce un elenco delle regole di tipologia da 
 
 >[!NOTE]
 >
->Le tipologie di tipo **[!UICONTROL Arbitration]** vengono utilizzate nel quadro della gestione della pressione di vendita. Per ulteriori informazioni, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/automation/mrm/about-marketing-resource-management){target="_blank"} (documentazione di Campaign v8).
+>Le tipologie di tipo **[!UICONTROL Arbitration]** vengono utilizzate nel quadro della gestione della pressione di vendita. Per ulteriori informazioni, consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/automation/mrm/about-marketing-resource-management){target="_blank"} (documentazione di Campaign v8).
 
 ## Modificare la modalità di approvazione {#changing-the-approval-mode}
 

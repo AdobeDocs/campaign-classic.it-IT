@@ -120,7 +120,7 @@ Nella vista vengono visualizzate le seguenti consegne:
 
 >[!NOTE]
 >
->Durante la gestione di [eventi di messaggistica transazionale](../../message-center/using/about-transactional-messaging.md), le cartelle **[!UICONTROL Real time events]** o **[!UICONTROL Batch events]** non devono essere impostate come viste nelle istanze di esecuzione, in quanto ciò potrebbe causare problemi di diritti di accesso. Per ulteriori informazioni sulla raccolta di eventi, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/event-processing#event-collection){target="_blank"} (documentazione di Campaign v8).
+>Durante la gestione di [eventi di messaggistica transazionale](../../message-center/using/about-transactional-messaging.md), le cartelle **[!UICONTROL Real time events]** o **[!UICONTROL Batch events]** non devono essere impostate come viste nelle istanze di esecuzione, in quanto ciò potrebbe causare problemi di diritti di accesso. Per ulteriori informazioni sulla raccolta di eventi, consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/real-time/event/event-processing#event-collection){target="_blank"} (documentazione di Campaign v8).
 
 <!--
 ## Permissions on a folder

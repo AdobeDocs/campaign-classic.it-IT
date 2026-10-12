@@ -98,7 +98,7 @@ Come ultimo passo, massimizza le opportunità e sfrutta la potenza di Adobe Camp
 
 ### Seguire un processo di convalida
 
-Puoi definire un processo di convalida completo, che coinvolga operatori e gruppi di Adobe Campaign, per convalidare sia il contenuto di destinazione che quello del messaggio. Ciò garantirà il monitoraggio e il controllo completo dei vari processi della campagna: targeting, contenuto, budget, estrazione e invio di una bozza. A seconda delle autorizzazioni, gli utenti riceveranno una notifica, riceveranno delle bozze e saranno in grado di convalidare o rifiutare il messaggio. Ulteriori informazioni [in questa sezione](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval){target="_blank"} (documentazione di Campaign v8).
+Puoi definire un processo di convalida completo, che coinvolga operatori e gruppi di Adobe Campaign, per convalidare sia il contenuto di destinazione che quello del messaggio. Ciò garantirà il monitoraggio e il controllo completo dei vari processi della campagna: targeting, contenuto, budget, estrazione e invio di una bozza. A seconda delle autorizzazioni, gli utenti riceveranno una notifica, riceveranno delle bozze e saranno in grado di convalidare o rifiutare il messaggio. Ulteriori informazioni [in questa sezione](https://experienceleague.adobe.com/it/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval){target="_blank"} (documentazione di Campaign v8).
 
 ### Usa ondate
 
@@ -126,7 +126,7 @@ Puoi eseguire le seguenti azioni:
 
 * Per ogni elemento IPAfinity, dichiarare gli indirizzi IP che è possibile utilizzare. [Ulteriori informazioni](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* Nella [tipologia](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/campaign-typologies){target="_blank"} (documentazione di Campaign v8) scelta, utilizza il campo **[!UICONTROL Managing affinities with IP addresses]** per collegare le consegne al server di consegna (MTA) che gestisce tale affinità. [Ulteriori informazioni](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/apply-rules#control-outgoing-smtp-traffic){target="_blank"} (documentazione di Campaign v8).
+* Nella [tipologia](https://experienceleague.adobe.com/it/docs/campaign/automation/campaign-optimization/campaign-typologies){target="_blank"} (documentazione di Campaign v8) scelta, utilizza il campo **[!UICONTROL Managing affinities with IP addresses]** per collegare le consegne al server di consegna (MTA) che gestisce tale affinità. [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/campaign/automation/campaign-optimization/apply-rules#control-outgoing-smtp-traffic){target="_blank"} (documentazione di Campaign v8).
 
 * Una volta inviata l’e-mail, controlla l’intestazione per verificare da quale indirizzo IP è stata inviata la consegna. L’amministratore della posta elettronica dovrebbe aiutarti a ottenere le informazioni sull’intestazione.
 
@@ -138,7 +138,7 @@ Puoi eseguire le seguenti azioni:
 
 ### Utilizzare le tipologie
 
-Puoi utilizzare le regole di tipologia per escludere parte del target in base a criteri specifici. Ciò garantisce che i messaggi inviati soddisfino al meglio le esigenze e le aspettative dei clienti, in linea con le politiche di comunicazione aziendali. Ad esempio, puoi filtrare i destinatari minorenni dal target della newsletter. Ulteriori informazioni [in questo esempio](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/filtering-rules){target="_blank"} (documentazione di Campaign v8).
+Puoi utilizzare le regole di tipologia per escludere parte del target in base a criteri specifici. Ciò garantisce che i messaggi inviati soddisfino al meglio le esigenze e le aspettative dei clienti, in linea con le politiche di comunicazione aziendali. Ad esempio, puoi filtrare i destinatari minorenni dal target della newsletter. Ulteriori informazioni [in questo esempio](https://experienceleague.adobe.com/it/docs/campaign/automation/campaign-optimization/filtering-rules){target="_blank"} (documentazione di Campaign v8).
 
 ### Evita allegati
 

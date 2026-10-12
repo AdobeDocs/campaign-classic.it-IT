@@ -45,7 +45,7 @@ ht-degree: 2%
 
 I rapporti incorporati forniti da Adobe Campaign sono disponibili nella tabella seguente.
 
-Per ulteriori informazioni sul contenuto di questi report, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports){target="_blank"} (documentazione di Campaign v8).
+Per ulteriori informazioni sul contenuto di questi report, consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports){target="_blank"} (documentazione di Campaign v8).
 
 <table> 
  <tbody> 
@@ -148,7 +148,7 @@ I report sulle campagne riguardano i dati nella tabella **nms:operation**.
 
 I rapporti incorporati forniti da Adobe Campaign sono disponibili nella tabella seguente.
 
-Per ulteriori informazioni sul contenuto di questi report, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
+Per ulteriori informazioni sul contenuto di questi report, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=it){target=_blank}.
 
 <table> 
  <tbody> 
@@ -244,7 +244,7 @@ Per ulteriori informazioni sul contenuto di questi rapporti, consulta le relativ
 
 I rapporti incorporati forniti da Adobe Campaign sono disponibili nella tabella seguente.
 
-Per ulteriori informazioni sul contenuto di questi report, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
+Per ulteriori informazioni sul contenuto di questi report, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=it){target=_blank}.
 
 <table> 
  <tbody> 

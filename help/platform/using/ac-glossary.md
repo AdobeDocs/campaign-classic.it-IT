@@ -127,7 +127,7 @@ Ulteriori informazioni su [Audit trail](../../production/using/audit-trail.md).
 
 Campaigns that run on a schedule, such as for targeting recipients who have a birthday or an anniversary. Can also be used to execute look-ahead and look-back logic, such as who purchased yesterday or who has a payment due tomorrow.
 
-Learn more about [Campaigns](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/set-up-campaigns){target="_blank"} (Campaign v8 documentation).
+Learn more about [Campaigns](https://experienceleague.adobe.com/it/docs/campaign/automation/campaign-orchestration/set-up-campaigns){target="_blank"} (Campaign v8 documentation).
 +++
 -->
 
@@ -144,7 +144,7 @@ Ulteriori informazioni sull&#39;[interazione](../../interaction/using/interactio
 
 Campaign è un’interfaccia per coordinare, definire ed eseguire campagne di marketing. Le campagne possono contenere uno o più flussi di lavoro, consegne, documenti e altri punti di dati correlati in un’unica interfaccia di facile utilizzo.
 
-Ulteriori informazioni sulle campagne nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
+Ulteriori informazioni sulle campagne nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=it){target=_blank}.
 +++
 
 <!--
@@ -185,7 +185,7 @@ Ulteriori informazioni sull&#39;approvazione dei contenuti nella [documentazione
 
 Utilizza i gruppi di controllo per misurare l’impatto delle campagne escludendo parte delle relative audience. Gli operatori possono confrontare il comportamento della popolazione target che ha ricevuto il messaggio con il comportamento dei contatti non mirati. In base ai registri di invio, gli operatori possono anche eseguire il targeting di un gruppo di controllo in campagne future.
 
-Ulteriori informazioni sui gruppi di controllo sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target="_blank"}.
+Ulteriori informazioni sui gruppi di controllo sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=it#add-a-control-group){target="_blank"}.
 +++
 
 +++**Pannello di controllo**
@@ -208,14 +208,14 @@ Ulteriori informazioni su [Cubi](../../reporting/using/ac-cubes.md).
 
 Adobe Campaign viene fornito con un modello dati predefinito, in cui i tipi di dati vengono definiti tramite l’installazione di vari pacchetti. Gli operatori possono arricchire il modello dati fornito estendendo le risorse per aggiungere campi personalizzati o tabelle personalizzate, ad esempio tabelle di transazioni o di prodotti.
 
-Ulteriori informazioni sulle [risorse personalizzate](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentazione di Campaign v8).
+Ulteriori informazioni sulle [risorse personalizzate](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentazione di Campaign v8).
 +++
 
 +++**Modello dati**
 
 Il modello dati di Campaign è un set di schemi che definiscono i tipi di dati e le relative relazioni (collegamenti). Il modello dati è una definizione astratta implementata fisicamente con un database che contiene i dati effettivi.
 
-Ulteriori informazioni su [Modello dati](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel){target="_blank"} (documentazione di Campaign v8).
+Ulteriori informazioni su [Modello dati](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/datamodel){target="_blank"} (documentazione di Campaign v8).
 +++
 
 +++**Flusso di lavoro di pulizia del database**
@@ -257,14 +257,14 @@ Ulteriori informazioni su [Consegne](../../delivery/using/communication-channels
 
 L’analisi della consegna è la preparazione della consegna. Questo processo combina il contenuto con i dati del profilo del destinatario per produrre l’e-mail personalizzata che il destinatario riceve. La logica di analisi della consegna può escludere i destinatari dal target o interrompere completamente la consegna, in base alla logica definita. Questo processo include anche la valutazione della logica del contenuto dinamico e l’inserimento di offerte specifiche per il singolo profilo del destinatario.
 
-Ulteriori informazioni sull&#39;analisi della consegna sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
+Ulteriori informazioni sull&#39;analisi della consegna sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=it){target="_blank"}.
 +++
 
 +++**Registri di consegna**
 
 I registri di consegna contengono informazioni generate durante l’invio di un messaggio. Questi registri mostrano i dettagli dell’invio, il messaggio preparato, ignorato, inviato o non riuscito. Sono accessibili direttamente dal dashboard di consegna.
 
-Ulteriori informazioni sui [registri di consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
+Ulteriori informazioni sui [registri di consegna](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
 +++
 
 <!--
@@ -382,14 +382,14 @@ An engine call is a server call that starts real-time processing on server side 
 
 L’attività Enrichment è un’attività avanzata del flusso di lavoro che consente agli operatori di arricchire i dati della tabella di lavoro generati che verranno elaborati nel flusso di lavoro. Questa attività viene generalmente utilizzata dopo attività di targeting o dopo l’importazione di un file e prima di attività che utilizzano dati oggetto di targeting. Gli arricchimenti possono trasformare i dati di transizione in entrata e configurare l’attività in modo da completare la transizione in uscita con dati migliorati. Consente all’operatore di combinare dati da più set di dati o di creare collegamenti a una risorsa temporanea.
 
-Ulteriori informazioni sull&#39;attività Enrichment sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}.
+Ulteriori informazioni sull&#39;attività Enrichment sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=it){target="_blank"}.
 +++
 
 +++**Enumerazioni**
 
 Un’enumerazione è un tipo di dati definito negli schemi o a livello di Platform che definisce i valori di input validi per un campo. Le enumerazioni vengono visualizzate nell’interfaccia utente e nei generatori di query come elenco a discesa.
 
-Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 +++
 
 +++**Visualizzazione Esplora risorse**
@@ -397,7 +397,7 @@ Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campai
 La visualizzazione Esplora risorse è una visualizzazione gerarchica delle cartelle che contengono gli artefatti e i dati di Adobe Campaign. Tieni presente che il sistema di cartelle in Adobe Campaign non funziona come una visualizzazione ad albero tipica, in quanto ogni cartella contiene dati di un tipo specifico, ad esempio Consegne, Flussi di lavoro o Offerte.
 
 
-Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 +++
 
@@ -430,7 +430,7 @@ Ulteriori informazioni su [Federated Data Access](../../installation/using/about
 
 L’approvazione dell’estrazione del file è il processo in base al quale un operatore o un gruppo di operatori separato approva il contenuto e la configurazione di un file estratto prima che venga inviato a un fornitore esterno, ad esempio per una consegna direct mailing.
 
-Per ulteriori informazioni sull&#39;approvazione dell&#39;estrazione dei file, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html#validating){target="_blank"}.
+Per ulteriori informazioni sull&#39;approvazione dell&#39;estrazione dei file, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html?lang=it#validating){target="_blank"}.
 +++
 
 +++**Dimensione filtro**
@@ -444,7 +444,7 @@ Ulteriori informazioni sul filtro delle dimensioni sono disponibili nella [docum
 
 Una cartella è un elemento di visualizzazione di Esplora risorse che contiene record di database di un tipo di dati specifico. L&#39;eccezione è rappresentata dal tipo di cartella Generic utilizzato come elemento organizzativo e che non contiene dati, ma solo altre cartelle.
 
-Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 +++
 
@@ -452,14 +452,14 @@ Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentaz
 
 La visualizzazione Cartella è uno speciale tipo di cartella di Explorer utilizzato per visualizzare tutti i record di un tipo di dati selezionato, indipendentemente dalla cartella a cui appartiene. Le visualizzazioni cartelle vengono utilizzate come strumento amministrativo per gestire i dati partizionati o i dati distribuiti tra più cartelle.
 
-Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 +++
 
 +++**Forms**
 
 Forms definisce la rappresentazione dell’interfaccia per un tipo di schema specifico. Forms è lo strumento utilizzato per creare e modificare facilmente elementi di dati nel prodotto, ad esempio Destinatari, Consegne e Campagne. Tutti gli elementi dell’interfaccia in Adobe Campaign vengono creati nel prodotto stesso utilizzando Forms. I moduli sono facoltativi e non tutti gli schemi dispongono di moduli.
 
-Ulteriori informazioni su [Forms](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (documentazione di Campaign v8).
+Ulteriori informazioni su [Forms](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (documentazione di Campaign v8).
 +++
 
 <!--
@@ -519,7 +519,7 @@ Learn more about [Image serving](../../delivery/using/defining-the-email-content
 
 Un’interazione in entrata è un’interazione successiva a una chiamata in entrata generata dall’azione di un contatto in un canale, ad esempio web, call center o mobile. Questo tipo di interazione viene generalmente elaborato in modalità unitaria (ovvero per destinatario).
 
-Ulteriori informazioni sull&#39;[interazione in entrata](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"} (documentazione di Campaign v8).
+Ulteriori informazioni sull&#39;[interazione in entrata](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"} (documentazione di Campaign v8).
 +++
 
 +++**Rendering della casella in entrata**
@@ -588,7 +588,7 @@ Ulteriori informazioni su [Diritti denominati](../../platform/using/access-manag
 
 Lo spazio dei nomi è una partizione che separa i tipi di dati del cliente dai tipi di dati nativi di Adobe Campaign nel modello di dati. Utilizzato anche per facilitare la migrazione delle definizioni da un’istanza all’altra, ad esempio per spostare uno schema o un modello dall’istanza Sviluppo all’istanza Produzione.
 
-Ulteriori informazioni su [Spazio dei nomi](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas#identification-of-a-schema){target="_blank"} (documentazione di Campaign v8).
+Ulteriori informazioni su [Spazio dei nomi](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/schemas#identification-of-a-schema){target="_blank"} (documentazione di Campaign v8).
 +++
 
 <!--
@@ -605,7 +605,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 La struttura di navigazione è la navigazione principale nella vista Esplora di Adobe Campaign. La struttura di spostamento funziona come un browser di file, ad esempio Esplora risorse. Le cartelle possono contenere sottocartelle. Selezionando un nodo viene visualizzata la vista corrispondente al nodo. La vista visualizzata è un elenco associato a uno schema e un modulo di input per modificare la riga selezionata. È possibile personalizzare la struttura di navigazione e impostare le autorizzazioni per le cartelle.
 
-Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 +++
 
@@ -615,7 +615,7 @@ Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentaz
 
 All’interno della campagna, del programma o del piano, gli operatori possono indicare un elenco di obiettivi. Si tratta di valori quantificati da raggiungere. Al termine della campagna, del programma o del piano, il modulo MRM consente agli operatori di confrontare gli obiettivi e i risultati in report dedicati.
 
-Ulteriori informazioni sugli obiettivi nella [documentazione di Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/mrm/creating-and-managing-tasks.html#expenses-and-revenues){target=_blank}.
+Ulteriori informazioni sugli obiettivi nella [documentazione di Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/mrm/creating-and-managing-tasks.html?lang=it#expenses-and-revenues){target=_blank}.
 +++
 
 +++**Catalogo offerte**
@@ -624,7 +624,7 @@ Ulteriori informazioni sugli obiettivi nella [documentazione di Adobe Campaign v
 
 Un catalogo di offerte è un set di offerte definite in Adobe Campaign che possono essere selezionate durante un’interazione. Il catalogo è organizzato gerarchicamente e ogni nodo corrisponde a una categoria.
 
-Ulteriori informazioni su [Catalogo offerte](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-offer-catalog){target="_blank"} (documentazione di Campaign v8).
+Ulteriori informazioni su [Catalogo offerte](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction-offer-catalog){target="_blank"} (documentazione di Campaign v8).
 +++
 
 +++**Contatto offerta**
@@ -645,7 +645,7 @@ Ulteriori informazioni sull&#39;[interazione](../../interaction/using/interactio
 
 L&#39;ambiente di progettazione **dell&#39;offerta** è l&#39;ambiente in cui gli operatori creano le offerte, definiscono le regole di tipologia e selezionano lo schema di destinazione delle offerte. Anche la tabella per l’archiviazione delle proposte di offerta generate è definita dall’ambiente. Per impostazione predefinita, il componente aggiuntivo Interaction è fornito con un ambiente **Design** e un ambiente **Live** collegati. Entrambi gli ambienti sono preconfigurati per la destinazione della tabella dei destinatari incorporata.
 
-Ulteriori informazioni su [Ambienti di progettazione delle offerte](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-architecture){target="_blank"} (documentazione di Campaign v8).
+Ulteriori informazioni su [Ambienti di progettazione delle offerte](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction-architecture){target="_blank"} (documentazione di Campaign v8).
 +++
 
 +++**Arbitraggio del motore di offerta**
@@ -672,7 +672,7 @@ Ulteriori informazioni sull&#39;[interazione](../../interaction/using/interactio
 
 L’ambiente dell’offerta è la cartella principale che definisce il catalogo delle offerte, gli spazi disponibili e i filtri predefiniti dell’ambiente. Gli operatori devono creare un ambiente per ogni dimensione di targeting. Esistono due tipi di ambienti di offerta: Progettazione e Live.
 
-Ulteriori informazioni su [Ambienti di offerta](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-architecture){target="_blank"} (documentazione di Campaign v8).
+Ulteriori informazioni su [Ambienti di offerta](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction-architecture){target="_blank"} (documentazione di Campaign v8).
 +++
 
 +++**Ambiente live dell&#39;offerta**
@@ -681,7 +681,7 @@ Ulteriori informazioni su [Ambienti di offerta](https://experienceleague.adobe.c
 
 L&#39;ambiente di Offer Live è collegato a un **ambiente di progettazione** di Campaign. Contiene offerte di sola lettura il cui contenuto e idoneità sono stati approvati tramite l&#39;**ambiente di progettazione**. Possono essere selezionati per la presentazione su un sito web o per essere inseriti in un messaggio in uscita.
 
-Ulteriori informazioni su [Ambienti Offer Live](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-architecture){target="_blank"} (documentazione di Campaign v8).
+Ulteriori informazioni su [Ambienti Offer Live](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction-architecture){target="_blank"} (documentazione di Campaign v8).
 +++
 
 +++**Regole di presentazione delle offerte**
@@ -699,7 +699,7 @@ Ulteriori informazioni sulle [Regole di presentazione delle offerte](../../inter
 
 Questa è l’anteprima dell’offerta così come viene visualizzata nella sua cartella. È accessibile dalla scheda di anteprima dell’offerta o dal profilo di contatto.
 
-Ulteriori informazioni su [Anteprima offerta](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-offer#previewing-the-offer){target="_blank"} (documentazione di Campaign v8).
+Ulteriori informazioni su [Anteprima offerta](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction-offer#previewing-the-offer){target="_blank"} (documentazione di Campaign v8).
 +++
 
 +++**Proposta di offerta**
@@ -708,7 +708,7 @@ Ulteriori informazioni su [Anteprima offerta](https://experienceleague.adobe.com
 
 Una proposta di offerta è il risultato dell’azione che consiste nel presentare un’offerta a un contatto in un determinato spazio di offerta, ad esempio il banner su un sito web, un contenuto e-mail o SMS. Questo risultato viene memorizzato nella tabella delle proposte di offerta, che definisce l’offerta, il destinatario e la marca temporale, fornendo una registrazione di tutte le offerte che un destinatario ha ricevuto.
 
-Ulteriori informazioni su [Proposte di offerta](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces#offer-proposition-statuses){target="_blank"} (documentazione di Campaign v8).
+Ulteriori informazioni su [Proposte di offerta](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces#offer-proposition-statuses){target="_blank"} (documentazione di Campaign v8).
 +++
 
 +++**Rappresentazione offerta**
@@ -735,7 +735,7 @@ Ulteriori informazioni sulle [Simulazioni offerte](../../interaction/using/about
 
 Uno spazio dell’offerta è una cartella che definisce la posizione in cui l’offerta è esposta. La definizione di uno spazio consente di specificare il canale utilizzato, creare il contenuto dell’offerta e specificare le offerte presentate. Lo spazio dell’offerta è l’interfaccia tra il canale e il motore dell’offerta.
 
-Ulteriori informazioni su [Spazio offerte](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces){target="_blank"} (documentazione di Campaign v8).
+Ulteriori informazioni su [Spazio offerte](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces){target="_blank"} (documentazione di Campaign v8).
 +++
 
 +++**Temi offerta**
@@ -744,7 +744,7 @@ Ulteriori informazioni su [Spazio offerte](https://experienceleague.adobe.com/en
 
 I temi dell’offerta sono parole chiave definite in una categoria, che consente agli operatori di filtrare le offerte quando vengono presentate. I temi consentono la selezione non gerarchica delle offerte dalla struttura del catalogo.
 
-Ulteriori informazioni su [Temi offerta](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"} (documentazione di Campaign v8).
+Ulteriori informazioni su [Temi offerta](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"} (documentazione di Campaign v8).
 +++
 
 +++**Peso offerta**
@@ -753,7 +753,7 @@ Ulteriori informazioni su [Temi offerta](https://experienceleague.adobe.com/en/d
 
 Il peso dell’offerta si basa su formule che definiscono con precisione la rilevanza di un’offerta al fine di consentire al motore di selezionare l’offerta più pertinente. I pesi sono definiti nelle offerte e i moltiplicatori sono definiti nelle categorie. Le offerte idonee vengono prese in considerazione in ordine decrescente di peso.
 
-Ulteriori informazioni su [Peso offerta](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-offer#offer-weight){target="_blank"} (documentazione di Campaign v8).
+Ulteriori informazioni su [Peso offerta](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction-offer#offer-weight){target="_blank"} (documentazione di Campaign v8).
 +++
 
 +++**Operatore**
@@ -783,7 +783,7 @@ Ulteriori informazioni su [Opzioni](../../installation/using/configuring-campaig
 
 Un’interazione in uscita è una chiamata al motore di interazione da un elenco di contatti (utilizzato per la consegna di e-mail, direct mailing, ecc.). A ogni contatto vengono applicate le stesse regole e le stesse procedure. Questo tipo di interazione viene generalmente elaborato in modalità batch.
 
-Ulteriori informazioni sull&#39;[interazione in uscita](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"} (documentazione di Campaign v8).
+Ulteriori informazioni sull&#39;[interazione in uscita](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"} (documentazione di Campaign v8).
 +++
 
 +++**Esportazione/importazione pacchetto**
@@ -797,7 +797,7 @@ Ulteriori informazioni su [Esportazione/importazione pacchetto](../../platform/u
 
 Nella palette del flusso di lavoro vengono visualizzate le attività disponibili che possono essere aggiunte a un flusso di lavoro. Questo componente viene visualizzato in un formato a schede con le attività del flusso di lavoro raggruppate logicamente per il loro utilizzo. Le attività disponibili nella palette sono determinate dai componenti aggiuntivi installati nell’istanza Campaign e dal contesto di visualizzazione del flusso di lavoro.
 
-Ulteriori informazioni sulla palette sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html#add-and-link-activities){target="_blank"}.
+Ulteriori informazioni sulla palette sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=it#add-and-link-activities){target="_blank"}.
 +++
 
 +++**Monitoraggio delle prestazioni**
@@ -811,14 +811,14 @@ Ulteriori informazioni sul [Monitoraggio delle prestazioni](../../production/usi
 
 Adobe Campaign offre blocchi di personalizzazione incorporati che puoi inserire nelle consegne. Sono dinamici, personalizzati e contengono un rendering specifico. Ad esempio, puoi aggiungere un logo, un messaggio di auguri o un collegamento alla pagina mirror. Per impostazione predefinita, sono disponibili diversi blocchi di personalizzazione. Puoi anche definire blocchi di personalizzazione personalizzati che ti consentiranno di ottimizzare la personalizzazione della consegna. I dati effettivi vengono inseriti in ogni messaggio generato durante la fase di analisi della consegna.
 
-Ulteriori informazioni sui blocchi di personalizzazione nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
+Ulteriori informazioni sui blocchi di personalizzazione nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=it){target="_blank"}.
 +++
 
 +++**Campo Personalization**
 
 Un campo di personalizzazione è un singolo riferimento a un campo dati utilizzato per personalizzare una consegna per un destinatario specifico. Il valore effettivo dei dati viene inserito durante la fase di analisi della consegna.
 
-Ulteriori informazioni sui campi di personalizzazione sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-fields.html){target="_blank"}.
+Ulteriori informazioni sui campi di personalizzazione sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-fields.html?lang=it){target="_blank"}.
 +++
 
 +++**Variabili Personalization**
@@ -839,7 +839,7 @@ Ulteriori informazioni sui piani sono disponibili nella [documentazione di Campa
 
 I filtri predefiniti sono query salvate per il riutilizzo. L’utilizzo di filtri predefiniti aumenta la produttività (perché vengono creati una sola volta), aiuta a creare coerenza (perché tutti gli addetti al marketing possono utilizzarli) e riduce le competenze richieste dall’addetto al marketing perché può utilizzare codice o logica che potrebbe non essere in grado di creare.
 
-Per ulteriori informazioni sui filtri, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Per ulteriori informazioni sui filtri, consulta la [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 +++
 
 <!--
@@ -895,7 +895,7 @@ Ulteriori informazioni su [Push](../../delivery/using/about-mobile-app-channel.m
 
 In Adobe Campaign, i destinatari sono i profili predefiniti target per l’invio di consegne (e-mail, SMS, ecc.) ai tuoi clienti. I dati dei destinatari memorizzati nel database consentono di filtrare il target e aggiungere dati di personalizzazione. In genere si tratta di informazioni personali, di contatto, demografiche e transazionali, ma potrebbe trattarsi di qualsiasi tipo di informazione che supporta il marketing e l’analisi.
 
-Ulteriori informazioni su [Destinatario](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel){target="_blank"} (documentazione di Campaign v8).
+Ulteriori informazioni su [Destinatario](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/datamodel){target="_blank"} (documentazione di Campaign v8).
 +++
 
 +++**Funzione di rendering**
@@ -904,7 +904,7 @@ Ulteriori informazioni su [Destinatario](https://experienceleague.adobe.com/en/d
 
 La funzione di rendering è definita in uno spazio dell’offerta. Viene utilizzato per creare la rappresentazione dell’offerta in base agli attributi definiti nell’offerta. Esistono tre diverse modalità di funzione di rendering: HTML, XML e testo.
 
-Ulteriori informazioni sulla [Funzione di rendering](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces){target="_blank"} (documentazione di Campaign v8).
+Ulteriori informazioni sulla [Funzione di rendering](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces){target="_blank"} (documentazione di Campaign v8).
 +++
 
 <!--
@@ -957,14 +957,14 @@ Ulteriori informazioni su [Servizi](../../delivery/using/about-services-and-subs
 
 Nel Pannello di controllo, puoi interagire con tutti i server SFTP collegati alle istanze di Campaign a cui hai accesso. Il Pannello di controllo Campaign ti consente di eseguire azioni sui server SFTP, ad esempio monitorare la capacità di archiviazione, gestire gli indirizzi IP per l’inserimento nell’elenco Consentiti e gestire le chiavi SSH pubbliche.
 
-Ulteriori informazioni sulla [gestione SFTP](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
+Ulteriori informazioni sulla [gestione SFTP](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=it).
 +++
 
 +++**Attività dei servizi di abbonamento**
 
 L’attività del flusso di lavoro Subscription services ti consente di creare o eliminare un abbonamento a un servizio di informazioni per il gruppo specificato nella transizione.
 
-Ulteriori informazioni sull&#39;attività Subscription services sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html){target="_blank"}.
+Ulteriori informazioni sull&#39;attività Subscription services sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html?lang=it){target="_blank"}.
 +++
 
 +++**Approvazione target**
@@ -973,14 +973,14 @@ Ulteriori informazioni sull&#39;attività Subscription services sono disponibili
 
 L’approvazione del target è il processo in base al quale un operatore o un gruppo di operatori separato approva il target finale di una consegna (dopo che la fase di analisi ha generato il target) prima che la consegna possa essere inviata.
 
-Ulteriori informazioni sull&#39;attività di approvazione di Target sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/approval.html){target="_blank"}.
+Ulteriori informazioni sull&#39;attività di approvazione di Target sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/approval.html?lang=it){target="_blank"}.
 +++
 
 +++**Targeting dei dati**
 
 I dati di destinazione sono i dati memorizzati nella tabella di lavoro (transizione) di un flusso di lavoro. Questi dati sono disponibili all’interno della consegna per la personalizzazione del contenuto della consegna o per definire la logica degli elementi dinamici della consegna.
 
-Ulteriori informazioni sui dati di destinazione sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html#target-data){target="_blank"}.
+Ulteriori informazioni sui dati di destinazione sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html?lang=it#target-data){target="_blank"}.
 +++
 
 +++**Mappatura del target**
@@ -1002,7 +1002,7 @@ Ulteriori informazioni sulle attività di targeting sono disponibili nella [docu
 
 La dimensione di targeting è il tipo di dati prodotto (restituito) da una query o da altre attività del flusso di lavoro. Adobe Campaign restituisce solo la chiave primaria delle righe del database dei partecipanti, indipendentemente dalla query utilizzata per ottenerle.
 
-Per ulteriori informazioni sulla dimensione di targeting, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html){target="_blank"}.
+Per ulteriori informazioni sulla dimensione di targeting, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html?lang=it){target="_blank"}.
 +++
 
 +++**Attività attività**
@@ -1053,7 +1053,7 @@ Learn more about [Total database storage](../../workflow/using/about-workflows.m
 
 Il flusso di lavoro tecnico di tracciamento recupera i dati di tracciamento una volta inviata la consegna e attivato il tracciamento. Questi dati si trovano nella scheda Tracciamento della consegna. Puoi trovare informazioni per aperture e clic su un’e-mail o altre interazioni con un messaggio ricevuto dal destinatario.
 
-Ulteriori informazioni su [Registri di tracciamento in Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/tracking-logs){target="_blank"}.
+Ulteriori informazioni su [Registri di tracciamento in Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/tracking-logs){target="_blank"}.
 +++
 
 +++**Messaggistica transazionale**
@@ -1068,7 +1068,7 @@ Ulteriori informazioni sulla [messaggistica transazionale](../../message-center/
 
 Le campagne attivate sono campagne eseguite quando viene ricevuta una richiesta API in un flusso di lavoro. Le chiamate API vengono utilizzate da un’attività Signal nel flusso di lavoro che avvia l’esecuzione del flusso di lavoro.
 
-Ulteriori informazioni sulle campagne attivate sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/external-signal.html){target="_blank"}.
+Ulteriori informazioni sulle campagne attivate sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/external-signal.html?lang=it){target="_blank"}.
 +++
 
 <!--
@@ -1107,7 +1107,7 @@ Ulteriori informazioni sulle regole di tipologia sono disponibili nella [documen
 
 In modalità unitaria, un singolo contatto viene elaborato dal motore di offerta in fase di runtime. Questa modalità viene generalmente utilizzata per le interazioni in entrata e i messaggi transazionali.
 
-Ulteriori informazioni sulla [modalità unitaria](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"} (documentazione di Campaign v8).
+Ulteriori informazioni sulla [modalità unitaria](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"} (documentazione di Campaign v8).
 +++
 
 +++**Applicazioni Web**
@@ -1128,7 +1128,7 @@ Ulteriori informazioni su [Flussi di lavoro](../../workflow/using/about-workflow
 
 Il giornale di registrazione del flusso di lavoro è il registro di esecuzione passo passo di un flusso di lavoro. Contiene tutta la cronologia o l’audit trail del flusso di lavoro. Viene utilizzato a scopo di sviluppo, risoluzione dei problemi o debug.
 
-Ulteriori informazioni sul giornale di registrazione del flusso di lavoro sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
+Ulteriori informazioni sul giornale di registrazione del flusso di lavoro sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=it){target="_blank"}.
 +++
 
 +++**Tabella di lavoro**

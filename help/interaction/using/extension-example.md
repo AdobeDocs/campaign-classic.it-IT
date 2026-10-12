@@ -49,4 +49,4 @@ Nel caso di un contatto in entrata (call center o sito web), le offerte più ril
 
   ![](assets/s_ncs_configuration_offer_context.png)
 
-* Durante la configurazione delle chiamate di SOAP, inserisci l&#39;elemento XML **context** per fare riferimento alle informazioni di contesto aggiunte nello schema di interazione. Per ulteriori informazioni, consulta [Integrazione tramite SOAP (lato server)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/inbound/interaction-integration){target="_blank"} (documentazione di Campaign v8).
+* Durante la configurazione delle chiamate di SOAP, inserisci l&#39;elemento XML **context** per fare riferimento alle informazioni di contesto aggiunte nello schema di interazione. Per ulteriori informazioni, consulta [Integrazione tramite SOAP (lato server)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/inbound/interaction-integration){target="_blank"} (documentazione di Campaign v8).

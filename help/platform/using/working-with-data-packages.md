@@ -58,7 +58,7 @@ Il principio di **pacchetti di dati** consiste nell&#39;esportare una configuraz
 
 >[!NOTE]
 >
->Per ulteriori informazioni sui pacchetti dati, consulta la [documentazione di Campaign v8.](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/packages){target=_blank}
+>Per ulteriori informazioni sui pacchetti dati, consulta la [documentazione di Campaign v8.](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/packages){target=_blank}
 
 
 <!--
@@ -168,7 +168,7 @@ This mechanism is defined by two rules:
 
 >[!NOTE]
 >
->Integrity types linked to schema elements are defined in [this section](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/database-links){target="_blank"} (Campaign v8 documentation).
+>Integrity types linked to schema elements are defined in [this section](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/database-links){target="_blank"} (Campaign v8 documentation).
 
 #### Export a campaign {#exporting-a-campaign}
 

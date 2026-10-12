@@ -135,7 +135,7 @@ I gruppi di operatori predefiniti sono:
 
 1. **[!UICONTROL Offer managers]**
 
-   Gli operatori di questo gruppo possono creare e gestire le offerte. Per ulteriori informazioni, consulta questa [pagina](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-settings/interaction-operators){target="_blank"} (documentazione di Campaign v8).
+   Gli operatori di questo gruppo possono creare e gestire le offerte. Per ulteriori informazioni, consulta questa [pagina](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction-settings/interaction-operators){target="_blank"} (documentazione di Campaign v8).
    Questo gruppo contiene i seguenti diritti denominati:
 
    * **[!UICONTROL INSERT FOLDERS]**: diritto di inserire cartelle nella struttura Adobe Campaign (a condizione di disporre dei diritti di modifica per i rami interessati),

@@ -49,14 +49,14 @@ Adobe Campaign offre diversi tipi di rapporti, accessibili tramite la console de
 
 Sono disponibili i seguenti tipi di rapporto:
 
-* Report sull&#39;intera piattaforma. Consulta [Report globali](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports){target="_blank"} (documentazione di Campaign v8).
-* Rapporti di consegna, consulta [Rapporti di consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports){target="_blank"} (documentazione di Campaign v8).
-* Rapporti cumulativi, vedi [Rapporti cumulativi](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports){target="_blank"} (documentazione di Campaign v8).
+* Report sull&#39;intera piattaforma. Consulta [Report globali](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports){target="_blank"} (documentazione di Campaign v8).
+* Rapporti di consegna, consulta [Rapporti di consegna](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports){target="_blank"} (documentazione di Campaign v8).
+* Rapporti cumulativi, vedi [Rapporti cumulativi](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports){target="_blank"} (documentazione di Campaign v8).
 
 Puoi accedere ai rapporti dalla home page della console client, dal dashboard dei rapporti o dall’elenco di consegna. La modalità di visualizzazione di un report dipende dal relativo contesto. L’elenco dei rapporti principali è disponibile nella pagina Home e consente di accedere rapidamente ai dati di consegna. Questo elenco può essere modificato in base alle tue esigenze. Per ulteriori informazioni, consultare [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md).
 
-Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per informazioni su come accedere e utilizzare i rapporti incorporati, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/built-in-reports){target=_blank}.
+Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per informazioni su come accedere e utilizzare i rapporti incorporati, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/reports/ac-reports/built-in-reports){target=_blank}.
 
-[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/built-in-reports){target=_blank}
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/reports/ac-reports/built-in-reports){target=_blank}
 
 Altre possibili azioni su un report in corso di modifica sono descritte in [questa pagina](../../reporting/using/actions-on-reports.md).

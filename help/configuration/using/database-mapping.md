@@ -31,9 +31,9 @@ ht-degree: 6%
 
 Questa pagina descrive come dichiarare gli indici sui campi di uno schema.
 
-Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sul mapping SQL degli schemi, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/database-mapping){target=_blank}.
+Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sul mapping SQL degli schemi, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/database-mapping){target=_blank}.
 
-[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/database-mapping){target=_blank}
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/database-mapping){target=_blank}
 
 ## Campi indicizzati {#indexed-fields}
 
@@ -107,4 +107,4 @@ Per ulteriori informazioni, consulta i seguenti collegamenti:
 * [Introduzione agli schemi](about-schema-reference.md)
 * [Struttura dello schema](schema-structure.md)
 * [Gestione delle chiavi](database-keys.md)
-* [Gestione dei collegamenti](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/database-links){target="_blank"} (documentazione di Campaign v8)
+* [Gestione dei collegamenti](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/database-links){target="_blank"} (documentazione di Campaign v8)

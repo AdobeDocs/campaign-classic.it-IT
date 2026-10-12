@@ -82,7 +82,7 @@ Uno schema di dati è un documento XML associato al contenuto. Descrive la strut
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla creazione e la configurazione di schemi di dati in Adobe Campaign, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentazione di Campaign v8).
+>Per ulteriori informazioni sulla creazione e la configurazione di schemi di dati in Adobe Campaign, consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentazione di Campaign v8).
 >
 >Gli elementi di configurazione specifici per la gestione dei contenuti sono descritti in dettaglio in [Schemi di dati](data-schemas.md).
 
@@ -194,7 +194,7 @@ La descrizione di un modulo è un documento XML strutturato che osserva la gramm
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla creazione e la configurazione di moduli in Adobe Campaign, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (documentazione di Campaign v8).
+>Per ulteriori informazioni sulla creazione e la configurazione di moduli in Adobe Campaign, consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (documentazione di Campaign v8).
 >
 >Gli elementi di configurazione specifici per la gestione dei contenuti sono descritti in dettaglio in [Moduli di input](input-forms.md).
 

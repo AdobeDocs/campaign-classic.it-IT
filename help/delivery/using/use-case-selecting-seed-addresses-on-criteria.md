@@ -53,7 +53,7 @@ Per utilizzare la condizione dinamica, è necessario disporre di:
 
 ## Passaggio 1: creare una consegna {#step-1---creating-a-delivery}
 
-I passaggi per la creazione di una consegna sono descritti nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}.
+I passaggi per la creazione di una consegna sono descritti nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html?lang=it){target="_blank"}.
 
 In questo esempio, il responsabile della consegna ha creato la newsletter e selezionato i destinatari.
 
@@ -65,7 +65,7 @@ Per creare un valore comune come quello del nostro esempio (reparto Acquisti), d
 
 ### Estendere lo schema dati {#extending-the-data-schema}
 
-Per ulteriori dettagli sulle estensioni dello schema, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"} (documentazione di Campaign v8).
+Per ulteriori dettagli sulle estensioni dello schema, consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"} (documentazione di Campaign v8).
 
 1. Nel nodo **[!UICONTROL Administration > Configuration > Data schemas]** fare clic sull&#39;icona **[!UICONTROL New]**.
 1. Nella finestra **[!UICONTROL Creation of a data schema]**, selezionare l&#39;opzione **[!UICONTROL Extension of a schema]** e fare clic su **[!UICONTROL Next]**.
