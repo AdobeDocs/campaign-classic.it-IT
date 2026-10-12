@@ -51,7 +51,7 @@ Queste domande frequenti riguardano gli aggiornamenti della build di Campaign Cl
 
 >[!NOTE]
 >
->Per risposte complete alle domande comuni su Campaign relative a flussi di lavoro, consegne, tipi di pubblico e altro ancora, consulta le [Domande frequenti complete su Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}.
+>Per risposte complete alle domande comuni su Campaign relative a flussi di lavoro, consegne, tipi di pubblico e altro ancora, consulta le [Domande frequenti complete su Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html?lang=it){target="_blank"}.
 
 Adobe Campaign viene aggiornato regolarmente. Se conosci le nostre [Note sulla versione](../../rn/using/rn-overview.md) pubblicate, probabilmente sai che ogni anno vengono rilasciate in media 2/3 versioni secondarie complete di nuove funzioni, miglioramenti e correzioni. Inoltre, rilasciamo periodicamente build contenenti solo correzioni cumulative. Questa frequenza regolare di aggiornamenti mira a ottenere il massimo e più recente nelle tue mani, mantenendo l’ambiente completamente sicuro e ovviamente migliorando la tua esperienza con il nostro prodotto.
 
