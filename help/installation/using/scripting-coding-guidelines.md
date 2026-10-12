@@ -28,9 +28,9 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '786'
 ht-degree: 5%
 ---
 # Linee guida per scripting e codifica {#scripting-coding-guidelines}
@@ -96,7 +96,7 @@ Consulta queste pagine:
 
 Oltre al modello di protezione basato su cartelle, è possibile utilizzare i diritti denominati per limitare le azioni dell&#39;operatore:
 
-* Puoi aggiungere alcuni filtri di sistema (sysFilter) per impedire la lettura/scrittura nei tuoi dati (consulta [questa pagina](../../configuration/using/filtering-schemas.md)).
+* Puoi aggiungere alcuni filtri di sistema (sysFilter) per impedire la lettura/scrittura nei dati (consulta [questa pagina](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/filter-schema){target="_blank"} (documentazione di Campaign v8)).
 
   ```
   <sysFilter name="writeAccess">    
@@ -138,7 +138,7 @@ Il modo generale per aggiungere un captcha nel DCE consiste nel creare un blocco
 
 1. Utilizza il tipo di contenuto **[!UICONTROL Web application]** e seleziona **[!UICONTROL Visible in the customization menus]**.
 
-   Per ulteriori informazioni, consulta la [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=it){target="_blank"}.
+   Per ulteriori informazioni, consulta la [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
 
    Ecco un esempio di **Captcha campagna**:
 

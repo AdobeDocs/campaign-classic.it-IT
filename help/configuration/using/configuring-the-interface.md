@@ -24,9 +24,9 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '302'
 ht-degree: 0%
 ---
 # Configurare l’interfaccia{#configuring-the-interface}
@@ -57,7 +57,7 @@ La creazione di un nuovo modulo consente di visualizzare e modificare i dati del
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sui file di tipo **modulo**, vedere [questa pagina](../../configuration/using/identifying-a-form.md).
+   >Per ulteriori informazioni sui file di tipo **modulo**, consulta [questa pagina](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (documentazione di Campaign v8).
 
    Nell&#39;esempio corrente, il file **form** deve essere basato sullo schema **cus:individual** e quindi avere il seguente layout:
 

@@ -37,16 +37,16 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 86e1df82ff7fe9142b0ba75b697d3262e8d7a9d5
 workflow-type: tm+mt
-source-wordcount: '1551'
+source-wordcount: '1567'
 ht-degree: 13%
 ---
 # Configurare e inviare la consegna {#configuring-and-sending-the-delivery}
 
 ## Autorizzazioni{#delivery-permissions}
 
-Solo il proprietario della consegna può avviare una consegna. Per consentire ad altri operatori (o gruppi di operatori) di avviare una consegna, aggiungerli come revisori nel campo **[!UICONTROL Delivery start:]**. [Ulteriori informazioni](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
+Solo il proprietario della consegna può avviare una consegna. Per consentire ad altri operatori (o gruppi di operatori) di avviare una consegna, aggiungerli come revisori nel campo **[!UICONTROL Delivery start:]**. [Ulteriori informazioni](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval#select-reviewers){target="_blank"} (documentazione di Campaign v8).
 
 ## Parametri aggiuntivi della consegna {#delivery-additiona-parameters}
 
@@ -171,7 +171,7 @@ Per bilanciare il carico, puoi dividere le consegne in più batch. Configura il 
    >
    >È inoltre necessario concedere tempo sufficiente per i nuovi tentativi durante la configurazione degli ultimi scaglioni. Consulta [questa sezione](steps-sending-the-delivery.md#configuring-retries).
 
-1. Per monitorare gli invii, passa ai registri di consegna. Consulta [questa pagina](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
+1. Per monitorare gli invii, passa ai registri di consegna. Consulta [questa pagina](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
 
    È possibile visualizzare le consegne già inviate negli scaglioni elaborati (**[!UICONTROL Sent]** stato) e le consegne da inviare negli scaglioni rimanenti (**[!UICONTROL Pending]** stato).
 

@@ -26,9 +26,9 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '702'
 ht-degree: 2%
 ---
 # Esempi di modifica degli schemi{#examples-of-schemas-edition}
@@ -353,9 +353,9 @@ Nell’interfaccia utente non viene visualizzato un collegamento, ma un campo. Q
 
 ## Argomenti correlati
 
-* Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+* Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
-* [Introduzione agli schemi di Campaign](../../configuration/using/about-schema-edition.md)
+* [Introduzione agli schemi di Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentazione di Campaign v8)
 
 * [Aggiornamento della struttura del database](../../configuration/using/updating-the-database-structure.md)
 

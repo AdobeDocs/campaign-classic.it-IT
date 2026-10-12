@@ -24,9 +24,9 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 323ff901668895588a6e9587fa2a8b7804cf2fb4
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '465'
 ht-degree: 1%
 ---
 # Regole di presentazione{#presentation-rules}
@@ -113,7 +113,7 @@ Desideriamo inviare una proposta di prima offerta appartenente alla categoria Ca
 
    ![](assets/offer_typology_example_016.png)
 
-1. Inserisci le offerte nel corpo del messaggio e invia la consegna. Per ulteriori informazioni, consulta [Informazioni sui canali in uscita](../../interaction/using/about-outbound-channels.md).
+1. Inserisci le offerte nel corpo del messaggio e invia la consegna. Per ulteriori informazioni, consulta [Informazioni sui canali in uscita](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"} (documentazione di Campaign v8).
 
    Il destinatario ha ricevuto l’offerta per la quale è idoneo.
 

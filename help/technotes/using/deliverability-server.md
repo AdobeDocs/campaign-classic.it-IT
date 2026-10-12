@@ -36,9 +36,9 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 86e1df82ff7fe9142b0ba75b697d3262e8d7a9d5
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1071'
 ht-degree: 4%
 ---
 # Aggiornamento al nuovo server di recapito messaggi {#acc-deliverability}
@@ -103,7 +103,7 @@ In qualità di cliente on-premise, devi anche verificare che una campagna **[!UI
 1. Accedi alla sezione **Prodotti e servizi** e verifica che **Adobe Campaign** sia elencato.
 Se non riesci a visualizzare **Adobe Campaign**, contatta l&#39;[Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank} per ottenerne l&#39;aggiunta.
 1. Fai clic su **Adobe Campaign** e seleziona la tua organizzazione.
-   **Attenzione**: se hai più di un&#39;organizzazione, assicurati di selezionare quella corretta. Ulteriori informazioni sulle organizzazioni [in questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=it#ims-org-id){_blank}.
+   **Attenzione**: se hai più di un&#39;organizzazione, assicurati di selezionare quella corretta. Ulteriori informazioni sulle organizzazioni [in questa pagina](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
 
 1. Verificare che esista un **[!UICONTROL Product profile]**. In caso contrario, creala. Nessuna autorizzazione richiesta per **[!UICONTROL Product profile]**.
 
@@ -150,4 +150,4 @@ Qualsiasi istanza di Campaign non aggiornata entro il 31 agosto non sarà più i
 
 Se non aggiorni l’ambiente, la sincronizzazione delle impostazioni e-mail verrà interrotta (regole di gestione MX, regole e-mail in entrata, regole di gestione del dominio e regole di qualificazione dei messaggi non recapitati). Questo potrebbe influire sul tempo di consegna dei messaggi. Se si apportano modifiche significative a tali norme, queste dovranno essere applicate manualmente a partire da questo momento.
 
-Per le istanze MKT, è interessato solo [Elenco di soppressione globale](../../campaign-opt/using/filtering-rules.md#default-deliverability-exclusion-rules).
+Per le istanze MKT, è interessato solo [Elenco di soppressione globale](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/filtering-rules#default-deliverability-exclusion-rules){target="_blank"} (documentazione di Campaign v8).

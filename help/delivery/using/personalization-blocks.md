@@ -37,9 +37,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 323ff901668895588a6e9587fa2a8b7804cf2fb4
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '992'
 ht-degree: 8%
 ---
 # Blocchi di personalizzazione{#personalization-blocks}
@@ -145,7 +145,7 @@ Per impostazione predefinita, è disponibile un elenco di blocchi di personalizz
 * **[!UICONTROL Registration confirmation]** : inserisce un collegamento che consente di confermare la sottoscrizione.
 * **[!UICONTROL Social network sharing links]** : inserisce pulsanti che consentono al destinatario di condividere un collegamento al contenuto della pagina speculare con il client di posta elettronica, Facebook, X (precedentemente noto come Twitter) e LinkedIn (vedere [Marketing virale: inoltro a un amico](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
 * **[!UICONTROL Style of content emails]** e **[!UICONTROL Notification style]** : genera codice che formatta un messaggio e-mail con stili HTML predefiniti. Questi blocchi devono essere inseriti nel codice sorgente della consegna, nella sezione **[!UICONTROL ...]**, in **`<style>...</style>`** tag.
-* **[!UICONTROL Offer acceptance URL in unitary mode]** : inserisce un URL che consente di impostare un&#39;offerta di interazione su **[!UICONTROL Accepted]** (vedere [questa sezione](../../interaction/using/offer-analysis-report.md)).
+* **[!UICONTROL Offer acceptance URL in unitary mode]** : inserisce un URL che consente di impostare un&#39;offerta di interazione su **[!UICONTROL Accepted]** (consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-tracking){target="_blank"} (documentazione di Campaign v8).
 
 ## Definire i blocchi di personalizzazione personalizzati {#defining-custom-personalization-blocks}
 
@@ -177,6 +177,6 @@ Per creare un blocco di personalizzazione, passa a Esplora e applica i seguenti 
 
 Scopri come creare blocchi di contenuto dinamici e come utilizzarli per personalizzare il contenuto della consegna e-mail.
 
->[!VIDEO](https://video.tv.adobe.com/v/340471?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
 
 Ulteriori video dimostrativi di Campaign Classic sono disponibili [qui](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=it).
