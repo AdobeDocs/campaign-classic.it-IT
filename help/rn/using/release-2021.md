@@ -41,7 +41,7 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
+source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
 workflow-type: tm+mt
 source-wordcount: '2702'
 ht-degree: 98%
@@ -87,7 +87,7 @@ _7 settembre 2021_
 **Altre modifiche**
 
 * È stata risolta una regressione introdotta in 21.1.3 con un nuovo guardrail del il flusso di lavoro di fatturazione. Il flusso di lavoro di fatturazione veniva eseguito su istanze errate e si verificava un arresto anomalo durante il tentativo di inviare il rapporto di fatturazione che non veniva generato. Per applicare la correzione, è necessario riavviare manualmente il flusso di lavoro.
-* I connettori Microsoft CRM precedentemente dichiarati obsoleti (per implementazioni Office 365 e on-premise) sono stati rimossi dall’interfaccia. [Ulteriori informazioni](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
+* I connettori Microsoft CRM precedentemente dichiarati obsoleti (per implementazioni Office 365 e on-premise) sono stati rimossi dall’interfaccia. [Ulteriori informazioni](../../platform/using/crm-connectors.md)
 * In seguito alla migrazione a Tomcat 8, lo script di installazione di IIS è stato aggiornato per risolvere i problemi di integrazione di IIS. (NEO-31019)
 * L’identificazione dell’origine dati è stata migliorata nelle schede dati e schema della finestra **Visualizza popolazione** delle transizioni del flusso di lavoro.
 * Sono stati aggiunti gli indici di database mancanti ai seguenti schemi, al fine di evitare problemi di aggiornamento del database: xtk:rights, nms:dlvExclusion, nms:seedMember, nms:trackingUrl
@@ -124,7 +124,7 @@ _5 giugno 2021_
 <td>
 <p>La nuova attività <b>Change Data Source</b> consente di cambiare l’origine dati della tabella di lavoro di un flusso di lavoro. Questa possibilità offre maggiore flessibilità nella gestione dei dati tra diverse origini dati (FDA e database locale).</p>
 <p>Nei flussi di lavoro di Adobe Campaign, i dati vengono gestiti utilizzando tabelle di lavoro (o temporanee). Durante l’esecuzione del flusso di lavoro, le tabelle di lavoro condividono i dati tra le varie attività del flusso di lavoro. Per impostazione predefinita, le tabelle di lavoro vengono create sullo stesso database dell’origine dei dati su cui si eseguono le query.</p>
-<p>Per ulteriori informazioni, consulta la <a href="https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/wf-activities/targeting-activities/change-data-source" target="_blank">documentazione dettagliata</a> (documentazione di Campaign v8).</p>
+<p>Per ulteriori informazioni, consulta la <a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/change-data-source" target="_blank">documentazione dettagliata</a> (documentazione di Campaign v8).</p>
 </td>
 </tr>
 </tbody>
@@ -226,7 +226,7 @@ Ulteriori informazioni sono disponibili nella pagina [Funzioni obsolete e rimoss
 **Miglioramenti**
 
 * Durante il salvataggio di un flusso di lavoro sono stati aggiunti ulteriori controlli per verificare che i nomi delle attività siano univoci e che le transizioni siano sempre seguite da un’attività.
-* Il flusso di lavoro tecnico **Fatturazione (fatturazione)** ora include le attività originariamente eseguite dal flusso di lavoro **Numero di profili di fatturazione attivi** (billingActiveContactCount), che è stato rimosso. Il rapporto e-mail inviato ogni mese dal flusso di lavoro fornisce ora informazioni sul numero di profili attivi nell’istanza. [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"} (documentazione di Campaign v8).
+* Il flusso di lavoro tecnico **Fatturazione (fatturazione)** ora include le attività originariamente eseguite dal flusso di lavoro **Numero di profili di fatturazione attivi** (billingActiveContactCount), che è stato rimosso. Il rapporto e-mail inviato ogni mese dal flusso di lavoro fornisce ora informazioni sul numero di profili attivi nell’istanza. [Ulteriori informazioni](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"} (documentazione di Campaign v8).
 * È stato aggiunto il nuovo attributo **_keyOnMData** per poter utilizzare una chiave per le operazioni sui dati per memoria.
 
 **Altre modifiche**

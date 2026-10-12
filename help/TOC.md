@@ -8,9 +8,9 @@ user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: 4bc1e76d129c6a6aa15b7e3915232043bd6f4286
+source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
 workflow-type: tm+mt
-source-wordcount: '1992'
+source-wordcount: '1953'
 ht-degree: 100%
 ---
 
@@ -51,11 +51,7 @@ ht-degree: 100%
     + [Rinuncia alla vendita di informazioni personali](platform/using/privacy-requests-ccpa.md)
   + Gestione dei profili {#profile-management}
     + [Informazioni sui profili](platform/using/about-profiles.md)
-    + {hide-from-toc}[Modificare un profilo - NASCOSTO](platform/using/editing-a-profile.md)
-    + {hide-from-toc}[Aggiungere profili - NASCOSTO](platform/using/adding-profiles.md)
-    + {hide-from-toc}[Gestire i profili - NASCOSTO](platform/using/managing-profiles.md)
     + [Aggiornare i dati](platform/using/updating-data.md)
-    + {hide-from-toc}[Importare ed esportare i profili - NASCOSTO](platform/using/exporting-and-importing-profiles.md)
     + [Creare e gestire gli elenchi](platform/using/creating-and-managing-lists.md)
   + Importare ed esportare dati {#importing-and-exporting-data}
     + [Introduzione all’importazione e l’esportazione dei dati](platform/using/get-started-data-import-export.md)
@@ -75,9 +71,7 @@ ht-degree: 100%
       + [Best practice per l’importazione e l’esportazione](platform/using/import-export-best-practices.md)
       + [Best practice e risoluzione dei problemi per il server SFTP](platform/using/sftp-server-usage.md)
   + Filtrare i dati {#filtering-data}
-    + {hide-from-toc}[Opzioni di filtro - NASCOSTO](platform/using/filtering-options.md)
     + {hide-from-toc}[Creare filtri - NASCOSTO](platform/using/creating-filters.md)
-    + {hide-from-toc}[Caso d’uso - nascosto](platform/using/use-case.md)
   + {hide-from-toc}[Passaggi per creare una query - NASCOSTO](platform/using/steps-to-create-a-query.md)
   + {hide-from-toc}[Definire le condizioni del filtro - NASCOSTO](platform/using/defining-filter-conditions.md)
   + Autorizzazioni {#permissions}
@@ -86,12 +80,8 @@ ht-degree: 100%
       + [Creare e gestire gli operatori](platform/using/access-management-operators.md)
       + [Creare e gestire i gruppi](platform/using/access-management-groups.md)
     + [Utilizzare i diritti denominati per impostare le autorizzazioni](platform/using/access-management-named-rights.md)
-    + {hide-from-toc}[Gestire l’accesso alle cartelle - NASCOSTO](platform/using/access-management-folders.md)
   + Connettori CRM {#connectors}
     + [Introduzione ai connettori CRM](platform/using/crm-connectors.md)
-    + {hide-from-toc}[Connessione con Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
-    + {hide-from-toc}[Connessione con Salesforce.com](platform/using/crm-sfdc.md)
-    + {hide-from-toc}[Sincronizzare i dati con il CRM](platform/using/crm-data-sync.md)
 + Creare e inviare messaggi {#sending-messages}
   + [Introduzione ai messaggi](delivery/using/communication-channels.md)
   + {hide-from-toc}[Impostazioni di consegna - NASCOSTO](delivery/using/delivery-settings.md)

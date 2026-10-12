@@ -32,7 +32,7 @@ subfeature_v2:
     internal-label: Access management
   - id: e8d937ec-9046-41b5-834b-d22a624e0d37
     internal-label: Campaign overview
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
 workflow-type: tm+mt
 source-wordcount: '3000'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Adobe Campaign consente di importare nel database dati da uno o più file in for
 
 >[!NOTE]
 >
->È possibile importare dati senza eseguirne il mapping con i dati del database utilizzando la funzione **[!UICONTROL Import a list]**. I dati possono quindi essere utilizzati esclusivamente nei flussi di lavoro tramite l&#39;oggetto **[!UICONTROL Read list]**. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html?lang=it){target="_blank"}.
+>È possibile importare dati senza eseguirne il mapping con i dati del database utilizzando la funzione **[!UICONTROL Import a list]**. I dati possono quindi essere utilizzati esclusivamente nei flussi di lavoro tramite l&#39;oggetto **[!UICONTROL Read list]**. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html){target="_blank"}.
 
 L’assistente all’importazione ti consente di configurare un’importazione, definirne le opzioni (ad esempio, la trasformazione dei dati) e avviarne l’esecuzione. Si tratta di una serie di schermate il cui contenuto dipende dal tipo di importazione (semplice o multipla) e dai diritti dell’operatore.
 
@@ -109,7 +109,7 @@ Il collegamento **[!UICONTROL Advanced parameters]** consente di accedere alle o
 
   * **[!UICONTROL Do not update enumerations]**
 
-    Selezionare questa opzione per evitare di arricchire l&#39;elenco dei valori enumerati nel database. Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+    Selezionare questa opzione per evitare di arricchire l&#39;elenco dei valori enumerati nel database. Scopri come **utilizzare le enumerazioni** nella [documentazione di Adobe Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 
 * Scheda **[!UICONTROL Variables]**
@@ -316,7 +316,7 @@ Il passaggio successivo dell’assistente all’importazione consente di selezio
 
      >[!NOTE]
      >
-     >La cartella predefinita di un operatore è la prima cartella per la quale l&#39;operatore dispone dell&#39;accesso in scrittura. Ulteriori informazioni in [Gestione accesso alle cartelle](../../platform/using/access-management-folders.md).
+     >La cartella predefinita di un operatore è la prima cartella per la quale l&#39;operatore dispone dell&#39;accesso in scrittura. Ulteriori informazioni in [Gestione accesso alle cartelle](access-management.md).
 
      Per selezionare la cartella di importazione, fare clic sulla freccia a destra del campo **[!UICONTROL Folder]** e selezionare la cartella interessata. È inoltre possibile utilizzare l&#39;icona **[!UICONTROL Select link]** per visualizzare la struttura in una nuova finestra o creare una nuova cartella.
 
