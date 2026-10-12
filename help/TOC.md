@@ -8,9 +8,9 @@ user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
+source-git-commit: 4bc1e76d129c6a6aa15b7e3915232043bd6f4286
 workflow-type: tm+mt
-source-wordcount: '2298'
+source-wordcount: '1992'
 ht-degree: 100%
 ---
 
@@ -29,7 +29,6 @@ ht-degree: 100%
     + {hide-from-toc}[[!DNL Gold Standard - HIDDEN]](rn/using/gold-standard.md)
   + [Funzioni obsolete](rn/using/deprecated-features.md)
   + [Matrice di compatibilità](rn/using/compatibility-matrix.md)
-  + {hide-from-toc}[Aggiornamenti alla documentazione - NASCOSTO](rn/using/documentation-updates.md)
 + Introduzione {#getting-started}
   + [Introduzione ad Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
   + [Avviare Adobe Campaign](platform/using/launching-adobe-campaign.md)
@@ -93,7 +92,6 @@ ht-degree: 100%
     + {hide-from-toc}[Connessione con Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
     + {hide-from-toc}[Connessione con Salesforce.com](platform/using/crm-sfdc.md)
     + {hide-from-toc}[Sincronizzare i dati con il CRM](platform/using/crm-data-sync.md)
-  + {hide-from-toc}[Opzioni di assistenza e supporto - NASCOSTE](support.md)
 + Creare e inviare messaggi {#sending-messages}
   + [Introduzione ai messaggi](delivery/using/communication-channels.md)
   + {hide-from-toc}[Impostazioni di consegna - NASCOSTO](delivery/using/delivery-settings.md)
@@ -208,42 +206,6 @@ ht-degree: 100%
     + [Arricchire il contenuto](delivery/using/enriching-content.md)
     + [Automatizzare tramite flussi di lavoro](delivery/using/automating-via-workflows.md)
 + [Orchestrare campagne di marketing](campaign/using/about-marketing-campaigns.md)
-+ Orchestrare campagne di marketing {#orchestrating-campaigns}
-  + {hide-from-toc}[Informazioni sull’ottimizzazione delle campagne - NASCOSTO](campaign-opt/using/about-campaign-optimization.md)
-  + Informazioni sulle campagne di marketing {#about-marketing-campaigns}
-    + {hide-from-toc}[Progettare campagne di marketing - NASCOSTO](campaign/using/designing-marketing-campaigns.md)
-    + {hide-from-toc}[Accedere alle campagne di marketing - NASCOSTO](campaign/using/accessing-marketing-campaigns.md)
-  + Orchestrare le campagne {#orchestrate-campaigns}
-    + {hide-from-toc}[Introduzione alle campagne di marketing - NASCOSTO](campaign/using/setting-up-marketing-campaigns.md)
-    + {hide-from-toc}[Creare e configurare modelli - NASCOSTO](campaign/using/marketing-campaign-templates.md)
-    + {hide-from-toc}[Aggiungere consegne - NASCOSTO](campaign/using/marketing-campaign-deliveries.md)
-    + {hide-from-toc}[Selezionare il pubblico - NASCOSTO](campaign/using/marketing-campaign-target.md)
-    + {hide-from-toc}[Gestire documenti e risorse - NASCOSTO](campaign/using/marketing-campaign-assets.md)
-    + {hide-from-toc}[Configurare e gestire le approvazioni - NASCOSTO](campaign/using/marketing-campaign-approval.md)
-    + {hide-from-toc}[Monitorare le campagne - NASCOSTO](campaign/using/marketing-campaign-monitoring.md)
-    + {hide-from-toc}[Fornitori, scorte e budget - NASCOSTO](campaign/using/providers-stocks-and-budgets.md)
-  + Ottimizzazione delle campagne {#campaign-optimization}
-    + {hide-from-toc}[Informazioni sulle tipologie di campagne - NASCOSTO](campaign-opt/using/about-campaign-typologies.md)
-    + {hide-from-toc}[Regole di pressione - NASCOSTO](campaign-opt/using/pressure-rules.md)
-    + {hide-from-toc}[Regole di coerenza - NASCOSTO](campaign-opt/using/consistency-rules.md)
-    + {hide-from-toc}[Regole di controllo - NASCOSTO](campaign-opt/using/control-rules.md)
-    + {hide-from-toc}[Regole di filtro - NASCOSTO](campaign-opt/using/filtering-rules.md)
-    + {hide-from-toc}[Applicare regole - NASCOSTO](campaign-opt/using/applying-rules.md)
-    + {hide-from-toc}[Simulazioni delle campagne - NASCOSTO](campaign-opt/using/campaign-simulations.md)
-+ Gestione delle risorse marketing {#mrm}
-  + {hide-from-toc}[Informazioni sulla gestione delle risorse marketing - NASCOSTO](mrm/using/about-marketing-resource-management.md)
-  + {hide-from-toc}[Creare e gestire le attività - NASCOSTO](mrm/using/creating-and-managing-tasks.md)
-  + {hide-from-toc}[Controllare i costi - NASCOSTO](mrm/using/controlling-costs.md)
-  + {hide-from-toc}[Gestire le risorse di marketing - NASCOSTO](mrm/using/managing-marketing-resources.md)
-  + {hide-from-toc}[Forum di discussione - NASCOSTO](mrm/using/discussion-forums.md)
-+ Marketing distribuito {#distributed-marketing}
-  + {hide-from-toc}[Informazioni sul marketing distribuito - NASCOSTO](distributed/using/about-distributed-marketing.md)
-  + {hide-from-toc}[Creare una campagna locale - NASCOSTO](distributed/using/creating-a-local-campaign.md)
-  + {hide-from-toc}[Creare una campagna collaborativa - NASCOSTO](distributed/using/creating-a-collaborative-campaign.md)
-  + {hide-from-toc}[Pubblicare il pacchetto campagna - NASCOSTO](distributed/using/publishing-the-campaign-package.md)
-  + {hide-from-toc}[Accedere alle campagne - NASCOSTO](distributed/using/accessing-campaigns.md)
-  + {hide-from-toc}[Tracciare una campagna - NASCOSTO](distributed/using/tracking-a-campaign.md)
-  + {hide-from-toc}[Casi d’uso - NASCOSTO](distributed/using/examples.md)
 + Response Manager {#response-manager}
   + [Introduzione a Gestione risposte](response/using/about-response-manager.md)
   + [Configurazione](response/using/configuration.md)
@@ -252,18 +214,12 @@ ht-degree: 100%
   + [Tracciamento delle ipotesi](response/using/hypothesis-tracking.md)
 + Progettare e condividere i rapporti {#reporting}
   + Introduzione al reporting {#reporting-in-adobe-campaign}
-    + [Strumenti di reporting](reporting/using/about-adobe-campaign-reporting-tools.md)
     + [Best practice per il reporting](reporting/using/best-practices.md)
   + Accedere ai rapporti incorporati {#accessing-built-in-reports}
     + [Informazioni sui rapporti incorporati](reporting/using/about-campaign-built-in-reports.md)
     + [Elenco dei rapporti](reporting/using/list-of-reports.md)
   + Rapporti sulle consegne{#reports-on-deliveries}
-    + [Informazioni sui rapporti sulle consegne](reporting/using/reports-on-deliveries.md)
-    + [Rapporti globali](reporting/using/global-reports.md)
-    + [Rapporti di consegna](reporting/using/delivery-reports.md)
-    + [Rapporti cumulativi](reporting/using/cumulative-reports.md)
     + [Calcolo indicatore](reporting/using/indicator-calculation.md)
-    + [Persone e destinatari](reporting/using/person-people-recipients.md)
   + Analizzare le popolazioni {#analyzing-populations}
     + [Che cos’è l’analisi descrittiva](reporting/using/about-descriptive-analysis.md)
     + [Creare il primo rapporto di analisi descrittiva](reporting/using/using-the-descriptive-analysis-wizard.md)
@@ -366,22 +322,7 @@ ht-degree: 100%
 + Gestire le offerte {#managing-offers}
   + Introduzione all’interazione {#interaction-overview}
     + [Gestione dell’interazione e delle offerte](interaction/using/interaction-and-offer-management.md)
-    + [Glossario](interaction/using/i-glossary.md)
-    + [Best practice di interazione](interaction/using/interaction-best-practices.md)
-  + Funzionamento generale {#general-operation}
-    + [Passaggi di implementazione](interaction/using/implementation-steps.md)
-    + [Principi fondamentali](interaction/using/fundamental-principles.md)
-  + Gestire gli ambienti {#managing-environments}
-    + [Panoramica sugli ambienti](interaction/using/environments-overview.md)
-    + [Profili operatore](interaction/using/operator-profiles.md)
-    + [Ambienti di progettazione e Live](interaction/using/live-design-environments.md)
-    + [Creare spazi dell’offerta](interaction/using/creating-offer-spaces.md)
-    + [Creare filtri preimpostati](interaction/using/creating-predefined-filters.md)
   + Gestire un catalogo delle offerte {#managing-an-offer-catalog}
-    + [Panoramica del catalogo delle offerte](interaction/using/offer-catalog-overview.md)
-    + [Creare categorie di offerta](interaction/using/creating-offer-categories.md)
-    + [Consigliare una categoria](interaction/using/recommending-a-category.md)
-    + [Creare un’offerta](interaction/using/creating-an-offer.md)
     + [Approvare e attivare un’offerta](interaction/using/approving-and-activating-an-offer.md)
     + [Gestire i modelli di offerta](interaction/using/managing-offer-templates.md)
     + [Gestire la presentazione delle offerte](interaction/using/managing-offer-presentation.md)
@@ -390,18 +331,6 @@ ht-degree: 100%
     + [Impostazioni di esecuzione](interaction/using/execution-settings.md)
     + [Ambito della simulazione](interaction/using/simulation-scope.md)
     + [Tracciamento della simulazione](interaction/using/simulation-tracking.md)
-  + Consegnare un’offerta {#delivering-an-offer}
-    + [Informazioni sui canali in uscita](interaction/using/about-outbound-channels.md)
-    + [Integrare un’offerta tramite l’assistente](interaction/using/integrating-an-offer-via-the-wizard.md)
-    + [Integrare un’offerta tramite un flusso di lavoro](interaction/using/integrating-an-offer-via-a-workflow.md)
-  + Interazioni unitarie {#unitary-interactions}
-    + [Informazioni sui canali in entrata](interaction/using/about-inbound-channels.md)
-    + [Integrazione tramite JavaScript (lato client)](interaction/using/integration-via-javascript-client-side.md)
-    + [Integrazione tramite SOAP (lato server)](interaction/using/integration-via-soap-server-side.md)
-    + [Interazioni anonime](interaction/using/anonymous-interactions.md)
-  + Tracciare le offerte {#tracking-offers}
-    + [Cronologia delle proposte di offerta](interaction/using/offer-proposition-history.md)
-    + [Rapporto di analisi delle offerte](interaction/using/offer-analysis-report.md)
   + Parametri avanzati {#advanced-parameters}
     + [Utilizzare parametri avanzati](interaction/using/using-advanced-parameters.md)
     + [Dati aggiuntivi](interaction/using/additional-data.md)
@@ -421,19 +350,7 @@ ht-degree: 100%
     + [Configurare le istanze](message-center/using/configuring-instances.md)
     + [Configurazioni aggiuntive](message-center/using/additional-configurations.md)
   + Modelli di messaggi {#message-templates}
-    + [Creare tipi di evento](message-center/using/creating-event-types.md)
-    + [Progettare modelli di messaggio](message-center/using/creating-the-message-template.md)
     + [Testare modelli di messaggio](message-center/using/testing-message-templates.md)
-    + [Pubblicare modelli di messaggio](message-center/using/publishing-message-templates.md)
-  + Elaborazione di eventi transazionali {#processing}
-    + [Descrizione di un evento](message-center/using/event-description.md)
-    + [Elaborazione di eventi](message-center/using/about-event-processing.md)
-    + [Esecuzione della consegna](message-center/using/delivery-execution.md)
-  + Rapporti {#reports}
-    + [Accedere ai rapporti di messaggistica transazionale](message-center/using/about-transactional-messaging-reports.md)
-    + [Cronologia degli eventi del Centro messaggi](message-center/using/history-of-message-center-events.md)
-    + [Livello di servizio del Centro messaggi](message-center/using/message-center-service-level.md)
-    + [Tempo di elaborazione del Centro messaggi](message-center/using/message-center-processing-time.md)
   + [Caso d’uso](message-center/using/transactional-email-with-attachments.md)
 + Integrare con i social media {#integrating-with-social-media}
   + [Informazioni sul social marketing](social/using/about-social-marketing.md)
@@ -591,7 +508,6 @@ ht-degree: 100%
 + Guida per sviluppatori {#configuring-campaign-classic}
   + [Pacchetti di dati](platform/using/working-with-data-packages.md)
   + Modello dati {#data-model}
-    + [Informazioni sul modello dati](configuration/using/about-data-model.md)
     + [Descrizione del modello dati](configuration/using/data-model-description.md)
     + [Best practice](configuration/using/data-model-best-practices.md)
   + Utilizzare gli schemi {#schema-reference}
@@ -599,7 +515,6 @@ ht-degree: 100%
     + [Struttura dello schema](configuration/using/schema-structure.md)
     + [Mappatura del database](configuration/using/database-mapping.md)
     + [Gestione delle chiavi](configuration/using/database-keys.md)
-    + [Gestione collegamenti](configuration/using/database-links.md)
     + Elementi e attributi {#elements-attributes}
       + [Introduzione](configuration/using/schema-introduction.md)
       + [Attributo](configuration/using/schema/attribute.md)
@@ -620,21 +535,15 @@ ht-degree: 100%
       + [Elemento “sysfilter”](configuration/using/schema/sysfilter.md)
       + [Elemento “value”](configuration/using/schema/value.md)
   + Modifica degli schemi {#editing-schemas}
-    + [Informazioni sulla modifica degli schemi](configuration/using/about-schema-edition.md)
-    + [Schemi di dati](configuration/using/data-schemas.md)
     + [Schema di una tabella esistente](configuration/using/schema-of-an-existing-table.md)
     + [Estensione di uno schema](configuration/using/extending-a-schema.md)
-    + [Filtraggio degli schemi](configuration/using/filtering-schemas.md)
-    + [Limitare la visualizzazione dei dati personali](configuration/using/restricting-pii-view.md)
     + [Aggiornamento della struttura del database](configuration/using/updating-the-database-structure.md)
     + [Nuovo assistente ai campi](configuration/using/new-field-wizard.md)
     + [Struttura di uno schema di dati](configuration/using/structure-of-a-data-schema.md)
     + [Rigenerazione degli schemi](configuration/using/regenerating-schemas.md)
     + [Esempi di modifica degli schemi](configuration/using/examples-of-schemas-edition.md)
   + Moduli di input {#input-forms}
-    + [Identificare un modulo](configuration/using/identifying-a-form.md)
     + [Modificare i moduli](configuration/using/editing-forms.md)
-    + [Struttura di un modulo](configuration/using/form-structure.md)
   + API {#api}
     + [Informazioni sui servizi web](configuration/using/about-web-services.md)
     + [Chiamate per servizi web](configuration/using/web-service-calls.md)
@@ -686,13 +595,11 @@ ht-degree: 100%
     + [Migrazione degli operatori tecnici a Developer Console](technotes/using/ims-migration.md)
     + [Impatto dell’interfaccia dopo la migrazione IMS](technotes/using/impact-ims-migration.md)
   + Aggiornamenti e compatibilità{#technote-migration}
-    + {hide-from-toc}[Note tecniche](technotes/using/technote.md)
     + [Abilitare Microsoft Edge Chromium](technotes/using/edge-chromium.md)
     + {hide-from-toc}[Nuovo server di recapito messaggi](technotes/using/deliverability-server.md)
     + {hide-from-toc}[Aggiornamento di sicurezza Apache](technotes/using/acc-apache-upgrade.md)
     + {hide-from-toc}[Aggiornamenti del sistema 2023](technotes/using/tech-stack-upgrade.md)
     + {hide-from-toc}[Aggiornamenti IMS](technotes/using/ims-updates.md)
-    + {hide-from-toc}[Fine del ciclo di vita del supporto per TLS 1.0 e 1.1](technotes/using/eol-tls-support.md)
     + {hide-from-toc}[Eseguire la migrazione all’API di Adobe Analytics 2.0](technotes/using/analytics-2-migration.md)
   + E-mail e notifiche push{#technotes-email}
     + [Protezione della privacy della posta su Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)

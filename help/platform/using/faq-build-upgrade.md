@@ -40,7 +40,7 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 4bc1e76d129c6a6aa15b7e3915232043bd6f4286
 workflow-type: tm+mt
 source-wordcount: '2105'
 ht-degree: 2%
@@ -212,7 +212,7 @@ Sì. Il server viene arrestato durante un aggiornamento per garantire l&#39;inte
 
 Se riscontri problemi dopo un aggiornamento della build, contatta l&#39;[Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). L’Assistenza clienti pianifica le date di build e apre i ticket relativi all’aggiornamento della build.
 
-Ulteriori informazioni in [Opzioni di assistenza e supporto per Campaign Classic](../../support.md)
+Ulteriori informazioni in [Opzioni di assistenza e supporto per Campaign Classic](../../campaign-classic-home.md)
 
 ## Elenco di controllo per l’aggiornamento della build {#check-list}
 
@@ -252,5 +252,5 @@ tutti i contenuti vengono visualizzati e presenti.
 
 * [Esecuzione di un aggiornamento della build](../../production/using/build-upgrade.md)
 * [Note sulla versione di Campaign Classic](../../rn/using/rn-overview.md)
-* [Opzioni di assistenza e supporto per Campaign Classic](../../support.md)
+* [Opzioni di assistenza e supporto per Campaign Classic](../../campaign-classic-home.md)
 * [Programma di aggiornamento annuale](../../rn/using/rn-overview.md#yearly-upgrade)
