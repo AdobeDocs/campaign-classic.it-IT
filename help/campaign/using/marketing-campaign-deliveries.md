@@ -83,7 +83,7 @@ Dopo aver concesso tutte le approvazioni, lo stato di consegna cambia in **[!UIC
 
 >[!NOTE]
 >
->I flussi di lavoro tecnici relativi al pacchetto Campaign sono presentati in [Elenco dei flussi di lavoro tecnici](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"} (documentazione di Campaign v8).
+>I flussi di lavoro tecnici relativi al pacchetto Campaign sono presentati in [Elenco dei flussi di lavoro tecnici](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"} (documentazione di Campaign v8).
 
 **Passaggio 1 - Approvazione file**
 

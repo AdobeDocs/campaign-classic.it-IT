@@ -71,7 +71,7 @@ L’attività Enrichment ti consente di aggiungere offerte o collegamenti alle o
 
 >[!NOTE]
 >
->Per ulteriori informazioni sull&#39;attività di arricchimento, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}.
+>Per ulteriori informazioni sull&#39;attività di arricchimento, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=it){target="_blank"}.
 
 Ad esempio, puoi arricchire i dati di una query del destinatario prima di una consegna.
 
@@ -84,7 +84,7 @@ Esistono due metodi per specificare le proposte di offerta.
 
 ### Specifica di un’offerta o di una chiamata al motore di offerta {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
-Dopo aver configurato la query (consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}):
+Dopo aver configurato la query (consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=it){target="_blank"}):
 
 1. Aggiungi e apri un’attività di arricchimento.
 1. Nella scheda **[!UICONTROL Enrichment]**, selezionare **[!UICONTROL Add data]**.
@@ -162,7 +162,7 @@ Questa attività funziona sullo stesso principio dell’attività di arricchimen
 
 ![](assets/int_offerengine_activity2.png)
 
-Dopo aver configurato la query (consulta la [guida dei flussi di lavoro](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} (documentazione di Campaign v8):
+Dopo aver configurato la query (consulta la [guida dei flussi di lavoro](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} (documentazione di Campaign v8):
 
 1. Aggiungi e apri un&#39;attività **[!UICONTROL Offer engine]**.
 1. Completa i vari campi disponibili per specificare i parametri del motore di offerta della chiamata (spazio dell’offerta, categoria o temi, data di contatto, numero di offerte da mantenere). Il motore calcola automaticamente le offerte da aggiungere in base a questi parametri.

@@ -65,15 +65,15 @@ L’installazione dei pacchetti Linux è stata aggiornata per la versione v7.4.1
 
 È stata aggiornata la sezione Note sulla versione con miglioramenti, aggiornamenti di compatibilità e patch della versione 7.4.1. [Ulteriori informazioni](latest-release.md)
 
-È stata aggiunta una nota per specificare come cancellare le variabili di istanza al riavvio dei flussi di lavoro. [Ulteriori informazioni](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow){target="_blank"} (documentazione di Campaign v8)
+È stata aggiunta una nota per specificare come cancellare le variabili di istanza al riavvio dei flussi di lavoro. [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow){target="_blank"} (documentazione di Campaign v8)
 
 ### Aprile 2024 {#apr-2024}
 
 È stata aggiunta una nota di avviso per informare sulla creazione di utenti con Adobe Identity Management System (IMS). [Ulteriori informazioni](../../platform/using/access-management.md)
 
-Sono state aggiunte opzioni mancanti per l’attività del flusso di lavoro Download web. [Ulteriori informazioni](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/event-activities/web-download){target="_blank"} (documentazione di Campaign v8)
+Sono state aggiunte opzioni mancanti per l’attività del flusso di lavoro Download web. [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/wf-activities/event-activities/web-download){target="_blank"} (documentazione di Campaign v8)
 
-È stata aggiunta una nota di avviso alle attività **Cambia dimensione** e **Cambia origine dati** relative al rispettivo utilizzo in un flusso di lavoro. [Ulteriori informazioni](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/change-data-source){target="_blank"} (documentazione di Campaign v8)
+È stata aggiunta una nota di avviso alle attività **Cambia dimensione** e **Cambia origine dati** relative al rispettivo utilizzo in un flusso di lavoro. [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/wf-activities/targeting-activities/change-data-source){target="_blank"} (documentazione di Campaign v8)
 
 ### Marzo 2024 {#mar-2024}
 

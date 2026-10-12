@@ -147,7 +147,7 @@ Le campagne ricorrenti vengono create da un modello specifico che definisce il m
 
    ![](assets/s_ncs_user_op_template_recur_planning.png)
 
-   La modalità di configurazione della pianificazione di esecuzione coincide con l&#39;oggetto **[!UICONTROL Scheduler]** del flusso di lavoro. Per ulteriori informazioni, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler){target="_blank"} (documentazione di Campaign v8).
+   La modalità di configurazione della pianificazione di esecuzione coincide con l&#39;oggetto **[!UICONTROL Scheduler]** del flusso di lavoro. Per ulteriori informazioni, consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler){target="_blank"} (documentazione di Campaign v8).
 
    >[!IMPORTANT]
    >

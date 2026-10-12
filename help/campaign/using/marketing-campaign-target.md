@@ -75,7 +75,7 @@ Il targeting può essere creato tramite una combinazione di condizioni di filtro
 
 ![](assets/s_ncs_user_edit_op_wf_link.png)
 
-La popolazione target viene estratta dal database di Adobe Campaign tramite una o più query inserite in un flusso di lavoro. Per informazioni su come creare una query, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} (documentazione di Campaign v8).
+La popolazione target viene estratta dal database di Adobe Campaign tramite una o più query inserite in un flusso di lavoro. Per informazioni su come creare una query, consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} (documentazione di Campaign v8).
 
 Puoi avviare query e condividere popolazioni tramite caselle quali Unione, Intersezione, Condivisione, Esclusione e così via.
 
@@ -87,7 +87,7 @@ Nel diagramma, collega le query di targeting e pianificazione necessarie per la 
 
 >[!NOTE]
 >
->Esempi e procedure per la definizione delle query sono presentati in [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} (documentazione di Campaign v8).
+>Esempi e procedure per la definizione delle query sono presentati in [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} (documentazione di Campaign v8).
 
 La sezione a sinistra dell’editor contiene una libreria di oggetti grafici che rappresentano le attività. La prima scheda contiene le attività di targeting e la seconda contiene le attività di controllo del flusso, utilizzate occasionalmente per coordinare le attività di targeting.
 
@@ -97,7 +97,7 @@ Le funzioni di esecuzione del flusso di lavoro di targeting e formattazione sono
 
 >[!NOTE]
 >
->Le attività disponibili per la creazione del diagramma e tutte le funzionalità di visualizzazione e layout sono descritte in dettaglio nella [Guida all&#39;automazione con flussi di lavoro](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/activities){target="_blank"} (documentazione di Campaign v8).
+>Le attività disponibili per la creazione del diagramma e tutte le funzionalità di visualizzazione e layout sono descritte in dettaglio nella [Guida all&#39;automazione con flussi di lavoro](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/wf-activities/activities){target="_blank"} (documentazione di Campaign v8).
 
 Puoi creare diversi flussi di lavoro di targeting per una singola campagna. Per aggiungere un flusso di lavoro:
 
@@ -250,7 +250,7 @@ Fare clic su **[!UICONTROL Next]** per definire l&#39;ordinamento (se necessario
 
 ![](assets/s_ncs_user_edit_op_target_param.png)
 
-Questa configurazione equivale a un’attività di condivisione nel flusso di lavoro, che consente di suddividere la destinazione in sottoinsiemi. Il gruppo di controllo è uno di questi sottoinsiemi. Per ulteriori informazioni, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/split){target="_blank"} (documentazione di Campaign v8).
+Questa configurazione equivale a un’attività di condivisione nel flusso di lavoro, che consente di suddividere la destinazione in sottoinsiemi. Il gruppo di controllo è uno di questi sottoinsiemi. Per ulteriori informazioni, consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/wf-activities/targeting-activities/split){target="_blank"} (documentazione di Campaign v8).
 
 ### Utilizzare una nuova popolazione come gruppo di controllo {#adding-a-population}
 
@@ -260,7 +260,7 @@ Questa configurazione equivale a un’attività di condivisione nel flusso di la
 
 >[!NOTE]
 >
->L&#39;editor di query di Adobe Campaign è presentato in [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} (documentazione di Campaign v8).
+>L&#39;editor di query di Adobe Campaign è presentato in [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} (documentazione di Campaign v8).
 
 
 #### Video tutorial {#create-email-video}

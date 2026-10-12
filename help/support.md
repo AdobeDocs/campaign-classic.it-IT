@@ -74,22 +74,22 @@ Ottieni supporto tramite domande frequenti, best practice, risorse online e port
         <ul>
         <li><a href="production/using/performance-and-throughput-issues.md">Problemi relativi a prestazioni e velocità effettiva</a></li>
         <li><a href="delivery/using/delivery-performance-troubleshooting.md">Prestazioni di consegna</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html" target="_blank">Ottimizzare le prestazioni del flusso di lavoro</a></li>
-        <li><a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution" target="_blank">Risoluzione dei problemi di esecuzione del flusso di lavoro</a> (documentazione di Campaign v8)</li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=it" target="_blank">Ottimizzare le prestazioni del flusso di lavoro</a></li>
+        <li><a href="https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution" target="_blank">Risoluzione dei problemi di esecuzione del flusso di lavoro</a> (documentazione di Campaign v8)</li>
         <li><a href="platform/using/sftp-server-usage.md">Utilizzo del server SFTP</a></li>
         <li><a href="delivery/using/delivery-failures-quarantine.md">Errori di consegna</a></li>
         </ul>
     </td>
    <td valign="top">
         <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html" target="_blank">Best practice per i flussi di lavoro</a></li>
-        <li><a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows" target="_blank">Monitoraggio del flusso di lavoro tecnico</a> (documentazione di Campaign v8)</li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=it" target="_blank">Best practice per i flussi di lavoro</a></li>
+        <li><a href="https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows" target="_blank">Monitoraggio del flusso di lavoro tecnico</a> (documentazione di Campaign v8)</li>
         <li><a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Gestione del tracciamento</a></li>
         <li><a href="production/using/monitoring-guidelines.md">Scopri gli strumenti di monitoraggio</a></li>
         <li><a href="platform/using/import-export-workflows.md">Importare dati con flussi di lavoro</a></li>
         <li><a href="delivery/using/steps-sending-the-delivery.md">Inviare messaggi in più ondate</a></li>
         <li><a href="delivery/using/defining-the-email-content.md">Progettare contenuti e-mail</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html" target="_blank">Best practice per la consegna</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=it" target="_blank">Best practice per la consegna</a></li>
         </ul>
     </td>
     <td valign="top">
@@ -101,8 +101,8 @@ Ottieni supporto tramite domande frequenti, best practice, risorse online e port
         <li><a href="installation/using/get-started-security-privacy.md">Lista di controllo per sicurezza e privacy</a></li>
         <li><a href="platform/using/privacy-management.md">Privacy e gestione del consenso</a></li>
         <li><a href="platform/using/adobe-campaign-workspace.md#about-queries-in-campaign">Progettare una query</a></li>
-        <li><a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/use-cases/designing-queries/querying-recipient-table" target="_blank">Esempi di query</a> (documentazione di Campaign v8)</li>
-        <li><a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/build-a-workflow" target="_blank">Creare un flusso di lavoro</a> (documentazione di Campaign v8)</li>
+        <li><a href="https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/use-cases/designing-queries/querying-recipient-table" target="_blank">Esempi di query</a> (documentazione di Campaign v8)</li>
+        <li><a href="https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/introduction/build-a-workflow" target="_blank">Creare un flusso di lavoro</a> (documentazione di Campaign v8)</li>
         </ul>
     </td>
     </tr>
@@ -133,7 +133,7 @@ Il Pannello di controllo è disponibile direttamente da Adobe Experience Cloud. 
 
 ### Gestione SFTP
 
-Nel Pannello di controllo, puoi interagire con tutti i server SFTP collegati alle istanze di Campaign a cui hai accesso. Puoi monitorare la loro capacità di archiviazione, gestire gli indirizzi IP sul inserisco nell&#39;elenco Consentiti di e le chiavi SSH pubbliche. Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html).
+Nel Pannello di controllo, puoi interagire con tutti i server SFTP collegati alle istanze di Campaign a cui hai accesso. Puoi monitorare la loro capacità di archiviazione, gestire gli indirizzi IP sul inserisco nell&#39;elenco Consentiti di e le chiavi SSH pubbliche. Per ulteriori informazioni, [fai clic qui](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=it).
 
 ### Sottodomini e certificati
 
@@ -158,7 +158,7 @@ Il nuovo sistema di ticket è stato avviato tramite [Adobe Admin Console](https:
 
 ### Chiedi agli esperti
 
-Iscriviti alla community Campaign Classic: consulta le risposte già fornite alle domande esistenti o sottoponi alla community le tue domande. [Partecipa alla conversazione](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
+Iscriviti alla community Campaign Classic: consulta le risposte già fornite alle domande esistenti o sottoponi alla community le tue domande. [Partecipa alla conversazione](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=it){_blank}.
 
 ### Accedi al Centro di download di Campaign
 

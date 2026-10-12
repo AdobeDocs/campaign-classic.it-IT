@@ -93,7 +93,7 @@ Il flusso di lavoro della campagna deve integrare l&#39;attività di tipo **Appr
 * **[!UICONTROL Distribution context]** : Esplicito.
 * **[!UICONTROL Data distribution]**: distribuzione entità locale.
 
-**È necessario creare la distribuzione dei dati di tipo di entità locale**. Il modello di distribuzione dati consente di limitare il numero di record da un elenco di valori di raggruppamento. In **[!UICONTROL Resources > Campaign management > Data distribution]**, fare clic sull&#39;icona **[!UICONTROL New]** per creare un nuovo **[!UICONTROL Data distribution]**. Per ulteriori informazioni sulla distribuzione dei dati, consulta la guida [Flussi di lavoro](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/use-cases/deliveries/local-approval-activity#step-1--creating-the-data-distribution-template-){target="_blank"} (documentazione di Campaign v8).
+**È necessario creare la distribuzione dei dati di tipo di entità locale**. Il modello di distribuzione dati consente di limitare il numero di record da un elenco di valori di raggruppamento. In **[!UICONTROL Resources > Campaign management > Data distribution]**, fare clic sull&#39;icona **[!UICONTROL New]** per creare un nuovo **[!UICONTROL Data distribution]**. Per ulteriori informazioni sulla distribuzione dei dati, consulta la guida [Flussi di lavoro](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/use-cases/deliveries/local-approval-activity#step-1--creating-the-data-distribution-template-){target="_blank"} (documentazione di Campaign v8).
 
 ![](assets/mkg_dist_data_distribution.png)
 
