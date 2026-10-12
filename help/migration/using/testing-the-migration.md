@@ -29,9 +29,9 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '739'
 ht-degree: 0%
 ---
 # Test di migrazione{#testing-the-migration}
@@ -182,7 +182,7 @@ Vengono cercate le seguenti espressioni (distinzione maiuscole/minuscole):
    <td> CRM v1(mscrmWorkflow/sfdcWorkflow)<br /> </td> 
    <td> PU-0008<br /> </td> 
    <td> Errore<br /> </td> 
-   <td> Le attività di azione Microsoft CRM, Salesforce, Oracle CRM On Demand non sono più disponibili. Per configurare la sincronizzazione dei dati tra Adobe Campaign e un sistema CRM, è necessario utilizzare l'attività di targeting <a href="../../workflow/using/crm-connector.md" target="_blank">Connettore CRM</a>.<br /> </td>
+   <td> Le attività di azione Microsoft CRM, Salesforce, Oracle CRM On Demand non sono più disponibili. Per configurare la sincronizzazione dei dati tra Adobe Campaign e un sistema CRM, è necessario utilizzare l'attività di targeting <a href="https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector" target="_blank">Connettore CRM</a> (documentazione di Campaign v8).<br /> </td>
   </tr> 
  </tbody> 
 </table>

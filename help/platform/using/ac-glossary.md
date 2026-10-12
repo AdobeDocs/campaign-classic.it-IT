@@ -50,9 +50,9 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '6654'
+source-wordcount: '6917'
 ht-degree: 4%
 ---
 # Glossario di Adobe Campaign{#ac-glossary}
@@ -127,7 +127,7 @@ Ulteriori informazioni su [Audit trail](../../production/using/audit-trail.md).
 
 Campaigns that run on a schedule, such as for targeting recipients who have a birthday or an anniversary. Can also be used to execute look-ahead and look-back logic, such as who purchased yesterday or who has a payment due tomorrow.
 
-Learn more about [Campaigns](../../campaign/using/designing-marketing-campaigns.md).
+Learn more about [Campaigns](https://experienceleague.adobe.com/it/docs/campaign/automation/campaign-orchestration/set-up-campaigns){target="_blank"} (Campaign v8 documentation).
 +++
 -->
 
@@ -208,14 +208,14 @@ Ulteriori informazioni su [Cubi](../../reporting/using/ac-cubes.md).
 
 Adobe Campaign viene fornito con un modello dati predefinito, in cui i tipi di dati vengono definiti tramite l’installazione di vari pacchetti. Gli operatori possono arricchire il modello dati fornito estendendo le risorse per aggiungere campi personalizzati o tabelle personalizzate, ad esempio tabelle di transazioni o di prodotti.
 
-Ulteriori informazioni sulle [risorse personalizzate](../../configuration/using/about-schema-edition.md).
+Ulteriori informazioni sulle [risorse personalizzate](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentazione di Campaign v8).
 +++
 
 +++**Modello dati**
 
 Il modello dati di Campaign è un set di schemi che definiscono i tipi di dati e le relative relazioni (collegamenti). Il modello dati è una definizione astratta implementata fisicamente con un database che contiene i dati effettivi.
 
-Ulteriori informazioni su [Modello dati](../../configuration/using/about-data-model.md).
+Ulteriori informazioni su [Modello dati](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/datamodel){target="_blank"} (documentazione di Campaign v8).
 +++
 
 +++**Flusso di lavoro di pulizia del database**
@@ -430,7 +430,7 @@ Ulteriori informazioni su [Federated Data Access](../../installation/using/about
 
 L’approvazione dell’estrazione del file è il processo in base al quale un operatore o un gruppo di operatori separato approva il contenuto e la configurazione di un file estratto prima che venga inviato a un fornitore esterno, ad esempio per una consegna direct mailing.
 
-Per ulteriori informazioni sull&#39;approvazione dell&#39;estrazione dei file, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html#validating){target="_blank"}.
+Per ulteriori informazioni sull&#39;approvazione dell&#39;estrazione dei file, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html?lang=it#validating){target="_blank"}.
 +++
 
 +++**Dimensione filtro**
@@ -459,7 +459,7 @@ Ulteriori informazioni sull&#39;interfaccia utente di Campaign nella [documentaz
 
 Forms definisce la rappresentazione dell’interfaccia per un tipo di schema specifico. Forms è lo strumento utilizzato per creare e modificare facilmente elementi di dati nel prodotto, ad esempio Destinatari, Consegne e Campagne. Tutti gli elementi dell’interfaccia in Adobe Campaign vengono creati nel prodotto stesso utilizzando Forms. I moduli sono facoltativi e non tutti gli schemi dispongono di moduli.
 
-Ulteriori informazioni su [Forms](../../configuration/using/identifying-a-form.md).
+Ulteriori informazioni su [Forms](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (documentazione di Campaign v8).
 +++
 
 <!--
@@ -519,7 +519,7 @@ Learn more about [Image serving](../../delivery/using/defining-the-email-content
 
 Un’interazione in entrata è un’interazione successiva a una chiamata in entrata generata dall’azione di un contatto in un canale, ad esempio web, call center o mobile. Questo tipo di interazione viene generalmente elaborato in modalità unitaria (ovvero per destinatario).
 
-Ulteriori informazioni sull&#39;[interazione in entrata](../../interaction/using/about-inbound-channels.md).
+Ulteriori informazioni sull&#39;[interazione in entrata](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"} (documentazione di Campaign v8).
 +++
 
 +++**Rendering della casella in entrata**
@@ -588,7 +588,7 @@ Ulteriori informazioni su [Diritti denominati](../../platform/using/access-manag
 
 Lo spazio dei nomi è una partizione che separa i tipi di dati del cliente dai tipi di dati nativi di Adobe Campaign nel modello di dati. Utilizzato anche per facilitare la migrazione delle definizioni da un’istanza all’altra, ad esempio per spostare uno schema o un modello dall’istanza Sviluppo all’istanza Produzione.
 
-Ulteriori informazioni su [Spazio dei nomi](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
+Ulteriori informazioni su [Spazio dei nomi](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/schemas#identification-of-a-schema){target="_blank"} (documentazione di Campaign v8).
 +++
 
 <!--
@@ -624,7 +624,7 @@ Ulteriori informazioni sugli obiettivi nella [documentazione di Adobe Campaign v
 
 Un catalogo di offerte è un set di offerte definite in Adobe Campaign che possono essere selezionate durante un’interazione. Il catalogo è organizzato gerarchicamente e ogni nodo corrisponde a una categoria.
 
-Ulteriori informazioni su [Catalogo offerte](../../interaction/using/offer-catalog-overview.md).
+Ulteriori informazioni su [Catalogo offerte](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction-offer-catalog){target="_blank"} (documentazione di Campaign v8).
 +++
 
 +++**Contatto offerta**
@@ -645,7 +645,7 @@ Ulteriori informazioni sull&#39;[interazione](../../interaction/using/interactio
 
 L&#39;ambiente di progettazione **dell&#39;offerta** è l&#39;ambiente in cui gli operatori creano le offerte, definiscono le regole di tipologia e selezionano lo schema di destinazione delle offerte. Anche la tabella per l’archiviazione delle proposte di offerta generate è definita dall’ambiente. Per impostazione predefinita, il componente aggiuntivo Interaction è fornito con un ambiente **Design** e un ambiente **Live** collegati. Entrambi gli ambienti sono preconfigurati per la destinazione della tabella dei destinatari incorporata.
 
-Ulteriori informazioni su [Ambienti di Offer Design](../../interaction/using/fundamental-principles.md).
+Ulteriori informazioni su [Ambienti di progettazione delle offerte](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction-architecture){target="_blank"} (documentazione di Campaign v8).
 +++
 
 +++**Arbitraggio del motore di offerta**
@@ -672,7 +672,7 @@ Ulteriori informazioni sull&#39;[interazione](../../interaction/using/interactio
 
 L’ambiente dell’offerta è la cartella principale che definisce il catalogo delle offerte, gli spazi disponibili e i filtri predefiniti dell’ambiente. Gli operatori devono creare un ambiente per ogni dimensione di targeting. Esistono due tipi di ambienti di offerta: Progettazione e Live.
 
-Ulteriori informazioni su [Ambienti di offerta](../../interaction/using/fundamental-principles.md).
+Ulteriori informazioni su [Ambienti di offerta](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction-architecture){target="_blank"} (documentazione di Campaign v8).
 +++
 
 +++**Ambiente live dell&#39;offerta**
@@ -681,7 +681,7 @@ Ulteriori informazioni su [Ambienti di offerta](../../interaction/using/fundamen
 
 L&#39;ambiente di Offer Live è collegato a un **ambiente di progettazione** di Campaign. Contiene offerte di sola lettura il cui contenuto e idoneità sono stati approvati tramite l&#39;**ambiente di progettazione**. Possono essere selezionati per la presentazione su un sito web o per essere inseriti in un messaggio in uscita.
 
-Ulteriori informazioni su [Ambienti Offer Live](../../interaction/using/fundamental-principles.md).
+Ulteriori informazioni su [Ambienti Offer Live](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction-architecture){target="_blank"} (documentazione di Campaign v8).
 +++
 
 +++**Regole di presentazione delle offerte**
@@ -699,7 +699,7 @@ Ulteriori informazioni sulle [Regole di presentazione delle offerte](../../inter
 
 Questa è l’anteprima dell’offerta così come viene visualizzata nella sua cartella. È accessibile dalla scheda di anteprima dell’offerta o dal profilo di contatto.
 
-Ulteriori informazioni su [Anteprima offerta](../../interaction/using/creating-an-offer.md#previewing-the-offer).
+Ulteriori informazioni su [Anteprima offerta](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction-offer#previewing-the-offer){target="_blank"} (documentazione di Campaign v8).
 +++
 
 +++**Proposta di offerta**
@@ -708,7 +708,7 @@ Ulteriori informazioni su [Anteprima offerta](../../interaction/using/creating-a
 
 Una proposta di offerta è il risultato dell’azione che consiste nel presentare un’offerta a un contatto in un determinato spazio di offerta, ad esempio il banner su un sito web, un contenuto e-mail o SMS. Questo risultato viene memorizzato nella tabella delle proposte di offerta, che definisce l’offerta, il destinatario e la marca temporale, fornendo una registrazione di tutte le offerte che un destinatario ha ricevuto.
 
-Ulteriori informazioni sulle [proposte di offerte](../../interaction/using/creating-offer-spaces.md#offer-proposition-statuses).
+Ulteriori informazioni su [Proposte di offerta](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces#offer-proposition-statuses){target="_blank"} (documentazione di Campaign v8).
 +++
 
 +++**Rappresentazione offerta**
@@ -735,7 +735,7 @@ Ulteriori informazioni sulle [Simulazioni offerte](../../interaction/using/about
 
 Uno spazio dell’offerta è una cartella che definisce la posizione in cui l’offerta è esposta. La definizione di uno spazio consente di specificare il canale utilizzato, creare il contenuto dell’offerta e specificare le offerte presentate. Lo spazio dell’offerta è l’interfaccia tra il canale e il motore dell’offerta.
 
-Ulteriori informazioni su [Spazio offerte](../../interaction/using/creating-offer-spaces.md).
+Ulteriori informazioni su [Spazio offerte](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces){target="_blank"} (documentazione di Campaign v8).
 +++
 
 +++**Temi offerta**
@@ -744,7 +744,7 @@ Ulteriori informazioni su [Spazio offerte](../../interaction/using/creating-offe
 
 I temi dell’offerta sono parole chiave definite in una categoria, che consente agli operatori di filtrare le offerte quando vengono presentate. I temi consentono la selezione non gerarchica delle offerte dalla struttura del catalogo.
 
-Ulteriori informazioni su [Temi offerta](../../interaction/using/integrating-an-offer-via-the-wizard.md).
+Ulteriori informazioni su [Temi offerta](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"} (documentazione di Campaign v8).
 +++
 
 +++**Peso offerta**
@@ -753,7 +753,7 @@ Ulteriori informazioni su [Temi offerta](../../interaction/using/integrating-an-
 
 Il peso dell’offerta si basa su formule che definiscono con precisione la rilevanza di un’offerta al fine di consentire al motore di selezionare l’offerta più pertinente. I pesi sono definiti nelle offerte e i moltiplicatori sono definiti nelle categorie. Le offerte idonee vengono prese in considerazione in ordine decrescente di peso.
 
-Ulteriori informazioni su [Peso offerta](../../interaction/using/creating-an-offer.md#offer-weight).
+Ulteriori informazioni su [Peso offerta](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction-offer#offer-weight){target="_blank"} (documentazione di Campaign v8).
 +++
 
 +++**Operatore**
@@ -783,7 +783,7 @@ Ulteriori informazioni su [Opzioni](../../installation/using/configuring-campaig
 
 Un’interazione in uscita è una chiamata al motore di interazione da un elenco di contatti (utilizzato per la consegna di e-mail, direct mailing, ecc.). A ogni contatto vengono applicate le stesse regole e le stesse procedure. Questo tipo di interazione viene generalmente elaborato in modalità batch.
 
-Ulteriori informazioni sull&#39;[interazione in uscita](../../interaction/using/about-outbound-channels.md).
+Ulteriori informazioni sull&#39;[interazione in uscita](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"} (documentazione di Campaign v8).
 +++
 
 +++**Esportazione/importazione pacchetto**
@@ -895,7 +895,7 @@ Ulteriori informazioni su [Push](../../delivery/using/about-mobile-app-channel.m
 
 In Adobe Campaign, i destinatari sono i profili predefiniti target per l’invio di consegne (e-mail, SMS, ecc.) ai tuoi clienti. I dati dei destinatari memorizzati nel database consentono di filtrare il target e aggiungere dati di personalizzazione. In genere si tratta di informazioni personali, di contatto, demografiche e transazionali, ma potrebbe trattarsi di qualsiasi tipo di informazione che supporta il marketing e l’analisi.
 
-Ulteriori informazioni su [Destinatario](../../configuration/using/about-data-model.md).
+Ulteriori informazioni su [Destinatario](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/datamodel){target="_blank"} (documentazione di Campaign v8).
 +++
 
 +++**Funzione di rendering**
@@ -904,7 +904,7 @@ Ulteriori informazioni su [Destinatario](../../configuration/using/about-data-mo
 
 La funzione di rendering è definita in uno spazio dell’offerta. Viene utilizzato per creare la rappresentazione dell’offerta in base agli attributi definiti nell’offerta. Esistono tre diverse modalità di funzione di rendering: HTML, XML e testo.
 
-Ulteriori informazioni sulla [Funzione di rendering](../../interaction/using/creating-offer-spaces.md).
+Ulteriori informazioni sulla [Funzione di rendering](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces){target="_blank"} (documentazione di Campaign v8).
 +++
 
 <!--
@@ -1053,7 +1053,7 @@ Learn more about [Total database storage](../../workflow/using/about-workflows.m
 
 Il flusso di lavoro tecnico di tracciamento recupera i dati di tracciamento una volta inviata la consegna e attivato il tracciamento. Questi dati si trovano nella scheda Tracciamento della consegna. Puoi trovare informazioni per aperture e clic su un’e-mail o altre interazioni con un messaggio ricevuto dal destinatario.
 
-Ulteriori informazioni su [Registri di tracciamento in Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/tracking-logs){target="_blank"}.
+Ulteriori informazioni su [Registri di tracciamento in Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/tracking-logs){target="_blank"}.
 +++
 
 +++**Messaggistica transazionale**
@@ -1107,7 +1107,7 @@ Ulteriori informazioni sulle regole di tipologia sono disponibili nella [documen
 
 In modalità unitaria, un singolo contatto viene elaborato dal motore di offerta in fase di runtime. Questa modalità viene generalmente utilizzata per le interazioni in entrata e i messaggi transazionali.
 
-Ulteriori informazioni sulla [modalità unitaria](../../interaction/using/about-inbound-channels.md).
+Ulteriori informazioni sulla [modalità unitaria](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"} (documentazione di Campaign v8).
 +++
 
 +++**Applicazioni Web**

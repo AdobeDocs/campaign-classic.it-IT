@@ -26,9 +26,9 @@ feature_v2:
 subfeature_v2:
   - id: e739ee2b-6228-412e-878f-45de0791417d
     internal-label: Use cases
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 323ff901668895588a6e9587fa2a8b7804cf2fb4
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '165'
 ht-degree: 3%
 ---
 # Estensione esemplificativa{#extension-example}
@@ -49,4 +49,4 @@ Nel caso di un contatto in entrata (call center o sito web), le offerte più ril
 
   ![](assets/s_ncs_configuration_offer_context.png)
 
-* Durante la configurazione delle chiamate di SOAP, inserisci l&#39;elemento XML **context** per fare riferimento alle informazioni di contesto aggiunte nello schema di interazione. Per ulteriori informazioni, consultare [Integrazione tramite SOAP (lato server)](../../interaction/using/integration-via-soap-server-side.md).
+* Durante la configurazione delle chiamate di SOAP, inserisci l&#39;elemento XML **context** per fare riferimento alle informazioni di contesto aggiunte nello schema di interazione. Per ulteriori informazioni, consulta [Integrazione tramite SOAP (lato server)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/inbound/interaction-integration){target="_blank"} (documentazione di Campaign v8).

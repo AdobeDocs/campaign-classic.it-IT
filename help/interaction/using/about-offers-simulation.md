@@ -22,9 +22,9 @@ topic_v2:
     internal-label: Reporting
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 323ff901668895588a6e9587fa2a8b7804cf2fb4
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '278'
 ht-degree: 3%
 ---
 # Informazioni sulla simulazione delle offerte{#about-offers-simulation}
@@ -33,7 +33,7 @@ ht-degree: 3%
 
 Il modulo **Simulazione** ti consente di verificare la distribuzione delle offerte appartenenti a una categoria o a un ambiente prima di inviare la proposta ai destinatari.
 
-La simulazione tiene conto dei contesti e delle regole di idoneità applicati in precedenza alle offerte (consulta [Panoramica del catalogo delle offerte](../../interaction/using/offer-catalog-overview.md)), nonché delle relative regole di presentazione (consulta [Gestione della presentazione delle offerte](../../interaction/using/managing-offer-presentation.md)). Questo consente di testare e perfezionare varie versioni della proposta di offerta senza utilizzare effettivamente un’offerta o sollecitare in eccesso o in difetto un target, poiché la simulazione non ha alcun impatto sui destinatari target.
+La simulazione tiene conto dei contesti e delle regole di idoneità applicati in precedenza alle offerte (consulta [Panoramica del catalogo delle offerte](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction-offer-catalog){target="_blank"} (documentazione di Campaign v8)), nonché delle relative regole di presentazione (consulta [Gestione della presentazione delle offerte](../../interaction/using/managing-offer-presentation.md)). Questo consente di testare e perfezionare varie versioni della proposta di offerta senza utilizzare effettivamente un’offerta o sollecitare in eccesso o in difetto un target, poiché la simulazione non ha alcun impatto sui destinatari target.
 
 Per scoprire come simulare un’offerta, leggi i passaggi seguenti.
 

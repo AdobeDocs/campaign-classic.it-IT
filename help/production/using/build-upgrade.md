@@ -29,7 +29,7 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: 4bc1e76d129c6a6aa15b7e3915232043bd6f4286
 workflow-type: tm+mt
 source-wordcount: '2410'
 ht-degree: 4%
@@ -437,5 +437,5 @@ Di seguito sono riportati i passaggi per eseguire un’unione complessa:
 
 * [Domande frequenti sull’aggiornamento della build](../../platform/using/faq-build-upgrade.md)
 * [Note sulla versione di Campaign Classic](../../rn/using/rn-overview.md)
-* [Opzioni di assistenza e supporto per Campaign Classic](../../support.md)
+* [Opzioni di assistenza e supporto per Campaign Classic](../../campaign-classic-home.md)
 * [Programma di aggiornamento annuale della campagna](../../rn/using/rn-overview.md)

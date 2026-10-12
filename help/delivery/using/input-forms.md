@@ -38,16 +38,16 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '834'
-ht-degree: 2%
+source-wordcount: '892'
+ht-degree: 1%
 ---
 # Moduli di input{#input-forms}
 
 Di seguito sono riportati alcuni principi generali relativi all’utilizzo dei moduli di input in Adobe Campaign.
 
-Forms sono descritti in [questa sezione](../../configuration/using/identifying-a-form.md).
+Forms sono descritti in [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (documentazione di Campaign v8).
 
 ## Struttura di un modulo {#form-structure}
 
@@ -105,7 +105,7 @@ Per impostazione predefinita, ogni campo viene visualizzato su una riga e occupa
 
 La disposizione dei controlli l&#39;uno rispetto all&#39;altro è simile alla disposizione utilizzata nelle tabelle di HTML, con la possibilità di dividere un controllo in più colonne, di elementi interlacciati o di specificare l&#39;occupazione dello spazio disponibile. Tenete presente, tuttavia, che la formattazione autorizza solo la distribuzione delle proporzioni; non potete specificare dimensioni fisse per un oggetto.
 
-Per ulteriori informazioni al riguardo, consulta [questa sezione](../../configuration/using/form-structure.md#formatting).
+Per ulteriori informazioni, consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/forms#formatting){target="_blank"} (documentazione di Campaign v8).
 
 ## Controlli del tipo di elenco {#list-type-controls}
 
@@ -214,7 +214,7 @@ Utilizzare i pulsanti della barra degli strumenti per aggiungere o eliminare ele
 
 I contenitori consentono di raggruppare un insieme di controlli. Esistono tramite l&#39;elemento **`<container>`**. Sono già stati utilizzati per formattare i controlli in diverse colonne e per il controllo dell&#39;elenco di schede.
 
-Per ulteriori informazioni sui contenitori e su come utilizzarli nei moduli di input, consulta [questa sezione](../../configuration/using/form-structure.md#containers).
+Per ulteriori informazioni sui contenitori e su come utilizzarli nei moduli di input, consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/forms#containers){target="_blank"} (documentazione di Campaign v8).
 
 ## Modifica dei moduli {#editing-forms}
 
@@ -226,4 +226,4 @@ La scheda **[!UICONTROL Preview]** consente di visualizzare il modulo di input:
 
 ![](assets/d_ncs_content_form13.png)
 
-Ulteriori informazioni sulla [modifica dei moduli](../../configuration/using/editing-forms.md) e sulla [struttura del modulo](../../configuration/using/form-structure.md).
+Ulteriori informazioni sulla [modifica dei moduli](../../configuration/using/editing-forms.md) e sulla [struttura del modulo](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (documentazione di Campaign v8).

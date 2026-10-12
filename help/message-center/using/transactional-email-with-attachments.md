@@ -23,9 +23,9 @@ topic_v2:
     internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '700'
 ht-degree: 1%
 ---
 # Caso d’uso: inviare e-mail transazionali con allegati {#transactional-email-with-attachments}
@@ -87,7 +87,7 @@ Per aggiungere al volo un allegato e-mail a un messaggio sulle transazioni, effe
 
 1. Puoi inviare e-mail tramite un attivatore di messaggi di SOAP. Nella chiamata SOAP è presente un parametro URL (attachmentURL).
 
-   Per ulteriori informazioni sulle richieste di SOAP, vedere [Descrizione evento](../../message-center/using/event-description.md).
+   Per ulteriori informazioni sulle richieste di SOAP, consulta [Descrizione evento](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/real-time/event/event-description){target="_blank"} (documentazione di Campaign v8).
 
 1. Durante la progettazione dell&#39;e-mail, fare clic su **[!UICONTROL Attachment]**.
 

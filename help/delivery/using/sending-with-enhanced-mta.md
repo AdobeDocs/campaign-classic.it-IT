@@ -45,9 +45,9 @@ topic_v2:
     internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 586c6688e2abd3b6e55389bd1fa219d2c596d07d
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1446'
 ht-degree: 1%
 ---
 # Invio con MTA avanzato {#sending-with-enhanced-mta}
@@ -154,7 +154,7 @@ Una consegna non può essere interrotta una volta trasferita all’MTA avanzato,
 
 Il grafico della velocità effettiva di consegna della campagna non mostrerà più la velocità effettiva per i destinatari delle e-mail. Il grafico ora mostra la velocità effettiva per l’inoltro dei messaggi da Campaign all’MTA avanzato.
 
-Per ulteriori informazioni sulla velocità effettiva di consegna, consulta [questa sezione](../../reporting/using/global-reports.md#delivery-throughput).
+Per ulteriori informazioni sulla velocità effettiva di consegna, consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"} (documentazione di Campaign v8).
 
 ### Nuovi tentativi
 

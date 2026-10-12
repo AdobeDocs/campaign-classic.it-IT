@@ -45,10 +45,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 586c6688e2abd3b6e55389bd1fa219d2c596d07d
 workflow-type: tm+mt
-source-wordcount: '948'
-ht-degree: 4%
+source-wordcount: '1002'
+ht-degree: 3%
 ---
 # Introduzione al monitoraggio della consegna {#about-delivery-monitoring}
 
@@ -99,18 +99,18 @@ In Adobe Campaign Classic, **Monitoraggio del recapito messaggi** è gestito dal
 
 **Per le installazioni on-premise**, è possibile utilizzare i seguenti strumenti di monitoraggio:
 
-* Il report **[!UICONTROL Delivery throughput]** offre una panoramica della velocità effettiva dell&#39;intera piattaforma per un determinato periodo. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/global-reports.md#delivery-throughput).
+* Il report **[!UICONTROL Delivery throughput]** offre una panoramica della velocità effettiva dell&#39;intera piattaforma per un determinato periodo. Per ulteriori informazioni, consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"} (documentazione di Campaign v8).
 * Ogni consegna genera un rapporto sulle statistiche di trasmissione per i diversi provider di servizi Internet (ISP). Mostra alcune metriche relative alla qualità dei dati e alla reputazione che possono influire sul recapito messaggi, tra cui i seguenti numeri:
   * **[!UICONTROL Hard bounces]** indica la qualità dei dati. Questo numero deve essere inferiore al 2%.
   * **[!UICONTROL Soft bounces]** indicare la reputazione. Questo numero non deve essere superiore al 10% per un dato ISP.
 
-  Per ulteriori informazioni, consulta la sezione [Statistiche di consegna](../../reporting/using/global-reports.md#delivery-statistics).
+  Per ulteriori informazioni, consulta la sezione [Statistiche di consegna](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-statistics){target="_blank"} (documentazione di Campaign v8).
 
 #### Linee guida per il monitoraggio {#monitoring-guidelines}
 
 **Per le installazioni on-premise**, ecco alcune linee guida aggiuntive sul monitoraggio del recapito messaggi:
 
-* Controlla regolarmente la [velocità effettiva di consegna](../../reporting/using/global-reports.md#delivery-throughput) per l&#39;intera piattaforma per verificare se è coerente con la configurazione originale.
+* Controlla regolarmente la [velocità effettiva di consegna](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"} (documentazione di Campaign v8) per l&#39;intera piattaforma per verificare se è coerente con la configurazione originale.
 * Verifica che [nuovi tentativi](delivery-failures-quarantine.md#retries-after-a-delivery-temporary-failure) siano configurati correttamente (30 minuti per il periodo di esecuzione dei nuovi tentativi e più di 20 tentativi) nei modelli di consegna.
 * Verificare regolarmente che la cassetta postale [bounce](delivery-failures-quarantine.md#bounce-mail-management) sia accessibile e che l&#39;account non stia per scadere.
 * Controlla ogni velocità effettiva di consegna, accessibile dal [dashboard di consegna](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}, per assicurarti che sia coerente con la validità del contenuto della consegna (ad esempio, le &quot;vendite flash&quot; devono essere consegnate in minuti, non in giorni).
@@ -151,7 +151,7 @@ Tieni traccia di aperture, clic e interazioni dei destinatari con le consegne:
 
 Best practice e risoluzione dei problemi relativi alle prestazioni di consegna:
 
-* [Best practice per le consegne](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} (documentazione di Campaign v8, applicabile sia a v7 che a v8)
+* [Best practice per le consegne](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} (documentazione di Campaign v8, applicabile sia a v7 che a v8)
 * [Prestazioni della consegna e risoluzione dei problemi](delivery-performance-troubleshooting.md) (configurazioni specifiche per ibridi/on-premise v7)
 
 ### Informazioni su errori e quarantene

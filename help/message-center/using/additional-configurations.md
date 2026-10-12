@@ -28,9 +28,9 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '884'
 ht-degree: 4%
 ---
 # Configurazioni aggiuntive {#mc-additional-configurations}
@@ -39,7 +39,7 @@ ht-degree: 4%
 
 ## Monitorare le soglie {#monitoring-thresholds}
 
-È possibile configurare le soglie di avviso (arancione) e le soglie di avviso (rosso) degli indicatori visualizzati nei report **Livello di servizio del Centro messaggi** e **Tempo di elaborazione del Centro messaggi** (fare riferimento a [Report di messaggistica transazionale di accesso](../../message-center/using/about-transactional-messaging-reports.md)).
+Puoi configurare le soglie di avviso (arancione) e le soglie di avviso (rosso) degli indicatori visualizzati nei rapporti **Livello di servizio del Centro messaggi** e **Tempo di elaborazione del Centro messaggi** (consulta [Accedere ai rapporti sulla messaggistica transazionale](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"} (documentazione di Campaign v8).
 
 A questo scopo, segui la procedura indicata di seguito:
 

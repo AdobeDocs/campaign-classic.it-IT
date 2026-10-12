@@ -42,9 +42,9 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1178'
 ht-degree: 1%
 ---
 # Sincronizzare i tipi di pubblico{#synchronizing-audiences}
@@ -89,7 +89,7 @@ Per ottenere il pubblico finale e i relativi dati aggiuntivi:
 
    ![](assets/acs_connect_query1.png)
 
-1. Aggiungi dati aggiuntivi dall’interno della query. Per ulteriori informazioni, consulta la sezione [Aggiunta di dati](../../workflow/using/query.md#adding-data).
+1. Aggiungi dati aggiuntivi dall’interno della query. Per ulteriori informazioni, consulta la sezione [Aggiunta di dati](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/wf-activities/targeting-activities/query#adding-data){target="_blank"} (documentazione di Campaign v8).
 
    Questo esempio mostra come aggiungere un aggregato per contare quante consegne ha ricevuto un destinatario in un anno.
 

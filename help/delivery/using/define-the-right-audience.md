@@ -36,10 +36,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 8%
+source-wordcount: '576'
+ht-degree: 7%
 ---
 # Definire il pubblico adatto {#define-the-right-audience}
 
@@ -92,8 +92,8 @@ La deduplicazione degli indirizzi protegge la reputazione del mittente e garanti
 
 **Argomenti correlati:**
 
-* [Attività di deduplicazione](../../workflow/using/deduplication.md).
-* [Caso d’uso: utilizzo della funzionalità di unione dell’attività Deduplicazione](../../workflow/using/deduplication-merge.md)
+* [Attività di deduplicazione](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication){target="_blank"} (documentazione di Campaign v8).
+* [Caso d&#39;uso: utilizzo della funzionalità di unione dell&#39;attività Deduplicazione](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/use-cases/data-management/deduplication-merge){target="_blank"} (documentazione di Campaign v8)
 
 ## Indicizzare gli indirizzi e-mail {#index-addresses}
 

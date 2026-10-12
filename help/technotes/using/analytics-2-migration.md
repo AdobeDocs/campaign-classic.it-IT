@@ -17,9 +17,9 @@ feature_v2:
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
     internal-label: Analytics integration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '889'
 ht-degree: 1%
 ---
 # Migrare all’API Adobe Analytics 2.0 {#analytics-2-migration}
@@ -28,7 +28,7 @@ Le API di Adobe Analytics 1.4 stanno per [raggiungere la fine del ciclo di vita]
 
 >[!CAUTION]
 >
->L&#39;aggiornamento reimporta i due flussi di lavoro tecnici incorporati che alimentano il connettore, [!UICONTROL webAnalyticsSendMetrics] e [!UICONTROL webAnalyticsGetWebEvents] (consulta il [riferimento ai flussi di lavoro di Web Analytics](../../workflow/using/web-analytics.md) per le operazioni di ciascuno di essi). Eventuali personalizzazioni apportate sopra questi flussi di lavoro vengono sovrascritte dalla reimportazione. Evita di modificare direttamente questi flussi di lavoro incorporati: crea la personalizzazione in un flusso di lavoro personalizzato separato, in modo che gli aggiornamenti futuri non la sovrascrivano. L’aggiornamento aggiorna anche i file integrati di Analytics JavaScript: se uno dei flussi di lavoro personalizzati fa riferimento a tali file, questi verranno interrotti e dovranno essere adattati al nuovo codice.
+>L&#39;aggiornamento reimporta i due flussi di lavoro tecnici incorporati che alimentano il connettore, [!UICONTROL webAnalyticsSendMetrics] e [!UICONTROL webAnalyticsGetWebEvents] (consulta il [riferimento ai flussi di lavoro di Web Analytics](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"} (documentazione di Campaign v8) per le funzioni di ciascuno). Eventuali personalizzazioni apportate sopra questi flussi di lavoro vengono sovrascritte dalla reimportazione. Evita di modificare direttamente questi flussi di lavoro incorporati: crea la personalizzazione in un flusso di lavoro personalizzato separato, in modo che gli aggiornamenti futuri non la sovrascrivano. L’aggiornamento aggiorna anche i file integrati di Analytics JavaScript: se uno dei flussi di lavoro personalizzati fa riferimento a tali file, questi verranno interrotti e dovranno essere adattati al nuovo codice.
 
 ## Sei interessato? {#are-you-impacted}
 

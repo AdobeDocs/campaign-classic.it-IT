@@ -29,9 +29,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '432'
 ht-degree: 3%
 ---
 # Implementare i metodi di SOAP{#implementing-soap-methods}
@@ -53,7 +53,7 @@ La creazione di una libreria di metodi prevede due fasi:
 
 ### Dichiarazione {#declaration}
 
-Inizia dichiarando i metodi negli schemi (per ulteriori informazioni su come creare e modificare gli schemi, consulta [questa sezione](../../configuration/using/about-schema-edition.md)).
+Inizia dichiarando i metodi negli schemi (per ulteriori informazioni su come creare e modificare gli schemi, consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentazione di Campaign v8).
 
 La loro dichiarazione è simile a quella dei metodi nativi, con la differenza che è necessario aggiungere l&#39;attributo &quot;library&quot; che specifica il nome della libreria dei metodi in cui si trova la definizione.
 

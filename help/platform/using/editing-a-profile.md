@@ -33,9 +33,9 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: '138'
 ht-degree: 2%
 ---
 # Modificare un profilo{#editing-a-profile}
@@ -56,7 +56,7 @@ Le schede e il loro contenuto dipendono dalla configurazione e dai pacchetti ins
 >
 >Lo schema XML e il modulo relativo ai campi nella tabella dei profili sono accessibili tramite il nodo **[!UICONTROL Administration > Configuration > Data schemas]** della struttura Adobe Campaign. Solo gli utenti esperti possono apportare modifiche a questi schemi.
 >
->Per ulteriori informazioni, consultare [questa pagina](../../configuration/using/about-schema-edition.md).
+>Per ulteriori informazioni, consulta [questa pagina](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentazione di Campaign v8).
 
 >[!NOTE]
 >

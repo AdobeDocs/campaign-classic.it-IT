@@ -47,10 +47,10 @@ topic_v2:
     internal-label: Optimization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 2%
+source-wordcount: '807'
+ht-degree: 1%
 ---
 # Prestazioni delle consegne e risoluzione dei problemi {#delivery-performance-troubleshooting}
 
@@ -124,7 +124,7 @@ La causa è collegata a problemi di prestazioni in cui l’istanza di marketing 
 
 **Per le installazioni on-premise**, eseguire un&#39;operazione di vuoto e reindicizzazione sul database. Per ulteriori informazioni sulla manutenzione del database, consultare [questa sezione](../../production/using/recommendations.md).
 
-È inoltre necessario riavviare tutti i flussi di lavoro con un&#39;attività pianificata e tutti i flussi di lavoro con stato non riuscito. Fai riferimento a [questa sezione](../../workflow/using/scheduler.md).
+È inoltre necessario riavviare tutti i flussi di lavoro con un&#39;attività pianificata e tutti i flussi di lavoro con stato non riuscito. Consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler){target="_blank"} (documentazione di Campaign v8).
 
 ### Monitoraggio tecnico dei flussi di lavoro
 

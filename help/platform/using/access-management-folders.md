@@ -42,9 +42,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '547'
 ht-degree: 4%
 ---
 # Gestire l’accesso alle cartelle{#folder-access-management}
@@ -120,7 +120,7 @@ Nella vista vengono visualizzate le seguenti consegne:
 
 >[!NOTE]
 >
->Durante la gestione di [eventi di messaggistica transazionale](../../message-center/using/about-transactional-messaging.md), le cartelle **[!UICONTROL Real time events]** o **[!UICONTROL Batch events]** non devono essere impostate come viste nelle istanze di esecuzione, in quanto ciò potrebbe causare problemi di diritti di accesso. Per ulteriori informazioni sulla raccolta eventi, vedere [questa sezione](../../message-center/using/about-event-processing.md#event-collection).
+>Durante la gestione di [eventi di messaggistica transazionale](../../message-center/using/about-transactional-messaging.md), le cartelle **[!UICONTROL Real time events]** o **[!UICONTROL Batch events]** non devono essere impostate come viste nelle istanze di esecuzione, in quanto ciò potrebbe causare problemi di diritti di accesso. Per ulteriori informazioni sulla raccolta di eventi, consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/real-time/event/event-processing#event-collection){target="_blank"} (documentazione di Campaign v8).
 
 <!--
 ## Permissions on a folder

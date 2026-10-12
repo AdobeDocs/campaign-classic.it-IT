@@ -31,9 +31,9 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 586c6688e2abd3b6e55389bd1fa219d2c596d07d
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '811'
 ht-degree: 9%
 ---
 # Problemi relativi a prestazioni e velocità effettiva{#performance-and-throughput-issues}
@@ -92,7 +92,7 @@ Di seguito è riportato un elenco di best practice e articoli relativi al recapi
   >Il team di recapito messaggi si basa sul contratto e i clienti devono contattare il proprio rappresentante Adobe per informazioni relative al recapito messaggi.
 
 * Impostazione affinità IP: una configurazione di affinità IP errata può interrompere completamente le e-mail (nome di operatore/affinità non corretto nella configurazione) o ridurre la velocità effettiva (numero ridotto di IP nell’affinità). Consulta [questa pagina](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
-* Dimensione dell’e-mail: la dimensione dell’e-mail svolge un ruolo importante nella velocità effettiva. La dimensione massima consigliata per l’e-mail è 60 KB. Consulta [questa pagina](https://helpx.adobe.com/it/legal/product-descriptions/campaign.html). Nel report [Velocità effettiva di consegna](../../reporting/using/global-reports.md#delivery-throughput), controllare il numero di byte trasferiti per ora.
+* Dimensione dell’e-mail: la dimensione dell’e-mail svolge un ruolo importante nella velocità effettiva. La dimensione massima consigliata per l’e-mail è 60 KB. Consulta [questa pagina](https://helpx.adobe.com/it/legal/product-descriptions/campaign.html). Nel report [Velocità effettiva di consegna](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"} (documentazione di Campaign v8), controlla il numero di byte trasferiti per ora.
 * Numero elevato di destinatari non validi: quando il numero di destinatari non validi è elevato, può influire sulla velocità effettiva. L’MTA continua a tentare di inviare e-mail a destinatari non validi. Assicurarsi che il database sia in buono stato di manutenzione.
 * Quantità di personalizzazione: se una consegna rimane in &quot;Personalization in progress&quot;, controlla il JavaScript utilizzato nei blocchi di personalizzazione.
 

@@ -43,9 +43,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '927'
 ht-degree: 1%
 ---
 # Coupon personalizzati{#personalized-coupons}
@@ -54,7 +54,7 @@ L’aggiunta di coupon alle consegne può fornire ai destinatari un valore aggiu
 
 >[!AVAILABILITY]
 >
->La gestione dei coupon non è disponibile in Campaign v8 nel contesto di una distribuzione Enterprise (FFDA). Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
+>La gestione dei coupon non è disponibile in Campaign v8 nel contesto di una distribuzione Enterprise (FFDA). Ulteriori informazioni sono disponibili nella [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
 
 La gestione dei coupon si basa su un pacchetto che deve essere installato. Per confermare che hai la gestione del coupon, seleziona **[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
 
@@ -185,7 +185,7 @@ Per confermare che la consegna è avvenuta correttamente:
 
 >[!NOTE]
 >
->Per impostazione predefinita, il modulo di gestione dei coupon utilizza una tabella **nms:recipient**. [Ulteriori informazioni](../../configuration/using/about-data-model.md#default-recipient-table).
+>Per impostazione predefinita, il modulo di gestione dei coupon utilizza una tabella **nms:recipient**. [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} (documentazione di Campaign v8).
 >
 >Scopri come utilizzare una tabella dei destinatari personalizzata [in questa pagina](../../configuration/using/about-custom-recipient-table.md).
 

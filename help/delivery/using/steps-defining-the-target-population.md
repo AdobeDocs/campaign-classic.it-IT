@@ -39,9 +39,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 86e1df82ff7fe9142b0ba75b697d3262e8d7a9d5
 workflow-type: tm+mt
-source-wordcount: '1773'
+source-wordcount: '1791'
 ht-degree: 27%
 ---
 # Definire la popolazione target {#defining-the-target-population}
@@ -51,7 +51,7 @@ Per ogni consegna, puoi definire diversi tipi di popolazioni target:
 * **Pubblico principale**: profili che riceveranno messaggi. [Ulteriori informazioni](steps-defining-the-target-population.md#selecting-the-main-target)
 * **Bozza**: destinatari dei messaggi di bozza, coinvolti nel ciclo di convalida. [Ulteriori informazioni](steps-defining-the-target-population.md#defining-a-specific-proof-target)
 * **Indirizzi seed**: destinatari che non rientrano nel target di consegna ma che riceveranno la consegna (solo nel contesto di una campagna di marketing). [Ulteriori informazioni](about-seed-addresses.md)
-* **Gruppi di controllo**: popolazione che non riceverà la consegna, utilizzata per tenere traccia del comportamento e dell&#39;impatto della campagna (solo nel contesto di una campagna di marketing). [Ulteriori informazioni](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
+* **Gruppi di controllo**: popolazione che non riceverà la consegna, utilizzata per tenere traccia del comportamento e dell&#39;impatto della campagna (solo nel contesto di una campagna di marketing). [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/campaign/automation/campaign-orchestration/marketing-campaign-target#add-a-control-group){target="_blank"} (documentazione di Campaign v8).
 
 ## Selezionare i destinatari principali della consegna {#selecting-the-main-target}
 

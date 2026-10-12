@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Data collection
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
 workflow-type: tm+mt
-source-wordcount: '1256'
+source-wordcount: '1274'
 ht-degree: 2%
 ---
 # Configurare le istanze {#creating-a-shared-connection}
@@ -61,7 +61,7 @@ In questa sezione sono descritti tutti i passaggi necessari per configurare e co
 
 ## Configurare l’istanza di controllo {#control-instance}
 
-Per connettere l&#39;istanza di controllo e le istanze di esecuzione, è innanzitutto necessario creare e configurare un account esterno di tipo **[!UICONTROL Execution instance]** **nell&#39;istanza di controllo**. Pertanto, una volta [pubblicati](../../message-center/using/publishing-message-templates.md#template-publication), i modelli di messaggi transazionali possono essere distribuiti nelle istanze di esecuzione.
+Per connettere l&#39;istanza di controllo e le istanze di esecuzione, è innanzitutto necessario creare e configurare un account esterno di tipo **[!UICONTROL Execution instance]** **nell&#39;istanza di controllo**. Pertanto, una volta [pubblicati](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/real-time/transactional-template#publish-message-template){target="_blank"} (documentazione di Campaign v8), i modelli di messaggi transazionali possono essere distribuiti nelle istanze di esecuzione.
 
 Se utilizzi più istanze di esecuzione, devi creare tanti account esterni quanti sono le istanze di esecuzione.
 

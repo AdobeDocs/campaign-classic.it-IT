@@ -20,9 +20,9 @@ feature_v2:
     internal-label: Interaction
   - id: ea08db70-4682-59a2-9408-9aedd9548e07
     internal-label: Offers
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 323ff901668895588a6e9587fa2a8b7804cf2fb4
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '144'
 ht-degree: 0%
 ---
 # Creazione di un ambiente di test{#creating-a-test-environment}
@@ -33,7 +33,7 @@ Per creare un ambiente di test (modalità sandbox), effettua le seguenti operazi
 
 >[!IMPORTANT]
 >
->Utilizza questo metodo di creazione dell’ambiente solo per gli ambienti di test. In tutti gli altri casi, utilizza l’assistente per la mappatura di destinazione. Per ulteriori informazioni, consulta [Creazione di un ambiente di offerta](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+>Utilizza questo metodo di creazione dell’ambiente solo per gli ambienti di test. In tutti gli altri casi, utilizza l’assistente per la mappatura di destinazione. Per ulteriori informazioni, consulta [Creazione di un ambiente di offerta](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env#create-an-offer-environment){target="_blank"} (documentazione di Campaign v8).
 
 1. Avvia Adobe Campaign Explorer e passa alla directory principale dell’istanza.
 1. Fare clic con il pulsante destro del mouse e aggiungere **[!UICONTROL Generic folder]** utilizzando i menu a discesa.
