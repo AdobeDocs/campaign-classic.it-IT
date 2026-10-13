@@ -41,9 +41,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 586c6688e2abd3b6e55389bd1fa219d2c596d07d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '2138'
+source-wordcount: '2150'
 ht-degree: 0%
 ---
 # Protezione della privacy della posta nell’app Mail di Apple
@@ -369,7 +369,7 @@ Per tutti questi motivi, si consiglia vivamente di esportare questi dati il prim
 
 #### Come posso conservare i dati di tracciamento?
 
-Per conservare i dati di tracciamento, devi esportarli da Adobe Campaign al tuo sistema informativo. [Ulteriori informazioni](../../platform/using/get-started-data-import-export.md).
+Per conservare i dati di tracciamento, devi esportarli da Adobe Campaign al tuo sistema informativo. [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/data/import){target="_blank"} (documentazione di Campaign v8).
 
 >[!IMPORTANT]
 >

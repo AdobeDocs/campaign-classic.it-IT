@@ -41,9 +41,9 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '565'
 ht-degree: 1%
 ---
 # Avanzato: personalizza i registri di consegna {#customize-delivery-logs}
@@ -139,7 +139,7 @@ A questo scopo, accedi ai registri di consegna e aggiungi la colonna &quot;Ident
 
 >[!NOTE]
 >
->Per informazioni su come configurare gli elenchi nell&#39;interfaccia di Campaign Classic, fare riferimento a [questa pagina](../../platform/using/adobe-campaign-workspace.md).
+>Per informazioni su come configurare gli elenchi nell&#39;interfaccia di Campaign Classic, consulta [questa pagina](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui){target="_blank"} (documentazione di Campaign v8).
 
 Di seguito sono riportati gli elementi che dovrebbero essere visualizzati nella scheda **[!UICONTROL Delivery]** dopo le modifiche:
 

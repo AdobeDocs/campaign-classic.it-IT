@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 79%
+source-wordcount: '707'
+ht-degree: 54%
 ---
 # Documentazione di Campaign Classic v7 {#campaign-classic-documentation}
 
@@ -104,7 +104,7 @@ Alcune importanti modifiche al servizio Android Firebase Cloud Messaging (FCM) v
     <td>
       <img src="assets/do-not-localize/icon-start.svg" width="35px">
     <br/>
-      <strong>Introduzione</strong><br/><a href="platform/using/adobe-campaign-workspace.md">Interfaccia utente</a> - <a href="platform/using/launching-adobe-campaign.md">Connettersi a Campaign</a> - <a href="platform/using/get-started-data-import-export.md">Importare ed esportare dati</a> - <a href="platform/using/access-management.md">Autorizzazioni</a>
+      <strong>Inizia</strong><br/><a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui" target="_blank">Interfaccia utente</a> (documentazione di Campaign v8) - <a href="platform/using/launching-adobe-campaign.md">Connetti a Campaign</a> - <a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/data/import" target="_blank">Importa ed esporta dati</a> (documentazione di Campaign v8) - <a href="platform/using/access-management.md">Autorizzazioni</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
@@ -114,14 +114,14 @@ Alcune importanti modifiche al servizio Android Firebase Cloud Messaging (FCM) v
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
-      <strong>Inviare messaggi</strong><br/><a href="delivery/using/communication-channels.md">Canali di comunicazione</a> - <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">Inviare bozze</a> - <a href="delivery/using/get-started-a-b-testing.md">Test A/B</a> - <a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Tracciamento dei messaggi</a> - <a href="delivery/using/about-deliverability.md">Recapitabilità</a> - <a href="message-center/using/about-transactional-messaging.md">Messaggistica transazionale</a>
+      <strong>Invia messaggi</strong><br/><a href="delivery/using/communication-channels.md">Canali di comunicazione</a> - <a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/create-message" target="_blank">Invia bozze</a> (documentazione di Campaign v8) - <a href="delivery/using/get-started-a-b-testing.md">Test A/B</a> - <a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Tracciamento messaggi</a> - <a href="delivery/using/about-deliverability.md">Recapito messaggi</a> - <a href="message-center/using/about-transactional-messaging.md">Messaggistica transazionale</a>
     </td>
   </tr>
   <tr style="border: 0;">
     <td>
       <img src="assets/do-not-localize/icon_profile-audience.svg" width="35px">
       <br/>
-      <strong>Profili e tipi di pubblico</strong><br/> <a href="platform/using/creating-and-managing-lists.md">Creare elenchi</a> - <a href="delivery/using/about-services-and-subscriptions.md">Servizi e abbonamenti</a> - <a href="platform/using/privacy-management.md">Privacy &amp; consenso</a>
+      <strong>Profili e pubblico</strong><br/> <a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/audience/create-audiences/create-audiences" target="_blank">Crea elenchi</a> (documentazione di Campaign v8) - <a href="delivery/using/about-services-and-subscriptions.md">Servizi e abbonamenti</a> - <a href="platform/using/privacy-management.md">Privacy e consenso</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-configure.svg" width="35px">

@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Optimization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '1369'
+source-wordcount: '1413'
 ht-degree: 7%
 ---
 # Installare i pacchetti incorporati di Campaign Classic{#installing-campaign-standard-packages}
@@ -133,7 +133,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
   </tr> 
   <tr> 
    <td> Canale LINE<br /> </td> 
-   <td> Invia consegne utilizzando il canale LINE con Adobe Campaign. Facoltativo. La messaggistica transazionale (pacchetto del centro messaggi) è obbligatoria. <a href="../../delivery/using/line-channel.md">Ulteriori informazioni</a> <br /> </td> 
+   <td> Invia consegne utilizzando il canale LINE con Adobe Campaign. Facoltativo. La messaggistica transazionale (pacchetto del centro messaggi) è obbligatoria. <a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/other-channels/line" target="_blank">Ulteriori informazioni</a> (documentazione di Campaign v8) <br /> </td> 
    <td> Tutto<br /> </td> 
   </tr> 
   <tr> 
@@ -143,7 +143,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
   </tr> 
   <tr> 
    <td> Canale mobile (SMS) <br /> </td> 
-   <td> Invia consegne utilizzando il canale Mobile/SMS con Adobe Campaign. Facoltativo. <a href="../../delivery/using/sms-channel.md">Ulteriori informazioni</a> <br /> </td> 
+   <td> Invia consegne utilizzando il canale Mobile/SMS con Adobe Campaign. Facoltativo. <a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/sms/sms" target="_blank">Ulteriori informazioni</a> (documentazione di Campaign v8) <br /> </td> 
    <td> Tutto<br /> </td> 
   </tr> 
    <tr> 
@@ -283,7 +283,7 @@ Nel contesto di una configurazione di mid-sourcing, devi:
 
 * Installa il pacchetto [!DNL LINE] sia sull&#39;istanza Marketing che su quella MID
 
-* Imposta l&#39;account esterno [!DNL LINE] nell&#39;istanza di marketing in modo che punti all&#39;istanza mid modificando la modalità di consegna. [Ulteriori informazioni](../../delivery/using/line-channel.md#configure-line-external)
+* Imposta l&#39;account esterno [!DNL LINE] nell&#39;istanza di marketing in modo che punti all&#39;istanza mid modificando la modalità di consegna. [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/other-channels/line#configure-line-external){target="_blank"} (documentazione di Campaign v8)
 
 * Imposta le credenziali [!DNL LINE] nell&#39;account esterno nell&#39;istanza MID.
 

@@ -34,9 +34,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '698'
 ht-degree: 2%
 ---
 # Utilizzare una tabella dei destinatari personalizzata{#about-custom-recipient-table}
@@ -84,7 +84,7 @@ L’utilizzo di una tabella dei destinatari personalizzata presenta le seguenti 
 
 * Non è possibile aggiungere manualmente profili in un elenco.
 
-  Pertanto, la procedura descritta in [questa sezione](../../platform/using/creating-and-managing-lists.md) non è applicabile senza una configurazione aggiuntiva.
+  Pertanto, la procedura descritta in [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/audience/create-audiences/create-audiences){target="_blank"} (documentazione di Campaign v8) non è applicabile senza una configurazione aggiuntiva.
 
   >[!NOTE]
   >

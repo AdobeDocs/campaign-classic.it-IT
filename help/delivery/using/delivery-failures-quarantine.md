@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '1695'
-ht-degree: 3%
+source-wordcount: '1721'
+ht-degree: 2%
 ---
 # Errori di consegna e gestione della quarantena {#delivery-failures-quarantine}
 
@@ -105,7 +105,7 @@ I messaggi non recapitati possono avere il seguente stato di qualifica:
 
 >[!NOTE]
 >
->In caso di interruzione di un ISP, le e-mail inviate tramite Campaign verranno contrassegnate erroneamente come messaggi non recapitati. Per risolvere questo problema, devi aggiornare la qualifica di mancato recapito. Per ulteriori informazioni, consulta [questa pagina](update-bounce-qualification.md).
+>In caso di interruzione di un ISP, le e-mail inviate tramite Campaign verranno contrassegnate erroneamente come messaggi non recapitati. Per risolvere questo problema, devi aggiornare la qualifica di mancato recapito. Per ulteriori informazioni, consulta [questa pagina](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (documentazione di Campaign v8).
 
 ### Configurazione delle regole di gestione e-mail {#email-management-rules}
 
@@ -241,11 +241,11 @@ Per informazioni dettagliate sugli scenari di quarantena SMS e sui tipi di error
 
 * [Informazioni sugli errori di consegna](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (documentazione di Campaign v8)
 * [Gestione della quarantena](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (documentazione di Campaign v8)
-* [Best practice per la consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} (documentazione di Campaign v8)
+* [Best practice per la consegna](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} (documentazione di Campaign v8)
 * [Stati di consegna](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (documentazione di Campaign v8)
 * [Flusso di lavoro di pulizia del database](../../production/using/database-cleanup-workflow.md) (v7 ibrido/on-premise)
 * [Configura nuovi tentativi di consegna](communication-channels.md) (v7 ibrido/on-premise)
-* [Aggiorna qualifica per mancato recapito](update-bounce-qualification.md) (v7 ibrido/on-premise)
+* [Aggiorna qualifica per mancato recapito](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (documentazione di Campaign v8) (v7 ibrido/on-premise)
 * [Configurazione recapito messaggi e-mail](../../installation/using/email-deliverability.md) (v7 ibrido/on-premise)
 * [Distribuzione di un&#39;istanza](../../installation/using/deploying-an-instance.md#managing-bounced-emails) (v7 ibrido/on-premise)
 

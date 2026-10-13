@@ -27,9 +27,9 @@ subfeature_v2:
     internal-label: Target integration
   - id: 2e08b477-1993-5928-975d-5f4cabe8fbe0
     internal-label: Asset Sharing
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '248'
 ht-degree: 1%
 ---
 # Inserimento di una risorsa condivisa{#inserting-a-shared-asset}
@@ -54,7 +54,7 @@ Assets condiviso da Adobe Experience Cloud può essere utilizzato nelle e-mail e
 
      >[!NOTE]
      >
-     >Impossibile inserire immagini condivise da Adobe Campaign in [accesso Web](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) quando si utilizza DCE.
+     >Non è possibile inserire immagini condivise da Adobe Campaign in [accesso Web](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui#ui-access){target="_blank"} (documentazione di Campaign v8) quando si utilizza DCE.
 
 1. Nella finestra di selezione visualizzata, seleziona un’immagine, quindi conferma.
 

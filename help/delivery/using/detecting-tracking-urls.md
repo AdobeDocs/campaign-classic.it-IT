@@ -29,30 +29,18 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 2%
+source-wordcount: '247'
+ht-degree: 3%
 ---
 # Rilevare gli URL di tracciamento
 
-## Esempio di non rilevamento
+Adobe Campaign rileva gli URL da tracciare nel contenuto durante l’analisi della consegna.
 
-`<%= getURL("http://mynewsletter.com") %>` funziona e invia il contenuto effettivo della pagina Web tramite e-mail ai destinatari. Ma nessuno dei collegamenti viene tracciato. Il motivo è che l&#39;MTA esegue `"<%=getURL(..."` per ogni e-mail prima dell&#39;invio. Può essere diverso per ogni destinatario, pertanto Adobe Campaign non può conoscere gli URL per il tracciamento e assegnare loro un ID tag.
+Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per informazioni sul rilevamento degli URL e sui pattern da utilizzare, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/tracking/personalized-links#url-detection){target=_blank}.
 
-Quando la pagina da scaricare è la stessa per tutti i destinatari, la best practice prevede di effettuare le seguenti operazioni:
-
-`<%@ include url="http://mynewsletter.com" %>`
-
-In tal caso, la pagina viene scaricata durante l’analisi, prima del rilevamento del tracciamento. Consente ad Adobe Campaign di scoprire i collegamenti, assegnare un ID tag e tracciarli.
-
-## Pattern consigliato
-
-Dopo aver elaborato le istruzioni `<%@`, l&#39;URL da tracciare ha la seguente sintassi: `<a href="http://myurl.com/a.php?param1=aaa&param2=<%=escapeUrl(recipient.xxx)%>&param3=<%=escapeUrl(recipient.xxx)%>">`
-
->[!IMPORTANT]
->
->Tutti gli altri modelli non sono supportati da Adobe e devono essere evitati per evitare potenziali lacune di sicurezza.
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/tracking/personalized-links#url-detection){target=_blank}
 
 ## Pattern non protetto
 

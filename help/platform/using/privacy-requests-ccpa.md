@@ -41,10 +41,10 @@ subfeature_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 86%
+source-wordcount: '626'
+ht-degree: 82%
 ---
 # Rinuncia alla vendita di informazioni personali (CCPA) {#sale-of-personal-information-ccpa}
 
@@ -114,7 +114,7 @@ Accertati di non vendere mai a terzi le informazioni personali dei profili che h
 
    ![](assets/privacy-ccpa-5.png)
 
-1. Configura l’elenco dei destinatari affinché venga visualizzata la colonna della rinuncia. Per informazioni su come configurare gli elenchi, consulta la [documentazione dettagliata](../../platform/using/adobe-campaign-ui-lists.md#configuring-lists).
+1. Configura l’elenco dei destinatari affinché venga visualizzata la colonna della rinuncia. Per informazioni su come configurare gli elenchi, consulta la [documentazione dettagliata](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/settings/ui-settings#customize-lists){target="_blank"} (documentazione di Campaign v8).
 
    ![](assets/privacy-ccpa-6.png)
 

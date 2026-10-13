@@ -22,9 +22,9 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '872'
 ht-degree: 2%
 ---
 # Pubblicare, tracciare e utilizzare i dati raccolti{#publish-track-and-use-collected-data}
@@ -125,7 +125,7 @@ Le risposte a un sondaggio possono essere esportate in un file esterno per esser
 
    >[!NOTE]
    >
-   >Le esportazioni di dati e le fasi della loro configurazione sono descritte in [questa sezione](../../platform/using/about-generic-imports-exports.md).
+   >Le esportazioni di dati e le fasi della loro configurazione sono descritte in [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/data/import){target="_blank"} (documentazione di Campaign v8).
 
 ## Utilizzo dei dati raccolti {#using-the-collected-data}
 

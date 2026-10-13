@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '349'
 ht-degree: 4%
 ---
 # Indirizzi di seed{#seed-addresses}
@@ -45,7 +45,7 @@ Se la tabella dei destinatari è personalizzata, sono necessarie configurazioni 
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
-Per ulteriori informazioni sull&#39;utilizzo degli indirizzi di seed, fare riferimento a [questa sezione](../../delivery/using/about-seed-addresses.md).
+Per ulteriori informazioni sull&#39;utilizzo degli indirizzi di seed, consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/audience/add-profiles/test-profiles){target="_blank"} (documentazione di Campaign v8).
 
 ## Implementazione {#implementation}
 

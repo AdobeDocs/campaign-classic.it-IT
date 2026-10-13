@@ -26,9 +26,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '651'
 ht-degree: 1%
 ---
 # Istruzioni di pre-elaborazione {#pre-processing-instructions}
@@ -44,6 +44,10 @@ Esistono tre tipi di istruzioni:
 * **[!DNL foreach]**: per eseguire il ciclo di un array caricato come oggetto personalizzato. [Ulteriori informazioni](#foreach)
 
 Possono essere testati direttamente dall’assistente alla consegna. Vengono applicati nell’anteprima del contenuto e quando fai clic sul pulsante di tracciamento per visualizzare l’elenco degli URL.
+
+Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sulle istruzioni di pre-elaborazione, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/tracking/personalized-links#pre-processing-instructions){target=_blank}.
+
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/tracking/personalized-links#pre-processing-instructions){target=_blank}
 
 ## [!DNL include] {#include}
 
@@ -150,19 +154,6 @@ Ad esempio:
 ## [!DNL foreach] {#foreach}
 
 Questa istruzione consente di eseguire l’iterazione su un array di oggetti caricati nella consegna per monitorare i singoli collegamenti correlati agli oggetti.
-
-Sintassi:
-
-```
-<%@ foreach object="myObject" xpath="myLink" index="3" item="myItem" %> <%@ end %>
-```
-
-Dove:
-
-* **[!DNL object]**: nome dell&#39;oggetto da cui iniziare, in genere un oggetto script aggiuntivo, ma può essere una consegna.
-* **[!DNL xpath]** (facoltativo): xpath della raccolta su cui eseguire il ciclo. Il valore predefinito è &quot;.&quot;, ovvero l&#39;oggetto corrisponde all&#39;array su cui eseguire il ciclo.
-* **[!DNL index]** (facoltativo): se xpath non è &quot;.&quot; e l’oggetto è un array stesso, indice dell’oggetto (inizia da 0).
-* **[!DNL item]** (facoltativo): nome di un nuovo oggetto accessibile con il valore &lt;%@ all&#39;interno del ciclo foreach. Predefinito con il nome del collegamento nello schema.
 
 Esempio:
 

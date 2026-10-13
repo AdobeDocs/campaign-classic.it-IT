@@ -46,9 +46,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '617'
 ht-degree: 4%
 ---
 # Passaggi di configurazione per iOS {#configuring-the-mobile-application-in-adobe-campaign-ios}
@@ -61,7 +61,7 @@ I passaggi chiave sono i seguenti:
 1. [Configurare il servizio iOS](#configuring-ios-service)
 1. [Integrare l’app mobile iOS in Campaign](#creating-ios-app)
 
-Potrai quindi [creare una notifica push per dispositivi iOS](create-notifications-ios.md).
+Potrai quindi [creare una notifica push per dispositivi iOS](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios){target="_blank"} (documentazione di Campaign v8).
 
 ## Configurare l’account esterno di iOS {#configuring-external-account-ios}
 
@@ -133,7 +133,7 @@ Nell&#39;esempio seguente vengono aggiunti **mediaURl** e **mediaExt** per crear
 
 1. Fare clic su **[!UICONTROL Next]** per avviare la configurazione dell&#39;applicazione di sviluppo.
 
-1. Assicurarsi che lo stesso **[!UICONTROL Integration key]** sia definito in Adobe Campaign e nel codice dell&#39;applicazione tramite SDK. <!--For more on this, refer to [this page](integrating-campaign-sdk-into-the-mobile-application.md).--> Questa chiave di integrazione, specifica per ogni applicazione, consente di collegare l’app mobile alla piattaforma Adobe Campaign.
+1. Assicurarsi che lo stesso **[!UICONTROL Integration key]** sia definito in Adobe Campaign e nel codice dell&#39;applicazione tramite SDK. <!--For more on this, refer to [this page](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation).--> Questa chiave di integrazione, specifica per ogni applicazione, consente di collegare l’app mobile alla piattaforma Adobe Campaign.
 
    >[!NOTE]
    >

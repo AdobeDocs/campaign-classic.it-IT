@@ -8,9 +8,9 @@ user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1657'
 ht-degree: 100%
 ---
 
@@ -32,36 +32,22 @@ ht-degree: 100%
 + Introduzione {#getting-started}
   + [Introduzione ad Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
   + [Avviare Adobe Campaign](platform/using/launching-adobe-campaign.md)
-  + [Scoprire l’interfaccia utente di Campaign](platform/using/adobe-campaign-workspace.md)
-  + {hide-from-toc}[Utilizzare Campaign Explorer - NASCOSTO](platform/using/adobe-campaign-explorer.md)
-  + {hide-from-toc}[Sfogliare e personalizzare gli elenchi - NASCOSTO](platform/using/adobe-campaign-ui-lists.md)
-  + {hide-from-toc}[Enumerazioni - NASCOSTO](platform/using/managing-enumerations.md)
   + [Connettori di Campaign](platform/using/about-connectors.md)
   + Domande frequenti {#faq}
     + [Domande frequenti su Campaign Classic](platform/using/faq-campaign-classic-v7.md)
     + [Aggiornamento della build](platform/using/faq-build-upgrade.md)
-  + {hide-from-toc}[Glossario - NASCOSTO](platform/using/ac-glossary.md)
   + Privacy {#privacy}
     + [Privacy e consenso](platform/using/privacy-and-recommendations.md)
     + [Gestione della privacy](platform/using/privacy-management.md)
     + Richieste di accesso a dati personali {#privacy-requests}
-      + [Informazioni sulle richieste di accesso a dati personali](platform/using/privacy-requests.md)
       + [Creare e gestire richieste di accesso a dati personali](platform/using/privacy-requests-ui.md)
       + [Processo automatico di richiesta di accesso a dati personali](platform/using/privacy-requests-api.md)
     + [Rinuncia alla vendita di informazioni personali](platform/using/privacy-requests-ccpa.md)
   + Gestione dei profili {#profile-management}
     + [Informazioni sui profili](platform/using/about-profiles.md)
     + [Aggiornare i dati](platform/using/updating-data.md)
-    + [Creare e gestire gli elenchi](platform/using/creating-and-managing-lists.md)
   + Importare ed esportare dati {#importing-and-exporting-data}
-    + [Introduzione all’importazione e l’esportazione dei dati](platform/using/get-started-data-import-export.md)
-    + [Utilizzare i flussi di lavoro per importare ed esportare i dati](platform/using/import-export-workflows.md)
     + Creare importazioni ed esportazioni generiche {#generic-imports-exports}
-      + [Introduzione a importazioni ed esportazioni generiche](platform/using/about-generic-imports-exports.md)
-      + [Creare modelli di importazione ed esportazione](platform/using/creating-import-export-templates.md)
-      + [Creare processi di importazione ed esportazione](platform/using/creating-import-export-jobs.md)
-      + [Configurare i processi di importazione](platform/using/executing-import-jobs.md)
-      + [Configurare i processi di esportazione](platform/using/executing-export-jobs.md)
       + [Monitorare l’esecuzione dei processi](platform/using/monitoring-jobs-execution.md)
       + [Esempi di importazione generica](platform/using/import-operations-samples.md)
     + Gestire la crittografia e la compressione dei dati {#managing-data-encryption-compression}
@@ -70,89 +56,38 @@ ht-degree: 100%
     + Best practice e risoluzione dei problemi {#best-practices}
       + [Best practice per l’importazione e l’esportazione](platform/using/import-export-best-practices.md)
       + [Best practice e risoluzione dei problemi per il server SFTP](platform/using/sftp-server-usage.md)
-  + Filtrare i dati {#filtering-data}
-    + {hide-from-toc}[Creare filtri - NASCOSTO](platform/using/creating-filters.md)
-  + {hide-from-toc}[Passaggi per creare una query - NASCOSTO](platform/using/steps-to-create-a-query.md)
-  + {hide-from-toc}[Definire le condizioni del filtro - NASCOSTO](platform/using/defining-filter-conditions.md)
   + Autorizzazioni {#permissions}
     + [Introduzione alle autorizzazioni](platform/using/access-management.md)
     + Autenticazione nativa (legacy) {#native}
       + [Creare e gestire gli operatori](platform/using/access-management-operators.md)
       + [Creare e gestire i gruppi](platform/using/access-management-groups.md)
-    + [Utilizzare i diritti denominati per impostare le autorizzazioni](platform/using/access-management-named-rights.md)
   + Connettori CRM {#connectors}
     + [Introduzione ai connettori CRM](platform/using/crm-connectors.md)
 + Creare e inviare messaggi {#sending-messages}
   + [Introduzione ai messaggi](delivery/using/communication-channels.md)
   + {hide-from-toc}[Impostazioni di consegna - NASCOSTO](delivery/using/delivery-settings.md)
   + Avvio rapido {#key-steps-when-creating-a-delivery}
-    + {hide-from-toc}[Introduzione alle consegne - NASCOSTO](delivery/using/steps-about-delivery-creation-steps.md)
-    + {hide-from-toc}[Creare e identificare una consegna - NASCOSTO](delivery/using/steps-create-and-identify-the-delivery.md)
-    + {hide-from-toc}[Definire il pubblico - NASCOSTO](delivery/using/steps-defining-the-target-population.md)
-    + {hide-from-toc}[Convalidare la consegna - NASCOSTO](delivery/using/steps-validating-the-delivery.md)
     + {hide-from-toc}[Inviare la consegna - NASCOSTO](delivery/using/steps-sending-the-delivery.md)
-    + {hide-from-toc}[Best practice per la consegna - NASCOSTO](delivery/using/delivery-best-practices.md)
-  + Best practice per la consegna {#delivery-bestpractices}
-    + {hide-from-toc}[Ottimizzare la consegna - NASCOSTO](delivery/using/optimize-delivery.md)
-    + {hide-from-toc}[Utilizzare i modelli - NASCOSTO](delivery/using/use-templates.md)
-    + {hide-from-toc}[Creare contenuti personalizzati - NASCOSTO](delivery/using/design-and-personalize.md)
-    + {hide-from-toc}[Definire il pubblico giusto - NASCOSTO](delivery/using/define-the-right-audience.md)
-    + {hide-from-toc}[Controllare prima dell’invio - NASCOSTO](delivery/using/check-before-sending.md)
   + [Inviare e-mail](delivery/using/about-email-channel.md)
-  + Inviare e-mail {#sending-emails}
-    + {hide-from-toc}[Creare una consegna e-mail - NASCOSTO](delivery/using/creating-an-email-delivery.md)
-    + {hide-from-toc}[Definire il contenuto dell’e-mail - NASCOSTO](delivery/using/defining-the-email-content.md)
-    + {hide-from-toc}[Definire il contenuto interattivo - NASCOSTO](delivery/using/defining-interactive-content.md)
-    + Inviare la consegna e-mail {#sending-an-email}
-      + {hide-from-toc}[Passaggi principali per inviare un’e-mail - NASCOSTO](delivery/using/sending-messages.md)
-      + {hide-from-toc}[Parametri e-mail - NASCOSTO](delivery/using/email-parameters.md)
-      + {hide-from-toc}[Inviare su dispositivi mobili giapponesi - NASCOSTO](delivery/using/sending-emails-on-japanese-mobiles.md)
-    + {hide-from-toc}[Allegare i file - NASCOSTO](delivery/using/attaching-files.md)
   + Inviare SMS {#sending-messages-on-mobiles}
-    + [Introduzione agli SMS](delivery/using/sms-channel.md)
     + Configurare il canale SMS {#sms-set-up}
       + [Configurare gli SMS in un’istanza autonoma](delivery/using/sms-set-up.md)
       + [Configurare gli SMS in un’infrastruttura mid-sourcing](delivery/using/sms-set-up-mid.md)
       + [Protocollo e impostazioni del connettore SMS](delivery/using/sms-protocol.md)
       + [Configurazione aggiuntiva](delivery/using/sms-send.md)
       + [Risoluzione dei problemi relativi agli SMS](delivery/using/troubleshooting-sms.md)
-    + {hide-from-toc}[Creare un SMS - NASCOSTO](delivery/using/sms-create.md)
     + {hide-from-toc}[Migrare al connettore SMPP generico esteso](delivery/using/unsupported-connector-migration.md)
-  + [Inviare messaggi LINE](delivery/using/line-channel.md)
   + [Inviare notifiche push](delivery/using/about-mobile-app-channel.md)
   + Inviare notifiche push {#sending-push-notifications}
-    + {hide-from-toc}[Integrare Campaign SDK nell’applicazione mobile](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
     + Configurare l’app mobile{#configure-the-mobile-app}
       + {hide-from-toc}[Introduzione alla configurazione dell’app - NASCOSTO](delivery/using/get-started-app-config.md)
       + {hide-from-toc}[Passaggi di configurazione per iOS - NASCOSTO](delivery/using/configuring-the-mobile-application.md)
       + {hide-from-toc}[Passaggi di configurazione per Android - NASCOSTO](delivery/using/configuring-the-mobile-application-android.md)
-    + Creare una notifica push{#create-a-push-msg}
-      + {hide-from-toc}[Creare un messaggio push per iOS - NASCOSTO](delivery/using/create-notifications-ios.md)
-      + {hide-from-toc}[Creare un messaggio push per Android - NASCOSTO](delivery/using/create-notifications-android.md)
     + {hide-from-toc}[Risoluzione dei problemi - NASCOSTO](delivery/using/troubleshooting.md)
   + [Inviare direct mail](delivery/using/about-direct-mail-channel.md)
-  + Inviare direct mail {#sending-direct-mail}
-    + {hide-from-toc}[Creare una consegna direct mail - NASCOSTO](delivery/using/creating-a-direct-mail-delivery.md)
-    + {hide-from-toc}[Definire il contenuto direct mail - NASCOSTO](delivery/using/defining-the-direct-mail-content.md)
-    + {hide-from-toc}[Convalidare - NASCOSTO](delivery/using/validating.md)
-  + Utilizzare i modelli di consegna {#using-delivery-templates}
-    + {hide-from-toc}[Utilizzare i modelli di consegna - NASCOSTO](delivery/using/about-templates.md)
-    + {hide-from-toc}[Creare un modello di consegna - NASCOSTO](delivery/using/creating-a-delivery-template.md)
-    + {hide-from-toc}[Selezionare una mappatura target - NASCOSTO](delivery/using/selecting-a-target-mapping.md)
-    + {hide-from-toc}[Creare una consegna da un modello - NASCOSTO](delivery/using/creating-a-delivery-from-a-template.md)
   + Personalizzare le consegne {#personalizing-deliveries}
     + [Informazioni sulla personalizzazione](delivery/using/about-personalization.md)
-    + {hide-from-toc}[Campi di personalizzazione - NASCOSTO](delivery/using/personalization-fields.md)
-    + {hide-from-toc}[Blocchi di personalizzazione - NASCOSTO](delivery/using/personalization-blocks.md)
-    + {hide-from-toc}[Contenuto condizionale - NASCOSTO](delivery/using/conditional-content.md)
-    + {hide-from-toc}[Coupon personalizzati - NASCOSTO](delivery/using/personalized-coupons.md)
-    + {hide-from-toc}[Generare documenti PDF personalizzati - NASCOSTO](delivery/using/generating-personalized-pdf-documents.md)
-    + {hide-from-toc}[Personalizzare l’elenco delle emoticon](delivery/using/customizing-emoticon-list.md)
   + Utilizzare indirizzi seed {#using-seed-addresses}
-    + [Informazioni sugli indirizzi seed](delivery/using/about-seed-addresses.md)
-    + [Creare indirizzi seed](delivery/using/creating-seed-addresses.md)
-    + [Aggiungere indirizzi seed](delivery/using/adding-seed-addresses.md)
-    + [Utilizzare una tabella dei destinatari esterna](delivery/using/using-an-external-recipient-table.md)
     + [Caso d’uso: selezionare gli indirizzi seed in base ai criteri](delivery/using/use-case-selecting-seed-addresses-on-criteria.md)
     + [Caso d’uso: configurare la sostituzione del campo](delivery/using/use-case-configuring-the-field-substitution.md)
   + Test A/B {#a-b-testing}
@@ -180,9 +115,7 @@ ht-degree: 100%
     + [Avanzato: personalizza i registri di consegna](delivery/using/customize-delivery-logs.md)
   + Gestione della recapitabilità {#deliverability-management}
     + [Che cos’è il recapito messaggi](delivery/using/about-deliverability.md)
-    + [Controllare il contenuto dei messaggi](delivery/using/control-message-content.md)
     + [Rendering della casella in entrata](delivery/using/inbox-rendering.md)
-    + [SpamAssassin](delivery/using/spamassassin.md)
     + [Risoluzione dei problemi](delivery/using/deliverability-faq.md)
   + Modulo di gestione dei contenuti {#content-management}
     + [Informazioni sulla gestione dei contenuti](delivery/using/about-content-management.md)
@@ -593,8 +526,6 @@ ht-degree: 100%
     + {hide-from-toc}[Eseguire la migrazione all’API di Adobe Analytics 2.0](technotes/using/analytics-2-migration.md)
   + E-mail e notifiche push{#technotes-email}
     + [Protezione della privacy della posta su Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
-    + [Come aggiornare i mancati recapiti permanenti errati](delivery/using/update-bounce-qualification.md)
-    + {hide-from-toc}[Aggiornare i mancati recapiti permanenti errati dopo un’interruzione del servizio ISP](delivery/using/update-bounces.md)
     + [Aggiornamento del certificato iOS](technotes/using/ios-certificate-update.md)
     + {hide-from-toc}[Aggiornamento degli URL tracciati](technotes/using/tracked-urls.md)
   + Migrazione ad Adobe Managed Services{#dc-migration}
