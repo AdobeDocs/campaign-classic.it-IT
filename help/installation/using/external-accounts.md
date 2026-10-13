@@ -28,7 +28,7 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
 workflow-type: tm+mt
 source-wordcount: '1959'
 ht-degree: 7%
@@ -345,7 +345,7 @@ Per ulteriori informazioni, consulta questa [sezione](../../integrations/using/a
 
 L&#39;account esterno **[!UICONTROL Microsoft Dynamics CRM]** consente di importare ed esportare dati Microsoft Dynamics in Adobe Campaign.
 
-Ulteriori informazioni su Campaign - Connettore Microsoft Dynamics CRM in questa [pagina](../../platform/using/crm-ms-dynamics.md).
+Ulteriori informazioni su Campaign - Connettore Microsoft Dynamics CRM in questa [pagina](../../platform/using/crm-connectors.md).
 
 Con il tipo di distribuzione **[!UICONTROL Web API]** e l&#39;autenticazione **[!UICONTROL Password credentials]**, è necessario fornire i dettagli seguenti:
 

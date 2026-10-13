@@ -29,7 +29,7 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
+source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 0%
@@ -176,7 +176,7 @@ Vengono cercate le seguenti espressioni (distinzione maiuscole/minuscole):
    <td> Errore<br /> </td> 
    <td> Questo tipo di distribuzione non è più supportato. Il tipo di distribuzione del connettore Microsoft CRM per Office 365 e on-premise è ora obsoleto. 
    </br>Se si utilizza uno di questi tipi di distribuzione obsoleti in un account esterno, è necessario eliminare questo account esterno ed eseguire il comando <b>postupgrade</b>. 
-   </br>Per modificare la distribuzione API Web, consultare <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Applicazioni Web</a>.<br /> </td>
+   </br>Per modificare la distribuzione API Web, consultare <a href="../../platform/using/crm-connectors.md">Applicazioni Web</a>.<br /> </td>
   </tr> 
   <tr> 
    <td> CRM v1(mscrmWorkflow/sfdcWorkflow)<br /> </td> 
