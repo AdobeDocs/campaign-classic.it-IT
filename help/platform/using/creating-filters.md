@@ -26,7 +26,7 @@ subfeature_v2:
     internal-label: Query Editor
   - id: efa38731-2723-4334-8d8b-a778af834835
     internal-label: Access management
-source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 4%
@@ -37,7 +37,7 @@ Il filtro dei dati è il processo di selezione di una parte più piccola del set
 
 Quando ci si sposta nella struttura Adobe Campaign (dal menu **[!UICONTROL Explorer]** nella home page), i dati contenuti nel database vengono visualizzati in elenchi. Questi elenchi possono essere configurati per visualizzare solo i dati richiesti dall’operatore. È quindi possibile avviare azioni sui dati filtrati. La configurazione del filtro consente di selezionare dati da un elenco **[!UICONTROL dynamically]**. Se i dati vengono modificati, i dati filtrati vengono aggiornati.
 
-Ulteriori informazioni sui **filtri e su come utilizzarli** nella [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}.
+Ulteriori informazioni sui **filtri e su come utilizzarli** nella [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}.
 
 
 <!--
@@ -213,7 +213,7 @@ Advanced filters can use functions; **filters with functions** are created via a
 
       >[!NOTE]
       >
-      >For an example of filter creation based on an expression, refer to [this section](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email#identifying-recipients-whose-birthday-it-is){target="_blank"} (Campaign v8 documentation).
+      >For an example of filter creation based on an expression, refer to [this section](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email#identifying-recipients-whose-birthday-it-is){target="_blank"} (Campaign v8 documentation).
 
 ## Save a filter {#saving-a-filter}
 
@@ -221,7 +221,7 @@ Filters are specific to each operator and are re-initialized each time the opera
 
 You can create an **application filter** by saving an advanced filter: it can be re-used by right-clicking in any list or via the **[!UICONTROL Filters]** button located above the lists.
 
-These filters can also be accessed directly via the delivery assistant, in the target selection stage (refer to [this section](../../delivery/using/creating-an-email-delivery.md) for more on creating deliveries). To create the application filter, you can:
+These filters can also be accessed directly via the delivery assistant, in the target selection stage (refer to [this section](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email){target="_blank"} (Campaign v8 documentation) for more on creating deliveries). To create the application filter, you can:
 
 * Convert an advanced filter to an application filter. To do this, click **[!UICONTROL Save]** before closing the advanced filter editor.
 

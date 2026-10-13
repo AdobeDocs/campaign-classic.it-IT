@@ -8,9 +8,9 @@ user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1740'
 ht-degree: 100%
 ---
 
@@ -86,73 +86,27 @@ ht-degree: 100%
   + [Introduzione ai messaggi](delivery/using/communication-channels.md)
   + {hide-from-toc}[Impostazioni di consegna - NASCOSTO](delivery/using/delivery-settings.md)
   + Avvio rapido {#key-steps-when-creating-a-delivery}
-    + {hide-from-toc}[Introduzione alle consegne - NASCOSTO](delivery/using/steps-about-delivery-creation-steps.md)
-    + {hide-from-toc}[Creare e identificare una consegna - NASCOSTO](delivery/using/steps-create-and-identify-the-delivery.md)
-    + {hide-from-toc}[Definire il pubblico - NASCOSTO](delivery/using/steps-defining-the-target-population.md)
-    + {hide-from-toc}[Convalidare la consegna - NASCOSTO](delivery/using/steps-validating-the-delivery.md)
     + {hide-from-toc}[Inviare la consegna - NASCOSTO](delivery/using/steps-sending-the-delivery.md)
-    + {hide-from-toc}[Best practice per la consegna - NASCOSTO](delivery/using/delivery-best-practices.md)
-  + Best practice per la consegna {#delivery-bestpractices}
-    + {hide-from-toc}[Ottimizzare la consegna - NASCOSTO](delivery/using/optimize-delivery.md)
-    + {hide-from-toc}[Utilizzare i modelli - NASCOSTO](delivery/using/use-templates.md)
-    + {hide-from-toc}[Creare contenuti personalizzati - NASCOSTO](delivery/using/design-and-personalize.md)
-    + {hide-from-toc}[Definire il pubblico giusto - NASCOSTO](delivery/using/define-the-right-audience.md)
-    + {hide-from-toc}[Controllare prima dell’invio - NASCOSTO](delivery/using/check-before-sending.md)
   + [Inviare e-mail](delivery/using/about-email-channel.md)
-  + Inviare e-mail {#sending-emails}
-    + {hide-from-toc}[Creare una consegna e-mail - NASCOSTO](delivery/using/creating-an-email-delivery.md)
-    + {hide-from-toc}[Definire il contenuto dell’e-mail - NASCOSTO](delivery/using/defining-the-email-content.md)
-    + {hide-from-toc}[Definire il contenuto interattivo - NASCOSTO](delivery/using/defining-interactive-content.md)
-    + Inviare la consegna e-mail {#sending-an-email}
-      + {hide-from-toc}[Passaggi principali per inviare un’e-mail - NASCOSTO](delivery/using/sending-messages.md)
-      + {hide-from-toc}[Parametri e-mail - NASCOSTO](delivery/using/email-parameters.md)
-      + {hide-from-toc}[Inviare su dispositivi mobili giapponesi - NASCOSTO](delivery/using/sending-emails-on-japanese-mobiles.md)
-    + {hide-from-toc}[Allegare i file - NASCOSTO](delivery/using/attaching-files.md)
   + Inviare SMS {#sending-messages-on-mobiles}
-    + [Introduzione agli SMS](delivery/using/sms-channel.md)
     + Configurare il canale SMS {#sms-set-up}
       + [Configurare gli SMS in un’istanza autonoma](delivery/using/sms-set-up.md)
       + [Configurare gli SMS in un’infrastruttura mid-sourcing](delivery/using/sms-set-up-mid.md)
       + [Protocollo e impostazioni del connettore SMS](delivery/using/sms-protocol.md)
       + [Configurazione aggiuntiva](delivery/using/sms-send.md)
       + [Risoluzione dei problemi relativi agli SMS](delivery/using/troubleshooting-sms.md)
-    + {hide-from-toc}[Creare un SMS - NASCOSTO](delivery/using/sms-create.md)
     + {hide-from-toc}[Migrare al connettore SMPP generico esteso](delivery/using/unsupported-connector-migration.md)
-  + [Inviare messaggi LINE](delivery/using/line-channel.md)
   + [Inviare notifiche push](delivery/using/about-mobile-app-channel.md)
   + Inviare notifiche push {#sending-push-notifications}
-    + {hide-from-toc}[Integrare Campaign SDK nell’applicazione mobile](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
     + Configurare l’app mobile{#configure-the-mobile-app}
       + {hide-from-toc}[Introduzione alla configurazione dell’app - NASCOSTO](delivery/using/get-started-app-config.md)
       + {hide-from-toc}[Passaggi di configurazione per iOS - NASCOSTO](delivery/using/configuring-the-mobile-application.md)
       + {hide-from-toc}[Passaggi di configurazione per Android - NASCOSTO](delivery/using/configuring-the-mobile-application-android.md)
-    + Creare una notifica push{#create-a-push-msg}
-      + {hide-from-toc}[Creare un messaggio push per iOS - NASCOSTO](delivery/using/create-notifications-ios.md)
-      + {hide-from-toc}[Creare un messaggio push per Android - NASCOSTO](delivery/using/create-notifications-android.md)
     + {hide-from-toc}[Risoluzione dei problemi - NASCOSTO](delivery/using/troubleshooting.md)
   + [Inviare direct mail](delivery/using/about-direct-mail-channel.md)
-  + Inviare direct mail {#sending-direct-mail}
-    + {hide-from-toc}[Creare una consegna direct mail - NASCOSTO](delivery/using/creating-a-direct-mail-delivery.md)
-    + {hide-from-toc}[Definire il contenuto direct mail - NASCOSTO](delivery/using/defining-the-direct-mail-content.md)
-    + {hide-from-toc}[Convalidare - NASCOSTO](delivery/using/validating.md)
-  + Utilizzare i modelli di consegna {#using-delivery-templates}
-    + {hide-from-toc}[Utilizzare i modelli di consegna - NASCOSTO](delivery/using/about-templates.md)
-    + {hide-from-toc}[Creare un modello di consegna - NASCOSTO](delivery/using/creating-a-delivery-template.md)
-    + {hide-from-toc}[Selezionare una mappatura target - NASCOSTO](delivery/using/selecting-a-target-mapping.md)
-    + {hide-from-toc}[Creare una consegna da un modello - NASCOSTO](delivery/using/creating-a-delivery-from-a-template.md)
   + Personalizzare le consegne {#personalizing-deliveries}
     + [Informazioni sulla personalizzazione](delivery/using/about-personalization.md)
-    + {hide-from-toc}[Campi di personalizzazione - NASCOSTO](delivery/using/personalization-fields.md)
-    + {hide-from-toc}[Blocchi di personalizzazione - NASCOSTO](delivery/using/personalization-blocks.md)
-    + {hide-from-toc}[Contenuto condizionale - NASCOSTO](delivery/using/conditional-content.md)
-    + {hide-from-toc}[Coupon personalizzati - NASCOSTO](delivery/using/personalized-coupons.md)
-    + {hide-from-toc}[Generare documenti PDF personalizzati - NASCOSTO](delivery/using/generating-personalized-pdf-documents.md)
-    + {hide-from-toc}[Personalizzare l’elenco delle emoticon](delivery/using/customizing-emoticon-list.md)
   + Utilizzare indirizzi seed {#using-seed-addresses}
-    + [Informazioni sugli indirizzi seed](delivery/using/about-seed-addresses.md)
-    + [Creare indirizzi seed](delivery/using/creating-seed-addresses.md)
-    + [Aggiungere indirizzi seed](delivery/using/adding-seed-addresses.md)
-    + [Utilizzare una tabella dei destinatari esterna](delivery/using/using-an-external-recipient-table.md)
     + [Caso d’uso: selezionare gli indirizzi seed in base ai criteri](delivery/using/use-case-selecting-seed-addresses-on-criteria.md)
     + [Caso d’uso: configurare la sostituzione del campo](delivery/using/use-case-configuring-the-field-substitution.md)
   + Test A/B {#a-b-testing}
@@ -180,9 +134,7 @@ ht-degree: 100%
     + [Avanzato: personalizza i registri di consegna](delivery/using/customize-delivery-logs.md)
   + Gestione della recapitabilità {#deliverability-management}
     + [Che cos’è il recapito messaggi](delivery/using/about-deliverability.md)
-    + [Controllare il contenuto dei messaggi](delivery/using/control-message-content.md)
     + [Rendering della casella in entrata](delivery/using/inbox-rendering.md)
-    + [SpamAssassin](delivery/using/spamassassin.md)
     + [Risoluzione dei problemi](delivery/using/deliverability-faq.md)
   + Modulo di gestione dei contenuti {#content-management}
     + [Informazioni sulla gestione dei contenuti](delivery/using/about-content-management.md)
@@ -593,8 +545,6 @@ ht-degree: 100%
     + {hide-from-toc}[Eseguire la migrazione all’API di Adobe Analytics 2.0](technotes/using/analytics-2-migration.md)
   + E-mail e notifiche push{#technotes-email}
     + [Protezione della privacy della posta su Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
-    + [Come aggiornare i mancati recapiti permanenti errati](delivery/using/update-bounce-qualification.md)
-    + {hide-from-toc}[Aggiornare i mancati recapiti permanenti errati dopo un’interruzione del servizio ISP](delivery/using/update-bounces.md)
     + [Aggiornamento del certificato iOS](technotes/using/ios-certificate-update.md)
     + {hide-from-toc}[Aggiornamento degli URL tracciati](technotes/using/tracked-urls.md)
   + Migrazione ad Adobe Managed Services{#dc-migration}

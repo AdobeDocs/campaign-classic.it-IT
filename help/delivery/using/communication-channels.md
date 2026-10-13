@@ -47,7 +47,7 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
 source-wordcount: '1062'
 ht-degree: 18%
@@ -64,20 +64,20 @@ Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di
 
 >[!TAB Documentazione sui canali di comunicazione]
 
-Per ulteriori informazioni sui canali di comunicazione, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=it){target=_blank}.
+Per ulteriori informazioni sui canali di comunicazione, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target=_blank}.
 
 
-[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=it){target=_blank}
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target=_blank}
 
 
 >[!TAB Contenuto e pubblico della consegna]
 
 Scopri i passaggi chiave relativi alla creazione di consegne, al contenuto e al pubblico **nella documentazione di Campaign v8**:
 
-* [Crea la consegna](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it#create-the-delivery){target="_blank"}: scopri come creare una singola consegna.
-* [Definisci il contenuto](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it#content-of-the-delivery){target="_blank"}: configura il contenuto di consegna specifico per ciascun canale.
+* [Crea la consegna](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}: scopri come creare una singola consegna.
+* [Definisci il contenuto](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#content-of-the-delivery){target="_blank"}: configura il contenuto di consegna specifico per ciascun canale.
 * [Specificare il pubblico](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it#target-population){target="_blank"}: definire diversi tipi di destinazione: pubblico principale, destinazione bozza, indirizzi seed e gruppi di controllo.
-* [Utilizzare i modelli di consegna](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=it){target="_blank"}: scopri come definire i modelli per facilitare la creazione di consegne.
+* [Utilizzare i modelli di consegna](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}: scopri come definire i modelli per facilitare la creazione di consegne.
 
 
 
@@ -87,13 +87,13 @@ Scopri i passaggi chiave relativi alla creazione di consegne, al contenuto e al 
 
 Consulta queste pagine per scoprire la convalida della consegna, l’invio e le best practice **nella documentazione di Campaign v8**:
 
-* [Convalida la consegna](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it#validate-the-delivery){target="_blank"}: scopri come convalidare la consegna prima di inviarla al target principale.
-* [Invia la consegna](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it#configuring-and-sending-the-delivery){target="_blank"}: configura le impostazioni di consegna e definisci come inviare i messaggi.
-* [Best practice per la consegna](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=it){target="_blank"}: consulta le best practice relative alle funzionalità di consegna di Campaign.
+* [Convalida la consegna](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#validate-the-delivery){target="_blank"}: scopri come convalidare la consegna prima di inviarla al target principale.
+* [Invia la consegna](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#configuring-and-sending-the-delivery){target="_blank"}: configura le impostazioni di consegna e definisci come inviare i messaggi.
+* [Best practice per la consegna](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}: consulta le best practice relative alle funzionalità di consegna di Campaign.
 
 >[!ENDTABS]
 
-Le seguenti impostazioni sono specifiche di Campaign Classic. Per altre impostazioni di consegna, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=it){target="_blank"}.
+Le seguenti impostazioni sono specifiche di Campaign Classic. Per altre impostazioni di consegna, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target="_blank"}.
 
 +++ **Analisi della consegna**
 
@@ -168,19 +168,19 @@ Una volta avviata la consegna, i messaggi (ed eventuali nuovi tentativi) possono
 
    Learn how to create a one-shot single delivery. You can create other types of deliveries to build your use cases. 
 
-For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=it){target="_blank"}. 
+For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}. 
 
 >[!NOTE]
 >
 >Adobe Campaign offers a set of tools to monitor your deliverability and optimize email sending. Learn more in [this section](about-deliverability.md).
 
-Delivery sending can be automated by preparing a delivery and/or sending it in the process of a workflow. For more on delivery-type activities in workflows, refer to [this section](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities){target="_blank"} (Campaign v8 documentation).
+Delivery sending can be automated by preparing a delivery and/or sending it in the process of a workflow. For more on delivery-type activities in workflows, refer to [this section](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities){target="_blank"} (Campaign v8 documentation).
 
 Adobe Campaign offers the following delivery channels:
 
 1. **Email channel**: email deliveries let you send personalized emails to the target population. Refer to [About email channel](about-email-channel.md).
 1. **Direct mail channel**: direct mail deliveries let you generate an extraction file which contains data on the target population. Refer to [About direct mail channel](about-direct-mail-channel.md).
-1. **Mobile channel**: deliveries on mobile channels let you send personalized SMS or LINE messages to the target population. Refer to [SMS channel](sms-channel.md).
+1. **Mobile channel**: deliveries on mobile channels let you send personalized SMS or LINE messages to the target population. Refer to [SMS channel](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms/sms){target="_blank"} (Campaign v8 documentation).
 1. **Mobile application channel**: mobile app deliveries let you send notifications to iOS and Android systems. Refer to the [Mobile app channel](about-mobile-app-channel.md) chapter.
 
    Other channels are described on [this section](#other-channels).
@@ -205,16 +205,16 @@ The [Email channel](about-email-channel.md) is one of the core channels in Adobe
 You can send different types of emails:
 
 * Single-send emails: emails that you can send once to a defined target. They are usually used to promote a specific content that would be prepared and sent only once (newsletter, promotional email, etc.).
-* Recurring emails: in a campaign, send the same email regularly and aggregate each send and its reports on a periodic basis. The same email is sent, but usually to a different target, based on the eligible target for the day of the send. A common example is a birthday email. For more on this, refer to [Recurring deliveries](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/wf-activities/action-activities/recurring-delivery){target="_blank"} (Campaign v8 documentation).
+* Recurring emails: in a campaign, send the same email regularly and aggregate each send and its reports on a periodic basis. The same email is sent, but usually to a different target, based on the eligible target for the day of the send. A common example is a birthday email. For more on this, refer to [Recurring deliveries](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/recurring-delivery){target="_blank"} (Campaign v8 documentation).
 * Transactional emails: unitary emails that are triggered based on your customers' behavior. Refer to [Transactional messaging](../../message-center/using/about-transactional-messaging.md).
 
-To learn about delivery usage and recommendations, consult Campaign [Delivery best practices](delivery-best-practices.md).
+To learn about delivery usage and recommendations, consult Campaign [Delivery best practices](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/delivery-best-practices){target="_blank"} (Campaign v8 documentation).
 
 For more on the different types of deliveries, refer to [this section](#types-of-deliveries).
 
 ## Mobile deliveries {#mobile-deliveries}
 
-Adobe Campaign allows you to deliver [SMS](sms-channel.md) and [LINE](line-channel.md) messages on mobiles.
+Adobe Campaign allows you to deliver [SMS](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms/sms){target="_blank"} (Campaign v8 documentation) and [LINE](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/other-channels/line){target="_blank"} (Campaign v8 documentation) messages on mobiles.
 
 For SMS messages, you can create, modify, and personalize messages in text format only. You can also preview your SMS messages before they are sent.
 
@@ -257,9 +257,9 @@ There are three types of delivery objects in Campaign:
 
 A **delivery** is a standalone delivery object that is executed once. It can be duplicated, prepared again, but as long as it is in its final state (canceled, stopped, finished), it cannot be reused.
 
-Deliveries can be created either from the list of deliveries, or within a workflow via a [Delivery](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/wf-activities/action-activities/delivery){target="_blank"} (Campaign v8 documentation) activity.
+Deliveries can be created either from the list of deliveries, or within a workflow via a [Delivery](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/delivery){target="_blank"} (Campaign v8 documentation) activity.
 
-Workflows also provide specific delivery activities according to the type of channel you want to use. For more on these activities, refer to [this section](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/wf-activities/action-activities/cross-channel-deliveries){target="_blank"} (Campaign v8 documentation).
+Workflows also provide specific delivery activities according to the type of channel you want to use. For more on these activities, refer to [this section](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/cross-channel-deliveries){target="_blank"} (Campaign v8 documentation).
 
 ### Recurring delivery {#recurring-delivery}
 
@@ -267,7 +267,7 @@ A **recurring delivery** lets you create a new delivery each time the activity i
 
 As an example, if you run this type of activity once a month, you will end up with 12 deliveries after a year.
 
-Recurring deliveries are created within workflows via the [Recurring delivery activity](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/wf-activities/action-activities/recurring-delivery){target="_blank"} (Campaign v8 documentation). An example of this activity being used is presented in this section: [Creating a recurring delivery in a targeting workflow](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email#creating-a-recurring-delivery-in-a-targeting-workflow){target="_blank"} (Campaign v8 documentation).
+Recurring deliveries are created within workflows via the [Recurring delivery activity](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/recurring-delivery){target="_blank"} (Campaign v8 documentation). An example of this activity being used is presented in this section: [Creating a recurring delivery in a targeting workflow](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email#creating-a-recurring-delivery-in-a-targeting-workflow){target="_blank"} (Campaign v8 documentation).
 
 ### Continuous delivery {#continuous-delivery}
 
@@ -277,6 +277,6 @@ If an information in the delivery changes (content, name, etc.), a new delivery 
 
 As an example, if you run this type of activity once a month, you will end up with a single delivery after a year (provided you did not make any change to the delivery).
 
-Continuous deliveries are created within workflows via the [Continuous delivery activity](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/wf-activities/action-activities/continuous-delivery){target="_blank"} (Campaign v8 documentation).
+Continuous deliveries are created within workflows via the [Continuous delivery activity](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/continuous-delivery){target="_blank"} (Campaign v8 documentation).
 
 -->
