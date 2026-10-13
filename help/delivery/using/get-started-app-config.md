@@ -56,7 +56,7 @@ Per inviare notifiche push in Adobe Campaign, devi:
 
 * Creare un servizio informazioni di tipo **[!UICONTROL Mobile application]** per l&#39;app mobile Neotrips. Consulta [questa sezione per iOS](configuring-the-mobile-application.md#configuring-ios-service). e [questa sezione per Android](configuring-the-mobile-application-android.md#configuring-android-service).
 * Aggiungi le versioni iOS e Android dell’applicazione a questo servizio.
-* Crea una consegna per [iOS](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios){target="_blank"} (documentazione di Campaign v8) e [Android](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/rich-push/rich-push-android){target="_blank"} (documentazione di Campaign v8).
+* Crea una consegna per [iOS](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios){target="_blank"} (documentazione di Campaign v8) e [Android](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/push/rich-push/rich-push-android){target="_blank"} (documentazione di Campaign v8).
 
 ![](assets/nmac_service_diagram.png)
 
@@ -68,7 +68,7 @@ Per inviare notifiche push in Adobe Campaign, devi:
 
 [!BADGE On-Premise e ibrido]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=it" tooltip="Applicabile solo alle distribuzioni on-premise e ibride"}
 
-![](assets/do-not-localize/how-to-video.png) [Scopri come installare il pacchetto per app mobile nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html#sending-messages)
+![](assets/do-not-localize/how-to-video.png) [Scopri come installare il pacchetto per app mobile nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=it#sending-messages)
 
 In qualità di cliente ibrido/in hosting, contatta il team [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per accedere al canale di notifica push in Campaign.
 

@@ -45,7 +45,7 @@ Se la tabella dei destinatari è personalizzata, sono necessarie configurazioni 
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
-Per ulteriori informazioni sull&#39;utilizzo degli indirizzi di seed, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/add-profiles/test-profiles){target="_blank"} (documentazione di Campaign v8).
+Per ulteriori informazioni sull&#39;utilizzo degli indirizzi di seed, consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/audience/add-profiles/test-profiles){target="_blank"} (documentazione di Campaign v8).
 
 ## Implementazione {#implementation}
 
@@ -107,7 +107,7 @@ Applica i seguenti passaggi:
    >    
    >
 
-1. Modificare di conseguenza il modulo **[!UICONTROL seedMember]** per definire una nuova scheda &quot;Destinatario interno&quot; nella finestra **[!UICONTROL Seed addresses]**. Per ulteriori informazioni, consulta [questa pagina](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (documentazione di Campaign v8).
+1. Modificare di conseguenza il modulo **[!UICONTROL seedMember]** per definire una nuova scheda &quot;Destinatario interno&quot; nella finestra **[!UICONTROL Seed addresses]**. Per ulteriori informazioni, consulta [questa pagina](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (documentazione di Campaign v8).
 
    ```
    <container colcount="2" label="Internal recipient" name="internal"

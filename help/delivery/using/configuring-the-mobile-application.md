@@ -61,7 +61,7 @@ I passaggi chiave sono i seguenti:
 1. [Configurare il servizio iOS](#configuring-ios-service)
 1. [Integrare l’app mobile iOS in Campaign](#creating-ios-app)
 
-Potrai quindi [creare una notifica push per dispositivi iOS](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios){target="_blank"} (documentazione di Campaign v8).
+Potrai quindi [creare una notifica push per dispositivi iOS](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios){target="_blank"} (documentazione di Campaign v8).
 
 ## Configurare l’account esterno di iOS {#configuring-external-account-ios}
 
@@ -133,7 +133,7 @@ Nell&#39;esempio seguente vengono aggiunti **mediaURl** e **mediaExt** per crear
 
 1. Fare clic su **[!UICONTROL Next]** per avviare la configurazione dell&#39;applicazione di sviluppo.
 
-1. Assicurarsi che lo stesso **[!UICONTROL Integration key]** sia definito in Adobe Campaign e nel codice dell&#39;applicazione tramite SDK. <!--For more on this, refer to [this page](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation).--> Questa chiave di integrazione, specifica per ogni applicazione, consente di collegare l’app mobile alla piattaforma Adobe Campaign.
+1. Assicurarsi che lo stesso **[!UICONTROL Integration key]** sia definito in Adobe Campaign e nel codice dell&#39;applicazione tramite SDK. <!--For more on this, refer to [this page](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation).--> Questa chiave di integrazione, specifica per ogni applicazione, consente di collegare l’app mobile alla piattaforma Adobe Campaign.
 
    >[!NOTE]
    >

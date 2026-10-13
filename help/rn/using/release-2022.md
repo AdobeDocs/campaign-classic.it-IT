@@ -60,7 +60,7 @@ _1 luglio 2022_
 <tbody> 
 <tr> 
 <td> <p>Con iOS 15, Apple ha aggiunto il concetto di “notifiche urgenti” che permette allo sviluppatore dell’app di ignorare la modalità di attivazione quando una notifica è considerata urgente e deve quindi raggiungere l’utente in tempo reale.</p>
-<p>Scopri come creare una notifica sensibile nella <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios" target="_blank">documentazione dettagliata</a> (documentazione di Campaign v8).</p>
+<p>Scopri come creare una notifica sensibile nella <a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios" target="_blank">documentazione dettagliata</a> (documentazione di Campaign v8).</p>
 </td> 
 </tr> 
 </tbody> 
@@ -172,10 +172,10 @@ Adobe Campaign è ora compatibile con Windows Server 2019. Consulta la [Matrice 
 
 **Altre modifiche**
 
-* Dopo essere state dichiarate obsolete, le attività di azione Microsoft CRM, Salesforce, Oracle CRM On Demand sono state rimosse dall’interfaccia. Per configurare la sincronizzazione dati tra Adobe Campaign e un sistema CRM, puoi utilizzare l’attività del connettore CRM. [Ulteriori informazioni](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector){target="_blank"} (documentazione di Campaign v8)
+* Dopo essere state dichiarate obsolete, le attività di azione Microsoft CRM, Salesforce, Oracle CRM On Demand sono state rimosse dall’interfaccia. Per configurare la sincronizzazione dati tra Adobe Campaign e un sistema CRM, puoi utilizzare l’attività del connettore CRM. [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector){target="_blank"} (documentazione di Campaign v8)
 * Il campo **[!UICONTROL Encrypted identifier]** è stato aggiunto allo schema visitatore (nms:visitor). Questo è un campo calcolato e deve essere utilizzato per le applicazioni web. Questo si applica quando il canale Line è configurato sull’istanza di mid-sourcing.
 * È ora possibile utilizzare le origini dati del CRM con l’attività **Modifica l’origine dati**.
-* È stata aggiunta una nuova opzione nella proprietà **Gestione degli errori** delle attività del flusso di lavoro: l’opzione **Interrompi in caso di errore** arresta automaticamente il flusso di lavoro. Non potrai riavviarlo successivamente (NEO-29661). [Ulteriori informazioni](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/advanced-management/advanced-parameters#in-case-of-errors){target="_blank"} (documentazione di Campaign v8)
+* È stata aggiunta una nuova opzione nella proprietà **Gestione degli errori** delle attività del flusso di lavoro: l’opzione **Interrompi in caso di errore** arresta automaticamente il flusso di lavoro. Non potrai riavviarlo successivamente (NEO-29661). [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/advanced-management/advanced-parameters#in-case-of-errors){target="_blank"} (documentazione di Campaign v8)
 * Ora viene utilizzata una sequenza dedicata per generare le chiavi primarie per la tabella nmsGroup, che viene utilizzata per creare gruppi statistici di destinatari. In precedenza, veniva utilizzata la sequenza xtknewId. (NEO-30832)
 * È stato aggiunto il supporto per le operazioni di aggiornamento batch tramite l’attività del connettore CRM.
 * Sono state migliorate le prestazioni per i tempi di elaborazione della messaggistica transazionale. (NEO-40370)

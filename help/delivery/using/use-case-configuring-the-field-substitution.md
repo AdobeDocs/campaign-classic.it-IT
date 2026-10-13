@@ -56,7 +56,7 @@ Per utilizzare la sostituzione casuale dei campi, è necessario disporre di:
 
 ## Creare una consegna {#step-1---creating-a-delivery}
 
-I passaggi per la creazione di una consegna sono descritti nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}.
+I passaggi per la creazione di una consegna sono descritti nella [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html?lang=it){target="_blank"}.
 
 In questo esempio, il responsabile della consegna ha creato la newsletter.
 
@@ -85,7 +85,7 @@ Affinché la modifica dello schema dati possa essere visualizzata negli indirizz
 
    ![](assets/dlv_seeds_usecase_25.png)
 
-1. Configura l’elenco di consegna e gli indirizzi seed. Consulta [Identificare le popolazioni target](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/create-message){target="_blank"} (documentazione di Campaign v8).
+1. Configura l’elenco di consegna e gli indirizzi seed. Consulta [Identificare le popolazioni target](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/create-message){target="_blank"} (documentazione di Campaign v8).
 
    In questo esempio, l&#39;utente seleziona come gruppo target principale gli utenti il cui **genere letterario preferito** è Sci-Fi.
 
