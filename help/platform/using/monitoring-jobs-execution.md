@@ -46,7 +46,7 @@ ht-degree: 1%
 ![](assets/s_ncs_user_export_list_and_details.png)
 
 * La scheda **[!UICONTROL Journal]** consente di esaminare i messaggi di registro relativi all&#39;esecuzione.
-* La scheda **[!UICONTROL Rejects]** contiene i record rifiutati. Consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import#behavior-in-the-event-of-an-error){target="_blank"} (documentazione di Campaign v8).
+* La scheda **[!UICONTROL Rejects]** contiene i record rifiutati. Consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/data/import#behavior-in-the-event-of-an-error){target="_blank"} (documentazione di Campaign v8).
 
 Nella scheda **[!UICONTROL General]**, il campo **[!UICONTROL Status]** indica lo stato corrente di un processo.
 

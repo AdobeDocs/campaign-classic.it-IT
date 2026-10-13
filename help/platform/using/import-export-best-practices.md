@@ -56,7 +56,7 @@ In molti progetti, le importazioni vengono create senza l&#39;attività **[!UICO
 
 Non partire dal presupposto che i dati in arrivo siano coerenti e corretti o che il reparto IT o il supervisore Adobe Campaign se ne occuperanno. Durante il progetto, tieni presente la pulizia dei dati. Deduplicare, riconciliare e mantenere la coerenza durante l&#39;importazione dei dati.
 
-Un esempio di modello di flusso di lavoro generico progettato per l&#39;importazione di dati è disponibile nella sezione [Esempio: modello di flusso di lavoro per l&#39;importazione di dati](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import){target="_blank"} (documentazione di Campaign v8).
+Un esempio di modello di flusso di lavoro generico progettato per l&#39;importazione di dati è disponibile nella sezione [Esempio: modello di flusso di lavoro per l&#39;importazione di dati](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/data/import){target="_blank"} (documentazione di Campaign v8).
 
 ## Usa formati di file flat {#using-flat-file-formats}
 
@@ -85,8 +85,8 @@ Se possibile, utilizzate file compressi per le importazioni e le esportazioni. G
 
 **Argomenti correlati:**
 
-* [Attività di caricamento dati (file)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}
-* [Attività di estrazione dati (file)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}.
+* [Attività di caricamento dati (file)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=it){target="_blank"}
+* [Attività di estrazione dati (file)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=it){target="_blank"}.
 
 ## Importa in modalità Delta {#importing-in-delta-mode}
 

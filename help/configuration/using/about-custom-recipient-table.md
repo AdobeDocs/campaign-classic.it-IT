@@ -84,7 +84,7 @@ L’utilizzo di una tabella dei destinatari personalizzata presenta le seguenti 
 
 * Non è possibile aggiungere manualmente profili in un elenco.
 
-  Pertanto, la procedura descritta in [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-audiences){target="_blank"} (documentazione di Campaign v8) non è applicabile senza una configurazione aggiuntiva.
+  Pertanto, la procedura descritta in [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/audience/create-audiences/create-audiences){target="_blank"} (documentazione di Campaign v8) non è applicabile senza una configurazione aggiuntiva.
 
   >[!NOTE]
   >

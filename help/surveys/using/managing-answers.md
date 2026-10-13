@@ -108,7 +108,7 @@ Per ogni modulo è possibile utilizzare le risposte fornite nei campi o nelle et
 
 >[!NOTE]
 >
->Per altri tipi di campi, la sintassi è descritta in [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"} (documentazione di Campaign v8).
+>Per altri tipi di campi, la sintassi è descritta in [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"} (documentazione di Campaign v8).
 
 ### Impostazioni di archiviazione {#storage-settings}
 

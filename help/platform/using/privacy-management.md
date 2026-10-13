@@ -97,12 +97,12 @@ Per aiutarti a garantire l’idoneità alle normative sulla privacy, Adobe Campa
 
 * Anche noto come eliminazione dei dati, il **diritto all’oblio** (richiesta di eliminazione) autorizza l’interessato a richiedere che il titolare del trattamento cancelli i suoi dati personali, cessi di diffonderli ed richieda a terzi di cessarne il trattamento da parte di terzi.
 
-Per informazioni su come creare le richieste di **accesso** e **eliminazione** e su come queste vengono elaborate da Adobe Campaign, consulta i [passaggi per l&#39;implementazione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/privacy){target="_blank"} (documentazione di Campaign v8).
+Per informazioni su come creare le richieste di **accesso** e **eliminazione** e su come queste vengono elaborate da Adobe Campaign, consulta i [passaggi per l&#39;implementazione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/privacy/privacy){target="_blank"} (documentazione di Campaign v8).
 
 <!--
-Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html).
+Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=it).
 
-https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html
+https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=it
 -->
 
 ## Consenso, conservazione e ruoli {#consent-retention-roles}

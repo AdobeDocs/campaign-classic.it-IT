@@ -44,7 +44,7 @@ Assets condiviso da Adobe Experience Cloud può essere utilizzato nelle e-mail e
 
 1. Nella finestra di modifica, seleziona l’opzione per aggiungere un’immagine:
 
-   * Se si utilizza la [modalità di modifica standard](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}, selezionare **[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**.
+   * Se si utilizza la [modalità di modifica standard](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=it#adding-images){target="_blank"}, selezionare **[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**.
 
      ![](assets/dam_insert_image_standard.png)
 
@@ -54,7 +54,7 @@ Assets condiviso da Adobe Experience Cloud può essere utilizzato nelle e-mail e
 
      >[!NOTE]
      >
-     >Non è possibile inserire immagini condivise da Adobe Campaign in [accesso Web](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#ui-access){target="_blank"} (documentazione di Campaign v8) quando si utilizza DCE.
+     >Non è possibile inserire immagini condivise da Adobe Campaign in [accesso Web](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui#ui-access){target="_blank"} (documentazione di Campaign v8) quando si utilizza DCE.
 
 1. Nella finestra di selezione visualizzata, seleziona un’immagine, quindi conferma.
 

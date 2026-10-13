@@ -55,7 +55,7 @@ A tale scopo, fare clic sul collegamento **[!UICONTROL Filter data...]** nella s
 
 Nell’esempio seguente, vogliamo che il grafico mostri solo i profili dei destinatari che vivono in Francia e che hanno effettuato un acquisto durante l’anno.
 
-Per definire questo filtro, inserisci una pagina nel grafico e modificala. Fare clic sul collegamento **[!UICONTROL Filter data]** e creare il filtro corrispondente ai dati che si desidera visualizzare. Per ulteriori informazioni sulla creazione di query in Adobe Campaign, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"} (documentazione di Campaign v8).
+Per definire questo filtro, inserisci una pagina nel grafico e modificala. Fare clic sul collegamento **[!UICONTROL Filter data]** e creare il filtro corrispondente ai dati che si desidera visualizzare. Per ulteriori informazioni sulla creazione di query in Adobe Campaign, consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"} (documentazione di Campaign v8).
 
 ![](assets/s_ncs_advuser_report_wizard_029.png)
 

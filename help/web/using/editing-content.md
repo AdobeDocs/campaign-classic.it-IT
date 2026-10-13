@@ -47,7 +47,7 @@ Per aggiungere una condizione di visibilità, selezionare un blocco e immetterla
 
 >[!NOTE]
 >
->La modifica avanzata delle espressioni è presentata in [questa pagina](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"} (documentazione di Campaign v8).
+>La modifica avanzata delle espressioni è presentata in [questa pagina](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"} (documentazione di Campaign v8).
 
 ![](assets/dce_popup_visibilitycondition.png)
 
@@ -280,4 +280,4 @@ L&#39;opzione **Blocco Personalization** consente di inserire blocchi dinamici e
 
 Una volta inserito, il nome del blocco di personalizzazione viene visualizzato nell’editor ed evidenziato in giallo. Viene adattato automaticamente al profilo del destinatario quando viene generata la personalizzazione.
 
-Per ulteriori informazioni sui blocchi di personalizzazione incorporati e su come definire blocchi di personalizzazione personalizzati, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
+Per ulteriori informazioni sui blocchi di personalizzazione incorporati e su come definire blocchi di personalizzazione personalizzati, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=it){target="_blank"}.

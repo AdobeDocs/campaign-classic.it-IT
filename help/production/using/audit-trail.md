@@ -38,7 +38,7 @@ ht-degree: 2%
 
 >[!INFO]
 >
->Ulteriori informazioni sulla funzionalità Audit trail sono disponibili nella [documentazione di Adobe Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail).
+>Ulteriori informazioni sulla funzionalità Audit trail sono disponibili nella [documentazione di Adobe Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/audit-trail).
 
 In Adobe Campaign, **[!UICONTROL Audit trail]** consente di accedere alla cronologia completa delle modifiche apportate all&#39;interno dell&#39;istanza.
 
@@ -55,7 +55,7 @@ In Adobe Campaign, **[!UICONTROL Audit trail]** consente di accedere alla cronol
 
 * **Audit trail dello schema**: consente di esplorare le modifiche apportate agli schemi, nonché di identificare chi ha apportato tali modifiche e quando si sono verificate.
 
-  Per informazioni dettagliate sugli schemi, consulta questa [pagina](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentazione di Campaign v8).
+  Per informazioni dettagliate sugli schemi, consulta questa [pagina](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentazione di Campaign v8).
 
 * **Audit trail del flusso di lavoro** tiene traccia di tutte le azioni relative ai flussi di lavoro, tra cui:
 
@@ -70,7 +70,7 @@ In Adobe Campaign, **[!UICONTROL Audit trail]** consente di accedere alla cronol
 
   Per ulteriori informazioni sui flussi di lavoro, consulta questa [pagina](../../workflow/using/about-workflows.md).
 
-  Per ulteriori informazioni su come monitorare i flussi di lavoro, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}.
+  Per ulteriori informazioni su come monitorare i flussi di lavoro, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=it){target="_blank"}.
 
 
 * **Option audit trail** consente di controllare le attività e le ultime modifiche apportate alle opzioni.
