@@ -24,9 +24,9 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 7b7f6d2ad5e5d09880f05c7e99ea8ede770532ab
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '145'
 ht-degree: 2%
 ---
 # Rigenera schemi{#regenerating-schemas}
@@ -37,7 +37,7 @@ Quando modifichi uno schema e salvi le modifiche, lo schema esteso viene generat
 1. Fare clic con il pulsante destro del mouse e scegliere **[!UICONTROL Actions > Regenerate selected schemas...]**.
 1. Fare clic su **[!UICONTROL OK]** per confermare e avviare il processo.
 
-Puoi quindi controllare la struttura dello schema generato nelle schede Anteprima e Documentazione. Per ulteriori informazioni, consulta la sezione [Principi](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"} (documentazione di Campaign v8).
+Puoi quindi controllare la struttura dello schema generato nelle schede Anteprima e Documentazione. Per ulteriori informazioni, consulta la sezione [Principi](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentazione di Campaign v8).
 
 >[!NOTE]
 >

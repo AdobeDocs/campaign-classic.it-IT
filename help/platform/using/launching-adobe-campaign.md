@@ -36,9 +36,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '464'
 ht-degree: 15%
 ---
 # Avviare Adobe Campaign {#launching-adobe-campaign}
@@ -65,7 +65,7 @@ Gli utenti di Campaign si connettono alla console di Adobe Campaign utilizzando 
 
 Per configurare la connessione Campaign Classic v7 con Adobe Identity Management Service (IMS), consulta [questa pagina](../../integrations/using/about-adobe-id.md).
 
-Al termine della configurazione, scopri come connetterti a Campaign con il tuo Adobe ID nella [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/connect){target=_blank}.
+Al termine della configurazione, scopri come connetterti a Campaign con il tuo Adobe ID nella [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect){target=_blank}.
 
 
 ### Connettersi con login/password
@@ -82,7 +82,7 @@ Puoi anche connetterti con un login/password dedicato. Questa connessione è not
 
 1. Fai clic su **[!UICONTROL LOG IN]** per confermare.
 
-È ora possibile accedere all&#39;[area di lavoro Adobe Campaign](../../platform/using/adobe-campaign-workspace.md).
+Ora puoi accedere all&#39;[area di lavoro Adobe Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target="_blank"} (documentazione di Campaign v8).
 
 ## Configurare le connessioni {#setting-up-connections}
 
@@ -90,7 +90,7 @@ Puoi anche connetterti con un login/password dedicato. Questa connessione è not
 
 ![](assets/s_ncs_user_connections_management.png)
 
-Scopri come impostare le connessioni nella [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/connect#create-your-connection){target=_blank}.
+Scopri come impostare le connessioni nella [documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect#create-your-connection){target=_blank}.
 
 ## Operatori e autorizzazioni {#operators-and-permissions}
 

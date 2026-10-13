@@ -28,10 +28,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 1%
+source-wordcount: '512'
+ht-degree: 0%
 ---
 # Utilizzare il contesto nei rapporti{#using-the-context}
 
@@ -55,7 +55,7 @@ A tale scopo, fare clic sul collegamento **[!UICONTROL Filter data...]** nella s
 
 Nell’esempio seguente, vogliamo che il grafico mostri solo i profili dei destinatari che vivono in Francia e che hanno effettuato un acquisto durante l’anno.
 
-Per definire questo filtro, inserisci una pagina nel grafico e modificala. Fare clic sul collegamento **[!UICONTROL Filter data]** e creare il filtro corrispondente ai dati che si desidera visualizzare. Per ulteriori informazioni sulla creazione di query in Adobe Campaign, consulta [questa sezione](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
+Per definire questo filtro, inserisci una pagina nel grafico e modificala. Fare clic sul collegamento **[!UICONTROL Filter data]** e creare il filtro corrispondente ai dati che si desidera visualizzare. Per ulteriori informazioni sulla creazione di query in Adobe Campaign, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"} (documentazione di Campaign v8).
 
 ![](assets/s_ncs_advuser_report_wizard_029.png)
 

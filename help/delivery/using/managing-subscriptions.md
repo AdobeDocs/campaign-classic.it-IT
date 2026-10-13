@@ -38,10 +38,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '1113'
-ht-degree: 3%
+source-wordcount: '1125'
+ht-degree: 2%
 ---
 # Gestire le iscrizioni{#managing-subscriptions}
 
@@ -156,7 +156,7 @@ Per registrare i destinatari di un servizio informazioni, è possibile:
 * Iscrivi automaticamente un set di destinatari a questo servizio. L’elenco dei destinatari può provenire da un’operazione di filtro, un gruppo, una cartella, un’importazione o una selezione diretta effettuata con il mouse. Per sottoscrivere questi destinatari, seleziona i profili e fai clic con il pulsante destro del mouse. Selezionare **[!UICONTROL Actions > Subscribe selection to a service...]**, selezionare il servizio interessato e avviare l&#39;operazione.
 * Importa i destinatari e abbonali automaticamente a un servizio di informazioni. A questo scopo, seleziona il servizio interessato nell’ultimo passaggio dell’assistente all’importazione.
 
-  Per ulteriori informazioni al riguardo, consulta [questa sezione](../../platform/using/executing-import-jobs.md).
+  Per ulteriori informazioni, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import){target="_blank"} (documentazione di Campaign v8).
 
 * Utilizza un modulo web in modo che i destinatari possano abbonarsi a un servizio.
 
@@ -176,7 +176,7 @@ le consegne e-mail devono contenere per legge un collegamento che consenta di an
 
 Il collegamento predefinito per l&#39;annullamento dell&#39;iscrizione viene inserito tramite l&#39;ultimo pulsante nella barra degli strumenti dell&#39;editor di contenuti fornito nell&#39;assistente alla consegna (vedi [Informazioni sulla personalizzazione](about-personalization.md)). Quando il destinatario fa clic su questo collegamento, il profilo viene aggiunto al inserisco nell&#39;elenco Bloccati di consegna (opt-out), il che significa che il destinatario non sarà più interessato da alcuna azione di consegna.
 
-I destinatari possono tuttavia scegliere di annullare l’abbonamento a un servizio senza annullare l’abbonamento a tutti i servizi. Per consentire questa operazione, puoi utilizzare un modulo web (fai riferimento a [questa sezione](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) o inserire un collegamento di annullamento dell&#39;abbonamento personalizzato. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=it){target="_blank"}.
+I destinatari possono tuttavia scegliere di annullare l’abbonamento a un servizio senza annullare l’abbonamento a tutti i servizi. Per consentire questa operazione, puoi utilizzare un modulo web (fai riferimento a [questa sezione](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) o inserire un collegamento di annullamento dell&#39;abbonamento personalizzato. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
 
 Puoi anche annullare manualmente l’abbonamento di un destinatario dal profilo del destinatario. A tale scopo, fare clic sulla scheda **[!UICONTROL Subscriptions]** del destinatario interessato, selezionare i servizi di informazione interessati e fare clic su **[!UICONTROL Delete]**.
 

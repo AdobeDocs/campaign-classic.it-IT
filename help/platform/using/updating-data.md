@@ -32,9 +32,9 @@ subfeature_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '750'
 ht-degree: 2%
 ---
 # Aggiornare i dati{#updating-data}
@@ -47,7 +47,7 @@ I dati collegati al profilo di un destinatario possono essere aggiornati manualm
 
 ## Impostare un aggiornamento automatico {#setting-up-an-automatic-update}
 
-Un aggiornamento automatico può essere configurato tramite un flusso di lavoro. Per ulteriori informazioni, fai riferimento alla [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html?lang=it){target="_blank"}.
+Un aggiornamento automatico può essere configurato tramite un flusso di lavoro. Per ulteriori informazioni, fai riferimento alla [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html){target="_blank"}.
 
 ## Eseguire un aggiornamento di massa {#performing-a-mass-update}
 
@@ -118,7 +118,7 @@ Controllare le colonne **[!UICONTROL Result]** di entrambe le sezioni della fine
 
    ![](assets/s_ncs_user_export_list_start.png)
 
-   Per ulteriori informazioni su come configurare l&#39;Assistente all&#39;esportazione, consultare [questa sezione](../../platform/using/executing-export-jobs.md).
+   Per ulteriori informazioni su come configurare l&#39;assistente all&#39;esportazione, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import){target="_blank"} (documentazione di Campaign v8).
 
 ## Abbonati a un servizio {#subscribing-to-a-service}
 

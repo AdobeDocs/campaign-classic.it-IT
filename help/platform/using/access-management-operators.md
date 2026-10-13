@@ -46,9 +46,9 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1289'
 ht-degree: 5%
 ---
 # Creare e gestire gli operatori {#operators}
@@ -63,7 +63,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->Queste procedure si applicano solo agli operatori che si connettono a Campaign con autenticazione nativa. Per l&#39;autenticazione Adobe IMS, consulta [questa documentazione](https://helpx.adobe.com/it/enterprise/using/manage-users-individually.html#_blank).
+>Queste procedure si applicano solo agli operatori che si connettono a Campaign con autenticazione nativa. Per l&#39;autenticazione Adobe IMS, consulta [questa documentazione](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#_blank).
 
 Un operatore è un utente di Adobe Campaign che dispone delle autorizzazioni per accedere ed eseguire azioni.
 
@@ -151,7 +151,7 @@ Il collegamento **[!UICONTROL Edit the access parameters...]** consente di acced
   >
   >Anche se il loro account è disabilitato, l’operatore può comunque ricevere avvisi o notifiche da Campaign. Per interrompere l’invio delle notifiche di Campaign a questo operatore, Adobe consiglia di rimuovere l’indirizzo e-mail dal proprio profilo.
 
-* L&#39;opzione **[!UICONTROL Forbid access from the rich client]** consente di limitare l&#39;utilizzo di Adobe Campaign all&#39;[accesso Web](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) o tramite API: l&#39;accesso alla console client di Adobe Campaign non è più disponibile.
+* L&#39;opzione **[!UICONTROL Forbid access from the rich client]** consente di limitare l&#39;utilizzo di Adobe Campaign all&#39;[accesso Web](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#ui-access){target="_blank"} (documentazione di Campaign v8) o tramite API: l&#39;accesso alla console client di Adobe Campaign non è più disponibile.
 * È possibile collegare una zona di sicurezza all&#39;operatore. Per ulteriori informazioni, consulta [questa pagina](../../installation/using/security-zones.md).
 * Puoi anche definire una maschera IP attendibile utilizzando il collegamento appropriato.
 

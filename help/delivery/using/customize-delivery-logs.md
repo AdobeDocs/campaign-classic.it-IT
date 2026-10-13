@@ -41,20 +41,20 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '565'
 ht-degree: 1%
 ---
 # Avanzato: personalizza i registri di consegna {#customize-delivery-logs}
 
 >[!NOTE]
 >
->La guida completa sull&#39;accesso all&#39;elenco di consegna e sull&#39;utilizzo del dashboard di consegna è documentata nella [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-dashboard). Questo contenuto si applica sia agli utenti di Campaign Classic v7 che a quelli di Campaign v8.
+>La guida completa sull&#39;accesso all&#39;elenco di consegna e sull&#39;utilizzo del dashboard di consegna è documentata nella [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard). Questo contenuto si applica sia agli utenti di Campaign Classic v7 che a quelli di Campaign v8.
 >
 >In questa pagina sono documentate **personalizzazioni avanzate specifiche di Campaign Classic v7** per le distribuzioni ibride e on-premise.
 
-Per il monitoraggio delle consegne nell&#39;interfaccia utente di Campaign, consulta [Campaign v8 Monitor deliveries in Campaign UI documentation](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
+Per il monitoraggio delle consegne nell&#39;interfaccia utente di Campaign, consulta [Campaign v8 Monitor deliveries in Campaign UI documentation](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
 
 ## Personalizzare i registri di consegna {#use-case}
 
@@ -139,7 +139,7 @@ A questo scopo, accedi ai registri di consegna e aggiungi la colonna &quot;Ident
 
 >[!NOTE]
 >
->Per informazioni su come configurare gli elenchi nell&#39;interfaccia di Campaign Classic, fare riferimento a [questa pagina](../../platform/using/adobe-campaign-workspace.md).
+>Per informazioni su come configurare gli elenchi nell&#39;interfaccia di Campaign Classic, consulta [questa pagina](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target="_blank"} (documentazione di Campaign v8).
 
 Di seguito sono riportati gli elementi che dovrebbero essere visualizzati nella scheda **[!UICONTROL Delivery]** dopo le modifiche:
 
@@ -147,9 +147,9 @@ Di seguito sono riportati gli elementi che dovrebbero essere visualizzati nella 
 
 ## Argomenti correlati
 
-* [Monitorare le consegne nell&#39;interfaccia utente di Campaign](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (documentazione di Campaign v8)
-* [Stati di consegna](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (documentazione di Campaign v8)
-* [Informazioni sugli errori di consegna](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (documentazione di Campaign v8)
-* [Gestione della quarantena](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (documentazione di Campaign v8)
+* [Monitorare le consegne nell&#39;interfaccia utente di Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (documentazione di Campaign v8)
+* [Stati di consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (documentazione di Campaign v8)
+* [Informazioni sugli errori di consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (documentazione di Campaign v8)
+* [Gestione della quarantena](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (documentazione di Campaign v8)
 * [Estensione di uno schema](../../configuration/using/extending-a-schema.md) (v7 ibrido/on-premise)
 

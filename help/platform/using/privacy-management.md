@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Implementation
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 80%
+source-wordcount: '919'
+ht-degree: 77%
 ---
 # Gestione della privacy {#privacy-management}
 
@@ -97,12 +97,12 @@ Per aiutarti a garantire l’idoneità alle normative sulla privacy, Adobe Campa
 
 * Anche noto come eliminazione dei dati, il **diritto all’oblio** (richiesta di eliminazione) autorizza l’interessato a richiedere che il titolare del trattamento cancelli i suoi dati personali, cessi di diffonderli ed richieda a terzi di cessarne il trattamento da parte di terzi.
 
-Per informazioni su come creare richieste di **accesso** ed **eliminazione** e su come queste vengono elaborate da Adobe Campaign, fai riferimento ai [passaggi di implementazione](../../platform/using/privacy-requests.md).
+Per informazioni su come creare le richieste di **accesso** e **eliminazione** e su come queste vengono elaborate da Adobe Campaign, consulta i [passaggi per l&#39;implementazione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/privacy){target="_blank"} (documentazione di Campaign v8).
 
 <!--
-Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=it).
+Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html).
 
-https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=it
+https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html
 -->
 
 ## Consenso, conservazione e ruoli {#consent-retention-roles}
@@ -123,7 +123,7 @@ Le funzioni per gestire alcuni aspetti del consenso sono da sempre funzioni core
 
 Per ulteriori informazioni sulla gestione del consenso, consulta la [documentazione dettagliata](../../delivery/using/managing-subscriptions.md).
 
-Oltre a utilizzare gli strumenti di gestione del consenso forniti da Adobe Campaign, puoi verificare se un consumatore ha negato il consenso alla vendita dei suoi dati personali. Fai riferimento a [questa sezione](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa).
+Oltre a utilizzare gli strumenti di gestione del consenso forniti da Adobe Campaign, puoi verificare se un consumatore ha negato il consenso alla vendita dei suoi dati personali. Fai riferimento a [questa sezione](privacy-requests-ccpa.md).
 
 ### Conservazione dei dati {#data-retention}
 

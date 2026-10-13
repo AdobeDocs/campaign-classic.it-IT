@@ -32,10 +32,10 @@ subfeature_v2:
     internal-label: Access management
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
     internal-label: Monitoring guidelines
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 3%
+source-wordcount: '203'
+ht-degree: 1%
 ---
 # Monitorare l’esecuzione dei processi {#monitoring-job-execution}
 
@@ -46,7 +46,7 @@ ht-degree: 3%
 ![](assets/s_ncs_user_export_list_and_details.png)
 
 * La scheda **[!UICONTROL Journal]** consente di esaminare i messaggi di registro relativi all&#39;esecuzione.
-* La scheda **[!UICONTROL Rejects]** contiene i record rifiutati. Consulta [questa sezione](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error).
+* La scheda **[!UICONTROL Rejects]** contiene i record rifiutati. Consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import#behavior-in-the-event-of-an-error){target="_blank"} (documentazione di Campaign v8).
 
 Nella scheda **[!UICONTROL General]**, il campo **[!UICONTROL Status]** indica lo stato corrente di un processo.
 
