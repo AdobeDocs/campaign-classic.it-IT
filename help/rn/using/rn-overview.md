@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 4bc1e76d129c6a6aa15b7e3915232043bd6f4286
+source-git-commit: f079b19ac78b331499a6f3cf5fcc21e55827998c
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 100%
+source-wordcount: '1204'
+ht-degree: 86%
 ---
 # Aggiornamenti della versione {#rn-overview}
 
@@ -80,6 +80,16 @@ Per questo motivo è fondamentale **eseguire la build stabile più recente** di 
 > Ogni build è cumulativa: include tutte le funzionalità, i miglioramenti e le correzioni implementati nelle build precedenti della stessa release, oltre alle proprie modifiche. Non è necessario installare tutte le build intermedie per beneficiare delle correzioni precedenti: l’installazione della build più recente consente di essere aggiornati con tutte le build incluse in quelle precedenti.
 
 In qualità di cliente in hosting, puoi beneficiare automaticamente, senza alcun intervento da parte tua, dell’aggiornamento alla build stabile più recente. Ulteriori informazioni nella [sezione Aggiornamento annuale](#yearly-upgrade). Se effettui la migrazione da una build precedente, Adobe consiglia di eseguire prima l’aggiornamento a questa build.
+
+## Hotflix {#hotflixes}
+
+In casi eccezionali, Adobe può fornire un hotfix specifico per il cliente per risolvere un problema prima che sia disponibile una correzione in una versione standard. Le richieste di hotfix vengono valutate caso per caso e non fanno parte del ciclo di rilascio standard.
+
+Le richieste di hotfix devono essere generate tramite l’Assistenza clienti di Adobe. Se approvato, viene preparato un hotfix per il cliente e la build del prodotto interessati. Un hotfix non è una versione generale per tutti i clienti; Adobe può approvare la condivisione con altri clienti interessati dopo la revisione.
+
+I dettagli dell’hotfix potrebbero non essere inclusi nelle note sulla versione pubbliche al momento della distribuzione dell’hotfix. Adobe potrebbe successivamente includere un hotfix in una versione standard per la versione applicabile. L&#39;inclusione e la tempistica non sono garantite. Consulta le note sulla versione per conoscere le modifiche incluse in ciascuna versione standard.
+
+Questo processo di hotfix specifico per il cliente è separato dal criterio delle patch di sicurezza critiche descritto in precedenza, in base al quale Adobe può applicare patch di sicurezza critiche agli ambienti in hosting senza preavviso.
 
 ### Applicazione di patch di sicurezza agli ambienti ospitati {#security-patching}
 
