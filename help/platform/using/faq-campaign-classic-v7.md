@@ -133,10 +133,10 @@ Campaign v8 è la piattaforma strategica di Adobe, ideale per le organizzazioni 
 Ulteriori informazioni:
 
 * [Panoramica di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=it){target="_blank"}
-* [Transizione da Campaign Classic v7 a v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html){target="_blank"}
-* [Domande frequenti complete su Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}
+* [Transizione da Campaign Classic v7 a v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html?lang=it){target="_blank"}
+* [Domande frequenti complete su Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html?lang=it){target="_blank"}
 
-**Per risposte dettagliate alle domande comuni su Campaign relative a flussi di lavoro, consegne, tipi di pubblico, reporting, personalizzazione e altro ancora**, visita la [Domande frequenti complete su Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}.
+**Per risposte dettagliate alle domande comuni su Campaign relative a flussi di lavoro, consegne, tipi di pubblico, reporting, personalizzazione e altro ancora**, visita la [Domande frequenti complete su Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html?lang=it){target="_blank"}.
 
 +++
 
@@ -158,7 +158,7 @@ Per l’inglese, durante l’installazione di Campaign v7 puoi selezionare ingle
 
 [Per ulteriori informazioni, consulta questa sezione](../../installation/using/creating-an-instance-and-logging-on.md).
 
-**Nota:** l&#39;interfaccia utente Web di Campaign v8 consente agli utenti di modificare la lingua dell&#39;interfaccia in modo indipendente. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/connect.html#language-pref){target="_blank"}.
+**Nota:** l&#39;interfaccia utente Web di Campaign v8 consente agli utenti di modificare la lingua dell&#39;interfaccia in modo indipendente. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/connect.html?lang=it#language-pref){target="_blank"}.
 
 +++
 
@@ -273,7 +273,7 @@ Trova la documentazione chiave, le domande frequenti e i canali di supporto per 
 
 **Per le domande comuni su Campaign:**
 
-Consulta le [**Domande frequenti complete su Campaign v8**](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}, che forniscono risposte dettagliate su:
+Consulta le [**Domande frequenti complete su Campaign v8**](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html?lang=it){target="_blank"}, che forniscono risposte dettagliate su:
 
 * Guida introduttiva a Campaign
 * Profili e tipi di pubblico

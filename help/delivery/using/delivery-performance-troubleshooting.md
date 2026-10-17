@@ -56,11 +56,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Una guida completa sulle prestazioni e sulle best practice per la consegna è documentata nella pagina [Best practice per la consegna in Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices). Questo contenuto si applica sia agli utenti di Campaign Classic v7 che a quelli di Campaign v8.
+>Una guida completa sulle prestazioni e sulle best practice per la consegna è documentata nella pagina [Best practice per la consegna in Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/start/delivery-best-practices). Questo contenuto si applica sia agli utenti di Campaign Classic v7 che a quelli di Campaign v8.
 >
 >In questa pagina sono documentate **configurazioni specifiche per Campaign Classic v7** per l&#39;ottimizzazione delle prestazioni e la risoluzione dei problemi nelle distribuzioni ibride e on-premise.
 
-Per informazioni complete sulle prestazioni di consegna, l&#39;ottimizzazione della piattaforma, la gestione della quarantena, la manutenzione del database e le raccomandazioni sulla pianificazione, consulta la [documentazione sulle best practice di consegna di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}.
+Per informazioni complete sulle prestazioni di consegna, l&#39;ottimizzazione della piattaforma, la gestione della quarantena, la manutenzione del database e le raccomandazioni sulla pianificazione, consulta la [documentazione sulle best practice di consegna di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}.
 
 ## Ottimizzazione delle prestazioni {#performance-optimization}
 
@@ -76,7 +76,7 @@ Per **distribuzioni ibride/on-premise di Campaign Classic v7**, le seguenti otti
 
 >[!NOTE]
 >
->Per gli utenti di Campaign v8 Managed Cloud Services, l’ottimizzazione dell’infrastruttura e la configurazione MTA sono gestite da Adobe. Consulta le [Best practice per la consegna di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} per raccomandazioni sulle prestazioni applicabili alla distribuzione.
+>Per gli utenti di Campaign v8 Managed Cloud Services, l’ottimizzazione dell’infrastruttura e la configurazione MTA sono gestite da Adobe. Consulta le [Best practice per la consegna di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} per raccomandazioni sulle prestazioni applicabili alla distribuzione.
 
 ### Manutenzione del database {#database-maintenance}
 
@@ -92,7 +92,7 @@ Le attività di manutenzione regolari includono:
 
 >[!NOTE]
 >
->Per gli utenti di Campaign v8 Managed Cloud Services, la manutenzione del database e i flussi di lavoro tecnici sono monitorati e gestiti da Adobe. Concentrati sul monitoraggio specifico della consegna come descritto nella [Documentazione sulle consegne del monitoraggio di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitoring-deliverability){target="_blank"}.
+>Per gli utenti di Campaign v8 Managed Cloud Services, la manutenzione del database e i flussi di lavoro tecnici sono monitorati e gestiti da Adobe. Concentrati sul monitoraggio specifico della consegna come descritto nella [Documentazione sulle consegne del monitoraggio di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitoring-deliverability){target="_blank"}.
 
 ## Risoluzione dei problemi di consegna {#troubleshooting}
 
@@ -102,7 +102,7 @@ Le attività di manutenzione regolari includono:
 >
 >* Soluzioni e errori di consegna comuni: [Informazioni sugli errori di consegna](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}
 >* Diagnosi di consegna lenta: [Monitorare le consegne nell&#39;interfaccia utente di Campaign](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}
->* Best practice di consegna: [Best practice di consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}
+>* Best practice di consegna: [Best practice di consegna](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}
 >
 >In questa sezione viene documentata la risoluzione dei problemi specifici di **Campaign Classic v7** per le distribuzioni ibride e on-premise.
 
@@ -145,7 +145,7 @@ Controllare lo stato del flusso di lavoro in **[!UICONTROL Administration]** > *
 ## Argomenti correlati
 
 * [Informazioni sugli errori di consegna](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (documentazione di Campaign v8)
-* [Best practice per la consegna](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} (documentazione di Campaign v8)
+* [Best practice per la consegna](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} (documentazione di Campaign v8)
 * [Monitorare le consegne nell&#39;interfaccia utente di Campaign](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (documentazione di Campaign v8)
 * [Manutenzione del database](../../production/using/recommendations.md) (v7 ibrido/on-premise)
 * [Recapito e-mail](../../installation/using/email-deliverability.md) (v7 ibrido/on-premise)
