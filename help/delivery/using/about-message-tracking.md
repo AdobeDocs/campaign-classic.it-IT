@@ -60,8 +60,8 @@ ht-degree: 3%
 >* [Configurare le opzioni di tracciamento URL](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/tracking/url-tracking){target="_blank"}
 >* [Tracciamento collegamenti personalizzati](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/tracking/personalized-links){target="_blank"}
 >* [Registri di tracciamento degli accessi](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"}
->* [Tracciamento dei test](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/testing-tracking){target="_blank"}
->* [Rapporti di tracciamento](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/reporting/delivery-reports#tracking-indicators){target="_blank"}
+>* [Tracciamento dei test](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/testing-tracking){target="_blank"}
+>* [Rapporti di tracciamento](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/reporting/delivery-reports#tracking-indicators){target="_blank"}
 >
 >**In questa pagina sono documentate solo le funzionalità di tracciamento specifiche di Campaign Classic v7**, principalmente per le distribuzioni ibride e on-premise.
 
