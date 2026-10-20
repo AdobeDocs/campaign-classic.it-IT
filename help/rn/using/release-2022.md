@@ -37,9 +37,9 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
 source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2202'
-ht-degree: 97%
+ht-degree: 100%
 ---
 # Versioni 2022{#release-2022}
 

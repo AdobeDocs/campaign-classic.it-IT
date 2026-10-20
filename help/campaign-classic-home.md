@@ -31,9 +31,9 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
 source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '707'
-ht-degree: 54%
+ht-degree: 100%
 ---
 # Documentazione di Campaign Classic v7 {#campaign-classic-documentation}
 
@@ -104,24 +104,24 @@ Alcune importanti modifiche al servizio Android Firebase Cloud Messaging (FCM) v
     <td>
       <img src="assets/do-not-localize/icon-start.svg" width="35px">
     <br/>
-      <strong>Inizia</strong><br/><a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui" target="_blank">Interfaccia utente</a> (documentazione di Campaign v8) - <a href="platform/using/launching-adobe-campaign.md">Connetti a Campaign</a> - <a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/data/import" target="_blank">Importa ed esporta dati</a> (documentazione di Campaign v8) - <a href="platform/using/access-management.md">Autorizzazioni</a>
+      <strong>Introduzione</strong><br/><a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui" target="_blank">Interfaccia utente</a> (documentazione di Campaign v8) - <a href="platform/using/launching-adobe-campaign.md">Connessione a Campaign</a> - <a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/data/import" target="_blank">Importazione ed esportazione dati</a> (documentazione di Campaign v8) - <a href="platform/using/access-management.md">Autorizzazioni</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>Esperienza del cliente</strong><br/><a href="workflow/using/about-workflows.md">Automatizza con flussi di lavoro</a> - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=it" target="_blank">Campagna di marketing</a> - <a href="interaction/using/interaction-and-offer-management.md">Gestione delle interazioni e delle offerte</a> - <a href="delivery/using/about-personalization.md">Personalization</a> - <a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/reports/gs-reporting" target="_blank">Generazione rapporti</a> (documentazione di Campaign v8)
+      <strong>Esperienza del cliente</strong><br/><a href="workflow/using/about-workflows.md">Automatizzare con i flussi di lavoro</a> - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=it" target="_blank">Campagna di marketing</a> - <a href="interaction/using/interaction-and-offer-management.md">Interazione e gestione delle offerte</a> - <a href="delivery/using/about-personalization.md">Personalizzazione</a> - <a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/reports/gs-reporting" target="_blank">Reporting</a> (documentazione di Campaign v8)
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
-      <strong>Invia messaggi</strong><br/><a href="delivery/using/communication-channels.md">Canali di comunicazione</a> - <a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/create-message" target="_blank">Invia bozze</a> (documentazione di Campaign v8) - <a href="delivery/using/get-started-a-b-testing.md">Test A/B</a> - <a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Tracciamento messaggi</a> - <a href="delivery/using/about-deliverability.md">Recapito messaggi</a> - <a href="message-center/using/about-transactional-messaging.md">Messaggistica transazionale</a>
+      <strong>Inviare messaggi</strong><br/><a href="delivery/using/communication-channels.md">Canali di comunicazione</a> - <a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/create-message" target="_blank">Inviare bozze</a> (documentazione di Campaign v8) - <a href="delivery/using/get-started-a-b-testing.md">Test A/B</a> - <a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Tracciamento dei messaggi</a> - <a href="delivery/using/about-deliverability.md">Recapitabilità</a> - <a href="message-center/using/about-transactional-messaging.md">Messaggistica transazionale</a>
     </td>
   </tr>
   <tr style="border: 0;">
     <td>
       <img src="assets/do-not-localize/icon_profile-audience.svg" width="35px">
       <br/>
-      <strong>Profili e pubblico</strong><br/> <a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/audience/create-audiences/create-audiences" target="_blank">Crea elenchi</a> (documentazione di Campaign v8) - <a href="delivery/using/about-services-and-subscriptions.md">Servizi e abbonamenti</a> - <a href="platform/using/privacy-management.md">Privacy e consenso</a>
+      <strong>Profili e tipi di pubblico</strong><br/> <a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/audience/create-audiences/create-audiences" target="_blank">Creare elenchi</a> (documentazione di Campaign v8) - <a href="delivery/using/about-services-and-subscriptions.md">Servizi e iscrizioni</a> - <a href="platform/using/privacy-management.md">Privacy e consenso</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-configure.svg" width="35px">
@@ -131,7 +131,7 @@ Alcune importanti modifiche al servizio Android Firebase Cloud Messaging (FCM) v
     <td>
       <img src="assets/do-not-localize/icon-dev.svg" width="35px">
       <br/>
-      <strong>Risorse per sviluppatori</strong><br/><a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/datamodel" target="_blank">Descrizione del modello dati</a> (documentazione di Campaign v8) - <a href="configuration/using/about-schema-reference.md">Struttura schema</a> - <a href="configuration/using/editing-forms.md">Struttura schema</a> - <a href="configuration/using/about-web-services.md">API</a> - <a href="https://experienceleague.adobe.com/it/tools/campaign-api">Documentazione di riferimento JSAPI</a> - <a href="configuration/using/about-custom-recipient-table.md">Tabella destinatari personalizzata</a>
+      <strong>Risorse per sviluppatori</strong><br/><a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/datamodel" target="_blank">Descrizione del modello dati</a> (documentazione di Campaign v8) - <a href="configuration/using/about-schema-reference.md">Struttura dello schema</a> - <a href="configuration/using/editing-forms.md">Struttura dello schema</a> - <a href="configuration/using/about-web-services.md">API</a> - <a href="https://experienceleague.adobe.com/it/tools/campaign-api">Documentazione di riferimento JSAPI</a> - <a href="configuration/using/about-custom-recipient-table.md">Tabella dei destinatari personalizzata</a>
     </td>
   </tr>
 </table>

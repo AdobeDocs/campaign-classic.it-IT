@@ -9,7 +9,7 @@ sub-product: adobe campaign classic
 type: Documentation
 nudge: false
 source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1657'
 ht-degree: 100%
 ---
@@ -115,7 +115,7 @@ ht-degree: 100%
     + [Avanzato: personalizza i registri di consegna](delivery/using/customize-delivery-logs.md)
   + Gestione della recapitabilità {#deliverability-management}
     + [Che cos’è il recapito messaggi](delivery/using/about-deliverability.md)
-    + [Rendering della casella in entrata](delivery/using/inbox-rendering.md)
+    + [Rendering nella casella in entrata](delivery/using/inbox-rendering.md)
     + [Risoluzione dei problemi](delivery/using/deliverability-faq.md)
   + Modulo di gestione dei contenuti {#content-management}
     + [Informazioni sulla gestione dei contenuti](delivery/using/about-content-management.md)
@@ -273,7 +273,7 @@ ht-degree: 100%
     + [Configurare le istanze](message-center/using/configuring-instances.md)
     + [Configurazioni aggiuntive](message-center/using/additional-configurations.md)
   + Modelli di messaggi {#message-templates}
-    + [Testare modelli di messaggio](message-center/using/testing-message-templates.md)
+    + [Testare modelli di messaggi](message-center/using/testing-message-templates.md)
   + [Caso d’uso](message-center/using/transactional-email-with-attachments.md)
 + Integrare con i social media {#integrating-with-social-media}
   + [Informazioni sul social marketing](social/using/about-social-marketing.md)
