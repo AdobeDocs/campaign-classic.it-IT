@@ -77,7 +77,7 @@ Per aggiungere un collegamento ipertestuale, passare a **[!UICONTROL Static elem
 ![](assets/s_ncs_admin_survey_add_link.png)
 
 * **[!UICONTROL Label]** è il contenuto del collegamento ipertestuale che verrà visualizzato nella pagina del modulo.
-* **[!UICONTROL URL]** è l&#39;indirizzo desiderato, ad esempio [https://www.adobe.com](https://www.adobe.com) per un sito Web o [info@adobe.com](mailto:info@adobe.com) per inviare un messaggio.
+* **[!UICONTROL URL]** è l&#39;indirizzo desiderato, ad esempio [https://www.adobe.com/it](https://www.adobe.com/it) per un sito Web o [info@adobe.com](mailto:info@adobe.com) per inviare un messaggio.
 * Il campo **[!UICONTROL Window]** consente di selezionare la modalità di visualizzazione per il collegamento nel caso di un sito. È possibile decidere di aprire il collegamento in una nuova finestra, nella finestra corrente o in un&#39;altra finestra.
 * È possibile aggiungere una descrizione comandi, come illustrato di seguito:
 
