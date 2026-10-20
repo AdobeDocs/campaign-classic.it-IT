@@ -474,7 +474,7 @@ Scarica Microsoft Edge WebView2 dal [sito web per sviluppatori Microsoft](https:
 
 Puoi anche utilizzare Campaign per [inviare notifiche push](../../delivery/using/about-mobile-app-channel.md) tramite Adobe Experience Platform Mobile SDK configurando l’estensione Adobe Campaign nell’interfaccia utente di raccolta dati.
 
-L’SDk di Campaign è [obsoleto](deprecated-features.md) a partire dalla versione Campaign v7.4. Per garantire una transizione fluida dell’implementazione esistente verso AEP Mobile SDK, puoi continuare a utilizzarlo sui sistemi operativi elencati di seguito<!--, using the associated [mobile SDK](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation)-->.
+L’SDk di Campaign è [obsoleto](deprecated-features.md) a partire dalla versione Campaign v7.4. Per garantire una transizione fluida dell’implementazione esistente verso AEP Mobile SDK, puoi continuare a utilizzarlo sui sistemi operativi elencati di seguito<!--, using the associated [mobile SDK](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation)-->.
 
 
 <table>
