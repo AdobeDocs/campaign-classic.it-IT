@@ -38,7 +38,7 @@ topic_v2:
 source-git-commit: 63ece0ce7bfca75468776da84e2eac8b34b13af8
 workflow-type: tm+mt
 source-wordcount: '1449'
-ht-degree: 90%
+ht-degree: 91%
 ---
 # Ultima versione {#latest-release}
 
@@ -84,7 +84,7 @@ _11 settembre 2026_
 
 #### Miglioramenti di sicurezza {#security-7-4-4-9402}
 
-Adobe ha rilasciato degli aggiornamenti di sicurezza per Adobe Campaign Classic che affrontano vulnerabilità critiche. Invitiamo i clienti che utilizzano implementazioni on-premise e ibride a installare gli aggiornamenti il prima possibile. Le istanze ospitate da Adobe sono già state corrette e non richiedono alcuna azione da parte del cliente. Ulteriori informazioni sono disponibili nel [bollettino sulla sicurezza](https://helpx.adobe.com/au/security/products/campaign/apsb26-142.html){target="_blank"}.
+Adobe ha rilasciato degli aggiornamenti di sicurezza per Adobe Campaign Classic che affrontano vulnerabilità critiche. Invitiamo i clienti che utilizzano implementazioni on-premise e ibride a installare gli aggiornamenti il prima possibile. Le istanze ospitate da Adobe sono già state corrette e non richiedono alcuna azione da parte del cliente. Ulteriori informazioni sono disponibili nel [bollettino sulla sicurezza](https://helpx.adobe.com/it/security/products/campaign/apsb26-142.html){target="_blank"}.
 
 È necessario un riavvio del server di Adobe Campaign (nlserver) per caricare la build e completare l’implementazione. La correzione è attiva per impostazione predefinita dopo il riavvio.
 
