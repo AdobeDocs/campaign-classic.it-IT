@@ -36,9 +36,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
 source-git-commit: 63ece0ce7bfca75468776da84e2eac8b34b13af8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1449'
-ht-degree: 91%
+ht-degree: 100%
 ---
 # Ultima versione {#latest-release}
 
@@ -54,12 +54,12 @@ _15 ottobre 2026_
 
 #### Correzioni {#fixes-7-4-5}
 
-* È stato risolto un problema che poteva causare il mancato funzionamento dell’account esterno di Analytics con un errore &quot;Gone&quot; (410). (NEO-99019)
+* È stato risolto un problema a causa del quale l’account esterno Analytics poteva fallire con un errore “Gone” (410). (NEO-99019)
 * È stato risolto un problema a causa del quale alcune consegne potevano rimanere bloccate nello stato di personalizzazione in sospeso anche se i messaggi corrispondenti venivano inviati correttamente. (NEO-94471)
-* È stato risolto un problema a causa del quale un meccanismo di blocco interno poteva entrare in un ciclo di tentativi e causare un elevato utilizzo di CPU sul server. (NEO-94845)
-* È stato risolto un problema che poteva causare errori intermittenti negli aggiornamenti dei modelli di dati. (NEO-84347, NEO-84824)
-* È stato risolto un problema che causava la visualizzazione errata di un errore &quot;Controllo spam non riuscito&quot; durante la creazione o la modifica di una consegna. (NEO-53888)
-* È stato risolto un problema a causa del quale i destinatari non venivano messi in quarantena come previsto dopo mancati recapiti non permanenti ricorrenti. (NEO-94422)
+* È stato risolto un problema a causa del quale un meccanismo di blocco interno poteva entrare in un ciclo di tentativi e causare un elevato utilizzo della CPU sul server. (NEO-94845)
+* È stato risolto un problema a causa del quale gli aggiornamenti del modello dati potevano non riuscire in modo intermittente. (NEO-84347, NEO-84824)
+* È stato risolto un problema a causa del quale poteva essere visualizzato erroneamente un errore “Controllo spam non riuscito” durante la creazione o la modifica di una consegna. (NEO-53888)
+* È stato risolto un problema a causa del quale i destinatari non venivano messi in quarantena come previsto dopo ricorrenti mancati recapiti non permanenti. (NEO-94422)
 
 ## Versione 7.4.4 {#release-7-4-4}
 
@@ -88,7 +88,7 @@ Adobe ha rilasciato degli aggiornamenti di sicurezza per Adobe Campaign Classic 
 
 È necessario un riavvio del server di Adobe Campaign (nlserver) per caricare la build e completare l’implementazione. La correzione è attiva per impostazione predefinita dopo il riavvio.
 
-### Versione 9401 {#build-9401}
+### Build 9401 {#build-9401}
 
 [!BADGE Obsoleta]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Obsoleta"}
 
