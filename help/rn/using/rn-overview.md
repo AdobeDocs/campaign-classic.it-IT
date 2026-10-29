@@ -34,9 +34,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
 source-git-commit: f079b19ac78b331499a6f3cf5fcc21e55827998c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1204'
-ht-degree: 86%
+ht-degree: 100%
 ---
 # Aggiornamenti della versione {#rn-overview}
 
@@ -81,15 +81,15 @@ Per questo motivo è fondamentale **eseguire la build stabile più recente** di 
 
 In qualità di cliente in hosting, puoi beneficiare automaticamente, senza alcun intervento da parte tua, dell’aggiornamento alla build stabile più recente. Ulteriori informazioni nella [sezione Aggiornamento annuale](#yearly-upgrade). Se effettui la migrazione da una build precedente, Adobe consiglia di eseguire prima l’aggiornamento a questa build.
 
-## Hotflix {#hotflixes}
+## Hotfix {#hotflixes}
 
 In casi eccezionali, Adobe può fornire un hotfix specifico per il cliente per risolvere un problema prima che sia disponibile una correzione in una versione standard. Le richieste di hotfix vengono valutate caso per caso e non fanno parte del ciclo di rilascio standard.
 
-Le richieste di hotfix devono essere generate tramite l’Assistenza clienti di Adobe. Se approvato, viene preparato un hotfix per il cliente e la build del prodotto interessati. Un hotfix non è una versione generale per tutti i clienti; Adobe può approvare la condivisione con altri clienti interessati dopo la revisione.
+Le richieste di hotfix devono essere inoltrate tramite l’Assistenza clienti Adobe. Se approvate, viene preparato un hotfix per il cliente e la build del prodotto interessati. Un hotfix non è una versione generale per tutti i clienti; Adobe può approvare di condividerlo con altri clienti interessati dopo la revisione.
 
-I dettagli dell’hotfix potrebbero non essere inclusi nelle note sulla versione pubbliche al momento della distribuzione dell’hotfix. Adobe potrebbe successivamente includere un hotfix in una versione standard per la versione applicabile. L&#39;inclusione e la tempistica non sono garantite. Consulta le note sulla versione per conoscere le modifiche incluse in ciascuna versione standard.
+I dettagli dell’hotfix potrebbero non essere inclusi nelle note sulla versione pubbliche al momento della distribuzione dell’hotfix. Adobe potrebbe successivamente includere una correzione hotfix in una versione standard per la versione applicabile. L&#39;inclusione e la tempistica non sono garantite. Consulta le note sulla versione per le modifiche incluse in ciascuna versione standard.
 
-Questo processo di hotfix specifico per il cliente è separato dal criterio delle patch di sicurezza critiche descritto in precedenza, in base al quale Adobe può applicare patch di sicurezza critiche agli ambienti in hosting senza preavviso.
+Questo processo di hotfix specifico per il cliente è separato dal criterio relativo alle patch di sicurezza critiche descritto in precedenza, in base al quale Adobe può applicare patch di sicurezza critiche agli ambienti ospitati senza preavviso.
 
 ### Applicazione di patch di sicurezza agli ambienti ospitati {#security-patching}
 
