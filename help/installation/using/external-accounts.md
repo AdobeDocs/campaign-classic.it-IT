@@ -28,9 +28,9 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
+source-git-commit: a119d402631c5d2dd3ab8d6d11dfd0cdba0d662f
 workflow-type: tm+mt
-source-wordcount: '1959'
+source-wordcount: '2010'
 ht-degree: 7%
 ---
 # Account esterni{#external-accounts}
@@ -484,3 +484,7 @@ Per configurare **[!UICONTROL Azure external account]** per l&#39;utilizzo con A
 * **[!UICONTROL Access key]**
 
   Per sapere dove trovare **[!UICONTROL Access key]**, consulta questa [pagina](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
+
+  >[!NOTE]
+  >
+  >L’archiviazione BLOB di Azure filtra i file in base al prefisso del nome e non al pattern. Un asterisco finale (`*`) in una maschera di file viene rimosso, quindi `TEST_EXPORT_AZURE_*` corrisponde a tutti i file che iniziano con `TEST_EXPORT_AZURE_`. I caratteri dopo l&#39;asterisco, ad esempio in `TEST_EXPORT_AZURE_*.csv`, non sono supportati. [Ulteriori informazioni nella documentazione di Microsoft](https://learn.microsoft.com/en-us/rest/api/storageservices/list-blobs){target="_blank"}.
