@@ -49,7 +49,7 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 4ae19a379120bb39444c3e81392a7dbb0b6da3ba
 workflow-type: tm+mt
 source-wordcount: '1742'
 ht-degree: 30%
@@ -91,7 +91,7 @@ A questo scopo, segui la procedura indicata di seguito:
 
    >[!CAUTION]
    >
-   > A partire dalla versione 20.2, i connettori legacy sono obsoleti e non sono più supportati. È consigliabile utilizzare il connettore **[!UICONTROL Extended generic SMPP]**. Per ulteriori informazioni su come eseguire la migrazione al connettore consigliato, consulta questa [pagina](unsupported-connector-migration.md).
+   > A partire dalla versione 20.2, i connettori legacy sono obsoleti e non sono più supportati. È consigliabile utilizzare il connettore **[!UICONTROL Extended generic SMPP]**. Per ulteriori informazioni su come eseguire la migrazione al connettore consigliato, consulta questa [pagina](sms-set-up.md).
 
 1. L’opzione **[!UICONTROL Enable verbose SMPP traces in the log file]** consente di scaricare tutto il traffico SMPP nei file di registro. Devi abilitare questa opzione per risolvere i problemi del connettore e per confrontare il traffico rilevato dal provider.
 
@@ -201,7 +201,7 @@ La tabella seguente presenta i caratteri presi in considerazione dallo standard 
   <tr> 
    <td> è </td> 
    <td> <img height="21px" src="assets/delta.png" /> </td> 
-   <td> &rbrace;Permesso </td> 
+   <td> }Permesso </td> 
    <td> 4 </td> 
    <td> D </td> 
    <td> M </td> 
@@ -394,7 +394,7 @@ I passaggi per configurare un account esterno utilizzando il connettore SMPP gen
 
 ## Modificare il modello di consegna {#changing-the-delivery-template}
 
-Adobe Campaign fornisce un modello per la consegna a dispositivi mobili. Questo modello è disponibile nel nodo **[!UICONTROL Resources > Templates > Delivery templates]**. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=it){target="_blank"}.
+Adobe Campaign fornisce un modello per la consegna a dispositivi mobili. Questo modello è disponibile nel nodo **[!UICONTROL Resources > Templates > Delivery templates]**. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
 
 Per distribuire tramite un canale SMS, devi creare un modello in cui si fa riferimento al connettore del canale.
 

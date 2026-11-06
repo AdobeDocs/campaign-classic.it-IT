@@ -18,10 +18,10 @@ feature_v2:
 subfeature_v2:
   - id: e656c701-3899-4db3-989c-de0980ddfffa
     internal-label: Installation
-source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
+source-git-commit: 4ae19a379120bb39444c3e81392a7dbb0b6da3ba
 workflow-type: tm+mt
 source-wordcount: '337'
-ht-degree: 36%
+ht-degree: 37%
 ---
 # Matrice di capacità per modello{#capability-matrix-per-model}
 
@@ -46,7 +46,7 @@ I diversi modelli di hosting sono introdotti [in questa sezione](../../installat
 | Crittografia/decrittografia dei dati per i trasferimenti di file | On-demand | Disponibile | Disponibile | [Ulteriori informazioni](../../platform/using/unzip-decrypt.md) |
 | Compressione/decompressione di file | On-demand | Disponibile | Disponibile | [Ulteriori informazioni](../../platform/using/unzip-decrypt.md) |
 | Delega nome dominio | On-demand | On-demand | Non disponibile | [Ulteriori informazioni](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=it) |
-| Installazione di SpamAssassin | On-demand | Disponibile | Disponibile | [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/deliverability-management/spamassassin){target="_blank"} (documentazione di Campaign v8) |
+| Installazione di SpamAssassin | On-demand | Disponibile | Disponibile | [Ulteriori informazioni](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/deliverability-management/spamassassin){target="_blank"} (documentazione di Campaign v8) |
 | Accesso ai rapporti sul recapito messaggi | Disponibile | On-demand | Disponibile | [Ulteriori informazioni](../../delivery/using/about-delivery-monitoring.md#deliverability-monitoring) |
 | Configurazione dell’autenticazione LDAP | Non disponibile | Disponibile | Disponibile | [Ulteriori informazioni](../../installation/using/connecting-through-ldap.md) |
 
@@ -66,4 +66,4 @@ Adobe Campaign fornisce l&#39;opzione **Federated Data Access** (FDA) per elabor
 * [Note sulla versione](../../rn/using/latest-release.md)
 * [Aggiornamenti Campaign Classic](../../rn/using/rn-overview.md)
 * [Funzioni obsolete e rimosse](../../rn/using/deprecated-features.md)
-* [Versioni [!DNL Gold Standard]](../../rn/using/gold-standard.md)
+* [Versioni [!DNL Gold Standard]](../../rn/using/rn-overview.md)
