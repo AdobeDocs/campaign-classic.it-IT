@@ -39,9 +39,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '823'
 ht-degree: 5%
 ---
 # Guida introduttiva alle integrazioni Adobe Campaign {#about-campaign-integrations}
@@ -51,6 +51,10 @@ Adobe Experience Cloud è un set completo di soluzioni integrate leader di setto
 Ulteriori informazioni sulle integrazioni funzionali disponibili tra le soluzioni Adobe Campaign e Adobe Experience Cloud in [questa pagina](https://experienceleague.adobe.com/it/docs/core-services/interface/administration/integrations){_blank}.
 
 L&#39;elenco completo delle soluzioni e dei servizi delle app Adobe che possono essere integrati con Adobe Campaign, insieme alla relativa documentazione, è disponibile in [questa sezione](#experience-cloud-integrations).
+
+Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sulla connessione di Campaign con le soluzioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/connect/integration){target=_blank}.
+
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/connect/integration){target=_blank}
 
 >[!CAUTION]
 >
@@ -95,11 +99,11 @@ La tabella seguente fornisce l’accesso alla documentazione disponibile sull’
   </tr> 
   <tr> 
    <td> <strong>Adobe Experience Manager</strong><br /> </td> 
-   <td> Configura questa integrazione per creare contenuti e-mail o moduli mappati al database Adobe Campaign direttamente in <strong>Adobe Experience Manager</strong>.<br /> <p><a href="../../integrations/using/about-adobe-experience-manager.md">Ulteriori informazioni</a> sull'integrazione Adobe Campaign - Adobe Experience Manager.</p><br /> </td> 
+   <td> Configura questa integrazione per creare contenuti e-mail o moduli mappati al database Adobe Campaign direttamente in <strong>Adobe Experience Manager</strong>.<br /> <p><a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/connect/ac-aem" target="_blank">Ulteriori informazioni</a> (documentazione di Campaign v8) sull'integrazione Adobe Campaign - Adobe Experience Manager.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Target</strong><br /> </td> 
-   <td> Configura questa integrazione per inserire immagini calcolate dinamicamente da <strong>Adobe Target</strong> quando viene aperto il messaggio e-mail creato e inviato da Adobe Campaign.<br /> <p><a href="../../integrations/using/integrating-with-adobe-target.md">Ulteriori informazioni</a> sull'integrazione Adobe Campaign - Adobe Target.</p><br /> </td> 
+   <td> Configura questa integrazione per inserire immagini calcolate dinamicamente da <strong>Adobe Target</strong> quando viene aperto il messaggio e-mail creato e inviato da Adobe Campaign.<br /> <p><a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/connect/ac-at" target="_blank">Ulteriori informazioni</a> (documentazione di Campaign v8) sull'integrazione Adobe Campaign - Adobe Target.</p><br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Adobe Audience Manager</strong><br /> </td> 

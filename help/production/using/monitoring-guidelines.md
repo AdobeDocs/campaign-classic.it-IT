@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a26a9642d4b60f0f095596584929ba5e98c3180a
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 19%
+source-wordcount: '861'
+ht-degree: 18%
 ---
 # Linee guida per il monitoraggio {#monitoring-guidelines}
 
@@ -65,7 +65,7 @@ Sono disponibili diversi metodi automatici. per aiutarti a monitorare l’istanz
 
 **Audit trail**
 
-L’Audit trail consente di visualizzare la cronologia completa delle modifiche relative alle opzioni, ai flussi di lavoro e agli schemi all’interno dell’istanza. Per ulteriori informazioni, [fai clic qui](../../production/using/audit-trail.md).
+L’Audit trail consente di visualizzare la cronologia completa delle modifiche relative alle opzioni, ai flussi di lavoro e agli schemi all’interno dell’istanza. [Fai clic qui](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/audit-trail){target="_blank"} (documentazione di Campaign v8) per ulteriori informazioni.
 
 **Pannello di controllo**
 
@@ -81,13 +81,13 @@ Il Pannello di controllo Campaign ti consente di gestire diverse impostazioni de
 
 <img src="assets/do-not-localize/icon_workflows.svg" width="60px">
 
-**Workflow HeatMap**
+**Mappa di calore dei flussi di lavoro**
 
 Workflow HeatMap fornisce una rappresentazione visiva di tutti i flussi di lavoro in esecuzione sull’istanza. Consente di monitorare facilmente il carico sull’istanza e pianificare i flussi di lavoro di conseguenza. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/heatmap.html?lang=it){target="_blank"}.
 
 **Audit trail**
 
-Audit trail consente di visualizzare tutte le modifiche apportate nei flussi di lavoro, nonché i relativi stati correnti. [Fare clic qui](../../production/using/audit-trail.md).
+Audit trail consente di visualizzare tutte le modifiche apportate nei flussi di lavoro, nonché i relativi stati correnti. [Fai clic qui](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/audit-trail){target="_blank"} (documentazione di Campaign v8).
 
 **Risoluzione dei problemi dei flussi di lavoro**
 

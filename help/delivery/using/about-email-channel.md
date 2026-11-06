@@ -32,9 +32,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
+source-git-commit: d679815c3415f1d7603ae5fe87e1c587208b6a8f
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '454'
 ht-degree: 0%
 ---
 # Introduzione al canale e-mail{#about-email-channel}
@@ -71,7 +71,7 @@ Scopri i passaggi chiave relativi alla creazione di consegne e-mail **nella docu
 Per informazioni sui parametri e-mail **nella documentazione di Campaign v8**, consulta queste pagine:
 
 * [Collegamento alla pagina mirror](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html?lang=it){target="_blank"}: configura la pagina mirror per garantire ai client la migliore esperienza di rendering.
-* [Aggiungi un indirizzo Ccn](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-bcc.html?lang=it){target="_blank"}: configura Adobe Campaign per conservare una copia delle e-mail inviate dalla tua piattaforma.
+* [Aggiungi un indirizzo Ccn](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/emails/email-bcc){target="_blank"}: configura Adobe Campaign per conservare una copia delle e-mail inviate dalla tua piattaforma.
 * [Definisci parametri e-mail aggiuntivi](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html?lang=it){target="_blank"}: ulteriori informazioni sulle opzioni e i parametri disponibili nelle proprietà di consegna.
 
 Fai riferimento anche a questa [pagina](sending-with-enhanced-mta.md) per informazioni sull&#39;MTA avanzato.

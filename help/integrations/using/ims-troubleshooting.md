@@ -33,15 +33,19 @@ subfeature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '492'
 ht-degree: 5%
 ---
 # Risoluzione dei problemi di IMS{#ims-troubleshooting}
 
 
 I seguenti suggerimenti per la risoluzione dei problemi aiuteranno i clienti **on-premise** e **hybrid** a risolvere i problemi più comuni che si verificano quando si utilizza l&#39;integrazione IMS. Per i clienti **hosted**, contatta Adobe.
+
+Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sull&#39;accesso con Adobe ID e sulla risoluzione dei problemi di accesso, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/connect){target=_blank}.
+
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/connect){target=_blank}
 
 **Account esterno**
 
@@ -106,16 +110,3 @@ Riavvia il server se vengono apportate modifiche alle impostazioni precedenti ne
 * L’utente non è in grado di accedere alla pagina di accesso di Adobe ID:
 
   Per verificare la configurazione dell’ambito, consulta i passaggi precedenti.
-
-**Problemi relativi alla cache di WebView2**
-
-Se si verificano problemi durante l&#39;accesso a **[!UICONTROL Client Console]** con Adobe ID, provare a cancellare la cache WebView2 locale. Nella maggior parte dei casi, questo risolve il problema. Segui i passaggi seguenti:
-
-1. Chiudere **[!UICONTROL Client Console]** e interrompere qualsiasi processo `nlclient` in esecuzione.
-
-1. Elimina tutte le cartelle `webview2` e `webview2Cache` dai percorsi seguenti:
-
-   * `C:\ProgramData\Neolane\NL_5\nlclient\`
-   * `C:\Users\<username>\AppData\Roaming\Neolane\NL_5\nlclient\`
-
-1. Riavvia **[!UICONTROL Client Console]** e accedi con il tuo Adobe ID. Le cartelle della cache verranno ricreate automaticamente al prossimo avvio.

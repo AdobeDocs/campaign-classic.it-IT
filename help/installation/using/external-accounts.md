@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a119d402631c5d2dd3ab8d6d11dfd0cdba0d662f
+source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
 workflow-type: tm+mt
-source-wordcount: '2010'
-ht-degree: 7%
+source-wordcount: '2023'
+ht-degree: 6%
 ---
 # Account esterni{#external-accounts}
 
@@ -333,7 +333,7 @@ L&#39;account esterno **[!UICONTROL AEM (AEM instance)]** consente di gestire il
 
   Password utilizzata per la connessione all’istanza di authoring Adobe Experience Manager.
 
-Per ulteriori informazioni, consulta questa [sezione](../../integrations/using/about-adobe-experience-manager.md).
+Per ulteriori informazioni, consulta questa [sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/connect/ac-aem){target="_blank"} (documentazione di Campaign v8).
 
 ## Account esterni del connettore CRM
 
