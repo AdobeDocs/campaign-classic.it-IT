@@ -61,7 +61,7 @@ Per ottimizzare la creazione, l’utilizzo e la durata di un rapporto, è necess
    * Aggiungere indicatori a un rapporto esistente. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md)
    * Visualizzare i dati nel database. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/about-descriptive-analysis.md)
    * Crea un nuovo rapporto di consegna. Ulteriori informazioni [in questa sezione](../../reporting/using/about-reports-creation-in-campaign.md)),
-   * Esporta dati dal database di Adobe Campaign (tramite un flusso di lavoro, fai riferimento a [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} (documentazione di Campaign v8)
+   * Esporta dati dal database di Adobe Campaign (tramite un flusso di lavoro, fai riferimento a [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} (documentazione di Campaign v8)
    * Creare una tabella pivot. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
    * Esplora i dati aggregati. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/ac-cubes.md)
    * Utilizza un assistente per analizzare i dati. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/about-descriptive-analysis.md)

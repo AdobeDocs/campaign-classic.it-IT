@@ -42,6 +42,6 @@ Basando i nuovi flussi di lavoro su un modello creato di recente, la tabella per
 
 Tutte le attività utilizzate nel flusso di lavoro utilizzeranno quindi la tabella personalizzata senza richiedere alcuna configurazione manuale aggiuntiva.
 
-Per ulteriori informazioni sui flussi di lavoro, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} (documentazione di Campaign v8).
+Per ulteriori informazioni sui flussi di lavoro, consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} (documentazione di Campaign v8).
 
 ![](assets/cfg_external_table_workflow.png)

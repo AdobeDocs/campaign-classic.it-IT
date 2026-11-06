@@ -53,9 +53,9 @@ ht-degree: 8%
 
 Adobe Campaign sfrutta la soluzione di test e-mail basato su Web [Litmus](https://litmus.com/email-testing) per acquisire i rendering di e-mail e renderli disponibili in un report dedicato.
 
-Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sul rendering della casella in entrata, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/deliverability-management/inbox-rendering){target=_blank}.
+Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sul rendering della casella in entrata, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/deliverability-management/inbox-rendering){target=_blank}.
 
-[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/deliverability-management/inbox-rendering){target=_blank}
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/deliverability-management/inbox-rendering){target=_blank}
 
 ## Attivazione del rendering della casella in entrata {#activating-inbox-rendering}
 
