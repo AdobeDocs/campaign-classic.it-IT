@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Security
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '870'
 ht-degree: 6%
 ---
 # Best practice per la generazione di rapporti{#best-practices-reporting}
@@ -61,7 +61,7 @@ Per ottimizzare la creazione, l’utilizzo e la durata di un rapporto, è necess
    * Aggiungere indicatori a un rapporto esistente. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/about-reports-creation-in-campaign.md)
    * Visualizzare i dati nel database. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/about-descriptive-analysis.md)
    * Crea un nuovo rapporto di consegna. Ulteriori informazioni [in questa sezione](../../reporting/using/about-reports-creation-in-campaign.md)),
-   * Esporta dati dal database di Adobe Campaign (tramite un flusso di lavoro, fai riferimento a [questa sezione](../../workflow/using/about-workflows.md)
+   * Esporta dati dal database di Adobe Campaign (tramite un flusso di lavoro, fai riferimento a [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} (documentazione di Campaign v8)
    * Creare una tabella pivot. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
    * Esplora i dati aggregati. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/ac-cubes.md)
    * Utilizza un assistente per analizzare i dati. Per ulteriori informazioni, consulta [questa sezione](../../reporting/using/about-descriptive-analysis.md)

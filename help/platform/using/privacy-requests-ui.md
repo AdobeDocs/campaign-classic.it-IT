@@ -40,16 +40,18 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9753491edbeba9df2c0a9dcf53b3bd5ea87c32ca
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 100%
+source-wordcount: '718'
+ht-degree: 89%
 ---
 # Creare e gestire richieste di accesso a dati personali {#privacy-request-ui}
 
-
-
 Questa sezione descrive come creare le richieste di accesso ed eliminazione e come Adobe Campaign le elabora.
+
+Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sulle tabelle cercate durante l&#39;elaborazione delle richieste di accesso a dati personali, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/privacy#list-of-tables){target=_blank}.
+
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/privacy#list-of-tables){target=_blank}
 
 ## Creare una richiesta di accesso a dati personali {#create-privacy-request-ui}
 
@@ -74,24 +76,7 @@ I flussi di lavoro tecnici per la privacy vengono eseguiti una volta al giorno e
 
 ![](assets/privacy-request-download.png)
 
-## Elenco delle tabelle {#list-of-tables}
-
-Durante l’esecuzione di una richiesta di eliminazione o di accesso ai dati personali, Adobe Campaign cerca tutti i dati dell’interessato in base al **[!UICONTROL Reconciliation value]** in tutte le tabelle che presentano un collegamento alla tabella dei destinatari (di tipo proprio).
-
-Di seguito è riportato l’elenco delle tabelle pronte all’uso prese in considerazione per l’esecuzione delle richieste di accesso a dati personali:
-
-* Destinatari (recipient)
-* Registro delle consegne ai destinatari (broadLogRcp)
-* Registro di tracciamento dei destinatari (trackingLogRcp)
-* Registro di consegna degli eventi archiviati (broadLogEventHisto)
-* Contenuto dell’elenco destinatari (rcpGrpRel)
-* Proposta di offerta del visitatore (propositionVisitor)
-* Visitatori (visitor)
-* Storico abbonamenti (subHisto)
-* Abbonamenti (subscription)
-* Proposta di offerta del destinatario (propositionRcp)
-
-Se hai creato tabelle personalizzate con un collegamento alla tabella dei profili (di tipo proprio), anche queste verranno considerate. Ad esempio, se disponi di una tabella di transazioni collegata alla tabella dei destinatari e una tabella di dettagli delle transazioni collegata alla tabella delle transazioni, verranno entrambe considerate.
+## Richieste batch tramite flussi di lavoro
 
 >[!IMPORTANT]
 >

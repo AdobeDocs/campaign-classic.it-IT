@@ -8,9 +8,9 @@ user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: a26a9642d4b60f0f095596584929ba5e98c3180a
+source-git-commit: b2b42bcbab0d09197126d140da3ecb1f4aa0d869
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1560'
 ht-degree: 100%
 ---
 
@@ -117,7 +117,6 @@ ht-degree: 100%
     + [Utilizzare un modello di contenuto](delivery/using/using-a-content-template.md)
     + [Arricchire il contenuto](delivery/using/enriching-content.md)
     + [Automatizzare tramite flussi di lavoro](delivery/using/automating-via-workflows.md)
-+ [Orchestrare campagne di marketing](campaign/using/about-marketing-campaigns.md)
 + Response Manager {#response-manager}
   + [Introduzione a Gestione risposte](response/using/about-response-manager.md)
   + [Configurazione](response/using/configuration.md)
@@ -217,7 +216,6 @@ ht-degree: 100%
     + [Configurare l’integrazione](integrations/using/configuring-the-integration.md)
   + Adobe Target {#adobe-target}
     + [Configurare l’integrazione con [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
-+ [Automatizzare con i flussi di lavoro](workflow/using/about-workflows.md)
 + Gestire le offerte {#managing-offers}
   + Introduzione all’interazione {#interaction-overview}
     + [Gestione dell’interazione e delle offerte](interaction/using/interaction-and-offer-management.md)

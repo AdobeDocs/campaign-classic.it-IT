@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Data collection
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
+source-git-commit: 9753491edbeba9df2c0a9dcf53b3bd5ea87c32ca
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1291'
 ht-degree: 2%
 ---
 # Configurare le istanze {#creating-a-shared-connection}
@@ -49,7 +49,7 @@ Per utilizzare le funzionalità di messaggistica transazionale, devi configurare
 
 >[!IMPORTANT]
 >
->Le estensioni dello schema hanno interessato le risorse utilizzate da [Flussi di lavoro tecnici del Centro messaggi](../../message-center/using/additional-configurations.md#technical-workflows) su istanze di controllo o di esecuzione devono essere duplicati sulle altre istanze utilizzate dal modulo di messaggistica transazionale.
+>Le estensioni dello schema hanno interessato le risorse utilizzate dai [flussi di lavoro tecnici del Centro messaggi](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/transactional-msg-settings#technical-workflows){target="_blank"} (documentazione di Campaign v8) su istanze di controllo o di esecuzione che devono essere duplicati sulle altre istanze utilizzate dal modulo di messaggistica transazionale.
 
 È inoltre necessario specificare e connettere le istanze di esecuzione alle istanze di controllo.
 
@@ -61,7 +61,7 @@ In questa sezione sono descritti tutti i passaggi necessari per configurare e co
 
 ## Configurare l’istanza di controllo {#control-instance}
 
-Per connettere l&#39;istanza di controllo e le istanze di esecuzione, è innanzitutto necessario creare e configurare un account esterno di tipo **[!UICONTROL Execution instance]** **nell&#39;istanza di controllo**. Pertanto, una volta [pubblicati](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/real-time/transactional-template#publish-message-template){target="_blank"} (documentazione di Campaign v8), i modelli di messaggi transazionali possono essere distribuiti nelle istanze di esecuzione.
+Per connettere l&#39;istanza di controllo e le istanze di esecuzione, è innanzitutto necessario creare e configurare un account esterno di tipo **[!UICONTROL Execution instance]** **nell&#39;istanza di controllo**. Pertanto, una volta [pubblicati](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template#publish-message-template){target="_blank"} (documentazione di Campaign v8), i modelli di messaggi transazionali possono essere distribuiti nelle istanze di esecuzione.
 
 Se utilizzi più istanze di esecuzione, devi creare tanti account esterni quanti sono le istanze di esecuzione.
 
@@ -130,7 +130,7 @@ Quando utilizzi più istanze di esecuzione, ripeti questi passaggi per creare ta
 
 Ogni istanza di esecuzione deve essere associata a un identificatore univoco per differenziare la cronologia di ogni istanza di esecuzione durante la visualizzazione nell’istanza di controllo.
 
-Questo identificatore può essere attribuito manualmente a ogni istanza di esecuzione **&#x200B;**. In questo caso, il passaggio deve essere eseguito **su ogni istanza di esecuzione**. A questo scopo, utilizza la procedura guidata di distribuzione come descritto di seguito:
+Questo identificatore può essere attribuito manualmente a ogni istanza di esecuzione ****. In questo caso, il passaggio deve essere eseguito **su ogni istanza di esecuzione**. A questo scopo, utilizza la procedura guidata di distribuzione come descritto di seguito:
 
 1. Aprire la procedura guidata di distribuzione in un&#39;istanza di esecuzione.
 1. Passare alla finestra **[!UICONTROL Message Center]**.

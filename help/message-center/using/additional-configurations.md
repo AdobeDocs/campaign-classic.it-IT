@@ -28,18 +28,22 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
+source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 4%
+source-wordcount: '612'
+ht-degree: 2%
 ---
 # Configurazioni aggiuntive {#mc-additional-configurations}
 
+Questa pagina descrive ulteriori configurazioni per la messaggistica transazionale in Campaign Classic v7.
 
+Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sull&#39;eliminazione degli eventi di messaggistica transazionale e sui flussi di lavoro tecnici, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/transactional-msg-settings){target=_blank}.
+
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/transactional-msg-settings){target=_blank}
 
 ## Monitorare le soglie {#monitoring-thresholds}
 
-Puoi configurare le soglie di avviso (arancione) e le soglie di avviso (rosso) degli indicatori visualizzati nei rapporti **Livello di servizio del Centro messaggi** e **Tempo di elaborazione del Centro messaggi** (consulta [Accedere ai rapporti sulla messaggistica transazionale](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"} (documentazione di Campaign v8).
+Puoi configurare le soglie di avviso (arancione) e le soglie di avviso (rosso) degli indicatori visualizzati nei rapporti **Livello di servizio del Centro messaggi** e **Tempo di elaborazione del Centro messaggi** (consulta [Accedere ai rapporti sulla messaggistica transazionale](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"} (documentazione di Campaign v8).
 
 A questo scopo, segui la procedura indicata di seguito:
 
@@ -55,67 +59,13 @@ A questo scopo, segui la procedura indicata di seguito:
 >
 >Il numero di eventi in attesa nella coda viene visualizzato nella sezione [Indicatori di sistema](../../production/using/monitoring-processes.md#system-indicators) della pagina di monitoraggio dei processi di Adobe Campaign. Per ulteriori informazioni sulla procedura guidata di distribuzione, consultare [questa sezione](../../installation/using/deploying-an-instance.md#deployment-assistant).
 
-## Eliminare gli eventi {#purging-events}
-
-È possibile utilizzare la [procedura guidata di distribuzione](../../production/using/database-cleanup-workflow.md#deployment-assistant) per configurare la durata della memorizzazione dei dati nel database.
-
-La rimozione degli eventi viene eseguita automaticamente dal [flusso di lavoro di pulizia del database](../../production/using/database-cleanup-workflow.md). Questo flusso di lavoro elimina gli eventi ricevuti e memorizzati nelle istanze di esecuzione e gli eventi archiviati in un&#39;istanza di controllo.
-
-Utilizzare le frecce appropriate per modificare le impostazioni di rimozione.
-
-Impostazioni di eliminazione degli eventi in un&#39;istanza di controllo:
-
-![](assets/messagecenter_delete_events_001.png)
-
-Impostazioni di eliminazione degli eventi in un&#39;istanza di esecuzione:
-
-![](assets/messagecenter_delete_events_002.png)
-
-Per ulteriori informazioni sul flusso di lavoro di pulizia del database, vedere [questa sezione](../../production/using/database-cleanup-workflow.md).
-
-
 ## Flussi di lavoro tecnici {#technical-workflows}
 
 Prima di distribuire modelli di messaggi transazionali, è necessario assicurarsi che i flussi di lavoro tecnici sull’istanza di controllo e sulle diverse istanze di esecuzione siano stati effettivamente creati e avviati.
 
-I vari flussi di lavoro tecnici relativi alla messaggistica transazionale (Centro messaggi) sono suddivisi tra l’istanza di controllo e le istanze di esecuzione.
-
-### Controllare i flussi di lavoro delle istanze {#control-instance-workflows}
-
-Nell&#39;istanza di controllo, indipendentemente dal fatto che siano registrate una o più istanze di esecuzione, è necessario creare un flusso di lavoro di archiviazione per ogni account esterno **[!UICONTROL Message Center execution instance]**. Fare clic sul pulsante **[!UICONTROL Create the archiving workflow]** per creare e avviare il flusso di lavoro.
-
-![](assets/messagecenter_archiving_002.png)
-
-È possibile accedere a questi flussi di lavoro dalla cartella **Amministrazione > Produzione > Centro messaggi**. Una volta creati, i flussi di lavoro di archiviazione vengono avviati automaticamente.
-
-<!--
-**Minimal architecture**
-
-Once the control and execution modules are installed on the same instance, you must create the archiving workflow using the deployment wizard. Click the **[!UICONTROL Create the archiving workflow]** button to create and start the workflow.
-
-![](assets/messagecenter_archiving_001.png)
--->
-
-### Flussi di lavoro dell’istanza di esecuzione {#execution-instance-workflows}
-
-Nelle istanze di esecuzione, è possibile accedere ai flussi di lavoro tecnici per la messaggistica transazionale dalla cartella **Amministrazione > Produzione > Centro messaggi**. Devi solo avviarli. I flussi di lavoro nell’elenco sono:
-
-* **[!UICONTROL Processing batch events]** (nome interno: **[!UICONTROL batchEventsProcessing]** ): questo flusso di lavoro consente di suddividere gli eventi batch in una coda prima che siano collegati a un modello di messaggio.
-* **[!UICONTROL Processing real time events]** (nome interno: **[!UICONTROL rtEventsProcessing]** ): questo flusso di lavoro consente di suddividere gli eventi in tempo reale in una coda prima che vengano collegati a un modello di messaggio.
-* **[!UICONTROL Update event status]** (nome interno: **[!UICONTROL updateEventStatus]** ): questo flusso di lavoro consente di attribuire uno stato all&#39;evento.
-
-  Sono disponibili i seguenti stati dell’evento:
-
-  * **[!UICONTROL Pending]** : l&#39;evento è in coda. Non è ancora stato assegnato alcun modello di messaggio.
-  * **[!UICONTROL Pending delivery]** : l&#39;evento è in coda, gli è stato assegnato un modello di messaggio e viene elaborato dalla consegna.
-  * **[!UICONTROL Sent]** : questo stato viene copiato dai registri di consegna. Significa che la consegna è stata inviata.
-  * **[!UICONTROL Ignored by the delivery]** : questo stato viene copiato dai registri di consegna. Significa che la consegna è stata ignorata.
-  * **[!UICONTROL Delivery failed]** : questo stato viene copiato dai registri di consegna. Significa che la consegna è non è andata a buon fine.
-  * **[!UICONTROL Event not taken into account]** : impossibile collegare l&#39;evento a un modello di messaggio. L’evento non verrà elaborato.
-
 ### Pianificazione del flusso di lavoro di archiviazione
 
-Evitare di modificare la pianificazione del flusso di lavoro di archiviazione **&#x200B;**&#x200B;eseguita sull&#39;istanza di controllo. In caso contrario, alcuni dati di tracciamento estratti dall’istanza di esecuzione potrebbero andare persi.
+Evitare di modificare la pianificazione del flusso di lavoro di archiviazione **** eseguita sull&#39;istanza di controllo. In caso contrario, alcuni dati di tracciamento estratti dall’istanza di esecuzione potrebbero andare persi.
 
 Se si modifica la pianificazione del flusso di lavoro di archiviazione, è necessario modificare anche la pianificazione del flusso di lavoro di **tracciamento** nell&#39;istanza di esecuzione in modo che corrisponda alla pianificazione del flusso di lavoro di archiviazione nell&#39;istanza di controllo.
 
@@ -125,7 +75,7 @@ Questa sezione descrive una soluzione per configurare il tracciamento e gli URL 
 
 ### Nota di compatibilità {#compatibility-note}
 
-Questa configurazione di branding legacy non è compatibile con il nuovo modello di [branding centralizzato](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html?lang=it){target="_blank"} introdotto in Campaign v8.
+Questa configurazione di branding legacy non è compatibile con il nuovo modello di [branding centralizzato](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html){target="_blank"} introdotto in Campaign v8.
 
 Se l&#39;ambiente esistente utilizza questa configurazione legacy, non è possibile migrare direttamente al nuovo modello di branding centralizzato. Per adottare il nuovo sistema è necessaria una reimplementazione completa delle impostazioni di branding.
 
@@ -196,6 +146,6 @@ A questo scopo, segui la procedura indicata di seguito:
 
 1. Crea un account esterno per brand con lo stesso nome interno definito nell&#39;[istanza di esecuzione](#execution-instance) (passaggio 1).
 
-1. Crea un modello di consegna per marchio. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=it){target="_blank"}.
+1. Crea un modello di consegna per marchio. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
 
 1. In **[!UICONTROL Properties]** del modello di consegna, imposta il routing sull&#39;account esterno del brand.
