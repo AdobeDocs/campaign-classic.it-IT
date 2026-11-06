@@ -76,7 +76,7 @@ Al fine di rafforzare la sicurezza e il processo di autenticazione, Adobe Campai
     <div><strong>Aggiungere e gestire i profili</strong><br/>Esplora con facilità la gestione dei profili nel database di Adobe Campaign v7. Aggiungi profili manualmente o tramite importazioni, perfezionando i dati dei clienti e personalizzando le campagne in modo semplice.</div>
     </td>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank"><img src="assets/do-not-localize/start-workflows.jpeg"></a>
+    <a href="https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank"><img src="assets/do-not-localize/start-workflows.jpeg"></a>
     <div><strong>Automatizzare con i flussi di lavoro</strong><br/>Scopri come sfruttare il flusso di lavoro per progettare i processi come segmentazione, esecuzione di campagne, elaborazione di file, partecipazione di utenti, ecc.
     </div></td>
     <td>
@@ -87,7 +87,7 @@ Al fine di rafforzare la sicurezza e il processo di autenticazione, Adobe Campai
   <tr style="border: 0;">
     <td align="center"><a href="platform/using/launching-adobe-campaign.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     <td align="center"><a href="platform/using/about-profiles.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
-    <td align="center"><a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     <td align="center"><a href="delivery/using/communication-channels.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     </tr>
 </table>
@@ -104,7 +104,7 @@ Al fine di rafforzare la sicurezza e il processo di autenticazione, Adobe Campai
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>Esperienza del cliente</strong><br/><a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank">Automatizzare con i flussi di lavoro</a> (documentazione di Campaign v8) - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=it" target="_blank">Campagna di marketing</a> - <a href="interaction/using/interaction-and-offer-management.md">Gestione delle interazioni e delle offerte</a> - <a href="delivery/using/about-personalization.md">Personalization</a> - <a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/reports/gs-reporting" target="_blank">Generazione rapporti</a> (documentazione di Campaign v8)
+      <strong>Esperienza del cliente</strong><br/><a href="https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank">Automatizzare con i flussi di lavoro</a> (documentazione di Campaign v8) - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=it" target="_blank">Campagna di marketing</a> - <a href="interaction/using/interaction-and-offer-management.md">Gestione delle interazioni e delle offerte</a> - <a href="delivery/using/about-personalization.md">Personalization</a> - <a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/reports/gs-reporting" target="_blank">Generazione rapporti</a> (documentazione di Campaign v8)
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
@@ -139,12 +139,12 @@ Il contenuto documentato nella documentazione di Campaign v8 è stato rimosso da
 | --- | --- |
 | Interfaccia utente | [Scopri l&#39;interfaccia utente](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/campaign-ui){target="_blank"} |
 | Profili, elenchi, importazione ed esportazione | [Importare profili e dati](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/data/import){target="_blank"} |
-| Flussi di lavoro | [Informazioni sui flussi di lavoro](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} |
-| Campagne di marketing | [Introduzione alle campagne di marketing](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/set-up-campaigns){target="_blank"} |
+| Flussi di lavoro | [Informazioni sui flussi di lavoro](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} |
+| Campagne di marketing | [Introduzione alle campagne di marketing](https://experienceleague.adobe.com/it/docs/campaign/automation/campaign-orchestration/set-up-campaigns){target="_blank"} |
 | Creazione e invio di consegne | [Crea un messaggio](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/create-message){target="_blank"} |
 | Rapporti incorporati | [Introduzione al reporting](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/reports/gs-reporting){target="_blank"} |
-| Autorizzazioni | [Introduzione alle autorizzazioni](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/gs-permissions){target="_blank"} |
-| Moduli di input | [Introduzione ai moduli di input](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} |
+| Autorizzazioni | [Introduzione alle autorizzazioni](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/permissions/gs-permissions){target="_blank"} |
+| Moduli di input | [Introduzione ai moduli di input](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} |
 
 ## Risorse aggiuntive
 
