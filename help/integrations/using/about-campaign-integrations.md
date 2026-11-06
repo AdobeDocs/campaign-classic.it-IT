@@ -48,13 +48,13 @@ ht-degree: 5%
 
 Adobe Experience Cloud è un set completo di soluzioni integrate leader di settore, basate su una piattaforma di dati comune e con un set comune di potenti soluzioni e app.
 
-Ulteriori informazioni sulle integrazioni funzionali disponibili tra le soluzioni Adobe Campaign e Adobe Experience Cloud in [questa pagina](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/integrations){_blank}.
+Ulteriori informazioni sulle integrazioni funzionali disponibili tra le soluzioni Adobe Campaign e Adobe Experience Cloud in [questa pagina](https://experienceleague.adobe.com/it/docs/core-services/interface/administration/integrations){_blank}.
 
 L&#39;elenco completo delle soluzioni e dei servizi delle app Adobe che possono essere integrati con Adobe Campaign, insieme alla relativa documentazione, è disponibile in [questa sezione](#experience-cloud-integrations).
 
-Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sulla connessione di Campaign con le soluzioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/integration){target=_blank}.
+Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sulla connessione di Campaign con le soluzioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/connect/integration){target=_blank}.
 
-[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/integration){target=_blank}
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/connect/integration){target=_blank}
 
 >[!CAUTION]
 >
@@ -65,17 +65,17 @@ Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di
 
 È possibile collegare più soluzioni ad Adobe Experience Cloud. L&#39;**organizzazione** è l&#39;entità cliente che consente all&#39;amministratore di configurare gruppi e utenti e di controllare il Single Sign-On (SSO) in Adobe Experience Cloud. L’organizzazione si comporta come un’azienda di accesso per tutti i prodotti e le soluzioni Experience Cloud. Nella maggior parte dei casi l’organizzazione corrisponde al nome aziendale, ma una stessa azienda può avere molte organizzazioni.
 
-La gestione dell&#39;organizzazione e il collegamento degli account Adobe Experience Cloud sono descritti in dettaglio nella [Guida di Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations){_blank}.
+La gestione dell&#39;organizzazione e il collegamento degli account Adobe Experience Cloud sono descritti in dettaglio nella [Guida di Adobe Experience Cloud](https://experienceleague.adobe.com/it/docs/core-services/interface/administration/organizations){_blank}.
 
 ## Gestione di identità e cookie {#id-and-cookies}
 
-Durante l&#39;installazione di Adobe Campaign o l&#39;integrazione di un&#39;installazione esistente con Adobe Experience Cloud, il servizio [Adobe Experience Cloud Identity](https://experienceleague.adobe.com/en/docs/id-service/using/home){_blank} è abilitato. Questo servizio sostituisce il cookie permanente utilizzato in primo luogo da Adobe Campaign per le sue funzionalità di tracciamento.
+Durante l&#39;installazione di Adobe Campaign o l&#39;integrazione di un&#39;installazione esistente con Adobe Experience Cloud, il servizio [Adobe Experience Cloud Identity](https://experienceleague.adobe.com/it/docs/id-service/using/home){_blank} è abilitato. Questo servizio sostituisce il cookie permanente utilizzato in primo luogo da Adobe Campaign per le sue funzionalità di tracciamento.
 
 Il servizio Adobe Experience Cloud Identity (servizio ID) fornisce un ID universale e costante che identifica i visitatori in tutte le soluzioni di Experience Cloud.
 
 Ai destinatari che generano i registri di tracciamento verrà assegnato un ID visitatore univoco. L&#39;ID verrà salvato nel campo **[!UICONTROL Requester UUID (@sourceID)]** della tabella **[!UICONTROL nms:trackingLogRcp]**. **I dati di tracciamento dei destinatari che esistevano prima dell&#39;implementazione del servizio ID visitatore non saranno più utilizzabili**.
 
-L’ID verrà quindi riconosciuto dalle altre soluzioni Adobe Experience Cloud con lo stesso CNAME. [Ulteriori informazioni](https://experienceleague.adobe.com/en/docs/id-service/using/reference/analytics-reference/cname){_blank}.
+L’ID verrà quindi riconosciuto dalle altre soluzioni Adobe Experience Cloud con lo stesso CNAME. [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/id-service/using/reference/analytics-reference/cname){_blank}.
 
 ## Integrazioni di Experience Cloud {#experience-cloud-integrations}
 
@@ -99,11 +99,11 @@ La tabella seguente fornisce l’accesso alla documentazione disponibile sull’
   </tr> 
   <tr> 
    <td> <strong>Adobe Experience Manager</strong><br /> </td> 
-   <td> Configura questa integrazione per creare contenuti e-mail o moduli mappati al database Adobe Campaign direttamente in <strong>Adobe Experience Manager</strong>.<br /> <p><a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aem" target="_blank">Ulteriori informazioni</a> (documentazione di Campaign v8) sull'integrazione Adobe Campaign - Adobe Experience Manager.</p><br /> </td> 
+   <td> Configura questa integrazione per creare contenuti e-mail o moduli mappati al database Adobe Campaign direttamente in <strong>Adobe Experience Manager</strong>.<br /> <p><a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/connect/ac-aem" target="_blank">Ulteriori informazioni</a> (documentazione di Campaign v8) sull'integrazione Adobe Campaign - Adobe Experience Manager.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Target</strong><br /> </td> 
-   <td> Configura questa integrazione per inserire immagini calcolate dinamicamente da <strong>Adobe Target</strong> quando viene aperto il messaggio e-mail creato e inviato da Adobe Campaign.<br /> <p><a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-at" target="_blank">Ulteriori informazioni</a> (documentazione di Campaign v8) sull'integrazione Adobe Campaign - Adobe Target.</p><br /> </td> 
+   <td> Configura questa integrazione per inserire immagini calcolate dinamicamente da <strong>Adobe Target</strong> quando viene aperto il messaggio e-mail creato e inviato da Adobe Campaign.<br /> <p><a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/connect/ac-at" target="_blank">Ulteriori informazioni</a> (documentazione di Campaign v8) sull'integrazione Adobe Campaign - Adobe Target.</p><br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Adobe Audience Manager</strong><br /> </td> 

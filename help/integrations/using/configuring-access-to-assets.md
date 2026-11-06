@@ -69,18 +69,18 @@ Per abilitare la connessione tra Adobe Campaign e Adobe Experience Cloud, config
 
 >[!CAUTION]
 >
->Questa funzionalità è stata disattivata a partire da Adobe Experience Manager 6.4. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html#removed-features)
+>Questa funzionalità è stata disattivata a partire da Adobe Experience Manager 6.4. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=it#removed-features)
 
 Per integrare AEM Assets con Adobe Campaign, devi prima configurare l’integrazione tra Adobe Experience Manager e Adobe Campaign. Questa configurazione richiede principalmente:
 
 * Installazione del pacchetto integrato **[!UICONTROL AEM Integration]**
 * Configurazione di un account esterno specifico di Adobe Experience Manager
 
-Scopri come integrare Adobe Campaign e Adobe Experience Manager nella [documentazione dettagliata](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aem){target="_blank"} (documentazione di Campaign v8).
+Scopri come integrare Adobe Campaign e Adobe Experience Manager nella [documentazione dettagliata](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/connect/ac-aem){target="_blank"} (documentazione di Campaign v8).
 
 Una volta impostata questa integrazione, puoi configurare un nuovo modello di consegna in Adobe Campaign per l’utilizzo della libreria AEM Assets. A questo scopo, segui la procedura indicata di seguito:
 
-1. Crea un nuovo modello di consegna o duplicane uno esistente. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}.
+1. Crea un nuovo modello di consegna o duplicane uno esistente. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=it){target="_blank"}.
 1. Modifica le **proprietà** di questo modello.
 1. Nella scheda **[!UICONTROL Advanced]**, impostare **[!UICONTROL Content editing mode]** su **DCE**.
 1. Seleziona **[!UICONTROL AEM account]** esterno da utilizzare per accedere alla libreria AEM Assets.

@@ -236,7 +236,7 @@ Questo server ospita moduli web, pagine mirror e così via. Le seguenti porte de
 
 ## Integrazione con Adobe Experience Manager {#integration-with-adobe-experience-manager}
 
-L’integrazione tra Adobe Campaign e Adobe Experience Manager richiede l’apertura di più porte se l’installazione è &quot;on-premise&quot;. Per ulteriori informazioni sulla configurazione di questa integrazione, consulta la [documentazione dettagliata](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aem){target="_blank"} (documentazione di Campaign v8).
+L’integrazione tra Adobe Campaign e Adobe Experience Manager richiede l’apertura di più porte se l’installazione è &quot;on-premise&quot;. Per ulteriori informazioni sulla configurazione di questa integrazione, consulta la [documentazione dettagliata](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/connect/ac-aem){target="_blank"} (documentazione di Campaign v8).
 
 <table> 
  <tbody> 
