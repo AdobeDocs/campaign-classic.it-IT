@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
+source-git-commit: 9753491edbeba9df2c0a9dcf53b3bd5ea87c32ca
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 21%
+source-wordcount: '311'
+ht-degree: 14%
 ---
 # Introduzione alle autorizzazioni{#access-management}
 
@@ -57,32 +57,15 @@ Adobe Campaign consente di definire e gestire i diritti assegnati ai vari operat
 * Accesso a determinati documenti,
 * Creazione, modifica e/o eliminazione di record (azioni, contatti, campagne, gruppi, ecc.).
 
->[!BEGINTABS]
+Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sulle autorizzazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/permissions/gs-permissions){target=_blank}.
 
->[!TAB Documentazione sulle autorizzazioni]
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/permissions/gs-permissions){target=_blank}
 
-Per ulteriori informazioni sulle **autorizzazioni in Adobe Campaign**, consulta la **[documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}**.
-
-[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}
-
-
->[!TAB Gestione delle autorizzazioni per le cartelle]
-
-Per informazioni su come definire le **autorizzazioni per le cartelle**, consulta la **[documentazione di Campaign v8 (console)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}**.
-
-[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}
-
-
->[!TAB Autenticazione nativa]
+Per informazioni su come definire le autorizzazioni per le cartelle, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/permissions/folder-permissions){target=_blank}.
 
 L&#39;autenticazione nativa con login/password è ancora disponibile in Campaign v7. Tuttavia, per rafforzare la sicurezza e il processo di autenticazione, Adobe Campaign consiglia vivamente di [migrare la modalità di autenticazione dell&#39;utente finale](../../technotes/using/ac-ims.md) dall&#39;autenticazione nativa ad Adobe Identity Management System (IMS). In Campaign v8, la connessione con l’autenticazione nativa non è consentita.
 
 [![immagine](../../assets/do-not-localize/learn-more-button.svg)](../../technotes/using/ac-ims.md)
-
-
->[!ENDTABS]
-
-
 
 <!--
 The permissions apply to operator profiles or operator groups.

@@ -25,7 +25,7 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a26a9642d4b60f0f095596584929ba5e98c3180a
+source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 18%
@@ -166,7 +166,7 @@ Le risorse tecniche sono disponibili nella documentazione di Campaign Classic. Ã
 
 **Principi generali**
 
-* [Architettura Campaign Classic](../../production/using/general-architecture.md)
+* [Architettura Campaign Classic](../../production/using/architecture-and-open-ports.md)
 * [Moduli Campaign Classic](../../production/using/operating-principle.md)
 * [Opzioni Campaign Classic](../../installation/using/configuring-campaign-options.md)
 * [Come impostare l&#39;avvio automatico dei moduli](../../production/using/administration.md)

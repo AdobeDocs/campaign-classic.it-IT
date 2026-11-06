@@ -8,16 +8,16 @@ user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: a26a9642d4b60f0f095596584929ba5e98c3180a
+source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
 workflow-type: tm+mt
-source-wordcount: '1566'
-ht-degree: 100%
+source-wordcount: '1577'
+ht-degree: 97%
 ---
 
 # Documentazione di Adobe Campaign Classic v7 {#using}
 
 + [Documentazione di Campaign v7](campaign-classic-home.md)
-+ Note sulla versione {#release-notes}
++ Note sulla versione e compatibilità {#release-notes}
   + [Introduzione agli aggiornamenti](rn/using/rn-overview.md)
   + [Ultima versione](rn/using/latest-release.md)
   + Versioni precedenti {#previous-releases}
@@ -59,201 +59,7 @@ ht-degree: 100%
       + [Creare e gestire i gruppi](platform/using/access-management-groups.md)
   + Connettori CRM {#connectors}
     + [Introduzione ai connettori CRM](platform/using/crm-connectors.md)
-+ Creare e inviare messaggi {#sending-messages}
-  + [Introduzione ai messaggi](delivery/using/communication-channels.md)
-  + {hide-from-toc}[Impostazioni di consegna - NASCOSTO](delivery/using/delivery-settings.md)
-  + [Inviare e-mail](delivery/using/about-email-channel.md)
-  + Inviare SMS {#sending-messages-on-mobiles}
-    + Configurare il canale SMS {#sms-set-up}
-      + [Configurare gli SMS in un’istanza autonoma](delivery/using/sms-set-up.md)
-      + [Configurare gli SMS in un’infrastruttura mid-sourcing](delivery/using/sms-set-up-mid.md)
-      + [Protocollo e impostazioni del connettore SMS](delivery/using/sms-protocol.md)
-      + [Configurazione aggiuntiva](delivery/using/sms-send.md)
-      + [Risoluzione dei problemi relativi agli SMS](delivery/using/troubleshooting-sms.md)
-  + [Inviare notifiche push](delivery/using/about-mobile-app-channel.md)
-  + Inviare notifiche push {#sending-push-notifications}
-    + {hide-from-toc}[Risoluzione dei problemi - NASCOSTO](delivery/using/troubleshooting.md)
-  + [Inviare direct mail](delivery/using/about-direct-mail-channel.md)
-  + Personalizzare le consegne {#personalizing-deliveries}
-    + [Informazioni sulla personalizzazione](delivery/using/about-personalization.md)
-  + Utilizzare indirizzi seed {#using-seed-addresses}
-    + [Caso d’uso: selezionare gli indirizzi seed in base ai criteri](delivery/using/use-case-selecting-seed-addresses-on-criteria.md)
-    + [Caso d’uso: configurare la sostituzione del campo](delivery/using/use-case-configuring-the-field-substitution.md)
-  + Test A/B {#a-b-testing}
-    + [Introduzione ai test A/B](delivery/using/get-started-a-b-testing.md)
-    + [Configurare il test A/B](delivery/using/configuring-a-b-testing.md)
-    + Caso d’uso {#use-case}
-      + [Informazioni su questo caso d’uso](delivery/using/a-b-testing-use-case.md)
-      + [Creare un flusso di lavoro di targeting](delivery/using/a-b-testing-uc-targeting-workflow.md)
-      + [Configurare i campioni di popolazione](delivery/using/a-b-testing-uc-population-samples.md)
-      + [Creare modelli di consegna](delivery/using/a-b-testing-uc-delivery-templates.md)
-      + [Configurare le consegne](delivery/using/a-b-testing-uc-configuring-deliveries.md)
-      + [Creare lo script](delivery/using/a-b-testing-uc-script.md)
-      + [Definire la consegna finale](delivery/using/a-b-testing-uc-final-delivery.md)
-      + [Avviare il flusso di lavoro](delivery/using/a-b-testing-uc-start-workflow.md)
-      + [Analizzare il risultato](delivery/using/a-b-testing-uc-analyzing.md)
-  + Servizi e abbonamenti {#subscriptions-and-referrals}
-    + [Informazioni su servizi e abbonamenti](delivery/using/about-services-and-subscriptions.md)
-    + [Gestire gli abbonamenti](delivery/using/managing-subscriptions.md)
-    + [Marketing virale e social marketing](delivery/using/viral-and-social-marketing.md)
-  + Monitorare le consegne {#monitoring-deliveries}
-    + [Monitorare le prestazioni delle consegne](delivery/using/about-delivery-monitoring.md)
-    + [Tracciare i messaggi](delivery/using/about-message-tracking.md)
-    + [Prestazioni delle consegne e risoluzione dei problemi](delivery/using/delivery-performance-troubleshooting.md)
-    + [Errori di consegna e gestione della quarantena](delivery/using/delivery-failures-quarantine.md)
-    + [Avanzato: personalizza i registri di consegna](delivery/using/customize-delivery-logs.md)
-  + Gestione della recapitabilità {#deliverability-management}
-    + [Che cos’è il recapito messaggi](delivery/using/about-deliverability.md)
-    + [Rendering nella casella in entrata](delivery/using/inbox-rendering.md)
-    + [Risoluzione dei problemi](delivery/using/deliverability-faq.md)
-  + Modulo di gestione dei contenuti {#content-management}
-    + [Informazioni sulla gestione dei contenuti](delivery/using/about-content-management.md)
-    + [Risorse e principi di gestione dei contenuti](delivery/using/content-manager-resources-and-principles.md)
-    + [Caso d’uso: creazione di gestione dei contenuti](delivery/using/use-case-creating-content-management.md)
-    + [Schemi di dati](delivery/using/data-schemas.md)
-    + [Moduli di input](delivery/using/input-forms.md)
-    + [Formattazione](delivery/using/formatting.md)
-    + [Modelli di pubblicazione](delivery/using/publication-templates.md)
-    + [Utilizzare un modello di contenuto](delivery/using/using-a-content-template.md)
-    + [Arricchire il contenuto](delivery/using/enriching-content.md)
-    + [Automatizzare tramite flussi di lavoro](delivery/using/automating-via-workflows.md)
-+ [Orchestrare campagne di marketing](campaign/using/about-marketing-campaigns.md)
-+ Response Manager {#response-manager}
-  + [Introduzione a Gestione risposte](response/using/about-response-manager.md)
-  + [Configurazione](response/using/configuration.md)
-  + [Modelli di ipotesi](response/using/hypothesis-templates.md)
-  + [Creare ipotesi](response/using/creating-hypotheses.md)
-  + [Tracciamento delle ipotesi](response/using/hypothesis-tracking.md)
-+ Progettare e condividere i rapporti {#reporting}
-  + Introduzione al reporting {#reporting-in-adobe-campaign}
-    + [Best practice per il reporting](reporting/using/best-practices.md)
-  + Accedere ai rapporti incorporati {#accessing-built-in-reports}
-    + [Informazioni sui rapporti incorporati](reporting/using/about-campaign-built-in-reports.md)
-  + Analizzare le popolazioni {#analyzing-populations}
-    + [Che cos’è l’analisi descrittiva](reporting/using/about-descriptive-analysis.md)
-    + [Creare il primo rapporto di analisi descrittiva](reporting/using/using-the-descriptive-analysis-wizard.md)
-    + [Gestire e configurare il rapporto di analisi](reporting/using/processing-a-report.md)
-    + [Casi di utilizzo dei rapporti di analisi](reporting/using/use-cases.md)
-  + Creare nuovi rapporti {#creating-new-reports}
-    + [Passaggi chiave per progettare un rapporto](reporting/using/about-reports-creation-in-campaign.md)
-    + [Creare un nuovo rapporto](reporting/using/creating-a-new-report.md)
-    + [Raccogliere dati da analizzare](reporting/using/collecting-data-to-analyze.md)
-    + [Utilizzare il contesto](reporting/using/using-the-context.md)
-    + [Creare una tabella](reporting/using/creating-a-table.md)
-    + [Creare un grafico](reporting/using/creating-a-chart.md)
-    + [Layout degli elementi](reporting/using/element-layout.md)
-    + [Definire un contenuto condizionale](reporting/using/defining-a-conditional-content.md)
-    + [Funzionalità avanzate](reporting/using/advanced-functionalities.md)
-    + [Proprietà del rapporto](reporting/using/properties-of-the-report.md)
-    + [Configurare l’accesso al rapporto](reporting/using/configuring-access-to-the-report.md)
-    + [Azioni sui rapporti](reporting/using/actions-on-reports.md)
-  + [Progettare rapporti con cubi](reporting/using/ac-cubes.md)
-+ Progettare contenuti web {#designing-content}
-  + Applicazioni web {#web-applications}
-    + [Introduzione alle applicazioni web](web/using/about-web-applications.md)
-    + [Creare una nuova applicazione web](web/using/creating-a-new-web-application.md)
-    + [Progettare un’applicazione web](web/using/designing-a-web-application.md)
-    + [Casi d’uso: creare panoramiche](web/using/use-cases-creating-overviews.md)
-    + [Progettare un’applicazione web](web/using/translating-a-web-application.md)
-    + [Tracciare le visite in un’applicazione web](web/using/tracking-a-web-application.md)
-    + [Rinuncia al tracciamento delle applicazioni web](web/using/web-application-tracking-opt-out.md)
-  + Modificare i contenuti HTML {#editing-html-content}
-    + [Introduzione all’editor HTML](web/using/about-campaign-html-editor.md)
-    + [Gestione dei modelli](web/using/template-management.md)
-    + [Interfaccia dell’editor di contenuti](web/using/content-editor-interface.md)
-    + [Modificare i contenuti](web/using/editing-content.md)
-    + [Best practice per la modifica dei contenuti](web/using/content-editing-best-practices.md)
-    + [Creare una pagina di destinazione](web/using/creating-a-landing-page.md)
-    + [Caso d’uso: creare una consegna e-mail](web/using/use-case-creating-an-email-delivery.md)
-  + Moduli web {#web-forms}
-    + [Introduzione ai moduli web](web/using/about-web-forms.md)
-    + [Usare un modello per moduli web](web/using/using-a-web-form-template.md)
-    + [Aggiungere campi a un modulo web](web/using/adding-fields-to-a-web-form.md)
-    + [Elementi statici in un modulo web](web/using/static-elements-in-a-web-form.md)
-    + [Definire il layout dei moduli web](web/using/defining-web-forms-layout.md)
-    + [Rendering di un modulo](web/using/form-rendering.md)
-    + [Definire la sequenza di pagine](web/using/defining-web-forms-page-sequencing.md)
-    + [Salvare le risposte ai moduli web](web/using/web-forms-answers.md)
-    + [Pubblicare un modulo web](web/using/publishing-a-web-form.md)
-    + [Definire le proprietà dei moduli web](web/using/defining-web-forms-properties.md)
-    + [Pubblicare un modulo web](web/using/translating-a-web-form.md)
-    + [Casi d’uso: moduli web](web/using/use-cases-web-forms.md)
-+ Creazione di sondaggi online {#online-surveys}
-  + [Introduzione ai sondaggi](surveys/using/about-surveys.md)
-  + [Passaggi chiave per creare un sondaggio](surveys/using/getting-started-with-surveys.md)
-  + [Progettare un sondaggio](surveys/using/building-a-survey.md)
-  + [Gestire le risposte](surveys/using/managing-answers.md)
-  + [Pubblicare, tracciare e utilizzare i dati raccolti](surveys/using/publish-track-and-use-collected-data.md)
-  + [Configurare i sondaggi](surveys/using/configuring-surveys.md)
-  + [Caso d’uso: creare un modulo di riferimento](surveys/using/use-case-creating-a-refer-a-friend-form.md)
-  + [Caso d’uso: visualizzare un rapporto sulle risposte a un sondaggio online](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
-+ Integrare con Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
-  + [Introduzione alle integrazioni con Campaign](integrations/using/about-campaign-integrations.md)
-  + [Creare un account tecnico Adobe personale](integrations/using/oauth-technical-account.md)
-  + Trigger di Adobe Experience Cloud {#experience-triggers}
-    + [Utilizzare  [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
-    + [Configurare la pipeline](integrations/using/configuring-pipeline.md)
-    + [Configurare gli eventi per l’implementazione personalizzata](integrations/using/events.md)
-    + [Monitoraggio della pipeline](integrations/using/pipeline-monitoring.md)
-    + [Risoluzione dei problemi relativi alla pipeline](integrations/using/pipeline-troubleshooting.md)
-  + Origini e destinazioni Adobe Experience Platform {#aep-sources-destinations}
-    + [Utilizzare origini e destinazioni](integrations/using/get-started-sources-destinations.md)
-    + [Inserire il pubblico di Adobe Experience Platform in Campaign](integrations/using/ingest-aep-data.md)
-    + [Esportare dati da Campaign ad Adobe Experience Platform](integrations/using/export-campaign-data.md)
-  + Connettore Adobe Analytics{#analytics-connector}
-    + [Introduzione al connettore Adobe Analytics](integrations/using/gs-aa.md)
-    + [Provisioning del connettore Adobe Analytics](integrations/using/adobe-analytics-provisioning.md)
-  + Condivisione del pubblico {#audience-sharing}
-    + [Condividere tipi di pubblico con [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
-    + [Inviare una richiesta ad Adobe](integrations/using/submitting-request-to-adobe.md)
-    + [Configurare l’integrazione dei tipi di pubblico condivisi in [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
-    + {hide-from-toc}[Risoluzione dei problemi](integrations/using/troubleshooting.md)
-    + [Importare ed esportare tipi di pubblico](integrations/using/importing-and-exporting-audiences.md)
-  + Condivisione di risorse {#asset-sharing}
-    + [Condividere risorse con [!DNL Adobe Experience Cloud]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
-    + [Configurare l’accesso a [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
-    + [Inserire una risorsa condivisa](integrations/using/inserting-a-shared-asset.md)
-  + Adobe Experience Manager {#adobe-experience-manager}
-    + [Configurare l’integrazione](integrations/using/configuring-the-integration.md)
-  + Adobe Target {#adobe-target}
-    + [Configurare l’integrazione con [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
-+ [Automatizzare con i flussi di lavoro](workflow/using/about-workflows.md)
-+ Gestire le offerte {#managing-offers}
-  + Introduzione all’interazione {#interaction-overview}
-    + [Gestione dell’interazione e delle offerte](interaction/using/interaction-and-offer-management.md)
-  + Gestire un catalogo delle offerte {#managing-an-offer-catalog}
-    + [Approvare e attivare un’offerta](interaction/using/approving-and-activating-an-offer.md)
-    + [Gestire i modelli di offerta](interaction/using/managing-offer-templates.md)
-    + [Gestire la presentazione delle offerte](interaction/using/managing-offer-presentation.md)
-  + Simulazione di offerte{#simulating-offers}
-    + [Informazioni sulla simulazione delle offerte](interaction/using/about-offers-simulation.md)
-    + [Impostazioni di esecuzione](interaction/using/execution-settings.md)
-    + [Ambito della simulazione](interaction/using/simulation-scope.md)
-    + [Tracciamento della simulazione](interaction/using/simulation-tracking.md)
-  + Parametri avanzati {#advanced-parameters}
-    + [Utilizzare parametri avanzati](interaction/using/using-advanced-parameters.md)
-    + [Dati aggiuntivi](interaction/using/additional-data.md)
-    + [Estensione esemplificativa](interaction/using/extension-example.md)
-    + [Creare un ambiente di test](interaction/using/creating-a-test-environment.md)
-    + [Modificare il comportamento standard del motore](interaction/using/hooks.md)
-    + [Architetture distribuite](interaction/using/distributed-architectures.md)
-    + [Configurazione del buffer dati](installation/using/interaction-data-buffer.md)
-  + Caso d’uso {#case-study}
-    + [Regole di presentazione](interaction/using/presentation-rules.md)
-    + [Offerte su un canale in entrata](interaction/using/offers-on-an-inbound-channel.md)
-    + [Offerte su un canale in uscita](interaction/using/offers-on-an-outbound-channel.md)
-+ Messaggistica transazionale {#transactional-messaging}
-  + [Introduzione alla messaggistica transazionale](message-center/using/about-transactional-messaging.md)
-  + Configurare la messaggistica transazionale {#configure-transactional-messaging}
-    + [Architettura della messaggistica transazionale](message-center/using/transactional-messaging-architecture.md)
-    + [Configurare le istanze](message-center/using/configuring-instances.md)
-    + [Configurazioni aggiuntive](message-center/using/additional-configurations.md)
-  + Modelli di messaggi {#message-templates}
-    + [Testare modelli di messaggi](message-center/using/testing-message-templates.md)
-  + [Caso d’uso](message-center/using/transactional-email-with-attachments.md)
-+ Integrare con i social media {#integrating-with-social-media}
-  + [Informazioni sul social marketing](social/using/about-social-marketing.md)
-+ Guida all’installazione e alla configurazione {#installing-campaign-classic}
++ Installare e configurare {#installing-campaign-classic}
   + Principi di architettura {#architecture-and-hosting-models}
     + [Architettura generale](installation/using/general-architecture.md)
     + Modelli di hosting{#hosting-models-lp}
@@ -269,7 +75,7 @@ ht-degree: 100%
   + Impostazioni di sicurezza e privacy {#security-privacy}
     + [Lista di controllo per sicurezza e privacy](installation/using/get-started-security-privacy.md)
     + [Personalizzazione e privacy](installation/using/privacy.md)
-    + [Gestione degli accessi sicuri](installation/using/access-management.md)
+    + [Gestione degli accessi sicuri](installation/using/secure-access-management.md)
     + [Linee guida per scripting e codifica](installation/using/scripting-coding-guidelines.md)
     + [Rete, database e SSL/TLS](installation/using/network-database.md)
     + [Impostazioni di sicurezza del server](installation/using/server-configuration.md)
@@ -347,16 +153,26 @@ ht-degree: 100%
     + [Elenco delle opzioni di Campaign](installation/using/configuring-campaign-options.md)
     + {hide-from-toc}[Disinstallare Campaign](installation/using/uninstalling-campaign.md)
     + [Installare nuovi font](installation/using/install-fonts.md)
-+ Guida al monitoraggio {#monitoring-campaign-classic}
++ Guida alla migrazione {#migrating-to-a-new-version}
+  + {hide-from-toc}[Introduzione ad Adobe Campaign v7](migration/using/about-migration.md)
+  + Procedura di migrazione {#migration-procedure}
+    + {hide-from-toc}[Prerequisiti](migration/using/before-starting-migration.md)
+    + {hide-from-toc}[Informazioni sui test di migrazione](migration/using/testing-the-migration.md)
+    + {hide-from-toc}[Adattare la configurazione](migration/using/configuring-your-platform.md)
+  + Iniziare la migrazione {#migrating-to-adobe-campaign-7}
+    + {hide-from-toc}[Migrare una piattaforma Microsoft Windows](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
+    + {hide-from-toc}[Migrare una piattaforma Linux](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
+  + {hide-from-toc}[Procedura di rollback](migration/using/about-rollback.md)
++ Funzionamento e monitoraggio {#monitoring-campaign-classic}
   + Introduzione {#introduction}
     + [Premessa](production/using/foreword.md)
-    + [Architettura generale](production/using/general-architecture.md)
+    + [Architettura e porte aperte](production/using/architecture-and-open-ports.md)
     + [Linee guida per il monitoraggio](production/using/monitoring-guidelines.md)
   + Procedure di produzione {#production-procedures}
     + [Principio di configurazione](production/using/configuration-principle.md)
     + [Principio di funzionamento](production/using/operating-principle.md)
     + [Amministrazione](production/using/administration.md)
-    + [Configurazione](production/using/configuration.md)
+    + [Porta Syslogd e aree di protezione](production/using/syslogd-port-and-security-zones.md)
     + [File di registro](production/using/log-files.md)
     + [Monitorare i processi](production/using/monitoring-processes.md)
     + [Comandi abituali](production/using/usual-commands.md)
@@ -366,7 +182,7 @@ ht-degree: 100%
     + [Duplicazione di ambienti](production/using/duplicating-environments.md)
     + [Flusso di lavoro di pulizia del database](production/using/database-cleanup-workflow.md)
   + Aggiornare Adobe Campaign {#updating-adobe-campaign}
-    + [Introduzione](production/using/introduction.md)
+    + [Informazioni sull’aggiornamento di Campaign](production/using/introduction.md)
     + [Esecuzione di un aggiornamento della build](production/using/build-upgrade.md)
     + [Procedura di aggiornamento (on-premise)](production/using/upgrading.md)
     + [Passare a Unicode](production/using/switching-to-unicode.md)
@@ -402,7 +218,7 @@ ht-degree: 100%
       + [Traccia dello stack in Linux](production/using/stack-trace-in-linux.md)
       + [Comportamento JSP](production/using/jsp-behavior.md)
       + [Individuazione della versione Tomcat](production/using/locate-tomcat-version.md)
-+ Guida per sviluppatori {#configuring-campaign-classic}
++ Sviluppare ed estendere {#configuring-campaign-classic}
   + [Pacchetti di dati](platform/using/working-with-data-packages.md)
   + Modello dati {#data-model}
     + [Descrizione del modello dati](configuration/using/data-model-description.md)
@@ -413,7 +229,7 @@ ht-degree: 100%
     + [Mappatura del database](configuration/using/database-mapping.md)
     + [Gestione delle chiavi](configuration/using/database-keys.md)
     + Elementi e attributi {#elements-attributes}
-      + [Introduzione](configuration/using/schema-introduction.md)
+      + [Introduzione a elementi e attributi](configuration/using/schema-introduction.md)
       + [Attributo](configuration/using/schema/attribute.md)
       + [Elemento “compute-string”](configuration/using/schema/compute-string.md)
       + [Elemento “condizione”](configuration/using/schema/condition.md)
@@ -472,16 +288,198 @@ ht-degree: 100%
     + [Inserimento di tag nel sito](configuration/using/inserting-tags-in-your-site.md)
     + [Raccolta di tutte le visite](configuration/using/collecting-all-visits.md)
     + [Tracciamento anonimo](configuration/using/anonymous-tracking.md)
-+ Guida alla migrazione {#migrating-to-a-new-version}
-  + {hide-from-toc}[Introduzione ad Adobe Campaign v7](migration/using/about-migration.md)
-  + Procedura di migrazione {#migration-procedure}
-    + {hide-from-toc}[Prerequisiti](migration/using/before-starting-migration.md)
-    + {hide-from-toc}[Informazioni sui test di migrazione](migration/using/testing-the-migration.md)
-    + {hide-from-toc}[Adattare la configurazione](migration/using/configuring-your-platform.md)
-  + Iniziare la migrazione {#migrating-to-adobe-campaign-7}
-    + {hide-from-toc}[Migrare una piattaforma Microsoft Windows](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
-    + {hide-from-toc}[Migrare una piattaforma Linux](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
-  + {hide-from-toc}[Procedura di rollback](migration/using/about-rollback.md)
++ Creare e inviare messaggi {#sending-messages}
+  + [Introduzione ai messaggi](delivery/using/communication-channels.md)
+  + {hide-from-toc}[Impostazioni di consegna - NASCOSTO](delivery/using/delivery-settings.md)
+  + [Inviare e-mail](delivery/using/about-email-channel.md)
+  + Inviare SMS {#sending-messages-on-mobiles}
+    + Configurare il canale SMS {#sms-set-up}
+      + [Configurare gli SMS in un’istanza autonoma](delivery/using/sms-set-up.md)
+      + [Configurare gli SMS in un’infrastruttura mid-sourcing](delivery/using/sms-set-up-mid.md)
+      + [Protocollo e impostazioni del connettore SMS](delivery/using/sms-protocol.md)
+      + [Configurazione aggiuntiva](delivery/using/sms-send.md)
+      + [Risoluzione dei problemi relativi agli SMS](delivery/using/troubleshooting-sms.md)
+  + [Inviare notifiche push](delivery/using/about-mobile-app-channel.md)
+  + Inviare notifiche push {#sending-push-notifications}
+    + {hide-from-toc}[Risoluzione dei problemi - NASCOSTO](delivery/using/push-troubleshooting.md)
+  + [Inviare direct mail](delivery/using/about-direct-mail-channel.md)
+  + Personalizzare le consegne {#personalizing-deliveries}
+    + [Informazioni sulla personalizzazione](delivery/using/about-personalization.md)
+  + Utilizzare indirizzi seed {#using-seed-addresses}
+    + [Caso d’uso: selezionare gli indirizzi seed in base ai criteri](delivery/using/use-case-selecting-seed-addresses-on-criteria.md)
+    + [Caso d’uso: configurare la sostituzione del campo](delivery/using/use-case-configuring-the-field-substitution.md)
+  + Test A/B {#a-b-testing}
+    + [Introduzione ai test A/B](delivery/using/get-started-a-b-testing.md)
+    + [Configurare il test A/B](delivery/using/configuring-a-b-testing.md)
+    + Caso d’uso {#use-case}
+      + [Informazioni su questo caso d’uso](delivery/using/a-b-testing-use-case.md)
+      + [Creare un flusso di lavoro di targeting](delivery/using/a-b-testing-uc-targeting-workflow.md)
+      + [Configurare i campioni di popolazione](delivery/using/a-b-testing-uc-population-samples.md)
+      + [Creare modelli di consegna](delivery/using/a-b-testing-uc-delivery-templates.md)
+      + [Configurare le consegne](delivery/using/a-b-testing-uc-configuring-deliveries.md)
+      + [Creare lo script](delivery/using/a-b-testing-uc-script.md)
+      + [Definire la consegna finale](delivery/using/a-b-testing-uc-final-delivery.md)
+      + [Avviare il flusso di lavoro](delivery/using/a-b-testing-uc-start-workflow.md)
+      + [Analizzare il risultato](delivery/using/a-b-testing-uc-analyzing.md)
+  + Servizi e abbonamenti {#subscriptions-and-referrals}
+    + [Informazioni su servizi e abbonamenti](delivery/using/about-services-and-subscriptions.md)
+    + [Gestire gli abbonamenti](delivery/using/managing-subscriptions.md)
+    + [Marketing virale e social marketing](delivery/using/viral-and-social-marketing.md)
+  + Monitorare le consegne {#monitoring-deliveries}
+    + [Monitorare le prestazioni delle consegne](delivery/using/about-delivery-monitoring.md)
+    + [Tracciare i messaggi](delivery/using/about-message-tracking.md)
+    + [Prestazioni delle consegne e risoluzione dei problemi](delivery/using/delivery-performance-troubleshooting.md)
+    + [Errori di consegna e gestione della quarantena](delivery/using/delivery-failures-quarantine.md)
+    + [Avanzato: personalizza i registri di consegna](delivery/using/customize-delivery-logs.md)
+  + Gestione della recapitabilità {#deliverability-management}
+    + [Che cos’è il recapito messaggi](delivery/using/about-deliverability.md)
+    + [Rendering nella casella in entrata](delivery/using/inbox-rendering.md)
+    + [Risoluzione dei problemi](delivery/using/deliverability-faq.md)
+  + Modulo di gestione dei contenuti {#content-management}
+    + [Informazioni sulla gestione dei contenuti](delivery/using/about-content-management.md)
+    + [Risorse e principi di gestione dei contenuti](delivery/using/content-manager-resources-and-principles.md)
+    + [Caso d’uso: creazione di gestione dei contenuti](delivery/using/use-case-creating-content-management.md)
+    + [Schemi di dati](delivery/using/data-schemas.md)
+    + [Moduli di input](delivery/using/input-forms.md)
+    + [Formattazione](delivery/using/formatting.md)
+    + [Modelli di pubblicazione](delivery/using/publication-templates.md)
+    + [Utilizzare un modello di contenuto](delivery/using/using-a-content-template.md)
+    + [Arricchire il contenuto](delivery/using/enriching-content.md)
+    + [Automatizzare tramite flussi di lavoro](delivery/using/automating-via-workflows.md)
++ Messaggistica transazionale {#transactional-messaging}
+  + [Introduzione alla messaggistica transazionale](message-center/using/about-transactional-messaging.md)
+  + Configurare la messaggistica transazionale {#configure-transactional-messaging}
+    + [Architettura della messaggistica transazionale](message-center/using/transactional-messaging-architecture.md)
+    + [Configurare le istanze](message-center/using/configuring-instances.md)
+    + [Configurazioni aggiuntive](message-center/using/additional-configurations.md)
+  + Modelli di messaggi {#message-templates}
+    + [Testare modelli di messaggi](message-center/using/testing-message-templates.md)
+  + [Caso d’uso](message-center/using/transactional-email-with-attachments.md)
++ Progettare contenuti web {#designing-content}
+  + Applicazioni web {#web-applications}
+    + [Introduzione alle applicazioni web](web/using/about-web-applications.md)
+    + [Creare una nuova applicazione web](web/using/creating-a-new-web-application.md)
+    + [Progettare un’applicazione web](web/using/designing-a-web-application.md)
+    + [Casi d’uso: creare panoramiche](web/using/use-cases-creating-overviews.md)
+    + [Progettare un’applicazione web](web/using/translating-a-web-application.md)
+    + [Tracciare le visite in un’applicazione web](web/using/tracking-a-web-application.md)
+    + [Rinuncia al tracciamento delle applicazioni web](web/using/web-application-tracking-opt-out.md)
+  + Modificare i contenuti HTML {#editing-html-content}
+    + [Introduzione all’editor HTML](web/using/about-campaign-html-editor.md)
+    + [Gestione dei modelli](web/using/template-management.md)
+    + [Interfaccia dell’editor di contenuti](web/using/content-editor-interface.md)
+    + [Modificare i contenuti](web/using/editing-content.md)
+    + [Best practice per la modifica dei contenuti](web/using/content-editing-best-practices.md)
+    + [Creare una pagina di destinazione](web/using/creating-a-landing-page.md)
+    + [Caso d’uso: creare una consegna e-mail](web/using/use-case-creating-an-email-delivery.md)
+  + Moduli web {#web-forms}
+    + [Introduzione ai moduli web](web/using/about-web-forms.md)
+    + [Usare un modello per moduli web](web/using/using-a-web-form-template.md)
+    + [Aggiungere campi a un modulo web](web/using/adding-fields-to-a-web-form.md)
+    + [Elementi statici in un modulo web](web/using/static-elements-in-a-web-form.md)
+    + [Definire il layout dei moduli web](web/using/defining-web-forms-layout.md)
+    + [Rendering di un modulo](web/using/form-rendering.md)
+    + [Definire la sequenza di pagine](web/using/defining-web-forms-page-sequencing.md)
+    + [Salvare le risposte ai moduli web](web/using/web-forms-answers.md)
+    + [Pubblicare un modulo web](web/using/publishing-a-web-form.md)
+    + [Definire le proprietà dei moduli web](web/using/defining-web-forms-properties.md)
+    + [Pubblicare un modulo web](web/using/translating-a-web-form.md)
+    + [Casi d’uso: moduli web](web/using/use-cases-web-forms.md)
++ Creazione di sondaggi online {#online-surveys}
+  + [Introduzione ai sondaggi](surveys/using/about-surveys.md)
+  + [Passaggi chiave per creare un sondaggio](surveys/using/getting-started-with-surveys.md)
+  + [Progettare un sondaggio](surveys/using/building-a-survey.md)
+  + [Gestire le risposte](surveys/using/managing-answers.md)
+  + [Pubblicare, tracciare e utilizzare i dati raccolti](surveys/using/publish-track-and-use-collected-data.md)
+  + [Configurare i sondaggi](surveys/using/configuring-surveys.md)
+  + [Caso d’uso: creare un modulo di riferimento](surveys/using/use-case-creating-a-refer-a-friend-form.md)
+  + [Caso d’uso: visualizzare un rapporto sulle risposte a un sondaggio online](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
++ Gestire le offerte {#managing-offers}
+  + Introduzione all’interazione {#interaction-overview}
+    + [Gestione dell’interazione e delle offerte](interaction/using/interaction-and-offer-management.md)
+  + Gestire un catalogo delle offerte {#managing-an-offer-catalog}
+    + [Approvare e attivare un’offerta](interaction/using/approving-and-activating-an-offer.md)
+    + [Gestire i modelli di offerta](interaction/using/managing-offer-templates.md)
+    + [Gestire la presentazione delle offerte](interaction/using/managing-offer-presentation.md)
+  + Simulazione di offerte{#simulating-offers}
+    + [Informazioni sulla simulazione delle offerte](interaction/using/about-offers-simulation.md)
+    + [Impostazioni di esecuzione](interaction/using/execution-settings.md)
+    + [Ambito della simulazione](interaction/using/simulation-scope.md)
+    + [Tracciamento della simulazione](interaction/using/simulation-tracking.md)
+  + Parametri avanzati {#advanced-parameters}
+    + [Utilizzare parametri avanzati](interaction/using/using-advanced-parameters.md)
+    + [Dati aggiuntivi](interaction/using/additional-data.md)
+    + [Estensione esemplificativa](interaction/using/extension-example.md)
+    + [Creare un ambiente di test](interaction/using/creating-a-test-environment.md)
+    + [Modificare il comportamento standard del motore](interaction/using/hooks.md)
+    + [Architetture distribuite](interaction/using/distributed-architectures.md)
+    + [Configurazione del buffer dati](installation/using/interaction-data-buffer.md)
+  + Caso d’uso {#case-study}
+    + [Regole di presentazione](interaction/using/presentation-rules.md)
+    + [Offerte su un canale in entrata](interaction/using/offers-on-an-inbound-channel.md)
+    + [Offerte su un canale in uscita](interaction/using/offers-on-an-outbound-channel.md)
++ Response Manager {#response-manager}
+  + [Introduzione a Gestione risposte](response/using/about-response-manager.md)
+  + [Configurare Response Manager](response/using/configure-response-manager.md)
+  + [Modelli di ipotesi](response/using/hypothesis-templates.md)
+  + [Creare ipotesi](response/using/creating-hypotheses.md)
+  + [Tracciamento delle ipotesi](response/using/hypothesis-tracking.md)
++ Progettare e condividere i rapporti {#reporting}
+  + Introduzione al reporting {#reporting-in-adobe-campaign}
+    + [Best practice per il reporting](reporting/using/best-practices.md)
+  + Accedere ai rapporti incorporati {#accessing-built-in-reports}
+    + [Informazioni sui rapporti incorporati](reporting/using/about-campaign-built-in-reports.md)
+  + Analizzare le popolazioni {#analyzing-populations}
+    + [Che cos’è l’analisi descrittiva](reporting/using/about-descriptive-analysis.md)
+    + [Creare il primo rapporto di analisi descrittiva](reporting/using/using-the-descriptive-analysis-wizard.md)
+    + [Gestire e configurare il rapporto di analisi](reporting/using/processing-a-report.md)
+    + [Casi di utilizzo dei rapporti di analisi](reporting/using/use-cases.md)
+  + Creare nuovi rapporti {#creating-new-reports}
+    + [Passaggi chiave per progettare un rapporto](reporting/using/about-reports-creation-in-campaign.md)
+    + [Creare un nuovo rapporto](reporting/using/creating-a-new-report.md)
+    + [Raccogliere dati da analizzare](reporting/using/collecting-data-to-analyze.md)
+    + [Utilizzare il contesto](reporting/using/using-the-context.md)
+    + [Creare una tabella](reporting/using/creating-a-table.md)
+    + [Creare un grafico](reporting/using/creating-a-chart.md)
+    + [Layout degli elementi](reporting/using/element-layout.md)
+    + [Definire un contenuto condizionale](reporting/using/defining-a-conditional-content.md)
+    + [Funzionalità avanzate](reporting/using/advanced-functionalities.md)
+    + [Proprietà del rapporto](reporting/using/properties-of-the-report.md)
+    + [Configurare l’accesso al rapporto](reporting/using/configuring-access-to-the-report.md)
+    + [Azioni sui rapporti](reporting/using/actions-on-reports.md)
+  + [Progettare rapporti con cubi](reporting/using/ac-cubes.md)
++ Integrare con Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
+  + [Introduzione alle integrazioni con Campaign](integrations/using/about-campaign-integrations.md)
+  + [Creare un account tecnico Adobe personale](integrations/using/oauth-technical-account.md)
+  + Trigger di Adobe Experience Cloud {#experience-triggers}
+    + [Utilizzare  [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
+    + [Configurare la pipeline](integrations/using/configuring-pipeline.md)
+    + [Configurare gli eventi per l’implementazione personalizzata](integrations/using/events.md)
+    + [Monitoraggio della pipeline](integrations/using/pipeline-monitoring.md)
+    + [Risoluzione dei problemi relativi alla pipeline](integrations/using/pipeline-troubleshooting.md)
+  + Origini e destinazioni Adobe Experience Platform {#aep-sources-destinations}
+    + [Utilizzare origini e destinazioni](integrations/using/get-started-sources-destinations.md)
+    + [Inserire il pubblico di Adobe Experience Platform in Campaign](integrations/using/ingest-aep-data.md)
+    + [Esportare dati da Campaign ad Adobe Experience Platform](integrations/using/export-campaign-data.md)
+  + Connettore Adobe Analytics{#analytics-connector}
+    + [Introduzione al connettore Adobe Analytics](integrations/using/gs-aa.md)
+    + [Provisioning del connettore Adobe Analytics](integrations/using/adobe-analytics-provisioning.md)
+  + Condivisione del pubblico {#audience-sharing}
+    + [Condividere tipi di pubblico con [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
+    + [Inviare una richiesta ad Adobe](integrations/using/submitting-request-to-adobe.md)
+    + [Configurare l’integrazione dei tipi di pubblico condivisi in [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
+    + {hide-from-toc}[Risoluzione dei problemi](integrations/using/integrations-troubleshooting.md)
+    + [Importare ed esportare tipi di pubblico](integrations/using/importing-and-exporting-audiences.md)
+  + Condivisione di risorse {#asset-sharing}
+    + [Condividere risorse con [!DNL Adobe Experience Cloud]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
+    + [Configurare l’accesso a [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
+    + [Inserire una risorsa condivisa](integrations/using/inserting-a-shared-asset.md)
+  + Adobe Experience Manager {#adobe-experience-manager}
+    + [Configurare l’integrazione](integrations/using/configuring-the-integration.md)
+  + Adobe Target {#adobe-target}
+    + [Configurare l’integrazione con [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
++ Integrare con i social media {#integrating-with-social-media}
+  + [Informazioni sul social marketing](social/using/about-social-marketing.md)
 + Note tecniche {#technotes}
   + [Consigli sui requisiti hardware in base alle dimensioni](technotes/using/hardware-sizing.md)
   + [Inviare con MTA avanzato](delivery/using/sending-with-enhanced-mta.md)
@@ -500,7 +498,7 @@ ht-degree: 100%
     + [Protezione della privacy della posta su Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
     + [Aggiornamento del certificato iOS](technotes/using/ios-certificate-update.md)
   + Migrazione ad Adobe Managed Services{#dc-migration}
-    + [Migrazione a cloud pubblico](technotes/using/dc-migration.md)
-    + [Domande frequenti](technotes/using/dc-migration-faq.md)
+    + {hide-from-toc}[Migrazione a cloud pubblico](technotes/using/dc-migration.md)
+    + {hide-from-toc}[Domande frequenti](technotes/using/dc-migration-faq.md)
   + [Funzioni basate su GCM](technotes/using/gcm-functions.md)
 + [Pannello di controllo Campaign](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=it)

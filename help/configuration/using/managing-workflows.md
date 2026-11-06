@@ -25,9 +25,9 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '146'
 ht-degree: 4%
 ---
 # Gestione dei flussi di lavoro{#managing-workflows}
@@ -42,6 +42,6 @@ Basando i nuovi flussi di lavoro su un modello creato di recente, la tabella per
 
 Tutte le attività utilizzate nel flusso di lavoro utilizzeranno quindi la tabella personalizzata senza richiedere alcuna configurazione manuale aggiuntiva.
 
-Per ulteriori informazioni sui flussi di lavoro, consulta [questa sezione](../../workflow/using/about-workflows.md).
+Per ulteriori informazioni sui flussi di lavoro, consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} (documentazione di Campaign v8).
 
 ![](assets/cfg_external_table_workflow.png)

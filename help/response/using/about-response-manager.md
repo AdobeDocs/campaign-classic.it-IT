@@ -24,7 +24,7 @@ subfeature_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 4%
@@ -57,7 +57,7 @@ Ogni ipotesi è collegata a una singola tabella di transazioni. Una consegna o u
 
 ## Passaggi di implementazione {#method}
 
-Prima di iniziare a utilizzare Gestione risposte, fare riferimento a [Configurazione](configuration.md) ed eseguire le configurazioni necessarie.
+Prima di iniziare a utilizzare Gestione risposte, fare riferimento a [Configurazione](configure-response-manager.md) ed eseguire le configurazioni necessarie.
 
 Per avviare un’ipotesi su una consegna o un’offerta, è necessario definirne il contesto in un modello che verrà utilizzato per ogni ipotesi creata.
 

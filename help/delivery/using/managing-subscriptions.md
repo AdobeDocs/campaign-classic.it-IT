@@ -38,10 +38,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
+source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
 workflow-type: tm+mt
-source-wordcount: '1125'
-ht-degree: 2%
+source-wordcount: '1138'
+ht-degree: 3%
 ---
 # Gestire le iscrizioni{#managing-subscriptions}
 
@@ -166,7 +166,7 @@ Per registrare i destinatari di un servizio informazioni, è possibile:
 
   ![](assets/s_ncs_user_subscribe_from_wf.png)
 
-  I flussi di lavoro e la relativa modalità di utilizzo sono descritti in [questa sezione](../../workflow/using/about-workflows.md).
+  I flussi di lavoro e le relative modalità di utilizzo sono descritti in [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} (documentazione di Campaign v8).
 
 ### Annullamento dell’abbonamento di un destinatario da un servizio {#unsubscribing-a-recipient-from-a-service}
 

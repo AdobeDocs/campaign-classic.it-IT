@@ -45,24 +45,22 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
 workflow-type: tm+mt
-source-wordcount: '4118'
+source-wordcount: '3891'
 ht-degree: 1%
 ---
 # Best practice per i modelli di dati{#data-model-best-practices}
 
 Questo documento illustra i consigli chiave durante la progettazione del modello dati di Adobe Campaign.
 
+Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sulle best practice per i modelli di dati, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/implement/datamodel-best-practices){target=_blank}.
+
+[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/config/implement/datamodel-best-practices){target=_blank}
+
 Per informazioni sulle tabelle integrate di Campaign e sulla loro interazione, consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/datamodel){target="_blank"} (documentazione di Campaign v8).
 
 Consulta [questa documentazione](../../configuration/using/about-schema-reference.md) per iniziare a utilizzare gli schemi di Campaign. Scopri come configurare gli schemi di estensione per estendere il modello dati concettuale del database di Adobe Campaign in [questo documento](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"} (documentazione di Campaign v8).
-
-## Panoramica {#overview}
-
-Il sistema Adobe Campaign è estremamente flessibile e può essere esteso oltre l’implementazione iniziale. Tuttavia, anche se le possibilità sono infinite, è fondamentale prendere decisioni sagge e creare solide basi per iniziare a progettare il modello di dati.
-
-Questo documento fornisce casi d’uso comuni e best practice per scoprire come progettare correttamente lo strumento Adobe Campaign.
 
 ## Architettura del modello dati {#data-model-architecture}
 
@@ -83,22 +81,6 @@ Il modello dati predefinito di Adobe Campaign è presentato in [questo documento
 >[!NOTE]
 >
 >Adobe Campaign Classic consente di creare una tabella cliente personalizzata. Tuttavia, nella maggior parte dei casi, si consiglia di sfruttare la [tabella dei destinatari](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} standard (documentazione di Campaign v8) che include già tabelle e funzionalità aggiuntive predefinite.
-
-### Dati per Adobe Campaign {#data-for-campaign}
-
-Quali dati devono essere inviati ad Adobe Campaign? È fondamentale determinare i dati necessari per le attività di marketing.
-
->[!NOTE]
->
->Adobe Campaign non è né un data warehouse né uno strumento di reporting. Pertanto, non cercare di importare in Adobe Campaign tutti i possibili clienti e le relative informazioni associate, né importare dati che verranno utilizzati solo per creare rapporti.
-
-Per decidere se un attributo sia necessario o meno in Adobe Campaign, chiediti se rientra in una di queste categorie:
-
-* Attributo utilizzato per **segmentazione**
-* Attributo utilizzato per **processi di gestione dati** (ad esempio, calcolo aggregato)
-* Attributo utilizzato per **personalization**
-
-Se non rientra in nessuno di questi, molto probabilmente non avrai bisogno di questo attributo in Adobe Campaign.
 
 ### Scelta dei tipi di dati {#data-types}
 
@@ -313,12 +295,6 @@ Per garantire prestazioni migliori in qualsiasi momento, segui le best practice 
 * Assicurati che nessuna della campagna giornaliera venga eseguita durante il processo di importazione o quando viene eseguito un processo manuale.
 * Utilizzare una o più tabelle di riferimento anziché duplicare un campo in ogni riga. Quando si utilizzano coppie chiave/valore, è preferibile scegliere una chiave numerica.
 * Una stringa breve rimane accettabile. Se in un sistema esterno sono già presenti tabelle di riferimento, il riutilizzo delle stesse faciliterà l’integrazione dei dati con Adobe Campaign.
-
-### Relazioni uno-a-molti {#one-to-many-relationships}
-
-* La progettazione dei dati influisce su usabilità e funzionalità. Se progetti il modello dati con numerose relazioni uno-a-molti, per gli utenti diventa più difficile creare una logica significativa nell’applicazione. La logica del filtro &quot;uno-a-molti&quot; può essere difficile da costruire e comprendere correttamente per gli esperti di marketing non tecnici.
-* È utile disporre di tutti i campi essenziali in una tabella, in quanto consente agli utenti di creare query in modo più semplice. A volte è utile anche per le prestazioni duplicare alcuni campi tra le tabelle, se si può evitare un join.
-* Alcune funzionalità integrate non potranno fare riferimento a relazioni uno-a-molti, ad esempio Formula di ponderazione delle offerte e Consegne.
 
 ## Tabelle grandi {#large-tables}
 
