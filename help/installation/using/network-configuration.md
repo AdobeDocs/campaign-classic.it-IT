@@ -22,9 +22,9 @@ feature_v2:
 subfeature_v2:
   - id: e656c701-3899-4db3-989c-de0980ddfffa
     internal-label: Installation
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '726'
 ht-degree: 4%
 ---
 # Configurazione della rete{#network-configuration}
@@ -236,7 +236,7 @@ Questo server ospita moduli web, pagine mirror e così via. Le seguenti porte de
 
 ## Integrazione con Adobe Experience Manager {#integration-with-adobe-experience-manager}
 
-L’integrazione tra Adobe Campaign e Adobe Experience Manager richiede l’apertura di più porte se l’installazione è &quot;on-premise&quot;. Per ulteriori informazioni sulla configurazione di questa integrazione, consulta la [documentazione dettagliata](../../integrations/using/about-adobe-experience-manager.md).
+L’integrazione tra Adobe Campaign e Adobe Experience Manager richiede l’apertura di più porte se l’installazione è &quot;on-premise&quot;. Per ulteriori informazioni sulla configurazione di questa integrazione, consulta la [documentazione dettagliata](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aem){target="_blank"} (documentazione di Campaign v8).
 
 <table> 
  <tbody> 
