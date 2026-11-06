@@ -8,10 +8,10 @@ user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: 186021e65b592522f3c491fb518594b5bac5d003
+source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
 workflow-type: tm+mt
-source-wordcount: '1563'
-ht-degree: 98%
+source-wordcount: '1577'
+ht-degree: 97%
 ---
 
 # Documentazione di Adobe Campaign Classic v7 {#using}
@@ -75,7 +75,7 @@ ht-degree: 98%
   + Impostazioni di sicurezza e privacy {#security-privacy}
     + [Lista di controllo per sicurezza e privacy](installation/using/get-started-security-privacy.md)
     + [Personalizzazione e privacy](installation/using/privacy.md)
-    + [Gestione degli accessi sicuri](installation/using/access-management.md)
+    + [Gestione degli accessi sicuri](installation/using/secure-access-management.md)
     + [Linee guida per scripting e codifica](installation/using/scripting-coding-guidelines.md)
     + [Rete, database e SSL/TLS](installation/using/network-database.md)
     + [Impostazioni di sicurezza del server](installation/using/server-configuration.md)
@@ -166,13 +166,13 @@ ht-degree: 98%
 + Funzionamento e monitoraggio {#monitoring-campaign-classic}
   + Introduzione {#introduction}
     + [Premessa](production/using/foreword.md)
-    + [Architettura generale](production/using/general-architecture.md)
+    + [Architettura e porte aperte](production/using/architecture-and-open-ports.md)
     + [Linee guida per il monitoraggio](production/using/monitoring-guidelines.md)
   + Procedure di produzione {#production-procedures}
     + [Principio di configurazione](production/using/configuration-principle.md)
     + [Principio di funzionamento](production/using/operating-principle.md)
     + [Amministrazione](production/using/administration.md)
-    + [Configurazione](production/using/configuration.md)
+    + [Porta Syslogd e aree di protezione](production/using/syslogd-port-and-security-zones.md)
     + [File di registro](production/using/log-files.md)
     + [Monitorare i processi](production/using/monitoring-processes.md)
     + [Comandi abituali](production/using/usual-commands.md)
@@ -182,7 +182,7 @@ ht-degree: 98%
     + [Duplicazione di ambienti](production/using/duplicating-environments.md)
     + [Flusso di lavoro di pulizia del database](production/using/database-cleanup-workflow.md)
   + Aggiornare Adobe Campaign {#updating-adobe-campaign}
-    + [Introduzione](production/using/introduction.md)
+    + [Informazioni sull’aggiornamento di Campaign](production/using/introduction.md)
     + [Esecuzione di un aggiornamento della build](production/using/build-upgrade.md)
     + [Procedura di aggiornamento (on-premise)](production/using/upgrading.md)
     + [Passare a Unicode](production/using/switching-to-unicode.md)
@@ -229,7 +229,7 @@ ht-degree: 98%
     + [Mappatura del database](configuration/using/database-mapping.md)
     + [Gestione delle chiavi](configuration/using/database-keys.md)
     + Elementi e attributi {#elements-attributes}
-      + [Introduzione](configuration/using/schema-introduction.md)
+      + [Introduzione a elementi e attributi](configuration/using/schema-introduction.md)
       + [Attributo](configuration/using/schema/attribute.md)
       + [Elemento “compute-string”](configuration/using/schema/compute-string.md)
       + [Elemento “condizione”](configuration/using/schema/condition.md)
@@ -301,7 +301,7 @@ ht-degree: 98%
       + [Risoluzione dei problemi relativi agli SMS](delivery/using/troubleshooting-sms.md)
   + [Inviare notifiche push](delivery/using/about-mobile-app-channel.md)
   + Inviare notifiche push {#sending-push-notifications}
-    + {hide-from-toc}[Risoluzione dei problemi - NASCOSTO](delivery/using/troubleshooting.md)
+    + {hide-from-toc}[Risoluzione dei problemi - NASCOSTO](delivery/using/push-troubleshooting.md)
   + [Inviare direct mail](delivery/using/about-direct-mail-channel.md)
   + Personalizzare le consegne {#personalizing-deliveries}
     + [Informazioni sulla personalizzazione](delivery/using/about-personalization.md)
@@ -420,7 +420,7 @@ ht-degree: 98%
     + [Offerte su un canale in uscita](interaction/using/offers-on-an-outbound-channel.md)
 + Response Manager {#response-manager}
   + [Introduzione a Gestione risposte](response/using/about-response-manager.md)
-  + [Configurazione](response/using/configuration.md)
+  + [Configurare Response Manager](response/using/configure-response-manager.md)
   + [Modelli di ipotesi](response/using/hypothesis-templates.md)
   + [Creare ipotesi](response/using/creating-hypotheses.md)
   + [Tracciamento delle ipotesi](response/using/hypothesis-tracking.md)
@@ -468,7 +468,7 @@ ht-degree: 98%
     + [Condividere tipi di pubblico con [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
     + [Inviare una richiesta ad Adobe](integrations/using/submitting-request-to-adobe.md)
     + [Configurare l’integrazione dei tipi di pubblico condivisi in [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
-    + {hide-from-toc}[Risoluzione dei problemi](integrations/using/troubleshooting.md)
+    + {hide-from-toc}[Risoluzione dei problemi](integrations/using/integrations-troubleshooting.md)
     + [Importare ed esportare tipi di pubblico](integrations/using/importing-and-exporting-audiences.md)
   + Condivisione di risorse {#asset-sharing}
     + [Condividere risorse con [!DNL Adobe Experience Cloud]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)

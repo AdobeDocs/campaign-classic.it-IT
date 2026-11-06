@@ -27,7 +27,7 @@ subfeature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 13%
@@ -75,7 +75,7 @@ Elenco dei moduli interessati da problemi frequenti:
   <tr> 
    <td> syslogd </td> 
    <td> Scrittura registro<br /> </td> 
-   <td> Se nei file di registro mancano alcuni registri, verificare che il modulo utilizzi la porta 6666. Fare riferimento a <a href="../../production/using/general-architecture.md#list-of-open-ports" target="_blank">Elenco di porte aperte</a>.<br /> </td> 
+   <td> Se nei file di registro mancano alcuni registri, verificare che il modulo utilizzi la porta 6666. Fare riferimento a <a href="../../production/using/architecture-and-open-ports.md#list-of-open-ports" target="_blank">Elenco di porte aperte</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> tracciamento </td> 

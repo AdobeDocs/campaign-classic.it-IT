@@ -25,7 +25,7 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a26a9642d4b60f0f095596584929ba5e98c3180a
+source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 18%
@@ -65,7 +65,7 @@ Sono disponibili diversi metodi automatici. per aiutarti a monitorare l’istanz
 
 **Audit trail**
 
-L’Audit trail consente di visualizzare la cronologia completa delle modifiche relative alle opzioni, ai flussi di lavoro e agli schemi all’interno dell’istanza. [Fai clic qui](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/audit-trail){target="_blank"} (documentazione di Campaign v8) per ulteriori informazioni.
+L’Audit trail consente di visualizzare la cronologia completa delle modifiche relative alle opzioni, ai flussi di lavoro e agli schemi all’interno dell’istanza. [Fai clic qui](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail){target="_blank"} (documentazione di Campaign v8) per ulteriori informazioni.
 
 **Pannello di controllo**
 
@@ -87,7 +87,7 @@ Workflow HeatMap fornisce una rappresentazione visiva di tutti i flussi di lavor
 
 **Audit trail**
 
-Audit trail consente di visualizzare tutte le modifiche apportate nei flussi di lavoro, nonché i relativi stati correnti. [Fai clic qui](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/audit-trail){target="_blank"} (documentazione di Campaign v8).
+Audit trail consente di visualizzare tutte le modifiche apportate nei flussi di lavoro, nonché i relativi stati correnti. [Fai clic qui](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail){target="_blank"} (documentazione di Campaign v8).
 
 **Risoluzione dei problemi dei flussi di lavoro**
 
@@ -95,13 +95,13 @@ Audit trail consente di visualizzare tutte le modifiche apportate nei flussi di 
 
 **Monitoraggio dello stato del flusso di lavoro**
 
-Oltre alla mappa di calore, puoi creare un flusso di lavoro per monitorare lo stato di un set di flussi di lavoro e inviare messaggi ricorrenti ai supervisori. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html?lang=it){target="_blank"}.
+Oltre alla mappa di calore, puoi creare un flusso di lavoro per monitorare lo stato di un set di flussi di lavoro e inviare messaggi ricorrenti ai supervisori. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html){target="_blank"}.
 
 **Linee guida generali**
 
 Seguire le linee guida e le best practice durante l’utilizzo dei flussi di lavoro può contribuire a migliorare le prestazioni. Per ulteriori informazioni, consulta le sezioni seguenti:
-* [Best practice per l’utilizzo dei flussi di lavoro](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=it){target="_blank"}
-* [Monitoraggio dell’esecuzione dei flussi di lavoro](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=it){target="_blank"}
+* [Best practice per l’utilizzo dei flussi di lavoro](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}
+* [Monitoraggio dell’esecuzione dei flussi di lavoro](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
 
 ### Monitoraggio delle consegne {#monitoring-deliveries}
 
@@ -113,7 +113,7 @@ I rapporti SMTP visualizzano le statistiche di consegna e gli errori SMTP per do
 
 **Best practice**
 
-Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=it){target="_blank"} per informazioni sulle best practice per l’invio e la progettazione delle consegne al fine di migliorare le prestazioni.
+Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"} per informazioni sulle best practice per l’invio e la progettazione delle consegne al fine di migliorare le prestazioni.
 
 **Risoluzione dei problemi di consegna**
 Quando si verificano problemi con le consegne, è possibile eseguire azioni specifiche:
@@ -166,7 +166,7 @@ Le risorse tecniche sono disponibili nella documentazione di Campaign Classic. �
 
 **Principi generali**
 
-* [Architettura Campaign Classic](../../production/using/general-architecture.md)
+* [Architettura Campaign Classic](../../production/using/architecture-and-open-ports.md)
 * [Moduli Campaign Classic](../../production/using/operating-principle.md)
 * [Opzioni Campaign Classic](../../installation/using/configuring-campaign-options.md)
 * [Come impostare l&#39;avvio automatico dei moduli](../../production/using/administration.md)
