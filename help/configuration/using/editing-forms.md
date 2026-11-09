@@ -43,16 +43,16 @@ Gli addetti al marketing e gli operatori utilizzano i moduli di input per creare
 
 >[!NOTE]
 >
->Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sui moduli di input, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target=_blank}.
+>Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sui moduli di input, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/forms){target=_blank}.
 >
->[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"}
+>[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"}
 
 È possibile creare e modificare i moduli di input:
 
 * È possibile modificare i moduli di input forniti per impostazione predefinita. I moduli di input di fabbrica si basano sugli schemi di dati di fabbrica.
 * Puoi creare moduli di input personalizzati, in base agli schemi di dati definiti.
 
-Forms sono entità di tipo `xtk:form`. È possibile visualizzare la struttura del modulo di input nello schema `xtk:form`. Per visualizzare questo schema, scegli **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** dal menu. Ulteriori informazioni sulla [struttura modulo](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (documentazione di Campaign v8).
+Forms sono entità di tipo `xtk:form`. È possibile visualizzare la struttura del modulo di input nello schema `xtk:form`. Per visualizzare questo schema, scegli **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** dal menu. Ulteriori informazioni sulla [struttura modulo](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} (documentazione di Campaign v8).
 
 Per accedere ai moduli di input, scegliere **[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]** dal menu:
 
@@ -62,7 +62,7 @@ Per progettare moduli, modificare il contenuto XML nell&#39;editor XML:
 
 ![](assets/d_ncs_integration_form_edit.png)
 
-[Ulteriori informazioni](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#formatting){target="_blank"} (documentazione di Campaign v8).
+[Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/forms#formatting){target="_blank"} (documentazione di Campaign v8).
 
 Per visualizzare l&#39;anteprima di un modulo, fare clic sulla scheda **[!UICONTROL Preview]**:
 
@@ -86,7 +86,7 @@ Per visualizzare l&#39;anteprima di un modulo, fare clic sulla scheda **[!UICONT
 
 * Assistente
 
-  Questo modulo comprende più schermi mobili ordinati in una sequenza specifica. Gli utenti possono passare da una schermata all’altra. [Ulteriori informazioni](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#wizards){target="_blank"} (documentazione di Campaign v8).
+  Questo modulo comprende più schermi mobili ordinati in una sequenza specifica. Gli utenti possono passare da una schermata all’altra. [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/forms#wizards){target="_blank"} (documentazione di Campaign v8).
 
 * Iconbox
 
@@ -172,7 +172,7 @@ Per creare un modulo, eseguire la procedura seguente:
 
 1. Inserire gli elementi del modulo.
 
-   Ad esempio, per inserire un campo di input, utilizzare l&#39;elemento `<input>`. Impostare l&#39;attributo `xpath` sul riferimento di campo come espressione XPath. [Ulteriori informazioni](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schema-structure#reference-with-xpath){target="_blank"} (documentazione di Campaign v8).
+   Ad esempio, per inserire un campo di input, utilizzare l&#39;elemento `<input>`. Impostare l&#39;attributo `xpath` sul riferimento di campo come espressione XPath. [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/schema-structure#reference-with-xpath){target="_blank"} (documentazione di Campaign v8).
 
    Questo esempio mostra i campi di input basati sullo schema `nms:recipient`.
 
@@ -205,7 +205,7 @@ Per creare un modulo, eseguire la procedura seguente:
    | Casella di controllo | `type="checkbox"` |
    | Modifica struttura | `type="tree"` |
 
-   Ulteriori informazioni sui [controlli elenco memoria](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#memory-list-controls){target="_blank"} (documentazione di Campaign v8).
+   Ulteriori informazioni sui [controlli elenco memoria](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/forms#memory-list-controls){target="_blank"} (documentazione di Campaign v8).
 
 1. Facoltativamente, definisci l’accesso ai campi:
 
@@ -243,7 +243,7 @@ Per creare un modulo, eseguire la procedura seguente:
 
 ## Creare un modulo multipagina {#create-multipage-form}
 
-Puoi creare moduli multipagina. È inoltre possibile nidificare i moduli all&#39;interno di altri moduli. Ulteriori informazioni su [contenitori, moduli per notebook e iconbox](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#containers){target="_blank"} (documentazione di Campaign v8).
+Puoi creare moduli multipagina. È inoltre possibile nidificare i moduli all&#39;interno di altri moduli. Ulteriori informazioni su [contenitori, moduli per notebook e iconbox](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/forms#containers){target="_blank"} (documentazione di Campaign v8).
 
 ## Modificare un modulo di input di fabbrica {#modify-factory-form}
 
@@ -280,11 +280,11 @@ In questo esempio, l’indirizzo e-mail è obbligatorio e viene visualizzato un 
 </leave>
 ```
 
-Ulteriori informazioni sui [campi espressione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#expression-field){target="_blank"} (documentazione di Campaign v8) e sul [contesto modulo](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#context-of-forms){target="_blank"} (documentazione di Campaign v8).
+Ulteriori informazioni sui [campi espressione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/forms#expression-field){target="_blank"} (documentazione di Campaign v8) e sul [contesto modulo](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/forms#context-of-forms){target="_blank"} (documentazione di Campaign v8).
 
 ### Convalida valori
 
-Puoi utilizzare le chiamate SOAP di JavaScript per convalidare i dati del modulo dalla console. Utilizza queste chiamate per la convalida complessa, ad esempio, per confrontare un valore con un elenco di valori autorizzati. [Ulteriori informazioni](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#soap-methods){target="_blank"} (documentazione di Campaign v8).
+Puoi utilizzare le chiamate SOAP di JavaScript per convalidare i dati del modulo dalla console. Utilizza queste chiamate per la convalida complessa, ad esempio, per confrontare un valore con un elenco di valori autorizzati. [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/forms#soap-methods){target="_blank"} (documentazione di Campaign v8).
 
 1. Crea una funzione di convalida in un file JS.
 
@@ -341,4 +341,4 @@ In questo esempio viene illustrato come effettuare chiamate di servizio all&#39;
 </enter>
 ```
 
-In questo esempio, l’input è un ID, che è una chiave primaria. Quando gli utenti compilano il modulo per questo ID, viene effettuata una chiamata SOAP con questo ID come parametro di input. L&#39;output è un valore booleano scritto in questo campo: `/tmp/@count`. Puoi utilizzare questo valore booleano all’interno del modulo. Ulteriori informazioni sul [contesto del modulo](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#context-of-forms){target="_blank"} (documentazione di Campaign v8).
+In questo esempio, l’input è un ID, che è una chiave primaria. Quando gli utenti compilano il modulo per questo ID, viene effettuata una chiamata SOAP con questo ID come parametro di input. L&#39;output è un valore booleano scritto in questo campo: `/tmp/@count`. Puoi utilizzare questo valore booleano all’interno del modulo. Ulteriori informazioni sul [contesto del modulo](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/forms#context-of-forms){target="_blank"} (documentazione di Campaign v8).

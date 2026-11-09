@@ -52,9 +52,9 @@ Questa pagina tratta la personalizzazione degli URL, la firma degli URL e la pro
 
 >[!NOTE]
 >
->Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sulla limitazione dei dati e sulle richieste di accesso a dati personali, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/security#data-restriction){target=_blank}.
+>Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sulla limitazione dei dati e sulle richieste di accesso a dati personali, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/privacy/security#data-restriction){target=_blank}.
 >
->[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/security#data-restriction){target="_blank"}
+>[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/privacy/security#data-restriction){target="_blank"}
 
 In Campaign Classic v7, la limitazione dell’accesso all’intera entità richiede la build 8770 o successiva.
 
@@ -70,11 +70,11 @@ Quando aggiungi collegamenti personalizzati al contenuto, evita sempre di includ
 
 ### Consiglio
 
-Per convalidare e assicurarsi di non utilizzare quanto sopra, esegui una query sulla tabella degli URL di tracciamento tramite [Editor query generico di Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"} (documentazione di Campaign v8) o crea un flusso di lavoro con criteri di filtro nell&#39;attività di query. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
+Per convalidare e assicurarsi di non utilizzare quanto sopra, esegui una query sulla tabella degli URL di tracciamento tramite [Editor query generico di Campaign](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"} (documentazione di Campaign v8) o crea un flusso di lavoro con criteri di filtro nell&#39;attività di query. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=it){target="_blank"}.
 
 Esempio:
 
-1. Crea un flusso di lavoro e aggiungi un&#39;attività **Query**. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
+1. Crea un flusso di lavoro e aggiungi un&#39;attività **Query**. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=it){target="_blank"}.
 
 1. Aprire l&#39;attività **Query** e creare un filtro per la tabella `nmsTrackingUrl` nel modo seguente:
 

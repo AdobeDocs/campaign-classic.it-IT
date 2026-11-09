@@ -50,10 +50,10 @@ Adobe Campaign consente di definire e gestire i diritti assegnati ai vari operat
 >
 >Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sulle autorizzazioni e su come definire le autorizzazioni sulle cartelle, consulta la documentazione di Campaign v8:
 >
->* [Introduzione alle autorizzazioni](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/gs-permissions){target="_blank"}
->* [Aggiungere autorizzazioni alle cartelle](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/folder-permissions){target="_blank"}
+>* [Introduzione alle autorizzazioni](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/permissions/gs-permissions){target="_blank"}
+>* [Aggiungere autorizzazioni alle cartelle](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/permissions/folder-permissions){target="_blank"}
 >
->[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/gs-permissions){target="_blank"}
+>[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/permissions/gs-permissions){target="_blank"}
 
 ## Modalità di autenticazione {#authentication-mode}
 
@@ -66,7 +66,7 @@ Adobe Campaign consente di definire e gestire i diritti assegnati ai vari operat
 * Per eseguire la migrazione degli operatori, fare riferimento a [Eseguire la migrazione degli utenti a IMS](../../technotes/using/migrate-users-to-ims.md).
 * Per migrare la modalità di autenticazione degli utenti finali, fare riferimento a [Migrare la modalità di autenticazione dell&#39;utente finale](../../technotes/using/ac-ims.md).
 
-Dopo questa migrazione, le autorizzazioni vengono gestite con Adobe IMS. Scopri come configurarli nella [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/gs-permissions){target="_blank"}.
+Dopo questa migrazione, le autorizzazioni vengono gestite con Adobe IMS. Scopri come configurarli nella [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/permissions/gs-permissions){target="_blank"}.
 
 
 <!--
@@ -78,12 +78,12 @@ There are two types of permissions you can grant to a user:
 
 * You can define groups of operators to which you attribute rights, then associate the operators with one or more groups. This enables you to reuse rights and make operator profiles more consistent. It also facilitates the management and maintenance of profiles. Group creation and management are presented in [this section](access-management-groups.md).
 
-* You can attribute named rights directly to users, in some cases to overload the rights allocated via groups. These rights are presented in [this page](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/manage-permissions){target="_blank"} (Campaign v8 documentation).
+* You can attribute named rights directly to users, in some cases to overload the rights allocated via groups. These rights are presented in [this page](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/permissions/manage-permissions){target="_blank"} (Campaign v8 documentation).
 
 >[!NOTE]
 >
-> * Before starting defining permissions, Adobe recommends you to read the [Security configuration checklist](https://helpx.adobe.com/campaign/kb/acc-security.html).
-> * To learn more about permissions, please refer to the detailed explanation on the [Campaign v8 documentation](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions){target=_blank}.
+> * Before starting defining permissions, Adobe recommends you to read the [Security configuration checklist](https://helpx.adobe.com/it/campaign/kb/acc-security.html).
+> * To learn more about permissions, please refer to the detailed explanation on the [Campaign v8 documentation](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/admin/permissions/gs-permissions){target=_blank}.
 
 Learn how to grant access and set up permissions in these sections:
 
@@ -91,7 +91,7 @@ Learn how to grant access and set up permissions in these sections:
 
 * [Define groups](access-management-groups.md)
 
-* [Add Named rights](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/manage-permissions){target="_blank"} (Campaign v8 documentation)
+* [Add Named rights](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/permissions/manage-permissions){target="_blank"} (Campaign v8 documentation)
 
 * [Manage Campaign folder access](access-management.md)
 
@@ -100,9 +100,9 @@ Learn how to grant access and set up permissions in these sections:
 
 See also:
 
-* [Manage permissions for workflows](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/advanced-management/managing-rights){target="_blank"} (Campaign v8 documentation)
-* [Manage permissions for distributed marketing](https://experienceleague.adobe.com/en/docs/campaign/automation/distributed-marketing/about-distributed-marketing#operators-and-entities){target="_blank"} (Campaign v8 documentation)
-* [Manage permissions for the interaction module](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-settings/interaction-operators){target="_blank"} (Campaign v8 documentation)
-* [Filter access to schemas](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/filter-schema){target="_blank"} (Campaign v8 documentation)
-* [Restricting PI view](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/restrict-pi-view){target="_blank"} (Campaign v8 documentation)
+* [Manage permissions for workflows](https://experienceleague.adobe.com/it/docs/campaign/automation/workflows/advanced-management/managing-rights){target="_blank"} (Campaign v8 documentation)
+* [Manage permissions for distributed marketing](https://experienceleague.adobe.com/it/docs/campaign/automation/distributed-marketing/about-distributed-marketing#operators-and-entities){target="_blank"} (Campaign v8 documentation)
+* [Manage permissions for the interaction module](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/interaction-settings/interaction-operators){target="_blank"} (Campaign v8 documentation)
+* [Filter access to schemas](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/filter-schema){target="_blank"} (Campaign v8 documentation)
+* [Restricting PI view](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/restrict-pi-view){target="_blank"} (Campaign v8 documentation)
 -->
