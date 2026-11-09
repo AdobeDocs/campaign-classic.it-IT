@@ -48,7 +48,7 @@ Assets condiviso da Adobe Experience Cloud può essere utilizzato nelle e-mail e
 
      ![](assets/dam_insert_image_standard.png)
 
-   * Se utilizzi la [modalità di modifica avanzata](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/editing-html-content/about-campaign-html-editor){target="_blank"} (documentazione di Campaign v8) (DCE), passa a un blocco di immagine, quindi tramite il menu contestuale, seleziona **[!UICONTROL Select a shared asset]**.
+   * Se utilizzi la [modalità di modifica avanzata](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/content/editing-html-content/about-campaign-html-editor){target="_blank"} (documentazione di Campaign v8) (DCE), passa a un blocco di immagine, quindi tramite il menu contestuale, seleziona **[!UICONTROL Select a shared asset]**.
 
      ![](assets/dam_insert_image_dce.png)
 

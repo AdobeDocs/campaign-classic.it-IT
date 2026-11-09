@@ -108,7 +108,7 @@ Applica le seguenti fasi:
    >
    >Questa configurazione può essere adattata. A tale scopo, è necessario modificare l&#39;applicazione Web **Destinatario sottoscrizione** memorizzata nel nodo **[!UICONTROL Resources > Online > Web applications]**.
    >
-   >Per ulteriori informazioni sulle applicazioni Web, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-applications/about-web-applications){target="_blank"} (documentazione di Campaign v8).
+   >Per ulteriori informazioni sulle applicazioni Web, consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/content/web-applications/about-web-applications){target="_blank"} (documentazione di Campaign v8).
 
    Una volta convalidate, viene inviato loro un messaggio di conferma: saranno registrate per sempre solo dopo che avranno attivato il collegamento nel messaggio di conferma. Il messaggio viene creato in base al modello **[!UICONTROL Registration confirmation]**, memorizzato nel nodo **[!UICONTROL Administration > Campaign management > Technical delivery templates]**.
 

@@ -52,7 +52,7 @@ L’operatore webApp è un amministratore. Per migliorare la sicurezza, segui qu
 
   1. Immettere un nome per ogni duplicato. Ad esempio: webapp_brand, webapp_brand2, ecc.
 
-  1. Duplica un modello di applicazione web in modo che abbia un modello per brand e modifica le proprietà per cambiare l’operatore selezionando Utilizza un account specifico.  Per ulteriori informazioni, consulta [questa pagina](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-properties){target="_blank"} (documentazione di Campaign v8).
+  1. Duplica un modello di applicazione web in modo che abbia un modello per brand e modifica le proprietà per cambiare l’operatore selezionando Utilizza un account specifico.  Per ulteriori informazioni, consulta [questa pagina](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-properties){target="_blank"} (documentazione di Campaign v8).
 
 ## Gruppi di sicurezza e operatori amministratori
 

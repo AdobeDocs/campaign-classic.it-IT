@@ -143,7 +143,7 @@ Questo tipo di grafico consente di tenere traccia del tasso di conversazione deg
 
 Puoi definire un’azione quando l’utente fa clic sul grafico. Aprire la finestra **[!UICONTROL Interaction events]** e selezionare l&#39;azione che si desidera eseguire.
 
-I possibili tipi di interazione e le relative configurazioni sono descritti in [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/static-elements-in-a-web-form#inserting-html-content){target="_blank"} (documentazione di Campaign v8).
+I possibili tipi di interazione e le relative configurazioni sono descritti in [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/content/web-forms/static-elements-in-a-web-form#inserting-html-content){target="_blank"} (documentazione di Campaign v8).
 
 ![](assets/s_ncs_advuser_report_wizard_017.png)
 
