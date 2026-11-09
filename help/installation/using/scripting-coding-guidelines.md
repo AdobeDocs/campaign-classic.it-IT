@@ -96,7 +96,7 @@ Consulta queste pagine:
 
 Oltre al modello di protezione basato su cartelle, è possibile utilizzare i diritti denominati per limitare le azioni dell&#39;operatore:
 
-* Puoi aggiungere alcuni filtri di sistema (sysFilter) per impedire la lettura/scrittura nei dati (consulta [questa pagina](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/filter-schema){target="_blank"} (documentazione di Campaign v8)).
+* Puoi aggiungere alcuni filtri di sistema (sysFilter) per impedire la lettura/scrittura nei dati (consulta [questa pagina](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/filter-schema){target="_blank"} (documentazione di Campaign v8)).
 
   ```
   <sysFilter name="writeAccess">    
@@ -138,7 +138,7 @@ Il modo generale per aggiungere un captcha nel DCE consiste nel creare un blocco
 
 1. Utilizza il tipo di contenuto **[!UICONTROL Web application]** e seleziona **[!UICONTROL Visible in the customization menus]**.
 
-   Per ulteriori informazioni, consulta la [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
+   Per ulteriori informazioni, consulta la [Documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=it){target="_blank"}.
 
    Ecco un esempio di **Captcha campagna**:
 
