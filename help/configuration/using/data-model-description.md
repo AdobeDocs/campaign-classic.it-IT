@@ -73,7 +73,7 @@ Il campo iFolderId è la chiave esterna che collega il destinatario alla cartell
 
 Il campo sCountryCode è il codice Alpha 2 ISO 3166-1 (2 caratteri) del paese associato al destinatario. Questo campo è in realtà una chiave esterna nella tabella di riferimento del paese (NmsCountry), che contiene le etichette del paese e altri dati relativi al codice del paese. Se il paese non è popolato, viene memorizzato il valore &#39;XX&#39; (e viene utilizzato al posto di un record ID pari a zero).
 
-Per ulteriori informazioni sulla tabella Destinatari, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} (documentazione di Campaign v8).
+Per ulteriori informazioni sulla tabella Destinatari, consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"} (documentazione di Campaign v8).
 
 ### NmsGroup {#NmsGroup}
 
@@ -133,7 +133,7 @@ Questo set di tabelle è collegato al modulo **Delivery**, che consente di monit
 
 ## Gestione delle campagne {#campaign-management}
 
-Questo set di tabelle è collegato al modulo **Campagne di marketing**, che consente di definire, ottimizzare, eseguire e analizzare le campagne di comunicazione e marketing. Per ulteriori informazioni, fai riferimento alla [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
+Questo set di tabelle è collegato al modulo **Campagne di marketing**, che consente di definire, ottimizzare, eseguire e analizzare le campagne di comunicazione e marketing. Per ulteriori informazioni, fai riferimento alla [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=it){target=_blank}.
 
 ![](assets/data-model_campaign.png)
 
@@ -162,7 +162,7 @@ Questo set di tabelle è collegato al modulo **Ottimizzazione campagna**, che co
 
 ## Gestione risposte {#response-management}
 
-Questo set di tabelle è collegato al modulo **Gestione risposte**, che consente di misurare il successo e la redditività delle campagne di marketing o delle proposte di offerte per tutti i canali di comunicazione. Per ulteriori informazioni, consulta [Informazioni su Gestione risposte](https://experienceleague.adobe.com/en/docs/campaign/automation/response-manager/about-response-manager){target="_blank"} (documentazione di Campaign v8).
+Questo set di tabelle è collegato al modulo **Gestione risposte**, che consente di misurare il successo e la redditività delle campagne di marketing o delle proposte di offerte per tutti i canali di comunicazione. Per ulteriori informazioni, consulta [Informazioni su Gestione risposte](https://experienceleague.adobe.com/it/docs/campaign/automation/response-manager/about-response-manager){target="_blank"} (documentazione di Campaign v8).
 
 ![](assets/data-model_response.png)
 
