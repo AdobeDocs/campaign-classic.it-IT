@@ -29,10 +29,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 8%
+source-wordcount: '410'
+ht-degree: 6%
 ---
 # Gestione degli accessi {#access-management}
 
@@ -52,7 +52,7 @@ L’operatore webApp è un amministratore. Per migliorare la sicurezza, segui qu
 
   1. Immettere un nome per ogni duplicato. Ad esempio: webapp_brand, webapp_brand2, ecc.
 
-  1. Duplica un modello di applicazione web in modo che abbia un modello per brand e modifica le proprietà per cambiare l’operatore selezionando Utilizza un account specifico.  Per ulteriori informazioni, consulta [questa pagina](../../web/using/defining-web-forms-properties.md).
+  1. Duplica un modello di applicazione web in modo che abbia un modello per brand e modifica le proprietà per cambiare l’operatore selezionando Utilizza un account specifico.  Per ulteriori informazioni, consulta [questa pagina](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-properties){target="_blank"} (documentazione di Campaign v8).
 
 ## Gruppi di sicurezza e operatori amministratori
 

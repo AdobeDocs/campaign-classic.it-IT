@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Optimization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
+source-git-commit: 5e2aa587f61d79eab6d356ea5f91bc4e0f1b24c6
 workflow-type: tm+mt
-source-wordcount: '1426'
+source-wordcount: '1454'
 ht-degree: 9%
 ---
 # Installare i pacchetti incorporati di Campaign Classic{#installing-campaign-standard-packages}
@@ -163,7 +163,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
   </tr> 
   <tr> 
    <td> Sondaggi online (Gestione sondaggi)<br /> </td> 
-   <td> Crea e gestisce moduli online per aggiungere o modificare le informazioni del profilo, per effettuare l’abbonamento, per annullare l’abbonamento o un modulo per partecipare a un concorso. Facoltativo. <a href="../../surveys/using/about-surveys.md">Ulteriori informazioni</a> <br /> </td> 
+   <td> Crea e gestisce moduli online per aggiungere o modificare le informazioni del profilo, per effettuare l’abbonamento, per annullare l’abbonamento o un modulo per partecipare a un concorso. Facoltativo. <a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/content/surveys/about-surveys" target="_blank">Ulteriori informazioni</a> (documentazione di Campaign v8) <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
@@ -173,7 +173,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
   </tr> 
   <tr> 
    <td> Gestione risposte<br /> </td> 
-   <td> Misura il successo e la redditività delle campagne di marketing o delle proposte di offerte per tutti i canali di comunicazione.  Facoltativo. <a href="../../response/using/about-response-manager.md">Ulteriori informazioni</a> <br /> </td> 
+   <td> Misura il successo e la redditività delle campagne di marketing o delle proposte di offerte per tutti i canali di comunicazione.  Facoltativo. <a href="https://experienceleague.adobe.com/it/docs/campaign/automation/response-manager/about-response-manager" target="_blank">Ulteriori informazioni</a> (documentazione di Campaign v8) <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 

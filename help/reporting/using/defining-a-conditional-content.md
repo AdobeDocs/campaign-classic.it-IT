@@ -28,10 +28,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 8%
+source-wordcount: '285'
+ht-degree: 4%
 ---
 # Definire un contenuto condizionale{#defining-a-conditional-content}
 
@@ -49,7 +49,7 @@ Per rendere condizionale la visualizzazione di una parte di un rapporto, è nece
 
 Le condizioni di visibilità possono dipendere dallo stato dell’operatore, dagli elementi selezionati o immessi nella pagina del rapporto.
 
-Esempi che mostrano la visualizzazione condizionale degli elementi in una pagina sono forniti in [questa sezione](../../web/using/form-rendering.md#defining-fields-conditional-display).
+Esempi che mostrano la visualizzazione condizionale degli elementi in una pagina sono forniti in [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/form-rendering#defining-fields-conditional-display){target="_blank"} (documentazione di Campaign v8).
 
 Nell’esempio seguente, la condizione di visualizzazione dipende dalla lingua:
 
@@ -72,6 +72,6 @@ Questa attività si basa sul seguente principio di funzionamento:
 
 1. Selezionare **[!UICONTROL Enable default transition]** per aggiungere una transizione, nel caso in cui una delle condizioni configurate non sia soddisfatta.
 
-   Per ulteriori informazioni al riguardo, consulta [questa sezione](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display).
+   Per ulteriori informazioni, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-page-sequencing#conditional-page-display){target="_blank"} (documentazione di Campaign v8).
 
 È possibile inserire un&#39;attività **[!UICONTROL Test]** all&#39;inizio del grafico per condizionare la visualizzazione in base al contesto o al profilo dell&#39;operatore, ad esempio.

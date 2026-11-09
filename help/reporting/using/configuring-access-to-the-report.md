@@ -28,9 +28,9 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '777'
 ht-degree: 2%
 ---
 # Configurare l’accesso al rapporto{#configuring-access-to-the-report}
@@ -141,7 +141,7 @@ Per ulteriori informazioni, consulta [Contesto di visualizzazione del report](#r
 
 Impostazioni specifiche consentono di controllare gli errori. L&#39;impostazione **_uuid** si trova nell&#39;URL del report. È possibile aggiungere le impostazioni **&amp;_preview** o **&amp;_debug**.
 
-Per ulteriori informazioni su queste impostazioni, fare riferimento alla sezione **Definizione delle proprietà del modulo Web** del capitolo [Moduli Web](../../web/using/about-web-forms.md).
+Per ulteriori informazioni su queste impostazioni, consulta la sezione **Definizione delle proprietà del modulo web** del capitolo [Moduli web](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/about-web-forms){target="_blank"} (documentazione di Campaign v8).
 
 ## Pubblicare il rapporto {#publishing-the-report}
 

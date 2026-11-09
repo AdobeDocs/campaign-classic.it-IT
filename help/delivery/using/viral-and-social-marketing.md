@@ -36,9 +36,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '582'
 ht-degree: 2%
 ---
 # Marketing virale e social marketing{#viral-and-social-marketing}
@@ -108,7 +108,7 @@ Applica le seguenti fasi:
    >
    >Questa configurazione può essere adattata. A tale scopo, è necessario modificare l&#39;applicazione Web **Destinatario sottoscrizione** memorizzata nel nodo **[!UICONTROL Resources > Online > Web applications]**.
    >
-   >Per ulteriori informazioni sulle applicazioni Web, consultare [questa sezione](../../web/using/about-web-applications.md).
+   >Per ulteriori informazioni sulle applicazioni Web, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-applications/about-web-applications){target="_blank"} (documentazione di Campaign v8).
 
    Una volta convalidate, viene inviato loro un messaggio di conferma: saranno registrate per sempre solo dopo che avranno attivato il collegamento nel messaggio di conferma. Il messaggio viene creato in base al modello **[!UICONTROL Registration confirmation]**, memorizzato nel nodo **[!UICONTROL Administration > Campaign management > Technical delivery templates]**.
 

@@ -27,9 +27,9 @@ subfeature_v2:
     internal-label: Target integration
   - id: 2e08b477-1993-5928-975d-5f4cabe8fbe0
     internal-label: Asset Sharing
-source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '279'
 ht-degree: 0%
 ---
 # Inserimento di una risorsa condivisa{#inserting-a-shared-asset}
@@ -48,7 +48,7 @@ Assets condiviso da Adobe Experience Cloud può essere utilizzato nelle e-mail e
 
      ![](assets/dam_insert_image_standard.png)
 
-   * Se utilizzi la [modalità di modifica avanzata](../../web/using/about-campaign-html-editor.md) (DCE), passa a un blocco di immagine e seleziona **[!UICONTROL Select a shared asset]** tramite il menu contestuale.
+   * Se utilizzi la [modalità di modifica avanzata](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/editing-html-content/about-campaign-html-editor){target="_blank"} (documentazione di Campaign v8) (DCE), passa a un blocco di immagine, quindi tramite il menu contestuale, seleziona **[!UICONTROL Select a shared asset]**.
 
      ![](assets/dam_insert_image_dce.png)
 
