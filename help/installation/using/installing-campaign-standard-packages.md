@@ -85,7 +85,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
   </tr> 
   <tr> 
    <td> Campagne di marketing (Campaign)<br /> </td> 
-   <td> Definisce, ottimizza, esegue e analizza campagne di comunicazione e marketing. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html" target="_blank">Ulteriori informazioni</a><br /> </td> 
+   <td> Definisce, ottimizza, esegue e analizza campagne di comunicazione e marketing. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=it" target="_blank">Ulteriori informazioni</a><br /> </td> 
    <td> Marketing</td>
   </tr> 
   <tr> 
@@ -178,7 +178,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
   </tr> 
   <tr> 
    <td> Accesso ai dati esterni (Federated Data Access)<br /> </td> 
-   <td> Fornisce l’opzione Federated Data Access (FDA) per elaborare le informazioni memorizzate in uno o più database esterni in modo da poter accedere ai dati esterni senza modificare la struttura dei dati di Adobe Campaign.  Facoltativo. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html" target="_blank">Ulteriori informazioni</a> <br /> </td> 
+   <td> Fornisce l’opzione Federated Data Access (FDA) per elaborare le informazioni memorizzate in uno o più database esterni in modo da poter accedere ai dati esterni senza modificare la struttura dei dati di Adobe Campaign.  Facoltativo. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html?lang=it" target="_blank">Ulteriori informazioni</a> <br /> </td> 
    <td> Tutto<br /> </td> 
   </tr> 
   <tr> 
@@ -193,7 +193,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
   </tr> 
   <tr> 
    <td> Gestione coupon<br /> </td> 
-   <td> Crea un set di coupon da aggiungere alle prossime offerte di marketing. Facoltativo. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html" target="_blank">Ulteriori informazioni</a> <br /> </td> 
+   <td> Crea un set di coupon da aggiungere alle prossime offerte di marketing. Facoltativo. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html?lang=it" target="_blank">Ulteriori informazioni</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
@@ -218,7 +218,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
   </tr> 
   <tr> 
    <td> Integrazione AEM<br /> </td> 
-   <td> Consente di gestire il contenuto delle consegne e-mail e dei moduli direttamente in Adobe Experience Manager per sfruttare le funzionalità di modifica dei contenuti di AEM e le capacità di consegna di Adobe Campaign. <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aem" target="_blank">Ulteriori informazioni</a> (documentazione di Campaign v8) <br /> </td> 
+   <td> Consente di gestire il contenuto delle consegne e-mail e dei moduli direttamente in Adobe Experience Manager per sfruttare le funzionalità di modifica dei contenuti di AEM e le capacità di consegna di Adobe Campaign. <a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/connect/ac-aem" target="_blank">Ulteriori informazioni</a> (documentazione di Campaign v8) <br /> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
@@ -248,7 +248,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
   </tr> 
   <tr> 
    <td> Supporto AMP<br /> </td> 
-   <td> Consente di utilizzare il nuovo AMP interattivo per il formato e-mail e di inviare e-mail dinamiche. Facoltativo. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html" target="_blank">Ulteriori informazioni</a> <br /> </td> 
+   <td> Consente di utilizzare il nuovo AMP interattivo per il formato e-mail e di inviare e-mail dinamiche. Facoltativo. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=it" target="_blank">Ulteriori informazioni</a> <br /> </td> 
    <td> Tutti </td> 
   </tr> 
   <tr> 
@@ -283,7 +283,7 @@ Nel contesto di una configurazione di mid-sourcing, devi:
 
 * Installa il pacchetto [!DNL LINE] sia sull&#39;istanza Marketing che su quella MID
 
-* Imposta l&#39;account esterno [!DNL LINE] nell&#39;istanza di marketing in modo che punti all&#39;istanza mid modificando la modalità di consegna. [Ulteriori informazioni](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/other-channels/line#configure-line-external){target="_blank"} (documentazione di Campaign v8)
+* Imposta l&#39;account esterno [!DNL LINE] nell&#39;istanza di marketing in modo che punti all&#39;istanza mid modificando la modalità di consegna. [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/other-channels/line#configure-line-external){target="_blank"} (documentazione di Campaign v8)
 
 * Imposta le credenziali [!DNL LINE] nell&#39;account esterno nell&#39;istanza MID.
 
