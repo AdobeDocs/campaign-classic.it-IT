@@ -49,7 +49,7 @@ Per rendere condizionale la visualizzazione di una parte di un rapporto, è nece
 
 Le condizioni di visibilità possono dipendere dallo stato dell’operatore, dagli elementi selezionati o immessi nella pagina del rapporto.
 
-Esempi che mostrano la visualizzazione condizionale degli elementi in una pagina sono forniti in [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/form-rendering#defining-fields-conditional-display){target="_blank"} (documentazione di Campaign v8).
+Esempi che mostrano la visualizzazione condizionale degli elementi in una pagina sono forniti in [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/content/web-forms/form-rendering#defining-fields-conditional-display){target="_blank"} (documentazione di Campaign v8).
 
 Nell’esempio seguente, la condizione di visualizzazione dipende dalla lingua:
 
@@ -72,6 +72,6 @@ Questa attività si basa sul seguente principio di funzionamento:
 
 1. Selezionare **[!UICONTROL Enable default transition]** per aggiungere una transizione, nel caso in cui una delle condizioni configurate non sia soddisfatta.
 
-   Per ulteriori informazioni, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-page-sequencing#conditional-page-display){target="_blank"} (documentazione di Campaign v8).
+   Per ulteriori informazioni, consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-page-sequencing#conditional-page-display){target="_blank"} (documentazione di Campaign v8).
 
 È possibile inserire un&#39;attività **[!UICONTROL Test]** all&#39;inizio del grafico per condizionare la visualizzazione in base al contesto o al profilo dell&#39;operatore, ad esempio.

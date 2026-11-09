@@ -86,7 +86,7 @@ La lingua di modifica è la lingua in cui si scrive. Quando aggiungi una lingua,
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla localizzazione delle pagine web in Campaign, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/translating-a-web-form){target="_blank"} (documentazione di Campaign v8).
+>Per ulteriori informazioni sulla localizzazione delle pagine web in Campaign, consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/content/web-forms/translating-a-web-form){target="_blank"} (documentazione di Campaign v8).
 
 ## Personalizzare il rendering di HTML {#personalizing-html-rendering}
 

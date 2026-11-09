@@ -66,7 +66,7 @@ Esistono tre modalità di abbonamento/annullamento abbonamento al servizio:
 
 >[!NOTE]
 >
->Un esempio per creare un modulo di abbonamento con doppio consenso è descritto in [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/use-cases-web-forms#create-a-subscription--form-with-double-opt-in){target="_blank"} (documentazione di Campaign v8).
+>Un esempio per creare un modulo di abbonamento con doppio consenso è descritto in [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/content/web-forms/use-cases-web-forms#create-a-subscription--form-with-double-opt-in){target="_blank"} (documentazione di Campaign v8).
 
 ## Creazione di un servizio informazioni {#creating-an-information-service}
 
@@ -160,7 +160,7 @@ Per registrare i destinatari di un servizio informazioni, è possibile:
 
 * Utilizza un modulo web in modo che i destinatari possano abbonarsi a un servizio.
 
-  Per ulteriori informazioni, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-applications/about-web-applications){target="_blank"} (documentazione di Campaign v8).
+  Per ulteriori informazioni, consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/content/web-applications/about-web-applications){target="_blank"} (documentazione di Campaign v8).
 
 * Creazione di un flusso di lavoro di targeting e utilizzo di una casella **[!UICONTROL Subscription service]**.
 
@@ -176,7 +176,7 @@ le consegne e-mail devono contenere per legge un collegamento che consenta di an
 
 Il collegamento predefinito per l&#39;annullamento dell&#39;iscrizione viene inserito tramite l&#39;ultimo pulsante nella barra degli strumenti dell&#39;editor di contenuti fornito nell&#39;assistente alla consegna (vedi [Informazioni sulla personalizzazione](about-personalization.md)). Quando il destinatario fa clic su questo collegamento, il profilo viene aggiunto al inserisco nell&#39;elenco Bloccati di consegna (opt-out), il che significa che il destinatario non sarà più interessato da alcuna azione di consegna.
 
-I destinatari possono tuttavia scegliere di annullare l’abbonamento a un servizio senza annullare l’abbonamento a tutti i servizi. Per consentire questa operazione, puoi utilizzare un modulo web (fai riferimento a [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/adding-fields-to-a-web-form#subscription-checkboxes){target="_blank"} (documentazione di Campaign v8)) o inserire un collegamento di annullamento dell’abbonamento personalizzato. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=it){target="_blank"}.
+I destinatari possono tuttavia scegliere di annullare l’abbonamento a un servizio senza annullare l’abbonamento a tutti i servizi. Per consentire questa operazione, puoi utilizzare un modulo web (fai riferimento a [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/content/web-forms/adding-fields-to-a-web-form#subscription-checkboxes){target="_blank"} (documentazione di Campaign v8)) o inserire un collegamento di annullamento dell’abbonamento personalizzato. Consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=it){target="_blank"}.
 
 Puoi anche annullare manualmente l’abbonamento di un destinatario dal profilo del destinatario. A tale scopo, fare clic sulla scheda **[!UICONTROL Subscriptions]** del destinatario interessato, selezionare i servizi di informazione interessati e fare clic su **[!UICONTROL Delete]**.
 

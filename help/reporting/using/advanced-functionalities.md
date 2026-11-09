@@ -67,7 +67,7 @@ Per eseguire questa operazione:
 
    ![](assets/reporting_custom_js.png)
 
-Per la normale esecuzione sul lato client, gli script di riferimento devono essere scritti in JavaScript ed essere compatibili con i browser più diffusi. Per ulteriori informazioni, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/web-forms-answers){target="_blank"} (documentazione di Campaign v8).
+Per la normale esecuzione sul lato client, gli script di riferimento devono essere scritti in JavaScript ed essere compatibili con i browser più diffusi. Per ulteriori informazioni, consulta [questa sezione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/content/web-forms/web-forms-answers){target="_blank"} (documentazione di Campaign v8).
 
 ### Aggiunta di un’attività Script {#script-activity}
 

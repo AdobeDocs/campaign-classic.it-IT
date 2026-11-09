@@ -36,7 +36,7 @@ Questo capitolo descrive i vari possibili parametri avanzati in Interaction.
 >Il capitolo seguente è destinato a **amministratori tecnici**.
 
 * Puoi utilizzare dati contestuali aggiuntivi. Consulta la sezione [Dati aggiuntivi](../../interaction/using/additional-data.md).
-* Puoi arricchire i contesti di applicazione delle offerte suggerite tramite un canale in ingresso. A questo scopo, è necessario estendere lo schema di interazione **nms:interaction**. Per informazioni sulla procedura completa, consulta la sezione [Esempio di estensione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/advanced-parameters/extension-example){target="_blank"} (documentazione di Campaign v8).
+* Puoi arricchire i contesti di applicazione delle offerte suggerite tramite un canale in ingresso. A questo scopo, è necessario estendere lo schema di interazione **nms:interaction**. Per informazioni sulla procedura completa, consulta la sezione [Esempio di estensione](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/offers/advanced-parameters/extension-example){target="_blank"} (documentazione di Campaign v8).
 * La creazione di un ambiente di test è descritta nella sezione [Creazione di un ambiente di test](../../interaction/using/creating-a-test-environment.md).
 * Puoi modificare il comportamento standard del motore utilizzando gli hook. Per ulteriori informazioni, consulta la sezione [Hook](../../interaction/using/hooks.md)
 * Infine, l&#39;utilizzo dell&#39;interazione con un&#39;architettura distribuita è descritto nella sezione [Architetture distribuite](../../interaction/using/distributed-architectures.md).

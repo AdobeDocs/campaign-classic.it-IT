@@ -141,7 +141,7 @@ Per ulteriori informazioni, consulta [Contesto di visualizzazione del report](#r
 
 Impostazioni specifiche consentono di controllare gli errori. L&#39;impostazione **_uuid** si trova nell&#39;URL del report. È possibile aggiungere le impostazioni **&amp;_preview** o **&amp;_debug**.
 
-Per ulteriori informazioni su queste impostazioni, consulta la sezione **Definizione delle proprietà del modulo web** del capitolo [Moduli web](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/about-web-forms){target="_blank"} (documentazione di Campaign v8).
+Per ulteriori informazioni su queste impostazioni, consulta la sezione **Definizione delle proprietà del modulo web** del capitolo [Moduli web](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/content/web-forms/about-web-forms){target="_blank"} (documentazione di Campaign v8).
 
 ## Pubblicare il rapporto {#publishing-the-report}
 
