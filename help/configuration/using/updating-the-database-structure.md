@@ -20,7 +20,7 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 758d5159759b19f7ef32e8cc8f6237547599e727
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 8%
@@ -33,6 +33,8 @@ Le opzioni **[!UICONTROL Add stored procedures]** e **[!UICONTROL Import initial
 
 Puoi importare un set di dati da un pacchetto di dati esterno. A tale scopo, selezionare **[!UICONTROL Import a package]** e immettere il file XML del pacchetto.
 
-Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sull&#39;Assistente all&#39;aggiornamento del database, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/update-database-structure){target=_blank}.
-
-[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/update-database-structure){target=_blank}
+>[!NOTE]
+>
+>Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sull&#39;Assistente all&#39;aggiornamento del database, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/update-database-structure){target=_blank}.
+>
+>[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/developer/schemas-forms/update-database-structure){target=_blank}

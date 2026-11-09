@@ -18,7 +18,7 @@ feature_v2:
 subfeature_v2:
   - id: d3b34fea-a110-482f-adb2-aae8d686bac8
     internal-label: Transactional messaging
-source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
+source-git-commit: 758d5159759b19f7ef32e8cc8f6237547599e727
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 8%
@@ -31,9 +31,11 @@ ht-degree: 8%
 
 **La messaggistica transazionale** (Centro messaggi) è un modulo di Campaign progettato per gestire le notifiche di attivazione personalizzate generate da eventi inviati da un sistema di informazioni esterno.
 
-Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sui messaggi transazionali, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/real-time/transactional){target=_blank}.
-
-[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/real-time/transactional){target=_blank}
+>[!NOTE]
+>
+>Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sui messaggi transazionali, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/real-time/transactional){target=_blank}.
+>
+>[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/real-time/transactional){target=_blank}
 
 Questa sezione descrive l’architettura della messaggistica transazionale e la configurazione delle istanze di controllo ed esecuzione, specifiche per le distribuzioni on-premise e ibride.
 

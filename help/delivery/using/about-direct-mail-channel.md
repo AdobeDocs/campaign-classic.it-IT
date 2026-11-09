@@ -37,7 +37,7 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 758d5159759b19f7ef32e8cc8f6237547599e727
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 3%
@@ -48,7 +48,9 @@ Con Adobe Campaign, crea consegne di direct mailing per inviare messaggi fisici 
 
 La direct mailing rimane un canale potente per stabilire connessioni tangibili con i clienti, ideale per distribuire offerte stampate, cataloghi, messaggi fedeltà o lettere personalizzate che rafforzano la presenza dei brand oltre i punti di contatto digitali. Scopri come configurare e gestire in modo efficace le campagne di direct mailing, dalla preparazione dei dati e la generazione dei file per i partner di routing al tracciamento dei risultati di consegna, nella [documentazione di Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html?lang=it){target=_blank}.
 
-Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8.
+>[!NOTE]
+>
+>Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8.
 
 >[!BEGINTABS]
 

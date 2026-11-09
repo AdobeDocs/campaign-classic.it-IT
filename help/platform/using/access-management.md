@@ -34,7 +34,7 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 9753491edbeba9df2c0a9dcf53b3bd5ea87c32ca
+source-git-commit: 758d5159759b19f7ef32e8cc8f6237547599e727
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 14%
@@ -57,9 +57,11 @@ Adobe Campaign consente di definire e gestire i diritti assegnati ai vari operat
 * Accesso a determinati documenti,
 * Creazione, modifica e/o eliminazione di record (azioni, contatti, campagne, gruppi, ecc.).
 
-Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sulle autorizzazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/permissions/gs-permissions){target=_blank}.
-
-[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/permissions/gs-permissions){target=_blank}
+>[!NOTE]
+>
+>Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sulle autorizzazioni, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/permissions/gs-permissions){target=_blank}.
+>
+>[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/permissions/gs-permissions){target=_blank}
 
 Per informazioni su come definire le autorizzazioni per le cartelle, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/permissions/folder-permissions){target=_blank}.
 
