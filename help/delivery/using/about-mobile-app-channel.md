@@ -37,7 +37,7 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
+source-git-commit: 758d5159759b19f7ef32e8cc8f6237547599e727
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 6%
@@ -46,15 +46,17 @@ ht-degree: 6%
 
 Con Adobe Campaign, crea consegne di notifiche push per inviare messaggi personalizzati agli utenti della tua app mobile.
 
-Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sul canale di notifica push, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/push/push){target=_blank}.
-
-[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/push/push){target=_blank}
+>[!NOTE]
+>
+>Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sul canale di notifica push, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/push){target=_blank}.
+>
+>[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/push){target=_blank}
 
 Le seguenti informazioni sono specifiche per Campaign Classic.
 
 +++ **Installazione del pacchetto**
 
-![](assets/do-not-localize/how-to-video.png) [Scopri come installare il pacchetto per app mobile nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=it#sending-messages)
+![](assets/do-not-localize/how-to-video.png) [Scopri come installare il pacchetto per app mobile nel video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html#sending-messages)
 
 In qualità di cliente ibrido/in hosting, contatta il team [Assistenza clienti Adobe](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) per accedere al canale di notifica push in Campaign.
 
@@ -84,7 +86,7 @@ I passaggi di installazione sono i seguenti:
 
 1. **[!UICONTROL Close]** la finestra di installazione.
 
-Al termine di questo passaggio, puoi configurare le app Android e iOS. Consulta la [documentazione](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html?lang=it){target="_blank"} di Campaign v8.
+Al termine di questo passaggio, puoi configurare le app Android e iOS. Consulta la [documentazione](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target="_blank"} di Campaign v8.
 
 +++
 
@@ -103,6 +105,6 @@ Connettore HTTP/2: è necessario consentire la comunicazione da e verso i seguen
 
 >[!NOTE]
 >
->Per ulteriori informazioni sui due connettori, consulta la [documentazione](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=it){target="_blank"} di Campaign v8.
+>Per ulteriori informazioni sui due connettori, consulta la [documentazione](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"} di Campaign v8.
 
 +++

@@ -41,7 +41,7 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
+source-git-commit: 758d5159759b19f7ef32e8cc8f6237547599e727
 workflow-type: tm+mt
 source-wordcount: '4785'
 ht-degree: 1%
@@ -53,9 +53,11 @@ ht-degree: 1%
 >In questo documento, tutti i riferimenti ai dettagli del protocollo, dei nomi dei campi e dei valori fanno riferimento alla [specifica SMPP 3.4](https://smpp.org/SMPP_v3_4_Issue1_2.pdf).
 >
 
-Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sulle impostazioni del connettore SMS, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/sms/config-sms/smpp-external-account){target=_blank}.
-
-[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/sms/config-sms/smpp-external-account){target=_blank}
+>[!NOTE]
+>
+>Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sulle impostazioni del connettore SMS, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms/config-sms/smpp-external-account){target=_blank}.
+>
+>[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms/config-sms/smpp-external-account){target=_blank}
 
 ## Panoramica {#overview}
 
@@ -181,7 +183,7 @@ Campi rilevanti in una PDU `SUBMIT_SM`:
 
 * **registered_delivery**: indica se un messaggio SR è richiesto o meno. Adobe Campaign imposta sempre questo flag, ad eccezione delle risposte automatiche. Per i messaggi in più parti, il flag viene impostato solo per la prima parte. Tutte le versioni hanno lo stesso comportamento.
 
-* **data_coding**: indica la codifica utilizzata nel campo di testo. Per ulteriori informazioni, consulta la sezione [Codifica testo SMS](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/sms/sms-channel#sms-text-encoding){target="_blank"} (documentazione di Campaign v8).
+* **data_coding**: indica la codifica utilizzata nel campo di testo. Per ulteriori informazioni, consulta la sezione [Codifica testo SMS](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms/sms-channel#sms-text-encoding){target="_blank"} (documentazione di Campaign v8).
 
 * **short_message**: testo del messaggio. Se si utilizza UDH, questo conterrà anche l’intestazione UHD.
 
@@ -243,7 +245,7 @@ Questa PDU riconosce che la connessione è attiva.
 
 La maggior parte dei provider richiede un limite di velocità effettiva per ogni connessione SMPP. Ciò può essere ottenuto impostando una serie di SMS nell’account esterno. Si noti che la limitazione della velocità effettiva avviene per connessione, la velocità effettiva totale è il limite per connessione moltiplicato per il numero totale di connessioni. Questo è descritto nella sezione [Connessioni simultanee](sms-protocol.md#connection-settings).
 
-Per raggiungere il massimo throughput possibile, è necessario regolare con precisione la finestra di invio massima. La finestra di invio è il numero di `SUBMIT_SM PDU` che possono essere inviati senza attendere un `SUBMIT_SM_RESP`. Per ulteriori dettagli, consulta la sezione [Impostazione della finestra di invio](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/sms/config-sms/smpp-external-account#smpp-delays){target="_blank"} (documentazione di Campaign v8).
+Per raggiungere il massimo throughput possibile, è necessario regolare con precisione la finestra di invio massima. La finestra di invio è il numero di `SUBMIT_SM PDU` che possono essere inviati senza attendere un `SUBMIT_SM_RESP`. Per ulteriori dettagli, consulta la sezione [Impostazione della finestra di invio](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms/config-sms/smpp-external-account#smpp-delays){target="_blank"} (documentazione di Campaign v8).
 
 ### Gestione degli SR e degli errori (Appendice B) {#sr-error-management}
 
