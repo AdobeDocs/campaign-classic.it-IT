@@ -8,9 +8,9 @@ user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: 5e2aa587f61d79eab6d356ea5f91bc4e0f1b24c6
+source-git-commit: 77efa1dcdb82a478e93565e84099d568f6a5f5fe
 workflow-type: tm+mt
-source-wordcount: '1516'
+source-wordcount: '1353'
 ht-degree: 97%
 ---
 
@@ -354,60 +354,16 @@ ht-degree: 97%
   + Modelli di messaggi {#message-templates}
     + [Testare modelli di messaggi](message-center/using/testing-message-templates.md)
   + [Caso d’uso](message-center/using/transactional-email-with-attachments.md)
-+ Progettare contenuti web {#designing-content}
-  + Applicazioni web {#web-applications}
-    + [Introduzione alle applicazioni web](web/using/about-web-applications.md)
-    + [Creare una nuova applicazione web](web/using/creating-a-new-web-application.md)
-    + [Progettare un’applicazione web](web/using/designing-a-web-application.md)
-    + [Casi d’uso: creare panoramiche](web/using/use-cases-creating-overviews.md)
-    + [Progettare un’applicazione web](web/using/translating-a-web-application.md)
-    + [Tracciare le visite in un’applicazione web](web/using/tracking-a-web-application.md)
-    + [Rinuncia al tracciamento delle applicazioni web](web/using/web-application-tracking-opt-out.md)
-  + Modificare i contenuti HTML {#editing-html-content}
-    + [Introduzione all’editor HTML](web/using/about-campaign-html-editor.md)
-    + [Gestione dei modelli](web/using/template-management.md)
-    + [Interfaccia dell’editor di contenuti](web/using/content-editor-interface.md)
-    + [Modificare i contenuti](web/using/editing-content.md)
-    + [Best practice per la modifica dei contenuti](web/using/content-editing-best-practices.md)
-    + [Creare una pagina di destinazione](web/using/creating-a-landing-page.md)
-    + [Caso d’uso: creare una consegna e-mail](web/using/use-case-creating-an-email-delivery.md)
-  + Moduli web {#web-forms}
-    + [Introduzione ai moduli web](web/using/about-web-forms.md)
-    + [Usare un modello per moduli web](web/using/using-a-web-form-template.md)
-    + [Aggiungere campi a un modulo web](web/using/adding-fields-to-a-web-form.md)
-    + [Elementi statici in un modulo web](web/using/static-elements-in-a-web-form.md)
-    + [Definire il layout dei moduli web](web/using/defining-web-forms-layout.md)
-    + [Rendering di un modulo](web/using/form-rendering.md)
-    + [Definire la sequenza di pagine](web/using/defining-web-forms-page-sequencing.md)
-    + [Salvare le risposte ai moduli web](web/using/web-forms-answers.md)
-    + [Pubblicare un modulo web](web/using/publishing-a-web-form.md)
-    + [Definire le proprietà dei moduli web](web/using/defining-web-forms-properties.md)
-    + [Pubblicare un modulo web](web/using/translating-a-web-form.md)
-    + [Casi d’uso: moduli web](web/using/use-cases-web-forms.md)
 + Gestire le offerte {#managing-offers}
   + Introduzione all’interazione {#interaction-overview}
     + [Gestione dell’interazione e delle offerte](interaction/using/interaction-and-offer-management.md)
-  + Gestire un catalogo delle offerte {#managing-an-offer-catalog}
-    + [Approvare e attivare un’offerta](interaction/using/approving-and-activating-an-offer.md)
-    + [Gestire i modelli di offerta](interaction/using/managing-offer-templates.md)
-    + [Gestire la presentazione delle offerte](interaction/using/managing-offer-presentation.md)
-  + Simulazione di offerte{#simulating-offers}
-    + [Informazioni sulla simulazione delle offerte](interaction/using/about-offers-simulation.md)
-    + [Impostazioni di esecuzione](interaction/using/execution-settings.md)
-    + [Ambito della simulazione](interaction/using/simulation-scope.md)
-    + [Tracciamento della simulazione](interaction/using/simulation-tracking.md)
   + Parametri avanzati {#advanced-parameters}
     + [Utilizzare parametri avanzati](interaction/using/using-advanced-parameters.md)
     + [Dati aggiuntivi](interaction/using/additional-data.md)
-    + [Estensione esemplificativa](interaction/using/extension-example.md)
     + [Creare un ambiente di test](interaction/using/creating-a-test-environment.md)
     + [Modificare il comportamento standard del motore](interaction/using/hooks.md)
     + [Architetture distribuite](interaction/using/distributed-architectures.md)
     + [Configurazione del buffer dati](installation/using/interaction-data-buffer.md)
-  + Caso d’uso {#case-study}
-    + [Regole di presentazione](interaction/using/presentation-rules.md)
-    + [Offerte su un canale in entrata](interaction/using/offers-on-an-inbound-channel.md)
-    + [Offerte su un canale in uscita](interaction/using/offers-on-an-outbound-channel.md)
 + Progettare e condividere i rapporti {#reporting}
   + Introduzione al reporting {#reporting-in-adobe-campaign}
     + [Best practice per il reporting](reporting/using/best-practices.md)

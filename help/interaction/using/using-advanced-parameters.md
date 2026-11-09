@@ -20,9 +20,9 @@ feature_v2:
     internal-label: Interaction
   - id: ea08db70-4682-59a2-9408-9aedd9548e07
     internal-label: Offers
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 77efa1dcdb82a478e93565e84099d568f6a5f5fe
 workflow-type: tm+mt
-source-wordcount: '117'
+source-wordcount: '132'
 ht-degree: 0%
 ---
 # Utilizzo di parametri avanzati{#using-advanced-parameters}
@@ -36,7 +36,7 @@ Questo capitolo descrive i vari possibili parametri avanzati in Interaction.
 >Il capitolo seguente è destinato a **amministratori tecnici**.
 
 * Puoi utilizzare dati contestuali aggiuntivi. Consulta la sezione [Dati aggiuntivi](../../interaction/using/additional-data.md).
-* Puoi arricchire i contesti di applicazione delle offerte suggerite tramite un canale in ingresso. A questo scopo, è necessario estendere lo schema di interazione **nms:interaction**. Per la procedura completa, consulta la sezione [Esempio di estensione](../../interaction/using/extension-example.md).
+* Puoi arricchire i contesti di applicazione delle offerte suggerite tramite un canale in ingresso. A questo scopo, è necessario estendere lo schema di interazione **nms:interaction**. Per informazioni sulla procedura completa, consulta la sezione [Esempio di estensione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/advanced-parameters/extension-example){target="_blank"} (documentazione di Campaign v8).
 * La creazione di un ambiente di test è descritta nella sezione [Creazione di un ambiente di test](../../interaction/using/creating-a-test-environment.md).
 * Puoi modificare il comportamento standard del motore utilizzando gli hook. Per ulteriori informazioni, consulta la sezione [Hook](../../interaction/using/hooks.md)
 * Infine, l&#39;utilizzo dell&#39;interazione con un&#39;architettura distribuita è descritto nella sezione [Architetture distribuite](../../interaction/using/distributed-architectures.md).
