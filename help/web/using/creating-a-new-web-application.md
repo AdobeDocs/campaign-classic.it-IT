@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 5e2aa587f61d79eab6d356ea5f91bc4e0f1b24c6
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 20%
+source-wordcount: '377'
+ht-degree: 17%
 ---
 # Creare una nuova applicazione web{#creating-a-new-web-application}
 
@@ -47,7 +47,7 @@ Vai alla scheda **Campagne** e seleziona il menu **[!UICONTROL Web Applications]
 
 >[!NOTE]
 >
->Proteggi sempre le pagine che potrebbero contenere informazioni personali. Consulta la [Lista di controllo protezione e privacy](https://helpx.adobe.com/it/campaign/kb/acc-security.html#privacy).
+>Proteggi sempre le pagine che potrebbero contenere informazioni personali. Consulta la [Lista di controllo protezione e privacy](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy).
 
 Questo modello determina il tipo di applicazione Web. Puoi creare:
 
@@ -65,7 +65,7 @@ Questo modello determina il tipo di applicazione Web. Puoi creare:
 
 1. Indagini
 
-   Adobe Campaign ti consente, tramite l&#39;opzione **Gestione sondaggi**, di progettare e gestire sondaggi online ed elaborarne i risultati: creazione di campi dinamici, gestione dei punteggi, esportazione di risposte e rapporti dedicati. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../surveys/using/about-surveys.md).
+   Adobe Campaign ti consente, tramite l&#39;opzione **Gestione sondaggi**, di progettare e gestire sondaggi online ed elaborarne i risultati: creazione di campi dinamici, gestione dei punteggi, esportazione di risposte e rapporti dedicati. Per ulteriori informazioni, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"} (documentazione di Campaign v8).
 
    >[!CAUTION]
    >

@@ -8,9 +8,9 @@ user-guide-description: Documentazione del prodotto Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: d5aff6b318cea324297eb7e2e887a67fb18cd504
+source-git-commit: 5e2aa587f61d79eab6d356ea5f91bc4e0f1b24c6
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1516'
 ht-degree: 97%
 ---
 
@@ -384,15 +384,6 @@ ht-degree: 97%
     + [Definire le proprietà dei moduli web](web/using/defining-web-forms-properties.md)
     + [Pubblicare un modulo web](web/using/translating-a-web-form.md)
     + [Casi d’uso: moduli web](web/using/use-cases-web-forms.md)
-+ Creazione di sondaggi online {#online-surveys}
-  + [Introduzione ai sondaggi](surveys/using/about-surveys.md)
-  + [Passaggi chiave per creare un sondaggio](surveys/using/getting-started-with-surveys.md)
-  + [Progettare un sondaggio](surveys/using/building-a-survey.md)
-  + [Gestire le risposte](surveys/using/managing-answers.md)
-  + [Pubblicare, tracciare e utilizzare i dati raccolti](surveys/using/publish-track-and-use-collected-data.md)
-  + [Configurare i sondaggi](surveys/using/configuring-surveys.md)
-  + [Caso d’uso: creare un modulo di riferimento](surveys/using/use-case-creating-a-refer-a-friend-form.md)
-  + [Caso d’uso: visualizzare un rapporto sulle risposte a un sondaggio online](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
 + Gestire le offerte {#managing-offers}
   + Introduzione all’interazione {#interaction-overview}
     + [Gestione dell’interazione e delle offerte](interaction/using/interaction-and-offer-management.md)
@@ -417,12 +408,6 @@ ht-degree: 97%
     + [Regole di presentazione](interaction/using/presentation-rules.md)
     + [Offerte su un canale in entrata](interaction/using/offers-on-an-inbound-channel.md)
     + [Offerte su un canale in uscita](interaction/using/offers-on-an-outbound-channel.md)
-+ Response Manager {#response-manager}
-  + [Introduzione a Gestione risposte](response/using/about-response-manager.md)
-  + [Configurare Response Manager](response/using/configure-response-manager.md)
-  + [Modelli di ipotesi](response/using/hypothesis-templates.md)
-  + [Creare ipotesi](response/using/creating-hypotheses.md)
-  + [Tracciamento delle ipotesi](response/using/hypothesis-tracking.md)
 + Progettare e condividere i rapporti {#reporting}
   + Introduzione al reporting {#reporting-in-adobe-campaign}
     + [Best practice per il reporting](reporting/using/best-practices.md)

@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 5e2aa587f61d79eab6d356ea5f91bc4e0f1b24c6
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 19%
+source-wordcount: '782'
+ht-degree: 13%
 ---
 # Introduzione alle applicazioni web{#about-web-applications}
 
@@ -76,24 +76,24 @@ Le applicazioni web in Adobe Campaign consentono di accedere alle seguenti funzi
 * Interfaccia di gestione delle pagine grafiche, layout di pagina a più colonne. Per ulteriori informazioni, consulta questa [pagina](designing-a-web-application.md).
 * Personalizzazione del rendering e posizione del campo. Per ulteriori informazioni, consulta questa [pagina](editing-content.md#adding-personalization-content).
 * Visualizzazione condizionale dei campi del sondaggio in base alle risposte fornite. Per ulteriori informazioni, consulta questa [pagina](form-rendering.md#defining-fields-conditional-display).
-* Visualizzazione casuale delle domande. Per ulteriori informazioni, consulta questa [pagina](../../surveys/using/building-a-survey.md#adding-questions).
+* Visualizzazione casuale delle domande. Per ulteriori informazioni, consulta questa [pagina](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/building-a-survey#adding-questions){target="_blank"} (documentazione di Campaign v8).
 * Visualizzazione pagina condizionale. Per ulteriori informazioni, consulta questa [pagina](defining-web-forms-page-sequencing.md#conditional-page-display).
 * Verifica delle informazioni prima della convalida in base al tipo di dati previsto (numero, indirizzo e-mail, data, ecc.) e i campi obbligatori. Per ulteriori informazioni, consulta questa [pagina](form-rendering.md#defining-control-settings).
 * Inviti o notifiche e-mail. Per ulteriori informazioni, consulta questa [pagina](publishing-a-web-form.md#delivering-a-form-via-email).
 * Personalization dei messaggi di errore e di fine. Per ulteriori informazioni, consulta questa [pagina](defining-web-forms-properties.md#setting-up-an-error-page).
 * Utilizzo di immagini, video, collegamenti ipertestuali, captcha, ecc. Per ulteriori informazioni, consulta questa [pagina](editing-content.md).
-* Monitoraggio delle risposte in tempo reale Per ulteriori informazioni, consulta questa [pagina](../../surveys/using/publish-track-and-use-collected-data.md#response-tracking).
+* Monitoraggio delle risposte in tempo reale Per ulteriori informazioni, consulta questa [pagina](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/publish-track-and-use-collected-data#response-tracking){target="_blank"} (documentazione di Campaign v8).
 
 Il modulo opzionale per la creazione di **Sondaggio** offre le seguenti funzionalità aggiuntive:
 
-* Estensione dinamica del database: creazione di risposte non incluse nel modello di dati iniziale. Per ulteriori informazioni, consulta questa [pagina](../../surveys/using/managing-answers.md#storing-collected-answers).
-* Generazione di rapporti dedicati. Per ulteriori informazioni, consulta questa [pagina](../../surveys/using/publish-track-and-use-collected-data.md#reports-on-surveys).
+* Estensione dinamica del database: creazione di risposte non incluse nel modello di dati iniziale. Per ulteriori informazioni, consulta questa [pagina](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/managing-answers#storing-collected-answers){target="_blank"} (documentazione di Campaign v8).
+* Generazione di rapporti dedicati. Per ulteriori informazioni, consulta questa [pagina](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/publish-track-and-use-collected-data#reports-on-surveys){target="_blank"} (documentazione di Campaign v8).
 
 Rispetto alle applicazioni Web, i sondaggi hanno un&#39;interfaccia grafica semplificata con un numero ridotto di controlli di modifica.
 
 >[!NOTE]
 >
->I sondaggi sono descritti in [questa sezione](../../surveys/using/about-surveys.md).
+>I sondaggi sono descritti in [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"} (documentazione di Campaign v8).
 >
 >Le funzionalità generali dei moduli Web in Adobe Campaign sono descritte in dettaglio in [questa sezione](about-web-forms.md).
 
