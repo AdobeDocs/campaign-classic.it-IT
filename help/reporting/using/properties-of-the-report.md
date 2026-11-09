@@ -30,9 +30,9 @@ topic_v2:
     internal-label: Reporting
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
     internal-label: Accessibility
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '448'
 ht-degree: 3%
 ---
 # Proprietà del rapporto{#properties-of-the-report}
@@ -57,7 +57,7 @@ Nella scheda **[!UICONTROL General]** delle proprietà del report, è possibile 
 
   ![](assets/s_ncs_advuser_report_properties_02.png)
 
-* Parametri del controllo di accesso **&#x200B;**. Queste impostazioni sono descritte di seguito.
+* Parametri del controllo di accesso ****. Queste impostazioni sono descritte di seguito.
 
 ## Controllare l’accesso al rapporto {#report-accessibility}
 
@@ -86,7 +86,7 @@ La lingua di modifica è la lingua in cui si scrive. Quando aggiungi una lingua,
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla localizzazione delle pagine Web in Campaign, consulta [questa sezione](../../web/using/translating-a-web-form.md).
+>Per ulteriori informazioni sulla localizzazione delle pagine web in Campaign, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/translating-a-web-form){target="_blank"} (documentazione di Campaign v8).
 
 ## Personalizzare il rendering di HTML {#personalizing-html-rendering}
 

@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Reporting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 4%
+source-wordcount: '616'
+ht-degree: 3%
 ---
 # Funzionalità avanzate{#advanced-functionalities}
 
@@ -67,7 +67,7 @@ Per eseguire questa operazione:
 
    ![](assets/reporting_custom_js.png)
 
-Per la normale esecuzione sul lato client, gli script di riferimento devono essere scritti in JavaScript ed essere compatibili con i browser più diffusi. Per ulteriori informazioni al riguardo, consulta [questa sezione](../../web/using/web-forms-answers.md).
+Per la normale esecuzione sul lato client, gli script di riferimento devono essere scritti in JavaScript ed essere compatibili con i browser più diffusi. Per ulteriori informazioni, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/web-forms-answers){target="_blank"} (documentazione di Campaign v8).
 
 ### Aggiunta di un’attività Script {#script-activity}
 

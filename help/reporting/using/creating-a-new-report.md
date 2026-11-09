@@ -29,9 +29,9 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '983'
 ht-degree: 1%
 ---
 # Creare un nuovo rapporto{#creating-a-new-report}
@@ -142,7 +142,7 @@ Un **[!UICONTROL Page]** può includere i seguenti elementi:
 * Valore, collegamento, HTML, immagine e così via **[!UICONTROL Static elements]**.
 * **[!UICONTROL Containers]** che ti consentono di controllare il layout del componente.
 
-La modalità di configurazione di una pagina e dei relativi componenti è descritta in [questa sezione](../../web/using/about-web-forms.md).
+La modalità di configurazione di una pagina e dei relativi componenti è descritta in [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/about-web-forms){target="_blank"} (documentazione di Campaign v8).
 
 La barra degli strumenti consente di aggiungere o rimuovere controlli e di organizzarne la sequenza nelle pagine del report.
 
@@ -150,7 +150,7 @@ La barra degli strumenti consente di aggiungere o rimuovere controlli e di organ
 
 ### Elementi statici {#static-elements}
 
-Gli elementi statici consentono di visualizzare nel rapporto informazioni quali elementi grafici o script con cui l&#39;utente non interagisce. Per ulteriori informazioni, consultare [questa sezione](../../web/using/static-elements-in-a-web-form.md#inserting-html-content).
+Gli elementi statici consentono di visualizzare nel rapporto informazioni quali elementi grafici o script con cui l&#39;utente non interagisce. Per ulteriori informazioni, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/static-elements-in-a-web-form#inserting-html-content){target="_blank"} (documentazione di Campaign v8).
 
 ![](assets/s_advuser_report_page_activity_03.png)
 
@@ -158,7 +158,7 @@ Gli elementi statici consentono di visualizzare nel rapporto informazioni quali 
 
 I controlli di input e selezione consentono di filtrare le informazioni visualizzate nel report. Per ulteriori informazioni sull&#39;implementazione di questo tipo di filtro, vedere [Opzioni di filtro nelle query](../../reporting/using/collecting-data-to-analyze.md#filtering-options-in-the-queries).
 
-Per ulteriori informazioni sulla creazione e la configurazione dei campi di input e dei campi di selezione, consultare [questa sezione](../../web/using/about-web-forms.md).
+Per ulteriori informazioni sulla creazione e la configurazione dei campi di input e dei campi di selezione, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/about-web-forms){target="_blank"} (documentazione di Campaign v8).
 
 È possibile integrare uno o più controlli di input nei report. Questo tipo di controllo consente di filtrare le informazioni visualizzate in base al valore immesso.
 

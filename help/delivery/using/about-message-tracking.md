@@ -45,9 +45,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '1364'
+source-wordcount: '1399'
 ht-degree: 3%
 ---
 # Introduzione al tracciamento dei messaggi {#get-started-tracking}
@@ -56,12 +56,12 @@ ht-degree: 3%
 >
 >Per **informazioni generali sul tracciamento** valide sia per Campaign Classic v7 che per Campaign v8, consulta la [documentazione sul tracciamento dei messaggi per Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"}:
 >
->* [Configura collegamenti tracciati](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"}
->* [Configurare le opzioni di tracciamento URL](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/tracking/url-tracking){target="_blank"}
->* [Tracciamento collegamenti personalizzati](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/tracking/personalized-links){target="_blank"}
->* [Registri di tracciamento degli accessi](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"}
->* [Tracciamento dei test](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/send/testing-tracking){target="_blank"}
->* [Rapporti di tracciamento](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/reporting/delivery-reports#tracking-indicators){target="_blank"}
+>* [Configura collegamenti tracciati](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"}
+>* [Configurare le opzioni di tracciamento URL](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/url-tracking){target="_blank"}
+>* [Tracciamento collegamenti personalizzati](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/personalized-links){target="_blank"}
+>* [Registri di tracciamento degli accessi](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"}
+>* [Tracciamento dei test](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/testing-tracking){target="_blank"}
+>* [Rapporti di tracciamento](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/reporting/delivery-reports#tracking-indicators){target="_blank"}
 >
 >**In questa pagina sono documentate solo le funzionalità di tracciamento specifiche di Campaign Classic v7**, principalmente per le distribuzioni ibride e on-premise.
 
@@ -108,11 +108,11 @@ Per le installazioni on-premise, le informazioni di tracciamento vengono memoriz
 
 **Tracking di un’applicazione web**
 
-È inoltre possibile monitorare e misurare le visite sulle pagine delle applicazioni web con i tag di tracciamento. Questa funzionalità può essere utilizzata per tutti i tipi di applicazioni Web, ad esempio moduli e pagine di destinazione. [Ulteriori informazioni](../../web/using/tracking-a-web-application.md)
+È inoltre possibile monitorare e misurare le visite sulle pagine delle applicazioni web con i tag di tracciamento. Questa funzionalità può essere utilizzata per tutti i tipi di applicazioni Web, ad esempio moduli e pagine di destinazione. [Ulteriori informazioni](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-applications/tracking-a-web-application){target="_blank"} (documentazione di Campaign v8)
 
 **Rinuncia al tracking delle applicazioni web**
 
-La rinuncia al tracciamento delle applicazioni web consente di interrompere il tracciamento dei comportamenti web degli utenti finali che rinunciano al tracciamento comportamentale. Puoi includere la possibilità di visualizzare un banner nelle applicazioni web o nelle pagine di destinazione per consentire agli utenti di rinunciare. [Ulteriori informazioni](../../web/using/web-application-tracking-opt-out.md)
+La rinuncia al tracciamento delle applicazioni web consente di interrompere il tracciamento dei comportamenti web degli utenti finali che rinunciano al tracciamento comportamentale. Puoi includere la possibilità di visualizzare un banner nelle applicazioni web o nelle pagine di destinazione per consentire agli utenti di rinunciare. [Ulteriori informazioni](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-applications/web-application-tracking-opt-out){target="_blank"} (documentazione di Campaign v8)
 
 ## Risoluzione dei problemi di tracciamento {#tracking-troubleshooting}
 
@@ -120,7 +120,7 @@ La rinuncia al tracciamento delle applicazioni web consente di interrompere il t
 
 I seguenti suggerimenti per la risoluzione dei problemi si applicano alle **distribuzioni ibride/on-premise di Campaign Classic v7**. Alcune informazioni possono essere applicate anche alle distribuzioni on-premise di Campaign v8. Per Campaign v8 Managed Cloud Services, contatta il rappresentante Adobe per assistenza.
 
-Per i passaggi di base per la risoluzione dei problemi di tracking in Campaign v8, consulta [Risoluzione dei problemi di tracking nella documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/tracking/tracking-logs#troubleshooting){target="_blank"}.
+Per i passaggi di base per la risoluzione dei problemi di tracking in Campaign v8, consulta [Risoluzione dei problemi di tracking nella documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking-logs#troubleshooting){target="_blank"}.
 
 ### Controlli di base {#basic-checks}
 

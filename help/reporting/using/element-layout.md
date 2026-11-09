@@ -28,9 +28,9 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '458'
 ht-degree: 1%
 ---
 # Layout degli elementi{#element-layout}
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 Oltre ai vari grafici dettagliati [qui](../../reporting/using/creating-a-chart.md#chart-types-and-variants), è possibile adattare la visualizzazione e aggiungere elementi alle pagine del report.
 
-Puoi utilizzare i contenitori: ti consentono di collegare diversi elementi di una pagina e configurarne il layout in colonne e/o celle. Le modalità di utilizzo sono descritte in [questa sezione](../../web/using/defining-web-forms-layout.md#creating-containers).
+Puoi utilizzare i contenitori: ti consentono di collegare diversi elementi di una pagina e configurarne il layout in colonne e/o celle. Per informazioni su come utilizzarli, consulta [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-layout#creating-containers){target="_blank"} (documentazione di Campaign v8).
 
 Puoi configurare il layout del rapporto nella directory principale della struttura e sovraccaricarlo per ogni contenitore. Le pagine sono ordinate in colonne. I contenitori vengono inoltre ordinati in colonne. Solo gli elementi statici e grafici vengono ordinati in celle.
 
@@ -53,7 +53,7 @@ La scheda **[!UICONTROL General]** consente di modificare il titolo della pagina
 
 Il campo **[!UICONTROL Title]** ti consente di personalizzare l&#39;etichetta nell&#39;intestazione della pagina del report. Il titolo della finestra può essere configurato tramite la finestra **[!UICONTROL Properties]** del report. Per ulteriori informazioni, consulta [Aggiunta di un&#39;intestazione e di un piè di pagina](#adding-a-header-and-a-footer).
 
-Le opzioni **[!UICONTROL Display settings]** consentono di selezionare la posizione della didascalia del controllo all&#39;interno di una pagina del report e di definire il numero di colonne nella pagina. Per ulteriori informazioni sul layout della pagina, consulta la sezione **Layout elemento** di [questa sezione](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page).
+Le opzioni **[!UICONTROL Display settings]** consentono di selezionare la posizione della didascalia del controllo all&#39;interno di una pagina del report e di definire il numero di colonne nella pagina. Per ulteriori informazioni sul layout di pagina, consulta la sezione **Layout elemento** di [questa sezione](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-layout#positioning-the-fields-on-the-page){target="_blank"} (documentazione di Campaign v8).
 
 Selezionare le varie opzioni nella sezione **[!UICONTROL Browse]** per autorizzare la navigazione da una pagina di report a un&#39;altra. Se è selezionata l&#39;opzione **[!UICONTROL Disable next page]** o **[!UICONTROL Disable previous page]**, i pulsanti **[!UICONTROL Next]** e **[!UICONTROL Previous]** scompaiono dalla pagina del report.
 
