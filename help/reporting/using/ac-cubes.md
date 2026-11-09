@@ -68,6 +68,6 @@ Utilizza il modulo Marketing Analytics di Campaign per:
 
 >[!NOTE]
 >
->Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per informazioni su come creare e utilizzare i cubi, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes){target=_blank}.
+>Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per informazioni su come creare e utilizzare i cubi, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes){target=_blank}.
 >
->[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes){target=_blank}
+>[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes){target=_blank}
