@@ -163,7 +163,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
   </tr> 
   <tr> 
    <td> Sondaggi online (Gestione sondaggi)<br /> </td> 
-   <td> Crea e gestisce moduli online per aggiungere o modificare le informazioni del profilo, per effettuare l’abbonamento, per annullare l’abbonamento o un modulo per partecipare a un concorso. Facoltativo. <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/about-surveys" target="_blank">Ulteriori informazioni</a> (documentazione di Campaign v8) <br /> </td> 
+   <td> Crea e gestisce moduli online per aggiungere o modificare le informazioni del profilo, per effettuare l’abbonamento, per annullare l’abbonamento o un modulo per partecipare a un concorso. Facoltativo. <a href="https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/content/surveys/about-surveys" target="_blank">Ulteriori informazioni</a> (documentazione di Campaign v8) <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
@@ -173,7 +173,7 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
   </tr> 
   <tr> 
    <td> Gestione risposte<br /> </td> 
-   <td> Misura il successo e la redditività delle campagne di marketing o delle proposte di offerte per tutti i canali di comunicazione.  Facoltativo. <a href="https://experienceleague.adobe.com/en/docs/campaign/automation/response-manager/about-response-manager" target="_blank">Ulteriori informazioni</a> (documentazione di Campaign v8) <br /> </td> 
+   <td> Misura il successo e la redditività delle campagne di marketing o delle proposte di offerte per tutti i canali di comunicazione.  Facoltativo. <a href="https://experienceleague.adobe.com/it/docs/campaign/automation/response-manager/about-response-manager" target="_blank">Ulteriori informazioni</a> (documentazione di Campaign v8) <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
