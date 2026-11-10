@@ -52,7 +52,7 @@ L’operatore webApp è un amministratore. Per migliorare la sicurezza, segui qu
 
   1. Immettere un nome per ogni duplicato. Ad esempio: webapp_brand, webapp_brand2, ecc.
 
-  1. Duplica un modello di applicazione web in modo che abbia un modello per brand e modifica le proprietà per cambiare l’operatore selezionando Utilizza un account specifico.  Per ulteriori informazioni, consulta [questa pagina](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-properties){target="_blank"} (documentazione di Campaign v8).
+  1. Duplica un modello di applicazione web in modo che abbia un modello per brand e modifica le proprietà per cambiare l’operatore selezionando Utilizza un account specifico.  Per ulteriori informazioni, consulta [questa pagina](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-properties){target="_blank"} (documentazione di Campaign v8).
 
 ## Gruppi di sicurezza e operatori amministratori
 
@@ -62,7 +62,7 @@ Non utilizzare l’operatore admin (o non condividerlo). Crea un operatore per u
 
 Evita di aggiungere troppi operatori nel gruppo di amministrazione (o con diritti denominati amministratore). Si tratta di operatori molto potenti (possono eseguire tutte le istruzioni SQL, eseguire comandi sul server, ecc.).
 
-Adobe Campaign fornisce tre privilegi di alto livello tramite [diritti denominati](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/permissions/manage-permissions#use-named-rights){target="_blank"} (documentazione di Campaign v8):
+Adobe Campaign fornisce tre privilegi di alto livello tramite [diritti denominati](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/manage-permissions#use-named-rights){target="_blank"} (documentazione di Campaign v8):
 
 * **ADMINISTRATION** (admin): consente l&#39;accesso a tutto e consente di eseguire tutte le operazioni, ignorando tutti i controlli con nome, quindi include i diritti denominati PROGRAM EXECUTION (createProcess) e SQL
 
