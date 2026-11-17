@@ -29,9 +29,9 @@ subfeature_v2:
     internal-label: Target integration
   - id: a14877cc-63b1-41d9-bf0b-5f97cadd0417
     internal-label: Configuration guidelines
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '360'
 ht-degree: 12%
 ---
 # Configurazione di IMS{#configuring-ims}
@@ -43,12 +43,12 @@ ht-degree: 12%
 
 ## Prerequisiti {#prerequisites}
 
-* È necessario disporre di un nome e di un ID organizzazione Adobe Experience Cloud. Per trovare il tuo ID organizzazione, fai riferimento a [questa pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=it){_blank}.
-* Devi aggiungere degli utenti in Experience Cloud. Per ulteriori informazioni, consulta [questa pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=it){_blank}.
+* È necessario disporre di un ID e di un nome organizzazione [!DNL Adobe CX Enterprise]. Per trovare il tuo ID organizzazione, fai riferimento a [questa pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=it){_blank}.
+* È necessario aggiungere utenti in [!DNL CX Enterprise]. Per ulteriori informazioni, consulta [questa pagina](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html){_blank}.
 
 >[!NOTE]
 >
->Assicurati che gli utenti siano collegati ai gruppi Adobe Experience Cloud che verranno sincronizzati con Adobe Campaign. [Ulteriori informazioni](#configuring-the-external-account).
+>Verificare che gli utenti siano collegati ai gruppi [!DNL CX Enterprise] che verranno sincronizzati con Adobe Campaign. [Ulteriori informazioni](#configuring-the-external-account).
 
 ## Aggiornamento della console {#updating-the-console}
 
@@ -68,7 +68,7 @@ Configura l&#39;account esterno **Adobe Experience Cloud** in **[!UICONTROL Admi
 
 Immettere le seguenti informazioni:
 
-* Informazioni di connessione per il server IMS utilizzato (ID e segreto). Queste informazioni sono fornite dal team di Assistenza clienti di Adobe. Per ulteriori informazioni, consulta le [Domande frequenti per gli amministratori di Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html?lang=it).
+* Informazioni di connessione per il server IMS utilizzato (ID e segreto). Queste informazioni sono fornite dal team di Assistenza clienti di Adobe. Per ulteriori informazioni, consulta le [Domande frequenti per gli amministratori di Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html).
 
   L&#39;indirizzo **[!UICONTROL Callback server]** deve essere specificato in **https**. Questo campo corrisponde all’URL di accesso dell’istanza di Adobe Campaign.
 

@@ -19,9 +19,9 @@ subfeature_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '476'
 ht-degree: 6%
 ---
 # Migrazione ad Adobe Identity Management System (IMS) {#migrate-to-ims}
@@ -37,7 +37,7 @@ Inoltre, l’applicazione client Adobe Campaign ora chiama le API di Campaign di
 
 ## Passaggi di migrazione {#ims-steps}
 
-La migrazione a [Adobe Identity Management System (IMS)](https://helpx.adobe.com/it/enterprise/using/identity.html){target="_blank"} è un imperativo di sicurezza per rendere gli ambienti sicuri e standardizzati, in quanto la maggior parte delle altre soluzioni e app Adobe Experience Cloud sono già in IMS.
+La migrazione a [Adobe Identity Management System (IMS)](https://helpx.adobe.com/it/enterprise/using/identity.html){target="_blank"} è un imperativo di sicurezza per rendere gli ambienti sicuri e standardizzati, in quanto la maggior parte delle altre soluzioni e app di [!DNL Adobe CX Enterprise] sono già in IMS.
 
 Adobe ti supporta in questo sforzo di migrazione. Puoi trovare il contesto dettagliato e le linee guida dettagliate nei seguenti articoli:
 

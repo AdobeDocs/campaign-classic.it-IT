@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 4ae19a379120bb39444c3e81392a7dbb0b6da3ba
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 16%
+source-wordcount: '192'
+ht-degree: 10%
 ---
 # Informazioni su Adobe ID {#about-adobe-id}
 
@@ -45,7 +45,7 @@ Adobe Identity Management System (IMS) consente agli amministratori di creare e 
 
 Gli utenti di Campaign possono connettersi alla console di Adobe Campaign utilizzando il proprio Adobe ID, invece dell&#39;[autenticazione nativa utente/password](../../platform/using/access-management-operators.md). Questa implementazione offre i seguenti vantaggi:
 
-* Lo stesso ID può essere utilizzato per tutte le soluzioni Experience Cloud.
+* Lo stesso ID può essere utilizzato per tutte le soluzioni [!DNL Adobe CX Enterprise].
 * La connessione viene mantenuta quando si utilizza Adobe Campaign con diverse integrazioni.
 * Criteri di gestione password più sicuri rispetto a login/password nativi.
 * Utilizzo di account Federated ID (provider di ID esterno).
@@ -75,6 +75,6 @@ Gli utenti di Campaign possono connettersi alla console di Adobe Campaign utiliz
 
 | Pagine utili | Risorse aggiuntive |
 |---|---|
-| [Configurazione di IMS](../../integrations/using/configuring-ims.md) | [Domande frequenti su Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html?lang=it) |
+| [Configurazione di IMS](../../integrations/using/configuring-ims.md) | [Domande frequenti su Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html) |
 | [Implementazione di IMS](../../integrations/using/implementing-ims.md) | [Gestione degli accessi](../../platform/using/access-management.md) |
 | [Risoluzione dei problemi IMS](../../integrations/using/ims-troubleshooting.md) | [Installazione dei pacchetti Campaign](../../installation/using/installing-campaign-standard-packages.md) |

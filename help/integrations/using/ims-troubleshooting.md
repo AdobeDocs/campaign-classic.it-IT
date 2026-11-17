@@ -33,9 +33,9 @@ subfeature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
+source-git-commit: 368b67eeb68b0944be5db674fd6a18914dea86ad
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '486'
 ht-degree: 5%
 ---
 # Risoluzione dei problemi di IMS{#ims-troubleshooting}
@@ -45,9 +45,9 @@ I seguenti suggerimenti per la risoluzione dei problemi aiuteranno i clienti **o
 
 >[!NOTE]
 >
->Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sull&#39;accesso con Adobe ID e sulla risoluzione dei problemi di accesso, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/connect){target=_blank}.
+>Nell’ambito della transizione da Campaign v7 a v8, il set di documentazione di Campaign Classic è stato razionalizzato e riorganizzato. Le funzioni comuni sono ora disponibili esclusivamente nel set di documentazione di Campaign v8. Per ulteriori informazioni sull&#39;accesso con Adobe ID e sulla risoluzione dei problemi di accesso, consulta la [documentazione di Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect){target=_blank}.
 >
->[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/it/docs/campaign/campaign-v8/new/connect){target="_blank"}
+>[![immagine](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect){target="_blank"}
 
 **Account esterno**
 
@@ -62,9 +62,9 @@ Elimina eventuali account esterni duplicati con le stesse impostazioni.
 
 Se l&#39;account esterno dispone di un campo **Contesto prodotto**, verificare che il relativo valore sia impostato su: **dma_campaign_classic**
 
-Assicurati che il contesto del prodotto sia lo stesso per Campaign ed Experience Cloud.
+Assicurati che il contesto di prodotto sia lo stesso per Campaign e [!DNL Adobe CX Enterprise].
 
-Ad esempio, se il **contesto di prodotto** non viene visualizzato, il contesto di prodotto predefinito deve essere **dma_campaign** sia in Campaign che in Experience Cloud. Se viene visualizzato il campo **Contesto prodotto**, il contesto di prodotto predefinito deve essere **dma_campaign_classic** sia in Campaign che in Experience Cloud.
+Ad esempio, se il **contesto di prodotto** non viene visualizzato, il contesto di prodotto predefinito deve essere **dma_campaign** sia in Campaign che in [!DNL CX Enterprise]. Se viene visualizzato il campo **Contesto prodotto**, il contesto di prodotto predefinito deve essere **dma_campaign_classic** in Campaign e [!DNL CX Enterprise].
 
 **[!UICONTROL IMS Server URL]**
 
