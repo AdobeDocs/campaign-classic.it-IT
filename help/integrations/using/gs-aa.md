@@ -35,9 +35,9 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '206'
 ht-degree: 12%
 ---
 # Utilizzare Adobe Campaign e Adobe Analytics {#adobe-analytics-connector-gs}
@@ -55,7 +55,7 @@ Prima di iniziare a utilizzare il connettore Adobe Campaign-Adobe Analytics, con
 * Il componente aggiuntivo Connettore Web Analytics deve essere installato nell’ambiente tramite il pacchetto dedicato.
 
   * Per le implementazioni ibride e on-premise, assicurati di seguire i passaggi di provisioning descritti in questa [pagina](adobe-analytics-provisioning.md).
-  * In qualità di utente Hoster o Managed Cloud Services, contatta Adobe per collegare Campaign ai servizi e alle soluzioni Adobe Experience Cloud.
+  * In qualità di utente Hoster o Managed Cloud Services, contatta Adobe per collegare Campaign con [!DNL Adobe CX Enterprise] servizi e soluzioni.
 
 
 ## Configurazione e utilizzo {#adobe-analytics-connector-usage}

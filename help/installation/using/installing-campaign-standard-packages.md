@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Optimization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 5e2aa587f61d79eab6d356ea5f91bc4e0f1b24c6
+source-git-commit: 368b67eeb68b0944be5db674fd6a18914dea86ad
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1453'
 ht-degree: 9%
 ---
 # Installare i pacchetti incorporati di Campaign Classic{#installing-campaign-standard-packages}
@@ -223,12 +223,12 @@ Nella tabella seguente sono elencati tutti i pacchetti incorporati di Campaign.
   </tr> 
   <tr> 
    <td> Integrazione dei tipi di pubblico condivisi di Adobe Experience Cloud<br /> </td> 
-   <td> Consente di scambiare e condividere tipi di pubblico/segmenti con le soluzioni e le app di Adobe Experience Cloud. Richiede IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Ulteriori informazioni</a> <br /> </td> 
+   <td> Consente di scambiare e condividere tipi di pubblico/segmenti con soluzioni e app Adobe CX Enterprise. Richiede IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Ulteriori informazioni</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
    <td> Integrazione con Adobe Experience Cloud<br /> </td> 
-   <td> Consente di importare ed esportare tipi di pubblico/segmenti da diverse soluzioni Adobe Experience Cloud in Adobe Campaign. Facoltativo. <a href="../../integrations/using/configuring-ims.md#installing-the-package">Ulteriori informazioni</a> </td> 
+   <td> Consente di importare ed esportare tipi di pubblico/segmenti da diverse soluzioni CX Enterprise in Adobe Campaign. Facoltativo. <a href="../../integrations/using/configuring-ims.md#installing-the-package">Ulteriori informazioni</a> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 

@@ -30,27 +30,27 @@ subfeature_v2:
     internal-label: Target integration
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
     internal-label: Audiences
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 51%
+source-wordcount: '226'
+ht-degree: 38%
 ---
-# Condivisione di tipi di pubblico con Adobe Experience Cloud {#sharing-audiences-with-adobe-experience-cloud}
+# Condivisione di tipi di pubblico con [!DNL Adobe CX Enterprise] {#sharing-audiences-with-adobe-experience-cloud}
 
 
 >[!CAUTION]
 >
->Per condividere i tipi di pubblico con le soluzioni Adobe Experience Cloud, devi implementare Adobe Identity Management System. [Ulteriori informazioni su IMS](../../integrations/using/about-adobe-id.md).
+>Per condividere i tipi di pubblico con le soluzioni [!DNL CX Enterprise], devi implementare Adobe Identity Management System. [Ulteriori informazioni su IMS](../../integrations/using/about-adobe-id.md).
 
-Con Adobe Campaign puoi condividere tipi di pubblico e segmenti con i servizi Adobe Experience Cloud. Sono disponibili due opzioni:
+Con Adobe Campaign, puoi condividere tipi di pubblico e segmenti con i servizi [!DNL CX Enterprise]. Sono disponibili due opzioni:
 
 1. Invia i dati dei segmenti di Adobe Experience Platform ad Adobe Campaign. Per implementare questa integrazione, devi collegare il tuo Real-Time Customer Data Platform a Campaign (RTCDP). [Per ulteriori informazioni, consulta questa sezione](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=it){target="_blank"}.
 
 1. Integra **Adobe Campaign** con **Experience Cloud Audiences** o **Adobe Audience Manager**. Potrai quindi:
 
-   * Importare tipi di pubblico/segmenti condivisi da diverse soluzioni Adobe Experience Cloud in Adobe Campaign. I tipi di pubblico possono essere importati tramite elenchi in Adobe Campaign.
+   * Importa tipi di pubblico/segmenti condivisi da diverse soluzioni [!DNL CX Enterprise] in Adobe Campaign. I tipi di pubblico possono essere importati tramite elenchi in Adobe Campaign.
 
-   * Esportare elenchi sotto forma di tipi di pubblico condivisi di Adobe Experience Cloud. Questi tipi di pubblico possono essere utilizzati nelle diverse soluzioni Adobe Experience Cloud che utilizzi. I tipi di pubblico possono essere esportati dopo il targeting in un flusso di lavoro, utilizzando un’attività **[!UICONTROL Update shared audience]**.
+   * Esporta elenchi sotto forma di [!DNL CX Enterprise] tipi di pubblico condivisi. Questi tipi di pubblico possono essere utilizzati nelle diverse soluzioni [!DNL CX Enterprise] utilizzate. I tipi di pubblico possono essere esportati dopo il targeting in un flusso di lavoro, utilizzando un’attività **[!UICONTROL Update shared audience]**.
 
 Questa integrazione supporta due tipi di ID Adobe Experience Cloud:
 
