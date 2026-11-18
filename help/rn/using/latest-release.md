@@ -35,10 +35,10 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 63ece0ce7bfca75468776da84e2eac8b34b13af8
-workflow-type: ht
-source-wordcount: '1449'
-ht-degree: 100%
+source-git-commit: 8d0251fca564105652db7015893d93c5429e0c43
+workflow-type: tm+mt
+source-wordcount: '1643'
+ht-degree: 98%
 ---
 # Ultima versione {#latest-release}
 
@@ -46,9 +46,21 @@ In questa pagina sono elencate nuove funzionalità, miglioramenti e correzioni i
 
 ## Versione 7.4.5 {#release-7-4-5}
 
-### Build 9420 {#build-9420}
+### Build 9421 {#build-9421}
 
 [!BADGE Disponibilità generale]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Disponibilità generale"}
+
+_18 novembre 2026_
+
+#### Miglioramenti di sicurezza {#security-7-4-5-9421}
+
+Adobe ha rilasciato degli aggiornamenti di sicurezza per Adobe Campaign Classic che affrontano vulnerabilità critiche. Invitiamo i clienti che utilizzano implementazioni on-premise e ibride a installare gli aggiornamenti il prima possibile. Le istanze ospitate da Adobe sono già state corrette e non richiedono alcuna azione da parte del cliente.
+
+È necessario un riavvio del server di Adobe Campaign (nlserver) per caricare la build e completare l’implementazione. La correzione è attiva per impostazione predefinita dopo il riavvio.
+
+### Build 9420 {#build-9420}
+
+[!BADGE Obsoleta]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Obsoleta"}
 
 _15 ottobre 2026_
 
@@ -63,15 +75,27 @@ _15 ottobre 2026_
 
 ## Versione 7.4.4 {#release-7-4-4}
 
-### Build 9403 {#build-9403}
+### Build 9404 {#build-9404}
 
 [!BADGE Disponibilità generale]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Disponibilità generale"}
+
+_18 novembre 2026_
+
+#### Miglioramenti di sicurezza {#security-7-4-4-9404}
+
+Adobe ha rilasciato degli aggiornamenti di sicurezza per Adobe Campaign Classic che affrontano vulnerabilità critiche. Invitiamo i clienti che utilizzano implementazioni on-premise e ibride a installare gli aggiornamenti il prima possibile. Le istanze ospitate da Adobe sono già state corrette e non richiedono alcuna azione da parte del cliente.
+
+È necessario un riavvio del server di Adobe Campaign (nlserver) per caricare la build e completare l’implementazione. La correzione è attiva per impostazione predefinita dopo il riavvio.
+
+### Build 9403 {#build-9403}
+
+[!BADGE Obsoleta]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=it#rn-statuses" tooltip="Obsoleta"}
 
 _15 ottobre 2026_
 
 #### Miglioramenti di sicurezza {#security-7-4-4-9403}
 
-Adobe ha rilasciato degli aggiornamenti di sicurezza per Adobe Campaign Classic che affrontano vulnerabilità critiche. Invitiamo i clienti che utilizzano implementazioni on-premise e ibride a installare gli aggiornamenti il prima possibile. Le istanze ospitate da Adobe sono già state corrette e non richiedono alcuna azione da parte del cliente.
+Adobe ha rilasciato degli aggiornamenti di sicurezza per Adobe Campaign Classic che affrontano vulnerabilità critiche. Invitiamo i clienti che utilizzano implementazioni on-premise e ibride a installare gli aggiornamenti il prima possibile. Le istanze ospitate da Adobe sono già state corrette e non richiedono alcuna azione da parte del cliente. Ulteriori informazioni sono disponibili nel [bollettino sulla sicurezza](https://www.adobe.com/trust/security/products/campaign/apsb26-162.html){target="_blank"}.
 
 È necessario un riavvio del server di Adobe Campaign (nlserver) per caricare la build e completare l’implementazione. La correzione è attiva per impostazione predefinita dopo il riavvio.
 
