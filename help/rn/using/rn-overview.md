@@ -33,7 +33,7 @@ topic_v2:
     internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
+source-git-commit: e737155048b50f18207ab7d2f3dfd4a4b0d48557
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 98%
@@ -81,7 +81,7 @@ Per questo motivo è fondamentale **eseguire la build stabile più recente** di 
 
 In qualità di cliente in hosting, puoi beneficiare automaticamente, senza alcun intervento da parte tua, dell’aggiornamento alla build stabile più recente. Ulteriori informazioni nella [sezione Aggiornamento annuale](#yearly-upgrade). Se effettui la migrazione da una build precedente, Adobe consiglia di eseguire prima l’aggiornamento a questa build.
 
-## Hotfix {#hotflixes}
+## Hotfix {#hotfixes}
 
 In casi eccezionali, Adobe può fornire un hotfix specifico per il cliente per risolvere un problema prima che sia disponibile una correzione in una versione standard. Le richieste di hotfix vengono valutate caso per caso e non fanno parte del ciclo di rilascio standard.
 
